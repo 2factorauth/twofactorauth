@@ -15,7 +15,7 @@ sections:
     sites:
         - name: Facebook
           url: https://facebook.com
-          img: /img/facebook.png
+          img: facebook.png
           tfa: Yes
           goog: Yes
           sms: Yes
@@ -27,7 +27,7 @@ sections:
 
         - name: Google+
           url: https://plus.google.com
-          img: /img/g+.png
+          img: g+.png
           tfa: Yes
           goog: Yes
           sms: Yes
@@ -48,7 +48,7 @@ sections:
     sites:
         - name: Amazon
           url: https://amazon.com
-          img: /img/amazon.png
+          img: amazon.png
           tfa: No
 
 #
@@ -62,7 +62,7 @@ sections:
     sites:
         - name: GMail
           url: https://gmail.com
-          img: /img/gmail.png
+          img: gmail.png
           tfa: Yes
           goog: Yes
           sms: Yes
@@ -76,18 +76,18 @@ sections:
 # Retail
 #
 
-  - id: finances
-    title: Finances
+  - id: finance
+    title: Finance
     icon: dollar basic
 
     sites:
         - name: Mint
           url: https://www.mint.com
-          img: /img/mint.png
+          img: mint.png
           tfa: No
 
         - name: Bank of America
-          img: /img/bankofamerica.png
+          img: bankofamerica.png
           url: https://www.bankofamerica.com/
           tfa: Yes
           goog: No
@@ -116,7 +116,7 @@ sections:
 
     sites:
         - name: Amazon Web Services
-          img: /img/aws.png
+          img: aws.png
           url: https://aws.amazon.com
           tfa: Yes
           goog: Yes
@@ -125,7 +125,7 @@ sections:
           apps:
               - android
         - name: GitHub
-          img: /img/github.png
+          img: github.png
           url: https://github.com
           tfa: Yes
           goog: Yes

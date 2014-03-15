@@ -50,7 +50,7 @@ title: Two Factor Auth
                         {% if site.tfa %}
                             <td class="positive">
                             {% if site.img %}
-                                <img src="{{ site.img }}" class="icon" alt="{{ site.name }}">
+                                <img src="/img/{{ section.id }}/{{ site.img }}" class="icon" alt="{{ site.name }}">
                             {% endif %}
                                 <a href="{{ site.url }}">{{ site.name }}</a>
                             </td>
@@ -86,7 +86,7 @@ title: Two Factor Auth
                         {% else %}
                             <td class="negative">
                             {% if site.img %}
-                                <img src="{{ site.img }}" class="icon" alt="{{ site.name }}">
+                                <img src="/img/{{ section.id }}/{{ site.img }}" class="icon" alt="{{ site.name }}">
                             {% endif %}
                                 <a href="{{ site.url }}">{{ site.name }}</a>
                             </td>
