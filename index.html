@@ -1,8 +1,8 @@
 ---
 layout: default
+message: Security is important, @TWITTERHANDLE. We'd like if you supported two factor auth.
+hash: GetTwoFactorAuth
 ---
-
-
 
 <div class="ui fixed transparent inverted teal main menu">
     <div class="menu">
@@ -48,37 +48,37 @@ layout: default
                         </tr>
                     </thead>
                     <tbody>
-                {% for site in section.sites %}
+                {% for website in section.websites %}
                         <tr>
-                        {% if site.tfa %}
+                        {% if website.tfa %}
                             <td class="main positive">
-                            {% if site.img %}
-                                <img src="/img/{{ section.id }}/{{ site.img }}" class="icon" alt="{{ site.name }}">
+                            {% if website.img %}
+                                <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
                             {% endif %}
-                                <a href="{{ site.url }}">{{ site.name }}</a>
+                                <a href="{{ website.url }}">{{ website.name }}</a>
                             </td>
 
-                            {% if site.doc %}
-                                <td class="positive icon"><a href="{{ site.doc }}"><i class="external url large icon"></i></a></td>
+                            {% if website.doc %}
+                                <td class="positive icon"><a href="{{ website.doc }}"><i class="external url large icon"></i></a></td>
                             {% else %}
                                 <td class="positive icon"></td>
                             {% endif %}
 
-                            {% if site.sms %}
+                            {% if website.sms %}
                                 <td class="positive icon"><i class="checkmark large icon"></i></td>
                             {% else %}
                                 <td class="negative icon"><i class="remove large icon"></i></td>
                             {% endif %}
 
-                            {% if site.goog %}
+                            {% if website.goog %}
                                 <td class="positive icon"><i class="checkmark large icon"></i></td>
                             {% else %}
                                 <td class="negative icon"><i class="remove large icon"></i></td>
                             {% endif %}
 
-                            {% if site.custom %}
+                            {% if website.custom %}
                                 <td class="positive icon">
-                                {% for item in site.custom %}
+                                {% for item in website.custom %}
                                     {% if item.url %}
                                         <a href="{{ item.url }}"><i class="{{ item.icon }} small icon"></i></a>
                                     {% else %}
@@ -92,15 +92,20 @@ layout: default
                         </tr>
                         {% else %}
                             <td class="main negative">
-                            {% if site.img %}
-                                <img src="/img/{{ section.id }}/{{ site.img }}" class="icon" alt="{{ site.name }}">
+                            {% if website.img %}
+                                <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
                             {% endif %}
-                                <a href="{{ site.url }}">{{ site.name }}</a>
+                                <a href="{{ website.url }}">{{ website.name }}</a>
                             </td>
-                            <td class="negative icon"><i class="remove large icon"></td>
-                            <td class="negative icon"><i class="remove large icon"></td>
-                            <td class="negative icon"><i class="remove large icon"></td>
-                            <td class="negative icon"><i class="remove large icon"></td>
+                            {% if website.twitter %}
+                                <td class="twitter main negative" colspan="4">
+                                    <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.message|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> Tell them to support 2FA</a>
+                                </td>
+                            {% else %}
+                                <td class="negative icon"><i class="remove large icon"></td>
+                                <td class="negative icon"><i class="remove large icon"></td>
+                                <td class="negative icon"><i class="remove large icon"></td>
+                            {% endif %}
                         {% endif %}
                 {% endfor %}
                     </tbody>

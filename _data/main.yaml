@@ -12,7 +12,7 @@ sections:
     title: Social Media
     icon: users
 
-    sites:
+    websites:
         - name: Facebook
           url: https://facebook.com
           img: facebook.png
@@ -42,9 +42,10 @@ sections:
     title: Retail
     icon: cart
 
-    sites:
+    websites:
         - name: Amazon
           url: https://amazon.com
+          twitter: Amazon
           img: amazon.png
           tfa: No
 
@@ -56,7 +57,7 @@ sections:
     title: Email
     icon: mail
 
-    sites:
+    websites:
         - name: GMail
           url: https://gmail.com
           img: gmail.png
@@ -73,9 +74,10 @@ sections:
     title: Finance
     icon: dollar basic
 
-    sites:
+    websites:
         - name: Mint
           url: https://www.mint.com
+          twitter: mint
           img: mint.png
           tfa: No
 
@@ -94,7 +96,7 @@ sections:
     title: Payments
     icon: payment
 
-    sites:
+    websites:
         - name: PayPal
           img: paypal.png
           url: https://www.paypal.com/
@@ -110,7 +112,7 @@ sections:
     title: Developer
     icon: code
 
-    sites:
+    websites:
         - name: Amazon Web Services
           img: aws.png
           url: https://aws.amazon.com
@@ -140,7 +142,7 @@ sections:
     title: Domains
     icon: globe
 
-    sites:
+    websites:
         - name: Namecheap
           img: namecheap.png
           url: https://www.namecheap.com/
@@ -156,7 +158,7 @@ sections:
     title: Gaming
     icon: gamepad
 
-    sites:
+    websites:
         - name: Steam
           img: steam.png
           url: http://store.steampowered.com/
@@ -173,7 +175,7 @@ sections:
     title: Bitcoin
     icon: bitcoin
 
-    sites:
+    websites:
         - name: Blockchain
           img: blockchain.png
           url: https://blockchain.info/
