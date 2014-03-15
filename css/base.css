@@ -16,3 +16,12 @@ body {
     margin: 0 auto;
     padding-top: 40px;
 }
+
+.ui.table tr.negative,
+.ui.table td.negative,
+.ui.table tr.positive,
+.ui.table td.positive {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+

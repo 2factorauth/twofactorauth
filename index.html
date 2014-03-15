@@ -7,7 +7,7 @@ title: Two Factor Auth
     <div class="menu">
 
     {% for section in site.data %}
-        <a href="#{{ section[1].id }}" class="item">
+        <a href="{% if forloop.first %}#{% else %}#{{ section[1].id }}{% endif %}" class="item">
             <i class="{{ section[1].icon }} icon"></i>
             {{ section[1].title }}
         </a>
@@ -33,29 +33,45 @@ title: Two Factor Auth
                     {{ section[1].title }}
                 </h2>
 
-                <table class="ui table segment">
+                <table class="ui table celled segment">
                     <thead>
                         <tr>
-                            <th class="seven wide">Site</th>
+                            <th class="fourteen wide">Site</th>
                             <th>SMS</th>
                             <th>Google Authenticator</th>
-                            <th class="seven wide">Extra</th>
                         </tr>
                     </thead>
                     <tbody>
-                    {% for site in section[1].sites %}
+                {% for site in section[1].sites %}
                         <tr>
-                            <td>
-                                <a href="{{ site.url }}">{{ site.name }}</a>
+                        {% if site.tfa %}
+                            <td class="positive">
+                                <a href="{{ site.url }}">{{ site.name }}</a> <i class="info icon"></i>
                             </td>
-                            <td>Unknown</td>
-                            <td>None</td>
+                            {% if site.sms %}
+                                <td class="positive"><i class="checkmark large icon"></i></td>
+                            {% else %}
+                                <td class="negative"><i class="remove large icon"></i></td>
+                            {% endif %}
+
+                            {% if site.goog %}
+                                <td class="positive"><i class="checkmark large icon"></i></td>
+                            {% else %}
+                                <td class="negative"><i class="remove large icon"></i></td>
+                            {% endif %}
                         </tr>
-                    {% endfor %}
+                        {% else %}
+                            <td class="negative">
+                                <a href="{{ site.url }}">{{ site.name }}</a> <i class="info icon"></i>
+                            </td>
+                            <td class="negative"></td>
+                            <td class="negative"></td>
+                        {% endif %}
+                {% endfor %}
                     </tbody>
                 </table>
 
-                <div class="ui horizontal icon divider"><i class="{{ section[1].icon }} icon"></i></div>
+                <div class="ui horizontal icon divider"><i class="{{ section[1].icon }} circular icon"></i></div>
             </div><!-- Section -->
         {% endfor %}
 
