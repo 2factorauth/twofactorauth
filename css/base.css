@@ -34,3 +34,15 @@ td a {
     display: block;
     color: #505050;
 }
+
+td img.icon {
+    float: left;
+    border-radius: 500em!important;
+    padding: 4px 4px!important;
+    -webkit-box-shadow: 0 0 0 .1em rgba(0,0,0,.1) inset;
+    box-shadow: 0 0 0 .1em rgba(0,0,0,.1) inset;
+    line-height: 1!important;
+    margin-right: 8px;
+    background-color: white;
+    height: 16px;
+}

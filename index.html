@@ -14,10 +14,10 @@ title: Two Factor Auth
     {% endfor %}
 
         <div class="right menu">
-            <div class="ui dropdown item">
+            <a href="https://github.com/jdavis/twofactorauth" class="item">
                 <i class="github icon"></i>
                 Contribute
-            </div>
+            </a>
         </div>
     </div>
 </div>
@@ -36,10 +36,11 @@ title: Two Factor Auth
                 <table class="ui table celled segment">
                     <thead>
                         <tr>
-                            <th class="thirteen wide">Site</th>
+                            <th class="eleven wide">Site</th>
                             <th>Docs</th>
                             <th>SMS</th>
                             <th>Google Auth</th>
+                            <th class="two wide">Custom App</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -47,6 +48,9 @@ title: Two Factor Auth
                         <tr>
                         {% if site.tfa %}
                             <td class="positive">
+                            {% if site.img %}
+                                <img src="{{ site.img }}" class="icon" alt="{{ site.name }}">
+                            {% endif %}
                                 <a href="{{ site.url }}">{{ site.name }}</a>
                             </td>
 
@@ -67,11 +71,22 @@ title: Two Factor Auth
                             {% else %}
                                 <td class="negative icon"><i class="remove large icon"></i></td>
                             {% endif %}
+
+                            {% if site.apps %}
+                                <td class="positive icon">
+                                {% for icon in site.apps %}
+                                    <i class="{{ icon }} large icon"></i>
+                                {% endfor %}
+                                </td>
+                            {% else %}
+                                <td class="negative icon"><i class="remove large icon"></i></td>
+                            {% endif %}
                         </tr>
                         {% else %}
                             <td class="negative">
                                 <a href="{{ site.url }}">{{ site.name }}</a>
                             </td>
+                            <td class="negative"></td>
                             <td class="negative"></td>
                             <td class="negative"></td>
                             <td class="negative"></td>
