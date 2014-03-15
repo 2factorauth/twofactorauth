@@ -166,6 +166,13 @@ sections:
           sms: Yes
           doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
 
+        - name: CloudFlare
+          url: https://cloudflare.com
+          tfa: Yes
+          sms: Yes
+          authy: Yes
+          doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
+
 #
 # Gaming
 #
