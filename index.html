@@ -77,10 +77,13 @@ title: Two Factor Auth
                                 <td class="negative icon"><i class="remove large icon"></i></td>
                             {% endif %}
 
-                            {% if site.apps %}
+                            {% if site.apps or site.links %}
                                 <td class="positive icon">
                                 {% for icon in site.apps %}
                                     <i class="{{ icon }} small icon"></i>
+                                {% endfor %}
+                                {% for link in site.links %}
+                                    <a href="{{ link }}"><i class="external url small icon"></i></a>
                                 {% endfor %}
                                 </td>
                             {% else %}
