@@ -1,24 +1,10 @@
 sections:
 
 #
-# Popular Sites
-#
-
-  - index: 0
-    id: popular
-    title: Popular Sites
-    icon: trophy
-
-    sites:
-        - name: Nothing
-          url: https://nothing.com
-
-#
 # Social Media
 #
 
-  - index: 1
-    id: social
+  - id: social
     title: Social Media
     icon: users
 
@@ -35,8 +21,7 @@ sections:
 # Retail
 #
 
-  - index: 2
-    id: retail
+  - id: retail
     title: Retail
     icon: cart
 
@@ -48,8 +33,7 @@ sections:
 # Email
 #
 
-  - index: 3
-    id: email
+  - id: email
     title: Email
     icon: mail
 
@@ -61,8 +45,7 @@ sections:
 # Retail
 #
 
-  - index: 4
-    id: finances
+  - id: finances
     title: Finances
     icon: dollar basic
 
@@ -74,8 +57,7 @@ sections:
 # Payments
 #
 
-  - index: 5
-    id: payments
+  - id: payments
     title: Payments
     icon: payment
 
@@ -87,8 +69,7 @@ sections:
 # Developer
 #
 
-  - index: 6
-    id: developer
+  - id: developer
     title: Developer
     icon: code
 
@@ -114,8 +95,7 @@ sections:
 # Domains
 #
 
-  - index: 7
-    id: domains
+  - id: domains
     title: Domains
     icon: globe
 
@@ -127,8 +107,7 @@ sections:
 # Gaming
 #
 
-  - index: 8
-    id: gaming
+  - id: gaming
     title: Gaming
     icon: gamepad
 
@@ -140,8 +119,7 @@ sections:
 # Bitcoin
 #
 
-  - index: 9
-    id: bitcoin
+  - id: bitcoin
     title: Bitcoin
     icon: bitcoin
 
