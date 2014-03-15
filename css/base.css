@@ -3,7 +3,6 @@ html, body {height: 100%;}
 img { border: none; }
 ul { list-style: none; }
 a { color: #009FDA; text-decoration: none; }
-a:hover { color: #00BAFF; }
 
 
 body {
@@ -65,4 +64,30 @@ td img.icon {
     margin-right: 8px;
     background-color: white;
     height: 16px;
+}
+
+.ui.table tr.positive td,
+.ui.table td.positive {
+    background-color: #dff0d8 !important;
+}
+
+.ui.celled.table tr.positive:hover td,
+.ui.celled.table tr:hover td.positive,
+.ui.table tr.positive:hover td,
+.ui.table td:hover.positive,
+.ui.table th:hover.positive {
+    background-color: #dff0d8 !important;
+}
+
+.ui.table tr.negative td,
+.ui.table td.negative {
+    background-color: #f2dede !important;
+}
+
+.ui.celled.table tr.negative:hover td,
+.ui.celled.table tr:hover td.negative,
+.ui.table tr.negative:hover td,
+.ui.table td:hover.negative,
+.ui.table th:hover.negative {
+    background-color: #f2dede !important;
 }
