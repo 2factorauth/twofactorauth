@@ -70,6 +70,7 @@ hash: SupportTwoFactorAuth
                             <th>Docs</th>
                             <th>SMS</th>
                             <th>Google Auth</th>
+                            <th>Authy</th>
                             <th class="two wide">Custom</th>
                         </tr>
                     </thead>
@@ -97,6 +98,12 @@ hash: SupportTwoFactorAuth
                             {% endif %}
 
                             {% if website.goog %}
+                                <td class="positive icon"><i class="checkmark large icon"></i></td>
+                            {% else %}
+                                <td class="negative icon"><i class="remove large icon"></i></td>
+                            {% endif %}
+                            
+                            {% if website.authy %}
                                 <td class="positive icon"><i class="checkmark large icon"></i></td>
                             {% else %}
                                 <td class="negative icon"><i class="remove large icon"></i></td>
