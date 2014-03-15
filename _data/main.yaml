@@ -90,7 +90,6 @@ sections:
           img: bankofamerica.png
           url: https://www.bankofamerica.com/
           tfa: Yes
-          goog: No
           sms: Yes
           doc: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
 
@@ -107,7 +106,6 @@ sections:
           img: paypal.png
           url: https://www.paypal.com/
           tfa: Yes
-          goog: No
           sms: Yes
           doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
 
@@ -147,8 +145,12 @@ sections:
     icon: globe
 
     sites:
-        - name: Nothing
-          url: https://nothing.com
+        - name: Namecheap
+          img: namecheap.png
+          url: https://www.namecheap.com/
+          tfa: Yes
+          sms: Yes
+          doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
 
 #
 # Gaming
@@ -163,8 +165,6 @@ sections:
           img: steam.png
           url: http://store.steampowered.com/
           tfa: Yes
-          goog: No
-          sms: No
           doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
           apps:
               - mail
