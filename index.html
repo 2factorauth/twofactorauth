@@ -1,1 +1,115 @@
-2-Factor =]
+---
+layout: default
+title: Two Factor Auth
+---
+
+<div class="ui fixed transparent inverted teal main menu">
+    <div class="menu">
+        <a href="#popular" class="active item">
+            <i class="trophy icon"></i>
+            Popular
+        </a>
+        <a href="#social" class="item">
+            <i class="users icon"></i>
+            Social Media
+        </a>
+        <a href="#retail" class="item">
+            <i class="cart icon"></i>
+            Retail
+        </a>
+        <a href="#email" class="item">
+            <i class="mail icon"></i>
+            Email
+        </a>
+        <a href="#payment" class="item">
+            <i class="payment icon"></i>
+            Payment
+        </a>
+        <a href="#finances" class="item">
+            <i class="dollar basic icon"></i>
+            Finances
+        </a>
+        <a href="#developer" class="item">
+            <i class="code icon"></i>
+            Developer
+        </a>
+        <a href="#domains" class="item">
+            <i class="globe icon"></i>
+            Domains
+        </a>
+        <a href="#gaming" class="item">
+            <i class="gamepad icon"></i>
+            Gaming
+        </a>
+        <a href="#bitcoin" class="item">
+            <i class="bitcoin icon"></i>
+            Bitcoin
+        </a>
+        <div class="right menu">
+            <div class="item">
+                <div class="ui icon input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search icon"></i>
+                </div>
+            </div>
+            <div class="ui dropdown item">
+                <i class="comment icon"></i>
+                Feedback
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main container">
+    <div class="ui grid">
+        <div class="column">
+
+
+        {% for section in site.data %}
+            <div id="{{ section[1].id }}" class="section">
+                <h2 class="ui header">
+                    {{ section[1].title }}
+                </h2>
+
+                <table class="ui table segment">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>No Name Specified</td>
+                            <td>Unknown</td>
+                            <td>None</td>
+                        </tr>
+
+                        <tr class="positive">
+                            <td>Jimmy</td>
+                            <td><i class="icon checkmark"></i> Approved</td>
+                            <td>None</td>
+                        </tr>
+
+                        <tr>
+                            <td>Jamie</td>
+                            <td>Unknown</td>
+                            <td class="negative"><i class="icon close"></i> Requires call</td>
+                        </tr>
+
+                        <tr>
+                            <td>Jill</td>
+                            <td>Unknown</td>
+                            <td>None</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ui horizontal icon divider"><i class="{{ section[1].icon }} icon"></i></div>
+            </div><!-- Section -->
+        {% endfor %}
+
+        </div><!-- Column -->
+    </div><!-- UI Grid -->
+</div><!-- Main Container -->

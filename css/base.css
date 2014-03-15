@@ -1,0 +1,18 @@
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+html, body {height: 100%;}
+img { border: none; }
+ul { list-style: none; }
+a { text-decoration: none; }
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #505050;
+    line-height: 22px;
+    background: none;
+}
+
+.container {
+    width: 840px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
