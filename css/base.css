@@ -2,7 +2,9 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, 
 html, body {height: 100%;}
 img { border: none; }
 ul { list-style: none; }
-a { text-decoration: none; }
+a { color: #009FDA; text-decoration: none; }
+a:hover { color: #00BAFF; }
+
 
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10,6 +12,8 @@ body {
     line-height: 22px;
     background: none;
 }
+
+
 
 .sidenav {
     position: fixed;
@@ -19,6 +23,10 @@ body {
     width: 840px;
     margin: 0 auto;
     padding-top: 40px;
+}
+
+.footer {
+    text-align: center;
 }
 
 .ui.table tr.negative,
