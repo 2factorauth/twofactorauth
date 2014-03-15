@@ -20,10 +20,11 @@ sections:
           goog: Yes
           sms: Yes
           doc: https://www.facebook.com/help/148233965247823
-          apps:
-              - android
-              - windows
-              - apple
+          custom:
+              - icon: android
+                url: https://play.google.com/store/apps/details?id=com.facebook.katana
+              - icon: apple
+                url: http://itunes.apple.com/app/facebook/id284882215
 
         - name: Google+
           url: https://plus.google.com
@@ -32,10 +33,6 @@ sections:
           goog: Yes
           sms: Yes
           doc: https://support.google.com/accounts/answer/180744?hl=en
-          apps:
-              - android
-              - windows
-              - apple
 
 #
 # Retail
@@ -67,10 +64,6 @@ sections:
           goog: Yes
           sms: Yes
           doc: https://support.google.com/accounts/answer/180744?hl=en
-          apps:
-              - android
-              - windows
-              - apple
 
 #
 # Retail
@@ -125,8 +118,11 @@ sections:
           goog: Yes
           sms: Yes
           doc: http://aws.amazon.com/iam/details/mfa/
-          apps:
-              - android
+          custom:
+              - icon: android
+                url: http://www.amazon.com/gp/product/B0061MU68M
+              - icon: windows
+                url: http://www.windowsphone.com/en-us/store/app/authenticator/021dd79f-0598-e011-986b-78e7d1fa76f8
 
         - name: GitHub
           img: github.png
@@ -166,8 +162,8 @@ sections:
           url: http://store.steampowered.com/
           tfa: Yes
           doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
-          apps:
-              - mail
+          custom:
+              - icon: mail
 
 #
 # Bitcoin
@@ -185,5 +181,6 @@ sections:
           sms: Yes
           goog: Yes
           doc: https://blockchain.info/wallet/support-pages
-          links:
-              - https://blockchain.info/wallet/yubikey
+          custom:
+              - icon: key
+                url: https://blockchain.info/wallet/yubikey

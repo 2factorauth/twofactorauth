@@ -48,8 +48,11 @@ td.icon {
 }
 
 td a {
-    display: block;
     color: #505050;
+}
+
+td.main a {
+    display: block;
 }
 
 td img.icon {

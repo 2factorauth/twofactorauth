@@ -52,7 +52,7 @@ title: Two Factor Auth
                 {% for site in section.sites %}
                         <tr>
                         {% if site.tfa %}
-                            <td class="positive">
+                            <td class="main positive">
                             {% if site.img %}
                                 <img src="/img/{{ section.id }}/{{ site.img }}" class="icon" alt="{{ site.name }}">
                             {% endif %}
@@ -77,13 +77,14 @@ title: Two Factor Auth
                                 <td class="negative icon"><i class="remove large icon"></i></td>
                             {% endif %}
 
-                            {% if site.apps or site.links %}
+                            {% if site.custom %}
                                 <td class="positive icon">
-                                {% for icon in site.apps %}
-                                    <i class="{{ icon }} small icon"></i>
-                                {% endfor %}
-                                {% for link in site.links %}
-                                    <a href="{{ link }}"><i class="external url small icon"></i></a>
+                                {% for item in site.custom %}
+                                    {% if item.url %}
+                                        <a href="{{ item.url }}"><i class="{{ item.icon }} small icon"></i></a>
+                                    {% else %}
+                                        <i class="{{ item.icon }} small icon"></i>
+                                    {% endif %}
                                 {% endfor %}
                                 </td>
                             {% else %}
@@ -91,7 +92,7 @@ title: Two Factor Auth
                             {% endif %}
                         </tr>
                         {% else %}
-                            <td class="negative">
+                            <td class="main negative">
                             {% if site.img %}
                                 <img src="/img/{{ section.id }}/{{ site.img }}" class="icon" alt="{{ site.name }}">
                             {% endif %}
