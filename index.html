@@ -85,6 +85,9 @@ title: Two Factor Auth
                         </tr>
                         {% else %}
                             <td class="negative">
+                            {% if site.img %}
+                                <img src="{{ site.img }}" class="icon" alt="{{ site.name }}">
+                            {% endif %}
                                 <a href="{{ site.url }}">{{ site.name }}</a>
                             </td>
                             <td class="negative"><i class="remove large icon"></td>
