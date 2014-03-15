@@ -103,8 +103,13 @@ sections:
     icon: payment
 
     sites:
-        - name: Nothing
-          url: https://nothing.com
+        - name: PayPal
+          img: paypal.png
+          url: https://www.paypal.com/
+          tfa: Yes
+          goog: No
+          sms: Yes
+          doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
 
 #
 # Developer
