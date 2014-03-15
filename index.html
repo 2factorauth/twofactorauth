@@ -4,7 +4,30 @@ message: Security is important, @TWITTERHANDLE. We'd like if you supported two f
 hash: SupportFactorAuth
 ---
 
-<div class="ui fixed transparent inverted teal main menu">
+<div class="ui fixed transparent inverted teal main menu mobile">
+    <div class="menu">
+        <div class="right menu">
+            <a href="{{ site.repo }}" class="item">
+                <i class="github icon"></i>
+                Contribute
+            </a>
+        </div>
+
+        <div class="ui dropdown item">
+            Menu <i class="dropdown icon"></i>
+            <div class="menu">
+                {% for section in site.data.main.sections %}
+                <a href="{% if forloop.first %}#{% else %}#{{ section.id }}{% endif %}" class="item">
+                    <i class="{{ section.icon }} icon"></i>
+                    {{ section.title }}
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui fixed transparent inverted teal main menu desktop">
     <div class="menu">
         <div class="right menu">
             <a href="{{ site.repo }}" class="item">
@@ -27,7 +50,8 @@ hash: SupportFactorAuth
         <div class="column">
 
             <div class="banner ui icon header">
-                <i class="circular mobile icon"></i>Two Factor Auth (2FA)
+                <i class="circular mobile icon"></i>
+                <h2>Two Factor Auth (2FA)</h2>
                 <div class="sub header">List of websites and whether or not they support
                     <a href="http://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
                 </div>

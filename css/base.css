@@ -41,7 +41,6 @@ body {
   box-shadow: none;
 }
 
-
 td.icon {
     text-align: center;
 }
@@ -90,4 +89,23 @@ td img.icon {
 .ui.table td:hover.negative,
 .ui.table th:hover.negative {
     background-color: #f2dede !important;
+}
+
+@media only screen and (max-width: 1199px) {
+  .ui.menu.desktop {
+      display: block;
+  }
+  .ui.menu.mobile {
+      display: none;
+  }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px), screen and (max-width: 479px) {
+  .ui.menu.desktop {
+      display: none;
+  }
+  .ui.menu.mobile {
+      display: block;
+  }
 }
