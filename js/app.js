@@ -1,5 +1,3 @@
 (function (root, $) {
-    $('th.app').popup({
-        content: 'Custom mobile application',
-    });
+    $('.menu .dropdown').dropdown();
 }(window, jQuery));
