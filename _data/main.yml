@@ -209,3 +209,11 @@ sections:
           custom:
               - icon: key
                 url: https://blockchain.info/wallet/yubikey
+
+        - name: Coinbase
+          url: https://coinbase.com/
+          tfa: Yes
+          sms: Yes
+          goog: Yes
+          authy: Yes
+          doc: http://blog.coinbase.com/post/25677574019/coinbase-now-offers-two-factor-authentication
