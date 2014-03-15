@@ -76,7 +76,7 @@ title: Two Factor Auth
                             {% if site.apps %}
                                 <td class="positive icon">
                                 {% for icon in site.apps %}
-                                    <i class="{{ icon }} large icon"></i>
+                                    <i class="{{ icon }} small icon"></i>
                                 {% endfor %}
                                 </td>
                             {% else %}
@@ -87,10 +87,10 @@ title: Two Factor Auth
                             <td class="negative">
                                 <a href="{{ site.url }}">{{ site.name }}</a>
                             </td>
-                            <td class="negative"></td>
-                            <td class="negative"></td>
-                            <td class="negative"></td>
-                            <td class="negative"></td>
+                            <td class="negative"><i class="remove large icon"></td>
+                            <td class="negative"><i class="remove large icon"></td>
+                            <td class="negative"><i class="remove large icon"></td>
+                            <td class="negative"><i class="remove large icon"></td>
                         {% endif %}
                 {% endfor %}
                     </tbody>
