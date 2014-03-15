@@ -1,3 +1,7 @@
+#
+# Configuration for the 2FA details.
+#
+
 sections:
 
 #
@@ -30,8 +34,10 @@ sections:
     icon: cart
 
     sites:
-        - name: Nothing
-          url: https://nothing.com
+        - name: Amazon
+          url: https://amazon.com
+          img: /img/amazon.png
+          tfa: No
 
 #
 # Email
