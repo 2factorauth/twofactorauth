@@ -1,0 +1,150 @@
+sections:
+
+#
+# Popular Sites
+#
+
+  - index: 0
+    id: popular
+    title: Popular Sites
+    icon: trophy
+
+    sites:
+        - name: Nothing
+          url: https://nothing.com
+
+#
+# Social Media
+#
+
+  - index: 1
+    id: social
+    title: Social Media
+    icon: users
+
+    sites:
+        - name: Nothing
+          url: https://nothing.com
+          tfa: Yes
+          goog: No
+          sms: Yes
+          doc: https://nothing.com/tfa
+          app: No
+
+#
+# Retail
+#
+
+  - index: 2
+    id: retail
+    title: Retail
+    icon: cart
+
+    sites:
+        - name: Nothing
+          url: https://nothing.com
+
+#
+# Email
+#
+
+  - index: 3
+    id: email
+    title: Email
+    icon: mail
+
+    sites:
+        - name: Nothing
+          url: https://nothing.com
+
+#
+# Retail
+#
+
+  - index: 4
+    id: finances
+    title: Finances
+    icon: dollar basic
+
+    sites:
+        - name: Nothing
+          url: https://nothing.com
+
+#
+# Payments
+#
+
+  - index: 5
+    id: payments
+    title: Payments
+    icon: payment
+
+    sites:
+        - name: Nothing
+          url: https://nothing.com
+
+#
+# Developer
+#
+
+  - index: 6
+    id: developer
+    title: Developer
+    icon: code
+
+    sites:
+        - name: Amazon Web Services
+          img: /img/aws.png
+          url: https://aws.amazon.com
+          tfa: Yes
+          goog: Yes
+          sms: Yes
+          doc: http://aws.amazon.com/iam/details/mfa/
+          apps:
+              - android
+        - name: GitHub
+          img: /img/github.png
+          url: https://github.com
+          tfa: Yes
+          goog: Yes
+          sms: Yes
+          doc: https://help.github.com/articles/about-two-factor-authentication
+
+#
+# Domains
+#
+
+  - index: 7
+    id: domains
+    title: Domains
+    icon: globe
+
+    sites:
+        - name: Nothing
+          url: https://nothing.com
+
+#
+# Gaming
+#
+
+  - index: 8
+    id: gaming
+    title: Gaming
+    icon: gamepad
+
+    sites:
+        - name: Nothing
+          url: https://nothing.com
+
+#
+# Bitcoin
+#
+
+  - index: 9
+    id: bitcoin
+    title: Bitcoin
+    icon: bitcoin
+
+    sites:
+        - name: Nothing
+          url: https://nothing.com
