@@ -27,10 +27,10 @@ title: Two Factor Auth
         <div class="column">
 
 
-        {% for section in site.data %}
-            <div id="{{ section[1].id }}" class="section">
+        {% for section in site.data.main.sections %}
+            <div id="{{ section.id }}" class="section">
                 <h2 class="ui header">
-                    {{ section[1].title }}
+                    {{ section.title }}
                 </h2>
 
                 <table class="ui table celled segment">
@@ -44,7 +44,7 @@ title: Two Factor Auth
                         </tr>
                     </thead>
                     <tbody>
-                {% for site in section[1].sites %}
+                {% for site in section.sites %}
                         <tr>
                         {% if site.tfa %}
                             <td class="positive">
@@ -95,7 +95,7 @@ title: Two Factor Auth
                     </tbody>
                 </table>
 
-                <div class="ui horizontal icon divider"><i class="{{ section[1].icon }} circular icon"></i></div>
+                <div class="ui horizontal icon divider"><i class="{{ section.icon }} circular icon"></i></div>
             </div><!-- Section -->
         {% endfor %}
 
