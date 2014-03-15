@@ -48,8 +48,17 @@ sections:
     icon: mail
 
     sites:
-        - name: Nothing
-          url: https://nothing.com
+        - name: GMail
+          url: https://gmail.com
+          img: /img/gmail.png
+          tfa: Yes
+          goog: Yes
+          sms: Yes
+          doc: https://support.google.com/accounts/answer/180744?hl=en
+          apps:
+              - android
+              - windows
+              - apple
 
 #
 # Retail
