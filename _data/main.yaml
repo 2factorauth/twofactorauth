@@ -9,13 +9,17 @@ sections:
     icon: users
 
     sites:
-        - name: Nothing
-          url: https://nothing.com
+        - name: Facebook
+          url: https://facebook.com
+          img: /img/facebook.png
           tfa: Yes
-          goog: No
+          goog: Yes
           sms: Yes
-          doc: https://nothing.com/tfa
-          app: No
+          doc: https://www.facebook.com/help/148233965247823
+          apps:
+              - android
+              - windows
+              - apple
 
 #
 # Retail
