@@ -193,6 +193,23 @@ sections:
           tfa: No
 
 #
+# Backup and Sync
+#
+
+  - id: backup
+    title: Backup and Sync
+    icon: file
+
+    websites: 
+      - name: Dropbox
+        img: dropbox.png
+        url: https://www.dropbox.com
+        tfa: Yes
+        sms: Yes
+        goog: Yes
+        doc: https://www.dropbox.com/help/363/en
+
+#
 # Domains
 #
 
