@@ -59,7 +59,7 @@ hash: SupportTwoFactorAuth
 
         {% for section in site.data.main.sections %}
             <div id="{{ section.id }}" class="section">
-                <table class="ui table celled segment">
+                <table class="ui table celled compact segment">
                     <thead>
                         <tr>
                             <th class="eleven wide"><h3>{{ section.title }}</h3></th>
@@ -84,7 +84,7 @@ hash: SupportTwoFactorAuth
                             {% if website.doc %}
                                 <td class="positive icon">
                                     <a href="{{ website.doc }}">
-                                        <i class="external url link large icon"></i>
+                                        <i class="external url link icon"></i>
                                     </a>
                                 </td>
                             {% else %}
