@@ -160,7 +160,9 @@ hash: SupportTwoFactorAuth
                     </tbody>
                 </table>
 
-                <div class="ui horizontal icon divider"><i class="{{ section.icon }} circular icon"></i></div>
+            {% unless forloop.last %}
+                <div class="ui divider"></div>
+            {% endunless %}
             </div><!-- Section -->
         {% endfor %}
 
