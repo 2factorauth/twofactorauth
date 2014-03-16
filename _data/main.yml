@@ -38,6 +38,7 @@ sections:
         
         - name: Twitter
           url: https://twitter.com
+          img: twitter.png
           tfa: Yes
           sms: Yes
           custom:
@@ -168,6 +169,7 @@ sections:
 
         - name: CloudFlare
           url: https://cloudflare.com
+          img: cloudflare.png
           tfa: Yes
           sms: Yes
           authy: Yes
@@ -212,6 +214,7 @@ sections:
 
         - name: Coinbase
           url: https://coinbase.com/
+          img: coinbase.png
           tfa: Yes
           sms: Yes
           goog: Yes
