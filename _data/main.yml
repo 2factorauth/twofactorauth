@@ -9,7 +9,7 @@ sections:
 #
 
   - id: social
-    title: Social Media
+    title: Social
     icon: users
 
     websites:
@@ -112,6 +112,12 @@ sections:
     icon: payment
 
     websites:
+        - name: Amazon Payments
+          url: https://payments.amazon.com
+          twitter: AmazonPayments
+          img: amazon.png
+          tfa: No
+
         - name: PayPal
           img: paypal.png
           url: https://www.paypal.com/
@@ -119,6 +125,13 @@ sections:
           sms: Yes
           doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
 
+        - name: Stripe
+          img: stripe.png
+          url: https://www.stripe.com/
+          tfa: Yes
+          goog: Yes
+          sms: No
+          doc: https://stripe.com/blog/two-step-verification
 #
 # Developer
 #
@@ -160,13 +173,6 @@ sections:
     icon: globe
 
     websites:
-        - name: Namecheap
-          img: namecheap.png
-          url: https://www.namecheap.com/
-          tfa: Yes
-          sms: Yes
-          doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
-
         - name: CloudFlare
           url: https://cloudflare.com
           img: cloudflare.png
@@ -174,6 +180,13 @@ sections:
           sms: Yes
           authy: Yes
           doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
+
+        - name: Namecheap
+          img: namecheap.png
+          url: https://www.namecheap.com/
+          tfa: Yes
+          sms: Yes
+          doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
 
 #
 # Gaming
