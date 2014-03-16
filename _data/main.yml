@@ -18,6 +18,7 @@ sections:
           img: facebook.png
           tfa: Yes
           goog: Yes
+          authy: Yes
           sms: Yes
           doc: https://www.facebook.com/help/148233965247823
           custom:
@@ -31,8 +32,21 @@ sections:
           img: g+.png
           tfa: Yes
           goog: Yes
+          authy: Yes
           sms: Yes
           doc: https://support.google.com/accounts/answer/180744?hl=en
+        
+        - name: Twitter
+          url: https://twitter.com
+          img: twitter.png
+          tfa: Yes
+          sms: Yes
+          custom:
+              - icon: android
+                url: https://play.google.com/store/apps/details?id=com.twitter.android
+              - icon: apple
+                url: https://itunes.apple.com/us/app/twitter/id333903271
+          doc: https://support.twitter.com/articles/20170388
 
 #
 # Retail
@@ -63,6 +77,7 @@ sections:
           img: gmail.png
           tfa: Yes
           goog: Yes
+          authy: Yes
           sms: Yes
           doc: https://support.google.com/accounts/answer/180744?hl=en
 
@@ -118,6 +133,7 @@ sections:
           url: https://aws.amazon.com
           tfa: Yes
           goog: Yes
+          authy: Yes
           sms: Yes
           doc: http://aws.amazon.com/iam/details/mfa/
           custom:
@@ -131,6 +147,7 @@ sections:
           url: https://github.com
           tfa: Yes
           goog: Yes
+          authy: Yes
           sms: Yes
           doc: https://help.github.com/articles/about-two-factor-authentication
 
@@ -149,6 +166,14 @@ sections:
           tfa: Yes
           sms: Yes
           doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
+
+        - name: CloudFlare
+          url: https://cloudflare.com
+          img: cloudflare.png
+          tfa: Yes
+          sms: Yes
+          authy: Yes
+          doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
 #
 # Gaming
@@ -186,3 +211,12 @@ sections:
           custom:
               - icon: key
                 url: https://blockchain.info/wallet/yubikey
+
+        - name: Coinbase
+          url: https://coinbase.com/
+          img: coinbase.png
+          tfa: Yes
+          sms: Yes
+          goog: Yes
+          authy: Yes
+          doc: http://blog.coinbase.com/post/25677574019/coinbase-now-offers-two-factor-authentication
