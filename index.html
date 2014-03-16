@@ -75,7 +75,7 @@ hash: SupportTwoFactorAuth
                         </tr>
                     </thead>
                     <tbody>
-                {% for website in section.websites %}
+                    {% for website in section.websites %}
                         <tr>
                         {% if website.tfa %}
                             <td class="main positive">
@@ -86,27 +86,43 @@ hash: SupportTwoFactorAuth
                             </td>
 
                             {% if website.doc %}
-                                <td class="positive icon"><a href="{{ website.doc }}"><i class="external url link large icon"></i></a></td>
+                                <td class="positive icon">
+                                    <a href="{{ website.doc }}">
+                                        <i class="external url link large icon"></i>
+                                    </a>
+                                </td>
                             {% else %}
                                 <td class="positive icon"></td>
                             {% endif %}
 
                             {% if website.sms %}
-                                <td class="positive icon"><i class="checkmark large icon"></i></td>
+                                <td class="positive icon">
+                                    <i class="checkmark large icon"></i>
+                                </td>
                             {% else %}
-                                <td class="negative icon"><i class="remove large icon"></i></td>
+                                <td class="negative icon">
+                                    <i class="remove large icon"></i>
+                                </td>
                             {% endif %}
 
                             {% if website.goog %}
-                                <td class="positive icon"><i class="checkmark large icon"></i></td>
+                                <td class="positive icon">
+                                    <i class="checkmark large icon"></i>
+                                </td>
                             {% else %}
-                                <td class="negative icon"><i class="remove large icon"></i></td>
+                                <td class="negative icon">
+                                    <i class="remove large icon"></i>
+                                </td>
                             {% endif %}
-                            
+
                             {% if website.authy %}
-                                <td class="positive icon"><i class="checkmark large icon"></i></td>
+                                <td class="positive icon">
+                                    <i class="checkmark large icon"></i>
+                                </td>
                             {% else %}
-                                <td class="negative icon"><i class="remove large icon"></i></td>
+                                <td class="negative icon">
+                                    <i class="remove large icon"></i>
+                                </td>
                             {% endif %}
 
                             {% if website.custom %}
@@ -120,7 +136,9 @@ hash: SupportTwoFactorAuth
                                 {% endfor %}
                                 </td>
                             {% else %}
-                                <td class="negative icon"><i class="remove large icon"></i></td>
+                                <td class="negative icon">
+                                    <i class="remove large icon"></i>
+                                </td>
                             {% endif %}
                         </tr>
                         {% else %}
@@ -131,7 +149,7 @@ hash: SupportTwoFactorAuth
                                 <a href="{{ website.url }}">{{ website.name }}</a>
                             </td>
                             {% if website.twitter %}
-                                <td class="twitter main negative" colspan="4">
+                                <td class="twitter main negative" colspan="5">
                                     <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.message|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> Tell them to support 2FA</a>
                                 </td>
                             {% else %}
@@ -140,7 +158,7 @@ hash: SupportTwoFactorAuth
                                 <td class="negative icon"><i class="remove large icon"></td>
                             {% endif %}
                         {% endif %}
-                {% endfor %}
+                    {% endfor %}
                     </tbody>
                 </table>
 
