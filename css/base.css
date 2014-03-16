@@ -24,6 +24,11 @@ body {
     padding-top: 40px;
 }
 
+.ui.menu.main > .menu {
+    width: 840px;
+    margin: 0 auto;
+}
+
 .main .column .banner {
     display: block;
     margin: 40px auto;
