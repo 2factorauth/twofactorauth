@@ -183,6 +183,13 @@ sections:
           twitter: heroku
           tfa: No
 
+        - name: Digital Ocean
+          url: https://www.digitalocean.com/
+          img: digitalocean.png
+          tfa: Yes
+          goog: Yes
+          doc: https://cloud.digitalocean.com/settings/two_factor_auth
+
 #
 # Domains
 #
