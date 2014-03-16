@@ -116,6 +116,15 @@ sections:
           sms: Yes
           doc: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
 
+        - name: Charles Schwab
+          img: charlesschwab.png
+          url: https://www.schwab.com/
+          tfa: Yes
+          doc: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/your_questions_answered
+          custom:
+            - icon: key
+              url: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/your_questions_answered
+
 #
 # Payments
 #
