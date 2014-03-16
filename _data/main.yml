@@ -63,6 +63,19 @@ sections:
           img: amazon.png
           tfa: No
 
+        - name: Etsy
+          url: http://www.etsy.com/
+          img: etsy.png
+          sms: Yes
+          tfa: Yes
+          doc: http://www.etsy.com/help/article/3335
+
+        - name: Zappos
+          url: http://www.zappos.com/
+          twitter: Zappos
+          img: zappos.png
+          tfa: No
+
 #
 # Email
 #
@@ -82,7 +95,7 @@ sections:
           doc: https://support.google.com/accounts/answer/180744?hl=en
 
 #
-# Retail
+# Finance
 #
 
   - id: finance
