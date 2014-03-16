@@ -59,14 +59,10 @@ hash: SupportTwoFactorAuth
 
         {% for section in site.data.main.sections %}
             <div id="{{ section.id }}" class="section">
-                <h2 class="ui header">
-                    {{ section.title }}
-                </h2>
-
                 <table class="ui table celled segment">
                     <thead>
                         <tr>
-                            <th class="eleven wide">Site</th>
+                            <th class="eleven wide"><h3>{{ section.title }}</h3></th>
                             <th>Docs</th>
                             <th>SMS</th>
                             <th>Google Auth</th>
