@@ -168,6 +168,13 @@ sections:
               - icon: windows
                 url: http://www.windowsphone.com/en-us/store/app/authenticator/021dd79f-0598-e011-986b-78e7d1fa76f8
 
+        - name: Digital Ocean
+          url: https://www.digitalocean.com/
+          img: digitalocean.png
+          tfa: Yes
+          goog: Yes
+          doc: https://cloud.digitalocean.com/settings/two_factor_auth
+
         - name: GitHub
           img: github.png
           url: https://github.com
@@ -182,13 +189,6 @@ sections:
           img: heroku.png
           twitter: heroku
           tfa: No
-
-        - name: Digital Ocean
-          url: https://www.digitalocean.com/
-          img: digitalocean.png
-          tfa: Yes
-          goog: Yes
-          doc: https://cloud.digitalocean.com/settings/two_factor_auth
 
 #
 # Domains
