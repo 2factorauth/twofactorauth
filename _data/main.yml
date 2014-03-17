@@ -324,6 +324,15 @@ sections:
           sms: No
           authy: Yes
           doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
+        
+        - name: Google Cloud Platform
+          url: https://cloud.google.com
+          img: https://cloud.google.com/images/gcp-favicon.ico
+          tfa: Yes
+          goog: Yes
+          authy: Yes
+          sms: Yes
+          doc: https://support.google.com/accounts/answer/180744?hl=en
 
 #
 # Backup and Sync
