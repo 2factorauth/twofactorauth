@@ -212,6 +212,16 @@ sections:
           twitter: heroku
           tfa: No
 
+        - name: Linode
+          url: https://www.linode.com/
+          img: linode.png
+          twitter: linode
+          tfa: Yes
+          goog: Yes
+          sms: No
+          authy: Yes
+          doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
+
 #
 # Backup and Sync
 #
