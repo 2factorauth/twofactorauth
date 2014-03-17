@@ -12,8 +12,6 @@ body {
     background: none;
 }
 
-
-
 .sidenav {
     position: fixed;
 }
@@ -48,6 +46,10 @@ body {
 
 td.icon {
     text-align: center;
+}
+
+td span.progress {
+    float: right;
 }
 
 td a {
