@@ -332,7 +332,15 @@ sections:
   - id: backup
     title: Backup and Sync
     icon: file
-
+    
+ websites:
+        - name: Box
+          url: https://app.box.com/
+          img: box.png
+          tfa: Yes
+          sms: Yes
+          doc: https://support.box.com/hc/en-us/articles/200526658-Can-I-enable-2-step-verification-for-my-account-
+          
     websites:
       - name: Dropbox
         img: dropbox.png
