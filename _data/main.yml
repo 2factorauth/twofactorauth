@@ -173,6 +173,12 @@ sections:
           sms: Yes
           doc: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
 
+        - name: CapitalOne 360
+          url: https://home.capitalone360.com/
+          twitter: CapitalOne360
+          img: capitalone360.png
+          tfa: No
+
         - name: Charles Schwab
           img: charlesschwab.png
           url: https://www.schwab.com/
@@ -182,28 +188,31 @@ sections:
             - icon: key
               url: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/your_questions_answered
 
+        - name: Chase
+          url: https://www.chase.com/
+          twitter: chase
+          img: chase.png
+          tfa: No
+
         - name: Mint
           url: https://www.mint.com
           twitter: mint
           img: mint.png
           tfa: No
 
-        - name: CapitalOne 360
-          url: https://home.capitalone360.com/
-          twitter: CapitalOne360
-          img: capitalone360.png
-          tfa: No
+        - name: SEB
+          img: seb.png
+          url: http://www.seb.se/pow/default.asp
+          tfa: Yes
+          doc: http://www.seb.se/pow/wcp/index.asp?ss=/pow/wcp/templates/sebcollection.cfmc.asp%3FDUID%3DDUID_623697DCF55C4576C1256DEF00637BE3
+          custom:
+            - icon: key
+              url: http://www.seb.se/pow/wcp/index.asp?ss=/pow/wcp/templates/sebcollection.cfmc.asp%3FDUID%3DDUID_623697DCF55C4576C1256DEF00637BE3
 
         - name: Simple
           url: https://www.simple.com/
           twitter: simple
           img: simple.png
-          tfa: No
-
-        - name: Chase
-          url: https://www.chase.com/
-          twitter: chase
-          img: chase.png
           tfa: No
 
         - name: Vanguard
@@ -342,6 +351,15 @@ sections:
         goog: Yes
         authy: Yes
         doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
+
+      - name: SpiderOak
+        img: spideroak.png
+        url: https://spideroak.com
+        tfa: No
+        sms: Yes
+        goog: No
+        authy: No
+        doc: https://spideroak.com/blog/20110620235134-2-factor-authentication-to-your-spideroak-account
 
 
 #
