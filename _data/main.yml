@@ -376,3 +376,18 @@ sections:
           goog: Yes
           authy: No
           doc: http://localbitcoins.blogspot.fi/2013/05/using-two-factor-authentication-on.html
+
+#
+# Communication
+#
+
+  - id: communication
+    title: Communication
+    icon: communication
+
+    websites:
+        - name: Skype
+          url: https://www.skype.com
+          twitter: skype
+          img: skype.png
+          tfa: No
