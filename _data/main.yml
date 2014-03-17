@@ -181,6 +181,7 @@ sections:
           url: https://www.paypal.com/
           tfa: Yes
           sms: Yes
+          verisign: Yes
           doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
 
         - name: Stripe
