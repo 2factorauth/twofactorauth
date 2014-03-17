@@ -127,9 +127,15 @@ sections:
     icon: dollar basic
 
     websites:
+        - name: American Express
+          url: https://www.americanexpress.com/
+          twitter: AmericanExpress
+          img: americanexpress.png
+          tfa: No
+
         - name: Bank of America
-          img: bankofamerica.png
           url: https://www.bankofamerica.com/
+          img: bankofamerica.png
           tfa: Yes
           sms: Yes
           doc: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
@@ -335,8 +341,8 @@ sections:
                 url: https://market.android.com/details?id=com.blizzard.bma
               - icon: apple
                 url: https://itunes.apple.com/app/battle.net-mobile-authenticator/id306862897
-          
-          
+
+
 
 #
 # Bitcoin
