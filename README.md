@@ -61,6 +61,9 @@ this example:
               # Any other custom clients...
 ```
 
+Note: A tip on getting icons, use Google's icon api. Just go to
+`https://www.google.com/s2/favicons?domain=http://example.com`
+and you will get sites the icon as png.
 
 ## License
 
