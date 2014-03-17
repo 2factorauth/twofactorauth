@@ -22,6 +22,14 @@ sections:
           sms: No
           doc: https://mml.desk.com/customer/portal/articles/1039728-how-do-i-set-up-two-factor-authentication-
 
+        - name: Buffer
+          url: https://bufferapp.com
+          img: bufferapp.png
+          tfa: Yes
+          sms: Yes
+          goog: Yes
+          doc: http://blog.bufferapp.com/introducing-the-safest-social-media-publishing-on-the-web
+
         - name: Facebook
           url: https://facebook.com
           img: facebook.png
@@ -44,6 +52,13 @@ sections:
           authy: Yes
           sms: Yes
           doc: https://support.google.com/accounts/answer/180744?hl=en
+
+        - name: HootSuite
+          url: https://hootsuite.com
+          img: hootsuite.png
+          tfa: Yes
+          goog: Yes
+          doc: https://help.hootsuite.com/entries/22527304-Managing-Google-Authenticator
 
         - name: LinkedIn
           url: https://linkedin.com
@@ -360,7 +375,7 @@ sections:
           tfa: Yes
           sms: Yes
           doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
-          
+
         - name: Name.com
           url: http://www.name.com/
           img: namecom.png
@@ -371,8 +386,8 @@ sections:
               url: https://play.google.com/store/apps/details?id=com.verisign.mvip.main
             - icon: apple
               url: https://itunes.apple.com/app/vip-access-for-iphone/id307658513
-          
-          
+
+
 #
 # Gaming
 #
