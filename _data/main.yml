@@ -301,6 +301,13 @@ sections:
           authy: Yes
           doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
+        - name: Dnsimple
+          url: https://dnsimple.com
+          img: dnsimple.png
+          tfa: Yes
+          authy: Yes
+          doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
+
         - name: Namecheap
           img: namecheap.png
           url: https://www.namecheap.com/
