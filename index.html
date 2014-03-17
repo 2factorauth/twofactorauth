@@ -62,7 +62,8 @@ hash: SupportTwoFactorAuth
                         </tr>
                     </thead>
                     <tbody>
-                    {% for website in section.websites %}
+                    {% assign sorted_websites = section.websites | sort: 'name' %}
+                    {% for website in sorted_websites %}
                         <tr>
                         {% if website.tfa %}
                             <td class="main positive">
