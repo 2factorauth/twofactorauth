@@ -101,6 +101,15 @@ sections:
           sms: Yes
           doc: https://support.google.com/accounts/answer/180744?hl=en
 
+        - name: Outlook
+          url: https://outlook.com
+          img: outlook.png
+          tfa: Yes
+          goog: Yes
+          authy: No
+          sms: Yes
+          doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+
 #
 # Finance
 #
