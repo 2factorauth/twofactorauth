@@ -325,6 +325,19 @@ sections:
           doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
           custom:
               - icon: mail
+        - name: Guild Wars 2
+          img: guild_wars_2.png
+          url: https://www.guildwars2.com
+          tfa: Yes
+          goog: Yes
+          doc: https://help.guildwars2.com/entries/27626157-Two-Factor-Authentication
+          custom:
+              - icon: mail
+        - name: League of Legends
+          url: http://leagueoflegends.com
+          img: league_of_legends.png
+          twitter: leagueoflegends
+          tfa: No
         - name: Blizzard
           img: blizzard.png
           url: http://blizzard.com
