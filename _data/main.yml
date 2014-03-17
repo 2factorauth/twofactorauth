@@ -36,6 +36,13 @@ sections:
           sms: Yes
           doc: https://support.google.com/accounts/answer/180744?hl=en
 
+        - name: LinkedIn
+          url: https://linkedin.com
+          img: linkedin.png
+          tfa: Yes
+          sms: Yes
+          doc: https://help.linkedin.com/app/answers/detail/a_id/544/ft/eng
+
         - name: Twitter
           url: https://twitter.com
           img: twitter.png
@@ -206,7 +213,7 @@ sections:
     title: Backup and Sync
     icon: file
 
-    websites: 
+    websites:
       - name: Dropbox
         img: dropbox.png
         url: https://www.dropbox.com
@@ -214,6 +221,15 @@ sections:
         sms: Yes
         goog: Yes
         doc: https://www.dropbox.com/help/363/en
+
+      - name: Evernote
+        img: evernote.png
+        url: https://evernote.com
+        tfa: Yes
+        sms: Yes
+        goog: Yes
+        doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
+
 
 #
 # Domains
