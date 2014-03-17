@@ -13,7 +13,7 @@ sections:
     icon: users
 
     websites:
-        - name: App.net
+        - name: App.netg
           url: https://join.app.net
           img: app.net.png
           tfa: Yes
@@ -387,11 +387,12 @@ sections:
           authy: Yes
           doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
-        - name: Gandi
-          url: https://gandi.net
+        - name: Gandi.net
+          url: https://www.gandi.net
           img: gandi.png
           tfa: Yes
           sms: No
+          goog: Yes
           authy: Yes
           doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
 
