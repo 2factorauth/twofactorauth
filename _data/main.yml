@@ -302,6 +302,14 @@ sections:
           authy: Yes
           doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
+        - name: Gandi
+          url: https://gandi.net
+          img: cloudflare.png
+          tfa: Yes
+          sms: No
+          authy: Yes
+          doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
+
         - name: Namecheap
           img: namecheap.png
           url: https://www.namecheap.com/
