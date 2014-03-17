@@ -103,12 +103,6 @@ sections:
     icon: dollar basic
 
     websites:
-        - name: Mint
-          url: https://www.mint.com
-          twitter: mint
-          img: mint.png
-          tfa: No
-
         - name: Bank of America
           img: bankofamerica.png
           url: https://www.bankofamerica.com/
@@ -124,6 +118,12 @@ sections:
           custom:
             - icon: key
               url: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/your_questions_answered
+
+        - name: Mint
+          url: https://www.mint.com
+          twitter: mint
+          img: mint.png
+          tfa: No
 
 #
 # Payments
