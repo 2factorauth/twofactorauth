@@ -302,6 +302,15 @@ sections:
           authy: Yes
           doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
+        - name: DreamHost
+          url: http://www.dreamhost.com
+          img: dreamhost.png
+          tfa: Yes
+          goog: Yes
+          doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
+          custom:
+              - icon: mail
+
         - name: Namecheap
           img: namecheap.png
           url: https://www.namecheap.com/
