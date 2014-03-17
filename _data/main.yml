@@ -36,6 +36,13 @@ sections:
           sms: Yes
           doc: https://support.google.com/accounts/answer/180744?hl=en
 
+        - name: LinkedIn
+          url: https://linkedin.com
+          img: linkedin.png
+          tfa: Yes
+          sms: Yes
+          doc: https://help.linkedin.com/app/answers/detail/a_id/544/ft/eng
+
         - name: Twitter
           url: https://twitter.com
           img: twitter.png
@@ -47,18 +54,6 @@ sections:
               - icon: apple
                 url: https://itunes.apple.com/us/app/twitter/id333903271
           doc: https://support.twitter.com/articles/20170388
-
-        - name: LinkedIn
-          url: https://linkedin.com
-          img: linkedin.png
-          tfa: Yes
-          sms: Yes
-          custom:
-              - icon: android
-                url: https://play.google.com/store/apps/details?id=com.linkedin.android
-              -icon: apple
-                url: https://itunes.apple.com/en/app/linkedin/id288429040
-          doc: https://help.linkedin.com/app/answers/detail/a_id/544/ft/eng
 
 #
 # Retail
@@ -218,7 +213,7 @@ sections:
     title: Backup and Sync
     icon: file
 
-    websites: 
+    websites:
       - name: Dropbox
         img: dropbox.png
         url: https://www.dropbox.com
@@ -233,13 +228,7 @@ sections:
         tfa: Yes
         sms: Yes
         goog: Yes
-        custom:
-            - icon: android
-              url: https://play.google.com/store/apps/details?id=com.evernote
-              icon: ios
-              url: https://itunes.apple.com/en/app/evernote/id281796108
-              icon: windows
-              url: https://www.windowsphone.com/en-us/store/app/evernote/db21927d-f292-e011-986b-78e7d1fa76f8
+        doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
 
 
 #
