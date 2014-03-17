@@ -213,6 +213,13 @@ sections:
               - icon: windows
                 url: http://www.windowsphone.com/en-us/store/app/authenticator/021dd79f-0598-e011-986b-78e7d1fa76f8
 
+        - name: MaxCDN
+          url: https://www.maxcdn.com
+          img: maxcdn.png
+          tfa: Yes
+          goog: Yes
+          doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
+
         - name: Bitbucket
           url: https://bitbucket.org
           twitter: bitbucket
