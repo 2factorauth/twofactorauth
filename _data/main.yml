@@ -300,3 +300,12 @@ sections:
           goog: Yes
           authy: Yes
           doc: http://blog.coinbase.com/post/25677574019/coinbase-now-offers-two-factor-authentication
+          
+          - name: LocalBitcoins
+          url: https://coinbase.com/
+          img: localbitcoins.png
+          tfa: Yes
+          sms: No
+          goog: Yes
+          authy: No
+          doc: http://localbitcoins.blogspot.fi/2013/05/using-two-factor-authentication-on.html
