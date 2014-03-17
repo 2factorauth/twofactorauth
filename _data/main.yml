@@ -144,12 +144,21 @@ sections:
 
         - name: Outlook
           url: https://outlook.com
-          img: outlook.png
+          img: zoho.png
           tfa: Yes
           goog: Yes
           authy: Yes
           sms: Yes
           doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+
+        - name: Zoho Mail
+          url: https://www.zoho.com/mail/
+          img: zoho.png
+          tfa: Yes
+          goog: Yes
+          authy: No
+          sms: Yes
+          doc: https://adminconsole.wiki.zoho.com/mail/Two-Factor-Authentication.html
 
 #
 # Finance
