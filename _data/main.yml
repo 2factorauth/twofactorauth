@@ -189,7 +189,12 @@ sections:
           url: https://www.chase.com/
           twitter: chase
           img: chase.png
-          tfa: No
+          tfa: Yes
+          doc: https://chaseonline.chase.com/public/enroll/IdentifyUser.aspx?LOB=RBGLogon
+          sms: Yes
+          custom:
+            - icon: mail
+              url: https://chaseonline.chase.com/public/enroll/IdentifyUser.aspx?LOB=RBGLogon
 
         - name: Vanguard
           url: http://www.vanguard.com/
