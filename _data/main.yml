@@ -99,11 +99,8 @@ sections:
           goog: Yes
           authy: Yes
           sms: Yes
-          doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+          doc: https://support.google.com/accounts/answer/180744?hl=en
 
-  - id: email
-    title: Email
-    icon: mail
 
     websites:
         - name: Outlook
@@ -113,7 +110,7 @@ sections:
           goog: Yes
           authy: No
           sms: Yes
-          doc: http://blogs.technet.com/b/microsoft_blog/archive/2013/04/17/microsoft-account-gets-more-secure.aspx
+          doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
 
 #
 # Finance
