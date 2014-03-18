@@ -38,7 +38,7 @@ websites:
       sms: Yes
 
     - name: E*Trade
-      img: etrade.jpg
+      img: etrade.png
       url: https://www.etrade.com/
       twitter: etrade
       tfa: Yes
@@ -68,6 +68,7 @@ websites:
     - name: Simple
       url: https://www.simple.com/
       twitter: simple
+      status: https://twitter.com/simple/status/445966117543378944
       img: simple.png
       tfa: No
 
@@ -109,3 +110,9 @@ websites:
       twitter: Citibank
       img: citibank.png
       tfa: no
+
+    - name: US Bank
+      url: https://www.usbank.com/
+      twitter: usbank
+      img: usbank.png
+      tfa: No
