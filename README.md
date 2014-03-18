@@ -70,10 +70,6 @@ this example:
               # Any other custom clients...
 ```
 
-Note: A tip on getting icons, use Google's icon api. Just go to
-`https://www.google.com/s2/favicons?domain=http://example.com`
-and you will get sites the icon as png.
-
 ### Custom
 
 The `custom` section is for an app or site that doesn't use SMS, Google Auth, or Authy. This app should have its own way of generating 2FA from within the app or a special 2FA service such as via `email`, `yubikey`, etc.
