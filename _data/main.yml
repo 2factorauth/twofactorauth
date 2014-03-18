@@ -123,6 +123,11 @@ sections:
           tfa: Yes
           sms: Yes
           doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
+          custom:
+            - icon: android
+              url: https://play.google.com/store/apps/details?id=com.verisign.mvip.main
+            - icon: apple
+              url: https://itunes.apple.com/app/vip-access-for-iphone/id307658513
 
         - name: Newegg
           url: http://www.newegg.com
@@ -330,6 +335,11 @@ sections:
           tfa: Yes
           sms: Yes
           doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
+          custom:
+            - icon: android
+              url: https://play.google.com/store/apps/details?id=com.verisign.mvip.main
+            - icon: apple
+              url: https://itunes.apple.com/app/vip-access-for-iphone/id307658513
 
         - name: Stripe
           img: stripe.png
