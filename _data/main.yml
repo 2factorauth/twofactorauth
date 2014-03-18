@@ -437,8 +437,11 @@ sections:
           tfa: Yes
           sms: No
           goog: Yes
-          authy: Yes
+          authy: No
           doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
+          custom:
+              - icon: key
+                url: "http://wiki.dreamhost.com/Enabling_Multifactor_Authentication#Getting_A_YubiKey"
 
         - name: Gandi
           url: https://gandi.net
