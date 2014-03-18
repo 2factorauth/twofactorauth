@@ -158,7 +158,7 @@ sections:
           sms: Yes
           doc: https://support.google.com/accounts/answer/180744?hl=en
 
-        - name: Outlook
+        - name: Outlook.com
           url: https://outlook.com
           img: outlook.png
           tfa: Yes
@@ -270,6 +270,7 @@ sections:
         - name: Simple
           url: https://www.simple.com/
           twitter: simple
+          status: https://twitter.com/simple/status/445966117543378944
           img: simple.png
           tfa: No
 
@@ -311,6 +312,12 @@ sections:
           twitter: Citibank
           img: citibank.png
           tfa: no
+
+        - name: US Bank
+          url: https://www.usbank.com/
+          twitter: usbank
+          img: usbank.png
+          tfa: No
 
 #
 # Payments
