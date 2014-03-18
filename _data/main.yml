@@ -240,7 +240,7 @@ sections:
           sms: Yes
 
         - name: E*Trade
-          img: etrade.jpg
+          img: etrade.png
           url: https://www.etrade.com/
           twitter: etrade
           tfa: Yes
@@ -437,6 +437,7 @@ sections:
         - name: Airbrake
           url: https://airbrake.io
           img: airbrake.png
+          twitter: airbrake
           tfa: No
 
 #
@@ -496,6 +497,12 @@ sections:
         goog: No
         authy: No
         doc: https://spideroak.com/blog/20110620235134-2-factor-authentication-to-your-spideroak-account
+
+      - name: SugarSync
+        img: sugarsync.png
+        url: https://www.sugarsync.com/
+        tfa: No
+        twitter: SugarSync
 
 #
 # Domains
@@ -746,7 +753,7 @@ sections:
 
   - id: communication
     title: Communication
-    icon: communication
+    icon: chat
 
     websites:
         - name: Skype (w/Microsoft Account)
@@ -765,7 +772,7 @@ sections:
 
   - id: saas
     title: SaaS
-    icon: saas
+    icon: cloud
 
     websites:
         - name: Delighted
