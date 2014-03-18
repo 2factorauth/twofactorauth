@@ -419,6 +419,15 @@ sections:
           twitter: rackspace
           tfa: No
 
+        - name: Scalr
+          url: http://www.scalr.com
+          img: scalr.png
+          tfa: Yes
+          goog: Yes
+          sms: No
+          authy: No
+          doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
+
         - name: Google Cloud Platform
           url: https://cloud.google.com
           img: google-cloud.png
@@ -473,6 +482,16 @@ sections:
         authy: Yes
         doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
 
+      - name: Frostbox
+        img: frostbox.png
+        url: http://frostbox.com
+        tfa: Yes
+        sms: No
+        goog: No
+        authy: No
+        rublon: Yes
+        doc: https://app.frostbox.com/main.php?action=2fa
+
       - name: OneDrive
         img: onedrive.png
         url: https://www.onedrive.com
@@ -516,6 +535,16 @@ sections:
           authy: No
           goog: Yes
           doc: https://directnic.com/knowledge/article/137:how+do+i+set+up+two-factor+authentication%3F
+
+        - name: Domeny.tv
+          url: http://www.domeny.tv/en
+          img: domenytv.png
+          tfa: Yes
+          sms: No
+          authy: No
+          goog: No
+          rublon: Yes
+          doc: http://www.domeny.tv/en/two-factor-authentication
         
         - name: DNSimple
           url: https://dnsimple.com/
@@ -762,6 +791,17 @@ sections:
     icon: saas
 
     websites:
+        - name: Automater
+          img: automater.png
+          url: https://automater.pl/en/
+          tfa: Yes
+          sms: No
+          goog: No
+          authy: No
+          rublon: Yes
+          doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
+
+    websites:
         - name: Delighted
           img: delighted.png
           url: https://delightedapp.com/
@@ -770,3 +810,13 @@ sections:
           goog: No
           authy: No
           doc: https://delightedapp.com/
+
+    websites:
+        - name: drchrono
+          img: drchrono.png
+          url: https://www.drchrono.com
+          tfa: Yes
+          sms: No
+          goog: No
+          authy: Yes
+          doc: https://www.drchrono.com/blog/two-factor-authentication-extra-security-for-your-health-records/
