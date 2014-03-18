@@ -268,6 +268,17 @@ sections:
           img: wellsfargo.png
           tfa: No
 
+        - name: OptionsHouse
+          img: optionshouse.png
+          url: https://www.optionshouse.com
+          doc: http://www.optionshouse.com/faq/authenticator/
+          tfa: Yes
+          custom:
+              - icon: android
+                url: https://play.google.com/store/apps/details?id=com.peak6.oh.authenticator
+              - icon: apple
+                url: https://itunes.apple.com/us/app/optionshouse-authenticator/id604114246?mt=8
+
 #
 # Payments
 #
