@@ -511,3 +511,20 @@ sections:
           goog: Yes
           authy: No
           doc: http://localbitcoins.blogspot.fi/2013/05/using-two-factor-authentication-on.html
+
+#
+# SaaS
+#
+
+  - id: saas
+    title: SaaS
+    icon: saas
+
+    websites:
+        - name: Delighed
+          img: delighted.png
+          url: https://delightedapp.com/
+          tfa: No
+          sms: Yes
+          goog: No
+          doc: https://delightedapp.com/
