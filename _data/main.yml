@@ -401,6 +401,15 @@ sections:
           twitter: rackspace
           tfa: No
 
+        - name: Google Cloud Platform
+          url: https://cloud.google.com
+          img: google-cloud.png
+          tfa: Yes
+          goog: Yes
+          authy: Yes
+          sms: Yes
+          doc: https://support.google.com/accounts/answer/180744?hl=en
+
 #
 # Backup and Sync
 #
@@ -460,6 +469,15 @@ sections:
           sms: Yes
           authy: Yes
           doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
+
+        - name: DNSimple
+          url: https://dnsimple.com/
+          img: dnsimple.png
+          tfa: Yes
+          sms: No
+          authy: Yes
+          goog: No
+          doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
 
         - name: Dreamhost
           url: https://dreamhost.com
@@ -594,6 +612,15 @@ sections:
           custom:
               - icon: key
                 url: https://bips.me/security
+
+        - name: Bitstamp
+          img: bitstamp.png
+          url: https://bitstamp.net
+          tfa: Yes
+          sms: No
+          goog: Yes
+          authy: Yes
+          doc: https://www.bitstamp.net/s/documents/bitstamp_2_factor_authentication_guide.pdf
 
         - name: Blockchain
           img: blockchain.png
