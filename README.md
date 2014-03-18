@@ -1,4 +1,4 @@
-TwoFactorAuth.org
+TwoFactorAuth.org [![Build Status](https://travis-ci.org/jdavis/twofactorauth.png?branch=master)](https://travis-ci.org/jdavis/twofactorauth)
 =================
 
 A list of popular sites and whether or not they accept two factor auth.
