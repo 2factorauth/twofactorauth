@@ -38,6 +38,12 @@ websites:
       twitter: leagueoflegends
       tfa: No
 
+    - name: Origin
+      url: https://www.origin.com/
+      twitter: OriginInsider
+      img: origin.png
+      tfa: No
+
     - name: Steam
       img: steam.png
       url: http://store.steampowered.com/
@@ -45,3 +51,9 @@ websites:
       doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
       custom:
           - icon: mail
+
+    - name: Uplay
+      url: http://uplay.ubi.com/
+      twitter: UplayUbisoft
+      img: uplay.png
+      tfa: No

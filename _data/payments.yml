@@ -20,3 +20,12 @@ websites:
       authy: Yes
       sms: No
       doc: https://stripe.com/blog/two-step-verification
+
+    - name: Google Wallet
+      url: http://www.google.se/wallet/
+      img: google-wallet.png
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: Yes
+      doc: https://support.google.com/accounts/answer/180744?hl=en
