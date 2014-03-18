@@ -130,6 +130,16 @@ sections:
           img: newegg.png
           tfa: No
 
+        - name: Apple
+          url: https://appleid.apple.com
+          img: apple.png
+          tfa: Yes
+          sms: Yes
+          doc: http://support.apple.com/kb/ht5570
+          custom:
+            - icon: apple
+              url: https://www.apple.com/ios/
+
 #
 # Email
 #
@@ -165,6 +175,13 @@ sections:
           authy: Yes
           sms: No
           doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
+
+        - name: Yahoo Mail
+          url: https://www.mail.yahoo.com/
+          img: yahoomail.png
+          tfa: Yes
+          sms: Yes
+          doc: https://help.yahoo.com/kb/SLN5013.html
 
         - name: Zoho Mail
           url: https://www.zoho.com/mail/
@@ -410,6 +427,11 @@ sections:
           sms: Yes
           doc: https://support.google.com/accounts/answer/180744?hl=en
 
+        - name: Airbrake
+          url: https://airbrake.io
+          img: airbrake.png
+          tfa: No
+
 #
 # Backup and Sync
 #
@@ -419,6 +441,12 @@ sections:
     icon: file
 
     websites:
+      - name: Backblaze
+        url: http://www.backblaze.com/
+        img: backblaze.gif
+        twitter: backblaze
+        tfa: No
+
       - name: Box
         url: https://app.box.com/
         img: box.png
@@ -443,6 +471,15 @@ sections:
         goog: Yes
         authy: Yes
         doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
+
+      - name: OneDrive
+        img: onedrive.png
+        url: https://www.onedrive.com
+        tfa: Yes
+        goog: Yes
+        authy: Yes
+        sms: Yes
+        doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
 
       - name: SpiderOak
         img: spideroak.png
@@ -469,7 +506,16 @@ sections:
           sms: Yes
           authy: Yes
           doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
-
+          
+        - name: Directnic
+          url: https://directnic.com
+          img: directnic.png
+          tfa: Yes
+          sms: No
+          authy: No
+          goog: Yes
+          doc: https://directnic.com/knowledge/article/137:how+do+i+set+up+two-factor+authentication%3F
+        
         - name: DNSimple
           url: https://dnsimple.com/
           img: dnsimple.png
@@ -484,8 +530,12 @@ sections:
           img: dreamhost.png
           tfa: Yes
           sms: No
-          authy: Yes
+          goog: Yes
+          authy: No
           doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
+          custom:
+              - icon: key
+                url: "http://wiki.dreamhost.com/Enabling_Multifactor_Authentication#Getting_A_YubiKey"
 
         - name: Gandi
           url: https://gandi.net
@@ -493,6 +543,7 @@ sections:
           tfa: Yes
           sms: No
           authy: Yes
+          goog: Yes
           doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
 
         - name: Namecheap
@@ -501,6 +552,13 @@ sections:
           tfa: Yes
           sms: Yes
           doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
+
+        - name: Network Solutions
+          url: https://www.networksolutions.com/
+          twitter: netsolcares
+          img: networksolutions.png
+          tfa: No
+          sms: No
 
         - name: GoDaddy
           img: godaddy.png
@@ -535,6 +593,12 @@ sections:
           tfa: yes
           authy: yes
           doc: http://help.iwantmyname.com/customer/portal/articles/1139898
+
+        - name: Register4Less
+          url: https://register4less.com/
+          img: register4less.png
+          twitter: register4less
+          tfa: No
 
 #
 # Gaming
@@ -597,7 +661,7 @@ sections:
 #
 
   - id: bitcoin
-    title: Bitcoin
+    title: Cryptocurrencies
     icon: bitcoin
 
     websites:
@@ -642,6 +706,15 @@ sections:
           authy: Yes
           doc: http://blog.coinbase.com/post/25677574019/coinbase-now-offers-two-factor-authentication
 
+        - name: Cryptsy
+          url: https://cryptsy.com/
+          img: cryptsy.png
+          tfa: Yes
+          sms: No
+          goog: Yes
+          authy: Yes
+          doc: https://www.cryptsy.com/pages/security
+
         - name: LocalBitcoins
           url: https://localbitcoins.com/
           img: localbitcoins.png
@@ -650,6 +723,15 @@ sections:
           goog: Yes
           authy: No
           doc: http://localbitcoins.blogspot.fi/2013/05/using-two-factor-authentication-on.html
+
+        - name: Justcoin Exchange
+          url: https://justcoin.com/
+          img: justcoinexchange.png
+          tfa: Yes
+          sms: No
+          goog: Yes
+          authy: No
+          doc: https://twitter.com/jstcoin/status/445900548743897088
 
 #
 # Communication
@@ -660,11 +742,15 @@ sections:
     icon: communication
 
     websites:
-        - name: Skype
+        - name: Skype (w/Microsoft Account)
           url: https://www.skype.com
           twitter: skype
           img: skype.png
-          tfa: No
+          tfa: Yes
+          sms: Yes
+          goog: Yes
+          authy: No
+          doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
 
 #
 # SaaS
