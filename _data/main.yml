@@ -562,3 +562,21 @@ sections:
           twitter: skype
           img: skype.png
           tfa: No
+
+#
+# SaaS
+#
+
+  - id: saas
+    title: SaaS
+    icon: saas
+
+    websites:
+        - name: Delighed
+          img: delighted.png
+          url: https://delightedapp.com/
+          tfa: Yes
+          sms: Yes
+          goog: No
+          authy: No
+          doc: https://delightedapp.com/
