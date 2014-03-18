@@ -195,7 +195,10 @@ sections:
           img: bankofamerica.png
           tfa: Yes
           sms: Yes
-          doc: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
+          doc: https://www.bankofamerica.com/privacy/online-mobile-banking-privacy/safepass.go
+          custom:
+            - icon: key
+              url: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
 
         - name: CapitalOne 360
           url: https://home.capitalone360.com/
