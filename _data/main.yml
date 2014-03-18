@@ -431,6 +431,15 @@ sections:
           authy: Yes
           doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
+        - name: DNSimple
+          url: https://dnsimple.com/
+          img: dnsimple.png
+          tfa: Yes
+          sms: No
+          authy: Yes
+          goog: No
+          doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
+
         - name: Dreamhost
           url: https://dreamhost.com
           img: dreamhost.png
@@ -549,7 +558,7 @@ sections:
           custom:
               - icon: key
                 url: https://bips.me/security
-    
+
         - name: Blockchain
           img: blockchain.png
           url: https://blockchain.info/
