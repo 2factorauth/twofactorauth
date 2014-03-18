@@ -48,6 +48,7 @@ this example:
         - name: Site
           url: https://site.com
           img: site.png
+          twitter: twitter_handle   # To tweet at site, if tfa is No
           tfa: Yes
           goog: Yes
           authy: Yes
