@@ -418,6 +418,15 @@ sections:
           twitter: rackspace
           tfa: No
 
+        - name: Scalr
+          url: http://www.scalr.com
+          img: scalr.png
+          tfa: Yes
+          goog: Yes
+          sms: No
+          authy: No
+          doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
+
         - name: Google Cloud Platform
           url: https://cloud.google.com
           img: google-cloud.png
@@ -800,3 +809,13 @@ sections:
           goog: No
           authy: No
           doc: https://delightedapp.com/
+
+    websites:
+        - name: drchrono
+          img: drchrono.png
+          url: https://www.drchrono.com
+          tfa: Yes
+          sms: No
+          goog: No
+          authy: Yes
+          doc: https://www.drchrono.com/blog/two-factor-authentication-extra-security-for-your-health-records/
