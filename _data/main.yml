@@ -353,6 +353,11 @@ sections:
     icon: code
 
     websites:
+        - name: Airbrake
+          url: https://airbrake.io
+          img: airbrake.png
+          tfa: No
+
         - name: Amazon Web Services
           img: aws.png
           url: https://aws.amazon.com
@@ -366,13 +371,6 @@ sections:
                 url: http://www.amazon.com/gp/product/B0061MU68M
               - icon: windows
                 url: http://www.windowsphone.com/en-us/store/app/authenticator/021dd79f-0598-e011-986b-78e7d1fa76f8
-
-        - name: MaxCDN
-          url: https://www.maxcdn.com
-          img: maxcdn.png
-          tfa: Yes
-          goog: Yes
-          doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
 
         - name: Bitbucket
           url: https://bitbucket.org
@@ -413,6 +411,13 @@ sections:
           authy: Yes
           doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
 
+        - name: MaxCDN
+          url: https://www.maxcdn.com
+          img: maxcdn.png
+          tfa: Yes
+          goog: Yes
+          doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
+
         - name: Rackspace
           url: https://www.rackspace.com/
           img: rackspace.png
@@ -427,11 +432,6 @@ sections:
           authy: Yes
           sms: Yes
           doc: https://support.google.com/accounts/answer/180744?hl=en
-
-        - name: Airbrake
-          url: https://airbrake.io
-          img: airbrake.png
-          tfa: No
 
 #
 # Backup and Sync
