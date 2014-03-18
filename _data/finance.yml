@@ -1,0 +1,111 @@
+websites:
+    - name: American Express
+      url: https://www.americanexpress.com/
+      twitter: AmericanExpress
+      img: americanexpress.png
+      tfa: No
+
+    - name: Bank of America
+      url: https://www.bankofamerica.com/
+      img: bankofamerica.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.bankofamerica.com/privacy/online-mobile-banking-privacy/safepass.go
+      custom:
+        - icon: key
+          url: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
+
+    - name: CapitalOne 360
+      url: https://home.capitalone360.com/
+      twitter: CapitalOne360
+      img: capitalone360.png
+      tfa: No
+
+    - name: Charles Schwab
+      img: charlesschwab.png
+      url: https://www.schwab.com/
+      tfa: Yes
+      doc: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/protect_your_account
+      custom:
+        - icon: key
+          url: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/protect_your_account
+
+    - name: Chase
+      url: https://www.chase.com/
+      twitter: chase
+      img: chase.png
+      tfa: Yes
+      sms: Yes
+
+    - name: E*Trade
+      img: etrade.jpg
+      url: https://www.etrade.com/
+      twitter: etrade
+      tfa: Yes
+      sms: No
+      goog: No
+      authy: No
+      doc: https://us.etrade.com/e/t/estation/pricing?id=1220801000
+      custom:
+        - icon: key
+          url: https://us.etrade.com/e/t/estation/pricing?id=1220801000
+
+    - name: Mint
+      url: https://www.mint.com
+      twitter: mint
+      img: mint.png
+      tfa: No
+
+    - name: SEB
+      img: seb.png
+      url: http://www.seb.se/pow/default.asp
+      tfa: Yes
+      doc: http://www.seb.se/pow/wcp/index.asp?ss=/pow/wcp/templates/sebcollection.cfmc.asp%3FDUID%3DDUID_623697DCF55C4576C1256DEF00637BE3
+      custom:
+        - icon: key
+          url: http://www.seb.se/pow/wcp/index.asp?ss=/pow/wcp/templates/sebcollection.cfmc.asp%3FDUID%3DDUID_623697DCF55C4576C1256DEF00637BE3
+
+    - name: Simple
+      url: https://www.simple.com/
+      twitter: simple
+      img: simple.png
+      tfa: No
+
+    - name: Vanguard
+      url: http://www.vanguard.com/
+      twitter: Vanguard_Group
+      img: vanguard.png
+      tfa: No
+
+    - name: Wells Fargo
+      url: https://www.wellsfargo.com/
+      twitter: WellsFargo
+      img: wellsfargo.png
+      tfa: No
+
+    - name: OptionsHouse
+      img: optionshouse.png
+      url: https://www.optionshouse.com
+      doc: http://www.optionshouse.com/faq/authenticator/
+      tfa: Yes
+      custom:
+          - icon: android
+            url: https://play.google.com/store/apps/details?id=com.peak6.oh.authenticator
+          - icon: apple
+            url: https://itunes.apple.com/us/app/optionshouse-authenticator/id604114246?mt=8
+
+    - name: Discover
+      url: https://www.discover.com/
+      twitter: Discover
+      img: discover.png
+      tfa: yes
+      sms: yes
+      doc: https://www.discover.com/credit-cards/help-center/faqs/enhancing-account-security.html
+      custom:
+        - icon: mail
+
+    - name: Citibank
+      url: https://online.citibank.com/US/Welcome.c
+      twitter: Citibank
+      img: citibank.png
+      tfa: no

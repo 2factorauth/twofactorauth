@@ -1,0 +1,43 @@
+websites:
+    - name: Amazon
+      url: https://amazon.com
+      twitter: Amazon
+      img: amazon.png
+      tfa: No
+
+    - name: Etsy
+      url: http://www.etsy.com/
+      img: etsy.png
+      sms: Yes
+      tfa: Yes
+      doc: http://www.etsy.com/help/article/3335
+
+    - name: Zappos
+      url: http://www.zappos.com/
+      twitter: Zappos
+      img: zappos.png
+      tfa: No
+
+    - name: eBay
+      url: http://ebay.com
+      twitter: eBay
+      img: ebay.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
+
+    - name: Newegg
+      url: http://www.newegg.com
+      twitter: newegg
+      img: newegg.png
+      tfa: No
+
+    - name: Apple
+      url: https://appleid.apple.com
+      img: apple.png
+      tfa: Yes
+      sms: Yes
+      doc: http://support.apple.com/kb/ht5570
+      custom:
+        - icon: apple
+          url: https://www.apple.com/ios/
