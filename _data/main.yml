@@ -256,7 +256,7 @@ sections:
           url: https://www.mint.com
           twitter: mint
           img: mint.png
-          tfa: No
+          tfa: Nod
 
         - name: SEB
           img: seb.png
@@ -613,6 +613,14 @@ sections:
           img: register4less.png
           twitter: register4less
           tfa: No
+          
+        - name: Registro.br
+          url: http://registro.br
+          img: registro_br.png
+          doc: http://registro.br/ajuda.html?secao=GerenciamentoConta
+          sms: no
+          goog: yes
+          authy: yes
 
 #
 # Gaming
