@@ -195,7 +195,10 @@ sections:
           img: bankofamerica.png
           tfa: Yes
           sms: Yes
-          doc: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
+          doc: https://www.bankofamerica.com/privacy/online-mobile-banking-privacy/safepass.go
+          custom:
+            - icon: key
+              url: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
 
         - name: CapitalOne 360
           url: https://home.capitalone360.com/
@@ -482,13 +485,21 @@ sections:
             - icon: apple
               url: https://itunes.apple.com/app/vip-access-for-iphone/id307658513
 
-	- name: iWantMyName
-	  url: https://iwantmyname.com/
-	  img: iwantmyname.png
-	  twitter: iWantMyName
-	  tfa: yes
-	  authy: yes
-	  doc: http://help.iwantmyname.com/customer/portal/articles/1139898
+        - name: Hover.com
+          img: hover.png
+          url: http://www.hover.com/
+          tfa: Yes
+          sms: Yes
+          goog: Yes
+          doc: https://help.hover.com/entries/26677644
+
+        - name: iWantMyName
+          url: https://iwantmyname.com/
+          img: iwantmyname.png
+          twitter: iWantMyName
+          tfa: yes
+          authy: yes
+          doc: http://help.iwantmyname.com/customer/portal/articles/1139898
 
 #
 # Gaming
@@ -566,7 +577,7 @@ sections:
           custom:
               - icon: key
                 url: https://bips.me/security
-    
+
         - name: Blockchain
           img: blockchain.png
           url: https://blockchain.info/
