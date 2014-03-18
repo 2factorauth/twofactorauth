@@ -457,6 +457,15 @@ sections:
         authy: Yes
         doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
 
+      - name: OneDrive
+        img: onedrive.png
+        url: https://www.onedrive.com
+        tfa: Yes
+        goog: Yes
+        authy: Yes
+        sms: Yes
+        doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+
       - name: SpiderOak
         img: spideroak.png
         url: https://spideroak.com
