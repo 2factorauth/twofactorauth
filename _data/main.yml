@@ -547,37 +547,12 @@ sections:
           goog: Yes
           doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
 
-        - name: Namecheap
-          img: namecheap.png
-          url: https://www.namecheap.com/
-          tfa: Yes
-          sms: Yes
-          doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
-
-        - name: Network Solutions
-          url: https://www.networksolutions.com/
-          twitter: netsolcares
-          img: networksolutions.png
-          tfa: No
-          sms: No
-
         - name: GoDaddy
           img: godaddy.png
           url: http://www.godaddy.com/
           tfa: yes
           sms: Yes
           doc: http://support.godaddy.com/help/article/7502/enabling-twostep-authentication
-
-        - name: Name.com
-          url: http://www.name.com/
-          img: namecom.png
-          tfa: Yes
-          doc: https://www.name.com/services/namesafe
-          custom:
-            - icon: android
-              url: https://play.google.com/store/apps/details?id=com.verisign.mvip.main
-            - icon: apple
-              url: https://itunes.apple.com/app/vip-access-for-iphone/id307658513
 
         - name: Hover.com
           img: hover.png
@@ -594,6 +569,31 @@ sections:
           tfa: yes
           authy: yes
           doc: http://help.iwantmyname.com/customer/portal/articles/1139898
+
+        - name: Name.com
+          url: http://www.name.com/
+          img: namecom.png
+          tfa: Yes
+          doc: https://www.name.com/services/namesafe
+          custom:
+            - icon: android
+              url: https://play.google.com/store/apps/details?id=com.verisign.mvip.main
+            - icon: apple
+              url: https://itunes.apple.com/app/vip-access-for-iphone/id307658513
+
+        - name: Namecheap
+          img: namecheap.png
+          url: https://www.namecheap.com/
+          tfa: Yes
+          sms: Yes
+          doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
+
+        - name: Network Solutions
+          url: https://www.networksolutions.com/
+          twitter: netsolcares
+          img: networksolutions.png
+          tfa: No
+          sms: No
 
         - name: Register4Less
           url: https://register4less.com/
