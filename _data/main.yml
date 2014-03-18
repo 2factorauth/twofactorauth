@@ -87,6 +87,10 @@ sections:
           authy: Yes
           sms: Yes
           doc: http://en.support.wordpress.com/security/two-step-authentication/
+          custom:
+              - icon: key
+                url: https://wordpress.org/plugins/google-authenticator/
+        
 
 #
 # Retail
