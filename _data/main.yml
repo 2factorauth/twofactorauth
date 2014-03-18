@@ -472,13 +472,13 @@ sections:
             - icon: apple
               url: https://itunes.apple.com/app/vip-access-for-iphone/id307658513
 
-	- name: iWantMyName
-	  url: https://iwantmyname.com/
-	  img: iwantmyname.png
-	  twitter: iWantMyName
-	  tfa: yes
-	  authy: yes
-	  doc: http://help.iwantmyname.com/customer/portal/articles/1139898
+        - name: iWantMyName
+          url: https://iwantmyname.com/
+          img: iwantmyname.png
+          twitter: iWantMyName
+          tfa: yes
+          authy: yes
+          doc: http://help.iwantmyname.com/customer/portal/articles/1139898
 
 #
 # Gaming
@@ -556,7 +556,7 @@ sections:
           custom:
               - icon: key
                 url: https://bips.me/security
-    
+
         - name: Blockchain
           img: blockchain.png
           url: https://blockchain.info/
