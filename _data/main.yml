@@ -419,6 +419,12 @@ sections:
     icon: file
 
     websites:
+      - name: Backblaze
+        url: http://www.backblaze.com/
+        img: backblaze.gif
+        twitter: backblaze
+        tfa: No
+
       - name: Box
         url: https://app.box.com/
         img: box.png
@@ -485,6 +491,15 @@ sections:
           sms: Yes
           authy: Yes
           doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
+
+        - name: DNSimple
+          url: https://dnsimple.com/
+          img: dnsimple.png
+          tfa: Yes
+          sms: No
+          authy: Yes
+          goog: No
+          doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
 
         - name: Dreamhost
           url: https://dreamhost.com
