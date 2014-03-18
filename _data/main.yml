@@ -265,6 +265,16 @@ sections:
           img: wellsfargo.png
           tfa: No
 
+        - name: Discover
+          url: https://www.discover.com/
+          twitter: Discover
+          img: discover.png
+          tfa: yes
+          sms: yes
+          doc: https://www.discover.com/credit-cards/help-center/faqs/enhancing-account-security.html
+          custom:
+            - icon: mail
+
 #
 # Payments
 #
