@@ -129,6 +129,16 @@ sections:
           twitter: newegg
           img: newegg.png
           tfa: No
+          
+        - name: Apple
+          url: https://appleid.apple.com
+          img: apple.png
+          tfa: Yes
+          sms: Yes
+          doc: http://support.apple.com/kb/ht5570
+          custom:
+              - icon: apple
+                url: http://apple.com/ios/
 
 #
 # Email
