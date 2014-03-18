@@ -124,6 +124,12 @@ sections:
           sms: Yes
           doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
 
+		- name: Newegg
+          url: http://www.newegg.com
+          twitter: newegg
+          img: newegg.png
+          tfa: No
+		  
 #
 # Email
 #
@@ -458,6 +464,10 @@ sections:
                 url: https://market.android.com/details?id=com.blizzard.bma
               - icon: apple
                 url: https://itunes.apple.com/app/battle.net-mobile-authenticator/id306862897
+              - icon windows
+                url: http://www.windowsphone.com/en-us/store/app/battle-net-authenticator/1347bbfb-bca2-e011-986b-78e7d1fa76f8?type=phoneapp&id=1347bbfb-bca2-e011-986b-78e7d1fa76f8
+              - icon: blackberry
+                url: http://appworld.blackberry.com/webstore/content/13011/?countrycode=US&lang=en
 
         - name: Guild Wars 2
           img: guild_wars_2.png
