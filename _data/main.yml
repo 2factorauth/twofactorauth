@@ -196,10 +196,13 @@ sections:
           sms: Yes
 
         - name: E*Trade
+          img: etrade.jpg
           url: https://www.etrade.com/
           twitter: etrade
           tfa: Yes
           sms: No
+          goog: No
+          authy: No
           doc: https://us.etrade.com/e/t/estation/pricing?id=1220801000
           custom:
             - icon: key
