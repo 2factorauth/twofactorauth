@@ -174,6 +174,15 @@ sections:
           authy: No
           sms: Yes
           doc: https://adminconsole.wiki.zoho.com/mail/Two-Factor-Authentication.html
+          
+          - name: Yahoo
+          url: https://www.yahoo.com
+          img: yahoo.png
+          tfa: Yes
+          goog: No
+          authy: No
+          sms: Yes
+          doc: https://help.yahoo.com/kb/yahoo-account/SLN15241.html
 
 #
 # Finance
