@@ -401,6 +401,15 @@ sections:
           twitter: rackspace
           tfa: No
 
+        - name: Google Cloud Platform
+          url: https://cloud.google.com
+          img: google-cloud.png
+          tfa: Yes
+          goog: Yes
+          authy: Yes
+          sms: Yes
+          doc: https://support.google.com/accounts/answer/180744?hl=en
+
 #
 # Backup and Sync
 #
