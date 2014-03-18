@@ -536,6 +536,15 @@ sections:
           custom:
               - icon: key
                 url: "http://wiki.dreamhost.com/Enabling_Multifactor_Authentication#Getting_A_YubiKey"
+        
+        - name: easyDNS
+          url: https://easydns.com
+          img: easydns.png
+          tfa: Yes
+          sms: Yes
+          goog: No
+          authy: No
+          doc: http://docs.easydns.com/2-factor-authentication/
 
         - name: Gandi
           url: https://gandi.net
