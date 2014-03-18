@@ -219,6 +219,19 @@ sections:
           tfa: Yes
           sms: Yes
 
+        - name: E*Trade
+          img: etrade.jpg
+          url: https://www.etrade.com/
+          twitter: etrade
+          tfa: Yes
+          sms: No
+          goog: No
+          authy: No
+          doc: https://us.etrade.com/e/t/estation/pricing?id=1220801000
+          custom:
+            - icon: key
+              url: https://us.etrade.com/e/t/estation/pricing?id=1220801000
+
         - name: Mint
           url: https://www.mint.com
           twitter: mint
