@@ -388,6 +388,14 @@ sections:
           authy: Yes
           doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
+        - name: Dreamhost
+          url: https://dreamhost.com
+          img: dreamhost.png
+          tfa: Yes
+          sms: No
+          authy: Yes
+          doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
+
         - name: Gandi
           url: https://gandi.net
           img: gandi.png
