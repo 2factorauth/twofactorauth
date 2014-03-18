@@ -657,6 +657,14 @@ sections:
           authy: No
           doc: http://localbitcoins.blogspot.fi/2013/05/using-two-factor-authentication-on.html
 
+        - name: Justcoin Exchange
+          url: https://justcoin.com/
+          img: justcoinexchange.png
+          tfa: Yes
+          sms: No
+          goog: Yes
+          authy: No
+
 #
 # Communication
 #
