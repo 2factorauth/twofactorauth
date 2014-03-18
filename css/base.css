@@ -98,6 +98,19 @@ td img.icon {
     background-color: #f2dede !important;
 }
 
+.ui.table tr.neutral td,
+.ui.table td.neutral {
+    background-color: #ffffff !important;
+}
+
+.ui.celled.table tr.neutral:hover td,
+.ui.celled.table tr:hover td.neutral,
+.ui.table tr.neutral:hover td,
+.ui.table td:hover.neutral,
+.ui.table th:hover.neutral {
+    background-color: #ffffff !important;
+}
+
 @media only screen and (max-width: 1199px) {
   .ui.menu.desktop {
       display: block;
