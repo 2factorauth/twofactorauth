@@ -295,6 +295,7 @@ sections:
           authy: Yes
           sms: No
           doc: https://stripe.com/blog/two-step-verification
+
 #
 # Developer
 #
@@ -413,7 +414,6 @@ sections:
         authy: No
         doc: https://spideroak.com/blog/20110620235134-2-factor-authentication-to-your-spideroak-account
 
-
 #
 # Domains
 #
@@ -472,6 +472,13 @@ sections:
             - icon: apple
               url: https://itunes.apple.com/app/vip-access-for-iphone/id307658513
 
+	- name: iWantMyName
+	  url: https://iwantmyname.com/
+	  img: iwantmyname.png
+	  twitter: iWantMyName
+	  tfa: yes
+	  authy: yes
+	  doc: http://help.iwantmyname.com/customer/portal/articles/1139898
 
 #
 # Gaming
