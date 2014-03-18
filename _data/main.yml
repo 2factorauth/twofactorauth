@@ -595,6 +595,15 @@ sections:
               - icon: key
                 url: https://bips.me/security
 
+        - name: Bitstamp
+          img: bitstamp.png
+          url: https://bitstamp.net
+          tfa: Yes
+          sms: No
+          goog: Yes
+          authy: Yes
+          doc: https://www.bitstamp.net/s/documents/bitstamp_2_factor_authentication_guide.pdf
+
         - name: Blockchain
           img: blockchain.png
           url: https://blockchain.info/
