@@ -256,7 +256,7 @@ sections:
             - icon: mail
 
         - name: E*Trade
-          img: etrade.jpg
+          img: etrade.png
           url: https://www.etrade.com/
           twitter: etrade
           tfa: Yes
@@ -299,6 +299,12 @@ sections:
           twitter: simple
           status: https://twitter.com/simple/status/445966117543378944
           img: simple.png
+          tfa: No
+
+        - name: US Bank
+          url: https://www.usbank.com/
+          twitter: usbank
+          img: usbank.png
           tfa: No
 
         - name: Vanguard
