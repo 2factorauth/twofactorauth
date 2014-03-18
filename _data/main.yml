@@ -195,7 +195,10 @@ sections:
           img: bankofamerica.png
           tfa: Yes
           sms: Yes
-          doc: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
+          doc: https://www.bankofamerica.com/privacy/online-mobile-banking-privacy/safepass.go
+          custom:
+            - icon: key
+              url: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
 
         - name: CapitalOne 360
           url: https://home.capitalone360.com/
@@ -207,10 +210,10 @@ sections:
           img: charlesschwab.png
           url: https://www.schwab.com/
           tfa: Yes
-          doc: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/your_questions_answered
+          doc: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/protect_your_account
           custom:
             - icon: key
-              url: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/your_questions_answered
+              url: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/protect_your_account
 
         - name: Chase
           url: https://www.chase.com/
@@ -265,6 +268,33 @@ sections:
           img: wellsfargo.png
           tfa: No
 
+        - name: OptionsHouse
+          img: optionshouse.png
+          url: https://www.optionshouse.com
+          doc: http://www.optionshouse.com/faq/authenticator/
+          tfa: Yes
+          custom:
+              - icon: android
+                url: https://play.google.com/store/apps/details?id=com.peak6.oh.authenticator
+              - icon: apple
+                url: https://itunes.apple.com/us/app/optionshouse-authenticator/id604114246?mt=8
+
+        - name: Discover
+          url: https://www.discover.com/
+          twitter: Discover
+          img: discover.png
+          tfa: yes
+          sms: yes
+          doc: https://www.discover.com/credit-cards/help-center/faqs/enhancing-account-security.html
+          custom:
+            - icon: mail
+
+        - name: Citibank
+          url: https://online.citibank.com/US/Welcome.c
+          twitter: Citibank
+          img: citibank.png
+          tfa: no
+
 #
 # Payments
 #
@@ -295,6 +325,7 @@ sections:
           authy: Yes
           sms: No
           doc: https://stripe.com/blog/two-step-verification
+
 #
 # Developer
 #
@@ -364,6 +395,12 @@ sections:
           authy: Yes
           doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
 
+        - name: Rackspace
+          url: https://www.rackspace.com/
+          img: rackspace.png
+          twitter: rackspace
+          tfa: No
+
 #
 # Backup and Sync
 #
@@ -406,7 +443,6 @@ sections:
         goog: No
         authy: No
         doc: https://spideroak.com/blog/20110620235134-2-factor-authentication-to-your-spideroak-account
-
 
 #
 # Domains
@@ -466,6 +502,21 @@ sections:
             - icon: apple
               url: https://itunes.apple.com/app/vip-access-for-iphone/id307658513
 
+        - name: Hover.com
+          img: hover.png
+          url: http://www.hover.com/
+          tfa: Yes
+          sms: Yes
+          goog: Yes
+          doc: https://help.hover.com/entries/26677644
+
+        - name: iWantMyName
+          url: https://iwantmyname.com/
+          img: iwantmyname.png
+          twitter: iWantMyName
+          tfa: yes
+          authy: yes
+          doc: http://help.iwantmyname.com/customer/portal/articles/1139898
 
 #
 # Gaming
@@ -532,6 +583,18 @@ sections:
     icon: bitcoin
 
     websites:
+        - name: BIPS
+          img: bips.png
+          url: https://bips.me/
+          tfa: Yes
+          sms: No
+          goog: Yes
+          authy: No
+          doc: https://bips.me/security
+          custom:
+              - icon: key
+                url: https://bips.me/security
+
         - name: Blockchain
           img: blockchain.png
           url: https://blockchain.info/
@@ -585,7 +648,7 @@ sections:
     icon: saas
 
     websites:
-        - name: Delighed
+        - name: Delighted
           img: delighted.png
           url: https://delightedapp.com/
           tfa: Yes
