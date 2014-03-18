@@ -279,6 +279,22 @@ sections:
               - icon: apple
                 url: https://itunes.apple.com/us/app/optionshouse-authenticator/id604114246?mt=8
 
+        - name: Discover
+          url: https://www.discover.com/
+          twitter: Discover
+          img: discover.png
+          tfa: yes
+          sms: yes
+          doc: https://www.discover.com/credit-cards/help-center/faqs/enhancing-account-security.html
+          custom:
+            - icon: mail
+
+        - name: Citibank
+          url: https://online.citibank.com/US/Welcome.c
+          twitter: Citibank
+          img: citibank.png
+          tfa: no
+
 #
 # Payments
 #
