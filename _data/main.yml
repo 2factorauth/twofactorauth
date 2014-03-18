@@ -538,6 +538,18 @@ sections:
     icon: bitcoin
 
     websites:
+        - name: BIPS
+          img: bips.png
+          url: https://bips.me/
+          tfa: Yes
+          sms: No
+          goog: Yes
+          authy: No
+          doc: https://bips.me/security
+          custom:
+              - icon: key
+                url: https://bips.me/security
+    
         - name: Blockchain
           img: blockchain.png
           url: https://blockchain.info/
