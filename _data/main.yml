@@ -498,7 +498,16 @@ sections:
           sms: Yes
           authy: Yes
           doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
-
+          
+        - name: Directnic
+          url: https://directnic.com
+          img: directnic.png
+          tfa: Yes
+          sms: No
+          authy: No
+          goog: Yes
+          doc: https://directnic.com/knowledge/article/137:how+do+i+set+up+two-factor+authentication%3F
+        
         - name: DNSimple
           url: https://dnsimple.com/
           img: dnsimple.png
