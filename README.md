@@ -67,6 +67,7 @@ this example:
           tfa: Yes
           goog: Yes
           authy: Yes
+          verisign: Yes
           sms: Yes
           doc: <url to the documentation>
           custom:
