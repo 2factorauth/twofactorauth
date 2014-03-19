@@ -31,9 +31,9 @@ syntax:
 
    To manually test the build, just run the following:
 
-```bash
-$ ruby verify.rb
-```
+    ```bash
+    $ ruby verify.rb
+    ```
 
 2. **Use a Nice Icon**: The icon must be 32x32 in dimension. Earlier we were
    using 16x16 but upgraded for various high density screens.
