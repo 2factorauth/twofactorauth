@@ -139,8 +139,9 @@ websites:
       url: https://www.usaa.com/
       twitter: USAA
       tfa: yes
-      doc: https://www.usaa.com/inet/pages/security_mobile_devices?akredirect=true
       sms: no
+      VeriSign: yes
+      doc: https://www.usaa.com/inet/pages/security_mobile_devices?akredirect=true
       img: usaa.png
       custom:
         - icon: android
