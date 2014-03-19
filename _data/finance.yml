@@ -62,7 +62,7 @@ websites:
       twitter: fidelity
       img: fidelity.png
       tfa: No
-      
+
     - name: Mint
       url: https://www.mint.com
       twitter: mint
@@ -144,3 +144,19 @@ websites:
       twitter: pncnews
       img: pncbank.png
       tfa: No
+
+    - name: USAA
+      url: https://www.usaa.com/
+      twitter: USAA
+      tfa: yes
+      sms: no
+      verisign: yes
+      doc: https://www.usaa.com/inet/pages/security_mobile_devices?akredirect=true
+      img: usaa.png
+      custom:
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=com.usaa.mobile.android.usaa&hl=en
+        - icon: iphone
+          url: https://itunes.apple.com/us/app/usaa-mobile/id312325565
+        - icon: windows phone
+          url: http://www.windowsphone.com/en-us/store/app/usaa/6d5694b8-d1d7-df11-a844-00237de2db9e
