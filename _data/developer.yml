@@ -43,6 +43,15 @@ websites:
       sms: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
+    - name: Launchpad
+      img: launchpad.png
+      url: https://launchpad.net
+      tfa: Yes
+      goog: Yes
+      authy: No
+      sms: No
+      doc: https://launchpad.net/~sso-2f-testers
+
     - name: Heroku
       url: https://www.heroku.com/
       img: heroku.png
