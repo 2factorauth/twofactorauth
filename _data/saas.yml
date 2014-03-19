@@ -7,3 +7,15 @@ websites:
       goog: No
       authy: No
       doc: https://delightedapp.com/
+      
+    - name: Lastpass
+      url: https://lastpass.com/
+      img: delighted.png
+      tfa: Yes
+      sms: Yes
+      goog: Yes
+      authy: No
+      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
+      custom:
+          - icon: key
+            url: "https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/yubikey-authentication/"
