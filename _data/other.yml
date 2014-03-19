@@ -19,3 +19,15 @@ websites:
       goog: No
       authy: No
       doc: https://delightedapp.com/
+
+    - name: Status.io
+      url: https://status.io/
+      img: statusio.png
+      tfa: Yes
+      sms: No
+      authy: No
+      goog: No
+      doc: http://blog.status.io/2014/03/01/yubikey/
+      custom:
+        - icon: key
+          url: "http://blog.status.io/2014/03/01/yubikey/"
