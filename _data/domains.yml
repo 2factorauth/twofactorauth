@@ -37,6 +37,18 @@ websites:
           - icon: key
             url: "http://wiki.dreamhost.com/Enabling_Multifactor_Authentication#Getting_A_YubiKey"
 
+    - name: Dynadot
+      url: http://dynadot.com/
+      img: dynadot.png
+      tfa: Yes
+      sms: Yes
+      goog: No
+      authy: No
+      doc: http://dynadot.com/domain/security.html
+      custom:
+          - icon: key
+            url: "http://www.dynadot.com/domain/token.html"
+
     - name: easyDNS
       url: https://easydns.com
       img: easydns.png
