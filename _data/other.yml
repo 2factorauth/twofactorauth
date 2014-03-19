@@ -20,14 +20,23 @@ websites:
       authy: No
       doc: https://delightedapp.com/
 
-    - name: Netflix
-      img: netflix.png
-      url: http://www.netflix.com/
-      tfa: No
-      twitter: netflix
-
     - name: Hulu
       img: hulu.png
       url: http://www.hulu.com
       tfa: No
       twitter: hulu
+
+    - name: LastPass
+      img: lastpass.png
+      url: https://lastpass.com/
+      tfa: Yes
+      sms: No
+      goog: Yes
+      authy: No
+      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
+
+    - name: Netflix
+      img: netflix.png
+      url: http://www.netflix.com/
+      tfa: No
+      twitter: netflix
