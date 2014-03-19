@@ -50,7 +50,10 @@ websites:
       url: https://www.origin.com/
       twitter: OriginInsider
       img: origin.png
-      tfa: No
+      tfa: Yes
+      doc: http://help.ea.com/en/article/origin-login-verification-information/
+      custom:
+          - icon: mail
 
     - name: Steam
       img: steam.png
