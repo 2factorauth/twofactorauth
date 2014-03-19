@@ -36,6 +36,19 @@ websites:
     authy: Yes
     doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
 
+  - name: Frostbox
+    url: http://frostbox.com
+    img: frostbox.png
+    tfa: Yes
+    sms: No
+    authy: No
+    goog: No
+    custom:
+      - icon: shield
+        url: "https://rublon.com/"
+      - icon: text file outline
+        url: "https://app.frostbox.com/main.php?action=2fa"
+
   - name: OneDrive
     img: onedrive.png
     url: https://www.onedrive.com
