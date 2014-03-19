@@ -85,6 +85,16 @@ websites:
       img: simple.png
       tfa: No
 
+    - name: TD Ameritrade
+      url: https://www.tdameritrade.com
+      img: tdbank.png
+      twitter: tdameritrade
+      tfa: yes
+      doc: https://www.thinkorswim.com/tos/myAccounts/displayPage.tos?webpage=otp&displayFormat=hide
+      custom:
+          - icon: key
+            url: https://www.thinkorswim.com/tos/myAccounts/displayPage.tos?webpage=otp&displayFormat=hide
+
     - name: TD Bank
       url: https://www.tdbank.com
       twitter: TDBank_US
