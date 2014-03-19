@@ -25,6 +25,15 @@ websites:
       goog: No
       doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
 
+    - name: DNS Made Easy
+      url: http://www.dnsmadeeasy.com/
+      img: dnsmadeeasy.png
+      tfa: Yes
+      sms: No
+      authy: No
+      goog: Yes
+      doc: http://help.dnsmadeeasy.com/administrative/enable-two-factor-authentication/
+
     - name: Dreamhost
       url: https://dreamhost.com
       img: dreamhost.png
