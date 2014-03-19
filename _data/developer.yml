@@ -117,3 +117,12 @@ websites:
       authy: No
       sms: Yes
       doc: https://www.twilio.com/help/faq/twilio-basics/what-happens-when-i-enable-two-factor-authentication
+    
+    - name: Windows Azure
+      url: https://www.windowsazure.com/
+      img: windowsazure.png
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: Yes
+      doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
