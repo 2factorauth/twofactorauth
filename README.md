@@ -28,6 +28,13 @@ syntax:
 1. **Don't break the build**: We have a simple continuous integration system
    setup with [Travis][travis]. If your pull request doesn't pass, it won't be
    merged.
+
+   To manually test the build, just run the following:
+
+```bash
+$ ruby verify.rb
+```
+
 2. **Use a Nice Icon**: The icon must be 32x32 in dimension. Earlier we were
    using 16x16 but upgraded for various high density screens.
 3. **Be Awesome**: You need to be awesome. That is all.
