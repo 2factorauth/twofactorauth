@@ -527,26 +527,6 @@ sections:
           authy: yes
           doc: http://help.iwantmyname.com/customer/portal/articles/1139898
 
-
-#
-# Security
-#
-
-  - id: security
-    title: Security
-    icon: lock
-
-    websites:
-        - name: SSLTrust
-          url: http://ssltrust.com.au
-          img: ssltrust.png
-          tfa: No
-          sms: No
-          authy: No
-          goog: Yes
-          doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
-
-
 #
 # Gaming
 #
