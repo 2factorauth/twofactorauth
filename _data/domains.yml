@@ -25,6 +25,19 @@ websites:
       goog: No
       doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
 
+    - name: Domeny.tv
+      url: http://www.domeny.tv/en
+      img: domenytv.png
+      tfa: Yes
+      sms: No
+      authy: No
+      goog: No
+      custom:
+          - icon: shield
+            url: "https://rublon.com/"
+          - icon: text file outline
+            url: "http://www.domeny.tv/en/two-factor-authentication"
+
     - name: Dreamhost
       url: https://dreamhost.com
       img: dreamhost.png
