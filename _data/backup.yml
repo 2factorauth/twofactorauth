@@ -24,6 +24,18 @@ websites:
     tfa: No
     twitter: crashplan
 
+  - name: Cubby
+    img: cubby.png
+    url: https://accounts.logme.in
+    tfa: Yes
+    sms: No
+    goog: Yes
+    authy: No
+    doc: http://help.logmein.com/SelfServiceKnowledgeRenderer?type=FAQ&id=kA0a0000000shEi
+    custom:
+      - icon: mail
+        url: "https://accounts.logme.in
+
   - name: Dropbox
     img: dropbox.png
     url: https://www.dropbox.com
