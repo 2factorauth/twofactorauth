@@ -1,4 +1,10 @@
 websites:
+    - name: Ally Bank
+      url: http://www.ally.com/
+      twitter: AllyBank
+      img: allybank.png
+      tfa: No
+
     - name: American Express
       url: https://www.americanexpress.com/
       twitter: AmericanExpress
@@ -45,10 +51,17 @@ websites:
       sms: No
       goog: No
       authy: No
+      verisign: Yes
       doc: https://us.etrade.com/e/t/estation/pricing?id=1220801000
       custom:
         - icon: key
           url: https://us.etrade.com/e/t/estation/pricing?id=1220801000
+
+    - name: Fidelity Investments
+      url: https://www.fidelity.com
+      twitter: fidelity
+      img: fidelity.png
+      tfa: No
 
     - name: Mint
       url: https://www.mint.com
@@ -72,6 +85,22 @@ websites:
       img: simple.png
       tfa: No
 
+    - name: TD Ameritrade
+      url: https://www.tdameritrade.com
+      img: tdbank.png
+      twitter: tdameritrade
+      tfa: yes
+      doc: https://www.thinkorswim.com/tos/myAccounts/displayPage.tos?webpage=otp&displayFormat=hide
+      custom:
+          - icon: key
+            url: https://www.thinkorswim.com/tos/myAccounts/displayPage.tos?webpage=otp&displayFormat=hide
+
+    - name: TD Bank
+      url: https://www.tdbank.com
+      twitter: TDBank_US
+      img: tdbank.png
+      tfa: No
+
     - name: Vanguard
       url: http://www.vanguard.com/
       twitter: Vanguard_Group
@@ -82,7 +111,10 @@ websites:
       url: https://www.wellsfargo.com/
       twitter: WellsFargo
       img: wellsfargo.png
-      tfa: No
+      tfa: yes
+      doc: https://www.wellsfargo.com/privacy-security/advanced-access
+      custom:
+        - icon: mail
 
     - name: OptionsHouse
       img: optionshouse.png
@@ -128,3 +160,31 @@ websites:
       twitter: scottrade
       img: scottrade.png
       tfa: No
+
+    - name: PNC Bank
+      url: https://www.pnc.com/
+      twitter: pncnews
+      img: pncbank.png
+      tfa: No
+
+    - name: USAA
+      url: https://www.usaa.com/
+      twitter: USAA
+      tfa: yes
+      sms: no
+      verisign: yes
+      doc: https://www.usaa.com/inet/pages/security_mobile_devices?akredirect=true
+      img: usaa.png
+      custom:
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=com.usaa.mobile.android.usaa&hl=en
+        - icon: iphone
+          url: https://itunes.apple.com/us/app/usaa-mobile/id312325565
+        - icon: windows phone
+          url: http://www.windowsphone.com/en-us/store/app/usaa/6d5694b8-d1d7-df11-a844-00237de2db9e
+
+    - name: Intuit TurboTax
+      url: https://turbotax.intuit.com/
+      twitter: turbotax
+      tfa: No
+      img: turbotax.png

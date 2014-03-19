@@ -25,11 +25,15 @@ sections:
 
   - id: backup
     title: Backup and Sync
-    icon: file
+    icon: hdd
 
   - id: domains
     title: Domains
     icon: globe
+
+  - id: security
+    title: Security
+    icon: lock
 
   - id: gaming
     title: Gaming
@@ -39,10 +43,14 @@ sections:
     title: Cryptocurrencies
     icon: bitcoin
 
+  - id: health
+    title: Health
+    icon: medkit
+
   - id: communication
     title: Communication
     icon: chat
 
-  - id: saas
-    title: SaaS
-    icon: cloud
+  - id: other
+    title: Other
+    icon: lab
