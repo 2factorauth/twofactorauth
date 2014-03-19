@@ -6,11 +6,10 @@ websites:
       sms: No
       authy: No
       goog: No
+      doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
       custom:
         - icon: shield
           url: "https://rublon.com/"
-        - icon: play
-          url: "http://www.youtube.com/watch?v=5OLcvjVhhuI"
 
     - name: Delighted
       img: delighted.png
@@ -20,3 +19,27 @@ websites:
       goog: No
       authy: No
       doc: https://delightedapp.com/
+
+    - name: Netflix
+      img: netflix.png
+      url: http://www.netflix.com/
+      tfa: No
+      twitter: netflix
+
+    - name: Hulu
+      img: hulu.png
+      url: http://www.hulu.com
+      tfa: No
+      twitter: hulu
+
+    - name: Status.io
+      url: https://status.io/
+      img: statusio.png
+      tfa: Yes
+      sms: No
+      authy: No
+      goog: No
+      doc: http://blog.status.io/2014/03/01/yubikey/
+      custom:
+        - icon: key
+          url: "http://blog.status.io/2014/03/01/yubikey/"
