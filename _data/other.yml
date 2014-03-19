@@ -7,3 +7,15 @@ websites:
       goog: No
       authy: No
       doc: https://delightedapp.com/
+
+    - name: Mailchimp
+      img: mailchimp.png
+      url: https://mailchimp.com/
+      tfa: Yes
+      sms: Yes
+      goog: Yes
+      authy: No
+      doc: https://blog.mailchimp.com/alterego-integrations-for-easy-authentication/
+      custom:
+          - icon: lock
+            url: https://toopher.com/
