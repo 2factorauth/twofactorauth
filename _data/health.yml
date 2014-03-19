@@ -1,0 +1,68 @@
+#
+# Health
+#
+
+websites:
+    - name: 23andMe
+      img: 23andme.png
+      url: http://www.23andme.com
+      twitter: 23andMe
+      tfa: No
+
+    - name: drchrono
+      img: drchrono.png
+      url: https://www.drchrono.com
+      tfa: Yes
+      sms: No
+      goog: No
+      authy: Yes
+      doc: https://www.drchrono.com/blog/two-factor-authentication-extra-security-for-your-health-records/
+
+    - name: Drugs.com
+      img: drugs.com.png
+      url: http://www.drugs.com
+      twitter: DrugsCom
+      tfa: No
+
+    - name: FitBit
+      img: fitbit.png
+      url: http://www.fitbit.com
+      twitter: fitbit
+      tfa: No
+
+    - name: Healthcare.gov
+      img: healthcaregov.png
+      url: http://healthcare.gov
+      twitter: HealthCareGov
+      tfa: No
+
+    - name: HealthVault
+      img: healthvault.png
+      url: https://www.healthvault.com
+      twitter: HealthVault
+      tfa: No
+
+    - name: myfitnesspal
+      img: myfitnesspal.png
+      url: http://www.myfitnesspal.com
+      twitter: myfitnesspal
+      tfa: No
+
+    - name: Strava
+      img: strava.png
+      url: http://www.strava.com
+      twitter: StravaEng
+      tfa: No
+
+    - name: WebMD
+      img: webmd.png
+      url: http://www.webmd.com
+      twitter: WebMD
+      tfa: No
+
+    - name: Withings
+      img: withings.png
+      url: http://www.withings.com
+      twitter: Withings
+      tfa: No      
+      

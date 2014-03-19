@@ -1,0 +1,56 @@
+websites:
+    - name: FastMail
+      url: https://www.fastmail.fm/
+      img: fastmail.png
+      tfa: Yes
+      goog: Yes
+      sms: Yes
+      doc: https://www.fastmail.fm/help/features_alternative_logins.html
+      custom:
+          - icon: key
+            url: https://www.fastmail.fm/help/login_yubikey.html
+          - icon: text file outline
+            url: https://www.fastmail.fm/help/features_alternative_logins.html#idp2602704
+
+    - name: Gmail
+      url: https://gmail.com
+      img: gmail.png
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: Yes
+      doc: https://support.google.com/accounts/answer/180744?hl=en
+
+    - name: Outlook.com
+      url: https://outlook.com
+      img: outlook.png
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: Yes
+      doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+
+    - name: Pobox
+      url: https://www.pobox.com/
+      img: pobox.png
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: No
+      doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
+
+    - name: Yahoo Mail
+      url: https://www.mail.yahoo.com/
+      img: yahoomail.png
+      tfa: Yes
+      sms: Yes
+      doc: https://help.yahoo.com/kb/SLN5013.html
+
+    - name: Zoho Mail
+      url: https://www.zoho.com/mail/
+      img: zoho.png
+      tfa: Yes
+      goog: Yes
+      authy: No
+      sms: Yes
+      doc: https://adminconsole.wiki.zoho.com/mail/Two-Factor-Authentication.html

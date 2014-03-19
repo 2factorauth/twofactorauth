@@ -1,0 +1,84 @@
+websites:
+  - name: Backblaze
+    url: http://www.backblaze.com/
+    img: backblaze.gif
+    twitter: backblaze
+    tfa: No
+
+  - name: Box
+    url: https://app.box.com/
+    img: box.png
+    tfa: Yes
+    sms: Yes
+    doc: https://support.box.com/hc/en-us/articles/200526658-Can-I-enable-2-step-verification-for-my-account-
+
+  - name: Copy
+    url: https://www.copy.com
+    img: copy.png
+    tfa: No
+    twitter: copyapp
+    
+  - name: CrashPlan
+    url: http://www.crashplan.com
+    img: crashplan.png
+    tfa: No
+    twitter: crashplan
+
+  - name: Dropbox
+    img: dropbox.png
+    url: https://www.dropbox.com
+    tfa: Yes
+    sms: Yes
+    goog: Yes
+    authy: Yes
+    doc: https://www.dropbox.com/help/363/en
+
+  - name: Evernote
+    img: evernote.png
+    url: https://evernote.com
+    tfa: Yes
+    sms: Yes
+    goog: Yes
+    authy: Yes
+    doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
+
+  - name: Frostbox
+    url: http://frostbox.com
+    img: frostbox.png
+    tfa: Yes
+    sms: No
+    authy: No
+    goog: No
+    doc: https://app.frostbox.com/main.php?action=2fa
+    custom:
+      - icon: shield
+        url: "https://rublon.com/"
+
+  - name: OneDrive
+    img: onedrive.png
+    url: https://www.onedrive.com
+    tfa: Yes
+    goog: Yes
+    authy: Yes
+    sms: Yes
+    doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+
+  - name: SpiderOak
+    img: spideroak.png
+    url: https://spideroak.com
+    tfa: No
+
+  - name: SugarSync
+    img: sugarsync.png
+    url: https://www.sugarsync.com/
+    tfa: No
+    twitter: SugarSync
+
+  - name: Google Drive
+    url: https://drive.google.com
+    img: drive.png
+    tfa: Yes
+    goog: Yes
+    authy: Yes
+    sms: Yes
+    doc: https://support.google.com/accounts/answer/180744?hl=en
