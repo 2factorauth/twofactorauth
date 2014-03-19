@@ -43,6 +43,15 @@ websites:
       sms: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
+    - name: Launchpad
+      img: launchpad.png
+      url: https://launchpad.net
+      tfa: Yes
+      goog: Yes
+      authy: No
+      sms: No
+      doc: https://launchpad.net/~sso-2f-testers
+
     - name: Heroku
       url: https://www.heroku.com/
       img: heroku.png
@@ -73,6 +82,12 @@ websites:
       url: https://www.rackspace.com/
       img: rackspace.png
       twitter: rackspace
+      tfa: No
+
+    - name: HP Cloud
+      url: https://www.hpcloud.com/
+      img: hp.png
+      twitter: hpcloud
       tfa: No
 
     - name: Google Cloud Platform
