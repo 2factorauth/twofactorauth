@@ -540,11 +540,35 @@ sections:
         - name: SSLTrust
           url: http://ssltrust.com.au
           img: ssltrust.png
-          tfa: No
+          tfa: Yes
           sms: No
           authy: No
           goog: Yes
           doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
+
+    websites:
+        - name: GeoTrust
+          url: http://geotrust.com
+          img: geotrust.png
+          tfa: Yes
+          sms: No
+          authy: No
+          goog: No
+          doc: 
+          custom:
+            - icon: mail
+
+    websites:
+        - name: Comodo
+          url: http://instantssl.com/
+          img: comodo.png
+          tfa: No
+          sms: No
+          authy: No
+          goog: No
+          doc: 
+
+
 
 
 #
