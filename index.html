@@ -67,105 +67,121 @@ hash: SupportTwoFactorAuth
                         </tr>
                     </thead>
                     <tbody>
-                    {% assign section_file = site.data[section.id] %}
-                    {% assign sorted_websites = section_file.websites | sort: 'name' %}
-                    {% for website in sorted_websites %}
-                        <tr>
-                        {% if website.tfa %}
-                            <td class="main positive">
-                            {% if website.img %}
-                                <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-                            {% endif %}
-                                <a href="{{ website.url }}">{{ website.name }}</a>
-                            </td>
+                        {% assign section_file = site.data[section.id] %}
+                        
+                        {% capture website_names %}
+                            {% for website in section_file.websites %}
+                                {{ website.name | downcase }}
+                                {% unless forloop.last %},{% endunless %}
+                            {% endfor %}
+                        {% endcapture %}
+                        
+                        {% assign lowercase_names = website_names | split:',' | sort %}
 
-                            {% if website.doc %}
-                                <td class="positive icon">
-                                    <a href="{{ website.doc }}">
-                                        <i class="external url link icon"></i>
-                                    </a>
-                                </td>
-                            {% else %}
-                                <td class="positive icon"></td>
-                            {% endif %}
+                        {% for item in (0..lowercase_names.size) %}
+                            {% capture lowercase_name %}{{ lowercase_names[item] | strip | strip_newlines }}{% endcapture %}
+                            {% for website in section_file.websites %}
+                                {% assign current_name = website.name | downcase %}
+                                {% if lowercase_name contains current_name %}
+                                    
+                                    <tr>
+                                        {% if website.tfa %}
+                                            <td class="main positive">
+                                            {% if website.img %}
+                                                <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                                            {% endif %}
+                                                <a href="{{ website.url }}">{{ website.name }}</a>
+                                            </td>
 
-                            {% if website.sms %}
-                                <td class="positive icon">
-                                    <i class="checkmark large icon"></i>
-                                </td>
-                            {% else %}
-                                <td class="negative icon">
-                                    <i class="remove large icon"></i>
-                                </td>
-                            {% endif %}
+                                            {% if website.doc %}
+                                                <td class="positive icon">
+                                                    <a href="{{ website.doc }}">
+                                                        <i class="external url link icon"></i>
+                                                    </a>
+                                                </td>
+                                            {% else %}
+                                                <td class="positive icon"></td>
+                                            {% endif %}
 
-                            {% if website.goog %}
-                                <td class="positive icon">
-                                    <i class="checkmark large icon"></i>
-                                </td>
-                            {% else %}
-                                <td class="negative icon">
-                                    <i class="remove large icon"></i>
-                                </td>
-                            {% endif %}
+                                            {% if website.sms %}
+                                                <td class="positive icon">
+                                                    <i class="checkmark large icon"></i>
+                                                </td>
+                                            {% else %}
+                                                <td class="negative icon">
+                                                    <i class="remove large icon"></i>
+                                                </td>
+                                            {% endif %}
 
-                            {% if website.authy %}
-                                <td class="positive icon">
-                                    <i class="checkmark large icon"></i>
-                                </td>
-                            {% else %}
-                                <td class="negative icon">
-                                    <i class="remove large icon"></i>
-                                </td>
-                            {% endif %}
+                                            {% if website.goog %}
+                                                <td class="positive icon">
+                                                    <i class="checkmark large icon"></i>
+                                                </td>
+                                            {% else %}
+                                                <td class="negative icon">
+                                                    <i class="remove large icon"></i>
+                                                </td>
+                                            {% endif %}
 
-                            {% if website.custom %}
-                                <td class="positive icon">
-                                {% for item in website.custom %}
-                                    {% if item.url %}
-                                        <a href="{{ item.url }}"><i class="{{ item.icon }} link small icon"></i></a>
-                                    {% else %}
-                                        <i class="{{ item.icon }} small icon"></i>
-                                    {% endif %}
-                                {% endfor %}
-                                </td>
-                            {% else %}
-                                <td class="disabled icon">
-                                    <i class="minus large icon"></i>
-                                </td>
-                            {% endif %}
-                        </tr>
-                        {% else %}
-                            <td class="main negative">
-                            {% if website.img %}
-                                <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-                            {% endif %}
-                                <a href="{{ website.url }}">{{ website.name }}</a>
-                            {% if website.status %}
-                                <span class="progress">
-                                    <a class="ui mini orange button" href="{{website.status}}" target="_blank">
-                                        <i class="star icon"></i> In Progress!
-                                    </a>
-                                </span>
-                            {% endif %}
-                            </td>
-                            {% if website.twitter %}
-                                <td class="twitter main negative" colspan="5">
-                                {% if website.status %}
-                                    <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
-                                {% else %}
-                                    <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link}}</a>
-                                </td>
+                                            {% if website.authy %}
+                                                <td class="positive icon">
+                                                    <i class="checkmark large icon"></i>
+                                                </td>
+                                            {% else %}
+                                                <td class="negative icon">
+                                                    <i class="remove large icon"></i>
+                                                </td>
+                                            {% endif %}
+
+                                            {% if website.custom %}
+                                                <td class="positive icon">
+                                                {% for item in website.custom %}
+                                                    {% if item.url %}
+                                                        <a href="{{ item.url }}"><i class="{{ item.icon }} link small icon"></i></a>
+                                                    {% else %}
+                                                        <i class="{{ item.icon }} small icon"></i>
+                                                    {% endif %}
+                                                {% endfor %}
+                                                </td>
+                                            {% else %}
+                                                <td class="disabled icon">
+                                                    <i class="minus large icon"></i>
+                                                </td>
+                                            {% endif %}
+                                        </tr>
+                                        {% else %}
+                                            <td class="main negative">
+                                            {% if website.img %}
+                                                <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                                            {% endif %}
+                                                <a href="{{ website.url }}">{{ website.name }}</a>
+                                            {% if website.status %}
+                                                <span class="progress">
+                                                    <a class="ui mini orange button" href="{{website.status}}" target="_blank">
+                                                        <i class="star icon"></i> In Progress!
+                                                    </a>
+                                                </span>
+                                            {% endif %}
+                                            </td>
+                                            {% if website.twitter %}
+                                                <td class="twitter main negative" colspan="5">
+                                                {% if website.status %}
+                                                    <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
+                                                {% else %}
+                                                    <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link}}</a>
+                                                </td>
+                                                {% endif %}
+                                            {% else %}
+                                                <td class="negative icon"><i class="remove large icon"></td>
+                                                <td class="negative icon"><i class="remove large icon"></td>
+                                                <td class="negative icon"><i class="remove large icon"></td>
+                                                <td class="negative icon"><i class="remove large icon"></td>
+                                                <td class="negative icon"><i class="remove large icon"></td>
+                                            {% endif %}
+                                        {% endif %}
                                 {% endif %}
-                            {% else %}
-                                <td class="negative icon"><i class="remove large icon"></td>
-                                <td class="negative icon"><i class="remove large icon"></td>
-                                <td class="negative icon"><i class="remove large icon"></td>
-                                <td class="negative icon"><i class="remove large icon"></td>
-                                <td class="negative icon"><i class="remove large icon"></td>
-                            {% endif %}
-                        {% endif %}
-                    {% endfor %}
+                            {% endfor %}
+                        {% endfor %}
                     </tbody>
                 </table>
 
