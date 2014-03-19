@@ -1,0 +1,27 @@
+websites:
+    - name: SSLTrust
+      url: http://ssltrust.com.au/
+      img: ssltrust.png
+      tfa: Yes
+      goog: Yes
+      doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
+
+    - name: GeoTrust
+      img: geotrust.png
+      url: http://www.geotrust.com/
+      tfa: Yes
+      goog: No
+      authy: No
+      sms: No
+      custom:
+          - icon: mail
+
+    - name: RapidSSL
+      img: rapidssl.png
+      url: http://www.rapidssl.com/
+      tfa: Yes
+      goog: No
+      authy: No
+      sms: No
+      custom:
+          - icon: mail
