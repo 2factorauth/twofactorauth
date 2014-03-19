@@ -1,0 +1,33 @@
+websites:
+    - name: Automater
+      url: http://automater.pl/en/
+      img: automater.png
+      tfa: Yes
+      sms: No
+      authy: No
+      goog: No
+      doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
+      custom:
+        - icon: shield
+          url: "https://rublon.com/"
+
+    - name: Delighted
+      img: delighted.png
+      url: https://delightedapp.com/
+      tfa: Yes
+      sms: Yes
+      goog: No
+      authy: No
+      doc: https://delightedapp.com/
+
+    - name: Netflix
+      img: netflix.png
+      url: http://www.netflix.com/
+      tfa: No
+      twitter: netflix
+
+    - name: Hulu
+      img: hulu.png
+      url: http://www.hulu.com
+      tfa: No
+      twitter: hulu

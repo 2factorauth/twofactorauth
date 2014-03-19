@@ -16,6 +16,15 @@ websites:
       goog: Yes
       doc: https://directnic.com/knowledge/article/137:how+do+i+set+up+two-factor+authentication%3F
 
+    - name: DNS Made Easy
+      url: http://www.dnsmadeeasy.com
+      img: dnsmadeeasy.png
+      tfa: Yes
+      sms: No
+      authy: No
+      goog: Yes
+      doc: http://www.dnsmadeeasy.com/press-release/dns-made-easy-adds-two-factor-authentication-with-time-based-passwords/
+
     - name: DNSimple
       url: https://dnsimple.com/
       img: dnsimple.png
@@ -24,6 +33,18 @@ websites:
       authy: Yes
       goog: No
       doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
+
+    - name: Domeny.tv
+      url: http://www.domeny.tv/en
+      img: domenytv.png
+      tfa: Yes
+      sms: No
+      authy: No
+      goog: No
+      doc: http://www.domeny.tv/en/two-factor-authentication
+      custom:
+          - icon: shield
+            url: "https://rublon.com/"
 
     - name: Dreamhost
       url: https://dreamhost.com
@@ -55,6 +76,28 @@ websites:
       goog: Yes
       doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
 
+    - name: GoDaddy
+      img: godaddy.png
+      url: http://www.godaddy.com/
+      tfa: yes
+      sms: Yes
+      doc: http://support.godaddy.com/help/article/7502/enabling-twostep-authentication
+
+    - name: Hover.com
+      img: hover.png
+      url: http://www.hover.com/
+      tfa: Yes
+      sms: Yes
+      goog: Yes
+      doc: https://help.hover.com/entries/26677644
+
+    - name: Name.com
+      url: http://www.name.com/
+      img: namecom.png
+      tfa: Yes
+      verisign: Yes
+      doc: https://www.name.com/services/namesafe
+
     - name: Namecheap
       img: namecheap.png
       url: https://www.namecheap.com/
@@ -69,32 +112,6 @@ websites:
       tfa: No
       sms: No
 
-    - name: GoDaddy
-      img: godaddy.png
-      url: http://www.godaddy.com/
-      tfa: yes
-      sms: Yes
-      doc: http://support.godaddy.com/help/article/7502/enabling-twostep-authentication
-
-    - name: Name.com
-      url: http://www.name.com/
-      img: namecom.png
-      tfa: Yes
-      doc: https://www.name.com/services/namesafe
-      custom:
-        - icon: android
-          url: https://play.google.com/store/apps/details?id=com.verisign.mvip.main
-        - icon: apple
-          url: https://itunes.apple.com/app/vip-access-for-iphone/id307658513
-
-    - name: Hover.com
-      img: hover.png
-      url: http://www.hover.com/
-      tfa: Yes
-      sms: Yes
-      goog: Yes
-      doc: https://help.hover.com/entries/26677644
-
     - name: iWantMyName
       url: https://iwantmyname.com/
       img: iwantmyname.png
@@ -102,6 +119,13 @@ websites:
       tfa: yes
       authy: yes
       doc: http://help.iwantmyname.com/customer/portal/articles/1139898
+
+    - name: Loopia
+      url: https://www.loopia.se/
+      twitter: loopia
+      img: loopia.png
+      tfa: No
+      status: https://twitter.com/loopia/statuses/446223091161911296
 
     - name: Register4Less
       url: https://register4less.com/

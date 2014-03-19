@@ -59,11 +59,30 @@ websites:
       authy: Yes
       doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
 
+    - name: NearlyFreeSpeech.NET
+      url: https://www.nearlyfreespeech.net/
+      img: nfsn.png
+      twitter: nfsn
+      tfa: Yes
+      goog: Yes
+      sms: Yes
+      authy: No
+      doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-se
+
     - name: Rackspace
       url: https://www.rackspace.com/
       img: rackspace.png
       twitter: rackspace
       tfa: No
+
+    - name: Scalr
+      url: http://www.scalr.com
+      img: scalr.png
+      tfa: Yes
+      goog: Yes
+      sms: No
+      authy: No
+      doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
 
     - name: Google Cloud Platform
       url: https://cloud.google.com

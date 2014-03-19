@@ -1,4 +1,17 @@
 websites:
+    - name: FastMail
+      url: https://www.fastmail.fm/
+      img: fastmail.png
+      tfa: Yes
+      goog: Yes
+      sms: Yes
+      doc: https://www.fastmail.fm/help/features_alternative_logins.html
+      custom:
+          - icon: key
+            url: https://www.fastmail.fm/help/login_yubikey.html
+          - icon: text file outline
+            url: https://www.fastmail.fm/help/features_alternative_logins.html#idp2602704
+
     - name: Gmail
       url: https://gmail.com
       img: gmail.png
