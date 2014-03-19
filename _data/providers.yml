@@ -1,0 +1,40 @@
+#
+# Configuration for the 2FA providers.
+#
+
+providers:
+
+  - name: Authy
+    url: https://authy.com
+    img: authy.png
+    android: Yes
+    ios: Yes
+    feature_phone: Yes
+
+  - name: Duo
+    url: https://duosecurity.com
+    img: duo.png
+    android: Yes
+    ios: Yes
+    feature_phone: Yes
+
+  - name: Google Authenticator
+    url: http://www.google.com/landing/2step/
+    img: google.png
+    android: Yes
+    ios: Yes
+    feature_phone: No
+
+  - name: Toopher
+    url: https://toopher.com
+    img: toopher.png
+    android: Yes
+    ios: Yes
+    feature_phone: Yes
+
+  - name: Yubico
+    url: https://yubico.com
+    img: yubico.png
+    android: Yes
+    ios: Yes
+    feature_phone: Yes

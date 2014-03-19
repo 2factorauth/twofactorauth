@@ -1,0 +1,99 @@
+---
+layout: default
+---
+
+<div class="ui fixed transparent inverted teal main menu">
+    <div class="menu">
+        <div class="right menu">
+            <a href="{{ site.repo }}" class="item">
+                <i class="github icon"></i>
+                Contribute
+            </a>
+        </div>
+
+        <a href="/" class="item">
+            <i class="home icon"></i>
+            Home
+        </a>
+    </div>
+</div>
+
+<div class="main container">
+    <div class="ui grid">
+        <div class="column">
+            <div class="banner ui icon header">
+                <i class="circular mobile icon"></i>
+                <h2>Two Factor Auth (2FA) Providers</h2>
+                <div class="sub header">
+                  List of <a href="http://en.wikipedia.org/wiki/Multi-factor_authentication">2FA</a> 
+                  providers and the platforms they support.
+                </div>
+                <div class="sub header">
+                    Also see the list of <a href="/">sites offering 2FA</a>.
+                </div>
+                <div class="sub header">
+                    Add your own favorite by submitting a pull request on the
+                    <a href="https://github.com/jdavis/twofactorauth">GitHub repo</a>.
+                </div>
+            </div>
+
+            <div id="{{ provider.name }}" class="section">
+                <table class="ui table celled compact segment">
+                    <thead>
+                        <tr>
+                            <th class="eleven wide"><h2>Provider</h2></th>
+                            <th>Android</th>
+                            <th>iOS</th>
+                            <th>Feature phones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      {% assign sorted_providers = site.data.providers.providers | sort: 'name' %}
+                      {% for provider in sorted_providers %}
+                        <tr>
+                          <td class="main positive">
+                          {% if provider.img %}
+                              <img src="/img/providers/{{ provider.img }}" class="icon" alt="{{ provider.name }}">
+                          {% endif %}
+                              <a href="{{ provider.url }}">{{ provider.name }}</a>
+                          </td>
+
+                          {% if provider.android %}
+                              <td class="positive icon">
+                                  <i class="checkmark large icon"></i>
+                              </td>
+                          {% else %}
+                              <td class="negative icon">
+                                  <i class="remove large icon"></i>
+                              </td>
+                          {% endif %}
+
+                          {% if provider.ios %}
+                              <td class="positive icon">
+                                  <i class="checkmark large icon"></i>
+                              </td>
+                          {% else %}
+                              <td class="negative icon">
+                                  <i class="remove large icon"></i>
+                              </td>
+                          {% endif %}
+
+                          {% if provider.feature_phone %}
+                              <td class="positive icon">
+                                  <i class="checkmark large icon"></i>
+                              </td>
+                          {% else %}
+                              <td class="negative icon">
+                                  <i class="remove large icon"></i>
+                              </td>
+                          {% endif %}
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                </table>
+
+            </div><!-- Section -->
+
+        </div><!-- Column -->
+    </div><!-- UI Grid -->
+</div><!-- Main Container -->
