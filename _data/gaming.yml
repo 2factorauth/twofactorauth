@@ -3,6 +3,7 @@ websites:
       img: blizzard.png
       url: http://blizzard.com
       tfa: Yes
+      sms: Yes
       doc: http://us.battle.net/en/security/
       custom:
           - icon: android
@@ -11,7 +12,7 @@ websites:
             url: https://itunes.apple.com/app/battle.net-mobile-authenticator/id306862897
           - icon: windows
             url: http://www.windowsphone.com/en-us/store/app/battle-net-authenticator/1347bbfb-bca2-e011-986b-78e7d1fa76f8?type=phoneapp&id=1347bbfb-bca2-e011-986b-78e7d1fa76f8
-          - icon: blackberry
+          - icon: mobile
             url: http://appworld.blackberry.com/webstore/content/13011/?countrycode=US&lang=en
 
     - name: GOG.com
@@ -29,6 +30,12 @@ websites:
       doc: https://help.guildwars2.com/entries/27626157-Two-Factor-Authentication
       custom:
           - icon: mail
+          
+    - name: EVE Online
+      twitter: EveOnline
+      img: eve_online.png
+      url: http://www.eveonline.com/
+      tfa: no
 
     - name: Humble Bundle
       img: humble.png
@@ -49,7 +56,10 @@ websites:
       url: https://www.origin.com/
       twitter: OriginInsider
       img: origin.png
-      tfa: No
+      tfa: Yes
+      doc: http://help.ea.com/en/article/origin-login-verification-information/
+      custom:
+          - icon: mail
 
     - name: Steam
       img: steam.png

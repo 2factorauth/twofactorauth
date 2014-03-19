@@ -4,7 +4,7 @@ layout: default
 link: Tell them to support 2FA
 tweet: Security is important, @TWITTERHANDLE. We'd like if you supported two factor auth.
 
-link_progress: Tell 'em thanks for working on 2FA
+link_progress: Tell them thanks for working on 2FA
 tweet_progress: Thanks for working on support for two factor auth, @TWITTERHANDLE!
 hash: SupportTwoFactorAuth
 ---
@@ -63,6 +63,7 @@ hash: SupportTwoFactorAuth
                             <th>SMS</th>
                             <th>Google Auth</th>
                             <th>Authy</th>
+                            <th>VeriSign VIP</th>
                             <th class="two wide">Custom</th>
                         </tr>
                     </thead>
@@ -133,6 +134,16 @@ hash: SupportTwoFactorAuth
                                                 </td>
                                             {% endif %}
 
+                                            {% if website.verisign %}
+                                                <td class="positive icon">
+                                                    <i class="checkmark large icon"></i>
+                                                </td>
+                                            {% else %}
+                                                <td class="negative icon">
+                                                    <i class="remove large icon"></i>
+                                                </td>
+                                            {% endif %}
+
                                             {% if website.custom %}
                                                 <td class="positive icon">
                                                 {% for item in website.custom %}
@@ -164,7 +175,7 @@ hash: SupportTwoFactorAuth
                                             {% endif %}
                                             </td>
                                             {% if website.twitter %}
-                                                <td class="twitter main negative" colspan="5">
+                                                <td class="twitter main negative" colspan="6">
                                                 {% if website.status %}
                                                     <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
                                                 {% else %}
@@ -172,6 +183,7 @@ hash: SupportTwoFactorAuth
                                                 </td>
                                                 {% endif %}
                                             {% else %}
+                                                <td class="negative icon"><i class="remove large icon"></td>
                                                 <td class="negative icon"><i class="remove large icon"></td>
                                                 <td class="negative icon"><i class="remove large icon"></td>
                                                 <td class="negative icon"><i class="remove large icon"></td>

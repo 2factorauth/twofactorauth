@@ -17,6 +17,12 @@ websites:
     img: copy.png
     tfa: No
     twitter: copyapp
+    
+  - name: CrashPlan
+    url: http://www.crashplan.com
+    img: crashplan.png
+    tfa: No
+    twitter: crashplan
 
   - name: Dropbox
     img: dropbox.png
@@ -35,6 +41,18 @@ websites:
     goog: Yes
     authy: Yes
     doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
+
+  - name: Frostbox
+    url: http://frostbox.com
+    img: frostbox.png
+    tfa: Yes
+    sms: No
+    authy: No
+    goog: No
+    doc: https://app.frostbox.com/main.php?action=2fa
+    custom:
+      - icon: shield
+        url: "https://rublon.com/"
 
   - name: OneDrive
     img: onedrive.png
