@@ -16,11 +16,11 @@ further security practices and which ones already do.
 
 ## Contributing
 
-All the data is managed through a [Yaml][yaml] file so it may be useful to read
+All the data is managed through a series of [Yaml][yaml] files so it may be useful to read
 up on the Yaml syntax.
 
-To add a new site, go to the [data file](_data/main.yml) and get familiar with
-how it is setup. There is a section for each Category and they all follow this
+To add a new site, go to the [data files](_data/) and get familiar with
+how it is setup. There is a section and coresponding file for each Category and they all follow this
 syntax:
 
 ### Guidelines
@@ -34,17 +34,16 @@ syntax:
 
 ### New Sections
 
-To add a new section, modify the `sections` value and follow the template below:
+To add a new section, modify the `sections` value in [main.yml](_data/main.yml) and follow the template below:
 
 ```yml
 sections:
   - id: category-id
     title: Category Name
     icon: icon-class
-
-    websites:
-        # Sites go here...
 ```
+
+Then create a new file in the `_data` directory named the same as your section's id with the `.yml` extension.
 
 ### New Sites
 
