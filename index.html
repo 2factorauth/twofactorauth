@@ -79,11 +79,10 @@ hash: SupportTwoFactorAuth
                         {% assign lowercase_names = website_names | split:',' | sort %}
 
                         {% for item in (0..lowercase_names.size) %}
-                            {% capture lowercase_name %}{{ lowercase_names[item] }}{% endcapture %}
-                            {% assign clean_name = lowercase_name | strip | strip_newlines %}
+                            {% capture lowercase_name %}{{ lowercase_names[item] | strip | strip_newlines }}{% endcapture %}
                             {% for website in section_file.websites %}
                                 {% assign current_name = website.name | downcase %}
-                                {% if clean_name contains current_name %}
+                                {% if lowercase_name contains current_name %}
                                     
                                     <tr>
                                         {% if website.tfa %}
