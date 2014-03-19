@@ -87,6 +87,17 @@ websites:
         - icon: apple
           url: https://itunes.apple.com/app/vip-access-for-iphone/id307658513
 
+    - name: NameSilo.com
+      url: http://www.namesilo.com/
+      img: namesilo.png
+      tfa: Yes
+      doc: https://www.namesilo.com/Support/2~Factor-Authentication
+      custom:
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2
+        - icon: apple
+          url: https://itunes.apple.com/us/app/google-authenticator/id388497605
+	  
     - name: Hover.com
       img: hover.png
       url: http://www.hover.com/
