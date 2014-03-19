@@ -1,0 +1,31 @@
+websites:
+    - name: Amazon Payments
+      url: https://payments.amazon.com
+      twitter: AmazonPayments
+      img: amazon.png
+      tfa: No
+
+    - name: PayPal
+      img: paypal.png
+      url: https://www.paypal.com/
+      tfa: Yes
+      sms: Yes
+      doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
+
+    - name: Stripe
+      img: stripe.png
+      url: https://www.stripe.com/
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: No
+      doc: https://stripe.com/blog/two-step-verification
+
+    - name: Google Wallet
+      url: http://www.google.se/wallet/
+      img: googlewallet.png
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: Yes
+      doc: https://support.google.com/accounts/answer/180744?hl=en

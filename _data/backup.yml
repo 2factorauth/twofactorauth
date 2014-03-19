@@ -1,0 +1,64 @@
+websites:
+  - name: Backblaze
+    url: http://www.backblaze.com/
+    img: backblaze.gif
+    twitter: backblaze
+    tfa: No
+
+  - name: Box
+    url: https://app.box.com/
+    img: box.png
+    tfa: Yes
+    sms: Yes
+    doc: https://support.box.com/hc/en-us/articles/200526658-Can-I-enable-2-step-verification-for-my-account-
+
+  - name: Dropbox
+    img: dropbox.png
+    url: https://www.dropbox.com
+    tfa: Yes
+    sms: Yes
+    goog: Yes
+    authy: Yes
+    doc: https://www.dropbox.com/help/363/en
+
+  - name: Evernote
+    img: evernote.png
+    url: https://evernote.com
+    tfa: Yes
+    sms: Yes
+    goog: Yes
+    authy: Yes
+    doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
+
+  - name: OneDrive
+    img: onedrive.png
+    url: https://www.onedrive.com
+    tfa: Yes
+    goog: Yes
+    authy: Yes
+    sms: Yes
+    doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+
+  - name: SpiderOak
+    img: spideroak.png
+    url: https://spideroak.com
+    tfa: Yes
+    sms: Yes
+    goog: No
+    authy: No
+    doc: https://spideroak.com/blog/20110620235134-2-factor-authentication-to-your-spideroak-account
+
+  - name: SugarSync
+    img: sugarsync.png
+    url: https://www.sugarsync.com/
+    tfa: No
+    twitter: SugarSync
+
+  - name: Google Drive
+    url: https://drive.google.com
+    img: googledrive.png
+    tfa: Yes
+    goog: Yes
+    authy: Yes
+    sms: Yes
+    doc: https://support.google.com/accounts/answer/180744?hl=en

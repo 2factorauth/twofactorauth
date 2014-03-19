@@ -1,0 +1,81 @@
+websites:
+    - name: Amazon Web Services
+      img: aws.png
+      url: https://aws.amazon.com
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: Yes
+      doc: http://aws.amazon.com/iam/details/mfa/
+      custom:
+          - icon: android
+            url: http://www.amazon.com/gp/product/B0061MU68M
+          - icon: windows
+            url: http://www.windowsphone.com/en-us/store/app/authenticator/021dd79f-0598-e011-986b-78e7d1fa76f8
+
+    - name: MaxCDN
+      url: https://www.maxcdn.com
+      img: maxcdn.png
+      tfa: Yes
+      goog: Yes
+      doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
+
+    - name: Bitbucket
+      url: https://bitbucket.org
+      twitter: bitbucket
+      status: https://twitter.com/bitbucket/status/445631335169028096
+      img: bitbucket.png
+      tfa: No
+
+    - name: DigitalOcean
+      url: https://www.digitalocean.com/
+      img: digitalocean.png
+      tfa: Yes
+      goog: Yes
+      doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
+
+    - name: GitHub
+      img: github.png
+      url: https://github.com
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: Yes
+      doc: https://help.github.com/articles/about-two-factor-authentication
+
+    - name: Heroku
+      url: https://www.heroku.com/
+      img: heroku.png
+      twitter: heroku
+      tfa: No
+
+    - name: Linode
+      url: https://www.linode.com/
+      img: linode.png
+      twitter: linode
+      tfa: Yes
+      goog: Yes
+      sms: No
+      authy: Yes
+      doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
+
+    - name: Rackspace
+      url: https://www.rackspace.com/
+      img: rackspace.png
+      twitter: rackspace
+      tfa: No
+
+    - name: Google Cloud Platform
+      url: https://cloud.google.com
+      img: googlecloud.png
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: Yes
+      doc: https://support.google.com/accounts/answer/180744?hl=en
+
+    - name: Airbrake
+      url: https://airbrake.io
+      img: airbrake.png
+      twitter: airbrake
+      tfa: No
