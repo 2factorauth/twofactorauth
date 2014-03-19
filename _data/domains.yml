@@ -66,10 +66,8 @@ websites:
       sms: Yes
       goog: No
       authy: No
+      verisign: Yes
       doc: http://dynadot.com/domain/security.html
-      custom:
-          - icon: key
-            url: "http://www.dynadot.com/domain/token.html"
 
     - name: easyDNS
       url: https://easydns.com
