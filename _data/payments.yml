@@ -11,6 +11,13 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
+      custom:
+        - icon: key
+          url: https://idprotect.verisign.com/mainmenu.v
+        - icon: android
+          url: https://idprotect.verisign.com/mainmenu.v
+        - icon: apple
+          url: https://idprotect.verisign.com/mainmenu.v
 
     - name: Stripe
       img: stripe.png
