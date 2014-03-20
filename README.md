@@ -79,10 +79,10 @@ this example:
 ```
 
 If a site does not have 2FA but there is documentation that they are adding it, then use
-'''yml
+```yml
 tfa: no
 status: <url to documentation>
-'''
+```
 
 ~~Note: A tip on getting icons, use Google's icon api. Just go to
 `https://www.google.com/s2/favicons?domain=http://example.com`
