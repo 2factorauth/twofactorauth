@@ -3,7 +3,12 @@ websites:
       url: http://www.ally.com/
       twitter: AllyBank
       img: allybank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      goog: No
+      authy: No
+      verisign: No
+      doc: http://www.ally.com/messages/sms/index.html
 
     - name: American Express
       url: https://www.americanexpress.com/
