@@ -43,3 +43,18 @@ websites:
       custom:
         - icon: key
           url: "http://blog.status.io/2014/03/01/yubikey/"
+
+    - name: Okta
+      img: okta.png
+      url: https://okta.com/
+      twitter: okta
+      tfa: Yes
+      sms: Yes
+      goog: Yes
+      authy: Yes
+      doc: http://www.okta.com/what-we-do/multifactor-authentication.html
+      custom:
+        - icon: apple
+          url: "https://itunes.apple.com/us/app/okta-verify/id490179405?mt=8"
+        - icon: android
+          url: "https://play.google.com/store/apps/details?id=com.okta.android.auth"

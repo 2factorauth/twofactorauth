@@ -171,9 +171,9 @@ websites:
       url: https://www.usaa.com/
       twitter: USAA
       tfa: yes
-      sms: no
+      sms: yes
       verisign: yes
-      doc: https://www.usaa.com/inet/pages/security_mobile_devices?akredirect=true
+      doc: https://www.usaa.com/inet/pages/security_token_logon_options
       img: usaa.png
       custom:
         - icon: android
@@ -188,9 +188,15 @@ websites:
       twitter: turbotax
       tfa: No
       img: turbotax.png
+    
+    - name: Lloyds Bank
+      url: http://www.lloydsbank.com/
+      twitter: AskLloydsBank
+      tfa: No
+      img: lloydsbank.png
 
     - name: CIBC
-      url: https://www.cibc.ca
+      url: http://www.cibc.ca
       twitter: cibc
       tfa: No
       img: cibc.png
