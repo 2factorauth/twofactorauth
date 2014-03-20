@@ -127,9 +127,9 @@
 		if(todoIndex != -1) {
 			var completedIndex = options.storedState.completed.indexOf(id);
 			if(completedIndex != -1) {
-				options.storedState.completed.slice(completedIndex, 1);
+				options.storedState.completed.splice(completedIndex, 1);
 			}
-			options.storedState.todo.slice(todoIndex, 1);
+			options.storedState.todo.splice(todoIndex, 1);
 		}
 		storeInStorage();
 	};
@@ -177,7 +177,7 @@
 	var removeStoredCompletion = function (id) {
 		var completedIndex = options.storedState.completed.indexOf(id);
 		if(completedIndex != -1) {
-			options.storedState.completed.slice(completedIndex, 1);
+			options.storedState.completed.splice(completedIndex, 1);
 		}
 		storeInStorage();
 	};
