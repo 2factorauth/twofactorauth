@@ -1,4 +1,10 @@
 websites:
+    - name: Airbrake
+      url: https://airbrake.io
+      img: airbrake.png
+      twitter: airbrake
+      tfa: No
+
     - name: Amazon Web Services
       img: aws.png
       url: https://aws.amazon.com
@@ -13,13 +19,6 @@ websites:
           - icon: windows
             url: http://www.windowsphone.com/en-us/store/app/authenticator/021dd79f-0598-e011-986b-78e7d1fa76f8
 
-    - name: MaxCDN
-      url: https://www.maxcdn.com
-      img: maxcdn.png
-      tfa: Yes
-      goog: Yes
-      doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
-
     - name: Bitbucket
       url: https://bitbucket.org
       twitter: bitbucket
@@ -32,6 +31,7 @@ websites:
       img: digitalocean.png
       tfa: Yes
       goog: Yes
+      authy: Yes
       doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
 
     - name: GitHub
@@ -43,11 +43,27 @@ websites:
       sms: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
+    - name: Google Cloud Platform
+      url: https://cloud.google.com
+      img: google-cloud.png
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: Yes
+      doc: https://support.google.com/accounts/answer/180744?hl=en
+
     - name: Heroku
       url: https://www.heroku.com/
       img: heroku.png
       twitter: heroku
       tfa: No
+
+    - name: MaxCDN
+      url: https://www.maxcdn.com
+      img: maxcdn.png
+      tfa: Yes
+      goog: Yes
+      doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
 
     - name: Linode
       url: https://www.linode.com/
@@ -68,6 +84,12 @@ websites:
       sms: Yes
       authy: No
       doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-se
+
+    - name: PythonAnywhere
+      url: https://www.pythonanywhere.com
+      img: pythonanywhere.png
+      twitter: pythonanywhere
+      tfa: No
 
     - name: Rackspace
       url: https://www.rackspace.com/
@@ -94,21 +116,6 @@ websites:
       verisign: Yes
       doc: http://knowledgelayer.softlayer.com/procedure/configure-portal-account-one-time-password-access-manage
 
-    - name: Google Cloud Platform
-      url: https://cloud.google.com
-      img: google-cloud.png
-      tfa: Yes
-      goog: Yes
-      authy: Yes
-      sms: Yes
-      doc: https://support.google.com/accounts/answer/180744?hl=en
-
-    - name: Airbrake
-      url: https://airbrake.io
-      img: airbrake.png
-      twitter: airbrake
-      tfa: No
-      
     - name: Twilio
       url: https://www.twilio.com/
       img: twilio.png
@@ -117,7 +124,7 @@ websites:
       authy: No
       sms: Yes
       doc: https://www.twilio.com/help/faq/twilio-basics/what-happens-when-i-enable-two-factor-authentication
-    
+
     - name: Windows Azure
       url: https://www.windowsazure.com/
       img: windowsazure.png
