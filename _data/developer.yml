@@ -31,6 +31,7 @@ websites:
       img: digitalocean.png
       tfa: Yes
       goog: Yes
+      authy: Yes
       doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
 
     - name: GitHub
@@ -86,7 +87,7 @@ websites:
 
     - name: PythonAnywhere
       url: https://www.pythonanywhere.com
-      img: pythonanywhere.png 
+      img: pythonanywhere.png
       twitter: pythonanywhere
       tfa: No
 
