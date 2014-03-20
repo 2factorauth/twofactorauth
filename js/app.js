@@ -32,7 +32,10 @@
 			loadFromStorage();
 		}
 		if(options.storedState.todoInit) {
-			toggleTodo();
+			options.controlButton.toggleClass("active").toggleClass("inactive");
+			options.sectionsParent.toggleClass("active");
+			$(options.sidebar).sidebar('toggle');
+
 		}
 		initBinds();
 	};
