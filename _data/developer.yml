@@ -43,12 +43,6 @@ websites:
       sms: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
-    - name: Heroku
-      url: https://www.heroku.com/
-      img: heroku.png
-      twitter: heroku
-      tfa: No
-
     - name: Linode
       url: https://www.linode.com/
       img: linode.png
@@ -126,3 +120,9 @@ websites:
       authy: Yes
       sms: Yes
       doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+
+    - name: CloudShards
+      url: https://www.cloudshards.com/
+      img: cloudshards.png
+      twitter: CloudShards
+      tfa: No
