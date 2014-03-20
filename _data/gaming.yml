@@ -45,6 +45,15 @@ websites:
       custom:
           - icon: mail
 
+    - name: RuneScape
+      img: runescape.png
+      url: http://www.runescape.com/
+      tfa: Yes
+      doc: http://services.runescape.com/m=rswiki/en/Jagex_Account_Guardian
+      twitter: RuneScape
+      custom:
+        - icon: mail
+
     - name: Humble Bundle
       img: humble.png
       url: https://www.humblebundle.com/
@@ -82,11 +91,11 @@ websites:
       twitter: UplayUbisoft
       img: uplay.png
       tfa: No
-      
+
     - name: Final Fantasy XIV
-      url: www.finalfantasyxiv.com/‎
+      url: http://www.finalfantasyxiv.com
       twitter: FF_XIV_EN
-      imf: FFXIV.png
+      img: FFXIV.png
       tfa: Yes
       sms: Yes
       doc: http://www.square-enix.com/na/account/otp/
