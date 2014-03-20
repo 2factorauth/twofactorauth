@@ -1,20 +1,10 @@
 websites:
-    - name: ThreatSim
-      url: http://login.threatsim.com
-      img: threatsim.png
-      tfa: Yes
-      goog: No
-      authy: No
-      sms: Yes
-      verisign: No
-      doc: http://threatsim.com/features/
 
-    - name: SSLTrust
-      url: http://ssltrust.com.au/
-      img: ssltrust.png
-      tfa: Yes
-      goog: Yes
-      doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
+    - name: DigiCert
+			img: digicert.png
+			url: http://www.digicert.com/
+			tfa: No
+			twitter: digicert
 
     - name: GeoTrust
       img: geotrust.png
@@ -35,3 +25,20 @@ websites:
       sms: No
       custom:
           - icon: mail
+          
+    - name: SSLTrust
+      url: http://ssltrust.com.au/
+      img: ssltrust.png
+      tfa: Yes
+      goog: Yes
+      doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
+          
+    - name: ThreatSim
+      url: http://login.threatsim.com
+      img: threatsim.png
+      tfa: Yes
+      goog: No
+      authy: No
+      sms: Yes
+      verisign: No
+      doc: http://threatsim.com/features/
