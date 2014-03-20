@@ -40,7 +40,6 @@
 		initBinds();
 	};
 	var loadFromStorage = function () {
-		console.log("loading from storage");
 		var json = localStorage.getItem("todoState");
 		var state = $.parseJSON(json);
 		if(state) {
@@ -48,14 +47,12 @@
 			var i;
 			for(i = 0; state.todo.length > i; i++) {
 				var website = $("#"+ state.todo[i]);
-				console.log(state.todo[i]);
 				addWebsite2Todo(website);
 				website.toggleClass("hidden");
 				toggleSectionVisibility(website);
 			}
 			for(i = 0; state.completed.length > i; i++) {
 				var task = $("#task" + state.completed[i]);
-				console.log(state.completed[i]);
 				task.find(".checkbox").toggleClass("empty").toggleClass("checked");
 				task.toggleClass("completed");
 			}
