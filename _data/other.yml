@@ -20,6 +20,26 @@ websites:
       authy: No
       doc: https://delightedapp.com/
 
+    - name: LastPass
+      url: https://lastpass.com/
+      img: lastpass.png
+      tfa: Yes
+      sms: No
+      authy: No
+      goog: Yes
+      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
+      custom:
+        - icon: key
+          url: https://helpdesk.lastpass.com/security-options/yubikey-authentication/
+        - icon: key
+          url: https://helpdesk.lastpass.com/security-options/grid-multifactor-authentication/
+        - icon: key
+          url: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/toopher-authentication/
+        - icon: key
+          url: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/duo-security/
+        - icon: key
+          url: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/transakt-authentication/
+
     - name: Status.io
       url: https://status.io/
       img: statusio.png
