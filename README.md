@@ -78,6 +78,12 @@ this example:
               # Any other custom clients...
 ```
 
+If a site does not have 2FA but there is documentation that they are adding it, then use
+'''yml
+tfa: no
+status: <url to documentation>
+'''
+
 ~~Note: A tip on getting icons, use Google's icon api. Just go to
 `https://www.google.com/s2/favicons?domain=http://example.com`
 and you will get sites the icon as png.~~
