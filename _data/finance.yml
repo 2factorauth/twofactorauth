@@ -3,7 +3,12 @@ websites:
       url: http://www.ally.com/
       twitter: AllyBank
       img: allybank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      goog: No
+      authy: No
+      verisign: No
+      doc: http://www.ally.com/messages/sms/index.html
 
     - name: American Express
       url: https://www.americanexpress.com/
@@ -21,7 +26,13 @@ websites:
         - icon: key
           url: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
 
-    - name: CapitalOne 360
+    - name: Capital One
+      url: https://www.capitalone.com/
+      twitter: CapitalOne
+      img: capitalone.png
+      tfa: No
+
+    - name: Capital One 360
       url: https://home.capitalone360.com/
       twitter: CapitalOne360
       img: capitalone360.png
@@ -51,6 +62,7 @@ websites:
       sms: No
       goog: No
       authy: No
+      verisign: Yes
       doc: https://us.etrade.com/e/t/estation/pricing?id=1220801000
       custom:
         - icon: key
@@ -61,7 +73,7 @@ websites:
       twitter: fidelity
       img: fidelity.png
       tfa: No
-      
+
     - name: Mint
       url: https://www.mint.com
       twitter: mint
@@ -82,6 +94,22 @@ websites:
       twitter: simple
       status: https://twitter.com/simple/status/445966117543378944
       img: simple.png
+      tfa: No
+
+    - name: TD Ameritrade
+      url: https://www.tdameritrade.com
+      img: tdbank.png
+      twitter: tdameritrade
+      tfa: yes
+      doc: https://www.thinkorswim.com/tos/myAccounts/displayPage.tos?webpage=otp&displayFormat=hide
+      custom:
+          - icon: key
+            url: https://www.thinkorswim.com/tos/myAccounts/displayPage.tos?webpage=otp&displayFormat=hide
+
+    - name: TD Bank
+      url: https://www.tdbank.com
+      twitter: TDBank_US
+      img: tdbank.png
       tfa: No
 
     - name: Vanguard
@@ -132,8 +160,48 @@ websites:
       img: usbank.png
       tfa: No
 
+    - name: SunTrust
+      url: https://www.suntrust.com/
+      twitter: SunTrust
+      img: suntrust.png
+      tfa: No
+
+    - name: Scottrade
+      url: https://www.scottrade.com/
+      twitter: scottrade
+      img: scottrade.png
+      tfa: No
+
     - name: PNC Bank
       url: https://www.pnc.com/
       twitter: pncnews
       img: pncbank.png
       tfa: No
+
+    - name: USAA
+      url: https://www.usaa.com/
+      twitter: USAA
+      tfa: yes
+      sms: yes
+      verisign: yes
+      doc: https://www.usaa.com/inet/pages/security_token_logon_options
+      img: usaa.png
+      custom:
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=com.usaa.mobile.android.usaa&hl=en
+        - icon: apple
+          url: https://itunes.apple.com/us/app/usaa-mobile/id312325565
+        - icon: windows phone
+          url: http://www.windowsphone.com/en-us/store/app/usaa/6d5694b8-d1d7-df11-a844-00237de2db9e
+
+    - name: Intuit TurboTax
+      url: https://turbotax.intuit.com/
+      twitter: turbotax
+      tfa: No
+      img: turbotax.png
+    
+    - name: Lloyds Bank
+      url: http://www.lloydsbank.com/
+      twitter: AskLloydsBank
+      tfa: No
+      img: lloydsbank.png

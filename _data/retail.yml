@@ -11,6 +11,12 @@ websites:
       sms: Yes
       tfa: Yes
       doc: http://www.etsy.com/help/article/3335
+      
+    - name: Walmart
+      url: http://www.walmart.com/
+      twitter: walmartlabs
+      img: walmart.png
+      tfa: No
 
     - name: Zappos
       url: http://www.zappos.com/
@@ -24,6 +30,7 @@ websites:
       img: ebay.png
       tfa: Yes
       sms: Yes
+      verisign: Yes
       doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
 
     - name: Newegg
@@ -41,3 +48,9 @@ websites:
       custom:
         - icon: apple
           url: https://www.apple.com/ios/
+
+    - name: Walgreens
+      url: http://www.walgreens.com
+      img: walgreens.png
+      tfa: No
+      twitter: walgreens

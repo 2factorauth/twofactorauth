@@ -6,11 +6,10 @@ websites:
       sms: No
       authy: No
       goog: No
+      doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
       custom:
         - icon: shield
           url: "https://rublon.com/"
-        - icon: play
-          url: "http://www.youtube.com/watch?v=5OLcvjVhhuI"
 
     - name: Delighted
       img: delighted.png
@@ -21,14 +20,50 @@ websites:
       authy: No
       doc: https://delightedapp.com/
 
-    - name: Netflix
-      img: netflix.png
-      url: http://www.netflix.com/
-      tfa: No
-      twitter: netflix
+    - name: LastPass
+      url: https://lastpass.com/
+      img: lastpass.png
+      tfa: Yes
+      sms: No
+      authy: No
+      goog: Yes
+      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
+      custom:
+        - icon: key
+          url: https://helpdesk.lastpass.com/security-options/yubikey-authentication/
+        - icon: key
+          url: https://helpdesk.lastpass.com/security-options/grid-multifactor-authentication/
+        - icon: key
+          url: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/toopher-authentication/
+        - icon: key
+          url: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/duo-security/
+        - icon: key
+          url: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/transakt-authentication/
 
-    - name: Hulu
-      img: hulu.png
-      url: http://www.hulu.com
-      tfa: No
-      twitter: hulu
+    - name: Status.io
+      url: https://status.io/
+      img: statusio.png
+      tfa: Yes
+      sms: No
+      authy: No
+      goog: No
+      doc: http://blog.status.io/2014/03/01/yubikey/
+      custom:
+        - icon: key
+          url: "http://blog.status.io/2014/03/01/yubikey/"
+
+    - name: Okta
+      img: okta.png
+      url: https://okta.com/
+      twitter: okta
+      tfa: Yes
+      sms: Yes
+      goog: Yes
+      authy: Yes
+      verisign: Yes
+      doc: http://www.okta.com/what-we-do/multifactor-authentication.html
+      custom:
+        - icon: apple
+          url: "https://itunes.apple.com/us/app/okta-verify/id490179405?mt=8"
+        - icon: android
+          url: "https://play.google.com/store/apps/details?id=com.okta.android.auth"

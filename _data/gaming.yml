@@ -32,11 +32,12 @@ websites:
           - icon: mail
 
     - name: EVE Online
+      twitter: EveOnline
       img: eve_online.png
       url: http://www.eveonline.com/
       tfa: no
 
-    - name: Star Wars The Old Republic
+    - name: "Star Wars: The Old Republic"
       img: swtor.png
       url: http://www.swtor.com/
       tfa: Yes
@@ -90,3 +91,18 @@ websites:
       twitter: UplayUbisoft
       img: uplay.png
       tfa: No
+
+    - name: Final Fantasy XIV
+      url: http://www.finalfantasyxiv.com
+      twitter: FF_XIV_EN
+      img: FFXIV.png
+      tfa: Yes
+      sms: Yes
+      doc: http://www.square-enix.com/na/account/otp/
+      custom:
+          - icon: android
+            url: https://play.google.com/store/apps/details?id=com.square_enix_software_token
+          - icon: apple
+            url: https://itunes.apple.com/us/app/square-enix-software-token/id617970570
+          - icon: key
+            url : http://account.square-enix.com/manual/en/about.html
