@@ -65,6 +65,15 @@ websites:
       goog: Yes
       doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
 
+    - name: Launchpad
+      img: launchpad.png
+      url: https://launchpad.net
+      tfa: Yes
+      goog: Yes
+      authy: No
+      sms: No
+      doc: https://launchpad.net/~sso-2f-testers
+
     - name: Linode
       url: https://www.linode.com/
       img: linode.png
