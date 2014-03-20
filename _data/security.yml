@@ -26,6 +26,18 @@ websites:
       custom:
           - icon: mail
 
+    - name: LastPass
+      img: lastpass.png
+      url: https://lastpass.com
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: No
+      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
+      custom:
+          - icon: key
+            url: https://blockchain.info/wallet/yubikey
+
     - name: RapidSSL
       img: rapidssl.png
       url: http://www.rapidssl.com/
