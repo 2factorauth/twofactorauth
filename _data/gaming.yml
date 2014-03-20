@@ -42,8 +42,14 @@ websites:
       url: http://www.swtor.com/
       tfa: Yes
       twitter: SWTOR
+      doc: http://www.swtor.com/info/security-key
       custom:
-          - icon: mail
+          - icon: android
+            url: https://play.google.com/store/apps/details?id=com.ea.SWTORSK_na
+          - icon: apple
+            url: https://itunes.apple.com/us/app/star-wars-the-old-republic/id488420452?mt=8
+          - icon: key
+            url: https://www.origin.com/en-us/store/sku/232460100-ANW.html
 
     - name: RuneScape
       img: runescape.png
