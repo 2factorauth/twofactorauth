@@ -30,3 +30,19 @@ websites:
       authy: Yes
       sms: Yes
       doc: https://support.google.com/accounts/answer/180744?hl=en
+
+    - name: Skrill
+      url: https://skrill.com/
+      twitter: skrill
+      img: skrill.png
+      tfa: Yes
+      doc: https://help.skrill.com/pkb_sc_article_FAQ?id=kA0D0000000Ci3x&l=en_GB
+      custom:
+        - icon: key
+          url: https://help.skrill.com/pkb_sc_article_FAQ?id=kA0D0000000Ci3x&l=en_GB
+
+    - name: Payoneer
+      url: http://www.payoneer.com/
+      twitter: Payoneer
+      img: payoneer.png
+      tfa: No
