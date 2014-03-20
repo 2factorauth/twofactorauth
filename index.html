@@ -94,9 +94,10 @@ hash: SupportTwoFactorAuth
                             {% capture lowercase_name %}{{ lowercase_names[item] | strip | strip_newlines }}{% endcapture %}
                             {% for website in section_file.websites %}
                                 {% assign current_name = website.name | downcase %}
+                                {% assign current_id = current_name | replace: '+','_' | replace: ' ','_'| replace: '.','_'| replace: '-','_'| replace: '!','_'| replace: '?','_'| replace: '&','_'| replace: '+','_'       %}
                                 {% if lowercase_name == current_name %}
                                     
-                                    <tr class="website" id="{{section.id}}_website{{forloop.index}}">
+                                    <tr class="website" id="{{section.id}}_{{current_id}}">
                                         {% if website.tfa %}
                                             <td class="main positive">
                                             {% if website.img %}
