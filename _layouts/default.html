@@ -37,7 +37,8 @@
             </a>
 
             <div class="ui dropdown item">
-                Menu <i class="dropdown icon"></i>
+                <i class="dropdown icon"></i>
+                Categories
                 <div class="menu">
                     {% for section in site.data.main.sections %}
                     <a href="{% if forloop.first %}#{% else %}#{{ section.id }}{% endif %}" class="item">
@@ -47,6 +48,16 @@
                     {% endfor %}
                 </div>
             </div>
+
+            <a href="#" class="item">
+                <i class="flag icon"></i>
+                International
+            </a>
+
+            <a href="#" class="item">
+                <i class="checked checkbox icon"></i>
+                Checklist
+            </a>
         </div>
     </div>
 
