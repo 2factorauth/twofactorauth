@@ -65,6 +65,15 @@ websites:
       goog: Yes
       doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
 
+    - name: Launchpad
+      img: launchpad.png
+      url: https://launchpad.net
+      tfa: Yes
+      goog: Yes
+      authy: No
+      sms: No
+      doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
+
     - name: Linode
       url: https://www.linode.com/
       img: linode.png
