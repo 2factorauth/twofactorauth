@@ -36,11 +36,15 @@ websites:
       twitter: HealthCareGov
       tfa: No
 
-    - name: HealthVault
+    - name: HealthVault (w/Microsoft Account)
       img: healthvault.png
       url: https://www.healthvault.com
       twitter: HealthVault
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      goog: Yes
+      authy: No
+      doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
 
     - name: myfitnesspal
       img: myfitnesspal.png
