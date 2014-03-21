@@ -41,14 +41,14 @@ hash: SupportTwoFactorAuth
                     </thead>
                     <tbody>
                         {% assign section_file = site.data[section.id] %}
-                        
-{% capture website_names %}
-{% for website in section_file.websites %}
-{{ website.name | downcase }}
-{% unless forloop.last %},{% endunless %}
-{% endfor %}
-{% endcapture %}
-                        
+
+                        {% capture website_names %}
+                            {% for website in section_file.websites %}
+                                {{ website.name | downcase }}
+                                {% unless forloop.last %},{% endunless %}
+                            {% endfor %}
+                        {% endcapture %}
+
                         {% assign lowercase_names = website_names | split:',' | sort %}
 
                         {% for item in (0..lowercase_names.size) %}
@@ -56,7 +56,7 @@ hash: SupportTwoFactorAuth
                             {% for website in section_file.websites %}
                                 {% assign current_name = website.name | downcase %}
                                 {% if lowercase_name == current_name %}
-                                    
+
                                     <tr>
                                         {% if website.tfa %}
                                             <td class="main positive">
