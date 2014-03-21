@@ -41,13 +41,20 @@ hash: SupportTwoFactorAuth
                     </thead>
                     <tbody>
                         {% assign section_file = site.data[section.id] %}
+{% comment %}
+    Keep this capture block unindented.
+{% endcomment %}
 
-                        {% capture website_names %}
-                            {% for website in section_file.websites %}
-                                {{ website.name | downcase }}
-                                {% unless forloop.last %},{% endunless %}
-                            {% endfor %}
-                        {% endcapture %}
+{% capture website_names %}
+{% for website in section_file.websites %}
+{{ website.name | downcase }}
+{% unless forloop.last %},{% endunless %}
+{% endfor %}
+{% endcapture %}
+
+{% comment %}
+    Keep this capture block unindented.
+{% endcomment %}
 
                         {% assign lowercase_names = website_names | split:',' | sort %}
 
