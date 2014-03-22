@@ -41,6 +41,7 @@ hash: SupportTwoFactorAuth
                     </thead>
                     <tbody>
                         {% assign section_file = site.data[section.id] %}
+
 {% comment %}
     Keep this capture block unindented.
 {% endcomment %}
@@ -157,8 +158,13 @@ hash: SupportTwoFactorAuth
                                                 <td class="twitter main negative" colspan="6">
                                                 {% if website.status %}
                                                     <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
+                                                </div>
                                                 {% else %}
                                                     <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link}}</a>
+
+                                                    <a class="ui mini green button" href="/tweets/{{site.data.slugs[website.name]}}/">
+                                                        View Tweets
+                                                    </a>
                                                 </td>
                                                 {% endif %}
                                             {% else %}
