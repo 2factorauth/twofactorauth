@@ -8,13 +8,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ site.url }}/{{ site.img }}">
     <meta property="og:url" content="{{ site.url }}">
     <meta property="og:description" content="{{ page.description }}">
 
-    <title>{{ site.title }}</title>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 
     <link rel="stylesheet" href="/lib/semantic/css/semantic.no-resp.css" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" />
