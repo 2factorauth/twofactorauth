@@ -60,6 +60,15 @@ websites:
       - icon: shield
         url: "https://rublon.com/"
 
+  - name: Google Drive
+    url: https://drive.google.com
+    img: drive.png
+    tfa: Yes
+    goog: Yes
+    authy: Yes
+    sms: Yes
+    doc: https://support.google.com/accounts/answer/180744?hl=en
+
   - name: OneDrive
     img: onedrive.png
     url: https://www.onedrive.com
@@ -81,11 +90,8 @@ websites:
     tfa: No
     twitter: SugarSync
 
-  - name: Google Drive
-    url: https://drive.google.com
-    img: drive.png
-    tfa: Yes
-    goog: Yes
-    authy: Yes
-    sms: Yes
-    doc: https://support.google.com/accounts/answer/180744?hl=en
+  - name: Tresorit
+    img: tresorit.png
+    url: https://tresorit.com/
+    tfa: No
+    twitter: Tresorit
