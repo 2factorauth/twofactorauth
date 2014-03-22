@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="main container">
+    <div class="ui grid">
+        <div class="column">
+            <div class="ui items">
+            {% for tweet in tweets %}
+                <div class="item">
+                    <div class="image">
+                        <img src="{{tweet.img}}">
+                    </div>
+                    <div class="content">
+                        <div class="meta">{{tweet.date}}</div>
+                        <div class="name">{{tweet.name}}</div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
