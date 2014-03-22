@@ -13,7 +13,8 @@ PAGES = 'tweets/'
 TRASH = '_trash/'
 DATA = '_data/'
 TEMPLATE = 'templates/'
-COMPANY = 'company.template'
+TWEETS_TEMPLATE_FILE = 'tweets.template'
+SLUGS_FILE = 'slugs.yml'
 
 # Basic dirs
 PWD = os.path.dirname(os.path.abspath(__file__))
@@ -21,15 +22,16 @@ BASE = os.path.abspath(os.path.join(PWD, '..'))
 
 # Bot dirs
 TEMPLATE_DIR = os.path.join(PWD, TEMPLATE)
-COMPANY_TEMPLATE = os.path.join(TEMPLATE_DIR, COMPANY)
+TWEETS_TEMPLATE = os.path.join(TEMPLATE_DIR, TWEETS_TEMPLATE_FILE)
 
 # Create base dirs
 PAGES_DIR = os.path.join(BASE, PAGES)
 TRASH_DIR = os.path.join(BASE, TRASH)
 DATA_DIR = os.path.join(BASE, DATA)
 
-# All the sites we've encountered so far
+# Various state objects
 SITES = []
+SLUGS = {}
 
 
 def iterate_sections(data):
@@ -42,7 +44,6 @@ def iterate_sections(data):
 
     for section in data.get('sections', []):
         parse_section(section)
-        break
 
 
 def parse_section(section):
@@ -50,7 +51,7 @@ def parse_section(section):
     Iterates over all the websites in the section and creates its own page for
     Jekyll if it doesn't have 2FA support.
 
-    It uses the templates/company.template file for simplicity.
+    It uses the templates/tweets.template file for simplicity.
 
     """
 
@@ -72,20 +73,23 @@ def create_new_section(slug, info):
     if info.get('tfa', True) is True:
         return
 
-    with open(COMPANY_TEMPLATE) as template_file:
+    with open(TWEETS_TEMPLATE) as template_file:
         template_str = template_file.read()
         template = Template(template_str)
 
         template_output = template.safe_substitute(info)
 
-        company_page = os.path.join(PAGES_DIR, '{}.md'.format(slug))
+        tweets_page = os.path.join(PAGES_DIR, '{}.md'.format(slug))
 
-        print '\t', company_page
-        with open(company_page, 'w') as company_file:
-            company_file.write(template_output)
+        print '\tNo TFA, creating Tweets page.'
+        with open(tweets_page, 'w') as tweets_file:
+            tweets_file.write(template_output)
 
         # Add the new page to the SITES
         SITES.append(slug)
+
+        # Add to tweets.yml
+        SLUGS[info['name']] = slug
 
 
 def touch_dirs():
@@ -112,6 +116,13 @@ def cleanup_unused(path):
         new_name = os.path.join(TRASH_DIR, filename)
         os.rename(old_name, new_name)
 
+
+def output_tweet_data():
+    slugs_path = os.path.join(DATA_DIR, SLUGS_FILE)
+
+    with open(slugs_path, 'w') as slugs:
+        slugs.write(yaml.dump(SLUGS, default_flow_style=False))
+
 if __name__ == '__main__':
     main_path = os.path.join(DATA_DIR, 'main.yml')
     main_file = file(main_path)
@@ -121,3 +132,4 @@ if __name__ == '__main__':
     touch_dirs()
     iterate_sections(main_data)
     cleanup_unused(PAGES_DIR)
+    output_tweet_data()
