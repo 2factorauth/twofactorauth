@@ -58,6 +58,12 @@ websites:
       twitter: heroku
       tfa: No
 
+    - name: HP Cloud
+      url: https://www.hpcloud.com/
+      img: hp.png
+      twitter: hpcloud
+      tfa: No
+
     - name: MaxCDN
       url: https://www.maxcdn.com
       img: maxcdn.png
@@ -107,12 +113,6 @@ websites:
       tfa: No
       status: https://twitter.com/Rackspace/status/446469139947732992
 
-    - name: HP Cloud
-      url: https://www.hpcloud.com/
-      img: hp.png
-      twitter: hpcloud
-      tfa: No
-
     - name: Scalr
       url: http://www.scalr.com
       img: scalr.png
@@ -131,6 +131,18 @@ websites:
       authy: No
       verisign: Yes
       doc: http://knowledgelayer.softlayer.com/procedure/configure-portal-account-one-time-password-access-manage
+
+    - name: Status.io
+      url: https://status.io/
+      img: statusio.png
+      tfa: Yes
+      sms: No
+      authy: No
+      goog: No
+      doc: http://blog.status.io/2014/03/01/yubikey/
+      custom:
+        - icon: key
+          url: "http://blog.status.io/2014/03/01/yubikey/"
 
     - name: Twilio
       url: https://www.twilio.com/
