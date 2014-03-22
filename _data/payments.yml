@@ -5,23 +5,6 @@ websites:
       img: amazon.png
       tfa: No
 
-    - name: PayPal
-      img: paypal.png
-      url: https://www.paypal.com/
-      tfa: Yes
-      sms: Yes
-      verisign: Yes
-      doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
-
-    - name: Stripe
-      img: stripe.png
-      url: https://www.stripe.com/
-      tfa: Yes
-      goog: Yes
-      authy: Yes
-      sms: No
-      doc: https://stripe.com/blog/two-step-verification
-
     - name: Google Wallet
       url: http://www.google.se/wallet/
       img: googlewallet.png
@@ -30,6 +13,20 @@ websites:
       authy: Yes
       sms: Yes
       doc: https://support.google.com/accounts/answer/180744?hl=en
+
+    - name: Payoneer
+      url: http://www.payoneer.com/
+      twitter: Payoneer
+      img: payoneer.png
+      tfa: No
+
+    - name: PayPal
+      img: paypal.png
+      url: https://www.paypal.com/
+      tfa: Yes
+      sms: Yes
+      verisign: Yes
+      doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
 
     - name: Skrill
       url: https://skrill.com/
@@ -41,8 +38,17 @@ websites:
         - icon: key
           url: https://help.skrill.com/pkb_sc_article_FAQ?id=kA0D0000000Ci3x&l=en_GB
 
-    - name: Payoneer
-      url: http://www.payoneer.com/
-      twitter: Payoneer
-      img: payoneer.png
+    - name: Stripe
+      img: stripe.png
+      url: https://www.stripe.com/
+      tfa: Yes
+      goog: Yes
+      authy: Yes
+      sms: No
+      doc: https://stripe.com/blog/two-step-verification
+
+    - name: Square
+      img: squareup.png
+      twitter: square
       tfa: No
+      url: https://squareup.com
