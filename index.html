@@ -2,9 +2,9 @@
 layout: default
 
 link: Tell them to support 2FA
-tweet: Security is important, @TWITTERHANDLE. We'd like it if you supported two factor auth.
+tweet: Security is important, @TWITTERHANDLE. We'd like if you supported two factor auth.
 
-link_progress: Thank them for working on 2FA
+link_progress: Tell them thanks for working on 2FA
 tweet_progress: Thanks for working on support for two factor auth, @TWITTERHANDLE!
 hash: SupportTwoFactorAuth
 ---
@@ -61,30 +61,30 @@ hash: SupportTwoFactorAuth
                             <th class="eleven wide"><h2>{{ section.title }}</h2></th>
                             <th>Docs</th>
                             <th>SMS</th>
-                            <th>Google Auth</th>
-                            <th>Authy</th>
-                            <th>VeriSign VIP</th>
-                            <th class="three wide">Custom</th>
+                            <th>Phone Call</th>
+                            <th>Email</th>
+                            <th>Hardware Token</th>
+                            <th>Software Implementation</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% assign section_file = site.data[section.id] %}
-                        
-{% capture website_names %}
-{% for website in section_file.websites %}
-{{ website.name | downcase }}
-{% unless forloop.last %},{% endunless %}
-{% endfor %}
-{% endcapture %}
-                        
+
+                        {% capture website_names %}
+                            {% for website in section_file.websites %}
+                                {{ website.name | downcase }}
+                                {% unless forloop.last %},{% endunless %}
+                            {% endfor %}
+                        {% endcapture %}
+
                         {% assign lowercase_names = website_names | split:',' | sort %}
 
                         {% for item in (0..lowercase_names.size) %}
                             {% capture lowercase_name %}{{ lowercase_names[item] | strip | strip_newlines }}{% endcapture %}
                             {% for website in section_file.websites %}
                                 {% assign current_name = website.name | downcase %}
-                                {% if lowercase_name == current_name %}
-                                    
+                                {% if lowercase_name contains current_name %}
+
                                     <tr>
                                         {% if website.tfa %}
                                             <td class="main positive">
@@ -114,7 +114,7 @@ hash: SupportTwoFactorAuth
                                                 </td>
                                             {% endif %}
 
-                                            {% if website.goog %}
+                                            {% if website.phone %}
                                                 <td class="positive icon">
                                                     <i class="checkmark large icon"></i>
                                                 </td>
@@ -124,7 +124,7 @@ hash: SupportTwoFactorAuth
                                                 </td>
                                             {% endif %}
 
-                                            {% if website.authy %}
+                                            {% if website.email %}
                                                 <td class="positive icon">
                                                     <i class="checkmark large icon"></i>
                                                 </td>
@@ -134,7 +134,7 @@ hash: SupportTwoFactorAuth
                                                 </td>
                                             {% endif %}
 
-                                            {% if website.verisign %}
+                                            {% if website.hardware %}
                                                 <td class="positive icon">
                                                     <i class="checkmark large icon"></i>
                                                 </td>
@@ -144,19 +144,13 @@ hash: SupportTwoFactorAuth
                                                 </td>
                                             {% endif %}
 
-                                            {% if website.custom %}
+                                            {% if website.software %}
                                                 <td class="positive icon">
-                                                {% for item in website.custom %}
-                                                    {% if item.url %}
-                                                        <a href="{{ item.url }}"><i class="{{ item.icon }} link small icon"></i></a>
-                                                    {% else %}
-                                                        <i class="{{ item.icon }} small icon"></i>
-                                                    {% endif %}
-                                                {% endfor %}
+                                                    <i class="checkmark large icon"></i>
                                                 </td>
                                             {% else %}
-                                                <td class="disabled icon">
-                                                    <i class="minus large icon"></i>
+                                                <td class="negative icon">
+                                                    <i class="remove large icon"></i>
                                                 </td>
                                             {% endif %}
                                         </tr>

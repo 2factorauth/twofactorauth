@@ -4,20 +4,15 @@ websites:
       url: https://bips.me/
       tfa: Yes
       sms: No
-      goog: Yes
-      authy: No
+      email: Yes
       doc: https://bips.me/security
-      custom:
-          - icon: key
-            url: https://bips.me/security
 
     - name: Bitstamp
       img: bitstamp.png
       url: https://bitstamp.net
       tfa: Yes
       sms: No
-      goog: Yes
-      authy: Yes
+      software: Yes
       doc: https://www.bitstamp.net/s/documents/bitstamp_2_factor_authentication_guide.pdf
 
     - name: Blockchain
@@ -25,19 +20,15 @@ websites:
       url: https://blockchain.info/
       tfa: Yes
       sms: Yes
-      goog: Yes
+      software: Yes
       doc: https://blockchain.info/wallet/support-pages
-      custom:
-          - icon: key
-            url: https://blockchain.info/wallet/yubikey
 
     - name: Coinbase
       url: https://coinbase.com/
       img: coinbase.png
       tfa: Yes
       sms: Yes
-      goog: Yes
-      authy: Yes
+      software: Yes
       doc: http://blog.coinbase.com/post/25677574019/coinbase-now-offers-two-factor-authentication
 
     - name: Cryptsy
@@ -45,8 +36,7 @@ websites:
       img: cryptsy.png
       tfa: Yes
       sms: No
-      goog: Yes
-      authy: Yes
+      software: Yes
       doc: https://www.cryptsy.com/pages/security
 
     - name: LocalBitcoins
@@ -54,8 +44,7 @@ websites:
       img: localbitcoins.png
       tfa: Yes
       sms: No
-      goog: Yes
-      authy: No
+      software: Yes
       doc: http://localbitcoins.blogspot.fi/2013/05/using-two-factor-authentication-on.html
 
     - name: Justcoin Exchange
@@ -63,8 +52,7 @@ websites:
       img: justcoinexchange.png
       tfa: Yes
       sms: No
-      goog: Yes
-      authy: No
+      software: Yes
       doc: https://twitter.com/jstcoin/status/445900548743897088
 
     - name: WeMineLTC.com
@@ -72,17 +60,5 @@ websites:
       img: wemineltc.png
       tfa: Yes
       sms: No
-      goog: Yes
-      authy: No
+      software: Yes
       doc: https://twitter.com/jstcoin/status/445900548743897088
-
-    - name: Kraken
-      url: https://www.kraken.com/
-      img: kraken.png
-      twitter: krakenfx
-      doc: https://www.kraken.com/security/practices#two-factor-authentication
-      tfa: yes
-      goog: yes
-      custom:
-          - icon: key
-            url: https://www.kraken.com/security/practices#two-factor-authentication

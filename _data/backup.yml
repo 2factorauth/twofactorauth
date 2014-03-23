@@ -5,12 +5,6 @@ websites:
     twitter: backblaze
     tfa: No
 
-  - name: Bitcasa
-    url: http://www.bitcasa.com/
-    img: bitcasa.png
-    twitter: Bitcasa
-    tfa: No
-
   - name: Box
     url: https://app.box.com/
     img: box.png
@@ -23,7 +17,7 @@ websites:
     img: copy.png
     tfa: No
     twitter: copyapp
-    
+
   - name: CrashPlan
     url: http://www.crashplan.com
     img: crashplan.png
@@ -35,8 +29,7 @@ websites:
     url: https://www.dropbox.com
     tfa: Yes
     sms: Yes
-    goog: Yes
-    authy: Yes
+    software: Yes
     doc: https://www.dropbox.com/help/363/en
 
   - name: Evernote
@@ -44,45 +37,29 @@ websites:
     url: https://evernote.com
     tfa: Yes
     sms: Yes
-    goog: Yes
-    authy: Yes
+    software: Yes
     doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
 
   - name: Frostbox
     url: http://frostbox.com
     img: frostbox.png
     tfa: Yes
-    sms: No
-    authy: No
-    goog: No
-    doc: https://app.frostbox.com/main.php?action=2fa
-    custom:
-      - icon: shield
-        url: "https://rublon.com/"
-
-  - name: Google Drive
-    url: https://drive.google.com
-    img: drive.png
-    tfa: Yes
-    goog: Yes
-    authy: Yes
-    sms: Yes
-    doc: https://support.google.com/accounts/answer/180744?hl=en
+    software: Yes
 
   - name: OneDrive
     img: onedrive.png
     url: https://www.onedrive.com
     tfa: Yes
-    goog: Yes
-    authy: Yes
+    software: Yes
     sms: Yes
     doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
 
   - name: SpiderOak
     img: spideroak.png
     url: https://spideroak.com
-    tfa: No
-    twitter: spideroak
+    tfa: Yes
+    sms: Yes
+    doc: https://spideroak.com/blog/20110620235134-2-factor-authentication-to-your-spideroak-account
 
   - name: SugarSync
     img: sugarsync.png
@@ -90,8 +67,10 @@ websites:
     tfa: No
     twitter: SugarSync
 
-  - name: Tresorit
-    img: tresorit.png
-    url: https://tresorit.com/
-    tfa: No
-    twitter: Tresorit
+  - name: Google Drive
+    url: https://drive.google.com
+    img: drive.png
+    tfa: Yes
+    sms: Yes
+    software: Yes
+    doc: https://support.google.com/accounts/answer/180744?hl=en

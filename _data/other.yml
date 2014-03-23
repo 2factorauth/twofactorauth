@@ -4,71 +4,12 @@ websites:
       img: automater.png
       tfa: Yes
       sms: No
-      authy: No
-      goog: No
+      software: Yes
       doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
-      custom:
-        - icon: shield
-          url: "https://rublon.com/"
-
-    - name: Basecamp
-      img: basecamp.png
-      url: https://basecamp.com/
-      twitter: 37signals
-      tfa: Yes
-      sms: Yes
-      goog: No
-      authy: No
-      verisign: No
-      doc: https://basecamp.com/help/guides/you/phone-verification
 
     - name: Delighted
       img: delighted.png
       url: https://delightedapp.com/
       tfa: Yes
       sms: Yes
-      goog: No
-      authy: No
       doc: https://delightedapp.com/
-
-    - name: LastPass
-      url: https://lastpass.com/
-      img: lastpass.png
-      tfa: Yes
-      sms: No
-      authy: No
-      goog: Yes
-      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
-      custom:
-        - icon: key
-          url: https://helpdesk.lastpass.com/security-options/yubikey-authentication/
-        - icon: key
-          url: https://helpdesk.lastpass.com/security-options/grid-multifactor-authentication/
-        - icon: key
-          url: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/toopher-authentication/
-        - icon: key
-          url: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/duo-security/
-        - icon: key
-          url: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/transakt-authentication/
-
-    - name: Okta
-      img: okta.png
-      url: https://okta.com/
-      twitter: okta
-      tfa: Yes
-      sms: Yes
-      goog: Yes
-      authy: Yes
-      verisign: Yes
-      doc: http://www.okta.com/what-we-do/multifactor-authentication.html
-      custom:
-        - icon: apple
-          url: "https://itunes.apple.com/us/app/okta-verify/id490179405?mt=8"
-        - icon: android
-          url: "https://play.google.com/store/apps/details?id=com.okta.android.auth"
-
-    - name: Wunderlist
-      img: wunderlist.png
-      tfa: No
-      url: https://www.wunderlist.com
-      twitter: Wunderlist

@@ -1,23 +1,18 @@
 websites:
-    - name: Airbrake
-      url: https://airbrake.io
-      img: airbrake.png
-      twitter: airbrake
-      tfa: No
-
     - name: Amazon Web Services
       img: aws.png
       url: https://aws.amazon.com
       tfa: Yes
-      goog: Yes
-      authy: Yes
+      software: Yes
       sms: Yes
       doc: http://aws.amazon.com/iam/details/mfa/
-      custom:
-          - icon: android
-            url: http://www.amazon.com/gp/product/B0061MU68M
-          - icon: windows
-            url: http://www.windowsphone.com/en-us/store/app/authenticator/021dd79f-0598-e011-986b-78e7d1fa76f8
+
+    - name: MaxCDN
+      url: https://www.maxcdn.com
+      img: maxcdn.png
+      tfa: Yes
+      software: Yes
+      doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
 
     - name: Bitbucket
       url: https://bitbucket.org
@@ -30,27 +25,16 @@ websites:
       url: https://www.digitalocean.com/
       img: digitalocean.png
       tfa: Yes
-      goog: Yes
-      authy: Yes
+      software: Yes
       doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
 
     - name: GitHub
       img: github.png
       url: https://github.com
       tfa: Yes
-      goog: Yes
-      authy: Yes
+      software: Yes
       sms: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
-
-    - name: Google Cloud Platform
-      url: https://cloud.google.com
-      img: googlecloud.png
-      tfa: Yes
-      goog: Yes
-      authy: Yes
-      sms: Yes
-      doc: https://support.google.com/accounts/answer/180744?hl=en
 
     - name: Heroku
       url: https://www.heroku.com/
@@ -58,36 +42,12 @@ websites:
       twitter: heroku
       tfa: No
 
-    - name: HP Cloud
-      url: https://www.hpcloud.com/
-      img: hp.png
-      twitter: hpcloud
-      tfa: No
-
-    - name: MaxCDN
-      url: https://www.maxcdn.com
-      img: maxcdn.png
-      tfa: Yes
-      goog: Yes
-      doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
-
-    - name: Launchpad
-      img: launchpad.png
-      url: https://launchpad.net
-      tfa: Yes
-      goog: Yes
-      authy: No
-      sms: No
-      doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
-
     - name: Linode
       url: https://www.linode.com/
       img: linode.png
       twitter: linode
       tfa: Yes
-      goog: Yes
-      sms: No
-      authy: Yes
+      software: Yes
       doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
 
     - name: NearlyFreeSpeech.NET
@@ -95,90 +55,35 @@ websites:
       img: nfsn.png
       twitter: nfsn
       tfa: Yes
-      goog: Yes
+      software: Yes
       sms: Yes
-      authy: No
       doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-se
-
-    - name: New Relic
-      url: https://newrelic.com
-      img: newrelic.png
-      twitter: newrelic
-      tfa: No
-
-    - name: PythonAnywhere
-      url: https://www.pythonanywhere.com
-      img: pythonanywhere.png
-      twitter: pythonanywhere
-      tfa: No
 
     - name: Rackspace
       url: https://www.rackspace.com/
       img: rackspace.png
       twitter: rackspace
       tfa: No
-      status: https://twitter.com/Rackspace/status/446469139947732992
-
-    - name: RamNode
-      url: http://www.ramnode.com
-      img: ramnode.png
-      tfa: Yes
-      goog: Yes
-      authy: No
-      sms: No
 
     - name: Scalr
       url: http://www.scalr.com
       img: scalr.png
       tfa: Yes
-      goog: Yes
+      software: Yes
       sms: No
-      authy: No
+      phone: No
       doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
 
-    - name: Softlayer
-      url: https://www.softlayer.com
-      img: softlayer.png
+    - name: Google Cloud Platform
+      url: https://cloud.google.com
+      img: google-cloud.png
       tfa: Yes
-      goog: No
-      sms: No
-      authy: No
-      verisign: Yes
-      doc: http://knowledgelayer.softlayer.com/procedure/configure-portal-account-one-time-password-access-manage
-
-    - name: Status.io
-      url: https://status.io/
-      img: statusio.png
-      tfa: Yes
-      sms: No
-      authy: No
-      goog: No
-      doc: http://blog.status.io/2014/03/01/yubikey/
-      custom:
-        - icon: key
-          url: "http://blog.status.io/2014/03/01/yubikey/"
-
-    - name: Twilio
-      url: https://www.twilio.com/
-      img: twilio.png
-      tfa: Yes
-      goog: No
-      authy: No
+      software: Yes
       sms: Yes
-      doc: https://www.twilio.com/help/faq/twilio-basics/what-happens-when-i-enable-two-factor-authentication
+      doc: https://support.google.com/accounts/answer/180744?hl=en
 
-    - name: Windows Azure
-      url: https://www.windowsazure.com/
-      img: windowsazure.png
-      tfa: Yes
-      goog: Yes
-      authy: Yes
-      sms: Yes
-      doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
-
-    - name: Infobip
-      url: http://www.infobip.com/
-      img: infobip.png
-      tfa: Yes
-      sms: Yes
-      doc: http://www.infobip.com/messaging/enterprise/2_factor_authentication/
+    - name: Airbrake
+      url: https://airbrake.io
+      img: airbrake.png
+      twitter: airbrake
+      tfa: No
