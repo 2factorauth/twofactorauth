@@ -95,6 +95,15 @@ websites:
       img: fidelity.png
       tfa: No
 
+    - name: HSBC
+      url: https://www.hsbc.com
+      img: hsbc.png
+      tfa: Yes
+      doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
+      custom:
+        - icon: key
+          url: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
+
     - name: Mint
       url: https://www.mint.com
       twitter: mint
