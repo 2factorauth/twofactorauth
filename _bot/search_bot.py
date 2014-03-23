@@ -25,7 +25,7 @@ SLEEP_TIME = 60 * 5
 WAIT_TIME = 3
 
 # Tweets to grab
-TWEETS_COUNT = 1
+TWEETS_COUNT = 2
 
 # Search string
 Q = '#SupportTwoFactorAuth'
@@ -59,11 +59,9 @@ def base_options():
 class TFABot(object):
     def __init__(self, client):
         self.client = client
-        self.tweets = []
-        self.options = base_options()
-        self.next_id = START_TWEET
+        self.since_id = START_TWEET
 
-        self.load_existing()
+        self.tweets = self.load_existing()
 
     def load_existing(self):
         tweets_path = os.path.join(DATA_DIR, TWEETS_FILE)
@@ -72,12 +70,10 @@ class TFABot(object):
         if os.path.exists(tweets_path):
             with open(tweets_path) as tweets_file:
                 data = yaml.load(tweets_file)
-                existing.append(data.get('tweets', []))
+                existing = data.get('tweets', [])
 
-        #sorted_tweets = sorted(existing, key=lambda k: k['id_str'])
-        sorted_tweets = self.tweets
-
-        self.tweets.append(sorted_tweets)
+        sorted_tweets = sorted(existing, key=lambda k: k['id'])
+        return sorted_tweets
 
     def sleeping(self):
         return False
@@ -91,19 +87,20 @@ class TFABot(object):
     def search(self):
         print 'Searching...'
 
-        print 'Since id:', self.next_id
-        self.options['max_id'] = self.next_id
-        data = self.client.search(**self.options)
+        options = base_options()
+
+        options['since_id'] = self.since_id
+        data = self.client.search(**options)
 
         meta = data['search_metadata']
         print meta
         statuses = data['statuses']
 
-        self.tweets.append(statuses)
+        self.tweets.extend(statuses)
 
         # Assign for next time..
-        self.next_id = meta['max_id']
-        print 'Next id:', self.next_id
+        self.since_id = meta['max_id_str']
+        print 'MAx id:', self.since_id
 
     def wait(self):
         time.sleep(WAIT_TIME)
@@ -114,16 +111,43 @@ class TFABot(object):
         print 'Cleaning up...'
         sys.exit(0)
 
+    def simplify_tweet(self, tweet):
+        result = {}
+
+        result['id'] = tweet['id']
+        result['created'] = tweet['user']['created_at']
+        result['name'] = tweet['user']['name']
+        result['user'] = tweet['user']['screen_name']
+        result['image'] = tweet['user']['profile_image_url']
+        result['text'] = tweet['text']
+
+        result['sites'] = []
+        for user in tweet['entities']['user_mentions']:
+            result['sites'].append(user['screen_name'])
+
+        return result
+
     def write_tweets(self):
         tweets_path = os.path.join(DATA_DIR, TWEETS_FILE)
+        raw_tweets_path = os.path.join(DATA_DIR, RAW_TWEETS_FILE)
 
-        #sorted_tweets = sorted(self.tweets, key=lambda k: k['id_str'])
-        sorted_tweets = self.tweets
+        sorted_tweets = sorted(self.tweets, key=lambda k: k['id'])
 
-        with open(tweets_path, 'w') as tweets_file:
+        # Write raw first
+        with open(raw_tweets_path, 'w') as tweets_file:
             data = {}
             data['tweets'] = sorted_tweets
             data['count'] = len(sorted_tweets)
+
+            tweets_file.write(yaml.safe_dump(data, default_flow_style=False))
+
+        simple_tweets = map(lambda d: self.simplify_tweet(d), sorted_tweets)
+
+        # Write simplified next
+        with open(tweets_path, 'w') as tweets_file:
+            data = {}
+            data['tweets'] = simple_tweets
+            data['count'] = len(simple_tweets)
 
             tweets_file.write(yaml.safe_dump(data, default_flow_style=False))
 
