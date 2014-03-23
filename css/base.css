@@ -76,6 +76,17 @@ td img.icon {
     height: 16px;
 }
 
+.ui.grid > .column.tweets {
+    text-align: center;
+}
+
+.tweets .ui.circular.label.tweet {
+    margin: 4px;
+    padding: 10px !important;
+    max-height: none;
+    min-height: 0px;
+}
+
 .ui.table tr.positive td,
 .ui.table td.positive {
     background-color: #dff0d8 !important;

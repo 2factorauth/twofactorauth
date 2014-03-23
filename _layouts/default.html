@@ -31,7 +31,7 @@
                 </a>
             </div>
 
-            <a href="#" class="item">
+            <a href="/" class="item">
                 <i class="home icon"></i>
                 Home
             </a>
@@ -41,7 +41,7 @@
                 Categories
                 <div class="menu">
                     {% for section in site.data.main.sections %}
-                    <a href="{% if forloop.first %}#{% else %}#{{ section.id }}{% endif %}" class="item">
+                    <a href="{% if forloop.first %}/#{% else %}#{{ section.id }}{% endif %}" class="item">
                         <i class="{{ section.icon }} icon"></i>
                         {{ section.title }}
                     </a>
@@ -89,5 +89,6 @@
 
     <!-- TFA JS -->
     <script src="/js/app.js"></script>
+    {% for script in page.scripts %}{{ script }}{% endfor %}
 </body>
 </html>
