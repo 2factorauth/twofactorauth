@@ -239,3 +239,13 @@ websites:
       tfa: No
       img: rbc.png
       
+    - name: HSBC
+      url: http://www.hsbc.ca
+      twitter: HSBC_Press
+      tfa: Yes
+      img: hsbc.png
+      doc: https://www.hsbc.ca/1/2/personal/banking/ways-to-bank/security-device
+      custom:
+        - icon: key
+          url: https://www.hsbc.ca/1/2/personal/banking/ways-to-bank/security-device
+      
