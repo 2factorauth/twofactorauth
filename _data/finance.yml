@@ -175,6 +175,12 @@ websites:
       img: citibank.png
       tfa: no
 
+    - name: CitiBusiness Payroll
+      url: http://citibusinesspayroll.com/onlinepayroll/citibank/
+      img: citibank.png
+      sms: Yes
+      tfa: Yes
+
     - name: US Bank
       url: https://www.usbank.com/
       twitter: usbank
@@ -220,7 +226,7 @@ websites:
       twitter: turbotax
       tfa: No
       img: turbotax.png
-    
+
     - name: Lloyds Bank
       url: http://www.lloydsbank.com/
       twitter: AskLloydsBank
@@ -232,10 +238,9 @@ websites:
       twitter: cibc
       tfa: No
       img: cibc.png
-      
+
     - name: RBC Royal Bank
       url: http://www.rbcroyalbank.com
       twitter: RBC_Canada
       tfa: No
       img: rbc.png
-      
