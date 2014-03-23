@@ -196,7 +196,7 @@ class TFABot(object):
 
         result['sites'] = []
         for user in tweet['entities']['user_mentions']:
-            result['sites'].append(user['screen_name'])
+            result['sites'].append(user['screen_name'].lower())
 
         return result
 
