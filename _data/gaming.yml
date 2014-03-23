@@ -4,16 +4,9 @@ websites:
       url: http://blizzard.com
       tfa: Yes
       sms: Yes
+      hardware: Yes
+      software: Yes
       doc: http://us.battle.net/en/security/
-      custom:
-          - icon: android
-            url: https://market.android.com/details?id=com.blizzard.bma
-          - icon: apple
-            url: https://itunes.apple.com/app/battle.net-mobile-authenticator/id306862897
-          - icon: windows
-            url: http://www.windowsphone.com/en-us/store/app/battle-net-authenticator/1347bbfb-bca2-e011-986b-78e7d1fa76f8?type=phoneapp&id=1347bbfb-bca2-e011-986b-78e7d1fa76f8
-          - icon: mobile
-            url: http://appworld.blackberry.com/webstore/content/13011/?countrycode=US&lang=en
 
     - name: GOG.com
       url: http://www.gog.com
@@ -25,18 +18,14 @@ websites:
       img: guild_wars_2.png
       url: https://www.guildwars2.com
       tfa: Yes
-      goog: Yes
-      authy: Yes
+      software: Yes
       doc: https://help.guildwars2.com/entries/27626157-Two-Factor-Authentication
-      custom:
-          - icon: mail
 
     - name: Humble Bundle
       img: humble.png
       url: https://www.humblebundle.com/
       tfa: Yes
-      goog: No
-      authy: Yes
+      software: Yes
       sms: Yes
       doc: http://support.humblebundle.com/customer/portal/articles/1412106
 
@@ -51,17 +40,15 @@ websites:
       twitter: OriginInsider
       img: origin.png
       tfa: Yes
+      email: Yes
       doc: http://help.ea.com/en/article/origin-login-verification-information/
-      custom:
-          - icon: mail
 
     - name: Steam
       img: steam.png
       url: http://store.steampowered.com/
       tfa: Yes
+      email: Yes
       doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
-      custom:
-          - icon: mail
 
     - name: Uplay
       url: http://uplay.ubi.com/

@@ -24,6 +24,7 @@ websites:
       img: ebay.png
       tfa: Yes
       sms: Yes
+      hardware: Yes
       doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
 
     - name: Newegg
@@ -37,7 +38,5 @@ websites:
       img: apple.png
       tfa: Yes
       sms: Yes
+      software: Yes
       doc: http://support.apple.com/kb/ht5570
-      custom:
-        - icon: apple
-          url: https://www.apple.com/ios/

@@ -61,10 +61,10 @@ hash: SupportTwoFactorAuth
                             <th class="eleven wide"><h2>{{ section.title }}</h2></th>
                             <th>Docs</th>
                             <th>SMS</th>
-                            <th>Google Auth</th>
-                            <th>Authy</th>
-                            <th>VeriSign VIP</th>
-                            <th class="two wide">Custom</th>
+                            <th>Phone Call</th>
+                            <th>Email</th>
+                            <th>Hardware Token</th>
+                            <th>Software Implementation</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -114,7 +114,7 @@ hash: SupportTwoFactorAuth
                                                 </td>
                                             {% endif %}
 
-                                            {% if website.goog %}
+                                            {% if website.phone %}
                                                 <td class="positive icon">
                                                     <i class="checkmark large icon"></i>
                                                 </td>
@@ -124,7 +124,7 @@ hash: SupportTwoFactorAuth
                                                 </td>
                                             {% endif %}
 
-                                            {% if website.authy %}
+                                            {% if website.email %}
                                                 <td class="positive icon">
                                                     <i class="checkmark large icon"></i>
                                                 </td>
@@ -134,7 +134,7 @@ hash: SupportTwoFactorAuth
                                                 </td>
                                             {% endif %}
 
-                                            {% if website.verisign %}
+                                            {% if website.hardware %}
                                                 <td class="positive icon">
                                                     <i class="checkmark large icon"></i>
                                                 </td>
@@ -144,19 +144,13 @@ hash: SupportTwoFactorAuth
                                                 </td>
                                             {% endif %}
 
-                                            {% if website.custom %}
+                                            {% if website.software %}
                                                 <td class="positive icon">
-                                                {% for item in website.custom %}
-                                                    {% if item.url %}
-                                                        <a href="{{ item.url }}"><i class="{{ item.icon }} link small icon"></i></a>
-                                                    {% else %}
-                                                        <i class="{{ item.icon }} small icon"></i>
-                                                    {% endif %}
-                                                {% endfor %}
+                                                    <i class="checkmark large icon"></i>
                                                 </td>
                                             {% else %}
-                                                <td class="disabled icon">
-                                                    <i class="minus large icon"></i>
+                                                <td class="negative icon">
+                                                    <i class="remove large icon"></i>
                                                 </td>
                                             {% endif %}
                                         </tr>

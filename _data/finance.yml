@@ -16,10 +16,9 @@ websites:
       img: bankofamerica.png
       tfa: Yes
       sms: Yes
+      hardware: Yes
+      software: Yes
       doc: https://www.bankofamerica.com/privacy/online-mobile-banking-privacy/safepass.go
-      custom:
-        - icon: key
-          url: https://www.bankofamerica.com/privacy/faq/safepass-faq.go
 
     - name: CapitalOne 360
       url: https://home.capitalone360.com/
@@ -31,10 +30,8 @@ websites:
       img: charlesschwab.png
       url: https://www.schwab.com/
       tfa: Yes
+      hardware: Yes
       doc: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/protect_your_account
-      custom:
-        - icon: key
-          url: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/protect_your_account
 
     - name: Chase
       url: https://www.chase.com/
@@ -42,26 +39,22 @@ websites:
       img: chase.png
       tfa: Yes
       sms: Yes
+      phone: Yes
 
     - name: E*Trade
       img: etrade.png
       url: https://www.etrade.com/
       twitter: etrade
       tfa: Yes
-      sms: No
-      goog: No
-      authy: No
+      hardware: Yes
       doc: https://us.etrade.com/e/t/estation/pricing?id=1220801000
-      custom:
-        - icon: key
-          url: https://us.etrade.com/e/t/estation/pricing?id=1220801000
 
     - name: Fidelity Investments
       url: https://www.fidelity.com
       twitter: fidelity
       img: fidelity.png
       tfa: No
-      
+
     - name: Mint
       url: https://www.mint.com
       twitter: mint
@@ -73,9 +66,7 @@ websites:
       url: http://www.seb.se/pow/default.asp
       tfa: Yes
       doc: http://www.seb.se/pow/wcp/index.asp?ss=/pow/wcp/templates/sebcollection.cfmc.asp%3FDUID%3DDUID_623697DCF55C4576C1256DEF00637BE3
-      custom:
-        - icon: key
-          url: http://www.seb.se/pow/wcp/index.asp?ss=/pow/wcp/templates/sebcollection.cfmc.asp%3FDUID%3DDUID_623697DCF55C4576C1256DEF00637BE3
+      hardware: Yes
 
     - name: Simple
       url: https://www.simple.com/
@@ -107,27 +98,23 @@ websites:
       url: https://www.optionshouse.com
       doc: http://www.optionshouse.com/faq/authenticator/
       tfa: Yes
-      custom:
-          - icon: android
-            url: https://play.google.com/store/apps/details?id=com.peak6.oh.authenticator
-          - icon: apple
-            url: https://itunes.apple.com/us/app/optionshouse-authenticator/id604114246?mt=8
+      software: Yes
 
     - name: Discover
       url: https://www.discover.com/
       twitter: Discover
       img: discover.png
-      tfa: yes
-      sms: yes
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
       doc: https://www.discover.com/credit-cards/help-center/faqs/enhancing-account-security.html
-      custom:
-        - icon: mail
 
     - name: Citibank
       url: https://online.citibank.com/US/Welcome.c
       twitter: Citibank
       img: citibank.png
-      tfa: no
+      tfa: No
 
     - name: US Bank
       url: https://www.usbank.com/

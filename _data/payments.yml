@@ -10,22 +10,20 @@ websites:
       url: https://www.paypal.com/
       tfa: Yes
       sms: Yes
+      hardware: Yes
       doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
 
     - name: Stripe
       img: stripe.png
       url: https://www.stripe.com/
       tfa: Yes
-      goog: Yes
-      authy: Yes
-      sms: No
+      software: Yes
       doc: https://stripe.com/blog/two-step-verification
 
     - name: Google Wallet
       url: http://www.google.se/wallet/
       img: google-wallet.png
       tfa: Yes
-      goog: Yes
-      authy: Yes
+      software: Yes
       sms: Yes
       doc: https://support.google.com/accounts/answer/180744?hl=en

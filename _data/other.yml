@@ -4,19 +4,12 @@ websites:
       img: automater.png
       tfa: Yes
       sms: No
-      authy: No
-      goog: No
-      custom:
-        - icon: shield
-          url: "https://rublon.com/"
-        - icon: play
-          url: "http://www.youtube.com/watch?v=5OLcvjVhhuI"
+      software: Yes
+      doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
 
     - name: Delighted
       img: delighted.png
       url: https://delightedapp.com/
       tfa: Yes
       sms: Yes
-      goog: No
-      authy: No
       doc: https://delightedapp.com/
