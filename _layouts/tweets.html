@@ -1,0 +1,29 @@
+---
+layout: default
+scripts:
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+---
+
+<div class="main">
+    <div class="ui grid">
+        <div class="column tweets">
+            <div class="banner ui icon header">
+                <i class="circular mobile icon"></i>
+                <h2>Hey {{ page.name }}, all of us think that Two Factor Auth is important.</h2>
+                <h3>Does this help you visualize it?</h3>
+
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{site.url}}{{page.url}}" data-text="Hey @{{page.twitter}}, do you see how many of your users think two factor auth is important?" data-size="large" data-hashtags="SupportTwoFactorAuth">Tweet</a>
+            </div>
+
+        {% assign tweets = site.data.tweets.tweets %}
+        {% assign lower_twitter = page.twitter | downcase %}
+        {% for tweet in tweets %}
+            {% if tweet.sites contains lower_twitter %}
+            <a class="tweet ui circular label {% cycle 'black', 'green', 'red', 'blue', 'purple', 'teal' %}" href="https://twitter.com/2fa/status/{{tweet.id}}">
+                {{tweet.name}}
+            </a>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+</div>

@@ -8,13 +8,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ site.url }}/{{ site.img }}">
     <meta property="og:url" content="{{ site.url }}">
     <meta property="og:description" content="{{ page.description }}">
 
-    <title>{{ site.title }}</title>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 
     <link rel="stylesheet" href="/lib/semantic/css/semantic.no-resp.css" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" />
@@ -22,6 +22,45 @@
 </head>
 
 <body>
+    <div class="ui fixed transparent inverted teal main menu">
+        <div class="menu">
+            <div class="right menu">
+                <a href="{{ site.repo }}" class="item">
+                    <i class="github icon"></i>
+                    Contribute
+                </a>
+            </div>
+
+            <a href="/" class="item">
+                <i class="home icon"></i>
+                Home
+            </a>
+
+            <div class="ui dropdown item">
+                <i class="dropdown icon"></i>
+                Categories
+                <div class="menu">
+                    {% for section in site.data.main.sections %}
+                    <a href="{% if forloop.first %}/#{% else %}#{{ section.id }}{% endif %}" class="item">
+                        <i class="{{ section.icon }} icon"></i>
+                        {{ section.title }}
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <a href="#" class="item">
+                <i class="flag icon"></i>
+                International
+            </a>
+
+            <a href="#" class="item">
+                <i class="checked checkbox icon"></i>
+                Checklist
+            </a>
+        </div>
+    </div>
+
     {{ content }}
 
     <div class="ui divider"></div>
@@ -50,5 +89,6 @@
 
     <!-- TFA JS -->
     <script src="/js/app.js"></script>
+    {% for script in page.scripts %}{{ script }}{% endfor %}
 </body>
 </html>
