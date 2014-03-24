@@ -60,11 +60,7 @@ hash: SupportTwoFactorAuth
                         <tr>
                             <th class="eleven wide"><h2>{{ section.title }}</h2></th>
                             <th>Docs</th>
-                            <th>SMS</th>
-                            <th>Phone Call</th>
-                            <th>Email</th>
-                            <th>Hardware Token</th>
-                            <th>Software Implementation</th>
+                            <th>Implementation</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -104,55 +100,27 @@ hash: SupportTwoFactorAuth
                                                 <td class="positive icon"></td>
                                             {% endif %}
 
+                                            <td class="positive icon">
                                             {% if website.sms %}
-                                                <td class="positive icon">
-                                                    <i class="checkmark large icon"></i>
-                                                </td>
-                                            {% else %}
-                                                <td class="negative icon">
-                                                    <i class="remove large icon"></i>
-                                                </td>
+                                                <i class="mobile large icon"></i>
                                             {% endif %}
 
                                             {% if website.phone %}
-                                                <td class="positive icon">
-                                                    <i class="checkmark large icon"></i>
-                                                </td>
-                                            {% else %}
-                                                <td class="negative icon">
-                                                    <i class="remove large icon"></i>
-                                                </td>
+                                                <i class="phone large icon"></i>
                                             {% endif %}
 
                                             {% if website.email %}
-                                                <td class="positive icon">
-                                                    <i class="checkmark large icon"></i>
-                                                </td>
-                                            {% else %}
-                                                <td class="negative icon">
-                                                    <i class="remove large icon"></i>
-                                                </td>
+                                                <i class="mail large icon"></i>
                                             {% endif %}
 
                                             {% if website.hardware %}
-                                                <td class="positive icon">
-                                                    <i class="checkmark large icon"></i>
-                                                </td>
-                                            {% else %}
-                                                <td class="negative icon">
-                                                    <i class="remove large icon"></i>
-                                                </td>
+                                                <i class="lock large icon"></i>
                                             {% endif %}
 
                                             {% if website.software %}
-                                                <td class="positive icon">
-                                                    <i class="checkmark large icon"></i>
-                                                </td>
-                                            {% else %}
-                                                <td class="negative icon">
-                                                    <i class="remove large icon"></i>
-                                                </td>
+                                                <i class="shield large icon"></i>
                                             {% endif %}
+                                            </td>
                                         </tr>
                                         {% else %}
                                             <td class="main negative">
