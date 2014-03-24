@@ -82,6 +82,19 @@ websites:
       img: mint.png
       tfa: No
 
+    - name: Patelco Credit Union
+      url: https://www.patelco.org/
+      twitter: PatelcoPays
+      img: patelco.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.patelco.org/Privacy-Security/Protection
+      custom:
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=com.mshift.android.patelco
+        - icon: apple
+          url: https://itunes.apple.com/us/app/patelco/id409450452?mt=8
+
     - name: SEB
       img: seb.png
       url: http://www.seb.se/pow/default.asp
