@@ -161,10 +161,6 @@ hash: SupportTwoFactorAuth
                                                 </div>
                                                 {% else %}
                                                     <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link}}</a>
-
-                                                    <a class="ui mini green button" href="/tweets/{{site.data.slugs[website.name]}}/">
-                                                        View Tweets
-                                                    </a>
                                                 </td>
                                                 {% endif %}
                                             {% else %}

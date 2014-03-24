@@ -9,10 +9,10 @@ scripts:
         <div class="column tweets">
             <div class="banner ui icon header">
                 <i class="circular mobile icon"></i>
-                <h2>Hey {{ page.name | capitalize }}, all of us think that Two Factor Auth is important.</h2>
+                <h2>Hey {{ page.name }}, all of us think that Two Factor Auth is important.</h2>
                 <h3>Does this help you visualize it?</h3>
 
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{site.url}}{{page.url}}" data-text="Hey @{{page.twitter}}, does this help you visualize it?" data-size="large" data-hashtags="SupportTwoFactorAuth">Tweet</a>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{site.url}}{{page.url}}" data-text="Hey @{{page.twitter}}, do you see how many of your users think two factor auth is important?" data-size="large" data-hashtags="SupportTwoFactorAuth">Tweet</a>
             </div>
 
         {% assign tweets = site.data.tweets.tweets %}
