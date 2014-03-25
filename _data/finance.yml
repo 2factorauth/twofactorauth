@@ -253,22 +253,30 @@ websites:
     - name: Société Générale
       url: https://particuliers.societegenerale.fr/
       tfa: Yes
-      img: sg.png
+      img: societegenerale.ico
       doc: https://particuliers.societegenerale.fr/votre_site/configuration_securite/paiements_securises.html
       custom:
+        - icon: iphone
+          url: https://itunes.apple.com/fr/app/lappli-societe-generale/id376991016?mt=8
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=mobi.societegenerale.mobile.lappli&hl=en
         - icon: virtualkeyboard
           url: https://particuliers.societegenerale.fr/votre_site/configuration_securite/nos_mesures_de_securite.html
-        - icon: trusteer
-	  url: https://particuliers.societegenerale.fr/votre_site/configuration_securite/les_bonnes_pratiques/promo_trusteer.html
+#        - icon: trusteer
+#	  url: https://particuliers.societegenerale.fr/votre_site/configuration_securite/les_bonnes_pratiques/promo_trusteer.html
 
     - name: BNP Paribas
       url: https://www.secure.bnpparibas.net
       tfa: Yes
-      img: bnpp.png
+      img: bnpparibas.ico
       doc: https://www.secure.bnpparibas.net/banque/portail/particulier/Fiche?type=folder&identifiant=Virements_en_ligne_20131014121544
       custom:
         - icon: virtualkeyboard
           url: https://www.secure.bnpparibas.net/banque/portail/particulier/HomeConnexion?type=homeconnex&typeIdent=accessible&typeFlashAccessible=2
+        - icon: iphone
+          url: https://itunes.apple.com/en/app/mes-comptes-bnp-paribas/id377884617?mt=8
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=net.bnpparibas.mescomptes
 
     - name: National Bank Canada (NBC or BNC)
       url: http://www.nbc.ca/
@@ -276,19 +284,29 @@ websites:
       img: bnc.png
       tfa: No
       doc: http://www.nbc.ca/bnc/cda/productfamily/0,2664,divId-2_langId-1_navCode-17250,00.html
+      custom:
+        - icon: iphone
+          url: https://itunes.apple.com/ca/app/banque-nationale-solutions/id476651878?l=fr&mt=8
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=ca.bnc.android
 
     - name: Desjardins
       url: http://www.desjardins.com/
-      img: desjardins.png
+      img: desjardins.jpg
       tfa: No
       doc: http://www.desjardins.com/securite/pratiques-securite/
+      custom:
+        - icon: iphone
+          url: https://itunes.apple.com/ca/app/desjardins-mobile-services/id386636953?mt=8
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=com.desjardins.mobile
 
     - name: Scotiabank
       url: http://www.scotiabank.com/
-      img: scotiabank.png
+      img: scotiabank.ico
       tfa: No
       doc: http://www.scotiabank.com/ca/en/0,,2976,00.html
       custom:
-        - icon: trusteer
-	  url: https://www2.scotiaonline.scotiabank.com/online/authentication/authentication.bns
+#        - icon: trusteer
+#	  url: https://www2.scotiaonline.scotiabank.com/online/authentication/authentication.bns
 
