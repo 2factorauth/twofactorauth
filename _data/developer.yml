@@ -169,3 +169,14 @@ websites:
       authy: Yes
       sms: Yes
       doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+
+    - name: LogMeIn
+      url: https://secure.logmein.com/
+      doc: http://help.logmein.com/SelfServiceKnowledgeRenderer?type=FAQ&id=kA0a0000000shEi 
+      img: logmein.png
+      tfa: Yes
+      goog: Yes
+      custom: 
+        - icon: key
+          url: "http://help.logmein.com/SelfServiceKnowledgeRenderer?type=FAQ&id=kA030000000DGACCA4"
+        - icon: mail
