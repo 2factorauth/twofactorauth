@@ -135,7 +135,19 @@ websites:
       sms: No
       authy: No
       doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
-
+      
+    - name: SingleHop
+      url: http://www.singlehop.com
+      img: singlehop-logo.png
+      twitter: @SingleHop
+      tfa: Yes
+      goog: No
+      authy: Yes
+      verisign: No
+      sms: No
+      doc: <url to the documentation>
+      custom:
+          
     - name: Softlayer
       url: https://www.softlayer.com
       img: softlayer.png
