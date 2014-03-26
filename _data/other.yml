@@ -72,3 +72,13 @@ websites:
       tfa: No
       url: https://www.wunderlist.com
       twitter: Wunderlist
+
+    - name: Cisco Meraki
+      img: meraki.png
+      url: https://meraki.cisco.com/
+      twitter: meraki
+      tfa: Yes
+      sms: Yes
+      goog: Yes
+      authy: Yes
+      doc: https://kb.meraki.com/knowledge_base/log-in-security-configuring-account-and-password-policies-for-dashboard-administrators
