@@ -239,6 +239,14 @@ websites:
       twitter: RBC_Canada
       tfa: No
       img: rbc.png
+    
+    - name: StateTrust
+      url: http://www.statetrust.com/
+      tfa: Yes
+      img: STTR.png
+      custom:
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=com.STDIGIPASS
       
     - name: HSBC
       url: https://www.hsbc.com
@@ -248,3 +256,12 @@ websites:
       custom:
         - icon: key
           url: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
+
+    - name: Société Générale - BRD
+      url: https://www.hsbc.com
+      tfa: Yes
+      img: socgen.png
+      doc: https://campanii.brd.ro/mybrdnet-iframe/en/security
+      custom:
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=com.AnymaDigipass
