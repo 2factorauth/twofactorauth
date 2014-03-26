@@ -34,10 +34,17 @@ hash: SupportTwoFactorAuth
                 {% endfor %}
             </div>
         </div>
+        <a href="#" class="item"></a>
+
     </div>
 </div>
 
 <div class="main container">
+    <div class="ui red vertical todo sidebar wide menu">
+        <div class="fixed transparent purple item">
+            <b>Todolist</b>
+        </div>
+    </div>
     <div class="ui grid">
         <div class="column">
 
@@ -51,9 +58,13 @@ hash: SupportTwoFactorAuth
                     Add your own favorite site by submitting a pull request on the
                     <a href="https://github.com/jdavis/twofactorauth">GitHub repo</a>.
                 </div>
+                <button id="toggleTodo" class="ui button center mainaction inactive">
+                    <span class="text-inactive">Secure yourself using 2FA now!</span>
+                    <span class="text-active">Stop creating your todolist.</span>
+                </button>
             </div>
-
-        {% for section in site.data.main.sections %}
+            <div id="sections">    
+            {% for section in site.data.main.sections %}
             <div id="{{ section.id }}" class="section">
                 <table class="ui table celled compact segment">
                     <thead>
@@ -61,7 +72,7 @@ hash: SupportTwoFactorAuth
                             <th class="eleven wide"><h2>{{ section.title }}</h2></th>
                             <th>Docs</th>
                             <th>SMS</th>
-                            <th>Google Auth</th>
+                            <th>Google&nbsp;Auth</th>
                             <th>Authy</th>
                             <th>VeriSign VIP</th>
                             <th class="three wide">Custom</th>
@@ -83,9 +94,10 @@ hash: SupportTwoFactorAuth
                             {% capture lowercase_name %}{{ lowercase_names[item] | strip | strip_newlines }}{% endcapture %}
                             {% for website in section_file.websites %}
                                 {% assign current_name = website.name | downcase %}
+                                {% assign current_id = current_name | replace: '+','_' | replace: ' ','_'| replace: '.','_'| replace: '-','_'| replace: '!','_'| replace: '?','_'| replace: '&','_'| replace: '+','_'       %}
                                 {% if lowercase_name == current_name %}
                                     
-                                    <tr>
+                                    <tr class="website" id="{{section.id}}_{{current_id}}">
                                         {% if website.tfa %}
                                             <td class="main positive">
                                             {% if website.img %}
@@ -201,8 +213,8 @@ hash: SupportTwoFactorAuth
                 <div class="ui divider"></div>
             {% endunless %}
             </div><!-- Section -->
-        {% endfor %}
-
+            {% endfor %}
+            </div><!-- Sections -->
         </div><!-- Column -->
     </div><!-- UI Grid -->
 </div><!-- Main Container -->

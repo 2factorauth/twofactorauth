@@ -65,7 +65,8 @@ td.twitter {
     text-align: center;
 }
 
-td img.icon {
+td img.icon,
+.task img.icon {
     float: left;
     border-radius: 500em!important;
     padding: 4px 4px!important;
@@ -76,15 +77,17 @@ td img.icon {
     background-color: white;
     height: 16px;
 }
-
+.task img.icon {
+    margin-top: -3px !important;
+}
+.ui.celled.table tr.positive:hover td,
+.ui.celled.table tr:hover td.positive,
+.ui.table tr.positive:hover td,
 .ui.table tr.positive td,
 .ui.table td.positive {
     background-color: #dff0d8 !important;
 }
 
-.ui.celled.table tr.positive:hover td,
-.ui.celled.table tr:hover td.positive,
-.ui.table tr.positive:hover td,
 .ui.table td:hover.positive,
 .ui.table th:hover.positive {
     background-color: #dff0d8 !important;
@@ -101,6 +104,70 @@ td img.icon {
 .ui.table td:hover.negative,
 .ui.table th:hover.negative {
     background-color: #f2dede !important;
+}
+
+
+#sections.active tr:hover td.positive,
+#sections.active tr:hover td.negative,
+#sections.active tr:hover td.disabled {
+    cursor:pointer !important;
+}
+#sections.active tr:hover td.positive {
+    background-color: #c5e5b8 !important;
+}
+#sections.active tr:hover td.negative {
+    background-color: #e5bcbc !important;
+}
+#sections.active tr:hover td.disabled {
+    background-color: #d6d6d6 !important;
+}
+
+.ui.center {
+    margin: 0 auto;
+    display: inline-block;
+}
+.ui.mainaction {
+    margin-top: 32px;
+}
+.ui.mainaction span {
+    color: #fff;
+}
+.ui.mainaction.inactive {
+    background-color: #00B5AD;
+    background-color: rgba(0, 181, 173, 0.82);
+}
+.ui.mainaction.inactive:hover {
+    background-color: #00B5AD;
+    background-color: rgba(0, 181, 173, 0.72);
+}
+.ui.mainaction.inactive .text-active {
+    display: none;
+}
+.ui.mainaction.active {
+    background-color: #D95C5C;
+    background-color: rgba(217, 92, 92, 0.82);
+}
+.ui.mainaction.active:hover {
+    background-color: #D95C5C;
+    background-color: rgba(217, 92, 92, 0.72);
+}
+.ui.mainaction.active .text-inactive {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+.completionToggler {
+    position: absolute;
+    right: 0;
+    top: 9px;
+}
+.completionToggler .remove {
+  margin-top: -2px;
+}
+.item.task.completed {
+  opacity: 0.5;
+  text-decoration:line-through;
 }
 
 @media only screen and (max-width: 1199px) {
