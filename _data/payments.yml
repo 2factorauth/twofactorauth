@@ -4,8 +4,6 @@ websites:
       twitter: AmazonPayments
       img: amazon.png
       tfa: No
-<<<<<<< HEAD
-=======
       
     - name: GoCardless
       img: gocardless.png
@@ -26,7 +24,6 @@ websites:
       twitter: Payoneer
       img: payoneer.png
       tfa: No
->>>>>>> 6fd790e... Updated GoCardless
 
     - name: PayPal
       img: paypal.png
@@ -48,6 +45,12 @@ websites:
       twitter: square
       tfa: No
       url: https://squareup.com
+
+    - name: Venmo
+      img: venmo.png
+      twitter: venmo
+      tfa: No
+      url: https://venmo.com
 
     - name: Fastspring
       img: fastspring.png
