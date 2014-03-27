@@ -1,4 +1,14 @@
 websites:
+
+    - name: Join.me (w/ LogMeIn account)
+      url: https://join.me/
+      doc: https://accounts.logme.in/authentication/getstarted.aspx
+      img: joinme.png
+      tfa: Yes
+      goog: Yes
+      custom:
+        - icon: mail
+
     - name: LogMeIn
       url: https://secure.logmein.com/
       doc: http://help.logmein.com/SelfServiceKnowledgeRenderer?type=FAQ&id=kA0a0000000shEi
