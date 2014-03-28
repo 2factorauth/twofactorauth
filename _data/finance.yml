@@ -248,3 +248,36 @@ websites:
       custom:
         - icon: key
           url: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
+      
+    - name: IST Shareholder service
+      url: https://www.istshareholderservices.com/client/mdp.php
+      img: istlogo.png
+      tfa: Yes
+      sms: No
+      doc: https://www.istshareholderservices.com/client/mdp.php
+      custom:
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=com.vasco.mydigipass‎
+        - icon: apple
+          url: https://itunes.apple.com/be/app/mydigipass.com-authenticator/id514349476
+        - icon: key
+          url: http://shop.vasco.com/digipass_go6_detail.aspx
+        - icon: shield
+          url: https://www.mydigipass.com/en/fp/signup/ipt
+
+      name: Bloomberg Current
+      url: http://www.bloombergcurrent.com
+      img: BloombergCurrent-white.png
+      tfa: Yes
+      sms: No
+      doc: http://www.bloombergcurrent.com
+      custom:
+        - icon: android
+          url: https://play.google.com/store/apps/details?id=com.vasco.mydigipass‎
+        - icon: apple
+          url: https://itunes.apple.com/be/app/mydigipass.com-authenticator/id514349476
+        - icon: key
+          url: http://shop.vasco.com/digipass_go6_detail.aspx
+        - icon: shield
+          url: https://www.mydigipass.com/en/fp/signup/ipt
+
