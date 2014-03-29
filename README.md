@@ -6,7 +6,7 @@ A list of popular sites and whether or not they accept two factor auth.
 ## The Goal
 
 The goal is to have a website with a comprehensive list of sites that support
-two factor auth as well as the methods that they support it.
+two factor auth, as well as the methods that they support it.
 
 This is to aid when deciding on alternative services based on the security they
 offer for their customers.
@@ -20,7 +20,7 @@ All the data is managed through a series of [Yaml][yaml] files so it may be usef
 up on the Yaml syntax.
 
 To add a new site, go to the [data files](_data/) and get familiar with
-how it is setup. There is a section and coresponding file for each Category and they all follow this
+how it is set up. There is a section and corresponding file for each Category and they all follow this
 syntax:
 
 ### Guidelines
@@ -54,7 +54,7 @@ Then create a new file in the `_data` directory named the same as your section's
 
 ### New Sites
 
-The values should be pretty straight forward for adding a new website. The
+The values should be pretty straightforward for adding a new website. The
 `websites` array should already be defined, just add a new website to it like
 this example:
 
@@ -79,6 +79,7 @@ this example:
 ```
 
 If a site does not have 2FA but there is documentation that they are adding it, then use
+
 ```yml
 tfa: no
 status: <url to documentation>
@@ -88,7 +89,7 @@ status: <url to documentation>
 `https://www.google.com/s2/favicons?domain=http://example.com`
 and you will get sites the icon as png.~~
 
-We are now looking for higher resolution images than offered by Google's favicon service.  
+We are now looking for higher resolution images than offered by Google's favicon service.
 
 ### Custom
 
