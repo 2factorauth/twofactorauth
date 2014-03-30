@@ -60,22 +60,17 @@ this example:
 
 ```yml
     websites:
-        - name: Site
-          url: https://site.com
+        - name: Site Name
+          url: https://www.site.com/
+          twitter: SiteTwitter
           img: site.png
-          twitter: twitter_handle   # To tweet at site, if tfa is No
           tfa: Yes
-          goog: Yes
-          authy: Yes
-          verisign: Yes
-          sms: Yes
-          doc: <url to the documentation>
-          custom:
-              - icon: android
-                url: <url to a custom Android client>
-              - icon: apple
-                url: <url to a custom iOS client>
-              # Any other custom clients...
+          sms: No
+          email: Yes
+          phone: Yes
+          software: Yes
+          hardware: Yes
+          doc: <link to site 2FA documentation>
 ```
 
 If a site does not have 2FA but there is documentation that they are adding it, then use
