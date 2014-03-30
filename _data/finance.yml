@@ -3,7 +3,9 @@ websites:
       url: http://www.ally.com/
       twitter: AllyBank
       img: allybank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: http://www.ally.com/messages/sms/index.html
 
     - name: American Express
       url: https://www.americanexpress.com/
@@ -20,10 +22,36 @@ websites:
       software: Yes
       doc: https://www.bankofamerica.com/privacy/online-mobile-banking-privacy/safepass.go
 
-    - name: CapitalOne 360
+    - name: Barclays
+      url: http://http://www.barclays.co.uk/
+      img: barclays.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: http://ask.barclays.co.uk/help/online_banking/whatis_pinsentry
+
+    - name: Boeing Employee Credit Union
+      url: https://www.becu.com/
+      twitter: BECU
+      img: becu.png
+      tfa: No
+
+    - name: Capital One
+      url: https://www.capitalone.com/
+      twitter: CapitalOne
+      img: capitalone.png
+      tfa: No
+
+    - name: Capital One 360
       url: https://home.capitalone360.com/
       twitter: CapitalOne360
       img: capitalone360.png
+      tfa: No
+
+    - name: BMO Harris Bank
+      url: https://www.bmoharris.com/
+      twitter: BMOHarrisBank
+      img: bmoharris.png
       tfa: No
 
     - name: Charles Schwab
@@ -47,7 +75,6 @@ websites:
       twitter: etrade
       tfa: Yes
       hardware: Yes
-      software: Yes
       doc: https://us.etrade.com/e/t/estation/pricing?id=1220801000
 
     - name: Fidelity Investments
@@ -66,8 +93,8 @@ websites:
       img: seb.png
       url: http://www.seb.se/pow/default.asp
       tfa: Yes
-      doc: http://www.seb.se/pow/wcp/index.asp?ss=/pow/wcp/templates/sebcollection.cfmc.asp%3FDUID%3DDUID_623697DCF55C4576C1256DEF00637BE3
       hardware: Yes
+      doc: http://www.seb.se/pow/wcp/index.asp?ss=/pow/wcp/templates/sebcollection.cfmc.asp%3FDUID%3DDUID_623697DCF55C4576C1256DEF00637BE3
 
     - name: Simple
       url: https://www.simple.com/
@@ -75,6 +102,14 @@ websites:
       status: https://twitter.com/simple/status/445966117543378944
       img: simple.png
       tfa: No
+
+    - name: TD Ameritrade
+      url: https://www.tdameritrade.com
+      img: tdbank.png
+      twitter: tdameritrade
+      tfa: yes
+      hardware: yes
+      doc: https://www.thinkorswim.com/tos/myAccounts/displayPage.tos?webpage=otp&displayFormat=hide
 
     - name: TD Bank
       url: https://www.tdbank.com
@@ -92,7 +127,9 @@ websites:
       url: https://www.wellsfargo.com/
       twitter: WellsFargo
       img: wellsfargo.png
-      tfa: No
+      tfa: yes
+      email: yes
+      doc: https://www.wellsfargo.com/privacy-security/advanced-access
 
     - name: OptionsHouse
       img: optionshouse.png
@@ -123,8 +160,60 @@ websites:
       img: usbank.png
       tfa: No
 
+    - name: SunTrust
+      url: https://www.suntrust.com/
+      twitter: SunTrust
+      img: suntrust.png
+      tfa: No
+
+    - name: Scottrade
+      url: https://www.scottrade.com/
+      twitter: scottrade
+      img: scottrade.png
+      tfa: No
+
     - name: PNC Bank
       url: https://www.pnc.com/
       twitter: pncnews
       img: pncbank.png
       tfa: No
+
+    - name: USAA
+      url: https://www.usaa.com/
+      twitter: USAA
+      tfa: yes
+      sms: yes
+      software: yes
+      doc: https://www.usaa.com/inet/pages/security_token_logon_options
+      img: usaa.png
+
+    - name: Intuit TurboTax
+      url: https://turbotax.intuit.com/
+      twitter: turbotax
+      tfa: No
+      img: turbotax.png
+
+    - name: Lloyds Bank
+      url: http://www.lloydsbank.com/
+      twitter: AskLloydsBank
+      tfa: No
+      img: lloydsbank.png
+
+    - name: CIBC
+      url: http://www.cibc.ca
+      twitter: cibc
+      tfa: No
+      img: cibc.png
+
+    - name: RBC Royal Bank
+      url: http://www.rbcroyalbank.com
+      twitter: RBC_Canada
+      tfa: No
+      img: rbc.png
+
+    - name: HSBC
+      url: https://www.hsbc.com
+      tfa: Yes
+      hardware: Yes
+      img: hsbc.png
+      doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key

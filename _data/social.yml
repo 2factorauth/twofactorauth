@@ -1,7 +1,7 @@
 websites:
     - name: App.net
       url: https://join.app.net
-      img: app.net.png
+      img: appnet.png
       tfa: Yes
       software: Yes
       doc: https://mml.desk.com/customer/portal/articles/1039728-how-do-i-set-up-two-factor-authentication-
@@ -43,6 +43,13 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://help.linkedin.com/app/answers/detail/a_id/544/ft/eng
+      
+    - name: Reddit
+      url: https://www.reddit.com/
+      twitter: reddit
+      img: reddit.png
+      tfa: No
+      status: https://twitter.com/hueypriest/status/446601146409689088
 
     - name: Twitter
       url: https://twitter.com
@@ -59,3 +66,12 @@ websites:
       software: Yes
       sms: Yes
       doc: http://en.support.wordpress.com/security/two-step-authentication/
+
+    - name: Tumblr
+      url: https://www.tumblr.com/
+      twitter: tumblr
+      img: tumblr.png
+      tfa: Yes
+      goog: Yes
+      sms: Yes
+      doc: https://www.tumblr.com/docs/en/two_factor_auth

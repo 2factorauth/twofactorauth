@@ -1,0 +1,39 @@
+websites:
+    - name: ThreatSim
+      url: http://login.threatsim.com
+      img: threatsim.png
+      tfa: Yes
+      sms: Yes
+      doc: http://threatsim.com/features/
+
+    - name: SSLTrust
+      url: http://ssltrust.com.au/
+      img: ssltrust.png
+      tfa: Yes
+      software: Yes
+      doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
+
+    - name: GeoTrust
+      img: geotrust.png
+      url: http://www.geotrust.com/
+      tfa: Yes
+      email: Yes
+      sms: No
+
+    - name: RapidSSL
+      img: rapidssl.png
+      url: http://www.rapidssl.com/
+      tfa: Yes
+      email: Yes
+
+    - name: DigiCert
+      img: digicert.png
+      url: http://www.digicert.com/
+      tfa: No
+      twitter: digicert
+
+    - name: CAcert
+      img: cacert.png
+      url: https://www.cacert.org/
+      tfa: No
+      twitter: CAcert_News 

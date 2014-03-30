@@ -18,7 +18,7 @@ websites:
       doc: https://www.drchrono.com/blog/two-factor-authentication-extra-security-for-your-health-records/
 
     - name: Drugs.com
-      img: drugs.com.png
+      img: drugscom.png
       url: http://www.drugs.com
       twitter: DrugsCom
       tfa: No
@@ -35,11 +35,14 @@ websites:
       twitter: HealthCareGov
       tfa: No
 
-    - name: HealthVault
+    - name: HealthVault (w/Microsoft Account)
       img: healthvault.png
       url: https://www.healthvault.com
       twitter: HealthVault
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
 
     - name: myfitnesspal
       img: myfitnesspal.png
@@ -52,3 +55,10 @@ websites:
       url: http://www.webmd.com
       twitter: WebMD
       tfa: No
+
+    - name: Withings
+      img: withings.png
+      url: http://www.withings.com
+      twitter: Withings
+      tfa: No
+

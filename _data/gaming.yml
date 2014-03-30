@@ -15,11 +15,35 @@ websites:
       tfa: No
 
     - name: Guild Wars 2
-      img: guild_wars_2.png
+      img: guildwars2.png
       url: https://www.guildwars2.com
       tfa: Yes
       software: Yes
+      email: Yes
       doc: https://help.guildwars2.com/entries/27626157-Two-Factor-Authentication
+
+    - name: EVE Online
+      twitter: EveOnline
+      img: eveonline.png
+      url: http://www.eveonline.com/
+      tfa: no
+
+    - name: "Star Wars: The Old Republic"
+      img: swtor.png
+      url: http://www.swtor.com/
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      twitter: SWTOR
+      doc: http://www.swtor.com/info/security-key
+
+    - name: RuneScape
+      img: runescape.png
+      url: http://www.runescape.com/
+      tfa: Yes
+      doc: http://services.runescape.com/m=rswiki/en/Jagex_Account_Guardian
+      twitter: RuneScape
+      email: Yes
 
     - name: Humble Bundle
       img: humble.png
@@ -31,7 +55,7 @@ websites:
 
     - name: League of Legends
       url: http://leagueoflegends.com
-      img: league_of_legends.png
+      img: leagueoflegends.png
       twitter: leagueoflegends
       tfa: No
 
@@ -55,3 +79,12 @@ websites:
       twitter: UplayUbisoft
       img: uplay.png
       tfa: No
+
+    - name: Final Fantasy XIV
+      url: http://www.finalfantasyxiv.com
+      twitter: FF_XIV_EN
+      img: FFXIV.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.square-enix.com/na/account/otp/

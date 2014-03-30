@@ -5,6 +5,12 @@ websites:
     twitter: backblaze
     tfa: No
 
+  - name: Bitcasa
+    url: http://www.bitcasa.com/
+    img: bitcasa.png
+    twitter: Bitcasa
+    tfa: No
+
   - name: Box
     url: https://app.box.com/
     img: box.png
@@ -45,6 +51,16 @@ websites:
     img: frostbox.png
     tfa: Yes
     software: Yes
+    sms: No
+    doc: https://app.frostbox.com/main.php?action=2fa
+
+  - name: Google Drive
+    url: https://drive.google.com
+    img: drive.png
+    tfa: Yes
+    software: Yes
+    sms: Yes
+    doc: https://support.google.com/accounts/answer/180744?hl=en
 
   - name: OneDrive
     img: onedrive.png
@@ -57,9 +73,8 @@ websites:
   - name: SpiderOak
     img: spideroak.png
     url: https://spideroak.com
-    tfa: Yes
-    sms: Yes
-    doc: https://spideroak.com/blog/20110620235134-2-factor-authentication-to-your-spideroak-account
+    tfa: No
+    twitter: spideroak
 
   - name: SugarSync
     img: sugarsync.png
@@ -74,3 +89,9 @@ websites:
     sms: Yes
     software: Yes
     doc: https://support.google.com/accounts/answer/180744?hl=en
+
+  - name: Tresorit
+    img: tresorit.png
+    url: https://tresorit.com/
+    tfa: No
+    twitter: Tresorit

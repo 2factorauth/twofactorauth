@@ -3,9 +3,16 @@ websites:
       url: http://automater.pl/en/
       img: automater.png
       tfa: Yes
-      sms: No
       software: Yes
       doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
+
+    - name: Basecamp
+      img: basecamp.png
+      url: https://basecamp.com/
+      twitter: 37signals
+      tfa: Yes
+      sms: Yes
+      doc: https://basecamp.com/help/guides/you/phone-verification
 
     - name: Delighted
       img: delighted.png
@@ -13,3 +20,37 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://delightedapp.com/
+
+    - name: LastPass
+      url: https://lastpass.com/
+      img: lastpass.png
+      tfa: Yes
+      sms: No
+      software: Yes
+      hardware: Yes
+      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
+
+    - name: Okta
+      img: okta.png
+      url: https://okta.com/
+      twitter: okta
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.okta.com/what-we-do/multifactor-authentication.html
+
+    - name: Wunderlist
+      img: wunderlist.png
+      tfa: No
+      url: https://www.wunderlist.com
+      twitter: Wunderlist
+
+    - name: Cisco Meraki
+      img: meraki.png
+      url: https://meraki.cisco.com/
+      twitter: meraki
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://kb.meraki.com/knowledge_base/log-in-security-configuring-account-and-password-policies-for-dashboard-administrators

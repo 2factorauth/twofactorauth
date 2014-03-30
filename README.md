@@ -67,6 +67,7 @@ this example:
           tfa: Yes
           goog: Yes
           authy: Yes
+          verisign: Yes
           sms: Yes
           doc: <url to the documentation>
           custom:
@@ -77,9 +78,17 @@ this example:
               # Any other custom clients...
 ```
 
-Note: A tip on getting icons, use Google's icon api. Just go to
+If a site does not have 2FA but there is documentation that they are adding it, then use
+```yml
+tfa: no
+status: <url to documentation>
+```
+
+~~Note: A tip on getting icons, use Google's icon api. Just go to
 `https://www.google.com/s2/favicons?domain=http://example.com`
-and you will get sites the icon as png.
+and you will get sites the icon as png.~~
+
+We are now looking for higher resolution images than offered by Google's favicon service.  
 
 ### Custom
 
