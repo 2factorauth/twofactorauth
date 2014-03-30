@@ -76,6 +76,7 @@ hash: SupportTwoFactorAuth
 {% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% endcapture %}
+{{ website_names }}
 
                         {% assign lowercase_names = website_names | split:',' | sort %}
 
