@@ -5,13 +5,41 @@ websites:
       img: amazon.png
       tfa: No
 
+    - name: Apple
+      url: https://appleid.apple.com
+      img: apple.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: http://support.apple.com/kb/ht5570
+
+    - name: eBay
+      url: http://ebay.com
+      img: ebay.png
+      tfa: Yes
+      sms: Yes
+      hardware: Yes
+      doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
+
     - name: Etsy
       url: http://www.etsy.com/
       img: etsy.png
       sms: Yes
       tfa: Yes
       doc: http://www.etsy.com/help/article/3335
-      
+
+    - name: Newegg
+      url: http://www.newegg.com
+      twitter: newegg
+      img: newegg.png
+      tfa: No
+
+    - name: Walgreens
+      url: http://www.walgreens.com
+      twitter: walgreens
+      img: walgreens.png
+      tfa: No
+
     - name: Walmart
       url: http://www.walmart.com/
       twitter: walmartlabs
@@ -23,34 +51,3 @@ websites:
       twitter: Zappos
       img: zappos.png
       tfa: No
-
-    - name: eBay
-      url: http://ebay.com
-      twitter: eBay
-      img: ebay.png
-      tfa: Yes
-      sms: Yes
-      verisign: Yes
-      doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
-
-    - name: Newegg
-      url: http://www.newegg.com
-      twitter: newegg
-      img: newegg.png
-      tfa: No
-
-    - name: Apple
-      url: https://appleid.apple.com
-      img: apple.png
-      tfa: Yes
-      sms: Yes
-      doc: http://support.apple.com/kb/ht5570
-      custom:
-        - icon: apple
-          url: https://www.apple.com/ios/
-
-    - name: Walgreens
-      url: http://www.walgreens.com
-      img: walgreens.png
-      tfa: No
-      twitter: walgreens
