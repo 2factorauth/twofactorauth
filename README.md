@@ -54,6 +54,8 @@ Then create a new file in the `_data` directory named the same as your section's
 
 ### New Sites
 
+First and foremost, make sure the new site meets our [definition requirements](#a-note-on-definitions) for Two Factor Auth.
+
 The values should be pretty straight forward for adding a new website. The
 `websites` array should already be defined, just add a new website to it like
 this example:
@@ -88,6 +90,14 @@ We are now looking for higher resolution images than offered by Google's favicon
 ### Custom
 
 The `custom` section is for an app or site that doesn't use SMS, Google Auth, or Authy. This app should have its own way of generating 2FA from within the app or a special 2FA service such as via `email`, `yubikey`, etc.
+
+### A Note on Definitions
+
+A lot of people have different ideas of what constitutes Two Factor Auth and what doesn't, so it stands to reason that we should clarify a bit. For the purposes of this site, Two Factor Auth is defined as any service provided as a redundant layer for account *authentication*. Services that provide *authorization* redundancy are certainly appreciated, but should not be considered Two Factor Auth.
+
+As an example, a site that prompts you for an authentication token following user login would be considered Two Factor Auth. A site that does not prompt you for a token upon login, but prompts you for a token when you try to perform a sensitive action would not be considered Two Factor Auth.
+
+For context, check out the discussion in [#242](https://github.com/jdavis/twofactorauth/issues/242).
 
 ## License
 
