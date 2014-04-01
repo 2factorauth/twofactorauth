@@ -1,31 +1,24 @@
 websites:
     - name: Airbrake
       url: https://airbrake.io
-      img: airbrake.png
       twitter: airbrake
+      img: airbrake.png
       tfa: No
 
     - name: Amazon Web Services
-      img: aws.png
       url: https://aws.amazon.com
+      img: aws.png
       tfa: Yes
-      software: Yes
       sms: Yes
-      doc: http://aws.amazon.com/iam/details/mfa/
-
-    - name: MaxCDN
-      url: https://www.maxcdn.com
-      img: maxcdn.png
-      tfa: Yes
       software: Yes
-      doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
+      doc: http://aws.amazon.com/iam/details/mfa/
 
     - name: Bitbucket
       url: https://bitbucket.org
       twitter: bitbucket
-      status: https://twitter.com/bitbucket/status/445631335169028096
       img: bitbucket.png
       tfa: No
+      status: https://twitter.com/bitbucket/status/445631335169028096
 
     - name: DigitalOcean
       url: https://www.digitalocean.com/
@@ -35,74 +28,85 @@ websites:
       doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
 
     - name: GitHub
-      img: github.png
       url: https://github.com
+      img: github.png
       tfa: Yes
-      software: Yes
       sms: Yes
+      software: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
     - name: Google Cloud Platform
       url: https://cloud.google.com
       img: googlecloud.png
       tfa: Yes
-      software: Yes
       sms: Yes
+      software: Yes
       doc: https://support.google.com/accounts/answer/180744?hl=en
 
     - name: Heroku
       url: https://www.heroku.com/
-      img: heroku.png
       twitter: heroku
+      img: heroku.png
       tfa: No
 
     - name: HP Cloud
       url: https://www.hpcloud.com/
-      img: hp.png
       twitter: hpcloud
+      img: hp.png
       tfa: No
 
+    - name: Infobip
+      url: http://www.infobip.com/
+      img: infobip.png
+      tfa: Yes
+      sms: Yes
+      doc: http://www.infobip.com/messaging/enterprise/2_factor_authentication/
+
     - name: Launchpad
-      img: launchpad.png
       url: https://launchpad.net
+      img: launchpad.png
       tfa: Yes
       software: Yes
-      sms: No
       doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
 
     - name: Linode
       url: https://www.linode.com/
       img: linode.png
-      twitter: linode
       tfa: Yes
       software: Yes
       doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
 
+    - name: MaxCDN
+      url: https://www.maxcdn.com
+      img: maxcdn.png
+      tfa: Yes
+      software: Yes
+      doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
+
     - name: NearlyFreeSpeech.NET
       url: https://www.nearlyfreespeech.net/
       img: nfsn.png
-      twitter: nfsn
       tfa: Yes
-      software: Yes
       sms: Yes
+      software: Yes
       doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-se
 
     - name: New Relic
       url: https://newrelic.com
-      img: newrelic.png
       twitter: newrelic
+      img: newrelic.png
       tfa: No
 
     - name: PythonAnywhere
       url: https://www.pythonanywhere.com
-      img: pythonanywhere.png
       twitter: pythonanywhere
+      img: pythonanywhere.png
       tfa: No
 
     - name: Rackspace
       url: https://www.rackspace.com/
-      img: rackspace.png
       twitter: rackspace
+      img: rackspace.png
       tfa: No
       status: https://twitter.com/Rackspace/status/446469139947732992
 
@@ -111,21 +115,18 @@ websites:
       img: ramnode.png
       tfa: Yes
       software: Yes
-      sms: No
 
     - name: Scalr
       url: http://www.scalr.com
       img: scalr.png
       tfa: Yes
       software: Yes
-      sms: No
       doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
 
     - name: Softlayer
       url: https://www.softlayer.com
       img: softlayer.png
       tfa: Yes
-      sms: No
       software: Yes
       doc: http://knowledgelayer.softlayer.com/procedure/configure-portal-account-one-time-password-access-manage
 
@@ -147,13 +148,6 @@ websites:
       url: https://www.windowsazure.com/
       img: windowsazure.png
       tfa: Yes
+      sms: Yes
       software: Yes
-      sms: Yes
       doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
-
-    - name: Infobip
-      url: http://www.infobip.com/
-      img: infobip.png
-      tfa: Yes
-      sms: Yes
-      doc: http://www.infobip.com/messaging/enterprise/2_factor_authentication/

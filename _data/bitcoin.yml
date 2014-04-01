@@ -1,23 +1,21 @@
 websites:
     - name: BIPS
-      img: bips.png
       url: https://bips.me/
+      img: bips.png
       tfa: Yes
-      sms: No
       software: Yes
       doc: https://bips.me/security
 
     - name: Bitstamp
-      img: bitstamp.png
       url: https://bitstamp.net
+      img: bitstamp.png
       tfa: Yes
-      sms: No
       software: Yes
       doc: https://www.bitstamp.net/s/documents/bitstamp_2_factor_authentication_guide.pdf
 
     - name: Blockchain
-      img: blockchain.png
       url: https://blockchain.info/
+      img: blockchain.png
       tfa: Yes
       sms: Yes
       software: Yes
@@ -36,38 +34,33 @@ websites:
       url: https://cryptsy.com/
       img: cryptsy.png
       tfa: Yes
-      sms: No
       software: Yes
       doc: https://www.cryptsy.com/pages/security
-
-    - name: LocalBitcoins
-      url: https://localbitcoins.com/
-      img: localbitcoins.png
-      tfa: Yes
-      sms: No
-      software: Yes
-      doc: http://localbitcoins.blogspot.fi/2013/05/using-two-factor-authentication-on.html
 
     - name: Justcoin Exchange
       url: https://justcoin.com/
       img: justcoinexchange.png
       tfa: Yes
-      sms: No
-      software: Yes
-      doc: https://twitter.com/jstcoin/status/445900548743897088
-
-    - name: WeMineLTC.com
-      url: https://www.wemineltc.com
-      img: wemineltc.png
-      tfa: Yes
-      sms: No
       software: Yes
       doc: https://twitter.com/jstcoin/status/445900548743897088
 
     - name: Kraken
       url: https://www.kraken.com/
       img: kraken.png
-      twitter: krakenfx
       doc: https://www.kraken.com/security/practices#two-factor-authentication
       tfa: yes
       software: yes
+
+    - name: LocalBitcoins
+      url: https://localbitcoins.com/
+      img: localbitcoins.png
+      tfa: Yes
+      software: Yes
+      doc: http://localbitcoins.blogspot.fi/2013/05/using-two-factor-authentication-on.html
+
+    - name: WeMineLTC.com
+      url: https://www.wemineltc.com
+      img: wemineltc.png
+      tfa: Yes
+      software: Yes
+      doc: https://twitter.com/jstcoin/status/445900548743897088
