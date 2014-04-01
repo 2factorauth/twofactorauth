@@ -1,26 +1,52 @@
 websites:
     - name: Campfire
       url: https://campfirenow.com/
-      twitter: 37signals
       img: campfire.png
       tfa: Yes
       sms: Yes
-      goog: No
-      authy: No
       doc: https://help.37signals.com/sign-in/questions/460-how-do-i-set-up-and-use-phone-verification-for-logging-in
+
+    - name: Disqus
+      url: https://disqus.com
+      twitter: disqus
+      img: disqus.png
+      tfa: No
+
+    - name: Fleep
+      url: https://fleep.io
+      twitter: fleepio
+      img: fleep.png
+      tfa: No
 
     - name: HipChat
       url: https://www.hipchat.com
-      img: hipchat.png
       twitter: HipChat
+      img: hipchat.png
       tfa: No
 
     - name: Skype (w/Microsoft Account)
       url: https://www.skype.com
-      twitter: skype
       img: skype.png
       tfa: Yes
       sms: Yes
-      goog: Yes
-      authy: No
+      software: Yes
       doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
+
+    - name: Slack
+      url: http://www.slack.com
+      twitter: SlackHQ
+      img: slack.png
+      tfa: No
+      status: https://twitter.com/SlackHQ/status/448214716192538625
+
+    - name: Trello
+      url: https://trello.com
+      twitter: trello
+      img: trello.png
+      tfa: No
+
+    - name: Yammer
+      url: https://yammer.com
+      twitter: yammer
+      img: yammer.png
+      tfa: No
