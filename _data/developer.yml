@@ -128,6 +128,15 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
+      
+    - name: SingleHop
+      url: http://www.singlehop.com
+      img: singlehop-logo.png
+      tfa: Yes
+      goog: No
+      authy: Yes
+      verisign: No
+      sms: No
 
     - name: Softlayer
       url: https://www.softlayer.com
