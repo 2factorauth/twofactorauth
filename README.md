@@ -84,11 +84,12 @@ that your site chunk follow the same order as the example above.
 
 - If a site supports 2FA, their Twitter handle is not needed and can be left out for cleanliness.
 
-- If a site does not have 2FA but there is documentation that they are adding it, then use
-```yml
-tfa: no
-status: <url to documentation>
-```
+- If a site does not have 2FA but there is documentation that they are adding it, then use:
+
+  ```yml
+  tfa: no
+  status: <url to documentation>
+  ```
 
 ## License
 
