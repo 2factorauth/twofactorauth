@@ -11,22 +11,16 @@ websites:
 
     - name: LogMeIn
       url: https://secure.logmein.com/
-      doc: http://help.logmein.com/SelfServiceKnowledgeRenderer?type=FAQ&id=kA0a0000000shEi
       img: logmein.png
       tfa: Yes
-      goog: Yes
-      custom:
-        - icon: key
-          url: "http://help.logmein.com/SelfServiceKnowledgeRenderer?type=FAQ&id=kA030000000DGACCA4"
-        - icon: mail
+      email: Yes
+      software: Yes
+      doc: http://help.logmein.com/SelfServiceKnowledgeRenderer?type=FAQ&id=kA0a0000000shEi
 
     - name: TeamViewer
       url: http://www.teamviewer.com
-      doc: http://www.teamviewer.com/en/help/402-How-do-I-activate-deactivate-two-factor-authentication-for-my-TeamViewer-account.aspx
       img: teamviewer.png
       tfa: Yes
-      goog: Yes
-      authy: Yes
-      custom:
-        - icon: mail
-          url: "http://www.teamviewer.com/en/help/398-What-is-two-factor-authentication-for-your-TeamViewer-account.aspx"
+      email: Yes
+      software: Yes
+      doc: http://www.teamviewer.com/en/help/402-How-do-I-activate-deactivate-two-factor-authentication-for-my-TeamViewer-account.aspx
