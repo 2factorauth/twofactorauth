@@ -65,7 +65,7 @@ this example:
           twitter: SiteTwitter
           img: site.png
           tfa: Yes
-          sms: No
+          sms: Yes
           email: Yes
           phone: Yes
           software: Yes
@@ -73,21 +73,21 @@ this example:
           doc: <link to site 2FA documentation>
 ```
 
+**Pro Tips**:
+See Guideline #2 about icons. The png file should go in the corresponding `img/section` folder.
+
+Only the 2FA methods implemented by a site need a `yes` tag, the others can just be left off completely.
+
+For the sake of organization and readability, it is appreciated if you insert new sites alphabetically and
+that your site chunk follow the same order as the example above.
+
+If a site supports 2FA, their Twitter handle is not needed and can be left out for cleanliness.
+
 If a site does not have 2FA but there is documentation that they are adding it, then use
 ```yml
 tfa: no
 status: <url to documentation>
 ```
-
-~~Note: A tip on getting icons, use Google's icon api. Just go to
-`https://www.google.com/s2/favicons?domain=http://example.com`
-and you will get sites the icon as png.~~
-
-We are now looking for higher resolution images than offered by Google's favicon service.  
-
-### Custom
-
-The `custom` section is for an app or site that doesn't use SMS, Google Auth, or Authy. This app should have its own way of generating 2FA from within the app or a special 2FA service such as via `email`, `yubikey`, etc.
 
 ## License
 
