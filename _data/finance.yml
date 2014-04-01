@@ -224,7 +224,12 @@ websites:
       img: vanguard.png
       tfa: No
 
-<<<<<<< HEAD
+    - name: Wells Fargo
+      url: https://www.wellsfargo.com/
+      twitter: WellsFargo
+      img: wellsfargo.png
+      tfa: no
+
     - name: CIBC
       url: http://www.cibc.ca
       twitter: cibc
@@ -238,42 +243,17 @@ websites:
       img: rbc.png
       doc: http://www.rbcroyalbank.com/online/online-banking-security-guarantee.html
       
-    - name: HSBC
-      url: https://www.hsbc.com
-      tfa: Yes
-      img: hsbc.png
-      doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
-      custom:
-        - icon: key
-          url: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
-
     - name: Société Générale
       url: https://particuliers.societegenerale.fr/
       tfa: Yes
       img: societegenerale.ico
       doc: https://particuliers.societegenerale.fr/votre_site/configuration_securite/paiements_securises.html
-      custom:
-        - icon: iphone
-          url: https://itunes.apple.com/fr/app/lappli-societe-generale/id376991016?mt=8
-        - icon: android
-          url: https://play.google.com/store/apps/details?id=mobi.societegenerale.mobile.lappli&hl=en
-        - icon: virtualkeyboard
-          url: https://particuliers.societegenerale.fr/votre_site/configuration_securite/nos_mesures_de_securite.html
-#        - icon: trusteer
-#	  url: https://particuliers.societegenerale.fr/votre_site/configuration_securite/les_bonnes_pratiques/promo_trusteer.html
 
     - name: BNP Paribas
       url: https://www.secure.bnpparibas.net
       tfa: Yes
       img: bnpparibas.ico
       doc: https://www.secure.bnpparibas.net/banque/portail/particulier/Fiche?type=folder&identifiant=Virements_en_ligne_20131014121544
-      custom:
-        - icon: virtualkeyboard
-          url: https://www.secure.bnpparibas.net/banque/portail/particulier/HomeConnexion?type=homeconnex&typeIdent=accessible&typeFlashAccessible=2
-        - icon: iphone
-          url: https://itunes.apple.com/en/app/mes-comptes-bnp-paribas/id377884617?mt=8
-        - icon: android
-          url: https://play.google.com/store/apps/details?id=net.bnpparibas.mescomptes
 
     - name: National Bank Canada (NBC or BNC)
       url: http://www.nbc.ca/
@@ -281,41 +261,21 @@ websites:
       img: bnc.png
       tfa: No
       doc: http://www.nbc.ca/bnc/cda/productfamily/0,2664,divId-2_langId-1_navCode-17250,00.html
-      custom:
-        - icon: iphone
-          url: https://itunes.apple.com/ca/app/banque-nationale-solutions/id476651878?l=fr&mt=8
-        - icon: android
-          url: https://play.google.com/store/apps/details?id=ca.bnc.android
 
     - name: Desjardins
       url: http://www.desjardins.com/
       img: desjardins.jpg
       tfa: No
       doc: http://www.desjardins.com/securite/pratiques-securite/
-      custom:
-        - icon: iphone
-          url: https://itunes.apple.com/ca/app/desjardins-mobile-services/id386636953?mt=8
-        - icon: android
-          url: https://play.google.com/store/apps/details?id=com.desjardins.mobile
 
     - name: Scotiabank
       url: http://www.scotiabank.com/
       img: scotiabank.ico
       tfa: No
       doc: http://www.scotiabank.com/ca/en/0,,2976,00.html
-      custom:
-#        - icon: trusteer
-#	  url: https://www2.scotiaonline.scotiabank.com/online/authentication/authentication.bns
 
     - name: TD Canada Trust
       url: http://www.tdcanadatrust.com/
       img: tdcanadatrust.ico
       tfa: No
 
-=======
-    - name: Wells Fargo
-      url: https://www.wellsfargo.com/
-      twitter: WellsFargo
-      img: wellsfargo.png
-      tfa: no
->>>>>>> upstream/master
