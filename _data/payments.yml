@@ -4,6 +4,29 @@ websites:
       twitter: AmazonPayments
       img: amazon.png
       tfa: No
+<<<<<<< HEAD
+=======
+      
+    - name: GoCardless
+      img: gocardless.png
+      url: https://gocardless.com/
+      twitter: GoCardless
+      tfa: No
+        
+    - name: Google Wallet
+      url: http://www.google.se/wallet/
+      img: googlewallet.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.google.com/accounts/answer/180744?hl=en
+
+    - name: Payoneer
+      url: http://www.payoneer.com/
+      twitter: Payoneer
+      img: payoneer.png
+      tfa: No
+>>>>>>> 6fd790e... Updated GoCardless
 
     - name: PayPal
       img: paypal.png
