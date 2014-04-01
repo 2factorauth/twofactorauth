@@ -123,18 +123,27 @@ websites:
       img: usbank.png
       tfa: No
 
-    - name: PNC Bank
-      url: https://www.pnc.com/
-      twitter: pncnews
-      img: pncbank.png
+    - name: USAA
+      url: https://www.usaa.com/
+      img: usaa.png
+      tfa: yes
+      sms: yes
+      software: yes
+      doc: https://www.usaa.com/inet/pages/security_token_logon_options
+
+    - name: Vanguard
+      url: http://www.vanguard.com/
+      twitter: Vanguard_Group
+      img: vanguard.png
       tfa: No
 
-    - name: CIBC
-      url: http://www.cibc.ca
-      twitter: cibc
-      tfa: No
-      img: cibc.png
-      
+    - name: Wells Fargo
+      url: https://www.wellsfargo.com/
+      img: wellsfargo.png
+      tfa: yes
+      email: yes
+      doc: https://www.wellsfargo.com/privacy-security/advanced-access
+
     - name: RBC Royal Bank
       url: http://www.rbcroyalbank.com
       twitter: RBC_Canada
@@ -215,4 +224,5 @@ websites:
       url: http://www.tdcanadatrust.com/
       img: tdcanadatrust.ico
       tfa: No
+
 
