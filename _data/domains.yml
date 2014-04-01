@@ -66,8 +66,8 @@ websites:
 
     - name: eNom
       url: http://enom.com/
-      img: enom.png
       twitter: enom
+      img: enom.png
       tfa: No
       status: https://twitter.com/enom/status/447074738033008640
 
@@ -75,7 +75,6 @@ websites:
       url: https://gandi.net
       img: gandi.png
       tfa: Yes
-      sms: No
       software: Yes
       doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
 
@@ -94,6 +93,20 @@ websites:
       software: Yes
       doc: https://help.hover.com/entries/26677644
 
+    - name: iWantMyName
+      url: https://iwantmyname.com/
+      img: iwantmyname.png
+      tfa: Yes
+      software: Yes
+      doc: http://help.iwantmyname.com/customer/portal/articles/1139898
+
+    - name: Loopia
+      url: https://www.loopia.se/
+      twitter: loopia
+      img: loopia.png
+      tfa: No
+      status: https://twitter.com/loopia/statuses/446223091161911296
+
     - name: Name.com
       url: http://www.name.com/
       img: namecom.png
@@ -103,8 +116,8 @@ websites:
       doc: https://www.name.com/services/namesafe
 
     - name: Namecheap
-      img: namecheap.png
       url: https://www.namecheap.com/
+      img: namecheap.png
       tfa: Yes
       sms: Yes
       doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
@@ -121,32 +134,15 @@ websites:
       twitter: netsolcares
       img: networksolutions.png
       tfa: No
-      software: Yes
-      hardware: Yes
-
-    - name: iWantMyName
-      url: https://iwantmyname.com/
-      img: iwantmyname.png
-      twitter: iWantMyName
-      tfa: Yes
-      software: Yes
-      doc: http://help.iwantmyname.com/customer/portal/articles/1139898
-
-    - name: Loopia
-      url: https://www.loopia.se/
-      twitter: loopia
-      img: loopia.png
-      tfa: No
-      status: https://twitter.com/loopia/statuses/446223091161911296
 
     - name: Register4Less
       url: https://register4less.com/
-      img: register4less.png
       twitter: register4less
+      img: register4less.png
       tfa: No
 
     - name: Zen
       url: http://www.zen.co.uk
-      img: zen.png
       twitter: zeninternet
+      img: zen.png
       tfa: No
