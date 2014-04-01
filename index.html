@@ -76,7 +76,6 @@ hash: SupportTwoFactorAuth
 {% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% endcapture %}
-{{ website_names }}
 
                         {% assign lowercase_names = website_names | split:',' | sort %}
 
@@ -103,41 +102,36 @@ hash: SupportTwoFactorAuth
 
                                             <td class="positive icon">
                                             {% if website.sms %}
-                                                <i class="checked checkbox large icon"></i>
+                                                <i class="checkmark large icon"></i>
                                             {% else %}
-                                                <i class="empty checkbox large icon"></i>
                                             {% endif %}
                                             </td>
 
                                             <td class="positive icon">
                                             {% if website.phone %}
-                                                <i class="checked checkbox large icon"></i>
+                                                <i class="checkmark large icon"></i>
                                             {% else %}
-                                                <i class="empty checkbox large icon"></i>
                                             {% endif %}
                                             </td>
 
                                             <td class="positive icon">
                                             {% if website.email %}
-                                                <i class="checked checkbox large icon"></i>
+                                                <i class="checkmark large icon"></i>
                                             {% else %}
-                                                <i class="empty checkbox large icon"></i>
                                             {% endif %}
                                             </td>
 
                                             <td class="positive icon">
                                             {% if website.hardware %}
-                                                <i class="checked checkbox large icon"></i>
+                                                <i class="checkmark large icon"></i>
                                             {% else %}
-                                                <i class="empty checkbox large icon"></i>
                                             {% endif %}
                                             </td>
 
                                             <td class="positive icon">
                                             {% if website.software %}
-                                                <i class="checked checkbox large icon"></i>
+                                                <i class="checkmark large icon"></i>
                                             {% else %}
-                                                <i class="empty checkbox large icon"></i>
                                             {% endif %}
                                             </td>
                                         </tr>
