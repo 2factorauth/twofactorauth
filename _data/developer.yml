@@ -42,6 +42,36 @@ websites:
       twitter: heroku
       tfa: No
 
+<<<<<<< HEAD
+=======
+    - name: HP Cloud
+      url: https://www.hpcloud.com/
+      twitter: hpcloud
+      img: hp.png
+      tfa: No
+
+    - name: Joyent
+      url: http://www.joyent.com/
+      img: joyent.png
+      tfa: Yes
+      software: Yes
+      doc: "http://wiki.joyent.com/wiki/display/jpc2/Improving+Security+Using+Two-Factor+Authentication+(2FA)"
+
+    - name: Infobip
+      url: http://www.infobip.com/
+      img: infobip.png
+      tfa: Yes
+      sms: Yes
+      doc: http://www.infobip.com/messaging/enterprise/2_factor_authentication/
+
+    - name: Launchpad
+      url: https://launchpad.net
+      img: launchpad.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
+
+>>>>>>> 968c46d... Added Joyent to Developer
     - name: Linode
       url: https://www.linode.com/
       img: linode.png
