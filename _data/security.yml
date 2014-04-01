@@ -1,50 +1,38 @@
 websites:
-    - name: ThreatSim
-      url: http://login.threatsim.com
-      img: threatsim.png
+    - name: CAcert
+      url: https://www.cacert.org/
+      twitter: CAcert_News
+      img: cacert.png
+      tfa: No
+
+    - name: DigiCert
+      url: http://www.digicert.com/
+      twitter: digicert
+      img: digicert.png
+      tfa: No
+
+    - name: GeoTrust
+      url: http://www.geotrust.com/
+      img: geotrust.png
       tfa: Yes
-      goog: No
-      authy: No
-      sms: Yes
-      verisign: No
-      doc: http://threatsim.com/features/
+      email: Yes
+
+    - name: RapidSSL
+      url: http://www.rapidssl.com/
+      img: rapidssl.png
+      tfa: Yes
+      email: Yes
 
     - name: SSLTrust
       url: http://ssltrust.com.au/
       img: ssltrust.png
       tfa: Yes
-      goog: Yes
+      software: Yes
       doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
 
-    - name: GeoTrust
-      img: geotrust.png
-      url: http://www.geotrust.com/
+    - name: ThreatSim
+      url: http://login.threatsim.com
+      img: threatsim.png
       tfa: Yes
-      goog: No
-      authy: No
-      sms: No
-      custom:
-          - icon: mail
-
-    - name: RapidSSL
-      img: rapidssl.png
-      url: http://www.rapidssl.com/
-      tfa: Yes
-      goog: No
-      authy: No
-      sms: No
-      custom:
-          - icon: mail
-          
-    - name: DigiCert
-      img: digicert.png
-      url: http://www.digicert.com/
-      tfa: No
-      twitter: digicert
-
-    - name: CAcert
-      img: cacert.png
-      url: https://www.cacert.org/
-      tfa: No
-      twitter: CAcert_News
-
+      sms: Yes
+      doc: http://threatsim.com/features/
