@@ -159,10 +159,9 @@ websites:
 
     - name: Wells Fargo
       url: https://www.wellsfargo.com/
+      twitter: WellsFargo
       img: wellsfargo.png
-      tfa: yes
-      email: yes
-      doc: https://www.wellsfargo.com/privacy-security/advanced-access
+      tfa: no
 
     - name: RBC Royal Bank
       url: http://www.rbcroyalbank.com
@@ -244,5 +243,4 @@ websites:
       url: http://www.tdcanadatrust.com/
       img: tdcanadatrust.ico
       tfa: No
-
 
