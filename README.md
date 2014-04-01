@@ -73,17 +73,18 @@ this example:
           doc: <link to site 2FA documentation>
 ```
 
-**Pro Tips**:
-See Guideline #2 about icons. The png file should go in the corresponding `img/section` folder.
+#### Pro Tips
 
-Only the 2FA methods implemented by a site need a `yes` tag, the others can just be left off completely.
+-See Guideline #2 about icons. The png file should go in the corresponding `img/section` folder.
 
-For the sake of organization and readability, it is appreciated if you insert new sites alphabetically and
+-Only the 2FA methods implemented by a site need a `yes` tag, the others can just be left off completely.
+
+-For the sake of organization and readability, it is appreciated if you insert new sites alphabetically and
 that your site chunk follow the same order as the example above.
 
-If a site supports 2FA, their Twitter handle is not needed and can be left out for cleanliness.
+-If a site supports 2FA, their Twitter handle is not needed and can be left out for cleanliness.
 
-If a site does not have 2FA but there is documentation that they are adding it, then use
+-If a site does not have 2FA but there is documentation that they are adding it, then use
 ```yml
 tfa: no
 status: <url to documentation>
