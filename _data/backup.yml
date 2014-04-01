@@ -54,20 +54,17 @@ websites:
     sms: Yes
     doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
 
-  - name: SmartBox
+- name: SmartBox
     img: smartbox.png
     url: http://www.panterranetworks.com/SmartBox/index.php
+    twitter: SiteTwitter
     tfa: Yes
     sms: No
-    goog: No
-    authy: No
-    doc: http://www.panterranetworks.com/SmartBox/features/security.php
-    custom:
-       - icon: mail
-       - icon: android
-         url: https://play.google.com/store/apps/details?id=com.sbmobileapp
-       - icon: apple
-         url: https://itunes.apple.com/us/app/mobile-smartbox/id784515387?mt=8
+    email: Yes
+    phone: No
+    software: Yes
+    hardware: No
+    doc: http://www.panterranetworks.com/SmartBox/features/security.php  
 
   - name: SpiderOak
     img: spideroak.png
