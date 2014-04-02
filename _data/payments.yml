@@ -4,45 +4,52 @@ websites:
       twitter: AmazonPayments
       img: amazon.png
       tfa: No
-
-    - name: PayPal
-      img: paypal.png
-      url: https://www.paypal.com/
-      tfa: Yes
-      sms: Yes
-      verisign: Yes
-      doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
-
-    - name: Stripe
-      img: stripe.png
-      url: https://www.stripe.com/
-      tfa: Yes
-      goog: Yes
-      authy: Yes
-      sms: No
-      doc: https://stripe.com/blog/two-step-verification
-
+      
+    - name: GoCardless
+      img: gocardless.png
+      url: https://gocardless.com/
+      twitter: GoCardless
+      tfa: No
+        
     - name: Google Wallet
       url: http://www.google.se/wallet/
       img: googlewallet.png
       tfa: Yes
-      goog: Yes
-      authy: Yes
       sms: Yes
+      software: Yes
       doc: https://support.google.com/accounts/answer/180744?hl=en
-
-    - name: Skrill
-      url: https://skrill.com/
-      twitter: skrill
-      img: skrill.png
-      tfa: Yes
-      doc: https://help.skrill.com/pkb_sc_article_FAQ?id=kA0D0000000Ci3x&l=en_GB
-      custom:
-        - icon: key
-          url: https://help.skrill.com/pkb_sc_article_FAQ?id=kA0D0000000Ci3x&l=en_GB
 
     - name: Payoneer
       url: http://www.payoneer.com/
       twitter: Payoneer
       img: payoneer.png
+      tfa: No
+
+    - name: PayPal
+      url: https://www.paypal.com/
+      img: paypal.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
+
+    - name: Skrill
+      url: https://skrill.com/
+      img: skrill.png
+      tfa: Yes
+      hardware: Yes
+      doc: https://help.skrill.com/pkb_sc_article_FAQ?id=kA0D0000000Ci3x&l=en_GB
+
+    - name: Stripe
+      img: stripe.png
+      url: https://www.stripe.com/
+      tfa: Yes
+      software: Yes
+      doc: https://stripe.com/blog/two-step-verification
+
+    - name: Square
+      url: https://squareup.com
+      twitter: square
+      img: squareup.png
       tfa: No
