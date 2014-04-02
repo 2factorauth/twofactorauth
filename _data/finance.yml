@@ -76,6 +76,34 @@ websites:
       img: kiva.png
       tfa: No
 
+<<<<<<< HEAD
+=======
+    - name: HSBC
+      url: https://www.hsbc.com
+      img: hsbc.png
+      tfa: Yes
+      hardware: Yes
+      doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
+
+    - name: Intuit TurboTax
+      url: https://turbotax.intuit.com/
+      twitter: turbotax
+      img: turbotax.png
+      tfa: No
+
+    - name: LendingClub
+      url: http://www.lloydsbank.com/
+      twitter: lendingclub
+      img: lendingclub.png
+      tfa: No
+
+    - name: Lloyds Bank
+      url: http://www.lloydsbank.com/
+      twitter: AskLloydsBank
+      img: lloydsbank.png
+      tfa: No
+
+>>>>>>> bda3261... added LendingClub
     - name: Halifax
       url: http://www.halifax.co.uk
       twitter: AskHalifaxBank
