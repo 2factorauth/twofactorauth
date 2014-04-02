@@ -116,10 +116,24 @@ websites:
       img: mint.png
       tfa: No
 
+<<<<<<< HEAD
     - name: Patelco Credit Union
       url: https://www.patelco.org/
       twitter: PatelcoPays
       img: patelco.png
+=======
+    - name: MotifInvesting
+      url: https://www.motifinvesting.com/
+      img: motif.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.motifinvesting.com/security
+
+    - name: OptionsHouse
+      img: optionshouse.png
+      url: https://www.optionshouse.com
+>>>>>>> 3f44299... Added MotifInvensting
       tfa: Yes
       sms: Yes
       doc: https://www.patelco.org/Privacy-Security/Protection
