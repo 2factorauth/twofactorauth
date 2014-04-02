@@ -40,6 +40,24 @@ websites:
       img: dreamhost.png
       tfa: Yes
       software: Yes
+<<<<<<< HEAD
+=======
+      doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
+
+    - name: Dyn
+      url: http://dyn.com/
+      img: dyn.png
+      twitter: dyn
+      tfa: No
+      status: https://twitter.com/kelly_crehan/status/451460284931379200
+
+    - name: Dynadot
+      url: http://dynadot.com/
+      img: dynadot.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+>>>>>>> ea0ab32... Dyn confirmed they are working on 2FA
       hardware: Yes
       doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
 
