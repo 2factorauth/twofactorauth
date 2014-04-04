@@ -27,14 +27,6 @@ websites:
       tfa: Yes
       sms: Yes
 
-    - name: LastPass
-      url: https://lastpass.com/
-      img: lastpass.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
-
     - name: Mailchimp
       url: https://mailchimp.com/
       img: mailchimp.png
@@ -42,15 +34,6 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://blog.mailchimp.com/alterego-integrations-for-easy-authentication/
-
-    - name: Okta
-      url: https://okta.com/
-      img: okta.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.okta.com/what-we-do/multifactor-authentication.html
 
     - name: Wunderlist
       url: https://www.wunderlist.com
