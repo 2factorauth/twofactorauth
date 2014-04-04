@@ -1,0 +1,23 @@
+websites:
+    - name: CloudEntr
+      url: http://www.cloudentr.com/
+      img: cloudentr.png
+      software: Yes
+      doc: http://www.cloudentr.com/product/two-factor-authentication/
+
+    - name: LastPass
+      url: https://lastpass.com/
+      img: lastpass.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
+
+    - name: Okta
+      url: https://okta.com/
+      img: okta.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.okta.com/what-we-do/multifactor-authentication.html
