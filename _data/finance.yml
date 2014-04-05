@@ -109,10 +109,25 @@ websites:
       hardware: Yes
       doc: https://us.etrade.com/e/t/estation/pricing?id=1220801000
 
+    - name: Fairwinds
+      url: https://www.fairwinds.org
+      img: fairwinds.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      doc: "https://www.fairwinds.org/inside/privacy/security_we.asp#multifactor-auth"
+
     - name: Fidelity Investments
       url: https://www.fidelity.com
       twitter: fidelity
       img: fidelity.png
+      tfa: No
+
+    - name: GE Capital Bank
+      url: https://www.gecapitalbank.com
+      twitter: GECapital
+      img: GECapitalBank.png
       tfa: No
       
     - name: Kiva
