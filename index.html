@@ -24,7 +24,7 @@ hash: SupportTwoFactorAuth
         </a>
 
         <div class="ui dropdown item">
-            Menu <i class="dropdown icon"></i>
+            Categories <i class="dropdown icon"></i>
             <div class="menu">
                 {% for section in site.data.main.sections %}
                 <a href="{% if forloop.first %}#{% else %}#{{ section.id }}{% endif %}" class="item">
