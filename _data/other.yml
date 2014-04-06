@@ -3,20 +3,40 @@ websites:
       url: http://automater.pl/en/
       img: automater.png
       tfa: Yes
-      sms: No
-      authy: No
-      goog: No
-      custom:
-        - icon: shield
-          url: "https://rublon.com/"
-        - icon: play
-          url: "http://www.youtube.com/watch?v=5OLcvjVhhuI"
+      software: Yes
+      doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
 
-    - name: Delighted
-      img: delighted.png
-      url: https://delightedapp.com/
+    - name: Basecamp
+      url: https://basecamp.com/
+      img: basecamp.png
       tfa: Yes
       sms: Yes
-      goog: No
-      authy: No
-      doc: https://delightedapp.com/
+      doc: https://basecamp.com/help/guides/you/phone-verification
+
+    - name: Cisco Meraki
+      url: https://meraki.cisco.com/
+      img: meraki.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://kb.meraki.com/knowledge_base/log-in-security-configuring-account-and-password-policies-for-dashboard-administrators
+
+    - name: Delighted
+      url: https://delightedapp.com/
+      img: delighted.png
+      tfa: Yes
+      sms: Yes
+
+    - name: Mailchimp
+      url: https://mailchimp.com/
+      img: mailchimp.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://blog.mailchimp.com/alterego-integrations-for-easy-authentication/
+
+    - name: Wunderlist
+      url: https://www.wunderlist.com
+      twitter: Wunderlist
+      img: wunderlist.png
+      tfa: No
