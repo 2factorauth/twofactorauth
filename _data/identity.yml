@@ -29,3 +29,15 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://www.okta.com/what-we-do/multifactor-authentication.html
+
+    - name: OneLogin
+      doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
+      email: No
+      hardware: Yes
+      image: onelogin.png
+      phone: No
+      sms: No
+      software: Yes
+      tfa: Yes
+      twitter: onelogin
+      url: http://www.onelogin.com
