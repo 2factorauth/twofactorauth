@@ -7,34 +7,31 @@ providers:
   - name: Authy
     url: https://authy.com
     img: authy.png
-    android: Yes
-    ios: Yes
-    feature_phone: Yes
+    software: Yes
 
   - name: Duo
     url: https://duosecurity.com
     img: duo.png
-    android: Yes
-    ios: Yes
-    feature_phone: Yes
+    software: Yes
 
   - name: Google Authenticator
     url: http://www.google.com/landing/2step/
     img: google.png
-    android: Yes
-    ios: Yes
-    feature_phone: No
+    software: Yes
+
+  - name: Rublon
+    url: https://www.rublon.com/
+    img: rublon.png
+    software: Yes
 
   - name: Toopher
     url: https://toopher.com
     img: toopher.png
-    android: Yes
-    ios: Yes
-    feature_phone: Yes
+    software: Yes
+    sms: Yes
 
   - name: Yubico
     url: https://yubico.com
     img: yubico.png
-    android: Yes
-    ios: Yes
-    feature_phone: Yes
+    hardware: Yes
+    software: Yes

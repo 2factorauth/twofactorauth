@@ -42,9 +42,11 @@ layout: default
                     <thead>
                         <tr>
                             <th class="eleven wide"><h2>Provider</h2></th>
-                            <th>Android</th>
-                            <th>iOS</th>
-                            <th>Feature phones</th>
+                            <th>SMS</th>
+                            <th>Phone Call</th>
+                            <th>Email</th>
+                            <th>Hardware Token</th>
+                            <th>Software Implementation</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -58,35 +60,35 @@ layout: default
                               <a href="{{ provider.url }}">{{ provider.name }}</a>
                           </td>
 
-                          {% if provider.android %}
-                              <td class="positive icon">
-                                  <i class="checkmark large icon"></i>
-                              </td>
-                          {% else %}
-                              <td class="negative icon">
-                                  <i class="remove large icon"></i>
-                              </td>
+                          <td class="positive icon">
+                          {% if provider.sms %}
+                              <i class="checkmark large icon"></i>
                           {% endif %}
+                          </td>
 
-                          {% if provider.ios %}
-                              <td class="positive icon">
-                                  <i class="checkmark large icon"></i>
-                              </td>
-                          {% else %}
-                              <td class="negative icon">
-                                  <i class="remove large icon"></i>
-                              </td>
+                          <td class="positive icon">
+                          {% if provider.phone %}
+                              <i class="checkmark large icon"></i>
                           {% endif %}
+                          </td>
 
-                          {% if provider.feature_phone %}
-                              <td class="positive icon">
-                                  <i class="checkmark large icon"></i>
-                              </td>
-                          {% else %}
-                              <td class="negative icon">
-                                  <i class="remove large icon"></i>
-                              </td>
+                          <td class="positive icon">
+                          {% if provider.email %}
+                              <i class="checkmark large icon"></i>
                           {% endif %}
+                          </td>
+
+                          <td class="positive icon">
+                          {% if provider.hardware %}
+                              <i class="checkmark large icon"></i>
+                          {% endif %}
+                          </td>
+
+                          <td class="positive icon">
+                          {% if provider.software %}
+                              <i class="checkmark large icon"></i>
+                          {% endif %}
+                          </td>
                         </tr>
                       {% endfor %}
                     </tbody>
