@@ -101,6 +101,24 @@ As an example, a site that prompts you for an authentication token following use
 
 For context, check out the discussion in [#242](https://github.com/jdavis/twofactorauth/issues/242).
 
+### New Providers
+
+Rather than split out providers on the main page, we elected to keep the
+main page clean and add another page dedicated to 2fa providers.
+
+To add a new provider simply add to the `providers.yml` file, marking `Yes` where appropriate.
+
+```yml
+  - name: Company Name
+    url: https://example.com
+    img: company.png
+    sms: Yes
+    email: Yes
+    phone: Yes
+    software: Yes
+    hardware: Yes
+```
+
 ## License
 
 This code is distributed under the MIT license. For more info, read the
