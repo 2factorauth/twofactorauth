@@ -27,6 +27,14 @@ providers:
     img: rublon.png
     software: Yes
 
+  - name: SecureAuth
+    email: Yes
+    hardware: Yes
+    img: secureauth.png
+    sms: Yes
+    software: Yes
+    url: http://www.secureauth.com/
+
   - name: Toopher
     url: https://toopher.com
     img: toopher.png
