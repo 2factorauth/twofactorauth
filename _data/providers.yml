@@ -46,3 +46,15 @@ providers:
     img: yubico.png
     hardware: Yes
     software: Yes
+    
+  - name: WiKID Systems
+    url:  https://www.wikidsystems.com
+    img:  wikid.png
+    hardware: No
+    software: Yes
+
+  - name:  WiKID Community Server
+    url:   http://sourceforge.net/projects/wikid-twofactor/
+    img:   wikid.png
+    hardware: No
+    software: Yes
