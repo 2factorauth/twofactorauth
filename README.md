@@ -54,45 +54,70 @@ Then create a new file in the `_data` directory named the same as your section's
 
 ### New Sites
 
+First and foremost, make sure the new site meets our [definition requirements](#a-note-on-definitions) for Two Factor Auth.
+
 The values should be pretty straight forward for adding a new website. The
 `websites` array should already be defined, just add a new website to it like
 this example:
 
 ```yml
     websites:
-        - name: Site
-          url: https://site.com
+        - name: Site Name
+          url: https://www.site.com/
+          twitter: SiteTwitter
           img: site.png
-          twitter: twitter_handle   # To tweet at site, if tfa is No
           tfa: Yes
-          goog: Yes
-          authy: Yes
-          verisign: Yes
           sms: Yes
-          doc: <url to the documentation>
-          custom:
-              - icon: android
-                url: <url to a custom Android client>
-              - icon: apple
-                url: <url to a custom iOS client>
-              # Any other custom clients...
+          email: Yes
+          phone: Yes
+          software: Yes
+          hardware: Yes
+          doc: <link to site 2FA documentation>
 ```
 
-If a site does not have 2FA but there is documentation that they are adding it, then use
+#### Pro Tips
+
+- See Guideline #2 about icons. The png file should go in the corresponding `img/section` folder.
+
+- Only the 2FA methods implemented by a site need a `yes` tag, the others can just be left off completely.
+
+- For the sake of organization and readability, it is appreciated if you insert new sites alphabetically and
+that your site chunk follow the same order as the example above.
+
+- If a site supports 2FA, their Twitter handle is not needed and can be left out for cleanliness.
+
+- If a site does not have 2FA but there is documentation that they are adding it, then use:
+
+  ```yml
+  tfa: no
+  status: <url to documentation>
+  ```
+
+### A Note on Definitions
+
+A lot of people have different ideas of what constitutes Two Factor Auth and what doesn't, so it stands to reason that we should clarify a bit. For the purposes of this site, Two Factor Auth is defined as any service provided as a redundant layer for account *authentication*. Services that provide *authorization* redundancy are certainly appreciated, but should not be considered Two Factor Auth.
+
+As an example, a site that prompts you for an authentication token following user login would be considered Two Factor Auth. A site that does not prompt you for a token upon login, but prompts you for a token when you try to perform a sensitive action would not be considered Two Factor Auth.
+
+For context, check out the discussion in [#242](https://github.com/jdavis/twofactorauth/issues/242).
+
+### New Providers
+
+Rather than split out providers on the main page, we elected to keep the
+main page clean and add another page dedicated to 2fa providers.
+
+To add a new provider simply add to the `providers.yml` file, marking `Yes` where appropriate.
+
 ```yml
-tfa: no
-status: <url to documentation>
+  - name: Company Name
+    url: https://example.com
+    img: company.png
+    sms: Yes
+    email: Yes
+    phone: Yes
+    software: Yes
+    hardware: Yes
 ```
-
-~~Note: A tip on getting icons, use Google's icon api. Just go to
-`https://www.google.com/s2/favicons?domain=http://example.com`
-and you will get sites the icon as png.~~
-
-We are now looking for higher resolution images than offered by Google's favicon service.  
-
-### Custom
-
-The `custom` section is for an app or site that doesn't use SMS, Google Auth, or Authy. This app should have its own way of generating 2FA from within the app or a special 2FA service such as via `email`, `yubikey`, etc.
 
 ## License
 

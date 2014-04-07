@@ -1,0 +1,43 @@
+websites:
+    - name: 1Password
+      doc: http://blog.agilebits.com/2011/09/23/two-factor-or-not-two-factor/
+      img: 1password.png
+      tfa: No
+      twitter: 1Password
+      url: https://agilebits.com/onepassword
+
+    - name: CloudEntr
+      url: http://www.cloudentr.com/
+      img: cloudentr.png
+      tfa: Yes
+      software: Yes
+      doc: http://www.cloudentr.com/product/two-factor-authentication/
+
+    - name: LastPass
+      url: https://lastpass.com/
+      img: lastpass.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
+
+    - name: Okta
+      url: https://okta.com/
+      img: okta.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.okta.com/what-we-do/multifactor-authentication.html
+
+    - name: OneLogin
+      doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
+      email: No
+      hardware: Yes
+      image: onelogin.png
+      phone: No
+      sms: No
+      software: Yes
+      tfa: Yes
+      twitter: onelogin
+      url: http://www.onelogin.com

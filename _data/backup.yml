@@ -1,14 +1,14 @@
 websites:
   - name: Backblaze
     url: http://www.backblaze.com/
-    img: backblaze.gif
     twitter: backblaze
+    img: backblaze.gif
     tfa: No
 
   - name: Bitcasa
     url: http://www.bitcasa.com/
-    img: bitcasa.png
     twitter: Bitcasa
+    img: bitcasa.png
     tfa: No
 
   - name: Box
@@ -20,78 +20,86 @@ websites:
 
   - name: Copy
     url: https://www.copy.com
+    twitter: copyapp
     img: copy.png
     tfa: No
-    twitter: copyapp
-    
+
   - name: CrashPlan
     url: http://www.crashplan.com
+    twitter: crashplan
     img: crashplan.png
     tfa: No
-    twitter: crashplan
 
   - name: Dropbox
-    img: dropbox.png
     url: https://www.dropbox.com
+    img: dropbox.png
     tfa: Yes
     sms: Yes
-    goog: Yes
-    authy: Yes
+    software: Yes
     doc: https://www.dropbox.com/help/363/en
 
   - name: Evernote
-    img: evernote.png
     url: https://evernote.com
+    img: evernote.png
     tfa: Yes
     sms: Yes
-    goog: Yes
-    authy: Yes
+    software: Yes
     doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
 
   - name: Frostbox
     url: http://frostbox.com
     img: frostbox.png
     tfa: Yes
-    sms: No
-    authy: No
-    goog: No
+    software: Yes
     doc: https://app.frostbox.com/main.php?action=2fa
-    custom:
-      - icon: shield
-        url: "https://rublon.com/"
 
   - name: Google Drive
     url: https://drive.google.com
     img: drive.png
     tfa: Yes
-    goog: Yes
-    authy: Yes
     sms: Yes
+    software: Yes
     doc: https://support.google.com/accounts/answer/180744?hl=en
 
   - name: OneDrive
-    img: onedrive.png
     url: https://www.onedrive.com
+    img: onedrive.png
     tfa: Yes
-    goog: Yes
-    authy: Yes
     sms: Yes
+    software: Yes
     doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
 
+  - name: SmartBox
+    url: http://www.panterranetworks.com/SmartBox/index.php
+    img: smartbox.png
+    tfa: Yes
+    sms: No
+    email: Yes
+    phone: No
+    software: Yes
+    hardware: No
+    doc: http://www.panterranetworks.com/SmartBox/features/security.php  
+
   - name: SpiderOak
-    img: spideroak.png
     url: https://spideroak.com
-    tfa: No
     twitter: spideroak
+    img: spideroak.png
+    tfa: No
 
   - name: SugarSync
-    img: sugarsync.png
-    url: https://www.sugarsync.com/
-    tfa: No
     twitter: SugarSync
+    url: https://www.sugarsync.com/
+    img: sugarsync.png
+    tfa: No
 
   - name: Tresorit
-    img: tresorit.png
     url: https://tresorit.com/
-    tfa: No
     twitter: Tresorit
+    img: tresorit.png
+    tfa: No
+
+  - name: Wuala
+    url: https://wuala.com/
+    twitter: Wuala
+    img: wuala.png
+    tfa: No
