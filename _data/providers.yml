@@ -12,6 +12,9 @@ providers:
   - name: Duo
     url: https://duosecurity.com
     img: duo.png
+    hardware: Yes
+    phone: Yes
+    sms: Yes
     software: Yes
 
   - name: Google Authenticator
