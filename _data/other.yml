@@ -6,13 +6,6 @@ websites:
       software: Yes
       doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
 
-    - name: Basecamp
-      url: https://basecamp.com/
-      img: basecamp.png
-      tfa: Yes
-      sms: Yes
-      doc: https://basecamp.com/help/guides/you/phone-verification
-
     - name: Cisco Meraki
       url: https://meraki.cisco.com/
       img: meraki.png
@@ -34,6 +27,18 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://blog.mailchimp.com/alterego-integrations-for-easy-authentication/
+
+    - name: Mandrill
+      url: https://mandrill.com/
+      img: mandrill.png
+      tfa: No
+      twitter: mandrillapp
+
+    - name: Mixpanel
+      url: https://mixpanel.com/
+      img: mixpanel.png
+      tfa: No
+      twitter: mixpanel
 
     - name: Wunderlist
       url: https://www.wunderlist.com
