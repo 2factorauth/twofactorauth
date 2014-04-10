@@ -1,0 +1,48 @@
+#
+# Configuration for the 2FA providers.
+#
+
+providers:
+
+  - name: Authy
+    url: https://authy.com
+    img: authy.png
+    software: Yes
+
+  - name: Duo
+    url: https://duosecurity.com
+    img: duo.png
+    hardware: Yes
+    phone: Yes
+    sms: Yes
+    software: Yes
+
+  - name: Google Authenticator
+    url: http://www.google.com/landing/2step/
+    img: google.png
+    software: Yes
+
+  - name: Rublon
+    url: https://www.rublon.com/
+    img: rublon.png
+    software: Yes
+
+  - name: SecureAuth
+    email: Yes
+    hardware: Yes
+    img: secureauth.png
+    sms: Yes
+    software: Yes
+    url: http://www.secureauth.com/
+
+  - name: Toopher
+    url: https://toopher.com
+    img: toopher.png
+    software: Yes
+    sms: Yes
+
+  - name: Yubico
+    url: https://yubico.com
+    img: yubico.png
+    hardware: Yes
+    software: Yes

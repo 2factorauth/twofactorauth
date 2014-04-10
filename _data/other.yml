@@ -6,13 +6,6 @@ websites:
       software: Yes
       doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
 
-    - name: Basecamp
-      url: https://basecamp.com/
-      img: basecamp.png
-      tfa: Yes
-      sms: Yes
-      doc: https://basecamp.com/help/guides/you/phone-verification
-
     - name: Cisco Meraki
       url: https://meraki.cisco.com/
       img: meraki.png
@@ -27,14 +20,6 @@ websites:
       tfa: Yes
       sms: Yes
 
-    - name: LastPass
-      url: https://lastpass.com/
-      img: lastpass.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
-
     - name: Mailchimp
       url: https://mailchimp.com/
       img: mailchimp.png
@@ -43,17 +28,26 @@ websites:
       hardware: Yes
       doc: https://blog.mailchimp.com/alterego-integrations-for-easy-authentication/
 
-    - name: Okta
-      url: https://okta.com/
-      img: okta.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.okta.com/what-we-do/multifactor-authentication.html
+    - name: Mandrill
+      url: https://mandrill.com/
+      img: mandrill.png
+      tfa: No
+      twitter: mandrillapp
+
+    - name: Mixpanel
+      url: https://mixpanel.com/
+      img: mixpanel.png
+      tfa: No
+      twitter: mixpanel
 
     - name: Wunderlist
       url: https://www.wunderlist.com
       twitter: Wunderlist
       img: wunderlist.png
+      tfa: No
+
+    - name: Zendesk
+      url: http://www.zendesk.com
+      twitter: Zendesk
+      img: zendesk.png
       tfa: No

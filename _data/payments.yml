@@ -5,11 +5,18 @@ websites:
       img: amazon.png
       tfa: No
 
+    - name: GoCardless
+      img: gocardless.png
+      url: https://gocardless.com/
+      twitter: GoCardless
+      tfa: No
+
     - name: Google Wallet
       url: http://www.google.se/wallet/
       img: googlewallet.png
       tfa: Yes
       sms: Yes
+      phone: Yes
       software: Yes
       doc: https://support.google.com/accounts/answer/180744?hl=en
 
@@ -47,6 +54,12 @@ websites:
       twitter: square
       img: squareup.png
       tfa: No
+
+    - name: Venmo
+      img: venmo.png
+      twitter: venmo
+      tfa: No
+      url: https://venmo.com
 
     - name: Fastspring
       img: fastspring.png

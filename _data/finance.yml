@@ -109,10 +109,25 @@ websites:
       hardware: Yes
       doc: https://us.etrade.com/e/t/estation/pricing?id=1220801000
 
+    - name: Fairwinds
+      url: https://www.fairwinds.org
+      img: fairwinds.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      doc: "https://www.fairwinds.org/inside/privacy/security_we.asp#multifactor-auth"
+
     - name: Fidelity Investments
       url: https://www.fidelity.com
       twitter: fidelity
       img: fidelity.png
+      tfa: No
+
+    - name: GE Capital Bank
+      url: https://www.gecapitalbank.com
+      twitter: GECapital
+      img: GECapitalBank.png
       tfa: No
       
     - name: Kiva
@@ -134,11 +149,23 @@ websites:
       img: turbotax.png
       tfa: No
 
+    - name: LendingClub
+      url: https://www.lendingclub.com/
+      twitter: lendingclub
+      img: lendingclub.png
+      tfa: No
+
     - name: Lloyds Bank
       url: http://www.lloydsbank.com/
       twitter: AskLloydsBank
       img: lloydsbank.png
       tfa: No
+
+    - name: Halifax
+      url: http://www.halifax.co.uk
+      twitter: AskHalifaxBank
+      img: halifax.png
+      tfa: No      
 
     - name: Mint
       url: https://www.mint.com
@@ -146,12 +173,36 @@ websites:
       img: mint.png
       tfa: No
 
+    - name: MotifInvesting
+      url: https://www.motifinvesting.com/
+      img: motif.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.motifinvesting.com/security
+
     - name: OptionsHouse
       img: optionshouse.png
       url: https://www.optionshouse.com
       tfa: Yes
       software: Yes
       doc: http://www.optionshouse.com/faq/authenticator/
+
+    - name: Patelco Credit Union
+      url: https://www.patelco.org/
+      twitter: PatelcoPays
+      img: patelco.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      doc: https://www.patelco.org/Privacy-Security/Protection
+
+    - name: PenFed
+      url: https://www.penfed.org/
+      twitter: PenFed
+      img: penfed.png
+      tfa: No
 
     - name: PNC Bank
       url: https://www.pnc.com/
