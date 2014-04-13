@@ -279,3 +279,53 @@ websites:
       twitter: WellsFargo
       img: wellsfargo.png
       tfa: no
+
+    - name: CIBC
+      url: http://www.cibc.ca
+      twitter: cibc
+      tfa: No
+      img: cibc.png
+      
+    - name: RBC Royal Bank
+      url: http://www.rbcroyalbank.com
+      twitter: RBC_Canada
+      tfa: No
+      img: rbc.png
+      doc: http://www.rbcroyalbank.com/online/online-banking-security-guarantee.html
+      
+    - name: Société Générale
+      url: https://particuliers.societegenerale.fr/
+      tfa: Yes
+      img: societegenerale.ico
+      doc: https://particuliers.societegenerale.fr/votre_site/configuration_securite/paiements_securises.html
+
+    - name: BNP Paribas
+      url: https://www.secure.bnpparibas.net
+      tfa: Yes
+      img: bnpparibas.ico
+      doc: https://www.secure.bnpparibas.net/banque/portail/particulier/Fiche?type=folder&identifiant=Virements_en_ligne_20131014121544
+
+    - name: National Bank Canada (NBC or BNC)
+      url: http://www.nbc.ca/
+      twitter: banquenationale
+      img: bnc.png
+      tfa: No
+      doc: http://www.nbc.ca/bnc/cda/productfamily/0,2664,divId-2_langId-1_navCode-17250,00.html
+
+    - name: Desjardins
+      url: http://www.desjardins.com/
+      img: desjardins.jpg
+      tfa: No
+      doc: http://www.desjardins.com/securite/pratiques-securite/
+
+    - name: Scotiabank
+      url: http://www.scotiabank.com/
+      img: scotiabank.ico
+      tfa: No
+      doc: http://www.scotiabank.com/ca/en/0,,2976,00.html
+
+    - name: TD Canada Trust
+      url: http://www.tdcanadatrust.com/
+      img: tdcanadatrust.png
+      tfa: No
+
