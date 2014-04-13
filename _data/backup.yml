@@ -60,7 +60,7 @@ websites:
     sms: Yes
     phone: Yes
     software: Yes
-    doc: https://support.google.com/accounts/answer/180744?hl=en
+    doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: OneDrive
     url: https://www.onedrive.com
@@ -69,6 +69,12 @@ websites:
     sms: Yes
     software: Yes
     doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+
+  - name: Pogoplug
+    url: https://pogoplug.com/
+    twitter: pogoplug
+    img: pogoplug.png
+    tfa: No
 
   - name: SmartBox
     url: http://www.panterranetworks.com/SmartBox/index.php
@@ -79,7 +85,7 @@ websites:
     phone: No
     software: Yes
     hardware: No
-    doc: http://www.panterranetworks.com/SmartBox/features/security.php  
+    doc: http://www.panterranetworks.com/SmartBox/features/security.php
 
   - name: SpiderOak
     url: https://spideroak.com
