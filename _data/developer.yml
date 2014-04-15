@@ -152,6 +152,12 @@ websites:
       hardware: Yes
       doc: http://blog.status.io/2014/03/01/yubikey/
 
+    - name: StatusCake
+      url: https://statuscake.com/
+      img: statuscake.png
+      tfa: Yes
+      sms: Yes
+
     - name: Twilio
       url: https://www.twilio.com/
       img: twilio.png
