@@ -7,7 +7,10 @@ providers:
   - name: Authy
     url: https://authy.com
     img: authy.png
+    sms: Yes
+    phone: Yes
     software: Yes
+    hardware: Yes
 
   - name: Duo
     url: https://duosecurity.com
