@@ -4,13 +4,21 @@ websites:
       twitter: AmazonPayments
       img: amazon.png
       tfa: No
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
     - name: GoCardless
       img: gocardless.png
       url: https://gocardless.com/
       twitter: GoCardless
       tfa: No
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
     - name: Google Wallet
       url: http://www.google.se/wallet/
       img: googlewallet.png
@@ -27,12 +35,25 @@ websites:
       tfa: No
 
     - name: PayPal
-      img: paypal.png
       url: https://www.paypal.com/
+      img: paypal.png
       tfa: Yes
       sms: Yes
+<<<<<<< HEAD
       hardware: Yes
       doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
+=======
+      software: Yes
+      hardware: Yes
+      doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
+
+    - name: Skrill
+      url: https://skrill.com/
+      img: skrill.png
+      tfa: Yes
+      hardware: Yes
+      doc: https://help.skrill.com/pkb_sc_article_FAQ?id=kA0D0000000Ci3x&l=en_GB
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
 
     - name: Stripe
       img: stripe.png
@@ -42,15 +63,24 @@ websites:
       doc: https://stripe.com/blog/two-step-verification
 
     - name: Square
-      img: squareup.png
+      url: https://squareup.com
       twitter: square
+      img: squareup.png
       tfa: No
+
+    - name: Venmo
+      img: venmo.png
+      twitter: venmo
+      tfa: No
+<<<<<<< HEAD
       url: https://squareup.com
 
     - name: Venmo
       img: venmo.png
       twitter: venmo
       tfa: No
+=======
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
       url: https://venmo.com
 
     - name: Fastspring

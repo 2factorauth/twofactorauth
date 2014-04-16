@@ -41,7 +41,10 @@ websites:
       tfa: Yes
       software: Yes
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
       doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
 
     - name: Dyn
@@ -57,9 +60,14 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+<<<<<<< HEAD
 >>>>>>> ea0ab32... Dyn confirmed they are working on 2FA
       hardware: Yes
       doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
+=======
+      hardware: Yes
+      doc: http://dynadot.com/domain/security.html
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
 
     - name: easyDNS
       url: https://easydns.com
@@ -68,11 +76,24 @@ websites:
       sms: Yes
       doc: http://docs.easydns.com/2-factor-authentication/
 
+<<<<<<< HEAD
+=======
+    - name: eNom
+      url: http://enom.com/
+      twitter: enom
+      img: enom.png
+      tfa: No
+      status: https://twitter.com/enom/status/447074738033008640
+
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
     - name: Gandi
       url: https://gandi.net
       img: gandi.png
       tfa: Yes
+<<<<<<< HEAD
       sms: No
+=======
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
       software: Yes
       doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
 
@@ -98,25 +119,54 @@ websites:
       software: Yes
       doc: https://help.hover.com/entries/26677644
 
+    - name: iWantMyName
+      url: https://iwantmyname.com/
+      img: iwantmyname.png
+      tfa: Yes
+      software: Yes
+      doc: http://help.iwantmyname.com/customer/portal/articles/1139898
+
+    - name: Loopia
+      url: https://www.loopia.se/
+      twitter: loopia
+      img: loopia.png
+      tfa: No
+      status: https://twitter.com/loopia/statuses/446223091161911296
+
     - name: Name.com
       url: http://www.name.com/
       img: namecom.png
       tfa: Yes
       software: Yes
+<<<<<<< HEAD
+=======
+      hardware: Yes
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
       doc: https://www.name.com/services/namesafe
 
     - name: Namecheap
-      img: namecheap.png
       url: https://www.namecheap.com/
+      img: namecheap.png
       tfa: Yes
       sms: Yes
       doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
 
+<<<<<<< HEAD
+=======
+    - name: NameSilo.com
+      url: http://www.namesilo.com/
+      img: namesilo.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.namesilo.com/Support/2~Factor-Authentication
+
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
     - name: Network Solutions
       url: https://www.networksolutions.com/
       twitter: netsolcares
       img: networksolutions.png
       tfa: No
+<<<<<<< HEAD
 
     - name: iWantMyName
       url: https://iwantmyname.com/
@@ -132,9 +182,20 @@ websites:
       img: loopia.png
       tfa: No
       status: https://twitter.com/loopia/statuses/446223091161911296
+=======
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
 
     - name: Register4Less
       url: https://register4less.com/
-      img: register4less.png
       twitter: register4less
+      img: register4less.png
       tfa: No
+<<<<<<< HEAD
+=======
+
+    - name: Zen
+      url: http://www.zen.co.uk
+      twitter: zeninternet
+      img: zen.png
+      tfa: No
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707

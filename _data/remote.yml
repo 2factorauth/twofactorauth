@@ -11,6 +11,7 @@ websites:
 
     - name: LogMeIn
       url: https://secure.logmein.com/
+<<<<<<< HEAD
       doc: http://help.logmein.com/SelfServiceKnowledgeRenderer?type=FAQ&id=kA0a0000000shEi
       img: logmein.png
       tfa: Yes
@@ -30,3 +31,18 @@ websites:
       custom:
         - icon: mail
           url: "http://www.teamviewer.com/en/help/398-What-is-two-factor-authentication-for-your-TeamViewer-account.aspx"
+=======
+      img: logmein.png
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: http://help.logmein.com/SelfServiceKnowledgeRenderer?type=FAQ&id=kA0a0000000shEi
+
+    - name: TeamViewer
+      url: http://www.teamviewer.com
+      img: teamviewer.png
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: http://www.teamviewer.com/en/help/402-How-do-I-activate-deactivate-two-factor-authentication-for-my-TeamViewer-account.aspx
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707

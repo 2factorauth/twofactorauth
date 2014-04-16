@@ -1,12 +1,32 @@
 websites:
     - name: Blizzard
-      img: blizzard.png
       url: http://blizzard.com
+      img: blizzard.png
       tfa: Yes
       sms: Yes
+<<<<<<< HEAD
       hardware: Yes
       software: Yes
       doc: http://us.battle.net/en/security/
+=======
+      software: Yes
+      hardware: Yes
+      doc: http://us.battle.net/en/security/
+
+    - name: EVE Online
+      url: http://www.eveonline.com/
+      twitter: EveOnline
+      img: eveonline.png
+      tfa: no
+
+    - name: Final Fantasy XIV
+      url: http://www.finalfantasyxiv.com
+      img: FFXIV.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.square-enix.com/na/account/otp/
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
 
     - name: GOG.com
       url: http://www.gog.com
@@ -15,43 +35,80 @@ websites:
       tfa: No
 
     - name: Guild Wars 2
+<<<<<<< HEAD
       img: guild_wars_2.png
+=======
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
       url: https://www.guildwars2.com
+      img: guildwars2.png
       tfa: Yes
+<<<<<<< HEAD
+=======
+      email: Yes
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
       software: Yes
       doc: https://help.guildwars2.com/entries/27626157-Two-Factor-Authentication
 
     - name: Humble Bundle
-      img: humble.png
       url: https://www.humblebundle.com/
+      img: humble.png
       tfa: Yes
+<<<<<<< HEAD
       software: Yes
+=======
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
       sms: Yes
+      software: Yes
       doc: http://support.humblebundle.com/customer/portal/articles/1412106
 
     - name: League of Legends
       url: http://leagueoflegends.com
+<<<<<<< HEAD
       img: league_of_legends.png
+=======
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
       twitter: leagueoflegends
+      img: leagueoflegends.png
       tfa: No
 
     - name: Origin
       url: https://www.origin.com/
-      twitter: OriginInsider
       img: origin.png
       tfa: Yes
       email: Yes
       doc: http://help.ea.com/en/article/origin-login-verification-information/
+<<<<<<< HEAD
+=======
+
+    - name: RuneScape
+      url: http://www.runescape.com/
+      img: runescape.png
+      tfa: Yes
+      email: Yes
+      doc: http://services.runescape.com/m=rswiki/en/Jagex_Account_Guardian
+
+    - name: "Star Wars: The Old Republic"
+      url: http://www.swtor.com/
+      img: swtor.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.swtor.com/info/security-key
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
 
     - name: Steam
-      img: steam.png
       url: http://store.steampowered.com/
+      img: steam.png
       tfa: Yes
       email: Yes
       doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
 
-    - name: Uplay
+    - name: Uplay (Ubisoft)
       url: http://uplay.ubi.com/
       twitter: UplayUbisoft
       img: uplay.png
       tfa: No
+<<<<<<< HEAD
+=======
+
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707

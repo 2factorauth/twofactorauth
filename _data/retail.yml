@@ -5,12 +5,49 @@ websites:
       img: amazon.png
       tfa: No
 
+    - name: Apple
+      url: https://appleid.apple.com
+      img: apple.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: http://support.apple.com/kb/ht5570
+
+    - name: eBay
+      url: http://ebay.com
+      img: ebay.png
+      tfa: Yes
+      sms: Yes
+      hardware: Yes
+      doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
+
     - name: Etsy
       url: http://www.etsy.com/
       img: etsy.png
       sms: Yes
       tfa: Yes
       doc: http://www.etsy.com/help/article/3335
+<<<<<<< HEAD
+=======
+
+    - name: Newegg
+      url: http://www.newegg.com
+      twitter: newegg
+      img: newegg.png
+      tfa: No
+
+    - name: Walgreens
+      url: http://www.walgreens.com
+      twitter: walgreens
+      img: walgreens.png
+      tfa: No
+
+    - name: Walmart
+      url: http://www.walmart.com/
+      twitter: walmartlabs
+      img: walmart.png
+      tfa: No
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
 
     - name: Zappos
       url: http://www.zappos.com/
@@ -18,6 +55,7 @@ websites:
       img: zappos.png
       tfa: No
 
+<<<<<<< HEAD
     - name: eBay
       url: http://ebay.com
       twitter: eBay
@@ -26,13 +64,22 @@ websites:
       sms: Yes
       hardware: Yes
       doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
-
-    - name: Newegg
-      url: http://www.newegg.com
-      twitter: newegg
-      img: newegg.png
+=======
+    - name: FNAC
+      url: http://www.fnac.com/
+      img: fnac.png
       tfa: No
+      twitter: Fnac
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
 
+    - name: Cdiscount
+      url: http://www.cdiscount.com/
+      img: cdiscount.png
+      tfa: No
+      twitter: Cdiscount
+      doc: https://clients.cdiscount.com/information/securityinternet.aspx
+
+<<<<<<< HEAD
     - name: Apple
       url: https://appleid.apple.com
       img: apple.png
@@ -83,6 +130,19 @@ websites:
       url: http://www.carrefour.fr/
       img: carrefour.png
       tfa: No
+=======
+    - name: Voyages-SNCF
+      url: http://en.voyages-sncf.com/en/
+      img: voyages-sncf.png
+      tfa: No
+      twitter: Voyagessncf_com
+      doc: http://help.en.voyages-sncf.com/en/
+
+    - name: Carrefour
+      url: http://www.carrefour.fr/
+      img: carrefour.png
+      tfa: No
+>>>>>>> c5f3adfe01f22316212b612e32b218f72e602707
       twitter: CarrefourFrance
       doc: http://help.en.voyages-sncf.com/en/
 
