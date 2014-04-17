@@ -40,6 +40,12 @@ websites:
       img: bmoharris.png
       tfa: No
 
+    - name: BNP Paribas
+      url: https://www.secure.bnpparibas.net
+      tfa: Yes
+      img: bnpparibas.png
+      doc: https://www.secure.bnpparibas.net/banque/portail/particulier/Fiche?type=folder&identifiant=Virements_en_ligne_20131014121544
+
     - name: Boeing Employee Credit Union
       url: https://www.becu.com/
       twitter: BECU
@@ -91,6 +97,12 @@ websites:
       twitter: Citibank
       img: citibank.png
       tfa: No
+
+    - name: Desjardins
+      url: http://www.desjardins.com/
+      img: desjardins.png
+      tfa: No
+      doc: http://www.desjardins.com/securite/pratiques-securite/
 
     - name: Discover
       url: https://www.discover.com/
@@ -180,6 +192,13 @@ websites:
       phone: Yes
       doc: https://www.motifinvesting.com/security
 
+    - name: National Bank Canada (NBC or BNC)
+      url: http://www.nbc.ca/
+      twitter: banquenationale
+      img: bnc.png
+      tfa: No
+      doc: http://www.nbc.ca/bnc/cda/productfamily/0,2664,divId-2_langId-1_navCode-17250,00.html
+
     - name: OptionsHouse
       img: optionshouse.png
       url: https://www.optionshouse.com
@@ -214,6 +233,13 @@ websites:
       twitter: RBC_Canada
       img: rbc.png
       tfa: No
+      doc: http://www.rbcroyalbank.com/online/online-banking-security-guarantee.html
+
+    - name: Scotiabank
+      url: http://www.scotiabank.com/
+      img: scotiabank.png
+      tfa: No
+      doc: http://www.scotiabank.com/ca/en/0,,2976,00.html
 
     - name: Scottrade
       url: https://www.scottrade.com/
@@ -235,6 +261,12 @@ websites:
       tfa: No
       status: https://twitter.com/simple/status/445966117543378944
 
+    - name: Société Générale
+      url: https://particuliers.societegenerale.fr/
+      tfa: Yes
+      img: societegenerale.png
+      doc: https://particuliers.societegenerale.fr/votre_site/configuration_securite/paiements_securises.html
+
     - name: SunTrust
       url: https://www.suntrust.com/
       twitter: SunTrust
@@ -252,6 +284,11 @@ websites:
       url: https://www.tdbank.com
       twitter: TDBank_US
       img: tdbank.png
+      tfa: No
+
+    - name: TD Canada Trust
+      url: http://www.tdcanadatrust.com/
+      img: tdcanadatrust.png
       tfa: No
 
     - name: US Bank
