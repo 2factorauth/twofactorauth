@@ -61,6 +61,12 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.cryptsy.com/pages/security
+      
+    - name: Eclipse Mining Consortium
+      url: https://eclipsemc.com
+      tfa: Yes
+      software: Yes
+      hardware: Yes
 
     - name: Justcoin Exchange
       url: https://justcoin.com/
@@ -73,8 +79,8 @@ websites:
       url: https://www.kraken.com/
       img: kraken.png
       doc: https://www.kraken.com/security/practices#two-factor-authentication
-      tfa: yes
-      software: yes
+      tfa: Yes
+      software: Yes
 
     - name: LocalBitcoins
       url: https://localbitcoins.com/
