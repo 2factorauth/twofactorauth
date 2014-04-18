@@ -8,6 +8,7 @@ websites:
       
     - name: Bitcoin-Central
       url: https://bitcoin-central.net
+      img: bitcoincentral.png
       tfa: Yes
       software: Yes
       hardware: Yes
@@ -15,6 +16,7 @@ websites:
        
     - name: Bitpay
       url: https://bitpay.com
+      img: bitpay.png
       tfa: Yes
       software: Yes
       doc: https://bitpay.com/two-factor
@@ -28,6 +30,7 @@ websites:
       
     - name: BTC-E
       url: https://btc-e.com
+      img: btc-e.png
       tfa: Yes
       software: Yes
       doc: https://support.btc-e.com/index.php?/Knowledgebase/Article/View/97/25/how-do-i-set-2-factor-authentication-to-my-btc-e-account
@@ -51,6 +54,7 @@ websites:
       
     - name: Coinkite
       url: https://coinkite.com
+      img: coinkite.png
       tfa: Yes
       software: Yes
       doc: https://coinkite.com/settings/pws
@@ -64,6 +68,7 @@ websites:
       
     - name: Eclipse Mining Consortium
       url: https://eclipsemc.com
+      img: eclipsemc.png
       tfa: Yes
       software: Yes
       hardware: Yes
