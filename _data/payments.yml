@@ -4,6 +4,13 @@ websites:
       twitter: AmazonPayments
       img: amazon.png
       tfa: No
+      
+    - name: Buycraft
+      url: http://buycraft.net
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: http://server.buycraft.net/tfa
 
     - name: GoCardless
       img: gocardless.png
