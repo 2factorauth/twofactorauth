@@ -5,6 +5,19 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://bips.me/security
+      
+    - name: Bitcoin-Central
+      url: https://bitcoin-central.net
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://bitcoin-central.net/page/profile/security
+      
+    - name: Bitpay
+      url: https://bitpay.com
+      tfa: Yes
+      software: Yes
+      doc: https://bitpay.com/two-factor
 
     - name: Bitstamp
       url: https://bitstamp.net
@@ -21,6 +34,12 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://blockchain.info/wallet/support-pages
+      
+    - name: BTC-E
+      url: https://btc-e.com
+      tfa: Yes
+      software: Yes
+      doc: https://support.btc-e.com/index.php?/Knowledgebase/Article/View/97/25/how-do-i-set-2-factor-authentication-to-my-btc-e-account
 
     - name: Coinbase
       url: https://coinbase.com/
