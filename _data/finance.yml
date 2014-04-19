@@ -26,6 +26,13 @@ websites:
       hardware: Yes
       doc: https://www.bankofamerica.com/privacy/online-mobile-banking-privacy/safepass.go
 
+    - name: Banque Postale
+      url: https://www.labanquepostale.fr
+      twitter: LaBanquePostale
+      img: banquepostale.png
+      tfa: Yes
+      doc: https://www.labanquepostale.fr/particuliers/au_quotidien/banque_en_ligne/par_internet/certicode.gen.html
+
     - name: Barclays
       url: http://http://www.barclays.co.uk/
       img: barclays.png
@@ -43,6 +50,7 @@ websites:
     - name: BNP Paribas
       url: https://www.secure.bnpparibas.net
       tfa: Yes
+      sms: Yes
       img: bnpparibas.png
       doc: https://www.secure.bnpparibas.net/banque/portail/particulier/Fiche?type=folder&identifiant=Virements_en_ligne_20131014121544
 
@@ -51,6 +59,13 @@ websites:
       twitter: BECU
       img: becu.png
       tfa: No
+
+    - name: Caisse d'Epargne
+      url: https://www.caisse-epargne.fr
+      twitter: Caisse_Epargne
+      img: caissedepargne.png
+      tfa: Yes
+      doc: https://www.caisse-epargne.fr/particuliers/ile-de-france/securite_moyens_paiement_cb.aspx
 
     - name: Capital One
       url: https://www.capitalone.com/
@@ -97,6 +112,13 @@ websites:
       twitter: Citibank
       img: citibank.png
       tfa: No
+
+    - name: Crédit Agricole Paris
+      url: https://www.ca-paris.fr/
+      twitter: CreditAgricole
+      img: ca.png
+      tfa: Yes
+      doc: http://www.credit-agricole.fr/guidesecurite/-Le-paiement-sur-Internet-.html
 
     - name: Desjardins
       url: http://www.desjardins.com/
@@ -264,6 +286,8 @@ websites:
     - name: Société Générale
       url: https://particuliers.societegenerale.fr/
       tfa: Yes
+      sms: Yes
+      software: yes
       img: societegenerale.png
       doc: https://particuliers.societegenerale.fr/votre_site/configuration_securite/paiements_securises.html
 
