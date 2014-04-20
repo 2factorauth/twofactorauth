@@ -39,9 +39,28 @@ syntax:
    using 16x16 but upgraded for various high density screens.
 3. **Be Awesome**: You need to be awesome. That is all.
 
+### Site Criteria
+
+The following is a rough criteria and explanations for what sites should be on
+2FA.org. If one of the following Criteria is met, it belongs on 2FA.org:
+
+1. **Personal Info/Image**: Any site that deals with personal info or a person's
+   image. An example of a site with **Personal Info** would be their Amazon
+   account and a site regarding **Personal Image** would be one like Twitter.
+2. **Data**: This means data that is either important or sensitive. It also is
+   any data relating to Criteria 1.
+3. **Money**: Any site that deals with money.
+4. **Control**: This is a more general Criteria that includes sites that give
+   access to things that might infringe upon Criteria 1, 2, and 3. An example of
+   this is a site that allows remote access.
+
+If you have any questions regarding whether or not a site matches one of the
+Criteria, just open an Issue and we'll take a look.
+
 ### New Sections
 
-To add a new section, modify the `sections` value in [main.yml](_data/main.yml) and follow the template below:
+To add a new section, modify the `sections` value in [main.yml](_data/main.yml)
+and follow the template below:
 
 ```yml
 sections:
