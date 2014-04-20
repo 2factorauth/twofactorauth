@@ -13,6 +13,20 @@ websites:
       software: Yes
       doc: http://support.apple.com/kb/ht5570
 
+    - name: Carrefour
+      url: http://www.carrefour.fr/
+      img: carrefour.png
+      tfa: No
+      twitter: CarrefourFrance
+      doc: http://help.en.voyages-sncf.com/en/
+
+    - name: Cdiscount
+      url: http://www.cdiscount.com/
+      img: cdiscount.png
+      tfa: No
+      twitter: Cdiscount
+      doc: https://clients.cdiscount.com/information/securityinternet.aspx
+
     - name: eBay
       url: http://ebay.com
       img: ebay.png
@@ -27,11 +41,24 @@ websites:
       tfa: Yes
       doc: http://www.etsy.com/help/article/3335
 
+    - name: FNAC
+      url: http://www.fnac.com/
+      img: fnac.png
+      tfa: No
+      twitter: Fnac
+
     - name: Newegg
       url: http://www.newegg.com
       twitter: newegg
       img: newegg.png
       tfa: No
+
+    - name: Voyages-SNCF
+      url: http://en.voyages-sncf.com/en/
+      img: voyages-sncf.png
+      tfa: No
+      twitter: Voyagessncf_com
+      doc: http://help.en.voyages-sncf.com/en/
 
     - name: Walgreens
       url: http://www.walgreens.com
