@@ -1,88 +1,102 @@
 websites:
     - name: BIPS
-      img: bips.png
       url: https://bips.me/
+      img: bips.png
       tfa: Yes
-      sms: No
-      goog: Yes
-      authy: No
+      software: Yes
       doc: https://bips.me/security
-      custom:
-          - icon: key
-            url: https://bips.me/security
+      
+    - name: Bitcoin-Central
+      url: https://bitcoin-central.net
+      img: bitcoincentral.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://bitcoin-central.net/page/profile/security
+       
+    - name: Bitpay
+      url: https://bitpay.com
+      img: bitpay.png
+      tfa: Yes
+      software: Yes
+      doc: https://bitpay.com/two-factor
 
     - name: Bitstamp
-      img: bitstamp.png
       url: https://bitstamp.net
+      img: bitstamp.png
       tfa: Yes
-      sms: No
-      goog: Yes
-      authy: Yes
+      software: Yes
       doc: https://www.bitstamp.net/s/documents/bitstamp_2_factor_authentication_guide.pdf
+      
+    - name: BTC-E
+      url: https://btc-e.com
+      img: btc-e.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.btc-e.com/index.php?/Knowledgebase/Article/View/97/25/how-do-i-set-2-factor-authentication-to-my-btc-e-account
 
     - name: Blockchain
-      img: blockchain.png
       url: https://blockchain.info/
+      img: blockchain.png
       tfa: Yes
       sms: Yes
-      goog: Yes
+      software: Yes
+      hardware: Yes
       doc: https://blockchain.info/wallet/support-pages
-      custom:
-          - icon: key
-            url: https://blockchain.info/wallet/yubikey
 
     - name: Coinbase
       url: https://coinbase.com/
       img: coinbase.png
       tfa: Yes
       sms: Yes
-      goog: Yes
-      authy: Yes
+      software: Yes
       doc: http://blog.coinbase.com/post/25677574019/coinbase-now-offers-two-factor-authentication
+      
+    - name: Coinkite
+      url: https://coinkite.com
+      img: coinkite.png
+      tfa: Yes
+      software: Yes
+      doc: https://coinkite.com/settings/pws
 
     - name: Cryptsy
       url: https://cryptsy.com/
       img: cryptsy.png
       tfa: Yes
-      sms: No
-      goog: Yes
-      authy: Yes
+      software: Yes
       doc: https://www.cryptsy.com/pages/security
-
-    - name: LocalBitcoins
-      url: https://localbitcoins.com/
-      img: localbitcoins.png
+      
+    - name: Eclipse Mining Consortium
+      url: https://eclipsemc.com
+      img: eclipsemc.png
       tfa: Yes
-      sms: No
-      goog: Yes
-      authy: No
-      doc: http://localbitcoins.blogspot.fi/2013/05/using-two-factor-authentication-on.html
+      software: Yes
+      hardware: Yes
 
     - name: Justcoin Exchange
       url: https://justcoin.com/
       img: justcoinexchange.png
       tfa: Yes
-      sms: No
-      goog: Yes
-      authy: No
-      doc: https://twitter.com/jstcoin/status/445900548743897088
-
-    - name: WeMineLTC.com
-      url: https://www.wemineltc.com
-      img: wemineltc.png
-      tfa: Yes
-      sms: No
-      goog: Yes
-      authy: No
+      software: Yes
       doc: https://twitter.com/jstcoin/status/445900548743897088
 
     - name: Kraken
       url: https://www.kraken.com/
       img: kraken.png
-      twitter: krakenfx
       doc: https://www.kraken.com/security/practices#two-factor-authentication
-      tfa: yes
-      goog: yes
-      custom:
-          - icon: key
-            url: https://www.kraken.com/security/practices#two-factor-authentication
+      tfa: Yes
+      software: Yes
+
+    - name: LocalBitcoins
+      url: https://localbitcoins.com/
+      img: localbitcoins.png
+      tfa: Yes
+      software: Yes
+      doc: http://localbitcoins.blogspot.fi/2013/05/using-two-factor-authentication-on.html
+
+    - name: WeMineLTC.com
+      url: https://www.wemineltc.com
+      img: wemineltc.png
+      tfa: Yes
+      software: Yes
+      doc: https://twitter.com/jstcoin/status/445900548743897088
