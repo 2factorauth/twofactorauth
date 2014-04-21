@@ -7,12 +7,20 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://us.battle.net/en/security/
+            
+    - name: Enjin
+      url: http://www.enjin.com/
+      img: enjin.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: http://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
 
     - name: EVE Online
       url: http://www.eveonline.com/
       twitter: EveOnline
       img: eveonline.png
-      tfa: no
+      tfa: No
 
     - name: Final Fantasy XIV
       url: http://www.finalfantasyxiv.com
@@ -78,6 +86,12 @@ websites:
       tfa: Yes
       email: Yes
       doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
+      
+    - name: Trion Worlds
+      url: http://www.trionworlds.com/en/
+      img: trionworlds.png
+      tfa: Yes
+      software: Yes
 
     - name: Uplay
       url: http://uplay.ubi.com/
