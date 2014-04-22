@@ -115,6 +115,19 @@ websites:
       tfa: No
       status: https://twitter.com/loopia/statuses/446223091161911296
 
+    - name: Metaname
+      url: http://metaname.net/
+      img: metaname.png
+      tfa: Yes
+      sms: Yes
+      doc: https://metaname.net/public/two_factor_authentication
+
+    - name: MyDomain
+      url: http://www.mydomain.com/
+      twitter: mydomaindotcom
+      img: mydomain.png
+      tfa: No
+
     - name: Name.com
       url: http://www.name.com/
       img: namecom.png

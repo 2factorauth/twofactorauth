@@ -8,19 +8,17 @@ websites:
       hardware: Yes
       doc: http://us.battle.net/en/security/
 
+    - name: Desura
+      url: http://www.desura.com/
+      img: desura.png
+      tfa: No
+      twitter: desura
+
     - name: EVE Online
       url: http://www.eveonline.com/
       twitter: EveOnline
       img: eveonline.png
       tfa: no
-
-    - name: Final Fantasy XIV
-      url: http://www.finalfantasyxiv.com
-      img: FFXIV.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.square-enix.com/na/account/otp/
 
     - name: GOG.com
       url: http://www.gog.com
@@ -79,9 +77,16 @@ websites:
       email: Yes
       doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
 
+    - name: Square Enix
+      url: http://na.square-enix.com/
+      img: squarenix.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.square-enix.com/na/account/otp/
+
     - name: Uplay
       url: http://uplay.ubi.com/
       twitter: UplayUbisoft
       img: uplay.png
       tfa: No
-

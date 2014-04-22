@@ -11,6 +11,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
       doc: http://aws.amazon.com/iam/details/mfa/
 
     - name: Bitbucket
@@ -49,6 +50,7 @@ websites:
       twitter: heroku
       img: heroku.png
       tfa: No
+      status: https://discussion.heroku.com/t/support-for-two-factor-authentication-login/159/20
 
     - name: HP Cloud
       url: https://www.hpcloud.com/
@@ -152,6 +154,12 @@ websites:
       hardware: Yes
       doc: http://blog.status.io/2014/03/01/yubikey/
 
+    - name: StatusCake
+      url: https://statuscake.com/
+      img: statuscake.png
+      tfa: Yes
+      sms: Yes
+
     - name: Twilio
       url: https://www.twilio.com/
       img: twilio.png
@@ -166,3 +174,9 @@ websites:
       sms: Yes
       software: Yes
       doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+
+    - name: Zapier
+      url: https://www.zapier.com
+      twitter: zapier
+      img: zapier.png
+      tfa: No
