@@ -26,5 +26,3 @@ This code is distributed under the MIT license. For more info, read the
 
 [contrib]: /CONTRIBUTING.md
 [license]: /LICENSE
-[travis]: https://travis-ci.org/jdavis/twofactorauth
-[yaml]: http://www.yaml.org/

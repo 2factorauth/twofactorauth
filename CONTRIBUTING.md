@@ -105,7 +105,7 @@ A lot of people have different ideas of what constitutes Two Factor Auth and wha
 
 As an example, a site that prompts you for an authentication token following user login would be considered Two Factor Auth. A site that does not prompt you for a token upon login, but prompts you for a token when you try to perform a sensitive action would not be considered Two Factor Auth.
 
-For context, check out the discussion in [#242](https://github.com/jdavis/twofactorauth/issues/242).
+For context, check out the discussion in [#242][242].
 
 ### New Providers
 
@@ -124,3 +124,7 @@ To add a new provider simply add to the `providers.yml` file, marking `Yes` wher
     software: Yes
     hardware: Yes
 ```
+
+[travis]: https://travis-ci.org/jdavis/twofactorauth
+[yaml]: http://www.yaml.org/
+[242]: https://github.com/jdavis/twofactorauth/issues/242
