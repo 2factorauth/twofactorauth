@@ -47,6 +47,7 @@ websites:
       twitter: leagueoflegends
       img: leagueoflegends.png
       tfa: No
+      status: http://forums.na.leagueoflegends.com/board/showthread.php?p=45603580#45603580
 
     - name: Origin
       url: https://www.origin.com/
@@ -54,6 +55,13 @@ websites:
       tfa: Yes
       email: Yes
       doc: http://help.ea.com/en/article/origin-login-verification-information/
+      
+    - name: Rift
+      url: http://www.riftgame.com/en/
+      img: rift.png
+      tfa: Yes
+      software: Yes
+      doc: https://rift.trionworlds.com/account/security/security-flow
 
     - name: RuneScape
       url: http://www.runescape.com/
