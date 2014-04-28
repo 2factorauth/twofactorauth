@@ -31,8 +31,10 @@ websites:
     - name: Mandrill
       url: https://mandrill.com/
       img: mandrill.png
-      tfa: No
-      twitter: mandrillapp
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://help.mandrill.com/entries/57465557
 
     - name: Mixpanel
       url: https://mixpanel.com/
