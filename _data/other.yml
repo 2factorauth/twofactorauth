@@ -31,15 +31,17 @@ websites:
     - name: Mandrill
       url: https://mandrill.com/
       img: mandrill.png
-      tfa: No
-      twitter: mandrillapp
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://help.mandrill.com/entries/57465557-Setting-up-multifactor-authentication-with-Mandrill
 
     - name: Mixpanel
       url: https://mixpanel.com/
       img: mixpanel.png
       tfa: No
       twitter: mixpanel
-      
+
     - name: United States Social Security Administration
       url: http://www.ssa.gov
       img: usssa.png
