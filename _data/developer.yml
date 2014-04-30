@@ -1,4 +1,14 @@
 websites:
+    - name: Aha!
+      url: http://www.aha.io/
+      img: aha.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: http://support.aha.io/entries/36821618-Two-factor-authentication-2FA-user-set-up
+      
     - name: Airbrake
       url: https://airbrake.io
       twitter: airbrake
@@ -13,6 +23,14 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://aws.amazon.com/iam/details/mfa/
+      
+    - name: aTech Media
+      url: http://atechmedia.com
+      img: atechmedia.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://identity.atechmedia.com/2factor
 
     - name: Bitbucket
       url: https://bitbucket.org
@@ -20,6 +38,13 @@ websites:
       img: bitbucket.png
       tfa: No
       status: https://twitter.com/bitbucket/status/445631335169028096
+      
+    - name: Cloud 66
+      url: http://www.cloud66.com
+      img: cloud66.png
+      tfa: Yes
+      software: Yes
+      doc: http://blog.cloud66.com/post/46831807237/two-factor-authentication-for-your-accounts
 
     - name: DigitalOcean
       url: https://www.digitalocean.com/
@@ -92,6 +117,14 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
+      
+    - name: MongoHQ
+      url: https://www.mongohq.com
+      img: mongohq.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: http://docs.mongohq.com/security/mongohq-two-factor-authentication.html
 
     - name: NearlyFreeSpeech.NET
       url: https://www.nearlyfreespeech.net/
