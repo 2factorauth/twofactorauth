@@ -7,10 +7,6 @@ sections:
     title: Banking
     icon: dollar
 
-  - id: bitcoin
-    title: Cryptocurrencies
-    icon: bitcoin
-
   - id: cloud
     title: Cloud Computing
     icon: cloud
@@ -18,6 +14,10 @@ sections:
   - id: communication
     title: Communication
     icon: chat
+
+  - id: bitcoin
+    title: Cryptocurrencies
+    icon: bitcoin
 
   - id: developer
     title: Developer
@@ -32,7 +32,7 @@ sections:
     icon: mail
 
   - id: finance
-    title: Personal Finance
+    title: Finance
     icon: money
 
   - id: gaming
