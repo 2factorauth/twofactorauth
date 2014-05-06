@@ -29,8 +29,9 @@ websites:
       url: https://www.heroku.com/
       twitter: heroku
       img: heroku.png
-      tfa: No
-      status: https://devcenter.heroku.com/articles/two-factor-authentication
+      tfa: Yes
+      software: Yes
+      doc: https://devcenter.heroku.com/articles/two-factor-authentication
 
     - name: HP Cloud
       url: https://www.hpcloud.com/
