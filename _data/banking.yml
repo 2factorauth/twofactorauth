@@ -1,0 +1,207 @@
+websites:
+    - name: Ally Bank
+      url: http://www.ally.com/
+      img: allybank.png
+      tfa: Yes
+      sms: Yes
+      doc: http://www.ally.com/messages/sms/index.html
+
+    - name: American Express
+      url: https://www.americanexpress.com/
+      twitter: AmericanExpress
+      img: americanexpress.png
+      tfa: No
+
+    - name: Bank of America
+      url: https://www.bankofamerica.com/
+      img: bankofamerica.png
+      tfa: Yes
+      sms: Yes
+      hardware: Yes
+      doc: https://www.bankofamerica.com/privacy/online-mobile-banking-privacy/safepass.go
+
+    - name: Barclays
+      url: http://www.barclays.co.uk/
+      img: barclays.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: http://ask.barclays.co.uk/help/online_banking/whatis_pinsentry
+
+    - name: BMO Harris Bank
+      url: https://www.bmoharris.com/
+      twitter: BMOHarrisBank
+      img: bmoharris.png
+      tfa: No
+
+    - name: Boeing Employee Credit Union
+      url: https://www.becu.org/
+      twitter: BECU
+      img: becu.png
+      tfa: No
+
+    - name: Capital One
+      url: https://www.capitalone.com/
+      twitter: CapitalOne
+      img: capitalone.png
+      tfa: No
+
+    - name: Capital One 360
+      url: https://home.capitalone360.com/
+      twitter: CapitalOne360
+      img: capitalone360.png
+      tfa: No
+
+    - name: Chase
+      url: https://www.chase.com/
+      img: chase.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      email: Yes
+      doc: https://mobilebanking.chase.com/Public/Docs/Faq?nodeId=1&itemId=2
+
+    - name: CIBC
+      url: http://www.cibc.ca
+      twitter: cibc
+      img: cibc.png
+      tfa: No
+
+    - name: Citibank
+      url: https://online.citibank.com/US/Welcome.c
+      twitter: Citibank
+      img: citibank.png
+      tfa: No
+
+    - name: Discover
+      url: https://www.discover.com/
+      img: discover.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      doc: https://www.discover.com/credit-cards/help-center/faqs/enhancing-account-security.html
+
+    - name: Fairwinds
+      url: https://www.fairwinds.org
+      img: fairwinds.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      doc: "https://www.fairwinds.org/inside/privacy/security_we.asp#multifactor-auth"
+
+    - name: GE Capital Bank
+      url: https://www.gecapitalbank.com
+      twitter: GECapital
+      img: GECapitalBank.png
+      tfa: No
+
+    - name: HSBC
+      url: https://www.hsbc.com
+      img: hsbc.png
+      tfa: Yes
+      hardware: Yes
+      doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
+
+    - name: LendingClub
+      url: https://www.lendingclub.com/
+      twitter: lendingclub
+      img: lendingclub.png
+      tfa: No
+
+    - name: Lloyds Bank
+      url: http://www.lloydsbank.com/
+      twitter: AskLloydsBank
+      img: lloydsbank.png
+      tfa: No
+
+    - name: Halifax
+      url: http://www.halifax.co.uk
+      twitter: AskHalifaxBank
+      img: halifax.png
+      tfa: No
+
+    - name: Patelco Credit Union
+      url: https://www.patelco.org/
+      twitter: PatelcoPays
+      img: patelco.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      doc: https://www.patelco.org/Privacy-Security/Protection
+
+    - name: PenFed
+      url: https://www.penfed.org/
+      twitter: PenFed
+      img: penfed.png
+      tfa: No
+
+    - name: PNC Bank
+      url: https://www.pnc.com/
+      twitter: pncnews
+      img: pncbank.png
+      tfa: No
+
+    - name: RBC Royal Bank
+      url: http://www.rbcroyalbank.com
+      twitter: RBC_Canada
+      img: rbc.png
+      tfa: No
+
+    - name: SEB
+      url: http://www.seb.se/pow/default.asp
+      img: seb.png
+      tfa: Yes
+      hardware: Yes
+      doc: http://www.seb.se/pow/wcp/index.asp?ss=/pow/wcp/templates/sebcollection.cfmc.asp%3FDUID%3DDUID_623697DCF55C4576C1256DEF00637BE3
+
+    - name: Simple
+      url: https://www.simple.com/
+      twitter: simple
+      img: simple.png
+      tfa: No
+      status: https://twitter.com/simple/status/445966117543378944
+
+    - name: SunTrust
+      url: https://www.suntrust.com/
+      twitter: SunTrust
+      img: suntrust.png
+      tfa: No
+
+    - name: TD Bank
+      url: https://www.tdbank.com
+      twitter: TDBank_US
+      img: tdbank.png
+      tfa: No
+
+    - name: US Bank
+      url: https://www.usbank.com/
+      twitter: usbank
+      img: usbank.png
+      tfa: No
+
+    - name: USAA
+      url: https://www.usaa.com/
+      img: usaa.png
+      tfa: yes
+      sms: yes
+      software: yes
+      doc: https://www.usaa.com/inet/pages/security_token_logon_options
+
+    - name: UW Credit Union
+      url: http://www.uwcu.org/
+      img: uwcu.png
+      twitter: uwcu
+      tfa: yes
+      sms: yes
+      software: yes
+      phone: yes
+      doc: http://www.uwcu.org/OnlineBanking/OnlineSecurity/VerifyU.aspx
+
+    - name: Wells Fargo
+      url: https://www.wellsfargo.com/
+      twitter: WellsFargo
+      img: wellsfargo.png
+      tfa: no
