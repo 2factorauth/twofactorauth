@@ -54,10 +54,16 @@ providers:
     img: yubico.png
     hardware: Yes
     software: Yes
-    
+
   - name: WiKID Systems
     url:  https://www.wikidsystems.com
     img:  wikid.png
     hardware: No
     software: Yes
 
+  - name: SAASPASS
+    url: https://www.saaspass.com
+    img: saaspass.png
+    phone: Yes
+    sms: Yes
+    software: Yes
