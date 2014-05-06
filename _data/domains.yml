@@ -35,13 +35,6 @@ websites:
       software: Yes
       doc: http://www.domeny.tv/en/two-factor-authentication
 
-    - name: Dreamhost
-      url: https://dreamhost.com
-      img: dreamhost.png
-      tfa: Yes
-      software: Yes
-      doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
-
     - name: Dyn
       url: http://dyn.com/
       img: dyn.png
@@ -160,10 +153,4 @@ websites:
       url: https://register4less.com/
       twitter: register4less
       img: register4less.png
-      tfa: No
-
-    - name: Zen
-      url: http://www.zen.co.uk
-      twitter: zeninternet
-      img: zen.png
       tfa: No
