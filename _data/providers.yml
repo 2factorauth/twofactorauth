@@ -30,6 +30,13 @@ providers:
     img: launchkey.png
     software: Yes
 
+  - name: Solidpass
+    url: http://www.solidpass.com
+    img: solidpass.png
+    hardware: Yes
+    sms: Yes
+    software: Yes
+
   - name: Rublon
     url: https://www.rublon.com/
     img: rublon.png
@@ -61,9 +68,3 @@ providers:
     hardware: No
     software: Yes
 
-  - name: SAASPASS
-    url: https://www.saaspass.com
-    img: saaspass.png
-    phone: Yes
-    sms: Yes
-    software: Yes
