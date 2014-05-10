@@ -4,6 +4,14 @@
 
 providers:
 
+  - name: SAT Mobile ID
+    url: https://www.SecureAccessTechnologies.com
+    img: sat.png
+    sms: Yes
+    phone: Yes
+    software: Yes
+    hardware: Yes
+
   - name: Authy
     url: https://authy.com
     img: authy.png
