@@ -20,14 +20,6 @@ websites:
       tfa: Yes
       sms: Yes
 
-    - name: Mailchimp
-      url: https://mailchimp.com/
-      img: mailchimp.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://blog.mailchimp.com/alterego-integrations-for-easy-authentication/
-
     - name: Mandrill
       url: https://mandrill.com/
       img: mandrill.png
@@ -51,12 +43,24 @@ websites:
       phone: Yes
       doc: http://technet.microsoft.com/en-us/library/dn383636.aspx
 
+    - name: Trello
+      url: https://trello.com
+      twitter: trello
+      img: trello.png
+      tfa: No
+
     - name: United States Social Security Administration
       url: http://www.ssa.gov
       img: usssa.png
       tfa: Yes
       sms: Yes
       doc: https://secure.ssa.gov/RIL/HpsView.do#question3
+
+    - name: Wunderlist
+      url: https://www.wunderlist.com
+      twitter: Wunderlist
+      img: wunderlist.png
+      tfa: No
 
     - name: Zendesk
       url: http://www.zendesk.com

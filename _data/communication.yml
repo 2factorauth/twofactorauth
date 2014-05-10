@@ -31,6 +31,20 @@ websites:
       img: hipchat.png
       tfa: No
 
+    - name: Mailchimp
+      url: https://mailchimp.com/
+      img: mailchimp.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://blog.mailchimp.com/alterego-integrations-for-easy-authentication/
+
+    - name: Mailgun
+      url: https://mailgun.com
+      twitter: Mail_Gun
+      img: mailgun.png
+      tfa: No
+
     - name: Sendloop
       url: http://app.sendloop.com
       img: sendloop.png
