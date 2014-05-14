@@ -11,6 +11,11 @@ providers:
     phone: Yes
     software: Yes
     hardware: Yes
+    
+  - name: Authenticator Plus
+    url: http://authenticatorplus.com
+    img: authenticatorplus.png
+    software: Yes
 
   - name: Duo Security
     url: https://www.duosecurity.com
