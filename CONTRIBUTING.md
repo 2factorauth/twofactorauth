@@ -88,10 +88,6 @@ If a site doesn't support 2FA in certain countries, modify the `international`
 value to include what exceptions there are. See the current site for examples of
 this.
 
-```yml
-<site id>: "US only"
-```
-
 #### Pro Tips
 
 - See Guideline #2 about icons. The png file should go in the corresponding `img/section` folder.
