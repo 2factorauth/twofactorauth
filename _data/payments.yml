@@ -27,7 +27,8 @@ websites:
       tfa: No
       status: https://twitter.com/Payoneer/status/456922100767674369
 
-    - name: PayPal
+    - id: paypal
+      name: PayPal
       url: https://www.paypal.com/
       img: paypal.png
       tfa: Yes
