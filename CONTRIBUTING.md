@@ -78,7 +78,18 @@ this example:
           phone: Yes
           software: Yes
           hardware: Yes
+          international: "International exceptions here"
           doc: <link to site 2FA documentation>
+```
+
+#### International Exceptions
+
+If a site doesn't support 2FA in certain countries, modify the `international`
+value to include what exceptions there are. See the current site for examples of
+this.
+
+```yml
+<site id>: "US only"
 ```
 
 #### Pro Tips
