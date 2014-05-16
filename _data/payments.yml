@@ -27,14 +27,15 @@ websites:
       tfa: No
       status: https://twitter.com/Payoneer/status/456922100767674369
 
-    - id: paypal
-      name: PayPal
+    - name: PayPal
       url: https://www.paypal.com/
       img: paypal.png
       tfa: Yes
       sms: Yes
       software: Yes
       hardware: Yes
+      international:
+          "SMS: US only."
       doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
 
     - name: Skrill

@@ -1,12 +1,11 @@
-{% if site.data.international[include.id] %}
-    {% assign i = site.data.international[include.id] %}
+{% if include.website.international %}
 
 {% capture html %}
 <div class='header'>
     International
 </div>
 <div class='content'>
-    SMS: {{ i.sms }}
+    {{ include.website.international }}
 </div>
 {% endcapture %}
 

@@ -5,13 +5,14 @@ websites:
       img: amazon.png
       tfa: No
 
-    - id: apple
-      name: Apple
+    - name: Apple
       url: https://appleid.apple.com
       img: apple.png
       tfa: Yes
       sms: Yes
       software: Yes
+      international:
+          "SMS: US only."
       doc: http://support.apple.com/kb/ht5570
 
     - name: Comixology
