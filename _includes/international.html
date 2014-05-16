@@ -1,0 +1,19 @@
+{% if site.data.international[include.id] %}
+    {% assign i = site.data.international[include.id] %}
+
+{% capture html %}
+<div class='header'>
+    International
+</div>
+<div class='content'>
+    SMS: {{ i.sms }}
+</div>
+{% endcapture %}
+
+        <span class="popup international"
+                data-position="bottom center"
+                data-variation="inverted"
+                data-html="{{ html | strip_newlines }}">
+                <i class="warning red link icon"></i>
+        </span>
+{% endif %}

@@ -100,6 +100,7 @@ hash: SupportTwoFactorAuth
                                                 <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
                                             {% endif %}
                                                 <a href="{{ website.url }}">{{ website.name }}</a>
+                                                {% include international.html id=website.id %}
                                             </td>
 
                                             <td class="positive icon">
