@@ -3,19 +3,67 @@ websites:
       url: http://automater.pl/en/
       img: automater.png
       tfa: Yes
-      sms: No
-      authy: No
-      goog: No
+      software: Yes
       doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
-      custom:
-        - icon: shield
-          url: "https://rublon.com/"
 
-    - name: Delighted
-      img: delighted.png
-      url: https://delightedapp.com/
+    - name: Cisco Meraki
+      url: https://meraki.cisco.com/
+      img: meraki.png
       tfa: Yes
       sms: Yes
-      goog: No
-      authy: No
-      doc: https://delightedapp.com/
+      software: Yes
+      doc: https://kb.meraki.com/knowledge_base/log-in-security-configuring-account-and-password-policies-for-dashboard-administrators
+
+    - name: Delighted
+      url: https://delightedapp.com/
+      img: delighted.png
+      tfa: Yes
+      sms: Yes
+
+    - name: Mandrill
+      url: https://mandrill.com/
+      img: mandrill.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://help.mandrill.com/entries/57465557
+
+    - name: Mixpanel
+      url: https://mixpanel.com/
+      img: mixpanel.png
+      tfa: No
+      twitter: mixpanel
+
+    - name: Office 365
+      url: http://office.microsoft.com/en-us/business/
+      img: office365.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      phone: Yes
+      doc: http://technet.microsoft.com/en-us/library/dn383636.aspx
+
+    - name: Trello
+      url: https://trello.com
+      twitter: trello
+      img: trello.png
+      tfa: No
+
+    - name: United States Social Security Administration
+      url: http://www.ssa.gov
+      img: usssa.png
+      tfa: Yes
+      sms: Yes
+      doc: https://secure.ssa.gov/RIL/HpsView.do#question3
+
+    - name: Wunderlist
+      url: https://www.wunderlist.com
+      twitter: Wunderlist
+      img: wunderlist.png
+      tfa: No
+
+    - name: Zendesk
+      url: http://www.zendesk.com
+      twitter: Zendesk
+      img: zendesk.png
+      tfa: No

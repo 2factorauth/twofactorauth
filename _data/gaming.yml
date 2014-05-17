@@ -1,19 +1,24 @@
 websites:
     - name: Blizzard
-      img: blizzard.png
       url: http://blizzard.com
+      img: blizzard.png
       tfa: Yes
       sms: Yes
+      software: Yes
+      hardware: Yes
       doc: http://us.battle.net/en/security/
-      custom:
-          - icon: android
-            url: https://market.android.com/details?id=com.blizzard.bma
-          - icon: apple
-            url: https://itunes.apple.com/app/battle.net-mobile-authenticator/id306862897
-          - icon: windows
-            url: http://www.windowsphone.com/en-us/store/app/battle-net-authenticator/1347bbfb-bca2-e011-986b-78e7d1fa76f8?type=phoneapp&id=1347bbfb-bca2-e011-986b-78e7d1fa76f8
-          - icon: mobile
-            url: http://appworld.blackberry.com/webstore/content/13011/?countrycode=US&lang=en
+
+    - name: Desura
+      url: http://www.desura.com/
+      img: desura.png
+      tfa: No
+      twitter: desura
+
+    - name: EVE Online
+      url: http://www.eveonline.com/
+      twitter: EveOnline
+      img: eveonline.png
+      tfa: no
 
     - name: GOG.com
       url: http://www.gog.com
@@ -22,53 +27,73 @@ websites:
       tfa: No
 
     - name: Guild Wars 2
-      img: guild_wars_2.png
       url: https://www.guildwars2.com
+      img: guildwars2.png
       tfa: Yes
-      goog: Yes
-      authy: Yes
+      email: Yes
+      software: Yes
       doc: https://help.guildwars2.com/entries/27626157-Two-Factor-Authentication
-      custom:
-          - icon: mail
-          
-    - name: EVE Online
-      twitter: EveOnline
-      img: eve_online.png
-      url: http://www.eveonline.com/
-      tfa: no
 
     - name: Humble Bundle
-      img: humble.png
       url: https://www.humblebundle.com/
+      img: humble.png
       tfa: Yes
-      goog: No
-      authy: Yes
       sms: Yes
+      software: Yes
       doc: http://support.humblebundle.com/customer/portal/articles/1412106
 
     - name: League of Legends
       url: http://leagueoflegends.com
-      img: league_of_legends.png
       twitter: leagueoflegends
+      img: leagueoflegends.png
       tfa: No
+      status: http://forums.na.leagueoflegends.com/board/showthread.php?p=45603580#45603580
 
     - name: Origin
       url: https://www.origin.com/
-      twitter: OriginInsider
       img: origin.png
       tfa: Yes
+      email: Yes
       doc: http://help.ea.com/en/article/origin-login-verification-information/
-      custom:
-          - icon: mail
+      
+
+    - name: RuneScape
+      url: http://www.runescape.com/
+      img: runescape.png
+      tfa: Yes
+      email: Yes
+      doc: http://services.runescape.com/m=rswiki/en/Jagex_Account_Guardian
+
+    - name: "Star Wars: The Old Republic"
+      url: http://www.swtor.com/
+      img: swtor.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.swtor.com/info/security-key
 
     - name: Steam
-      img: steam.png
       url: http://store.steampowered.com/
+      img: steam.png
       tfa: Yes
+      email: Yes
       doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
-      custom:
-          - icon: mail
 
+    - name: Square Enix
+      url: http://na.square-enix.com/
+      img: squarenix.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.square-enix.com/na/account/otp/
+    
+    - name: Trion Worlds
+      url: http://www.trionworlds.com/en/
+      img: trionworlds.png
+      tfa: Yes
+      software: Yes
+      doc: https://store.trionworlds.com/account/profile/manage-game
+      
     - name: Uplay
       url: http://uplay.ubi.com/
       twitter: UplayUbisoft

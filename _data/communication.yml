@@ -1,10 +1,74 @@
 websites:
+    - name: Basecamp
+      url: https://basecamp.com/
+      img: basecamp.png
+      tfa: Yes
+      sms: Yes
+      doc: https://basecamp.com/help/guides/you/phone-verification
+
+    - name: Campfire
+      url: https://campfirenow.com/
+      img: campfire.png
+      tfa: Yes
+      sms: Yes
+      doc: https://help.37signals.com/sign-in/questions/460-how-do-i-set-up-and-use-phone-verification-for-logging-in
+
+    - name: Disqus
+      url: https://disqus.com
+      twitter: disqus
+      img: disqus.png
+      tfa: No
+
+    - name: Fleep
+      url: https://fleep.io
+      twitter: fleepio
+      img: fleep.png
+      tfa: No
+
+    - name: HipChat
+      url: https://www.hipchat.com
+      twitter: HipChat
+      img: hipchat.png
+      tfa: No
+
+    - name: Mailchimp
+      url: https://mailchimp.com/
+      img: mailchimp.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://blog.mailchimp.com/alterego-integrations-for-easy-authentication/
+
+    - name: Mailgun
+      url: https://mailgun.com
+      twitter: Mail_Gun
+      img: mailgun.png
+      tfa: No
+
+    - name: Sendloop
+      url: http://app.sendloop.com
+      img: sendloop.png
+      tfa: Yes
+      software: Yes
+      doc: http://app.sendloop.com/help/article/account-003/how-can-i-make-my-account-more-secure
+
     - name: Skype (w/Microsoft Account)
       url: https://www.skype.com
-      twitter: skype
       img: skype.png
       tfa: Yes
       sms: Yes
-      goog: Yes
-      authy: No
+      software: Yes
       doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
+
+    - name: Slack
+      url: http://www.slack.com
+      twitter: SlackHQ
+      img: slack.png
+      tfa: No
+      status: https://twitter.com/SlackHQ/status/448214716192538625
+
+    - name: Yammer
+      url: https://yammer.com
+      twitter: yammer
+      img: yammer.png
+      tfa: No

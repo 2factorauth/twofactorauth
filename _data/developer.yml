@@ -1,100 +1,80 @@
 websites:
-    - name: Amazon Web Services
-      img: aws.png
-      url: https://aws.amazon.com
-      tfa: Yes
-      goog: Yes
-      authy: Yes
-      sms: Yes
-      doc: http://aws.amazon.com/iam/details/mfa/
-      custom:
-          - icon: android
-            url: http://www.amazon.com/gp/product/B0061MU68M
-          - icon: windows
-            url: http://www.windowsphone.com/en-us/store/app/authenticator/021dd79f-0598-e011-986b-78e7d1fa76f8
-
-    - name: MaxCDN
-      url: https://www.maxcdn.com
-      img: maxcdn.png
-      tfa: Yes
-      goog: Yes
-      doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
+    - name: Airbrake
+      url: https://airbrake.io
+      twitter: airbrake
+      img: airbrake.png
+      tfa: No
 
     - name: Bitbucket
       url: https://bitbucket.org
       twitter: bitbucket
-      status: https://twitter.com/bitbucket/status/445631335169028096
       img: bitbucket.png
       tfa: No
-
-    - name: DigitalOcean
-      url: https://www.digitalocean.com/
-      img: digitalocean.png
-      tfa: Yes
-      goog: Yes
-      doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
+      status: https://twitter.com/bitbucket/status/445631335169028096
 
     - name: GitHub
-      img: github.png
       url: https://github.com
+      img: github.png
       tfa: Yes
-      goog: Yes
-      authy: Yes
       sms: Yes
+      software: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
-    - name: Heroku
-      url: https://www.heroku.com/
-      img: heroku.png
-      twitter: heroku
+    - name: Infobip
+      url: http://www.infobip.com/
+      img: infobip.png
+      tfa: Yes
+      sms: Yes
+      doc: http://www.infobip.com/messaging/enterprise/2_factor_authentication/
+
+    - name: Launchpad
+      url: https://launchpad.net
+      img: launchpad.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
+
+    - name: New Relic
+      url: https://newrelic.com
+      twitter: newrelic
+      img: newrelic.png
       tfa: No
 
-    - name: Linode
-      url: https://www.linode.com/
-      img: linode.png
-      twitter: linode
-      tfa: Yes
-      goog: Yes
-      sms: No
-      authy: Yes
-      doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
-
-    - name: NearlyFreeSpeech.NET
-      url: https://www.nearlyfreespeech.net/
-      img: nfsn.png
-      twitter: nfsn
-      tfa: Yes
-      goog: Yes
-      sms: Yes
-      authy: No
-      doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-se
-
-    - name: Rackspace
-      url: https://www.rackspace.com/
-      img: rackspace.png
-      twitter: rackspace
+    - name: PythonAnywhere
+      url: https://www.pythonanywhere.com
+      twitter: pythonanywhere
+      img: pythonanywhere.png
       tfa: No
 
-    - name: Scalr
-      url: http://www.scalr.com
-      img: scalr.png
+    - name: Softlayer
+      url: https://www.softlayer.com
+      img: softlayer.png
       tfa: Yes
-      goog: Yes
-      sms: No
-      authy: No
-      doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
+      software: Yes
+      doc: http://knowledgelayer.softlayer.com/procedure/configure-portal-account-one-time-password-access-manage
 
-    - name: Google Cloud Platform
-      url: https://cloud.google.com
-      img: google-cloud.png
+    - name: Status.io
+      url: https://status.io/
+      img: statusio.png
       tfa: Yes
-      goog: Yes
-      authy: Yes
+      hardware: Yes
+      doc: http://blog.status.io/2014/03/01/yubikey/
+
+    - name: StatusCake
+      url: https://statuscake.com/
+      img: statuscake.png
+      tfa: Yes
       sms: Yes
-      doc: https://support.google.com/accounts/answer/180744?hl=en
 
-    - name: Airbrake
-      url: https://airbrake.io
-      img: airbrake.png
-      twitter: airbrake
+    - name: Twilio
+      url: https://www.twilio.com/
+      img: twilio.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.twilio.com/help/faq/twilio-basics/what-happens-when-i-enable-two-factor-authentication
+
+    - name: Zapier
+      url: https://www.zapier.com
+      twitter: zapier
+      img: zapier.png
       tfa: No
