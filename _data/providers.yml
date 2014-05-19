@@ -11,7 +11,7 @@ providers:
     phone: Yes
     software: Yes
     hardware: Yes
-    
+
   - name: Authenticator Plus
     url: http://authenticatorplus.com
     img: authenticatorplus.png
@@ -40,7 +40,7 @@ providers:
     img: rublon.png
     software: Yes
 
- - name: SAASPASS
+  - name: SAASPASS
     url: https://www.saaspass.com/
     img: saaspass.png
     tfa: Yes
