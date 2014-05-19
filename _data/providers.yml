@@ -40,6 +40,13 @@ providers:
     img: rublon.png
     software: Yes
 
+ - name: SAASPASS
+    url: https://www.saaspass.com/
+    img: saaspass.png
+    tfa: Yes
+    software: Yes
+    doc: https://www.saaspass/about.html
+
   - name: SecureAuth
     email: Yes
     hardware: Yes
@@ -48,6 +55,13 @@ providers:
     sms: Yes
     software: Yes
     url: http://www.secureauth.com/
+
+  - name: Solidpass
+    url: http://www.solidpass.com
+    img: solidpass.png
+    hardware: Yes
+    sms: Yes
+    software: Yes
 
   - name: Toopher
     url: https://toopher.com
@@ -60,7 +74,7 @@ providers:
     img: yubico.png
     hardware: Yes
     software: Yes
-    
+
   - name: WiKID Systems
     url:  https://www.wikidsystems.com
     img:  wikid.png
