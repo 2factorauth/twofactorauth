@@ -63,6 +63,12 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: Symantec/Verisign Validation & ID Protection (VIP)
+    url: https://idprotect.verisign.com/
+    img: symantec.png
+    hardware: yes
+    software: yes
+
   - name: Toopher
     url: https://toopher.com
     img: toopher.png
@@ -80,4 +86,3 @@ providers:
     img:  wikid.png
     hardware: No
     software: Yes
-
