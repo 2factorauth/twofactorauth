@@ -1,4 +1,5 @@
 (function (root, $) {
     $('.menu .dropdown').dropdown();
-    $('span.popup.international').popup({on: 'click'});
+    $('span.popup.exception').popup();
+    $('a.popup.exception').popup();
 }(window, jQuery));
