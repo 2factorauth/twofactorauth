@@ -2,7 +2,7 @@
 
 {% capture html %}
 <div class='header'>
-    Exceptions
+    Exceptions &amp; Restrictions
 </div>
 <div class='content'>
     {% if include.website.exceptions.text %}
@@ -19,7 +19,7 @@
 
     {% if include.website.exceptions.link %}
         <a class="popup exception"
-            href="/exceptions#{{ include.website.name | downcase | handle }}"
+            href="/restrictions#{{ include.website.name | downcase | handle }}"
             data-position="bottom center"
             data-html="{{ html | strip_newlines }}">
             <i class="warning red link icon"></i>
