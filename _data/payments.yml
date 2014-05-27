@@ -34,7 +34,8 @@ websites:
       sms: Yes
       software: Yes
       hardware: Yes
-      exceptions: Yes
+      exceptions:
+          text: "SMS only available in the US."
       doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
 
     - name: Skrill

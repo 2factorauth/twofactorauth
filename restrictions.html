@@ -42,9 +42,20 @@ layout: default
 
         {% comment %}
             List all the exception includes here in __alphabetical__ order.
+
+            The first one should be passed with `class='top'` and the last
+            should be passed with `class='bottom'`.
+
+            To add a site, just copy and paste the
+            _includes/exceptions/_template.html file and use that as the base.
+
+            Example:
+                {% include exceptions/amazon.html class='top' %}
+                {% include exceptions/paypal.html %}
+                {% include exceptions/twitter.html class='bottom' %}
         {% endcomment %}
 
-            {% include exceptions/twitter.html %}
+        {% include exceptions/none.html %}
 
         {% comment %}
             End the exceptions includes.
