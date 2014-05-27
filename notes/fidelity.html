@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+<div class="ui fixed transparent inverted teal main menu">
+    <div class="menu">
+        <div class="right menu">
+            <a href="{{ site.repo }}" class="item">
+                <i class="github icon"></i>
+                Contribute
+            </a>
+        </div>
+
+        <a href="/" class="item">
+            <i class="home icon"></i>
+            Home
+        </a>
+
+        <a href="/providers" class="item">
+            <i class="play sign icon"></i>
+            Providers
+        </a>
+    </div>
+</div>
+
+<div class="main container">
+    <div class="ui grid">
+        <div class="column">
+            <div class="banner ui icon header">
+                <i class="circular mobile icon"></i>
+                <h2>Two Factor Auth (2FA)</h2>
+            </div>
+            <div class="ui segment teal">
+                <h2 class="ui header">
+                    Fidelity
+                    <div class="sub header">Info regarding Fidelity's 2FA.</div>
+                </h2>
+                <p>
+                    Fidelity uses either a physical token provided by Fidelity
+                    or the Symantec VIP Access smartphone app.
+                </p>
+
+                <p>
+                    It appears there is no information about this service provided
+                    online and it must be enabled and managed by phone.
+                </p>
+
+                <div class="ui info message">
+                    <div class="header">
+                        Note on Security
+                    </div>
+                    <p>
+                        That this is different than the weaker
+                        <a href="https://www.fidelity.com/security/how-fidelity-keeps-you-safe">"Transaction Security"</a>,
+                        which only protects certain types of transactions.
+                    </p>
+                </div>
+            </div><!-- Section -->
+
+            <div class="ui segment teal">
+                <h2 class="ui header">
+                    How to Setup 2FA for Fidelity
+                </h2>
+                <ol class="ui list">
+                <li>Do one of the following:
+                    <ol class="ui list">
+                        <li>
+                            Obtain a physical token by calling Fidelity Account
+                            Key Support at 800-544-7595.
+                        </li>
+                        <li>
+                            Install the Symantec VIP Access app for
+                            <a href="https://itunes.apple.com/app/vip-access-for-iphone/id307658513?mt=8">iPhone</a>
+                            or the
+                            <a href="https://play.google.com/store/apps/details?id=com.verisign.mvip.main">Android</a>
+                            version.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Get the Credential ID from the token or app.
+                </li>
+                <li>
+                    Call Fidelity Account Key Support at 800-544-7595.
+                </li>
+                <li>
+                    Ask them to add two-factor authentication to your account.
+                    You will need to provide the Credential ID.
+                </li>
+                <li>
+                    The next time you log in to the Fidelity website it will
+                    prompt you for the temporary security code from the token
+                    or the app.
+                </li>
+            </ol>
+            </div><!-- Section -->
+
+        </div><!-- Column -->
+    </div><!-- UI Grid -->
+</div><!-- Main Container -->
