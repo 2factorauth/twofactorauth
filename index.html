@@ -9,38 +9,7 @@ tweet_progress: Thanks for working on support for two factor auth, @TWITTERHANDL
 hash: SupportTwoFactorAuth
 ---
 
-<div class="ui fixed transparent inverted teal main menu">
-    <div class="menu">
-        <div class="right menu">
-            <a href="{{ site.repo }}" class="item">
-                <i class="github icon"></i>
-                Contribute
-            </a>
-        </div>
-
-        <a href="/" class="item">
-            <i class="home icon"></i>
-            Home
-        </a>
-
-        <div class="ui dropdown item">
-            Categories <i class="dropdown icon"></i>
-            <div class="menu">
-                {% for section in site.data.main.sections %}
-                <a href="{% if forloop.first %}#{% else %}#{{ section.id }}{% endif %}" class="item">
-                    <i class="{{ section.icon }} icon"></i>
-                    {{ section.title }}
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-
-        <a href="/providers" class="item">
-            <i class="play sign icon"></i>
-            Providers
-        </a>
-    </div>
-</div>
+{% include header.html page='home' %}
 
 <div class="main container">
     <div class="ui grid">
