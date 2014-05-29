@@ -23,7 +23,7 @@ websites:
       tfa: Yes
       software: Yes
       exceptions:
-          text: "Currently in beta available by request"
+          text: "Currently in beta, available by request"
       doc: https://support.cloud.engineyard.com/entries/40538256-Two-factor-authentication
 
     - name: Google Cloud Platform
@@ -42,6 +42,8 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://devcenter.heroku.com/articles/two-factor-authentication
+      exceptions:
+          text: "Currently in beta"
 
     - name: HP Cloud
       url: https://www.hpcloud.com/
