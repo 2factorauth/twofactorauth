@@ -127,3 +127,23 @@ td img.icon {
       display: block;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .ui.table {
+    display: block;
+    padding: 0em;
+  }
+  .ui.table thead,
+  .ui.table tfoot {
+    display: block;
+  }
+  .ui.table thead th {
+    display: none;
+  }
+  .ui.table thead th:first-child {
+    display: block;
+  }
+  .ui.table td.icon {
+    display: table-cell;
+  }
+}
