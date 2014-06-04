@@ -12,11 +12,27 @@ websites:
       tfa: No
       status: https://twitter.com/digicert/status/454722167897616384
 
+    - name: Dome9 Security
+      url: https://www.dome9.com/ 
+      img: dome9.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.dome9.com/overview/strong-2-factor-authentication 
+
     - name: GeoTrust
       url: http://www.geotrust.com/
       img: geotrust.png
       tfa: Yes
       email: Yes
+
+    - name: Nexgate
+      url: http://nexgate.com/
+      img: nexgate.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://suite.nexgate.com/users/sign_in
 
     - name: RapidSSL
       url: http://www.rapidssl.com/
