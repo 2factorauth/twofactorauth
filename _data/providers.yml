@@ -43,6 +43,13 @@ providers:
     img: launchkey.png
     software: Yes
 
+  - name: MyDigipass.com
+    url: https://developer.mydigipass.com/
+    img: mydigipass.png
+    sms: Yes
+    software: Yes
+    hardware: Yes
+
   - name: Rublon
     url: https://www.rublon.com/
     img: rublon.png
@@ -51,7 +58,6 @@ providers:
   - name: SAASPASS
     url: https://www.saaspass.com/
     img: saaspass.png
-    tfa: Yes
     software: Yes
     doc: https://www.saaspass/about.html
 
@@ -95,7 +101,16 @@ providers:
     img: yubico.png
     hardware: Yes
     software: Yes
-
+    
+  - name: VASCO Data Security
+    email: Yes
+    hardware: Yes
+    phone: Yes
+    img: vasco.png
+    sms: Yes
+    software: Yes
+    url: https://www.vasco.com/
+    
   - name: WiKID Systems
     url:  https://www.wikidsystems.com
     img:  wikid.png
