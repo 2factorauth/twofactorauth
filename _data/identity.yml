@@ -53,7 +53,6 @@ websites:
       
     - name: Persowna
       url: https://persowna.net
-      img: persowna.png
       tfa: Yes
       software: Yes
       
@@ -62,4 +61,6 @@ websites:
       img: securesafe.png
       tfa: Yes
       sms: Yes
+      exceptions:
+          text: "2FA is only available on paid plans."
       doc: http://www.securesafe.com/en/faq/security.html
