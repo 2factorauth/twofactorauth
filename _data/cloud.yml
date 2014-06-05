@@ -65,7 +65,10 @@ websites:
     - name: RightScale
       url: http://www.rightscale.com/
       img: rightscale.png
-      tfa: No
+      tfa: Yes
+      exceptions:
+          text: " 2fa through SAML SSO"
+      doc: "http://support.rightscale.com/12-Guides/Dashboard_Users_Guide/Settings/User/Actions/Getting_Started_with_SAML#Enable_SAML-based_Single_Sign-On"
       twitter: RightScale
 
     - name: Scalr
