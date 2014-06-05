@@ -14,6 +14,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+	  exceptions:
+	      text: "2FA is only available on paid plans."
       doc: http://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
 
     - name: EVE Online
@@ -86,12 +88,6 @@ websites:
       tfa: Yes
       email: Yes
       doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
-      
-    - name: Trion Worlds
-      url: http://www.trionworlds.com/en/
-      img: trionworlds.png
-      tfa: Yes
-      software: Yes
 
     - name: Uplay
       url: http://uplay.ubi.com/
