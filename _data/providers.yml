@@ -43,13 +43,6 @@ providers:
     img: launchkey.png
     software: Yes
 
-  - name: MyDigipass.com
-    url: https://developer.mydigipass.com/
-    img: mydigipass.png
-    sms: Yes
-    software: Yes
-    hardware: Yes
-
   - name: Rublon
     url: https://www.rublon.com/
     img: rublon.png
@@ -103,9 +96,7 @@ providers:
     software: Yes
     
   - name: VASCO Data Security
-    email: Yes
     hardware: Yes
-    phone: Yes
     img: vasco.png
     sms: Yes
     software: Yes
