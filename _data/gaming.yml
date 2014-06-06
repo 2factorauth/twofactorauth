@@ -7,6 +7,16 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://us.battle.net/en/security/
+            
+    - name: Enjin
+      url: http://www.enjin.com/
+      img: enjin.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      exceptions:
+          text: "2FA is only available on paid plans."
+      doc: http://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
 
     - name: Desura
       url: http://www.desura.com/
@@ -26,7 +36,7 @@ websites:
       url: http://www.eveonline.com/
       twitter: EveOnline
       img: eveonline.png
-      tfa: no
+      tfa: No
 
     - name: GOG.com
       url: http://www.gog.com
