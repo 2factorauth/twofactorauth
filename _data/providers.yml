@@ -72,10 +72,10 @@ providers:
     url: http://www.secureauth.com/
 	
   - name: Securegate
-	sms: Yes
-	software: Yes
-	img: securegate.png
-	url: http://www.securegate.io/
+    url: http://www.securegate.io/
+    img: securegate.png
+    sms: Yes
+    software: Yes
 
   - name: SyferLock GridGuard
     url: https://www.syferlock.com/
