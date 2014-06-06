@@ -2,7 +2,9 @@
 require 'yaml'
 
 begin
-# Just load it to see if there are errors
+
+    # Load each section, check for errors such as invalid syntax
+    # as well as if an image is missing
     main = YAML.load_file('_data/main.yml')
     main["sections"].each do |section|
         data = YAML.load_file('_data/' + section["id"] + '.yml')
@@ -11,6 +13,14 @@ begin
           unless File.exists?("img/#{section['id']}/#{website['img']}")
             raise "#{website['name']} image not found."
           end
+        end
+    end
+
+    # Load each provider and look for each image
+    providers = YAML.load_file('_data/providers.yml')
+    providers["providers"].each do |provider|
+        unless File.exists?("img/providers/#{provider['img']}")
+          raise "#{provider['name']} image not found."
         end
     end
 
