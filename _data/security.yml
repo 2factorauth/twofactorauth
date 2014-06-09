@@ -17,7 +17,7 @@ websites:
       img: geotrust.png
       tfa: Yes
       email: Yes
-      
+
     - name: Norton
       url: http://us.norton.com
       img: norton.png
@@ -26,12 +26,6 @@ websites:
       sms: Yes
       phone: Yes
       doc: https://login.norton.com/sso/embedded/learn2fa
-
-    - name: RapidSSL
-      url: http://www.rapidssl.com/
-      img: rapidssl.png
-      tfa: Yes
-      email: Yes
 
     - name: SSLTrust
       url: http://ssltrust.com.au/
