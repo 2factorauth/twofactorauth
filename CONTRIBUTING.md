@@ -91,54 +91,54 @@ website. There are 4 ways to customize how it is displayed:
 
    ```yml
     - name: Site Name
-    url: https://www.site.com/
-    twitter: SiteTwitter
-    img: site.png
-    tfa: Yes
-    sms: Yes
-    exceptions: Yes
-    doc: <link to site 2FA documentation>
+      url: https://www.site.com/
+      twitter: SiteTwitter
+      img: site.png
+      tfa: Yes
+      sms: Yes
+      exceptions: Yes
+      doc: <link to site 2FA documentation>
    ```
 2. The message can be replaced with a custom set of words:
 
    ```yml
     - name: Site Name
-    url: https://www.site.com/
-    twitter: SiteTwitter
-    img: site.png
-    tfa: Yes
-    sms: Yes
-    exceptions:
-        text: "Specific text goes here."
-    doc: <link to site 2FA documentation>
+      url: https://www.site.com/
+      twitter: SiteTwitter
+      img: site.png
+      tfa: Yes
+      sms: Yes
+      exceptions:
+          text: "Specific text goes here."
+      doc: <link to site 2FA documentation>
    ```
 3. The icon can be made into a link in which more details can be revealed such
    as country specific info and anything else.
 
    ```yml
     - name: Site Name
-    url: https://www.site.com/
-    twitter: SiteTwitter
-    img: site.png
-    tfa: Yes
-    sms: Yes
-    exceptions:
-        link: Yes
-    doc: <link to site 2FA documentation>
+      url: https://www.site.com/
+      twitter: SiteTwitter
+      img: site.png
+      tfa: Yes
+      sms: Yes
+      exceptions:
+          link: Yes
+      doc: <link to site 2FA documentation>
    ```
 4. 2 and 3 can be combined into:
 
    ```yml
     - name: Site Name
-    url: https://www.site.com/
-    twitter: SiteTwitter
-    img: site.png
-    tfa: Yes
-    sms: Yes
-    exceptions:
-        link: Yes
-        text: "Specific text can go here as well."
-    doc: <link to site 2FA documentation>
+      url: https://www.site.com/
+      twitter: SiteTwitter
+      img: site.png
+      tfa: Yes
+      sms: Yes
+      exceptions:
+          link: Yes
+          text: "Specific text can go here as well."
+      doc: <link to site 2FA documentation>
    ```
 
 #### Pro Tips
