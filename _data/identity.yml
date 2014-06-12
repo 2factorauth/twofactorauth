@@ -12,6 +12,22 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://www.cloudentr.com/product/two-factor-authentication/
+      
+    - name: Dashlane
+      url: https://www.dashlane.com
+      img: dashlane.png
+      tfa: Yes
+      software: Yes
+      doc: http://support.dashlane.com/customer/portal/articles/1099221-protect-your-account-using-two-factor-authentication
+      
+    - name: Keeper
+      url: https://keepersecurity.com/
+      img: keeper.png
+      tfa: Yes
+      software: Yes
+      phone: Yes
+      sms: Yes
+      docs: https://keepersecurity.com/support/faq#faq35622
 
     - name: LastPass
       url: https://lastpass.com/
@@ -50,3 +66,17 @@ websites:
       tfa: Yes
       twitter: onelogin
       url: http://www.onelogin.com
+      
+    - name: Persowna
+      url: https://persowna.net
+      tfa: Yes
+      software: Yes
+      
+    - name: SecureSafe
+      url: http://www.securesafe.com
+      img: securesafe.png
+      tfa: Yes
+      sms: Yes
+      exceptions:
+          text: "2FA is only available on paid plans."
+      doc: http://www.securesafe.com/en/faq/security.html
