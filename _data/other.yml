@@ -14,31 +14,65 @@ websites:
       software: Yes
       doc: https://kb.meraki.com/knowledge_base/log-in-security-configuring-account-and-password-policies-for-dashboard-administrators
 
+    - name: Cloudinary
+      url: http://cloudinary.com
+      twitter: cloudinary
+      img: cloudinary.png
+      tfa: No
+
     - name: Delighted
       url: https://delightedapp.com/
       img: delighted.png
       tfa: Yes
       sms: Yes
 
-    - name: Mailchimp
-      url: https://mailchimp.com/
-      img: mailchimp.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://blog.mailchimp.com/alterego-integrations-for-easy-authentication/
+    - name: Envato
+      url: http://envato.com
+      img: envato.png
+      tfa: No
+      software: No
+
+    - name: IFTTT
+      url: https://ifttt.com
+      img: ifttt.png
+      twitter: IFTTT
+      tfa: No
 
     - name: Mandrill
       url: https://mandrill.com/
       img: mandrill.png
-      tfa: No
-      twitter: mandrillapp
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://help.mandrill.com/entries/57465557
 
     - name: Mixpanel
       url: https://mixpanel.com/
       img: mixpanel.png
       tfa: No
       twitter: mixpanel
+
+    - name: Office 365
+      url: http://office.microsoft.com/en-us/business/
+      img: office365.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      phone: Yes
+      doc: http://technet.microsoft.com/en-us/library/dn383636.aspx
+
+    - name: Trello
+      url: https://trello.com
+      twitter: trello
+      img: trello.png
+      tfa: No
+
+    - name: US Social Security Administration
+      url: http://www.ssa.gov
+      img: usssa.png
+      tfa: Yes
+      sms: Yes
+      doc: https://secure.ssa.gov/RIL/HpsView.do#question3
 
     - name: Wunderlist
       url: https://www.wunderlist.com

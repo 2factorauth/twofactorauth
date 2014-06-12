@@ -1,0 +1,75 @@
+websites:
+    - name: Charles Schwab
+      url: https://www.schwab.com/
+      img: charlesschwab.png
+      tfa: Yes
+      hardware: Yes
+      doc: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/protect_your_account
+
+    - name: E*Trade
+      url: https://www.etrade.com/
+      img: etrade.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://us.etrade.com/e/t/jumppage/viewjumppage?PageName=secureid_enter#
+
+    - name: Fidelity Investments
+      url: https://www.fidelity.com
+      twitter: fidelity
+      img: fidelity.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://twofactorauth.org/notes/fidelity/
+
+    - name: Loyal3
+      url: https://www.loyal3.com/
+      twitter: loyal3
+      img: loyal3.png
+      tfa: No
+
+      name: Merrill Edge
+      url: https://www.merrilledge.com/
+      twitter: MerrillLynch
+      img: merrilledge.png
+      tfa: No
+
+    - name: MotifInvesting
+      url: https://www.motifinvesting.com/
+      img: motif.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.motifinvesting.com/security
+
+    - name: OptionsHouse
+      img: optionshouse.png
+      url: https://www.optionshouse.com
+      tfa: Yes
+      software: Yes
+      doc: http://www.optionshouse.com/faq/authenticator/
+
+    - name: Scottrade
+      url: https://www.scottrade.com/
+      twitter: scottrade
+      img: scottrade.png
+      tfa: No
+
+    - name: TD Ameritrade
+      url: https://www.tdameritrade.com
+      twitter: TDAmeritrade
+      img: tdameritrade.png
+      tfa: No
+
+    - name: TradeKing
+      url: https://www.tradeking.com
+      twitter: tradeking
+      img: tradeking.png
+      tfa: No
+
+    - name: Vanguard
+      url: http://www.vanguard.com/
+      twitter: Vanguard_Group
+      img: vanguard.png
+      tfa: No

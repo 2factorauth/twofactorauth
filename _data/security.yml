@@ -12,17 +12,28 @@ websites:
       tfa: No
       status: https://twitter.com/digicert/status/454722167897616384
 
+    - name: Dome9 Security
+      url: http://www.dome9.com/ 
+      img: dome9.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.dome9.com/overview/strong-2-factor-authentication 
+
     - name: GeoTrust
       url: http://www.geotrust.com/
       img: geotrust.png
       tfa: Yes
       email: Yes
 
-    - name: RapidSSL
-      url: http://www.rapidssl.com/
-      img: rapidssl.png
+    - name: Norton
+      url: http://us.norton.com
+      img: norton.png
       tfa: Yes
-      email: Yes
+      software: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://login.norton.com/sso/embedded/learn2fa
 
     - name: SSLTrust
       url: http://ssltrust.com.au/
@@ -37,3 +48,25 @@ websites:
       tfa: Yes
       sms: Yes
       doc: http://threatsim.com/features/
+
+    - name: Tinfoil Security
+      url: https://www.tinfoilsecurity.com
+      img: tinfoil.png
+      tfa: Yes
+      software: Yes
+      doc: http://support.tinfoilsecurity.com/customer/portal/articles/1559364-do-you-support-two-factor-authentication-how-do-i-set-it-up-
+
+    - name: ThreatMetrix
+      url: https://www.threatmetrix.com/
+      img: threatmetrix.png
+      tfa: No
+      twitter: ThreatMetrix
+
+    - name: OpenDNS
+      url: http://www.opendns.com/
+      img: opendns.png
+      tfa: Yes
+      sms: Yes
+      twitter: OpenDNS
+      software: Yes
+      doc: http://engineering.opendns.com/2014/05/22/launching-two-step-verification/

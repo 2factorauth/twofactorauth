@@ -81,6 +81,66 @@ this example:
           doc: <link to site 2FA documentation>
 ```
 
+#### Exceptions & Restrictions
+
+If a site doesn't support 2FA in certain countries, you can note this on the
+website. There are 4 ways to customize how it is displayed:
+
+1. A default message acknowledging restrictions will be used with the following
+   config:
+
+   ```yml
+    - name: Site Name
+      url: https://www.site.com/
+      twitter: SiteTwitter
+      img: site.png
+      tfa: Yes
+      sms: Yes
+      exceptions: Yes
+      doc: <link to site 2FA documentation>
+   ```
+2. The message can be replaced with a custom set of words:
+
+   ```yml
+    - name: Site Name
+      url: https://www.site.com/
+      twitter: SiteTwitter
+      img: site.png
+      tfa: Yes
+      sms: Yes
+      exceptions:
+          text: "Specific text goes here."
+      doc: <link to site 2FA documentation>
+   ```
+3. The icon can be made into a link in which more details can be revealed such
+   as country specific info and anything else.
+
+   ```yml
+    - name: Site Name
+      url: https://www.site.com/
+      twitter: SiteTwitter
+      img: site.png
+      tfa: Yes
+      sms: Yes
+      exceptions:
+          link: Yes
+      doc: <link to site 2FA documentation>
+   ```
+4. 2 and 3 can be combined into:
+
+   ```yml
+    - name: Site Name
+      url: https://www.site.com/
+      twitter: SiteTwitter
+      img: site.png
+      tfa: Yes
+      sms: Yes
+      exceptions:
+          link: Yes
+          text: "Specific text can go here as well."
+      doc: <link to site 2FA documentation>
+   ```
+
 #### Pro Tips
 
 - See Guideline #2 about icons. The png file should go in the corresponding `img/section` folder.
@@ -105,7 +165,7 @@ A lot of people have different ideas of what constitutes Two Factor Auth and wha
 
 As an example, a site that prompts you for an authentication token following user login would be considered Two Factor Auth. A site that does not prompt you for a token upon login, but prompts you for a token when you try to perform a sensitive action would not be considered Two Factor Auth.
 
-For context, check out the discussion in [#242](https://github.com/jdavis/twofactorauth/issues/242).
+For context, check out the discussion in [#242][242].
 
 ### New Providers
 
@@ -124,3 +184,7 @@ To add a new provider simply add to the `providers.yml` file, marking `Yes` wher
     software: Yes
     hardware: Yes
 ```
+
+[travis]: https://travis-ci.org/jdavis/twofactorauth
+[yaml]: http://www.yaml.org/
+[242]: https://github.com/jdavis/twofactorauth/issues/242

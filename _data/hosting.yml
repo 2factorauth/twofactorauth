@@ -1,0 +1,75 @@
+websites:
+    - name: DigitalOcean
+      url: https://www.digitalocean.com/
+      img: digitalocean.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
+
+    - name: Dreamhost
+      url: https://dreamhost.com
+      img: dreamhost.png
+      tfa: Yes
+      software: Yes
+      doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
+
+    - name: ChunkHost
+      url: https://chunkhost.com
+      img: chunkhost.png
+      tfa: Yes
+      software: Yes
+
+    - name: Linode
+      url: https://www.linode.com/
+      img: linode.png
+      tfa: Yes
+      software: Yes
+      doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
+
+    - name: MaxCDN
+      url: https://www.maxcdn.com
+      img: maxcdn.png
+      tfa: Yes
+      software: Yes
+      doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
+
+    - name: Media Temple
+      url: http://mediatemple.net/
+      twitter: mediatemple
+      img: mediatemple.png
+      tfa: No
+
+    - name: NearlyFreeSpeech.NET
+      url: https://www.nearlyfreespeech.net/
+      img: nfsn.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-se
+
+    - name: Rackspace
+      url: https://www.rackspace.com/
+      twitter: rackspace
+      img: rackspace.png
+      tfa: No
+      status: https://twitter.com/Rackspace/status/446469139947732992
+
+    - name: RamNode
+      url: http://www.ramnode.com
+      img: ramnode.png
+      tfa: Yes
+      software: Yes
+      doc: https://clientarea.ramnode.com/knowledgebase.php?action=displayarticle&id=70
+
+    - name: Softlayer
+      url: https://www.softlayer.com
+      img: softlayer.png
+      tfa: Yes
+      software: Yes
+      doc: http://knowledgelayer.softlayer.com/procedure/configure-portal-account-one-time-password-access-manage
+
+    - name: Squarespace
+      url: https://squarespace.com/
+      twitter: squarespace
+      img: squarespace.png
+      tfa: No

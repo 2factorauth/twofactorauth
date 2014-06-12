@@ -1,11 +1,31 @@
 sections:
-  - id: social
-    title: Social
-    icon: users
+  - id: backup
+    title: Backup and Sync
+    icon: hdd
 
-  - id: retail
-    title: Retail
-    icon: cart
+  - id: banking
+    title: Banking
+    icon: dollar
+
+  - id: cloud
+    title: Cloud Computing
+    icon: cloud
+
+  - id: communication
+    title: Communication
+    icon: chat
+
+  - id: bitcoin
+    title: Cryptocurrencies
+    icon: bitcoin
+
+  - id: developer
+    title: Developer
+    icon: code
+
+  - id: domains
+    title: Domains
+    icon: globe
 
   - id: email
     title: Email
@@ -13,52 +33,48 @@ sections:
 
   - id: finance
     title: Finance
-    icon: dollar basic
-
-  - id: payments
-    title: Payments
-    icon: payment
-
-  - id: developer
-    title: Developer
-    icon: code
-
-  - id: backup
-    title: Backup and Sync
-    icon: hdd
-
-  - id: domains
-    title: Domains
-    icon: globe
-
-  - id: security
-    title: Security
-    icon: lock
-
-  - id: identity
-    title: Identity Management
-    icon: basic id
-
-  - id: remote
-    title: Remote Access
-    icon: desktop
+    icon: money
 
   - id: gaming
     title: Gaming
     icon: gamepad
 
-  - id: bitcoin
-    title: Cryptocurrencies
-    icon: bitcoin
-
   - id: health
     title: Health
     icon: medkit
 
-  - id: communication
-    title: Communication
-    icon: chat
+  - id: hosting
+    title: Hosting/VPS
+    icon: sitemap
+
+  - id: identity
+    title: Identity Management
+    icon: basic id
+
+  - id: investing
+    title: Investing
+    icon: basic money
 
   - id: other
     title: Other
     icon: lab
+
+  - id: payments
+    title: Payments
+    icon: payment
+
+  - id: remote
+    title: Remote Access
+    icon: desktop
+
+  - id: retail
+    title: Retail
+    icon: cart
+
+  - id: security
+    title: Security
+    icon: lock
+
+  - id: social
+    title: Social
+    icon: users

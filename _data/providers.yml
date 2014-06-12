@@ -4,6 +4,14 @@
 
 providers:
 
+  - name: SAT Mobile ID
+    url: https://www.SecureAccessTechnologies.com
+    img: sat.png
+    sms: Yes
+    phone: Yes
+    software: Yes
+    hardware: Yes
+
   - name: Authy
     url: https://authy.com
     img: authy.png
@@ -12,8 +20,13 @@ providers:
     software: Yes
     hardware: Yes
 
-  - name: Duo
-    url: https://duosecurity.com
+  - name: Authenticator Plus
+    url: http://authenticatorplus.com
+    img: authenticatorplus.png
+    software: Yes
+
+  - name: Duo Security
+    url: https://www.duosecurity.com
     img: duo.png
     hardware: Yes
     phone: Yes
@@ -25,18 +38,68 @@ providers:
     img: google.png
     software: Yes
 
+  - name: FreeOTP
+    url: https://fedorahosted.org/freeotp/
+    img: freeotp.png
+    software: Yes
+
+  - name: MePIN
+    url: http://www.mepin.com
+    img: mepin.png
+    sms: Yes
+    software: Yes
+    hardware: Yes
+
+  - name: LaunchKey
+    url: https://launchkey.com/
+    img: launchkey.png
+    software: Yes
+
   - name: Rublon
     url: https://www.rublon.com/
     img: rublon.png
     software: Yes
 
+  - name: SAASPASS
+    url: https://www.saaspass.com/
+    img: saaspass.png
+    software: Yes
+    doc: https://www.saaspass/about.html
+
   - name: SecureAuth
     email: Yes
     hardware: Yes
+    phone: Yes
     img: secureauth.png
     sms: Yes
     software: Yes
     url: http://www.secureauth.com/
+
+  - name: Securegate
+    url: http://www.securegate.io/
+    img: securegate.png
+    sms: Yes
+    software: Yes
+
+  - name: SyferLock GridGuard
+    url: https://www.syferlock.com/
+    img: syferlock_gridguard.png
+    sms: Yes
+    email: Yes
+    software: Yes
+
+  - name: Solidpass
+    url: http://www.solidpass.com
+    img: solidpass.png
+    hardware: Yes
+    sms: Yes
+    software: Yes
+
+  - name: Symantec/Verisign VIP
+    url: https://idprotect.verisign.com/
+    img: symantec.png
+    hardware: yes
+    software: yes
 
   - name: Toopher
     url: https://toopher.com
@@ -50,9 +113,15 @@ providers:
     hardware: Yes
     software: Yes
     
+  - name: VASCO Data Security
+    hardware: Yes
+    img: vasco.png
+    sms: Yes
+    software: Yes
+    url: https://www.vasco.com/
+    
   - name: WiKID Systems
     url:  https://www.wikidsystems.com
     img:  wikid.png
     hardware: No
     software: Yes
-

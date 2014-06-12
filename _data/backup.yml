@@ -18,6 +18,12 @@ websites:
     sms: Yes
     doc: https://support.box.com/hc/en-us/articles/200526658-Can-I-enable-2-step-verification-for-my-account-
 
+  - name: CloudApp
+    url: http://www.getcloudapp.com/
+    twitter: cloudapp
+    img: cloudapp.png
+    tfa: No
+
   - name: Copy
     url: https://www.copy.com
     twitter: copyapp
@@ -61,6 +67,18 @@ websites:
     phone: Yes
     software: Yes
     doc: http://www.google.com/intl/en-US/landing/2step/features.html
+
+  - name: IDrive
+    url: https://www.idrive.com
+    twitter: IDriveBackup
+    img: idrive.png
+    tfa: No
+
+  - name: JustCloud
+    url: https://www.justcloud.com
+    twitter: justcloudcom
+    img: justcloud.png
+    tfa: No
 
   - name: OneDrive
     url: https://www.onedrive.com
@@ -111,6 +129,7 @@ websites:
     twitter: Tresorit
     img: tresorit.png
     tfa: No
+    status: https://twitter.com/Tresorit/status/471306129197518848
 
   - name: Wuala
     url: https://wuala.com/

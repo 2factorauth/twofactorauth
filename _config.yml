@@ -1,5 +1,4 @@
 safe: true
-pygments: true
 permalink: pretty
 markdown: kramdown
 
@@ -11,3 +10,11 @@ description:
 url: http://twofactorauth.org
 repo: https://github.com/jdavis/twofactorauth
 img: img/logo.png
+
+exclude:
+    - CNAME
+    - CONTRIBUTING.md
+    - LICENSE
+    - README.md
+    - Rakefile
+    - verify.rb

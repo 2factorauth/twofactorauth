@@ -17,12 +17,6 @@ websites:
       software: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
-    - name: Mailgun
-      url: https://mailgun.com
-      twitter: Mail_Gun
-      img: mailgun.png
-      tfa: No
-    
     - name: Outlook.com
       url: https://outlook.com
       img: outlook.png
@@ -52,3 +46,12 @@ websites:
       sms: Yes
       software: Yes
       doc: https://adminconsole.wiki.zoho.com/mail/Two-Factor-Authentication.html
+      
+    - name: Hushmail
+      url: https://www.hushmail.com
+      img: hushmail.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: https://help.hushmail.com/entries/63282756-Two-step-verification

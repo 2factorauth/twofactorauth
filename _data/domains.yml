@@ -1,4 +1,16 @@
 websites:
+    - name: 1and1
+      url: https://www.1and1.com/
+      img: 1and1.png
+      tfa: No
+      twitter: 1and1
+
+    - name: Badger
+      url: http://badger.com
+      img: badger.png
+      tfa: No
+      twitter: badger
+
     - name: CloudFlare
       url: https://cloudflare.com
       img: cloudflare.png
@@ -28,19 +40,18 @@ websites:
       software: Yes
       doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
 
+    - name: DomainsAtCost
+      url: https://www.domainsatcost.ca/
+      twitter: domainsatcost
+      img: domainsatcost.png
+      tfa: No
+
     - name: Domeny.tv
       url: http://www.domeny.tv/en
       img: domenytv.png
       tfa: Yes
       software: Yes
       doc: http://www.domeny.tv/en/two-factor-authentication
-
-    - name: Dreamhost
-      url: https://dreamhost.com
-      img: dreamhost.png
-      tfa: Yes
-      software: Yes
-      doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
 
     - name: Dyn
       url: http://dyn.com/
@@ -101,6 +112,13 @@ websites:
       software: Yes
       doc: https://help.hover.com/entries/26677644
 
+    - name: Internet.bs
+      url: http://www.internet.bs
+      img: internetbs.png
+      tfa: Yes
+      software: Yes
+      doc: http://twofactorauth.org/notes/internetbs/
+
     - name: iWantMyName
       url: https://iwantmyname.com/
       img: iwantmyname.png
@@ -141,6 +159,7 @@ websites:
       img: namecheap.png
       tfa: Yes
       sms: Yes
+      phone: Yes
       doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
 
     - name: NameSilo.com
@@ -150,20 +169,28 @@ websites:
       software: Yes
       doc: https://www.namesilo.com/Support/2~Factor-Authentication
 
+    - name: NamesPro.ca
+      url: http://www.namespro.ca/
+      twitter: namespro
+      img: namespro.png
+      tfa: No
+
     - name: Network Solutions
       url: https://www.networksolutions.com/
       twitter: netsolcares
       img: networksolutions.png
       tfa: No
 
+    - name: PointDNS
+      url: https://pointhq.com/
+      twitter: pointdns
+      img: pointdns.png
+      tfa: No
+
     - name: Register4Less
       url: https://register4less.com/
       twitter: register4less
       img: register4less.png
-      tfa: No
-
-    - name: Zen
-      url: http://www.zen.co.uk
-      twitter: zeninternet
-      img: zen.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: http://blog.register4less.com/?p=43
