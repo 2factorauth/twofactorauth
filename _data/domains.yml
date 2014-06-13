@@ -102,7 +102,9 @@ websites:
       tfa: yes
       sms: Yes
       doc: http://support.godaddy.com/help/article/7502/enabling-twostep-authentication
-
+      exceptions:
+          text: "Seems to work only in US and Canada."
+          
     - name: Heart Internet
       url: http://www.heartinternet.co.uk/
       img: heartinternet.png
