@@ -101,6 +101,11 @@ providers:
     hardware: yes
     software: yes
 
+  - name: TextPower
+    url: http://www.textpower.com/public/
+    img: textpower.png
+    sms: Yes
+
   - name: Toopher
     url: https://toopher.com
     img: toopher.png
