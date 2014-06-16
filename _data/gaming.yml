@@ -38,6 +38,16 @@ websites:
       img: eveonline.png
       tfa: No
 
+    - name: Garena Online
+      url: http://garena.com
+      twitter: garenaonline
+      img: garena.png
+      tfa: Yes
+      software: Yes
+      doc: http://www.garena.com/account/
+      exceptions: 
+          text: "A mobile phone and Garena account level 3 or higher is required for 2FA."
+
     - name: GOG.com
       url: http://www.gog.com
       twitter: GOGcom
