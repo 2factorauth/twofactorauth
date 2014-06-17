@@ -14,6 +14,12 @@ websites:
       software: Yes
       doc: https://kb.meraki.com/knowledge_base/log-in-security-configuring-account-and-password-policies-for-dashboard-administrators
 
+    - name: Cloudinary
+      url: http://cloudinary.com
+      twitter: cloudinary
+      img: cloudinary.png
+      tfa: No
+
     - name: Delighted
       url: https://delightedapp.com/
       img: delighted.png
@@ -23,8 +29,14 @@ websites:
     - name: Envato
       url: http://envato.com
       img: envato.png
-      tfa: Yes
-      software: Yes
+      twitter: envato
+      tfa: No
+
+    - name: IFTTT
+      url: https://ifttt.com
+      img: ifttt.png
+      twitter: IFTTT
+      tfa: No
 
     - name: Mandrill
       url: https://mandrill.com/
@@ -55,7 +67,7 @@ websites:
       img: trello.png
       tfa: No
 
-    - name: United States Social Security Administration
+    - name: US Social Security Administration
       url: http://www.ssa.gov
       img: usssa.png
       tfa: Yes

@@ -19,6 +19,12 @@ websites:
       software: Yes
       doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
+    - name: Crazy Domains
+      url: https://www.crazydomains.com
+      img: crazydomains.png
+      tfa: no
+      twitter: CrazyDomains
+
     - name: Directnic
       url: https://directnic.com
       img: directnic.png
@@ -39,6 +45,12 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
+
+    - name: DomainsAtCost
+      url: https://www.domainsatcost.ca/
+      twitter: domainsatcost
+      img: domainsatcost.png
+      tfa: No
 
     - name: Domeny.tv
       url: http://www.domeny.tv/en
@@ -106,6 +118,13 @@ websites:
       software: Yes
       doc: https://help.hover.com/entries/26677644
 
+    - name: Internet.bs
+      url: http://www.internet.bs
+      img: internetbs.png
+      tfa: Yes
+      software: Yes
+      doc: http://twofactorauth.org/notes/internetbs/
+
     - name: iWantMyName
       url: https://iwantmyname.com/
       img: iwantmyname.png
@@ -156,10 +175,22 @@ websites:
       software: Yes
       doc: https://www.namesilo.com/Support/2~Factor-Authentication
 
+    - name: NamesPro.ca
+      url: http://www.namespro.ca/
+      twitter: namespro
+      img: namespro.png
+      tfa: No
+
     - name: Network Solutions
       url: https://www.networksolutions.com/
       twitter: netsolcares
       img: networksolutions.png
+      tfa: No
+
+    - name: PointDNS
+      url: https://pointhq.com/
+      twitter: pointdns
+      img: pointdns.png
       tfa: No
 
     - name: Register4Less

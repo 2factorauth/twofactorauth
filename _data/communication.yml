@@ -13,6 +13,12 @@ websites:
       sms: Yes
       doc: https://help.37signals.com/sign-in/questions/460-how-do-i-set-up-and-use-phone-verification-for-logging-in
 
+    - name: Customer.io
+      url: http://customer.io
+      twitter: customerio
+      img: customerio.png
+      tfa: No
+
     - name: Disqus
       url: https://disqus.com
       twitter: disqus
@@ -66,6 +72,12 @@ websites:
       img: slack.png
       tfa: No
       status: https://twitter.com/SlackHQ/status/448214716192538625
+
+    - name: ToutApp
+      url: http://www1.toutapp.com/
+      twitter: toutapp
+      img: toutapp.png
+      tfa: No
 
     - name: Yammer
       url: https://yammer.com

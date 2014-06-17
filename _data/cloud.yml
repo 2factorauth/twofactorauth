@@ -8,6 +8,13 @@ websites:
       hardware: Yes
       doc: http://aws.amazon.com/iam/details/mfa/
 
+    - name: Cloud 66
+      url: http://www.cloud66.com
+      img: cloud66.png
+      tfa: Yes
+      software: Yes
+      doc: http://blog.cloud66.com/two-factor-authentication-for-your-accounts/
+
     - name: Datapipe
       url: https://www.datapipe.com/
       img: datapipe.png
@@ -23,7 +30,7 @@ websites:
       tfa: Yes
       software: Yes
       exceptions:
-          text: "Currently in beta available by request"
+          text: "Jun 5, 2014: Currently in beta. Create a support ticket to request 2FA added to your organization"
       doc: https://support.cloud.engineyard.com/entries/40538256-Two-factor-authentication
 
     - name: Google Cloud Platform
@@ -42,6 +49,8 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://devcenter.heroku.com/articles/two-factor-authentication
+      exceptions:
+          text: "Jun 5, 2014: Currently in beta"
 
     - name: HP Cloud
       url: https://www.hpcloud.com/
@@ -74,6 +83,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
+
+    - name: SingleHop
+      url: http://www.singlehop.com
+      img: singlehop.png
+      tfa: Yes
+      software: Yes
+      doc: http://library.singlehop.com/assets_project_development/Two_Factor_Instructions.pdf
 
     - name: Windows Azure
       url: https://www.windowsazure.com/

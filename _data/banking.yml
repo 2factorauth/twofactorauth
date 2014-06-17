@@ -4,6 +4,7 @@ websites:
       img: allybank.png
       tfa: Yes
       sms: Yes
+      email: Yes
       doc: http://www.ally.com/messages/sms/index.html
 
     - name: American Express
@@ -72,6 +73,7 @@ websites:
       twitter: cibc
       img: cibc.png
       tfa: No
+      status: https://www.cibc.com/ca/features/banking-enhancements.html?sf3204759=1
 
     - name: Citibank
       url: https://online.citibank.com/US/Welcome.c

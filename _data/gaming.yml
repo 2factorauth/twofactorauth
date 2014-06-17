@@ -7,6 +7,16 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://us.battle.net/en/security/
+            
+    - name: Enjin
+      url: http://www.enjin.com/
+      img: enjin.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      exceptions:
+          text: "2FA is only available on paid plans."
+      doc: http://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
 
     - name: Desura
       url: http://www.desura.com/
@@ -14,11 +24,29 @@ websites:
       tfa: No
       twitter: desura
 
+    - name: Elder Scrolls Online
+      url: http://www.elderscrollsonline.com/
+      twitter: TESOnline
+      img: eso.png
+      tfa: yes
+      email: yes
+      doc: http://twofactorauth.org/notes/eso/
+
     - name: EVE Online
       url: http://www.eveonline.com/
       twitter: EveOnline
       img: eveonline.png
-      tfa: no
+      tfa: No
+
+    - name: Garena Online
+      url: http://garena.com
+      twitter: garenaonline
+      img: garena.png
+      tfa: Yes
+      software: Yes
+      doc: http://www.garena.com/account/
+      exceptions: 
+          text: "A mobile phone and Garena account level 3 or higher is required for 2FA."
 
     - name: GOG.com
       url: http://www.gog.com
@@ -48,6 +76,12 @@ websites:
       img: leagueoflegends.png
       tfa: No
       status: http://forums.na.leagueoflegends.com/board/showthread.php?p=45603580#45603580
+      
+    - name: Mojang
+      url: http://mojang.com
+      twitter: MojangTeam
+      img: mojang.png
+      tfa: No
 
     - name: Origin
       url: https://www.origin.com/
@@ -99,3 +133,10 @@ websites:
       twitter: UplayUbisoft
       img: uplay.png
       tfa: No
+
+    - name: WildStar
+      url: https://www.wildstar-online.com/
+      img: wildstar.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.wildstar-online.com/entries/53257786-Two-Step-Verification-Setting-Up-and-Rewards
