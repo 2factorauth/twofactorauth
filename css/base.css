@@ -22,7 +22,7 @@ p {
 
 .container {
     max-width: 840px;
-    width: 100%;
+    width: 98%;
     margin: 0 auto;
     padding-top: 40px;
 }
@@ -151,5 +151,12 @@ td img.icon {
   }
   .ui.table td.icon .label {
     display: inline-block;
+  }
+
+  .ui.icon.header .circular.icon, .ui.icon.header .square.icon {
+    display: none;
+  }
+  h2 {
+    font-size:1.2em;
   }
 }
