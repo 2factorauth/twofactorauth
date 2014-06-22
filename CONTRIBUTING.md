@@ -60,6 +60,13 @@ The following is a rough criteria and explanations for what sites should be on
 If you have any questions regarding whether or not a site matches one of the
 Criteria, just open an Issue and we'll take a look.
 
+### Excluded Sites
+
+A list for excluded sites has also been created to ensure sites that have been
+removed don't get re-added. The list also contains the reason for its removal.
+
+View the complete list in the [EXCLUSION.md file][exclude].
+
 ## New Sections
 
 To add a new section, modify the `sections` value in [main.yml](_data/main.yml)
@@ -217,9 +224,10 @@ where appropriate.
     hardware: Yes
 ```
 
-[travis]: https://travis-ci.org/jdavis/twofactorauth
-[yaml]: http://www.yaml.org/
 [242]: https://github.com/jdavis/twofactorauth/issues/242
+[exclude]: /EXCLUSION.md
 [bundler]: http://bundler.io/
 [gemfile]: /Gemfile
 [jekyll]: http://jekyllrb.com/
+[travis]: https://travis-ci.org/jdavis/twofactorauth
+[yaml]: http://www.yaml.org/
