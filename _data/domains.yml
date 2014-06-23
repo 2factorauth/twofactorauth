@@ -117,7 +117,9 @@ websites:
       tfa: yes
       sms: Yes
       doc: http://support.godaddy.com/help/article/7502/enabling-twostep-authentication
-
+      exceptions:
+          text: "US numbers only"
+          
     - name: Heart Internet
       url: http://www.heartinternet.co.uk/
       img: heartinternet.png
