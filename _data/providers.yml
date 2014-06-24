@@ -33,6 +33,13 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: Clavid
+    url: http://www.clavid.com/
+    img: clavid.png
+    hardware: yes
+    sms: yes
+    software: yes
+
   - name: Duo Security
     url: https://www.duosecurity.com
     img: duo.png
