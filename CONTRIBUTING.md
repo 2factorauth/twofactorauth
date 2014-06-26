@@ -92,18 +92,18 @@ The values should be pretty straight forward for adding a new website. The
 this example:
 
 ```yml
-    websites:
-        - name: Site Name
-          url: https://www.site.com/
-          twitter: SiteTwitter
-          img: site.png
-          tfa: Yes
-          sms: Yes
-          email: Yes
-          phone: Yes
-          software: Yes
-          hardware: Yes
-          doc: <link to site 2FA documentation>
+websites:
+  - name: Site Name
+    url: https://www.site.com/
+    twitter: SiteTwitter
+    img: site.png
+    tfa: Yes
+    sms: Yes
+    email: Yes
+    phone: Yes
+    software: Yes
+    hardware: Yes
+    doc: <link to site 2FA documentation>
 ```
 
 ### Exceptions & Restrictions
