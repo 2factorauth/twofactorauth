@@ -22,7 +22,7 @@ If you'd like to contribute, read the entire guidelines here in
 ## License
 
 This code is distributed under the MIT license. For more info, read the
-[LICENSE](license) file distributed with the source code.
+[LICENSE][license] file distributed with the source code.
 
 [contrib]: /CONTRIBUTING.md
 [license]: /LICENSE
