@@ -1,12 +1,11 @@
 websites:
-
     - name: Clavid
       url: http://www.clavid.com/
       img: clavid.png
-      tfa: yes
-      software: yes
-      hardware: yes
-      sms: yes
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      sms: Yes
       doc: http://www.clavid.com/index.php?option=com_content&view=article&id=85&Itemid=128&lang=en
 
     - name: CloudEntr
@@ -60,14 +59,10 @@ websites:
 
     - name: OneLogin
       doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
-      email: No
       hardware: Yes
       img: onelogin.png
-      phone: No
-      sms: No
       software: Yes
       tfa: Yes
-      twitter: onelogin
       url: http://www.onelogin.com
 
     - name: Persowna
