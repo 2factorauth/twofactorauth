@@ -17,17 +17,17 @@ hash: SupportTwoFactorAuth
 
             <div class="banner ui icon header">
                 <i class="circular mobile icon"></i>
-                <h2>Two Factor Auth (2FA)</h2>
-                <div class="sub header">List of websites and whether or not they support
+                <h2><a href="/">Two Factor Auth (2FA)</a></h2>
+                <p class="sub header">List of websites and whether or not they support
                     <a href="http://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
-                </div>
-                <div class="sub header">
+                </p>
+                <p class="sub header">
                     Also see the list of <a href="/providers/">2FA providers</a> and the platforms they support.
-                </div>
-                <div class="sub header">
+                </p>
+                <p class="sub header">
                     Add your own favorite site by submitting a pull request on the
                     <a href="https://github.com/jdavis/twofactorauth">GitHub repo</a>.
-                </div>
+                </p>
             </div>
 
         {% for section in site.data.main.sections %}
@@ -62,8 +62,8 @@ hash: SupportTwoFactorAuth
                                 {% assign current_name = website.name | downcase %}
                                 {% if lowercase_name == current_name %}
 
-                                    <tr>
-                                        {% if website.tfa %}
+                                    {% if website.tfa %}
+                                        <tr class="positive">
                                             <td class="main positive">
                                             {% if website.img %}
                                                 <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
@@ -74,41 +74,42 @@ hash: SupportTwoFactorAuth
 
                                             <td class="positive icon">
                                             {% if website.doc %}
-                                                <a href="{{ website.doc }}"><i class="external url link large icon"></i></a>
+                                                <a href="{{ website.doc }}"><i class="external url link large icon"></i><span class="label">Docs</span></a>
                                             {% endif %}
                                             </td>
 
                                             <td class="positive icon">
                                             {% if website.sms %}
-                                                <i class="checkmark large icon"></i>
+                                                <i class="checkmark large icon"></i><span class="label">SMS</span>
                                             {% endif %}
                                             </td>
 
                                             <td class="positive icon">
                                             {% if website.phone %}
-                                                <i class="checkmark large icon"></i>
+                                                <i class="checkmark large icon"></i><span class="label">Phone</span>
                                             {% endif %}
                                             </td>
 
                                             <td class="positive icon">
                                             {% if website.email %}
-                                                <i class="checkmark large icon"></i>
+                                                <i class="checkmark large icon"></i><span class="label">Email</span>
                                             {% endif %}
                                             </td>
 
                                             <td class="positive icon">
                                             {% if website.hardware %}
-                                                <i class="checkmark large icon"></i>
+                                                <i class="checkmark large icon"></i><span class="label">Hardware</span>
                                             {% endif %}
                                             </td>
 
                                             <td class="positive icon">
                                             {% if website.software %}
-                                                <i class="checkmark large icon"></i>
+                                                <i class="checkmark large icon"></i><span class="label">Software</span>
                                             {% endif %}
                                             </td>
                                         </tr>
-                                        {% else %}
+                                    {% else %}
+                                        <tr class="negative">
                                             <td class="main negative">
                                             {% if website.img %}
                                                 <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
@@ -138,7 +139,8 @@ hash: SupportTwoFactorAuth
                                                 <td class="negative icon"><i class="remove large icon"></td>
                                                 <td class="negative icon"><i class="remove large icon"></td>
                                             {% endif %}
-                                        {% endif %}
+                                        </tr>
+                                    {% endif %}
                                 {% endif %}
                             {% endfor %}
                         {% endfor %}
