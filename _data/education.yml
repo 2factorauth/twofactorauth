@@ -1,19 +1,24 @@
 websites:
-    - name: Oplerno
-      img: oplerno.png
-      url: https://enroll.oplerno.com/
-      tfa: Yes
-      authy: Yes
     - name: Coursera
-      img: coursera.png
       url: https://www.coursera.com/
-      tfa: No
-    - name: Udemy
-      img: udemy.png
-      url: https://www.udemy.com/
-      tfa: No
-    - name: Udacity
-      img: udacity.png
-      url: https://www.udacity.com/
+      twitter: coursera
+      img: coursera.png
       tfa: No
 
+    - name: Oplerno
+      url: https://enroll.oplerno.com/
+      img: oplerno.png
+      tfa: Yes
+      software: Yes
+
+    - name: Udacity
+      url: https://www.udacity.com/
+      twitter: udacity
+      img: udacity.png
+      tfa: No
+
+    - name: Udemy
+      url: https://www.udemy.com/
+      twitter: udemy
+      img: udemy.png
+      tfa: No
