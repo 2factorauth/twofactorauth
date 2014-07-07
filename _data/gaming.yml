@@ -28,8 +28,8 @@ websites:
       url: http://www.elderscrollsonline.com/
       twitter: TESOnline
       img: eso.png
-      tfa: yes
-      email: yes
+      tfa: Yes
+      email: Yes
       doc: http://twofactorauth.org/notes/eso/
 
     - name: EVE Online
@@ -120,6 +120,8 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://www.square-enix.com/na/account/otp/
+      exceptions:
+          text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
     
     - name: Trion Worlds
       url: http://www.trionworlds.com/en/
