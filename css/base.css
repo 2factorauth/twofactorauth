@@ -156,6 +156,9 @@ td img.icon {
   .ui.icon.header .circular.icon, .ui.icon.header .square.icon {
     display: none;
   }
+  .ui.table tr {
+    border: 4px solid #fff;
+  }
   h2 {
     font-size:1.2em;
   }
