@@ -109,6 +109,12 @@ providers:
     hardware: yes
     software: yes
 
+  - name: TeleSign
+    url: https://www.telesign.com
+    phone: Yes
+    sms: Yes
+    software: Yes
+
   - name: TextPower
     url: http://www.textpower.com/public/solutions/security-authentication/
     img: textpower.png
