@@ -114,6 +114,13 @@ providers:
     hardware: yes
     software: yes
 
+  - name: TeleSign
+    url: https://www.telesign.com
+    img: telesign.png
+    phone: Yes
+    sms: Yes
+    software: Yes
+
   - name: TextPower
     url: http://www.textpower.com/public/solutions/security-authentication/
     img: textpower.png
