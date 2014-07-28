@@ -1,11 +1,11 @@
 websites:
     - name: Ally Bank
-      url: http://www.ally.com/
+      url: https://www.ally.com/
       img: allybank.png
       tfa: Yes
       sms: Yes
       email: Yes
-      doc: http://www.ally.com/messages/sms/index.html
+      doc: https://www.ally.com/messages/sms/index.html
 
     - name: American Express
       url: https://www.americanexpress.com/
@@ -22,12 +22,12 @@ websites:
       doc: https://www.bankofamerica.com/privacy/online-mobile-banking-privacy/safepass.go
 
     - name: Barclays
-      url: http://www.barclays.co.uk/
+      url: https://www.barclays.co.uk/
       img: barclays.png
       tfa: Yes
       hardware: Yes
       software: Yes
-      doc: http://ask.barclays.co.uk/help/online_banking/whatis_pinsentry
+      doc: https://ask.barclays.co.uk/help/online_banking/whatis_pinsentry
 
     - name: Barclays US
       url: https://www.banking.barclaysus.com/index.html
@@ -69,7 +69,7 @@ websites:
       doc: https://mobilebanking.chase.com/Public/Docs/Faq?nodeId=1&itemId=2
 
     - name: CIBC
-      url: http://www.cibc.ca
+      url: https://www.cibc.ca
       twitter: cibc
       img: cibc.png
       tfa: No
@@ -119,13 +119,13 @@ websites:
       tfa: No
 
     - name: Lloyds Bank
-      url: http://www.lloydsbank.com/
+      url: https://www.lloydsbank.com/
       twitter: AskLloydsBank
       img: lloydsbank.png
       tfa: No
 
     - name: Halifax
-      url: http://www.halifax.co.uk
+      url: https://www.halifax.co.uk
       twitter: AskHalifaxBank
       img: halifax.png
       tfa: No
@@ -153,13 +153,13 @@ websites:
       tfa: No
 
     - name: RBC Royal Bank
-      url: http://www.rbcroyalbank.com
+      url: https://www.rbcroyalbank.com
       twitter: RBC_Canada
       img: rbc.png
       tfa: No
 
     - name: SEB
-      url: http://www.seb.se/pow/default.asp
+      url: http://www.seb.se/
       img: seb.png
       tfa: Yes
       hardware: Yes
@@ -215,14 +215,14 @@ websites:
       doc: https://www.usaa.com/inet/pages/security_token_logon_options
 
     - name: UW Credit Union
-      url: http://www.uwcu.org/
+      url: https://www.uwcu.org/
       img: uwcu.png
       twitter: uwcu
       tfa: Yes
       sms: Yes
       software: Yes
       phone: Yes
-      doc: http://www.uwcu.org/OnlineBanking/OnlineSecurity/VerifyU.aspx
+      doc: https://www.uwcu.org/OnlineBanking/OnlineSecurity/VerifyU.aspx
 
     - name: Wells Fargo
       url: https://www.wellsfargo.com/
