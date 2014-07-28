@@ -144,3 +144,13 @@ websites:
     twitter: Wuala
     img: wuala.png
     tfa: No
+  
+  - name: secsign
+    url: https://www.secsign.com
+    img: sec-logo.png
+    tfa: No
+    sms: No
+    software: Yes
+    exceptions:
+        text: "Two factor authentication via mobile phone"
+    
