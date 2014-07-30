@@ -109,6 +109,10 @@ td img.icon {
     background-color: #f2dede !important;
 }
 
+.ui.divider {
+    margin: 2em 0;
+}
+
 @media only screen and (max-width: 1199px) {
   .ui.menu.desktop {
       display: block;

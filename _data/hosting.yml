@@ -1,4 +1,10 @@
 websites:
+    - name: CloudShards
+      url: https://www.cloudshards.com/
+      img: cloudshards.png
+      twitter: CloudShards
+      tfa: No
+
     - name: DigitalOcean
       url: https://www.digitalocean.com/
       img: digitalocean.png
@@ -18,6 +24,12 @@ websites:
       img: chunkhost.png
       tfa: Yes
       software: Yes
+
+    - name: iPage
+      url: http://www.ipage.com/ipage/index.html
+      twitter: iPage
+      img: ipage.png
+      tfa: No
 
     - name: Linode
       url: https://www.linode.com/
@@ -46,6 +58,13 @@ websites:
       sms: Yes
       software: Yes
       doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-se
+
+    - name: OVH
+      url: http://www.ovh.com/
+      img: ovh.png
+      tfa: Yes
+      sms: Yes
+      doc: http://www.ovh.com/us/about-us/security.xml#double-authentification
 
     - name: Rackspace
       url: https://www.rackspace.com/

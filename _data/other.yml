@@ -1,4 +1,10 @@
 websites:
+    - name: Azendoo
+      url: https://app.azendoo.com
+      img: azendoo.png
+      tfa: No
+      twitter: Azendoo
+
     - name: Automater
       url: http://automater.pl/en/
       img: automater.png
@@ -29,14 +35,24 @@ websites:
     - name: Envato
       url: http://envato.com
       img: envato.png
+      twitter: envato
       tfa: No
-      software: No
 
     - name: IFTTT
       url: https://ifttt.com
       img: ifttt.png
       twitter: IFTTT
       tfa: No
+
+    - name: Kickstarter
+      url: https://www.kickstarter.com
+      img: kickstarter.png
+      twitter: kickstarter
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://www.kickstarter.com/help/faq/backer+questions#faq_63004
 
     - name: Mandrill
       url: https://mandrill.com/

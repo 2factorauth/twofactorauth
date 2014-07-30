@@ -3,15 +3,13 @@
 #
 
 providers:
-
-  - name: SAT Mobile ID
-    url: https://www.SecureAccessTechnologies.com
-    img: sat.png
+  - name: AlterEgo
+    url: https://alteregoapp.com/
+    img: alterego.png
     sms: Yes
-    phone: Yes
     software: Yes
     hardware: Yes
-
+    
   - name: Authy
     url: https://authy.com
     img: authy.png
@@ -23,6 +21,19 @@ providers:
   - name: Authenticator Plus
     url: http://authenticatorplus.com
     img: authenticatorplus.png
+    software: Yes
+
+  - name: Authentify Inc
+    url: http://www.Authentify.com
+    img: authentify.png
+    hardware: Yes
+    phone: Yes
+    sms: Yes
+    software: Yes
+
+  - name: Clef
+    url: https://getclef.com
+    img: clef.png
     software: Yes
 
   - name: Duo Security
@@ -66,6 +77,14 @@ providers:
     software: Yes
     doc: https://www.saaspass/about.html
 
+  - name: SAT Mobile ID
+    url: https://www.SecureAccessTechnologies.com
+    img: sat.png
+    sms: Yes
+    phone: Yes
+    software: Yes
+    hardware: Yes
+
   - name: SecureAuth
     email: Yes
     hardware: Yes
@@ -101,6 +120,18 @@ providers:
     hardware: yes
     software: yes
 
+  - name: TeleSign
+    url: https://www.telesign.com
+    img: telesign.png
+    phone: Yes
+    sms: Yes
+    software: Yes
+
+  - name: TextPower
+    url: http://www.textpower.com/public/solutions/security-authentication/
+    img: textpower.png
+    sms: Yes
+
   - name: Toopher
     url: https://toopher.com
     img: toopher.png
@@ -112,14 +143,16 @@ providers:
     img: yubico.png
     hardware: Yes
     software: Yes
-    
+
   - name: VASCO Data Security
     hardware: Yes
     img: vasco.png
+    email: Yes
+    phone: Yes
     sms: Yes
     software: Yes
     url: https://www.vasco.com/
-    
+
   - name: WiKID Systems
     url:  https://www.wikidsystems.com
     img:  wikid.png

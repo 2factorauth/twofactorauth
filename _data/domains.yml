@@ -1,4 +1,12 @@
 websites:
+    - name: 101domain
+      url: https://101domain.com
+      img: 101domain.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.101domain.com/vip_security_card.htm
+
     - name: 1and1
       url: https://www.1and1.com/
       img: 1and1.png
@@ -18,6 +26,12 @@ websites:
       sms: Yes
       software: Yes
       doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
+
+    - name: Crazy Domains
+      url: https://www.crazydomains.com
+      img: crazydomains.png
+      tfa: no
+      twitter: CrazyDomains
 
     - name: Directnic
       url: https://directnic.com
@@ -83,6 +97,13 @@ websites:
       tfa: No
       status: https://twitter.com/enom/status/447074738033008640
 
+    - name: Fabulous
+      url: http://fabulous.com
+      img: fabulous.png
+      tfa: yes
+      hardware: yes
+      doc: http://fabulous.com/informationcenter/index.htm?formdata%5Bqid%5D=1194
+
     - name: Gandi
       url: https://gandi.net
       img: gandi.png
@@ -96,9 +117,11 @@ websites:
       tfa: yes
       sms: Yes
       doc: http://support.godaddy.com/help/article/7502/enabling-twostep-authentication
+      exceptions:
+          text: "US numbers only"
 
     - name: Heart Internet
-      url: http://www.heartinternet.co.uk/
+      url: https://www.heartinternet.uk/
       img: heartinternet.png
       tfa: No
       twitter: HeartInternet
@@ -139,6 +162,12 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://metaname.net/public/two_factor_authentication
+
+    - name: Moniker
+      url: http://www.moniker.com/
+      img: moniker.png
+      tfa: No
+      twitter: monikersnap
 
     - name: MyDomain
       url: http://www.mydomain.com/
@@ -194,3 +223,9 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://blog.register4less.com/?p=43
+
+    - name: Verio
+      url: https://www.verio.com/
+      twitter: Verio
+      img: verio.png
+      tfa: No

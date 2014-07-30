@@ -12,7 +12,7 @@ websites:
       sms: Yes
       software: Yes
       exceptions:
-          text: "SMS only available in the US."
+          text: "SMS only available on select providers."
       doc: http://support.apple.com/kb/ht5570
 
     - name: Comixology
@@ -26,6 +26,7 @@ websites:
       img: ebay.png
       tfa: Yes
       hardware: Yes
+      software: Yes
       doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
 
     - name: Etsy
@@ -51,6 +52,12 @@ websites:
       url: http://www.newegg.com
       twitter: newegg
       img: newegg.png
+      tfa: No
+
+    - name: Target
+      url: http://www.target.com/
+      twitter: target
+      img: target.png
       tfa: No
 
     - name: Walgreens

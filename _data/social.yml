@@ -10,7 +10,9 @@ websites:
       url: http://www.bitly.com/
       twitter: bitly
       img: bitly.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: http://blog.bitly.com/post/90381427894/introducing-2-step-verification-for-all-users
 
     - name: Buffer
       url: https://bufferapp.com
@@ -64,6 +66,13 @@ websites:
       img: reddit.png
       tfa: No
       status: https://twitter.com/hueypriest/status/446601146409689088
+
+    - name: Stack Exchange
+      url: http://stackexchange.com/
+      twitter: StackExchange
+      img: stack_exchange.png
+      tfa: No
+
 
     - name: Twitter
       url: https://twitter.com

@@ -64,6 +64,15 @@ websites:
       tfa: Yes
       software: Yes
       doc: "http://wiki.joyent.com/wiki/display/jpc2/Improving+Security+Using+Two-Factor+Authentication+(2FA)"
+      
+    - name: Microsoft Azure
+      url: http://azure.microsoft.com/
+      img: microsoftazure.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: http://msdn.microsoft.com/en-us/library/azure/dn249471.aspx
 
     - name: OpenShift
       url: https://www.openshift.com/
@@ -90,11 +99,3 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://library.singlehop.com/assets_project_development/Two_Factor_Instructions.pdf
-
-    - name: Windows Azure
-      url: https://www.windowsazure.com/
-      img: windowsazure.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq

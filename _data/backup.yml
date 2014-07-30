@@ -68,6 +68,16 @@ websites:
     software: Yes
     doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
+  - name: iCloud
+    url: https://www.icloud.com
+    img: icloud.png
+    tfa: Yes
+    sms: Yes
+    software: Yes
+    exceptions:
+        text: "SMS only available on select providers. 2FA for iCloud data is available for select accounts only."
+    doc: http://support.apple.com/kb/ht5570
+
   - name: IDrive
     url: https://www.idrive.com
     twitter: IDriveBackup
@@ -93,16 +103,14 @@ websites:
     twitter: pogoplug
     img: pogoplug.png
     tfa: No
+    status: https://twitter.com/pogoplug/status/486192568745476096
 
   - name: SmartBox
     url: http://www.panterranetworks.com/SmartBox/index.php
     img: smartbox.png
     tfa: Yes
-    sms: No
     email: Yes
-    phone: No
     software: Yes
-    hardware: No
     doc: http://www.panterranetworks.com/SmartBox/features/security.php
 
   - name: SpiderOak

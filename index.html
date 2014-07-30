@@ -24,14 +24,14 @@ hash: SupportTwoFactorAuth
                 <div class="sub header">
                     Also see the list of <a href="/providers/">2FA providers</a> and the platforms they support.
                 </div>
-                <div class="sub header">
+                <div id="{{ first.id }}" class="sub header">
                     Add your own favorite site by submitting a pull request on the
                     <a href="https://github.com/jdavis/twofactorauth">GitHub repo</a>.
                 </div>
             </div>
 
         {% for section in site.data.main.sections %}
-            <div id="{{ section.id }}" class="section">
+            <div class="section">
                 <table class="ui table celled compact segment">
                     <thead>
                         <tr>
@@ -45,7 +45,13 @@ hash: SupportTwoFactorAuth
                         </tr>
                     </thead>
                     <tbody>
-                        {% assign section_file = site.data[section.id] %}
+
+{% comment %}
+    Peform a downcase and sort on the list of websites to ensure the list is in
+    alphabetical order.
+{% endcomment %}
+
+{% assign section_file = site.data[section.id] %}
 
 {% capture website_names %}
 {% for website in section_file.websites %}
@@ -54,7 +60,7 @@ hash: SupportTwoFactorAuth
 {% endfor %}
 {% endcapture %}
 
-                        {% assign lowercase_names = website_names | split:',' | sort %}
+{% assign lowercase_names = website_names | split:',' | sort %}
 
                         {% for item in (0..lowercase_names.size) %}
                             {% capture lowercase_name %}{{ lowercase_names[item] | strip | strip_newlines }}{% endcapture %}
@@ -146,7 +152,7 @@ hash: SupportTwoFactorAuth
                 </table>
 
             {% unless forloop.last %}
-                <div class="ui divider"></div>
+                <div class="ui divider" id="{{ site.data.main.sections[forloop.index].id }}" ></div>
             {% endunless %}
             </div><!-- Section -->
         {% endfor %}

@@ -1,0 +1,32 @@
+websites:
+    - name: Clever
+      url: https://www.clever.com
+      img: clever.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.clever.com/hc/en-us/articles/202062333-Two-Factor-Authentication
+
+    - name: Coursera
+      url: https://www.coursera.com/
+      twitter: coursera
+      img: coursera.png
+      tfa: No
+
+    - name: Oplerno
+      url: https://enroll.oplerno.com/
+      img: oplerno.png
+      tfa: Yes
+      software: Yes
+
+    - name: Udacity
+      url: https://www.udacity.com/
+      twitter: udacity
+      img: udacity.png
+      tfa: No
+
+    - name: Udemy
+      url: https://www.udemy.com/
+      twitter: udemy
+      img: udemy.png
+      tfa: No

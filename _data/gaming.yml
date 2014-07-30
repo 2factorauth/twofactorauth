@@ -28,8 +28,8 @@ websites:
       url: http://www.elderscrollsonline.com/
       twitter: TESOnline
       img: eso.png
-      tfa: yes
-      email: yes
+      tfa: Yes
+      email: Yes
       doc: http://twofactorauth.org/notes/eso/
 
     - name: EVE Online
@@ -37,6 +37,16 @@ websites:
       twitter: EveOnline
       img: eveonline.png
       tfa: No
+
+    - name: Garena Online
+      url: http://garena.com
+      twitter: garenaonline
+      img: garena.png
+      tfa: Yes
+      software: Yes
+      doc: http://www.garena.com/account/
+      exceptions: 
+          text: "A mobile phone and Garena account level 3 or higher is required for 2FA."
 
     - name: GOG.com
       url: http://www.gog.com
@@ -58,7 +68,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://support.humblebundle.com/customer/portal/articles/1412106
+      doc: https://support.humblebundle.com/hc/en-us/articles/202421374
 
     - name: League of Legends
       url: http://leagueoflegends.com
@@ -85,8 +95,8 @@ websites:
       url: http://www.runescape.com/
       img: runescape.png
       tfa: Yes
-      email: Yes
-      doc: http://services.runescape.com/m=rswiki/en/Jagex_Account_Guardian
+      software: Yes
+      doc: http://services.runescape.com/m=rswiki/en/Authenticator_FAQ
 
     - name: "Star Wars: The Old Republic"
       url: http://www.swtor.com/
@@ -110,6 +120,8 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://www.square-enix.com/na/account/otp/
+      exceptions:
+          text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
     
     - name: Trion Worlds
       url: http://www.trionworlds.com/en/
