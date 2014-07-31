@@ -1,4 +1,21 @@
 websites:
+
+    - name: iTunes
+     url: https://itunes.com/
+     img: itunes.png
+     tfa: Yes
+     sms: Yes
+     software: Yes
+     exceptions:
+        text: "SMS only available on select providers. 2FA for iTunes is available for select accounts only."
+     doc: http://support.apple.com/kb/ht5570
+    
+    - name: Netflix
+      url: https://netflix.com/
+      twitter: netflix
+      img: netflix.png
+      tfa: No
+      
     - name: SoundCloud
       url: https://soundcloud.com/
       twitter: soundcloud
@@ -11,6 +28,12 @@ websites:
       img: spotify.png
       tfa: No
       
+    - name: Twitch
+      url: http://www.twitch.tv/
+      twitter: twitch
+      img: twitch.png
+      tfa: No
+      
     - name: YouTube
       url: https://www.youtube.com/
       twitter: youtube
@@ -20,12 +43,6 @@ websites:
       software: Yes
       phone: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
-      
-    - name: Twitch
-      url: http://www.twitch.tv/
-      twitter: twitch
-      img: twitch.png
-      tfa: No
       
     - name: Vimeo
       url: https://vimeo.com/
