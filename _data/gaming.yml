@@ -1,12 +1,12 @@
 websites:
     - name: Blizzard
-      url: http://blizzard.com
+      url: https://blizzard.com
       img: blizzard.png
       tfa: Yes
       sms: Yes
       software: Yes
       hardware: Yes
-      doc: http://us.battle.net/en/security/
+      doc: https://us.battle.net/en/security/
             
     - name: Enjin
       url: http://www.enjin.com/
@@ -16,7 +16,7 @@ websites:
       software: Yes
       exceptions:
           text: "2FA is only available on paid plans."
-      doc: http://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
+      doc: https://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
 
     - name: Desura
       url: http://www.desura.com/
@@ -25,7 +25,7 @@ websites:
       twitter: desura
 
     - name: Elder Scrolls Online
-      url: http://www.elderscrollsonline.com/
+      url: https://www.elderscrollsonline.com/
       twitter: TESOnline
       img: eso.png
       tfa: Yes
@@ -33,7 +33,7 @@ websites:
       doc: http://twofactorauth.org/notes/eso/
 
     - name: EVE Online
-      url: http://www.eveonline.com/
+      url: https://www.eveonline.com/
       twitter: EveOnline
       img: eveonline.png
       tfa: No
@@ -71,14 +71,14 @@ websites:
       doc: https://support.humblebundle.com/hc/en-us/articles/202421374
 
     - name: League of Legends
-      url: http://leagueoflegends.com
+      url: https://leagueoflegends.com
       twitter: leagueoflegends
       img: leagueoflegends.png
       tfa: No
-      status: http://forums.na.leagueoflegends.com/board/showthread.php?p=45603580#45603580
+      status: https://forums.na.leagueoflegends.com/board/showthread.php?p=45603580#45603580
       
     - name: Mojang
-      url: http://mojang.com
+      url: https://mojang.com
       twitter: MojangTeam
       img: mojang.png
       tfa: No
@@ -88,7 +88,7 @@ websites:
       img: origin.png
       tfa: Yes
       email: Yes
-      doc: http://help.ea.com/en/article/origin-login-verification-information/
+      doc: https://help.ea.com/en/article/origin-login-verification-information/
       
 
     - name: RuneScape
