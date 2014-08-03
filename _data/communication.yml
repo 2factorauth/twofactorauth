@@ -52,11 +52,11 @@ websites:
       tfa: No
 
     - name: Sendloop
-      url: http://app.sendloop.com
+      url: https://app.sendloop.com
       img: sendloop.png
       tfa: Yes
       software: Yes
-      doc: http://app.sendloop.com/help/article/account-003/how-can-i-make-my-account-more-secure
+      doc: https://app.sendloop.com/help/article/account-003/how-can-i-make-my-account-more-secure
 
     - name: Skype (w/Microsoft Account)
       url: https://www.skype.com
@@ -67,7 +67,7 @@ websites:
       doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
 
     - name: Slack
-      url: http://www.slack.com
+      url: https://www.slack.com
       twitter: SlackHQ
       img: slack.png
       tfa: No
