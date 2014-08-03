@@ -6,12 +6,12 @@ websites:
       tfa: No
 
     - name: Buycraft
-      url: http://buycraft.net
+      url: https://buycraft.net
       img: buycraft.png
       tfa: Yes
       software: Yes
       sms: Yes
-      doc: http://server.buycraft.net/tfa
+      doc: https://server.buycraft.net/tfa
 
     - name: GoCardless
       img: gocardless.png
@@ -20,16 +20,16 @@ websites:
       tfa: No
 
     - name: Google Wallet
-      url: http://www.google.se/wallet/
+      url: https://www.google.se/wallet/
       img: googlewallet.png
       tfa: Yes
       sms: Yes
       phone: Yes
       software: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Payoneer
-      url: http://www.payoneer.com/
+      url: https://www.payoneer.com/
       twitter: Payoneer
       img: payoneer.png
       tfa: No
