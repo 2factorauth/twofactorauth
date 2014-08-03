@@ -9,11 +9,11 @@ websites:
       doc: http://aws.amazon.com/iam/details/mfa/
 
     - name: Cloud 66
-      url: http://www.cloud66.com
+      url: https://www.cloud66.com
       img: cloud66.png
       tfa: Yes
       software: Yes
-      doc: http://blog.cloud66.com/two-factor-authentication-for-your-accounts/
+      doc: https://blog.cloud66.com/two-factor-authentication-for-your-accounts/
 
     - name: Datapipe
       url: https://www.datapipe.com/
@@ -40,7 +40,7 @@ websites:
       sms: Yes
       software: Yes
       phone: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Heroku
       url: https://www.heroku.com/
@@ -59,20 +59,20 @@ websites:
       tfa: No
 
     - name: Joyent
-      url: http://www.joyent.com/
+      url: https://www.joyent.com/
       img: joyent.png
       tfa: Yes
       software: Yes
-      doc: "http://wiki.joyent.com/wiki/display/jpc2/Improving+Security+Using+Two-Factor+Authentication+(2FA)"
+      doc: "https://wiki.joyent.com/wiki/display/jpc2/Improving+Security+Using+Two-Factor+Authentication+(2FA)"
       
     - name: Microsoft Azure
-      url: http://azure.microsoft.com/
+      url: https://azure.microsoft.com/
       img: microsoftazure.png
       tfa: Yes
       sms: Yes
       phone: Yes
       software: Yes
-      doc: http://msdn.microsoft.com/en-us/library/azure/dn249471.aspx
+      doc: https://msdn.microsoft.com/en-us/library/azure/dn249471.aspx
 
     - name: OpenShift
       url: https://www.openshift.com/
@@ -81,7 +81,7 @@ websites:
       tfa: No
 
     - name: RightScale
-      url: http://www.rightscale.com/
+      url: https://www.rightscale.com/
       img: rightscale.png
       tfa: No
       twitter: RightScale
@@ -94,7 +94,7 @@ websites:
       doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
 
     - name: SingleHop
-      url: http://www.singlehop.com
+      url: https://www.singlehop.com
       img: singlehop.png
       tfa: Yes
       software: Yes
