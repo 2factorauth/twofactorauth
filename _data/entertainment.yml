@@ -1,15 +1,5 @@
 websites:
 
-    - name: iTunes
-      url: https://itunes.com/
-      img: itunes.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "SMS only available on select providers. 2FA for iTunes is available for select accounts only."
-      doc: http://support.apple.com/kb/ht5570
-
     - name: Netflix
       url: https://netflix.com/
       twitter: netflix
