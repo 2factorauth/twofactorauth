@@ -6,14 +6,14 @@ websites:
       tfa: No
 
     - name: DigiCert
-      url: http://www.digicert.com/
+      url: https://www.digicert.com/
       twitter: digicert
       img: digicert.png
       tfa: No
       status: https://twitter.com/digicert/status/454722167897616384
 
     - name: Dome9 Security
-      url: http://www.dome9.com/ 
+      url: https://www.dome9.com/ 
       img: dome9.png
       tfa: Yes
       software: Yes
@@ -21,13 +21,13 @@ websites:
       doc: http://www.dome9.com/overview/strong-2-factor-authentication 
 
     - name: GeoTrust
-      url: http://www.geotrust.com/
+      url: https://www.geotrust.com/
       img: geotrust.png
       tfa: Yes
       email: Yes
 
     - name: Norton
-      url: http://us.norton.com
+      url: https://us.norton.com
       img: norton.png
       tfa: Yes
       software: Yes
@@ -43,11 +43,11 @@ websites:
       doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
 
     - name: ThreatSim
-      url: http://login.threatsim.com
+      url: https://login.threatsim.com
       img: threatsim.png
       tfa: Yes
       sms: Yes
-      doc: http://threatsim.com/features/
+      doc: https://threatsim.com/features/
 
     - name: Tinfoil Security
       url: https://www.tinfoilsecurity.com
@@ -63,10 +63,10 @@ websites:
       twitter: ThreatMetrix
 
     - name: OpenDNS
-      url: http://www.opendns.com/
+      url: https://www.opendns.com/
       img: opendns.png
       tfa: Yes
       sms: Yes
       twitter: OpenDNS
       software: Yes
-      doc: http://engineering.opendns.com/2014/05/22/launching-two-step-verification/
+      doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
