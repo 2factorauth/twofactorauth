@@ -158,3 +158,10 @@ providers:
     img:  wikid.png
     hardware: No
     software: Yes
+    
+- name: SecSign
+   url: https://www.secsign.com/
+   img: sec-sign.png
+   tfa: Yes
+   sms: No
+   software: Yes
