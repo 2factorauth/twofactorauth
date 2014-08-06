@@ -100,6 +100,13 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: SecSign
+    url: https://www.secsign.com/
+    img: sec-sign.png
+    tfa: Yes
+    sms: No
+    software: Yes
+
   - name: SyferLock GridGuard
     url: https://www.syferlock.com/
     img: syferlock_gridguard.png
