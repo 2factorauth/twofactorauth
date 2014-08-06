@@ -119,9 +119,9 @@ websites:
       doc: http://support.godaddy.com/help/article/7502/enabling-twostep-authentication
       exceptions:
           text: "US numbers only"
-          
+
     - name: Heart Internet
-      url: http://www.heartinternet.co.uk/
+      url: https://www.heartinternet.uk/
       img: heartinternet.png
       tfa: No
       twitter: HeartInternet
@@ -223,7 +223,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://blog.register4less.com/?p=43
-      
+
     - name: Verio
       url: https://www.verio.com/
       twitter: Verio

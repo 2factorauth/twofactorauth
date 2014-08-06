@@ -3,15 +3,13 @@
 #
 
 providers:
-
-  - name: SAT Mobile ID
-    url: https://www.SecureAccessTechnologies.com
-    img: sat.png
+  - name: AlterEgo
+    url: https://alteregoapp.com/
+    img: alterego.png
     sms: Yes
-    phone: Yes
     software: Yes
     hardware: Yes
-
+    
   - name: Authy
     url: https://authy.com
     img: authy.png
@@ -78,6 +76,14 @@ providers:
     img: saaspass.png
     software: Yes
     doc: https://www.saaspass/about.html
+
+  - name: SAT Mobile ID
+    url: https://www.SecureAccessTechnologies.com
+    img: sat.png
+    sms: Yes
+    phone: Yes
+    software: Yes
+    hardware: Yes
 
   - name: SecureAuth
     email: Yes
