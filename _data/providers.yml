@@ -9,14 +9,6 @@ providers:
     sms: Yes
     software: Yes
     hardware: Yes
-    
-  - name: Authy
-    url: https://authy.com
-    img: authy.png
-    sms: Yes
-    phone: Yes
-    software: Yes
-    hardware: Yes
 
   - name: Authenticator Plus
     url: http://authenticatorplus.com
@@ -31,6 +23,14 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: Authy
+    url: https://authy.com
+    img: authy.png
+    sms: Yes
+    phone: Yes
+    software: Yes
+    hardware: Yes
+
   - name: Clef
     url: https://getclef.com
     img: clef.png
@@ -44,14 +44,19 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: FreeOTP
+    url: https://fedorahosted.org/freeotp/
+    img: freeotp.png
+    software: Yes
+
   - name: Google Authenticator
     url: http://www.google.com/landing/2step/
     img: google.png
     software: Yes
 
-  - name: FreeOTP
-    url: https://fedorahosted.org/freeotp/
-    img: freeotp.png
+  - name: LaunchKey
+    url: https://launchkey.com/
+    img: launchkey.png
     software: Yes
 
   - name: MePIN
@@ -60,11 +65,6 @@ providers:
     sms: Yes
     software: Yes
     hardware: Yes
-
-  - name: LaunchKey
-    url: https://launchkey.com/
-    img: launchkey.png
-    software: Yes
 
   - name: Rublon
     url: https://www.rublon.com/
@@ -107,18 +107,18 @@ providers:
     sms: No
     software: Yes
 
-  - name: SyferLock GridGuard
-    url: https://www.syferlock.com/
-    img: syferlock_gridguard.png
-    sms: Yes
-    email: Yes
-    software: Yes
-
   - name: Solidpass
     url: http://www.solidpass.com
     img: solidpass.png
     hardware: Yes
     sms: Yes
+    software: Yes
+
+  - name: SyferLock GridGuard
+    url: https://www.syferlock.com/
+    img: syferlock_gridguard.png
+    sms: Yes
+    email: Yes
     software: Yes
 
   - name: Symantec/Verisign VIP
@@ -145,12 +145,6 @@ providers:
     software: Yes
     sms: Yes
 
-  - name: Yubico
-    url: https://yubico.com
-    img: yubico.png
-    hardware: Yes
-    software: Yes
-
   - name: VASCO Data Security
     hardware: Yes
     img: vasco.png
@@ -164,4 +158,10 @@ providers:
     url:  https://www.wikidsystems.com
     img:  wikid.png
     hardware: No
+    software: Yes
+
+  - name: Yubico
+    url: https://yubico.com
+    img: yubico.png
+    hardware: Yes
     software: Yes
