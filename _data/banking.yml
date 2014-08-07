@@ -107,6 +107,12 @@ websites:
       img: GECapitalBank.png
       tfa: No
 
+    - name: Halifax
+      url: http://www.halifax.co.uk
+      twitter: AskHalifaxBank
+      img: halifax.png
+      tfa: No
+
     - name: HSBC
       url: https://www.hsbc.com
       img: hsbc.png
@@ -124,12 +130,6 @@ websites:
       url: http://www.lloydsbank.com/
       twitter: AskLloydsBank
       img: lloydsbank.png
-      tfa: No
-
-    - name: Halifax
-      url: http://www.halifax.co.uk
-      twitter: AskHalifaxBank
-      img: halifax.png
       tfa: No
 
     - name: Patelco Credit Union
@@ -174,18 +174,18 @@ websites:
       tfa: No
       status: https://twitter.com/simple/status/445966117543378944
 
-    - name: SunTrust
-      url: https://www.suntrust.com/
-      twitter: SunTrust
-      img: suntrust.png
-      tfa: No
-      
     - name: Sparbanken1826
       url: https://www.sparbanken1826.se/
       img: sparbanken1826.png
       tfa: Yes
       hardware: Yes
       doc: https://www.sparbanken1826.se/sv/Om-Spabanken-1826/Sakerhet/Tips--red/
+
+    - name: SunTrust
+      url: https://www.suntrust.com/
+      twitter: SunTrust
+      img: suntrust.png
+      tfa: No
 
     - name: TBC Bank
       url: http://www.tbcbank.ge
