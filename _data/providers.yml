@@ -145,6 +145,13 @@ providers:
     software: Yes
     sms: Yes
 
+  - name: Token2
+    url: https://token2.com
+    img: token2.png
+    hardware: Yes
+    software: Yes
+    sms: Yes
+
   - name: Yubico
     url: https://yubico.com
     img: yubico.png
