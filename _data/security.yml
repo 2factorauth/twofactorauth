@@ -42,6 +42,8 @@ websites:
       sms: Yes
       twitter: OpenDNS
       software: Yes
+      exceptions:
+          text: "Only available for enterprise accounts."
       doc: http://engineering.opendns.com/2014/05/22/launching-two-step-verification/
 
     - name: SSLTrust
