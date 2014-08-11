@@ -117,7 +117,11 @@ websites:
     url: https://spideroak.com
     twitter: spideroak
     img: spideroak.png
-    tfa: No
+    tfa: Yes
+    sms: Yes
+    exceptions:
+      text: "Only available for paid accounts. Currently only protects web interface, not desktop or mobile clients."
+    doc: https://blog.spideroak.com/20110620235134-2-factor-authentication-to-your-spideroak-account
 
   - name: SugarSync
     twitter: SugarSync
@@ -130,6 +134,7 @@ websites:
     twitter: Synology
     img: synology.png
     tfa: Yes
+    software: Yes
     doc: http://itsoluti0ns.wordpress.com/2013/04/29/enable-2-way-verification-on-synology-nas/
 
   - name: Tresorit
