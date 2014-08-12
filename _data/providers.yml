@@ -53,6 +53,12 @@ providers:
     url: http://www.google.com/landing/2step/
     img: google.png
     software: Yes
+    
+  - name: Intensity Analytics
+    url: http://intensityanalytics.com/cvmetrics
+    img: ia.png
+    tfa: Yes
+    software: Yes
 
   - name: LaunchKey
     url: https://launchkey.com/
