@@ -1,4 +1,5 @@
 language: ruby
+install: bundle install
 rvm:
     - 2.1.1
 notifications:
