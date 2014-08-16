@@ -4,7 +4,7 @@ websites:
       twitter: aol
       img: aol.png
       tfa: No
-      
+
     - name: FastMail
       url: https://www.fastmail.fm/
       img: fastmail.png
@@ -22,7 +22,13 @@ websites:
       phone: Yes
       software: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
-      
+
+    - name: GMX
+      url: https://www.gmx.com/
+      twitter: gmxmail
+      img: gmx.png
+      tfa: No
+
     - name: Hushmail
       url: https://www.hushmail.com
       img: hushmail.png
@@ -31,6 +37,12 @@ websites:
       email: Yes
       software: Yes
       doc: https://help.hushmail.com/entries/63282756-Two-step-verification
+
+    - name: Mail.com
+      url: https://www.mail.com/
+      twitter: maildotcom
+      img: maildotcom.png
+      tfa: No
 
     - name: mailbox.org
       url: https://www.mailbox.org/
