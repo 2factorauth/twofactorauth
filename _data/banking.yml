@@ -186,19 +186,20 @@ websites:
       tfa: No
       status: https://twitter.com/simple/status/445966117543378944
 
-    - name: Sparbanken1826
-      url: https://www.sparbanken1826.se/
-      img: sparbanken1826.png
-      tfa: Yes
-      hardware: Yes
-      doc: https://www.sparbanken1826.se/sv/Om-Spabanken-1826/Sakerhet/Tips--red/
-
     - name: SunTrust
       url: https://www.suntrust.com/
       twitter: SunTrust
       img: suntrust.png
       tfa: No
 
+    - name: Swedbank
+      url: https://www.swedbank.se/
+      img: swebank.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: http://hjalp.swedbank.se/logga-in/index.htm
+      
     - name: TBC Bank
       url: http://www.tbcbank.ge
       twitter: JSCTBCBANK
