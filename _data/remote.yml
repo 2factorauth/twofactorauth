@@ -1,11 +1,18 @@
 websites:
 
+    - name: Amazon AWS WorkSpaces
+      url: https://aws.amazon.com/workspaces/
+      doc: https://aws.amazon.com/blogs/aws/multi-factor-auth-for-workspaces/
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      img: awsworkspaces.png
+
     - name: Join.me (w/ LogMeIn account)
       url: https://join.me/
       doc: https://accounts.logme.in/authentication/getstarted.aspx
       img: joinme.png
       tfa: Yes
-      goog: Yes
       email: Yes
       software: Yes
 
