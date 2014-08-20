@@ -88,6 +88,7 @@ websites:
       img: origin.png
       tfa: Yes
       email: Yes
+      sms: Yes
       doc: http://help.ea.com/en/article/origin-login-verification-information/
 
 
@@ -134,6 +135,11 @@ websites:
       url: http://uplay.ubi.com/
       twitter: UplayUbisoft
       img: uplay.png
+      tfa: No
+      
+    - name: Wargaming
+      url: http://wargaming.net/
+      img: wargaming.png
       tfa: No
 
     - name: WildStar
