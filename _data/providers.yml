@@ -3,14 +3,25 @@
 #
 
 providers:
-
-  - name: SAT Mobile ID
-    url: https://www.SecureAccessTechnologies.com
-    img: sat.png
+  - name: AlterEgo
+    url: https://alteregoapp.com/
+    img: alterego.png
     sms: Yes
-    phone: Yes
     software: Yes
     hardware: Yes
+
+  - name: Authenticator Plus
+    url: http://authenticatorplus.com
+    img: authenticatorplus.png
+    software: Yes
+
+  - name: Authentify Inc
+    url: http://www.Authentify.com
+    img: authentify.png
+    hardware: Yes
+    phone: Yes
+    sms: Yes
+    software: Yes
 
   - name: Authy
     url: https://authy.com
@@ -20,9 +31,9 @@ providers:
     software: Yes
     hardware: Yes
 
-  - name: Authenticator Plus
-    url: http://authenticatorplus.com
-    img: authenticatorplus.png
+  - name: Clef
+    url: https://getclef.com
+    img: clef.png
     software: Yes
 
   - name: Duo Security
@@ -33,14 +44,19 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: FreeOTP
+    url: https://fedorahosted.org/freeotp/
+    img: freeotp.png
+    software: Yes
+
   - name: Google Authenticator
     url: http://www.google.com/landing/2step/
     img: google.png
     software: Yes
 
-  - name: FreeOTP
-    url: https://fedorahosted.org/freeotp/
-    img: freeotp.png
+  - name: LaunchKey
+    url: https://launchkey.com/
+    img: launchkey.png
     software: Yes
 
   - name: MePIN
@@ -49,11 +65,6 @@ providers:
     sms: Yes
     software: Yes
     hardware: Yes
-
-  - name: LaunchKey
-    url: https://launchkey.com/
-    img: launchkey.png
-    software: Yes
 
   - name: Rublon
     url: https://www.rublon.com/
@@ -65,6 +76,14 @@ providers:
     img: saaspass.png
     software: Yes
     doc: https://www.saaspass/about.html
+
+  - name: SAT Mobile ID
+    url: https://www.SecureAccessTechnologies.com
+    img: sat.png
+    sms: Yes
+    phone: Yes
+    software: Yes
+    hardware: Yes
 
   - name: SecureAuth
     email: Yes
@@ -81,11 +100,11 @@ providers:
     sms: Yes
     software: Yes
 
-  - name: SyferLock GridGuard
-    url: https://www.syferlock.com/
-    img: syferlock_gridguard.png
-    sms: Yes
-    email: Yes
+  - name: SecSign
+    url: https://www.secsign.com/
+    img: sec-sign.png
+    tfa: Yes
+    sms: No
     software: Yes
 
   - name: Solidpass
@@ -95,33 +114,66 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: SyferLock GridGuard
+    url: https://www.syferlock.com/
+    img: syferlock_gridguard.png
+    sms: Yes
+    email: Yes
+    software: Yes
+
   - name: Symantec/Verisign VIP
     url: https://idprotect.verisign.com/
     img: symantec.png
     hardware: yes
     software: yes
 
+  - name: TeleSign
+    url: https://www.telesign.com
+    img: telesign.png
+    phone: Yes
+    sms: Yes
+    software: Yes
+
+  - name: TextPower
+    url: http://www.textpower.com/public/solutions/security-authentication/
+    img: textpower.png
+    sms: Yes
+
+  - name: Transakt
+    url: https://gettransakt.com/transakt/
+    img: transakt.png
+    software: Yes
+
   - name: Toopher
     url: https://toopher.com
     img: toopher.png
     software: Yes
     sms: Yes
+	
+  - name: Token2
+    url: https://token2.com
+    img: token2.png
+    software: Yes
+	hardware: Yes
+    sms: Yes
+	
+  - name: VASCO Data Security
+    hardware: Yes
+    img: vasco.png
+    email: Yes
+    phone: Yes
+    sms: Yes
+    software: Yes
+    url: https://www.vasco.com/
+
+  - name: WiKID Systems
+    url:  https://www.wikidsystems.com
+    img:  wikid.png
+    hardware: No
+    software: Yes
 
   - name: Yubico
     url: https://yubico.com
     img: yubico.png
     hardware: Yes
-    software: Yes
-    
-  - name: VASCO Data Security
-    hardware: Yes
-    img: vasco.png
-    sms: Yes
-    software: Yes
-    url: https://www.vasco.com/
-    
-  - name: WiKID Systems
-    url:  https://www.wikidsystems.com
-    img:  wikid.png
-    hardware: No
     software: Yes
