@@ -153,7 +153,8 @@ providers:
   - name: Token2
     url: https://token2.com
     img: token2.png
-    hardware: Yes
+	hardware: Yes
+    software: Yes
     sms: Yes
 	
   - name: VASCO Data Security
@@ -162,7 +163,7 @@ providers:
     email: Yes
     phone: Yes
     sms: Yes
-    hardware: Yes
+    software: Yes
     url: https://www.vasco.com/
 
   - name: WiKID Systems
