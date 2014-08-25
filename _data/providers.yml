@@ -143,7 +143,13 @@ providers:
     url: https://gettransakt.com/transakt/
     img: transakt.png
     software: Yes
-	
+
+  - name: Toopher
+    url: https://toopher.com
+    img: toopher.png
+    software: Yes
+    sms: Yes
+
   - name: Token2
     url: https://token2.com
     img: token2.png
@@ -151,12 +157,6 @@ providers:
     software: Yes
     sms: Yes
 	
-  - name: Toopher
-    url: https://toopher.com
-    img: toopher.png
-    software: Yes
-    sms: Yes
-
   - name: VASCO Data Security
     hardware: Yes
     img: vasco.png
