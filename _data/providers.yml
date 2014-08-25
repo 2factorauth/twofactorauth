@@ -143,7 +143,14 @@ providers:
     url: https://gettransakt.com/transakt/
     img: transakt.png
     software: Yes
-
+	
+  - name: Token2
+    url: https://toopher.com
+    img: toopher.png
+    software: Yes
+    hardware: Yes
+    sms: Yes
+	
   - name: Toopher
     url: https://toopher.com
     img: toopher.png
