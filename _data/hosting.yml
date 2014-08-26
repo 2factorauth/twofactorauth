@@ -1,4 +1,10 @@
 websites:
+    - name: ChunkHost
+      url: https://chunkhost.com
+      img: chunkhost.png
+      tfa: Yes
+      software: Yes
+
     - name: CloudShards
       url: https://www.cloudshards.com/
       img: cloudshards.png
@@ -19,11 +25,13 @@ websites:
       software: Yes
       doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
 
-    - name: ChunkHost
-      url: https://chunkhost.com
-      img: chunkhost.png
+    - name: Glesys
+      url: http://glesys.com/
+      twitter: glesysab
+      img: glesys.png
       tfa: Yes
       software: Yes
+      hardware: Yes
 
     - name: iPage
       url: http://www.ipage.com/ipage/index.html
