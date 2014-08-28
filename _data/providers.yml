@@ -44,6 +44,11 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: Entersekt
+    url: http://www.entersekt.com/
+    img: entersekt.png
+    software: Yes
+	
   - name: FreeOTP
     url: https://fedorahosted.org/freeotp/
     img: freeotp.png
@@ -138,11 +143,6 @@ providers:
     url: http://www.textpower.com/public/solutions/security-authentication/
     img: textpower.png
     sms: Yes
-
-  - name: Transakt
-    url: https://gettransakt.com/transakt/
-    img: transakt.png
-    software: Yes
 
   - name: Token2
     url: https://token2.com
