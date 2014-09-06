@@ -143,6 +143,11 @@ providers:
     url: http://www.textpower.com/public/solutions/security-authentication/
     img: textpower.png
     sms: Yes
+  
+  - name: Totp.Me
+    url: http://www.totp.me/
+    hardware: Yes
+    software: Yes
 
   - name: Transakt
     url: https://gettransakt.com/transakt/
