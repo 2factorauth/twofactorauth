@@ -146,7 +146,8 @@ providers:
   
   - name: Totp.Me
     url: http://www.totp.me/
-    hardware: Yes
+    img: totpme.png
+    hardware: No
     software: Yes
 
   - name: Transakt
