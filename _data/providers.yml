@@ -15,6 +15,13 @@ providers:
     img: authenticatorplus.png
     software: Yes
 
+  - name: Azure Multi-Factor Authentication
+    url: http://azure.microsoft.com/en-us/services/multi-factor-authentication/
+    img: azure.png
+    phone: Yes
+    sms: Yes
+    software: Yes
+
   - name: Authentify Inc
     url: http://www.Authentify.com
     img: authentify.png
