@@ -128,9 +128,12 @@ providers:
 
   - name: Symantec/Verisign VIP
     url: https://idprotect.verisign.com/
+    email: Yes
     img: symantec.png
     hardware: yes
     software: yes
+    sms: Yes
+    phone: Yes
 
   - name: TeleSign
     url: https://www.telesign.com
