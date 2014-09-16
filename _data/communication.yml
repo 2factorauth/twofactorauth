@@ -51,6 +51,13 @@ websites:
       img: mailgun.png
       tfa: No
 
+    - name: SendGrid
+      url: https://sendgrid.com/
+      img: sendgrid.png
+      tfa: Yes
+      sms: Yes
+      doc: https://sendgrid.com/docs/User_Guide/two_factor_authentication.html
+
     - name: Sendloop
       url: http://app.sendloop.com
       img: sendloop.png
