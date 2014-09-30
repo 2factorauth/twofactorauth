@@ -112,3 +112,12 @@ websites:
       twitter: squarespace
       img: squarespace.png
       tfa: No
+      
+    - name: Uberspace
+      url: https://uberspace.de
+      twitter: ubernauten
+      img: uberspace.png
+      software: Yes
+      exceptions:
+        text: "2FA only for SSH, but not for the webinterface. But important changes must be submitted via SSH."
+      doc: https://wiki.uberspace.de/system:ssh#zwei-faktor-authentifizierung
