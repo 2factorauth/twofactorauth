@@ -61,6 +61,11 @@ providers:
     img: google.png
     software: Yes
 
+  - name: Latch
+    url: https://latch.elevenpaths.com
+    img: latch.png
+    software: Yes
+
   - name: LaunchKey
     url: https://launchkey.com/
     img: launchkey.png
@@ -209,9 +214,4 @@ providers:
     url: https://yubico.com
     img: yubico.png
     hardware: Yes
-    software: Yes
-
-  - name: Latch
-    url: https://latch.elevenpaths.com
-    img: latch.png
     software: Yes
