@@ -7,4 +7,4 @@ gem 'jekyll', '~> 2.2.0'
 gem 'kramdown', '~> 1.3.1'
 gem 'rake'
 
-gem 'fastimage'
+gem 'fastimage', require: false
