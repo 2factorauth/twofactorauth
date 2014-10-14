@@ -161,7 +161,11 @@ websites:
     - name: Natwest UK
       url: https://www.natwest.com/personal.ashx
       img: natwest.png
-      tfa: No
+      tfa: Yes
+      sms: No
+      email: No
+      phone: No
+      hardware: Yes
       twitter: NatWest_Help
 
     - name: Patelco Credit Union
