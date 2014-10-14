@@ -1,5 +1,6 @@
 # Load Yaml
 require 'yaml'
+require 'fastimage'
 
 begin
 
@@ -10,8 +11,16 @@ begin
         data = YAML.load_file('_data/' + section["id"] + '.yml')
 
         data['websites'].each do |website|
-          unless File.exists?("img/#{section['id']}/#{website['img']}")
+          image = "img/#{section['id']}/#{website['img']}"
+
+          unless File.exists?(image)
             raise "#{website['name']} image not found."
+          end
+
+          image_dimensions = [32,32]
+
+          unless FastImage.size(image) == image_dimensions
+            raise "Image for #{website['img']} is not #{image_dimensions.join("x")}"
           end
         end
     end
