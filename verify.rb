@@ -33,8 +33,19 @@ begin
   # Load each provider and look for each image
   providers = YAML.load_file('_data/providers.yml')
   providers["providers"].each do |provider|
-    unless File.exists?("img/providers/#{provider['img']}")
+    pimage = "img/providers/#{provider['img']}";
+    unless File.exists?(pimage)
       raise "#{provider['name']} image not found."
+    end
+    image_dimensions = [32,32]
+
+    unless FastImage.size(pimage) == image_dimensions
+      raise "Image for #{provider['img']} is not #{image_dimensions.join("x")}"
+    end
+          
+    ext = ".png"
+    unless File.extname(pimage) == ext
+      raise "Image for #{provider['img']} is not #{ext}"
     end
   end
 
