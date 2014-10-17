@@ -1,8 +1,16 @@
 # Load Yaml
 require 'yaml'
 require 'fastimage'
-
+$output=0;
 begin
+  def error(msg)
+    $output=$output+1;
+    if($output == 1)
+      puts "<------------ ERROR ------------>\n"
+    end
+    puts "#{$output}. #{msg}"
+    
+  end
 
   # Load each section, check for errors such as invalid syntax
   # as well as if an image is missing
@@ -14,18 +22,18 @@ begin
       image = "img/#{section['id']}/#{website['img']}"
 
       unless File.exists?(image)
-        raise "#{website['name']} image not found."
+        error("#{website['name']} image not found.")
       end
 
       image_dimensions = [32,32]
 
       unless FastImage.size(image) == image_dimensions
-        raise "Image for #{website['img']} is not #{image_dimensions.join("x")}"
+        error("#{image} is not #{image_dimensions.join("x")}")
       end
           
       ext = ".png"
       unless File.extname(image) == ext
-        raise "Image for #{website['img']} is not #{ext}"
+        error("#{image} is not #{ext}")
       end
     end
   end
@@ -35,20 +43,22 @@ begin
   providers["providers"].each do |provider|
     pimage = "img/providers/#{provider['img']}";
     unless File.exists?(pimage)
-      raise "#{provider['name']} image not found."
+      error("#{provider['name']} image not found.")
     end
     image_dimensions = [32,32]
 
     unless FastImage.size(pimage) == image_dimensions
-      raise "Image for #{provider['img']} is not #{image_dimensions.join("x")}"
+      error("#{pimage} is not #{image_dimensions.join("x")}")
     end
           
     ext = ".png"
     unless File.extname(pimage) == ext
-      raise "Image for #{provider['img']} is not #{ext}"
+      error("#{pimage} is not #{ext}")
     end
   end
-
+  if($output > 0 )
+    exit 1
+  end
 rescue Psych::SyntaxError => e
   puts 'Error in the YAML'
   puts e
