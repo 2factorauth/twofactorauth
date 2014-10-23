@@ -1,4 +1,22 @@
 websites:
+    - name: Bluehost
+      url: https://www.bluehost.com/
+      img: bluehost.png
+      tfa: No
+      twitter: bluehostsupport
+
+    - name: ChunkHost
+      url: https://chunkhost.com
+      img: chunkhost.png
+      tfa: Yes
+      software: Yes
+      
+    - name: CloudAtCost
+      url: http://cloudatcost.com
+      img: cloudatcost.png
+      twitter: cloudatcost
+      tfa: no
+
     - name: CloudShards
       url: https://www.cloudshards.com/
       img: cloudshards.png
@@ -19,11 +37,21 @@ websites:
       software: Yes
       doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
 
-    - name: ChunkHost
-      url: https://chunkhost.com
-      img: chunkhost.png
+    - name: Fastly
+      url: https://www.fastly.com
+      twitter: Fastly
+      img: fastly.png
       tfa: Yes
       software: Yes
+      doc: https://docs.fastly.com/guides/getting-started/enabling-and-disabling-twofactor-authentication
+
+    - name: Glesys
+      url: http://glesys.com/
+      twitter: glesysab
+      img: glesys.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
 
     - name: iPage
       url: http://www.ipage.com/ipage/index.html

@@ -1,8 +1,15 @@
 websites:
+  - name: AeroFS
+    url: https://www.aerofs.com/
+    tfa: Yes
+    software: Yes
+    img: aerofs.png
+    doc: https://blog.aerofs.com/two-factor-authentication-for-hybrid-and-private-cloud/
+
   - name: Backblaze
     url: http://www.backblaze.com/
     twitter: backblaze
-    img: backblaze.gif
+    img: backblaze.png
     tfa: No
 
   - name: Bitcasa
@@ -26,7 +33,7 @@ websites:
 
   - name: Copy
     url: https://www.copy.com
-    twitter: copyapp
+    twitter: copy
     img: copy.png
     tfa: No
 
@@ -75,7 +82,7 @@ websites:
     sms: Yes
     software: Yes
     exceptions:
-        text: "SMS only available on select providers. 2FA for iCloud data is available for select accounts only."
+        text: "SMS only available on select providers."
     doc: http://support.apple.com/kb/ht5570
 
   - name: IDrive
@@ -144,3 +151,10 @@ websites:
     twitter: Wuala
     img: wuala.png
     tfa: No
+
+  - name: Zetta.net
+    url: http://zetta.net/
+    img: zetta.png
+    tfa: Yes
+    software: Yes
+    doc: http://www.zetta.net/blog/set-zetta-net-two-factor-authentication/

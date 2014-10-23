@@ -1,4 +1,10 @@
 websites:
+    - name: about.me
+      url: http://about.me
+      twitter: aboutdotme
+      img: aboutme.png
+      tfa: No
+
     - name: App.net
       url: https://join.app.net
       img: appnet.png
@@ -73,6 +79,13 @@ websites:
       img: stack_exchange.png
       tfa: No
 
+    - name: Tumblr
+      url: https://www.tumblr.com/
+      img: tumblr.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.tumblr.com/docs/en/two_factor_auth
 
     - name: Twitter
       url: https://twitter.com
@@ -84,13 +97,11 @@ websites:
       software: Yes
       doc: https://support.twitter.com/articles/20170388
 
-    - name: Tumblr
-      url: https://www.tumblr.com/
-      img: tumblr.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://www.tumblr.com/docs/en/two_factor_auth
+    - name: VanillaForums.com
+      url: https://vanillaforums.com
+      img: vanilla.png
+      tfa: No
+      twitter: vanilla
 
     - name: Viadeo
       url: http://www.viadeo.com
@@ -106,10 +117,3 @@ websites:
       sms: Yes
       software: Yes
       doc: http://en.support.wordpress.com/security/two-step-authentication/
-
-    - name: VanillaForums.com
-      url: https://vanillaforums.com
-      img: vanilla.png
-      tfa: No
-      status: https://twitter.com/vanilla/status/457569186760253440
-      twitter: vanilla

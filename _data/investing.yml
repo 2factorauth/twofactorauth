@@ -1,4 +1,10 @@
 websites:
+    - name: Betterment
+      url: https://www.betterment.com/
+      twitter: betterment
+      img: betterment.png
+      tfa: No
+
     - name: Charles Schwab
       url: https://www.schwab.com/
       img: charlesschwab.png
@@ -21,7 +27,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: http://twofactorauth.org/notes/fidelity/
+      doc: https://twofactorauth.org/notes/fidelity/
 
     - name: Loyal3
       url: https://www.loyal3.com/
@@ -48,13 +54,34 @@ websites:
       url: https://www.optionshouse.com
       tfa: Yes
       software: Yes
-      doc: http://www.optionshouse.com/faq/authenticator/
+      doc: https://www.optionshouse.com/faq/authenticator/
+
+    - name: OptionsXpress
+      url: http://www.optionsxpress.com/
+      twitter: optionsXpress
+      img: optionsxpress.png
+      tfa: No
+
+    - name: Personal Capital
+      url: https://www.personalcapital.com
+      twitter: personalcapital
+      img: personalcapital.png
+      tfa: Yes
+      email: Yes
+      phone: Yes
+      doc: https://www.personalcapital.com/safety-and-security
 
     - name: Scottrade
       url: https://www.scottrade.com/
       twitter: scottrade
       img: scottrade.png
       tfa: No
+      
+    - name: Sharebuilder
+      url: https://www.sharebuilder.com/
+      twitter: sharebuilder
+      img: sharebuilder.png
+      tfa: No      
 
     - name: TD Ameritrade
       url: https://www.tdameritrade.com
@@ -69,7 +96,14 @@ websites:
       tfa: No
 
     - name: Vanguard
-      url: http://www.vanguard.com/
+      url: https://www.vanguard.com/
       twitter: Vanguard_Group
       img: vanguard.png
       tfa: No
+      status: https://twitter.com/Vanguard_Group/status/499260535360466944
+
+    - name: Wealthfront
+      url: https://www.wealthfront.com/
+      twitter: wealthfront
+      img: wealthfront.png
+      tfa: no

@@ -13,12 +13,12 @@ websites:
       status: https://twitter.com/digicert/status/454722167897616384
 
     - name: Dome9 Security
-      url: http://www.dome9.com/ 
+      url: http://www.dome9.com/
       img: dome9.png
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.dome9.com/overview/strong-2-factor-authentication 
+      doc: http://www.dome9.com/overview/strong-2-factor-authentication
 
     - name: GeoTrust
       url: http://www.geotrust.com/
@@ -35,12 +35,29 @@ websites:
       phone: Yes
       doc: https://login.norton.com/sso/embedded/learn2fa
 
+    - name: OpenDNS
+      url: http://www.opendns.com/
+      img: opendns.png
+      tfa: Yes
+      sms: Yes
+      twitter: OpenDNS
+      software: Yes
+      exceptions:
+          text: "Only available for enterprise accounts."
+      doc: http://engineering.opendns.com/2014/05/22/launching-two-step-verification/
+
     - name: SSLTrust
       url: http://ssltrust.com.au/
       img: ssltrust.png
       tfa: Yes
       software: Yes
       doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
+
+    - name: ThreatMetrix
+      url: https://www.threatmetrix.com/
+      img: threatmetrix.png
+      tfa: No
+      twitter: ThreatMetrix
 
     - name: ThreatSim
       url: http://login.threatsim.com
@@ -55,18 +72,3 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://support.tinfoilsecurity.com/customer/portal/articles/1559364-do-you-support-two-factor-authentication-how-do-i-set-it-up-
-
-    - name: ThreatMetrix
-      url: https://www.threatmetrix.com/
-      img: threatmetrix.png
-      tfa: No
-      twitter: ThreatMetrix
-
-    - name: OpenDNS
-      url: http://www.opendns.com/
-      img: opendns.png
-      tfa: Yes
-      sms: Yes
-      twitter: OpenDNS
-      software: Yes
-      doc: http://engineering.opendns.com/2014/05/22/launching-two-step-verification/

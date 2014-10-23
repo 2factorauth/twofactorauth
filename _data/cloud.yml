@@ -8,6 +8,12 @@ websites:
       hardware: Yes
       doc: http://aws.amazon.com/iam/details/mfa/
 
+    - name: appFog
+      url: https://www.appfog.com/
+      twitter: appfog
+      img: appfog.png
+      tfa: No
+
     - name: Cloud 66
       url: http://www.cloud66.com
       img: cloud66.png
@@ -49,8 +55,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://devcenter.heroku.com/articles/two-factor-authentication
-      exceptions:
-          text: "Jun 5, 2014: Currently in beta"
 
     - name: HP Cloud
       url: https://www.hpcloud.com/
@@ -64,7 +68,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: "http://wiki.joyent.com/wiki/display/jpc2/Improving+Security+Using+Two-Factor+Authentication+(2FA)"
-      
+
     - name: Microsoft Azure
       url: http://azure.microsoft.com/
       img: microsoftazure.png

@@ -9,18 +9,17 @@ providers:
     sms: Yes
     software: Yes
     hardware: Yes
-    
-  - name: Authy
-    url: https://authy.com
-    img: authy.png
-    sms: Yes
-    phone: Yes
-    software: Yes
-    hardware: Yes
 
   - name: Authenticator Plus
     url: http://authenticatorplus.com
     img: authenticatorplus.png
+    software: Yes
+
+  - name: Azure Multi-Factor Authentication
+    url: http://azure.microsoft.com/en-us/services/multi-factor-authentication/
+    img: azure.png
+    phone: Yes
+    sms: Yes
     software: Yes
 
   - name: Authentify Inc
@@ -30,6 +29,14 @@ providers:
     phone: Yes
     sms: Yes
     software: Yes
+
+  - name: Authy
+    url: https://authy.com
+    img: authy.png
+    sms: Yes
+    phone: Yes
+    software: Yes
+    hardware: Yes
 
   - name: Clef
     url: https://getclef.com
@@ -44,14 +51,24 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: FreeOTP
+    url: https://fedorahosted.org/freeotp/
+    img: freeotp.png
+    software: Yes
+
   - name: Google Authenticator
     url: http://www.google.com/landing/2step/
     img: google.png
     software: Yes
 
-  - name: FreeOTP
-    url: https://fedorahosted.org/freeotp/
-    img: freeotp.png
+  - name: LaunchKey
+    url: https://launchkey.com/
+    img: launchkey.png
+    software: Yes
+
+  - name: LoginTC
+    url: https://www.logintc.com/
+    img: logintc.png
     software: Yes
 
   - name: MePIN
@@ -61,11 +78,13 @@ providers:
     software: Yes
     hardware: Yes
 
-  - name: LaunchKey
-    url: https://launchkey.com/
-    img: launchkey.png
+  - name: PortalGuard
+    url: http://www.portalguard.com
+    img: portalguard.png
+    tfa: Yes
+    phone: Yes
     software: Yes
-
+  
   - name: Rublon
     url: https://www.rublon.com/
     img: rublon.png
@@ -100,11 +119,11 @@ providers:
     sms: Yes
     software: Yes
 
-  - name: SyferLock GridGuard
-    url: https://www.syferlock.com/
-    img: syferlock_gridguard.png
-    sms: Yes
-    email: Yes
+  - name: SecSign
+    url: https://www.secsign.com/
+    img: sec-sign.png
+    tfa: Yes
+    sms: No
     software: Yes
 
   - name: Solidpass
@@ -114,11 +133,21 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: SyferLock GridGuard
+    url: https://www.syferlock.com/
+    img: syferlock_gridguard.png
+    sms: Yes
+    email: Yes
+    software: Yes
+
   - name: Symantec/Verisign VIP
     url: https://idprotect.verisign.com/
+    email: Yes
     img: symantec.png
     hardware: yes
     software: yes
+    sms: Yes
+    phone: Yes
 
   - name: TeleSign
     url: https://www.telesign.com
@@ -131,18 +160,29 @@ providers:
     url: http://www.textpower.com/public/solutions/security-authentication/
     img: textpower.png
     sms: Yes
+  
+  - name: Totp.Me
+    url: http://www.totp.me/
+    img: totpme.png
+    software: Yes
+
+  - name: Transakt
+    url: https://gettransakt.com/transakt/
+    img: transakt.png
+    software: Yes
+
+  - name: Token2
+    url: https://token2.com
+    img: token2.png
+    software: Yes
+    hardware: Yes
+    sms: Yes
 
   - name: Toopher
     url: https://toopher.com
     img: toopher.png
     software: Yes
     sms: Yes
-
-  - name: Yubico
-    url: https://yubico.com
-    img: yubico.png
-    hardware: Yes
-    software: Yes
 
   - name: VASCO Data Security
     hardware: Yes
@@ -157,4 +197,16 @@ providers:
     url:  https://www.wikidsystems.com
     img:  wikid.png
     hardware: No
+    software: Yes
+
+  - name: WWPass
+    url:  https://www.WWPass.com
+    img:  wwpass.png
+    hardware: Yes
+    software: Yes
+
+  - name: Yubico
+    url: https://yubico.com
+    img: yubico.png
+    hardware: Yes
     software: Yes

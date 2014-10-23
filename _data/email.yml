@@ -4,7 +4,7 @@ websites:
       twitter: aol
       img: aol.png
       tfa: No
-      
+
     - name: FastMail
       url: https://www.fastmail.fm/
       img: fastmail.png
@@ -22,7 +22,13 @@ websites:
       phone: Yes
       software: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
-      
+
+    - name: GMX
+      url: https://www.gmx.com/
+      twitter: gmxmail
+      img: gmx.png
+      tfa: No
+
     - name: Hushmail
       url: https://www.hushmail.com
       img: hushmail.png
@@ -31,6 +37,12 @@ websites:
       email: Yes
       software: Yes
       doc: https://help.hushmail.com/entries/63282756-Two-step-verification
+
+    - name: Mail.com
+      url: https://www.mail.com/
+      twitter: maildotcom
+      img: maildotcom.png
+      tfa: No
 
     - name: mailbox.org
       url: https://www.mailbox.org/
@@ -54,6 +66,20 @@ websites:
       software: Yes
       doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
 
+    - name: ProtonMail
+      url: https://protonmail.ch/
+      twitter: ProtonMail
+      img: protonmail.png
+      tfa: No
+
+    - name: Riseup Mail
+      url: https://mail.riseup.net
+      twitter: riseupnet
+      img: riseup.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.riseup.net/en/email/webmail/2factorauth
+    
     - name: Yahoo Mail
       url: https://www.mail.yahoo.com/
       img: yahoomail.png

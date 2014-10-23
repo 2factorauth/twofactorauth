@@ -8,13 +8,13 @@ websites:
       hardware: Yes
       software: Yes
       doc: http://support.aha.io/hc/en-us/articles/202000967-Two-factor-authentication-2FA-user-set-up
-    
+
     - name: Airbrake
       url: https://airbrake.io
       twitter: airbrake
       img: airbrake.png
       tfa: No
-      
+
     - name: aTech Media
       url: http://atechmedia.com
       img: atechmedia.png
@@ -28,7 +28,19 @@ websites:
       twitter: bitbucket
       img: bitbucket.png
       tfa: No
-      status: https://twitter.com/bitbucket/status/445631335169028096
+
+    - name: Code Climate
+      url: https://codeclimate.com
+      twitter: codeclimate
+      img: codeclimate.png
+      tfa: Yes
+      software: Yes
+
+    - name: Codeship
+      url: https://codeship.io/
+      twitter: codeship
+      img: codeship.png
+      tfa: No
 
     - name: GitHub
       url: https://github.com
@@ -45,12 +57,36 @@ websites:
       sms: Yes
       doc: http://www.infobip.com/messaging/enterprise/2_factor_authentication/
 
+    - name: Jidoteki
+      url: https://jidoteki.com
+      img: jidoteki.png
+      tfa: Yes
+      software: Yes
+      doc: 'https://jidoteki.com/documentation#authentication'
+
     - name: Launchpad
       url: https://launchpad.net
       img: launchpad.png
       tfa: Yes
       software: Yes
       doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
+
+    - name: Looker
+      url: http://looker.com/
+      img: looker.png
+      tfa: Yes
+      software: Yes
+      sms: No
+      phone: No
+      doc: http://www.looker.com/docs/admin/two-factor-authentication
+
+    - name: Mapbox
+      url: https://www.mapbox.com
+      img: mapbox.png
+      twitter: mapbox
+      tfa: Yes
+      software: Yes
+      doc: https://www.mapbox.com/help/two-step-verification/
 
     - name: MongoHQ
       url: https://www.mongohq.com/
@@ -96,7 +132,11 @@ websites:
       url: https://unfuddle.com/
       twitter: unfuddle
       img: unfuddle.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://unfuddle.com/blog/2014/07/140721-two-factor-authentication
 
     - name: Zapier
       url: https://www.zapier.com
