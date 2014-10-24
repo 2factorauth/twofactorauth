@@ -36,13 +36,6 @@ websites:
       software: Yes
       doc: https://www.bitstamp.net/s/documents/bitstamp_2_factor_authentication_guide.pdf
 
-    - name: BTC-E
-      url: https://btc-e.com
-      img: btc-e.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.btc-e.com/index.php?/Knowledgebase/Article/View/97/25/how-do-i-set-2-factor-authentication-to-my-btc-e-account
-
     - name: Blockchain
       url: https://blockchain.info/
       img: blockchain.png
@@ -53,6 +46,13 @@ websites:
       hardware: Yes
       doc: https://blockchain.info/wallet/support-pages
 
+    - name: BTC-E
+      url: https://btc-e.com
+      img: btc-e.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.btc-e.com/index.php?/Knowledgebase/Article/View/97/25/how-do-i-set-2-factor-authentication-to-my-btc-e-account
+
     - name: CampBX
       url: https://campbx.com/
       twitter: CampBX
@@ -60,6 +60,14 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://campbx.com/faq.php#security-compliance
+
+    - name: CEX.IO
+      url: https://cex.io/
+      img: cex.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://cex.io/guide#4
 
     - name: Circle
       url: https://circle.com
@@ -76,14 +84,6 @@ websites:
       sms: Yes
       software: Yes
       doc: http://blog.coinbase.com/post/25677574019/coinbase-now-offers-two-factor-authentication
-
-    - name: CEX.IO
-      url: https://cex.io/
-      img: cex.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://cex.io/guide#4
 
     - name: Coincafe
       url: https://coincafe.com
