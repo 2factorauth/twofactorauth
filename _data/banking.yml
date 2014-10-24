@@ -104,6 +104,12 @@ websites:
             text: "Available only for credit cards, not for savings accounts. By providing your phone number, you are automatically opted in."
       doc: https://www.discover.com/credit-cards/help-center/faqs/enhancing-account-security.html
 
+    - name: everbank.com
+      url: https://everbank.com
+      twitter: everbank
+      img: everbank.png
+      tfa: No
+
     - name: Fairwinds
       url: https://www.fairwinds.org
       img: fairwinds.png
@@ -156,13 +162,17 @@ websites:
       url: http://www.lloydsbank.com/
       twitter: AskLloydsBank
       img: lloydsbank.png
-      tfa: No
+      tfa: Yes
+      phone: Yes
+      doc: http://www.lloydsbank.com/help-guidance/security/authentication-procedure.asp
 
     - name: Natwest UK
       url: https://www.natwest.com/personal.ashx
       img: natwest.png
-      tfa: No
+      tfa: Yes
+      hardware: Yes
       twitter: NatWest_Help
+      doc: http://www.natwest.com/personal/online-banking/g1/banking-safely-online/card-reader.ashx
 
     - name: Patelco Credit Union
       url: https://www.patelco.org/
@@ -251,6 +261,7 @@ websites:
       img: usaa.png
       tfa: Yes
       sms: Yes
+      hardware: Yes
       software: Yes
       doc: https://www.usaa.com/inet/pages/security_token_logon_options
 
