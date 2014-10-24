@@ -19,3 +19,9 @@ exclude:
     - README.md
     - Rakefile
     - verify.rb
+
+jekyll_sort:
+    - src: websites
+      by: name
+      direction: up
+      dest: websites_sorted
