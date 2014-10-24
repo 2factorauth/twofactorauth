@@ -37,7 +37,14 @@ providers:
     phone: Yes
     software: Yes
     hardware: Yes
-
+  - name: Clef
+    url: http://cryptophoto.com/
+    img: crpto.png
+    software: Yes
+    hardware :yes
+    phone : yes
+    sms :no
+    
   - name: Clef
     url: https://getclef.com
     img: clef.png
