@@ -27,11 +27,6 @@ p {
     padding-top: 40px;
 }
 
-.ui.menu.main > .menu {
-    width: 840px;
-    margin: 0 auto;
-}
-
 .main .column .banner {
     display: block;
     margin: 40px auto;
@@ -54,7 +49,7 @@ td.icon {
 }
 
 td i.icon{
-  margin: 0em 0em 0em 0em;
+  margin: 0 0 0 0;
 }
 
 td span.progress,
@@ -111,6 +106,13 @@ td img.icon {
 
 .ui.divider {
     margin: 2em 0;
+}
+
+@media(min-width: 767px) {
+  .ui.menu.main > .menu {
+      width: 840px;
+      margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
