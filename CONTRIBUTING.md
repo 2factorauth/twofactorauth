@@ -186,7 +186,7 @@ website. There are 4 ways to customize how it is displayed:
   it, then use:
 
   ```yml
-  tfa: no
+  tfa: No
   status: <url to documentation>
   ```
 
