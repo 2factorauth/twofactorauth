@@ -1,5 +1,8 @@
-TwoFactorAuth.org [![Build Status](https://travis-ci.org/jdavis/twofactorauth.png?branch=master)](https://travis-ci.org/jdavis/twofactorauth)
+TwoFactorAuth.org
 =================
+
+[![Build Status](http://img.shields.io/travis/jdavis/twofactorauth.svg?style=flat)](https://travis-ci.org/jdavis/twofactorauth)
+[![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
 
 A list of popular sites and whether or not they accept two factor auth.
 
