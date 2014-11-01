@@ -3,6 +3,8 @@ TwoFactorAuth.org
 
 [![Build Status](http://img.shields.io/travis/jdavis/twofactorauth.svg?style=flat)](https://travis-ci.org/jdavis/twofactorauth)
 [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
+[![irc](http://img.shields.io/badge/freenode-join%20%232fa-green.svg?style=flat)](http://webchat.freenode.net/?channels=%232fa)
+![gitter.im](http://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-orange.svg?style=flat)
 
 A list of popular sites and whether or not they accept two factor auth.
 
