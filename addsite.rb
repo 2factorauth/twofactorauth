@@ -22,6 +22,25 @@ begin
       qtfa
     end
   end
+  
+  def category
+    puts 'What category fits the site?'
+    / TODO: Add to array /
+    categories = ["backup", "banking", "bitcoin", "cloud", "communication", "developer", "domains", "education", "email", "entertainment", "finance", "gaming", "health", "hosting", "identity", "investing", "other", "payments", "remote", "retail", "security", "social"]
+    print"available categories: "
+    categories.each do |category|
+      print "#{category}, "
+      /TODO: remove last ','/
+    end
+    print "\n"
+    cat = gets.chomp.downcase
+    if categories.include?(cat)
+      $category = cat
+      true
+    else
+      category
+    end
+  end
 
   def qtfa
     puts "What is the site's name?"
@@ -34,10 +53,7 @@ begin
     end
 
     if $website
-      puts 'What category fits the site?'
-      / TODO: Add to array /
-      puts 'Backup, Banking, Cloud, Communication, Crypto, Developer, Domains, Education, Email, Entertainment, Finance, Gaming, Health, Hosting, Identity, Investing, Other, Payments, Remote, Retail, Security, Social'
-      $category = gets.chomp.downcase
+      category
 
       if question('Does the site currently support TFA?', 'y', 'n')
         $tfa = true
@@ -79,16 +95,14 @@ begin
 
     if $website
       if question('Can you provide a link to some sort of documentation by the site on how to use/set up tfa?', 'y', 'n')
-        print 'Please type a link:'
+        puts 'Please type a link:'
         $docs = gets.chomp.downcase
         if !$docs.include? 'http'
           $docs.insert(0, 'http://')
         end
-      else
-        /What do?/
       end
     end
-
+    setup
   end
 
   def setup
@@ -101,6 +115,7 @@ begin
     else
       results = [$name, $url, $sms, $phone, $email, $hardware, $software]
     end
+    puts results 
   end
 
   / script /
