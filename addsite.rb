@@ -27,12 +27,11 @@ begin
     puts 'What category fits the site?'
     / TODO: Add to array /
     categories = ["backup", "banking", "bitcoin", "cloud", "communication", "developer", "domains", "education", "email", "entertainment", "finance", "gaming", "health", "hosting", "identity", "investing", "other", "payments", "remote", "retail", "security", "social"]
-    print"available categories: "
-    categories.each do |category|
-      print "#{category}, "
-      /TODO: remove last ','/
-    end
-    print "\n"
+
+    puts "available categories: "
+
+    puts "#{categories.join(",")}\n"
+
     cat = gets.chomp.downcase
     if categories.include?(cat)
       $category = cat
@@ -115,7 +114,7 @@ begin
     else
       results = [$name, $url, $sms, $phone, $email, $hardware, $software]
     end
-    puts results 
+    puts results
   end
 
   / script /
