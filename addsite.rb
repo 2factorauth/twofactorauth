@@ -22,13 +22,16 @@ begin
       qtfa
     end
   end
-  
+
   def category
     puts 'What category fits the site?'
     / TODO: Add to array /
-    categories = ["backup", "banking", "bitcoin", "cloud", "communication", "developer", "domains", "education", "email", "entertainment", "finance", "gaming", "health", "hosting", "identity", "investing", "other", "payments", "remote", "retail", "security", "social"]
 
-    puts "available categories: "
+    categories = Dir['_data/*'].map do |file|
+      File.basename(file).split(".yml")
+    end.flatten
+
+    puts "Available categories: "
 
     puts "#{categories.join(",")}\n"
 
