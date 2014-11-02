@@ -112,8 +112,38 @@ begin
     TODO: Use the vars provided in tfas and add that to the yaml section.
     /
 
+    binding.pry
+
     if $website
-      results = [$name, $url, $category, $tfa, $sms, $phone, $email, $hardware, $software, $docs]
+      file = "_data/#{$category}.yml"
+      config=YAML.load_file(file)
+
+      site_config = {
+        "name" => $name,
+        "url" => $url,
+        "tfa" => $tfa,
+        "sms" => $sms,
+        "phone" => $phone,
+        "software" => $software,
+        "hardware" => $hardware,
+        "docs" => $docs
+      }
+
+      #remove nil values
+      site_config.reject!{|k,v|v.nil?}
+
+      websites = config["websites"]
+      websites << site_config
+
+      #sort
+      websites.sort! do |x, y|
+        x["name"].downcase <=> y["name"].downcase
+      end
+
+      File.open(file, 'w') do |file|
+        file.write(YAML.dump(config))
+      end
+
     else
       results = [$name, $url, $sms, $phone, $email, $hardware, $software]
     end
