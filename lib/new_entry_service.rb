@@ -128,7 +128,33 @@ class NewEntryService
       end
 
     else
-      results = [@name, @url, @sms, @phone, @email, @hardware, @software]
+      file = "_data/providers.yml"
+      config=YAML.load_file(file)
+
+      provider_config = {
+        "name"     => params["name"],
+        "url"      => params["url"],
+        "sms"      => params["sms"],
+        "phone"    => params["phone"],
+        "email"    => params["email"],
+        "hardware" => params["hardware"],
+        "software" => params["software"],
+      }
+
+      #remove nil values
+      provider_config.reject!{|k,v|v.nil?}
+
+      providers = config["providers"]
+
+      #append the new provider details
+      providers << provider_config
+
+      sort!(providers)
+
+      File.open(file, 'w') do |file|
+        file.write(YAML.dump(config))
+      end
+
     end
   end
 
