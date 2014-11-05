@@ -103,9 +103,9 @@ class NewEntryService
 
       site_config = {
         "name"     => params["name"],
+        "tfa"      => params["tfa"],
         "phone"    => params["phone"],
         "url"      => params["url"],
-        "tfa"      => params["tfa"],
         "sms"      => params["sms"],
         "email"    => params["email"],
         "software" => params["software"],
@@ -124,7 +124,7 @@ class NewEntryService
       sort!(websites)
 
       File.open(file, 'w') do |file|
-        file.write(YAML.dump(config))
+        file.write(config.to_yaml(indentation:6))
       end
 
     else
@@ -152,7 +152,7 @@ class NewEntryService
       sort!(providers)
 
       File.open(file, 'w') do |file|
-        file.write(YAML.dump(config))
+        file.write(config.to_yaml(indentation:6))
       end
 
     end
