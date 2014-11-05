@@ -3,12 +3,15 @@ require 'uri'
 class NewEntryService
 
   def run
-    if question('Is the site you want to add a provider(P) or website(W)?', 'P', 'W')
-      qtfa
-    else
-      @website = true
-      qtfa
-    end
+    params =
+      if question('Is the site you want to add a provider(P) or website(W)?', 'P', 'W')
+        qtfa
+      else
+        @website = true
+        qtfa
+      end
+
+    setup(params)
   end
 
   private
@@ -46,15 +49,15 @@ class NewEntryService
     end
   end
 
-  def qtfa
+  def qtfa(params = {})
     puts "What is the site's name?"
-    @name = gets.chomp
+    params["name"] = gets.chomp
 
     puts "What is the site's URL? (eg. https://twofactorauth.org)"
-    @url = gets.chomp.downcase
+    params["url"] = gets.chomp.downcase
 
-    if !@url.include? 'http'
-      @url.insert(0, 'http://')
+    if !params["url"].include? 'http'
+      params["url"].insert(0, 'http://')
     end
 
     if @website
@@ -62,74 +65,53 @@ class NewEntryService
 
       if question('Does the site currently support TFA?', 'y', 'n')
         @tfa = true
-        tfas
+        params = tfas(params)
       else
         @tfa = false
       end
     else
-      tfas
+      params = tfas(params)
     end
+
   end
 
-  def tfas
+  def tfas(params)
 
-    if question('Does the site support tfa via SMS?', 'y', 'n')
-      @sms = true
-    else
-      @sms = false
-    end
-
-    if question('Does the site support tfa via phone calls?', 'y', 'n')
-      @phone = true
-    else
-      @phone = false
-    end
-
-    if question('Does the site support tfa via email?', 'y', 'n')
-      $email = true
-    else
-      $email = false
-    end
-
-    if question('Does the site support tfa via hardware tokens?', 'y', 'n')
-      @hardware = true
-    else
-      @hardware = false
-    end
-
-    if question('Does the site support tfa via software implementation?', 'y', 'n')
-      @software = true
-    else
-      @software = false
-    end
+    params["sms"]      = question('Does the site support tfa via SMS?', 'y', 'n')
+    params["phone"]    = question('Does the site support tfa via phone calls?', 'y', 'n')
+    params["email"]    = question('Does the site support tfa via email?', 'y', 'n')
+    params["hardware"] = question('Does the site support tfa via hardware tokens?', 'y', 'n')
+    params["software"] = question('Does the site support tfa via software implementation?', 'y', 'n')
 
     if @website
       if question('Can you provide a link to some sort of documentation by the site on how to use/set up tfa?', 'y', 'n')
         puts 'Please type a link:'
-        @docs = gets.chomp.downcase
-        if !@docs.include? 'http'
-          @docs.insert(0, 'http://')
+        params["docs"] = gets.chomp.downcase
+        if !params["docs"].include? 'http'
+          params["docs"].insert(0, 'http://')
         end
       end
     end
-    setup
+
+    params
   end
 
-  def setup
+  def setup(params)
 
     if @website
       file = "_data/#{@category}.yml"
       config=YAML.load_file(file)
 
       site_config = {
-        "name" => @name,
-        "url" => @url,
-        "tfa" => @tfa,
-        "sms" => @sms,
-        "phone" => @phone,
-        "software" => @software,
-        "hardware" => @hardware,
-        "docs" => @docs
+        "name"     => params["name"],
+        "phone"    => params["phone"],
+        "url"      => params["url"],
+        "tfa"      => params["tfa"],
+        "sms"      => params["sms"],
+        "email"    => params["email"],
+        "software" => params["software"],
+        "hardware" => params["hardware"],
+        "docs"     => params["docs"]
       }
 
       #remove nil values
@@ -145,7 +127,7 @@ class NewEntryService
       end
 
     else
-      results = [@name, @url, @sms, @phone, $email, @hardware, @software]
+      results = [@name, @url, @sms, @phone, @email, @hardware, @software]
     end
   end
 
