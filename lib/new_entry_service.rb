@@ -42,8 +42,7 @@ class NewEntryService
 
     cat = gets.chomp.downcase
     if categories.include?(cat)
-      @category = cat
-      true
+      return cat
     else
       category
     end
@@ -61,13 +60,13 @@ class NewEntryService
     end
 
     if @website
-      category
+      params["category"] = category
 
       if question('Does the site currently support TFA?', 'y', 'n')
-        @tfa = true
+        params["tfa"] = true
         params = tfas(params)
       else
-        @tfa = false
+        params["tfa"] = false
       end
     else
       params = tfas(params)
@@ -99,7 +98,7 @@ class NewEntryService
   def setup(params)
 
     if @website
-      file = "_data/#{@category}.yml"
+      file = "_data/#{params["category"]}.yml"
       config=YAML.load_file(file)
 
       site_config = {
@@ -118,6 +117,8 @@ class NewEntryService
       site_config.reject!{|k,v|v.nil?}
 
       websites = config["websites"]
+
+      #append the newly provided site details
       websites << site_config
 
       sort!(websites)
