@@ -111,6 +111,16 @@ websites:
       software: Yes
       doc: http://services.runescape.com/m=rswiki/en/Authenticator_FAQ
 
+    - name: Square Enix
+      url: http://na.square-enix.com/
+      img: squarenix.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.square-enix.com/na/account/otp/
+      exceptions:
+          text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
+
     - name: "Star Wars: The Old Republic"
       url: http://www.swtor.com/
       img: swtor.png
@@ -125,16 +135,6 @@ websites:
       tfa: Yes
       email: Yes
       doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
-
-    - name: Square Enix
-      url: http://na.square-enix.com/
-      img: squarenix.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.square-enix.com/na/account/otp/
-      exceptions:
-          text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
 
     - name: Trion Worlds
       url: http://www.trionworlds.com/en/

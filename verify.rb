@@ -3,13 +3,20 @@ require 'yaml'
 require 'fastimage'
 $output=0;
 begin
+
   def error(msg)
     $output=$output+1;
     if($output == 1)
       puts "<------------ ERROR ------------>\n"
     end
     puts "#{$output}. #{msg}"
-    
+
+  end
+
+  def sorted?(sites)
+    sites.each_cons(2).all? do |x, y|
+      (x["name"].downcase <=> y["name"].downcase) != 1
+    end
   end
 
   # Load each section, check for errors such as invalid syntax
@@ -18,7 +25,13 @@ begin
   main["sections"].each do |section|
     data = YAML.load_file('_data/' + section["id"] + '.yml')
 
-    data['websites'].each do |website|
+    websites = data["websites"]
+
+    unless sorted?(websites)
+      error("Websites in section '#{section["id"]}' are not sorted")
+    end
+
+    websites.each do |website|
       image = "img/#{section['id']}/#{website['img']}"
 
       unless File.exists?(image)
@@ -30,7 +43,7 @@ begin
       unless FastImage.size(image) == image_dimensions
         error("#{image} is not #{image_dimensions.join("x")}")
       end
-          
+
       ext = ".png"
       unless File.extname(image) == ext
         error("#{image} is not #{ext}")
@@ -50,7 +63,7 @@ begin
     unless FastImage.size(pimage) == image_dimensions
       error("#{pimage} is not #{image_dimensions.join("x")}")
     end
-          
+
     ext = ".png"
     unless File.extname(pimage) == ext
       error("#{pimage} is not #{ext}")
