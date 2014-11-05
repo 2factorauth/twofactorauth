@@ -1,3 +1,5 @@
+require 'uri'
+
 class NewEntryService
 
   def run
@@ -50,6 +52,7 @@ class NewEntryService
 
     puts "What is the site's URL? (eg. https://twofactorauth.org)"
     @url = gets.chomp.downcase
+
     if !@url.include? 'http'
       @url.insert(0, 'http://')
     end
@@ -135,10 +138,7 @@ class NewEntryService
       websites = config["websites"]
       websites << site_config
 
-      #sort
-      websites.sort! do |x, y|
-        x["name"].downcase <=> y["name"].downcase
-      end
+      sort!(websites)
 
       File.open(file, 'w') do |file|
         file.write(YAML.dump(config))
@@ -146,6 +146,13 @@ class NewEntryService
 
     else
       results = [@name, @url, @sms, @phone, $email, @hardware, @software]
+    end
+  end
+
+  #sort the hash inplace
+  def sort!(hash)
+    hash.sort! do |x, y|
+      x["name"].downcase <=> y["name"].downcase
     end
   end
 
