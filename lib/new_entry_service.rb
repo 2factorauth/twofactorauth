@@ -11,7 +11,7 @@ class NewEntryService
         qtfa
       end
 
-    setup(params)
+    output_yaml(params)
   end
 
   private
@@ -95,7 +95,7 @@ class NewEntryService
     params
   end
 
-  def setup(params)
+  def output_yaml(params)
 
     if @website
       file = "_data/#{params["category"]}.yml"
