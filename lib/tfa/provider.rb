@@ -22,9 +22,9 @@ module TFA
         params["url"].insert(0, 'http://')
       end
 
-      params["sms"]      = question('Does the provider support TFA via SMS?', 'y', 'n')
-      params["phone"]    = question('Does the provider support TFA via Phone?', 'y', 'n')
-      params["email"]    = question('Does the provider support TFA via Email?', 'y', 'n')
+      params["sms"]         = question('Does the provider support TFA via SMS?', 'y', 'n')
+      params["phone"]       = question('Does the provider support TFA via Phone?', 'y', 'n')
+      params["email"]       = question('Does the provider support TFA via Email?', 'y', 'n')
       params["hardware"]    = question('Does the provider provide hardware solution?', 'y', 'n')
       params["software"]    = question('Does the provider software solution?', 'y', 'n')
 
@@ -37,11 +37,11 @@ module TFA
       config=YAML.load_file(file)
 
       provider_config = {
-        "name"     => params["name"],
-        "phone"    => params["phone"],
-        "url"      => params["url"],
-        "sms"      => params["sms"],
-        "email"    => params["email"],
+        "name"          => params["name"],
+        "phone"         => params["phone"],
+        "url"           => params["url"],
+        "sms"           => params["sms"],
+        "email"         => params["email"],
         "software"      => params["software"],
         "hardware"      => params["hardware"],
       }
