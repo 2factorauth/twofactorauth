@@ -1,17 +1,17 @@
 require 'uri'
-require "#{(__FILE__)}/../tfa"
-require "#{(__FILE__)}/../question"
+require "#{(__FILE__)}/../tfa/tfa"
+require "#{(__FILE__)}/../tfa/helpers"
 
 class NewEntryService
 
-  include ::Question
+  include ::TFA::Helpers
 
   def run
     params =
       if question('Is the site you want to add a provider(P) or website(W)?', 'P', 'W')
         qtfa
       else
-        ::TFA.new.run
+        ::TFA::TFA.new.run
       end
   end
 

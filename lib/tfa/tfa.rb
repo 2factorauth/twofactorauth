@@ -1,8 +1,8 @@
-require "#{(__FILE__)}/../question"
+require "#{(__FILE__)}/../helpers"
 
-class TFA
+class TFA::TFA
 
-  include ::Question
+  include ::TFA::Helpers
 
   def run(params={})
     output_yaml(qtfa)
