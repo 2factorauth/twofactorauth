@@ -14,5 +14,12 @@ module TFA
       end
     end
 
+    #sort the hash inplace
+    def sort!(hash)
+      hash.sort! do |x, y|
+        x["name"].downcase <=> y["name"].downcase
+      end
+    end
+
   end
 end
