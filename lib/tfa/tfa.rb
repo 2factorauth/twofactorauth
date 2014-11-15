@@ -20,7 +20,7 @@ class TFA::TFA
 
     puts "Available categories: "
 
-    puts "#{categories.join(",")}\n"
+    puts "#{categories.join(", ")}\n"
 
     cat = gets.chomp.downcase
     if categories.include?(cat)
@@ -115,7 +115,7 @@ class TFA::TFA
 
     image_path = "img/#{params["category"]}/#{params["name"]}.png"
 
-    puts "IMPORTANT: Please add 32x32 image into #{image_path}"
+    puts "IMPORTANT: Please add 32x32 .PNG image into #{image_path}"
 
   end
 
