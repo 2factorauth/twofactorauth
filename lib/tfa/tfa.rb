@@ -48,8 +48,18 @@ class TFA::TFA
       params = tfas(params)
     else
       params["tfa"] = false
+      params = no_tfas(params)
     end
 
+    params
+  end
+
+  def no_tfas(params)
+    puts "What is the site's twitter handle?"
+    twitter= gets.chomp
+    twitter.gsub!(/@/,"")
+    params["twitter"] = twitter
+    params
   end
 
   def tfas(params)
@@ -85,6 +95,7 @@ class TFA::TFA
       "email"    => params["email"],
       "software" => params["software"],
       "hardware" => params["hardware"],
+      "twitter"  => params["twitter"],
       "docs"     => params["docs"]
     }
 
