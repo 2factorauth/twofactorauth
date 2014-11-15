@@ -113,6 +113,10 @@ class TFA::TFA
       file.write(config.to_yaml(indentation:6))
     end
 
+    image_path = "img/#{params["category"]}/#{params["name"]}.png"
+
+    puts "IMPORTANT: Please add 32x32 image into #{image_path}"
+
   end
 
 end
