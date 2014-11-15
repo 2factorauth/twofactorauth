@@ -1,3 +1,4 @@
+require 'yaml'
 require "#{(__FILE__)}/../helpers"
 
 class TFA::TFA
@@ -73,7 +74,7 @@ class TFA::TFA
   def output_yaml(params)
 
     file = "_data/#{params["category"]}.yml"
-    config=YAML.load_file(file)
+    config=::YAML.load_file(file)
 
     site_config = {
       "name"     => params["name"],

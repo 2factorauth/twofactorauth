@@ -1,3 +1,4 @@
+require 'yaml'
 require "#{(__FILE__)}/../helpers"
 
 module TFA
@@ -34,7 +35,7 @@ module TFA
     def output_yaml(params)
 
       file = "_data/providers.yml"
-      config=YAML.load_file(file)
+      config=::YAML.load_file(file)
 
       provider_config = {
         "name"          => params["name"],

@@ -1,4 +1,3 @@
-require 'uri'
 require "#{(__FILE__)}/../tfa/tfa"
 require "#{(__FILE__)}/../tfa/provider"
 require "#{(__FILE__)}/../tfa/helpers"
