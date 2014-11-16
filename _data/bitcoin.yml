@@ -13,7 +13,7 @@ websites:
       sms: Yes
       software: Yes
       doc: https://www.youtube.com/watch?v=KFvoNHgl9Pw
-      
+
     - name: Bitcoin-Central
       url: https://bitcoin-central.net
       img: bitcoincentral.png
@@ -21,7 +21,7 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://bitcoin-central.net/page/profile/security
-       
+
     - name: Bitpay
       url: https://bitpay.com
       img: bitpay.png
@@ -35,7 +35,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.bitstamp.net/s/documents/bitstamp_2_factor_authentication_guide.pdf
-      
+
     - name: BTC-E
       url: https://btc-e.com
       img: btc-e.png
@@ -61,6 +61,15 @@ websites:
       software: Yes
       doc: https://campbx.com/faq.php#security-compliance
 
+    - name: Circle
+      url: https://circle.com
+      twitter: circlebits
+      img: circle.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.circle.com/hc/en-us/articles/201974154-What-is-two-factor-authentication-2FA-
+
     - name: Coinbase
       url: https://coinbase.com/
       img: coinbase.png
@@ -68,6 +77,14 @@ websites:
       sms: Yes
       software: Yes
       doc: http://blog.coinbase.com/post/25677574019/coinbase-now-offers-two-factor-authentication
+
+    - name: CEX.IO
+      url: https://cex.io/
+      img: cex.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://cex.io/guide#4
 
     - name: Coincafe
       url: https://coincafe.com
@@ -103,7 +120,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.cryptsy.com/pages/security
-      
+
     - name: Eclipse Mining Consortium
       url: https://eclipsemc.com
       img: eclipsemc.png

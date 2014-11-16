@@ -9,8 +9,9 @@ websites:
       url: http://www.digicert.com/
       twitter: digicert
       img: digicert.png
-      tfa: No
-      status: https://twitter.com/digicert/status/454722167897616384
+      tfa: Yes
+      software: Yes
+      doc: https://www.digicert.com/two-factor-authentication.htm
 
     - name: Dome9 Security
       url: http://www.dome9.com/
@@ -72,3 +73,9 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://support.tinfoilsecurity.com/customer/portal/articles/1559364-do-you-support-two-factor-authentication-how-do-i-set-it-up-
+
+    - name: Webroot
+      url: http://www.webroot.com
+      img: webroot.png
+      twitter: Webroot
+      tfa: No

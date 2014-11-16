@@ -29,6 +29,13 @@ websites:
       img: bitbucket.png
       tfa: No
 
+    - name: Code Climate
+      url: https://codeclimate.com
+      twitter: codeclimate
+      img: codeclimate.png
+      tfa: Yes
+      software: Yes
+
     - name: Codeship
       url: https://codeship.io/
       twitter: codeship
@@ -71,7 +78,15 @@ websites:
       software: Yes
       sms: No
       phone: No
-      doc: https://docs.google.com/document/d/19CVM74XC5S8sDLFH9muzjCzgV7xDA30IZWR4JU4KUNA/edit?usp=sharing
+      doc: http://www.looker.com/docs/admin/two-factor-authentication
+
+    - name: Mapbox
+      url: https://www.mapbox.com
+      img: mapbox.png
+      twitter: mapbox
+      tfa: Yes
+      software: Yes
+      doc: https://www.mapbox.com/help/two-step-verification/
 
     - name: MongoHQ
       url: https://www.mongohq.com/

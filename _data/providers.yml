@@ -42,7 +42,12 @@ providers:
     url: https://getclef.com
     img: clef.png
     software: Yes
-
+    
+  - name: CryptoPhoto
+    url: https://www.cryptophoto.com
+    img: cryptophoto.png
+    software: Yes
+    
   - name: Duo Security
     url: https://www.duosecurity.com
     img: duo.png
@@ -59,6 +64,11 @@ providers:
   - name: Google Authenticator
     url: http://www.google.com/landing/2step/
     img: google.png
+    software: Yes
+
+  - name: Latch
+    url: https://latch.elevenpaths.com
+    img: latch.png
     software: Yes
 
   - name: LaunchKey
@@ -78,9 +88,17 @@ providers:
     software: Yes
     hardware: Yes
 
+  - name: PortalGuard
+    url: http://www.portalguard.com
+    img: portalguard.png
+    tfa: Yes
+    phone: Yes
+    software: Yes
+  
   - name: Rublon
     url: https://www.rublon.com/
     img: rublon.png
+    email: Yes
     software: Yes
 
   - name: SAASPASS
@@ -190,6 +208,12 @@ providers:
     url:  https://www.wikidsystems.com
     img:  wikid.png
     hardware: No
+    software: Yes
+
+  - name: WWPass
+    url:  https://www.WWPass.com
+    img:  wwpass.png
+    hardware: Yes
     software: Yes
 
   - name: Yubico

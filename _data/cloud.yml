@@ -46,6 +46,7 @@ websites:
       sms: Yes
       software: Yes
       phone: Yes
+      hardware: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Heroku
@@ -55,8 +56,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://devcenter.heroku.com/articles/two-factor-authentication
-      exceptions:
-          text: "Jun 5, 2014: Currently in beta"
 
     - name: HP Cloud
       url: https://www.hpcloud.com/
@@ -70,7 +69,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: "http://wiki.joyent.com/wiki/display/jpc2/Improving+Security+Using+Two-Factor+Authentication+(2FA)"
-      
+
     - name: Microsoft Azure
       url: http://azure.microsoft.com/
       img: microsoftazure.png

@@ -19,6 +19,19 @@ websites:
       img: americanexpress.png
       tfa: No
 
+    - name: America First Credit Union
+      url: https://www.americafirst.com/
+      twitter: AFCU
+      img: americafirstcu.png
+      tfa: No
+
+    - name: Bank Central Asia (BCA)
+      url: http://www.bca.co.id/en/individual/individual.jsp
+      img: bankcentralasia.png
+      tfa: Yes
+      hardware: Yes
+      doc: http://www.bca.co.id/en/individual/produk_dan_layanan/e-banking/klikbca/klikbca-keybca/klikbca-keybca.jsp
+
     - name: Bank of America
       url: https://www.bankofamerica.com/
       img: bankofamerica.png
@@ -72,7 +85,7 @@ websites:
       sms: Yes
       phone: Yes
       email: Yes
-      doc: https://mobilebanking.chase.com/Public/Docs/Faq?nodeId=1&itemId=2
+      doc: https://twofactorauth.org/notes/chase/
 
     - name: CIBC
       url: http://www.cibc.ca
@@ -97,6 +110,12 @@ websites:
       exceptions:
             text: "Available only for credit cards, not for savings accounts. By providing your phone number, you are automatically opted in."
       doc: https://www.discover.com/credit-cards/help-center/faqs/enhancing-account-security.html
+
+    - name: everbank.com
+      url: https://everbank.com
+      twitter: everbank
+      img: everbank.png
+      tfa: No
 
     - name: Fairwinds
       url: https://www.fairwinds.org
@@ -150,13 +169,17 @@ websites:
       url: http://www.lloydsbank.com/
       twitter: AskLloydsBank
       img: lloydsbank.png
-      tfa: No
+      tfa: Yes
+      phone: Yes
+      doc: http://www.lloydsbank.com/help-guidance/security/authentication-procedure.asp
 
     - name: Natwest UK
       url: https://www.natwest.com/personal.ashx
       img: natwest.png
-      tfa: No
+      tfa: Yes
+      hardware: Yes
       twitter: NatWest_Help
+      doc: http://www.natwest.com/personal/online-banking/g1/banking-safely-online/card-reader.ashx
 
     - name: Patelco Credit Union
       url: https://www.patelco.org/
@@ -186,6 +209,12 @@ websites:
       img: rbc.png
       tfa: No
 
+    - name: San Francisco Fire Credit Union
+      url: https://www.sffirecu.org
+      twitter: SFFireCU
+      img: sffirecu.png
+      tfa: No
+
     - name: SEB
       url: http://www.seb.se/pow/default.asp
       img: seb.png
@@ -198,7 +227,6 @@ websites:
       twitter: simple
       img: simple.png
       tfa: No
-      status: https://twitter.com/simple/status/445966117543378944
 
     - name: SunTrust
       url: https://www.suntrust.com/
@@ -213,6 +241,12 @@ websites:
       hardware: Yes
       software: Yes
       doc: http://hjalp.swedbank.se/logga-in/index.htm
+
+    - name: TARGOBANK
+      url: https://www.targobank.de/
+      img: targobank.png
+      tfa: No
+      twitter: TARGOBANK
 
     - name: TBC Bank
       url: http://www.tbcbank.ge
@@ -240,6 +274,7 @@ websites:
       img: usaa.png
       tfa: Yes
       sms: Yes
+      hardware: Yes
       software: Yes
       doc: https://www.usaa.com/inet/pages/security_token_logon_options
 

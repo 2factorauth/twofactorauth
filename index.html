@@ -72,7 +72,8 @@ hash: SupportTwoFactorAuth
                                         {% if website.tfa %}
                                             <td class="main positive">
                                             {% if website.img %}
-                                                <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                                                <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                                                <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
                                             {% endif %}
                                                 <a href="{{ website.url }}">{{ website.name }}</a>
                                                 {% include exception.html website=website %}
@@ -117,7 +118,8 @@ hash: SupportTwoFactorAuth
                                         {% else %}
                                             <td class="main negative">
                                             {% if website.img %}
-                                                <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                                                <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                                                <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
                                             {% endif %}
                                                 <a href="{{ website.url }}">{{ website.name }}</a>
                                             {% if website.status %}
