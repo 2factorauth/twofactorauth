@@ -130,6 +130,12 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: SecurePass
+    url: http://www.secure-pass.net/
+    img: securepass.png
+    hardware: Yes
+    software: Yes
+
   - name: SecSign
     url: https://www.secsign.com/
     img: sec-sign.png
