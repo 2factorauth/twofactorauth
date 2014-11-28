@@ -130,6 +130,12 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: SecurePass
+    url: http://www.secure-pass.net/
+    img: securepass.png
+    hardware: Yes
+    software: Yes
+
   - name: SecSign
     url: https://www.secsign.com/
     img: sec-sign.png
@@ -159,6 +165,13 @@ providers:
     software: yes
     sms: Yes
     phone: Yes
+
+  - name: TeddyID
+    url: https://www.teddyid.com
+    img: teddyid.png
+    sms: Yes
+    email: Yes
+    software: Yes
 
   - name: TeleSign
     url: https://www.telesign.com
