@@ -14,9 +14,9 @@ begin
 
   # Load each section, check for errors such as invalid syntax
   # as well as if an image is missing
-  main = YAML.load_file('_data/main.yml')
+  main = YAML.load_file('_data/devices/main.yml')
   main["sections"].each do |section|
-    data = YAML.load_file('_data/' + section["id"] + '.yml')
+    data = YAML.load_file('_data/devices/' + section["id"] + '.yml')
 
     data['websites'].each do |website|
       image = "img/#{section['id']}/#{website['img']}"
