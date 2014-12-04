@@ -1,0 +1,95 @@
+websites:
+    - name: Basecamp
+      url: https://basecamp.com/
+      img: basecamp.png
+      tfa: Yes
+      doc: https://basecamp.com/help/guides/you/phone-verification
+
+    - name: Campfire
+      url: https://campfirenow.com/
+      img: campfire.png
+      tfa: Yes
+      doc: https://help.37signals.com/sign-in/questions/460-how-do-i-set-up-and-use-phone-verification-for-logging-in
+
+    - name: Customer.io
+      url: http://customer.io
+      twitter: customerio
+      img: customerio.png
+      tfa: No
+
+    - name: Disqus
+      url: https://disqus.com
+      twitter: disqus
+      img: disqus.png
+      tfa: No
+
+    - name: Fleep
+      url: https://fleep.io
+      twitter: fleepio
+      img: fleep.png
+      tfa: No
+
+    - name: HipChat
+      url: https://www.hipchat.com
+      twitter: HipChat
+      img: hipchat.png
+      tfa: No
+
+    - name: Mailchimp
+      url: https://mailchimp.com/
+      img: mailchimp.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: https://blog.mailchimp.com/alterego-integrations-for-easy-authentication/
+
+    - name: Mailgun
+      url: https://mailgun.com
+      twitter: Mail_Gun
+      img: mailgun.png
+      tfa: No
+
+    - name: Salesforce
+      url: http://www.salesforce.com
+      img: salesforce.png
+      tfa: Yes
+      otp: Yes
+      doc: http://www.youtube.com/watch?v=J9URPAC21Gc&feature=youtu.be
+
+    - name: SendGrid
+      url: https://sendgrid.com/
+      img: sendgrid.png
+      tfa: Yes
+      doc: https://sendgrid.com/docs/User_Guide/two_factor_authentication.html
+
+    - name: Sendloop
+      url: http://app.sendloop.com
+      img: sendloop.png
+      tfa: Yes
+      otp: Yes
+      doc: http://app.sendloop.com/help/article/account-003/how-can-i-make-my-account-more-secure
+
+    - name: Skype (w/Microsoft Account)
+      url: https://www.skype.com
+      img: skype.png
+      tfa: Yes
+      otp: Yes
+      doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
+
+    - name: Slack
+      url: http://www.slack.com
+      twitter: SlackHQ
+      img: slack.png
+      tfa: No
+
+    - name: ToutApp
+      url: http://www1.toutapp.com/
+      twitter: toutapp
+      img: toutapp.png
+      tfa: No
+
+    - name: Yammer
+      url: https://yammer.com
+      twitter: yammer
+      img: yammer.png
+      tfa: No

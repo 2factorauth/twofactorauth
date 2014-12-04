@@ -1,0 +1,76 @@
+websites:
+    - name: CAcert
+      url: https://www.cacert.org/
+      twitter: CAcert_News
+      img: cacert.png
+      tfa: No
+
+    - name: DigiCert
+      url: http://www.digicert.com/
+      twitter: digicert
+      img: digicert.png
+      tfa: Yes
+      otp: Yes
+      doc: https://www.digicert.com/two-factor-authentication.htm
+
+    - name: Dome9 Security
+      url: http://www.dome9.com/
+      img: dome9.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: http://www.dome9.com/overview/strong-2-factor-authentication
+
+    - name: GeoTrust
+      url: http://www.geotrust.com/
+      img: geotrust.png
+      tfa: Yes
+
+    - name: Norton
+      url: http://us.norton.com
+      img: norton.png
+      tfa: Yes
+      otp: Yes
+      doc: https://login.norton.com/sso/embedded/learn2fa
+
+    - name: OpenDNS
+      url: http://www.opendns.com/
+      img: opendns.png
+      tfa: Yes
+      twitter: OpenDNS
+      otp: Yes
+      exceptions:
+          text: "Only available for enterprise accounts."
+      doc: http://engineering.opendns.com/2014/05/22/launching-two-step-verification/
+
+    - name: SSLTrust
+      url: http://ssltrust.com.au/
+      img: ssltrust.png
+      tfa: Yes
+      otp: Yes
+      doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
+
+    - name: ThreatMetrix
+      url: https://www.threatmetrix.com/
+      img: threatmetrix.png
+      tfa: No
+      twitter: ThreatMetrix
+
+    - name: ThreatSim
+      url: http://login.threatsim.com
+      img: threatsim.png
+      tfa: Yes
+      doc: http://threatsim.com/features/
+
+    - name: Tinfoil Security
+      url: https://www.tinfoilsecurity.com
+      img: tinfoil.png
+      tfa: Yes
+      otp: Yes
+      doc: http://support.tinfoilsecurity.com/customer/portal/articles/1559364-do-you-support-two-factor-authentication-how-do-i-set-it-up-
+
+    - name: Webroot
+      url: http://www.webroot.com
+      img: webroot.png
+      twitter: Webroot
+      tfa: No

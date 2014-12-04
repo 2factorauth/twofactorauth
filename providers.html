@@ -8,8 +8,8 @@ layout: default
     <div class="ui grid">
         <div class="column">
             <div class="banner ui icon header">
-                <i class="circular mobile icon"></i>
-                <h2>Two Factor Auth (2FA) Providers</h2>
+                <i class="circular lock icon"></i>
+                <h2>Two Factor Auth (2FA) Dongles</h2>
                 <div class="sub header">
                   List of <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">2FA</a>
                   providers and the platforms they support.
@@ -27,16 +27,20 @@ layout: default
                 <table class="ui table celled compact segment">
                     <thead>
                         <tr>
-                            <th class="eleven wide"><h2>Provider</h2></th>
+                            <th class="eleven wide"><h2>Dongle</h2></th>
+<!--
                             <th>SMS</th>
                             <th>Phone Call</th>
                             <th>Email</th>
                             <th>Hardware Token</th>
                             <th>Software Implementation</th>
+-->
+                            <th>One Time Passwords (OTP)</th>
+                            <th>Universal 2nd Factor (U2F)</th>
                         </tr>
                     </thead>
                     <tbody>
-                      {% assign sorted_providers = site.data.providers.providers | sort: 'name' %}
+                      {% assign sorted_providers = site.data.devices.providers.providers | sort: 'name' %}
                       {% for provider in sorted_providers %}
                         <tr>
                           <td class="main positive">
@@ -47,6 +51,7 @@ layout: default
                               <a href="{{ provider.url }}">{{ provider.name }}</a>
                           </td>
 
+<!--
                           <td class="positive icon">
                           {% if provider.sms %}
                               <i class="checkmark large icon"></i>
@@ -76,6 +81,20 @@ layout: default
                               <i class="checkmark large icon"></i>
                           {% endif %}
                           </td>
+-->
+
+                          <td class="positive icon">
+                          {% if provider.otp %}
+                              <i class="checkmark large icon"></i>
+                          {% endif %}
+                          </td>
+
+                          <td class="positive icon">
+                          {% if provider.u2f %}
+                              <i class="checkmark large icon"></i>
+                          {% endif %}
+                          </td>
+
                         </tr>
                       {% endfor %}
                     </tbody>

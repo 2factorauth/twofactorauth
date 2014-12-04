@@ -1,0 +1,111 @@
+websites:
+    - name: about.me
+      url: http://about.me
+      twitter: aboutdotme
+      img: aboutme.png
+      tfa: No
+
+    - name: App.net
+      url: https://join.app.net
+      img: appnet.png
+      tfa: Yes
+      otp: Yes
+      doc: https://mml.desk.com/customer/portal/articles/1039728-how-do-i-set-up-two-factor-authentication-
+
+    - name: Bitly
+      url: http://www.bitly.com/
+      twitter: bitly
+      img: bitly.png
+      tfa: Yes
+      doc: http://blog.bitly.com/post/90381427894/introducing-2-step-verification-for-all-users
+
+    - name: Buffer
+      url: https://bufferapp.com
+      img: bufferapp.png
+      tfa: Yes
+      otp: Yes
+      doc: http://blog.bufferapp.com/introducing-the-safest-social-media-publishing-on-the-web
+
+    - name: Facebook
+      url: https://facebook.com
+      img: facebook.png
+      tfa: Yes
+      otp: Yes
+      doc: https://www.facebook.com/help/148233965247823
+
+    - name: Google+
+      url: https://plus.google.com
+      img: g+.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+
+    - name: HootSuite
+      url: https://hootsuite.com
+      img: hootsuite.png
+      tfa: Yes
+      otp: Yes
+      doc: https://help.hootsuite.com/entries/22527304-Managing-Google-Authenticator
+
+    - name: Instagram
+      url: https://www.instagram.com
+      twitter: instagram
+      img: instagram.png
+      tfa: No
+
+    - name: LinkedIn
+      url: https://linkedin.com
+      twitter: LinkedIn
+      img: linkedin.png
+      tfa: Yes
+      doc: https://help.linkedin.com/app/answers/detail/a_id/544/ft/eng
+
+    - name: Reddit
+      url: https://www.reddit.com/
+      twitter: reddit
+      img: reddit.png
+      tfa: No
+      status: https://twitter.com/hueypriest/status/446601146409689088
+
+    - name: Stack Exchange
+      url: http://stackexchange.com/
+      twitter: StackExchange
+      img: stack_exchange.png
+      tfa: No
+
+    - name: Tumblr
+      url: https://www.tumblr.com/
+      img: tumblr.png
+      tfa: Yes
+      otp: Yes
+      doc: https://www.tumblr.com/docs/en/two_factor_auth
+
+    - name: Twitter
+      url: https://twitter.com
+      img: twitter.png
+      tfa: Yes
+      exceptions:
+          text: "SMS only available on select providers, SMS required for 2FA."
+      otp: Yes
+      doc: https://support.twitter.com/articles/20170388
+
+    - name: VanillaForums.com
+      url: https://vanillaforums.com
+      img: vanilla.png
+      tfa: No
+      twitter: vanilla
+
+    - name: Viadeo
+      url: http://www.viadeo.com
+      img: viadeo.png
+      tfa: No
+      doc: http://www.viadeo.com/aide/security/
+      twitter: Viadeo
+
+    - name: WordPress.com
+      url: https://wordpress.com
+      img: wordpress.png
+      tfa: Yes
+      otp: Yes
+      doc: http://en.support.wordpress.com/security/two-step-authentication/

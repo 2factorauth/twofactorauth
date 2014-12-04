@@ -16,13 +16,13 @@ hash: SupportTwoFactorAuth
         <div class="column">
 
             <div class="banner ui icon header">
-                <i class="circular mobile icon"></i>
+                <i class="circular lock icon"></i>
                 <h2>Two Factor Auth (2FA)</h2>
                 <div class="sub header">List of websites and whether or not they support
                     <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
                 </div>
                 <div class="sub header">
-                    Also see the list of <a href="/providers/">2FA providers</a> and the platforms they support.
+                    Also see the list of <a href="/providers/">2FA dongles</a> and the platforms they support.
                 </div>
                 <div id="{{ first.id }}" class="sub header">
                     Add your own favorite site by submitting a pull request on the
@@ -30,18 +30,22 @@ hash: SupportTwoFactorAuth
                 </div>
             </div>
 
-        {% for section in site.data.main.sections %}
+        {% for section in site.data.devices.main.sections %}
             <div class="section">
                 <table class="ui table celled compact segment">
                     <thead>
                         <tr>
                             <th class="eleven wide"><h2>{{ section.title }}</h2></th>
                             <th>Docs</th>
+<!--
                             <th>SMS</th>
                             <th>Phone Call</th>
                             <th>Email</th>
                             <th>Hardware Token</th>
                             <th>Software Implementation</th>
+-->
+                            <th>One Time Passwords (OTP)</th>
+                            <th>Universal 2nd Factor (U2F)</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -51,7 +55,7 @@ hash: SupportTwoFactorAuth
     alphabetical order.
 {% endcomment %}
 
-{% assign section_file = site.data[section.id] %}
+{% assign section_file = site.data.devices[section.id] %}
 
 {% capture website_names %}
 {% for website in section_file.websites %}
@@ -84,7 +88,7 @@ hash: SupportTwoFactorAuth
                                                 <a href="{{ website.doc }}"><i class="external url link large icon"></i></a>
                                             {% endif %}
                                             </td>
-
+<!--
                                             <td class="positive icon">
                                             {% if website.sms %}
                                                 <i class="checkmark large icon"></i>
@@ -114,6 +118,19 @@ hash: SupportTwoFactorAuth
                                                 <i class="checkmark large icon"></i>
                                             {% endif %}
                                             </td>
+-->
+                                            <td class="positive icon">
+                                            {% if website.otp %}
+                                                <i class="checkmark large icon"></i>
+                                            {% endif %}
+                                            </td>
+
+                                            <td class="positive icon">
+                                            {% if website.u2f %}
+                                                <i class="checkmark large icon"></i>
+                                            {% endif %}
+                                            </td>
+
                                         </tr>
                                         {% else %}
                                             <td class="main negative">
@@ -154,7 +171,7 @@ hash: SupportTwoFactorAuth
                 </table>
 
             {% unless forloop.last %}
-                <div class="ui divider" id="{{ site.data.main.sections[forloop.index].id }}" ></div>
+                <div class="ui divider" id="{{ site.data.devices.main.sections[forloop.index].id }}" ></div>
             {% endunless %}
             </div><!-- Section -->
         {% endfor %}

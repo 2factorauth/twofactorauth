@@ -20,7 +20,7 @@
         <div class="ui dropdown item">
             Categories <i class="dropdown icon"></i>
             <div class="menu">
-                {% for section in site.data.main.sections %}
+                {% for section in site.data.devices.main.sections %}
                 <a href="#{{ section.id }}" class="item">
                     <i class="{{ section.icon }} icon"></i>
                     {{ section.title }}
@@ -36,7 +36,7 @@
         <a href="/providers" class="item">
     {% endif %}
             <i class="play sign icon"></i>
-            Providers
+            Dongles
         </a>
 
 

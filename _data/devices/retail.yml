@@ -1,0 +1,79 @@
+websites:
+    - name: Amazon
+      url: https://amazon.com
+      twitter: Amazon
+      img: amazon.png
+      tfa: No
+
+    - name: Apple
+      url: https://appleid.apple.com
+      img: apple.png
+      tfa: Yes
+      otp: Yes
+      exceptions:
+          text: "SMS only available on select providers."
+      doc: http://support.apple.com/kb/ht5570
+
+    - name: Comixology
+      url: https://www.comixology.com/
+      img: comixology.png
+      tfa: No
+      twitter: comixology
+
+    - name: eBay
+      url: http://ebay.com
+      img: ebay.png
+      tfa: Yes
+      u2f: Yes
+      otp: Yes
+      exceptions:
+          text: "While PayPal supports hardware and software 2FA in all locales, eBay only supports 2FA in some locales."
+      doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
+
+    - name: Etsy
+      url: http://www.etsy.com/
+      img: etsy.png
+      tfa: Yes
+      doc: http://www.etsy.com/help/article/3335
+
+    - name: Everlane
+      url: http://www.everlane.com/
+      twitter: everlane
+      img: everlane.png
+      tfa: No
+
+    - name: Macy's
+      url: http://www.macys.com/
+      twitter: macys
+      img: macys.png
+      tfa: No
+
+    - name: Newegg
+      url: http://www.newegg.com
+      twitter: newegg
+      img: newegg.png
+      tfa: No
+
+    - name: Target
+      url: http://www.target.com/
+      twitter: target
+      img: target.png
+      tfa: No
+
+    - name: Walgreens
+      url: http://www.walgreens.com
+      twitter: walgreens
+      img: walgreens.png
+      tfa: No
+
+    - name: Walmart
+      url: http://www.walmart.com/
+      twitter: walmartlabs
+      img: walmart.png
+      tfa: No
+
+    - name: Zappos
+      url: http://www.zappos.com/
+      twitter: Zappos
+      img: zappos.png
+      tfa: No
