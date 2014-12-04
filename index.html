@@ -22,7 +22,7 @@ hash: SupportTwoFactorAuth
                     <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
                 </div>
                 <div class="sub header">
-                    Also see the list of <a href="/providers/">2FA dongles</a> and the platforms they support.
+                    Also see the list of <a href="{{ site.uri }}/providers/">2FA dongles</a> and the platforms they support.
                 </div>
                 <div id="{{ first.id }}" class="sub header">
                     Add your own favorite site by submitting a pull request on the
@@ -76,8 +76,8 @@ hash: SupportTwoFactorAuth
                                         {% if website.tfa %}
                                             <td class="main positive">
                                             {% if website.img %}
-                                                <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-                                                <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
+                                                <img src="{{ site.uri }}/img/placeholder.png" data-src="{{ site.uri }}/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                                                <noscript><img src="{{ site.uri }}/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
                                             {% endif %}
                                                 <a href="{{ website.url }}">{{ website.name }}</a>
                                                 {% include exception.html website=website %}

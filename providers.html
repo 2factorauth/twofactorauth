@@ -45,8 +45,8 @@ layout: default
                         <tr>
                           <td class="main positive">
                           {% if provider.img %}
-                              <img src="/img/placeholder.png" data-src="/img/providers/{{ provider.img }}" class="icon" alt="{{ provider.name }}">
-                              <noscript><img src="/img/providers/{{ provider.img }}" class="icon" alt="{{ provider.name }}"></noscript>
+                              <img src="{{ site.uri }}/img/placeholder.png" data-src="{{ site.uri }}/img/providers/{{ provider.img }}" class="icon" alt="{{ provider.name }}">
+                              <noscript><img src="{{ site.uri }}/img/providers/{{ provider.img }}" class="icon" alt="{{ provider.name }}"></noscript>
                           {% endif %}
                               <a href="{{ provider.url }}">{{ provider.name }}</a>
                           </td>
