@@ -135,8 +135,8 @@ hash: SupportTwoFactorAuth
                                         {% else %}
                                             <td class="main negative">
                                             {% if website.img %}
-                                                <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-                                                <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
+                                                <img src="{{ site.uri }}/img/placeholder.png" data-src="{{ site.uri }}/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                                                <noscript><img src="{{ site.uri }}/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
                                             {% endif %}
                                                 <a href="{{ website.url }}">{{ website.name }}</a>
                                             {% if website.status %}
