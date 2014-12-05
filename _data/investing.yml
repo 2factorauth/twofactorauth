@@ -27,7 +27,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://twofactorauth.org/notes/fidelity/
+      doc: /notes/fidelity/
 
     - name: Loyal3
       url: https://www.loyal3.com/
@@ -76,12 +76,12 @@ websites:
       twitter: scottrade
       img: scottrade.png
       tfa: No
-      
+
     - name: Sharebuilder
       url: https://www.sharebuilder.com/
       twitter: sharebuilder
       img: sharebuilder.png
-      tfa: No      
+      tfa: No
 
     - name: TD Ameritrade
       url: https://www.tdameritrade.com
@@ -99,8 +99,9 @@ websites:
       url: https://www.vanguard.com/
       twitter: Vanguard_Group
       img: vanguard.png
-      tfa: No
-      status: https://twitter.com/Vanguard_Group/status/499260535360466944
+      tfa: Yes
+      sms: Yes
+      doc: https://personal.vanguard.com/us/insights/article/logon-security-122014
 
     - name: Wealthfront
       url: https://www.wealthfront.com/
