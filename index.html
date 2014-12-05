@@ -1,12 +1,12 @@
 ---
 layout: default
 
-link: Tell them to support 2FA
-tweet: Security is important, @TWITTERHANDLE. We'd like it if you supported two factor auth.
+link: Tell them to support USB dongle auth
+tweet: Security is important, @TWITTERHANDLE. We'd like it if you supported auth with USB dongles.
 
-link_progress: Thank them for working on 2FA
-tweet_progress: Thanks for working on support for two factor auth, @TWITTERHANDLE!
-hash: SupportTwoFactorAuth
+link_progress: Thank them for working on USB dongle auth
+tweet_progress: Thanks for working on support for USB dongle auth, @TWITTERHANDLE!
+hash: SupportDongleAuth
 ---
 
 {% include header.html page='home' %}
@@ -19,14 +19,15 @@ hash: SupportTwoFactorAuth
                 <img src="{{ site.uri }}/img/usb_stick.png" class="icon" alt="{{ website.name }}">
                 <h2>Two Factor Auth (2FA)</h2>
                 <div class="sub header">List of websites and whether or not they support
-                    <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
+                    <a href="https://en.wikipedia.org/wiki/Initiative_For_Open_Authentication">One Time Passwords (OTP)</a> or
+                    <a href="https://en.wikipedia.org/wiki/Universal_2nd_Factor">Universal 2nd Factor (U2F)</a>.
                 </div>
                 <div class="sub header">
                     Also see the list of <a href="{{ site.uri }}/providers/">2FA dongles</a> and the platforms they support.
                 </div>
                 <div id="{{ first.id }}" class="sub header">
                     Add your own favorite site by submitting a pull request on the
-                    <a href="https://github.com/jdavis/twofactorauth">GitHub repo</a>.
+                    <a href="https://github.com/Nitrokey/dongleauth">GitHub repo</a>.
                 </div>
             </div>
 
