@@ -28,6 +28,8 @@ websites:
       img: digitalocean.png
       tfa: Yes
       software: Yes
+      exceptions:
+          text: "SMS-capable phone required."
       doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
 
     - name: Dreamhost

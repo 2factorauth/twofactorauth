@@ -11,6 +11,8 @@ websites:
       tfa: Yes
       software: Yes
       sms: Yes
+      exceptions:
+          text: "SMS-capable phone required."
       doc: http://server.buycraft.net/tfa
 
     - name: GoCardless
