@@ -84,6 +84,25 @@ id with the `.yml` extension.
 
 ## New Sites
 
+There are two way to add new sites
+
+* Running a script that will guide you through the process of adding a new site
+* Manually updating files
+
+### Guided
+
+1. Run the script
+```bash
+ruby ./addsite.rb
+```
+
+2. Follow instructions
+
+3. Changes will be made to corresponding file
+
+4. Commit changes and create pull request
+
+### Manual
 First and foremost, make sure the new site meets our [definition
 requirements](#a-note-on-definitions) for Two Factor Auth.
 
