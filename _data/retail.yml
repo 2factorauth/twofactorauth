@@ -1,81 +1,72 @@
+---
 websites:
-    - name: Amazon
+-     name: Amazon
       url: https://amazon.com
       twitter: Amazon
       img: amazon.png
-      tfa: No
-
-    - name: Apple
+      tfa: false
+-     name: Apple
       url: https://appleid.apple.com
       img: apple.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      software: true
       exceptions:
-          text: "SMS only available on select providers."
+            text: SMS only available on select providers.
       doc: http://support.apple.com/kb/ht5570
-
-    - name: Comixology
+-     name: Comixology
       url: https://www.comixology.com/
       img: comixology.png
-      tfa: No
+      tfa: false
       twitter: comixology
-
-    - name: eBay
+-     name: eBay
       url: http://ebay.com
       img: ebay.png
-      tfa: Yes
-      hardware: Yes
-      software: Yes
+      tfa: true
+      hardware: true
+      software: true
       exceptions:
-          text: "While PayPal supports hardware and software 2FA in all locales, eBay only supports 2FA in some locales."
+            text: While PayPal supports hardware and software 2FA in all locales,
+                  eBay only supports 2FA in some locales.
       doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
-
-    - name: Etsy
+-     name: Etsy
       url: http://www.etsy.com/
       img: etsy.png
-      sms: Yes
-      tfa: Yes
+      sms: true
+      tfa: true
       doc: http://www.etsy.com/help/article/3335
-
-    - name: Everlane
+-     name: Everlane
       url: http://www.everlane.com/
       twitter: everlane
       img: everlane.png
-      tfa: No
-
-    - name: Macy's
+      tfa: false
+-     name: Macy's
       url: http://www.macys.com/
       twitter: macys
       img: macys.png
-      tfa: No
-
-    - name: Newegg
+      tfa: false
+-     name: Newegg
       url: http://www.newegg.com
       twitter: newegg
       img: newegg.png
-      tfa: No
-
-    - name: Target
+      tfa: false
+-     name: Target
       url: http://www.target.com/
       twitter: target
       img: target.png
-      tfa: No
-
-    - name: Walgreens
+      tfa: false
+-     name: Walgreens
       url: http://www.walgreens.com
       twitter: walgreens
       img: walgreens.png
-      tfa: No
-
-    - name: Walmart
+      tfa: false
+-     name: Walmart
       url: http://www.walmart.com/
       twitter: walmartlabs
       img: walmart.png
-      tfa: No
-
-    - name: Zappos
+      tfa: false
+-     name: Zappos
       url: http://www.zappos.com/
       twitter: Zappos
       img: zappos.png
-      tfa: No
+      tfa: false

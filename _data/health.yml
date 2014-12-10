@@ -1,58 +1,51 @@
+---
 websites:
-    - name: 23andMe
+-     name: 23andMe
       url: http://www.23andme.com
       twitter: 23andMe
       img: 23andme.png
-      tfa: No
-
-    - name: drchrono
+      tfa: false
+-     name: drchrono
       url: https://www.drchrono.com
       img: drchrono.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: https://www.drchrono.com/blog/two-factor-authentication-extra-security-for-your-health-records/
-
-    - name: Drugs.com
+-     name: Drugs.com
       url: http://www.drugs.com
       twitter: DrugsCom
       img: drugscom.png
-      tfa: No
+      tfa: false
       status: https://twitter.com/Drugscom/status/493856207572975620
-
-    - name: FitBit
+-     name: FitBit
       url: http://www.fitbit.com
       twitter: fitbit
       img: fitbit.png
-      tfa: No
-
-    - name: Healthcare.gov
+      tfa: false
+-     name: Healthcare.gov
       url: http://healthcare.gov
       twitter: HealthCareGov
       img: healthcaregov.png
-      tfa: No
-
-    - name: HealthVault (w/Microsoft Account)
+      tfa: false
+-     name: HealthVault (w/Microsoft Account)
       url: https://www.healthvault.com
       img: healthvault.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      software: true
       doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
-
-    - name: myfitnesspal
+-     name: myfitnesspal
       url: http://www.myfitnesspal.com
       twitter: myfitnesspal
       img: myfitnesspal.png
-      tfa: No
-
-    - name: WebMD
+      tfa: false
+-     name: WebMD
       url: http://www.webmd.com
       twitter: WebMD
       img: webmd.png
-      tfa: No
-
-    - name: Withings
+      tfa: false
+-     name: Withings
       url: http://www.withings.com
       twitter: Withings
       img: withings.png
-      tfa: No
+      tfa: false

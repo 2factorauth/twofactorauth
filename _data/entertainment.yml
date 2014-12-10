@@ -1,66 +1,56 @@
+---
 websites:
-
-    - name: Grooveshark
+-     name: Grooveshark
       url: http://grooveshark.com/
       twitter: GroovesharkHelp
       img: grooveshark.png
-      tfa: No
-
-    - name: Hulu
+      tfa: false
+-     name: Hulu
       url: http://www.hulu.com/
       twitter: hulu_support
       img: hulu.png
-      tfa: No
-
-    - name: Last.fm
+      tfa: false
+-     name: Last.fm
       url: http://www.last.fm/
       twitter: lastfmsupport
       img: lastfm.png
-      tfa: No
-
-    - name: Netflix
+      tfa: false
+-     name: Netflix
       url: https://netflix.com/
       twitter: Netflixhelps
       img: netflix.png
-      tfa: No
-
-    - name: SoundCloud
+      tfa: false
+-     name: SoundCloud
       url: https://soundcloud.com/
       twitter: soundcloud
       img: soundcloud.png
-      tfa: No
-
-    - name: Spotify
+      tfa: false
+-     name: Spotify
       url: https://www.spotify.com/
       twitter: spotifycares
       img: spotify.png
-      tfa: No
-
-    - name: Twitch
+      tfa: false
+-     name: Twitch
       url: http://www.twitch.tv/
       twitter: TwitchSupport
       img: twitch.png
-      tfa: No
-
-    - name: Ustream
+      tfa: false
+-     name: Ustream
       url: http://www.ustream.tv/
       twitter: UstreamSupport
       img: ustream.png
-      tfa: No
-
-    - name: YouTube
+      tfa: false
+-     name: YouTube
       url: https://www.youtube.com/
       twitter: youtube
       img: youtube.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      phone: Yes
-      hardware: Yes
+      tfa: true
+      sms: true
+      software: true
+      phone: true
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
-
-    - name: Vimeo
+-     name: Vimeo
       url: https://vimeo.com/
       twitter: vimeo
       img: vimeo.png
-      tfa: No
+      tfa: false

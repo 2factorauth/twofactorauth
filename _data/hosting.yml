@@ -1,130 +1,106 @@
+---
 websites:
-    - name: Bluehost
+-     name: Bluehost
       url: https://www.bluehost.com/
       img: bluehost.png
-      tfa: No
+      tfa: false
       twitter: bluehostsupport
-
-    - name: ChunkHost
+-     name: ChunkHost
       url: https://chunkhost.com
       img: chunkhost.png
-      tfa: Yes
-      software: Yes
-      
-    - name: CloudAtCost
+      tfa: true
+      software: true
+-     name: CloudAtCost
       url: http://cloudatcost.com
       img: cloudatcost.png
       twitter: cloudatcost
-      tfa: no
-
-    - name: CloudShards
+      tfa: false
+-     name: CloudShards
       url: https://www.cloudshards.com/
       img: cloudshards.png
       twitter: CloudShards
-      tfa: No
-
-    - name: DigitalOcean
+      tfa: false
+-     name: DigitalOcean
       url: https://www.digitalocean.com/
       img: digitalocean.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
-
-    - name: Dreamhost
+-     name: Dreamhost
       url: https://dreamhost.com
       img: dreamhost.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
-
-    - name: Fastly
+-     name: Fastly
       url: https://www.fastly.com
       twitter: Fastly
       img: fastly.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: https://docs.fastly.com/guides/getting-started/enabling-and-disabling-twofactor-authentication
-
-    - name: Glesys
+-     name: Glesys
       url: http://glesys.com/
       twitter: glesysab
       img: glesys.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-
-    - name: iPage
+      tfa: true
+      software: true
+      hardware: true
+-     name: iPage
       url: http://www.ipage.com/ipage/index.html
       twitter: iPage
       img: ipage.png
-      tfa: No
-
-    - name: Linode
+      tfa: false
+-     name: Linode
       url: https://www.linode.com/
       img: linode.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
-
-    - name: MaxCDN
+-     name: MaxCDN
       url: https://www.maxcdn.com
       img: maxcdn.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
-
-    - name: Media Temple
+-     name: Media Temple
       url: http://mediatemple.net/
       twitter: mediatemple
       img: mediatemple.png
-      tfa: No
-
-    - name: NearlyFreeSpeech.NET
+      tfa: false
+-     name: NearlyFreeSpeech.NET
       url: https://www.nearlyfreespeech.net/
       img: nfsn.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      software: true
       doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-se
-
-    - name: OVH
+-     name: OVH
       url: http://www.ovh.com/
       img: ovh.png
-      tfa: Yes
-      sms: Yes
+      tfa: true
+      sms: true
       doc: http://www.ovh.com/us/about-us/security.xml#double-authentification
-
-    - name: Rackspace
+-     name: Rackspace
       url: https://www.rackspace.com/
       twitter: rackspace
       img: rackspace.png
-      tfa: No
+      tfa: false
       status: https://twitter.com/Rackspace/status/446469139947732992
-
-    - name: RamNode
+-     name: RamNode
       url: http://www.ramnode.com
       img: ramnode.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: https://clientarea.ramnode.com/knowledgebase.php?action=displayarticle&id=70
-
-    - name: Softlayer
+-     name: Softlayer
       url: https://www.softlayer.com
       img: softlayer.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://knowledgelayer.softlayer.com/procedure/configure-portal-account-one-time-password-access-manage
-      
-    - name: SpeedIT Solutions
-      url: https://www.speedit.org/
-      img: speedit.png
-      tfa: Yes
-      software: Yes
-      twitter: SpeedIT_S
-      doc: https://www.speedit.org/faq/#accordian_item_937
-
-    - name: Squarespace
+-     name: Squarespace
       url: https://squarespace.com/
       twitter: squarespace
       img: squarespace.png
-      tfa: No
+      tfa: false

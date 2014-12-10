@@ -1,163 +1,139 @@
+---
 websites:
-    - name: Blizzard
+-     name: Blizzard
       url: http://blizzard.com
       img: blizzard.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
+      tfa: true
+      sms: true
+      software: true
+      hardware: true
       doc: http://us.battle.net/en/security/
-
-    - name: Desura
+-     name: Desura
       url: http://www.desura.com/
       img: desura.png
-      tfa: No
+      tfa: false
       twitter: desura
-
-    - name: Elder Scrolls Online
+-     name: Elder Scrolls Online
       url: http://www.elderscrollsonline.com/
       twitter: TESOnline
       img: eso.png
-      tfa: Yes
-      email: Yes
-      doc: https://twofactorauth.org/notes/eso/
-
-    - name: Enjin
+      tfa: true
+      email: true
+      doc: http://twofactorauth.org/notes/eso/
+-     name: Enjin
       url: http://www.enjin.com/
       img: enjin.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      software: true
       exceptions:
-          text: "2FA is only available on paid plans."
+            text: 2FA is only available on paid plans.
       doc: http://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
-
-    - name: EVE Online
+-     name: EVE Online
       url: http://www.eveonline.com/
       twitter: EveOnline
       img: eveonline.png
-      tfa: No
-
-    - name: Garena Online
+      tfa: false
+-     name: Garena Online
       url: http://garena.com
       twitter: garenaonline
       img: garena.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://www.garena.com/account/
       exceptions:
-          text: "As of September 29th 2014, new user enrollment for 2FA is broken. A mobile phone and Garena account level 3 or higher is required for 2FA."
-
-    - name: GOG.com
+            text: As of 9/29/2014, new user enrollment for 2FA is broken. A mobile
+                  phone and Garena account level 3 or higher is required for 2FA.
+-     name: GOG.com
       url: http://www.gog.com
       twitter: GOGcom
       img: gog.png
-      tfa: No
-
-    - name: GREE
-      url: http://product.gree.net/
-      img: gree.png
-      tfa: Yes
-      software: Yes
-      doc: https://twofactorauth.org/notes/gree/
-
-    - name: Guild Wars 2
+      tfa: false
+-     name: Guild Wars 2
       url: https://www.guildwars2.com
       img: guildwars2.png
-      tfa: Yes
-      email: Yes
-      software: Yes
+      tfa: true
+      email: true
+      software: true
       doc: https://help.guildwars2.com/entries/27626157-Two-Factor-Authentication
-
-    - name: Humble Bundle
+-     name: Humble Bundle
       url: https://www.humblebundle.com/
       img: humble.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      software: true
       doc: https://support.humblebundle.com/hc/en-us/articles/202421374
-
-    - name: League of Legends
+-     name: League of Legends
       url: http://leagueoflegends.com
       twitter: leagueoflegends
       img: leagueoflegends.png
-      tfa: No
+      tfa: false
       status: http://forums.na.leagueoflegends.com/board/showthread.php?p=45603580#45603580
-
-    - name: Mojang
+-     name: Mojang
       url: http://mojang.com
       twitter: MojangSupport
       img: mojang.png
-      tfa: No
-
-    - name: Origin
+      tfa: false
+-     name: Origin
       url: https://www.origin.com/
       img: origin.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
+      tfa: true
+      email: true
+      sms: true
       doc: http://help.ea.com/en/article/origin-login-verification-information/
-
-    - name: Playstation Network
+-     name: Playstation Network
       url: http://playstation.com/psn/
       twitter: AskPlayStation
       img: psn.png
-      tfa: No
-
-    - name: RuneScape
+      tfa: false
+-     name: RuneScape
       url: http://www.runescape.com/
       img: runescape.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://services.runescape.com/m=rswiki/en/Authenticator_FAQ
-
-    - name: "Star Wars: The Old Republic"
+-     name: 'Star Wars: The Old Republic'
       url: http://www.swtor.com/
       img: swtor.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
+      tfa: true
+      software: true
+      hardware: true
       doc: http://www.swtor.com/info/security-key
-
-    - name: Steam
+-     name: Steam
       url: http://store.steampowered.com/
       img: steam.png
-      tfa: Yes
-      email: Yes
+      tfa: true
+      email: true
       doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
-
-    - name: Square Enix
+-     name: Square Enix
       url: http://na.square-enix.com/
       img: squarenix.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
+      tfa: true
+      software: true
+      hardware: true
       doc: http://www.square-enix.com/na/account/otp/
       exceptions:
-          text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
-
-    - name: Trion Worlds
+            text: Software implementation requires you to have purchased either Final
+                  Fantasy XI or Final Fantasy XIV and registered the game.
+-     name: Trion Worlds
       url: http://www.trionworlds.com/en/
       img: trionworlds.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: https://store.trionworlds.com/account/profile/manage-game
-
-    - name: Uplay
+-     name: Uplay
       url: http://uplay.ubi.com/
       twitter: UplayUbisoft
       img: uplay.png
-      tfa: No
-
-    - name: Wargaming
+      tfa: false
+-     name: Wargaming
       url: http://wargaming.net/
       twitter: wargaming_net
       img: wargaming.png
-      tfa: No
-
-    - name: WildStar
+      tfa: false
+-     name: WildStar
       url: https://www.wildstar-online.com/
       img: wildstar.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: https://support.wildstar-online.com/entries/53257786-Two-Step-Verification-Setting-Up-and-Rewards

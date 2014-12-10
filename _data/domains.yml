@@ -1,244 +1,211 @@
+---
 websites:
-    - name: 101domain
+-     name: 101domain
       url: https://101domain.com
       img: 101domain.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
+      tfa: true
+      software: true
+      hardware: true
       doc: http://www.101domain.com/vip_security_card.htm
-
-    - name: 1and1
+-     name: 1and1
       url: https://www.1and1.com/
       img: 1and1.png
-      tfa: No
+      tfa: false
       twitter: 1and1
-
-    - name: Badger
+-     name: Badger
       url: http://badger.com
       img: badger.png
-      tfa: No
+      tfa: false
       twitter: badger
-
-    - name: CloudFlare
+-     name: CloudFlare
       url: https://cloudflare.com
       img: cloudflare.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      software: true
       doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
-
-    - name: Crazy Domains
+-     name: Crazy Domains
       url: https://www.crazydomains.com
       img: crazydomains.png
-      tfa: no
+      tfa: false
       twitter: CrazyDomains
-
-    - name: Directnic
+-     name: Directnic
       url: https://directnic.com
       img: directnic.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: https://directnic.com/knowledge/article/137:how+do+i+set+up+two-factor+authentication%3F
-
-    - name: DNS Made Easy
+-     name: DNS Made Easy
       url: http://www.dnsmadeeasy.com
       img: dnsmadeeasy.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://www.dnsmadeeasy.com/press-release/dns-made-easy-adds-two-factor-authentication-with-time-based-passwords/
-
-    - name: DNSimple
+-     name: DNSimple
       url: https://dnsimple.com/
       img: dnsimple.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
-
-    - name: Domain.com
+-     name: Domain.com
       url: https://domain.com
       twitter: DomainDotCom
       img: domaindotcom.png
-      tfa: no
-      
-    - name: DomainsAtCost
+      tfa: false
+-     name: DomainsAtCost
       url: https://www.domainsatcost.ca/
       twitter: domainsatcost
       img: domainsatcost.png
-      tfa: No
-
-    - name: Domeny.tv
+      tfa: false
+-     name: Domeny.tv
       url: http://www.domeny.tv/en
       img: domenytv.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://www.domeny.tv/en/two-factor-authentication
-
-    - name: Dyn
+-     name: Dyn
       url: http://dyn.com/
       img: dyn.png
       twitter: dyn
-      tfa: No
+      tfa: false
       status: https://twitter.com/kelly_crehan/status/451460284931379200
-
-    - name: Dynadot
+-     name: Dynadot
       url: http://dynadot.com/
       img: dynadot.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
+      tfa: true
+      sms: true
+      software: true
+      hardware: true
       doc: http://dynadot.com/domain/security.html
-
-    - name: easyDNS
+-     name: easyDNS
       url: https://easydns.com
       img: easydns.png
-      tfa: Yes
-      sms: Yes
+      tfa: true
+      sms: true
       doc: http://docs.easydns.com/2-factor-authentication/
-
-    - name: eNom
+-     name: eNom
       url: http://enom.com/
       twitter: enom
       img: enom.png
-      tfa: No
+      tfa: false
       status: https://twitter.com/enom/status/447074738033008640
-
-    - name: Fabulous
+-     name: Fabulous
       url: http://fabulous.com
       img: fabulous.png
-      tfa: yes
-      hardware: yes
+      tfa: true
+      hardware: true
       doc: http://fabulous.com/informationcenter/index.htm?formdata%5Bqid%5D=1194
-
-    - name: Gandi
+-     name: Gandi
       url: https://gandi.net
       img: gandi.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
-
-    - name: GoDaddy
+-     name: GoDaddy
       img: godaddy.png
       url: http://www.godaddy.com/
-      tfa: yes
-      sms: Yes
+      tfa: true
+      sms: true
       doc: http://support.godaddy.com/help/article/7502/enabling-twostep-authentication
       exceptions:
-          text: "US numbers only"
-
-    - name: Heart Internet
+            text: US numbers only
+-     name: Heart Internet
       url: https://www.heartinternet.uk/
       img: heartinternet.png
-      tfa: No
+      tfa: false
       twitter: HeartInternet
-
-    - name: Hover.com
+-     name: Hover.com
       img: hover.png
       url: http://www.hover.com/
-      tfa: Yes
-      sms: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      software: true
       doc: https://help.hover.com/entries/26677644
-
-    - name: Internet.bs
+-     name: Internet.bs
       url: http://www.internet.bs
       img: internetbs.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://twofactorauth.org/notes/internetbs/
-
-    - name: iWantMyName
+-     name: iWantMyName
       url: https://iwantmyname.com/
       img: iwantmyname.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://help.iwantmyname.com/customer/portal/articles/1139898
-
-    - name: Loopia
+-     name: Loopia
       url: https://www.loopia.se/
       twitter: loopia
       img: loopia.png
-      tfa: No
-
-    - name: MarkMonitor
+      tfa: false
+-     name: MarkMonitor
       url: https://www.markmonitor.com
       twitter: markmonitor
       img: markmonitor.png
-      tfa: Yes
-      hardware: Yes
-      sms: Yes
-      software: Yes
-
-    - name: Metaname
+      tfa: true
+      hardware: true
+      sms: true
+      software: true
+-     name: Metaname
       url: http://metaname.net/
       img: metaname.png
-      tfa: Yes
-      sms: Yes
+      tfa: true
+      sms: true
       doc: https://metaname.net/public/two_factor_authentication
-
-    - name: Moniker
+-     name: Moniker
       url: http://www.moniker.com/
       img: moniker.png
-      tfa: No
+      tfa: false
       twitter: monikersnap
-
-    - name: MyDomain
+-     name: MyDomain
       url: http://www.mydomain.com/
       twitter: mydomaindotcom
       img: mydomain.png
-      tfa: No
-
-    - name: Name.com
+      tfa: false
+-     name: Name.com
       url: http://www.name.com/
       img: namecom.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
+      tfa: true
+      software: true
+      hardware: true
       doc: https://www.name.com/services/namesafe
-
-    - name: Namecheap
+-     name: Namecheap
       url: https://www.namecheap.com/
       img: namecheap.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
+      tfa: true
+      sms: true
+      phone: true
       doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
-
-    - name: NameSilo.com
+-     name: NameSilo.com
       url: http://www.namesilo.com/
       img: namesilo.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: https://www.namesilo.com/Support/2~Factor-Authentication
-
-    - name: NamesPro.ca
+-     name: NamesPro.ca
       url: http://www.namespro.ca/
       twitter: namespro
       img: namespro.png
-      tfa: No
-
-    - name: Network Solutions
+      tfa: false
+-     name: Network Solutions
       url: https://www.networksolutions.com/
       twitter: netsolcares
       img: networksolutions.png
-      tfa: No
-
-    - name: PointDNS
+      tfa: false
+-     name: PointDNS
       url: https://pointhq.com/
       twitter: pointdns
       img: pointdns.png
-      tfa: No
-
-    - name: Register4Less
+      tfa: false
+-     name: Register4Less
       url: https://register4less.com/
       twitter: register4less
       img: register4less.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://blog.register4less.com/?p=43
-
-    - name: Verio
+-     name: Verio
       url: https://www.verio.com/
       twitter: Verio
       img: verio.png
-      tfa: No
+      tfa: false

@@ -1,97 +1,85 @@
+---
 websites:
-    - name: Aol Mail
+-     name: Aol Mail
       url: https://mail.aol.com
       twitter: aol
       img: aol.png
-      tfa: No
-
-    - name: FastMail
+      tfa: false
+-     name: FastMail
       url: https://www.fastmail.fm/
       img: fastmail.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
+      tfa: true
+      sms: true
+      software: true
+      hardware: true
       doc: https://www.fastmail.fm/help/features_alternative_logins.html
-
-    - name: Gmail
+-     name: Gmail
       url: https://gmail.com
       img: gmail.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
+      tfa: true
+      sms: true
+      phone: true
+      software: true
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
-
-    - name: GMX
+-     name: GMX
       url: https://www.gmx.com/
       twitter: gmxmail
       img: gmx.png
-      tfa: No
-
-    - name: Hushmail
+      tfa: false
+-     name: Hushmail
       url: https://www.hushmail.com
       img: hushmail.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      email: true
+      software: true
       doc: https://help.hushmail.com/entries/63282756-Two-step-verification
-
-    - name: Mail.com
+-     name: Mail.com
       url: https://www.mail.com/
       twitter: maildotcom
       img: maildotcom.png
-      tfa: No
-
-    - name: mailbox.org
+      tfa: false
+-     name: mailbox.org
       url: https://www.mailbox.org/
       img: mailbox.png
-      tfa: Yes
-      hardware: Yes
+      tfa: true
+      hardware: true
       doc: https://mailbox.org/en/one-time-passwords-for-secure-login-to-our-webmailer/
-
-    - name: Outlook.com
+-     name: Outlook.com
       url: https://outlook.com
       img: outlook.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      software: true
       doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
-
-    - name: Pobox
+-     name: Pobox
       url: https://www.pobox.com/
       img: pobox.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
-
-    - name: ProtonMail
+-     name: ProtonMail
       url: https://protonmail.ch/
       twitter: ProtonMail
       img: protonmail.png
-      tfa: No
-
-    - name: Riseup Mail
+      tfa: false
+-     name: Riseup Mail
       url: https://mail.riseup.net
       twitter: riseupnet
       img: riseup.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: https://help.riseup.net/en/email/webmail/2factorauth
-    
-    - name: Yahoo Mail
+-     name: Yahoo Mail
       url: https://www.mail.yahoo.com/
       img: yahoomail.png
-      tfa: Yes
-      sms: Yes
+      tfa: true
+      sms: true
       doc: https://help.yahoo.com/kb/SLN5013.html
-
-    - name: Zoho Mail
+-     name: Zoho Mail
       url: https://www.zoho.com/mail/
       img: zoho.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      software: true
       doc: https://adminconsole.wiki.zoho.com/mail/Two-Factor-Authentication.html

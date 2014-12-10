@@ -1,125 +1,92 @@
+---
 websites:
-    - name: Aerohive Networks
-      url: https://www.aerohive.com/
-      img: aerohive.png
-      tfa: No
-      twitter: aerohive
-
-    - name: Automater
+-     name: Automater
       url: http://automater.pl/en/
       img: automater.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
-
-    - name: Azendoo
+-     name: Azendoo
       url: https://app.azendoo.com
       img: azendoo.png
-      tfa: No
+      tfa: false
       twitter: Azendoo
-
-    - name: Cisco Meraki
+-     name: Cisco Meraki
       url: https://meraki.cisco.com/
       img: meraki.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      software: true
       doc: https://kb.meraki.com/knowledge_base/log-in-security-configuring-account-and-password-policies-for-dashboard-administrators
-
-    - name: Clipper
-      url: https://www.clippercard.com
-      twitter: BayAreaClipper
-      img: clipper.png
-      tfa: No
-
-    - name: Cloudinary
+-     name: Cloudinary
       url: http://cloudinary.com
       twitter: cloudinary
       img: cloudinary.png
-      tfa: No
-
-    - name: Delighted
+      tfa: false
+-     name: Delighted
       url: https://delightedapp.com/
       img: delighted.png
-      tfa: Yes
-      sms: Yes
-
-    - name: Envato
+      tfa: true
+      sms: true
+-     name: Envato
       url: http://envato.com
       img: envato.png
       twitter: envato
-      tfa: No
-
-    - name: IFTTT
+      tfa: false
+-     name: IFTTT
       url: https://ifttt.com
       img: ifttt.png
       twitter: IFTTT
-      tfa: No
-
-    - name: Kickstarter
+      tfa: false
+-     name: Kickstarter
       url: https://www.kickstarter.com
       img: kickstarter.png
       twitter: kickstarter
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      phone: true
+      software: true
       doc: https://www.kickstarter.com/help/faq/backer+questions#faq_63004
-
-    - name: Mandrill
+-     name: Mandrill
       url: https://mandrill.com/
       img: mandrill.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
+      tfa: true
+      software: true
+      hardware: true
       doc: http://help.mandrill.com/entries/57465557
-
-    - name: Mixpanel
+-     name: Mixpanel
       url: https://mixpanel.com/
       img: mixpanel.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      software: true
       twitter: mixpanel
-
-    - name: Office 365
+-     name: Office 365
       url: http://office.microsoft.com/en-us/business/
       img: office365.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      phone: Yes
+      tfa: true
+      software: true
+      sms: true
+      phone: true
       doc: http://technet.microsoft.com/en-us/library/dn383636.aspx
-
-    - name: Trello
+-     name: Trello
       url: https://trello.com
       twitter: trello
       img: trello.png
-      tfa: No
-
-    - name: US Social Security Administration
+      tfa: false
+-     name: US Social Security Administration
       url: http://www.ssa.gov
       img: usssa.png
-      tfa: Yes
-      sms: Yes
+      tfa: true
+      sms: true
       doc: https://secure.ssa.gov/RIL/HpsView.do#question3
-
-    - name: Wunderlist
+-     name: Wunderlist
       url: https://www.wunderlist.com
       twitter: Wunderlist
       img: wunderlist.png
-      tfa: No
-
-    - name: Zendesk
+      tfa: false
+-     name: Zendesk
       url: http://www.zendesk.com
       twitter: Zendesk
       img: zendesk.png
-      tfa: No
-
-    - name: PhraseApp
-      url: https://phraseapp.com
-      twitter: PhraseApp
-      img: phraseapp.png
-      software: Yes
-      tfa: Yes
-      doc: http://blog.phraseapp.com/post/97556438392/extra-secure-user-accounts-in-phraseapp-with
+      tfa: false

@@ -1,101 +1,90 @@
+---
 websites:
-    - name: Bitium
+-     name: Bitium
       url: https://www.bitium.com
       img: bitium.png
-      tfa: Yes
-      hardware: Yes
-      software: Yes
+      tfa: true
+      hardware: true
+      software: true
       doc: https://support.bitium.com/customer/portal/articles/1417358-enabling-two-factor-authentication-2fa-
-
-    - name: Clavid
+-     name: Clavid
       url: http://www.clavid.com/
       img: clavid.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      sms: Yes
+      tfa: true
+      software: true
+      hardware: true
+      sms: true
       doc: http://www.clavid.com/index.php?option=com_content&view=article&id=85&Itemid=128&lang=en
-
-    - name: CloudEntr
+-     name: CloudEntr
       url: http://www.cloudentr.com/
       img: cloudentr.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://www.cloudentr.com/product/two-factor-authentication/
-
-    - name: Dashlane
+-     name: Dashlane
       url: https://www.dashlane.com
       img: dashlane.png
-      tfa: Yes
-      software: Yes
+      tfa: true
+      software: true
       doc: http://support.dashlane.com/customer/portal/articles/1099221-protect-your-account-using-two-factor-authentication
-
-    - name: Keeper
+-     name: Keeper
       url: https://keepersecurity.com/
       img: keeper.png
-      tfa: Yes
-      software: Yes
-      phone: Yes
-      sms: Yes
+      tfa: true
+      software: true
+      phone: true
+      sms: true
       doc: https://www.keepersecurity.com/security#twoFactor
-
-    - name: Keybase
+-     name: Keybase
       url: https://keybase.io
       twitter: KeybaseIO
       img: keybase.png
-      tfa: No
-
-    - name: LastPass
+      tfa: false
+-     name: LastPass
       url: https://lastpass.com/
       img: lastpass.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
+      tfa: true
+      software: true
+      hardware: true
       doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
-
-    - name: MyDigipass.com
+-     name: MyDigipass.com
       url: https://mydigipass.com/
       img: mydigipass.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
+      tfa: true
+      sms: true
+      software: true
+      hardware: true
       doc: https://www.mydigipass.com/en/fp/signup
-
-    - name: Okta
+-     name: Okta
       url: https://www.okta.com/
       img: okta.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
+      tfa: true
+      sms: true
+      software: true
+      hardware: true
       doc: http://www.okta.com/what-we-do/multifactor-authentication.html
-
-    - name: OneLogin
+-     name: OneLogin
       url: http://www.onelogin.com
       img: onelogin.png
-      tfa: Yes
-      hardware: Yes
-      software: Yes
+      tfa: true
+      hardware: true
+      software: true
       doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
-
-    - name: Persowna
+-     name: Persowna
       url: https://persowna.net
       img: persowna.png
-      tfa: Yes
-      software: Yes
-
-    - name: RoboForm
+      tfa: true
+      software: true
+-     name: RoboForm
       url: http://www.roboform.com/
       img: roboform.png
-      tfa: Yes
-      email: Yes
-
-    - name: SecureSafe
+      tfa: true
+      email: true
+-     name: SecureSafe
       url: http://www.securesafe.com
       img: securesafe.png
-      tfa: Yes
-      sms: Yes
+      tfa: true
+      sms: true
       exceptions:
-          text: "2FA is only available on paid plans."
+            text: 2FA is only available on paid plans.
       doc: http://www.securesafe.com/en/faq/security.html

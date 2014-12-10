@@ -1,56 +1,49 @@
+---
 websites:
-    - name: Academic Earth
+-     name: Academic Earth
       url: http://academicearth.org/
       twitter: academicearth
       img: academicearth.png
-      tfa: No
-
-    - name: Clever
+      tfa: false
+-     name: Clever
       url: https://www.clever.com
       img: clever.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+      tfa: true
+      sms: true
+      software: true
       doc: https://support.clever.com/hc/en-us/articles/202062333-Two-Factor-Authentication
-
-    - name: Codecademy
+-     name: Codecademy
       url: http://www.codecademy.com/
       twitter: codecademy
       img: codecademy.png
-      tfa: No
-
-    - name: Coursera
+      tfa: false
+-     name: Coursera
       url: https://www.coursera.org/
       twitter: coursera
       img: coursera.png
-      tfa: No
-
-    - name: Edmodo
+      tfa: false
+-     name: Edmodo
       url: https://www.edmodo.com/
       twitter: edmodo
       img: edmodo.png
-      tfa: No
-
-    - name: edX
+      tfa: false
+-     name: edX
       url: https://www.edx.org/
       twitter: edXOnline
       img: edx.png
-      tfa: No
-
-    - name: Oplerno
+      tfa: false
+-     name: Oplerno
       url: https://enroll.oplerno.com/
       img: oplerno.png
-      tfa: Yes
-      software: Yes
-
-    - name: Udacity
+      tfa: true
+      software: true
+-     name: Udacity
       url: https://www.udacity.com/
       twitter: udacity
       img: udacity.png
-      tfa: No
-
-    - name: Udemy
+      tfa: false
+-     name: Udemy
       url: https://www.udemy.com/
       twitter: udemy
       img: udemy.png
-      tfa: No
+      tfa: false
