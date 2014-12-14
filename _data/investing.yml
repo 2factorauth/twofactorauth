@@ -28,6 +28,8 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://twofactorauth.org/notes/fidelity/
+      exceptions:
+          text: "2FA only available on investment accounts. Not available for 401K plans."
 
     - name: Loyal3
       url: https://www.loyal3.com/
