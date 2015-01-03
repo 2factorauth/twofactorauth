@@ -60,7 +60,6 @@ websites:
     url: http://frostbox.com
     img: frostbox.png
     tfa: Yes
-    otp: Yes
     doc: https://app.frostbox.com/main.php?action=2fa
 
   - name: Google Drive
@@ -75,7 +74,6 @@ websites:
     url: https://www.icloud.com
     img: icloud.png
     tfa: Yes
-    otp: Yes
     exceptions:
         text: "SMS only available on select providers."
     doc: http://support.apple.com/kb/ht5570
@@ -110,7 +108,6 @@ websites:
     url: http://www.panterranetworks.com/SmartBox/index.php
     img: smartbox.png
     tfa: Yes
-    otp: Yes
     doc: http://www.panterranetworks.com/SmartBox/features/security.php
 
   - name: SpiderOak
@@ -136,7 +133,6 @@ websites:
     url: https://tresorit.com/
     img: tresorit.png
     tfa: Yes
-    otp: Yes
     doc: https://support.tresorit.com/entries/104192996-How-to-set-up-two-step-verification
 
   - name: Wuala

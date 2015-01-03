@@ -9,7 +9,6 @@ websites:
       url: https://chunkhost.com
       img: chunkhost.png
       tfa: Yes
-      otp: Yes
       
     - name: CloudAtCost
       url: http://cloudatcost.com
@@ -50,8 +49,6 @@ websites:
       twitter: glesysab
       img: glesys.png
       tfa: Yes
-      otp: Yes
-      u2f: Yes
 
     - name: iPage
       url: http://www.ipage.com/ipage/index.html
@@ -84,7 +81,7 @@ websites:
       img: nfsn.png
       tfa: Yes
       otp: Yes
-      doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-se
+      doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
 
     - name: OVH
       url: http://www.ovh.com/
@@ -103,14 +100,12 @@ websites:
       url: http://www.ramnode.com
       img: ramnode.png
       tfa: Yes
-      otp: Yes
       doc: https://clientarea.ramnode.com/knowledgebase.php?action=displayarticle&id=70
 
     - name: Softlayer
       url: https://www.softlayer.com
       img: softlayer.png
       tfa: Yes
-      otp: Yes
       doc: http://knowledgelayer.softlayer.com/procedure/configure-portal-account-one-time-password-access-manage
       
     - name: SpeedIT Solutions
@@ -126,3 +121,11 @@ websites:
       twitter: squarespace
       img: squarespace.png
       tfa: No
+
+    - name: Wordpress
+      url: http://wordpress.org/
+      img: wordpress.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: https://github.com/Yubico/wordpress-u2f

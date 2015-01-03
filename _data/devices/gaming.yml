@@ -4,7 +4,6 @@ websites:
       img: blizzard.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: http://us.battle.net/en/security/
 
     - name: Desura
@@ -24,7 +23,6 @@ websites:
       url: http://www.enjin.com/
       img: enjin.png
       tfa: Yes
-      otp: Yes
       exceptions:
           text: "2FA is only available on paid plans."
       doc: http://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
@@ -40,7 +38,6 @@ websites:
       twitter: garenaonline
       img: garena.png
       tfa: Yes
-      otp: Yes
       doc: http://www.garena.com/account/
       exceptions:
           text: "As of September 29th 2014, new user enrollment for 2FA is broken. A mobile phone and Garena account level 3 or higher is required for 2FA."
@@ -69,7 +66,6 @@ websites:
       url: https://www.humblebundle.com/
       img: humble.png
       tfa: Yes
-      otp: Yes
       doc: https://support.humblebundle.com/hc/en-us/articles/202421374
 
     - name: League of Legends
@@ -101,15 +97,12 @@ websites:
       url: http://www.runescape.com/
       img: runescape.png
       tfa: Yes
-      otp: Yes
       doc: http://services.runescape.com/m=rswiki/en/Authenticator_FAQ
 
     - name: "Star Wars: The Old Republic"
       url: http://www.swtor.com/
       img: swtor.png
       tfa: Yes
-      otp: Yes
-      u2f: Yes
       doc: http://www.swtor.com/info/security-key
 
     - name: Steam
@@ -122,8 +115,6 @@ websites:
       url: http://na.square-enix.com/
       img: squarenix.png
       tfa: Yes
-      otp: Yes
-      u2f: Yes
       doc: http://www.square-enix.com/na/account/otp/
       exceptions:
           text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
@@ -132,7 +123,6 @@ websites:
       url: http://www.trionworlds.com/en/
       img: trionworlds.png
       tfa: Yes
-      otp: Yes
       doc: https://store.trionworlds.com/account/profile/manage-game
 
     - name: Uplay
@@ -151,5 +141,4 @@ websites:
       url: https://www.wildstar-online.com/
       img: wildstar.png
       tfa: Yes
-      otp: Yes
       doc: https://support.wildstar-online.com/entries/53257786-Two-Step-Verification-Setting-Up-and-Rewards

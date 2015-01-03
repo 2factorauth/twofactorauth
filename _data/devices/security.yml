@@ -18,7 +18,6 @@ websites:
       img: dome9.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: http://www.dome9.com/overview/strong-2-factor-authentication
 
     - name: GeoTrust
@@ -30,7 +29,6 @@ websites:
       url: http://us.norton.com
       img: norton.png
       tfa: Yes
-      otp: Yes
       doc: https://login.norton.com/sso/embedded/learn2fa
 
     - name: OpenDNS

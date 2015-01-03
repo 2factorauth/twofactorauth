@@ -3,7 +3,6 @@ websites:
       url: https://www.bitium.com
       img: bitium.png
       tfa: Yes
-      u2f: Yes
       otp: Yes
       doc: https://support.bitium.com/customer/portal/articles/1417358-enabling-two-factor-authentication-2fa-
 
@@ -12,14 +11,12 @@ websites:
       img: clavid.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: http://www.clavid.com/index.php?option=com_content&view=article&id=85&Itemid=128&lang=en
 
     - name: CloudEntr
       url: http://www.cloudentr.com/
       img: cloudentr.png
       tfa: Yes
-      otp: Yes
       doc: http://www.cloudentr.com/product/two-factor-authentication/
 
     - name: Dashlane
@@ -47,7 +44,6 @@ websites:
       img: lastpass.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
 
     - name: MyDigipass.com
@@ -55,7 +51,6 @@ websites:
       img: mydigipass.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: https://www.mydigipass.com/en/fp/signup
 
     - name: Okta
@@ -63,15 +58,12 @@ websites:
       img: okta.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: http://www.okta.com/what-we-do/multifactor-authentication.html
 
     - name: OneLogin
       url: http://www.onelogin.com
       img: onelogin.png
       tfa: Yes
-      u2f: Yes
-      otp: Yes
       doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
 
     - name: Persowna

@@ -44,7 +44,6 @@ websites:
       img: paypal.png
       tfa: Yes
       otp: Yes
-      u2f: No
       exceptions:
           text: "2FA only available in the US and Canada. SMS only available in the US. Hardware-based 2FA is no longer available."
       doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
@@ -53,7 +52,6 @@ websites:
       url: https://skrill.com/
       img: skrill.png
       tfa: Yes
-      u2f: Yes
       doc: https://help.skrill.com/pkb_sc_article_FAQ?id=kA0D0000000Ci3x&l=en_GB
 
     - name: Stripe

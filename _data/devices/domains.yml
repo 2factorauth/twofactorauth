@@ -3,8 +3,6 @@ websites:
       url: https://101domain.com
       img: 101domain.png
       tfa: Yes
-      otp: Yes
-      u2f: Yes
       doc: http://www.101domain.com/vip_security_card.htm
 
     - name: 1and1
@@ -50,7 +48,6 @@ websites:
       url: https://dnsimple.com/
       img: dnsimple.png
       tfa: Yes
-      otp: Yes
       doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
 
     - name: Domain.com
@@ -69,7 +66,6 @@ websites:
       url: http://www.domeny.tv/en
       img: domenytv.png
       tfa: Yes
-      otp: Yes
       doc: http://www.domeny.tv/en/two-factor-authentication
 
     - name: Dyn
@@ -84,13 +80,13 @@ websites:
       img: dynadot.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: http://dynadot.com/domain/security.html
 
     - name: easyDNS
       url: https://easydns.com
       img: easydns.png
       tfa: Yes
+      otp: Yes
       doc: http://docs.easydns.com/2-factor-authentication/
 
     - name: eNom
@@ -104,7 +100,6 @@ websites:
       url: http://fabulous.com
       img: fabulous.png
       tfa: yes
-      u2f: yes
       doc: http://fabulous.com/informationcenter/index.htm?formdata%5Bqid%5D=1194
 
     - name: Gandi
@@ -146,7 +141,6 @@ websites:
       url: https://iwantmyname.com/
       img: iwantmyname.png
       tfa: Yes
-      otp: Yes
       doc: http://help.iwantmyname.com/customer/portal/articles/1139898
 
     - name: Loopia
@@ -160,8 +154,7 @@ websites:
       twitter: markmonitor
       img: markmonitor.png
       tfa: Yes
-      u2f: Yes
-      otp: Yes
+      otp: No
 
     - name: Metaname
       url: http://metaname.net/
@@ -185,8 +178,7 @@ websites:
       url: http://www.name.com/
       img: namecom.png
       tfa: Yes
-      otp: Yes
-      u2f: Yes
+      otp: No
       doc: https://www.name.com/services/namesafe
 
     - name: Namecheap

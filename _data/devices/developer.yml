@@ -3,7 +3,6 @@ websites:
       url: http://aha.io
       img: aha.png
       tfa: Yes
-      u2f: Yes
       otp: Yes
       doc: http://support.aha.io/hc/en-us/articles/202000967-Two-factor-authentication-2FA-user-set-up
 
@@ -18,7 +17,6 @@ websites:
       img: atechmedia.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: https://atechmedia.com/blog/general/launches/two-factor-authentication
 
     - name: Bitbucket
@@ -72,7 +70,6 @@ websites:
       url: http://looker.com/
       img: looker.png
       tfa: Yes
-      otp: Yes
       doc: http://www.looker.com/docs/admin/two-factor-authentication
 
     - name: Mapbox
@@ -88,7 +85,7 @@ websites:
       img: mongohq.png
       tfa: Yes
       otp: Yes
-      doc: http://docs.mongohq.com/security/mongohq-two-factor-authentication.html
+      doc: https://docs.compose.io/security/compose-two-factor-authentication.html
 
     - name: New Relic
       url: https://newrelic.com
@@ -106,7 +103,6 @@ websites:
       url: https://status.io/
       img: statusio.png
       tfa: Yes
-      u2f: Yes
       doc: http://blog.status.io/2014/03/01/yubikey/
 
     - name: StatusCake
@@ -125,7 +121,6 @@ websites:
       twitter: unfuddle
       img: unfuddle.png
       tfa: Yes
-      otp: Yes
       doc: https://unfuddle.com/blog/2014/07/140721-two-factor-authentication
 
     - name: Zapier

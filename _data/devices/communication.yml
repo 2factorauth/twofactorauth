@@ -3,6 +3,7 @@ websites:
       url: https://basecamp.com/
       img: basecamp.png
       tfa: Yes
+      otp: Yes
       doc: https://basecamp.com/help/guides/you/phone-verification
 
     - name: Campfire
@@ -40,7 +41,7 @@ websites:
       img: mailchimp.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
+      u2f: No
       doc: https://blog.mailchimp.com/alterego-integrations-for-easy-authentication/
 
     - name: Mailgun
@@ -66,14 +67,14 @@ websites:
       url: http://app.sendloop.com
       img: sendloop.png
       tfa: Yes
-      otp: Yes
+      otp: No
       doc: http://app.sendloop.com/help/article/account-003/how-can-i-make-my-account-more-secure
 
     - name: Skype (w/Microsoft Account)
       url: https://www.skype.com
       img: skype.png
       tfa: Yes
-      otp: Yes
+      otp: No
       doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
 
     - name: Slack

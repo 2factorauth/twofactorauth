@@ -9,7 +9,6 @@ websites:
       url: http://automater.pl/en/
       img: automater.png
       tfa: Yes
-      otp: Yes
       doc: http://www.youtube.com/watch?v=5OLcvjVhhuI
 
     - name: Azendoo
@@ -67,22 +66,27 @@ websites:
       img: mandrill.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: http://help.mandrill.com/entries/57465557
 
     - name: Mixpanel
       url: https://mixpanel.com/
       img: mixpanel.png
       tfa: Yes
-      otp: Yes
       twitter: mixpanel
 
     - name: Office 365
       url: http://office.microsoft.com/en-us/business/
       img: office365.png
       tfa: Yes
-      otp: Yes
       doc: http://technet.microsoft.com/en-us/library/dn383636.aspx
+
+    - name: Linux PAM
+      url: http://www.linux-pam.org/
+      img: pam.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: https://github.com/Yubico/pam-u2f
 
     - name: Trello
       url: https://trello.com

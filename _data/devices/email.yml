@@ -10,7 +10,6 @@ websites:
       img: fastmail.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: https://www.fastmail.fm/help/features_alternative_logins.html
 
     - name: Gmail
@@ -44,7 +43,6 @@ websites:
       url: https://www.mailbox.org/
       img: mailbox.png
       tfa: Yes
-      u2f: Yes
       doc: https://mailbox.org/en/one-time-passwords-for-secure-login-to-our-webmailer/
 
     - name: Outlook.com

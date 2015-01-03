@@ -88,6 +88,11 @@ providers:
     software: Yes
     hardware: Yes
 
+  - name: Nitrokey
+    url: https://www.nitrokey.com
+    img: nitrokey.png
+    hardware: Yes
+
   - name: PortalGuard
     url: http://www.portalguard.com
     img: portalguard.png

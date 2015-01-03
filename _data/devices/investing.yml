@@ -9,15 +9,14 @@ websites:
       url: https://www.schwab.com/
       img: charlesschwab.png
       tfa: Yes
-      u2f: Yes
+      otp: Yes
       doc: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/protect_your_account
 
     - name: E*Trade
       url: https://www.etrade.com/
       img: etrade.png
       tfa: Yes
-      otp: Yes
-      u2f: Yes
+      otp: No
       doc: https://us.etrade.com/e/t/jumppage/viewjumppage?PageName=secureid_enter#
 
     - name: Fidelity Investments
@@ -25,8 +24,6 @@ websites:
       twitter: fidelity
       img: fidelity.png
       tfa: Yes
-      otp: Yes
-      u2f: Yes
       doc: https://twofactorauth.org/notes/fidelity/
 
     - name: Loyal3
@@ -51,7 +48,6 @@ websites:
       img: optionshouse.png
       url: https://www.optionshouse.com
       tfa: Yes
-      otp: Yes
       doc: https://www.optionshouse.com/faq/authenticator/
 
     - name: OptionsXpress

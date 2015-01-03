@@ -10,15 +10,12 @@ websites:
       url: http://bitbay.net
       img: bitbay.png
       tfa: Yes
-      otp: Yes
       doc: https://www.youtube.com/watch?v=KFvoNHgl9Pw
 
     - name: Bitcoin.de
       url: https://bitcoin.de
       img: bitcoinde.png
       tfa: Yes
-      otp: Yes
-      u2f: Yes
       doc: https://www.bitcoin.de/de/faq/was-ist-die-2-step-verification-2-faktor-authentifizierung/46.html
 
     - name: Bitcoin-Central
@@ -26,7 +23,6 @@ websites:
       img: bitcoincentral.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: https://bitcoin-central.net/page/profile/security
 
     - name: Bitpay
@@ -55,7 +51,6 @@ websites:
       img: blockchain.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: https://blockchain.info/wallet/support-pages
 
     - name: CampBX
@@ -71,28 +66,24 @@ websites:
       twitter: circlebits
       img: circle.png
       tfa: Yes
-      otp: Yes
       doc: https://support.circle.com/hc/en-us/articles/201974154-What-is-two-factor-authentication-2FA-
 
     - name: Coinapult
       url: https://coinapult.com
       img: coinapult.png
       tfa: Yes
-      otp: Yes
       doc: https://coinapult.com/faq
 
     - name: Coinbase
       url: https://coinbase.com/
       img: coinbase.png
       tfa: Yes
-      otp: Yes
       doc: http://blog.coinbase.com/post/25677574019/coinbase-now-offers-two-factor-authentication
 
     - name: CEX.IO
       url: https://cex.io/
       img: cex.png
       tfa: Yes
-      otp: Yes
       doc: https://cex.io/guide#4
 
     - name: Coincafe
@@ -112,21 +103,18 @@ websites:
       url: https://coinkite.com
       img: coinkite.png
       tfa: Yes
-      otp: Yes
       doc: https://coinkite.com/settings/pws
 
     - name: Coinsetter
       url: https://www.coinsetter.com
       img: coinsetter.png
       tfa: Yes
-      otp: Yes
       doc: https://www.coinsetter.com/my/security
 
     - name: Cryptsy
       url: https://cryptsy.com/
       img: cryptsy.png
       tfa: Yes
-      otp: Yes
       doc: https://www.cryptsy.com/pages/security
 
     - name: Eclipse Mining Consortium
@@ -134,7 +122,6 @@ websites:
       img: eclipsemc.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: https://eclipsemc.com/single-news.php?id=20
 
     - name: Justcoin Exchange
