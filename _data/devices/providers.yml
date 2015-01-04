@@ -3,190 +3,195 @@
 #
 
 providers:
-  - name: AlterEgo
-    url: https://alteregoapp.com/
-    img: alterego.png
-    otp: Yes
-    u2f: Yes
+#  - name: AlterEgo
+#    url: https://alteregoapp.com/
+#    img: alterego.png
+#    otp: Yes
+#    u2f: Yes
 
-  - name: Authenticator Plus
-    url: http://authenticatorplus.com
-    img: authenticatorplus.png
-    otp: Yes
+#  - name: Authenticator Plus
+#    url: http://authenticatorplus.com
+#    img: authenticatorplus.png
+#    otp: Yes
 
-  - name: Azure Multi-Factor Authentication
-    url: http://azure.microsoft.com/en-us/services/multi-factor-authentication/
-    img: azure.png
-    otp: Yes
+#  - name: Azure Multi-Factor Authentication
+#    url: http://azure.microsoft.com/en-us/services/multi-factor-authentication/
+#    img: azure.png
+#    otp: Yes
 
-  - name: Authentify Inc
-    url: http://www.Authentify.com
-    img: authentify.png
-    u2f: Yes
-    otp: Yes
+#  - name: Authentify Inc
+#    url: http://www.Authentify.com
+#    img: authentify.png
+#    u2f: Yes
+#    otp: Yes
 
-  - name: Authy
-    url: https://authy.com
-    img: authy.png
-    otp: Yes
-    u2f: Yes
+#  - name: Authy
+#    url: https://authy.com
+#    img: authy.png
+#    otp: Yes
+#    u2f: Yes
 
-  - name: Clef
-    url: https://getclef.com
-    img: clef.png
-    otp: Yes
+#  - name: Clef
+#    url: https://getclef.com
+#    img: clef.png
+#    otp: Yes
     
-  - name: CryptoPhoto
-    url: https://www.cryptophoto.com
-    img: cryptophoto.png
-    otp: Yes
+#  - name: CryptoPhoto
+#    url: https://www.cryptophoto.com
+#    img: cryptophoto.png
+#    otp: Yes
     
-  - name: Duo Security
-    url: https://www.duosecurity.com
-    img: duo.png
+#  - name: Duo Security
+#    url: https://www.duosecurity.com
+#    img: duo.png
+#    u2f: Yes
+#    otp: Yes
+
+#  - name: FreeOTP
+#    url: https://fedorahosted.org/freeotp/
+#    img: freeotp.png
+#    otp: Yes
+
+#  - name: Google Authenticator
+#    url: http://www.google.com/landing/2step/
+#    img: google.png
+#    otp: Yes
+
+#  - name: Latch
+#    url: https://latch.elevenpaths.com
+#    img: latch.png
+#    otp: Yes
+
+#  - name: LaunchKey
+#    url: https://launchkey.com/
+#    img: launchkey.png
+#    otp: Yes
+
+#  - name: LoginTC
+#    url: https://www.logintc.com/
+#    img: logintc.png
+#    otp: Yes
+
+#  - name: MePIN
+#    url: http://www.mepin.com
+#    img: mepin.png
+#    otp: Yes
+#    u2f: Yes
+
+  - name: Nitrokey
+    url: https://www.nitrokey.com
+    img: nitrokey.png
+    hardware: Yes
+    otp: Yes
     u2f: Yes
-    otp: Yes
 
-  - name: FreeOTP
-    url: https://fedorahosted.org/freeotp/
-    img: freeotp.png
-    otp: Yes
-
-  - name: Google Authenticator
-    url: http://www.google.com/landing/2step/
-    img: google.png
-    otp: Yes
-
-  - name: Latch
-    url: https://latch.elevenpaths.com
-    img: latch.png
-    otp: Yes
-
-  - name: LaunchKey
-    url: https://launchkey.com/
-    img: launchkey.png
-    otp: Yes
-
-  - name: LoginTC
-    url: https://www.logintc.com/
-    img: logintc.png
-    otp: Yes
-
-  - name: MePIN
-    url: http://www.mepin.com
-    img: mepin.png
-    otp: Yes
-    u2f: Yes
-
-  - name: PortalGuard
-    url: http://www.portalguard.com
-    img: portalguard.png
-    tfa: Yes
-    otp: Yes
+#  - name: PortalGuard
+#    url: http://www.portalguard.com
+#    img: portalguard.png
+#    tfa: Yes
+#    otp: Yes
   
-  - name: Rublon
-    url: https://www.rublon.com/
-    img: rublon.png
-    otp: Yes
+#  - name: Rublon
+#    url: https://www.rublon.com/
+#    img: rublon.png
+#    otp: Yes
 
-  - name: SAASPASS
-    url: https://www.saaspass.com/
-    img: saaspass.png
-    otp: Yes
-    doc: https://www.saaspass/about.html
+#  - name: SAASPASS
+#    url: https://www.saaspass.com/
+#    img: saaspass.png
+#    otp: Yes
+#    doc: https://www.saaspass/about.html
 
-  - name: SAT Mobile ID
-    url: https://www.SecureAccessTechnologies.com
-    img: sat.png
-    otp: Yes
-    u2f: Yes
+#  - name: SAT Mobile ID
+#    url: https://www.SecureAccessTechnologies.com
+#    img: sat.png
+#    otp: Yes
+#    u2f: Yes
 
-  - name: SecureAuth
-    u2f: Yes
-    img: secureauth.png
-    otp: Yes
-    url: http://www.secureauth.com/
+#  - name: SecureAuth
+#    u2f: Yes
+#    img: secureauth.png
+#    otp: Yes
+#    url: http://www.secureauth.com/
 
-  - name: Securegate
-    url: http://www.securegate.io/
-    img: securegate.png
-    otp: Yes
+#  - name: Securegate
+#    url: http://www.securegate.io/
+#    img: securegate.png
+#    otp: Yes
 
-  - name: SecurePass
-    url: http://www.secure-pass.net/
-    img: securepass.png
-    u2f: Yes
-    otp: Yes
+#  - name: SecurePass
+#    url: http://www.secure-pass.net/
+#    img: securepass.png
+#    u2f: Yes
+#    otp: Yes
 
-  - name: SecSign
-    url: https://www.secsign.com/
-    img: sec-sign.png
-    tfa: Yes
-    otp: Yes
+#  - name: SecSign
+#    url: https://www.secsign.com/
+#    img: sec-sign.png
+#    tfa: Yes
+#    otp: Yes
 
-  - name: Solidpass
-    url: http://www.solidpass.com
-    img: solidpass.png
-    u2f: Yes
-    otp: Yes
+#  - name: Solidpass
+#    url: http://www.solidpass.com
+#    img: solidpass.png
+#    u2f: Yes
+#    otp: Yes
 
-  - name: SyferLock GridGuard
-    url: https://www.syferlock.com/
-    img: syferlock_gridguard.png
-    otp: Yes
+#  - name: SyferLock GridGuard
+#    url: https://www.syferlock.com/
+#    img: syferlock_gridguard.png
+#    otp: Yes
 
-  - name: Symantec/Verisign VIP
-    url: https://idprotect.verisign.com/
-    img: symantec.png
-    u2f: yes
-    otp: yes
+#  - name: Symantec/Verisign VIP
+#    url: https://idprotect.verisign.com/
+#    img: symantec.png
+#    u2f: yes
+#    otp: yes
 
-  - name: TeleSign
-    url: https://www.telesign.com
-    img: telesign.png
-    otp: Yes
+#  - name: TeleSign
+#    url: https://www.telesign.com
+#    img: telesign.png
+#    otp: Yes
 
-  - name: TextPower
-    url: http://www.textpower.com/public/solutions/security-authentication/
-    img: textpower.png
+#  - name: TextPower
+#    url: http://www.textpower.com/public/solutions/security-authentication/
+#    img: textpower.png
   
-  - name: Totp.Me
-    url: http://www.totp.me/
-    img: totpme.png
-    otp: Yes
+#  - name: Totp.Me
+#    url: http://www.totp.me/
+#    img: totpme.png
+#    otp: Yes
 
-  - name: Transakt
-    url: https://gettransakt.com/transakt/
-    img: transakt.png
-    otp: Yes
+#  - name: Transakt
+#    url: https://gettransakt.com/transakt/
+#    img: transakt.png
+#    otp: Yes
 
-  - name: Token2
-    url: https://token2.com
-    img: token2.png
-    otp: Yes
-    u2f: Yes
+#  - name: Token2
+#    url: https://token2.com
+#    img: token2.png
+#    otp: Yes
+#    u2f: Yes
 
-  - name: Toopher
-    url: https://toopher.com
-    img: toopher.png
-    otp: Yes
+#  - name: Toopher
+#    url: https://toopher.com
+#    img: toopher.png
+#    otp: Yes
 
   - name: VASCO Data Security
-    u2f: Yes
     img: vasco.png
     otp: Yes
     url: https://www.vasco.com/
 
-  - name: WiKID Systems
-    url:  https://www.wikidsystems.com
-    img:  wikid.png
-    u2f: No
-    otp: Yes
+#  - name: WiKID Systems
+#    url:  https://www.wikidsystems.com
+#    img:  wikid.png
+#    u2f: No
+#    otp: Yes
 
   - name: WWPass
-    url:  https://www.WWPass.com
-    img:  wwpass.png
-    u2f: Yes
+    url: https://www.WWPass.com
+    img: wwpass.png
     otp: Yes
 
   - name: Yubico
