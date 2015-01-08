@@ -24,7 +24,7 @@ websites:
       url: http://ebay.com
       img: ebay.png
       tfa: Yes
-      u2f: Yes
+      u2f: No
       otp: Yes
       exceptions:
           text: "While PayPal supports hardware and software 2FA in all locales, eBay only supports 2FA in some locales."
