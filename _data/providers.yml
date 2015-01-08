@@ -143,6 +143,11 @@ providers:
     sms: No
     software: Yes
 
+  - name: Sinch
+    url: https://www.sinch.com/features/sms-features/two-factor-authentication/
+    img: sinch.png
+    sms: Yes
+
   - name: SmartSign
     url: https://smartsignsecurity.com/
     img: smartsign.png
