@@ -4,7 +4,7 @@ websites:
       img: aws.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
+      u2f: No
       doc: http://aws.amazon.com/iam/details/mfa/
 
     - name: appFog
