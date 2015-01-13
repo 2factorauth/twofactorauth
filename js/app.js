@@ -18,11 +18,10 @@ $("tbody").searcher({
     textSelector: "td",
     inputSelector: "#searchinput",
     toggle: function(item, containsText) {
-        // use a typically jQuery effect instead of simply showing/hiding the item element
         if (containsText) {            
-        	$(item).fadeIn();
+        	$(item).show();
         } else {            
-        	$(item).fadeOut();
+        	$(item).hide();
         }
     }
 });
@@ -32,13 +31,10 @@ $("#main-container").searcher({
     textSelector: "td",
     inputSelector: "#searchinput",
     toggle: function(item, containsText) {
-        if (window.console) console.log(containsText + ' ' + item);
-        // use a typically jQuery effect instead of simply showing/hiding the item element
         if (containsText) {            
-        	$(item).fadeIn();
+        	$(item).show();
         } else {            
-        	$(item).fadeOut();
+        	$(item).hide();
         }
-
     }
 });
