@@ -30,6 +30,12 @@ hash: SupportTwoFactorAuth
                 </div>
             </div>
 
+            <div class="ui icon input">
+                <input type="text" id="searchinput" placeholder="Search...">
+                <i class="search icon"></i>
+            </div>
+            <div class="ui hidden divider"></div>
+            <div id='main-container'>
         {% for section in site.data.main.sections %}
             <div class="section">
                 <table class="ui table celled compact segment">
@@ -158,7 +164,7 @@ hash: SupportTwoFactorAuth
             {% endunless %}
             </div><!-- Section -->
         {% endfor %}
-
+        </div>
         </div><!-- Column -->
     </div><!-- UI Grid -->
 </div><!-- Main Container -->
