@@ -30,9 +30,57 @@ hash: SupportTwoFactorAuth
                 </div>
             </div>
 
-            <div class="ui icon input">
-                <input type="text" id="searchinput" placeholder="Search...">
-                <i class="search icon"></i>
+            <div class="ui form">
+                <div class='two fields'>
+                    <div class="field">
+                        <div class="ui icon input">
+                            <input type="text" id="searchinput" placeholder="Search...">
+                            <i class="search icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="inline field">
+                        <label>Category</label>
+                        <select class="ui dropdown">
+                            <option value="ALL">All</option>
+                        {% for section in site.data.main.sections %}
+                            <option value="{{ section.id }}">{{ section.title }}</option>
+                        {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class='five fields'>
+                    <div class="inline field">
+                        <div class="ui checkbox">
+                            <input type="checkbox">
+                            <label>SMS</label>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui checkbox">
+                            <input type="checkbox">
+                            <label>Phone Call</label>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui checkbox">
+                            <input type="checkbox">
+                            <label>Email</label>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui checkbox">
+                            <input type="checkbox">
+                            <label>HW Token</label>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui checkbox">
+                            <input type="checkbox">
+                            <label>SW Implementation</label>
+                        </div>
+                    </div>                                                                                
+                </div>
             </div>
             <div class="ui hidden divider"></div>
             <div id='main-container'>

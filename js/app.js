@@ -37,3 +37,11 @@ $("#main-container").searcher({
 
     }
 });
+
+$('.ui.checkbox')
+  .checkbox()
+;
+
+$('select.dropdown')
+  .dropdown()
+;
