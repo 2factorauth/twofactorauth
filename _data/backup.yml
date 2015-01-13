@@ -1,8 +1,15 @@
 websites:
+  - name: AeroFS
+    url: https://www.aerofs.com/
+    tfa: Yes
+    software: Yes
+    img: aerofs.png
+    doc: https://blog.aerofs.com/two-factor-authentication-for-hybrid-and-private-cloud/
+
   - name: Backblaze
     url: http://www.backblaze.com/
     twitter: backblaze
-    img: backblaze.gif
+    img: backblaze.png
     tfa: No
 
   - name: Bitcasa
@@ -26,7 +33,7 @@ websites:
 
   - name: Copy
     url: https://www.copy.com
-    twitter: copyapp
+    twitter: copy
     img: copy.png
     tfa: No
 
@@ -66,6 +73,7 @@ websites:
     sms: Yes
     phone: Yes
     software: Yes
+    hardware: Yes
     doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: iCloud
@@ -75,7 +83,7 @@ websites:
     sms: Yes
     software: Yes
     exceptions:
-        text: "SMS only available on select providers. 2FA for iCloud data is available for select accounts only."
+        text: "SMS only available on select providers."
     doc: http://support.apple.com/kb/ht5570
 
   - name: IDrive
@@ -105,6 +113,13 @@ websites:
     tfa: No
     status: https://twitter.com/pogoplug/status/486192568745476096
 
+  - name: Revert
+    url: https://revert.io
+    twitter: revert_io
+    img: revert.png
+    tfa: No
+    status: https://twitter.com/revert_io/status/541650096727662592
+
   - name: SmartBox
     url: http://www.panterranetworks.com/SmartBox/index.php
     img: smartbox.png
@@ -130,17 +145,29 @@ websites:
     twitter: Synology
     img: synology.png
     tfa: Yes
-    doc: http://itsoluti0ns.wordpress.com/2013/04/29/enable-2-way-verification-on-synology-nas/
+    software: Yes
+    email: Yes
+    doc: https://originwww.synology.com/en-us/knowledgebase/tutorials/615#t5
 
   - name: Tresorit
     url: https://tresorit.com/
-    twitter: Tresorit
     img: tresorit.png
-    tfa: No
-    status: https://twitter.com/Tresorit/status/471306129197518848
+    tfa: Yes
+    sms: Yes
+    phone: Yes
+    software: Yes
+    email: Yes
+    doc: https://support.tresorit.com/entries/104192996-How-to-set-up-two-step-verification
 
   - name: Wuala
     url: https://wuala.com/
     twitter: Wuala
     img: wuala.png
     tfa: No
+
+  - name: Zetta.net
+    url: http://zetta.net/
+    img: zetta.png
+    tfa: Yes
+    software: Yes
+    doc: http://www.zetta.net/blog/set-zetta-net-two-factor-authentication/

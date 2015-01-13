@@ -19,6 +19,19 @@ websites:
       img: americanexpress.png
       tfa: No
 
+    - name: America First Credit Union
+      url: https://www.americafirst.com/
+      twitter: AFCU
+      img: americafirstcu.png
+      tfa: No
+
+    - name: Bank Central Asia (BCA)
+      url: http://www.bca.co.id/en/individual/individual.jsp
+      img: bankcentralasia.png
+      tfa: Yes
+      hardware: Yes
+      doc: http://www.bca.co.id/en/individual/produk_dan_layanan/e-banking/klikbca/klikbca-keybca/klikbca-keybca.jsp
+
     - name: Bank of America
       url: https://www.bankofamerica.com/
       img: bankofamerica.png
@@ -72,7 +85,7 @@ websites:
       sms: Yes
       phone: Yes
       email: Yes
-      doc: https://mobilebanking.chase.com/Public/Docs/Faq?nodeId=1&itemId=2
+      doc: /notes/chase/
 
     - name: CIBC
       url: http://www.cibc.ca
@@ -95,8 +108,16 @@ websites:
       email: Yes
       phone: Yes
       exceptions:
-            text: "Two factor auth is only available for credit card accounts. It is not available for online savings accounts."
+            text: "Available only for credit cards, not for savings accounts. By providing your phone number, you are automatically opted in."
       doc: https://www.discover.com/credit-cards/help-center/faqs/enhancing-account-security.html
+
+    - name: everbank.com
+      url: https://everbank.com
+      twitter: everbank
+      img: everbank.png
+      tfa: Yes
+      phone: Yes
+      sms: Yes
 
     - name: Fairwinds
       url: https://www.fairwinds.org
@@ -106,6 +127,20 @@ websites:
       email: Yes
       phone: Yes
       doc: "https://www.fairwinds.org/inside/privacy/security_we.asp#multifactor-auth"
+
+    - name: Fifth Third Bank
+      url: https://www.53.com/
+      twitter: fifththird
+      img: fifththird.png
+      tfa: No
+
+    - name: First Tech Federal Credit Union
+      url: https://www.firsttechfed.com/
+      img: firsttechfcu.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.firsttechfed.com/OnlineServices/bankonlinesecurely/SecurityKey
 
     - name: GE Capital Bank
       url: https://www.gecapitalbank.com
@@ -136,7 +171,17 @@ websites:
       url: http://www.lloydsbank.com/
       twitter: AskLloydsBank
       img: lloydsbank.png
-      tfa: No
+      tfa: Yes
+      phone: Yes
+      doc: http://www.lloydsbank.com/help-guidance/security/authentication-procedure.asp
+
+    - name: Natwest UK
+      url: https://www.natwest.com/personal.ashx
+      img: natwest.png
+      tfa: Yes
+      hardware: Yes
+      twitter: NatWest_Help
+      doc: http://www.natwest.com/personal/online-banking/g1/banking-safely-online/card-reader.ashx
 
     - name: Patelco Credit Union
       url: https://www.patelco.org/
@@ -166,6 +211,18 @@ websites:
       img: rbc.png
       tfa: No
 
+    - name: San Diego County Credit Union
+      url: https://www.sdccu.com
+      twitter: sdccu
+      img: sdccu.png
+      tfa: No
+
+    - name: San Francisco Fire Credit Union
+      url: https://www.sffirecu.org
+      twitter: SFFireCU
+      img: sffirecu.png
+      tfa: No
+
     - name: SEB
       url: http://www.seb.se/pow/default.asp
       img: seb.png
@@ -178,20 +235,26 @@ websites:
       twitter: simple
       img: simple.png
       tfa: No
-      status: https://twitter.com/simple/status/445966117543378944
-
-    - name: Sparbanken1826
-      url: https://www.sparbanken1826.se/
-      img: sparbanken1826.png
-      tfa: Yes
-      hardware: Yes
-      doc: https://www.sparbanken1826.se/sv/Om-Spabanken-1826/Sakerhet/Tips--red/
 
     - name: SunTrust
       url: https://www.suntrust.com/
       twitter: SunTrust
       img: suntrust.png
       tfa: No
+
+    - name: Swedbank
+      url: https://www.swedbank.se/
+      img: swedbank.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: http://hjalp.swedbank.se/logga-in/index.htm
+
+    - name: TARGOBANK
+      url: https://www.targobank.de/
+      img: targobank.png
+      tfa: No
+      twitter: TARGOBANK
 
     - name: TBC Bank
       url: http://www.tbcbank.ge
@@ -219,6 +282,7 @@ websites:
       img: usaa.png
       tfa: Yes
       sms: Yes
+      hardware: Yes
       software: Yes
       doc: https://www.usaa.com/inet/pages/security_token_logon_options
 

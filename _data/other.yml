@@ -1,4 +1,10 @@
 websites:
+    - name: Aerohive Networks
+      url: https://www.aerohive.com/
+      img: aerohive.png
+      tfa: No
+      twitter: aerohive
+
     - name: Automater
       url: http://automater.pl/en/
       img: automater.png
@@ -19,6 +25,12 @@ websites:
       sms: Yes
       software: Yes
       doc: https://kb.meraki.com/knowledge_base/log-in-security-configuring-account-and-password-policies-for-dashboard-administrators
+
+    - name: Clipper
+      url: https://www.clippercard.com
+      twitter: BayAreaClipper
+      img: clipper.png
+      tfa: No
 
     - name: Cloudinary
       url: http://cloudinary.com
@@ -65,7 +77,9 @@ websites:
     - name: Mixpanel
       url: https://mixpanel.com/
       img: mixpanel.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      software: Yes
       twitter: mixpanel
 
     - name: Office 365
@@ -82,6 +96,7 @@ websites:
       twitter: trello
       img: trello.png
       tfa: No
+      status: https://trello.com/c/O6DrHazq/1532-two-factor-authentication
 
     - name: US Social Security Administration
       url: http://www.ssa.gov
@@ -101,3 +116,11 @@ websites:
       twitter: Zendesk
       img: zendesk.png
       tfa: No
+
+    - name: PhraseApp
+      url: https://phraseapp.com
+      twitter: PhraseApp
+      img: phraseapp.png
+      software: Yes
+      tfa: Yes
+      doc: http://blog.phraseapp.com/post/97556438392/extra-secure-user-accounts-in-phraseapp-with

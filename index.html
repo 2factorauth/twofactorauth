@@ -19,7 +19,7 @@ hash: SupportTwoFactorAuth
                 <i class="circular mobile icon"></i>
                 <h2>Two Factor Auth (2FA)</h2>
                 <div class="sub header">List of websites and whether or not they support
-                    <a href="http://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
+                    <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
                 </div>
                 <div class="sub header">
                     Also see the list of <a href="/providers/">2FA providers</a> and the platforms they support.
@@ -72,7 +72,8 @@ hash: SupportTwoFactorAuth
                                         {% if website.tfa %}
                                             <td class="main positive">
                                             {% if website.img %}
-                                                <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                                                <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                                                <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
                                             {% endif %}
                                                 <a href="{{ website.url }}">{{ website.name }}</a>
                                                 {% include exception.html website=website %}
@@ -117,7 +118,8 @@ hash: SupportTwoFactorAuth
                                         {% else %}
                                             <td class="main negative">
                                             {% if website.img %}
-                                                <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                                                <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                                                <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
                                             {% endif %}
                                                 <a href="{{ website.url }}">{{ website.name }}</a>
                                             {% if website.status %}
@@ -137,12 +139,12 @@ hash: SupportTwoFactorAuth
                                                 </td>
                                                 {% endif %}
                                             {% else %}
-                                                <td class="negative icon"><i class="remove large icon"></td>
-                                                <td class="negative icon"><i class="remove large icon"></td>
-                                                <td class="negative icon"><i class="remove large icon"></td>
-                                                <td class="negative icon"><i class="remove large icon"></td>
-                                                <td class="negative icon"><i class="remove large icon"></td>
-                                                <td class="negative icon"><i class="remove large icon"></td>
+                                                <td class="negative icon"><i class="remove large icon"></i></td>
+                                                <td class="negative icon"><i class="remove large icon"></i></td>
+                                                <td class="negative icon"><i class="remove large icon"></i></td>
+                                                <td class="negative icon"><i class="remove large icon"></i></td>
+                                                <td class="negative icon"><i class="remove large icon"></i></td>
+                                                <td class="negative icon"><i class="remove large icon"></i></td>
                                             {% endif %}
                                         {% endif %}
                                 {% endif %}

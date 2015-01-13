@@ -105,6 +105,7 @@ websites:
     hardware: Yes
     doc: <link to site 2FA documentation>
 ```
+Fields `name:`, `url:`, `img:`, `tfa:` are required for all entries. If available, `twitter:` should be included. If a site provides tfa, `doc:` field is strongly encouraged. Other fields should be included as appropriate.
 
 ### Exceptions & Restrictions
 
@@ -185,7 +186,7 @@ website. There are 4 ways to customize how it is displayed:
   it, then use:
 
   ```yml
-  tfa: no
+  tfa: No
   status: <url to documentation>
   ```
 

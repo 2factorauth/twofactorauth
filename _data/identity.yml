@@ -1,4 +1,12 @@
 websites:
+    - name: Bitium
+      url: https://www.bitium.com
+      img: bitium.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://support.bitium.com/customer/portal/articles/1417358-enabling-two-factor-authentication-2fa-
+
     - name: Clavid
       url: http://www.clavid.com/
       img: clavid.png
@@ -31,6 +39,12 @@ websites:
       sms: Yes
       doc: https://www.keepersecurity.com/security#twoFactor
 
+    - name: Keybase
+      url: https://keybase.io
+      twitter: KeybaseIO
+      img: keybase.png
+      tfa: No
+
     - name: LastPass
       url: https://lastpass.com/
       img: lastpass.png
@@ -38,6 +52,13 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
+
+    - name: Mitro
+      url: https://www.mitro.co/
+      img: mitro.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.mitro.co/secure.html
 
     - name: MyDigipass.com
       url: https://mydigipass.com/
@@ -49,7 +70,7 @@ websites:
       doc: https://www.mydigipass.com/en/fp/signup
 
     - name: Okta
-      url: https://okta.com/
+      url: https://www.okta.com/
       img: okta.png
       tfa: Yes
       sms: Yes
@@ -58,18 +79,24 @@ websites:
       doc: http://www.okta.com/what-we-do/multifactor-authentication.html
 
     - name: OneLogin
-      doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
-      hardware: Yes
-      img: onelogin.png
-      software: Yes
-      tfa: Yes
       url: http://www.onelogin.com
+      img: onelogin.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
 
     - name: Persowna
       url: https://persowna.net
       img: persowna.png
       tfa: Yes
       software: Yes
+
+    - name: RoboForm
+      url: http://www.roboform.com/
+      img: roboform.png
+      tfa: Yes
+      email: Yes
 
     - name: SecureSafe
       url: http://www.securesafe.com

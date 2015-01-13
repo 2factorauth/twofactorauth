@@ -11,7 +11,15 @@ websites:
       tfa: Yes
       software: Yes
       sms: Yes
+      exceptions:
+          text: "SMS-capable phone required."
       doc: http://server.buycraft.net/tfa
+
+    - name: Dwolla
+      url: https://www.dwolla.com
+      twitter: dwolla
+      img: dwolla.png
+      tfa: No
 
     - name: GoCardless
       img: gocardless.png
@@ -26,6 +34,7 @@ websites:
       sms: Yes
       phone: Yes
       software: Yes
+      hardware: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Litle & Co
@@ -47,9 +56,9 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      hardware: Yes
+      hardware: No
       exceptions:
-          text: "SMS only available in the US."
+          text: "2FA only available in the US and Canada. SMS only available in the US. Hardware-based 2FA is no longer available."
       doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
 
     - name: Skrill

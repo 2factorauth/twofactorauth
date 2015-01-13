@@ -54,6 +54,12 @@ websites:
       software: Yes
       doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
 
+    - name: Domain.com
+      url: https://domain.com
+      twitter: DomainDotCom
+      img: domaindotcom.png
+      tfa: no
+      
     - name: DomainsAtCost
       url: https://www.domainsatcost.ca/
       twitter: domainsatcost
@@ -125,7 +131,6 @@ websites:
       img: heartinternet.png
       tfa: No
       twitter: HeartInternet
-      status: https://twitter.com/HeartInternet/status/449479465295691776
 
     - name: Hover.com
       img: hover.png
@@ -140,7 +145,7 @@ websites:
       img: internetbs.png
       tfa: Yes
       software: Yes
-      doc: http://twofactorauth.org/notes/internetbs/
+      doc: /notes/internetbs/
 
     - name: iWantMyName
       url: https://iwantmyname.com/
@@ -154,7 +159,15 @@ websites:
       twitter: loopia
       img: loopia.png
       tfa: No
-      status: https://twitter.com/loopia/statuses/446223091161911296
+
+    - name: MarkMonitor
+      url: https://www.markmonitor.com
+      twitter: markmonitor
+      img: markmonitor.png
+      tfa: Yes
+      hardware: Yes
+      sms: Yes
+      software: Yes
 
     - name: Metaname
       url: http://metaname.net/

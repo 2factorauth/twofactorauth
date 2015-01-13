@@ -8,6 +8,12 @@ websites:
       hardware: Yes
       doc: http://aws.amazon.com/iam/details/mfa/
 
+    - name: appFog
+      url: https://www.appfog.com/
+      twitter: appfog
+      img: appfog.png
+      tfa: No
+
     - name: Cloud 66
       url: http://www.cloud66.com
       img: cloud66.png
@@ -30,7 +36,7 @@ websites:
       tfa: Yes
       software: Yes
       exceptions:
-          text: "Jun 5, 2014: Currently in beta. Create a support ticket to request 2FA added to your organization"
+          text: "Currently in beta as of June 5th 2014. Create a support ticket to request 2FA added to your organization"
       doc: https://support.cloud.engineyard.com/entries/40538256-Two-factor-authentication
 
     - name: Google Cloud Platform
@@ -40,6 +46,7 @@ websites:
       sms: Yes
       software: Yes
       phone: Yes
+      hardware: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Heroku
@@ -49,8 +56,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://devcenter.heroku.com/articles/two-factor-authentication
-      exceptions:
-          text: "Jun 5, 2014: Currently in beta"
 
     - name: HP Cloud
       url: https://www.hpcloud.com/
@@ -64,7 +69,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: "http://wiki.joyent.com/wiki/display/jpc2/Improving+Security+Using+Two-Factor+Authentication+(2FA)"
-      
+
     - name: Microsoft Azure
       url: http://azure.microsoft.com/
       img: microsoftazure.png
@@ -79,6 +84,13 @@ websites:
       twitter: openshift
       img: openshift.png
       tfa: No
+    
+    - name: Rackspace
+      url: https://www.rackspace.com/
+      img: rackspace.png
+      tfa: Yes
+      sms: Yes
+      doc: http://www.rackspace.com/knowledge_center/article/multi-factor-authentication-from-the-cloud-control-panel
 
     - name: RightScale
       url: http://www.rightscale.com/
@@ -99,3 +111,10 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://library.singlehop.com/assets_project_development/Two_Factor_Instructions.pdf
+
+    - name: Userify
+      url: https://userify.com
+      twitter: userify
+      img: userify.png
+      tfa: No
+      status: https://twitter.com/userify/status/544608357579882497

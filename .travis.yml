@@ -1,5 +1,6 @@
 language: ruby
+install: bundle install
 rvm:
-    - 1.9.3
+    - 2.1.1
 notifications:
     email: false

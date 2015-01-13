@@ -15,6 +15,13 @@ providers:
     img: authenticatorplus.png
     software: Yes
 
+  - name: Azure Multi-Factor Authentication
+    url: http://azure.microsoft.com/en-us/services/multi-factor-authentication/
+    img: azure.png
+    phone: Yes
+    sms: Yes
+    software: Yes
+
   - name: Authentify Inc
     url: http://www.Authentify.com
     img: authentify.png
@@ -35,7 +42,12 @@ providers:
     url: https://getclef.com
     img: clef.png
     software: Yes
-
+    
+  - name: CryptoPhoto
+    url: https://www.cryptophoto.com
+    img: cryptophoto.png
+    software: Yes
+    
   - name: Duo Security
     url: https://www.duosecurity.com
     img: duo.png
@@ -54,9 +66,19 @@ providers:
     img: google.png
     software: Yes
 
+  - name: Latch
+    url: https://latch.elevenpaths.com
+    img: latch.png
+    software: Yes
+
   - name: LaunchKey
     url: https://launchkey.com/
     img: launchkey.png
+    software: Yes
+
+  - name: LoginTC
+    url: https://www.logintc.com/
+    img: logintc.png
     software: Yes
 
   - name: MePIN
@@ -66,9 +88,17 @@ providers:
     software: Yes
     hardware: Yes
 
+  - name: PortalGuard
+    url: http://www.portalguard.com
+    img: portalguard.png
+    tfa: Yes
+    phone: Yes
+    software: Yes
+  
   - name: Rublon
     url: https://www.rublon.com/
     img: rublon.png
+    email: Yes
     software: Yes
 
   - name: SAASPASS
@@ -100,6 +130,12 @@ providers:
     sms: Yes
     software: Yes
 
+  - name: SecurePass
+    url: http://www.secure-pass.net/
+    img: securepass.png
+    hardware: Yes
+    software: Yes
+
   - name: SecSign
     url: https://www.secsign.com/
     img: sec-sign.png
@@ -107,6 +143,12 @@ providers:
     sms: No
     software: Yes
 
+  - name: SmartSign
+    url: https://smartsignsecurity.com/
+    img: smartsign.png
+    email: Yes
+    software: Yes    
+    
   - name: Solidpass
     url: http://www.solidpass.com
     img: solidpass.png
@@ -123,9 +165,12 @@ providers:
 
   - name: Symantec/Verisign VIP
     url: https://idprotect.verisign.com/
+    email: Yes
     img: symantec.png
     hardware: yes
     software: yes
+    sms: Yes
+    phone: Yes
 
   - name: TeleSign
     url: https://www.telesign.com
@@ -137,6 +182,23 @@ providers:
   - name: TextPower
     url: http://www.textpower.com/public/solutions/security-authentication/
     img: textpower.png
+    sms: Yes
+  
+  - name: Totp.Me
+    url: http://www.totp.me/
+    img: totpme.png
+    software: Yes
+
+  - name: Transakt
+    url: https://gettransakt.com/transakt/
+    img: transakt.png
+    software: Yes
+
+  - name: Token2
+    url: https://token2.com
+    img: token2.png
+    software: Yes
+    hardware: Yes
     sms: Yes
 
   - name: Toopher
@@ -158,6 +220,12 @@ providers:
     url:  https://www.wikidsystems.com
     img:  wikid.png
     hardware: No
+    software: Yes
+
+  - name: WWPass
+    url:  https://www.WWPass.com
+    img:  wwpass.png
+    hardware: Yes
     software: Yes
 
   - name: Yubico

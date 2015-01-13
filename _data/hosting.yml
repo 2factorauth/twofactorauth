@@ -1,4 +1,22 @@
 websites:
+    - name: Bluehost
+      url: https://www.bluehost.com/
+      img: bluehost.png
+      tfa: No
+      twitter: bluehostsupport
+
+    - name: ChunkHost
+      url: https://chunkhost.com
+      img: chunkhost.png
+      tfa: Yes
+      software: Yes
+
+    - name: CloudAtCost
+      url: http://cloudatcost.com
+      img: cloudatcost.png
+      twitter: cloudatcost
+      tfa: no
+
     - name: CloudShards
       url: https://www.cloudshards.com/
       img: cloudshards.png
@@ -10,6 +28,8 @@ websites:
       img: digitalocean.png
       tfa: Yes
       software: Yes
+      exceptions:
+          text: "SMS-capable phone required."
       doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
 
     - name: Dreamhost
@@ -19,11 +39,21 @@ websites:
       software: Yes
       doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
 
-    - name: ChunkHost
-      url: https://chunkhost.com
-      img: chunkhost.png
+    - name: Fastly
+      url: https://www.fastly.com
+      twitter: Fastly
+      img: fastly.png
       tfa: Yes
       software: Yes
+      doc: https://docs.fastly.com/guides/getting-started/enabling-and-disabling-twofactor-authentication
+
+    - name: Glesys
+      url: http://glesys.com/
+      twitter: glesysab
+      img: glesys.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
 
     - name: iPage
       url: http://www.ipage.com/ipage/index.html
@@ -64,14 +94,16 @@ websites:
       img: ovh.png
       tfa: Yes
       sms: Yes
+      exceptions:
+        text: "2FA is only available for the customers who registered on the French version of the website."
       doc: http://www.ovh.com/us/about-us/security.xml#double-authentification
 
     - name: Rackspace
       url: https://www.rackspace.com/
-      twitter: rackspace
       img: rackspace.png
-      tfa: No
-      status: https://twitter.com/Rackspace/status/446469139947732992
+      tfa: Yes
+      sms: Yes
+      doc: http://www.rackspace.com/knowledge_center/article/myrackspace-two-factor-authentication
 
     - name: RamNode
       url: http://www.ramnode.com
@@ -86,6 +118,14 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://knowledgelayer.softlayer.com/procedure/configure-portal-account-one-time-password-access-manage
+
+    - name: SpeedIT Solutions
+      url: https://www.speedit.org/
+      img: speedit.png
+      tfa: Yes
+      software: Yes
+      twitter: SpeedIT_S
+      doc: https://www.speedit.org/faq/#accordian_item_937
 
     - name: Squarespace
       url: https://squarespace.com/
