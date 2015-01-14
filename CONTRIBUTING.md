@@ -14,11 +14,19 @@ all follow this syntax:
    setup with [Travis][travis]. If your pull request doesn't pass, it won't be
    merged.
 
-   To manually test the build, just run the following:
+   To verify that your additions are fine, you can run the entire set of tests
+   which will check all links and images by:
 
-    ```bash
-    $ ruby verify.rb
-    ```
+   ```bash
+   $ bundle exec rake
+   ```
+
+   However, this can take awhile as there are roughly 800 links that it checks.
+   If you just wish to test your YAML changes, you can just run:
+
+   ```bash
+   $ bundle exec rake verify
+   ```
 
 2. **Use a Nice Icon**: The icon must be 32x32 in dimension. Earlier we were
    using 16x16 but upgraded for various high density screens.
