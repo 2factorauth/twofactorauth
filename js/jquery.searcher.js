@@ -1,3 +1,8 @@
+/*! jQuery Searcher Plugin - v0.1.0 - 2014-08-18
+ * https://github.com/lloiser/jquery-searcher/
+ * Copyright (c) 2014 Lukas Beranek; Licensed MIT 
+*/
+
 (function IIFE() {
 
 "use strict";
