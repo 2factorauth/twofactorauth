@@ -86,7 +86,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      hardware: Yes
+      exceptions:
+          text: "Only protects certain operations like password changes and domain transfers."
       doc: http://dynadot.com/domain/security.html
 
     - name: easyDNS
