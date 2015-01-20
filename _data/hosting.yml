@@ -100,10 +100,10 @@ websites:
 
     - name: Rackspace
       url: https://www.rackspace.com/
-      twitter: rackspace
       img: rackspace.png
-      tfa: No
-      status: https://twitter.com/Rackspace/status/446469139947732992
+      tfa: Yes
+      sms: Yes
+      doc: http://www.rackspace.com/knowledge_center/article/myrackspace-two-factor-authentication
 
     - name: RamNode
       url: http://www.ramnode.com
