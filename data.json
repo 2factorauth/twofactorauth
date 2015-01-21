@@ -1,5 +1,4 @@
 ---
-layout: null
 ---
 {
     {% for section in site.data.main.sections %}
@@ -15,10 +14,8 @@ layout: null
                                             "software": {% if website.software %}true{% else %}false{% endif %},
                                             "phone": {% if website.phone %}true{% else %}false{% endif %},
                                             "hardware": {% if website.hardware %}true{% else %}false{% endif %},
-                               },
+                               }{% if forloop.last != true %},{% endif %}
                         {% endfor %}
-                        "": false
-                        },
+                        }{% if forloop.last != true %},{% endif %}
     {% endfor %}
-    "": false
 }
