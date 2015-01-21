@@ -127,6 +127,16 @@ websites:
       exceptions:
           text: "US numbers only"
 
+    - name: Google Domains
+      url: https://domains.google.com
+      img: googledomains.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+
     - name: Heart Internet
       url: https://www.heartinternet.uk/
       img: heartinternet.png
