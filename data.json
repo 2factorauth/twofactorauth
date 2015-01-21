@@ -13,7 +13,7 @@
                                             "sms": {% if website.sms %}true{% else %}false{% endif %},
                                             "software": {% if website.software %}true{% else %}false{% endif %},
                                             "phone": {% if website.phone %}true{% else %}false{% endif %},
-                                            "hardware": {% if website.hardware %}true{% else %}false{% endif %},
+                                            "hardware": {% if website.hardware %}true{% else %}false{% endif %}
                                }{% if forloop.last != true %},{% endif %}
                         {% endfor %}
                         }{% if forloop.last != true %},{% endif %}
