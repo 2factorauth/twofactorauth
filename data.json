@@ -8,7 +8,7 @@
                                 "{{ website.name }}": {
                                             "tfa": {% if website.tfa %}true{% else %}false{% endif %},
                                             "url": "{{ website.url }}",
-                                            "img": "{{ website.img }}",
+                                            "img": "/img/{{ section.id }}/{{ website.img }}",
                                             "twitter": "{{ website.twitter }}",
                                             "sms": {% if website.sms %}true{% else %}false{% endif %},
                                             "software": {% if website.software %}true{% else %}false{% endif %},
