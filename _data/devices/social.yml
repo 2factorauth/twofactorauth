@@ -102,10 +102,17 @@ websites:
       doc: http://www.viadeo.com/aide/security/
       twitter: Viadeo
 
+    - name: WordPress (software)
+      url: https://wordpress.org
+      img: wordpress.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: https://github.com/Yubico/wordpress-u2f
+
     - name: WordPress.com
       url: https://wordpress.com
       img: wordpress.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
       doc: http://en.support.wordpress.com/security/two-step-authentication/
