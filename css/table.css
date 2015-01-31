@@ -54,23 +54,23 @@
 }
 
 .ui.table thead th:first-child {
-  border-radius: 5px 0px 0px 0px;
+  border-radius: 5px 0 0 0;
 }
 
 .ui.table thead th:last-child {
-  border-radius: 0px 5px 0px 0px;
+  border-radius: 0 5px 0 0;
 }
 
 .ui.table tfoot th:first-child {
-  border-radius: 0px 0px 0px 5px;
+  border-radius: 0 0 0 5px;
 }
 
 .ui.table tfoot th:last-child {
-  border-radius: 0px 0px 5px 0px;
+  border-radius: 0 0 5px 0;
 }
 
 .ui.table tfoot th:only-child {
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 /* Table Cells */
@@ -104,7 +104,7 @@
 }
 
 .ui.table > .icon:only-child {
-  margin: 0em;
+  margin: 0;
 }
 
 /* Table Segment */
@@ -122,7 +122,7 @@
 @media only screen and (max-width: 768px) {
   .ui.table {
     display: block;
-    padding: 0em;
+    padding: 0;
   }
 
   .ui.table thead,
@@ -143,8 +143,8 @@
     display: block;
     border: none !important;
     padding: 0.25em 0.75em;
-    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05) !important;
-    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05) !important;
+    -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05) !important;
   }
 
   .ui.table td:first-child {
@@ -153,8 +153,8 @@
   }
 
   .ui.table td:last-child {
-    -webkit-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
-    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
+    -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset !important;
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset !important;
     padding-bottom: 1em;
   }
 
@@ -205,8 +205,8 @@
 
 .ui.table tr.positive,
 .ui.table td.positive {
-  -webkit-box-shadow: 2px 0px 0px #119000 inset;
-  box-shadow: 2px 0px 0px #119000 inset;
+  -webkit-box-shadow: 2px 0 0 #119000 inset;
+  box-shadow: 2px 0 0 #119000 inset;
 }
 
 .ui.table tr.positive td,
@@ -230,8 +230,8 @@
 
 .ui.table tr.negative,
 .ui.table td.negative {
-  -webkit-box-shadow: 2px 0px 0px #CD2929 inset;
-  box-shadow: 2px 0px 0px #CD2929 inset;
+  -webkit-box-shadow: 2px 0 0 #CD2929 inset;
+  box-shadow: 2px 0 0 #CD2929 inset;
 }
 
 .ui.table tr.negative td,
@@ -255,8 +255,8 @@
 
 .ui.table tr.error,
 .ui.table td.error {
-  -webkit-box-shadow: 2px 0px 0px #CD2929 inset;
-  box-shadow: 2px 0px 0px #CD2929 inset;
+  -webkit-box-shadow: 2px 0 0 #CD2929 inset;
+  box-shadow: 2px 0 0 #CD2929 inset;
 }
 
 .ui.table tr.error td,
@@ -281,8 +281,8 @@
 
 .ui.table tr.warning,
 .ui.table td.warning {
-  -webkit-box-shadow: 2px 0px 0px #7D6C00 inset;
-  box-shadow: 2px 0px 0px #7D6C00 inset;
+  -webkit-box-shadow: 2px 0 0 #7D6C00 inset;
+  box-shadow: 2px 0 0 #7D6C00 inset;
 }
 
 .ui.table tr.warning td,
@@ -307,8 +307,8 @@
 
 .ui.table tr.active,
 .ui.table td.active {
-  -webkit-box-shadow: 2px 0px 0px rgba(50, 50, 50, 0.9) inset;
-  box-shadow: 2px 0px 0px rgba(50, 50, 50, 0.9) inset;
+  -webkit-box-shadow: 2px 0 0 rgba(50, 50, 50, 0.9) inset;
+  box-shadow: 2px 0 0 rgba(50, 50, 50, 0.9) inset;
 }
 
 .ui.table tr.active td,
@@ -531,7 +531,7 @@
   content: '';
   width: 1em;
   opacity: 0.8;
-  margin: 0em 0em 0em 0.5em;
+  margin: 0 0 0 0.5em;
   font-family: 'Icons';
   font-style: normal;
   font-weight: normal;

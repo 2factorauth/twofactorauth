@@ -54,6 +54,18 @@ websites:
       software: Yes
       doc: http://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
 
+    - name: Domain.com
+      url: http://www.domain.com/
+      twitter: DomainDotCom
+      img: domaindotcom.png
+      tfa: no
+      
+    - name: domainFACTORY
+      url: http://www.df.eu
+      img: domainfactory.png
+      twitter: domainfactory
+      tfa: No
+
     - name: DomainsAtCost
       url: https://www.domainsatcost.ca/
       twitter: domainsatcost
@@ -80,7 +92,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      hardware: Yes
+      exceptions:
+          text: "Only protects certain operations like password changes and domain transfers."
       doc: http://dynadot.com/domain/security.html
 
     - name: easyDNS
@@ -125,7 +138,6 @@ websites:
       img: heartinternet.png
       tfa: No
       twitter: HeartInternet
-      status: https://twitter.com/HeartInternet/status/449479465295691776
 
     - name: Hover.com
       img: hover.png
@@ -140,7 +152,7 @@ websites:
       img: internetbs.png
       tfa: Yes
       software: Yes
-      doc: http://twofactorauth.org/notes/internetbs/
+      doc: /notes/internetbs/
 
     - name: iWantMyName
       url: https://iwantmyname.com/
@@ -189,7 +201,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://www.name.com/services/namesafe
+      doc: https://www.name.com/services/two-step-verification
 
     - name: Namecheap
       url: https://www.namecheap.com/
@@ -210,6 +222,12 @@ websites:
       url: http://www.namespro.ca/
       twitter: namespro
       img: namespro.png
+      tfa: No
+
+    - name: Netim
+      url: http://www.netim.com/
+      twitter: Netim_com
+      img: netim.png
       tfa: No
 
     - name: Network Solutions

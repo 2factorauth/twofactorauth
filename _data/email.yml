@@ -21,6 +21,7 @@ websites:
       sms: Yes
       phone: Yes
       software: Yes
+      hardware: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: GMX
@@ -65,15 +66,30 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
-      
+
+    - name: Posteo
+      url: https://posteo.de/
+      img: posteo.png
+      tfa: Yes
+      software: Yes
+      doc: https://posteo.de/en/help/what-is-two-factor-authentication-and-how-do-i-set-it-up
+
     - name: ProtonMail
       url: https://protonmail.ch/
       twitter: ProtonMail
       img: protonmail.png
       tfa: No
 
+    - name: Riseup Mail
+      url: https://mail.riseup.net
+      twitter: riseupnet
+      img: riseup.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.riseup.net/en/email/webmail/2factorauth
+
     - name: Yahoo Mail
-      url: https://www.mail.yahoo.com/
+      url: https://mail.yahoo.com/
       img: yahoomail.png
       tfa: Yes
       sms: Yes

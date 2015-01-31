@@ -1,4 +1,4 @@
-<div class="ui fixed transparent inverted teal main menu">
+<div class="ui inverted teal main menu">
     <div class="menu">
         <div class="right menu">
             <a href="{{ site.repo }}" class="item">
@@ -20,12 +20,19 @@
         <div class="ui dropdown item">
             Categories <i class="dropdown icon"></i>
             <div class="menu">
-                {% for section in site.data.main.sections %}
-                <a href="#{{ section.id }}" class="item">
-                    <i class="{{ section.icon }} icon"></i>
-                    {{ section.title }}
-                </a>
-                {% endfor %}
+              {% for section in site.data.main.sections %}
+                {% if forloop.first %}
+                  <a href="#" class="item">
+                      <i class="{{ section.icon }} icon"></i>
+                      {{ section.title }}
+                  </a>
+                {% else %}
+                  <a href="#{{ section.id }}" class="item">
+                      <i class="{{ section.icon }} icon"></i>
+                      {{ section.title }}
+                  </a>
+                {% endif %}
+              {% endfor %}
             </div>
         </div>
     {% endif %}

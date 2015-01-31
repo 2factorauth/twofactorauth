@@ -20,7 +20,7 @@ websites:
       img: eso.png
       tfa: Yes
       email: Yes
-      doc: http://twofactorauth.org/notes/eso/
+      doc: /notes/eso/
 
     - name: Enjin
       url: http://www.enjin.com/
@@ -46,13 +46,20 @@ websites:
       software: Yes
       doc: http://www.garena.com/account/
       exceptions:
-          text: "A mobile phone and Garena account level 3 or higher is required for 2FA."
+          text: "As of September 29th 2014, new user enrollment for 2FA is broken. A mobile phone and Garena account level 3 or higher is required for 2FA."
 
     - name: GOG.com
       url: http://www.gog.com
       twitter: GOGcom
       img: gog.png
       tfa: No
+
+    - name: GREE
+      url: http://product.gree.net/
+      img: gree.png
+      tfa: Yes
+      software: Yes
+      doc: /notes/gree/
 
     - name: Guild Wars 2
       url: https://www.guildwars2.com
@@ -78,7 +85,7 @@ websites:
       status: http://forums.na.leagueoflegends.com/board/showthread.php?p=45603580#45603580
 
     - name: Mojang
-      url: http://mojang.com
+      url: https://mojang.com/
       twitter: MojangSupport
       img: mojang.png
       tfa: No
@@ -91,6 +98,11 @@ websites:
       sms: Yes
       doc: http://help.ea.com/en/article/origin-login-verification-information/
 
+    - name: Playstation Network
+      url: http://playstation.com/psn/
+      twitter: AskPlayStation
+      img: psn.png
+      tfa: No
 
     - name: RuneScape
       url: http://www.runescape.com/
