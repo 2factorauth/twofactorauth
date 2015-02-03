@@ -95,10 +95,11 @@ providers:
     phone: Yes
     software: Yes
 
-  - name: Protectimus
+- name: Protectimus
     url: https://www.protectimus.com
     img: protectimus.png
-    sms: Yes
+    tfa: Yes
+    phone: Yes
     software: Yes
     email: Yes
     hardware: Yes
