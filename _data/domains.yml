@@ -59,7 +59,7 @@ websites:
       twitter: DomainDotCom
       img: domaindotcom.png
       tfa: no
-      
+
     - name: domainFACTORY
       url: http://www.df.eu
       img: domainfactory.png
@@ -93,7 +93,7 @@ websites:
       sms: Yes
       software: Yes
       exceptions:
-          text: "Only protects certain operations like password changes and domain transfers."
+      text: "Only protects certain operations like password changes and domain transfers."
       doc: http://dynadot.com/domain/security.html
 
     - name: easyDNS
@@ -153,6 +153,15 @@ websites:
       tfa: Yes
       software: Yes
       doc: /notes/internetbs/
+
+    - name: InterNetworX (INWX)
+      url: https://www.inwx.de/en/
+      img: internetworx.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.inwx.de/en/offer/mobiletan
+      exceptions:
+          text: "Via Google Authenticator only"
 
     - name: iWantMyName
       url: https://iwantmyname.com/
