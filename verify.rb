@@ -9,7 +9,7 @@ begin
       puts "<------------ ERROR ------------>\n"
     end
     puts "#{$output}. #{msg}"
-    
+
   end
 
   # Load each section, check for errors such as invalid syntax
@@ -30,7 +30,7 @@ begin
       unless FastImage.size(image) == image_dimensions
         error("#{image} is not #{image_dimensions.join("x")}")
       end
-          
+
       ext = ".png"
       unless File.extname(image) == ext
         error("#{image} is not #{ext}")
@@ -50,7 +50,7 @@ begin
     unless FastImage.size(pimage) == image_dimensions
       error("#{pimage} is not #{image_dimensions.join("x")}")
     end
-          
+
     ext = ".png"
     unless File.extname(pimage) == ext
       error("#{pimage} is not #{ext}")

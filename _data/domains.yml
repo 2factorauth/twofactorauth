@@ -60,6 +60,12 @@ websites:
       img: domaindotcom.png
       tfa: no
 
+    - name: domainFACTORY
+      url: http://www.df.eu
+      img: domainfactory.png
+      twitter: domainfactory
+      tfa: No
+
     - name: DomainsAtCost
       url: https://www.domainsatcost.ca/
       twitter: domainsatcost
@@ -158,6 +164,13 @@ websites:
       software: Yes
       doc: /notes/internetbs/
 
+    - name: InterNetworX (INWX)
+      url: https://www.inwx.de/en/
+      img: internetworx.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.inwx.de/en/offer/mobiletan
+
     - name: iWantMyName
       url: https://iwantmyname.com/
       img: iwantmyname.png
@@ -205,7 +218,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://www.name.com/services/namesafe
+      doc: https://www.name.com/services/two-step-verification
 
     - name: Namecheap
       url: https://www.namecheap.com/
