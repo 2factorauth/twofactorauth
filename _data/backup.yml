@@ -6,6 +6,16 @@ websites:
     img: aerofs.png
     doc: https://blog.aerofs.com/two-factor-authentication-for-hybrid-and-private-cloud/
 
+  - name: Apple iCloud
+    url: https://www.icloud.com
+    img: icloud.png
+    tfa: Yes
+    sms: Yes
+    software: Yes
+    exceptions:
+        text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
+    doc: http://support.apple.com/kb/ht5570
+
   - name: Backblaze
     url: http://www.backblaze.com/
     twitter: backblaze
@@ -75,16 +85,6 @@ websites:
     software: Yes
     hardware: Yes
     doc: http://www.google.com/intl/en-US/landing/2step/features.html
-
-  - name: iCloud
-    url: https://www.icloud.com
-    img: icloud.png
-    tfa: Yes
-    sms: Yes
-    software: Yes
-    exceptions:
-        text: "SMS only available on select providers."
-    doc: http://support.apple.com/kb/ht5570
 
   - name: IDrive
     url: https://www.idrive.com
