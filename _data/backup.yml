@@ -115,10 +115,11 @@ websites:
 
   - name: Revert
     url: https://revert.io
-    twitter: revert_io
     img: revert.png
-    tfa: No
-    status: https://twitter.com/revert_io/status/541650096727662592
+    tfa: Yes
+    sms: Yes
+    software: Yes
+    doc: https://revert.io/blog/how-to-enable-two-factor-authentication/
 
   - name: SmartBox
     url: http://www.panterranetworks.com/SmartBox/index.php
