@@ -92,11 +92,8 @@ websites:
     - name: OVH
       url: http://www.ovh.com/
       img: ovh.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-        text: "2FA is only available for the customers who registered on the French version of the website."
-      doc: http://www.ovh.com/us/about-us/security.xml#double-authentification
+      tfa: No
+      twitter: ovh_support_en
 
     - name: Rackspace
       url: https://www.rackspace.com/
