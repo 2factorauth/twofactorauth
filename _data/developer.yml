@@ -23,6 +23,12 @@ websites:
       hardware: Yes
       doc: https://atechmedia.com/blog/general/launches/two-factor-authentication
 
+    - name: Balsamiq
+      url: http://balsamiq.com
+      twitter: balsamiq
+      img: balsamiq.png
+      tfa: No
+
     - name: Bitbucket
       url: https://bitbucket.org
       twitter: bitbucket
@@ -130,6 +136,12 @@ websites:
       url: https://newrelic.com
       twitter: newrelic
       img: newrelic.png
+      tfa: No
+
+    - name: Pivotal Tracker
+      url: https://www.pivotaltracker.com
+      twitter: pivotaltracker
+      img: pivotaltracker.png
       tfa: No
 
     - name: PythonAnywhere
