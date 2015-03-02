@@ -20,6 +20,13 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://www.dome9.com/overview/strong-2-factor-authentication
+      
+    - name: FoxVPN
+      url: https://www.foxvpn.net/
+      img: foxvpn.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.foxvpn.net/help/enable-two-factor-authentication/
 
     - name: GeoTrust
       url: http://www.geotrust.com/
