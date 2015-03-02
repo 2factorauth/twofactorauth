@@ -95,6 +95,15 @@ websites:
       sms: Yes
       doc: https://help.yahoo.com/kb/SLN5013.html
 
+    - name: Yandex.Mail
+      url: https://mail.yandex.com/
+      img: yandexmail.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+        text: "SMS-capable phone required for initial setup."
+      doc: http://help.yandex.com/passport/authorization/twofa.xml
+
     - name: Zoho Mail
       url: https://www.zoho.com/mail/
       img: zoho.png
