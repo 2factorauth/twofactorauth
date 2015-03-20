@@ -82,9 +82,10 @@ websites:
     - name: Dyn
       url: http://dyn.com/
       img: dyn.png
-      twitter: dyn
-      tfa: No
-      status: https://twitter.com/kelly_crehan/status/451460284931379200
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.dyn.com/2-factor-authentication/
 
     - name: Dynadot
       url: http://dynadot.com/
