@@ -6,13 +6,15 @@ useful to read up on the Yaml syntax.
 
 To add a new site, go to the [data files](_data/) and get familiar with how it
 is setup. There is a section and coresponding file for each Category. Site icons
-are stored in folders corresponding to each category.
+are stored in folders corresponding to each of those categories in their own 
+[folder](img/).
 
 ## Guidelines
 
 1. **Don't break the build**: We have a simple continuous integration system
    setup with [Travis][travis]. If your pull request doesn't pass, it won't be
-   merged.
+   merged. Travis will only check your changes after you submit a pull request.
+   If you want to test locally, instructions are listed below. Keep reading!
 2. **Use a Nice Icon**: The icon must be have a resolution of 32x32. PNG is the
    preffered format. If possible, please also run the image through an optimizing 
    utility such as OptiPNG before committing it to the repo.
