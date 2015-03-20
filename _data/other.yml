@@ -27,12 +27,11 @@ websites:
       doc: https://kb.meraki.com/knowledge_base/log-in-security-configuring-account-and-password-policies-for-dashboard-administrators
 
     - name: Clio
-    - url: https://goclio.com
-    - img: clio.png
-    - twitter: goclio
-    - tfa: Yes
-    - email: Yes
-    - doc: https://support.goclio.com/hc/en-us/articles/203184210-Two-Factor-Authentication
+      url: https://goclio.com
+      img: clio.png
+      tfa: Yes
+      email: Yes
+      doc: https://support.goclio.com/hc/en-us/articles/203184210-Two-Factor-Authentication
 
     - name: Clipper
       url: https://www.clippercard.com
@@ -63,6 +62,7 @@ websites:
       img: ifttt.png
       twitter: IFTTT
       tfa: No
+      status: https://twitter.com/IFTTT/status/577883880478224385
       
     - name: Formstack
       url: https://www.formstack.com/
