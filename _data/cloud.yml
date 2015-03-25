@@ -7,6 +7,14 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://aws.amazon.com/iam/details/mfa/
+      
+    - name: Linode
+      url: https://www.linode.com/
+      tfa: Yes
+      sms: No
+      software: Yes
+      hardware: No
+      doc: https://www.linode.com/docs/security/linode-manager-security-controls
 
     - name: appFog
       url: https://www.appfog.com/
