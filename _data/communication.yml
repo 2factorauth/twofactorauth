@@ -87,7 +87,9 @@ websites:
       url: http://www.slack.com
       twitter: SlackHQ
       img: slack.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://slack.zendesk.com/hc/en-us/articles/204509068-Enabling-two-factor-authentication
 
     - name: ToutApp
       url: http://www1.toutapp.com/
