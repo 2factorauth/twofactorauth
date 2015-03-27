@@ -173,6 +173,8 @@ websites:
       img: lloydsbank.png
       tfa: Yes
       phone: Yes
+      exceptions:
+            text: "Only for adding a new payee to your account, not for logging in to online banking."
       doc: http://www.lloydsbank.com/help-guidance/security/authentication-procedure.asp
 
     - name: Natwest UK
