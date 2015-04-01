@@ -15,13 +15,6 @@ providers:
     img: authenticatorplus.png
     software: Yes
 
-  - name: Azure Multi-Factor Authentication
-    url: http://azure.microsoft.com/en-us/services/multi-factor-authentication/
-    img: azure.png
-    phone: Yes
-    sms: Yes
-    software: Yes
-
   - name: Authentify Inc
     url: http://www.Authentify.com
     img: authentify.png
@@ -37,6 +30,18 @@ providers:
     phone: Yes
     software: Yes
     hardware: Yes
+
+  - name: Azure Multi-Factor Authentication
+    url: http://azure.microsoft.com/en-us/services/multi-factor-authentication/
+    img: azure.png
+    phone: Yes
+    sms: Yes
+    software: Yes
+    
+  - name: BankID
+    url: https://bankid.com/
+    img: bankid.png
+    software: Yes
 
   - name: Clef
     url: https://getclef.com
