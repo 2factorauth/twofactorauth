@@ -82,7 +82,10 @@ websites:
       tfa: No
 
     - name: Venmo
-      img: venmo.png
-      twitter: venmo
-      tfa: No
       url: https://venmo.com
+      twitter: venmo
+      img: venmo.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.venmo.com/customer/portal/articles/1910230-confirm-my-identity-on-sign-in-why
