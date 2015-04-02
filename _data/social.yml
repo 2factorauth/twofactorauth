@@ -130,3 +130,10 @@ websites:
       exceptions:
           text: "SMS-capable phone required."
       doc: http://en.support.wordpress.com/security/two-step-authentication/
+      
+    - name: zocle.com
+      url: https://zocle.com
+      img: logo.php
+      tfa: Yes
+      sms: Yes
+      doc: http://university.zocle.com/2015/03/30/new-security-feature-two-step-verification/
