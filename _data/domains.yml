@@ -171,9 +171,12 @@ websites:
 
     - name: Loopia
       url: https://www.loopia.se/
-      twitter: loopia
       img: loopia.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: http://blogg.loopia.se/2015/03/16/nu-kan-du-logga-in-med-tvafaktorsautentiering-hos-loopia-genom-bankid/
+      exceptions:
+          text: "TFA only available for Swedish citizens"
 
     - name: MarkMonitor
       url: https://www.markmonitor.com
