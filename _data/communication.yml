@@ -52,6 +52,13 @@ websites:
       img: mailgun.png
       tfa: No
 
+    - name: Maxemail
+      url: https://maxemail.emailcenteruk.com/
+      img: maxemail.png
+      tfa: Yes
+      hardware: Yes
+      doc: http://www.emailcenteruk.com/software/security-collaboration-2/
+
     - name: Salesforce
       url: http://www.salesforce.com
       img: salesforce.png
