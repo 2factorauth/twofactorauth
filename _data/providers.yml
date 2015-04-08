@@ -15,13 +15,6 @@ providers:
     img: authenticatorplus.png
     software: Yes
 
-  - name: Azure Multi-Factor Authentication
-    url: http://azure.microsoft.com/en-us/services/multi-factor-authentication/
-    img: azure.png
-    phone: Yes
-    sms: Yes
-    software: Yes
-
   - name: Authentify Inc
     url: http://www.Authentify.com
     img: authentify.png
@@ -37,6 +30,18 @@ providers:
     phone: Yes
     software: Yes
     hardware: Yes
+
+  - name: Azure Multi-Factor Authentication
+    url: http://azure.microsoft.com/en-us/services/multi-factor-authentication/
+    img: azure.png
+    phone: Yes
+    sms: Yes
+    software: Yes
+    
+  - name: BankID
+    url: https://bankid.com/
+    img: bankid.png
+    software: Yes
 
   - name: Clef
     url: https://getclef.com
@@ -74,6 +79,11 @@ providers:
     img: google.png
     software: Yes
 
+  - name: ID Opener
+    url: https://idopener.hydrantid.com/
+    img: idopener.png
+    software: Yes
+
   - name: Infobip
     url: https://infobip.com/
     img: infobip.png
@@ -101,6 +111,19 @@ providers:
     sms: Yes
     software: Yes
     hardware: Yes
+    
+  - name: Nexmo
+    url: https://www.nexmo.com/product/verify/
+    img: nexmo.png
+    sms: Yes
+    phone: Yes
+
+  - name: Ping Identity
+    url: https://www.pingidentity.com/en/products/pingid.html
+    img: pingidentity.png
+    phone: Yes
+    sms: Yes
+    software: Yes
 
   - name: PortalGuard
     url: http://www.portalguard.com
@@ -116,6 +139,13 @@ providers:
     software: Yes
     email: Yes
     hardware: Yes
+
+  - name: RingCaptcha
+    url: https://ringcaptcha.com/
+    img: ringcaptcha.png
+    sms: Yes
+    phone: Yes
+    doc: https://my.ringcaptcha.com/docs
 
   - name: Rublon
     url: https://www.rublon.com/

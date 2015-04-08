@@ -1,5 +1,5 @@
 language: ruby
-install: bundle install
+install: travis_wait bundle install
 rvm:
     - 2.1.1
 notifications:

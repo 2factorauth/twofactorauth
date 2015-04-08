@@ -38,6 +38,7 @@ websites:
       img: directnic.png
       tfa: Yes
       software: Yes
+      hardware: Yes
       doc: https://directnic.com/knowledge/article/137:how+do+i+set+up+two-factor+authentication%3F
 
     - name: DNS Made Easy
@@ -78,13 +79,14 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://www.domeny.tv/en/two-factor-authentication
-
+      
     - name: Dyn
       url: http://dyn.com/
       img: dyn.png
-      twitter: dyn
-      tfa: No
-      status: https://twitter.com/kelly_crehan/status/451460284931379200
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.dyn.com/2-factor-authentication/
 
     - name: Dynadot
       url: http://dynadot.com/
@@ -170,9 +172,12 @@ websites:
 
     - name: Loopia
       url: https://www.loopia.se/
-      twitter: loopia
       img: loopia.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: http://blogg.loopia.se/2015/03/16/nu-kan-du-logga-in-med-tvafaktorsautentiering-hos-loopia-genom-bankid/
+      exceptions:
+          text: "TFA only available for Swedish citizens"
 
     - name: MarkMonitor
       url: https://www.markmonitor.com
@@ -229,6 +234,12 @@ websites:
       url: http://www.namespro.ca/
       twitter: namespro
       img: namespro.png
+      tfa: No
+
+    - name: Netfirms
+      url: https://www.netfirms.com
+      twitter: netfirms
+      img: netfirms.png
       tfa: No
 
     - name: Netim
