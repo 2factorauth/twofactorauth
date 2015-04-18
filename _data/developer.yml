@@ -1,13 +1,13 @@
 websites:
     - name: Aha!
-      url: http://aha.io
+      url: https://www.aha.io/
       img: aha.png
       tfa: Yes
       sms: Yes
       phone: Yes
       hardware: Yes
       software: Yes
-      doc: http://support.aha.io/hc/en-us/articles/202000967-Two-factor-authentication-2FA-user-set-up
+      doc: http://support.aha.io/hc/en-us/articles/202000957-Add-two-factor-authentication-2FA-
 
     - name: Airbrake
       url: https://airbrake.io
@@ -16,7 +16,7 @@ websites:
       tfa: No
 
     - name: aTech Media
-      url: http://atechmedia.com
+      url: https://atechmedia.com
       img: atechmedia.png
       tfa: Yes
       software: Yes
@@ -24,7 +24,7 @@ websites:
       doc: https://atechmedia.com/blog/general/launches/two-factor-authentication
 
     - name: Balsamiq
-      url: http://balsamiq.com
+      url: https://balsamiq.com
       twitter: balsamiq
       img: balsamiq.png
       tfa: No
@@ -43,6 +43,15 @@ websites:
       doc: https://docs.c9.io/faq_general.html#can-i-use-two-factor-authentication-with-cloud9?
       exceptions:
           text: "TFA available by signing up using GitHub"
+
+    - name: Codeanywhere
+      url: https://codeanywhere.com
+      img: codeanywhere.png
+      tfa: Yes
+      sms: Yes
+      doc: https://blog.codeanywhere.com/codeanywhere-now-offers-two-factor-authentication/
+      exceptions:
+          text: "TFA only available on paid account tiers at $20 or more per month."
 
     - name: Code Climate
       url: https://codeclimate.com
@@ -131,6 +140,15 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.mapbox.com/help/two-step-verification/
+
+    - name: MongoDB MMS
+      url: https://mms.mongodb.com
+      img: mongodbmms.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      phone: Yes
+      doc: https://docs.mms.mongodb.com/core/two-factor-authentication/
 
     - name: New Relic
       url: https://newrelic.com
