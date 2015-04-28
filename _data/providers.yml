@@ -261,15 +261,14 @@ providers:
     sms: Yes
     software: Yes
     url: https://www.vasco.com/
-	
+
   - name: VerIDial
-    hardware: No
+    url: https://www.veridial.co.uk  
     img: veridial.png
-    email: Yes
-    phone: Yes
     sms: Yes
+    email: Yes
     software: Yes
-    url: https://www.veridial.co.uk
+    phone: Yes
 
   - name: WiKID Systems
     url:  https://www.wikidsystems.com
