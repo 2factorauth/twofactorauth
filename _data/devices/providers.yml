@@ -78,6 +78,12 @@ providers:
 #    otp: Yes
 #    u2f: Yes
 
+  - name: DigiFlak
+    url: https://www.digiflak.com
+    img: digiflak.png
+    hardware: Yes
+    u2f: Yes
+
   - name: Nitrokey
     url: https://www.nitrokey.com
     img: nitrokey.png
