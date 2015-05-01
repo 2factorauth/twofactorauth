@@ -126,6 +126,15 @@ providers:
     phone: Yes
     software: Yes
 
+  - name: privacyIDEA
+    url: https://www.privacyidea.org
+    img: privacyidea.png
+    sms: Yes
+    software: Yes
+    hardware: Yes
+    email: Yes
+    doc: http://privacyidea.readthedocs.org
+
   - name: Protectimus
     url: https://www.protectimus.com
     img: protectimus.png
