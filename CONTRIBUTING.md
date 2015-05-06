@@ -41,7 +41,7 @@ everything for you.
    $ bundle exec rake
    ```
 
-   However, this can take a while as there are roughly 800 links that it checks.
+   However, this can take a while as there are roughly 900 links that it checks.
    If you just wish to test your YAML changes, you can run:
 
    ```bash
