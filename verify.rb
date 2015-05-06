@@ -2,6 +2,7 @@
 require 'yaml'
 require 'fastimage'
 $output=0;
+$image_error_output=0;
 $max_size = 2500
 $max_size_ignore = false
 $error_ignore = false
@@ -19,7 +20,9 @@ begin
     if ($max_size_ignore == false)
       $output=$output+1;
     end
-    puts "#{$output}. #{msg}"
+      $image_error_output=$image_error_output+1;
+
+    puts "#{$image_error_output}. #{msg}"
   end
 
   def check_image(image)
