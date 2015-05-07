@@ -97,17 +97,25 @@ websites:
       software: Yes
       doc: https://slack.zendesk.com/hc/en-us/articles/204509068-Enabling-two-factor-authentication
 
-    - name: SparkPost
-      url: https://sparkpost.com/
-      img: sparkpost.png
+    - name: Telegram
+      url: https://telegram.org/
+      twitter: telegram
+      img: telegram.png
       tfa: Yes
-      software: Yes
-      doc: https://support.sparkpost.com/customer/portal/articles/1948449
+      sms: Yes
+      phone: Yes
+      doc: https://telegram.org/blog/sessions-and-2-step-verification
 
     - name: ToutApp
       url: http://www1.toutapp.com/
       twitter: toutapp
       img: toutapp.png
+      tfa: No
+
+    - name: WhatsApp
+      url: https://www.whatsapp.com/
+      twitter: whatsapp
+      img: whatsapp.png
       tfa: No
 
     - name: Yammer
