@@ -36,8 +36,12 @@ websites:
       url: http://www.eveonline.com/
       twitter: EveOnline
       img: eveonline.png
-      tfa: No
-      status: https://youtu.be/sOGnPAbHKDk?t=36m52s
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: https://community.eveonline.com/news/dev-blogs/two-factor-authentication/
+      exceptions:
+          text: "This does not prevent people from logging into the game client by circumventing the launcher. That is a legacy issue that we were unable to fix this time around."
 
     - name: Garena Online
       url: http://garena.com
