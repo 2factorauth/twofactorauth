@@ -56,9 +56,9 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      hardware: No
+      hardware: Yes
       exceptions:
-          text: "2FA only available in the US and Canada. SMS only available in the US. Hardware-based 2FA is no longer available."
+          text: "2FA is only available in the United States, Canada, United Kingdom, Germany, Austria and Australia."
       doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
 
     - name: Skrill
@@ -72,6 +72,7 @@ websites:
       img: stripe.png
       url: https://www.stripe.com/
       tfa: Yes
+      sms: Yes
       software: Yes
       doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
 
@@ -83,9 +84,8 @@ websites:
 
     - name: Venmo
       url: https://venmo.com
-      twitter: venmo
       img: venmo.png
       tfa: Yes
       sms: Yes
-      software: Yes
+      email: Yes
       doc: https://help.venmo.com/customer/portal/articles/1910230-confirm-my-identity-on-sign-in-why

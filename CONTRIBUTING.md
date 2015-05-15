@@ -15,7 +15,7 @@ are stored in folders corresponding to each of those categories in their own
    setup with [Travis][travis]. If your pull request doesn't pass, it won't be
    merged. Travis will only check your changes after you submit a pull request.
    If you want to test locally, instructions are listed below. Keep reading!
-2. **Use a Nice Icon**: The icon must be have a resolution of 32x32. PNG is the
+2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
    preffered format. If possible, please also run the image through an optimizing 
    utility such as OptiPNG before committing it to the repo.
 3. **Be Awesome**: You need to be awesome. That is all.
@@ -41,7 +41,7 @@ everything for you.
    $ bundle exec rake
    ```
 
-   However, this can take a while as there are roughly 800 links that it checks.
+   However, this can take a while as there are roughly 900 links that it checks.
    If you just wish to test your YAML changes, you can run:
 
    ```bash
