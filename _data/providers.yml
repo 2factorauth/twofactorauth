@@ -51,10 +51,8 @@ providers:
   - name: Cognalys Inc
     url: https://www.cognalys.com
     img: cognalys.png
-    sms: No
     phone: Yes
     software: Yes
-    hardware: No
 
   - name: CryptoPhoto
     url: https://www.cryptophoto.com
@@ -68,6 +66,13 @@ providers:
     phone: Yes
     sms: Yes
     software: Yes
+
+  - name: Exostar
+    url: http://www.exostar.com
+    img: exostar.png
+    phone: Yes
+    sms: Yes
+    hardware: Yes
 
   - name: FreeOTP
     url: https://fedorahosted.org/freeotp/
@@ -127,7 +132,6 @@ providers:
   - name: PortalGuard
     url: http://www.portalguard.com
     img: portalguard.png
-    tfa: Yes
     phone: Yes
     software: Yes
 
@@ -199,8 +203,6 @@ providers:
   - name: SecSign
     url: https://www.secsign.com/
     img: sec-sign.png
-    tfa: Yes
-    sms: No
     software: Yes
 
   - name: SmartSign
@@ -286,7 +288,6 @@ providers:
   - name: WiKID Systems
     url:  https://www.wikidsystems.com
     img:  wikid.png
-    hardware: No
     software: Yes
 
   - name: WWPass
