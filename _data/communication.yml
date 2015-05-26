@@ -104,10 +104,25 @@ websites:
       software: Yes
       doc: https://support.sparkpost.com/customer/portal/articles/1948449
 
+    - name: Telegram
+      url: https://telegram.org/
+      twitter: telegram
+      img: telegram.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://telegram.org/blog/sessions-and-2-step-verification
+
     - name: ToutApp
       url: http://www1.toutapp.com/
       twitter: toutapp
       img: toutapp.png
+      tfa: No
+
+    - name: WhatsApp
+      url: https://www.whatsapp.com/
+      twitter: whatsapp
+      img: whatsapp.png
       tfa: No
 
     - name: Yammer
