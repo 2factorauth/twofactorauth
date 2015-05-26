@@ -37,7 +37,7 @@ providers:
     phone: Yes
     sms: Yes
     software: Yes
-    
+
   - name: BankID
     url: https://bankid.com/
     img: bankid.png
@@ -105,7 +105,7 @@ providers:
     sms: Yes
     software: Yes
     hardware: Yes
-    
+
   - name: Messente
     url: https://messente.com/verify/
     img: messente.png
@@ -116,6 +116,11 @@ providers:
     img: nexmo.png
     sms: Yes
     phone: Yes
+
+  - name: PassByME
+    url: https://www.passbyme.com
+    img: passbyme.png
+    software: Yes
 
   - name: Ping Identity
     url: https://www.pingidentity.com/en/products/pingid.html
@@ -277,7 +282,7 @@ providers:
     url: https://www.vasco.com/
 
   - name: VerIDial
-    url: https://www.veridial.co.uk  
+    url: https://www.veridial.co.uk
     img: veridial.png
     sms: Yes
     email: Yes
