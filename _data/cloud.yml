@@ -99,6 +99,14 @@ websites:
       twitter: openshift
       img: openshift.png
       tfa: No
+
+    - name: Packet
+      url: https://www.packet.net/
+      twitter: packethost
+      img: packet.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.packet.net/help/kb/account-management-and-billing/how-do-i-enable-two-factor-authentication-/
     
     - name: Rackspace
       url: https://www.rackspace.com/
