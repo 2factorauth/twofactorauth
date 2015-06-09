@@ -205,6 +205,12 @@ providers:
     hardware: Yes
     software: Yes
 
+  - name: SecurePush
+    img: securepush.png
+    sms: true
+    software: true
+    url: "http://www.securepush.com/"
+
   - name: SecSign
     url: https://www.secsign.com/
     img: sec-sign.png
