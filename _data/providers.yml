@@ -1,308 +1,312 @@
-#
-# Configuration for the 2FA providers.
-#
-
-providers:
-  - name: AlterEgo
-    url: https://alteregoapp.com/
+--- 
+providers: 
+  - 
+    hardware: true
     img: alterego.png
-    sms: Yes
-    software: Yes
-    hardware: Yes
-
-  - name: Authenticator Plus
-    url: http://authenticatorplus.com
+    name: AlterEgo
+    sms: true
+    software: true
+    url: "https://alteregoapp.com/"
+  - 
     img: authenticatorplus.png
-    software: Yes
-
-  - name: Authentify Inc
-    url: http://www.Authentify.com
+    name: "Authenticator Plus"
+    software: true
+    url: "http://authenticatorplus.com"
+  - 
+    hardware: true
     img: authentify.png
-    hardware: Yes
-    phone: Yes
-    sms: Yes
-    software: Yes
-
-  - name: Authy
-    url: https://authy.com
+    name: "Authentify Inc"
+    phone: true
+    sms: true
+    software: true
+    url: "http://www.Authentify.com"
+  - 
+    hardware: true
     img: authy.png
-    sms: Yes
-    phone: Yes
-    software: Yes
-    hardware: Yes
-
-  - name: Azure Multi-Factor Authentication
-    url: http://azure.microsoft.com/en-us/services/multi-factor-authentication/
+    name: Authy
+    phone: true
+    sms: true
+    software: true
+    url: "https://authy.com"
+  - 
     img: azure.png
-    phone: Yes
-    sms: Yes
-    software: Yes
-
-  - name: BankID
-    url: https://bankid.com/
+    name: "Azure Multi-Factor Authentication"
+    phone: true
+    sms: true
+    software: true
+    url: "http://azure.microsoft.com/en-us/services/multi-factor-authentication/"
+  - 
     img: bankid.png
-    software: Yes
-
-  - name: Clef
-    url: https://getclef.com
+    name: BankID
+    software: true
+    url: "https://bankid.com/"
+  - 
     img: clef.png
-    software: Yes
-
-  - name: Cognalys Inc
-    url: https://www.cognalys.com
+    name: Clef
+    software: true
+    url: "https://getclef.com"
+  - 
     img: cognalys.png
-    phone: Yes
-    software: Yes
-
-  - name: CryptoPhoto
-    url: https://www.cryptophoto.com
+    name: "Cognalys Inc"
+    phone: true
+    software: true
+    url: "https://www.cognalys.com"
+  - 
     img: cryptophoto.png
-    software: Yes
-
-  - name: Duo Security
-    url: https://www.duosecurity.com
+    name: CryptoPhoto
+    software: true
+    url: "https://www.cryptophoto.com"
+  - 
+    hardware: true
     img: duo.png
-    hardware: Yes
-    phone: Yes
-    sms: Yes
-    software: Yes
-
-  - name: Exostar
-    url: http://www.exostar.com
+    name: "Duo Security"
+    phone: true
+    sms: true
+    software: true
+    url: "https://www.duosecurity.com"
+  - 
+    hardware: true
     img: exostar.png
-    phone: Yes
-    sms: Yes
-    hardware: Yes
-
-  - name: FreeOTP
-    url: https://fedorahosted.org/freeotp/
+    name: Exostar
+    phone: true
+    sms: true
+    url: "http://www.exostar.com"
+  - 
     img: freeotp.png
-    software: Yes
-
-  - name: Google Authenticator
-    url: http://www.google.com/landing/2step/
+    name: FreeOTP
+    software: true
+    url: "https://fedorahosted.org/freeotp/"
+  - 
     img: google.png
-    software: Yes
-
-  - name: ID Opener
-    url: https://idopener.hydrantid.com/
+    name: "Google Authenticator"
+    software: true
+    url: "http://www.google.com/landing/2step/"
+  - 
     img: idopener.png
-    software: Yes
-
-  - name: Latch
-    url: https://latch.elevenpaths.com
+    name: "ID Opener"
+    software: true
+    url: "https://idopener.hydrantid.com/"
+  - 
     img: latch.png
-    software: Yes
-
-  - name: LaunchKey
-    url: https://launchkey.com/
+    name: Latch
+    software: true
+    url: "https://latch.elevenpaths.com"
+  - 
     img: launchkey.png
-    software: Yes
-
-  - name: LoginTC
-    url: https://www.logintc.com/
+    name: LaunchKey
+    software: true
+    url: "https://launchkey.com/"
+  - 
     img: logintc.png
-    software: Yes
-
-  - name: MePIN
-    url: http://www.mepin.com
+    name: LoginTC
+    software: true
+    url: "https://www.logintc.com/"
+  - 
+    hardware: true
     img: mepin.png
-    sms: Yes
-    software: Yes
-    hardware: Yes
-
-  - name: Messente
-    url: https://messente.com/verify/
+    name: MePIN
+    sms: true
+    software: true
+    url: "http://www.mepin.com"
+  - 
     img: messente.png
-    sms: Yes
-
-  - name: Nexmo
-    url: https://www.nexmo.com/product/verify/
+    name: Messente
+    sms: true
+    url: "https://messente.com/verify/"
+  - 
     img: nexmo.png
-    sms: Yes
-    phone: Yes
-
-  - name: PassByME
-    url: https://www.passbyme.com
+    name: Nexmo
+    phone: true
+    sms: true
+    url: "https://www.nexmo.com/product/verify/"
+  - 
     img: passbyme.png
-    software: Yes
-
-  - name: Ping Identity
-    url: https://www.pingidentity.com/en/products/pingid.html
+    name: PassByME
+    software: true
+    url: "https://www.passbyme.com"
+  - 
     img: pingidentity.png
-    phone: Yes
-    sms: Yes
-    software: Yes
-
-  - name: PortalGuard
-    url: http://www.portalguard.com
+    name: "Ping Identity"
+    phone: true
+    sms: true
+    software: true
+    url: "https://www.pingidentity.com/en/products/pingid.html"
+  - 
     img: portalguard.png
-    phone: Yes
-    software: Yes
-
-  - name: privacyIDEA
-    url: https://www.privacyidea.org
+    name: PortalGuard
+    phone: true
+    software: true
+    url: "http://www.portalguard.com"
+  - 
+    doc: "http://privacyidea.readthedocs.org"
+    email: true
+    hardware: true
     img: privacyidea.png
-    sms: Yes
-    software: Yes
-    hardware: Yes
-    email: Yes
-    doc: http://privacyidea.readthedocs.org
-
-  - name: Protectimus
-    url: https://www.protectimus.com
+    name: privacyIDEA
+    sms: true
+    software: true
+    url: "https://www.privacyidea.org"
+  - 
+    email: true
+    hardware: true
     img: protectimus.png
-    sms: Yes
-    software: Yes
-    email: Yes
-    hardware: Yes
-
-  - name: RingCaptcha
-    url: https://ringcaptcha.com/
+    name: Protectimus
+    sms: true
+    software: true
+    url: "https://www.protectimus.com"
+  - 
+    doc: "https://my.ringcaptcha.com/docs"
     img: ringcaptcha.png
-    sms: Yes
-    phone: Yes
-    doc: https://my.ringcaptcha.com/docs
-
-  - name: Rublon
-    url: https://www.rublon.com/
+    name: RingCaptcha
+    phone: true
+    sms: true
+    url: "https://ringcaptcha.com/"
+  - 
+    email: true
     img: rublon.png
-    email: Yes
-    software: Yes
-
-  - name: SAASPASS
-    url: https://www.saaspass.com/
+    name: Rublon
+    software: true
+    url: "https://www.rublon.com/"
+  - 
+    doc: "https://www.saaspass/about.html"
     img: saaspass.png
-    software: Yes
-    doc: https://www.saaspass/about.html
-
-  - name: SAT Mobile ID
-    url: https://secureaccesstechnologies.com/
+    name: SAASPASS
+    software: true
+    url: "https://www.saaspass.com/"
+  - 
+    hardware: true
     img: sat.png
-    sms: Yes
-    phone: Yes
-    software: Yes
-    hardware: Yes
-
-  - name: SecureAuth
-    email: Yes
-    hardware: Yes
-    phone: Yes
+    name: "SAT Mobile ID"
+    phone: true
+    sms: true
+    software: true
+    url: "https://secureaccesstechnologies.com/"
+  - 
+    email: true
+    hardware: true
     img: secureauth.png
-    sms: Yes
-    software: Yes
-    url: http://www.secureauth.com/
-
-  - name: Securegate
-    url: http://www.securegate.io/
+    name: SecureAuth
+    phone: true
+    sms: true
+    software: true
+    url: "http://www.secureauth.com/"
+  - 
     img: securegate.png
-    sms: Yes
-    software: Yes
-
-  - name: SecurePass
-    url: http://www.secure-pass.net/
+    name: Securegate
+    sms: true
+    software: true
+    url: "http://www.securegate.io/"
+  - 
+    hardware: true
     img: securepass.png
-    hardware: Yes
-    software: Yes
-
-  - name: SecSign
-    url: https://www.secsign.com/
+    name: SecurePass
+    software: true
+    url: "http://www.secure-pass.net/"
+  - 
+    img: securepush.png
+    name: SecurePush
+    sms: true
+    software: true
+    url: "http://www.securepush.com/"
+  - 
     img: sec-sign.png
-    software: Yes
-
-  - name: SmartSign
-    url: https://smartsignsecurity.com/
+    name: SecSign
+    software: true
+    url: "https://www.secsign.com/"
+  - 
+    email: true
     img: smartsign.png
-    email: Yes
-    software: Yes
-
-  - name: Solidpass
-    url: http://www.solidpass.com
+    name: SmartSign
+    software: true
+    url: "https://smartsignsecurity.com/"
+  - 
+    hardware: true
     img: solidpass.png
-    hardware: Yes
-    sms: Yes
-    software: Yes
-
-  - name: SyferLock GridGuard
-    url: https://www.syferlock.com/
+    name: Solidpass
+    sms: true
+    software: true
+    url: "http://www.solidpass.com"
+  - 
+    email: true
     img: syferlock_gridguard.png
-    sms: Yes
-    email: Yes
-    software: Yes
-
-  - name: Symantec/Verisign VIP
-    url: https://idprotect.verisign.com/
-    email: Yes
+    name: "SyferLock GridGuard"
+    sms: true
+    software: true
+    url: "https://www.syferlock.com/"
+  - 
+    email: true
+    hardware: true
     img: symantec.png
-    hardware: yes
-    software: yes
-    sms: Yes
-    phone: Yes
-
-  - name: TeleSign
-    url: https://www.telesign.com
+    name: "Symantec/Verisign VIP"
+    phone: true
+    sms: true
+    software: true
+    url: "https://idprotect.verisign.com/"
+  - 
     img: telesign.png
-    phone: Yes
-    sms: Yes
-    software: Yes
-
-  - name: TextPower
-    url: http://www.textpower.com/public/solutions/security-authentication/
+    name: TeleSign
+    phone: true
+    sms: true
+    software: true
+    url: "https://www.telesign.com"
+  - 
     img: textpower.png
-    sms: Yes
-
-  - name: Totp.Me
-    url: http://www.totp.me/
+    name: TextPower
+    sms: true
+    url: "http://www.textpower.com/public/solutions/security-authentication/"
+  - 
     img: totpme.png
-    software: Yes
-
-  - name: Transakt
-    url: https://gettransakt.com/transakt/
+    name: Totp.Me
+    software: true
+    url: "http://www.totp.me/"
+  - 
     img: transakt.png
-    software: Yes
-
-  - name: Token2
-    url: https://token2.com
+    name: Transakt
+    software: true
+    url: "https://gettransakt.com/transakt/"
+  - 
+    hardware: true
     img: token2.png
-    software: Yes
-    hardware: Yes
-    sms: Yes
-
-  - name: Toopher
-    url: https://toopher.com
+    name: Token2
+    sms: true
+    software: true
+    url: "https://token2.com"
+  - 
     img: toopher.png
-    software: Yes
-    sms: Yes
-
-  - name: VASCO Data Security
-    hardware: Yes
+    name: Toopher
+    sms: true
+    software: true
+    url: "https://toopher.com"
+  - 
+    email: true
+    hardware: true
     img: vasco.png
-    email: Yes
-    phone: Yes
-    sms: Yes
-    software: Yes
-    url: https://www.vasco.com/
-
-  - name: VerIDial
-    url: https://www.veridial.co.uk
+    name: "VASCO Data Security"
+    phone: true
+    sms: true
+    software: true
+    url: "https://www.vasco.com/"
+  - 
+    email: true
     img: veridial.png
-    sms: Yes
-    email: Yes
-    phone: Yes
-
-  - name: WiKID Systems
-    url:  https://www.wikidsystems.com
-    img:  wikid.png
-    software: Yes
-
-  - name: WWPass
-    url:  https://www.WWPass.com
-    img:  wwpass.png
-    hardware: Yes
-    software: Yes
-
-  - name: Yubico
-    url: https://yubico.com
+    name: VerIDial
+    phone: true
+    sms: true
+    url: "https://www.veridial.co.uk"
+  - 
+    img: wikid.png
+    name: "WiKID Systems"
+    software: true
+    url: "https://www.wikidsystems.com"
+  - 
+    hardware: true
+    img: wwpass.png
+    name: WWPass
+    software: true
+    url: "https://www.WWPass.com"
+  - 
+    hardware: true
     img: yubico.png
-    hardware: Yes
-    software: Yes
+    name: Yubico
+    software: true
+    url: "https://yubico.com"
