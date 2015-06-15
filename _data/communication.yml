@@ -82,13 +82,15 @@ websites:
       software: Yes
       doc: http://app.sendloop.com/help/article/account-003/how-can-i-make-my-account-more-secure
 
-    - name: Skype (w/Microsoft Account)
+    - name: Skype (via Microsoft Account)
       url: https://www.skype.com
       img: skype.png
       tfa: Yes
       sms: Yes
       software: Yes
       doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
+      exceptions:
+            text: "Two-factor authentication is available only when logging in using Microsoft Account, not Skype's stand-alone account."
 
     - name: Slack
       url: https://slack.com/
