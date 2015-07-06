@@ -5,6 +5,14 @@ websites:
       img: amazon.png
       tfa: No
 
+    - name: Braintree
+      img: braintree.png
+      url: https://www.braintreepayments.com/
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://articles.braintreepayments.com/reference/security/two-factor-authentication
+
     - name: Buycraft
       url: http://buycraft.net
       img: buycraft.png
