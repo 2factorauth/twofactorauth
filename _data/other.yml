@@ -114,8 +114,11 @@ websites:
       url: https://mandrill.com/
       img: mandrill.png
       tfa: Yes
+      sms: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+          text: "SMS only available in the United States, the United Kingdom, Canada or some Caribbean islands."
       doc: http://help.mandrill.com/entries/57465557
 
     - name: Mixpanel
