@@ -35,7 +35,7 @@ websites:
     - name: Crazy Domains
       url: https://www.crazydomains.com
       img: crazydomains.png
-      tfa: no
+      tfa: No
       twitter: CrazyDomains
 
     - name: Directnic
@@ -64,7 +64,7 @@ websites:
       url: http://www.domain.com/
       twitter: DomainDotCom
       img: domaindotcom.png
-      tfa: no
+      tfa: No
 
     - name: domainFACTORY
       url: http://www.df.eu
@@ -304,6 +304,15 @@ websites:
       twitter: pointdns
       img: pointdns.png
       tfa: No
+
+    - name: Registro.br
+      url: https://registro.br
+      img: registrobr.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
+      
 
     - name: Register4Less
       url: https://register4less.com/
