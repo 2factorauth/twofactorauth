@@ -311,13 +311,11 @@ websites:
       tfa: Yes
       sms: No
       email: No
-      phone: Yes
+      phone: No
       hardware: Yes
       software: Yes
       doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
-      exceptions:
-        text: "Only for .br domain names"
-
+      
 
     - name: Register4Less
       url: https://register4less.com/
