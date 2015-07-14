@@ -305,6 +305,18 @@ websites:
       img: pointdns.png
       tfa: No
 
+    - name: Registro.br
+      url: https://registro.br
+      img: registrobr.png
+      tfa: Yes
+      sms: No
+      email: No
+      phone: No
+      hardware: Yes
+      software: Yes
+      doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
+      
+
     - name: Register4Less
       url: https://register4less.com/
       twitter: register4less
