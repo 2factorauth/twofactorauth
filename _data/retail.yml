@@ -31,6 +31,12 @@ websites:
           text: "eBay only supports 2FA in some countries."
       doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
 
+    - name: Element14
+      url: http://www.element14.com
+      img: element14.png
+      tfa: No
+      twitter: element14
+
     - name: Etsy
       url: http://www.etsy.com/
       img: etsy.png
