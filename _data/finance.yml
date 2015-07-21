@@ -59,6 +59,13 @@ websites:
       img: mint.png
       tfa: No
 
+    - name: Paychex
+      url: https://www.paychex.com
+      img: paychex.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+
     - name: Pocketsmith
       url: https://www.pocketsmith.com
       twitter: pocketsmith
@@ -66,6 +73,12 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.pocketsmith.com/blog/2014/07/18/2fa-orginal-merchant-and-other-updates
+
+    - name: Popmoney
+      url: https://www.popmoney.com
+      twitter: popmoney
+      img: popmoney.png
+      tfa: No
 
     - name: Quickbooks Online
       url: http://www.quickbooks.com
