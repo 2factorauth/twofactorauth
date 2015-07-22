@@ -55,6 +55,12 @@ websites:
       software: Yes
       hardware: Yes
 
+    - name: Globat
+      url: https://www.globat.com/
+      img: globat.png
+      tfa: No
+      twitter: globat
+
     - name: Hetzner Online
       url: https://www.hetzner.de/
       img: hetzner.png
@@ -102,6 +108,13 @@ websites:
       software: Yes
       twitter: ovh_support_en
 
+    - name: PlanetHoster
+      url: https://planethoster.net
+      img: PlanetHoster.png
+      tfa: Yes
+      software: Yes
+      doc: http://blog.planethoster.net/securite-espace-client-planethoster/
+
     - name: Rackspace
       url: https://www.rackspace.com/
       img: rackspace.png
@@ -136,7 +149,7 @@ websites:
       twitter: squarespace
       img: squarespace.png
       tfa: No
-      
+
     - name: UKFast
       url: http://www.ukfast.co.uk/
       img: ukfast.png
@@ -158,3 +171,12 @@ websites:
       twitter: webfaction
       img: webfaction.png
       tfa: No
+
+    - name: Ukraine
+      url: https://www.ukraine.com.ua/
+      img: ukraine.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.ukraine.com.ua/faq/rekomendatsii-po-zashchite-ot-vzloma-uchetnoj-zapisi.html

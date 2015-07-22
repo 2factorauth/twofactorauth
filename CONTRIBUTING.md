@@ -221,25 +221,6 @@ for a token upon login, but prompts you for a token when you try to perform a
 
 For context, check out the discussion in [#242][242].
 
-### New Providers
-
-Rather than split out providers on the main page, we elected to keep the main
-page clean and add another page dedicated to TFA providers.
-
-To add a new provider simply add to the `providers.yml` file, marking `Yes`
-where appropriate.
-
-```yml
-  - name: Company Name
-    url: https://example.com
-    img: company.png
-    sms: Yes
-    email: Yes
-    phone: Yes
-    software: Yes
-    hardware: Yes
-```
-
 [242]: https://github.com/jdavis/twofactorauth/issues/242
 [exclude]: /EXCLUSION.md
 [bundler]: http://bundler.io/

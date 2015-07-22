@@ -37,7 +37,7 @@ websites:
 
     - name: Cloud9
       url: https://c9.io
-      twitter: https://twitter.com/cloud9ide
+      twitter: Cloud9IDE
       img: cloud9.png
       tfa: No
       doc: https://docs.c9.io/faq_general.html#can-i-use-two-factor-authentication-with-cloud9?
@@ -102,7 +102,7 @@ websites:
       img: gitlab.png
       tfa: Yes
       software: Yes
-      doc: http://doc.gitlab.com/ce/workflow/two_factor_authentication.html
+      doc: http://doc.gitlab.com/ee/profile/two_factor_authentication.html
       exceptions:
           text: "Two factor authentication for LDAP is only avaliable in the Enterprise Edition."
 
@@ -124,7 +124,9 @@ websites:
       url: https://koding.com
       twitter: koding
       img: koding.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: http://learn.koding.com/guides/2-factor-auth/
 
     - name: Launchpad
       url: https://launchpad.net
@@ -200,7 +202,7 @@ websites:
 
     - name: StatusPage.io
       url: https://www.statuspage.io
-      twiter: statuspageio
+      twitter: statuspageio
       img: statuspageio.png
       tfa: No
 

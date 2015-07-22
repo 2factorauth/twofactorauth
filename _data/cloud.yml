@@ -46,6 +46,15 @@ websites:
           text: "Currently in beta as of June 5th 2014. Create a support ticket to request 2FA added to your organization"
       doc: https://support.cloud.engineyard.com/entries/40538256-Two-factor-authentication
 
+    - name: fortrabbit
+      url: http://www.fortrabbit.com/
+      twitter: fortrabbit
+      img: fortrabbit.png
+      tfa: Yes
+      software: Yes
+      doc: http://help.fortrabbit.com/security#toc-two-factor-authentication
+
+
     - name: Google Cloud Platform
       url: https://cloud.google.com
       img: googlecloud.png
@@ -75,16 +84,15 @@ websites:
       img: joyent.png
       tfa: Yes
       software: Yes
-      doc: https://docs.joyent.com/jpc/getting-started-with-your-joyent-cloud-account/your-joyent-cloud-account/improving-security-using-two-factor-authentication-(2fa)
-      
-     
+      doc: https://docs.joyent.com/public-cloud/getting-started/2fa
+
     - name: Linode
       url: https://www.linode.com/
       img: linode.png
       tfa: Yes
       software: Yes
       doc: https://www.linode.com/docs/security/linode-manager-security-controls 
-     
+
     - name: Microsoft Azure
       url: http://azure.microsoft.com/
       img: microsoftazure.png

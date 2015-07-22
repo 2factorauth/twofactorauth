@@ -26,10 +26,16 @@ websites:
       software: Yes
       doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
+    - name: ClouDNS
+      url: https://www.cloudns.net/
+      img: cloudns.png
+      tfa: No
+      twitter: ClouDNS
+
     - name: Crazy Domains
       url: https://www.crazydomains.com
       img: crazydomains.png
-      tfa: no
+      tfa: No
       twitter: CrazyDomains
 
     - name: Directnic
@@ -58,7 +64,7 @@ websites:
       url: http://www.domain.com/
       twitter: DomainDotCom
       img: domaindotcom.png
-      tfa: no
+      tfa: No
 
     - name: domainFACTORY
       url: http://www.df.eu
@@ -78,7 +84,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://www.domeny.tv/en/two-factor-authentication
-      
+
     - name: Dyn
       url: http://dyn.com/
       img: dyn.png
@@ -106,10 +112,10 @@ websites:
 
     - name: eNom
       url: http://enom.com/
-      twitter: enom
       img: enom.png
-      tfa: No
-      status: https://twitter.com/enom/status/447074738033008640
+      tfa: Yes
+      software: Yes
+      doc: http://www.enom.com/news/article.aspx?p=978&
 
     - name: EuroDNS
       url: https://www.eurodns.com
@@ -146,7 +152,7 @@ websites:
       url: http://www.godaddy.com/
       tfa: yes
       sms: Yes
-      doc: http://support.godaddy.com/help/article/7502/enabling-twostep-authentication
+      doc: https://www.godaddy.com/help/enabling-two-step-authentication-for-your-godaddy-account-7502
       exceptions:
           text: "US numbers only"
 
@@ -285,12 +291,28 @@ websites:
       twitter: netsolcares
       img: networksolutions.png
       tfa: No
+      
+    - name: Openprovider
+      url: https://www.openprovider.co.uk
+      img: openprovider.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.openprovider.co.uk/about-openprovider/news/secure-your-account-with-two-factor-authentication
 
     - name: PointDNS
       url: https://pointhq.com/
       twitter: pointdns
       img: pointdns.png
       tfa: No
+
+    - name: Registro.br
+      url: https://registro.br
+      img: registrobr.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
+      
 
     - name: Register4Less
       url: https://register4less.com/
