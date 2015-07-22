@@ -1,4 +1,10 @@
 websites:
+    - name: Actors Federal Credit Union
+      url: http://www.actorsfcu.com/
+      twitter: ActorsFCU
+      img: actorsfcu.png
+      tfa: No
+
     - name: Ally Bank
       url: http://www.ally.com/
       img: allybank.png
@@ -46,7 +52,7 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
-      doc: http://ask.barclays.co.uk/help/online_banking/whatis_pinsentry
+      doc: https://ask.barclays.co.uk/help/security/protection
 
     - name: Barclays US
       url: https://www.banking.barclaysus.com/index.html
@@ -220,7 +226,7 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
-      doc: https://www.therightbank.com/files/capital-pacific-bank-online-services-instructions.pdf
+      doc: https://www.therightbank.com/sites/www.therightbank.com/files/files/online-services-instructions.pdf
 
     - name: Patelco Credit Union
       url: https://www.patelco.org/
@@ -267,6 +273,13 @@ websites:
       url: https://www.sffirecu.org
       twitter: SFFireCU
       img: sffirecu.png
+      tfa: No
+      status: https://twitter.com/sffirecu/status/577532435228991488
+
+    - name: Santa Clara County Federal Credit Union
+      url: https://www.sccfcu.org/
+      twitter: SCCFCU
+      img: sccfcu.png
       tfa: No
 
     - name: SEB
@@ -323,6 +336,12 @@ websites:
       img: tdbank.png
       tfa: No
 
+    - name: TD Canada Trust
+      url: https://www.tdcanadatrust.com
+      twitter: TD_Canada
+      img: tdbank.png
+      tfa: No
+
     - name: US Bank
       url: https://www.usbank.com/
       twitter: usbank
@@ -352,11 +371,7 @@ websites:
       url: https://www.wellsfargo.com/
       twitter: WellsFargo
       img: wellsfargo.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      doc: https://www.wellsfargo.com/privacy-security/advanced-access/
+      tfa: No
 
     - name: Zag Bank
       url: https://www.zagbank.ca/
