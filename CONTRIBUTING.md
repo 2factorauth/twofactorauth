@@ -5,7 +5,7 @@ All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
 
 To add a new site, go to the [data files](_data/) and get familiar with how it
-is setup. There is a section and corresponding file for each Category and they
+is setup. There is a section and coresponding file for each Category and they
 all follow this syntax:
 
 ## Guidelines
