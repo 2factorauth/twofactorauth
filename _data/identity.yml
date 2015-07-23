@@ -91,6 +91,16 @@ websites:
       img: persowna.png
       tfa: Yes
       software: Yes
+      
+    - name: Ping Identity
+      url: https://www.pingidentity.com
+      img: pingidentity.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      phone: Yes
+      doc: https://www.pingidentity.com/en/products/capabilities/multi-factor-authentication.html
 
     - name: RoboForm
       url: http://www.roboform.com/
