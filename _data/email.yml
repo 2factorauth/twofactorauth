@@ -65,6 +65,7 @@ websites:
       img: pobox.png
       tfa: Yes
       software: Yes
+      hardware: Yes
       doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
 
     - name: Posteo
@@ -94,6 +95,15 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://help.yahoo.com/kb/SLN5013.html
+
+    - name: Yahoo Japan Mail
+      url: https://mail.yahoo.co.jp/
+      img: yahoojapanmail.png
+      tfa: Yes
+      sms: No
+      email: Yes
+      software: Yes
+      doc: http://id.yahoo.co.jp/security/otp.html
 
     - name: Yandex.Mail
       url: https://mail.yandex.com/

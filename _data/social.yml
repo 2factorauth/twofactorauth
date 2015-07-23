@@ -1,6 +1,13 @@
 websites:
+    - name: Zocle
+      url: https://zocle.com/
+      img: zocle.png
+      tfa: Yes
+      sms: Yes
+      doc: http://university.zocle.com/2015/03/30/new-security-feature-two-step-verification/
+
     - name: about.me
-      url: http://about.me
+      url: https://about.me
       twitter: aboutdotme
       img: aboutme.png
       tfa: No
@@ -13,7 +20,7 @@ websites:
       doc: https://mml.desk.com/customer/portal/articles/1039728-how-do-i-set-up-two-factor-authentication-
 
     - name: Bitly
-      url: http://www.bitly.com/
+      url: https://bitly.com/
       twitter: bitly
       img: bitly.png
       tfa: Yes
@@ -28,7 +35,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://blog.bufferapp.com/introducing-the-safest-social-media-publishing-on-the-web
+      doc: https://blog.bufferapp.com/introducing-the-safest-social-media-publishing-on-the-web
 
     - name: Facebook
       url: https://facebook.com
@@ -38,6 +45,12 @@ websites:
       software: Yes
       doc: https://www.facebook.com/help/148233965247823
 
+    - name: Foursquare
+      url: https://foursquare.com
+      twitter: foursquare
+      img: foursquare.png
+      tfa: No
+
     - name: Google+
       url: https://plus.google.com
       img: g+.png
@@ -46,7 +59,7 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: HootSuite
       url: https://hootsuite.com
@@ -74,10 +87,17 @@ websites:
       twitter: reddit
       img: reddit.png
       tfa: No
-      status: https://twitter.com/hueypriest/status/446601146409689088
+
+    - name: Snapchat
+      url: https://www.snapchat.com/
+      twitter: Snapchat
+      img: snapchat.png
+      tfa: Yes
+      sms: Yes
+      doc: https://support.snapchat.com/ca/login-verification
 
     - name: Stack Exchange
-      url: http://stackexchange.com/
+      url: https://stackexchange.com/
       twitter: StackExchange
       img: stack_exchange.png
       tfa: No
@@ -96,7 +116,7 @@ websites:
       tfa: Yes
       sms: Yes
       exceptions:
-          text: "SMS only available on select providers, SMS required for 2FA."
+          text: "SMS only available on select providers, SMS required for 2FA, 1 account per phone number, 1 phone number per account"
       software: Yes
       doc: https://support.twitter.com/articles/20170388
 
@@ -110,8 +130,16 @@ websites:
       url: http://www.viadeo.com
       img: viadeo.png
       tfa: No
-      doc: http://www.viadeo.com/aide/security/
+      doc: https://www.viadeo.com/aide/security/
       twitter: Viadeo
+      
+    - name: VK
+      url: https://vk.com
+      img: vk.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://vk.com/page-59800369_47885415
 
     - name: WordPress.com
       url: https://wordpress.com
@@ -121,4 +149,4 @@ websites:
       software: Yes
       exceptions:
           text: "SMS-capable phone required."
-      doc: http://en.support.wordpress.com/security/two-step-authentication/
+      doc: https://en.support.wordpress.com/security/two-step-authentication/

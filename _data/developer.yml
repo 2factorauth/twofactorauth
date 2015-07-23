@@ -1,13 +1,13 @@
 websites:
     - name: Aha!
-      url: http://aha.io
+      url: https://www.aha.io/
       img: aha.png
       tfa: Yes
       sms: Yes
       phone: Yes
       hardware: Yes
       software: Yes
-      doc: http://support.aha.io/hc/en-us/articles/202000967-Two-factor-authentication-2FA-user-set-up
+      doc: http://support.aha.io/hc/en-us/articles/202000957-Add-two-factor-authentication-2FA-
 
     - name: Airbrake
       url: https://airbrake.io
@@ -16,7 +16,7 @@ websites:
       tfa: No
 
     - name: aTech Media
-      url: http://atechmedia.com
+      url: https://atechmedia.com
       img: atechmedia.png
       tfa: Yes
       software: Yes
@@ -24,7 +24,7 @@ websites:
       doc: https://atechmedia.com/blog/general/launches/two-factor-authentication
 
     - name: Balsamiq
-      url: http://balsamiq.com
+      url: https://balsamiq.com
       twitter: balsamiq
       img: balsamiq.png
       tfa: No
@@ -37,12 +37,21 @@ websites:
 
     - name: Cloud9
       url: https://c9.io
-      twitter: https://twitter.com/cloud9ide
+      twitter: Cloud9IDE
       img: cloud9.png
       tfa: No
       doc: https://docs.c9.io/faq_general.html#can-i-use-two-factor-authentication-with-cloud9?
       exceptions:
           text: "TFA available by signing up using GitHub"
+
+    - name: Codeanywhere
+      url: https://codeanywhere.com
+      img: codeanywhere.png
+      tfa: Yes
+      sms: Yes
+      doc: https://blog.codeanywhere.com/codeanywhere-now-offers-two-factor-authentication/
+      exceptions:
+          text: "Only available on paid accounts at $7/10 per month (annual/monthly) or more."
 
     - name: Code Climate
       url: https://codeclimate.com
@@ -88,6 +97,15 @@ websites:
       software: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
+    - name: GitLab
+      url: https://gitlab.com
+      img: gitlab.png
+      tfa: Yes
+      software: Yes
+      doc: http://doc.gitlab.com/ee/profile/two_factor_authentication.html
+      exceptions:
+          text: "Two factor authentication for LDAP is only avaliable in the Enterprise Edition."
+
     - name: Infobip
       url: http://www.infobip.com/
       img: infobip.png
@@ -106,7 +124,9 @@ websites:
       url: https://koding.com
       twitter: koding
       img: koding.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: http://learn.koding.com/guides/2-factor-auth/
 
     - name: Launchpad
       url: https://launchpad.net
@@ -132,6 +152,15 @@ websites:
       software: Yes
       doc: https://www.mapbox.com/help/two-step-verification/
 
+    - name: MongoDB MMS
+      url: https://mms.mongodb.com
+      img: mongodbmms.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      phone: Yes
+      doc: https://docs.mms.mongodb.com/core/two-factor-authentication/
+
     - name: New Relic
       url: https://newrelic.com
       twitter: newrelic
@@ -150,6 +179,14 @@ websites:
       img: pythonanywhere.png
       tfa: No
 
+    - name: RBCommons
+      url: https://rbcommons.com
+      img: rbcommons.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: http://support.beanbaginc.com/support/solutions/articles/3000006998-enabling-two-factor-authentication
+
     - name: Status.io
       url: https://status.io/
       img: statusio.png
@@ -162,6 +199,12 @@ websites:
       img: statuscake.png
       tfa: Yes
       sms: Yes
+
+    - name: StatusPage.io
+      url: https://www.statuspage.io
+      twitter: statuspageio
+      img: statuspageio.png
+      tfa: No
 
     - name: Twilio
       url: https://www.twilio.com/

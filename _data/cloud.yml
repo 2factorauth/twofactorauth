@@ -13,7 +13,14 @@ websites:
       twitter: appfog
       img: appfog.png
       tfa: No
-
+    
+    - name: cloud.ca
+      url: https://cloud.ca
+      img: cloudca.png
+      tfa: Yes
+      software: Yes
+      doc: https://cloud.ca/two-factor-authentication-is-now-available-on-cloud-ca/
+      
     - name: Cloud 66
       url: http://www.cloud66.com
       img: cloud66.png
@@ -38,6 +45,15 @@ websites:
       exceptions:
           text: "Currently in beta as of June 5th 2014. Create a support ticket to request 2FA added to your organization"
       doc: https://support.cloud.engineyard.com/entries/40538256-Two-factor-authentication
+
+    - name: fortrabbit
+      url: http://www.fortrabbit.com/
+      twitter: fortrabbit
+      img: fortrabbit.png
+      tfa: Yes
+      software: Yes
+      doc: http://help.fortrabbit.com/security#toc-two-factor-authentication
+
 
     - name: Google Cloud Platform
       url: https://cloud.google.com
@@ -68,7 +84,14 @@ websites:
       img: joyent.png
       tfa: Yes
       software: Yes
-      doc: "http://wiki.joyent.com/wiki/display/jpc2/Improving+Security+Using+Two-Factor+Authentication+(2FA)"
+      doc: https://docs.joyent.com/public-cloud/getting-started/2fa
+
+    - name: Linode
+      url: https://www.linode.com/
+      img: linode.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.linode.com/docs/security/linode-manager-security-controls 
 
     - name: Microsoft Azure
       url: http://azure.microsoft.com/
@@ -84,6 +107,14 @@ websites:
       twitter: openshift
       img: openshift.png
       tfa: No
+
+    - name: Packet
+      url: https://www.packet.net/
+      twitter: packethost
+      img: packet.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.packet.net/help/kb/account-management-and-billing/how-do-i-enable-two-factor-authentication-/
     
     - name: Rackspace
       url: https://www.rackspace.com/
@@ -117,4 +148,4 @@ websites:
       twitter: userify
       img: userify.png
       tfa: No
-      status: https://twitter.com/userify/status/544608357579882497
+      status: https://twitter.com/userify/status/574247002482978816

@@ -1,35 +1,23 @@
-Contributing to 2FA.org
+Contributing to TFA.org
 =======================
 
 All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
 
 To add a new site, go to the [data files](_data/) and get familiar with how it
-is setup. There is a section and coresponding file for each Category and they
-all follow this syntax:
+is setup. There is a section and coresponding file for each Category. Site icons
+are stored in folders corresponding to each of those categories in their own 
+[folder](img/).
 
 ## Guidelines
 
 1. **Don't break the build**: We have a simple continuous integration system
    setup with [Travis][travis]. If your pull request doesn't pass, it won't be
-   merged.
-
-   To verify that your additions are fine, you can run the entire set of tests
-   which will check all links and images by:
-
-   ```bash
-   $ bundle exec rake
-   ```
-
-   However, this can take awhile as there are roughly 800 links that it checks.
-   If you just wish to test your YAML changes, you can just run:
-
-   ```bash
-   $ bundle exec rake verify
-   ```
-
-2. **Use a Nice Icon**: The icon must be 32x32 in dimension. Earlier we were
-   using 16x16 but upgraded for various high density screens.
+   merged. Travis will only check your changes after you submit a pull request.
+   If you want to test locally, instructions are listed below. Keep reading!
+2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
+   preffered format. If possible, please also run the image through an optimizing 
+   utility such as OptiPNG before committing it to the repo.
 3. **Be Awesome**: You need to be awesome. That is all.
 
 ## Running Locally
@@ -45,6 +33,21 @@ everything for you.
 3. Run Jekyll: `bundle exec jekyll serve --watch`. The `--watch` is optional and
    makes Jekyll watch for file changes.
 
+#### Testing with Bundler
+   To verify that your additions are fine, you can run the entire set of tests
+   locally which will check all links and images with:
+
+   ```bash
+   $ bundle exec rake
+   ```
+
+   However, this can take a while as there are roughly 900 links that it checks.
+   If you just wish to test your YAML changes, you can run:
+
+   ```bash
+   $ bundle exec rake verify
+   ```
+
 ### Using Vanilla Jekyll
 
 1. Install Jekyll if you don't already have it: `gem install jekyll`.
@@ -53,7 +56,7 @@ everything for you.
 ## Site Criteria
 
 The following is a rough criteria and explanations for what sites should be on
-2FA.org. If one of the following Criteria is met, it belongs on 2FA.org:
+TFA.org. If one of the following Criteria is met, it belongs on TFA.org:
 
 1. **Personal Info/Image**: Any site that deals with personal info or a person's
    image. An example of a site with **Personal Info** would be their Amazon
@@ -111,13 +114,20 @@ websites:
     phone: Yes
     software: Yes
     hardware: Yes
-    doc: <link to site 2FA documentation>
+    doc: <link to site TFA documentation>
 ```
-Fields `name:`, `url:`, `img:`, `tfa:` are required for all entries. If available, `twitter:` should be included. If a site provides tfa, `doc:` field is strongly encouraged. Other fields should be included as appropriate.
+Fields `name:`, `url:`, `img:`, `tfa:` are required for all entries. If a site 
+does not provide TFA, `twitter:` should be included if they have one. If a site 
+does provide TFA, `doc:` field is strongly encouraged where public documentation 
+is available. Other fields should be included if the site supports it. Any services 
+that are not supported can be excluded.
+
+If you are adding multiple sites, please add each site to its own new branch and 
+submit a separate pull request for each branch.
 
 ### Exceptions & Restrictions
 
-If a site doesn't support 2FA in certain countries, you can note this on the
+If a site doesn't support TFA in certain countries, you can note this on the
 website. There are 4 ways to customize how it is displayed:
 
 1. A default message acknowledging restrictions will be used with the following
@@ -131,7 +141,7 @@ website. There are 4 ways to customize how it is displayed:
       tfa: Yes
       sms: Yes
       exceptions: Yes
-      doc: <link to site 2FA documentation>
+      doc: <link to site TFA documentation>
    ```
 2. The message can be replaced with a custom set of words:
 
@@ -144,7 +154,7 @@ website. There are 4 ways to customize how it is displayed:
       sms: Yes
       exceptions:
           text: "Specific text goes here."
-      doc: <link to site 2FA documentation>
+      doc: <link to site TFA documentation>
    ```
 3. The icon can be made into a link in which more details can be revealed such
    as country specific info and anything else.
@@ -158,7 +168,7 @@ website. There are 4 ways to customize how it is displayed:
       sms: Yes
       exceptions:
           link: Yes
-      doc: <link to site 2FA documentation>
+      doc: <link to site TFA documentation>
    ```
 4. 2 and 3 can be combined into:
 
@@ -172,7 +182,7 @@ website. There are 4 ways to customize how it is displayed:
       exceptions:
           link: Yes
           text: "Specific text can go here as well."
-      doc: <link to site 2FA documentation>
+      doc: <link to site TFA documentation>
    ```
 
 ### Pro Tips
@@ -180,17 +190,14 @@ website. There are 4 ways to customize how it is displayed:
 - See Guideline #2 about icons. The png file should go in the corresponding
   `img/section` folder.
 
-- Only the 2FA methods implemented by a site need a `yes` tag, the others can
-  just be left off completely.
-
 - For the sake of organization and readability, it is appreciated if you insert
-  new sites alphabetically and that your site chunk follow the same order as the
+  new sites alphabetically and that your site chunk follows the same order as the
   example above.
 
-- If a site supports 2FA, their Twitter handle is not needed and can be left out
+- If a site supports TFA, their Twitter handle is not needed and can be left out
   for cleanliness.
 
-- If a site does not have 2FA but there is documentation that they are adding
+- If a site does not have TFA but there is documentation that they are adding
   it, then use:
 
   ```yml
@@ -213,25 +220,6 @@ for a token upon login, but prompts you for a token when you try to perform a
   sensitive action would not be considered Two Factor Auth.
 
 For context, check out the discussion in [#242][242].
-
-### New Providers
-
-Rather than split out providers on the main page, we elected to keep the main
-page clean and add another page dedicated to 2fa providers.
-
-To add a new provider simply add to the `providers.yml` file, marking `Yes`
-where appropriate.
-
-```yml
-  - name: Company Name
-    url: https://example.com
-    img: company.png
-    sms: Yes
-    email: Yes
-    phone: Yes
-    software: Yes
-    hardware: Yes
-```
 
 [242]: https://github.com/jdavis/twofactorauth/issues/242
 [exclude]: /EXCLUSION.md

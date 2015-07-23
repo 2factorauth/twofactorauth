@@ -98,8 +98,14 @@ websites:
     img: justcloud.png
     tfa: No
 
+  - name: Mega
+    url: https://mega.co.nz/
+    twitter: MEGAprivacy
+    img: mega.png
+    tfa: No
+
   - name: OneDrive
-    url: https://www.onedrive.com
+    url: https://onedrive.live.com
     img: onedrive.png
     tfa: Yes
     sms: Yes
@@ -122,12 +128,12 @@ websites:
     doc: https://revert.io/blog/how-to-enable-two-factor-authentication/
 
   - name: SmartBox
-    url: http://www.panterranetworks.com/SmartBox/index.php
+    url: https://www.panterranetworks.com/smartbox/smartbox_overview.php
     img: smartbox.png
     tfa: Yes
     email: Yes
     software: Yes
-    doc: http://www.panterranetworks.com/SmartBox/features/security.php
+    doc: https://www.panterranetworks.com/smartbox/sb_features/sbf_security.php
 
   - name: SpiderOak
     url: https://spideroak.com
