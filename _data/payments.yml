@@ -89,7 +89,11 @@ websites:
       url: https://squareup.com
       twitter: square
       img: squareup.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      exceptions:
+        text: "Currently only US merchants, protects only Dashboard access"
+      doc: https://squareup.com/help/us/en/article/5593-2-step-verification
 
     - name: Venmo
       url: https://venmo.com
