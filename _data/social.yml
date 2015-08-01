@@ -43,6 +43,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      exceptions:
+          text: "SMS required for 2FA. 1 account per phone number, 1 phone number per account."
       doc: https://www.facebook.com/help/148233965247823
 
     - name: Foursquare
@@ -116,7 +118,7 @@ websites:
       tfa: Yes
       sms: Yes
       exceptions:
-          text: "SMS only available on select providers, SMS required for 2FA, 1 account per phone number, 1 phone number per account"
+          text: "SMS only available on select providers. SMS required for 2FA. 1 account per phone number, 1 phone number per account."
       software: Yes
       doc: https://support.twitter.com/articles/20170388
 
