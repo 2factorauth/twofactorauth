@@ -23,15 +23,6 @@ websites:
       twitter: CloudShards
       tfa: No
 
-    - name: DigitalOcean
-      url: https://www.digitalocean.com/
-      img: digitalocean.png
-      tfa: Yes
-      software: Yes
-      exceptions:
-          text: "SMS-capable phone required."
-      doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
-
     - name: Dreamhost
       url: https://dreamhost.com
       img: dreamhost.png
@@ -71,13 +62,6 @@ websites:
       twitter: iPage
       img: ipage.png
       tfa: No
-
-    - name: Linode
-      url: https://www.linode.com/
-      img: linode.png
-      tfa: Yes
-      software: Yes
-      doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
 
     - name: MaxCDN
       url: https://www.maxcdn.com
