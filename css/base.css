@@ -20,20 +20,21 @@ p {
     position: fixed;
 }
 
-.container {
-    max-width: 840px;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 40px;
-}
-
-.main .column .banner {
-    display: block;
-    margin: 40px auto;
+.ui.grid.container {
+    width: 70% !important;
 }
 
 .footer {
     text-align: center;
+}
+
+.ui.center.aligned.header {
+    display: block;
+    margin: 80px auto;
+}
+
+.ui.menu .item:before {
+    display: none;
 }
 
 .ui.table tr.negative,
@@ -49,7 +50,7 @@ td.icon {
 }
 
 td i.icon{
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 td span.progress,
@@ -80,7 +81,7 @@ td img.icon {
 
 .ui.table tr.positive td,
 .ui.table td.positive {
-    background-color: #dff0d8 !important;
+    background-color: #DFF0D8 !important;
 }
 
 .ui.celled.table tr.positive:hover td,
@@ -88,12 +89,12 @@ td img.icon {
 .ui.table tr.positive:hover td,
 .ui.table td:hover.positive,
 .ui.table th:hover.positive {
-    background-color: #dff0d8 !important;
+    background-color: #DFF0D8 !important;
 }
 
 .ui.table tr.negative td,
 .ui.table td.negative {
-    background-color: #f2dede !important;
+    background-color: #F2DEDE !important;
 }
 
 .ui.celled.table tr.negative:hover td,
@@ -101,7 +102,7 @@ td img.icon {
 .ui.table tr.negative:hover td,
 .ui.table td:hover.negative,
 .ui.table th:hover.negative {
-    background-color: #f2dede !important;
+    background-color: #F2DEDE !important;
 }
 
 .ui.divider {
@@ -109,9 +110,8 @@ td img.icon {
 }
 
 @media (min-width: 767px) {
-  .ui.menu.main > .menu {
-      width: 840px;
-      margin: 0 auto;
+  .menu {
+      padding: 0 10%;
   }
 }
 
