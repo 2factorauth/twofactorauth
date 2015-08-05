@@ -11,19 +11,20 @@ hash: SupportTwoFactorAuth
 
 {% include header.html page='home' %}
 
+<div class="ui center aligned icon header">
+    <i class="circular mobile icon"></i>
+    <h2>Two Factor Auth (2FA)</h2>
+    <div class="sub header">List of websites and whether or not they support
+        <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
+    </div>
+    <div id="{{ first.id }}" class="sub header">
+        Add your own favorite site by submitting a pull request on the
+        <a href="https://github.com/jdavis/twofactorauth">GitHub repo</a>.
+    </div>
+</div>
+
 <div class="ui grid container">
         <div class="column">
-            <div class="ui center aligned icon header">
-                <i class="circular mobile icon"></i>
-                <h2>Two Factor Auth (2FA)</h2>
-                <div class="sub header">List of websites and whether or not they support
-                    <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
-                </div>
-                <div id="{{ first.id }}" class="sub header">
-                    Add your own favorite site by submitting a pull request on the
-                    <a href="https://github.com/jdavis/twofactorauth">GitHub repo</a>.
-                </div>
-            </div>
 
         {% for section in site.data.main.sections %}
             <div class="section">

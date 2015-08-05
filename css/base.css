@@ -20,6 +20,18 @@ p {
     position: fixed;
 }
 
+.ui.fixed.menu {
+    display: block;
+}
+
+.ui.fixed.menu .item {
+    display: inline-block;
+}
+
+.ui.fixed.menu .right.menu {
+    float: right;
+}
+
 .ui.grid.container {
     width: 70% !important;
 }
@@ -30,7 +42,7 @@ p {
 
 .ui.center.aligned.header {
     display: block;
-    margin: 80px auto;
+    margin: 150px auto 40px auto;
 }
 
 .ui.menu .item:before {
