@@ -9,7 +9,7 @@ begin
       puts "<------------ ERROR ------------>\n"
     end
     puts "#{$output}. #{msg}"
-    
+
   end
 
   # Load each section, check for errors such as invalid syntax
@@ -30,7 +30,7 @@ begin
       unless FastImage.size(image) == image_dimensions
         error("#{image} is not #{image_dimensions.join("x")}")
       end
-          
+
       ext = ".png"
       unless File.extname(image) == ext
         error("#{image} is not #{ext}")
@@ -38,24 +38,6 @@ begin
     end
   end
 
-  # Load each provider and look for each image
-  providers = YAML.load_file('_data/providers.yml')
-  providers["providers"].each do |provider|
-    pimage = "img/providers/#{provider['img']}";
-    unless File.exists?(pimage)
-      error("#{provider['name']} image not found.")
-    end
-    image_dimensions = [32,32]
-
-    unless FastImage.size(pimage) == image_dimensions
-      error("#{pimage} is not #{image_dimensions.join("x")}")
-    end
-          
-    ext = ".png"
-    unless File.extname(pimage) == ext
-      error("#{pimage} is not #{ext}")
-    end
-  end
   if($output > 0 )
     exit 1
   end
