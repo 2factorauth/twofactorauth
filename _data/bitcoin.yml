@@ -1,11 +1,4 @@
 websites:
-    - name: BIPS
-      url: https://bips.me/
-      img: bips.png
-      tfa: Yes
-      software: Yes
-      doc: https://bips.me/security
-
     - name: BitBay
       url: http://bitbay.net
       img: bitbay.png
@@ -30,12 +23,28 @@ websites:
       hardware: Yes
       doc: https://bitcoin-central.net/page/profile/security
 
+    - name: BitGo
+      url: https://www.bitgo.com
+      img: bitgo.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://bitgo.zendesk.com/hc/en-us/sections/201009049-Two-Factor-Authentication-Help-Page
+
     - name: Bitpay
       url: https://bitpay.com
       img: bitpay.png
       tfa: Yes
       software: Yes
       doc: https://bitpay.com/two-factor
+      
+    - name: Bitreserve
+      url: https://bitreserve.org
+      img: bitreserve.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.bitreserve.org/hc/en-us/articles/202409609-How-does-phone-number-verification-work-
 
     - name: Bitstamp
       url: https://bitstamp.net
@@ -69,6 +78,14 @@ websites:
       software: Yes
       doc: https://campbx.com/faq.php#security-compliance
 
+    - name: CEX.IO
+      url: https://cex.io/
+      img: cex.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://cex.io/guide#4
+
     - name: Circle
       url: https://circle.com
       twitter: circlebits
@@ -76,7 +93,13 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://support.circle.com/hc/en-us/articles/201974154-What-is-two-factor-authentication-2FA-
+      doc: https://support.circle.com/hc/en-us/articles/204624600-What-is-two-factor-authentication-2FA-
+
+    - name: CleverCoin
+      url: https://clevercoin.com
+      img: clevercoin.png
+      tfa: Yes
+      software: Yes
 
     - name: Coinapult
       url: https://coinapult.com
@@ -91,21 +114,23 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      phone: Yes
       doc: http://blog.coinbase.com/post/25677574019/coinbase-now-offers-two-factor-authentication
-
-    - name: CEX.IO
-      url: https://cex.io/
-      img: cex.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://cex.io/guide#4
 
     - name: Coincafe
       url: https://coincafe.com
       img: coincafe.png
       tfa: No
       twitter: getcoincafe
+
+    - name: Coinify (Merchants)
+      url: https://coinify.com/merchants
+      img: coinify.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+          text: "While Coinify has aquired BIPS to allow for trading, only merchant accounts support TFA at this time. Trading is done through a separate account. Hardware support is limited to a print-out character matrix."
 
     - name: Coinjar
       url: https://coinjar.com
@@ -119,7 +144,9 @@ websites:
       url: https://coinkite.com
       img: coinkite.png
       tfa: Yes
+      sms: Yes
       software: Yes
+      hardware: Yes
       doc: https://coinkite.com/settings/pws
 
     - name: Coinsetter
@@ -128,6 +155,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.coinsetter.com/my/security
+
+    - name: Coins.ph
+      url: https://coins.ph/
+      img: coinsph.png
+      tfa: Yes
+      software: Yes
+      doc: https://coinsph.zendesk.com/hc/en-us/sections/200557900-Two-factor-authentication
 
     - name: Cryptsy
       url: https://cryptsy.com/

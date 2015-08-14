@@ -23,14 +23,19 @@ websites:
       url: https://cloudflare.com
       img: cloudflare.png
       tfa: Yes
-      sms: Yes
       software: Yes
       doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
+
+    - name: ClouDNS
+      url: https://www.cloudns.net/
+      img: cloudns.png
+      tfa: No
+      twitter: ClouDNS
 
     - name: Crazy Domains
       url: https://www.crazydomains.com
       img: crazydomains.png
-      tfa: no
+      tfa: No
       twitter: CrazyDomains
 
     - name: Directnic
@@ -38,6 +43,7 @@ websites:
       img: directnic.png
       tfa: Yes
       software: Yes
+      hardware: Yes
       doc: https://directnic.com/knowledge/article/137:how+do+i+set+up+two-factor+authentication%3F
 
     - name: DNS Made Easy
@@ -58,7 +64,13 @@ websites:
       url: http://www.domain.com/
       twitter: DomainDotCom
       img: domaindotcom.png
-      tfa: no
+      tfa: No
+
+    - name: domainFACTORY
+      url: http://www.df.eu
+      img: domainfactory.png
+      twitter: domainfactory
+      tfa: No
 
     - name: DomainsAtCost
       url: https://www.domainsatcost.ca/
@@ -76,9 +88,10 @@ websites:
     - name: Dyn
       url: http://dyn.com/
       img: dyn.png
-      twitter: dyn
-      tfa: No
-      status: https://twitter.com/kelly_crehan/status/451460284931379200
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.dyn.com/2-factor-authentication/
 
     - name: Dynadot
       url: http://dynadot.com/
@@ -99,10 +112,17 @@ websites:
 
     - name: eNom
       url: http://enom.com/
-      twitter: enom
       img: enom.png
-      tfa: No
-      status: https://twitter.com/enom/status/447074738033008640
+      tfa: Yes
+      software: Yes
+      doc: http://www.enom.com/news/article.aspx?p=978&
+
+    - name: EuroDNS
+      url: https://www.eurodns.com
+      img: eurodns.png
+      tfa: Yes
+      software: Yes
+      doc: http://help.eurodns.com/customer/en/portal/articles/1633106-how-do-i-activate-two-step-verification-on-my-account-
 
     - name: Fabulous
       url: http://fabulous.com
@@ -110,6 +130,15 @@ websites:
       tfa: yes
       hardware: yes
       doc: http://fabulous.com/informationcenter/index.htm?formdata%5Bqid%5D=1194
+
+    - name: Frankdomains
+      url: https://www.frankdomains.com/
+      img: frankdomains.png
+      tfa: yes
+      hardware: yes
+      exceptions:
+          text: "Yearly fee for using 2FA: 19.99 GBP"
+      doc: https://www.frankdomains.com/keep-your-domain-safe/
 
     - name: Gandi
       url: https://gandi.net
@@ -123,9 +152,19 @@ websites:
       url: http://www.godaddy.com/
       tfa: yes
       sms: Yes
-      doc: http://support.godaddy.com/help/article/7502/enabling-twostep-authentication
+      doc: https://www.godaddy.com/help/enabling-two-step-authentication-for-your-godaddy-account-7502
       exceptions:
           text: "US numbers only"
+
+    - name: Google Domains
+      url: https://domains.google.com
+      img: googledomains.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Heart Internet
       url: https://www.heartinternet.uk/
@@ -141,12 +180,26 @@ websites:
       software: Yes
       doc: https://help.hover.com/entries/26677644
 
+    - name: Hurricane Electric
+      url: http://www.he.net/
+      img: hurricane.png
+      tfa: Yes
+      software: Yes
+      twitter: henet
+
     - name: Internet.bs
       url: http://www.internet.bs
       img: internetbs.png
       tfa: Yes
       software: Yes
       doc: /notes/internetbs/
+
+    - name: InterNetworX (INWX)
+      url: https://www.inwx.de/en/
+      img: internetworx.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.inwx.de/en/offer/mobiletan
 
     - name: iWantMyName
       url: https://iwantmyname.com/
@@ -157,9 +210,12 @@ websites:
 
     - name: Loopia
       url: https://www.loopia.se/
-      twitter: loopia
       img: loopia.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: http://blogg.loopia.se/2015/03/16/nu-kan-du-logga-in-med-tvafaktorsautentiering-hos-loopia-genom-bankid/
+      exceptions:
+          text: "TFA only available for Swedish citizens"
 
     - name: MarkMonitor
       url: https://www.markmonitor.com
@@ -195,7 +251,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://www.name.com/services/namesafe
+      doc: https://www.name.com/services/two-step-verification
 
     - name: Namecheap
       url: https://www.namecheap.com/
@@ -218,6 +274,12 @@ websites:
       img: namespro.png
       tfa: No
 
+    - name: Netfirms
+      url: https://www.netfirms.com
+      twitter: netfirms
+      img: netfirms.png
+      tfa: No
+
     - name: Netim
       url: http://www.netim.com/
       twitter: Netim_com
@@ -229,12 +291,28 @@ websites:
       twitter: netsolcares
       img: networksolutions.png
       tfa: No
+      
+    - name: Openprovider
+      url: https://www.openprovider.co.uk
+      img: openprovider.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.openprovider.co.uk/about-openprovider/news/secure-your-account-with-two-factor-authentication
 
     - name: PointDNS
       url: https://pointhq.com/
       twitter: pointdns
       img: pointdns.png
       tfa: No
+
+    - name: Registro.br
+      url: https://registro.br
+      img: registrobr.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
+      
 
     - name: Register4Less
       url: https://register4less.com/

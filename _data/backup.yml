@@ -6,11 +6,23 @@ websites:
     img: aerofs.png
     doc: https://blog.aerofs.com/two-factor-authentication-for-hybrid-and-private-cloud/
 
+  - name: Apple iCloud
+    url: https://www.icloud.com
+    img: icloud.png
+    tfa: Yes
+    sms: Yes
+    software: Yes
+    exceptions:
+        text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
+    doc: http://support.apple.com/kb/ht5570
+
   - name: Backblaze
     url: http://www.backblaze.com/
     twitter: backblaze
     img: backblaze.png
-    tfa: No
+    tfa: Yes
+    sms: Yes
+    doc: https://www.backblaze.com/blog/two-factor-verification-for-backblaze/
 
   - name: Bitcasa
     url: http://www.bitcasa.com/
@@ -49,6 +61,7 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
+    hardware: Yes
     doc: https://www.dropbox.com/help/363/en
 
   - name: Evernote
@@ -76,16 +89,6 @@ websites:
     hardware: Yes
     doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
-  - name: iCloud
-    url: https://www.icloud.com
-    img: icloud.png
-    tfa: Yes
-    sms: Yes
-    software: Yes
-    exceptions:
-        text: "SMS only available on select providers."
-    doc: http://support.apple.com/kb/ht5570
-
   - name: IDrive
     url: https://www.idrive.com
     twitter: IDriveBackup
@@ -98,8 +101,14 @@ websites:
     img: justcloud.png
     tfa: No
 
+  - name: Mega
+    url: https://mega.co.nz/
+    twitter: MEGAprivacy
+    img: mega.png
+    tfa: No
+
   - name: OneDrive
-    url: https://www.onedrive.com
+    url: https://onedrive.live.com
     img: onedrive.png
     tfa: Yes
     sms: Yes
@@ -115,18 +124,19 @@ websites:
 
   - name: Revert
     url: https://revert.io
-    twitter: revert_io
     img: revert.png
-    tfa: No
-    status: https://twitter.com/revert_io/status/541650096727662592
+    tfa: Yes
+    sms: Yes
+    software: Yes
+    doc: https://revert.io/blog/how-to-enable-two-factor-authentication/
 
   - name: SmartBox
-    url: http://www.panterranetworks.com/SmartBox/index.php
+    url: https://www.panterranetworks.com/smartbox/smartbox_overview.php
     img: smartbox.png
     tfa: Yes
     email: Yes
     software: Yes
-    doc: http://www.panterranetworks.com/SmartBox/features/security.php
+    doc: https://www.panterranetworks.com/smartbox/sb_features/sbf_security.php
 
   - name: SpiderOak
     url: https://spideroak.com
@@ -164,6 +174,15 @@ websites:
     twitter: Wuala
     img: wuala.png
     tfa: No
+
+  - name: Yandex.Disk
+    url: https://disk.yandex.com
+    img: yandexdisk.png
+    tfa: Yes
+    software: Yes
+    exceptions:
+        text: "SMS-capable phone required for initial setup."
+    doc: http://help.yandex.com/passport/authorization/twofa.xml
 
   - name: Zetta.net
     url: http://zetta.net/
