@@ -37,7 +37,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://bitpay.com/two-factor
-      
+
     - name: Bitreserve
       url: https://bitreserve.org
       img: bitreserve.png
@@ -198,6 +198,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://localbitcoins.blogspot.fi/2013/05/using-two-factor-authentication-on.html
+
+    - name: Ripple Trade
+      url: https://www.rippletrade.com/
+      img: rippletrade.png
+      tfa: Yes
+      sms: Yes
+      doc: https://ripple.com/knowledge_center/using-two-factor-authentication-2fa/
 
     - name: WeMineLTC.com
       url: https://www.wemineltc.com
