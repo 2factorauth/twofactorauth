@@ -1,9 +1,12 @@
 websites:
     - name: CAcert
-      url: https://www.cacert.org/
+      url: http://www.cacert.org/
       twitter: CAcert_News
       img: cacert.png
-      tfa: No
+      tfa: Yes
+      hardware: Yes
+      exceptions:
+          text: "Requires X.509-capable cryptotoken or smartcard."
 
     - name: DigiCert
       url: http://www.digicert.com/
