@@ -5,8 +5,8 @@ All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
 
 To add a new site, go to the [data files](_data/) and get familiar with how it
-is setup. There is a section and coresponding file for each Category. Site icons
-are stored in folders corresponding to each of those categories in their own 
+is setup. There is a section and corresponding file for each Category. Site icons
+are stored in folders corresponding to each of those categories in their own
 [folder](img/).
 
 ## Guidelines
@@ -16,7 +16,7 @@ are stored in folders corresponding to each of those categories in their own
    merged. Travis will only check your changes after you submit a pull request.
    If you want to test locally, instructions are listed below. Keep reading!
 2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
-   preffered format. If possible, please also run the image through an optimizing 
+   preferred format. If possible, please also run the image through an optimizing
    utility such as OptiPNG before committing it to the repo.
 3. **Be Awesome**: You need to be awesome. That is all.
 
@@ -116,13 +116,13 @@ websites:
     hardware: Yes
     doc: <link to site TFA documentation>
 ```
-Fields `name:`, `url:`, `img:`, `tfa:` are required for all entries. If a site 
-does not provide TFA, `twitter:` should be included if they have one. If a site 
-does provide TFA, `doc:` field is strongly encouraged where public documentation 
-is available. Other fields should be included if the site supports it. Any services 
+Fields `name:`, `url:`, `img:`, `tfa:` are required for all entries. If a site
+does not provide TFA, `twitter:` should be included if they have one. If a site
+does provide TFA, `doc:` field is strongly encouraged where public documentation
+is available. Other fields should be included if the site supports it. Any services
 that are not supported can be excluded.
 
-If you are adding multiple sites, please add each site to its own new branch and 
+If you are adding multiple sites, please add each site to its own new branch and
 submit a separate pull request for each branch.
 
 ### Exceptions & Restrictions
