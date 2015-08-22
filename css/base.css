@@ -57,7 +57,7 @@ p {
   box-shadow: none;
 }
 
-td.icon {
+.ui.table td.icon {
     text-align: center;
 }
 
@@ -88,7 +88,7 @@ td img.icon {
     line-height: 1;
     margin-right: 8px;
     background-color: white;
-    height: 16px;
+    height: 32px;
 }
 
 .ui.table tr.positive td,
