@@ -91,6 +91,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      exceptions:
+        text: "Only supported for the Managed DNS service."
       doc: https://help.dyn.com/2-factor-authentication/
 
     - name: Dynadot
