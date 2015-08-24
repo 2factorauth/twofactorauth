@@ -92,7 +92,7 @@ websites:
       sms: Yes
       software: Yes
       exceptions:
-        text: "Only supported for the Managed DNS service."
+        text: "Currently only supported for the Managed DNS & Email Delivery platforms (via DynID). Eventually DynID (and 2FA) will be rolled out to all platforms (no ETA)."
       doc: https://help.dyn.com/2-factor-authentication/
 
     - name: Dynadot
