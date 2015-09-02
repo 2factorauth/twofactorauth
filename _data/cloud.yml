@@ -152,6 +152,16 @@ websites:
       software: Yes
       doc: http://library.singlehop.com/assets_project_development/Two_Factor_Instructions.pdf
 
+    - name: Tilaa
+      url: https://www.tilaa.com
+      img: tilaa.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+          text: "SMS-capable phone required."
+      doc: http://blog.tilaa.com/post/128110588046/two-factor-authentication-and-session-management
+
     - name: Userify
       url: https://userify.com
       twitter: userify
