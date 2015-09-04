@@ -91,6 +91,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      exceptions:
+        text: "Currently only supported for the Managed DNS & Email Delivery platforms (via DynID). Eventually DynID (and 2FA) will be rolled out to all platforms (no ETA)."
       doc: https://help.dyn.com/2-factor-authentication/
 
     - name: Dynadot
@@ -153,8 +155,6 @@ websites:
       tfa: yes
       sms: Yes
       doc: https://www.godaddy.com/help/enabling-two-step-authentication-for-your-godaddy-account-7502
-      exceptions:
-          text: "US numbers only"
 
     - name: Google Domains
       url: https://domains.google.com
