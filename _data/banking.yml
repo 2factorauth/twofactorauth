@@ -191,9 +191,7 @@ websites:
       url: http://www.lloydsbank.com/
       twitter: AskLloydsBank
       img: lloydsbank.png
-      tfa: Yes
-      phone: Yes
-      doc: http://www.lloydsbank.com/help-guidance/security/authentication-procedure.asp
+      tfa: No
 
     - name: MandT Bank
       url: https://www.mtb.com/
@@ -377,4 +375,10 @@ websites:
       url: https://www.zagbank.ca/
       twitter: zagbank
       img: zagbank.png
+      tfa: No
+
+    - name: ZenBanx
+      url: http://zenbanx.ca/
+      twitter: ZenBanx
+      img: zenbanx.png
       tfa: No

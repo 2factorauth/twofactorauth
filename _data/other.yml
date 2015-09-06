@@ -5,6 +5,12 @@ websites:
       img: activecollab.png
       tfa: No
 
+    - name: Adobe ID
+      url: https://accounts.adobe.com/
+      twitter: adobecare
+      img: adobe.png
+      tfa: No
+
     - name: Aerohive Networks
       url: https://www.aerohive.com/
       img: aerohive.png
@@ -47,9 +53,9 @@ websites:
 
     - name: Cloudinary
       url: http://cloudinary.com
-      twitter: cloudinary
       img: cloudinary.png
-      tfa: No
+      tfa: Yes
+      software: Yes
 
     - name: Delighted
       url: https://delightedapp.com/
@@ -63,6 +69,12 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://directadmin.com/features.php?id=1754
+
+    - name: DoorDash
+      url: https://www.doordash.com
+      img: doordash.png
+      twitter: doordash
+      tfa: No
 
     - name: Envato
       url: http://envato.com
@@ -138,12 +150,18 @@ websites:
       phone: Yes
       doc: http://technet.microsoft.com/en-us/library/dn383636.aspx
 
+    - name: StartJOIN
+      url: https://www.startjoin.com/
+      img: startjoin.png
+      tfa: Yes
+      software: Yes
+
     - name: Trello
       url: https://trello.com
-      twitter: trello
       img: trello.png
-      tfa: No
-      status: https://trello.com/c/O6DrHazq/1532-two-factor-authentication
+      tfa: Yes
+      sms: Yes
+      doc: http://help.trello.com/article/993-enabling-two-factor-authentication-for-your-trello-account
 
     - name: US Internal Revenue Service
       url: http://www.irs.gov/Individuals/Get-Transcript
@@ -187,3 +205,17 @@ websites:
       software: Yes
       tfa: Yes
       doc: http://blog.phraseapp.com/post/97556438392/extra-secure-user-accounts-in-phraseapp-with
+
+    - name: Pinboard
+      url: https://pinboard.in/
+      twitter: Pinboard
+      img: pinboard.png
+      tfa: No
+
+    - name: Usabilla
+      url: https://www.usabilla.com
+      img: usabilla.png
+      tfa: Yes
+      software: Yes
+      doc: http://support.usabilla.com/customer/portal/articles/2098444-2-step-authentication
+

@@ -5,6 +5,12 @@ websites:
       img: adp.png
       tfa: No
 
+    - name: Credit Karma
+      url: https://www.creditkarma.com
+      twitter: creditkarma
+      img: creditkarma.png
+      tfa: No
+
     - name: FreeAgent
       url: http://www.freeagent.com
       img: freeagent.png
@@ -15,6 +21,12 @@ websites:
       url: https://www.freshbooks.com
       img: freshbooks.png
       twitter: freshbooks
+      tfa: No
+
+    - name: Geico
+      url: https://www.geico.com/
+      img: geico.png
+      twitter: geico_service
       tfa: No
 
     - name: HelloWallet
@@ -56,7 +68,7 @@ websites:
     - name: Mint Bills (formerly Check)
       url: https://bills.mint.com
       twitter: mintbills
-      img: mint.png
+      img: mintbills.png
       tfa: No
 
     - name: Paychex
@@ -94,10 +106,23 @@ websites:
       software: Yes
       doc: http://help.quickfile.co.uk/main/1/2-factor_authentication.htm
 
+    - name: Ripple Trade
+      url: https://www.rippletrade.com/
+      img: rippletrade.png
+      tfa: Yes
+      sms: Yes
+      doc: https://ripple.com/knowledge_center/using-two-factor-authentication-2fa/
+
     - name: Shoeboxed
       url: https://www.shoeboxed.com/
       twitter: Shoeboxed
       img: shoeboxed.png
+      tfa: No
+
+    - name: SimpleTax
+      url: https://simpletax.ca/
+      twitter: simpletax
+      img: simpletax.png
       tfa: No
 
     - name: Treasury Direct

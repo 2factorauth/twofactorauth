@@ -1,4 +1,11 @@
 websites:
+    - name: Binary Lane
+      url: https://www.binarylane.com.au/
+      img: binarylane.png
+      tfa: Yes
+      software: yes
+      doc: https://www.binarylane.com.au/support/solutions/articles/1000199372-two-factor-authentication
+
     - name: Bluehost
       url: https://www.bluehost.com/
       img: bluehost.png
@@ -22,15 +29,6 @@ websites:
       img: cloudshards.png
       twitter: CloudShards
       tfa: No
-
-    - name: DigitalOcean
-      url: https://www.digitalocean.com/
-      img: digitalocean.png
-      tfa: Yes
-      software: Yes
-      exceptions:
-          text: "SMS-capable phone required."
-      doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
 
     - name: Dreamhost
       url: https://dreamhost.com
@@ -61,23 +59,32 @@ websites:
       tfa: No
       twitter: globat
 
+    - name: Infomaniak
+      url: https://www.infomaniak.com/
+      img: infomaniak.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.infomaniak.ch/en/support/faq/1940
+
     - name: Hetzner Online
       url: https://www.hetzner.de/
       img: hetzner.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      hardware: Yes
 
     - name: iPage
       url: http://www.ipage.com/ipage/index.html
       twitter: iPage
       img: ipage.png
       tfa: No
-
-    - name: Linode
-      url: https://www.linode.com/
-      img: linode.png
+      
+    - name: Mammoth Networks
+      url: https://www.mammoth.net.au/
+      img: mammothnetworks.png
       tfa: Yes
       software: Yes
-      doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
+      doc: https://www.mammoth.net.au/news/2012/10/22/two-factor-authentication-now-available
 
     - name: MaxCDN
       url: https://www.maxcdn.com
@@ -99,6 +106,13 @@ websites:
       sms: Yes
       software: Yes
       doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
+
+    - name: Online
+      url: https://www.online.net/
+      img: online.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
 
     - name: OVH
       url: http://www.ovh.com/

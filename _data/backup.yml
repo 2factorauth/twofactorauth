@@ -20,7 +20,9 @@ websites:
     url: http://www.backblaze.com/
     twitter: backblaze
     img: backblaze.png
-    tfa: No
+    tfa: Yes
+    sms: Yes
+    doc: https://www.backblaze.com/blog/two-factor-verification-for-backblaze/
 
   - name: Bitcasa
     url: http://www.bitcasa.com/
@@ -59,6 +61,7 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
+    hardware: Yes
     doc: https://www.dropbox.com/help/363/en
 
   - name: Evernote
@@ -165,12 +168,6 @@ websites:
     software: Yes
     email: Yes
     doc: https://support.tresorit.com/entries/104192996-How-to-set-up-two-step-verification
-
-  - name: Wuala
-    url: https://wuala.com/
-    twitter: Wuala
-    img: wuala.png
-    tfa: No
 
   - name: Yandex.Disk
     url: https://disk.yandex.com
