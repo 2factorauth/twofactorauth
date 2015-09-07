@@ -26,7 +26,67 @@ hash: SupportTwoFactorAuth
                     <a href="https://github.com/jdavis/twofactorauth">GitHub repo</a>.
                 </div>
             </div>
-
+            <div class="ui divider"></div>
+            <div class="ui form">
+                <div class='two fields'>
+                    <div class="field">
+                        <div class="ui icon input">
+                            <input type="text" id="searchinput" placeholder="Search...">
+                            <i class="search icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <h4>Filters for Sites without TFA</h4>
+                <div class='two fields'>                    
+                    <div class="inline field no-tfa-filter">
+                        <div class="ui checkbox no-tfa-filter">
+                            <input name="noTfa" type="checkbox">
+                            <label>TFA Unsupported</label>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui checkbox no-tfa-filter">
+                            <input name="tfaProgress" type="checkbox">
+                            <label>TFA In-Progress</label>
+                        </div>
+                    </div>
+                </div>
+                <h4>Filters for Sites with TFA</h4>
+                <div class='five fields'>                    
+                    <div class="inline field">
+                        <div class="ui checkbox method-filter">
+                            <input name="sms" type="checkbox">
+                            <label>SMS</label>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui checkbox method-filter">
+                            <input name="phone" type="checkbox">
+                            <label>Phone Call</label>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui checkbox method-filter">
+                            <input name="email" type="checkbox">
+                            <label>Email</label>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui checkbox method-filter">
+                            <input name="hw" type="checkbox">
+                            <label>HW Token</label>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui checkbox method-filter">
+                            <input name="sw" type="checkbox">
+                            <label>SW Implementation</label>
+                        </div>
+                    </div>                                                                                
+                </div>
+            </div>
+            <div class="ui divider"></div>
+            <div id='main-container'>
         {% for section in site.data.main.sections %}
             <div class="section">
                 <table class="ui table celled compact segment">
@@ -65,8 +125,8 @@ hash: SupportTwoFactorAuth
                                 {% assign current_name = website.name | downcase %}
                                 {% if lowercase_name == current_name %}
 
-                                    <tr>
-                                        {% if website.tfa %}
+                                    {% if website.tfa %}
+                                        <tr class='tfa'>
                                             <td class="main positive">
                                             {% if website.img %}
                                                 <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
@@ -82,37 +142,38 @@ hash: SupportTwoFactorAuth
                                             {% endif %}
                                             </td>
 
-                                            <td class="positive icon">
+                                            <td class="positive icon sms">
                                             {% if website.sms %}
                                                 <i class="checkmark large icon"></i>
                                             {% endif %}
                                             </td>
 
-                                            <td class="positive icon">
+                                            <td class="positive icon phone">
                                             {% if website.phone %}
                                                 <i class="checkmark large icon"></i>
                                             {% endif %}
                                             </td>
 
-                                            <td class="positive icon">
+                                            <td class="positive icon email">
                                             {% if website.email %}
                                                 <i class="checkmark large icon"></i>
                                             {% endif %}
                                             </td>
 
-                                            <td class="positive icon">
+                                            <td class="positive icon hw">
                                             {% if website.hardware %}
                                                 <i class="checkmark large icon"></i>
                                             {% endif %}
                                             </td>
 
-                                            <td class="positive icon">
+                                            <td class="positive icon sw">
                                             {% if website.software %}
                                                 <i class="checkmark large icon"></i>
                                             {% endif %}
                                             </td>
                                         </tr>
-                                        {% else %}
+                                    {% else %}
+                                        <tr class='no-tfa{% if website.status %} tfa-progress{% endif %}'>
                                             <td class="main negative">
                                             {% if website.img %}
                                                 <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
@@ -155,7 +216,7 @@ hash: SupportTwoFactorAuth
             {% endunless %}
             </div><!-- Section -->
         {% endfor %}
-
+        </div>
         </div><!-- Column -->
     </div><!-- UI Grid -->
 </div><!-- Main Container -->
