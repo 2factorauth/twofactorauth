@@ -31,10 +31,10 @@ websites:
 
     - name: Bitbucket
       url: https://bitbucket.org
-      twitter: bitbucket
       img: bitbucket.png
-      tfa: No
-      status: https://bitbucket.org/site/master/issues/5811/support-two-factor-authentication-bb-7016#comment-20910749
+      tfa: Yes
+      software: Yes
+      doc: https://confluence.atlassian.com/x/425QLg
 
     - name: Cloud9
       url: https://c9.io
