@@ -137,7 +137,6 @@ The following is an example of a website that *supports* TFA:
 ```yml
     - name: YouTube
       url: https://www.youtube.com/
-      twitter: youtube
       img: youtube.png
       tfa: Yes
       sms: Yes
