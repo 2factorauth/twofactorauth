@@ -86,8 +86,9 @@ td a {
   text-align: center;
 }
 
-.ui.table td.twitter a {
-  font-size: 0.75rem;
+.ui.table td.twitter a,
+.ui.table span.progress a{
+  font-size: 0.8rem;
   text-transform: uppercase;
 }
 
