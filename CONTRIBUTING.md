@@ -258,10 +258,10 @@ sensitive action would not be considered Two Factor Authentication.
 
 For context, check out the discussion in [#242][242].
 
-[242]: https://github.com/jdavis/twofactorauth/issues/242
+[242]: https://github.com/2factorauth/twofactorauth/issues/242
 [exclude]: /EXCLUSION.md
 [bundler]: http://bundler.io/
 [gemfile]: /Gemfile
 [jekyll]: http://jekyllrb.com/
-[travis]: https://travis-ci.org/jdavis/twofactorauth
+[travis]: https://travis-ci.org/2factorauth/twofactorauth
 [yaml]: http://www.yaml.org/
