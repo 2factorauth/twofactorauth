@@ -38,6 +38,7 @@ hash: SupportTwoFactorAuth
                             <th>Email</th>
                             <th>Hardware Token</th>
                             <th>Software Implementation</th>
+			    <th>Account Recovery</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -110,6 +111,12 @@ hash: SupportTwoFactorAuth
                                                 <i class="checkmark large icon"></i>
                                             {% endif %}
                                             </td>
+
+					    <td class="positive icon">
+					    {% if website.recovery %}
+						<a href="{{ website.recovery }}"><i class="external url link large icon"></i></a>
+				    	    {% endif %}
+					    </td>
                                         </tr>
                                         {% else %}
                                             <td class="main negative">
@@ -127,7 +134,7 @@ hash: SupportTwoFactorAuth
                                             {% endif %}
                                             </td>
                                             {% if website.twitter %}
-                                                <td class="twitter main negative" colspan="6">
+                                                <td class="twitter main negative" colspan="7">
                                                 {% if website.status %}
                                                     <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
                                                 {% else %}
@@ -141,6 +148,7 @@ hash: SupportTwoFactorAuth
                                                 <td class="negative icon"><i class="remove large icon"></i></td>
                                                 <td class="negative icon"><i class="remove large icon"></i></td>
                                                 <td class="negative icon"><i class="remove large icon"></i></td>
+						<td class="negative icon"><i class="remove large icon"></i></td>
                                             {% endif %}
                                         {% endif %}
                                 {% endif %}
