@@ -5,6 +5,7 @@ websites:
     software: Yes
     img: aerofs.png
     doc: https://blog.aerofs.com/two-factor-authentication-for-hybrid-and-private-cloud/
+    recovery: https://support.aerofs.com/hc/en-us/articles/202645974-How-Can-I-Recover-Access-To-My-Two-Factor-Authentication-Enabled-Account-
 
   - name: Apple iCloud
     url: https://www.icloud.com
@@ -15,6 +16,7 @@ websites:
     exceptions:
         text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
     doc: http://support.apple.com/kb/ht5570
+    recovery: https://support.apple.com/en-us/HT202649
 
   - name: Backblaze
     url: http://www.backblaze.com/
@@ -63,6 +65,7 @@ websites:
     software: Yes
     hardware: Yes
     doc: https://www.dropbox.com/help/363/en
+    recovery: https://www.dropbox.com/en/help/364
 
   - name: Evernote
     url: https://evernote.com
@@ -88,6 +91,7 @@ websites:
     software: Yes
     hardware: Yes
     doc: http://www.google.com/intl/en-US/landing/2step/features.html
+    recovery: https://support.google.com/accounts/answer/185834?hl=en#phone
 
   - name: IDrive
     url: https://www.idrive.com
@@ -177,6 +181,7 @@ websites:
     exceptions:
         text: "SMS-capable phone required for initial setup."
     doc: https://yandex.com/support/passport/authorization/twofa.xml
+    recovery: https://yandex.com/support/passport/authorization/twofa-restore.xml
 
   - name: Zetta.net
     url: http://zetta.net/
