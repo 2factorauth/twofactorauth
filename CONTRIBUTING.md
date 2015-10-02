@@ -113,7 +113,6 @@ already be defined; simply add a new website to it as shown in the following exa
 websites:
   - name: Site Name
     url: https://www.site.com/
-    twitter: SiteTwitter
     img: site.png
     tfa: Yes
     sms: Yes
@@ -174,7 +173,6 @@ website. There are 4 ways to customize how it is displayed:
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
       sms: Yes
