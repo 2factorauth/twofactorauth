@@ -4,7 +4,7 @@ Contributing to 2FA.org
 All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
 
-To add a new site, go to the [data files](_data/) and get familiar with how it
+To add a new site, go to the [data/devices files](_data/devices/) and get familiar with how it
 is setup. There is a section and coresponding file for each Category and they
 all follow this syntax:
 
@@ -69,7 +69,7 @@ View the complete list in the [EXCLUSION.md file][exclude].
 
 ## New Sections
 
-To add a new section, modify the `sections` value in [main.yml](_data/main.yml)
+To add a new section, modify the `sections` value in [main.yml](_data/devices/main.yml)
 and follow the template below:
 
 ```yml
@@ -79,7 +79,7 @@ sections:
     icon: icon-class
 ```
 
-Then create a new file in the `_data` directory named the same as your section's
+Then create a new file in the `_data/devices/` directory named the same as your section's
 id with the `.yml` extension.
 
 ## New Sites
