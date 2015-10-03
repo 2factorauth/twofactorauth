@@ -7,6 +7,7 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://aws.amazon.com/iam/details/mfa/
+      recovery: http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_lost-or-broken.html
 
     - name: appFog
       url: https://www.appfog.com/
@@ -54,6 +55,7 @@ websites:
       exceptions:
           text: "Currently in beta as of June 5th 2014. Create a support ticket to request 2FA added to your organization"
       doc: https://support.cloud.engineyard.com/entries/40538256-Two-factor-authentication
+      recovery: https://support.cloud.engineyard.com/hc/communities/public/questions/203752678-Two-factor-authentication
 
     - name: fortrabbit
       url: http://www.fortrabbit.com/
@@ -73,6 +75,7 @@ websites:
       phone: Yes
       hardware: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      recovery: https://support.google.com/accounts/answer/185834?hl=en#phone
 
     - name: Heroku
       url: https://www.heroku.com/
@@ -81,6 +84,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://devcenter.heroku.com/articles/two-factor-authentication
+      recovery: https://devcenter.heroku.com/articles/two-factor-authentication#recovering-from-lock-out
 
     - name: HP Cloud
       url: https://www.hpcloud.com/
@@ -101,6 +105,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.linode.com/docs/security/linode-manager-security-controls 
+      recovery: https://www.linode.com/docs/security/linode-manager-security-controls
 
     - name: Microsoft Azure
       url: http://azure.microsoft.com/
@@ -110,6 +115,7 @@ websites:
       phone: Yes
       software: Yes
       doc: http://msdn.microsoft.com/en-us/library/azure/dn249471.aspx
+      recovery: https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-faq/
 
     - name: OpenShift
       url: https://www.openshift.com/
@@ -131,6 +137,7 @@ websites:
       tfa: Yes
       sms: Yes
       doc: http://www.rackspace.com/knowledge_center/article/multi-factor-authentication-from-the-cloud-control-panel
+      recovery: http://www.rackspace.com/knowledge_center/article/multi-factor-authentication-from-the-cloud-control-panel#troubleshoot
 
     - name: RightScale
       url: http://www.rightscale.com/
@@ -144,6 +151,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
+      recovery: https://scalr-wiki.atlassian.net/wiki/display/docs/Resetting+Two-Factor+Authentication
 
     - name: SingleHop
       url: http://www.singlehop.com
