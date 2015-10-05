@@ -11,6 +11,8 @@ websites:
       tfa: Yes
       hardware: Yes
       doc: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/protect_your_account
+      exceptions:
+          text: "Password length limited to 8 characters. To correctly activate 2FA, make sure your password is at most 8 characters in length, which should be followed by the token code when logging in."
 
     - name: E*Trade
       url: https://www.etrade.com/
@@ -28,12 +30,8 @@ websites:
       software: Yes
       hardware: Yes
       doc: /notes/fidelity/
-
-    - name: HealthEquity
-      url: http://www.healthequity.com/
-      twitter: healthequity
-      img: healthequity.png
-      tfa: No
+      exceptions:
+          text: "2FA only available on investment accounts. Not available for 401K plans."
 
     - name: Interactive Brokers
       url: https://www.interactivebrokers.com

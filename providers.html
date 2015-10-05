@@ -4,22 +4,25 @@ layout: default
 
 {% include header.html page='providers' %}
 
-<div class="ui center aligned icon header">
-    <i class="circular mobile icon"></i>
+<div class="main container">
+    <div class="ui grid">
+        <div class="column">
+            <div class="banner ui icon header">
+                <i class="circular mobile icon"></i>
+                <h2>Two Factor Auth (2FA)</h2>
+                <div class="sub header">
+                    List of websites and whether or not they support
+                    <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
+                </div>
+                <div id="{{ first.id }}" class="sub header">
+                    Add your own favorite site by submitting a pull request on the
+                    <a href="https://github.com/jdavis/twofactorauth">GitHub repo</a>.
+                </div>
+            </div>
 
-    <h2>Two Factor Auth (2FA)</h2>
-
-    <div class="sub header">
-        List of websites and whether or not they support
-        <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
-    </div>
-    <div id="{{ first.id }}" class="sub header">
-        Add your own favorite site by submitting a pull request on the
-        <a href="https://github.com/2factorauth/twofactorauth">GitHub repo</a>.
-    </div>
-</div>
-
-<div class="ui raised padded segment">
-    The providers page has been removed. To find a two factor authentication provider, please use your favorite
-    search engine.
-</div>
+            <div class="section">
+                The providers page has been removed. To find a two factor authentication provider, please use your favorite search engine.
+            </div><!-- Section -->
+        </div><!-- Column -->
+    </div><!-- UI Grid -->
+</div><!-- Main Container -->

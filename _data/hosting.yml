@@ -1,11 +1,4 @@
 websites:
-    - name: Binary Lane
-      url: https://www.binarylane.com.au/
-      img: binarylane.png
-      tfa: Yes
-      software: yes
-      doc: https://www.binarylane.com.au/support/solutions/articles/1000199372-two-factor-authentication
-
     - name: Bluehost
       url: https://www.bluehost.com/
       img: bluehost.png
@@ -29,6 +22,15 @@ websites:
       img: cloudshards.png
       twitter: CloudShards
       tfa: No
+
+    - name: DigitalOcean
+      url: https://www.digitalocean.com/
+      img: digitalocean.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "SMS-capable phone required."
+      doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
 
     - name: Dreamhost
       url: https://dreamhost.com
@@ -59,25 +61,10 @@ websites:
       tfa: No
       twitter: globat
 
-    - name: Infomaniak
-      url: https://www.infomaniak.com/
-      img: infomaniak.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.infomaniak.ch/en/support/faq/1940
-
-    - name: InMotion Hosting
-      url: https://www.inmotionhosting.com/
-      twitter: inmotionhosting
-      img: inmotion.png
-      tfa: No
-
     - name: Hetzner Online
       url: https://www.hetzner.de/
       img: hetzner.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
+      tfa: No
 
     - name: iPage
       url: http://www.ipage.com/ipage/index.html
@@ -85,12 +72,12 @@ websites:
       img: ipage.png
       tfa: No
 
-    - name: Mammoth Networks
-      url: https://www.mammoth.net.au/
-      img: mammothnetworks.png
+    - name: Linode
+      url: https://www.linode.com/
+      img: linode.png
       tfa: Yes
       software: Yes
-      doc: https://www.mammoth.net.au/news/2012/10/22/two-factor-authentication-now-available
+      doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
 
     - name: MaxCDN
       url: https://www.maxcdn.com
@@ -113,13 +100,6 @@ websites:
       software: Yes
       doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
 
-    - name: Online
-      url: https://www.online.net/
-      img: online.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-
     - name: OVH
       url: http://www.ovh.com/
       img: ovh.png
@@ -127,13 +107,6 @@ websites:
       sms: Yes
       software: Yes
       twitter: ovh_support_en
-
-    - name: PlanetHoster
-      url: https://planethoster.net
-      img: PlanetHoster.png
-      tfa: Yes
-      software: Yes
-      doc: http://blog.planethoster.net/securite-espace-client-planethoster/
 
     - name: Rackspace
       url: https://www.rackspace.com/
@@ -169,7 +142,7 @@ websites:
       twitter: squarespace
       img: squarespace.png
       tfa: No
-
+      
     - name: UKFast
       url: http://www.ukfast.co.uk/
       img: ukfast.png
@@ -191,12 +164,3 @@ websites:
       twitter: webfaction
       img: webfaction.png
       tfa: No
-
-    - name: Ukraine
-      url: https://www.ukraine.com.ua/
-      img: ukraine.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.ukraine.com.ua/faq/rekomendatsii-po-zashchite-ot-vzloma-uchetnoj-zapisi.html

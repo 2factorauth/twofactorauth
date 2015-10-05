@@ -29,7 +29,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://bitgo.zendesk.com/hc/en-us/sections/201009049-Two-Factor-Authentication-Help-Page
+      doc: http://bitgoinc.com/guides/setup-bitgo-secure-wallet-guide/
 
     - name: Bitpay
       url: https://bitpay.com
@@ -37,14 +37,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://bitpay.com/two-factor
-
-    - name: Bitreserve
-      url: https://bitreserve.org
-      img: bitreserve.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.bitreserve.org/hc/en-us/articles/202409609-How-does-phone-number-verification-work-
 
     - name: Bitstamp
       url: https://bitstamp.net
@@ -60,13 +52,6 @@ websites:
       software: Yes
       doc: https://support.btc-e.com/index.php?/Knowledgebase/Article/View/97/25/how-do-i-set-2-factor-authentication-to-my-btc-e-account
 
-    - name: BTCJam
-      url: https://www.btcjam.com
-      img: btcjam.png
-      tfa: Yes
-      software: Yes
-      doc: http://help.btcjam.com/customer/portal/articles/1987686
-      
     - name: Blockchain
       url: https://blockchain.info/
       img: blockchain.png
@@ -151,9 +136,7 @@ websites:
       url: https://coinkite.com
       img: coinkite.png
       tfa: Yes
-      sms: Yes
       software: Yes
-      hardware: Yes
       doc: https://coinkite.com/settings/pws
 
     - name: Coinsetter

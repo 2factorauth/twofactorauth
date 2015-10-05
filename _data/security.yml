@@ -1,12 +1,9 @@
 websites:
     - name: CAcert
-      url: http://www.cacert.org/
+      url: https://www.cacert.org/
       twitter: CAcert_News
       img: cacert.png
-      tfa: Yes
-      hardware: Yes
-      exceptions:
-          text: "Requires X.509-capable cryptotoken or smartcard."
+      tfa: No
 
     - name: DigiCert
       url: http://www.digicert.com/
@@ -44,12 +41,6 @@ websites:
       img: geotrust.png
       tfa: Yes
       email: Yes
-
-    - name: GoGetSSL
-      url: https://gogetssl.com/
-      img: gogetssl.png
-      tfa: No
-      twitter: gogetssl
 
     - name: Norton
       url: http://us.norton.com

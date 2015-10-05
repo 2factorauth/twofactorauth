@@ -20,9 +20,7 @@ websites:
     url: http://www.backblaze.com/
     twitter: backblaze
     img: backblaze.png
-    tfa: Yes
-    sms: Yes
-    doc: https://www.backblaze.com/blog/two-factor-verification-for-backblaze/
+    tfa: No
 
   - name: Bitcasa
     url: http://www.bitcasa.com/
@@ -61,7 +59,6 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
-    hardware: Yes
     doc: https://www.dropbox.com/help/363/en
 
   - name: Evernote
@@ -131,12 +128,12 @@ websites:
     doc: https://revert.io/blog/how-to-enable-two-factor-authentication/
 
   - name: SmartBox
-    url: https://www.panterranetworks.com/smartbox/smartbox_overview.php
+    url: http://www.panterranetworks.com/SmartBox/index.php
     img: smartbox.png
     tfa: Yes
     email: Yes
     software: Yes
-    doc: https://www.panterranetworks.com/smartbox/sb_features/sbf_security.php
+    doc: http://www.panterranetworks.com/SmartBox/features/security.php
 
   - name: SpiderOak
     url: https://spideroak.com
@@ -169,6 +166,12 @@ websites:
     email: Yes
     doc: https://support.tresorit.com/entries/104192996-How-to-set-up-two-step-verification
 
+  - name: Wuala
+    url: https://wuala.com/
+    twitter: Wuala
+    img: wuala.png
+    tfa: No
+
   - name: Yandex.Disk
     url: https://disk.yandex.com
     img: yandexdisk.png
@@ -176,7 +179,7 @@ websites:
     software: Yes
     exceptions:
         text: "SMS-capable phone required for initial setup."
-    doc: https://yandex.com/support/passport/authorization/twofa.xml
+    doc: http://help.yandex.com/passport/authorization/twofa.xml
 
   - name: Zetta.net
     url: http://zetta.net/

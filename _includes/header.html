@@ -1,4 +1,12 @@
-<div class="ui teal inverted menu">
+<div class="ui inverted teal main menu">
+    <div class="menu">
+        <div class="right menu">
+            <a href="{{ site.repo }}" class="item">
+                <i class="github icon"></i>
+                Contribute
+            </a>
+        </div>
+
     {% if include.page == 'home' %}
         <a href="/" class="active item">
     {% else %}
@@ -29,13 +37,6 @@
         </div>
     {% endif %}
 
-    <div class="right menu">
-        <a href="{{ site.repo }}" class="item">
-            <i class="github alternate icon"></i>
-            Contribute
-        </a>
-    </div>
-
 {% if 1 == 0 %}
 <!-- Don't show for right now -->
     {% if include.page == 'restrictions' %}
@@ -48,4 +49,5 @@
         </a>
 {% endif %}
 
+    </div>
 </div>

@@ -27,15 +27,8 @@ websites:
       url: https://www.dwolla.com
       twitter: dwolla
       img: dwolla.png
-      tfa: Yes
-      software: Yes
-      doc: http://help.dwolla.com/customer/portal/articles/2068158-two-factor-authentication-faq?b_id=5438
-
-    - name: Flattr
-      img: flattr.png
-      url: https://flattr.com
-      twitter: flattr
       tfa: No
+      status: https://twitter.com/dwolla/status/611900566281822208
 
     - name: GoCardless
       img: gocardless.png
@@ -96,11 +89,7 @@ websites:
       url: https://squareup.com
       twitter: square
       img: squareup.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-        text: "Currently only US merchants, protects only Dashboard access"
-      doc: https://squareup.com/help/us/en/article/5593-2-step-verification
+      tfa: No
 
     - name: Venmo
       url: https://venmo.com
