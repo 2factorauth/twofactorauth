@@ -134,6 +134,11 @@ td img.icon {
   margin: 2em 0;
 }
 
+.ui.popup > .content {
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
 @media (min-width: 767px) {
   .menu {
     padding: 0 10%;
