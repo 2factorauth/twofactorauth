@@ -1,7 +1,7 @@
 sections:
   - id: backup
     title: Backup and Sync
-    icon: hdd
+    icon: disk outline
 
   - id: banking
     title: Banking
@@ -57,7 +57,7 @@ sections:
 
   - id: identity
     title: Identity Management
-    icon: basic id
+    icon: user
 
   - id: investing
     title: Investing
@@ -86,6 +86,10 @@ sections:
   - id: social
     title: Social
     icon: users
+    
+  - id: transport
+    title: Transport
+    icon: car
 
   - id: utilities
     title: Utilities

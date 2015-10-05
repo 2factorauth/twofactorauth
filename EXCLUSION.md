@@ -6,4 +6,4 @@
       and care about their security, they just disagree on the definition of
       2FA.
 
-[1password]: https://github.com/jdavis/twofactorauth/issues/585
+[1password]: https://github.com/2factorauth/twofactorauth/issues/585

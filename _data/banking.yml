@@ -1,4 +1,10 @@
 websites:
+    - name: Actors Federal Credit Union
+      url: http://www.actorsfcu.com/
+      twitter: ActorsFCU
+      img: actorsfcu.png
+      tfa: No
+
     - name: Ally Bank
       url: http://www.ally.com/
       img: allybank.png
@@ -46,7 +52,7 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
-      doc: http://ask.barclays.co.uk/help/online_banking/whatis_pinsentry
+      doc: https://ask.barclays.co.uk/help/security/protection
 
     - name: Barclays US
       url: https://www.banking.barclaysus.com/index.html
@@ -185,9 +191,7 @@ websites:
       url: http://www.lloydsbank.com/
       twitter: AskLloydsBank
       img: lloydsbank.png
-      tfa: Yes
-      phone: Yes
-      doc: http://www.lloydsbank.com/help-guidance/security/authentication-procedure.asp
+      tfa: No
 
     - name: MandT Bank
       url: https://www.mtb.com/
@@ -220,7 +224,7 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
-      doc: https://www.therightbank.com/files/capital-pacific-bank-online-services-instructions.pdf
+      doc: https://www.therightbank.com/sites/www.therightbank.com/files/files/online-services-instructions.pdf
 
     - name: Patelco Credit Union
       url: https://www.patelco.org/
@@ -242,6 +246,12 @@ websites:
       url: https://www.pnc.com/
       twitter: pncnews
       img: pncbank.png
+      tfa: No
+      
+    - name: Postbank
+      url: https://www.postbank.com/
+      twitter: postbank
+      img: postbank.png
       tfa: No
 
     - name: Raiffeisen Bank CZ
@@ -269,6 +279,12 @@ websites:
       img: sffirecu.png
       tfa: No
       status: https://twitter.com/sffirecu/status/577532435228991488
+
+    - name: Santa Clara County Federal Credit Union
+      url: https://www.sccfcu.org/
+      twitter: SCCFCU
+      img: sccfcu.png
+      tfa: No
 
     - name: SEB
       url: http://www.seb.se/pow/default.asp
@@ -324,6 +340,12 @@ websites:
       img: tdbank.png
       tfa: No
 
+    - name: TD Canada Trust
+      url: https://www.tdcanadatrust.com
+      twitter: TD_Canada
+      img: tdbank.png
+      tfa: No
+
     - name: US Bank
       url: https://www.usbank.com/
       twitter: usbank
@@ -353,14 +375,16 @@ websites:
       url: https://www.wellsfargo.com/
       twitter: WellsFargo
       img: wellsfargo.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      doc: https://www.wellsfargo.com/privacy-security/advanced-access/
+      tfa: No
 
     - name: Zag Bank
       url: https://www.zagbank.ca/
       twitter: zagbank
       img: zagbank.png
+      tfa: No
+
+    - name: ZenBanx
+      url: http://zenbanx.ca/
+      twitter: ZenBanx
+      img: zenbanx.png
       tfa: No

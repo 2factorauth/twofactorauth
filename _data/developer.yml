@@ -31,9 +31,10 @@ websites:
 
     - name: Bitbucket
       url: https://bitbucket.org
-      twitter: bitbucket
       img: bitbucket.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://confluence.atlassian.com/x/425QLg
 
     - name: Cloud9
       url: https://c9.io
@@ -94,6 +95,7 @@ websites:
       img: github.png
       tfa: Yes
       sms: Yes
+      hardware: Yes
       software: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
@@ -102,7 +104,7 @@ websites:
       img: gitlab.png
       tfa: Yes
       software: Yes
-      doc: http://doc.gitlab.com/ee/workflow/two_factor_authentication.html
+      doc: http://doc.gitlab.com/ee/profile/two_factor_authentication.html
       exceptions:
           text: "Two factor authentication for LDAP is only avaliable in the Enterprise Edition."
 
@@ -167,10 +169,22 @@ websites:
       img: newrelic.png
       tfa: No
 
+    - name: Papertrail
+      url: https://papertrailapp.com/
+      twitter: papertrailapp
+      img: papertrail.png
+      tfa: No
+
     - name: Pivotal Tracker
       url: https://www.pivotaltracker.com
       twitter: pivotaltracker
       img: pivotaltracker.png
+      tfa: No
+
+    - name: PyPI
+      url: https://pypi.python.org/
+      twitter: pypi
+      img: pypi.png
       tfa: No
 
     - name: PythonAnywhere
@@ -186,6 +200,12 @@ websites:
       sms: Yes
       software: Yes
       doc: http://support.beanbaginc.com/support/solutions/articles/3000006998-enabling-two-factor-authentication
+
+    - name: SourceForge
+      url: http://sourceforge.net/
+      twitter: sourceforge
+      img: sourceforge.png
+      tfa: No
 
     - name: Status.io
       url: https://status.io/

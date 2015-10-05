@@ -5,8 +5,8 @@ All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
 
 To add a new site, go to the [data files](_data/) and get familiar with how it
-is setup. There is a section and coresponding file for each Category. Site icons
-are stored in folders corresponding to each of those categories in their own 
+is setup. There is a section and corresponding file for each Category. Site icons
+are stored in folders corresponding to each of those categories in their own
 [folder](img/).
 
 ## Guidelines
@@ -16,7 +16,7 @@ are stored in folders corresponding to each of those categories in their own
    merged. Travis will only check your changes after you submit a pull request.
    If you want to test locally, instructions are listed below. Keep reading!
 2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
-   preffered format. If possible, please also run the image through an optimizing 
+   preferred format. If possible, please also run the image through an optimizing
    utility such as OptiPNG before committing it to the repo.
 3. **Be Awesome**: You need to be awesome. That is all.
 
@@ -55,26 +55,28 @@ everything for you.
 
 ## Site Criteria
 
-The following is a rough criteria and explanations for what sites should be on
-TFA.org. If one of the following Criteria is met, it belongs on TFA.org:
+The following section contains rough criteria and explanations regarding
+what websites should be listed on TFA.org. If one of the following
+criteria is met, it belongs on TFA.org:
 
 1. **Personal Info/Image**: Any site that deals with personal info or a person's
    image. An example of a site with **Personal Info** would be their Amazon
    account and a site regarding **Personal Image** would be one like Twitter.
-2. **Data**: This means data that is either important or sensitive. It also is
-   any data relating to Criteria 1.
+2. **Data**: This criteria relates to data that is either important or sensitive.
+   Websites detailed in criteria 1 also fit this criteria.
 3. **Money**: Any site that deals with money.
-4. **Control**: This is a more general Criteria that includes sites that give
-   access to things that might infringe upon Criteria 1, 2, and 3. An example of
-   this is a site that allows remote access.
+4. **Control**: This criteria is more general, in that it includes sites that
+   give access to things that may infringe upon criteria 1, 2, or 3. An example
+   of this is a website that allows remote access to a device.
 
 If you have any questions regarding whether or not a site matches one of the
-Criteria, just open an Issue and we'll take a look.
+criteria, simply open an issue and we'll take a look.
 
 ### Excluded Sites
 
 A list for excluded sites has also been created to ensure sites that have been
-removed don't get re-added. The list also contains the reason for its removal.
+removed are not added in the future. The list also contains the reason for
+its removal.
 
 View the complete list in the [EXCLUSION.md file][exclude].
 
@@ -90,23 +92,27 @@ sections:
     icon: icon-class
 ```
 
-Then create a new file in the `_data` directory named the same as your section's
-id with the `.yml` extension.
+Then create a new file in the `_data` directory with the same name as your section's
+id, using the `.yml` extension.
 
 ## New Sites
 
 First and foremost, make sure the new site meets our [definition
 requirements](#a-note-on-definitions) for Two Factor Auth.
 
-The values should be pretty straight forward for adding a new website. The
-`websites` array should already be defined, just add a new website to it like
-this example:
+If you are adding multiple sites to the TwoFactorAuth list, please create a new
+git branch for each website, and submit a separate pull request for each branch.
+More information regarding how to create new git branches can be on
+[GitHub's Help Page](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/)
+or [DigitalOcean's Tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-git-branches).
+
+Adding a new website should be pretty straight-forward. The `websites` array should
+already be defined; simply add a new website to it as shown in the following example:
 
 ```yml
 websites:
   - name: Site Name
     url: https://www.site.com/
-    twitter: SiteTwitter
     img: site.png
     tfa: Yes
     sms: Yes
@@ -116,14 +122,45 @@ websites:
     hardware: Yes
     doc: <link to site TFA documentation>
 ```
-Fields `name:`, `url:`, `img:`, `tfa:` are required for all entries. If a site 
-does not provide TFA, `twitter:` should be included if they have one. If a site 
-does provide TFA, `doc:` field is strongly encouraged where public documentation 
-is available. Other fields should be included if the site supports it. Any services 
-that are not supported can be excluded.
 
-If you are adding multiple sites, please add each site to its own new branch and 
-submit a separate pull request for each branch.
+The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
+
+#### Adding a site that *supports* TFA
+
+If a site does provide TFA, it is strongly recommended that you add the `doc:`
+field where public documentation is available. Other fields should be included
+if the website supports them. Any services that are not supported can be excluded.
+Sites supporting TFA should not have a Twitter field.
+
+The following is an example of a website that *supports* TFA:
+
+```yml
+    - name: YouTube
+      url: https://www.youtube.com/
+      img: youtube.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      phone: Yes
+      hardware: Yes
+      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+```
+
+#### Adding a site that *does not* support TFA
+
+If a site does not provide TFA, the `twitter:` field should be included if the site uses
+Twitter. The fields `sms:`, `email:`, `phone:`, `software:` and `hardware:` can be
+completely removed.
+
+The following is an example of a website that *does not* supports TFA:
+
+```yml
+    - name: Netflix
+      url: https://www.netflix.com/us/
+      twitter: Netflixhelps
+      img: netflix.png
+      tfa: No
+```
 
 ### Exceptions & Restrictions
 
@@ -136,7 +173,6 @@ website. There are 4 ways to customize how it is displayed:
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
       sms: Yes
@@ -148,7 +184,6 @@ website. There are 4 ways to customize how it is displayed:
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
       sms: Yes
@@ -162,7 +197,6 @@ website. There are 4 ways to customize how it is displayed:
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
       sms: Yes
@@ -175,7 +209,6 @@ website. There are 4 ways to customize how it is displayed:
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
       sms: Yes
@@ -217,14 +250,14 @@ considered Two Factor Auth.
 As an example, a site that prompts you for an authentication token following
 user login would be considered Two Factor Auth. A site that does not prompt you
 for a token upon login, but prompts you for a token when you try to perform a
-  sensitive action would not be considered Two Factor Auth.
+sensitive action would not be considered Two Factor Authentication.
 
 For context, check out the discussion in [#242][242].
 
-[242]: https://github.com/jdavis/twofactorauth/issues/242
+[242]: https://github.com/2factorauth/twofactorauth/issues/242
 [exclude]: /EXCLUSION.md
 [bundler]: http://bundler.io/
 [gemfile]: /Gemfile
 [jekyll]: http://jekyllrb.com/
-[travis]: https://travis-ci.org/jdavis/twofactorauth
+[travis]: https://travis-ci.org/2factorauth/twofactorauth
 [yaml]: http://www.yaml.org/
