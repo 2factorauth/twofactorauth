@@ -1,7 +1,6 @@
 sudo: false
 language: ruby
 cache: bundler
-install: travis_wait bundle install
 rvm:
     - 2.1.1
 notifications:
