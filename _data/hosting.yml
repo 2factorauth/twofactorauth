@@ -34,12 +34,12 @@ websites:
       url: https://www.digitalocean.com/
       img: digitalocean.png
       tfa: Yes
-	  sms: Yes
-	  Software: Yes
+      sms: Yes
+      software: Yes
 	  exceptions:
-		link: https://www.digitalocean.com/community/search?q=Two-Factor+SSH+Authentication
+	    link: https://www.digitalocean.com/community/search?q=Two-Factor+SSH+Authentication
 		text: sms is only available to disable tfa before logging in. You can also enable tfa on ssh servers (optional).
-
+	  
     - name: Dreamhost
       url: https://dreamhost.com
       img: dreamhost.png
