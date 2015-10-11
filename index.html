@@ -68,8 +68,8 @@ hash: SupportTwoFactorAuth
                                         {% if website.tfa %}
                                             <td class="main positive">
                                             {% if website.img %}
-                                                <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
                                                 <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
+                                                <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
                                             {% endif %}
                                                 <a href="{{ website.url }}">{{ website.name }}</a>
                                                 {% include exception.html website=website %}
@@ -114,8 +114,8 @@ hash: SupportTwoFactorAuth
                                         {% else %}
                                             <td class="main negative">
                                             {% if website.img %}
-                                                <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
                                                 <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
+                                                <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
                                             {% endif %}
                                                 <a href="{{ website.url }}">{{ website.name }}</a>
                                             {% if website.status %}
@@ -127,7 +127,7 @@ hash: SupportTwoFactorAuth
                                             {% endif %}
                                             </td>
                                             {% if website.twitter %}
-                                                <td class="twitter main negative" colspan="6">
+                                                <td class="twitter negative" colspan="6">
                                                 {% if website.status %}
                                                     <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
                                                 {% else %}
