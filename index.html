@@ -27,7 +27,7 @@ hash: SupportTwoFactorAuth
         <div class="column">
 
         {% for section in site.data.main.sections %}
-            <div class="section">
+            <div class="section" id="{{ section.id }}">
                 <table class="ui celled unstackable table">
                     <thead>
                         <tr>
