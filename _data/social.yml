@@ -1,11 +1,4 @@
 websites:
-    - name: Zocle
-      url: https://zocle.com/
-      img: zocle.png
-      tfa: Yes
-      sms: Yes
-      doc: http://university.zocle.com/2015/03/30/new-security-feature-two-step-verification/
-
     - name: about.me
       url: https://about.me
       twitter: aboutdotme
@@ -34,7 +27,7 @@ websites:
       img: bufferapp.png
       tfa: Yes
       sms: Yes
-      software: Yes
+     software: Yes
       doc: https://blog.bufferapp.com/introducing-the-safest-social-media-publishing-on-the-web
 
     - name: Facebook
@@ -152,3 +145,10 @@ websites:
       exceptions:
           text: "SMS-capable phone required."
       doc: https://en.support.wordpress.com/security/two-step-authentication/
+
+    - name: Zocle
+      url: https://zocle.com/
+      img: zocle.png
+      tfa: Yes
+      sms: Yes
+      doc: http://university.zocle.com/2015/03/30/new-security-feature-two-step-verification/
