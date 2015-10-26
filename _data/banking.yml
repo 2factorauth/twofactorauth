@@ -103,8 +103,11 @@ websites:
       url: http://www.cibc.ca
       twitter: cibc
       img: cibc.png
-      tfa: No
-      status: https://www.cibc.com/ca/features/banking-enhancements.html?sf3204759=1
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes 
+      doc: https://www.cibc.com/ca/features/banking-enhancements.html?sf3204759=1
 
     - name: Citibank
       url: https://online.citibank.com/US/Welcome.c
