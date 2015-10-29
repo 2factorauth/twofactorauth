@@ -45,7 +45,14 @@ websites:
       tfa: Yes
       otp: Yes
       doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
-
+ 
+    - name: MiiCard
+      url: http://www.miicard.com/
+      img: miicard.png
+      tfa: Yes
+      otp: Yes
+      doc: http://support.miicard.com/hc/communities/public/questions/204691829-Add-a-YubiKey-to-your-miiCard
+ 
     - name: MyDigipass.com
       url: https://mydigipass.com/
       img: mydigipass.png
