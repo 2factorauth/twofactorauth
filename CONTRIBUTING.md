@@ -98,11 +98,8 @@ websites:
     twitter: SiteTwitter
     img: site.png
     tfa: Yes
-    sms: Yes
-    email: Yes
-    phone: Yes
-    software: Yes
-    hardware: Yes
+    otp: Yes
+    u2f: Yes
     doc: <link to site 2FA documentation>
 ```
 Fields `name:`, `url:`, `img:`, `tfa:` are required for all entries. If available, `twitter:` should be included. If a site provides tfa, `doc:` field is strongly encouraged. Other fields should be included as appropriate.
@@ -121,7 +118,7 @@ website. There are 4 ways to customize how it is displayed:
       twitter: SiteTwitter
       img: site.png
       tfa: Yes
-      sms: Yes
+      otp: Yes
       exceptions: Yes
       doc: <link to site 2FA documentation>
    ```
@@ -133,7 +130,7 @@ website. There are 4 ways to customize how it is displayed:
       twitter: SiteTwitter
       img: site.png
       tfa: Yes
-      sms: Yes
+      otp: Yes
       exceptions:
           text: "Specific text goes here."
       doc: <link to site 2FA documentation>
@@ -147,7 +144,7 @@ website. There are 4 ways to customize how it is displayed:
       twitter: SiteTwitter
       img: site.png
       tfa: Yes
-      sms: Yes
+      otp: Yes
       exceptions:
           link: Yes
       doc: <link to site 2FA documentation>
@@ -160,7 +157,7 @@ website. There are 4 ways to customize how it is displayed:
       twitter: SiteTwitter
       img: site.png
       tfa: Yes
-      sms: Yes
+      otp: Yes
       exceptions:
           link: Yes
           text: "Specific text can go here as well."
@@ -218,11 +215,8 @@ where appropriate.
   - name: Company Name
     url: https://example.com
     img: company.png
-    sms: Yes
-    email: Yes
-    phone: Yes
-    software: Yes
-    hardware: Yes
+    otp: Yes
+    u2f: Yes
 ```
 
 [242]: https://github.com/jdavis/twofactorauth/issues/242
