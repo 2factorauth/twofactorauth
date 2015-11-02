@@ -1,12 +1,13 @@
-Contributing to 2FA.org
+Contributing to DongleAuth.info
 =======================
 
 All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
 
-To add a new site, go to the [data/devices files](_data/devices/) and get familiar with how it
-is setup. There is a section and coresponding file for each Category and they
-all follow this syntax:
+To add a new site, go to the [`data/devices` files](_data/devices/) and get familiar with how it
+is setup. There is a section and corresponding file for each Category. Site icons are stored in folders corresponding to each of those categories in their own [folder](img/).
+
+Note: Please do *not* modify yaml files that are directly within the `data` directory. Be sure you're only working on yaml files in the `data/devices` sub-directory. This project is a fork of [the TFA.org project](https://github.com/2factorauth/twofactorauth) and we occasionally pull upstream changes, and this setup helps us avoid unnecessary conflicts.
 
 ## Guidelines
 
@@ -45,7 +46,7 @@ everything for you.
 ## Site Criteria
 
 The following is a rough criteria and explanations for what sites should be on
-2FA.org. If one of the following Criteria is met, it belongs on 2FA.org:
+DongleAuth.info. If one of the following Criteria is met, it belongs on DongleAuth.info:
 
 1. **Personal Info/Image**: Any site that deals with personal info or a person's
    image. An example of a site with **Personal Info** would be their Amazon
@@ -87,9 +88,14 @@ id with the `.yml` extension.
 First and foremost, make sure the new site meets our [definition
 requirements](#a-note-on-definitions) for Two Factor Auth.
 
-The values should be pretty straight forward for adding a new website. The
-`websites` array should already be defined, just add a new website to it like
-this example:
+If you are adding multiple sites to the DongleAuth.info list, please create a new
+git branch for each website, and submit a separate pull request for each branch.
+More information regarding how to create new git branches can be on
+[GitHub's Help Page](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/)
+or [DigitalOcean's Tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-git-branches).
+
+Adding a new website should be pretty straight-forward. The `websites` array should
+already be defined; simply add a new website to it as shown in the following example:
 
 ```yml
 websites:
@@ -102,12 +108,13 @@ websites:
     u2f: Yes
     doc: <link to site 2FA documentation>
 ```
+
 Fields `name:`, `url:`, `img:`, `tfa:` are required for all entries. If available, `twitter:` should be included. If a site provides tfa, `doc:` field is strongly encouraged. Other fields should be included as appropriate.
 
 ### Exceptions & Restrictions
 
-If a site doesn't support 2FA in certain countries, you can note this on the
-website. There are 4 ways to customize how it is displayed:
+If a site doesn't support authentication with a USB dongle in certain countries,
+you can note this on the website. There are 4 ways to customize how it is displayed:
 
 1. A default message acknowledging restrictions will be used with the following
    config:
@@ -169,17 +176,17 @@ website. There are 4 ways to customize how it is displayed:
 - See Guideline #2 about icons. The png file should go in the corresponding
   `img/section` folder.
 
-- Only the 2FA methods implemented by a site need a `yes` tag, the others can
+- Only the auth methods implemented by a site need a `yes` tag, the others can
   just be left off completely.
 
 - For the sake of organization and readability, it is appreciated if you insert
-  new sites alphabetically and that your site chunk follow the same order as the
+  new sites alphabetically and that your site chunk follows the same order as the
   example above.
 
-- If a site supports 2FA, their Twitter handle is not needed and can be left out
+- If a site supports auth via USB dongle, their Twitter handle is not needed and can be left out
   for cleanliness.
 
-- If a site does not have 2FA but there is documentation that they are adding
+- If a site does not have auth via USB dongle but there is documentation that they are adding
   it, then use:
 
   ```yml
@@ -188,6 +195,11 @@ website. There are 4 ways to customize how it is displayed:
   ```
 
 ## A Note on Definitions
+
+There are many forms of Two Factor Auth, but DongleAuth.info is **only** interested
+in listing sites that support Two Factor Authentication using USB dongles.
+Currently that means the site must support either One Time Passwords (OTP)
+or Universal 2nd Factor (U2F).
 
 A lot of people have different ideas of what constitutes Two Factor Auth and
 what doesn't, so it stands to reason that we should clarify a bit. For the
@@ -199,17 +211,17 @@ considered Two Factor Auth.
 As an example, a site that prompts you for an authentication token following
 user login would be considered Two Factor Auth. A site that does not prompt you
 for a token upon login, but prompts you for a token when you try to perform a
-  sensitive action would not be considered Two Factor Auth.
+sensitive action would not be considered Two Factor Auth.
 
 For context, check out the discussion in [#242][242].
 
-### New Providers
+### New Dongles
 
-Rather than split out providers on the main page, we elected to keep the main
-page clean and add another page dedicated to 2fa providers.
+Rather than split out a list USB Dongle providers on the main page, we elected to keep the main
+page clean and add another page dedicated to USB Dongle providers.
 
-To add a new provider simply add to the `providers.yml` file, marking `Yes`
-where appropriate.
+To add a new provider simply add to the [`providers.yml` files](_data/devices/providers.yml) file,
+marking `Yes` where appropriate.
 
 ```yml
   - name: Company Name
