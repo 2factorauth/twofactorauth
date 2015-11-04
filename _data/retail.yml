@@ -5,6 +5,8 @@ websites:
       tfa: Yes
       software: Yes
       sms: Yes
+      exceptions:
+          text: "Amazon retail only supports 2FA in some countries."
       doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201596330
 
     - name: Apple
