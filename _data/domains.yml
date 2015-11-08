@@ -139,15 +139,6 @@ websites:
       img: fasthosts.png
       tfa: No
 
-    - name: Frankdomains
-      url: https://www.frankdomains.com/
-      img: frankdomains.png
-      tfa: yes
-      hardware: yes
-      exceptions:
-          text: "Yearly fee for using 2FA: 19.99 GBP"
-      doc: https://www.frankdomains.com/keep-your-domain-safe/
-
     - name: Gandi
       url: https://gandi.net
       img: gandi.png
