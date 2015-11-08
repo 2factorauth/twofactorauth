@@ -109,7 +109,7 @@ websites:
       sms: Yes
       phone: Yes
       software: Yes
-      doc: http://msdn.microsoft.com/en-us/library/azure/dn249471.aspx
+      doc: https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication/
 
     - name: OpenShift
       url: https://www.openshift.com/
@@ -130,6 +130,7 @@ websites:
       img: rackspace.png
       tfa: Yes
       sms: Yes
+      software: Yes
       doc: http://www.rackspace.com/knowledge_center/article/multi-factor-authentication-from-the-cloud-control-panel
 
     - name: RightScale
@@ -137,6 +138,12 @@ websites:
       img: rightscale.png
       tfa: No
       twitter: RightScale
+
+    - name: Scaleway
+      url: https://www.scaleway.com
+      twitter: scaleway
+      img: scaleway.png
+      tfa: No
 
     - name: Scalr
       url: http://www.scalr.com

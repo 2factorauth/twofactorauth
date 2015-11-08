@@ -45,6 +45,15 @@ websites:
       exceptions:
           text: "TFA available by signing up using GitHub"
 
+    - name: CM Telecom
+      url: https://www.cmtelecom.com/
+      img: cmtelecom.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://help.onlinesmsgateway.com/en/accounts-and-payments/how-do-i-enable-two-factor-authentication
+
     - name: Codeanywhere
       url: https://codeanywhere.com
       img: codeanywhere.png
@@ -76,6 +85,12 @@ websites:
       software: Yes
       doc: https://docs.compose.io/security/compose-two-factor-authentication.html
 
+    - name: Deploybot
+      url: http://deploybot.com/
+      twitter: deploybothq
+      img: deploybot.png
+      tfa: No
+
     - name: Docker
       url: https://docker.com/
       twitter: docker
@@ -95,6 +110,7 @@ websites:
       img: github.png
       tfa: Yes
       sms: Yes
+      hardware: Yes
       software: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
@@ -174,6 +190,12 @@ websites:
       img: papertrail.png
       tfa: No
 
+    - name: Phacility
+      url: https://phacility.com/
+      img: phacility.png
+      tfa: Yes
+      software: Yes
+
     - name: Pivotal Tracker
       url: https://www.pivotaltracker.com
       twitter: pivotaltracker
@@ -223,6 +245,12 @@ websites:
       url: https://www.statuspage.io
       twitter: statuspageio
       img: statuspageio.png
+      tfa: No
+
+    - name: Taiga.io
+      url: https://taiga.io
+      twitter: taigaio
+      img: taigaio.png
       tfa: No
 
     - name: Twilio

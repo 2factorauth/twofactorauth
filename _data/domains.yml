@@ -323,8 +323,11 @@ websites:
     - name: OpenSRS
       url: https://opensrs.com
       img: opensrs.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      sms: Yes
       twitter: opensrs
+      doc: https://help.opensrs.com/hc/en-us/articles/209618017-Two-Factor-Authentication-2FA-for-Reseller-Account-Access
 
     - name: pairNIC
       url: https://www.pairnic.com/

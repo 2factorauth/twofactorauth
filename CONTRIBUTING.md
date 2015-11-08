@@ -113,7 +113,6 @@ already be defined; simply add a new website to it as shown in the following exa
 websites:
   - name: Site Name
     url: https://www.site.com/
-    twitter: SiteTwitter
     img: site.png
     tfa: Yes
     sms: Yes
@@ -131,6 +130,7 @@ The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
 If a site does provide TFA, it is strongly recommended that you add the `doc:`
 field where public documentation is available. Other fields should be included
 if the website supports them. Any services that are not supported can be excluded.
+Sites supporting TFA should not have a Twitter field.
 
 The following is an example of a website that *supports* TFA:
 
@@ -173,7 +173,6 @@ website. There are 4 ways to customize how it is displayed:
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
       sms: Yes
@@ -185,7 +184,6 @@ website. There are 4 ways to customize how it is displayed:
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
       sms: Yes
@@ -199,7 +197,6 @@ website. There are 4 ways to customize how it is displayed:
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
       sms: Yes
@@ -212,7 +209,6 @@ website. There are 4 ways to customize how it is displayed:
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
       sms: Yes
