@@ -123,6 +123,14 @@ websites:
       exceptions:
           text: "Two factor authentication for LDAP is only avaliable in the Enterprise Edition."
 
+    - name: Hashicorp Atlas
+      url: https://atlas.hashicorp.com/
+      img: hashicorp-atlas.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://atlas.hashicorp.com/help/user-accounts/authentication#two-factor-authentication
+
     - name: Infobip
       url: http://www.infobip.com/
       img: infobip.png
