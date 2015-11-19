@@ -150,6 +150,14 @@ websites:
     img: sugarsync.png
     tfa: No
 
+  - name: Sync
+    url: https://sync.com
+    img: sync.png
+    software: Yes
+    email: Yes
+    tfa: Yes
+    doc: https://www.sync.com/features/
+
   - name: Synology
     url: https://www.synology.com/
     twitter: Synology
@@ -184,11 +192,3 @@ websites:
     tfa: Yes
     software: Yes
     doc: http://www.zetta.net/blog/set-zetta-net-two-factor-authentication/
-
-  - name: Sync
-    url: https://sync.com
-    img: sync.png
-	software: Yes
-	email: Yes
-    tfa: Yes
-    doc: https://www.sync.com/features/
