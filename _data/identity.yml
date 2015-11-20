@@ -102,6 +102,14 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: Passpack
+      url: https://www.passpack.com/
+      img: passpack.png
+      tfa: Yes
+      email: Yes
+      hardware: Yes
+      doc: https://help.passpack.com/knowledgebase/idx.php/44/231/article/How-to-AutoLogin-With-Basic-Authentication.html
+
     - name: RoboForm
       url: http://www.roboform.com/
       img: roboform.png
