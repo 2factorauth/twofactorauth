@@ -149,6 +149,14 @@ websites:
     img: sugarsync.png
     tfa: No
 
+  - name: Sync
+    url: https://sync.com
+    img: sync.png
+    software: Yes
+    email: Yes
+    tfa: Yes
+    doc: https://www.sync.com/help/how-do-i-setup-two-factor-authentication/
+
   - name: Synology
     url: https://www.synology.com/
     img: synology.png
