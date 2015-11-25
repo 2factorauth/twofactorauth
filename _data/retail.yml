@@ -6,7 +6,7 @@ websites:
       software: Yes
       sms: Yes
       exceptions:
-          text: "Software token requires backup phone number for voice call or SMS"
+          text: "SMS/Phone Call required for 2FA"
       doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201596330
 
     - name: Apple
