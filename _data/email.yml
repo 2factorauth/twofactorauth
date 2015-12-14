@@ -5,6 +5,8 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
+      exceptions:
+        text: "Currently U.S. only. International support coming soon."
       doc: https://help.aol.com/articles/2-factor-authentication-stronger-than-your-password-alone
 
     - name: FastMail
