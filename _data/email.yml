@@ -3,7 +3,10 @@ websites:
       url: https://mail.aol.com
       twitter: aol
       img: aol.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://help.aol.com/articles/2-factor-authentication-stronger-than-your-password-alone
 
     - name: FastMail
       url: https://www.fastmail.fm/
