@@ -15,8 +15,16 @@ p {
   margin: 1em 0;
 }
 
-.sidenav {
+#header {
   position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.ui.dropdown .menu.visible {
+  max-height: 90vh;
+  overflow-y: scroll;
 }
 
 .ui.fixed.menu {
