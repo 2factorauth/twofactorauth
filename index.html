@@ -9,156 +9,197 @@ tweet_progress: Thanks for working on support for two factor auth, @TWITTERHANDL
 hash: SupportTwoFactorAuth
 ---
 
-<div id="header">
-  {% include header.html page='home' %}
+<div id="top-header" class="ui center aligned icon header">
+  <i class="circular mobile icon"></i>
+
+  <h2>Two Factor Auth (2FA)</h2>
+
+  <div class="sub header">List of websites and whether or not they support
+    <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
+  </div>
+  <div id="{{ first.id }}" class="sub header">
+    Add your own favorite site by submitting a pull request on the
+    <a href="https://github.com/2factorauth/twofactorauth">GitHub repo</a>.
+  </div>
 </div>
 
-<div id="main">
-  <div class="ui center aligned icon header">
-    <i class="circular mobile icon"></i>
-    <h2>Two Factor Auth (2FA)</h2>
-    <div class="sub header">List of websites and whether or not they support
-      <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
+<div class="ui equal width stackable grid container">
+  <div class="column">
+    <div id="backup" class="category">
+      <h5 class="ui icon header">
+        <i class="circular disk outline icon"></i>
+        <small>Backup and Sync</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.backup %}
     </div>
-    <div id="{{ first.id }}" class="sub header">
-      Add your own favorite site by submitting a pull request on the
-      <a href="https://github.com/2factorauth/twofactorauth">GitHub repo</a>.
+    <div id="developer" class="category">
+      <h5 class="ui icon header">
+        <i class="circular code icon"></i>
+        <small>Developer</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.developer %}
+    </div>
+    <div id="finance" class="category">
+      <h5 class="ui icon header">
+        <i class="circular money icon"></i>
+        <small>Finance</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.finance %}
+    </div>
+    <div id="investing" class="category">
+      <h5 class="ui icon header">
+        <i class="circular line chart icon"></i>
+        <small>Investing</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.investing %}
+    </div>
+    <div id="security" class="category">
+      <h5 class="ui icon header">
+        <i class="circular lock icon"></i>
+        <small>Security</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.security %}
     </div>
   </div>
-
-  <div class="ui grid container">
-    <div class="column">
-      {% for section in site.data.main.sections %}
-        <div class="section" id="{{ section.id }}">
-          <table class="ui celled unstackable table">
-            <thead>
-              <tr>
-                <th class="single line"><h3>{{ section.title }}</h3></th>
-                <th>Docs</th>
-                <th>SMS</th>
-                <th>Phone Call</th>
-                <th>Email</th>
-                <th>Hardware Token</th>
-                <th>Software Token</th>
-              </tr>
-            </thead>
-            <tbody>
-
-{% comment %}
-  Peform a downcase and sort on the list of websites to ensure the list is in
-  alphabetical order.
-{% endcomment %}
-
-{% assign section_file = site.data[section.id] %}
-
-{% capture website_names %}
-{% for website in section_file.websites %}
-{{ website.name | downcase }}
-{% unless forloop.last %},{% endunless %}
-{% endfor %}
-{% endcapture %}
-
-              {% assign lowercase_names = website_names | split:',' | sort %}
-
-              {% for item in (0..lowercase_names.size) %}
-                {% capture lowercase_name %}{{ lowercase_names[item] | strip | strip_newlines }}{% endcapture %}
-                {% for website in section_file.websites %}
-                  {% assign current_name = website.name | downcase %}
-                  {% if lowercase_name == current_name %}
-
-                    <tr>
-
-                      {% if website.tfa %}
-                        <td class="main positive">
-                          {% if website.img %}
-                            <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-                            <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-                          {% endif %}
-                          <a href="{{ website.url }}">{{ website.name }}</a>
-                          {% include exception.html website=website %}
-                        </td>
-
-                        <td class="positive icon">
-                          {% if website.doc %}
-                          <a href="{{ website.doc }}"><i class="external url link large icon"></i></a>
-                          {% endif %}
-                        </td>
-
-                        <td class="positive icon">
-                          {% if website.sms %}
-                          <i class="checkmark large icon"></i>
-                          {% endif %}
-                        </td>
-
-                        <td class="positive icon">
-                          {% if website.phone %}
-                          <i class="checkmark large icon"></i>
-                          {% endif %}
-                        </td>
-
-                        <td class="positive icon">
-                          {% if website.email %}
-                          <i class="checkmark large icon"></i>
-                          {% endif %}
-                        </td>
-
-                        <td class="positive icon">
-                          {% if website.hardware %}
-                          <i class="checkmark large icon"></i>
-                          {% endif %}
-                        </td>
-
-                        <td class="positive icon">
-                          {% if website.software %}
-                          <i class="checkmark large icon"></i>
-                          {% endif %}
-                        </td>
-                      {% else %}
-                        <td class="main negative">
-                          {% if website.img %}
-                            <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-                            <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-                          {% endif %}
-                          <a href="{{ website.url }}">{{ website.name }}</a>
-                          {% if website.status %}
-                            <span class="progress">
-                              <a class="ui mini orange button" href="{{website.status}}" target="_blank">
-                                <i class="star icon"></i> In Progress!
-                              </a>
-                            </span>
-                          {% endif %}
-                        </td>
-
-                        {% if website.twitter %}
-                          <td class="twitter negative" colspan="6">
-                            {% if website.status %}
-                              <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
-                            {% else %}
-                              <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link}}</a>
-                            {% endif %}
-                          </td>
-                        {% else %}
-                          <td class="negative icon"><i class="remove large icon"></i></td>
-                          <td class="negative icon"><i class="remove large icon"></i></td>
-                          <td class="negative icon"><i class="remove large icon"></i></td>
-                          <td class="negative icon"><i class="remove large icon"></i></td>
-                          <td class="negative icon"><i class="remove large icon"></i></td>
-                          <td class="negative icon"><i class="remove large icon"></i></td>
-                        {% endif %}
-                      {% endif %}
-                    </tr>
-                  {% endif %}
-                {% endfor %}
-              {% endfor %}
-            </tbody>
-          </table>
-
-        {% unless forloop.last %}
-          <div class="ui divider"></div>
-        {% endunless %}
-        </div><!-- Section -->
-      {% endfor %}
-
-    </div><!-- Column -->
-  </div><!-- UI Grid -->
+  <div class="column">
+    <div id="banking" class="category">
+      <h5 class="ui icon header">
+        <i class="circular dollar icon"></i>
+        <small>Banking</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.banking %}
+    </div>
+    <div id="domains" class="category">
+      <h5 class="ui icon header">
+        <i class="circular globe icon"></i>
+        <small>Domains</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.domains %}
+    </div>
+    <div id="gaming" class="category">
+      <h5 class="ui icon header">
+        <i class="circular gamepad icon"></i>
+        <small>Gaming</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.gaming %}
+    </div>
+    <div id="other" class="category">
+      <h5 class="ui icon header">
+        <i class="circular lab icon"></i>
+        <small>Other</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.other %}
+    </div>
+    <div id="social" class="category">
+      <h5 class="ui icon header">
+        <i class="circular users icon"></i>
+        <small>Social</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.social %}
+    </div>
+  </div>
+  <div class="column">
+    <div id="cloud-computing" class="category">
+      <h5 class="ui icon header">
+        <i class="circular cloud icon"></i>
+        <small>Cloud Computing</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.cloud %}
+    </div>
+    <div id="education" class="category">
+      <h5 class="ui icon header">
+        <i class="circular book icon"></i>
+        <small>Education</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.education %}
+    </div>
+    <div id="health" class="category">
+      <h5 class="ui icon header">
+        <i class="circular medkit icon"></i>
+        <small>Health</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.health %}
+    </div>
+    <div id="payments" class="category">
+      <h5 class="ui icon header">
+        <i class="circular payment icon"></i>
+        <small>Payments</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.payments %}
+    </div>
+    <div id="transport" class="category">
+      <h5 class="ui icon header">
+        <i class="circular car icon"></i>
+        <small>Transport</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.transport %}
+    </div>
+  </div>
+  <div class="column">
+    <div id="communication" class="category">
+      <h5 class="ui icon header">
+        <i class="circular comment icon"></i>
+        <small>Communication</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.communication %}
+    </div>
+    <div id="email" class="category">
+      <h5 class="ui icon header">
+        <i class="circular mail icon"></i>
+        <small>Email</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.email %}
+    </div>
+    <div id="hosting" class="category">
+      <h5 class="ui icon header">
+        <i class="circular sitemap icon"></i>
+        <small>Hosting/VPS</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.hosting %}
+    </div>
+    <div id="remote" class="category">
+      <h5 class="ui icon header">
+        <i class="circular desktop icon"></i>
+        <small>Remote Access</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.remote %}
+    </div>
+    <div id="utilities" class="category">
+      <h5 class="ui icon header">
+        <i class="circular phone icon"></i>
+        <small>Utilities</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.utilities %}
+    </div>
+  </div>
+  <div class="column">
+    <div id="cryptocurrencies" class="category">
+      <h5 class="ui icon header">
+        <i class="circular bitcoin icon"></i>
+        <small>Cryptocurrencies</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.cryptocurrencies %}
+    </div>
+    <div id="entertainment" class="category">
+      <h5 class="ui icon header">
+        <i class="circular music icon"></i>
+        <small>Entertainment</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.entertainment %}
+    </div>
+    <div id="identity" class="category">
+      <h5 class="ui icon header">
+        <i class="circular user icon"></i>
+        <small>Identity Management</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.identity %}
+    </div>
+    <div id="retail" class="category">
+      <h5 class="ui icon header">
+        <i class="circular cart icon"></i>
+        <small>Retail</small>
+      </h5>
+      {% include table.html variable-param=site.data.sections.retail %}
+    </div>
+  </div>
 </div>
