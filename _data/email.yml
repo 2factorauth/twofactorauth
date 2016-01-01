@@ -42,6 +42,14 @@ websites:
       email: Yes
       software: Yes
       doc: https://help.hushmail.com/entries/63282756-Two-step-verification
+      
+          - name: iCloud
+      url: https://www.icloud.com
+      img: icloud.com
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.apple.com/en-gb/HT204152
 
     - name: Mail.com
       url: https://www.mail.com/
