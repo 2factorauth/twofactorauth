@@ -17,8 +17,7 @@ websites:
     doc: http://support.apple.com/kb/ht5570
 
   - name: Backblaze
-    url: http://www.backblaze.com/
-    twitter: backblaze
+    url: http://www.backblaze.com
     img: backblaze.png
     tfa: Yes
     sms: Yes
@@ -150,9 +149,16 @@ websites:
     img: sugarsync.png
     tfa: No
 
+  - name: Sync
+    url: https://sync.com
+    img: sync.png
+    software: Yes
+    email: Yes
+    tfa: Yes
+    doc: https://www.sync.com/help/how-do-i-setup-two-factor-authentication/
+
   - name: Synology
     url: https://www.synology.com/
-    twitter: Synology
     img: synology.png
     tfa: Yes
     software: Yes
@@ -168,6 +174,13 @@ websites:
     software: Yes
     email: Yes
     doc: https://support.tresorit.com/entries/104192996-How-to-set-up-two-step-verification
+
+  - name: XXL Cloud
+    url: https://xxlcloud.com
+    twitter: xxlcloud
+    img: xxlcloud.png
+    tfa: No
+    status: https://xxlcloud.com/en/blog/2factorauthentication
 
   - name: Yandex.Disk
     url: https://disk.yandex.com

@@ -1,7 +1,6 @@
 websites:
     - name: CAcert
       url: http://www.cacert.org/
-      twitter: CAcert_News
       img: cacert.png
       tfa: Yes
       hardware: Yes
@@ -10,7 +9,6 @@ websites:
 
     - name: DigiCert
       url: http://www.digicert.com/
-      twitter: digicert
       img: digicert.png
       tfa: Yes
       software: Yes
@@ -65,7 +63,6 @@ websites:
       img: opendns.png
       tfa: Yes
       sms: Yes
-      twitter: OpenDNS
       software: Yes
       exceptions:
           text: "Only available for enterprise accounts."

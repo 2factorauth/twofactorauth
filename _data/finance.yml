@@ -83,7 +83,6 @@ websites:
 
     - name: Pocketsmith
       url: https://www.pocketsmith.com
-      twitter: pocketsmith
       img: pocketsmith.png
       tfa: Yes
       software: Yes
@@ -103,7 +102,6 @@ websites:
 
     - name: QuickFile
       url: http://www.quickfile.co.uk
-      twitter: quickfile
       img: quickfile.png
       tfa: Yes
       software: Yes
@@ -144,11 +142,20 @@ websites:
       url: https://www.xero.com/
       twitter: Xero
       img: xero.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.xero.com/nz/MyXero_Two-Step_About
 
     - name: Yodlee Moneycenter
       url: https://yodleemoneycenter.com/
       twitter: Yodlee
       img: yodlee.png
+      tfa: no
+    
+    - name: You Need A Budget (YNAB)
+      url: https://www.youneedabudget.com/
+      twitter: ynab
+      img: ynab.png
       tfa: no
 
     - name: ZenPayroll

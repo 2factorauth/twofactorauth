@@ -30,6 +30,13 @@ websites:
       twitter: CloudShards
       tfa: No
 
+    - name: cyon
+      url: https://www.cyon.ch
+      img: cyon.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.cyon.ch/support/a/225/wie-aktiviere-ich-die-zwei-schritt-verifizierung
+
     - name: Dreamhost
       url: https://dreamhost.com
       img: dreamhost.png
@@ -39,7 +46,6 @@ websites:
 
     - name: Fastly
       url: https://www.fastly.com
-      twitter: Fastly
       img: fastly.png
       tfa: Yes
       software: Yes
@@ -47,7 +53,6 @@ websites:
 
     - name: Glesys
       url: http://glesys.com/
-      twitter: glesysab
       img: glesys.png
       tfa: Yes
       software: Yes
@@ -113,6 +118,12 @@ websites:
       software: Yes
       doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
 
+    - name: One.com
+      url: https://www.one.com/
+      twitter: onecom
+      img: onecom.png
+      tfa: No
+
     - name: Online
       url: https://www.online.net/
       img: online.png
@@ -126,7 +137,6 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      twitter: ovh_support_en
 
     - name: PlanetHoster
       url: https://planethoster.net
@@ -149,6 +159,12 @@ websites:
       software: Yes
       doc: https://clientarea.ramnode.com/knowledgebase.php?action=displayarticle&id=70
 
+    - name: Site5
+      url: http://www.site5.com/
+      twitter: site5 
+      img: site5.png
+      tfa: No
+
     - name: Softlayer
       url: https://www.softlayer.com
       img: softlayer.png
@@ -161,7 +177,6 @@ websites:
       img: speedit.png
       tfa: Yes
       software: Yes
-      twitter: SpeedIT_S
       doc: https://www.speedit.org/faq/#accordian_item_937
 
     - name: Squarespace
@@ -190,7 +205,9 @@ websites:
       url: https://www.webfaction.com
       twitter: webfaction
       img: webfaction.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://docs.webfaction.com/user-guide/control_panel.html#two-step-login
 
     - name: Ukraine
       url: https://www.ukraine.com.ua/
