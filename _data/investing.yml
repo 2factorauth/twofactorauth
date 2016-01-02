@@ -21,7 +21,6 @@ websites:
 
     - name: Fidelity Investments
       url: https://www.fidelity.com
-      twitter: fidelity
       img: fidelity.png
       tfa: Yes
       software: Yes
@@ -70,9 +69,8 @@ websites:
     - name: OptionsHouse
       img: optionshouse.png
       url: https://www.optionshouse.com
-      tfa: Yes
-      software: Yes
-      doc: https://www.optionshouse.com/faq/authenticator/
+      tfa: No
+      twitter: OptionsHouse
 
     - name: OptionsXpress
       url: http://www.optionsxpress.com/
@@ -82,7 +80,6 @@ websites:
 
     - name: Personal Capital
       url: https://www.personalcapital.com
-      twitter: personalcapital
       img: personalcapital.png
       tfa: Yes
       email: Yes
@@ -113,6 +110,12 @@ websites:
       img: sharebuilder.png
       tfa: No
 
+    - name: SigFig
+      url: https://www.sigfig.com/
+      twitter: sigfiginsights
+      img: sigfig.png
+      tfa: No
+
     - name: TD Ameritrade
       url: https://www.tdameritrade.com
       twitter: TDAmeritrade
@@ -139,7 +142,6 @@ websites:
 
     - name: Vanguard
       url: https://www.vanguard.com/
-      twitter: Vanguard_Group
       img: vanguard.png
       tfa: Yes
       sms: Yes
@@ -147,9 +149,11 @@ websites:
 
     - name: Wealthfront
       url: https://www.wealthfront.com/
-      twitter: wealthfront
       img: wealthfront.png
-      tfa: no
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://pages.wealthfront.com/faqs/how-do-i-enable-two-step-authentication-on-my-account/
 
     - name: WiseBanyan
       url: https://www.wisebanyan.com/

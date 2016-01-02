@@ -1,4 +1,4 @@
-Contributing to TFA.org
+Contributing to TwoFactorAuth.org
 =======================
 
 All the data is managed through a series of [Yaml][yaml] files so it may be
@@ -56,8 +56,8 @@ everything for you.
 ## Site Criteria
 
 The following section contains rough criteria and explanations regarding
-what websites should be listed on TFA.org. If one of the following
-criteria is met, it belongs on TFA.org:
+what websites should be listed on twofactorauth.org. If one of the following
+criteria is met, it belongs on twofactorauth.org:
 
 1. **Personal Info/Image**: Any site that deals with personal info or a person's
    image. An example of a site with **Personal Info** would be their Amazon

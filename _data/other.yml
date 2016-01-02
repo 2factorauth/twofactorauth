@@ -98,7 +98,6 @@ websites:
 
     - name: Formstack
       url: https://www.formstack.com/
-      twitter: formstack
       img: formstack.png
       tfa: Yes
       sms: Yes
@@ -115,7 +114,6 @@ websites:
     - name: Kickstarter
       url: https://www.kickstarter.com
       img: kickstarter.png
-      twitter: kickstarter
       tfa: Yes
       sms: Yes
       phone: Yes
@@ -139,7 +137,6 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      twitter: mixpanel
 
     - name: Office 365
       url: http://office.microsoft.com/en-us/business/
@@ -148,7 +145,7 @@ websites:
       software: Yes
       sms: Yes
       phone: Yes
-      doc: http://technet.microsoft.com/en-us/library/dn383636.aspx
+      doc: https://support.office.com/en-US/article/Set-up-multi-factor-authentication-for-Office-365-8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 
     - name: StartJOIN
       url: https://www.startjoin.com/
@@ -191,7 +188,6 @@ websites:
 
     - name: Zendesk
       url: http://www.zendesk.com
-      twitter: Zendesk
       img: zendesk.png
       tfa: Yes
       software: Yes
@@ -206,7 +202,6 @@ websites:
 
     - name: PhraseApp
       url: https://phraseapp.com
-      twitter: PhraseApp
       img: phraseapp.png
       software: Yes
       tfa: Yes
@@ -224,10 +219,16 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://support.usabilla.com/customer/portal/articles/2098444-2-step-authentication
-      
+
     - name: Todoist
       url: https://todoist.com
       twitter: todoist
       img: todoist.png
       tfa: No
 
+    - name: Cosmolex
+      url: https://www.cosmolex.com/
+      img: cosmolex.png
+      tfa: Yes
+      sms: Yes
+      doc: http://support.cosmolex.com/customer/portal/articles/2158628

@@ -36,6 +36,13 @@ websites:
       software: Yes
       doc: https://confluence.atlassian.com/x/425QLg
 
+    - name: Bugsnag
+      url: https://bugsnag.com
+      img: bugsnag.png
+      tfa: Yes
+      software: Yes
+      doc: https://bugsnag.com/blog/two-factor-authentication
+
     - name: Cloud9
       url: https://c9.io
       twitter: Cloud9IDE
@@ -44,6 +51,15 @@ websites:
       doc: https://docs.c9.io/faq_general.html#can-i-use-two-factor-authentication-with-cloud9?
       exceptions:
           text: "TFA available by signing up using GitHub"
+
+    - name: CM Telecom
+      url: https://www.cmtelecom.com/
+      img: cmtelecom.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://help.onlinesmsgateway.com/en/accounts-and-payments/how-do-i-enable-two-factor-authentication
 
     - name: Codeanywhere
       url: https://codeanywhere.com
@@ -56,7 +72,6 @@ websites:
 
     - name: Code Climate
       url: https://codeclimate.com
-      twitter: codeclimate
       img: codeclimate.png
       tfa: Yes
       software: Yes
@@ -76,6 +91,12 @@ websites:
       software: Yes
       doc: https://docs.compose.io/security/compose-two-factor-authentication.html
 
+    - name: Deploybot
+      url: http://deploybot.com/
+      twitter: deploybothq
+      img: deploybot.png
+      tfa: No
+
     - name: Docker
       url: https://docker.com/
       twitter: docker
@@ -85,7 +106,6 @@ websites:
     - name: Esri
       url: https://www.esri.com
       img: esri.png
-      twitter: esri
       tfa: Yes
       software: Yes
       doc: https://doc.arcgis.com/en/arcgis-online/reference/multifactor.htm
@@ -108,6 +128,14 @@ websites:
       exceptions:
           text: "Two factor authentication for LDAP is only avaliable in the Enterprise Edition."
 
+    - name: Hashicorp Atlas
+      url: https://atlas.hashicorp.com/
+      img: hashicorp-atlas.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://atlas.hashicorp.com/help/user-accounts/authentication#two-factor-authentication
+
     - name: Infobip
       url: http://www.infobip.com/
       img: infobip.png
@@ -124,7 +152,6 @@ websites:
 
     - name: Koding
       url: https://koding.com
-      twitter: koding
       img: koding.png
       tfa: Yes
       software: Yes
@@ -134,6 +161,7 @@ websites:
       url: https://launchpad.net
       img: launchpad.png
       tfa: Yes
+      hardware: Yes
       software: Yes
       doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
 
@@ -149,19 +177,18 @@ websites:
     - name: Mapbox
       url: https://www.mapbox.com
       img: mapbox.png
-      twitter: mapbox
       tfa: Yes
       software: Yes
       doc: https://www.mapbox.com/help/two-step-verification/
 
-    - name: MongoDB MMS
-      url: https://mms.mongodb.com
+    - name: MongoDB Cloud Manager
+      url: https://cloud.mongodb.com
       img: mongodbmms.png
       tfa: Yes
       sms: Yes
       software: Yes
       phone: Yes
-      doc: https://docs.mms.mongodb.com/core/two-factor-authentication/
+      doc: https://docs.cloud.mongodb.com/core/two-factor-authentication/
 
     - name: New Relic
       url: https://newrelic.com
@@ -174,6 +201,12 @@ websites:
       twitter: papertrailapp
       img: papertrail.png
       tfa: No
+
+    - name: Phacility
+      url: https://phacility.com/
+      img: phacility.png
+      tfa: Yes
+      software: Yes
 
     - name: Pivotal Tracker
       url: https://www.pivotaltracker.com
@@ -226,6 +259,12 @@ websites:
       img: statuspageio.png
       tfa: No
 
+    - name: Taiga.io
+      url: https://taiga.io
+      twitter: taigaio
+      img: taigaio.png
+      tfa: No
+
     - name: Twilio
       url: https://www.twilio.com/
       img: twilio.png
@@ -235,7 +274,6 @@ websites:
 
     - name: Unfuddle
       url: https://unfuddle.com/
-      twitter: unfuddle
       img: unfuddle.png
       tfa: Yes
       sms: Yes

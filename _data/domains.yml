@@ -72,6 +72,12 @@ websites:
       twitter: domainfactory
       tfa: No
 
+    - name: Domain Monster
+      url: https://www.domainmonster.com/
+      img: domainmonster.png
+      twitter: domainmonster
+      tfa: No
+
     - name: DomainsAtCost
       url: https://www.domainsatcost.ca/
       twitter: domainsatcost
@@ -139,15 +145,6 @@ websites:
       img: fasthosts.png
       tfa: No
 
-    - name: Frankdomains
-      url: https://www.frankdomains.com/
-      img: frankdomains.png
-      tfa: yes
-      hardware: yes
-      exceptions:
-          text: "Yearly fee for using 2FA: 19.99 GBP"
-      doc: https://www.frankdomains.com/keep-your-domain-safe/
-
     - name: Gandi
       url: https://gandi.net
       img: gandi.png
@@ -191,7 +188,6 @@ websites:
       img: hurricane.png
       tfa: Yes
       software: Yes
-      twitter: henet
 
     - name: Internet.bs
       url: http://www.internet.bs
@@ -225,7 +221,6 @@ websites:
 
     - name: MarkMonitor
       url: https://www.markmonitor.com
-      twitter: markmonitor
       img: markmonitor.png
       tfa: Yes
       hardware: Yes
@@ -323,8 +318,10 @@ websites:
     - name: OpenSRS
       url: https://opensrs.com
       img: opensrs.png
-      tfa: No
-      twitter: opensrs
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://help.opensrs.com/hc/en-us/articles/209618017-Two-Factor-Authentication-2FA-for-Reseller-Account-Access
 
     - name: pairNIC
       url: https://www.pairnic.com/
@@ -349,11 +346,16 @@ websites:
 
     - name: Register4Less
       url: https://register4less.com/
-      twitter: register4less
       img: register4less.png
       tfa: Yes
       software: Yes
       doc: http://blog.register4less.com/?p=43
+
+    - name: STRATO
+      url: https://www.strato.de/
+      twitter: STRATO_AG
+      img: strato.png
+      tfa: No
 
     - name: Verio
       url: https://www.verio.com/
