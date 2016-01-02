@@ -25,6 +25,8 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+        text: "NetBenefits not supported (e.g. employer sponsored 401k/403b)."
       doc: /notes/fidelity/
 
     - name: HealthEquity
