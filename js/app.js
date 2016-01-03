@@ -21,11 +21,12 @@ function getStyle(element, styleProp) {
 }
 
 $('.category').click(function () {
-  console.log($(this).find('.website-table').css('display'));
-  if ($(this).find('.website-table').css('display') == 'block') {
-    $(this).find('.website-table').css('display', 'none');
+  var id = $(this).attr('id');
+  var table = $('#' + id + '-table');
+  if (table.css('display') == 'block') {
+    table.css('display', 'none');
   } else {
     $('*.website-table').css('display', 'none');
-    $(this).find('.website-table').css('display', 'block');
+    table.css('display', 'block');
   }
 });
