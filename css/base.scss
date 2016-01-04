@@ -2,6 +2,7 @@
 ---
 
 @import 'mixins';
+$primary-color: #39CCCC;
 
 html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td {
   margin: 0;
@@ -40,6 +41,39 @@ p {
   padding: 3em 0;
 }
 
+.ui.header .sub.header {
+  margin-top: 10px;
+
+  label {
+    color: #333333;
+  }
+}
+
+input[type=search] {
+  @include transition(all, ease, 300ms);
+  border: 1px #E3E3E3 solid;
+  border-radius: 30px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  margin-top: 30px;
+  padding: 10px 30px;
+  width: 50%;
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 10px $primary-color;
+    outline: none;
+  }
+}
+
+.active-icon {
+  background-color: $primary-color;
+  color: white;
+
+  &+small {
+    color: #389B9B;
+  }
+}
+
 .category {
   cursor: pointer;
   text-align: center;
@@ -48,8 +82,7 @@ p {
     @include transition(all, ease, 300ms);
 
     &:hover {
-      background-color: #39CCCC;
-      color: white;
+      @extend .active-icon
     }
   }
 }
@@ -62,4 +95,20 @@ p {
   position: relative;
   width: 90vw;
   z-index: 1000;
+}
+
+.ui.table td.icon {
+  text-align: center;
+}
+
+.ui.celled.table tr td.main a,
+.ui.celled.table .exception,
+.ui.celled.table .exception * {
+  padding-left: 5%;
+  margin-bottom: 5px;
+  vertical-align: top;
+}
+
+span.progress {
+  padding-left: 10%;
 }
