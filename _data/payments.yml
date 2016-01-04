@@ -5,13 +5,36 @@ websites:
       img: amazon.png
       tfa: No
 
+    - name: Braintree
+      img: braintree.png
+      url: https://www.braintreepayments.com/
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://articles.braintreepayments.com/reference/security/two-factor-authentication
+
     - name: Buycraft
       url: http://buycraft.net
       img: buycraft.png
       tfa: Yes
       software: Yes
       sms: Yes
+      exceptions:
+          text: "SMS-capable phone required."
       doc: http://server.buycraft.net/tfa
+
+    - name: Dwolla
+      url: https://www.dwolla.com
+      img: dwolla.png
+      tfa: Yes
+      software: Yes
+      doc: http://help.dwolla.com/customer/portal/articles/2068158-two-factor-authentication-faq?b_id=5438
+
+    - name: Flattr
+      img: flattr.png
+      url: https://flattr.com
+      twitter: flattr
+      tfa: No
 
     - name: GoCardless
       img: gocardless.png
@@ -26,6 +49,7 @@ websites:
       sms: Yes
       phone: Yes
       software: Yes
+      hardware: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Litle & Co
@@ -49,8 +73,14 @@ websites:
       software: Yes
       hardware: Yes
       exceptions:
-          text: "2FA only available in the US and Canada. SMS only available in the US."
+          text: "2FA is only available in the United States, Canada, United Kingdom, Germany, Austria and Australia."
       doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
+
+    - name: Paysafecard
+      url: https://www.paysafecard.com/
+      img: paysafecard.png
+      tfa: No
+      twitter: paysafecard
 
     - name: Skrill
       url: https://skrill.com/
@@ -63,17 +93,23 @@ websites:
       img: stripe.png
       url: https://www.stripe.com/
       tfa: Yes
+      sms: Yes
       software: Yes
-      doc: https://stripe.com/blog/two-step-verification
+      doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
 
     - name: Square
       url: https://squareup.com
-      twitter: square
       img: squareup.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      exceptions:
+        text: "Currently only US merchants, protects only Dashboard access"
+      doc: https://squareup.com/help/us/en/article/5593-2-step-verification
 
     - name: Venmo
-      img: venmo.png
-      twitter: venmo
-      tfa: No
       url: https://venmo.com
+      img: venmo.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      doc: https://help.venmo.com/customer/portal/articles/1910230-confirm-my-identity-on-sign-in-why

@@ -1,16 +1,18 @@
 websites:
     - name: CAcert
-      url: https://www.cacert.org/
-      twitter: CAcert_News
+      url: http://www.cacert.org/
       img: cacert.png
-      tfa: No
+      tfa: Yes
+      hardware: Yes
+      exceptions:
+          text: "Requires X.509-capable cryptotoken or smartcard."
 
     - name: DigiCert
       url: http://www.digicert.com/
-      twitter: digicert
       img: digicert.png
-      tfa: No
-      status: https://twitter.com/digicert/status/454722167897616384
+      tfa: Yes
+      software: Yes
+      doc: https://www.digicert.com/two-factor-authentication.htm
 
     - name: Dome9 Security
       url: http://www.dome9.com/
@@ -20,11 +22,32 @@ websites:
       hardware: Yes
       doc: http://www.dome9.com/overview/strong-2-factor-authentication
 
+    - name: Entrust
+      img: entrust.png
+      url: http://www.entrust.net
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.entrust.net/certificate-services/cms-authentication.htm
+
+    - name: FoxVPN
+      url: https://www.foxvpn.net/
+      img: foxvpn.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.foxvpn.net/help/enable-two-factor-authentication/
+
     - name: GeoTrust
       url: http://www.geotrust.com/
       img: geotrust.png
       tfa: Yes
       email: Yes
+
+    - name: GoGetSSL
+      url: https://gogetssl.com/
+      img: gogetssl.png
+      tfa: No
+      twitter: gogetssl
 
     - name: Norton
       url: http://us.norton.com
@@ -40,7 +63,6 @@ websites:
       img: opendns.png
       tfa: Yes
       sms: Yes
-      twitter: OpenDNS
       software: Yes
       exceptions:
           text: "Only available for enterprise accounts."
@@ -72,3 +94,9 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://support.tinfoilsecurity.com/customer/portal/articles/1559364-do-you-support-two-factor-authentication-how-do-i-set-it-up-
+
+    - name: Webroot
+      url: http://www.webroot.com
+      img: webroot.png
+      twitter: Webroot
+      tfa: No

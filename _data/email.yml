@@ -1,9 +1,13 @@
 websites:
     - name: Aol Mail
       url: https://mail.aol.com
-      twitter: aol
       img: aol.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      exceptions:
+        text: "Currently U.S. only. International support coming soon."
+      doc: https://help.aol.com/articles/2-factor-authentication-stronger-than-your-password-alone
 
     - name: FastMail
       url: https://www.fastmail.fm/
@@ -21,6 +25,7 @@ websites:
       sms: Yes
       phone: Yes
       software: Yes
+      hardware: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: GMX
@@ -64,7 +69,15 @@ websites:
       img: pobox.png
       tfa: Yes
       software: Yes
+      hardware: Yes
       doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
+
+    - name: Posteo
+      url: https://posteo.de/
+      img: posteo.png
+      tfa: Yes
+      software: Yes
+      doc: https://posteo.de/en/help/what-is-two-factor-authentication-and-how-do-i-set-it-up
 
     - name: ProtonMail
       url: https://protonmail.ch/
@@ -76,16 +89,40 @@ websites:
       url: https://mail.riseup.net
       twitter: riseupnet
       img: riseup.png
-      tfa: Yes
-      software: Yes
+      tfa: No
       doc: https://help.riseup.net/en/email/webmail/2factorauth
-    
+
     - name: Yahoo Mail
-      url: https://www.mail.yahoo.com/
+      url: https://mail.yahoo.com/
       img: yahoomail.png
       tfa: Yes
       sms: Yes
       doc: https://help.yahoo.com/kb/SLN5013.html
+
+    - name: Yahoo Japan Mail
+      url: https://mail.yahoo.co.jp/
+      img: yahoojapanmail.png
+      tfa: Yes
+      sms: No
+      email: Yes
+      software: Yes
+      doc: http://id.yahoo.co.jp/security/otp.html
+
+    - name: Yandex.Mail
+      url: https://mail.yandex.com/
+      img: yandexmail.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+        text: "SMS-capable phone required for initial setup."
+      doc: https://yandex.com/support/passport/authorization/twofa.xml
+
+    - name: Zimbra
+      url: https://www.zimbra.com/
+      twitter: zimbra
+      img: zimbra.png
+      tfa: No
+      status: https://bugzilla.zimbra.com/show_bug.cgi?id=98623
 
     - name: Zoho Mail
       url: https://www.zoho.com/mail/

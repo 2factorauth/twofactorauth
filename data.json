@@ -1,0 +1,21 @@
+---
+---
+{
+    {% for section in site.data.main.sections %}
+    {% assign section_file = site.data[section.id] %}
+    "{{ section.title }}": {
+                        {% for website in section_file.websites %}
+                                "{{ website.name }}": {
+                                            "tfa": {% if website.tfa %}true{% else %}false{% endif %},
+                                            "url": "{{ website.url }}",
+                                            "img": "/img/{{ section.id }}/{{ website.img }}",
+                                            "twitter": "{{ website.twitter }}",
+                                            "sms": {% if website.sms %}true{% else %}false{% endif %},
+                                            "software": {% if website.software %}true{% else %}false{% endif %},
+                                            "phone": {% if website.phone %}true{% else %}false{% endif %},
+                                            "hardware": {% if website.hardware %}true{% else %}false{% endif %}
+                               }{% if forloop.last != true %},{% endif %}
+                        {% endfor %}
+                        }{% if forloop.last != true %},{% endif %}
+    {% endfor %}
+}

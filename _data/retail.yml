@@ -1,9 +1,13 @@
 websites:
     - name: Amazon
-      url: https://amazon.com
-      twitter: Amazon
+      url: https://www.amazon.com
       img: amazon.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      exceptions:
+          text: "SMS/Phone Call required for 2FA"
+      doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201596330
 
     - name: Apple
       url: https://appleid.apple.com
@@ -12,7 +16,7 @@ websites:
       sms: Yes
       software: Yes
       exceptions:
-          text: "SMS only available on select providers."
+          text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
       doc: http://support.apple.com/kb/ht5570
 
     - name: Comixology
@@ -28,8 +32,8 @@ websites:
       hardware: Yes
       software: Yes
       exceptions:
-          text: "While PayPal supports hardware and software 2FA in all locales, eBay only supports 2FA in some locales."
-      doc: https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside
+          text: "eBay only supports 2FA in some countries."
+      doc: http://pages.ebay.com/securitykey/faq.html
 
     - name: Etsy
       url: http://www.etsy.com/
@@ -42,6 +46,18 @@ websites:
       url: http://www.everlane.com/
       twitter: everlane
       img: everlane.png
+      tfa: No
+
+    - name: Gilt
+      url: https://www.gilt.com
+      twitter: gilt
+      img: gilt.png
+      tfa: No
+
+    - name: Lazada
+      url: http://www.lazada.com/
+      twitter: asklazadasg
+      img: lazada.png
       tfa: No
 
     - name: Macy's

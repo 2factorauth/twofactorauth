@@ -9,46 +9,44 @@ tweet_progress: Thanks for working on support for two factor auth, @TWITTERHANDL
 hash: SupportTwoFactorAuth
 ---
 
-{% include header.html page='home' %}
+<div id="header">
+  {% include header.html page='home' %}
+</div>
 
-<div class="main container">
-    <div class="ui grid">
-        <div class="column">
+<div id="main">
+  <div class="ui center aligned icon header">
+    <i class="circular mobile icon"></i>
+    <h2>Two Factor Auth (2FA)</h2>
+    <div class="sub header">List of websites and whether or not they support
+      <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
+    </div>
+    <div id="{{ first.id }}" class="sub header">
+      Add your own favorite site by submitting a pull request on the
+      <a href="https://github.com/2factorauth/twofactorauth">GitHub repo</a>.
+    </div>
+  </div>
 
-            <div class="banner ui icon header">
-                <i class="circular mobile icon"></i>
-                <h2>Two Factor Auth (2FA)</h2>
-                <div class="sub header">List of websites and whether or not they support
-                    <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
-                </div>
-                <div class="sub header">
-                    Also see the list of <a href="/providers/">2FA providers</a> and the platforms they support.
-                </div>
-                <div id="{{ first.id }}" class="sub header">
-                    Add your own favorite site by submitting a pull request on the
-                    <a href="https://github.com/jdavis/twofactorauth">GitHub repo</a>.
-                </div>
-            </div>
-
-        {% for section in site.data.main.sections %}
-            <div class="section">
-                <table class="ui table celled compact segment">
-                    <thead>
-                        <tr>
-                            <th class="eleven wide"><h2>{{ section.title }}</h2></th>
-                            <th>Docs</th>
-                            <th>SMS</th>
-                            <th>Phone Call</th>
-                            <th>Email</th>
-                            <th>Hardware Token</th>
-                            <th>Software Implementation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+  <div class="ui grid container">
+    <div class="column">
+      {% for section in site.data.main.sections %}
+        <div class="section" id="{{ section.id }}">
+          <table class="ui celled unstackable table">
+            <thead>
+              <tr>
+                <th class="single line"><h3>{{ section.title }}</h3></th>
+                <th>Docs</th>
+                <th>SMS</th>
+                <th>Phone Call</th>
+                <th>Email</th>
+                <th>Hardware Token</th>
+                <th>Software Token</th>
+              </tr>
+            </thead>
+            <tbody>
 
 {% comment %}
-    Peform a downcase and sort on the list of websites to ensure the list is in
-    alphabetical order.
+  Peform a downcase and sort on the list of websites to ensure the list is in
+  alphabetical order.
 {% endcomment %}
 
 {% assign section_file = site.data[section.id] %}
@@ -60,103 +58,107 @@ hash: SupportTwoFactorAuth
 {% endfor %}
 {% endcapture %}
 
-{% assign lowercase_names = website_names | split:',' | sort %}
+              {% assign lowercase_names = website_names | split:',' | sort %}
 
-                        {% for item in (0..lowercase_names.size) %}
-                            {% capture lowercase_name %}{{ lowercase_names[item] | strip | strip_newlines }}{% endcapture %}
-                            {% for website in section_file.websites %}
-                                {% assign current_name = website.name | downcase %}
-                                {% if lowercase_name == current_name %}
+              {% for item in (0..lowercase_names.size) %}
+                {% capture lowercase_name %}{{ lowercase_names[item] | strip | strip_newlines }}{% endcapture %}
+                {% for website in section_file.websites %}
+                  {% assign current_name = website.name | downcase %}
+                  {% if lowercase_name == current_name %}
 
-                                    <tr>
-                                        {% if website.tfa %}
-                                            <td class="main positive">
-                                            {% if website.img %}
-                                                <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-                                            {% endif %}
-                                                <a href="{{ website.url }}">{{ website.name }}</a>
-                                                {% include exception.html website=website %}
-                                            </td>
+                    <tr>
 
-                                            <td class="positive icon">
-                                            {% if website.doc %}
-                                                <a href="{{ website.doc }}"><i class="external url link large icon"></i></a>
-                                            {% endif %}
-                                            </td>
+                      {% if website.tfa %}
+                        <td class="main positive">
+                          {% if website.img %}
+                            <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
+                            <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                          {% endif %}
+                          <a href="{{ website.url }}">{{ website.name }}</a>
+                          {% include exception.html website=website %}
+                        </td>
 
-                                            <td class="positive icon">
-                                            {% if website.sms %}
-                                                <i class="checkmark large icon"></i>
-                                            {% endif %}
-                                            </td>
+                        <td class="positive icon">
+                          {% if website.doc %}
+                          <a href="{{ website.doc }}"><i class="external url link large icon"></i></a>
+                          {% endif %}
+                        </td>
 
-                                            <td class="positive icon">
-                                            {% if website.phone %}
-                                                <i class="checkmark large icon"></i>
-                                            {% endif %}
-                                            </td>
+                        <td class="positive icon">
+                          {% if website.sms %}
+                          <i class="checkmark large icon"></i>
+                          {% endif %}
+                        </td>
 
-                                            <td class="positive icon">
-                                            {% if website.email %}
-                                                <i class="checkmark large icon"></i>
-                                            {% endif %}
-                                            </td>
+                        <td class="positive icon">
+                          {% if website.phone %}
+                          <i class="checkmark large icon"></i>
+                          {% endif %}
+                        </td>
 
-                                            <td class="positive icon">
-                                            {% if website.hardware %}
-                                                <i class="checkmark large icon"></i>
-                                            {% endif %}
-                                            </td>
+                        <td class="positive icon">
+                          {% if website.email %}
+                          <i class="checkmark large icon"></i>
+                          {% endif %}
+                        </td>
 
-                                            <td class="positive icon">
-                                            {% if website.software %}
-                                                <i class="checkmark large icon"></i>
-                                            {% endif %}
-                                            </td>
-                                        </tr>
-                                        {% else %}
-                                            <td class="main negative">
-                                            {% if website.img %}
-                                                <img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-                                            {% endif %}
-                                                <a href="{{ website.url }}">{{ website.name }}</a>
-                                            {% if website.status %}
-                                                <span class="progress">
-                                                    <a class="ui mini orange button" href="{{website.status}}" target="_blank">
-                                                        <i class="star icon"></i> In Progress!
-                                                    </a>
-                                                </span>
-                                            {% endif %}
-                                            </td>
-                                            {% if website.twitter %}
-                                                <td class="twitter main negative" colspan="6">
-                                                {% if website.status %}
-                                                    <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
-                                                {% else %}
-                                                    <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link}}</a>
-                                                </td>
-                                                {% endif %}
-                                            {% else %}
-                                                <td class="negative icon"><i class="remove large icon"></td>
-                                                <td class="negative icon"><i class="remove large icon"></td>
-                                                <td class="negative icon"><i class="remove large icon"></td>
-                                                <td class="negative icon"><i class="remove large icon"></td>
-                                                <td class="negative icon"><i class="remove large icon"></td>
-                                                <td class="negative icon"><i class="remove large icon"></td>
-                                            {% endif %}
-                                        {% endif %}
-                                {% endif %}
-                            {% endfor %}
-                        {% endfor %}
-                    </tbody>
-                </table>
+                        <td class="positive icon">
+                          {% if website.hardware %}
+                          <i class="checkmark large icon"></i>
+                          {% endif %}
+                        </td>
 
-            {% unless forloop.last %}
-                <div class="ui divider" id="{{ site.data.main.sections[forloop.index].id }}" ></div>
-            {% endunless %}
-            </div><!-- Section -->
-        {% endfor %}
+                        <td class="positive icon">
+                          {% if website.software %}
+                          <i class="checkmark large icon"></i>
+                          {% endif %}
+                        </td>
+                      {% else %}
+                        <td class="main negative">
+                          {% if website.img %}
+                            <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
+                            <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+                          {% endif %}
+                          <a href="{{ website.url }}">{{ website.name }}</a>
+                          {% if website.status %}
+                            <span class="progress">
+                              <a class="ui mini orange button" href="{{website.status}}" target="_blank">
+                                <i class="star icon"></i> In Progress!
+                              </a>
+                            </span>
+                          {% endif %}
+                        </td>
 
-        </div><!-- Column -->
-    </div><!-- UI Grid -->
-</div><!-- Main Container -->
+                        {% if website.twitter %}
+                          <td class="twitter negative" colspan="6">
+                            {% if website.status %}
+                              <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
+                            {% else %}
+                              <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link}}</a>
+                            {% endif %}
+                          </td>
+                        {% else %}
+                          <td class="negative icon"><i class="remove large icon"></i></td>
+                          <td class="negative icon"><i class="remove large icon"></i></td>
+                          <td class="negative icon"><i class="remove large icon"></i></td>
+                          <td class="negative icon"><i class="remove large icon"></i></td>
+                          <td class="negative icon"><i class="remove large icon"></i></td>
+                          <td class="negative icon"><i class="remove large icon"></i></td>
+                        {% endif %}
+                      {% endif %}
+                    </tr>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </tbody>
+          </table>
+
+        {% unless forloop.last %}
+          <div class="ui divider"></div>
+        {% endunless %}
+        </div><!-- Section -->
+      {% endfor %}
+
+    </div><!-- Column -->
+  </div><!-- UI Grid -->
+</div>

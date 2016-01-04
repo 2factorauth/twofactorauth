@@ -1,4 +1,10 @@
 websites:
+    - name: Actors Federal Credit Union
+      url: http://www.actorsfcu.com/
+      twitter: ActorsFCU
+      img: actorsfcu.png
+      tfa: No
+
     - name: Ally Bank
       url: http://www.ally.com/
       img: allybank.png
@@ -25,6 +31,13 @@ websites:
       img: americafirstcu.png
       tfa: No
 
+    - name: Bank Central Asia (BCA)
+      url: http://www.bca.co.id/en/individual/individual.jsp
+      img: bankcentralasia.png
+      tfa: Yes
+      hardware: Yes
+      doc: http://www.bca.co.id/en/individual/produk_dan_layanan/e-banking/klikbca/klikbca-keybca/klikbca-keybca.jsp
+
     - name: Bank of America
       url: https://www.bankofamerica.com/
       img: bankofamerica.png
@@ -39,12 +52,15 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
-      doc: http://ask.barclays.co.uk/help/online_banking/whatis_pinsentry
+      doc: https://ask.barclays.co.uk/help/security/protection
 
     - name: Barclays US
       url: https://www.banking.barclaysus.com/index.html
       img: barclays.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      email: Yes
       twitter: Barclays
 
     - name: BMO Harris Bank
@@ -71,6 +87,12 @@ websites:
       img: capitalone360.png
       tfa: No
 
+    - name: CDC Federal Credit Union
+      url: https://www.cdcfcu.com
+      twitter: CDCCreditUnion
+      img: cdcfcu.png
+      tfa: No
+
     - name: Chase
       url: https://www.chase.com/
       img: chase.png
@@ -78,19 +100,24 @@ websites:
       sms: Yes
       phone: Yes
       email: Yes
-      doc: https://mobilebanking.chase.com/Public/Docs/Faq?nodeId=1&itemId=2
+      doc: /notes/chase/
 
     - name: CIBC
       url: http://www.cibc.ca
       twitter: cibc
       img: cibc.png
       tfa: No
-      status: https://www.cibc.com/ca/features/banking-enhancements.html?sf3204759=1
 
     - name: Citibank
       url: https://online.citibank.com/US/Welcome.c
       twitter: Citibank
       img: citibank.png
+      tfa: No
+      
+    - name: comdirect
+      url: https://www.comdirect.de/
+      twitter: comdirect
+      img: comdirect.png
       tfa: No
 
     - name: Discover
@@ -103,6 +130,13 @@ websites:
       exceptions:
             text: "Available only for credit cards, not for savings accounts. By providing your phone number, you are automatically opted in."
       doc: https://www.discover.com/credit-cards/help-center/faqs/enhancing-account-security.html
+
+    - name: everbank.com
+      url: https://everbank.com
+      img: everbank.png
+      tfa: Yes
+      phone: Yes
+      sms: Yes
 
     - name: Fairwinds
       url: https://www.fairwinds.org
@@ -144,7 +178,21 @@ websites:
       img: hsbc.png
       tfa: Yes
       hardware: Yes
+      software: Yes
       doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
+
+    - name: Huntington National Bank
+      url: https://www.huntington.com
+      twitter: Huntington_Bank
+      img: huntingtonnationalbank.png
+      tfa: No
+
+    - name: Intesa Sanpaolo
+      url: https://www.intesasanpaolo.com
+      img: intesasanpaolo.png
+      tfa: Yes
+      hardware: Yes
+      doc: http://www.intesasanpaolo.com/servizi-multicanale/sicurezza.jsp
 
     - name: LendingClub
       url: https://www.lendingclub.com/
@@ -158,15 +206,40 @@ websites:
       img: lloydsbank.png
       tfa: No
 
+    - name: MandT Bank
+      url: https://www.mtb.com/
+      img: mtbank.png
+      tfa: No
+      twitter: MandT_Help
+
+    - name: MBNA Canada
+      url: http://www.mbna.ca
+      img: mbnacanada.png
+      tfa: No
+
     - name: Natwest UK
       url: https://www.natwest.com/personal.ashx
       img: natwest.png
+      tfa: Yes
+      hardware: Yes
+      doc: http://www.natwest.com/personal/online-banking/g1/banking-safely-online/card-reader.ashx
+
+    - name: Navy Federal Credit Union
+      url: https://www.navyfederal.org/
+      img: navyfederal.png
       tfa: No
-      twitter: NatWest_Help
+      twitter: NavyFederal
+
+    - name: Pacific Continental
+      url: https://www.therightbank.com/
+      img: pcb.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.therightbank.com/sites/www.therightbank.com/files/files/online-services-instructions.pdf
 
     - name: Patelco Credit Union
       url: https://www.patelco.org/
-      twitter: PatelcoPays
       img: patelco.png
       tfa: Yes
       sms: Yes
@@ -186,16 +259,48 @@ websites:
       img: pncbank.png
       tfa: No
 
+    - name: Postbank
+      url: https://www.postbank.com/
+      twitter: postbank
+      img: postbank.png
+      tfa: No
+
+    - name: Raiffeisen Bank CZ
+      url: http://www.rb.cz/
+      img: raiffeisenbank_cz.png
+      doc: http://www.rb.cz/firemni-finance/podnikatele-a-male-firmy/prime-bankovnictvi/sluzby-pro-firemni-ucty/bezpecnost-internetoveho-bankovnictvi/
+      tfa: Yes
+      hardware: Yes
+
     - name: RBC Royal Bank
       url: http://www.rbcroyalbank.com
       twitter: RBC_Canada
       img: rbc.png
       tfa: No
 
+    - name: San Diego County Credit Union
+      url: https://www.sdccu.com
+      twitter: sdccu
+      img: sdccu.png
+      tfa: No
+
     - name: San Francisco Fire Credit Union
       url: https://www.sffirecu.org
       twitter: SFFireCU
       img: sffirecu.png
+      tfa: No
+      status: https://twitter.com/sffirecu/status/577532435228991488
+
+    - name: Santa Clara County Federal Credit Union
+      url: https://www.sccfcu.org/
+      twitter: SCCFCU
+      img: sccfcu.png
+      tfa: No
+
+    - name: SchoolsFirst FCU
+      url: https://www.schoolsfirstfcu.org/
+      twitter: SchoolsFirstFCU
+      img: schoolsfirst.png
       tfa: No
 
     - name: SEB
@@ -225,9 +330,20 @@ websites:
       software: Yes
       doc: http://hjalp.swedbank.se/logga-in/index.htm
 
+    - name: Tangerine
+      url: http://www.tangerine.ca/
+      twitter: tangerinebank
+      img: tangerine.png
+      tfa: No
+
+    - name: TARGOBANK
+      url: https://www.targobank.de/
+      img: targobank.png
+      tfa: No
+      twitter: TARGOBANK
+
     - name: TBC Bank
       url: http://www.tbcbank.ge
-      twitter: JSCTBCBANK
       img: tbcbank.png
       tfa: Yes
       sms: Yes
@@ -238,6 +354,18 @@ websites:
       url: https://www.tdbank.com
       twitter: TDBank_US
       img: tdbank.png
+      tfa: No
+
+    - name: TD Canada Trust
+      url: https://www.tdcanadatrust.com
+      twitter: TD_Canada
+      img: tdbank.png
+      tfa: No
+
+    - name: Union Bank
+      url: https://www.unionbank.com/
+      twitter: UnionBank
+      img: unionbank.png
       tfa: No
 
     - name: US Bank
@@ -251,13 +379,13 @@ websites:
       img: usaa.png
       tfa: Yes
       sms: Yes
+      hardware: Yes
       software: Yes
       doc: https://www.usaa.com/inet/pages/security_token_logon_options
 
     - name: UW Credit Union
       url: http://www.uwcu.org/
       img: uwcu.png
-      twitter: uwcu
       tfa: Yes
       sms: Yes
       software: Yes
@@ -268,4 +396,22 @@ websites:
       url: https://www.wellsfargo.com/
       twitter: WellsFargo
       img: wellsfargo.png
+      tfa: No
+
+    - name: Wescom Credit Union
+      url: https://www.wescom.org/
+      twitter: Liz_Wescom
+      img: wescom.png
+      tfa: No
+
+    - name: Zag Bank
+      url: https://www.zagbank.ca/
+      twitter: zagbank
+      img: zagbank.png
+      tfa: No
+
+    - name: ZenBanx
+      url: http://zenbanx.ca/
+      twitter: ZenBanx
+      img: zenbanx.png
       tfa: No
