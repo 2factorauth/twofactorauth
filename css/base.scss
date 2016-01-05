@@ -10,7 +10,12 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, 
 }
 
 html, body {
+  @include box-sizing(border-box);
   height: 100%;
+}
+
+*, *:before, *:after {
+  @include box-sizing(inherit);
 }
 
 img {
@@ -42,10 +47,31 @@ p {
 }
 
 .ui.header .sub.header {
-  margin-top: 10px;
+  margin: 10px auto;
+  max-width: 80%;
+}
+
+#search-wrapper {
+  margin: 40px auto;
+  position: relative;
+  text-align: left;
+  width: 60%;
 
   label {
-    color: #333333;
+    left: 17px;
+    position: absolute;
+    top: 12px;
+
+    i {
+      color: #333333;
+      display: inline-block;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
   }
 }
 
@@ -54,9 +80,12 @@ input[type=search] {
   border: 1px #E3E3E3 solid;
   border-radius: 30px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  margin-top: 30px;
-  padding: 10px 30px;
-  width: 50%;
+  display: block;
+  padding: 10px 45px;
+  width: 100%;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
   &:focus {
     border-color: $primary-color;
@@ -69,7 +98,7 @@ input[type=search] {
   background-color: $primary-color;
   color: white;
 
-  &+small {
+  & + small {
     color: #389B9B;
   }
 }
@@ -87,28 +116,71 @@ input[type=search] {
   }
 }
 
+.ui.table tr.mobile-tr {
+  border-bottom: 1px groove rgba(34, 36, 38, 0.14902);
+  display: none;
+  padding: 0;
+
+  td {
+    padding: 3em;
+  }
+}
+
 .ui.table td.twitter {
   text-align: center;
 }
 
 .website-table {
+  margin: auto;
   position: relative;
   width: 90vw;
   z-index: 1000;
 }
 
+.ui.table .mobile-tr td {
+  padding: 3em;
+
+  &.positive {
+    background-color: rgba(46, 204, 64, 0.10) !important;
+  }
+
+  &.negative {
+    background-color: rgba(255, 65, 54, 0.10) !important;
+  }
+
+  &.progress {
+    background-color: rgba(255, 133, 27, 0.10) !important;
+  }
+}
+
 .ui.table td.icon {
   text-align: center;
+  width: 10%;
 }
 
 .ui.celled.table tr td.main a,
 .ui.celled.table .exception,
 .ui.celled.table .exception * {
-  padding-left: 5%;
+  padding-left: 3%;
   margin-bottom: 5px;
   vertical-align: top;
 }
 
 span.progress {
   padding-left: 10%;
+}
+
+@media(max-width: 750px) {
+  .website-table {
+    width: 90%;
+  }
+
+  .mobile-tr {
+    display: table-row;
+  }
+
+  .ui.table tr.desktop-tr,
+  thead {
+    display: none !important;
+  }
 }

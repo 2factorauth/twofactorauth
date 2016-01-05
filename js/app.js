@@ -1,3 +1,4 @@
+// Show exception warnings upon hover
 (function (root, $) {
   $('span.popup.exception').popup({
     hoverable: true
@@ -6,6 +7,7 @@
 }(window, jQuery));
 
 $(document).ready(function () {
+  // Unveil images 50px before they appear
   $("img").unveil(50);
 });
 
@@ -13,31 +15,25 @@ var jets = new Jets({
   searchTag: '#jets-search',
   contentTag: '.jets-content',
   didSearch: function (searchPhrase) {
+    // Non-strict comparison operator is used to allow for null
     if (searchPhrase == '') {
-      $('*.website-table thead').css('display', 'block');
       $('*.website-table').css('display', 'none');
+      $('table').show();
     } else {
-      $('*.website-table thead').css('display', 'none');
       $('*.website-table').css('display', 'block');
+      $('.jets-content').each(function () {
+        // Hide table when all rows are hidden by Jets
+        if ($(this).children(':hidden').length === $(this).children().length) $(this).parent().hide();
+      });
     }
   },
   columns: [0] // Search by first column only
 });
 
-function getStyle(element, styleProp) {
-  var validElement = document.getElementById(element),
-    validStyle;
-  if (validElement.currentStyle)
-    validStyle = validElement.currentStyle[styleProp];
-  else if (window.getComputedStyle)
-    validStyle = document.defaultView.getComputedStyle(validElement, null).getPropertyValue(styleProp);
-  return validStyle;
-}
-
+// Display tables and color category selectors
 $('.category').click(function () {
-  var id = $(this).attr('id');
   var icon = $(this).find('h5 i');
-  var table = $('#' + id + '-table');
+  var table = $('#' + $(this).attr('id') + '-table');
   if (table.css('display') == 'block') {
     table.css('display', 'none');
   } else {

@@ -2,9 +2,11 @@
 layout: default
 
 link: Tell them to support 2FA
+link_mobile: TWEET THEM
 tweet: Security is important, @TWITTERHANDLE. We'd like it if you supported two factor auth.
 
 link_progress: Thank them for working on 2FA
+link_progress_mobile: THANK THEM
 tweet_progress: Thanks for working on support for two factor auth, @TWITTERHANDLE!
 hash: SupportTwoFactorAuth
 ---
@@ -21,16 +23,17 @@ hash: SupportTwoFactorAuth
     Add your own favorite site by submitting a pull request on the
     <a href="https://github.com/2factorauth/twofactorauth">GitHub repo</a>.
   </div>
-  <div class="sub header">
+  <div id="search-wrapper" class="sub header">
     <label for="jets-search">
-      <i class="fa fa-search"></i>
+      <i class="search icon"></i>
     </label>
-    <input type="search" id="jets-search" placeholder="Search websites">
+    <input type="search" id="jets-search" placeholder="Search websites" autocomplete="off" spellcheck="false"
+           tabindex="0">
   </div>
 </div>
 
-<div class="ui stackable equal width five column grid container">
-  <div class="row">
+<div class="ui stackable grid container">
+  <div class="five column row">
     <div id="backup" class="category column">
       <h5 class="ui icon header">
         <i class="circular disk outline icon"></i>
@@ -67,7 +70,7 @@ hash: SupportTwoFactorAuth
     {% include table.html variable-param=site.data.sections.investing %}
     {% include table.html variable-param=site.data.sections.security %}
   </div>
-  <div class="row">
+  <div class="five column row">
     <div id="banking" class="category column">
       <h5 class="ui icon header">
         <i class="circular dollar icon"></i>
@@ -104,7 +107,7 @@ hash: SupportTwoFactorAuth
     {% include table.html variable-param=site.data.sections.other %}
     {% include table.html variable-param=site.data.sections.social %}
   </div>
-  <div class="row">
+  <div class="five column row">
     <div id="cloud-computing" class="category column">
       <h5 class="ui icon header">
         <i class="circular cloud icon"></i>
@@ -141,7 +144,7 @@ hash: SupportTwoFactorAuth
     {% include table.html variable-param=site.data.sections.payments %}
     {% include table.html variable-param=site.data.sections.transport %}
   </div>
-  <div class="row">
+  <div class="five column row">
     <div id="communication" class="category column">
       <h5 class="ui icon header">
         <i class="circular comment icon"></i>
@@ -178,7 +181,7 @@ hash: SupportTwoFactorAuth
     {% include table.html variable-param=site.data.sections.remote %}
     {% include table.html variable-param=site.data.sections.utilities %}
   </div>
-  <div class="row">
+  <div class="five column row">
     <div id="cryptocurrencies" class="category column">
       <h5 class="ui icon header">
         <i class="circular bitcoin icon"></i>
