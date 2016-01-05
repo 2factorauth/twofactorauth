@@ -2,6 +2,7 @@
 ---
 
 @import 'mixins';
+$primary-color: #39CCCC;
 
 html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td {
   margin: 0;
@@ -9,7 +10,12 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, 
 }
 
 html, body {
+  @include box-sizing(border-box);
   height: 100%;
+}
+
+*, *:before, *:after {
+  @include box-sizing(inherit);
 }
 
 img {
@@ -36,8 +42,89 @@ p {
   margin: 1em 0;
 }
 
+.left,
+.right {
+  display: inline-block;
+  padding: 30px 15px;
+  width: 50%;
+}
+
+.left {
+  float: left;
+
+  a {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.right {
+  float: right;
+}
+
 #top-header {
   padding: 3em 0;
+}
+
+.ui.header .sub.header {
+  margin: 10px auto;
+  max-width: 80%;
+}
+
+#search-wrapper {
+  margin: 40px auto;
+  position: relative;
+  text-align: left;
+  width: 60%;
+
+  label {
+    left: 17px;
+    position: absolute;
+    top: 12px;
+
+    i {
+      color: #333333;
+      display: inline-block;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+}
+
+input[type=search] {
+  @include transition(all, ease, 300ms);
+  border: 1px #E3E3E3 solid;
+  border-radius: 30px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: block;
+  padding: 10px 45px;
+  width: 100%;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 10px $primary-color;
+    outline: none;
+  }
+}
+
+.active-icon {
+  background-color: $primary-color;
+  color: white;
+
+  & + small {
+    color: #389B9B;
+  }
 }
 
 .category {
@@ -48,9 +135,26 @@ p {
     @include transition(all, ease, 300ms);
 
     &:hover {
-      background-color: #39CCCC;
-      color: white;
+      @extend .active-icon;
     }
+  }
+}
+
+.ui.table tr.mobile-tr {
+  border-bottom: 1px groove rgba(34, 36, 38, 0.14902);
+  display: none;
+  padding: 0;
+
+  td {
+    overflow: auto;
+    padding: 3em;
+  }
+
+  .button {
+    float: right;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 1em;
   }
 }
 
@@ -59,7 +163,66 @@ p {
 }
 
 .website-table {
+  margin: auto;
   position: relative;
   width: 90vw;
   z-index: 1000;
+}
+
+.ui.table .mobile-tr td {
+  p {
+    font-size: 14px;
+  }
+
+  &.positive {
+    background-color: rgba(46, 204, 64, 0.10) !important;
+  }
+
+  &.negative {
+    background-color: rgba(255, 65, 54, 0.10) !important;
+
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  &.progress {
+    background-color: rgba(255, 133, 27, 0.15) !important;
+
+    p {
+      color: rgba(225, 117, 27, 0.7);
+    }
+  }
+}
+
+.ui.table td.icon {
+  text-align: center;
+  width: 10%;
+}
+
+.ui.celled.table tr.desktop-tr td.main a,
+.ui.celled.table .exception,
+.ui.celled.table .exception * {
+  padding-left: 3%;
+  margin-bottom: 5px;
+  vertical-align: top;
+}
+
+span.progress {
+  padding-left: 10%;
+}
+
+@media(max-width: 750px) {
+  .website-table {
+    width: 90%;
+  }
+
+  .mobile-tr {
+    display: table-row;
+  }
+
+  .ui.table tr.desktop-tr,
+  thead {
+    display: none !important;
+  }
 }
