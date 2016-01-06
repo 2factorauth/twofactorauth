@@ -1,6 +1,6 @@
 {% assign section = include.variable-param %}
 <div class="website-table" id="{{ section.id }}-table" style="display:none">
-  <table class="ui celled table tablet stackable">
+  <table class="ui celled table">
     <thead>
     <tr>
       <th class="single line"><h3>{{ section.title }}</h3></th>
@@ -119,10 +119,12 @@
         {% if website.tfa %}
       <td class="main positive">
         <div class="left">
-          <a href="{{ website.url }}">{{ website.name }}</a>
+          <a href="{{ website.url }}" class="name">{{ website.name }}</a>
           {% include exception.html website=website %}
           {% if website.doc %}
-          <a href="{{ website.doc }}">Documentation</a>
+          <br>
+          <br>
+          <a href="{{ website.doc }}" class="documentation">Documentation <i class="external url link large icon"></i></a>
           {% endif %}
 
           {% if website.sms %}
@@ -148,7 +150,7 @@
         {% else %}
       <td class="main negative">
         <div class="left">
-          <a href="{{ website.url }}">{{ website.name }}</a>
+          <a href="{{ website.url }}" class="name">{{ website.name }}</a>
 
           <p><b>NO 2FA</b></p>
         </div>
