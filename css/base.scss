@@ -46,15 +46,20 @@ p {
 .right {
   display: inline-block;
   padding: 30px 15px;
-  width: 50%;
 }
 
 .left {
   float: left;
+  width: 60%;
 
-  a {
+  .name {
     font-size: 22px;
     font-weight: 300;
+  }
+
+  .documentation {
+    font-size: 18px;
+    margin-top: 10px;
   }
 
   p {
@@ -64,6 +69,7 @@ p {
 
 .right {
   float: right;
+  width: 40%;
 }
 
 #top-header {
@@ -140,24 +146,6 @@ input[type=search] {
   }
 }
 
-.ui.table tr.mobile-tr {
-  border-bottom: 1px groove rgba(34, 36, 38, 0.14902);
-  display: none;
-  padding: 0;
-
-  td {
-    overflow: auto;
-    padding: 3em;
-  }
-
-  .button {
-    float: right;
-    font-size: 15px;
-    margin-top: 10px;
-    padding: 1em;
-  }
-}
-
 .ui.table td.twitter {
   text-align: center;
 }
@@ -169,28 +157,48 @@ input[type=search] {
   z-index: 1000;
 }
 
-.ui.table .mobile-tr td {
-  p {
-    font-size: 14px;
-  }
+.ui.table tr {
+  &.mobile-tr {
+    border-bottom: 1px groove rgba(34, 36, 38, 0.14902);
+    display: none;
+    padding: 0;
 
-  &.positive {
-    background-color: rgba(46, 204, 64, 0.10) !important;
-  }
+    td {
+      overflow: auto;
+      padding: 3em;
+    }
 
-  &.negative {
-    background-color: rgba(255, 65, 54, 0.10) !important;
+    .button {
+      float: right;
+      font-size: 15px;
+      margin-top: 10px;
+      padding: 1em;
+    }
 
     p {
-      margin-top: 10px;
+      font-size: 14px;
     }
   }
 
-  &.progress {
-    background-color: rgba(255, 133, 27, 0.15) !important;
+  td {
+    &.positive {
+      background-color: rgba(46, 204, 64, 0.10) !important;
+    }
 
-    p {
-      color: rgba(225, 117, 27, 0.7);
+    &.negative {
+      background-color: rgba(255, 65, 54, 0.10) !important;
+
+      p {
+        margin-top: 10px;
+      }
+    }
+
+    &.progress {
+      background-color: rgba(255, 133, 27, 0.15) !important;
+
+      p {
+        color: rgba(225, 117, 27, 0.7);
+      }
     }
   }
 }
@@ -198,6 +206,18 @@ input[type=search] {
 .ui.table td.icon {
   text-align: center;
   width: 10%;
+}
+
+td img.icon {
+  -webkit-box-shadow: 0 0 0 .1em rgba(0, 0, 0, .1) inset;
+  box-shadow: 0 0 0 .1em rgba(0, 0, 0, .1) inset;
+  background-color: white;
+  border-radius: 50%;
+  float: left;
+  padding: 4px 4px;
+  height: 2em;
+  line-height: 1;
+  margin-right: 0.8em;
 }
 
 .ui.celled.table tr.desktop-tr td.main a,
@@ -212,7 +232,7 @@ span.progress {
   padding-left: 10%;
 }
 
-@media(max-width: 750px) {
+@media(max-width: 768px) {
   .website-table {
     width: 90%;
   }
