@@ -4,6 +4,10 @@ img { border: none; }
 ul { list-style: none; }
 a { color: #009FDA; text-decoration: none; }
 
+.section {
+  padding-top: 52px;
+}
+
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #505050;
@@ -45,7 +49,7 @@ p {
 
 .ui.center.aligned.header {
   display: block;
-  margin: 100px auto 40px auto;
+  margin: 100px auto 0 auto;
 }
 
 .ui.menu .item:before {
@@ -157,7 +161,7 @@ td img.icon {
 }
 
 .ui.divider {
-  margin: 2em 0;
+  margin: 52px 0 0 0;
 }
 
 .ui.popup > .content {
