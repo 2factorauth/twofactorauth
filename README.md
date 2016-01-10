@@ -2,6 +2,7 @@ TwoFactorAuth.org
 =================
 
 [![Build Status](https://travis-ci.org/2factorauth/twofactorauth.svg)](https://travis-ci.org/2factorauth/twofactorauth)
+[![StyleCI Status](https://styleci.io/repos/17724730/shield)](https://styleci.io/repos/17724730)
 [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
 [![Gitter](https://img.shields.io/gitter/room/2factorauth/twofactorauth.svg)](https://gitter.im/2factorauth/twofactorauth)
 [![Twitter](https://img.shields.io/badge/Twitter-@2faorg-blue.svg)](https://twitter.com/2faorg)
