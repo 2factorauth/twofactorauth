@@ -45,21 +45,15 @@ p {
 .left,
 .right {
   display: inline-block;
-  padding: 30px 15px;
+  height: 100%;
 }
 
 .left {
-  float: left;
   width: 60%;
 
   .name {
     font-size: 22px;
     font-weight: 300;
-  }
-
-  .documentation {
-    font-size: 18px;
-    margin-top: 10px;
   }
 
   p {
@@ -69,6 +63,7 @@ p {
 
 .right {
   float: right;
+  padding-left: 30px;
   width: 40%;
 }
 
@@ -157,38 +152,31 @@ input[type=search] {
   z-index: 1000;
 }
 
-.ui.table tr {
-  &.mobile-tr {
+.mobile-section {
+  border: 1px groove rgba(34, 36, 38, 0.14902);
+  border-radius: 5px;
+  display: none;
+  margin: 40px auto;
+  width: 90%;
+
+  > div {
     border-bottom: 1px groove rgba(34, 36, 38, 0.14902);
-    display: none;
-    padding: 0;
+    overflow: auto;
+    padding: 2em;
 
-    td {
-      overflow: auto;
-      padding: 3em;
-    }
-
-    .button {
-      float: right;
-      font-size: 15px;
-      margin-top: 10px;
-      padding: 1em;
-    }
-
-    p {
-      font-size: 14px;
-    }
-  }
-
-  td {
     &.positive {
       background-color: rgba(46, 204, 64, 0.10) !important;
+
+      p {
+        color: rgba(45, 135, 46, 0.91);
+      }
     }
 
     &.negative {
       background-color: rgba(255, 65, 54, 0.10) !important;
 
       p {
+        color: rgba(195, 45, 42, 0.7);
         margin-top: 10px;
       }
     }
@@ -197,9 +185,24 @@ input[type=search] {
       background-color: rgba(255, 133, 27, 0.15) !important;
 
       p {
-        color: rgba(225, 117, 27, 0.7);
+        color: rgba(195, 99, 27, 0.51);
       }
     }
+  }
+
+  .button {
+    padding: 1em;
+    width: 100%;
+
+    i.book.icon {
+      margin-bottom: 2px;
+      vertical-align: bottom;
+    }
+  }
+
+  p {
+    font-weight: 700;
+    font-size: 14px;
   }
 }
 
@@ -220,7 +223,7 @@ td img.icon {
   margin-right: 0.8em;
 }
 
-.ui.celled.table tr.desktop-tr td.main a,
+.ui.celled.table tr td.main a,
 .ui.celled.table .exception,
 .ui.celled.table .exception * {
   padding-left: 3%;
@@ -233,16 +236,11 @@ span.progress {
 }
 
 @media(max-width: 768px) {
-  .website-table {
-    width: 90%;
+  .mobile-section {
+    display: block;
   }
 
-  .mobile-tr {
-    display: table-row;
-  }
-
-  .ui.table tr.desktop-tr,
-  thead {
-    display: none !important;
+  .desktop-section {
+    display: none;
   }
 }
