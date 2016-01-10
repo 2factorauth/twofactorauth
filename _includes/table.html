@@ -17,7 +17,26 @@
       <tbody class="jets-content">
       {% for website in section_file.websites %}
       <tr class="desktop-tr">
-        {% if website.tfa %}
+        {% if website.status %}
+        <td class="main progress">
+          {% if website.img %}
+          <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
+          <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon"
+               alt="{{ website.name }}">
+          {% endif %}
+          <a href="{{ website.url }}">{{ website.name }}</a>
+          <span class="progress">
+            <a class="ui mini orange button" href="{{website.status}}" target="_blank">
+              <i class="star icon"></i> In Progress!
+            </a>
+          </span>
+        </td>
+        <td class="twitter progress" colspan="6">
+          <a class="ui twitter mini button"
+             href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
+             target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
+        </td>
+        {% elsif website.tfa %}
         <td class="main positive">
           {% if website.img %}
           <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
@@ -71,26 +90,12 @@
                alt="{{ website.name }}">
           {% endif %}
           <a href="{{ website.url }}">{{ website.name }}</a>
-          {% if website.status %}
-                            <span class="progress">
-                              <a class="ui mini orange button" href="{{website.status}}" target="_blank">
-                                <i class="star icon"></i> In Progress!
-                              </a>
-                            </span>
-          {% endif %}
         </td>
-
         {% if website.twitter %}
         <td class="twitter negative" colspan="6">
-          {% if website.status %}
-          <a class="ui twitter mini button"
-             href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
-             target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
-          {% else %}
           <a class="ui twitter mini button"
              href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
              target="_blank"><i class="twitter icon"></i> {{page.link}}</a>
-          {% endif %}
         </td>
         {% else %}
         <td class="negative icon"><i class="remove large icon"></i></td>
@@ -106,71 +111,78 @@
       </tbody>
     </table>
   </div>
-  <div class="mobile-section jets-content">
-    {% for website in section_file.websites %}
-    {% if website.status %}
-    <div class="main progress">
-      <div class="left">
-        <a href="{{ website.url }}" class="name">{{ website.name }}</a>
-        {% include exception.html website=website %}
-        <p>IN PROGRESS!</p>
+  <div class="mobile-section">
+    <div class="jets-content">
+      {% for website in section_file.websites %}
+      {% if website.status %}
+      <div class="main progress">
+        <div class="left">
+          <a href="{{ website.url }}" class="name">{{ website.name }}</a>
+          {% include exception.html website=website %}
+          <p>IN PROGRESS!</p>
+
+          <a href="{{ website.status }}" target="_blank">
+            <i class="external url link large icon"></i> Current Status
+          </a>
+        </div>
+        <div class="right">
+
+          <a class="ui twitter mini button"
+             href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
+             target="_blank"><i class="twitter icon"></i> {{page.link_progress_mobile}}</a>
+        </div>
       </div>
-      <div class="right">
-        <a class="ui twitter mini button"
-           href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
-           target="_blank"><i class="twitter icon"></i> {{page.link_progress_mobile}}</a>
+      {% elsif website.tfa %}
+      <div class="main positive">
+        <div class="left">
+          <a href="{{ website.url }}" class="name">{{ website.name }}</a>
+          {% include exception.html website=website %}
+          <br>
+          <br>
+
+          {% if website.sms %}
+          <p>SMS is supported!</p>
+          {% endif %}
+
+          {% if website.phone %}
+          <p>Phone is supported!</p>
+          {% endif %}
+
+          {% if website.email %}
+          <p>Email is supported!</p>
+          {% endif %}
+
+          {% if website.hardware %}
+          <p>Hardware is supported!</p>
+          {% endif %}
+
+          {% if website.software %}
+          <p>Software is supported!</p>
+          {% endif %}
+        </div>
+        {% if website.doc %}
+        <div class="right">
+          <a href="{{ website.doc }}" class="ui twitter mini button"><i class="large book icon"></i> DOCS</a>
+        </div>
+        {% endif %}
       </div>
-    </div>
-    {% elsif website.tfa %}
-    <div class="main positive">
-      <div class="left">
-        <a href="{{ website.url }}" class="name">{{ website.name }}</a>
-        {% include exception.html website=website %}
-        <br>
-        <br>
+      {% else %}
+      <div class="main negative">
+        <div class="left">
+          <a href="{{ website.url }}" class="name">{{ website.name }}</a>
 
-        {% if website.sms %}
-        <p>SMS is supported!</p>
+          <p>NO 2FA</p>
+        </div>
+        {% if website.twitter %}
+        <div class="right">
+          <a class="ui twitter mini button"
+             href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
+             target="_blank"><i class="twitter icon"></i> {{page.link_mobile}}</a>
+        </div>
         {% endif %}
-
-        {% if website.phone %}
-        <p>Phone is supported!</p>
-        {% endif %}
-
-        {% if website.email %}
-        <p>Email is supported!</p>
-        {% endif %}
-
-        {% if website.hardware %}
-        <p>Hardware is supported!</p>
-        {% endif %}
-
-        {% if website.software %}
-        <p>Software is supported!</p>
-        {% endif %}
-      </div>
-      {% if website.doc %}
-      <div class="right">
-        <a href="{{ website.doc }}" class="ui twitter mini button"><i class="large book icon"></i> DOCS</a>
       </div>
       {% endif %}
+      {% endfor %}
     </div>
-    {% else %}
-    <div class="main negative">
-      <div class="left">
-        <a href="{{ website.url }}" class="name">{{ website.name }}</a>
-
-        <p>NO 2FA</p>
-      </div>
-      {% if website.twitter %}
-      <div class="right">
-        <a class="ui twitter mini button"
-           href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
-           target="_blank"><i class="twitter icon"></i> {{page.link_mobile}}</a>
-      </div>
-      {% endif %}
-    </div>
-    {% endif %}
-    {% endfor %}
   </div>
 </div>
