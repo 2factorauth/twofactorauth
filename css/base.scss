@@ -2,6 +2,7 @@
 ---
 
 @import 'mixins';
+@import 'colors';
 $primary-color: #39CCCC;
 
 html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td {
@@ -159,35 +160,10 @@ input[type=search] {
   margin: 40px auto;
   width: 90%;
 
-  > div {
+  .jets-content > div {
     border-bottom: 1px groove rgba(34, 36, 38, 0.14902);
     overflow: auto;
     padding: 2em;
-
-    &.positive {
-      background-color: rgba(46, 204, 64, 0.10) !important;
-
-      p {
-        color: rgba(45, 135, 46, 0.91);
-      }
-    }
-
-    &.negative {
-      background-color: rgba(255, 65, 54, 0.10) !important;
-
-      p {
-        color: rgba(195, 45, 42, 0.7);
-        margin-top: 10px;
-      }
-    }
-
-    &.progress {
-      background-color: rgba(255, 133, 27, 0.15) !important;
-
-      p {
-        color: rgba(195, 99, 27, 0.51);
-      }
-    }
   }
 
   .button {
