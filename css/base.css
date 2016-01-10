@@ -26,6 +26,10 @@ p {
   z-index: 1;
 }
 
+.ui.inverted.teal.menu {
+  border-radius: 0;
+}
+
 .ui.dropdown .menu.visible {
   max-height: 90vh;
   overflow-y: scroll;
