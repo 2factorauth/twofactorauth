@@ -22,15 +22,24 @@ var jets = new Jets({
   contentTag: '.jets-content',
   didSearch: function (searchPhrase) {
     $('.category h5 i').removeClass('active-icon');
-    var content = $('.jets-content');
+    var content;
+    var table;
+    if ($(window).width() > 768) {
+      content = $('.desktop-table .jets-content');
+      table = $('.desktop-table');
+    } else {
+      content = $('.mobile-table .jets-content');
+      table = $('.mobile-table');
+    }
+
     // Non-strict comparison operator is used to allow for null
     if (searchPhrase == '') {
-      $('*.website-table').css('display', 'none');
+      table.css('display', 'none');
       $('.category').show();
       $('table').show();
     } else {
       $('.category').hide();
-      $('*.website-table').css('display', 'block');
+      table.css('display', 'block');
       content.parent().show();
       content.each(function () {
         // Hide table when all rows are hidden by Jets
@@ -56,6 +65,7 @@ $('.category').click(function () {
 function isOpen(category) {
   return $('#' + category + ' h5 i').hasClass('active-icon');
 }
+
 /**
  * Opens a category, ensures the icon is active and scrolls to the icon
  *
@@ -64,11 +74,15 @@ function isOpen(category) {
 function openCategory(category) {
   // Close all active categories
   $('.category h5 i').removeClass('active-icon');
-  $('*.website-table').css('display', 'none');
+  $('.website-table').css('display', 'none');
 
   var icon = $('#' + category + ' h5 i');
   icon.addClass('active-icon');
-  $('#' + category + '-table').css('display', 'block');
+  if ($(window).width() > 768) {
+    $('#' + category + '-desktoptable').css('display', 'block');
+  } else {
+    $('#' + category + '-mobiletable').css('display', 'block');
+  }
 
   // Scroll smoothly to category selector
   $('html, body').animate({
@@ -83,5 +97,5 @@ function openCategory(category) {
  */
 function closeCategory(category) {
   $('#' + category + ' h5 i').removeClass('active-icon');
-  $('#' + category + '-table').css('display', 'none');
+  $('.' + category + '-table').css('display', 'none');
 }
