@@ -150,34 +150,34 @@ input[type=search] {
   z-index: 1000;
 }
 
-.mobile-section {
+.mobile-table {
   display: none;
 
-  .content-wrapper {
+  .jets-content {
     border: 1px groove rgba(34, 36, 38, 0.14902);
     border-radius: 5px;
-    margin: 40px auto;
+    margin: 0 auto 40px auto;
     width: 90%;
 
-    .jets-content > div {
+    > div {
       border-bottom: 1px groove rgba(34, 36, 38, 0.14902);
       padding: 2em;
     }
-  }
 
-  .button {
-    padding: 1em;
-    width: 100%;
+    .button {
+      padding: 1em;
+      width: 100%;
 
-    i.book.icon {
-      margin-bottom: 2px;
-      vertical-align: bottom;
+      i.book.icon {
+        margin-bottom: 2px;
+        vertical-align: bottom;
+      }
     }
-  }
 
-  p {
-    font-weight: 700;
-    font-size: 14px;
+    p {
+      font-weight: 700;
+      font-size: 14px;
+    }
   }
 }
 
@@ -218,11 +218,11 @@ span.progress {
 }
 
 @media(max-width: 768px) {
-  .mobile-section {
+  .mobile-table {
     display: block;
   }
 
-  .desktop-section {
+  .desktop-table {
     display: none;
   }
 }
