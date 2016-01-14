@@ -64,9 +64,11 @@ websites:
 
     - name: Mint
       url: https://www.mint.com
-      twitter: mint
       img: mint.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
 
     - name: Mint Bills (formerly Check)
       url: https://bills.mint.com
