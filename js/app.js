@@ -9,6 +9,19 @@ $(document).ready(function () {
   $('img').unveil(50);
 });
 
+/**
+ * Create an event that is called one second after the browser
+ * window is re-sized and has finished being re-sized.
+ * This event corrects for browser differences in the
+ * triggering of window resize events.
+ */
+$(window).resize(function () {
+  if (this.resizeTO) clearTimeout(this.resizeTO);
+  this.resizeTO = setTimeout(function () {
+    $(this).trigger('resizeEnd');
+  }, 1000);
+});
+
 // Show exception warnings upon hover
 (function (root, $) {
   $('span.popup.exception').popup({
@@ -17,37 +30,47 @@ $(document).ready(function () {
   $('a.popup.exception').popup();
 }(window, jQuery));
 
+var isSearching = false;
 var jets = new Jets({
   searchTag: '#jets-search',
   contentTag: '.jets-content',
   didSearch: function (searchPhrase) {
     $('.category h5 i').removeClass('active-icon');
-    var content;
-    var table;
-    if ($(window).width() > 768) {
-      content = $('.desktop-table .jets-content');
-      table = $('.desktop-table');
-    } else {
-      content = $('.mobile-table .jets-content');
-      table = $('.mobile-table');
-    }
+    var platform;
+    $(window).width() > 768 ? platform = 'desktop' : platform = 'mobile';
+    var content = $('.' + platform + '-table .jets-content');
+    var table = $('.' + platform + '-table');
 
     // Non-strict comparison operator is used to allow for null
     if (searchPhrase == '') {
-      table.css('display', 'none');
+      $('.website-table').css('display', 'none');
       $('.category').show();
       $('table').show();
+      isSearching = false;
     } else {
+      $('.website-table').css('display', 'none');
       $('.category').hide();
       table.css('display', 'block');
       content.parent().show();
       content.each(function () {
         // Hide table when all rows are hidden by Jets
-        if ($(this).children(':hidden').length === $(this).children().length) $(this).parent().hide();
+        if ($(this).children(':hidden').length === $(this).children().length) {
+          if (platform == 'mobile') $(this).parent().hide();
+          else $(this).parent().parent().hide();
+        }
       });
+      isSearching = true;
     }
   },
   columns: [0] // Search by first column only
+});
+
+/**
+ * Ensure searching is conducted with regard to the user's viewport
+ * after re-sizing the screen
+ */
+$(window).on('resizeEnd', function () {
+  if (isSearching) jets.options.didSearch($('#jets-search').val());
 });
 
 // Display tables and color category selectors

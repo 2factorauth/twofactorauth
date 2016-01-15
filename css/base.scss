@@ -126,8 +126,17 @@ input[type=search] {
   }
 }
 
+.ui.grid > .row {
+  padding: 0;
+}
+
+.desktop-table {
+  padding: 18px 0;
+}
+
 .category {
   cursor: pointer;
+  padding-top: 20px;
   text-align: center;
 
   h5 i {
