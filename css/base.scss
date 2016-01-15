@@ -162,6 +162,12 @@ input[type=search] {
 .mobile-table {
   display: none;
 
+  .label {
+    display: none;
+    padding: 15px 0;
+    text-align: center;
+  }
+
   .jets-content {
     border: 1px groove rgba(34, 36, 38, 0.14902);
     border-radius: 5px;
