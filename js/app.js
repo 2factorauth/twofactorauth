@@ -44,11 +44,13 @@ var jets = new Jets({
     // Non-strict comparison operator is used to allow for null
     if (searchPhrase == '') {
       $('.website-table').css('display', 'none');
+      $('.website-table .label').css('display', 'none');
       $('.category').show();
       $('table').show();
       isSearching = false;
     } else {
       $('.website-table').css('display', 'none');
+      $('.website-table .label').css('display', 'block');
       $('.category').hide();
       table.css('display', 'block');
       content.parent().show();
