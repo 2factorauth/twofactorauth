@@ -39,14 +39,14 @@ p {
   margin: 1em 0;
 }
 
-.left,
-.right {
+.website-table .left,
+.website-table .right {
   display: inline-block;
   height: 100%;
   line-height: 2em;
 }
 
-.left {
+.website-table .left {
   width: 60%;
 
   .name {
@@ -59,19 +59,23 @@ p {
   }
 }
 
-.right {
+.website-table .right {
   float: right;
   padding-left: 30px;
   width: 40%;
 }
 
-#top-header {
-  padding: 3em 0;
+.ui.inverted.teal.menu {
+  border-radius: 0;
 }
 
-.ui.header .sub.header {
-  margin: 10px auto;
-  max-width: 80%;
+#top-header {
+  padding: 3em 0;
+
+  .sub.header {
+    margin: 10px auto;
+    max-width: 80%;
+  }
 }
 
 #search-wrapper {
