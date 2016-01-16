@@ -10,7 +10,7 @@ $(document).ready(function () {
 });
 
 /**
- * Create an event that is called one second after the browser
+ * Create an event that is called 500ms after the browser
  * window is re-sized and has finished being re-sized.
  * This event corrects for browser differences in the
  * triggering of window resize events.
@@ -19,7 +19,7 @@ $(window).resize(function () {
   if (this.resizeTO) clearTimeout(this.resizeTO);
   this.resizeTO = setTimeout(function () {
     $(this).trigger('resizeEnd');
-  }, 1000);
+  }, 500);
 });
 
 // Show exception warnings upon hover
@@ -69,10 +69,12 @@ var jets = new Jets({
 
 /**
  * Ensure searching is conducted with regard to the user's viewport
- * after re-sizing the screen
+ * after re-sizing the screen and close all categories after re-sizing
  */
 $(window).on('resizeEnd', function () {
   if (isSearching) jets.options.didSearch($('#jets-search').val());
+  $('.category h5 i').removeClass('active-icon');
+  $('.website-table').css('display', 'none');
 });
 
 // Display tables and color category selectors
