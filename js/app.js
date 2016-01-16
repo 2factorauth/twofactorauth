@@ -73,8 +73,6 @@ var jets = new Jets({
  */
 $(window).on('resizeEnd', function () {
   if (isSearching) jets.options.didSearch($('#jets-search').val());
-  $('.category h5 i').removeClass('active-icon');
-  $('.website-table').css('display', 'none');
 });
 
 // Display tables and color category selectors
