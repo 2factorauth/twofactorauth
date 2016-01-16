@@ -75,6 +75,15 @@ websites:
       sms: Yes
       doc: https://help.linkedin.com/app/answers/detail/a_id/544/ft/eng
 
+    - name: Medium
+      url: https://medium.com
+      twitter: medium
+      img: medium.png
+      tfa: Yes
+      email: Yes
+      exceptions:
+        text: "Medium doesn't use passwords, instead emails a link to user to login"
+
     - name: Reddit
       url: https://www.reddit.com/
       twitter: reddit
