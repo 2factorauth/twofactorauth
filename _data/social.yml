@@ -79,7 +79,10 @@ websites:
       url: https://medium.com
       twitter: medium
       img: medium.png
-      tfa: No
+      tfa: Yes
+      email: Yes
+      exceptions:
+        text: "Medium doesn't use passwords, instead emails a link to user to login"
 
     - name: Reddit
       url: https://www.reddit.com/
