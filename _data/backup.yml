@@ -17,10 +17,11 @@ websites:
     doc: http://support.apple.com/kb/ht5570
 
   - name: Backblaze
-    url: http://www.backblaze.com/
-    twitter: backblaze
+    url: http://www.backblaze.com
     img: backblaze.png
-    tfa: No
+    tfa: Yes
+    sms: Yes
+    doc: https://www.backblaze.com/blog/two-factor-verification-for-backblaze/
 
   - name: Bitcasa
     url: http://www.bitcasa.com/
@@ -59,6 +60,7 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
+    hardware: Yes
     doc: https://www.dropbox.com/help/363/en
 
   - name: Evernote
@@ -85,6 +87,12 @@ websites:
     software: Yes
     hardware: Yes
     doc: http://www.google.com/intl/en-US/landing/2step/features.html
+
+  - name: hubiC
+    url: https://hubic.com/
+    twitter: hubic
+    img: hubic.png
+    tfa: No
 
   - name: IDrive
     url: https://www.idrive.com
@@ -128,12 +136,12 @@ websites:
     doc: https://revert.io/blog/how-to-enable-two-factor-authentication/
 
   - name: SmartBox
-    url: http://www.panterranetworks.com/SmartBox/index.php
+    url: https://www.panterranetworks.com/smartbox/smartbox_overview.php
     img: smartbox.png
     tfa: Yes
     email: Yes
     software: Yes
-    doc: http://www.panterranetworks.com/SmartBox/features/security.php
+    doc: https://www.panterranetworks.com/smartbox/sb_features/sbf_security.php
 
   - name: SpiderOak
     url: https://spideroak.com
@@ -147,9 +155,16 @@ websites:
     img: sugarsync.png
     tfa: No
 
+  - name: Sync
+    url: https://sync.com
+    img: sync.png
+    software: Yes
+    email: Yes
+    tfa: Yes
+    doc: https://www.sync.com/help/how-do-i-setup-two-factor-authentication/
+
   - name: Synology
     url: https://www.synology.com/
-    twitter: Synology
     img: synology.png
     tfa: Yes
     software: Yes
@@ -166,11 +181,12 @@ websites:
     email: Yes
     doc: https://support.tresorit.com/entries/104192996-How-to-set-up-two-step-verification
 
-  - name: Wuala
-    url: https://wuala.com/
-    twitter: Wuala
-    img: wuala.png
+  - name: XXL Cloud
+    url: https://xxlcloud.com
+    twitter: xxlcloud
+    img: xxlcloud.png
     tfa: No
+    status: https://xxlcloud.com/en/blog/2factorauthentication
 
   - name: Yandex.Disk
     url: https://disk.yandex.com
@@ -179,7 +195,7 @@ websites:
     software: Yes
     exceptions:
         text: "SMS-capable phone required for initial setup."
-    doc: http://help.yandex.com/passport/authorization/twofa.xml
+    doc: https://yandex.com/support/passport/authorization/twofa.xml
 
   - name: Zetta.net
     url: http://zetta.net/

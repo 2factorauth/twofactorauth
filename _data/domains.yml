@@ -72,6 +72,12 @@ websites:
       twitter: domainfactory
       tfa: No
 
+    - name: Domain Monster
+      url: https://www.domainmonster.com/
+      img: domainmonster.png
+      twitter: domainmonster
+      tfa: No
+
     - name: DomainsAtCost
       url: https://www.domainsatcost.ca/
       twitter: domainsatcost
@@ -91,6 +97,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      exceptions:
+        text: "Currently only supported for the Managed DNS & Email Delivery platforms (via DynID). Eventually DynID (and 2FA) will be rolled out to all platforms (no ETA)."
       doc: https://help.dyn.com/2-factor-authentication/
 
     - name: Dynadot
@@ -131,14 +139,11 @@ websites:
       hardware: yes
       doc: http://fabulous.com/informationcenter/index.htm?formdata%5Bqid%5D=1194
 
-    - name: Frankdomains
-      url: https://www.frankdomains.com/
-      img: frankdomains.png
-      tfa: yes
-      hardware: yes
-      exceptions:
-          text: "Yearly fee for using 2FA: 19.99 GBP"
-      doc: https://www.frankdomains.com/keep-your-domain-safe/
+    - name: Fasthosts
+      url: https://www.fasthosts.co.uk/
+      twitter: Fasthosts
+      img: fasthosts.png
+      tfa: No
 
     - name: Gandi
       url: https://gandi.net
@@ -152,9 +157,7 @@ websites:
       url: http://www.godaddy.com/
       tfa: yes
       sms: Yes
-      doc: http://support.godaddy.com/help/article/7502/enabling-twostep-authentication
-      exceptions:
-          text: "US numbers only"
+      doc: https://www.godaddy.com/help/enabling-two-step-authentication-for-your-godaddy-account-7502
 
     - name: Google Domains
       url: https://domains.google.com
@@ -185,7 +188,6 @@ websites:
       img: hurricane.png
       tfa: Yes
       software: Yes
-      twitter: henet
 
     - name: Internet.bs
       url: http://www.internet.bs
@@ -219,7 +221,6 @@ websites:
 
     - name: MarkMonitor
       url: https://www.markmonitor.com
-      twitter: markmonitor
       img: markmonitor.png
       tfa: Yes
       hardware: Yes
@@ -274,6 +275,14 @@ websites:
       img: namespro.png
       tfa: No
 
+    - name: NearlyFreeSpeech.net
+      url: https://www.nearlyfreespeech.net/
+      img: nfsn.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
+
     - name: Netfirms
       url: https://www.netfirms.com
       twitter: netfirms
@@ -291,13 +300,35 @@ websites:
       twitter: netsolcares
       img: networksolutions.png
       tfa: No
-      
+
+    - name: Nominet
+      url: http://www.nominet.uk/
+      img: nominet.png
+      tfa: Yes
+      software: Yes
+      doc: http://registrars.nominet.org.uk/sites/default/files/two_factor_authentication_userguide.pdf
+
     - name: Openprovider
       url: https://www.openprovider.co.uk
       img: openprovider.png
       tfa: Yes
       software: Yes
       doc: https://www.openprovider.co.uk/about-openprovider/news/secure-your-account-with-two-factor-authentication
+
+    - name: OpenSRS
+      url: https://opensrs.com
+      img: opensrs.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://help.opensrs.com/hc/en-us/articles/209618017-Two-Factor-Authentication-2FA-for-Reseller-Account-Access
+
+    - name: pairNIC
+      url: https://www.pairnic.com/
+      img: pairnic.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.pairnic.com/faq_security.html
 
     - name: PointDNS
       url: https://pointhq.com/
@@ -312,15 +343,19 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
-      
 
     - name: Register4Less
       url: https://register4less.com/
-      twitter: register4less
       img: register4less.png
       tfa: Yes
       software: Yes
       doc: http://blog.register4less.com/?p=43
+
+    - name: STRATO
+      url: https://www.strato.de/
+      twitter: STRATO_AG
+      img: strato.png
+      tfa: No
 
     - name: Verio
       url: https://www.verio.com/

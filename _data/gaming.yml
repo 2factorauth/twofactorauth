@@ -1,4 +1,12 @@
 websites:
+    - name: Ankama
+      url: http://www.ankama.com
+      img: ankama.png
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: https://support.ankama.com/hc/en-us/categories/200093427-DOFUS-Security
+
     - name: Blizzard
       url: http://blizzard.com
       img: blizzard.png
@@ -16,7 +24,6 @@ websites:
 
     - name: Elder Scrolls Online
       url: http://www.elderscrollsonline.com/
-      twitter: TESOnline
       img: eso.png
       tfa: Yes
       email: Yes
@@ -34,7 +41,6 @@ websites:
 
     - name: EVE Online
       url: http://www.eveonline.com/
-      twitter: EveOnline
       img: eveonline.png
       tfa: Yes
       email: Yes
@@ -45,7 +51,6 @@ websites:
 
     - name: Garena Online
       url: http://garena.com
-      twitter: garenaonline
       img: garena.png
       tfa: Yes
       software: Yes
@@ -94,7 +99,6 @@ websites:
       twitter: leagueoflegends
       img: leagueoflegends.png
       tfa: No
-      status: http://forums.na.leagueoflegends.com/board/showthread.php?p=45603580#45603580
 
     - name: Mojang
       url: https://mojang.com/
@@ -108,6 +112,7 @@ websites:
       tfa: Yes
       email: Yes
       sms: Yes
+      software: Yes
       doc: http://help.ea.com/en/article/origin-login-verification-information/
 
     - name: Playstation Network
@@ -115,7 +120,7 @@ websites:
       twitter: AskPlayStation
       img: psn.png
       tfa: No
-    
+
     - name: Rockstar Games Social Club
       url: http://socialclub.rockstargames.com
       twitter: RockstarSupport
@@ -157,6 +162,13 @@ websites:
       exceptions:
           text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
 
+    - name: Tibia
+      url: http://www.tibia.com/
+      img: tibia.png
+      tfa: Yes
+      software: Yes
+      doc: http://www.tibia.com/support/?subtopic=faq&question=authenticator
+
     - name: Trion Worlds
       url: http://www.trionworlds.com/en/
       img: trionworlds.png
@@ -181,4 +193,4 @@ websites:
       img: wildstar.png
       tfa: Yes
       software: Yes
-      doc: https://support.wildstar-online.com/entries/53257786-Two-Step-Verification-Setting-Up-and-Rewards
+      doc: https://support.wildstar-online.com/hc/en-us/articles/203982369-Two-Step-Verification-FAQ

@@ -31,12 +31,17 @@ websites:
       img: fleep.png
       tfa: No
 
+    - name: Flowdock
+      url: https://www.flowdock.com
+      twitter: flowdock
+      img: flowdock.png
+      tfa: No
+
     - name: HipChat
       url: https://www.hipchat.com
       twitter: HipChat
       img: hipchat.png
       tfa: No
-      status: https://twitter.com/HipChat/status/540216532564213760
 
     - name: Mailchimp
       url: https://mailchimp.com/
@@ -65,7 +70,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://peerio.zendesk.com/hc/en-us/articles/202933829-How-do-I-setup-two-factor-authentication-
-      
+
     - name: Salesforce
       url: http://www.salesforce.com
       img: salesforce.png
@@ -103,6 +108,7 @@ websites:
       url: https://slack.com/
       img: slack.png
       tfa: Yes
+      sms: Yes
       software: Yes
       doc: https://slack.zendesk.com/hc/en-us/articles/204509068-Enabling-two-factor-authentication
 
@@ -123,7 +129,6 @@ websites:
 
     - name: Telegram
       url: https://telegram.org/
-      twitter: telegram
       img: telegram.png
       tfa: Yes
       sms: Yes

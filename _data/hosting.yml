@@ -1,4 +1,11 @@
 websites:
+    - name: Binary Lane
+      url: https://www.binarylane.com.au/
+      img: binarylane.png
+      tfa: Yes
+      software: yes
+      doc: https://www.binarylane.com.au/support/solutions/articles/1000199372-two-factor-authentication
+
     - name: Bluehost
       url: https://www.bluehost.com/
       img: bluehost.png
@@ -23,14 +30,12 @@ websites:
       twitter: CloudShards
       tfa: No
 
-    - name: DigitalOcean
-      url: https://www.digitalocean.com/
-      img: digitalocean.png
+    - name: cyon
+      url: https://www.cyon.ch
+      img: cyon.png
       tfa: Yes
       software: Yes
-      exceptions:
-          text: "SMS-capable phone required."
-      doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
+      doc: https://www.cyon.ch/support/a/225/wie-aktiviere-ich-die-zwei-schritt-verifizierung
 
     - name: Dreamhost
       url: https://dreamhost.com
@@ -41,7 +46,6 @@ websites:
 
     - name: Fastly
       url: https://www.fastly.com
-      twitter: Fastly
       img: fastly.png
       tfa: Yes
       software: Yes
@@ -49,7 +53,6 @@ websites:
 
     - name: Glesys
       url: http://glesys.com/
-      twitter: glesysab
       img: glesys.png
       tfa: Yes
       software: Yes
@@ -61,10 +64,25 @@ websites:
       tfa: No
       twitter: globat
 
+    - name: Infomaniak
+      url: https://www.infomaniak.com/
+      img: infomaniak.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.infomaniak.ch/en/support/faq/1940
+
+    - name: InMotion Hosting
+      url: https://www.inmotionhosting.com/
+      twitter: inmotionhosting
+      img: inmotion.png
+      tfa: No
+
     - name: Hetzner Online
       url: https://www.hetzner.de/
       img: hetzner.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      hardware: Yes
 
     - name: iPage
       url: http://www.ipage.com/ipage/index.html
@@ -72,12 +90,12 @@ websites:
       img: ipage.png
       tfa: No
 
-    - name: Linode
-      url: https://www.linode.com/
-      img: linode.png
+    - name: Mammoth Networks
+      url: https://www.mammoth.net.au/
+      img: mammothnetworks.png
       tfa: Yes
       software: Yes
-      doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
+      doc: https://www.mammoth.net.au/news/2012/10/22/two-factor-authentication-now-available
 
     - name: MaxCDN
       url: https://www.maxcdn.com
@@ -100,13 +118,32 @@ websites:
       software: Yes
       doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
 
+    - name: One.com
+      url: https://www.one.com/
+      twitter: onecom
+      img: onecom.png
+      tfa: No
+
+    - name: Online
+      url: https://www.online.net/
+      img: online.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+
     - name: OVH
       url: http://www.ovh.com/
       img: ovh.png
       tfa: Yes
       sms: Yes
       software: Yes
-      twitter: ovh_support_en
+
+    - name: PlanetHoster
+      url: https://planethoster.net
+      img: PlanetHoster.png
+      tfa: Yes
+      software: Yes
+      doc: http://blog.planethoster.net/securite-espace-client-planethoster/
 
     - name: Rackspace
       url: https://www.rackspace.com/
@@ -122,6 +159,12 @@ websites:
       software: Yes
       doc: https://clientarea.ramnode.com/knowledgebase.php?action=displayarticle&id=70
 
+    - name: Site5
+      url: http://www.site5.com/
+      twitter: site5 
+      img: site5.png
+      tfa: No
+
     - name: Softlayer
       url: https://www.softlayer.com
       img: softlayer.png
@@ -134,7 +177,6 @@ websites:
       img: speedit.png
       tfa: Yes
       software: Yes
-      twitter: SpeedIT_S
       doc: https://www.speedit.org/faq/#accordian_item_937
 
     - name: Squarespace
@@ -142,7 +184,7 @@ websites:
       twitter: squarespace
       img: squarespace.png
       tfa: No
-      
+
     - name: UKFast
       url: http://www.ukfast.co.uk/
       img: ukfast.png
@@ -163,7 +205,9 @@ websites:
       url: https://www.webfaction.com
       twitter: webfaction
       img: webfaction.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://docs.webfaction.com/user-guide/control_panel.html#two-step-login
 
     - name: Ukraine
       url: https://www.ukraine.com.ua/
