@@ -5,6 +5,12 @@ websites:
       img: 23andme.png
       tfa: No
 
+    - name: CVS/Caremark
+      url: https://www.caremark.com
+      twitter: cvshealth
+      img: cvscaremark.png
+      tfa: No
+
     - name: drchrono
       url: https://www.drchrono.com
       img: drchrono.png
@@ -24,6 +30,15 @@ websites:
       twitter: fitbit
       img: fitbit.png
       tfa: No
+
+    - name: FollowMyHealth
+      url: https://www.followmyhealth.com/
+      img: followmyhealth.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: http://support.followmyhealth.com/customer/portal/articles/1309938-fmh-secure-login-2-step-verification---break-down
 
     - name: Healthcare.gov
       url: http://healthcare.gov

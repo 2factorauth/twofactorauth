@@ -1,13 +1,14 @@
 websites:
     - name: CAcert
-      url: https://www.cacert.org/
-      twitter: CAcert_News
+      url: http://www.cacert.org/
       img: cacert.png
-      tfa: No
+      tfa: Yes
+      hardware: Yes
+      exceptions:
+          text: "Requires X.509-capable cryptotoken or smartcard."
 
     - name: DigiCert
       url: http://www.digicert.com/
-      twitter: digicert
       img: digicert.png
       tfa: Yes
       software: Yes
@@ -42,6 +43,21 @@ websites:
       tfa: Yes
       email: Yes
 
+    - name: GoGetSSL
+      url: https://gogetssl.com/
+      img: gogetssl.png
+      tfa: No
+      twitter: gogetssl
+
+    - name: Imperva Incapsula
+      url: https://www.incapsula.com/
+      img: incapsula.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      software: Yes
+      doc: https://docs.incapsula.com/Content/Management%20Console%20and%20Settings/accountsettings.htm
+
     - name: Norton
       url: http://us.norton.com
       img: norton.png
@@ -56,7 +72,6 @@ websites:
       img: opendns.png
       tfa: Yes
       sms: Yes
-      twitter: OpenDNS
       software: Yes
       exceptions:
           text: "Only available for enterprise accounts."

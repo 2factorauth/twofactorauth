@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ site.url }}/{{ site.img }}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:description" content="{{ page.description }}">
+
+  <title>{{ site.title }}</title>
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700">
+  <link rel="stylesheet" href="/lib/semantic/css/semantic.min.css">
+  <link rel="stylesheet" href="/css/base.css">
+</head>
+
+<body>
+<div class="ui teal inverted menu">
+  <a href="/" class="item">
+    <i class="home icon"></i>
+    Home
+  </a>
+
+  <div class="right menu">
+    <a href="{{ site.repo }}" class="item">
+      <i class="github alternate icon"></i>
+      Contribute
+    </a>
+  </div>
+</div>
+
+{{ content }}
+
+<div class="ui divider"></div>
+
+<div class="footer ui basic center aligned segment">
+  See an issue or want to add to this website? Fork it or create an issue on
+  <a href="{{ site.repo }}">GitHub</a>.
+</div>
+
+<div class="ui divider"></div>
+
+<div class="footer ui basic center aligned segment">
+  Made with tea
+  <i class="leaf circular small icon"></i>
+  by
+  <a href="http://joshldavis.com">Josh Davis</a>
+  and love
+  <i class="heart circular small icon"></i>
+  from some awesome
+  <a href="{{ site.repo }}/graphs/contributors">Contributors</a>.
+</div>
+
+<!-- 3rd Party Libraries -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/lib/semantic/javascript/semantic.min.js"></script>
+</body>
+</html>

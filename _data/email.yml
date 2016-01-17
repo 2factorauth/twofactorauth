@@ -1,9 +1,13 @@
 websites:
     - name: Aol Mail
       url: https://mail.aol.com
-      twitter: aol
       img: aol.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      exceptions:
+        text: "Currently U.S. only. International support coming soon."
+      doc: https://help.aol.com/articles/2-factor-authentication-stronger-than-your-password-alone
 
     - name: FastMail
       url: https://www.fastmail.fm/
@@ -52,6 +56,12 @@ websites:
       hardware: Yes
       doc: https://mailbox.org/en/one-time-passwords-for-secure-login-to-our-webmailer/
 
+    - name: Mailstache
+      url: https://mailstache.io
+      twitter: mailstache
+      img: mailstache.png
+      tfa: No
+
     - name: Outlook.com
       url: https://outlook.com
       img: outlook.png
@@ -85,8 +95,7 @@ websites:
       url: https://mail.riseup.net
       twitter: riseupnet
       img: riseup.png
-      tfa: Yes
-      software: Yes
+      tfa: No
       doc: https://help.riseup.net/en/email/webmail/2factorauth
 
     - name: Yahoo Mail
@@ -112,7 +121,14 @@ websites:
       software: Yes
       exceptions:
         text: "SMS-capable phone required for initial setup."
-      doc: http://help.yandex.com/passport/authorization/twofa.xml
+      doc: https://yandex.com/support/passport/authorization/twofa.xml
+
+    - name: Zimbra
+      url: https://www.zimbra.com/
+      twitter: zimbra
+      img: zimbra.png
+      tfa: No
+      status: https://bugzilla.zimbra.com/show_bug.cgi?id=98623
 
     - name: Zoho Mail
       url: https://www.zoho.com/mail/
