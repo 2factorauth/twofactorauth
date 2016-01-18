@@ -5,7 +5,7 @@ $output=0;
 begin
   def error(msg)
     $output=$output+1;
-    if($output == 1)
+    if ($output == 1)
       puts "<------------ ERROR ------------>\n"
     end
     puts "#{$output}. #{msg}"
@@ -19,26 +19,32 @@ begin
     data = YAML.load_file('_data/' + section[1]['id'] + '.yml')
 
     data['websites'].each do |website|
+      tfa = "#{website['tfa']}"
+      if (tfa != 'true' && tfa != 'false')
+        error("#{website['name']} 'tfa' should be either 'Yes' or 'No' #{tfa}");
+      end
+
       image = "img/#{section[1]['id']}/#{website['img']}"
 
       unless File.exists?(image)
         error("#{website['name']} image not found.")
-      end
+      else
 
-      image_dimensions = [32,32]
+        image_dimensions = [32, 32]
 
-      unless FastImage.size(image) == image_dimensions
-        error("#{image} is not #{image_dimensions.join("x")}")
-      end
+        unless FastImage.size(image) == image_dimensions
+          error("#{image} is not #{image_dimensions.join("x")}")
+        end
 
-      ext = ".png"
-      unless File.extname(image) == ext
-        error("#{image} is not #{ext}")
+        ext = ".png"
+        unless File.extname(image) == ext
+          error("#{image} is not #{ext}")
+        end
       end
     end
   end
 
-  if($output > 0 )
+  if ($output > 0)
     exit 1
   end
 rescue Psych::SyntaxError => e
