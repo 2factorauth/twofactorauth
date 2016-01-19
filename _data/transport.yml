@@ -1,4 +1,22 @@
 websites:
+    - name: American Airlines
+      url: https://www.aa.com/
+      twitter: AmericanAir
+      img: aa.png
+      tfa: No
+
+    - name: Amtrak
+      url: https://www.amtrak.com/
+      twitter: Amtrak
+      img: amtrak.png
+      tfa: No
+
+    - name: British Airways
+      url: https://www.britishairways.com/
+      twitter: British_Airways
+      img: ba.png
+      tfa: No
+
     - name: Hailo
       url: https://www.hailoapp.com/
       twitter: Hailo
@@ -17,10 +35,22 @@ websites:
       img: lyft.png
       tfa: No
 
+    - name: Norwegian
+      url: https://www.norwegian.com/
+      twitter: Fly_Norwegian
+      img: norwegian.png
+      tfa: No
+
     - name: Transport for London
       url: https://tfl.gov.uk/
       twitter: tflwaystopay
       img: tfl.png
+      tfa: No
+
+    - name: SAS
+      url: https://www.flysas.com/
+      twitter: SAS
+      img: sas.png
       tfa: No
 
     - name: SJ
