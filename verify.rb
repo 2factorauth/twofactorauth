@@ -1,13 +1,19 @@
 # Load Yaml
 require 'yaml'
 require 'fastimage'
-$output=0;
-$ignore_twitter=0;
+$output=0
+
+# Should the script ignore checking for Twitter handles?
+$ignore_twitter=0
+
+# TFA forms
+$tfa_forms = ['email', 'hardware', 'software', 'sms', 'phone']
+
 begin
 
   # Send error message
   def error(msg)
-    $output=$output+1;
+    $output=$output+1
     if ($output == 1)
       puts "<------------ ERROR ------------>\n"
     end
@@ -16,15 +22,16 @@ begin
 
   # Verify that the tfa factors are booleans
   def check_tfa(website)
-    tfa_forms = ['email', 'hardware', 'software', 'sms', 'phone']
-    for i in 0..(tfa_forms.length-1)
-      form = website[tfa_forms[i]]
+
+    for i in 0..($tfa_forms.length-1)
+      form = website[$tfa_forms[i]]
       if (form != nil)
-        if (form != true)
-          error("#{website['name']} should not contain a \'#{tfa_forms[i]}\' tag when it\'s value isn\'t \'YES\'.")
-        end
         if (website['tfa'] != true)
-          error("#{website['name']} should not contain a \'#{tfa_forms[i]}\' tag when it doesn\'t support TFA.")
+          error("#{website['name']} should not contain a \'#{$tfa_forms[i]}\' tag when it doesn\'t support TFA.")
+        else
+          if (form != true)
+            error("#{website['name']} should not contain a \'#{$tfa_forms[i]}\' tag when it\'s value isn\'t \'YES\'.")
+          end
         end
       end
     end
@@ -34,18 +41,18 @@ begin
     tags = ['url', 'img', 'name']
     for i in 0..(tags.length-1)
       tag = website[tags[i]]
-      if(tag == nil)
+      if (tag == nil)
         error("#{website['name']} doesn\'t contain a \'#{tags[i]}\' tag.")
       end
     end
 
-    #if(!$ignore_twitter)
+    if (!$ignore_twitter)
       twitter = website['twitter']
-      if(twitter != nil)
-        if(website['tfa'])
+      if (twitter != nil)
+        if (website['tfa'])
           error("#{website['name']} should not contain a \'twitter\' tag as it supports TFA.")
         end
-     # end
+      end
     end
   end
 
@@ -62,9 +69,7 @@ begin
       check_tfa(website)
       tags_set(website)
 
-
       image = "img/#{section[1]['id']}/#{website['img']}"
-
       unless File.exists?(image)
         error("#{website['name']} image not found.")
       else
@@ -72,10 +77,10 @@ begin
         image_dimensions = [32, 32]
 
         unless FastImage.size(image) == image_dimensions
-          error("#{image} is not #{image_dimensions.join("x")}")
+          error("#{image} is not #{image_dimensions.join('x')}")
         end
 
-        ext = ".png"
+        ext = '.png'
         unless File.extname(image) == ext
           error("#{image} is not #{ext}")
         end
