@@ -49,15 +49,6 @@ websites:
       exceptions:
           text: "This does not prevent people from logging into the game client by circumventing the launcher. That is a legacy issue that the developers have acknowledged."
 
-    - name: Garena Online
-      url: http://garena.com
-      img: garena.png
-      tfa: Yes
-      software: Yes
-      doc: http://www.garena.com/account/
-      exceptions:
-          text: "As of September 29th 2014, new user enrollment for 2FA is broken. A mobile phone and Garena account level 3 or higher is required for 2FA."
-
     - name: GOG.com
       url: http://www.gog.com
       twitter: GOGcom
