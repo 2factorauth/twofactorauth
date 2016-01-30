@@ -51,7 +51,7 @@ begin
   # as well as if an image is missing
   main = YAML.load_file('_data/sections.yml')
   main.each do |section|
-    data = YAML.load_file('_data/' + section[1]['id'] + '.yml')
+    data = YAML.load_file('_data/' + section['id'] + '.yml')
     data['websites'].each do |website|
       tfa = "#{website['tfa']}"
       if tfa != 'true' && tfa != 'false'
@@ -60,7 +60,7 @@ begin
       check_tfa(website)
       tags_set(website)
 
-      image = "img/#{section[1]['id']}/#{website['img']}"
+      image = "img/#{section['id']}/#{website['img']}"
       if File.exist?(image)
         image_dimensions = [32, 32]
 
