@@ -1,10 +1,11 @@
-{% assign section = include.variable-param %}
-{% assign section_file = site.data[section.id] %}
-<div class="website-table desktop-table {{ section.id }}-table" id="{{ section.id }}-desktoptable" style="display:none">
+{% assign section_id = include.id-param %}
+{% assign section_title = include.title-param %}
+{% assign section_file = site.data[section_id] %}
+<div class="website-table desktop-table {{ section_id }}-table" id="{{ section_id }}-desktoptable" style="display:none">
   <table class="ui celled table content-wrapper">
     <thead>
     <tr>
-      <th class="single line four wide"><h3>{{ section.title }}</h3></th>
+      <th class="single line four wide"><h3>{{ section_title }}</h3></th>
       <th class="two wide">Docs</th>
       <th class="two wide">SMS</th>
       <th class="two wide">Phone Call</th>
@@ -19,8 +20,8 @@
       {% if website.status %}
       <td class="main progress">
         {% if website.img %}
-        <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-        <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon"
+        <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
+        <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
              alt="{{ website.name }}">
         {% endif %}
         <a href="{{ website.url }}">{{ website.name }}</a>
@@ -38,8 +39,8 @@
       {% elsif website.tfa %}
       <td class="main positive">
         {% if website.img %}
-        <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-        <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon"
+        <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
+        <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
              alt="{{ website.name }}">
         {% endif %}
         <a href="{{ website.url }}">{{ website.name }}</a>
@@ -84,8 +85,8 @@
       {% else %}
       <td class="main negative">
         {% if website.img %}
-        <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-        <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon"
+        <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
+        <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
              alt="{{ website.name }}">
         {% endif %}
         <a href="{{ website.url }}">{{ website.name }}</a>
