@@ -9,6 +9,12 @@ require 'fastimage'
 # TFA forms
 @tfa_forms = %w(email hardware software sms phone)
 
+# Should the script ignore checking the image size?
+@ignore_image_size = false
+
+# Image max size (in bytes)
+@image_max_size = 2500
+
 begin
 
   # Send error message
@@ -20,6 +26,11 @@ begin
 
   # Verify that the tfa factors are booleans
   def check_tfa(website)
+    tfa = "#{website['tfa']}"
+    if tfa != 'true' && tfa != 'false'
+      error("#{website['name']} \'tfa\' tag should be either \'Yes\' or \'No\'. (#{tfa})")
+    end
+
     @tfa_forms.each do |tfa_form|
       form = website[tfa_form]
       next if form.nil?
@@ -40,6 +51,11 @@ begin
       error("#{website['name']} doesn\'t contain a \'#{t}\' tag.")
     end
 
+    status = website['status']
+    if !status.nil? && website['tfa'] == 'true'
+      error("#{website['name']} should not contain a \'status\' tag when it doesn\'t support TFA.")
+    end
+
     return if @ignore_twitter
     twitter = website['twitter']
     return if twitter.nil?
@@ -47,32 +63,41 @@ begin
     error("#{website['name']} should not contain a \'twitter\' tag as it supports TFA.")
   end
 
+  def validate_image(image, name)
+    if File.exist?(image)
+      image_dimensions = [32, 32]
+
+      unless FastImage.size(image) == image_dimensions
+        error("#{image} is not #{image_dimensions.join('x')}")
+      end
+
+      ext = '.png'
+      error("#{image} is not #{ext}") unless File.extname(image) == ext
+
+      unless @ignore_image_size
+        image_size = File.size(image)
+        error("#{image} should not be larger than #{@image_max_size} bytes. It is currently #{image_size} bytes") unless image_size < @image_max_size
+      end
+
+
+    else
+      error("#{name} image not found.")
+    end
+  end
+
   # Load each section, check for errors such as invalid syntax
   # as well as if an image is missing
-  main = YAML.load_file('_data/sections.yml')
-  main.each do |section|
+
+  sections = YAML.load_file('_data/sections.yml')
+  sections.each do |section|
+
     data = YAML.load_file('_data/' + section['id'] + '.yml')
     data['websites'].each do |website|
-      tfa = "#{website['tfa']}"
-      if tfa != 'true' && tfa != 'false'
-        error("#{website['name']} \'tfa\' tag should be either \'Yes\' or \'No\'. (#{tfa})")
-      end
+
       check_tfa(website)
       tags_set(website)
+      validate_image("img/#{section['id']}/#{website['img']}", website['name'])
 
-      image = "img/#{section['id']}/#{website['img']}"
-      if File.exist?(image)
-        image_dimensions = [32, 32]
-
-        unless FastImage.size(image) == image_dimensions
-          error("#{image} is not #{image_dimensions.join('x')}")
-        end
-
-        ext = '.png'
-        error("#{image} is not #{ext}") unless File.extname(image) == ext
-      else
-        error("#{website['name']} image not found.")
-      end
     end
   end
 
