@@ -26,8 +26,8 @@ begin
 
   # Verify that the tfa factors are booleans
   def check_tfa(website)
-    tfa = "#{website['tfa']}"
-    if tfa != 'true' && tfa != 'false'
+    tfa = website['tfa']
+    if tfa != true && tfa != false
       error("#{website['name']} \'tfa\' tag should be either \'Yes\' or \'No\'. (#{tfa})")
     end
 
@@ -51,9 +51,10 @@ begin
       error("#{website['name']} doesn\'t contain a \'#{t}\' tag.")
     end
 
-    status = website['status']
-    if !status.nil? && website['tfa'] == 'true'
-      error("#{website['name']} should not contain a \'status\' tag when it doesn\'t support TFA.")
+    if website['tfa']
+      error("#{website['name']} should not contain a \'status\' tag when it doesn\'t support TFA.") unless website['status'].nil?
+    else
+      error("#{website['name']} should not contain a \'doc\' tag when it doesn\'t support TFA.") unless website['doc'].nil?
     end
 
     return if @ignore_twitter
@@ -78,7 +79,6 @@ begin
         image_size = File.size(image)
         error("#{image} should not be larger than #{@image_max_size} bytes. It is currently #{image_size} bytes") unless image_size < @image_max_size
       end
-
 
     else
       error("#{name} image not found.")
