@@ -57,6 +57,13 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: Cosmolex
+      url: https://www.cosmolex.com/
+      img: cosmolex.png
+      tfa: Yes
+      sms: Yes
+      doc: http://support.cosmolex.com/customer/portal/articles/2158628
+
     - name: Delighted
       url: https://delightedapp.com/
       img: delighted.png
@@ -89,6 +96,14 @@ websites:
       email: Yes
       doc: https://everlaw.zendesk.com/hc/en-us/articles/206312165-Two-Factor-Authentication
 
+    - name: Formstack
+      url: https://www.formstack.com/
+      img: formstack.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.formstack.com/customer/portal/articles/1833071-two-factor-authentication
+
     - name: fruux
       url: https://fruux.com
       img: fruux.png
@@ -102,14 +117,6 @@ websites:
       sms: Yes
       software: Yes
       doc: https://ifttt.com/settings#two-step-verification
-
-    - name: Formstack
-      url: https://www.formstack.com/
-      img: formstack.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.formstack.com/customer/portal/articles/1833071-two-factor-authentication
 
     - name: Kayako
       url: https://www.kayako.com
@@ -159,6 +166,33 @@ websites:
       phone: Yes
       doc: https://support.office.com/en-US/article/Set-up-multi-factor-authentication-for-Office-365-8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 
+    - name: Onshape
+      url: https://www.onshape.com/
+      img: onshape.png
+      tfa: Yes
+      software: Yes
+      doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
+
+    - name: Patreon
+      url: https://www.patreon.com/
+      img: patreon.png
+      tfa: Yes
+      software: Yes
+      doc: https://patreon.zendesk.com/hc/en-us/articles/206538086-How-Do-I-Set-Up-2-Factor-Authorization
+
+    - name: PhraseApp
+      url: https://phraseapp.com
+      img: phraseapp.png
+      software: Yes
+      tfa: Yes
+      doc: http://blog.phraseapp.com/post/97556438392/extra-secure-user-accounts-in-phraseapp-with
+
+    - name: Pinboard
+      url: https://pinboard.in/
+      twitter: Pinboard
+      img: pinboard.png
+      tfa: No
+
     - name: Pocket
       url: https://www.getpocket.com
       twitter: Pocket
@@ -171,12 +205,25 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: Todoist
+      url: https://todoist.com
+      twitter: todoist
+      img: todoist.png
+      tfa: No
+
     - name: Trello
       url: https://trello.com
       img: trello.png
       tfa: Yes
       sms: Yes
       doc: http://help.trello.com/article/993-enabling-two-factor-authentication-for-your-trello-account
+
+    - name: Usabilla
+      url: https://www.usabilla.com
+      img: usabilla.png
+      tfa: Yes
+      software: Yes
+      doc: http://support.usabilla.com/customer/portal/articles/2098444-2-step-authentication
 
     - name: US Internal Revenue Service
       url: http://www.irs.gov/Individuals/Get-Transcript
@@ -211,50 +258,3 @@ websites:
       software: Yes
       sms: Yes
       doc: https://support.zendesk.com/hc/en-us/articles/203824246
-
-    - name: Patreon
-      url: https://www.patreon.com/
-      img: patreon.png
-      tfa: Yes
-      software: Yes
-      doc: https://patreon.zendesk.com/hc/en-us/articles/206538086-How-Do-I-Set-Up-2-Factor-Authorization
-
-    - name: PhraseApp
-      url: https://phraseapp.com
-      img: phraseapp.png
-      software: Yes
-      tfa: Yes
-      doc: http://blog.phraseapp.com/post/97556438392/extra-secure-user-accounts-in-phraseapp-with
-
-    - name: Pinboard
-      url: https://pinboard.in/
-      twitter: Pinboard
-      img: pinboard.png
-      tfa: No
-
-    - name: Usabilla
-      url: https://www.usabilla.com
-      img: usabilla.png
-      tfa: Yes
-      software: Yes
-      doc: http://support.usabilla.com/customer/portal/articles/2098444-2-step-authentication
-
-    - name: Todoist
-      url: https://todoist.com
-      twitter: todoist
-      img: todoist.png
-      tfa: No
-
-    - name: Cosmolex
-      url: https://www.cosmolex.com/
-      img: cosmolex.png
-      tfa: Yes
-      sms: Yes
-      doc: http://support.cosmolex.com/customer/portal/articles/2158628
-
-    - name: Onshape
-      url: https://www.onshape.com/
-      img: onshape.png
-      tfa: Yes
-      software: Yes
-      doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
