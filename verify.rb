@@ -4,7 +4,7 @@ require 'fastimage'
 @output = 0
 
 # Should the script ignore checking for Twitter handles?
-@ignore_twitter = 0
+@ignore_twitter = false
 
 # TFA forms
 @tfa_forms = %w(email hardware software sms phone)
