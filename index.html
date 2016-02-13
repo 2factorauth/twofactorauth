@@ -64,6 +64,7 @@ hash: SupportTwoFactorAuth
 
 <div class="ui stackable grid container">
   <div class="five column row">
+    {% assign rowcount = 0 %}
     {% for section in site.data.sections %}
     {% assign rowend = forloop.index | modulo: 5 %}
     {% if rowend == 0 or forloop.index == forloop.length %}
@@ -74,12 +75,15 @@ hash: SupportTwoFactorAuth
       </h5>
     </div>
     {% include mobile-table.html id-param=section.id title-param=section.title %}
-    {% assign offcount = forloop.index | minus: 5 %}
+    {% assign offcount = 5 | times: rowcount %}
     {% for section in site.data.sections limit: 5 offset: offcount %}
     {% include desktop-table.html id-param=section.id title-param=section.title %}
     {% endfor %}
   </div>
+  {% if forloop.index != forloop.length %}
+  {% assign rowcount = rowcount | plus: '1' %}
   <div class="five column row">
+  {% endif %}
     {% else %}
     <div id="{{ section.id }}" class="category column">
       <h5 class="ui icon header">
@@ -90,5 +94,4 @@ hash: SupportTwoFactorAuth
     {% include mobile-table.html id-param=section.id title-param=section.title %}
     {% endif %}
     {% endfor %}
-  </div>
 </div>
