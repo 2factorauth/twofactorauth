@@ -31,6 +31,15 @@ websites:
       software: Yes
       doc: https://bitgo.zendesk.com/hc/en-us/sections/201009049-Two-Factor-Authentication-Help-Page
 
+  - name: Bitlish
+      url: https://bitlish.com
+      img: bitlish.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      phone: Yes
+      doc: https://www.authy.com
+
     - name: Bitpay
       url: https://bitpay.com
       img: bitpay.png
@@ -221,11 +230,3 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://twitter.com/jstcoin/status/445900548743897088
-    - name: BITLISH
-      img: bitlish.png
-      url: https://bitlish.com
-      img: btc-e.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
