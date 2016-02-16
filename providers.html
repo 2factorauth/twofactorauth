@@ -4,85 +4,22 @@ layout: default
 
 {% include header.html page='providers' %}
 
-<div class="main container">
-    <div class="ui grid">
-        <div class="column">
-            <div class="banner ui icon header">
-                <i class="circular mobile icon"></i>
-                <h2>Two Factor Auth (2FA) Providers</h2>
-                <div class="sub header">
-                  List of <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">2FA</a>
-                  providers and the platforms they support.
-                </div>
-                <div class="sub header">
-                    Also see the list of <a href="/">sites offering 2FA</a>.
-                </div>
-                <div class="sub header">
-                    Add your own favorite by submitting a pull request on the
-                    <a href="https://github.com/jdavis/twofactorauth">GitHub repo</a>.
-                </div>
-            </div>
+<div class="ui center aligned icon header">
+    <i class="circular mobile icon"></i>
 
-            <div id="{{ provider.name }}" class="section">
-                <table class="ui table celled compact segment">
-                    <thead>
-                        <tr>
-                            <th class="eleven wide"><h2>Provider</h2></th>
-                            <th>SMS</th>
-                            <th>Phone Call</th>
-                            <th>Email</th>
-                            <th>Hardware Token</th>
-                            <th>Software Implementation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      {% assign sorted_providers = site.data.providers.providers | sort: 'name' %}
-                      {% for provider in sorted_providers %}
-                        <tr>
-                          <td class="main positive">
-                          {% if provider.img %}
-                              <img src="/img/placeholder.png" data-src="/img/providers/{{ provider.img }}" class="icon" alt="{{ provider.name }}">
-                              <noscript><img src="/img/providers/{{ provider.img }}" class="icon" alt="{{ provider.name }}"></noscript>
-                          {% endif %}
-                              <a href="{{ provider.url }}">{{ provider.name }}</a>
-                          </td>
+    <h2>Two Factor Auth (2FA)</h2>
 
-                          <td class="positive icon">
-                          {% if provider.sms %}
-                              <i class="checkmark large icon"></i>
-                          {% endif %}
-                          </td>
+    <div class="sub header">
+        List of websites and whether or not they support
+        <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
+    </div>
+    <div id="{{ first.id }}" class="sub header">
+        Add your own favorite site by submitting a pull request on the
+        <a href="https://github.com/2factorauth/twofactorauth">GitHub repo</a>.
+    </div>
+</div>
 
-                          <td class="positive icon">
-                          {% if provider.phone %}
-                              <i class="checkmark large icon"></i>
-                          {% endif %}
-                          </td>
-
-                          <td class="positive icon">
-                          {% if provider.email %}
-                              <i class="checkmark large icon"></i>
-                          {% endif %}
-                          </td>
-
-                          <td class="positive icon">
-                          {% if provider.hardware %}
-                              <i class="checkmark large icon"></i>
-                          {% endif %}
-                          </td>
-
-                          <td class="positive icon">
-                          {% if provider.software %}
-                              <i class="checkmark large icon"></i>
-                          {% endif %}
-                          </td>
-                        </tr>
-                      {% endfor %}
-                    </tbody>
-                </table>
-
-            </div><!-- Section -->
-
-        </div><!-- Column -->
-    </div><!-- UI Grid -->
-</div><!-- Main Container -->
+<div class="ui raised padded segment">
+    The providers page has been removed. To find a two factor authentication provider, please use your favorite
+    search engine.
+</div>

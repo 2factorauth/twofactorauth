@@ -7,6 +7,16 @@ websites:
       software: Yes
       doc: https://support.bitium.com/customer/portal/articles/1417358-enabling-two-factor-authentication-2fa-
 
+    - name: Centrify
+      url: http://www.centrify.com
+      img: centrify.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      software: Yes
+      doc: http://www.centrify.com/products/identity-service/multi-factor-authentication/
+
     - name: Clavid
       url: http://www.clavid.com/
       img: clavid.png
@@ -53,13 +63,6 @@ websites:
       hardware: Yes
       doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
 
-    - name: Mitro
-      url: https://www.mitro.co/
-      img: mitro.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.mitro.co/secure.html
-
     - name: MyDigipass.com
       url: https://mydigipass.com/
       img: mydigipass.png
@@ -92,11 +95,21 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: Passpack
+      url: https://www.passpack.com/
+      img: passpack.png
+      tfa: Yes
+      email: Yes
+      hardware: Yes
+      doc: https://help.passpack.com/knowledgebase/idx.php/44/0/
+
     - name: RoboForm
       url: http://www.roboform.com/
       img: roboform.png
       tfa: Yes
       email: Yes
+      sms: Yes
+      doc: http://www.roboform.com/blog/stay-protected-with-mulitfactor-authentication
 
     - name: SAASPASS
       url: https://www.saaspass.com

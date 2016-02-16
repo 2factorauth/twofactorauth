@@ -5,6 +5,12 @@ websites:
       img: 23andme.png
       tfa: No
 
+    - name: CVS/Caremark
+      url: https://www.caremark.com
+      twitter: cvshealth
+      img: cvscaremark.png
+      tfa: No
+
     - name: drchrono
       url: https://www.drchrono.com
       img: drchrono.png
@@ -19,11 +25,30 @@ websites:
       tfa: No
       status: https://twitter.com/Drugscom/status/493856207572975620
 
+    - name: Google Fit
+      url: https://fit.google.com
+      img: googlefit.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+
     - name: FitBit
       url: http://www.fitbit.com
       twitter: fitbit
       img: fitbit.png
       tfa: No
+
+    - name: FollowMyHealth
+      url: https://www.followmyhealth.com/
+      img: followmyhealth.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: http://support.followmyhealth.com/customer/portal/articles/1309938-fmh-secure-login-2-step-verification---break-down
 
     - name: Healthcare.gov
       url: http://healthcare.gov
@@ -38,6 +63,12 @@ websites:
       sms: Yes
       software: Yes
       doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
+
+    - name: Misfit
+      url: http://misfit.com/
+      twitter: Misfit
+      img: misfit.png
+      tfa: No
 
     - name: myfitnesspal
       url: http://www.myfitnesspal.com

@@ -1,4 +1,12 @@
 websites:
+    - name: Ankama
+      url: http://www.ankama.com
+      img: ankama.png
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: https://support.ankama.com/hc/en-us/categories/200093427-DOFUS-Security
+
     - name: Blizzard
       url: http://blizzard.com
       img: blizzard.png
@@ -8,6 +16,13 @@ websites:
       hardware: Yes
       doc: http://us.battle.net/en/security/
 
+    - name: Blade & Soul
+      url: http://www.bladeandsoul.com/
+      img: bladeandsoul.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.bladeandsoul.com/hc/en-us/articles/207578553-Supported-Two-Step-OTP-Authentication-Verification-Methods
+
     - name: Desura
       url: http://www.desura.com/
       img: desura.png
@@ -16,7 +31,6 @@ websites:
 
     - name: Elder Scrolls Online
       url: http://www.elderscrollsonline.com/
-      twitter: TESOnline
       img: eso.png
       tfa: Yes
       email: Yes
@@ -34,19 +48,22 @@ websites:
 
     - name: EVE Online
       url: http://www.eveonline.com/
-      twitter: EveOnline
       img: eveonline.png
-      tfa: No
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: https://community.eveonline.com/news/dev-blogs/two-factor-authentication/
+      exceptions:
+          text: "This does not prevent people from logging into the game client by circumventing the launcher. That is a legacy issue that the developers have acknowledged."
 
     - name: Garena Online
       url: http://garena.com
-      twitter: garenaonline
       img: garena.png
       tfa: Yes
       software: Yes
       doc: http://www.garena.com/account/
       exceptions:
-          text: "As of September 29th 2014, new user enrollment for 2FA is broken. A mobile phone and Garena account level 3 or higher is required for 2FA."
+          text: "A mobile phone and Garena account level 3 or higher is required for 2FA."
 
     - name: GOG.com
       url: http://www.gog.com
@@ -77,17 +94,29 @@ websites:
       software: Yes
       doc: https://support.humblebundle.com/hc/en-us/articles/202421374
 
+    - name: Itch.io
+      url: https://itch.io/
+      img: itchio.png
+      tfa: Yes
+      software: Yes
+      doc: http://itch.io/developers/two-factor-authentication
+
     - name: League of Legends
       url: http://leagueoflegends.com
       twitter: leagueoflegends
       img: leagueoflegends.png
       tfa: No
-      status: http://forums.na.leagueoflegends.com/board/showthread.php?p=45603580#45603580
 
     - name: Mojang
       url: https://mojang.com/
       twitter: MojangSupport
       img: mojang.png
+      tfa: No
+
+    - name: Nintendo Network
+      url: http://www.nintendo.com/
+      twitter: NintendoAmerica
+      img: nintendo.png
       tfa: No
 
     - name: Origin
@@ -96,12 +125,19 @@ websites:
       tfa: Yes
       email: Yes
       sms: Yes
+      software: Yes
       doc: http://help.ea.com/en/article/origin-login-verification-information/
 
     - name: Playstation Network
-      url: http://playstation.com/psn/
+      url: https://www.playstation.com/
       twitter: AskPlayStation
       img: psn.png
+      tfa: No
+
+    - name: Rockstar Games Social Club
+      url: http://socialclub.rockstargames.com
+      twitter: RockstarSupport
+      img: rockstargames.png
       tfa: No
 
     - name: RuneScape
@@ -124,7 +160,10 @@ websites:
       img: steam.png
       tfa: Yes
       email: Yes
-      doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
+      software: Yes
+      doc: https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030
+      exceptions:
+        text: "Software implementation requires use of the Steam Mobile app. It does not support multiple accounts on the same device. It does not support multiple accounts using the same phone number for SMS. Authentication on non-phone devices is not officially supported. SMS support is limited to receiving account recovery codes for password resets."
 
     - name: Square Enix
       url: http://na.square-enix.com/
@@ -135,6 +174,13 @@ websites:
       doc: http://www.square-enix.com/na/account/otp/
       exceptions:
           text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
+
+    - name: Tibia
+      url: http://www.tibia.com/
+      img: tibia.png
+      tfa: Yes
+      software: Yes
+      doc: http://www.tibia.com/support/?subtopic=faq&question=authenticator
 
     - name: Trion Worlds
       url: http://www.trionworlds.com/en/
@@ -160,4 +206,13 @@ websites:
       img: wildstar.png
       tfa: Yes
       software: Yes
-      doc: https://support.wildstar-online.com/entries/53257786-Two-Step-Verification-Setting-Up-and-Rewards
+      doc: https://support.wildstar-online.com/hc/en-us/articles/203982369-Two-Step-Verification-FAQ
+
+    - name: Xbox Live
+      url: https://www.xbox.com/live
+      img: xbox.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq

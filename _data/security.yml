@@ -1,13 +1,26 @@
 websites:
-    - name: CAcert
-      url: https://www.cacert.org/
-      twitter: CAcert_News
-      img: cacert.png
+    - name: Air VPN
+      url: https://airvpn.org/
+      img: airvpn.png
       tfa: No
+      twitter: airvpn
+
+    - name: BolehVPN
+      url: https://www.bolehvpn.net/
+      img: bolehvpn.png
+      tfa: No
+      twitter: bolehvpn
+
+    - name: CAcert
+      url: http://www.cacert.org/
+      img: cacert.png
+      tfa: Yes
+      hardware: Yes
+      exceptions:
+          text: "Requires X.509-capable cryptotoken or smartcard."
 
     - name: DigiCert
       url: http://www.digicert.com/
-      twitter: digicert
       img: digicert.png
       tfa: Yes
       software: Yes
@@ -21,11 +34,41 @@ websites:
       hardware: Yes
       doc: http://www.dome9.com/overview/strong-2-factor-authentication
 
+    - name: Entrust
+      img: entrust.png
+      url: http://www.entrust.net
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.entrust.net/certificate-services/cms-authentication.htm
+
+    - name: FoxVPN
+      url: https://www.foxvpn.net/
+      img: foxvpn.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.foxvpn.net/help/enable-two-factor-authentication/
+
     - name: GeoTrust
       url: http://www.geotrust.com/
       img: geotrust.png
       tfa: Yes
       email: Yes
+
+    - name: GoGetSSL
+      url: https://gogetssl.com/
+      img: gogetssl.png
+      tfa: No
+      twitter: gogetssl
+
+    - name: Imperva Incapsula
+      url: https://www.incapsula.com/
+      img: incapsula.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      software: Yes
+      doc: https://docs.incapsula.com/Content/Management%20Console%20and%20Settings/accountsettings.htm
 
     - name: Norton
       url: http://us.norton.com
@@ -41,7 +84,6 @@ websites:
       img: opendns.png
       tfa: Yes
       sms: Yes
-      twitter: OpenDNS
       software: Yes
       exceptions:
           text: "Only available for enterprise accounts."

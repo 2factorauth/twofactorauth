@@ -10,9 +10,12 @@ websites:
       img: charlesschwab.png
       tfa: Yes
       hardware: Yes
-      doc: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/protect_your_account
-      exceptions:
-          text: "Password length limited to 8 characters. To correctly activate 2FA, make sure your password is at most 8 characters in length, which should be followed by the token code when logging in."
+
+    - name: COL Financial
+      url: https://www.colfinancial.com
+      twitter: COLfinancial
+      img: colfinancial.png
+      tfa: no
 
     - name: E*Trade
       url: https://www.etrade.com/
@@ -24,14 +27,19 @@ websites:
 
     - name: Fidelity Investments
       url: https://www.fidelity.com
-      twitter: fidelity
       img: fidelity.png
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: /notes/fidelity/
       exceptions:
-          text: "2FA only available on investment accounts. Not available for 401K plans."
+          text: "Only available for some account types"
+      doc: /notes/fidelity/
+
+    - name: HealthEquity
+      url: http://www.healthequity.com/
+      twitter: healthequity
+      img: healthequity.png
+      tfa: No
 
     - name: Interactive Brokers
       url: https://www.interactivebrokers.com
@@ -69,9 +77,8 @@ websites:
     - name: OptionsHouse
       img: optionshouse.png
       url: https://www.optionshouse.com
-      tfa: Yes
-      software: Yes
-      doc: https://www.optionshouse.com/faq/authenticator/
+      tfa: No
+      twitter: OptionsHouse
 
     - name: OptionsXpress
       url: http://www.optionsxpress.com/
@@ -81,7 +88,6 @@ websites:
 
     - name: Personal Capital
       url: https://www.personalcapital.com
-      twitter: personalcapital
       img: personalcapital.png
       tfa: Yes
       email: Yes
@@ -93,6 +99,12 @@ websites:
       twitter: RBC
       img: rbc.png
       tfa: No
+
+    - name: Robinhood
+      url: https://www.robinhood.com/
+      img: robinhood.png
+      tfa: No
+      twitter: RobinhoodApp
 
     - name: Scottrade
       url: https://www.scottrade.com/
@@ -106,9 +118,21 @@ websites:
       img: sharebuilder.png
       tfa: No
 
+    - name: SigFig
+      url: https://www.sigfig.com/
+      twitter: sigfiginsights
+      img: sigfig.png
+      tfa: No
+
     - name: TD Ameritrade
       url: https://www.tdameritrade.com
       twitter: TDAmeritrade
+      img: tdameritrade.png
+      tfa: No
+
+    - name: TD Waterhouse
+      url: https://www.tdwaterhouse.ca
+      twitter: TD_Canada
       img: tdameritrade.png
       tfa: No
 
@@ -118,9 +142,14 @@ websites:
       img: tradeking.png
       tfa: No
 
+    - name: TIAA-CREF
+      url: https://www.tiaa-cref.org
+      twitter: TC_Talks
+      img: tiaacref.png
+      tfa: no
+
     - name: Vanguard
       url: https://www.vanguard.com/
-      twitter: Vanguard_Group
       img: vanguard.png
       tfa: Yes
       sms: Yes
@@ -128,6 +157,15 @@ websites:
 
     - name: Wealthfront
       url: https://www.wealthfront.com/
-      twitter: wealthfront
       img: wealthfront.png
-      tfa: no
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://pages.wealthfront.com/faqs/how-do-i-enable-two-step-authentication-on-my-account/
+
+    - name: WiseBanyan
+      url: https://www.wisebanyan.com/
+      img: wisebanyan.png
+      tfa: Yes
+      sms: Yes
+      doc: https://wisebanyan.com/faq/my-account/how-does-two-step-verification-work

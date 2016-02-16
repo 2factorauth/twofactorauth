@@ -2,163 +2,96 @@
 layout: default
 
 link: Tell them to support 2FA
+link_mobile: TWEET THEM
 tweet: Security is important, @TWITTERHANDLE. We'd like it if you supported two factor auth.
 
 link_progress: Thank them for working on 2FA
+link_progress_mobile: THANK THEM
 tweet_progress: Thanks for working on support for two factor auth, @TWITTERHANDLE!
 hash: SupportTwoFactorAuth
 ---
 
-{% include header.html page='home' %}
+<noscript>
+  <div class="ui icon error message">
+    <i class="warning sign icon"></i>
 
-<div class="main container">
-    <div class="ui grid">
-        <div class="column">
+    <div class="content">
+      <h1>It looks like you have JavaScript disabled!</h1>
 
-            <div class="banner ui icon header">
-                <i class="circular mobile icon"></i>
-                <h2>Two Factor Auth (2FA)</h2>
-                <div class="sub header">List of websites and whether or not they support
-                    <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
-                </div>
-                <div class="sub header">
-                    Also see the list of <a href="/providers/">2FA providers</a> and the platforms they support.
-                </div>
-                <div id="{{ first.id }}" class="sub header">
-                    Add your own favorite site by submitting a pull request on the
-                    <a href="https://github.com/jdavis/twofactorauth">GitHub repo</a>.
-                </div>
-            </div>
+      <p>
+        Without JavaScript, this page probably won't work very well.
+        For more information, or if you would like to talk to us about this,
+        please take a look at our <a href="https://github.com/2factorauth/twofactorauth">
+        GitHub repository</a>.
+      </p>
+    </div>
+  </div>
+</noscript>
 
-        {% for section in site.data.main.sections %}
-            <div class="section">
-                <table class="ui table celled compact segment">
-                    <thead>
-                        <tr>
-                            <th class="eleven wide"><h2>{{ section.title }}</h2></th>
-                            <th>Docs</th>
-                            <th>SMS</th>
-                            <th>Phone Call</th>
-                            <th>Email</th>
-                            <th>Hardware Token</th>
-                            <th>Software Implementation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+<a href="https://github.com/2factorauth/twofactorauth" class="github-corner">
+  <svg width="80" height="80" viewBox="0 0 250 250"
+       style="fill:#39CCCC; color:#FFFFFF; position: absolute; top: 0; border: 0; right: 0;">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+    <path
+      d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+      fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+    <path
+      d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+      fill="currentColor" class="octo-body"></path>
+  </svg>
+</a>
 
-{% comment %}
-    Peform a downcase and sort on the list of websites to ensure the list is in
-    alphabetical order.
-{% endcomment %}
+<div id="top-header" class="ui center aligned icon header">
+  <i class="circular mobile icon"></i>
 
-{% assign section_file = site.data[section.id] %}
+  <h2>Two Factor Auth (2FA)</h2>
 
-{% capture website_names %}
-{% for website in section_file.websites %}
-{{ website.name | downcase }}
-{% unless forloop.last %},{% endunless %}
-{% endfor %}
-{% endcapture %}
+  <div class="sub header">List of websites and whether or not they support
+    <a href="https://en.wikipedia.org/wiki/Two-step_verification">2FA</a>.
+  </div>
+  <div class="sub header">
+    Add your own favorite site by submitting a pull request on the
+    <a href="https://github.com/2factorauth/twofactorauth">GitHub repo</a>.
+  </div>
+  <div id="search-wrapper" class="sub header">
+    <label for="jets-search">
+      <i class="search icon"></i>
+    </label>
+    <input type="search" id="jets-search" placeholder="Search websites" autocomplete="off" spellcheck="false"
+           tabindex="0">
+  </div>
+</div>
 
-{% assign lowercase_names = website_names | split:',' | sort %}
-
-                        {% for item in (0..lowercase_names.size) %}
-                            {% capture lowercase_name %}{{ lowercase_names[item] | strip | strip_newlines }}{% endcapture %}
-                            {% for website in section_file.websites %}
-                                {% assign current_name = website.name | downcase %}
-                                {% if lowercase_name == current_name %}
-
-                                    <tr>
-                                        {% if website.tfa %}
-                                            <td class="main positive">
-                                            {% if website.img %}
-                                                <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-                                                <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-                                            {% endif %}
-                                                <a href="{{ website.url }}">{{ website.name }}</a>
-                                                {% include exception.html website=website %}
-                                            </td>
-
-                                            <td class="positive icon">
-                                            {% if website.doc %}
-                                                <a href="{{ website.doc }}"><i class="external url link large icon"></i></a>
-                                            {% endif %}
-                                            </td>
-
-                                            <td class="positive icon">
-                                            {% if website.sms %}
-                                                <i class="checkmark large icon"></i>
-                                            {% endif %}
-                                            </td>
-
-                                            <td class="positive icon">
-                                            {% if website.phone %}
-                                                <i class="checkmark large icon"></i>
-                                            {% endif %}
-                                            </td>
-
-                                            <td class="positive icon">
-                                            {% if website.email %}
-                                                <i class="checkmark large icon"></i>
-                                            {% endif %}
-                                            </td>
-
-                                            <td class="positive icon">
-                                            {% if website.hardware %}
-                                                <i class="checkmark large icon"></i>
-                                            {% endif %}
-                                            </td>
-
-                                            <td class="positive icon">
-                                            {% if website.software %}
-                                                <i class="checkmark large icon"></i>
-                                            {% endif %}
-                                            </td>
-                                        </tr>
-                                        {% else %}
-                                            <td class="main negative">
-                                            {% if website.img %}
-                                                <img src="/img/placeholder.png" data-src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-                                                <noscript><img src="/img/{{ section.id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-                                            {% endif %}
-                                                <a href="{{ website.url }}">{{ website.name }}</a>
-                                            {% if website.status %}
-                                                <span class="progress">
-                                                    <a class="ui mini orange button" href="{{website.status}}" target="_blank">
-                                                        <i class="star icon"></i> In Progress!
-                                                    </a>
-                                                </span>
-                                            {% endif %}
-                                            </td>
-                                            {% if website.twitter %}
-                                                <td class="twitter main negative" colspan="6">
-                                                {% if website.status %}
-                                                    <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
-                                                {% else %}
-                                                    <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&text={{page.tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link}}</a>
-                                                </td>
-                                                {% endif %}
-                                            {% else %}
-                                                <td class="negative icon"><i class="remove large icon"></i></td>
-                                                <td class="negative icon"><i class="remove large icon"></i></td>
-                                                <td class="negative icon"><i class="remove large icon"></i></td>
-                                                <td class="negative icon"><i class="remove large icon"></i></td>
-                                                <td class="negative icon"><i class="remove large icon"></i></td>
-                                                <td class="negative icon"><i class="remove large icon"></i></td>
-                                            {% endif %}
-                                        {% endif %}
-                                {% endif %}
-                            {% endfor %}
-                        {% endfor %}
-                    </tbody>
-                </table>
-
-            {% unless forloop.last %}
-                <div class="ui divider" id="{{ site.data.main.sections[forloop.index].id }}" ></div>
-            {% endunless %}
-            </div><!-- Section -->
-        {% endfor %}
-
-        </div><!-- Column -->
-    </div><!-- UI Grid -->
-</div><!-- Main Container -->
+<div class="ui stackable grid container">
+  <div class="five column row">
+    {% assign rowcount = 0 %}
+    {% for section in site.data.sections %}
+    {% assign rowend = forloop.index | modulo: 5 %}
+    {% if rowend == 0 or forloop.index == forloop.length %}
+    <div id="{{ section.id }}" class="category column">
+      <h5 class="ui icon header">
+        <i class="circular {{ section.icon }} icon"></i>
+        <small>{{ section.title }}</small>
+      </h5>
+    </div>
+    {% include mobile-table.html id-param=section.id title-param=section.title %}
+    {% assign offcount = 5 | times: rowcount %}
+    {% for section in site.data.sections limit: 5 offset: offcount %}
+    {% include desktop-table.html id-param=section.id title-param=section.title %}
+    {% endfor %}
+  </div>
+  {% if forloop.index != forloop.length %}
+  {% assign rowcount = rowcount | plus: '1' %}
+  <div class="five column row">
+  {% endif %}
+    {% else %}
+    <div id="{{ section.id }}" class="category column">
+      <h5 class="ui icon header">
+        <i class="circular {{ section.icon }} icon"></i>
+        <small>{{ section.title }}</small>
+      </h5>
+    </div>
+    {% include mobile-table.html id-param=section.id title-param=section.title %}
+    {% endif %}
+    {% endfor %}
+</div>
