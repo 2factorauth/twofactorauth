@@ -125,8 +125,11 @@ websites:
       url: https://www.zimbra.com/
       twitter: zimbra
       img: zimbra.png
-      tfa: No
-      status: https://bugzilla.zimbra.com/show_bug.cgi?id=98623
+      tfa: Yes
+      software: Yes
+      exceptions:
+        text: "Available in Zimbra Collaboration 8.7 and above, Network Edition only"
+      doc: https://blog.zimbra.com/2016/02/zimbra-collaboration-8-7-two-factor-authentication-2fa-technical-preview/
 
     - name: Zoho Mail
       url: https://www.zoho.com/mail/
