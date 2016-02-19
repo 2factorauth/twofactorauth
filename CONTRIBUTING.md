@@ -218,8 +218,8 @@ you can note this on the website. There are 4 ways to customize how it is displa
 
 There are many forms of Two Factor Auth, but DongleAuth.info is **only** interested
 in listing sites that support Two Factor Authentication using USB dongles.
-Currently that means the site must support either One Time Passwords (OTP)
-or Universal 2nd Factor (U2F).
+Currently that means the site must support either One Time Passwords ([HOTP / RFC 4226](https://tools.ietf.org/html/rfc4226) or [TOTP / RFC 6238](https://tools.ietf.org/html/rfc6238))
+or [FIDO Universal 2nd Factor (U2F)](https://fidoalliance.org/specifications/overview/).
 
 A lot of people have different ideas of what constitutes Two Factor Auth and
 what doesn't, so it stands to reason that we should clarify a bit. For the
