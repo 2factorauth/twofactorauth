@@ -429,9 +429,13 @@ websites:
 
     - name: Wells Fargo
       url: https://www.wellsfargo.com/
-      twitter: WellsFargo
       img: wellsfargo.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      phone: Yes
+      hardware: Yes
+
 
     - name: Wescom Credit Union
       url: https://www.wescom.org/
