@@ -60,7 +60,6 @@ websites:
       software: Yes
       doc: http://help.fortrabbit.com/security#toc-two-factor-authentication
 
-
     - name: Google Cloud Platform
       url: https://cloud.google.com
       img: googlecloud.png
@@ -84,6 +83,15 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://docs.joyent.com/public-cloud/getting-started/2fa
+
+    - name: LeaseWeb
+      url: https://www.leaseweb.com/
+      img: leaseweb.png
+      tfa: Yes
+      sms: Yes
+      exceptions:
+          text: "As of February 23, 2016, only for CDN customer accounts; dedicated/virtual server accounts not included, but in development."
+      doc: https://kb.leaseweb.com/display/KB/Two+factor+authentication%3A+Cyber+Security
 
     - name: Linode
       url: https://www.linode.com/
