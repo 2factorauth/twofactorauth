@@ -119,6 +119,14 @@ websites:
       img: citibank.png
       tfa: No
 
+    - name: Citibank Australia
+      url: https://www.citibank.com.au/
+      img: citibank.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: http://www.citibank.com.au/otp/
+
     - name: Citizens Bank
       url: https://www.citizensbank.com
       twitter: citizensbank
