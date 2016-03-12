@@ -72,10 +72,11 @@ websites:
           text: "A mobile phone and Garena account level 3 or higher is required for 2FA."
 
     - name: GOG.com
-      url: http://www.gog.com
-      twitter: GOGcom
+      url: https://www.gog.com
       img: gog.png
-      tfa: No
+      tfa: Yes
+      email: Yes
+      doc: https://www.gog.com/support/support_view/twostep_login_faq
 
     - name: GREE
       url: http://product.gree.net/
