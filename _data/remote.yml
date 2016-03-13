@@ -8,13 +8,13 @@ websites:
       software: Yes
       img: awsworkspaces.png
 
-    - name: Join.me (w/ LogMeIn account)
+    - name: join.me (w/ LogMeIn account)
       url: https://join.me/
-      doc: https://accounts.logme.in/authentication/getstarted.aspx
       img: joinme.png
       tfa: Yes
-      email: Yes
+      sms: Yes
       software: Yes
+      doc: https://secure.logmein.com/welcome/webhelp/EN/Pro/LogMeIn/c_common_Security_TwoStep.html
 
     - name: LogMeIn
       url: https://secure.logmein.com/
