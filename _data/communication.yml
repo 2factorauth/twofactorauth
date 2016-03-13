@@ -43,13 +43,12 @@ websites:
       img: hipchat.png
       tfa: No
 
-    - name: Mailchimp
+    - name: MailChimp
       url: https://mailchimp.com/
       img: mailchimp.png
       tfa: Yes
       software: Yes
-      hardware: Yes
-      doc: https://blog.mailchimp.com/alterego-integrations-for-easy-authentication/
+      doc: http://kb.mailchimp.com/integrations/other-integrations/set-up-google-authenticator
 
     - name: Mailgun
       url: https://mailgun.com
