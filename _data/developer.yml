@@ -258,6 +258,13 @@ websites:
       software: Yes
       doc: http://support.beanbaginc.com/support/solutions/articles/3000006998-enabling-two-factor-authentication
 
+    - name: Semaphore
+      url: https://semaphoreci.com
+      img: semaphore.png
+      tfa: Yes
+      doc: https://semaphoreci.com/docs/two-step-verification.html
+      software: Yes
+
     - name: SourceForge
       url: http://sourceforge.net/
       twitter: sourceforge
