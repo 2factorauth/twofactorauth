@@ -63,7 +63,14 @@ websites:
       img: globat.png
       tfa: No
       twitter: globat
-
+      
+    - name: ICUK
+      url: https://icuk.net
+      img: icuk.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.icuk.net/reseller/security.asp
+      
     - name: Infomaniak
       url: https://www.infomaniak.com/
       img: infomaniak.png
@@ -231,3 +238,10 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://www.ukraine.com.ua/faq/rekomendatsii-po-zashchite-ot-vzloma-uchetnoj-zapisi.html
+
+    - name: Easy
+      url: https://easy.gr/
+      img: easy.png
+      tfa: Yes
+      software: Yes
+      doc: https://easy.gr/el/faq
