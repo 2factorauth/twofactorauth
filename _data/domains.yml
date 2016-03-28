@@ -199,6 +199,15 @@ websites:
       img: hurricane.png
       tfa: Yes
       software: Yes
+      
+    - name: Incapsula
+      url: https://www.incapsula.com/
+      img: incapsula.png
+      tfa: Yes
+      email: Yes
+      software: Yes
+      sms: Yes
+      doc: https://incapsula.zendesk.com/hc/en-us/articles/204795664-Incapsula-s-Password-Policy
 
     - name: Internet.bs
       url: http://www.internet.bs
@@ -304,6 +313,12 @@ websites:
       url: http://www.netim.com/
       twitter: Netim_com
       img: netim.png
+      tfa: No
+
+    - name: Netregistry
+      url: http://www.netregistry.com.au/
+      twitter: netregistry
+      img: netregistry.png
       tfa: No
 
     - name: Network Solutions
