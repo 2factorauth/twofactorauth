@@ -106,6 +106,7 @@ websites:
       url: https://everlaw.com
       img: everlaw.png
       tfa: Yes
+      software: Yes
       email: Yes
       doc: https://everlaw.zendesk.com/hc/en-us/articles/206312165-Two-Factor-Authentication
 
@@ -212,6 +213,12 @@ websites:
       img: pocket.png
       tfa: No
 
+    - name: Pozible
+      url: https://www.pozible.com
+      img: pozible.png
+      twitter: pozible
+      tfa: No
+
     - name: StartJOIN
       url: https://www.startjoin.com/
       img: startjoin.png
@@ -257,6 +264,12 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://doxfer.webmin.com/Webmin/Enhanced_Authentication
+
+    - name: Wikipedia
+      url: https://www.wikipedia.org/
+      twitter: Wikipedia
+      img: wikipedia.png
+      tfa: No
 
     - name: Wunderlist
       url: https://www.wunderlist.com
