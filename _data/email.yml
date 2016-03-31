@@ -49,6 +49,14 @@ websites:
       img: maildotcom.png
       tfa: No
 
+    - name: Mail.Ru
+      url: https://mail.ru/
+      img: mailru.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://security.mail.ru/#2step
+
     - name: mailbox.org
       url: https://www.mailbox.org/
       img: mailbox.png
