@@ -68,10 +68,16 @@ websites:
       phone: Yes
       email: Yes
 
+    - name: BMO Bank of Montreal
+      url: https://www.bmo.com/
+      twitter: BMO
+      img: bmo.png
+      tfa: No
+
     - name: BMO Harris Bank
       url: https://www.bmoharris.com/
       twitter: BMOHarrisBank
-      img: bmoharris.png
+      img: bmo.png
       tfa: No
 
     - name: Boeing Employee Credit Union
@@ -263,7 +269,9 @@ websites:
     - name: Nationwide Building Society
       url: http://www.nationwide.co.uk/
       img: nationwide.png
-      tfa: No
+      tfa: Yes
+      hardware: Yes
+      doc: http://www.nationwide.co.uk/support/security-centre/internet-banking-security/card-reader-and-security-questions
 
     - name: Natwest UK
       url: https://www.natwest.com/personal.ashx

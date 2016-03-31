@@ -7,6 +7,13 @@
   </div>
   <div class="jets-content">
     {% for website in section_file.websites %}
+    {% if website.lang %}
+      {% assign progress_tweet = site.data.languages[website.lang].progress_tweet %}
+      {% assign workonit_tweet = site.data.languages[website.lang].work_tweet %}
+    {% else %}
+      {% assign progress_tweet = page.progress_tweet %}
+      {% assign workonit_tweet = page.workonit_tweet %}
+    {% endif %}
     {% if website.status %}
     <div class="main progress">
       <div class="left">
@@ -25,7 +32,7 @@
       </div>
       <div class="right">
         <a class="ui twitter mini button"
-           href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet_progress|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
+           href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
            target="_blank"><i class="twitter icon"></i> {{page.link_progress_mobile}}</a>
       </div>
     </div>
@@ -82,7 +89,7 @@
       {% if website.twitter %}
       <div class="right">
         <a class="ui twitter mini button"
-           href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{page.tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
+           href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
            target="_blank"><i class="twitter icon"></i> {{page.link_mobile}}</a>
       </div>
       {% endif %}
