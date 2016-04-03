@@ -134,9 +134,10 @@ websites:
 
     - name: SimpleTax
       url: https://simpletax.ca/
-      twitter: simpletax
       img: simpletax.png
-      tfa: No
+      tfa: Yes
+      email: Yes
+      doc: https://help.simpletax.ca/questions/two-factor-authentication
 
     - name: Treasury Direct
       url: https://www.treasurydirect.gov
