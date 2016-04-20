@@ -8,7 +8,16 @@ websites:
       hardware: Yes
       software: Yes
       doc: http://support.aha.io/hc/en-us/articles/202000957-Add-two-factor-authentication-2FA-
-
+      
+    - name: Craft
+      url: https://craft.io/
+      img: craft.png
+      tfa: Yes
+      phone: Yes
+      e-mail: Yes
+      software: Yes
+      doc: https://craft.io/privacy.html
+      
     - name: Airbrake
       url: https://airbrake.io
       twitter: airbrake
