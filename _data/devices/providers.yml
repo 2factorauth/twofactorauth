@@ -35,12 +35,12 @@ providers:
 #    url: https://getclef.com
 #    img: clef.png
 #    otp: Yes
-    
+
 #  - name: CryptoPhoto
 #    url: https://www.cryptophoto.com
 #    img: cryptophoto.png
 #    otp: Yes
-    
+
 #  - name: Duo Security
 #    url: https://www.duosecurity.com
 #    img: duo.png
@@ -96,7 +96,7 @@ providers:
 #    img: portalguard.png
 #    tfa: Yes
 #    otp: Yes
-  
+
 #  - name: Rublon
 #    url: https://www.rublon.com/
 #    img: rublon.png
@@ -162,7 +162,7 @@ providers:
 #  - name: TextPower
 #    url: http://www.textpower.com/public/solutions/security-authentication/
 #    img: textpower.png
-  
+
 #  - name: Totp.Me
 #    url: http://www.totp.me/
 #    img: totpme.png
@@ -205,3 +205,9 @@ providers:
     img: yubico.png
     u2f: Yes
     otp: Yes
+
+  - name: Hypersecu
+    url: https://hypersecu.com
+    img: hypersecu.png
+    otp: Yes
+    u2f: Yes
