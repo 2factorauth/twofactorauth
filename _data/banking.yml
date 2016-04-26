@@ -207,6 +207,13 @@ websites:
       img: halifax.png
       tfa: No
 
+    - name: Bank of China (Hong Kong)
+      url: http://www.bochk.com
+      img: BOCHK.png
+      tfa: Yes
+      hardware: Yes
+      doc: https://www.bochk.com/en/security/2factorauthentication.html
+
     - name: HSBC
       url: https://www.hsbc.com
       img: hsbc.png
