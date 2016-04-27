@@ -155,13 +155,8 @@ websites:
     - name: Discover
       url: https://www.discover.com/
       img: discover.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      phone: Yes
-      exceptions:
-            text: "Available only for credit cards, not for savings accounts. By providing your phone number, you are automatically opted in."
-      doc: https://www.discover.com/credit-cards/help-center/faqs/enhancing-account-security.html
+      tfa: no
+      twitter: Discover
 
     - name: everbank.com
       url: https://everbank.com
