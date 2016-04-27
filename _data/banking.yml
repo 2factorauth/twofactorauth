@@ -52,6 +52,13 @@ websites:
       hardware: Yes
       doc: https://www.bankofamerica.com/privacy/online-mobile-banking-privacy/safepass.go
 
+    - name: Bank of China (Hong Kong)
+      url: http://www.bochk.com
+      img: BOCHK.png
+      tfa: Yes
+      hardware: Yes
+      doc: https://www.bochk.com/en/security/2factorauthentication.html
+
     - name: Barclays UK
       url: http://www.barclays.co.uk/
       img: barclays.png
@@ -206,13 +213,6 @@ websites:
       twitter: AskHalifaxBank
       img: halifax.png
       tfa: No
-
-    - name: Bank of China (Hong Kong)
-      url: http://www.bochk.com
-      img: BOCHK.png
-      tfa: Yes
-      hardware: Yes
-      doc: https://www.bochk.com/en/security/2factorauthentication.html
 
     - name: HSBC
       url: https://www.hsbc.com
