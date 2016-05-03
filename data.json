@@ -7,7 +7,7 @@
                         {% for website in section_file.websites %}
                                 "{{ website.name }}": {
                                     {%for tag in website %}
-                                    {%if tag[0] != "exceptions"%}"{{ tag[0] }}": {% if tag[1] == true or tag[1] == false %}{{tag[1]}}{%else%}"{{ tag[1] }}"{%endif%}{%if forloop.last != true%},{%endif%}{%else%}"{{ tag[0] }}": {
+                                    {%if tag[0] != "exceptions"%}"{{ tag[0] }}": {% if tag[1] == true or tag[1] == false %}{{tag[1]}}{%else%}"{{ tag[1] }}"{%endif%}{%else%}"{{ tag[0] }}": {
                                     {% for exception in tag[1] %}
                                      "{{ exception[0] }}": "{{ exception[1] }}"{%if forloop.last != true%},{%endif%}
                                 {%endfor%}}{%endif%}{%if forloop.last != true%},{%endif%}
@@ -17,4 +17,3 @@
                         }{% if forloop.last != true %},{% endif %}
     {% endfor %}
 }
-
