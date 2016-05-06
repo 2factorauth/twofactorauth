@@ -13,6 +13,14 @@ websites:
       software: Yes
       doc: https://support.clever.com/hc/en-us/articles/202062333-Two-Factor-Authentication
 
+    - name: CSN (The Swedish National Board of Student Aid)
+      url: https://www.csn.se
+      img: csn.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.csn.se/bas/
+
     - name: Codecademy
       url: http://www.codecademy.com/
       twitter: codecademy
@@ -86,7 +94,7 @@ websites:
       twitter: udemy
       img: udemy.png
       tfa: No
-      
+
     - name: Virginia Tech
       url: https://www.vt.edu/
       img: virginiatech.png
@@ -96,4 +104,3 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://it.vt.edu/2factor/index.php
-      
