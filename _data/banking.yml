@@ -165,6 +165,14 @@ websites:
       tfa: no
       twitter: Discover
 
+    - name: DNB
+      url: https://www.dnb.no/
+      img: dnb.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.dnb.no/privat/tema/trygg-bank/sikkerhet-paa-nett.html
+
     - name: everbank.com
       url: https://everbank.com
       img: everbank.png
@@ -223,6 +231,14 @@ websites:
       twitter: AskHalifaxBank
       img: halifax.png
       tfa: No
+
+    - name: Handelsbanken
+      url: https://www.handelsbanken.se/
+      img: handelsbanken.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.handelsbanken.se/shb/INeT/IStartSv.nsf/FrameSet?OpenView&amp;iddef=&amp;navid=A_Internet_och_telefon&amp;sa=/shb/INeT/ICentSv.nsf/Default/q5F831AB95218D0D9C125696600412F46
 
     - name: HSBC
       url: https://www.hsbc.com
