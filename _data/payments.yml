@@ -56,11 +56,10 @@ websites:
       url: https://www.klarna.com
       img: klarna.png
       tfa: Yes
-      sms: Yes
       email: Yes
       software: Yes
-      hardware: Yes
-      doc: http://my.klarna.com      
+      exceptions:
+         text: "Software 2FA is only available for Swedish citizens with BankID."
 
     - name: Litle & Co
       img: litleco.png
