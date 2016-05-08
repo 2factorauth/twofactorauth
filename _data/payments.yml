@@ -52,6 +52,15 @@ websites:
       hardware: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
+    - name: Klarna
+      url: https://www.klarna.com
+      img: klarna.png
+      tfa: Yes
+      email: Yes
+      software: Yes
+      exceptions:
+         text: "Software 2FA is only available for Swedish citizens with BankID."
+
     - name: Litle & Co
       img: litleco.png
       twitter: litleco
