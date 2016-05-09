@@ -4,7 +4,7 @@ websites:
       img: airvpn.png
       tfa: No
       twitter: airvpn
-      
+
     - name: Blur
       url: https://www.abine.com/
       img: blur.png
@@ -27,11 +27,17 @@ websites:
           text: "Requires X.509-capable cryptotoken or smartcard."
 
     - name: Cobalt
-      url: https://www.cobalt.io/ 
+      url: https://www.cobalt.io/
       img: cobalt.png
       tfa: Yes
       software: Yes
       doc: https://cobalt.io/blog/new-feature-two-factor-auth/
+
+    - name: CyberGhost
+      url: https://www.cyberghostvpn.com
+      img: cyberghost.png
+      twitter: cyberghost_EN
+      tfa: No
 
     - name: DigiCert
       url: http://www.digicert.com/
@@ -135,7 +141,7 @@ websites:
       img: vpnunlimited.png
       twitter: vpnunlimited
       tfa: No
-      
+
     - name: Webroot
       url: http://www.webroot.com
       img: webroot.png
