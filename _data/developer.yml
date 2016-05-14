@@ -138,8 +138,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://doc.gitlab.com/ee/profile/two_factor_authentication.html
-      exceptions:
-          text: "Two factor authentication for LDAP is only avaliable in the Enterprise Edition."
 
     - name: Hashicorp Atlas
       url: https://atlas.hashicorp.com/
