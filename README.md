@@ -10,14 +10,11 @@ A list of popular sites and whether or not they accept two factor auth.
 
 ## The Goal
 
-The goal is to have a website ([TwoFactorAuth.org](https://twofactorauth.org)) with a comprehensive list of sites that support
-two factor auth as well as the methods that they support it.
+The goal is to build a website ([TwoFactorAuth.org](https://twofactorauth.org)) with a comprehensive list of sites that support
+Two Factor Authentication, as well as the methods that they provide.
 
-This is to aid when deciding on alternative services based on the security they
-offer for their customers.
-
-This also is a way for consumers to see what sites still need to invest in
-further security practices and which ones already do.
+Our hope is to aid consumers who are deciding between alternative services based on the security they
+offer for their customers. This can also serve as an indicator for the effort a site has put into security in general.
 
 ## Contributing
 
