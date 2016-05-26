@@ -118,7 +118,7 @@ function openCategory(category) {
 /**
  * Closes a category and ensures the icon is inactive
  *
- * @param category The id of a category as a sring
+ * @param category The id of a category as a string
  */
 function closeCategory(category) {
   $('#' + category + ' h5 i').removeClass('active-icon');
