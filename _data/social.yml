@@ -89,6 +89,12 @@ websites:
       exceptions:
         text: "Medium doesn't use passwords, instead emails a link to user to login"
 
+    - name: Meetup
+      url: https://www.meetup.com
+      twitter: meetup_support
+      img: meetup.png
+      tfa: No
+
     - name: Pinterest
       url: https://pinterest.com
       twitter: Pinterest
