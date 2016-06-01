@@ -7,7 +7,7 @@
   </div>
   <div class="jets-content">
     {% for website in section_file.websites %}
-    {% if website.lang %}
+    {% if website.lang and site.data.languages[website.lang] %}
       {% assign progress_tweet = site.data.languages[website.lang].progress_tweet %}
       {% assign workonit_tweet = site.data.languages[website.lang].work_tweet %}
     {% else %}
