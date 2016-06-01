@@ -51,6 +51,12 @@ websites:
       img: foursquare.png
       tfa: No
 
+    - name: Goodreads
+      url: https://www.goodreads.com
+      twitter: goodreads
+      img: goodreads.png
+      tfa: No
+
     - name: Google+
       url: https://plus.google.com
       img: g+.png
@@ -88,6 +94,12 @@ websites:
       email: Yes
       exceptions:
         text: "Medium doesn't use passwords, instead emails a link to user to login"
+
+    - name: Meetup
+      url: https://www.meetup.com
+      twitter: meetup_support
+      img: meetup.png
+      tfa: No
 
     - name: Pinterest
       url: https://pinterest.com
