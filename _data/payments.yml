@@ -120,6 +120,11 @@ websites:
       exceptions:
         text: "Currently only US merchants, protects only Dashboard access"
       doc: https://squareup.com/help/us/en/article/5593-2-step-verification
+      
+    - name: Square Cash
+      url: https://cash.me
+      twitter: SquareCash
+      tfa: No
 
     - name: Venmo
       url: https://venmo.com
