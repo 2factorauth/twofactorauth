@@ -30,7 +30,7 @@ websites:
       doc: https://support.bladeandsoul.com/hc/en-us/articles/207578553-Supported-Two-Step-OTP-Authentication-Verification-Methods
 
     - name: Desura
-      url: http://www.desura.com/
+      url: https://www.desura.com/
       img: desura.png
       tfa: No
       twitter: desura
@@ -50,10 +50,10 @@ websites:
       software: Yes
       exceptions:
           text: "2FA is only available on paid plans."
-      doc: http://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
+      doc: https://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
 
     - name: EVE Online
-      url: http://www.eveonline.com/
+      url: https://www.eveonline.com/
       img: eveonline.png
       tfa: Yes
       email: Yes
@@ -93,7 +93,7 @@ websites:
       email: Yes
       phone: Yes
       software: Yes
-      doc: http://help.guildwars2.com/entries/95446157-Securing-Your-Account-With-Authentication
+      doc: https://help.guildwars2.com/entries/95446157-Securing-Your-Account-With-Authentication
 
     - name: Humble Bundle
       url: https://www.humblebundle.com/
@@ -123,7 +123,7 @@ websites:
       tfa: No
 
     - name: Nintendo Network
-      url: http://www.nintendo.com/
+      url: https://www.nintendo.com/
       twitter: NintendoAmerica
       img: nintendo.png
       tfa: No
@@ -145,7 +145,7 @@ websites:
       status: http://www.polygon.com/2016/4/20/11470660/psn-two-factor-authentication-playstation-network
 
     - name: Rockstar Games Social Club
-      url: http://socialclub.rockstargames.com
+      url: https://socialclub.rockstargames.com
       twitter: RockstarSupport
       img: rockstargames.png
       tfa: No
@@ -193,14 +193,14 @@ websites:
       doc: http://www.tibia.com/support/?subtopic=faq&question=authenticator
 
     - name: Trion Worlds
-      url: http://www.trionworlds.com/en/
+      url: https://www.trionworlds.com/en/
       img: trionworlds.png
       tfa: Yes
       software: Yes
       doc: https://store.trionworlds.com/account/profile/manage-game
 
     - name: Uplay
-      url: http://uplay.ubi.com/
+      url: https://uplay.ubi.com/
       twitter: UplayUbisoft
       img: uplay.png
       tfa: No
