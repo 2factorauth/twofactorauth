@@ -21,9 +21,10 @@ websites:
 
     - name: Discord
       url: https://discordapp.com/
-      twitter: discordapp
       img: discord.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://support.discordapp.com/hc/en-us/articles/219576828
 
     - name: Disqus
       url: https://disqus.com
@@ -75,6 +76,12 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://peerio.zendesk.com/hc/en-us/articles/202933829-How-do-I-setup-two-factor-authentication-
+
+    - name: Ryver
+      url: http://www.ryver.com/
+      img: ryver.png
+      twitter: ryverapp
+      tfa: No
 
     - name: Salesforce
       url: http://www.salesforce.com
