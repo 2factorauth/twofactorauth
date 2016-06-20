@@ -49,6 +49,14 @@ websites:
       u2f: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
+    - name: GitLab
+      url: https://about.gitlab.com/
+      img: gitlab.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: http://docs.gitlab.com/ce/profile/two_factor_authentication.html
+
     - name: Infobip
       url: http://www.infobip.com/
       img: infobip.png
