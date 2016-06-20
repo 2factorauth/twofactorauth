@@ -131,3 +131,11 @@ websites:
       exceptions:
           text: "2FA is only available on paid plans."
       doc: http://www.securesafe.com/en/faq/security.html
+
+    - name: StrongAuth
+      url: http://www.strongauth.com
+      img: strongauth.png
+      tfa: Yes
+      otp: No
+      u2f: Yes
+      doc: http://www.strongauth.com/products/foss
