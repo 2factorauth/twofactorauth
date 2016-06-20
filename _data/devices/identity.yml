@@ -1,4 +1,12 @@
 websites:
+    - name: AuthAnvil
+      url: https://authanvil.com
+      img: authaunvil.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: https://authanvil.com/mfa/
+
     - name: Bitium
       url: https://www.bitium.com
       img: bitium.png
@@ -19,6 +27,13 @@ websites:
       tfa: Yes
       doc: http://www.cloudentr.com/product/two-factor-authentication/
 
+    - name: Digidentity
+      url: https://www.digidentity.eu/en/
+      img: digidentity.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+
     - name: Dashlane
       url: https://www.dashlane.com
       img: dashlane.png
@@ -26,6 +41,22 @@ websites:
       otp: Yes
       u2f: Yes
       doc: http://support.dashlane.com/customer/portal/articles/1099221-protect-your-account-using-two-factor-authentication
+
+    - name: Duo Security
+      url: https://duo.com
+      img: duo_security.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: https://guide.duo.com/u2f
+
+    - name: GreenRADIUS
+      url: http://www.greenrocketsecurity.com
+      img: greenradius.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: http://www.greenrocketsecurity.com/greenradius/2fa/fido-1-0-u2f/
 
     - name: Keeper
       url: https://keepersecurity.com/
@@ -47,6 +78,14 @@ websites:
       otp: Yes
       doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
  
+    - name: LinOTP
+      url: https://duo.com
+      img: linotp.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: https://www.linotp.org/doc/latest/part-management/managingtokens/fido_u2f.html
+
     - name: MiiCard
       url: http://www.miicard.com/
       img: miicard.png
