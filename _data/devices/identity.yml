@@ -50,6 +50,14 @@ websites:
       u2f: Yes
       doc: https://guide.duo.com/u2f
 
+    - name: Gluu
+      url: https://www.gluu.org
+      img: gluu.png
+      tfa: Yes
+      otp: No
+      u2f: Yes
+      doc: https://www.gluu.org/identify-people-with-fido-u2f-tokens-using-the-gluu-server/
+
     - name: GreenRADIUS
       url: http://www.greenrocketsecurity.com
       img: greenradius.png
