@@ -110,6 +110,13 @@ websites:
       img: pythonanywhere.png
       tfa: No
 
+    - name: Sentry
+      url: https://getsentry.com/
+      img: sentry.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+
     - name: Status.io
       url: https://status.io/
       img: statusio.png
