@@ -43,6 +43,8 @@ websites:
       tfa: Yes
       otp: Yes
       u2f: Yes
+      exceptions:
+          text: "Google Chrome browser required for U2F."
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Heroku
