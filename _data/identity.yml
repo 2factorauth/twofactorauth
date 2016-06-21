@@ -92,6 +92,16 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: privacyIDEA
+      url: https://privacyidea.org
+      img: privacyidea.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      hardware: Yes
+      email: Yes
+      doc: http://privacyidea.readthedocs.io
+
     - name: RoboForm
       url: http://www.roboform.com/
       img: roboform.png
