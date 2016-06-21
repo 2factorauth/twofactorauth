@@ -127,6 +127,14 @@ websites:
       tfa: Yes
       otp: Yes
 
+    - name: privacyIDEA
+      url: https://privacyidea.org
+      img: privacyidea.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: http://privacyidea.readthedocs.io
+
     - name: RoboForm
       url: http://www.roboform.com/
       img: roboform.png
