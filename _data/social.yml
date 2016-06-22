@@ -45,6 +45,12 @@ websites:
           text: "SMS required for 2FA. 1 account per phone number."
       doc: https://www.facebook.com/help/148233965247823
 
+    - name: Flipboard
+      url: https://flipboard.com
+      img: flipboard.png
+      twitter: FlipboardCS
+      tfa: No
+
     - name: Foursquare
       url: https://foursquare.com
       twitter: foursquare
@@ -99,6 +105,12 @@ websites:
       url: https://www.meetup.com
       twitter: meetup_support
       img: meetup.png
+      tfa: No
+
+    - name: Nextdoor
+      url: https://nextdoor.com
+      twitter: Nextdoor
+      img: nextdoor.png
       tfa: No
 
     - name: Pinterest
