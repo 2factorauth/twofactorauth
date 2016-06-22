@@ -40,23 +40,23 @@ websites:
       tfa: No
 
     - name: DigiCert
-      url: http://www.digicert.com/
+      url: https://www.digicert.com/
       img: digicert.png
       tfa: Yes
       software: Yes
       doc: https://www.digicert.com/two-factor-authentication.htm
 
     - name: Dome9 Security
-      url: http://www.dome9.com/
+      url: https://dome9.com/
       img: dome9.png
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.dome9.com/overview/strong-2-factor-authentication
+      doc: https://dome9.com/overview/strong-2-factor-authentication
 
     - name: Entrust
       img: entrust.png
-      url: http://www.entrust.net
+      url: https://www.entrust.net
       tfa: Yes
       software: Yes
       hardware: Yes
@@ -70,7 +70,7 @@ websites:
       doc: https://www.foxvpn.net/help/enable-two-factor-authentication/
 
     - name: GeoTrust
-      url: http://www.geotrust.com/
+      url: https://www.geotrust.com/
       img: geotrust.png
       tfa: Yes
       email: Yes
@@ -100,14 +100,14 @@ websites:
       doc: https://login.norton.com/sso/embedded/learn2fa
 
     - name: OpenDNS
-      url: http://www.opendns.com/
+      url: https://www.opendns.com/
       img: opendns.png
       tfa: Yes
       sms: Yes
       software: Yes
       exceptions:
           text: "Only available for enterprise accounts."
-      doc: http://engineering.opendns.com/2014/05/22/launching-two-step-verification/
+      doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
 
     - name: SSLTrust
       url: http://ssltrust.com.au/
