@@ -98,20 +98,11 @@
         {% endif %}
         <a href="{{ website.url }}">{{ website.name }}</a>
       </td>
-      {% if website.twitter %}
       <td class="twitter negative" colspan="6">
-        <a class="ui twitter mini button"
-           href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
-           target="_blank"><i class="twitter icon"></i> {{page.link}}</a>
+      {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link}} on Twitter</a>{% endif %}
+      {% if website.facebook %} <a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i> {{page.link}} on Facebook</a>{%endif%}
+      {% if website.email_address %} <a class="ui green mini button" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i>{{page.link}} via Email</a>{% endif %}
       </td>
-      {% else %}
-      <td class="negative icon"><i class="remove large icon"></i></td>
-      <td class="negative icon"><i class="remove large icon"></i></td>
-      <td class="negative icon"><i class="remove large icon"></i></td>
-      <td class="negative icon"><i class="remove large icon"></i></td>
-      <td class="negative icon"><i class="remove large icon"></i></td>
-      <td class="negative icon"><i class="remove large icon"></i></td>
-      {% endif %}
       {% endif %}
     </tr>
     {% endfor %}
