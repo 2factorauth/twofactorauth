@@ -21,6 +21,19 @@ offer for their customers. This can also serve as an indicator for the effort a 
 If you'd like to contribute, read the entire guidelines here in
 [CONTRIBUTING.md][contrib].
 
+## Running Locally
+
+TwoFactorAuth.org is built on [Jekyll](http://jekyllrb.com/). In order to run Jekyll, it is necessary to install Ruby with RubyGems.
+Once Ruby and RubyGems are installed and available from the command line, TwoFactorAuth can be setup using the following commands.
+
+```
+gem install jekyll
+cd ~/twofactorauth
+jekyll serve
+```
+
+The TwoFactorAuth website should then be running on `http://localhost:4000`.
+
 ## License
 
 This code is distributed under the MIT license. For more info, read the
