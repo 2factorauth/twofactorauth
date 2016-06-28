@@ -32,6 +32,7 @@
              alt="{{ website.name }}">
         {% endif %}
         <a href="{{ website.url }}">{{ website.name }}</a>
+        {% include exception.html website=website %}
           <span class="progress">
             <a class="ui mini orange button" href="{{website.status}}" target="_blank">
               <i class="star icon"></i> In Progress!
@@ -97,6 +98,7 @@
              alt="{{ website.name }}">
         {% endif %}
         <a href="{{ website.url }}">{{ website.name }}</a>
+        {% include exception.html website=website %}
       </td>
       {% if website.twitter %}
       <td class="twitter negative" colspan="6">
