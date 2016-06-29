@@ -87,7 +87,7 @@ begin
       image_dimensions = [32, 32]
 
       unless FastImage.size(image) == image_dimensions
-        error("#{image} is not #{image_dimensions.join('x')} pixels big.")
+        error("#{image} is not \"#{image_dimensions.join('x')}\" pixels.")
       end
 
       error("#{image} is not using the #{@image_extension} format.") unless File.extname(image) == @image_extension
@@ -120,7 +120,7 @@ begin
   exit 1 if @output > 0
 
 rescue Psych::SyntaxError => e
-  puts 'Error in the YAML'
+  puts 'Error in a YAML file.'
   puts e
   exit 1
 rescue => e
