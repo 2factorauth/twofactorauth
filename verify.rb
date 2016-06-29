@@ -38,18 +38,12 @@ begin
   # Validate an individual YAML tag
   def check_tag(tag, required, tfa_state, website, onlyTrue = false)
     if website[tag].nil?
-      if website['tfa'] == tfa_state
-        if required
-          error("#{website['name']}: The required YAML tag \'#{tag}\' tag is not present.")
-        end
+      if website['tfa'] == tfa_state && required
+        error("#{website['name']}: The required YAML tag \'#{tag}\' tag is not present.")
       end
     else
       if website['tfa'] != tfa_state
-        if website['tfa']
-          state = "enabled"
-        else
-          state = "disabled"
-        end
+        state = website['tfa'] ? "enabled" : "disabled"
         error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be present when TFA is #{state}.")
       end
       if onlyTrue && website[tag] != true
@@ -93,14 +87,14 @@ begin
       image_dimensions = [32, 32]
 
       unless FastImage.size(image) == image_dimensions
-        error("#{image} is not #{image_dimensions.join('x')}")
+        error("#{image} is not #{image_dimensions.join('x')} pixels big.")
       end
 
       error("#{image} is not using the #{@image_extension} format.") unless File.extname(image) == @image_extension
 
       unless @ignore_image_size
         image_size = File.size(image)
-        error("#{image} should not be larger than #{@image_max_size} bytes. It is currently #{image_size} bytes.") unless image_size < @image_max_size
+        error("#{image} should not be larger than #{@image_max_size} bytes. It is currently #{image_size} bytes.") unless image_size <= @image_max_size
       end
 
     else
