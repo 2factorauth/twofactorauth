@@ -61,7 +61,7 @@ websites:
       exceptions:
          text: "Software 2FA is only available for Swedish citizens with BankID."
 
-    - name: Litle & Co
+    - name: "Litle & Co"
       img: litleco.png
       twitter: litleco
       tfa: No
@@ -104,14 +104,6 @@ websites:
       hardware: Yes
       doc: https://help.skrill.com/pkb_sc_article_FAQ?id=kA0D0000000Ci3x&l=en_GB
 
-    - name: Stripe
-      img: stripe.png
-      url: https://www.stripe.com/
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
-
     - name: Square
       url: https://squareup.com
       img: squareup.png
@@ -120,6 +112,14 @@ websites:
       exceptions:
         text: "Currently only US merchants, protects only Dashboard access"
       doc: https://squareup.com/help/us/en/article/5593-2-step-verification
+
+    - name: Stripe
+      img: stripe.png
+      url: https://www.stripe.com/
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
 
     - name: Venmo
       url: https://venmo.com

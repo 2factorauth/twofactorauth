@@ -50,6 +50,13 @@ websites:
       software: Yes
       doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
 
+    - name: Easy
+      url: https://easy.gr/
+      img: easy.png
+      tfa: Yes
+      software: Yes
+      doc: https://easy.gr/el/faq
+
     - name: Fastly
       url: https://www.fastly.com
       img: fastly.png
@@ -70,6 +77,13 @@ websites:
       tfa: No
       twitter: globat
 
+    - name: Hetzner Online
+      url: https://www.hetzner.de/
+      img: hetzner.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+
     - name: ICUK
       url: https://icuk.net
       img: icuk.png
@@ -89,13 +103,6 @@ websites:
       twitter: inmotionhosting
       img: inmotion.png
       tfa: No
-
-    - name: Hetzner Online
-      url: https://www.hetzner.de/
-      img: hetzner.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
 
     - name: iPage
       url: https://www.ipage.com/ipage/index.html
@@ -130,13 +137,6 @@ websites:
       img: mediatemple.png
       tfa: No
 
-    - name: Netcup
-      url: https://netcup.eu/
-      img: netcup.png
-      tfa: Yes
-      software: Yes
-      doc: http://www.netcup-wiki.de/wiki/Stammdaten_CCP#Zwei-Faktor-Authentifizierung_.282FA.29
-
     - name: NearlyFreeSpeech.NET
       url: https://www.nearlyfreespeech.net/
       img: nfsn.png
@@ -144,6 +144,13 @@ websites:
       sms: Yes
       software: Yes
       doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
+
+    - name: Netcup
+      url: https://netcup.eu/
+      img: netcup.png
+      tfa: Yes
+      software: Yes
+      doc: http://www.netcup-wiki.de/wiki/Stammdaten_CCP#Zwei-Faktor-Authentifizierung_.282FA.29
 
     - name: One.com
       url: https://www.one.com/
@@ -226,6 +233,16 @@ websites:
       software: Yes
       hardware: Yes
 
+    - name: Ukraine
+      url: https://www.ukraine.com.ua/
+      img: ukraine.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.ukraine.com.ua/faq/rekomendatsii-po-zashchite-ot-vzloma-uchetnoj-zapisi.html
+
     - name: Vultr
       url: https://www.vultr.com/
       img: vultr.png
@@ -247,20 +264,3 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://wpengine.com/support/2-factor-authentication/
-
-    - name: Ukraine
-      url: https://www.ukraine.com.ua/
-      img: ukraine.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.ukraine.com.ua/faq/rekomendatsii-po-zashchite-ot-vzloma-uchetnoj-zapisi.html
-
-    - name: Easy
-      url: https://easy.gr/
-      img: easy.png
-      tfa: Yes
-      software: Yes
-      doc: https://easy.gr/el/faq
