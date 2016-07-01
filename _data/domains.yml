@@ -6,18 +6,6 @@ websites:
       software: Yes
       doc: https://www.007names.com/info/two-step.xhtml
 
-    - name: 1and1
-      url: https://www.1and1.com/
-      img: 1and1.png
-      tfa: No
-      twitter: 1and1
-
-    - name: 10Dollar
-      url: https://10dollar.ca/
-      img: 10dollar.png
-      twitter: 10dollar_ca
-      tfa: No
-
     - name: 101domain
       url: https://101domain.com
       img: 101domain.png
@@ -26,13 +14,25 @@ websites:
       hardware: Yes
       doc: https://www.101domain.com/vip_security_card.htm
 
+    - name: 10Dollar
+      url: https://10dollar.ca/
+      img: 10dollar.png
+      twitter: 10dollar_ca
+      tfa: No
+
+    - name: 1and1
+      url: https://www.1and1.com/
+      img: 1and1.png
+      tfa: No
+      twitter: 1and1
+
     - name: Above.com
       url: https://www.above.com
       img: above.png
       tfa: Yes
       software: Yes
       doc: http://domains.above.com/manual-two-step-authentication.html
-      
+
     - name: Badger
       url: http://badger.com
       img: badger.png
@@ -80,6 +80,12 @@ websites:
       software: Yes
       doc: https://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
 
+    - name: Domain Monster
+      url: https://www.domainmonster.com/
+      img: domainmonster.png
+      twitter: domainmonster
+      tfa: No
+
     - name: Domain.com
       url: https://www.domain.com/
       twitter: DomainDotCom
@@ -90,12 +96,6 @@ websites:
       url: https://www.df.eu
       img: domainfactory.png
       twitter: domainfactory
-      tfa: No
-
-    - name: Domain Monster
-      url: https://www.domainmonster.com/
-      img: domainmonster.png
-      twitter: domainmonster
       tfa: No
 
     - name: DomainsAtCost
@@ -206,7 +206,7 @@ websites:
       img: hurricane.png
       tfa: Yes
       software: Yes
-      
+
     - name: Incapsula
       url: https://www.incapsula.com/
       img: incapsula.png
@@ -375,6 +375,13 @@ websites:
       img: pointdns.png
       tfa: No
 
+    - name: Register4Less
+      url: https://register4less.com/
+      img: register4less.png
+      tfa: Yes
+      software: Yes
+      doc: http://blog.register4less.com/?p=43
+
     - name: Registro.br
       url: https://registro.br
       img: registrobr.png
@@ -382,13 +389,6 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
-
-    - name: Register4Less
-      url: https://register4less.com/
-      img: register4less.png
-      tfa: Yes
-      software: Yes
-      doc: http://blog.register4less.com/?p=43
 
     - name: STRATO
       url: https://www.strato.de/
