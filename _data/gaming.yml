@@ -157,6 +157,16 @@ websites:
       software: Yes
       doc: http://services.runescape.com/m=rswiki/en/Authenticator_FAQ
 
+    - name: Square Enix
+      url: http://na.square-enix.com/
+      img: squarenix.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.square-enix.com/na/account/otp/
+      exceptions:
+          text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
+
     - name: "Star Wars: The Old Republic"
       url: http://www.swtor.com/
       img: swtor.png
@@ -174,16 +184,6 @@ websites:
       doc: https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030
       exceptions:
         text: "Software implementation requires use of the Steam Mobile app. It does not support multiple accounts on the same device. It does not support multiple accounts using the same phone number for SMS. Authentication on non-phone devices is not officially supported. SMS support is limited to receiving account recovery codes for password resets."
-
-    - name: Square Enix
-      url: http://na.square-enix.com/
-      img: squarenix.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.square-enix.com/na/account/otp/
-      exceptions:
-          text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
 
     - name: Tibia
       url: http://www.tibia.com/
