@@ -19,16 +19,16 @@ websites:
       img: altrafcu.png
       tfa: No
 
-    - name: American Express
-      url: https://www.americanexpress.com/
-      twitter: AmericanExpress
-      img: americanexpress.png
-      tfa: No
-
     - name: America First Credit Union
       url: https://www.americafirst.com/
       twitter: AFCU
       img: americafirstcu.png
+      tfa: No
+
+    - name: American Express
+      url: https://www.americanexpress.com/
+      twitter: AmericanExpress
+      img: americanexpress.png
       tfa: No
 
     - name: Banca Mediolanum
@@ -171,7 +171,7 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
-      doc: https://www.dnb.no/privat/kundeservice/innlogging-nettbank.html      
+      doc: https://www.dnb.no/privat/kundeservice/innlogging-nettbank.html
 
     - name: everbank.com
       url: https://everbank.com
