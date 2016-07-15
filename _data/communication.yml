@@ -63,8 +63,9 @@ websites:
       url: https://mailchimp.com/
       img: mailchimp.png
       tfa: Yes
+      sms: Yes
       software: Yes
-      doc: http://kb.mailchimp.com/integrations/other-integrations/set-up-google-authenticator
+      doc: http://kb.mailchimp.com/accounts/login/set-up-two-factor-authentication-with-sms
 
     - name: Mailgun
       url: https://mailgun.com
