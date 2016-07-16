@@ -87,7 +87,7 @@ begin
       image_dimensions = [32, 32]
 
       unless FastImage.size(image) == image_dimensions
-        error("#{image} is not \"#{image_dimensions.join('x')}\" pixels.")
+        error("#{image} is not #{image_dimensions.join('x')} pixels.")
       end
 
       error("#{image} is not using the #{@image_extension} format.") unless File.extname(image) == @image_extension
