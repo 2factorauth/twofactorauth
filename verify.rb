@@ -36,7 +36,7 @@ begin
   end
 
   # Validate an individual YAML tag
-  def check_tag(tag, required, tfa_state, website, onlyTrue = false)
+  def check_tag(tag, required, tfa_state, website, only_true = false)
     if website[tag].nil?
       if website['tfa'] == tfa_state && required
         error("#{website['name']}: The required YAML tag \'#{tag}\' tag is not present.")
@@ -46,7 +46,7 @@ begin
         state = website['tfa'] ? "enabled" : "disabled"
         error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be present when TFA is #{state}.")
       end
-      if onlyTrue && website[tag] != true
+      if only_true && website[tag] != true
         error("#{website['name']}: The YAML tag \'#{tag}\' should either have a value set to \'Yes\' or not be used at all. (Current value: \'#{website[tag]}\')")
       end
     end
