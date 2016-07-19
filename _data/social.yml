@@ -80,16 +80,16 @@ websites:
       software: Yes
       doc: https://help.hootsuite.com/entries/22527304-Managing-Google-Authenticator
 
-    - name: Instagram
-      url: https://www.instagram.com
-      twitter: instagram
-      img: instagram.png
-      tfa: No
-      
     - name: Imgur
       url: https://imgur.com
       twitter: imgur
       img: imgur.png
+      tfa: No
+
+    - name: Instagram
+      url: https://www.instagram.com
+      twitter: instagram
+      img: instagram.png
       tfa: No
 
     - name: LinkedIn
@@ -217,3 +217,4 @@ websites:
       tfa: Yes
       sms: Yes
       doc: http://university.zocle.com/2015/03/30/new-security-feature-two-step-verification/
+
