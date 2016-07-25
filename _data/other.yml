@@ -225,6 +225,12 @@ websites:
       twitter: pozible
       tfa: No
 
+    - name: Promoter.io
+      url: https://promoter.io/
+      img: promoter.png
+      tfa: No
+      twitter: Promoter_io
+
     - name: Skatteverket
       url: https://www.skatteverket.se
       img: skatteverket.png
@@ -285,6 +291,12 @@ websites:
       software: Yes
       doc: http://doxfer.webmin.com/Webmin/Enhanced_Authentication
 
+    - name: Wikia
+      url: https://www.wikia.com/
+      twitter: wikia
+      img: wikia.png
+      tfa: No
+      
     - name: Wikipedia
       url: https://www.wikipedia.org/
       twitter: Wikipedia
@@ -296,7 +308,14 @@ websites:
       twitter: Wunderlist
       img: wunderlist.png
       tfa: No
-
+      
+    - name: Yclas
+      url: https://yclas.com/
+      img: yclas.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.yclas.com/2-step-authentication/
+    
     - name: Zendesk
       url: http://www.zendesk.com
       img: zendesk.png

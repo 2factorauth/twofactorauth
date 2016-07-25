@@ -15,6 +15,13 @@ websites:
       img: airbrake.png
       tfa: No
 
+    - name: Algolia
+      url: https://algolia.com
+      img: algolia.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.algolia.com/doc/security/best-security-practices#two-factor-authentication
+
     - name: aTech Media
       url: https://atechmedia.com
       img: atechmedia.png
@@ -67,6 +74,14 @@ websites:
       software: Yes
       doc: https://help.onlinesmsgateway.com/en/accounts-and-payments/how-do-i-enable-two-factor-authentication
 
+    - name: Code Climate
+      url: https://codeclimate.com
+      img: codeclimate.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://docs.codeclimate.com/docs/enabling-two-factor-authentication
+
     - name: Codeanywhere
       url: https://codeanywhere.com
       img: codeanywhere.png
@@ -75,14 +90,6 @@ websites:
       doc: https://blog.codeanywhere.com/codeanywhere-now-offers-two-factor-authentication/
       exceptions:
           text: "Only available on paid accounts at $7/10 per month (annual/monthly) or more."
-
-    - name: Code Climate
-      url: https://codeclimate.com
-      img: codeclimate.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://docs.codeclimate.com/docs/enabling-two-factor-authentication
 
     - name: Codeship
       url: https://codeship.io/
@@ -137,6 +144,7 @@ websites:
       url: https://gitlab.com
       img: gitlab.png
       tfa: Yes
+      hardware: Yes
       software: Yes
       doc: http://doc.gitlab.com/ee/profile/two_factor_authentication.html
 
@@ -256,6 +264,13 @@ websites:
       sms: Yes
       software: Yes
       doc: http://support.beanbaginc.com/support/solutions/articles/3000006998-enabling-two-factor-authentication
+
+    - name: Rollbar
+      url: https://rollbar.com/
+      img: rollbar.png
+      tfa: Yes
+      software: Yes
+      doc: https://rollbar.com/docs/two-factor-authentication/
 
     - name: Semaphore
       url: https://semaphoreci.com

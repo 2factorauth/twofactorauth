@@ -110,7 +110,7 @@ websites:
       twitter: Runbox
       img: runbox.png
       tfa: No
-      
+
     - name: Thexyz
       url: https://www.thexyz.com/
       img: thexyz.png
@@ -119,13 +119,6 @@ websites:
       hardware: Yes
       doc: https://www.thexyz.com/account/knowledgebase/15/Enabling-two-factor-authentication.html
 
-    - name: Yahoo Mail
-      url: https://mail.yahoo.com/
-      img: yahoomail.png
-      tfa: Yes
-      sms: Yes
-      doc: https://help.yahoo.com/kb/SLN5013.html
-
     - name: Yahoo Japan Mail
       url: https://mail.yahoo.co.jp/
       img: yahoojapanmail.png
@@ -133,6 +126,13 @@ websites:
       email: Yes
       software: Yes
       doc: http://id.yahoo.co.jp/security/otp.html
+
+    - name: Yahoo Mail
+      url: https://mail.yahoo.com/
+      img: yahoomail.png
+      tfa: Yes
+      sms: Yes
+      doc: https://help.yahoo.com/kb/SLN5013.html
 
     - name: Yandex.Mail
       url: https://mail.yandex.com/

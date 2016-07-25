@@ -144,6 +144,14 @@ websites:
       tfa: No
       status: http://www.polygon.com/2016/4/20/11470660/psn-two-factor-authentication-playstation-network
 
+    - name: Roberts Space Industries
+      url: https://robertsspaceindustries.com/
+      img: robertsspaceindustries.png
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://robertsspaceindustries.com/faq/two-step-authentication
+    
     - name: Rockstar Games Social Club
       url: https://socialclub.rockstargames.com
       twitter: RockstarSupport
@@ -156,6 +164,16 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://services.runescape.com/m=rswiki/en/Authenticator_FAQ
+
+    - name: Square Enix
+      url: http://na.square-enix.com/
+      img: squarenix.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.square-enix.com/na/account/otp/
+      exceptions:
+          text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
 
     - name: "Star Wars: The Old Republic"
       url: http://www.swtor.com/
@@ -174,16 +192,6 @@ websites:
       doc: https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030
       exceptions:
         text: "Software implementation requires use of the Steam Mobile app. It does not support multiple accounts on the same device. It does not support multiple accounts using the same phone number for SMS. Authentication on non-phone devices is not officially supported. SMS support is limited to receiving account recovery codes for password resets."
-
-    - name: Square Enix
-      url: http://na.square-enix.com/
-      img: squarenix.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.square-enix.com/na/account/otp/
-      exceptions:
-          text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
 
     - name: Tibia
       url: http://www.tibia.com/
