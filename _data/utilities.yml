@@ -156,10 +156,13 @@ websites:
       tfa: No
 
     - name: Sonic
-      url: https://www.sonic.net/
+      url: https://www.sonic.com/
       img: sonic.png
-      tfa: No
-      twitter: sonic
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      phone: Yes
+      doc: https://wiki.sonic.net/wiki/2-Step_Verfication
 
     - name: Southern California Edison
       url: https://www.sce.com
