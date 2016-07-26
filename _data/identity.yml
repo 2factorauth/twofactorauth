@@ -103,12 +103,6 @@ websites:
       software: Yes
       doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
 
-    - name: Persowna
-      url: https://persowna.net
-      img: persowna.png
-      tfa: Yes
-      software: Yes
-
     - name: Passpack
       url: https://www.passpack.com/
       img: passpack.png
@@ -116,6 +110,12 @@ websites:
       email: Yes
       hardware: Yes
       doc: https://help.passpack.com/knowledgebase/idx.php/44/0/
+
+    - name: Persowna
+      url: https://persowna.net
+      img: persowna.png
+      tfa: Yes
+      software: Yes
 
     - name: RoboForm
       url: https://www.roboform.com/
