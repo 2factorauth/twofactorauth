@@ -77,17 +77,17 @@ websites:
       sms: Yes
       doc: http://support.cosmolex.com/customer/portal/articles/2158628
 
-    - name: Delighted
-      url: https://delightedapp.com/
-      img: delighted.png
-      tfa: Yes
-      sms: Yes
-
     - name: Delicious
       url: http://del.icio.us/
       img: delicious.png
       twitter: Delicious
       tfa: No
+
+    - name: Delighted
+      url: https://delightedapp.com/
+      img: delighted.png
+      tfa: Yes
+      sms: Yes
 
     - name: DirectAdmin
       url: https://www.directadmin.com
@@ -270,13 +270,6 @@ websites:
       sms: Yes
       doc: http://help.trello.com/article/993-enabling-two-factor-authentication-for-your-trello-account
 
-    - name: Usabilla
-      url: https://www.usabilla.com
-      img: usabilla.png
-      tfa: Yes
-      software: Yes
-      doc: http://support.usabilla.com/customer/portal/articles/2098444-2-step-authentication
-
     - name: US Internal Revenue Service
       url: http://www.irs.gov/Individuals/Get-Transcript
       twitter: IRSnews
@@ -289,6 +282,13 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://secure.ssa.gov/RIL/HpsView.do#question3
+
+    - name: Usabilla
+      url: https://www.usabilla.com
+      img: usabilla.png
+      tfa: Yes
+      software: Yes
+      doc: http://support.usabilla.com/customer/portal/articles/2098444-2-step-authentication
 
     - name: Webmin
       url: http://www.webmin.com/
