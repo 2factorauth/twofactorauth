@@ -1,10 +1,18 @@
-# Load Yaml
 require 'yaml'
 require 'fastimage'
 @output = 0
 
 # Should the script ignore checking for Twitter handles?
 @ignore_twitter = false
+
+# YAML tags that are obligatory to all listed sites.
+@obligatory_tags = %w(url img name)
+
+# YAML tags related to TFA 'YES'.
+@tfa_yes_tags = %w(doc)
+
+# YAML tags related to TFA 'NO'.
+@tfa_no_tags = %w(status twitter facebook email_address)
 
 # TFA forms
 @tfa_forms = %w(email hardware software sms phone)
@@ -15,6 +23,9 @@ require 'fastimage'
 # Image max size (in bytes)
 @image_max_size = 2500
 
+# Image format used for all images in the 'img/' directories.
+@image_extension = ".png"
+
 begin
 
   # Send error message
@@ -24,44 +35,51 @@ begin
     puts "#{@output}. #{msg}"
   end
 
-  # Verify that the tfa factors are booleans
-  def check_tfa(website)
-    tfa = website['tfa']
-    if tfa != true && tfa != false
-      error("#{website['name']} \'tfa\' tag should be either \'Yes\' or \'No\'. (#{tfa})")
-    end
-
-    @tfa_forms.each do |tfa_form|
-      form = website[tfa_form]
-      next if form.nil?
-      unless website['tfa']
-        error("#{website['name']} should not contain a \'#{tfa_form}\' tag when it doesn\'t support TFA.")
+  # Validate an individual YAML tag
+  def check_tag(tag, required, tfa_state, website, only_true = false)
+    if website[tag].nil?
+      if website['tfa'] == tfa_state && required
+        error("#{website['name']}: The required YAML tag \'#{tag}\' tag is not present.")
       end
-      unless form
-        error("#{website['name']} should not contain a \'#{tfa_form}\' tag when it\'s value isn\'t \'YES\'.")
+    else
+      if website['tfa'] != tfa_state
+        state = website['tfa'] ? "enabled" : "disabled"
+        error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be present when TFA is #{state}.")
+      end
+      if only_true && website[tag] != true
+        error("#{website['name']}: The YAML tag \'#{tag}\' should either have a value set to \'Yes\' or not be used at all. (Current value: \'#{website[tag]}\')")
       end
     end
   end
 
-  def tags_set(website)
-    tags = %w(url img name)
-    tags.each do |t|
+  # Validate the YAML tags
+  def validate_tags(website)
+    tfa = website['tfa']
+    if tfa != true && tfa != false
+      error("#{website['name']}: The YAML tag \'#{tag}\' should be either \'Yes\' or \'No\'. (#{tfa})")
+    end
+
+    # Validate tags that are obligatory
+    @obligatory_tags.each do |t|
       tag = website[t]
       next unless tag.nil?
-      error("#{website['name']} doesn\'t contain a \'#{t}\' tag.")
+      error("#{website['name']}: The required YAML tag \'#{t}\' tag is not present.")
     end
 
-    if website['tfa']
-      error("#{website['name']} should not contain a \'status\' tag when it doesn\'t support TFA.") unless website['status'].nil?
-    else
-      error("#{website['name']} should not contain a \'doc\' tag when it doesn\'t support TFA.") unless website['doc'].nil?
+    # Validate tags associated with TFA 'YES'
+    @tfa_yes_tags.each do |tfa_form|
+      check_tag(tfa_form, false, true, website)
     end
 
-    return if @ignore_twitter
-    twitter = website['twitter']
-    return if twitter.nil?
-    return unless website['tfa']
-    error("#{website['name']} should not contain a \'twitter\' tag as it supports TFA.")
+    # Validate TFA form tags'
+    @tfa_forms.each do |tfa_form|
+      check_tag(tfa_form, false, true, website, true)
+    end
+
+    # Validate tags associated with TFA 'NO'
+    @tfa_no_tags.each do |tfa_form|
+      check_tag(tfa_form, false, false, website)
+    end
   end
 
   def validate_image(image, name)
@@ -69,15 +87,14 @@ begin
       image_dimensions = [32, 32]
 
       unless FastImage.size(image) == image_dimensions
-        error("#{image} is not #{image_dimensions.join('x')}")
+        error("#{image} is not #{image_dimensions.join('x')} pixels.")
       end
 
-      ext = '.png'
-      error("#{image} is not #{ext}") unless File.extname(image) == ext
+      error("#{image} is not using the #{@image_extension} format.") unless File.extname(image) == @image_extension
 
       unless @ignore_image_size
         image_size = File.size(image)
-        error("#{image} should not be larger than #{@image_max_size} bytes. It is currently #{image_size} bytes") unless image_size < @image_max_size
+        error("#{image} should not be larger than #{@image_max_size} bytes. It is currently #{image_size} bytes.") unless image_size <= @image_max_size
       end
 
     else
@@ -94,8 +111,7 @@ begin
     data = YAML.load_file('_data/' + section['id'] + '.yml')
     data['websites'].each do |website|
 
-      check_tfa(website)
-      tags_set(website)
+      validate_tags(website)
       validate_image("img/#{section['id']}/#{website['img']}", website['name'])
 
     end
@@ -104,7 +120,7 @@ begin
   exit 1 if @output > 0
 
 rescue Psych::SyntaxError => e
-  puts 'Error in the YAML'
+  puts 'Error in a YAML file.'
   puts e
   exit 1
 rescue => e
