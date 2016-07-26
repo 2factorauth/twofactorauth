@@ -70,6 +70,12 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: CommuterBenefits
+      url: http://commuterbenefits.com/
+      img: communterbenefits.png
+      tfa: No
+      twitter: CommuterBenefit
+
     - name: Cosmolex
       url: https://www.cosmolex.com/
       img: cosmolex.png
@@ -289,12 +295,6 @@ websites:
       url: https://www.wikipedia.org/
       twitter: Wikipedia
       img: wikipedia.png
-      tfa: No
-
-    - name: WiredCommute
-      url: http://commuterbenefits.com/employers/solutions/wiredcommute/
-      twitter: CommuterBenefit
-      img: wiredcommute.png
       tfa: No
 
     - name: Wunderlist
