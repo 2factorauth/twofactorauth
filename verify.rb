@@ -109,6 +109,11 @@ begin
   sections.each do |section|
 
     data = YAML.load_file('_data/' + section['id'] + '.yml')
+    
+    if data['websites'] != data['websites'].sort_by { |h| h['name'].downcase }
+      error("#{section['id']} is not alphabetized by name")
+    end
+    
     data['websites'].each do |website|
 
       validate_tags(website)
