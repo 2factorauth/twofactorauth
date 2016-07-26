@@ -66,6 +66,12 @@ websites:
       twitter: DOMVAPower
       tfa: No
 
+    - name: DTE Energy
+      url: https://www.dteenergy.com
+      img: dte.png
+      twitter: DTE_Energy
+      tfa: No
+
     - name: Duke Energy
       url: https://www.duke-energy.com
       img: duke.png
@@ -77,6 +83,19 @@ websites:
       img: ee.png
       tfa: No
       twitter: EE
+
+    - name: Frontier
+      url: https://frontier.com
+      img: frontier.png
+      tfa: No
+      twitter: AskFrontier
+      tfa: No
+
+    - name: Georgia Power
+      url: https://www.georgiapower.com
+      img: georgiapower.png
+      twitter: GeorgiaPower
+      tfa: No
 
     - name: Florida Power and Light
       url: https://www.fpl.com
@@ -137,10 +156,13 @@ websites:
       tfa: No
 
     - name: Sonic
-      url: https://www.sonic.net/
+      url: https://www.sonic.com/
       img: sonic.png
-      tfa: No
-      twitter: sonic
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      phone: Yes
+      doc: https://wiki.sonic.net/wiki/2-Step_Verfication
 
     - name: Southern California Edison
       url: https://www.sce.com

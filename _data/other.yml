@@ -130,6 +130,12 @@ websites:
       twitter: fruux
       tfa: No
 
+    - name: HMRC
+      url: https://hmrc.gov.uk
+      twitter: HMRCgovuk
+      img: hmrc.png
+      tfa: No
+
     - name: IFTTT
       url: https://ifttt.com
       img: ifttt.png
@@ -225,6 +231,12 @@ websites:
       twitter: pozible
       tfa: No
 
+    - name: Promoter.io
+      url: https://promoter.io/
+      img: promoter.png
+      tfa: No
+      twitter: Promoter_io
+
     - name: Skatteverket
       url: https://www.skatteverket.se
       img: skatteverket.png
@@ -302,7 +314,14 @@ websites:
       twitter: Wunderlist
       img: wunderlist.png
       tfa: No
-
+      
+    - name: Yclas
+      url: https://yclas.com/
+      img: yclas.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.yclas.com/2-step-authentication/
+    
     - name: Zendesk
       url: http://www.zendesk.com
       img: zendesk.png

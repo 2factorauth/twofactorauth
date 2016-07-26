@@ -11,6 +11,12 @@ websites:
       img: creditkarma.png
       tfa: No
 
+    - name: ditech
+      url: https://www.ditech.com
+      twitter: ditech
+      img: ditech.png
+      tfa: No
+
     - name: FreeAgent
       url: https://www.freeagent.com
       img: freeagent.png
@@ -51,6 +57,14 @@ websites:
       software: Yes
       doc: https://ttlc.intuit.com/questions/2902682-what-is-two-step-verification
 
+    - name: Justworks
+      url: https://justworks.com/
+      img: justworks.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: http://help.justworks.com/customer/en/portal/articles/2488740-two-factor-authentication
+
     - name: Kiva
       url: https://www.kiva.org
       twitter: kiva
@@ -81,6 +95,12 @@ websites:
       url: https://bills.mint.com
       twitter: mintbills
       img: mintbills.png
+      tfa: No
+
+    - name: Northwestern Mutual
+      url: https://www.northwesternmutual.com/
+      facebook: northwesternmutual
+      img: northwesternmutual.png
       tfa: No
 
     - name: Paychex
