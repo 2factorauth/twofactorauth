@@ -2,6 +2,8 @@ require 'yaml'
 require 'fastimage'
 @output = 0
 
+@output_warn = 0
+
 # Should the script ignore checking for Twitter handles?
 @ignore_twitter = false
 
@@ -33,6 +35,13 @@ begin
     @output += 1
     puts "<------------ ERROR ------------>\n" if @output == 1
     puts "#{@output}. #{msg}"
+  end
+  
+    # Send warning message
+  def warn(msg)
+    @output_warn += 1
+    puts "<----------- WARNING ----------->\n" if @output_warn == 1
+    puts "#{@output_warn}. #{msg}"
   end
 
   # Validate an individual YAML tag
@@ -111,7 +120,7 @@ begin
     data = YAML.load_file('_data/' + section['id'] + '.yml')
     
     if data['websites'] != data['websites'].sort_by { |h| h['name'].downcase }
-      error("_data/#{section['id']}.yml is not alphabetized by name")
+      warn("_data/#{section['id']}.yml is not alphabetized by name")
     end
     
     data['websites'].each do |website|
