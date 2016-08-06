@@ -1,10 +1,4 @@
 websites:
-    - name: appFog
-      url: https://www.appfog.com/
-      twitter: appfog
-      img: appfog.png
-      tfa: No
-
     - name: Amazon Web Services
       url: https://aws.amazon.com
       img: aws.png
@@ -13,6 +7,12 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://aws.amazon.com/iam/details/mfa/
+
+    - name: appFog
+      url: https://www.appfog.com/
+      twitter: appfog
+      img: appfog.png
+      tfa: No
 
     - name: Cloud 66
       url: https://www.cloud66.com
