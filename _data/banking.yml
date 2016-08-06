@@ -127,6 +127,14 @@ websites:
       email: Yes
       doc: /notes/chase/
 
+    - name: Charles Schwab
+      url: https://www.schwab.com
+      img: schwab.png
+      tfa: Yes
+      hardware: Yes
+      exceptions:
+            text: "Must call and ask for it, no documentation. Only supports a schwab distributed veri-sign token."
+
     - name: CIBC
       url: http://www.cibc.ca
       twitter: cibc
