@@ -67,6 +67,22 @@ websites:
       software: Yes
       doc: https://www.bitstamp.net/s/documents/bitstamp_2_factor_authentication_guide.pdf
 
+    - name: Blockchain
+      url: https://blockchain.info/
+      img: blockchain.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://blockchain.info/wallet/support-pages
+
+    - name: BlockCypher
+      url: https://live.blockcypher.com/
+      twitter: blockcypher
+      img: blockcypher.png
+      tfa: No
+
     - name: BTC-E
       url: https://btc-e.com
       img: btc-e.png
@@ -80,16 +96,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://help.btcjam.com/customer/portal/articles/1987686
-
-    - name: Blockchain
-      url: https://blockchain.info/
-      img: blockchain.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://blockchain.info/wallet/support-pages
 
     - name: CampBX
       url: https://campbx.com/
