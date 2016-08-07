@@ -119,6 +119,15 @@ websites:
     sms: Yes
     software: Yes
     doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+    
+  - name: SmartBox
+    img: smartbox.png
+    url: http://www.panterranetworks.com/SmartBox/index.php
+    tfa: Yes
+    sms: No
+    goog: No
+    authy: No
+    doc: http://www.panterranetworks.com/SmartBox/features/security.php  
 
   - name: Pogoplug
     url: https://pogoplug.com/
