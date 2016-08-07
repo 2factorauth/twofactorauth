@@ -147,7 +147,10 @@ websites:
     url: https://spideroak.com
     twitter: spideroak
     img: spideroak.png
-    tfa: No
+    tfa: Yes
+    doc: https://spideroak.com/articles/2factor-authentication-to-your-spideroak-account
+    exceptions:
+        text: "TFA only available for US and Canadian customers"
 
   - name: SugarSync
     twitter: SugarSync
