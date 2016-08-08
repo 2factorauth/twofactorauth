@@ -50,6 +50,13 @@ websites:
       img: glesys.png
       tfa: Yes
 
+    - name: Hetzner robot
+      url: https://robot.your-server.de
+      img: hetzner.png
+      tfa: Yes
+      otp: Yes
+      doc: https://robot.your-server.de/tfa
+
     - name: iPage
       url: http://www.ipage.com/ipage/index.html
       twitter: iPage
