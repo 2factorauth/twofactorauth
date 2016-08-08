@@ -29,6 +29,12 @@ websites:
       hardware: Yes
       doc: http://us.battle.net/en/security/
 
+    - name: Curse
+      url: https://www.curse.com/
+      img: curse.png
+      tfa: No
+      twitter: curseapp
+
     - name: Desura
       url: http://www.desura.com/
       img: desura.png
@@ -175,13 +181,11 @@ websites:
       exceptions:
           text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
 
-    - name: "Star Wars: The Old Republic"
-      url: http://www.swtor.com/
-      img: swtor.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.swtor.com/info/security-key
+    - name: Stardock Corporation
+      url: https://www.stardock.com/
+      twitter: Stardock
+      img: stardock.png
+      tfa: No
 
     - name: Steam
       url: http://store.steampowered.com/
