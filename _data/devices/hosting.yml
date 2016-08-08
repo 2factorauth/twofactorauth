@@ -50,6 +50,13 @@ websites:
       img: glesys.png
       tfa: Yes
 
+    - name: Hetzner robot
+      url: https://robot.your-server.de
+      img: hetzner.png
+      tfa: Yes
+      otp: Yes
+      doc: https://robot.your-server.de/tfa
+
     - name: iPage
       url: http://www.ipage.com/ipage/index.html
       twitter: iPage
@@ -93,8 +100,8 @@ websites:
       url: https://www.rackspace.com/
       twitter: rackspace
       img: rackspace.png
-      tfa: No
-      status: https://twitter.com/Rackspace/status/446469139947732992
+      tfa: Yes
+      doc: https://support.rackspace.com/how-to/myrackspace-two-factor-authentication/
 
     - name: RamNode
       url: http://www.ramnode.com
