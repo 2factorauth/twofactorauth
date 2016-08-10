@@ -91,8 +91,12 @@ begin
     end
   end
 
-  def validate_image(image, name)
+  def validate_image(image, name, images)
     if File.exist?(image)
+      if images.index(image) != nil
+        images.delete_at(images.index(image))
+      end
+
       image_dimensions = [32, 32]
 
       unless FastImage.size(image) == image_dimensions
@@ -122,13 +126,22 @@ begin
     if data['websites'] != data['websites'].sort_by { |h| h['name'].downcase }
       warn("_data/#{section['id']}.yml is not alphabetized by name")
     end
-    
+
+    images = Dir["img/#{section['id']}/*"]
+
     data['websites'].each do |website|
 
       validate_tags(website)
-      validate_image("img/#{section['id']}/#{website['img']}", website['name'])
+      validate_image("img/#{section['id']}/#{website['img']}", website['name'], images)
 
     end
+
+    if not images.empty?
+      images.each do |image|
+        error("#{image} is an unused file")
+      end
+    end
+
   end
 
   exit 1 if @output > 0
