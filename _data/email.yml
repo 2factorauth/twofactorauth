@@ -59,10 +59,12 @@ websites:
 
     - name: mailbox.org
       url: https://www.mailbox.org/
+      twitter: https://twitter.com/mailbox_org
       img: mailbox.png
       tfa: Yes
+      software: Yes
       hardware: Yes
-      doc: https://mailbox.org/en/one-time-passwords-for-secure-login-to-our-webmailer/
+      doc: https://support-en.mailbox.org/knowledge-base/article/is-there-a-two-factor-authentication
 
     - name: Mailstache
       url: https://mailstache.io
