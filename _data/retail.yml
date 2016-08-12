@@ -19,6 +19,12 @@ websites:
           text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
       doc: http://support.apple.com/kb/ht5570
 
+    - name: Big W
+      url: https://www.bigw.com.au/
+      img: bigw.png
+      tfa: No
+      facebook: BIGWaustralia
+
     - name: Comixology
       url: https://www.comixology.com/
       img: comixology.png
@@ -34,6 +40,12 @@ websites:
       exceptions:
           text: "eBay only supports 2FA in some countries."
       doc: http://pages.ebay.com/securitykey/faq.html
+
+    - name: EB Games Australia
+      url: https://ebgames.com.au/
+      img: ebgamesaustralia.png
+      tfa: No
+      twitter: EBGamesAus
 
     - name: Etsy
       url: http://www.etsy.com/
@@ -90,10 +102,24 @@ websites:
       img: massdrop.png
       tfa: No
 
+    - name: Mercado Libre
+      url: https://www.mercadolibre.com
+      img: mercado-libre.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://ayuda.mercadolibre.com.ar/ayuda/Consejos-para-fortalecer-la-se_961
+
     - name: Newegg
       url: http://www.newegg.com
       twitter: newegg
       img: newegg.png
+      tfa: No
+
+    - name: PC Case Gear
+      url: https://www.pccasegear.com/
+      twitter: pccasegear
+      img: pccasegear.png
       tfa: No
 
     - name: Rakuten

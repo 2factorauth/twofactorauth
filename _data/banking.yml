@@ -31,6 +31,12 @@ websites:
       img: americafirstcu.png
       tfa: No
 
+    - name: Australia and New Zealand Banking Group
+      url: https://www.anz.com/personal/
+      twitter: ANZ_AU
+      img: anz.png
+      tfa: No
+
     - name: Banca Mediolanum
       url: https://www.bmedonline.it
       img: mediolanum.png
@@ -160,6 +166,12 @@ websites:
       sms: Yes
       doc: https://www.commbank.com.au/security-privacy/netcode.html
 
+    - name: Credit Union Australia
+      url: https://www.cua.com.au/
+      img: cua.png
+      tfa: No
+      twitter: cua_connect
+
     - name: Discover
       url: https://www.discover.com/
       img: discover.png
@@ -284,11 +296,18 @@ websites:
       url: http://www.mbna.ca
       img: mbnacanada.png
       tfa: No
+      twitter: mbna_canada
 
     - name: Meridian Credit Union
       url: https://www.meridiancu.ca
       img: meridian.png
       twitter: meridiancu
+      tfa: No
+
+    - name: N26
+      url: https://n26.com
+      img: n26.png
+      twitter: number26
       tfa: No
 
     - name: Nationwide Building Society
@@ -415,6 +434,12 @@ websites:
       twitter: SchoolsFirstFCU
       img: schoolsfirst.png
       tfa: No
+
+    - name: Scotiabank
+      url: http://www.scotiabank.com
+      img: scotiabank.png
+      tfa: No
+      twitter: ScotiabankHelps
 
     - name: SEB
       url: http://www.seb.se/pow/default.asp
