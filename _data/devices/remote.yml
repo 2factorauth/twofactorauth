@@ -30,6 +30,6 @@ websites:
       img: openssh.png
       tfa: Yes
       otp: Yes
-      u2f: Yes
-      doc: https://github.com/bluecmd/openssh-u2f
+      u2f: No
+      status: https://bugzilla.mindrot.org/show_bug.cgi?id=2319
 
