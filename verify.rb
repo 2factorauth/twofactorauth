@@ -2,8 +2,6 @@ require 'yaml'
 require 'fastimage'
 @output = 0
 
-@output_warn = 0
-
 # Should the script ignore checking for Twitter handles?
 @ignore_twitter = false
 
@@ -124,7 +122,7 @@ begin
     data = YAML.load_file('_data/' + section['id'] + '.yml')
     
     if data['websites'] != data['websites'].sort_by { |h| h['name'].downcase }
-      warn("_data/#{section['id']}.yml is not alphabetized by name")
+      error("_data/#{section['id']}.yml is not alphabetized by name")
     end
 
     images = Dir["img/#{section['id']}/*"]
