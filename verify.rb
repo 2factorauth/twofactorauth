@@ -35,13 +35,6 @@ begin
     puts "#{@output}. #{msg}"
   end
   
-    # Send warning message
-  def warn(msg)
-    @output_warn += 1
-    puts "<----------- WARNING ----------->\n" if @output_warn == 1
-    puts "#{@output_warn}. #{msg}"
-  end
-
   # Validate an individual YAML tag
   def check_tag(tag, required, tfa_state, website, only_true = false)
     if website[tag].nil?
