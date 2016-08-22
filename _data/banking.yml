@@ -22,6 +22,7 @@ websites:
     - name: American Express
       url: https://www.americanexpress.com/
       twitter: AmericanExpress
+      facebook: AmericanExpress
       img: americanexpress.png
       tfa: No
 
@@ -272,6 +273,13 @@ websites:
       twitter: Huntington_Bank
       img: huntingtonnationalbank.png
       tfa: No
+
+    - name: ING (Luxembourg)
+      url: https://www.ing.lu
+      img: ing.png
+      tfa: Yes
+      hardware: Yes
+      doc: https://www.ing.lu/web/ING/EN/Personal/Customerservices/FAQ/MYING_FAQ_EN
 
     - name: Intesa Sanpaolo
       url: https://www.intesasanpaolo.com
@@ -561,12 +569,17 @@ websites:
       phone: Yes
       doc: https://www.uwcu.org/OnlineBanking/OnlineSecurity/VerifyU.aspx
 
+    - name: VyStar Credit Union
+      url: https://vystarcu.org/
+      twitter: OfficialVyStar
+      img: vystar.png
+      tfa: No
+
     - name: Wells Fargo
       url: https://www.wellsfargo.com/
       img: wellsfargo.png
       tfa: Yes
       sms: Yes
-      software: Yes
       phone: Yes
       hardware: Yes
       doc: https://www.wellsfargo.com/privacy-security/advanced-access
