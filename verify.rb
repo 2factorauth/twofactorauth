@@ -34,7 +34,7 @@ begin
     puts "<------------ ERROR ------------>\n" if @output == 1
     puts "#{@output}. #{msg}"
   end
-  
+
   # Validate an individual YAML tag
   def check_tag(tag, required, tfa_state, website, only_true = false)
     if website[tag].nil?
