@@ -1,4 +1,11 @@
 websites:
+    - name: 34SP.com
+      url: https://www.34SP.com
+      img: 34sp.png
+      tfa: yes
+      software: yes
+      doc: https://www.34sp.com/kb/142/how-to-enable-2-factor-authentication-on-your-account
+
     - name: ARP Networks
       url: https://arpnetworks.com/
       img: arpnetworks.png
@@ -134,6 +141,12 @@ websites:
       url: https://mediatemple.net/
       twitter: mediatemple
       img: mediatemple.png
+      tfa: No
+
+    - name: Mittwald
+      url: https://www.mittwald.de/
+      twitter: mittwald
+      img: mittwald.png
       tfa: No
 
     - name: Netcup
