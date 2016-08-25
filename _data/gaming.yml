@@ -145,10 +145,10 @@ websites:
 
     - name: Playstation Network
       url: https://www.playstation.com/
-      twitter: AskPlayStation
       img: psn.png
-      tfa: No
-      status: http://www.polygon.com/2016/4/20/11470660/psn-two-factor-authentication-playstation-network
+      tfa: Yes
+      sms: Yes
+      doc: https://www.playstation.com/en-us/account-security/2-step-verification/
 
     - name: Roberts Space Industries
       url: https://robertsspaceindustries.com/
