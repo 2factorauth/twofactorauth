@@ -7,15 +7,6 @@ websites:
       software: Yes
       doc: https://support.ankama.com/hc/en-us/categories/200093427-DOFUS-Security
 
-    - name: Blizzard
-      url: http://blizzard.com
-      img: blizzard.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://us.battle.net/en/security/
-
     - name: Black Desert Online
       url: https://www.blackdesertonline.com/
       img: bdo.png
@@ -28,6 +19,21 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://support.bladeandsoul.com/hc/en-us/articles/207578553-Supported-Two-Step-OTP-Authentication-Verification-Methods
+
+    - name: Blizzard
+      url: http://blizzard.com
+      img: blizzard.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://us.battle.net/en/security/
+
+    - name: Curse
+      url: https://www.curse.com/
+      img: curse.png
+      tfa: No
+      twitter: curseapp
 
     - name: Desura
       url: http://www.desura.com/
@@ -182,6 +188,12 @@ websites:
       software: Yes
       hardware: Yes
       doc: http://www.swtor.com/info/security-key
+
+    - name: Stardock Corporation
+      url: https://www.stardock.com/
+      twitter: Stardock
+      img: stardock.png
+      tfa: No
 
     - name: Steam
       url: http://store.steampowered.com/

@@ -1,14 +1,14 @@
 websites:
-    - name: American Airlines
-      url: https://www.aa.com/
-      twitter: AmericanAir
-      img: aa.png
-      tfa: No
-
     - name: Air Canada
       url: https://www.aircanada.com/
       twitter: AirCanada
       img: aircanada.png
+      tfa: No
+
+    - name: Air France
+      url: http://www.airfrance.com
+      twitter: airfrance
+      img: airfrance.png
       tfa: No
 
     - name: Alaska Airlines
@@ -17,10 +17,10 @@ websites:
       img: alaska.png
       tfa: No
 
-    - name: Air France
-      url: http://www.airfrance.com
-      twitter: airfrance
-      img: airfrance.png
+    - name: American Airlines
+      url: https://www.aa.com/
+      twitter: AmericanAir
+      img: aa.png
       tfa: No
 
     - name: Amtrak
@@ -65,16 +65,16 @@ websites:
       img: easyjet.png
       tfa: No
 
-    - name: Greyhound
-      url: https://www.greyhound.com
-      twitter: GHoundBusHelp
-      img: greyhound.png
-      tfa: No
-
     - name: Frontier
       url: https://www.flyfrontier.com
       twitter: FrontierCare
       img: frontier.png
+      tfa: No
+
+    - name: Greyhound
+      url: https://www.greyhound.com
+      twitter: GHoundBusHelp
+      img: greyhound.png
       tfa: No
 
     - name: Hailo
@@ -83,16 +83,16 @@ websites:
       img: hailo.png
       tfa: No
 
-    - name: JetBlue
-      url: https://www.jetblue.com
-      twitter: JetBlue
-      img: jetblue.png
-      tfa: No
-
     - name: Hawaiian Airlines
       url: https://www.hawaiianairlines.com
       twitter: HawaiianAir
       img: hawaiian.png
+      tfa: No
+
+    - name: JetBlue
+      url: https://www.jetblue.com
+      twitter: JetBlue
+      img: jetblue.png
       tfa: No
 
     - name: JetSmarter
@@ -131,12 +131,6 @@ websites:
       img: ryanair.png
       tfa: No
 
-    - name: Transport for London
-      url: https://tfl.gov.uk/
-      twitter: tflwaystopay
-      img: tfl.png
-      tfa: No
-
     - name: SAS
       url: https://www.flysas.com/
       twitter: SAS
@@ -165,6 +159,12 @@ websites:
       url: https://www.spirit.com
       twitter: SpiritAirlines
       img: spirit.png
+      tfa: No
+
+    - name: Transport for London
+      url: https://tfl.gov.uk/
+      twitter: tflwaystopay
+      img: tfl.png
       tfa: No
 
     - name: Uber

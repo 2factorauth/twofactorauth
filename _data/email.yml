@@ -10,14 +10,20 @@ websites:
       doc: https://help.aol.com/articles/2-factor-authentication-stronger-than-your-password-alone
 
     - name: FastMail
-      url: https://www.fastmail.fm/
+      url: https://www.fastmail.com/
       img: fastmail.png
       tfa: Yes
       sms: Yes
       software: Yes
       hardware: Yes
-      doc: https://www.fastmail.fm/help/features_alternative_logins.html
+      doc: https://www.fastmail.com/help/account/2fa.html
 
+    - name: Freenet
+      url: https://www.freenet.de/
+      img: freenet.png
+      tfa: No
+      facebook: freenet
+      
     - name: Gmail
       url: https://gmail.com
       img: gmail.png
@@ -58,11 +64,12 @@ websites:
       doc: https://help.mail.ru/enmail-help/settings/2auth
 
     - name: mailbox.org
-      url: https://www.mailbox.org/
+      url: https://mailbox.org/
       img: mailbox.png
       tfa: Yes
+      software: Yes
       hardware: Yes
-      doc: https://mailbox.org/en/one-time-passwords-for-secure-login-to-our-webmailer/
+      doc: https://support-en.mailbox.org/knowledge-base/article/is-there-a-two-factor-authentication
 
     - name: Mailstache
       url: https://mailstache.io

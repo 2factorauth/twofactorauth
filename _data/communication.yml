@@ -51,6 +51,13 @@ websites:
       img: flowdock.png
       tfa: No
 
+    - name: Front App
+      url: https://frontapp.com
+      img: front_app.png
+      tfa: Yes
+      software: Yes
+      doc: https://faq.frontapp.com/11695-security/how-to-activate-2fa
+
     - name: Grape
       url: https://chatgrape.com/
       img: grape.png
@@ -154,6 +161,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://support.sparkpost.com/customer/portal/articles/1948449
+          
+    - name: Stackfield
+      url: https://www.stackfield.com/
+      img: stackfield.png
+      tfa: Yes
+      software: Yes
+      doc: http://en.stackfield.help/article/92-activating-deactivating-the-two-factor-authentication
 
     - name: Telegram
       url: https://telegram.org/
