@@ -111,14 +111,6 @@ websites:
       hardware: Yes
       doc: https://help.skrill.com/pkb_sc_article_FAQ?id=kA0D0000000Ci3x&l=en_GB
 
-    - name: Stripe
-      img: stripe.png
-      url: https://www.stripe.com/
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
-
     - name: Square
       url: https://squareup.com
       img: squareup.png
@@ -133,6 +125,14 @@ websites:
       img: square-cash.png
       tfa: No
       twitter: SquareCash
+
+    - name: Stripe
+      img: stripe.png
+      url: https://www.stripe.com/
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
 
     - name: Venmo
       url: https://venmo.com
