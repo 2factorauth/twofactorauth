@@ -64,11 +64,12 @@ websites:
       doc: https://help.mail.ru/enmail-help/settings/2auth
 
     - name: mailbox.org
-      url: https://www.mailbox.org/
+      url: https://mailbox.org/
       img: mailbox.png
       tfa: Yes
+      software: Yes
       hardware: Yes
-      doc: https://mailbox.org/en/one-time-passwords-for-secure-login-to-our-webmailer/
+      doc: https://support-en.mailbox.org/knowledge-base/article/is-there-a-two-factor-authentication
 
     - name: Mailstache
       url: https://mailstache.io
@@ -124,6 +125,13 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://www.thexyz.com/account/knowledgebase/15/Enabling-two-factor-authentication.html
+
+    - name: Web.de
+      url: https://web.de
+      twitter: WEBDE
+      img: webde.png
+      lang: de
+      tfa: No
 
     - name: Yahoo Japan Mail
       url: https://mail.yahoo.co.jp/
