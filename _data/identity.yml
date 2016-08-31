@@ -117,6 +117,17 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: Ping Identity
+      url: https://www.pingidentity.com
+      img: pingidentity.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      email: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.pingidentity.com/en/products/pingid.html
+
     - name: RoboForm
       url: https://www.roboform.com/
       img: roboform.png
