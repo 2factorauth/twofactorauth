@@ -37,6 +37,18 @@ websites:
       tfa: No
       twitter: DellCares
 
+    - name: Digital World International
+      url: http://www.dwidigitalcameras.com.au/
+      img: dwi.png
+      tfa: No
+      facebook: DWIAUS
+
+    - name: EB Games Australia
+      url: https://ebgames.com.au/
+      img: ebgamesaustralia.png
+      tfa: No
+      twitter: EBGamesAus
+
     - name: eBay
       url: http://ebay.com
       img: ebay.png
@@ -46,12 +58,6 @@ websites:
       exceptions:
           text: "eBay only supports 2FA in some countries."
       doc: http://pages.ebay.com/securitykey/faq.html
-
-    - name: EB Games Australia
-      url: https://ebgames.com.au/
-      img: ebgamesaustralia.png
-      tfa: No
-      twitter: EBGamesAus
 
     - name: Etsy
       url: http://www.etsy.com/
@@ -77,6 +83,13 @@ websites:
       twitter: Groupon
       img: groupon.png
       tfa: No
+
+    - name: Home Depot
+      url: http://www.homedepot.com
+      img: homedepot.png
+      tfa: No
+      twitter: HomeDepot
+      facebook: homedepot
 
     - name: Hudson's Bay
       url: http://www.thebay.com
