@@ -38,6 +38,24 @@ websites:
       tfa: No
       twitter: comixology
 
+    - name: Dell
+      url: http://www.dell.com
+      img: dell.png
+      tfa: No
+      twitter: DellCares
+
+    - name: Digital World International
+      url: http://www.dwidigitalcameras.com.au/
+      img: dwi.png
+      tfa: No
+      facebook: DWIAUS
+
+    - name: EB Games Australia
+      url: https://ebgames.com.au/
+      img: ebgamesaustralia.png
+      tfa: No
+      twitter: EBGamesAus
+
     - name: eBay
       url: http://ebay.com
       img: ebay.png
@@ -47,12 +65,6 @@ websites:
       exceptions:
           text: "eBay only supports 2FA in some countries."
       doc: http://pages.ebay.com/securitykey/faq.html
-
-    - name: EB Games Australia
-      url: https://ebgames.com.au/
-      img: ebgamesaustralia.png
-      tfa: No
-      twitter: EBGamesAus
 
     - name: Etsy
       url: http://www.etsy.com/
@@ -79,10 +91,29 @@ websites:
       img: groupon.png
       tfa: No
 
+    - name: Home Depot
+      url: http://www.homedepot.com
+      img: homedepot.png
+      tfa: No
+      twitter: HomeDepot
+      facebook: homedepot
+
     - name: Hudson's Bay
       url: http://www.thebay.com
       img: bay.png
       twitter: hudsonsbay
+      tfa: No
+
+    - name: Hypop
+      url: https://www.hypop.com.au/
+      img: hypop.png
+      twitter: hypop
+      tfa: No
+
+    - name: JB Hi-Fi
+      url: https://www.jbhifi.com.au/
+      twitter: JBHiFi
+      img: jbhifi.png
       tfa: No
 
     - name: Jet
@@ -133,6 +164,12 @@ websites:
       url: http://www.rakuten.com/
       twitter: AskRakutenUS
       img: rakuten.png
+      tfa: No
+
+    - name: Samsung
+      url: http://www.samsung.com/
+      twitter: SamsungMobile
+      img: samsung.png
       tfa: No
 
     - name: Stack Social
