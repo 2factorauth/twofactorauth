@@ -42,6 +42,16 @@ websites:
       tfa: No
       twitter: auspost
 
+    - name: Autodesk
+      url: http://www.autodesk.com
+      img: autodesk.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      software: Yes
+      doc: https://knowledge.autodesk.com/search-result/caas/sfdcarticles/sfdcarticles/Autodesk-Two-Factor-Authentication-FAQ.html
+
     - name: Automater
       url: https://automater.pl/en/
       img: automater.png
@@ -101,6 +111,14 @@ websites:
       tfa: Yes
       sms: Yes
       doc: http://support.cosmolex.com/customer/portal/articles/2158628
+
+    - name: Crowd Supply
+      url: https://www.crowdsupply.com
+      img: crowdsupply.png
+      tfa: No
+      twitter: crowd_supply
+      facebook: CrowdSupply
+      email_address: support@crowdsupply.com
 
     - name: Delicious
       url: http://del.icio.us/
