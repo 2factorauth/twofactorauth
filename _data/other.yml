@@ -29,6 +29,22 @@ websites:
       tfa: No
       twitter: asana
 
+    - name: Australia Post
+      url: https://auspost.com.au/
+      img: auspost.png
+      tfa: No
+      twitter: auspost
+
+    - name: Autodesk
+      url: http://www.autodesk.com
+      img: autodesk.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      software: Yes
+      doc: https://knowledge.autodesk.com/search-result/caas/sfdcarticles/sfdcarticles/Autodesk-Two-Factor-Authentication-FAQ.html
+
     - name: Automater
       url: https://automater.pl/en/
       img: automater.png
@@ -76,6 +92,12 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: CommuterBenefits
+      url: http://commuterbenefits.com/
+      img: commuterbenefits.png
+      tfa: No
+      twitter: CommuterBenefit
+
     - name: Cosmolex
       url: https://www.cosmolex.com/
       img: cosmolex.png
@@ -83,17 +105,25 @@ websites:
       sms: Yes
       doc: http://support.cosmolex.com/customer/portal/articles/2158628
 
-    - name: Delighted
-      url: https://delightedapp.com/
-      img: delighted.png
-      tfa: Yes
-      sms: Yes
+    - name: Crowd Supply
+      url: https://www.crowdsupply.com
+      img: crowdsupply.png
+      tfa: No
+      twitter: crowd_supply
+      facebook: CrowdSupply
+      email_address: support@crowdsupply.com
 
     - name: Delicious
       url: http://del.icio.us/
       img: delicious.png
       twitter: Delicious
       tfa: No
+
+    - name: Delighted
+      url: https://delightedapp.com/
+      img: delighted.png
+      tfa: Yes
+      sms: Yes
 
     - name: DirectAdmin
       url: https://www.directadmin.com
@@ -106,6 +136,12 @@ websites:
       url: https://www.doordash.com
       img: doordash.png
       twitter: doordash
+      tfa: No
+
+    - name: Dreamstime
+      url: https://www.dreamstime.com/
+      img: dreamstime.png
+      twitter: Dreamstime
       tfa: No
 
     - name: Envato
@@ -153,8 +189,9 @@ websites:
     - name: Kayako
       url: https://www.kayako.com
       img: kayako.png
-      twitter: kayako
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://support.kayako.com/article/1198-securing-your-user-account-with-two-factor-authentication-2fa
 
     - name: Kickstarter
       url: https://www.kickstarter.com
@@ -276,13 +313,6 @@ websites:
       sms: Yes
       doc: http://help.trello.com/article/993-enabling-two-factor-authentication-for-your-trello-account
 
-    - name: Usabilla
-      url: https://www.usabilla.com
-      img: usabilla.png
-      tfa: Yes
-      software: Yes
-      doc: http://support.usabilla.com/customer/portal/articles/2098444-2-step-authentication
-
     - name: US Internal Revenue Service
       url: http://www.irs.gov/Individuals/Get-Transcript
       twitter: IRSnews
@@ -295,6 +325,19 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://secure.ssa.gov/RIL/HpsView.do#question3
+
+    - name: Usabilla
+      url: https://www.usabilla.com
+      img: usabilla.png
+      tfa: Yes
+      software: Yes
+      doc: http://support.usabilla.com/customer/portal/articles/2098444-2-step-authentication
+
+    - name: WageWorks
+      url: https://www.wageworks.com
+      img: wageworks.png
+      tfa: No
+      twitter: WageWorksCares
 
     - name: Webmin
       url: http://www.webmin.com/
