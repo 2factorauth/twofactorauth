@@ -5,6 +5,12 @@ websites:
       img: bandcamp.png
       tfa: No
 
+    - name: Beam
+      url: https://beam.pro
+      img: beam.png
+      tfa: Yes
+      software: Yes
+
     - name: CD Baby
       url: https://www.cdbaby.com/
       twitter: cdbaby
@@ -101,16 +107,6 @@ websites:
       img: ustream.png
       tfa: No
 
-    - name: YouTube
-      url: https://www.youtube.com/
-      img: youtube.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      phone: Yes
-      hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
-
     - name: Vessel
       url: https://www.vessel.com/
       twitter: Vessel
@@ -122,3 +118,13 @@ websites:
       twitter: vimeo
       img: vimeo.png
       tfa: No
+
+    - name: YouTube
+      url: https://www.youtube.com/
+      img: youtube.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      phone: Yes
+      hardware: Yes
+      doc: http://www.google.com/intl/en-US/landing/2step/features.html
