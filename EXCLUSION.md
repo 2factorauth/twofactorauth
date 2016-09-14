@@ -1,4 +1,4 @@
-2FA.org Blacklist
+TwoFactorAuth.org Blacklist
 =================
 
 - 1Password
