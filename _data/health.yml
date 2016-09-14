@@ -25,15 +25,11 @@ websites:
       tfa: No
       status: https://twitter.com/Drugscom/status/493856207572975620
 
-    - name: Google Fit
-      url: https://fit.google.com
-      img: googlefit.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+    - name: Elation Health
+      url: https://www.elationhealth.com/
+      twitter: ElationHealth
+      img: elationhealth.png
+      tfa: No
 
     - name: FitBit
       url: http://www.fitbit.com
@@ -49,6 +45,16 @@ websites:
       email: Yes
       software: Yes
       doc: http://support.followmyhealth.com/customer/portal/articles/1309938-fmh-secure-login-2-step-verification---break-down
+
+    - name: Google Fit
+      url: https://fit.google.com
+      img: googlefit.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Healthcare.gov
       url: http://healthcare.gov
