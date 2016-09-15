@@ -140,3 +140,13 @@ websites:
       exceptions:
           text: "2FA is only available on paid plans."
       doc: http://www.securesafe.com/en/faq/security.html
+
+    - name: True Key
+      url: https://www.truekey.com
+      img: truekey.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://help.truekey.com/hc/en-us/articles/218580447-How-can-I-add-additional-factors-
