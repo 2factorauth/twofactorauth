@@ -38,3 +38,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.teamviewer.com/en/help/402-How-do-I-activate-deactivate-two-factor-authentication-for-my-TeamViewer-account.aspx
+
+    - name: ScreenConnect
+      url: https://www.screenconnect.com
+      img: screenconnect.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://help.screenconnect.com/Enabling_two-factor_authentication
