@@ -7,11 +7,13 @@ websites:
       software: Yes
       doc: https://www.youtube.com/watch?v=KFvoNHgl9Pw
 
-    - name: Bitcoins Norway
-      url: https://bitcoinsnorway.com
-      img: bitcoinsnorway.png
+    - name: Bitcoin-Central
+      url: https://bitcoin-central.net
+      img: bitcoincentral.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      doc: https://bitcoin-central.net/page/profile/security
 
     - name: Bitcoin.de
       url: https://bitcoin.de
@@ -21,13 +23,11 @@ websites:
       hardware: Yes
       doc: https://www.bitcoin.de/de/faq/was-ist-die-2-step-verification-2-faktor-authentifizierung/46.html
 
-    - name: Bitcoin-Central
-      url: https://bitcoin-central.net
-      img: bitcoincentral.png
+    - name: Bitcoins Norway
+      url: https://bitcoinsnorway.com
+      img: bitcoinsnorway.png
       tfa: Yes
       software: Yes
-      hardware: Yes
-      doc: https://bitcoin-central.net/page/profile/security
 
     - name: BitGo
       url: https://www.bitgo.com
@@ -67,6 +67,16 @@ websites:
       software: Yes
       doc: https://www.bitstamp.net/s/documents/bitstamp_2_factor_authentication_guide.pdf
 
+    - name: Blockchain
+      url: https://blockchain.info/
+      img: blockchain.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://blockchain.info/wallet/support-pages
+
     - name: BTC-E
       url: https://btc-e.com
       img: btc-e.png
@@ -80,16 +90,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://help.btcjam.com/customer/portal/articles/1987686
-
-    - name: Blockchain
-      url: https://blockchain.info/
-      img: blockchain.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://blockchain.info/wallet/support-pages
 
     - name: CampBX
       url: https://campbx.com/
@@ -128,6 +128,14 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: Coin Cafe
+      url: https://coincafe.com
+      img: coincafe.png
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: http://blog.coincafe.com/2016/01/08/2fa/
+
     - name: Coinapult
       url: https://coinapult.com
       img: coinapult.png
@@ -143,14 +151,6 @@ websites:
       software: Yes
       phone: Yes
       doc: http://blog.coinbase.com/post/25677574019/coinbase-now-offers-two-factor-authentication
-
-    - name: Coin Cafe
-      url: https://coincafe.com
-      img: coincafe.png
-      tfa: Yes
-      software: Yes
-      email: Yes
-      doc: http://blog.coincafe.com/2016/01/08/2fa/
 
     - name: Coinfloor
       url: https://www.coinfloor.co.uk/
@@ -187,19 +187,19 @@ websites:
       hardware: Yes
       doc: https://coinkite.com/settings/pws
 
-    - name: Coinsetter
-      url: https://www.coinsetter.com
-      img: coinsetter.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.coinsetter.com/my/security
-
     - name: Coins.ph
       url: https://coins.ph/
       img: coinsph.png
       tfa: Yes
       software: Yes
       doc: https://coinsph.zendesk.com/hc/en-us/sections/200557900-Two-factor-authentication
+
+    - name: Coinsetter
+      url: https://www.coinsetter.com
+      img: coinsetter.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.coinsetter.com/my/security
 
     - name: Cryptsy
       url: https://cryptsy.com/

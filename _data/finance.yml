@@ -1,13 +1,13 @@
 websites:
+    - name: Adirondack Insurance Exchange
+      url: http://www.aie-ny.com/
+      img: adirondackinsurnaceexchange.png
+      tfa: No
+
     - name: ADP
       url: https://www.adp.com
       twitter: adp
       img: adp.png
-      tfa: No
-
-    - name: Adirondack Insurance Exchange
-      url: http://www.aie-ny.com/
-      img: adirondackinsurnaceexchange.png
       tfa: No
 
     - name: Credit Karma
@@ -25,8 +25,9 @@ websites:
     - name: FreeAgent
       url: https://www.freeagent.com
       img: freeagent.png
-      twitter: freeagent
-      tfa: No
+      tfa: Yes
+      software: Yes
+      docs: https://www.freeagent.com/support/kb/getting-started/two-step-verification
 
     - name: FreshBooks
       url: https://www.freshbooks.com
@@ -155,6 +156,12 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://help.quickfile.co.uk/main/1/2-factor_authentication.htm
+
+    - name: Quizzle
+      url: https://www.quizzle.com
+      img: quizzle.png
+      tfa: No
+      twitter: Quizzle
 
     - name: Ripple Trade
       url: https://www.rippletrade.com/
