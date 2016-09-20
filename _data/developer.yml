@@ -279,6 +279,15 @@ websites:
       doc: https://semaphoreci.com/docs/two-step-verification.html
       software: Yes
 
+    - name: Sentry
+      url: https://getsentry.com
+      img: sentry.png
+      tfa: Yes
+      sms: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://blog.getsentry.com/2016/06/22/introducing-2fa.html
+
     - name: SourceForge
       url: http://sourceforge.net/
       twitter: sourceforge
