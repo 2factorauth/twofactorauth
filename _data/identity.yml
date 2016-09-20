@@ -1,4 +1,15 @@
 websites:
+    - name: 1Password
+      url: https://
+      img: 1password.png
+      tfa: No
+      email_address: support@1password.com
+      facebook: 1Password
+      twitter: 1Password
+      exceptions:
+        text: "Although AgileBits, the company behind 1Password, feel that two factor authentication doesn't really fit 1Password, we disagree. Because of the way in which 1Password handles authentication and password data."
+        link: "https://github.com/2factorauth/twofactorauth/issues/422"
+
     - name: Bitium
       url: https://www.bitium.com
       img: bitium.png
