@@ -85,6 +85,7 @@
              alt="{{ website.name }}">
         {% endif %}
         <a href="{{ website.url }}" class="name">{{ website.name }}</a>
+        {% include exception.html website=website %}
 
         <p>NO 2FA</p>
       </div>
