@@ -285,6 +285,16 @@ websites:
       img: promoter.png
       tfa: No
       twitter: Promoter_io
+      
+    - name: Repairshopr
+      url: https://www.repairshopr.com/
+      img: repairshopr.png
+      tfa: Yes
+      doc: https://feedback.repairshopr.com/knowledgebase/articles/928266-two-factor-authentication-google-authenticator
+      sms: Yes
+      software: Yes
+      exceptions:
+          text: "SMS only available as a backup to Google Authenticator."
 
     - name: Skatteverket
       url: https://www.skatteverket.se
