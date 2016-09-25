@@ -62,7 +62,17 @@ websites:
       twitter: edXOnline
       img: edx.png
       tfa: No
-
+      
+    - name: Illinois Institute Of Technology
+      url: https://web.iit.edu/
+      twitter: illinoistech
+      facebook: illinoistech
+      email_address: supportdesk@iit.edu
+      img: iit.png
+      tfa: No
+      exceptions:
+          text: "Illinois Tech uses Google Apps for Eductation for their email; so they could very easily add tfa to their email, but at the time of this commit, they have it disabled and do not plan to implement it any time soon."
+       
     - name: Montclair State University
       url: https://www.montclair.edu/employee-services/
       twitter: montclairstateu
