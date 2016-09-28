@@ -116,8 +116,9 @@ websites:
     - name: Robinhood
       url: https://www.robinhood.com/
       img: robinhood.png
-      tfa: No
-      twitter: RobinhoodApp
+      tfa: Yes
+      sms: Yes
+      doc: https://support.robinhood.com/hc/en-us/articles/211546986-Two-Factor-Authentication
 
     - name: Scottrade
       url: https://www.scottrade.com/

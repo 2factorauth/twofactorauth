@@ -35,6 +35,16 @@ websites:
       tfa: No
       twitter: auspost
 
+    - name: Autodesk
+      url: http://www.autodesk.com
+      img: autodesk.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      software: Yes
+      doc: https://knowledge.autodesk.com/search-result/caas/sfdcarticles/sfdcarticles/Autodesk-Two-Factor-Authentication-FAQ.html
+
     - name: Automater
       url: https://automater.pl/en/
       img: automater.png
@@ -60,6 +70,12 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://kb.builtwith.com/account-management/how-to-enable-2fa-on-builtwith/
+
+    - name: Canada Revenue Agency
+      url: http://www.cra-arc.gc.ca
+      img: canadarevenueagency.png
+      tfa: No
+      twitter: canrevagency
 
     - name: Cisco Meraki
       url: https://meraki.cisco.com/
@@ -94,6 +110,14 @@ websites:
       tfa: Yes
       sms: Yes
       doc: http://support.cosmolex.com/customer/portal/articles/2158628
+
+    - name: Crowd Supply
+      url: https://www.crowdsupply.com
+      img: crowdsupply.png
+      tfa: No
+      twitter: crowd_supply
+      facebook: CrowdSupply
+      email_address: support@crowdsupply.com
 
     - name: Delicious
       url: http://del.icio.us/
@@ -261,6 +285,16 @@ websites:
       img: promoter.png
       tfa: No
       twitter: Promoter_io
+      
+    - name: Repairshopr
+      url: https://www.repairshopr.com/
+      img: repairshopr.png
+      tfa: Yes
+      doc: https://feedback.repairshopr.com/knowledgebase/articles/928266-two-factor-authentication-google-authenticator
+      sms: Yes
+      software: Yes
+      exceptions:
+          text: "SMS only available as a backup to Google Authenticator."
 
     - name: Skatteverket
       url: https://www.skatteverket.se
@@ -294,6 +328,13 @@ websites:
       tfa: Yes
       sms: Yes
       doc: http://help.trello.com/article/993-enabling-two-factor-authentication-for-your-trello-account
+
+    - name: Upwork
+      url: https://www.upwork.com
+      img: upwork.png
+      tfa: No
+      twitter: UpworkHelp
+      facebook: upwork
 
     - name: US Internal Revenue Service
       url: http://www.irs.gov/Individuals/Get-Transcript
