@@ -20,6 +20,13 @@ websites:
       twitter: 10dollar_ca
       tfa: No
 
+    - name: 123 Reg
+      url: https://www.123-reg.co.uk
+      img: 123reg.png
+      tfa: No
+      twitter: 123reg
+      facebook: 123regfans
+
     - name: 1and1
       url: https://www.1and1.com/
       img: 1and1.png
@@ -97,6 +104,13 @@ websites:
       img: domainfactory.png
       twitter: domainfactory
       tfa: No
+
+    - name: Domains4Bitcoins.com
+      url: https://www.domains4bitcoins.com
+      img: domains4bitcoins.png
+      tfa: Yes
+      sms: Yes
+      doc: http://my.domains4bitcoins.com/kb/answer/2692
 
     - name: DomainsAtCost
       url: https://www.domainsatcost.ca/
@@ -366,6 +380,7 @@ websites:
       url: https://www.pairnic.com/
       img: pairnic.png
       tfa: Yes
+      software: Yes
       sms: Yes
       doc: https://www.pairnic.com/faq_security.html
 
