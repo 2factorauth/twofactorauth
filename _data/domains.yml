@@ -40,10 +40,11 @@ websites:
       software: Yes
       doc: http://domains.above.com/manual-two-step-authentication.html
 
-    - name: CloudFlare
+    - name: Cloudflare
       url: https://cloudflare.com
       img: cloudflare.png
       tfa: Yes
+      sms: Yes
       software: Yes
       doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
