@@ -184,6 +184,12 @@ providers:
 #    img: toopher.png
 #    otp: Yes
 
+  - name: U2F Zero
+    img: u2fzero.png
+    u2f: Yes
+    otp: No
+    url: https://www.u2fzero.com/
+
   - name: VASCO Data Security
     img: vasco.png
     u2f: Yes
