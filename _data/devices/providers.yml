@@ -176,6 +176,7 @@ providers:
   - name: TREZOR
     url: https://www.trezor.io
     img: trezor.png
+    hardware: Yes
     u2f: Yes
 
 #  - name: Token2
