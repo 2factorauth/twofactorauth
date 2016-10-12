@@ -58,7 +58,7 @@ websites:
       tfa: No
       twitter: Azendoo
 
-    - name: Bugzilla@Mozilla		
+    - name: Bugzilla@Mozilla
       url: https://bugzilla.mozilla.org
       img: bugzilla.png
       tfa: Yes
@@ -248,6 +248,14 @@ websites:
       software: Yes
       doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
 
+    - name: Pastebin
+      url: http://pastebin.com
+      img: pastebin.png
+      tfa: No
+      twitter: pastebin
+      facebook: pastebin 
+      email_address: admin@pastebin.com
+
     - name: Patreon
       url: https://www.patreon.com/
       img: patreon.png
@@ -285,7 +293,7 @@ websites:
       img: promoter.png
       tfa: No
       twitter: Promoter_io
-      
+
     - name: Repairshopr
       url: https://www.repairshopr.com/
       img: repairshopr.png
@@ -322,7 +330,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.toodledo.com/info/help.php#168
-      
+
     - name: Total Connect Comfort
       url: https://www.mytotalconnectcomfort.com
       twitter: Honeywell_Home
