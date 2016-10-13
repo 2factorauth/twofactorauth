@@ -20,6 +20,13 @@ websites:
       twitter: 10dollar_ca
       tfa: No
 
+    - name: 123 Reg
+      url: https://www.123-reg.co.uk
+      img: 123reg.png
+      tfa: No
+      twitter: 123reg
+      facebook: 123regfans
+
     - name: 1and1
       url: https://www.1and1.com/
       img: 1and1.png
@@ -32,12 +39,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://domains.above.com/manual-two-step-authentication.html
-
-    - name: Badger
-      url: http://badger.com
-      img: badger.png
-      tfa: No
-      twitter: badger
 
     - name: CloudFlare
       url: https://cloudflare.com
@@ -373,6 +374,7 @@ websites:
       url: https://www.pairnic.com/
       img: pairnic.png
       tfa: Yes
+      software: Yes
       sms: Yes
       doc: https://www.pairnic.com/faq_security.html
 
