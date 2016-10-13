@@ -279,6 +279,13 @@ websites:
       software: Yes
       doc: https://rollbar.com/docs/two-factor-authentication/
 
+    - name: RubyGems.org
+      url: https://rubygems.org
+      img: rubygems.png
+      tfa: No
+      twitter: rubygems
+      email_address: security@rubygems.org
+
     - name: Semaphore
       url: https://semaphoreci.com
       img: semaphore.png
@@ -361,10 +368,3 @@ websites:
       twitter: zapier
       img: zapier.png
       tfa: No
-
-    - name: RubyGems.org
-      url: https://rubygems.org
-      img: rubygems.png
-      tfa: No
-      twitter: rubygems
-      email_address: security@rubygems.org
