@@ -163,6 +163,13 @@ websites:
       sms: Yes
       doc: http://www.infobip.com/messaging/enterprise/2_factor_authentication/
 
+    - name: JetBrains
+      url: https://jetbrains.com
+      img: jetbrains.png
+      tfa: No
+      twitter: jetbrains
+      facebook: JetBrains
+
     - name: Jidoteki
       url: https://jidoteki.com
       img: jidoteki.png
@@ -271,6 +278,21 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://rollbar.com/docs/two-factor-authentication/
+
+    - name: RubyGems.org
+      url: https://rubygems.org
+      img: rubygems.png
+      tfa: No
+      twitter: rubygems
+      email_address: security@rubygems.org
+
+    - name: Sauce Labs
+      url: https://saucelabs.com
+      img: saucelabs.png
+      tfa: No
+      twitter: saucelabs
+      facebook: saucelabs
+      email_address: support@saucelabs.com
 
     - name: Semaphore
       url: https://semaphoreci.com
