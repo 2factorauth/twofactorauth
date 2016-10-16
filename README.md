@@ -2,7 +2,7 @@ TwoFactorAuth.org
 =================
 
 [![Build Status](https://travis-ci.org/2factorauth/twofactorauth.svg)](https://travis-ci.org/2factorauth/twofactorauth)
-[![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
+[![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
 [![Gitter](https://img.shields.io/gitter/room/2factorauth/twofactorauth.svg)](https://gitter.im/2factorauth/twofactorauth)
 [![Twitter](https://img.shields.io/badge/Twitter-@2faorg-blue.svg)](https://twitter.com/2faorg)
 
@@ -23,7 +23,7 @@ If you'd like to contribute, read the entire guidelines here in
 
 ## Running Locally
 
-TwoFactorAuth.org is built on [Jekyll](http://jekyllrb.com/). In order to run Jekyll, it is necessary to install Ruby with RubyGems.
+TwoFactorAuth.org is built on [Jekyll](https://jekyllrb.com/). In order to run Jekyll, it is necessary to install Ruby with RubyGems.
 Once Ruby and RubyGems are installed and available from the command line, TwoFactorAuth can be setup using the following commands.
 
 ```
