@@ -391,6 +391,17 @@ websites:
       tfa: No
       twitter: WageWorksCares
 
+    - name: Watchman Monitoring
+      url: https://www.watchmanmonitoring.com
+      img: watchmanmonitoring.png
+      tfa: Yes
+      hardware: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.watchmanmonitoring.com/two-factor-authentication
+      exceptions:
+          text: "Hardware or SMS available via SAML or Google Authentication."
+
     - name: Webmin
       url: http://www.webmin.com/
       img: webmin.png
