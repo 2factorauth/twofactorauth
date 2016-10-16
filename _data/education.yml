@@ -87,7 +87,14 @@ websites:
       tfa: No
       exceptions:
           text: "Illinois Tech uses Google Apps for Eductation for their email; so they could very easily add tfa to their email, but at the time of this commit, they have it disabled and do not plan to implement it any time soon."
-       
+
+    - name: ISACA
+      url: https://www.isaca.org
+      img: isaca.png
+      tfa: No
+      twitter: ISACANews
+      facebook: ISACAHQ
+
     - name: Montclair State University
       url: https://www.montclair.edu/employee-services/
       twitter: montclairstateu
