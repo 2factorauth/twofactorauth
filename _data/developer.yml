@@ -22,6 +22,13 @@ websites:
       software: Yes
       doc: https://www.algolia.com/doc/security/best-security-practices#two-factor-authentication
 
+    - name: AppVeyor
+      url: https://www.appveyor.com
+      img: appveyor.png
+      tfa: No
+      twitter: appveyor
+      email_address: team@appveyor.com
+
     - name: aTech Media
       url: https://atechmedia.com
       img: atechmedia.png
