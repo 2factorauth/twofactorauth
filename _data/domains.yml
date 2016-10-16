@@ -173,10 +173,9 @@ websites:
 
     - name: FreeDNS
       url: https://freedns.afraid.org/
+      email_address: dnsadmin@afraid.org
       img: freedns.png
-      tfa: Yes
-      email: Yes
-      doc: 
+      tfa: No
 
     - name: Gandi
       url: https://gandi.net
