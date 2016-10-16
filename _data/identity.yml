@@ -1,4 +1,12 @@
 websites:
+    - name: 1Password
+      url: https://1password.com/
+      img: 1password.png
+      tfa: No
+      email_address: support@1password.com
+      facebook: 1Password
+      twitter: 1Password
+
     - name: Bitium
       url: https://www.bitium.com
       img: bitium.png
@@ -46,6 +54,14 @@ websites:
       img: docusign.png
       tfa: No
       twitter: DocuSign
+
+    - name: ID.me
+      url: https://www.id.me/
+      img: idme.png
+      tfa: No
+      twitter: IDme
+      facebook: IDmeInc
+      email_address: help@id.me
 
     - name: Keeper
       url: https://keepersecurity.com/
@@ -140,3 +156,13 @@ websites:
       exceptions:
           text: "2FA is only available on paid plans."
       doc: http://www.securesafe.com/en/faq/security.html
+
+    - name: True Key
+      url: https://www.truekey.com
+      img: truekey.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://help.truekey.com/hc/en-us/articles/218580447-How-can-I-add-additional-factors-

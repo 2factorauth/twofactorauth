@@ -49,6 +49,13 @@ websites:
       twitter: CloudShards
       tfa: No
 
+    - name: Cloudways
+      url: https://www.cloudways.com/
+      img: cloudways.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.cloudways.com/enabling-two-factor-authentication-for-your-cloudways-account/
+
     - name: cyon
       url: https://www.cyon.ch
       img: cyon.png
@@ -155,6 +162,7 @@ websites:
       twitter: mittwald
       img: mittwald.png
       tfa: No
+      lang: de
 
     - name: NearlyFreeSpeech.NET
       url: https://www.nearlyfreespeech.net/
@@ -276,6 +284,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://docs.webfaction.com/user-guide/control_panel.html#two-step-login
+
+    - name: Weebly
+      url: https://www.weebly.com
+      img: weebly.png
+      tfa: No
+      twitter: weebly
+      facebook: weebly
 
     - name: WP Engine
       url: https://wpengine.com/
