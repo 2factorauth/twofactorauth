@@ -183,6 +183,28 @@ input[type=search] {
       padding: 2em;
     }
 
+    .main {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .name {
+          flex-grow: 2;
+          margin: 0 5px;
+        }
+      }
+
+      .button-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
     .button {
       padding: 1em;
       width: 100%;
