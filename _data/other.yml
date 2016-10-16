@@ -400,7 +400,7 @@ websites:
       software: Yes
       doc: https://www.watchmanmonitoring.com/two-factor-authentication
       exceptions:
-          text: "Hardware or SMS available via SAML or Google Authentication."
+          text: 'Two factor authentication unavailable for "End User" access, which is read-only.'
 
     - name: Webmin
       url: http://www.webmin.com/
