@@ -143,6 +143,16 @@ websites:
       twitter: PowerStreamNews
       tfa: No
 
+    - name: Project Fi
+      url: https://fi.google.com
+      img: projectfi.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+
     - name: RCN
       url: https://www.rcn.com/
       img: rcn.png
@@ -244,6 +254,12 @@ websites:
       img: virginmobile.png
       tfa: No
       twitter: virgin
+
+    - name: Vodafone (UK)
+      url: https://www.vodafone.co.uk
+      img: vodafone.png
+      tfa: Yes
+      sms: Yes
 
     - name: VoIP.ms
       url: https://voip.ms/
