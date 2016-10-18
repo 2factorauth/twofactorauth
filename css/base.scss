@@ -183,6 +183,40 @@ input[type=search] {
       padding: 2em;
     }
 
+    .main {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+      .title {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-align: center;
+        align-items: center;
+
+        .name {
+          -webkit-box-flex: 2;
+          -ms-flex-positive: 2;
+          flex-grow: 2;
+          margin: 0 5px;
+        }
+      }
+
+      .button-group {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
     .button {
       padding: 1em;
       width: 100%;
@@ -212,7 +246,7 @@ input[type=search] {
 }
 
 td img.icon,
-.left img {
+.title img {
   -webkit-box-shadow: 0 0 0 .1em rgba(0, 0, 0, .1) inset;
   box-shadow: 0 0 0 .1em rgba(0, 0, 0, .1) inset;
   background-color: white;
