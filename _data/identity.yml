@@ -1,4 +1,12 @@
 websites:
+    - name: 1Password
+      url: https://1password.com/
+      img: 1password.png
+      tfa: No
+      email_address: support@1password.com
+      facebook: 1Password
+      twitter: 1Password
+
     - name: Bitium
       url: https://www.bitium.com
       img: bitium.png
@@ -46,6 +54,14 @@ websites:
       img: docusign.png
       tfa: No
       twitter: DocuSign
+
+    - name: ID.me
+      url: https://www.id.me/
+      img: idme.png
+      tfa: No
+      twitter: IDme
+      facebook: IDmeInc
+      email_address: help@id.me
 
     - name: Keeper
       url: https://keepersecurity.com/
