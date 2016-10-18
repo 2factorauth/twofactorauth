@@ -137,7 +137,7 @@ websites:
       software: Yes
       doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
       exceptions:
-            text: "Two-factor authentication is available only when logging in using Microsoft Account, not Skype's stand-alone account."
+            text: "Two-factor authentication is available only when logging in using a Microsoft account. If you have setup your account using a Skype password, 2FA through Microsoft is essentially useless."
 
     - name: Slack
       url: https://slack.com/
@@ -161,7 +161,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://support.sparkpost.com/customer/portal/articles/1948449
-          
+
     - name: Stackfield
       url: https://www.stackfield.com/
       img: stackfield.png
