@@ -58,8 +58,12 @@ websites:
     - name: Gravatar
       url: http://gravatar.com
       img: gravatar.png
-      tfa: No
-      twitter: gravatar
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      exceptions:
+          text: "SMS-capable phone required."
+      doc: https://en.support.wordpress.com/security/two-step-authentication/
 
     - name: ID.me
       url: https://www.id.me/
