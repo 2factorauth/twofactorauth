@@ -27,7 +27,7 @@ websites:
       facebook: americafirstfb
       img: americafirstcu.png
       tfa: No
- 
+
     - name: American Express
       url: https://www.americanexpress.com/
       twitter: AmericanExpress
@@ -218,6 +218,15 @@ websites:
       facebook: Deutsche.Kreditbank
       lang: de
 
+    - name: Digital Federal Credit Union
+      url: https://www.dcu.org
+      img: dcu.png
+      tfa: Yes
+      phone: Yes
+      sms: Yes
+      email: Yes
+      doc: https://www.dcu.org/online-banking/online-banking-enhancements.html
+
     - name: Discover
       url: https://www.discover.com/
       img: discover.png
@@ -255,6 +264,12 @@ websites:
       facebook: FifthThirdBank
       img: fifththird.png
       tfa: No
+
+    - name: Final
+      url: https://getfinal.com/
+      img: final.png
+      tfa: Yes
+      sms: Yes
 
     - name: First Direct
       url: http://www1.firstdirect.com/
@@ -468,7 +483,7 @@ websites:
 
     - name: RBC Royal Bank
       url: http://www.rbcroyalbank.com
-      twitter: AskRBC
+      twitter: RBC_Canada
       facebook: rbc
       img: rbc.png
       tfa: No
@@ -611,6 +626,13 @@ websites:
       img: triodosbank.png
       tfa: No
       lang: de
+
+    - name: TSB Bank
+      url: http://www.tsb.co.uk
+      twitter: TSB
+      facebook: TSBbankUK
+      img: tsb.png
+      tfa: No
 
     - name: Umpqua Bank
       url: https://www.umpquabank.com/
