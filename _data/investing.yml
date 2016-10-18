@@ -15,7 +15,9 @@ websites:
       url: https://www.schwab.com/
       img: charlesschwab.png
       tfa: Yes
+      software: Yes
       hardware: Yes
+      doc: /notes/schwab/
 
     - name: COL Financial
       url: https://www.colfinancial.com
@@ -107,6 +109,12 @@ websites:
       phone: Yes
       doc: https://www.personalcapital.com/safety-and-security
 
+    - name: Raizers
+      url: https://www.raizers.com
+      img: raizers.png
+      tfa: No
+      twitter: Raizers
+
     - name: RBC Direct Investing
       url: http://www.rbcdirectinvesting.com
       twitter: RBC
@@ -116,8 +124,9 @@ websites:
     - name: Robinhood
       url: https://www.robinhood.com/
       img: robinhood.png
-      tfa: No
-      twitter: RobinhoodApp
+      tfa: Yes
+      sms: Yes
+      doc: https://support.robinhood.com/hc/en-us/articles/211546986-Two-Factor-Authentication
 
     - name: Scottrade
       url: https://www.scottrade.com/
@@ -167,6 +176,8 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://personal.vanguard.com/us/insights/article/Account-security-092015
+      exceptions:
+          text: "TFA is only available for Personal Investor accounts"
 
     - name: Wealthfront
       url: https://www.wealthfront.com/

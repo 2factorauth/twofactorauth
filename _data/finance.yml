@@ -41,6 +41,13 @@ websites:
       twitter: geico_service
       tfa: No
 
+    - name: Gusto
+      url: https://www.gusto.com
+      img: gusto.png
+      tfa: Yes
+      sms: Yes
+      doc: https://support.gusto.com/hc/en-us/articles/210838787-Two-Step-Authentication
+
     - name: HelloWallet
       url: https://www.hellowallet.com
       twitter: HelloWallet
@@ -116,6 +123,12 @@ websites:
       sms: Yes
       phone: Yes
 
+    - name: Paytrust
+      url: http://paytrust.quicken.com
+      img: paytrust.png
+      tfa: Yes
+      phone: Yes
+
     - name: Pocketsmith
       url: https://www.pocketsmith.com
       img: pocketsmith.png
@@ -170,6 +183,13 @@ websites:
       sms: Yes
       doc: https://ripple.com/knowledge_center/using-two-factor-authentication-2fa/
 
+    - name: Santander UK
+      url: http://www.santander.co.uk
+      img: santander.png
+      tfa: Yes
+      sms: Yes
+      doc: http://www.santander.co.uk/uk/help-support/security-centre
+
     - name: Shoeboxed
       url: https://www.shoeboxed.com/
       twitter: Shoeboxed
@@ -219,10 +239,3 @@ websites:
       twitter: ynab
       img: ynab.png
       tfa: no
-
-    - name: ZenPayroll
-      url: https://www.zenpayroll.com
-      img: zenpayroll.png
-      tfa: Yes
-      sms: Yes
-      doc: http://help.zenpayroll.com/customer/portal/articles/969452-two-step-authentication

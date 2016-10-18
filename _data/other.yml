@@ -23,6 +23,20 @@ websites:
       tfa: No
       twitter: airbnb
 
+    - name: AngelList
+      url: https://angel.co
+      img: angellist.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+
+    - name: Any.do
+      url: https://web.any.do/
+      img: anydo.png
+      tfa: No
+      twitter: AnyDO
+      facebook: Any.do
+
     - name: Asana
       url: https://www.asana.com
       img: asana.png
@@ -58,7 +72,7 @@ websites:
       tfa: No
       twitter: Azendoo
 
-    - name: Bugzilla@Mozilla		
+    - name: Bugzilla@Mozilla
       url: https://bugzilla.mozilla.org
       img: bugzilla.png
       tfa: Yes
@@ -70,6 +84,12 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://kb.builtwith.com/account-management/how-to-enable-2fa-on-builtwith/
+
+    - name: Canada Revenue Agency
+      url: http://www.cra-arc.gc.ca
+      img: canadarevenueagency.png
+      tfa: No
+      twitter: canrevagency
 
     - name: Cisco Meraki
       url: https://meraki.cisco.com/
@@ -242,6 +262,14 @@ websites:
       software: Yes
       doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
 
+    - name: Pastebin
+      url: http://pastebin.com
+      img: pastebin.png
+      tfa: No
+      twitter: pastebin
+      facebook: pastebin
+      email_address: admin@pastebin.com
+
     - name: Patreon
       url: https://www.patreon.com/
       img: patreon.png
@@ -262,6 +290,13 @@ websites:
       img: pinboard.png
       tfa: No
 
+    - name: Planning Center Online
+      url: https://planning.center/
+      twitter: planningcenter
+      facebook: PlanningCenter
+      img: planningcenter.png
+      tfa: No
+
     - name: Pocket
       url: https://www.getpocket.com
       twitter: Pocket
@@ -279,6 +314,16 @@ websites:
       img: promoter.png
       tfa: No
       twitter: Promoter_io
+
+    - name: Repairshopr
+      url: https://www.repairshopr.com/
+      img: repairshopr.png
+      tfa: Yes
+      doc: https://feedback.repairshopr.com/knowledgebase/articles/928266-two-factor-authentication-google-authenticator
+      sms: Yes
+      software: Yes
+      exceptions:
+          text: "SMS only available as a backup to Google Authenticator."
 
     - name: Skatteverket
       url: https://www.skatteverket.se
@@ -300,6 +345,13 @@ websites:
       img: todoist.png
       tfa: No
 
+    - name: Toodledo
+      url: https://www.toodledo.com
+      img: toodledo.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.toodledo.com/info/help.php#168
+
     - name: Total Connect Comfort
       url: https://www.mytotalconnectcomfort.com
       twitter: Honeywell_Home
@@ -312,6 +364,13 @@ websites:
       tfa: Yes
       sms: Yes
       doc: http://help.trello.com/article/993-enabling-two-factor-authentication-for-your-trello-account
+
+    - name: Upwork
+      url: https://www.upwork.com
+      img: upwork.png
+      tfa: No
+      twitter: UpworkHelp
+      facebook: upwork
 
     - name: US Internal Revenue Service
       url: http://www.irs.gov/Individuals/Get-Transcript
