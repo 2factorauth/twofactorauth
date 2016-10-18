@@ -9,4 +9,5 @@ gem 'kramdown', '~> 1.10.0'
 group :test do
   gem 'rake'
   gem 'fastimage'
+  gem 'rubocop'
 end

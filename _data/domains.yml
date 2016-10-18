@@ -40,12 +40,6 @@ websites:
       software: Yes
       doc: http://domains.above.com/manual-two-step-authentication.html
 
-    - name: Badger
-      url: http://badger.com
-      img: badger.png
-      tfa: No
-      twitter: badger
-
     - name: CloudFlare
       url: https://cloudflare.com
       img: cloudflare.png
@@ -389,6 +383,13 @@ websites:
       twitter: pointdns
       img: pointdns.png
       tfa: No
+
+    - name: porkbun
+      url: https://porkbun.com
+      img: porkbunBuns.png
+      tfa: Yes
+      software: Yes
+      doc: https://porkbun.com/products/two_factor_authentication
 
     - name: Register4Less
       url: https://register4less.com/

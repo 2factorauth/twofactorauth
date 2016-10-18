@@ -123,6 +123,12 @@ websites:
       sms: Yes
       phone: Yes
 
+    - name: Paytrust
+      url: http://paytrust.quicken.com
+      img: paytrust.png
+      tfa: Yes
+      phone: Yes
+
     - name: Pocketsmith
       url: https://www.pocketsmith.com
       img: pocketsmith.png
@@ -176,6 +182,13 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://ripple.com/knowledge_center/using-two-factor-authentication-2fa/
+
+    - name: Santander UK
+      url: http://www.santander.co.uk
+      img: santander.png
+      tfa: Yes
+      sms: Yes
+      doc: http://www.santander.co.uk/uk/help-support/security-centre
 
     - name: Shoeboxed
       url: https://www.shoeboxed.com/
