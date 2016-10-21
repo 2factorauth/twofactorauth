@@ -146,7 +146,13 @@ websites:
       url: http://www.cibc.ca
       twitter: cibc
       img: cibc.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      software: No
+      phone: Yes
+      email: Yes
+      hardware: No
+      doc: https://www.cibc.com/ca/legal/two-step-verification.html
 
     - name: Citibank
       url: https://online.citibank.com/US/Welcome.c
