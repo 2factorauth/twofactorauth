@@ -173,6 +173,12 @@ providers:
 #    img: transakt.png
 #    otp: Yes
 
+  - name: TREZOR
+    url: https://www.trezor.io
+    img: trezor.png
+    hardware: Yes
+    u2f: Yes
+
 #  - name: Token2
 #    url: https://token2.com
 #    img: token2.png
