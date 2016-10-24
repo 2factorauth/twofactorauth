@@ -319,9 +319,10 @@ websites:
 
     - name: SourceForge
       url: http://sourceforge.net/
-      twitter: sourceforge
       img: sourceforge.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://sourceforge.net/blog/introducing-multifactor-authentication-on-sourceforge/
 
     - name: Status.io
       url: https://status.io/
