@@ -24,7 +24,7 @@ websites:
       twitter: AFCU
       img: americafirstcu.png
       tfa: No
- 
+
     - name: American Express
       url: https://www.americanexpress.com/
       twitter: AmericanExpress
@@ -107,6 +107,14 @@ websites:
       img: becu.png
       tfa: No
 
+    - name: BofI Federal Bank
+      url: https://www.bofifederalbank.com/
+      twitter: BofIFederalBank
+      facebook: BofiFederalBank
+      email_address: customerservice@bofifederalbank.com
+      img: bofifederalbank.png
+      tfa: No
+
     - name: Capital One
       url: https://www.capitalone.com/
       twitter: CapitalOne
@@ -179,12 +187,29 @@ websites:
       tfa: No
       twitter: cua_connect
 
+    - name: Desjardins
+      url: https://www.desjardins.com/
+      twitter: mvtdesjardins
+      facebook: desjardins
+      img: desjardins.png
+      tfa: No
+      lang: fr
+
     - name: Deutsche Kreditbank (DKB)
       url: https://www.dkb.de/
       img: dkb.png
       tfa: No
       facebook: Deutsche.Kreditbank
       lang: de
+
+    - name: Digital Federal Credit Union
+      url: https://www.dcu.org
+      img: dcu.png
+      tfa: Yes
+      phone: Yes
+      sms: Yes
+      email: Yes
+      doc: https://www.dcu.org/online-banking/online-banking-enhancements.html
 
     - name: Discover
       url: https://www.discover.com/
@@ -221,6 +246,12 @@ websites:
       twitter: fifththird
       img: fifththird.png
       tfa: No
+
+    - name: Final
+      url: https://getfinal.com/
+      img: final.png
+      tfa: Yes
+      sms: Yes
 
     - name: First Direct
       url: http://www1.firstdirect.com/
@@ -547,6 +578,13 @@ websites:
       url: https://www.triodos.de
       twitter: triodosde
       img: triodosbank.png
+      tfa: No
+
+    - name: TSB Bank
+      url: http://www.tsb.co.uk
+      twitter: TSB
+      facebook: TSBbankUK
+      img: tsb.png
       tfa: No
 
     - name: Umpqua Bank

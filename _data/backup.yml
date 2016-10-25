@@ -4,7 +4,7 @@ websites:
     tfa: Yes
     software: Yes
     img: aerofs.png
-    doc: https://blog.aerofs.com/two-factor-authentication-for-hybrid-and-private-cloud/
+    doc: https://www.aerofs.com/blog/two-factor-authentication-for-hybrid-and-private-cloud-md/
 
   - name: Apple iCloud
     url: https://www.icloud.com
@@ -13,8 +13,8 @@ websites:
     sms: Yes
     software: Yes
     exceptions:
-        text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
-    doc: http://support.apple.com/kb/ht5570
+        text: "See https://support.apple.com/HT202656 for a list of supported SMS carriers."
+    doc: https://support.apple.com/HT204152
 
   - name: Backblaze
     url: https://www.backblaze.com
@@ -41,12 +41,14 @@ websites:
     twitter: cloudapp
     img: cloudapp.png
     tfa: No
+    facebook: getcloudapp
 
   - name: CrashPlan
-    url: http://www.crashplan.com
+    url: https://www.crashplan.com
     twitter: crashplan
     img: crashplan.png
     tfa: No
+    facebook: CrashPlan
 
   - name: Dropbox
     url: https://www.dropbox.com
@@ -70,6 +72,7 @@ websites:
     twitter: FileThisCompany
     img: filethis.png
     tfa: No
+    facebook: FileThis
 
   - name: Frostbox
     url: http://frostbox.com
@@ -99,12 +102,14 @@ websites:
     twitter: IDriveBackup
     img: idrive.png
     tfa: No
+    facebook: IDriveBackup
 
   - name: JustCloud
     url: https://www.justcloud.com
     twitter: justcloudcom
     img: justcloud.png
     tfa: No
+    facebook: JustCloudStorage
 
   - name: Mega
     url: https://mega.co.nz/
@@ -148,12 +153,14 @@ websites:
     twitter: spideroak
     img: spideroak.png
     tfa: No
+    facebook: SpiderOak
 
   - name: SugarSync
     twitter: SugarSync
     url: https://www.sugarsync.com/
     img: sugarsync.png
     tfa: No
+    facebook: SugarSync
 
   - name: Sync
     url: https://sync.com
@@ -195,6 +202,7 @@ websites:
     img: xxlcloud.png
     tfa: No
     status: https://xxlcloud.com/en/blog/2factorauthentication
+    facebook: xxlcloud
 
   - name: Yandex.Disk
     url: https://disk.yandex.com

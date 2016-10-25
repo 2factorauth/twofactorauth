@@ -37,6 +37,7 @@ websites:
     - name: Disqus
       url: https://disqus.com
       twitter: disqus
+      facebook: disqus
       img: disqus.png
       tfa: No
 
@@ -49,12 +50,14 @@ websites:
     - name: Fleep
       url: https://fleep.io
       twitter: fleepio
+      facebook: fleepio
       img: fleep.png
       tfa: No
 
     - name: Flowdock
       url: https://www.flowdock.com
       twitter: flowdock
+      facebook: flowdock
       img: flowdock.png
       tfa: No
 
@@ -76,6 +79,7 @@ websites:
     - name: HipChat
       url: https://www.hipchat.com
       twitter: HipChat
+      facebook: HipChat
       img: hipchat.png
       tfa: No
 
@@ -88,8 +92,9 @@ websites:
       doc: http://kb.mailchimp.com/accounts/login/set-up-two-factor-authentication-with-sms
 
     - name: Mailgun
-      url: https://mailgun.com
+      url: http://mailgun.com
       twitter: Mail_Gun
+      facebook: mailgun
       img: mailgun.png
       tfa: No
 
@@ -108,9 +113,10 @@ websites:
       doc: https://peerio.zendesk.com/hc/en-us/articles/202933829-How-do-I-setup-two-factor-authentication-
 
     - name: Ryver
-      url: http://www.ryver.com/
+      url: https://ryver.com/
       img: ryver.png
       twitter: ryverapp
+      facebook: RyverApp
       tfa: No
 
     - name: Salesforce
@@ -144,7 +150,7 @@ websites:
       software: Yes
       doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
       exceptions:
-            text: "Two-factor authentication is available only when logging in using Microsoft Account, not Skype's stand-alone account."
+            text: "Two-factor authentication is available only when logging in using a Microsoft account. If you have setup your account using a Skype password, 2FA through Microsoft is essentially useless."
 
     - name: Slack
       url: https://slack.com/
@@ -168,7 +174,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://support.sparkpost.com/customer/portal/articles/1948449
-          
+
     - name: Stackfield
       url: https://www.stackfield.com/
       img: stackfield.png
@@ -187,17 +193,20 @@ websites:
     - name: ToutApp
       url: https://www1.toutapp.com/
       twitter: toutapp
+      facebook: toutapp
       img: toutapp.png
       tfa: No
 
     - name: WhatsApp
       url: https://www.whatsapp.com/
       twitter: whatsapp
+      facebook: WhatsApp
       img: whatsapp.png
       tfa: No
 
     - name: Yammer
-      url: https://yammer.com
+      url: https://www.yammer.com
       twitter: yammer
+      facebook: Yammer
       img: yammer.png
       tfa: No

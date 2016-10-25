@@ -16,7 +16,7 @@
     {% endif %}
     {% if website.status %}
     <div class="main progress">
-      <div class="left">
+      <div class="title">
         {% if website.img %}
         <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
         <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
@@ -24,13 +24,15 @@
         {% endif %}
         <a href="{{ website.url }}" class="name">{{ website.name }}</a>
         {% include exception.html website=website %}
-        <p>IN PROGRESS!</p>
 
         <a href="{{ website.status }}" target="_blank">
-          <i class="external url link large icon"></i> Current Status
+          <i class="external url link large icon"></i>
         </a>
       </div>
-      <div class="right">
+
+      <p>IN PROGRESS!</p>
+
+      <div>
         <a class="ui twitter mini button"
            href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
            target="_blank"><i class="twitter icon"></i> {{page.link_progress_mobile}}</a>
@@ -38,7 +40,7 @@
     </div>
     {% elsif website.tfa %}
     <div class="main positive">
-      <div class="left">
+      <div class="title">
         {% if website.img %}
         <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
         <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
@@ -46,39 +48,24 @@
         {% endif %}
         <a href="{{ website.url }}" class="name">{{ website.name }}</a>
         {% include exception.html website=website %}
-        <br>
-
-        {% if website.sms %}
-        <p>SMS is supported!</p>
-        {% endif %}
-
-        {% if website.phone %}
-        <p>Phone is supported!</p>
-        {% endif %}
-
-        {% if website.email %}
-        <p>Email is supported!</p>
-        {% endif %}
-
-        {% if website.hardware %}
-        <p>Hardware is supported!</p>
-        {% endif %}
-
-        {% if website.software %}
-        <p>Software is supported!</p>
-        {% endif %}
       </div>
+      <p>
+        Supported:
+        {% if website.sms %}SMS{% endif %}
+        {% if website.phone %}Phone{% endif %}
+        {% if website.email %}Email{% endif %}
+        {% if website.hardware %}Hardware{% endif %}
+        {% if website.software %}Software{% endif %}
+      </p>
       {% if website.doc %}
-      <div class="right">
-        <div class="button-group">
-          <a href="{{ website.doc }}" class="ui twitter mini button"><i class="large book icon"></i> DOCS</a>
-        </div>
+      <div class="button-group">
+        <a href="{{ website.doc }}" class="ui twitter mini button"><i class="large book icon"></i></a>
       </div>
       {% endif %}
     </div>
     {% else %}
     <div class="main negative">
-      <div class="left">
+      <div class="title">
         {% if website.img %}
         <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
         <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
@@ -86,15 +73,12 @@
         {% endif %}
         <a href="{{ website.url }}" class="name">{{ website.name }}</a>
         {% include exception.html website=website %}
-
-        <p>NO 2FA</p>
       </div>
-      <div class="right">
-        <div class="button-group">
-          {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link_mobile}}</a>{% endif %}
-          {% if website.facebook %} <a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i> FACEBOOK</a>{%endif%}
-          {% if website.email_address %} <a class="ui green mini button" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i>EMAIL THEM</a>{% endif %}
-        </div>
+      <p>2FA not supported</p>
+      <div class="button-group">
+        {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i></a>{% endif %}
+        {% if website.facebook %} <a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i></a>{%endif%}
+        {% if website.email_address %} <a class="ui green mini button" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i></a>{% endif %}
       </div>
     </div>
     {% endif %}
