@@ -436,6 +436,8 @@ websites:
       img: pncbank.png
       tfa: Yes
       sms: Yes
+      exceptions:
+          text: "While PNC does support SMS 2fa, they implemented it very poorly and it could be bypassed fairly easily by someone who knows what to look for."
 
     - name: Postbank
       url: https://www.postbank.com/
