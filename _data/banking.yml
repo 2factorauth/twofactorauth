@@ -1,7 +1,8 @@
 websites:
     - name: Actors Federal Credit Union
-      url: http://www.actorsfcu.com/
+      url: https://www.actorsfcu.com/
       twitter: ActorsFCU
+      facebook: ActorsFCU
       img: actorsfcu.png
       tfa: No
 
@@ -16,18 +17,21 @@ websites:
     - name: Altra Federal Credit Union
       url: https://www.altra.org/
       twitter: AltraCU
+      facebook: altra.org
       img: altrafcu.png
       tfa: No
 
     - name: America First Credit Union
       url: https://www.americafirst.com/
       twitter: AFCU
+      facebook: americafirstfb
       img: americafirstcu.png
       tfa: No
 
     - name: American Express
       url: https://www.americanexpress.com/
       twitter: AmericanExpress
+      facebook: AmericanExpressUS
       img: americanexpress.png
       tfa: No
 
@@ -41,6 +45,7 @@ websites:
     - name: Australia and New Zealand Banking Group
       url: https://www.anz.com/personal/
       twitter: ANZ_AU
+      facebook: ANZAustralia
       img: anz.png
       tfa: No
 
@@ -49,6 +54,8 @@ websites:
       img: mediolanum.png
       tfa: No
       twitter: BancaMediolanum
+      facebook: BancaMediolanum
+      lang: it
 
     - name: Bank Central Asia (BCA)
       url: http://www.bca.co.id/en/individual/individual.jsp
@@ -98,12 +105,14 @@ websites:
     - name: BMO Harris Bank
       url: https://www.bmoharris.com/
       twitter: BMOHarrisBank
+      facebook: BMOHarrisBank
       img: bmo.png
       tfa: No
 
     - name: Boeing Employee Credit Union
       url: https://www.becu.org/
       twitter: BECU
+      facebook: becu
       img: becu.png
       tfa: No
 
@@ -118,18 +127,21 @@ websites:
     - name: Capital One
       url: https://www.capitalone.com/
       twitter: CapitalOne
+      facebook: capitalone
       img: capitalone.png
       tfa: No
 
     - name: Capital One 360
       url: https://home.capitalone360.com/
       twitter: CapitalOne360
+      facebook: CapitalOne360
       img: capitalone360.png
       tfa: No
 
     - name: CDC Federal Credit Union
       url: https://www.cdcfcu.com
       twitter: CDCCreditUnion
+      facebook: CDCFederalCreditUnion
       img: cdcfcu.png
       tfa: No
 
@@ -143,14 +155,16 @@ websites:
       doc: /notes/chase/
 
     - name: CIBC
-      url: http://www.cibc.ca
+      url: https://www.cibc.ca
       twitter: cibc
+      facebook: CIBC
       img: cibc.png
       tfa: No
 
     - name: Citibank
-      url: https://online.citibank.com/US/Welcome.c
+      url: https://online.citi.com/
       twitter: Citibank
+      facebook: citibank
       img: citibank.png
       tfa: No
 
@@ -165,14 +179,17 @@ websites:
     - name: Citizens Bank
       url: https://www.citizensbank.com
       twitter: citizensbank
+      facebook: citizensbank
       img: citizensbank.png
       tfa: No
 
     - name: comdirect
       url: https://www.comdirect.de/
       twitter: comdirect
+      facebook: comdirect
       img: comdirect.png
       tfa: No
+      lang: de
 
     - name: Commonwealth Bank of Australia
       url: https://www.commbank.com.au/
@@ -186,6 +203,7 @@ websites:
       img: cua.png
       tfa: No
       twitter: cua_connect
+      facebook: CUA
 
     - name: Desjardins
       url: https://www.desjardins.com/
@@ -216,6 +234,7 @@ websites:
       img: discover.png
       tfa: no
       twitter: Discover
+      facebook: discover
 
     - name: DNB
       url: https://www.dnb.no/
@@ -244,6 +263,7 @@ websites:
     - name: Fifth Third Bank
       url: https://www.53.com/
       twitter: fifththird
+      facebook: FifthThirdBank
       img: fifththird.png
       tfa: No
 
@@ -281,12 +301,14 @@ websites:
     - name: GE Capital Bank
       url: https://www.gecapitalbank.com
       twitter: GECapital
+      facebook: GECapitalOfficial
       img: GECapitalBank.png
       tfa: No
 
     - name: Halifax
-      url: http://www.halifax.co.uk
+      url: https://www.halifax.co.uk
       twitter: AskHalifaxBank
+      facebook: halifax
       img: halifax.png
       tfa: No
 
@@ -309,6 +331,7 @@ websites:
     - name: Huntington National Bank
       url: https://www.huntington.com
       twitter: Huntington_Bank
+      facebook: HuntingtonBank
       img: huntingtonnationalbank.png
       tfa: No
 
@@ -329,12 +352,14 @@ websites:
     - name: LendingClub
       url: https://www.lendingclub.com/
       twitter: lendingclub
+      facebook: LendingClubTeam
       img: lendingclub.png
       tfa: No
 
     - name: Lloyds Bank
-      url: http://www.lloydsbank.com/
+      url: https://www.lloydsbank.com/
       twitter: AskLloydsBank
+      facebook: lloydsbank
       img: lloydsbank.png
       tfa: No
 
@@ -343,23 +368,27 @@ websites:
       img: mtbank.png
       tfa: No
       twitter: MandT_Help
+      facebook: MandTBank
 
     - name: MBNA Canada
-      url: http://www.mbna.ca
+      url: https://www.mbna.ca
       img: mbnacanada.png
       tfa: No
       twitter: mbna_canada
+      facebook: MBNACanada
 
     - name: Meridian Credit Union
       url: https://www.meridiancu.ca
       img: meridian.png
       twitter: meridiancu
+      facebook: MeridianCreditUnion
       tfa: No
 
     - name: N26
       url: https://n26.com
       img: n26.png
       twitter: number26
+      facebook: N26
       tfa: No
 
     - name: Nationwide Building Society
@@ -381,6 +410,7 @@ websites:
       img: navyfederal.png
       tfa: No
       twitter: NavyFederal
+      facebook: NavyFederal
 
     - name: Nordea Sverige
       url: https://www.nordea.se/
@@ -428,20 +458,24 @@ websites:
     - name: PenFed
       url: https://www.penfed.org/
       twitter: PenFed
+      facebook: PenFed
       img: penfed.png
       tfa: No
 
     - name: PNC Bank
       url: https://www.pnc.com/
       twitter: pncnews
+      facebook: pncbank
       img: pncbank.png
       tfa: No
 
     - name: Postbank
-      url: https://www.postbank.com/
+      url: https://www.postbank.de/
       twitter: postbank
+      facebook: postbank
       img: postbank.png
       tfa: No
+      lang: de
 
     - name: Raiffeisen Bank CZ
       url: http://www.rb.cz/
@@ -453,24 +487,28 @@ websites:
     - name: RBC Royal Bank
       url: http://www.rbcroyalbank.com
       twitter: RBC_Canada
+      facebook: rbc
       img: rbc.png
       tfa: No
 
     - name: Regions Bank
       url: https://www.regions.com
       twitter: askRegions
+      facebook: RegionsBank
       img: RegionsBank.png
       tfa: No
 
     - name: San Diego County Credit Union
       url: https://www.sdccu.com
       twitter: sdccu
+      facebook: SDCCU
       img: sdccu.png
       tfa: No
 
     - name: San Francisco Fire Credit Union
       url: https://www.sffirecu.org
       twitter: SFFireCU
+      facebook: sffirecu
       img: sffirecu.png
       tfa: No
       status: https://twitter.com/sffirecu/status/577532435228991488
@@ -478,12 +516,14 @@ websites:
     - name: Santa Clara County Federal Credit Union
       url: https://www.sccfcu.org/
       twitter: SCCFCU
+      facebook: SCCFCU
       img: sccfcu.png
       tfa: No
 
     - name: SchoolsFirst FCU
       url: https://www.schoolsfirstfcu.org/
       twitter: SchoolsFirstFCU
+      facebook: SchoolsFirstFCU
       img: schoolsfirst.png
       tfa: No
 
@@ -492,6 +532,7 @@ websites:
       img: scotiabank.png
       tfa: No
       twitter: ScotiabankHelps
+      facebook: scotiabank
 
     - name: SEB
       url: http://www.seb.se/pow/default.asp
@@ -504,10 +545,12 @@ websites:
       url: https://www.servicecu.org/
       img: service_cu.png
       tfa: No
+      facebook: ServiceCreditUnion
 
     - name: Simple
       url: https://www.simple.com/
       twitter: simple
+      facebook: simple
       img: simple.png
       tfa: No
 
@@ -531,6 +574,7 @@ websites:
     - name: SunTrust
       url: https://www.suntrust.com/
       twitter: SunTrust
+      facebook: suntrust
       img: suntrust.png
       tfa: No
 
@@ -543,8 +587,9 @@ websites:
       doc: https://hjalp.swedbank.se/logga-in/index.htm
 
     - name: Tangerine
-      url: http://www.tangerine.ca/
+      url: https://www.tangerine.ca/
       twitter: tangerinebank
+      facebook: TangerineBank
       img: tangerine.png
       tfa: No
 
@@ -553,6 +598,8 @@ websites:
       img: targobank.png
       tfa: No
       twitter: TARGOBANK
+      facebook: targobank
+      lang: de
 
     - name: TBC Bank
       url: http://www.tbcbank.ge
@@ -565,6 +612,7 @@ websites:
     - name: TD Bank
       url: https://www.tdbank.com
       twitter: TDBank_US
+      facebook: TDBank
       img: tdbank.png
       tfa: No
 
@@ -577,8 +625,10 @@ websites:
     - name: Triodos Bank Deutschland
       url: https://www.triodos.de
       twitter: triodosde
+      facebook: triodos.de
       img: triodosbank.png
       tfa: No
+      lang: de
 
     - name: TSB Bank
       url: http://www.tsb.co.uk
@@ -590,18 +640,21 @@ websites:
     - name: Umpqua Bank
       url: https://www.umpquabank.com/
       twitter: askumpquabank
+      facebook: umpquabank
       img:  umpqua.png
       tfa: No
 
     - name: Union Bank
       url: https://www.unionbank.com/
       twitter: UnionBank
+      facebook: UnionBank
       img: unionbank.png
       tfa: No
 
     - name: US Bank
       url: https://www.usbank.com/
       twitter: usbank
+      facebook: usbank
       img: usbank.png
       tfa: No
 
@@ -626,6 +679,7 @@ websites:
     - name: VyStar Credit Union
       url: https://vystarcu.org/
       twitter: OfficialVyStar
+      facebook: VyStarCU
       img: vystar.png
       tfa: No
 
@@ -641,18 +695,21 @@ websites:
     - name: Wescom Credit Union
       url: https://www.wescom.org/
       twitter: Liz_Wescom
+      facebook: WescomCreditUnion
       img: wescom.png
       tfa: No
 
     - name: Zag Bank
       url: https://www.zagbank.ca/
       twitter: zagbank
+      facebook: zagbank
       img: zagbank.png
       tfa: No
 
     - name: ZenBanx
-      url: http://zenbanx.ca/
+      url: https://zenbanx.ca/
       twitter: ZenBanx
+      facebook: Zenbanx
       img: zenbanx.png
       tfa: No
 
