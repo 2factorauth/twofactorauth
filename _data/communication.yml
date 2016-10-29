@@ -22,9 +22,10 @@ websites:
 
     - name: Customer.io
       url: https://customer.io
-      twitter: customerio
       img: customerio.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://customer.io/docs/two-factor-auth.html
 
     - name: Discord
       url: https://discordapp.com/
