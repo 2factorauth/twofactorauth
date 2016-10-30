@@ -5,8 +5,6 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
-      exceptions:
-        text: "Currently U.S. only. International support coming soon."
       doc: https://help.aol.com/articles/2-factor-authentication-stronger-than-your-password-alone
 
     - name: FastMail
@@ -23,7 +21,7 @@ websites:
       img: freenet.png
       tfa: No
       facebook: freenet
-      
+
     - name: Gmail
       url: https://gmail.com
       img: gmail.png
@@ -52,6 +50,7 @@ websites:
     - name: Mail.com
       url: https://www.mail.com/
       twitter: maildotcom
+      facebook: mail.com
       img: maildotcom.png
       tfa: No
 
@@ -103,6 +102,7 @@ websites:
     - name: ProtonMail
       url: https://protonmail.com/
       twitter: ProtonMail
+      facebook: protonmail
       img: protonmail.png
       tfa: No
 
@@ -118,6 +118,14 @@ websites:
       img: runbox.png
       tfa: No
 
+    - name: T-Online
+      url: http://email.t-online.de
+      twitter: Telekom_hilft
+      facebook: tonline.de
+      img: tonline.png
+      lang: de
+      tfa: No
+
     - name: Thexyz
       url: https://www.thexyz.com/
       img: thexyz.png
@@ -129,6 +137,7 @@ websites:
     - name: Web.de
       url: https://web.de
       twitter: WEBDE
+      facebook: WEB.DE
       img: webde.png
       lang: de
       tfa: No

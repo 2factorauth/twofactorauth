@@ -23,6 +23,20 @@ websites:
       tfa: No
       twitter: airbnb
 
+    - name: AngelList
+      url: https://angel.co
+      img: angellist.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+
+    - name: Any.do
+      url: https://web.any.do/
+      img: anydo.png
+      tfa: No
+      twitter: AnyDO
+      facebook: Any.do
+
     - name: Asana
       url: https://www.asana.com
       img: asana.png
@@ -70,6 +84,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://kb.builtwith.com/account-management/how-to-enable-2fa-on-builtwith/
+
+    - name: CA Technologies
+      url: http://www.ca.com/
+      img: ca-technologies.png
+      tfa: No
+      twitter: CAinc
+      facebook: CATechnologies
 
     - name: Cisco Meraki
       url: https://meraki.cisco.com/
@@ -178,6 +199,13 @@ websites:
       img: hmrc.png
       tfa: No
 
+    - name: IEEE
+      url: https://www.ieee.org
+      img: ieee.png
+      tfa: No
+      twitter: IEEEorg
+      facebook: IEEE.org
+
     - name: IFTTT
       url: https://ifttt.com
       img: ifttt.png
@@ -220,6 +248,13 @@ websites:
       sms: Yes
       software: Yes
 
+    - name: Monster
+      url: https://www.monster.com
+      img: monster.png
+      tfa: No
+      twitter: Monster
+      facebook: monster
+
     - name: Nest
       url: https://nest.com
       twitter: nestsupport
@@ -242,6 +277,14 @@ websites:
       software: Yes
       doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
 
+    - name: Pastebin
+      url: http://pastebin.com
+      img: pastebin.png
+      tfa: No
+      twitter: pastebin
+      facebook: pastebin
+      email_address: admin@pastebin.com
+
     - name: Patreon
       url: https://www.patreon.com/
       img: patreon.png
@@ -260,6 +303,13 @@ websites:
       url: https://pinboard.in/
       twitter: Pinboard
       img: pinboard.png
+      tfa: No
+
+    - name: Planning Center Online
+      url: https://planning.center/
+      twitter: planningcenter
+      facebook: PlanningCenter
+      img: planningcenter.png
       tfa: No
 
     - name: Pocket
@@ -290,6 +340,13 @@ websites:
       exceptions:
           text: "SMS only available as a backup to Google Authenticator."
 
+    - name: Solar.web
+      url: https://www.solarweb.com
+      img: solarweb.png
+      tfa: No
+      twitter: FroniusUSASolar
+      facebook: FroniusUSASolarEnergy
+
     - name: StartJOIN
       url: https://www.startjoin.com/
       img: startjoin.png
@@ -301,6 +358,13 @@ websites:
       twitter: todoist
       img: todoist.png
       tfa: No
+
+    - name: Toodledo
+      url: https://www.toodledo.com
+      img: toodledo.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.toodledo.com/info/help.php#168
 
     - name: Total Connect Comfort
       url: https://www.mytotalconnectcomfort.com
