@@ -103,6 +103,14 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://privacy.com/faq
+      
+    - name: receivabl.es
+      url: https://www.receivabl.es
+      img: receivables.png
+      tfa: Yes
+      sms: Yes
+      exceptions:
+         text: "2FA protects customers during the payment process."
 
     - name: Skrill
       url: https://skrill.com/
