@@ -1,0 +1,33 @@
+websites:
+    - name: Canada Revenue Agency
+      url: http://www.cra-arc.gc.ca
+      img: canadarevenueagency.png
+      tfa: No
+      twitter: canrevagency
+      
+    - name: Healthcare.gov
+      url: https://healthcare.gov
+      twitter: HealthCareGov
+      img: healthcaregov.png
+      tfa: No
+
+    - name: Skatteverket
+      url: https://www.skatteverket.se
+      img: skatteverket.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.skatteverket.se/privat/sjalvservice/allaetjanster/omelegitimation.4.18e1b10334ebe8bc80004811.html
+
+    - name: US Internal Revenue Service
+      url: http://www.irs.gov/Individuals/Get-Transcript
+      twitter: IRSnews
+      img: usirs.png
+      tfa: No
+
+    - name: US Social Security Administration
+      url: https://www.ssa.gov
+      img: usssa.png
+      tfa: Yes
+      sms: Yes
+      doc: https://secure.ssa.gov/RIL/HpsView.do#question3
