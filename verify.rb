@@ -36,14 +36,11 @@ end
 # Test an individual YAML tag
 # rubocop:disable AbcSize,CyclomaticComplexity,MethodLength,PerceivedComplexity
 def test_tag(tag, required, tfa_state, website, only_true = false)
-  if website[tag].nil?
-    if website['tfa'] == tfa_state && required
-      error("#{website['name']}: The required YAML tag \'#{tag}\' tag is "\
-            'not present.')
-    end
+  if website[tag].nil? &&website['tfa'] == tfa_state && required
+    error("#{website['name']}: The required YAML tag \'#{tag}\' tag is "\
+          'not present.')
     return
-  end
-  if website['tfa'] != tfa_state
+  elsif website['tfa'] != tfa_state
     error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
           "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.")
   end
@@ -61,7 +58,7 @@ def test_tags(website)
   # rubocop:disable DoubleNegation
   if !!tfa != tfa
     error("#{website['name']}: The YAML tag \'{tfa}\' should be either "\
-          "\'Yes\' or \'No\'. (#{tfa})") 
+          "\'Yes\' or \'No\'. (#{tfa})")
   end
   # rubocop:endable DoubleNegation
 
@@ -81,7 +78,6 @@ def test_tags(website)
   # Test tags associated with TFA 'NO'
   @tfa_no_tags.each { |tfa_form| test_tag(tfa_form, false, false, website) }
 end
-# rubocop:enable MethodLength
 
 def test_img(img, name, imgs)
   # Exception if image file not found
@@ -99,12 +95,12 @@ def test_img(img, name, imgs)
 
   # Check image file size
   img_size = File.size(img)
-  unless img_size <= @img_max_size
+  if img_size > @img_max_size
     error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
             " currently #{img_size} bytes.")
   end
 end
-# rubocop:enable AbcSize,CyclomaticComplexity
+# rubocop:enable AbcSize,CyclomaticComplexity,MethodLength
 
 begin
 
