@@ -45,11 +45,10 @@ def test_tag(tag, required, tfa_state, website, only_true = false)
     error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
           "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.")
   end
-  if only_true && website[tag] != true
-    error("#{website['name']}: The YAML tag \'#{tag}\' should either have"\
-          " a value set to \'Yes\' or not be used at all. (Current value:"\
-          " \'#{website[tag]}\')")
-  end
+  return unless only_true && website[tag] != true
+  error("#{website['name']}: The YAML tag \'#{tag}\' should either have"\
+        " a value set to \'Yes\' or not be used at all. (Current value:"\
+        " \'#{website[tag]}\')")
 end
 # rubocop:enable PerceivedComplexity
 
