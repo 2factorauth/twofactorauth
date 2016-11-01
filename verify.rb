@@ -36,11 +36,12 @@ end
 # Test an individual YAML tag
 # rubocop:disable AbcSize,CyclomaticComplexity,MethodLength,PerceivedComplexity
 def test_tag(tag, required, tfa_state, website, only_true = false)
-  if website[tag].nil? &&website['tfa'] == tfa_state && required
+  if website[tag].nil? && website['tfa'] == tfa_state && required
     error("#{website['name']}: The required YAML tag \'#{tag}\' tag is "\
           'not present.')
-    return
-  elsif website['tfa'] != tfa_state
+  end
+  return if website[tag].nil?
+  if website['tfa'] != tfa_state
     error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
           "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.")
   end
