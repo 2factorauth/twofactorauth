@@ -96,10 +96,9 @@ def test_img(img, name, imgs)
 
   # Check image file size
   img_size = File.size(img)
-  if img_size > @img_max_size
-    error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
-            " currently #{img_size} bytes.")
-  end
+  return unless img_size > @img_max_size
+  error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
+          " currently #{img_size} bytes.")
 end
 # rubocop:enable AbcSize,CyclomaticComplexity,MethodLength
 
