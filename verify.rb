@@ -36,17 +36,19 @@ end
 # Test an individual YAML tag
 # rubocop:disable AbcSize,CyclomaticComplexity,MethodLength,PerceivedComplexity
 def test_tag(tag, required, tfa_state, website, only_true = false)
-  if website[tag].nil?
+  if website[tag].nil? && website['tfa'] == tfa_state && required
     error("#{website['name']}: The required YAML tag \'#{tag}\' tag is "\
-          'not present.') if website['tfa'] == tfa_state && required
-    return
+          'not present.')
   end
-  error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
-        "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.")\
-        if website['tfa'] != tfa_state
+  return if website[tag].nil?
+  if website['tfa'] != tfa_state
+    error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
+          "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.")
+  end
+  return unless only_true && website[tag] != true
   error("#{website['name']}: The YAML tag \'#{tag}\' should either have"\
         " a value set to \'Yes\' or not be used at all. (Current value:"\
-        " \'#{website[tag]}\')") if only_true && website[tag] != true
+        " \'#{website[tag]}\')")
 end
 # rubocop:enable PerceivedComplexity
 
@@ -54,8 +56,10 @@ end
 def test_tags(website)
   tfa = website['tfa']
   # rubocop:disable DoubleNegation
-  error("#{website['name']}: The YAML tag \'{tfa}\' should be either "\
-        "\'Yes\' or \'No\'. (#{tfa})") if !!tfa != tfa
+  if !!tfa != tfa
+    error("#{website['name']}: The YAML tag \'{tfa}\' should be either "\
+          "\'Yes\' or \'No\'. (#{tfa})")
+  end
   # rubocop:endable DoubleNegation
 
   # Test tags that are obligatory
@@ -74,7 +78,6 @@ def test_tags(website)
   # Test tags associated with TFA 'NO'
   @tfa_no_tags.each { |tfa_form| test_tag(tfa_form, false, false, website) }
 end
-# rubocop:enable MethodLength
 
 def test_img(img, name, imgs)
   # Exception if image file not found
@@ -92,10 +95,11 @@ def test_img(img, name, imgs)
 
   # Check image file size
   img_size = File.size(img)
+  return unless img_size > @img_max_size
   error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
-          " currently #{img_size} bytes.") unless img_size <= @img_max_size
+          " currently #{img_size} bytes.")
 end
-# rubocop:enable AbcSize,CyclomaticComplexity
+# rubocop:enable AbcSize,CyclomaticComplexity,MethodLength
 
 begin
 

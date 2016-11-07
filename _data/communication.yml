@@ -22,9 +22,10 @@ websites:
 
     - name: Customer.io
       url: https://customer.io
-      twitter: customerio
       img: customerio.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://customer.io/docs/two-factor-auth.html
 
     - name: Discord
       url: https://discordapp.com/
@@ -133,7 +134,8 @@ websites:
       img: sendgrid.png
       tfa: Yes
       sms: Yes
-      doc: https://sendgrid.com/docs/User_Guide/two_factor_authentication.html
+      software: Yes
+      doc: https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
 
     - name: Sendloop
       url: https://app.sendloop.com
