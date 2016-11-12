@@ -110,7 +110,7 @@ websites:
       tfa: Yes
       sms: Yes
       exceptions:
-         text: "2FA is only available for payment accounts, not recipient accounts which are authenticated via Xero."
+         text: "2FA is only available for payment accounts (Customers), not recipient accounts (Users) which are authenticated via Xero."
 
     - name: Skrill
       url: https://skrill.com/
