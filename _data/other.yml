@@ -399,6 +399,17 @@ websites:
       tfa: No
       twitter: WageWorksCares
 
+    - name: Watchman Monitoring
+      url: https://www.watchmanmonitoring.com
+      img: watchmanmonitoring.png
+      tfa: Yes
+      hardware: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.watchmanmonitoring.com/two-factor-authentication
+      exceptions:
+          text: 'Two factor authentication unavailable for "End User" access, which is read-only.'
+
     - name: Webmin
       url: http://www.webmin.com/
       img: webmin.png
