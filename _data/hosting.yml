@@ -28,8 +28,10 @@ websites:
     - name: Bluehost
       url: https://www.bluehost.com/
       img: bluehost.png
-      tfa: No
-      twitter: bluehostsupport
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://my.bluehost.com/cgi/help/two-factor-authentication
 
     - name: ChunkHost
       url: https://chunkhost.com
