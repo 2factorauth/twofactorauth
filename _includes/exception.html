@@ -19,7 +19,7 @@
 
     {% if include.website.exceptions.link %}
         <a class="popup exception"
-            href="/restrictions#{{ include.website.name | downcase | handle }}"
+            href="{{include.website.exceptions.link}}"
             data-position="bottom center"
             data-html="{{ html | strip_newlines }}">
             <i class="warning red link icon"></i>
