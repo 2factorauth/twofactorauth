@@ -48,16 +48,16 @@ websites:
       sms: Yes
       doc: https://support.gusto.com/hc/en-us/articles/210838787-Two-Step-Authentication
 
-    - name: HelloWallet
-      url: https://www.hellowallet.com
-      twitter: HelloWallet
-      img: hellowallet.png
-      tfa: No
-
     - name: Hargreaves Lansdown
       url: http://www.hl.co.uk
       twitter: HLInvest
       img: hargreaveslansdown.png
+      tfa: No
+
+    - name: HelloWallet
+      url: https://www.hellowallet.com
+      twitter: HelloWallet
+      img: hellowallet.png
       tfa: No
 
     - name: InEx Finance
