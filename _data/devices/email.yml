@@ -63,9 +63,10 @@ websites:
 
     - name: ProtonMail
       url: https://protonmail.ch/
-      twitter: ProtonMail
       img: protonmail.png
-      tfa: No
+      tfa: Yes
+      otp: Yes
+      doc: https://protonmail.com/support/knowledge-base/two-factor-authentication/
 
     - name: Riseup Mail
       url: https://mail.riseup.net
