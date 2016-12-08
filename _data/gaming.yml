@@ -7,15 +7,6 @@ websites:
       software: Yes
       doc: https://support.ankama.com/hc/en-us/categories/200093427-DOFUS-Security
 
-    - name: Blizzard
-      url: http://blizzard.com
-      img: blizzard.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://us.battle.net/en/security/
-
     - name: Black Desert Online
       url: https://www.blackdesertonline.com/
       img: bdo.png
@@ -28,6 +19,21 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://support.bladeandsoul.com/hc/en-us/articles/207578553-Supported-Two-Step-OTP-Authentication-Verification-Methods
+
+    - name: Blizzard
+      url: http://blizzard.com
+      img: blizzard.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://us.battle.net/en/security/
+
+    - name: Curse
+      url: https://www.curse.com/
+      img: curse.png
+      tfa: No
+      twitter: curseapp
 
     - name: Desura
       url: http://www.desura.com/
@@ -62,6 +68,13 @@ websites:
       exceptions:
           text: "This does not prevent people from logging into the game client by circumventing the launcher. That is a legacy issue that the developers have acknowledged."
 
+    - name: GameFly
+      url: https://www.gamefly.com/
+      twitter: GameFly
+      facebook: gamefly
+      img: gamefly.png
+      tfa: No
+
     - name: Garena Online
       url: http://garena.com
       img: garena.png
@@ -70,6 +83,13 @@ websites:
       doc: http://www.garena.com/account/
       exceptions:
           text: "A mobile phone and Garena account level 3 or higher is required for 2FA."
+
+    - name: GeForce (Nvidia)
+      url: http://www.geforce.com/
+      twitter: NVIDIAGeForce
+      facebook: NVIDIAGeForce
+      img: geforce.png
+      tfa: No
 
     - name: GOG.com
       url: https://www.gog.com
@@ -139,10 +159,18 @@ websites:
 
     - name: Playstation Network
       url: https://www.playstation.com/
-      twitter: AskPlayStation
       img: psn.png
-      tfa: No
-      status: http://www.polygon.com/2016/4/20/11470660/psn-two-factor-authentication-playstation-network
+      tfa: Yes
+      sms: Yes
+      doc: https://www.playstation.com/en-us/account-security/2-step-verification/
+
+    - name: Roberts Space Industries
+      url: https://robertsspaceindustries.com/
+      img: robertsspaceindustries.png
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://robertsspaceindustries.com/faq/two-step-authentication
 
     - name: Rockstar Games Social Club
       url: https://socialclub.rockstargames.com
@@ -175,6 +203,12 @@ websites:
       hardware: Yes
       doc: http://www.swtor.com/info/security-key
 
+    - name: Stardock Corporation
+      url: https://www.stardock.com/
+      twitter: Stardock
+      img: stardock.png
+      tfa: No
+
     - name: Steam
       url: http://store.steampowered.com/
       img: steam.png
@@ -196,8 +230,9 @@ websites:
       url: http://www.trionworlds.com/en/
       img: trionworlds.png
       tfa: Yes
+      email: Yes
       software: Yes
-      doc: https://store.trionworlds.com/account/profile/manage-game
+      doc: https://support.trionworlds.com/hc/en-us/articles/204183357-Adding-a-Mobile-Authenticator
 
     - name: Uplay
       url: https://uplay.ubi.com/

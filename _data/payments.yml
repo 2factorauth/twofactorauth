@@ -67,6 +67,13 @@ websites:
       tfa: No
       url: https://www.litle.com
 
+    - name: NETELLER
+      img: neteller.png
+      url: https://www.neteller.com/
+      tfa: Yes
+      software: Yes
+      doc: https://help.neteller.com/app/answers/detail/a_id/4670/kw/authentication
+
     - name: Payoneer
       url: http://www.payoneer.com/
       twitter: Payoneer
@@ -87,8 +94,9 @@ websites:
     - name: Paysafecard
       url: https://www.paysafecard.com/
       img: paysafecard.png
-      tfa: No
-      twitter: paysafecard
+      tfa: Yes
+      software: Yes
+      doc: https://www.paysafecard.com/en-au/lp-products/2-step-login/
 
     - name: Privacy
       url: https://privacy.com/
@@ -104,14 +112,6 @@ websites:
       hardware: Yes
       doc: https://help.skrill.com/pkb_sc_article_FAQ?id=kA0D0000000Ci3x&l=en_GB
 
-    - name: Stripe
-      img: stripe.png
-      url: https://www.stripe.com/
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
-
     - name: Square
       url: https://squareup.com
       img: squareup.png
@@ -121,12 +121,32 @@ websites:
         text: "Currently only US merchants, protects only Dashboard access"
       doc: https://squareup.com/help/us/en/article/5593-2-step-verification
 
+    - name: Square Cash
+      url: https://cash.me
+      img: square-cash.png
+      tfa: No
+      twitter: SquareCash
+
+    - name: Stripe
+      img: stripe.png
+      url: https://www.stripe.com/
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
+
     - name: Venmo
       url: https://venmo.com
       img: venmo.png
       tfa: Yes
       sms: Yes
       doc: https://help.venmo.com/hc/en-us/articles/217532397--Confirm-my-identity-on-sign-in-Why
+
+    - name: Visa Checkout
+      url: https://secure.checkout.visa.com/
+      img: visa-checkout.png
+      tfa: No
+      twitter: VisaCheckout
 
     - name: Yandex.Money
       url: https://money.yandex.ru

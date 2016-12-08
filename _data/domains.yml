@@ -18,13 +18,22 @@ websites:
       url: https://10dollar.ca/
       img: 10dollar.png
       twitter: 10dollar_ca
+      facebook: 10dollar.ca
       tfa: No
+
+    - name: 123 Reg
+      url: https://www.123-reg.co.uk
+      img: 123reg.png
+      tfa: No
+      twitter: 123reg
+      facebook: 123regfans
 
     - name: 1and1
       url: https://www.1and1.com/
       img: 1and1.png
       tfa: No
       twitter: 1and1
+      facebook: 1and1
 
     - name: Above.com
       url: https://www.above.com
@@ -33,13 +42,7 @@ websites:
       software: Yes
       doc: http://domains.above.com/manual-two-step-authentication.html
 
-    - name: Badger
-      url: http://badger.com
-      img: badger.png
-      tfa: No
-      twitter: badger
-
-    - name: CloudFlare
+    - name: Cloudflare
       url: https://cloudflare.com
       img: cloudflare.png
       tfa: Yes
@@ -51,12 +54,14 @@ websites:
       img: cloudns.png
       tfa: No
       twitter: ClouDNS
+      facebook: cloudns
 
     - name: Crazy Domains
       url: https://www.crazydomains.com
       img: crazydomains.png
       tfa: No
       twitter: CrazyDomains
+      facebook: crazydomains
 
     - name: Directnic
       url: https://directnic.com
@@ -84,11 +89,13 @@ websites:
       url: https://www.domainmonster.com/
       img: domainmonster.png
       twitter: domainmonster
+      facebook: Domainmonster
       tfa: No
 
     - name: Domain.com
       url: https://www.domain.com/
       twitter: DomainDotCom
+      facebook: Domaindotcom
       img: domaindotcom.png
       tfa: No
 
@@ -96,11 +103,21 @@ websites:
       url: https://www.df.eu
       img: domainfactory.png
       twitter: domainfactory
+      facebook: domainfactory.GmbH
       tfa: No
+      lang: de
+
+    - name: Domains4Bitcoins.com
+      url: https://www.domains4bitcoins.com
+      img: domains4bitcoins.png
+      tfa: Yes
+      sms: Yes
+      doc: http://my.domains4bitcoins.com/kb/answer/2692
 
     - name: DomainsAtCost
       url: https://www.domainsatcost.ca/
       twitter: domainsatcost
+      facebook: domainsatcost
       img: domainsatcost.png
       tfa: No
 
@@ -141,7 +158,7 @@ websites:
       img: enom.png
       tfa: Yes
       software: Yes
-      doc: http://www.enom.com/news/article.aspx?p=978&
+      doc: http://www.enom.com/kb/kb/kb_1687-setup-2-factor.htm
 
     - name: EuroDNS
       url: https://www.eurodns.com
@@ -160,7 +177,14 @@ websites:
     - name: Fasthosts
       url: https://www.fasthosts.co.uk/
       twitter: Fasthosts
+      facebook: fasthostsinternet
       img: fasthosts.png
+      tfa: No
+
+    - name: FreeDNS
+      url: https://freedns.afraid.org/
+      email_address: dnsadmin@afraid.org
+      img: freedns.png
       tfa: No
 
     - name: Gandi
@@ -192,6 +216,14 @@ websites:
       img: heartinternet.png
       tfa: No
       twitter: HeartInternet
+      facebook: heartinternet
+
+    - name: Hexonet
+      url: https://www.hexonet.net/
+      img: hexonet.png
+      tfa: Yes
+      software: Yes
+      doc: https://cp.hexonet.net/cp2/downloads/2FA.pdf
 
     - name: Hover.com
       img: hover.png
@@ -266,10 +298,12 @@ websites:
       img: moniker.png
       tfa: No
       twitter: monikersnap
+      facebook: MonikerLLC
 
     - name: MyDomain
       url: https://www.mydomain.com/
       twitter: mydomaindotcom
+      facebook: mydomain
       img: mydomain.png
       tfa: No
 
@@ -297,8 +331,9 @@ websites:
       doc: https://www.namesilo.com/Support/2~Factor-Authentication
 
     - name: NamesPro.ca
-      url: http://www.namespro.ca/
+      url: https://www.namespro.ca/
       twitter: namespro
+      facebook: namespro
       img: namespro.png
       tfa: No
 
@@ -313,24 +348,28 @@ websites:
     - name: Netfirms
       url: https://www.netfirms.com
       twitter: netfirms
+      facebook: netfirmsfans
       img: netfirms.png
       tfa: No
 
     - name: Netim
       url: https://www.netim.com/
       twitter: Netim_com
+      facebook: netimcom
       img: netim.png
       tfa: No
 
     - name: Netregistry
       url: http://www.netregistry.com.au/
       twitter: netregistry
+      facebook: netregistry
       img: netregistry.png
       tfa: No
 
     - name: Network Solutions
       url: https://www.networksolutions.com/
       twitter: netsolcares
+      facebook: Web.com
       img: networksolutions.png
       tfa: No
 
@@ -339,6 +378,7 @@ websites:
       img: noip.png
       tfa: No
       twitter: NoIPcom
+      facebook: noipdns
 
     - name: Nominet
       url: http://www.nominet.uk/
@@ -366,6 +406,7 @@ websites:
       url: https://www.pairnic.com/
       img: pairnic.png
       tfa: Yes
+      software: Yes
       sms: Yes
       doc: https://www.pairnic.com/faq_security.html
 
@@ -374,6 +415,13 @@ websites:
       twitter: pointdns
       img: pointdns.png
       tfa: No
+
+    - name: porkbun
+      url: https://porkbun.com
+      img: porkbunBuns.png
+      tfa: Yes
+      software: Yes
+      doc: https://porkbun.com/products/two_factor_authentication
 
     - name: Register4Less
       url: https://register4less.com/
@@ -393,8 +441,17 @@ websites:
     - name: STRATO
       url: https://www.strato.de/
       twitter: STRATO_AG
+      facebook: strato
       img: strato.png
       tfa: No
+      lang: de
+
+    - name: Uniregistry
+      url: https://uniregistry.com/
+      img: uniregistry.png
+      tfa: Yes
+      software: Yes
+      doc: https://uniregistry.help/my-account-en/what-is-two-step-verification/
 
     - name: Verio
       url: https://www.verio.com/

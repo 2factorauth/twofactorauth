@@ -1,10 +1,4 @@
 websites:
-    - name: appFog
-      url: https://www.appfog.com/
-      twitter: appfog
-      img: appfog.png
-      tfa: No
-
     - name: Amazon Web Services
       url: https://aws.amazon.com
       img: aws.png
@@ -13,6 +7,20 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://aws.amazon.com/iam/details/mfa/
+
+    - name: appFog
+      url: https://www.appfog.com/
+      twitter: appfog
+      img: appfog.png
+      tfa: No
+
+    - name: Brightbox
+      url: https://www.brightbox.com/
+      twitter: brightbox
+      facebook: brightbox
+      email_address: support@brightbox.com
+      img: brightbox.png
+      tfa: No
 
     - name: Cloud 66
       url: https://www.cloud66.com
@@ -49,9 +57,7 @@ websites:
       img: engineyard.png
       tfa: Yes
       software: Yes
-      exceptions:
-          text: "Currently in beta as of June 5th 2014. Create a support ticket to request 2FA added to your organization"
-      doc: https://support.cloud.engineyard.com/entries/40538256-Two-factor-authentication
+      doc: https://blog.engineyard.com/2015/engine-yards-two-factor-authentication
 
     - name: fortrabbit
       url: https://www.fortrabbit.com/
@@ -68,7 +74,7 @@ websites:
       software: Yes
       phone: Yes
       hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Heroku
       url: https://www.heroku.com/
@@ -77,11 +83,19 @@ websites:
       software: Yes
       doc: https://devcenter.heroku.com/articles/two-factor-authentication
 
+    - name: Hyper.sh
+      url: https://www.hyper.sh
+      img: hypersh.png
+      tfa: No
+      twitter: hyper_sh
+      email_address: contact@hyper.sh
+
     - name: IBM BlueMix
       url: https://bluemix.net
       img: ibmbluemix.png
       tfa: No
       twitter: IBMBluemix
+      facebook: ibmbluemix
 
     - name: Joyent
       url: https://www.joyent.com/
@@ -95,8 +109,6 @@ websites:
       img: leaseweb.png
       tfa: Yes
       sms: Yes
-      exceptions:
-          text: "As of February 23, 2016, only for CDN customer accounts; dedicated/virtual server accounts not included, but in development."
       doc: https://kb.leaseweb.com/display/KB/Two+factor+authentication%3A+Cyber+Security
 
     - name: Linode
@@ -104,10 +116,10 @@ websites:
       img: linode.png
       tfa: Yes
       software: Yes
-      doc: https://www.linode.com/docs/security/linode-manager-security-controls 
+      doc: https://www.linode.com/docs/security/linode-manager-security-controls
 
     - name: Microsoft Azure
-      url: http://azure.microsoft.com/
+      url: https://azure.microsoft.com/
       img: microsoftazure.png
       tfa: Yes
       sms: Yes
@@ -118,6 +130,7 @@ websites:
     - name: OpenShift
       url: https://www.openshift.com/
       twitter: openshift
+      facebook: openshift
       img: openshift.png
       tfa: No
 
@@ -134,22 +147,24 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://www.rackspace.com/knowledge_center/article/multi-factor-authentication-from-the-cloud-control-panel
+      doc: https://support.rackspace.com/how-to/multi-factor-authentication-from-the-cloud-control-panel/
 
     - name: RightScale
       url: https://www.rightscale.com/
       img: rightscale.png
       tfa: No
       twitter: RightScale
+      facebook: RightScale
 
     - name: Scaleway
       url: https://www.scaleway.com
       twitter: scaleway
+      facebook: scaleway
       img: scaleway.png
       tfa: No
 
     - name: Scalr
-      url: http://www.scalr.com
+      url: https://www.scalr.com
       img: scalr.png
       tfa: Yes
       software: Yes

@@ -5,18 +5,23 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
-      exceptions:
-        text: "Currently U.S. only. International support coming soon."
-      doc: https://help.aol.com/articles/2-factor-authentication-stronger-than-your-password-alone
+      software: Yes
+      doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
     - name: FastMail
-      url: https://www.fastmail.fm/
+      url: https://www.fastmail.com/
       img: fastmail.png
       tfa: Yes
       sms: Yes
       software: Yes
       hardware: Yes
-      doc: https://www.fastmail.fm/help/features_alternative_logins.html
+      doc: https://www.fastmail.com/help/account/2fa.html
+
+    - name: Freenet
+      url: https://www.freenet.de/
+      img: freenet.png
+      tfa: No
+      facebook: freenet
 
     - name: Gmail
       url: https://gmail.com
@@ -46,6 +51,7 @@ websites:
     - name: Mail.com
       url: https://www.mail.com/
       twitter: maildotcom
+      facebook: mail.com
       img: maildotcom.png
       tfa: No
 
@@ -58,11 +64,12 @@ websites:
       doc: https://help.mail.ru/enmail-help/settings/2auth
 
     - name: mailbox.org
-      url: https://www.mailbox.org/
+      url: https://mailbox.org/
       img: mailbox.png
       tfa: Yes
+      software: Yes
       hardware: Yes
-      doc: https://mailbox.org/en/one-time-passwords-for-secure-login-to-our-webmailer/
+      doc: https://support-en.mailbox.org/knowledge-base/article/is-there-a-two-factor-authentication
 
     - name: Mailstache
       url: https://mailstache.io
@@ -96,6 +103,7 @@ websites:
     - name: ProtonMail
       url: https://protonmail.com/
       twitter: ProtonMail
+      facebook: protonmail
       img: protonmail.png
       tfa: No
 
@@ -111,6 +119,14 @@ websites:
       img: runbox.png
       tfa: No
 
+    - name: T-Online
+      url: http://email.t-online.de
+      twitter: Telekom_hilft
+      facebook: tonline.de
+      img: tonline.png
+      lang: de
+      tfa: No
+
     - name: Thexyz
       url: https://www.thexyz.com/
       img: thexyz.png
@@ -118,6 +134,14 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://www.thexyz.com/account/knowledgebase/15/Enabling-two-factor-authentication.html
+
+    - name: Web.de
+      url: https://web.de
+      twitter: WEBDE
+      facebook: WEB.DE
+      img: webde.png
+      lang: de
+      tfa: No
 
     - name: Yahoo Japan Mail
       url: https://mail.yahoo.co.jp/
