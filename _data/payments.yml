@@ -94,8 +94,9 @@ websites:
     - name: Paysafecard
       url: https://www.paysafecard.com/
       img: paysafecard.png
-      tfa: No
-      twitter: paysafecard
+      tfa: Yes
+      software: Yes
+      doc: https://www.paysafecard.com/en-au/lp-products/2-step-login/
 
     - name: Privacy
       url: https://privacy.com/

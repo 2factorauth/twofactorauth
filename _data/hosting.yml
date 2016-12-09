@@ -19,6 +19,15 @@ websites:
       software: yes
       doc: https://www.binarylane.com.au/support/solutions/articles/1000199372-two-factor-authentication
 
+    - name: Binero
+      url: https://www.binero.se
+      img: binero.png
+      twitter: Binero
+      facebook: binero
+      email_address: support@binero.se
+      tfa: No
+      lang: sv
+
     - name: BlueFur Web Hosting
       url: https://www.bluefur.com
       img: bluefur.png
@@ -28,8 +37,10 @@ websites:
     - name: Bluehost
       url: https://www.bluehost.com/
       img: bluehost.png
-      tfa: No
-      twitter: bluehostsupport
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://my.bluehost.com/cgi/help/two-factor-authentication
 
     - name: ChunkHost
       url: https://chunkhost.com
@@ -117,6 +128,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.infomaniak.ch/en/support/faq/1940
+
+    - name: INIZ
+      url: https://iniz.com
+      img: iniz.png
+      tfa: Yes
+      software: Yes
+      doc: https://my.iniz.com/knowledgebase/24/Securing-Your-Account-2FA.html
 
     - name: InMotion Hosting
       url: https://www.inmotionhosting.com/
@@ -252,6 +270,13 @@ websites:
       twitter: squarespace
       img: squarespace.png
       tfa: No
+
+    - name: Time4VPS
+      url: https://www.time4vps.eu/
+      img: time4vps.png
+      tfa: Yes
+      software: Yes
+      doc: https://billing.time4vps.eu/knowledgebase/article/100/2-factor-authentication/
 
     - name: UKFast
       url: https://www.ukfast.co.uk/
