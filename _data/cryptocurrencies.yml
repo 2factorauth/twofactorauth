@@ -1,0 +1,263 @@
+websites:
+    - name: BitBay
+      url: https://bitbay.net/
+      img: bitbay.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.youtube.com/watch?v=KFvoNHgl9Pw
+
+    - name: Bitcoin-Central
+      url: https://bitcoin-central.net
+      img: bitcoincentral.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://bitcoin-central.net/page/profile/security
+
+    - name: Bitcoin.de
+      url: https://bitcoin.de
+      img: bitcoinde.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.bitcoin.de/de/faq/was-ist-die-2-step-verification-2-faktor-authentifizierung/46.html
+
+    - name: Bitcoins Norway
+      url: https://bitcoinsnorway.com
+      img: bitcoinsnorway.png
+      tfa: Yes
+      software: Yes
+
+    - name: BitGo
+      url: https://www.bitgo.com
+      img: bitgo.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://bitgo.zendesk.com/hc/en-us/sections/201009049-Two-Factor-Authentication-Help-Page
+
+    - name: Bitlish
+      url: https://bitlish.com
+      img: bitlish.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://bitlish.com/how#mfa
+
+    - name: Bitpay
+      url: https://bitpay.com
+      img: bitpay.png
+      tfa: Yes
+      software: Yes
+      doc: https://bitpay.com/two-factor
+
+    - name: Bitreserve
+      url: https://bitreserve.org
+      img: bitreserve.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.bitreserve.org/hc/en-us/articles/202409609-How-does-phone-number-verification-work-
+
+    - name: Bitstamp
+      url: https://bitstamp.net
+      img: bitstamp.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.bitstamp.net/s/documents/bitstamp_2_factor_authentication_guide.pdf
+
+    - name: Blockchain
+      url: https://blockchain.info/
+      img: blockchain.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://blockchain.info/wallet/support-pages
+
+    - name: BTC-E
+      url: https://btc-e.com
+      img: btc-e.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.btc-e.com/index.php?/Knowledgebase/Article/View/97/25/how-do-i-set-2-factor-authentication-to-my-btc-e-account
+
+    - name: BTCJam
+      url: https://btcjam.com/
+      img: btcjam.png
+      tfa: Yes
+      software: Yes
+      doc: http://help.btcjam.com/customer/portal/articles/1987686
+
+    - name: CampBX
+      url: https://campbx.com/
+      img: campbx.png
+      tfa: Yes
+      software: Yes
+      doc: https://campbx.com/faq.php#security-compliance
+
+    - name: CEX.IO
+      url: https://cex.io/
+      img: cex.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://cex.io/guide#4
+
+    - name: ChangeTip
+      url: https://www.changetip.com/
+      img: changetip.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://blog.changetip.com/changetip-adds-two-factor-authentication-2fa-security/
+
+    - name: Circle
+      url: https://circle.com
+      img: circle.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.circle.com/hc/en-us/articles/204624600-What-is-two-factor-authentication-2FA-
+
+    - name: CleverCoin
+      url: https://clevercoin.com
+      img: clevercoin.png
+      tfa: Yes
+      software: Yes
+
+    - name: Coin Cafe
+      url: https://coincafe.com
+      img: coincafe.png
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://blog.coincafe.com/2016/01/08/2fa/
+
+    - name: Coinapult
+      url: https://coinapult.com
+      img: coinapult.png
+      tfa: Yes
+      software: Yes
+      doc: https://coinapult.com/faq
+
+    - name: Coinbase
+      url: https://www.coinbase.com/
+      img: coinbase.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      phone: Yes
+      doc: https://support.coinbase.com/customer/en/portal/articles/1658338-how-do-i-set-up-2-factor-authentication-with-authy-
+
+    - name: Coinfloor
+      url: https://www.coinfloor.co.uk/
+      img: coinfloor.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.coinfloor.co.uk/security
+
+    - name: Coinify (Merchants)
+      url: https://coinify.com/merchants
+      img: coinify.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+          text: "While Coinify has aquired BIPS to allow for trading, only merchant accounts support TFA at this time. Trading is done through a separate account. Hardware support is limited to a print-out character matrix."
+
+    - name: Coinjar
+      url: https://coinjar.com
+      img: coinjar.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://support.coinjar.com/kb/using-coinjar/keeping-your-coinjar-secure-with-multi-factor-authentication
+
+    - name: Coinkite
+      url: https://coinkite.com
+      img: coinkite.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://coinkite.com/settings/pws
+
+    - name: Coins.ph
+      url: https://coins.ph/
+      img: coinsph.png
+      tfa: Yes
+      software: Yes
+      doc: https://coinsph.zendesk.com/hc/en-us/sections/200557900-Two-factor-authentication
+
+    - name: Coinsetter
+      url: https://www.coinsetter.com
+      img: coinsetter.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.coinsetter.com/my/security
+
+    - name: Cryptsy
+      url: https://cryptsy.com/
+      img: cryptsy.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.cryptsy.com/pages/security
+
+    - name: Eclipse Mining Consortium
+      url: https://eclipsemc.com
+      img: eclipsemc.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://eclipsemc.com/single-news.php?id=20
+
+    - name: Justcoin Exchange
+      url: https://justcoin.com/
+      img: justcoinexchange.png
+      tfa: Yes
+      software: Yes
+      doc: https://twitter.com/jstcoin/status/445900548743897088
+
+    - name: Kraken
+      url: https://www.kraken.com/
+      img: kraken.png
+      doc: https://www.kraken.com/security/practices#two-factor-authentication
+      tfa: Yes
+      software: Yes
+
+    - name: LocalBitcoins
+      url: https://localbitcoins.com/
+      img: localbitcoins.png
+      tfa: Yes
+      software: Yes
+      doc: https://localbitcoins.blogspot.com.au/2013/05/using-two-factor-authentication-on.html
+
+    - name: Uphold
+      url: https://uphold.com/
+      img: uphold.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://support.uphold.com/hc/en-us/articles/206119683-How-does-phone-number-verification-work-
+
+    - name: WeMineLTC.com
+      url: https://www.wemineltc.com
+      img: wemineltc.png
+      tfa: Yes
+      software: Yes
+      doc: https://twitter.com/jstcoin/status/445900548743897088
+
+    - name: Xapo
+      url: https://xapo.com
+      img: xapo.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://support.xapo.com/how-do-i-enable-second-factor-authentication/view=faq

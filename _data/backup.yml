@@ -1,12 +1,30 @@
 websites:
+  - name: AeroFS
+    url: https://www.aerofs.com/
+    tfa: Yes
+    software: Yes
+    img: aerofs.png
+    doc: https://www.aerofs.com/blog/two-factor-authentication-for-hybrid-and-private-cloud-md/
+
+  - name: Apple iCloud
+    url: https://www.icloud.com
+    img: icloud.png
+    tfa: Yes
+    sms: Yes
+    software: Yes
+    exceptions:
+        text: "See https://support.apple.com/HT202656 for a list of supported SMS carriers."
+    doc: https://support.apple.com/HT204152
+
   - name: Backblaze
-    url: http://www.backblaze.com/
-    twitter: backblaze
-    img: backblaze.gif
-    tfa: No
+    url: https://www.backblaze.com
+    img: backblaze.png
+    tfa: Yes
+    sms: Yes
+    doc: https://www.backblaze.com/blog/two-factor-verification-for-backblaze/
 
   - name: Bitcasa
-    url: http://www.bitcasa.com/
+    url: https://www.bitcasa.com/
     twitter: Bitcasa
     img: bitcasa.png
     tfa: No
@@ -18,17 +36,19 @@ websites:
     sms: Yes
     doc: https://support.box.com/hc/en-us/articles/200526658-Can-I-enable-2-step-verification-for-my-account-
 
-  - name: Copy
-    url: https://www.copy.com
-    twitter: copyapp
-    img: copy.png
+  - name: CloudApp
+    url: https://www.getcloudapp.com/
+    twitter: cloudapp
+    img: cloudapp.png
     tfa: No
+    facebook: getcloudapp
 
   - name: CrashPlan
-    url: http://www.crashplan.com
+    url: https://www.crashplan.com
     twitter: crashplan
     img: crashplan.png
     tfa: No
+    facebook: CrashPlan
 
   - name: Dropbox
     url: https://www.dropbox.com
@@ -36,6 +56,7 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
+    hardware: Yes
     doc: https://www.dropbox.com/help/363/en
 
   - name: Evernote
@@ -44,7 +65,14 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
-    doc: http://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
+    doc: https://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
+
+  - name: FileThis
+    url: https://filethis.com
+    twitter: FileThisCompany
+    img: filethis.png
+    tfa: No
+    facebook: FileThis
 
   - name: Frostbox
     url: http://frostbox.com
@@ -58,42 +86,136 @@ websites:
     img: drive.png
     tfa: Yes
     sms: Yes
+    phone: Yes
     software: Yes
-    doc: https://support.google.com/accounts/answer/180744?hl=en
+    hardware: Yes
+    doc: http://www.google.com/intl/en-US/landing/2step/features.html
+
+  - name: hubiC
+    url: https://hubic.com/
+    twitter: hubic
+    img: hubic.png
+    tfa: No
+
+  - name: IDrive
+    url: https://www.idrive.com
+    twitter: IDriveBackup
+    img: idrive.png
+    tfa: No
+    facebook: IDriveBackup
+
+  - name: JustCloud
+    url: https://www.justcloud.com
+    twitter: justcloudcom
+    img: justcloud.png
+    tfa: No
+    facebook: JustCloudStorage
+
+  - name: Mega
+    url: https://mega.co.nz/
+    twitter: MEGAprivacy
+    img: mega.png
+    tfa: No
 
   - name: OneDrive
-    url: https://www.onedrive.com
+    url: https://onedrive.live.com
     img: onedrive.png
     tfa: Yes
     sms: Yes
     software: Yes
     doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
 
+  - name: Pogoplug
+    url: https://pogoplug.com/
+    twitter: pogoplug
+    img: pogoplug.png
+    tfa: No
+    status: https://twitter.com/pogoplug/status/486192568745476096
+
+  - name: QNAP
+    url: https://www.qnap.com
+    img: qnap.png
+    tfa: Yes
+    email: Yes
+    software: Yes
+    doc: https://www.qnap.com/i/useng/tutorial/con_show.php?op=showone&cid=151
+
   - name: SmartBox
-    url: http://www.panterranetworks.com/SmartBox/index.php
+    url: https://www.panterranetworks.com/smartbox/smartbox_overview.php
     img: smartbox.png
     tfa: Yes
-    sms: No
     email: Yes
-    phone: No
     software: Yes
-    hardware: No
-    doc: http://www.panterranetworks.com/SmartBox/features/security.php  
+    doc: https://www.panterranetworks.com/smartbox/sb_features/sbf_security.php
 
   - name: SpiderOak
     url: https://spideroak.com
     twitter: spideroak
     img: spideroak.png
     tfa: No
+    facebook: SpiderOak
 
   - name: SugarSync
     twitter: SugarSync
     url: https://www.sugarsync.com/
     img: sugarsync.png
     tfa: No
+    facebook: SugarSync
+
+  - name: Sync
+    url: https://sync.com
+    img: sync.png
+    software: Yes
+    email: Yes
+    tfa: Yes
+    doc: https://www.sync.com/help/how-do-i-setup-two-factor-authentication/
+
+  - name: Synology
+    url: https://www.synology.com/
+    img: synology.png
+    tfa: Yes
+    software: Yes
+    email: Yes
+    doc: https://originwww.synology.com/en-us/knowledgebase/tutorials/615#t5
+
+  - name: ThisData
+    url: https://thisdata.com
+    img: thisdata.png
+    tfa: Yes
+    sms: Yes
+    software: Yes
+    doc: https://thisdata.com/blog/how-to-enable-two-factor-authentication/
 
   - name: Tresorit
     url: https://tresorit.com/
-    twitter: Tresorit
     img: tresorit.png
+    tfa: Yes
+    sms: Yes
+    phone: Yes
+    software: Yes
+    email: Yes
+    doc: https://support.tresorit.com/entries/104192996-How-to-set-up-two-step-verification
+
+  - name: XXL Cloud
+    url: https://xxlcloud.com
+    twitter: xxlcloud
+    img: xxlcloud.png
     tfa: No
+    status: https://xxlcloud.com/en/blog/2factorauthentication
+    facebook: xxlcloud
+
+  - name: Yandex.Disk
+    url: https://disk.yandex.com
+    img: yandexdisk.png
+    tfa: Yes
+    software: Yes
+    exceptions:
+        text: "SMS-capable phone required for initial setup."
+    doc: https://yandex.com/support/passport/authorization/twofa.xml
+
+  - name: Zetta.net
+    url: http://zetta.net/
+    img: zetta.png
+    tfa: Yes
+    software: Yes
+    doc: http://www.zetta.net/blog/set-zetta-net-two-factor-authentication/

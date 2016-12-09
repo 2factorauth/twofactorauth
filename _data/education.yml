@@ -1,0 +1,225 @@
+websites:
+    - name: (ISC)2
+      url: https://www.isc2.org
+      img: isc2.png
+      tfa: No
+      twitter: ISC2
+      facebook: isc2fb
+
+    - name: Academic Earth
+      url: http://academicearth.org/
+      twitter: academicearth
+      facebook: academicearth
+      img: academicearth.png
+      tfa: No
+
+    - name: Antagning.se
+      url: https://www.antagning.se
+      img: antagning.png
+      twitter: antagningse
+      tfa: No
+
+    - name: Certified Wireless Network Professional (CWNP)
+      url: https://www.cwnp.com
+      img: cwnp.png
+      tfa: No
+      twitter: CWNP
+      facebook: OfficialCWNP
+      email_address: customercare@cwnp.com
+
+    - name: Clever
+      url: https://www.clever.com
+      img: clever.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.clever.com/hc/en-us/articles/202062333-Two-Factor-Authentication
+
+    - name: Code School
+      url: https://www.codeschool.com/
+      twitter: codeschool
+      facebook: CodeSchool
+      img: codeschool.png
+      tfa: No
+
+    - name: Codecademy
+      url: https://www.codecademy.com/
+      twitter: codecademy
+      facebook: codecademy
+      img: codecademy.png
+      tfa: No
+
+    - name: College Of DuPage
+      url: https://www.cod.edu/
+      twitter: collegedupage
+      facebook: collegeofdupage
+      email_address: studenthelp@dupage.edu
+      img: CoD.png
+      tfa: No
+
+    - name: CompTIA
+      url: https://certification.comptia.org/
+      img: CompTIA.png
+      tfa: No
+      twitter: comptia
+      facebook: CompTIA
+
+    - name: Coursera
+      url: https://www.coursera.org/
+      twitter: coursera
+      facebook: Coursera
+      img: coursera.png
+      tfa: No
+
+    - name: CSN
+      url: https://www.csn.se
+      img: csn.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.csn.se/bas/vanligaFragor.do
+
+    - name: Duolingo
+      url: https://www.duolingo.com
+      img: duolingo.png
+      twitter: duolingo
+      facebook: duolingo
+      tfa: No
+
+    - name: EC-Council
+      url: https://www.eccouncil.org
+      img: eccouncil.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      doc: https://aspen.eccouncil.org/aspen/Help/2FactorAuthentication-User_Manual.pdf
+
+    - name: Edmodo
+      url: https://www.edmodo.com/
+      twitter: edmodo
+      facebook: edmodo
+      img: edmodo.png
+      tfa: No
+
+    - name: edX
+      url: https://www.edx.org/
+      twitter: edXOnline
+      facebook: edX
+      img: edx.png
+      tfa: No
+
+    - name: Global Information Assurance Certification (GIAC)
+      url: https://www.giac.org
+      img: giac.png
+      tfa: No
+      twitter: CertifyGIAC
+      facebook: GIAC.org
+      email_address: info@giac.org
+
+    - name: Illinois Institute Of Technology
+      url: https://web.iit.edu/
+      twitter: illinoistech
+      facebook: illinoistech
+      email_address: supportdesk@iit.edu
+      img: iit.png
+      tfa: No
+      exceptions:
+          text: "Illinois Tech uses Google Apps for Eductation for their email; so they could very easily add tfa to their email, but at the time of this commit, they have it disabled and do not plan to implement it any time soon."
+
+    - name: ISACA
+      url: https://www.isaca.org
+      img: isaca.png
+      tfa: No
+      twitter: ISACANews
+      facebook: ISACAHQ
+
+    - name: Montclair State University
+      url: https://www.montclair.edu/employee-services/
+      twitter: montclairstateu
+      img: montclair.png
+      tfa: No
+
+    - name: My Study Life
+      url: https://www.mystudylife.com/
+      twitter: mystudylife
+      facebook: mystudylife
+      img: mystudylife.png
+      tfa: No
+
+    - name: Oplerno
+      url: https://enroll.oplerno.com/
+      img: oplerno.png
+      tfa: Yes
+      software: Yes
+
+    - name: PushCoin
+      url: https://pushcoin.com
+      img: pushcoin.png
+      tfa: Yes
+      hardware: Yes
+      exceptions:
+          text: "U2F support only for school admin accounts. 2FA for parent accounts is in progress."
+      doc: http://knowhow.pushcoin.com/using-security-key-for-2-step-verification/
+
+    - name: Robert Morris University
+      url: https://sentry.rmu.edu/login
+      twitter: rmu
+      facebook: RMUpgh
+      img: rmu.png
+      tfa: No
+
+    - name: Royal Roads University
+      url: http://www.royalroads.ca
+      twitter: RoyalRoads
+      facebook: royalroadsu
+      img: royalroads.png
+      tfa: No
+
+    - name: SchoolSoft
+      url: http://schoolsoft.se/
+      img: schoolsoft.png
+      email_address: support@schoolsoft.se
+      tfa: No
+
+    - name: Temple University
+      url: https://www.temple.edu/
+      img: templeuniversity.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://computerservices.temple.edu/two-step-verification
+
+    - name: Udacity
+      url: https://www.udacity.com/
+      twitter: udacity
+      facebook: Udacity
+      img: udacity.png
+      tfa: No
+
+    - name: Udemy
+      url: https://www.udemy.com/
+      twitter: udemy
+      facebook: udemy
+      img: udemy.png
+      tfa: No
+
+    - name: University of Michigan
+      url: https://www.umich.edu
+      img: umich.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: http://its.umich.edu/accounts-access/uniqnames-passwords/two-factor-authentication
+
+    - name: Virginia Tech
+      url: https://www.vt.edu/
+      img: virginiatech.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.tech.it.vt.edu/2factor/

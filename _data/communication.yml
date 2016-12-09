@@ -1,4 +1,18 @@
 websites:
+    - name: Action Network
+      url: https://actionnetwork.org/
+      img: actionnetwork.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.actionnetwork.org/hc/en-us/articles/217206826
+
+    - name: Basecamp
+      url: https://basecamp.com/
+      img: basecamp.png
+      tfa: Yes
+      sms: Yes
+      doc: https://basecamp.com/help/guides/you/phone-verification
+
     - name: Campfire
       url: https://campfirenow.com/
       img: campfire.png
@@ -6,47 +20,202 @@ websites:
       sms: Yes
       doc: https://help.37signals.com/sign-in/questions/460-how-do-i-set-up-and-use-phone-verification-for-logging-in
 
+    - name: Carbon Black Community Exchange
+      url: https://community.carbonblack.com/
+      img: carbonblack.png
+      tfa: No
+      twitter: CarbonBlack_Inc
+      facebook: carbonblackinc
+
+    - name: Customer.io
+      url: https://customer.io
+      img: customerio.png
+      tfa: Yes
+      software: Yes
+      doc: https://customer.io/docs/two-factor-auth.html
+
+    - name: Discord
+      url: https://discordapp.com/
+      img: discord.png
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: https://support.discordapp.com/hc/en-us/articles/219576828
+
     - name: Disqus
       url: https://disqus.com
       twitter: disqus
+      facebook: disqus
       img: disqus.png
+      tfa: No
+
+    - name: Doodle
+      url: http://www.doodle.com
+      img: doodle.png
+      twitter: doodletweet
       tfa: No
 
     - name: Fleep
       url: https://fleep.io
       twitter: fleepio
+      facebook: fleepio
       img: fleep.png
       tfa: No
+
+    - name: Flowdock
+      url: https://www.flowdock.com
+      twitter: flowdock
+      facebook: flowdock
+      img: flowdock.png
+      tfa: No
+
+    - name: Front App
+      url: https://frontapp.com
+      img: front_app.png
+      tfa: Yes
+      software: Yes
+      doc: https://faq.frontapp.com/11695-security/how-to-activate-2fa
+
+    - name: Grape
+      url: https://chatgrape.com/
+      img: grape.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://chatgrape.com/doc/deployment/2fa.html
 
     - name: HipChat
       url: https://www.hipchat.com
       twitter: HipChat
+      facebook: HipChat
       img: hipchat.png
       tfa: No
 
-    - name: Skype (w/Microsoft Account)
+    - name: MailChimp
+      url: https://mailchimp.com/
+      img: mailchimp.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: http://kb.mailchimp.com/accounts/login/set-up-two-factor-authentication-with-sms
+
+    - name: Mailgun
+      url: http://mailgun.com
+      twitter: Mail_Gun
+      facebook: mailgun
+      img: mailgun.png
+      tfa: No
+
+    - name: Maxemail
+      url: https://maxemail.emailcenteruk.com/
+      img: maxemail.png
+      tfa: Yes
+      hardware: Yes
+      doc: http://www.emailcenteruk.com/software/security-collaboration-2/
+
+    - name: Peerio
+      url: https://peerio.com
+      img: peerio.png
+      tfa: Yes
+      software: Yes
+      doc: https://peerio.zendesk.com/hc/en-us/articles/202933829-How-do-I-setup-two-factor-authentication-
+
+    - name: Ryver
+      url: https://ryver.com/
+      img: ryver.png
+      twitter: ryverapp
+      facebook: RyverApp
+      tfa: No
+
+    - name: Salesforce
+      url: http://www.salesforce.com
+      img: salesforce.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      email: Yes
+      doc: https://help.salesforce.com/HTViewHelpDoc?id=security_require_two_factor_authentication.htm
+
+    - name: SendGrid
+      url: https://sendgrid.com/
+      img: sendgrid.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
+
+    - name: Sendloop
+      url: https://app.sendloop.com
+      img: sendloop.png
+      tfa: Yes
+      software: Yes
+      doc: http://app.sendloop.com/help/article/account-003/how-can-i-make-my-account-more-secure
+
+    - name: Skype (via Microsoft Account)
       url: https://www.skype.com
       img: skype.png
       tfa: Yes
       sms: Yes
       software: Yes
       doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
+      exceptions:
+            text: "Two-factor authentication is available only when logging in using a Microsoft account. If you have setup your account using a Skype password, 2FA through Microsoft is essentially useless."
 
     - name: Slack
-      url: http://www.slack.com
-      twitter: SlackHQ
+      url: https://slack.com/
       img: slack.png
-      tfa: No
-      status: https://twitter.com/SlackHQ/status/448214716192538625
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://slack.zendesk.com/hc/en-us/articles/204509068-Enabling-two-factor-authentication
 
-    - name: Trello
-      url: https://trello.com
-      twitter: trello
-      img: trello.png
+    - name: SocketLabs
+      url: https://socketlabs.com/
+      img: socketlabs.png
+      sms: Yes
+      tfa: Yes
+      software: Yes
+      doc: https://support.socketlabs.com/kb/145
+
+    - name: SparkPost
+      url: https://sparkpost.com/
+      img: sparkpost.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.sparkpost.com/customer/portal/articles/1948449
+
+    - name: Stackfield
+      url: https://www.stackfield.com/
+      img: stackfield.png
+      tfa: Yes
+      software: Yes
+      doc: http://en.stackfield.help/article/92-activating-deactivating-the-two-factor-authentication
+
+    - name: Telegram
+      url: https://telegram.org/
+      img: telegram.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://telegram.org/blog/sessions-and-2-step-verification
+
+    - name: ToutApp
+      url: https://www1.toutapp.com/
+      twitter: toutapp
+      facebook: toutapp
+      img: toutapp.png
+      tfa: No
+
+    - name: WhatsApp
+      url: https://www.whatsapp.com/
+      twitter: whatsapp
+      facebook: WhatsApp
+      img: whatsapp.png
       tfa: No
 
     - name: Yammer
-      url: https://yammer.com
+      url: https://www.yammer.com
       twitter: yammer
+      facebook: Yammer
       img: yammer.png
       tfa: No

@@ -5,6 +5,20 @@ websites:
       img: 23andme.png
       tfa: No
 
+    - name: Carilion Clinic
+      url: https://www.carilionclinic.org
+      img: carilionclinic.png
+      tfa: No
+      twitter: CarilionClinic
+      facebook: carilionclinic
+      email_address: direct@carilionclinic.org
+
+    - name: CVS/Caremark
+      url: https://www.caremark.com
+      twitter: cvshealth
+      img: cvscaremark.png
+      tfa: No
+
     - name: drchrono
       url: https://www.drchrono.com
       img: drchrono.png
@@ -17,6 +31,13 @@ websites:
       twitter: DrugsCom
       img: drugscom.png
       tfa: No
+      status: https://twitter.com/Drugscom/status/493856207572975620
+
+    - name: Elation Health
+      url: https://www.elationhealth.com/
+      twitter: ElationHealth
+      img: elationhealth.png
+      tfa: No
 
     - name: FitBit
       url: http://www.fitbit.com
@@ -24,11 +45,24 @@ websites:
       img: fitbit.png
       tfa: No
 
-    - name: Healthcare.gov
-      url: http://healthcare.gov
-      twitter: HealthCareGov
-      img: healthcaregov.png
-      tfa: No
+    - name: FollowMyHealth
+      url: https://www.followmyhealth.com/
+      img: followmyhealth.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: http://support.followmyhealth.com/customer/portal/articles/1309938-fmh-secure-login-2-step-verification---break-down
+
+    - name: Google Fit
+      url: https://fit.google.com
+      img: googlefit.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: http://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: HealthVault (w/Microsoft Account)
       url: https://www.healthvault.com
@@ -38,10 +72,36 @@ websites:
       software: Yes
       doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
 
+    - name: MedicAlert
+      url: https://www.medicalert.ca
+      img: medicalert.png
+      twitter: MedicAlertCA
+      tfa: No
+
+    - name: Misfit
+      url: https://misfit.com/
+      twitter: Misfit
+      img: misfit.png
+      tfa: No
+
     - name: myfitnesspal
-      url: http://www.myfitnesspal.com
+      url: https://www.myfitnesspal.com
       twitter: myfitnesspal
       img: myfitnesspal.png
+      tfa: No
+
+    - name: Runtastic
+      url: https://www.runtastic.com
+      twitter: Runtastic
+      facebook: runtastic
+      img: runtastic.png
+      tfa: No
+
+    - name: Thriva
+      url: https://thriva.co
+      twitter: thrivahealth
+      facebook: thriva
+      img: thriva.png
       tfa: No
 
     - name: WebMD
