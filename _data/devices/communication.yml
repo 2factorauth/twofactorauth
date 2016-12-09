@@ -30,6 +30,16 @@ websites:
       img: fleep.png
       tfa: No
 
+    - name: Hangouts
+      url: https://hangouts.google.com/
+      img: hangouts.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      exceptions:
+          text: "Google Chrome browser required for U2F."
+
     - name: HipChat
       url: https://www.hipchat.com
       twitter: HipChat
