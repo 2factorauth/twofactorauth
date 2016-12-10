@@ -231,6 +231,39 @@ input[type=search] {
 .ui.table td {
   &.main {
     line-height: 2em;
+
+    .title {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-align: center;
+      align-items: center;
+
+      a.title-name {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex: 1;
+        padding-left: 0;
+        line-height: 1.5;
+      }
+    }
+
+    .progress-info {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+
+      a {
+        width: 120px;
+        min-width: 120px;
+        padding-left: 0;
+      }
+    }
   }
 
   &.icon {
@@ -247,6 +280,7 @@ td img.icon,
   border-radius: 50%;
   float: left;
   padding: 4px 4px;
+  width: 2em;
   height: 2em;
   width: 2em;
   line-height: 1;
