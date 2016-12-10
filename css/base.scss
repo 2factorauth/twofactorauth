@@ -184,12 +184,6 @@ input[type=search] {
     }
 
     .main {
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -ms-flex-direction: column;
-      flex-direction: column;
-
       .title {
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -254,6 +248,7 @@ td img.icon,
   float: left;
   padding: 4px 4px;
   height: 2em;
+  width: 2em;
   line-height: 1;
   margin-right: 0.8em;
 }
