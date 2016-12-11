@@ -231,6 +231,14 @@ websites:
           text: "SMS-capable phone required."
       doc: https://en.support.wordpress.com/security/two-step-authentication/
 
+    - name: WordPress (self-hosted)
+      url: https://wordpress.org/plugins/two-factor/
+      img: wordpress.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://github.com/georgestephanis/two-factor/blob/master/readme.md
+
     - name: XING
       url: https://www.xing.com
       img: xing.png
