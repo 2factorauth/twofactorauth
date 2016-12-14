@@ -23,6 +23,16 @@ websites:
           text: "SMS or phone call required to enable 2FA."
       doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201596330
 
+    - name: Amazon UK
+      url: https://www.amazon.co.uk
+      img: amazon.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      exceptions:
+          text: "Requires a second account on Amazon.com where 2FA is activated."
+      doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201596330
+
     - name: Apple
       url: https://appleid.apple.com
       img: apple.png
@@ -304,4 +314,3 @@ websites:
       tfa: No
       twitter: zazzle
       facebook: zazzle
-
