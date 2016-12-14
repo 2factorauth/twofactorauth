@@ -2,10 +2,14 @@ websites:
     - name: 1Password
       url: https://1password.com/
       img: 1password.png
-      tfa: No
-      email_address: support@1password.com
-      facebook: 1Password
-      twitter: 1Password
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      exceptions:
+          text: "2FA is only available for Teams accounts using Duo Security."
+      doc: https://duo.com/docs/1password
 
     - name: Bitium
       url: https://www.bitium.com
