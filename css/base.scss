@@ -185,11 +185,8 @@ input[type=search] {
 
     .main {
       .title {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -ms-flex-direction: row;
-        flex-direction: row;
+        @include display-flex();
+        @include flex-direction(row);
         -ms-flex-align: center;
         align-items: center;
 
@@ -202,11 +199,8 @@ input[type=search] {
       }
 
       .button-group {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -ms-flex-direction: row;
-        flex-direction: row;
+        @include display-flex();
+        @include flex-direction(row);
         justify-content: space-between;
       }
     }
@@ -233,11 +227,8 @@ input[type=search] {
     line-height: 2em;
 
     .title {
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -ms-flex-direction: row;
-      flex-direction: row;
+      @include display-flex();
+      @include flex-direction(row);
       -ms-flex-align: center;
       align-items: center;
 
@@ -252,9 +243,7 @@ input[type=search] {
     }
 
     .progress-info {
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
+      @include display-flex();
       -webkit-justify-content: center;
       justify-content: center;
 
