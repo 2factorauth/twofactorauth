@@ -109,10 +109,10 @@ websites:
 
     - name: ProtonMail
       url: https://protonmail.com/
-      twitter: ProtonMail
-      facebook: protonmail
       img: protonmail.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://protonmail.com/blog/encrypted_email_authentication/
 
     - name: Riseup Mail
       url: https://mail.riseup.net
