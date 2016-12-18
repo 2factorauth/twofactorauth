@@ -39,6 +39,14 @@ websites:
       twitter: cyberghost_EN
       tfa: No
 
+    - name: Detectify
+      url: https://detectify.com/
+      img: detectify.png
+      twitter: detectify
+      facebook: detectify
+      email_address: hello@detectify.com
+      tfa: No
+
     - name: DigiCert
       url: https://www.digicert.com/
       img: digicert.png
@@ -142,6 +150,19 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://support.tinfoilsecurity.com/customer/portal/articles/1559364-do-you-support-two-factor-authentication-how-do-i-set-it-up-
+
+    - name: TorGuard
+      url: https://torguard.net
+      img: torguard.png
+      tfa: Yes
+      software: Yes
+
+    - name: TunnelBear
+      url: https://tunnelbear.com/
+      img: tunnelbear.png
+      tfa: No
+      twitter: theTunnelBear
+      facebook: tunnelbear
 
     - name: VPN Unlimited
       url: https://vpnunlimitedapp.com/

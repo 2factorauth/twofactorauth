@@ -12,6 +12,7 @@ websites:
     - name: Airbrake
       url: https://airbrake.io
       twitter: airbrake
+      facebook: airbrake.io
       img: airbrake.png
       tfa: No
 
@@ -21,6 +22,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.algolia.com/doc/security/best-security-practices#two-factor-authentication
+
+    - name: AppVeyor
+      url: https://www.appveyor.com
+      img: appveyor.png
+      tfa: No
+      twitter: appveyor
+      email_address: team@appveyor.com
 
     - name: aTech Media
       url: https://atechmedia.com
@@ -33,6 +41,7 @@ websites:
     - name: Balsamiq
       url: https://balsamiq.com
       twitter: balsamiq
+      facebook: BalsamiqMockups
       img: balsamiq.png
       tfa: No
 
@@ -56,6 +65,7 @@ websites:
       img: cedexis.png
       tfa: No
       twitter: Cedexis
+      facebook: Cedexis
 
     - name: Cloud9
       url: https://c9.io
@@ -92,8 +102,9 @@ websites:
           text: "Only available on paid accounts at $7/10 per month (annual/monthly) or more."
 
     - name: Codeship
-      url: https://codeship.io/
+      url: https://codeship.com/
       twitter: codeship
+      facebook: codeship
       img: codeship.png
       tfa: No
 
@@ -112,8 +123,9 @@ websites:
       tfa: No
 
     - name: Docker
-      url: https://docker.com/
+      url: https://www.docker.com/
       twitter: docker
+      facebook: docker.run
       img: docker.png
       tfa: No
 
@@ -163,6 +175,13 @@ websites:
       sms: Yes
       doc: http://www.infobip.com/messaging/enterprise/2_factor_authentication/
 
+    - name: JetBrains
+      url: https://jetbrains.com
+      img: jetbrains.png
+      tfa: No
+      twitter: jetbrains
+      facebook: JetBrains
+
     - name: Jidoteki
       url: https://jidoteki.com
       img: jidoteki.png
@@ -211,6 +230,7 @@ websites:
     - name: New Relic
       url: https://newrelic.com
       twitter: newrelic
+      facebook: NewRelic
       img: newrelic.png
       tfa: No
 
@@ -236,12 +256,14 @@ websites:
     - name: Pivotal Tracker
       url: https://www.pivotaltracker.com
       twitter: pivotaltracker
+      facebook: pivotaltracker
       img: pivotaltracker.png
       tfa: No
 
     - name: Plivo
       url: https://www.plivo.com
       twitter: plivo
+      facebook: Plivo
       img: plivo.png
       tfa: No
 
@@ -253,9 +275,9 @@ websites:
 
     - name: PythonAnywhere
       url: https://www.pythonanywhere.com
-      twitter: pythonanywhere
       img: pythonanywhere.png
-      tfa: No
+      tfa: Yes
+      software: Yes
 
     - name: RBCommons
       url: https://rbcommons.com
@@ -271,6 +293,21 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://rollbar.com/docs/two-factor-authentication/
+
+    - name: RubyGems.org
+      url: https://rubygems.org
+      img: rubygems.png
+      tfa: No
+      twitter: rubygems
+      email_address: security@rubygems.org
+
+    - name: Sauce Labs
+      url: https://saucelabs.com
+      img: saucelabs.png
+      tfa: No
+      twitter: saucelabs
+      facebook: saucelabs
+      email_address: support@saucelabs.com
 
     - name: Semaphore
       url: https://semaphoreci.com
@@ -289,10 +326,11 @@ websites:
       doc: https://blog.getsentry.com/2016/06/22/introducing-2fa.html
 
     - name: SourceForge
-      url: http://sourceforge.net/
-      twitter: sourceforge
+      url: https://sourceforge.net/
       img: sourceforge.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://sourceforge.net/blog/introducing-multifactor-authentication-on-sourceforge/
 
     - name: Status.io
       url: https://status.io/
@@ -310,12 +348,14 @@ websites:
     - name: StatusPage.io
       url: https://www.statuspage.io
       twitter: statuspageio
+      facebook: statuspageio
       img: statuspageio.png
       tfa: No
 
     - name: Taiga.io
       url: https://taiga.io
       twitter: taigaio
+      facebook: taigaio
       img: taigaio.png
       tfa: No
 
@@ -335,9 +375,17 @@ websites:
       software: Yes
       doc: https://unfuddle.com/blog/2014/07/140721-two-factor-authentication
 
+    - name: Unity
+      url: https://unity3d.com/
+      img: unity.png
+      tfa: Yes
+      sms: Yes
+      doc: https://support.unity3d.com/hc/en-us/articles/208764976-How-do-I-enable-Two-Factor-Authentication-on-my-account-
+
     - name: Uptime Robot
       url: https://uptimerobot.com
       twitter: uptimerobot
+      facebook: UptimeRobot
       img: uptimerobot.png
       tfa: No
 
@@ -350,7 +398,8 @@ websites:
       doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
 
     - name: Zapier
-      url: https://www.zapier.com
+      url: https://zapier.com
       twitter: zapier
+      facebook: ZapierApp
       img: zapier.png
       tfa: No

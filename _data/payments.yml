@@ -94,8 +94,9 @@ websites:
     - name: Paysafecard
       url: https://www.paysafecard.com/
       img: paysafecard.png
-      tfa: No
-      twitter: paysafecard
+      tfa: Yes
+      software: Yes
+      doc: https://www.paysafecard.com/en-au/lp-products/2-step-login/
 
     - name: Privacy
       url: https://privacy.com/
@@ -133,6 +134,13 @@ websites:
       sms: Yes
       software: Yes
       doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
+
+    - name: Vantiv
+      url: https://www.vantiv.com/
+      twitter: Vantiv
+      facebook: Vantiv
+      img: vantiv.png
+      tfa: No
 
     - name: Venmo
       url: https://venmo.com

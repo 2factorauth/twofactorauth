@@ -32,6 +32,16 @@ websites:
       software: Yes
       doc: https://www.syspectr.com/en/faq/how-do-i-activate-deactivate-two-factor-authentication-for-my-account
 
+    - name: ScreenConnect
+      url: https://www.screenconnect.com
+      img: screenconnect.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://help.screenconnect.com/Enabling_two-factor_authentication
+
     - name: TeamViewer
       url: https://www.teamviewer.com
       img: teamviewer.png

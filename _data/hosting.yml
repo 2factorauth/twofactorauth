@@ -19,6 +19,15 @@ websites:
       software: yes
       doc: https://www.binarylane.com.au/support/solutions/articles/1000199372-two-factor-authentication
 
+    - name: Binero
+      url: https://www.binero.se
+      img: binero.png
+      twitter: Binero
+      facebook: binero
+      email_address: support@binero.se
+      tfa: No
+      lang: sv
+
     - name: BlueFur Web Hosting
       url: https://www.bluefur.com
       img: bluefur.png
@@ -28,8 +37,10 @@ websites:
     - name: Bluehost
       url: https://www.bluehost.com/
       img: bluehost.png
-      tfa: No
-      twitter: bluehostsupport
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://my.bluehost.com/cgi/help/two-factor-authentication
 
     - name: ChunkHost
       url: https://chunkhost.com
@@ -48,6 +59,13 @@ websites:
       img: cloudshards.png
       twitter: CloudShards
       tfa: No
+
+    - name: Cloudways
+      url: https://www.cloudways.com/
+      img: cloudways.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.cloudways.com/enabling-two-factor-authentication-for-your-cloudways-account/
 
     - name: cyon
       url: https://www.cyon.ch
@@ -111,6 +129,22 @@ websites:
       software: Yes
       doc: https://www.infomaniak.ch/en/support/faq/1940
 
+    - name: INIZ
+      url: https://iniz.com
+      img: iniz.png
+      tfa: Yes
+      software: Yes
+      doc: https://my.iniz.com/knowledgebase/24/Securing-Your-Account-2FA.html
+
+    - name: Inleed
+      url: https://www.inleed.se
+      img: inleed.png
+      twitter: Inleed
+      facebook: Inleed
+      email_address: support@inleed.se
+      tfa: No
+      lang: sv
+
     - name: InMotion Hosting
       url: https://www.inmotionhosting.com/
       twitter: inmotionhosting
@@ -172,6 +206,15 @@ websites:
       software: Yes
       doc: http://www.netcup-wiki.de/wiki/Stammdaten_CCP#Zwei-Faktor-Authentifizierung_.282FA.29
 
+    - name: Oderland
+      url: https://www.oderland.se/
+      twitter: oderlandab
+      facebook: oderland
+      email_adress: support@oderland.se
+      img: oderland.png
+      tfa: No
+      lang: sv
+
     - name: One.com
       url: https://www.one.com/
       twitter: onecom
@@ -216,6 +259,7 @@ websites:
     - name: Scaleway
       url: https://www.scaleway.com/
       twitter: scaleway
+      facebook: scaleway
       img: scaleway.png
       tfa: No
 
@@ -245,6 +289,13 @@ websites:
       img: squarespace.png
       tfa: No
 
+    - name: Time4VPS
+      url: https://www.time4vps.eu/
+      img: time4vps.png
+      tfa: Yes
+      software: Yes
+      doc: https://billing.time4vps.eu/knowledgebase/article/100/2-factor-authentication/
+
     - name: UKFast
       url: https://www.ukfast.co.uk/
       img: ukfast.png
@@ -263,6 +314,14 @@ websites:
       hardware: Yes
       doc: https://www.ukraine.com.ua/faq/rekomendatsii-po-zashchite-ot-vzloma-uchetnoj-zapisi.html
 
+    - name: Versio
+      url: https://www.versio.nl
+      img: versio.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.versio.nl/nieuws/twofactor-authenticatie-nu-beschikbaar-voor-uw-klantenaccount-205
+      lang: nl
+
     - name: Vultr
       url: https://www.vultr.com/
       img: vultr.png
@@ -277,6 +336,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://docs.webfaction.com/user-guide/control_panel.html#two-step-login
+
+    - name: Wedos
+      url: https://hosting.wedos.com
+      img: wedos.png
+      tfa: Yes
+      software: Yes
+      doc: https://kb.wedos.com/cs/zakaznik/otp.html
 
     - name: Weebly
       url: https://www.weebly.com

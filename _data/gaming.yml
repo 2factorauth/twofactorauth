@@ -11,6 +11,7 @@ websites:
       url: https://www.blackdesertonline.com/
       img: bdo.png
       twitter: BDO_News
+      facebook: BlackDesertOnline
       tfa: No
 
     - name: Blade & Soul
@@ -34,12 +35,14 @@ websites:
       img: curse.png
       tfa: No
       twitter: curseapp
+      facebook: curseapp
 
     - name: Desura
       url: http://www.desura.com/
       img: desura.png
       tfa: No
       twitter: desura
+      facebook: Desura
 
     - name: Elder Scrolls Online
       url: http://www.elderscrollsonline.com/
@@ -64,9 +67,14 @@ websites:
       tfa: Yes
       email: Yes
       software: Yes
-      doc: https://community.eveonline.com/news/dev-blogs/two-factor-authentication/
-      exceptions:
-          text: "This does not prevent people from logging into the game client by circumventing the launcher. That is a legacy issue that the developers have acknowledged."
+      doc: https://support.eveonline.com/hc/en-us/articles/203465601-Two-Factor-Authentication-and-Authenticator
+
+    - name: GameFly
+      url: https://www.gamefly.com/
+      twitter: GameFly
+      facebook: gamefly
+      img: gamefly.png
+      tfa: No
 
     - name: Garena Online
       url: http://garena.com
@@ -126,6 +134,7 @@ websites:
     - name: League of Legends
       url: http://leagueoflegends.com
       twitter: leagueoflegends
+      facebook: leagueoflegends
       img: leagueoflegends.png
       tfa: No
 
@@ -138,6 +147,7 @@ websites:
     - name: Nintendo Network
       url: https://www.nintendo.com/
       twitter: NintendoAmerica
+      facebook: Nintendo
       img: nintendo.png
       tfa: No
 
@@ -168,6 +178,7 @@ websites:
     - name: Rockstar Games Social Club
       url: https://socialclub.rockstargames.com
       twitter: RockstarSupport
+      facebook: rockstargames
       img: rockstargames.png
       tfa: No
 
@@ -199,6 +210,7 @@ websites:
     - name: Stardock Corporation
       url: https://www.stardock.com/
       twitter: Stardock
+      facebook: official.stardock
       img: stardock.png
       tfa: No
 
@@ -223,8 +235,9 @@ websites:
       url: http://www.trionworlds.com/en/
       img: trionworlds.png
       tfa: Yes
+      email: Yes
       software: Yes
-      doc: https://store.trionworlds.com/account/profile/manage-game
+      doc: https://support.trionworlds.com/hc/en-us/articles/204183357-Adding-a-Mobile-Authenticator
 
     - name: Uplay
       url: https://uplay.ubi.com/
@@ -236,6 +249,7 @@ websites:
     - name: Wargaming
       url: http://wargaming.net/
       twitter: wargaming_net
+      facebook: wargaming.net
       img: wargaming.png
       tfa: No
 

@@ -11,3 +11,14 @@
   -moz-box-sizing: $type;
   box-sizing: $type;
 }
+
+@mixin display-flex() {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+
+@mixin flex-direction($direction) {
+  flex-direction: $direction;
+  -ms-flex-direction: $direction;
+}
