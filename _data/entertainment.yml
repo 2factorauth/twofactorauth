@@ -31,10 +31,10 @@ websites:
 
     - name: hitbox
       url: https://www.hitbox.tv/
-      twitter: hitboxliveHelp
-      facebook: hitboxlive
       img: hitbox.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: http://help.hitbox.tv/customer/portal/articles/2434122
 
     - name: Hulu
       url: http://www.hulu.com/
@@ -127,13 +127,6 @@ websites:
       twitter: UstreamSupport
       facebook: ustream
       img: ustream.png
-      tfa: No
-
-    - name: Vessel
-      url: https://www.vessel.com/
-      twitter: Vessel
-      facebook: vessel
-      img: vessel.png
       tfa: No
 
     - name: Vimeo

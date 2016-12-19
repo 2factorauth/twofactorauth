@@ -208,10 +208,10 @@ websites:
 
     - name: WhatsApp
       url: https://www.whatsapp.com/
-      twitter: whatsapp
-      facebook: WhatsApp
       img: whatsapp.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://www.whatsapp.com/faq/en/general/26000021
 
     - name: Yammer
       url: https://www.yammer.com
