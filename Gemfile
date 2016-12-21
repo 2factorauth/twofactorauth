@@ -1,10 +1,7 @@
 source 'https://rubygems.org'
 
-# Freeze to GitHub Pages versions:
-# https://pages.github.com/versions/
-gem 'github-pages', '~> 75'
-gem 'jekyll', '~> 3.0.4'
-gem 'kramdown', '~> 1.10.0'
+# Dependencies are bundled with the github-pages gem
+gem 'github-pages', '112', group: :jekyll_plugins
 
 group :test do
   gem 'fastimage'
