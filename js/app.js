@@ -36,8 +36,7 @@ var jets = new Jets({
   contentTag: '.jets-content',
   didSearch: function (searchPhrase) {
     $('.category h5 i').removeClass('active-icon');
-    var platform;
-    $(window).width() > 768 ? platform = 'desktop' : platform = 'mobile';
+    var platform = ($(window).width() > 768) ? 'desktop' : 'mobile';
     var content = $('.' + platform + '-table .jets-content');
     var table = $('.' + platform + '-table');
 

@@ -7,48 +7,71 @@ websites:
     - name: ADP
       url: https://www.adp.com
       twitter: adp
+      facebook: AutomaticDataProcessing
       img: adp.png
       tfa: No
+
+    - name: Bitbond
+      url: https://www.bitbond.com
+      img: bitbond.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
 
     - name: Credit Karma
       url: https://www.creditkarma.com
       twitter: creditkarma
+      facebook: CreditKarma
       img: creditkarma.png
       tfa: No
 
     - name: ditech
       url: https://www.ditech.com
       twitter: ditech
+      facebook: ditech
       img: ditech.png
       tfa: No
 
     - name: FreeAgent
       url: https://www.freeagent.com
       img: freeagent.png
-      twitter: freeagent
-      tfa: No
+      tfa: Yes
+      software: Yes
+      docs: https://www.freeagent.com/support/kb/getting-started/two-step-verification
 
     - name: FreshBooks
       url: https://www.freshbooks.com
       img: freshbooks.png
       twitter: freshbooks
+      facebook: FreshBooks
       tfa: No
 
     - name: Geico
       url: https://www.geico.com/
       img: geico.png
       twitter: geico_service
+      facebook: geico
       tfa: No
+
+    - name: Gusto
+      url: https://www.gusto.com
+      img: gusto.png
+      tfa: Yes
+      sms: Yes
+      doc: https://support.gusto.com/hc/en-us/articles/210838787-Two-Step-Authentication
 
     - name: HelloWallet
       url: https://www.hellowallet.com
       twitter: HelloWallet
+      facebook: hellowallet
       img: hellowallet.png
       tfa: No
 
     - name: InEx Finance
       url: https://www.inexfinance.com/
       twitter: InexFinance
+      facebook: inex.finance
       img: inex.png
       tfa: No
 
@@ -73,6 +96,7 @@ websites:
     - name: Kiva
       url: https://www.kiva.org
       twitter: kiva
+      facebook: kiva
       img: kiva.png
       tfa: No
 
@@ -85,6 +109,7 @@ websites:
     - name: LevelUp
       url: https://www.thelevelup.com
       twitter: TheLevelUp
+      facebook: LevelUpApp
       img: levelup.png
       tfa: No
 
@@ -99,7 +124,15 @@ websites:
     - name: Mint Bills (formerly Check)
       url: https://bills.mint.com
       twitter: mintbills
+      facebook: mint
       img: mintbills.png
+      tfa: No
+
+    - name: Noddle
+      url: https://www.noddle.co.uk
+      twitter: useyournoddle
+      facebook: noodleuk
+      img: noddle.png
       tfa: No
 
     - name: Northwestern Mutual
@@ -115,6 +148,12 @@ websites:
       sms: Yes
       phone: Yes
 
+    - name: Paytrust
+      url: http://paytrust.quicken.com
+      img: paytrust.png
+      tfa: Yes
+      phone: Yes
+
     - name: Pocketsmith
       url: https://www.pocketsmith.com
       img: pocketsmith.png
@@ -125,18 +164,21 @@ websites:
     - name: Popmoney
       url: https://www.popmoney.com
       twitter: popmoney
+      facebook: popmoney
       img: popmoney.png
       tfa: No
 
     - name: President's Choice Financial
       url: https://www.pcfinancial.ca
       twitter: PCFinancial
+      facebook: PCFinancial
       img: presidentschoice.png
       tfa: No
 
     - name: Progressive
       url: https://www.progressive.com
       twitter: progressive
+      facebook: progressive
       img: progressive.png
       tfa: No
 
@@ -172,6 +214,7 @@ websites:
     - name: Shoeboxed
       url: https://www.shoeboxed.com/
       twitter: Shoeboxed
+      facebook: shoeboxed
       img: shoeboxed.png
       tfa: No
 
@@ -187,6 +230,7 @@ websites:
       img: transferwise.png
       tfa: No
       twitter: TransferWise
+      facebook: transferwise
 
     - name: Treasury Direct
       url: https://www.treasurydirect.gov
@@ -197,7 +241,15 @@ websites:
     - name: Valic
       url: https://www.valic.com/
       twitter: VALIC_retire
+      facebook: valic
       img: valic.png
+      tfa: No
+
+    - name: Vitality
+      url: https://www.vitality.co.uk
+      twitter: Vitality_UK
+      facebook: VitalityUK
+      img: vitality.png
       tfa: No
 
     - name: Xero
@@ -211,17 +263,11 @@ websites:
       url: https://yodleemoneycenter.com/
       twitter: Yodlee
       img: yodlee.png
-      tfa: no
+      tfa: No
 
     - name: You Need A Budget (YNAB)
       url: https://www.youneedabudget.com/
       twitter: ynab
+      facebook: iYNAB
       img: ynab.png
-      tfa: no
-
-    - name: ZenPayroll
-      url: https://www.zenpayroll.com
-      img: zenpayroll.png
-      tfa: Yes
-      sms: Yes
-      doc: http://help.zenpayroll.com/customer/portal/articles/969452-two-step-authentication
+      tfa: No

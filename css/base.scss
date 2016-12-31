@@ -183,6 +183,28 @@ input[type=search] {
       padding: 2em;
     }
 
+    .main {
+      .title {
+        @include display-flex();
+        @include flex-direction(row);
+        -ms-flex-align: center;
+        align-items: center;
+
+        .name {
+          -webkit-box-flex: 2;
+          -ms-flex-positive: 2;
+          flex-grow: 2;
+          margin: 0 5px;
+        }
+      }
+
+      .button-group {
+        @include display-flex();
+        @include flex-direction(row);
+        justify-content: space-between;
+      }
+    }
+
     .button {
       padding: 1em;
       width: 100%;
@@ -203,6 +225,34 @@ input[type=search] {
 .ui.table td {
   &.main {
     line-height: 2em;
+
+    .title {
+      @include display-flex();
+      @include flex-direction(row);
+      -ms-flex-align: center;
+      align-items: center;
+
+      a.title-name {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex: 1;
+        padding-left: 0;
+        line-height: 1.5;
+      }
+    }
+
+    .progress-info {
+      @include display-flex();
+      -webkit-justify-content: center;
+      justify-content: center;
+
+      a {
+        width: 120px;
+        min-width: 120px;
+        padding-left: 0;
+      }
+    }
   }
 
   &.icon {
@@ -212,14 +262,16 @@ input[type=search] {
 }
 
 td img.icon,
-.left img {
+.title img {
   -webkit-box-shadow: 0 0 0 .1em rgba(0, 0, 0, .1) inset;
   box-shadow: 0 0 0 .1em rgba(0, 0, 0, .1) inset;
   background-color: white;
   border-radius: 50%;
   float: left;
   padding: 4px 4px;
+  width: 2em;
   height: 2em;
+  width: 2em;
   line-height: 1;
   margin-right: 0.8em;
 }

@@ -39,6 +39,14 @@ websites:
       twitter: cyberghost_EN
       tfa: No
 
+    - name: Detectify
+      url: https://detectify.com/
+      img: detectify.png
+      twitter: detectify
+      facebook: detectify
+      email_address: hello@detectify.com
+      tfa: No
+
     - name: DigiCert
       url: https://www.digicert.com/
       img: digicert.png
@@ -116,6 +124,13 @@ websites:
       software: Yes
       doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
 
+    - name: ThreatConnect
+      url: https://threatconnect.com/
+      img: threatconnect.png
+      tfa: Yes
+      software: Yes
+      doc: http://kb.threatconnect.com/customer/en/portal/articles/2214975-configuring-user-settings-and-two-factor-authentication
+
     - name: ThreatMetrix
       url: https://www.threatmetrix.com/
       img: threatmetrix.png
@@ -135,6 +150,19 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://support.tinfoilsecurity.com/customer/portal/articles/1559364-do-you-support-two-factor-authentication-how-do-i-set-it-up-
+
+    - name: TorGuard
+      url: https://torguard.net
+      img: torguard.png
+      tfa: Yes
+      software: Yes
+
+    - name: TunnelBear
+      url: https://tunnelbear.com/
+      img: tunnelbear.png
+      tfa: No
+      twitter: theTunnelBear
+      facebook: tunnelbear
 
     - name: VPN Unlimited
       url: https://vpnunlimitedapp.com/
