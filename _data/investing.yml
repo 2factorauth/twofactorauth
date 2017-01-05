@@ -73,9 +73,10 @@ websites:
 
     - name: Merrill Edge
       url: https://www.merrilledge.com/
-      twitter: MerrillLynch
       img: merrilledge.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://github.com/2factorauth/twofactorauth/issues/2275
 
     - name: MotifInvesting
       url: https://www.motifinvesting.com/
