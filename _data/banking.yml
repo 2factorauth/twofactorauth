@@ -260,13 +260,11 @@ websites:
       software: Yes
       doc: https://www.dnb.no/privat/kundeservice/innlogging-nettbank.html
 
-    - name: Dutch Bangla Bank Limited (DBBL)
+    - name: Dutch-Bangla Bank Limited (DBBL)
       url: http://www.dutchbanglabank.com/
       img: dbbl.png
-      tfa: Yes
-      hardware: Yes
-      software: Yes
-      doc: http://www.dutchbanglabank.com/internet-banking/2fa-guidelines.html
+      tfa: no
+      facebook: Dutchbanglabankltd
 
     - name: everbank.com
       url: https://everbank.com
