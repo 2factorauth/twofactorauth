@@ -323,6 +323,15 @@ websites:
       hardware: Yes
       doc: https://www.ukraine.com.ua/faq/rekomendatsii-po-zashchite-ot-vzloma-uchetnoj-zapisi.html
 
+    - name: UpCloud
+      url: https://www.upcloud.com
+      img: upcloud.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "SMS is required for password recovery."
+      doc: https://www.upcloud.com/support/two-factor-authentication/
+
     - name: Versio
       url: https://www.versio.nl
       img: versio.png
