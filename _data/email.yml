@@ -55,6 +55,15 @@ websites:
       img: maildotcom.png
       tfa: No
 
+    - name: mail.de
+      url: https://mail.de/
+      img: mailde.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://mail.de/hilfe/u2f-authenticator
+      lang: de
+
     - name: Mail.Ru
       url: https://mail.ru/
       img: mailru.png
