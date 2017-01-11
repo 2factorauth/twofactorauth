@@ -134,11 +134,11 @@ websites:
 
     - name: BofI Federal Bank
       url: https://www.bofifederalbank.com/
-      twitter: BofIFederalBank
-      facebook: BofiFederalBank
-      email_address: customerservice@bofifederalbank.com
       img: bofifederalbank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.mybankofinternet.com/tob/live/usp-core/static/help.html#login_security
 
     - name: Capital One
       url: https://www.capitalone.com/
