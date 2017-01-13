@@ -240,6 +240,15 @@ websites:
       img: tmobile.png
       tfa: No
 
+    - name: Telia
+      url: https://www.telia.se/
+      img: telia.png
+      tfa: Yes
+      software: Yes
+      lang: sv
+      exceptions:
+          text: "2FA is only available for Swedish citizens with BankID."
+
     - name: Telstra
       url: https://www.telstra.com.au/
       twitter: Telstra
