@@ -117,6 +117,15 @@ websites:
           text: "Only available for enterprise accounts."
       doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
 
+    - name: Pwnie Express Pwn Pulse
+      url: https://www.pwnieexpress.com/products/pulse-device-detection
+      img: pwnieexpress.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "TFA Can be enabled on Pwn Pulse Accounts upon customer request."
+      doc: https://www.pwnieexpress.com/support
+
     - name: SSLTrust
       url: http://ssltrust.com.au/
       img: ssltrust.png
