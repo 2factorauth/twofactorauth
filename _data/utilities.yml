@@ -240,12 +240,11 @@ websites:
       img: tmobile.png
       tfa: No
 
-    - name: Telia
+    - name: Telia (Sweden)
       url: https://www.telia.se/
       img: telia.png
       tfa: Yes
       software: Yes
-      lang: sv
       exceptions:
           text: "2FA is only available for Swedish citizens with BankID."
       doc: https://www.telia.se/privat/support/info/logga-in-med-bankid-och-eleg-pa-mitt-telia
