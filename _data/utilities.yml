@@ -137,11 +137,12 @@ websites:
 
     - name: Halebop
       url: https://www.halebop.se/
-      twitter: halebop_sverige
-      facebook: halebop
       img: halebop.png
-      tfa: No
-      lang: sv
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "2FA is only available for Swedish citizens with BankID."
+      doc: https://github.com/2factorauth/twofactorauth/pull/2304#issue-200730083
 
     - name: Optus
       url: http://www.optus.com.au/
