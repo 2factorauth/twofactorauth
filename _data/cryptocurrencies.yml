@@ -1,4 +1,11 @@
 websites:
+    - name: ANXPRO Bitcoin Exchange
+      url: https://anxpro.com/
+      img: anxpro.png
+      tfa: Yes
+      software: Yes
+      doc: https://anxpro.com/pages/security
+
     - name: BitBay
       url: https://bitbay.net/
       img: bitbay.png
@@ -6,14 +13,6 @@ websites:
       sms: Yes
       software: Yes
       doc: https://www.youtube.com/watch?v=KFvoNHgl9Pw
-
-    - name: Bitcoin-Central
-      url: https://bitcoin-central.net
-      img: bitcoincentral.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://bitcoin-central.net/page/profile/security
 
     - name: Bitcoin.de
       url: https://bitcoin.de
@@ -51,14 +50,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://bitpay.com/two-factor
-
-    - name: Bitreserve
-      url: https://bitreserve.org
-      img: bitreserve.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.bitreserve.org/hc/en-us/articles/202409609-How-does-phone-number-verification-work-
 
     - name: Bitstamp
       url: https://bitstamp.net
@@ -106,14 +97,6 @@ websites:
       software: Yes
       doc: https://cex.io/guide#4
 
-    - name: ChangeTip
-      url: https://www.changetip.com/
-      img: changetip.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://blog.changetip.com/changetip-adds-two-factor-authentication-2fa-security/
-
     - name: Circle
       url: https://circle.com
       img: circle.png
@@ -121,12 +104,6 @@ websites:
       sms: Yes
       software: Yes
       doc: https://support.circle.com/hc/en-us/articles/204624600-What-is-two-factor-authentication-2FA-
-
-    - name: CleverCoin
-      url: https://clevercoin.com
-      img: clevercoin.png
-      tfa: Yes
-      software: Yes
 
     - name: Coin Cafe
       url: https://coincafe.com
@@ -178,50 +155,12 @@ websites:
       sms: Yes
       doc: https://support.coinjar.com/kb/using-coinjar/keeping-your-coinjar-secure-with-multi-factor-authentication
 
-    - name: Coinkite
-      url: https://coinkite.com
-      img: coinkite.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://coinkite.com/settings/pws
-
     - name: Coins.ph
       url: https://coins.ph/
       img: coinsph.png
       tfa: Yes
       software: Yes
       doc: https://coinsph.zendesk.com/hc/en-us/sections/200557900-Two-factor-authentication
-
-    - name: Coinsetter
-      url: https://www.coinsetter.com
-      img: coinsetter.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.coinsetter.com/my/security
-
-    - name: Cryptsy
-      url: https://cryptsy.com/
-      img: cryptsy.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.cryptsy.com/pages/security
-
-    - name: Eclipse Mining Consortium
-      url: https://eclipsemc.com
-      img: eclipsemc.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://eclipsemc.com/single-news.php?id=20
-
-    - name: Justcoin Exchange
-      url: https://justcoin.com/
-      img: justcoinexchange.png
-      tfa: Yes
-      software: Yes
-      doc: https://twitter.com/jstcoin/status/445900548743897088
 
     - name: Kraken
       url: https://www.kraken.com/
