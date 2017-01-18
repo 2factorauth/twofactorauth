@@ -32,7 +32,7 @@ Once Ruby and RubyGems are installed and available from the command line, TwoFac
 gem install bundler
 cd ~/twofactorauth
 bundle install
-jekyll serve
+bundle exec jekyll serve
 ```
 
 The TwoFactorAuth website should then be accessible from `http://localhost:4000`.
