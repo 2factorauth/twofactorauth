@@ -100,6 +100,9 @@ function openCategory(category) {
   $('.category h5 i').removeClass('active-icon');
   $('.website-table').css('display', 'none');
 
+  // Place the category being viewed in the URL bar
+  window.location.hash = category;
+
   var icon = $('#' + category + ' h5 i');
   icon.addClass('active-icon');
   if ($(window).width() > 768) {
