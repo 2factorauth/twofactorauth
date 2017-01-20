@@ -377,6 +377,13 @@ websites:
       doc: https://www.versio.nl/nieuws/twofactor-authenticatie-nu-beschikbaar-voor-uw-klantenaccount-205
       lang: nl
 
+    - name: VPS Server
+      url: https://www.vpsserver.com/
+      img: vpsserver.png
+      tfa: Yes
+      software: Yes
+      doc: https://github.com/2factorauth/twofactorauth/pull/2311#issuecomment-273424695
+
     - name: Vultr
       url: https://www.vultr.com/
       img: vultr.png
