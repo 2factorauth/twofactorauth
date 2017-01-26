@@ -105,6 +105,14 @@ websites:
       software: Yes
       doc: https://privacy.com/faq
 
+    - name: receivabl.es
+      url: https://www.receivabl.es
+      img: receivables.png
+      tfa: Yes
+      sms: Yes
+      exceptions:
+         text: "2FA is only available for payment accounts (Customers), not recipient accounts (Users) which are authenticated via Xero."
+
     - name: Skrill
       url: https://skrill.com/
       img: skrill.png
