@@ -106,6 +106,9 @@ begin
   # Load each section, check for errors such as invalid syntax
   # as well as if an image is missing
   sections = YAML.load_file('_data/sections.yml')
+  # Check section alphabetization
+  error("section.yml is not alphabetized by name") \
+    if sections != sections.sort_by { |section| section['id'].downcase }
   sections.each do |section|
     data = YAML.load_file('_data/' + section['id'] + '.yml')
     websites = data['websites']
