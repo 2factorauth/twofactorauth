@@ -205,9 +205,10 @@ websites:
 
     - name: HMRC
       url: https://hmrc.gov.uk
-      twitter: HMRCgovuk
       img: hmrc.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-sms-text-messages
 
     - name: IEEE
       url: https://www.ieee.org
