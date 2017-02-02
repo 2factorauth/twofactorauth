@@ -351,6 +351,7 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://www.handelsbanken.se/shb/INeT/ICentSv.nsf/Default/qAE99695C4C1D033DC12579120036EB43?Opendocument
+      lang: sv
 
     - name: HSBC
       url: https://www.hsbc.com
@@ -380,6 +381,7 @@ websites:
       tfa: Yes
       hardware: Yes
       doc: http://www.intesasanpaolo.com/servizi-multicanale/sicurezza.jsp
+      lang: it
 
     - name: La Banque Postale
       url: https://www.labanquepostale.fr/
@@ -467,12 +469,14 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://www.nordea.se/privat/vardagstjanster/internet-mobil-telefon/bank-id.html
+      lang: sv
 
     - name: Nordnet
       url: https://www.nordnet.fi/
       img: nordnet.png
       tfa: No
       twitter: nordnetFI
+      lang: fi
 
     - name: Northeast Credit Union
       url: https://necu.org
@@ -538,6 +542,7 @@ websites:
       doc: http://www.rb.cz/firemni-finance/podnikatele-a-male-firmy/prime-bankovnictvi/sluzby-pro-firemni-ucty/bezpecnost-internetoveho-bankovnictvi/
       tfa: Yes
       hardware: Yes
+      lang: cs
 
     - name: RBC Royal Bank
       url: http://www.rbcroyalbank.com
@@ -602,6 +607,7 @@ websites:
       tfa: Yes
       hardware: Yes
       doc: http://www.seb.se/pow/wcp/index.asp?ss=/pow/wcp/templates/sebcollection.cfmc.asp%3FDUID%3DDUID_623697DCF55C4576C1256DEF00637BE3
+      lang: sv
 
     - name: Service Credit Union
       url: https://www.servicecu.org/
@@ -647,6 +653,7 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://hjalp.swedbank.se/logga-in/index.htm
+      lang: sv
 
     - name: Tangerine
       url: https://www.tangerine.ca/
@@ -670,6 +677,7 @@ websites:
       sms: Yes
       software: Yes
       doc: http://old.tbcbank.ge/en/private/banking/tbc_digipass/
+      lang: ka
 
     - name: TD Bank
       url: https://www.tdbank.com
@@ -792,3 +800,4 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://www.zkb.ch/de/pr/pk/efinance/ebanking/login-verfahren.html
+      lang: de
