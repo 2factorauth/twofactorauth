@@ -280,12 +280,6 @@ websites:
       twitter: Monster
       facebook: monster
 
-    - name: Nest
-      url: https://nest.com
-      twitter: nestsupport
-      img: nest.png
-      tfa: No
-
     - name: Office 365
       url: http://office.microsoft.com/en-us/business/
       img: office365.png
@@ -299,7 +293,7 @@ websites:
       url: https://www.onshape.com/
       img: onshape.png
       tfa: Yes
-      software: Yes
+     software: Yes
       doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
 
     - name: Pastebin
@@ -365,13 +359,6 @@ websites:
       exceptions:
           text: "SMS only available as a backup to Google Authenticator."
 
-    - name: Solar.web
-      url: https://www.solarweb.com
-      img: solarweb.png
-      tfa: No
-      twitter: FroniusUSASolar
-      facebook: FroniusUSASolarEnergy
-
     - name: StartJOIN
       url: https://www.startjoin.com/
       img: startjoin.png
@@ -390,12 +377,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.toodledo.com/info/help.php#168
-
-    - name: Total Connect Comfort
-      url: https://www.mytotalconnectcomfort.com
-      twitter: Honeywell_Home
-      img: totalconnect.png
-      tfa: No
 
     - name: Trello
       url: https://trello.com
