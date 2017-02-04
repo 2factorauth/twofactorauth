@@ -249,12 +249,6 @@ websites:
       twitter: Monster
       facebook: monster
 
-    - name: Nest
-      url: https://nest.com
-      twitter: nestsupport
-      img: nest.png
-      tfa: No
-
     - name: Office 365
       url: http://office.microsoft.com/en-us/business/
       img: office365.png
@@ -334,24 +328,11 @@ websites:
       exceptions:
           text: "SMS only available as a backup to Google Authenticator."
 
-    - name: Solar.web
-      url: https://www.solarweb.com
-      img: solarweb.png
-      tfa: No
-      twitter: FroniusUSASolar
-      facebook: FroniusUSASolarEnergy
-
     - name: StartJOIN
       url: https://www.startjoin.com/
       img: startjoin.png
       tfa: Yes
       software: Yes
-
-    - name: Total Connect Comfort
-      url: https://www.mytotalconnectcomfort.com
-      twitter: Honeywell_Home
-      img: totalconnect.png
-      tfa: No
 
     - name: Upwork
       url: https://www.upwork.com
