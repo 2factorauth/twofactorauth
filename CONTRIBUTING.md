@@ -120,9 +120,11 @@ websites:
     software: Yes
     hardware: Yes
     doc: <link to site TFA documentation>
+    lang: <language code>
 ```
 
 The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
+The field `lang:` is only used for non-English websites.
 
 #### Adding a site that *supports* TFA
 
