@@ -1,12 +1,7 @@
 require 'yaml'
 require 'fastimage'
+require 'kwalify'
 @output = 0
-
-# Should the script ignore checking for Twitter handles?
-@ignore_twitter = false
-
-# YAML tags that are obligatory to all listed sites.
-@obligatory_tags = %w(url img name)
 
 # YAML tags related to TFA 'YES'.
 @tfa_yes_tags = %w(doc)
@@ -34,49 +29,23 @@ def error(msg)
 end
 
 # Test an individual YAML tag
-# rubocop:disable AbcSize,CyclomaticComplexity,MethodLength,PerceivedComplexity
-def test_tag(tag, required, tfa_state, website, only_true = false)
-  if website[tag].nil? && website['tfa'] == tfa_state && required
-    error("#{website['name']}: The required YAML tag \'#{tag}\' tag is "\
-          'not present.')
-  end
-  return if website[tag].nil?
-  if website['tfa'] != tfa_state
-    error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
-          "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.")
-  end
-  return unless only_true && website[tag] != true
-  error("#{website['name']}: The YAML tag \'#{tag}\' should either have"\
-        " a value set to \'Yes\' or not be used at all. (Current value:"\
-        " \'#{website[tag]}\')")
+# rubocop:disable AbcSize,CyclomaticComplexity
+def test_tag(tag, tfa_state, website)
+  return if website[tag].nil? || website['tfa'] == tfa_state
+  error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
+        "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.")
 end
-# rubocop:enable PerceivedComplexity
 
 # Check the YAML tags
 def test_tags(website)
-  tfa = website['tfa']
-  # rubocop:disable DoubleNegation
-  if !!tfa != tfa
-    error("#{website['name']}: The YAML tag \'{tfa}\' should be either "\
-          "\'Yes\' or \'No\'. (#{tfa})")
-  end
-  # rubocop:endable DoubleNegation
-
-  # Test tags that are obligatory
-  @obligatory_tags.each do |t|
-    next unless website[t].nil?
-    error("#{website['name']}: The required YAML tag \'#{t}\' tag is not"\
-          ' present.')
-  end
-
   # Test tags associated with TFA 'YES'
-  @tfa_yes_tags.each { |tfa_form| test_tag(tfa_form, false, true, website) }
+  @tfa_yes_tags.each { |tfa_form| test_tag(tfa_form, true, website) }
 
   # Test TFA form tags'
-  @tfa_forms.each { |tfa_form| test_tag(tfa_form, false, true, website, true) }
+  @tfa_forms.each { |tfa_form| test_tag(tfa_form, true, website) }
 
   # Test tags associated with TFA 'NO'
-  @tfa_no_tags.each { |tfa_form| test_tag(tfa_form, false, false, website) }
+  @tfa_no_tags.each { |tfa_form| test_tag(tfa_form, false, website) }
 end
 
 def test_img(img, name, imgs)
@@ -99,7 +68,7 @@ def test_img(img, name, imgs)
   error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
           " currently #{img_size} bytes.")
 end
-# rubocop:enable AbcSize,CyclomaticComplexity,MethodLength
+# rubocop:enable AbcSize,CyclomaticComplexity
 
 begin
 
@@ -108,7 +77,13 @@ begin
   sections = YAML.load_file('_data/sections.yml')
   sections.each do |section|
     data = YAML.load_file('_data/' + section['id'] + '.yml')
+    schema = YAML.load_file('websites_schema.yml')
     websites = data['websites']
+    validator = Kwalify::Validator.new(schema)
+    errors = validator.validate(data)
+    if errors && !errors.empty?
+      errors.each { |e| error("[#{section['id']}/#{e.path}] #{e.message}") }
+    end
 
     # Check section alphabetization
     error("_data/#{section['id']}.yml is not alphabetized by name") \
