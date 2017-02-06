@@ -31,6 +31,9 @@ mapping:
           "phone":
             type: bool 
             pattern: /true/
+          "email":
+            type: bool
+            pattern: /true/
           "exceptions":
             type: map
             mapping:
@@ -43,11 +46,9 @@ mapping:
             type: str
           "facebook":
             type: str
-          "email":
-            type: bool
-            pattern: /true/
           "email_address":
             type: str
+            pattern: /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
           "status":
             type: str
           "lang":
