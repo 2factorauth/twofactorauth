@@ -63,8 +63,8 @@ var jets = new Jets({
       isSearching = true;
     }
   },
-  manualContentHandling: function(tr) {
-    return $(tr).find('td:first a').text();
+  manualContentHandling: function(tag) {
+    return $(tag).find('.title > a.name').text();
   }
 });
 
