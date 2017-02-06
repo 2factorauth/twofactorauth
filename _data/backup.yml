@@ -24,7 +24,7 @@ websites:
     doc: https://www.backblaze.com/blog/two-factor-verification-for-backblaze/
 
   - name: Box
-    url: https://app.box.com/
+    url: https://www.box.com/
     img: box.png
     tfa: Yes
     sms: Yes
@@ -51,7 +51,7 @@ websites:
     sms: Yes
     software: Yes
     hardware: Yes
-    doc: https://www.dropbox.com/help/363/en
+    doc: https://www.dropbox.com/en/help/363
 
   - name: Evernote
     url: https://evernote.com
@@ -106,7 +106,7 @@ websites:
     facebook: JustCloudStorage
 
   - name: Mega
-    url: https://mega.co.nz/
+    url: https://mega.nz/
     twitter: MEGAprivacy
     img: mega.png
     tfa: No
@@ -126,7 +126,7 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
-    doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+    doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
 
   - name: Pogoplug
     url: https://pogoplug.com/
@@ -149,7 +149,7 @@ websites:
     tfa: Yes
     email: Yes
     software: Yes
-    doc: https://www.panterranetworks.com/smartbox/sb_features/sbf_security.php
+    doc: https://www.panterranetworks.com/smartbox/sb-features/sbf-security.php
 
   - name: SpiderOak
     url: https://spideroak.com
@@ -166,7 +166,7 @@ websites:
     facebook: SugarSync
 
   - name: Sync
-    url: https://sync.com
+    url: https://www.sync.com
     img: sync.png
     software: Yes
     email: Yes
@@ -214,11 +214,11 @@ websites:
     software: Yes
     exceptions:
         text: "SMS-capable phone required for initial setup."
-    doc: https://yandex.com/support/passport/authorization/twofa.xml
+    doc: https://yandex.com/support/passport/authorization/twofa.html
 
   - name: Zetta.net
-    url: http://zetta.net/
+    url: http://www.zetta.net/
     img: zetta.png
     tfa: Yes
     software: Yes
-    doc: http://www.zetta.net/blog/set-zetta-net-two-factor-authentication/
+    doc: http://www.zetta.net/about/blog/how-set-zetta-two-factor-authentication/
