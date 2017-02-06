@@ -82,9 +82,10 @@ begin
     errors = validator.validate(data)
 
     if errors && !errors.empty?
-      errors.each |e|
+      errors.each do |e|
         index = e.path.split('/').last.to_i
         error("#{websites.at(index)['name']}: #{e.message}")
+      end
     end
 
     # Check section alphabetization
