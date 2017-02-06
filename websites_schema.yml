@@ -1,0 +1,55 @@
+type: map
+mapping:
+  "websites":
+    type: seq
+    sequence:
+      - type: map
+        mapping:
+          "name":
+            type: str
+            required: yes
+            unique: yes
+          "url":
+            type: str
+            required: yes
+            unique: yes
+          "img":
+            type: str
+            required: yes
+          "tfa":
+            type: bool
+            required: yes
+          "software":
+            type: bool 
+            pattern: /true/
+          "hardware":
+            type: bool 
+            pattern: /true/
+          "sms":
+            type: bool 
+            pattern: /true/
+          "phone":
+            type: bool 
+            pattern: /true/
+          "email":
+            type: bool
+            pattern: /true/
+          "exceptions":
+            type: map
+            mapping:
+              "text":
+                type: str
+                required: yes
+          "doc":
+            type: str
+          "twitter":
+            type: str
+          "facebook":
+            type: str
+          "email_address":
+            type: str
+            pattern: /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+          "status":
+            type: str
+          "lang":
+            type: str

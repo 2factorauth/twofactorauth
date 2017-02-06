@@ -3,6 +3,8 @@ language: ruby
 cache: bundler
 rvm:
     - 2.4.0
+before_install:
+  - gem update --system --no-doc
 notifications:
     email: false
     slack:
