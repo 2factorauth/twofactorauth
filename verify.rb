@@ -84,11 +84,8 @@ begin
     websites = data['websites']
     errors = validator.validate(data)
 
-    if errors && !errors.empty?
-      errors.each do |e|
-        index = e.path.split('/').last.to_i
-        error("#{websites.at(index)['name']}: #{e.message}")
-      end
+    errors.each do |e|
+      error("#{websites.at(e.path.split('/').last.to_i)['name']}: #{e.message}")
     end
 
     # Check section alphabetization
