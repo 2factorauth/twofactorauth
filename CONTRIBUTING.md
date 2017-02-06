@@ -120,7 +120,7 @@ websites:
     software: Yes
     hardware: Yes
     doc: <link to site TFA documentation>
-    lang: <language code>
+    lang: <ISO 639-1 language code>
 ```
 
 The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
