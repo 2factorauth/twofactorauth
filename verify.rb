@@ -70,19 +70,22 @@ def test_img(img, name, imgs)
 end
 # rubocop:enable AbcSize,CyclomaticComplexity
 
+# Load each section, check for errors such as invalid syntax
+# as well as if an image is missing
 begin
-
-  # Load each section, check for errors such as invalid syntax
-  # as well as if an image is missing
   sections = YAML.load_file('_data/sections.yml')
+  schema = YAML.load_file('websites_schema.yml')
+  validator = Kwalify::Validator.new(schema)
   sections.each do |section|
     data = YAML.load_file('_data/' + section['id'] + '.yml')
-    schema = YAML.load_file('websites_schema.yml')
     websites = data['websites']
-    validator = Kwalify::Validator.new(schema)
     errors = validator.validate(data)
+
     if errors && !errors.empty?
-      errors.each { |e| error("[#{section['id']}/#{e.path}] #{e.message}") }
+      errors.each do |e|
+        index = e.path.split('/').last.to_i
+        error("#{websites.at(index)['name']}: #{e.message}")
+      end
     end
 
     # Check section alphabetization
@@ -106,12 +109,12 @@ begin
   exit 1 if @output > 0
 
 rescue Psych::SyntaxError => e
-  puts 'Error in a YAML file.'
+  puts "<------------ ERROR in a YAML file ------------>\n"
   puts e
   exit 1
 rescue => e
   puts e
   exit 1
 else
-  puts 'No errors. You\'re good to go!'
+  puts "<------------ No errors. You\'re good to go! ------------>\n"
 end
