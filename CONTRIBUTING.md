@@ -124,7 +124,7 @@ websites:
 ```
 
 The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
-The field `lang:` is only used for non-English websites.
+The field `lang:` is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
 
 #### Adding a site that *supports* TFA
 
