@@ -91,7 +91,10 @@ websites:
       url: http://www.slack.com
       twitter: SlackHQ
       img: slack.png
-      tfa: No
+      tfa: Yes
+      otp: Yes
+      u2f: No
+      doc: https://get.slack.help/hc/en-us/articles/204509068-Set-up-two-factor-authentication
 
     - name: ToutApp
       url: http://www1.toutapp.com/
