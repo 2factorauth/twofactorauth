@@ -111,7 +111,10 @@ websites:
       url: http://www.zendesk.com
       twitter: Zendesk
       img: zendesk.png
-      tfa: No
+      tfa: Yes
+      otp: Yes
+      u2f: No
+      doc: https://support.zendesk.com/hc/en-us/articles/206373587-Using-2-factor-authentication
 
     - name: PhraseApp
       url: https://phraseapp.com

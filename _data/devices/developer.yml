@@ -111,7 +111,10 @@ websites:
       url: https://www.pythonanywhere.com
       twitter: pythonanywhere
       img: pythonanywhere.png
-      tfa: No
+      tfa: Yes
+      otp: Yes
+      u2f: No
+      doc: https://blog.pythonanywhere.com/144/
 
     - name: Sentry
       url: https://getsentry.com/
