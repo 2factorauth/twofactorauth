@@ -31,6 +31,9 @@ websites:
       img: facebook.png
       tfa: Yes
       otp: Yes
+      u2f: Yes
+      exceptions:
+          text: "Google Chrome browser required for U2F."
       doc: https://www.authy.com/add-2-factor-authentication-facebook
 
     - name: Google+
