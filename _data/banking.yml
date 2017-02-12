@@ -716,10 +716,11 @@ websites:
 
     - name: Umpqua Bank
       url: https://www.umpquabank.com/
-      twitter: askumpquabank
-      facebook: umpquabank
       img:  umpqua.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.umpquabank.com/personal-banking/online-banking-and-billpay/security-faqs/
 
     - name: Union Bank
       url: https://www.unionbank.com/
