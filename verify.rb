@@ -7,7 +7,7 @@ require 'kwalify'
 @tfa_yes_tags = %w(doc)
 
 # YAML tags related to TFA 'NO'.
-@tfa_no_tags = %w(status twitter facebook email_address)
+@tfa_no_tags = %w(status twitter facebook email_address lang)
 
 # TFA forms
 @tfa_forms = %w(email hardware software sms phone)
