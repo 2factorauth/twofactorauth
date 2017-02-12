@@ -74,7 +74,7 @@ end
 # as well as if an image is missing
 begin
   sections = YAML.load_file('_data/sections.yml')
-  # Check sections alphabetization
+  # Check sections.yml alphabetization
   error('section.yml is not alphabetized by name') \
     if sections != sections.sort_by { |section| section['id'].downcase }
   schema = YAML.load_file('websites_schema.yml')
