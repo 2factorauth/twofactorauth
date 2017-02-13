@@ -18,15 +18,16 @@ require 'kwalify'
 ## validator class for websites
 class WebsitesValidator < Kwalify::Validator
   ## load schema definition
-  @@schema = Kwalify::Yaml.load_file('websites_schema.yml')
-  
-  
+  @schema = Kwalify::Yaml.load_file('websites_schema.yml')
+
   # YAML tags related to TFA
-  @@tfa_tags = { true => [*@tfa_forms, 'doc'],
-                 false => %w(status twitter facebook email_address lang) }.freeze
+  @tfa_tags = { 
+    true => [*@tfa_forms, 'doc'],
+    false => %w(status twitter facebook email_address lang) 
+    }.freeze
 
   def initialize
-    super(@@schema)
+    super(@schema)
   end
 
   ## hook method called by Validator#validate()
