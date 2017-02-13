@@ -73,7 +73,7 @@ begin
     imgs = Dir["img/#{section['id']}/*"]
 
     websites.each do |website|
-      @tfa_tags[!website['tfa']] do |tag|
+      @tfa_tags[!website['tfa']].each do |tag|
         next if website[tag].nil?
         error("\'#{tag}\' should NOT be "\
             "present when tfa: #{website['tfa'] ? 'true' : 'false'}.")
