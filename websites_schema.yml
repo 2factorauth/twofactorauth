@@ -4,6 +4,7 @@ mapping:
     type: seq
     sequence:
       - type: map
+        name: Website
         mapping:
           "name":
             type: str
