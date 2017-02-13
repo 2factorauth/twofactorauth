@@ -3,9 +3,6 @@ require 'fastimage'
 require 'kwalify'
 @output = 0
 
-# TFA forms
-@tfa_forms = %w(email hardware software sms phone)
-
 # Image max size (in bytes)
 @img_max_size = 2500
 
@@ -22,6 +19,9 @@ class WebsitesValidator < Kwalify::Validator
                 true => [*@tfa_forms, 'doc'],
                 false => %w(status twitter facebook email_address lang)
               }.freeze
+
+  # TFA forms
+  @tfa_forms = %w(email hardware software sms phone).freeze
 
   def initialize(schema)
     super(schema)
