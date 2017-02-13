@@ -76,8 +76,9 @@ begin
 
     websites.each do |website|
       @tfa_tags[!website['tfa']].each do |tag|
+        next if website[tag].nil?
         error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
-              "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.") unless website[tag].nil?
+              "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.")
       end
       test_img("img/#{section['id']}/#{website['img']}", website['name'],
                imgs)
