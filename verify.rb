@@ -3,7 +3,7 @@ require 'fastimage'
 require 'kwalify'
 @output = 0
 
-# YAML tags related to TFA 'YES'.
+# YAML tags related to TFA
 @tfa_tags = { true => [*@tfa_forms, 'doc'],
               false => %w(status twitter facebook email_address lang) }
 
@@ -18,6 +18,29 @@ require 'kwalify'
 
 # Image format used for all images in the 'img/' directories.
 @img_extension = '.png'
+
+## validator class for websites
+class WebsitesValidator < Kwalify::Validator
+
+   ## load schema definition
+   @@schema = Kwalify::Yaml.load_file('websites_schema.yaml')
+
+   def initialize()
+      super(@@schema)
+   end
+
+   ## hook method called by Validator#validate()
+   def validate_hook(value, rule, path, errors)
+      case rule.name
+      when 'Website'
+        @tfa_tags[website['tfa']].each do |tag|
+          next if website[tag].nil?
+          errors << Kwalify::ValidationError.new("\'#{tag}\' should NOT be "\
+                "present when tfa: #{website['tfa'] ? 'true' : 'false'}.",path)
+         end
+      end
+   end
+end
 
 # Send error message
 def error(msg)
