@@ -23,23 +23,23 @@ require 'kwalify'
 class WebsitesValidator < Kwalify::Validator
 
    ## load schema definition
-   @@schema = Kwalify::Yaml.load_file('websites_schema.yml')
+  @@schema = Kwalify::Yaml.load_file('websites_schema.yml')
 
-   def initialize()
-      super(@@schema)
-   end
+  def initialize()
+    super(@@schema)
+  end
 
-   ## hook method called by Validator#validate()
-   def validate_hook(value, rule, path, errors)
-      case rule.name
-      when 'Website'
-        @tfa_tags[website['tfa']].each do |tag|
-          next if website[tag].nil?
-          errors << Kwalify::ValidationError.new("\'#{tag}\' should NOT be "\
-                "present when tfa: #{website['tfa'] ? 'true' : 'false'}.",path)
-         end
+  ## hook method called by Validator#validate()
+  def validate_hook(value, rule, path, errors)
+    case rule.name
+    when 'Website'
+      @tfa_tags[value['tfa']].each do |tag|
+        next if value[tag].nil?
+        errors << Kwalify::ValidationError.new("\'#{tag}\' should NOT be "\
+            "present when tfa: #{value['tfa'] ? 'true' : 'false'}.", path)
       end
-   end
+    end
+  end
 end
 
 # Send error message
