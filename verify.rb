@@ -3,10 +3,6 @@ require 'fastimage'
 require 'kwalify'
 @output = 0
 
-# YAML tags related to TFA
-@tfa_tags = { true => [*@tfa_forms, 'doc'],
-              false => %w(status twitter facebook email_address lang) }
-
 # TFA forms
 @tfa_forms = %w(email hardware software sms phone)
 
@@ -21,11 +17,15 @@ require 'kwalify'
 
 ## validator class for websites
 class WebsitesValidator < Kwalify::Validator
-
-   ## load schema definition
+  ## load schema definition
   @@schema = Kwalify::Yaml.load_file('websites_schema.yml')
+  
+  
+  # YAML tags related to TFA
+  @@tfa_tags = { true => [*@tfa_forms, 'doc'],
+                 false => %w(status twitter facebook email_address lang) }.freeze
 
-  def initialize()
+  def initialize
     super(@@schema)
   end
 
@@ -98,11 +98,6 @@ begin
     imgs = Dir["img/#{section['id']}/*"]
 
     websites.each do |website|
-      @tfa_tags[!website['tfa']].each do |tag|
-        next if website[tag].nil?
-        error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
-              "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.")
-      end
       test_img("img/#{section['id']}/#{website['img']}", website['name'],
                imgs)
     end
