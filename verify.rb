@@ -5,9 +5,9 @@ require 'kwalify'
 
 # YAML tags related to TFA
 @tfa_tags = {
-              true => %w(email hardware software sms phone doc),
-              false => %w(status twitter facebook email_address lang)
-            }.freeze
+               true => %w(email hardware software sms phone doc),
+               false => %w(status twitter facebook email_address lang)
+  }.freeze
 
 # Image max size (in bytes)
 @img_max_size = 2500
