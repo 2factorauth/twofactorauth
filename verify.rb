@@ -4,10 +4,8 @@ require 'kwalify'
 @output = 0
 
 # YAML tags related to TFA 'YES'.
-@tfa_yes_tags = %w(doc)
-
-# YAML tags related to TFA 'NO'.
-@tfa_no_tags = %w(status twitter facebook email_address lang)
+@tfa_tags = { true => [*@tfa_forms, 'doc'],
+              false => %w(status twitter facebook email_address lang) }
 
 # TFA forms
 @tfa_forms = %w(email hardware software sms phone)
@@ -28,26 +26,7 @@ def error(msg)
   puts "#{@output}. #{msg}"
 end
 
-# Test an individual YAML tag
 # rubocop:disable AbcSize,CyclomaticComplexity
-def test_tag(tag, tfa_state, website)
-  return if website[tag].nil? || website['tfa'] == tfa_state
-  error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
-        "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.")
-end
-
-# Check the YAML tags
-def test_tags(website)
-  # Test tags associated with TFA 'YES'
-  @tfa_yes_tags.each { |tfa_form| test_tag(tfa_form, true, website) }
-
-  # Test TFA form tags'
-  @tfa_forms.each { |tfa_form| test_tag(tfa_form, true, website) }
-
-  # Test tags associated with TFA 'NO'
-  @tfa_no_tags.each { |tfa_form| test_tag(tfa_form, false, website) }
-end
-
 def test_img(img, name, imgs)
   # Exception if image file not found
   raise "#{name} image not found." unless File.exist?(img)
@@ -96,7 +75,10 @@ begin
     imgs = Dir["img/#{section['id']}/*"]
 
     websites.each do |website|
-      test_tags(website)
+      @tfa_tags[!website['tfa']].each do |tag|
+        error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
+              "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.") unless website[tag].nil?
+      end
       test_img("img/#{section['id']}/#{website['img']}", website['name'],
                imgs)
     end
