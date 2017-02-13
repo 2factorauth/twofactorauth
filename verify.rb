@@ -3,6 +3,11 @@ require 'fastimage'
 require 'kwalify'
 @output = 0
 
+# YAML tags related to TFA
+@tfa_tags = { true => %w(email hardware software sms phone doc),
+              false => %w(status twitter facebook email_address lang)
+            }.freeze
+
 # Image max size (in bytes)
 @img_max_size = 2500
 
@@ -11,34 +16,6 @@ require 'kwalify'
 
 # Image format used for all images in the 'img/' directories.
 @img_extension = '.png'
-
-## validator class for websites
-class WebsitesValidator < Kwalify::Validator
-  # YAML tags related to TFA
-  @tfa_tags = {
-                true => [*@tfa_forms, 'doc'],
-                false => %w(status twitter facebook email_address lang)
-              }.freeze
-
-  # TFA forms
-  @tfa_forms = %w(email hardware software sms phone).freeze
-
-  def initialize(schema)
-    super(schema)
-  end
-
-  ## hook method called by Validator#validate()
-  def validate_hook(value, rule, path, errors)
-    case rule.name
-    when 'Website'
-      @tfa_tags[value['tfa']].each do |tag|
-        next if value[tag].nil?
-        errors << Kwalify::ValidationError.new("\'#{tag}\' should NOT be "\
-            "present when tfa: #{value['tfa'] ? 'true' : 'false'}.", path)
-      end
-    end
-  end
-end
 
 # Send error message
 def error(msg)
@@ -75,9 +52,9 @@ end
 begin
   sections = YAML.load_file('_data/sections.yml')
   schema = YAML.load_file('websites_schema.yml')
-  validator = WebsitesValidator.new(schema)
+  validator = Kwalify::Validator.new(schema)
   sections.each do |section|
-    data = YAML.load_file('_data/' + section['id'] + '.yml')
+    data = YAML.load_file("_data/#{section['id']}.yml")
     websites = data['websites']
     errors = validator.validate(data)
 
@@ -96,6 +73,11 @@ begin
     imgs = Dir["img/#{section['id']}/*"]
 
     websites.each do |website|
+      @tfa_tags[!website['tfa']] do |tag|
+        next if website[tag].nil?
+        error("\'#{tag}\' should NOT be "\
+            "present when tfa: #{website['tfa'] ? 'true' : 'false'}.")
+      end
       test_img("img/#{section['id']}/#{website['img']}", website['name'],
                imgs)
     end
