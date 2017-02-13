@@ -23,7 +23,7 @@ require 'kwalify'
 class WebsitesValidator < Kwalify::Validator
 
    ## load schema definition
-   @@schema = Kwalify::Yaml.load_file('websites_schema.yaml')
+   @@schema = Kwalify::Yaml.load_file('websites_schema.yml')
 
    def initialize()
       super(@@schema)
