@@ -4,7 +4,8 @@ require 'kwalify'
 @output = 0
 
 # YAML tags related to TFA
-@tfa_tags = { true => %w(email hardware software sms phone doc),
+@tfa_tags = {
+              true => %w(email hardware software sms phone doc),
               false => %w(status twitter facebook email_address lang)
             }.freeze
 
