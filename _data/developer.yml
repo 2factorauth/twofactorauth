@@ -416,3 +416,12 @@ websites:
       facebook: ZapierApp
       img: zapier.png
       tfa: No
+      
+ - name: SecSign
+    url: https://www.secsign.com/
+    img: sec-sign.png
+    tfa: No
+    sms: No
+    software: Yes
+    exceptions:
+        text: "Two factor authentication via mobile phone"
