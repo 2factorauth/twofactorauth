@@ -254,9 +254,11 @@ websites:
     - name: Discover
       url: https://www.discover.com/
       img: discover.png
-      tfa: No
-      twitter: Discover
-      facebook: discover
+      tfa: Yes
+      email: Yes
+      phone: Yes
+      sms: Yes
+      doc: https://www.discover.com/credit-cards/member-benefits/security-center/protect-account/account-verification.html
 
     - name: DNB
       url: https://www.dnb.no/
