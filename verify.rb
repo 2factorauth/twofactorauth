@@ -3,14 +3,13 @@ require 'fastimage'
 require 'kwalify'
 @output = 0
 
-# YAML tags related to TFA 'YES'.
-@tfa_yes_tags = %w(doc)
-
-# YAML tags related to TFA 'NO'.
-@tfa_no_tags = %w(status twitter facebook email_address)
-
-# TFA forms
-@tfa_forms = %w(email hardware software sms phone)
+# YAML tags related to TFA
+@tfa_tags = {
+  # YAML tags for TFA Yes
+  true => %w(email hardware software sms phone doc),
+  # YAML tags for TFA No
+  false => %w(status twitter facebook email_address lang)
+}.freeze
 
 # Image max size (in bytes)
 @img_max_size = 2500
@@ -28,26 +27,7 @@ def error(msg)
   puts "#{@output}. #{msg}"
 end
 
-# Test an individual YAML tag
 # rubocop:disable AbcSize,CyclomaticComplexity
-def test_tag(tag, tfa_state, website)
-  return if website[tag].nil? || website['tfa'] == tfa_state
-  error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
-        "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.")
-end
-
-# Check the YAML tags
-def test_tags(website)
-  # Test tags associated with TFA 'YES'
-  @tfa_yes_tags.each { |tfa_form| test_tag(tfa_form, true, website) }
-
-  # Test TFA form tags'
-  @tfa_forms.each { |tfa_form| test_tag(tfa_form, true, website) }
-
-  # Test tags associated with TFA 'NO'
-  @tfa_no_tags.each { |tfa_form| test_tag(tfa_form, false, website) }
-end
-
 def test_img(img, name, imgs)
   # Exception if image file not found
   raise "#{name} image not found." unless File.exist?(img)
@@ -77,7 +57,7 @@ begin
   schema = YAML.load_file('websites_schema.yml')
   validator = Kwalify::Validator.new(schema)
   sections.each do |section|
-    data = YAML.load_file('_data/' + section['id'] + '.yml')
+    data = YAML.load_file("_data/#{section['id']}.yml")
     websites = data['websites']
     errors = validator.validate(data)
 
@@ -96,7 +76,11 @@ begin
     imgs = Dir["img/#{section['id']}/*"]
 
     websites.each do |website|
-      test_tags(website)
+      @tfa_tags[!website['tfa']].each do |tag|
+        next if website[tag].nil?
+        error("\'#{tag}\' should NOT be "\
+            "present when tfa: #{website['tfa'] ? 'true' : 'false'}.")
+      end
       test_img("img/#{section['id']}/#{website['img']}", website['name'],
                imgs)
     end
