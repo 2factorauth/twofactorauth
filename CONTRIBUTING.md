@@ -82,14 +82,13 @@ View the complete list in the [EXCLUSION.md file][exclude].
 
 ## New Sections
 
-To add a new section, modify the `sections` value in [main.yml](_data/main.yml)
+To add a new section, modify the `sections` value in [sections.yml](_data/sections.yml)
 and follow the template below:
 
 ```yml
-sections:
-  - id: category-id
-    title: Category Name
-    icon: icon-class
+- id: category-id
+  title: Category Name
+  icon: icon-class
 ```
 
 Then create a new file in the `_data` directory with the same name as your section's
@@ -121,9 +120,11 @@ websites:
     software: Yes
     hardware: Yes
     doc: <link to site TFA documentation>
+    lang: <ISO 639-1 language code>
 ```
 
 The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
+The field `lang:` is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
 
 #### Adding a site that *supports* TFA
 

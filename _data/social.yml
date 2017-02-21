@@ -41,12 +41,21 @@ websites:
       img: deviantart.png
       tfa: No
 
+    - name: Ello
+      url: https://ello.co
+      twitter: ellohype
+      facebook: ellohype
+      email_address: suggestions@ello.co
+      img: ello.png
+      tfa: No
+
     - name: Facebook
       url: https://facebook.com
       img: facebook.png
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
       exceptions:
           text: "SMS required for 2FA. 1 account per phone number."
       doc: https://www.facebook.com/help/148233965247823

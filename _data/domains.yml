@@ -199,6 +199,7 @@ websites:
       url: http://www.godaddy.com/
       tfa: Yes
       sms: Yes
+      software: Yes
       doc: https://www.godaddy.com/help/enabling-two-step-authentication-for-your-godaddy-account-7502
 
     - name: Google Domains
@@ -268,6 +269,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://help.iwantmyname.com/customer/portal/articles/1139898
+
+    - name: Joker.com
+      url: https://joker.com
+      img: joker.png
+      tfa: Yes
+      software: Yes
+      doc: https://joker.com/faq/content/52/480/en/what-is-two_factor_authentication.html
 
     - name: Loopia
       url: https://www.loopia.se/
@@ -385,6 +393,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://registrars.nominet.org.uk/sites/default/files/two_factor_authentication_userguide.pdf
+
+    - name: NS1
+      url: https://ns1.com/
+      img: ns1.png
+      tfa: Yes
+      software: Yes
+      doc: https://ns1.com/articles/enabling-2-factor-authentication
 
     - name: Openprovider
       url: https://www.openprovider.co.uk

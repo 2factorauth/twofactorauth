@@ -137,11 +137,20 @@ websites:
 
     - name: Halebop
       url: https://www.halebop.se/
-      twitter: halebop_sverige
-      facebook: halebop
       img: halebop.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "2FA is only available for Swedish citizens with BankID."
+      doc: https://github.com/2factorauth/twofactorauth/pull/2304#issue-200730083
+
+    - name: Moj Tele2
+      url: https://moj.tele2.hr/
+      twitter: Tele2Croatia
+      facebook: tele2.hr
+      img: mojtele2.png
       tfa: No
-      lang: sv
+      lang: hr
 
     - name: Optus
       url: http://www.optus.com.au/
@@ -239,6 +248,15 @@ websites:
       facebook: TMobile
       img: tmobile.png
       tfa: No
+
+    - name: Telia (Sweden)
+      url: https://www.telia.se/
+      img: telia.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "2FA is only available for Swedish citizens with BankID."
+      doc: https://www.telia.se/privat/support/info/logga-in-med-bankid-och-eleg-pa-mitt-telia
 
     - name: Telstra
       url: https://www.telstra.com.au/

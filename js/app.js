@@ -63,7 +63,9 @@ var jets = new Jets({
       isSearching = true;
     }
   },
-  columns: [0] // Search by first column only
+  manualContentHandling: function(tag) {
+    return $(tag).find('.title > a.name').text();
+  }
 });
 
 /**
@@ -99,6 +101,9 @@ function openCategory(category) {
   // Close all active categories
   $('.category h5 i').removeClass('active-icon');
   $('.website-table').css('display', 'none');
+
+  // Place the category being viewed in the URL bar
+  window.location.hash = category;
 
   var icon = $('#' + category + ' h5 i');
   icon.addClass('active-icon');
