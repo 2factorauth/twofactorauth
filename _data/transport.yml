@@ -50,6 +50,7 @@ websites:
     - name: Clipper
       url: https://www.clippercard.com
       twitter: BayAreaClipper
+      facebook: BayAreaClipper
       img: clipper.png
       tfa: No
 
@@ -63,6 +64,7 @@ websites:
     - name: Deutsche Bahn (DB)
       url: https://www.bahn.com
       twitter: DB_Bahn
+      facebook: DBPersonenverkehr
       img: db.png
       tfa: No
 
@@ -83,6 +85,7 @@ websites:
     - name: Greyhound
       url: https://www.greyhound.com
       twitter: GHoundBusHelp
+      facebook: GreyhoundBus
       img: greyhound.png
       tfa: No
 
@@ -137,8 +140,9 @@ websites:
 
     - name: NSB
       url: https://www.nsb.no
-      img: nsb.png
       twitter: nsb_no
+      facebook: nsb.no
+      img: nsb.png
       tfa: No
 
     - name: OV-chipkaart
@@ -150,6 +154,7 @@ websites:
     - name: Ryanair
       url: https://www.ryanair.com
       twitter: Ryanair
+      facebook: ryanair
       img: ryanair.png
       tfa: No
 
@@ -163,20 +168,23 @@ websites:
     - name: SJ
       url: https://www.sj.se/
       twitter: SJ_AB
+      facebook: sj
       img: sj.png
       tfa: No
 
     - name: SL
       url: http://sl.se/
       twitter: SL_AB
+      facebook: KanalSL
       img: sl.png
       tfa: No
 
     - name: SmarTrip
-      img: wmata.png
       url: https://smartrip.wmata.com
-      tfa: No
       twitter: wmata
+      facebook: MetroForward
+      img: wmata.png
+      tfa: No
 
     - name: Southwest
       url: https://www.southwest.com/
@@ -215,5 +223,6 @@ websites:
     - name: WestJet
       url: https://www.westjet.com/
       twitter: WestJet
+      facebook: westjet
       img: westjet.png
       tfa: No
