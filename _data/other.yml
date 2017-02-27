@@ -330,6 +330,13 @@ websites:
       exceptions:
           text: "SMS only available as a backup to Google Authenticator."
 
+    - name: SignNow
+      url: https://www.signnow.com/
+      img: signnow.png
+      tfa: No
+      twitter: signnow
+      facebook: BarracudaSignNow
+
     - name: StartJOIN
       url: https://www.startjoin.com/
       img: startjoin.png
