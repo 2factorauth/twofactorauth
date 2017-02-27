@@ -305,14 +305,6 @@ websites:
       tfa: Yes
       sms: Yes
 
-    - name: FirstBank (Colorado)
-      url: https://www.efirstbank.com/
-      twitter: efirstbank
-      facebook: efirstbank
-      email_address: banking@efirstbank.com
-      img: 1stbank.png
-      tfa: No
-
     - name: First Direct
       url: http://www1.firstdirect.com/
       img: firstdirect.png
@@ -337,6 +329,14 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://www.firsttechfed.com/OnlineServices/bankonlinesecurely/SecurityKey
+
+      - name: FirstBank (Colorado)
+      url: https://www.efirstbank.com/
+      twitter: efirstbank
+      facebook: efirstbank
+      email_address: banking@efirstbank.com
+      img: 1stbank.png
+      tfa: No
 
     - name: GE Capital Bank
       url: https://www.gecapitalbank.com
