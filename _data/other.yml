@@ -1,9 +1,11 @@
 websites:
     - name: Adobe ID
       url: https://accounts.adobe.com/
-      twitter: adobecare
       img: adobe.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      doc: https://helpx.adobe.com/x-productkb/global/adobe-id-account-change.html#2-step-verification
 
     - name: Aerohive Networks
       url: https://www.aerohive.com/
