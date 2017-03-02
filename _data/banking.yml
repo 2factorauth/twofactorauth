@@ -658,10 +658,10 @@ websites:
 
     - name: Simple
       url: https://www.simple.com/
-      twitter: simple
-      facebook: simple
       img: simple.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://www.simple.com/help/articles/account-maintenance/security
 
     - name: Sparkasse
       url: https://www.sparkasse.de/
