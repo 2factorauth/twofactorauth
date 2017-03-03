@@ -86,6 +86,8 @@ websites:
       img: hostiso.png
       tfa: Yes
       software: Yes
+      exceptions:
+          text: "While both the main client area and the shared hosting panel support 2FA, each system is separate and requires its own setup."
 
     - name: Hyper.sh
       url: https://www.hyper.sh
