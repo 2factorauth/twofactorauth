@@ -1,6 +1,3 @@
-// Override Semantic-UI emSize global
-@emSize   : 18px !important;
-
 // When DOM elements are ready, excluding images
 $(document).ready(function () {
   // Check if URL references specific category
