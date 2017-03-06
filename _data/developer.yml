@@ -231,6 +231,14 @@ websites:
       software: Yes
       doc: https://github.com/2factorauth/twofactorauth/pull/2273#issuecomment-271876292
 
+    - name: mLab
+      url: https://mlab.com
+      img: mlab.png
+      sms: Yes
+      tfa: Yes
+      software: Yes
+      doc: http://docs.mlab.com/security/#two-factor-authentication
+
     - name: MongoDB Cloud Manager
       url: https://cloud.mongodb.com
       img: mongodbmms.png
