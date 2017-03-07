@@ -1,4 +1,26 @@
 websites:
+    - name: Ankama
+      url: http://www.ankama.com
+      img: ankama.png
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: https://support.ankama.com/hc/en-us/categories/200093427-DOFUS-Security
+
+    - name: Black Desert Online
+      url: https://www.blackdesertonline.com/
+      img: bdo.png
+      twitter: BDO_News
+      facebook: BlackDesertOnline
+      tfa: No
+
+    - name: Blade & Soul
+      url: http://www.bladeandsoul.com/
+      img: bladeandsoul.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.bladeandsoul.com/hc/en-us/articles/207578553-Supported-Two-Step-OTP-Authentication-Verification-Methods
+
     - name: Blizzard
       url: http://blizzard.com
       img: blizzard.png
@@ -8,19 +30,26 @@ websites:
       hardware: Yes
       doc: http://us.battle.net/en/security/
 
+    - name: Curse
+      url: https://www.curse.com/
+      img: curse.png
+      tfa: No
+      twitter: curseapp
+      facebook: curseapp
+
     - name: Desura
       url: http://www.desura.com/
       img: desura.png
       tfa: No
       twitter: desura
+      facebook: Desura
 
     - name: Elder Scrolls Online
       url: http://www.elderscrollsonline.com/
-      twitter: TESOnline
       img: eso.png
       tfa: Yes
       email: Yes
-      doc: https://twofactorauth.org/notes/eso/
+      doc: /notes/eso/
 
     - name: Enjin
       url: http://www.enjin.com/
@@ -30,44 +59,69 @@ websites:
       software: Yes
       exceptions:
           text: "2FA is only available on paid plans."
-      doc: http://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
+      doc: https://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
+
+    - name: EpicGames
+      url: https://www.epicgames.com/
+      twitter: EpicGames
+      facebook: epicgamesinc
+      img: epicgames.png
+      tfa: No
 
     - name: EVE Online
-      url: http://www.eveonline.com/
-      twitter: EveOnline
+      url: https://www.eveonline.com/
       img: eveonline.png
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: https://support.eveonline.com/hc/en-us/articles/203465601-Two-Factor-Authentication-and-Authenticator
+
+    - name: GameFly
+      url: https://www.gamefly.com/
+      twitter: GameFly
+      facebook: gamefly
+      img: gamefly.png
       tfa: No
 
     - name: Garena Online
       url: http://garena.com
-      twitter: garenaonline
       img: garena.png
       tfa: Yes
       software: Yes
       doc: http://www.garena.com/account/
       exceptions:
-          text: "As of September 29th 2014, new user enrollment for 2FA is broken. A mobile phone and Garena account level 3 or higher is required for 2FA."
+          text: "A mobile phone and Garena account level 3 or higher is required for 2FA."
+
+    - name: GeForce (Nvidia)
+      url: http://www.geforce.com/
+      twitter: NVIDIAGeForce
+      facebook: NVIDIAGeForce
+      img: geforce.png
+      tfa: No
 
     - name: GOG.com
-      url: http://www.gog.com
-      twitter: GOGcom
+      url: https://www.gog.com
       img: gog.png
-      tfa: No
+      tfa: Yes
+      email: Yes
+      doc: https://www.gog.com/support/support_view/twostep_login_faq
 
     - name: GREE
       url: http://product.gree.net/
       img: gree.png
       tfa: Yes
       software: Yes
-      doc: https://twofactorauth.org/notes/gree/
+      doc: /notes/gree/
 
     - name: Guild Wars 2
       url: https://www.guildwars2.com
       img: guildwars2.png
+      sms: Yes
       tfa: Yes
       email: Yes
+      phone: Yes
       software: Yes
-      doc: https://help.guildwars2.com/entries/27626157-Two-Factor-Authentication
+      doc: https://help.guildwars2.com/hc/en-us/articles/230672927-Securing-Your-Account-With-Authentication
 
     - name: Humble Bundle
       url: https://www.humblebundle.com/
@@ -77,17 +131,38 @@ websites:
       software: Yes
       doc: https://support.humblebundle.com/hc/en-us/articles/202421374
 
+    - name: IndieGala
+      url: https://www.indiegala.com/
+      img: indiegala.png
+      twitter: IndieGala
+      facebook: IndieGala
+      tfa: No
+
+    - name: itch.io
+      url: https://itch.io/
+      img: itchio.png
+      tfa: Yes
+      software: Yes
+      doc: http://itch.io/developers/two-factor-authentication
+
     - name: League of Legends
       url: http://leagueoflegends.com
       twitter: leagueoflegends
+      facebook: leagueoflegends
       img: leagueoflegends.png
       tfa: No
-      status: http://forums.na.leagueoflegends.com/board/showthread.php?p=45603580#45603580
 
     - name: Mojang
-      url: http://mojang.com
+      url: https://mojang.com/
       twitter: MojangSupport
       img: mojang.png
+      tfa: No
+
+    - name: Nintendo Network
+      url: https://www.nintendo.com/
+      twitter: NintendoAmerica
+      facebook: Nintendo
+      img: nintendo.png
       tfa: No
 
     - name: Origin
@@ -96,12 +171,29 @@ websites:
       tfa: Yes
       email: Yes
       sms: Yes
+      software: Yes
       doc: http://help.ea.com/en/article/origin-login-verification-information/
 
     - name: Playstation Network
-      url: http://playstation.com/psn/
-      twitter: AskPlayStation
+      url: https://www.playstation.com/
       img: psn.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.playstation.com/en-us/account-security/2-step-verification/
+
+    - name: Roberts Space Industries
+      url: https://robertsspaceindustries.com/
+      img: robertsspaceindustries.png
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://robertsspaceindustries.com/faq/two-step-authentication
+
+    - name: Rockstar Games Social Club
+      url: https://socialclub.rockstargames.com
+      twitter: RockstarSupport
+      facebook: rockstargames
+      img: rockstargames.png
       tfa: No
 
     - name: RuneScape
@@ -110,21 +202,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://services.runescape.com/m=rswiki/en/Authenticator_FAQ
-
-    - name: "Star Wars: The Old Republic"
-      url: http://www.swtor.com/
-      img: swtor.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.swtor.com/info/security-key
-
-    - name: Steam
-      url: http://store.steampowered.com/
-      img: steam.png
-      tfa: Yes
-      email: Yes
-      doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
 
     - name: Square Enix
       url: http://na.square-enix.com/
@@ -136,22 +213,57 @@ websites:
       exceptions:
           text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
 
+    - name: "Star Wars: The Old Republic"
+      url: http://www.swtor.com/
+      img: swtor.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: http://www.swtor.com/info/security-key
+
+    - name: Stardock Corporation
+      url: https://www.stardock.com/
+      twitter: Stardock
+      facebook: official.stardock
+      img: stardock.png
+      tfa: No
+
+    - name: Steam
+      url: http://store.steampowered.com/
+      img: steam.png
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030
+      exceptions:
+        text: "Software implementation requires use of the Steam Mobile app. It does not support multiple accounts on the same device. It does not support multiple accounts using the same phone number for SMS. Authentication on non-phone devices is not officially supported. SMS support is limited to receiving account recovery codes for password resets."
+
+    - name: Tibia
+      url: http://www.tibia.com/
+      img: tibia.png
+      tfa: Yes
+      software: Yes
+      doc: http://www.tibia.com/support/?subtopic=faq&question=authenticator
+
     - name: Trion Worlds
       url: http://www.trionworlds.com/en/
       img: trionworlds.png
       tfa: Yes
+      email: Yes
       software: Yes
-      doc: https://store.trionworlds.com/account/profile/manage-game
+      doc: https://support.trionworlds.com/hc/en-us/articles/204183357-Adding-a-Mobile-Authenticator
 
     - name: Uplay
-      url: http://uplay.ubi.com/
-      twitter: UplayUbisoft
+      url: https://uplay.ubi.com/
       img: uplay.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: http://forums.ubi.com/showthread.php/1463703-Secure-your-account-with-2-Step-Verification
 
     - name: Wargaming
       url: http://wargaming.net/
       twitter: wargaming_net
+      facebook: wargaming.net
       img: wargaming.png
       tfa: No
 
@@ -160,4 +272,21 @@ websites:
       img: wildstar.png
       tfa: Yes
       software: Yes
-      doc: https://support.wildstar-online.com/entries/53257786-Two-Step-Verification-Setting-Up-and-Rewards
+      doc: https://support.wildstar-online.com/hc/en-us/articles/203982369-Two-Step-Verification-FAQ
+
+    - name: Xbox Live
+      url: https://www.xbox.com/live
+      img: xbox.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+
+    - name: YoYo Games
+      url: https://www.yoyogames.com/
+      img: yoyogames.png
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: http://help.yoyogames.com/hc/en-us/articles/216757288-Creating-a-YoYo-Account

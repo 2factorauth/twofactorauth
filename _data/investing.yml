@@ -1,16 +1,38 @@
 websites:
+    - name: Acorns
+      url: https://www.acorns.com/
+      twitter: acorns
+      img: acorns.png
+      tfa: No
+
+    - name: American Funds
+      url: https://www.americanfunds.com
+      img: americanfunds.png
+      tfa: No
+      twitter: AmericanFunds
+      facebook: americanfunds
+
     - name: Betterment
       url: https://www.betterment.com/
-      twitter: betterment
       img: betterment.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://support.betterment.com/customer/en/portal/topics/1026376-two-factor-authentication-2fa-?b_id=9042
 
     - name: Charles Schwab
       url: https://www.schwab.com/
       img: charlesschwab.png
       tfa: Yes
+      software: Yes
       hardware: Yes
-      doc: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/protect_your_account
+      doc: /notes/schwab/
+
+    - name: COL Financial
+      url: https://www.colfinancial.com
+      twitter: COLfinancial
+      img: colfinancial.png
+      tfa: No
 
     - name: E*Trade
       url: https://www.etrade.com/
@@ -22,12 +44,27 @@ websites:
 
     - name: Fidelity Investments
       url: https://www.fidelity.com
-      twitter: fidelity
       img: fidelity.png
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://twofactorauth.org/notes/fidelity/
+      exceptions:
+          text: "Only available for some account types"
+      doc: /notes/fidelity/
+
+    - name: HealthEquity
+      url: http://www.healthequity.com/
+      twitter: healthequity
+      img: healthequity.png
+      tfa: No
+
+    - name: Interactive Brokers
+      url: https://www.interactivebrokers.com
+      img: interactivebrokers.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log
 
     - name: Loyal3
       url: https://www.loyal3.com/
@@ -35,11 +72,18 @@ websites:
       img: loyal3.png
       tfa: No
 
-      name: Merrill Edge
-      url: https://www.merrilledge.com/
-      twitter: MerrillLynch
-      img: merrilledge.png
+    - name: Manulife
+      url: http://www.manulife.ca
+      twitter: Manulife
+      img: manulife.png
       tfa: No
+
+    - name: Merrill Edge
+      url: https://www.merrilledge.com/
+      img: merrilledge.png
+      tfa: Yes
+      sms: Yes
+      doc: https://github.com/2factorauth/twofactorauth/issues/2275
 
     - name: MotifInvesting
       url: https://www.motifinvesting.com/
@@ -49,12 +93,17 @@ websites:
       phone: Yes
       doc: https://www.motifinvesting.com/security
 
+    - name: Nutmeg
+      url: https://www.nutmeg.com/
+      twitter: thenutmegteam
+      img: nutmeg.png
+      tfa: No
+
     - name: OptionsHouse
       img: optionshouse.png
       url: https://www.optionshouse.com
-      tfa: Yes
-      software: Yes
-      doc: https://www.optionshouse.com/faq/authenticator/
+      tfa: No
+      twitter: OptionsHouse
 
     - name: OptionsXpress
       url: http://www.optionsxpress.com/
@@ -64,29 +113,65 @@ websites:
 
     - name: Personal Capital
       url: https://www.personalcapital.com
-      twitter: personalcapital
       img: personalcapital.png
       tfa: Yes
       email: Yes
       phone: Yes
       doc: https://www.personalcapital.com/safety-and-security
 
+    - name: Raizers
+      url: https://www.raizers.com
+      img: raizers.png
+      tfa: No
+      twitter: Raizers
+
+    - name: RBC Direct Investing
+      url: http://www.rbcdirectinvesting.com
+      twitter: RBC
+      img: rbc.png
+      tfa: No
+
+    - name: Robinhood
+      url: https://www.robinhood.com/
+      img: robinhood.png
+      tfa: Yes
+      sms: Yes
+      doc: https://support.robinhood.com/hc/en-us/articles/211546986-Two-Factor-Authentication
+
     - name: Scottrade
       url: https://www.scottrade.com/
       twitter: scottrade
       img: scottrade.png
       tfa: No
-      
+
     - name: Sharebuilder
       url: https://www.sharebuilder.com/
       twitter: sharebuilder
       img: sharebuilder.png
-      tfa: No      
+      tfa: No
+
+    - name: SigFig
+      url: https://www.sigfig.com/
+      twitter: sigfiginsights
+      img: sigfig.png
+      tfa: No
 
     - name: TD Ameritrade
       url: https://www.tdameritrade.com
       twitter: TDAmeritrade
       img: tdameritrade.png
+      tfa: No
+
+    - name: TD Waterhouse
+      url: https://www.tdwaterhouse.ca
+      twitter: TD_Canada
+      img: tdameritrade.png
+      tfa: No
+
+    - name: TIAA-CREF
+      url: https://www.tiaa-cref.org
+      twitter: TC_Talks
+      img: tiaacref.png
       tfa: No
 
     - name: TradeKing
@@ -97,13 +182,25 @@ websites:
 
     - name: Vanguard
       url: https://www.vanguard.com/
-      twitter: Vanguard_Group
       img: vanguard.png
-      tfa: No
-      status: https://twitter.com/Vanguard_Group/status/499260535360466944
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      doc: https://personal.vanguard.com/us/insights/article/security-codes-112015
+      exceptions:
+          text: "TFA is only available for Personal Investor accounts"
 
     - name: Wealthfront
       url: https://www.wealthfront.com/
-      twitter: wealthfront
       img: wealthfront.png
-      tfa: no
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://pages.wealthfront.com/faqs/how-do-i-enable-two-step-authentication-on-my-account/
+
+    - name: WiseBanyan
+      url: https://www.wisebanyan.com/
+      twitter: WiseBanyan
+      img: wisebanyan.png
+      tfa: No

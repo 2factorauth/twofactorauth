@@ -1,4 +1,13 @@
 websites:
+    - name: 1Password
+      url: https://1password.com/
+      img: 1password.png
+      tfa: No
+      email_address: support@1password.com
+      facebook: 1Password
+      twitter: 1Password
+      status: https://twitter.com/1Password/status/809091553381777409
+
     - name: Bitium
       url: https://www.bitium.com
       img: bitium.png
@@ -7,14 +16,15 @@ websites:
       software: Yes
       doc: https://support.bitium.com/customer/portal/articles/1417358-enabling-two-factor-authentication-2fa-
 
-    - name: Clavid
-      url: http://www.clavid.com/
-      img: clavid.png
+    - name: Centrify
+      url: https://www.centrify.com
+      img: centrify.png
       tfa: Yes
-      software: Yes
-      hardware: Yes
       sms: Yes
-      doc: http://www.clavid.com/index.php?option=com_content&view=article&id=85&Itemid=128&lang=en
+      email: Yes
+      phone: Yes
+      software: Yes
+      doc: https://www.centrify.com/products/identity-service/multi-factor-authentication/
 
     - name: CloudEntr
       url: http://www.cloudentr.com/
@@ -28,7 +38,22 @@ websites:
       img: dashlane.png
       tfa: Yes
       software: Yes
-      doc: http://support.dashlane.com/customer/portal/articles/1099221-protect-your-account-using-two-factor-authentication
+      hardware: Yes
+      doc: https://support.dashlane.com/hc/en-us/articles/202625042-Protect-your-account-using-Two-Factor-Authentication#title3
+
+    - name: Docusign
+      url: https://www.docusign.com
+      img: docusign.png
+      tfa: No
+      twitter: DocuSign
+
+    - name: ID.me
+      url: https://www.id.me/
+      img: idme.png
+      tfa: No
+      twitter: IDme
+      facebook: IDmeInc
+      email_address: help@id.me
 
     - name: Keeper
       url: https://keepersecurity.com/
@@ -53,6 +78,13 @@ websites:
       hardware: Yes
       doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
 
+    - name: Monkey Box
+      url: https://monkeybox.com
+      img: monkeybox.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.monkeybox.com/knowledgebase/topics/71602-security
+
     - name: MyDigipass.com
       url: https://mydigipass.com/
       img: mydigipass.png
@@ -72,12 +104,20 @@ websites:
       doc: http://www.okta.com/what-we-do/multifactor-authentication.html
 
     - name: OneLogin
-      url: http://www.onelogin.com
+      url: https://www.onelogin.com
       img: onelogin.png
       tfa: Yes
       hardware: Yes
       software: Yes
       doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
+
+    - name: Passpack
+      url: https://www.passpack.com/
+      img: passpack.png
+      tfa: Yes
+      email: Yes
+      hardware: Yes
+      doc: https://help.passpack.com/knowledgebase/idx.php/44/0/
 
     - name: Persowna
       url: https://persowna.net
@@ -86,10 +126,19 @@ websites:
       software: Yes
 
     - name: RoboForm
-      url: http://www.roboform.com/
+      url: https://www.roboform.com/
       img: roboform.png
       tfa: Yes
       email: Yes
+      sms: Yes
+      doc: https://www.roboform.com/blog/stay-protected-with-mulitfactor-authentication
+
+    - name: SAASPASS
+      url: https://www.saaspass.com
+      img: saaspass.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
 
     - name: SecureSafe
       url: http://www.securesafe.com
@@ -99,3 +148,13 @@ websites:
       exceptions:
           text: "2FA is only available on paid plans."
       doc: http://www.securesafe.com/en/faq/security.html
+
+    - name: True Key
+      url: https://www.truekey.com
+      img: truekey.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://help.truekey.com/hc/en-us/articles/218580447-How-can-I-add-additional-factors-
