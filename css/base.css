@@ -110,8 +110,13 @@ div.negative {
     margin: 2em 0;
 }
 
-#top-header { padding: 3em 0; }
-#top-header .sub.header { margin: 10px auto; max-width: 80%; }
+#top-header {
+  padding: 3em 0; 
+}
+#top-header .sub.header {
+  margin: 10px auto;
+  max-width: 80%;
+}
 
 #search-wrapper {
   position: relative;
@@ -124,7 +129,15 @@ div.negative {
   position: absolute;
   top: 10px;
 }
-#search-wrapper label i { color: #333333; display: inline-block; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-box-sizing: border-box; box-sizing: border-box; }
+#search-wrapper label i {
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 input[type=search] {
   -webkit-transition: all 300ms ease;
@@ -141,7 +154,11 @@ input[type=search] {
   box-sizing: border-box;
   font-size: inherit;
 }
-input[type=search]:focus { border-color: #39CCCC; box-shadow: 0 0 10px #39CCCC; outline: none; }
+input[type=search]:focus {
+  border-color: #39CCCC;
+  box-shadow: 0 0 10px #39CCCC;
+  outline: none;
+}
 
 .category.column {
   width: 130px;
@@ -168,8 +185,15 @@ input[type=search]:focus { border-color: #39CCCC; box-shadow: 0 0 10px #39CCCC; 
   transition: all 300ms ease;
 }
 
-.active-icon, .category h5 i:hover { background-color: #39CCCC; color: white; }
-.active-icon + small, .category h5 i:hover + small { color: #389B9B; }
+.active-icon,
+.category h5 i:hover {
+  background-color: #39CCCC;
+  color: white;
+}
+.active-icon + small,
+.category h5 i:hover + small {
+  color: #389B9B;
+}
 
 .progress .title {
   float: left;
@@ -178,16 +202,66 @@ input[type=search]:focus { border-color: #39CCCC; box-shadow: 0 0 10px #39CCCC; 
   max-width: 230px;
 }
 
-.mobile-table { display: none; }
-.mobile-table .label { display: none; padding: 15px 0; text-align: center; }
-.mobile-table .jets-content { border: 1px groove rgba(34, 36, 38, 0.14902); border-radius: 5px; margin: 0 auto 40px auto; width: 90%; }
-.mobile-table .jets-content > div { border-bottom: 1px groove rgba(34, 36, 38, 0.14902); padding: 2em; }
-.mobile-table .jets-content .main .title { display: flex; display: -webkit-flex; display: -ms-flexbox; flex-direction: row; -ms-flex-direction: row; -ms-flex-align: center; align-items: center; }
-.mobile-table .jets-content .main .title .name { -webkit-box-flex: 2; -ms-flex-positive: 2; flex-grow: 2; margin: 0 5px; }
-.mobile-table .jets-content .main .button-group { display: flex; display: -webkit-flex; display: -ms-flexbox; flex-direction: row; -ms-flex-direction: row; justify-content: space-between; }
-.mobile-table .jets-content .button { padding: 1em; width: 100%; }
-.mobile-table .jets-content .button i.book.icon { margin-bottom: 2px; vertical-align: bottom; }
-.mobile-table .jets-content p { font-weight: 700; font-size: 14px; }
+.mobile-table {
+    display: none;
+}
+.mobile-table .label {
+    display: none;
+    padding: 15px 0;
+    text-align: center;
+}
+.mobile-table .jets-content {
+    border: 1px groove rgba(34, 36, 38, 0.14902);
+    border-radius: 5px;
+    margin: 0 auto 40px auto;
+    width: 90%;
+}
+.mobile-table .jets-content > div {
+    border-bottom: 1px groove rgba(34, 36, 38, 0.14902);
+    padding: 2em;
+}
+.mobile-table .jets-content .main .title {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.mobile-table .jets-content .main .title .name {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    margin: 0 5px;
+}
+.mobile-table .jets-content .main .button-group {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: space-between;
+}
+.mobile-table .jets-content .button {
+    padding: 1em;
+    width: 100%;
+}
+.mobile-table .jets-content .button i.book.icon {
+    margin-bottom: 2px;
+    vertical-align: bottom;
+}
+.mobile-table .jets-content p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.ui.menu .item.sponsored {
+  float: right;
+  width: 245px;
+  background: url(../img/nitrokey.png) no-repeat 128px 8px;
+  background-size: auto 30px;
+}
 
 @media(min-width: 767px) {
   .ui.menu.main > .menu {
