@@ -16,35 +16,19 @@
             Home
         </a>
 
-    {% if include.page == 'home' %}
-        <div class="ui dropdown item">
-            Categories <i class="dropdown icon"></i>
-            <div class="menu">
-                {% for section in site.data.devices.main.sections %}
-                <a href="#{{ section.id }}" class="item">
-                    <i class="{{ section.icon }} icon"></i>
-                    {{ section.title }}
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-    {% endif %}
 
-    {% if include.page == 'providers' %}
-        <a href="/providers" class="active item">
+    {% if include.page == 'dongles' %}
+        <a href="/dongles" class="active item">
     {% else %}
-        <a href="/providers" class="item">
+        <a href="/dongles" class="item">
     {% endif %}
             <i class="play sign icon"></i>
             Dongles
         </a>
-<div style="margin-left: 345px;"> 
-    <a href="https://www.nitrokey.com" class="item">
-      <img src="/img/nitrokey_logo.png" style="width: 49%;margin-top: -50px;">
-    </a>
+        <a href="https://www.nitrokey.com" class="item sponsored">
+          Sponsored By:
+        </a>
   
-</div>
-
 
 {% if 1 == 0 %}
 <!-- Don't show for right now -->

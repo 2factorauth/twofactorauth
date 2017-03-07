@@ -1,21 +1,58 @@
 websites:
+    - name: 34SP.com
+      url: https://www.34SP.com
+      img: 34sp.png
+      tfa: Yes
+      software: yes
+      doc: https://www.34sp.com/kb/142/how-to-enable-2-factor-authentication-on-your-account
+
+    - name: ARP Networks
+      url: https://arpnetworks.com/
+      img: arpnetworks.png
+      tfa: No
+      twitter: arpnetworks
+
+    - name: Binary Lane
+      url: https://www.binarylane.com.au/
+      img: binarylane.png
+      tfa: Yes
+      software: yes
+      doc: https://www.binarylane.com.au/support/solutions/articles/1000199372-two-factor-authentication
+
+    - name: Binero
+      url: https://www.binero.se
+      img: binero.png
+      twitter: Binero
+      facebook: binero
+      email_address: support@binero.se
+      tfa: No
+      lang: sv
+
+    - name: BlueFur Web Hosting
+      url: https://www.bluefur.com
+      img: bluefur.png
+      twitter: bluefur
+      tfa: No
+
     - name: Bluehost
       url: https://www.bluehost.com/
       img: bluehost.png
-      tfa: No
-      twitter: bluehostsupport
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://my.bluehost.com/cgi/help/two-factor-authentication
 
     - name: ChunkHost
       url: https://chunkhost.com
       img: chunkhost.png
       tfa: Yes
       software: Yes
-      
+
     - name: CloudAtCost
       url: http://cloudatcost.com
       img: cloudatcost.png
       twitter: cloudatcost
-      tfa: no
+      tfa: No
 
     - name: CloudShards
       url: https://www.cloudshards.com/
@@ -23,12 +60,26 @@ websites:
       twitter: CloudShards
       tfa: No
 
-    - name: DigitalOcean
-      url: https://www.digitalocean.com/
-      img: digitalocean.png
+    - name: Cloudways
+      url: https://www.cloudways.com/
+      img: cloudways.png
       tfa: Yes
       software: Yes
-      doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
+      doc: https://support.cloudways.com/enabling-two-factor-authentication-for-your-cloudways-account/
+
+    - name: cyon
+      url: https://www.cyon.ch
+      img: cyon.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.cyon.ch/support/a/225/wie-aktiviere-ich-die-zwei-schritt-verifizierung
+
+    - name: dediserve
+      url: https://dediserve.com
+      img: dediserve.png
+      tfa: Yes
+      software: Yes
+      doc: http://news.dediserve.com/2016/12/01/2-factor-authentication-now-launched/
 
     - name: Dreamhost
       url: https://dreamhost.com
@@ -37,47 +88,145 @@ websites:
       software: Yes
       doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
 
+    - name: Easy
+      url: https://easy.gr/
+      img: easy.png
+      tfa: Yes
+      software: Yes
+      doc: https://easy.gr/el/faq
+
     - name: Fastly
       url: https://www.fastly.com
-      twitter: Fastly
       img: fastly.png
       tfa: Yes
       software: Yes
       doc: https://docs.fastly.com/guides/getting-started/enabling-and-disabling-twofactor-authentication
 
+    - name: FS Data
+      url: https://fsdata.se/
+      img: fsdata.png
+      tfa: No
+      twitter: fsdata
+      facebook: fsdata
+      email_address: info@fsdata.se
+      lang: sv
+
     - name: Glesys
       url: http://glesys.com/
-      twitter: glesysab
       img: glesys.png
       tfa: Yes
       software: Yes
       hardware: Yes
 
+    - name: Globat
+      url: https://www.globat.com/
+      img: globat.png
+      tfa: No
+      twitter: globat
+
+    - name: Hetzner Online
+      url: https://www.hetzner.de/
+      img: hetzner.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+
+    - name: HostHatch
+      url: https://hosthatch.com/
+      img: hosthatch.png
+      tfa: No
+      twitter: HostHatch
+      facebook: hosthatch
+
+    - name: ICUK
+      url: https://icuk.net
+      img: icuk.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.icuk.net/reseller/security.asp
+
+    - name: Infomaniak
+      url: https://www.infomaniak.com/
+      img: infomaniak.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.infomaniak.ch/en/support/faq/1940
+
+    - name: INIZ
+      url: https://iniz.com
+      img: iniz.png
+      tfa: Yes
+      software: Yes
+      doc: https://my.iniz.com/knowledgebase/24/Securing-Your-Account-2FA.html
+
+    - name: Inleed
+      url: https://www.inleed.se
+      img: inleed.png
+      twitter: Inleed
+      facebook: Inleed
+      email_address: support@inleed.se
+      tfa: No
+      lang: sv
+
+    - name: InMotion Hosting
+      url: https://www.inmotionhosting.com/
+      twitter: inmotionhosting
+      img: inmotion.png
+      tfa: No
+
     - name: iPage
-      url: http://www.ipage.com/ipage/index.html
+      url: https://www.ipage.com/ipage/index.html
       twitter: iPage
       img: ipage.png
       tfa: No
 
-    - name: Linode
-      url: https://www.linode.com/
-      img: linode.png
+    - name: LCN.com
+      url: https://www.lcn.com
+      twitter: lcndotcom
+      facebook: lcndotcom
+      img: lcn.png
+      tfa: No
+
+    - name: Liquid Web
+      url: https://www.liquidweb.com
+      img: liquidweb.png
       tfa: Yes
       software: Yes
-      doc: https://library.linode.com/linode-manager-security#sph_two-factor-authentication
+      doc: https://www.liquidweb.com/kb/how-to-enable-two-factor-authentication-2fa/
+
+    - name: Mammoth Networks
+      url: https://www.mammoth.net.au/
+      img: mammothnetworks.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.mammoth.net.au/news/2012/10/22/two-factor-authentication-now-available
 
     - name: MaxCDN
       url: https://www.maxcdn.com
       img: maxcdn.png
       tfa: Yes
       software: Yes
-      doc: http://support.maxcdn.com/tutorials/enabling-2-step-verification/
+      doc: https://www.maxcdn.com/one/tutorial/enable-two-step-verification/
 
     - name: Media Temple
-      url: http://mediatemple.net/
+      url: https://mediatemple.net/
       twitter: mediatemple
       img: mediatemple.png
       tfa: No
+
+    - name: Miss Hosting
+      url: https://misshosting.com/
+      twitter: missgroupcom
+      facebook: missgroupcom
+      img: misshosting.png
+      tfa: No
+
+    - name: Mittwald
+      url: https://www.mittwald.de/
+      twitter: mittwald
+      img: mittwald.png
+      tfa: No
+      lang: de
 
     - name: NearlyFreeSpeech.NET
       url: https://www.nearlyfreespeech.net/
@@ -85,21 +234,71 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-se
+      doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
+
+    - name: Netcup
+      url: https://netcup.eu/
+      img: netcup.png
+      tfa: Yes
+      software: Yes
+      doc: http://www.netcup-wiki.de/wiki/Stammdaten_CCP#Zwei-Faktor-Authentifizierung_.282FA.29
+
+    - name: Nitrado
+      url: https://server.nitrado.net/
+      img: nitrado.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://server.nitrado.net/deu/news2/view/nitrado-bietet-zweifaktorauthentifizierung/?f=index/mode:0/page:2
+
+    - name: Noez
+      url: https://noez.de/
+      img: noez.png
+      tfa: Yes
+      software: Yes
+
+    - name: Oderland
+      url: https://www.oderland.se/
+      twitter: oderlandab
+      facebook: oderland
+      email_address: support@oderland.se
+      img: oderland.png
+      tfa: No
+      lang: sv
+
+    - name: One.com
+      url: https://www.one.com/
+      twitter: onecom
+      img: onecom.png
+      tfa: No
+
+    - name: Online
+      url: https://www.online.net/
+      img: online.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
 
     - name: OVH
-      url: http://www.ovh.com/
+      url: https://www.ovh.com/
       img: ovh.png
       tfa: Yes
       sms: Yes
-      doc: http://www.ovh.com/us/about-us/security.xml#double-authentification
+      software: Yes
+
+    - name: PlanetHoster
+      url: https://planethoster.net
+      img: PlanetHoster.png
+      tfa: Yes
+      software: Yes
+      doc: http://blog.planethoster.net/securite-espace-client-planethoster/
 
     - name: Rackspace
       url: https://www.rackspace.com/
-      twitter: rackspace
       img: rackspace.png
-      tfa: No
-      status: https://twitter.com/Rackspace/status/446469139947732992
+      tfa: Yes
+      sms: Yes
+      doc: http://www.rackspace.com/knowledge_center/article/myrackspace-two-factor-authentication
 
     - name: RamNode
       url: http://www.ramnode.com
@@ -108,19 +307,31 @@ websites:
       software: Yes
       doc: https://clientarea.ramnode.com/knowledgebase.php?action=displayarticle&id=70
 
+    - name: Scaleway
+      url: https://www.scaleway.com/
+      twitter: scaleway
+      facebook: scaleway
+      img: scaleway.png
+      tfa: No
+
+    - name: Site5
+      url: https://www.site5.com/
+      twitter: site5
+      img: site5.png
+      tfa: No
+
     - name: Softlayer
       url: https://www.softlayer.com
       img: softlayer.png
       tfa: Yes
       software: Yes
-      doc: http://knowledgelayer.softlayer.com/procedure/configure-portal-account-one-time-password-access-manage
-      
+      doc: https://knowledgelayer.softlayer.com/procedure/configure-portal-account-one-time-password-access-manage
+
     - name: SpeedIT Solutions
       url: https://www.speedit.org/
       img: speedit.png
       tfa: Yes
       software: Yes
-      twitter: SpeedIT_S
       doc: https://www.speedit.org/faq/#accordian_item_937
 
     - name: Squarespace
@@ -128,3 +339,96 @@ websites:
       twitter: squarespace
       img: squarespace.png
       tfa: No
+
+    - name: Time4VPS
+      url: https://www.time4vps.eu/
+      img: time4vps.png
+      tfa: Yes
+      software: Yes
+      doc: https://billing.time4vps.eu/knowledgebase/article/100/2-factor-authentication/
+
+    - name: TransIP
+      url: https://www.transip.nl/
+      img: transip.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.transip.nl/vragen/574-hoe-stel-two-factor-authentication/
+
+    - name: UKFast
+      url: https://www.ukfast.co.uk/
+      img: ukfast.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+
+    - name: Ukraine
+      url: https://www.ukraine.com.ua/
+      img: ukraine.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.ukraine.com.ua/faq/rekomendatsii-po-zashchite-ot-vzloma-uchetnoj-zapisi.html
+
+    - name: UpCloud
+      url: https://www.upcloud.com
+      img: upcloud.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "SMS is required for password recovery."
+      doc: https://www.upcloud.com/support/two-factor-authentication/
+
+    - name: Versio
+      url: https://www.versio.nl
+      img: versio.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.versio.nl/nieuws/twofactor-authenticatie-nu-beschikbaar-voor-uw-klantenaccount-205
+
+    - name: VPS Server
+      url: https://www.vpsserver.com/
+      img: vpsserver.png
+      tfa: Yes
+      software: Yes
+      doc: https://github.com/2factorauth/twofactorauth/pull/2311#issuecomment-273424695
+
+    - name: Vultr
+      url: https://www.vultr.com/
+      img: vultr.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.vultr.com/faq/#authy
+
+    - name: WebFaction
+      url: https://www.webfaction.com
+      img: webfaction.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.webfaction.com/user-guide/control_panel.html#two-step-login
+
+    - name: Wedos
+      url: https://hosting.wedos.com
+      img: wedos.png
+      tfa: Yes
+      software: Yes
+      doc: https://kb.wedos.com/cs/zakaznik/otp.html
+
+    - name: Weebly
+      url: https://www.weebly.com
+      img: weebly.png
+      tfa: No
+      twitter: weebly
+      facebook: weebly
+
+    - name: WP Engine
+      url: https://wpengine.com/
+      img: wpengine.png
+      tfa: Yes
+      software: Yes
+      doc: https://wpengine.com/support/2-factor-authentication/
