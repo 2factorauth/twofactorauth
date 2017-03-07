@@ -263,6 +263,16 @@ input[type=search]:focus {
   background-size: auto 30px;
 }
 
+a.recommend {
+  font-weight: bold;
+}
+a.recommend::after {
+  content: "\f005";
+  font-family: 'Icons';
+  font-size: 14px;
+  margin-left: 4px;
+}
+
 @media(min-width: 767px) {
   .ui.menu.main > .menu {
       width: 840px;
