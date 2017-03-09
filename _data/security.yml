@@ -117,6 +117,21 @@ websites:
           text: "Only available for enterprise accounts."
       doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
 
+    - name: Prey
+      url: https://www.preyproject.com
+      img: prey.png
+      tfa: Yes
+      software: Yes
+      doc: http://help.preyproject.com/article/248-how-to-enable-the-two-step-authenticator-for-prey
+
+    - name: Pwnie Express Pwn Pulse
+      url: https://www.pwnieexpress.com/products/pulse-device-detection
+      img: pwnieexpress.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "TFA can be enabled on Pwn Pulse Accounts upon customer request."
+
     - name: SSLTrust
       url: http://ssltrust.com.au/
       img: ssltrust.png

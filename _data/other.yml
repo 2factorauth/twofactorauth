@@ -1,9 +1,11 @@
 websites:
     - name: Adobe ID
       url: https://accounts.adobe.com/
-      twitter: adobecare
       img: adobe.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      doc: https://helpx.adobe.com/x-productkb/global/adobe-id-account-change.html#2-step-verification
 
     - name: Aerohive Networks
       url: https://www.aerohive.com/
@@ -327,6 +329,13 @@ websites:
       software: Yes
       exceptions:
           text: "SMS only available as a backup to Google Authenticator."
+
+    - name: SignNow
+      url: https://www.signnow.com/
+      img: signnow.png
+      tfa: No
+      twitter: signnow
+      facebook: BarracudaSignNow
 
     - name: StartJOIN
       url: https://www.startjoin.com/
