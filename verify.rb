@@ -54,6 +54,9 @@ end
 # as well as if an image is missing
 begin
   sections = YAML.load_file('_data/sections.yml')
+  # Check sections.yml alphabetization
+  error('section.yml is not alphabetized by name') \
+    if sections != sections.sort_by { |section| section['id'].downcase }
   schema = YAML.load_file('websites_schema.yml')
   validator = Kwalify::Validator.new(schema)
   sections.each do |section|
@@ -61,11 +64,8 @@ begin
     websites = data['websites']
     errors = validator.validate(data)
 
-    if errors && !errors.empty?
-      errors.each do |e|
-        index = e.path.split('/').last.to_i
-        error("#{websites.at(index)['name']}: #{e.message}")
-      end
+    errors.each do |e|
+      error("#{websites.at(e.path.split('/').last.to_i)['name']}: #{e.message}")
     end
 
     # Check section alphabetization
