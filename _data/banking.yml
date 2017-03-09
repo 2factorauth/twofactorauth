@@ -6,6 +6,14 @@ websites:
       img: actorsfcu.png
       tfa: No
 
+    - name: Addiko Bank
+      url: https://www.addiko.hr/
+      img: addikobank.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.addiko.hr/sites/addiko.hr/files/content/addiko_bank_uputa_za_koristenje_tokena_mtokena.pdf
+
     - name: Alliant Credit Union
       url: https://www.alliantcreditunion.org/
       twitter: AlliantCU
@@ -276,6 +284,14 @@ websites:
       tfa: No
       lang: bn
 
+    - name: Erste Bank Hrvatska
+      url: https://www.erstebank.hr/
+      img: erstehr.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.erstebank.hr/content/dam/hr/ebc/www_erstebank_hr/gradani/downloads/e-bankarstvo/Upute%20za%20prijavu.pdf
+
     - name: everbank.com
       url: https://everbank.com
       img: everbank.png
@@ -540,6 +556,14 @@ websites:
       img: pncbank.png
       tfa: No
 
+    - name: Podravska banka
+      url: https://www.poba.hr/
+      img: podravska.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: http://www.poba.hr/get_file.php?d=pobaklik__upute_gradani.pdf&PHPSESSID=cafutfbcjozu
+
     - name: Postbank
       url: https://www.postbank.de/
       twitter: postbank
@@ -634,10 +658,10 @@ websites:
 
     - name: Simple
       url: https://www.simple.com/
-      twitter: simple
-      facebook: simple
       img: simple.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://www.simple.com/help/articles/account-maintenance/security
 
     - name: Sparkasse
       url: https://www.sparkasse.de/
@@ -647,6 +671,13 @@ websites:
       img: sparkasse.png
       tfa: No
       lang: de
+
+    - name: Splitska banka
+      url: https://www.splitskabanka.hr/
+      img: splitska.png
+      tfa: Yes
+      hardware: Yes
+      doc: https://www.splitskabanka.hr/LinkClick.aspx?fileticket=uADVHHVmbUU%3d&tabid=4756&portalid=8&mid=8287
 
     - name: State Bank of India
       url: https://www.onlinesbi.com/
@@ -805,6 +836,14 @@ websites:
       facebook: zagbank
       img: zagbank.png
       tfa: No
+
+    - name: Zagrebačka banka
+      url: https://www.zaba.hr/
+      img: zagrebacka.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.zaba.hr/home/token#pan3
 
     - name: ZenBanx
       url: https://zenbanx.ca/
