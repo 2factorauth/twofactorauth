@@ -234,6 +234,14 @@ websites:
       software: Yes
       doc: https://help.simpletax.ca/questions/two-factor-authentication
 
+    - name: Taxact
+      url: https://www.taxact.com
+      img: taxact.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      doc: https://www.taxact.com/support/24138/2016/how-is-a-verification-code-used
+
     - name: TransferWise
       url: https://transferwise.com
       img: transferwise.png
