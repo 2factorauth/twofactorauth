@@ -1,21 +1,15 @@
 require 'yaml'
 require 'fastimage'
+require 'kwalify'
 @output = 0
 
-# Should the script ignore checking for Twitter handles?
-@ignore_twitter = false
-
-# YAML tags that are obligatory to all listed sites.
-@obligatory_tags = %w(url img name)
-
-# YAML tags related to TFA 'YES'.
-@tfa_yes_tags = %w(doc)
-
-# YAML tags related to TFA 'NO'.
-@tfa_no_tags = %w(status twitter facebook email_address)
-
-# TFA forms
-@tfa_forms = %w(email hardware software sms phone)
+# YAML tags related to TFA
+@tfa_tags = {
+  # YAML tags for TFA Yes
+  true => %w(email hardware software sms phone doc),
+  # YAML tags for TFA No
+  false => %w(status twitter facebook email_address lang)
+}.freeze
 
 # Image max size (in bytes)
 @img_max_size = 2500
@@ -33,52 +27,7 @@ def error(msg)
   puts "#{@output}. #{msg}"
 end
 
-# Test an individual YAML tag
-# rubocop:disable AbcSize,CyclomaticComplexity,MethodLength,PerceivedComplexity
-def test_tag(tag, required, tfa_state, website, only_true = false)
-  if website[tag].nil? && website['tfa'] == tfa_state && required
-    error("#{website['name']}: The required YAML tag \'#{tag}\' tag is "\
-          'not present.')
-  end
-  return if website[tag].nil?
-  if website['tfa'] != tfa_state
-    error("#{website['name']}: The YAML tag \'#{tag}\' should NOT be "\
-          "present when TFA is #{website['tfa'] ? 'enabled' : 'disabled'}.")
-  end
-  return unless only_true && website[tag] != true
-  error("#{website['name']}: The YAML tag \'#{tag}\' should either have"\
-        " a value set to \'Yes\' or not be used at all. (Current value:"\
-        " \'#{website[tag]}\')")
-end
-# rubocop:enable PerceivedComplexity
-
-# Check the YAML tags
-def test_tags(website)
-  tfa = website['tfa']
-  # rubocop:disable DoubleNegation
-  if !!tfa != tfa
-    error("#{website['name']}: The YAML tag \'{tfa}\' should be either "\
-          "\'Yes\' or \'No\'. (#{tfa})")
-  end
-  # rubocop:endable DoubleNegation
-
-  # Test tags that are obligatory
-  @obligatory_tags.each do |t|
-    next unless website[t].nil?
-    error("#{website['name']}: The required YAML tag \'#{t}\' tag is not"\
-          ' present.')
-  end
-
-  # Test tags associated with TFA 'YES'
-  @tfa_yes_tags.each { |tfa_form| test_tag(tfa_form, false, true, website) }
-
-  # Test TFA form tags'
-  @tfa_forms.each { |tfa_form| test_tag(tfa_form, false, true, website, true) }
-
-  # Test tags associated with TFA 'NO'
-  @tfa_no_tags.each { |tfa_form| test_tag(tfa_form, false, false, website) }
-end
-
+# rubocop:disable AbcSize,CyclomaticComplexity
 def test_img(img, name, imgs)
   # Exception if image file not found
   raise "#{name} image not found." unless File.exist?(img)
@@ -99,16 +48,25 @@ def test_img(img, name, imgs)
   error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
           " currently #{img_size} bytes.")
 end
-# rubocop:enable AbcSize,CyclomaticComplexity,MethodLength
+# rubocop:enable AbcSize,CyclomaticComplexity
 
+# Load each section, check for errors such as invalid syntax
+# as well as if an image is missing
 begin
-
-  # Load each section, check for errors such as invalid syntax
-  # as well as if an image is missing
   sections = YAML.load_file('_data/sections.yml')
+  # Check sections.yml alphabetization
+  error('section.yml is not alphabetized by name') \
+    if sections != sections.sort_by { |section| section['id'].downcase }
+  schema = YAML.load_file('websites_schema.yml')
+  validator = Kwalify::Validator.new(schema)
   sections.each do |section|
-    data = YAML.load_file('_data/' + section['id'] + '.yml')
+    data = YAML.load_file("_data/#{section['id']}.yml")
     websites = data['websites']
+    errors = validator.validate(data)
+
+    errors.each do |e|
+      error("#{websites.at(e.path.split('/').last.to_i)['name']}: #{e.message}")
+    end
 
     # Check section alphabetization
     error("_data/#{section['id']}.yml is not alphabetized by name") \
@@ -118,7 +76,11 @@ begin
     imgs = Dir["img/#{section['id']}/*"]
 
     websites.each do |website|
-      test_tags(website)
+      @tfa_tags[!website['tfa']].each do |tag|
+        next if website[tag].nil?
+        error("\'#{tag}\' should NOT be "\
+            "present when tfa: #{website['tfa'] ? 'true' : 'false'}.")
+      end
       test_img("img/#{section['id']}/#{website['img']}", website['name'],
                imgs)
     end
@@ -131,12 +93,12 @@ begin
   exit 1 if @output > 0
 
 rescue Psych::SyntaxError => e
-  puts 'Error in a YAML file.'
+  puts "<------------ ERROR in a YAML file ------------>\n"
   puts e
   exit 1
 rescue => e
   puts e
   exit 1
 else
-  puts 'No errors. You\'re good to go!'
+  puts "<------------ No errors. You\'re good to go! ------------>\n"
 end

@@ -1,15 +1,11 @@
 websites:
-    - name: ActiveCollab
-      url: https://www.activecollab.com/
-      twitter: activecollab
-      img: activecollab.png
-      tfa: No
-
     - name: Adobe ID
       url: https://accounts.adobe.com/
-      twitter: adobecare
       img: adobe.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      doc: https://helpx.adobe.com/x-productkb/global/adobe-id-account-change.html#2-step-verification
 
     - name: Aerohive Networks
       url: https://www.aerohive.com/
@@ -29,19 +25,6 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-
-    - name: Any.do
-      url: https://web.any.do/
-      img: anydo.png
-      tfa: No
-      twitter: AnyDO
-      facebook: Any.do
-
-    - name: Asana
-      url: https://www.asana.com
-      img: asana.png
-      tfa: No
-      twitter: asana
 
     - name: Australia Post
       url: https://auspost.com.au/
@@ -66,12 +49,6 @@ websites:
       software: Yes
       doc: https://www.youtube.com/watch?v=5OLcvjVhhuI
 
-    - name: Azendoo
-      url: https://app.azendoo.com
-      img: azendoo.png
-      tfa: No
-      twitter: Azendoo
-
     - name: BasisCode Compliance
       url: http://basiscode.com
       img: basiscode.png
@@ -80,12 +57,6 @@ websites:
       email: Yes
       phone: Yes
       doc: http://basiscode.com/blog/two-factor-authentication-compliance-software/
-
-    - name: Bugzilla@Mozilla
-      url: https://bugzilla.mozilla.org
-      img: bugzilla.png
-      tfa: Yes
-      software: Yes
 
     - name: BuiltWith
       url: https://builtwith.com
@@ -203,17 +174,12 @@ websites:
       software: Yes
       doc: https://support.formstack.com/customer/portal/articles/1833071-two-factor-authentication
 
-    - name: fruux
-      url: https://fruux.com
-      img: fruux.png
-      twitter: fruux
-      tfa: No
-
     - name: HMRC
       url: https://hmrc.gov.uk
-      twitter: HMRCgovuk
       img: hmrc.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-sms-text-messages
 
     - name: IEEE
       url: https://www.ieee.org
@@ -229,6 +195,13 @@ websites:
       sms: Yes
       software: Yes
       doc: https://ifttt.com/settings#two-step-verification
+
+    - name: Indeed
+      url: https://www.indeed.com/
+      img: indeed.png
+      tfa: No
+      twitter: indeed
+      facebook: Indeed
 
     - name: Kayako
       url: https://www.kayako.com
@@ -277,12 +250,6 @@ websites:
       tfa: No
       twitter: Monster
       facebook: monster
-
-    - name: Nest
-      url: https://nest.com
-      twitter: nestsupport
-      img: nest.png
-      tfa: No
 
     - name: Office 365
       url: http://office.microsoft.com/en-us/business/
@@ -363,44 +330,18 @@ websites:
       exceptions:
           text: "SMS only available as a backup to Google Authenticator."
 
-    - name: Solar.web
-      url: https://www.solarweb.com
-      img: solarweb.png
+    - name: SignNow
+      url: https://www.signnow.com/
+      img: signnow.png
       tfa: No
-      twitter: FroniusUSASolar
-      facebook: FroniusUSASolarEnergy
+      twitter: signnow
+      facebook: BarracudaSignNow
 
     - name: StartJOIN
       url: https://www.startjoin.com/
       img: startjoin.png
       tfa: Yes
       software: Yes
-
-    - name: Todoist
-      url: https://todoist.com
-      twitter: todoist
-      img: todoist.png
-      tfa: No
-
-    - name: Toodledo
-      url: https://www.toodledo.com
-      img: toodledo.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.toodledo.com/info/help.php#168
-
-    - name: Total Connect Comfort
-      url: https://www.mytotalconnectcomfort.com
-      twitter: Honeywell_Home
-      img: totalconnect.png
-      tfa: No
-
-    - name: Trello
-      url: https://trello.com
-      img: trello.png
-      tfa: Yes
-      sms: Yes
-      doc: http://help.trello.com/article/993-enabling-two-factor-authentication-for-your-trello-account
 
     - name: Upwork
       url: https://www.upwork.com
@@ -450,12 +391,6 @@ websites:
       url: https://www.wikipedia.org/
       twitter: Wikipedia
       img: wikipedia.png
-      tfa: No
-
-    - name: Wunderlist
-      url: https://www.wunderlist.com
-      twitter: Wunderlist
-      img: wunderlist.png
       tfa: No
 
     - name: Yclas

@@ -63,7 +63,9 @@ var jets = new Jets({
       isSearching = true;
     }
   },
-  columns: [0] // Search by first column only
+  manualContentHandling: function(tag) {
+    return $(tag).find('.title > a.name').text();
+  }
 });
 
 /**

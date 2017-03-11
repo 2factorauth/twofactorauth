@@ -9,7 +9,7 @@ websites:
       doc: https://aws.amazon.com/iam/details/mfa/
 
     - name: appFog
-      url: https://www.appfog.com/
+      url: https://www.ctl.io/appfog/
       twitter: appfog
       img: appfog.png
       tfa: No
@@ -48,8 +48,6 @@ websites:
       img: digitalocean.png
       tfa: Yes
       software: Yes
-      exceptions:
-          text: "SMS-capable phone required."
       doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
 
     - name: EngineYard
@@ -82,6 +80,14 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://devcenter.heroku.com/articles/two-factor-authentication
+
+    - name: Hostiso
+      url: https://hostiso.com/
+      img: hostiso.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "While both the main client area and the shared hosting panel support 2FA, each system is separate and requires its own setup."
 
     - name: Hyper.sh
       url: https://www.hyper.sh
@@ -126,6 +132,14 @@ websites:
       phone: Yes
       software: Yes
       doc: https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication/
+
+    - name: mLab
+      url: https://mlab.com/
+      img: mlab.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: http://docs.mlab.com/security/#two-factor-authentication
 
     - name: OpenShift
       url: https://www.openshift.com/
@@ -199,6 +213,6 @@ websites:
       url: https://www.vultr.com
       img: vultr.png
       tfa: Yes
-      software: yes
-      hardware: yes
+      software: Yes
+      hardware: Yes
       doc: https://www.vultr.com/docs/using-two-factor-authentication-to-login-to-vultr-control-panel
