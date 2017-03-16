@@ -175,7 +175,8 @@ websites:
       sms: Yes
       phone: Yes
       email: Yes
-      doc: /notes/chase/
+      exceptions:
+        text: Chase 2FA is always enabled. When you login to your account on a new device, you will be prompted to receive a code through a call or message to any registered phone number or email on your account. These phone numbers and emails are the ones registered on your main online account (NOT the ones registered for Chase QuickPay or banking over text message).
 
     - name: Chime
       url: https://www.chimebank.com
