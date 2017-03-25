@@ -80,11 +80,7 @@ websites:
       url: http://ebay.com
       img: ebay.png
       tfa: Yes
-      hardware: Yes
-      software: Yes
-      exceptions:
-          text: "eBay only supports 2FA in some countries."
-      doc: http://pages.ebay.com/securitykey/faq.html
+      sms: Yes
 
     - name: Etsy
       url: http://www.etsy.com/
