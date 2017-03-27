@@ -56,7 +56,7 @@ begin
   sections = YAML.load_file('_data/sections.yml')
   # Check sections.yml alphabetization
   error('section.yml is not alphabetized by name') \
-    if sections != sections.sort_by { |section| section['id'].downcase }
+    if sections != (sections.sort_by { |section| section['id'].downcase })
   schema = YAML.load_file('websites_schema.yml')
   validator = Kwalify::Validator.new(schema)
   sections.each do |section|
@@ -65,12 +65,12 @@ begin
     errors = validator.validate(data)
 
     errors.each do |e|
-      error("#{websites.at(e.path.split('/').last.to_i)['name']}: #{e.message}")
+      error("#{websites.at(e.path.split('/')[2].to_i)['name']}: #{e.message}")
     end
 
     # Check section alphabetization
     error("_data/#{section['id']}.yml is not alphabetized by name") \
-      if websites != websites.sort_by { |website| website['name'].downcase }
+      if websites != (websites.sort_by { |website| website['name'].downcase })
 
     # Collect list of all images for section
     imgs = Dir["img/#{section['id']}/*"]
@@ -91,7 +91,6 @@ begin
   end
 
   exit 1 if @output > 0
-
 rescue Psych::SyntaxError => e
   puts "<------------ ERROR in a YAML file ------------>\n"
   puts e
