@@ -148,6 +148,15 @@ websites:
       sms: Yes
       phone: Yes
 
+    - name: Paycor
+      url: https://www.paycor.com
+      img: paycor.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      doc: https://www.paycor.com/security/how-to-keep-your-account-safe
+
     - name: Paytrust
       url: http://paytrust.quicken.com
       img: paytrust.png
@@ -222,8 +231,16 @@ websites:
       url: https://simpletax.ca/
       img: simpletax.png
       tfa: Yes
-      email: Yes
+      software: Yes
       doc: https://help.simpletax.ca/questions/two-factor-authentication
+
+    - name: Taxact
+      url: https://www.taxact.com
+      img: taxact.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      doc: https://www.taxact.com/support/24138/2016/how-is-a-verification-code-used
 
     - name: TransferWise
       url: https://transferwise.com
