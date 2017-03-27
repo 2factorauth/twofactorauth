@@ -65,7 +65,7 @@ begin
     errors = validator.validate(data)
 
     errors.each do |e|
-      error("#{websites.at(e.path.split('/').last.to_i)['name']}: #{e.message}")
+      error("#{websites.at(e.path.split('/')[2].to_i)['name']}: #{e.message}")
     end
 
     # Check section alphabetization
