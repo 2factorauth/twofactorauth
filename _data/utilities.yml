@@ -36,10 +36,11 @@ websites:
 
     - name: Comcast
       url: https://www.xfinity.com/
-      twitter: ComcastCares
-      facebook: xfinity
       img: comcast.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      doc: https://www.xfinity.com/support/account/enroll-2-step-verification/
 
     - name: Con Edison
       url: https://www.coned.com/
