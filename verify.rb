@@ -6,19 +6,69 @@ require 'kwalify'
 # YAML tags related to TFA
 @tfa_tags = {
   # YAML tags for TFA Yes
-  true => %w(email hardware software sms phone doc),
+  true => %w[email hardware software sms phone doc],
   # YAML tags for TFA No
-  false => %w(status twitter facebook email_address lang)
+  false => %w[status twitter facebook email_address lang]
 }.freeze
 
-# Image max size (in bytes)
-@img_max_size = 2500
+# Website Kwalify Validator
+class WebsiteValidator < Kwalify::Validator
+  # Image max size (in bytes)
+  @img_max_size = 2500
+  # Image dimensions
+  @img_dimensions = [32, 32].freeze
+  # Image format used for all images
+  @img_extension = '.png'.freeze
 
-# Image dimensions
-@img_dimensions = [32, 32]
+  def initialize(tfa_tags)
+    @tfa_tags = tfa_tags
+    super(Kwalify::Yaml.load_file('websites_schema.yml'))
+  end
 
-# Image format used for all images in the 'img/' directories.
-@img_extension = '.png'
+  def self.add_error(msg)
+    @errors << Kwalify::ValidationError.new(msg, @path)
+  end
+
+  def self.validate_img(value)
+    # Check image dimensions
+    add_error("#{value} is not #{@img_dimensions.join('x')} pixels.") \
+      unless FastImage.size(value) == @img_dimensions
+    # Check image file extension and type
+    add_error("#{value} is not using the #{@img_extension} format.") \
+      unless File.extname(value) == @img_extension && \
+             FastImage.type(value) == :png
+    # Check image file size
+    add_error("#{value} should not be larger than #{@img_max_size} bytes.") \
+      unless File.size(value) > @img_max_size
+  end
+
+  def check_tags(value)
+    case value
+    when 'tfa'
+      tag = false
+      @tfa_tags[true].each { |true_tag| tag = true unless true_tag.empty? }
+      add_error("one of #{@tfa_tags[true]} is required") unless tag
+    when 'img'
+      # Exception if image file not found
+      raise "#{name} image not found." unless File.exist?(img)
+      validate_img(value)
+    else
+      add_error("\'#{value}\' should NOT be " \
+        "present when tfa: #{value['tfa'] ? 'true' : 'false'}.") \
+        unless @tfa_tags[!value['tfa']][value].nil?
+    end
+  end
+
+  ## hook method called by Validator#validate()
+  def validate_hook(value, rule, path, errors)
+    @path = path
+    @errors = errors
+    case rule.name
+    when 'Website'
+      check_tags(value)
+    end
+  end
+end
 
 # Send error message
 def error(msg)
@@ -27,28 +77,10 @@ def error(msg)
   puts "#{@output}. #{msg}"
 end
 
-# rubocop:disable AbcSize,CyclomaticComplexity
-def test_img(img, name, imgs)
-  # Exception if image file not found
-  raise "#{name} image not found." unless File.exist?(img)
+def test_img(img, imgs)
   # Remove img from array unless it doesn't exist (double reference case)
   imgs.delete_at(imgs.index(img)) unless imgs.index(img).nil?
-
-  # Check image dimensions
-  error("#{img} is not #{@img_dimensions.join('x')} pixels.")\
-    unless FastImage.size(img) == @img_dimensions
-
-  # Check image file extension and type
-  error("#{img} is not using the #{@img_extension} format.")\
-    unless File.extname(img) == @img_extension && FastImage.type(img) == :png
-
-  # Check image file size
-  img_size = File.size(img)
-  return unless img_size > @img_max_size
-  error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
-          " currently #{img_size} bytes.")
 end
-# rubocop:enable AbcSize,CyclomaticComplexity
 
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
@@ -57,8 +89,7 @@ begin
   # Check sections.yml alphabetization
   error('section.yml is not alphabetized by name') \
     if sections != (sections.sort_by { |section| section['id'].downcase })
-  schema = YAML.load_file('websites_schema.yml')
-  validator = Kwalify::Validator.new(schema)
+  validator = WebsiteValidator.new(@tfa_tags)
   sections.each do |section|
     data = YAML.load_file("_data/#{section['id']}.yml")
     websites = data['websites']
@@ -75,15 +106,7 @@ begin
     # Collect list of all images for section
     imgs = Dir["img/#{section['id']}/*"]
 
-    websites.each do |website|
-      @tfa_tags[!website['tfa']].each do |tag|
-        next if website[tag].nil?
-        error("\'#{tag}\' should NOT be "\
-            "present when tfa: #{website['tfa'] ? 'true' : 'false'}.")
-      end
-      test_img("img/#{section['id']}/#{website['img']}", website['name'],
-               imgs)
-    end
+    websites.each { |website| test_img("img/#{section['id']}/#{website['img']}", imgs) }
 
     # After removing images associated with entries in test_img, alert
     # for unused or orphaned images

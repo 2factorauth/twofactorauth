@@ -5,13 +5,6 @@ websites:
       img: aboutme.png
       tfa: No
 
-    - name: App.net
-      url: https://join.app.net
-      img: appnet.png
-      tfa: Yes
-      software: Yes
-      doc: https://mml.desk.com/customer/portal/articles/1039728-how-do-i-set-up-two-factor-authentication-
-
     - name: Badoo
       url: https://badoo.com
       img: badoo.png
@@ -23,9 +16,7 @@ websites:
       img: bitly.png
       tfa: Yes
       sms: Yes
-      exceptions:
-          text: "SMS-capable phone required."
-      doc: http://blog.bitly.com/post/90381427894/introducing-2-step-verification-for-all-users
+      doc: https://support.bitly.com/hc/en-us/articles/230650187-What-is-2-step-verification-
 
     - name: Buffer
       url: https://bufferapp.com
