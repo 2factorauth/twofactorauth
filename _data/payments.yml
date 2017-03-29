@@ -125,8 +125,9 @@ websites:
       img: squareup.png
       tfa: Yes
       sms: Yes
+      software: Yes
       exceptions:
-        text: "Currently only US merchants, protects only Dashboard access"
+        text: "SMS only supported in US and Canada"
       doc: https://squareup.com/help/us/en/article/5593-2-step-verification
 
     - name: Square Cash
