@@ -515,12 +515,20 @@ websites:
       software: Yes
       doc: https://www.nordea.se/privat/vardagstjanster/internet-mobil-telefon/bank-id.html
 
-    - name: Nordnet
+    - name: Nordnet Finland
       url: https://www.nordnet.fi/
       img: nordnet.png
       tfa: No
       twitter: nordnetFI
       lang: fi
+
+    - name: Nordnet Sverige
+      url: https://www.nordnet.se/
+      img: nordnet.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "TFA only available for Swedish residents with BankID."
 
     - name: Northeast Credit Union
       url: https://necu.org
