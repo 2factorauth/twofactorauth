@@ -8,6 +8,13 @@ websites:
       software: Yes
       doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
+    - name: CounterMail
+      url: https://countermail.com/
+      img: countermail.png
+      tfa: Yes
+      hardware: Yes
+      doc: https://countermail.com/?p=keyfile
+
     - name: FastMail
       url: https://www.fastmail.com/
       img: fastmail.png
