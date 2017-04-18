@@ -432,3 +432,14 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://wpengine.com/support/2-factor-authentication/
+
+    - name: iozoom
+      url: https://www.iozoom.com
+      img: iozoom.png
+      tfa: Yes
+      twitter: iozoom
+      facebook: iozoom
+      software: Yes
+      exceptions:
+          text: "Needed Google Authenticator or OATH app downloaded on your phone."
+      doc: https://www.iozoom.com/client/announcements.php?id=6
