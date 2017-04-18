@@ -247,6 +247,12 @@ websites:
       exceptions:
           text: "SMS-capable phone required."
       doc: https://en.support.wordpress.com/security/two-step-authentication/
+      
+    - name: XING
+      url: https://www.xing.com
+      img: xing.png
+      tfa: No
+      twitter: XING_com
 
     - name: XING
       url: https://www.xing.com
