@@ -15,9 +15,10 @@ are stored in folders corresponding to each of those categories in their own
    setup with [Travis][travis]. If your pull request doesn't pass, it won't be
    merged. Travis will only check your changes after you submit a pull request.
    If you want to test locally, instructions are listed below. Keep reading!
-2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
-   preferred format. If possible, please also run the image through an optimizing
-   utility such as OptiPNG before committing it to the repo.
+2. **Use a Nice Icon**: The icon must have a resolution of 32x32, and its size
+   must be less than 2500 bytes. PNG is the preferred format. If possible,
+   please also run the image through an optimizing utility such as OptiPNG
+   before committing it to the repo.
 3. **Be Awesome**: You need to be awesome. That is all.
 
 ## Running Locally
