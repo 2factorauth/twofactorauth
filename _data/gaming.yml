@@ -129,6 +129,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      exceptions:
+          text: "Software implementation requires use of the Authy service."
       doc: https://support.humblebundle.com/hc/en-us/articles/202421374
 
     - name: IndieGala
