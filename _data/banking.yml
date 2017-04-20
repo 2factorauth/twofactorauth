@@ -582,10 +582,11 @@ websites:
 
     - name: PNC Bank
       url: https://www.pnc.com/
-      twitter: pncnews
-      facebook: pncbank
       img: pncbank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      exceptions:
+          text: "While PNC does support SMS 2fa, they implemented it very poorly and it could be bypassed fairly easily by someone who knows what to look for."
 
     - name: Podravska banka
       url: https://www.poba.hr/
