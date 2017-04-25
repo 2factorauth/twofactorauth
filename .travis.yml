@@ -1,13 +1,18 @@
 sudo: false
 language: ruby
 rvm: 2.4.0
+addons:
+  apt:
+    packages:
+      - ca-certificates
 cache:
   bundler: true
   directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 before_install: gem update --system --no-doc
 matrix:
   include:
-    - script: bundle exec rake proof_external
+    - dist: trusty
+      script: bundle exec rake proof_external
   allow_failures:
     - script: bundle exec rake proof_external
 notifications:
