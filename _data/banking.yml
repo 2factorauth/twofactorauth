@@ -406,6 +406,13 @@ websites:
       img: huntingtonnationalbank.png
       tfa: No
 
+    - name: IberiaBank
+      url: https://www.iberiabank.com
+      twitter: IBERIABANK
+      facebook: IberiaBank
+      img: iberiabank.png
+      tfa: No
+
     - name: ING (Luxembourg)
       url: https://www.ing.lu
       img: ing.png
@@ -515,12 +522,20 @@ websites:
       software: Yes
       doc: https://www.nordea.se/privat/vardagstjanster/internet-mobil-telefon/bank-id.html
 
-    - name: Nordnet
+    - name: Nordnet Finland
       url: https://www.nordnet.fi/
       img: nordnet.png
       tfa: No
       twitter: nordnetFI
       lang: fi
+
+    - name: Nordnet Sverige
+      url: https://www.nordnet.se/
+      img: nordnet.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "TFA only available for Swedish residents with BankID."
 
     - name: Northeast Credit Union
       url: https://necu.org
@@ -663,8 +678,9 @@ websites:
       url: https://seb.se/
       img: seb.png
       tfa: Yes
+      software: Yes
       hardware: Yes
-      doc: http://www.seb.se/pow/wcp/index.asp?ss=/pow/wcp/templates/sebcollection.cfmc.asp%3FDUID%3DDUID_623697DCF55C4576C1256DEF00637BE3
+      doc: https://seb.se/privat/digitala-tjanster
 
     - name: Service Credit Union
       url: https://www.servicecu.org/
