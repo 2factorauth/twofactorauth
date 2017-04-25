@@ -13,7 +13,7 @@ task :build do
   Jekyll::Commands::Build.build site, config
 end
 
-task :proof => [:build] do
+task proof: 'build' do
   HTMLProofer.check_directory(
     './_site', \
     assume_extension: true, \
@@ -23,7 +23,7 @@ task :proof => [:build] do
   ).run
 end
 
-task :proof_external do
+task proof_external: 'build' do
   HTMLProofer.check_directory(
     './_site', \
     assume_extension: true, \
