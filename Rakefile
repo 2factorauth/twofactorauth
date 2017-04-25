@@ -2,7 +2,7 @@ require 'html-proofer'
 require 'rubocop/rake_task'
 require 'jekyll'
 
-task default: %w[build proof verify rubocop]
+task default: %w[proof verify rubocop]
 
 task :build do
   config = Jekyll.configuration(
@@ -13,13 +13,22 @@ task :build do
   Jekyll::Commands::Build.build site, config
 end
 
-task :proof do
+task :proof => [:build] do
   HTMLProofer.check_directory(
     './_site', \
     assume_extension: true, \
     check_html: true, \
     disable_external: true, \
-    cache: { timeframe: '1d' }
+    cache: { timeframe: '1w' }
+  ).run
+end
+
+task :proof_external do
+  HTMLProofer.check_directory(
+    './_site', \
+    assume_extension: true, \
+    check_html: true, \
+    cache: { timeframe: '1w' }
   ).run
 end
 
