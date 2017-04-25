@@ -7,9 +7,9 @@ cache:
 before_install: gem update --system --no-doc
 matrix:
   include:
-    - script: rake proof_external
+    - script: bundle exec rake proof_external
   allow_failures:
-    - script: rake proof_external
+    - script: bundle exec rake proof_external
 notifications:
     email: false
     slack:
