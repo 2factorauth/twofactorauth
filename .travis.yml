@@ -5,6 +5,9 @@ cache:
   bundler: true
   directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 before_install: gem update --system --no-doc
+matrix:
+  allow_failures:
+    - script: rake proof_external
 notifications:
     email: false
     slack:
