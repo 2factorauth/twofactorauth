@@ -122,6 +122,13 @@ websites:
       img: prey.png
       tfa: Yes
       software: Yes
+      doc: http://help.preyproject.com/article/248-how-to-enable-the-two-step-authenticator-for-prey
+
+    - name: Private Internet Access
+      url: https://www.privateinternetaccess.com
+      img: privateinternetaccess.png
+      tfa: No
+      twitter: piacsm
 
     - name: Pwnie Express Pwn Pulse
       url: https://www.pwnieexpress.com/products/pulse-device-detection
@@ -189,3 +196,10 @@ websites:
       img: webroot.png
       twitter: Webroot
       tfa: No
+
+    - name: Windscribe
+      url: https://windscribe.com
+      img: windscribe.png
+      tfa: No
+      twitter: windscribecom
+      facebook: windscribe

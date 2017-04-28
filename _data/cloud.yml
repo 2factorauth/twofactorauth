@@ -48,8 +48,6 @@ websites:
       img: digitalocean.png
       tfa: Yes
       software: Yes
-      exceptions:
-          text: "SMS-capable phone required."
       doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
 
     - name: EngineYard
@@ -82,6 +80,14 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://devcenter.heroku.com/articles/two-factor-authentication
+
+    - name: Hostiso
+      url: https://hostiso.com/
+      img: hostiso.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "While both the main client area and the shared hosting panel support 2FA, each system is separate and requires its own setup."
 
     - name: Hyper.sh
       url: https://www.hyper.sh
@@ -148,6 +154,13 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://www.packet.net/help/kb/account-management-and-billing/how-do-i-enable-two-factor-authentication-/
+
+    - name: ProfitBricks
+      url: https://www.profitbricks.de
+      img: profitbricks.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.profitbricks.com/help/2-Factor_Authentication 
 
     - name: Rackspace
       url: https://www.rackspace.com/

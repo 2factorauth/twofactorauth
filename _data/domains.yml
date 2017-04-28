@@ -284,7 +284,7 @@ websites:
       software: Yes
       doc: https://blogg.loopia.se/2015/03/16/nu-kan-du-logga-in-med-tvafaktorsautentiering-hos-loopia-genom-bankid/
       exceptions:
-          text: "TFA only available for Swedish citizens"
+          text: "TFA only available for Swedish residents with BankID."
 
     - name: MarkMonitor
       url: https://www.markmonitor.com
@@ -459,6 +459,13 @@ websites:
       img: strato.png
       tfa: No
       lang: de
+
+    - name: UK2
+      url: https://www.uk2.net/
+      twitter: UK2
+      facebook: UK2.net
+      img: uk2.png 
+      tfa: No
 
     - name: Uniregistry
       url: https://uniregistry.com/

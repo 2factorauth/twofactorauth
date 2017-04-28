@@ -105,6 +105,13 @@ websites:
       software: Yes
       doc: https://privacy.com/faq
 
+    - name: Ravelin
+      url: https://www.ravelin.com/
+      img: ravelin.png
+      tfa: Yes
+      software: Yes
+      doc: https://ravelin.zendesk.com/hc/en-us/articles/115001071665-Two-Factor-Authentication
+
     - name: Skrill
       url: https://skrill.com/
       img: skrill.png
@@ -118,8 +125,9 @@ websites:
       img: squareup.png
       tfa: Yes
       sms: Yes
+      software: Yes
       exceptions:
-        text: "Currently only US merchants, protects only Dashboard access"
+        text: "SMS only supported in US and Canada"
       doc: https://squareup.com/help/us/en/article/5593-2-step-verification
 
     - name: Square Cash

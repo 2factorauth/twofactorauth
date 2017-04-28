@@ -266,6 +266,13 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: Pingdom
+      url: https://www.pingdom.com
+      img: pingdom.png
+      tfa: No
+      twitter: pingdom
+      facebook: pingdom
+
     - name: Pivotal Tracker
       url: https://www.pivotaltracker.com
       twitter: pivotaltracker
@@ -420,7 +427,7 @@ websites:
 
     - name: Zapier
       url: https://zapier.com
-      twitter: zapier
-      facebook: ZapierApp
       img: zapier.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://zapier.com/help/two-factor-authentication/

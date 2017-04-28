@@ -49,7 +49,7 @@ websites:
       img: eso.png
       tfa: Yes
       email: Yes
-      doc: /notes/eso/
+      doc: https://help.elderscrollsonline.com/app/answers/detail/a_id/8611
 
     - name: Enjin
       url: http://www.enjin.com/
@@ -61,6 +61,13 @@ websites:
           text: "2FA is only available on paid plans."
       doc: https://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
 
+    - name: EpicGames
+      url: https://www.epicgames.com/
+      twitter: EpicGames
+      facebook: epicgamesinc
+      img: epicgames.png
+      tfa: No
+
     - name: EVE Online
       url: https://www.eveonline.com/
       img: eveonline.png
@@ -68,6 +75,13 @@ websites:
       email: Yes
       software: Yes
       doc: https://support.eveonline.com/hc/en-us/articles/203465601-Two-Factor-Authentication-and-Authenticator
+
+    - name: FaceIT
+      url: https://www.faceit.com
+      img: faceit.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.faceit.com/hc/en-us/articles/115000254670-Enabling-2-Factor-Authentication-
 
     - name: GameFly
       url: https://www.gamefly.com/
@@ -123,6 +137,13 @@ websites:
       sms: Yes
       software: Yes
       doc: https://support.humblebundle.com/hc/en-us/articles/202421374
+
+    - name: IndieGala
+      url: https://www.indiegala.com/
+      img: indiegala.png
+      twitter: IndieGala
+      facebook: IndieGala
+      tfa: No
 
     - name: itch.io
       url: https://itch.io/

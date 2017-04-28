@@ -110,9 +110,10 @@ websites:
 
     - name: Instagram
       url: https://www.instagram.com
-      twitter: instagram
       img: instagram.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://help.instagram.com/566810106808145
 
     - name: LinkedIn
       url: https://linkedin.com
@@ -153,6 +154,13 @@ websites:
       url: https://nextdoor.com
       twitter: Nextdoor
       img: nextdoor.png
+      tfa: No
+
+    - name: OkCupid
+      url: https://www.okcupid.com/
+      twitter: okcupid
+      facebook: okcupid
+      img: okcupid.png
       tfa: No
 
     - name: Pinterest
