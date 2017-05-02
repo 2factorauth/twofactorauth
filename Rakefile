@@ -27,11 +27,7 @@ task proof_external: 'build' do
     './_site', \
     assume_extension: true, \
     check_html: true, \
-    cache: { timeframe: '1w' }, \
-    typhoeus: {
-      ssl_verifypeer: false, \
-      ssl_verifyhost: 0
-    }
+    cache: { timeframe: '1w' }
   ).run
 end
 
