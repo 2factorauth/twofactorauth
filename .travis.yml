@@ -6,6 +6,8 @@ addons:
   apt:
     packages:
       - ca-certificates
+      - curl
+      - libcurl3
 cache:
   bundler: true
   directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
