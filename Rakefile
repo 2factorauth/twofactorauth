@@ -28,7 +28,7 @@ task proof_external: 'build' do
     assume_extension: true, \
     check_html: true, \
     cache: { timeframe: '1w' }, \
-    hydra: { max_concurrency: 25 }
+    hydra: { max_concurrency: 12 }
   ).run
 end
 
