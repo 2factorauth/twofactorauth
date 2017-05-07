@@ -8,6 +8,13 @@ websites:
       software: Yes
       doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
+    - name: CheckMail
+      url: https://checkmail.io/
+      img: checkmail.png
+      tfa: Yes
+      software: Yes
+      doc: https://checkmail.io/docs/setting-up-two-factor-authentication/
+
     - name: FastMail
       url: https://www.fastmail.com/
       img: fastmail.png
