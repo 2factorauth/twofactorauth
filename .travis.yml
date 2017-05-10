@@ -2,19 +2,14 @@ sudo: false
 language: ruby
 dist: trusty
 rvm: 2.4.0
-addons:
-  apt:
-    packages:
-      - ca-certificates
-      - curl
-      - libcurl3
 cache:
   bundler: true
   directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 before_install: gem update --system --no-doc
 matrix:
   include:
-    - script: bundle exec rake proof_external
+    - os: osx
+      script: bundle exec rake proof_external
       env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   allow_failures:
     - script: bundle exec rake proof_external
