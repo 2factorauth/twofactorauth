@@ -28,6 +28,8 @@ websites:
       sms: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+          text: "Software implementation requires use of the Battle.net Authenticator mobile app. It does not support multiple accounts on the same device."
       doc: http://us.battle.net/en/security/
 
     - name: Curse
