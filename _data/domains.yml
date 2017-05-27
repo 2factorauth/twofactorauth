@@ -129,7 +129,7 @@ websites:
       doc: http://www.domeny.tv/en/two-factor-authentication
 
     - name: Dyn
-      url: http://dyn.com/
+      url: https://dyn.com/
       img: dyn.png
       tfa: Yes
       sms: Yes
@@ -151,6 +151,7 @@ websites:
       img: easydns.png
       tfa: Yes
       sms: Yes
+      email: Yes
       doc: https://fusion.easydns.com/Knowledgebase/Article/View/347/0/account-security
 
     - name: eNom
