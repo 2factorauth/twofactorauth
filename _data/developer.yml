@@ -41,7 +41,7 @@ websites:
     - name: Balsamiq
       url: https://balsamiq.com
       twitter: balsamiq
-      facebook: BalsamiqMockups
+      facebook: balsamiq
       img: balsamiq.png
       tfa: No
 
@@ -58,7 +58,7 @@ websites:
       img: bugsnag.png
       tfa: Yes
       software: Yes
-      doc: https://bugsnag.com/blog/two-factor-authentication
+      doc: https://blog.bugsnag.com/two-factor-authentication/
 
     - name: Bugzilla@Mozilla
       url: https://bugzilla.mozilla.org
@@ -164,7 +164,7 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
-      doc: http://doc.gitlab.com/ee/profile/two_factor_authentication.html
+      doc: https://docs.gitlab.com/ee/security/two_factor_authentication.html
 
     - name: Hashicorp Atlas
       url: https://atlas.hashicorp.com/
@@ -175,11 +175,11 @@ websites:
       doc: https://atlas.hashicorp.com/help/user-accounts/authentication#two-factor-authentication
 
     - name: Infobip
-      url: http://www.infobip.com/
+      url: https://www.infobip.com/
       img: infobip.png
       tfa: Yes
       sms: Yes
-      doc: http://www.infobip.com/messaging/enterprise/2_factor_authentication/
+      doc: https://www.infobip.com/messaging/enterprise/2_factor_authentication/
 
     - name: JetBrains
       url: https://jetbrains.com
@@ -188,19 +188,12 @@ websites:
       twitter: jetbrains
       facebook: JetBrains
 
-    - name: Jidoteki
-      url: https://jidoteki.com
-      img: jidoteki.png
-      tfa: Yes
-      software: Yes
-      doc: 'https://jidoteki.com/documentation#authentication'
-
     - name: Koding
       url: https://koding.com
       img: koding.png
       tfa: Yes
       software: Yes
-      doc: http://learn.koding.com/guides/2-factor-auth/
+      doc: https://www.koding.com/blog/2015/06/two-factor-authentication/
 
     - name: Launchpad
       url: https://launchpad.net
@@ -211,11 +204,11 @@ websites:
       doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
 
     - name: Looker
-      url: http://looker.com/
+      url: https://looker.com/
       img: looker.png
       tfa: Yes
       software: Yes
-      doc: http://www.looker.com/docs/admin/security/two-factor-authentication
+      doc: https://www.looker.com/docs/admin/security/two-factor-authentication
 
     - name: Mapbox
       url: https://www.mapbox.com

@@ -27,7 +27,7 @@ websites:
           text: "Requires X.509-capable cryptotoken or smartcard."
 
     - name: Cobalt
-      url: https://www.cobalt.io/
+      url: https://cobalt.io/
       img: cobalt.png
       tfa: Yes
       software: Yes
@@ -82,15 +82,6 @@ websites:
       tfa: No
       twitter: gogetssl
 
-    - name: Imperva Incapsula
-      url: https://www.incapsula.com/
-      img: incapsula.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      software: Yes
-      doc: https://docs.incapsula.com/Content/Management%20Console%20and%20Settings/accountsettings.htm
-
     - name: Norton
       url: http://us.norton.com
       img: norton.png
@@ -132,7 +123,7 @@ websites:
           text: "TFA can be enabled on Pwn Pulse Accounts upon customer request."
 
     - name: SSLTrust
-      url: http://ssltrust.com.au/
+      url: https://www.ssltrust.com.au/
       img: ssltrust.png
       tfa: Yes
       software: Yes
@@ -152,11 +143,10 @@ websites:
       twitter: ThreatMetrix
 
     - name: ThreatSim
-      url: http://login.threatsim.com
+      url: https://login.threatsim.com
       img: threatsim.png
       tfa: Yes
       sms: Yes
-      doc: http://threatsim.com/features/
 
     - name: Tinfoil Security
       url: https://www.tinfoilsecurity.com

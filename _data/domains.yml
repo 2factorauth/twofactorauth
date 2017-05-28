@@ -76,7 +76,7 @@ websites:
       img: dnsmadeeasy.png
       tfa: Yes
       software: Yes
-      doc: http://www.dnsmadeeasy.com/press-release/dns-made-easy-adds-two-factor-authentication-with-time-based-passwords/
+      doc: http://help.dnsmadeeasy.com/managed-dns/administrative/enable-two-factor-authentication/
 
     - name: DNSimple
       url: https://dnsimple.com/
@@ -112,7 +112,7 @@ websites:
       img: domains4bitcoins.png
       tfa: Yes
       sms: Yes
-      doc: http://my.domains4bitcoins.com/kb/answer/2692
+      doc: https://my.domains4bitcoins.com/kb/answer/2692
 
     - name: DomainsAtCost
       url: https://www.domainsatcost.ca/
@@ -151,10 +151,11 @@ websites:
       img: easydns.png
       tfa: Yes
       sms: Yes
-      doc: http://docs.easydns.com/2-factor-authentication/
+      email: Yes
+      doc: https://fusion.easydns.com/Knowledgebase/Article/View/347/0/account-security
 
     - name: eNom
-      url: http://enom.com/
+      url: https://www.enom.com/
       img: enom.png
       tfa: Yes
       software: Yes
@@ -200,7 +201,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://www.godaddy.com/help/enabling-two-step-authentication-for-your-godaddy-account-7502
+      doc: https://www.godaddy.com/help/enable-two-step-verification-7502
 
     - name: Google Domains
       url: https://domains.google.com
@@ -247,7 +248,7 @@ websites:
       email: Yes
       software: Yes
       sms: Yes
-      doc: https://incapsula.zendesk.com/hc/en-us/articles/204795664-Incapsula-s-Password-Policy
+      doc: https://docs.incapsula.com/Content/management-console-and-settings/account-settings.htm
 
     - name: Internet.bs
       url: http://www.internet.bs

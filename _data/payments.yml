@@ -21,7 +21,7 @@ websites:
       sms: Yes
       exceptions:
           text: "SMS-capable phone required."
-      doc: http://server.buycraft.net/tfa
+      doc: http://help.buycraft.net/article/83-two-factor-authentication
 
     - name: Dwolla
       url: https://www.dwolla.com
@@ -61,7 +61,7 @@ websites:
       exceptions:
          text: "Software 2FA is only available for Swedish citizens with BankID."
 
-    - name: Litle & Co
+    - name: 'Litle & Co'
       img: litleco.png
       twitter: litleco
       tfa: No
@@ -72,7 +72,7 @@ websites:
       url: https://www.neteller.com/
       tfa: Yes
       software: Yes
-      doc: https://help.neteller.com/app/answers/detail/a_id/4670/kw/authentication
+      doc: https://support.neteller.com/ACCOUNT/Two-Factor-Authentication/85238429/What-is-two-step-authentication.htm
 
     - name: Payoneer
       url: http://www.payoneer.com/

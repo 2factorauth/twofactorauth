@@ -4,7 +4,7 @@ websites:
       img: 34sp.png
       tfa: Yes
       software: yes
-      doc: https://www.34sp.com/kb/142/how-to-enable-2-factor-authentication-on-your-account
+      doc: https://www.34sp.com/kb/142/how-to-enable-two-factor-authentication-on-your-account
 
     - name: ARP Networks
       url: https://arpnetworks.com/
@@ -27,12 +27,6 @@ websites:
       email_address: support@binero.se
       tfa: No
       lang: sv
-
-    - name: BlueFur Web Hosting
-      url: https://www.bluefur.com
-      img: bluefur.png
-      twitter: bluefur
-      tfa: No
 
     - name: Bluehost
       url: https://www.bluehost.com/
@@ -101,7 +95,7 @@ websites:
       img: fastly.png
       tfa: Yes
       software: Yes
-      doc: https://docs.fastly.com/guides/getting-started/enabling-and-disabling-twofactor-authentication
+      doc: https://docs.fastly.com/guides/account-management-and-security/enabling-and-disabling-two-factor-authentication
 
     - name: FS Data
       url: https://fsdata.se/
@@ -224,10 +218,11 @@ websites:
 
     - name: Miss Hosting
       url: https://misshosting.com/
-      twitter: missgroupcom
-      facebook: missgroupcom
+      twitter: misshostingcom
+      facebook: misshostingcom
       img: misshosting.png
       tfa: No
+      lang: sv
 
     - name: Mittwald
       url: https://www.mittwald.de/
@@ -340,7 +335,6 @@ websites:
       img: speedit.png
       tfa: Yes
       software: Yes
-      doc: https://www.speedit.org/faq/#accordian_item_937
 
     - name: Squarespace
       url: https://squarespace.com/
