@@ -28,6 +28,14 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: Bitfinex
+      url: https://www.bitfinex.com
+      img: bitfinex.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.bitfinex.com/hc/en-us/sections/203192029-Security
+
     - name: BitGo
       url: https://www.bitgo.com
       img: bitgo.png
@@ -189,6 +197,12 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://localbitcoins.blogspot.com.au/2013/05/using-two-factor-authentication-on.html
+      
+    - name: Poloniex
+      url: https://poloniex.com/
+      img: poloniex.png
+      software: Yes
+      doc: https://poloniex.freshdesk.com/support/solutions/articles/1000225338-how-do-i-to-setup-two-factor-authentication
 
     - name: SatoshiTango
       url: https://satoshitango.com/
