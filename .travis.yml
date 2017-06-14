@@ -1,6 +1,5 @@
 sudo: false
 language: ruby
-dist: trusty
 rvm: 2.4.0
 cache:
   bundler: true
@@ -8,6 +7,8 @@ cache:
 before_install: gem update --system --no-doc
 matrix:
   include:
+    - os: linux
+      dist: trusty
     - os: osx
       script: bundle exec rake proof_external
       env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
