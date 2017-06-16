@@ -15,6 +15,15 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://support.bitium.com/customer/portal/articles/1417358-enabling-two-factor-authentication-2fa-
+      
+    - name: BitWarden
+      url: https://www.bitwarden.com/
+      img: bitwarden.png
+      tfa: Yes
+      sms: No
+      email: No
+      phone: Yes
+      doc: https://help.bitwarden.com/article/setup-two-step-login/
 
     - name: Centrify
       url: https://www.centrify.com
