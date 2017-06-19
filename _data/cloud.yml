@@ -57,6 +57,13 @@ websites:
       software: Yes
       doc: https://blog.engineyard.com/2015/engine-yards-two-factor-authentication
 
+    - name: Fastly
+      url: https://www.fastly.com
+      img: fastly.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.fastly.com/guides/account-management-and-security/enabling-and-disabling-two-factor-authentication
+
     - name: fortrabbit
       url: https://www.fortrabbit.com/
       img: fortrabbit.png
@@ -160,7 +167,7 @@ websites:
       img: profitbricks.png
       tfa: Yes
       software: Yes
-      doc: https://www.profitbricks.com/help/2-Factor_Authentication 
+      doc: https://www.profitbricks.com/help/2-Factor_Authentication
 
     - name: Rackspace
       url: https://www.rackspace.com/
