@@ -158,17 +158,12 @@ websites:
 
     - name: Capital One
       url: https://www.capitalone.com/
-      twitter: CapitalOne
-      facebook: capitalone
       img: capitalone.png
-      tfa: No
-
-    - name: Capital One 360
-      url: https://home.capitalone360.com/
-      twitter: CapitalOne360
-      facebook: CapitalOne360
-      img: capitalone360.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: https://www.capitalone.com/identity-protection/swiftid/
 
     - name: CDC Federal Credit Union
       url: https://www.cdcfcu.com
