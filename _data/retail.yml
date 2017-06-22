@@ -86,11 +86,10 @@ websites:
       url: http://ebay.com
       img: ebay.png
       tfa: Yes
-      hardware: Yes
-      software: Yes
+      sms: Yes
       exceptions:
-          text: "eBay only supports 2FA in some countries."
-      doc: http://pages.ebay.com/securitykey/faq.html
+          text: "This ebay.com signup link works for most countries."
+      doc: http://rover.ebay.com/rover/1/710-53481-19255-0/1?campid=5335837209&customid=&toolid=10001&mpre=http%3A%2F%2Fsigninalert.ebay.com/sgninalrt/twofa/onboard
 
     - name: Etsy
       url: http://www.etsy.com/
