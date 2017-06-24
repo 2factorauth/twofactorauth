@@ -281,6 +281,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      exceptions:
+          text: "SMS available only to customers in France."
 
     - name: OVH
       url: https://www.ovh.com/
