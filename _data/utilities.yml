@@ -6,6 +6,15 @@ websites:
       img: aep.png
       tfa: No
 
+    - name: Andrews &amp; Arnold
+      url: https://aa.net.uk
+      img: aaisp.png
+      tfa: Yes
+      software: Yes
+      doc: https://aa.net.uk/kb-broadband-2fa.html
+      exceptions:
+          text: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
+
     - name: AT&amp;T
       url: https://www.att.com/
       twitter: ATTCares
