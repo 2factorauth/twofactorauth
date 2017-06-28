@@ -41,8 +41,18 @@ websites:
       facebook: OfficialCWNP
       email_address: customercare@cwnp.com
 
+    - name: Clemson University
+      url: https://www.clemson.edu/
+      img: clemson.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://2fa.app.clemson.edu/
+
     - name: Clever
-      url: https://www.clever.com
+      url: https://clever.com
       img: clever.png
       tfa: Yes
       sms: Yes
@@ -185,12 +195,6 @@ websites:
       facebook: mystudylife
       img: mystudylife.png
       tfa: No
-
-    - name: Oplerno
-      url: https://enroll.oplerno.com/
-      img: oplerno.png
-      tfa: Yes
-      software: Yes
 
     - name: PushCoin
       url: https://pushcoin.com

@@ -111,7 +111,7 @@ websites:
       img: cosmolex.png
       tfa: Yes
       sms: Yes
-      doc: http://support.cosmolex.com/customer/portal/articles/2158628
+      doc: http://kb.cosmolex.com/support/solutions/articles/19000028547-how-to-enable-two-factor-authentication-
 
     - name: Crowd Supply
       url: https://www.crowdsupply.com
@@ -166,6 +166,14 @@ websites:
       email: Yes
       doc: https://everlaw.zendesk.com/hc/en-us/articles/206312165-Two-Factor-Authentication
 
+    - name: Figma
+      url: https://www.figma.com/
+      img: figma.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.figma.com/#_two-factor-authentication
+
     - name: Findmyshift
       url: https://www.findmyshift.com/
       img: findmyshift.png
@@ -203,6 +211,12 @@ websites:
       software: Yes
       doc: https://ifttt.com/settings#two-step-verification
 
+    - name: ImmobilienScout24
+      url: https://www.immobilienscout24.de
+      img: immobilienscout24.png
+      tfa: Yes
+      software: Yes
+
     - name: Indeed
       url: https://www.indeed.com/
       img: indeed.png
@@ -232,17 +246,6 @@ websites:
       tfa: No
       twitter: Liftopia
       facebook: liftopia
-
-    - name: Mandrill
-      url: https://mandrill.com/
-      img: mandrill.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-          text: "SMS only available in the United States, the United Kingdom, Canada or some Caribbean islands."
-      doc: http://help.mandrill.com/entries/57465557
 
     - name: Mixpanel
       url: https://mixpanel.com/
@@ -275,7 +278,7 @@ websites:
       doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
 
     - name: Pastebin
-      url: http://pastebin.com
+      url: https://pastebin.com
       img: pastebin.png
       tfa: No
       twitter: pastebin
@@ -294,7 +297,7 @@ websites:
       img: phraseapp.png
       software: Yes
       tfa: Yes
-      doc: http://blog.phraseapp.com/post/97556438392/extra-secure-user-accounts-in-phraseapp-with
+      doc: https://phraseapp.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
 
     - name: Pinboard
       url: https://pinboard.in/
@@ -350,6 +353,13 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: Ulule
+      url: https://www.ulule.com/
+      twitter: ulule
+      facebook: ululeEN
+      img: ulule.png
+      tfa: No
+
     - name: Upwork
       url: https://www.upwork.com
       img: upwork.png
@@ -362,7 +372,7 @@ websites:
       img: usabilla.png
       tfa: Yes
       software: Yes
-      doc: http://support.usabilla.com/customer/portal/articles/2098444-2-step-authentication
+      doc: https://support.usabilla.com/hc/en-us/articles/207976889-Setting-up-2-step-authentication
 
     - name: WageWorks
       url: https://www.wageworks.com

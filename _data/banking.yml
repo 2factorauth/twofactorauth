@@ -120,6 +120,15 @@ websites:
       phone: Yes
       email: Yes
 
+    - name: Black Hills Federal Credit Union
+      url: https://www.bhfcu.com
+      img: bhfcu.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      email: Yes
+      doc: https://www.bhfcu.com/Landing/Online-Banking-FAQs
+
     - name: BMO Bank of Montreal
       url: https://www.bmo.com/
       twitter: BMO
@@ -149,17 +158,12 @@ websites:
 
     - name: Capital One
       url: https://www.capitalone.com/
-      twitter: CapitalOne
-      facebook: capitalone
       img: capitalone.png
-      tfa: No
-
-    - name: Capital One 360
-      url: https://home.capitalone360.com/
-      twitter: CapitalOne360
-      facebook: CapitalOne360
-      img: capitalone360.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: https://www.capitalone.com/identity-protection/swiftid/
 
     - name: CDC Federal Credit Union
       url: https://www.cdcfcu.com
@@ -320,6 +324,8 @@ websites:
       img: final.png
       tfa: Yes
       sms: Yes
+      software: Yes
+      doc: https://getfinal.com/company-news/2017/05/31/why-final-is-transitioning-to-TOTP-for-2FA/
 
     - name: First Direct
       url: http://www1.firstdirect.com/
@@ -344,7 +350,7 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
-      doc: https://www.firsttechfed.com/OnlineServices/bankonlinesecurely/SecurityKey
+      doc: https://www.firsttechfed.com/Tools-and-Resources/Tools-and-Resources/Security
 
     - name: FirstBank
       url: https://www.efirstbank.com/
@@ -392,7 +398,7 @@ websites:
       tfa: No
 
     - name: HSBC
-      url: https://www.hsbc.com
+      url: http://www.hsbc.com
       img: hsbc.png
       tfa: Yes
       hardware: Yes
@@ -762,7 +768,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://old.tbcbank.ge/en/private/banking/tbc_digipass/
+      doc: http://www.tbcbank.ge/web/en/web/guest/tbc-digipass
 
     - name: TD Bank
       url: https://www.tdbank.com
@@ -878,7 +884,7 @@ websites:
       doc: https://www.zaba.hr/home/token#pan3
 
     - name: ZenBanx
-      url: https://zenbanx.ca/
+      url: https://www.zenbanx.com/
       twitter: ZenBanx
       facebook: Zenbanx
       img: zenbanx.png
