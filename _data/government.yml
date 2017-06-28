@@ -11,6 +11,13 @@ websites:
       img: healthcaregov.png
       tfa: No
 
+    - name: HMRC
+      url: https://hmrc.gov.uk
+      img: hmrc.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-sms-text-messages
+
     - name: myGov
       url: https://my.gov.au
       img: mygov.png
