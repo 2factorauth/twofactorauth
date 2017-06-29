@@ -84,8 +84,9 @@ begin
       end
       test_img("img/#{section['id']}/#{website['img']}", website['name'],
                imgs)
-      normalized_url = Addressable::URI.parse(website['url']).normalize.to_s
-      error("URL #{website['url']} not normalized, looking for #{normalized_url}") if normalized_url != website['url']
+      url_nrml = Addressable::URI.parse(website['url']).normalize.to_s
+      error("URL #{website['url']} not normalized, looking for #{url_nrml}") \
+        if url_nrml != website['url']
     end
 
     # After removing images associated with entries in test_img, alert
