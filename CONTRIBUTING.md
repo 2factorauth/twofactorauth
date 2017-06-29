@@ -80,9 +80,9 @@ its removal.
 
 View the complete list in the [EXCLUSION.md file][exclude].
 
-## New Sections
+## New Categories
 
-To add a new section, modify the `sections` value in [sections.yml](_data/sections.yml)
+To add a new category, modify the `sections` value in [sections.yml](_data/sections.yml)
 and follow the template below:
 
 ```yml
@@ -97,11 +97,11 @@ id, using the `.yml` extension.
 ## New Sites
 
 First and foremost, make sure the new site meets our [definition
-requirements](#a-note-on-definitions) for Two Factor Auth.
+requirements](#a-note-on-definitions) of Two Factor Auth.
 
 If you are adding multiple sites to the TwoFactorAuth list, please create a new
 git branch for each website, and submit a separate pull request for each branch.
-More information regarding how to create new git branches can be on
+More information regarding how to create new git branches can be found on
 [GitHub's Help Page](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/)
 or [DigitalOcean's Tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-git-branches).
 
@@ -131,7 +131,7 @@ The field `lang:` is only used for non-English websites. The language codes shou
 If a site does provide TFA, it is strongly recommended that you add the `doc:`
 field where public documentation is available. Other fields should be included
 if the website supports them. Any services that are not supported can be excluded.
-Sites supporting TFA should not have a Twitter field.
+Sites supporting TFA should not have a Twitter, Facebook or Email field.
 
 The following is an example of a website that *supports* TFA:
 
@@ -150,7 +150,8 @@ The following is an example of a website that *supports* TFA:
 #### Adding a site that *does not* support TFA
 
 If a site does not provide TFA, the `twitter:` field should be included if the site uses
-Twitter. The fields `sms:`, `email:`, `phone:`, `software:` and `hardware:` can be
+Twitter. Facebook can also be included using the `facebook` field, as well as Email using
+the `email_address` field. The fields `sms:`, `email:`, `phone:`, `software:` and `hardware:` can be
 completely removed.
 
 The following is an example of a website that *does not* supports TFA:
@@ -159,6 +160,7 @@ The following is an example of a website that *does not* supports TFA:
     - name: Netflix
       url: https://www.netflix.com/us/
       twitter: Netflixhelps
+      facebook: netflix
       img: netflix.png
       tfa: No
 ```
@@ -228,8 +230,8 @@ website. There are 4 ways to customize how it is displayed:
   new sites alphabetically and that your site chunk follows the same order as the
   example above.
 
-- If a site supports TFA, their Twitter handle is not needed and can be left out
-  for cleanliness.
+- If a site supports TFA, their Twitter and Facebook handles as well as their email address
+  are not needed and can be left out for cleanliness.
 
 - If a site does not have TFA but there is documentation that they are adding
   it, then use:
@@ -253,7 +255,7 @@ user login would be considered Two Factor Auth. A site that does not prompt you
 for a token upon login, but prompts you for a token when you try to perform a
 sensitive action would not be considered Two Factor Authentication.
 
-For context, check out the discussion in [#242][242].
+For context, check out the discussion in issue [#242][242].
 
 [242]: https://github.com/2factorauth/twofactorauth/issues/242
 [exclude]: /EXCLUSION.md
