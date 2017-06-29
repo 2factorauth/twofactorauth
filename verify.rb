@@ -1,6 +1,7 @@
 require 'yaml'
 require 'fastimage'
 require 'kwalify'
+require 'addressable/uri'
 @output = 0
 
 # YAML tags related to TFA
@@ -83,6 +84,8 @@ begin
       end
       test_img("img/#{section['id']}/#{website['img']}", website['name'],
                imgs)
+      normalized_url = Addressable::URI.parse(website['url']).normalize.to_s
+      error("URL #{website['url']} not normalized, looking for #{normalized_url}") if normalized_url != website['url']
     end
 
     # After removing images associated with entries in test_img, alert
