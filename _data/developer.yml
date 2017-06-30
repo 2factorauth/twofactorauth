@@ -209,6 +209,8 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
+      exceptions:
+          text: "TFA available only after joining beta testers group"
 
     - name: Looker
       url: https://looker.com/
