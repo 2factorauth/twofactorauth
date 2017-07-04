@@ -154,7 +154,7 @@ Twitter. Facebook can also be included using the `facebook` field, as well as Em
 the `email_address` field. The fields `sms:`, `email:`, `phone:`, `software:` and `hardware:` can be
 completely removed.
 
-The following is an example of a website that *does not* supports TFA:
+The following is an example of a website that *does not* support TFA:
 
 ```yml
     - name: Netflix
