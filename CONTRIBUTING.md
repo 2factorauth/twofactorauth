@@ -120,11 +120,9 @@ websites:
     software: Yes
     hardware: Yes
     doc: <link to site TFA documentation>
-    lang: <ISO 639-1 language code>
 ```
 
 The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
-The field `lang:` is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
 
 #### Adding a site that *supports* TFA
 
@@ -151,10 +149,11 @@ The following is an example of a website that *supports* TFA:
 
 If a site does not provide TFA, the `twitter:` field should be included if the site uses
 Twitter. Facebook can also be included using the `facebook` field, as well as Email using
-the `email_address` field. The fields `sms:`, `email:`, `phone:`, `software:` and `hardware:` can be
-completely removed.
+the `email_address` field. If the website does not use the English language, the `lang:` 
+field should also be included. The fields `sms:`, `email:`, `phone:`, `software:` and 
+`hardware:` can be completely removed.
 
-The following is an example of a website that *does not* supports TFA:
+The following is an example of a website that *does not* support TFA:
 
 ```yml
     - name: Netflix
@@ -163,7 +162,10 @@ The following is an example of a website that *does not* supports TFA:
       facebook: netflix
       img: netflix.png
       tfa: No
+      lang: <ISO 639-1 language code> (Only for non-English websites)
 ```
+
+The `lang:` field is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
 
 ### Exceptions & Restrictions
 
