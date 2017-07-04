@@ -1,25 +1,25 @@
 websites:
     - name: Canada Revenue Agency
-      url: http://www.cra-arc.gc.ca
+      url: http://www.cra-arc.gc.ca/
       img: canadarevenueagency.png
       tfa: No
       twitter: canrevagency
 
     - name: Healthcare.gov
-      url: https://healthcare.gov
+      url: https://healthcare.gov/
       twitter: HealthCareGov
       img: healthcaregov.png
       tfa: No
 
     - name: HMRC
-      url: https://hmrc.gov.uk
+      url: https://hmrc.gov.uk/
       img: hmrc.png
       tfa: Yes
       sms: Yes
       doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-sms-text-messages
 
     - name: myGov
-      url: https://my.gov.au
+      url: https://my.gov.au/
       img: mygov.png
       tfa: Yes
       sms: Yes
@@ -35,7 +35,7 @@ websites:
       doc: https://www.realme.govt.nz/help/#second-factor-authentication
 
     - name: Skatteverket
-      url: https://www.skatteverket.se
+      url: https://www.skatteverket.se/
       img: skatteverket.png
       tfa: Yes
       hardware: Yes
@@ -56,7 +56,7 @@ websites:
       tfa: No
 
     - name: US Social Security Administration
-      url: https://www.ssa.gov
+      url: https://www.ssa.gov/
       img: usssa.png
       tfa: Yes
       sms: Yes
