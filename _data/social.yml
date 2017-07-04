@@ -119,6 +119,13 @@ websites:
       img: livejournal.png
       tfa: No
 
+    - name: Lobsters
+      url: https://lobste.rs/
+      img: lobsters.png
+      tfa: Yes
+      software: Yes
+      doc: https://lobste.rs/s/1cyltz/two_factor_authentication_now_available
+
     - name: Medium
       url: https://medium.com
       img: medium.png
