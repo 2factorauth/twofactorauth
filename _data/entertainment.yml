@@ -34,7 +34,7 @@ websites:
       phone: Yes
       hardware: Yes
       software: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: hitbox
       url: https://www.hitbox.tv/
@@ -78,6 +78,13 @@ websites:
       img: netflix.png
       tfa: No
 
+    - name: Pandora
+      url: https://www.pandora.com
+      img: pandora.png
+      tfa: No
+      twitter: pandorasupport
+      facebook: pandora
+
     - name: Picarto.TV
       url: https://picarto.tv/
       twitter: PicartoTV
@@ -92,6 +99,20 @@ websites:
       facebook: plexapp
       img: plex.png
       tfa: No
+
+    - name: Qobuz
+      url: http://www.qobuz.com
+      twitter: qobuz
+      facebook: qobuz
+      img: qobuz.png
+      tfa: No
+
+    - name: Roku
+      url: https://www.roku.com
+      img: roku.png
+      tfa: No
+      twitter: RokuSupport
+      facebook: roku
 
     - name: Sling TV
       url: https://www.sling.com/
@@ -151,4 +172,4 @@ websites:
       software: Yes
       phone: Yes
       hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html

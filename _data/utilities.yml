@@ -6,6 +6,15 @@ websites:
       img: aep.png
       tfa: No
 
+    - name: Andrews &amp; Arnold
+      url: https://aa.net.uk
+      img: aaisp.png
+      tfa: Yes
+      software: Yes
+      doc: https://aa.net.uk/kb-broadband-2fa.html
+      exceptions:
+          text: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
+
     - name: AT&amp;T
       url: https://www.att.com/
       twitter: ATTCares
@@ -72,10 +81,9 @@ websites:
       img: dish.png
       tfa: No
 
-    - name: Dominion
-      url: https://www.dom.com/
-      twitter: DomVAPower
-      facebook: dominionvirginiapower
+    - name: Dominion Energy
+      url: https://www.dominionenergy.com/
+      twitter: dominionenergy
       img: dominion.png
       tfa: No
 
@@ -311,7 +319,14 @@ websites:
       tfa: No
       lang: sv
 
-    - name: Virgin Media
+    - name: Virgin Media (IE)
+      url: https://www.virginmedia.ie/
+      twitter: VirginMediaIE
+      facebook: VirginMediaIreland
+      img: virginmedia.png
+      tfa: No
+
+    - name: Virgin Media (UK)
       url: https://www.virginmedia.com/
       twitter: virginmedia
       facebook: virginmedia
@@ -329,6 +344,13 @@ websites:
       url: https://www.vodafone.ie/
       twitter: VodafoneIreland
       facebook: vodafoneireland
+      img: vodafone.png
+      tfa: No
+
+    - name: Vodafone (IT)
+      url: http://www.vodafone.it/
+      twitter: VodafoneIT
+      facebook: vodafoneit
       img: vodafone.png
       tfa: No
 
