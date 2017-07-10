@@ -44,6 +44,13 @@ websites:
       otp: Yes
       doc: https://docs.fastly.com/guides/getting-started/enabling-and-disabling-twofactor-authentication
 
+    - name: File Sanctuary
+      url: https://www.filesanctuary.net
+      img: filesanctuary.png
+      tfa: Yes
+      otp: Yes
+      doc: https://customers.filesanctuary.net/knowledgebase/12/Setting-up-two-factor-authentication.html
+
     - name: Glesys
       url: http://glesys.com/
       twitter: glesysab
