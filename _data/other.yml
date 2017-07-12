@@ -95,13 +95,6 @@ websites:
       software: Yes
       doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
 
-    - name: Clio
-      url: https://goclio.com
-      img: clio.png
-      tfa: Yes
-      email: Yes
-      doc: https://support.goclio.com/hc/en-us/articles/203184210-Two-Factor-Authentication
-
     - name: Cloudinary
       url: http://cloudinary.com
       img: cloudinary.png
@@ -113,13 +106,6 @@ websites:
       img: commuterbenefits.png
       tfa: No
       twitter: CommuterBenefit
-
-    - name: Cosmolex
-      url: https://www.cosmolex.com/
-      img: cosmolex.png
-      tfa: Yes
-      sms: Yes
-      doc: http://kb.cosmolex.com/support/solutions/articles/19000028547-how-to-enable-two-factor-authentication-
 
     - name: Crowd Supply
       url: https://www.crowdsupply.com
@@ -165,14 +151,6 @@ websites:
       img: envato.png
       twitter: envato
       tfa: No
-
-    - name: Everlaw
-      url: https://everlaw.com
-      img: everlaw.png
-      tfa: Yes
-      software: Yes
-      email: Yes
-      doc: https://everlaw.zendesk.com/hc/en-us/articles/206312165-Two-Factor-Authentication
 
     - name: Figma
       url: https://www.figma.com/
@@ -340,13 +318,6 @@ websites:
       software: Yes
       exceptions:
           text: "SMS only available as a backup to Google Authenticator."
-
-    - name: SignNow
-      url: https://www.signnow.com/
-      img: signnow.png
-      tfa: No
-      twitter: signnow
-      facebook: BarracudaSignNow
 
     - name: StartJOIN
       url: https://www.startjoin.com/
