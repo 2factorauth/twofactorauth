@@ -225,6 +225,15 @@ websites:
       tfa: No
       lang: de
 
+    - name: Commercial Bank of Qatar
+      url: http://www.cbq.qa/EN
+      img: cbq.png
+      tfa: Yes
+      sms: Yes
+      doc: https://cbonline.cbq.qa/RIB/Common/FAQContent?#stay
+      exceptions:
+       text: "Only SMS OTP on Local Qatar Mobile Number is supported."
+
     - name: Commonwealth Bank of Australia
       url: https://www.commbank.com.au/
       img: commbank.png
