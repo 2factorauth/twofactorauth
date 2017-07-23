@@ -226,13 +226,13 @@ websites:
       lang: de
 
     - name: Commercial Bank of Qatar
-      url: http://www.cbq.qa/EN
+      url: http://www.cbq.qa/
       img: cbq.png
       tfa: Yes
       sms: Yes
-      doc: https://cbonline.cbq.qa/RIB/Common/FAQContent?#stay
+      doc: https://cbonline.cbq.qa/RIB/Common/FAQContent
       exceptions:
-       text: "SMS sent only to Qatar Mobile Number."
+       text: "An SMS capable phone with a Qatar phone number is required."
 
     - name: Commonwealth Bank of Australia
       url: https://www.commbank.com.au/
