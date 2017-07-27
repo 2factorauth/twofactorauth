@@ -20,7 +20,11 @@ websites:
       url: https://bitwarden.com
       img: bitwarden.png
       tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
       software: Yes
+      hardware: Yes
       doc: https://help.bitwarden.com/article/setup-two-step-login/
 
     - name: Centrify
