@@ -108,10 +108,9 @@ websites:
 
     - name: Mailgun
       url: https://www.mailgun.com
-      twitter: Mail_Gun
-      facebook: mailgun
       img: mailgun.png
-      tfa: No
+      tfa: Yes
+      software: Yes
 
     - name: Maxemail
       url: https://maxemail.emailcenteruk.com/
