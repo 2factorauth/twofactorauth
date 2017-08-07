@@ -216,10 +216,12 @@ websites:
       doc: https://ayuda.mercadolibre.com.ar/ayuda/Consejos-para-fortalecer-la-se_961
 
     - name: Newegg
-      url: http://www.newegg.com
-      twitter: newegg
+      url: https://www.newegg.com
       img: newegg.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      email: Yes
+      sms: Yes
 
     - name: Nordstrom
       url: http://shop.nordstrom.com
