@@ -11,6 +11,12 @@ websites:
       img: adp.png
       tfa: No
 
+    - name: Baden-Württembergische Bank
+      url: https://www.bw-bank.de/de/
+      tfa: No
+      img: bw_bank.png
+      lang: de
+
     - name: Bitbond
       url: https://www.bitbond.com
       img: bitbond.png
@@ -18,6 +24,13 @@ websites:
       sms: Yes
       email: Yes
       software: Yes
+
+    - name: ClearScore
+      url: https://www.clearscore.com
+      twitter: ClearScore
+      facebook: clearscore
+      img: clearscore.png
+      tfa: No
 
     - name: Credit Karma
       url: https://www.creditkarma.com
@@ -92,6 +105,14 @@ websites:
       software: Yes
       doc: https://ttlc.intuit.com/questions/2902682-what-is-two-step-verification
 
+    - name: Invoiced
+      url: https://invoiced.com/
+      img: invoiced.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.invoiced.com/knowledge_base/topics/setting-up-two-factor-authentication
+
     - name: Justworks
       url: https://justworks.com/
       img: justworks.png
@@ -127,6 +148,13 @@ websites:
       sms: Yes
       email: Yes
       software: Yes
+
+    - name: Nexonia
+      url: http://www.nexonia.com/
+      facebook: nexonia
+      twitter: nexonia
+      img: nexonia.png
+      tfa: No
 
     - name: Noddle
       url: https://www.noddle.co.uk
@@ -205,20 +233,13 @@ websites:
       img: quickfile.png
       tfa: Yes
       software: Yes
-      doc: http://help.quickfile.co.uk/main/1/2-factor_authentication.htm
+      doc: https://community.quickfile.co.uk/t/2-factor-authentication/8892
 
     - name: Quizzle
       url: https://www.quizzle.com
       img: quizzle.png
       tfa: No
       twitter: Quizzle
-
-    - name: Ripple Trade
-      url: https://www.rippletrade.com/
-      img: rippletrade.png
-      tfa: Yes
-      sms: Yes
-      doc: https://ripple.com/knowledge_center/using-two-factor-authentication-2fa/
 
     - name: Shoeboxed
       url: https://www.shoeboxed.com/
@@ -245,9 +266,10 @@ websites:
     - name: TransferWise
       url: https://transferwise.com
       img: transferwise.png
-      tfa: No
-      twitter: TransferWise
-      facebook: transferwise
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://transferwise.com/help/topics/4/topics/19/questions/2597993/how-can-i-setup-2-step-login
 
     - name: Treasury Direct
       url: https://www.treasurydirect.gov
@@ -268,6 +290,13 @@ websites:
       facebook: VitalityUK
       img: vitality.png
       tfa: No
+
+    - name: WaveApps
+      url: https://www.waveapps.com
+      img: wave.png
+      tfa: No
+      twitter: wavehq
+      facebook: waveHQ
 
     - name: Xero
       url: https://www.xero.com/

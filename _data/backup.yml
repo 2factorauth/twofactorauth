@@ -4,7 +4,7 @@ websites:
     tfa: Yes
     software: Yes
     img: aerofs.png
-    doc: https://www.aerofs.com/blog/two-factor-authentication-for-hybrid-and-private-cloud-md/
+    doc: https://support.aerofs.com/hc/en-us/articles/202610424-How-Do-I-Set-Up-Two-Factor-Authentication-
 
   - name: Apple iCloud
     url: https://www.icloud.com
@@ -21,7 +21,8 @@ websites:
     img: backblaze.png
     tfa: Yes
     sms: Yes
-    doc: https://www.backblaze.com/blog/two-factor-verification-for-backblaze/
+    software: Yes
+    doc: https://help.backblaze.com/hc/en-us/articles/217666588-Two-Factor-Verification
 
   - name: Box
     url: https://www.box.com/
@@ -83,7 +84,7 @@ websites:
     phone: Yes
     software: Yes
     hardware: Yes
-    doc: http://www.google.com/intl/en-US/landing/2step/features.html
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: hubiC
     url: https://hubic.com/
@@ -112,6 +113,13 @@ websites:
     img: justcloud.png
     tfa: No
     facebook: JustCloudStorage
+
+  - name: Koofr
+    url: https://koofr.eu
+    tfa: Yes
+    software: Yes
+    img: koofr.png
+    doc: https://koofr.eu/help/other/how-do-i-enable-2-step-verification/
 
   - name: Mega
     url: https://mega.nz/

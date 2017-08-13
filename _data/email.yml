@@ -8,6 +8,13 @@ websites:
       software: Yes
       doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
+    - name: CheckMail
+      url: https://checkmail.io/
+      img: checkmail.png
+      tfa: Yes
+      software: Yes
+      doc: https://checkmail.io/docs/setting-up-two-factor-authentication/
+
     - name: FastMail
       url: https://www.fastmail.com/
       img: fastmail.png
@@ -31,7 +38,7 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: GMX
       url: https://www.gmx.com/
@@ -130,12 +137,13 @@ websites:
 
     - name: Runbox
       url: https://runbox.com
-      twitter: Runbox
       img: runbox.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://help.runbox.com/account-security/
 
     - name: T-Online
-      url: http://email.t-online.de
+      url: http://www.t-online.de/
       twitter: Telekom_hilft
       facebook: tonline.de
       img: tonline.png
@@ -164,7 +172,7 @@ websites:
       tfa: Yes
       email: Yes
       software: Yes
-      doc: http://id.yahoo.co.jp/security/otp.html
+      doc: https://id.yahoo.co.jp/security/otp.html
 
     - name: Yahoo Mail
       url: https://mail.yahoo.com/

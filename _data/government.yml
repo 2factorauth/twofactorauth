@@ -11,6 +11,29 @@ websites:
       img: healthcaregov.png
       tfa: No
 
+    - name: HMRC
+      url: https://hmrc.gov.uk
+      img: hmrc.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-sms-text-messages
+
+    - name: myGov
+      url: https://my.gov.au
+      img: mygov.png
+      tfa: Yes
+      sms: Yes
+      doc: https://my.gov.au/mygov/content/html/help.html#sec-features
+
+    - name: RealMe
+      url: https://www.realme.govt.nz/
+      img: realme.png
+      tfa: Yes
+      sms: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.realme.govt.nz/help/#second-factor-authentication
+
     - name: Skatteverket
       url: https://www.skatteverket.se
       img: skatteverket.png

@@ -26,6 +26,13 @@ websites:
       twitter: antagningse
       tfa: No
 
+    - name: CBT Nuggets
+      url: https://www.cbtnuggets.com/
+      img: cbtnuggets.png
+      twitter: CBTNuggets
+      facebook: cbtnuggets
+      tfa: No
+
     - name: Certified Wireless Network Professional (CWNP)
       url: https://www.cwnp.com
       img: cwnp.png
@@ -34,8 +41,18 @@ websites:
       facebook: OfficialCWNP
       email_address: customercare@cwnp.com
 
+    - name: Clemson University
+      url: https://www.clemson.edu/
+      img: clemson.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://2fa.app.clemson.edu/
+
     - name: Clever
-      url: https://www.clever.com
+      url: https://clever.com
       img: clever.png
       tfa: Yes
       sms: Yes
@@ -115,6 +132,15 @@ websites:
       img: edx.png
       tfa: No
 
+    - name: Georgia Institute of Technology
+      url: https://www.gatech.edu
+      img: gatech.png
+      tfa: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://twofactor.oit.gatech.edu
+
     - name: Global Information Assurance Certification (GIAC)
       url: https://www.giac.org
       img: giac.png
@@ -169,12 +195,6 @@ websites:
       facebook: mystudylife
       img: mystudylife.png
       tfa: No
-
-    - name: Oplerno
-      url: https://enroll.oplerno.com/
-      img: oplerno.png
-      tfa: Yes
-      software: Yes
 
     - name: PushCoin
       url: https://pushcoin.com

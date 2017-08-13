@@ -13,6 +13,12 @@ websites:
       twitter: AdoramaPix
       facebook: AdoramaPix
 
+    - name: AliExpress
+      url: https://www.aliexpress.com/
+      img: aliexpress.png
+      tfa: No
+      twitter: AliExpress_EN
+
     - name: Amazon
       url: https://www.amazon.com
       img: amazon.png
@@ -112,6 +118,13 @@ websites:
       twitter: flipkartsupport
       facebook: flipkart
 
+    - name: GamersGate
+      url: https://www.gamersgate.com/
+      twitter: GamersGate
+      facebook: GamersGate
+      img: gamersgate.png
+      tfa: No
+
     - name: Gilt
       url: https://www.gilt.com
       twitter: gilt
@@ -203,10 +216,12 @@ websites:
       doc: https://ayuda.mercadolibre.com.ar/ayuda/Consejos-para-fortalecer-la-se_961
 
     - name: Newegg
-      url: http://www.newegg.com
-      twitter: newegg
+      url: https://www.newegg.com
       img: newegg.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      email: Yes
+      sms: Yes
 
     - name: Nordstrom
       url: http://shop.nordstrom.com
@@ -244,16 +259,17 @@ websites:
       doc: https://support.purse.io/profile/2fa/
 
     - name: Rakuten
-      url: http://www.rakuten.com/
+      url: https://www.rakuten.com/
       twitter: AskRakutenUS
       img: rakuten.png
       tfa: No
 
     - name: Samsung
       url: http://www.samsung.com/
-      twitter: SamsungMobile
       img: samsung.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
 
     - name: Sierra Trading Post
       url: http://www.sierratradingpost.com
@@ -311,4 +327,3 @@ websites:
       tfa: No
       twitter: zazzle
       facebook: zazzle
-

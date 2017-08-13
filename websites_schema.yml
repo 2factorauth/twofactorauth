@@ -12,6 +12,7 @@ mapping:
             unique: yes
           "url":
             type: str
+            pattern: /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/
             required: yes
             unique: yes
           "img":
@@ -21,16 +22,16 @@ mapping:
             type: bool
             required: yes
           "software":
-            type: bool 
+            type: bool
             pattern: /true/
           "hardware":
-            type: bool 
+            type: bool
             pattern: /true/
           "sms":
-            type: bool 
+            type: bool
             pattern: /true/
           "phone":
-            type: bool 
+            type: bool
             pattern: /true/
           "email":
             type: bool
@@ -45,12 +46,15 @@ mapping:
             type: str
           "twitter":
             type: str
+            pattern: /(\w){1,15}$/
           "facebook":
             type: str
+            pattern: /(\w){1,50}$/
           "email_address":
             type: str
             pattern: /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
           "status":
             type: str
+            pattern: /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/
           "lang":
             type: str
