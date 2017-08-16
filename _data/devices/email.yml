@@ -75,7 +75,15 @@ websites:
       tfa: No
       otp: No
       doc: https://help.riseup.net/en/email/webmail/2factorauth
-    
+
+    - name: StartMail
+      url: https://www.startmail.com
+      twitter: MyStartMail
+      img: startmail.png
+      tfa: Yes
+      otp: Yes
+      doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704/4/how-to-set-up-two-factor-authentication-2fa
+
     - name: Yahoo Mail
       url: https://www.mail.yahoo.com/
       img: yahoomail.png
