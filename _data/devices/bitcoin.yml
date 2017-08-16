@@ -25,6 +25,14 @@ websites:
       otp: Yes
       doc: https://bitcoin-central.net/page/profile/security
 
+    - name: Bitfinex
+      url: https://www.bitfinex.com/
+      img: bitfinex.png
+      tfa: Yes
+      otp: Yes
+      u2f: Yes
+      doc: https://support.bitfinex.com/hc/en-us/articles/115003616589-Universal-2nd-Factor-U2F-
+
     - name: Bitpay
       url: https://bitpay.com
       img: bitpay.png
