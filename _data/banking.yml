@@ -728,8 +728,14 @@ websites:
       facebook: sparkasse
       email_address: sparkasse@sparkassen-finanzportal.de
       img: sparkasse.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      sms: Yes
       lang: de
+      doc: https://www.sparkasse.de/service/sicherheit-im-internet/tan-verfahren.html
+      exceptions:
+          text: "Software implementation requires use of the S-pushTAN-App app."
 
     - name: Splitska banka
       url: https://www.splitskabanka.hr/
