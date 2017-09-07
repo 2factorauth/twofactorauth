@@ -129,9 +129,8 @@ websites:
     - name: HostHatch
       url: https://hosthatch.com/
       img: hosthatch.png
-      tfa: No
-      twitter: HostHatch
-      facebook: hosthatch
+      tfa: Yes
+      software: Yes
 
     - name: ICUK
       url: https://icuk.net
@@ -181,6 +180,13 @@ websites:
       twitter: iPage
       img: ipage.png
       tfa: No
+
+    - name: Kinsta
+      url: https://kinsta.com
+      img: kinsta.png
+      tfa: Yes
+      software: Yes
+      doc: https://kinsta.com/blog/wordpress-two-factor-authentication/
 
     - name: LCN.com
       url: https://www.lcn.com
@@ -311,13 +317,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://clientarea.ramnode.com/knowledgebase.php?action=displayarticle&id=70
-
-    - name: Scaleway
-      url: https://www.scaleway.com/
-      twitter: scaleway
-      facebook: scaleway
-      img: scaleway.png
-      tfa: No
 
     - name: Site5
       url: https://www.site5.com/
