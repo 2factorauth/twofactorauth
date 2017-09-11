@@ -269,19 +269,19 @@ websites:
           text: "2FA is only available for Swedish citizens with BankID."
       doc: https://www.telia.se/privat/support/info/logga-in-med-bankid-och-eleg-pa-mitt-telia
 
-    - name: Telzio
-      url: https://www.telzio.com/
-      img: telzio.png
-      tfa: Yes
-      software: Yes
-      doc: https://telzio.com/support/two-factor-authentication
-
     - name: Telstra
       url: https://www.telstra.com.au/
       twitter: Telstra
       facebook: Telstra24x7
       img: telstra.png
       tfa: No
+
+    - name: Telzio
+      url: https://www.telzio.com/
+      img: telzio.png
+      tfa: Yes
+      software: Yes
+      doc: https://telzio.com/support/two-factor-authentication
 
     - name: Three UK
       url: http://www.three.co.uk/
