@@ -30,13 +30,6 @@ websites:
       software: Yes
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
-    - name: hitbox
-      url: https://www.hitbox.tv/
-      img: hitbox.png
-      tfa: Yes
-      software: Yes
-      doc: http://help.hitbox.tv/customer/portal/articles/2434122
-
     - name: Hulu
       url: http://www.hulu.com/
       twitter: hulu_support
@@ -121,6 +114,13 @@ websites:
       facebook: sling
       img: sling.png
       tfa: No
+
+    - name: smashcast
+      url: https://www.smashcast.tv/
+      img: smashcast.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.smashcast.tv/customer/en/portal/articles/2779887
 
     - name: SoundCloud
       url: https://soundcloud.com/
