@@ -160,6 +160,7 @@ The following is an example of a website that *does not* support TFA:
       url: https://www.netflix.com/us/
       twitter: Netflixhelps
       facebook: netflix
+      email_address: example@netflix.com (Only if available and monitored)
       img: netflix.png
       tfa: No
       lang: <ISO 639-1 language code> (Only for non-English websites)
