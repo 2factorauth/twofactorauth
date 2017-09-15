@@ -4,13 +4,10 @@ acceptBitcoin.Cash
 Community-curated list of sites/merchants that accept Bitcoin Cash. Submit a pull request with your contribution to add! Read below for help.
 
 [![Join the chat at https://gitter.im/acceptbitcoincashproject/Lobby](https://badges.gitter.im/acceptbitcoincashproject/Lobby.svg)](https://gitter.im/acceptbitcoincashproject/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Twitter](https://img.shields.io/badge/Twitter-@2faorg-blue.svg)](https://twitter.com/BITCOlNCASH)
+[![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
 
 ### _This repo has been cloned recently. More changes to come..._
-
-[![Build Status](https://travis-ci.org/2factorauth/twofactorauth.svg)](https://travis-ci.org/2factorauth/twofactorauth)
-[![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
-[![Gitter](https://img.shields.io/gitter/room/2factorauth/twofactorauth.svg)](https://gitter.im/2factorauth/twofactorauth)
-[![Twitter](https://img.shields.io/badge/Twitter-@2faorg-blue.svg)](https://twitter.com/2faorg)
 
 ## The Goal
 
