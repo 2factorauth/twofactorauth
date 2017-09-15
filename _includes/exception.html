@@ -22,13 +22,13 @@
             href="/restrictions#{{ include.website.name | downcase | handle }}"
             data-position="bottom center"
             data-html="{{ html | strip_newlines }}">
-            <i class="warning red link icon"></i>
+            <i class="warning sign red link icon"></i>
         </a>
     {% else %}
         <span class="popup exception"
             data-position="bottom center"
             data-html="{{ html | strip_newlines }}">
-            <i class="warning red link icon"></i>
+            <i class="warning sign red link icon"></i>
         </span>
     {% endif %}
 {% endif %}
