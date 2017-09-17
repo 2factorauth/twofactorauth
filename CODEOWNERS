@@ -3,17 +3,19 @@
 # This is managed by GitHub's "code owners" feature https://github.com/blog/2392-introducing-code-owners
 
 # Jekyll and website design
-js/*		@psgs
-css/*		@psgs
-lib/*		@psgs
-_layouts/*	@psgs
-_includes/*	@psgs
-_sass/*		@psgs
-_config.yml	@psgs
+_data/* 		@kenman345
+_includes/*	@t0p0lin0
+_layouts/*	@t0p0lin0
+_sass/*		  @t0p0lin0
+css/*		    @t0p0lin0
+img/*		    @t0p0lin0
+js/*		    @t0p0lin0
+notes/*		  @t0p0lin0
+_config.yml	@t0p0lin0
 
 # Core files
-CNAME		@2factorauth/core
-LICENSE		@2factorauth/core
+CNAME		@acceptbitcoincash/core
+LICENSE		@acceptbitcoincash/core
 
 # Miscellaneous files
 data.json	@carlgo11

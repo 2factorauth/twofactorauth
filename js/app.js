@@ -30,15 +30,15 @@ $(window).resize(function () {
 
 var isSearching = false;
 var jets = new Jets({
-  searchTag: '#jets-search',
-  contentTag: '.jets-content',
+  searchTag: '#bch-merchant-search',
+  contentTag: '.bch-merchant-content',
   didSearch: function (searchPhrase) {
     document.location.hash = '';
     $('#no-results').css('display', 'none');
     $('.category h5 i').removeClass('active-icon');
     // Two separate table layouts are used for desktop/mobile
     var platform = ($(window).width() > 768) ? 'desktop' : 'mobile';
-    var content = $('.' + platform + '-table .jets-content');
+    var content = $('.' + platform + '-table .bch-merchant-content');
     var table = $('.' + platform + '-table');
 
     // Non-strict comparison operator is used to allow for null

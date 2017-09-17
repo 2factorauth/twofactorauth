@@ -1,3 +1,3 @@
-TwoFactorAuth.org Blacklist
+acceptBitcoin.Cash Blacklist
 =================
 

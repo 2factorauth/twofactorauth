@@ -3,7 +3,7 @@
 
 @import 'mixins';
 @import 'colors';
-$primary-color: #39CCCC;
+$primary-color: #090;
 
 html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td {
   margin: 0;
@@ -33,7 +33,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #505050;
   line-height: 22px;
-  background: none;
+  background: url(../img/pcb-subtle-green.png) repeat;
 }
 
 p {
@@ -71,32 +71,71 @@ p {
 }
 
 #top-header {
-  padding: 3em 0;
+  padding: 0 0 20px;
+
+  h2 {
+    background: $primary-color;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-weight: normal;
+    padding: 10px 0;
+  }
+
+  .title-wrap {
+    display: inline-block;
+    background: #fff;
+    border: 4px solid #daecd4;
+    border-radius: 10px;
+    width: 705px;
+    margin: 32px 0;
+//    padding: 15px 0 10px;
+  }
 
   .sub.header {
     margin: 10px auto;
     max-width: 80%;
   }
+
+  .title-footer {
+    padding: 5px 0;
+    background: #DAECD4;
+    font-style: italic;
+    font-size: 0.9rem;
+
+    a {
+      color: $primary-color;
+
+      &:hover {
+        color: #0a0;
+      }
+
+      i {
+        display: inline;
+        font-size: 1.1rem;
+        margin-right: 3px;
+      }
+    }
+  }
 }
 
 #search-wrapper {
-  margin: 40px auto;
+  margin: 10px auto;
+  padding: 10px 0;
   position: relative;
   text-align: left;
-  width: 60%;
+  background: #DAECD4;
 
   label {
-    left: 17px;
+    left: 88px;
     position: absolute;
-    top: 12px;
+    top: 20px;
 
     i {
-      color: #333333;
+      color: $primary-color;
       display: inline-block;
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-
       -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
@@ -105,12 +144,13 @@ p {
 
 input[type=search] {
   @include transition(all, ease, 300ms);
-  border: 1px #E3E3E3 solid;
-  border-radius: 30px;
+  border: 3px #DAECD4 solid;
+  border-radius: 10px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   display: block;
-  padding: 10px 45px;
-  width: 100%;
+  padding: 10px 10px 10px 50px;
+  width: 80%;
+  margin: 0 auto;
 
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -179,7 +219,7 @@ input[type=search] {
     text-align: center;
   }
 
-  .jets-content {
+  .bch-merchant-content {
     border: 1px groove rgba(34, 36, 38, 0.14902);
     border-radius: 5px;
     margin: 0 auto 40px auto;
@@ -306,5 +346,99 @@ span.progress {
 
   .desktop-table {
     display: none;
+  }
+
+  #top-header .title-wrap {
+    width: 100%;
+    border-width: 3px 0;
+    border-radius: 0;
+
+    #search-wrapper {
+      label {
+        left: 3.3%;
+      }
+      input[type=search] {
+        padding: 10px;
+      }
+    }
+
+    h2 {
+      border-radius: 0;
+    }
+  }
+}
+
+
+#bitcoin-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  background: $primary-color;
+  animation: roll2bch 1s ease-in-out;
+  animation-fill-mode: forwards;
+//  transform: rotate(-24deg);
+  transition: all 1s linear;
+
+  &:hover {
+    animation: roll2btc 1s ease-in-out;
+    animation-fill-mode: forwards;
+
+    .path {
+      stroke: none;
+    }
+  }
+
+  .path {
+    stroke: #070;
+    stroke-width: 0;
+    stroke-dasharray: 2110;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash 2s linear;
+    animation-delay: 1s;
+    fill: #fff;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 2110;
+    stroke-width: 8;
+    stroke-opacity: 1;
+  }
+  80%{
+    stroke-opacity: 1;
+  }
+  90%{
+    stroke-opacity: 0.5;
+  }
+  100%{
+    stroke-dashoffset: 0;
+    stroke-width: 8;
+    stroke-opacity: 0;
+  }
+}
+
+@keyframes roll2btc {
+  0% {
+    transform: rotate(-24deg);
+  }
+  100%{
+    transform: rotate(1080deg);
+    background: orange;
+  }
+}
+
+@keyframes roll2bch {
+  0% {
+    transform: rotate(0deg);
+    background: orange;
+  }
+  100%{
+    transform: rotate(-24deg);
+    background: $primary-color;
   }
 }
