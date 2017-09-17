@@ -369,6 +369,10 @@ span.progress {
 }
 
 
+// Bitcoin Loading SVG animation By Aya W.
+// https://codepen.io/ayalan/pen/JfkFc
+//   modified by topolino
+
 #bitcoin-logo {
   width: 200px;
   height: 200px;
@@ -379,7 +383,6 @@ span.progress {
   background: $primary-color;
   animation: roll2bch 1s ease-in-out;
   animation-fill-mode: forwards;
-//  transform: rotate(-24deg);
   transition: all 1s linear;
 
   &:hover {
