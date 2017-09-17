@@ -4,6 +4,7 @@
 @import 'mixins';
 @import 'colors';
 $primary-color: #090;
+$primary-color-light: #DAECD4;
 
 html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td {
   margin: 0;
@@ -84,7 +85,7 @@ p {
   .title-wrap {
     display: inline-block;
     background: #fff;
-    border: 4px solid #daecd4;
+    border: 3px solid $primary-color-light;
     border-radius: 10px;
     width: 705px;
     margin: 32px 0;
@@ -98,7 +99,7 @@ p {
 
   .title-footer {
     padding: 5px 0;
-    background: #DAECD4;
+    background: $primary-color-light;
     font-style: italic;
     font-size: 0.9rem;
 
@@ -123,7 +124,7 @@ p {
   padding: 10px 0;
   position: relative;
   text-align: left;
-  background: #DAECD4;
+  background: $primary-color-light;
 
   label {
     left: 88px;
@@ -144,7 +145,7 @@ p {
 
 input[type=search] {
   @include transition(all, ease, 300ms);
-  border: 3px #DAECD4 solid;
+  border: 3px $primary-color-light solid;
   border-radius: 10px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   display: block;
@@ -168,13 +169,8 @@ input[type=search] {
   text-align: center;
 }
 
-.active-icon {
-  background-color: $primary-color;
-  color: white;
-
-  & + small {
-    color: #389B9B;
-  }
+.ui.header {
+  color: inherit;
 }
 
 .ui.grid > .row {
@@ -185,16 +181,49 @@ input[type=search] {
   padding: 18px 0;
 }
 
+.active-icon {
+  background-color: $primary-color;
+  color: white;
+
+  & + small {
+    color: $primary-color;
+  }
+}
+
 .category {
   cursor: pointer;
   padding-top: 20px;
   text-align: center;
 
-  h5 i {
-    @include transition(all, ease, 300ms);
+  h5.ui.icon.header {
+    color: inherit;
+    margin-bottom: 1.5rem;
 
-    &:hover {
+    i.circular.icon {
+      @include transition(all, ease, 300ms);
+      background: #fff;
+      box-shadow: 0 0 0 3px $primary-color-light inset;
+      border-radius: 10px !important;
+      border-color: $primary-color-light;
+      margin-bottom: 0.8rem;
+
+      &.active-icon {
+        background-color: $primary-color;
+      }
+    }
+
+    small {
+      @include transition(all, ease, 300ms);
+      background: #fff;
+      border: 3px solid $primary-color-light;
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-size: 1rem;
+    }
+
+    &:hover i, &:hover i + small {
       @extend .active-icon;
+      color: #fff;
     }
   }
 }
