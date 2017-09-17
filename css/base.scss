@@ -87,7 +87,7 @@ p {
     background: $primary-color;
     border-radius: 10px 10px 0 0;
     color: #fff;
-    font-weight: normal;
+    font-weight: 500;
     padding: 10px 0;
   }
 
@@ -103,7 +103,8 @@ p {
 
   .sub.header {
     margin: 10px auto;
-    max-width: 80%;
+    padding: 15px 0;
+    max-width: 81%;
   }
 
   .title-footer {
@@ -169,6 +170,7 @@ input[type=search] {
     border-color: $primary-color;
     box-shadow: 0 0 10px $primary-color;
     outline: none;
+    font-weight: 500;
   }
 }
 
@@ -473,7 +475,7 @@ span.progress {
     transform: rotate(-24deg);
   }
   100%{
-    transform: rotate(1080deg);
+    transform: rotate(-1080deg);
     background: orange;
   }
 }
