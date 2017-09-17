@@ -95,9 +95,11 @@ rescue Psych::SyntaxError => e
   puts "<------------ ERROR in a YAML file ------------>\n"
   puts e
   exit 1
+# rubocop:disable Lint/RescueWithoutErrorClass
 rescue => e
   puts e
   exit 1
+# rubocop:enable Lint/RescueWithoutErrorClass
 else
   puts "<------------ No errors. You\'re good to go! ------------>\n"
 end
