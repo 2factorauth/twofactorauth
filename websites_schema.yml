@@ -18,22 +18,13 @@ mapping:
           "img":
             type: str
             required: yes
-          "tfa":
-            type: bool
-            required: yes
-          "software":
+          "bcc":
             type: bool
             pattern: /true/
-          "hardware":
+          "btc":
             type: bool
             pattern: /true/
-          "sms":
-            type: bool
-            pattern: /true/
-          "phone":
-            type: bool
-            pattern: /true/
-          "email":
+          "othercrypto":
             type: bool
             pattern: /true/
           "exceptions":
