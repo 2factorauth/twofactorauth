@@ -1,9 +1,14 @@
 websites:
-  - name: (see /_data/zexamples.yml for how this example list is built)
-  - name: NOT accepting any crypto (need at least Twitter or Facebook handle)
+  - name: <em><i class="info circle icon"></i>see <b>/_data/zexamples.yml</b> for how this example list is built</em>
+  - name: NOT accepting any crypto (need at least Twitter/Facebook handle, or e-mail)
     url: http://acceptbitcoin.cash
     img: exampleicon.png
     twitter: usebitcoincash
+
+  - name: NOT accepting any crypto (e-mail)
+    url: http://acceptbitcoin.cash
+    img: exampleicon.png
+    email_address: false@e.mail
 
   - name: Accepting Bitcoin ONLY
     url: http://acceptbitcoin.cash
