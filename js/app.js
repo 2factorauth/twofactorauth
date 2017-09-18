@@ -30,15 +30,15 @@ $(window).resize(function () {
 
 var isSearching = false;
 var jets = new Jets({
-  searchTag: '#bch-merchant-search',
-  contentTag: '.bch-merchant-content',
+  searchTag: '#bcc-merchant-search',
+  contentTag: '.bcc-merchant-content',
   didSearch: function (searchPhrase) {
     document.location.hash = '';
     $('#no-results').css('display', 'none');
     $('.category h5 i').removeClass('active-icon');
     // Two separate table layouts are used for desktop/mobile
     var platform = ($(window).width() > 768) ? 'desktop' : 'mobile';
-    var content = $('.' + platform + '-table .bch-merchant-content');
+    var content = $('.' + platform + '-table .bcc-merchant-content');
     var table = $('.' + platform + '-table');
 
     // Non-strict comparison operator is used to allow for null

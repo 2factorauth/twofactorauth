@@ -27,6 +27,16 @@ websites:
     exceptions:
       text: "Example text which shows on a hover of the caution icon, next to name."
 
+  - name: Accepting Bitcoin Cash and Bitcoin
+    url: http://acceptbitcoin.cash
+    img: exampleicon.png
+    twitter: usebitcoincash
+    facebook: usebitcoincash
+    bcc: Yes
+    btc: Yes
+    othercrypto: No
+    doc: http://acceptbitcoin.cash
+
   - name: Accepting Other Cryptocurrency (with exception text/icon)
     url: http://acceptbitcoin.cash
     img: exampleicon.png

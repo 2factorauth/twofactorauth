@@ -240,6 +240,12 @@ input[type=search] {
   }
 }
 
+.ui.table.content-wrapper {
+  background: #fff;
+  border-radius: 10px !important;
+  border: 3px solid $primary-color-light;
+}
+
 .ui.table td.positive, .ui.table tr.positive {
   color: $primary-color !important;
 }
@@ -264,7 +270,7 @@ input[type=search] {
     text-align: center;
   }
 
-  .bch-merchant-content {
+  .bcc-merchant-content {
     border: 1px groove rgba(34, 36, 38, 0.14902);
     border-radius: 5px;
     margin: 0 auto 40px auto;
@@ -426,9 +432,8 @@ span.progress {
   display: block;
   text-align: center;
   background: $primary-color;
-  animation: roll2bch 1s ease-in-out;
+  animation: roll2bcc 1s ease-in-out;
   animation-fill-mode: forwards;
-  transition: all 1s linear;
 
   &:hover {
     animation: roll2btc 1s ease-in-out;
@@ -450,6 +455,21 @@ span.progress {
     fill: #fff;
   }
 }
+
+.tbl-bitcoin-cash-logo, .tbl-bitcoin-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  background: $primary-color;
+}
+
+.tbl-bitcoin-logo {
+  background: orange;
+}
+
 
 @keyframes dash {
   0% {
@@ -480,13 +500,13 @@ span.progress {
   }
 }
 
-@keyframes roll2bch {
+@keyframes roll2bcc {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(-360deg);
     background: orange;
   }
   100%{
-    transform: rotate(-24deg);
+    transform: rotate(0deg);
     background: $primary-color;
   }
 }
