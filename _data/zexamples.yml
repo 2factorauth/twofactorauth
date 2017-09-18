@@ -1,0 +1,51 @@
+websites:
+  - name: (see /_data/zexamples.yml for how this example list is built)
+  - name: NOT accepting any crypto (need at least Twitter or Facebook handle)
+    url: http://acceptbitcoin.cash
+    img: exampleicon.png
+    twitter: usebitcoincash
+
+  - name: Accepting Bitcoin ONLY
+    url: http://acceptbitcoin.cash
+    img: exampleicon.png
+    twitter: usebitcoincash
+    facebook: usebitcoincash
+    bcc: No
+    btc: Yes
+    othercrypto: No
+    doc: http://acceptbitcoin.cash
+
+  - name: Accepting Bitcoin Cash
+    url: http://acceptbitcoin.cash
+    img: exampleicon.png
+    twitter: usebitcoincash
+    facebook: usebitcoincash
+    bcc: Yes
+    btc: No
+    othercrypto: No
+    doc: http://acceptbitcoin.cash
+    exceptions:
+      text: "Example text which shows on a hover of the caution icon, next to name."
+
+  - name: Accepting Other Cryptocurrency (with exception text/icon)
+    url: http://acceptbitcoin.cash
+    img: exampleicon.png
+    twitter: usebitcoincash
+    facebook: usebitcoincash
+    bcc: No
+    btc: No
+    othercrypto: Yes
+    doc: http://acceptbitcoin.cash
+    exceptions:
+      text: "This is placeholder/example text which shows on a hover of the caution icon, next to name."
+
+  - name: In-Process of implementing Bitcoin Cash
+    url: http://acceptbitcoin.cash
+    img: exampleicon.png
+    twitter: usebitcoincash
+    facebook: usebitcoincash
+    bcc: No
+    btc: No
+    othercrypto: No
+    doc: http://acceptbitcoin.cash
+    status: http://acceptbitcoin.cash
