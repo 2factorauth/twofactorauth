@@ -1,60 +1,56 @@
 websites:
     - name: Amazon AWS WorkSpaces
       url: https://aws.amazon.com/workspaces/
-      doc: https://aws.amazon.com/blogs/aws/multi-factor-auth-for-workspaces/
-      tfa: Yes
-      hardware: Yes
-      software: Yes
+      bcc: No
+      btc: No
+      othercrypto: No
       img: awsworkspaces.png
+      twitter: awscloud
 
     - name: ConnectWise Control (ScreenConnect)
       url: https://www.connectwise.com/software/control
       img: connectwisecontrol.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://docs.connectwise.com/ConnectWise_Control_Documentation/Get_started/Administration_page/Security_page/Enable_two-factor_authentication_for_host_accounts
-
+      bcc: No
+      btc: No
+      othercrypto: No
+      twitter: ConnectWise
+      
     - name: join.me (w/ LogMeIn account)
       url: https://join.me/
       img: joinme.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://secure.logmein.com/welcome/webhelp/EN/Pro/LogMeIn/c_common_Security_TwoStep.html
-
+      bcc: No
+      btc: No
+      othercrypto: No
+      twitter: joinme
+      
     - name: LogMeIn
       url: https://secure.logmein.com/
       img: logmein.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://secure.logmein.com/welcome/webhelp/EN/Pro/LogMeIn/c_Common_Account_Security.html
-
+      bcc: No
+      btc: No
+      othercrypto: No
+      twitter: LogMeIn
+      
     - name: MB Connect Line
       url: https://www.mbconnectline.com
       img: mbconnectline.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      email: Yes
-      software: Yes
-      doc: http://www.cc-onlinehelp.com/en/#index/administrati/users/authenticati/authenticati.html
-
+      bcc: No
+      btc: No
+      othercrypto: No
+      twitter: mbconnectline
+      
     - name: O&amp;O Syspectr
       url: https://www.syspectr.com
       img: oosyspectr.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.syspectr.com/en/faq/how-do-i-activate-deactivate-two-factor-authentication-for-my-account
-
+      bcc: No
+      btc: No
+      othercrypto: No
+      twitter: OOSoftware
+      
     - name: TeamViewer
       url: https://www.teamviewer.com
       img: teamviewer.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.teamviewer.com/en/help/402-How-do-I-activate-deactivate-two-factor-authentication-for-my-TeamViewer-account.aspx
+      bcc: No
+      btc: No
+      othercrypto: No
+      twitter: teamviewer
