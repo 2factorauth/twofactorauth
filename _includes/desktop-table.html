@@ -3,7 +3,7 @@
 {% assign section_file = site.data[section_id] %}
 <div class="website-table desktop-table {{ section_id }}-table" id="{{ section_id }}-desktoptable" style="display:none">
   <table class="ui celled table content-wrapper">
-    <thead>
+    <thead class="ui sticky">
     <tr>
       <th class="single line four wide"><h3>{{ section_title }}</h3></th>
       <th class="two wide">Bitcoin Cash</th>
@@ -40,7 +40,7 @@
             {% include exception.html website=website %}
           </div>
           <div class="progress-info">
-            <a class="ui mini orange button" href="{{website.status}}" target="_blank">
+            <a class="fluid ui mini orange button" href="{{website.status}}" target="_blank">
               <i class="star icon"></i> In Progress!
             </a>
           </div>

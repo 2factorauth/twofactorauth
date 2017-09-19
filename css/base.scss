@@ -3,6 +3,7 @@
 
 @import 'mixins';
 @import 'colors';
+
 $primary-color: #090;
 $primary-color-light: #DAECD4;
 
@@ -246,6 +247,10 @@ input[type=search] {
   border: 3px solid $primary-color-light;
 }
 
+.ui.table thead th:not(:first-child) {
+  text-align: center;
+}
+
 .ui.table td.positive, .ui.table tr.positive {
   color: $primary-color !important;
 }
@@ -271,15 +276,25 @@ input[type=search] {
   }
 
   .bcc-merchant-content {
-    border: 1px groove rgba(34, 36, 38, 0.14902);
-    border-radius: 5px;
     margin: 0 auto 40px auto;
-    width: 90%;
 
     > div {
-      border-bottom: 1px groove rgba(34, 36, 38, 0.14902);
-      padding: 2em;
+      box-shadow: 0 0 0 3px rgb(190, 230, 177) inset;
+      border-radius: 10px !important;
+      padding: 1em;
+      margin: 0.5rem 0;
+      text-shadow: 1px 1px 0 #fff;
+      text-align: center;
+
+      &.negative {
+        box-shadow: 0 0 0 3px rgb(228, 196, 196) inset;
+      }
+
+      &.progress {
+        box-shadow: 0 0 0 3px rgb(228, 216, 131) inset;
+      }
     }
+
 
     .main {
       .title {
@@ -292,14 +307,21 @@ input[type=search] {
           -webkit-box-flex: 2;
           -ms-flex-positive: 2;
           flex-grow: 2;
-          margin: 0 5px;
+          text-align: left;
+          font-weight: 300;
         }
+      }
+
+      .mobile-logo {
+        display: inline-block;
+        margin: 0 0.4rem;
       }
 
       .button-group {
         @include display-flex();
         @include flex-direction(row);
         justify-content: space-between;
+        margin-top: 0.8rem;
       }
     }
 
@@ -307,15 +329,23 @@ input[type=search] {
       padding: 1em;
       width: 100%;
 
+      i {
+        font-size: 1rem;
+        margin: 0 !important;
+      }
+
       i.book.icon {
         margin-bottom: 2px;
         vertical-align: bottom;
+        height: auto !important;
       }
     }
 
     p {
+      margin: 0.5rem 0 0.2rem;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 0.9rem;
+      text-align: center;
     }
   }
 }
@@ -336,7 +366,9 @@ input[type=search] {
         display: flex;
         flex: 1;
         padding-left: 0;
-        line-height: 1.5;
+        margin-bottom: 0;
+        font-size: 1.1rem;
+        line-height: 1.3;
       }
     }
 
@@ -346,8 +378,8 @@ input[type=search] {
       justify-content: center;
 
       a {
-        width: 120px;
-        min-width: 120px;
+        width: 145px;
+        min-width: 145px;
         padding-left: 0;
       }
     }
@@ -391,10 +423,6 @@ span.progress {
 }
 
 @media(max-width: 768px) {
-  .mobile-table {
-    display: block;
-  }
-
   .desktop-table {
     display: none;
   }
@@ -417,96 +445,11 @@ span.progress {
       border-radius: 0;
     }
   }
-}
 
-
-// Bitcoin Loading SVG animation By Aya W.
-// https://codepen.io/ayalan/pen/JfkFc
-//   modified by topolino
-
-#bitcoin-logo {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  background: $primary-color;
-  animation: roll2bcc 1s ease-in-out;
-  animation-fill-mode: forwards;
-
-  &:hover {
-    animation: roll2btc 1s ease-in-out;
-    animation-fill-mode: forwards;
-
-    .path {
-      stroke: none;
-    }
-  }
-
-  .path {
-    stroke: #070;
-    stroke-width: 0;
-    stroke-dasharray: 2110;
-    stroke-dashoffset: 0;
-    stroke-linecap: round;
-    animation: dash 2s linear;
-    animation-delay: 1s;
-    fill: #fff;
+  .mobile-table {
+    display: block;
   }
 }
 
-.tbl-bitcoin-cash-logo, .tbl-bitcoin-logo {
-  width: 32px;
-  height: 32px;
-  border-radius: 32px;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  background: $primary-color;
-}
-
-.tbl-bitcoin-logo {
-  background: orange;
-}
-
-
-@keyframes dash {
-  0% {
-    stroke-dashoffset: 2110;
-    stroke-width: 8;
-    stroke-opacity: 1;
-  }
-  80%{
-    stroke-opacity: 1;
-  }
-  90%{
-    stroke-opacity: 0.5;
-  }
-  100%{
-    stroke-dashoffset: 0;
-    stroke-width: 8;
-    stroke-opacity: 0;
-  }
-}
-
-@keyframes roll2btc {
-  0% {
-    transform: rotate(-24deg);
-  }
-  100%{
-    transform: rotate(-1080deg);
-    background: orange;
-  }
-}
-
-@keyframes roll2bcc {
-  0% {
-    transform: rotate(-360deg);
-    background: orange;
-  }
-  100%{
-    transform: rotate(0deg);
-    background: $primary-color;
-  }
-}
+// Imports the animated Bitcoin logo with cascaded styles
+@import 'bitcoinsvg';

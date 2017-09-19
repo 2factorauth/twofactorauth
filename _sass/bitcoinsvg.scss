@@ -1,0 +1,91 @@
+
+// Bitcoin Loading SVG animation By Aya W.
+// https://codepen.io/ayalan/pen/JfkFc
+//   modified by topolino
+
+#bitcoin-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  background: $primary-color;
+  animation: roll2bcc 1s ease-in-out;
+  animation-fill-mode: forwards;
+
+  &:hover {
+    animation: roll2btc 1s ease-in-out;
+    animation-fill-mode: forwards;
+
+    .path {
+      stroke: none;
+    }
+  }
+
+  .path {
+    stroke: #070;
+    stroke-width: 0;
+    stroke-dasharray: 2110;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash 2s linear;
+    animation-delay: 1s;
+    fill: #fff;
+  }
+}
+
+.tbl-bitcoin-cash-logo, .tbl-bitcoin-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  background: $primary-color;
+}
+
+.tbl-bitcoin-logo {
+  background: orange;
+}
+
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 2110;
+    stroke-width: 8;
+    stroke-opacity: 1;
+  }
+  80%{
+    stroke-opacity: 1;
+  }
+  90%{
+    stroke-opacity: 0.5;
+  }
+  100%{
+    stroke-dashoffset: 0;
+    stroke-width: 8;
+    stroke-opacity: 0;
+  }
+}
+
+@keyframes roll2btc {
+  0% {
+    transform: rotate(-24deg);
+  }
+  100%{
+    transform: rotate(-1080deg);
+    background: orange;
+  }
+}
+
+@keyframes roll2bcc {
+  0% {
+    transform: rotate(-360deg);
+    background: orange;
+  }
+  100%{
+    transform: rotate(0deg);
+    background: $primary-color;
+  }
+}
