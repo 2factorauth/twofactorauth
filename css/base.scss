@@ -51,6 +51,23 @@ p {
   margin: 1em 0;
 }
 
+.fab {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 10000;
+
+  a {
+    .ui.button {
+      background: $primary-color !important;
+
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
+
 .website-table .left,
 .website-table .right {
   display: inline-block;
