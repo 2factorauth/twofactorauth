@@ -1,29 +1,33 @@
 acceptBitcoin.Cash
 ==================
 
-A community-curated list of sites/merchants that accept [Bitcoin Cash - Peer-to-Peer Electronic Cash](https://www.bitcoincash.org). Submit a pull request with your contribution to add! Read below for more info or how to add to the list.
+A community-curated list of sites/merchants that accept [**Bitcoin Cash**](https://www.bitcoincash.org), _a peer-to-peer electronic cash system_ suitable for the digital age, and the future of online commerce. 
 
-[![Join the chat at https://gitter.im/acceptbitcoincashproject/Lobby](https://badges.gitter.im/acceptbitcoincashproject/Lobby.svg)](https://gitter.im/acceptbitcoincashproject/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Add a site that's not listed, or provide any updates/corrections by submitting a pull request, or [creating an issue](https://github.com/acceptbitcoincash/acceptbitcoincash/issues). Learn how to do either by reading [our contribution guidelines](CONTRIBUTING.md).
+
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/acceptbitcoincash/acceptbitcoincash.svg)](https://github.com/acceptbitcoincash/acceptbitcoincash/pulls/)
+[![GitHub issues-closed](https://img.shields.io/github/issues-closed/acceptbitcoincash/acceptbitcoincash.svg)](https://github.com/acceptbitcoincash/acceptbitcoincash/issues?q=is%3Aissue+is%3Aclosed)
 [![Twitter](https://img.shields.io/badge/Twitter-@useBitcoinCash-blue.svg)](https://twitter.com/useBitcoinCash)
+[![Join the chat at https://gitter.im/acceptbitcoincashproject/Lobby](https://badges.gitter.im/acceptbitcoincashproject/Lobby.svg)](https://gitter.im/acceptbitcoincashproject/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
 
 ## The Goal
 
-The goal is to build a website ([acceptBitcoin.Cash](https://acceptBitcoin.Cash)) with a comprehensive list of sites that accept or support Bitcoin Cash, as well as Bitcoin (Legacy).
+The goal is to build a website ([acceptBitcoin.cash](https://acceptBitcoin.Cash)) with a comprehensive list of sites that accept or support Bitcoin Cash, as well as Bitcoin (Legacy).
 
-Our hope is to connect consumers and merchants, while spreading awareness and promoting global adoption of [Bitcoin Cash (https://www.bitcoincash.org). 
+Our hope is to connect consumers and merchants, while spreading awareness and promoting global adoption of [Bitcoin Cash](https://www.bitcoincash.org). 
 
 ## Contributing
 
 If you'd like to contribute to the list, please read the entire guidelines here in
-[CONTRIBUTING.md][contrib].
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Running Locally
 
-acceptBitcoin.Cash is built upon [Jekyll](https://jekyllrb.com/), using the [github-pages](https://github.com/github/pages-gem) gem.
+acceptBitcoin.cash is built upon [Jekyll](https://jekyllrb.com/), using the [github-pages](https://github.com/github/pages-gem) gem.
 In order to run the site locally, it is necessary to install bundler, install all dependencies, and then use Jekyll to serve
 the site. If the `gem` command is not available to you, it is necessary to install Ruby with RubyGems.
-Once Ruby and RubyGems are installed and available from the command line, acceptBitcoin.Cash can be setup using the following commands.
+Once Ruby and RubyGems are installed and available from the command line, acceptBitcoin.cash can be setup using the following commands.
 
 ```
 gem install bundler
@@ -32,12 +36,11 @@ bundle install
 bundle exec jekyll serve
 ```
 
-The acceptBitcoin.Cash website should then be accessible from `http://localhost:4000`.
+The acceptBitcoin.cash website should then be accessible from `http://localhost:4000`.
 
 ## License
 
 This code is distributed under the MIT license. For more info, read the
-[LICENSE][license] file distributed with the source code.
+[LICENSE](/LICENSE) file distributed with the source code.
 
-[contrib]: /CONTRIBUTING.md
-[license]: /LICENSE
+[#478559](http://blockdozer.com/insight/block/000000000000000000651ef99cb9fcbe0dadde1d424bd9f15ff20136191a5eec "The Exodus block.")
