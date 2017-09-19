@@ -2,119 +2,117 @@ websites:
     - name: Adafruit
       url: https://www.adafruit.com
       img: adafruit.png
-      tfa: No
+      bcc: No
       twitter: adafruit
       facebook: adafruitindustries
+      email_address: 
 
     - name: AdoramaPix
       url: http://www.adoramapix.com
       img: adoramapix.png
-      tfa: No
+      bcc: No
       twitter: AdoramaPix
       facebook: AdoramaPix
 
     - name: AliExpress
       url: https://www.aliexpress.com/
       img: aliexpress.png
-      tfa: No
+      bcc: No
       twitter: AliExpress_EN
+      email_address: 
 
     - name: Amazon
       url: https://www.amazon.com
       img: amazon.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      exceptions:
-          text: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
-      doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201596330
+      bcc: No
+      twitter: Amazon
+      facebook: Amazon
 
     - name: Apple
       url: https://appleid.apple.com
       img: apple.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
-      doc: http://support.apple.com/kb/ht5570
+      bcc: No
+      twitter: Apple
+      facebook: Apple
 
     - name: Big W
       url: https://www.bigw.com.au/
       img: bigw.png
-      tfa: No
+      bcc: No
       facebook: BIGWaustralia
+      twitter: BIGW
 
     - name: Combatant Gentlemen
       url: https://combatgent.com
       img: combatgent.png
-      tfa: No
+      bcc: No
       twitter: CombatGent
       facebook: combatgent
 
     - name: Comixology
       url: https://www.comixology.com/
       img: comixology.png
-      tfa: No
+      bcc: No
       twitter: comixology
 
     - name: Costco
       url: https://www.costco.com
       img: costco.png
-      tfa: No
+      bcc: No
       facebook: Costco
+      twitter: Costco
 
     - name: Dell
       url: http://www.dell.com
       img: dell.png
-      tfa: No
+      bcc: No
       twitter: DellCares
+      facebook: Dell
 
     - name: Digital World International
       url: http://www.dwidigitalcameras.com.au/
       img: dwi.png
-      tfa: No
+      bcc: No
       facebook: DWIAUS
 
     - name: EB Games Australia
       url: https://ebgames.com.au/
       img: ebgamesaustralia.png
-      tfa: No
+      bcc: No
       twitter: EBGamesAus
 
     - name: eBay
       url: http://ebay.com
       img: ebay.png
-      tfa: Yes
-      hardware: Yes
-      software: Yes
-      exceptions:
-          text: "eBay only supports 2FA in some countries."
-      doc: http://pages.ebay.com/securitykey/faq.html
+      bcc: No
+      twitter: eBay
+      facebook: eBay
 
     - name: Etsy
       url: http://www.etsy.com/
       img: etsy.png
-      sms: Yes
-      tfa: Yes
-      doc: http://www.etsy.com/help/article/3335
+      bcc: No
+      twitter: Etsy
+      facebook: Etsy
 
     - name: Everlane
       url: https://www.everlane.com/
       twitter: everlane
       img: everlane.png
-      tfa: No
+      bcc: No
+      twitter: Everlane
+      facebook: Everlane
 
     - name: FastTech
       url: https://www.fasttech.com
       img: fasttech.png
-      tfa: No
+      bcc: No
       facebook: fasttech.net
 
     - name: Flipkart
       url: https://www.flipkart.com
       img: flipkart.png
-      tfa: No
+      bcc: No
       twitter: flipkartsupport
       facebook: flipkart
 
@@ -123,24 +121,25 @@ websites:
       twitter: GamersGate
       facebook: GamersGate
       img: gamersgate.png
-      tfa: No
+      bcc: No
 
     - name: Gilt
       url: https://www.gilt.com
       twitter: gilt
       img: gilt.png
-      tfa: No
+      bcc: No
 
     - name: Groupon
       url: https://www.groupon.com
       twitter: Groupon
+      facebook: Groupon.US
       img: groupon.png
-      tfa: No
+      bcc: No
 
     - name: Home Depot
       url: http://www.homedepot.com
       img: homedepot.png
-      tfa: No
+      bcc: No
       twitter: HomeDepot
       facebook: homedepot
 
@@ -148,18 +147,18 @@ websites:
       url: http://www.thebay.com
       img: bay.png
       twitter: hudsonsbay
-      tfa: No
+      bcc: No
 
     - name: Hypop
       url: https://www.hypop.com.au/
       img: hypop.png
       twitter: hypop
-      tfa: No
+      bcc: No
 
     - name: IKEA
       url: http://www.ikea.com
       img: ikea.png
-      tfa: No
+      bcc: No
       twitter: IKEAUSA
       facebook: IKEAUSA
 
@@ -167,18 +166,18 @@ websites:
       url: https://www.jbhifi.com.au/
       twitter: JBHiFi
       img: jbhifi.png
-      tfa: No
+      bcc: No
 
     - name: Jet
       url: https://jet.com
       twitter: JetHeads
       img: jet.png
-      tfa: No
+      bcc: No
 
     - name: Kohl's
       url: http://www.kohls.com
       img: kohls.png
-      tfa: No
+      bcc: No
       twitter: Kohls
       facebook: kohls
 
@@ -186,31 +185,32 @@ websites:
       url: http://www.lazada.com/
       twitter: asklazadasg
       img: lazada.png
-      tfa: No
+      bcc: No
 
     - name: Lowes
       url: https://www.lowes.com
       img: lowes.png
-      tfa: No
+      bcc: No
       twitter: Lowes
       facebook: lowes
 
     - name: Macy's
       url: http://www.macys.com/
       twitter: macys
+      facebook: Macys
       img: macys.png
-      tfa: No
+      bcc: No
 
     - name: Massdrop
       url: https://www.massdrop.com
       twitter: Massdrop
       img: massdrop.png
-      tfa: No
+      bcc: No
 
     - name: Mercado Libre
       url: https://www.mercadolibre.com
       img: mercado-libre.png
-      tfa: Yes
+      bcc: Yes
       software: Yes
       sms: Yes
       doc: https://ayuda.mercadolibre.com.ar/ayuda/Consejos-para-fortalecer-la-se_961
@@ -218,29 +218,30 @@ websites:
     - name: Newegg
       url: https://www.newegg.com
       img: newegg.png
-      tfa: Yes
-      software: Yes
-      email: Yes
-      sms: Yes
+      bcc: No
+      twitter: Newegg
+      facebook: Newegg
 
     - name: Nordstrom
       url: http://shop.nordstrom.com
       img: nordstrom.png
-      tfa: No
+      bcc: No
       twitter: Nordstrom
       facebook: Nordstrom
 
     - name: Northern Tool + Equipment
       url: http://www.northerntool.com/
       img: northerntool.png
-      tfa: No
+      bcc: No
       twitter: NorthernTool
       facebook: northerntool
+      email_address: intlenglishsales@northerntool.com
 
     - name: Overstock
       url: https://www.overstock.com
       img: overstock.png
-      tfa: No
+      bcc: No
+      btc: Yes
       twitter: Overstock
       facebook: overstock
       email_address: international@overstock.com
@@ -249,32 +250,33 @@ websites:
       url: https://www.pccasegear.com/
       twitter: pccasegear
       img: pccasegear.png
-      tfa: No
+      bcc: No
 
     - name: Purse
       url: https://purse.io/
       img: purse.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.purse.io/profile/2fa/
+      bcc: Yes
+      docs: https://blog.purse.io/announcement-update-bitcoin-cash/
+      exceptions:
+           notes: “Withdrawal support only”
 
     - name: Rakuten
       url: https://www.rakuten.com/
       twitter: AskRakutenUS
       img: rakuten.png
-      tfa: No
+      bcc: No
 
     - name: Samsung
       url: http://www.samsung.com/
       img: samsung.png
-      tfa: Yes
-      sms: Yes
-      doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
+      bcc: No
+      twitter: SamsungUS
+      facebook: SamsungUS
 
     - name: Sierra Trading Post
       url: http://www.sierratradingpost.com
       img: sierratradingpost.png
-      tfa: No
+      bcc: No
       twitter: Sierratp
       facebook: sierratradingpost
 
@@ -282,48 +284,52 @@ websites:
       url: https://stacksocial.com
       twitter: StackSocial
       img: stacksocial.png
-      tfa: No
+      bcc: No
 
     - name: Target
       url: http://www.target.com/
       twitter: target
+      facebook: Target
       img: target.png
-      tfa: No
+      bcc: No
 
     - name: Walgreens
       url: http://www.walgreens.com
       twitter: walgreens
+      facebook: Walgreens
       img: walgreens.png
-      tfa: No
+      bcc: No
 
     - name: Walmart
       url: https://www.walmart.com/
       twitter: walmartlabs
+      facebook: walmart
       img: walmart.png
-      tfa: No
+      bcc: No
 
     - name: Warby Parker
       url: https://www.warbyparker.com
       twitter: WarbyParkerHelp
       img: warbyparker.png
-      tfa: No
+      bcc: No
 
     - name: Wayfair
       url: http://www.wayfair.com
       img: wayfair.png
-      tfa: No
+      bcc: No
       twitter: Wayfair
       facebook: wayfair
 
     - name: Zappos
       url: http://www.zappos.com/
       twitter: Zappos
+      facebook: Zappos
       img: zappos.png
-      tfa: No
+      bcc: No
 
     - name: Zazzle
       url: http://www.zazzle.com
       img: zazzle.png
-      tfa: No
+      bcc: No
       twitter: zazzle
       facebook: zazzle
