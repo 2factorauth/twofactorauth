@@ -1,50 +1,50 @@
 websites:
     - name: ecobee
       url: https://ecobee.com
+      img: ecobee.png
       twitter: ecobee
       facebook: ecobee
-      img: ecobee.png
-      tfa: No
+      bcc: No
 
     - name: Nest
       url: https://nest.com
       img: nest.png
-      tfa: Yes
-      sms: Yes
-      doc: https://nest.com/support/article/How-to-use-2-step-verification-to-add-stronger-security-to-your-Nest-Account
+      twitter: nest
+      facebook: nest
+      bcc: No
 
     - name: Noke
       url: https://noke.com
       img: noke.png
-      tfa: No
       twitter: NokeLocks
       facebook: nokelocks
       email_address: support@noke.com
+      bcc: No
 
     - name: Samsung SmartThings
       url: https://www.smartthings.com/
       img: smartthings.png
-      tfa: No
       twitter: smartthings
       facebook: smartthings
+      bcc: No
 
     - name: Solar.web
       url: https://www.solarweb.com
       img: solarweb.png
-      tfa: No
       twitter: FroniusUSASolar
       facebook: FroniusUSASolarEnergy
+      bcc: No
 
     - name: Tesla
       url: https://www.tesla.com
       img: tesla.png
-      tfa: No
       twitter: TeslaMotors
       facebook: tesla
+      bcc: No
 
     - name: Total Connect Comfort
       url: https://www.mytotalconnectcomfort.com
+      img: totalconnect.png
       twitter: Honeywell_Home
       facebook: honeywellhome
-      img: totalconnect.png
-      tfa: No
+      bcc: No
