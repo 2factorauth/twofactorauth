@@ -1,3 +1,5 @@
+![Bitcoin Cash](img/logo.png "Bitcoin Cash: A Peer-to-Peer Electronic Cash System")
+
 acceptBitcoin.Cash
 ==================
 
