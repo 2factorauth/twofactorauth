@@ -2,489 +2,497 @@ websites:
     - name: 007Names
       url: https://www.007names.com
       img: 007names.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.007names.com/info/two-step.xhtml
+      bcc: No
+      email_address: support@007names.com
 
     - name: 101domain
       url: https://101domain.com
       img: 101domain.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.101domain.com/vip_security_card.htm
+      bcc: No
+      twitter: 101domain
+      facebook: 101-Domain
 
     - name: 10Dollar
       url: https://10dollar.ca/
       img: 10dollar.png
+      bcc: No
       twitter: 10dollar_ca
       facebook: 10dollar.ca
-      tfa: No
 
     - name: 123 Reg
       url: https://www.123-reg.co.uk
       img: 123reg.png
-      tfa: No
+      bcc: No
       twitter: 123reg
       facebook: 123regfans
 
     - name: 1and1
       url: https://www.1and1.com/
       img: 1and1.png
-      tfa: No
+      bcc: No
       twitter: 1and1
       facebook: 1and1
 
     - name: Above.com
       url: https://www.above.com
       img: above.png
-      tfa: Yes
-      software: Yes
-      doc: http://domains.above.com/manual-two-step-authentication.html
+      bcc: No
+      email_address: expert-help@above.com
+      twitter: above_domain
+      facebook: above.domain
+
+    - name: Bitdomain.BIZ
+      url: https://www.bitdomain.biz
+      img: bitdomain.png
+      bcc: No
+      btc: Yes
+      email_address: customersupport@bitdomain.biz
 
     - name: Cloudflare
       url: https://cloudflare.com
       img: cloudflare.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
+      bcc: No
+      twitter: Cloudflare
+      facebook: Cloudflare
 
     - name: ClouDNS
       url: https://www.cloudns.net/
       img: cloudns.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.cloudns.net/wiki/article/201/
+      bcc: No
+      twitter: ClouDNS
+      facebook: ClouDNS
 
     - name: Crazy Domains
       url: https://www.crazydomains.com
       img: crazydomains.png
-      tfa: No
+      bcc: No
       twitter: CrazyDomains
       facebook: crazydomains
 
     - name: Directnic
       url: https://directnic.com
       img: directnic.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://directnic.com/knowledge/article/137:how+do+i+set+up+two-factor+authentication%3F
+      bcc: No
+      twitter: directnic
+      facebook: directniccom
 
     - name: DNS Made Easy
       url: https://www.dnsmadeeasy.com
       img: dnsmadeeasy.png
-      tfa: Yes
-      software: Yes
-      doc: http://help.dnsmadeeasy.com/managed-dns/administrative/enable-two-factor-authentication/
+      bcc: No
+      twitter: dnsmadeeasy
+      facebook: dnsmadeeasy
 
     - name: DNSimple
       url: https://dnsimple.com/
       img: dnsimple.png
-      tfa: Yes
-      software: Yes
-      doc: https://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
+      bcc: No
+      twitter: dnsimple
+      facebook: dnsimple
 
     - name: Domain Monster
       url: https://www.domainmonster.com/
       img: domainmonster.png
+      bcc: No
       twitter: domainmonster
       facebook: Domainmonster
-      tfa: No
 
     - name: Domain.com
       url: https://www.domain.com/
       twitter: DomainDotCom
+      bcc: No
       facebook: Domaindotcom
       img: domaindotcom.png
-      tfa: No
 
     - name: domainFACTORY
       url: https://www.df.eu
       img: domainfactory.png
+      bcc: No
       twitter: domainfactory
       facebook: domainfactory.GmbH
-      tfa: No
       lang: de
 
     - name: Domains4Bitcoins.com
       url: https://www.domains4bitcoins.com
       img: domains4bitcoins.png
-      tfa: Yes
-      sms: Yes
-      doc: https://my.domains4bitcoins.com/kb/answer/2692
+      bcc: No
+      btc: Yes
+      email_address: support@domains4bitcoins.com
 
     - name: DomainsAtCost
       url: https://www.domainsatcost.ca/
+      img: domainsatcost.png
+      bcc: No
       twitter: domainsatcost
       facebook: domainsatcost
-      img: domainsatcost.png
-      tfa: No
 
     - name: Domeny.tv
       url: http://www.domeny.tv/en
       img: domenytv.png
-      tfa: Yes
-      software: Yes
-      doc: http://www.domeny.tv/en/two-factor-authentication
+      bcc: No
+      facebook: DomenyTV
 
     - name: Dyn
       url: https://dyn.com/
       img: dyn.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-        text: "Currently only supported for the Managed DNS & Email Delivery platforms (via DynID). Eventually DynID (and 2FA) will be rolled out to all platforms (no ETA)."
-      doc: https://help.dyn.com/2-factor-authentication/
+      bcc: No
+      twitter: Dyn
+      facebook: Dyn
 
     - name: Dynadot
       url: http://dynadot.com/
       img: dynadot.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: http://dynadot.com/domain/security.html
+      bcc: No
+      twitter: dynadot
+      facebook: Dynadot
 
     - name: easyDNS
       url: https://easydns.com
       img: easydns.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      doc: https://fusion.easydns.com/Knowledgebase/Article/View/347/0/account-security
+      bcc: No
+      twitter: easyDNS
+      facebook: easyDNS
 
     - name: eNom
       url: https://www.enom.com/
       img: enom.png
-      tfa: Yes
-      software: Yes
-      doc: http://www.enom.com/kb/kb/kb_1687-setup-2-factor.htm
+      bcc: No
+      twitter: enom
+      facebook: eNomCom
 
     - name: EuroDNS
       url: https://www.eurodns.com
       img: eurodns.png
-      tfa: Yes
-      software: Yes
-      doc: http://help.eurodns.com/customer/en/portal/articles/1633106-how-do-i-activate-two-step-verification-on-my-account-
+      bcc: No
+      twitter: EuroDNS
+      facebook: EuroDNS
 
     - name: Fabulous
       url: http://fabulous.com
       img: fabulous.png
-      tfa: Yes
-      hardware: yes
-      doc: http://fabulous.com/informationcenter/index.htm?formdata%5Bqid%5D=1194
+      bcc: No
+      email_address: support@fabulous.com
 
     - name: Fasthosts
       url: https://www.fasthosts.co.uk/
+      img: fasthosts.png
+      bcc: No
       twitter: Fasthosts
       facebook: fasthostsinternet
-      img: fasthosts.png
-      tfa: No
 
     - name: FreeDNS
       url: https://freedns.afraid.org/
-      email_address: dnsadmin@afraid.org
       img: freedns.png
-      tfa: No
+      bcc: No
+      email_address: dnsadmin@afraid.org
 
     - name: Gandi
       url: https://gandi.net
       img: gandi.png
-      tfa: Yes
-      software: Yes
-      doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
+      bcc: No
+      btc: Yes
+      twitter: gandibar
+      facebook: GandiBar
 
     - name: GoDaddy
       img: godaddy.png
       url: http://www.godaddy.com/
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://www.godaddy.com/help/enable-two-step-verification-7502
+      bcc: No
+      twitter: GoDaddy
+      facebook: GoDaddy
 
     - name: Google Domains
       url: https://domains.google.com
       img: googledomains.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+      bcc: No
+      email_address: support@googledomains.com
 
     - name: Heart Internet
       url: https://www.heartinternet.uk/
       img: heartinternet.png
-      tfa: No
+      bcc: No
       twitter: HeartInternet
       facebook: heartinternet
 
     - name: Hexonet
       url: https://www.hexonet.net/
       img: hexonet.png
-      tfa: Yes
-      software: Yes
-      doc: https://cp.hexonet.net/cp2/downloads/2FA.pdf
+      bcc: No
+      twitter: hexonet
+      facebook: Hexonet
 
     - name: Hover.com
       img: hover.png
-      url: http://www.hover.com/
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.hover.com/entries/26677644
+      url: https://www.hover.com/
+      bcc: No
+      twitter: hover
+      facebook: hover
 
     - name: Hurricane Electric
       url: https://www.he.net/
       img: hurricane.png
-      tfa: Yes
-      software: Yes
+      bcc: No
+      email_address: info@he.net
+
+    - name: Idotz.net
+      url: https://idotz.net
+      img: idotz.png
+      bcc: No
+      btc: Yes
+      twitter: idotz
+      facebook: idotz.net
 
     - name: Incapsula
       url: https://www.incapsula.com/
       img: incapsula.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      sms: Yes
-      doc: https://docs.incapsula.com/Content/management-console-and-settings/account-settings.htm
+      bcc: No
+      twitter: incapsula_com
+      facebook: Incapsula
 
     - name: Internet.bs
-      url: http://www.internet.bs
+      url: https://internetbs.net//
       img: internetbs.png
-      tfa: Yes
-      software: Yes
-      doc: /notes/internetbs/
+      bcc: No
+      email_address: contact-en@internet.bs
 
     - name: INWX
       url: https://www.inwx.com/en/
       img: internetworx.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.inwx.com/en/offer/mobiletan
+      bcc: No
+      twitter: INWX
+      facebook: InterNetworX
+
+    - name: IT Itch
+      url: https://ititch.com/
+      img: ititch.png
+      bcc: No
+      btc: Yes
+      twitter: it_itch
 
     - name: iWantMyName
       url: https://iwantmyname.com/
       img: iwantmyname.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.iwantmyname.com/customer/portal/articles/1139898
+      bcc: No
+      email_address: help@support.iwantmyname.com
 
     - name: Joker.com
       url: https://joker.com
       img: joker.png
-      tfa: Yes
-      software: Yes
-      doc: https://joker.com/faq/content/52/480/en/what-is-two_factor_authentication.html
+      bcc: No
+      twitter: jokercom
+      facebook: JokerDomains
 
     - name: Loopia
       url: https://www.loopia.se/
       img: loopia.png
-      tfa: Yes
-      software: Yes
-      doc: https://blogg.loopia.se/2015/03/16/nu-kan-du-logga-in-med-tvafaktorsautentiering-hos-loopia-genom-bankid/
-      exceptions:
-          text: "TFA only available for Swedish residents with BankID."
+      bcc: No
+      twitter: loopia
+      facebook: Loopia
 
     - name: MarkMonitor
       url: https://www.markmonitor.com
       img: markmonitor.png
-      tfa: Yes
-      hardware: Yes
-      sms: Yes
-      software: Yes
+      bcc: No
+      twitter: markmonitor
 
     - name: Metaname
       url: https://metaname.net/
       img: metaname.png
-      tfa: Yes
-      sms: Yes
-      doc: https://metaname.net/public/two_factor_authentication
+      bcc: No
+      email_address: support@metaname.co.nz
 
     - name: Moniker
       url: https://www.moniker.com/
       img: moniker.png
-      tfa: No
-      twitter: monikersnap
+      bcc: No
+      twitter: moniker
       facebook: MonikerLLC
+
+    - name: MonoVM
+      url: https://monovm.com/domain/
+      img: monovm.png
+      bcc: No
+      btc: Yes
+      twitter: monovm
+      facebook: monovm
 
     - name: MyDomain
       url: https://www.mydomain.com/
+      img: mydomain.png
+      bcc: No
       twitter: mydomaindotcom
       facebook: mydomain
-      img: mydomain.png
-      tfa: No
 
     - name: Name.com
       url: https://www.name.com/
       img: namecom.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.name.com/services/two-step-verification
+      bcc: No
+      twitter: namedotcom
+      facebook: namedotcom
 
     - name: Namecheap
       url: https://www.namecheap.com/
       img: namecheap.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
+      bcc: No
+      btc: Yes
+      twitter: Namecheap
+      facebook: Namecheap
 
     - name: NameSilo.com
       url: https://www.namesilo.com/
       img: namesilo.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.namesilo.com/Support/2~Factor-Authentication
+      bcc: No
+      twitter: namesilo
+      facebook: namesilo
 
     - name: NamesPro.ca
       url: https://www.namespro.ca/
+      img: namespro.png
+      bcc: No
       twitter: namespro
       facebook: namespro
-      img: namespro.png
-      tfa: No
 
     - name: NearlyFreeSpeech.net
       url: https://www.nearlyfreespeech.net/
       img: nfsn.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
+      bcc: No
+      email_address: support@NearlyFreeSpeech.NET
 
     - name: Netfirms
       url: https://www.netfirms.com
+      img: netfirms.png
+      bcc: No
       twitter: netfirms
       facebook: netfirmsfans
-      img: netfirms.png
-      tfa: No
 
     - name: Netim
       url: https://www.netim.com/
+      img: netim.png
+      bcc: No
       twitter: Netim_com
       facebook: netimcom
-      img: netim.png
-      tfa: No
 
     - name: Netregistry
       url: http://www.netregistry.com.au/
+      img: netregistry.png
+      bcc: No
       twitter: netregistry
       facebook: netregistry
-      img: netregistry.png
-      tfa: No
 
     - name: Network Solutions
       url: https://www.networksolutions.com/
+      img: networksolutions.png
+      bcc: No
       twitter: netsolcares
       facebook: Web.com
-      img: networksolutions.png
-      tfa: No
 
     - name: No-IP
       url: https://www.noip.com/
       img: noip.png
-      tfa: No
+      bcc: No
       twitter: NoIPcom
       facebook: noipdns
 
     - name: Nominet
       url: http://www.nominet.uk/
       img: nominet.png
-      tfa: Yes
-      software: Yes
-      doc: http://registrars.nominet.org.uk/sites/default/files/two_factor_authentication_userguide.pdf
+      bcc: No
+      twitter: nominet
+      facebook: Nominet
 
     - name: NS1
       url: https://ns1.com/
       img: ns1.png
-      tfa: Yes
-      software: Yes
-      doc: https://ns1.com/articles/enabling-2-factor-authentication
+      bcc: No
+      twitter: nsoneinc
+      facebook: nsoneinc
 
     - name: Openprovider
       url: https://www.openprovider.co.uk
       img: openprovider.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.openprovider.co.uk/about-openprovider/news/secure-your-account-with-two-factor-authentication
+      bcc: No
+      twitter: openprovider
+      facebook: openprovider
 
     - name: OpenSRS
       url: https://opensrs.com
       img: opensrs.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      doc: https://help.opensrs.com/hc/en-us/articles/209618017-Two-Factor-Authentication-2FA-for-Reseller-Account-Access
+      bcc: No
+      twitter: opensrs
+      email_address: help@opensrs.com
 
     - name: pairNIC
       url: https://www.pairnic.com/
       img: pairnic.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      doc: https://www.pairnic.com/kb/posts/345
+      bcc: No
+      twitter: pairnetworks
+      facebook: pairnetworks
 
     - name: PointDNS
       url: https://pointhq.com/
-      twitter: pointdns
       img: pointdns.png
-      tfa: No
+      bcc: No
+      twitter: pointdns
 
     - name: porkbun
       url: https://porkbun.com
       img: porkbunBuns.png
-      tfa: Yes
-      software: Yes
-      doc: https://porkbun.com/products/two_factor_authentication
+      bcc: No
+      twitter: PorkbunLLC
+      facebook: Porkbun-1626180577611026
+
+    - name: QHoster
+      url: https://www.qhoster.com
+      img: qhoster.png
+      bcc: No
+      btc: Yes
+      twitter: qhostercom
+      facebook: qhoster
+      email_address: info@qhoster.com
 
     - name: Register4Less
       url: https://register4less.com/
       img: register4less.png
-      tfa: Yes
-      software: Yes
-      doc: http://blog.register4less.com/?p=43
+      bcc: No
+      twitter: Register4Less
+      facebook: Register4Less
 
     - name: Registro.br
       url: https://registro.br
       img: registrobr.png
-      tfa: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
+      bcc: No
+      email_address: pagamento@registro.br
 
     - name: STRATO
       url: https://www.strato.de/
+      img: strato.png
+      bcc: No
       twitter: STRATO_AG
       facebook: strato
-      img: strato.png
-      tfa: No
       lang: de
 
     - name: UK2
       url: https://www.uk2.net/
+      img: uk2.png 
+      bcc: No
       twitter: UK2
       facebook: UK2.net
-      img: uk2.png 
-      tfa: No
 
     - name: Uniregistry
       url: https://uniregistry.com/
       img: uniregistry.png
-      tfa: Yes
-      software: Yes
-      doc: https://uniregistry.help/my-account-en/what-is-two-step-verification/
+      bcc: No
+      twitter: Uniregistry
+      facebook: Uniregistry
 
     - name: united-domains Reselling
       url: https://www.ud-reselling.com/en/
       img: udreselling.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.ud-reselling.com/en/security/
+      bcc: No
+      email_address: support@ud-reselling.com
 
     - name: Verio
       url: https://www.verio.com/
-      twitter: Verio
       img: verio.png
-      tfa: No
+      bcc: No
+      twitter: Verio
