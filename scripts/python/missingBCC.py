@@ -1,4 +1,5 @@
 import os
+import datetime
 
 totalSites = 0
 totalBCC = 0
@@ -9,7 +10,7 @@ missingEntries = 0
 
 index = 1
 
-dirPath = "../_data"
+dirPath = "../../_data"
 filename = os.listdir(dirPath)
 
 def countFile(dir, filename):
@@ -60,9 +61,16 @@ while counter < len(filename):
     counter += 1
 
 
+#create log
+timestamp = datetime.datetime.utcnow()
 
+output = open("./output/missingBCC_log.csv", "a")
 
-output = open("./output/missingBCC.txt", "w")
+output.write(str(timestamp) + ", " + str(failedPaths) + ", " + str(missingEntries) + "\n")
+
+output.close()
+
+output = open("./output/missingBCC.txt", "w+")
 
 for string in missingList:
     #print(string + "\n")

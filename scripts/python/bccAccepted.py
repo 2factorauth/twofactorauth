@@ -1,11 +1,13 @@
 import os
+import datetime
+import pathlib
 
 totalSites = 0
 totalBCC = 0
 
 index = 1
 
-dirPath = "../_data"
+dirPath = "../../_data"
 filename = os.listdir(dirPath)
 
 def countFile(dir, filename):
@@ -49,7 +51,17 @@ print("Total websites found: " + str(totalSites))
 
 print("Total BCC supported sites " + str(totalBCC))
 
-output = open("../_includes/count_support.html", "w")
+#create log
+timestamp = datetime.datetime.utcnow()
+
+output = open("./output/bccAccepted_log.csv", "a")
+
+output.write(str(timestamp) + ", " + str(totalBCC) + ", " + str(totalSites) + "\n")
+
+output.close()
+
+#create html file
+output = open("../../_includes/count_support.html", "w+")
 
 output.write("<p><span class=\"bcc-yes-count\">" + str(totalBCC) + "</span> out of <span class=\"bcc-total-site-count\">"+ str(totalSites) +"</span> sites listed support Bitcoin Cash.</p>")
 
