@@ -22,6 +22,15 @@ $(document).ready(function () {
     body.stop().animate({scrollTop:0}, 500, 'swing');
   });
 
+  // Clear the active search terms
+  $('button#search-clear').click(function () {
+    $('#search-wrapper input').val('');
+    $('#no-results').css('display', 'none');
+    $('.category').show();
+    $('table').show();
+    $('#search-wrapper input').focus();
+  });
+
   // Unveil images 50px before they appear
   $('img').unveil(50);
 
@@ -63,6 +72,7 @@ var jets = new Jets({
       // Show all categories when no search term is entered
       $('.website-table').css('display', 'none');
       $('.website-table .label').css('display', 'none');
+      $('#search-clear').css('display', 'none');
       $('.category').show();
       $('table').show();
       isSearching = false;
@@ -84,6 +94,8 @@ var jets = new Jets({
       if (table.children().length == table.children(':hidden').length) {
           $('#no-results').css('display', 'block');
       }
+
+      $('#search-clear').fadeIn('slow');
 
       isSearching = true;
 

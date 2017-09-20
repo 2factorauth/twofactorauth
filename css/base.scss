@@ -51,6 +51,10 @@ p {
   margin: 1em 0;
 }
 
+[data-tooltip]:after {
+  font-size: 0.8rem;
+}
+
 .fab {
   position: fixed;
   bottom: 1rem;
@@ -75,6 +79,7 @@ p {
       background-color: #044 !important;
       position: absolute;
       top: -64px;
+      left: 0;
 
       i {
         font-size: 20px;
@@ -178,6 +183,32 @@ p {
 
     i {
       color: $primary-color;
+      display: inline-block;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+
+  button#search-clear {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 88px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+      outline-style: dotted;
+      outline-width: 4px;
+      outline-color: #900;
+    }
+
+    i {
+      color: #900;
       display: inline-block;
       font-size: inherit;
       text-rendering: auto;
@@ -483,6 +514,16 @@ span.progress {
 
   .mobile-table {
     display: block;
+  }
+
+  #search-wrapper {
+    input {
+      padding-right: 42px;
+    }
+
+    button#search-clear {
+      right: 12%;
+    }
   }
 }
 
