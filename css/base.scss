@@ -51,6 +51,10 @@ p {
   margin: 1em 0;
 }
 
+[data-tooltip]:after {
+  font-size: 0.8rem;
+}
+
 .fab {
   position: fixed;
   bottom: 1rem;
@@ -510,6 +514,16 @@ span.progress {
 
   .mobile-table {
     display: block;
+  }
+
+  #search-wrapper {
+    input {
+      padding-right: 42px;
+    }
+
+    button#search-clear {
+      right: 12%;
+    }
   }
 }
 
