@@ -5,6 +5,23 @@ $(document).ready(function () {
     openCategory(window.location.hash.substring(1));
   }
 
+  // Activate elevator power to the search floor
+  var primaryElevator = new Elevator({
+    element: document.querySelector('.fab button:nth-child(2)'),
+    targetElement: document.querySelector('#search-wrapper'),
+    verticalPadding: 70,  // in pixels
+    duration: 420, // milliseconds
+    endCallback: function() {
+      $('#search-wrapper input').focus();
+    }
+  });
+
+  // Scroll to the top via floating action button
+  $('.fab button:nth-child(1)').click(function () {
+    var body = $("html, body");
+    body.stop().animate({scrollTop:0}, 500, 'swing');
+  });
+
   // Unveil images 50px before they appear
   $('img').unveil(50);
 
@@ -69,6 +86,8 @@ var jets = new Jets({
       }
 
       isSearching = true;
+
+      $('html, body').scrollTop($('#search-wrapper').offset().top - 15);
     }
   },
   // Process searchable elements manually
@@ -117,15 +136,18 @@ function openCategory(category) {
   var icon = $('#' + category + ' h5 i');
   icon.addClass('active-icon');
   if ($(window).width() > 768) {
-    $('#' + category + '-desktoptable').css('display', 'block');
+    $('#' + category + '-desktoptable').slideDown('slow');
+
+    // Scroll smoothly to category selector
+    var body = $("html, body");
+    body.stop().animate({scrollTop: icon.offset().top - 15}, 1000, 'swing');
+
   } else {
-    $('#' + category + '-mobiletable').css('display', 'block');
+    $('#' + category + '-mobiletable').css('display','block');
+    // Quickly snap to category selector
+    document.location.hash = category;
   }
 
-  // Scroll smoothly to category selector
-  $('html, body').animate({
-    scrollTop: icon.offset().top - 25
-  }, 1000);
 }
 
 /**
@@ -134,7 +156,8 @@ function openCategory(category) {
  * @param category The id of a category as a string
  */
 function closeCategory(category) {
+  $('.' + category + '-table').slideUp();
   $('#' + category + ' h5 i').removeClass('active-icon');
-  $('.' + category + '-table').css('display', 'none');
-  document.location.hash = '';
+  // Remove hash from URL, prevent the scroll position from jumping to the top
+  history.pushState('', document.title, window.location.pathname);
 }
