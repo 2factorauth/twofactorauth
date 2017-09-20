@@ -51,6 +51,40 @@ p {
   margin: 1em 0;
 }
 
+.fab {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 10000;
+
+  .ui.button {
+    position: relative;
+    background: $primary-color !important;
+    box-shadow: 2px 5px 20px rgba(0,0,0,0.4);
+
+    i {
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    &:nth-child(2) {
+      background-color: #044 !important;
+      position: absolute;
+      top: -64px;
+
+      i {
+        font-size: 20px;
+        font-weight: normal;
+        left: 14px;
+      }
+    }
+  }
+}
+
 .website-table .left,
 .website-table .right {
   display: inline-block;
@@ -245,6 +279,7 @@ input[type=search] {
   background: #fff;
   border-radius: 10px !important;
   border: 3px solid $primary-color-light;
+  //box-shadow: 2px 5px 20px rgba(80, 80, 80, 0.2), -2px -1px 20px rgba(80, 80, 80, 0.2);
 }
 
 .ui.table thead th:not(:first-child) {
