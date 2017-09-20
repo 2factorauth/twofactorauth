@@ -2,298 +2,269 @@ websites:
     - name: Ankama
       url: https://www.ankama.com
       img: ankama.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://support.ankama.com/hc/en-us/categories/200093427-DOFUS-Security
+      bcc: No
+      facebook: Ankama
 
     - name: Black Desert Online
       url: https://www.blackdesertonline.com/
       img: bdo.png
+      bcc: No
       twitter: BDO_News
       facebook: BlackDesertOnline
-      tfa: No
 
-    - name: 'Blade & Soul'
+    - name: Blade & Soul
       url: http://www.bladeandsoul.com/
       img: bladeandsoul.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.bladeandsoul.com/hc/en-us/articles/207578553-Supported-Two-Step-OTP-Authentication-Verification-Methods
+      bcc: No
+      twitter: bladeandsoul
+      facebook: BladeAndSoul
 
     - name: Blizzard
       url: http://blizzard.com
       img: blizzard.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://us.battle.net/support/en/article/Blizzard-Authenticator
+      bcc: No
+      twitter: Blizzard_Ent
+      facebook: Blizzard
 
     - name: Curse
       url: https://www.curse.com/
       img: curse.png
-      tfa: No
+      bcc: No
       twitter: curseapp
       facebook: curseapp
 
     - name: Desura
       url: http://www.desura.com/
       img: desura.png
-      tfa: No
+      bcc: No
       twitter: desura
       facebook: Desura
 
     - name: Elder Scrolls Online
       url: http://www.elderscrollsonline.com/
       img: eso.png
-      tfa: Yes
-      email: Yes
-      doc: https://help.elderscrollsonline.com/app/answers/detail/a_id/8611
+      bcc: No
+      twitter: TESOnline
+      email_address: info@bethsoft.com
 
     - name: Enjin
       url: http://www.enjin.com/
       img: enjin.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "2FA is only available on paid plans."
-      doc: https://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
+      bcc: No
+      twitter: enjincs
+      facebook: enjinsocial
 
     - name: EpicGames
       url: https://www.epicgames.com/
+      img: epicgames.png
+      bcc: No
       twitter: EpicGames
       facebook: epicgamesinc
-      img: epicgames.png
-      tfa: No
 
     - name: EVE Online
       url: https://www.eveonline.com/
       img: eveonline.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://support.eveonline.com/hc/en-us/articles/203465601-Two-Factor-Authentication-and-Authenticator
+      bcc: No
+      twitter: eveonline
+      facebook: eveonline
 
     - name: FaceIT
       url: https://www.faceit.com
       img: faceit.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.faceit.com/hc/en-us/articles/115000254670-Enabling-2-Factor-Authentication-
+      bcc: No
+      twitter: FaceIt
+      facebook: FaceItCommunity
 
     - name: GameFly
       url: https://www.gamefly.com/
+      img: gamefly.png
+      bcc: No
       twitter: GameFly
       facebook: gamefly
-      img: gamefly.png
-      tfa: No
 
     - name: Garena Online
       url: https://intl.garena.com
       img: garena.png
-      tfa: Yes
-      software: Yes
-      doc: https://account.garena.com/
-      exceptions:
-          text: "A mobile phone and Garena account level 3 or higher is required for 2FA."
+      bcc: No
+      twitter: Garenaonline
+      facebook: Garenaonline
 
     - name: GeForce (Nvidia)
       url: http://www.geforce.com/
+      img: geforce.png
+      bcc: No
       twitter: NVIDIAGeForce
       facebook: NVIDIAGeForce
-      img: geforce.png
-      tfa: No
 
     - name: GOG.com
       url: https://www.gog.com
       img: gog.png
-      tfa: Yes
-      email: Yes
-      doc: https://www.gog.com/support/support_view/twostep_login_faq
+      bcc: No
+      twitter: gogcom
+      facebook: gogcom
 
     - name: GREE
       url: http://product.gree.net/
       img: gree.png
-      tfa: Yes
-      software: Yes
-      doc: /notes/gree/
+      bcc: No
+      twitter: greegames
 
     - name: Guild Wars 2
       url: https://www.guildwars2.com
       img: guildwars2.png
       sms: Yes
-      tfa: Yes
-      email: Yes
-      phone: Yes
-      software: Yes
-      doc: https://help.guildwars2.com/hc/en-us/articles/230672927-Securing-Your-Account-With-Authentication
+      bcc: No
+      twitter: GuildWars2
+      facebook: GuildWars2
 
     - name: Humble Bundle
       url: https://www.humblebundle.com/
       img: humble.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.humblebundle.com/hc/en-us/articles/202421374
+      bcc: No
+      twitter: humble
+      facebook: HumbleBundle
 
     - name: IndieGala
       url: https://www.indiegala.com/
+      facebook: IndieGala
+      bcc: No
       img: indiegala.png
       twitter: IndieGala
-      facebook: IndieGala
-      tfa: No
 
     - name: itch.io
       url: https://itch.io/
       img: itchio.png
-      tfa: Yes
-      software: Yes
-      doc: http://itch.io/developers/two-factor-authentication
+      bcc: No
+      twitter: itchio
+      facebook: itchiogames
 
     - name: League of Legends
       url: http://leagueoflegends.com
+      img: leagueoflegends.png
+      bcc: No
       twitter: leagueoflegends
       facebook: leagueoflegends
-      img: leagueoflegends.png
-      tfa: No
 
     - name: Mojang
       url: https://mojang.com/
-      twitter: MojangSupport
       img: mojang.png
-      tfa: No
+      bcc: No
+      twitter: MojangSupport
 
     - name: Nintendo Network
       url: https://www.nintendo.com/
+      img: nintendo.png
+      bcc: No
       twitter: NintendoAmerica
       facebook: Nintendo
-      img: nintendo.png
-      tfa: No
 
     - name: Origin
       url: https://www.origin.com/
       img: origin.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.ea.com/en-us/help/account/origin-login-verification-information/
+      bcc: No
+      twitter: OriginInsider
+      facebook: OriginInsider
 
     - name: Playstation Network
       url: https://www.playstation.com/
       img: psn.png
-      tfa: Yes
-      sms: Yes
-      doc: https://www.playstation.com/en-us/account-security/2-step-verification/
+      bcc: No
+      twitter: PlayStation
+      facebook: PlayStation
 
     - name: Roberts Space Industries
       url: https://robertsspaceindustries.com/
       img: robertsspaceindustries.png
-      tfa: Yes
-      software: Yes
-      email: Yes
-      doc: https://robertsspaceindustries.com/faq/two-step-authentication
+      bcc: No
+      twitter: RobertsSpaceInd
+      facebook: RobertsSpaceIndustries
 
     - name: Rockstar Games Social Club
       url: https://socialclub.rockstargames.com
+      img: rockstargames.png
+      bcc: No
       twitter: RockstarSupport
       facebook: rockstargames
-      img: rockstargames.png
-      tfa: No
 
     - name: RuneScape
       url: http://www.runescape.com/
       img: runescape.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.runescape.com/hc/en-gb/articles/206811835-Setting-the-Authenticator-Mobile-Device
+      bcc: No
+      twitter: RuneScape
+      facebook: RuneScape
 
     - name: Square Enix
       url: http://na.square-enix.com/
       img: squarenix.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.square-enix.com/na/account/otp/
-      exceptions:
-          text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
+      bcc: No
+      twitter: SquareEnix
+      facebook: SquareEnix
 
     - name: "Star Wars: The Old Republic"
       url: http://www.swtor.com/
       img: swtor.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.swtor.com/info/security-key
+      bcc: No
+      twitter: swtor
+      facebook: starwarstheoldrepublic
 
     - name: Stardock Corporation
       url: https://www.stardock.com/
+      img: stardock.png
+      bcc: No
       twitter: Stardock
       facebook: official.stardock
-      img: stardock.png
-      tfa: No
 
     - name: Steam
       url: http://store.steampowered.com/
       img: steam.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030
-      exceptions:
-        text: "Software implementation requires use of the Steam Mobile app. It does not support multiple accounts on the same device. It does not support multiple accounts using the same phone number for SMS. Authentication on non-phone devices is not officially supported. SMS support is limited to receiving account recovery codes for password resets."
+      bcc: No
+      twitter: Steam_Games
+      facebook: Steam
 
     - name: Tibia
       url: http://www.tibia.com/
       img: tibia.png
-      tfa: Yes
-      software: Yes
-      doc: http://www.tibia.com/support/?subtopic=faq&question=authenticator
+      bcc: No
+      twitter: tibia
+      facebook: Tibia
 
     - name: Trion Worlds
       url: http://www.trionworlds.com/en/
       img: trionworlds.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://support.trionworlds.com/hc/en-us/articles/204183357-Adding-a-Mobile-Authenticator
+      bcc: No
+      twitter: trionworlds
+      facebook: TrionWorlds
 
     - name: Uplay
       url: https://uplay.ubi.com/
       img: uplay.png
-      tfa: Yes
-      software: Yes
-      doc: http://forums.ubi.com/showthread.php/1463703-Secure-your-account-with-2-Step-Verification
+      bcc: No
+      twitter: uplayubisoft
 
     - name: Wargaming
       url: http://wargaming.net/
-      tfa: Yes
-      software: Yes
       img: wargaming.png
-      doc: https://wargaming.net/support/kb/articles/792
+      bcc: No
+      twitter: wargaming_net
+      facebook: WarGamingNet
 
     - name: WildStar
       url: https://www.wildstar-online.com/
       img: wildstar.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.wildstar-online.com/hc/en-us/articles/203982369-Two-Step-Verification-FAQ
+      bcc: No
+      twitter: wildstar
+      facebook: WildstarOnline
 
     - name: Xbox Live
       url: https://www.xbox.com/live
       img: xbox.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+      bcc: No
+      twitter: XboxSupport
+      facebook: Xbox
 
     - name: YoYo Games
       url: https://www.yoyogames.com/
       img: yoyogames.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: http://help.yoyogames.com/hc/en-us/articles/216757288-Creating-a-YoYo-Account
+      bcc: No
+      twitter: yoyogames
+      facebook: yoyogames
