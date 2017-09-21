@@ -64,6 +64,11 @@ while counter < len(filename):
 #create log
 timestamp = datetime.datetime.utcnow()
 
+try:
+	os.mkdir("./output")
+except Exception as e:
+	pass
+
 output = open("./output/missingBCC_log.csv", "a")
 
 output.write(str(timestamp) + ", " + str(failedPaths) + ", " + str(missingEntries) + "\n")

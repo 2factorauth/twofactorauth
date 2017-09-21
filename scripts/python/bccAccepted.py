@@ -54,6 +54,11 @@ print("Total BCC supported sites " + str(totalBCC))
 #create log
 timestamp = datetime.datetime.utcnow()
 
+try:
+	os.mkdir("./output")
+except Exception as e:
+	pass
+
 output = open("./output/bccAccepted_log.csv", "a")
 
 output.write(str(timestamp) + ", " + str(totalBCC) + ", " + str(totalSites) + "\n")
