@@ -42,6 +42,7 @@ def countFile(dir, filename):
                     missingList[index] = missingList[index] + " " + nameLine + ","
                     global missingEntries
                     missingEntries += 1
+                    pathFail = True
                 processed = False
 
             if "bcc: " in line:
@@ -50,7 +51,11 @@ def countFile(dir, filename):
                     totalBCC += 1
                     totalSites += 1
                 processed = True
+        if pathFail:
+            global failedPaths 
+            failedPaths += 1
         index += 1
+
 
 counter = 0
 while counter < len(filename):
@@ -89,8 +94,6 @@ output.write("\n")
 
 #print("Total BCC supported sites " + str(totalBCC))
 #output.write("Total BCC supported sites " + str(totalBCC) + ". \n")
-
-failedPaths = len(missingList) - 1
 
 print(str(failedPaths) + " files have entries missing the bcc tag")
 output.write(str(failedPaths) + " files have entries missing the bcc tag \n")
