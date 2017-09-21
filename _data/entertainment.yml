@@ -1,183 +1,177 @@
 websites:
     - name: Bandcamp
       url: https://bandcamp.com
+      img: bandcamp.png
+      bcc: No
       twitter: bandcamp
       facebook: Bandcamp
-      img: bandcamp.png
-      tfa: No
 
     - name: CD Baby
       url: https://www.cdbaby.com/
+      img: cdbaby.png
+      bcc: No
       twitter: cdbaby
       facebook: cdbaby
-      img: cdbaby.png
-      tfa: No
 
     - name: Crunchyroll
       url: http://www.crunchyroll.com/
       img: crunchyroll.png
-      tfa: No
+      bcc: No
       twitter: Crunchyroll
       facebook: Crunchyroll
 
     - name: Google Play
       url: https://play.google.com
       img: googleplay.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+      bcc: No
+      twitter: GooglePlay
+      facebook: GooglePlay
 
     - name: Hulu
       url: http://www.hulu.com/
+      img: hulu.png
+      bcc: No
       twitter: hulu_support
       facebook: hulu
-      img: hulu.png
-      tfa: No
 
     - name: IBM Cloud Video (Ustream)
       url: http://www.ustream.tv/
+      img: ustream.png
+      bcc: No
       twitter: ibmcloudvideo
       facebook: ibmcloudvideo
-      img: ustream.png
-      tfa: No
 
     - name: IMDb
       url: https://www.imdb.com
       img: imdb.png
+      bcc: No
       twitter: IMDb
       facebook: imdb
-      tfa: No
 
     - name: Last.fm
       url: http://www.last.fm/
+      img: lastfm.png
+      bcc: No
       twitter: lastfmsupport
       facebook: lastfm
-      img: lastfm.png
-      tfa: No
 
     - name: Mixer
       url: https://mixer.com/
       img: mixer.png
-      tfa: Yes
-      software: Yes
-      doc: https://watchbeam.zendesk.com/hc/en-us/articles/115000997646-What-is-2FA-two-factor-authentication-and-How-do-I-set-it-up-
+      bcc: No
+      twitter: WatchMixer
+      facebook: WatchMixer
 
     - name: Netflix
       url: https://www.netflix.com/us/
+      img: netflix.png
+      bcc: No
       twitter: Netflixhelps
       facebook: netflix
-      img: netflix.png
-      tfa: No
 
     - name: Pandora
       url: https://www.pandora.com
       img: pandora.png
-      tfa: No
+      bcc: No
       twitter: pandorasupport
       facebook: pandora
 
     - name: Picarto.TV
       url: https://picarto.tv/
+      img: picartotv.png
+      bcc: No
       twitter: PicartoTV
       facebook: picartotv
       email_address: support@picarto.tv
-      img: picartotv.png
-      tfa: No
 
     - name: Plex
       url: https://www.plex.tv
+      img: plex.png
+      bcc: No
       twitter: plexapp
       facebook: plexapp
-      img: plex.png
-      tfa: No
 
     - name: Qobuz
       url: http://www.qobuz.com
+      img: qobuz.png
+      bcc: No
       twitter: qobuz
       facebook: qobuz
-      img: qobuz.png
-      tfa: No
 
     - name: Roku
       url: https://www.roku.com
       img: roku.png
-      tfa: No
+      bcc: No
       twitter: RokuSupport
       facebook: roku
 
     - name: Sling TV
       url: https://www.sling.com/
+      img: sling.png
+      bcc: No
       twitter: slinganswers
       facebook: sling
-      img: sling.png
-      tfa: No
 
     - name: smashcast
       url: https://www.smashcast.tv/
       img: smashcast.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.smashcast.tv/customer/en/portal/articles/2779887
+      bcc: No
+      twitter: Smashcast_tv
+      facebook: Smashcast
 
     - name: SoundCloud
       url: https://soundcloud.com/
+      img: soundcloud.png
+      bcc: No
       twitter: SCsupport
       facebook: SoundCloud
-      img: soundcloud.png
-      tfa: No
 
     - name: Spotify
       url: https://www.spotify.com/
+      img: spotify.png
+      bcc: No
       twitter: spotifycares
       facebook: spotify
-      img: spotify.png
-      tfa: No
 
     - name: TIDAL
       url: https://tidal.com/
+      img: tidal.png
+      bcc: No
       twitter: TIDALHiFi
       facebook: TIDAL
-      img: tidal.png
-      tfa: No
 
     - name: TiVo
       url: https://www.tivo.com/
+      img: tivo.png
+      bcc: No
       twitter: TiVo
       facebook: TiVo
-      img: tivo.png
-      tfa: No
 
     - name: Twitch
       url: https://www.twitch.tv/
       img: twitch.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: http://blog.twitch.tv/2015/11/two-factor-authentication-now-available-on-your-twitch-account/
+      bcc: No
+      btc: Yes
+      twitter: Twitch
+      facebook: Twitch
 
     - name: Vidme
       url: https://vid.me/
+      img: vidme.png
+      bcc: No
       twitter: vidme
       facebook: vidme
-      img: vidme.png
-      tfa: No
 
     - name: Vimeo
       url: https://vimeo.com/
+      img: vimeo.png
+      bcc: No
       twitter: vimeo
       facebook: Vimeo
-      img: vimeo.png
-      tfa: No
 
     - name: YouTube
       url: https://www.youtube.com/
       img: youtube.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      phone: Yes
-      hardware: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+      bcc: No
+      twitter: YouTube
+      facebook: YouTube
