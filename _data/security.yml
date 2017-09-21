@@ -2,183 +2,236 @@ websites:
     - name: Air VPN
       url: https://airvpn.org/
       img: airvpn.png
-      tfa: No
+      bcc: No
       twitter: airvpn
+
+    - name: Anonine
+      url: https://aanonine.com
+      img: anonine.png
+      bcc: No
+      btc: Yes
+      twitter: anoninevpn
+      facebook: Anonine
 
     - name: Blur
       url: https://www.abine.com/
       img: blur.png
-      tfa: Yes
-      software: Yes
-      doc: https://dnt.abine.com/#help/faq/faq-enabletwoFactor
+      bcc: No
+      twitter: Abine
+      facebook: AbineInc
 
     - name: BolehVPN
       url: https://www.bolehvpn.net/
       img: bolehvpn.png
-      tfa: No
+      bcc: No
       twitter: bolehvpn
 
     - name: CAcert
       url: http://www.cacert.org/
       img: cacert.png
-      tfa: Yes
-      hardware: Yes
-      exceptions:
-          text: "Requires X.509-capable cryptotoken or smartcard."
+      bcc: No
+      twitter: CAcert
+      email_address: support@cacert.org
 
     - name: Cobalt
       url: https://cobalt.io/
       img: cobalt.png
-      tfa: Yes
-      software: Yes
-      doc: https://cobalt.io/blog/new-feature-two-factor-auth/
+      bcc: No
+      twitter: cobalt_io
+      facebook: cobaltsecured
 
     - name: CyberGhost
       url: https://www.cyberghostvpn.com
       img: cyberghost.png
+      bcc: No
       twitter: cyberghost_EN
-      tfa: No
 
     - name: Detectify
       url: https://detectify.com/
       img: detectify.png
+      bcc: No
       twitter: detectify
       facebook: detectify
       email_address: hello@detectify.com
-      tfa: No
 
     - name: DigiCert
       url: https://www.digicert.com/
       img: digicert.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.digicert.com/two-factor-authentication.htm
+      bcc: No
+      twitter: digicert
+      facebook: digicert
 
     - name: Dome9 Security
       url: https://dome9.com/
       img: dome9.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://dome9.com/overview/strong-2-factor-authentication
+      bcc: No
+      twitter: dome9
+      facebook: Dome9Security
 
     - name: Entrust
       img: entrust.png
       url: https://www.entrust.net
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.entrust.net/certificate-services/cms-authentication.htm
+      bcc: No
+      twitter: EntrustDatacard
+      facebook: EntrustDatacard
+
+    - name: ExpresssVPN
+      img: expressvpn.png
+      url: https://www.expressvpn.com
+      bcc: No
+      btc: YEs
+      twitter: expresssvpn
+      facebook: ExpresssVPN
 
     - name: GeoTrust
       url: https://www.geotrust.com/
       img: geotrust.png
-      tfa: Yes
-      email: Yes
+      bcc: No
+      twitter: geotrust
+      facebook: Geotrust
 
     - name: GoGetSSL
       url: https://gogetssl.com/
       img: gogetssl.png
-      tfa: No
+      bcc: No
       twitter: gogetssl
+      facebook: gogetssl
 
     - name: hide.me VPN
       url: https://hide.me/
+      img: hidemevpn.png
+      bcc: No
       twitter: thevpncompany
       facebook: www.hide.me
-      img: hidemevpn.png
-      tfa: No
+
+    - name: IPVanish
+      url: https://www.ipvanish.com
+      img: ipvanish.png
+      bcc: No
+      btc: Yes
+      twitter: ipvanish
+      facebook: ipvanish
+
+    - name: NordVPN
+      url: https://www.nordvpn.com
+      img: nordvpn.png
+      bcc: No
+      btc: Yes
+      twitter: nordvpn
+      facebook: NordVPN
 
     - name: Norton
       url: http://us.norton.com
       img: norton.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      phone: Yes
-      doc: https://login.norton.com/sso/embedded/learn2fa
+      bcc: No
+      twitter: nortononline
+      facebook: Norton
 
     - name: OpenDNS
       url: https://www.opendns.com/
       img: opendns.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "Only available for enterprise accounts."
-      doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
+      bcc: No
+      twitter: opendns
+      facebook: OpenDNS
 
     - name: Prey
       url: https://www.preyproject.com
       img: prey.png
-      tfa: Yes
-      software: Yes
-      doc: http://help.preyproject.com/article/248-how-to-enable-the-two-step-authenticator-for-prey
+      bcc: No
+      twitter: preyproject
+      facebook: preyproject
 
     - name: Private Internet Access
       url: https://www.privateinternetaccess.com
       img: privateinternetaccess.png
-      tfa: No
+      bcc: No
+      btc: Yes
       twitter: piacsm
+
+    - name: PureVPN
+      url: https://www.preyproject.com
+      img: prey.png
+      bcc: No
+      btc: Yes
+      twitter: purevpncom
+      facebook: purevpn
 
     - name: Pwnie Express Pwn Pulse
       url: https://www.pwnieexpress.com/products/pulse-device-detection
       img: pwnieexpress.png
-      tfa: Yes
-      software: Yes
-      exceptions:
-          text: "TFA can be enabled on Pwn Pulse Accounts upon customer request."
+      bcc: No
+      twitter: pwnieexpress
+      facebook: Pwnie.Express.Pentesting
 
     - name: RBLTracker
       url: https://rbltracker.com/
       img: rbltracker.png
-      tfa: Yes
-      software: Yes
-      doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
+      bcc: No
+      twitter: rbltracker
+      facebook: rbltracker
+
+    - name: SaferVPN
+      url: https://www.safervpn.com
+      img: safervpn.png
+      bcc: No
+      btc: Yes
+      twitter: safervpn
+      facebook: SaferVPNCom
+
+    - name: ShadeYou
+      url: https://www.shadeyouvpn.com
+      img: safervpn.png
+      bcc: No
+      btc: Yes
+      twitter: shadeyou_vpn
+      facebook: shadeyouvpn
 
     - name: SSLTrust
       url: https://www.ssltrust.com.au/
       img: ssltrust.png
-      tfa: Yes
-      software: Yes
-      doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
+      bcc: No
+      twitter: ssltrust
+      facebook: ssltrust
 
     - name: ThreatConnect
       url: https://threatconnect.com/
       img: threatconnect.png
-      tfa: Yes
-      software: Yes
-      doc: http://kb.threatconnect.com/customer/en/portal/articles/2214975-configuring-user-settings-and-two-factor-authentication
+      bcc: No
+      twitter: TreatConnect
+      facebook: TreatConnect
 
     - name: ThreatMetrix
       url: https://www.threatmetrix.com/
       img: threatmetrix.png
-      tfa: No
+      bcc: No
       twitter: ThreatMetrix
 
     - name: ThreatSim
       url: https://login.threatsim.com
       img: threatsim.png
-      tfa: Yes
-      sms: Yes
+      bcc: No
+      twitter: WombatSecurity
+      facebook: Wombat-Security-Technologies-272945251150
 
     - name: Tinfoil Security
       url: https://www.tinfoilsecurity.com
       img: tinfoil.png
-      tfa: Yes
-      software: Yes
-      doc: http://support.tinfoilsecurity.com/customer/portal/articles/1559364-do-you-support-two-factor-authentication-how-do-i-set-it-up-
+      bcc: No
+      twitter: tinfoilsecurity
+      facebook: tinfoilsecurity
 
     - name: TorGuard
       url: https://torguard.net
       img: torguard.png
-      tfa: Yes
-      software: Yes
+      bcc: No
+      btc: Yes
+      twitter: TorGuard
+      facebook: TorGuard
 
     - name: TunnelBear
       url: https://tunnelbear.com/
       img: tunnelbear.png
-      tfa: No
+      bcc: No
       twitter: theTunnelBear
       facebook: tunnelbear
 
@@ -186,17 +239,17 @@ websites:
       url: https://vpnunlimitedapp.com/
       img: vpnunlimited.png
       twitter: vpnunlimited
-      tfa: No
+      bcc: No
 
     - name: Webroot
       url: http://www.webroot.com
       img: webroot.png
       twitter: Webroot
-      tfa: No
+      bcc: No
 
     - name: Windscribe
       url: https://windscribe.com
       img: windscribe.png
-      tfa: No
+      bcc: No
       twitter: windscribecom
       facebook: windscribe
