@@ -2,225 +2,215 @@ websites:
     - name: Amazon Web Services
       url: https://aws.amazon.com
       img: aws.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://aws.amazon.com/iam/details/mfa/
+      bcc: No
+      twitter: brightbox
+      facebook: brightbox
 
     - name: appFog
       url: https://www.ctl.io/appfog/
-      twitter: appfog
       img: appfog.png
-      tfa: No
+      bcc: No
+      twitter: appfog
+      facebook: CenturyLinkCloud
+
+    - name: bithost.io
+      url: https://www.ctl.io/appfog/
+      img: appfog.png
+      bcc: No
+      twitter: bithostio
+      email_address: support@bithost.io
 
     - name: Brightbox
       url: https://www.brightbox.com/
+      img: brightbox.png
+      bcc: No
       twitter: brightbox
       facebook: brightbox
       email_address: support@brightbox.com
-      img: brightbox.png
-      tfa: No
 
     - name: Cloud 66
       url: https://www.cloud66.com
       img: cloud66.png
-      tfa: Yes
-      software: Yes
-      doc: http://blog.cloud66.com/two-factor-authentication-for-your-accounts/
+      bcc: No
+      twitter: brightbox
+      facebook: brightbox
 
     - name: cloud.ca
       url: https://cloud.ca
       img: cloudca.png
-      tfa: Yes
-      software: Yes
-      doc: https://cloud.ca/two-factor-authentication-is-now-available-on-cloud-ca/
+      bcc: No
+      twitter: cloud_dot_ca
+      email_address: info@cloud.ca
 
     - name: Datapipe
       url: https://www.datapipe.com/
       img: datapipe.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.datapipe.com/security_compliance/managed_security/two_factor_authentication/
+      bcc: No
+      twitter: datapipe
+      facebook: datapipe
 
     - name: DigitalOcean
       url: https://www.digitalocean.com/
       img: digitalocean.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
+      bcc: No
+      twitter: digitalocean
+      facebook: DigitalOceanCloudHosting
 
     - name: EngineYard
       url: https://www.engineyard.com
       img: engineyard.png
-      tfa: Yes
-      software: Yes
-      doc: https://blog.engineyard.com/2015/engine-yards-two-factor-authentication
+      bcc: No
+      twitter: engineyard
 
     - name: fortrabbit
       url: https://www.fortrabbit.com/
       img: fortrabbit.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.fortrabbit.com/security#toc-two-factor-authentication
+      bcc: No
+      twitter: fortrabbit
+      facebook: fortrabbit
 
     - name: Google Cloud Platform
       url: https://cloud.google.com
       img: googlecloud.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      phone: Yes
-      hardware: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+      bcc: No
+      twitter: googlecloud
+      facebook: GoogleCloud
 
     - name: Heroku
       url: https://www.heroku.com/
       img: heroku.png
-      tfa: Yes
-      software: Yes
-      doc: https://devcenter.heroku.com/articles/two-factor-authentication
+      bcc: No
+      twitter: heroku
+      facebook: heroku
 
     - name: Hostiso
       url: https://hostiso.com/
       img: hostiso.png
-      tfa: Yes
-      software: Yes
-      exceptions:
-          text: "While both the main client area and the shared hosting panel support 2FA, each system is separate and requires its own setup."
+      bcc: No
+      twitter: hostiso
+      email_address: marketing@hostiso.com
 
     - name: Hyper.sh
       url: https://www.hyper.sh
       img: hypersh.png
-      tfa: No
+      bcc: No
       twitter: hyper_sh
       email_address: contact@hyper.sh
 
     - name: IBM BlueMix
       url: https://bluemix.net
       img: ibmbluemix.png
-      tfa: No
+      bcc: No
       twitter: IBMBluemix
       facebook: ibmbluemix
 
     - name: Joyent
       url: https://www.joyent.com/
       img: joyent.png
-      tfa: Yes
-      software: Yes
-      doc: https://docs.joyent.com/public-cloud/getting-started/2fa
+      bcc: No
+      twitter: joyent
+      facebook: joyentcloud
 
     - name: LeaseWeb
       url: https://www.leaseweb.com/
       img: leaseweb.png
-      tfa: Yes
-      sms: Yes
-      doc: https://kb.leaseweb.com/display/KB/Two+factor+authentication%3A+Cyber+Security
+      bcc: No
+      twitter: leaseweb
+      facebook: leaseweb
 
     - name: Linode
       url: https://www.linode.com/
       img: linode.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.linode.com/docs/security/linode-manager-security-controls
+      bcc: No
+      twitter: linode
+      facebook: linode
 
     - name: Microsoft Azure
       url: https://azure.microsoft.com/
       img: microsoftazure.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication/
+      bcc: No
+      twitter: azure
+      facebook: microsoftazure
 
     - name: mLab
       url: https://mlab.com/
       img: mlab.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: http://docs.mlab.com/security/#two-factor-authentication
+      bcc: No
+      twitter: mlab
+      facebook: MongoLab
 
     - name: OpenShift
       url: https://www.openshift.com/
+      img: openshift.png
+      bcc: No
       twitter: openshift
       facebook: openshift
-      img: openshift.png
-      tfa: No
 
     - name: Packet
       url: https://www.packet.net/
       img: packet.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.packet.net/faq/onboarding/portal
+      bcc: No
+      twitter: packethost
+      facebook: getpacket
 
     - name: ProfitBricks
       url: https://www.profitbricks.de
       img: profitbricks.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.profitbricks.com/help/2-Factor_Authentication 
+      bcc: No
+      twitter: ProfitBricksDE
+      facebook: ProfitBricksDE
 
     - name: Rackspace
       url: https://www.rackspace.com/
       img: rackspace.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.rackspace.com/how-to/multi-factor-authentication-from-the-cloud-control-panel/
+      bcc: No
+      twitter: rackspace
+      facebook: Rackspace
 
     - name: RightScale
       url: https://www.rightscale.com/
       img: rightscale.png
-      tfa: No
+      bcc: No
       twitter: RightScale
       facebook: RightScale
 
     - name: Scaleway
       url: https://www.scaleway.com
       img: scaleway.png
-      tfa: Yes
-      software: Yes
-      doc: https://blog.online.net/2017/06/13/introducing-two-factor-authentication-on-scaleway/
+      bcc: No
+      twitter: scaleway
+      facebook: scaleway
 
     - name: Scalr
       url: https://www.scalr.com
       img: scalr.png
-      tfa: Yes
-      software: Yes
-      doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
+      bcc: No
+      twitter: scalr
+      facebook: Scalr
 
     - name: SingleHop
       url: https://www.singlehop.com
       img: singlehop.png
-      tfa: Yes
-      software: Yes
-      doc: http://library.singlehop.com/assets_project_development/Two_Factor_Instructions.pdf
+      bcc: No
+      twitter: singlehop
+      facebook: SingleHop
 
     - name: Tilaa
       url: https://www.tilaa.com
       img: tilaa.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-          text: "SMS-capable phone required."
-      doc: http://blog.tilaa.com/post/128110588046/two-factor-authentication-and-session-management
+      bcc: No
+      twitter: tilaavps
+      facebook: tilaavps
 
     - name: Userify
       url: https://userify.com
       img: userify.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://userify.com/docs/multifactor-authentication/
+      bcc: No
+      twitter: userify
 
     - name: Vultr
       url: https://www.vultr.com
       img: vultr.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.vultr.com/docs/using-two-factor-authentication-to-login-to-vultr-control-panel
+      bcc: No
+      twitter: vultr
+      facebook: Vultr
