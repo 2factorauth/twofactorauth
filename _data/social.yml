@@ -1,268 +1,259 @@
 websites:
     - name: about.me
       url: https://about.me
-      twitter: aboutdotme
       img: aboutme.png
-      tfa: No
+      bcc: No
+      twitter: aboutdotme
 
     - name: Badoo
       url: https://badoo.com
       img: badoo.png
-      tfa: No
+      bcc: No
       twitter: Badoo
 
     - name: Bitly
       url: https://bitly.com/
       img: bitly.png
-      tfa: Yes
-      sms: Yes
-      doc: https://support.bitly.com/hc/en-us/articles/230650187-What-is-2-step-verification-
+      bcc: No
+      twitter: bitly
+      facebook: bitly
 
     - name: Buffer
       url: https://bufferapp.com
       img: bufferapp.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://blog.bufferapp.com/introducing-the-safest-social-media-publishing-on-the-web
+      bcc: No
+      twitter: buffer
 
     - name: DeviantArt
       url: https://www.deviantart.com
-      twitter: deviantart
       img: deviantart.png
-      tfa: No
+      bcc: No
+      twitter: deviantart
+      facebook: deviantart
 
     - name: Ello
       url: https://ello.co
+      img: ello.png
+      bcc: No
       twitter: ellohype
       facebook: ellohype
       email_address: suggestions@ello.co
-      img: ello.png
-      tfa: No
 
     - name: Facebook
       url: https://facebook.com
       img: facebook.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-          text: "SMS required for 2FA. 1 account per phone number."
-      doc: https://www.facebook.com/help/148233965247823
+      bcc: No
+      twitter: facebook
+      facebook: Facebook
 
     - name: Flipboard
       url: https://flipboard.com
       img: flipboard.png
+      bcc: No
       twitter: FlipboardCS
-      tfa: No
 
     - name: Foursquare
       url: https://foursquare.com
-      twitter: foursquare
       img: foursquare.png
-      tfa: No
+      bcc: No
+      twitter: foursquare
 
     - name: Goodreads
       url: https://www.goodreads.com
-      twitter: goodreads
       img: goodreads.png
-      tfa: No
+      bcc: No
+      twitter: goodreads
 
     - name: Google+
       url: https://plus.google.com
       img: g+.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+      bcc: No
+      twitter: GooglePlus
+      facebook: GooglePlus
 
     - name: HootSuite
       url: https://hootsuite.com
       img: hootsuite.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.hootsuite.com/entries/22527304-Managing-Google-Authenticator
+      bcc: No
+      twitter: hootsuite
+      facebook: hootsuite
 
     - name: ICQ
       url: https://icq.com/
+      img: icq.png
+      bcc: No
       twitter: ICQ
       facebook: ICQ
-      img: icq.png
-      tfa: No
 
     - name: Imgur
       url: https://imgur.com
-      twitter: imgur
       img: imgur.png
-      tfa: No
+      bcc: No
+      twitter: imgur
 
     - name: Instagram
       url: https://www.instagram.com
       img: instagram.png
-      tfa: Yes
-      sms: Yes
-      doc: https://help.instagram.com/566810106808145
+      bcc: No
+      twitter: Instagram
+      facebook: Instagram
 
     - name: LinkedIn
       url: https://linkedin.com
       img: linkedin.png
-      tfa: Yes
-      sms: Yes
-      doc: https://help.linkedin.com/app/answers/detail/a_id/531/related/1
+      bcc: No
+      twitter: LinkedIn
+      facebook: LinkedIn
 
     - name: LiveJournal
       url: http://www.livejournal.com
-      twitter: LiveJournal
       img: livejournal.png
-      tfa: No
+      bcc: No
+      twitter: LiveJournal
 
     - name: Lobsters
       url: https://lobste.rs/
       img: lobsters.png
-      tfa: Yes
-      software: Yes
-      doc: https://lobste.rs/s/1cyltz/two_factor_authentication_now_available
+      bcc: No
+      twitter: lobsters
 
     - name: Medium
       url: https://medium.com
       img: medium.png
-      tfa: Yes
-      email: Yes
-      exceptions:
-        text: "Medium doesn't use passwords, instead emails a link to user to login"
+      bcc: No
+      twitter: Medium
+      facebook: Medium
 
     - name: Meetup
       url: https://www.meetup.com
-      twitter: meetup_support
       img: meetup.png
-      tfa: No
+      bcc: No
+      twitter: meetup_support
 
     - name: Minds
       url: https://www.minds.com/
       img: minds.png
-      tfa: Yes
-      sms: Yes
+      bcc: No
+      twitter: minds
+      email_address: info@minds.com
 
     - name: Newgrounds
       url: https://www.newgrounds.com/
-      twitter: Newgrounds
-      email_address: support@newgrounds.com
-      facebook: newgrounds
       img: newgrounds.png
-      tfa: No
+      bcc: No
+      twitter: Newgrounds
+      facebook: newgrounds
+      email_address: support@newgrounds.com
 
     - name: Nextdoor
       url: https://nextdoor.com
-      twitter: Nextdoor
       img: nextdoor.png
-      tfa: No
+      bcc: No
+      twitter: Nextdoor
 
     - name: OkCupid
       url: https://www.okcupid.com/
+      img: okcupid.png
+      bcc: No
       twitter: okcupid
       facebook: okcupid
-      img: okcupid.png
-      tfa: No
+      exceptions:
+          text: "OkCupid accepted Bitcoin until March 2017."
 
     - name: Pinterest
       url: https://pinterest.com
       img: pinterest.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.pinterest.com/en/articles/two-factor-authentication
+      bcc: No
+      twitter: Pinterest
+      facebook: Pinterest
 
     - name: Quora
       url: https://www.quora.com
       img: quora.png
-      tfa: No
+      bcc: No
       twitter: quora
 
     - name: Reddit
       url: https://www.reddit.com/
-      twitter: reddit
       img: reddit.png
-      tfa: No
+      bcc: No
+      twitter: reddit
 
     - name: Snapchat
       url: https://www.snapchat.com/
       img: snapchat.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.snapchat.com/ca/login-verification
+      bcc: No
+      twitter: SnapChat
+      facebook: SnapChat
 
     - name: Stack Exchange
       url: https://stackexchange.com/
-      twitter: StackExchange
       img: stack_exchange.png
-      tfa: No
+      bcc: No
+      twitter: StackExchange
 
     - name: Tumblr
       url: https://www.tumblr.com/
       img: tumblr.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://www.tumblr.com/docs/en/two_factor_auth
+      bcc: No
+      twitter: tumblr
+      facebook: Tumblr
 
     - name: Twitter
       url: https://twitter.com
       img: twitter.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-          text: "SMS only available on select providers. SMS required for 2FA. 10 accounts per phone number, 1 phone number per account."
-      software: Yes
-      doc: https://support.twitter.com/articles/20170388
+      bcc: No
+      twitter: twitter
+      facebook: Twitter
 
     - name: VanillaForums.com
       url: https://vanillaforums.com
       img: vanilla.png
-      tfa: No
+      bcc: No
       twitter: vanilla
 
     - name: Viadeo
       url: http://www.viadeo.com
       img: viadeo.png
-      tfa: No
+      bcc: No
       twitter: Viadeo
 
     - name: VK
       url: https://vk.com
       img: vk.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://vk.com/page-59800369_47885415
+      bcc: No
+      email_address: partners@corp.vk.com
+
 
     - name: Weibo
       url: http://www.weibo.com
       img: weibo.png
-      tfa: No
+      bcc: No
+      twitter: ChineseWeibo
 
     - name: WordPress.com
       url: https://wordpress.com
       img: wordpress.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "SMS-capable phone required."
-      doc: https://en.support.wordpress.com/security/two-step-authentication/
+      bcc: No
+      twitter: 
+      facebook: 
 
     - name: XING
       url: https://www.xing.com
       img: xing.png
-      tfa: No
+      bcc: No
       twitter: XING_com
+
+    - name: Yours
+      url: https://www.yours.org
+      img: yours.png
+      bcc: Yes
+      btc: No
+      twitter: YoursOrg
 
     - name: Zocle
       url: https://zocle.com/
       img: zocle.png
-      tfa: Yes
-      sms: Yes
-      doc: http://university.zocle.com/2015/03/30/new-security-feature-two-step-verification/
+      bcc: No
+      twitter: zocle
+      facebook: zocleapp
