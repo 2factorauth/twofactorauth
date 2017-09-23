@@ -9,7 +9,7 @@ $(document).ready(function () {
   var primaryElevator = new Elevator({
     element: document.querySelector('.fab button:nth-child(2)'),
     targetElement: document.querySelector('#search-wrapper'),
-    verticalPadding: 70,  // in pixels
+    verticalPadding: 90,  // in pixels
     duration: 420, // milliseconds
     endCallback: function() {
       $('#search-wrapper input').focus();
@@ -29,6 +29,15 @@ $(document).ready(function () {
     $('.category').show();
     $('table').show();
     $('#search-wrapper input').focus();
+  });
+
+
+  $('#ama-merchant').click(function () {
+    $('.ui.modal.ama-merchant').modal('toggle');
+  });
+
+  $('#ama-customer').click(function () {
+    $('.ui.modal.ama-customer').modal('toggle');
   });
 
   // Unveil images 50px before they appear

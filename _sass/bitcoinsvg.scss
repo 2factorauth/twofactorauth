@@ -17,10 +17,6 @@
   &:hover {
     animation: roll2btc 1s ease-in-out;
     animation-fill-mode: forwards;
-
-    .path {
-      stroke: none;
-    }
   }
 
   .path {
@@ -33,9 +29,13 @@
     animation-delay: 1s;
     fill: #fff;
   }
+
+  .coindash {
+    animation: dash 2s linear;
+  }
 }
 
-.tbl-bitcoin-cash-logo, .tbl-bitcoin-logo {
+.tbl-bitcoin-cash-logo, .tbl-bitcoin-logo, .waas-bitcoin-logo {
   width: 32px;
   height: 32px;
   border-radius: 32px;
@@ -45,10 +45,13 @@
   background: $primary-color;
 }
 
-.tbl-bitcoin-logo {
-  background: orange;
+.green-coin {
+  background: $primary-color;
 }
 
+.orange-coin {
+  background: orange;
+}
 
 @keyframes dash {
   0% {
@@ -85,7 +88,7 @@
     background: orange;
   }
   100%{
-    transform: rotate(0deg);
+    transform: rotate(-28deg);
     background: $primary-color;
   }
 }
