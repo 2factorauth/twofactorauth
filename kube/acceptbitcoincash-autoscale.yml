@@ -1,0 +1,13 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: acceptbitcoincash
+  namespace: default
+spec:
+  scaleTargetRef:
+    apiVersion: extensions/v1beta1
+    kind: Deployment
+    name: acceptbitcoincash
+  minReplicas: 2
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 90

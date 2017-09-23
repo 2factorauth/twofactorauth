@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: acceptbitcoincash-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    kubernetes.io/ingress.class: "gce"
+spec:
+  tls:
+  - hosts:
+    - acceptbitcoin.cash
+    secretName: acceptbitcoincash-tls
+  backend:
+    serviceName: acceptbitcoincash
+    servicePort: 90
+  rules:
+  - host: acceptbitcoin.cash
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: acceptbitcoincash
+          servicePort: 90

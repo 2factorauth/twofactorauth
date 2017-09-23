@@ -40,6 +40,18 @@ bundle exec jekyll serve
 
 The acceptBitcoin.cash website should then be accessible from `http://localhost:4000`.
 
+## Docker
+
+acceptBitcoin.cash also includes a Docker image for easy deployment. You can build and run the Docker image using the following commands.
+
+```
+cd ~/acceptbitcoincash
+docker build -t acceptbitcoincash .
+docker run -p 4000:4000 acceptbitcoincash
+```
+
+The acceptBitcoin.cash website should then be accessible from `http://localhost:4000`.
+
 ## License
 
 This code is distributed under the MIT license. For more info, read the

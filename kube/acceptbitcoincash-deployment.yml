@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  namespace: default
+  labels:
+    service: acceptbitcoincash
+  name: acceptbitcoincash
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        service: acceptbitcoincash
+    spec:
+      containers:
+      - image: zquestz/acceptbitcoincash
+        name: acceptbitcoincash
+        ports:
+        - containerPort: 4000
+        resources:
+          requests:
+            memory: "64Mi"
+      restartPolicy: Always
