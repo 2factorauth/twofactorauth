@@ -13,7 +13,7 @@ spec:
         service: acceptbitcoincash
     spec:
       containers:
-      - image: zquestz/acceptbitcoincash
+      - image: acceptbitcoincash/acceptbitcoincash
         name: acceptbitcoincash
         ports:
         - containerPort: 4000
