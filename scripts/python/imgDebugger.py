@@ -120,6 +120,7 @@ def countFile(dir, filename):
                     
                 nameLine = line.replace("- name:", "")
                 nameLine = nameLine.replace("\n", "")
+                nameLine = nameLine.replace("\r", "")
                 nameLine = nameLine.replace(" ", "")
                 nameLine = nameLine.replace("&amp", "&")
                 #check if the previous file has been processed, this accounts for if the BTC support tag does not exist
@@ -138,10 +139,10 @@ def countFile(dir, filename):
                 if "png" in line or "jpg" in line or "bmp" in line or "gif" in line:
                     imgLine = line.replace("img:", "")
                     imgLine = imgLine.replace("\n", "")
+                    imgLine = imgLine.replace("\r", "")
                     imgLine = imgLine.replace(" ", "")
                     #print(imgLine)
                     logMessage = brokenPathList[index] + " " + nameLine + ", " + imgLine + " | "
-
                     #build path
                     fileTitle = filename.replace(".yml", "")
                     subPath = os.path.join(imgBaseDir, fileTitle)
