@@ -38,6 +38,7 @@ def countFile(dir, filename):
                     
                     nameLine = line.replace("- name:", "")
                     nameLine = nameLine.replace("\n", "")
+                    nameLine = nameLine.replace("\r", "")
                     nameLine = nameLine.replace(" ", "")
                     nameLine = nameLine.replace("&amp", "&")
                     missingList[index] = missingList[index] + " " + nameLine + ","
