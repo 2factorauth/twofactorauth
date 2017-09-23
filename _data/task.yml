@@ -3,55 +3,71 @@ websites:
       url: https://www.activecollab.com/
       twitter: activecollab
       img: activecollab.png
-      tfa: No
+      bcc: No
+      btc: No
+      othercrypto: No
 
     - name: Any.do
       url: https://web.any.do/
       img: anydo.png
-      tfa: No
+      bcc: No
+      btc: No
+      othercrypto: No
       twitter: AnyDO
       facebook: Any.do
 
     - name: Asana
       url: https://www.asana.com
       img: asana.png
-      tfa: No
+      bcc: No
+      btc: No
+      othercrypto: No
       twitter: asana
 
     - name: Azendoo
       url: https://app.azendoo.com
       img: azendoo.png
-      tfa: No
+      bcc: No
+      btc: No
+      othercrypto: No
       twitter: Azendoo
 
     - name: fruux
       url: https://fruux.com
       img: fruux.png
       twitter: fruux
-      tfa: No
+      bcc: No
+      btc: No
+      othercrypto: No
 
     - name: Todoist
       url: https://todoist.com
       twitter: todoist
       img: todoist.png
-      tfa: No
+      bcc: No
+      btc: No
+      othercrypto: No
 
     - name: Toodledo
       url: https://www.toodledo.com
       img: toodledo.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.toodledo.com/info/help.php#168
+      bcc: No
+      btc: No
+      othercrypto: No
+      exception:
+        text: "Toodledo used to accept Bitcoin as payment."
 
     - name: Trello
       url: https://trello.com
       img: trello.png
-      tfa: Yes
-      sms: Yes
-      doc: http://help.trello.com/article/993-enabling-two-factor-authentication-for-your-trello-account
+      bcc: No
+      btc: No
+      othercrypto: No
 
     - name: Wunderlist
       url: https://www.wunderlist.com
       twitter: Wunderlist
       img: wunderlist.png
-      tfa: No
+      bcc: No
+      btc: No
+      othercrypto: No
