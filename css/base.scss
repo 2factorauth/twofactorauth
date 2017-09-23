@@ -139,10 +139,16 @@ p {
 //    padding: 15px 0 10px;
   }
 
-  .sub.header {
-    margin: 10px auto;
-    padding: 15px 0;
-    max-width: 81%;
+  .title-wrap {
+    .sub.header {
+      margin: 10px auto;
+      padding: 15px 0;
+      max-width: 81%;
+
+      &:first-of-type {
+        padding: 15px 20px;
+      }
+    }
   }
 
   .title-footer {
