@@ -1,5 +1,6 @@
 import os
 import datetime
+import codecs
 
 totalSites = 0
 totalBCC = 0
@@ -17,7 +18,7 @@ def countFile(dir, filename):
     path = os.path.join(dir, filename)
     #print("Testing site: " + path)
     if ".yml" in path:
-        file = open(path, 'r')
+        file = codecs.open(path, 'r', "utf-8")
         processed = True
         prevName = ''
 
@@ -57,7 +58,6 @@ def countFile(dir, filename):
 
 for file in filename:
     #print("Testing path: " + path)
-
     countFile(dirPath, file)
 
 #create log
@@ -69,13 +69,13 @@ try:
 except Exception as e:
 	pass
 
-output = open(os.path.join(outputPath, "missingBCC_log.csv"), "a")
+output = codecs.open(os.path.join(outputPath, "missingBCC_log.csv"), "a", "utf-8")
 
 output.write(str(timestamp) + ", " + str(failedPaths) + ", " + str(missingEntries) + "\n")
 
 output.close()
 
-output = open(os.path.join(".","output","missingBCC.txt"), "w+")
+output = codecs.open(os.path.join(".","output","missingBCC.txt"), "w+", "utf-8")
 
 for string in missingList:
     #print(string + "\n")
