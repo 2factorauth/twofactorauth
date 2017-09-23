@@ -95,6 +95,8 @@ wallets:
       btc: Yes
       othercrypto: Yes
       doc: https://www.keepkey.com/2017/07/31/bitcoin-cash-keepkey/
+      exceptions:
+          text: "Wallet currently in beta testing."
 
     - name: Ledger
       url: https://www.ledgerwallet.com/
