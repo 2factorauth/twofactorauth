@@ -1,5 +1,13 @@
 // Palette used: http://paletton.com/#uid=52P0u0kw0o0n4v3uwucCwj-Ltee
 
+$primary-color: #22be34;
+$primary-color-light: #DAECD4;
+
+$link-color: #299595; //#044
+$link-color-hover: #A291FB; //#299595
+$link-color-active: #7258fd;
+$link-color-light-alpha: rgba(241, 238, 255, 0.75);
+
 div,
 .ui.table td {
   &.positive {

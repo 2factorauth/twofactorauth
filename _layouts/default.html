@@ -25,22 +25,113 @@
 </head>
 
 <body>
-{{ content }}
 
-<div class="ui divider"></div>
-
-<div class="footer ui basic center aligned segment">
-  See an issue or want to add to this website? Fork it or create an issue on
-  <a href="{{ site.repo }}">GitHub</a>.
+<div class="fab">
+  <button class="ui massive circular icon button" data-tooltip="Jump to top" data-position="left center" data-inverted="">
+    <i class="angle double up icon"></i>
+  </button>
+  <button class="ui massive circular icon button" data-tooltip="Start a search" data-position="left center" data-inverted="">
+    <i class="search icon"></i>
+  </button>
 </div>
 
-<div class="ui divider"></div>
+{{ content }}
 
-<div class="footer ui basic center aligned segment">
-  Made with love
-  <i class="heart circular small icon"></i>
-  by topolino (forked from
-  <a href="http://joshldavis.com">Josh Davis</a>' work).
+<div class="subfooter ui center aligned segment">
+  <div class="inner">
+    <h3>More information for...</h3>
+
+    <div class="ui buttons">
+      <button id="ama-merchant" class="ui huge violet inverted button">Merchants</button>
+      <div class="or"></div>
+      <button id="ama-customer" class="ui huge green inverted button">Customers</button>
+    </div>
+
+    <div class="ui basic modal ama-merchant">
+      <div class="ui large icon header">
+        <i class="archive icon"></i>
+        Assets
+      </div>
+
+      <div class="asset-intro">
+        <p>Here you'll find some suggested images that you can use, or feel free to create your own, as <em>Bitcoin Cash is decentralized</em>.</p>
+        <p>To the right is a list of collections or albums, each providing many different high quality formats. The images below were sourced from these collections.</p>
+        <p>You can <b>right-click/tap+hold</b> on an image to save (they have a height >= 256px). <b>Left-click/tap</b></a> to open a link to the original high-resolution source.</p>
+      </div>
+
+      <div class="ui relaxed divided inverted list left aligned segment artwork-list">
+        <div class="item">
+          <i class="large github middle aligned icon"></i>
+          <div class="content">
+            <a class="header" href="https://github.com/theantnest/Bitcoin-Cash-Green-Art">Bitcoin-Cash-Green-Art</a>
+            <div class="description">by theantnest</div>
+          </div>
+        </div>
+        <div class="item">
+          <i class="large folder open middle aligned icon"></i>
+          <div class="content">
+            <a class="header" href="https://drive.google.com/drive/folders/0B2B56ulU1D8YbWpQVUhKUXJVT1U">bitcoin cash branding files</a>
+            <div class="description">by Mick Bruce</div>
+          </div>
+        </div>
+        <div class="item">
+          <i class="large send middle aligned icon"></i>
+          <div class="content">
+            <a class="header" href="https://github.com/acceptbitcoincash/acceptbitcoincash/issues">Submit your own collection</a>
+            <div class="description">by creating an issue, or a pull request on our repo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="image content">
+        <div class="assets">
+          <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/Banners/BCC%20Banner%202%20RGBA.png"><img class="image" src="/img/bitcoin_cash-logo-357854.png"></a>
+          <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/BCC%20Logo%20(Text)/BCC%20Logo%20Text%20RGBA.png"><img class="image" src="/img/bitcoin_cash-logo-128359.png"></a>
+          <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/BCC%20Logo%20(No%20Text)/BCC%20Logo%20Green.png"><img class="image" src="/img/bitcoin_cash-logo-901274.png"></a>
+          <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/BCC%20Accepted%20Here%20Sticker/BCC%20Accepted%20Here%20Green%20RGBA.png"><img class="image" src="/img/bitcoin_cash-logo-923741.png"></a>
+          <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/Banners/BCC%20Banner%201%20RGBA.png"><img class="image" src="/img/bitcoin_cash-logo-696784.png"></a>
+          <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/BCC%20Round%20Icon/BCC%20Round%20Icon%20RGBA.png"><img class="image" src="/img/bitcoin_cash-logo-856493.png"></a>
+          <a href="https://drive.google.com/drive/folders/0B2B56ulU1D8YS3NJT0tuRkZMMVE"><img class="image" src="/img/bitcoin_cash-logo-612543.png"></a>
+          <a href="https://drive.google.com/drive/folders/0B2B56ulU1D8YenN3bTZfa2RFbXM"><img class="image" src="/img/bitcoin_cash-logo-124125.png"></a>
+          <a href="https://drive.google.com/drive/folders/0B2B56ulU1D8Ybm1XX0FyNzlSVDA"><img class="image" src="/img/bitcoin_cash-logo-734653.png"></a>
+          <a href="https://drive.google.com/drive/folders/0B2B56ulU1D8YdUhXc1dYVXY2N1U"><img class="image" src="/img/bitcoin_cash-logo-623542.png"></a>
+          <a href="https://drive.google.com/drive/folders/0B2B56ulU1D8YeWZCRXdpZHhlRFU"><img class="image" src="/img/bitcoin_cash-logo-908213.png"></a>
+          <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/Paper%20Wallet/BCC%20Paper%20Money.png"><img class="image" src="/img/bitcoin_cash-paper_wallet-329047.png"></a>
+          <a href="https://drive.google.com/drive/folders/0B2B56ulU1D8YZlRFdHoyMGNNMms"><img class="image" src="/img/bitcoin_cash-paper_wallet-219875.jpg"></a>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="ui red basic cancel inverted button">
+          <i class="remove icon"></i>
+          Close
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ui basic modal ama-customer">
+      <div class="ui icon header">
+        <i class="archive icon"></i>
+        Customer Resources
+      </div>
+      <p>Here there will be more information for customers and hodlers of Bitcoin Cash.</p>
+      <div class="actions">
+        <div class="ui red basic cancel inverted button">
+          <i class="remove icon"></i>
+          Close
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+<div class="footer ui center aligned segment">
+  See an issue or want to add to this website? Fork it or create an issue on <i class="github icon"></i><a href="{{ site.repo }}">GitHub</a>.
+  <br><br>
+  Made with <i class="red heart small icon"></i> by <a href="https://github.com/acceptbitcoincash">the acceptBitcoin.Cash organization</a>.<br><small>(forked from <a href="https://github.com/2factorauth/twofactorauth">the twofactorauth.org project</a>).</small>
 </div>
 
 <!-- 3rd Party Libraries -->

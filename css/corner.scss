@@ -1,8 +1,10 @@
 ---
 ---
 
+@import 'colors';
+
 .github-corner svg {
-  fill:#009900;
+  fill: $link-color-active; //#009900;
   color:#FFFFFF;
   position: absolute;
   top: 0;

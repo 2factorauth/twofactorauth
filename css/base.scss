@@ -4,9 +4,6 @@
 @import 'mixins';
 @import 'colors';
 
-$primary-color: #090;
-$primary-color-light: #DAECD4;
-
 html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td {
   margin: 0;
   padding: 0;
@@ -27,17 +24,17 @@ img {
 }
 
 a {
-  color: #044;
+  color: $link-color;
   text-decoration: none;
   @include transition(all, ease, 300ms);
 
   &:hover {
-    color: #299595;
+    color: $link-color-hover;
   }
 }
 
 body {
-  font-family: Ubuntu, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Ubuntu, Lato, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #505050;
   line-height: 22px;
   background: url(../img/pcb-subtle-green.png) repeat;
@@ -77,6 +74,7 @@ p {
 
     &:nth-child(2) {
       background-color: #044 !important;
+      background-color: $link-color-active !important;
       position: absolute;
       top: -64px;
       left: 0;
@@ -174,7 +172,7 @@ p {
   padding: 10px 0;
   position: relative;
   text-align: left;
-  background: $primary-color-light;
+  background: $link-color-light-alpha;
 
   label {
     left: 88px;
@@ -183,6 +181,7 @@ p {
 
     i {
       color: $primary-color;
+      color: $link-color-hover;
       display: inline-block;
       font-size: inherit;
       text-rendering: auto;
@@ -221,7 +220,7 @@ p {
 
 input[type=search] {
   @include transition(all, ease, 300ms);
-  border: 3px $primary-color-light solid;
+  border: 3px $link-color-hover solid;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 10px;
@@ -246,12 +245,27 @@ input[type=search] {
   text-align: center;
 }
 
+.ui.dimmer {
+  background-color: rgba(0, 0, 0, 0.93);
+  z-index: 10001;
+}
+
 .ui.header {
   color: inherit;
 }
 
+.ui.grid.container {
+  background: $link-color-light-alpha;
+  border: 3px solid $primary-color-light;
+  border-radius: 7px;
+}
+
 .ui.grid > .row {
   padding: 0;
+}
+
+.ui.button {
+  font-family: Ubuntu, Lato, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .desktop-table {
@@ -308,8 +322,9 @@ input[type=search] {
 
 .ui.table.content-wrapper {
   background: #fff;
-  border-radius: 10px !important;
+  border-radius: 0 !important;
   border: 3px solid $primary-color-light;
+  border-width: 3px 0;
   //box-shadow: 2px 5px 20px rgba(80, 80, 80, 0.2), -2px -1px 20px rgba(80, 80, 80, 0.2);
 }
 
@@ -488,6 +503,108 @@ span.progress {
   padding-left: 10%;
 }
 
+.ui.subfooter {
+  background: rgba(0,0,0,0.88);
+  color: #f0f0f0;
+  margin: 4em 0 0;
+  padding: 3em 0 0;
+  border-top: 3px solid $primary-color-light;
+  border-radius: 0;
+
+  .inner {
+    width: 80%;
+    margin: 0 auto 3em;
+
+    h3 {
+      font-weight: 300;
+      letter-spacing: -1px;
+      font-size: 2.3rem;
+      margin-bottom: 1em;
+    }
+
+    p {
+      text-align: left;
+
+      &.satoshi-tag {
+        margin-bottom: 4em;
+        color: #656565;
+        font-weight: 500;
+        font-size: 0.7rem;
+        font-style: italic;
+        text-align: center;
+      }
+    }
+
+    a {
+      color: #aaa;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .ui.buttons .or {
+       top: 10px;
+    }
+  }
+}
+
+/*
+#ama-merchant {
+  background-color: #BF5700;
+}
+
+#ama-customer {
+  background-color: #007373;
+}
+*/
+
+.ama-merchant .assets {
+  img {
+    position: relative;
+    display: inline-block;
+    background: url(/img/alpha-image-bg.gif) repeat #f0f0f0;
+    padding: 1rem;
+    max-height: 100px;
+    max-width: 100%;
+    width: auto;
+    @include transition(all, ease, 420ms);
+
+    &:hover {
+      background: $primary-color-light;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      -moz-transform: translateX(-2px) translateY(-2px);
+      -webkit-transform: translateX(-2px) translateY(-2px);
+      -o-transform: translateX(-2px) translateY(-2px);
+      -ms-transform: translateX(-2px) translateY(-2px);
+      transform: translateX(-2px) translateY(-2px);
+    }
+  }
+}
+
+.asset-intro {
+  float: left;
+  width: 60%;
+  margin-right: 10%;
+}
+
+.ui.list.artwork-list {
+  >.item a.header, >.item a.header {
+    //color: $link-color !important;
+
+    &:hover {
+      color: $link-color-hover !important;
+    }
+  }
+}
+
+.ui.footer {
+  background: rgba(255,255,255,0.7);
+  margin: 0;
+  border-top: 3px solid #daecd4;
+  padding: 1.5em;
+}
+
 @media(max-width: 768px) {
   .desktop-table {
     display: none;
@@ -523,6 +640,42 @@ span.progress {
 
     button#search-clear {
       right: 12%;
+    }
+  }
+
+  .asset-intro {
+    float: none;
+    width: 98%;
+    margin: 0 1%;
+    padding: 0 0.9rem;
+  }
+
+  .ui.modal .content>.description {
+    padding: 0 !important;
+  }
+
+  .ui.list .list>.item>.icon+.content, .ui.list .list>.item>.image+.content, .ui.list>.item>.icon+.content, .ui.list>.item>.image+.content {
+    padding: 0.65rem 0;
+  }
+
+  .ama-merchant .assets {
+    text-align: center;
+  }
+
+  .ui.subfooter {
+    padding: 2em 0 0;
+
+    .inner {
+      h3 {
+        font-size: 1.5rem;
+      }
+      .ui.huge.button, .ui.huge.buttons .button, .ui.huge.buttons .or {
+        font-size: 0.8rem;
+      }
+
+      .ui.buttons .or {
+         top: 0;
+      }
     }
   }
 }
