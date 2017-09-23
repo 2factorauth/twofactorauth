@@ -1,0 +1,122 @@
+wallets:
+
+    - name: Bitcoin ABC
+      url: https://www.bitcoinabc.org
+      img: bitcoinabc.png
+      bcc: Yes
+      btc: No
+
+    - name: Bitcoin Classic
+      url: https://bitcoinclassic.com/
+      img: bitcoinclassic.png
+      bcc: Yes
+      btc: Yes
+      doc: https://bitcoinclassic.com/downloads/bcc/
+
+    - name: Bitcoin Unlimited
+      url: https://www.bitcoinunlimited.info
+      img: bitcoinunlimited.png
+      bcc: Yes
+      btc: Yes
+
+    - name: Bitcoin XT
+      url: https://bitcoinxt.software/
+      img: bitcoinxt.png
+      bcc: Yes
+      btc: Yes
+
+    - name: Bitcoin.com Wallet
+      url: https://wallet.bitcoin.com/
+      img: bitcoincom.png
+      bcc: Yes
+      btc: Yes
+      doc: https://news.bitcoin.com/introducing-the-simple-to-use-and-robust-bitcoin-com-wallet/
+
+    - name: Breadwallet
+      url: https://breadwallet.com/
+      img: breadwallet.png
+      bcc: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://breadwallet.com/blog/breadwallet-plan-bitcoin-cash-bch/
+
+    - name: BTC.com
+      url: https://wallet.btc.com/
+      img: btccom.png
+      bcc: Yes
+      btc: Yes
+
+    - name: CashAddress.org
+      url: https://cashaddress.org/
+      img: cashaddress.png
+      bcc: Yes
+      btc: No
+
+    - name: Coinomi
+      url: https://coinomi.com/
+      img: coinomi.png
+      bcc: Yes
+      btc: Yes
+      doc: https://coinomi.freshdesk.com/support/solutions/articles/29000013719-how-to-get-bitcoin-cash-from-many-wallet-software-services-with-coinomi
+      othercrypto: Yes
+
+    - name: Electron Cash
+      url: https://electroncash.org/
+      img: electroncash.png
+      bcc: Yes
+      btc: No
+
+    - name: Exodus Eden
+      url: https://www.exodus.io/eden/
+      img: exoduseden.png
+      bcc: Yes
+      btc: Yes
+      othercrypto: Yes
+
+    - name: Jaxx
+      url: https://jaxx.io/
+      img: jaxx.png
+      bcc: Yes
+      btc: Yes
+      doc: http://decentral.ca/update-bch-jaxx/
+
+    - name: KeepKey
+      url: https://www.keepkey.com/
+      img: keepkey.png
+      bcc: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://www.keepkey.com/2017/07/31/bitcoin-cash-keepkey/
+      exceptions:
+          text: "Wallet currently in beta testing."
+
+    - name: Ledger
+      url: https://www.ledgerwallet.com/
+      img: ledger.png
+      bcc: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: http://support.ledgerwallet.com/knowledge_base/topics/bitcoin-cash
+
+    - name: Parity
+      url: https://parity.io
+      img: parity.png
+      bcc: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://blog.parity.io/parity-bitcoin-is-now-supporting-segwit-segwit2x-and-bitcoin-cash/
+
+    - name: StrongCoin
+      url: https://strongcoin.com
+      img: strongcoin.png
+      bcc: Yes
+      btc: Yes
+      doc: https://strongcoin.com/blog/bitcoin_cash_is_now_supported_in_strongcoin_wallet
+
+    - name: Trezor
+      url: https://wallet.trezor.io
+      img: trezor.png
+      bcc: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://blog.trezor.io/claim-bcash-bitcoin-cash-bch-bcc-trezor-wallet-f0a810d5864a
