@@ -1,6 +1,7 @@
 import os
 import datetime
 import shutil
+import codecs
 
 totalSites = 0
 totalImg = 0
@@ -71,7 +72,7 @@ def findImg(image, fileTitle, index, logMessage):
             ymlPath = os.path.join(dirPath, ymlName)
             
             try:
-                file = open(ymlPath, "r")
+                file = codecs.open(ymlPath, "r", "utf-8")
                 fileFound = False
                 for line in file:
                     if image in line:
@@ -100,7 +101,7 @@ def countFile(dir, filename):
     path = os.path.join(dir, filename)
     #print("Testing site: " + path)
     if ".yml" in path:
-        file = open(path, 'r')
+        file = codecs.open(path, 'r', "utf-8")
         processed = True
         prevName = ''
 
@@ -204,13 +205,13 @@ try:
 except Exception as e:
 	pass
 
-output = open(os.path.join(outputPath,"missingImg_log.csv"), "a")
+output = codecs.open(os.path.join(outputPath,"missingImg_log.csv"), "a", "utf-8")
 
 output.write(str(timestamp) + ", " + str(failedPaths) + ", " + str(missingEntries) + "\n")
 
 output.close()
 
-output = open(os.path.join(outputPath,"missingImg.txt"), "w+")
+output = codecs.open(os.path.join(outputPath,"missingImg.txt"), "w+", "utf-8")
 output.write("////////////////////////////////////////////////////////////////////////////////////////////// \n")
 output.write("Missing tags \n")
 output.write("File, Tag \n")

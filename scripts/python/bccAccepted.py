@@ -1,6 +1,7 @@
 import os
 import datetime
 import pathlib
+import codecs
 
 totalSites = 0
 totalBCC = 0
@@ -14,7 +15,7 @@ def countFile(dir, filename):
     path = os.path.join(dir, filename)
     #print("Testing site: " + path)
     if ".yml" in path:
-        file = open(path, 'r')
+        file = codecs.open(path, 'r', "utf-8")
         processed = True
 
         global index
@@ -53,14 +54,14 @@ try:
 except Exception as e:
 	pass
 
-output = open(os.path.join(outputPath,"bccAccepted_log.csv"), "a")
+output = codecs.open(os.path.join(outputPath,"bccAccepted_log.csv"), "a", "utf-8")
 
 output.write(str(timestamp) + ", " + str(totalBCC) + ", " + str(totalSites) + "\n")
 
 output.close()
 
 #create html file
-output = open(os.path.join("..","..","_includes","count_support.html"), "w+")
+output = codecs.open(os.path.join("..","..","_includes","count_support.html"), "w+", "utf-8")
 
 output.write("<p><span class=\"bcc-yes-count\">" + str(totalBCC) + "</span> out of <span class=\"bcc-total-site-count\">"+ str(totalSites) +"</span> sites listed support Bitcoin Cash.</p>")
 
