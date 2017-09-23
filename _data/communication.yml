@@ -1,231 +1,225 @@
 websites:
-    - name: Action Network
-      url: https://actionnetwork.org/
-      img: actionnetwork.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.actionnetwork.org/hc/en-us/articles/217206826
-
     - name: Basecamp
       url: https://basecamp.com/
       img: basecamp.png
-      tfa: Yes
-      sms: Yes
-      doc: https://basecamp.com/help/guides/you/phone-verification
-
-    - name: Campfire
-      url: https://campfirenow.com/
-      img: campfire.png
-      tfa: Yes
-      sms: Yes
-      doc: https://help.37signals.com/sign-in/questions/460-how-do-i-set-up-and-use-phone-verification-for-logging-in
-
+      twitter: basecamp
+      facebook: 37signals
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: Carbon Black Community Exchange
       url: https://community.carbonblack.com/
       img: carbonblack.png
-      tfa: No
+      bcc: No 
+      btc: No 
+      othercrypto: No
       twitter: CarbonBlack_Inc
       facebook: carbonblackinc
 
     - name: Customer.io
       url: https://customer.io
       img: customerio.png
-      tfa: Yes
-      software: Yes
-      doc: https://customer.io/docs/two-factor-auth.html
-
-    - name: Discord
-      url: https://discordapp.com/
-      img: discord.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://support.discordapp.com/hc/en-us/articles/219576828
-
+      twitter: customerio
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: Disqus
       url: https://disqus.com
       twitter: disqus
       facebook: disqus
       img: disqus.png
-      tfa: No
+      bcc: No 
+      btc: No 
+      othercrypto: No
 
     - name: Doodle
       url: http://www.doodle.com
       img: doodle.png
       twitter: doodletweet
-      tfa: No
+      bcc: No 
+      btc: No 
+      othercrypto: No
 
     - name: Fleep
       url: https://fleep.io
       twitter: fleepio
       facebook: fleepio
       img: fleep.png
-      tfa: No
+      bcc: No 
+      btc: No 
+      othercrypto: No
 
     - name: Flowdock
       url: https://www.flowdock.com
       twitter: flowdock
       facebook: flowdock
       img: flowdock.png
-      tfa: No
+      bcc: No 
+      btc: No 
+      othercrypto: No
 
     - name: Front App
       url: https://frontapp.com
       img: front_app.png
-      tfa: Yes
-      software: Yes
-      doc: https://community.frontapp.com/t/q56jf8/activating-two-factor-authentication-2fa
-
+      twitter: frontapp
+      facebook: frontapp
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: Grape
       url: https://chatgrape.com/
       img: grape.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://chatgrape.com/doc/deployment/2fa.html
-
+      twitter: chatgrapecom
+      facebook: chatgrape
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: HipChat
       url: https://www.hipchat.com
       twitter: HipChat
       facebook: HipChat
       img: hipchat.png
-      tfa: No
+      bcc: No 
+      btc: No 
+      othercrypto: No
 
     - name: IRCCloud
       url: https://www.irccloud.com
       img: irccloud.png
       twitter: IRCCloud
       facebook: irccloud
-      tfa: No
+      bcc: No 
+      btc: Yes
+      othercrypto: No
 
     - name: MailChimp
       url: https://mailchimp.com/
       img: mailchimp.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: http://kb.mailchimp.com/accounts/login/set-up-two-factor-authentication-with-sms
-
+      twitter: mailchimp
+      facebook: mailchimp
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: Mailgun
       url: https://www.mailgun.com
       img: mailgun.png
-      tfa: Yes
-      software: Yes
-
-    - name: Maxemail
-      url: https://maxemail.emailcenteruk.com/
-      img: maxemail.png
-      tfa: Yes
-      hardware: Yes
-      doc: https://www.emailcenteruk.com/maxemail/platform-security-collaboration/
-
-    - name: Peerio
-      url: https://peerio.com
-      img: peerio.png
-      tfa: Yes
-      software: Yes
-      doc: https://peerio.zendesk.com/hc/en-us/articles/202933829-How-do-I-setup-two-factor-authentication-
+      twitter: mail_gun
+      facebook: mailgun
+      bcc: No 
+      btc: No 
+      othercrypto: No
 
     - name: Ryver
       url: https://ryver.com/
       img: ryver.png
       twitter: ryverapp
       facebook: RyverApp
-      tfa: No
+      bcc: No 
+      btc: No 
+      othercrypto: No
 
     - name: Salesforce
       url: http://www.salesforce.com
       img: salesforce.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      email: Yes
-      doc: https://help.salesforce.com/HTViewHelpDoc?id=security_require_two_factor_authentication.htm
-
+      twitter: salesforce
+      facebook: salesforce
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: SendGrid
       url: https://sendgrid.com/
       img: sendgrid.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
-
+      twitter: sendgrid
+      facebook: sendgrid
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: Sendloop
       url: https://app.sendloop.com
       img: sendloop.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.sendloop.com/docs/securing-your-account
-
+      twitter: sendloop
+      facebook: sendloop
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: Skype (via Microsoft Account)
       url: https://www.skype.com
       img: skype.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
-      exceptions:
-            text: "Two-factor authentication is available only when logging in using a Microsoft account. If you have setup your account using a Skype password, 2FA through Microsoft is essentially useless."
-
+      twitter: skype
+      facebook: skype
+      bcc: No 
+      btc: Yes
+      othercrypto: No
+      
     - name: Slack
       url: https://slack.com/
       img: slack.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://slack.zendesk.com/hc/en-us/articles/204509068-Enabling-two-factor-authentication
-
+      twitter: slackhq
+      facebook: slackhq
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: SocketLabs
       url: https://socketlabs.com/
       img: socketlabs.png
-      sms: Yes
-      tfa: Yes
-      software: Yes
-      doc: https://support.socketlabs.com/kb/145
-
+      twitter: socketlabs
+      facebook: socketlabs
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: SparkPost
       url: https://sparkpost.com/
       img: sparkpost.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.sparkpost.com/customer/portal/articles/1948449
-
+      twitter: sparkpost
+      facebook: sparkpost
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: Stackfield
       url: https://www.stackfield.com/
       img: stackfield.png
-      tfa: Yes
-      software: Yes
-      doc: http://en.stackfield.help/article/92-activating-deactivating-the-two-factor-authentication
-
+      twitter: stackfieldapp
+      facebook: stackfieldapp
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: TeamSpeak
       url: https://www.teamspeak.com/
       twitter: teamspeak
       facebook: teamspeak
       img: teamspeak.png
-      tfa: No
+      bcc: No 
+      btc: No 
+      othercrypto: No
 
     - name: Telegram
       url: https://telegram.org/
       img: telegram.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      doc: https://telegram.org/blog/sessions-and-2-step-verification
-
+      twitter: telegram
+      bcc: No 
+      btc: No 
+      othercrypto: No
+      
     - name: ToutApp
       url: https://www1.toutapp.com/
       twitter: toutapp
       facebook: toutapp
       img: toutapp.png
-      tfa: No
-
-    - name: WhatsApp
-      url: https://www.whatsapp.com/
-      img: whatsapp.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      doc: https://www.whatsapp.com/faq/en/general/26000021
+      bcc: No 
+      btc: No 
+      othercrypto: No
 
     - name: WoltLab
       url: https://www.woltlab.com/
@@ -233,11 +227,6 @@ websites:
       facebook: WoltLab
       email_address: woltlab@woltlab.com
       img: woltlab.png
-      tfa: No
-
-    - name: Yammer
-      url: https://www.yammer.com
-      twitter: yammer
-      facebook: Yammer
-      img: yammer.png
-      tfa: No
+      bcc: No 
+      btc: No 
+      othercrypto: No
