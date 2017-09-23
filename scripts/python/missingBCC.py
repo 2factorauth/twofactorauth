@@ -55,14 +55,10 @@ def countFile(dir, filename):
                 processed = True
         index += 1
 
-counter = 0
-while counter < len(filename):
-    path = os.path.join(dirPath, filename[counter])
+for file in filename:
     #print("Testing path: " + path)
 
-    countFile(dirPath, filename[counter])
-    counter += 1
-
+    countFile(dirPath, file)
 
 #create log
 timestamp = datetime.datetime.utcnow()
