@@ -41,14 +41,12 @@
           </div>
           <div class="progress-info">
             <a class="fluid ui mini orange button" href="{{website.status}}" target="_blank">
-              <i class="star icon"></i> In Progress!
+              In Progress!
             </a>
           </div>
         </td>
         <td class="twitter progress" colspan="6">
-          <a class="ui twitter mini button"
-             href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
-             target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
+          <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="top center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress}}</a>
         </td>
       {% elsif website.bcc or website.btc %}
         <td {% if website.bcc %}class="main positive"{% else %}class="main negative"{% endif %}>
@@ -72,7 +70,8 @@
             </svg>
           </div>
           {% else %}
-          {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link}}</a>{% endif %}
+          {% if website.twitter %} <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="right center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}" target="_blank"><i class="twitter big icon"></i></a>{% endif %}
+          {% if website.facebook %} <a data-tooltip="{{page.link_facebook|replace:'FACEBOOKHANDLE',website.facebook}}" data-position="right center" data-inverted="" class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook big icon"></i></a>{%endif%}
           {% endif %}
         </td>
 
@@ -98,7 +97,7 @@
 
         <td {% if website.doc %}class="positive icon"{% else %}class="negative icon"{% endif %}>
           {% if website.doc %}
-          <a href="{{ website.doc }}" data-tooltip="Read support docs from {{ website.name }}" data-position="top center" data-inverted=""><i class="external url link large icon"></i></a>
+          <a href="{{ website.doc }}" data-tooltip="{{page.rtfm}} {{ website.name }}" data-position="top center" data-inverted=""><i class="file text large icon"></i></a>
           {% endif %}
         </td>
 
@@ -115,9 +114,9 @@
           </div>
         </td>
         <td class="twitter negative" colspan="6">
-        {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link}}</a>{% endif %}
-        {% if website.facebook %} <a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i> Write on their wall</a>{%endif%}
-        {% if website.email_address %} <a class="ui green mini button" href="mailto:{{website.email_address}}?subject=Support%20Bitcoin%20Cash%20payments" target="_blank"><i class="mail icon"></i>{{page.link}} via Email</a>{% endif %}
+        {% if website.twitter %} <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="left center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}" target="_blank"><i class="twitter big icon"></i></a>{% endif %}
+        {% if website.facebook %} <a data-tooltip="{{page.link_facebook|replace:'FACEBOOKHANDLE',website.facebook}}" data-position="right center" data-inverted=""  class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook big icon"></i></a>{%endif%}
+        {% if website.email_address %} <a data-tooltip="Send an e-mail to {{website.name}}" data-position="right center" data-inverted=""  class="ui green mini button" href="mailto:{{website.email_address}}?subject={{page.email_subject}}" target="_blank"><i class="mail big icon"></i></a>{% endif %}
         </td>
       {% endif %}
     </tr>

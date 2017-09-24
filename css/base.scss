@@ -413,11 +413,10 @@ input[type=search] {
     }
 
     .button {
-      padding: 1em;
+      padding: 0.4em 0 0.2em;
       width: 100%;
 
       i {
-        font-size: 1rem;
         margin: 0 !important;
       }
 
@@ -476,6 +475,11 @@ input[type=search] {
     text-align: center;
     width: 10%;
   }
+
+}
+
+.ui.mini.button i {
+  margin: 0 0 0.2rem !important;
 }
 
 td img.icon,

@@ -43,7 +43,7 @@
       <div>
         <a class="ui twitter mini button"
            href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
-           target="_blank"><i class="twitter icon"></i> {{page.link_progress_mobile}}</a>
+           target="_blank"><i class="twitter big icon"></i> {{page.link_progress_mobile}}</a>
       </div>
     </div>
     {% elsif website.bcc or website.btc or website.othercrypto %}
@@ -80,13 +80,13 @@
       {% if website.doc or website.twitter or website.facebook or website.email_address %}
       <div class="button-group">
         {% if website.doc %}
-        <a href="{{ website.doc }}" class="ui green mini button"><i class="large book icon"></i></a>
+        <a href="{{ website.doc }}" title="{{page.rtfm}} {{website.name}}'s website" class="ui green mini button"><i class="book big icon"></i></a>
         {% endif %}
         {% if website.bcc %}
         {% elsif website.btc or website.othercrypto %}
-          {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i></a>{% endif %}
-          {% if website.facebook %} <a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i></a>{%endif%}
-          {% if website.email_address %} <a class="ui violet mini button" href="mailto:{{website.email_address}}?subject=Support%20Bitcoin%20Cash%20payments" target="_blank"><i class="mail icon"></i></a>{% endif %}
+        {% if website.twitter %} <a title="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="left center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}" target="_blank"><i class="twitter big icon"></i></a>{% endif %}
+        {% if website.facebook %} <a title="{{page.link_facebook|replace:'FACEBOOKHANDLE',website.facebook}}" data-position="right center" data-inverted=""  class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook big icon"></i></a>{%endif%}
+        {% if website.email_address %} <a title="Send an e-mail to {{website.name}}" data-position="right center" data-inverted=""  class="ui green mini button" href="mailto:{{website.email_address}}?subject={{page.email_subject}}" target="_blank"><i class="mail big icon"></i></a>{% endif %}
         {% endif %}
       </div>
       {% endif %}
@@ -104,9 +104,9 @@
       </div>
       <p>No cryptocurrencies supported</p>
       <div class="button-group">
-        {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}" target="_blank"><i class="twitter icon"></i></a>{% endif %}
-        {% if website.facebook %} <a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i></a>{%endif%}
-        {% if website.email_address %} <a class="ui violet mini button" href="mailto:{{website.email_address}}?subject=Support%20Bitcoin%20Cash%20payments" target="_blank"><i class="mail icon"></i></a>{% endif %}
+        {% if website.twitter %} <a title="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="left center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}" target="_blank"><i class="twitter big icon"></i></a>{% endif %}
+        {% if website.facebook %} <a title="{{page.link_facebook|replace:'FACEBOOKHANDLE',website.facebook}}" data-position="right center" data-inverted=""  class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook big icon"></i></a>{%endif%}
+        {% if website.email_address %} <a title="Send an e-mail to {{website.name}}" data-position="right center" data-inverted=""  class="ui green mini button" href="mailto:{{website.email_address}}?subject={{page.email_subject}}" target="_blank"><i class="mail big icon"></i></a>{% endif %}
       </div>
     </div>
     {% endif %}
