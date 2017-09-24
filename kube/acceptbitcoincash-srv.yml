@@ -6,7 +6,7 @@ metadata:
 spec:
   ports:
     - port: 90
-      targetPort: 4000
+      targetPort: 80
   selector:
     service: acceptbitcoincash
   type: NodePort

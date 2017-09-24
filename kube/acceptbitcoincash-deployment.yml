@@ -16,7 +16,7 @@ spec:
       - image: acceptbitcoincash/acceptbitcoincash
         name: acceptbitcoincash
         ports:
-        - containerPort: 4000
+        - containerPort: 80
         resources:
           requests:
             memory: "64Mi"
