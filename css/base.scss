@@ -52,6 +52,15 @@ p {
   font-size: 0.8rem;
 }
 
+.coin-wrap {
+  display: inline-block;
+
+  img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 .fab {
   position: fixed;
   bottom: 1rem;
