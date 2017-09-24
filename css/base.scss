@@ -247,8 +247,11 @@ input[type=search] {
 
 #no-results {
   display: none;
-  padding-bottom: 40px;
+  padding: 20px 0;
   text-align: center;
+  color: #fff;
+  background: #900;
+  border: 3px solid #f00;
 }
 
 .ui.dimmer {
@@ -599,10 +602,14 @@ span.progress {
 .asset-intro {
   float: left;
   width: 60%;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 .ui.list.artwork-list {
+  float: left;
+  width: 35%;
+  margin-top: -0.2rem;
+
   >.item a.header, >.item a.header {
     //color: $link-color !important;
 
@@ -674,6 +681,12 @@ span.progress {
 
   .ama-merchant .assets {
     text-align: center;
+  }
+
+  .ui.list.artwork-list {
+    float: none;
+    width: 100%;
+    margin-top: 2rem;
   }
 
   .ui.subfooter {

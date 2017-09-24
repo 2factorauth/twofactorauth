@@ -36,7 +36,7 @@
               <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
                    alt="{{ website.name }}">
             {% endif %}
-            <a class="name" href="{{ website.url }}">{{ website.name }}</a>
+            <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
             {% include exception.html website=website %}
           </div>
           <div class="progress-info">
@@ -56,7 +56,7 @@
               <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
                    alt="{{ website.name }}">
             {% endif %}
-            <a class="name" href="{{ website.url }}">{{ website.name }}</a>
+            <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
             {% include exception.html website=website %}
           </div>
         </td>
@@ -97,7 +97,7 @@
 
         <td {% if website.doc %}class="positive icon"{% else %}class="negative icon"{% endif %}>
           {% if website.doc %}
-          <a href="{{ website.doc }}" data-tooltip="{{page.rtfm}} {{ website.name }}" data-position="top center" data-inverted=""><i class="file text large icon"></i></a>
+          <a href="{{ website.doc }}" target="_blank" data-tooltip="{{page.rtfm}} {{ website.name }}" data-position="top center" data-inverted=""><i class="file text large icon"></i></a>
           {% endif %}
         </td>
 
@@ -109,7 +109,7 @@
               <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
                    alt="{{ website.name }}">
             {% endif %}
-            <a class="name" href="{{ website.url }}">{{ website.name }}</a>
+            <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
             {% include exception.html website=website %}
           </div>
         </td>
