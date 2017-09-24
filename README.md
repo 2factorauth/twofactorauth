@@ -10,7 +10,6 @@ Add a site that's not listed, or provide any updates/corrections by submitting a
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/acceptbitcoincash/acceptbitcoincash.svg)](https://github.com/acceptbitcoincash/acceptbitcoincash/pulls/)
 [![GitHub issues-closed](https://img.shields.io/github/issues-closed/acceptbitcoincash/acceptbitcoincash.svg)](https://github.com/acceptbitcoincash/acceptbitcoincash/issues?q=is%3Aissue+is%3Aclosed)
 [![Twitter](https://img.shields.io/badge/Twitter-@useBitcoinCash-blue.svg)](https://twitter.com/useBitcoinCash)
-[![Join the chat at https://gitter.im/acceptbitcoincashproject/Lobby](https://badges.gitter.im/acceptbitcoincashproject/Lobby.svg)](https://gitter.im/acceptbitcoincashproject/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
 
 ## The Goal
