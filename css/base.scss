@@ -156,9 +156,16 @@ p {
     background: $primary-color-light;
     font-style: italic;
     font-size: 0.9rem;
+    font-weight: 500;
+    padding-top: 10px;
 
     a {
       color: $primary-color;
+      margin: 0 1rem;
+      display: inline-block;
+      width: 40%;
+      text-align: center;
+      cursor: pointer;
 
       &:hover {
         color: #0a0;
@@ -647,6 +654,14 @@ span.progress {
 
     h2 {
       border-radius: 0;
+    }
+
+    .title-footer {
+      a {
+        margin: 0.5rem 0;
+        display: block;
+        width: 100%;
+      }
     }
   }
 
