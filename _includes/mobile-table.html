@@ -41,9 +41,7 @@
       <p>IN PROGRESS!</p>
 
       <div>
-        <a class="ui twitter mini button"
-           href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
-           target="_blank"><i class="twitter big icon"></i> {{page.link_progress_mobile}}</a>
+        <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress_mobile}}</a>
       </div>
     </div>
     {% elsif website.bcc or website.btc or website.othercrypto %}
@@ -51,10 +49,9 @@
       <div class="title">
         {% if website.img %}
         <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-        <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
-             alt="{{ website.name }}">
+        <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
         {% endif %}
-        <a href="{{ website.url }}" class="name">{{ website.name }}</a>
+        <a href="{{ website.url }}" target="_blank" class="name">{{ website.name }}</a>
         {% include exception.html website=website %}
       </div>
       <p>Supported:</p>
@@ -80,7 +77,7 @@
       {% if website.doc or website.twitter or website.facebook or website.email_address %}
       <div class="button-group">
         {% if website.doc %}
-        <a href="{{ website.doc }}" title="{{page.rtfm}} {{website.name}}'s website" class="ui green mini button"><i class="book big icon"></i></a>
+        <a href="{{ website.doc }}" target="_blank" title="{{page.rtfm}} {{website.name}}'s website" class="ui green mini button"><i class="book big icon"></i></a>
         {% endif %}
         {% if website.bcc %}
         {% elsif website.btc or website.othercrypto %}
@@ -99,7 +96,7 @@
         <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
              alt="{{ website.name }}">
         {% endif %}
-        <a href="{{ website.url }}" class="name">{{ website.name }}</a>
+        <a href="{{ website.url }}" target="_blank" class="name">{{ website.name }}</a>
         {% include exception.html website=website %}
       </div>
       <p>No cryptocurrencies supported</p>
