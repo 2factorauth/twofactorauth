@@ -139,10 +139,16 @@ p {
 //    padding: 15px 0 10px;
   }
 
-  .sub.header {
-    margin: 10px auto;
-    padding: 15px 0;
-    max-width: 81%;
+  .title-wrap {
+    .sub.header {
+      margin: 10px auto;
+      padding: 15px 0;
+      max-width: 81%;
+
+      &:first-of-type {
+        padding: 15px 20px;
+      }
+    }
   }
 
   .title-footer {
@@ -407,11 +413,10 @@ input[type=search] {
     }
 
     .button {
-      padding: 1em;
+      padding: 0.4em 0 0.2em;
       width: 100%;
 
       i {
-        font-size: 1rem;
         margin: 0 !important;
       }
 
@@ -469,6 +474,15 @@ input[type=search] {
   &.icon {
     text-align: center;
     width: 10%;
+  }
+
+}
+
+.ui.mini.button {
+  padding: 0.4em 1.5em !important;
+
+  i {
+    margin: 0 0 0.2rem !important;
   }
 }
 
