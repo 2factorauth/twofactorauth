@@ -40,6 +40,10 @@ $(document).ready(function () {
     $('.ui.modal.ama-customer').modal('toggle');
   });
 
+  $('#about-this-site').click(function () {
+    $('.ui.modal.about-this-site').modal('toggle');
+  });
+
   // Unveil images 50px before they appear
   $('img').unveil(50);
 
