@@ -45,6 +45,8 @@ acceptBitcoin.cash also includes a Docker image for easy deployment. You can bui
 
 ```
 cd ~/acceptbitcoincash
+gem install bundler
+bundle exec jekyll build
 docker build -t acceptbitcoincash .
 docker run -p 4000:4000 acceptbitcoincash
 ```
