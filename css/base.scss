@@ -478,8 +478,12 @@ input[type=search] {
 
 }
 
-.ui.mini.button i {
-  margin: 0 0 0.2rem !important;
+.ui.mini.button {
+  padding: 0.4em 1.5em !important;
+
+  i {
+    margin: 0 0 0.2rem !important;
+  }
 }
 
 td img.icon,
