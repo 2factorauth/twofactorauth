@@ -255,7 +255,7 @@ websites:
     - name: Overstock
       url: https://www.overstock.com
       img: overstock.png
-      bcc: No
+      bcc: Yes
       btc: Yes
       twitter: Overstock
       facebook: overstock
@@ -270,6 +270,7 @@ websites:
     - name: Purse
       url: https://purse.io/
       img: purse.png
+      twitter: PurseIO
       bcc: Yes
       docs: https://blog.purse.io/announcement-update-bitcoin-cash/
       exceptions:
