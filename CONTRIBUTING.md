@@ -23,13 +23,13 @@ are stored in folders corresponding to each of those categories in their own
 ## Running Locally
 
 It's easy to run everything locally to test it out. Either you can have plain
-[Jekyll][jekyll] installed or you can use [Bundler][bundler] to manage
+[Jekyll](http://jekyllrb.com/) installed or you can use [Bundler](http://bundler.io/) to manage
 everything for you.
 
 ### Using Bundler
 
 1. To install Bundler, just run `gem install bundler`.
-2. Install dependencies in the [Gemfile][gemfile], `bundle install`.
+2. Install dependencies in the [Gemfile](https://github.com/acceptbitcoincash/acceptbitcoincash/blob/master/Gemfile), `bundle install`.
 3. Run Jekyll: `bundle exec jekyll serve --watch`. The `--watch` is optional and
    makes Jekyll watch for file changes.
 
