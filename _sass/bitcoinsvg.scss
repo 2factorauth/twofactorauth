@@ -47,6 +47,10 @@
 
 .green-coin {
   background: $primary-color;
+
+  path {
+    transform: rotate(-28deg);
+  }
 }
 
 .orange-coin {
