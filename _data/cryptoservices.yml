@@ -1,218 +1,218 @@
-cryptoservices:
+websites:
+  - name: BitGo
+    url: https://www.bitgo.com
+    img: bitgo.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
+    doc: https://blog.bitgo.com/bitcoin-cash-bch-update-6dced6c8c53d
 
-    - name: BitGo
-      url: https://www.bitgo.com
-      img: bitgo.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://blog.bitgo.com/bitcoin-cash-bch-update-6dced6c8c53d
+  - name: Bitpay
+    url: https://bitpay.com
+    img: bitpay.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: No
+    doc: https://blog.bitpay.com/bitcoin-cash-wallet-beta/
+    exceptions:
+      text: "Bitpay now supports Bitcoin Cash recovery, storing, spending. BCC now on Insight Block Explorer. Accepting BCC not yet supported."
 
-    - name: Bitpay
-      url: https://bitpay.com
-      img: bitpay.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://blog.bitpay.com/bitcoin-cash-wallet-beta/
-      exceptions:
-          text: "Bitpay now supports Bitcoin Cash recovery, storing, spending. BCC now on Insight Block Explorer. Accepting BCC not yet supported."
+  - name: Blockchain
+    url: https://blockchain.info/
+    img: blockchain.png
+    bcc: No
+    btc: Yes
+    othercrypto: Yes
+    doc: https://blog.blockchain.com/2017/08/22/bitcoin-cash-update/
+    facebook: blockchain
+    twitter: blockchain
+    exceptions:
+      text: "Blockchain now has limited wallet support but does not yet offer full support."
 
-    - name: Blockchain
-      url: https://blockchain.info/
-      img: blockchain.png
-      bcc: No
-      btc: Yes
-      othercrypto: Yes
-      doc: https://blog.blockchain.com/2017/08/22/bitcoin-cash-update/
-      facebook: blockchain
-      twitter: blockchain
-      exceptions:
-          text: "Blockchain now has limited wallet support but does not yet offer full support."
+  - name: Blockchair
+    url: https://blockchair.com/
+    img: blockchair.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: No
 
-    - name: Blockchair
-      url: https://blockchair.com/
-      img: blockchair.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: No
+  - name: Blockdozer
+    url: http://blockdozer.com/
+    img: blockdozer.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: No
 
-    - name: Blockdozer
-      url: http://blockdozer.com/
-      img: blockdozer.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: No
+  - name: Changelly
+    url: https://changelly.com
+    img: changelly.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
+    doc: https://changelly.com/blog/exchange-bitcoin-btc-bitcoin-cash-bcc-bch/
 
-    - name: Changelly
-      url: https://changelly.com
-      img: changelly.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://changelly.com/blog/exchange-bitcoin-btc-bitcoin-cash-bcc-bch/
+  - name: Circle
+    url: https://circle.com
+    img: circle.png
+    bcc: No
+    btc: No
+    othercrypto: No
+    facebook: Circle-196747253842166
+    twitter: circlepay
+    email_address: info@circle.com
+    exceptions:
+      text: "Circle accepted BTC until June 2017 - see https://support.circle.com/hc/en-us/articles/213560743-Bitcoin-on-Circle"
 
-    - name: Circle
-      url: https://circle.com
-      img: circle.png
-      bcc: No
-      btc: No
-      othercrypto: No
-      facebook: Circle-196747253842166
-      twitter: circlepay
-      email_address: info@circle.com
-      exceptions:
-          text: "Circle accepted BTC until June 2017 - see https://support.circle.com/hc/en-us/articles/213560743-Bitcoin-on-Circle"
+  - name: Coin Cafe
+    url: https://coincafe.com
+    img: coincafe.png
+    bcc: No
+    btc: Yes
+    othercrypto: No
+    facebook: coincafeinc
+    twitter: coincafeinc
+    email_address: support@coincafe.com
+    doc: https://blog.coincafe.com/2017/07/31/bitcoin-cash/
 
-   - name: Coin Cafe
-      url: https://coincafe.com
-      img: coincafe.png
-      bcc: No
-      btc: Yes
-      othercrypto: No
-      facebook: coincafeinc
-      twitter: coincafeinc
-      email_address: support@coincafe.com
-      doc: https://blog.coincafe.com/2017/07/31/bitcoin-cash/
+  - name: Coinapult
+    url: https://coinapult.com
+    img: coinapult.png
+    bcc: No
+    btc: Yes
+    othercrypto: No
+    facebook: Coinapult
+    twitter: Coinapult
+    email_address: support@coinapult.com
 
-    - name: Coinapult
-      url: https://coinapult.com
-      img: coinapult.png
-      bcc: No
-      btc: Yes
-      othercrypto: No
-      facebook: Coinapult
-      twitter: Coinapult
-      email_address: support@coinapult.com
+  - name: CoinDance
+    url: https://cash.coin.dance/
+    img: coindance.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: No
 
-    - name: CoinDance
-      url: https://cash.coin.dance/
-      img: coindance.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: No
+  - name: CoinMarketCap
+    url: https://coinmarketcap.com/
+    img: coinmarketcap.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
 
-    - name: CoinMarketCap
-      url: https://coinmarketcap.com/
-      img: coinmarketcap.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
+  - name: Coinify (Merchants)
+    url: https://coinify.com/merchants
+    img: coinify.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
+    doc: https://news.coinify.com/coinify-merchants-accept-bitcoin-cash/
 
-    - name: Coinify (Merchants)
-      url: https://coinify.com/merchants
-      img: coinify.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://news.coinify.com/coinify-merchants-accept-bitcoin-cash/
-      
-    - name: Coinjar
-      url: https://coinjar.com
-      img: coinjar.png
-      bcc: No
-      btc: Yes
-      othercrypto: No
-      facebook: CoinJar
-      twitter: https://www.twitter.com/GetCoinJar
-      email_address: info@coinjar.com
-      doc: https://support.coinjar.com/hc/en-us/articles/115004087803-Claiming-Bitcoin-Cash-Tokens
-      exceptions:
-          text: "Coinjar has enabled Bitcoin Cash withdrawal but does not yet offer full support."
-      
-    - name: CoinMix
-      url: https://coinmix.to/
-      img: coinmix.png
-      bcc: Yes
-      btc: No
-      othercrypto: No
+  - name: Coinjar
+    url: https://coinjar.com
+    img: coinjar.png
+    bcc: No
+    btc: Yes
+    othercrypto: No
+    facebook: CoinJar
+    twitter: https://www.twitter.com/GetCoinJar
+    email_address: info@coinjar.com
+    doc: https://support.coinjar.com/hc/en-us/articles/115004087803-Claiming-Bitcoin-Cash-Tokens
+    exceptions:
+      text: "Coinjar has enabled Bitcoin Cash withdrawal but does not yet offer full support."
 
-    - name: Coins.ph
-      url: https://coins.ph/
-      img: coinsph.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
+  - name: CoinMix
+    url: https://coinmix.to/
+    img: coinmix.png
+    bcc: Yes
+    btc: No
+    othercrypto: No
 
-    - name: Keys4Coins
-      url: https://www.keys4coins.com
-      img: keys4coins.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://www.keys4coins.com/bitcoin-cash-accepted-here/
+  - name: Coins.ph
+    url: https://coins.ph/
+    img: coinsph.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
 
-    - name: LocalBitcoins
-      url: https://localbitcoins.com/
-      img: localbitcoins.png
-      bcc: No
-      btc: Yes
-      othercrypto: No
-      facebook: LocalBitcoinsCom
-      twitter: LocalBitcoins
-      email_address: support@localbitcoins.com
+  - name: Keys4Coins
+    url: https://www.keys4coins.com
+    img: keys4coins.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
+    doc: https://www.keys4coins.com/bitcoin-cash-accepted-here/
 
-    - name: Living Room of Satoshi
-      url: https://www.livingroomofsatoshi.com/
-      img: livingroom.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
+  - name: LocalBitcoins
+    url: https://localbitcoins.com/
+    img: localbitcoins.png
+    bcc: No
+    btc: Yes
+    othercrypto: No
+    facebook: LocalBitcoinsCom
+    twitter: LocalBitcoins
+    email_address: support@localbitcoins.com
 
-    - name: Rocketr
-      url: https://rocketr.net
-      img: rocketr.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
+  - name: Living Room of Satoshi
+    url: https://www.livingroomofsatoshi.com/
+    img: livingroom.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
 
-    - name: SatoshiTango
-      url: https://satoshitango.com/
-      img: satoshitango.png
-      bcc: No
-      btc: Yes
-      othercrypto: No
-      facebook: http://www.facebook.com/satoshitangoargentina
-      twitter: http://www.twitter.com/satoshitango
-      email_address: support@satoshitango.com
+  - name: Rocketr
+    url: https://rocketr.net
+    img: rocketr.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
 
-    - name: Shapeshift
-      url: https://shapeshift.io
-      img: shapeshift.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://info.shapeshift.io/blog/2017/07/27/important-bitcoin-hard-fork-information
+  - name: SatoshiTango
+    url: https://satoshitango.com/
+    img: satoshitango.png
+    bcc: No
+    btc: Yes
+    othercrypto: No
+    facebook: http://www.facebook.com/satoshitangoargentina
+    twitter: http://www.twitter.com/satoshitango
+    email_address: support@satoshitango.com
 
-    - name: Tippr
-      url: https://tippr.rocketr.net
-      img: tippr.png
-      bcc: Yes
-      btc: No
-      othercrypto: No
+  - name: Shapeshift
+    url: https://shapeshift.io
+    img: shapeshift.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
+    doc: https://info.shapeshift.io/blog/2017/07/27/important-bitcoin-hard-fork-information
 
-    - name: Uphold
-      url: https://uphold.com/
-      img: uphold.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://uphold.com/en/blog/posts/uphold/bitcoin-cash-live-on-uphold
+  - name: Tippr
+    url: https://tippr.rocketr.net
+    img: tippr.png
+    bcc: Yes
+    btc: No
+    othercrypto: No
 
-    - name: WebMoney
-      url: https://www.wmtransfer.com
-      img: webmoney.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://news.wmtransfer.com/en/blog/announcement_related_to_the_hard_fork_within_the_bitcoin_network
+  - name: Uphold
+    url: https://uphold.com/
+    img: uphold.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
+    doc: https://uphold.com/en/blog/posts/uphold/bitcoin-cash-live-on-uphold
 
-    - name: Xapo
-      url: https://xapo.com
-      img: xapo.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://blog.xapo.com/xapo-bitcoincash-bch-update/
-      exceptions:
-          text: "Xapo has enabled Bitcoin Cash withdrawal but does not yet offer full support."
+  - name: WebMoney
+    url: https://www.wmtransfer.com
+    img: webmoney.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
+    doc: https://news.wmtransfer.com/en/blog/announcement_related_to_the_hard_fork_within_the_bitcoin_network
+
+  - name: Xapo
+    url: https://xapo.com
+    img: xapo.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
+    doc: https://blog.xapo.com/xapo-bitcoincash-bch-update/
+    exceptions:
+      text: "Xapo has enabled Bitcoin Cash withdrawal but does not yet offer full support."
+
