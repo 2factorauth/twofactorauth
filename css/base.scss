@@ -247,8 +247,11 @@ input[type=search] {
 
 #no-results {
   display: none;
-  padding-bottom: 40px;
+  padding: 20px 0;
   text-align: center;
+  color: #fff;
+  background: #900;
+  border: 3px solid #f00;
 }
 
 .ui.dimmer {
