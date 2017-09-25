@@ -240,7 +240,9 @@ websites:
   - name: Zoolz
     url: http://www.zoolz.com/
     img: Zoolz.png
-    tfa: No
-    twitter: zoolzcloud
-    facebook: ZoolzCloud
-    email_address: info@zoolz.com
+    tfa: Yes
+    exceptions:
+        link: Yes
+        text: "Ony available for business accounts"
+    doc: http://wiki.zoolz.com/how-do-i-enable-two-factor-authentication-on-my-zoolz-intelligent-account/    
+    
