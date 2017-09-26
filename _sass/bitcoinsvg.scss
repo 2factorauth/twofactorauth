@@ -1,60 +1,110 @@
 
 // Bitcoin Loading SVG animation By Aya W.
 // https://codepen.io/ayalan/pen/JfkFc
-//   modified by topolino
+//   modified by topolino to include cash bill style and more animations
 
 #bitcoin-logo {
-  width: 200px;
+  position: relative;
+  width: 320px;
   height: 200px;
-  border-radius: 100px;
   margin: 0 auto;
-  display: block;
-  text-align: center;
-  background: $primary-color;
-  animation: roll2bcc 1s ease-in-out;
-  animation-fill-mode: forwards;
 
-  &:hover {
-    animation: roll2btc 1s ease-in-out;
-    animation-fill-mode: forwards;
+  .coin-side {
+    position: absolute;
+    top: 0;
+    fill: $orange;
+
+    &.left-side {
+      left: 0;
+      animation: coinleft 2s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    &.right-side {
+      right: 0;
+      animation: coinright 2s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    &.top-side {
+      opacity: 0;
+    }
+
+    &.top-side.left-side {
+      animation: sidescaleoutleft 420ms ease-out;
+      animation-fill-mode: forwards;
+      animation-delay: 2s;
+    }
+
+    &.top-side.right-side {
+      animation: sidescaleoutright 420ms ease-out;
+      animation-fill-mode: forwards;
+      animation-delay: 2s;
+    }
   }
 
-  .path {
-    stroke: #070;
-    stroke-width: 0;
-    stroke-dasharray: 2110;
-    stroke-dashoffset: 0;
-    stroke-linecap: round;
-    animation: dash 2s linear;
-    animation-delay: 1s;
-    fill: #fff;
+  .side-color-swap {
+    &.left-side, &.right-side {
+      animation: sidecolorswap 1s ease-in-out;
+      animation-fill-mode: forwards;
+    }
   }
 
-  .coindash {
-    animation: dash 2s linear;
+  .side-color-reset {
+    &.left-side, &.right-side {
+      animation: sidecolorreset 1s ease-in-out;
+      animation-fill-mode: forwards;
+    }
   }
-}
 
-.tbl-bitcoin-cash-logo, .tbl-bitcoin-logo, .waas-bitcoin-logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  background: $primary-color;
-}
+  #coin-toggle {
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+  }
 
-.green-coin {
-  background: $primary-color;
-
-  path {
+  #main-coin {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    background: $green;
+    // Rotating as default because Bitcoin Cash is going to the moon! ┗(°0°)┛
     transform: rotate(-28deg);
-  }
-}
+    animation: spincoin 1s ease-in-out;
+    animation-fill-mode: forwards;
 
-.orange-coin {
-  background: orange;
+    .glyph {
+      stroke: #BE6907;
+      stroke-width: 0;
+      stroke-dasharray: 2110;
+      stroke-dashoffset: 0;
+      stroke-linecap: round;
+      animation: dash 1250ms linear;
+      animation-delay: 1s;
+      fill: #fff;
+    }
+
+    &.coin-color-swap {
+      animation: coincolorswap 1s linear;
+      animation-fill-mode: forwards;
+    }
+
+    &.coin-color-reset {
+      animation: coincolorreset 1s linear;
+      animation-fill-mode: forwards;
+    }
+  }
 }
 
 @keyframes dash {
@@ -76,23 +126,107 @@
   }
 }
 
-@keyframes roll2btc {
-  0% {
-    transform: rotate(-24deg);
-  }
+@keyframes spincoin {
   100%{
-    transform: rotate(-1080deg);
-    background: orange;
+    transform: rotate(332deg);
+    background: $orange;
   }
 }
 
-@keyframes roll2bcc {
+@keyframes coinleft {
   0% {
-    transform: rotate(-360deg);
-    background: orange;
+    transform: scale(1.3) rotate(-24deg);
+    opacity: 0;
+    margin: 40px 0 0 -100px;
+  }
+  45% {
+    opacity: 0;
   }
   100%{
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+@keyframes coinright {
+  0% {
+    transform: scale(1.3) rotate(-24deg);
+    opacity: 0;
+    margin: -40px -50px 0 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+@keyframes sidecolorswap {
+  0% {
+    fill: $orange;
+  }
+  100%{
+    fill: $green;
+  }
+}
+
+@keyframes sidecolorreset {
+  0% {
+    fill: $green;
+  }
+  100%{
+    fill: $orange;
+  }
+}
+
+@keyframes sidescaleoutleft {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.7) translateX(-64px);
+    opacity: 0;
+  }
+}
+
+@keyframes sidescaleoutright {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.7) translateX(64px);
+    opacity: 0;
+  }
+}
+
+@keyframes coincolorswap {
+  0% {
+    background: $orange;
+  }
+  66% {
+    transform: rotate(1052deg);
+  }
+  100%{
+    background: $green;
+    transform: rotate(1052deg);
+  }
+}
+
+@keyframes coincolorreset {
+  0% {
+    background: $green;
+    transform: rotate(1052deg);
+  }
+  66% {
     transform: rotate(-28deg);
-    background: $primary-color;
+  }
+  100%{
+    background: $orange;
   }
 }

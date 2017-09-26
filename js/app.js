@@ -5,6 +5,23 @@ $(document).ready(function () {
     openCategory(window.location.hash.substring(1));
   }
 
+  // Toggle that coin color! Have it whichever way you like it. We just ask that you keep the moon-ward tilt, and cash bill sides to help people distinguish the true Bitcoin of Satoshi's original vision.
+  $('#coin-toggle').click(function () {
+    var coin = $('#bitcoin-logo');
+    var mainCoin = $('#main-coin');
+    var sideCoin = $('.coin-side');
+
+    if (coin.hasClass('green-coin')) {
+      $(coin).removeClass('green-coin');
+      $(mainCoin).removeClass('coin-color-swap').addClass('coin-color-reset');
+      $(sideCoin).removeClass('side-color-swap').addClass('side-color-reset');
+    } else {
+      $(coin).addClass('green-coin');
+      $(mainCoin).addClass('coin-color-swap').removeClass('coin-color-reset');
+      $(sideCoin).addClass('side-color-swap').removeClass('side-color-reset');
+    }
+  });
+
   // Activate elevator power to the search floor
   var primaryElevator = new Elevator({
     element: document.querySelector('.fab button:nth-child(2)'),
@@ -30,7 +47,6 @@ $(document).ready(function () {
     $('table').show();
     $('#search-wrapper input').focus();
   });
-
 
   $('#ama-merchant').click(function () {
     $('.ui.modal.ama-merchant').modal('toggle');
