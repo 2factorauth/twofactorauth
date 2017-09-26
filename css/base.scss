@@ -17,6 +17,7 @@ html, body {
 
 *, *:before, *:after {
   @include box-sizing(inherit);
+  text-shadow: none;
 }
 
 img {
@@ -24,12 +25,12 @@ img {
 }
 
 a {
-  color: $link-color;
+  color: $blue;
   text-decoration: none;
   @include transition(all, ease, 300ms);
 
   &:hover {
-    color: $link-color-hover;
+    color: $orange;
   }
 }
 
@@ -57,7 +58,7 @@ p {
 
   img {
     height: 40px;
-    width: 40px;
+    width: auto;
   }
 }
 
@@ -82,8 +83,7 @@ p {
     }
 
     &:nth-child(2) {
-      background-color: #044 !important;
-      background-color: $link-color-active !important;
+      background-color: $blue-dark !important;
       position: absolute;
       top: -64px;
       left: 0;
@@ -104,13 +104,19 @@ p {
   line-height: 2em;
 }
 
+.website-table a.name {
+  font-size: 22px;
+  font-weight: 300;
+  color: $blue-dark;
+
+  &:hover {
+    color: $orange-dark;
+  }
+}
+
 .website-table .left {
   width: 60%;
 
-  .name {
-    font-size: 22px;
-    font-weight: 300;
-  }
 
   p {
     margin-top: 10px;
@@ -130,9 +136,17 @@ p {
 #top-header {
   padding: 0 0 20px;
 
+  a {
+    color: $link-on-dark;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
   h2 {
     background: $orange;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
     color: #fff;
     font-weight: 500;
     padding: 10px 0;
@@ -140,8 +154,8 @@ p {
 
   .title-wrap {
     display: inline-block;
-    background: #fff;
-    border: 3px solid $orange-light;
+    background: #444;
+    border: 3px solid $green-light;
     border-radius: 10px;
     width: 705px;
     margin: 32px 0;
@@ -162,14 +176,15 @@ p {
 
   .title-footer {
     padding: 5px 0;
-    background: $orange-light;
-    font-style: italic;
+    background: $blue-light-alpha;
+    border-radius: 0 0 5px 5px;
     font-size: 0.9rem;
+    font-style: italic;
     font-weight: 500;
-    padding-top: 10px;
+    padding: 10px 0;
 
     a {
-      color: $orange;
+      color: #fff;
       margin: 0 1rem;
       display: inline-block;
       width: 40%;
@@ -177,7 +192,7 @@ p {
       cursor: pointer;
 
       &:hover {
-        color: #0a0;
+        color: $orange;
       }
 
       i {
@@ -194,7 +209,7 @@ p {
   padding: 10px 0;
   position: relative;
   text-align: left;
-  background: $link-color-light-alpha;
+  background: $blue-light-alpha;
 
   label {
     left: 88px;
@@ -203,7 +218,7 @@ p {
 
     i {
       color: $orange;
-      color: $link-color-hover;
+      color: $blue-light;
       display: inline-block;
       font-size: inherit;
       text-rendering: auto;
@@ -242,7 +257,7 @@ p {
 
 input[type=search] {
   @include transition(all, ease, 300ms);
-  border: 3px $link-color-hover solid;
+  border: 3px $blue-dark solid;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 10px;
@@ -273,15 +288,27 @@ input[type=search] {
 .ui.dimmer {
   background-color: rgba(0, 0, 0, 0.93);
   z-index: 10001;
+
+  a {
+    color: $blue-light;
+
+    &:hover {
+      color: $orange;
+    }
+  }
 }
 
 .ui.header {
   color: inherit;
+
+  .sub.header {
+    color: #fff;
+  }
 }
 
 .ui.grid.container {
-  background: $link-color-light-alpha;
-  border: 3px solid $orange-light;
+  background: $blue-light-alpha;
+  border: 3px solid $green-light;
   border-radius: 7px;
 }
 
@@ -300,9 +327,11 @@ input[type=search] {
 .active-icon {
   background-color: $orange;
   color: white;
+  box-shadow: 0 0 0 3px $orange-dark inset !important;
 
   & + small {
     color: $orange;
+    border: 3px solid $orange-dark !important;
   }
 }
 
@@ -318,7 +347,7 @@ input[type=search] {
     i.circular.icon {
       @include transition(all, ease, 300ms);
       background: #fff;
-      box-shadow: 0 0 0 3px $orange-light inset;
+      box-shadow: 0 0 0 3px $green-light inset;
       border-radius: 10px !important;
       border-color: $orange-light;
       margin-bottom: 0.8rem;
@@ -332,7 +361,7 @@ input[type=search] {
       @include transition(all, ease, 300ms);
       display: inline-block;
       background: #fff;
-      border: 3px solid $orange-light;
+      border: 3px solid $green-light;
       border-radius: 10px;
       padding: 5px 10px;
       font-size: 1rem;
@@ -348,7 +377,7 @@ input[type=search] {
 .ui.table.content-wrapper {
   background: #fff;
   border-radius: 0 !important;
-  border: 3px solid $orange-light;
+  border: 3px solid $green-light;
   border-width: 3px 0;
   //box-shadow: 2px 5px 20px rgba(80, 80, 80, 0.2), -2px -1px 20px rgba(80, 80, 80, 0.2);
 }
@@ -358,7 +387,15 @@ input[type=search] {
 }
 
 .ui.table td.positive, .ui.table tr.positive {
-  color: $orange !important;
+  color: $green !important;
+}
+
+.ui.table tr td.docs a {
+  color: $blue !important;
+
+  &:hover {
+    color: $orange !important;
+  }
 }
 
 .ui.table td.twitter {
@@ -389,7 +426,6 @@ input[type=search] {
       border-radius: 10px !important;
       padding: 1em;
       margin: 0.5rem 0;
-      text-shadow: 1px 1px 0 #fff;
       text-align: center;
 
       &.negative {
@@ -400,7 +436,6 @@ input[type=search] {
         box-shadow: 0 0 0 3px rgb(228, 216, 131) inset;
       }
     }
-
 
     .main {
       .title {
@@ -541,7 +576,7 @@ span.progress {
   color: #f0f0f0;
   margin: 4em 0 0;
   padding: 3em 0 0;
-  border-top: 3px solid $orange-light;
+  border-top: 3px solid $green-light;
   border-radius: 0;
 
   .inner {
@@ -615,6 +650,11 @@ span.progress {
   }
 }
 
+.about-this-site .ui.header img {
+  width: 128px;
+  margin-bottom: 1rem;
+}
+
 .asset-intro {
   float: left;
   width: 60%;
@@ -630,7 +670,7 @@ span.progress {
     //color: $link-color !important;
 
     &:hover {
-      color: $link-color-hover !important;
+      color: $orange !important;
     }
   }
 }
