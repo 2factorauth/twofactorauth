@@ -2,14 +2,18 @@
 
 $green: #4CCA47;
 $green-light: #DAECD4;
+$green-dark: #096905;
 
-$orange: #f08b16;
-$orange-light: #DAECD4;
+$orange: #F08B16;
+$orange-dark: #B76A10;
+$orange-light: #FFC899;
 
-$link-color: #299595; //#044
-$link-color-hover: #A291FB; //#299595
-$link-color-active: #7258fd;
-$link-color-light-alpha: rgba(241, 238, 255, 0.75);
+$blue: #327B9E;
+$blue-dark: #156D98;
+$blue-light: #5596B5;
+$blue-light-alpha: rgba(85, 150, 181, 0.45);
+
+$link-on-dark: #A1CDE2;
 
 div,
 .ui.table td {
