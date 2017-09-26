@@ -229,6 +229,10 @@ p {
   }
 
   button#search-clear {
+  
+    // Tiny workaround until we can get the Issue sorted with null table data
+    visibility: hidden;  
+  
     display: none;
     position: absolute;
     top: 20px;
