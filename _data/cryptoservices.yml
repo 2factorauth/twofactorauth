@@ -7,16 +7,6 @@ websites:
     othercrypto: Yes
     doc: https://blog.bitgo.com/bitcoin-cash-bch-update-6dced6c8c53d
 
-  - name: Bitpay
-    url: https://bitpay.com
-    img: bitpay.png
-    bcc: Yes
-    btc: Yes
-    othercrypto: No
-    doc: https://blog.bitpay.com/bitcoin-cash-wallet-beta/
-    exceptions:
-      text: "Bitpay now supports Bitcoin Cash recovery, storing, spending. BCC now on Insight Block Explorer. Accepting BCC not yet supported."
-
   - name: Blockchain
     url: https://blockchain.info/
     img: blockchain.png
@@ -140,6 +130,14 @@ websites:
     btc: Yes
     othercrypto: Yes
     
+  - name: Insight
+    url: https://insight.bitpay.com/
+    img: insight.png
+    twitter: bitpay
+    bcc: Yes
+    btc: Yes
+    othercrypto: No
+    
   - name: Keys4Coins
     url: https://www.keys4coins.com
     img: keys4coins.png
@@ -164,6 +162,15 @@ websites:
     bcc: Yes
     btc: Yes
     othercrypto: Yes
+    
+  - name: Open Bazaar
+    url: https://www.openbazaar.org/
+    img: openbazaar.png
+    twitter: openbazaar
+    bcc: No
+    btc: Yes
+    othercrypto: Yes
+    status: https://www.reddit.com/r/OpenBazaar/comments/6vv16q/would_anyone_here_be_interested_in_ob_forking_the/dm4bwql/
 
   - name: Rocketr
     url: https://rocketr.net
