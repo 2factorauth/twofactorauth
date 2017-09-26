@@ -69,7 +69,7 @@ p {
 
   .ui.button {
     position: relative;
-    background: $primary-color !important;
+    background: $orange !important;
     box-shadow: 2px 5px 20px rgba(0,0,0,0.4);
 
     i {
@@ -131,7 +131,7 @@ p {
   padding: 0 0 20px;
 
   h2 {
-    background: $primary-color;
+    background: $orange;
     border-radius: 10px 10px 0 0;
     color: #fff;
     font-weight: 500;
@@ -141,7 +141,7 @@ p {
   .title-wrap {
     display: inline-block;
     background: #fff;
-    border: 3px solid $primary-color-light;
+    border: 3px solid $orange-light;
     border-radius: 10px;
     width: 705px;
     margin: 32px 0;
@@ -162,14 +162,14 @@ p {
 
   .title-footer {
     padding: 5px 0;
-    background: $primary-color-light;
+    background: $orange-light;
     font-style: italic;
     font-size: 0.9rem;
     font-weight: 500;
     padding-top: 10px;
 
     a {
-      color: $primary-color;
+      color: $orange;
       margin: 0 1rem;
       display: inline-block;
       width: 40%;
@@ -202,7 +202,7 @@ p {
     top: 20px;
 
     i {
-      color: $primary-color;
+      color: $orange;
       color: $link-color-hover;
       display: inline-block;
       font-size: inherit;
@@ -254,8 +254,8 @@ input[type=search] {
   font-weight: 300;
 
   &:focus {
-    border-color: $primary-color;
-    box-shadow: 0 0 10px $primary-color;
+    border-color: $orange;
+    box-shadow: 0 0 10px $orange;
     outline: none;
     font-weight: 500;
   }
@@ -281,7 +281,7 @@ input[type=search] {
 
 .ui.grid.container {
   background: $link-color-light-alpha;
-  border: 3px solid $primary-color-light;
+  border: 3px solid $orange-light;
   border-radius: 7px;
 }
 
@@ -298,11 +298,11 @@ input[type=search] {
 }
 
 .active-icon {
-  background-color: $primary-color;
+  background-color: $orange;
   color: white;
 
   & + small {
-    color: $primary-color;
+    color: $orange;
   }
 }
 
@@ -318,13 +318,13 @@ input[type=search] {
     i.circular.icon {
       @include transition(all, ease, 300ms);
       background: #fff;
-      box-shadow: 0 0 0 3px $primary-color-light inset;
+      box-shadow: 0 0 0 3px $orange-light inset;
       border-radius: 10px !important;
-      border-color: $primary-color-light;
+      border-color: $orange-light;
       margin-bottom: 0.8rem;
 
       &.active-icon {
-        background-color: $primary-color;
+        background-color: $orange;
       }
     }
 
@@ -332,7 +332,7 @@ input[type=search] {
       @include transition(all, ease, 300ms);
       display: inline-block;
       background: #fff;
-      border: 3px solid $primary-color-light;
+      border: 3px solid $orange-light;
       border-radius: 10px;
       padding: 5px 10px;
       font-size: 1rem;
@@ -348,7 +348,7 @@ input[type=search] {
 .ui.table.content-wrapper {
   background: #fff;
   border-radius: 0 !important;
-  border: 3px solid $primary-color-light;
+  border: 3px solid $orange-light;
   border-width: 3px 0;
   //box-shadow: 2px 5px 20px rgba(80, 80, 80, 0.2), -2px -1px 20px rgba(80, 80, 80, 0.2);
 }
@@ -358,7 +358,7 @@ input[type=search] {
 }
 
 .ui.table td.positive, .ui.table tr.positive {
-  color: $primary-color !important;
+  color: $orange !important;
 }
 
 .ui.table td.twitter {
@@ -541,7 +541,7 @@ span.progress {
   color: #f0f0f0;
   margin: 4em 0 0;
   padding: 3em 0 0;
-  border-top: 3px solid $primary-color-light;
+  border-top: 3px solid $orange-light;
   border-radius: 0;
 
   .inner {
@@ -604,7 +604,7 @@ span.progress {
     @include transition(all, ease, 420ms);
 
     &:hover {
-      background: $primary-color-light;
+      background: $orange-light;
       box-shadow: 0 0 20px rgba(0,0,0,0.3);
       -moz-transform: translateX(-2px) translateY(-2px);
       -webkit-transform: translateX(-2px) translateY(-2px);
