@@ -72,8 +72,8 @@ websites:
       url: https://payeer.com/en/
       img: payeer.png
       tfa: Yes
-      sms: yes
-      email: yes
+      sms: Yes
+      email: Yes
       exceptions:
           text: "Receiving codes via SMS cost 0.05$ each message. 2FA is personalizable in account settings."
       doc: https://payeer.com/en/faq/
