@@ -33,16 +33,6 @@ websites:
     btc: Yes
     othercrypto: No
 
-  - name: Bread
-    url: https://breadapp.com/
-    img: bread.png
-    bcc: Yes
-    btc: Yes
-    othercrypto: Yes
-    doc: https://breadapp.com/blog/breadwallet-plan-bitcoin-cash-bch/
-    exceptions:
-      text: "Currently only allows withdrawals."
-
   - name: Changelly
     url: https://changelly.com
     img: changelly.png
