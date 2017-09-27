@@ -38,6 +38,8 @@ websites:
       btc: Yes
       othercrypto: Yes
       doc: https://breadwallet.com/blog/breadwallet-plan-bitcoin-cash-bch/
+      exceptions:
+          text: "Currently only allows withdrawals."
 
     - name: BTC.com
       url: https://wallet.btc.com/
@@ -58,7 +60,7 @@ websites:
       btc: Yes
       doc: https://coinomi.freshdesk.com/support/solutions/articles/29000013719-how-to-get-bitcoin-cash-from-many-wallet-software-services-with-coinomi
       othercrypto: Yes
-      
+
     - name: Copay
       url: https://bitpay.com/wallet
       img: copay.png
@@ -86,6 +88,8 @@ websites:
       bcc: Yes
       btc: Yes
       doc: http://decentral.ca/update-bch-jaxx/
+      exceptions:
+          text: "Currently only allows withdrawals."
 
     - name: KeepKey
       url: https://www.keepkey.com/
