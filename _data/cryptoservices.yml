@@ -33,6 +33,16 @@ websites:
     btc: Yes
     othercrypto: No
 
+  - name: Bread
+    url: https://breadapp.com/
+    img: bread.png
+    bcc: Yes
+    btc: Yes
+    othercrypto: Yes
+    doc: https://breadapp.com/blog/breadwallet-plan-bitcoin-cash-bch/
+    exceptions:
+      text: "Currently only allows withdrawals."
+
   - name: Changelly
     url: https://changelly.com
     img: changelly.png
@@ -122,14 +132,14 @@ websites:
     bcc: No
     btc: Yes
     othercrypto: Yes
-    
+
   - name: Coins.co.th
     url: https://coins.co.th/
     img: coinscoth.png
     bcc: No
     btc: Yes
     othercrypto: Yes
-    
+
   - name: eGifter
     url: https://www.egifter.com/Default.aspx
     img: egifter.png
@@ -138,7 +148,7 @@ websites:
     bcc: No
     btc: Yes
     othercrypto: No
-    
+
   - name: Insight
     url: https://insight.bitpay.com/
     img: insight.png
@@ -146,7 +156,7 @@ websites:
     bcc: Yes
     btc: Yes
     othercrypto: No
-    
+
   - name: Keys4Coins
     url: https://www.keys4coins.com
     img: keys4coins.png
@@ -171,7 +181,7 @@ websites:
     bcc: Yes
     btc: Yes
     othercrypto: Yes
-    
+
   - name: Open Bazaar
     url: https://www.openbazaar.org/
     img: openbazaar.png

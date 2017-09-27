@@ -31,16 +31,6 @@ websites:
       btc: Yes
       doc: https://news.bitcoin.com/introducing-the-simple-to-use-and-robust-bitcoin-com-wallet/
 
-    - name: Breadwallet
-      url: https://breadwallet.com/
-      img: breadwallet.png
-      bcc: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://breadwallet.com/blog/breadwallet-plan-bitcoin-cash-bch/
-      exceptions:
-          text: "Currently only allows withdrawals."
-
     - name: BTC.com
       url: https://wallet.btc.com/
       img: btccom.png
