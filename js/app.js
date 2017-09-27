@@ -6,20 +6,23 @@ $(document).ready(function () {
   }
 
   // Toggle that coin color! Have it whichever way you like it. We just ask that you keep the moon-ward tilt, and cash bill sides to help people distinguish the true Bitcoin of Satoshi's original vision.
-  $('#coin-toggle').click(function () {
-    var coin = $('#bitcoin-logo');
-    var mainCoin = $('#main-coin');
-    var sideCoin = $('.coin-side');
+  $('#coin-toggle').on('click', function () {
+    var mainCoin = $('#main-coin path.glyph');
+    var leftSideCoin = $('.top-side-left-side, .top-side-left-side-force');
+    var rightSideCoin = $('.top-side-right-side, .top-side-right-side-force');
 
-    if (coin.hasClass('green-coin')) {
-      $(coin).removeClass('green-coin');
-      $(mainCoin).removeClass('coin-color-swap').addClass('coin-color-reset');
-      $(sideCoin).removeClass('side-color-swap').addClass('side-color-reset');
-    } else {
-      $(coin).addClass('green-coin');
-      $(mainCoin).addClass('coin-color-swap').removeClass('coin-color-reset');
-      $(sideCoin).addClass('side-color-swap').removeClass('side-color-reset');
-    }
+    mainCoin.removeClass("anim-glyph anim-glyph-force");
+    leftSideCoin.removeClass("top-side-left-side top-side-left-side-force");
+    rightSideCoin.removeClass("top-side-right-side top-side-right-side-force");
+    setTimeout(
+      function(){ mainCoin.addClass('anim-glyph-force') }
+    , 1);
+    setTimeout(
+      function(){ leftSideCoin.addClass('top-side-left-side-force') }
+    , 1);
+    setTimeout(
+      function(){ rightSideCoin.addClass('top-side-right-side-force') }
+    , 1);
   });
 
   // Activate elevator power to the search floor
@@ -34,13 +37,13 @@ $(document).ready(function () {
   });
 
   // Scroll to the top via floating action button
-  $('.fab button:nth-child(1)').click(function () {
+  $('.fab button:nth-child(1)').on('click', function () {
     var body = $("html, body");
     body.stop().animate({scrollTop:0}, 500, 'swing');
   });
 
   // Clear the active search terms
-  $('button#search-clear').click(function () {
+  $('button#search-clear').on('click', function () {
     $('#search-wrapper input').val('');
     $('#no-results').css('display', 'none');
     $('.category').show();
@@ -48,15 +51,15 @@ $(document).ready(function () {
     $('#search-wrapper input').focus();
   });
 
-  $('#ama-merchant').click(function () {
+  $('#ama-merchant').on('click', function () {
     $('.ui.modal.ama-merchant').modal('toggle');
   });
 
-  $('#ama-customer').click(function () {
+  $('#ama-customer').on('click', function () {
     $('.ui.modal.ama-customer').modal('toggle');
   });
 
-  $('#about-this-site').click(function () {
+  $('#about-this-site').on('click', function () {
     $('.ui.modal.about-this-site').modal('toggle');
   });
 
