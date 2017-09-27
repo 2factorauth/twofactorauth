@@ -192,6 +192,15 @@ websites:
       bcc: No
       twitter: formstack
       facebook: formstack
+      
+    - name: Frostwire
+      url: https://www.frostwire.com/
+      img: frostwire.png
+      bcc: Yes
+      btc: Yes
+      twitter: FrostWire
+      exception:
+        test: "Frostwire is free but accepts donations"
 
     - name: IEEE
       url: https://www.ieee.org
