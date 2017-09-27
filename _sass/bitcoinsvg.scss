@@ -26,34 +26,35 @@
       animation-fill-mode: forwards;
     }
 
-    &.top-side {
-      opacity: 0;
-    }
-
-    &.top-side.left-side {
+    &.top-side-left-side {
+      left: 0;
       animation: sidescaleoutleft 420ms ease-out;
       animation-fill-mode: forwards;
       animation-delay: 2s;
+      opacity: 0;
     }
 
-    &.top-side.right-side {
+    &.top-side-left-side-force {
+      left: 0;
+      animation: sidescaleoutleft 420ms ease-out;
+      animation-delay: 1s;
+    }
+
+    &.side-right-fix {
+      right: 0;
+    }
+
+    &.top-side-right-side {
       animation: sidescaleoutright 420ms ease-out;
       animation-fill-mode: forwards;
       animation-delay: 2s;
+      opacity: 0;
     }
-  }
 
-  .side-color-swap {
-    &.left-side, &.right-side {
-      animation: sidecolorswap 1s ease-in-out;
-      animation-fill-mode: forwards;
-    }
-  }
-
-  .side-color-reset {
-    &.left-side, &.right-side {
-      animation: sidecolorreset 1s ease-in-out;
-      animation-fill-mode: forwards;
+    &.top-side-right-side-force {
+      animation: sidescaleoutright 420ms ease-out;
+      animation-delay: 1s;
+      opacity: 0;
     }
   }
 
@@ -78,7 +79,7 @@
     margin: 0 auto;
     display: block;
     text-align: center;
-    background: $green;
+    background: $orange;
     // Rotating as default because Bitcoin Cash is going to the moon! ┗(°0°)┛
     transform: rotate(-28deg);
     animation: spincoin 1s ease-in-out;
@@ -90,19 +91,16 @@
       stroke-dasharray: 2110;
       stroke-dashoffset: 0;
       stroke-linecap: round;
-      animation: dash 1250ms linear;
-      animation-delay: 1s;
       fill: #fff;
     }
 
-    &.coin-color-swap {
-      animation: coincolorswap 1s linear;
-      animation-fill-mode: forwards;
+    .anim-glyph {
+      animation: dash 1250ms linear;
+      animation-delay: 1s;
     }
 
-    &.coin-color-reset {
-      animation: coincolorreset 1s linear;
-      animation-fill-mode: forwards;
+    .anim-glyph-force {
+      animation: dash 1250ms linear;
     }
   }
 }
@@ -165,24 +163,6 @@
   }
 }
 
-@keyframes sidecolorswap {
-  0% {
-    fill: $orange;
-  }
-  100%{
-    fill: $green;
-  }
-}
-
-@keyframes sidecolorreset {
-  0% {
-    fill: $green;
-  }
-  100%{
-    fill: $orange;
-  }
-}
-
 @keyframes sidescaleoutleft {
   0% {
     transform: scale(1);
@@ -202,31 +182,5 @@
   100%{
     transform: scale(1.7) translateX(64px);
     opacity: 0;
-  }
-}
-
-@keyframes coincolorswap {
-  0% {
-    background: $orange;
-  }
-  66% {
-    transform: rotate(1052deg);
-  }
-  100%{
-    background: $green;
-    transform: rotate(1052deg);
-  }
-}
-
-@keyframes coincolorreset {
-  0% {
-    background: $green;
-    transform: rotate(1052deg);
-  }
-  66% {
-    transform: rotate(-28deg);
-  }
-  100%{
-    background: $orange;
   }
 }
