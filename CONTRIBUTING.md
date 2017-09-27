@@ -98,7 +98,7 @@ websites:
 ```
 
 The fields `name:`, `url:`, `img:`, `bcc:` are required for all entries.
-If the site supports Bitcoin or other cryptocurrencies, `btc` and `othercrypto` should be
+If the site supports Bitcoin (Legacy) or other cryptocurrencies, `btc` and `othercrypto` should be
 entered as well.
 
 #### Adding a site that *supports* BCC
@@ -124,7 +124,7 @@ The following is an example of a website that *supports* BCC:
 
 If a site does not accept BCC, the `twitter:` field should be included if the site uses
 Twitter. Facebook can also be included using the `facebook` field, as well as Email using
-the `email_address` field. If the website does not use the English language, the `lang:` 
+the `email_address` field. If the website does not use the English language, the `lang:`
 field should also be included. The fields `btc:` and `othercrypto:` can be completely removed
 but should be added if they accept BTC or any other cryptocurrency respectively.
 
@@ -202,6 +202,9 @@ website. There are 4 ways to customize how it is displayed:
    ```
 
 ### Pro Tips
+
+- You can use a <a href="https://codebeautify.org/yaml-validator" target="_blank">YAML validator</a>
+  to ensure that you've used the correct syntax.
 
 - See Guideline #2 about icons. The png file should go in the corresponding
   `img/section` folder.
