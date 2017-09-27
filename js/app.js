@@ -5,7 +5,7 @@ $(document).ready(function () {
     openCategory(window.location.hash.substring(1));
   }
 
-  // Toggle that coin color! Have it whichever way you like it. We just ask that you keep the moon-ward tilt, and cash bill sides to help people distinguish the true Bitcoin of Satoshi's original vision.
+  // Some frilly animations on click of the main Bitcoin Cash logo
   $('#coin-toggle').on('click', function () {
     var mainCoin = $('#main-coin path.glyph');
     var leftSideCoin = $('.top-side-left-side, .top-side-left-side-force');
@@ -61,6 +61,10 @@ $(document).ready(function () {
 
   $('#about-this-site').on('click', function () {
     $('.ui.modal.about-this-site').modal('toggle');
+  });
+
+  $('#show-disclaimer').on('click', function () {
+    $('.ui.modal.disclaimer').modal('toggle');
   });
 
   // Unveil images 50px before they appear

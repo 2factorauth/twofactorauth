@@ -229,10 +229,10 @@ p {
   }
 
   button#search-clear {
-  
+
     // Tiny workaround until we can get the Issue sorted with null table data
-    visibility: hidden;  
-  
+    visibility: hidden;
+
     display: none;
     position: absolute;
     top: 20px;
@@ -322,6 +322,10 @@ input[type=search] {
 
 .ui.button {
   font-family: Ubuntu, Lato, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ui.inverted.blue.button:hover, .ui.inverted.blue.buttons .button:hover {
+  background: $blue;
 }
 
 .desktop-table {
@@ -616,7 +620,11 @@ span.progress {
     }
 
     .ui.buttons .or {
-       top: 10px;
+      top: 10px;
+
+      &:before {
+        line-height: 1.6;
+      }
     }
   }
 }
@@ -659,17 +667,13 @@ span.progress {
   margin-bottom: 1rem;
 }
 
-.asset-intro {
-  float: left;
-  width: 60%;
-  margin-right: 5%;
+.p-logo {
+  height: 20px;
+  width: auto;
+  vertical-align: text-top;
 }
 
 .ui.list.artwork-list {
-  float: left;
-  width: 35%;
-  margin-top: -0.2rem;
-
   >.item a.header, >.item a.header {
     //color: $link-color !important;
 
@@ -684,6 +688,25 @@ span.progress {
   margin: 0;
   border-top: 3px solid #daecd4;
   padding: 1.5em;
+}
+
+#show-disclaimer {
+  cursor: pointer;
+}
+
+.disclaimer {
+  p {
+    font-size: 1.067rem;
+  }
+}
+
+.remember-this {
+  color: #8aff8a;
+  font-weight: bold;
+}
+.super-important {
+  color: #ea7878;
+  font-weight: bold;
 }
 
 @media(max-width: 768px) {
@@ -775,5 +798,5 @@ span.progress {
   }
 }
 
-// Imports the animated Bitcoin logo with cascaded styles
+// Imports the entire animated Bitcoin Cash logo styles
 @import 'bitcoinsvg';
