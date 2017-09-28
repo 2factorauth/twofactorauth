@@ -34,12 +34,12 @@ websites:
     - name: Bread
       url: https://breadapp.com/
       img: bread.png
-      bcc: Yes
+      bcc: No
       btc: Yes
       othercrypto: Yes
       doc: https://breadapp.com/blog/breadwallet-plan-bitcoin-cash-bch/
       exceptions:
-      text: "Currently only allows withdrawals."
+          text: "Currently only allows withdrawals."
 
     - name: BTC.com
       url: https://wallet.btc.com/
@@ -85,7 +85,7 @@ websites:
     - name: Jaxx
       url: https://jaxx.io/
       img: jaxx.png
-      bcc: Yes
+      bcc: No
       btc: Yes
       doc: http://decentral.ca/update-bch-jaxx/
       exceptions:
