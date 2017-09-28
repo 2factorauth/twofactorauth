@@ -29,6 +29,14 @@ websites:
       bcc: No
       btc: Yes
       
+    - name: Coinify (Merchants)
+      url: https://coinify.com/merchants
+      img: coinify.png
+      bcc: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://news.coinify.com/coinify-merchants-accept-bitcoin-cash/
+      
     - name: CoinPayments
       url: https://www.coinpayments.net/
       img: coinpayments.png
@@ -62,6 +70,14 @@ websites:
       twitter: googlewallet
       img: googlewallet.png
       bcc: No
+      
+    - name: GoUrl.io
+      url: https://gourl.io/
+      twitter: CryptocoinAPI
+      img: gourl.png
+      bcc: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: Klarna
       url: https://www.klarna.com
