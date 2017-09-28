@@ -165,11 +165,18 @@ websites:
       img: mojang.png
       tfa: No
 
-    - name: Nintendo
+    - name: Nintendo Account
       url: https://nintendo.com/
-      img: nintendo.png
+      img: nintendo-account.png
       tfa: Yes
       software: Yes
+
+    - name: Nintendo Network
+      url: https://nintendo.com/
+      twitter: NintendoAmerica
+      facebook: Nintendo
+      img: nintendo-network.png
+      tfa: No
 
     - name: Origin
       url: https://www.origin.com/
@@ -180,7 +187,7 @@ websites:
       software: Yes
       doc: https://help.ea.com/en-us/help/account/origin-login-verification-information/
 
-    - name: PlayStation Network
+    - name: Playstation Network
       url: https://www.playstation.com/
       img: psn.png
       tfa: Yes
