@@ -46,9 +46,18 @@ acceptBitcoin.cash also includes a Docker image for easy deployment. You can bui
 ```
 cd ~/acceptbitcoincash
 gem install bundler
+bundle install
 bundle exec jekyll build
 docker build -t acceptbitcoincash .
-docker run -p 4000:4000 acceptbitcoincash
+docker run -p 4000:80 acceptbitcoincash
+```
+
+If you are doing development, and want to launch a jekyll server which can track your changes. Then you can use the following commands.
+
+```
+cd ~/acceptbitcoincash
+docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
+  -it -p 127.0.0.1:4000:4000 jekyll/jekyll:latest jekyll s
 ```
 
 The acceptBitcoin.cash website should then be accessible from `http://localhost:4000`.
