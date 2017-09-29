@@ -336,6 +336,8 @@ websites:
       bcc: Yes
       btc: Yes
       othercrypto: No
+      exceptions:
+        text: "BCC payments are accepted but only manually at this time."
 
     - name: Target
       url: http://www.target.com/
