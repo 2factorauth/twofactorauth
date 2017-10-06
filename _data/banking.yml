@@ -120,6 +120,15 @@ websites:
       phone: Yes
       email: Yes
 
+    - name: Black Hills Federal Credit Union
+      url: https://www.bhfcu.com
+      img: bhfcu.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      email: Yes
+      doc: https://www.bhfcu.com/Landing/Online-Banking-FAQs
+
     - name: BMO Bank of Montreal
       url: https://www.bmo.com/
       twitter: BMO
@@ -149,17 +158,12 @@ websites:
 
     - name: Capital One
       url: https://www.capitalone.com/
-      twitter: CapitalOne
-      facebook: capitalone
       img: capitalone.png
-      tfa: No
-
-    - name: Capital One 360
-      url: https://home.capitalone360.com/
-      twitter: CapitalOne360
-      facebook: CapitalOne360
-      img: capitalone360.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: https://www.capitalone.com/identity-protection/swiftid/
 
     - name: CDC Federal Credit Union
       url: https://www.cdcfcu.com
@@ -284,6 +288,13 @@ websites:
       tfa: No
       lang: bn
 
+    - name: Easybank
+      url: https://www.easybank.at
+      facebook: easybank
+      img: easybank.png
+      tfa: No
+      lang: de
+
     - name: Erste Bank Hrvatska
       url: https://www.erstebank.hr/
       img: erstehr.png
@@ -320,6 +331,8 @@ websites:
       img: final.png
       tfa: Yes
       sms: Yes
+      software: Yes
+      doc: https://getfinal.com/company-news/2017/05/31/why-final-is-transitioning-to-TOTP-for-2FA/
 
     - name: First Direct
       url: http://www1.firstdirect.com/
@@ -344,7 +357,7 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
-      doc: https://www.firsttechfed.com/OnlineServices/bankonlinesecurely/SecurityKey
+      doc: https://www.firsttechfed.com/Tools-and-Resources/Tools-and-Resources/What-You-Can-Do-To-Protect-Your-Privacy#3
 
     - name: FirstBank
       url: https://www.efirstbank.com/
@@ -354,13 +367,6 @@ websites:
       img: firstbank.png
       tfa: No
 
-    - name: GE Capital Bank
-      url: https://www.gecapitalbank.com
-      twitter: GECapital
-      facebook: GECapitalOfficial
-      img: GECapitalBank.png
-      tfa: No
-
     - name: GLS Gemeinschaftsbank
       url: https://www.gls.de/
       twitter: glsbank
@@ -368,6 +374,13 @@ websites:
       img: gls.png
       tfa: No
       lang: de
+
+    - name: GS Bank
+      url: https://www.gsbank.com
+      twitter: GoldmanSachs
+      facebook: goldmansachs
+      img: gsbank.png
+      tfa: No
 
     - name: Halifax
       url: https://www.halifax.co.uk
@@ -392,7 +405,7 @@ websites:
       tfa: No
 
     - name: HSBC
-      url: https://www.hsbc.com
+      url: http://www.hsbc.com
       img: hsbc.png
       tfa: Yes
       hardware: Yes
@@ -420,12 +433,26 @@ websites:
       hardware: Yes
       doc: https://www.ing.lu/web/ING/EN/Personal/Customerservices/FAQ/MYING_FAQ_EN
 
+    - name: ING-DiBa Austria
+      url: https://www.ing-diba.at
+      twitter: INGDiBaAustria
+      facebook: ingdibaaustria
+      img: ingdibaaustria.png
+      tfa: No
+      lang: de
+
     - name: Intesa Sanpaolo
       url: https://www.intesasanpaolo.com
       img: intesasanpaolo.png
       tfa: Yes
       hardware: Yes
       doc: http://www.intesasanpaolo.com/servizi-multicanale/sicurezza.jsp
+
+    - name: KeyBank
+      url: https://www.key.com
+      twitter: KeyBank_Help
+      img: keybank.png
+      tfa: No
 
     - name: La Banque Postale
       url: https://www.labanquepostale.fr/
@@ -777,6 +804,14 @@ websites:
       img: tdbank.png
       tfa: No
 
+    - name: Tower Federal Credit Union
+      url: https://www.towerfcu.org/
+      img: TowerFCU.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://server.iad.liveperson.net/hc/s-81758502/cmd/kbresource/kb-8660536393490959114/front_page!PAGETYPE?category=5352
+
     - name: Triodos Bank Deutschland
       url: https://www.triodos.de
       twitter: triodosde
@@ -791,6 +826,13 @@ websites:
       facebook: TSBbankUK
       img: tsb.png
       tfa: No
+
+    - name: UBI Banca
+      url: https://www.ubibanca.com/
+      img: ubibanca.png
+      tfa: No
+      facebook: UBIBanca
+      lang: it
 
     - name: Umpqua Bank
       url: https://www.umpquabank.com/
@@ -862,6 +904,14 @@ websites:
       img: wscu.png
       tfa: No
 
+    - name: Widiba
+      url: https://www.widiba.it
+      img: widiba.png
+      tfa: No
+      twitter: widiba_tw
+      facebook: widiba.it
+      lang: it
+
     - name: Zag Bank
       url: https://www.zagbank.ca/
       twitter: zagbank
@@ -876,13 +926,6 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://www.zaba.hr/home/token#pan3
-
-    - name: ZenBanx
-      url: https://zenbanx.ca/
-      twitter: ZenBanx
-      facebook: Zenbanx
-      img: zenbanx.png
-      tfa: No
 
     - name: Zurich Cantonal Bank (ZKB)
       url: https://www.zkb.ch/

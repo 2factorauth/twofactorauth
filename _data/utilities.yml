@@ -6,7 +6,16 @@ websites:
       img: aep.png
       tfa: No
 
-    - name: AT&T
+    - name: Andrews &amp; Arnold
+      url: https://aa.net.uk
+      img: aaisp.png
+      tfa: Yes
+      software: Yes
+      doc: https://aa.net.uk/kb-broadband-2fa.html
+      exceptions:
+          text: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
+
+    - name: AT&amp;T
       url: https://www.att.com/
       twitter: ATTCares
       facebook: ATT
@@ -72,10 +81,9 @@ websites:
       img: dish.png
       tfa: No
 
-    - name: Dominion
-      url: https://www.dom.com/
-      twitter: DomVAPower
-      facebook: dominionvirginiapower
+    - name: Dominion Energy
+      url: https://www.dominionenergy.com/
+      twitter: dominionenergy
       img: dominion.png
       tfa: No
 
@@ -170,7 +178,7 @@ websites:
       tfa: No
       lang: fr
 
-    - name: Pacific Gas and Electric Company PG&E
+    - name: Pacific Gas and Electric Company PG&amp;E
       url: https://www.pge.com/
       twitter: PGE4Me
       facebook: pacificgasandelectric
@@ -201,7 +209,7 @@ websites:
       img: rcn.png
       tfa: No
 
-    - name: Rochester Gas & Electric
+    - name: 'Rochester Gas & Electric'
       url: https://www.rge.com/
       twitter: RGandE
       facebook: RochGandE
@@ -215,7 +223,7 @@ websites:
       img: rogers.png
       tfa: No
 
-    - name: San Diego Gas & Electric
+    - name: 'San Diego Gas & Electric'
       url: https://www.sdge.com/
       twitter: SDGE
       facebook: SanDiegoGasandElectric
@@ -229,7 +237,7 @@ websites:
       sms: Yes
       software: Yes
       phone: Yes
-      doc: https://wiki.sonic.net/wiki/2-Step_Verfication
+      doc: https://wiki.sonic.net/wiki/2-Step_Verification
 
     - name: Southern California Edison
       url: https://www.sce.com/
@@ -268,12 +276,27 @@ websites:
       img: telstra.png
       tfa: No
 
+    - name: Telzio
+      url: https://www.telzio.com/
+      img: telzio.png
+      tfa: Yes
+      software: Yes
+      doc: https://telzio.com/support/two-factor-authentication
+
     - name: Three UK
       url: http://www.three.co.uk/
       twitter: ThreeUK
       facebook: ThreeUK
       img: three.png
       tfa: No
+
+    - name: TIM
+      url: https://www.tim.it/
+      twitter: tim_official
+      facebook: TimOfficialPage
+      img: tim.png
+      tfa: No
+      lang: it
 
     - name: Time Warner Cable
       url: https://www.timewarnercable.com/
@@ -311,7 +334,14 @@ websites:
       tfa: No
       lang: sv
 
-    - name: Virgin Media
+    - name: Virgin Media (IE)
+      url: https://www.virginmedia.ie/
+      twitter: VirginMediaIE
+      facebook: VirginMediaIreland
+      img: virginmedia.png
+      tfa: No
+
+    - name: Virgin Media (UK)
       url: https://www.virginmedia.com/
       twitter: virginmedia
       facebook: virginmedia
@@ -323,6 +353,20 @@ websites:
       twitter: Virgin
       facebook: virgin
       img: virginmobile.png
+      tfa: No
+
+    - name: Vodafone (IE)
+      url: https://www.vodafone.ie/
+      twitter: VodafoneIreland
+      facebook: vodafoneireland
+      img: vodafone.png
+      tfa: No
+
+    - name: Vodafone (IT)
+      url: http://www.vodafone.it/
+      twitter: VodafoneIT
+      facebook: vodafoneit
+      img: vodafone.png
       tfa: No
 
     - name: Vodafone (UK)

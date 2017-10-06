@@ -122,6 +122,12 @@ input[type=search] {
   }
 }
 
+#no-results {
+  display: none;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
 .active-icon {
   background-color: $primary-color;
   color: white;

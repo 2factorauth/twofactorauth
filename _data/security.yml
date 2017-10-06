@@ -4,6 +4,7 @@ websites:
       img: airvpn.png
       tfa: No
       twitter: airvpn
+      facebook: airvpn.org
 
     - name: Blur
       url: https://www.abine.com/
@@ -27,7 +28,7 @@ websites:
           text: "Requires X.509-capable cryptotoken or smartcard."
 
     - name: Cobalt
-      url: https://www.cobalt.io/
+      url: https://cobalt.io/
       img: cobalt.png
       tfa: Yes
       software: Yes
@@ -82,14 +83,12 @@ websites:
       tfa: No
       twitter: gogetssl
 
-    - name: Imperva Incapsula
-      url: https://www.incapsula.com/
-      img: incapsula.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      software: Yes
-      doc: https://docs.incapsula.com/Content/Management%20Console%20and%20Settings/accountsettings.htm
+    - name: hide.me VPN
+      url: https://hide.me/
+      twitter: thevpncompany
+      facebook: www.hide.me
+      img: hidemevpn.png
+      tfa: No
 
     - name: Norton
       url: http://us.norton.com
@@ -131,8 +130,15 @@ websites:
       exceptions:
           text: "TFA can be enabled on Pwn Pulse Accounts upon customer request."
 
+    - name: RBLTracker
+      url: https://rbltracker.com/
+      img: rbltracker.png
+      tfa: Yes
+      software: Yes
+      doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
+
     - name: SSLTrust
-      url: http://ssltrust.com.au/
+      url: https://www.ssltrust.com.au/
       img: ssltrust.png
       tfa: Yes
       software: Yes
@@ -152,11 +158,10 @@ websites:
       twitter: ThreatMetrix
 
     - name: ThreatSim
-      url: http://login.threatsim.com
+      url: https://login.threatsim.com
       img: threatsim.png
       tfa: Yes
       sms: Yes
-      doc: http://threatsim.com/features/
 
     - name: Tinfoil Security
       url: https://www.tinfoilsecurity.com

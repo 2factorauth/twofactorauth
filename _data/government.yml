@@ -1,9 +1,24 @@
 websites:
+    - name: Agenzia delle Entrate
+      url: http://www.agenziaentrate.gov.it/
+      img: agenziaentrate.png
+      tfa: No
+      twitter: Agenzia_Entrate
+      facebook: agenziadelleentrate
+      lang: it
+
     - name: Canada Revenue Agency
       url: http://www.cra-arc.gc.ca
       img: canadarevenueagency.png
       tfa: No
       twitter: canrevagency
+
+    - name: Federal Student Aid
+      url: https://studentaid.ed.gov
+      img: federalstudentaid.png
+      tfa: No
+      twitter: FAFSA
+      facebook: FederalStudentAid
 
     - name: Healthcare.gov
       url: https://healthcare.gov
@@ -11,12 +26,28 @@ websites:
       img: healthcaregov.png
       tfa: No
 
+    - name: HMRC
+      url: https://hmrc.gov.uk
+      img: hmrc.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-sms-text-messages
+
     - name: myGov
       url: https://my.gov.au
       img: mygov.png
       tfa: Yes
       sms: Yes
       doc: https://my.gov.au/mygov/content/html/help.html#sec-features
+
+    - name: RealMe
+      url: https://www.realme.govt.nz/
+      img: realme.png
+      tfa: Yes
+      sms: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.realme.govt.nz/help/#second-factor-authentication
 
     - name: Skatteverket
       url: https://www.skatteverket.se

@@ -19,6 +19,14 @@ websites:
       tfa: No
       twitter: airbnb
 
+    - name: Airtable
+      url: https://airtable.com
+      img: airtable.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://support.airtable.com/hc/en-us/articles/219409917-Setting-up-two-factor-authentication
+
     - name: AngelList
       url: https://angel.co
       img: angellist.png
@@ -56,6 +64,13 @@ websites:
       software: Yes
       doc: https://awardwallet.com/faqs#44
 
+    - name: Bananatag
+      url: https://www.bananatag.com/
+      img: bananatag.png
+      tfa: No
+      twitter: bananatag
+      facebook: trackemail
+
     - name: BasisCode Compliance
       url: http://basiscode.com
       img: basiscode.png
@@ -64,6 +79,14 @@ websites:
       email: Yes
       phone: Yes
       doc: http://basiscode.com/blog/two-factor-authentication-compliance-software/
+
+    - name: Boxcryptor
+      url: https://www.boxcryptor.com
+      img: boxcryptor.png
+      tfa: No
+      twitter: boxcryptor
+      facebook: boxcryptor
+      email_address: info@boxcryptor.com
 
     - name: BuiltWith
       url: https://builtwith.com
@@ -86,6 +109,12 @@ websites:
       sms: Yes
       software: Yes
       doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
+
+    - name: Clickworker
+      url: https://www.clickworker.com/
+      img: clickworker.png
+      tfa: No
+      twitter: clickworker_com
 
     - name: Clio
       url: https://goclio.com
@@ -111,7 +140,7 @@ websites:
       img: cosmolex.png
       tfa: Yes
       sms: Yes
-      doc: http://support.cosmolex.com/customer/portal/articles/2158628
+      doc: http://kb.cosmolex.com/support/solutions/articles/19000028547-how-to-enable-two-factor-authentication-
 
     - name: Crowd Supply
       url: https://www.crowdsupply.com
@@ -120,6 +149,12 @@ websites:
       twitter: crowd_supply
       facebook: CrowdSupply
       email_address: support@crowdsupply.com
+
+    - name: CrowdFlower
+      url: https://www.crowdflower.com/
+      img: crowdflower.png
+      tfa: No
+      twitter: CrowdFlower
 
     - name: Delicious
       url: http://del.icio.us/
@@ -166,6 +201,14 @@ websites:
       email: Yes
       doc: https://everlaw.zendesk.com/hc/en-us/articles/206312165-Two-Factor-Authentication
 
+    - name: Figma
+      url: https://www.figma.com/
+      img: figma.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.figma.com/#_two-factor-authentication
+
     - name: Findmyshift
       url: https://www.findmyshift.com/
       img: findmyshift.png
@@ -180,13 +223,6 @@ websites:
       sms: Yes
       software: Yes
       doc: https://support.formstack.com/customer/portal/articles/1833071-two-factor-authentication
-
-    - name: HMRC
-      url: https://hmrc.gov.uk
-      img: hmrc.png
-      tfa: Yes
-      sms: Yes
-      doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-sms-text-messages
 
     - name: IEEE
       url: https://www.ieee.org
@@ -216,6 +252,22 @@ websites:
       twitter: indeed
       facebook: Indeed
 
+    - name: Instapaper
+      url: https://www.instapaper.com
+      twitter: InstapaperHelp
+      facebook: instapaperholdings
+      email_address: support@help.instapaper.com
+      img: instapaper.png
+      tfa: No
+
+    - name: karriere.at
+      url: http://www.karriere.at
+      img: karriereat.png
+      tfa: No
+      twitter: karriere_at
+      facebook: karriere.at
+      lang: de
+
     - name: Kayako
       url: https://www.kayako.com
       img: kayako.png
@@ -238,17 +290,6 @@ websites:
       tfa: No
       twitter: Liftopia
       facebook: liftopia
-
-    - name: Mandrill
-      url: https://mandrill.com/
-      img: mandrill.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-          text: "SMS only available in the United States, the United Kingdom, Canada or some Caribbean islands."
-      doc: http://help.mandrill.com/entries/57465557
 
     - name: Mixpanel
       url: https://mixpanel.com/
@@ -281,7 +322,7 @@ websites:
       doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
 
     - name: Pastebin
-      url: http://pastebin.com
+      url: https://pastebin.com
       img: pastebin.png
       tfa: No
       twitter: pastebin
@@ -300,7 +341,7 @@ websites:
       img: phraseapp.png
       software: Yes
       tfa: Yes
-      doc: http://blog.phraseapp.com/post/97556438392/extra-secure-user-accounts-in-phraseapp-with
+      doc: https://phraseapp.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
 
     - name: Pinboard
       url: https://pinboard.in/
@@ -350,6 +391,13 @@ websites:
       twitter: signnow
       facebook: BarracudaSignNow
 
+    - name: Spare5
+      url: https://app.spare5.com/fives
+      img: spare5.png
+      tfa: No
+      twitter: spare5
+      facebook: spare5app
+
     - name: StartJOIN
       url: https://www.startjoin.com/
       img: startjoin.png
@@ -371,11 +419,11 @@ websites:
       facebook: upwork
 
     - name: Usabilla
-      url: https://www.usabilla.com
+      url: https://usabilla.com
       img: usabilla.png
       tfa: Yes
       software: Yes
-      doc: http://support.usabilla.com/customer/portal/articles/2098444-2-step-authentication
+      doc: https://support.usabilla.com/hc/en-us/articles/207976889-Setting-up-2-step-authentication
 
     - name: WageWorks
       url: https://www.wageworks.com

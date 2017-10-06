@@ -105,6 +105,14 @@ websites:
       software: Yes
       doc: https://ttlc.intuit.com/questions/2902682-what-is-two-step-verification
 
+    - name: Invoiced
+      url: https://invoiced.com/
+      img: invoiced.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.invoiced.com/knowledge_base/topics/setting-up-two-factor-authentication
+
     - name: Justworks
       url: https://justworks.com/
       img: justworks.png
@@ -140,6 +148,12 @@ websites:
       sms: Yes
       email: Yes
       software: Yes
+
+    - name: money by Envestnet | Yodlee
+      url: https://money.yodlee.com/
+      twitter: Yodlee
+      img: yodlee.png
+      tfa: No
 
     - name: Nexonia
       url: http://www.nexonia.com/
@@ -225,20 +239,13 @@ websites:
       img: quickfile.png
       tfa: Yes
       software: Yes
-      doc: http://help.quickfile.co.uk/main/1/2-factor_authentication.htm
+      doc: https://community.quickfile.co.uk/t/2-factor-authentication/8892
 
     - name: Quizzle
       url: https://www.quizzle.com
       img: quizzle.png
       tfa: No
       twitter: Quizzle
-
-    - name: Ripple Trade
-      url: https://www.rippletrade.com/
-      img: rippletrade.png
-      tfa: Yes
-      sms: Yes
-      doc: https://ripple.com/knowledge_center/using-two-factor-authentication-2fa/
 
     - name: Shoeboxed
       url: https://www.shoeboxed.com/
@@ -290,18 +297,19 @@ websites:
       img: vitality.png
       tfa: No
 
+    - name: WaveApps
+      url: https://www.waveapps.com
+      img: wave.png
+      tfa: No
+      twitter: wavehq
+      facebook: waveHQ
+
     - name: Xero
       url: https://www.xero.com/
       img: xero.png
       tfa: Yes
       software: Yes
       doc: https://help.xero.com/nz/MyXero_Two-Step_About
-
-    - name: Yodlee Moneycenter
-      url: https://yodleemoneycenter.com/
-      twitter: Yodlee
-      img: yodlee.png
-      tfa: No
 
     - name: You Need A Budget (YNAB)
       url: https://www.youneedabudget.com/

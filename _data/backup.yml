@@ -21,7 +21,8 @@ websites:
     img: backblaze.png
     tfa: Yes
     sms: Yes
-    doc: https://www.backblaze.com/blog/two-factor-verification-for-backblaze/
+    software: Yes
+    doc: https://help.backblaze.com/hc/en-us/articles/217666588-Two-Factor-Verification
 
   - name: Box
     url: https://www.box.com/
@@ -43,6 +44,13 @@ websites:
     img: crashplan.png
     tfa: No
     facebook: CrashPlan
+
+  - name: Degoo
+    url: https://degoo.com/
+    img: degoo.png
+    tfa: No
+    twitter: DegooBackup
+    facebook: DegooBackup
 
   - name: Dropbox
     url: https://www.dropbox.com
@@ -83,7 +91,7 @@ websites:
     phone: Yes
     software: Yes
     hardware: Yes
-    doc: http://www.google.com/intl/en-US/landing/2step/features.html
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: hubiC
     url: https://hubic.com/

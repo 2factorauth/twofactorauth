@@ -66,12 +66,6 @@ websites:
       software: Yes
       doc: https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log
 
-    - name: Loyal3
-      url: https://www.loyal3.com/
-      twitter: loyal3
-      img: loyal3.png
-      tfa: No
-
     - name: Manulife
       url: http://www.manulife.ca
       twitter: Manulife
@@ -118,6 +112,13 @@ websites:
       email: Yes
       phone: Yes
       doc: https://www.personalcapital.com/safety-and-security
+
+    - name: Questrade
+      url: https://www.questrade.com
+      img: questrade.png
+      tfa: No
+      twitter: Questrade
+      status: https://twitter.com/Questrade/status/864214855078866977
 
     - name: Raizers
       url: https://www.raizers.com
@@ -196,7 +197,14 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://pages.wealthfront.com/faqs/how-do-i-enable-two-step-authentication-on-my-account/
+      doc: https://support.wealthfront.com/hc/en-us/articles/211004563-How-do-I-enable-two-step-authentication-for-my-account-
+
+    - name: Wealthsimple
+      url: https://www.wealthsimple.com
+      img: wealthsimple.png
+      tfa: No
+      twitter: Wealthsimple
+      facebook: wealthsimple
 
     - name: WiseBanyan
       url: https://www.wisebanyan.com/
