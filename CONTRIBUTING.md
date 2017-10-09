@@ -1,7 +1,7 @@
 Contributing to acceptBitcoin.Cash
 =======================
 
-All the data is managed through a series of [Yaml](yaml.org) files so it may be
+All the data is managed through a series of [Yaml](http://yaml.org) files so it may be
 useful to read up on the Yaml syntax.
 
 To add a new site, go to the [data files](_data/) and get familiar with how it
