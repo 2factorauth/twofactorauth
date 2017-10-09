@@ -41,9 +41,11 @@ websites:
       img: coinpayments.png
       twitter: CoinPayments
       facebook: CoinPaymentsNET
-      bcc: No
+      bcc: Yes
       btc: Yes
       othercrypto: Yes
+      exception:
+        text: "Listed as BCH, not BCC"
 
     - name: Dwolla
       url: https://www.dwolla.com
