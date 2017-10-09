@@ -448,6 +448,12 @@ websites:
       hardware: Yes
       doc: http://www.intesasanpaolo.com/servizi-multicanale/sicurezza.jsp
 
+    - name: KeyBank
+      url: https://www.key.com
+      twitter: KeyBank_Help
+      img: keybank.png
+      tfa: No
+
     - name: La Banque Postale
       url: https://www.labanquepostale.fr/
       twitter: LaBanquePostale
@@ -821,6 +827,13 @@ websites:
       img: tsb.png
       tfa: No
 
+    - name: UBI Banca
+      url: https://www.ubibanca.com/
+      img: ubibanca.png
+      tfa: No
+      facebook: UBIBanca
+      lang: it
+
     - name: Umpqua Bank
       url: https://www.umpquabank.com/
       img:  umpqua.png
@@ -891,6 +904,14 @@ websites:
       img: wscu.png
       tfa: No
 
+    - name: Widiba
+      url: https://www.widiba.it
+      img: widiba.png
+      tfa: No
+      twitter: widiba_tw
+      facebook: widiba.it
+      lang: it
+
     - name: Zag Bank
       url: https://www.zagbank.ca/
       twitter: zagbank
@@ -905,13 +926,6 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://www.zaba.hr/home/token#pan3
-
-    - name: ZenBanx
-      url: https://www.zenbanx.com/
-      twitter: ZenBanx
-      facebook: Zenbanx
-      img: zenbanx.png
-      tfa: No
 
     - name: Zurich Cantonal Bank (ZKB)
       url: https://www.zkb.ch/
