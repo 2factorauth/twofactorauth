@@ -183,9 +183,11 @@ websites:
 
     - name: Reddit
       url: https://www.reddit.com/
-      twitter: reddit
       img: reddit.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "Only for opt-in beta testers."
 
     - name: Snapchat
       url: https://www.snapchat.com/
