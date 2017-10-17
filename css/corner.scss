@@ -3,6 +3,11 @@
 
 @import 'colors';
 
+.github-corner {
+  position: fixed;
+  z-index: 10001;
+}
+
 .github-corner svg {
   fill: $blue;
   color: #FFFFFF;
@@ -10,7 +15,6 @@
   top: 0;
   border: 0;
   right: 0;
-  z-index: 10000;
 }
 
 .github-corner:hover .octo-arm {

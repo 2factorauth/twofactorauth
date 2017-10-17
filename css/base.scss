@@ -11,7 +11,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, 
 
 html, body {
   @include box-sizing(border-box);
-  height: 100%;
+  height: auto;
   font-size: 18px;
 }
 
@@ -51,6 +51,28 @@ p {
 
 [data-tooltip]:after {
   font-size: 0.8rem;
+}
+
+.bcc-only {
+  padding: 5px 10px;
+  background: #fff;
+  border: 3px solid #DAECD4;
+  border-radius: 10px;
+  clear: both;
+  transition: 1s all ease-in-out;
+
+  &.is_stuck {
+    z-index: 10000;
+    background: rgba(247, 148, 29, 0.94);
+    border: 3px solid transparent;
+    border-bottom: 3px solid #fff;
+    border-radius: 0;
+    color: #505050;
+  }
+}
+
+.no-bcc {
+  transition: 1s all ease-in-out;
 }
 
 .coin-wrap {
@@ -738,6 +760,16 @@ span.progress {
         display: block;
         width: 100%;
       }
+    }
+  }
+
+  .bcc-only {
+    font-size: 1rem;
+    line-height: 1.3;
+
+    .z-switch .z-switch--container {
+      display: block;
+      margin: 0 auto 10px;
     }
   }
 

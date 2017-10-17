@@ -36,6 +36,11 @@ $(document).ready(function () {
     }
   });
 
+  // Stick the BCC-only filter to the top on scroll
+  $(".bcc-only").stick_in_parent({
+    parent: 'html'
+  });
+
   // Scroll to the top via floating action button
   $('.fab button:nth-child(1)').on('click', function () {
     var body = $("html, body");
@@ -159,6 +164,24 @@ $('.category').click(function () {
 });
 
 /**
+ * Toggle visibility of merchants who accept Bitcoin Cash
+ */
+$('.z-switch').click(function () {
+  BCCfilter();
+});
+
+/**
+ * Check if the user wants to filter by Bitcoin Cash only
+ */
+function BCCfilter() {
+  if ($('#show-bcc-only').is(':checked')) {
+    $('.no-bcc').css('display', 'none')
+  } else {
+    $('.no-bcc').css('display', 'table-row')
+  }
+}
+
+/**
  * Checks if a category is open
  *
  * @param category The id of a category as a string
@@ -177,6 +200,8 @@ function openCategory(category) {
   // Close all active categories
   $('.category h5 i').removeClass('active-icon');
   $('.website-table').css('display', 'none');
+  $(document.body).trigger("sticky_kit:recalc");
+  BCCfilter();
 
   // Place the category being viewed in the URL bar
   window.location.hash = category;
@@ -207,5 +232,6 @@ function closeCategory(category) {
   $('.' + category + '-table').slideUp();
   $('#' + category + ' h5 i').removeClass('active-icon');
   // Remove hash from URL, prevent the scroll position from jumping to the top
+  $(document.body).trigger("sticky_kit:recalc");
   history.pushState('', document.title, window.location.pathname);
 }

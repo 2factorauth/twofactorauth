@@ -26,7 +26,7 @@
       {% assign progress_tweet = page.progress_tweet %}
       {% assign workonit_tweet = page.workonit_tweet %}
     {% endif %}
-    <tr class="desktop-tr">
+    <tr class="desktop-tr{% if website.bcc == false %} no-bcc{% endif %}">
       {% if website.status %}
         <td class="main progress">
           <div class="title">
