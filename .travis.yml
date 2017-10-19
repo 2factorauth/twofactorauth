@@ -9,10 +9,10 @@ cache:
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - TEST: proof
-  - TEST: verify
-  - TEST: rubocop
-  - TEST: proof_external
+  TEST: proof
+  TEST: verify
+  TEST: rubocop
+  TEST: proof_external
 
 before_install: gem update --system --no-doc
 
