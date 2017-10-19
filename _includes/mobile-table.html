@@ -7,7 +7,7 @@
   </div>
   <div class="bcc-merchant-content">
     {% if section_title == "Banking" %}
-    <div class="main negative">
+    <div class="main negative{% if website.bcc == false %} no-bcc{% endif %}">
       <div class="title">
         <i class="big remove circle icon"></i> Nothing found.
       </div>
@@ -44,7 +44,7 @@
       </div>
     </div>
     {% elsif website.bcc or website.btc or website.othercrypto %}
-    <div {% if website.bcc %}class="main positive"{% elsif website.btc or website.othercrypto %}class="main negative"{% endif %}>
+    <div {% if website.bcc %}class="main positive"{% elsif website.btc or website.othercrypto %}class="main negative no-bcc"{% endif %}>
       <div class="title">
         {% if website.img %}
         <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
@@ -82,7 +82,7 @@
       {% endif %}
     </div>
     {% else %}
-    <div class="main negative">
+    <div class="main negative no-bcc">
       <div class="title">
         {% if website.img %}
         <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>

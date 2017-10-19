@@ -1,39 +1,14 @@
 // When DOM elements are ready, excluding images
 $(document).ready(function () {
+
   // Check if URL references specific category
   if (window.location.hash && window.location.hash.indexOf('#') > -1) {
     openCategory(window.location.hash.substring(1));
   }
 
   // Some frilly animations on click of the main Bitcoin Cash logo
-  $('#coin-toggle').on('click', function () {
-    var mainCoin = $('#main-coin path.glyph');
-    var leftSideCoin = $('.top-side-left-side, .top-side-left-side-force');
-    var rightSideCoin = $('.top-side-right-side, .top-side-right-side-force');
-
-    mainCoin.removeClass("anim-glyph anim-glyph-force");
-    leftSideCoin.removeClass("top-side-left-side top-side-left-side-force");
-    rightSideCoin.removeClass("top-side-right-side top-side-right-side-force");
-    setTimeout(
-      function(){ mainCoin.addClass('anim-glyph-force') }
-    , 1);
-    setTimeout(
-      function(){ leftSideCoin.addClass('top-side-left-side-force') }
-    , 1);
-    setTimeout(
-      function(){ rightSideCoin.addClass('top-side-right-side-force') }
-    , 1);
-  });
-
-  // Activate elevator power to the search floor
-  var primaryElevator = new Elevator({
-    element: document.querySelector('.fab button:nth-child(2)'),
-    targetElement: document.querySelector('#search-wrapper'),
-    verticalPadding: 90,  // in pixels
-    duration: 420, // milliseconds
-    endCallback: function() {
-      $('#search-wrapper input').focus();
-    }
+  $('#coin-toggle').click(function (){
+    coinEffect();
   });
 
   // Stick the BCC-only filter to the top on scroll
@@ -41,10 +16,22 @@ $(document).ready(function () {
     parent: 'html'
   });
 
-  // Scroll to the top via floating action button
-  $('.fab button:nth-child(1)').on('click', function () {
+  // Scroll to the top via floating action button and filter bar link, then pop some flair
+  $('.fab button:nth-child(1), #top-btn-top').on('click', function () {
     var body = $("html, body");
-    body.stop().animate({scrollTop:0}, 500, 'swing');
+    body.stop().animate({scrollTop:0}, 500, 'swing', function () {
+      coinEffect();
+      if (window.location.hash && window.location.hash.indexOf('#') > -1) {
+        document.location.hash = window.location.hash.substring(1);
+      }
+    });
+  });
+
+  // Scroll to the search field and focus it via floating action button and filter bar link
+  $('.fab button:nth-child(2), #top-btn-search').on('click', function () {
+    var body = $("html, body");
+    body.stop().animate({scrollTop: $('#search-wrapper').offset().top}, 500, 'swing');
+    $('#search-wrapper input').focus();
   });
 
   // Clear the active search terms
@@ -81,6 +68,29 @@ $(document).ready(function () {
   });
   $('a.popup.exception').popup();
 });
+
+/**
+ * Draw a neat animation on the main Bitcoin Cash logo at the top of the page
+ */
+function coinEffect() {
+    var mainCoin = $('#main-coin path.glyph');
+    var leftSideCoin = $('.top-side-left-side, .top-side-left-side-force');
+    var rightSideCoin = $('.top-side-right-side, .top-side-right-side-force');
+
+    mainCoin.removeClass("anim-glyph anim-glyph-force");
+    leftSideCoin.removeClass("top-side-left-side top-side-left-side-force");
+    rightSideCoin.removeClass("top-side-right-side top-side-right-side-force");
+    setTimeout(
+      function(){ mainCoin.addClass('anim-glyph-force') }
+    , 1);
+    setTimeout(
+      function(){ leftSideCoin.addClass('top-side-left-side-force') }
+    , 1);
+    setTimeout(
+      function(){ rightSideCoin.addClass('top-side-right-side-force') }
+    , 1);
+  }
+
 
 /**
  * Create an event that is called 500ms after the browser
@@ -154,7 +164,7 @@ var jets = new Jets({
  * after re-sizing the screen and close all categories after re-sizing
  */
 $(window).on('resizeEnd', function () {
-  if (isSearching) jets.options.didSearch($('#jets-search').val());
+  if (isSearching) jets.options.didSearch( $('#jets-search').val() );
 });
 
 // Display tables and color category selectors
@@ -175,10 +185,19 @@ $('.z-switch').click(function () {
  */
 function BCCfilter() {
   if ($('#show-bcc-only').is(':checked')) {
-    $('.no-bcc').css('display', 'none')
+    $('.no-bcc').css('display', 'none');
   } else {
-    $('.no-bcc').css('display', 'table-row')
+    $('.mobile-table .no-bcc').css('display', 'block');
+    $('.desktop-table .no-bcc').css('display', 'table-row');
   }
+
+// borked. Attempting to reset scroll position, mainly for mobile -- needs more work, no time atm
+
+  //if (window.location.hash && window.location.hash.indexOf('#') > -1) {
+    //var body = $("html, body");
+    //body.stop().animate({scrollTop: $(window.location.hash).offset().top}, 500, 'swing');
+    //$('#search-wrapper input').focus();
+  //}
 }
 
 /**
