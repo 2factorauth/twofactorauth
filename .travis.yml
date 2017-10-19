@@ -9,16 +9,17 @@ cache:
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - TEST=proof
-  - TEST=verify
-  - TEST=rubocop
-  - TEST=proof_external
+
+  - TEST_SUITE=proof
+  - TEST_SUITE=verify
+  - TEST_SUITE=rubocop
+  - TEST_SUITE=proof_external
 
 before_install: gem update --system --no-doc
 
 matrix:
   include:
-      script: "bundle exec rake $TEST"
+    - script: "bundle exec rake $TEST_SUITE"
 
   allow_failures:
     - script: "bundle exec rake proof_external"
