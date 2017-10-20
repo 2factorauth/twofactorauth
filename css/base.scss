@@ -65,19 +65,26 @@ p {
 
   > div {
     position: relative;
+    background: #f0f;
     overflow: auto;
-    width: 100%;
-    max-width: 1157px;
+    width: 705px;
     margin: 0 auto;
     padding: 0 64px 0 5px;
+    transition: 1s all ease-in-out;
   }
 
-  &.is_stuck {
+  &.fixto-fixed {
     z-index: 10000;
-    //background: rgba(247, 148, 29, 0.94); // causes a flicker due to the sticky-kit JS
+    background: rgba(247, 148, 29, 0.94); // causes a flicker due to the sticky-kit JS
     border: 3px solid transparent;
     border-bottom: 3px solid #327B9E;
     color: #327B9E;
+
+    > div {
+      width: 100%;
+      max-width: 1157px;
+      background: #fff;
+    }
   }
 
   .z-switch {
@@ -295,10 +302,6 @@ p {
   }
 
   button#search-clear {
-
-    // Tiny workaround until we can get the Issue sorted with null table data
-    visibility: hidden;
-
     display: none;
     position: absolute;
     top: 20px;

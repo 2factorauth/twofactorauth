@@ -12,8 +12,8 @@ $(document).ready(function () {
   });
 
   // Stick the BCC-only filter to the top on scroll
-  $(".bcc-only").stick_in_parent({
-    parent: 'html'
+  $(".bcc-only").fixTo('html', {
+    useNativeSticky: false
   });
 
   // Scroll to the top via floating action button and filter bar link, then pop some flair
@@ -41,7 +41,7 @@ $(document).ready(function () {
     $('.category').show();
     $('table').show();
     $('#search-wrapper input').focus();
-    jets.search();
+    if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
   });
 
   $('#ama-merchant').on('click', function () {
@@ -151,10 +151,11 @@ var jets = new Jets({
 
       isSearching = true;
 
-      $('html, body').scrollTop($('#search-wrapper').offset().top - 15);
+      $('html, body').stop().animate({scrollTop: $('#maingrid').offset().top - 120}, 500, 'swing');
+      //$('html, body').scrollTop($('#search-wrapper').offset().top - 15);
     }
   },
-  hideBy: 'display: none !important',
+  addImportant: true,
   // Process searchable elements manually
   manualContentHandling: function(tag) {
     return $(tag).find('.title > a.name').text();
@@ -166,7 +167,7 @@ var jets = new Jets({
  * after re-sizing the screen and close all categories after re-sizing
  */
 $(window).on('resizeEnd', function () {
-  if (isSearching) jets.options.didSearch( $('#jets-search').val() );
+  if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
 });
 
 // Display tables and color category selectors
@@ -188,9 +189,11 @@ $('.z-switch').click(function () {
 function BCCfilter() {
   if ($('#show-bcc-only').is(':checked')) {
     $('.no-bcc').css('display', 'none');
+    if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
   } else {
     $('.mobile-table .no-bcc').css('display', 'block');
     $('.desktop-table .no-bcc').css('display', 'table-row');
+    if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
   }
 }
 
