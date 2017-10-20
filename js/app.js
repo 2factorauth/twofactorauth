@@ -41,6 +41,7 @@ $(document).ready(function () {
     $('.category').show();
     $('table').show();
     $('#search-wrapper input').focus();
+    jets.search();
   });
 
   $('#ama-merchant').on('click', function () {
@@ -153,6 +154,7 @@ var jets = new Jets({
       $('html, body').scrollTop($('#search-wrapper').offset().top - 15);
     }
   },
+  hideBy: 'display: none !important',
   // Process searchable elements manually
   manualContentHandling: function(tag) {
     return $(tag).find('.title > a.name').text();
@@ -190,14 +192,6 @@ function BCCfilter() {
     $('.mobile-table .no-bcc').css('display', 'block');
     $('.desktop-table .no-bcc').css('display', 'table-row');
   }
-
-// borked. Attempting to reset scroll position, mainly for mobile -- needs more work, no time atm
-
-  //if (window.location.hash && window.location.hash.indexOf('#') > -1) {
-    //var body = $("html, body");
-    //body.stop().animate({scrollTop: $(window.location.hash).offset().top}, 500, 'swing');
-    //$('#search-wrapper input').focus();
-  //}
 }
 
 /**
