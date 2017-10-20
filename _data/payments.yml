@@ -47,6 +47,14 @@ websites:
       exception:
         text: "Listed as BCH, not BCC"
 
+    - name: Coin Simple
+      url: https://coinsimple.com
+      img: coinsimple.png
+      twitter: coinsimple
+      facebook: coinsimple
+      bcc: No
+      btc: Yes
+
     - name: Dwolla
       url: https://www.dwolla.com
       img: dwolla.png
@@ -65,6 +73,15 @@ websites:
       url: https://gocardless.com/
       twitter: GoCardless
       bcc: No
+
+    - name: GoCoin
+      url: https://gocoin.com
+      img: gocoin.png
+      twitter: gocoin
+      facebook: gocoiner
+      bcc: No
+      btc: Yes
+      othercrypto: Yes
 
     - name: Google Wallet
       url: http://www.google.com/wallet/
