@@ -21,9 +21,11 @@ $(document).ready(function () {
     var body = $("html, body");
     body.stop().animate({scrollTop:0}, 500, 'swing', function () {
       coinEffect();
-      if (window.location.hash && window.location.hash.indexOf('#') > -1) {
-        document.location.hash = window.location.hash.substring(1);
-      }
+
+      // Restores the opened category hash in URL, but causes Firefox to skip back to it
+      //if (window.location.hash && window.location.hash.indexOf('#') > -1) {
+        //document.location.hash = window.location.hash.substring(1);
+      //}
     });
   });
 
@@ -229,7 +231,7 @@ function openCategory(category) {
 
     // Scroll smoothly to category selector
     var body = $("html, body");
-    body.stop().animate({scrollTop: icon.offset().top - 15}, 1000, 'swing');
+    body.stop().animate({scrollTop: icon.offset().top - 120}, 1000, 'swing');
 
   } else {
     $('#' + category + '-mobiletable').css('display','block');
