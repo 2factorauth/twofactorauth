@@ -76,6 +76,17 @@ websites:
       software: Yes
       doc: https://support.faceit.com/hc/en-us/articles/115000254670-Enabling-2-Factor-Authentication-
 
+    - name: Gaijin Entertainment
+      url: https://gaijin.net
+      img: gaijin.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.gaijin.net/hc/en-us/articles/203623622-How-to-set-up-the-Two-Step-Authorization-Google-Authenticator-
+      exceptions:
+          text: "A verified phone number is required for the use of two-factor authentication through email or software."
+
     - name: GameFly
       url: https://www.gamefly.com/
       twitter: GameFly
