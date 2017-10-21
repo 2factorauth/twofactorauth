@@ -84,6 +84,8 @@ websites:
       sms: Yes
       software: Yes
       doc: https://support.gaijin.net/hc/en-us/articles/203623622-How-to-set-up-the-Two-Step-Authorization-Google-Authenticator-
+      exceptions:
+          text: "A verified phone number is required for the use of two-factor authentication through email or software."
 
     - name: GameFly
       url: https://www.gamefly.com/
