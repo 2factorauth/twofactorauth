@@ -36,14 +36,32 @@ $(document).ready(function () {
     $('#search-wrapper input').focus();
   });
 
+  // Clear and collapse all open categories
+  $('.fab button:nth-child(3)').on('click', function () {
+    if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
+    if (isSearching == false) {
+      $('.website-table').slideUp();
+      var body = $("html, body");
+      body.stop().animate({scrollTop: $('.category h5 i.active-icon').offset().top - 120}, 1000, 'swing');
+      $('.category h5 i').removeClass('active-icon');
+    } else {
+      if ($(this).hasClass('attention')) {
+        $(this).removeClass('attention');
+      } else {
+        $(this).addClass('attention');
+      }
+    }
+  });
+
   // Clear the active search terms
   $('button#search-clear').on('click', function () {
-    $('#search-wrapper input').val('');
+    $('#search-wrapper input#bcc-merchant-search').val('');
     $('#no-results').css('display', 'none');
     $('.category').show();
-    $('table').show();
-    $('#search-wrapper input').focus();
-    if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
+    $('.website-table').hide();
+    $('#maingrid').css('visibility', 'visible');
+    $('#search-wrapper input#bcc-merchant-search').focus();
+    $('head style').html("");
   });
 
   $('#ama-merchant').on('click', function () {
@@ -76,23 +94,23 @@ $(document).ready(function () {
  * Draw a neat animation on the main Bitcoin Cash logo at the top of the page
  */
 function coinEffect() {
-    var mainCoin = $('#main-coin path.glyph');
-    var leftSideCoin = $('.top-side-left-side, .top-side-left-side-force');
-    var rightSideCoin = $('.top-side-right-side, .top-side-right-side-force');
+  var mainCoin = $('#main-coin path.glyph');
+  var leftSideCoin = $('.top-side-left-side, .top-side-left-side-force');
+  var rightSideCoin = $('.top-side-right-side, .top-side-right-side-force');
 
-    mainCoin.removeClass("anim-glyph anim-glyph-force");
-    leftSideCoin.removeClass("top-side-left-side top-side-left-side-force");
-    rightSideCoin.removeClass("top-side-right-side top-side-right-side-force");
-    setTimeout(
-      function(){ mainCoin.addClass('anim-glyph-force') }
-    , 1);
-    setTimeout(
-      function(){ leftSideCoin.addClass('top-side-left-side-force') }
-    , 1);
-    setTimeout(
-      function(){ rightSideCoin.addClass('top-side-right-side-force') }
-    , 1);
-  }
+  mainCoin.removeClass("anim-glyph anim-glyph-force");
+  leftSideCoin.removeClass("top-side-left-side top-side-left-side-force");
+  rightSideCoin.removeClass("top-side-right-side top-side-right-side-force");
+  setTimeout(
+    function(){ mainCoin.addClass('anim-glyph-force') }
+  , 1);
+  setTimeout(
+    function(){ leftSideCoin.addClass('top-side-left-side-force') }
+  , 1);
+  setTimeout(
+    function(){ rightSideCoin.addClass('top-side-right-side-force') }
+  , 1);
+}
 
 
 /**
@@ -115,6 +133,7 @@ var jets = new Jets({
   didSearch: function (searchPhrase) {
     document.location.hash = '';
     $('#no-results').css('display', 'none');
+    $('#maingrid').css('visibility', 'visible');
     $('.category h5 i').removeClass('active-icon');
     // Two separate table layouts are used for desktop/mobile
     var platform = ($(window).width() > 768) ? 'desktop' : 'mobile';
@@ -147,6 +166,7 @@ var jets = new Jets({
 
       if (table.children().length == table.children(':hidden').length) {
           $('#no-results').css('display', 'block');
+          $('#maingrid').css('visibility', 'hidden');
       }
 
       $('#search-clear').fadeIn('slow');
@@ -189,7 +209,14 @@ $('.z-switch').click(function () {
  * Check if the user wants to filter by Bitcoin Cash only
  */
 function BCCfilter() {
+//  var openCat = $('.website-table:visible');
+//  var openCatChildren = $('.website-table:visible').find('.bcc-merchant-content').children(':visible').length;
+
   if ($('#show-bcc-only').is(':checked')) {
+    //console.log(openCat + ' +++ ' + openCatChildren);
+    //if (openCatChildren != '0') {
+      //console.log('yeaeea baybye')
+    //}
     $('.no-bcc').css('display', 'none');
     if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
   } else {
@@ -236,7 +263,9 @@ function openCategory(category) {
   } else {
     $('#' + category + '-mobiletable').css('display','block');
     // Quickly snap to category selector
-    document.location.hash = category;
+    var body = $("html, body");
+    body.stop().animate({scrollTop: icon.offset().top - 120}, 1000, 'swing');
+    //document.location.hash = category;
   }
 
 }
@@ -249,7 +278,5 @@ function openCategory(category) {
 function closeCategory(category) {
   $('.' + category + '-table').slideUp();
   $('#' + category + ' h5 i').removeClass('active-icon');
-  // Remove hash from URL, prevent the scroll position from jumping to the top
-  $(document.body).trigger("sticky_kit:recalc");
   history.pushState('', document.title, window.location.pathname);
 }
