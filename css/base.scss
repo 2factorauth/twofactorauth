@@ -348,7 +348,8 @@ p {
           position: relative;
           white-space: nowrap;
           line-height: 2.3;
-          padding-right: 55px;
+          // Use with now-commented out search-logo
+          //padding-right: 55px;
 
           .z-switch--container {
             margin-right: 5px;
@@ -446,7 +447,8 @@ p {
           }
 
           .z-switch {
-            padding-right: 64px;
+            // Use with now-commented out search-logo
+            //padding-right: 64px;
 
             .search-logo {
               margin-top: 12px;
@@ -911,6 +913,10 @@ span.progress {
   font-weight: bold;
 }
 
+//
+// Mobile breakpoint
+//
+
 @media(max-width: 768px) {
 
   .fab {
@@ -971,6 +977,7 @@ span.progress {
           padding: 11px 0;
 
           label:not(.z-switch) {
+            margin-bottom: 10px;
 
             i.icon.search {
               display: none;
@@ -1011,7 +1018,7 @@ span.progress {
         padding: 0;
 
         > div #search-wrapper {
-          padding: 11px 0;
+          padding: 11px 3px;
 
           label {
             text-align: center;
