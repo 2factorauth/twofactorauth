@@ -189,6 +189,12 @@ p {
       margin-top: 40px;
       border-radius: 10px 10px 0 0;
       border-bottom: 0;
+
+      .sub.header {
+        &:first-of-type {
+          font-size: 1.2rem;
+        }
+      }
     }
 
     &#header-copy-2 {
@@ -199,16 +205,14 @@ p {
         padding: 0 0 15px;
       }
     }
-  }
 
-  .title-wrap {
     .sub.header {
       margin: 10px auto;
       padding: 15px 0;
-      max-width: 81%;
+      max-width: 90%;
 
       &:first-of-type {
-        padding: 15px 20px;
+        padding: 15px;
       }
     }
   }
@@ -256,7 +260,7 @@ p {
       #search-wrapper {
         width: 100%;
         margin: 0 auto;
-        padding: 11px 0 0;
+        padding: 0;
         position: relative;
         overflow: auto;
         text-align: center;
@@ -290,7 +294,7 @@ p {
             display: block;
             width: 560px;
             padding: 10px 10px 10px 60px;
-            margin: 0 auto 10px;
+            margin: 0 auto;
             background: #eee;
             color: $blue;
             font-weight: 300;
@@ -937,11 +941,16 @@ span.progress {
         }
       }
 
+      &#header-copy-2 {
+        border-radius: 0;
+      }
+
       h2 {
         border-radius: 0;
       }
 
       .title-footer {
+
         a {
           margin: 0.5rem 0;
           display: block;
