@@ -211,14 +211,7 @@ $('.z-switch').click(function () {
  * Check if the user wants to filter by Bitcoin Cash only
  */
 function BCCfilter() {
-//  var openCat = $('.website-table:visible');
-//  var openCatChildren = $('.website-table:visible').find('.bcc-merchant-content').children(':visible').length;
-
-  if ($('#show-bcc-only').is(':checked')) {
-    //console.log(openCat + ' +++ ' + openCatChildren);
-    //if (openCatChildren != '0') {
-      //console.log('yeaeea baybye')
-    //}
+ if ($('#show-bcc-only').is(':checked')) {
     $('.no-bcc').css('display', 'none');
     if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
   } else {
@@ -247,7 +240,6 @@ function openCategory(category) {
   // Close all active categories
   $('.category h5 i').removeClass('active-icon');
   $('.website-table').css('display', 'none');
-  $(document.body).trigger("sticky_kit:recalc");
   BCCfilter();
 
   // Place the category being viewed in the URL bar
