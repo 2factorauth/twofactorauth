@@ -31,6 +31,16 @@ websites:
       btc: Yes
       doc: https://news.bitcoin.com/introducing-the-simple-to-use-and-robust-bitcoin-com-wallet/
 
+    - name: Blockchain
+      url: https://blockchain.info/
+      img: blockchain.png
+      bcc: No
+      btc: Yes
+      othercrypto: Yes
+      facebook: blockchain
+      twitter: blockchain
+      status: https://blog.blockchain.com/2017/10/11/bitcoin-cash-bch/
+
     - name: Bread
       url: https://breadapp.com/
       img: bread.png
@@ -95,8 +105,7 @@ websites:
       bcc: No
       btc: Yes
       doc: http://decentral.ca/update-bch-jaxx/
-      exceptions:
-          text: "Currently only allows withdrawals."
+      status: http://decentral.ca/update-bch-jaxx/
 
     - name: KeepKey
       url: https://www.keepkey.com/
