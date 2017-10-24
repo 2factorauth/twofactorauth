@@ -169,11 +169,20 @@ websites:
       img: mojang.png
       tfa: No
 
+    - name: Nintendo Account
+      url: https://accounts.nintendo.com/
+      img: nintendo-account.png
+      tfa: Yes
+      software: Yes
+      doc: http://en-americas-support.nintendo.com/app/answers/detail/a_id/27496
+      exceptions:
+          text: "2FA not available for child accounts (users 12 years of age or younger) or supervised accounts (users 13 years of age or older attached to a parent account)."
+
     - name: Nintendo Network
-      url: https://www.nintendo.com/
+      url: https://id.nintendo.net/
       twitter: NintendoAmerica
       facebook: Nintendo
-      img: nintendo.png
+      img: nintendo-network.png
       tfa: No
 
     - name: Origin
