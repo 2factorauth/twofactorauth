@@ -47,8 +47,10 @@ $(document).ready(function () {
     } else {
       if ($(this).hasClass('attention')) {
         $(this).removeClass('attention');
+        $("#bcc-merchant-search").removeClass('attention');
       } else {
         $(this).addClass('attention');
+        $("#bcc-merchant-search").addClass('attention');
       }
     }
   });

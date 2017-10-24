@@ -116,12 +116,12 @@ p {
         left: 11px;
       }
     }
-
-    &.attention {
-      animation: 420ms attention;
-      animation-iteration-count: 3;
-    }
   }
+}
+
+.attention {
+  animation: 420ms attention;
+  animation-iteration-count: 3;
 }
 
 .website-table .left,
@@ -277,7 +277,7 @@ p {
           i.icon.search {
             position: absolute;
             left: 92px;
-            top: 14px;
+            top: 12px;
             color: $blue-light;
             display: inline-block;
             font-size: inherit;
@@ -302,7 +302,8 @@ p {
             -moz-box-sizing: border-box;
             box-sizing: border-box;
             border-radius: 10px;
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75);
+            //box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75);
+            opacity: 1;
             @include transition(all, ease, 300ms);
 
             &:focus {
@@ -325,14 +326,14 @@ p {
             height: 28px;
             overflow: hidden;
             line-height: 1;
-            background: #eee;
+            background: transparent;
             border: none;
             cursor: pointer;
 
             &:focus {
               outline-style: dotted;
-              outline-width: 4px;
-              outline-color: #900;
+              outline-width: 1px;
+              outline-color: #faa;
             }
 
             i {
@@ -403,10 +404,11 @@ p {
     &.fixto-fixed {
       z-index: 10000;
       padding: 0 64px;
-      background: $orange;
+      background: $gray;
       border: 3px solid transparent;
-      border-bottom: 3px solid #327B9E;
-      color: $blue;
+      border-bottom: 2px solid #327B9E;
+      color: $orange;
+      box-shadow: 0 0px 64px rgba(50, 123, 158, 0.888);
 
       > div {
         width: 100%;
@@ -416,9 +418,9 @@ p {
 
         #search-wrapper {
           padding: 11px 0 4px;
-          background: $orange;
-          color: $gray;
-          border-color: transparent;
+          background: transparent;
+          //color: $gray;
+          border: 0;
           text-align: left;
 
           label {
@@ -433,12 +435,13 @@ p {
               float: left;
               width: 420px;
               margin: -1px 20px 8px 10px;
-              border: 3px $blue-dark solid;
+              //border: 3px $blue-dark solid;
+              border-color: transparent;
               color: $blue;
 
               &:focus {
-                border: 3px $blue-dark solid;
-                box-shadow: 0 0 10px $blue;
+                border: 3px $orange solid;
+                box-shadow: 0 0 10px $blue-light;
               }
             }
 
