@@ -255,6 +255,8 @@ p {
       overflow: auto;
       width: 705px;
       margin: 0 auto;
+      border: 3px solid #DAECD4;
+      border-width: 0 3px;
       transition: 1s all ease-in-out;
 
       #search-wrapper {
@@ -266,8 +268,6 @@ p {
         text-align: center;
         background: $gray;
         color: $orange;
-        border: 3px solid #DAECD4;
-        border-width: 0 3px;
         transition: 1s all ease-in-out;
 
         label:not(.z-switch) {
@@ -414,13 +414,13 @@ p {
         width: 100%;
         max-width: 1157px;
         padding: 0 10px;
+        border: 0;
         color: #fff;
 
         #search-wrapper {
           padding: 11px 0 4px;
           background: transparent;
           //color: $gray;
-          border: 0;
           text-align: left;
 
           label {
