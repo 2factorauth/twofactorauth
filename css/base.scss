@@ -162,6 +162,7 @@ p {
 
 #top-header {
   padding: 0 0 20px;
+  border-radius: 10px;
 
   a {
     color: $link-on-dark;
@@ -181,50 +182,41 @@ p {
 
   .title-wrap {
     display: inline-block;
-    background: $gray;
     border: 3px solid #DAECD4;
     width: 705px;
+    margin-top: 40px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 0;
 
-    &#header-copy-1 {
-      margin-top: 40px;
-      border-radius: 10px 10px 0 0;
-      border-bottom: 0;
+    .inner-title {
+      background: $gray;
+      padding-bottom: 15px;
 
       .sub.header {
+        margin: 0 auto;
+        padding: 15px 0;
+        max-width: 90%;
+
+        &.how-to-contrib {
+          padding-top: 0;
+          margin-top: 0;
+        }
+
         &:first-of-type {
           font-size: 1.2rem;
+          padding: 30px 15px 20px;
         }
-      }
-    }
-
-    &#header-copy-2 {
-      border-radius: 0 0 10px 10px;
-      border-top: 0;
-
-      .sub.header {
-        padding: 0 0 15px;
-      }
-    }
-
-    .sub.header {
-      margin: 10px auto;
-      padding: 15px 0;
-      max-width: 90%;
-
-      &:first-of-type {
-        padding: 15px;
       }
     }
   }
 
   .title-footer {
-    padding: 5px 0;
-    background: $blue-light-alpha;
-    border-radius: 0 0 5px 5px;
+    padding: 10px 0;
+    background: $blue;
+    border-radius: 0 0 10px 10px;
     font-size: 0.9rem;
     font-style: italic;
     font-weight: 500;
-    padding: 10px 0;
 
     a {
       color: #fff;
@@ -247,223 +239,157 @@ p {
   }
 
   .bcc-only {
-    padding: 0 10px;
+    padding: 10px;
+    background: $gray;
     transition: 1s all ease-in-out;
 
-    > div {
-      position: relative;
-      overflow: auto;
-      width: 705px;
+    #search-wrapper {
       margin: 0 auto;
-      border: 3px solid #DAECD4;
-      border-width: 0 3px;
+      position: relative;
+      //overflow: auto;
+      text-align: center;
+      color: $orange;
       transition: 1s all ease-in-out;
 
-      #search-wrapper {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
+      label:not(.z-switch) {
         position: relative;
-        overflow: auto;
-        text-align: center;
-        background: $gray;
-        color: $orange;
-        transition: 1s all ease-in-out;
+        display: block;
 
-        label:not(.z-switch) {
-          position: relative;
+        i.icon.search {
+          position: absolute;
+          left: 75px;
+          top: 12px;
+          color: $blue-light;
+          display: inline-block;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          opacity: 1;
+          animation: 1s fadein;
+          animation-fill-mode: forwards;
+        }
+
+        input[type=search] {
           display: block;
+          width: 560px;
+          padding: 10px 10px 10px 45px;
+          margin: 0 auto;
+          background: #eee;
+          color: $blue;
+          font-weight: 300;
+          border: 3px $orange solid;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          border-radius: 10px;
+          //box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75);
+          opacity: 1;
+          @include transition(all, ease, 300ms);
 
-          i.icon.search {
-            position: absolute;
-            left: 92px;
-            top: 12px;
-            color: $blue-light;
+          &:focus {
+            border-color: $orange;
+            box-shadow: 0 0 10px $orange;
+            outline: none;
+            font-weight: 500;
+          }
+
+          &::placeholder {
+            color: $gray;
+          }
+        }
+
+        button#search-clear {
+          display: none;
+          position: absolute;
+          top: 12px;
+          right: 72px;
+          height: 28px;
+          overflow: hidden;
+          line-height: 1;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+
+          &:focus {
+            outline-style: dotted;
+            outline-width: 1px;
+            outline-color: #faa;
+          }
+
+          i {
+            color: #900;
             display: inline-block;
             font-size: inherit;
             text-rendering: auto;
             -webkit-font-smoothing: antialiased;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
-            opacity: 1;
-            animation: 1s fadein;
-            animation-fill-mode: forwards;
-          }
-
-          input[type=search] {
-            display: block;
-            width: 560px;
-            padding: 10px 10px 10px 60px;
-            margin: 0 auto;
-            background: #eee;
-            color: $blue;
-            font-weight: 300;
-            border: 3px $orange solid;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            border-radius: 10px;
-            //box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75);
-            opacity: 1;
-            @include transition(all, ease, 300ms);
-
-            &:focus {
-              border-color: $orange;
-              box-shadow: 0 0 10px $orange;
-              outline: none;
-              font-weight: 500;
-            }
-
-            &::placeholder {
-              color: $gray;
-            }
-          }
-
-          button#search-clear {
-            display: none;
-            position: absolute;
-            top: 12px;
-            right: 88px;
-            height: 28px;
-            overflow: hidden;
-            line-height: 1;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-
-            &:focus {
-              outline-style: dotted;
-              outline-width: 1px;
-              outline-color: #faa;
-            }
-
-            i {
-              color: #900;
-              display: inline-block;
-              font-size: inherit;
-              text-rendering: auto;
-              -webkit-font-smoothing: antialiased;
-              -moz-box-sizing: border-box;
-              box-sizing: border-box;
-            }
           }
         }
+      }
 
-        .z-switch {
-          position: relative;
-          white-space: nowrap;
-          line-height: 2.3;
-          // Use with now-commented out search-logo
-          //padding-right: 55px;
+      .z-switch {
+        position: relative;
+        white-space: nowrap;
+        line-height: 2.3;
 
-          .z-switch--container {
-            margin-right: 5px;
-          }
-
-          .search-logo {
-            position: absolute;
-            height: 24px;
-            width: auto;
-            right: 4px;
-            border: 1px solid $gray;
-            background: #fff;
-            border-radius: 3px;
-            box-shadow: 0px 2px 1px rgba(0,0,0,0.3);
-            transform: rotate(-10deg);
-            animation: 420ms searchLogoReverse;
-            animation-fill-mode: forwards;
-          }
-
-          &:hover {
-            .search-logo {
-              animation: 720ms searchLogo;
-              animation-fill-mode: forwards;
-            }
-          }
-        }
-
-        span {
-          float: right;
-          display: none;
-          cursor: pointer;
-          line-height: 2.3;
-
-          &:hover {
-            opacity: 0.7;
-          }
-
-          i {
-            display: inline-block !important;
-            font-size: 1rem !important;
-            position: relative;
-            top: -3px;
-          }
+        .z-switch--container {
+          margin-right: 5px;
         }
       }
     }
 
     &.fixto-fixed {
       z-index: 10000;
-      padding: 0 64px;
       background: $gray;
-      border: 3px solid transparent;
-      border-bottom: 2px solid #327B9E;
       color: $orange;
+      border: 2px solid #327B9E;
+      border-top: 0;
+      border-radius: 0 0 10px 10px;
       box-shadow: 0 0px 64px rgba(50, 123, 158, 0.888);
 
-      > div {
-        width: 100%;
-        max-width: 1157px;
-        padding: 0 10px;
-        border: 0;
-        color: #fff;
+      #search-wrapper {
+        text-align: left;
+        line-height: 1;
 
-        #search-wrapper {
-          padding: 11px 0 4px;
-          background: transparent;
-          //color: $gray;
-          text-align: left;
+        label {
+          float: left;
 
-          label {
+          i.icon.search {
+            left: 16px;
+          }
+
+          input[type=search] {
+            display: block;
             float: left;
+            width: 410px;
+            margin-right: 20px;
+            border-color: transparent;
+            color: $blue;
 
-            i.icon.search {
-              left: 24px;
-            }
-
-            input[type=search] {
-              display: block;
-              float: left;
-              width: 420px;
-              margin: -1px 20px 8px 10px;
-              //border: 3px $blue-dark solid;
-              border-color: transparent;
-              color: $blue;
-
-              &:focus {
-                border: 3px $orange solid;
-                box-shadow: 0 0 10px $blue-light;
-              }
-            }
-
-            button#search-clear {
-              display: none;
-              position: absolute;
-              right: 25px;
+            &:focus {
+              border: 3px $orange solid;
+              //box-shadow: 0 0 10px $blue-light;
             }
           }
 
-          .z-switch {
-            // Use with now-commented out search-logo
-            //padding-right: 64px;
-
-            .search-logo {
-              margin-top: 12px;
-            }
+          button#search-clear {
+            display: none;
+            position: absolute;
+            right: 25px;
           }
+        }
 
-          span {
-            display: inline;
-          }
+        .z-switch {
+          float: none;
+          white-space: normal;
+          line-height: 1;
+          font-size: 1rem;
+        }
+
+        span {
+          display: inline;
         }
       }
     }
@@ -953,10 +879,6 @@ span.progress {
         }
       }
 
-      &#header-copy-2 {
-        border-radius: 0;
-      }
-
       h2 {
         border-radius: 0;
       }
@@ -966,6 +888,7 @@ span.progress {
         a {
           margin: 0.5rem 0;
           display: block;
+          border-radius: 0;
           width: 100%;
         }
       }
@@ -974,59 +897,50 @@ span.progress {
     .bcc-only {
       padding: 0;
 
-      > div {
-        padding: 0;
-        width: 100%;
+      #search-wrapper {
+        border: 0;
+        padding: 11px 0;
 
-        #search-wrapper {
-          border: 0;
-          padding: 11px 0;
+        label:not(.z-switch) {
+          margin-bottom: 10px;
+          position: initial;
 
-          label:not(.z-switch) {
-            margin-bottom: 10px;
-
-            i.icon.search {
-              display: none;
-            }
-
-            input[type=search] {
-              width: 95%;
-              padding-left: 10px;
-            }
-
-            button#search-clear {
-              right: 25px;
-            }
+          i.icon.search {
+            display: none;
           }
 
-          .z-switch {
-            float: none;
-            white-space: normal;
-            line-height: 1;
+          input[type=search] {
+            width: 90%;
+            padding: 10px;
+          }
 
-            .z-switch--container {
-              display: block;
-              margin: 0 auto 10px;
-            }
+          button#search-clear {
+            top: 24px;
+            right: 32px;
+          }
+        }
 
-            .search-logo {
-              display: none;
-            }
+        .z-switch {
+          float: none;
+          position: initial;
+          white-space: normal;
+          line-height: 1;
+
+          .z-switch--container {
+            display: block;
+            margin: 0 auto 10px;
           }
         }
       }
 
-      span {
-        display: none;
-      }
-
       &.fixto-fixed {
-        padding: 0;
+        padding: 0 11px;
+        border-width: 0 0 2px;
+        border-radius: 0;
+        box-shadow: 0 0px 32px rgba(50, 123, 158, 0.888);
 
-        > div #search-wrapper {
-          padding: 11px 3px;
-
-          label {
+        #search-wrapper {
+          label:not(.z-switch) {
             text-align: center;
             font-size: 1rem;
 
@@ -1044,13 +958,15 @@ span.progress {
             }
           }
 
-          .z-switch .z-switch--container {
-            float: left;
-            margin: 0 10px 0 0;
-          }
+          .z-switch {
+            white-space: normal;
+            line-height: 1;
+            font-size: 0.9rem;
 
-          span {
-            display: none;
+            .z-switch--container {
+              float: left;
+              margin: 0 10px 0 0;
+            }
           }
         }
       }
