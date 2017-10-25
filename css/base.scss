@@ -432,8 +432,8 @@ input[type=search] {
     > div {
       box-shadow: 0 0 0 3px rgb(190, 230, 177) inset;
       border-radius: 10px !important;
-      padding: 1em;
-      margin: 0.5rem 0;
+      padding: 0.5em;
+      margin: 0.8rem 0;
       text-align: center;
 
       &.negative {
@@ -499,6 +499,8 @@ input[type=search] {
 }
 
 .ui.table td {
+  padding: 0.5em;
+
   &.main {
     line-height: 2em;
 
@@ -743,6 +745,7 @@ span.progress {
 
   .mobile-table {
     display: block;
+    width: 95vw;
   }
 
   #search-wrapper {
@@ -764,6 +767,10 @@ span.progress {
 
   .ui.modal .content>.description {
     padding: 0 !important;
+  }
+
+  .ui.grid.container {
+    border-width: 3px 0;
   }
 
   .ui.list .list>.item>.icon+.content, .ui.list .list>.item>.image+.content, .ui.list>.item>.icon+.content, .ui.list>.item>.image+.content {
