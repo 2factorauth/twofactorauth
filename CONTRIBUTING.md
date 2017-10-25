@@ -1,8 +1,38 @@
 Contributing to acceptBitcoin.Cash
 =======================
 
-All the data is managed through a series of [Yaml](http://yaml.org) files so it may be
-useful to read up on the Yaml syntax.
+## Introduction
+
+First off, **thanks for your interest in contributing!** Your help will foster growth for the benefit of Bitcoin Cash, and the community overall. More are always welcomed.
+
+### _A quick note..._
+
+The site maintainers do not endorse nor confirm the legitimacy of any of the merchants linked to on this site. While we try our best to verify the merchant information submitted, it's possible that we may miss something, or a service may change/information becomes outdated. If you notice anything, please [raise a new issue](https://github.com/acceptbitcoincash/acceptbitcoincash/issues/new).
+
+Adding a site is easy. Read below for the basics, and if you're more technically-inclined, detailed instructions are further down this document. Regardless, the only thing **you need** is **a Github account**.
+
+## Submitting a site _the easy way_
+
+[Open a new issue](https://github.com/acceptbitcoincash/acceptbitcoincash/issues/new) and fill out the template that's provided as a placeholder.
+Try to fill out all of the fields as accurately as possible. They are:
+
+- Name | `name`
+- URL (http*s* preferred) | `url`
+- Twitter Username (no @ symbol) | `twitter`
+- Facebook Username or Page URL | `facebook`
+- Logo Image (URL to PNG/JPG) | `img`
+- Accepting Bitcoin Cash | `bcc`
+- Accepting Bitcoin Legacy | `btc`
+- Accepting Other Crypto | `other`
+- Documentation/Help Guides (URL) | `doc`
+- _(Optional)_ Exceptions/General Notes | `exceptions/text`
+
+Press the shiny `Submit new issue` button and you'll be notified when changes to your submission occur.
+
+## Submitting a site _the developer/advanced way_
+
+All the data is managed through a series of [YAML](http://yaml.org) files so it may be
+useful to read up on the YAML syntax.
 
 To add a new site, go to the [data files](_data/) and get familiar with how it
 is setup. There is a section and corresponding file for each Category. Site icons
@@ -16,9 +46,8 @@ are stored in folders corresponding to each of those categories in their own
    merged. Travis will only check your changes after you submit a pull request.
    If you want to test locally, instructions are listed below. Keep reading!
 2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
-   preferred format. If possible, please also run the image through an optimizing
-   utility such as OptiPNG before committing it to the repo.
-3. **Be Awesome**: You need to be awesome. That is all.
+   preferred format.
+3. **Be Awesome**: You need to be awesome, but you've read this far, so you probably are. That is all.
 
 ## Running Locally
 
