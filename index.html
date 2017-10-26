@@ -80,28 +80,44 @@ hash: acceptBitcoinCash
       </svg>
     </div>
   </div>
+
   <div class="title-wrap">
     <h2>The Accept Bitcoin Cash Initiative</h2>
-    <div class="sub header">
-      <p>A community-curated list of <b>sites/merchants that accept <a href="https://bitcoincash.org">Bitcoin Cash</a></b>, a peer-to-peer electronic cash system.</p>
-    </div>
-    <div id="search-wrapper">
-      <label for="bcc-merchant-search">
-        <i class="search icon"></i>
-      </label>
-      <input type="search" id="bcc-merchant-search" placeholder="Search online merchants" autocomplete="off" spellcheck="false" tabindex="0">
-      <button id="search-clear" data-tooltip="Clear active search term" data-position="bottom center" data-inverted="">
-        <i class="remove icon"></i>
-      </button>
-    </div>
-    <div class="sub header">
-      <p><b><em>- or -</em></b><br>Add a site if it's not listed by submitting a pull request, or <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/issues/new">creating an issue</a> on the <a href="https://github.com/acceptbitcoincash/acceptbitcoincash">GitHub repo</a>. Learn how to do either by reading <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/blob/master/CONTRIBUTING.md">our contribution guidelines</a>.</p>
+    <div class="inner-title">
+      <div class="sub header">
+        <p>A community-curated list of <b>sites/merchants that accept <a href="https://bitcoincash.org">Bitcoin Cash</a></b>, a peer-to-peer electronic cash system.</p>
+      </div>
+
+      <div class="bcc-only">
+        <div id="search-wrapper">
+          <label for="bcc-merchant-search">
+            <i id="search-icon" class="search icon"></i>
+            <input type="search" id="bcc-merchant-search" placeholder="Search by merchant name" autocomplete="off" spellcheck="false" tabindex="0">
+            <button id="search-clear">
+              <i class="remove icon"></i>
+            </button>
+          </label>
+          <label class="z-switch">
+            <input type="checkbox" id="show-bcc-only">
+              <div class="z-switch--container">
+                  <div class="z-switch--slider"></div>
+              </div>
+              Only show merchants accepting Bitcoin Cash <!-- img class="search-logo" src="/img/coin-bcc.png" alt="Bitcoin Cash" -->
+          </label>
+          <!-- span id="top-btn-top"><i class="chevron circle up icon"></i> Top</span -->
+        </div>
+      </div>
+
+      <div class="sub header how-to-contrib">
+        <p><b><em>- or -</em></b><br><br>Add a site if it's not listed by submitting a pull request, or <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/issues/new">creating an issue</a> on the <a href="https://github.com/acceptbitcoincash/acceptbitcoincash">GitHub repo</a>. Learn how to do either by reading <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/blob/master/CONTRIBUTING.md">our contribution guidelines</a>.</p>
+      </div>
     </div>
     <div class="title-footer">
       <a href="https://www.bitcoincash.org" target="_blank" data-tooltip="Learn more about Bitcoin Cash, a peer-to-peer electronic cash system" data-position="bottom center" data-inverted=""><i class="help circle outline icon"></i> What is Bitcoin Cash?</a>
       <a id="about-this-site" data-tooltip="Read about why this site exists" data-position="bottom center" data-inverted=""><i class="announcement icon"></i> About this site</a>
     </div>
   </div>
+
 </div>
 
 <div class="ui basic modal about-this-site">
@@ -125,38 +141,40 @@ hash: acceptBitcoinCash
   </div>
 </div>
 
-<div class="ui stackable grid container">
-  <div class="five column row">
-    {% assign rowcount = 0 %}
-    {% for section in site.data.sections %}
-    {% assign rowend = forloop.index | modulo: 5 %}
-    {% if rowend == 0 or forloop.index == forloop.length %}
-    <div id="{{ section.id }}" class="category column">
-      <h5 class="ui icon header">
-        <i class="circular {{ section.icon }} icon"></i>
-        <small>{{ section.title }}</small>
-      </h5>
+<div id="maingrid" class="ui container">
+  <div class="container-inner ui stackable grid">
+    <div class="five column row">
+      {% assign rowcount = 0 %}
+      {% for section in site.data.sections %}
+      {% assign rowend = forloop.index | modulo: 5 %}
+      {% if rowend == 0 or forloop.index == forloop.length %}
+      <div id="{{ section.id }}" class="category column">
+        <h5 class="ui icon header">
+          <i class="circular {{ section.icon }} icon"></i>
+          <small>{{ section.title }}</small>
+        </h5>
+      </div>
+      {% include mobile-table.html id-param=section.id title-param=section.title %}
+      {% assign offcount = 5 | times: rowcount %}
+      {% for section in site.data.sections limit: 5 offset: offcount %}
+      {% include desktop-table.html id-param=section.id title-param=section.title %}
+      {% endfor %}
     </div>
-    {% include mobile-table.html id-param=section.id title-param=section.title %}
-    {% assign offcount = 5 | times: rowcount %}
-    {% for section in site.data.sections limit: 5 offset: offcount %}
-    {% include desktop-table.html id-param=section.id title-param=section.title %}
-    {% endfor %}
-  </div>
-  {% if forloop.index != forloop.length %}
-  {% assign rowcount = rowcount | plus: '1' %}
-  <div class="five column row">
-  {% endif %}
-    {% else %}
-    <div id="{{ section.id }}" class="category column">
-      <h5 class="ui icon header">
-        <i class="circular {{ section.icon }} icon"></i>
-        <small>{{ section.title }}</small>
-      </h5>
-    </div>
-    {% include mobile-table.html id-param=section.id title-param=section.title %}
+    {% if forloop.index != forloop.length %}
+    {% assign rowcount = rowcount | plus: '1' %}
+    <div class="five column row">
     {% endif %}
-    {% endfor %}
+      {% else %}
+      <div id="{{ section.id }}" class="category column">
+        <h5 class="ui icon header">
+          <i class="circular {{ section.icon }} icon"></i>
+          <small>{{ section.title }}</small>
+        </h5>
+      </div>
+      {% include mobile-table.html id-param=section.id title-param=section.title %}
+      {% endif %}
+      {% endfor %}
+    </div>
   </div>
 
   <div id="no-results">

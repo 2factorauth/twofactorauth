@@ -1,0 +1,128 @@
+---
+---
+
+// benavern/z-switch (https://github.com/benavern/z-switch)
+
+// default colors
+$z-switch-off    : #FF6059
+$z-switch-on     : #2ACB41
+$z-switch-slider : #FEFEFE
+$z-switch-text   : #FEFEFE
+
+// color1 alternative
+$z-switch-color1-off    : #CCCCCC
+$z-switch-color1-on     : #03A9F4
+$z-switch-color1-slider : #F4F4F4
+
+// color2 alternative
+$z-switch-color2-off    : #454846
+$z-switch-color2-on     : #454846
+$z-switch-color2-slider : #B4B6B5
+
+.z-switch
+    *, *:before, *:after
+        margin: 0
+        padding: 0
+        box-sizing: border-box
+        font-family: sans-serif
+
+    &.z-switch-sm
+        .z-switch--container
+            font-size: .65em
+
+    &.z-switch-lg
+        .z-switch--container
+            font-size: 1.34em
+
+    &:hover
+        cursor: pointer
+
+    .z-switch--container
+        position: relative
+        top: .15em
+        display: inline-block
+        width: 2em
+        height: 1em
+        border-radius: .5em
+        background-color: $z-switch-off
+        overflow: hidden
+        transition: .2s background-color
+        box-shadow: 0 0 .1em 0 rgba(black, .5)
+
+        .z-switch--slider
+            position: absolute
+            top: 5%
+            left: 2.5%
+            width: 45%
+            height: 90%
+            border-radius: .5em
+            background-color: $z-switch-slider
+            box-shadow: 0 0 .2em 0 rgba(black, .5)
+            transform: translateX(0)
+            transition: .2s transform
+
+            &:before, &:after
+                content: attr(data-on)
+                color: $z-switch-text
+                display: block
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                font-size: .45em
+                width: 100%
+                right: 105%
+                text-align: center
+                text-shadow: .05em .05em .1em rgba(black, .5)
+
+            &:after
+                content: attr(data-off)
+                right: auto
+                left: 105%
+
+    input[type=checkbox]
+        display: none
+
+        &:checked + .z-switch--container
+            background-color: $z-switch-on
+
+            .z-switch--slider
+                transform: translateX(1em)
+
+        &:disabled + .z-switch--container
+            opacity: .3
+
+            &:hover
+                cursor: not-allowed
+
+
+    // alt colors
+
+    &.z-switch-color1
+        .z-switch--container
+            background-color: $z-switch-color1-off
+            .z-switch--slider
+                background-color: $z-switch-color1-slider
+        input[type=checkbox]
+                &:checked + .z-switch--container
+                    background-color: $z-switch-color1-on
+    &.z-switch-color2
+        .z-switch--container
+            background-color: $z-switch-color2-off
+            .z-switch--slider
+                background-color: $z-switch-color2-slider
+        input[type=checkbox]
+                &:checked + .z-switch--container
+                    background-color: $z-switch-color2-off
+
+    // alt shapes
+    &.z-switch-square
+        .z-switch--container
+            border-radius: .1em
+            .z-switch--slider
+                border-radius: .05em
+
+    &.z-switch-tictac
+        .z-switch--container
+            border-radius: .5em .1em
+            .z-switch--slider
+                border-radius: .45em .05em

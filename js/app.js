@@ -1,54 +1,69 @@
 // When DOM elements are ready, excluding images
 $(document).ready(function () {
+
   // Check if URL references specific category
   if (window.location.hash && window.location.hash.indexOf('#') > -1) {
     openCategory(window.location.hash.substring(1));
   }
 
   // Some frilly animations on click of the main Bitcoin Cash logo
-  $('#coin-toggle').on('click', function () {
-    var mainCoin = $('#main-coin path.glyph');
-    var leftSideCoin = $('.top-side-left-side, .top-side-left-side-force');
-    var rightSideCoin = $('.top-side-right-side, .top-side-right-side-force');
-
-    mainCoin.removeClass("anim-glyph anim-glyph-force");
-    leftSideCoin.removeClass("top-side-left-side top-side-left-side-force");
-    rightSideCoin.removeClass("top-side-right-side top-side-right-side-force");
-    setTimeout(
-      function(){ mainCoin.addClass('anim-glyph-force') }
-    , 1);
-    setTimeout(
-      function(){ leftSideCoin.addClass('top-side-left-side-force') }
-    , 1);
-    setTimeout(
-      function(){ rightSideCoin.addClass('top-side-right-side-force') }
-    , 1);
+  $('#coin-toggle').click(function (){
+    coinEffect();
   });
 
-  // Activate elevator power to the search floor
-  var primaryElevator = new Elevator({
-    element: document.querySelector('.fab button:nth-child(2)'),
-    targetElement: document.querySelector('#search-wrapper'),
-    verticalPadding: 90,  // in pixels
-    duration: 420, // milliseconds
-    endCallback: function() {
-      $('#search-wrapper input').focus();
-    }
+  // Stick the BCC-only filter to the top on scroll
+  $(".bcc-only").fixTo('html', {
+    useNativeSticky: false
   });
 
-  // Scroll to the top via floating action button
-  $('.fab button:nth-child(1)').on('click', function () {
+  // Scroll to the top via floating action button and filter bar link, then pop some flair
+  $('.fab button:nth-child(1), #top-btn-top').on('click', function () {
     var body = $("html, body");
-    body.stop().animate({scrollTop:0}, 500, 'swing');
+    body.stop().animate({scrollTop:0}, 500, 'swing', function () {
+      coinEffect();
+
+      // Restores the opened category hash in URL, but causes Firefox to skip back to it
+      //if (window.location.hash && window.location.hash.indexOf('#') > -1) {
+        //document.location.hash = window.location.hash.substring(1);
+      //}
+    });
+  });
+
+  // Scroll to the search field and focus it via floating action button and filter bar link
+  $('.fab button:nth-child(2), #top-btn-search').on('click', function () {
+    var body = $("html, body");
+    body.stop().animate({scrollTop: $('#search-wrapper').offset().top}, 500, 'swing');
+    $('#search-wrapper input').focus();
+  });
+
+  // Clear and collapse all open categories
+  $('.fab button:nth-child(3)').on('click', function () {
+    if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
+    if (isSearching == false) {
+      $('.website-table').slideUp();
+      var body = $("html, body");
+      body.stop().animate({scrollTop: $('.category h5 i.active-icon').offset().top - 120}, 1000, 'swing');
+      $('.category h5 i').removeClass('active-icon');
+    } else {
+      if ($(this).hasClass('attention')) {
+        $(this).removeClass('attention');
+        $("#bcc-merchant-search").removeClass('attention');
+      } else {
+        $(this).addClass('attention');
+        $("#bcc-merchant-search").addClass('attention');
+      }
+    }
   });
 
   // Clear the active search terms
   $('button#search-clear').on('click', function () {
-    $('#search-wrapper input').val('');
+    $('#search-wrapper input#bcc-merchant-search').val('');
     $('#no-results').css('display', 'none');
     $('.category').show();
-    $('table').show();
-    $('#search-wrapper input').focus();
+    $('.website-table').hide();
+    $('#maingrid').css('visibility', 'visible');
+    $('#search-wrapper input#bcc-merchant-search').focus();
+    $('head style').html("");
   });
 
   $('#ama-merchant').on('click', function () {
@@ -78,6 +93,29 @@ $(document).ready(function () {
 });
 
 /**
+ * Draw a neat animation on the main Bitcoin Cash logo at the top of the page
+ */
+function coinEffect() {
+  var mainCoin = $('#main-coin path.glyph');
+  var leftSideCoin = $('.top-side-left-side, .top-side-left-side-force');
+  var rightSideCoin = $('.top-side-right-side, .top-side-right-side-force');
+
+  mainCoin.removeClass("anim-glyph anim-glyph-force");
+  leftSideCoin.removeClass("top-side-left-side top-side-left-side-force");
+  rightSideCoin.removeClass("top-side-right-side top-side-right-side-force");
+  setTimeout(
+    function(){ mainCoin.addClass('anim-glyph-force') }
+  , 1);
+  setTimeout(
+    function(){ leftSideCoin.addClass('top-side-left-side-force') }
+  , 1);
+  setTimeout(
+    function(){ rightSideCoin.addClass('top-side-right-side-force') }
+  , 1);
+}
+
+
+/**
  * Create an event that is called 500ms after the browser
  * window is re-sized and has finished being re-sized.
  * This event corrects for browser differences in the
@@ -97,6 +135,7 @@ var jets = new Jets({
   didSearch: function (searchPhrase) {
     document.location.hash = '';
     $('#no-results').css('display', 'none');
+    $('#maingrid').css('visibility', 'visible');
     $('.category h5 i').removeClass('active-icon');
     // Two separate table layouts are used for desktop/mobile
     var platform = ($(window).width() > 768) ? 'desktop' : 'mobile';
@@ -129,15 +168,18 @@ var jets = new Jets({
 
       if (table.children().length == table.children(':hidden').length) {
           $('#no-results').css('display', 'block');
+          $('#maingrid').css('visibility', 'hidden');
       }
 
       $('#search-clear').fadeIn('slow');
 
       isSearching = true;
 
-      $('html, body').scrollTop($('#search-wrapper').offset().top - 15);
+      $('html, body').stop().animate({scrollTop: $('#maingrid').offset().top - 120}, 500, 'swing');
+      //$('html, body').scrollTop($('#search-wrapper').offset().top - 15);
     }
   },
+  addImportant: true,
   // Process searchable elements manually
   manualContentHandling: function(tag) {
     return $(tag).find('.title > a.name').text();
@@ -149,7 +191,7 @@ var jets = new Jets({
  * after re-sizing the screen and close all categories after re-sizing
  */
 $(window).on('resizeEnd', function () {
-  if (isSearching) jets.options.didSearch($('#jets-search').val());
+  if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
 });
 
 // Display tables and color category selectors
@@ -157,6 +199,27 @@ $('.category').click(function () {
   var name = $(this).attr('id');
   isOpen(name) ? closeCategory(name) : openCategory(name);
 });
+
+/**
+ * Toggle visibility of merchants who accept Bitcoin Cash
+ */
+$('.z-switch').click(function () {
+  BCCfilter();
+});
+
+/**
+ * Check if the user wants to filter by Bitcoin Cash only
+ */
+function BCCfilter() {
+ if ($('#show-bcc-only').is(':checked')) {
+    $('.no-bcc').css('display', 'none');
+    if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
+  } else {
+    $('.mobile-table .no-bcc').css('display', 'block');
+    $('.desktop-table .no-bcc').css('display', 'table-row');
+    if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
+  }
+}
 
 /**
  * Checks if a category is open
@@ -177,6 +240,7 @@ function openCategory(category) {
   // Close all active categories
   $('.category h5 i').removeClass('active-icon');
   $('.website-table').css('display', 'none');
+  BCCfilter();
 
   // Place the category being viewed in the URL bar
   window.location.hash = category;
@@ -188,12 +252,14 @@ function openCategory(category) {
 
     // Scroll smoothly to category selector
     var body = $("html, body");
-    body.stop().animate({scrollTop: icon.offset().top - 15}, 1000, 'swing');
+    body.stop().animate({scrollTop: icon.offset().top - 120}, 1000, 'swing');
 
   } else {
     $('#' + category + '-mobiletable').css('display','block');
     // Quickly snap to category selector
-    document.location.hash = category;
+    var body = $("html, body");
+    body.stop().animate({scrollTop: icon.offset().top - 120}, 1000, 'swing');
+    //document.location.hash = category;
   }
 
 }
@@ -206,6 +272,5 @@ function openCategory(category) {
 function closeCategory(category) {
   $('.' + category + '-table').slideUp();
   $('#' + category + ' h5 i').removeClass('active-icon');
-  // Remove hash from URL, prevent the scroll position from jumping to the top
   history.pushState('', document.title, window.location.pathname);
 }
