@@ -231,7 +231,7 @@ $('.z-switch').click(function () {
  * Check if the user wants to filter by Bitcoin Cash only
  */
 function BCCfilter() {
- if ( $('#show-bcc-only').is(':checked') || window.location.hash == '#bch' ) {
+ if ($('#show-bcc-only').is(':checked')) {
     $('.no-bcc').css('display', 'none');
     if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
   } else {
