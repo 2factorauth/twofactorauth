@@ -3,7 +3,11 @@ $(document).ready(function () {
 
   // Check if URL references specific category
   if (window.location.hash && window.location.hash.indexOf('#') > -1) {
-    openCategory(window.location.hash.substring(1));
+    if (window.location.hash == '#bch') {
+      $('#show-bcc-only').prop('checked', true);
+    } else {
+      openCategory(window.location.hash.substring(1));
+    }
   }
 
   // Some frilly animations on click of the main Bitcoin Cash logo
@@ -211,7 +215,7 @@ $('.z-switch').click(function () {
  * Check if the user wants to filter by Bitcoin Cash only
  */
 function BCCfilter() {
- if ($('#show-bcc-only').is(':checked')) {
+ if ( $('#show-bcc-only').is(':checked') || window.location.hash == '#bch' ) {
     $('.no-bcc').css('display', 'none');
     if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
   } else {
