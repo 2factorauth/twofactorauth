@@ -22,11 +22,9 @@ websites:
     - name: Binero
       url: https://www.binero.se
       img: binero.png
-      twitter: Binero
-      facebook: binero
-      email_address: support@binero.se
-      tfa: No
-      lang: sv
+      tfa: Yes
+      software: Yes
+      doc: https://blogg.binero.se/2017/10/tvafaktorsautentisering/
 
     - name: Bluehost
       url: https://www.bluehost.com/
@@ -129,12 +127,11 @@ websites:
     - name: HostHatch
       url: https://hosthatch.com/
       img: hosthatch.png
-      tfa: No
-      twitter: HostHatch
-      facebook: hosthatch
+      tfa: Yes
+      software: Yes
 
     - name: ICUK
-      url: https://icuk.net
+      url: https://www.icuk.net
       img: icuk.png
       tfa: Yes
       software: Yes
@@ -181,6 +178,13 @@ websites:
       twitter: iPage
       img: ipage.png
       tfa: No
+
+    - name: Kinsta
+      url: https://kinsta.com
+      img: kinsta.png
+      tfa: Yes
+      software: Yes
+      doc: https://kinsta.com/blog/wordpress-two-factor-authentication/
 
     - name: LCN.com
       url: https://www.lcn.com
@@ -311,13 +315,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://clientarea.ramnode.com/knowledgebase.php?action=displayarticle&id=70
-
-    - name: Scaleway
-      url: https://www.scaleway.com/
-      twitter: scaleway
-      facebook: scaleway
-      img: scaleway.png
-      tfa: No
 
     - name: section.io
       url: https://www.section.io
