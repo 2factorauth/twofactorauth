@@ -6,7 +6,7 @@
     <h3>{{ section_title }}</h3>
   </div>
   <div class="bcc-merchant-content">
-    {% if section_title == "Banking" %}
+    {% if section_file.websites.size == null %}
     <div class="main negative{% if website.bcc == false %} no-bcc{% endif %}">
       <div class="title">
         <i class="big remove circle icon"></i> Nothing found.
