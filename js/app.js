@@ -7,7 +7,7 @@ $(document).ready(function () {
       sURLVariables = sPageURL.split('&'),
       sParameterName,
       i;
-      
+
     for (i = 0; i < sURLVariables.length; i++) {
       sParameterName = sURLVariables[i].split('=');
       if (sParameterName[0] === sParam) {
@@ -64,6 +64,7 @@ $(document).ready(function () {
       var body = $("html, body");
       body.stop().animate({scrollTop: $('.category h5 i.active-icon').offset().top - 120}, 1000, 'swing');
       $('.category h5 i').removeClass('active-icon');
+      $(this).css('display', 'none');
     } else {
       if ($(this).hasClass('attention')) {
         $(this).removeClass('attention');
@@ -260,6 +261,7 @@ function openCategory(category) {
   // Close all active categories
   $('.category h5 i').removeClass('active-icon');
   $('.website-table').css('display', 'none');
+  $('.fab button:nth-child(3)').css('display', 'inline-block');
   BCCfilter();
 
   // Place the category being viewed in the URL bar
@@ -293,4 +295,5 @@ function closeCategory(category) {
   $('.' + category + '-table').slideUp();
   $('#' + category + ' h5 i').removeClass('active-icon');
   history.pushState('', document.title, window.location.pathname);
+  $('.fab button:nth-child(3)').css('display', 'none');
 }
