@@ -720,19 +720,18 @@ span.progress {
 .ui.subfooter {
   background: rgba(0,0,0,0.88);
   color: #f0f0f0;
-  margin: 4em 0 0;
-  padding: 3em 0 0;
-  border-top: 3px solid $green-light;
+  margin: 0;
+  padding: 2em 0 0;
   border-radius: 0;
 
   .inner {
     width: 80%;
-    margin: 0 auto 3em;
+    margin: 0 auto 2.5em;
 
     h3 {
       font-weight: 300;
       letter-spacing: -1px;
-      font-size: 2.3rem;
+      font-size: 1.5rem;
       margin-bottom: 1em;
     }
 
@@ -762,6 +761,48 @@ span.progress {
 
       &:before {
         line-height: 1.6;
+      }
+    }
+  }
+}
+
+.ticker {
+  margin: 2rem 0 0;
+  padding: 0;
+  border-top: 3px solid $green-light;
+  border-radius: 0;
+
+  #ticker_value {
+    background: $orange-alpha;
+    list-style: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 1rem 2rem;
+      font-weight: bold;
+      color: $gray;
+
+      &:first-child {
+        margin-top: 2rem;
+      }
+
+      &:last-child {
+        margin-bottom: 2rem;
+      }
+
+      span.curr-symbol {
+        font-size: 1.8rem;
+        font-weight: normal;
+        margin: 0 0.2rem;
+      }
+
+      span.curr-price {
+        display: block;
+        margin-top: 0.8rem;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: -2px;
       }
     }
   }
@@ -1009,12 +1050,32 @@ span.progress {
     margin-top: 2rem;
   }
 
+  .ticker {
+    #ticker_value {
+      li {
+        display: block;
+        margin: 2rem;
+
+        &:first-child {
+          margin-top: 0;
+          padding-top: 2rem;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+
   .ui.subfooter {
     padding: 2em 0 0;
 
     .inner {
       h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
       .ui.huge.button, .ui.huge.buttons .button, .ui.huge.buttons .or {
         font-size: 0.8rem;
