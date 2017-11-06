@@ -52,6 +52,9 @@
 
 {{ content }}
 
+<!-- ./scripts/python/bchAccepted.py must be run at build time to generate/update the following include: -->
+{% include count_support.html %}
+
 <div class="subfooter ui center aligned segment">
   <div class="inner">
     <h3>More information for...</h3>
@@ -204,5 +207,6 @@
 <script src="/js/elevator.min.js"></script>
 <script src="/js/fixto.min.js"></script>
 <script src="/js/app.js"></script>
+
 </body>
 </html>

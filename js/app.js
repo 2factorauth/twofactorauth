@@ -7,7 +7,7 @@ $(document).ready(function () {
       sURLVariables = sPageURL.split('&'),
       sParameterName,
       i;
-      
+
     for (i = 0; i < sURLVariables.length; i++) {
       sParameterName = sURLVariables[i].split('=');
       if (sParameterName[0] === sParam) {
@@ -110,6 +110,12 @@ $(document).ready(function () {
     hoverable: true
   });
   $('a.popup.exception').popup();
+
+  // Display progress counter for sites accepting BCH out of total sites listed
+  $('.ui.bch-progress').progress({
+    label: 'percent',
+    showActivity: false
+  });
 });
 
 /**
