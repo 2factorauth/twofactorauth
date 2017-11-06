@@ -65,6 +65,7 @@ $(document).ready(function () {
       body.stop().animate({scrollTop: $('.category h5 i.active-icon').offset().top - 120}, 1000, 'swing');
       $('.category h5 i').removeClass('active-icon');
       $(this).css('display', 'none');
+      document.location.hash = '';
     } else {
       if ($(this).hasClass('attention')) {
         $(this).removeClass('attention');
