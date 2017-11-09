@@ -104,6 +104,7 @@ p {
     }
 
     &:nth-child(3) {
+      display: none;
       background-color: $green-light !important;
       position: absolute;
       top: -128px;
