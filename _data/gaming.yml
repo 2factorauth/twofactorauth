@@ -36,13 +36,6 @@ websites:
       tfa: No
       twitter: curseapp
       facebook: curseapp
-
-    - name: Elder Scrolls Online
-      url: http://www.elderscrollsonline.com/
-      img: eso.png
-      tfa: Yes
-      email: Yes
-      doc: https://help.elderscrollsonline.com/app/answers/detail/a_id/8611
       
     - name: EA
       url: https://www.ea.com/
@@ -51,6 +44,13 @@ websites:
       email: yes
       software: yes
       doc: https://help.ea.com/en/help/account/origin-login-verification-information/
+
+    - name: Elder Scrolls Online
+      url: http://www.elderscrollsonline.com/
+      img: eso.png
+      tfa: Yes
+      email: Yes
+      doc: https://help.elderscrollsonline.com/app/answers/detail/a_id/8611
 
     - name: Enjin
       url: http://www.enjin.com/
