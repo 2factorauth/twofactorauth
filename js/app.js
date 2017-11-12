@@ -96,6 +96,14 @@ $(document).ready(function () {
     $('.ui.modal.ama-customer').modal('toggle');
   });
 
+  $('#toggle-assets').on('click', function () {
+    $('.ui.modal.assets').modal('toggle');
+  });
+
+  $('#toggle-art-collections').on('click', function () {
+    $('.ui.modal.art-collections').modal('toggle');
+  });
+
   $('#about-this-site').on('click', function () {
     $('.ui.modal.about-this-site').modal('toggle');
   });
