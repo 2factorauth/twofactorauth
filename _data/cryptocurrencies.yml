@@ -6,6 +6,13 @@ websites:
       software: Yes
       doc: https://anxpro.com/pages/security
 
+    - name: Binance
+      url: https://www.binance.com/
+      img: binance.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.binance.com/hc/en-us/articles/115002439332-Securing-Your-Trading-Account
+
     - name: BitBay
       url: https://bitbay.net/
       img: bitbay.png
@@ -13,6 +20,12 @@ websites:
       sms: Yes
       software: Yes
       doc: https://www.youtube.com/watch?v=KFvoNHgl9Pw
+
+    - name: Bitcoin Vietnam
+      url: https://bitcoin.vn
+      img: bitcoinvn.png
+      tfa: Yes
+      doc: https://bitcoin.vn
 
     - name: Bitcoin.de
       url: https://bitcoin.de
@@ -35,6 +48,23 @@ websites:
       sms: Yes
       software: Yes
       doc: https://support.bitfinex.com/hc/en-us/sections/203192029-Security
+
+    - name: Bitflyer
+      url: https://bitflyer.jp
+      img: bitflyer.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      software: Yes
+      doc: https://bitflyer.jp/en/faq/2-10
+
+    - name: Bithumb
+      url: https://www.bithumb.com/
+      img: bithumb.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: http://bithumb.cafe/archives/7286
 
     - name: BitGo
       url: https://www.bitgo.com
@@ -90,12 +120,41 @@ websites:
       hardware: Yes
       doc: https://blockchain.info/wallet/support-pages
 
+    - name: Braziliex
+      url: https://braziliex.com/
+      img: braziliex.png
+      tfa: Yes
+      software: Yes
+      doc: https://braziliex.com/faq/index.php?id=288
+
+    - name: BTC BOX
+      url: https://www.btcbox.co.jp/
+      img: btcbox.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.btcbox.co.jp/help/ga
+
     - name: BTCJam
       url: https://btcjam.com/
       img: btcjam.png
       tfa: Yes
       software: Yes
       doc: http://help.btcjam.com/customer/portal/articles/1987686
+
+    - name: BTCPOP
+      url: https://btcpop.co/
+      img: btcpop.png
+      tfa: Yes
+      software: Yes
+      doc: https://blog.btcpop.co/2017/04/27/signing-security-btcpop-co-account/
+
+    - name: BX Thailand
+      url: https://bx.in.th/
+      img: bxthailand.png
+      tfa: Yes
+      software: Yes
+      doc: https://bx.in.th/info/faq/
 
     - name: CampBX
       url: https://campbx.com/
@@ -170,6 +229,37 @@ websites:
       sms: Yes
       doc: https://support.coinjar.com/kb/using-coinjar/keeping-your-coinjar-secure-with-multi-factor-authentication
 
+    - name: CoinOne
+      url: https://coinone.co.kr/
+      img: coinone.png
+      tfa: Yes
+      software: Yes
+      doc: https://coinone.co.kr/static/download/coinone_guide.pdf
+
+    - name: Coinspot
+      url: https://www.coinspot.com.au/
+      img: coinspot.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://coinspot.zendesk.com/hc/en-us/sections/115000049254-2FA-Google-Authenticator
+
+    - name: Cryptopia
+      url: https://www.cryptopia.co.nz
+      img: cryptopia.png
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://www.cryptopia.co.nz/Forum/Thread/1885
+
+    - name: DSX
+      url: https://dsx.uk/
+      img: dsx.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://docs.dsx.uk/dsx/getting-started-with-dsx/your-security-is-our-priority/enable-two-factor-authentication
+
     - name: Coins.ph
       url: https://coins.ph/
       img: coinsph.png
@@ -183,6 +273,20 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+
+    - name: HitBTC
+      url: https://www.hitbtc.com/
+      img: hitbtc.png
+      tfa: Yes
+      software: Yes
+      doc: https://hitbtc.com/faq/security
+
+    - name: Korbit
+      url: https://www.korbit.co.kr
+      img: korbit.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.korbit.co.kr/customer/en/portal/articles/1717692-what-is-2-factor-authentication-
 
     - name: Kraken
       url: https://www.kraken.com/
@@ -228,6 +332,13 @@ websites:
       phone: Yes
       software: Yes
       doc: https://support.uphold.com/hc/en-us/articles/206119683-How-does-phone-number-verification-work-
+
+    - name: WEX (BTC-E)
+      url: https://btc-e.nz
+      img: wex.png
+      tfa: Yes
+      software: Yes
+      doc: https://wex.kayako.com/en-us/section/17-security
 
     - name: Xapo
       url: https://xapo.com

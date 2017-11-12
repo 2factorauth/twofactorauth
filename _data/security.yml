@@ -6,6 +6,13 @@ websites:
       twitter: airvpn
       facebook: airvpn.org
 
+    - name: Anonine
+      url: https://aanonine.com
+      img: anonine.png
+      tfa: No
+      twitter: anoninevpn
+      facebook: Anonine
+
     - name: Blur
       url: https://www.abine.com/
       img: blur.png
@@ -34,10 +41,18 @@ websites:
       software: Yes
       doc: https://cobalt.io/blog/new-feature-two-factor-auth/
 
+    - name: CrypticVPN
+      url: https://crypticvpn.com
+      img: crypticvpn.png
+      tfa: Yes
+      software: Yes
+      twitter: CrypticVPN
+
     - name: CyberGhost
       url: https://www.cyberghostvpn.com
       img: cyberghost.png
       twitter: cyberghost_EN
+      facebook: cyberghostEN
       tfa: No
 
     - name: Detectify
@@ -71,6 +86,16 @@ websites:
       hardware: Yes
       doc: http://www.entrust.net/certificate-services/cms-authentication.htm
 
+    - name: ExpresssVPN
+      img: expressvpn.png
+      url: https://www.expressvpn.com
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      twitter: expresssvpn
+      facebook: ExpresssVPN
+      doc: https://www.expressvpn.com/blog/best-two-factor-authentication/
+
     - name: GeoTrust
       url: https://www.geotrust.com/
       img: geotrust.png
@@ -82,6 +107,7 @@ websites:
       img: gogetssl.png
       tfa: No
       twitter: gogetssl
+      facebook: gogetssl
 
     - name: hide.me VPN
       url: https://hide.me/
@@ -89,6 +115,24 @@ websites:
       facebook: www.hide.me
       img: hidemevpn.png
       tfa: No
+
+    - name: IPVanish
+      url: https://www.ipvanish.com
+      img: ipvanish.png
+      tfa: Yes
+      software: Yes
+      twitter: ipvanish
+      facebook: ipvanish
+      doc: https://blog.ipvanish.com/lock-down-logins-5-password-tips/
+
+    - name: NordVPN
+      url: https://www.nordvpn.com
+      img: nordvpn.png
+      tfa: Yes
+      software: Yes
+      twitter: nordvpn
+      facebook: NordVPN
+      doc: https://nordvpn.com/blog/secure-accounts-two-factor-authentication/
 
     - name: Norton
       url: http://us.norton.com
@@ -109,6 +153,13 @@ websites:
           text: "Only available for enterprise accounts."
       doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
 
+    - name: Perfect Privacy VPN
+      url: https://www.perfect-privacy.com/
+      img: perfectprivacyvpn.png
+      tfa: No
+      twitter: perfectprivacy
+      facebook: perfect.privacy
+
     - name: Prey
       url: https://www.preyproject.com
       img: prey.png
@@ -121,6 +172,24 @@ websites:
       img: privateinternetaccess.png
       tfa: No
       twitter: piacsm
+
+    - name: ProtonVPN
+      url: https://protonvpn.com/
+      img: protonvpn.png
+      tfa: No
+      twitter: ProtonVPN
+      facebook: ProtonVPN
+
+    - name: PureVPN
+      url: https://www.purevpn.com
+      img: purevpn.png
+      twitter: purevpn
+      facebook: PureVPNcom
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "PureVPN only supports 2FA for business customers."
+      doc: https://www.purevpn.com/business-vpn.php
 
     - name: Pwnie Express Pwn Pulse
       url: https://www.pwnieexpress.com/products/pulse-device-detection
@@ -136,6 +205,20 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
+
+    - name: SaferVPN
+      url: https://www.safervpn.com
+      img: safervpn.png
+      tfa: No
+      twitter: safervpn
+      facebook: SaferVPNCom
+
+    - name: ShadeYou
+      url: https://www.shadeyouvpn.com
+      img: shadeyou.png
+      tfa: No
+      twitter: shadeyou_vpn
+      facebook: shadeyouvpn
 
     - name: SSLTrust
       url: https://www.ssltrust.com.au/
@@ -187,12 +270,14 @@ websites:
       url: https://vpnunlimitedapp.com/
       img: vpnunlimited.png
       twitter: vpnunlimited
+      facebook: vpnunlimitedapp
       tfa: No
 
     - name: Webroot
       url: http://www.webroot.com
       img: webroot.png
       twitter: Webroot
+      facebook: Webroot
       tfa: No
 
     - name: Windscribe
