@@ -4,6 +4,7 @@ websites:
       img: airvpn.png
       bcc: No
       twitter: airvpn
+      facebook: airvpn.org
 
     - name: Anonine
       url: https://aanonine.com
@@ -53,6 +54,7 @@ websites:
       img: cyberghost.png
       bcc: No
       twitter: cyberghost_EN
+      facebook: cyberghostEN
 
     - name: Detectify
       url: https://detectify.com/
@@ -182,12 +184,13 @@ websites:
       facebook: ProtonVPN
 
     - name: PureVPN
-      url: https://www.preyproject.com
-      img: prey.png
-      bcc: No
+      url: https://www.purevpn.com
+      img: purevpn.png
+      bcc: Yes
       btc: Yes
-      twitter: purevpncom
-      facebook: purevpn
+      othercrypto: Yes
+      twitter: purevpn
+      facebook: PureVPNcom
 
     - name: Pwnie Express Pwn Pulse
       url: https://www.pwnieexpress.com/products/pulse-device-detection
@@ -213,7 +216,7 @@ websites:
 
     - name: ShadeYou
       url: https://www.shadeyouvpn.com
-      img: safervpn.png
+      img: shadeyou.png
       bcc: No
       btc: Yes
       twitter: shadeyou_vpn
@@ -230,8 +233,8 @@ websites:
       url: https://threatconnect.com/
       img: threatconnect.png
       bcc: No
-      twitter: TreatConnect
-      facebook: TreatConnect
+      twitter: ThreatConnect
+      facebook: ThreatConnect
 
     - name: ThreatMetrix
       url: https://www.threatmetrix.com/
@@ -272,12 +275,14 @@ websites:
       url: https://vpnunlimitedapp.com/
       img: vpnunlimited.png
       twitter: vpnunlimited
+      facebook: vpnunlimitedapp
       bcc: No
 
     - name: Webroot
       url: http://www.webroot.com
       img: webroot.png
       twitter: Webroot
+      facebook: Webroot
       bcc: No
 
     - name: Windscribe
