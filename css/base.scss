@@ -1121,9 +1121,16 @@ span.progress {
       margin-bottom: 1rem;
     }
 
-    > div {
+    > a {
       padding: 1rem;
       font-size: 1.6rem;
+      text-align: center;
+
+      i {
+        display: block;
+        font-size: 3rem;
+        margin: 0 auto;
+      }
     }
   }
 
