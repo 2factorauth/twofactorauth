@@ -122,6 +122,24 @@ websites:
       tfa: No
       twitter: piacsm
 
+    - name: ProtonVPN
+      url: https://protonvpn.com/
+      img: protonvpn.png
+      tfa: No
+      twitter: ProtonVPN
+      facebook: ProtonVPN
+
+    - name: PureVPN
+      url: https://www.purevpn.com
+      img: purevpn.png
+      twitter: purevpn
+      facebook: PureVPNcom
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "PureVPN only supports 2FA for business customers."
+      doc: https://www.purevpn.com/business-vpn.php
+
     - name: Pwnie Express Pwn Pulse
       url: https://www.pwnieexpress.com/products/pulse-device-detection
       img: pwnieexpress.png
