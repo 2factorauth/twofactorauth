@@ -137,6 +137,20 @@ websites:
       software: Yes
       doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
 
+    - name: SaferVPN
+      url: https://www.safervpn.com
+      img: safervpn.png
+      tfa: No
+      twitter: safervpn
+      facebook: SaferVPNCom
+
+    - name: ShadeYou
+      url: https://www.shadeyouvpn.com
+      img: shadeyou.png
+      tfa: No
+      twitter: shadeyou_vpn
+      facebook: shadeyouvpn
+
     - name: SSLTrust
       url: https://www.ssltrust.com.au/
       img: ssltrust.png
@@ -187,12 +201,14 @@ websites:
       url: https://vpnunlimitedapp.com/
       img: vpnunlimited.png
       twitter: vpnunlimited
+      facebook: vpnunlimitedapp
       tfa: No
 
     - name: Webroot
       url: http://www.webroot.com
       img: webroot.png
       twitter: Webroot
+      facebook: Webroot
       tfa: No
 
     - name: Windscribe
