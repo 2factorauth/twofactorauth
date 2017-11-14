@@ -71,6 +71,16 @@ websites:
       hardware: Yes
       doc: http://www.entrust.net/certificate-services/cms-authentication.htm
 
+    - name: ExpresssVPN
+      img: expressvpn.png
+      url: https://www.expressvpn.com
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      twitter: expresssvpn
+      facebook: ExpresssVPN
+      doc: https://www.expressvpn.com/blog/best-two-factor-authentication/
+
     - name: GeoTrust
       url: https://www.geotrust.com/
       img: geotrust.png
@@ -82,6 +92,7 @@ websites:
       img: gogetssl.png
       tfa: No
       twitter: gogetssl
+      facebook: gogetssl
 
     - name: hide.me VPN
       url: https://hide.me/
