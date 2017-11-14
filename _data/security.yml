@@ -90,6 +90,24 @@ websites:
       img: hidemevpn.png
       tfa: No
 
+    - name: IPVanish
+      url: https://www.ipvanish.com
+      img: ipvanish.png
+      tfa: Yes
+      software: Yes
+      twitter: ipvanish
+      facebook: ipvanish
+      doc: https://blog.ipvanish.com/lock-down-logins-5-password-tips/
+
+    - name: NordVPN
+      url: https://www.nordvpn.com
+      img: nordvpn.png
+      tfa: Yes
+      software: Yes
+      twitter: nordvpn
+      facebook: NordVPN
+      doc: https://nordvpn.com/blog/secure-accounts-two-factor-authentication/
+
     - name: Norton
       url: http://us.norton.com
       img: norton.png
