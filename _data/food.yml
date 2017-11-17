@@ -1,4 +1,15 @@
 websites:
+    - name: Bees Brothers
+      url: http://beesbros.com
+      facebook: beesbros
+      email_address: beesbrothers@gmail.com
+      img: beesbrothers.png
+      bcc: yes
+      btc: yes
+      othercrypto: no
+      exceptions:
+        text: "Bitcoin Cash is a manual payment at this time. Contact Bees Brothers: beesbrothers@gmail.com"
+
     - name: Dunkin' Donuts
       url: https://www.dunkindonuts.com
       img: dunkin.png
@@ -15,6 +26,14 @@ websites:
       btc: yes
       othercrypto: yes
 
+    - name: Kationickratom
+      url: http://www.kationickratom.com
+      img: kationickratom.png
+      bcc: yes
+      btc: yes
+      othercrypto: yes
+      doc: http://kationickratom.com/lovingkratom/pago-bitcoin-altcoin/
+
     - name: Menufy
       url: https://www.menufy.com
       facebook: menufy
@@ -24,6 +43,13 @@ websites:
       btc: yes
       othercrypto: yes
       doc: https://www.menufy.com/bitcoin
+
+    - name: PizzaForCoins
+      url: https://pizzaforcoins.com/
+      img: pizzaforcoins.png
+      bcc: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: Starbucks
       url: http://www.starbucks.com/
