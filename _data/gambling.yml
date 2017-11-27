@@ -28,9 +28,9 @@ websites:
       img: bitcoingames.png
       twitter: btcplay
       email: games@bitcoin.com
-      bcc: No
+      bcc: Yes
       btc: Yes
-      othercrypto: No
+      status: https://www.bitcoin.com/info/bitcoin-cash-is-bitcoin
 
     - name: Bookmaker
       url: https://www.bookmaker.eu/
@@ -44,7 +44,7 @@ websites:
       twitter: bovadalv
       facebook: BovadaLV
       img: bovada.png
-      bcc: no
+      bcc: yes
       btc: yes
       othercrypto: no
       doc: https://www.bovada.lv/bitcoinhelp
@@ -65,6 +65,16 @@ websites:
       bcc: Yes
       btc: Yes
       othercrypto: Yes
+
+    - name: MyBookie
+      url: https://mybookie.ag
+      twitter: betmybookie
+      facebook: betmybookie
+      img: mybookieag.png
+      bcc: no
+      btc: yes
+      othercrypto: no
+      doc: https://mybookie.ag/info/banking/
 
     - name: SafeDice
       url: https://safedice.com/
@@ -88,4 +98,3 @@ websites:
       bcc: Yes
       btc: No
       othercrypto: No
-
