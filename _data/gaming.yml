@@ -76,6 +76,17 @@ websites:
       software: Yes
       doc: https://support.faceit.com/hc/en-us/articles/115000254670-Enabling-2-Factor-Authentication-
 
+    - name: Gaijin Entertainment
+      url: https://gaijin.net
+      img: gaijin.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.gaijin.net/hc/en-us/articles/203623622-How-to-set-up-the-Two-Step-Authorization-Google-Authenticator-
+      exceptions:
+          text: "A verified phone number is required for the use of two-factor authentication through email or software."
+
     - name: GameFly
       url: https://www.gamefly.com/
       twitter: GameFly
@@ -158,11 +169,20 @@ websites:
       img: mojang.png
       tfa: No
 
+    - name: Nintendo Account
+      url: https://accounts.nintendo.com/
+      img: nintendo-account.png
+      tfa: Yes
+      software: Yes
+      doc: http://en-americas-support.nintendo.com/app/answers/detail/a_id/27496
+      exceptions:
+          text: "2FA not available for child accounts (users 12 years of age or younger) or supervised accounts (users 13 years of age or older attached to a parent account)."
+
     - name: Nintendo Network
-      url: https://www.nintendo.com/
+      url: https://id.nintendo.net/
       twitter: NintendoAmerica
       facebook: Nintendo
-      img: nintendo.png
+      img: nintendo-network.png
       tfa: No
 
     - name: Origin
