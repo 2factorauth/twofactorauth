@@ -126,6 +126,13 @@ websites:
       software: Yes
       doc: https://lobste.rs/s/1cyltz/two_factor_authentication_now_available
 
+    - name: Mastodon
+      url: https://joinmastodon.org/
+      img: mastodon.png
+      tfa: Yes
+      software: Yes
+      doc: https://github.com/tootsuite/documentation/blob/master/Using-Mastodon/2FA.md
+
     - name: Medium
       url: https://medium.com
       img: medium.png
@@ -183,9 +190,10 @@ websites:
 
     - name: Reddit
       url: https://www.reddit.com/
-      twitter: reddit
       img: reddit.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://www.reddithelp.com/en/categories/using-reddit/your-reddit-account/how-set-two-factor-authentication
 
     - name: Snapchat
       url: https://www.snapchat.com/
