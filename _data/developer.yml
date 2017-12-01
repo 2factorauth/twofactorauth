@@ -281,11 +281,12 @@ websites:
       software: Yes
       doc: https://docs.npmjs.com/getting-started/using-two-factor-authentication
 
-    - name: Nuget
+    - name: NuGet
       url: https://www.nuget.org
       img: nuget.png
       tfa: No
       twitter: nuget
+      email_address: support@nuget.org
 
     - name: Papertrail
       url: https://papertrailapp.com/
