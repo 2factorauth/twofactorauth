@@ -274,6 +274,13 @@ websites:
       sms: Yes
       phone: Yes
 
+    - name: npm
+      url: https://www.npmjs.com/
+      img: npm.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.npmjs.com/getting-started/using-two-factor-authentication
+
     - name: Nuget
       url: https://www.nuget.org
       img: nuget.png
