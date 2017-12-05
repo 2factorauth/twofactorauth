@@ -68,6 +68,17 @@ websites:
       software: Yes
       doc: https://support.neteller.com/ACCOUNT/Two-Factor-Authentication/85238429/What-is-two-step-authentication.htm
 
+    - name: PAYEER
+      url: https://payeer.com/en/
+      img: payeer.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      exceptions:
+          text: "Receiving codes via SMS cost 0.05$ each message. 2FA is personalizable in account settings."
+      doc: https://payeer.com/en/faq/
+
     - name: Payoneer
       url: http://www.payoneer.com/
       twitter: Payoneer
