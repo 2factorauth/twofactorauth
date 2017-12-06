@@ -22,11 +22,9 @@ websites:
     - name: Binero
       url: https://www.binero.se
       img: binero.png
-      twitter: Binero
-      facebook: binero
-      email_address: support@binero.se
-      tfa: No
-      lang: sv
+      tfa: Yes
+      software: Yes
+      doc: https://blogg.binero.se/2017/10/tvafaktorsautentisering/
 
     - name: Bluehost
       url: https://www.bluehost.com/
@@ -126,6 +124,13 @@ websites:
       software: Yes
       hardware: Yes
 
+    - name: Hostens
+      url: https://www.hostens.com/
+      img: hostens.png
+      tfa: Yes
+      software: Yes
+      doc: https://billing.hostens.com/knowledgebase/article/29/how-to-enhance-account-security-/
+
     - name: HostHatch
       url: https://hosthatch.com/
       img: hosthatch.png
@@ -133,7 +138,7 @@ websites:
       software: Yes
 
     - name: ICUK
-      url: https://icuk.net
+      url: https://www.icuk.net
       img: icuk.png
       tfa: Yes
       software: Yes
@@ -296,6 +301,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
 
     - name: PlanetHoster
       url: https://planethoster.net
@@ -317,6 +323,14 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://clientarea.ramnode.com/knowledgebase.php?action=displayarticle&id=70
+
+    - name: section.io
+      url: https://www.section.io
+      img: sectionio.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.section.io/docs/how-to/user-management/enable-two-factor-authentication-on-your-account/
 
     - name: Site5
       url: https://www.site5.com/

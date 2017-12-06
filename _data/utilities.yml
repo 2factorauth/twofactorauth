@@ -53,6 +53,13 @@ websites:
           text: "SMS-capable phone and a non-Comcast.net email required for 2FA."
       doc: https://www.xfinity.com/support/account/enroll-2-step-verification/
 
+    - name: ComEd
+      url: https://www.comed.com/
+      twitter: ComEd
+      facebook: ComEd
+      img: comed.png
+      tfa: No
+
     - name: Con Edison
       url: https://www.coned.com/
       twitter: ConEdison
@@ -163,6 +170,13 @@ websites:
       tfa: No
       lang: hr
 
+    - name: Nicor Gas
+      url: https://www.nicorgas.com/
+      twitter: Nicor_Gas
+      facebook: NicorGas
+      img: nicorgas.png
+      tfa: No
+
     - name: Optus
       url: http://www.optus.com.au/
       twitter: Optus
@@ -229,6 +243,14 @@ websites:
       facebook: SanDiegoGasandElectric
       img: sdge.png
       tfa: No
+
+    - name: sipgate
+      url: https://www.sipgate.de/
+      twitter: sipgateDE
+      facebook: sipgate
+      img: sipgate.png
+      tfa: No
+      lang: de
 
     - name: Sonic
       url: https://www.sonic.com/

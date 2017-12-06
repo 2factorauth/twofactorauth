@@ -225,6 +225,15 @@ websites:
       tfa: No
       lang: de
 
+    - name: Commerzbank
+      url: https://www.commerzbank.de/
+      twitter: commerzbank
+      facebook: commerzbank
+      img: commerzbank.png
+      email_address: directbanking@commerzbank.com
+      tfa: No
+      lang: de
+
     - name: Commonwealth Bank of Australia
       url: https://www.commbank.com.au/
       img: commbank.png
@@ -571,6 +580,14 @@ websites:
       twitter: NortheastCU
       facebook: northeastcu
 
+    - name: Nubank
+      url: https://www.nubank.com.br
+      img: nubank.png
+      tfa: No
+      twitter: nubankbrasil
+      facebook: nubankbrasil
+      lang: pt
+
     - name: Optum Bank
       url: https://www.optumbank.com
       img: optum.png
@@ -722,6 +739,15 @@ websites:
       sms: Yes
       doc: https://www.simple.com/help/articles/account-maintenance/security
 
+    - name: Sparda Banken
+      url: http://www.sparda.de/
+      twitter: spardaberlin
+      facebook: spardaberlin
+      email_address: info@sparda-verband.de
+      img: spardabank.png
+      tfa: No
+      lang: de
+
     - name: Sparkasse
       url: https://www.sparkasse.de/
       twitter: sparkasse
@@ -827,6 +853,13 @@ websites:
       img: tsb.png
       tfa: No
 
+    - name: UBI Banca
+      url: https://www.ubibanca.com/
+      img: ubibanca.png
+      tfa: No
+      facebook: UBIBanca
+      lang: it
+
     - name: Umpqua Bank
       url: https://www.umpquabank.com/
       img:  umpqua.png
@@ -919,13 +952,6 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://www.zaba.hr/home/token#pan3
-
-    - name: ZenBanx
-      url: https://www.zenbanx.com/
-      twitter: ZenBanx
-      facebook: Zenbanx
-      img: zenbanx.png
-      tfa: No
 
     - name: Zurich Cantonal Bank (ZKB)
       url: https://www.zkb.ch/
