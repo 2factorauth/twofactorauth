@@ -228,9 +228,11 @@ websites:
       url: http://store.steampowered.com/
       img: steam.png
       bcc: No
-      btc: Yes
+      btc: No
       twitter: Steam_Games
       facebook: Steam
+      exceptions:
+            text: "Steam used to accept Bitcoin Legacy, but announced it would discontinue doing so on 2017-12-06, due to high fees and volatility in the value of Bitcoin." 
 
     - name: Steam Game Keys
       url: https://steamgamekeys.com/
