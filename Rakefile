@@ -32,6 +32,16 @@ task proof_external: 'build' do
   ).run
 end
 
+namespace :docker  do
+  desc "build docker images"
+  task :build do
+    puts "Generating static files for nginx"
+    puts `bundle exec jekyll build`
+    puts "Building acceptbitcoincash docker image"
+    puts `docker build -t acceptbitcoincash/acceptbitcoincash .`
+  end
+end
+
 task :verify do
   ruby './verify.rb'
 end
