@@ -217,6 +217,13 @@ websites:
       software: Yes
       doc: https://support.formstack.com/customer/portal/articles/1833071-two-factor-authentication
 
+    - name: Freelancer
+      url: https://www.freelancer.com/
+      img: freelancer.png
+      tfa: No
+      twitter: freelancer
+      facebook: fansoffreelancer
+
     - name: GoFundMe
       url: https://www.gofundme.com/
       img: gofundme.png
@@ -393,6 +400,13 @@ websites:
       software: Yes
       exceptions:
           text: "SMS only available as a backup to Google Authenticator."
+
+    - name: SaneBox
+      url: https://www.sanebox.com/
+      img: sanebox.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.sanebox.com/hc/en-us/articles/203837226-Two-Factor-Authentication-2FA-for-your-account-dashboard-on-sanebox-com
 
     - name: SignNow
       url: https://www.signnow.com/
