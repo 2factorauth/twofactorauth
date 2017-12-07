@@ -1,11 +1,18 @@
 {% assign section_id = include.id-param %}
 {% assign section_title = include.title-param %}
 {% assign section_file = site.data[section_id] %}
+{% assign count_bcc = 0 %}
+{% for website in section_file.websites %}
+  {% if website.bcc %}
+    {% assign count_bcc = count_bcc | plus: '1' %}
+  {% endif %}
+{% endfor %}
+
 <div class="website-table desktop-table {{ section_id }}-table" id="{{ section_id }}-desktoptable" style="display:none">
   <table class="ui celled table content-wrapper">
     <thead class="ui sticky">
     <tr>
-      <th class="single line four wide"><h3>{{ section_title }}</h3></th>
+      <th class="single line four wide"><h3>{{ section_title }} ({{ count_bcc }})</h3></th>
       <th class="two wide">Bitcoin Cash</th>
       <th class="two wide">Bitcoin (Legacy)</th>
       <th class="two wide">Other Crypto</th>
@@ -13,9 +20,9 @@
     </tr>
     </thead>
     <tbody class="bcc-merchant-content">
-      {% if section_file.websites.size == null %}
-      <tr class="desktop-tr">
-        <td colspan="5" style="text-align: center"><h3><i class="big remove circle icon"></i></h3> Nothing found.</td>
+      {% if count_bcc <= 0 %}
+      <tr class="bcc-only-none-found">
+        <td colspan="5" style="text-align: center"><h3><i class="big remove circle icon"></i></h3> No merchants accepting Bitcoin Cash found in {{section_title}}.</td>
       </tr>
       {% endif %}
       {% for website in section_file.websites %}

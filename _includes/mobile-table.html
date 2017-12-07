@@ -1,15 +1,22 @@
 {% assign section_id = include.id-param %}
 {% assign section_title = include.title-param %}
 {% assign section_file = site.data[section_id] %}
+{% assign count_bcc = 0 %}
+{% for website in section_file.websites %}
+  {% if website.bcc %}
+    {% assign count_bcc = count_bcc | plus: '1' %}
+  {% endif %}
+{% endfor %}
+
 <div class="website-table mobile-table {{ section_id }}-table" id="{{ section_id }}-mobiletable" style="display:none">
   <div class="label">
     <h3>{{ section_title }}</h3>
   </div>
   <div class="bcc-merchant-content">
-    {% if section_file.websites.size == null %}
-    <div class="main negative{% if website.bcc == false %} no-bcc{% endif %}">
+    {% if count_bcc <= 0 %}
+    <div class="main negative{% if website.bcc == false %} no-bcc{% endif %} bcc-only-none-found-mobile">
       <div class="title">
-        <i class="big remove circle icon"></i> Nothing found.
+        <i class="big remove circle icon"></i>No merchants accepting Bitcoin Cash found in {{section_title}}.
       </div>
     </div>
     {% endif %}

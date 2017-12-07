@@ -48,14 +48,14 @@ hash: acceptBitcoinCash
       <svg version="1.1" id="coin_side_left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="90px" height="200px" viewBox="0 0 549 1186" xml:space="preserve">
         <path d="M549.068,1186
-					c-186.543-130.974-308.48-347.74-308.48-593S362.525,130.973,549.068,0H4.85v1186H549.068z"/>
+          c-186.543-130.974-308.48-347.74-308.48-593S362.525,130.973,549.068,0H4.85v1186H549.068z"/>
       </svg>
     </div>
     <div class="coin-side left-side">
       <svg version="1.1" id="coin_side_left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="90px" height="200px" viewBox="0 0 549 1186" xml:space="preserve">
         <path d="M549.068,1186
-					c-186.543-130.974-308.48-347.74-308.48-593S362.525,130.973,549.068,0H4.85v1186H549.068z"/>
+          c-186.543-130.974-308.48-347.74-308.48-593S362.525,130.973,549.068,0H4.85v1186H549.068z"/>
       </svg>
     </div>
     <input type="checkbox" id="coin-toggle">
@@ -97,7 +97,7 @@ hash: acceptBitcoinCash
               <i class="remove icon"></i>
             </button>
           </label>
-          <label class="z-switch">
+          <label for="show-bcc-only" class="z-switch">
             <input type="checkbox" id="show-bcc-only">
               <div class="z-switch--container">
                   <div class="z-switch--slider"></div>
@@ -146,33 +146,50 @@ hash: acceptBitcoinCash
     <div class="five column row">
       {% assign rowcount = 0 %}
       {% for section in site.data.sections %}
-      {% assign rowend = forloop.index | modulo: 5 %}
-      {% if rowend == 0 or forloop.index == forloop.length %}
-      <div id="{{ section.id }}" class="category column">
-        <h5 class="ui icon header">
-          <i class="circular {{ section.icon }} icon"></i>
-          <small>{{ section.title }}</small>
-        </h5>
-      </div>
-      {% include mobile-table.html id-param=section.id title-param=section.title %}
-      {% assign offcount = 5 | times: rowcount %}
-      {% for section in site.data.sections limit: 5 offset: offcount %}
-      {% include desktop-table.html id-param=section.id title-param=section.title %}
-      {% endfor %}
-    </div>
-    {% if forloop.index != forloop.length %}
-    {% assign rowcount = rowcount | plus: '1' %}
-    <div class="five column row">
-    {% endif %}
-      {% else %}
-      <div id="{{ section.id }}" class="category column">
-        <h5 class="ui icon header">
-          <i class="circular {{ section.icon }} icon"></i>
-          <small>{{ section.title }}</small>
-        </h5>
-      </div>
-      {% include mobile-table.html id-param=section.id title-param=section.title %}
-      {% endif %}
+        {% assign current_section = site.data[section.id] %}
+        {% assign rowend = forloop.index | modulo: 5 %}
+
+        {% assign count_bcc = 0 %}
+        {% for website in current_section.websites %}
+          {% if website.bcc %}
+            {% assign count_bcc = count_bcc | plus: '1' %}
+          {% endif %}
+        {% endfor %}
+
+        {% if rowend == 0 or forloop.index == forloop.length %}
+          {% if count_bcc == 0 %}
+          <div id="{{ section.id }}" class="category column bcc-only-hidden">
+          {% else %}
+          <div id="{{ section.id }}" class="category column">
+          {% endif %}
+            <h5 class="ui icon header">
+              <i class="circular {{ section.icon }} icon"></i>
+              <small>{{ section.title }}</small>
+            </h5>
+          </div>
+          {% include mobile-table.html id-param=section.id title-param=section.title %}
+          {% assign offcount = 5 | times: rowcount %}
+          {% for section in site.data.sections limit: 5 offset: offcount %}   
+            {% include desktop-table.html id-param=section.id title-param=section.title %}
+          {% endfor %}
+          </div>
+          {% if forloop.index != forloop.length %}
+            {% assign rowcount = rowcount | plus: '1' %}
+            <div class="five column row">
+          {% endif %}
+        {% else %}
+          {% if count_bcc == 0 %}
+          <div id="{{ section.id }}" class="category column bcc-only-hidden">
+          {% else %}
+          <div id="{{ section.id }}" class="category column">
+          {% endif %}
+            <h5 class="ui icon header">
+              <i class="circular {{ section.icon }} icon"></i>
+              <small>{{ section.title }}</small>
+            </h5>
+          </div>
+          {% include mobile-table.html id-param=section.id title-param=section.title %}
+        {% endif %}
       {% endfor %}
     </div>
   </div>

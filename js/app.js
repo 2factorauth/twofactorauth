@@ -243,8 +243,13 @@ $('.z-switch').click(function () {
 function BCCfilter() {
  if ($('#show-bcc-only').is(':checked')) {
     $('.no-bcc').css('display', 'none');
+    $('.bcc-only-none-found').css('display', 'table-row');
+    $('.bcc-only-none-found-mobile').css('display', 'block');
+    $('.bcc-only-hidden').css('opacity', '0.4');
     if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
   } else {
+    $('.bcc-only-none-found, .bcc-only-none-found-mobile').css('display', 'none');
+    $('.bcc-only-hidden').css('opacity', '1');
     $('.mobile-table .no-bcc').css('display', 'block');
     $('.desktop-table .no-bcc').css('display', 'table-row');
     if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
