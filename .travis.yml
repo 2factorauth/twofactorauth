@@ -1,29 +1,20 @@
-dist: trusty
 sudo: false
 language: ruby
 rvm: 2.4.0
 cache:
   bundler: true
   directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
-
-env:
-  global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  matrix:
-    - TEST_SUITE=proof
-    - TEST_SUITE=verify
-    - TEST_SUITE=rubocop
-    - TEST_SUITE=proof_external
-
 before_install: gem update --system --no-doc
-
 matrix:
   include:
-    - script: "bundle exec rake $TEST_SUITE"
-
+    - os: linux
+      dist: trusty
+    - os: osx
+      script: bundle exec rake proof_external
+      env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   allow_failures:
-    - script: "bundle exec rake proof_external"
-
+    - script: bundle exec rake proof_external
 notifications:
-  email: false
-  slack:
+    email: false
+    slack:
+      secure: OB043wpK+Oje7NnO24ZFJGbtPUTKafvB/h2TkfRuiFHa8jyZ3R9+pLFL6P5zpwYYVgKwZ/xW13aY0ZU8BNh6lkR13X4azY2J/IjRXxz9eZ+MfMA3MEJpB0Fsw7T3xBAxjVEEhF3JDHx187AanOMQcMd7YCdaV+eDjFZ+/KJUn18=
