@@ -120,6 +120,12 @@ $(document).ready(function () {
     hoverable: true
   });
   $('a.popup.exception').popup();
+
+  // Display progress counter for sites accepting BCH out of total sites listed
+  $('.ui.bch-progress').progress({
+    label: 'percent',
+    showActivity: false
+  });
 });
 
 /**

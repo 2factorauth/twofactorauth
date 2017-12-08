@@ -35,6 +35,8 @@ end
 namespace :docker do
   desc "build docker images"
   task :build do
+    puts "Generating stats (HTML partial) of websites supporting Bitcoin Cash"
+    puts `python ./scripts/python/bchAccepted.py`
     puts "Generating static files for nginx"
     puts `bundle exec jekyll build`
     puts "Building acceptbitcoincash docker image"

@@ -718,6 +718,37 @@ span.progress {
   padding-left: 10%;
 }
 
+.ui.progress.bch-progress {
+  background: rgba(0,0,0,0.45) !important;
+  background: $blue-light-alpha !important;
+  padding: 0;
+  margin: 1rem auto 5rem !important;
+
+  .bar {
+    background: $green;
+
+    .progress {
+      background: none !important;
+      color: #fff;
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+    }
+  }
+
+  .label {
+    margin-top: 1rem;
+    color: $gray;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    cursor: help;
+  }
+}
+
+[data-position="bottom center"][data-tooltip]:after {
+  letter-spacing: 0 !important;
+}
+
 .ui.subfooter {
   background: rgba(0,0,0,0.88);
   color: #f0f0f0;
@@ -1077,6 +1108,21 @@ span.progress {
     margin-top: 2rem;
   }
 
+  .ui.progress.bch-progress {
+    margin: 1rem 1rem 5rem !important;
+    
+    .bar .progress {
+      right: 0.15rem;
+    }
+
+    .label {
+      margin-top: 0.7rem;
+      font-size: 1.4rem;
+      letter-spacing: -1px;
+      line-height: 1.2;
+    }
+  }
+
   .ticker {
     #ticker_value {
       li {
@@ -1095,7 +1141,6 @@ span.progress {
       }
     }
   }
-
 
   .ui.subfooter {
     padding: 2em 0 0;
