@@ -32,7 +32,7 @@ task proof_external: 'build' do
   ).run
 end
 
-namespace :docker  do
+namespace :docker do
   desc "build docker images"
   task :build do
     puts "Generating static files for nginx"
