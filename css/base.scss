@@ -215,7 +215,7 @@ p {
     padding: 10px 0;
     background: $blue;
     border-radius: 0 0 10px 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-style: italic;
     font-weight: 500;
 
@@ -545,6 +545,10 @@ p {
 
 .ui.table td.twitter {
   text-align: center;
+}
+
+.bcc-only-none-found {
+  display: none;
 }
 
 .website-table {
@@ -1070,7 +1074,7 @@ span.progress {
 
             .z-switch--container {
               float: left;
-              margin: 0 10px 0 0;
+              margin: 3px 10px 0 0;
             }
           }
         }
