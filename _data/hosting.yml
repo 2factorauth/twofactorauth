@@ -15,6 +15,16 @@ websites:
       twitter: arpnetworks
       facebook: arpnetworks
 
+    - name: BaCloud
+      url: https://www.bacloud.com
+      twitter: bacloud
+      facebook: Bacloudcom
+      img: bacloud.png
+      bcc: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://www.bacloud.com/en/payment-methods
+
     - name: Binary Lane
       url: https://www.binarylane.com.au/
       img: binarylane.png
@@ -61,8 +71,8 @@ websites:
       facebook: cloud9hosting
       bcc: No
       btc: Yes
-      othercrypto: No  
-      
+      othercrypto: No
+
     - name: CloudAtCost
       url: http://cloudatcost.com
       img: cloudatcost.png
@@ -86,7 +96,7 @@ websites:
       bcc: No
       twitter: cyon
       facebook: cyonhosting
-    
+
     - name: DasVPS
       url: https://dasvps.com
       img: dasvps.png
@@ -125,7 +135,14 @@ websites:
       facebook: fastlycdn
       img: fastly.png
       bcc: No
-      
+
+    - name: Feral Hosting
+      url: https://www.feralhosting.com
+      img: feralhosting.png
+      twitter: feralstatus
+      bcc: No
+      btc: Yes
+
     - name: Fork Networking
       url: http://www.forked.net/
       img: forknetworking.png
@@ -215,7 +232,7 @@ websites:
       btc: Yes
       bcc: Yes
       othercrypto: Yes
-      
+
     - name: IO Zoom
       url: https://www.iozoom.com
       img: iozoom.png
@@ -229,7 +246,7 @@ websites:
       facebook: iPage
       img: ipage.png
       bcc: No
-      
+
     - name: IT Itch
       url: https://ititch.com/
       img: ititch.png
@@ -313,6 +330,14 @@ websites:
       img: nitrado.png
       bcc: No
       twitter: nitrado_en
+
+    - name: NiceVPS.net
+      url: https://nicevps.net
+      img: nicevps.png
+      bcc: yes
+      btc: yes
+      othercrypto: yes
+      doc: https://nicevps.net/index/payments
 
     - name: Noez
       url: https://noez.de/

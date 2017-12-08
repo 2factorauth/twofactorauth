@@ -71,7 +71,7 @@ output.write(' \
   <div class="bar"> \
     <div class="progress"></div> \
   </div> \
-  <div class="label" data-tooltip="Please help to improve this ratio by sending tweets to, or writing on the wall of each website listed above that does not yet support Bitcoin Cash." data-position="bottom center" data-inverted=""><b>' + str(totalBCH) + '</b> out of <b>' + str(totalSites) + '</b> websites listed support Bitcoin Cash.</div> \
+  <div class="label" data-tooltip="Please help to improve this ratio by sending tweets to, or writing on the wall of the merchants/websites that you hope to see support Bitcoin Cash." data-position="bottom center" data-inverted=""><b>' + str(totalBCH) + '</b> out of <b>' + str(totalSites) + '</b> websites listed support Bitcoin Cash.</div> \
 </div>')
 
 output.close()

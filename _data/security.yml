@@ -2,11 +2,14 @@ websites:
     - name: Air VPN
       url: https://airvpn.org/
       img: airvpn.png
-      bcc: No
+      bcc: Yes
+      btc: Yes
+      othercrypto: Yes
       twitter: airvpn
+      facebook: airvpn.org
 
     - name: Anonine
-      url: https://aanonine.com
+      url: https://anonine.com
       img: anonine.png
       bcc: No
       btc: Yes
@@ -53,6 +56,7 @@ websites:
       img: cyberghost.png
       bcc: No
       twitter: cyberghost_EN
+      facebook: cyberghostEN
 
     - name: Detectify
       url: https://detectify.com/
@@ -129,6 +133,15 @@ websites:
       othercrypto: Yes
       doc: https://www.reddit.com/r/btc/comments/6t15gd/keyoiscom_makers_of_the_keyois_capsule_now/
 
+    - name: Mullvad VPN
+      url: https://mullvad.net/
+      twitter: mullvadnet
+      email_address: support@mullvad.net
+      img: mullvad.png
+      bcc: no
+      btc: yes
+      othercrypto: no
+
     - name: NordVPN
       url: https://www.nordvpn.com
       img: nordvpn.png
@@ -182,12 +195,13 @@ websites:
       facebook: ProtonVPN
 
     - name: PureVPN
-      url: https://www.preyproject.com
-      img: prey.png
-      bcc: No
+      url: https://www.purevpn.com
+      img: purevpn.png
+      bcc: Yes
       btc: Yes
-      twitter: purevpncom
-      facebook: purevpn
+      othercrypto: Yes
+      twitter: purevpn
+      facebook: PureVPNcom
 
     - name: Pwnie Express Pwn Pulse
       url: https://www.pwnieexpress.com/products/pulse-device-detection
@@ -213,11 +227,19 @@ websites:
 
     - name: ShadeYou
       url: https://www.shadeyouvpn.com
-      img: safervpn.png
+      img: shadeyou.png
       bcc: No
       btc: Yes
       twitter: shadeyou_vpn
       facebook: shadeyouvpn
+
+    - name: Snusbase
+      url: https://snusbase.com
+      twitter: publicdbhost
+      img: snusbase.png
+      bcc: yes
+      btc: yes
+      othercrypto: yes
 
     - name: SSLTrust
       url: https://www.ssltrust.com.au/
@@ -230,8 +252,8 @@ websites:
       url: https://threatconnect.com/
       img: threatconnect.png
       bcc: No
-      twitter: TreatConnect
-      facebook: TreatConnect
+      twitter: ThreatConnect
+      facebook: ThreatConnect
 
     - name: ThreatMetrix
       url: https://www.threatmetrix.com/
@@ -272,12 +294,14 @@ websites:
       url: https://vpnunlimitedapp.com/
       img: vpnunlimited.png
       twitter: vpnunlimited
+      facebook: vpnunlimitedapp
       bcc: No
 
     - name: Webroot
       url: http://www.webroot.com
       img: webroot.png
       twitter: Webroot
+      facebook: Webroot
       bcc: No
 
     - name: Windscribe

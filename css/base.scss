@@ -104,6 +104,7 @@ p {
     }
 
     &:nth-child(3) {
+      display: none;
       background-color: $green-light !important;
       position: absolute;
       top: -128px;
@@ -721,6 +722,7 @@ span.progress {
   background: rgba(0,0,0,0.45) !important;
   background: $blue-light-alpha !important;
   padding: 0;
+  margin: 1rem auto 5rem !important;
 
   .bar {
     background: $green;
@@ -750,19 +752,18 @@ span.progress {
 .ui.subfooter {
   background: rgba(0,0,0,0.88);
   color: #f0f0f0;
-  margin: 4em 0 0;
-  padding: 3em 0 0;
-  border-top: 3px solid $green-light;
+  margin: 0;
+  padding: 2em 0 0;
   border-radius: 0;
 
   .inner {
     width: 80%;
-    margin: 0 auto 3em;
+    margin: 0 auto 2.5em;
 
     h3 {
       font-weight: 300;
       letter-spacing: -1px;
-      font-size: 2.3rem;
+      font-size: 1.5rem;
       margin-bottom: 1em;
     }
 
@@ -797,6 +798,48 @@ span.progress {
   }
 }
 
+.ticker {
+  margin: 2rem 0 0;
+  padding: 0;
+  border-top: 3px solid $green-light;
+  border-radius: 0;
+
+  #ticker_value {
+    background: $orange-alpha;
+    list-style: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 1rem 2rem;
+      font-weight: bold;
+      color: $gray;
+
+      &:first-child {
+        margin-top: 2rem;
+      }
+
+      &:last-child {
+        margin-bottom: 2rem;
+      }
+
+      span.curr-symbol {
+        font-size: 1.8rem;
+        font-weight: normal;
+        margin: 0 0.2rem;
+      }
+
+      span.curr-price {
+        display: block;
+        margin-top: 0.8rem;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: -2px;
+      }
+    }
+  }
+}
+
 /*
 #ama-merchant {
   background-color: #BF5700;
@@ -807,8 +850,38 @@ span.progress {
 }
 */
 
-.ama-merchant .assets {
-  img {
+
+.asset-panel {
+  background: #fff;
+  background-image: linear-gradient(45deg, #e8e8e8 25%, transparent 25%), linear-gradient(-45deg, #e8e8e8 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #e8e8e8 75%), linear-gradient(-45deg, transparent 75%, #e8e8e8 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  text-align: center;
+
+  p {
+    width: 62%;
+    margin: 0 auto;
+    padding: 2rem 0 0;
+    font-size: 1.2rem;
+  }
+
+  > a {
+    display: inline-block;
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -1px;
+    cursor: pointer;
+
+    i {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.assets {
+  img:not(.p-logo) {
     position: relative;
     display: inline-block;
     background: url(/img/alpha-image-bg.gif) repeat #f0f0f0;
@@ -855,7 +928,7 @@ span.progress {
   background: rgba(255,255,255,0.7);
   margin: 0;
   border-top: 3px solid #daecd4;
-  padding: 1.5em;
+  padding: 2rem;
 }
 
 #show-disclaimer {
@@ -1029,10 +1102,6 @@ span.progress {
     padding: 0.65rem 0;
   }
 
-  .ama-merchant .assets {
-    text-align: center;
-  }
-
   .ui.list.artwork-list {
     float: none;
     width: 100%;
@@ -1040,14 +1109,10 @@ span.progress {
   }
 
   .ui.progress.bch-progress {
-    margin: 1rem !important;
-
-    .bar {
-      background: $green;
-
-      .progress {
-        font-size: 1rem;
-      }
+    margin: 1rem 1rem 5rem !important;
+    
+    .bar .progress {
+      right: 0.15rem;
     }
 
     .label {
@@ -1058,12 +1123,31 @@ span.progress {
     }
   }
 
+  .ticker {
+    #ticker_value {
+      li {
+        display: block;
+        margin: 2rem;
+
+        &:first-child {
+          margin-top: 0;
+          padding-top: 2rem;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+
   .ui.subfooter {
     padding: 2em 0 0;
 
     .inner {
       h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
       .ui.huge.button, .ui.huge.buttons .button, .ui.huge.buttons .or {
         font-size: 0.8rem;
@@ -1073,6 +1157,30 @@ span.progress {
          top: 0;
       }
     }
+  }
+
+  .asset-panel {
+    padding-bottom: 1rem;
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    > a {
+      padding: 1rem;
+      font-size: 1.6rem;
+      text-align: center;
+
+      i {
+        display: block;
+        font-size: 3rem;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .assets {
+    text-align: center;
   }
 }
 

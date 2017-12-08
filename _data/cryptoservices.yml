@@ -1,4 +1,13 @@
 websites:
+  - name: BitcoinPlug
+    url: https://bitcoinplug.com
+    twitter: bitcoinplugatm
+    img: bitcoinplugatm.png
+    bcc: yes
+    btc: yes
+    othercrypto: yes
+    doc: https://bitcoinplug.com/bitcoin-cash/
+
   - name: BitGo
     url: https://www.bitgo.com
     img: bitgo.png
@@ -119,7 +128,7 @@ websites:
     bcc: No
     btc: Yes
     othercrypto: Yes
-    
+
   - name: CoinSalad
     url: https://coinsalad.com/bitcoincash
     img: coinsalad.png
@@ -149,7 +158,7 @@ websites:
     bcc: Yes
     btc: Yes
     othercrypto: Yes
-    
+
   - name: Insight
     url: https://insight.bitpay.com/
     img: insight.png
@@ -157,6 +166,16 @@ websites:
     bcc: Yes
     btc: Yes
     othercrypto: No
+
+  - name: KaMoney Brasil
+    url: https://www.kamoney.com.br/
+    twitter: kamoneybrasil
+    facebook: kamoneybrasil
+    img: kamoney.png
+    bcc: yes
+    btc: yes
+    othercrypto: yes
+    doc: https://twitter.com/kamoneybrasil/status/930527194803302400
 
   - name: Keys4Coins
     url: https://www.keys4coins.com

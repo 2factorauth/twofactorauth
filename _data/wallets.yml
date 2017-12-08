@@ -31,6 +31,12 @@ websites:
       btc: Yes
       doc: https://news.bitcoin.com/introducing-the-simple-to-use-and-robust-bitcoin-com-wallet/
 
+    - name: bitWallet
+      url: http://www.sollico.com/bitwallet/
+      img: bitwallet.png
+      bcc: Yes
+      btc: Yes
+
     - name: Blockchain
       url: https://blockchain.info/
       img: blockchain.png
@@ -85,7 +91,7 @@ websites:
       bcc: Yes
       btc: No
 
-    - name: Exodus 
+    - name: Exodus
       url: https://www.exodus.io/
       img: exodus.png
       bcc: Yes
@@ -102,10 +108,9 @@ websites:
     - name: Jaxx
       url: https://jaxx.io/
       img: jaxx.png
-      bcc: No
+      bcc: Yes
       btc: Yes
       doc: http://decentral.ca/update-bch-jaxx/
-      status: http://decentral.ca/update-bch-jaxx/
 
     - name: KeepKey
       url: https://www.keepkey.com/
