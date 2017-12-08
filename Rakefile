@@ -36,7 +36,9 @@ namespace :docker do
   desc "build docker images"
   task :build do
     puts "Generating stats (HTML partial) of websites supporting Bitcoin Cash"
-    puts `python ./scripts/python/bchAccepted.py`
+    Dir.chdir(File.join('.', 'scripts', 'python')) do
+      puts `python ./bchAccepted.py`
+    end
     puts "Generating static files for nginx"
     puts `bundle exec jekyll build`
     puts "Building acceptbitcoincash docker image"
