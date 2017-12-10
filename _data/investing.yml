@@ -66,10 +66,12 @@ websites:
       software: Yes
       doc: https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log
 
-    - name: Loyal3
-      url: https://www.loyal3.com/
-      twitter: loyal3
-      img: loyal3.png
+    - name: John Hancock Pensions
+      url: https://www.jhancockpensions.com
+      twitter: johnhancockusa
+      facebook: johnhancock
+      email_address: My401K@jhancock.com
+      img: johnhancock.png
       tfa: No
 
     - name: Manulife
@@ -124,6 +126,7 @@ websites:
       img: questrade.png
       tfa: No
       twitter: Questrade
+      status: https://twitter.com/Questrade/status/864214855078866977
 
     - name: Raizers
       url: https://www.raizers.com
@@ -207,9 +210,9 @@ websites:
     - name: Wealthsimple
       url: https://www.wealthsimple.com
       img: wealthsimple.png
-      tfa: No
-      twitter: Wealthsimple
-      facebook: wealthsimple
+      tfa: Yes
+      sms: Yes
+      software: Yes
 
     - name: WiseBanyan
       url: https://www.wisebanyan.com/

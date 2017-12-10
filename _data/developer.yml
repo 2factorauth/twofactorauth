@@ -64,7 +64,7 @@ websites:
       img: bugsnag.png
       tfa: Yes
       software: Yes
-      doc: https://blog.bugsnag.com/two-factor-authentication/
+      doc: https://docs.bugsnag.com/product/account-and-security/#security
 
     - name: Bugzilla@Mozilla
       url: https://bugzilla.mozilla.org
@@ -273,6 +273,20 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
+
+    - name: npm
+      url: https://www.npmjs.com/
+      img: npm.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.npmjs.com/getting-started/using-two-factor-authentication
+
+    - name: NuGet
+      url: https://www.nuget.org
+      img: nuget.png
+      tfa: No
+      twitter: nuget
+      email_address: support@nuget.org
 
     - name: Papertrail
       url: https://papertrailapp.com/

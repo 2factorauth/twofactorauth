@@ -64,6 +64,13 @@ websites:
       software: Yes
       doc: https://awardwallet.com/faqs#44
 
+    - name: Bananatag
+      url: https://www.bananatag.com/
+      img: bananatag.png
+      tfa: No
+      twitter: bananatag
+      facebook: trackemail
+
     - name: BasisCode Compliance
       url: http://basiscode.com
       img: basiscode.png
@@ -72,6 +79,14 @@ websites:
       email: Yes
       phone: Yes
       doc: http://basiscode.com/blog/two-factor-authentication-compliance-software/
+
+    - name: Boxcryptor
+      url: https://www.boxcryptor.com
+      img: boxcryptor.png
+      tfa: No
+      twitter: boxcryptor
+      facebook: boxcryptor
+      email_address: info@boxcryptor.com
 
     - name: BuiltWith
       url: https://builtwith.com
@@ -95,12 +110,11 @@ websites:
       software: Yes
       doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
 
-    - name: Clio
-      url: https://goclio.com
-      img: clio.png
-      tfa: Yes
-      email: Yes
-      doc: https://support.goclio.com/hc/en-us/articles/203184210-Two-Factor-Authentication
+    - name: Clickworker
+      url: https://www.clickworker.com/
+      img: clickworker.png
+      tfa: No
+      twitter: clickworker_com
 
     - name: Cloudinary
       url: http://cloudinary.com
@@ -128,6 +142,12 @@ websites:
       twitter: crowd_supply
       facebook: CrowdSupply
       email_address: support@crowdsupply.com
+
+    - name: CrowdFlower
+      url: https://www.crowdflower.com/
+      img: crowdflower.png
+      tfa: No
+      twitter: CrowdFlower
 
     - name: Delicious
       url: http://del.icio.us/
@@ -197,6 +217,23 @@ websites:
       software: Yes
       doc: https://support.formstack.com/customer/portal/articles/1833071-two-factor-authentication
 
+    - name: Freelancer
+      url: https://www.freelancer.com/
+      img: freelancer.png
+      tfa: No
+      twitter: freelancer
+      facebook: fansoffreelancer
+
+    - name: GoFundMe
+      url: https://www.gofundme.com/
+      img: gofundme.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://support.gofundme.com/hc/en-us/sections/200611108-Phone-Verification-
+      exceptions:
+          text: "2FA only for North American customers that create Personal campaigns."
+
     - name: IEEE
       url: https://www.ieee.org
       img: ieee.png
@@ -224,6 +261,29 @@ websites:
       tfa: No
       twitter: indeed
       facebook: Indeed
+
+    - name: Indiegogo
+      url: https://www.indiegogo.com/
+      twitter: indiegogoUK
+      facebook: Indiegogo
+      img: indiegogo.png
+      tfa: No
+
+    - name: Instapaper
+      url: https://www.instapaper.com
+      twitter: InstapaperHelp
+      facebook: instapaperholdings
+      email_address: support@help.instapaper.com
+      img: instapaper.png
+      tfa: No
+
+    - name: karriere.at
+      url: http://www.karriere.at
+      img: karriereat.png
+      tfa: No
+      twitter: karriere_at
+      facebook: karriere.at
+      lang: de
 
     - name: Kayako
       url: https://www.kayako.com
@@ -341,12 +401,27 @@ websites:
       exceptions:
           text: "SMS only available as a backup to Google Authenticator."
 
+    - name: SaneBox
+      url: https://www.sanebox.com/
+      img: sanebox.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.sanebox.com/hc/en-us/articles/203837226-Two-Factor-Authentication-2FA-for-your-account-dashboard-on-sanebox-com
+
     - name: SignNow
       url: https://www.signnow.com/
       img: signnow.png
       tfa: No
       twitter: signnow
       facebook: BarracudaSignNow
+
+    - name: Spare5
+      url: https://app.spare5.com/fives
+      img: spare5.png
+      tfa: No
+      twitter: spare5
+      facebook: spare5app
+      email_address: feedback@spare5.com
 
     - name: StartJOIN
       url: https://www.startjoin.com/

@@ -55,6 +55,14 @@ websites:
       software: Yes
       doc: https://help.hushmail.com/entries/63282756-Two-step-verification
 
+    - name: Legalmail
+      url: https://www.legalmail.it/
+      img: legalmail.png
+      tfa: No
+      twitter: InfoCert_it
+      facebook: InfoCertSpa
+      lang: it
+
     - name: Mail.com
       url: https://www.mail.com/
       twitter: maildotcom
@@ -98,6 +106,12 @@ websites:
       email_address: contact@migadu.com
       img: migadu.png
       tfa: No
+
+    - name: MXroute
+      url: https://mxroute.com/
+      img: mxroute.png
+      tfa: Yes
+      software: Yes
 
     - name: Outlook.com
       url: https://outlook.com
@@ -158,6 +172,13 @@ websites:
       hardware: Yes
       doc: https://www.thexyz.com/account/knowledgebase/15/Enabling-two-factor-authentication.html
 
+    - name: Virgin Media E-Mail
+      url: https://www.virginmedia.com/
+      twitter: virginmedia
+      facebook: virgin
+      img: virginmedia.png
+      tfa: No
+
     - name: Web.de
       url: https://web.de
       twitter: WEBDE
@@ -179,6 +200,7 @@ websites:
       img: yahoomail.png
       tfa: Yes
       sms: Yes
+      phone: Yes
       doc: https://help.yahoo.com/kb/SLN5013.html
 
     - name: Yandex.Mail
