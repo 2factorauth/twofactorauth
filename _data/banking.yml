@@ -225,6 +225,15 @@ websites:
       tfa: No
       lang: de
 
+    - name: Commercial Bank of Qatar
+      url: http://www.cbq.qa/
+      img: cbq.png
+      tfa: Yes
+      sms: Yes
+      doc: https://cbonline.cbq.qa/RIB/Common/FAQContent
+      exceptions:
+       text: "An SMS capable phone with a Qatar phone number is required."
+
     - name: Commerzbank
       url: https://www.commerzbank.de/
       twitter: commerzbank
