@@ -434,6 +434,7 @@ p {
   border: 3px solid $green-light;
   border-radius: 7px;
   padding: 40px 20px;
+  margin-top: 4rem;
 }
 
 .ui.grid > .row {
@@ -726,7 +727,7 @@ span.progress {
   background: rgba(0,0,0,0.45) !important;
   background: $blue-light-alpha !important;
   padding: 0;
-  margin: 1rem auto 5rem !important;
+  margin: 1rem auto 7rem !important;
 
   .bar {
     background: $green;
@@ -757,7 +758,7 @@ span.progress {
   background: rgba(0,0,0,0.88);
   color: #f0f0f0;
   margin: 0;
-  padding: 2em 0 0;
+  padding: 5rem 0 3rem;
   border-radius: 0;
 
   .inner {
@@ -802,6 +803,11 @@ span.progress {
   }
 }
 
+.ui.segment.twitter-panel {
+  padding: 2rem 0;
+  margin-bottom: 5rem;
+}
+
 .ticker {
   margin: 2rem 0 0;
   padding: 0;
@@ -809,6 +815,7 @@ span.progress {
   border-radius: 0;
 
   #ticker_value {
+    padding: 1rem 0;
     background: $orange-alpha;
     list-style: none;
     text-align: center;
@@ -861,6 +868,7 @@ span.progress {
   background-size: 20px 20px;
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
   text-align: center;
+  padding: 2rem 0;
 
   p {
     width: 62%;
@@ -993,12 +1001,19 @@ span.progress {
       }
 
       .title-footer {
+        border-radius: 0;
 
         a {
-          margin: 0.5rem 0;
+          margin: 1rem 0;
           display: block;
           border-radius: 0;
           width: 100%;
+          padding: 0.25rem 0 0;
+          
+          &:first-child {
+            border-bottom: 1px solid $gray;
+            padding: 0 0 1rem;
+          }
         }
       }
     }
@@ -1150,11 +1165,8 @@ span.progress {
     padding: 2em 0 0;
 
     .inner {
-      h3 {
-        font-size: 1.2rem;
-      }
       .ui.huge.button, .ui.huge.buttons .button, .ui.huge.buttons .or {
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
 
       .ui.buttons .or {
@@ -1172,7 +1184,7 @@ span.progress {
 
     > a {
       padding: 1rem;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       text-align: center;
 
       i {
