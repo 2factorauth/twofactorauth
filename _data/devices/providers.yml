@@ -84,6 +84,24 @@ providers:
     hardware: Yes
     u2f: Yes
 
+  - name: Feitian Technologes Co., Ltd.
+    url: https://www.ftsafe.com
+    img: ftsafe.png
+    otp: Yes
+    u2f: Yes
+
+  - name: Hypersecu
+    url: https://hypersecu.com
+    img: hypersecu.png
+    otp: Yes
+    u2f: Yes
+
+  - name: Ledger
+    url: https://www.ledgerwallet.com/products
+    img: ledger.png
+    otp: No
+    u2f: Yes
+
   - name: Nitrokey
     url: https://www.nitrokey.com
     img: nitrokey.png
@@ -219,15 +237,3 @@ providers:
     img: yubico.png
     u2f: Yes
     otp: Yes
-
-  - name: Hypersecu
-    url: https://hypersecu.com
-    img: hypersecu.png
-    otp: Yes
-    u2f: Yes
-    
-  - name: Feitian Technologes Co., Ltd.
-    url: https://www.ftsafe.com
-    img: ftsafe.png
-    otp: Yes
-    u2f: Yes
