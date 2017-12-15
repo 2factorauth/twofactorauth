@@ -22,7 +22,7 @@ websites:
       phone: Yes
       doc: https://www.digid.nl/nl/vraag-en-antwoord/hoe-kan-ik-de-sms-controle-toevoegen/
       exceptions:
-        text: "Software implementation requires use of the DigiD app. It does not support multiple accounts on the same device. To enable the app, the user must already have the SMS option configured."
+        text: "Software 2FA requires DigiD app and SMS or phone call. One account per device."
 
     - name: Federal Student Aid
       url: https://studentaid.ed.gov
