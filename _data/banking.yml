@@ -699,13 +699,6 @@ websites:
       img: sccfcu.png
       tfa: No
 
-    - name: Santander UK
-      url: http://www.santander.co.uk
-      img: santander.png
-      tfa: Yes
-      sms: Yes
-      doc: http://www.santander.co.uk/uk/help-support/security-centre
-
     - name: Santander BR
       url: https://www.santander.com.br/
       img: santander.png
@@ -714,6 +707,13 @@ websites:
       facebook: santanderbrasil
       email_address: santander.email@santander.com.br
       lang: pt
+
+    - name: Santander UK
+      url: http://www.santander.co.uk
+      img: santander.png
+      tfa: Yes
+      sms: Yes
+      doc: http://www.santander.co.uk/uk/help-support/security-centre
 
     - name: SchoolsFirst FCU
       url: https://www.schoolsfirstfcu.org/
