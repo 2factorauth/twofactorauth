@@ -189,9 +189,35 @@ p {
     border-radius: 10px 10px 0 0;
     border-bottom: 0;
 
+    h1 {
+      background: $gray;
+      border-radius: 10px 10px 0 0;  
+      padding: 40px 0 0;
+      color: #fff;
+      font-size: 40px;
+      font-style: italic;
+      font-weight: normal;
+
+      span {
+        font-weight: bold;
+        font-style: normal;
+        
+        &.logoseg-2 {
+          color: $orange;
+        }
+      }
+    }
+
     .inner-title {
       background: $gray;
       padding-bottom: 15px;
+
+      i.bitcoin.icon {
+        padding: 15px 0 0;
+        transform: rotate(-14deg);
+        font-size: 32px;
+        color: #5f5f5f;
+      }
 
       .sub.header {
         margin: 0 auto;
@@ -205,7 +231,7 @@ p {
 
         &:first-of-type {
           font-size: 1.2rem;
-          padding: 30px 15px 20px;
+          padding: 15px 15px 20px;
         }
       }
     }
@@ -978,6 +1004,13 @@ span.progress {
       width: 100%;
       border-width: 3px 0;
       border-radius: 0;
+
+      h1 {
+        border-radius: 0;  
+        padding: 40px 0 0;
+        font-size: 50px;
+        line-height: 1.2;
+      }
 
       #search-wrapper {
         label {

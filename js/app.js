@@ -89,27 +89,27 @@ $(document).ready(function () {
   });
 
   $('#ama-merchant').on('click', function () {
-    $('.ui.modal.ama-merchant').modal('toggle');
+    $('.ui.modal.ama-merchant').modal('show');
   });
 
   $('#ama-customer').on('click', function () {
-    $('.ui.modal.ama-customer').modal('toggle');
+    $('.ui.modal.ama-customer').modal('show');
   });
 
-  $('#toggle-assets').on('click', function () {
-    $('.ui.modal.assets').modal('toggle');
+  $('#assets').on('click', function () {
+    $('.ui.modal.assets').modal('show');
   });
 
-  $('#toggle-art-collections').on('click', function () {
-    $('.ui.modal.art-collections').modal('toggle');
+  $('#art-collections').on('click', function () {
+    $('.ui.modal.art-collections').modal('show');
   });
 
   $('#about-this-site').on('click', function () {
-    $('.ui.modal.about-this-site').modal('toggle');
+    $('.ui.modal.about-this-site').modal('show');
   });
 
   $('#show-disclaimer').on('click', function () {
-    $('.ui.modal.disclaimer').modal('toggle');
+    $('.ui.modal.disclaimer').modal('show');
   });
 
   // Unveil images 50px before they appear
