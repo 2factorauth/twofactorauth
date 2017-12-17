@@ -191,7 +191,7 @@ p {
 
     h1 {
       background: $gray;
-      border-radius: 10px 10px 0 0;  
+      border-radius: 10px 10px 0 0;
       padding: 40px 0 0;
       color: #fff;
       font-size: 40px;
@@ -201,7 +201,7 @@ p {
       span {
         font-weight: bold;
         font-style: normal;
-        
+
         &.logoseg-2 {
           color: $orange;
         }
@@ -835,7 +835,7 @@ span.progress {
 }
 
 .ticker {
-  margin: 2rem 0 0;
+  margin: 0;
   padding: 0;
   border-top: 3px solid $green-light;
   border-radius: 0;
@@ -1014,7 +1014,7 @@ span.progress {
       border-radius: 0;
 
       h1 {
-        border-radius: 0;  
+        border-radius: 0;
         padding: 40px 0 0;
         font-size: 50px;
         line-height: 1.2;
@@ -1042,7 +1042,7 @@ span.progress {
           border-radius: 0;
           width: 100%;
           padding: 0.25rem 0 0;
-          
+
           &:first-child {
             border-bottom: 1px solid $gray;
             padding: 0 0 1rem;
@@ -1162,7 +1162,7 @@ span.progress {
 
   .ui.progress.bch-progress {
     margin: 1rem 1rem 5rem !important;
-    
+
     .bar .progress {
       right: 0.15rem;
     }
