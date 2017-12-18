@@ -21,6 +21,12 @@ $(document).ready(function () {
     $('#show-bcc-only').prop('checked', true);
   }
 
+  // Clear the BCH-only view
+  $('.clear-bch-only').click(function () {
+    $('#show-bcc-only').prop('checked', false);
+    BCCfilter();
+  });
+
   // Check if URL references specific category
   if (window.location.hash && window.location.hash.indexOf('#') > -1) {
     openCategory(window.location.hash.substring(1));
