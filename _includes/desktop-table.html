@@ -1,10 +1,10 @@
 {% assign section_id = include.id-param %}
 {% assign section_title = include.title-param %}
 {% assign section_file = site.data[section_id] %}
-{% assign count_bcc = 0 %}
+{% assign count_bch = 0 %}
 {% for website in section_file.websites %}
-  {% if website.bcc %}
-    {% assign count_bcc = count_bcc | plus: '1' %}
+  {% if website.bch %}
+    {% assign count_bch = count_bch | plus: '1' %}
   {% endif %}
 {% endfor %}
 
@@ -12,16 +12,16 @@
   <table class="ui celled table content-wrapper">
     <thead class="ui sticky">
     <tr>
-      <th class="single line four wide"><h3>{{ section_title }} ({{ count_bcc }})</h3></th>
+      <th class="single line four wide"><h3>{{ section_title }} ({{ count_bch }})</h3></th>
       <th class="two wide">Bitcoin Cash</th>
       <th class="two wide">Bitcoin (Legacy)</th>
       <th class="two wide">Other Crypto</th>
       <th class="two wide">Docs</th>
     </tr>
     </thead>
-    <tbody class="bcc-merchant-content">
-      {% if count_bcc <= 0 %}
-      <tr class="bcc-only-none-found">
+    <tbody class="bch-merchant-content">
+      {% if count_bch <= 0 %}
+      <tr class="bch-only-none-found">
         <td colspan="5" style="text-align: center">
           <h3><i class="big remove circle icon"></i></h3>
           <p>No merchants accepting Bitcoin Cash found in {{section_title}}.</p>
@@ -37,7 +37,7 @@
         {% assign progress_tweet = page.progress_tweet %}
         {% assign workonit_tweet = page.workonit_tweet %}
       {% endif %}
-      <tr class="desktop-tr{% if website.bcc == false %} no-bcc{% endif %}">
+      <tr class="desktop-tr{% if website.bch == false %} no-bch{% endif %}">
         {% if website.status %}
           <td class="main progress">
             <div class="title">
@@ -58,8 +58,8 @@
           <td class="twitter progress" colspan="6">
             <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="top center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress}}</a>
           </td>
-        {% elsif website.bcc or website.btc %}
-          <td {% if website.bcc %}class="main positive"{% else %}class="main negative"{% endif %}>
+        {% elsif website.bch or website.btc %}
+          <td {% if website.bch %}class="main positive"{% else %}class="main negative"{% endif %}>
             <div class="title">
               {% if website.img %}
                 <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
@@ -70,10 +70,10 @@
             </div>
           </td>
 
-          <td {% if website.bcc %}class="positive icon"{% else %}class="negative icon"{% endif %}>
-            {% if website.bcc %}
+          <td {% if website.bch %}class="positive icon"{% else %}class="negative icon"{% endif %}>
+            {% if website.bch %}
             <div class="coin-wrap green-coin-wrap" data-tooltip="Bitcoin Cash accepted at {{ website.name }}" data-position="top center" data-inverted="">
-              <img src="/img/coin-bcc.png" alt="Bitcoin Cash">
+              <img src="/img/coin-bch.png" alt="Bitcoin Cash">
             </div>
             {% else %}
             {% if website.twitter %} <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="right center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}" target="_blank"><i class="twitter big icon"></i></a>{% endif %}
@@ -125,9 +125,9 @@
       </tr>
       {% endfor %}
       {% if count_bcc > 0 and count_bcc <= 5 %}
-      <tr class="bcc-only-none-found">
+      <tr class="bch-only-none-found">
         <td colspan="5" style="text-align: center">
-          <h4>Hoping to see more than {{ count_bcc }} merchants accepting Bitcoin Cash in {{ section.title }}?</h4>
+          <h4>Hoping to see more than {{ count_bch }} merchants accepting Bitcoin Cash in {{ section.title }}?</h4>
           <p>Try <span class="clear-bch-only">clearing the Bitcoin Cash only filter</span> to see all merchants listed, then get in touch with them over social media or e-mail <i class="announcement icon"></i></p>
         </td>
       </tr>

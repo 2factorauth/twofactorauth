@@ -12,7 +12,7 @@ Requesting to add ___site_name_here___ to the ___category_name_here___ category.
   twitter: twitter_username_no_@_symbol
   facebook: facebook_username
   img: URL_to_image
-  bcc: yes_or_no
+  bch: yes_or_no
   btc: yes_or_no
   othercrypto: yes_or_no
   doc: URL_to_site_with_bitcoin_cash_announcement_or_help/support_article_etc
