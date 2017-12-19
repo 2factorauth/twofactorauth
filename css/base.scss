@@ -669,6 +669,10 @@ p {
 .bch-only-none-found {
   color: $gray-lighter;
 
+  h3, h4 {
+    margin-top: 1rem;
+  }
+
   p {
     margin: 0;
     color: $gray-light;
@@ -683,6 +687,10 @@ p {
         color: $orange;
       }
     }
+
+    &:last-child {
+      margin-bottom: 1rem;
+    }
   }
 }
 
@@ -694,7 +702,10 @@ p {
   h4, p {
     padding: 0.7rem !important;
     margin: 0 !important;
-    background: #f0f0f0;
+  }
+
+  p:last-child {
+    padding-top: 0 !important;
   }
 
   span {
