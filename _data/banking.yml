@@ -648,10 +648,10 @@ websites:
 
     - name: PNC Bank
       url: https://www.pnc.com/
-      twitter: pncnews
-      facebook: pncbank
       img: pncbank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://www.pnc.com/en/customer-service/update-center/sign-on-changes.html
 
     - name: Podravska banka
       url: https://www.poba.hr/
