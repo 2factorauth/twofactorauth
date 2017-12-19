@@ -13,6 +13,17 @@ websites:
       tfa: No
       twitter: canrevagency
 
+    - name: DigiD
+      url: https://www.digid.nl/
+      img: digid.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      phone: Yes
+      doc: https://www.digid.nl/nl/vraag-en-antwoord/hoe-kan-ik-de-sms-controle-toevoegen/
+      exceptions:
+        text: "Software 2FA requires DigiD app and SMS or phone call. One account per device."
+
     - name: Federal Student Aid
       url: https://studentaid.ed.gov
       img: federalstudentaid.png
