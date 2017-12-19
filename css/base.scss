@@ -579,7 +579,7 @@ p {
 }
 
 .website-table {
-  margin: auto;
+  margin: auto -2px;
   position: relative;
   width: 90vw;
   z-index: 1000;
@@ -662,6 +662,49 @@ p {
       font-weight: 700;
       font-size: 0.9rem;
       text-align: center;
+    }
+  }
+}
+
+.bch-only-none-found {
+  color: $gray-lighter;
+
+  p {
+    margin: 0;
+    color: $gray-light;
+
+    span {
+      color: $blue;
+      font-weight: bold;
+      cursor: pointer;
+      @include transition(all, ease, 420ms);
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}
+
+.bch-only-none-found-mobile {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+
+  h4, p {
+    padding: 0.7rem !important;
+    margin: 0 !important;
+    background: #f0f0f0;
+  }
+
+  span {
+    color: $blue;
+    font-weight: bold;
+    cursor: pointer;
+    @include transition(all, ease, 420ms);
+
+    &:hover {
+      color: $orange;
     }
   }
 }
