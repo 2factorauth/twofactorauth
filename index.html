@@ -89,21 +89,21 @@ hash: acceptBitcoinCash
         <p>A community-curated list of <b>sites/merchants that accept <a href="https://bitcoincash.org">Bitcoin Cash</a></b>, a peer-to-peer electronic cash system.</p>
       </div>
 
-      <div class="bcc-only">
+      <div class="bch-only">
         <div id="search-wrapper">
-          <label for="bcc-merchant-search">
+          <label for="bch-merchant-search">
             <i id="search-icon" class="search icon"></i>
-            <input type="search" id="bcc-merchant-search" placeholder="Search by merchant name" autocomplete="off" spellcheck="false" tabindex="0">
+            <input type="search" id="bch-merchant-search" placeholder="Search by merchant name" autocomplete="off" spellcheck="false" tabindex="0">
             <button id="search-clear">
               <i class="remove icon"></i>
             </button>
           </label>
-          <label for="show-bcc-only" class="z-switch">
-            <input type="checkbox" id="show-bcc-only">
+          <label for="show-bch-only" class="z-switch">
+            <input type="checkbox" id="show-bch-only">
               <div class="z-switch--container">
                   <div class="z-switch--slider"></div>
               </div>
-              Only show merchants accepting Bitcoin Cash <!-- img class="search-logo" src="/img/coin-bcc.png" alt="Bitcoin Cash" -->
+              Only show merchants accepting Bitcoin Cash <!-- img class="search-logo" src="/img/coin-bch.png" alt="Bitcoin Cash" -->
           </label>
           <!-- span id="top-btn-top"><i class="chevron circle up icon"></i> Top</span -->
         </div>
@@ -123,7 +123,7 @@ hash: acceptBitcoinCash
 
 <div class="ui basic modal about-this-site">
   <div class="ui icon header">
-    <img src="/img/coin-bcc.png" alt="Bitcoin Cash" data-tooltip="Bitcoin Cash, a peer-to-peer electronic cash system" data-position="top center" data-inverted="">
+    <img src="/img/coin-bch.png" alt="Bitcoin Cash" data-tooltip="Bitcoin Cash, a peer-to-peer electronic cash system" data-position="top center" data-inverted="">
     <br>
     About the Accept Bitcoin Cash Initiative
   </div>
@@ -150,16 +150,16 @@ hash: acceptBitcoinCash
         {% assign current_section = site.data[section.id] %}
         {% assign rowend = forloop.index | modulo: 5 %}
 
-        {% assign count_bcc = 0 %}
+        {% assign count_bch = 0 %}
         {% for website in current_section.websites %}
-          {% if website.bcc %}
-            {% assign count_bcc = count_bcc | plus: '1' %}
+          {% if website.bch %}
+            {% assign count_bch = count_bch | plus: '1' %}
           {% endif %}
         {% endfor %}
 
         {% if rowend == 0 or forloop.index == forloop.length %}
-          {% if count_bcc == 0 %}
-          <div id="{{ section.id }}" class="category column bcc-only-hidden">
+          {% if count_bch == 0 %}
+          <div id="{{ section.id }}" class="category column bch-only-hidden">
           {% else %}
           <div id="{{ section.id }}" class="category column">
           {% endif %}
@@ -170,7 +170,7 @@ hash: acceptBitcoinCash
           </div>
           {% include mobile-table.html id-param=section.id title-param=section.title %}
           {% assign offcount = 5 | times: rowcount %}
-          {% for section in site.data.sections limit: 5 offset: offcount %}   
+          {% for section in site.data.sections limit: 5 offset: offcount %}
             {% include desktop-table.html id-param=section.id title-param=section.title %}
           {% endfor %}
           </div>
@@ -179,8 +179,8 @@ hash: acceptBitcoinCash
             <div class="five column row">
           {% endif %}
         {% else %}
-          {% if count_bcc == 0 %}
-          <div id="{{ section.id }}" class="category column bcc-only-hidden">
+          {% if count_bch == 0 %}
+          <div id="{{ section.id }}" class="category column bch-only-hidden">
           {% else %}
           <div id="{{ section.id }}" class="category column">
           {% endif %}

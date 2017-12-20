@@ -21,7 +21,7 @@ Try to fill out all of the fields as accurately as possible. They are:
 - Twitter Username (no @ symbol) | `twitter`
 - Facebook Username or Page URL | `facebook`
 - Logo Image (URL to PNG/JPG) | `img`
-- Accepting Bitcoin Cash | `bcc`
+- Accepting Bitcoin Cash | `bch`
 - Accepting Bitcoin Legacy | `btc`
 - Accepting Other Crypto | `other`
 - Documentation/Help Guides (URL) | `doc`
@@ -120,44 +120,44 @@ websites:
   - name: Site Name
     url: https://www.site.com/
     img: site.png
-    bcc: Yes
+    bch: Yes
     btc: Yes
     othercrypto: Yes
-    doc: <link to site BCC documentation>
+    doc: <link to site BCH documentation>
 ```
 
-The fields `name:`, `url:`, `img:`, `bcc:` are required for all entries.
+The fields `name:`, `url:`, `img:`, `bch:` are required for all entries.
 If the site supports Bitcoin (Legacy) or other cryptocurrencies, `btc` and `othercrypto` should be
 entered as well.
 
-#### Adding a site that *supports* BCC
+#### Adding a site that *supports* BCH
 
-If a site does accept BCC, it is strongly recommended that you add the `doc:`
+If a site does accept BCH, it is strongly recommended that you add the `doc:`
 field where public documentation is available. Other fields should be included
 if the website supports them. Any services that are not supported can be excluded.
-Sites supporting BCC should not have a Twitter, Facebook or Email field.
+Sites supporting BCH should not have a Twitter, Facebook or Email field.
 
-The following is an example of a website that *supports* BCC:
+The following is an example of a website that *supports* BCH:
 
 ```yml
     - name: Rocketr
       url: https://rocketr.net/
       img: rocketr.png
-      bcc: Yes
+      bch: Yes
       btc: No
       othercrypto: Yes
       doc: https://rocketr.net/blog/2017/07/30/bitcoin-cash-coming-rocketr/
 ```
 
-#### Adding a site that *does not* support BCC
+#### Adding a site that *does not* support BCH
 
-If a site does not accept BCC, the `twitter:` field should be included if the site uses
+If a site does not accept BCH, the `twitter:` field should be included if the site uses
 Twitter. Facebook can also be included using the `facebook` field, as well as Email using
 the `email_address` field. If the website does not use the English language, the `lang:`
 field should also be included. The fields `btc:` and `othercrypto:` can be completely removed
 but should be added if they accept BTC or any other cryptocurrency respectively.
 
-The following is an example of a website that *does not* support BCC:
+The following is an example of a website that *does not* support BCH:
 
 ```yml
     - name: Netflix
@@ -166,7 +166,7 @@ The following is an example of a website that *does not* support BCC:
       facebook: netflix
       email_address: example@netflix.com (Only if available and monitored)
       img: netflix.png
-      bcc: No
+      bch: No
       btc: No
       othercrypto: yes
       lang: <ISO 639-1 language code> (Only for non-English websites)
@@ -176,7 +176,7 @@ The `lang:` field is only used for non-English websites. The language codes shou
 
 ### Exceptions & Restrictions
 
-If a site doesn't support BCC in certain countries, you can note this on the
+If a site doesn't support BCH in certain countries, you can note this on the
 website. There are 4 ways to customize how it is displayed:
 
 1. A default message acknowledging restrictions will be used with the following
@@ -186,10 +186,10 @@ website. There are 4 ways to customize how it is displayed:
     - name: Site Name
       url: https://www.site.com/
       img: site.png
-      bcc: Yes
+      bch: Yes
       btc: No
       exceptions: Yes
-      doc: <link to site BCC documentation>
+      doc: <link to site BCH documentation>
    ```
 2. The message can be replaced with a custom set of words:
 
@@ -197,11 +197,11 @@ website. There are 4 ways to customize how it is displayed:
     - name: Site Name
       url: https://www.site.com/
       img: site.png
-      bcc: Yes
+      bch: Yes
       btc: No
       exceptions:
           text: "Specific text goes here."
-      doc: <link to site BCC documentation>
+      doc: <link to site BCH documentation>
    ```
 3. The icon can be made into a link in which more details can be revealed such
    as country specific info and anything else.
@@ -210,11 +210,11 @@ website. There are 4 ways to customize how it is displayed:
     - name: Site Name
       url: https://www.site.com/
       img: site.png
-      bcc: Yes
+      bch: Yes
       btc: No
       exceptions:
           link: Yes
-      doc: <link to site BCC documentation>
+      doc: <link to site BCH documentation>
    ```
 4. 2 and 3 can be combined into:
 
@@ -222,12 +222,12 @@ website. There are 4 ways to customize how it is displayed:
     - name: Site Name
       url: https://www.site.com/
       img: site.png
-      bcc: Yes
+      bch: Yes
       btc: No
       exceptions:
           link: Yes
           text: "Specific text can go here as well."
-      doc: <link to site BCC documentation>
+      doc: <link to site BCH documentation>
    ```
 
 ### Pro Tips
@@ -242,13 +242,13 @@ website. There are 4 ways to customize how it is displayed:
   new sites alphabetically and that your site chunk follows the same order as the
   example above.
 
-- If a site supports BCC, their Twitter and Facebook handles as well as their email address
+- If a site supports BCH, their Twitter and Facebook handles as well as their email address
   are not needed and can be left out for cleanliness.
 
-- If a site does not have BCC but there is documentation that they are adding
+- If a site does not have BCH but there is documentation that they are adding
   it, then use:
 
   ```yml
-  bcc: No
+  bch: No
   status: <url to documentation>
   ```
