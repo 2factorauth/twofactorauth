@@ -12,14 +12,16 @@
   <div class="label">
     <h3>{{ section_title }}</h3>
   </div>
-  <div class="bch-merchant-content">
-    {% if count_bch <= 0 %}
-    <div class="main negative{% if website.bch == false %} no-bch{% endif %} bch-only-none-found-mobile">
-      <div class="title">
-        <i class="big remove circle icon"></i>No merchants accepting Bitcoin Cash found in {{section_title}}.
-      </div>
+  {% if count_bch <= 0 %}
+  <div class="main negative{% if website.bch == false %} no-bch{% endif %} bch-only-none-found-mobile">
+    <div class="title">
+      <h3><i class="big remove circle icon"></i></h3>
+      <p>No merchants accepting Bitcoin Cash found in {{section_title}}.</p>
+      <p>Try <span class="clear-bch-only">clearing the Bitcoin Cash only filter</span> to see all merchants listed, then reach out to them over social media or e-mail <i class="announcement icon"></i></p>
     </div>
-    {% endif %}
+  </div>
+  {% endif %}
+  <div class="bch-merchant-content">
     {% for website in section_file.websites %}
     {% if website.lang and site.data.languages[website.lang] %}
       {% assign progress_tweet = site.data.languages[website.lang].progress_tweet %}
@@ -108,5 +110,11 @@
     </div>
     {% endif %}
     {% endfor %}
+    {% if count_bch > 0 and count_bch <= 5 %}
+    <div class="bch-only-none-found-mobile">
+      <h4>Hoping to see more than {{ count_bch }} merchant{% if count_bch > 1 %}s{% endif %} accepting Bitcoin Cash in {{ section.title }}?</h4>
+      <p>Try <span class="clear-bch-only">clearing the Bitcoin Cash only filter</span> to see all merchants listed, then reach out to them over social media or e-mail <i class="announcement icon"></i></p>
+    </div>
+    {% endif %}
   </div>
 </div>

@@ -579,7 +579,7 @@ p {
 }
 
 .website-table {
-  margin: auto;
+  margin: auto -2px;
   position: relative;
   width: 90vw;
   z-index: 1000;
@@ -662,6 +662,60 @@ p {
       font-weight: 700;
       font-size: 0.9rem;
       text-align: center;
+    }
+  }
+}
+
+.bch-only-none-found {
+  color: $gray-lighter;
+
+  h3, h4 {
+    margin-top: 1rem;
+  }
+
+  p {
+    margin: 0;
+    color: $gray-light;
+
+    span {
+      color: $blue;
+      font-weight: bold;
+      cursor: pointer;
+      @include transition(all, ease, 420ms);
+
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.bch-only-none-found-mobile {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+
+  h4, p {
+    padding: 0.7rem !important;
+    margin: 0 !important;
+  }
+
+  p:last-child {
+    padding-top: 0 !important;
+  }
+
+  span {
+    color: $blue;
+    font-weight: bold;
+    cursor: pointer;
+    @include transition(all, ease, 420ms);
+
+    &:hover {
+      color: $orange;
     }
   }
 }
