@@ -29,31 +29,9 @@
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/corner.css">
   <link rel="stylesheet" href="/css/z-switch.css">
-
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107218359-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)};
-    gtag('js', new Date());
-
-    gtag('config', 'UA-107218359-1');
-  </script>
 </head>
 
 <body>
-
-<div class="fab">
-  <button class="ui massive circular icon button" data-tooltip="Jump to top" data-position="left center" data-inverted="">
-    <i class="angle double up icon"></i>
-  </button>
-  <button class="ui massive circular icon button" data-tooltip="Start a search" data-position="left center" data-inverted="">
-    <i class="search icon"></i>
-  </button>
-  <button class="ui massive circular icon button" data-tooltip="Close category" data-position="left center" data-inverted="">
-    <i class="toggle up icon"></i>
-  </button>
-</div>
 
 {{ content }}
 
@@ -67,179 +45,18 @@
   <a href="https://twitter.com/useBitcoinCash?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="false">Follow @useBitcoinCash</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
-<div class="ui center aligned ticker">
-  <ul id="ticker_value">
-    <li>Loading&hellip;</li>
-  </ul>
-</div>
-
 <div class="subfooter ui center aligned segment">
   <div class="inner">
-
     <h3>More information for...</h3>
-
     <div class="ui buttons">
       <button id="ama-merchant" class="ui huge blue inverted button">Merchants</button>
       <div class="or"></div>
       <button id="ama-customer" class="ui huge orange inverted button">Customers</button>
     </div>
-
-    <div class="ui basic modal ama-merchant">
-      <div class="ui large icon header">
-        <i class="barcode icon"></i>
-        Merchant Information
-      </div>
-      <h4 style="text-align: center"><em>Coming soon&hellip;</em></h4>
-
-      <div class="actions">
-        <div class="ui red basic cancel inverted button">
-          <i class="remove icon"></i>
-          Close
-        </div>
-      </div>
-    </div>
-
-    <div class="ui basic modal ama-customer">
-      <div class="ui icon header">
-        <i class="user icon"></i>
-        Customer Resources
-      </div>
-      <h4>What is Bitcoin Cash?</h4>
-      <p><span class="remember-this">Bitcoin Cash is peer-to-peer electronic cash for the Internet</span>. It is fully decentralized, with no central bank and requires no trusted third parties to operate. Visit the <a href="https://bitcoincash.org" target="_blank">BitcoinCash.org website</a> to learn more.</p>
-      <br>
-      <h4>Where can I get Bitcoin Cash?</h4>
-      <p>There are a multitude of ways, however the most common and easiest method would be to purchase it online via an exchange, or similar service. Check the "<b>Crypto Exchanges</b>" and "<b>Crypto Services</b>" sections on this site where you'll find a plethora of options to acquire Bitcoin Cash from those who support it.</p>
-      <br>
-      <h4>Is Bitcoin Cash different from 'Bitcoin'?</h4>
-      <p>Yes. Bitcoin Cash is the continuation of the Bitcoin (Legacy) project as peer-to-peer digital cash. It is a fork of the Bitcoin blockchain ledger, with upgraded consensus rules that allow it to grow and scale.</p>
-      <br>
-      <h4>If I own Bitcoin (Legacy), do I automatically own Bitcoin Cash too?</h4>
-      <p>Anyone who held Bitcoin (Legacy) at the time Bitcoin Cash was created became owners of Bitcoin Cash. This means that Bitcoin (Legacy) holders as of block <a href="http://blockdozer.com/insight/block/000000000000000000651ef99cb9fcbe0dadde1d424bd9f15ff20136191a5eec" target="_blank" data-tooltip="The Exodus block." data-position="bottom center">478558</a> (August 1st, 2017 about 13:16 UTC) have the same amount of Bitcoin Cash as they had Bitcoin (Legacy) at that time. If your Bitcoins are stored by a third party such as an exchange, then you must inquire with them about your Bitcoin Cash.</p>
-      <p>Any transactions after the August 1st ledger split are completely separate between Bitcoin (Legacy) and Bitcoin Cash. This means any Bitcoin (Legacy) acquired after the split does not include any Bitcoin Cash, and any Bitcoin Cash does not include any Bitcoin (Legacy).</p>
-      <h4>Remember...</h4>
-      <p><span class="remember-this">Always transact responsibly.</span> Check HTTPS certificates, and <span class="super-important">never reveal your private key</span> to anyone!</p>
-      <div class="actions">
-        <div class="ui red basic cancel inverted button">
-          <i class="remove icon"></i>
-          Close
-        </div>
-      </div>
-    </div>
-
-    <div class="ui basic modal disclaimer">
-      <div class="ui icon header">
-        <i class="warning sign icon"></i>
-      </div>
-      <p>The site maintainers do not endorse nor confirm the legitimacy of any of the merchants linked to on this site. This is an open source project which accepts submissions from the general community. While we try our best to verify the merchant information submitted, it's possible that we may miss something. <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/issues/new" target="_blank">Please let us know</a> of any inconsistencies, errors, or suspicious listings that you may find as well!</p>
-      <p><span class="remember-this">Always transact responsibly.</span> Check HTTPS certificates, and <span class="super-important">never reveal your private key</span> to anyone!</p>
-      <div class="actions">
-        <div class="ui green basic cancel inverted button">
-          <i class="check icon"></i>
-          I understand.
-        </div>
-      </div>
-    </div>
-
   </div>
 </div>
 
 <div class="ui center aligned asset-panel">
-
-  <div class="ui basic modal assets">
-    <div class="ui large icon header">
-      <i class="image icon"></i>
-      Image Assets
-    </div>
-
-    <div class="asset-intro">
-      <p>Here you'll find some suggested images that you can use, or feel free to create your own, as <em>Bitcoin Cash is decentralized</em>. We would only encourage you to primarily use the standard logo, which is designated by its 'cash bill sides' and upwards facing <i class="bitcoin icon"></i><i class="arrow right icon"></i> <img class="p-logo" src="/img/coin-bch.png" alt="Bitcoin Cash"> Orange is the preferred color of use.</p>
-      <p>Below is a collection of images that you may use. Many different high quality formats are provided. The images below were sourced from the artwork collections also found on this website.</p>
-    </div>
-
-    <div class="image content">
-      <div class="assets">
-        <a href="https://forum.bitcoincash.org/media/MediaKit.zip"><img class="image" src="/img/bitcoin_cash-logo-643756.png"></a>
-        <a href="https://forum.bitcoincash.org/media/MediaKit.zip"><img class="image" src="/img/bitcoin_cash-logo-421532.png"></a>
-        <a href="https://forum.bitcoincash.org/media/MediaKit.zip"><img class="image" src="/img/bitcoin_cash-logo-732654.png"></a>
-        <a href="https://forum.bitcoincash.org/media/MediaKit.zip"><img class="image" src="/img/bitcoin_cash-logo-883453.png"></a>
-        <a href="https://forum.bitcoincash.org/media/MediaKit.zip"><img class="image" src="/img/bitcoin_cash-logo-297535.png"></a>
-        <a href="https://bitcoinlogo.eu/bitcoincash-dark.xhtml" target="_blank"><img class="image" src="/img/bitcoin_cash-logo-239743.png"></a>
-        <a href="https://bitcoinlogo.eu/accept-large-bitcoincash-straight.xhtml" target="_blank"><img class="image" src="/img/bitcoin_cash-logo-943854.png"></a>
-        <a href="https://bitcoinlogo.eu/bitcoincash-round.xhtml" target="_blank"><img class="image" src="/img/bitcoin_cash-logo-947542.png"></a>
-        <a href="https://bitcoinlogo.eu/love-bitcoincash-round.xhtml" target="_blank"><img class="image" src="/img/bitcoin_cash-logo-304585.png"></a>
-        <a href="https://bitcoinlogo.eu/accept-small-bitcoincash-straight.xhtml" target="_blank"><img class="image" src="/img/bitcoin_cash-logo-885873.png"></a>
-        <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/BCC%20Logo%20(Text)/BCC%20Logo%20Text%20RGBA.png" target="_blank"><img class="image" src="/img/bitcoin_cash-logo-128359.png"></a>
-        <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/BCC%20Logo%20(No%20Text)/BCC%20Logo%20Green.png" target="_blank"><img class="image" src="/img/bitcoin_cash-logo-901274.png"></a>
-        <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/Banners/BCC%20Banner%202%20RGBA.png" target="_blank"><img class="image" src="/img/bitcoin_cash-logo-357854.png"></a>
-        <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/BCC%20Accepted%20Here%20Sticker/BCC%20Accepted%20Here%20Green%20RGBA.png" target="_blank"><img class="image" src="/img/bitcoin_cash-logo-923741.png"></a>
-        <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/Banners/BCC%20Banner%201%20RGBA.png" target="_blank"><img class="image" src="/img/bitcoin_cash-logo-696784.png"></a>
-        <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/BCC%20Round%20Icon/BCC%20Round%20Icon%20RGBA.png" target="_blank"><img class="image" src="/img/bitcoin_cash-logo-856493.png"></a>
-        <a href="https://github.com/theantnest/Bitcoin-Cash-Green-Art/blob/master/Paper%20Wallet/BCC%20Paper%20Money.png" target="_blank"><img class="image" src="/img/bitcoin_cash-paper_wallet-329047.png"></a>
-      </div>
-    </div>
-
-    <div class="actions">
-      <div class="ui red basic cancel inverted button">
-        <i class="remove icon"></i>
-        Close
-      </div>
-    </div>
-
-  </div>
-
-  <div class="ui basic modal art-collections">
-    <div class="ui large icon header" id="media-collections">
-      <i class="qrcode icon"></i>
-      Artwork Collections
-    </div>
-
-    <div class="asset-intro">
-      <p>Below is a listing of collections/albums. Each provides many different high quality formats. The assets that are also found on this website were sourced from these collections.</p>
-    </div>
-
-    <div class="ui relaxed divided inverted list left aligned segment artwork-list">
-
-      <!-- Appears to be inaccessible as of 2017-11-11
-
-      <div class="item">
-        <i class="large file archive outline middle aligned icon"></i>
-        <div class="content">
-          <a class="header" href="https://forum.bitcoincash.org/media/MediaKit.zip">Bitcoin Cash Media Kit</a>
-          <div class="description">by BitcoinCash.org</div>
-        </div>
-      </div -->
-      <div class="item">
-        <i class="large github middle aligned icon"></i>
-        <div class="content">
-          <a class="header" href="https://github.com/theantnest/Bitcoin-Cash-Green-Art" target="_blank">Bitcoin-Cash-Green-Art</a>
-          <div class="description">by theantnest</div>
-        </div>
-      </div>
-      <div class="item">
-        <i class="large folder open middle aligned icon"></i>
-        <div class="content">
-          <a class="header" href="https://bitcoinlogo.eu/" target="_blank">Promotional graphics resources for all flavours of Bitcoin</a>
-          <div class="description">by u/BigBlockIfTrue</div>
-        </div>
-      </div>
-      <div class="item">
-        <i class="large send middle aligned icon"></i>
-        <div class="content">
-          <a class="header" href="https://github.com/acceptbitcoincash/acceptbitcoincash/issues" target="_blank">Submit your own collection</a>
-          <div class="description">by creating an issue, or a pull request on our repo</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="actions">
-      <div class="ui red basic cancel inverted button">
-        <i class="remove icon"></i>
-        Close
-      </div>
-    </div>
-
-  </div>
-
   <p><b>Looking for various types of Bitcoin Cash logos, images, POS signage, etc.?</b><br>Below you'll find high-resolution assets provided by community members.</p>
   <a id="assets">
     <i class="image icon"></i>
@@ -251,11 +68,24 @@
   </a>
 </div>
 
+<div class="ui center aligned ticker">
+  <ul id="ticker_value">
+    <li>Loading&hellip;</li>
+  </ul>
+</div>
+
 <div class="footer ui center aligned segment">
   See an issue or want to add to this website? Fork it or <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/issues/new" target="_blank">create an issue</a> on <i class="github icon"></i><a href="{{ site.repo }}" target="_blank">GitHub</a>.
   <br><br>
   Made with <i class="red heart small icon"></i> by <a href="https://github.com/acceptbitcoincash" target="_blank" data-tooltip="Our organization on Github" data-position="top center" data-inverted="">the acceptBitcoin.Cash initiative</a>. &nbsp; <a id="show-disclaimer" data-tooltip="Some important info to know" data-position="top center" data-inverted=""><i class="warning sign orange icon"></i>Caution!</a><br><small>(forked from <a href="https://github.com/2factorauth/twofactorauth" data-tooltip="A BIG thank you to these guys!" data-position="top center" data-inverted="">the twofactorauth.org project</a>).</small>
 </div>
+
+{% include fab.html %}
+{% include modals/merchants.html %}
+{% include modals/customers.html %}
+{% include modals/image-assets.html %}
+{% include modals/art-collections.html %}
+{% include modals/disclaimer.html %}
 
 <!-- 3rd Party Libraries -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -273,6 +103,16 @@
 <script src="/js/elevator.min.js"></script>
 <script src="/js/fixto.min.js"></script>
 <script src="/js/app.js"></script>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107218359-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107218359-1');
+</script>
 
 </body>
 </html>
