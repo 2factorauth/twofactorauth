@@ -82,27 +82,28 @@ hash: acceptBitcoinCash
   </div>
 
   <div class="title-wrap">
-    <h2>The Accept Bitcoin Cash Initiative</h2>
+    <h1>the <span class="logoseg-1">Accept</span> <span class="logoseg-2">Bitcoin Cash</span> initiative</h1>
     <div class="inner-title">
+      <i class="bitcoin icon"></i>
       <div class="sub header">
         <p>A community-curated list of <b>sites/merchants that accept <a href="https://bitcoincash.org">Bitcoin Cash</a></b>, a peer-to-peer electronic cash system.</p>
       </div>
 
-      <div class="bcc-only">
+      <div class="bch-only">
         <div id="search-wrapper">
-          <label for="bcc-merchant-search">
+          <label for="bch-merchant-search">
             <i id="search-icon" class="search icon"></i>
-            <input type="search" id="bcc-merchant-search" placeholder="Search by merchant name" autocomplete="off" spellcheck="false" tabindex="0">
+            <input type="search" id="bch-merchant-search" placeholder="Search by merchant name" autocomplete="off" spellcheck="false" tabindex="0">
             <button id="search-clear">
               <i class="remove icon"></i>
             </button>
           </label>
-          <label for="show-bcc-only" class="z-switch">
-            <input type="checkbox" id="show-bcc-only">
+          <label for="show-bch-only" class="z-switch">
+            <input type="checkbox" checked id="show-bch-only">
               <div class="z-switch--container">
                   <div class="z-switch--slider"></div>
               </div>
-              Only show merchants accepting Bitcoin Cash <!-- img class="search-logo" src="/img/coin-bcc.png" alt="Bitcoin Cash" -->
+              Only show merchants accepting Bitcoin Cash <!-- img class="search-logo" src="/img/coin-bch.png" alt="Bitcoin Cash" -->
           </label>
           <!-- span id="top-btn-top"><i class="chevron circle up icon"></i> Top</span -->
         </div>
@@ -117,29 +118,9 @@ hash: acceptBitcoinCash
       <a id="about-this-site" data-tooltip="Read about why this site exists" data-position="bottom center" data-inverted=""><i class="announcement icon"></i> About this site</a>
     </div>
   </div>
-
 </div>
 
-<div class="ui basic modal about-this-site">
-  <div class="ui icon header">
-    <img src="/img/coin-bcc.png" alt="Bitcoin Cash" data-tooltip="Bitcoin Cash, a peer-to-peer electronic cash system" data-position="top center" data-inverted="">
-    <br>
-    About the Accept Bitcoin Cash Initiative
-  </div>
-  <p>This site was built as a means to connect consumers and merchants, while spreading awareness and promoting global adoption of Bitcoin Cash. It is our hope that as time goes on, more and more sites will be accepting Bitcoin Cash as a fast and secure payment method, with the added benefits of low fees, no third-party, atop a very strong decentralized network.</p>
-  <br>
-  <h4>The community factor</h4>
-  <p>The site is open source, which allows for anyone to contribute, submitting new sites that either accept, or do not <em>(yet)</em> accept Bitcoin Cash. Please read our <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/blob/master/CONTRIBUTING.md" target="_blank">contribution guidelines</a> to learn how to help. Any contributions are welcomed, and will be added once verified by others.</p>
-  <br>
-  <h4>The future</h4>
-  <p>Many believe that Bitcoin Cash is the true continuation of <a href="https://bitcoin.com/bitcoin.pdf" target="_blank">Satoshi's vision</a>. We're committed to supporting this site in order to keep it updated with accurate information, as well as adding new features and functionality as the opportunity arises.</p>
-  <div class="actions">
-    <div class="ui red basic cancel inverted button">
-      <i class="remove icon"></i>
-      Close
-    </div>
-  </div>
-</div>
+{% include modals/about-this-site.html %}
 
 <div id="maingrid" class="ui container">
   <div class="container-inner ui stackable grid">
@@ -149,16 +130,16 @@ hash: acceptBitcoinCash
         {% assign current_section = site.data[section.id] %}
         {% assign rowend = forloop.index | modulo: 5 %}
 
-        {% assign count_bcc = 0 %}
+        {% assign count_bch = 0 %}
         {% for website in current_section.websites %}
-          {% if website.bcc %}
-            {% assign count_bcc = count_bcc | plus: '1' %}
+          {% if website.bch %}
+            {% assign count_bch = count_bch | plus: '1' %}
           {% endif %}
         {% endfor %}
 
         {% if rowend == 0 or forloop.index == forloop.length %}
-          {% if count_bcc == 0 %}
-          <div id="{{ section.id }}" class="category column bcc-only-hidden">
+          {% if count_bch == 0 %}
+          <div id="{{ section.id }}" class="category column bch-only-hidden">
           {% else %}
           <div id="{{ section.id }}" class="category column">
           {% endif %}
@@ -169,7 +150,7 @@ hash: acceptBitcoinCash
           </div>
           {% include mobile-table.html id-param=section.id title-param=section.title %}
           {% assign offcount = 5 | times: rowcount %}
-          {% for section in site.data.sections limit: 5 offset: offcount %}   
+          {% for section in site.data.sections limit: 5 offset: offcount %}
             {% include desktop-table.html id-param=section.id title-param=section.title %}
           {% endfor %}
           </div>
@@ -178,8 +159,8 @@ hash: acceptBitcoinCash
             <div class="five column row">
           {% endif %}
         {% else %}
-          {% if count_bcc == 0 %}
-          <div id="{{ section.id }}" class="category column bcc-only-hidden">
+          {% if count_bch == 0 %}
+          <div id="{{ section.id }}" class="category column bch-only-hidden">
           {% else %}
           <div id="{{ section.id }}" class="category column">
           {% endif %}

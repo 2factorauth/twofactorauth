@@ -53,7 +53,7 @@ p {
   font-size: 0.8rem;
 }
 
-.no-bcc {
+.no-bch {
   transition: 1s all ease-in-out;
 }
 
@@ -189,9 +189,35 @@ p {
     border-radius: 10px 10px 0 0;
     border-bottom: 0;
 
+    h1 {
+      background: $gray;
+      border-radius: 10px 10px 0 0;
+      padding: 40px 0 0;
+      color: #fff;
+      font-size: 40px;
+      font-style: italic;
+      font-weight: normal;
+
+      span {
+        font-weight: bold;
+        font-style: normal;
+
+        &.logoseg-2 {
+          color: $orange;
+        }
+      }
+    }
+
     .inner-title {
       background: $gray;
       padding-bottom: 15px;
+
+      i.bitcoin.icon {
+        padding: 15px 0 0;
+        transform: rotate(-14deg);
+        font-size: 32px;
+        color: #5f5f5f;
+      }
 
       .sub.header {
         margin: 0 auto;
@@ -205,7 +231,7 @@ p {
 
         &:first-of-type {
           font-size: 1.2rem;
-          padding: 30px 15px 20px;
+          padding: 15px 15px 20px;
         }
       }
     }
@@ -239,7 +265,7 @@ p {
     }
   }
 
-  .bcc-only {
+  .bch-only {
     padding: 10px;
     background: $gray;
     transition: 1s all ease-in-out;
@@ -434,6 +460,7 @@ p {
   border: 3px solid $green-light;
   border-radius: 7px;
   padding: 40px 20px;
+  margin-top: 4rem;
 }
 
 .ui.grid > .row {
@@ -547,12 +574,12 @@ p {
   text-align: center;
 }
 
-.bcc-only-none-found {
+.bch-only-none-found {
   display: none;
 }
 
 .website-table {
-  margin: auto;
+  margin: auto -2px;
   position: relative;
   width: 90vw;
   z-index: 1000;
@@ -567,7 +594,7 @@ p {
     text-align: center;
   }
 
-  .bcc-merchant-content {
+  .bch-merchant-content {
     margin: 0 auto 40px auto;
 
     > div {
@@ -639,6 +666,60 @@ p {
   }
 }
 
+.bch-only-none-found {
+  color: $gray-lighter;
+
+  h3, h4 {
+    margin-top: 1rem;
+  }
+
+  p {
+    margin: 0;
+    color: $gray-light;
+
+    span {
+      color: $blue;
+      font-weight: bold;
+      cursor: pointer;
+      @include transition(all, ease, 420ms);
+
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.bch-only-none-found-mobile {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+
+  h4, p {
+    padding: 0.7rem !important;
+    margin: 0 !important;
+  }
+
+  p:last-child {
+    padding-top: 0 !important;
+  }
+
+  span {
+    color: $blue;
+    font-weight: bold;
+    cursor: pointer;
+    @include transition(all, ease, 420ms);
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
 .ui.table td {
   padding: 0.5em;
 
@@ -684,7 +765,7 @@ p {
 }
 
 .ui.mini.button {
-  padding: 0.4em 1.5em !important;
+  padding: 0.4em 1.4em !important;
 
   i {
     margin: 0 0 0.2rem !important;
@@ -726,7 +807,7 @@ span.progress {
   background: rgba(0,0,0,0.45) !important;
   background: $blue-light-alpha !important;
   padding: 0;
-  margin: 1rem auto 5rem !important;
+  margin: 1rem auto 7rem !important;
 
   .bar {
     background: $green;
@@ -757,7 +838,7 @@ span.progress {
   background: rgba(0,0,0,0.88);
   color: #f0f0f0;
   margin: 0;
-  padding: 2em 0 0;
+  padding: 5rem 0 3rem;
   border-radius: 0;
 
   .inner {
@@ -802,13 +883,21 @@ span.progress {
   }
 }
 
+.ui.segment.twitter-panel {
+  background: url(../img/twitter-logo-alpha-large.png) no-repeat bottom right #fff;
+  background-size: contain;
+  padding: 2rem 0;
+  margin-bottom: 5rem;
+}
+
 .ticker {
-  margin: 2rem 0 0;
+  margin: 0;
   padding: 0;
   border-top: 3px solid $green-light;
   border-radius: 0;
 
   #ticker_value {
+    padding: 1rem 0;
     background: $orange-alpha;
     list-style: none;
     text-align: center;
@@ -861,6 +950,7 @@ span.progress {
   background-size: 20px 20px;
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
   text-align: center;
+  padding: 2rem 0;
 
   p {
     width: 62%;
@@ -979,6 +1069,13 @@ span.progress {
       border-width: 3px 0;
       border-radius: 0;
 
+      h1 {
+        border-radius: 0;
+        padding: 40px 0 0;
+        font-size: 50px;
+        line-height: 1.2;
+      }
+
       #search-wrapper {
         label {
           left: 3.3%;
@@ -993,17 +1090,24 @@ span.progress {
       }
 
       .title-footer {
+        border-radius: 0;
 
         a {
-          margin: 0.5rem 0;
+          margin: 1rem 0;
           display: block;
           border-radius: 0;
           width: 100%;
+          padding: 0.25rem 0 0;
+
+          &:first-child {
+            border-bottom: 1px solid $gray;
+            padding: 0 0 1rem;
+          }
         }
       }
     }
 
-    .bcc-only {
+    .bch-only {
       padding: 0;
 
       #search-wrapper {
@@ -1114,7 +1218,7 @@ span.progress {
 
   .ui.progress.bch-progress {
     margin: 1rem 1rem 5rem !important;
-    
+
     .bar .progress {
       right: 0.15rem;
     }
@@ -1150,11 +1254,8 @@ span.progress {
     padding: 2em 0 0;
 
     .inner {
-      h3 {
-        font-size: 1.2rem;
-      }
       .ui.huge.button, .ui.huge.buttons .button, .ui.huge.buttons .or {
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
 
       .ui.buttons .or {
@@ -1172,7 +1273,7 @@ span.progress {
 
     > a {
       padding: 1rem;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       text-align: center;
 
       i {

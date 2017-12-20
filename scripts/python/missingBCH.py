@@ -3,7 +3,7 @@ import datetime
 import codecs
 
 totalSites = 0
-totalBCC = 0
+totalBCH = 0
 
 missingList = ["File, Tag"]
 failedPaths = 0
@@ -35,7 +35,7 @@ def countFile(dir, filename):
                 totalSites+= 1
                 #check if the previous file has been processed, this accounts for if the BTC support tag does not exist
                 if processed == False:
-                    
+
                     nameLine = line.replace("- name:", "")
                     nameLine = nameLine.replace("\n", "")
                     nameLine = nameLine.replace("\r", "")
@@ -50,10 +50,10 @@ def countFile(dir, filename):
                         failedPaths += 1
                 processed = False
 
-            if "bcc: " in line:
+            if "bch: " in line:
                 if "Yes" in line:
-                    global totalBCC
-                    totalBCC += 1
+                    global totalBCH
+                    totalBCH += 1
                 processed = True
         index += 1
 
@@ -70,13 +70,13 @@ try:
 except Exception as e:
 	pass
 
-output = codecs.open(os.path.join(outputPath, "missingBCC_log.csv"), "a", "utf-8")
+output = codecs.open(os.path.join(outputPath, "missingBCH_log.csv"), "a", "utf-8")
 
 output.write(str(timestamp) + ", " + str(failedPaths) + ", " + str(missingEntries) + "\n")
 
 output.close()
 
-output = codecs.open(os.path.join(".","output","missingBCC.txt"), "w+", "utf-8")
+output = codecs.open(os.path.join(".","output","missingBCH.txt"), "w+", "utf-8")
 
 for string in missingList:
     #print(string + "\n")
@@ -88,13 +88,13 @@ output.write("\n")
 #print("Total websites found: " + str(totalSites))
 #output.write("Total websites found: " + str(totalSites) + ". \n")
 
-#print("Total BCC supported sites " + str(totalBCC))
-#output.write("Total BCC supported sites " + str(totalBCC) + ". \n")
+#print("Total BCH supported sites " + str(totalBCH))
+#output.write("Total BCH supported sites " + str(totalBCH) + ". \n")
 
-print(str(failedPaths) + " files have entries missing the bcc tag")
-output.write(str(failedPaths) + " files have entries missing the bcc tag \n")
+print(str(failedPaths) + " files have entries missing the bch tag")
+output.write(str(failedPaths) + " files have entries missing the bch tag \n")
 
-print(str(missingEntries) + " entries are missing the bcc tag")
-output.write(str(missingEntries) + " entries are missing the bcc tag \n")
+print(str(missingEntries) + " entries are missing the bch tag")
+output.write(str(missingEntries) + " entries are missing the bch tag \n")
 
 output.close()

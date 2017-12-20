@@ -1,10 +1,10 @@
 {% assign section_id = include.id-param %}
 {% assign section_title = include.title-param %}
 {% assign section_file = site.data[section_id] %}
-{% assign count_bcc = 0 %}
+{% assign count_bch = 0 %}
 {% for website in section_file.websites %}
-  {% if website.bcc %}
-    {% assign count_bcc = count_bcc | plus: '1' %}
+  {% if website.bch %}
+    {% assign count_bch = count_bch | plus: '1' %}
   {% endif %}
 {% endfor %}
 
@@ -12,14 +12,16 @@
   <div class="label">
     <h3>{{ section_title }}</h3>
   </div>
-  <div class="bcc-merchant-content">
-    {% if count_bcc <= 0 %}
-    <div class="main negative{% if website.bcc == false %} no-bcc{% endif %} bcc-only-none-found-mobile">
-      <div class="title">
-        <i class="big remove circle icon"></i>No merchants accepting Bitcoin Cash found in {{section_title}}.
-      </div>
+  {% if count_bch <= 0 %}
+  <div class="main negative{% if website.bch == false %} no-bch{% endif %} bch-only-none-found-mobile">
+    <div class="title">
+      <h3><i class="big remove circle icon"></i></h3>
+      <p>No merchants accepting Bitcoin Cash found in {{section_title}}.</p>
+      <p>Try <span class="clear-bch-only">clearing the Bitcoin Cash only filter</span> to see all merchants listed, then reach out to them over social media or e-mail <i class="announcement icon"></i></p>
     </div>
-    {% endif %}
+  </div>
+  {% endif %}
+  <div class="bch-merchant-content">
     {% for website in section_file.websites %}
     {% if website.lang and site.data.languages[website.lang] %}
       {% assign progress_tweet = site.data.languages[website.lang].progress_tweet %}
@@ -50,8 +52,8 @@
         <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress_mobile}}</a>
       </div>
     </div>
-    {% elsif website.bcc or website.btc or website.othercrypto %}
-    <div {% if website.bcc %}class="main positive"{% elsif website.btc or website.othercrypto %}class="main negative no-bcc"{% endif %}>
+    {% elsif website.bch or website.btc or website.othercrypto %}
+    <div {% if website.bch %}class="main positive"{% elsif website.btc or website.othercrypto %}class="main negative no-bch"{% endif %}>
       <div class="title">
         {% if website.img %}
         <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
@@ -61,9 +63,9 @@
         {% include exception.html website=website %}
       </div>
       <p>Supported:</p>
-      {% if website.bcc %}
+      {% if website.bch %}
       <div class="mobile-logo coin-wrap green-coin-wrap" data-tooltip="Bitcoin Cash accepted at {{ website.name }}" data-position="top center" data-inverted="">
-        <img src="/img/coin-bcc.png" alt="Bitcoin Cash">
+        <img src="/img/coin-bch.png" alt="Bitcoin Cash">
       </div>
       {% endif %}
       {% if website.btc %}
@@ -79,7 +81,7 @@
         {% if website.doc %}
         <a href="{{ website.doc }}" class="ui button mini blue docs" target="_blank" title="{{page.rtfm}} {{website.name}}'s website" class="ui green mini button"><i class="book big icon"></i></a>
         {% endif %}
-        {% if website.bcc %}
+        {% if website.bch %}
         {% elsif website.btc or website.othercrypto %}
         {% if website.twitter %} <a title="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="left center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}" target="_blank"><i class="twitter big icon"></i></a>{% endif %}
         {% if website.facebook %} <a title="{{page.link_facebook|replace:'FACEBOOKHANDLE',website.facebook}}" data-position="right center" data-inverted=""  class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook big icon"></i></a>{%endif%}
@@ -89,7 +91,7 @@
       {% endif %}
     </div>
     {% else %}
-    <div class="main negative no-bcc">
+    <div class="main negative no-bch">
       <div class="title">
         {% if website.img %}
         <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
@@ -108,5 +110,11 @@
     </div>
     {% endif %}
     {% endfor %}
+    {% if count_bch > 0 and count_bch <= 5 %}
+    <div class="bch-only-none-found-mobile">
+      <h4>Hoping to see more than {{ count_bch }} merchant{% if count_bch > 1 %}s{% endif %} accepting Bitcoin Cash in {{ section.title }}?</h4>
+      <p>Try <span class="clear-bch-only">clearing the Bitcoin Cash only filter</span> to see all merchants listed, then reach out to them over social media or e-mail <i class="announcement icon"></i></p>
+    </div>
+    {% endif %}
   </div>
 </div>

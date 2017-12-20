@@ -26,8 +26,8 @@ def countFile(dir, filename):
                 global totalSites
                 totalSites+= 1
 
-            #check for bcc tag
-            if "bcc: " in line:
+            #check for bch tag
+            if "bch: " in line:
                 if "Yes" in line:
                     global totalBCH
                     totalBCH += 1
