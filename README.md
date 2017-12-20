@@ -67,4 +67,4 @@ The acceptBitcoin.cash website should then be accessible from `http://localhost:
 This code is distributed under the MIT license. For more info, read the
 [LICENSE](/LICENSE) file distributed with the source code.
 
-[#478559](http://blockdozer.com/insight/block/000000000000000000651ef99cb9fcbe0dadde1d424bd9f15ff20136191a5eec "The Exodus block.")
+[#478559](https://blockchair.com/bitcoin-cash/block/478559 "The Exodus block.")
