@@ -53,7 +53,7 @@ p {
   font-size: 0.8rem;
 }
 
-.no-bcc {
+.no-bch {
   transition: 1s all ease-in-out;
 }
 
@@ -265,7 +265,7 @@ p {
     }
   }
 
-  .bcc-only {
+  .bch-only {
     padding: 10px;
     background: $gray;
     transition: 1s all ease-in-out;
@@ -574,7 +574,7 @@ p {
   text-align: center;
 }
 
-.bcc-only-none-found {
+.bch-only-none-found {
   display: none;
 }
 
@@ -594,7 +594,7 @@ p {
     text-align: center;
   }
 
-  .bcc-merchant-content {
+  .bch-merchant-content {
     margin: 0 auto 40px auto;
 
     > div {
@@ -711,7 +711,7 @@ p {
 }
 
 .ui.mini.button {
-  padding: 0.4em 1.5em !important;
+  padding: 0.4em 1.4em !important;
 
   i {
     margin: 0 0 0.2rem !important;
@@ -830,6 +830,8 @@ span.progress {
 }
 
 .ui.segment.twitter-panel {
+  background: url(../img/twitter-logo-alpha-large.png) no-repeat bottom right #fff;
+  background-size: contain;
   padding: 2rem 0;
   margin-bottom: 5rem;
 }
@@ -1051,7 +1053,7 @@ span.progress {
       }
     }
 
-    .bcc-only {
+    .bch-only {
       padding: 0;
 
       #search-wrapper {
