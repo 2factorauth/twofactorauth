@@ -61,6 +61,8 @@
         {% endif %}
         <a href="{{ website.url }}" target="_blank" class="name">{{ website.name }}</a>
         {% include exception.html website=website %}
+        {% if website.twitter and website.bch %}<a class="social-name" href="https://twitter.com/{{ website.twitter }}" target="_blank"><i class="twitter icon"></i></a>{% endif %}
+        {% if website.facebook and website.bch %}<a class="social-name" href="https://facebook.com/{{ website.facebook }}" target="_blank"><i class="facebook f icon"></i></a>{% endif %}
       </div>
       <p>Supported:</p>
       {% if website.bch %}
