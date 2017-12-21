@@ -114,6 +114,16 @@ websites:
       tfa: No
       lang: de
 
+    - name: Domainnameshop
+      url: https://domainname.shop/
+      img: domainnameshop.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      exceptions:
+        text: "SMS available only to customers in Norway, Sweeden and Denmark."
+      doc: https://domainname.shop/faq?id=344
+
     - name: Domains4Bitcoins.com
       url: https://www.domains4bitcoins.com
       img: domains4bitcoins.png
