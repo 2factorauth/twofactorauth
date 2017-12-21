@@ -169,12 +169,10 @@ websites:
     - name: Coinbase
       url: https://www.coinbase.com/
       img: coinbase.png
-      bch: No
+      bch: Yes
       btc: Yes
       othercrypto: Yes
-      doc: https://support.coinbase.com/customer/portal/articles/2853600-bitcoin-cash---frequently-asked-questions
-      exceptions:
-          text: "Coinbase will credit Bitcoin Cash accounts before January 2018."
+      doc: https://blog.coinbase.com/buy-sell-send-and-receive-bitcoin-cash-on-coinbase-65f1b2c7214b
 
     - name: CoinExchange.io
       url: https://www.coinexchange.io/
