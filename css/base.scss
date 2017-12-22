@@ -883,6 +883,11 @@ span.progress {
   }
 }
 
+.ui.segment.more-info {
+  border-top: 10px solid $green-light;
+  border-bottom: 10px solid $gray;
+}
+
 .ui.segment.twitter-panel {
   background: url(../img/twitter-logo-alpha-large.png) no-repeat bottom right #fff;
   background-size: contain;
@@ -893,7 +898,7 @@ span.progress {
 .ticker {
   margin: 0;
   padding: 0;
-  border-top: 3px solid $green-light;
+  border-bottom: 10px solid $orange-light;
   border-radius: 0;
 
   #ticker_value {
@@ -951,6 +956,7 @@ span.progress {
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
   text-align: center;
   padding: 2rem 0;
+  border-bottom: 10px solid $white-dark;
 
   p {
     width: 62%;
@@ -1021,8 +1027,8 @@ span.progress {
 .ui.footer {
   background: rgba(255,255,255,0.7);
   margin: 0;
-  border-top: 3px solid #daecd4;
-  padding: 2rem;
+  border-bottom: 10px solid $green-light;
+  padding: 2rem 2rem 1.4rem;
 }
 
 #show-disclaimer {
