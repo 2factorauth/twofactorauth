@@ -132,6 +132,9 @@ $(document).ready(function () {
     label: 'percent',
     showActivity: false
   });
+
+  // Retrieve latest production version
+  getLatestRelease();
 });
 
 /**
@@ -156,6 +159,11 @@ function coinEffect() {
   , 1);
 }
 
+function getLatestRelease() {
+  var githubfeed = $.getJSON("https://api.github.com/repos/acceptbitcoincash/acceptbitcoincash/releases/latest", function(data){
+    $("span.version").html('Current Release: <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/releases/latest" target="_blank" data-tooltip="Read the ' + data.tag_name + ' release notes" data-position="top center" data-inverted=""><i class="tag icon"></i><b>' + data.tag_name + '</b></a> &nbsp;&bull;&nbsp; <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/compare/' + data.tag_name + '...master" target="_blank" data-tooltip="View a list of approved commits that have not yet been deployed to this site" data-position="top center" data-inverted="">Upcoming changes <i class="sign in icon"></i></a>');
+  });
+}
 
 /**
  * Create an event that is called 500ms after the browser
