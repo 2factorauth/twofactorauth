@@ -72,6 +72,13 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: BuiltWith
+      url: https://builtwith.com
+      img: builtwith.png
+      tfa: Yes
+      software: Yes
+      doc: https://kb.builtwith.com/account-management/how-to-enable-2fa-on-builtwith/
+
     - name: Cedexis
       url: http://www.cedexis.com/
       img: cedexis.png
@@ -274,11 +281,26 @@ websites:
       sms: Yes
       phone: Yes
 
-    - name: Nuget
+    - name: npm
+      url: https://www.npmjs.com/
+      img: npm.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.npmjs.com/getting-started/using-two-factor-authentication
+
+    - name: NuGet
       url: https://www.nuget.org
       img: nuget.png
       tfa: No
       twitter: nuget
+      email_address: support@nuget.org
+
+    - name: Packagist
+      url: https://packagist.org
+      img: packagist.png
+      tfa: No
+      twitter: packagist
+      email_address: contact@packagist.org
 
     - name: Papertrail
       url: https://papertrailapp.com/

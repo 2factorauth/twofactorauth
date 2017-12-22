@@ -39,6 +39,14 @@ websites:
           text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
       doc: http://support.apple.com/kb/ht5570
 
+    - name: Arcaplanet
+      url: https://www.arcaplanet.it/
+      img: arcaplanet.png
+      tfa: No
+      twitter: Arcaplanet
+      facebook: Arcaplanet
+      lang: it
+
     - name: Big W
       url: https://www.bigw.com.au/
       img: bigw.png
@@ -98,7 +106,6 @@ websites:
       software: Yes
       exceptions:
           text: "eBay only supports 2FA in some countries."
-      doc: http://pages.ebay.com/securitykey/faq.html
 
     - name: ePRICE
       url: https://www.eprice.it/
@@ -335,7 +342,9 @@ websites:
       url: https://www.zalando.co.uk/
       img: zalando.png
       tfa: No
-      twitter: Zalando_uk
+      twitter: zalando_uk
+      facebook: Zalando.co.uk
+      email_address: service@zalando.co.uk
 
     - name: Zappos
       url: http://www.zappos.com/

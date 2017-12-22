@@ -60,6 +60,15 @@ websites:
       software: Yes
       doc: https://support.cloudways.com/enabling-two-factor-authentication-for-your-cloudways-account/
 
+    - name: Contabo
+      url: https://contabo.de/
+      img: contabo.png
+      tfa: No
+      twitter: ContaboCom
+      facebook: ContaboDe
+      email_address: support@contabo.de
+      lang: de
+
     - name: cyon
       url: https://www.cyon.ch
       img: cyon.png
@@ -67,12 +76,12 @@ websites:
       software: Yes
       doc: https://www.cyon.ch/support/a/225/wie-aktiviere-ich-die-zwei-schritt-verifizierung
 
-    - name: dediserve
-      url: https://dediserve.com
+    - name: DediServe
+      url: https://www.dediserve.com
       img: dediserve.png
       tfa: Yes
       software: Yes
-      doc: http://news.dediserve.com/2016/12/01/2-factor-authentication-now-launched/
+      doc: https://www.dediserve.com/blog/2016/12/01/2-factor-authentication-now-launched
 
     - name: Dreamhost
       url: https://dreamhost.com
@@ -123,6 +132,13 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+
+    - name: Hostens
+      url: https://www.hostens.com/
+      img: hostens.png
+      tfa: Yes
+      software: Yes
+      doc: https://billing.hostens.com/knowledgebase/article/29/how-to-enhance-account-security-/
 
     - name: HostHatch
       url: https://hosthatch.com/
@@ -294,6 +310,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
 
     - name: PlanetHoster
       url: https://planethoster.net

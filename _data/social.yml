@@ -190,9 +190,10 @@ websites:
 
     - name: Reddit
       url: https://www.reddit.com/
-      twitter: reddit
       img: reddit.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://www.reddithelp.com/en/categories/using-reddit/your-reddit-account/how-set-two-factor-authentication
 
     - name: Snapchat
       url: https://www.snapchat.com/
@@ -272,4 +273,4 @@ websites:
       img: zocle.png
       tfa: Yes
       sms: Yes
-      doc: http://university.zocle.com/2015/03/30/new-security-feature-two-step-verification/
+      doc: https://zocle.com/knowledgebase/enabling-two-step-verification/
