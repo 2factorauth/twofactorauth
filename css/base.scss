@@ -103,15 +103,18 @@ p {
       }
     }
 
+    &:nth-child(2) {
+      display: none;
+    }
+
     &:nth-child(3) {
       display: none;
-      background-color: $green-light !important;
-      position: absolute;
-      top: -128px;
-      left: 0;
+//      background-color: $green-light !important;
+      //top: -128px;
+      //left: 0;
 
       i {
-        color: $green-dark;
+//        color: $green-dark;
         font-size: 26px;
         top: 9px;
         left: 11px;
@@ -162,8 +165,9 @@ p {
 }
 
 #top-header {
-  padding: 0 0 20px;
-  border-radius: 10px;
+  background: rgba(0,0,0,0.8);
+  margin: 0 0 40px;
+  padding: 30px 20px 40px;
 
   a {
     color: $link-on-dark;
@@ -174,8 +178,6 @@ p {
   }
 
   h2 {
-    background: $orange;
-    border-radius: 5px 5px 0 0;
     color: #fff;
     font-weight: 500;
     padding: 10px 0;
@@ -183,20 +185,24 @@ p {
 
   .title-wrap {
     display: inline-block;
-    border: 3px solid #DAECD4;
     width: 705px;
     margin-top: 40px;
-    border-radius: 10px 10px 0 0;
-    border-bottom: 0;
 
     h1 {
-      background: $gray;
-      border-radius: 10px 10px 0 0;
-      padding: 40px 0 0;
+      padding: 0;
       color: #fff;
-      font-size: 40px;
+      font-size: 57px;
       font-style: italic;
       font-weight: normal;
+      line-height: 1.2;
+      text-align: left;
+
+      i {
+        display: inline;
+        font-size: 0.7rem;
+        padding-left: 5px;
+        cursor: help;
+      }
 
       span {
         font-weight: bold;
@@ -209,14 +215,14 @@ p {
     }
 
     .inner-title {
-      background: $gray;
       padding-bottom: 15px;
+      clear: both;
 
       i.bitcoin.icon {
         padding: 15px 0 0;
         transform: rotate(-14deg);
         font-size: 32px;
-        color: #5f5f5f;
+        color: rgba(255,255,255,0.15);
       }
 
       .sub.header {
@@ -224,14 +230,28 @@ p {
         padding: 15px 0;
         max-width: 90%;
 
+        &.browse-all {
+          .ui.blue.button {
+            background-color: $blue-dark;
+
+            i {
+              display: inline;
+              font-size: 1em;
+            }
+
+            &:hover {
+              background-color: $blue;
+            }
+          }
+        }
+
         &.how-to-contrib {
           padding-top: 0;
           margin-top: 0;
         }
 
         &:first-of-type {
-          font-size: 1.2rem;
-          padding: 15px 15px 20px;
+          padding-top: 20px;
         }
       }
     }
@@ -240,21 +260,26 @@ p {
   .title-footer {
     padding: 10px 0;
     background: $blue;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
     font-size: 1rem;
     font-style: italic;
     font-weight: 500;
 
     a {
       color: #fff;
-      margin: 0 1rem;
+      margin: 0;
+      padding: 0 3rem;
       display: inline-block;
-      width: 40%;
+      //width: 38%;
       text-align: center;
       cursor: pointer;
 
       &:hover {
         color: $orange;
+      }
+
+      &:first-child {
+       // border-right: 1px solid #fff;
       }
 
       i {
@@ -267,7 +292,6 @@ p {
 
   .bch-only {
     padding: 10px;
-    background: $gray;
     transition: 1s all ease-in-out;
 
     #search-wrapper {
@@ -581,7 +605,7 @@ p {
 .website-table {
   margin: auto -2px;
   position: relative;
-  width: 90vw;
+  width: 100vw;
   z-index: 1000;
 }
 
@@ -695,6 +719,7 @@ p {
 }
 
 .bch-only-none-found-mobile {
+  background: rgba(255,255,255,0.65);
   text-align: center;
   padding: 1rem;
   border-radius: 10px;
@@ -1075,6 +1100,8 @@ span.progress {
   }
 
   #top-header {
+    padding: 0;
+
     .title-wrap {
       width: 100%;
       border-width: 3px 0;
@@ -1082,9 +1109,12 @@ span.progress {
 
       h1 {
         border-radius: 0;
-        padding: 40px 0 0;
-        font-size: 50px;
-        line-height: 1.2;
+        padding: 0 20px;
+        font-size: 2em;
+      }
+
+      .inner-title {
+        padding: 15px 0;
       }
 
       #search-wrapper {
@@ -1202,6 +1232,23 @@ span.progress {
     width: 95vw;
   }
 
+  .category {
+    h5.ui.icon.header {
+      width: 100%;
+      text-align: left;
+      margin: 0;
+
+      i.circular.icon {
+        display: inline-block;
+        margin: 0;
+      }
+
+      small {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
   .asset-intro {
     float: none;
     width: 98%;
@@ -1300,5 +1347,25 @@ span.progress {
   }
 }
 
+@media screen and (min-width: 768px) {
+  #top-header .title-wrap .inner-title .sub.header:first-of-type {
+    font-size: 1.3rem;
+    padding: 65px 55px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .ui.container {
+    width: auto;
+  }
+
+  .category h5.ui.icon.header small {
+    padding: 5px 3px;
+    font-size: 0.9rem;
+  }
+}
+
+
 // Imports the entire animated Bitcoin Cash logo styles
 @import 'bitcoinsvg';
+@import 'abci';

@@ -1,0 +1,112 @@
+#abci-logo {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  margin: 0 20px 40px 0;
+  cursor: help;
+
+  .coin-side {
+    position: absolute;
+    top: 88px;
+    fill: $orange;
+
+    &.bottom-side {
+      left: 27%;
+//      animation: coinbottom 2s ease-in-out;
+//      animation-fill-mode: forwards;
+
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  #abci-coin-toggle {
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+  }
+
+  #abci-main-coin {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    background: $orange;
+    // Rotating the coin as default because Bitcoin Cash is going up to the moon! ┗(°0°)┛
+    transform: rotate(-28deg);
+    animation: coindrop 1s ease-in-out;
+    animation-fill-mode: forwards;
+
+    .glyph {
+      stroke: #BE6907;
+      stroke-width: 0;
+      stroke-dasharray: 2110;
+      stroke-dashoffset: 0;
+      stroke-linecap: round;
+      fill: #fff;
+    }
+
+    .anim-glyph {
+      animation: dash 1250ms linear;
+      animation-delay: 1s;
+    }
+
+    .anim-glyph-force {
+      animation: dash 1250ms linear;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #abci-logo {
+    margin: 0 20px 20px;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  #abci-logo {
+    float: left;
+    margin: 0 20px 0 100px;
+  }
+}
+
+@keyframes coindrop {
+  0% {
+    transform: translateY(-30px) rotate(-28deg);
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px) rotate(-28deg);
+    opacity: 1;
+  }
+}
+
+@keyframes coinbottom {
+  0% {
+    transform: scale(1.3) rotate(48deg);
+    opacity: 0;
+    margin: -40px -50px 0 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+    margin: 0;
+  }
+}
