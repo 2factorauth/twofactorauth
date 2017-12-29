@@ -244,10 +244,10 @@ p {
 
         &.browse-all, &.how-to-contrib {
           .ui.blue.button {
-            background-color: $blue-dark;
+            background-color: $blue;
 
             &:hover {
-              background-color: $blue;
+              background-color: $blue-dark;
             }
           }
 
