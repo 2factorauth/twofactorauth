@@ -10,9 +10,10 @@ websites:
       img: bitpay.png
       twitter: bitpay
       facebook: bitpayofficial
-      bch: No
+      bch: Yes
       btc: Yes
       othercrypto: No
+      status: https://blog.bitpay.com/multiple-blockchains/
 
     - name: Braintree
       img: braintree.png
@@ -28,6 +29,15 @@ websites:
       facebook: buycraftdotnet
       bch: No
       btc: Yes
+
+    - name: Cleverbridge
+      url: https://www.cleverbridge.com
+      img: cleverbridge.png
+      twitter: cleverbridge
+      facebook: cleverbridge
+      bch: No
+      btc: No
+      othercrypto: No
 
     - name: Coinify
       url: https://coinify.com

@@ -26,12 +26,12 @@ websites:
   - name: Blockchain
     url: https://blockchain.info/
     img: blockchain.png
-    bch: No
+    bch: Yes
     btc: Yes
     othercrypto: No
     facebook: blockchain
     twitter: blockchain
-    exceptions:
+    doc: https://blog.blockchain.com/2017/12/14/bitcoin-cash/
 
   - name: Blockchair
     url: https://blockchair.com/
@@ -222,6 +222,15 @@ websites:
     btc: Yes
     othercrypto: Yes
     status: https://www.reddit.com/r/OpenBazaar/comments/6vv16q/would_anyone_here_be_interested_in_ob_forking_the/dm4bwql/
+
+  - name: Pastecoin
+    url: https://www.pastecoin.com
+    twitter: PasteCoin
+    img: pastecoin.png
+    bch: Yes
+    btc: Yes
+    othercrypto: No
+    doc: https://twitter.com/PasteCoin/status/943562876513673216
 
   - name: piixPay
     url: https://piixpay.com
