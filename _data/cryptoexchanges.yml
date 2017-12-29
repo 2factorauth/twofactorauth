@@ -329,15 +329,13 @@ websites:
     - name: Poloniex
       url: https://poloniex.com/
       img: poloniex.png
-      bch: No
-      btc: Yes
-      othercrypto: Yes
-      doc: https://poloniex.com/press-releases/2017.08.03-Bitcoin-Cash-Update/
       facebook: Poloniex
       twitter: poloniex
       email_address: support@poloniex.com
-      exceptions:
-          text: "Poloniex has enabled Bitcoin Cash withdrawal but does not yet offer full support."
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://poloniex.com/press-releases/2017.08.03-Bitcoin-Cash-Update/
 
     - name: QuadrigaCX
       url: https://www.quadrigacx.com
