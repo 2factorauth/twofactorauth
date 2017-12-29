@@ -223,8 +223,8 @@ var jets = new Jets({
 
       isSearching = true;
 
-      $('html, body').stop().animate({scrollTop: $('#maingrid').offset().top - 120}, 500, 'swing');
-      //$('html, body').scrollTop($('#search-wrapper').offset().top - 15);
+      //$('html, body').stop().animate({scrollTop: $('#maingrid').offset().top - 120}, 500, 'swing');
+      $('html, body').scrollTop($('#maingrid').offset().top - 64);
     }
   },
   addImportant: true,
