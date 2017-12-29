@@ -37,22 +37,20 @@ useful to read up on the YAML syntax.
 To add a new site, go to the [data files](_data/) and get familiar with how it
 is setup. There is a section and corresponding file for each Category. Site icons
 are stored in folders corresponding to each of those categories in their own
-[folder](img/).
+[folder](img/), and must be a 32x32 PNG (alpha optional) or JPG image.
 
 ## Guidelines
 
-1. **Don't break the build**: We have a simple continuous integration system
-   setup with [Travis][travis]. If your pull request doesn't pass, it won't be
-   merged. Travis will only check your changes after you submit a pull request.
-   If you want to test locally, instructions are listed below. Keep reading!
+1. **Don't break the build**: If your pull request causes the Jekyll build to fail, it won't be
+   merged. If you want to test locally, instructions are listed below. Keep reading!
 2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
-   preferred format.
+   preferred format, and remember to choose something that's legible at such a small size.
 3. **Be Awesome**: You need to be awesome, but you've read this far, so you probably are. That is all.
 
 ## Running Locally
 
-It's easy to run everything locally to test it out. Either you can have plain
-[Jekyll](http://jekyllrb.com/) installed or you can use [Bundler](http://bundler.io/) to manage
+It's easy to run everything locally to test it out. Ensure you have [Ruby on Rails](http://guides.rubyonrails.org/getting_started.html) installed. You can then use either plain
+[Jekyll](http://jekyllrb.com/) or [Bundler](http://bundler.io/) to manage
 everything for you.
 
 ### Using Bundler
@@ -245,10 +243,9 @@ website. There are 4 ways to customize how it is displayed:
 - If a site supports BCH, their Twitter and Facebook handles as well as their email address
   are not needed and can be left out for cleanliness.
 
-- If a site does not have BCH but there is documentation that they are adding
+- If a site does not yet support BCH but there is documentation that they are adding
   it, then use:
 
   ```yml
-  bch: No
   status: <url to documentation>
   ```

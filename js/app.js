@@ -17,8 +17,8 @@ $(document).ready(function () {
   };
 
   // Check if URL parameter exists to filter by BCH-only
-  if (getUrlParameter('filter') == 'bch') {
-    $('#show-bch-only').prop('checked', true);
+  if (getUrlParameter('filter') == 'all') {
+    $('#show-bch-only').prop('checked', false);
   }
 
   // Clear the BCH-only view
@@ -53,6 +53,12 @@ $(document).ready(function () {
         //document.location.hash = window.location.hash.substring(1);
       //}
     });
+  });
+
+  // Scroll to the main content grid
+  $('#skip-to-content').on('click', function () {
+    var body = $("html, body");
+    body.stop().animate({scrollTop: $('#maingrid').offset().top - 64}, 500, 'swing');
   });
 
   // Scroll to the search field and focus it via floating action button and filter bar link
@@ -110,7 +116,7 @@ $(document).ready(function () {
     $('.ui.modal.art-collections').modal('show');
   });
 
-  $('#about-this-site').on('click', function () {
+  $('#abci-logo, h1 i, #about-this-site').on('click', function () {
     $('.ui.modal.about-this-site').modal('show');
   });
 
@@ -225,8 +231,8 @@ var jets = new Jets({
 
       isSearching = true;
 
-      $('html, body').stop().animate({scrollTop: $('#maingrid').offset().top - 120}, 500, 'swing');
-      //$('html, body').scrollTop($('#search-wrapper').offset().top - 15);
+      //$('html, body').stop().animate({scrollTop: $('#maingrid').offset().top - 120}, 500, 'swing');
+      $('html, body').scrollTop($('#maingrid').offset().top - 64);
     }
   },
   addImportant: true,
@@ -268,6 +274,7 @@ function BCHfilter() {
     $('.bch-only-hidden').css('opacity', '0.4');
     if (isSearching) jets.options.didSearch( $('#bch-merchant-search').val() );
   } else {
+    $('.website-table:visible img').trigger('unveil');
     $('.bch-only-none-found, .bch-only-none-found-mobile').css('display', 'none');
     $('.bch-only-hidden').css('opacity', '1');
     $('.mobile-table .no-bch').css('display', 'block');
