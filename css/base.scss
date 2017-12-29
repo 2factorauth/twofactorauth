@@ -230,24 +230,46 @@ p {
         padding: 15px 0;
         max-width: 90%;
 
-        &.browse-all {
+        p {
+          &.or-choice {
+            font-weight: bold;
+            font-style: italic;
+            margin: 10px 0;
+          }
+
+          span {
+            font-style: italic;
+            font-size: 0.85em;
+          }
+        }
+
+        &.browse-all, &.how-to-contrib {
           .ui.blue.button {
             background-color: $blue-dark;
-
-            i {
-              display: inline;
-              font-size: 1em;
-            }
 
             &:hover {
               background-color: $blue;
             }
+          }
+
+          i {
+            display: inline;
+            font-size: 1em;
           }
         }
 
         &.how-to-contrib {
           padding-top: 0;
           margin-top: 0;
+
+          p:last-child {
+            line-height: 1.4;
+
+            span {
+              display: block;
+              margin-top: 10px;
+            }
+          }
         }
 
         &:first-of-type {
@@ -493,6 +515,7 @@ p {
 
 .ui.button {
   font-family: Ubuntu, Lato, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.3;
 }
 
 .ui.inverted.blue.button:hover, .ui.inverted.blue.buttons .button:hover {
@@ -1241,9 +1264,15 @@ span.progress {
       i.circular.icon {
         display: inline-block;
         margin: 0;
+        padding: 0.35em !important;
+        width: 1.7em !important;
+        height: 1.7em !important;
       }
 
       small {
+        position: relative;
+        top: 3px;
+        padding: 16px 10px;
         font-size: 1.2rem;
       }
     }
