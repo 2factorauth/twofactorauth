@@ -1,13 +1,14 @@
-* Submission Notes *
-- Please fill in the template below, and don't worry about exact formatting, just do your best!
-- Before submitting, please assign an appropriate label (most likely "new addition").
----------------
+**Submission Notes:** Please fill in the template below, and don't worry about exact formatting, just do your best! Use the _**Preview**_ tab to check your submission before sending it. Help for **region/country 2-letter codes** are below.
 
-Requesting to add ___site_name_here___ to the ___category_name_here___ category. Details follow:
+---------------
+Requesting to add {{**site_name_here**}} to the {{**category_name_here**}} category. Details follow:
 
 ```yml
 
 - name: site_name_here
+  region: see_region_code_table_below
+  country: see_wikipedia_link_below
+  city: capitalize_city_name
   url: URL_to_site_here_https_preferred
   twitter: twitter_username_no_@_symbol
   facebook: facebook_username
@@ -19,3 +20,18 @@ Requesting to add ___site_name_here___ to the ___category_name_here___ category.
 ```
 
 Add more information here if necessary.
+
+For 2-letter _country_ codes, use:
+https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements
+
+For 2-letter _region_ codes, use:
+
+Code | Name
+-- | --
+af | Africa
+na | North America
+oc | Oceania
+an | Antarctica
+as | Asia
+eu | Europe
+sa | South America
