@@ -266,6 +266,7 @@ function BCHfilter() {
     $('.bch-only-hidden').css('opacity', '0.4');
     if (isSearching) jets.options.didSearch( $('#bch-merchant-search').val() );
   } else {
+    $('.website-table:visible img').trigger('unveil');
     $('.bch-only-none-found, .bch-only-none-found-mobile').css('display', 'none');
     $('.bch-only-hidden').css('opacity', '1');
     $('.mobile-table .no-bch').css('display', 'block');
