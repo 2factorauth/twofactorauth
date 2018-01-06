@@ -102,10 +102,11 @@ websites:
       url: http://ebay.com
       img: ebay.png
       tfa: Yes
+      sms: Yes
       hardware: Yes
       software: Yes
       exceptions:
-          text: "eBay only supports 2FA in some countries."
+          text: "eBay currently only supports SMS 2FA. If software or hardware token is enabled, it will ask to switch. To enable 2FA go to Home > My eBay > My Account > Personal Information then scroll to the bottom."
 
     - name: ePRICE
       url: https://www.eprice.it/
