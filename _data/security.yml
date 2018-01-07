@@ -132,13 +132,9 @@ websites:
     - name: PureVPN
       url: https://www.purevpn.com
       img: purevpn.png
+      tfa: No
       twitter: purevpn
       facebook: PureVPNcom
-      tfa: Yes
-      software: Yes
-      exceptions:
-          text: "PureVPN only supports 2FA for business customers."
-      doc: https://www.purevpn.com/business-vpn.php
 
     - name: Pwnie Express Pwn Pulse
       url: https://www.pwnieexpress.com/products/pulse-device-detection
