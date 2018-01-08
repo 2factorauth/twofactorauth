@@ -3,22 +3,23 @@ websites:
       url: https://payments.amazon.com
       twitter: AmazonPayments
       img: amazon.png
-      bcc: No
+      bch: No
 
     - name: Bitpay
       url: https://bitpay.com
       img: bitpay.png
       twitter: bitpay
       facebook: bitpayofficial
-      bcc: No
+      bch: Yes
       btc: Yes
       othercrypto: No
-      
+      status: https://blog.bitpay.com/multiple-blockchains/
+
     - name: Braintree
       img: braintree.png
       twitter: Braintree
       url: https://www.braintreepayments.com/
-      bcc: No
+      bch: No
       btc: Yes
 
     - name: Buycraft
@@ -26,33 +27,40 @@ websites:
       img: buycraft.png
       twitter: Buycraft
       facebook: buycraftdotnet
-      bcc: No
+      bch: No
       btc: Yes
-      
+
+    - name: Cleverbridge
+      url: https://www.cleverbridge.com
+      img: cleverbridge.png
+      twitter: cleverbridge
+      facebook: cleverbridge
+      bch: No
+      btc: No
+      othercrypto: No
+
     - name: Coinify
       url: https://coinify.com
       img: coinify.png
-      bcc: Yes
+      bch: Yes
       btc: Yes
       othercrypto: Yes
-      
+
     - name: CoinPayments
       url: https://www.coinpayments.net/
       img: coinpayments.png
       twitter: CoinPayments
       facebook: CoinPaymentsNET
-      bcc: Yes
+      bch: Yes
       btc: Yes
       othercrypto: Yes
-      exception:
-        text: "Listed as BCH, not BCC"
 
     - name: Coin Simple
       url: https://coinsimple.com
       img: coinsimple.png
       twitter: coinsimple
       facebook: coinsimple
-      bcc: No
+      bch: No
       btc: Yes
 
     - name: Dwolla
@@ -60,26 +68,26 @@ websites:
       img: dwolla.png
       twitter: dwolla
       facebook: dwolla
-      bcc: No
+      bch: No
 
     - name: Flattr
       img: flattr.png
       url: https://flattr.com
       twitter: flattr
-      bcc: No
+      bch: No
 
     - name: GoCardless
       img: gocardless.png
       url: https://gocardless.com/
       twitter: GoCardless
-      bcc: No
+      bch: No
 
     - name: GoCoin
       url: https://gocoin.com
       img: gocoin.png
       twitter: gocoin
       facebook: gocoiner
-      bcc: No
+      bch: No
       btc: Yes
       othercrypto: Yes
 
@@ -87,13 +95,13 @@ websites:
       url: http://www.google.com/wallet/
       twitter: googlewallet
       img: googlewallet.png
-      bcc: No
-      
+      bch: No
+
     - name: GoUrl.io
       url: https://gourl.io/
       twitter: CryptocoinAPI
       img: gourl.png
-      bcc: Yes
+      bch: Yes
       btc: Yes
       othercrypto: Yes
 
@@ -102,50 +110,50 @@ websites:
       img: klarna.png
       twitter: Klarna
       facebook: KlarnaUSA
-      bcc: No
+      bch: No
 
     - name: NETELLER
       img: neteller.png
       url: https://www.neteller.com/
       twitter: neteller
       facebook: neteller
-      bcc: No
+      bch: No
 
     - name: Payoneer
       url: http://www.payoneer.com/
       twitter: Payoneer
       img: payoneer.png
-      bcc: No
+      bch: No
 
     - name: PayPal
       url: https://www.paypal.com/
       img: paypal.png
       twitter: paypal
-      bcc: No
+      bch: No
 
     - name: Paysafecard
       url: https://www.paysafecard.com/
       img: paysafecard.png
       twitter: Paysafecard
-      bcc: No
+      bch: No
 
     - name: Privacy
       url: https://privacy.com/
       twitter: privacyhq
       img: privacy.png
-      bcc: No
+      bch: No
 
     - name: Ravelin
       url: https://www.ravelin.com/
       twitter: Ravelinhq
       facebook: Ravelinhq
       img: ravelin.png
-      bcc: No
-      
+      bch: No
+
     - name: Rocketr
       url: https://rocketr.net
       img: rocketr.png
-      bcc: Yes
+      bch: Yes
       btc: Yes
       othercrypto: Yes
 
@@ -154,26 +162,26 @@ websites:
       twitter: skrill
       facebook: Skrillpayments
       img: skrill.png
-      bcc: No
+      bch: No
 
     - name: Square
       url: https://squareup.com
       twitter: square
       facebook: square
       img: squareup.png
-      bcc: No
+      bch: No
 
     - name: Square Cash
       url: https://cash.me
       img: square-cash.png
-      bcc: No
+      bch: No
       twitter: SquareCash
 
     - name: Stripe
       img: stripe.png
       url: https://www.stripe.com/
       twitter: Stripe
-      bcc: No
+      bch: No
       btc: Yes
 
     - name: Vantiv
@@ -181,22 +189,22 @@ websites:
       twitter: Vantiv
       facebook: Vantiv
       img: vantiv.png
-      bcc: No
+      bch: No
 
     - name: Venmo
       url: https://venmo.com
       twitter: venmo
       img: venmo.png
-      bcc: No
+      bch: No
 
     - name: Visa Checkout
       url: https://secure.checkout.visa.com/
       img: visa-checkout.png
-      bcc: No
+      bch: No
       twitter: VisaCheckout
 
     - name: Yandex.Money
       url: https://money.yandex.ru
       img: yandexmoney.png
       twitter: yandex
-      bcc: No
+      bch: No

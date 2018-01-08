@@ -1,10 +1,18 @@
 websites:
+    - name: Bar Foxx
+      url: http://barfoxx.com
+      img: barfoxx.png
+      facebook: BarFoxx
+      bch: yes
+      btc: no
+      othercrypto: no
+
     - name: Bees Brothers
       url: http://beesbros.com
+      img: beesbrothers.png
       facebook: beesbros
       email_address: beesbrothers@gmail.com
-      img: beesbrothers.png
-      bcc: yes
+      bch: yes
       btc: yes
       othercrypto: no
       exceptions:
@@ -14,7 +22,7 @@ websites:
       url: https://www.dunkindonuts.com
       img: dunkin.png
       twitter: DunkinDonuts
-      bcc: No
+      bch: No
       btc: No
       othercrypto: No
 
@@ -22,14 +30,14 @@ websites:
       url: https://www.hungry.dk/
       twitter: Hungrydk
       img: hungrydk.png
-      bcc: yes
+      bch: yes
       btc: yes
       othercrypto: yes
 
     - name: Kationickratom
       url: http://www.kationickratom.com
       img: kationickratom.png
-      bcc: yes
+      bch: yes
       btc: yes
       othercrypto: yes
       doc: http://kationickratom.com/lovingkratom/pago-bitcoin-altcoin/
@@ -39,7 +47,7 @@ websites:
       facebook: menufy
       twitter: menufy
       img: menufy.png
-      bcc: no
+      bch: no
       btc: yes
       othercrypto: yes
       doc: https://www.menufy.com/bitcoin
@@ -47,14 +55,14 @@ websites:
     - name: PizzaForCoins
       url: https://pizzaforcoins.com/
       img: pizzaforcoins.png
-      bcc: Yes
+      bch: Yes
       btc: Yes
       othercrypto: Yes
 
     - name: Starbucks
       url: http://www.starbucks.com/
       img: starbucks.png
-      bcc: No
+      bch: No
       btc: No
       othercrypto: No
       twitter: Starbucks
@@ -63,8 +71,25 @@ websites:
     - name: Taco Bell
       url: https://www.tacobell.com
       img: tacobell.png
-      bcc: No
+      bch: No
       btc: No
       othercrypto: No
       twitter: tacobell
       facebook: tacobell
+
+    - name: Takeaway.com
+      url: https://www.takeaway.com
+      img: takeaway.png
+      twitter: takeaway
+      bch: no
+      btc: yes
+      othercrypto: no
+
+    - name: The Dog is Hot
+      region: eu
+      country: es
+      city: Barcelona
+      url: http://thedogishot.com/
+      facebook: thedogishot
+      img: thedogishot.png
+      bch: yes

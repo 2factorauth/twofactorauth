@@ -17,9 +17,15 @@ $(document).ready(function () {
   };
 
   // Check if URL parameter exists to filter by BCH-only
-  if (getUrlParameter('filter') == 'bch') {
-    $('#show-bcc-only').prop('checked', true);
+  if (getUrlParameter('filter') == 'all') {
+    $('#show-bch-only').prop('checked', false);
   }
+
+  // Clear the BCH-only view
+  $('.clear-bch-only').click(function () {
+    $('#show-bch-only').prop('checked', false);
+    BCHfilter();
+  });
 
   // Check if URL references specific category
   if (window.location.hash && window.location.hash.indexOf('#') > -1) {
@@ -31,8 +37,8 @@ $(document).ready(function () {
     coinEffect();
   });
 
-  // Stick the BCC-only filter to the top on scroll
-  $(".bcc-only").fixTo('html', {
+  // Stick the BCH-only filter to the top on scroll
+  $(".bch-only").fixTo('html', {
     useNativeSticky: false
   });
 
@@ -49,6 +55,12 @@ $(document).ready(function () {
     });
   });
 
+  // Scroll to the main content grid
+  $('#skip-to-content').on('click', function () {
+    var body = $("html, body");
+    body.stop().animate({scrollTop: $('#maingrid').offset().top - 64}, 500, 'swing');
+  });
+
   // Scroll to the search field and focus it via floating action button and filter bar link
   $('.fab button:nth-child(2), #top-btn-search').on('click', function () {
     var body = $("html, body");
@@ -58,7 +70,7 @@ $(document).ready(function () {
 
   // Clear and collapse all open categories
   $('.fab button:nth-child(3)').on('click', function () {
-    if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
+    if (isSearching) jets.options.didSearch( $('#bch-merchant-search').val() );
     if (isSearching == false) {
       $('.website-table').slideUp();
       var body = $("html, body");
@@ -69,22 +81,22 @@ $(document).ready(function () {
     } else {
       if ($(this).hasClass('attention')) {
         $(this).removeClass('attention');
-        $("#bcc-merchant-search").removeClass('attention');
+        $("#bch-merchant-search").removeClass('attention');
       } else {
         $(this).addClass('attention');
-        $("#bcc-merchant-search").addClass('attention');
+        $("#bch-merchant-search").addClass('attention');
       }
     }
   });
 
   // Clear the active search terms
   $('button#search-clear').on('click', function () {
-    $('#search-wrapper input#bcc-merchant-search').val('');
+    $('#search-wrapper input#bch-merchant-search').val('');
     $('#no-results').css('display', 'none');
     $('.category').show();
     $('.website-table').hide();
     $('#maingrid').css('visibility', 'visible');
-    $('#search-wrapper input#bcc-merchant-search').focus();
+    $('#search-wrapper input#bch-merchant-search').focus();
     $('head style').html("");
   });
 
@@ -104,7 +116,7 @@ $(document).ready(function () {
     $('.ui.modal.art-collections').modal('show');
   });
 
-  $('#about-this-site').on('click', function () {
+  $('#abci-logo, h1 i, #about-this-site').on('click', function () {
     $('.ui.modal.about-this-site').modal('show');
   });
 
@@ -126,6 +138,9 @@ $(document).ready(function () {
     label: 'percent',
     showActivity: false
   });
+
+  // Retrieve latest production version
+  getLatestRelease();
 });
 
 /**
@@ -150,6 +165,11 @@ function coinEffect() {
   , 1);
 }
 
+function getLatestRelease() {
+  var githubfeed = $.getJSON("https://api.github.com/repos/acceptbitcoincash/acceptbitcoincash/releases/latest", function(data){
+    $("span.version").html('Current Release: <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/releases/latest" target="_blank" data-tooltip="Read the ' + data.tag_name + ' release notes" data-position="top center" data-inverted=""><i class="tag icon"></i><b>' + data.tag_name + '</b></a> &nbsp;&bull;&nbsp; <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/compare/' + data.tag_name + '...master" target="_blank" data-tooltip="View a list of approved commits that have not yet been deployed to this site" data-position="top center" data-inverted="">Upcoming changes <i class="sign in icon"></i></a>');
+  });
+}
 
 /**
  * Create an event that is called 500ms after the browser
@@ -166,8 +186,8 @@ $(window).resize(function () {
 
 var isSearching = false;
 var jets = new Jets({
-  searchTag: '#bcc-merchant-search',
-  contentTag: '.bcc-merchant-content',
+  searchTag: '#bch-merchant-search',
+  contentTag: '.bch-merchant-content',
   didSearch: function (searchPhrase) {
     document.location.hash = '';
     $('#no-results').css('display', 'none');
@@ -175,7 +195,7 @@ var jets = new Jets({
     $('.category h5 i').removeClass('active-icon');
     // Two separate table layouts are used for desktop/mobile
     var platform = ($(window).width() > 768) ? 'desktop' : 'mobile';
-    var content = $('.' + platform + '-table .bcc-merchant-content');
+    var content = $('.' + platform + '-table .bch-merchant-content');
     var table = $('.' + platform + '-table');
 
     // Non-strict comparison operator is used to allow for null
@@ -211,8 +231,8 @@ var jets = new Jets({
 
       isSearching = true;
 
-      $('html, body').stop().animate({scrollTop: $('#maingrid').offset().top - 120}, 500, 'swing');
-      //$('html, body').scrollTop($('#search-wrapper').offset().top - 15);
+      //$('html, body').stop().animate({scrollTop: $('#maingrid').offset().top - 120}, 500, 'swing');
+      $('html, body').scrollTop($('#maingrid').offset().top - 64);
     }
   },
   addImportant: true,
@@ -227,7 +247,7 @@ var jets = new Jets({
  * after re-sizing the screen and close all categories after re-sizing
  */
 $(window).on('resizeEnd', function () {
-  if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
+  if (isSearching) jets.options.didSearch( $('#bch-merchant-search').val() );
 });
 
 // Display tables and color category selectors
@@ -240,25 +260,26 @@ $('.category').click(function () {
  * Toggle visibility of merchants who accept Bitcoin Cash
  */
 $('.z-switch').click(function () {
-  BCCfilter();
+  BCHfilter();
 });
 
 /**
  * Check if the user wants to filter by Bitcoin Cash only
  */
-function BCCfilter() {
- if ($('#show-bcc-only').is(':checked')) {
-    $('.no-bcc').css('display', 'none');
-    $('.bcc-only-none-found').css('display', 'table-row');
-    $('.bcc-only-none-found-mobile').css('display', 'block');
-    $('.bcc-only-hidden').css('opacity', '0.4');
-    if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
+function BCHfilter() {
+ if ($('#show-bch-only').is(':checked')) {
+    $('.no-bch').css('display', 'none');
+    $('.bch-only-none-found').css('display', 'table-row');
+    $('.bch-only-none-found-mobile').css('display', 'block');
+    $('.bch-only-hidden').css('opacity', '0.4');
+    if (isSearching) jets.options.didSearch( $('#bch-merchant-search').val() );
   } else {
-    $('.bcc-only-none-found, .bcc-only-none-found-mobile').css('display', 'none');
-    $('.bcc-only-hidden').css('opacity', '1');
-    $('.mobile-table .no-bcc').css('display', 'block');
-    $('.desktop-table .no-bcc').css('display', 'table-row');
-    if (isSearching) jets.options.didSearch( $('#bcc-merchant-search').val() );
+    $('.website-table:visible img').trigger('unveil');
+    $('.bch-only-none-found, .bch-only-none-found-mobile').css('display', 'none');
+    $('.bch-only-hidden').css('opacity', '1');
+    $('.mobile-table .no-bch').css('display', 'block');
+    $('.desktop-table .no-bch').css('display', 'table-row');
+    if (isSearching) jets.options.didSearch( $('#bch-merchant-search').val() );
   }
 }
 
@@ -282,7 +303,7 @@ function openCategory(category) {
   $('.category h5 i').removeClass('active-icon');
   $('.website-table').css('display', 'none');
   $('.fab button:nth-child(3)').css('display', 'inline-block');
-  BCCfilter();
+  BCHfilter();
 
   // Place the category being viewed in the URL bar
   window.location.hash = category;

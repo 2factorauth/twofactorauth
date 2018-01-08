@@ -53,7 +53,7 @@ p {
   font-size: 0.8rem;
 }
 
-.no-bcc {
+.no-bch {
   transition: 1s all ease-in-out;
 }
 
@@ -103,15 +103,18 @@ p {
       }
     }
 
+    &:nth-child(2) {
+      display: none;
+    }
+
     &:nth-child(3) {
       display: none;
-      background-color: $green-light !important;
-      position: absolute;
-      top: -128px;
-      left: 0;
+//      background-color: $green-light !important;
+      //top: -128px;
+      //left: 0;
 
       i {
-        color: $green-dark;
+//        color: $green-dark;
         font-size: 26px;
         top: 9px;
         left: 11px;
@@ -162,8 +165,9 @@ p {
 }
 
 #top-header {
-  padding: 0 0 20px;
-  border-radius: 10px;
+  background: rgba(0,0,0,0.8);
+  margin: 0 0 40px;
+  padding: 30px 20px 40px;
 
   a {
     color: $link-on-dark;
@@ -174,8 +178,6 @@ p {
   }
 
   h2 {
-    background: $orange;
-    border-radius: 5px 5px 0 0;
     color: #fff;
     font-weight: 500;
     padding: 10px 0;
@@ -183,25 +185,29 @@ p {
 
   .title-wrap {
     display: inline-block;
-    border: 3px solid #DAECD4;
     width: 705px;
     margin-top: 40px;
-    border-radius: 10px 10px 0 0;
-    border-bottom: 0;
 
     h1 {
-      background: $gray;
-      border-radius: 10px 10px 0 0;  
-      padding: 40px 0 0;
+      padding: 0;
       color: #fff;
-      font-size: 40px;
+      font-size: 57px;
       font-style: italic;
       font-weight: normal;
+      line-height: 1.25;
+      text-align: left;
+
+      i {
+        display: inline;
+        font-size: 0.7rem;
+        padding-left: 5px;
+        cursor: help;
+      }
 
       span {
         font-weight: bold;
         font-style: normal;
-        
+
         &.logoseg-2 {
           color: $orange;
         }
@@ -209,14 +215,14 @@ p {
     }
 
     .inner-title {
-      background: $gray;
       padding-bottom: 15px;
+      clear: both;
 
       i.bitcoin.icon {
         padding: 15px 0 0;
         transform: rotate(-14deg);
         font-size: 32px;
-        color: #5f5f5f;
+        color: rgba(255,255,255,0.15);
       }
 
       .sub.header {
@@ -224,14 +230,49 @@ p {
         padding: 15px 0;
         max-width: 90%;
 
+        p {
+          &.or-choice {
+            font-weight: bold;
+            font-style: italic;
+          }
+
+          span {
+            font-style: italic;
+            font-size: 0.85em;
+          }
+        }
+
+        &.browse-all, &.how-to-contrib {
+          .ui.blue.button {
+            background-color: $blue;
+
+            &:hover {
+              background-color: $blue-dark;
+            }
+          }
+
+          i {
+            display: inline;
+            font-size: 1em;
+          }
+        }
+
         &.how-to-contrib {
           padding-top: 0;
           margin-top: 0;
+
+          p:last-child {
+            line-height: 1.4;
+
+            span {
+              display: block;
+              margin-top: 10px;
+            }
+          }
         }
 
         &:first-of-type {
-          font-size: 1.2rem;
-          padding: 15px 15px 20px;
+          padding-top: 20px;
         }
       }
     }
@@ -240,21 +281,26 @@ p {
   .title-footer {
     padding: 10px 0;
     background: $blue;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
     font-size: 1rem;
     font-style: italic;
     font-weight: 500;
 
     a {
       color: #fff;
-      margin: 0 1rem;
+      margin: 0;
+      padding: 0 3rem;
       display: inline-block;
-      width: 40%;
+      //width: 38%;
       text-align: center;
       cursor: pointer;
 
       &:hover {
         color: $orange;
+      }
+
+      &:first-child {
+       // border-right: 1px solid #fff;
       }
 
       i {
@@ -265,9 +311,8 @@ p {
     }
   }
 
-  .bcc-only {
+  .bch-only {
     padding: 10px;
-    background: $gray;
     transition: 1s all ease-in-out;
 
     #search-wrapper {
@@ -469,6 +514,7 @@ p {
 
 .ui.button {
   font-family: Ubuntu, Lato, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.3;
 }
 
 .ui.inverted.blue.button:hover, .ui.inverted.blue.buttons .button:hover {
@@ -574,14 +620,14 @@ p {
   text-align: center;
 }
 
-.bcc-only-none-found {
+.bch-only-none-found {
   display: none;
 }
 
 .website-table {
-  margin: auto;
+  margin: auto -2px;
   position: relative;
-  width: 90vw;
+  width: 100vw;
   z-index: 1000;
 }
 
@@ -594,7 +640,7 @@ p {
     text-align: center;
   }
 
-  .bcc-merchant-content {
+  .bch-merchant-content {
     margin: 0 auto 40px auto;
 
     > div {
@@ -666,6 +712,61 @@ p {
   }
 }
 
+.bch-only-none-found {
+  color: $gray-lighter;
+
+  h3, h4 {
+    margin-top: 1rem;
+  }
+
+  p {
+    margin: 0;
+    color: $gray-light;
+
+    span {
+      color: $blue;
+      font-weight: bold;
+      cursor: pointer;
+      @include transition(all, ease, 420ms);
+
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.bch-only-none-found-mobile {
+  background: rgba(255,255,255,0.65);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+
+  h4, p {
+    padding: 0.7rem !important;
+    margin: 0 !important;
+  }
+
+  p:last-child {
+    padding-top: 0 !important;
+  }
+
+  span {
+    color: $blue;
+    font-weight: bold;
+    cursor: pointer;
+    @include transition(all, ease, 420ms);
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
 .ui.table td {
   padding: 0.5em;
 
@@ -711,7 +812,7 @@ p {
 }
 
 .ui.mini.button {
-  padding: 0.4em 1.5em !important;
+  padding: 0.4em 1.4em !important;
 
   i {
     margin: 0 0 0.2rem !important;
@@ -739,6 +840,11 @@ td img.icon,
   padding-left: 3%;
   margin-bottom: 5px;
   vertical-align: top;
+
+  &.social-name {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .ui.mini.button {
@@ -829,15 +935,22 @@ span.progress {
   }
 }
 
+.ui.segment.more-info {
+  border-top: 10px solid $green-light;
+  border-bottom: 10px solid $gray;
+}
+
 .ui.segment.twitter-panel {
+  background: url(../img/twitter-logo-alpha-large.png) no-repeat bottom right #fff;
+  background-size: contain;
   padding: 2rem 0;
   margin-bottom: 5rem;
 }
 
 .ticker {
-  margin: 2rem 0 0;
+  margin: 0;
   padding: 0;
-  border-top: 3px solid $green-light;
+  border-bottom: 10px solid $orange-light;
   border-radius: 0;
 
   #ticker_value {
@@ -895,6 +1008,7 @@ span.progress {
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
   text-align: center;
   padding: 2rem 0;
+  border-bottom: 10px solid $white-dark;
 
   p {
     width: 62%;
@@ -965,8 +1079,8 @@ span.progress {
 .ui.footer {
   background: rgba(255,255,255,0.7);
   margin: 0;
-  border-top: 3px solid #daecd4;
-  padding: 2rem;
+  border-bottom: 10px solid $green-light;
+  padding: 2rem 2rem 1.4rem;
 }
 
 #show-disclaimer {
@@ -1008,16 +1122,21 @@ span.progress {
   }
 
   #top-header {
+    padding: 0;
+
     .title-wrap {
       width: 100%;
       border-width: 3px 0;
       border-radius: 0;
 
       h1 {
-        border-radius: 0;  
-        padding: 40px 0 0;
-        font-size: 50px;
-        line-height: 1.2;
+        border-radius: 0;
+        padding: 0 20px;
+        font-size: 2em;
+      }
+
+      .inner-title {
+        padding: 15px 0;
       }
 
       #search-wrapper {
@@ -1042,7 +1161,7 @@ span.progress {
           border-radius: 0;
           width: 100%;
           padding: 0.25rem 0 0;
-          
+
           &:first-child {
             border-bottom: 1px solid $gray;
             padding: 0 0 1rem;
@@ -1051,7 +1170,7 @@ span.progress {
       }
     }
 
-    .bcc-only {
+    .bch-only {
       padding: 0;
 
       #search-wrapper {
@@ -1135,6 +1254,29 @@ span.progress {
     width: 95vw;
   }
 
+  .category {
+    h5.ui.icon.header {
+      width: 100%;
+      text-align: left;
+      margin: 0;
+
+      i.circular.icon {
+        display: inline-block;
+        margin: 0;
+        padding: 0.35em !important;
+        width: 1.7em !important;
+        height: 1.7em !important;
+      }
+
+      small {
+        position: relative;
+        top: 3px;
+        padding: 16px 10px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
   .asset-intro {
     float: none;
     width: 98%;
@@ -1162,7 +1304,7 @@ span.progress {
 
   .ui.progress.bch-progress {
     margin: 1rem 1rem 5rem !important;
-    
+
     .bar .progress {
       right: 0.15rem;
     }
@@ -1233,5 +1375,25 @@ span.progress {
   }
 }
 
+@media screen and (min-width: 768px) {
+  #top-header .title-wrap .inner-title .sub.header:first-of-type {
+    font-size: 1.3rem;
+    padding: 65px 55px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .ui.container {
+    width: auto;
+  }
+
+  .category h5.ui.icon.header small {
+    padding: 5px 3px;
+    font-size: 0.9rem;
+  }
+}
+
+
 // Imports the entire animated Bitcoin Cash logo styles
 @import 'bitcoinsvg';
+@import 'abci';
