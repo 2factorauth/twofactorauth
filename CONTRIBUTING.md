@@ -13,19 +13,36 @@ Adding a site is easy. Read below for the basics, and if you're more technically
 
 ## Submitting a site _the easy way_
 
-[Open a new issue](https://github.com/acceptbitcoincash/acceptbitcoincash/issues/new) and fill out the template that's provided as a placeholder.
-Try to fill out all of the fields as accurately as possible. They are:
+[Open a new issue](https://github.com/acceptbitcoincash/acceptbitcoincash/issues/new) and fill out the template that's provided as a placeholder. Try to fill out all of the fields as accurately as possible. We are looking for the following:
 
-- Name | `name`
-- URL (http*s* preferred) | `url`
-- Twitter Username (no @ symbol) | `twitter`
-- Facebook Username or Page URL | `facebook`
-- Logo Image (URL to PNG/JPG) | `img`
-- Accepting Bitcoin Cash | `bch`
-- Accepting Bitcoin Legacy | `btc`
-- Accepting Other Crypto | `other`
-- Documentation/Help Guides (URL) | `doc`
-- _(Optional)_ Exceptions/General Notes | `exceptions/text`
+- `name` -- Name of merchant/site
+- `url` -- URL of merchant/site (http*s* preferred)
+- `img` -- Logo Image (URL to PNG/JPG, ideally a square/circle, 32x32px)
+- `twitter` -- Twitter Username (no @ symbol)
+- `facebook` -- Facebook Username or Page URL
+- `region` -- Region (see region code list below)
+- `country` -- Country (see wikipedia link below)
+- _(Optional)_ `city` -- City (capitalize name)
+- `bch` -- Accepting Bitcoin Cash (yes/no)
+- `btc` -- Accepting Bitcoin Legacy (yes/no)
+- `othercrypto` -- Accepting Other Crypto (yes/no)
+- `doc` -- Documentation/Help Guides (URL)
+- _(Optional)_ `exceptions/text` Exceptions/General Notes
+
+For 2-letter _country_ codes, use [ISO_3166-1_alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) codes.
+
+For 2-letter _region_ codes, use:
+
+Code | Name
+-- | --
+af | Africa
+na | North America
+oc | Oceania
+an | Antarctica
+as | Asia
+eu | Europe
+sa | South America
+
 
 Press the shiny `Submit new issue` button and you'll be notified when changes to your submission occur.
 
@@ -115,13 +132,14 @@ already be defined; simply add a new website to it as shown in the following exa
 
 ```yml
 websites:
-  - name: Site Name
-    url: https://www.site.com/
-    img: site.png
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-    doc: <link to site BCH documentation>
+  - name: Site that doesn't accept BCH (yet)
+    url: https://example.site
+    img: logo.png
+    twitter: twitter_username
+    facebook: fb_username
+    bch: no
+    btc: yes
+    othercrypto: no
 ```
 
 The fields `name:`, `url:`, `img:`, `bch:` are required for all entries.
@@ -164,17 +182,17 @@ The following is an example of a website that *does not* support BCH:
       facebook: netflix
       email_address: example@netflix.com (Only if available and monitored)
       img: netflix.png
+      region: na
       bch: No
       btc: No
       othercrypto: yes
-      lang: <ISO 639-1 language code> (Only for non-English websites)
 ```
 
-The `lang:` field is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
+The `region:` field codes should be 2-character lowercase [ISO_3166-1_alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) codes.
 
 ### Exceptions & Restrictions
 
-If a site doesn't support BCH in certain countries, you can note this on the
+If a site has an exception or important detail regarding BCH, you can note this on the
 website. There are 4 ways to customize how it is displayed:
 
 1. A default message acknowledging restrictions will be used with the following
@@ -199,32 +217,6 @@ website. There are 4 ways to customize how it is displayed:
       btc: No
       exceptions:
           text: "Specific text goes here."
-      doc: <link to site BCH documentation>
-   ```
-3. The icon can be made into a link in which more details can be revealed such
-   as country specific info and anything else.
-
-   ```yml
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      bch: Yes
-      btc: No
-      exceptions:
-          link: Yes
-      doc: <link to site BCH documentation>
-   ```
-4. 2 and 3 can be combined into:
-
-   ```yml
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      bch: Yes
-      btc: No
-      exceptions:
-          link: Yes
-          text: "Specific text can go here as well."
       doc: <link to site BCH documentation>
    ```
 
