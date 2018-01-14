@@ -169,6 +169,10 @@ p {
   margin: 0 0 40px;
   padding: 30px 20px 40px;
 
+  &.adult {
+    background: rgba(24, 3, 34, 0.8);
+  }
+
   a {
     color: $link-on-dark;
 
@@ -507,7 +511,8 @@ p {
   padding: 40px 20px;
   margin-top: 4rem;
 
-  &.adult-grid {
+  &.adult {
+    background: rgba(134, 85, 181, 0.45);
     margin-bottom: 4rem;
   }
 }
@@ -559,6 +564,14 @@ p {
 
       &.active-icon {
         background-color: $orange;
+      }
+
+      &.adult {
+        border-color: #7B00AB;
+
+        &.active-icon {
+          background-color: #f0f;
+        }
       }
     }
 
