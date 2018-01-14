@@ -506,6 +506,10 @@ p {
   border-radius: 7px;
   padding: 40px 20px;
   margin-top: 4rem;
+
+  &.adult-grid {
+    margin-bottom: 4rem;
+  }
 }
 
 .ui.grid > .row {
