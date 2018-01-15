@@ -59,7 +59,7 @@ websites:
       bch: No
       twitter: Apple
       facebook: Apple
-
+      
     - name: Big W
       url: https://www.bigw.com.au/
       img: bigw.png
@@ -476,6 +476,17 @@ websites:
       facebook: overstock
       email_address: international@overstock.com
 
+    - name: P2P
+      url: https://promotebitcoincash.com
+      img: promotebitcoincash.png
+      twitter: cashening
+      region: na
+      country: US
+      city: Dallas
+      bch: yes
+      btc: no
+      othercrypto: no
+      
     - name: PC Case Gear
       url: https://www.pccasegear.com/
       twitter: pccasegear
@@ -588,7 +599,7 @@ websites:
       othercrypto: No
       exceptions:
         text: "BCH payments are accepted but only manually at this time."
-
+        
     - name: Target
       url: http://www.target.com/
       twitter: target
