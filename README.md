@@ -1,6 +1,6 @@
-![Bitcoin Cash](img/logo.png "Bitcoin Cash: A Peer-to-Peer Electronic Cash System")
+![Bitcoin Cash](img/ab.c-logo.png "Bitcoin Cash: A Peer-to-Peer Electronic Cash System")
 
-The acceptBitcoin.Cash Initiative
+_the_ **Accept Bitcoin Cash** _initiative_
 ==================
 
 A community-curated list of sites/merchants that accept [**Bitcoin Cash**](https://www.bitcoincash.org), _a peer-to-peer electronic cash system_ suitable for the digital age, and the future of online commerce.
@@ -14,9 +14,11 @@ Add a site that's not listed, or provide any updates/corrections by submitting a
 
 ## The Goal
 
-The goal is to build a website ([acceptBitcoin.cash](https://acceptBitcoin.Cash)) with a comprehensive list of sites that accept or support Bitcoin Cash, as well as Bitcoin (Legacy).
+The goal is to build a website ([https://acceptBitcoin.cash](https://acceptBitcoin.Cash)) with a comprehensive list of sites that accept or support Bitcoin Cash, as well as Bitcoin (Legacy).
 
 Our hope is to connect consumers and merchants, while spreading awareness and promoting global adoption of [Bitcoin Cash](https://www.bitcoincash.org).
+
+The site maintainers do not endorse nor confirm the legitimacy of any of the merchants linked to on this site. This is an open source project which accepts submissions from the general community. While we try our best to verify the merchant information submitted, it's possible that we may miss something.
 
 ## Contributing
 
