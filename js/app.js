@@ -100,7 +100,7 @@ $(document).ready(function () {
     $('head style').html("");
   });
 
-  $('#submit-new-issue').on('click', function () {
+  $('.submit-new').on('click', function () {
     $('.ui.long.modal.google-form').modal('show');
     return false;
   });

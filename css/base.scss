@@ -87,6 +87,7 @@ p {
       left: 7px;
       font-size: 32px;
       font-weight: bold;
+      line-height: 1.1;
       color: #fff;
     }
 
@@ -99,25 +100,31 @@ p {
       i {
         font-size: 20px;
         font-weight: normal;
+        line-height: 1.2;
         left: 14px;
       }
     }
 
     &:nth-child(2) {
-      display: none;
+      background-color: $green-mid !important;
+
+      i {
+        line-height: 1.7;
+      }
     }
 
     &:nth-child(3) {
       display: none;
-//      background-color: $green-light !important;
-      //top: -128px;
-      //left: 0;
+      //      background-color: $green-light !important;
+      top: -128px;
+      left: 0;
 
       i {
 //        color: $green-dark;
         font-size: 26px;
         top: 9px;
         left: 11px;
+        line-height: 1.2;
       }
     }
   }
@@ -1394,6 +1401,14 @@ span.progress {
   .category h5.ui.icon.header small {
     padding: 5px 3px;
     font-size: 0.9rem;
+  }
+}
+
+@media(max-width: 1024px) {
+  .fab .ui.button {
+    &::before, &::after {
+      display: none;
+    }
   }
 }
 
