@@ -1,6 +1,4 @@
-![Bitcoin Cash](img/ab.c-logo.png "Bitcoin Cash: A Peer-to-Peer Electronic Cash System")
-
-_the_ **Accept Bitcoin Cash** _initiative_
+![Bitcoin Cash](img/ab.c-logo.png "the Accept Bitcoin Cash initiative")
 ==================
 
 A community-curated list of sites/merchants that accept [**Bitcoin Cash**](https://www.bitcoincash.org), _a peer-to-peer electronic cash system_ suitable for the digital age, and the future of online commerce.
