@@ -8,11 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#F7941D">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=478559">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=478559">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=478559">
+  <link rel="manifest" href="/manifest.json?v=478559">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=478559" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon.ico?v=478559">
+  <meta name="theme-color" content="#ffffff">
 
   <meta property="og:title" content="{{ site.title }}">
   <meta property="og:type" content="website">
@@ -83,6 +85,7 @@
 </div>
 
 {% include fab.html %}
+{% include modals/add-site-form.html %}
 {% include modals/merchants.html %}
 {% include modals/customers.html %}
 {% include modals/image-assets.html %}
