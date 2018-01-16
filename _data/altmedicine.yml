@@ -1,0 +1,30 @@
+websites:
+    - name: Greenleaf Nutrients
+      url: https://greenleafnutrients.com
+      img: greenleafnutrients.png
+      twitter: greenleafnutes
+      facebook: https://www.facebook.com/GreenleafNutrients/
+      region: na
+      country: US
+      bch: yes
+      btc: no
+      othercrypto: no
+
+    - name: Kationickratom
+      url: http://www.kationickratom.com
+      img: kationickratom.png
+      bch: yes
+      btc: yes
+      othercrypto: yes
+      doc: http://kationickratom.com/lovingkratom/pago-bitcoin-altcoin/
+
+    - name: Sun Kratom
+      url: https://sunkratom.com/
+      img: sunkratom.png
+      twitter: sunkratom
+      facebook: sunkratom
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      exceptions:
+        text: "BCH payments are accepted but only manually at this time."
