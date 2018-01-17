@@ -25,6 +25,8 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+        text: "Premium account required for Duo, YubiKey and FIDO U2F."
       doc: https://help.bitwarden.com/article/setup-two-step-login/
 
     - name: Centrify
