@@ -145,7 +145,7 @@ $(document).ready(function () {
   });
 
   // Retrieve latest production version
-  getLatestRelease();
+  //getLatestRelease();
 });
 
 /**
