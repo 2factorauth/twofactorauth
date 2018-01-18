@@ -181,10 +181,11 @@ websites:
       tfa: No
 
     - name: Envato
-      url: http://envato.com
+      url: https://envato.com
       img: envato.png
-      twitter: envato
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://help.market.envato.com/hc/en-us/articles/115005592963-Two-factor-authentication-for-your-Envato-Market-account
 
     - name: Everlaw
       url: https://everlaw.com
