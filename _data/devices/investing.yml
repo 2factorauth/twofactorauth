@@ -3,7 +3,10 @@ websites:
       url: https://www.betterment.com/
       twitter: betterment
       img: betterment.png
-      tfa: No
+      tfa: Yes
+      otp: Yes
+      u2f: No
+      doc: https://help.betterment.com/hc/en-us/articles/115004260006
 
     - name: Charles Schwab
       url: https://www.schwab.com/
