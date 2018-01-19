@@ -12,7 +12,14 @@ websites:
       otp: Yes
       doc: http://server.buycraft.net/tfa
 
-    - name: GoCardless
+      - name: Dwolla
+      url: https://www.dwolla.com
+      img: dwolla.png
+      tfa: Yes
+      otp: Yes
+      doc: https://help.dwolla.com/customer/en/portal/articles/2079147-enabling-two-factor-authentication
+
+      - name: GoCardless
       img: gocardless.png
       url: https://gocardless.com/
       twitter: GoCardless
