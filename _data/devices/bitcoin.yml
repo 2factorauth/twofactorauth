@@ -87,7 +87,8 @@ websites:
       img: coinbase.png
       tfa: Yes
       otp: Yes
-      doc: http://blog.coinbase.com/post/25677574019/coinbase-now-offers-two-factor-authentication
+      u2f: No
+      doc: https://support.coinbase.com/customer/portal/articles/2820377
 
     - name: CEX.IO
       url: https://cex.io/
