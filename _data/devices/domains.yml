@@ -24,6 +24,16 @@ websites:
       otp: Yes
       doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
+    - name: ClouDNS
+      url: https://www.cloudns.net/
+      img: cloudns.png
+      tfa: Yes
+      otp: Yes
+      u2f: No
+      doc: https://www.cloudns.net/wiki/article/201/
+      twitter: ClouDNS
+      facebook: cloudns
+
     - name: Crazy Domains
       url: https://www.crazydomains.com
       img: crazydomains.png
