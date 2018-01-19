@@ -110,6 +110,12 @@ providers:
     u2f: Yes
     class: recommend
 
+  - name: OnlyKey
+    url: https://crp.to/p/
+    img: placeholder.png 
+    otp: Yes
+    uf2: Yes
+
 #  - name: PortalGuard
 #    url: http://www.portalguard.com
 #    img: portalguard.png
