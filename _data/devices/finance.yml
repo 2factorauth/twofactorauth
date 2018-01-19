@@ -27,7 +27,10 @@ websites:
       url: https://turbotax.intuit.com/
       twitter: turbotax
       img: turbotax.png
-      tfa: No
+      tfa: Yes
+      otp: Yes
+      u2f: No
+      doc: https://ttlc.intuit.com/questions/2903072
 
     - name: Kiva
       url: https://www.kiva.org
