@@ -7,15 +7,13 @@ cache:
   bundler: true
   directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 before_install: 
-    gem update --system --no-doc
-    
+    - gem update --system --no-doc
+    - docker build -t acceptbitcoincash
+    - docker run -p 4000:80 acceptbitcoincash
 matrix:
   include:
     - os: linux
       dist: trusty
-      script: 
-        - docker build -t acceptbitcoincash
-        - docker run -p 4000:80 acceptbitcoincash
-        - bundle exec rake proof_external
+      script: bundle exec rake proof_external
   allow_failures:
     - script: bundle exec rake proof_external
