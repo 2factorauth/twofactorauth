@@ -157,6 +157,15 @@ websites:
       bch: No
       btc: Yes
 
+    - name: FlokiNET
+      url: https://flokinet.is
+      img: flokinet.png
+      email_address: info@flokinet.is
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://flokinet.is/en/index.php
+
     - name: Fork Networking
       url: http://www.forked.net/
       img: forknetworking.png
@@ -423,11 +432,12 @@ websites:
     - name: QHoster
       url: https://www.qhoster.com
       img: qhoster.png
-      bch: No
+      bch: Yes
       btc: Yes
       twitter: qhostercom
       facebook: qhoster
       email_address: info@qhoster.com
+      doc: https://www.qhoster.com/payment-methods.html
 
     - name: Rackspace
       url: https://www.rackspace.com/
@@ -449,6 +459,16 @@ websites:
       facebook: site5
       img: site5.png
       bch: No
+
+    - name: Snel
+      url: https://snel.com
+      img: snel.png
+      twitter: snelcom
+      facebook: snelcom
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://www.snel.com/payment-methods/
 
     - name: Softlayer
       url: https://www.softlayer.com
@@ -517,6 +537,17 @@ websites:
       img: versio.png
       bch: No
 
+    - name: VPS City
+      url: https://vps-city.com
+      img: vpscity.png
+      twitter: vps_city
+      email_address: office@vps-city.com
+      country: SE
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://vps-city.com/
+
     - name: VPS Server
       url: https://www.vpsserver.com/
       twitter: vpsservercom
@@ -552,6 +583,17 @@ websites:
       facebook: weebly
       img: weebly.png
       bch: No
+      
+    - name: Wishosting
+      url: https://www.wishosting.com/
+      img: wishosting.png
+      twitter: wishosting
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: 
+      exceptions: 
+        text: ""
 
     - name: WP Engine
       url: https://wpengine.com/
