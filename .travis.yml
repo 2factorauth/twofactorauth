@@ -1,10 +1,14 @@
-sudo: false
+sudo: required
 language: ruby
 rvm: 2.4.0
+services:
+  - docker
 cache:
   bundler: true
   directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 before_install: gem update --system --no-doc
+    -  docker build -t acceptbitcoincash
+    -  docker run -p 4000:80 acceptbitcoincash
 matrix:
   include:
     - os: linux
@@ -14,7 +18,3 @@ matrix:
       env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   allow_failures:
     - script: bundle exec rake proof_external
-notifications:
-    email: false
-    slack:
-      secure: OB043wpK+Oje7NnO24ZFJGbtPUTKafvB/h2TkfRuiFHa8jyZ3R9+pLFL6P5zpwYYVgKwZ/xW13aY0ZU8BNh6lkR13X4azY2J/IjRXxz9eZ+MfMA3MEJpB0Fsw7T3xBAxjVEEhF3JDHx187AanOMQcMd7YCdaV+eDjFZ+/KJUn18=
