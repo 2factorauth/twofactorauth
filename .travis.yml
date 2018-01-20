@@ -13,8 +13,8 @@ matrix:
   include:
     - os: linux
       dist: trusty
-    - os: osx
+      gemfile: Gemfile
       script: bundle exec rake proof_external
-      env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+      env: NOKOGIRI_USE_SYSTEM_LIR
   allow_failures:
     - script: bundle exec rake proof_external
