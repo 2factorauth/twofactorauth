@@ -29,7 +29,9 @@ websites:
       url: http://us.norton.com
       img: norton.png
       tfa: Yes
-      doc: https://login.norton.com/sso/embedded/learn2fa
+      otp: Yes
+      u2f: Yes
+      doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us
 
     - name: OpenDNS
       url: http://www.opendns.com/
