@@ -17,4 +17,6 @@ matrix:
       gemfile: Gemfile
       env: NOKOGIRI_USE_SYSTEM_LIR
   allow_failures:
-    - script: bundle exec rake proof_external
+    - script: 
+      - bundle exec rake proof_external
+      - bundle exec rake
