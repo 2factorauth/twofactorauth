@@ -8,6 +8,7 @@ cache:
   directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 before_install: 
     - gem update --system --no-doc
+    - bundle install --gemfile=Gemfile
     - rake docker:build
 matrix:
   include:
