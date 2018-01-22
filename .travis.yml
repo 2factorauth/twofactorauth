@@ -14,13 +14,14 @@ addons:
 before_install: 
     - gem update --system --no-doc
     - bundle install --gemfile=Gemfile
-    - rake docker
 matrix:
   include:
     - os: linux
       dist: trusty
       gemfile: Gemfile
       env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+      script:
+      - rake docker:build
   allow_failures:
     - script: 
       - bundle exec rake proof_external
