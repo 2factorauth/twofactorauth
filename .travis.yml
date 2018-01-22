@@ -9,7 +9,7 @@ cache:
 before_install: 
     - gem update --system --no-doc
     - bundle install --gemfile=Gemfile
-    - rake docker:build
+    - rake docker:build --trace
 matrix:
   include:
     - os: linux
