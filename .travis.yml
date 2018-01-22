@@ -1,6 +1,8 @@
 sudo: required
 language: ruby
 rvm: 2.4.0
+python:
+  - "3.4"
 services:
   - docker
 cache:
@@ -14,6 +16,7 @@ addons:
 before_install: 
     - gem update --system --no-doc
     - bundle install --gemfile=Gemfile
+    - gem install rubypython -v 0.6.2
 matrix:
   include:
     - os: linux
