@@ -6,6 +6,11 @@ services:
 cache:
   bundler: true
   directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+    - ca-certificates
 before_install: 
     - gem update --system --no-doc
     - bundle install --gemfile=Gemfile
@@ -15,7 +20,7 @@ matrix:
     - os: linux
       dist: trusty
       gemfile: Gemfile
-      env: NOKOGIRI_USE_SYSTEM_LIR
+      env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   allow_failures:
     - script: 
       - bundle exec rake proof_external
