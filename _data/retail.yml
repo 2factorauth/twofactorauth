@@ -31,7 +31,7 @@ websites:
     - name: All Things Decentral
       url: https://allthingsdecentral.com
       img: allthingsdecentral.png
-      bch: No
+      bch: Yes
       btc: Yes
       othercrypto: Yes
       twitter: btcswag
@@ -59,7 +59,7 @@ websites:
       bch: No
       twitter: Apple
       facebook: Apple
-
+      
     - name: Big W
       url: https://www.bigw.com.au/
       img: bigw.png
@@ -72,6 +72,15 @@ websites:
       img: bitcoinbling.png
       bch: Yes
       btc: Yes
+
+    - name: Bitcoin Cash Stickers
+      url: http://bitcoincashstickers.com/
+      img: bchstickers.png
+      twitter: bchstickers
+      region: na
+      country: US
+      city: San Francisco
+      bch: yes
 
     - name: BitMain
       url: https://www.bitmain.com/
@@ -88,6 +97,17 @@ websites:
       bch: Yes
       btc: No
       othercrypto: No
+
+    - name: BitStickers
+      url: https://bitstickers.net
+      img: bitstickers.png
+      twitter: Bitstickersnet
+      facebook: bitstickersnet
+      region: na
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://bitstickers.net/bitcoin-cash-accepted-here/
 
     - name: Blanke Briefhüllen GmbH
       url: https://www.brief-huellen.de
@@ -169,6 +189,20 @@ websites:
       othercrypto: yes
       doc: https://cryptohabit.com/faq
 
+    - name: Crypto Jeweler
+      url: https://cryptojeweler.com
+      img: cryptojeweler.png
+      twitter: cryptojeweler
+      facebook: CryptoJeweler
+      email_address: sales@cryptojeweler.com
+      region: na
+      country: CA
+      city: Oshawa
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://www.cryptojeweler.com/about-us
+
     - name: CRYPTOMATIC
       url: https://cryptomatic.io
       twitter: cryptomatic_io
@@ -177,15 +211,6 @@ websites:
       bch: yes
       btc: yes
       othercrypto: yes
-
-    - name: Cryptonize.it
-      url: https://www.cryptonize.it
-      twitter: cryptonize_it
-      img: cryptonizeit.png
-      bch: yes
-      btc: no
-      othercrypto: no
-      doc: https://www.reddit.com/r/btc/comments/7jmcyz/pay_for_anything_online_with_bch_cryptonizeit/
 
     - name: Dell
       url: http://www.dell.com
@@ -426,6 +451,19 @@ websites:
       btc: no
       othercrypto: no
 
+    - name: Mineralz.nl
+      url: https://mineralz.nl
+      img: mineralz.png
+      twitter: MineralzNL
+      facebook: MineralzNL
+      email_address: info@mineralz.nl
+      region: eu
+      country: NL
+      bch: Yes
+      btc: No
+      othercrypto: No
+      doc: https://mineralz.nl/content/12-bitcoin-cash
+      
     - name: Newegg
       url: https://www.newegg.com
       img: newegg.png
@@ -467,6 +505,17 @@ websites:
       facebook: overstock
       email_address: international@overstock.com
 
+    - name: P2P
+      url: https://promotebitcoincash.com
+      img: promotebitcoincash.png
+      twitter: cashening
+      region: na
+      country: US
+      city: Dallas
+      bch: yes
+      btc: no
+      othercrypto: no
+      
     - name: PC Case Gear
       url: https://www.pccasegear.com/
       twitter: pccasegear
@@ -481,18 +530,6 @@ websites:
       bch: no
       btc: no
       othercrypto: no
-
-    - name: Purse
-      url: https://purse.io/
-      img: purse.png
-      twitter: PurseIO
-      facebook: PurseIO
-      email_address: support@purse.io?subject=BitcoinCashSupport
-      bch: No
-      btc: Yes
-      docs: https://blog.purse.io/announcement-update-bitcoin-cash/
-      exceptions:
-            text: "Withdrawal support only"
 
     - name: Rakuten
       url: https://www.rakuten.com/
@@ -568,18 +605,7 @@ websites:
       btc: yes
       othercrypto: yes
       doc: https://sugandya.com/store/crypto-accepted/
-
-    - name: Sun Kratom
-      url: https://sunkratom.com/
-      img: sunkratom.png
-      twitter: sunkratom
-      facebook: sunkratom
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      exceptions:
-        text: "BCH payments are accepted but only manually at this time."
-
+        
     - name: Target
       url: http://www.target.com/
       twitter: target

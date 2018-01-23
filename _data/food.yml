@@ -1,4 +1,15 @@
 websites:
+    - name: Artisanhoney
+      url: https://Artisanhoney.net
+      img: artisanhoney.png
+      twitter: rain_vc
+      region: as
+      country: JP
+      city: Tokyo
+      bch: yes
+      btc: no
+      othercrypto: no
+
     - name: Bar Foxx
       url: http://barfoxx.com
       img: barfoxx.png
@@ -18,6 +29,32 @@ websites:
       exceptions:
         text: "Bitcoin Cash is a manual payment at this time. Contact Bees Brothers: beesbrothers@gmail.com"
 
+    - name: Blue Apron
+      url: https://www.blueapron.com/
+      img: blueapron.png
+      twitter: blueapron
+      facebook: blueapron
+      bch: No
+      btc: No
+      othercrypto: No
+        
+    - name: Crypto Mercado
+      url: https://www.cryptomercado.com/
+      img: cryptomercado.png
+      twitter: cryptomercado1
+      facebook: cryptomercadodotcom
+      region: na
+      country: US
+      bch: yes
+      btc: yes
+      othercrypto: yes
+      
+    - name: DoorDash
+      url: https://www.doordash.com
+      img: doordash.png
+      bch: No
+      twitter: doordash
+  
     - name: Dunkin' Donuts
       url: https://www.dunkindonuts.com
       img: dunkin.png
@@ -33,14 +70,6 @@ websites:
       bch: yes
       btc: yes
       othercrypto: yes
-
-    - name: Kationickratom
-      url: http://www.kationickratom.com
-      img: kationickratom.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: http://kationickratom.com/lovingkratom/pago-bitcoin-altcoin/
 
     - name: Menufy
       url: https://www.menufy.com
@@ -68,6 +97,16 @@ websites:
       twitter: Starbucks
       facebook: Starbucks
 
+    - name: Sutton Honey
+      url: http://suttonhoney.com
+      img: SuttonHoney.png
+      region: na
+      country: CA
+      city: Sutton
+      bch: yes
+      btc: yes
+      othercrypto: yes
+      
     - name: Taco Bell
       url: https://www.tacobell.com
       img: tacobell.png
