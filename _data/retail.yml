@@ -1,7 +1,7 @@
 websites:
     - name: 1stBoards
       url: http://1stboards.world
-      facebook: https://www.facebook.com/1stboardstaiwan/
+      facebook: 1stboardstaiwan
       img: 1stboards.png
       bch: yes
       btc: no
@@ -54,7 +54,7 @@ websites:
       facebook: Amazon
 
     - name: Apple
-      url: https://appleid.apple.com
+      url: https://appleid.apple.com/#!&page=signin
       img: apple.png
       bch: No
       twitter: Apple
@@ -187,7 +187,6 @@ websites:
       bch: yes
       btc: no
       othercrypto: yes
-      doc: https://cryptohabit.com/faq
 
     - name: Crypto Jeweler
       url: https://cryptojeweler.com
@@ -354,7 +353,8 @@ websites:
 
     - name: Jet
       url: https://jet.com
-      twitter: JetHeads
+      twitter: jet
+      facebook: jet
       img: jet.png
       bch: No
 
@@ -366,7 +366,6 @@ websites:
       bch: yes
       btc: yes
       othercrypto: yes
-      doc: https://kawaiicrypto.com/about-us-kawaii-crypto-vinyl-stickers
 
     - name: Kimchisocks
       url: https://kimchisocks.com/
@@ -423,7 +422,7 @@ websites:
       facebook: lowes
 
     - name: Macy's
-      url: http://www.macys.com/
+      url: https://www.macys.com/
       twitter: macys
       facebook: Macys
       img: macys.png
@@ -564,14 +563,13 @@ websites:
 
     - name: Select Woodcraft
       url: https://www.selectwoodcraft.com
-      twitter: SelectWoodcraft
       facebook: SelectWoodcraft
       img: selectwoodcraft.png
       bch: yes
       btc: yes
       othercrypto: yes
       exceptions:
-            text: "When buying something from this shop select 'other payment options' during checkout, then message the shop owner expressing your interest in paying with Bitcoin Cash!"
+        text: "When buying something from this shop select 'other payment options' during checkout, then message the shop owner expressing your interest in paying with Bitcoin Cash!"
 
     - name: Sierra Trading Post
       url: http://www.sierratradingpost.com
@@ -634,7 +632,7 @@ websites:
       bch: No
 
     - name: Wayfair
-      url: http://www.wayfair.com
+      url: https://www.wayfair.com/
       img: wayfair.png
       bch: No
       twitter: Wayfair
