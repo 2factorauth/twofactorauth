@@ -43,8 +43,10 @@
             <div class="title">
               {% if website.img %}
                 <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-                <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
-                     alt="{{ website.name }}">
+                <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+              {% else %}
+                <noscript><img src="/img/placeholder.png" class="icon" alt="{{ website.name }}"></noscript>
+                <img src="/img/placeholder.png" data-src="/img/placeholder.png" class="icon">
               {% endif %}
               <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
               {% include exception.html website=website %}
@@ -64,6 +66,9 @@
               {% if website.img %}
                 <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
                 <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+              {% else %}
+                <noscript><img src="/img/placeholder.png" class="icon" alt="{{ website.name }}"></noscript>
+                <img src="/img/placeholder.png" data-src="/img/placeholder.png" class="icon">
               {% endif %}
               <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
               {% include exception.html website=website %}
@@ -111,8 +116,10 @@
             <div class="title">
               {% if website.img %}
                 <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-                <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
-                     alt="{{ website.name }}">
+                <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
+              {% else %}
+                <noscript><img src="/img/placeholder.png" class="icon" alt="{{ website.name }}"></noscript>
+                <img src="/img/placeholder.png" data-src="/img/placeholder.png" class="icon">
               {% endif %}
               <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
               {% include exception.html website=website %}
