@@ -208,7 +208,7 @@ websites:
       phone: Yes
       hardware: Yes
       exceptions:
-            text: Yubikey (FIDO) is trivially bypassed by checking "I forgot my device, use SMS instead"
+            text: SMS option is required, U2F/FIDO (Yubikey) cannot be used without an option to login with SMS
       doc: https://personal.vanguard.com/us/insights/article/security-codes-112015
 
     - name: Wealthfront
