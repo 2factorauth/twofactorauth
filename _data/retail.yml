@@ -353,7 +353,8 @@ websites:
 
     - name: Jet
       url: https://jet.com
-      twitter: JetHeads
+      twitter: jet
+      facebook: jet
       img: jet.png
       bch: No
 
@@ -365,7 +366,6 @@ websites:
       bch: yes
       btc: yes
       othercrypto: yes
-      doc: https://kawaiicrypto.com/about-us-kawaii-crypto-vinyl-stickers
 
     - name: Kimchisocks
       url: https://kimchisocks.com/
@@ -563,14 +563,13 @@ websites:
 
     - name: Select Woodcraft
       url: https://www.selectwoodcraft.com
-      twitter: SelectWoodcraft
       facebook: SelectWoodcraft
       img: selectwoodcraft.png
       bch: yes
       btc: yes
       othercrypto: yes
       exceptions:
-            text: "When buying something from this shop select 'other payment options' during checkout, then message the shop owner expressing your interest in paying with Bitcoin Cash!"
+        text: "When buying something from this shop select 'other payment options' during checkout, then message the shop owner expressing your interest in paying with Bitcoin Cash!"
 
     - name: Sierra Trading Post
       url: http://www.sierratradingpost.com
