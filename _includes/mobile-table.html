@@ -38,7 +38,7 @@
         <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
         {% else %}
         <noscript><img src="/img/placeholder.png" class="icon" alt="{{ website.name }}"></noscript>
-        <img src="/img/placeholder.png" data-src="/img/placeholder.png" class="icon">
+        <img src="/img/placeholder.png" data-src="/img/placeholder.png" class="icon" alt="{{ website.name }}">
         {% endif %}
         <a href="{{ website.url }}" class="name">{{ website.name }}</a>
         {% include exception.html website=website %}
@@ -62,7 +62,7 @@
         <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
         {% else %}
         <noscript><img src="/img/placeholder.png" class="icon" alt="{{ website.name }}"></noscript>
-        <img src="/img/placeholder.png" data-src="/img/placeholder.png" class="icon">
+        <img src="/img/placeholder.png" data-src="/img/placeholder.png" class="icon" alt="{{ website.name }}">
         {% endif %}
         <a href="{{ website.url }}" target="_blank" class="name">{{ website.name }}</a>
         {% include exception.html website=website %}
@@ -105,7 +105,7 @@
         <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
         {% else %}
         <noscript><img src="/img/placeholder.png" class="icon" alt="{{ website.name }}"></noscript>
-        <img src="/img/placeholder.png" data-src="/img/placeholder.png" class="icon">
+        <img src="/img/placeholder.png" data-src="/img/placeholder.png" class="icon" alt="{{ website.name }}">
         {% endif %}
         <a href="{{ website.url }}" target="_blank" class="name">{{ website.name }}</a>
         {% include exception.html website=website %}
