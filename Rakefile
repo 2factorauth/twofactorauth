@@ -18,7 +18,10 @@ task proof: 'build' do
     './_site', \
     assume_extension: true, \
     check_html: true, \
-    disable_external: true
+    disable_external: true, \
+	log_level: 'debug', \
+	url_ignore: ['/add'], \
+	verbose: true
   ).run
 end
 
@@ -27,8 +30,13 @@ task proof_external: 'build' do
     './_site', \
     assume_extension: true, \
     check_html: true, \
+	external_only: false, \
+	verbose: true, \
+	log_level: 'info', \
+	url_ignore: ['/add'], \
+	http_status_ignore: [0, 301, 302, 403, 503], \
     cache: { timeframe: '1w' }, \
-    hydra: { max_concurrency: 12 }
+    hydra: { max_concurrency: 1 }
   ).run
 end
 
@@ -42,7 +50,7 @@ namespace :docker do
     puts "Generating static files for nginx"
     puts `bundle exec jekyll build`
     puts "Building acceptbitcoincash docker image"
-    puts `docker build -t acceptbitcoincash/acceptbitcoincash .`
+    puts `docker build -t kenman345/acceptbitcoincash .`
   end
 end
 
