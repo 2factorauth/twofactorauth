@@ -57,7 +57,7 @@
               </a>
             </div>
           </td>
-          <td class="twitter progress" colspan="6">
+          <td class="twitter progress" colspan="4">
             <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="top center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress}}</a>
           </td>
         {% elsif website.bch or website.btc %}
@@ -125,7 +125,7 @@
               {% include exception.html website=website %}
             </div>
           </td>
-          <td class="twitter negative" colspan="6">
+          <td class="twitter negative" colspan="4">
           {% if website.twitter %} <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="left center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}" target="_blank"><i class="twitter big icon"></i></a>{% endif %}
           {% if website.facebook %} <a data-tooltip="{{page.link_facebook|replace:'@FACEBOOKHANDLE',website.name}}" data-position="right center" data-inverted=""  class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook big icon"></i></a>{%endif%}
           {% if website.email_address %} <a data-tooltip="Send an e-mail to {{website.name}}" data-position="right center" data-inverted=""  class="ui green mini button" href="mailto:{{website.email_address}}?subject={{page.email_subject}}"><i class="mail big icon"></i></a>{% endif %}
