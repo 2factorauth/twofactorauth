@@ -74,13 +74,15 @@ hash: acceptBitcoinCash
       </div>
       <div class="bch-only">
         <div id="search-wrapper">
-          <label for="bch-merchant-search">
+          <div class="search-input-wrapper">
             <i id="search-icon" class="search icon"></i>
-            <input type="search" id="bch-merchant-search" placeholder="Search by merchant name" autocomplete="off" spellcheck="false" tabindex="0">
+            <label for="bch-merchant-search">
+              <input type="search" id="bch-merchant-search" placeholder="Search by merchant name" autocomplete="off" spellcheck="false" tabindex="0">
+            </label>
             <button id="search-clear">
               <i class="remove icon"></i>
             </button>
-          </label>
+          </div>
           <label for="show-bch-only" class="z-switch">
             <input type="checkbox" checked id="show-bch-only">
               <div class="z-switch--container">
