@@ -184,6 +184,14 @@ p {
     }
   }
 
+  button a {
+    color: #eee;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
   h2 {
     color: #fff;
     font-weight: 500;
