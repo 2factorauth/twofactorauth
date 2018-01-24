@@ -5,6 +5,7 @@ A community-curated list of sites/merchants that accept [**Bitcoin Cash**](https
 
 Add a site that's not listed, or provide any updates/corrections by submitting a pull request, or [creating an issue](https://github.com/acceptbitcoincash/acceptbitcoincash/issues). Learn how to do either by reading [our contribution guidelines](CONTRIBUTING.md).
 
+[![Build Status](https://travis-ci.org/acceptbitcoincash/acceptbitcoincash.svg?branch=master)](https://travis-ci.org/acceptbitcoincash/acceptbitcoincash)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/acceptbitcoincash/acceptbitcoincash.svg)](https://github.com/acceptbitcoincash/acceptbitcoincash/pulls/)
 [![GitHub issues-closed](https://img.shields.io/github/issues-closed/acceptbitcoincash/acceptbitcoincash.svg)](https://github.com/acceptbitcoincash/acceptbitcoincash/issues?q=is%3Aissue+is%3Aclosed)
 [![Twitter](https://img.shields.io/badge/Twitter-@useBitcoinCash-blue.svg)](https://twitter.com/useBitcoinCash)
