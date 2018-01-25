@@ -7,7 +7,8 @@ services:
   - docker
 cache:
   bundler: true
-  directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+  directories: 
+  - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 addons:
   apt:
     packages:
@@ -28,3 +29,11 @@ matrix:
       - bundle exec rake proof_external
       allow_failures:
       - script: bundle exec rake proof_external
+      
+notifications:
+  slack:
+    rooms:
+      - secure: "Hye8CU0SgweLlHMWXmMW2dXo4g8HS5TTD+bgYDCmCwxANgNZVSvnSuqZvLHgbnjyhVuAhntoucxpuJrbM0LdBX2rrGUYriC5kTlkbZD9uGyBwsLEmggWC5LtI8WbpKBP+tKDecZb7DrbNblh7uV3NN483o/daVIO+zwlgzo6MMaLNy6omQbdy/Iofr777CS8NB42OQd+fTcC0h8Vb2r35PDWGmQJF2gTQouFfFCoYWwgrZ3XhPZUdKO1HGzIayaWh3Kizc1MPziwMugcPrKElV574Zpv7yqQ0hZiadC4EGRpMtwl8pnv0mUi+dFUu2Gv/XfIR3hXKewIsMOh+3jD/56zcJuPHH2rNFqYQYaCcBkVcntYIHOcSPvrGCfU4z/WiF0VpiTwaC8qyQv7awKXlYdZkk550UwnVfHHP3IVeSCn0diotCTKsilQOLe5htF/Q4L9i1gCwLbQQCSBYDscdmFGPmz41SgDaib5JDn8ByD3YOyAAUtqC2lTU1rqnd2E7VWawbMMzsQEAoumGdR472lS8VPUOr7uNygrdNZi3W7jDcznjI4Aa2IQDrtobQl0YjbRZ9BCO6N1trycL4kgvrXHpaBtPQGScFpaotEqj0uljnNEK5yozFXLZEymqENrZTElEkc5Fk0UzOemJsSGv4aUMkA8/Fh5x0pvWHdG2Dc="
+    on_success: change
+    on_failure: always
+    on_pull_requests: always
