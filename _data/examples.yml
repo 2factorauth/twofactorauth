@@ -1,78 +1,78 @@
 websites:
-  - name: <em><i class="info circle icon"></i>see <b>/_data/examples.yml</b> for how this example list is built</em>
-  - name: NOT accepting any crypto (need at least Twitter/Facebook handle, or e-mail)
-    url: http://acceptbitcoin.cash
-    img: exampleicon.png
-    twitter: usebitcoincash
+    - name: <em><i class="info circle icon"></i>see <b>/_data/examples.yml</b> for how this example list is built</em>
+    - name: NOT accepting any crypto (need at least Twitter/Facebook handle, or e-mail)
+      url: http://acceptbitcoin.cash
+      img: exampleicon.png
+      twitter: usebitcoincash
 
-  - name: NOT accepting any crypto (e-mail)
-    url: http://acceptbitcoin.cash
-    img: exampleicon.png
-    email_address: false@e.mail
+    - name: NOT accepting any crypto (e-mail)
+      url: http://acceptbitcoin.cash
+      img: exampleicon.png
+      email_address: false@e.mail
 
-  - name: Accepting Bitcoin ONLY
-    url: http://acceptbitcoin.cash
-    img: exampleicon.png
-    twitter: usebitcoincash
-    facebook: usebitcoincash
-    bch: No
-    btc: Yes
-    othercrypto: No
-    doc: http://acceptbitcoin.cash
+    - name: Accepting Bitcoin ONLY
+      url: http://acceptbitcoin.cash
+      img: exampleicon.png
+      twitter: usebitcoincash
+      facebook: usebitcoincash
+      bch: No
+      btc: Yes
+      othercrypto: No
+      doc: http://acceptbitcoin.cash
 
-  - name: Accepting Bitcoin Cash
-    url: http://acceptbitcoin.cash
-    img: exampleicon.png
-    twitter: usebitcoincash
-    facebook: usebitcoincash
-    bch: Yes
-    btc: No
-    othercrypto: No
-    doc: http://acceptbitcoin.cash
-    exceptions:
-      text: "Example text which shows on a hover of the caution icon, next to name."
+    - name: Accepting Bitcoin Cash
+      url: http://acceptbitcoin.cash
+      img: exampleicon.png
+      twitter: usebitcoincash
+      facebook: usebitcoincash
+      bch: Yes
+      btc: No
+      othercrypto: No
+      doc: http://acceptbitcoin.cash
+      exceptions:
+        text: "Example text which shows on a hover of the caution icon, next to name."
 
-  - name: Accepting Other Crypto
-    url: http://acceptbitcoin.cash
-    img: exampleicon.png
-    twitter: usebitcoincash
-    facebook: usebitcoincash
-    bch: No
-    btc: No
-    othercrypto: Yes
-    doc: http://acceptbitcoin.cash
-    exceptions:
-      text: "Example text which shows on a hover of the caution icon, next to name."
+    - name: Accepting Other Crypto
+      url: http://acceptbitcoin.cash
+      img: exampleicon.png
+      twitter: usebitcoincash
+      facebook: usebitcoincash
+      bch: No
+      btc: No
+      othercrypto: Yes
+      doc: http://acceptbitcoin.cash
+      exceptions:
+        text: "Example text which shows on a hover of the caution icon, next to name."
 
-  - name: Accepting Bitcoin Cash and Bitcoin
-    url: http://acceptbitcoin.cash
-    img: exampleicon.png
-    twitter: usebitcoincash
-    facebook: usebitcoincash
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-    doc: http://acceptbitcoin.cash
+    - name: Accepting Bitcoin Cash and Bitcoin
+      url: http://acceptbitcoin.cash
+      img: exampleicon.png
+      twitter: usebitcoincash
+      facebook: usebitcoincash
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      doc: http://acceptbitcoin.cash
 
-  - name: Accepting Other Cryptocurrency (with exception text/icon)
-    url: http://acceptbitcoin.cash
-    img: exampleicon.png
-    twitter: usebitcoincash
-    facebook: usebitcoincash
-    bch: No
-    btc: No
-    othercrypto: Yes
-    doc: http://acceptbitcoin.cash
-    exceptions:
-      text: "This is placeholder/example text which shows on a hover of the caution icon, next to name."
+    - name: Accepting Other Cryptocurrency (with exception text/icon)
+      url: http://acceptbitcoin.cash
+      img: exampleicon.png
+      twitter: usebitcoincash
+      facebook: usebitcoincash
+      bch: No
+      btc: No
+      othercrypto: Yes
+      doc: http://acceptbitcoin.cash
+      exceptions:
+        text: "This is placeholder/example text which shows on a hover of the caution icon, next to name."
 
-  - name: In-Process of implementing Bitcoin Cash
-    url: http://acceptbitcoin.cash
-    img: exampleicon.png
-    twitter: usebitcoincash
-    facebook: usebitcoincash
-    bch: No
-    btc: No
-    othercrypto: No
-    doc: http://acceptbitcoin.cash
-    status: http://acceptbitcoin.cash
+    - name: In-Process of implementing Bitcoin Cash
+      url: http://acceptbitcoin.cash
+      img: exampleicon.png
+      twitter: usebitcoincash
+      facebook: usebitcoincash
+      bch: No
+      btc: No
+      othercrypto: No
+      doc: http://acceptbitcoin.cash
+      status: http://acceptbitcoin.cash

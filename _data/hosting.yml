@@ -118,14 +118,6 @@ websites:
       btc: Yes
       othercrypto: Yes
 
-    - name: dediserve
-      url: https://dediserve.com
-      img: dediserve.png
-      bch: No
-      twitter: dediserve
-      facebook: dediserve
-      doc: https://manage.dediserve.com/knowledgebase/article/22/what-payment-methods-are-supported-/
-
     - name: Dreamhost
       url: https://dreamhost.com
       img: dreamhost.png
@@ -156,6 +148,15 @@ websites:
       twitter: feralstatus
       bch: No
       btc: Yes
+
+    - name: FlokiNET
+      url: https://flokinet.is
+      img: flokinet.png
+      email_address: info@flokinet.is
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://flokinet.is/en/index.php
 
     - name: Fork Networking
       url: http://www.forked.net/
@@ -201,7 +202,7 @@ websites:
       facebook: HostHatch
 
     - name: ICUK
-      url: https://icuk.net
+      url: https://www.icuk.net/
       img: icuk.png
       bch: No
       twitter: icuknet
@@ -386,7 +387,7 @@ websites:
     - name: One.com
       url: https://www.one.com/
       twitter: onecom
-      facebook: onecome
+      facebook: onecom
       img: onecom.png
       bch: No
 
@@ -423,11 +424,12 @@ websites:
     - name: QHoster
       url: https://www.qhoster.com
       img: qhoster.png
-      bch: No
+      bch: Yes
       btc: Yes
       twitter: qhostercom
       facebook: qhoster
       email_address: info@qhoster.com
+      doc: https://www.qhoster.com/payment-methods.html
 
     - name: Rackspace
       url: https://www.rackspace.com/
@@ -450,12 +452,15 @@ websites:
       img: site5.png
       bch: No
 
-    - name: Softlayer
-      url: https://www.softlayer.com
-      twitter: IBMBluemixIaaS
-      facebook: IBMBluemixIaaS
-      img: softlayer.png
-      bch: No
+    - name: Snel
+      url: https://snel.com
+      img: snel.png
+      twitter: snelcom
+      facebook: snelcom
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://www.snel.com/payment-methods/
 
     - name: SporeStack
       url: https://sporestack.com
@@ -476,7 +481,7 @@ websites:
     - name: Time4VPS
       url: https://www.time4vps.eu/
       twitter: time4vps
-      facebook: vpshostingservereurope
+      facebook: time4vps
       img: time4vps.png
       bch: No
       btc: Yes
@@ -516,6 +521,17 @@ websites:
       twitter: versio
       img: versio.png
       bch: No
+
+    - name: VPS City
+      url: https://vps-city.com
+      img: vpscity.png
+      twitter: vps_city
+      email_address: office@vps-city.com
+      country: SE
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://vps-city.com/
 
     - name: VPS Server
       url: https://www.vpsserver.com/
@@ -570,3 +586,13 @@ websites:
       facebook: wpengine
       img: wpengine.png
       bch: No
+
+    - name: Yourserver.se
+      url: https://www.yourserver.se/
+      img: yourserver.png
+      twitter: yourserverse
+      facebook: yourserverse
+      email_address: tanja@yourserver.se
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
