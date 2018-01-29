@@ -263,6 +263,8 @@ websites:
       bch: Yes
       btc: Yes
       othercrypto: No
+      exceptions:
+            text: "Select All Non Credit Card Payments, PayPal Cash Transfers, Direct Bank Deposit, Wire Cash Transfers or Bitcoin at the checkout"
 
     - name: GamersGate
       url: https://www.gamersgate.com/
