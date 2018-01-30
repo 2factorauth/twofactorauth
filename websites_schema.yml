@@ -17,13 +17,17 @@ mapping:
             unique: yes
           "img":
             type: str
+            pattern: /\.png$/i
           "bch":
             type: bool
             required: yes
+            pattern: /(true|false)/
           "btc":
             type: bool
+            pattern: /(true|false)/
           "othercrypto":
             type: bool
+            pattern: /(true|false)/
           "exceptions":
             type: map
             mapping:
@@ -52,5 +56,7 @@ mapping:
           "country":
             type: str
             pattern: /(\w){2}$/
+          "state":
+            type: str
           "city": 
             type: str
