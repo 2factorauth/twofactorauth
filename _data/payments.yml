@@ -38,13 +38,6 @@ websites:
       btc: No
       othercrypto: No
 
-    - name: Coinify
-      url: https://coinify.com
-      img: coinify.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
     - name: Coin Simple
       url: https://coinsimple.com
       img: coinsimple.png
@@ -52,6 +45,13 @@ websites:
       facebook: coinsimple
       bch: No
       btc: Yes
+
+    - name: Coinify
+      url: https://coinify.com
+      img: coinify.png
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: CoinPayments
       url: https://www.coinpayments.net/
