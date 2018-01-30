@@ -90,7 +90,7 @@ def process_sections_file(path)
 	  error("#{img} is not used") 
     end	  
 	
-	puts "  No errors found\n" if @output == err_count 
+	#puts "  No errors found\n" if @output == err_count 
   end
 end
 
