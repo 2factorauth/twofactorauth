@@ -23,14 +23,13 @@ matrix:
   include:
     - env: build_docker=true
       script:
+      - bundle exec rake verify
       - rake docker:build
     - env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
       script:
-      - bundle exec rake verify
       - bundle exec rake proof_external
   allow_failures:
     - script: 
-      - bundle exec rake verify
       - bundle exec rake proof_external
 notifications:
   slack:
