@@ -28,10 +28,10 @@ matrix:
       script:
       - bundle exec rake verify
       - bundle exec rake proof_external
-      allow_failures:
-      - script: 
-        - bundle exec rake verify
-        - bundle exec rake proof_external
+  allow_failures:
+    - script: 
+      - bundle exec rake verify
+      - bundle exec rake proof_external
 notifications:
   slack:
     rooms:
