@@ -26,8 +26,8 @@ matrix:
       - rake docker:build
     - env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
       script:
-      - bundle exec rake proof_external
       - bundle exec rake verify
+      - bundle exec rake proof_external
   allow_failures:
     - script: 
       - bundle exec rake proof_external
