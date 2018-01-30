@@ -1,6 +1,7 @@
 sudo: required
 language: ruby
 rvm: 2.4.0
+os: linux
 python:
   - "3.4"
 services:
@@ -20,16 +21,15 @@ before_install:
     - pip install --user pathlib
 matrix:
   include:
-    - os: linux
-      dist: trusty
-      gemfile: Gemfile
-      env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - env: build_docker=true
       script:
       - rake docker:build
+    - env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+      script:
       - bundle exec rake proof_external
-      allow_failures:
-      - script: bundle exec rake proof_external
-
+      - bundle exec rake verify
+  allow_failures:
+    - script: bundle exec rake proof_external
 notifications:
   slack:
     rooms:

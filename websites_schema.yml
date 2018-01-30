@@ -17,16 +17,13 @@ mapping:
             unique: yes
           "img":
             type: str
-            required: yes
           "bch":
             type: bool
-            pattern: /true/
+            required: yes
           "btc":
             type: bool
-            pattern: /true/
           "othercrypto":
             type: bool
-            pattern: /true/
           "exceptions":
             type: map
             mapping:
