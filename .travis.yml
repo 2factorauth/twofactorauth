@@ -30,6 +30,7 @@ matrix:
       - bundle exec rake verify
   allow_failures:
     - script: bundle exec rake proof_external
+    - script: bundle exec rake verify
 notifications:
   slack:
     rooms:
