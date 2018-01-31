@@ -61,7 +61,7 @@ def process_sections_file(path)
   err_count = @output
   sections = YAML.load_file(path)
   puts "Processing: #{path}\n"
-  
+
   # Check sections.yml alphabetization
   error("#{path} is not alphabetized by name") \
     if sections != (sections.sort_by { |section| section['id'].downcase })
@@ -79,7 +79,7 @@ def process_sections_file(path)
     # Check section alphabetization
     error("_data/#{section['id']}.yml is not alphabetized by name") \
       if websites != (websites.sort_by { |website| website['name'].downcase })
-	  
+
 	outputOrdered(websites.sort_by { |website| website['name'].downcase }) \
       if websites != (websites.sort_by { |website| website['name'].downcase })
 
@@ -93,13 +93,13 @@ def process_sections_file(path)
 
     # After removing images associated with entries in test_img, alert
     # for unused or orphaned images
-    imgs.each do |img| 
-	  next unless img.nil? 
-	  error("#{img} is not used") 
-    end	  
+    imgs.each do |img|
+	  next unless img.nil?
+	  error("#{img} is not used")
+    end
   end
-  
-  puts "  No errors found\n" if @output == err_count 
+
+  puts "  No errors found\n" if @output == err_count
 end
 
 
@@ -111,8 +111,8 @@ begin
   #end
 
   process_sections_file('_data/sections.yml')
-  #process_sections_file('_data/adult-sections.yml')
-  
+  process_sections_file('_data/adult-sections.yml')
+
   exit 1 if @output > 0
 rescue Psych::SyntaxError => e
   puts "<------------ ERROR in a YAML file ------------>\n"
