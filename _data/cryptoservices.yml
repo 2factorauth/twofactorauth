@@ -95,13 +95,6 @@ websites:
       btc: Yes
       othercrypto: No
 
-    - name: CoinMarketCap
-      url: https://coinmarketcap.com/
-      img: coinmarketcap.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
     - name: Coinjar
       url: https://coinjar.com
       img: coinjar.png
@@ -115,6 +108,13 @@ websites:
       exceptions:
         text: "Coinjar has enabled Bitcoin Cash withdrawal but does not yet offer full support."
 
+    - name: CoinMarketCap
+      url: https://coinmarketcap.com/
+      img: coinmarketcap.png
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+
     - name: CoinMix
       url: https://coinmix.to/
       img: coinmix.png
@@ -122,16 +122,16 @@ websites:
       btc: No
       othercrypto: No
 
-    - name: Coins.ph
-      url: https://coins.ph/
-      img: coinsph.png
+    - name: Coins.co.th
+      url: https://coins.co.th/
+      img: coinscoth.png
       bch: No
       btc: Yes
       othercrypto: Yes
 
-    - name: Coins.co.th
-      url: https://coins.co.th/
-      img: coinscoth.png
+    - name: Coins.ph
+      url: https://coins.ph/
+      img: coinsph.png
       bch: No
       btc: Yes
       othercrypto: Yes
@@ -217,6 +217,17 @@ websites:
       btc: Yes
       othercrypto: Yes
       doc: https://www.keys4coins.com/bitcoin-cash-accepted-here/
+      
+    - name: Living Room of Satoshi
+      url: https://www.livingroomofsatoshi.com/
+      img: livingroom.png
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      
+    - name: LocalBitcoinCash
+      url: https://localbitcoincash.org
+      bch: Yes
 
     - name: LocalBitcoins
       url: https://localbitcoins.com/
@@ -228,25 +239,13 @@ websites:
       twitter: LocalBitcoins
       email_address: support@localbitcoins.com
 
-    - name: LocalBitcoinCash
-      url: https://localbitcoincash.org
-      bch: Yes
-
-    - name: Living Room of Satoshi
-      url: https://www.livingroomofsatoshi.com/
-      img: livingroom.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
     - name: Open Bazaar
       url: https://www.openbazaar.org/
       img: openbazaar.png
       twitter: openbazaar
-      bch: No
+      bch: yes
       btc: Yes
       othercrypto: Yes
-      status: https://www.reddit.com/r/OpenBazaar/comments/6vv16q/would_anyone_here_be_interested_in_ob_forking_the/dm4bwql/
 
     - name: Pastecoin
       url: https://www.pastecoin.com
@@ -272,16 +271,15 @@ websites:
       othercrypto: yes
       doc: https://www.privcoin.io/bitcoincash/
 
-
     - name: Purse
       url: https://purse.io/
       img: purse.png
       twitter: PurseIO
       facebook: PurseIO
-      email_address: support@purse.io?subject=BitcoinCashSupport
+      email_address: support@purse.io
       bch: No
       btc: Yes
-      docs: https://blog.purse.io/announcement-update-bitcoin-cash/
+      doc: https://blog.purse.io/announcement-update-bitcoin-cash/
       exceptions:
         text: "Withdrawal support only"
 

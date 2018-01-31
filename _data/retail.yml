@@ -98,14 +98,6 @@ websites:
       btc: Yes
       othercrypto: Yes
 
-    - name: BitVapes
-      url: https://bitvapes.com
-      img: bitvapes.png
-      twitter: bitvapes
-      bch: Yes
-      btc: No
-      othercrypto: No
-
     - name: BitStickers
       url: https://bitstickers.net
       img: bitstickers.png
@@ -116,6 +108,14 @@ websites:
       btc: Yes
       othercrypto: Yes
       doc: https://bitstickers.net/bitcoin-cash-accepted-here/
+
+    - name: BitVapes
+      url: https://bitvapes.com
+      img: bitvapes.png
+      twitter: bitvapes
+      bch: Yes
+      btc: No
+      othercrypto: No
 
     - name: Blanke Briefhüllen GmbH
       url: https://www.brief-huellen.de
@@ -188,14 +188,6 @@ websites:
       btc: yes
       othercrypto: yes
 
-    - name: Cryptohabit
-      url: https://cryptohabit.com
-      twitter: theantnest
-      img: cryptohabit.png
-      bch: yes
-      btc: no
-      othercrypto: yes
-
     - name: Crypto Jeweler
       url: https://cryptojeweler.com
       img: cryptojeweler.png
@@ -209,6 +201,14 @@ websites:
       btc: Yes
       othercrypto: Yes
       doc: https://www.cryptojeweler.com/about-us
+
+    - name: Cryptohabit
+      url: https://cryptohabit.com
+      twitter: theantnest
+      img: cryptohabit.png
+      bch: yes
+      btc: no
+      othercrypto: yes
 
     - name: CRYPTOMATIC
       url: https://cryptomatic.io
@@ -564,6 +564,12 @@ websites:
       btc: yes
       othercrypto: yes
 
+    - name: Rakuten
+      url: https://www.rakuten.com/
+      twitter: AskRakutenUS
+      img: rakuten.png
+      bch: No
+
     - name: Renjer Wild Jerky
       url: https://www.renjer.ky
       img: renjer.png
@@ -575,12 +581,6 @@ websites:
       btc: Yes
       othercrypto: Yes
       doc: https://www.reddit.com/r/Bitcoincash/comments/7r8l4s/our_company_producing_wild_jerky_out_of_reindeer/
-
-    - name: Rakuten
-      url: https://www.rakuten.com/
-      twitter: AskRakutenUS
-      img: rakuten.png
-      bch: No
 
     - name: Reservoir Mugs
       url: https://reservoirmugs.com

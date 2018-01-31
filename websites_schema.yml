@@ -12,21 +12,22 @@ mapping:
             unique: yes
           "url":
             type: str
-            pattern: /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/
+            pattern: /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,8}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)/
             required: yes
             unique: yes
           "img":
             type: str
-            required: yes
+            pattern: /\.png$/i
           "bch":
             type: bool
-            pattern: /true/
+            required: yes
+            pattern: /(true|false)/
           "btc":
             type: bool
-            pattern: /true/
+            pattern: /(true|false)/
           "othercrypto":
             type: bool
-            pattern: /true/
+            pattern: /(true|false)/
           "exceptions":
             type: map
             mapping:
@@ -46,6 +47,16 @@ mapping:
             pattern: /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
           "status":
             type: str
-            pattern: /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/
+            pattern: /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,8}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)/
           "lang":
+            type: str
+          "region":
+            type: str
+            pattern: /(\w){2}$/
+          "country":
+            type: str
+            pattern: /(\w){2}$/
+          "state":
+            type: str
+          "city": 
             type: str
