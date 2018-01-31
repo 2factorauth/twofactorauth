@@ -32,7 +32,7 @@ websites:
       bch: No
       twitter: curseapp
       facebook: curseapp
-      
+
     - name: Elder Scrolls Online
       url: http://www.elderscrollsonline.com/
       img: eso.png
@@ -108,7 +108,6 @@ websites:
     - name: Guild Wars 2
       url: https://www.guildwars2.com
       img: guildwars2.png
-      sms: Yes
       bch: No
       twitter: GuildWars2
       facebook: GuildWars2
@@ -139,14 +138,14 @@ websites:
       img: keymarket.png
       btc: No
       bch: Yes
-      
+
     - name: League of Legends
       url: http://leagueoflegends.com
       img: leagueoflegends.png
       bch: No
       twitter: leagueoflegends
       facebook: leagueoflegends
-      
+
     - name: LucKey Productions
       url: https://luckeyproductions.nl
       img: luckeyproductions.png
@@ -173,7 +172,7 @@ websites:
       bch: No
       twitter: NVIDIA
       facebook: NVIDIA
-      
+
     - name: Origin
       url: https://www.origin.com/
       img: origin.png
@@ -238,7 +237,7 @@ websites:
       twitter: Steam_Games
       facebook: Steam
       exceptions:
-            text: "Steam used to accept Bitcoin Legacy, but announced it would discontinue doing so on 2017-12-06, due to high fees and volatility in the value of Bitcoin."
+        text: "Steam used to accept Bitcoin Legacy, but announced it would discontinue doing so on 2017-12-06, due to high fees and volatility in the value of Bitcoin."
 
     - name: Steam Game Keys
       url: https://steamgamekeys.com/

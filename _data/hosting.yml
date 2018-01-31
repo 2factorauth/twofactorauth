@@ -353,12 +353,6 @@ websites:
       othercrypto: yes
       doc: https://twitter.com/Nexwave/status/948650799281917957
 
-    - name: Nitrado
-      url: https://server.nitrado.net/
-      img: nitrado.png
-      bch: No
-      twitter: nitrado_en
-
     - name: NiceVPS.net
       url: https://nicevps.net
       img: nicevps.png
@@ -366,6 +360,12 @@ websites:
       btc: yes
       othercrypto: yes
       doc: https://nicevps.net/index/payments
+      
+    - name: Nitrado
+      url: https://server.nitrado.net/
+      img: nitrado.png
+      bch: No
+      twitter: nitrado_en
 
     - name: Noez
       url: https://noez.de/
@@ -568,7 +568,7 @@ websites:
       facebook: weebly
       img: weebly.png
       bch: No
-      
+
     - name: Wishosting
       url: https://www.wishosting.com/
       img: wishosting.png
@@ -576,8 +576,8 @@ websites:
       bch: Yes
       btc: Yes
       othercrypto: Yes
-      doc: 
-      exceptions: 
+      doc:
+      exceptions:
         text: ""
 
     - name: WP Engine
@@ -586,3 +586,13 @@ websites:
       facebook: wpengine
       img: wpengine.png
       bch: No
+
+    - name: Yourserver.se
+      url: https://www.yourserver.se/
+      img: yourserver.png
+      twitter: yourserverse
+      facebook: yourserverse
+      email_address: tanja@yourserver.se
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
