@@ -498,6 +498,15 @@ websites:
       software: Yes
       doc: https://www.ud-reselling.com/en/security/
 
+    - name: united-domains.de
+      url: https://www.united-domains.de/
+      img: united-domains.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.united-domains.de/faq-article/wie-aktiviere-ich-die-zweistufige-verifizierung-und-mache-mein-portfolio-login-sicherer
+      exceptions:
+        text: "A phone number is required to enable two-factor authentication."
+
     - name: Verio
       url: https://www.verio.com/
       twitter: Verio
