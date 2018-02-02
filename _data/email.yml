@@ -165,6 +165,16 @@ websites:
       hardware: Yes
       doc: https://www.thexyz.com/account/knowledgebase/15/Enabling-two-factor-authentication.html
 
+    - name: Tutanota
+      url: https://tutanota.com/
+      img: tutanota.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+        text: "2FA only available on their beta client."
+      doc: https://tutanota.uservoice.com/knowledgebase/articles/1201942
+
     - name: Virgin Media E-Mail
       url: https://www.virginmedia.com/
       twitter: virginmedia
