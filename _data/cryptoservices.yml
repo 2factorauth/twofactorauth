@@ -1,14 +1,4 @@
 websites:
-    - name: Bitcoin Superstore
-      url: https://bitcoinsuperstore.us
-      img: bitcoinSuperstore.png
-      twitter: BitcoinSuperst1
-      email_address: customerservice@bitcoinsuperstore.us
-      city: No
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      
     - name: BCHTips.org
       url: https://bchtips.org
       img: bchtips.png
@@ -16,6 +6,15 @@ websites:
       btc: no
       othercrypto: no
 
+    - name: Bitcoin Superstore
+      url: https://bitcoinsuperstore.us
+      img: bitcoinSuperstore.png
+      twitter: BitcoinSuperst1
+      email_address: customerservice@bitcoinsuperstore.us
+      bch: yes
+      btc: yes
+      othercrypto: yes
+      
     - name: BitcoinPlug
       url: https://bitcoinplug.com
       twitter: bitcoinplugatm
