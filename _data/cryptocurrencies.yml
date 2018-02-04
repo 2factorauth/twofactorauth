@@ -84,6 +84,15 @@ websites:
       hardware: Yes
       doc: https://blockchain.info/wallet/support-pages
 
+    - name: BTC Markets
+      url: https://www.btcmarkets.net/
+      img: btcmarkets.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.btcmarkets.net/faq#q27
+      exceptions:
+          text: "A mobile phone number is required to reset two-factor authentication."
+
     - name: BTCJam
       url: https://btcjam.com/
       img: btcjam.png
