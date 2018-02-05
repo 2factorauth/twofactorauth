@@ -208,7 +208,7 @@ websites:
       phone: Yes
       hardware: Yes
       exceptions:
-            text: SMS option is required, U2F/FIDO (Yubikey) cannot be used without an option to login with SMS
+            text: SMS/Phone Call option is required for 2FA.
       doc: https://personal.vanguard.com/us/insights/article/security-codes-112015
 
     - name: Wealthfront
