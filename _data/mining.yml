@@ -35,10 +35,31 @@ websites:
       bch: yes
       btc: no
       othercrypto: no
+      
+    - name: GPU Mining Bios
+      url: https://mining-bios.eu/
+      img: miningbios.png
+      facebook: indeedminers
+      region: eu
+      bch: yes
+      btc: yes
+      othercrypto: yes
+      doc: https://mining-bios.eu/2018/01/21/more-native-crypto/
 
     - name: Suprnova
       url: https://www.suprnova.cc/
       img: suprnova.png
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      
+    - name: Taimine
+      url: https://taimine.com
+      img: taimine.png
+      twitter: taimineminer
+      facebook: taimineindustries
+      email_address: service@taimine.com
+      region: as
       bch: Yes
       btc: Yes
       othercrypto: Yes
