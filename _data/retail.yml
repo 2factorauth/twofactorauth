@@ -103,8 +103,6 @@ websites:
       img: ebay.png
       tfa: Yes
       sms: Yes
-      exceptions:
-          text: "eBay now only supports SMS for 2FA."
       doc: https://signinalert.ebay.com/sgninalrt/twofa/onboard?flow=myebay
 
     - name: ePRICE
