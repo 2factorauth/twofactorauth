@@ -102,10 +102,9 @@ websites:
       url: http://ebay.com
       img: ebay.png
       tfa: Yes
-      hardware: Yes
-      software: Yes
+      sms: Yes
       exceptions:
-          text: "eBay only supports 2FA in some countries."
+          text: "eBay now only supports SMS for 2FA."
 
     - name: ePRICE
       url: https://www.eprice.it/
