@@ -118,10 +118,21 @@
 {% if page.id == "adult-listings" %}
   <script>
     $(document).ready(function () {
-      $('.ui.modal.adult-warning')
-        .modal('setting','closable', false)
-        .modal('show');
-      $('.checkbox').checkbox();
+
+      $('#adult-warning-checkbox').click(function(){
+        if($(this).prop('checked')) {
+          createCookie('hideAdultWarning')
+        } else {
+          eraseCookie('hideAdultWarning')
+        }
+      });
+
+      if (!readCookie('hideAdultWarning')) {
+        $('.ui.modal.adult-warning')
+          .modal('setting','closable', false)
+          .modal('show');
+      }
+
     });
   </script>
 {% endif %}
