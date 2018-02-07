@@ -183,6 +183,8 @@ websites:
       sms: Yes
       hardware: Yes
       software: Yes
+      exceptions:
+          text: "When losing your password and your 2FA token, staff might not be able to restore access to your account, not even if you can prove your identity. This is a strict security measure that can lead to unpleasant surprises."
       doc: https://help.github.com/articles/about-two-factor-authentication
 
     - name: GitLab
