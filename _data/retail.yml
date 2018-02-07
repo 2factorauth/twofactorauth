@@ -99,13 +99,10 @@ websites:
       twitter: EBGamesAus
 
     - name: eBay
-      url: http://ebay.com
+      url: https://www.ebay.com
       img: ebay.png
       tfa: Yes
-      hardware: Yes
-      software: Yes
-      exceptions:
-          text: "eBay only supports 2FA in some countries."
+      sms: Yes
 
     - name: ePRICE
       url: https://www.eprice.it/
