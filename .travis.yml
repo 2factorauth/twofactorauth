@@ -1,7 +1,8 @@
 sudo: required
 language: ruby
 rvm: 2.4.0
-os: linuxenv:
+os: linux
+env:
   global: 
     - BUILD_DOCKER=false
 python:
