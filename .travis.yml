@@ -1,7 +1,9 @@
 sudo: required
 language: ruby
 rvm: 2.4.0
-os: linux
+os: linuxenv:
+  global: 
+    - BUILD_DOCKER=false
 python:
   - "3.4"
 services:
@@ -20,18 +22,39 @@ before_install:
     - bundle install --gemfile=Gemfile
     - pip install --user pathlib
 matrix:
+  fast_finish: true
   include:
-    - env: build_docker=true
+    - env: 
+      - NEXT_BUILD_TAG=latest
       script:
-      - rake docker:build
-    - env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-      script:
+      - bundle exec rake proof
+      - if [ "$TRAVIS_TAG" != "" ]; then NEXT_BUILD_TAG=`date +"%m-%d-%Y"`; BUILD_DOCKER="true"; fi
+      - echo ".git" > .dockerignore
+      - bundle exec rake docker:build[$NEXT_BUILD_TAG]
+    - script:
       - bundle exec rake verify
       - bundle exec rake proof_external
   allow_failures:
     - script: 
       - bundle exec rake verify
       - bundle exec rake proof_external
+deploy:
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+    keep-history: true
+    on: 
+      branch: master
+      tags: true
+      condition: $BUILD_DOCKER == "true"
+  - provider: script
+    skip-cleanup: true
+    script:
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push acceptbitcoincash/acceptbitcoincash
+    on: 
+      branch: master
+      tags: true
+      condition: $BUILD_DOCKER == "true"
 notifications:
   slack:
     rooms:
