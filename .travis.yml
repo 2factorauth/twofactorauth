@@ -4,7 +4,7 @@ rvm: 2.4.0
 os: linux
 env:
   global: 
-    - BUILD_DOCKER=false
+    - DEPLOY_DOCKER=false
 python:
   - "3.4"
 services:
@@ -29,7 +29,7 @@ matrix:
       - NEXT_BUILD_TAG=latest
       script:
       - bundle exec rake proof
-      - if [ "$TRAVIS_TAG" != "" ]; then NEXT_BUILD_TAG=`date +"%m-%d-%Y"`; BUILD_DOCKER="true"; fi
+      - if [ "$TRAVIS_TAG" != "" ]; then NEXT_BUILD_TAG=`date +"%m-%d-%Y"`; DEPLOY_DOCKER="true"; fi
       - echo ".git" > .dockerignore
       - bundle exec rake docker:build[$NEXT_BUILD_TAG]
     - script:
@@ -47,7 +47,7 @@ deploy:
     on: 
       branch: master
       tags: true
-      condition: $BUILD_DOCKER == "true"
+      condition: $DEPLOY_DOCKER == "true"
   - provider: script
     skip-cleanup: true
     script:
@@ -55,7 +55,7 @@ deploy:
     on: 
       branch: master
       tags: true
-      condition: $BUILD_DOCKER == "true"
+      condition: $DEPLOY_DOCKER == "true"
 notifications:
   slack:
     rooms:
