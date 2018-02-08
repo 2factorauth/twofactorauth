@@ -31,7 +31,8 @@ matrix:
       - bundle exec rake proof
       - if [ "$TRAVIS_TAG" != "" ]; then NEXT_BUILD_TAG=`date +"%m-%d-%Y"`; DEPLOY_DOCKER="true"; fi
       - echo ".git" > .dockerignore
-      - bundle exec rake docker:build[$NEXT_BUILD_TAG]
+      - bundle exec rake docker:build
+      - if [ "$NEXT_BUILD_TAG" != "latest" ]; then docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; fi
     - script:
       - bundle exec rake verify
       - bundle exec rake proof_external
