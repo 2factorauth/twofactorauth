@@ -116,6 +116,13 @@ providers:
     otp: Yes
     uf2: Yes
 
+  - name: Secalot
+    url: https://www.secalot.com
+    img: secalot.png
+    hardware: Yes
+    otp: Yes
+    u2f: Yes
+
 #  - name: PortalGuard
 #    url: http://www.portalguard.com
 #    img: portalguard.png
