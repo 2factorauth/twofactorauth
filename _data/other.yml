@@ -94,6 +94,16 @@ websites:
       twitter: CAinc
       facebook: CATechnologies
 
+    - name: Chartbeat
+      url: https://chartbeat.com/
+      img: chartbeat.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888-Two-Factor-Authentication
+      exceptions:
+          text: "SMS required for 2FA."
+
     - name: Cisco Meraki
       url: https://meraki.cisco.com/
       img: meraki.png
