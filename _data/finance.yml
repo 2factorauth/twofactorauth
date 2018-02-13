@@ -34,10 +34,9 @@ websites:
 
     - name: Credit Karma
       url: https://www.creditkarma.com
-      twitter: creditkarma
-      facebook: CreditKarma
       img: creditkarma.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
 
     - name: ditech
       url: https://www.ditech.com
@@ -149,6 +148,12 @@ websites:
       email: Yes
       software: Yes
 
+    - name: money by Envestnet | Yodlee
+      url: https://money.yodlee.com/
+      twitter: Yodlee
+      img: yodlee.png
+      tfa: No
+
     - name: Nexonia
       url: http://www.nexonia.com/
       facebook: nexonia
@@ -183,6 +188,7 @@ websites:
       sms: Yes
       email: Yes
       phone: Yes
+      software: Yes
       doc: https://www.paycor.com/security/how-to-keep-your-account-safe
 
     - name: Paytrust
@@ -269,7 +275,8 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
-      doc: https://transferwise.com/help/topics/4/topics/19/questions/2597993/how-can-i-setup-2-step-login
+      software: Yes
+      doc: https://transferwise.com/help/article/2811597/borderless-account/how-can-i-setup-2-step-login
 
     - name: Treasury Direct
       url: https://www.treasurydirect.gov
@@ -304,12 +311,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://help.xero.com/nz/MyXero_Two-Step_About
-
-    - name: Yodlee Moneycenter
-      url: https://yodleemoneycenter.com/
-      twitter: Yodlee
-      img: yodlee.png
-      tfa: No
 
     - name: You Need A Budget (YNAB)
       url: https://www.youneedabudget.com/

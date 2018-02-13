@@ -8,13 +8,6 @@ websites:
       software: Yes
       doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
-    - name: CheckMail
-      url: https://checkmail.io/
-      img: checkmail.png
-      tfa: Yes
-      software: Yes
-      doc: https://checkmail.io/docs/setting-up-two-factor-authentication/
-
     - name: FastMail
       url: https://www.fastmail.com/
       img: fastmail.png
@@ -54,6 +47,14 @@ websites:
       email: Yes
       software: Yes
       doc: https://help.hushmail.com/entries/63282756-Two-step-verification
+
+    - name: Legalmail
+      url: https://www.legalmail.it/
+      img: legalmail.png
+      tfa: No
+      twitter: InfoCert_it
+      facebook: InfoCertSpa
+      lang: it
 
     - name: Mail.com
       url: https://www.mail.com/
@@ -172,6 +173,13 @@ websites:
       facebook: TimOfficialPage
       lang: it
 
+    - name: Virgin Media E-Mail
+      url: https://www.virginmedia.com/
+      twitter: virginmedia
+      facebook: virgin
+      img: virginmedia.png
+      tfa: No
+
     - name: Web.de
       url: https://web.de
       twitter: WEBDE
@@ -193,6 +201,7 @@ websites:
       img: yahoomail.png
       tfa: Yes
       sms: Yes
+      phone: Yes
       doc: https://help.yahoo.com/kb/SLN5013.html
 
     - name: Yandex.Mail

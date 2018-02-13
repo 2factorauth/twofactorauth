@@ -26,6 +26,14 @@ websites:
       twitter: antagningse
       tfa: No
 
+    - name: Babbel
+      url: https://www.babbel.com
+      img: babbel.png
+      tfa: No
+      twitter: babbel
+      facebook: babbel.languages
+      email_address: support@en.babbel.com
+
     - name: CBT Nuggets
       url: https://www.cbtnuggets.com/
       img: cbtnuggets.png
@@ -110,6 +118,15 @@ websites:
       facebook: duolingo
       tfa: No
 
+    - name: East Carolina University
+      url: https://www.ecu.edu
+      img: ecu.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://www.ecu.edu/cs-itcs/office365/multi-factor-authentication.cfm
+
     - name: EC-Council
       url: https://www.eccouncil.org
       img: eccouncil.png
@@ -164,7 +181,7 @@ websites:
       phone: Yes
       hardware: Yes
       software: Yes
-      doc: http://huit.harvard.edu/twostep
+      doc: https://huit.harvard.edu/twostep
 
     - name: Illinois Institute Of Technology
       url: https://web.iit.edu/

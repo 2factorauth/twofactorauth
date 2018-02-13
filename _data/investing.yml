@@ -52,6 +52,15 @@ websites:
           text: "Only available for some account types"
       doc: /notes/fidelity/
 
+    - name: Flatex
+      url: https://www.flatex.de/
+      email_address: info@flatex.de
+      twitter: flatex
+      facebook: onlinebroker
+      img: flatex.png
+      tfa: No
+      lang: de
+
     - name: HealthEquity
       url: http://www.healthequity.com/
       twitter: healthequity
@@ -65,6 +74,14 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log
+
+    - name: John Hancock Pensions
+      url: https://www.jhancockpensions.com
+      twitter: johnhancockusa
+      facebook: johnhancock
+      email_address: My401K@jhancock.com
+      img: johnhancock.png
+      tfa: No
 
     - name: Manulife
       url: http://www.manulife.ca
@@ -89,9 +106,10 @@ websites:
 
     - name: Nutmeg
       url: https://www.nutmeg.com/
-      twitter: thenutmegteam
       img: nutmeg.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://support.nutmeg.com/hc/en-us/articles/115000495111-How-to-set-up-and-manage-2-step-verification
 
     - name: OptionsHouse
       img: optionshouse.png
@@ -202,9 +220,10 @@ websites:
     - name: Wealthsimple
       url: https://www.wealthsimple.com
       img: wealthsimple.png
-      tfa: No
-      twitter: Wealthsimple
-      facebook: wealthsimple
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.wealthsimple.com/magazine/2-step-verification
 
     - name: WiseBanyan
       url: https://www.wisebanyan.com/

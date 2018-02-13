@@ -35,6 +35,13 @@ websites:
       twitter: 1and1
       facebook: 1and1
 
+    - name: 20i
+      url: https://www.20i.com
+      img: 20i.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.20i.com/support/my-services/two-factor-authentication-my20i
+
     - name: Above.com
       url: https://www.above.com
       img: above.png
@@ -193,7 +200,8 @@ websites:
       img: gandi.png
       tfa: Yes
       software: Yes
-      doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
+      hardware: Yes
+      doc: https://doc.gandi.net/en/organization/users/security
 
     - name: GoDaddy
       img: godaddy.png
@@ -466,7 +474,7 @@ websites:
       url: https://www.uk2.net/
       twitter: UK2
       facebook: UK2.net
-      img: uk2.png 
+      img: uk2.png
       tfa: No
 
     - name: Uniregistry
@@ -476,12 +484,28 @@ websites:
       software: Yes
       doc: https://uniregistry.help/my-account-en/what-is-two-step-verification/
 
+    - name: United Domains USA
+      url: https://www.uniteddomains.com/
+      img: uniteddomains-usa.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.uniteddomains.com/hc/en-us/articles/115001458813-How-to-Enable-Disable-Two-Factor-Authentication
+
     - name: united-domains Reselling
       url: https://www.ud-reselling.com/en/
       img: udreselling.png
       tfa: Yes
       software: Yes
       doc: https://www.ud-reselling.com/en/security/
+
+    - name: united-domains.de
+      url: https://www.united-domains.de/
+      img: united-domains.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.united-domains.de/faq-article/wie-aktiviere-ich-die-zweistufige-verifizierung-und-mache-mein-portfolio-login-sicherer
+      exceptions:
+        text: "A phone number is required to enable two-factor authentication."
 
     - name: Verio
       url: https://www.verio.com/

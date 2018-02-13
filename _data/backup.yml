@@ -29,7 +29,7 @@ websites:
     img: box.png
     tfa: Yes
     sms: Yes
-    doc: https://support.box.com/hc/en-us/articles/200526658-Can-I-enable-2-step-verification-for-my-account-
+    doc: https://community.box.com/t5/How-to-Guides-for-Account/Manage-Account-Settings/ta-p/20022#authentication
 
   - name: CloudApp
     url: https://www.getcloudapp.com/
@@ -51,6 +51,7 @@ websites:
     tfa: No
     twitter: DegooBackup
     facebook: DegooBackup
+    email_address: support@degoo.com
 
   - name: Dropbox
     url: https://www.dropbox.com
@@ -75,13 +76,6 @@ websites:
     img: filethis.png
     tfa: No
     facebook: FileThis
-
-  - name: Frostbox
-    url: http://frostbox.com
-    img: frostbox.png
-    tfa: Yes
-    software: Yes
-    doc: https://app.frostbox.com/main.php?action=2fa
 
   - name: Google Drive
     url: https://drive.google.com
@@ -166,12 +160,13 @@ websites:
     doc: https://www.qnap.com/i/useng/tutorial/con_show.php?op=showone&cid=151
 
   - name: SmartBox
-    url: https://www.panterranetworks.com/smartbox/smartbox_overview.php
+    url: https://www.panterranetworks.com/products/smartbox.php
     img: smartbox.png
     tfa: Yes
     email: Yes
     software: Yes
-    doc: https://www.panterranetworks.com/smartbox/sb-features/sbf-security.php
+    exceptions:
+      text: "Only available for Enterprise users"
 
   - name: SpiderOak
     url: https://spideroak.com

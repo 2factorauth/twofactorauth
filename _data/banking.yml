@@ -120,6 +120,13 @@ websites:
       phone: Yes
       email: Yes
 
+    - name: BB&amp;T
+      url: http://www.bbt.com/
+      twitter: BBT
+      facebook: BBTBank
+      img: bbt.png
+      tfa: No
+
     - name: Black Hills Federal Credit Union
       url: https://www.bhfcu.com
       img: bhfcu.png
@@ -222,6 +229,24 @@ websites:
       twitter: comdirect
       facebook: comdirect
       img: comdirect.png
+      tfa: No
+      lang: de
+
+    - name: Commercial Bank of Qatar
+      url: http://www.cbq.qa/
+      img: cbq.png
+      tfa: Yes
+      sms: Yes
+      doc: https://cbonline.cbq.qa/RIB/Common/FAQContent
+      exceptions:
+       text: "An SMS capable phone with a Qatar phone number is required."
+
+    - name: Commerzbank
+      url: https://www.commerzbank.de/
+      twitter: commerzbank
+      facebook: commerzbank
+      img: commerzbank.png
+      email_address: directbanking@commerzbank.com
       tfa: No
       lang: de
 
@@ -433,6 +458,12 @@ websites:
       hardware: Yes
       doc: https://www.ing.lu/web/ING/EN/Personal/Customerservices/FAQ/MYING_FAQ_EN
 
+    - name: ING Australia
+      url: https://www.ing.com.au
+      img: ing.png
+      tfa: Yes
+      sms: Yes
+
     - name: ING-DiBa Austria
       url: https://www.ing-diba.at
       twitter: INGDiBaAustria
@@ -571,6 +602,14 @@ websites:
       twitter: NortheastCU
       facebook: northeastcu
 
+    - name: Nubank
+      url: https://www.nubank.com.br
+      img: nubank.png
+      tfa: No
+      twitter: nubankbrasil
+      facebook: nubankbrasil
+      lang: pt
+
     - name: Optum Bank
       url: https://www.optumbank.com
       img: optum.png
@@ -609,10 +648,10 @@ websites:
 
     - name: PNC Bank
       url: https://www.pnc.com/
-      twitter: pncnews
-      facebook: pncbank
       img: pncbank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://www.pnc.com/en/customer-service/update-center/sign-on-changes.html
 
     - name: Podravska banka
       url: https://www.poba.hr/
@@ -673,6 +712,15 @@ websites:
       img: sccfcu.png
       tfa: No
 
+    - name: Santander BR
+      url: https://www.santander.com.br/
+      img: santander.png
+      tfa: No
+      twitter: santander_br
+      facebook: santanderbrasil
+      email_address: santander.email@santander.com.br
+      lang: pt
+
     - name: Santander UK
       url: http://www.santander.co.uk
       img: santander.png
@@ -721,6 +769,15 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://www.simple.com/help/articles/account-maintenance/security
+
+    - name: Sparda Banken
+      url: http://www.sparda.de/
+      twitter: spardaberlin
+      facebook: spardaberlin
+      email_address: info@sparda-verband.de
+      img: spardabank.png
+      tfa: No
+      lang: de
 
     - name: Sparkasse
       url: https://www.sparkasse.de/
@@ -827,6 +884,13 @@ websites:
       img: tsb.png
       tfa: No
 
+    - name: UBI Banca
+      url: https://www.ubibanca.com/
+      img: ubibanca.png
+      tfa: No
+      facebook: UBIBanca
+      lang: it
+
     - name: Umpqua Bank
       url: https://www.umpquabank.com/
       img:  umpqua.png
@@ -919,13 +983,6 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://www.zaba.hr/home/token#pan3
-
-    - name: ZenBanx
-      url: https://www.zenbanx.com/
-      twitter: ZenBanx
-      facebook: Zenbanx
-      img: zenbanx.png
-      tfa: No
 
     - name: Zurich Cantonal Bank (ZKB)
       url: https://www.zkb.ch/

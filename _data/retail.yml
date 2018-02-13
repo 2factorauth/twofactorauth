@@ -39,6 +39,14 @@ websites:
           text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
       doc: http://support.apple.com/kb/ht5570
 
+    - name: Arcaplanet
+      url: https://www.arcaplanet.it/
+      img: arcaplanet.png
+      tfa: No
+      twitter: Arcaplanet
+      facebook: Arcaplanet
+      lang: it
+
     - name: Big W
       url: https://www.bigw.com.au/
       img: bigw.png
@@ -51,6 +59,14 @@ websites:
       tfa: No
       twitter: CombatGent
       facebook: combatgent
+
+    - name: Comet
+      url: https://www.comet.it/
+      img: comet.png
+      tfa: No
+      twitter: gruppocomet
+      facebook: facecomet
+      lang: it
 
     - name: Comixology
       url: https://www.comixology.com/
@@ -83,14 +99,18 @@ websites:
       twitter: EBGamesAus
 
     - name: eBay
-      url: http://ebay.com
+      url: https://www.ebay.com
       img: ebay.png
       tfa: Yes
-      hardware: Yes
-      software: Yes
-      exceptions:
-          text: "eBay only supports 2FA in some countries."
-      doc: http://pages.ebay.com/securitykey/faq.html
+      sms: Yes
+
+    - name: ePRICE
+      url: https://www.eprice.it/
+      img: eprice.png
+      tfa: No
+      twitter: EPRICEIT
+      facebook: ePRICE.it
+      lang: it
 
     - name: Etsy
       url: http://www.etsy.com/
@@ -315,6 +335,14 @@ websites:
       twitter: Wayfair
       facebook: wayfair
 
+    - name: Zalando (UK)
+      url: https://www.zalando.co.uk/
+      img: zalando.png
+      tfa: No
+      twitter: zalando_uk
+      facebook: Zalando.co.uk
+      email_address: service@zalando.co.uk
+
     - name: Zappos
       url: http://www.zappos.com/
       twitter: Zappos
@@ -327,3 +355,10 @@ websites:
       tfa: No
       twitter: zazzle
       facebook: zazzle
+
+    - name: Zooplus
+      url: http://www.zooplus.com/
+      img: zooplus.png
+      tfa: No
+      twitter: zooplusDE
+      facebook: zooplusde

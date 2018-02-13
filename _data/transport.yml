@@ -134,7 +134,7 @@ websites:
     - name: Norwegian
       url: https://www.norwegian.com/
       twitter: Fly_Norwegian
-      facebook: norwegian.com
+      facebook: norwegianairlines
       img: norwegian.png
       tfa: No
 
@@ -145,10 +145,25 @@ websites:
       img: nsb.png
       tfa: No
 
+    - name: Oui.sncf
+      url: https://www.oui.sncf
+      twitter: ouisncf
+      facebook: oui.sncf
+      img: sncf.png
+      tfa: No
+
     - name: OV-chipkaart
       url: https://www.ov-chipkaart.nl/
       twitter: OVchipkaart
       img: ov-chipkaart.png
+      tfa: No
+
+    - name: redBus
+      url: https://www.redbus.in/
+      twitter: redBus_in
+      facebook: redBus.in
+      email_address: support@redbus.in
+      img: redbus.png
       tfa: No
 
     - name: Ryanair
@@ -180,7 +195,7 @@ websites:
       tfa: No
 
     - name: SL
-      url: http://sl.se/
+      url: https://sl.se/
       twitter: SL_AB
       facebook: KanalSL
       img: sl.png
@@ -225,13 +240,6 @@ websites:
       twitter: united
       facebook: United
       img: united.png
-      tfa: No
-
-    - name: Voyages-SNCF
-      url: https://www.voyages-sncf.com/
-      twitter: Voyagessncf_bp
-      facebook: VoyagesSncf.com
-      img: sncf.png
       tfa: No
 
     - name: WestJet
