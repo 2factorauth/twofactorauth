@@ -160,12 +160,13 @@ websites:
     doc: https://www.qnap.com/i/useng/tutorial/con_show.php?op=showone&cid=151
 
   - name: SmartBox
-    url: https://www.panterranetworks.com/smartbox/smartbox_overview.php
+    url: https://www.panterranetworks.com/products/smartbox.php
     img: smartbox.png
     tfa: Yes
     email: Yes
     software: Yes
-    doc: https://www.panterranetworks.com/smartbox/sb-features/sbf-security.php
+    exceptions:
+      text: "Only available for Enterprise users"
 
   - name: SpiderOak
     url: https://spideroak.com
