@@ -5,13 +5,6 @@ websites:
       img: aboutme.png
       tfa: No
 
-    - name: App.net
-      url: https://join.app.net
-      img: appnet.png
-      tfa: Yes
-      software: Yes
-      doc: https://mml.desk.com/customer/portal/articles/1039728-how-do-i-set-up-two-factor-authentication-
-
     - name: Badoo
       url: https://badoo.com
       img: badoo.png
@@ -23,9 +16,7 @@ websites:
       img: bitly.png
       tfa: Yes
       sms: Yes
-      exceptions:
-          text: "SMS-capable phone required."
-      doc: http://blog.bitly.com/post/90381427894/introducing-2-step-verification-for-all-users
+      doc: https://support.bitly.com/hc/en-us/articles/230650187-What-is-2-step-verification-
 
     - name: Buffer
       url: https://bufferapp.com
@@ -110,9 +101,10 @@ websites:
 
     - name: Instagram
       url: https://www.instagram.com
-      twitter: instagram
       img: instagram.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://help.instagram.com/566810106808145
 
     - name: LinkedIn
       url: https://linkedin.com
@@ -126,6 +118,20 @@ websites:
       twitter: LiveJournal
       img: livejournal.png
       tfa: No
+
+    - name: Lobsters
+      url: https://lobste.rs/
+      img: lobsters.png
+      tfa: Yes
+      software: Yes
+      doc: https://lobste.rs/s/1cyltz/two_factor_authentication_now_available
+
+    - name: Mastodon
+      url: https://joinmastodon.org/
+      img: mastodon.png
+      tfa: Yes
+      software: Yes
+      doc: https://github.com/tootsuite/documentation/blob/master/Using-Mastodon/2FA.md
 
     - name: Medium
       url: https://medium.com
@@ -141,6 +147,12 @@ websites:
       img: meetup.png
       tfa: No
 
+    - name: Minds
+      url: https://www.minds.com/
+      img: minds.png
+      tfa: Yes
+      sms: Yes
+
     - name: Newgrounds
       url: https://www.newgrounds.com/
       twitter: Newgrounds
@@ -155,11 +167,20 @@ websites:
       img: nextdoor.png
       tfa: No
 
+    - name: OkCupid
+      url: https://www.okcupid.com/
+      twitter: okcupid
+      facebook: okcupid
+      img: okcupid.png
+      tfa: No
+
     - name: Pinterest
       url: https://pinterest.com
-      twitter: Pinterest
       img: pinterest.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.pinterest.com/en/articles/two-factor-authentication
 
     - name: Quora
       url: https://www.quora.com
@@ -169,9 +190,10 @@ websites:
 
     - name: Reddit
       url: https://www.reddit.com/
-      twitter: reddit
       img: reddit.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://www.reddithelp.com/en/categories/using-reddit/your-reddit-account/how-set-two-factor-authentication
 
     - name: Snapchat
       url: https://www.snapchat.com/
@@ -251,4 +273,4 @@ websites:
       img: zocle.png
       tfa: Yes
       sms: Yes
-      doc: http://university.zocle.com/2015/03/30/new-security-feature-two-step-verification/
+      doc: https://zocle.com/knowledgebase/enabling-two-step-verification/

@@ -34,10 +34,18 @@ websites:
       software: Yes
       doc: https://customer.io/docs/two-factor-auth.html
 
+    - name: Direct Mail
+      url: https://directmailmac.com
+      img: directmail.png
+      tfa: Yes
+      software: Yes
+      doc: https://directmailmac.com/support/article/507
+
     - name: Discord
       url: https://discordapp.com/
       img: discord.png
       tfa: Yes
+      sms: Yes
       email: Yes
       software: Yes
       doc: https://support.discordapp.com/hc/en-us/articles/219576828
@@ -74,7 +82,7 @@ websites:
       img: front_app.png
       tfa: Yes
       software: Yes
-      doc: https://faq.frontapp.com/11695-security/how-to-activate-2fa
+      doc: https://community.frontapp.com/t/q56jf8/activating-two-factor-authentication-2fa
 
     - name: Grape
       url: https://chatgrape.com/
@@ -98,6 +106,20 @@ websites:
       facebook: irccloud
       tfa: No
 
+    - name: Kik
+      url: https://www.kik.com/
+      img: kik.png
+      tfa: No
+      twitter: Kik
+      facebook: kikplaynice
+      email_address: support@kik.com
+
+    - name: LINE
+      url: https://line.me/en/
+      img: line.png
+      tfa: No
+      facebook: line.worldwide
+
     - name: MailChimp
       url: https://mailchimp.com/
       img: mailchimp.png
@@ -107,18 +129,17 @@ websites:
       doc: http://kb.mailchimp.com/accounts/login/set-up-two-factor-authentication-with-sms
 
     - name: Mailgun
-      url: http://mailgun.com
-      twitter: Mail_Gun
-      facebook: mailgun
+      url: https://www.mailgun.com
       img: mailgun.png
-      tfa: No
+      tfa: Yes
+      software: Yes
 
     - name: Maxemail
       url: https://maxemail.emailcenteruk.com/
       img: maxemail.png
       tfa: Yes
       hardware: Yes
-      doc: http://www.emailcenteruk.com/software/security-collaboration-2/
+      doc: https://www.emailcenteruk.com/maxemail/platform-security-collaboration/
 
     - name: Peerio
       url: https://peerio.com
@@ -156,7 +177,7 @@ websites:
       img: sendloop.png
       tfa: Yes
       software: Yes
-      doc: http://app.sendloop.com/help/article/account-003/how-can-i-make-my-account-more-secure
+      doc: https://help.sendloop.com/docs/securing-your-account
 
     - name: Skype (via Microsoft Account)
       url: https://www.skype.com
@@ -220,12 +241,29 @@ websites:
       img: toutapp.png
       tfa: No
 
+    - name: Viber
+      url: https://www.viber.com
+      img: viber.png
+      tfa: No
+      twitter: ViberHelp
+      facebook: viber
+      email_address: support@viber.com
+
     - name: WhatsApp
       url: https://www.whatsapp.com/
       img: whatsapp.png
       tfa: Yes
       sms: Yes
+      phone: Yes
       doc: https://www.whatsapp.com/faq/en/general/26000021
+
+    - name: WoltLab
+      url: https://www.woltlab.com/
+      twitter: woltlab
+      facebook: WoltLab
+      email_address: woltlab@woltlab.com
+      img: woltlab.png
+      tfa: No
 
     - name: Yammer
       url: https://www.yammer.com

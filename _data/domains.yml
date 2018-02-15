@@ -35,6 +35,13 @@ websites:
       twitter: 1and1
       facebook: 1and1
 
+    - name: 20i
+      url: https://www.20i.com
+      img: 20i.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.20i.com/support/my-services/two-factor-authentication-my20i
+
     - name: Above.com
       url: https://www.above.com
       img: above.png
@@ -52,9 +59,9 @@ websites:
     - name: ClouDNS
       url: https://www.cloudns.net/
       img: cloudns.png
-      tfa: No
-      twitter: ClouDNS
-      facebook: cloudns
+      tfa: Yes
+      software: Yes
+      doc: https://www.cloudns.net/wiki/article/201/
 
     - name: Crazy Domains
       url: https://www.crazydomains.com
@@ -76,7 +83,7 @@ websites:
       img: dnsmadeeasy.png
       tfa: Yes
       software: Yes
-      doc: http://www.dnsmadeeasy.com/press-release/dns-made-easy-adds-two-factor-authentication-with-time-based-passwords/
+      doc: http://help.dnsmadeeasy.com/managed-dns/administrative/enable-two-factor-authentication/
 
     - name: DNSimple
       url: https://dnsimple.com/
@@ -112,7 +119,7 @@ websites:
       img: domains4bitcoins.png
       tfa: Yes
       sms: Yes
-      doc: http://my.domains4bitcoins.com/kb/answer/2692
+      doc: https://my.domains4bitcoins.com/kb/answer/2692
 
     - name: DomainsAtCost
       url: https://www.domainsatcost.ca/
@@ -151,10 +158,11 @@ websites:
       img: easydns.png
       tfa: Yes
       sms: Yes
-      doc: http://docs.easydns.com/2-factor-authentication/
+      email: Yes
+      doc: https://fusion.easydns.com/Knowledgebase/Article/View/347/0/account-security
 
     - name: eNom
-      url: http://enom.com/
+      url: https://www.enom.com/
       img: enom.png
       tfa: Yes
       software: Yes
@@ -192,7 +200,8 @@ websites:
       img: gandi.png
       tfa: Yes
       software: Yes
-      doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
+      hardware: Yes
+      doc: https://doc.gandi.net/en/organization/users/security
 
     - name: GoDaddy
       img: godaddy.png
@@ -200,7 +209,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://www.godaddy.com/help/enabling-two-step-authentication-for-your-godaddy-account-7502
+      doc: https://www.godaddy.com/help/enable-two-step-verification-7502
 
     - name: Google Domains
       url: https://domains.google.com
@@ -210,7 +219,7 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Heart Internet
       url: https://www.heartinternet.uk/
@@ -247,7 +256,7 @@ websites:
       email: Yes
       software: Yes
       sms: Yes
-      doc: https://incapsula.zendesk.com/hc/en-us/articles/204795664-Incapsula-s-Password-Policy
+      doc: https://docs.incapsula.com/Content/management-console-and-settings/account-settings.htm
 
     - name: Internet.bs
       url: http://www.internet.bs
@@ -284,7 +293,7 @@ websites:
       software: Yes
       doc: https://blogg.loopia.se/2015/03/16/nu-kan-du-logga-in-med-tvafaktorsautentiering-hos-loopia-genom-bankid/
       exceptions:
-          text: "TFA only available for Swedish citizens"
+          text: "TFA only available for Swedish residents with BankID."
 
     - name: MarkMonitor
       url: https://www.markmonitor.com
@@ -328,6 +337,7 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
+      software: Yes
       doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
 
     - name: NameSilo.com
@@ -422,7 +432,7 @@ websites:
       tfa: Yes
       software: Yes
       sms: Yes
-      doc: https://www.pairnic.com/faq_security.html
+      doc: https://www.pairnic.com/kb/posts/345
 
     - name: PointDNS
       url: https://pointhq.com/
@@ -460,12 +470,42 @@ websites:
       tfa: No
       lang: de
 
+    - name: UK2
+      url: https://www.uk2.net/
+      twitter: UK2
+      facebook: UK2.net
+      img: uk2.png
+      tfa: No
+
     - name: Uniregistry
       url: https://uniregistry.com/
       img: uniregistry.png
       tfa: Yes
       software: Yes
       doc: https://uniregistry.help/my-account-en/what-is-two-step-verification/
+
+    - name: United Domains USA
+      url: https://www.uniteddomains.com/
+      img: uniteddomains-usa.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.uniteddomains.com/hc/en-us/articles/115001458813-How-to-Enable-Disable-Two-Factor-Authentication
+
+    - name: united-domains Reselling
+      url: https://www.ud-reselling.com/en/
+      img: udreselling.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.ud-reselling.com/en/security/
+
+    - name: united-domains.de
+      url: https://www.united-domains.de/
+      img: united-domains.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.united-domains.de/faq-article/wie-aktiviere-ich-die-zweistufige-verifizierung-und-mache-mein-portfolio-login-sicherer
+      exceptions:
+        text: "A phone number is required to enable two-factor authentication."
 
     - name: Verio
       url: https://www.verio.com/

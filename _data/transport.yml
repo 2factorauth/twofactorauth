@@ -89,13 +89,6 @@ websites:
       img: greyhound.png
       tfa: No
 
-    - name: Hailo
-      url: https://www.hailoapp.com/
-      twitter: Hailo
-      facebook: HailoUSA
-      img: hailo.png
-      tfa: No
-
     - name: Hawaiian Airlines
       url: https://www.hawaiianairlines.com
       twitter: HawaiianAir
@@ -131,10 +124,17 @@ websites:
       img: lyft.png
       tfa: No
 
+    - name: mytaxi
+      url: https://us.mytaxi.com
+      img: mytaxi.png
+      tfa: No
+      twitter: mytaxius
+      facebook: myTaxi.us
+
     - name: Norwegian
       url: https://www.norwegian.com/
       twitter: Fly_Norwegian
-      facebook: norwegian.com
+      facebook: norwegianairlines
       img: norwegian.png
       tfa: No
 
@@ -145,10 +145,25 @@ websites:
       img: nsb.png
       tfa: No
 
+    - name: Oui.sncf
+      url: https://www.oui.sncf
+      twitter: ouisncf
+      facebook: oui.sncf
+      img: sncf.png
+      tfa: No
+
     - name: OV-chipkaart
       url: https://www.ov-chipkaart.nl/
       twitter: OVchipkaart
       img: ov-chipkaart.png
+      tfa: No
+
+    - name: redBus
+      url: https://www.redbus.in/
+      twitter: redBus_in
+      facebook: redBus.in
+      email_address: support@redbus.in
+      img: redbus.png
       tfa: No
 
     - name: Ryanair
@@ -165,6 +180,13 @@ websites:
       img: sas.png
       tfa: No
 
+    - name: ScotRail
+      url: https://www.scotrail.co.uk
+      twitter: ScotRail
+      facebook: ScotRail
+      img: scotrail.png
+      tfa: No
+
     - name: SJ
       url: https://www.sj.se/
       twitter: SJ_AB
@@ -173,7 +195,7 @@ websites:
       tfa: No
 
     - name: SL
-      url: http://sl.se/
+      url: https://sl.se/
       twitter: SL_AB
       facebook: KanalSL
       img: sl.png

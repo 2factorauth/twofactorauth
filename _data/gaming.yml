@@ -1,6 +1,6 @@
 websites:
     - name: Ankama
-      url: http://www.ankama.com
+      url: https://www.ankama.com
       img: ankama.png
       tfa: Yes
       email: Yes
@@ -14,7 +14,7 @@ websites:
       facebook: BlackDesertOnline
       tfa: No
 
-    - name: Blade & Soul
+    - name: 'Blade & Soul'
       url: http://www.bladeandsoul.com/
       img: bladeandsoul.png
       tfa: Yes
@@ -28,7 +28,7 @@ websites:
       sms: Yes
       software: Yes
       hardware: Yes
-      doc: http://us.battle.net/en/security/
+      doc: https://us.battle.net/support/en/article/Blizzard-Authenticator
 
     - name: Curse
       url: https://www.curse.com/
@@ -37,19 +37,21 @@ websites:
       twitter: curseapp
       facebook: curseapp
 
-    - name: Desura
-      url: http://www.desura.com/
-      img: desura.png
-      tfa: No
-      twitter: desura
-      facebook: Desura
-
     - name: Elder Scrolls Online
       url: http://www.elderscrollsonline.com/
       img: eso.png
       tfa: Yes
       email: Yes
-      doc: /notes/eso/
+      doc: https://help.elderscrollsonline.com/app/answers/detail/a_id/8611
+
+    - name: Electronic Arts (Origin)
+      url: https://www.ea.com/
+      img: ea.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.ea.com/en-us/help/account/origin-login-verification-information/
 
     - name: Enjin
       url: http://www.enjin.com/
@@ -76,6 +78,24 @@ websites:
       software: Yes
       doc: https://support.eveonline.com/hc/en-us/articles/203465601-Two-Factor-Authentication-and-Authenticator
 
+    - name: FaceIT
+      url: https://www.faceit.com
+      img: faceit.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.faceit.com/hc/en-us/articles/115000254670-Enabling-2-Factor-Authentication-
+
+    - name: Gaijin Entertainment
+      url: https://gaijin.net
+      img: gaijin.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.gaijin.net/hc/en-us/articles/203623622-How-to-set-up-the-Two-Step-Authorization-Google-Authenticator-
+      exceptions:
+          text: "A verified phone number is required for the use of two-factor authentication through email or software."
+
     - name: GameFly
       url: https://www.gamefly.com/
       twitter: GameFly
@@ -84,11 +104,11 @@ websites:
       tfa: No
 
     - name: Garena Online
-      url: http://garena.com
+      url: https://intl.garena.com
       img: garena.png
       tfa: Yes
       software: Yes
-      doc: http://www.garena.com/account/
+      doc: https://account.garena.com/
       exceptions:
           text: "A mobile phone and Garena account level 3 or higher is required for 2FA."
 
@@ -158,21 +178,21 @@ websites:
       img: mojang.png
       tfa: No
 
+    - name: Nintendo Account
+      url: https://accounts.nintendo.com/
+      img: nintendo-account.png
+      tfa: Yes
+      software: Yes
+      doc: http://en-americas-support.nintendo.com/app/answers/detail/a_id/27496
+      exceptions:
+          text: "2FA not available for child accounts (users 12 years of age or younger) or supervised accounts (users 13 years of age or older attached to a parent account)."
+
     - name: Nintendo Network
-      url: https://www.nintendo.com/
+      url: https://id.nintendo.net/
       twitter: NintendoAmerica
       facebook: Nintendo
-      img: nintendo.png
+      img: nintendo-network.png
       tfa: No
-
-    - name: Origin
-      url: https://www.origin.com/
-      img: origin.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      software: Yes
-      doc: http://help.ea.com/en/article/origin-login-verification-information/
 
     - name: Playstation Network
       url: https://www.playstation.com/
@@ -201,7 +221,7 @@ websites:
       img: runescape.png
       tfa: Yes
       software: Yes
-      doc: http://services.runescape.com/m=rswiki/en/Authenticator_FAQ
+      doc: https://support.runescape.com/hc/en-gb/articles/206811835-Setting-the-Authenticator-Mobile-Device
 
     - name: Square Enix
       url: http://na.square-enix.com/
@@ -236,7 +256,7 @@ websites:
       software: Yes
       doc: https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030
       exceptions:
-        text: "Software implementation requires use of the Steam Mobile app. It does not support multiple accounts on the same device. It does not support multiple accounts using the same phone number for SMS. Authentication on non-phone devices is not officially supported. SMS support is limited to receiving account recovery codes for password resets."
+        text: "Software implementation requires use of the Steam Mobile app. Authentication on non-phone devices is not officially supported. SMS support is limited to receiving account recovery codes for password resets."
 
     - name: Tibia
       url: http://www.tibia.com/
@@ -253,7 +273,7 @@ websites:
       software: Yes
       doc: https://support.trionworlds.com/hc/en-us/articles/204183357-Adding-a-Mobile-Authenticator
 
-    - name: Uplay
+    - name: Ubisoft/Uplay
       url: https://uplay.ubi.com/
       img: uplay.png
       tfa: Yes
@@ -262,10 +282,10 @@ websites:
 
     - name: Wargaming
       url: http://wargaming.net/
-      twitter: wargaming_net
-      facebook: wargaming.net
+      tfa: Yes
+      software: Yes
       img: wargaming.png
-      tfa: No
+      doc: https://wargaming.net/support/kb/articles/792
 
     - name: WildStar
       url: https://www.wildstar-online.com/

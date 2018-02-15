@@ -100,8 +100,8 @@ websites:
       url: https://bluemix.net
       img: ibmbluemix.png
       tfa: No
-      twitter: IBMBluemix
-      facebook: ibmbluemix
+      twitter: IBMcloud
+      facebook: IBMCloud
 
     - name: Joyent
       url: https://www.joyent.com/
@@ -153,7 +153,15 @@ websites:
       img: packet.png
       tfa: Yes
       sms: Yes
-      doc: https://www.packet.net/help/kb/account-management-and-billing/how-do-i-enable-two-factor-authentication-/
+      software: Yes
+      doc: https://help.packet.net/faq/onboarding/portal
+
+    - name: ProfitBricks
+      url: https://www.profitbricks.de
+      img: profitbricks.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.profitbricks.com/help/2-Factor_Authentication 
 
     - name: Rackspace
       url: https://www.rackspace.com/
@@ -172,10 +180,10 @@ websites:
 
     - name: Scaleway
       url: https://www.scaleway.com
-      twitter: scaleway
-      facebook: scaleway
       img: scaleway.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://blog.online.net/2017/06/13/introducing-two-factor-authentication-on-scaleway/
 
     - name: Scalr
       url: https://www.scalr.com

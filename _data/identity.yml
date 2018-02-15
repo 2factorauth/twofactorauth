@@ -16,6 +16,19 @@ websites:
       software: Yes
       doc: https://support.bitium.com/customer/portal/articles/1417358-enabling-two-factor-authentication-2fa-
 
+    - name: bitwarden
+      url: https://bitwarden.com
+      img: bitwarden.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+        text: "Premium account required for Duo, YubiKey and FIDO U2F."
+      doc: https://help.bitwarden.com/article/setup-two-step-login/
+
     - name: Centrify
       url: https://www.centrify.com
       img: centrify.png
@@ -24,14 +37,7 @@ websites:
       email: Yes
       phone: Yes
       software: Yes
-      doc: https://www.centrify.com/products/identity-service/multi-factor-authentication/
-
-    - name: CloudEntr
-      url: http://www.cloudentr.com/
-      img: cloudentr.png
-      tfa: Yes
-      software: Yes
-      doc: http://www.cloudentr.com/product/two-factor-authentication/
+      doc: https://www.centrify.com/solutions/why-multi-factor-authentication/
 
     - name: Dashlane
       url: https://www.dashlane.com
@@ -40,12 +46,6 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://support.dashlane.com/hc/en-us/articles/202625042-Protect-your-account-using-Two-Factor-Authentication#title3
-
-    - name: Docusign
-      url: https://www.docusign.com
-      img: docusign.png
-      tfa: No
-      twitter: DocuSign
 
     - name: ID.me
       url: https://www.id.me/
@@ -78,13 +78,6 @@ websites:
       hardware: Yes
       doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
 
-    - name: Monkey Box
-      url: https://monkeybox.com
-      img: monkeybox.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.monkeybox.com/knowledgebase/topics/71602-security
-
     - name: MyDigipass.com
       url: https://mydigipass.com/
       img: mydigipass.png
@@ -100,13 +93,16 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      phone: Yes
+      email: Yes
       hardware: Yes
-      doc: http://www.okta.com/what-we-do/multifactor-authentication.html
+      doc: https://help.okta.com/en/prod/Content/Topics/Security/MFA.htm
 
     - name: OneLogin
       url: https://www.onelogin.com
       img: onelogin.png
       tfa: Yes
+      sms: Yes
       hardware: Yes
       software: Yes
       doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
@@ -119,19 +115,14 @@ websites:
       hardware: Yes
       doc: https://help.passpack.com/knowledgebase/idx.php/44/0/
 
-    - name: Persowna
-      url: https://persowna.net
-      img: persowna.png
-      tfa: Yes
-      software: Yes
-
     - name: RoboForm
       url: https://www.roboform.com/
       img: roboform.png
       tfa: Yes
       email: Yes
       sms: Yes
-      doc: https://www.roboform.com/blog/stay-protected-with-mulitfactor-authentication
+      software: Yes
+      doc: https://help.roboform.com/hc/en-us/articles/115002729512-Setting-up-Google-Authenticator-for-your-account
 
     - name: SAASPASS
       url: https://www.saaspass.com

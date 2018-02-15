@@ -6,7 +6,16 @@ websites:
       img: aep.png
       tfa: No
 
-    - name: AT&T
+    - name: Andrews &amp; Arnold
+      url: https://aa.net.uk
+      img: aaisp.png
+      tfa: Yes
+      software: Yes
+      doc: https://aa.net.uk/kb-broadband-2fa.html
+      exceptions:
+          text: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
+
+    - name: AT&amp;T
       url: https://www.att.com/
       twitter: ATTCares
       facebook: ATT
@@ -36,9 +45,19 @@ websites:
 
     - name: Comcast
       url: https://www.xfinity.com/
-      twitter: ComcastCares
-      facebook: xfinity
       img: comcast.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      exceptions:
+          text: "SMS-capable phone and a non-Comcast.net email required for 2FA."
+      doc: https://www.xfinity.com/support/account/enroll-2-step-verification/
+
+    - name: ComEd
+      url: https://www.comed.com/
+      twitter: ComEd
+      facebook: ComEd
+      img: comed.png
       tfa: No
 
     - name: Con Edison
@@ -69,10 +88,9 @@ websites:
       img: dish.png
       tfa: No
 
-    - name: Dominion
-      url: https://www.dom.com/
-      twitter: DomVAPower
-      facebook: dominionvirginiapower
+    - name: Dominion Energy
+      url: https://www.dominionenergy.com/
+      twitter: dominionenergy
       img: dominion.png
       tfa: No
 
@@ -152,6 +170,13 @@ websites:
       tfa: No
       lang: hr
 
+    - name: Nicor Gas
+      url: https://www.nicorgas.com/
+      twitter: Nicor_Gas
+      facebook: NicorGas
+      img: nicorgas.png
+      tfa: No
+
     - name: Optus
       url: http://www.optus.com.au/
       twitter: Optus
@@ -167,7 +192,7 @@ websites:
       tfa: No
       lang: fr
 
-    - name: Pacific Gas and Electric Company PG&E
+    - name: Pacific Gas and Electric Company PG&amp;E
       url: https://www.pge.com/
       twitter: PGE4Me
       facebook: pacificgasandelectric
@@ -198,7 +223,7 @@ websites:
       img: rcn.png
       tfa: No
 
-    - name: Rochester Gas & Electric
+    - name: 'Rochester Gas & Electric'
       url: https://www.rge.com/
       twitter: RGandE
       facebook: RochGandE
@@ -212,12 +237,20 @@ websites:
       img: rogers.png
       tfa: No
 
-    - name: San Diego Gas & Electric
+    - name: 'San Diego Gas & Electric'
       url: https://www.sdge.com/
       twitter: SDGE
       facebook: SanDiegoGasandElectric
       img: sdge.png
       tfa: No
+
+    - name: sipgate
+      url: https://www.sipgate.de/
+      twitter: sipgateDE
+      facebook: sipgate
+      img: sipgate.png
+      tfa: No
+      lang: de
 
     - name: Sonic
       url: https://www.sonic.com/
@@ -226,7 +259,7 @@ websites:
       sms: Yes
       software: Yes
       phone: Yes
-      doc: https://wiki.sonic.net/wiki/2-Step_Verfication
+      doc: https://wiki.sonic.net/wiki/2-Step_Verification
 
     - name: Southern California Edison
       url: https://www.sce.com/
@@ -265,12 +298,27 @@ websites:
       img: telstra.png
       tfa: No
 
+    - name: Telzio
+      url: https://www.telzio.com/
+      img: telzio.png
+      tfa: Yes
+      software: Yes
+      doc: https://telzio.com/support/two-factor-authentication
+
     - name: Three UK
       url: http://www.three.co.uk/
       twitter: ThreeUK
       facebook: ThreeUK
       img: three.png
       tfa: No
+
+    - name: TIM
+      url: https://www.tim.it/
+      twitter: tim_official
+      facebook: TimOfficialPage
+      img: tim.png
+      tfa: No
+      lang: it
 
     - name: Time Warner Cable
       url: https://www.timewarnercable.com/
@@ -308,11 +356,39 @@ websites:
       tfa: No
       lang: sv
 
+    - name: Virgin Media (IE)
+      url: https://www.virginmedia.ie/
+      twitter: VirginMediaIE
+      facebook: VirginMediaIreland
+      img: virginmedia.png
+      tfa: No
+
+    - name: Virgin Media (UK)
+      url: https://www.virginmedia.com/
+      twitter: virginmedia
+      facebook: virginmedia
+      img: virginmedia.png
+      tfa: No
+
     - name: Virgin Mobile
       url: https://www.virgin.com/gateways/mobile
       twitter: Virgin
       facebook: virgin
       img: virginmobile.png
+      tfa: No
+
+    - name: Vodafone (IE)
+      url: https://www.vodafone.ie/
+      twitter: VodafoneIreland
+      facebook: vodafoneireland
+      img: vodafone.png
+      tfa: No
+
+    - name: Vodafone (IT)
+      url: http://www.vodafone.it/
+      twitter: VodafoneIT
+      facebook: vodafoneit
+      img: vodafone.png
       tfa: No
 
     - name: Vodafone (UK)

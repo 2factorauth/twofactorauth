@@ -26,6 +26,21 @@ websites:
       twitter: antagningse
       tfa: No
 
+    - name: Babbel
+      url: https://www.babbel.com
+      img: babbel.png
+      tfa: No
+      twitter: babbel
+      facebook: babbel.languages
+      email_address: support@en.babbel.com
+
+    - name: CBT Nuggets
+      url: https://www.cbtnuggets.com/
+      img: cbtnuggets.png
+      twitter: CBTNuggets
+      facebook: cbtnuggets
+      tfa: No
+
     - name: Certified Wireless Network Professional (CWNP)
       url: https://www.cwnp.com
       img: cwnp.png
@@ -34,8 +49,18 @@ websites:
       facebook: OfficialCWNP
       email_address: customercare@cwnp.com
 
+    - name: Clemson University
+      url: https://www.clemson.edu/
+      img: clemson.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://2fa.app.clemson.edu/
+
     - name: Clever
-      url: https://www.clever.com
+      url: https://clever.com
       img: clever.png
       tfa: Yes
       sms: Yes
@@ -93,6 +118,15 @@ websites:
       facebook: duolingo
       tfa: No
 
+    - name: East Carolina University
+      url: https://www.ecu.edu
+      img: ecu.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://www.ecu.edu/cs-itcs/office365/multi-factor-authentication.cfm
+
     - name: EC-Council
       url: https://www.eccouncil.org
       img: eccouncil.png
@@ -114,6 +148,15 @@ websites:
       facebook: edX
       img: edx.png
       tfa: No
+
+    - name: Georgia Institute of Technology
+      url: https://www.gatech.edu
+      img: gatech.png
+      tfa: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://twofactor.oit.gatech.edu
 
     - name: Global Information Assurance Certification (GIAC)
       url: https://www.giac.org
@@ -138,7 +181,7 @@ websites:
       phone: Yes
       hardware: Yes
       software: Yes
-      doc: http://huit.harvard.edu/twostep
+      doc: https://huit.harvard.edu/twostep
 
     - name: Illinois Institute Of Technology
       url: https://web.iit.edu/
@@ -169,12 +212,6 @@ websites:
       facebook: mystudylife
       img: mystudylife.png
       tfa: No
-
-    - name: Oplerno
-      url: https://enroll.oplerno.com/
-      img: oplerno.png
-      tfa: Yes
-      software: Yes
 
     - name: PushCoin
       url: https://pushcoin.com
@@ -237,6 +274,16 @@ websites:
       hardware: Yes
       software: Yes
       doc: http://its.umich.edu/accounts-access/uniqnames-passwords/two-factor-authentication
+
+    - name: Virginia Commonwealth University
+      url: https://www.vcu.edu
+      img: vcu.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.ts.vcu.edu/askit/essential-computing/information-security/2factor/
 
     - name: Virginia Tech
       url: https://www.vt.edu/

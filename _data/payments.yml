@@ -1,9 +1,13 @@
 websites:
-    - name: Amazon Payments
-      url: https://payments.amazon.com
-      twitter: AmazonPayments
-      img: amazon.png
-      tfa: No
+    - name: Amazon Pay
+      url: https://pay.amazon.com
+      img: amazonpay.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      exceptions:
+          text: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
+      doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
 
     - name: Braintree
       img: braintree.png
@@ -21,7 +25,7 @@ websites:
       sms: Yes
       exceptions:
           text: "SMS-capable phone required."
-      doc: http://server.buycraft.net/tfa
+      doc: http://help.buycraft.net/article/83-two-factor-authentication
 
     - name: Dwolla
       url: https://www.dwolla.com
@@ -50,7 +54,7 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Klarna
       url: https://www.klarna.com
@@ -61,18 +65,23 @@ websites:
       exceptions:
          text: "Software 2FA is only available for Swedish citizens with BankID."
 
-    - name: Litle & Co
-      img: litleco.png
-      twitter: litleco
-      tfa: No
-      url: https://www.litle.com
-
     - name: NETELLER
       img: neteller.png
       url: https://www.neteller.com/
       tfa: Yes
       software: Yes
-      doc: https://help.neteller.com/app/answers/detail/a_id/4670/kw/authentication
+      doc: https://support.neteller.com/ACCOUNT/Two-Factor-Authentication/85238429/What-is-two-step-authentication.htm
+
+    - name: PAYEER
+      url: https://payeer.com/en/
+      img: payeer.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      exceptions:
+          text: "Receiving codes via SMS cost 0.05$ each message. 2FA is personalizable in account settings."
+      doc: https://payeer.com/en/faq/
 
     - name: Payoneer
       url: http://www.payoneer.com/
@@ -97,6 +106,20 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.paysafecard.com/en-au/lp-products/2-step-login/
+
+    - name: Paytm
+      url: https://paytm.com/
+      img: paytm.png
+      tfa: Yes
+      sms: Yes
+      doc: https://blog.paytm.com/secure-2-step-authentication-login-on-paytms-website-6dd5a20ae1b2
+
+    - name: Payza
+      url: https://www.payza.com/
+      img: payza.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.payza.com/docs/personal-manual-advanced-security#section-how-do-i-set-up-2-factor-authentication
 
     - name: Privacy
       url: https://privacy.com/
@@ -125,8 +148,9 @@ websites:
       img: squareup.png
       tfa: Yes
       sms: Yes
+      software: Yes
       exceptions:
-        text: "Currently only US merchants, protects only Dashboard access"
+        text: "SMS only supported in US and Canada"
       doc: https://squareup.com/help/us/en/article/5593-2-step-verification
 
     - name: Square Cash
@@ -141,6 +165,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
       doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
 
     - name: Vantiv

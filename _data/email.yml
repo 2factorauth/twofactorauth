@@ -31,7 +31,7 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: GMX
       url: https://www.gmx.com/
@@ -47,6 +47,14 @@ websites:
       email: Yes
       software: Yes
       doc: https://help.hushmail.com/entries/63282756-Two-step-verification
+
+    - name: Legalmail
+      url: https://www.legalmail.it/
+      img: legalmail.png
+      tfa: No
+      twitter: InfoCert_it
+      facebook: InfoCertSpa
+      lang: it
 
     - name: Mail.com
       url: https://www.mail.com/
@@ -92,6 +100,12 @@ websites:
       img: migadu.png
       tfa: No
 
+    - name: MXroute
+      url: https://mxroute.com/
+      img: mxroute.png
+      tfa: Yes
+      software: Yes
+
     - name: Outlook.com
       url: https://outlook.com
       img: outlook.png
@@ -130,12 +144,13 @@ websites:
 
     - name: Runbox
       url: https://runbox.com
-      twitter: Runbox
       img: runbox.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://help.runbox.com/account-security/
 
     - name: T-Online
-      url: http://email.t-online.de
+      url: http://www.t-online.de/
       twitter: Telekom_hilft
       facebook: tonline.de
       img: tonline.png
@@ -149,6 +164,21 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://www.thexyz.com/account/knowledgebase/15/Enabling-two-factor-authentication.html
+
+    - name: TIM Mail
+      url: https://mail.tim.it/
+      img: tim.png
+      tfa: No
+      twitter: TIM_Official
+      facebook: TimOfficialPage
+      lang: it
+
+    - name: Virgin Media E-Mail
+      url: https://www.virginmedia.com/
+      twitter: virginmedia
+      facebook: virgin
+      img: virginmedia.png
+      tfa: No
 
     - name: Web.de
       url: https://web.de
@@ -164,13 +194,14 @@ websites:
       tfa: Yes
       email: Yes
       software: Yes
-      doc: http://id.yahoo.co.jp/security/otp.html
+      doc: https://id.yahoo.co.jp/security/otp.html
 
     - name: Yahoo Mail
       url: https://mail.yahoo.com/
       img: yahoomail.png
       tfa: Yes
       sms: Yes
+      phone: Yes
       doc: https://help.yahoo.com/kb/SLN5013.html
 
     - name: Yandex.Mail

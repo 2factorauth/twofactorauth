@@ -52,6 +52,15 @@ websites:
           text: "Only available for some account types"
       doc: /notes/fidelity/
 
+    - name: Flatex
+      url: https://www.flatex.de/
+      email_address: info@flatex.de
+      twitter: flatex
+      facebook: onlinebroker
+      img: flatex.png
+      tfa: No
+      lang: de
+
     - name: HealthEquity
       url: http://www.healthequity.com/
       twitter: healthequity
@@ -66,10 +75,12 @@ websites:
       software: Yes
       doc: https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log
 
-    - name: Loyal3
-      url: https://www.loyal3.com/
-      twitter: loyal3
-      img: loyal3.png
+    - name: John Hancock Pensions
+      url: https://www.jhancockpensions.com
+      twitter: johnhancockusa
+      facebook: johnhancock
+      email_address: My401K@jhancock.com
+      img: johnhancock.png
       tfa: No
 
     - name: Manulife
@@ -95,9 +106,10 @@ websites:
 
     - name: Nutmeg
       url: https://www.nutmeg.com/
-      twitter: thenutmegteam
       img: nutmeg.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://support.nutmeg.com/hc/en-us/articles/115000495111-How-to-set-up-and-manage-2-step-verification
 
     - name: OptionsHouse
       img: optionshouse.png
@@ -118,6 +130,13 @@ websites:
       email: Yes
       phone: Yes
       doc: https://www.personalcapital.com/safety-and-security
+
+    - name: Questrade
+      url: https://www.questrade.com
+      img: questrade.png
+      tfa: No
+      twitter: Questrade
+      status: https://twitter.com/Questrade/status/864214855078866977
 
     - name: Raizers
       url: https://www.raizers.com
@@ -170,9 +189,10 @@ websites:
 
     - name: TIAA-CREF
       url: https://www.tiaa-cref.org
-      twitter: TC_Talks
       img: tiaacref.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
 
     - name: TradeKing
       url: https://www.tradeking.com
@@ -188,8 +208,6 @@ websites:
       phone: Yes
       hardware: Yes
       doc: https://personal.vanguard.com/us/insights/article/security-codes-112015
-      exceptions:
-          text: "TFA is only available for Personal Investor accounts"
 
     - name: Wealthfront
       url: https://www.wealthfront.com/
@@ -197,7 +215,15 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://pages.wealthfront.com/faqs/how-do-i-enable-two-step-authentication-on-my-account/
+      doc: https://support.wealthfront.com/hc/en-us/articles/211004563-How-do-I-enable-two-step-authentication-for-my-account-
+
+    - name: Wealthsimple
+      url: https://www.wealthsimple.com
+      img: wealthsimple.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.wealthsimple.com/magazine/2-step-verification
 
     - name: WiseBanyan
       url: https://www.wisebanyan.com/
