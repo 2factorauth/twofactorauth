@@ -133,6 +133,8 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
+      exceptions:
+          text: "Available for university employees, not students."
       doc: https://www.emich.edu/it/security/esp/duo.php
 
     - name: EC-Council
