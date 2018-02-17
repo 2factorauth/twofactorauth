@@ -494,13 +494,6 @@ websites:
       exceptions:
           text: "Two factor authentication unavailable for 'End User' access, which is read-only."
 
-    - name: Webmin
-      url: http://www.webmin.com/
-      img: webmin.png
-      tfa: Yes
-      software: Yes
-      doc: http://doxfer.webmin.com/Webmin/Enhanced_Authentication
-
     - name: Wikia
       url: https://www.wikia.com/
       twitter: wikia
