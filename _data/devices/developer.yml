@@ -26,9 +26,6 @@ websites:
       tfa: Yes
       otp: Yes
       u2f: Yes
-      exceptions:
-          text: "Google Chrome browser required for U2F."
-          link: https://support.google.com/accounts/answer/6103523
       doc: https://confluence.atlassian.com/x/425QLg
 
     - name: Code Climate
