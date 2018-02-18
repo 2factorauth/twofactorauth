@@ -318,6 +318,15 @@ websites:
       twitter: Liftopia
       facebook: liftopia
 
+    - name: MathWorks
+      url: https://www.mathworks.com/
+      img: mathworks.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: https://www.mathworks.com/mw_account/two_step_verification/frequently-asked-questions.html
+
     - name: Mixpanel
       url: https://mixpanel.com/
       img: mixpanel.png
@@ -484,13 +493,6 @@ websites:
       doc: https://www.watchmanmonitoring.com/two-factor-authentication
       exceptions:
           text: "Two factor authentication unavailable for 'End User' access, which is read-only."
-
-    - name: Webmin
-      url: http://www.webmin.com/
-      img: webmin.png
-      tfa: Yes
-      software: Yes
-      doc: http://doxfer.webmin.com/Webmin/Enhanced_Authentication
 
     - name: Wikia
       url: https://www.wikia.com/
