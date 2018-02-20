@@ -8,13 +8,6 @@ websites:
       software: Yes
       doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
-    - name: CheckMail
-      url: https://checkmail.io/
-      img: checkmail.png
-      tfa: Yes
-      software: Yes
-      doc: https://checkmail.io/docs/setting-up-two-factor-authentication/
-
     - name: FastMail
       url: https://www.fastmail.com/
       img: fastmail.png
@@ -171,6 +164,14 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://www.thexyz.com/account/knowledgebase/15/Enabling-two-factor-authentication.html
+
+    - name: TIM Mail
+      url: https://mail.tim.it/
+      img: tim.png
+      tfa: No
+      twitter: TIM_Official
+      facebook: TimOfficialPage
+      lang: it
 
     - name: Virgin Media E-Mail
       url: https://www.virginmedia.com/

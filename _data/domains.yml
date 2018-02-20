@@ -128,6 +128,14 @@ websites:
       img: domainsatcost.png
       tfa: No
 
+    - name: DomainTools
+      url: https://www.domaintools.com/
+      twitter: DomainTools
+      facebook: domaintoolsllc
+      email_address: memberservices@domaintools.com
+      img: domaintools.png
+      tfa: No
+
     - name: Domeny.tv
       url: http://www.domeny.tv/en
       img: domenytv.png
@@ -201,7 +209,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
+      doc: https://doc.gandi.net/en/organization/users/security
 
     - name: GoDaddy
       img: godaddy.png
@@ -497,6 +505,15 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.ud-reselling.com/en/security/
+
+    - name: united-domains.de
+      url: https://www.united-domains.de/
+      img: united-domains.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.united-domains.de/faq-article/wie-aktiviere-ich-die-zweistufige-verifizierung-und-mache-mein-portfolio-login-sicherer
+      exceptions:
+        text: "A phone number is required to enable two-factor authentication."
 
     - name: Verio
       url: https://www.verio.com/
