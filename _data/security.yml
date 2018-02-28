@@ -19,6 +19,13 @@ websites:
       tfa: No
       twitter: bolehvpn
 
+    - name: Boxcryptor
+      url: https://www.boxcryptor.com
+      img: boxcryptor.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.boxcryptor.com/help/boxcryptor-account/#two-factor-authentication
+
     - name: bugcrowd
       url: https://bugcrowd.com
       img: bugcrowd.png
@@ -45,6 +52,7 @@ websites:
       url: https://www.cyberghostvpn.com
       img: cyberghost.png
       twitter: cyberghost_EN
+      facebook: cyberghostEN
       tfa: No
 
     - name: Detectify

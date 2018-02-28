@@ -4,8 +4,11 @@ websites:
       img: adobe.png
       tfa: Yes
       sms: Yes
+      software: Yes
       email: Yes
       doc: https://helpx.adobe.com/x-productkb/global/adobe-id-account-change.html#2-step-verification
+      exceptions:
+          text: "To activate 2-Step Verification, you must provide a mobile phone number."
 
     - name: Aerohive Networks
       url: https://www.aerohive.com/
@@ -80,14 +83,6 @@ websites:
       phone: Yes
       doc: http://basiscode.com/blog/two-factor-authentication-compliance-software/
 
-    - name: Boxcryptor
-      url: https://www.boxcryptor.com
-      img: boxcryptor.png
-      tfa: No
-      twitter: boxcryptor
-      facebook: boxcryptor
-      email_address: info@boxcryptor.com
-
     - name: BuiltWith
       url: https://builtwith.com
       img: builtwith.png
@@ -101,6 +96,16 @@ websites:
       tfa: No
       twitter: CAinc
       facebook: CATechnologies
+
+    - name: Chartbeat
+      url: https://chartbeat.com/
+      img: chartbeat.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888-Two-Factor-Authentication
+      exceptions:
+          text: "SMS required for 2FA."
 
     - name: Cisco Meraki
       url: https://meraki.cisco.com/
@@ -181,10 +186,11 @@ websites:
       tfa: No
 
     - name: Envato
-      url: http://envato.com
+      url: https://envato.com
       img: envato.png
-      twitter: envato
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://help.market.envato.com/hc/en-us/articles/115005592963-Two-factor-authentication-for-your-Envato-Market-account
 
     - name: Everlaw
       url: https://everlaw.com
@@ -208,6 +214,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.findmyshift.com/help/what-is-two-factor-authentication
+
+    - name: Fiverr
+      url: https://www.fiverr.com/
+      img: fiverr.png
+      tfa: No
+      twitter: FiverrSupport
+      facebook: Fiverr
 
     - name: Formstack
       url: https://www.formstack.com/
@@ -307,6 +320,15 @@ websites:
       tfa: No
       twitter: Liftopia
       facebook: liftopia
+
+    - name: MathWorks
+      url: https://www.mathworks.com/
+      img: mathworks.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: https://www.mathworks.com/mw_account/two_step_verification/frequently-asked-questions.html
 
     - name: Mixpanel
       url: https://mixpanel.com/
@@ -474,13 +496,6 @@ websites:
       doc: https://www.watchmanmonitoring.com/two-factor-authentication
       exceptions:
           text: "Two factor authentication unavailable for 'End User' access, which is read-only."
-
-    - name: Webmin
-      url: http://www.webmin.com/
-      img: webmin.png
-      tfa: Yes
-      software: Yes
-      doc: http://doxfer.webmin.com/Webmin/Enhanced_Authentication
 
     - name: Wikia
       url: https://www.wikia.com/
