@@ -25,6 +25,13 @@ websites:
       software: Yes
       doc: https://secure.logmein.com/welcome/webhelp/EN/Pro/LogMeIn/c_common_Security_TwoStep.html
 
+    - name: Linksys Smart Wi-Fi
+      url: https://www.linksyssmartwifi.com
+      twitter: linksyscares
+      facebook: linksys
+      img: linksyssmartwifi.png
+      tfa: No
+
     - name: LogMeIn
       url: https://secure.logmein.com/
       img: logmein.png
@@ -51,6 +58,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.syspectr.com/en/faq/how-do-i-activate-deactivate-two-factor-authentication-for-my-account
+
+    - name: RealVNC
+      url: https://www.realvnc.com
+      img: realvnc.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.realvnc.com/en/connect/docs/multi-factor-auth.html#protecting-your-realvnc-account
 
     - name: TeamViewer
       url: https://www.teamviewer.com

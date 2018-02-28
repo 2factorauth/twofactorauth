@@ -163,6 +163,14 @@ websites:
       phone: Yes
       doc: https://www.mybankofinternet.com/tob/live/usp-core/static/help.html#login_security
 
+    - name: Caisse D'Epargne
+      url: https://www.caisse-epargne.fr/
+      twitter: CaissEpargneSAV
+      facebook: Caisse.Epargne
+      img: Caisse_Epargne.png
+      tfa: No
+      lang: fr
+
     - name: Capital One
       url: https://www.capitalone.com/
       img: capitalone.png
@@ -763,6 +771,13 @@ websites:
       tfa: No
       facebook: ServiceCreditUnion
 
+    - name: Servus Credit Union
+      url: https://www.servus.ca
+      twitter: ServusCU
+      facebook: ServusCU
+      img: servus-cu.png
+      tfa: No
+
     - name: Simple
       url: https://www.simple.com/
       img: simple.png
@@ -898,6 +913,15 @@ websites:
       sms: Yes
       phone: Yes
       doc: https://www.umpquabank.com/personal-banking/online-banking-and-billpay/security-faqs/
+
+    - name: Unify Financial Credit Union
+      url: https://www.unifyfcu.com
+      img: UnifyFCU.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.unifyfcu.com/multi-factor-authentication-keep-bad-guys-out
 
     - name: Union Bank
       url: https://www.unionbank.com/
