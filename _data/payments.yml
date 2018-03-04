@@ -5,6 +5,18 @@ websites:
       img: amazon.png
       bch: No
 
+    - name: Bitcoin payment processing api
+      url: https://btcapi.org/
+      img: btcapi.png
+      twitter: BtcApiGateway
+      facebook: BTCApiorg-1960470290837289
+      email_address: admin@btcapi.org
+      country: US
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      doc: https://btcapi.org/docs
+      
     - name: Bitpay
       url: https://bitpay.com
       img: bitpay.png
@@ -135,6 +147,15 @@ websites:
       img: paysafecard.png
       twitter: Paysafecard
       bch: No
+      
+    - name: PaySrc
+      url: https://paysrc.com/
+      img: paysrc.png
+      twitter: paysrc_com
+      email_address: support@paysrc.com
+      bch: Yes
+      btc: No
+      othercrypto: No
 
     - name: Privacy
       url: https://privacy.com/
@@ -152,6 +173,14 @@ websites:
     - name: Rocketr
       url: https://rocketr.net
       img: rocketr.png
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      
+    - name: Selly.gg
+      url: https://selly.gg
+      img: sellygg.png
+      twitter: SellyLLC
       bch: Yes
       btc: Yes
       othercrypto: Yes
