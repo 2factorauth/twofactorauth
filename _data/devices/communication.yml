@@ -24,6 +24,15 @@ websites:
       img: disqus.png
       tfa: No
 
+    - name: Discord
+      url: https://discordapp.com/
+      twitter: discordapp
+      img: discordapp.png
+      tfa: Yes
+      otp: Yes
+      u2f: No
+      doc: https://support.discordapp.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication
+
     - name: Fleep
       url: https://fleep.io
       twitter: fleepio
