@@ -76,12 +76,12 @@ websites:
       software: Yes
       doc: https://www.cyon.ch/support/a/225/wie-aktiviere-ich-die-zwei-schritt-verifizierung
 
-    - name: dediserve
-      url: https://dediserve.com
+    - name: DediServe
+      url: https://www.dediserve.com
       img: dediserve.png
       tfa: Yes
       software: Yes
-      doc: http://news.dediserve.com/2016/12/01/2-factor-authentication-now-launched/
+      doc: https://www.dediserve.com/blog/2016/12/01/2-factor-authentication-now-launched
 
     - name: Dreamhost
       url: https://dreamhost.com
@@ -408,6 +408,14 @@ websites:
       exceptions:
           text: "SMS is required for password recovery."
       doc: https://www.upcloud.com/support/two-factor-authentication/
+
+    - name: VentraIP
+      url: https://ventraip.com.au
+      img: ventraip.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      doc: https://ventraip.com.au/blog/products-and-services/vipcontrol-2-1/
 
     - name: Versio
       url: https://www.versio.nl

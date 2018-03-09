@@ -99,14 +99,10 @@ websites:
       twitter: EBGamesAus
 
     - name: eBay
-      url: http://ebay.com
+      url: https://www.ebay.com
       img: ebay.png
       tfa: Yes
-      hardware: Yes
-      software: Yes
-      exceptions:
-          text: "eBay only supports 2FA in some countries."
-      doc: http://pages.ebay.com/securitykey/faq.html
+      sms: Yes
 
     - name: ePRICE
       url: https://www.eprice.it/
@@ -197,6 +193,13 @@ websites:
       url: https://jet.com
       twitter: JetHeads
       img: jet.png
+      tfa: No
+
+    - name: Kobo
+      url: https://www.kobo.com
+      twitter: KoboHelp
+      facebook: Kobo
+      img: kobo.png
       tfa: No
 
     - name: Kohl's
