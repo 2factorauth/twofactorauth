@@ -13,6 +13,17 @@ websites:
       tfa: No
       twitter: canrevagency
 
+    - name: DigiD
+      url: https://www.digid.nl/
+      img: digid.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      phone: Yes
+      doc: https://www.digid.nl/nl/vraag-en-antwoord/hoe-kan-ik-de-sms-controle-toevoegen/
+      exceptions:
+        text: "Software 2FA requires DigiD app and SMS or phone call. One account per device."
+
     - name: Federal Student Aid
       url: https://studentaid.ed.gov
       img: federalstudentaid.png
@@ -31,7 +42,8 @@ websites:
       img: hmrc.png
       tfa: Yes
       sms: Yes
-      doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-sms-text-messages
+      software: Yes
+      doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-text-messages
 
     - name: myGov
       url: https://my.gov.au

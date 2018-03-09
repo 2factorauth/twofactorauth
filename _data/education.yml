@@ -118,6 +118,15 @@ websites:
       facebook: duolingo
       tfa: No
 
+    - name: East Carolina University
+      url: https://www.ecu.edu
+      img: ecu.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://www.ecu.edu/cs-itcs/office365/multi-factor-authentication.cfm
+
     - name: EC-Council
       url: https://www.eccouncil.org
       img: eccouncil.png
@@ -172,7 +181,7 @@ websites:
       phone: Yes
       hardware: Yes
       software: Yes
-      doc: http://huit.harvard.edu/twostep
+      doc: https://huit.harvard.edu/twostep
 
     - name: Illinois Institute Of Technology
       url: https://web.iit.edu/
@@ -190,6 +199,16 @@ websites:
       tfa: No
       twitter: ISACANews
       facebook: ISACAHQ
+
+    - name: Massachusetts Institute of Technology
+      url: https://web.mit.edu/
+      img: mit.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://kb.mit.edu/confluence/display/istcontrib/Duo+Authentication+Landing+Page
 
     - name: Montclair State University
       url: https://www.montclair.edu/employee-services/

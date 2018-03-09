@@ -25,6 +25,8 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+        text: "Premium account required for Duo, YubiKey and FIDO U2F."
       doc: https://help.bitwarden.com/article/setup-two-step-login/
 
     - name: Centrify
@@ -92,6 +94,7 @@ websites:
       sms: Yes
       software: Yes
       phone: Yes
+      email: Yes
       hardware: Yes
       doc: https://help.okta.com/en/prod/Content/Topics/Security/MFA.htm
 
@@ -118,7 +121,8 @@ websites:
       tfa: Yes
       email: Yes
       sms: Yes
-      doc: https://help.roboform.com/hc/en-us/articles/115005043767-How-to-enable-One-Time-Password-OTP-
+      software: Yes
+      doc: https://help.roboform.com/hc/en-us/articles/115002729512-Setting-up-Google-Authenticator-for-your-account
 
     - name: SAASPASS
       url: https://www.saaspass.com

@@ -34,6 +34,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
       doc: https://support.bitfinex.com/hc/en-us/sections/203192029-Security
 
     - name: BitGo
@@ -59,13 +60,6 @@ websites:
       software: Yes
       doc: https://bitpay.com/two-factor
 
-    - name: Bitsewa
-      url: https://www.bitsewa.com
-      img: bitsewa.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.bitsewa.com/terms.php#2fa
-
     - name: Bitstamp
       url: https://bitstamp.net
       img: bitstamp.png
@@ -88,7 +82,7 @@ websites:
       email: Yes
       software: Yes
       hardware: Yes
-      doc: https://blockchain.info/wallet/support-pages
+      doc: https://support.blockchain.com/hc/en-us/articles/211164103-Enable-2-Step-Verification-2FA-
 
     - name: BTCJam
       url: https://btcjam.com/

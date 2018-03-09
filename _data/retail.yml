@@ -39,6 +39,14 @@ websites:
           text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
       doc: http://support.apple.com/kb/ht5570
 
+    - name: Arcaplanet
+      url: https://www.arcaplanet.it/
+      img: arcaplanet.png
+      tfa: No
+      twitter: Arcaplanet
+      facebook: Arcaplanet
+      lang: it
+
     - name: Big W
       url: https://www.bigw.com.au/
       img: bigw.png
@@ -91,14 +99,10 @@ websites:
       twitter: EBGamesAus
 
     - name: eBay
-      url: http://ebay.com
+      url: https://www.ebay.com
       img: ebay.png
       tfa: Yes
-      hardware: Yes
-      software: Yes
-      exceptions:
-          text: "eBay only supports 2FA in some countries."
-      doc: http://pages.ebay.com/securitykey/faq.html
+      sms: Yes
 
     - name: ePRICE
       url: https://www.eprice.it/
@@ -189,6 +193,13 @@ websites:
       url: https://jet.com
       twitter: JetHeads
       img: jet.png
+      tfa: No
+
+    - name: Kobo
+      url: https://www.kobo.com
+      twitter: KoboHelp
+      facebook: Kobo
+      img: kobo.png
       tfa: No
 
     - name: Kohl's

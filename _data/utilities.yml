@@ -244,6 +244,14 @@ websites:
       img: sdge.png
       tfa: No
 
+    - name: sipgate
+      url: https://www.sipgate.de/
+      twitter: sipgateDE
+      facebook: sipgate
+      img: sipgate.png
+      tfa: No
+      lang: de
+
     - name: Sonic
       url: https://www.sonic.com/
       img: sonic.png
@@ -269,10 +277,9 @@ websites:
 
     - name: T-Mobile
       url: https://www.t-mobile.com/
-      twitter: TMobileHelp
-      facebook: TMobile
       img: tmobile.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
 
     - name: Telia (Sweden)
       url: https://www.telia.se/
