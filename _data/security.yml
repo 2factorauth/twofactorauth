@@ -87,7 +87,7 @@ websites:
       twitter: EntrustDatacard
       facebook: EntrustDatacard
 
-    - name: ExpresssVPN
+    - name: ExpressVPN
       img: expressvpn.png
       url: https://www.expressvpn.com
       bch: No
@@ -130,9 +130,10 @@ websites:
       twitter: mullvadnet
       email_address: support@mullvad.net
       img: mullvad.png
-      bch: no
+      bch: yes
       btc: yes
       othercrypto: no
+      doc: https://mullvad.net/en/blog/2018/2/13/bitcoin-cash-now-accepted/
 
     - name: NordVPN
       url: https://www.nordvpn.com
@@ -141,6 +142,14 @@ websites:
       btc: Yes
       twitter: nordvpn
       facebook: NordVPN
+      
+    - name: nVpn
+      url: https://nvpn.net/
+      img: nvpn.png
+      twitter: nVpnNet
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: OpenDNS
       url: https://www.opendns.com/
@@ -156,6 +165,16 @@ websites:
       btc: Yes
       twitter: perfectprivacy
       facebook: perfect.privacy
+      
+    - name: Premiumize.me
+      url: https://www.premiumize.me
+      img: premiumizeme.png
+      twitter: premiumizeme
+      facebook: PremiumizeMe
+      email_address: acceptbitcoin@guyrimmer.com
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: Prey
       url: https://www.preyproject.com

@@ -51,12 +51,9 @@ websites:
     - name: Bread
       url: https://breadapp.com/
       img: bread.png
-      bch: No
+      bch: Yes
       btc: Yes
       othercrypto: Yes
-      doc: https://breadapp.com/blog/breadwallet-plan-bitcoin-cash-bch/
-      exceptions:
-          text: "Currently only allows withdrawals."
 
     - name: BTC.com
       url: https://wallet.btc.com/
@@ -85,6 +82,17 @@ websites:
       bch: Yes
       btc: Yes
       othercrypto: No
+
+    - name: Edge
+      url: https://edgesecure.co
+      img: edge.png
+      twitter: EdgeSecure
+      facebook: EdgeSec
+      email_address: support@edgesecure.co
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://blog.edgesecure.co/edge-wallet-is-live-d844cc483210
 
     - name: Electron Cash
       url: https://electroncash.org/
