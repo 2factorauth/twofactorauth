@@ -581,9 +581,12 @@ websites:
     - name: Newegg
       url: https://www.newegg.com
       img: newegg.png
-      bch: No
+      bch: Yes
+      btc: Yes
       twitter: Newegg
       facebook: Newegg
+      exceptions:
+        text: Newegg has some restrictions on what items are allowed to be paid with cryptocurrencies.
 
     - name: Nordstrom
       url: http://shop.nordstrom.com
