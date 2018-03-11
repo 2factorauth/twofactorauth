@@ -17,6 +17,16 @@ websites:
       bch: Yes
       btc: Yes
       othercrypto: Yes
+      
+    - name: 9figures
+      url: https://9figures.co.uk/
+      img: 9figures.png
+      facebook: 9figuresuk
+      email_address: 9figurescompany@gmail.com
+      bch: Yes
+      btc: No
+      othercrypto: Yes
+      doc: https://9figures.co.uk/blogs/news/accepting-cryptocurrency-1
 
     - name: Adafruit
       url: https://www.adafruit.com
@@ -571,9 +581,12 @@ websites:
     - name: Newegg
       url: https://www.newegg.com
       img: newegg.png
-      bch: No
+      bch: Yes
+      btc: Yes
       twitter: Newegg
       facebook: Newegg
+      exceptions:
+        text: Newegg has some restrictions on what items are allowed to be paid with cryptocurrencies.
 
     - name: Nordstrom
       url: http://shop.nordstrom.com
