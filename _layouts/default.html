@@ -34,119 +34,30 @@
 </head>
 
 <body>
+<!-- Global includes -->
+{% include js-warning.html %}
+{% include header.html %}
 
+<!-- 'content' loads pages from the root (index.html/*.html) -->
 {{ content }}
 
 {% if page.id != "adult-listings" %}
-
-  <!-- ./scripts/python/bchAccepted.py must be run at build time to generate/update the following include: -->
+  <!-- ./scripts/python/bchAccepted.py must be run at build time to generate/update the following 'count_support.html' include -->
   {% include count_support.html %}
-
-  <div class="ui center aligned segment twitter-panel">
-    <a class="twitter-timeline" data-dnt="true" data-theme="light" data-width="705" href="https://twitter.com/search?q=usebitcoin.cash" data-widget-id="939960678953218048">Tweets about usebitcoin.cash</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <br><br>
-    <a href="https://twitter.com/useBitcoinCash?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="false">Follow @useBitcoinCash</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-
-  <div class="subfooter ui center aligned segment more-info">
-    <div class="inner">
-      <h3>More information for...</h3>
-      <div class="ui buttons">
-        <button id="ama-merchant" class="ui huge blue inverted button">Merchants</button>
-        <div class="or"></div>
-        <button id="ama-customer" class="ui huge orange inverted button">Customers</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="ui center aligned asset-panel">
-    <p><b>Looking for various types of Bitcoin Cash logos, images, POS signage, etc.?</b><br>Below you'll find high-resolution assets provided by community members.</p>
-    <a id="assets">
-      <i class="image icon"></i>
-      Image Assets
-    </a>
-    <a id="art-collections">
-      <i class="qrcode icon"></i>
-      Artwork Collections
-    </a>
-  </div>
-
-  {% endif %}
-
-  <div class="ui center aligned ticker">
-    <ul id="ticker_value">
-      <li>Loading&hellip;</li>
-    </ul>
-  </div>
-
-  <div class="footer ui center aligned segment">
-    <p>Spot an issue, or want to add a site? <a class="submit-new" href="/add" target="_blank" data-tooltip="Fill out a quick form" data-position="top center" data-inverted="">Let us know</a> or <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/blob/master/CONTRIBUTING.md" target="_blank" data-tooltip="Learn more about contributing" data-position="top center" data-inverted="">contribute</a> directly on <i class="github icon"></i><a href="{{ site.repo }}" target="_blank" data-tooltip="The source code for this site" data-position="top center" data-inverted="">GitHub</a>.</p>
-    <p>Made with <i class="red heart small icon"></i> by <a href="https://github.com/acceptbitcoincash" target="_blank" data-tooltip="Our organization on Github" data-position="top center" data-inverted=""><em>the</em> <b>Accept Bitcoin Cash</b> <em>initiative</em></a>. &nbsp; <a id="show-disclaimer" data-tooltip="Some important info to know" data-position="top center" data-inverted=""><i class="warning sign orange icon"></i>Caution!</a></p>
-    <p class="version"><em>Last modified</em> <b>{{ site.time }}</b></p>
-  </div>
-
-  {% include fab.html %}
-
-{% if page.id != "adult-listings" %}
-  {% include modals/add-site-form.html %}
-  {% include modals/merchants.html %}
-  {% include modals/customers.html %}
-  {% include modals/image-assets.html %}
-  {% include modals/art-collections.html %}
-  {% include modals/disclaimer.html %}
+  {% include segment/twitter.html %}
+  {% include segment/moreinfo.html %}
+  {% include segment/assets.html %}
+{% else %}
+  {% include modals/adult-warning.html %}
 {% endif %}
 
-<!-- 3rd Party Libraries -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"
-        integrity="sha384-PSPYZ405uwFeU9YdtB0IByYECMwUIEGlSjmq1V7MD1zJLZ2VEw+8ko9hcpILlAjZ"
-        crossorigin="anonymous"></script>
-<script src="/js/jquery.unveil.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.13.0/jets.min.js"
-        integrity="sha384-3XpZKO/6IouOQmpAvQxLkXEb/pwxGCYqUo139/l6M12U3HmeWnna/qKWIgIJTLPV"
-        crossorigin="anonymous"></script>
-<!-- TFA JS -->
-<script src="/js/ticker.js"></script>
-<script src="/js/elevator.min.js"></script>
-<script src="/js/fixto.min.js"></script>
-<script src="/js/app.js"></script>
-
-<!-- Adult section warning modal -->
-{% if page.id == "adult-listings" %}
-  <script>
-    $(document).ready(function () {
-
-      $('#adult-warning-checkbox').click(function(){
-        if($(this).prop('checked')) {
-          createCookie('hideAdultWarning')
-        } else {
-          eraseCookie('hideAdultWarning')
-        }
-      });
-
-      if (!readCookie('hideAdultWarning')) {
-        $('.ui.modal.adult-warning')
-          .modal('setting','closable', false)
-          .modal('show');
-      }
-
-    });
-  </script>
-{% endif %}
-
-
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107218359-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
-
-  gtag('config', 'UA-107218359-1');
-</script>
+<!-- Global includes -->
+{% include modals/add-site-form.html %}
+{% include modals/disclaimer.html %}
+{% include segment/ticker.html %}
+{% include fab.html %}
+{% include footer.html %}
+{% include scripts.html %}
 
 </body>
 </html>
