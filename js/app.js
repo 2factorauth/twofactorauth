@@ -61,13 +61,6 @@ $(document).ready(function () {
     body.stop().animate({scrollTop: $('#maingrid').offset().top - 64}, 500, 'swing');
   });
 
-  // Scroll to the search field and focus it via floating action button and filter bar link
-  $('.fab button:nth-child(2), #top-btn-search').on('click', function () {
-    var body = $("html, body");
-    body.stop().animate({scrollTop: $('#search-wrapper').offset().top}, 500, 'swing');
-    $('#search-wrapper input').focus();
-  });
-
   // Clear and collapse all open categories
   $('.fab button:nth-child(3)').on('click', function () {
     if (isSearching) jets.options.didSearch( $('#bch-merchant-search').val() );
