@@ -1138,6 +1138,11 @@ span.progress {
     margin: 0;
     line-height: 1.8;
 
+    &.stats {
+      margin-top: 1rem;
+      line-height: 1;
+    }
+
     &.version {
       font-size: 0.88rem;
       color: $gray-lighter;
