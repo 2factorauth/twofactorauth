@@ -17,7 +17,8 @@ require 'kwalify'
 # List all section files
 @section_files = [
   '_data/sections.yml',
-  '_data/adult-sections.yml'
+  '_data/adult-sections.yml',
+  '_data/donation-sections.yml'
 ]
 
 # Send error message
@@ -106,12 +107,9 @@ end
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
 begin
-  #@section_files.each do |file|
-  #  process_sections_file(file)
-  #end
-
-  process_sections_file('_data/sections.yml')
-  process_sections_file('_data/adult-sections.yml')
+  @section_files.each do |file|
+    process_sections_file(file)
+  end
 
   exit 1 if @output > 0
 rescue Psych::SyntaxError => e
