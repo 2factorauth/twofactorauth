@@ -62,10 +62,12 @@ websites:
 
     - name: Con Edison
       url: https://www.coned.com/
-      twitter: ConEdison
-      facebook: ConEdison
       img: coned.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://www.coned.com/en/accounts-billing/new-my-account-faqs
 
     - name: Cox
       url: https://www.cox.com/
@@ -277,10 +279,9 @@ websites:
 
     - name: T-Mobile
       url: https://www.t-mobile.com/
-      twitter: TMobileHelp
-      facebook: TMobile
       img: tmobile.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
 
     - name: Telia (Sweden)
       url: https://www.telia.se/

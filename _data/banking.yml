@@ -163,6 +163,14 @@ websites:
       phone: Yes
       doc: https://www.mybankofinternet.com/tob/live/usp-core/static/help.html#login_security
 
+    - name: Caisse D'Epargne
+      url: https://www.caisse-epargne.fr/
+      twitter: CaissEpargneSAV
+      facebook: Caisse.Epargne
+      img: Caisse_Epargne.png
+      tfa: No
+      lang: fr
+
     - name: Capital One
       url: https://www.capitalone.com/
       img: capitalone.png
@@ -763,6 +771,13 @@ websites:
       tfa: No
       facebook: ServiceCreditUnion
 
+    - name: Servus Credit Union
+      url: https://www.servus.ca
+      twitter: ServusCU
+      facebook: ServusCU
+      img: servus-cu.png
+      tfa: No
+
     - name: Simple
       url: https://www.simple.com/
       img: simple.png
@@ -850,10 +865,11 @@ websites:
 
     - name: TD Bank
       url: https://www.tdbank.com
-      twitter: TDBank_US
-      facebook: TDBank
       img: tdbank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.td.com/privacy-and-security/privacy-and-security/how-we-protect-you/online-security/2fa.jsp
 
     - name: TD Canada Trust
       url: https://www.tdcanadatrust.com
