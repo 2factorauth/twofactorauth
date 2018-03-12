@@ -177,6 +177,10 @@ p {
   padding: 30px 20px 40px;
 
   &.adult {
+    background: rgba(34, 3, 26, 0.8);
+  }
+
+  &.donations {
     background: rgba(24, 3, 34, 0.8);
   }
 
@@ -546,6 +550,11 @@ p {
   margin-top: 4rem;
 
   &.adult {
+    background: rgba(181, 85, 165, 0.45);
+    margin-bottom: 4rem;
+  }
+
+  &.donations {
     background: rgba(134, 85, 181, 0.45);
     margin-bottom: 4rem;
   }
@@ -601,11 +610,11 @@ p {
       }
 
       &.adult {
-        border-color: #7B00AB;
+        border-color: rgb(171, 0, 134);
+      }
 
-        &.active-icon {
-          background-color: #f0f;
-        }
+      &.donations {
+        border-color: #7B00AB;
       }
     }
 
