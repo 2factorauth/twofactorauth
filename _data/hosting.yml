@@ -550,6 +550,8 @@ websites:
       bch: Yes
       btc: Yes
       othercrypto: No
+      exceptions: 
+        text: "Crypto-Payments only for existing customers/non-new accounts"
 
     - name: WebFaction
       url: https://www.webfaction.com

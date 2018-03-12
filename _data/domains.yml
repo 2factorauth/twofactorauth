@@ -160,6 +160,8 @@ websites:
       btc: yes
       othercrypto: yes
       doc: https://www.easydns.com/blog/2018/01/08/0-confirmations-now-accepting-bitcoin-cash-as-a-payment-method/
+      exceptions: 
+        text: "Crypto-Payments only for existing customers/non-new accounts"
 
     - name: eNom
       url: https://www.enom.com/
@@ -200,7 +202,7 @@ websites:
     - name: Gandi
       url: https://gandi.net
       img: gandi.png
-      bch: No
+      bch: Yes
       btc: Yes
       twitter: gandibar
       facebook: GandiBar
