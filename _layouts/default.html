@@ -41,7 +41,7 @@
 <!-- 'content' loads pages from the root (index.html/*.html) -->
 {{ content }}
 
-{% if page.id != "adult-listings" %}
+{% if page.id == "home" %}
   <!-- ./scripts/python/bchAccepted.py must be run at build time to generate/update the following 'count_support.html' include -->
   {% include count_support.html %}
   {% include segment/twitter.html %}
