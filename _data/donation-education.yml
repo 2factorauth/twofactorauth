@@ -1,0 +1,40 @@
+websites:
+  - name: Deep Center
+    url: http://www.deepkids.com/
+    img: deepkids.png
+    twitter: deepkids
+    bch: Yes
+    btc: Yes
+    othercrypto: No
+    doc: http://www.deepkids.com/give
+
+  - name: Gyanada Foundation
+    url: http://gyanada.org/
+    img: gyanada.png
+    twitter: Gyanada_Fdn
+    facebook: gyanadafoundation
+    bch: Yes
+    btc: No
+    othercrypto: No
+    exceptions:
+      text: "BCH donation address listed in Twitter profile"
+
+  - name: MAPS
+    url: http://www.maps.org/
+    img: maps.png
+    twitter: maps
+    facebook: mapsmdma
+    bch: Yes
+    btc: Yes
+    othercrypto: Yes
+    doc: http://www.maps.org/donate-redirect/cryptocurrency
+
+  - name: Pathways to Education
+    url: https://www.pathwaystoeducation.ca/
+    img: pathways.png
+    twitter: PathwaysCanada
+    facebook: pathwaystoeducationcanada
+    bch: Yes
+    btc: Yes
+    othercrypto: Yes
+    doc: https://www.pathwaystoeducation.ca/donate-bitcoin-cash
