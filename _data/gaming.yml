@@ -36,6 +36,15 @@ websites:
       bch: Yes
       btc: Yes
       othercrypto: No
+      
+    - name: CJS CD Keys
+      url: https://www.cjs-cdkeys.com
+      img: CJSCDKEYS.png
+      twitter: CJS_CD_Keys
+      facebook: CJSCDKEYS
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: Curse
       url: https://www.curse.com/
@@ -302,10 +311,12 @@ websites:
       twitter: wildstar
       facebook: WildstarOnline
 
-    - name: Xbox Live
+    - name: Xbox Live (with Microsoft Account)
       url: https://www.xbox.com/live
       img: xbox.png
-      bch: No
+      bch: Yes
+      btc: Yes
+      othercrypto: No
       twitter: XboxSupport
       facebook: Xbox
 
