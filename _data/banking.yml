@@ -104,6 +104,13 @@ websites:
       hardware: Yes
       doc: https://www.bochk.com/en/security/2factorauthentication.html
 
+    - name: Bank Zachodni WBK
+      url: https://www.bzwbk.pl
+      img: bzwbk.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.bzwbk.pl/firmy/bankowosc-elektroniczna/bzwbk24-mini-firma/metody-autoryzacji/metody-autoryzacji.html
+
     - name: Barclays UK
       url: https://www.barclays.co.uk/
       img: barclays.png
