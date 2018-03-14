@@ -67,8 +67,8 @@ $(document).ready(function () {
     if (isSearching == false) {
       $('.website-table').slideUp();
       var body = $("html, body");
-      body.stop().animate({scrollTop: $('.category h5 i.active-icon').offset().top - 120}, 1000, 'swing');
-      $('.category h5 i').removeClass('active-icon');
+      body.stop().animate({scrollTop: $('.category h5.active-icon').offset().top - 120}, 1000, 'swing');
+      $('.category h5').removeClass('active-icon');
       $(this).css('display', 'none');
       document.location.hash = '';
     } else {
@@ -219,7 +219,7 @@ var jets = new Jets({
     document.location.hash = '';
     $('#no-results').css('display', 'none');
     $('#maingrid').css('visibility', 'visible');
-    $('.category h5 i').removeClass('active-icon');
+    $('.category h5').removeClass('active-icon');
     // Two separate table layouts are used for desktop/mobile
     var platform = ($(window).width() > 768) ? 'desktop' : 'mobile';
     var content = $('.' + platform + '-table .bch-merchant-content');
@@ -317,7 +317,7 @@ function BCHfilter() {
  * @returns {*|jQuery} A true or false value, whether the category is open
  */
 function isOpen(category) {
-  return $('#' + category + ' h5 i').hasClass('active-icon');
+  return $('#' + category + ' h5').hasClass('active-icon');
 }
 
 /**
@@ -327,7 +327,7 @@ function isOpen(category) {
  */
 function openCategory(category) {
   // Close all active categories
-  $('.category h5 i').removeClass('active-icon');
+  $('.category h5').removeClass('active-icon');
   $('.website-table').css('display', 'none');
   $('.fab button:nth-child(3)').css('display', 'inline-block');
   BCHfilter();
@@ -335,8 +335,9 @@ function openCategory(category) {
   // Place the category being viewed in the URL bar
   window.location.hash = category;
 
+  var cat = $('#' + category + ' h5');
   var icon = $('#' + category + ' h5 i');
-  icon.addClass('active-icon');
+  cat.addClass('active-icon');
   if ($(window).width() > 768) {
     $('#' + category + '-desktoptable').slideDown('slow');
 
@@ -361,7 +362,7 @@ function openCategory(category) {
  */
 function closeCategory(category) {
   $('.' + category + '-table').slideUp();
-  $('#' + category + ' h5 i').removeClass('active-icon');
+  $('#' + category + ' h5').removeClass('active-icon');
   history.pushState('', document.title, window.location.pathname);
   $('.fab button:nth-child(3)').css('display', 'none');
 }
