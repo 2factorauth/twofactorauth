@@ -176,11 +176,11 @@ p {
   margin: 0 0 40px;
   padding: 30px 20px 40px;
 
-  &.adult {
+  &.adult-listings {
     background: rgba(34, 3, 26, 0.8);
   }
 
-  &.donations {
+  &.donation-listings {
     background: rgba(24, 3, 34, 0.8);
   }
 
@@ -549,13 +549,46 @@ p {
   padding: 40px 20px;
   margin-top: 4rem;
 
-  &.adult {
-    background: rgba(181, 85, 165, 0.45);
+  &.nav {
+    background: none;
+    margin-bottom: -5.2rem;
+    padding: 0;
+
+    div.buttons {
+      padding: 0 1rem;
+
+      a.ui.button {
+        padding: 0.7rem 1.5rem;
+        font-weight: normal;
+        font-size: 1.2rem;
+
+        &.active-nav {
+          font-weight: bold;
+          padding-bottom: 0;
+          //border-bottom: 7px solid rgba(0,0,0,0.2);
+          border-bottom: 7px solid rgba(240, 240, 240, 0.3);
+        }
+
+        &.blue {
+          background-color: $blue;
+
+          &:hover {
+            background-color: $blue-dark;
+          }
+        }
+      }
+    }
+  }
+
+  &.donation-listings {
+    border-color: $violet-light;
+    background: rgba(134, 85, 181, 0.45);
     margin-bottom: 4rem;
   }
 
-  &.donations {
-    background: rgba(134, 85, 181, 0.45);
+  &.adult-listings {
+    border-color: $pink-light;
+    background: rgba(181, 85, 165, 0.45);
     margin-bottom: 4rem;
   }
 }
@@ -577,17 +610,6 @@ p {
   padding: 18px 0;
 }
 
-.active-icon {
-  background-color: $orange;
-  color: white;
-  box-shadow: 0 0 0 3px $orange-dark inset !important;
-
-  & + small {
-    color: $orange;
-    border: 3px solid $orange-dark !important;
-  }
-}
-
 .category {
   cursor: pointer;
   padding-top: 20px;
@@ -604,18 +626,6 @@ p {
       border-radius: 10px !important;
       border-color: $orange-light;
       margin-bottom: 0.8rem;
-
-      &.active-icon {
-        background-color: $orange;
-      }
-
-      &.adult {
-        border-color: rgb(171, 0, 134);
-      }
-
-      &.donations {
-        border-color: #7B00AB;
-      }
     }
 
     small {
@@ -628,9 +638,28 @@ p {
       font-size: 1rem;
     }
 
-    &:hover i, &:hover i + small {
-      @extend .active-icon;
-      color: #fff;
+    &:hover i.circular.icon, &:hover i.circular.icon + small {
+      background-color: $orange-light;
+      border-color: $orange;
+      color: $orange-dark;
+    }
+
+    &:hover i.circular.icon {
+      box-shadow: 0 0 0 3px $orange inset;
+    }
+
+    &.active-icon {
+      i.circular.icon {
+        background-color: $orange;
+        color: white;
+        box-shadow: 0 0 0 3px $orange-dark inset;
+
+        & + small {
+          border: 3px solid $orange-dark;
+          background-color: $orange;
+          color: white;
+        }
+      }
     }
   }
 }
@@ -679,6 +708,125 @@ p {
 
 .ui.table td.twitter {
   text-align: center;
+}
+
+
+.donation-listings {
+  .category h5.ui.icon.header {
+    i.circular.icon {
+      box-shadow: 0 0 0 3px $violet-light inset;
+      border-color: $violet-light;
+
+      & + small {
+        border: 3px solid $violet-light;
+        //box-shadow: 0 0 0 3px $orange-dark inset;
+      }
+    }
+
+    &:hover i.circular.icon, &:hover i.circular.icon + small {
+      background-color: $violet-lighter;
+      border-color: $violet;
+      color: $violet-dark;
+    }
+
+    &:hover i.circular.icon {
+      box-shadow: 0 0 0 3px $violet inset;
+    }
+
+    &.active-icon {
+      i.circular.icon {
+        box-shadow: 0 0 0 3px $violet-light inset;
+        background-color: $violet;
+        border-color: $violet-light;
+        color: white;
+
+        & + small {
+          border: 3px solid $violet-light;
+          background-color: $violet;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .ui.table.content-wrapper {
+    border-color: $violet-light;
+  }
+
+  .ui.table thead th {
+    color: $violet-dark;
+
+    &:first-child {
+      color: white;
+      background: $violet-dark;
+      background: -moz-linear-gradient(left, $violet-dark 0%, $violet-dark 58%, #f9fafb 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, $violet-dark), color-stop(58%, $violet-dark), color-stop(100%, #f9fafb));
+      background: -webkit-linear-gradient(left, $violet-dark 0%, $violet-dark 58%, #f9fafb 100%);
+      background: -o-linear-gradient(left, $violet-dark 0%, $violet-dark 58%, #f9fafb 100%);
+      background: -ms-linear-gradient(left, $violet-dark 0%, $violet-dark 58%, #f9fafb 100%);
+      background: linear-gradient(to right, $violet-dark 0%, $violet-dark 58%, #f9fafb 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$violet-dark', endColorstr='#f9fafb', GradientType=1 );
+    }
+  }
+}
+
+.adult-listings {
+  .category h5.ui.icon.header {
+    i.circular.icon {
+      box-shadow: 0 0 0 3px $pink-light inset;
+      border-color: $pink-light;
+
+      & + small {
+        border: 3px solid $pink-light;
+        //box-shadow: 0 0 0 3px $orange-dark inset;
+      }
+    }
+
+    &:hover i.circular.icon, &:hover i.circular.icon + small {
+      background-color: $pink-light;
+      border-color: $pink;
+      color: $pink-dark;
+    }
+
+    &:hover i.circular.icon {
+      box-shadow: 0 0 0 3px $pink inset;
+    }
+
+    &.active-icon {
+      i.circular.icon {
+        box-shadow: 0 0 0 3px $pink-light inset;
+        background-color: $pink;
+        border-color: $pink-light;
+        color: white;
+
+        & + small {
+          border: 3px solid $pink-light;
+          background-color: $pink;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .ui.table.content-wrapper {
+    border-color: $pink-light;
+  }
+
+  .ui.table thead th {
+    color: $pink-dark;
+
+    &:first-child {
+      color: white;
+      background: $pink-dark;
+      background: -moz-linear-gradient(left, $pink-dark 0%, $pink-dark 58%, #f9fafb 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, $pink-dark), color-stop(58%, $pink-dark), color-stop(100%, #f9fafb));
+      background: -webkit-linear-gradient(left, $pink-dark 0%, $pink-dark 58%, #f9fafb 100%);
+      background: -o-linear-gradient(left, $pink-dark 0%, $pink-dark 58%, #f9fafb 100%);
+      background: -ms-linear-gradient(left, $pink-dark 0%, $pink-dark 58%, #f9fafb 100%);
+      background: linear-gradient(to right, $pink-dark 0%, $pink-dark 58%, #f9fafb 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$pink-dark', endColorstr='#f9fafb', GradientType=1 );
+    }
+  }
 }
 
 .bch-only-none-found {
