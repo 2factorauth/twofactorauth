@@ -1,8 +1,13 @@
 
-<div id="maingrid" class="ui container
-	{% if page.id == "adult-listings" %} adult{% endif %}
-	{% if page.id == "donation-listings" %} donations{% endif %}
-	">
+<div class="ui container nav">
+	<div class="three ui buttons">
+		<a href="/" class="ui blue button{% if page.id == "home" %} active-nav {% endif %}" data-tooltip="Merchants accepting Bitcoin Cash" data-position="top center" data-inverted="">Main</a>
+		<a href="/donations/" class="ui violet button{% if page.id == "donation-listings" %} active-nav {% endif %}" data-tooltip="Organizations accepting Bitcoin Cash donations" data-position="top center" data-inverted="">Donations</a>
+		<a href="/adult/" class="ui pink button{% if page.id == "adult-listings" %} active-nav {% endif %}" data-tooltip="Warning! Links to sexually oriented material ahead!" data-position="top center" data-inverted="">Adult</a>
+	</div>
+</div>
+
+<div id="maingrid" class="ui container {{ page.id }}">
 	<div class="container-inner ui stackable grid">
 			<div class="five column row">
 				{% assign rowcount = 0 %}
