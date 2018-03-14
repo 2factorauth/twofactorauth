@@ -544,13 +544,14 @@ p {
 
 .ui.container {
   background: $blue-light-alpha;
-  border: 3px solid $green-light;
+  border: 3px solid $blue-lighter;
   border-radius: 7px;
   padding: 40px 20px;
   margin-top: 4rem;
 
   &.nav {
     background: none;
+    border: 0;
     margin-bottom: -5.2rem;
     padding: 0;
 
@@ -667,7 +668,7 @@ p {
 .ui.table.content-wrapper {
   background: #fff;
   border-radius: 0 !important;
-  border: 3px solid $green-light;
+  border: 3px solid $blue-lighter;
   border-width: 3px 0;
   //box-shadow: 2px 5px 20px rgba(80, 80, 80, 0.2), -2px -1px 20px rgba(80, 80, 80, 0.2);
 }
