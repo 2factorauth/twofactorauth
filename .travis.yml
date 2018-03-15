@@ -5,6 +5,7 @@ os: linux
 env:
   global: 
     - DEPLOY_DOCKER=false
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 python:
   - "3.4"
 services:
