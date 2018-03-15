@@ -52,7 +52,7 @@ end
 
 def outputOrdered(websites)
   websites.each do |site|
-    puts "    #{site['name']}\n"
+    puts "  #{site['name']}\n"
   end
 end
       
