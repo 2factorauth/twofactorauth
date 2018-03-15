@@ -50,6 +50,12 @@ def test_img(img, name, imgs)
 end
 # rubocop:enable AbcSize,CyclomaticComplexity
 
+def outputOrdered(websites)
+  websites.each do |site|
+    puts "    #{site['name']}\n"
+  end
+end
+      
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
 begin
@@ -70,6 +76,9 @@ begin
 
     # Check section alphabetization
     error("_data/#{section['id']}.yml is not alphabetized by name") \
+      if websites != (websites.sort_by { |website| website['name'].downcase })
+        
+	  outputOrdered(websites.sort_by { |website| website['name'].downcase }) \
       if websites != (websites.sort_by { |website| website['name'].downcase })
 
     # Collect list of all images for section
