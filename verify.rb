@@ -51,13 +51,6 @@ def test_img(img, name, imgs)
 end
 # rubocop:enable AbcSize,CyclomaticComplexity
 
-
-def output_ordered(websites)
-  websites.each do |site|
-    puts "    #{site['name']}\n"
-  end
-end
-
 def process_sections_file(path)
   err_count = @output
   sections = YAML.load_file(path)
@@ -78,11 +71,10 @@ def process_sections_file(path)
     end
 
     # Check section alphabetization
-    error("_data/#{section['id']}.yml is not alphabetized by name") \
-      if websites != (websites.sort_by { |website| website['name'].downcase })
-
-	output_ordered(websites.sort_by { |website| website['name'].downcase }) \
-      if websites != (websites.sort_by { |website| website['name'].downcase })
+	if websites != (sites_ordered = websites.sort_by { |s| s['name'].downcase })
+      error("_data/#{section['id']}.yml not ordered by name. Correct order:")
+      sites_ordered.each { |site| error("  #{site['name']}\n") }
+	end
 
     # Collect list of all images for section
     imgs = Dir["img/#{section['id']}/*"]
@@ -116,7 +108,7 @@ rescue Psych::SyntaxError => e
   puts "<------------ ERROR in a YAML file ------------>\n"
   puts e
   exit 1
-rescue => e
+rescue StandardError => e
   puts e
   exit 1
 else
