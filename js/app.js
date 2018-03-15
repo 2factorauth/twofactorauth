@@ -21,6 +21,12 @@ $(document).ready(function () {
     $('#show-bch-only').prop('checked', false);
   }
 
+  // Check if URL parameter exists to skip to content (due to window.location.hash being used for categories)
+  if (getUrlParameter('skipToListings')) {
+    var body = $("html, body");
+    body.stop().animate({scrollTop: $('#maingrid').offset().top - 128}, 500, 'swing');
+  }
+
   // Clear the BCH-only view
   $('.clear-bch-only').click(function () {
     $('#show-bch-only').prop('checked', false);
