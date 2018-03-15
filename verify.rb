@@ -55,7 +55,7 @@ def output_ordered(websites)
     puts "  #{site['name']}\n"
   end
 end
- 
+
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
 begin
