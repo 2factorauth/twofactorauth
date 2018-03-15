@@ -50,12 +50,6 @@ def test_img(img, name, imgs)
 end
 # rubocop:enable AbcSize,CyclomaticComplexity
 
-def output_ordered(websites)
-  websites.each do |site|
-    puts "  #{site['name']}\n"
-  end
-end
-
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
 begin
@@ -75,11 +69,10 @@ begin
     end
 
     # Check section alphabetization
-    error("_data/#{section['id']}.yml is not alphabetized by name") \
-      if websites != (websites.sort_by { |website| website['name'].downcase })
-
-    output_ordered(websites.sort_by { |website| website['name'].downcase }) \
-      if websites != (websites.sort_by { |website| website['name'].downcase })
+    if websites != (sites_ordered = websites.sort_by { |s| s['name'].downcase })
+      error("_data/#{section['id']}.yml not ordered by name. Correct order:")
+      sites_ordered.each { |site| error("  #{site['name']}\n") }
+    end
 
     # Collect list of all images for section
     imgs = Dir["img/#{section['id']}/*"]
@@ -104,11 +97,9 @@ rescue Psych::SyntaxError => e
   puts "<------------ ERROR in a YAML file ------------>\n"
   puts e
   exit 1
-# rubocop:disable Style/RescueStandardError
-rescue => e
+rescue StandardError => e
   puts e
   exit 1
-# rubocop:enable Style/RescueStandardError
 else
   puts "<------------ No errors. You\'re good to go! ------------>\n"
 end
