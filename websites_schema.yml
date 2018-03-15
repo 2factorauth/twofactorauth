@@ -18,24 +18,26 @@ mapping:
           "img":
             type: str
             required: yes
+            pattern: /\.png$/i
           "tfa":
             type: bool
             required: yes
+            pattern: /(true|false)/
           "software":
             type: bool
-            pattern: /true/
+            pattern: /(true|false)/
           "hardware":
             type: bool
-            pattern: /true/
+            pattern: /(true|false)/
           "sms":
             type: bool
-            pattern: /true/
+            pattern: /(true|false)/
           "phone":
             type: bool
-            pattern: /true/
+            pattern: /(true|false)/
           "email":
             type: bool
-            pattern: /true/
+            pattern: /(true|false)/
           "exceptions":
             type: map
             mapping:
