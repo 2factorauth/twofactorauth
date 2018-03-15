@@ -1,6 +1,7 @@
 require 'yaml'
 require 'fastimage'
 require 'kwalify'
+require 'diffy'
 @output = 0
 
 # YAML tags related to TFA
@@ -69,9 +70,10 @@ begin
     end
 
     # Check section alphabetization
-    if websites != (sites_ordered = websites.sort_by { |s| s['name'].downcase })
-      error("_data/#{section['id']}.yml not ordered by name. Correct order:")
-      sites_ordered.each { |site| error("  #{site['name']}\n") }
+    if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
+      error("_data/#{section['id']}.yml not ordered by name. Correct order:" \
+        "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
+                               context: 10).to_s(:color))
     end
 
     # Collect list of all images for section
