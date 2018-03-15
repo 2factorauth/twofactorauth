@@ -52,7 +52,7 @@ end
 # rubocop:enable AbcSize,CyclomaticComplexity
 
 
-def outputOrdered(websites)
+def output_ordered(websites)
   websites.each do |site|
     puts "    #{site['name']}\n"
   end
@@ -81,7 +81,7 @@ def process_sections_file(path)
     error("_data/#{section['id']}.yml is not alphabetized by name") \
       if websites != (websites.sort_by { |website| website['name'].downcase })
 
-	outputOrdered(websites.sort_by { |website| website['name'].downcase }) \
+	output_ordered(websites.sort_by { |website| website['name'].downcase }) \
       if websites != (websites.sort_by { |website| website['name'].downcase })
 
     # Collect list of all images for section
