@@ -64,7 +64,7 @@ $(document).ready(function () {
   // Scroll to the main content grid
   $('#skip-to-content').on('click', function () {
     var body = $("html, body");
-    body.stop().animate({scrollTop: $('#maingrid').offset().top - 64}, 500, 'swing');
+    body.stop().animate({scrollTop: $('#maingrid').offset().top - 128}, 500, 'swing');
   });
 
   // Clear and collapse all open categories
@@ -265,7 +265,7 @@ var jets = new Jets({
       isSearching = true;
 
       //$('html, body').stop().animate({scrollTop: $('#maingrid').offset().top - 120}, 500, 'swing');
-      $('html, body').scrollTop($('#maingrid').offset().top - 64);
+      $('html, body').scrollTop($('#maingrid').offset().top - 128);
     }
   },
   addImportant: true,
