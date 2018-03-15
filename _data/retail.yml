@@ -17,6 +17,16 @@ websites:
       bch: Yes
       btc: Yes
       othercrypto: Yes
+      
+    - name: 9figures
+      url: https://9figures.co.uk/
+      img: 9figures.png
+      facebook: 9figuresuk
+      email_address: 9figurescompany@gmail.com
+      bch: Yes
+      btc: No
+      othercrypto: Yes
+      doc: https://9figures.co.uk/blogs/news/accepting-cryptocurrency-1
 
     - name: Adafruit
       url: https://www.adafruit.com
@@ -89,6 +99,14 @@ websites:
       twitter: Apple
       facebook: Apple
       
+    - name: AQi Kaleidoscopes
+      url: https://www.awarenessquizzes.com/online-store
+      img: AQiKaleidoscopes.png
+      facebook: AQiKaleidoscopes
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      
     - name: AstorBond.com
       url: https://www.astorbond.com/
       img: astorbond.png
@@ -143,6 +161,15 @@ websites:
       country: US
       city: San Francisco
       bch: yes
+      
+    - name: BitInDigi
+      url: https://bitindigi.com
+      img: Jbitindigi.png
+      twitter: Jbitindigi
+      email_address: john@bitindigi.com
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: BitMain
       url: https://www.bitmain.com/
@@ -284,6 +311,15 @@ websites:
       bch: yes
       btc: yes
       othercrypto: yes
+      
+    - name: Cryptomined
+      url: https://cryptomined.com
+      img: Cryptomined.png
+      twitter: CryptominedCom
+      email_address: cryptomined@cryptomined.com
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: Dell
       url: http://www.dell.com
@@ -518,6 +554,18 @@ websites:
       twitter: asklazadasg
       img: lazada.png
       bch: No
+      
+    - name: Liberty Store
+      url: https://www.libertystore.de
+      img: libertystore.png
+      twitter: LibertyStore_de
+      facebook: Libertarismus
+      email_address: janschmitz@libertystore.de
+      region: eu
+      country: DE
+      bch: Yes
+      btc: No
+      othercrypto: No
 
     - name: Lowes
       url: https://www.lowes.com
@@ -571,9 +619,12 @@ websites:
     - name: Newegg
       url: https://www.newegg.com
       img: newegg.png
-      bch: No
+      bch: Yes
+      btc: Yes
       twitter: Newegg
       facebook: Newegg
+      exceptions:
+        text: Newegg has some restrictions on what items are allowed to be paid with cryptocurrencies.
 
     - name: Nordstrom
       url: http://shop.nordstrom.com
@@ -634,6 +685,16 @@ websites:
       bch: no
       btc: no
       othercrypto: no
+      
+    - name: Performance-PCs
+      url: http://www.performance-pcs.com
+      img: PerformancePCs.png
+      facebook: PerformancePCs
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      exceptions:
+        text: "Select Bitcoin as payment option during checkout to be presented with the option of Bitcoin and Bitcoin Cash"
 
     - name: Petstarsell
       url: https://petstarsell.com
@@ -690,7 +751,7 @@ websites:
       twitter: scancomputers
       facebook: scancomputers
       img: scancomputers.png
-      bch: no
+      bch: yes
       btc: yes
       othercrypto: no
       doc: https://www.scan.co.uk/info/bitcoin
@@ -774,6 +835,17 @@ websites:
       facebook: Target
       img: target.png
       bch: No
+      
+    - name: VapeClubMY
+      url: https://vapeclubmy.com
+      img: vapeclubmy.png
+      twitter: vapeclubmy
+      facebook: vapeclubmy
+      email_address: hello@vapeclubmy.com
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://vapeclubmy.com/blogs/features/vape-club-supports-cryptocurrency-payments-via-coinbase-commerce
       
     - name: Vaporizers Direct
       url: https://vaporizersdirect.com.au

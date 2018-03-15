@@ -9,13 +9,6 @@ websites:
       othercrypto: Yes
       doc: https://twitter.com/ALFAtopme/status/965512505471721472
       
-    - name: BCHTips.org
-      url: https://bchtips.org
-      img: bchtips.png
-      bch: yes
-      btc: no
-      othercrypto: no
-      
     - name: Bit2Me
       url: https://bit2me.com
       img: bit2me.png
@@ -221,6 +214,14 @@ websites:
       othercrypto: no
       doc: https://www.reddit.com/r/btc/comments/7jmcyz/pay_for_anything_online_with_bch_cryptonizeit/
 
+    - name: Digital Keys
+      url: http://digitalkeys.biz/
+      img: DigitalKeys.png
+      email_address: digitalkeysshop@gmail.com
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      
     - name: eGifter
       url: https://www.egifter.com/Default.aspx
       img: egifter.png
@@ -235,6 +236,7 @@ websites:
       img: giftoff.png
       twitter: giftoffuk
       facebook: pockiouk
+      region: eu
       bch: Yes
       btc: Yes
       othercrypto: Yes
@@ -244,14 +246,13 @@ websites:
       img: gyft.png
       twitter: Gyft
       facebook: gyft
-      bch: No
+      bch: Yes
       btc: Yes
       othercrypto: No
 
     - name: Incognito Deals
       url: https://www.incognitodeals.com/index.html
       img: incognitoDeals.png
-      twitter: IncognitoDeals
       bch: Yes
       btc: No
       othercrypto: Yes

@@ -132,7 +132,7 @@ websites:
     - name: HealthVault (w/Microsoft Account)
       url: https://www.healthvault.com
       img: healthvault.png
-      bch: No
+      bch: Yes
       btc: Yes
       othercrypto: No
 
@@ -229,6 +229,18 @@ websites:
       btc: yes
       othercrypto: yes
       lang: es
+      
+    - name: Storm & Leif
+      url: https://www.stormandleif.com/
+      img: stormleif.png
+      twitter: stormandleif
+      facebook: stormandleif
+      email_address: info@stormandleif.com
+      region: na
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://www.stormandleif.com/blogs/journal/the-all-natural-deodorant-thats-now-cryptocurrency-friendly
 
     - name: Thriva
       url: https://thriva.co
@@ -237,4 +249,12 @@ websites:
       img: thriva.png
       bch: No
       btc: No
+      othercrypto: No
+      
+    - name: Transparent Labs
+      url: https://www.transparentlabs.com/
+      img: transparentlabs.png
+      facebook: transparentlabs
+      bch: Yes
+      btc: Yes
       othercrypto: No
