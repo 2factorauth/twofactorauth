@@ -90,7 +90,7 @@ def process_sections_file(path)
     imgs = Dir["img/#{section['id']}/*"]
 
     websites.each do |website|
-	  next if website['img'].nil?
+      next if website['img'].nil?
       test_img("img/#{section['id']}/#{website['img']}", \
                website['name'], imgs)
     end
