@@ -28,7 +28,7 @@ def error(msg)
   puts "  #{@output}. #{msg}"
 end
 
-# rubocop:disable AbcSize,CyclomaticComplexity
+# rubocop:disable AbcSize
 def test_img(img, name, imgs)
   # Exception if image file not found
   raise "#{name} image not found." unless File.exist?(img)
@@ -57,6 +57,7 @@ def test_img_size(file_size)
     if file_size < @img_max_size
 end
 
+# rubocop:disable MethodLength
 def process_sections_file(path)
   err_count = @output
   sections = YAML.load_file(path)
@@ -104,7 +105,7 @@ def process_sections_file(path)
 
   puts "  No errors found\n" if @output == err_count
 end
-# rubocop:enable AbcSize,CyclomaticComplexity
+# rubocop:enable AbcSize,MethodLength
 
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
