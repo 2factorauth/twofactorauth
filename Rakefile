@@ -21,7 +21,6 @@ task proof: 'build' do
     disable_external: true, \
 	log_level: 'debug', \
 	url_ignore: ['/add'], \
-	verbose: true
   ).run
 end
 
@@ -31,7 +30,6 @@ task proof_external: 'build' do
     assume_extension: true, \
     check_html: true, \
 	external_only: false, \
-	verbose: true, \
 	log_level: 'info', \
 	url_ignore: ['/add'], \
 	http_status_ignore: [0, 301, 302, 403, 503], \
