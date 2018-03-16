@@ -3,14 +3,14 @@ require 'fastimage'
 require 'kwalify'
 require 'diffy'
 @output = 0
+@outputSoft = 0
 
 # Image max size (in bytes)
-@img_max_size = 2500
-# @img_max_size = 3000
+@img_recommended_size = 2500
+@img_max_size = 3000
 
 # Image dimensions
 @img_dimensions = [32, 32]
-@img_lg_dimensions = [48, 48]
 
 # Image format used for all images in the 'img/' directories.
 @img_extension = '.png'
@@ -36,19 +36,26 @@ def test_img(img, name, imgs)
   imgs.delete_at(imgs.index(img)) unless imgs.index(img).nil?
 
   # Check image dimensions
-  if FastImage.size(img) != @img_dimensions && FastImage.size(img) != @img_lg_dimensions
-    error("#{img} is not #{@img_dimensions.join('x')} or #{@img_lg_dimensions.join('x')} pixels.")
-  end
+  error("#{img} is not #{@img_dimensions.join('x')} pixels.")\
+	unless FastImage.size(img) == @img_dimensions
   
   # Check image file extension and type
   error("#{img} is not using the #{@img_extension} format.")\
     unless File.extname(img) == @img_extension && FastImage.type(img) == :png
 
   # Check image file size
-  img_size = File.size(img)
-  return unless img_size > @img_max_size
-  error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
-          " currently #{img_size} bytes.")
+  test_img_size(File.size(img))
+end
+
+def test_img_size(file_size)
+  return unless file_size > @img_recommended_size
+  
+  error("#{img} should not be larger than #{@img_recommended_size} bytes. It is"\
+          " currently #{file_size} bytes.")
+
+  if file_size < @img_max_size
+    @outputSoft += 1
+  end
 end
 
 def process_sections_file(path)
@@ -105,6 +112,8 @@ begin
     process_sections_file(file)
   end
 
+  @output = @output - @outputSoft
+  
   exit 1 if @output > 0
 rescue Psych::SyntaxError => e
   puts "<------------ ERROR in a YAML file ------------>\n"
