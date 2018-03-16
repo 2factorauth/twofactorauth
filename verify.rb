@@ -49,9 +49,9 @@ end
 
 def test_img_size(file_size)
   return unless file_size > @img_recommended_size
-  
-  error("#{img} should not be larger than #{@img_recommended_size} bytes. It is"\
-          " currently #{file_size} bytes.")
+
+  error("#{img} should not be larger than #{@img_recommended_size} bytes. "\
+          "It is currently #{file_size} bytes.")
 
   @output_soft += 1\
     if file_size < @img_max_size
@@ -75,15 +75,15 @@ def process_sections_file(path)
     errors = validator.validate(data)
 
     errors.each do |e|
-      error("#{section_file}:#{websites.at(e.path.split('/')[2].to_i)['name']}: #{e.message}")
+      error("#{section_file}:#{websites.at(e.path.split('/')[2].to_i)['name']}"\
+        ": #{e.message}")
     end
 
     # Check section alphabetization
-	if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
-      error("#{section_file} not ordered by name. Correct order:" \
-        "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
-                              context: 10).to_s(:color))
-    end
+    error("#{section_file} not ordered by name. Correct order:" \
+      "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
+                             context: 10).to_s(:color))\
+    if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
 
     # Collect list of all images for section
     imgs = Dir["img/#{section['id']}/*"]
@@ -111,7 +111,7 @@ begin
     process_sections_file(file)
   end
 
-  @output = @output - @output_soft
+  @output -= @output_soft
 
   exit 1 if @output > 0
 rescue Psych::SyntaxError => e
