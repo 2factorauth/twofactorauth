@@ -5,8 +5,6 @@ os: linux
 env:
   global: 
     - DEPLOY_DOCKER=false
-python:
-  - "3.4"
 services:
   - docker
 cache:
@@ -61,4 +59,3 @@ notifications:
       - secure: "vIMiDIutWLX4xPWK4+HRh39MdAaNLl+UcK7UjNlehHIuopZPbnH+TmqFg5726ZDhkQ6QN/lHYVuHTvW9Kp+f7uiuRX2QLJH4vZZrcvsXeRccWbVx7MlMW9hbOnvB73nUmezaHploSpMINKWRD51PhLlONbztLCzYmOoBfLRDvrmEY7kzoiMFCCZwPIzIiyB1LrEhSQD3YELgZ+ZDipFUeVA2yrBKZSZZoM7ubcpqNZHhx+3uAJrpQ66k36eprrXM7IC8Qy8u2AcV1hNnczNM+jUts/PKyCjH4vIjh4JEVNN/gBLY30oDOR6d95szme/4BWEPCcP2Sz3MQTtkN5tXaAmRRKqwYUv+lB0lTB5EB28SD9Sa3Q6HJhIQ5BVuO0Lmdwe8CVBTy7lmwcyuUqW5y0MHQF6HAZj2lSN8pktInFD40o+FQgC03YEiXWJbCYzny7LmE0T6ZgycvFzr/S28cDXiPemPMg4333aDjHj02631gRZtMG9dh7u35UnjuWU1Qs2ke2Irx2GJadp5LHp7++ssHWdmZKVJlKSvh679QCNvlG5CvWD/VinBvibTR61Py+b0Zk+k3++fz3YcJZ89ZCAyQ4yWCsGB7nNjpaMYcBHgHwgNBF6Gk3x71A2N3NfQrm2pcoB3+KM3QMVFmZrUD74Ni8TLXOdK2GHmYaqMI9A="
     on_success: change
     on_failure: always
-    on_pull_requests: always
