@@ -6,7 +6,7 @@ require 'diffy'
 
 # Image max size (in bytes)
 @img_max_size = 2500
-#@img_max_size = 3000
+# @img_max_size = 3000
 
 # Image dimensions
 @img_dimensions = [32, 32]
@@ -25,7 +25,6 @@ require 'diffy'
 # Send error message
 def error(msg)
   @output += 1
-  #puts "<------------ ERROR ------------>\n" if @output == 1
   puts "  #{@output}. #{msg}"
 end
 
@@ -37,9 +36,10 @@ def test_img(img, name, imgs)
   imgs.delete_at(imgs.index(img)) unless imgs.index(img).nil?
 
   # Check image dimensions
-  error("#{img} is not #{@img_dimensions.join('x')} or #{@img_lg_dimensions.join('x')} pixels.")\
-    unless FastImage.size(img) == @img_dimensions || FastImage.size(img) == @img_lg_dimensions
-
+  if FastImage.size(img) != @img_dimensions || FastImage.size(img) != @img_lg_dimensions
+    error("#{img} is not #{@img_dimensions.join('x')} or #{@img_lg_dimensions.join('x')} pixels.")
+  end
+  
   # Check image file extension and type
   error("#{img} is not using the #{@img_extension} format.")\
     unless File.extname(img) == @img_extension && FastImage.type(img) == :png
@@ -50,7 +50,6 @@ def test_img(img, name, imgs)
   error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
           " currently #{img_size} bytes.")
 end
-# rubocop:enable AbcSize,CyclomaticComplexity
 
 def process_sections_file(path)
   err_count = @output
@@ -63,17 +62,18 @@ def process_sections_file(path)
   schema = YAML.load_file(File.join(__dir__, 'websites_schema.yml'))
   validator = Kwalify::Validator.new(schema)
   sections.each do |section|
-    data = YAML.load_file(File.join(__dir__, "_data/#{section['id']}.yml"))
+    data_section_file = "_data/#{section['id']}.yml"
+    data = YAML.load_file(File.join(__dir__, section_file))
     websites = data['websites']
     errors = validator.validate(data)
 
     errors.each do |e|
-      error("_data/#{section['id']}.yml:#{websites.at(e.path.split('/')[2].to_i)['name']}: #{e.message}")
+      error("#{data_section_file}:#{websites.at(e.path.split('/')[2].to_i)['name']}: #{e.message}")
     end
 
     # Check section alphabetization
 	if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
-      error("_data/#{section['id']}.yml not ordered by name. Correct order:" \
+      error("#{data_section_file} not ordered by name. Correct order:" \
         "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
                                context: 10).to_s(:color))
     end
@@ -89,14 +89,14 @@ def process_sections_file(path)
     # After removing images associated with entries in test_img, alert
     # for unused or orphaned images
     imgs.each do |img|
-	  next unless img.nil?
-	  error("#{img} is not used")
+      next unless img.nil?
+      error("#{img} is not used")
     end
   end
 
   puts "  No errors found\n" if @output == err_count
 end
-
+# rubocop:enable AbcSize,CyclomaticComplexity
 
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
