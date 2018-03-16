@@ -79,7 +79,7 @@ def process_sections_file(path)
     end
 
     # Check section alphabetization
-    if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase})
+    if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
       error("#{section_file} not ordered by name. Correct order:" \
         "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
                                context: 10).to_s(:color))
@@ -89,8 +89,9 @@ def process_sections_file(path)
     imgs = Dir["img/#{section['id']}/*"]
 
     websites.each do |website|
-      test_img("img/#{section['id']}/#{website['img']}", website['name'], \
-               imgs) unless website['img'].nil?
+	  next if website['img'].nil?
+      test_img("img/#{section['id']}/#{website['img']}", \
+               website['name'], imgs)
     end
 
     # After removing images associated with entries in test_img, alert
