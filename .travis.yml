@@ -24,8 +24,7 @@ matrix:
       env: 
       - NEXT_BUILD_TAG=latest
       script:
-      - bundle exec rake
-      - if [ "$TRAVIS_TAG" != "" ]; then NEXT_BUILD_TAG=`date +"%m-%d-%Y"`; DEPLOY_DOCKER="true"; fi
+      - bundle exec rake && if [ "$TRAVIS_TAG" != "" ]; then NEXT_BUILD_TAG=`date +"%m-%d-%Y"`; DEPLOY_DOCKER="true"; fi
       - echo ".git" > .dockerignore
       - bundle exec rake docker:build
       - if [ "$NEXT_BUILD_TAG" != "latest" ]; then docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; fi
