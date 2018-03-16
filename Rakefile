@@ -19,7 +19,6 @@ task proof: 'build' do
     assume_extension: true, \
     check_html: true, \
     disable_external: true, \
-	log_level: 'debug', \
 	url_ignore: ['/add'], \
   ).run
 end
@@ -30,13 +29,18 @@ task proof_external: 'build' do
     assume_extension: true, \
     check_html: true, \
 	external_only: false, \
-	log_level: 'info', \
 	url_ignore: ['/add'], \
 	http_status_ignore: [0, 301, 302, 403, 503], \
     cache: { timeframe: '1w' }, \
     hydra: { max_concurrency: 12 }
   ).run
 end
+
+task :verify do
+  ruby './verify.rb'
+end
+
+RuboCop::RakeTask.new
 
 namespace :docker do
   desc "build docker images"
@@ -51,9 +55,3 @@ namespace :docker do
     puts `docker build -t acceptbitcoincash/acceptbitcoincash .`
   end
 end
-
-task :verify do
-  ruby './verify.rb'
-end
-
-RuboCop::RakeTask.new

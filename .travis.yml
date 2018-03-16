@@ -18,10 +18,6 @@ addons:
     packages:
     - libcurl4-openssl-dev
     - ca-certificates
-before_install:
-    - gem update --system --no-doc
-    - bundle install --gemfile=Gemfile
-    - pip install --user pathlib
 matrix:
   fast_finish: true
   include:
@@ -34,11 +30,11 @@ matrix:
       - bundle exec rake docker:build
       - if [ "$NEXT_BUILD_TAG" != "latest" ]; then docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; fi
     - script:
-      - bundle exec rake verify
+      - bundle exec rake
       - bundle exec rake proof_external
   allow_failures:
     - script: 
-      - bundle exec rake verify
+      - bundle exec rake
       - bundle exec rake proof_external
 deploy:
   - provider: pages
