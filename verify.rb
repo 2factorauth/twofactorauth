@@ -56,7 +56,6 @@ def test_img_size(file_size)
   @output_soft += 1\
     if file_size < @img_max_size
 end
-# rubocop:enable AbcSize,CyclomaticComplexity
 
 def process_sections_file(path)
   err_count = @output
@@ -80,10 +79,11 @@ def process_sections_file(path)
     end
 
     # Check section alphabetization
-    error("#{section_file} not ordered by name. Correct order:" \
-      "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
-                             context: 10).to_s(:color))\
-    if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
+    if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase})
+      error("#{section_file} not ordered by name. Correct order:" \
+        "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
+                               context: 10).to_s(:color))
+    end
 
     # Collect list of all images for section
     imgs = Dir["img/#{section['id']}/*"]
@@ -103,6 +103,7 @@ def process_sections_file(path)
 
   puts "  No errors found\n" if @output == err_count
 end
+# rubocop:enable AbcSize,CyclomaticComplexity
 
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
