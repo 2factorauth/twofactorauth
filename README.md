@@ -17,7 +17,7 @@ The goal is to build a website ([https://acceptBitcoin.cash](https://acceptBitco
 
 Our hope is to connect consumers and merchants, while spreading awareness and promoting global adoption of [Bitcoin Cash](https://www.bitcoincash.org).
 
-The site maintainers do not endorse nor confirm the legitimacy of any of the merchants linked to on this site. This is an open source project which accepts submissions from the general community. While we try our best to verify the merchant information submitted, it's possible that we may miss something.
+The site maintainers do not endorse nor confirm the legitimacy of any of the listings linked to on this site. This is an open source project which accepts submissions from the general community. While we try our best to verify the information submitted, it's possible that we may miss something.
 
 ## Contributing
 

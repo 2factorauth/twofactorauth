@@ -24,8 +24,8 @@
       <tr class="bch-only-none-found">
         <td colspan="5" style="text-align: center">
           <h3><i class="big remove circle icon"></i></h3>
-          <p>No merchants accepting Bitcoin Cash found in {{section_title}}.</p>
-          <p>Try <span class="clear-bch-only">clearing the Bitcoin Cash only filter</span> to see all merchants listed, then reach out to them over social media or e-mail <i class="announcement icon"></i></p>
+          <p>No listings accepting Bitcoin Cash found in {{section_title}}.</p>
+          <p>Try <span class="clear-bch-only">clearing the Bitcoin Cash only filter</span> to see all listings, then reach out to them over social media or e-mail <i class="announcement icon"></i></p>
         </td>
       </tr>
       {% endif %}
@@ -136,10 +136,9 @@
       {% if count_bch > 0 and count_bch <= 5 %}
       <tr class="bch-only-none-found">
         <td colspan="5" style="text-align: center">
-          <h4>Hoping to see more than {{ count_bch }} merchant{% if count_bch > 1 %}s{% endif %} accepting Bitcoin Cash in {{ section.title }}?</h4>
-          <p>Try <span class="clear-bch-only">clearing the Bitcoin Cash only filter</span> to see all merchants listed, then reach out to them over social media or e-mail <i class="announcement icon"></i></p>
-        </td>
-      </tr>
+          <h4>Hoping to see more than {{ count_bch }} listing{% if count_bch > 1 %}s{% endif %} accepting Bitcoin Cash in {{ section.title }}?</h4>
+          <p>Try <span class="clear-bch-only">clearing the Bitcoin Cash only filter</span> to see all listings, then reach out to them over social media or e-mail <i class="announcement icon"></i></p>
+        </td>      </tr>
       {% endif %}
     </tbody>
   </table>
