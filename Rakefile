@@ -19,7 +19,7 @@ task proof: 'build' do
     assume_extension: true, \
     check_html: true, \
     disable_external: true, \
-	url_ignore: ['/add'], \
+    url_ignore: ['/add'] \
   ).run
 end
 
@@ -28,9 +28,9 @@ task proof_external: 'build' do
     './_site', \
     assume_extension: true, \
     check_html: true, \
-	external_only: false, \
-	url_ignore: ['/add'], \
-	http_status_ignore: [0, 301, 302, 403, 503], \
+    external_only: false, \
+    url_ignore: ['/add'], \
+    http_status_ignore: [0, 301, 302, 403, 503], \
     cache: { timeframe: '1w' }, \
     hydra: { max_concurrency: 12 }
   ).run
@@ -43,15 +43,15 @@ end
 RuboCop::RakeTask.new
 
 namespace :docker do
-  desc "build docker images"
+  desc 'build docker images'
   task :build do
-    puts "Generating stats (HTML partial) of websites supporting Bitcoin Cash"
+    puts 'Generating stats (HTML partial) of websites supporting Bitcoin Cash'
     Dir.chdir(File.join('.', 'scripts', 'python')) do
       puts `python ./bchAccepted.py`
     end
-    puts "Generating static files for nginx"
+    puts 'Generating static files for nginx'
     puts `bundle exec jekyll build`
-    puts "Building acceptbitcoincash docker image"
+    puts 'Building acceptbitcoincash docker image'
     puts `docker build -t acceptbitcoincash/acceptbitcoincash .`
   end
 end

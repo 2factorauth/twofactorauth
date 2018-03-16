@@ -18,6 +18,8 @@ addons:
     packages:
     - libcurl4-openssl-dev
     - ca-certificates
+before_install:
+    - pip install --user pathlib
 matrix:
   fast_finish: true
   include:
