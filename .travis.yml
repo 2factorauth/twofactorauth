@@ -16,12 +16,12 @@ addons:
     packages:
     - libcurl4-openssl-dev
     - ca-certificates
-before_install:
-    - pip install --user pathlib
 matrix:
   fast_finish: true
   include:
-    - env: 
+    - before_install:
+      - pip install --user pathlib
+      env: 
       - NEXT_BUILD_TAG=latest
       script:
       - bundle exec rake proof
