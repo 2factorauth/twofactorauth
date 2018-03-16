@@ -3,7 +3,7 @@ require 'fastimage'
 require 'kwalify'
 require 'diffy'
 @output = 0
-@outputSoft = 0
+@output_soft = 0
 
 # Image max size (in bytes)
 @img_recommended_size = 2500
@@ -37,8 +37,8 @@ def test_img(img, name, imgs)
 
   # Check image dimensions
   error("#{img} is not #{@img_dimensions.join('x')} pixels.")\
-	unless FastImage.size(img) == @img_dimensions
-  
+    unless FastImage.size(img) == @img_dimensions
+
   # Check image file extension and type
   error("#{img} is not using the #{@img_extension} format.")\
     unless File.extname(img) == @img_extension && FastImage.type(img) == :png
@@ -53,10 +53,10 @@ def test_img_size(file_size)
   error("#{img} should not be larger than #{@img_recommended_size} bytes. It is"\
           " currently #{file_size} bytes.")
 
-  if file_size < @img_max_size
-    @outputSoft += 1
-  end
+  @output_soft += 1\
+    if file_size < @img_max_size
 end
+# rubocop:enable AbcSize,CyclomaticComplexity
 
 def process_sections_file(path)
   err_count = @output
@@ -82,14 +82,14 @@ def process_sections_file(path)
 	if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
       error("#{section_file} not ordered by name. Correct order:" \
         "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
-                               context: 10).to_s(:color))
+                              context: 10).to_s(:color))
     end
 
     # Collect list of all images for section
     imgs = Dir["img/#{section['id']}/*"]
 
     websites.each do |website|
-      test_img("img/#{section['id']}/#{website['img']}", website['name'],
+      test_img("img/#{section['id']}/#{website['img']}", website['name'], \
                imgs) unless website['img'].nil?
     end
 
@@ -103,7 +103,6 @@ def process_sections_file(path)
 
   puts "  No errors found\n" if @output == err_count
 end
-# rubocop:enable AbcSize,CyclomaticComplexity
 
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
@@ -112,8 +111,8 @@ begin
     process_sections_file(file)
   end
 
-  @output = @output - @outputSoft
-  
+  @output = @output - @output_soft
+
   exit 1 if @output > 0
 rescue Psych::SyntaxError => e
   puts "<------------ ERROR in a YAML file ------------>\n"
