@@ -2,8 +2,9 @@ sudo: required
 language: ruby
 rvm: 2.4.0
 os: linux
-python:
-  - "3.4"
+env:
+  global: 
+    - DEPLOY_DOCKER=false
 services:
   - docker
 cache:
@@ -15,27 +16,47 @@ addons:
     packages:
     - libcurl4-openssl-dev
     - ca-certificates
-before_install:
-    - gem update --system --no-doc
-    - bundle install --gemfile=Gemfile
-    - pip install --user pathlib
 matrix:
+  fast_finish: true
   include:
-    - env: build_docker=true
+    - before_install:
+      - pip install --user pathlib
+      env: 
+      - NEXT_BUILD_TAG=latest
       script:
-      - rake docker:build
-    - env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-      script:
-      - bundle exec rake verify
+      - bundle exec rake proof
+      - if [ "$TRAVIS_TAG" != "" ]; then NEXT_BUILD_TAG=`date +"%m-%d-%Y"`; DEPLOY_DOCKER="true"; fi
+      - echo ".git" > .dockerignore
+      - bundle exec rake docker:build
+      - if [ "$NEXT_BUILD_TAG" != "latest" ]; then docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; fi
+    - script:
+      - bundle exec rake
       - bundle exec rake proof_external
   allow_failures:
     - script: 
-      - bundle exec rake verify
+      - bundle exec rake
       - bundle exec rake proof_external
+deploy:
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+    keep-history: true
+    on: 
+      branch: master
+      tags: true
+      condition: $DEPLOY_DOCKER == "true"
+  - provider: script
+    skip-cleanup: true
+    script:
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push acceptbitcoincash/acceptbitcoincash
+    on: 
+      branch: master
+      tags: true
+      condition: $DEPLOY_DOCKER == "true"
 notifications:
   slack:
     rooms:
-      - secure: "Hye8CU0SgweLlHMWXmMW2dXo4g8HS5TTD+bgYDCmCwxANgNZVSvnSuqZvLHgbnjyhVuAhntoucxpuJrbM0LdBX2rrGUYriC5kTlkbZD9uGyBwsLEmggWC5LtI8WbpKBP+tKDecZb7DrbNblh7uV3NN483o/daVIO+zwlgzo6MMaLNy6omQbdy/Iofr777CS8NB42OQd+fTcC0h8Vb2r35PDWGmQJF2gTQouFfFCoYWwgrZ3XhPZUdKO1HGzIayaWh3Kizc1MPziwMugcPrKElV574Zpv7yqQ0hZiadC4EGRpMtwl8pnv0mUi+dFUu2Gv/XfIR3hXKewIsMOh+3jD/56zcJuPHH2rNFqYQYaCcBkVcntYIHOcSPvrGCfU4z/WiF0VpiTwaC8qyQv7awKXlYdZkk550UwnVfHHP3IVeSCn0diotCTKsilQOLe5htF/Q4L9i1gCwLbQQCSBYDscdmFGPmz41SgDaib5JDn8ByD3YOyAAUtqC2lTU1rqnd2E7VWawbMMzsQEAoumGdR472lS8VPUOr7uNygrdNZi3W7jDcznjI4Aa2IQDrtobQl0YjbRZ9BCO6N1trycL4kgvrXHpaBtPQGScFpaotEqj0uljnNEK5yozFXLZEymqENrZTElEkc5Fk0UzOemJsSGv4aUMkA8/Fh5x0pvWHdG2Dc="
+      - secure: "vIMiDIutWLX4xPWK4+HRh39MdAaNLl+UcK7UjNlehHIuopZPbnH+TmqFg5726ZDhkQ6QN/lHYVuHTvW9Kp+f7uiuRX2QLJH4vZZrcvsXeRccWbVx7MlMW9hbOnvB73nUmezaHploSpMINKWRD51PhLlONbztLCzYmOoBfLRDvrmEY7kzoiMFCCZwPIzIiyB1LrEhSQD3YELgZ+ZDipFUeVA2yrBKZSZZoM7ubcpqNZHhx+3uAJrpQ66k36eprrXM7IC8Qy8u2AcV1hNnczNM+jUts/PKyCjH4vIjh4JEVNN/gBLY30oDOR6d95szme/4BWEPCcP2Sz3MQTtkN5tXaAmRRKqwYUv+lB0lTB5EB28SD9Sa3Q6HJhIQ5BVuO0Lmdwe8CVBTy7lmwcyuUqW5y0MHQF6HAZj2lSN8pktInFD40o+FQgC03YEiXWJbCYzny7LmE0T6ZgycvFzr/S28cDXiPemPMg4333aDjHj02631gRZtMG9dh7u35UnjuWU1Qs2ke2Irx2GJadp5LHp7++ssHWdmZKVJlKSvh679QCNvlG5CvWD/VinBvibTR61Py+b0Zk+k3++fz3YcJZ89ZCAyQ4yWCsGB7nNjpaMYcBHgHwgNBF6Gk3x71A2N3NfQrm2pcoB3+KM3QMVFmZrUD74Ni8TLXOdK2GHmYaqMI9A="
     on_success: change
     on_failure: always
-    on_pull_requests: always
+    on_pull_requests: always 

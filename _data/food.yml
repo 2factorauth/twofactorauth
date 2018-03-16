@@ -26,8 +26,6 @@ websites:
       bch: yes
       btc: yes
       othercrypto: no
-      exceptions:
-        text: "Bitcoin Cash is a manual payment at this time. Contact Bees Brothers: beesbrothers@gmail.com"
 
     - name: Blue Apron
       url: https://www.blueapron.com/
@@ -82,6 +80,46 @@ websites:
       bch: yes
       btc: yes
       othercrypto: yes
+      
+    - name: KaffeBox 
+      url: https://www.kaffebox.no
+      img: KaffeBox.png
+      twitter: KaffeBox
+      facebook: KaffeBox
+      email_address: post@kaffebox.no
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      
+    - name: Lebanon Merch
+      url: https://www.lebanonmerch.com/
+      img: LebanonMerch.png
+      facebook: LebanonMerch
+      region: eu
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      
+    - name: Lieferando
+      url: https://www.lieferando.de/
+      img: lieferando.png
+      twitter: lieferando
+      facebook: lieferando
+      email_address:  info@lieferando.de 
+      region: eu
+      country: DE
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      
+    - name: lieferservice.at
+      url: https://www.lieferservice.at/
+      img: lieferservice.png
+      region: eu
+      country: AT
+      bch: Yes
+      btc: Yes
+      othercrypto: No
 
     - name: Menufy
       url: https://www.menufy.com
@@ -100,6 +138,16 @@ websites:
       btc: Yes
       othercrypto: Yes
 
+    - name: Pyszne.pl
+      url: https://pyszne.pl
+      img: pysznepl.png
+      twitter: pysznepl
+      region: eu
+      country: PL
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      
     - name: Starbucks
       url: http://www.starbucks.com/
       img: starbucks.png
@@ -132,9 +180,18 @@ websites:
       url: https://www.takeaway.com
       img: takeaway.png
       twitter: takeaway
-      bch: no
+      bch: yes
       btc: yes
       othercrypto: no
+      
+    - name: Teasenz
+      url: https://www.teasenz.com
+      img: teasenz.png
+      twitter: teasenz
+      facebook: Teasenz
+      bch: Yes
+      btc: Yes
+      othercrypto: No
 
     - name: The Dog is Hot
       url: http://thedogishot.com/
@@ -145,6 +202,18 @@ websites:
       country: es
       city: Barcelona
       bch: yes
+      
+    - name: Thuisbezorgd.nl
+      url: https://www.thuisbezorgd.nl
+      img: Thuisbezorgd.png
+      twitter: thuisbezorgd
+      facebook: thuisbezorgd
+      region: eu
+      country: NL
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      doc: https://www.thuisbezorgd.nl/en/customerservice-consumer-topic-payment?fid=371#cs_item_371
       
     - name: Village Catalog
       url: https://villagecatalog.com
