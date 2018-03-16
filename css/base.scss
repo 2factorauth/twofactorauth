@@ -1343,8 +1343,10 @@ span.progress {
   }
 
   .ui.container {
-    margin: 0!important;
+    margin: 40px 0 0 !important;
+    padding: 40px 20px;
     border-width: 3px 0;
+    border-radius: 0;
   }
 
   #top-header {
