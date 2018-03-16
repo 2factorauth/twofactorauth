@@ -62,18 +62,18 @@ def process_sections_file(path)
   schema = YAML.load_file(File.join(__dir__, 'websites_schema.yml'))
   validator = Kwalify::Validator.new(schema)
   sections.each do |section|
-    data_section_file = "_data/#{section['id']}.yml"
+    section_file = "_data/#{section['id']}.yml"
     data = YAML.load_file(File.join(__dir__, section_file))
     websites = data['websites']
     errors = validator.validate(data)
 
     errors.each do |e|
-      error("#{data_section_file}:#{websites.at(e.path.split('/')[2].to_i)['name']}: #{e.message}")
+      error("#{section_file}:#{websites.at(e.path.split('/')[2].to_i)['name']}: #{e.message}")
     end
 
     # Check section alphabetization
 	if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
-      error("#{data_section_file} not ordered by name. Correct order:" \
+      error("#{section_file} not ordered by name. Correct order:" \
         "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
                                context: 10).to_s(:color))
     end
