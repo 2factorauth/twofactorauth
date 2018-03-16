@@ -565,7 +565,7 @@ p {
 
         &.active-nav {
           font-weight: bold;
-          padding-bottom: 0;
+          padding-bottom: 0.4rem;
           //border-bottom: 7px solid rgba(0,0,0,0.2);
           border-bottom: 7px solid rgba(240, 240, 240, 0.3);
         }
@@ -1528,6 +1528,16 @@ span.progress {
 
   .ui.grid.container {
     border-width: 3px 0;
+  }
+
+  .ui.three.buttons {
+    flex-direction: column;
+
+    > .button {
+      width: 100%;
+      margin: 1px 0 0;
+      border-radius: 0 !important;
+    }
   }
 
   .ui.list .list>.item>.icon+.content, .ui.list .list>.item>.image+.content, .ui.list>.item>.icon+.content, .ui.list>.item>.image+.content {
