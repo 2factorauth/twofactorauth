@@ -36,7 +36,7 @@ def test_img(img, name, imgs)
   imgs.delete_at(imgs.index(img)) unless imgs.index(img).nil?
 
   # Check image dimensions
-  if FastImage.size(img) != @img_dimensions || FastImage.size(img) != @img_lg_dimensions
+  if FastImage.size(img) != @img_dimensions && FastImage.size(img) != @img_lg_dimensions
     error("#{img} is not #{@img_dimensions.join('x')} or #{@img_lg_dimensions.join('x')} pixels.")
   end
   
