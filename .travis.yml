@@ -24,17 +24,15 @@ matrix:
       env: 
       - NEXT_BUILD_TAG=latest
       script:
-      - bundle exec rake proof
+      - bundle exec rake
       - if [ "$TRAVIS_TAG" != "" ]; then NEXT_BUILD_TAG=`date +"%m-%d-%Y"`; DEPLOY_DOCKER="true"; fi
       - echo ".git" > .dockerignore
       - bundle exec rake docker:build
       - if [ "$NEXT_BUILD_TAG" != "latest" ]; then docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; fi
     - script:
-      - bundle exec rake
       - bundle exec rake proof_external
   allow_failures:
     - script: 
-      - bundle exec rake
       - bundle exec rake proof_external
 deploy:
   - provider: pages
