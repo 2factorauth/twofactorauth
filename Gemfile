@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'github-pages', group: :jekyll_plugins
 
 group :test do
+  gem 'diffy'
   gem 'fastimage'
   gem 'html-proofer'
   gem 'kwalify'

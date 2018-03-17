@@ -1,0 +1,168 @@
+
+<div class="ui container nav">
+	<div class="three ui buttons">
+		<a href="/?skipToListings" class="ui blue button{% if page.id == "home" %} active-nav {% endif %}" data-tooltip="Merchants accepting Bitcoin Cash" data-position="top center" data-inverted="">Main</a>
+		<a href="/donations/?skipToListings" class="ui violet button{% if page.id == "donation-listings" %} active-nav {% endif %}" data-tooltip="Organizations accepting Bitcoin Cash donations" data-position="top center" data-inverted="">Donations</a>
+		<a href="/adult/?skipToListings" class="ui pink button{% if page.id == "adult-listings" %} active-nav {% endif %}" data-tooltip="Warning! Links to sexually oriented material ahead!" data-position="top center" data-inverted="">Adult</a>
+	</div>
+</div>
+
+<div id="maingrid" class="ui container {{ page.id }}">
+	<div class="container-inner ui stackable grid">
+			<div class="five column row">
+				{% assign rowcount = 0 %}
+
+				{% if page.id == "adult-listings" %}
+
+					{% for section in site.data.adult-sections %}
+						{% assign current_section = site.data[section.id] %}
+						{% assign rowend = forloop.index | modulo: 5 %}
+
+						{% assign count_bch = 0 %}
+						{% for website in current_section.websites %}
+							{% if website.bch %}
+								{% assign count_bch = count_bch | plus: '1' %}
+							{% endif %}
+						{% endfor %}
+
+						{% if rowend == 0 or forloop.index == forloop.length %}
+							{% if count_bch == 0 %}
+							<div id="{{ section.id }}" class="category column bch-only-hidden">
+							{% else %}
+							<div id="{{ section.id }}" class="category column">
+							{% endif %}
+								<h5 class="ui icon header">
+									<i class="circular {{ section.icon }} icon"></i>
+									<small>{{ section.title }}</small>
+								</h5>
+							</div>
+							{% include mobile-table.html id-param=section.id title-param=section.title %}
+							{% assign offcount = 5 | times: rowcount %}
+							{% for section in site.data.adult-sections limit: 5 offset: offcount %}
+								{% include desktop-table.html id-param=section.id title-param=section.title %}
+							{% endfor %}
+							</div>
+							{% if forloop.index != forloop.length %}
+								{% assign rowcount = rowcount | plus: '1' %}
+								<div class="five column row">
+							{% endif %}
+						{% else %}
+							{% if count_bch == 0 %}
+							<div id="{{ section.id }}" class="category column bch-only-hidden">
+							{% else %}
+							<div id="{{ section.id }}" class="category column">
+							{% endif %}
+								<h5 class="ui icon header">
+									<i class="circular {{ section.icon }} icon"></i>
+									<small>{{ section.title }}</small>
+								</h5>
+							</div>
+							{% include mobile-table.html id-param=section.id title-param=section.title %}
+						{% endif %}
+					{% endfor %}
+
+				{% elsif page.id == "donation-listings" %}
+
+					{% for section in site.data.donation-sections %}
+						{% assign current_section = site.data[section.id] %}
+						{% assign rowend = forloop.index | modulo: 5 %}
+
+						{% assign count_bch = 0 %}
+						{% for website in current_section.websites %}
+							{% if website.bch %}
+								{% assign count_bch = count_bch | plus: '1' %}
+							{% endif %}
+						{% endfor %}
+
+						{% if rowend == 0 or forloop.index == forloop.length %}
+							{% if count_bch == 0 %}
+							<div id="{{ section.id }}" class="category column bch-only-hidden">
+							{% else %}
+							<div id="{{ section.id }}" class="category column">
+							{% endif %}
+								<h5 class="ui icon header">
+									<i class="circular {{ section.icon }} icon"></i>
+									<small>{{ section.title }}</small>
+								</h5>
+							</div>
+							{% include mobile-table.html id-param=section.id title-param=section.title %}
+							{% assign offcount = 5 | times: rowcount %}
+							{% for section in site.data.donation-sections limit: 5 offset: offcount %}
+								{% include desktop-table.html id-param=section.id title-param=section.title %}
+							{% endfor %}
+							</div>
+							{% if forloop.index != forloop.length %}
+								{% assign rowcount = rowcount | plus: '1' %}
+								<div class="five column row">
+							{% endif %}
+						{% else %}
+							{% if count_bch == 0 %}
+							<div id="{{ section.id }}" class="category column bch-only-hidden">
+							{% else %}
+							<div id="{{ section.id }}" class="category column">
+							{% endif %}
+								<h5 class="ui icon header">
+									<i class="circular {{ section.icon }} icon"></i>
+									<small>{{ section.title }}</small>
+								</h5>
+							</div>
+							{% include mobile-table.html id-param=section.id title-param=section.title %}
+						{% endif %}
+					{% endfor %}
+
+				{% else %}
+
+					{% for section in site.data.sections %}
+						{% assign current_section = site.data[section.id] %}
+						{% assign rowend = forloop.index | modulo: 5 %}
+
+						{% assign count_bch = 0 %}
+						{% for website in current_section.websites %}
+							{% if website.bch %}
+								{% assign count_bch = count_bch | plus: '1' %}
+							{% endif %}
+						{% endfor %}
+
+						{% if rowend == 0 or forloop.index == forloop.length %}
+							{% if count_bch == 0 %}
+							<div id="{{ section.id }}" class="category column bch-only-hidden">
+							{% else %}
+							<div id="{{ section.id }}" class="category column">
+							{% endif %}
+								<h5 class="ui icon header">
+									<i class="circular {{ section.icon }} icon"></i>
+									<small>{{ section.title }}</small>
+								</h5>
+							</div>
+							{% include mobile-table.html id-param=section.id title-param=section.title %}
+							{% assign offcount = 5 | times: rowcount %}
+							{% for section in site.data.sections limit: 5 offset: offcount %}
+								{% include desktop-table.html id-param=section.id title-param=section.title %}
+							{% endfor %}
+							</div>
+							{% if forloop.index != forloop.length %}
+								{% assign rowcount = rowcount | plus: '1' %}
+								<div class="five column row">
+							{% endif %}
+						{% else %}
+							{% if count_bch == 0 %}
+							<div id="{{ section.id }}" class="category column bch-only-hidden">
+							{% else %}
+							<div id="{{ section.id }}" class="category column">
+							{% endif %}
+								<h5 class="ui icon header">
+									<i class="circular {{ section.icon }} icon"></i>
+									<small>{{ section.title }}</small>
+								</h5>
+							</div>
+							{% include mobile-table.html id-param=section.id title-param=section.title %}
+						{% endif %}
+					{% endfor %}
+
+				{% endif %}
+			</div>
+		</div>
+
+		<div id="no-results">
+			<h2>No results found.</h2>
+		</div>

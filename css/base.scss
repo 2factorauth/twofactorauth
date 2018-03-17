@@ -176,8 +176,12 @@ p {
   margin: 0 0 40px;
   padding: 30px 20px 40px;
 
-  &.adult {
-    background: rgba(24, 3, 34, 0.8);
+  &.adult-listings {
+    background: rgba(57, 0, 59, 0.8);
+  }
+
+  &.donation-listings {
+    background: rgba(30, 0, 74, 0.8);
   }
 
   a {
@@ -204,7 +208,7 @@ p {
 
   .title-wrap {
     display: inline-block;
-    width: 705px;
+    width: 745px;
     margin-top: 40px;
 
     h1 {
@@ -540,13 +544,52 @@ p {
 
 .ui.container {
   background: $blue-light-alpha;
-  border: 3px solid $green-light;
+  border: 3px solid $blue-lighter;
   border-radius: 7px;
-  padding: 40px 20px;
+  padding: 70px 20px 40px;
   margin-top: 4rem;
 
-  &.adult {
+  &.nav {
+    background: none;
+    border: 0;
+    margin-bottom: -5.2rem;
+    padding: 0;
+
+    div.buttons {
+      padding: 0 1rem;
+
+      a.ui.button {
+        padding: 0.7rem 1.5rem;
+        font-weight: normal;
+        font-size: 1.2rem;
+
+        &.active-nav {
+          font-weight: bold;
+          padding-bottom: 0.4rem;
+          //border-bottom: 7px solid rgba(0,0,0,0.2);
+          border-bottom: 7px solid rgba(240, 240, 240, 0.3);
+        }
+
+        &.blue {
+          background-color: $blue;
+
+          &:hover {
+            background-color: $blue-dark;
+          }
+        }
+      }
+    }
+  }
+
+  &.donation-listings {
+    border-color: $violet-light;
     background: rgba(134, 85, 181, 0.45);
+    margin-bottom: 4rem;
+  }
+
+  &.adult-listings {
+    border-color: $pink-light;
+    background: rgba(181, 85, 165, 0.45);
     margin-bottom: 4rem;
   }
 }
@@ -568,17 +611,6 @@ p {
   padding: 18px 0;
 }
 
-.active-icon {
-  background-color: $orange;
-  color: white;
-  box-shadow: 0 0 0 3px $orange-dark inset !important;
-
-  & + small {
-    color: $orange;
-    border: 3px solid $orange-dark !important;
-  }
-}
-
 .category {
   cursor: pointer;
   padding-top: 20px;
@@ -595,18 +627,6 @@ p {
       border-radius: 10px !important;
       border-color: $orange-light;
       margin-bottom: 0.8rem;
-
-      &.active-icon {
-        background-color: $orange;
-      }
-
-      &.adult {
-        border-color: #7B00AB;
-
-        &.active-icon {
-          background-color: #f0f;
-        }
-      }
     }
 
     small {
@@ -619,9 +639,28 @@ p {
       font-size: 1rem;
     }
 
-    &:hover i, &:hover i + small {
-      @extend .active-icon;
-      color: #fff;
+    &:hover i.circular.icon, &:hover i.circular.icon + small {
+      background-color: $orange-light;
+      border-color: $orange;
+      color: $orange-dark;
+    }
+
+    &:hover i.circular.icon {
+      box-shadow: 0 0 0 3px $orange inset;
+    }
+
+    &.active-icon {
+      i.circular.icon {
+        background-color: $orange;
+        color: white;
+        box-shadow: 0 0 0 3px $orange-dark inset;
+
+        & + small {
+          border: 3px solid $orange-dark;
+          background-color: $orange;
+          color: white;
+        }
+      }
     }
   }
 }
@@ -629,7 +668,7 @@ p {
 .ui.table.content-wrapper {
   background: #fff;
   border-radius: 0 !important;
-  border: 3px solid $green-light;
+  border: 3px solid $blue-lighter;
   border-width: 3px 0;
   //box-shadow: 2px 5px 20px rgba(80, 80, 80, 0.2), -2px -1px 20px rgba(80, 80, 80, 0.2);
 }
@@ -670,6 +709,125 @@ p {
 
 .ui.table td.twitter {
   text-align: center;
+}
+
+
+.donation-listings {
+  .category h5.ui.icon.header {
+    i.circular.icon {
+      box-shadow: 0 0 0 3px $violet-light inset;
+      border-color: $violet-light;
+
+      & + small {
+        border: 3px solid $violet-light;
+        //box-shadow: 0 0 0 3px $orange-dark inset;
+      }
+    }
+
+    &:hover i.circular.icon, &:hover i.circular.icon + small {
+      background-color: $violet-lighter;
+      border-color: $violet;
+      color: $violet-dark;
+    }
+
+    &:hover i.circular.icon {
+      box-shadow: 0 0 0 3px $violet inset;
+    }
+
+    &.active-icon {
+      i.circular.icon {
+        box-shadow: 0 0 0 3px $violet-light inset;
+        background-color: $violet;
+        border-color: $violet-light;
+        color: white;
+
+        & + small {
+          border: 3px solid $violet-light;
+          background-color: $violet;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .ui.table.content-wrapper {
+    border-color: $violet-light;
+  }
+
+  .ui.table thead th {
+    color: $violet-dark;
+
+    &:first-child {
+      color: white;
+      background: $violet-dark;
+      background: -moz-linear-gradient(left, $violet-dark 0%, $violet-dark 58%, #f9fafb 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, $violet-dark), color-stop(58%, $violet-dark), color-stop(100%, #f9fafb));
+      background: -webkit-linear-gradient(left, $violet-dark 0%, $violet-dark 58%, #f9fafb 100%);
+      background: -o-linear-gradient(left, $violet-dark 0%, $violet-dark 58%, #f9fafb 100%);
+      background: -ms-linear-gradient(left, $violet-dark 0%, $violet-dark 58%, #f9fafb 100%);
+      background: linear-gradient(to right, $violet-dark 0%, $violet-dark 58%, #f9fafb 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$violet-dark', endColorstr='#f9fafb', GradientType=1 );
+    }
+  }
+}
+
+.adult-listings {
+  .category h5.ui.icon.header {
+    i.circular.icon {
+      box-shadow: 0 0 0 3px $pink-light inset;
+      border-color: $pink-light;
+
+      & + small {
+        border: 3px solid $pink-light;
+        //box-shadow: 0 0 0 3px $orange-dark inset;
+      }
+    }
+
+    &:hover i.circular.icon, &:hover i.circular.icon + small {
+      background-color: $pink-light;
+      border-color: $pink;
+      color: $pink-dark;
+    }
+
+    &:hover i.circular.icon {
+      box-shadow: 0 0 0 3px $pink inset;
+    }
+
+    &.active-icon {
+      i.circular.icon {
+        box-shadow: 0 0 0 3px $pink-light inset;
+        background-color: $pink;
+        border-color: $pink-light;
+        color: white;
+
+        & + small {
+          border: 3px solid $pink-light;
+          background-color: $pink;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .ui.table.content-wrapper {
+    border-color: $pink-light;
+  }
+
+  .ui.table thead th {
+    color: $pink-dark;
+
+    &:first-child {
+      color: white;
+      background: $pink-dark;
+      background: -moz-linear-gradient(left, $pink-dark 0%, $pink-dark 58%, #f9fafb 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, $pink-dark), color-stop(58%, $pink-dark), color-stop(100%, #f9fafb));
+      background: -webkit-linear-gradient(left, $pink-dark 0%, $pink-dark 58%, #f9fafb 100%);
+      background: -o-linear-gradient(left, $pink-dark 0%, $pink-dark 58%, #f9fafb 100%);
+      background: -ms-linear-gradient(left, $pink-dark 0%, $pink-dark 58%, #f9fafb 100%);
+      background: linear-gradient(to right, $pink-dark 0%, $pink-dark 58%, #f9fafb 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$pink-dark', endColorstr='#f9fafb', GradientType=1 );
+    }
+  }
 }
 
 .bch-only-none-found {
@@ -1138,6 +1296,11 @@ span.progress {
     margin: 0;
     line-height: 1.8;
 
+    &.stats {
+      margin-top: 1rem;
+      line-height: 1;
+    }
+
     &.version {
       font-size: 0.88rem;
       color: $gray-lighter;
@@ -1180,8 +1343,10 @@ span.progress {
   }
 
   .ui.container {
-    margin: 0!important;
+    margin: 40px 0 0 !important;
+    padding: 40px 20px;
     border-width: 3px 0;
+    border-radius: 0;
   }
 
   #top-header {
@@ -1365,6 +1530,16 @@ span.progress {
 
   .ui.grid.container {
     border-width: 3px 0;
+  }
+
+  .ui.three.buttons {
+    flex-direction: column;
+
+    > .button {
+      width: 100%;
+      margin: 1px 0 0;
+      border-radius: 0 !important;
+    }
   }
 
   .ui.list .list>.item>.icon+.content, .ui.list .list>.item>.image+.content, .ui.list>.item>.icon+.content, .ui.list>.item>.image+.content {
