@@ -122,10 +122,10 @@ websites:
 
     - name: Codeship
       url: https://codeship.com/
-      twitter: codeship
-      facebook: codeship
       img: codeship.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://documentation.codeship.com/general/about/2fa/
 
     - name: Compose.io
       url: https://www.compose.io/
