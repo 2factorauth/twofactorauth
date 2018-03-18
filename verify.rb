@@ -44,10 +44,11 @@ def test_img(img, name, imgs)
     unless File.extname(img) == @img_extension && FastImage.type(img) == :png
 
   # Check image file size
-  test_img_size(File.size(img))
+  test_img_size(img)
 end
 
-def test_img_size(file_size)
+def test_img_size(img)
+  file_size = File.size(img)
   return unless file_size > @img_recommended_size
 
   error("#{img} should not be larger than #{@img_recommended_size} bytes. "\
