@@ -7,7 +7,7 @@ require 'diffy'
 
 # Image max size (in bytes)
 @img_recommended_size = 2500
-@img_max_size = 3000
+@img_max_size = 7500
 
 # Image dimensions
 @img_dimensions = [32, 32]
