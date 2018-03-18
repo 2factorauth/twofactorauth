@@ -452,13 +452,22 @@ websites:
       btc: No
       othercrypto: Yes
       doc: https://gpushack.com/pages/bitcoin-payments
-
+      
     - name: Groupon
       url: https://www.groupon.com
       twitter: Groupon
       facebook: Groupon.US
       img: groupon.png
       bch: No
+
+    - name: GVRNURSLF
+      url: https://gvrnurslf.com/
+      twitter: gvrnurslf
+      facebook: vinarmani
+      img: gvrnurslf.png
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: Home Depot
       url: http://www.homedepot.com
@@ -702,6 +711,17 @@ websites:
       bch: Yes
       btc: Yes
       othercrypto: Yes
+
+    - name: Pi Supply
+      url: https://pi-supply.com
+      img: pi-supply.png
+      twitter: PiSupply
+      facebook: PiSupply
+      email_address: john@pi-supply.com
+      bch: Yes
+      btc: No
+      othercrypto: Yes
+      doc: https://twitter.com/PiSupply/status/972228324721295360
 
     - name: Purism
       url: https://puri.sm/
