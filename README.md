@@ -37,6 +37,8 @@ bundle exec jekyll serve
 
 The TwoFactorAuth website should then be accessible from `http://localhost:4000`.
 
+Another option is to run Jekyll inside a Docker container.  Please read the [Jekyll Docker Documentation](https://github.com/envygeeks/jekyll-docker/blob/master/README.md) on how to do this.
+
 ## License
 
 This code is distributed under the MIT license. For more info, read the
