@@ -2,7 +2,7 @@ require 'html-proofer'
 require 'rubocop/rake_task'
 require 'jekyll'
 
-task default: %w[proof verify rubocop]
+task default: %w[verify rubocop proof]
 
 task :build do
   config = Jekyll.configuration(
