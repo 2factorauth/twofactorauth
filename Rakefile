@@ -19,7 +19,8 @@ task proof: 'build' do
     assume_extension: true, \
     check_html: true, \
     disable_external: true, \
-    url_ignore: ['/add'] \
+    url_ignore: ['/add'], \
+    hydra: { max_concurrency: 12 }
   ).run
 end
 
