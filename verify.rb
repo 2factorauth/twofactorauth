@@ -126,7 +126,7 @@ rescue StandardError => e
 else
   if @output_allowed_fails > 0 then
     puts "<------------ No build failing errors found! ------------>\n"
-    puts "<------------ #{output_allowed_fails} warnings reported! ------------>\n"
+    puts "<------------ #{@output_allowed_fails} warnings reported! ------------>\n"
   else
     puts "<------------ No errors. You\'re good to go! ------------>\n"
   end
