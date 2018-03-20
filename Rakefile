@@ -20,8 +20,7 @@ task proof: 'build' do
     check_html: true, \
     disable_external: true, \
     url_ignore: ['/add'], \
-    cache: { timeframe: '1d' }, \
-    hydra: { max_concurrency: 6 }
+    hydra: { max_concurrency: 15 }
   ).run
 end
 
