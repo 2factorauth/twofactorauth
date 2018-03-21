@@ -1,4 +1,13 @@
 websites:
+    - name: 143VPN
+      url: https://143vpn.com
+      img: 143VPN.png
+      twitter: 143VPN
+      facebook: 143VPN
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      
     - name: Air VPN
       url: https://airvpn.org/
       img: airvpn.png
@@ -166,8 +175,9 @@ websites:
     - name: Perfect Privacy VPN
       url: https://www.perfect-privacy.com/
       img: perfectprivacyvpn.png
-      bch: No
+      bch: Yes
       btc: Yes
+      othercrypto: No
       twitter: perfectprivacy
       facebook: perfect.privacy
       
@@ -327,9 +337,8 @@ websites:
       url: https://vpn.ac/
       img: vpnac.png
       bch: Yes
-      btc: No
+      btc: Yes
       othercrypto: Yes
-      doc: https://vpn.ac/announcements/51/Bitcoin-payments-through-BitPay-suspended.html
 
     - name: Windscribe
       url: https://windscribe.com

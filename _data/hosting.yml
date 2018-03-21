@@ -103,6 +103,15 @@ websites:
       othercrypto: No
       facebook: cloudways
       twitter: cloudways
+      
+    - name: CoinHost
+      url: https://www.coinhost.io/
+      img: coinhost.png
+      twitter: hostcoin
+      facebook: coinhost
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: cyon
       url: https://www.cyon.ch
@@ -181,18 +190,47 @@ websites:
       bch: No
       twitter: globat
 
+    - name: Hawk Host
+      url: https://www.hawkhost.com
+      img: hawkhost.png
+      twitter: hawkhost
+      facebook: hawkhost
+      email_address: cody@hawkhost.com
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      doc: https://twitter.com/HawkHost/status/971888229820616704
+      exceptions: 
+        text: "Select 'Bitcoin' as a payment method and you can pay with Bitcoin Cash or Bitcoin Legacy"
+      
     - name: Hetzner Online
       url: https://www.hetzner.de/
       facebook: hetzner.de
       img: hetzner.png
       bch: No
 
-    - name: HostHatch
+    - name: Host Hatch
       url: https://hosthatch.com/
       img: hosthatch.png
       bch: No
       twitter: HostHatch
       facebook: HostHatch
+      
+    - name: Host Havoc
+      url: https://hosthavoc.com/
+      img: hosthavoc.png
+      twitter: hosthavoc
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      
+    - name: Hostlic
+      url: https://www.hostlic.com
+      img: hostlic.png
+      facebook: hostlic
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: ICUK
       url: https://www.icuk.net/
@@ -327,6 +365,15 @@ websites:
       img: mittwald.png
       bch: No
       lang: de
+      
+    - name: Monster Megs
+      url: https://www.monstermegs.com/
+      img: MonsterMegs.png
+      twitter: MonsterMegsHost
+      facebook: MonsterMegs
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: NearlyFreeSpeech.NET
       url: https://www.nearlyfreespeech.net/
@@ -413,6 +460,14 @@ websites:
       img: ovh.png
       bch: No
       doc: https://www.ovh.com/support/termsofservice/payment.xml
+      
+    - name: PiVPS Services
+      url: https://pivps.com/
+      img: pivps.png
+      facebook: pivpscom
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: PlanetHoster
       url: https://planethoster.net
@@ -534,6 +589,15 @@ websites:
       bch: Yes
       btc: Yes
       othercrypto: No
+      
+    - name: UTop
+      url: http://utop.us/
+      img: utop.png
+      twitter: utopus2
+      facebook: www.uTop.us
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
 
     - name: Versio
       url: https://www.versio.nl
@@ -556,8 +620,9 @@ websites:
       url: https://www.vpsserver.com/
       twitter: vpsservercom
       img: vpsserver.png
-      bch: No
+      bch: Yes
       btc: Yes
+      othercrypto: No
 
     - name: Vultr
       url: https://www.vultr.com/

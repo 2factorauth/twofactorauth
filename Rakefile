@@ -2,7 +2,7 @@ require 'html-proofer'
 require 'rubocop/rake_task'
 require 'jekyll'
 
-task default: %w[proof verify rubocop]
+task default: %w[verify rubocop proof]
 
 task :build do
   config = Jekyll.configuration(
@@ -19,7 +19,8 @@ task proof: 'build' do
     assume_extension: true, \
     check_html: true, \
     disable_external: true, \
-    url_ignore: ['/add'] \
+    url_ignore: ['/add'], \
+    hydra: { max_concurrency: 25 }
   ).run
 end
 
@@ -32,7 +33,7 @@ task proof_external: 'build' do
     url_ignore: ['/add'], \
     http_status_ignore: [0, 301, 302, 403, 503], \
     cache: { timeframe: '1w' }, \
-    hydra: { max_concurrency: 12 }
+    hydra: { max_concurrency: 15 }
   ).run
 end
 
