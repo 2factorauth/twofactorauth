@@ -3,6 +3,7 @@ require 'rubocop/rake_task'
 require 'jekyll'
 
 task default: %w[verify rubocop proof]
+task external: %w[verify rubocop proof_external]
 
 task :build do
   config = Jekyll.configuration(
@@ -20,7 +21,7 @@ task proof: 'build' do
     check_html: true, \
     disable_external: true, \
     url_ignore: ['/add'], \
-    hydra: { max_concurrency: 25 }
+    hydra: { max_concurrency: 50 }
   ).run
 end
 
