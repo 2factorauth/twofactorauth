@@ -1,57 +1,75 @@
-sudo: required
-language: ruby
+sudo: true
+dist: trusty
 rvm: 2.4.0
-os: linux
-env:
-  global: 
-    - DEPLOY_DOCKER=false
-services:
-  - docker
 cache:
   bundler: true
   directories:
-  - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+    $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 addons:
   apt:
     packages:
     - libcurl4-openssl-dev
     - ca-certificates
-matrix:
-  fast_finish: true
+stages:
+  - name: Test
+    if: sender != imgbot
+  - name: imgbot
+    if: sender = imgbot
+  - name: Run build
+    if: branch = master AND sender != imgbot AND type = push
+jobs:
   include:
-    - before_install:
-      - pip install --user pathlib
-      env: 
-      - NEXT_BUILD_TAG=latest
+    - &test-baseline
+      stage: Test
       script:
-      - bundle exec rake && if [ "$TRAVIS_TAG" != "" ]; then NEXT_BUILD_TAG=`date +"%m-%d-%Y"`; DEPLOY_DOCKER="true"; fi
+        bundle exec rake
+      
+    - <<: *test-baseline
+      script:
+        bundle exec rake external
+      if: type IN (pull_request, cron)
+    
+    - stage: imgbot
+      script:
+        bundle exec rake verify
+    
+    - stage: Run build
+      env: 
+        NEXT_BUILD_TAG=latest
+      before_install:
+        pip install --user pathlib
+      script:
+      - if [ "$TRAVIS_TAG" != "" ]; then 
+            NEXT_BUILD_TAG=`date +"%m-%d-%Y"`; 
+        fi
       - echo ".git" > .dockerignore
       - bundle exec rake docker:build
-      - if [ "$NEXT_BUILD_TAG" != "latest" ]; then docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; fi
-    - script:
-      - bundle exec rake proof_external
+      - if [ "$NEXT_BUILD_TAG" != "latest" ]; then 
+            docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; 
+        fi
+      deploy:
+      - provider: pages
+        skip-cleanup: true
+        github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+        keep-history: true
+        on: 
+          branch: master
+          tags: true
+      - provider: script
+        skip-cleanup: true
+        script:
+        # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+        - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+        - docker push acceptbitcoincash/acceptbitcoincash
+        on: 
+          branch: master
+          tags: true
+          condition: $NEXT_BUILD_TAG != "latest"
   allow_failures:
-    - script: 
-      - bundle exec rake proof_external
-deploy:
-  - provider: pages
-    skip-cleanup: true
-    github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-    keep-history: true
-    on: 
-      branch: master
-      tags: true
-      condition: $DEPLOY_DOCKER == "true"
-  - provider: script
-    skip-cleanup: true
     script:
-    # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push acceptbitcoincash/acceptbitcoincash
-    - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; docker push acceptbitcoincash/acceptbitcoincash
-    on: 
-      branch: master
-      tags: true
-      condition: $DEPLOY_DOCKER == "true"
+      bundle exec rake external
 notifications:
+  webhooks: https://www.travisbuddy.com/
   slack:
     rooms:
       - secure: "vIMiDIutWLX4xPWK4+HRh39MdAaNLl+UcK7UjNlehHIuopZPbnH+TmqFg5726ZDhkQ6QN/lHYVuHTvW9Kp+f7uiuRX2QLJH4vZZrcvsXeRccWbVx7MlMW9hbOnvB73nUmezaHploSpMINKWRD51PhLlONbztLCzYmOoBfLRDvrmEY7kzoiMFCCZwPIzIiyB1LrEhSQD3YELgZ+ZDipFUeVA2yrBKZSZZoM7ubcpqNZHhx+3uAJrpQ66k36eprrXM7IC8Qy8u2AcV1hNnczNM+jUts/PKyCjH4vIjh4JEVNN/gBLY30oDOR6d95szme/4BWEPCcP2Sz3MQTtkN5tXaAmRRKqwYUv+lB0lTB5EB28SD9Sa3Q6HJhIQ5BVuO0Lmdwe8CVBTy7lmwcyuUqW5y0MHQF6HAZj2lSN8pktInFD40o+FQgC03YEiXWJbCYzny7LmE0T6ZgycvFzr/S28cDXiPemPMg4333aDjHj02631gRZtMG9dh7u35UnjuWU1Qs2ke2Irx2GJadp5LHp7++ssHWdmZKVJlKSvh679QCNvlG5CvWD/VinBvibTR61Py+b0Zk+k3++fz3YcJZ89ZCAyQ4yWCsGB7nNjpaMYcBHgHwgNBF6Gk3x71A2N3NfQrm2pcoB3+KM3QMVFmZrUD74Ni8TLXOdK2GHmYaqMI9A="
