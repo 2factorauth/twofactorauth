@@ -35,6 +35,17 @@ websites:
       othercrypto: Yes
       doc: https://linuxmint.com/donors.php
 
+    - name: Riseup Mail
+      url: https://riseup.net
+      img: riseup.png
+      twitter: riseupnet
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://riseup.net/en/donate
+      exceptions:
+        text: "This is a free service that accepts donations. They refer to Bitcoin Cash improperly as BCash. We hope they will realize the error of this misnaming but appreciate the opportunity to donate to them in Bitcoin Cash to support their project."
+
     - name: ShareX
       url: https://getsharex.com/
       img: sharex.png
