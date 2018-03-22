@@ -4,7 +4,8 @@ rvm: 2.4.0
 cache:
   bundler: true
   directories:
-    $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+  - vendor/bundle
+  - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 addons:
   apt:
     packages:
