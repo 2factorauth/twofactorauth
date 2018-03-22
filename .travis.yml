@@ -54,6 +54,7 @@ jobs:
         keep-history: true
         on: 
           branch: master
+          tags: true
       - provider: script
         skip-cleanup: true
         script:
