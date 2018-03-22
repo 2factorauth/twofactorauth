@@ -57,8 +57,8 @@ jobs:
       - provider: script
         skip-cleanup: true
         script:
-        # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push acceptbitcoincash/acceptbitcoincash
-        - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; 
+        # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+        - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
         - docker push acceptbitcoincash/acceptbitcoincash
         on: 
           branch: master
