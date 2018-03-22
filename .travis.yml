@@ -16,7 +16,7 @@ stages:
   - name: imgbot
     if: sender = imgbot
   - name: Run build
-    if: branch = master AND sender != imgbot
+    if: branch = master AND sender != imgbot AND type = push
 jobs:
   include:
     - &test-baseline
