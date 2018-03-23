@@ -13,11 +13,11 @@ addons:
     - ca-certificates
 stages:
   - name: Test
-    if: sender != ImgBotApp
+    if: sender != imgbot[bot]
   - name: imgbot
-    if: sender = ImgBotApp
+    if: sender = imgbot[bot]
   - name: Run build
-    if: branch = master AND sender != ImgBotApp AND type = push
+    if: branch = master AND sender != imgbot[bot] AND type = push
 jobs:
   include:
     - &test-baseline
@@ -49,12 +49,6 @@ jobs:
             docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; 
         fi
       deploy:
-      - provider: pages
-        skip-cleanup: true
-        github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-        keep-history: true
-        on: 
-          branch: master
       - provider: script
         skip-cleanup: true
         script:
@@ -65,6 +59,15 @@ jobs:
           branch: master
           tags: true
           condition: $NEXT_BUILD_TAG != "latest"
+      - provider: pages
+        skip-cleanup: true
+        github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+        fqdn: beta.acceptbitco.in
+        keep-history: true
+        repo: acceptbitcoincash/acceptbitcoincash
+        target_branch: gh-pages
+        on: 
+          branch: master
   allow_failures:
     script:
       bundle exec rake external
