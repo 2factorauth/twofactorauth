@@ -176,9 +176,11 @@ websites:
     - name: Reddit
       url: https://www.reddit.com/
       img: reddit.png
-      bch: No
-      btc: Yes
       twitter: reddit
+      bch: No
+      btc: No
+      exceptions:
+        text: "On March 23rd, 2018 Reddit disabled BTC payments for buying Reddit Gold."
 
     - name: Snapchat
       url: https://www.snapchat.com/
