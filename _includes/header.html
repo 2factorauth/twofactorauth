@@ -33,7 +33,7 @@
       <div class="sub header">
         <p>A community-curated list of <b>{% if page.id == 'home'%}merchants{% elsif page.id == 'donation-listings' %}organizations{% elsif page.id == 'adult-listings' %}adult websites{% endif %} that accept <a href="https://bitcoincash.org" data-tooltip="Learn about Bitcoin Cash" data-position="top center">Bitcoin Cash</a></b>, a peer-to-peer electronic cash system{% if page.id == 'donation-listings' %}, for donations{% endif %}.</p>
       </div>
-
+{% if page.id != "adoption" %}
       <i class="bitcoin icon"></i>
 
       <div class="sub header browse-all">
@@ -71,6 +71,7 @@
           <span><i class="info circle icon"></i> We prefer <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/issues/new">new issues</a> or pull requests through Github.<br><a href="https://github.com/acceptbitcoincash/acceptbitcoincash/blob/master/CONTRIBUTING.md" target="_blank">Details here</a>.</span>
         </p>
       </div>
+	  {% endif %}
     </div>
   </div>
 </div>
