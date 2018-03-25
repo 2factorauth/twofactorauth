@@ -453,19 +453,13 @@ websites:
       facebook: spare5app
       email_address: feedback@spare5.com
 
-    - name: StartJOIN
-      url: https://www.startjoin.com/
-      img: startjoin.png
-      tfa: Yes
-      software: Yes
-
     - name: Ubiquiti Networks
       url: https://www.ubnt.com
       img: ubiquiti.png
       tfa: Yes
       software: Yes
       doc: https://help.ubnt.com/hc/en-us/articles/115012986607-How-to-Enable-Two-Factor-Authentication
-
+      
     - name: Ulule
       url: https://www.ulule.com/
       twitter: ulule
