@@ -1,5 +1,15 @@
-
+{%- assign progress_text = "" -%}
+{%- case include.page -%}
+	{%- when "home" -%}
+		{%- assign progress_text = "on Main page" -%}
+	{%- when "adult" -%}
+		{%- assign progress_text = "on Adult page" -%}
+	{%- when "donations" -%}
+		{%- assign progress_text = "on Donations page" -%}
+	{%- when "cobra" -%}
+		{%- assign progress_text = ", that also accept Bitcoin" -%}
+{%- endcase -%}
 <div class="ui container progress bch-progress" data-value="{{ include.value }}" data-total="{{ include.total }}" id="bch-count">
 	<div class="bar"><div class="progress"></div>   </div>   
-	<div class="label" data-tooltip="Please help to improve this ratio by sending tweets to, or writing on the wall of the merchants/websites that you hope to see accept Bitcoin Cash." data-position="bottom center" data-inverted=""><b>{{ include.value }}</b> out of <b>{{ include.total }}</b> websites listed accept Bitcoin Cash on {{ include.page }}.</div> 
+	<div class="label" data-tooltip="Please help to improve this ratio by sending tweets to, or writing on the wall of the merchants/websites that you hope to see accept Bitcoin Cash." data-position="bottom center" data-inverted=""><b>{{ include.value }}</b> out of <b>{{ include.total }}</b> websites listed accept Bitcoin Cash {{ progress_text }}.</div> 
 </div>
