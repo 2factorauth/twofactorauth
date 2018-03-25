@@ -40,10 +40,12 @@ websites:
     - name: Adafruit
       url: https://www.adafruit.com
       img: adafruit.png
-      bch: No
+      bch: Yes
+      btc: Yes
       twitter: adafruit
       facebook: adafruitindustries
-      email_address:
+      exceptions:
+        text: "To use any cryptocurrency, the order must exceed $100 before the option becomes available during checkout."
 
     - name: AdoramaPix
       url: http://www.adoramapix.com
@@ -416,7 +418,8 @@ websites:
     - name: FastTech
       url: https://www.fasttech.com
       img: fasttech.png
-      bch: No
+      bch: Yes
+      btc: Yes
       facebook: fasttech.net
 
     - name: Flipkart
@@ -594,7 +597,7 @@ websites:
       btc: yes
       othercrypto: yes
       exceptions:
-            text: "Currently accepting BCH if you request an address. Working on adding BCH to the payment flow."
+        text: "Currently accepting BCH if you request an address. Working on adding BCH to the payment flow."
 
     - name: King Pen Vapes
       url: https://kingpenvapes.com/

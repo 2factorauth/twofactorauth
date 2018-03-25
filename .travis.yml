@@ -69,8 +69,10 @@ jobs:
         on: 
           branch: master
   allow_failures:
-    script:
-      bundle exec rake external
+    - stage: Test
+      script:
+        bundle exec rake external
+      if: type IN (pull_request, cron)
 notifications:
   webhooks: https://www.travisbuddy.com/
   slack:
