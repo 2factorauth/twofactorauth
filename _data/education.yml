@@ -40,6 +40,8 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+          text: "sms is required to activate"
       doc: https://imss.caltech.edu/node/1408
 
     - name: CBT Nuggets
