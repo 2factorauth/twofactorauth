@@ -1,13 +1,12 @@
-{% assign section_id = include.id-param %}
-{% assign section_title = include.title-param %}
-{% assign section_file = site.data[section_id] %}
-{% assign count_bch = 0 %}
-{% for website in section_file.websites %}
-  {% if website.bch %}
-    {% assign count_bch = count_bch | plus: '1' %}
-  {% endif %}
-{% endfor %}
-
+{%- assign section_id = include.id-param -%}
+{%- assign section_title = include.title-param -%}
+{%- assign section_file = site.data[section_id] -%}
+{%- assign count_bch = 0 -%}
+{%- for website in section_file.websites -%}
+  {%- if website.bch -%}
+    {%- assign count_bch = count_bch | plus: '1' -%}
+  {%- endif -%}
+{%- endfor -%}
 <div class="website-table desktop-table {{ section_id }}-table" id="{{ section_id }}-desktoptable" style="display:none">
   <table class="ui celled table content-wrapper">
     <thead class="ui sticky">
@@ -20,7 +19,7 @@
     </tr>
     </thead>
     <tbody class="bch-merchant-content">
-      {% if count_bch <= 0 %}
+      {%- if count_bch <= 0 -%}
       <tr class="bch-only-none-found">
         <td colspan="5" style="text-align: center">
           <h3><i class="big remove circle icon"></i></h3>
@@ -28,118 +27,94 @@
           <p>Try <span class="clear-bch-only">clearing the Bitcoin Cash only filter</span> to see all listings, then reach out to them over social media or e-mail <i class="announcement icon"></i></p>
         </td>
       </tr>
-      {% endif %}
-      {% for website in section_file.websites %}
-      {% if website.lang and site.data.languages[website.lang] %}
-        {% assign progress_tweet = site.data.languages[website.lang].progress_tweet %}
-        {% assign workonit_tweet = site.data.languages[website.lang].work_tweet %}
-      {% else %}
-        {% assign progress_tweet = page.progress_tweet %}
-        {% assign workonit_tweet = page.workonit_tweet %}
-      {% endif %}
-      <tr class="desktop-tr{% if website.bch == false %} no-bch{% endif %}">
-        {% if website.status %}
-          <td class="main progress">
-            <div class="title">
-              {% if website.img %}
-                <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-                <img src="/img/{{ section_id }}/{{ website.img }}" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-              {% else %}
-                <noscript><img src="/img/placeholder.png" class="icon" alt="{{ website.name }}"></noscript>
-                <img src="/img/placeholder.png" data-src="/img/placeholder.png" class="icon" alt="{{ website.name }}">
-              {% endif %}
-              <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
-              {% include exception.html website=website %}
-            </div>
-            <div class="progress-info">
-              <a class="fluid ui mini orange button" href="{{website.status}}" target="_blank">
-                In Progress!
-              </a>
-            </div>
-          </td>
-          <td class="twitter progress" colspan="4">
-            <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="top center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress}}</a>
-          </td>
-        {% elsif website.bch or website.btc %}
-          <td {% if website.bch %}class="main positive"{% else %}class="main negative"{% endif %}>
-            <div class="title">
-              {% if website.img %}
-                <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-                <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-              {% else %}
-                <noscript><img src="/img/placeholder.png" class="icon" alt="{{ website.name }}"></noscript>
-                <img src="/img/placeholder.png" data-src="/img/placeholder.png" class="icon" alt="{{ website.name }}">
-              {% endif %}
-              <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
-              {% include exception.html website=website %}
-              {% if website.twitter and website.bch %}<a class="social-name" href="https://twitter.com/{{ website.twitter }}" target="_blank" data-tooltip="@{{ website.twitter }}" data-position="top center" data-inverted=""><i class="twitter icon"></i></a>{% endif %}
-              {% if website.facebook and website.bch %}<a class="social-name" href="https://facebook.com/{{ website.facebook }}" target="_blank" data-tooltip="fb.com/{{ website.facebook }}" data-position="top center" data-inverted=""><i class="facebook f icon"></i></a>{% endif %}
-            </div>
-          </td>
-
-          <td {% if website.bch %}class="positive icon"{% else %}class="negative icon"{% endif %}>
-            {% if website.bch %}
-            <div class="coin-wrap green-coin-wrap" data-tooltip="Bitcoin Cash accepted at {{ website.name }}" data-position="top center" data-inverted="">
-              <img src="/img/coin-bch.png" alt="Bitcoin Cash">
-            </div>
-            {% else %}
-            {% if website.twitter %} <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="right center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i></a>{% endif %}
-            {% if website.facebook %} <a data-tooltip="{{page.link_facebook|replace:'@FACEBOOKHANDLE',website.name}}" data-position="right center" data-inverted="" class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook big icon"></i></a>{%endif%}
-            {% endif %}
-          </td>
-
-          <td {% if website.btc %}class="positive icon"{% else %}class="negative icon"{% endif %}>
-            {% if website.btc %}
-            <div class="coin-wrap orange-coin-wrap" data-tooltip="Bitcoin (Legacy) accepted at {{ website.name }}" data-position="top center" data-inverted="">
-              <img src="/img/coin-btc.png" alt="Bitcoin (Legacy)">
-            </div>
-            {% endif %}
-          </td>
-
-
-          <td {% if website.othercrypto %}class="positive icon"{% else %}class="negative icon"{% endif %}>
-            {% if website.othercrypto %}
-            <span data-tooltip="Other cryptocurrencies are accepted at {{ website.name }}" data-position="top center" data-inverted="">
-              <i class="checkmark large icon"></i>
-            </span>
-          {% endif %}
-          </td>
-
-          <td {% if website.doc %}class="docs positive icon"{% else %}class="negative icon"{% endif %}>
-            {% if website.doc %}
-            <a href="{{ website.doc }}" target="_blank" data-tooltip="{{page.rtfm}} {{ website.name }}" data-position="top center" data-inverted=""><i class="file text large icon"></i></a>
-            {% endif %}
-          </td>
-
-        {% else %}
-          <td class="main negative">
-            <div class="title">
-              {% if website.img %}
-                <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-                <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}">
-              {% else %}
-                <noscript><img src="/img/placeholder.png" class="icon" alt="{{ website.name }}"></noscript>
-                <img src="/img/placeholder.png" data-src="/img/placeholder.png" class="icon" alt="{{ website.name }}">
-              {% endif %}
-              <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
-              {% include exception.html website=website %}
-            </div>
-          </td>
-          <td class="twitter negative" colspan="4">
-          {% if website.twitter %} <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="left center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank">Ask on <i class="twitter big icon"></i></a>{% endif %}
-          {% if website.facebook %} <a data-tooltip="{{page.link_facebook|replace:'@FACEBOOKHANDLE',website.name}}" data-position="right center" data-inverted=""  class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank">Ask on <i class="facebook big icon"></i></a>{%endif%}
-          {% if website.email_address %} <a data-tooltip="Send an e-mail to {{website.name}}" data-position="right center" data-inverted=""  class="ui green mini button" href="mailto:{{website.email_address}}?subject={{page.email_subject}}"><i class="mail big icon"></i></a>{% endif %}
-          </td>
-        {% endif %}
-      </tr>
-      {% endfor %}
-      {% if count_bch > 0 and count_bch <= 5 %}
+      {%- endif -%}
+      {%- for website in section_file.websites -%}
+		  {%- if website.lang and site.data.languages[website.lang] -%}
+			{%- assign progress_tweet = site.data.languages[website.lang].progress_tweet -%}
+			{%- assign workonit_tweet = site.data.languages[website.lang].work_tweet -%}
+		  {%- else -%}
+			{%- assign progress_tweet = page.progress_tweet -%}
+			{%- assign workonit_tweet = page.workonit_tweet -%}
+		  {%- endif -%}
+		  <tr class="desktop-tr{% if website.bch == false %} no-bch{% endif %}">
+			{%- if website.status -%}
+			  <td class="main progress">
+				<div class="title">
+				  {% include segment/row/logo.html section=section_id img=website.img site=website.name %}
+				  <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
+				  {%- include exception.html website=website -%}
+				</div>
+				<div class="progress-info">
+				  <a class="fluid ui mini orange button" href="{{website.status}}" target="_blank">
+					In Progress!
+				  </a>
+				</div>
+			  </td>
+			  <td class="twitter progress" colspan="4">
+				<a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="top center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress}}</a>
+			  </td>
+			{%- elsif website.bch or website.btc -%}
+			  <td class="main {% if website.bch %}positive{% else %}negative{% endif %}">
+				<div class="title">
+				  {% include segment/row/logo.html section=section_id img=website.img site=website.name %}
+				  <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
+				  {%- include exception.html website=website -%}
+				  {%- if website.twitter and website.bch -%}<a class="social-name" href="https://twitter.com/{{ website.twitter }}" target="_blank" data-tooltip="@{{ website.twitter }}" data-position="top center" data-inverted=""><i class="twitter icon"></i></a>{%- endif -%}
+				  {%- if website.facebook and website.bch -%}<a class="social-name" href="https://facebook.com/{{ website.facebook }}" target="_blank" data-tooltip="fb.com/{{ website.facebook }}" data-position="top center" data-inverted=""><i class="facebook f icon"></i></a>{%- endif -%}
+				</div>
+			  </td>
+			  <td {% if website.bch %}class="positive icon"{% else %}class="negative icon"{% endif %}>
+				{%- if website.bch -%}
+				<div class="coin-wrap green-coin-wrap" data-tooltip="Bitcoin Cash accepted at {{ website.name }}" data-position="top center" data-inverted="">
+				  <img src="/img/coin-bch.png" alt="Bitcoin Cash">
+				</div>
+				{%- else -%}
+				{%- if website.twitter -%} <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="right center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i></a>{%- endif -%}
+				{%- if website.facebook -%} <a data-tooltip="{{page.link_facebook|replace:'@FACEBOOKHANDLE',website.name}}" data-position="right center" data-inverted="" class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook big icon"></i></a>{%- endif -%}
+				{%- endif -%}
+			  </td>
+			  <td {% if website.btc %}class="positive icon"{% else %}class="negative icon"{% endif %}>
+				{%- if website.btc -%}
+				<div class="coin-wrap orange-coin-wrap" data-tooltip="Bitcoin (Legacy) accepted at {{ website.name }}" data-position="top center" data-inverted="">
+				  <img src="/img/coin-btc.png" alt="Bitcoin (Legacy)">
+				</div>
+				{%- endif -%}
+			  </td>
+			  <td {% if website.othercrypto %}class="positive icon"{% else %}class="negative icon"{% endif %}>
+				{%- if website.othercrypto -%}
+				<span data-tooltip="Other cryptocurrencies are accepted at {{ website.name }}" data-position="top center" data-inverted="">
+				  <i class="checkmark large icon"></i>
+				</span>
+			    {%- endif -%}
+			  </td>
+			  <td {% if website.doc %}class="docs positive icon"{% else %}class="negative icon"{% endif %}>
+				{%- if website.doc -%}
+				<a href="{{ website.doc }}" target="_blank" data-tooltip="{{page.rtfm}} {{ website.name }}" data-position="top center" data-inverted=""><i class="file text large icon"></i></a>
+				{%- endif -%}
+			  </td>
+			{%- else -%}
+			  <td class="main negative">
+				<div class="title">
+				  {% include segment/row/logo.html section=section_id img=website.img site=website.name %}
+				  <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
+				  {%- include exception.html website=website -%}
+				</div>
+			  </td>
+			  <td class="twitter negative" colspan="4">
+			  {%- if website.twitter -%} <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="left center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank">Ask on <i class="twitter big icon"></i></a>{%- endif -%}
+			  {%- if website.facebook -%} <a data-tooltip="{{page.link_facebook|replace:'@FACEBOOKHANDLE',website.name}}" data-position="right center" data-inverted=""  class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank">Ask on <i class="facebook big icon"></i></a>{%- endif -%}
+			  {%- if website.email_address -%} <a data-tooltip="Send an e-mail to {{website.name}}" data-position="right center" data-inverted=""  class="ui green mini button" href="mailto:{{website.email_address}}?subject={{page.email_subject}}"><i class="mail big icon"></i></a>{%- endif -%}
+			  </td>
+			{%- endif -%}
+		  </tr>
+      {%- endfor -%}
+      {%- if count_bch > 0 and count_bch <= 5 -%}
       <tr class="bch-only-none-found">
         <td colspan="5" style="text-align: center">
           <h4>Hoping to see more than {{ count_bch }} listing{% if count_bch > 1 %}s{% endif %} accepting Bitcoin Cash in {{ section.title }}?</h4>
           <p>Try <span class="clear-bch-only">clearing the Bitcoin Cash only filter</span> to see all listings, then reach out to them over social media or e-mail <i class="announcement icon"></i></p>
         </td>      </tr>
-      {% endif %}
+      {%- endif -%}
     </tbody>
   </table>
 </div>

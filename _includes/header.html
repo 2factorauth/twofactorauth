@@ -31,9 +31,9 @@
 
     <div class="inner-title">
       <div class="sub header">
-        <p>A community-curated list of <b>{% if page.id == 'home'%}merchants{% elsif page.id == 'donation-listings' %}organizations{% elsif page.id == 'adult-listings' %}adult websites{% endif %} that accept <a href="https://bitcoincash.org" data-tooltip="Learn about Bitcoin Cash" data-position="top center">Bitcoin Cash</a></b>, a peer-to-peer electronic cash system{% if page.id == 'donation-listings' %}, for donations{% endif %}.</p>
+        <p>A community-curated list of <b>{% if page.id == 'home' %}merchants{% elsif page.id == 'donation-listings' %}organizations{% elsif page.id == 'adult-listings' %}adult websites{% endif %} that accept <a href="https://bitcoincash.org" data-tooltip="Learn about Bitcoin Cash" data-position="top center">Bitcoin Cash</a></b>, a peer-to-peer electronic cash system{% if page.id == 'donation-listings' %}, for donations{% endif %}.</p>
       </div>
-{% if page.id != "adoption" %}
+{%- if page.id != "adoption" -%}
       <i class="bitcoin icon"></i>
 
       <div class="sub header browse-all">
@@ -45,7 +45,7 @@
           <div class="search-input-wrapper">
             <i id="search-icon" class="search icon"></i>
             <label for="bch-merchant-search">
-              <input type="search" id="bch-merchant-search" placeholder="Search by {% if page.id == 'home'%}merchant{% elsif page.id == 'donation-listings' %}organization{% elsif page.id == 'adult-listings' %}adult website{% endif %} name" autocomplete="off" spellcheck="false" tabindex="0">
+              <input type="search" id="bch-merchant-search" placeholder="Search by {% if page.id == 'home' %}merchant{% elsif page.id == 'donation-listings' %}organization{% elsif page.id == 'adult-listings' %}adult website{% endif %} name" autocomplete="off" spellcheck="false" tabindex="0">
             </label>
             <button id="search-clear">
               <i class="remove icon"></i>
@@ -56,7 +56,7 @@
               <div class="z-switch--container">
                   <div class="z-switch--slider"></div>
               </div>
-              Only show {% if page.id == 'home'%}merchants{% elsif page.id == 'donation-listings' %}organizations{% elsif page.id == 'adult-listings' %}adult websites{% endif %} accepting Bitcoin Cash{% if page.id == 'donation-listings' %} donations{% endif %}
+              Only show {% if page.id == 'home' %}merchants{% elsif page.id == 'donation-listings' %}organizations{% elsif page.id == 'adult-listings' %}adult websites{% endif %} accepting Bitcoin Cash{% if page.id == 'donation-listings' %} donations{% endif %}
               <!-- img class="search-logo" src="/img/coin-bch.png" alt="Bitcoin Cash" -->
           </label>
           <!-- span id="top-btn-top"><i class="chevron circle up icon"></i> Top</span -->
@@ -66,12 +66,12 @@
       <div class="sub header how-to-contrib">
         <p class="or-choice"><em>- or -</em></p>
         <p>
-          <button class="ui violet button submit-new"><a href="/add" target="_blank"><i class="add square icon"></i> &nbsp; Submit a new {% if page.id == 'home'%}merchant site{% elsif page.id == 'donation-listings' %}organization{% elsif page.id == 'adult-listings' %}adult website{% endif %}</a></button>
+          <button class="ui violet button submit-new"><a href="/add" target="_blank"><i class="add square icon"></i> &nbsp; Submit a new {% if page.id == 'home' %}merchant site{% elsif page.id == 'donation-listings' %}organization{% elsif page.id == 'adult-listings' %}adult website{% endif %}</a></button>
           <br>
           <span><i class="info circle icon"></i> We prefer <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/issues/new">new issues</a> or pull requests through Github.<br><a href="https://github.com/acceptbitcoincash/acceptbitcoincash/blob/master/CONTRIBUTING.md" target="_blank">Details here</a>.</span>
         </p>
       </div>
-	  {% endif %}
+	  {%- endif -%}
     </div>
   </div>
 </div>

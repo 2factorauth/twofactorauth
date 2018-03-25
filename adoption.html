@@ -2,7 +2,35 @@
 layout: default
 
 id: adoption
-
 ---
-
-{% include count_support.html %}
+{%- assign pages = site.data.sections | group_by:"page" | sort:"page" | reverse -%}
+{% for tracked_page in pages %} 
+	{%- assign count_total = 0 -%}
+	{%- assign count_bch = 0 -%}
+	{%- for section in tracked_page.items -%}
+		{%- assign section_file = site.data[section.id] -%}
+		{%- for website in section_file.websites -%}
+			{%- assign count_total = count_total | plus: '1' -%}
+			{%- if website.bch -%}
+				{%- assign count_bch = count_bch | plus: '1' -%}
+			{%- endif -%}
+		{%- endfor -%}
+	{%- endfor -%}
+	{% include segment/progress-bar.html value=count_bch total=count_total page=tracked_page.name %}
+{% endfor %}
+{%- assign count_total = 0 -%}
+{%- assign count_bch = 0 -%}
+{% for tracked_page in pages %} 
+	{%- for section in tracked_page.items -%}
+		{%- assign section_file = site.data[section.id] -%}
+		{%- for website in section_file.websites -%}
+			{%- if website.btc -%}
+				{%- assign count_total = count_total | plus: '1' -%}
+				{%- if website.bch -%}
+					{%- assign count_bch = count_bch | plus: '1' -%}
+				{%- endif -%}
+			{%- endif -%}
+		{%- endfor -%}
+	{%- endfor -%}
+{% endfor %}
+{% include segment/progress-bar.html value=count_bch total=count_total %}
