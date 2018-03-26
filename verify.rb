@@ -107,7 +107,7 @@ begin
   end
 
   puts "<--------- Total websites listed: #{@total_tracked} --------->\n"
-  puts "<--------- Total websites accepting BCH: #{@total_support} --------->\n"
+  puts "<--------- Total accepting BCH: #{@total_support} --------->\n"
 
   @output -= @allowed_output
 
