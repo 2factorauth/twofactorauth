@@ -2,6 +2,7 @@
 layout: default
 
 id: adoption
+has_search: no
 ---
 {%- assign pages = site.data.sections | group_by:"page" | sort:"page" | reverse -%}
 {% for tracked_page in pages %} 
@@ -20,7 +21,7 @@ id: adoption
 {% endfor %}
 {%- assign count_total = 0 -%}
 {%- assign count_bch = 0 -%}
-{% for tracked_page in pages %} 
+{% for tracked_page in pages %}
 	{%- for section in tracked_page.items -%}
 		{%- assign section_file = site.data[section.id] -%}
 		{%- for website in section_file.websites -%}
