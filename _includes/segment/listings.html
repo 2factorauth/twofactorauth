@@ -21,7 +21,6 @@
 				{%- assign count_bch = count_bch | plus: '1' -%}
 			{%- endif -%}
 		{%- endfor -%}
-		{%- if rowend == 0 or forloop.index == forloop.length -%}
 			<div id="{{ section.id }}" class="category column{% if count_bch == 0 %} bch-only-hidden{% endif %}">
 				<h5 class="ui icon header">
 					<i class="circular {{ section.icon }} icon"></i>
@@ -29,6 +28,7 @@
 				</h5>
 			</div>
 			{% include mobile-table.html id-param=section.id title-param=section.title %}
+		{%- if rowend == 0 or forloop.index == forloop.length -%}
 			{%- assign offcount = 5 | times: rowcount -%}
 			{% for section in page_sections limit: 5 offset: offcount %}
 				{% include desktop-table.html id-param=section.id title-param=section.title %}
@@ -38,14 +38,6 @@
 				{%- assign rowcount = rowcount | plus: '1' -%}
 				<div class="five column row">
 			{%- endif -%}
-		{%- else -%}
-			<div id="{{ section.id }}" class="category column{% if count_bch == 0 %} bch-only-hidden{% endif %}">
-				<h5 class="ui icon header">
-					<i class="circular {{ section.icon }} icon"></i>
-					<small>{{ section.title }}</small>
-				</h5>
-			</div>
-			{% include mobile-table.html id-param=section.id title-param=section.title %}
 		{%- endif -%}
 	{%- endfor -%}
 		</div>
