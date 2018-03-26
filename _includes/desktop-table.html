@@ -2,7 +2,9 @@
 {%- assign section_title = include.title-param -%}
 {%- assign section_file = site.data[section_id] -%}
 {%- assign count_bch = 0 -%}
+{%- assign count_listings = 0 -%}
 {%- for website in section_file.websites -%}
+  {%- assign count_listings = count_listings | plus: '1' -%}
   {%- if website.bch -%}
     {%- assign count_bch = count_bch | plus: '1' -%}
   {%- endif -%}
@@ -11,7 +13,7 @@
   <table class="ui celled table content-wrapper">
     <thead class="ui sticky">
     <tr>
-      <th class="single line four wide">{{ section_title }} ({{ count_bch }})</th>
+      <th class="single line four wide">{{ section_title }} ({{ count_bch }}/{{ count_listings }})</th>
       <th class="two wide">Bitcoin Cash</th>
       <th class="two wide">Bitcoin (Legacy)</th>
       <th class="two wide">Other Crypto</th>
