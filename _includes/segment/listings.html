@@ -12,7 +12,7 @@
 		<div class="five column row">
 	{%- assign rowcount = 0 -%}
 	{%- assign page_sections = site.data.sections | where: "page", page.page_name -%}
-	{%- for section in page_sections -%}
+	{% for section in page_sections %}
 		{%- assign current_section = site.data[section.id] -%}
 		{%- assign rowend = forloop.index | modulo: 5 -%}
 		{%- assign count_bch = 0 -%}
@@ -30,7 +30,7 @@
 			</div>
 			{% include mobile-table.html id-param=section.id title-param=section.title %}
 			{%- assign offcount = 5 | times: rowcount -%}
-			{%- for section in page_sections limit: 5 offset: offcount -%}
+			{% for section in page_sections limit: 5 offset: offcount %}
 				{% include desktop-table.html id-param=section.id title-param=section.title %}
 			{%- endfor -%}
 			</div>
@@ -39,7 +39,6 @@
 				<div class="five column row">
 			{%- endif -%}
 		{%- else -%}
-		
 			<div id="{{ section.id }}" class="category column{% if count_bch == 0 %} bch-only-hidden{% endif %}">
 				<h5 class="ui icon header">
 					<i class="circular {{ section.icon }} icon"></i>

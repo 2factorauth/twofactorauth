@@ -28,7 +28,7 @@
         </td>
       </tr>
       {%- endif -%}
-      {%- for website in section_file.websites -%}
+      {% for website in section_file.websites %}
 		  {%- if website.lang and site.data.languages[website.lang] -%}
 			{%- assign progress_tweet = site.data.languages[website.lang].progress_tweet -%}
 			{%- assign workonit_tweet = site.data.languages[website.lang].work_tweet -%}
@@ -40,9 +40,9 @@
 			{%- if website.status -%}
 			  <td class="main progress">
 				<div class="title">
-				  {% include segment/row/logo.html section=section_id img=website.img site=website.name %}
+{% include segment/row/logo.html section=section_id img=website.img site=website.name %}
 				  <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
-				  {%- include exception.html website=website -%}
+{%- include exception.html website=website -%}
 				</div>
 				<div class="progress-info">
 				  <a class="fluid ui mini orange button" href="{{website.status}}" target="_blank">
