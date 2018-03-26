@@ -45,6 +45,15 @@ websites:
       software: Yes
       doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-text-messages
 
+    - name: login.gov
+      url: https://login.gov/
+      img: login-gov.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://login.gov/help/privacy-and-security/how-does-logingov-protect-my-data/
+
     - name: myGov
       url: https://my.gov.au
       img: mygov.png
