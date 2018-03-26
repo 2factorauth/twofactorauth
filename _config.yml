@@ -14,7 +14,6 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      # layout: "default"
       # Page Variables
       link_tweet: "Tweet to @TWITTERHANDLE"
       link_facebook: "Write on @FACEBOOKHANDLE's wall"
@@ -43,5 +42,6 @@ exclude:
     - nginx.conf
     - scripts
     - Dockerfile
+    - websites_schema.yml
 
 theme: jekyll-theme-hacker
