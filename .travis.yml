@@ -1,10 +1,11 @@
 sudo: false
-language: ruby
 rvm: 2.4.0
 os: linux
 cache:
   bundler: true
-  directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+  directories: 
+  - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+  - vendor/bundle
 addons:
   apt:
     packages:
