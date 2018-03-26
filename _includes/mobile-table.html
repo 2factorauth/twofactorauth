@@ -32,7 +32,7 @@
         {%- if website.status -%}
         <div class="main progress">
           <div class="title">
-    		{% include segment/row/logo.html section=section_id img=website.img site=website.name %}
+    		{% include segment/row-logo.html section=section_id img=website.img site=website.name %}
             <a href="{{ website.url }}" class="name">{{ website.name }}</a>
             {%- include exception.html website=website -%}
             <a href="{{ website.status }}" target="_blank">
@@ -47,7 +47,7 @@
         {%- elsif website.bch or website.btc or website.othercrypto -%}
         <div class="main {% if website.bch %}positive{% elsif website.btc or website.othercrypto %}negative no-bch{% endif %}">
           <div class="title">
-    		{% include segment/row/logo.html section=section_id img=website.img site=website.name %}
+    		{% include segment/row-logo.html section=section_id img=website.img site=website.name %}
             <a href="{{ website.url }}" target="_blank" class="name">{{ website.name }}</a>
             {%- include exception.html website=website -%}
             {%- if website.twitter and website.bch -%}<a class="social-name" href="https://twitter.com/{{ website.twitter }}" target="_blank"><i class="twitter icon"></i></a>{%- endif -%}
@@ -86,7 +86,7 @@
         {%- else -%}
         <div class="main negative no-bch">
           <div class="title">
-    		{% include segment/row/logo.html section=section_id img=website.img site=website.name %}
+    		{% include segment/row-logo.html section=section_id img=website.img site=website.name %}
             <a href="{{ website.url }}" target="_blank" class="name">{{ website.name }}</a>
             {%- include exception.html website=website -%}
           </div>

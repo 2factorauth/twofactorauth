@@ -4,6 +4,8 @@ require 'kwalify'
 require 'diffy'
 @output = 0
 @allowed_output = 0
+@total_tracked = 0
+@total_support = 0
 
 # Image max size (in bytes)
 @img_recommended_size = 2500
@@ -72,6 +74,9 @@ def process_section(section, validator)
   imgs = Dir["img/#{section['id']}/*"]
 
   websites.each do |website|
+    @total_tracked += 1
+    @total_support += 1 unless website['bch'] != true
+
     next if website['img'].nil?
     test_img("img/#{section['id']}/#{website['img']}", \
              website['name'], imgs)
@@ -101,11 +106,14 @@ begin
     process_section(section, validator)
   end
 
+  puts "<--------- Total websites listed: #{@total_tracked} --------->\n"
+  puts "<--------- Total websites accepting BCH: #{@total_support} --------->\n"
+
   @output -= @allowed_output
 
   exit 1 if @output > 0
 rescue Psych::SyntaxError => e
-  puts "<------------ ERROR in a YAML file ------------>\n"
+  puts "<--------- ERROR in a YAML file --------->\n"
   puts e
   exit 1
 rescue StandardError => e
@@ -113,9 +121,9 @@ rescue StandardError => e
   exit 1
 else
   if @allowed_output > 0
-    puts "<------------ No build failing errors found! ------------>\n"
-    puts "<------------ #{@allowed_output} warnings reported! ------------>\n"
+    puts "<--------- No build failing errors found! --------->\n"
+    puts "<--------- #{@allowed_output} warnings reported! --------->\n"
   else
-    puts "<------------ No errors. You\'re good to go! ------------>\n"
+    puts "<--------- No errors. You\'re good to go! --------->\n"
   end
 end
