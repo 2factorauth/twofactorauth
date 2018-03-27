@@ -42,9 +42,9 @@
 			{%- if website.status -%}
 			  <td class="main progress">
 				<div class="title">
-{% include segment/row-logo.html section=section_id img=website.img site=website.name %}
+                  {% include segment/row-logo.html section=section_id img=website.img site=website.name %}
 				  <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
-{%- include exception.html website=website -%}
+                  {%- include exception.html website=website -%}
 				</div>
 				<div class="progress-info">
 				  <a class="fluid ui mini orange button" href="{{website.status}}" target="_blank">
