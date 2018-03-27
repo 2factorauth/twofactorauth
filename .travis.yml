@@ -13,9 +13,9 @@ addons:
     - ca-certificates
 stages:
   - name: Test
-    if: sender != x-access-token OR branch != imgbot
+    if: sender != imgbot[bot]
   - name: imgbot
-    if: sender = x-access-token AND branch = imgbot
+    if: sender = imgbot[bot]
   - name: Run build
     if: type = push AND (branch = master OR tag IS present)
 jobs:
