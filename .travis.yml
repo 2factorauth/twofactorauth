@@ -13,11 +13,11 @@ addons:
     - ca-certificates
 stages:
   - name: Test
-    if: sender != x-access-token
+    if: sender != x-access-token OR branch != imgbot
   - name: imgbot
     if: sender = x-access-token AND branch = imgbot
   - name: Run build
-    if: (type IN push AND branch = master) OR (tag IS present AND type IN (push, api))
+    if: type = push AND (branch = master OR tag IS present)
 jobs:
   include:
     - &test-baseline
@@ -41,7 +41,7 @@ jobs:
         pip install --user pathlib
       script:
       - if [ "$TRAVIS_TAG" != "" ]; then 
-          NEXT_BUILD_TAG=`date +"%m-%d-%Y"`; DEPLOY_DOCKER="true";   
+          NEXT_BUILD_TAG=`date +"%m-%d-%Y"`;
         fi
       - echo ".git" > .dockerignore
       - bundle exec rake docker:build
@@ -53,10 +53,9 @@ jobs:
         skip-cleanup: true
         script:
         # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push acceptbitcoincash/acceptbitcoincash
-        - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; docker push acceptbitcoincash/acceptbitcoincash
+          docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; docker push acceptbitcoincash/acceptbitcoincash
         on: 
           tags: true
-          condition: $NEXT_BUILD_TAG != "latest"
       - provider: pages
         skip-cleanup: true
         github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
