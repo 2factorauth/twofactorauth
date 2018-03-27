@@ -1,6 +1,7 @@
 sudo: false
 rvm: 2.4.0
 os: linux
+env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 cache:
   bundler: true
   directories: 
@@ -16,7 +17,6 @@ matrix:
   include:
     - script: bundle exec rake
     - script: bundle exec rake proof_external
-      env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   allow_failures:
     - script: bundle exec rake proof_external
 notifications:
