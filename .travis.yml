@@ -23,11 +23,15 @@ jobs:
     - &test-baseline
       stage: Test
       script:
-        bundle exec rake
+      - bundle exec rake verify
+      - bundle exec rubocop
+      - bundle exec rake proof
       
     - <<: *test-baseline
       script:
-        bundle exec rake external
+      # - bundle exec rake verify
+      # - bundle exec rubocop
+      - bundle exec rake proof_external
       if: type IN (pull_request, cron)
     
     - stage: imgbot
@@ -66,7 +70,9 @@ jobs:
   allow_failures:
     - stage: Test
       script:
-        bundle exec rake external
+      # - bundle exec rake verify
+      # - bundle exec rubocop
+      - bundle exec rake proof_external
       if: type IN (pull_request, cron)
 notifications:
   webhooks: https://www.travisbuddy.com/
