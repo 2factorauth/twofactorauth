@@ -1,6 +1,5 @@
-sudo: true
 dist: trusty
-rvm: 2.4.0
+rvm: 2.4.1
 cache:
   bundler: true
   directories:
@@ -28,13 +27,14 @@ jobs:
     - <<: *test-baseline
       script:
         bundle exec rake external
-      if: type IN (pull_request, cron)
+      if: type IN (pull_request, cron) OR (type = push AND branch = master)
     
     - stage: imgbot
       script:
         bundle exec rake verify
     
     - stage: Run build
+      sudo: true
       env: 
         NEXT_BUILD_TAG=latest
       script:
@@ -65,7 +65,7 @@ jobs:
     - stage: Test
       script:
         bundle exec rake external
-      if: type IN (pull_request, cron)
+      if: type IN (pull_request, cron) OR (type = push AND branch = master)
 notifications:
   webhooks: https://www.travisbuddy.com/
   slack:
