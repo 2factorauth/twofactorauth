@@ -13,9 +13,9 @@ addons:
     - ca-certificates
 stages:
   - name: Test
-    if: sender != imgbot[bot]
+    if: sender != svenfuchs AND sender != imgbot[bot]
   - name: imgbot
-    if: sender = imgbot[bot]
+    if: sender IN (svenfuchs, imgbot[bot])
   - name: Run build
     if: type = push AND (branch = master OR tag IS present)
 jobs:
