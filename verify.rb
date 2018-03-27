@@ -75,7 +75,7 @@ def process_section(section, validator)
 
   websites.each do |website|
     @total_tracked += 1
-    @total_support += 1 unless website['bch'] != true
+    @total_support += 1 if website['bch'] == true
 
     next if website['img'].nil?
     test_img("img/#{section['id']}/#{website['img']}", \
