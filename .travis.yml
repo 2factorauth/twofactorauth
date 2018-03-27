@@ -17,7 +17,7 @@ stages:
   - name: imgbot
     if: sender = x-access-token AND branch = imgbot
   - name: Run build
-    if: branch = master AND sender != x-access-token AND type = push
+    if: type = push AND (branch = master OR tag IS present)
 jobs:
   include:
     - &test-baseline
@@ -40,11 +40,13 @@ jobs:
       before_install:
         pip install --user pathlib
       script:
-      - NEXT_BUILD_TAG=`date +"%m-%d-%Y"`
+      - if [ "$TRAVIS_TAG" != "" ]; then 
+          NEXT_BUILD_TAG=`date +"%m-%d-%Y"`; DEPLOY_DOCKER="true";   
+        fi
       - echo ".git" > .dockerignore
       - bundle exec rake docker:build
-      - if [ "$NEXT_BUILD_TAG" != "latest" ]; 
-          then docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; 
+      - if [ "$NEXT_BUILD_TAG" != "latest" ]; then
+          docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; 
         fi
       deploy:
       - provider: script
@@ -53,9 +55,9 @@ jobs:
         # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push acceptbitcoincash/acceptbitcoincash
         - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; docker push acceptbitcoincash/acceptbitcoincash
         on: 
-          branch: master
-          # tags: true
-          # condition: $NEXT_BUILD_TAG != "latest"
+          # branch: master
+          tags: true
+          condition: $NEXT_BUILD_TAG != "latest"
       - provider: pages
         skip-cleanup: true
         github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
