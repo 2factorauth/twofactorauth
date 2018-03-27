@@ -41,11 +41,11 @@
 <!-- 'content' loads pages from the root (index.html/*.html) -->
 {{ content }}
 
-{%- if page.id == "home" -%}
+{%- if page.page_name == "home" -%}
   {% include segment/twitter.html %}
   {% include segment/moreinfo.html %}
   {% include segment/assets.html %}
-{%- else -%}
+{%- elsif page.page_name == "adult" -%}
   {% include modals/adult-warning.html %}
 {%- endif -%}
 
