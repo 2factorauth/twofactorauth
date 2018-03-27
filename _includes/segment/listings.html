@@ -7,6 +7,9 @@
 	</div>
 </div>
 
+{%- assign page_total = 0 -%}
+{%- assign page_total_bch = 0 -%}
+
 <div id="maingrid" class="ui container {{ page.id }}">
 	<div class="container-inner ui stackable grid">
 		<div class="five column row">
@@ -17,10 +20,12 @@
 		{%- assign rowend = forloop.index | modulo: 5 -%}
 		{%- assign count_bch = 0 -%}
 		{%- for website in current_section.websites -%}
+			{%- assign page_total = page_total | plus: '1' -%}
 			{%- if website.bch -%}
 				{%- assign count_bch = count_bch | plus: '1' -%}
 			{%- endif -%}
 		{%- endfor -%}
+				{%- assign page_total_bch = page_total_bch | plus: count_bch -%}
 			<div id="{{ section.id }}" class="category column{% if count_bch == 0 %} bch-only-hidden{% endif %}">
 				<h5 class="ui icon header">
 					<i class="circular {{ section.icon }} icon"></i>
@@ -45,3 +50,5 @@
 	<div id="no-results">
 		<h2>No results found.</h2>
 	</div>
+
+{% include segment/progress-bar.html value=page_total_bch total=page_total page=page.page_name %}
