@@ -43,14 +43,15 @@ jobs:
       - NEXT_BUILD_TAG=`date +"%m-%d-%Y"`
       - echo ".git" > .dockerignore
       - bundle exec rake docker:build
-      - docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"
+      - if [ "$NEXT_BUILD_TAG" != "latest" ]; 
+          then docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; 
+        fi
       deploy:
       - provider: script
         skip-cleanup: true
         script:
-        # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-        - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-        - docker push acceptbitcoincash/acceptbitcoincash
+        # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push acceptbitcoincash/acceptbitcoincash
+        - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; docker push acceptbitcoincash/acceptbitcoincash
         on: 
           branch: master
           # tags: true
