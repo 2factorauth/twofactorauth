@@ -17,7 +17,7 @@ stages:
   - name: imgbot
     if: sender = x-access-token AND branch = imgbot
   - name: Run build
-    if: type = push AND (branch = master OR tag IS present)
+    if: (type IN push AND branch = master) OR (tag IS present AND type IN (push, api))
 jobs:
   include:
     - &test-baseline
@@ -55,7 +55,6 @@ jobs:
         # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push acceptbitcoincash/acceptbitcoincash
         - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; docker push acceptbitcoincash/acceptbitcoincash
         on: 
-          # branch: master
           tags: true
           condition: $NEXT_BUILD_TAG != "latest"
       - provider: pages
@@ -65,8 +64,6 @@ jobs:
         keep-history: true
         repo: acceptbitcoincash/acceptbitcoincash
         target_branch: gh-pages
-        on: 
-          branch: master
   allow_failures:
     - stage: Test
       script:
