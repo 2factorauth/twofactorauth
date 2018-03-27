@@ -52,9 +52,9 @@ websites:
     - name: Bitcoins Norway
       url: https://bitcoinsnorway.com
       img: bitcoinsnorway.png
-      bch: No
+      bch: Yes
       btc: Yes
-      othercrypto: No
+      othercrypto: Yes
       facebook: Bitcoinsnorway
       twitter: bitcoinsnorgeno
       email_address: support@bitcoinsnorge.no
@@ -217,15 +217,12 @@ websites:
     - name: Coinfloor
       url: https://www.coinfloor.co.uk/
       img: coinfloor.png
-      bch: No
+      bch: Yes
       btc: Yes
       othercrypto: No
       facebook: coinfloor
       twitter: coinfloor
       email_address: support@coinfloor.co.uk
-      doc: http://blog.coinfloor.co.uk/post/164533493276/coinfloors-bitcoin-cash-withdrawal-policy
-      exceptions:
-          text: "Coinfloor has enabled Bitcoin Cash withdrawal but does not yet offer full support."
 
     - name: CoinOne
       url: https://coinone.co.kr/
