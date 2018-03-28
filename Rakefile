@@ -29,7 +29,7 @@ task proof_external: 'build' do
   HTMLProofer.check_directory(
     './_site', \
     assume_extension: true, \
-    check_html: true, \
+    # check_html: true, \
     external_only: true, \
     url_ignore: ['/add'], \
     http_status_ignore: [0, 301, 302, 403, 503], \
