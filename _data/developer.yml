@@ -148,6 +148,13 @@ websites:
       img: deploybot.png
       tfa: No
 
+    - name: DeployHQ
+      url: https://www.deployhq.com/
+      img: deployhq.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.deployhq.com/support/managing-your-account/personal-profile/two-factor-authentication
+
     - name: Docker
       url: https://www.docker.com/
       twitter: docker
