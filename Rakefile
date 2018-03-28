@@ -30,7 +30,7 @@ task proof_external: 'build' do
     './_site', \
     assume_extension: true, \
     check_html: true, \
-    external_only: false, \
+    external_only: true, \
     url_ignore: ['/add'], \
     http_status_ignore: [0, 301, 302, 403, 503], \
     cache: { timeframe: '1w' }, \
