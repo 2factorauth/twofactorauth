@@ -26,7 +26,7 @@ jobs:
       
     - <<: *test-baseline
       script:
-        bundle exec rake external
+        bundle exec rake proof_external
       if: type IN (pull_request, cron) OR (type = push AND branch = master)
     
     - stage: imgbot
@@ -64,7 +64,7 @@ jobs:
   allow_failures:
     - stage: Test
       script:
-        bundle exec rake external
+        bundle exec rake proof_external
       if: type IN (pull_request, cron) OR (type = push AND branch = master)
 notifications:
   webhooks: 
