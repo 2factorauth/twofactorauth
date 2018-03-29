@@ -10,6 +10,13 @@
 <img src="/img/placeholder.png" data-src="/img/{{ img_path }}" class="icon" alt="{{ website.name }}">
 <a href="{{ website.url }}" class="name">{{ website.name }}</a>
 {%- include exception.html website=website -%}
+{%- if website.lang and site.data.languages[website.lang] -%}
+  {%- assign progress_tweet = site.data.languages[website.lang].progress_tweet -%}
+  {%- assign workonit_tweet = site.data.languages[website.lang].work_tweet -%}
+{%- else -%}
+  {%- assign progress_tweet = page.progress_tweet -%}
+  {%- assign workonit_tweet = page.workonit_tweet -%}
+{%- endif -%}
 {%- if website.status -%}
   {%- if include.type == 'mobile' -%}
   <a href="{{ website.status }}" target="_blank">
@@ -25,3 +32,20 @@
   {%- endif -%}
 {%- endif -%}
 </div>
+{%- if website.status-%}
+  {%- if include.type == 'mobile' -%}
+  <p>IN PROGRESS!</p>
+  <div>
+	<a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress_mobile}}</a>
+  </div>
+  {%- else -%}
+    <div class="progress-info">
+      <a class="fluid ui mini orange button" href="{{website.status}}" target="_blank">
+        In Progress!
+      </a>
+    </div>
+	</td>
+    <td class="twitter progress" colspan="4">
+	  <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="top center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress}}</a>
+  {%- endif -%}
+{%- endif -%}

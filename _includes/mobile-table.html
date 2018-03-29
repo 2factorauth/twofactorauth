@@ -32,10 +32,6 @@
         {%- if website.status -%}
         <div class="main progress">
           {% include segment/table-row-title.html section=section_id website=website type='mobile' show_social=false %}
-          <p>IN PROGRESS!</p>
-          <div>
-            <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress_mobile}}</a>
-          </div>
         </div>
         {%- elsif website.bch or website.btc or website.othercrypto -%}
         <div class="main {% if website.bch %}positive{% else %}negative no-bch{% endif %}">
