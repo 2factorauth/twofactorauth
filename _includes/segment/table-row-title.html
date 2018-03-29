@@ -7,7 +7,7 @@
 <noscript>
   <img src="/img/{{ img_path }}" class="icon" alt="{{ website.name }}">
 </noscript>
-<img src="/img/placeholder.png" data-src="/img/{{ img_path }}" class="icon" alt="{{ website.name }}">
+<img src="{{ site.img_placeholder }}" data-src="/img/{{ img_path }}" class="icon" alt="{{ website.name }}">
 <a href="{{ website.url }}" class="name">{{ website.name }}</a>
 {%- include exception.html website=website -%}
 {%- if website.lang and site.data.languages[website.lang] -%}

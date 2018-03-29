@@ -16,7 +16,7 @@
 				{%- assign count_bch = count_bch | plus: '1' -%}
 			{%- endif -%}
 		{%- endfor -%}
-				{%- assign page_total_bch = page_total_bch | plus: count_bch -%}
+        {%- assign page_total_bch = page_total_bch | plus: count_bch -%}
 			<div id="{{ section.id }}" class="category column{% if count_bch == 0 %} bch-only-hidden{% endif %}">
 				<h5 class="ui icon header">
 					<i class="circular {{ section.icon }} icon"></i>
