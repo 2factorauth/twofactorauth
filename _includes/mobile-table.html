@@ -41,12 +41,18 @@
           <p>Supported:</p>
           {%- if website.bch -%}
           <div class="mobile-logo coin-wrap green-coin-wrap" data-tooltip="Bitcoin Cash accepted at {{ website.name }}" data-position="top center" data-inverted="">
-            <img src="/img/coin-bch.png" alt="Bitcoin Cash">
+				  <noscript>
+				    <img src="/img/coin-bch.png" alt="Bitcoin Cash">
+				  </noscript>
+            <img src="/img/placeholder.png" data-src="/img/coin-bch.png" alt="Bitcoin Cash">
           </div>
           {%- endif -%}
           {%- if website.btc -%}
           <div class="mobile-logo coin-wrap orange-coin-wrap" data-tooltip="Bitcoin (Legacy) accepted at {{ website.name }}" data-position="top center" data-inverted="">
-            <img src="/img/coin-btc.png" alt="Bitcoin (Legacy)">
+            <noscript>
+              <img src="/img/coin-btc.png" alt="Bitcoin (Legacy)">
+            </noscript>
+            <img src="/img/placeholder.png" data-src="/img/coin-btc.png" alt="Bitcoin (Legacy)">
           </div>
           {%- endif -%}
           {%- if website.othercrypto -%}

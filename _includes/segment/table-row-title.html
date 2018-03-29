@@ -1,5 +1,5 @@
 {%- assign website = include.website -%}
-{%- assign img_path = "placeholder.png" -%}
+{%- assign img_path = "generic.png" -%}
 {%- if website.img -%}
 	{%- assign img_path = include.section | append: '/' | append: website.img -%}
 {%- endif -%}
