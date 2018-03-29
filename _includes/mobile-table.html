@@ -22,13 +22,6 @@
   {%- endif -%}
   <div class="bch-merchant-content">
     {% for website in section_file.websites %}
-        {%- if website.lang and site.data.languages[website.lang] -%}
-          {%- assign progress_tweet = site.data.languages[website.lang].progress_tweet -%}
-          {%- assign workonit_tweet = site.data.languages[website.lang].work_tweet -%}
-        {%- else -%}
-          {%- assign progress_tweet = page.progress_tweet -%}
-          {%- assign workonit_tweet = page.workonit_tweet -%}
-        {%- endif -%}
         {%- if website.status -%}
         <div class="main progress">
           {% include segment/table-row-title.html section=section_id website=website type='mobile' show_social=false %}
