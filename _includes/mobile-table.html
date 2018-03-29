@@ -2,7 +2,9 @@
 {%- assign section_title = include.title-param -%}
 {%- assign section_file = site.data[section_id] -%}
 {%- assign count_bch = 0 -%}
+{%- assign count_listings = 0 -%}
 {%- for website in section_file.websites -%}
+  {%- assign count_listings = count_listings | plus: '1' -%}
   {%- if website.bch -%}
     {%- assign count_bch = count_bch | plus: '1' -%}
   {%- endif -%}
@@ -75,7 +77,7 @@
         {%- endif -%}
 	  </div>
     {%- endfor -%}
-    {%- if count_bch > 0 and count_bch <= 5 -%}
+    {%- if count_bch > 0 and count_bch <= 5 and count_bch != count_listings -%}
     <div class="bch-only-none-found-mobile">
       <h4>Hoping to see more than {{ count_bch }} listing{% if count_bch > 1 %}s{% endif %} accepting Bitcoin Cash in {{ section.title }}?</h4>
       <p>Try <span class="clear-bch-only">clearing the Bitcoin Cash only filter</span> to see all listings, then reach out to them over social media or e-mail <i class="announcement icon"></i></p>

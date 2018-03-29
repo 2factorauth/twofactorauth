@@ -85,7 +85,7 @@
 			{%- endif -%}
 		  </tr>
       {%- endfor -%}
-      {%- if count_bch > 0 and count_bch <= 5 -%}
+      {%- if count_bch > 0 and count_bch <= 5 and count_bch != count_listings -%}
       <tr class="bch-only-none-found">
         <td colspan="5" style="text-align: center">
           <h4>Hoping to see more than {{ count_bch }} listing{% if count_bch > 1 %}s{% endif %} accepting Bitcoin Cash in {{ section.title }}?</h4>
