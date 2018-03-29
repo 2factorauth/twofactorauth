@@ -27,9 +27,7 @@
       {% if website.status %}
         <td class="main progress">
           <div class="title">
-            <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-            <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
-                 alt="{{ website.name }}">
+	        {% include row-logo.html section=section_id img=website.img site=website.name %}
             <a class="name" href="{{ website.url }}">{{ website.name }}</a>
             {% include exception.html website=website %}
           </div>
@@ -47,9 +45,7 @@
       {% elsif website.tfa %}
         <td class="main positive">
           <div class="title">
-            <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-            <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
-                 alt="{{ website.name }}">
+	        {% include row-logo.html section=section_id img=website.img site=website.name %}
             <a class="name" href="{{ website.url }}">{{ website.name }}</a>
             {% include exception.html website=website %}
           </div>
@@ -93,9 +89,7 @@
       {% else %}
         <td class="main negative">
           <div class="title">
-            <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-            <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
-                 alt="{{ website.name }}">
+	        {% include row-logo.html section=section_id img=website.img site=website.name %}
             <a class="name" href="{{ website.url }}">{{ website.name }}</a>
             {% include exception.html website=website %}
           </div>
