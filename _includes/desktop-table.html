@@ -41,11 +41,7 @@
 		  <tr class="desktop-tr{% if website.bch == false %} no-bch{% endif %}">
 			{%- if website.status -%}
 			  <td class="main progress">
-				<div class="title">
-                  {% include segment/row-logo.html section=section_id img=website.img site=website.name %}
-				  <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
-                  {%- include exception.html website=website -%}
-				</div>
+                {% include segment/table-row-title.html section=section_id website=website type='desktop' show_social=false %}
 				<div class="progress-info">
 				  <a class="fluid ui mini orange button" href="{{website.status}}" target="_blank">
 					In Progress!
@@ -57,13 +53,7 @@
 			  </td>
 			{%- elsif website.bch or website.btc -%}
 			  <td class="main {% if website.bch %}positive{% else %}negative{% endif %}">
-				<div class="title">
-				  {% include segment/row-logo.html section=section_id img=website.img site=website.name %}
-				  <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
-				  {%- include exception.html website=website -%}
-				  {%- if website.twitter and website.bch -%}<a class="social-name" href="https://twitter.com/{{ website.twitter }}" target="_blank" data-tooltip="@{{ website.twitter }}" data-position="top center" data-inverted=""><i class="twitter icon"></i></a>{%- endif -%}
-				  {%- if website.facebook and website.bch -%}<a class="social-name" href="https://facebook.com/{{ website.facebook }}" target="_blank" data-tooltip="fb.com/{{ website.facebook }}" data-position="top center" data-inverted=""><i class="facebook f icon"></i></a>{%- endif -%}
-				</div>
+                {% include segment/table-row-title.html section=section_id website=website type='desktop' show_social=true %}
 			  </td>
 			  <td class="{% if website.bch %}positive{% else %}negative{% endif %} icon">
 				{%- if website.bch -%}
@@ -96,11 +86,7 @@
 			  </td>
 			{%- else -%}
 			  <td class="main negative">
-				<div class="title">
-				  {% include segment/row-logo.html section=section_id img=website.img site=website.name %}
-				  <a class="name" href="{{ website.url }}" target="_blank">{{ website.name }}</a>
-				  {%- include exception.html website=website -%}
-				</div>
+                {% include segment/table-row-title.html section=section_id website=website type='desktop' show_social=false %}
 			  </td>
 			  <td class="twitter negative" colspan="4">
 			  {%- if website.twitter -%} <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="left center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank">Ask on <i class="twitter big icon"></i></a>{%- endif -%}

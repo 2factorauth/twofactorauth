@@ -1,8 +1,0 @@
-{%- assign img_path = "placeholder.png" -%}
-{%- if include.img -%}
-	{%- assign img_path = include.section | append: '/' | append: include.img -%}
-{%- endif -%}
-				  <noscript>
-					  <img src="/img/{{ img_path }}" class="icon" alt="{{ include.site }}">
-				  </noscript>
-				  <img src="/img/placeholder.png" data-src="/img/{{ img_path }}" class="icon" alt="{{ include.site }}">

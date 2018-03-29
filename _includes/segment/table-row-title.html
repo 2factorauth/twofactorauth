@@ -1,0 +1,27 @@
+{%- assign website = include.website -%}
+{%- assign img_path = "placeholder.png" -%}
+{%- if website.img -%}
+	{%- assign img_path = include.section | append: '/' | append: website.img -%}
+{%- endif -%}
+<div class="title">
+<noscript>
+  <img src="/img/{{ img_path }}" class="icon" alt="{{ website.name }}">
+</noscript>
+<img src="/img/placeholder.png" data-src="/img/{{ img_path }}" class="icon" alt="{{ website.name }}">
+<a href="{{ website.url }}" class="name">{{ website.name }}</a>
+{%- include exception.html website=website -%}
+{%- if website.status -%}
+  {%- if include.type == 'mobile' -%}
+  <a href="{{ website.status }}" target="_blank">
+    <i class="external url link large icon"></i>
+  </a>
+  {%- endif -%}
+{%- elsif include.show_social -%}
+  {%- if website.twitter and website.bch -%}
+    <a class="social-name" href="https://twitter.com/{{ website.twitter }}" target="_blank" {% if include.type == 'desktop' %}data-tooltip="@{{ website.twitter }}" data-position="top center" data-inverted=""{% endif %}><i class="twitter icon"></i></a>
+  {%- endif -%}
+  {%- if website.facebook and website.bch -%}
+    <a class="social-name" href="https://facebook.com/{{ website.facebook }}" target="_blank" {% if include.type == 'desktop' %}data-tooltip="fb.com/{{ website.facebook }}" data-position="top center" data-inverted=""{% endif %}><i class="facebook f icon"></i></a>
+  {%- endif -%}
+{%- endif -%}
+</div>

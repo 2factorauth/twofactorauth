@@ -31,28 +31,15 @@
         {%- endif -%}
         {%- if website.status -%}
         <div class="main progress">
-          <div class="title">
-    		{% include segment/row-logo.html section=section_id img=website.img site=website.name %}
-            <a href="{{ website.url }}" class="name">{{ website.name }}</a>
-            {%- include exception.html website=website -%}
-            <a href="{{ website.status }}" target="_blank">
-              <i class="external url link large icon"></i>
-            </a>
-          </div>
+          {% include segment/table-row-title.html section=section_id website=website type='mobile' show_social=false %}
           <p>IN PROGRESS!</p>
           <div>
             <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress_mobile}}</a>
           </div>
         </div>
         {%- elsif website.bch or website.btc or website.othercrypto -%}
-        <div class="main {% if website.bch %}positive{% elsif website.btc or website.othercrypto %}negative no-bch{% endif %}">
-          <div class="title">
-    		{% include segment/row-logo.html section=section_id img=website.img site=website.name %}
-            <a href="{{ website.url }}" target="_blank" class="name">{{ website.name }}</a>
-            {%- include exception.html website=website -%}
-            {%- if website.twitter and website.bch -%}<a class="social-name" href="https://twitter.com/{{ website.twitter }}" target="_blank"><i class="twitter icon"></i></a>{%- endif -%}
-            {%- if website.facebook and website.bch -%}<a class="social-name" href="https://facebook.com/{{ website.facebook }}" target="_blank"><i class="facebook f icon"></i></a>{%- endif -%}
-          </div>
+        <div class="main {% if website.bch %}positive{% else %}negative no-bch{% endif %}">
+          {% include segment/table-row-title.html section=section_id website=website type='mobile' show_social=true %}
           <p>Supported:</p>
           {%- if website.bch -%}
           <div class="mobile-logo coin-wrap green-coin-wrap" data-tooltip="Bitcoin Cash accepted at {{ website.name }}" data-position="top center" data-inverted="">
@@ -85,11 +72,7 @@
         </div>
         {%- else -%}
         <div class="main negative no-bch">
-          <div class="title">
-    		{% include segment/row-logo.html section=section_id img=website.img site=website.name %}
-            <a href="{{ website.url }}" target="_blank" class="name">{{ website.name }}</a>
-            {%- include exception.html website=website -%}
-          </div>
+          {% include segment/table-row-title.html section=section_id website=website type='mobile' show_social=false %}
           <p>No cryptocurrencies supported</p>
           <div class="button-group">
             {%- if website.twitter -%} <a title="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="left center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank">Ask on <i class="twitter big icon"></i></a>{%- endif -%}
