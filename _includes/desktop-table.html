@@ -53,7 +53,7 @@
 				  <noscript>
 				    <img src="/img/coin-bch.png" alt="Bitcoin Cash">
 				  </noscript>
-				  <img src="{{ site.img_placeholder }}" data-src="/img/coin-bch.png" alt="Bitcoin Cash">
+				  <img src="{{ page.img_placeholder }}" data-src="/img/coin-bch.png" alt="Bitcoin Cash">
 				</div>
 				{%- else -%}
 				{%- if website.twitter -%} <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="right center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i></a>{%- endif -%}
@@ -66,7 +66,7 @@
                   <noscript>
                     <img src="/img/coin-btc.png" alt="Bitcoin (Legacy)">
                   </noscript>
-				  <img src="{{ site.img_placeholder }}" data-src="/img/coin-btc.png" alt="Bitcoin (Legacy)">
+				  <img src="{{ page.img_placeholder }}" data-src="/img/coin-btc.png" alt="Bitcoin (Legacy)">
 				</div>
 				{%- endif -%}
 			  </td>
