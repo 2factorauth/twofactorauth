@@ -17,7 +17,7 @@
     {% if website.status %}
     <div class="main progress">
       <div class="title">
-	    {% include row-logo.html section=section_id img=website.img site=website.name %}
+        {% include row-logo.html section=section_id img=website.img site=website.name %}
         <a href="{{ website.url }}" class="name">{{ website.name }}</a>
         {% include exception.html website=website %}
 
@@ -37,7 +37,7 @@
     {% elsif website.tfa %}
     <div class="main positive">
       <div class="title">
-	    {% include row-logo.html section=section_id img=website.img site=website.name %}
+        {% include row-logo.html section=section_id img=website.img site=website.name %}
         <a href="{{ website.url }}" class="name">{{ website.name }}</a>
         {% include exception.html website=website %}
       </div>
@@ -58,7 +58,7 @@
     {% else %}
     <div class="main negative">
       <div class="title">
-	    {% include row-logo.html section=section_id img=website.img site=website.name %}
+        {% include row-logo.html section=section_id img=website.img site=website.name %}
         <a href="{{ website.url }}" class="name">{{ website.name }}</a>
         {% include exception.html website=website %}
       </div>
