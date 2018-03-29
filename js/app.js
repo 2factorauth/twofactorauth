@@ -129,7 +129,7 @@ $(document).ready(function () {
   });
 
   // Unveil images 50px before they appear
-  $(function() { $('img').Lazy({visibleOnly: true}); });
+  $('img').unveil(50);
 
   // Show exception warnings upon hover
   $('span.popup.exception').popup({
