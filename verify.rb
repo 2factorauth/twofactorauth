@@ -23,9 +23,9 @@ def error(msg)
 end
 
 # rubocop:disable AbcSize
-def test_img(img, name, imgs)
+def test_img(img, name, imgs, section)
   # Exception if image file not found
-  raise "#{name} image not found." unless File.exist?(img)
+  raise "#{section}: #{name} image not found." unless File.exist?(img)
   # Remove img from array unless it doesn't exist (double reference case)
   imgs.delete_at(imgs.index(img)) unless imgs.index(img).nil?
 
@@ -79,7 +79,7 @@ def process_section(section, validator)
 
     next if website['img'].nil?
     test_img("img/#{section['id']}/#{website['img']}", \
-             website['name'], imgs)
+             website['name'], imgs, section_file)
   end
 
   # After removing images associated with entries in test_img, alert
