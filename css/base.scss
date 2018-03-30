@@ -581,16 +581,24 @@ p {
     }
   }
 
+  &.home {
+    background: $blue-light-alpha !important;
+  }
+
   &.donation-listings {
     border-color: $violet-light;
-    background: rgba(134, 85, 181, 0.45);
-    margin-bottom: 4rem;
+    background: rgba(134, 85, 181, 0.45) !important;
   }
 
   &.adult-listings {
     border-color: $pink-light;
-    background: rgba(181, 85, 165, 0.45);
-    margin-bottom: 4rem;
+    background: rgba(181, 85, 165, 0.45) !important;
+  }
+
+  &.adoption {
+    border-color: $green;
+    background:rgba(85, 181, 128, 0.32) !important;
+    padding-bottom: 0;
   }
 }
 
@@ -1066,8 +1074,7 @@ span.progress {
 }
 
 .ui.progress.bch-progress {
-  background: rgba(0,0,0,0.45) !important;
-  background: $blue-light-alpha !important;
+//  background: rgba(0,0,0,0.45) !important;
   padding: 0;
   margin: 1rem auto 7rem !important;
 
@@ -1080,6 +1087,18 @@ span.progress {
       font-size: 1.2rem;
       text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
     }
+
+    &.blue {
+      background: $blue;
+    }
+
+    &.purple {
+      background: $violet;
+    }
+
+    &.pink {
+      background: $pink;
+    }
   }
 
   .label {
@@ -1088,6 +1107,7 @@ span.progress {
     font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: -1px;
+    line-height: 1.1;
     cursor: help;
   }
 }
@@ -1532,13 +1552,17 @@ span.progress {
     border-width: 3px 0;
   }
 
-  .ui.three.buttons {
+  .ui.three.buttons, .ui.four.buttons {
     flex-direction: column;
 
     > .button {
       width: 100%;
-      margin: 1px 0 0;
+      padding: 1rem 0 !important;
       border-radius: 0 !important;
+
+      &.active-nav {
+        padding-bottom: 0.7rem !important;
+      }
     }
   }
 

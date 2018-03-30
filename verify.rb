@@ -4,6 +4,8 @@ require 'kwalify'
 require 'diffy'
 @output = 0
 @allowed_output = 0
+@total_tracked = 0
+@total_support = 0
 
 # Image max size (in bytes)
 @img_recommended_size = 2500
@@ -13,13 +15,6 @@ require 'diffy'
 
 # Image format used for all images in the 'img/' directories.
 @img_extension = '.png'
-
-# List all section files
-@section_files = [
-  '_data/sections.yml',
-  '_data/adult-sections.yml',
-  '_data/donation-sections.yml'
-]
 
 # Send error message
 def error(msg)
@@ -57,67 +52,68 @@ def test_img_size(img)
 end
 
 # rubocop:disable MethodLength
-def process_sections_file(path)
-  err_count = @output
-  sections = YAML.load_file(path)
-  puts "Processing: #{path}\n"
+def process_section(section, validator)
+  section_file = "_data/#{section['id']}.yml"
+  data = YAML.load_file(File.join(__dir__, section_file))
+  websites = data['websites']
+  errors = validator.validate(data)
 
-  # Check sections.yml alphabetization
-  error("#{path} is not alphabetized by name") \
-    if sections != (sections.sort_by { |section| section['id'].downcase })
-  schema = YAML.load_file(File.join(__dir__, 'websites_schema.yml'))
-  validator = Kwalify::Validator.new(schema)
-  sections.each do |section|
-    section_file = "_data/#{section['id']}.yml"
-    data = YAML.load_file(File.join(__dir__, section_file))
-    websites = data['websites']
-    errors = validator.validate(data)
-
-    errors.each do |e|
-      error("#{section_file}:#{websites.at(e.path.split('/')[2].to_i)['name']}"\
-        ": #{e.message}")
-    end
-
-    # Check section alphabetization
-    if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
-      error("#{section_file} not ordered by name. Correct order:" \
-        "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
-                               context: 10).to_s(:color))
-    end
-
-    # Collect list of all images for section
-    imgs = Dir["img/#{section['id']}/*"]
-
-    websites.each do |website|
-      next if website['img'].nil?
-      test_img("img/#{section['id']}/#{website['img']}", \
-               website['name'], imgs)
-    end
-
-    # After removing images associated with entries in test_img, alert
-    # for unused or orphaned images
-    imgs.each do |img|
-      next unless img.nil?
-      error("#{img} is not used")
-    end
+  errors.each do |e|
+    error("#{section_file}:#{websites.at(e.path.split('/')[2].to_i)['name']}"\
+          ": #{e.message}")
   end
 
-  puts "  No errors found\n" if @output == err_count
+  # Check section alphabetization
+  if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
+    error("#{section_file} not ordered by name. Correct order:" \
+          "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
+                                 context: 10).to_s(:color))
+  end
+
+  # Collect list of all images for section
+  imgs = Dir["img/#{section['id']}/*"]
+
+  websites.each do |website|
+    @total_tracked += 1
+    @total_support += 1 if website['bch'] == true
+
+    next if website['img'].nil?
+    test_img("img/#{section['id']}/#{website['img']}", \
+             website['name'], imgs)
+  end
+
+  # After removing images associated with entries in test_img, alert
+  # for unused or orphaned images
+  imgs.each do |img|
+    next unless img.nil?
+    error("#{img} is not used")
+  end
 end
 # rubocop:enable AbcSize,MethodLength
 
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
 begin
-  @section_files.each do |file|
-    process_sections_file(file)
+  sections = YAML.load_file('_data/sections.yml')
+
+  # Check sections.yml alphabetization
+  error("#{path} is not alphabetized by name") \
+    if sections != (sections.sort_by { |section| section['id'].downcase })
+  schema = YAML.load_file(File.join(__dir__, 'websites_schema.yml'))
+  validator = Kwalify::Validator.new(schema)
+
+  sections.each do |section|
+    process_section(section, validator)
   end
+
+  puts "<--------- Total websites listed: #{@total_tracked} --------->\n"
+  puts "<--------- Total accepting BCH: #{@total_support} --------->\n"
 
   @output -= @allowed_output
 
   exit 1 if @output > 0
 rescue Psych::SyntaxError => e
-  puts "<------------ ERROR in a YAML file ------------>\n"
+  puts "<--------- ERROR in a YAML file --------->\n"
   puts e
   exit 1
 rescue StandardError => e
@@ -125,9 +121,9 @@ rescue StandardError => e
   exit 1
 else
   if @allowed_output > 0
-    puts "<------------ No build failing errors found! ------------>\n"
-    puts "<------------ #{@allowed_output} warnings reported! ------------>\n"
+    puts "<--------- No build failing errors found! --------->\n"
+    puts "<--------- #{@allowed_output} warning(s) reported! --------->\n"
   else
-    puts "<------------ No errors. You\'re good to go! ------------>\n"
+    puts "<--------- No errors. You\'re good to go! --------->\n"
   end
 end

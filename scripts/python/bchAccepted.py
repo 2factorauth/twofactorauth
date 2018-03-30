@@ -39,8 +39,8 @@ print("-================================-")
 
 for file in filename:
     #print("Testing path: " + path)
-
-    countFile(dirPath, file)
+	if "examples.yml" not in file:
+		countFile(dirPath, file)
 
 
 print("- Total websites listed: " + str(totalSites))

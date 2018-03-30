@@ -154,7 +154,7 @@ websites:
       btc: yes
       othercrypto: yes
       doc: https://www.easydns.com/blog/2018/01/08/0-confirmations-now-accepting-bitcoin-cash-as-a-payment-method/
-      exceptions: 
+      exceptions:
         text: "Crypto-Payments only for existing customers/non-new accounts"
 
     - name: eNom
@@ -245,8 +245,9 @@ websites:
     - name: Idotz.net
       url: https://idotz.net
       img: idotz.png
-      bch: No
+      bch: Yes
       btc: Yes
+      othercrypto: No
       twitter: idotz
       facebook: idotz.net
 
@@ -369,7 +370,8 @@ websites:
     - name: NearlyFreeSpeech.net
       url: https://www.nearlyfreespeech.net/
       img: nfsn.png
-      bch: No
+      bch: Yes
+      btc: Yes
       email_address: support@NearlyFreeSpeech.NET
       twitter: nfsn
 
@@ -507,14 +509,14 @@ websites:
       twitter: STRATO_AG
       facebook: strato
       lang: de
-      
+
     - name: TekkFolio
       url: https://tekkfolio.com/
       img: tekkfolio.png
       twitter: Blockchain_Name
       email_address: admin@tekkfolio.com
       bch: Yes
-      btc: No
+      btc: Yes
       othercrypto: Yes
 
     - name: UK2
