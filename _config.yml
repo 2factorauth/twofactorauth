@@ -8,6 +8,7 @@ description:
 url: https://usebitcoin.cash
 repo: https://github.com/acceptbitcoincash/acceptbitcoincash
 img: img/logo.png
+show_adoption_nav: true
 
 defaults:
   -
@@ -28,8 +29,9 @@ defaults:
       has_search: yes
       list_of: "merchants"
       encoded_img_placeholder: "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-      # img_placeholder: "img/placeholder.png"
-      img_placeholder: "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+      img_placeholder: "/img/placeholder.png"
+      #img_placeholder: "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+      
 exclude:
     - CNAME
     - CONTRIBUTING.md
