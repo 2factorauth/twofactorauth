@@ -7,8 +7,8 @@ has_search: no
 ---
 
 <div id="maingrid" class="ui container {{ page.id }}">
-{%- assign pages = site.data.sections | group_by:"page" | sort:"page" | reverse -%}
-{% for tracked_page in pages %} 
+{%- assign pages = site.data.sections | group_by:"page" | sort:"page" | rev -%}
+{% for tracked_page in pages %}
 	{%- assign count_total = 0 -%}
 	{%- assign count_bch = 0 -%}
 	{%- for section in tracked_page.items -%}
@@ -22,6 +22,7 @@ has_search: no
 	{%- endfor -%}
 	{% include segment/progress-bar.html value=count_bch total=count_total page=tracked_page.name %}
 {% endfor %}
+
 {%- assign count_total = 0 -%}
 {%- assign count_bch = 0 -%}
 {% for tracked_page in pages %}
@@ -39,4 +40,4 @@ has_search: no
 {% endfor %}
 {% include segment/progress-bar.html value=count_bch total=count_total page="cobra" %}
 </div>
-<br/>
+<br/><br/><br/>
