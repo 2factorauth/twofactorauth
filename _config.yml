@@ -8,7 +8,30 @@ description:
 url: https://usebitcoin.cash
 repo: https://github.com/acceptbitcoincash/acceptbitcoincash
 img: img/logo.png
+show_adoption_nav: true
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      # Page Variables
+      link_tweet: "Tweet to @TWITTERHANDLE"
+      link_facebook: "Write on @FACEBOOKHANDLE's wall"
+      email_subject: "Please%20consider%20accepting%20Bitcoin%20Cash%20payments"
+      rtfm: "Read support docs from"
+      link_mobile: "TWEET THEM"
+      workonit_tweet: "Please consider accepting #BitcoinCash for payments @TWITTERHANDLE - it’s \"Peer-to-Peer Electronic Cash\" that is fast, reliable, and secure, with low fees. More @"
+      link_progress: "Thank them for accepting Bitcoin Cash"
+      link_progress_mobile: "THANK THEM"
+      progress_tweet: "Thanks for accepting Bitcoin Cash, @TWITTERHANDLE!"
+      hash: "acceptBitcoinCash, BCHforEveryone"
+      has_search: yes
+      list_of: "merchants"
+      encoded_img_placeholder: "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+      img_placeholder: "/img/placeholder.png"
+      #img_placeholder: "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+      
 exclude:
     - CNAME
     - CONTRIBUTING.md
@@ -21,5 +44,8 @@ exclude:
     - vendor
     - kube
     - nginx.conf
+    - scripts
+    - Dockerfile
+    - websites_schema.yml
 
 theme: jekyll-theme-hacker

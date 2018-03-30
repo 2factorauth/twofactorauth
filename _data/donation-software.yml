@@ -1,4 +1,11 @@
 websites:
+    - name: Bitcoin ABC
+      url: https://www.bitcoinabc.org/
+      img: bitcoinabc.png
+      bch: Yes
+      btc: No
+      othercrypto: No
+      
     - name: Flowee the Hub
       url: http://www.flowee.org/
       img: floweethehub.png
@@ -64,7 +71,6 @@ websites:
       doc: https://donate.torproject.org/pdr
       exceptions:
         text: "Due to the current state of the Bitcoin market, our payment processor, Bitpay, will not allow us to accept donations of less than 5 USD. However, we can also accept donations, including smaller donations, through Bitcoin Cash. Send us a tip with @tipprbot on Twitter!"
-      
 
     - name: VeraCrypt
       url: https://veracrypt.fr/
@@ -75,3 +81,12 @@ websites:
       btc: Yes
       othercrypto: Yes
       doc: https://veracrypt.fr/en/Donation.html#BitcoinCash
+      
+    - name: Vue.js
+      url: https://vuejs.org
+      img: vue.png
+      twitter: vuejs
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      doc: https://vuejs.org/support-vuejs/
