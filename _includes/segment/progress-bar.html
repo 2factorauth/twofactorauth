@@ -3,18 +3,22 @@
 {%- case include.page -%}
 	{%- when "home" -%}
 		{%- assign progress_text = "merchants listed accept Bitcoin Cash" -%}
+		{%- assign bar_color = "blue" -%}
 	{%- when "adult" -%}
 		{%- assign progress_text = "adult websites listed accept Bitcoin Cash" -%}
 		{%- assign list_of = "adult merchants/websites" -%}
+		{%- assign bar_color = "pink" -%}
 	{%- when "donations" -%}
 		{%- assign progress_text = "organizations listed accept Bitcoin Cash donations" -%}
 		{%- assign list_of = "organizations" -%}
+		{%- assign bar_color = "purple" -%}
 	{%- when "cobra" -%}
 		{%- assign progress_text = "websites listed that accept Bitcoin, also accept Bitcoin Cash" -%}
 		{%- assign list_of = "websites" -%}
+		{%- assign bar_color = "green" -%}
 {%- endcase -%}
-<div class="ui container progress bch-progress" data-value="{{ include.value }}" data-total="{{ include.total }}" id="bch-count">
-	<div class="bar"><div class="progress"></div>   </div>
+<div class="ui container progress bch-progress {{ page.id }}" data-value="{{ include.value }}" data-total="{{ include.total }}" id="bch-count">
+	<div class="bar {{ bar_color }}"><div class="progress"></div></div>
 	<div class="label" data-tooltip="Please help to improve this ratio by sending tweets to, or writing on the wall of the {{ list_of }} that you hope to see accept Bitcoin Cash." data-position="bottom center" data-inverted="">
 		<b>{{ include.value }}</b> out of <b>{{ include.total }}</b> {{ progress_text }}.
 	</div>
