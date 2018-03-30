@@ -44,7 +44,7 @@ $(document).ready(function () {
   });
 
   // Stick the BCH-only filter to the top on scroll
-  $(".bch-only").fixTo('html', {
+  $('.bch-only').fixTo('html', {
     useNativeSticky: false
   });
 
@@ -114,6 +114,7 @@ $(document).ready(function () {
 
   $('#assets').on('click', function () {
     $('.ui.modal.assets').modal('show');
+	$('img.image').trigger('unveil');
   });
 
   $('#art-collections').on('click', function () {
@@ -218,62 +219,64 @@ $(window).resize(function () {
 });
 
 var isSearching = false;
-var jets = new Jets({
-  searchTag: '#bch-merchant-search',
-  contentTag: '.bch-merchant-content',
-  didSearch: function (searchPhrase) {
-    document.location.hash = '';
-    $('#no-results').css('display', 'none');
-    $('#maingrid').css('visibility', 'visible');
-    $('.category h5').removeClass('active-icon');
-    // Two separate table layouts are used for desktop/mobile
-    var platform = ($(window).width() > 768) ? 'desktop' : 'mobile';
-    var content = $('.' + platform + '-table .bch-merchant-content');
-    var table = $('.' + platform + '-table');
+if(document.getElementById('bch-merchant-search') instanceof Object){
+	var jets = new Jets({
+	  searchTag: '#bch-merchant-search',
+	  contentTag: '.bch-merchant-content',
+	  didSearch: function (searchPhrase) {
+		document.location.hash = '';
+		$('#no-results').css('display', 'none');
+		$('#maingrid').css('visibility', 'visible');
+		$('.category h5').removeClass('active-icon');
+		// Two separate table layouts are used for desktop/mobile
+		var platform = ($(window).width() > 768) ? 'desktop' : 'mobile';
+		var content = $('.' + platform + '-table .bch-merchant-content');
+		var table = $('.' + platform + '-table');
 
-    // Non-strict comparison operator is used to allow for null
-    if (searchPhrase == '') {
-      // Show all categories when no search term is entered
-      $('.website-table').css('display', 'none');
-      $('.website-table .label').css('display', 'none');
-      $('#search-clear').css('display', 'none');
-      $('.category').show();
-      $('table').show();
-      isSearching = false;
-    } else {
-      // Hide irrelevant categories
-      $('.website-table').css('display', 'none');
-      $('.website-table .label').css('display', 'block');
-      $('.category').hide();
-      table.css('display', 'block');
-      content.parent().show();
-      content.each(function () {
-        // Hide table when all rows within are hidden by Jets
-        if ($(this).children(':hidden').length === $(this).children().length) {
-          if (platform == 'mobile') $(this).parent().hide();
-          else $(this).parent().parent().hide();
-        }
-      });
+		// Non-strict comparison operator is used to allow for null
+		if (searchPhrase == '') {
+		  // Show all categories when no search term is entered
+		  $('.website-table').css('display', 'none');
+		  $('.website-table .label').css('display', 'none');
+		  $('#search-clear').css('display', 'none');
+		  $('.category').show();
+		  $('table').show();
+		  isSearching = false;
+		} else {
+		  // Hide irrelevant categories
+		  $('.website-table').css('display', 'none');
+		  $('.website-table .label').css('display', 'block');
+		  $('.category').hide();
+		  table.css('display', 'block');
+		  content.parent().show();
+		  content.each(function () {
+			// Hide table when all rows within are hidden by Jets
+			if ($(this).children(':hidden').length === $(this).children().length) {
+			  if (platform == 'mobile') $(this).parent().hide();
+			  else $(this).parent().parent().hide();
+			}
+		  });
 
-      if (table.children().length == table.children(':hidden').length) {
-          $('#no-results').css('display', 'block');
-          $('#maingrid').css('visibility', 'hidden');
-      }
+		  if (table.children().length == table.children(':hidden').length) {
+			  $('#no-results').css('display', 'block');
+			  $('#maingrid').css('visibility', 'hidden');
+		  }
 
-      $('#search-clear').fadeIn('slow');
+		  $('#search-clear').fadeIn('slow');
 
-      isSearching = true;
+		  isSearching = true;
 
-      //$('html, body').stop().animate({scrollTop: $('#maingrid').offset().top - 120}, 500, 'swing');
-      $('html, body').scrollTop($('#maingrid').offset().top - 128);
-    }
-  },
-  addImportant: true,
-  // Process searchable elements manually
-  manualContentHandling: function(tag) {
-    return $(tag).find('.title > a.name').text();
-  }
-});
+		  //$('html, body').stop().animate({scrollTop: $('#maingrid').offset().top - 120}, 500, 'swing');
+		  $('html, body').scrollTop($('#maingrid').offset().top - 128);
+		}
+	  },
+	  addImportant: true,
+	  // Process searchable elements manually
+	  manualContentHandling: function(tag) {
+		return $(tag).find('.title > a.name').text();
+	  }
+	});
+}
 
 /**
  * Ensure searching is conducted with regard to the user's viewport

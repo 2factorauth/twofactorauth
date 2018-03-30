@@ -38,18 +38,18 @@
 {% include js-warning.html %}
 {% include header.html %}
 
+{%- include segment/navbar.html -%}
+
 <!-- 'content' loads pages from the root (index.html/*.html) -->
 {{ content }}
 
-{% if page.id == "home" %}
-  <!-- ./scripts/python/bchAccepted.py must be run at build time to generate/update the following 'count_support.html' include -->
-  {% include count_support.html %}
+{%- if page.page_name == "home" -%}
   {% include segment/twitter.html %}
   {% include segment/moreinfo.html %}
   {% include segment/assets.html %}
-{% else %}
+{%- elsif page.page_name == "adult" -%}
   {% include modals/adult-warning.html %}
-{% endif %}
+{%- endif -%}
 
 <!-- Global includes -->
 {% include modals/add-site-form.html %}
