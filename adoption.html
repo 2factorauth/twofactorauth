@@ -7,8 +7,9 @@ has_search: no
 ---
 
 <div id="maingrid" class="ui container {{ page.id }}">
-{%- assign pages = site.data.sections | group_by:"page" | sort:"page" | reverse -%}
-{% for tracked_page in pages %}
+{%- assign pages = site.data.sections | group_by:"page" | sort:"name" -%}
+{%- assign sortedPages = pages | reverse -%}
+{% for tracked_page in sortedPages %}
 	{%- assign count_total = 0 -%}
 	{%- assign count_bch = 0 -%}
 	{%- for section in tracked_page.items -%}
