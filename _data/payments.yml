@@ -26,6 +26,13 @@ websites:
       exceptions:
           text: "SMS-capable phone required."
       doc: http://help.buycraft.net/article/83-two-factor-authentication
+    
+    - name: Curexe
+      url: https://curexe.com
+      img: curexelogo.png
+      tfa: No
+      software: No
+      sms: No
 
     - name: Dwolla
       url: https://www.dwolla.com
