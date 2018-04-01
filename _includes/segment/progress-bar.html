@@ -19,7 +19,6 @@
 {%- endcase -%}
 <div class="ui container progress bch-progress {{ page.id }}" data-value="{{ include.value }}" data-total="{{ include.total }}" id="bch-count">
 	<div class="bar {{ bar_color }}"><div class="progress"></div></div>
-	<div class="label" data-tooltip="Please help to improve this ratio by sending tweets to, or writing on the wall of the {{ list_of }} that you hope to see accept Bitcoin Cash." data-position="bottom center" data-inverted="">
-		<b>{{ include.value }}</b> out of <b>{{ include.total }}</b> {{ progress_text }}.
-	</div>
+	<div class="label" data-tooltip="Please help to improve this ratio by sending tweets to, or writing on the wall of the {{ list_of }} that you hope to see accept Bitcoin Cash." data-position="bottom center" data-inverted=""></div>
 </div>
+<p><b>{{ include.value }}</b> out of <b>{{ include.total }}</b> {{ progress_text }}.</p>
