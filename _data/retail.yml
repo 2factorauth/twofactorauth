@@ -280,13 +280,6 @@ websites:
       btc: yes
       othercrypto: yes
 
-    - name: Crypto General Store
-      url: https://cryptogeneralstore.net
-      img: cryptogeneralstore.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-
     - name: CRYPTOMATIC
       url: https://cryptomatic.io
       twitter: cryptomatic_io
@@ -489,6 +482,16 @@ websites:
       bch: Yes
       btc: Yes
       othercrypto: Yes
+      
+    - name: H-O-D-L
+      url: https://h-o-d-l.co
+      img: hodl.png
+      country: US
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      exceptions: 
+        text: "select Coinbase Commerce as payment option upon checkout and follow the prompts"
 
     - name: Home Depot
       url: http://www.homedepot.com
