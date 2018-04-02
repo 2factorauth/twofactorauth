@@ -5,7 +5,7 @@ $(document).ready(function () {
     openCategory(window.location.hash.substring(1));
   }
 
-  // Unveil images 50px before they appear
+  // Unveil images when visible in jquery
   $(function() { $('img').Lazy({visibleOnly: true}); });
 
   // Show exception warnings upon hover
