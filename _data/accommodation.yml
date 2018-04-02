@@ -25,6 +25,17 @@ websites:
       bch: yes
       btc: yes
       othercrypto: no
+      
+    - name: Riddell Travel
+      url: https://www.riddelltravel.com
+      img: riddelltravel.png
+      email_address: bookings@riddelltravel.com
+      bch: Yes
+      btc: No
+      othercrypto: Yes
+      doc: https://www.reddit.com/r/btc/comments/88yb6o/crypto_giving_you_sleepless_nights_rather_go_on_a/
+      exceptions: 
+        text: "Bitcoin cash address will be provided once you've decided on your preferred package."
 
     - name: SV Breta
       url: https://breta.weebly.com/
