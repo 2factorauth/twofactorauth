@@ -59,8 +59,15 @@ def process_section(section, validator)
   errors = validator.validate(data)
 
   errors.each do |e|
+    msg = ''
+    if e.message.include? " is already used at '/websites/"
+      msg = "\n#{websites.at(e.message.split('already used at')[1]\
+            .split('/')[2].to_i).to_yaml}"\
+            "\n#{websites.at(e.path.split('/')[2].to_i).to_yaml}\n"
+    end
+
     error("#{section_file}:#{websites.at(e.path.split('/')[2].to_i)['name']}"\
-          ": #{e.message}")
+          ": #{e.message}#{msg}")
   end
 
   # Check section alphabetization
