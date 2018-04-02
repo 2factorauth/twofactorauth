@@ -61,9 +61,11 @@ def process_section(section, validator)
   errors.each do |e|
     msg = ''
     if e.message.include? " is already used at '/websites/"
-      msg = "\n#{websites.at(e.message.split('already used at')[1]\
-            .split('/')[2].to_i).to_yaml}"\
-            "\n#{websites.at(e.path.split('/')[2].to_i).to_yaml}\n"
+      err_split = e.message.split('already used at')[1].split('/')
+      msg = "\nThese listings share the same "\
+            "'#{err_split[3].split('\'')[0]}':"\
+            "\n#{websites.at(err_split[2].to_i).to_yaml}"\
+            "#{websites.at(e.path.split('/')[2].to_i).to_yaml}\n"
     end
 
     error("#{section_file}:#{websites.at(e.path.split('/')[2].to_i)['name']}"\
