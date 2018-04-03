@@ -22,7 +22,7 @@ jobs:
     - &test-baseline
       stage: Test
       script:
-        bundle exec rake
+        bundle exec rake -m
       
     - <<: *test-baseline
       script:
