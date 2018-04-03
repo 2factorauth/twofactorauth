@@ -121,13 +121,6 @@ websites:
       sms: Yes
       doc: https://my.domains4bitcoins.com/kb/answer/2692
 
-    - name: DomainsAtCost
-      url: https://www.domainsatcost.ca/
-      twitter: domainsatcost
-      facebook: domainsatcost
-      img: domainsatcost.png
-      tfa: No
-
     - name: DomainTools
       url: https://www.domaintools.com/
       twitter: DomainTools
@@ -184,11 +177,12 @@ websites:
       doc: http://help.eurodns.com/customer/en/portal/articles/1633106-how-do-i-activate-two-step-verification-on-my-account-
 
     - name: Fabulous
-      url: http://fabulous.com
+      url: https://fabulous.com
       img: fabulous.png
       tfa: Yes
-      hardware: yes
-      doc: http://fabulous.com/informationcenter/index.htm?formdata%5Bqid%5D=1194
+      hardware: Yes
+      software: Yes
+      doc: https://fabulous.com/knowledge/article/137
 
     - name: Fasthosts
       url: https://www.fasthosts.co.uk/
@@ -454,6 +448,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://porkbun.com/products/two_factor_authentication
+
+    - name: Rebel.com
+      url: https://www.rebel.com/
+      twitter: rebeldotcom
+      facebook: rebeldomains
+      img: rebel.png
+      tfa: No
 
     - name: Register4Less
       url: https://register4less.com/
