@@ -10,7 +10,7 @@ ticker = function(currencies) {
     JPY: "¥",
     EUR: "€"
   }
-
+  
   $.ajax({
     type: "GET",
     url: "https://min-api.cryptocompare.com/data/price?fsym=BCH&tsyms=" + currencies,
@@ -23,15 +23,17 @@ ticker = function(currencies) {
     },
     success: function (currencyRates) {
       var output = [];
-
-      $.each(currencyRates, function (currency, price) {
-        var sym = symbols[currency];
-        if (sym === undefined) {
-          sym = "";
-        }
-        output.push("<li>BCH <span class=\"curr-symbol\">" + sym + "</span> " + currency + "<span class=\"curr-price\">" + price + "</span></li>");
-      });
-
+	  var parsedCurrencies = currencies.split(',');
+	  for(var i = 0; i < parsedCurrencies.length; i++) {
+		  var currency = parsedCurrencies[i];
+		  var sym = symbols[currency];
+		  if (sym === undefined) {
+            sym = "";
+          }
+		  
+          output.push("<li>BCH <span class=\"curr-symbol\">" + sym + "</span> " + currency + "<span class=\"curr-price\">" + currencyRates[currency] + "</span></li>");
+	  }
+	  
       $('#ticker_value').html(output);
     }
   }).done(function () {
