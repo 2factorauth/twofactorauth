@@ -1,13 +1,4 @@
 websites:
-    - name: 101 Vape
-      url: https://101vape.com/
-      img: 101vape.png
-      twitter: 101vape
-      facebook: 101vape
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
     - name: 1stBoards
       url: http://1stboards.world
       facebook: 1stboardstaiwan
@@ -55,13 +46,6 @@ websites:
       facebook: adafruitindustries
       exceptions:
         text: "To use any cryptocurrency, the order must exceed $100 before the option becomes available during checkout."
-
-    - name: AdoramaPix
-      url: http://www.adoramapix.com
-      img: adoramapix.png
-      bch: No
-      twitter: AdoramaPix
-      facebook: AdoramaPix
 
     - name: Affordable Jerseys
       url: http://affordablejerseys.com
@@ -137,18 +121,6 @@ websites:
       btc: Yes
       othercrypto: Yes
 
-    - name: Baton Vapor
-      url: https://batonvapor.com
-      img: batonvapor.png
-      facebook: batonvapor
-      email_address: timmy@batonvapor.com
-      country: US
-      state: Oregon
-      city: Seattle
-      bch: Yes
-      btc: No
-      othercrypto: Yes
-
     - name: Beard Head
       url: https://www.beardhead.cz
       img: beardheadcz.png
@@ -173,9 +145,11 @@ websites:
     - name: Big W
       url: https://www.bigw.com.au/
       img: bigw.png
-      bch: No
       facebook: BIGWaustralia
       twitter: BIGW
+      region: af
+      country: AU
+      bch: No
 
     - name: Bitcoin Bling
       url: http://cart.bitcoinbling.com/
@@ -211,14 +185,6 @@ websites:
       btc: Yes
       othercrypto: Yes
 
-    - name: BitMain
-      url: https://www.bitmain.com/
-      img: bitmain.png
-      twitter: bitmaintech
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
     - name: BitStickers
       url: https://bitstickers.net
       img: bitstickers.png
@@ -229,14 +195,6 @@ websites:
       btc: Yes
       othercrypto: Yes
       doc: https://bitstickers.net/bitcoin-cash-accepted-here/
-
-    - name: BitVapes
-      url: https://bitvapes.com
-      img: bitvapes.png
-      twitter: bitvapes
-      bch: Yes
-      btc: No
-      othercrypto: No
 
     - name: Blanke Briefhüllen GmbH
       url: https://www.brief-huellen.de
@@ -301,19 +259,6 @@ websites:
       bch: No
       twitter: comixology
 
-    - name: Congrevape
-      region: na
-      country: US
-      city: Stockon
-      url: https://congrevape.com/shop
-      twitter: Congrevape
-      facebook: Congrevape
-      img: congrevape.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: https://congrevape.com/what-is-cryptocurrency-and-why-do-we-accept-it/
-
     - name: Costco
       url: https://www.costco.com
       img: costco.png
@@ -331,13 +276,6 @@ websites:
     - name: Crypto Armory
       url: https://www.crypto-armory.com/
       img: cryptoarmory.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-
-    - name: Crypto General Store
-      url: https://cryptogeneralstore.net
-      img: cryptogeneralstore.png
       bch: yes
       btc: yes
       othercrypto: yes
@@ -383,8 +321,10 @@ websites:
     - name: Digital World International
       url: http://www.dwidigitalcameras.com.au/
       img: dwi.png
-      bch: No
       facebook: DWIAUS
+      region: af
+      country: AU
+      bch: No
 
     - name: dry.camp
       url: https://dry.camp
@@ -401,8 +341,10 @@ websites:
     - name: EB Games Australia
       url: https://ebgames.com.au/
       img: ebgamesaustralia.png
-      bch: No
       twitter: EBGamesAus
+      region: af
+      country: AU
+      bch: No
 
     - name: eBay
       url: http://ebay.com
@@ -483,13 +425,6 @@ websites:
       btc: Yes
       othercrypto: No
 
-    - name: GamersGate
-      url: https://www.gamersgate.com/
-      twitter: GamersGate
-      facebook: GamersGate
-      img: gamersgate.png
-      bch: No
-
     - name: GearBest
       url: https://www.gearbest.com/
       twitter: TheGearbest
@@ -532,16 +467,6 @@ websites:
       btc: Yes
       othercrypto: Yes
 
-    - name: gpuShack
-      url: https://www.gpushack.com
-      twitter: gpuShack
-      facebook: shack.gpu
-      img: gpushack.png
-      bch: Yes
-      btc: No
-      othercrypto: Yes
-      doc: https://gpushack.com/pages/bitcoin-payments
-
     - name: Groupon
       url: https://www.groupon.com
       twitter: Groupon
@@ -557,6 +482,16 @@ websites:
       bch: Yes
       btc: Yes
       othercrypto: Yes
+      
+    - name: H-O-D-L
+      url: https://h-o-d-l.co
+      img: hodl.png
+      country: US
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      exceptions: 
+        text: "select Coinbase Commerce as payment option upon checkout and follow the prompts"
 
     - name: Home Depot
       url: http://www.homedepot.com
@@ -575,6 +510,8 @@ websites:
       url: https://www.hypop.com.au/
       img: hypop.png
       twitter: hypop
+      region: af
+      country: AU
       bch: No
 
     - name: IKEA
@@ -588,6 +525,8 @@ websites:
       url: https://www.jbhifi.com.au/
       twitter: JBHiFi
       img: jbhifi.png
+      region: af
+      country: AU
       bch: No
 
     - name: Jet
@@ -616,16 +555,6 @@ websites:
       othercrypto: yes
       exceptions:
         text: "Currently accepting BCH if you request an address. Working on adding BCH to the payment flow."
-
-    - name: King Pen Vapes
-      url: https://kingpenvapes.com/
-      twitter: KingPenVapes
-      facebook: kingpenv
-      img: kingpenvapes.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: https://www.reddit.com/r/btc/comments/7jq1hc/we_just_added_bitcoin_cash_as_a_payment_method_on/
 
     - name: Kohl's
       url: http://www.kohls.com
@@ -837,18 +766,6 @@ websites:
       img: rakuten.png
       bch: No
 
-    - name: Renjer Wild Jerky
-      url: https://www.renjer.ky
-      img: renjer.png
-      twitter: renjerjerky
-      facebook: renjer.ky
-      email_address: renjer@renjer.ky
-      region: eu
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://www.reddit.com/r/Bitcoincash/comments/7r8l4s/our_company_producing_wild_jerky_out_of_reindeer/
-
     - name: Reservoir Mugs
       url: https://reservoirmugs.com
       twitter: reservoirmugs
@@ -982,39 +899,6 @@ websites:
       country: US
       bch: Yes
       btc: Yes
-      othercrypto: Yes
-
-    - name: VapeClubMY
-      url: https://vapeclubmy.com
-      img: vapeclubmy.png
-      twitter: vapeclubmy
-      facebook: vapeclubmy
-      email_address: hello@vapeclubmy.com
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://vapeclubmy.com/blogs/features/vape-club-supports-cryptocurrency-payments-via-coinbase-commerce
-
-    - name: Vaporizers Direct
-      url: https://vaporizersdirect.com.au
-      img: vaporizersdirect.png
-      twitter: vaporizerdirect
-      facebook: vaporizersdirect
-      email_address: christian@vaporizersdirect.com.au
-      region: oc
-      country: AU
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Vapour Depot
-      url: https://vapourdepot.com
-      img: vapourdepot.png
-      twitter: vapourdepot
-      facebook: vapourdepot
-      email_address: social@vapourdepot.com
-      bch: Yes
-      btc: No
       othercrypto: Yes
 
     - name: Walgreens
