@@ -42,6 +42,10 @@ task :verify do
   ruby './verify.rb'
 end
 
+task :clean do
+  rm_rf './_site'
+end
+
 RuboCop::RakeTask.new
 
 namespace :docker do
