@@ -108,6 +108,20 @@ begin
   # Check sections.yml alphabetization
   error("#{path} is not alphabetized by name") \
     if sections != (sections.sort_by { |section| section['id'].downcase })
+
+  # meta validator
+  metavalidator = Kwalify::MetaValidator.instance
+
+  # validate schema definition
+  parser = Kwalify::Yaml::Parser.new(metavalidator)
+  parser.parse_file(File.join(__dir__, 'websites_schema.yml'))
+  errors = parser.errors()
+  if errors && !errors.empty?
+    errors.each do |e|
+      error(e.message.to_s)
+    end
+  end
+
   schema = YAML.load_file(File.join(__dir__, 'websites_schema.yml'))
   validator = Kwalify::Validator.new(schema)
 
