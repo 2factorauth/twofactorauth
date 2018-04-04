@@ -130,13 +130,13 @@ websites:
       software: Yes
 
     - name: SecureSafe
-      url: http://www.securesafe.com
+      url: https://www.securesafe.com
       img: securesafe.png
       tfa: Yes
       sms: Yes
       exceptions:
           text: "2FA is only available on paid plans."
-      doc: http://www.securesafe.com/en/faq/security.html
+      doc: https://www.securesafe.com/en/faq/security.html
 
     - name: True Key
       url: https://www.truekey.com
