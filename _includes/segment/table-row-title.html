@@ -8,7 +8,7 @@
   <img src="/img/{{ img_path }}" class="icon" alt="{{ website.name }}">
 </noscript>
 <img src="{{ page.img_placeholder }}" data-src="/img/{{ img_path }}" class="icon" alt="{{ website.name }}">
-<a href="{{ website.url }}" class="name">{{ website.name }}</a>
+<a href="{{ website.url }}" class="name" target="_blank">{{ website.name }}</a>
 {%- include exception.html website=website -%}
 {%- if website.lang and site.data.languages[website.lang] -%}
   {%- assign progress_tweet = site.data.languages[website.lang].progress_tweet -%}
