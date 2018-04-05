@@ -1,0 +1,65 @@
+---
+---
+{%- assign page_count = 0 -%}
+{%- assign section_count = 0 -%}
+{%- assign total = 0 -%}
+{%- assign bch = 0 -%}
+{%- assign btc = 0 -%}
+{%- assign other_crypto = 0 -%}
+{%- assign any_crypto = 0 -%}
+{%- assign pages = site.data.sections | group_by:"page" | sort:"name" -%}
+{%- assign sortedPages = pages | reverse -%}
+{ 
+	{% for tracked_page in sortedPages %} 
+	{%- assign page_count = page_count | plus: '1' -%}
+	{%- assign count_total = 0 -%}
+	{%- assign count_bch = 0 -%}
+	{%- assign count_btc = 0 -%}
+	{%- assign count_other_crypto = 0 -%}
+	{%- assign count_sections = 0 -%}
+	{%- assign count_any_crypto = 0 -%}
+	"{{ tracked_page.name | capitalize }}": { 
+	{%- for section in tracked_page.items -%}
+		{%- assign count_sections = count_sections | plus: '1' -%}
+		{%- assign section_file = site.data[section.id] -%}
+		{%- for website in section_file.websites -%}
+			{%- assign count_total = count_total | plus: '1' -%}
+			{%- if website.bch -%}
+				{%- assign count_bch = count_bch | plus: '1' -%}
+			{%- endif -%}
+			{%- if website.btc -%}
+				{%- assign count_btc = count_btc | plus: '1' -%}
+			{%- endif -%}
+			{%- if website.othercrypto -%}
+				{%- assign count_other_crypto = count_other_crypto | plus: '1' -%}
+			{%- endif -%}
+			{%- if website.bch or website.btc or website.othercrypto -%}
+				{%- assign count_any_crypto = count_any_crypto | plus: '1' -%}
+			{%- endif -%}
+		{%- endfor -%}
+	{% endfor %}
+		"accepts_crypto_BCH": {{ count_bch }},
+		"accepts_crypto_BTC": {{ count_btc }},
+		"accepts_crypto_other": {{ count_other_crypto }},
+		"accepts_crypto_any": {{ count_any_crypto }},
+		"sites_tracked": {{ count_total }},
+		"sections": {{ count_sections }}
+	},
+	{% assign bch = bch | plus: count_bch %}
+	{%- assign btc = btc | plus: count_btc -%}
+	{%- assign other_crypto = other_crypto | plus: count_other_crypto -%}
+	{%- assign total = total | plus: count_total -%}
+	{%- assign any_crypto = any_crypto | plus: count_any_crypto -%}
+	{%- assign section_count = section_count | plus: count_sections -%}
+{%- endfor -%}
+	"Site": {
+		"accepts_crypto_BCH": {{ bch }},
+		"accepts_crypto_BTC": {{ btc }},
+		"accepts_crypto_other": {{ other_crypto }},
+		"accepts_crypto_any": {{ any_crypto }},
+		"sites_tracked": {{ total }},
+		"sections": {{ section_count }},
+		"pages_of_listings": {{ page_count }},
+		"generated": "{{ site.time }}"
+	}
+}
