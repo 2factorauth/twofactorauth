@@ -24,17 +24,17 @@
 		{%- assign section_file = site.data[section.id] -%}
 		{%- for website in section_file.websites -%}
 			{%- assign count_total = count_total | plus: '1' -%}
-			{%- if website.bch -%}
-				{%- assign count_bch = count_bch | plus: '1' -%}
-			{%- endif -%}
-			{%- if website.btc -%}
-				{%- assign count_btc = count_btc | plus: '1' -%}
-			{%- endif -%}
-			{%- if website.othercrypto -%}
-				{%- assign count_other_crypto = count_other_crypto | plus: '1' -%}
-			{%- endif -%}
 			{%- if website.bch or website.btc or website.othercrypto -%}
 				{%- assign count_any_crypto = count_any_crypto | plus: '1' -%}
+				{%- if website.bch -%}
+					{%- assign count_bch = count_bch | plus: '1' -%}
+				{%- endif -%}
+				{%- if website.btc -%}
+					{%- assign count_btc = count_btc | plus: '1' -%}
+				{%- endif -%}
+				{%- if website.othercrypto -%}
+					{%- assign count_other_crypto = count_other_crypto | plus: '1' -%}
+				{%- endif -%}
 			{%- endif -%}
 		{%- endfor -%}
 	{% endfor %}
