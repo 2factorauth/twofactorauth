@@ -122,10 +122,10 @@ websites:
 
     - name: Codeship
       url: https://codeship.com/
-      twitter: codeship
-      facebook: codeship
       img: codeship.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://documentation.codeship.com/general/about/2fa/
 
     - name: Compose.io
       url: https://www.compose.io/
@@ -147,6 +147,13 @@ websites:
       twitter: deploybothq
       img: deploybot.png
       tfa: No
+
+    - name: DeployHQ
+      url: https://www.deployhq.com/
+      img: deployhq.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.deployhq.com/support/managing-your-account/personal-profile/two-factor-authentication
 
     - name: Docker
       url: https://www.docker.com/

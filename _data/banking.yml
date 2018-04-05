@@ -127,6 +127,13 @@ websites:
       img: bbt.png
       tfa: No
 
+    - name: BBVA Compass
+      url: https://www.bbvacompass.com/
+      img: bbvacompass.png
+      tfa: No
+      facebook: bbvacompass
+      twitter: BBVACompass
+
     - name: Black Hills Federal Credit Union
       url: https://www.bhfcu.com
       img: bhfcu.png
@@ -162,6 +169,14 @@ websites:
       sms: Yes
       phone: Yes
       doc: https://www.mybankofinternet.com/tob/live/usp-core/static/help.html#login_security
+
+    - name: Caisse D'Epargne
+      url: https://www.caisse-epargne.fr/
+      twitter: CaissEpargneSAV
+      facebook: Caisse.Epargne
+      img: Caisse_Epargne.png
+      tfa: No
+      lang: fr
 
     - name: Capital One
       url: https://www.capitalone.com/
@@ -350,14 +365,6 @@ websites:
       facebook: FifthThirdBank
       img: fifththird.png
       tfa: No
-
-    - name: Final
-      url: https://getfinal.com/
-      img: final.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://getfinal.com/company-news/2017/05/31/why-final-is-transitioning-to-TOTP-for-2FA/
 
     - name: First Direct
       url: http://www1.firstdirect.com/
@@ -763,6 +770,13 @@ websites:
       tfa: No
       facebook: ServiceCreditUnion
 
+    - name: Servus Credit Union
+      url: https://www.servus.ca
+      twitter: ServusCU
+      facebook: ServusCU
+      img: servus-cu.png
+      tfa: No
+
     - name: Simple
       url: https://www.simple.com/
       img: simple.png
@@ -850,10 +864,11 @@ websites:
 
     - name: TD Bank
       url: https://www.tdbank.com
-      twitter: TDBank_US
-      facebook: TDBank
       img: tdbank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.td.com/privacy-and-security/privacy-and-security/how-we-protect-you/online-security/2fa.jsp
 
     - name: TD Canada Trust
       url: https://www.tdcanadatrust.com
@@ -898,6 +913,15 @@ websites:
       sms: Yes
       phone: Yes
       doc: https://www.umpquabank.com/personal-banking/online-banking-and-billpay/security-faqs/
+
+    - name: Unify Financial Credit Union
+      url: https://www.unifyfcu.com
+      img: UnifyFCU.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.unifyfcu.com/multi-factor-authentication-keep-bad-guys-out
 
     - name: Union Bank
       url: https://www.unionbank.com/

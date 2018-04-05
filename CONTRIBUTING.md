@@ -18,7 +18,9 @@ are stored in folders corresponding to each of those categories in their own
 2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
    preferred format. If possible, please also run the image through an optimizing
    utility such as OptiPNG before committing it to the repo.
-3. **Be Awesome**: You need to be awesome. That is all.
+3. **HTTPS links**: All sites that support HTTPS should also be linked with an
+   HTTPS address.
+4. **Be Awesome**: You need to be awesome. That is all.
 
 ## Running Locally
 
@@ -149,8 +151,8 @@ The following is an example of a website that *supports* TFA:
 
 If a site does not provide TFA, the `twitter:` field should be included if the site uses
 Twitter. Facebook can also be included using the `facebook` field, as well as Email using
-the `email_address` field. If the website does not use the English language, the `lang:` 
-field should also be included. The fields `sms:`, `email:`, `phone:`, `software:` and 
+the `email_address` field. If the website does not use the English language, the `lang:`
+field should also be included. The fields `sms:`, `email:`, `phone:`, `software:` and
 `hardware:` can be completely removed.
 
 The following is an example of a website that *does not* support TFA:
