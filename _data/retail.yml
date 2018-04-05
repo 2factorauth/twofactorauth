@@ -492,6 +492,15 @@ websites:
       othercrypto: Yes
       exceptions: 
         text: "select Coinbase Commerce as payment option upon checkout and follow the prompts"
+        
+    - name: Headphones.com
+      url: https://www.headphones.com/
+      img: headphonesdotcom.png
+      facebook: headphonesdotcom
+      email_address: info@headphones.com
+      bch: No
+      btc: Yes
+      othercrypto: Yes
 
     - name: Home Depot
       url: http://www.homedepot.com
