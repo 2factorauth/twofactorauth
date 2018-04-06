@@ -16,20 +16,7 @@
     {% endif %}
     {% if website.status %}
     <div class="main progress">
-      <div class="title">
-        {% if website.img %}
-        <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-        <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
-             alt="{{ website.name }}">
-        {% endif %}
-        <a href="{{ website.url }}" class="name">{{ website.name }}</a>
-        {% include exception.html website=website %}
-
-        <a href="{{ website.status }}" target="_blank">
-          <i class="external url link large icon"></i>
-        </a>
-      </div>
-
+      {% include row-title.html section=section_id website=website type='mobile' %}
       <p>IN PROGRESS!</p>
 
       <div>
@@ -40,15 +27,7 @@
     </div>
     {% elsif website.tfa %}
     <div class="main positive">
-      <div class="title">
-        {% if website.img %}
-        <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-        <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
-             alt="{{ website.name }}">
-        {% endif %}
-        <a href="{{ website.url }}" class="name">{{ website.name }}</a>
-        {% include exception.html website=website %}
-      </div>
+      {% include row-title.html section=section_id website=website type='mobile' %}
       <p>
         Supported:
         {% if website.sms %}SMS{% endif %}
@@ -65,15 +44,7 @@
     </div>
     {% else %}
     <div class="main negative">
-      <div class="title">
-        {% if website.img %}
-        <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-        <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
-             alt="{{ website.name }}">
-        {% endif %}
-        <a href="{{ website.url }}" class="name">{{ website.name }}</a>
-        {% include exception.html website=website %}
-      </div>
+      {% include row-title.html section=section_id website=website type='mobile' %}
       <p>2FA not supported</p>
       <div class="button-group">
         {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i></a>{% endif %}
