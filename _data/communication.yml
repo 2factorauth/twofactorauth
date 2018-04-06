@@ -187,15 +187,14 @@ websites:
       phone: Yes
       doc: https://support.signal.org/hc/en-us/articles/360001842431-What-is-Registration-Lock-
 
-    - name: Skype (via Microsoft Account)
+    - name: Skype
       url: https://www.skype.com
       img: skype.png
       tfa: Yes
+      email: Yes
       sms: Yes
       software: Yes
-      doc: http://windows.microsoft.com/en-au/windows/two-step-verification-faq
-      exceptions:
-            text: "Two-factor authentication is available only when logging in using a Microsoft account. If you have setup your account using a Skype password, 2FA through Microsoft is essentially useless."
+      doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
 
     - name: Slack
       url: https://slack.com/
