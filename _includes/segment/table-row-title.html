@@ -4,11 +4,19 @@
 	{%- assign img_path = include.section | append: '/' | append: website.img -%}
 {%- endif -%}
 <div class="title">
+<div class="keywords" style="display:none;">{{ website.name }}
+&nbsp;bch:{{ website.bch }}
+{%- if website.region -%}&nbsp;region:{{ website.region }}{%- endif -%}
+{%- if website.country -%}&nbsp;country:{{ website.country }}{%- endif -%}
+{%- if website.state -%}&nbsp;state:{{ website.state }}{%- endif -%}
+{%- if website.city -%}&nbsp;city:{{ website.city }}{%- endif -%}
+&nbsp;btc:{%- if website.btc -%}{{ website.btc }}{%- else -%}false{%- endif -%}
+</div>
 <noscript>
   <img src="/img/{{ img_path }}" class="icon" alt="{{ website.name }}">
 </noscript>
 <img src="{{ page.img_placeholder }}" data-src="/img/{{ img_path }}" class="icon" alt="{{ website.name }}">
-<a href="{{ website.url }}" class="name" target="_blank">{{ website.name }}</a>
+<a href="{{ website.url }}" class="name" data-keywords="{{ website.name }}" target="_blank">{{ website.name }}</a>
 {%- include exception.html website=website -%}
 {%- if website.lang and site.data.languages[website.lang] -%}
   {%- assign progress_tweet = site.data.languages[website.lang].progress_tweet -%}
