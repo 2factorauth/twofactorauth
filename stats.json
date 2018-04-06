@@ -9,21 +9,21 @@
 {%- assign any_crypto = 0 -%}
 {%- assign pages = site.data.sections | group_by:"page" | sort:"name" -%}
 {%- assign sortedPages = pages | reverse -%}
+{%- assign page_count = sortedPages | size -%}
 { 
 	{% for tracked_page in sortedPages %} 
-	{%- assign page_count = page_count | plus: '1' -%}
 	{%- assign count_total = 0 -%}
 	{%- assign count_bch = 0 -%}
 	{%- assign count_btc = 0 -%}
 	{%- assign count_other_crypto = 0 -%}
-	{%- assign count_sections = 0 -%}
+	{%- assign count_sections = tracked_page.items | size -%}
 	{%- assign count_any_crypto = 0 -%}
 	"{{ tracked_page.name | capitalize }}": { 
 	{%- for section in tracked_page.items -%}
-		{%- assign count_sections = count_sections | plus: '1' -%}
 		{%- assign section_file = site.data[section.id] -%}
+		{%- assign section_listings = section_file.websites | size -%}
+		{%- assign count_total = count_total | plus: section_listings -%}
 		{%- for website in section_file.websites -%}
-			{%- assign count_total = count_total | plus: '1' -%}
 			{%- if website.bch or website.btc or website.othercrypto -%}
 				{%- assign count_any_crypto = count_any_crypto | plus: '1' -%}
 				{%- if website.bch -%}
