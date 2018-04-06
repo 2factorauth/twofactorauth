@@ -155,18 +155,13 @@ websites:
       img: robinhood.png
       tfa: Yes
       sms: Yes
+      software: Yes
       doc: https://support.robinhood.com/hc/en-us/articles/211546986-Two-Factor-Authentication
 
     - name: Scottrade
       url: https://www.scottrade.com/
       twitter: scottrade
       img: scottrade.png
-      tfa: No
-
-    - name: Sharebuilder
-      url: https://www.sharebuilder.com/
-      twitter: sharebuilder
-      img: sharebuilder.png
       tfa: No
 
     - name: SigFig
@@ -207,7 +202,7 @@ websites:
       sms: Yes
       phone: Yes
       hardware: Yes
-      doc: https://personal.vanguard.com/us/insights/article/security-codes-112015
+      doc: https://investornews.vanguard/sign-up-for-these-3-security-features/
 
     - name: Wealthfront
       url: https://www.wealthfront.com/

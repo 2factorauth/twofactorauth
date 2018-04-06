@@ -45,6 +45,7 @@ websites:
       url: https://discordapp.com/
       img: discord.png
       tfa: Yes
+      sms: Yes
       email: Yes
       software: Yes
       doc: https://support.discordapp.com/hc/en-us/articles/219576828
@@ -177,6 +178,14 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://help.sendloop.com/docs/securing-your-account
+
+    - name: Signal
+      url: https://www.signal.org/
+      img: signal.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://support.signal.org/hc/en-us/articles/360001842431-What-is-Registration-Lock-
 
     - name: Skype
       url: https://www.skype.com
