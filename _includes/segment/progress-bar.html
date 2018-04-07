@@ -12,6 +12,10 @@
 		{%- assign progress_text = "organizations listed accept Bitcoin Cash donations" -%}
 		{%- assign list_of = "organizations" -%}
 		{%- assign bar_color = "purple" -%}
+	{%- when "only-bch" -%}
+		{%- assign progress_text = "websites listed that accept cryptocurrency only accept Bitcoin Cash" -%}
+		{%- assign list_of = "websites" -%}
+		{%- assign bar_color = "orange" -%}
 	{%- when "cobra" -%}
 		{%- assign progress_text = "websites listed that accept Bitcoin, also accept Bitcoin Cash" -%}
 		{%- assign list_of = "websites" -%}

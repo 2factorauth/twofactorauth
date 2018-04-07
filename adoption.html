@@ -30,6 +30,23 @@ has_search: no
 	{%- for section in tracked_page.items -%}
 		{%- assign section_file = site.data[section.id] -%}
 		{%- for website in section_file.websites -%}
+			{%- if website.btc or website.othercrypto -%}
+				{%- assign count_total = count_total | plus: '1' -%}
+			{%- elsif website.bch -%}
+				{%- assign count_bch = count_bch | plus: '1' -%}
+				{%- assign count_total = count_total | plus: '1' -%}
+			{%- endif -%}
+		{%- endfor -%}
+	{%- endfor -%}
+{% endfor %}
+{% include segment/progress-bar.html value=count_bch total=count_total page="only-bch" %}
+
+{%- assign count_total = 0 -%}
+{%- assign count_bch = 0 -%}
+{% for tracked_page in pages %}
+	{%- for section in tracked_page.items -%}
+		{%- assign section_file = site.data[section.id] -%}
+		{%- for website in section_file.websites -%}
 			{%- if website.btc -%}
 				{%- assign count_total = count_total | plus: '1' -%}
 				{%- if website.bch -%}

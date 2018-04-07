@@ -4,7 +4,9 @@
 {%- assign section_count = 0 -%}
 {%- assign total = 0 -%}
 {%- assign bch = 0 -%}
+{%- assign only_bch = 0 -%}
 {%- assign btc = 0 -%}
+{%- assign cobra = 0 -%}
 {%- assign other_crypto = 0 -%}
 {%- assign any_crypto = 0 -%}
 {%- assign pages = site.data.sections | group_by:"page" | sort:"name" -%}
@@ -14,7 +16,9 @@
 	{% for tracked_page in sortedPages %} 
 	{%- assign count_total = 0 -%}
 	{%- assign count_bch = 0 -%}
+	{%- assign count_only_bch = 0 -%}
 	{%- assign count_btc = 0 -%}
+	{%- assign count_cobra = 0 -%}
 	{%- assign count_other_crypto = 0 -%}
 	{%- assign count_sections = tracked_page.items | size -%}
 	{%- assign count_any_crypto = 0 -%}
@@ -28,9 +32,15 @@
 				{%- assign count_any_crypto = count_any_crypto | plus: '1' -%}
 				{%- if website.bch -%}
 					{%- assign count_bch = count_bch | plus: '1' -%}
+					{%- unless website.btc or website.othercrypto -%}
+						{%- assign count_only_bch = count_only_bch | plus: '1' -%}
+					{% endunless %}
 				{%- endif -%}
 				{%- if website.btc -%}
 					{%- assign count_btc = count_btc | plus: '1' -%}
+					{%- if website.bch -%}
+						{%- assign count_cobra = count_cobra | plus: '1' -%}
+					{%- endif -%}
 				{%- endif -%}
 				{%- if website.othercrypto -%}
 					{%- assign count_other_crypto = count_other_crypto | plus: '1' -%}
@@ -40,13 +50,17 @@
 	{% endfor %}
 		"accepts_crypto_BCH": {{ count_bch }},
 		"accepts_crypto_BTC": {{ count_btc }},
+		"accepts_crypto_BTC_BCH": {{ count_cobra }},
 		"accepts_crypto_other": {{ count_other_crypto }},
 		"accepts_crypto_any": {{ count_any_crypto }},
+		"accepts_only_BCH": {{ count_only_bch }},
 		"sites_tracked": {{ count_total }},
 		"sections": {{ count_sections }}
 	},
 	{% assign bch = bch | plus: count_bch %}
+	{%- assign only_bch = only_bch | plus: count_only_bch -%}
 	{%- assign btc = btc | plus: count_btc -%}
+	{%- assign cobra = cobra | plus: count_cobra -%}
 	{%- assign other_crypto = other_crypto | plus: count_other_crypto -%}
 	{%- assign total = total | plus: count_total -%}
 	{%- assign any_crypto = any_crypto | plus: count_any_crypto -%}
@@ -55,8 +69,10 @@
 	"Site": {
 		"accepts_crypto_BCH": {{ bch }},
 		"accepts_crypto_BTC": {{ btc }},
+		"accepts_crypto_BTC_BCH": {{ cobra }},
 		"accepts_crypto_other": {{ other_crypto }},
 		"accepts_crypto_any": {{ any_crypto }},
+		"accepts_only_BCH": {{ only_bch }},
 		"sites_tracked": {{ total }},
 		"sections": {{ section_count }},
 		"pages_of_listings": {{ page_count }},
