@@ -34,6 +34,16 @@ websites:
       facebook: babbel.languages
       email_address: support@en.babbel.com
 
+    - name: California Institute of Technology (CalTech)
+      url: https://www.caltech.edu
+      img: caltech.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+          text: "SMS-capable phone required for initial setup."
+      doc: https://imss.caltech.edu/node/1408
+
     - name: CBT Nuggets
       url: https://www.cbtnuggets.com/
       img: cbtnuggets.png
