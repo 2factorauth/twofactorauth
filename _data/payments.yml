@@ -142,6 +142,13 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://www.skrill.com/en/support#/path/ACCOUNT/Two-Factor-Authentication/905761532/Two-Factor-Authentication-2FA.htm
+      
+    - name: SmartDebit
+      url: https://www.smartdebit.co.uk
+      img: SmartDebit-Avatar-3.png
+      tfa: Yes
+      hardware: Yes
+      doc: https://smartdebithelp.zendesk.com/hc/en-us/articles/115004478505-Yubikey-Secure-Authentication
 
     - name: Square
       url: https://squareup.com
