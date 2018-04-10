@@ -1,5 +1,6 @@
 permalink: pretty
 markdown: kramdown
+theme: jekyll-theme-hacker
 
 title: The Accept Bitcoin Cash Initiative
 author: n9jd34x04l151ho4 + topolino + kenman345
@@ -8,6 +9,10 @@ description:
 url: https://usebitcoin.cash
 repo: https://github.com/acceptbitcoincash/acceptbitcoincash
 img: img/logo.png
+sass:
+    style: compressed
+plugins:
+  - jekyll-minifier
 
 defaults:
   -
@@ -29,7 +34,6 @@ defaults:
       list_of: "merchants"
       encoded_img_placeholder: "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
       img_placeholder: "/img/placeholder.png"
-      #img_placeholder: "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
       
 exclude:
     - CNAME
@@ -47,4 +51,5 @@ exclude:
     - Dockerfile
     - websites_schema.yml
 
-theme: jekyll-theme-hacker
+jekyll-minifier:
+  compress_javascript: true         # Default: true
