@@ -48,12 +48,14 @@
 			{%- endif -%}
 		{%- endfor -%}
 	{% endfor %}
-		"accepts_crypto_BCH": {{ count_bch }},
-		"accepts_crypto_BTC": {{ count_btc }},
-		"accepts_crypto_BTC_BCH": {{ count_cobra }},
-		"accepts_crypto_other": {{ count_other_crypto }},
-		"accepts_crypto_any": {{ count_any_crypto }},
-		"accepts_only_BCH": {{ count_only_bch }},
+		"accepts": {
+			"BCH": {{ count_bch }},
+			"BCH_only": {{ count_only_bch }},
+			"BTC": {{ count_btc }},
+			"BTC_BCH": {{ count_cobra }},
+			"Altcoins": {{ count_other_crypto }},
+			"Crypto": {{ count_any_crypto }}
+		},
 		"sites_tracked": {{ count_total }},
 		"sections": {{ count_sections }}
 	},
@@ -67,12 +69,14 @@
 	{%- assign section_count = section_count | plus: count_sections -%}
 {%- endfor -%}
 	"Site": {
-		"accepts_crypto_BCH": {{ bch }},
-		"accepts_crypto_BTC": {{ btc }},
-		"accepts_crypto_BTC_BCH": {{ cobra }},
-		"accepts_crypto_other": {{ other_crypto }},
-		"accepts_crypto_any": {{ any_crypto }},
-		"accepts_only_BCH": {{ only_bch }},
+		"accepts": {
+			"BCH": {{ bch }},
+			"BCH_only": {{ only_bch }},
+			"BTC": {{ btc }},
+			"BTC_BCH": {{ cobra }},
+			"Altcoins": {{ other_crypto }},
+			"Crypto": {{ any_crypto }}
+		},
 		"sites_tracked": {{ total }},
 		"sections": {{ section_count }},
 		"pages_of_listings": {{ page_count }},
