@@ -33,60 +33,20 @@ $white-dark: #E8E8E8;
 
 $link-on-dark: #A1CDE2;
 
-div,
-.ui.table td {
-  &.positive {
-    background-color: rgba(46, 204, 64, 0.15) !important;
+// benavern/z-switch (https://github.com/benavern/z-switch)
 
-    p {
-      color: rgba(45, 135, 46, 0.91);
-    }
-  }
+// default colors
+$z-switch-off    : #FF6059;
+$z-switch-on     : #2ACB41;
+$z-switch-slider : #FEFEFE;
+$z-switch-text   : #FEFEFE;
 
-  &.negative {
-    background-color: rgba(255, 65, 54, 0.15) !important;
+// color1 alternative
+$z-switch-color1-off    : #CCCCCC;
+$z-switch-color1-on     : #03A9F4;
+$z-switch-color1-slider : #F4F4F4;
 
-    p {
-      color: rgba(195, 45, 42, 0.7);
-      margin-top: 10px;
-    }
-  }
-
-  &.progress {
-    background-color: rgba(255, 203, 27, 0.25) !important;
-
-    p {
-      color: rgba(195, 99, 27, 0.51);
-    }
-  }
-}
-
-@media(max-width: 768px) {
-  div,
-  .ui.table td {
-    &.positive {
-      background-color: rgba(170, 255, 170, 0.6) !important;
-
-      p {
-        color: rgba(45, 135, 46, 0.91);
-      }
-    }
-
-    &.negative {
-      background-color: rgba(255, 216, 214, 0.6) !important;
-
-      p {
-        color: rgba(195, 45, 42, 0.7);
-        margin-top: 10px;
-      }
-    }
-
-    &.progress {
-      background-color: rgba(254, 228, 141, 0.6) !important;
-
-      p {
-        color: rgb(195, 144, 27);
-      }
-    }
-  }
-}
+// color2 alternative
+$z-switch-color2-off    : #454846;
+$z-switch-color2-on     : #454846;
+$z-switch-color2-slider : #B4B6B5;
