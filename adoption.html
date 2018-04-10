@@ -4,6 +4,7 @@ layout: default
 id: adoption
 page_name: adoption
 has_search: no
+show_bch_only: no
 ---
 
 <div id="maingrid" class="ui container {{ page.id }}">
@@ -24,6 +25,7 @@ has_search: no
 	{% include segment/progress-bar.html value=count_bch total=count_total page=tracked_page.name %}
 {% endfor %}
 
+{%- if page.show_bch_only -%}
 {%- assign count_total = 0 -%}
 {%- assign count_bch = 0 -%}
 {% for tracked_page in pages %}
@@ -40,6 +42,7 @@ has_search: no
 	{%- endfor -%}
 {% endfor %}
 {% include segment/progress-bar.html value=count_bch total=count_total page="only-bch" %}
+{%- endif -%}
 
 {%- assign count_total = 0 -%}
 {%- assign count_bch = 0 -%}
