@@ -1,4 +1,6 @@
 ---
+layout: 'json'
+show_generated_date: false
 ---
 {%- assign page_count = 0 -%}
 {%- assign section_count = 0 -%}
@@ -11,9 +13,9 @@
 {%- assign any_crypto = 0 -%}
 {%- assign pages = site.data.sections | group_by:"page" | sort:"name" -%}
 {%- assign sortedPages = pages | reverse -%}
-{%- assign page_count = sortedPages | size -%}
-{ 
-	{% for tracked_page in sortedPages %} 
+{%- assign page_count = sortedPages | size -%} 
+{% for tracked_page in sortedPages %} 
+	"{{ tracked_page.name | capitalize }}": { 
 	{%- assign count_total = 0 -%}
 	{%- assign count_bch = 0 -%}
 	{%- assign count_only_bch = 0 -%}
@@ -21,8 +23,7 @@
 	{%- assign count_cobra = 0 -%}
 	{%- assign count_other_crypto = 0 -%}
 	{%- assign count_sections = tracked_page.items | size -%}
-	{%- assign count_any_crypto = 0 -%}
-	"{{ tracked_page.name | capitalize }}": { 
+	{%- assign count_any_crypto = 0 -%} 
 	{%- for section in tracked_page.items -%}
 		{%- assign section_file = site.data[section.id] -%}
 		{%- assign section_listings = section_file.websites | size -%}
@@ -59,7 +60,7 @@
 		"sites_tracked": {{ count_total }},
 		"sections": {{ count_sections }}
 	},
-	{% assign bch = bch | plus: count_bch %}
+	{%- assign bch = bch | plus: count_bch -%}
 	{%- assign only_bch = only_bch | plus: count_only_bch -%}
 	{%- assign btc = btc | plus: count_btc -%}
 	{%- assign cobra = cobra | plus: count_cobra -%}
@@ -67,7 +68,7 @@
 	{%- assign total = total | plus: count_total -%}
 	{%- assign any_crypto = any_crypto | plus: count_any_crypto -%}
 	{%- assign section_count = section_count | plus: count_sections -%}
-{%- endfor -%}
+{% endfor %}
 	"Site": {
 		"accepts": {
 			"BCH": {{ bch }},
@@ -82,4 +83,3 @@
 		"pages_of_listings": {{ page_count }},
 		"generated": "{{ site.time }}"
 	}
-}
