@@ -130,11 +130,11 @@ websites:
       tfa: No
 
     - name: Domeny.tv
-      url: http://www.domeny.tv/en
+      url: https://www.domeny.tv/en
       img: domenytv.png
       tfa: Yes
       software: Yes
-      doc: http://www.domeny.tv/en/two-factor-authentication
+      doc: https://www.domeny.tv/en/two-factor-authentication
 
     - name: Dyn
       url: https://dyn.com/
@@ -147,12 +147,12 @@ websites:
       doc: https://help.dyn.com/2-factor-authentication/
 
     - name: Dynadot
-      url: http://dynadot.com/
+      url: https://dynadot.com/
       img: dynadot.png
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://dynadot.com/domain/security.html
+      doc: https://dynadot.com/domain/security.html
 
     - name: easyDNS
       url: https://easydns.com
@@ -207,7 +207,7 @@ websites:
 
     - name: GoDaddy
       img: godaddy.png
-      url: http://www.godaddy.com/
+      url: https://www.godaddy.com/
       tfa: Yes
       sms: Yes
       software: Yes
@@ -239,7 +239,7 @@ websites:
 
     - name: Hover.com
       img: hover.png
-      url: http://www.hover.com/
+      url: https://www.hover.com/
       tfa: Yes
       sms: Yes
       software: Yes
@@ -261,7 +261,7 @@ websites:
       doc: https://docs.incapsula.com/Content/management-console-and-settings/account-settings.htm
 
     - name: Internet.bs
-      url: http://www.internet.bs
+      url: https://www.internet.bs
       img: internetbs.png
       tfa: Yes
       software: Yes
@@ -379,7 +379,7 @@ websites:
       tfa: No
 
     - name: Netregistry
-      url: http://www.netregistry.com.au/
+      url: https://www.netregistry.com.au/
       twitter: netregistry
       facebook: netregistry
       img: netregistry.png
@@ -400,11 +400,11 @@ websites:
       facebook: noipdns
 
     - name: Nominet
-      url: http://www.nominet.uk/
+      url: https://www.nominet.uk/
       img: nominet.png
       tfa: Yes
       software: Yes
-      doc: http://registrars.nominet.org.uk/sites/default/files/two_factor_authentication_userguide.pdf
+      doc: https://registrars.nominet.org.uk/sites/default/files/two_factor_authentication_userguide.pdf
 
     - name: NS1
       url: https://ns1.com/
