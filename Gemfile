@@ -8,6 +8,7 @@ end
 
 group :test do
   gem 'diffy'
+  gem 'diff-lcs'
   gem 'fastimage'
   gem 'html-proofer'
   gem 'kwalify'
