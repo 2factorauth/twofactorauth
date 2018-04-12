@@ -73,7 +73,7 @@ var jets = new Jets({
   },
   // Process searchable elements manually
   manualContentHandling: function(tag) {
-    return $(tag).find('.title > a.name').text();
+    return $(tag).find('.keywords').text();
   }
 });
 
