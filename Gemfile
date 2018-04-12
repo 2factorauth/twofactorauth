@@ -7,6 +7,7 @@ group :jekyll_plugins do
 end
 
 group :test do
+  gem 'diff-lcs'
   gem 'diffy'
   gem 'fastimage'
   gem 'html-proofer'
