@@ -26,6 +26,24 @@ websites:
       twitter: antagningse
       tfa: No
 
+    - name: Babbel
+      url: https://www.babbel.com
+      img: babbel.png
+      tfa: No
+      twitter: babbel
+      facebook: babbel.languages
+      email_address: support@en.babbel.com
+
+    - name: California Institute of Technology (CalTech)
+      url: https://www.caltech.edu
+      img: caltech.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+          text: "SMS-capable phone required for initial setup."
+      doc: https://imss.caltech.edu/node/1408
+
     - name: CBT Nuggets
       url: https://www.cbtnuggets.com/
       img: cbtnuggets.png
@@ -101,7 +119,7 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
-      doc: https://www.csn.se/bas/vanligaFragor.do
+      doc: https://tjanster.csn.se/bas/vanligaFragor.do
 
     - name: Duolingo
       url: https://www.duolingo.com
@@ -109,6 +127,15 @@ websites:
       twitter: duolingo
       facebook: duolingo
       tfa: No
+
+    - name: East Carolina University
+      url: https://www.ecu.edu
+      img: ecu.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://www.ecu.edu/cs-itcs/office365/multi-factor-authentication.cfm
 
     - name: EC-Council
       url: https://www.eccouncil.org
@@ -164,7 +191,7 @@ websites:
       phone: Yes
       hardware: Yes
       software: Yes
-      doc: http://huit.harvard.edu/twostep
+      doc: https://huit.harvard.edu/twostep
 
     - name: Illinois Institute Of Technology
       url: https://web.iit.edu/
@@ -182,6 +209,16 @@ websites:
       tfa: No
       twitter: ISACANews
       facebook: ISACAHQ
+
+    - name: Massachusetts Institute of Technology
+      url: https://web.mit.edu/
+      img: mit.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://kb.mit.edu/confluence/display/istcontrib/Duo+Authentication+Landing+Page
 
     - name: Montclair State University
       url: https://www.montclair.edu/employee-services/
@@ -225,6 +262,15 @@ websites:
       email_address: support@schoolsoft.se
       tfa: No
 
+    - name: Stanford University
+      url: https://www.stanford.edu/
+      img: stanford.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://uit.stanford.edu/service/webauth/twostep
+
     - name: Temple University
       url: https://www.temple.edu/
       img: templeuniversity.png
@@ -257,6 +303,16 @@ websites:
       hardware: Yes
       software: Yes
       doc: http://its.umich.edu/accounts-access/uniqnames-passwords/two-factor-authentication
+
+    - name: Virginia Commonwealth University
+      url: https://www.vcu.edu
+      img: vcu.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.ts.vcu.edu/askit/essential-computing/information-security/2factor/
 
     - name: Virginia Tech
       url: https://www.vt.edu/
