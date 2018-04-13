@@ -13,12 +13,6 @@ websites:
       software: Yes
       doc: https://dnt.abine.com/#help/faq/faq-enabletwoFactor
 
-    - name: BolehVPN
-      url: https://www.bolehvpn.net/
-      img: bolehvpn.png
-      tfa: No
-      twitter: bolehvpn
-
     - name: Boxcryptor
       url: https://www.boxcryptor.com
       img: boxcryptor.png
@@ -32,21 +26,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://docs.bugcrowd.com/v1.0/docs/two-factor-authentication-1
-
-    - name: CAcert
-      url: http://www.cacert.org/
-      img: cacert.png
-      tfa: Yes
-      hardware: Yes
-      exceptions:
-          text: "Requires X.509-capable cryptotoken or smartcard."
-
-    - name: Cobalt
-      url: https://cobalt.io/
-      img: cobalt.png
-      tfa: Yes
-      software: Yes
-      doc: https://cobalt.io/blog/new-feature-two-factor-auth/
 
     - name: CyberGhost
       url: https://www.cyberghostvpn.com
@@ -69,14 +48,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.digicert.com/two-factor-authentication.htm
-
-    - name: Dome9 Security
-      url: https://dome9.com/
-      img: dome9.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://dome9.com/overview/strong-2-factor-authentication
 
     - name: Entrust
       img: entrust.png
@@ -145,60 +116,11 @@ websites:
       tfa: No
       twitter: piacsm
 
-    - name: Pwnie Express Pwn Pulse
-      url: https://www.pwnieexpress.com/products/pulse-device-detection
-      img: pwnieexpress.png
-      tfa: Yes
-      software: Yes
-      exceptions:
-          text: "TFA can be enabled on Pwn Pulse Accounts upon customer request."
-      doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909-chapter-5-pulse-administration-user-management
-
-    - name: RBLTracker
-      url: https://rbltracker.com/
-      img: rbltracker.png
-      tfa: Yes
-      software: Yes
-      doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
-
-    - name: SSLTrust
-      url: https://www.ssltrust.com.au/
-      img: ssltrust.png
-      tfa: Yes
-      software: Yes
-      doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
-
-    - name: Threat X
-      url: https://threat-x.com/
-      img: threatx.png
-      tfa: Yes
-      software: Yes
-
-    - name: ThreatConnect
-      url: https://threatconnect.com/
-      img: threatconnect.png
-      tfa: Yes
-      software: Yes
-      doc: http://kb.threatconnect.com/customer/en/portal/articles/2214975-configuring-user-settings-and-two-factor-authentication
-
     - name: ThreatMetrix
       url: https://www.threatmetrix.com/
       img: threatmetrix.png
       tfa: No
       twitter: ThreatMetrix
-
-    - name: ThreatSim
-      url: https://login.threatsim.com
-      img: threatsim.png
-      tfa: Yes
-      sms: Yes
-
-    - name: Tinfoil Security
-      url: https://www.tinfoilsecurity.com
-      img: tinfoil.png
-      tfa: Yes
-      software: Yes
-      doc: http://support.tinfoilsecurity.com/customer/portal/articles/1559364-do-you-support-two-factor-authentication-how-do-i-set-it-up-
 
     - name: TorGuard
       url: https://torguard.net
