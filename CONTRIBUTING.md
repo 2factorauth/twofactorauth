@@ -144,7 +144,7 @@ The following is an example of a website that *supports* TFA:
       software: Yes
       phone: Yes
       hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 ```
 
 #### Adding a site that *does not* support TFA
@@ -264,8 +264,8 @@ For context, check out the discussion in issue [#242][242].
 
 [242]: https://github.com/2factorauth/twofactorauth/issues/242
 [exclude]: /EXCLUSION.md
-[bundler]: http://bundler.io/
+[bundler]: https://bundler.io/
 [gemfile]: /Gemfile
-[jekyll]: http://jekyllrb.com/
+[jekyll]: https://jekyllrb.com/
 [travis]: https://travis-ci.org/2factorauth/twofactorauth
 [yaml]: http://www.yaml.org/

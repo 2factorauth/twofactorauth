@@ -15,7 +15,7 @@ websites:
       tfa: No
 
     - name: 'Blade & Soul'
-      url: http://www.bladeandsoul.com/
+      url: https://www.bladeandsoul.com/en/
       img: bladeandsoul.png
       tfa: Yes
       software: Yes
@@ -163,7 +163,7 @@ websites:
       img: itchio.png
       tfa: Yes
       software: Yes
-      doc: http://itch.io/developers/two-factor-authentication
+      doc: https://itch.io/developers/two-factor-authentication
 
     - name: League of Legends
       url: https://leagueoflegends.com
@@ -183,7 +183,7 @@ websites:
       img: nintendo-account.png
       tfa: Yes
       software: Yes
-      doc: http://en-americas-support.nintendo.com/app/answers/detail/a_id/27496
+      doc: https://en-americas-support.nintendo.com/app/answers/detail/a_id/27496
       exceptions:
           text: "2FA not available for child accounts (users 12 years of age or younger) or supervised accounts (users 13 years of age or older attached to a parent account)."
 
@@ -249,7 +249,7 @@ websites:
       tfa: No
 
     - name: Steam
-      url: http://store.steampowered.com/
+      url: https://store.steampowered.com/
       img: steam.png
       tfa: Yes
       email: Yes
@@ -259,11 +259,11 @@ websites:
         text: "Software implementation requires use of the Steam Mobile app. Authentication on non-phone devices is not officially supported. SMS support is limited to receiving account recovery codes for password resets."
 
     - name: Tibia
-      url: http://www.tibia.com/
+      url: https://secure.tibia.com/
       img: tibia.png
       tfa: Yes
       software: Yes
-      doc: http://www.tibia.com/support/?subtopic=faq&question=authenticator
+      doc: https://secure.tibia.com/support/?subtopic=gethelp&topicid=21
 
     - name: Trion Worlds
       url: https://www.trionworlds.com/en/
@@ -278,7 +278,7 @@ websites:
       img: uplay.png
       tfa: Yes
       software: Yes
-      doc: http://forums.ubi.com/showthread.php/1463703-Secure-your-account-with-2-Step-Verification
+      doc: https://forums.ubi.com/showthread.php/1463703-Secure-your-account-with-2-Step-Verification
 
     - name: Wargaming
       url: http://wargaming.net/
@@ -301,7 +301,7 @@ websites:
       sms: Yes
       email: Yes
       software: Yes
-      doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+      doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
 
     - name: YoYo Games
       url: https://www.yoyogames.com/
@@ -309,4 +309,4 @@ websites:
       tfa: Yes
       email: Yes
       software: Yes
-      doc: http://help.yoyogames.com/hc/en-us/articles/216757288-Creating-a-YoYo-Account
+      doc: https://help.yoyogames.com/hc/en-us/articles/216757288-Creating-a-YoYo-Account
