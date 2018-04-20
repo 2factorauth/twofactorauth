@@ -1,4 +1,3 @@
-require 'html-proofer'
 require 'rubocop/rake_task'
 require 'jekyll'
 
@@ -15,6 +14,7 @@ task :build do
 end
 
 task proof: 'build' do
+  require 'html-proofer'
   HTMLProofer.check_directory(
     './_site', \
     assume_extension: true, \
@@ -26,6 +26,7 @@ task proof: 'build' do
 end
 
 task proof_external: 'build' do
+  require 'html-proofer'
   HTMLProofer.check_directory(
     './_site', \
     assume_extension: true, \
