@@ -6,7 +6,8 @@ title: The Accept Bitcoin Cash Initiative
 author: n9jd34x04l151ho4 + topolino + kenman345
 description:
     Community-curated list of sites/merchants that accept Bitcoin Cash.
-url: https://usebitcoin.cash
+url: https://AcceptBitcoin.Cash
+twitter_url: https://usebitcoin.cash
 repo: https://github.com/acceptbitcoincash/acceptbitcoincash
 img: img/logo.png
 twitter:
@@ -22,6 +23,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       # Page Variables
+      image: img/logo.png
       link_tweet: "Tweet to @TWITTERHANDLE"
       link_facebook: "Write on @FACEBOOKHANDLE's wall"
       email_subject: "Please%20consider%20accepting%20Bitcoin%20Cash%20payments"
