@@ -45,6 +45,23 @@ websites:
       software: Yes
       doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-text-messages
 
+    - name: impots.gouv.fr
+      url: https://www.impots.gouv.fr
+      img: impotsgouvfr.png
+      tfa: No
+      twitter: dgfip_officiel
+      facebook: Direction-générale-des-Finances-publiques-250996308359760
+      lang: fr
+      
+    - name: login.gov
+      url: https://login.gov/
+      img: login-gov.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://login.gov/help/privacy-and-security/how-does-logingov-protect-my-data/
+
     - name: myGov
       url: https://my.gov.au
       img: mygov.png
@@ -77,7 +94,7 @@ websites:
       facebook: CompaniesHouse
 
     - name: US Internal Revenue Service
-      url: http://www.irs.gov/Individuals/Get-Transcript
+      url: https://www.irs.gov/Individuals/Get-Transcript
       twitter: IRSnews
       img: usirs.png
       tfa: No
