@@ -5,8 +5,9 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: http://support.aha.io/hc/en-us/articles/202000957-Add-two-factor-authentication-2FA-
 
     - name: Airbrake
@@ -36,6 +37,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
       doc: https://atechmedia.com/blog/general/launches/two-factor-authentication
 
     - name: Balsamiq
@@ -57,6 +59,8 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
+      u2f: Yes
       doc: https://confluence.atlassian.com/x/425QLg
 
     - name: Bugsnag
@@ -109,6 +113,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://docs.codeclimate.com/docs/enabling-two-factor-authentication
 
     - name: Codeanywhere
@@ -188,16 +194,20 @@ websites:
       img: github.png
       tfa: Yes
       sms: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
     - name: GitLab
       url: https://gitlab.com
       img: gitlab.png
       tfa: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: Yes
       doc: https://docs.gitlab.com/ee/security/two_factor_authentication.html
 
     - name: Hashicorp Atlas
@@ -240,8 +250,9 @@ websites:
       url: https://launchpad.net
       img: launchpad.png
       tfa: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
 
     - name: Looker
@@ -256,6 +267,8 @@ websites:
       img: mapbox.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://www.mapbox.com/help/two-step-verification/
 
     - name: Metrological
@@ -353,6 +366,9 @@ websites:
       img: pythonanywhere.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: No
 
     - name: Raygun
       url: https://raygun.com
@@ -404,8 +420,10 @@ websites:
       img: sentry.png
       tfa: Yes
       sms: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: Yes
       doc: https://blog.getsentry.com/2016/06/22/introducing-2fa.html
 
     - name: SourceForge
@@ -492,4 +510,6 @@ websites:
       img: zapier.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://zapier.com/help/two-factor-authentication/

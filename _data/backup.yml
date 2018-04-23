@@ -3,6 +3,8 @@ websites:
     url: https://www.aerofs.com/
     tfa: Yes
     software: Yes
+    hardware: Yes
+    otp: Yes
     img: aerofs.png
     doc: https://support.aerofs.com/hc/en-us/articles/202610424-How-Do-I-Set-Up-Two-Factor-Authentication-
 
@@ -60,6 +62,8 @@ websites:
     sms: Yes
     software: Yes
     hardware: Yes
+    otp: Yes
+    u2f: Yes
     doc: https://www.dropbox.com/en/help/363
 
   - name: Evernote
@@ -68,6 +72,8 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
+    hardware: Yes
+    otp: Yes
     doc: https://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
 
   - name: FileThis
@@ -85,6 +91,8 @@ websites:
     phone: Yes
     software: Yes
     hardware: Yes
+    otp: Yes
+    u2f: Yes
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: hubiC
@@ -143,6 +151,8 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
+    hardware: Yes
+    otp: Yes
     doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
 
   - name: Pogoplug
@@ -158,6 +168,12 @@ websites:
     email: Yes
     software: Yes
     doc: https://www.qnap.com/i/useng/tutorial/con_show.php?op=showone&cid=151
+    
+  - name: Seafile
+    url: https://www.seafile.com/
+    twitter: seafile
+    img: seafile.png
+    tfa: No
 
   - name: SmartBox
     url: https://www.panterranetworks.com/products/smartbox.php
@@ -196,6 +212,8 @@ websites:
     tfa: Yes
     software: Yes
     email: Yes
+    hardware: Yes
+    otp: Yes
     doc: https://originwww.synology.com/en-us/knowledgebase/tutorials/615#t5
 
   - name: ThisData
@@ -214,6 +232,8 @@ websites:
     phone: Yes
     software: Yes
     email: Yes
+    hardware: Yes
+    otp: Yes
     doc: https://support.tresorit.com/entries/104192996-How-to-set-up-two-step-verification
 
   - name: Yandex.Disk
@@ -230,4 +250,6 @@ websites:
     img: zetta.png
     tfa: Yes
     software: Yes
+    hardware: Yes
+    otp: Yes
     doc: https://www.zetta.net/about/blog/how-set-zetta-two-factor-authentication/

@@ -88,6 +88,8 @@ websites:
       img: dreamhost.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: http://wiki.dreamhost.com/Enabling_Multifactor_Authentication
 
     - name: Easy
@@ -102,6 +104,8 @@ websites:
       img: fastly.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://docs.fastly.com/guides/account-management-and-security/enabling-and-disabling-two-factor-authentication
 
     - name: FS Data
@@ -132,6 +136,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
 
     - name: Hostens
       url: https://www.hostens.com/
@@ -228,6 +233,8 @@ websites:
       img: maxcdn.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://www.maxcdn.com/one/tutorial/enable-two-step-verification/
 
     - name: Media Temple
@@ -257,6 +264,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
 
     - name: Netcup
@@ -272,6 +281,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      u2f: Yes
       doc: https://server.nitrado.net/deu/news2/view/nitrado-bietet-zweifaktorauthentifizierung/?f=index/mode:0/page:2
 
     - name: Noez
@@ -311,6 +321,9 @@ websites:
       sms: Yes
       software: Yes
       hardware: Yes
+      u2f: Yes
+      otp: Yes
+      doc: http://www.ovh.com/us/about-us/security.xml#double-authentification
 
     - name: PlanetHoster
       url: https://planethoster.net
@@ -359,6 +372,8 @@ websites:
       img: speedit.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
 
     - name: Squarespace
       url: https://squarespace.com/
@@ -437,6 +452,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
       doc: https://www.vultr.com/faq/#authy
 
     - name: WebFaction
