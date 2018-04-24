@@ -46,8 +46,7 @@ jobs:
       - if [ "$NEXT_BUILD_TAG" != "latest" ]; then
           docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; 
         fi
-      - cp ./_site/js/app.js ./js/app.js
-      - cp ./_site/js/ticker.js ./js/ticker.js
+      - cp ./_site/js/main.js ./js/main.js
       deploy:
       - provider: script
         skip-cleanup: true
