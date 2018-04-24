@@ -1,6 +1,3 @@
----
----
-
 @import 'mixins';
 @import 'colors';
 
@@ -96,7 +93,7 @@ body {
   font-family: Ubuntu, Lato, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #505050;
   line-height: 22px;
-  background: url(../img/pcb-subtle-green.png) repeat;
+  background: url(/img/pcb-subtle-green.png) repeat;
 }
 
 h1, h2, h3, h4, h5, .ui.header {
@@ -1237,7 +1234,7 @@ span.progress {
 }
 
 .ui.segment.twitter-panel {
-  background: url(../img/twitter-logo-alpha-large.png) no-repeat bottom right #fff;
+  background: url(/img/twitter-logo-alpha-large.png) no-repeat bottom right #fff;
   background-size: contain;
   padding: 2rem 0;
   margin-bottom: 5rem;

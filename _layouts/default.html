@@ -17,14 +17,16 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Google Fonts should not use SRI hashes as the CSS served dynamically changes depending on browser -->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css"
-        integrity="sha384-OWA++c6zXatjdqJdL8H+05IXMubqBVwUdl1Cd9GzMwpjc9lBoy0rSYmTLtj1IDKv" crossorigin="anonymous">
+  
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css"
+		integrity="sha384-OWA++c6zXatjdqJdL8H+05IXMubqBVwUdl1Cd9GzMwpjc9lBoy0rSYmTLtj1IDKv" crossorigin="anonymous">
  
-	<link rel="stylesheet" href="/css/base.css">
-	<link rel="stylesheet" href="/css/corner.css">
   {%- if page.has_search -%}
-	<link rel="stylesheet" href="/css/z-switch.css">
+	<link rel="stylesheet" href="/css/search-style.css">
+  {%- else -%}
+	<link rel="stylesheet" href="/css/style.css">
   {%- endif -%}
 </head>
 

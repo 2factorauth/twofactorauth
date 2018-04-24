@@ -55,10 +55,95 @@ namespace :add do
   require 'safe_yaml/load'
   require 'open-uri'
   require 'kwalify'
+  require 'highline/import'
 
   desc 'adding data to the site'
 
-  task :github_listing do
+  # rubocop:disable Semicolon
+  def yesno(prompt = 'Continue?', default = true, details = nil)
+    a = ''
+    s = default ? '[Y/n]' : '[y/N]'
+    d = default ? 'y' : 'n'
+    puts details unless details.nil?
+    until %w[y n].include? a
+      a = ask("#{prompt} #{s} ") { |q| q.limit = 1; q.case = :downcase }
+      a = d if a.length.zero?
+    end
+    a == 'y'
+  end
+  # rubocop:enable Semicolon
+
+  task :test do
+    tags = tags_from_schema
+    tags.each do |tag|
+      prompt_tag(tag[0], tag[1])
+    end
+  end
+
+  def tags_from_schema
+    schema = YAML.load_file(File.join(__dir__, 'websites_schema.yml'))
+    Kwalify::Util.traverse_schema(schema) do |rule|
+      # puts rule
+      return rule['mapping'] if rule['name'] == 'Website'
+    end
+  end
+
+  task :manual do
+    listing = {}
+    loop do
+      category = value_prompt('category')
+      section_file = File.join(__dir__, "_data/#{category}.yml")
+      break if File.exist?(section_file)
+    end
+    tags = tags_from_schema
+    tags.each do |tag|
+      prompt_tag(tag[0], tag[1])
+      listing[tag[0]] = data unless data.nil?
+    end
+    puts listing
+  end
+
+  # rubocop:disable AbcSize, CyclomaticComplexity
+  def prompt_tag(name, rules)
+    output = nil
+    required = rules['required']
+    if required || yesno("Include #{name} tag?", false, rules['desc'])
+      case rules['type']
+      when 'bool'
+        output = yesno("#{name} value?", rules['default'])
+
+      when 'str'
+        output = value_prompt(name)
+
+      when 'seq'
+        output = []
+        rules['sequence'].each do |entry|
+          entry.each do |tag|
+            data = prompt_tag(tag[0], tag[1])
+            output[tag[0]] = data unless data.nil?
+          end
+        end
+
+      when 'map'
+        output = {}
+
+        rules['mapping'].each do |entry|
+          entry.each do |tag|
+            data = prompt_tag(tag[0], tag[1])
+            output[tag[0]] = data unless data.nil?
+          end
+        end
+
+      else
+        output = value_prompt(name)
+      end
+    end
+
+    output
+  end
+  # rubocop:enable AbcSize, CyclomaticComplexity
+
+  task :github do
     url = 'https://api.github.com/repos/acceptbitcoincash/acceptbitcoincash/issues/'
     url += value_prompt('issue number')
     uri = URI(url)

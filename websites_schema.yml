@@ -9,6 +9,7 @@ mapping:
           "name":
             type: str
             required: yes
+            ident: yes
             unique: yes
           "url":
             type: str

@@ -4,12 +4,14 @@ source 'https://rubygems.org'
 group :jekyll_plugins do
   gem 'github-pages'
   gem 'jekyll-minifier'
+  gem 'jekyll-seo-tag'
 end
 
 group :test do
   gem 'diff-lcs'
   gem 'diffy'
   gem 'fastimage'
+  gem 'highline'
   gem 'html-proofer'
   gem 'kwalify'
   gem 'rake'
