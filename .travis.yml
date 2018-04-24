@@ -16,7 +16,7 @@ stages:
   - name: imgbot
     if: sender IN (svenfuchs, imgbot[bot])
   - name: Run build
-    if: type = push AND (branch = master OR tag IS present)
+    if: type IN (push, cron) AND (branch = master OR tag IS present)
 jobs:
   include:
     - &test-baseline
