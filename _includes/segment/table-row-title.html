@@ -13,6 +13,11 @@
 {%- if website.country -%}&nbsp;country:{{ website.country }}{%- endif -%}
 {%- if website.state -%}&nbsp;state:{{ website.state }}{%- endif -%}
 {%- if website.city -%}&nbsp;city:{{ website.city }}{%- endif -%}
+{%- if website.keywords -%}
+{%- for keyword in website.keywords -%}
+&nbsp;{{ keyword }}
+{%- endfor -%}
+{%- endif -%}
 </div>
 <noscript>
   <img src="{{ img_path }}" class="icon" alt="{{ website.name }}" height="32" width="32">

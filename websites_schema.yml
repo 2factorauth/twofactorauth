@@ -60,3 +60,7 @@ mapping:
             type: str
           "city": 
             type: str
+          "keywords":
+            type: seq
+            sequence:
+              - type: str
