@@ -1,14 +1,16 @@
-// A comma separated list of currencies to display
-// Credit to bitcoincash.org for ticker code which uses CryptoCompare API
+/**
+ *  A comma separated list of currencies to display
+ * Credit to bitcoincash.org for ticker code which uses CryptoCompare API
+ */
 
 var ticker_currencies = "USD,EUR,JPY,CNY"
 
 ticker = function(currencies) {
   var symbols = {
-    USD: "$",
-    CNY: "¥",
-    JPY: "¥",
-    EUR: "€"
+    USD: "&#36;",
+    CNY: "&#165;",
+    JPY: "&#165;",
+    EUR: "&#8364;"
   }
   
   $.ajax({

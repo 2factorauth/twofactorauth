@@ -16,7 +16,7 @@ stages:
   - name: imgbot
     if: sender IN (svenfuchs, imgbot[bot])
   - name: Run build
-    if: type = push AND (branch = master OR tag IS present)
+    if: type IN (push, cron) AND (branch = master OR tag IS present)
 jobs:
   include:
     - &test-baseline
@@ -38,7 +38,7 @@ jobs:
       env: 
         NEXT_BUILD_TAG=latest
       script:
-      - if [ "$TRAVIS_TAG" != "" ]; then 
+      - if [ "$TRAVIS_TAG" != "" ] || [ "$TRAVIS_EVENT_TYPE" == "cron"]; then 
           NEXT_BUILD_TAG=`date +"%m-%d-%Y"`;
         fi
       - echo ".git" > .dockerignore
@@ -46,8 +46,8 @@ jobs:
       - if [ "$NEXT_BUILD_TAG" != "latest" ]; then
           docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; 
         fi
-      - cp ./_site/js/app.js ./js/app.js
-      - cp ./_site/js/ticker.js ./js/ticker.js
+      - cp ./_site/js/main.js ./js/main.js
+      - rm -rf ./_site/assets
       deploy:
       - provider: script
         skip-cleanup: true
@@ -55,7 +55,7 @@ jobs:
         # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push acceptbitcoincash/acceptbitcoincash
           docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; docker push acceptbitcoincash/acceptbitcoincash
         on: 
-          tags: true
+          condition: $NEXT_BUILD_TAG != "latest"
       - provider: pages
         skip-cleanup: true
         github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure

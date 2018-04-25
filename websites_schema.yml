@@ -9,6 +9,7 @@ mapping:
           "name":
             type: str
             required: yes
+            ident: yes
             unique: yes
           "url":
             type: str
@@ -60,3 +61,8 @@ mapping:
             type: str
           "city": 
             type: str
+          "keywords":
+            type: seq
+            desc: Use this tag to add in any keywords people might use to find this result
+            sequence:
+              - type: str

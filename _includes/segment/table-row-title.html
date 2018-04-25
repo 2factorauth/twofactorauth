@@ -13,6 +13,11 @@
 {%- if website.country -%}&nbsp;country:{{ website.country }}{%- endif -%}
 {%- if website.state -%}&nbsp;state:{{ website.state }}{%- endif -%}
 {%- if website.city -%}&nbsp;city:{{ website.city }}{%- endif -%}
+{%- if website.keywords -%}
+{%- for keyword in website.keywords -%}
+&nbsp;{{ keyword }}
+{%- endfor -%}
+{%- endif -%}
 </div>
 <noscript>
   <img src="{{ img_path }}" class="icon" alt="{{ website.name }}" height="32" width="32">
@@ -46,7 +51,7 @@
   {%- if include.type == 'mobile' -%}
   <p>IN PROGRESS!</p>
   <div>
-	<a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress_mobile}}</a>
+	<a class="ui twitter mini button" href="https://twitter.com/share?url={{site.twitter_url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress_mobile}}</a>
   </div>
   {%- else -%}
     <div class="progress-info">
@@ -56,6 +61,6 @@
     </div>
 	</td>
     <td class="twitter progress" colspan="4">
-	  <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="top center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress}}</a>
+	  <a data-tooltip="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" data-position="top center" data-inverted="" class="ui twitter mini button" href="https://twitter.com/share?url={{site.twitter_url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter big icon"></i> {{page.link_progress}}</a>
   {%- endif -%}
 {%- endif -%}

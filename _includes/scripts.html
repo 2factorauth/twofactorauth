@@ -5,14 +5,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"
         integrity="sha384-PSPYZ405uwFeU9YdtB0IByYECMwUIEGlSjmq1V7MD1zJLZ2VEw+8ko9hcpILlAjZ"
         crossorigin="anonymous"></script>
-<script src="/js/jquery.unveil.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.13.0/jets.min.js"
         integrity="sha384-3XpZKO/6IouOQmpAvQxLkXEb/pwxGCYqUo139/l6M12U3HmeWnna/qKWIgIJTLPV"
         crossorigin="anonymous"></script>
 <!-- AB.C JS -->
-<script src="/js/ticker.js"></script>
-<script src="/js/fixto.min.js"></script>
-<script src="/js/app.js"></script>
+<script src="/js/main.js"></script>
 
 {% if page.id == "adult-listings" %}
 <!-- Adult section warning modal -->
@@ -38,11 +35,14 @@
 {% endif %}
 
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107218359-1"></script>
+{% if site.google_analytics %}
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
+	(function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
+	;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
+	;c.parentNode.insertBefore(a,c)
+	})(window,document,"galite","script","https://cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js");
 
-  gtag('config', 'UA-107218359-1');
+	galite('create', '{{ site.google_analytics }}', 'auto');
+	galite('send', 'pageview');
 </script>
+{% endif %}
