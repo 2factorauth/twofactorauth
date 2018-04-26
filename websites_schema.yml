@@ -1,33 +1,41 @@
 type: map
+class: Section
 mapping:
   "websites":
     type: seq
     sequence:
       - type: map
+        class: Site
         name: Website
         mapping:
           "name":
             type: str
+            desc: Name of site
             required: yes
             ident: yes
             unique: yes
           "url":
             type: str
+            desc: URL of site, must be in HTTP or HTTPS format
             pattern: /^(https?:\/\/)([\da-zA-Z0-9\.-]+)\.([a-zA-Z0-9\.]{2,8})([\/\w \.-]*)*\/?.*$/
             required: yes
             unique: yes
           "img":
             type: str
+            desc: Name for image file. Image should be 32x32px and end in .png
             pattern: /\.png$/i
           "bch":
             type: bool
             required: yes
+            desc: Do the accept BCH?
             pattern: /(true|false)/
           "btc":
             type: bool
+            desc: Do the accept BTC?
             pattern: /(true|false)/
           "othercrypto":
             type: bool
+            desc: Do the accept Other Crypto?
             pattern: /(true|false)/
           "exceptions":
             type: map
@@ -55,6 +63,7 @@ mapping:
           "region":
             type: str
             pattern: /(\w){2}$/
+            # enum: [af, na, oc, an, as, eu, sa]
           "country":
             type: str
             pattern: /(\w){2}$/

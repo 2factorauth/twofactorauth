@@ -59,6 +59,85 @@ namespace :add do
 
   desc 'adding data to the site'
 
+  task :manual do
+    listing = {}
+    site = {}
+    section_file = ''
+    loop do
+      category = value_prompt('category')
+      section_file = File.join(__dir__, "_data/#{category}.yml")
+      break if File.exist?(section_file)
+    end
+    tags_from_schema['mapping'].each do |index|
+      data = prompt_tag(index[0], index[1])
+      site[index[0]] = data unless data.nil?
+    end
+    listing['websites'] = [site]
+    loop do
+      errors = validate_revision(listing)
+      break if errors.count.zero?
+      extract_paths(errors).each do |path|
+        puts "#{path} failed validation, please provide a new value"
+        site[path] = value_prompt(path)
+      end
+      listing['websites'] = [site]
+    end
+
+    section = SafeYAML.load_file(section_file)
+    websites = section['websites']
+
+    if valid_to_ins(websites, site['name'])
+      websites[websites.count] = site
+      puts websites.count
+      section['websites'] = websites.sort_by { |s| s['name'].downcase }
+      if valid_revision(section)
+        File.write(section_file, YAML.dump(section))
+      else
+        puts 'Invalid entry, try changing the data before trying again.'
+      end
+      puts 'error' unless valid_revision(listing)
+      puts listing.to_yaml
+    else
+      puts 'Duplicate of entry, update functionality not yet available'
+    end
+  end
+
+  task :github do
+    url = 'https://api.github.com/repos/acceptbitcoincash/acceptbitcoincash/issues/'
+    url += value_prompt('issue number')
+    uri = URI(url)
+    puts 'pulling issue from repository'
+    issue = Net::HTTP.get(uri)
+    issue = JSON.parse(issue)
+    category = get_category(issue['labels'])
+    request = SafeYAML.load(extract_issue_yml(issue['body']))[0]
+
+    section_file = File.join(__dir__, "_data/#{category}.yml")
+    section = SafeYAML.load_file(section_file)
+    websites = section['websites']
+
+    if valid_to_ins(websites, request['name'])
+      if request['img'].nil?
+        request['img'] = value_prompt('image name')
+      elsif request['img'].include? 'http'
+        puts "Download the image from #{request['img']}"
+        request['img'] = value_prompt('image name')
+      end
+      puts "Be sure you saved the logo to img/#{category}/#{request['img']}"
+
+      websites[websites.count] = request
+      puts websites.count
+      section['websites'] = websites.sort_by { |s| s['name'].downcase }
+      if valid_revision(section)
+        File.write(section_file, YAML.dump(section))
+      else
+        puts 'Invalid entry, try changing the data before trying again.'
+      end
+    else
+      puts 'Duplicate of entry, update functionality not yet available'
+    end
+  end
+
   # rubocop:disable Semicolon
   def yesno(prompt = 'Continue?', default = true, details = nil)
     a = ''
@@ -73,62 +152,11 @@ namespace :add do
   end
   # rubocop:enable Semicolon
 
-  task :test do
-    listing = {}
-    site = {}
-    tags_from_schema['mapping'].each do |index|
-      data = prompt_tag(index[0], index[1])
-      site[index[0]] = data unless data.nil?
-    end
-    listing['websites'] = [site]
-    puts 'error' unless valid_revision(listing)
-
-    puts listing.to_yaml
-  end
-
   def tags_from_schema
     schema = YAML.load_file(File.join(__dir__, 'websites_schema.yml'))
     Kwalify::Util.traverse_schema(schema) do |rule|
       return rule if rule['name'] == 'Website'
     end
-  end
-
-  task :manual do
-    listing = {}
-    site = {}
-    section_file = ''
-    loop do
-      category = value_prompt('category')
-      section_file = File.join(__dir__, "_data/#{category}.yml")
-      break if File.exist?(section_file)
-    end
-    tags_from_schema['mapping'].each do |index|
-      data = prompt_tag(index[0], index[1])
-      site[index[0]] = data unless data.nil?
-    end
-    # add loop to validate this data and request fixes for bad data.
-    listing['websites'] = [site]
-    loop do
-      errors = validate_revision(listing)
-      break if errors.count.zero?
-      extract_paths(errors).each do |path|
-        site[path] = value_prompt(path)
-      end
-      listing['websites'] = [site]
-    end
-
-    section = SafeYAML.load_file(section_file)
-    websites = section['websites']
-    websites[websites.count] = site
-    puts websites.count
-    section['websites'] = websites.sort_by { |s| s['name'].downcase }
-    if valid_revision(section)
-      File.write(section_file, YAML.dump(section))
-    else
-      puts 'Invalid entry, try changing the data before trying again.'
-    end
-    puts 'error' unless valid_revision(listing)
-    puts listing.to_yaml
   end
 
   def extract_paths(errors)
@@ -186,42 +214,6 @@ namespace :add do
     output
   end
   # rubocop:enable AbcSize, CyclomaticComplexity, PerceivedComplexity
-
-  task :github do
-    url = 'https://api.github.com/repos/acceptbitcoincash/acceptbitcoincash/issues/'
-    url += value_prompt('issue number')
-    uri = URI(url)
-    puts 'pulling issue from repository'
-    issue = Net::HTTP.get(uri)
-    issue = JSON.parse(issue)
-    category = get_category(issue['labels'])
-    request = SafeYAML.load(extract_issue_yml(issue['body']))[0]
-
-    section_file = File.join(__dir__, "_data/#{category}.yml")
-    section = SafeYAML.load_file(section_file)
-    websites = section['websites']
-
-    if valid_to_ins(websites, request['name'])
-      if request['img'].nil?
-        request['img'] = value_prompt('image name')
-      elsif request['img'].include? 'http'
-        puts "Download the image from #{request['img']}"
-        request['img'] = value_prompt('image name')
-      end
-      puts "Be sure you saved the logo to img/#{category}/#{request['img']}"
-
-      websites[websites.count] = request
-      puts websites.count
-      section['websites'] = websites.sort_by { |s| s['name'].downcase }
-      if valid_revision(section)
-        File.write(section_file, YAML.dump(section))
-      else
-        puts 'Invalid entry, try changing the data before trying again.'
-      end
-    else
-      puts 'Duplicate of entry, update functionality not yet available'
-    end
-  end
 
   def valid_to_ins(websites, name)
     websites.each do |site|
