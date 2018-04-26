@@ -44,8 +44,9 @@ websites:
     - name: Bitdomain.BIZ
       url: http://www3.bitdomain.biz/
       img: bitdomain.png
-      bch: No
+      bch: Yes
       btc: Yes
+      othercrypto: Yes
       email_address: customersupport@bitdomain.biz
       twitter: BitcoinDomain
 
@@ -189,9 +190,13 @@ websites:
     - name: FreeDNS
       url: https://freedns.afraid.org/
       img: freedns.png
-      bch: No
+      othercrypto: No
+      bch: Yes
       btc: Yes
       email_address: dnsadmin@afraid.org
+      doc: https://freedns.afraid.org/pricing/?ls=1
+      exceptions:
+        text: "Use the docs link to pay, the site is a bit confusing with older payment links"
 
     - name: Gandi
       url: https://gandi.net
@@ -466,9 +471,12 @@ websites:
       url: https://porkbun.com
       img: porkbunBuns.png
       bch: No
-      btc: Yes
+      btc: No
       twitter: PorkbunLLC
       facebook: Porkbun-1626180577611026
+      exceptions:
+        text: "Porkbun used to accept BTC, but as of 2018-04-26 stopped accepting it"
+      doc: https://porkbun.com/support/payment_options
 
     - name: Rebel.ca
       url: https://www.rebel.ca
@@ -480,7 +488,7 @@ websites:
     - name: Register4Less
       url: https://register4less.com/
       img: register4less.png
-      bch: No
+      bch: Yes
       btc: Yes
       twitter: Register4Less
       facebook: Register4Less

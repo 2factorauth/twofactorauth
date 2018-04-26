@@ -53,14 +53,19 @@ websites:
       twitter: Braintree
       url: https://www.braintreepayments.com/
       bch: No
-      btc: Yes
+      btc: No
+      doc: https://www.braintreepayments.com/blog/coinbase-private-beta/
+      exceptions:
+        text: "Update (6/2017): We chose to deprecate Braintree's Coinbase integration due to resources required for the maintenance of the integration outstripping our ability to support it."
 
     - name: Buycraft
       url: http://buycraft.net
       img: buycraft.png
       twitter: Buycraft
       bch: No
-      btc: Yes
+      btc: No
+      exceptions:
+        text: "Buycraft used to accept BTC, but as of 2018-04-26 stopped accepting it"
 
     - name: Cleverbridge
       url: https://www.cleverbridge.com

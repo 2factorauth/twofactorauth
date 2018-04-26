@@ -143,9 +143,11 @@ websites:
       img: easy.png
       twitter: easygr
       facebook: easygr
-      bch: No
+      bch: Yes
       btc: Yes
+      othercrypto: Yes
       lang: el
+      doc: https://easy.gr/el/payment-methods
 
     - name: Fastly
       url: https://www.fastly.com
@@ -291,7 +293,7 @@ websites:
       url: https://iniz.com
       img: iniz.png
       bch: No
-      btc: Yes
+      btc: No
       othercrypto: No
       email_address: sales@iniz.com
 

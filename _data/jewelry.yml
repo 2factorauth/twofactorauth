@@ -99,9 +99,11 @@ websites:
     img: jmbullion.png
     twitter: JMBullion
     facebook: JMBullion
-    bch: No
+    bch: Yes
     btc: Yes
     othercrypto: No
+    exceptions:
+      text: "Bitcoin / Bitcoin Cash is approved for orders between $100.00 and $250,000.00. All BTC / BCH Orders Receive a 3% Discount Relative to Credit Card/PayPal Pricing"
 
   - name: Kobelli Jewelry
     url: https://www.kobelli.com/
