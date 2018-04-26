@@ -189,9 +189,13 @@ websites:
     - name: FreeDNS
       url: https://freedns.afraid.org/
       img: freedns.png
-      bch: No
+      othercrypto: No
+      bch: Yes
       btc: Yes
       email_address: dnsadmin@afraid.org
+      doc: https://freedns.afraid.org/pricing/?ls=1
+      exceptions:
+        text: "Use the docs link to pay, the site is a bit confusing with older payment links"
 
     - name: Gandi
       url: https://gandi.net
