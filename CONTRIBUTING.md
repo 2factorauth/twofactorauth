@@ -113,8 +113,7 @@ View the complete list in the [EXCLUSION.md file][exclude].
 
 We have two means of adding a new category:
 
-### 1
-To add a new category, modify the `sections` value in [sections.yml](_data/sections.yml)
+### 1) To add a new category, modify the `sections` value in [sections.yml](_data/sections.yml)
 and follow the template below:
 
 ```yml
@@ -127,10 +126,11 @@ and follow the template below:
 Then create a new file in the `_data` directory with the same name as your section's
 id, using the `.yml` extension.
 
-### 2
-
-Follow the following steps:
-1) From the command line, run `bundle exec rake add:category` and hit Enter. 
+### 2) Follow the following steps:
+1) From the command line, run:
+   ```bash
+   $ bundle exec rake add:category
+   ```
 2) Answer ALL the questions it asks
 
 When you are finished, it will add in the new category to the [sections.yml](_data/sections.yml) file and create a new file in the following format: `[[section id]].yml` in the `_data` folder for you to add listings to.
