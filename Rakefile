@@ -193,7 +193,7 @@ namespace :add do
   # rubocop:enable Semicolon
 
   def tags_from_schema(schema_file, class_name)
-    schema = YAML.load_file(File.join(__dir__, schema_file))
+    schema = SafeYAML.load_file(File.join(__dir__, schema_file))
     Kwalify::Util.traverse_schema(schema) do |rule|
       return rule if rule['class'] == class_name
     end
