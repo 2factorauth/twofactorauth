@@ -1,11 +1,11 @@
 type: map
-class: Section
+class: websites
 mapping:
   "websites":
     type: seq
     sequence:
       - type: map
-        class: Site
+        class: site
         name: Website
         mapping:
           "name":

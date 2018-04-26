@@ -63,8 +63,10 @@ namespace :add do
     category_file = File.join(__dir__, '_data/sections.yml')
     categories = SafeYAML.load_file(category_file)
     new_section = {}
-    %w[id title icon page].each do |tag|
-      new_section[tag] = value_prompt(tag)
+    tags = tags_from_schema('sections_schema.yml', 'category')
+    tags['mapping'].each do |tag|
+      data = prompt_tag(tag[0], tag[1])
+      new_section[tag[0]] = data unless data.nil?
     end
     if valid_to_ins(categories, new_section, 'id')
       categories[categories.count] = new_section
@@ -94,7 +96,8 @@ namespace :add do
     listing = {}
     site = {}
     section_file = prompt_category
-    tags_from_schema['mapping'].each do |index|
+    tags = tags_from_schema('websites_schema.yml', 'site')
+    tags['mapping'].each do |index|
       data = prompt_tag(index[0], index[1])
       site[index[0]] = data unless data.nil?
     end
@@ -189,10 +192,10 @@ namespace :add do
   end
   # rubocop:enable Semicolon
 
-  def tags_from_schema
-    schema = YAML.load_file(File.join(__dir__, 'websites_schema.yml'))
+  def tags_from_schema(schema_file, class_name)
+    schema = YAML.load_file(File.join(__dir__, schema_file))
     Kwalify::Util.traverse_schema(schema) do |rule|
-      return rule if rule['name'] == 'Website'
+      return rule if rule['class'] == class_name
     end
   end
 

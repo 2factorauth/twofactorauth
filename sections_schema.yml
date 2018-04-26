@@ -1,0 +1,22 @@
+type: seq
+sequence:
+  - type: map
+    class: category
+    name: category
+    mapping:
+      "id":
+        type: str
+        desc: Name of Category
+        required: yes
+        ident: yes
+        unique: yes
+      "title":
+        type: str
+        required: yes
+      "icon":
+        type: str
+        required: yes
+      "page":
+        type: str
+        required: yes
+        enum: [home, adult, donations]
