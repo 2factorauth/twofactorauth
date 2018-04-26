@@ -74,74 +74,118 @@ namespace :add do
   # rubocop:enable Semicolon
 
   task :test do
-    tags = tags_from_schema
-    tags.each do |tag|
-      prompt_tag(tag[0], tag[1])
+    listing = {}
+    site = {}
+    tags_from_schema['mapping'].each do |index|
+      data = prompt_tag(index[0], index[1])
+      site[index[0]] = data unless data.nil?
     end
+    listing['websites'] = [site]
+    puts 'error' unless valid_revision(listing)
+
+    puts listing.to_yaml
   end
 
   def tags_from_schema
     schema = YAML.load_file(File.join(__dir__, 'websites_schema.yml'))
     Kwalify::Util.traverse_schema(schema) do |rule|
-      # puts rule
-      return rule['mapping'] if rule['name'] == 'Website'
+      return rule if rule['name'] == 'Website'
     end
   end
 
   task :manual do
     listing = {}
+    site = {}
+    section_file = ''
     loop do
       category = value_prompt('category')
       section_file = File.join(__dir__, "_data/#{category}.yml")
       break if File.exist?(section_file)
     end
-    tags = tags_from_schema
-    tags.each do |tag|
-      prompt_tag(tag[0], tag[1])
-      listing[tag[0]] = data unless data.nil?
+    tags_from_schema['mapping'].each do |index|
+      data = prompt_tag(index[0], index[1])
+      site[index[0]] = data unless data.nil?
     end
-    puts listing
+    # add loop to validate this data and request fixes for bad data.
+    listing['websites'] = [site]
+    loop do
+      errors = validate_revision(listing)
+      break if errors.count.zero?
+      extract_paths(errors).each do |path|
+        site[path] = value_prompt(path)
+      end
+      listing['websites'] = [site]
+    end
+
+    section = SafeYAML.load_file(section_file)
+    websites = section['websites']
+    websites[websites.count] = site
+    puts websites.count
+    section['websites'] = websites.sort_by { |s| s['name'].downcase }
+    if valid_revision(section)
+      File.write(section_file, YAML.dump(section))
+    else
+      puts 'Invalid entry, try changing the data before trying again.'
+    end
+    puts 'error' unless valid_revision(listing)
+    puts listing.to_yaml
   end
 
-  # rubocop:disable AbcSize, CyclomaticComplexity
-  def prompt_tag(name, rules)
-    output = nil
-    required = rules['required']
-    if required || yesno("Include #{name} tag?", false, rules['desc'])
-      case rules['type']
-      when 'bool'
-        output = yesno("#{name} value?", rules['default'])
+  def extract_paths(errors)
+    paths = []
+    errors.each do |e|
+      paths << e.path.split('/')[3]
+    end
 
-      when 'str'
-        output = value_prompt(name)
+    paths
+  end
+
+  # rubocop:disable AbcSize, CyclomaticComplexity, PerceivedComplexity
+  def prompt_tag(column, rule)
+    output = nil
+    puts '--------------------------------'
+    req = (rule['required'] || false)
+    if req || yesno("Include #{column} tag?", false, (rule['desc'] || nil))
+      rule_type = (rule['type'] || 'str')
+      case rule_type
 
       when 'seq'
-        output = []
-        rules['sequence'].each do |entry|
-          entry.each do |tag|
-            data = prompt_tag(tag[0], tag[1])
-            output[tag[0]] = data unless data.nil?
-          end
+        seq = []
+        # Add loop around this to ask if we should add one after this first one
+        rule['sequence'].each do |e|
+          data = if e.length < 2 || !e[1] || e[1].empty?
+                   value_prompt("#{column} entry")
+                 else
+                   prompt_tag(e[0], e[1])
+                 end
+          seq << data unless data.nil?
         end
-
+        output = seq unless seq.empty?
       when 'map'
-        output = {}
+        map = {}
 
-        rules['mapping'].each do |entry|
-          entry.each do |tag|
-            data = prompt_tag(tag[0], tag[1])
-            output[tag[0]] = data unless data.nil?
-          end
+        # Add loop around this to ask if we should add one after this first one
+        rule['mapping'].each do |e|
+          data = if e.length < 2 || !e[1] || e[1].empty?
+                   value_prompt("#{column} entry")
+                 else
+                   prompt_tag(e[0], e[1])
+                 end
+          map[column] = data unless data.nil?
         end
+        output = map unless map.empty?
+
+      when 'bool'
+        output = yesno("#{column} value?", rule['default'])
 
       else
-        output = value_prompt(name)
+        output = value_prompt(column)
       end
     end
 
     output
   end
-  # rubocop:enable AbcSize, CyclomaticComplexity
+  # rubocop:enable AbcSize, CyclomaticComplexity, PerceivedComplexity
 
   task :github do
     url = 'https://api.github.com/repos/acceptbitcoincash/acceptbitcoincash/issues/'
@@ -187,10 +231,17 @@ namespace :add do
     true
   end
 
-  def valid_revision(data)
+  def validate_revision(data)
     schema = YAML.load_file(File.join(__dir__, 'websites_schema.yml'))
     validator = Kwalify::Validator.new(schema)
     errors = validator.validate(data)
+
+    errors
+  end
+
+  def valid_revision(data)
+    errors = validate_revision(data)
+
     errors.count.zero?
   end
 
@@ -237,6 +288,7 @@ namespace :docker do
   task :build do
     puts 'Generating static files for nginx'
     puts `bundle exec jekyll build`
+    rm_rf './_site/assets' # remove this if we move where our CSS live
     puts 'Building acceptbitcoincash docker image'
     puts `docker build -t acceptbitcoincash/acceptbitcoincash .`
   end
