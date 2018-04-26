@@ -274,7 +274,7 @@ namespace :add do
   end
 
   def validate_revision(data)
-    schema = YAML.load_file(File.join(__dir__, 'websites_schema.yml'))
+    schema = SafeYAML.load_file(File.join(__dir__, 'websites_schema.yml'))
     validator = Kwalify::Validator.new(schema)
     errors = validator.validate(data)
 

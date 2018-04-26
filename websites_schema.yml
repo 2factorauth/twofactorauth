@@ -76,3 +76,4 @@ mapping:
             desc: Use this tag to add in any keywords people might use to find this result
             sequence:
               - type: str
+                unique: yes

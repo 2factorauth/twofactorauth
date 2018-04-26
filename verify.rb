@@ -2,6 +2,7 @@ require 'yaml'
 require 'fastimage'
 require 'kwalify'
 require 'diffy'
+require 'safe_yaml/load'
 @output = 0
 @allowed_output = 0
 @total_tracked = 0
@@ -54,30 +55,12 @@ end
 # rubocop:disable MethodLength
 def process_section(section, validator)
   section_file = "_data/#{section['id']}.yml"
-  data = YAML.load_file(File.join(__dir__, section_file))
+  data = SafeYAML.load_file(File.join(__dir__, section_file))
   websites = data['websites']
-  errors = validator.validate(data)
-
-  errors.each do |e|
-    msg = ''
-    if e.message.include? " is already used at '/websites/"
-      err_split = e.message.split('already used at')[1].split('/')
-      msg = "\nThese listings share the same "\
-            "'#{err_split[3].split('\'')[0]}':"\
-            "\n#{websites.at(err_split[2].to_i).to_yaml}"\
-            "#{websites.at(e.path.split('/')[2].to_i).to_yaml}\n"
-    end
-
-    error("#{section_file}:#{websites.at(e.path.split('/')[2].to_i)['name']}"\
-          ": #{e.message}#{msg}")
-  end
+  validate_data(validator, data, section_file, 'name', websites)
 
   # Check section alphabetization
-  if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
-    error("#{section_file} not ordered by name. Correct order:" \
-          "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
-                                 context: 10).to_s(:color))
-  end
+  validate_alphabetical(websites, 'name', section_file)
 
   # Collect list of all images for section
   imgs = Dir["img/#{section['id']}/*"]
@@ -98,31 +81,73 @@ def process_section(section, validator)
     error("#{img} is not used")
   end
 end
-# rubocop:enable AbcSize,MethodLength
+# rubocop:enable MethodLength
+
+def validate_data(validator, data, file, identifier, subset = nil)
+  val = 2
+  if subset.nil?
+    subset = data if subset.nil?
+    val -= 1
+  end
+
+  validator.validate(data).each do |e|
+    msg = parse_error_msg(e, val, subset)
+    error("#{file}:#{subset.at(e.path.split('/')[val].to_i)[identifier]}"\
+          ": #{e.message}#{msg}")
+  end
+end
+
+def parse_error_msg(error, val, subset)
+  msg = ''
+  if error.message.include? " is already used at '/"
+    err_split = error.message.split('already used at')[1].split('/')
+    return "\nThese listings share the same "\
+          "'#{err_split[val + 1].split('\'')[0]}':"\
+          "\n#{subset.at(err_split[val].to_i).to_yaml}"\
+          "#{subset.at(error.path.split('/')[val].to_i).to_yaml}\n"
+  end
+
+  msg
+end
+# rubocop:enable AbcSize
+
+def validate_schema(parser, schema)
+  parser.parse_file(File.join(__dir__, schema))
+  errors = parser.errors()
+  return unless errors && !errors.empty?
+  errors.each do |e|
+    error(e.message.to_s)
+  end
+end
+
+def validate_alphabetical(set, identifier, set_name)
+  return unless set != (set_sort = set.sort_by { |s| s[identifier].downcase })
+  error("#{set_name} not ordered by #{identifier}. Correct order:" \
+        "\n" + Diffy::Diff.new(set.to_yaml, set_sort.to_yaml, \
+                               context: 10).to_s(:color))
+end
 
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
 begin
-  sections = YAML.load_file('_data/sections.yml')
-
-  # Check sections.yml alphabetization
-  error("#{path} is not alphabetized by name") \
-    if sections != (sections.sort_by { |section| section['id'].downcase })
-
   # meta validator
   metavalidator = Kwalify::MetaValidator.instance
 
   # validate schema definition
   parser = Kwalify::Yaml::Parser.new(metavalidator)
-  parser.parse_file(File.join(__dir__, 'websites_schema.yml'))
-  errors = parser.errors()
-  if errors && !errors.empty?
-    errors.each do |e|
-      error(e.message.to_s)
-    end
+  Dir['*_schema.yml'].each do |schema|
+    validate_schema(parser, schema)
   end
 
-  schema = YAML.load_file(File.join(__dir__, 'websites_schema.yml'))
+  file_name = '_data/sections.yml'
+  sections = SafeYAML.load_file(file_name)
+  schema = SafeYAML.load_file(File.join(__dir__, 'sections_schema.yml'))
+  validator = Kwalify::Validator.new(schema)
+  validate_data(validator, sections, file_name, 'id')
+
+  validate_alphabetical(sections, 'id', file_name)
+
+  schema = SafeYAML.load_file(File.join(__dir__, 'websites_schema.yml'))
   validator = Kwalify::Validator.new(schema)
 
   sections.each do |section|
