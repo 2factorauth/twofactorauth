@@ -48,6 +48,7 @@ mapping:
             pattern: /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
           "status":
             type: str
+            desc: This should only be on a listing if its in the process of implementing BCH support but removed once it has completed. This is always a URL to the status of that effort.
             pattern: /^(https?:\/\/)([\da-zA-Z0-9\.-]+)\.([a-zA-Z0-9\.]{2,8})([\/\w \.-]*)*\/?.*$/
           "lang":
             type: str

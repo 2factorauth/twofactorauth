@@ -47,7 +47,6 @@ jobs:
           docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; 
         fi
       - cp ./_site/js/main.js ./js/main.js
-      - rm -rf ./_site/assets
       deploy:
       - provider: script
         skip-cleanup: true

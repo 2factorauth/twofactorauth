@@ -60,4 +60,4 @@ exclude:
 
 jekyll-minifier:
   compress_javascript: true         # Default: true
-  exclude: ['data.json', 'stats.json'] # Keeping these files sexy guys
+  exclude: ['data.json', 'stats.json', 'robots.txt'] # Keeping these files sexy guys
