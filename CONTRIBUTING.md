@@ -30,6 +30,8 @@ We offer two easy ways to submit a new site to be listed.
 - `othercrypto` -- Accepting Other Crypto (yes/no)
 - `doc` -- Documentation/Help Guides (URL)
 - _(Optional)_ `exceptions/text` Exceptions/General Notes
+- _(Optional)_ `lang` -- two letter abbreviation of language the site uses if not `en`
+- _(Optional)_ `keywords/-` -- words that can be useful for users that are trying to search for something that relates to this listing.
 
 For 2-letter _country_ codes, use [ISO_3166-1_alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) codes.
 
@@ -109,6 +111,9 @@ View the complete list in the [EXCLUSION.md file][exclude].
 
 ## New Categories
 
+We have two means of adding a new category:
+
+### 1
 To add a new category, modify the `sections` value in [sections.yml](_data/sections.yml)
 and follow the template below:
 
@@ -116,10 +121,19 @@ and follow the template below:
 - id: category-id
   title: Category Name
   icon: icon-class
+  page: page the category shall belong to
 ```
 
 Then create a new file in the `_data` directory with the same name as your section's
 id, using the `.yml` extension.
+
+### 2
+
+Follow the following steps:
+1) From the command line, run `bundle exec rake add:category` and hit Enter. 
+2) Answer ALL the questions it asks
+
+When you are finished, it will add in the new category to the [sections.yml](_data/sections.yml) file and create a new file in the following format: `[[section id]].yml` in the `_data` folder for you to add listings to.
 
 ## New Sites
 
@@ -145,8 +159,7 @@ websites:
 ```
 
 The fields `name:`, `url:`, `bch:` are required for all entries.
-If the site supports Bitcoin (Legacy) or other cryptocurrencies, `btc` and `othercrypto` should be
-entered as well.
+If the site supports Bitcoin (Legacy) or other cryptocurrencies, `btc` and `othercrypto` should be entered as well.
 
 #### Adding a site that *supports* BCH
 
@@ -165,6 +178,9 @@ The following is an example of a website that *supports* BCH:
       btc: No
       othercrypto: Yes
       doc: https://rocketr.net/blog/2017/07/30/bitcoin-cash-coming-rocketr/
+      keywords:
+        - shops
+        - payments
 ```
 
 #### Adding a site that *does not* support BCH
@@ -218,27 +234,21 @@ website. There are 4 ways to customize how it is displayed:
       bch: Yes
       btc: No
       exceptions:
-          text: "Specific text goes here."
+        text: "Specific text goes here."
       doc: <link to site BCH documentation>
    ```
 
 ### Pro Tips
 
-- You can use a <a href="https://codebeautify.org/yaml-validator" target="_blank">YAML validator</a>
-  to ensure that you've used the correct syntax.
+- You can use a <a href="https://codebeautify.org/yaml-validator" target="_blank">YAML validator</a> to ensure that you've used the correct syntax.
 
-- See Guideline #2 about icons. The png file should go in the corresponding
-  `img/section` folder.
+- See Guideline #2 about icons. The png file should go in the corresponding `img/section` folder.
 
-- For the sake of organization and readability, it is appreciated if you insert
-  new sites alphabetically and that your site chunk follows the same order as the
-  example above.
+- For the sake of organization and readability, it is appreciated if you insert new sites alphabetically and that your site chunk follows the same order as the example above.
 
-- If a site supports BCH, their Twitter and Facebook handles as well as their email address
-  are not needed and can be left out for cleanliness.
+- If a site supports BCH, their Twitter and Facebook handles as well as their email address are not needed and can be left out for cleanliness.
 
-- If a site does not yet support BCH but there is documentation that they are adding
-  it, then use:
+- If a site does not yet support BCH but there is documentation that they are adding it, then use:
 
   ```yml
   status: <url to documentation>

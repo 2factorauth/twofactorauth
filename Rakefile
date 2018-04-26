@@ -59,15 +59,41 @@ namespace :add do
 
   desc 'adding data to the site'
 
+  task :category do
+    category_file = File.join(__dir__, '_data/sections.yml')
+    categories = SafeYAML.load_file(category_file)
+    new_section = {}
+    %w[id title icon page].each do |tag|
+      new_section[tag] = value_prompt(tag)
+    end
+    if valid_to_ins(categories, new_section, 'id')
+      categories[categories.count] = new_section
+      puts categories.count
+      categories = categories.sort_by { |s| s['id'].downcase }
+
+      default_yaml = {}
+      default_yaml['websites'] = nil
+      new_file = File.join(__dir__, "_data/#{new_section['id']}.yml")
+
+      File.write(category_file, YAML.dump(categories))
+      File.write(new_file, YAML.dump(default_yaml))
+    end
+  end
+
+  task :keywords do
+    section_file = prompt_category
+    section = SafeYAML.load_file(section_file)
+    websites = section['websites']
+    site = extract_value(websites, 'name')
+    site.each_with_index do |value, index|
+      puts "#{index}: #{value}"
+    end
+  end
+
   task :manual do
     listing = {}
     site = {}
-    section_file = ''
-    loop do
-      category = value_prompt('category')
-      section_file = File.join(__dir__, "_data/#{category}.yml")
-      break if File.exist?(section_file)
-    end
+    section_file = prompt_category
     tags_from_schema['mapping'].each do |index|
       data = prompt_tag(index[0], index[1])
       site[index[0]] = data unless data.nil?
@@ -86,7 +112,7 @@ namespace :add do
     section = SafeYAML.load_file(section_file)
     websites = section['websites']
 
-    if valid_to_ins(websites, site['name'])
+    if valid_to_ins(websites, site, 'name')
       websites[websites.count] = site
       puts websites.count
       section['websites'] = websites.sort_by { |s| s['name'].downcase }
@@ -116,7 +142,7 @@ namespace :add do
     section = SafeYAML.load_file(section_file)
     websites = section['websites']
 
-    if valid_to_ins(websites, request['name'])
+    if valid_to_ins(websites, request, 'name')
       if request['img'].nil?
         request['img'] = value_prompt('image name')
       elsif request['img'].include? 'http'
@@ -138,6 +164,17 @@ namespace :add do
     end
   end
 
+  def prompt_category
+    section_file = ''
+    loop do
+      category = value_prompt('category')
+      section_file = File.join(__dir__, "_data/#{category}.yml")
+      break if File.exist?(section_file)
+    end
+
+    section_file
+  end
+
   # rubocop:disable Semicolon
   def yesno(prompt = 'Continue?', default = true, details = nil)
     a = ''
@@ -157,6 +194,15 @@ namespace :add do
     Kwalify::Util.traverse_schema(schema) do |rule|
       return rule if rule['name'] == 'Website'
     end
+  end
+
+  def extract_value(set, attr)
+    ret = []
+    set.each do |s|
+      ret << s[attr]
+    end
+
+    ret
   end
 
   def extract_paths(errors)
@@ -215,9 +261,10 @@ namespace :add do
   end
   # rubocop:enable AbcSize, CyclomaticComplexity, PerceivedComplexity
 
-  def valid_to_ins(websites, name)
-    websites.each do |site|
-      return false if site['name'] == name
+  def valid_to_ins(list, new_entry, identifier)
+    id = new_entry[identifier]
+    list.each do |entry|
+      return false if entry[identifier] == id
     end
 
     true
