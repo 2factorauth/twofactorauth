@@ -466,9 +466,12 @@ websites:
       url: https://porkbun.com
       img: porkbunBuns.png
       bch: No
-      btc: Yes
+      btc: No
       twitter: PorkbunLLC
       facebook: Porkbun-1626180577611026
+      exceptions:
+        text: "Porkbun used to accept BTC, but as of 2018-04-26 stopped accepting it"
+      doc: https://porkbun.com/support/payment_options
 
     - name: Rebel.ca
       url: https://www.rebel.ca
