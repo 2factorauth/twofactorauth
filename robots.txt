@@ -4,4 +4,4 @@
 {%- if site.GH_ENV == 'gh_pages' -%}/{%- endif -%}
 {%- endcapture -%}
 User-agent: *
-Disallow: {{disallow_val}}
+Disallow: {{ disallow_val }}
