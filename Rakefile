@@ -47,7 +47,7 @@ def check_site(options = {})
     assume_extension: true,
     check_favicon: true,
     check_opengraph: true,
-    file_ignore: ['./google75bd212ec246ba4f.html'],
+    file_ignore: ['./_site/google75bd212ec246ba4f.html'],
     url_ignore: ['/add', 'https://fonts.gstatic.com/'],
     cache: { timeframe: '1w' }
   }
