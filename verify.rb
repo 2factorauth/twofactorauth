@@ -121,10 +121,9 @@ def validate_schema(parser, schema)
 end
 
 def validate_alphabetical(set, identifier, set_name)
-  return unless set != (set_sort = set.sort_by { |s| s[identifier].downcase })
-  error("#{set_name} not ordered by #{identifier}. Correct order:" \
-        "\n" + Diffy::Diff.new(set.to_yaml, set_sort.to_yaml, \
-                               context: 10).to_s(:color))
+  return unless set != (sorted = set.sort_by { |s| s[identifier].downcase })
+  msg = Diffy::Diff.new(set.to_yaml, sorted.to_yaml, context: 10).to_s(:color)
+  error("#{set_name} not ordered by #{identifier}. Correct order:#{msg}")
 end
 
 # Load each section, check for errors such as invalid syntax

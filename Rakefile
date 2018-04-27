@@ -115,19 +115,16 @@ namespace :add do
     section = SafeYAML.load_file(section_file)
     websites = section['websites']
 
-    if valid_to_ins(websites, site, 'name')
-      websites[websites.count] = site
-      puts websites.count
-      section['websites'] = websites.sort_by { |s| s['name'].downcase }
-      if valid_revision(section)
-        File.write(section_file, YAML.dump(section))
-      else
-        puts 'Invalid entry, try changing the data before trying again.'
-      end
-      puts 'error' unless valid_revision(listing)
-      puts listing.to_yaml
-    else
+    unless valid_to_ins(websites, site, 'name')
       puts 'Duplicate of entry, update functionality not yet available'
+      return
+    end
+
+    section['websites'] = add_and_sort(websites, site, 'name')
+    if valid_revision(section)
+      File.write(section_file, YAML.dump(section))
+    else
+      puts 'Invalid entry, try changing the data before trying again.'
     end
   end
 
@@ -145,26 +142,33 @@ namespace :add do
     section = SafeYAML.load_file(section_file)
     websites = section['websites']
 
-    if valid_to_ins(websites, request, 'name')
-      if request['img'].nil?
-        request['img'] = value_prompt('image name')
-      elsif request['img'].include? 'http'
-        puts "Download the image from #{request['img']}"
-        request['img'] = value_prompt('image name')
-      end
-      puts "Be sure you saved the logo to img/#{category}/#{request['img']}"
-
-      websites[websites.count] = request
-      puts websites.count
-      section['websites'] = websites.sort_by { |s| s['name'].downcase }
-      if valid_revision(section)
-        File.write(section_file, YAML.dump(section))
-      else
-        puts 'Invalid entry, try changing the data before trying again.'
-      end
-    else
+    unless valid_to_ins(websites, request, 'name')
       puts 'Duplicate of entry, update functionality not yet available'
+      return
     end
+
+    if request['img'].nil?
+      request['img'] = value_prompt('image name')
+    elsif request['img'].include? 'http'
+      puts "Download the image from #{request['img']}"
+      request['img'] = value_prompt('image name')
+    end
+    puts "Be sure you saved the logo to img/#{category}/#{request['img']}"
+
+    section['websites'] = add_and_sort(websites, request, 'name')
+    if valid_revision(section)
+      File.write(section_file, YAML.dump(section))
+    else
+      puts 'Invalid entry, try changing the data before trying again.'
+    end
+  end
+
+  def add_and_sort(list, new_entry, identifier)
+    list[list.count] = new_entry
+    puts "Entry count now #{list.count}"
+    sorted = list.sort_by { |s| s[identifier].downcase }
+
+    sorted
   end
 
   def prompt_category
