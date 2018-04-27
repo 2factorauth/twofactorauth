@@ -40,6 +40,7 @@ end
 
 RuboCop::RakeTask.new
 
+# rubocop:disable MethodLength
 def check_site(options = {})
   require 'html-proofer'
 
@@ -48,12 +49,13 @@ def check_site(options = {})
     assume_extension: true,
     check_favicon: true,
     check_opengraph: true,
-    file_ignore: [ dir + '/google75bd212ec246ba4f.html'],
+    file_ignore: ["#{dir}/google75bd212ec246ba4f.html"],
     url_ignore: ['/add', 'https://fonts.gstatic.com/'],
     cache: { timeframe: '1w' }
   }
   HTMLProofer.check_directory(dir, defaults.merge(options)).run
 end
+# rubocop:enable MethodLength
 
 def jekyll_site_dir
   dir = './_site'
