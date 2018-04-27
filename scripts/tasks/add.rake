@@ -108,7 +108,7 @@ namespace :add do
     category = ''
     loop do
       category = value_prompt('category')
-      section_file = File.join(__dir__, "_data/#{category}.yml")
+      section_file = File.join(base_dir, "_data/#{category}.yml")
       break if File.exist?(section_file)
     end
 
@@ -141,7 +141,7 @@ namespace :add do
   end
 
   def tags_from_schema(schema_file, class_name)
-    schema = SafeYAML.load_file(File.join(__dir__, schema_file))
+    schema = SafeYAML.load_file(File.join(base_dir, schema_file))
     Kwalify::Util.traverse_schema(schema) do |rule|
       return rule if rule['class'] == class_name
     end
@@ -170,17 +170,17 @@ namespace :add do
     base_yaml = {}
     base_yaml['websites'] = nil
     write_yaml(category, base_yaml) \
-      unless File.exist?(File.join(__dir__, "_data/#{category}.yml"))
+      unless File.exist?(File.join(base_dir, "_data/#{category}.yml"))
   end
 
   def read_yaml(set_name, subset = nil)
-    data = SafeYAML.load_file(File.join(__dir__, "_data/#{set_name}.yml"))
+    data = SafeYAML.load_file(File.join(base_dir, "_data/#{set_name}.yml"))
     return data, data[subset] unless subset.nil?
     data
   end
 
   def write_yaml(set_name, set_data)
-    new_file = File.join(__dir__, "_data/#{set_name}.yml")
+    new_file = File.join(base_dir, "_data/#{set_name}.yml")
     File.write(new_file, YAML.dump(set_data))
   end
 
@@ -241,7 +241,7 @@ namespace :add do
   end
 
   def validate_revision(data)
-    schema = SafeYAML.load_file(File.join(__dir__, 'websites_schema.yml'))
+    schema = SafeYAML.load_file(File.join(base_dir, 'websites_schema.yml'))
     validator = Kwalify::Validator.new(schema)
     errors = validator.validate(data)
 

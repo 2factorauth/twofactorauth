@@ -59,3 +59,7 @@ def jekyll_site_dir
   end
   dir
 end
+
+def base_dir
+  __dir__
+end
