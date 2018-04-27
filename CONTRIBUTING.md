@@ -111,7 +111,7 @@ View the complete list in the [EXCLUSION.md file][exclude].
 
 ## New Categories
 
-We have two means of adding a new category:
+When adding a new category, you will need to select an icon from the [SemanticUI Icon set](https://semantic-ui.com/elements/icon.html). Once you have identified the icon to use, you can use any of the following means to add a new category:
 
 ### 1) To add a new category, modify the `sections` value in [sections.yml](_data/sections.yml)
 and follow the template below:
@@ -133,7 +133,7 @@ id, using the `.yml` extension.
    ```
 2) Answer ALL the questions it asks
 
-When you are finished, it will add in the new category to the [sections.yml](_data/sections.yml) file and create a new file in the following format: `[[section id]].yml` in the `_data` folder for you to add listings to.
+When you are finished, it will add in the new category to the [sections.yml](_data/sections.yml) file and create a new file in the following format: `[<section id>].yml` in the `_data` folder for you to add listings to.
 
 ## New Sites
 
@@ -241,6 +241,12 @@ website. There are 4 ways to customize how it is displayed:
 ### Pro Tips
 
 - You can use a <a href="https://codebeautify.org/yaml-validator" target="_blank">YAML validator</a> to ensure that you've used the correct syntax.
+
+- To validate a submission before committing the change you can run the following script to verify your work is done properly:
+
+   ```bash
+   $ bundle exec rake verify
+   ```
 
 - See Guideline #2 about icons. The png file should go in the corresponding `img/section` folder.
 
