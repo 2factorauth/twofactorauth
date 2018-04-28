@@ -138,6 +138,17 @@ websites:
   othercrypto: true
   twitter: thevpncompany
   facebook: www.hide.me
+- name: InterSSL
+  url: https://www.interssl.com/
+  img: interssl.png
+  btc: true
+  bch: true
+  othercrypto: true
+  twitter: interssl
+  facebook: interssl
+  keywords:
+  - bitpay
+  - bip70
 - name: IPVanish
   url: https://www.ipvanish.com
   img: ipvanish.png
@@ -269,9 +280,14 @@ websites:
 - name: SSLTrust
   url: https://www.ssltrust.com.au/
   img: ssltrust.png
-  bch: false
-  twitter: ssltrust
+  btc: true
+  bch: true
+  othercrypto: true
+  twitter: SSLTrust
   facebook: ssltrust
+  doc: https://twitter.com/SSLTrust/status/925511573673783296
+  keywords:
+  - coinpayments.net
 - name: The Keyois Capsule
   url: https://keyois.com/
   img: keyois.png

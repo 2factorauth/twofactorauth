@@ -39,6 +39,30 @@ websites:
       btc: Yes
       othercrypto: No
 
+    - name: East African Center
+      url: https://www.eastafricancenter.org/
+      img: eac.png
+      twitter: eackenya
+      facebook: eackenya
+      bch: Yes
+      btc: Yes
+      othercrypto: Yes
+      keywords:
+      - coinbase
+      
+    - name: GNOME Foundation
+      url: https://www.gnome.org/
+      img: gnome.png
+      twitter: gnome
+      facebook: GNOMEDesktop
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      doc: https://www.gnome.org/support-gnome/donate/
+      keywords:
+      - bitpay
+      - bip70
+
     - name: Growing Veterans
       url: https://growingveterans.org/
       img: growingveterans.png
@@ -68,6 +92,17 @@ websites:
       btc: Yes
       othercrypto: No
       doc: https://nutritionfacts.org/donate/
+
+    - name: OpenBSD Foundation
+      url: https://www.openbsdfoundation.org/
+      img: openbsd.png
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      doc: https://www.openbsdfoundation.org/donations.html
+      keywords:
+      - bitpay
+      - bip70
 
     - name: The Bitcoin Cash Fund
       url: https://www.thebitcoincash.fund/
