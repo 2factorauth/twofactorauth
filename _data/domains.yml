@@ -49,6 +49,8 @@ websites:
       othercrypto: Yes
       email_address: customersupport@bitdomain.biz
       twitter: BitcoinDomain
+      keywords:
+      - coinpayments.net
 
     - name: Cloudflare
       url: https://cloudflare.com
@@ -197,6 +199,9 @@ websites:
       doc: https://freedns.afraid.org/pricing/?ls=1
       exceptions:
         text: "Use the docs link to pay, the site is a bit confusing with older payment links"
+      keywords:
+      - bitpay
+      - bip70
 
     - name: Gandi
       url: https://gandi.net
@@ -483,6 +488,9 @@ websites:
       btc: Yes
       twitter: Register4Less
       facebook: Register4Less
+      keywords:
+      - bitpay
+      - bip70
 
     - name: Registro.br
       url: https://registro.br
