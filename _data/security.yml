@@ -138,6 +138,29 @@ websites:
   othercrypto: true
   twitter: thevpncompany
   facebook: www.hide.me
+- name: ibVPN
+  url: https://www.ibvpn.com/
+  img: ibvpn.png
+  twitter: ibvpn
+  facebook: ibVPN
+  btc: true
+  bch: true
+  othercrypto: true
+  keywords:
+  - bitpay
+  - bip70
+  - coinpayments.net
+- name: InterSSL
+  url: https://www.interssl.com/
+  img: interssl.png
+  btc: true
+  bch: true
+  othercrypto: true
+  twitter: interssl
+  facebook: interssl
+  keywords:
+  - bitpay
+  - bip70
 - name: IPVanish
   url: https://www.ipvanish.com
   img: ipvanish.png
@@ -145,6 +168,27 @@ websites:
   btc: false
   twitter: ipvanish
   facebook: ipvanish
+- name: IronSocket
+  url: https://ironsocket.com/
+  img: ironsocket.png
+  twitter: ironsocket
+  facebook: ironsocket
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: IVPN
+  url: https://www.ivpn.net/
+  img: ivpn.png
+  twitter: ivpnnet
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
 - name: Mullvad VPN
   url: https://mullvad.net/
   twitter: mullvadnet
@@ -251,6 +295,18 @@ websites:
   btc: true
   twitter: shadeyou_vpn
   facebook: shadeyouvpn
+- name: Shellfire
+  url: https://www.shellfire.de/
+  img: shellfire.png
+  twitter: shellfire_de
+  facebook: shellfire.de
+  email_address: hosting@shellfire.de
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
 - name: SigaVPN
   region: na
   country: us
@@ -269,9 +325,14 @@ websites:
 - name: SSLTrust
   url: https://www.ssltrust.com.au/
   img: ssltrust.png
-  bch: false
-  twitter: ssltrust
+  btc: true
+  bch: true
+  othercrypto: true
+  twitter: SSLTrust
   facebook: ssltrust
+  doc: https://twitter.com/SSLTrust/status/925511573673783296
+  keywords:
+  - coinpayments.net
 - name: The Keyois Capsule
   url: https://keyois.com/
   img: keyois.png
