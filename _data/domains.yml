@@ -54,6 +54,8 @@ websites:
       img: cloudflare.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
     - name: ClouDNS
@@ -61,6 +63,9 @@ websites:
       img: cloudns.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: No
       doc: https://www.cloudns.net/wiki/article/201/
 
     - name: Crazy Domains
@@ -76,6 +81,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
       doc: https://directnic.com/knowledge/article/137:how+do+i+set+up+two-factor+authentication%3F
 
     - name: DNS Made Easy
@@ -83,6 +89,8 @@ websites:
       img: dnsmadeeasy.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: http://help.dnsmadeeasy.com/managed-dns/administrative/enable-two-factor-authentication/
 
     - name: DNSimple
@@ -90,6 +98,8 @@ websites:
       img: dnsimple.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
 
     - name: Domain.com
@@ -153,6 +163,8 @@ websites:
       tfa: Yes
       sms: Yes
       email: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://fusion.easydns.com/Knowledgebase/Article/View/347/0/account-security
 
     - name: eNom
@@ -196,7 +208,9 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://doc.gandi.net/en/organization/users/security
+      otp: Yes
+      u2f: Yes
+      doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
 
     - name: GoDaddy
       img: godaddy.png
@@ -204,6 +218,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://www.godaddy.com/help/enable-two-step-verification-7502
 
     - name: Google Domains
@@ -258,6 +274,8 @@ websites:
       img: internetbs.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: /notes/internetbs/
 
     - name: INWX
@@ -340,6 +358,8 @@ websites:
       img: namesilo.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://www.namesilo.com/Support/2~Factor-Authentication
 
     - name: NamesPro.ca
@@ -454,6 +474,8 @@ websites:
       img: register4less.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: http://blog.register4less.com/?p=43
 
     - name: Registro.br
@@ -484,6 +506,8 @@ websites:
       img: uniregistry.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://uniregistry.help/my-account-en/what-is-two-step-verification/
 
     - name: United Domains USA
