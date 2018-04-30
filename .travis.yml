@@ -38,7 +38,10 @@ jobs:
       env: 
         NEXT_BUILD_TAG=latest
       script:
-      - if [ "$TRAVIS_TAG" != "" ] || [ "$TRAVIS_EVENT_TYPE" == "cron" ]; then 
+      - if [ "$TRAVIS_TAG" != "" ]; then 
+          NEXT_BUILD_TAG=`date +"%m-%d-%Y"`;
+        fi
+      - if [ "$TRAVIS_EVENT_TYPE" == "cron" ]; then 
           NEXT_BUILD_TAG=`date +"%m-%d-%Y"`;
         fi
       - echo ".git" > .dockerignore
