@@ -9,6 +9,12 @@ websites:
   btc: true
   othercrypto: true
   doc: https://twitter.com/ALFAtopme/status/965512505471721472
+- name: AP Seller
+  url: https://apseller.com/intl/
+  img: apseller.png
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
 - name: Bit2Me
   url: https://bit2me.com
   img: bit2me.png
@@ -334,6 +340,17 @@ websites:
   facebook: LocalBitcoinsCom
   twitter: LocalBitcoins
   email_address: support@localbitcoins.com
+- name: NetflixGutschein
+  url: http://netflixgutschein.de/
+  img: netflixgutschein.png
+  email_address: info@korsit.com
+  bch: true
+  btc: true
+  othercrypto: false
+  lang: de
+  keywords:
+  - bitpay
+  - bip70
 - name: Open Bazaar
   url: https://www.openbazaar.org/
   img: openbazaar.png
@@ -423,3 +440,11 @@ websites:
   doc: https://blog.xapo.com/xapo-bitcoincash-bch-update/
   exceptions:
     text: Xapo has enabled Bitcoin Cash withdrawal but does not yet offer full support.
+- name: ZuPago
+  url: https://zupago.pe/
+  twitter: zupago
+  facebook: zupago
+  img: zupago.png
+  bch: yes
+  btc: yes
+  othercrypto: no
