@@ -1,6 +1,7 @@
 Rake.add_rakelib 'scripts/tasks'
 require 'rubocop/rake_task'
 require 'jekyll'
+require 'safe_yaml/load'
 
 task default: %w[verify rubocop proof]
 task external: %w[verify rubocop proof_external]
@@ -59,7 +60,7 @@ end
 def jekyll_site_dir
   dir = './_site'
   if File.exist?('_config.yml')
-    config = YAML.load_file('_config.yml')
+    config = SafeYAML.load_file('_config.yml')
     dir = config['destination'] || dir
   end
   dir
