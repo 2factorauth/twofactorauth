@@ -53,12 +53,21 @@ websites:
           text: "SMS-capable phone and a non-Comcast.net email required for 2FA."
       doc: https://www.xfinity.com/support/account/enroll-2-step-verification/
 
+    - name: ComEd
+      url: https://www.comed.com/
+      twitter: ComEd
+      facebook: ComEd
+      img: comed.png
+      tfa: No
+
     - name: Con Edison
       url: https://www.coned.com/
-      twitter: ConEdison
-      facebook: ConEdison
       img: coned.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://www.coned.com/en/accounts-billing/new-my-account-faqs
 
     - name: Cox
       url: https://www.cox.com/
@@ -68,7 +77,7 @@ websites:
       tfa: No
 
     - name: DIRECTV
-      url: http://www.directv.com/
+      url: https://www.directv.com/
       twitter: DIRECTVService
       facebook: directv
       img: directv.png
@@ -163,6 +172,13 @@ websites:
       tfa: No
       lang: hr
 
+    - name: Nicor Gas
+      url: https://www.nicorgas.com/
+      twitter: Nicor_Gas
+      facebook: NicorGas
+      img: nicorgas.png
+      tfa: No
+
     - name: Optus
       url: http://www.optus.com.au/
       twitter: Optus
@@ -230,6 +246,14 @@ websites:
       img: sdge.png
       tfa: No
 
+    - name: sipgate
+      url: https://www.sipgate.de/
+      twitter: sipgateDE
+      facebook: sipgate
+      img: sipgate.png
+      tfa: No
+      lang: de
+
     - name: Sonic
       url: https://www.sonic.com/
       img: sonic.png
@@ -238,6 +262,14 @@ websites:
       software: Yes
       phone: Yes
       doc: https://wiki.sonic.net/wiki/2-Step_Verification
+
+    - name: Sosh
+      url: https://www.sosh.fr
+      twitter: Sosh_fr
+      facebook: sosh
+      img: sosh.png
+      tfa: No
+      lang: fr
 
     - name: Southern California Edison
       url: https://www.sce.com/
@@ -255,10 +287,10 @@ websites:
 
     - name: T-Mobile
       url: https://www.t-mobile.com/
-      twitter: TMobileHelp
-      facebook: TMobile
       img: tmobile.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://support.t-mobile.com/docs/DOC-2727
 
     - name: Telia (Sweden)
       url: https://www.telia.se/
@@ -290,6 +322,14 @@ websites:
       img: three.png
       tfa: No
 
+    - name: TIM
+      url: https://www.tim.it/
+      twitter: tim_official
+      facebook: TimOfficialPage
+      img: tim.png
+      tfa: No
+      lang: it
+
     - name: Time Warner Cable
       url: https://www.timewarnercable.com/
       twitter: TWC_Help
@@ -306,7 +346,7 @@ websites:
       doc: https://help.ting.com/hc/en-us/articles/209351258-Two-Factor-Authentication
 
     - name: Verizon
-      url: http://www.verizon.com/
+      url: https://www.verizon.com/
       twitter: VerizonSupport
       facebook: verizon
       img: verizon.png

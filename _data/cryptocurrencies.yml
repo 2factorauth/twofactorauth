@@ -34,6 +34,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
       doc: https://support.bitfinex.com/hc/en-us/sections/203192029-Security
 
     - name: BitGo
@@ -59,13 +60,6 @@ websites:
       software: Yes
       doc: https://bitpay.com/two-factor
 
-    - name: Bitsewa
-      url: https://www.bitsewa.com
-      img: bitsewa.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.bitsewa.com/terms.php#2fa
-
     - name: Bitstamp
       url: https://bitstamp.net
       img: bitstamp.png
@@ -88,7 +82,7 @@ websites:
       email: Yes
       software: Yes
       hardware: Yes
-      doc: https://blockchain.info/wallet/support-pages
+      doc: https://support.blockchain.com/hc/en-us/articles/211164103-Enable-2-Step-Verification-2FA-
 
     - name: BTCJam
       url: https://btcjam.com/
@@ -153,6 +147,13 @@ websites:
       hardware: Yes
       doc: https://www.coinfloor.co.uk/security
 
+    - name: CoinGate
+      url: https://coingate.com
+      img: coingate.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.coingate.com/en/65/how-do-i-set-up-2-factor-authentication-2fa-on-my-account
+
     - name: Coinify (Merchants)
       url: https://coinify.com/merchants
       img: coinify.png
@@ -191,6 +192,13 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+
+    - name: LiteBit
+      url: https://www.litebit.eu/
+      img: litebit.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.litebit.eu/hc/en-us/articles/115000953504-What-is-Two-Factor-Authentication-2FA-How-to-
 
     - name: LocalBitcoins
       url: https://localbitcoins.com/
@@ -236,4 +244,4 @@ websites:
       sms: Yes
       phone: Yes
       software: Yes
-      doc: https://support.xapo.com/how-do-i-enable-second-factor-authentication/view=faq
+      doc: https://support.xapo.com/how-do-i-enable-disable-the-second-factor-authentication/view=faq
