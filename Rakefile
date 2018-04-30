@@ -1,4 +1,3 @@
-require 'html-proofer'
 require 'rubocop/rake_task'
 require 'jekyll'
 
@@ -14,22 +13,16 @@ task :build do
 end
 
 task proof: 'build' do
-  HTMLProofer.check_directory(
-    './_site', \
-    assume_extension: true, \
-    check_html: true, \
+  check_site(
     disable_external: true
-  ).run
+  )
 end
 
 task proof_external: 'build' do
-  HTMLProofer.check_directory(
-    './_site', \
-    assume_extension: true, \
-    check_html: true, \
-    cache: { timeframe: '1w' }, \
+  check_site(
+    cache: { timeframe: '1w' },
     hydra: { max_concurrency: 12 }
-  ).run
+  )
 end
 
 task :verify do
@@ -37,3 +30,13 @@ task :verify do
 end
 
 RuboCop::RakeTask.new
+
+def check_site(options = {})
+  require 'html-proofer'
+  dir = './_site'
+  defaults = {
+    assume_extension: true,
+    check_html: true
+  }
+  HTMLProofer.check_directory(dir, defaults.merge(options)).run
+end
