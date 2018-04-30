@@ -143,14 +143,14 @@ begin
     validate_schema(parser, schema)
   end
 
+  validator = get_validator('sections_schema.yml')
+
   file_name = '_data/sections.yml'
   sections = SafeYAML.load_file(file_name)
-  validator = get_validator( 'sections_schema.yml')
   validate_data(validator, sections, file_name, 'id')
-
   validate_alphabetical(sections, 'id', file_name)
 
-  validator = get_validator( 'websites_schema.yml')
+  validator = get_validator('websites_schema.yml')
 
   sections.each do |section|
     process_section(section, validator)
