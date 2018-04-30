@@ -11,6 +11,7 @@ twitter_url: https://usebitcoin.cash
 repo: https://github.com/acceptbitcoincash/acceptbitcoincash
 img: img/logo.png
 google_analytics: UA-107218359-1
+lang: en-US
 twitter:
   username: useBitcoinCash
 sass:
@@ -56,8 +57,9 @@ exclude:
     - nginx.conf
     - scripts
     - Dockerfile
+    - sections_schema.yml
     - websites_schema.yml
 
 jekyll-minifier:
   compress_javascript: true         # Default: true
-  exclude: ['data.json', 'stats.json'] # Keeping these files sexy guys
+  exclude: ['data.json', 'stats.json', 'robots.txt'] # Keeping these files sexy guys

@@ -1,33 +1,41 @@
 type: map
+class: websites
 mapping:
   "websites":
     type: seq
     sequence:
       - type: map
+        class: site
         name: Website
         mapping:
           "name":
             type: str
+            desc: Name of site
             required: yes
             ident: yes
             unique: yes
           "url":
             type: str
+            desc: URL of site, must be in HTTP or HTTPS format
             pattern: /^(https?:\/\/)([\da-zA-Z0-9\.-]+)\.([a-zA-Z0-9\.]{2,8})([\/\w \.-]*)*\/?.*$/
             required: yes
             unique: yes
           "img":
             type: str
+            desc: Name for image file. Image should be 32x32px and end in .png
             pattern: /\.png$/i
           "bch":
             type: bool
             required: yes
+            desc: Do they accept BCH?
             pattern: /(true|false)/
           "btc":
             type: bool
+            desc: Do they accept BTC?
             pattern: /(true|false)/
           "othercrypto":
             type: bool
+            desc: Do they accept Other Crypto?
             pattern: /(true|false)/
           "exceptions":
             type: map
@@ -48,12 +56,14 @@ mapping:
             pattern: /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
           "status":
             type: str
+            desc: This should only be on a listing if it is in the process of implementing BCH support but removed once it has completed. This is always a URL to the status of that effort.
             pattern: /^(https?:\/\/)([\da-zA-Z0-9\.-]+)\.([a-zA-Z0-9\.]{2,8})([\/\w \.-]*)*\/?.*$/
           "lang":
             type: str
           "region":
             type: str
             pattern: /(\w){2}$/
+            # enum: [af, na, oc, an, as, eu, sa]
           "country":
             type: str
             pattern: /(\w){2}$/
@@ -66,3 +76,4 @@ mapping:
             desc: Use this tag to add in any keywords people might use to find this result
             sequence:
               - type: str
+                unique: yes

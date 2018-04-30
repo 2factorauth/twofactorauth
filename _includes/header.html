@@ -1,4 +1,4 @@
-<a href="{{ site.repo }}" class="github-corner">
+<a href="{{ site.repo }}" class="github-corner" aria-label="Github Link">
   <svg width="80" height="80" viewBox="0 0 250 250">
     <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
     <path
@@ -10,7 +10,7 @@
   </svg>
 </a>
 
-<div id="top-header" class="ui center aligned icon header {{ page.id }}">
+<div id="top-header" role="banner" class="ui center aligned icon header {{ page.id }}">
   <div class="title-wrap">
     <div id="abci-logo" data-tooltip="About the initiative" data-position="bottom center">
       <div id="abci-main-coin">
@@ -42,10 +42,10 @@
       </div>
       <div class="bch-only">
         <div id="search-wrapper">
-          <div class="search-input-wrapper">
+          <div class="search-input-wrapper" role="search">
             <i id="search-icon" class="search icon"></i>
             <label for="bch-merchant-search">
-              <input type="search" id="bch-merchant-search" placeholder="Search by {{ page.list_of }} name" autocomplete="off" spellcheck="false" tabindex="0">
+              <input type="search" title="Search by {{ page.list_of }} name" id="bch-merchant-search" placeholder="Search by {{ page.list_of }} name" autocomplete="off" spellcheck="false" tabindex="0">
             </label>
             <button id="search-clear">
               <i class="remove icon"></i>
