@@ -127,9 +127,9 @@ websites:
   url: http://BCHSticker.com
   img: bchsticker.png
   email_address: contact@bchsticker.com
-  bch: Yes
-  btc: No
-  othercrypto: No
+  bch: true
+  btc: false
+  othercrypto: false
   doc: https://www.yours.org/content/excited-to-announce-the-launch-of-bchstickercom--dc5394649d16
 - name: Beard Head
   url: https://www.beardhead.cz
@@ -658,6 +658,14 @@ websites:
   twitter: Massdrop
   img: massdrop.png
   bch: false
+- name: max badger
+  url: https://www.maxbadger.com/
+  img: maxbadger.png
+  twitter: heymaxbadger
+  email_address: hey@maxbadger.com
+  bch: true
+  btc: true
+  othercrypto: false
 - name: MCT WATCHES
   url: http://www.mctwatches.com
   img: mct_watches.png
@@ -901,9 +909,9 @@ websites:
   email_address: biuro@kombo.krakow.pl
   region: eu
   country: PL
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   doc: https://www.kombo.krakow.pl/Regulamin.htm#krypto
 - name: Stack Social
   url: https://stacksocial.com
