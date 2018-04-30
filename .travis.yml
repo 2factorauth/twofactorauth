@@ -45,6 +45,7 @@ jobs:
           NEXT_BUILD_TAG=`date +"%m-%d-%Y"`;
         fi
       - echo ".git" > .dockerignore
+      - echo $NEXT_BUILD_TAG
       - bundle exec rake docker:build
       - if [ "$NEXT_BUILD_TAG" != "latest" ]; then
           docker tag acceptbitcoincash/acceptbitcoincash acceptbitcoincash/acceptbitcoincash:"$NEXT_BUILD_TAG"; 
