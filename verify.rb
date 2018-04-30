@@ -4,7 +4,7 @@ require 'kwalify'
 require 'diffy'
 require 'safe_yaml/load'
 @output = 0
-@allowed_output = 0
+@warning = 0
 @total_tracked = 0
 @total_support = 0
 
@@ -49,7 +49,7 @@ def test_img_size(img)
   error("#{img} should not be larger than #{@img_recommended_size} bytes. "\
           "It is currently #{file_size} bytes.")
 
-  @allowed_output += 1
+  @warning += 1
 end
 
 # rubocop:disable MethodLength
@@ -126,6 +126,11 @@ def validate_alphabetical(set, identifier, set_name)
   error("#{set_name} not ordered by #{identifier}. Correct order:#{msg}")
 end
 
+def get_validator(schema_name)
+  schema = SafeYAML.load_file(File.join(__dir__, schema_name))
+  Kwalify::Validator.new(schema)
+end
+
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
 begin
@@ -140,14 +145,12 @@ begin
 
   file_name = '_data/sections.yml'
   sections = SafeYAML.load_file(file_name)
-  schema = SafeYAML.load_file(File.join(__dir__, 'sections_schema.yml'))
-  validator = Kwalify::Validator.new(schema)
+  validator = get_validator( 'sections_schema.yml')
   validate_data(validator, sections, file_name, 'id')
 
   validate_alphabetical(sections, 'id', file_name)
 
-  schema = SafeYAML.load_file(File.join(__dir__, 'websites_schema.yml'))
-  validator = Kwalify::Validator.new(schema)
+  validator = get_validator( 'websites_schema.yml')
 
   sections.each do |section|
     process_section(section, validator)
@@ -156,7 +159,7 @@ begin
   puts "<--------- Total websites listed: #{@total_tracked} --------->\n"
   puts "<--------- Total accepting BCH: #{@total_support} --------->\n"
 
-  @output -= @allowed_output
+  @output -= @warning
 
   exit 1 if @output > 0
 rescue Psych::SyntaxError => e
@@ -167,9 +170,9 @@ rescue StandardError => e
   puts e
   exit 1
 else
-  if @allowed_output > 0
-    puts "<--------- No build failing errors found! --------->\n"
-    puts "<--------- #{@allowed_output} warning(s) reported! --------->\n"
+  if @warning > 0
+    puts "<--------- No errors found! --------->\n"
+    puts "<--------- #{@warning} warning(s) reported! --------->\n"
   else
     puts "<--------- No errors. You\'re good to go! --------->\n"
   end
