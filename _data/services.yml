@@ -1,169 +1,164 @@
+---
 websites:
-    - name: AdoramaPix
-      url: http://www.adoramapix.com
-      img: adoramapix.png
-      bch: No
-      twitter: AdoramaPix
-      facebook: AdoramaPix
-      
-    - name: Asset Maintenance OU
-      url: https://www.assetmaintenance.ee
-      img: assetMaintenance.png
-      facebook: Asset-Maintenance-1267265646673586
-      region: eu
-      country: EE
-      city: Tallinn
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Gana Control
-      url: https://ganacontrol.com/
-      img: ganacontrol.png
-      email_address: contact@ganacontrol.com
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Gutes Leben Ltd
-      url: https://guteshome.com/
-      img: guteslebenltd.png
-      twitter: guteslebenltd
-      email_address: gutesleben@consultant.com
-      region: af
-      country: GH
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: InstaSmarter
-      url: http://www.instasmarter.com/
-      img: InstaSmarter.png
-      twitter: InstaSmarter
-      email_address: Service@InstaSmarter.com
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: KNW refrigeration
-      url: http://www.knw-refrigeration.co.za
-      img: knwRefrigeration.png
-      email_address: info@knw-refrigeration.co.za
-      region: af
-      country: ZA
-      city: Cape Town
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: medical valuations
-      url: https://medicalvaluations.com
-      img: medicalValuations.png
-      region: na
-      country: US
-      city: Scottsdale
-      twitter: medicalval
-      facebook: MVincRoss
-      bch: yes
-      btc: yes
-
-    - name: Muse
-      url: https://muse.markraybin.com
-      img: muse.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: PekTech
-      url: https://pek.tech
-      img: pektech.png
-      twitter: pek_tech
-      email_address: contact@pek.tech
-      region: na
-      bch: Yes
-      btc: No
-      othercrypto: Yes
-      doc: https://twitter.com/pek_tech/status/962967524605231104
-
-    - name: Ponti Partners
-      url: https://pontipartners.com.au/
-      img: pontipartners.png
-      facebook: pontipartners
-      region: oc
-      bch: Yes
-      btc: No
-      othercrypto: No
-      doc: https://www.reddit.com/r/btc/comments/7rht8s/bitcoin_cash_moving_beyond_just_merchant_adoption/
-
-    - name: Prospero Media
-      url: https://www.prosperomedia.co/
-      img: prosperomedia.png
-      facebook: GetProspero
-      country: us
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Rapid Car Key
-      url: https://www.rapidcarkey.com/
-      img: RapidCarKey.png
-      facebook: RapidCarKey
-      email_address: rapidcarkey@gmail.com
-      region: na
-      country: US
-      city: Tucson
-      bch: Yes
-      btc: No
-      othercrypto: No
-
-    - name: Shuriken Social
-      url: https://shurikensocial.com
-      img: shurikenSocial.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Spatial Simulations
-      url: https://www.spatialsim.com/
-      img: spatialsimulations.png
-      email_address: 3d@spatialsim.com
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      
-    - name: Trader's Way
-      url: https://www.tradersway.com
-      img: TradersWay.png
-      twitter: TradersWay
-      facebook: tradersway.forex.broker
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Viabox
-      url: https://www.viabox.com/
-      img: viabox.png
-      twitter: viabox
-      facebook: viaboxcom
-      region: na
-      country: US
-      state: OR
-      city: Portland
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Wise Owl Technologies
-      url: https://www.wiseowlcomputers.biz
-      img: wiseowl.png
-      twitter: wiseowlsoo
-      facebook: wiseowlcomputers
-      email_address: elliot@wiseodc.com
-      region: na
-      country: US
-      state: MI
-      city: Sault Ste. Marie
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://twitter.com/wiseowlsoo/status/988781341541101568
+- name: AdoramaPix
+  url: http://www.adoramapix.com
+  img: adoramapix.png
+  bch: false
+  twitter: AdoramaPix
+  facebook: AdoramaPix
+- name: Asset Maintenance OU
+  url: https://www.assetmaintenance.ee
+  img: assetMaintenance.png
+  facebook: Asset-Maintenance-1267265646673586
+  region: eu
+  country: EE
+  city: Tallinn
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Gana Control
+  url: https://ganacontrol.com/
+  img: ganacontrol.png
+  email_address: contact@ganacontrol.com
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Gutes Leben Ltd
+  url: https://guteshome.com/
+  img: guteslebenltd.png
+  twitter: guteslebenltd
+  email_address: gutesleben@consultant.com
+  region: af
+  country: GH
+  bch: true
+  btc: true
+  othercrypto: true
+- name: InstaSmarter
+  url: http://www.instasmarter.com/
+  img: InstaSmarter.png
+  twitter: InstaSmarter
+  email_address: Service@InstaSmarter.com
+  bch: true
+  btc: true
+  othercrypto: true
+- name: KNW refrigeration
+  url: http://www.knw-refrigeration.co.za
+  img: knwRefrigeration.png
+  email_address: info@knw-refrigeration.co.za
+  region: af
+  country: ZA
+  city: Cape Town
+  bch: true
+  btc: true
+  othercrypto: false
+- name: medical valuations
+  url: https://medicalvaluations.com
+  img: medicalValuations.png
+  region: na
+  country: US
+  city: Scottsdale
+  twitter: medicalval
+  facebook: MVincRoss
+  bch: true
+  btc: true
+- name: Muse
+  url: https://muse.markraybin.com
+  img: muse.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: PekTech
+  url: https://pek.tech
+  img: pektech.png
+  twitter: pek_tech
+  email_address: contact@pek.tech
+  region: na
+  bch: true
+  btc: false
+  othercrypto: true
+  doc: https://twitter.com/pek_tech/status/962967524605231104
+- name: Ponti Partners
+  url: https://pontipartners.com.au/
+  img: pontipartners.png
+  facebook: pontipartners
+  region: oc
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://www.reddit.com/r/btc/comments/7rht8s/bitcoin_cash_moving_beyond_just_merchant_adoption/
+- name: Prospero Media
+  url: https://www.prosperomedia.co/
+  img: prosperomedia.png
+  facebook: GetProspero
+  country: us
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Rapid Car Key
+  url: https://www.rapidcarkey.com/
+  img: RapidCarKey.png
+  facebook: RapidCarKey
+  email_address: rapidcarkey@gmail.com
+  region: na
+  country: US
+  city: Tucson
+  bch: true
+  btc: false
+  othercrypto: false
+- name: Shuriken Social
+  url: https://shurikensocial.com
+  img: shurikenSocial.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Spatial Simulations
+  url: https://www.spatialsim.com/
+  img: spatialsimulations.png
+  email_address: 3d@spatialsim.com
+  bch: true
+  btc: true
+  othercrypto: true
+- name: The Computer Wellness Center
+  url: http://www.computer-wellness.com
+  img: computerwellnesscenter.png
+  email_address: eric@computer-wellness.com
+  region: na
+  country: US
+  city: Boston
+  bch: true
+  btc: false
+  othercrypto: true
+- name: Trader's Way
+  url: https://www.tradersway.com
+  img: TradersWay.png
+  twitter: TradersWay
+  facebook: tradersway.forex.broker
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Viabox
+  url: https://www.viabox.com/
+  img: viabox.png
+  twitter: viabox
+  facebook: viaboxcom
+  region: na
+  country: US
+  state: OR
+  city: Portland
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Wise Owl Technologies
+  url: https://www.wiseowlcomputers.biz
+  img: wiseowl.png
+  twitter: wiseowlsoo
+  facebook: wiseowlcomputers
+  email_address: elliot@wiseodc.com
+  region: na
+  country: US
+  state: MI
+  city: Sault Ste. Marie
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://twitter.com/wiseowlsoo/status/988781341541101568
