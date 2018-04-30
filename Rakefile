@@ -26,6 +26,7 @@ end
 task proof_external: 'build' do
   check_site(
     external_only: true,
+    http_status_ignore: [0, 301, 302, 403, 503],
     hydra: { max_concurrency: 20 }
   )
 end
