@@ -62,12 +62,10 @@
 			  </td>
 			  <td class="{% if website.btc %}positive{% else %}negative{% endif %} icon">
 				{%- if website.btc -%}
-				<div class="coin-wrap orange-coin-wrap" data-tooltip="Bitcoin (Legacy) accepted at {{ website.name }}" data-position="top center" data-inverted="">
-                  <noscript>
-                    <img src="/img/coin-btc.png" alt="Bitcoin (Legacy)" height="40">
-                  </noscript>
-				  <img src="{{ page.img_placeholder }}" data-src="/img/coin-btc.png" alt="Bitcoin (Legacy)" height="40">
-				</div>
+				<span class="coin-wrap orange-coin-wrap" data-tooltip="Bitcoin (Legacy) accepted at {{ website.name }}" data-position="top center" data-inverted="">
+				  <i class="bitcoin big icon"></i>
+				</span>
+				
 				{%- endif -%}
 			  </td>
 			  <td class="{% if website.othercrypto %}positive{% else %}negative{% endif %} icon">
