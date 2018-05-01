@@ -34,8 +34,8 @@
   </script>
 {% endif %}
 
+{% if site.google_analytics and site.GH_ENV != 'gh_pages' %}
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
-{% if site.google_analytics %}
 <script>
 	(function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
 	;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
