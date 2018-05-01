@@ -30,7 +30,6 @@ task proof_external: 'build' do
     assume_extension: true, \
     check_html: true, \
     cache: { timeframe: '1w' }, \
-    hydra: { max_concurrency: 12 }, \
     check_sri: true, \
     url_ignore: [%r{https:\/\/fonts.googleapis.com\/css\/*}]
   ).run
