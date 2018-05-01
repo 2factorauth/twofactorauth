@@ -18,7 +18,9 @@ task proof: 'build' do
     './_site', \
     assume_extension: true, \
     check_html: true, \
-    disable_external: true
+    disable_external: true, \
+    check_sri: true, \
+    url_ignore: [/https:\/\/fonts.googleapis.com\/css\/*/]
   ).run
 end
 
@@ -28,7 +30,9 @@ task proof_external: 'build' do
     assume_extension: true, \
     check_html: true, \
     cache: { timeframe: '1w' }, \
-    hydra: { max_concurrency: 12 }
+    hydra: { max_concurrency: 12 }, \
+    check_sri: true, \
+    url_ignore: [/https:\/\/fonts.googleapis.com\/css\/*/]
   ).run
 end
 
