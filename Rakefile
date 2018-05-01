@@ -20,7 +20,7 @@ task proof: 'build' do
     check_html: true, \
     disable_external: true, \
     check_sri: true, \
-    url_ignore: [/https:\/\/fonts.googleapis.com\/css\/*/]
+    url_ignore: [%r{https:\/\/fonts.googleapis.com\/css\/*}]
   ).run
 end
 
@@ -32,7 +32,7 @@ task proof_external: 'build' do
     cache: { timeframe: '1w' }, \
     hydra: { max_concurrency: 12 }, \
     check_sri: true, \
-    url_ignore: [/https:\/\/fonts.googleapis.com\/css\/*/]
+    url_ignore: [%r{https:\/\/fonts.googleapis.com\/css\/*}]
   ).run
 end
 
