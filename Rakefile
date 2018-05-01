@@ -3,10 +3,12 @@ require 'jekyll'
 
 task default: %w[proof verify rubocop]
 
+dest = './_site'.freeze
+
 task :build do
   config = Jekyll.configuration(
     'source' => './',
-    'destination' => './_site'
+    'destination' => dest
   )
   site = Jekyll::Site.new(config)
   Jekyll::Commands::Build.build site, config
@@ -33,10 +35,9 @@ RuboCop::RakeTask.new
 
 def check_site(options = {})
   require 'html-proofer'
-  dir = './_site'
   defaults = {
     assume_extension: true,
     check_html: true
   }
-  HTMLProofer.check_directory(dir, defaults.merge(options)).run
+  HTMLProofer.check_directory(dest, defaults.merge(options)).run
 end
