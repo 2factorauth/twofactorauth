@@ -39,8 +39,8 @@
 	      {%- assign show_social = true -%}
         {%- else -%}
 		  {%- assign main_class = 'negative' -%}
-        {%- endif -%}		
-		
+        {%- endif -%}
+
 		  <tr class="desktop-tr{% if website.bch == false %} no-bch{% endif %}">
 			<td class="main {{main_class}}">
               {% include segment/table-row-title.html section=section_id website=website type='desktop' show_social=show_social %}
@@ -62,12 +62,11 @@
 			  </td>
 			  <td class="{% if website.btc %}positive{% else %}negative{% endif %} icon">
 				{%- if website.btc -%}
-				<div class="coin-wrap orange-coin-wrap" data-tooltip="Bitcoin (Legacy) accepted at {{ website.name }}" data-position="top center" data-inverted="">
-                  <noscript>
-                    <img src="/img/coin-btc.png" alt="Bitcoin (Legacy)" height="40">
-                  </noscript>
-				  <img src="{{ page.img_placeholder }}" data-src="/img/coin-btc.png" alt="Bitcoin (Legacy)" height="40">
-				</div>
+				<span class="coin-wrap orange-coin-wrap" data-tooltip="Bitcoin (Legacy) accepted at {{ website.name }}" data-position="top center" data-inverted="">
+					<span class="btc-b"></span>
+					<i class="bitcoin big icon"></i>
+				</span>
+
 				{%- endif -%}
 			  </td>
 			  <td class="{% if website.othercrypto %}positive{% else %}negative{% endif %} icon">

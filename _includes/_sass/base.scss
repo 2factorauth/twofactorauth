@@ -125,6 +125,24 @@ p {
   }
 }
 
+.orange-coin-wrap {
+  color: $orange;
+
+  .btc-b {
+    position: absolute;
+    top: 22%;
+    left: 25%;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    z-index: 0;
+  }
+
+  i.bitcoin.icon {
+    position: relative;
+  }
+}
+
 .fab {
   position: fixed;
   bottom: 1rem;
@@ -296,7 +314,7 @@ p {
       padding-bottom: 15px;
       clear: both;
 
-      i.bitcoin.icon {
+      i.btc.icon {
         padding: 15px 0 0;
         transform: rotate(-14deg);
         font-size: 32px;
@@ -1348,7 +1366,7 @@ span.progress {
   }
 }
 
-.about-this-site .ui.header img {
+.about-this-site .ui.header > img {
   width: 128px;
   margin-bottom: 1rem;
 }
