@@ -126,7 +126,21 @@ p {
 }
 
 .orange-coin-wrap {
-	color: $orange;
+  color: $orange;
+
+  .btc-b {
+    position: absolute;
+    top: 22%;
+    left: 25%;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    z-index: 0;
+  }
+
+  i.bitcoin.icon {
+    position: relative;
+  }
 }
 
 .fab {
