@@ -114,7 +114,7 @@ $(document).ready(function () {
 
   $('#assets').on('click', function () {
     $('.ui.modal.assets').modal('show');
-	$('img.image').trigger('unveil');
+    $('img.image').trigger('unveil');
   });
 
   $('#art-collections').on('click', function () {
@@ -123,6 +123,7 @@ $(document).ready(function () {
 
   $('#abci-logo, h1 i, #about-this-site').on('click', function () {
     $('.ui.modal.about-this-site').modal('show');
+    $('.about-this-site img').trigger('unveil');
   });
 
   $('#show-disclaimer').on('click', function () {
@@ -258,7 +259,7 @@ if(document.getElementById('bch-merchant-search') instanceof Object){
 			  else $(section).parent().parent().hide();
 			}
 		  }
-		 
+
 		  if (table.children().length == table.children(':hidden').length) {
 			  $('#no-results').css('display', 'block');
 			  $('#maingrid').css('visibility', 'hidden');
