@@ -1,283 +1,256 @@
+---
 websites:
-    - name: Amazon Payments
-      url: https://payments.amazon.com
-      twitter: AmazonPayments
-      img: amazon.png
-      bch: No
-      
-    - name: Atlantis
-      url: http://atlantislabs.co/
-      img: AtlantisLabs.png
-      twitter: AtlantisLabs
-      email_address: sumanth@atlantislabs.co
-      bch: Yes
-      btc: No
-      othercrypto: No
-      doc: https://medium.com/atlantislabs/money-is-now-an-api-7164514d4383
-
-    - name: Bitcoin payment processing api
-      url: https://btcapi.org/
-      img: btcapi.png
-      twitter: BtcApiGateway
-      facebook: BTCApiorg-1960470290837289
-      email_address: admin@btcapi.org
-      country: US
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://btcapi.org/docs
-      
-    - name: Bitek
-      url: https://bitek.co
-      img: bitekco.png
-      twitter: bitekco
-      facebook: bitekco
-      email_address: contacto@bitek.co
-      region: sa
-      country: CO
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      
-    - name: Bitpay
-      url: https://bitpay.com
-      img: bitpay.png
-      twitter: bitpay
-      facebook: bitpayofficial
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Braintree
-      img: braintree.png
-      twitter: Braintree
-      url: https://www.braintreepayments.com/
-      bch: No
-      btc: No
-      doc: https://www.braintreepayments.com/blog/coinbase-private-beta/
-      exceptions:
-        text: "Update (6/2017): We chose to deprecate Braintree's Coinbase integration due to resources required for the maintenance of the integration outstripping our ability to support it."
-
-    - name: Buycraft
-      url: http://buycraft.net
-      img: buycraft.png
-      twitter: Buycraft
-      bch: No
-      btc: No
-      exceptions:
-        text: "Buycraft used to accept BTC, but as of 2018-04-26 stopped accepting it"
-
-    - name: Cleverbridge
-      url: https://www.cleverbridge.com
-      img: cleverbridge.png
-      twitter: cleverbridge
-      facebook: cleverbridge
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Coinify
-      url: https://coinify.com
-      img: coinify.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: CoinPayments
-      url: https://www.coinpayments.net/
-      img: coinpayments.png
-      twitter: CoinPaymentsNET
-      facebook: CoinPayments
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Dwolla
-      url: https://www.dwolla.com
-      img: dwolla.png
-      twitter: dwolla
-      facebook: dwolla
-      bch: No
-
-    - name: Flattr
-      img: flattr.png
-      url: https://flattr.com
-      twitter: flattr
-      bch: No
-
-    - name: GoCardless
-      img: gocardless.png
-      url: https://gocardless.com/
-      twitter: GoCardless
-      bch: No
-
-    - name: GoCoin
-      url: https://gocoin.com
-      img: gocoin.png
-      twitter: gocoin
-      facebook: gocoiner
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Google Wallet
-      url: http://www.google.com/wallet/
-      twitter: googlewallet
-      img: googlewallet.png
-      bch: No
-
-    - name: GoUrl.io
-      url: https://gourl.io/
-      twitter: CryptocoinAPI
-      img: gourl.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Klarna
-      url: https://www.klarna.com
-      img: klarna.png
-      twitter: Klarna
-      facebook: KlarnaUSA
-      bch: No
-
-    - name: MiniPOS
-      url: https://www.minipos.cash/
-      img: minipos.png
-      twitter: miniposcash
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: NETELLER
-      img: neteller.png
-      url: https://www.neteller.com/en_us
-      twitter: neteller
-      facebook: neteller
-      bch: No
-
-    - name: Payoneer
-      url: http://www.payoneer.com/
-      twitter: Payoneer
-      img: payoneer.png
-      bch: No
-
-    - name: PayPal
-      url: https://www.paypal.com/
-      img: paypal.png
-      twitter: paypal
-      bch: No
-
-    - name: Paysafecard
-      url: https://www.paysafecard.com/
-      img: paysafecard.png
-      twitter: Paysafecard
-      bch: No
-      
-    - name: PaySrc
-      url: https://paysrc.com/
-      img: paysrc.png
-      twitter: paysrc_com
-      email_address: support@paysrc.com
-      bch: Yes
-      btc: No
-      othercrypto: No
-
-    - name: Privacy
-      url: https://privacy.com/
-      twitter: privacyhq
-      img: privacy.png
-      bch: No
-      
-    - name: pyxpub.io
-      url: https://pyxpub.io
-      img: pyxpub.png
-      twitter: pyxpub
-      email_address: info@pyxpub.io
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://www.reddit.com/r/btc/comments/82p4x6/pyxpub_fast_and_safe_0conf_transactions_for_any/
-
-    - name: Ravelin
-      url: https://www.ravelin.com/
-      twitter: Ravelinhq
-      facebook: Ravelinhq
-      img: ravelin.png
-      bch: No
-
-    - name: Rocketr
-      url: https://rocketr.net
-      img: rocketr.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      
-    - name: Selly.gg
-      url: https://selly.gg
-      img: sellygg.png
-      twitter: SellyLLC
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Skrill
-      url: https://skrill.com/
-      twitter: skrill
-      facebook: Skrillpayments
-      img: skrill.png
-      bch: No
-
-    - name: Square
-      url: https://squareup.com
-      twitter: square
-      facebook: square
-      img: squareup.png
-      bch: No
-
-    - name: Square Cash
-      url: https://cash.me
-      img: square-cash.png
-      bch: No
-      twitter: SquareCash
-
-    - name: Stripe
-      img: stripe.png
-      url: https://www.stripe.com/
-      twitter: Stripe
-      bch: No
-      btc: No
-
-    - name: Vantiv
-      url: https://www.vantiv.com/
-      twitter: Vantiv
-      facebook: Vantiv
-      img: vantiv.png
-      bch: No
-
-    - name: Venmo
-      url: https://venmo.com
-      twitter: venmo
-      img: venmo.png
-      bch: No
-
-    - name: Visa Checkout
-      url: https://secure.checkout.visa.com/
-      img: visa-checkout.png
-      bch: No
-      twitter: VisaCheckout
-
-    - name: Yandex.Money
-      url: https://money.yandex.ru
-      img: yandexmoney.png
-      twitter: yandex
-      bch: No
-
-    - name: ZuPago API
-      url: https://zupago.pe/api-docs
-      twitter: zupago
-      facebook: zupago
-      img: zupago.png
-      bch: yes
-      btc: yes
-      othercrypto: no
+- name: Amazon Payments
+  url: https://payments.amazon.com
+  twitter: AmazonPayments
+  img: amazon.png
+  bch: false
+- name: Atlantis
+  url: http://atlantislabs.co/
+  img: AtlantisLabs.png
+  twitter: AtlantisLabs
+  email_address: sumanth@atlantislabs.co
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://medium.com/atlantislabs/money-is-now-an-api-7164514d4383
+- name: Bitcoin payment processing api
+  url: https://btcapi.org/
+  img: btcapi.png
+  twitter: BtcApiGateway
+  facebook: BTCApiorg-1960470290837289
+  email_address: admin@btcapi.org
+  country: US
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://btcapi.org/docs
+- name: Bitek
+  url: https://bitek.co
+  img: bitekco.png
+  twitter: bitekco
+  facebook: bitekco
+  email_address: contacto@bitek.co
+  region: sa
+  country: CO
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Bitpay
+  url: https://bitpay.com
+  img: bitpay.png
+  twitter: bitpay
+  facebook: bitpayofficial
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Braintree
+  img: braintree.png
+  twitter: Braintree
+  url: https://www.braintreepayments.com/
+  bch: false
+  btc: false
+  doc: https://www.braintreepayments.com/blog/coinbase-private-beta/
+  exceptions:
+    text: 'Update (6/2017): We chose to deprecate Braintree''s Coinbase integration
+      due to resources required for the maintenance of the integration outstripping
+      our ability to support it.'
+- name: Buycraft
+  url: http://buycraft.net
+  img: buycraft.png
+  twitter: Buycraft
+  bch: false
+  btc: false
+  exceptions:
+    text: Buycraft used to accept BTC, but as of 2018-04-26 stopped accepting it
+- name: cheddr
+  url: https://pos.cheddr.cash/
+  img: cheddr.png
+  bch: true
+  btc: false
+  othercrypto: false
+- name: Cleverbridge
+  url: https://www.cleverbridge.com
+  img: cleverbridge.png
+  twitter: cleverbridge
+  facebook: cleverbridge
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Coinify
+  url: https://coinify.com
+  img: coinify.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: CoinPayments
+  url: https://www.coinpayments.net/
+  img: coinpayments.png
+  twitter: CoinPaymentsNET
+  facebook: CoinPayments
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Dwolla
+  url: https://www.dwolla.com
+  img: dwolla.png
+  twitter: dwolla
+  facebook: dwolla
+  bch: false
+- name: Flattr
+  img: flattr.png
+  url: https://flattr.com
+  twitter: flattr
+  bch: false
+- name: GoCardless
+  img: gocardless.png
+  url: https://gocardless.com/
+  twitter: GoCardless
+  bch: false
+- name: GoCoin
+  url: https://gocoin.com
+  img: gocoin.png
+  twitter: gocoin
+  facebook: gocoiner
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Google Wallet
+  url: http://www.google.com/wallet/
+  twitter: googlewallet
+  img: googlewallet.png
+  bch: false
+- name: GoUrl.io
+  url: https://gourl.io/
+  twitter: CryptocoinAPI
+  img: gourl.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Klarna
+  url: https://www.klarna.com
+  img: klarna.png
+  twitter: Klarna
+  facebook: KlarnaUSA
+  bch: false
+- name: MiniPOS
+  url: https://www.minipos.cash/
+  img: minipos.png
+  twitter: miniposcash
+  bch: true
+  btc: true
+  othercrypto: true
+- name: NETELLER
+  img: neteller.png
+  url: https://www.neteller.com/en_us
+  twitter: neteller
+  facebook: neteller
+  bch: false
+- name: Payoneer
+  url: http://www.payoneer.com/
+  twitter: Payoneer
+  img: payoneer.png
+  bch: false
+- name: PayPal
+  url: https://www.paypal.com/
+  img: paypal.png
+  twitter: paypal
+  bch: false
+- name: Paysafecard
+  url: https://www.paysafecard.com/
+  img: paysafecard.png
+  twitter: Paysafecard
+  bch: false
+- name: PaySrc
+  url: https://paysrc.com/
+  img: paysrc.png
+  twitter: paysrc_com
+  email_address: support@paysrc.com
+  bch: true
+  btc: false
+  othercrypto: false
+- name: Privacy
+  url: https://privacy.com/
+  twitter: privacyhq
+  img: privacy.png
+  bch: false
+- name: pyxpub.io
+  url: https://pyxpub.io
+  img: pyxpub.png
+  twitter: pyxpub
+  email_address: info@pyxpub.io
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.reddit.com/r/btc/comments/82p4x6/pyxpub_fast_and_safe_0conf_transactions_for_any/
+- name: Ravelin
+  url: https://www.ravelin.com/
+  twitter: Ravelinhq
+  facebook: Ravelinhq
+  img: ravelin.png
+  bch: false
+- name: Rocketr
+  url: https://rocketr.net
+  img: rocketr.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Selly.gg
+  url: https://selly.gg
+  img: sellygg.png
+  twitter: SellyLLC
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Skrill
+  url: https://skrill.com/
+  twitter: skrill
+  facebook: Skrillpayments
+  img: skrill.png
+  bch: false
+- name: Square
+  url: https://squareup.com
+  twitter: square
+  facebook: square
+  img: squareup.png
+  bch: false
+- name: Square Cash
+  url: https://cash.me
+  img: square-cash.png
+  bch: false
+  twitter: SquareCash
+- name: Stripe
+  img: stripe.png
+  url: https://www.stripe.com/
+  twitter: Stripe
+  bch: false
+  btc: false
+- name: Vantiv
+  url: https://www.vantiv.com/
+  twitter: Vantiv
+  facebook: Vantiv
+  img: vantiv.png
+  bch: false
+- name: Venmo
+  url: https://venmo.com
+  twitter: venmo
+  img: venmo.png
+  bch: false
+- name: Visa Checkout
+  url: https://secure.checkout.visa.com/
+  img: visa-checkout.png
+  bch: false
+  twitter: VisaCheckout
+- name: Yandex.Money
+  url: https://money.yandex.ru
+  img: yandexmoney.png
+  twitter: yandex
+  bch: false
+- name: ZuPago API
+  url: https://zupago.pe/api-docs
+  twitter: zupago
+  facebook: zupago
+  img: zupago.png
+  bch: true
+  btc: true
+  othercrypto: false

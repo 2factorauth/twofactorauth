@@ -1,444 +1,402 @@
+---
 websites:
-    - name: Ankama
-      url: https://www.ankama.com/en
-      img: ankama.png
-      bch: No
-      btc: No
-      facebook: Ankama
-
-    - name: Black Desert Online
-      url: https://www.blackdesertonline.com/
-      img: bdo.png
-      bch: No
-      twitter: BDO_News
-      facebook: BlackDesertOnline
-
-    - name: Blade & Soul
-      url: http://www.bladeandsoul.com/
-      img: bladeandsoul.png
-      bch: No
-      twitter: bladeandsoul
-      facebook: BladeAndSoul
-
-    - name: Blizzard
-      url: http://blizzard.com
-      img: blizzard.png
-      bch: No
-      twitter: Blizzard_Ent
-      facebook: Blizzard
-
-    - name: Buy Pi
-      url: https://buypi.net
-      img: buypi.png
-      twitter: buypinet
-      email_address: mark@buypi.net
-      region: na
-      country: US
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: CJS CD Keys
-      url: https://www.cjs-cdkeys.com
-      img: CJSCDKEYS.png
-      twitter: CJS_CD_Keys
-      facebook: CJSCDKEYS
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Crypto Kid Games
-      url: https://www.cryptokidgames.com
-      img: cryptokidgames.png
-      twitter: billdlabs
-      email_address: bill@billdlabs.com
-      region: na
-      country: US
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Curse
-      url: https://www.curse.com/
-      img: curse.png
-      bch: No
-      twitter: curseapp
-      facebook: curseapp
-
-    - name: Elder Scrolls Online
-      url: http://www.elderscrollsonline.com/
-      img: eso.png
-      bch: No
-      twitter: TESOnline
-      email_address: info@bethsoft.com
-
-    - name: Enjin
-      url: http://www.enjin.com/
-      img: enjin.png
-      bch: No
-      twitter: enjincs
-      facebook: enjinsocial
-
-    - name: Epic Games
-      url: https://www.epicgames.com/
-      img: epicgames.png
-      bch: No
-      twitter: EpicGames
-      facebook: epicgamesinc
-
-    - name: EVE Online
-      url: https://www.eveonline.com/
-      img: eveonline.png
-      bch: No
-      twitter: eveonline
-      facebook: eveonline
-
-    - name: FaceIT
-      url: https://www.faceit.com
-      img: faceit.png
-      bch: No
-      twitter: FaceIt
-      facebook: FaceItCommunity
-
-    - name: Fishmonger
-      url: https://wowfishmonger.weebly.com/
-      img: Fishmonger.png
-      twitter: WoW_Fishmonger
-      email_address: wowfishmonger@yahoo.com
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: G2A
-      url: https://www.g2a.com/
-      twitter: G2a_com
-      facebook: G2Acom
-      img: g2a.png
-      bch: no
-      btc: yes
-      othercrypto: no
-      doc: https://www.prnewswire.com/news-releases/gaming-giant-g2a-now-accepts-bitcoin-through-partnership-with-bitpay-532144142.html
-
-    - name: G2G
-      url: https://www.g2g.com
-      img: g2g.png
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      twitter: g2gdotcom
-      facebook: G2Gdotcom
-      email_address: support@g2g.com
-      doc: https://www.g2g.com/payment-guide/pg/e-wallet/bitcoin-bitcoin-cash
-
-    - name: GameFly
-      url: https://www.gamefly.com/
-      img: gamefly.png
-      bch: No
-      twitter: GameFly
-      facebook: gamefly
-
-    - name: GamersGate
-      url: https://www.gamersgate.com/
-      twitter: GamersGate
-      facebook: GamersGate
-      img: gamersgate.png
-      bch: No
-
-    - name: Garena Online
-      url: https://intl.garena.com
-      img: garena.png
-      bch: No
-      twitter: Garenaonline
-      facebook: Garenaonline
-
-    - name: GOG.com
-      url: https://www.gog.com
-      img: gog.png
-      bch: No
-      twitter: gogcom
-      facebook: gogcom
-
-    - name: GREE
-      url: http://product.gree.net/
-      img: gree.png
-      bch: No
-      twitter: greegames
-
-    - name: Guild Wars 2
-      url: https://www.guildwars2.com
-      img: guildwars2.png
-      bch: No
-      twitter: GuildWars2
-      facebook: GuildWars2
-
-    - name: Humble Bundle
-      url: https://www.humblebundle.com/
-      img: humble.png
-      bch: No
-      btc: Yes
-      twitter: humble
-      facebook: HumbleBundle
-
-    - name: IndieGala
-      url: https://www.indiegala.com/
-      facebook: IndieGala
-      bch: No
-      img: indiegala.png
-      twitter: IndieGala
-
-    - name: Instant Gaming
-      url: https://www.instant-gaming.com/
-      img: instantgaming.png
-      twitter: InstantGamingEN
-      facebook: Instant.Gaming
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coinpayments.net
-
-    - name: itch.io
-      url: https://itch.io/
-      img: itchio.png
-      bch: No
-      twitter: itchio
-      facebook: itchiogames
-
-    - name: KeyMarket
-      url: https://steamcommunity.com/id/keymarket01
-      img: keymarket.png
-      btc: No
-      bch: Yes
-
-    - name: Kinguin
-      url: https://www.kinguin.net/
-      img: kinguin.png
-      twitter: kinguinnet
-      facebook: Kinguin.net
-      email_address: helpdesk@kinguin.net
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: League of Legends
-      url: http://leagueoflegends.com
-      img: leagueoflegends.png
-      bch: No
-      twitter: leagueoflegends
-      facebook: leagueoflegends
-
-    - name: LucKey Productions
-      url: https://luckeyproductions.nl
-      img: luckeyproductions.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: MMOGA
-      url: https://www.mmoga.com/
-      img: mmoga.png
-      twitter: mmoga_ltd
-      facebook: MMOGA
-      region: EU
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: https://www.mmoga.com/payment_methods/Bitcoin-and-Altcoins.html
-
-    - name: Mojang
-      url: https://mojang.com/
-      img: mojang.png
-      bch: No
-      twitter: MojangSupport
-
-    - name: Nintendo Network
-      url: https://www.nintendo.com/
-      img: nintendo.png
-      bch: No
-      twitter: NintendoAmerica
-      facebook: Nintendo
-
-    - name: NVIDIA
-      url: https://store.nvidia.com/store?Action=DisplayHomePage&Locale=en_US&SiteID=nvidia
-      img: nvidia.png
-      bch: No
-      twitter: NVIDIA
-      facebook: NVIDIA
-
-    - name: OffGamers
-      url: https://www.offgamers.com/
-      img: offgamers.png
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      twitter: offgamers
-      facebook: OffGamers
-      doc: https://www.offgamers.com/payment-guide/pg/e-wallet/bitcoin-bitcoin-cash
-
-    - name: OMGSERV
-      url: https://www.omgserv.com
-      img: OMGSERV.png
-      twitter: OMGSERV_COM
-      facebook: OMGSERV
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Origin
-      url: https://www.origin.com/
-      img: origin.png
-      bch: No
-      twitter: OriginInsider
-      facebook: OriginInsider
-
-    - name: Pinoy Game Store
-      url: http://www.pinoygamestore.com
-      img: pinoygamestore.png
-      twitter: pinoygamestore
-      facebook: pinoygamestore
-      email_address: pinoygamestore@gmail.com
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: http://www.pinoygamestore.com/2018/02/pinoy-game-store-accepts-bitcoin-cash.html
-
-    - name: Play-Asia.com
-      url: https://www.play-asia.com/
-      img: playasia.png
-      twitter: playasia
-      facebook: playasia
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://twitter.com/playasia/status/972079670815612930
-
-    - name: Playstation Network
-      url: https://www.playstation.com/
-      img: psn.png
-      bch: No
-      twitter: PlayStation
-      facebook: PlayStation
-
-    - name: Roberts Space Industries
-      url: https://robertsspaceindustries.com/
-      img: robertsspaceindustries.png
-      bch: No
-      twitter: RobertsSpaceInd
-      facebook: RobertsSpaceIndustries
-
-    - name: Rockstar Games Social Club
-      url: https://socialclub.rockstargames.com
-      img: rockstargames.png
-      bch: No
-      twitter: RockstarSupport
-      facebook: rockstargames
-
-    - name: RuneScape
-      url: http://www.runescape.com/
-      img: runescape.png
-      bch: No
-      twitter: RuneScape
-      facebook: RuneScape
-
-    - name: Square Enix
-      url: https://na.square-enix.com/us/home
-      img: squarenix.png
-      bch: No
-      twitter: SquareEnix
-      facebook: SquareEnix
-
-    - name: "Star Wars: The Old Republic"
-      url: http://www.swtor.com/
-      img: swtor.png
-      bch: No
-      twitter: swtor
-      facebook: starwarstheoldrepublic
-
-    - name: Stardock Corporation
-      url: https://www.stardock.com/
-      img: stardock.png
-      bch: No
-      twitter: Stardock
-      facebook: official.stardock
-
-    - name: Steam
-      url: http://store.steampowered.com/
-      img: steam.png
-      bch: No
-      btc: No
-      twitter: Steam_Games
-      facebook: Steam
-      exceptions:
-        text: "Steam used to accept Bitcoin Legacy, but announced it would discontinue doing so on 2017-12-06, due to high fees and volatility in the value of Bitcoin."
-
-    - name: Steam Game Keys
-      url: https://steamgamekeys.com/
-      img: steamgamekeys.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Tibia
-      url: http://www.tibia.com/
-      img: tibia.png
-      bch: No
-      twitter: tibia
-      facebook: Tibia
-
-    - name: Trion Worlds
-      url: http://www.trionworlds.com/en/
-      img: trionworlds.png
-      bch: No
-      twitter: trionworlds
-      facebook: TrionWorlds
-
-    - name: Uplay
-      url: https://uplay.ubi.com/
-      img: uplay.png
-      bch: No
-      twitter: uplayubisoft
-
-    - name: Wargaming
-      url: http://wargaming.net/
-      img: wargaming.png
-      bch: No
-      twitter: wargaming_net
-      facebook: WarGamingNet
-
-    - name: WildStar
-      url: https://www.wildstar-online.com/
-      img: wildstar.png
-      bch: No
-      twitter: wildstar
-      facebook: WildstarOnline
-
-    - name: Xbox Live (with Microsoft Account)
-      url: https://www.xbox.com/live
-      img: xbox.png
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      twitter: XboxSupport
-      facebook: Xbox
-
-    - name: YoYo Games
-      url: https://www.yoyogames.com/
-      img: yoyogames.png
-      bch: No
-      twitter: yoyogames
-      facebook: yoyogames
-
-    - name: ZAP-Hosting
-      url: https://zap-hosting.com/
-      img: zaphosting.png
-      email_address: info@zap-hosting.com
-      twitter: zaphosting
-      facebook: zaphosting
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coinify
+- name: Ankama
+  url: https://www.ankama.com/en
+  img: ankama.png
+  bch: false
+  btc: false
+  facebook: Ankama
+- name: Black Desert Online
+  url: https://www.blackdesertonline.com/
+  img: bdo.png
+  bch: false
+  twitter: BDO_News
+  facebook: BlackDesertOnline
+- name: Blade & Soul
+  url: http://www.bladeandsoul.com/
+  img: bladeandsoul.png
+  bch: false
+  twitter: bladeandsoul
+  facebook: BladeAndSoul
+- name: Blizzard
+  url: http://blizzard.com
+  img: blizzard.png
+  bch: false
+  twitter: Blizzard_Ent
+  facebook: Blizzard
+- name: Buy Pi
+  url: https://buypi.net
+  img: buypi.png
+  twitter: buypinet
+  email_address: mark@buypi.net
+  region: na
+  country: US
+  bch: true
+  btc: true
+  othercrypto: false
+- name: CJS CD Keys
+  url: https://www.cjs-cdkeys.com
+  img: CJSCDKEYS.png
+  twitter: CJS_CD_Keys
+  facebook: CJSCDKEYS
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Crypto Kid Games
+  url: https://www.cryptokidgames.com
+  img: cryptokidgames.png
+  twitter: billdlabs
+  email_address: bill@billdlabs.com
+  region: na
+  country: US
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Curse
+  url: https://www.curse.com/
+  img: curse.png
+  bch: false
+  twitter: curseapp
+  facebook: curseapp
+- name: Elder Scrolls Online
+  url: http://www.elderscrollsonline.com/
+  img: eso.png
+  bch: false
+  twitter: TESOnline
+  email_address: info@bethsoft.com
+- name: Enjin
+  url: http://www.enjin.com/
+  img: enjin.png
+  bch: false
+  twitter: enjincs
+  facebook: enjinsocial
+- name: Epic Games
+  url: https://www.epicgames.com/
+  img: epicgames.png
+  bch: false
+  twitter: EpicGames
+  facebook: epicgamesinc
+- name: EVE Online
+  url: https://www.eveonline.com/
+  img: eveonline.png
+  bch: false
+  twitter: eveonline
+  facebook: eveonline
+- name: FaceIT
+  url: https://www.faceit.com
+  img: faceit.png
+  bch: false
+  twitter: FaceIt
+  facebook: FaceItCommunity
+- name: Fishmonger
+  url: https://wowfishmonger.weebly.com/
+  img: Fishmonger.png
+  twitter: WoW_Fishmonger
+  email_address: wowfishmonger@yahoo.com
+  bch: true
+  btc: true
+  othercrypto: true
+- name: G2A
+  url: https://www.g2a.com/
+  twitter: G2a_com
+  facebook: G2Acom
+  img: g2a.png
+  bch: false
+  btc: true
+  othercrypto: false
+  doc: https://www.prnewswire.com/news-releases/gaming-giant-g2a-now-accepts-bitcoin-through-partnership-with-bitpay-532144142.html
+- name: G2G
+  url: https://www.g2g.com
+  img: g2g.png
+  bch: true
+  btc: true
+  othercrypto: false
+  twitter: g2gdotcom
+  facebook: G2Gdotcom
+  email_address: support@g2g.com
+  doc: https://www.g2g.com/payment-guide/pg/e-wallet/bitcoin-bitcoin-cash
+- name: GameFly
+  url: https://www.gamefly.com/
+  img: gamefly.png
+  bch: false
+  twitter: GameFly
+  facebook: gamefly
+- name: GamersGate
+  url: https://www.gamersgate.com/
+  twitter: GamersGate
+  facebook: GamersGate
+  img: gamersgate.png
+  bch: false
+- name: Garena Online
+  url: https://intl.garena.com
+  img: garena.png
+  bch: false
+  twitter: Garenaonline
+  facebook: Garenaonline
+- name: GOG.com
+  url: https://www.gog.com
+  img: gog.png
+  bch: false
+  twitter: gogcom
+  facebook: gogcom
+- name: GREE
+  url: http://product.gree.net/
+  img: gree.png
+  bch: false
+  twitter: greegames
+- name: Guild Wars 2
+  url: https://www.guildwars2.com
+  img: guildwars2.png
+  bch: false
+  twitter: GuildWars2
+  facebook: GuildWars2
+- name: Humble Bundle
+  url: https://www.humblebundle.com/
+  img: humble.png
+  bch: false
+  btc: true
+  twitter: humble
+  facebook: HumbleBundle
+- name: IndieGala
+  url: https://www.indiegala.com/
+  facebook: IndieGala
+  bch: false
+  img: indiegala.png
+  twitter: IndieGala
+- name: Inkwell Ideas
+  url: https://store.inkwellideas.com/
+  img: InkwellIdeas.png
+  twitter: InkwellIdeas
+  email_address: joe@inkwellideas.com
+  country: US
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+- name: Instant Gaming
+  url: https://www.instant-gaming.com/
+  img: instantgaming.png
+  twitter: InstantGamingEN
+  facebook: Instant.Gaming
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinpayments.net
+- name: itch.io
+  url: https://itch.io/
+  img: itchio.png
+  bch: false
+  twitter: itchio
+  facebook: itchiogames
+- name: KeyMarket
+  url: https://steamcommunity.com/id/keymarket01
+  img: keymarket.png
+  btc: false
+  bch: true
+- name: Kinguin
+  url: https://www.kinguin.net/
+  img: kinguin.png
+  twitter: kinguinnet
+  facebook: Kinguin.net
+  email_address: helpdesk@kinguin.net
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: League of Legends
+  url: http://leagueoflegends.com
+  img: leagueoflegends.png
+  bch: false
+  twitter: leagueoflegends
+  facebook: leagueoflegends
+- name: LucKey Productions
+  url: https://luckeyproductions.nl
+  img: luckeyproductions.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: MMOGA
+  url: https://www.mmoga.com/
+  img: mmoga.png
+  twitter: mmoga_ltd
+  facebook: MMOGA
+  region: EU
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.mmoga.com/payment_methods/Bitcoin-and-Altcoins.html
+- name: Mojang
+  url: https://mojang.com/
+  img: mojang.png
+  bch: false
+  twitter: MojangSupport
+- name: Nintendo Network
+  url: https://www.nintendo.com/
+  img: nintendo.png
+  bch: false
+  twitter: NintendoAmerica
+  facebook: Nintendo
+- name: NVIDIA
+  url: https://store.nvidia.com/store?Action=DisplayHomePage&Locale=en_US&SiteID=nvidia
+  img: nvidia.png
+  bch: false
+  twitter: NVIDIA
+  facebook: NVIDIA
+- name: OffGamers
+  url: https://www.offgamers.com/
+  img: offgamers.png
+  bch: true
+  btc: true
+  othercrypto: false
+  twitter: offgamers
+  facebook: OffGamers
+  doc: https://www.offgamers.com/payment-guide/pg/e-wallet/bitcoin-bitcoin-cash
+- name: OMGSERV
+  url: https://www.omgserv.com
+  img: OMGSERV.png
+  twitter: OMGSERV_COM
+  facebook: OMGSERV
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Origin
+  url: https://www.origin.com/
+  img: origin.png
+  bch: false
+  twitter: OriginInsider
+  facebook: OriginInsider
+- name: Pinoy Game Store
+  url: http://www.pinoygamestore.com
+  img: pinoygamestore.png
+  twitter: pinoygamestore
+  facebook: pinoygamestore
+  email_address: pinoygamestore@gmail.com
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: http://www.pinoygamestore.com/2018/02/pinoy-game-store-accepts-bitcoin-cash.html
+- name: Play-Asia.com
+  url: https://www.play-asia.com/
+  img: playasia.png
+  twitter: playasia
+  facebook: playasia
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://twitter.com/playasia/status/972079670815612930
+- name: Playstation Network
+  url: https://www.playstation.com/
+  img: psn.png
+  bch: false
+  twitter: PlayStation
+  facebook: PlayStation
+- name: Roberts Space Industries
+  url: https://robertsspaceindustries.com/
+  img: robertsspaceindustries.png
+  bch: false
+  twitter: RobertsSpaceInd
+  facebook: RobertsSpaceIndustries
+- name: Rockstar Games Social Club
+  url: https://socialclub.rockstargames.com
+  img: rockstargames.png
+  bch: false
+  twitter: RockstarSupport
+  facebook: rockstargames
+- name: RuneScape
+  url: http://www.runescape.com/
+  img: runescape.png
+  bch: false
+  twitter: RuneScape
+  facebook: RuneScape
+- name: Square Enix
+  url: https://na.square-enix.com/us/home
+  img: squarenix.png
+  bch: false
+  twitter: SquareEnix
+  facebook: SquareEnix
+- name: 'Star Wars: The Old Republic'
+  url: http://www.swtor.com/
+  img: swtor.png
+  bch: false
+  twitter: swtor
+  facebook: starwarstheoldrepublic
+- name: Stardock Corporation
+  url: https://www.stardock.com/
+  img: stardock.png
+  bch: false
+  twitter: Stardock
+  facebook: official.stardock
+- name: Steam
+  url: http://store.steampowered.com/
+  img: steam.png
+  bch: false
+  btc: false
+  twitter: Steam_Games
+  facebook: Steam
+  exceptions:
+    text: Steam used to accept Bitcoin Legacy, but announced it would discontinue
+      doing so on 2017-12-06, due to high fees and volatility in the value of Bitcoin.
+- name: Steam Game Keys
+  url: https://steamgamekeys.com/
+  img: steamgamekeys.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Tibia
+  url: http://www.tibia.com/
+  img: tibia.png
+  bch: false
+  twitter: tibia
+  facebook: Tibia
+- name: Trion Worlds
+  url: http://www.trionworlds.com/en/
+  img: trionworlds.png
+  bch: false
+  twitter: trionworlds
+  facebook: TrionWorlds
+- name: Uplay
+  url: https://uplay.ubi.com/
+  img: uplay.png
+  bch: false
+  twitter: uplayubisoft
+- name: Wargaming
+  url: http://wargaming.net/
+  img: wargaming.png
+  bch: false
+  twitter: wargaming_net
+  facebook: WarGamingNet
+- name: WildStar
+  url: https://www.wildstar-online.com/
+  img: wildstar.png
+  bch: false
+  twitter: wildstar
+  facebook: WildstarOnline
+- name: Xbox Live (with Microsoft Account)
+  url: https://www.xbox.com/live
+  img: xbox.png
+  bch: true
+  btc: true
+  othercrypto: false
+  twitter: XboxSupport
+  facebook: Xbox
+- name: YoYo Games
+  url: https://www.yoyogames.com/
+  img: yoyogames.png
+  bch: false
+  twitter: yoyogames
+  facebook: yoyogames
+- name: ZAP-Hosting
+  url: https://zap-hosting.com/
+  img: zaphosting.png
+  email_address: info@zap-hosting.com
+  twitter: zaphosting
+  facebook: zaphosting
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinify
