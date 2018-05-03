@@ -137,6 +137,16 @@ websites:
       software: Yes
       doc: https://www.ecu.edu/cs-itcs/office365/multi-factor-authentication.cfm
 
+    - name: Eastern Michigan University
+      url: https://www.emich.edu
+      img: emu.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      exceptions:
+          text: "Available for employees"
+      doc: https://www.emich.edu/it/security/esp/duo.php
+
     - name: EC-Council
       url: https://www.eccouncil.org
       img: eccouncil.png
