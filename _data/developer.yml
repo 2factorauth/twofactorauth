@@ -1,470 +1,426 @@
+---
 websites:
-    - name: Aha!
-      url: https://www.aha.io/
-      img: aha.png
-      bch: No
-      twitter: aha_io
-      facebook: Aha.Product.Roadmap.Software
-
-    - name: Airbrake
-      url: https://airbrake.io
-      img: airbrake.png
-      bch: No
-      twitter: airbrake
-      facebook: airbrake.io
-
-    - name: Algolia
-      url: https://algolia.com
-      img: algolia.png
-      bch: No
-      twitter: Algolia
-      facebook: algolia
-
-    - name: AliseLab
-      url: https://aliselab.com/
-      img: AliseLabCom.png
-      facebook: AliseLabCom
-      email_address: aliselab.com@gmail.com
-      bch: Yes
-      btc: No
-      othercrypto: No
-
-    - name: AppVeyor
-      url: https://www.appveyor.com
-      img: appveyor.png
-      bch: No
-      twitter: appveyor
-      email_address: team@appveyor.com
-
-    - name: aTech Media
-      url: https://atechmedia.com
-      img: atechmedia.png
-      bch: No
-      twitter: atechmedia
-      facebook: atechmediauk
-
-    - name: Balsamiq
-      url: https://balsamiq.com
-      img: balsamiq.png
-      bch: No
-      twitter: balsamiq
-      facebook: balsamiq
-
-    - name: BasisCode Compliance
-      url: http://basiscode.com
-      img: basiscode.png
-      bch: No
-      twitter: basiscodecompli
-      facebook: BasisCodeCompliance
-
-    - name: Bintray
-      url: https://bintray.com/
-      img: bintray.png
-      bch: No
-      twitter: bintray
-
-    - name: BITBOX
-      url: https://www.bitbox.earth
-      img: bitbox.png
-      bch: yes
-      btc: no
-      othercrypto: no
-      twitter: bitboxearth
-      doc: https://www.bitbox.earth/docs/gettingstarted
-
-    - name: Bitbucket
-      url: https://bitbucket.org
-      img: bitbucket.png
-      bch: No
-      twitter: bitbucket
-      facebook: Atlassian
-
-    - name: Bountysource
-      url: https://www.bountysource.com/
-      twitter: bountysource
-      facebook: Bountysource
-      email_address: support@bountysource.com
-      img: bountysource.png
-      bch: no
-      btc: no
-      othercrypto: no
-      doc: "disabled for now as per https://github.com/bountysource/core/issues/1162"
-
-    - name: Bugsnag
-      url: https://bugsnag.com
-      img: bugsnag.png
-      bch: No
-      twitter: bugsnag
-
-    - name: Bugzilla@Mozilla
-      url: https://bugzilla.mozilla.org
-      img: bugzilla.png
-      bch: No
-      twitter: bugzilla
-
-    - name: Cedexis
-      url: http://www.cedexis.com/
-      img: cedexis.png
-      bch: No
-      twitter: Cedexis
-      facebook: Cedexis
-
-    - name: CM Telecom
-      url: https://www.cm.com/
-      img: cmtelecom.png
-      bch: No
-      twitter: CMTelecom
-      facebook: CMTelecomBV
-
-    - name: Code Climate
-      url: https://codeclimate.com
-      img: codeclimate.png
-      bch: No
-      twitter: codeclimate
-      facebook: codeclimate
-
-    - name: Codeanywhere
-      url: https://codeanywhere.com
-      img: codeanywhere.png
-      bch: No
-      twitter: codeanywhere
-      facebook: Codeanywhere
-
-    - name: Codeship
-      url: https://codeship.com/
-      img: codeship.png
-      bch: No
-      twitter: codeship
-      facebook: codeship
-
-    - name: Compose.io
-      url: https://www.compose.io/
-      img: composeio.png
-      bch: No
-      twitter: composeio
-      facebook: composeio
-
-    - name: Context.IO
-      url: https://context.io
-      img: contextio.png
-      bch: No
-      twitter: contextio
-      facebook: ContextIO
-
-    - name: Deploybot
-      url: http://deploybot.com/
-      img: deploybot.png
-      bch: No
-      twitter: deploybothq
-
-    - name: Docker
-      url: https://www.docker.com/
-      img: docker.png
-      bch: No
-      twitter: docker
-      facebook: docker.run
-
-    - name: Domino Data Lab
-      url: https://www.dominodatalab.com/
-      img: domino.png
-      bch: No
-      twitter: dominodatalab
-
-    - name: Esri
-      url: https://www.esri.com
-      img: esri.png
-      bch: No
-      twitter: esri
-      facebook: esrigis
-
-    - name: 'FogBugz & Kiln'
-      url: https://www.fogcreek.com/fogbugz
-      img: fogbugz.png
-      bch: No
-      twitter: fogcreek
-      facebook: fogcreeksoftware
-
-    - name: GitHub
-      url: https://github.com
-      img: github.png
-      bch: No
-      twitter: github
-      facebook: GitHub
-
-    - name: GitLab
-      url: https://gitlab.com
-      img: gitlab.png
-      bch: No
-      twitter: gitlab
-      facebook: gitlab
-
-    - name: Hashicorp Atlas
-      url: https://atlas.hashicorp.com/
-      img: hashicorp-atlas.png
-      bch: No
-      twitter: hashicorp
-
-    - name: Infobip
-      url: https://www.infobip.com/
-      img: infobip.png
-      bch: No
-      twitter: infobip
-      facebook: infobip
-
-    - name: IT Glue
-      url: https://www.itglue.com/
-      img: itglue.png
-      bch: No
-      twitter: itglue
-      facebook: itglue
-
-    - name: JetBrains
-      url: https://jetbrains.com
-      img: jetbrains.png
-      bch: No
-      twitter: jetbrains
-      facebook: JetBrains
-
-    - name: Koding
-      url: https://koding.com
-      img: koding.png
-      bch: No
-      twitter: koding
-      facebook: koding
-
-    - name: Launchpad
-      url: https://launchpad.net
-      img: launchpad.png
-      bch: No
-      twitter: launchpadstatus
-
-    - name: Looker
-      url: https://looker.com/
-      img: looker.png
-      bch: No
-      twitter: lookerdata
-      facebook: LookerData
-
-    - name: Mapbox
-      url: https://www.mapbox.com
-      img: mapbox.png
-      bch: No
-      twitter: mapbox
-      facebook: Mapbox
-
-    - name: Metrological
-      url: https://www.metrological.com/
-      img: metrological.png
-      twitter: metrological
-      bch: No
-      email_address: info@metrological.com
-
-    - name: MongoDB Cloud Manager
-      url: https://cloud.mongodb.com
-      img: mongodbmms.png
-      bch: No
-      twitter: mongodb
-      facebook: mongodb
-
-    - name: New Relic
-      url: https://newrelic.com
-      img: newrelic.png
-      bch: No
-      twitter: newrelic
-      facebook: NewRelic
-
-    - name: Nexmo
-      url: https://www.nexmo.com/
-      img: nexmo.png
-      bch: No
-      twitter: nexmo
-
-    - name: Papertrail
-      url: https://papertrailapp.com/
-      img: papertrail.png
-      bch: No
-      twitter: papertrailapp
-
-    - name: Phacility
-      url: https://phacility.com/
-      img: phacility.png
-      bch: No
-      twitter: phabricator
-      facebook: phabricator
-
-    - name: Pingdom
-      url: https://www.pingdom.com
-      img: pingdom.png
-      bch: No
-      twitter: pingdom
-      facebook: pingdom
-
-    - name: Pivotal Tracker
-      url: https://www.pivotaltracker.com
-      img: pivotaltracker.png
-      bch: No
-      twitter: pivotaltracker
-      facebook: pivotaltracker
-
-    - name: Pixelmind
-      url: https://www.pixelmind.org
-      twitter: ph1x
-      facebook: pixelmind.org
-      img: pixelmind.png
-      email_address: pixelmindstudio@gmail.com
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: https://pixelmind.org/contact-us
-
-    - name: Plivo
-      url: https://www.plivo.com
-      img: plivo.png
-      bch: No
-      twitter: plivo
-      facebook: Plivo
-
-    - name: PythonAnywhere
-      url: https://www.pythonanywhere.com
-      img: pythonanywhere.png
-      bch: No
-      twitter: pythonanywhere
-
-    - name: Raygun
-      url: https://raygun.com
-      img: raygun.png
-      bch: No
-      twitter: raygunio
-      facebook: raygundotio
-
-    - name: RBCommons
-      url: https://rbcommons.com
-      img: rbcommons.png
-      bch: No
-      twitter: RBcommons
-
-    - name: Rollbar
-      url: https://rollbar.com/
-      img: rollbar.png
-      bch: No
-      twitter: rollbar
-
-    - name: RubyGems.org
-      url: https://rubygems.org
-      img: rubygems.png
-      bch: No
-      twitter: rubygems
-      email_address: security@rubygems.org
-
-    - name: Sauce Labs
-      url: https://saucelabs.com
-      img: saucelabs.png
-      bch: No
-      twitter: saucelabs
-      facebook: saucelabs
-      email_address: support@saucelabs.com
-
-    - name: Semaphore
-      url: https://semaphoreci.com
-      img: semaphore.png
-      bch: No
-      twitter: SemaphoreCI
-      facebook: SemaphoreCI
-
-    - name: Sentry
-      url: https://getsentry.com
-      img: sentry.png
-      bch: No
-      twitter: getsentry
-
-    - name: SourceForge
-      url: https://sourceforge.net/
-      img: sourceforge.png
-      bch: No
-      twitter: sfnet_ops
-      facebook: SourceforgeNet
-
-    - name: Status.io
-      url: https://status.io/
-      img: statusio.png
-      bch: No
-      twitter: statusio
-
-    - name: StatusCake
-      url: https://statuscake.com/
-      img: statuscake.png
-      bch: No
-      twitter: statuscaketeam
-      facebook: statuscake
-
-    - name: StatusPage.io
-      url: https://www.statuspage.io
-      img: statuspageio.png
-      bch: No
-      twitter: statuspageio
-      facebook: statuspageio
-
-    - name: Sumo Logic
-      url: https://www.sumologic.com
-      img: sumologic.png
-      bch: No
-      twitter: sumologic
-      facebook: Sumo.Logic
-
-    - name: Syntevo (SmartGit)
-      url: https://www.syntevo.com/
-      twitter: syntevo
-      facebook: syntevo
-      img: syntevo.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Taiga.io
-      url: https://taiga.io
-      img: taigaio.png
-      bch: No
-      twitter: taigaio
-      facebook: taigaio
-
-    - name: Twilio
-      url: https://www.twilio.com/
-      img: twilio.png
-      bch: No
-      twitter: twilio
-      facebook: Twilio
-
-    - name: Unfuddle
-      url: https://unfuddle.com/
-      img: unfuddle.png
-      bch: No
-      twitter: unfuddle
-      facebook: unfuddle
-
-    - name: Unity
-      url: https://unity3d.com/
-      img: unity.png
-      bch: No
-      twitter: unity3d
-      facebook: unity3d
-
-    - name: Uptime Robot
-      url: https://uptimerobot.com
-      img: uptimerobot.png
-      bch: No
-      twitter: uptimerobot
-      facebook: UptimeRobot
-
-    - name: Visual Studio Online
-      url: http://www.visualstudio.com/
-      img: visualstudio.png
-      bch: No
-      twitter: visualstudio
-      facebook: visualstudio
-
-    - name: Zapier
-      url: https://zapier.com
-      img: zapier.png
-      bch: No
-      twitter: zapier
-      facebook: ZapierApp
+- name: Aha!
+  url: https://www.aha.io/
+  img: aha.png
+  bch: false
+  twitter: aha_io
+  facebook: Aha.Product.Roadmap.Software
+- name: Airbrake
+  url: https://airbrake.io
+  img: airbrake.png
+  bch: false
+  twitter: airbrake
+  facebook: airbrake.io
+- name: Algolia
+  url: https://algolia.com
+  img: algolia.png
+  bch: false
+  twitter: Algolia
+  facebook: algolia
+- name: AliseLab
+  url: https://aliselab.com/
+  img: AliseLabCom.png
+  facebook: AliseLabCom
+  email_address: aliselab.com@gmail.com
+  bch: true
+  btc: false
+  othercrypto: false
+- name: AppVeyor
+  url: https://www.appveyor.com
+  img: appveyor.png
+  bch: false
+  twitter: appveyor
+  email_address: team@appveyor.com
+- name: aTech Media
+  url: https://atechmedia.com
+  img: atechmedia.png
+  bch: false
+  twitter: atechmedia
+  facebook: atechmediauk
+- name: Balsamiq
+  url: https://balsamiq.com
+  img: balsamiq.png
+  bch: false
+  twitter: balsamiq
+  facebook: balsamiq
+- name: BasisCode Compliance
+  url: http://basiscode.com
+  img: basiscode.png
+  bch: false
+  twitter: basiscodecompli
+  facebook: BasisCodeCompliance
+- name: Bintray
+  url: https://bintray.com/
+  img: bintray.png
+  bch: false
+  twitter: bintray
+- name: BITBOX
+  url: https://www.bitbox.earth
+  img: bitbox.png
+  bch: true
+  btc: false
+  othercrypto: false
+  twitter: bitboxearth
+  doc: https://www.bitbox.earth/docs/gettingstarted
+- name: Bitbucket
+  url: https://bitbucket.org
+  img: bitbucket.png
+  bch: false
+  twitter: bitbucket
+  facebook: Atlassian
+- name: Bountysource
+  url: https://www.bountysource.com/
+  twitter: bountysource
+  facebook: Bountysource
+  email_address: support@bountysource.com
+  img: bountysource.png
+  bch: false
+  btc: false
+  othercrypto: false
+  doc: disabled for now as per https://github.com/bountysource/core/issues/1162
+- name: Bugsnag
+  url: https://bugsnag.com
+  img: bugsnag.png
+  bch: false
+  twitter: bugsnag
+- name: Bugzilla@Mozilla
+  url: https://bugzilla.mozilla.org
+  img: bugzilla.png
+  bch: false
+  twitter: bugzilla
+- name: Cedexis
+  url: http://www.cedexis.com/
+  img: cedexis.png
+  bch: false
+  twitter: Cedexis
+  facebook: Cedexis
+- name: CM Telecom
+  url: https://www.cm.com/
+  img: cmtelecom.png
+  bch: false
+  twitter: CMTelecom
+  facebook: CMTelecomBV
+- name: Code Climate
+  url: https://codeclimate.com
+  img: codeclimate.png
+  bch: false
+  twitter: codeclimate
+  facebook: codeclimate
+- name: Codeanywhere
+  url: https://codeanywhere.com
+  img: codeanywhere.png
+  bch: false
+  twitter: codeanywhere
+  facebook: Codeanywhere
+- name: Codeship
+  url: https://codeship.com/
+  img: codeship.png
+  bch: false
+  twitter: codeship
+  facebook: codeship
+- name: Compose.io
+  url: https://www.compose.io/
+  img: composeio.png
+  bch: false
+  twitter: composeio
+  facebook: composeio
+- name: Context.IO
+  url: https://context.io
+  img: contextio.png
+  bch: false
+  twitter: contextio
+  facebook: ContextIO
+- name: Deploybot
+  url: http://deploybot.com/
+  img: deploybot.png
+  bch: false
+  twitter: deploybothq
+- name: Docker
+  url: https://www.docker.com/
+  img: docker.png
+  bch: false
+  twitter: docker
+  facebook: docker.run
+- name: Domino Data Lab
+  url: https://www.dominodatalab.com/
+  img: domino.png
+  bch: false
+  twitter: dominodatalab
+- name: Esri
+  url: https://www.esri.com
+  img: esri.png
+  bch: false
+  twitter: esri
+  facebook: esrigis
+- name: FogBugz & Kiln
+  url: https://www.fogcreek.com/fogbugz
+  img: fogbugz.png
+  bch: false
+  twitter: fogcreek
+  facebook: fogcreeksoftware
+- name: GitHub
+  url: https://github.com
+  img: github.png
+  bch: false
+  twitter: github
+  facebook: GitHub
+- name: GitLab
+  url: https://gitlab.com
+  img: gitlab.png
+  bch: false
+  twitter: gitlab
+  facebook: gitlab
+- name: Hashicorp Atlas
+  url: https://atlas.hashicorp.com/
+  img: hashicorp-atlas.png
+  bch: false
+  twitter: hashicorp
+- name: Infobip
+  url: https://www.infobip.com/
+  img: infobip.png
+  bch: false
+  twitter: infobip
+  facebook: infobip
+- name: IT Glue
+  url: https://www.itglue.com/
+  img: itglue.png
+  bch: false
+  twitter: itglue
+  facebook: itglue
+- name: JetBrains
+  url: https://jetbrains.com
+  img: jetbrains.png
+  bch: false
+  twitter: jetbrains
+  facebook: JetBrains
+- name: Koding
+  url: https://koding.com
+  img: koding.png
+  bch: false
+  twitter: koding
+  facebook: koding
+- name: Launchpad
+  url: https://launchpad.net
+  img: launchpad.png
+  bch: false
+  twitter: launchpadstatus
+- name: Looker
+  url: https://looker.com/
+  img: looker.png
+  bch: false
+  twitter: lookerdata
+  facebook: LookerData
+- name: Mapbox
+  url: https://www.mapbox.com
+  img: mapbox.png
+  bch: false
+  twitter: mapbox
+  facebook: Mapbox
+- name: Metrological
+  url: https://www.metrological.com/
+  img: metrological.png
+  twitter: metrological
+  bch: false
+  email_address: info@metrological.com
+- name: MongoDB Cloud Manager
+  url: https://cloud.mongodb.com
+  img: mongodbmms.png
+  bch: false
+  twitter: mongodb
+  facebook: mongodb
+- name: New Relic
+  url: https://newrelic.com
+  img: newrelic.png
+  bch: false
+  twitter: newrelic
+  facebook: NewRelic
+- name: Nexmo
+  url: https://www.nexmo.com/
+  img: nexmo.png
+  bch: false
+  twitter: nexmo
+- name: Papertrail
+  url: https://papertrailapp.com/
+  img: papertrail.png
+  bch: false
+  twitter: papertrailapp
+- name: Phacility
+  url: https://phacility.com/
+  img: phacility.png
+  bch: false
+  twitter: phabricator
+  facebook: phabricator
+- name: Pingdom
+  url: https://www.pingdom.com
+  img: pingdom.png
+  bch: false
+  twitter: pingdom
+  facebook: pingdom
+- name: Pivotal Tracker
+  url: https://www.pivotaltracker.com
+  img: pivotaltracker.png
+  bch: false
+  twitter: pivotaltracker
+  facebook: pivotaltracker
+- name: Pixelmind
+  url: https://www.pixelmind.org
+  twitter: ph1x
+  facebook: pixelmind.org
+  img: pixelmind.png
+  email_address: pixelmindstudio@gmail.com
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://pixelmind.org/contact-us
+- name: Plivo
+  url: https://www.plivo.com
+  img: plivo.png
+  bch: false
+  twitter: plivo
+  facebook: Plivo
+- name: PythonAnywhere
+  url: https://www.pythonanywhere.com
+  img: pythonanywhere.png
+  bch: false
+  twitter: pythonanywhere
+- name: Raygun
+  url: https://raygun.com
+  img: raygun.png
+  bch: false
+  twitter: raygunio
+  facebook: raygundotio
+- name: RBCommons
+  url: https://rbcommons.com
+  img: rbcommons.png
+  bch: false
+  twitter: RBcommons
+- name: Rollbar
+  url: https://rollbar.com/
+  img: rollbar.png
+  bch: false
+  twitter: rollbar
+- name: RubyGems.org
+  url: https://rubygems.org
+  img: rubygems.png
+  bch: false
+  twitter: rubygems
+  email_address: security@rubygems.org
+- name: Sauce Labs
+  url: https://saucelabs.com
+  img: saucelabs.png
+  bch: false
+  twitter: saucelabs
+  facebook: saucelabs
+  email_address: support@saucelabs.com
+- name: Semaphore
+  url: https://semaphoreci.com
+  img: semaphore.png
+  bch: false
+  twitter: SemaphoreCI
+  facebook: SemaphoreCI
+- name: Sentry
+  url: https://getsentry.com
+  img: sentry.png
+  bch: false
+  twitter: getsentry
+- name: SourceForge
+  url: https://sourceforge.net/
+  img: sourceforge.png
+  bch: false
+  twitter: sfnet_ops
+  facebook: SourceforgeNet
+- name: Status.io
+  url: https://status.io/
+  img: statusio.png
+  bch: false
+  twitter: statusio
+- name: StatusCake
+  url: https://statuscake.com/
+  img: statuscake.png
+  bch: false
+  twitter: statuscaketeam
+  facebook: statuscake
+- name: StatusPage.io
+  url: https://www.statuspage.io
+  img: statuspageio.png
+  bch: false
+  twitter: statuspageio
+  facebook: statuspageio
+- name: Sumo Logic
+  url: https://www.sumologic.com
+  img: sumologic.png
+  bch: false
+  twitter: sumologic
+  facebook: Sumo.Logic
+- name: Syntevo (SmartGit)
+  url: https://www.syntevo.com/
+  twitter: syntevo
+  facebook: syntevo
+  img: syntevo.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Taiga.io
+  url: https://taiga.io
+  img: taigaio.png
+  bch: false
+  twitter: taigaio
+  facebook: taigaio
+- name: Thoughtlab
+  url: https://www.thoughtlab.com/
+  img: thoughtlab.png
+  twitter: thoughtlabllc
+  facebook: ThoughtLabLLC
+  email_address: gen@thoughtlab.com
+  region: na
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.thoughtlab.com/blog/post/we-now-accept-cryptocurrency
+- name: Twilio
+  url: https://www.twilio.com/
+  img: twilio.png
+  bch: false
+  twitter: twilio
+  facebook: Twilio
+- name: Unfuddle
+  url: https://unfuddle.com/
+  img: unfuddle.png
+  bch: false
+  twitter: unfuddle
+  facebook: unfuddle
+- name: Unisoftdev
+  url: https://www.unisoftdev.tech
+  img: Unisoftdev.png
+  twitter: Unisoftdev1
+  facebook: Unisoftdev
+  email_address: admin@unisoftdev.tech
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.unisoftdev.tech/services/we-accept-bitcoin
+- name: Unity
+  url: https://unity3d.com/
+  img: unity.png
+  bch: false
+  twitter: unity3d
+  facebook: unity3d
+- name: Uptime Robot
+  url: https://uptimerobot.com
+  img: uptimerobot.png
+  bch: false
+  twitter: uptimerobot
+  facebook: UptimeRobot
+- name: Visual Studio Online
+  url: http://www.visualstudio.com/
+  img: visualstudio.png
+  bch: false
+  twitter: visualstudio
+  facebook: visualstudio
+- name: Zapier
+  url: https://zapier.com
+  img: zapier.png
+  bch: false
+  twitter: zapier
+  facebook: ZapierApp

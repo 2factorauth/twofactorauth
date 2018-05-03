@@ -1,308 +1,288 @@
+---
 websites:
-    - name: 23andMe
-      url: https://www.23andme.com/
-      twitter: 23andMe
-      facebook: 23andMe
-      img: 23andme.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Aveon Health
-      url: http://aveonhealth.com
-      twitter: aveonhealth
-      facebook: aveonhealth
-      img: aveonhealth.png
-      bch: No
-      btc: Yes
-      othercrypto: No
-      
-    - name: Beard Friendly
-      url: https://www.beardfriendly.com/
-      img: beardfriendly.png
-      twitter: Beard_Friendly
-      facebook: beardfriendly
-      bch: No
-      btc: Yes
-      othercrypto: No
-
-    - name: Carilion Clinic
-      url: https://www.carilionclinic.org
-      img: carilionclinic.png
-      bch: No
-      btc: No
-      othercrypto: No
-      twitter: CarilionClinic
-      facebook: carilionclinic
-      email_address: direct@carilionclinic.org
-
-    - name: Christers Hårvård
-      url: http://www.christersharvard.se/
-      facebook: christersharvard
-      img: christersharvard.png
-      bch: yes
-      btc: yes
-      othercrypto: no
-      doc: http://www.christersharvard.se/priser/
-
-    - name: CrossFit Spaarne
-      url: https://www.crossfitspaarne.nl/
-      img: crossfitspaarne.png
-      twitter: crossfitspaarne
-      email_address: info@crossfitspaarne.nl
-      region: eu
-      country: NL
-      city: Haarlem
-      bch: Yes
-      btc: No
-      othercrypto: Yes
-      
-    - name: CVS Caremark
-      url: https://www.caremark.com
-      twitter: CVSHealth
-      facebook: CVS
-      img: cvscaremark.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: drchrono
-      url: https://www.drchrono.com
-      img: drchrono.png
-      facebook: drchrono.ehr
-      twitter: drchrono
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Dreambody Clinic
-      url: https://dreambodyclinic.net/
-      img: dreambodyclinic.png
-      twitter: dreambodyclinic
-      facebook: dreambodyclinic
-      country: MX
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Drugs.com
-      url: https://www.drugs.com/
-      twitter: DrugsCom
-      facebook: Drugscom
-      img: drugscom.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Elation Health
-      url: https://www.elationhealth.com/
-      twitter: ElationHealth
-      facebook: ElationHealth
-      img: elationhealth.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: FitBit
-      url: https://www.fitbit.com/
-      twitter: fitbit
-      facebook: fitbit
-      img: fitbit.png
-      bch: No
-      btc: No
-      othercrypto: No
-      
-    - name: Focused Taiwan 佛克斯台灣
-      url: https://focused.com.tw
-      img: focusedTaiwan.png
-      twitter: FocusedTaiwan
-      facebook: focusedTaiwan
-      email_address: kevin@majorbros.com
-      region: as
-      country: TW
-      bch: Yes
-      btc: No
-      othercrypto: No
-
-    - name: FollowMyHealth
-      url: https://www.followmyhealth.com/
-      img: followmyhealth.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Google Fit
-      url: https://fit.google.com
-      img: googlefit.png
-      bch: No
-      btc: No
-      othercrypto: No
-      
-    - name: HealthMonthly
-      url: https://www.healthmonthly.co.uk/
-      img: HealthMonthly.png
-      region: eu
-      twitter: HealthMonthly
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: HealthVault (w/Microsoft Account)
-      url: https://www.healthvault.com
-      img: healthvault.png
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Hint Health
-      url: https://www.hint.com
-      img: hint.png
-      bch: No
-      btc: No
-      othercrypto: No
-      twitter: HintHealth
-      facebook: hinthealth
-
-    - name: iMedDo
-      url: http://imeddo.com/
-      img: imeddo.png
-      facebook: IMedDoHealth
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://www.facebook.com/IMedDoHealth/photos/a.319518064904669.1073741830.256288011227675/824360531087084/?type=3&theater
-      
-    - name: Lush
-      url: https://www.lush.com/
-      img: lush.png
-      facebook: lush
-      twitter: lushltd
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://uk.lush.com/help/faqs/website
-      
-    - name: Max Barbell
-      url: https://www.maxbarbell.com/
-      img: MAXbarbell.png
-      twitter: MAXbarbell
-      facebook: MAXbarbell
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: MedicAlert
-      url: https://www.medicalert.ca
-      img: medicalert.png
-      twitter: MedicAlertCA
-      bch: No
-      btc: No
-      othercrypto: No
-      
-    - name: Mermaid Perfume
-      url: https://mermaidperfume.com/
-      img: mermaidPerfume.png
-      twitter: mermaidperfume
-      facebook: shopmermaidperfume
-      email_address: info@mermaidperfume.com
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Misfit
-      url: https://misfit.com/
-      twitter: Misfit
-      img: misfit.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: myfitnesspal
-      url: https://www.myfitnesspal.com
-      twitter: myfitnesspal
-      facebook: myfitnesspal
-      img: myfitnesspal.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Nokia Health (Withings)
-      url: https://health.nokia.com/
-      twitter: NokiaHealth
-      facebook: NokiaHealth
-      img: nokiahealth.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Oak Grove
-      url: https://www.eichenhain.com/
-      img: oakgrove.png
-      twitter: Eichentweet
-      facebook: Eichenhain
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coingate
-
-    - name: Runtastic
-      url: https://www.runtastic.com/shop
-      twitter: Runtastic
-      facebook: runtastic
-      img: runtastic.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Shiny Leaf
-      url: https://www.shinyleaf.com
-      twitter: ShinyLeafUSA
-      facebook: shinyleafusa
-      img: shinyleaf.png
-      bch: yes
-      btc: no
-      othercrypto: no
-      doc: https://www.shinyleaf.com/promotions/bitcoin-cash-payment/
-
-    - name: Smile Acapulco
-      url: http://www.smileacapulco.com/
-      img: smileacapulco.png
-      twitter: smileacapulco
-      facebook: SmileAca
-      email_address: contacto@smileacapulco.com
-      country: MX
-      city: Acapulco
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      lang: es
-      
-    - name: Storm & Leif
-      url: https://www.stormandleif.com/
-      img: stormleif.png
-      twitter: stormandleif
-      facebook: stormandleif
-      email_address: info@stormandleif.com
-      region: na
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://www.stormandleif.com/blogs/journal/the-all-natural-deodorant-thats-now-cryptocurrency-friendly
-
-    - name: Thriva
-      url: https://thriva.co
-      twitter: thrivahealth
-      facebook: thriva
-      img: thriva.png
-      bch: No
-      btc: No
-      othercrypto: No
-      
-    - name: Transparent Labs
-      url: https://www.transparentlabs.com/
-      img: transparentlabs.png
-      facebook: transparentlabs
-      bch: Yes
-      btc: Yes
-      othercrypto: No
+- name: 23andMe
+  url: https://www.23andme.com/
+  twitter: 23andMe
+  facebook: 23andMe
+  img: 23andme.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Aveon Health
+  url: http://aveonhealth.com
+  twitter: aveonhealth
+  facebook: aveonhealth
+  img: aveonhealth.png
+  bch: false
+  btc: true
+  othercrypto: false
+- name: B12 Vitamin Store
+  url: https://b12vitaminstore.com/
+  img: B12VitaminStore.png
+  twitter: B12VitaminStore
+  facebook: b12vitaminstore
+  email_address: support@b12vitaminstore.com
+  region: na
+  country: US
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Beard Friendly
+  url: https://www.beardfriendly.com/
+  img: beardfriendly.png
+  twitter: Beard_Friendly
+  facebook: beardfriendly
+  bch: false
+  btc: true
+  othercrypto: false
+- name: Carilion Clinic
+  url: https://www.carilionclinic.org
+  img: carilionclinic.png
+  bch: false
+  btc: false
+  othercrypto: false
+  twitter: CarilionClinic
+  facebook: carilionclinic
+  email_address: direct@carilionclinic.org
+- name: Christers Hårvård
+  url: http://www.christersharvard.se/
+  facebook: christersharvard
+  img: christersharvard.png
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: http://www.christersharvard.se/priser/
+- name: CrossFit Spaarne
+  url: https://www.crossfitspaarne.nl/
+  img: crossfitspaarne.png
+  twitter: crossfitspaarne
+  email_address: info@crossfitspaarne.nl
+  region: eu
+  country: NL
+  city: Haarlem
+  bch: true
+  btc: false
+  othercrypto: true
+- name: CVS Caremark
+  url: https://www.caremark.com
+  twitter: CVSHealth
+  facebook: CVS
+  img: cvscaremark.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: drchrono
+  url: https://www.drchrono.com
+  img: drchrono.png
+  facebook: drchrono.ehr
+  twitter: drchrono
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Dreambody Clinic
+  url: https://dreambodyclinic.net/
+  img: dreambodyclinic.png
+  twitter: dreambodyclinic
+  facebook: dreambodyclinic
+  country: MX
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Drugs.com
+  url: https://www.drugs.com/
+  twitter: DrugsCom
+  facebook: Drugscom
+  img: drugscom.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Elation Health
+  url: https://www.elationhealth.com/
+  twitter: ElationHealth
+  facebook: ElationHealth
+  img: elationhealth.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: FitBit
+  url: https://www.fitbit.com/
+  twitter: fitbit
+  facebook: fitbit
+  img: fitbit.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Focused Taiwan 佛克斯台灣
+  url: https://focused.com.tw
+  img: focusedTaiwan.png
+  twitter: FocusedTaiwan
+  facebook: focusedTaiwan
+  email_address: kevin@majorbros.com
+  region: as
+  country: TW
+  bch: true
+  btc: false
+  othercrypto: false
+- name: FollowMyHealth
+  url: https://www.followmyhealth.com/
+  img: followmyhealth.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Google Fit
+  url: https://fit.google.com
+  img: googlefit.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: HealthMonthly
+  url: https://www.healthmonthly.co.uk/
+  img: HealthMonthly.png
+  region: eu
+  twitter: HealthMonthly
+  bch: true
+  btc: true
+  othercrypto: false
+- name: HealthVault (w/Microsoft Account)
+  url: https://www.healthvault.com
+  img: healthvault.png
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Hint Health
+  url: https://www.hint.com
+  img: hint.png
+  bch: false
+  btc: false
+  othercrypto: false
+  twitter: HintHealth
+  facebook: hinthealth
+- name: iMedDo
+  url: http://imeddo.com/
+  img: imeddo.png
+  facebook: IMedDoHealth
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.facebook.com/IMedDoHealth/photos/a.319518064904669.1073741830.256288011227675/824360531087084/?type=3&theater
+- name: Lush
+  url: https://www.lush.com/
+  img: lush.png
+  facebook: lush
+  twitter: lushltd
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://uk.lush.com/help/faqs/website
+- name: Max Barbell
+  url: https://www.maxbarbell.com/
+  img: MAXbarbell.png
+  twitter: MAXbarbell
+  facebook: MAXbarbell
+  bch: true
+  btc: true
+  othercrypto: false
+- name: MedicAlert
+  url: https://www.medicalert.ca
+  img: medicalert.png
+  twitter: MedicAlertCA
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Mermaid Perfume
+  url: https://mermaidperfume.com/
+  img: mermaidPerfume.png
+  twitter: mermaidperfume
+  facebook: shopmermaidperfume
+  email_address: info@mermaidperfume.com
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Misfit
+  url: https://misfit.com/
+  twitter: Misfit
+  img: misfit.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: myfitnesspal
+  url: https://www.myfitnesspal.com
+  twitter: myfitnesspal
+  facebook: myfitnesspal
+  img: myfitnesspal.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Nokia Health (Withings)
+  url: https://health.nokia.com/
+  twitter: NokiaHealth
+  facebook: NokiaHealth
+  img: nokiahealth.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Oak Grove
+  url: https://www.eichenhain.com/
+  img: oakgrove.png
+  twitter: Eichentweet
+  facebook: Eichenhain
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coingate
+- name: Runtastic
+  url: https://www.runtastic.com/shop
+  twitter: Runtastic
+  facebook: runtastic
+  img: runtastic.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Shiny Leaf
+  url: https://www.shinyleaf.com
+  twitter: ShinyLeafUSA
+  facebook: shinyleafusa
+  img: shinyleaf.png
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://www.shinyleaf.com/promotions/bitcoin-cash-payment/
+- name: Smile Acapulco
+  url: http://www.smileacapulco.com/
+  img: smileacapulco.png
+  twitter: smileacapulco
+  facebook: SmileAca
+  email_address: contacto@smileacapulco.com
+  country: MX
+  city: Acapulco
+  bch: true
+  btc: true
+  othercrypto: true
+  lang: es
+- name: Storm & Leif
+  url: https://www.stormandleif.com/
+  img: stormleif.png
+  twitter: stormandleif
+  facebook: stormandleif
+  email_address: info@stormandleif.com
+  region: na
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.stormandleif.com/blogs/journal/the-all-natural-deodorant-thats-now-cryptocurrency-friendly
+- name: Thriva
+  url: https://thriva.co
+  twitter: thrivahealth
+  facebook: thriva
+  img: thriva.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Transparent Labs
+  url: https://www.transparentlabs.com/
+  img: transparentlabs.png
+  facebook: transparentlabs
+  bch: true
+  btc: true
+  othercrypto: false
