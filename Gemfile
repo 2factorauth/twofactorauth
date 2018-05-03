@@ -4,8 +4,8 @@ source 'https://rubygems.org'
 gem 'github-pages', group: :jekyll_plugins
 
 group :test do
+  gem 'diff-lcs', platforms: :mswin
   gem 'diffy'
-  gem 'diff-lcs', :platforms => :mswin
   gem 'fastimage'
   gem 'html-proofer'
   gem 'kwalify'
