@@ -44,6 +44,13 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: BitPro
+  url: https://bitpro.cc
+  email_address: info@bitpro.cc
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
+  doc: https://www.reddit.com/r/Bitcoincash/comments/8gqi5v/payment_gateway_bch_surpassed_btc/
 - name: Braintree
   img: braintree.png
   twitter: Braintree
@@ -77,6 +84,16 @@ websites:
   bch: false
   btc: false
   othercrypto: false
+- name: CoinGate
+  url: https://coingate.com/
+  img: coingate.png
+  twitter: CoinGatecom
+  facebook: coingatecom
+  email_address: info@coingate.com
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://coingate.com/accept-altcoins
 - name: Coinify
   url: https://coinify.com
   img: coinify.png
