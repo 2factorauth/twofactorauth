@@ -306,6 +306,18 @@ websites:
   bch: false
   twitter: RockstarSupport
   facebook: rockstargames
+- name: RPG Stash
+  url: https://www.rpgstash.com/
+  img: rpgstash.png
+  twitter: rpgstash
+  facebook: rpgstash
+  email_address: support@rpgstash.com
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - bitpay
+  - coinpayments.net
 - name: RuneScape
   url: http://www.runescape.com/
   img: runescape.png
@@ -383,6 +395,8 @@ websites:
   othercrypto: false
   twitter: XboxSupport
   facebook: Xbox
+  exceptions:
+    text: "Limited to US customers only. Last checked May 4th, 2018"
 - name: YoYo Games
   url: https://www.yoyogames.com/
   img: yoyogames.png

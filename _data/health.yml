@@ -143,12 +143,14 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: HealthVault (w/Microsoft Account)
+- name: HealthVault (with Microsoft Account)
   url: https://www.healthvault.com
   img: healthvault.png
   bch: true
   btc: true
   othercrypto: false
+  exceptions:
+    text: "Limited to US customers only. Last checked May 4th, 2018"
 - name: Hint Health
   url: https://www.hint.com
   img: hint.png
