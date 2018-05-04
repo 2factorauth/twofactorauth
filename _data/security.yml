@@ -19,6 +19,20 @@ websites:
       tfa: No
       twitter: bolehvpn
 
+    - name: Boxcryptor
+      url: https://www.boxcryptor.com
+      img: boxcryptor.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.boxcryptor.com/help/boxcryptor-account/#two-factor-authentication
+
+    - name: bugcrowd
+      url: https://bugcrowd.com
+      img: bugcrowd.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.bugcrowd.com/v1.0/docs/two-factor-authentication-1
+
     - name: CAcert
       url: http://www.cacert.org/
       img: cacert.png
@@ -38,6 +52,7 @@ websites:
       url: https://www.cyberghostvpn.com
       img: cyberghost.png
       twitter: cyberghost_EN
+      facebook: cyberghostEN
       tfa: No
 
     - name: Detectify
@@ -97,6 +112,12 @@ websites:
       twitter: ipvanish
       facebook: ipvanish
 
+    - name: IVPN
+      url: https://www.ivpn.net/
+      twitter: ivpnnet
+      img: ivpn.png
+      tfa: No
+
     - name: NordVPN
       url: https://www.nordvpn.com
       img: nordvpn.png
@@ -105,13 +126,14 @@ websites:
       facebook: NordVPN
 
     - name: Norton
-      url: http://us.norton.com
+      url: https://us.norton.com
       img: norton.png
       tfa: Yes
       software: Yes
+      hardware: Yes
       sms: Yes
       phone: Yes
-      doc: https://login.norton.com/sso/embedded/learn2fa
+      doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us
 
     - name: OpenDNS
       url: https://www.opendns.com/
@@ -122,6 +144,13 @@ websites:
       exceptions:
           text: "Only available for enterprise accounts."
       doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
+
+    - name: Perfect Privacy VPN
+      url: https://www.perfect-privacy.com/
+      img: perfectprivacyvpn.png
+      tfa: No
+      twitter: perfectprivacy
+      facebook: perfect.privacy
 
     - name: Prey
       url: https://www.preyproject.com
@@ -143,6 +172,7 @@ websites:
       software: Yes
       exceptions:
           text: "TFA can be enabled on Pwn Pulse Accounts upon customer request."
+      doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909-chapter-5-pulse-administration-user-management
 
     - name: RBLTracker
       url: https://rbltracker.com/
@@ -157,6 +187,12 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
+
+    - name: Threat X
+      url: https://threat-x.com/
+      img: threatx.png
+      tfa: Yes
+      software: Yes
 
     - name: ThreatConnect
       url: https://threatconnect.com/
@@ -204,7 +240,7 @@ websites:
       tfa: No
 
     - name: Webroot
-      url: http://www.webroot.com
+      url: https://www.webroot.com
       img: webroot.png
       twitter: Webroot
       tfa: No
