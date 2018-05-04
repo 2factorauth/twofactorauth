@@ -22,9 +22,11 @@ websites:
   img: baconsheir.png
   facebook: PorkClouds
   twitter: BaconsHeir
-  btc: true
+  btc: false
   bch: false
   othercrypto: false
+  exceptions:
+    text: "Used to accept Bitcoin but was disabled after Coinbase Merchant Tools were discontinued. Last checked May 5th, 2018"
 - name: Bar Foxx
   url: http://barfoxx.com
   img: barfoxx.png
