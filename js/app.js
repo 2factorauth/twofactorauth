@@ -99,11 +99,6 @@ $(document).ready(function () {
     $('head style').html("");
   });
 
-  $('.submit-new').on('click', function () {
-    $('.ui.long.modal.google-form').modal('show');
-    return false;
-  });
-
   $('#ama-merchant').on('click', function () {
     $('.ui.modal.ama-merchant').modal('show');
   });
