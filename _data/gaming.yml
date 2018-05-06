@@ -104,7 +104,6 @@ websites:
   bch: false
   btc: true
   othercrypto: false
-  doc: https://www.prnewswire.com/news-releases/gaming-giant-g2a-now-accepts-bitcoin-through-partnership-with-bitpay-532144142.html
 - name: G2G
   url: https://www.g2g.com
   img: g2g.png
@@ -229,6 +228,17 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.mmoga.com/payment_methods/Bitcoin-and-Altcoins.html
+- name: MOGS
+  url: https://www.mogs.com/
+  img: mogs.png
+  twitter: mogscom
+  facebook: mogscom
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
 - name: Mojang
   url: https://mojang.com/
   img: mojang.png
