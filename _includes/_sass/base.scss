@@ -515,7 +515,7 @@ p {
       }
     }
 
-    &.fixto-fixed {
+    &.fixed.top {
       z-index: 10000;
       background: $gray;
       color: $orange;
@@ -1539,7 +1539,7 @@ span.progress {
         }
       }
 
-      &.fixto-fixed {
+      &.fixed.top {
         padding: 0 11px;
         border-width: 0 0 2px;
         border-radius: 0;

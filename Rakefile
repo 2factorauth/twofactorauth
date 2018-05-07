@@ -51,7 +51,13 @@ def check_site(options = {})
     check_favicon: true,
     check_opengraph: true,
     file_ignore: ["#{dir}/google75bd212ec246ba4f.html"],
-    url_ignore: ['/add', 'https://fonts.gstatic.com/'],
+    url_ignore: ['/add',
+                 'https://fonts.gstatic.com/',
+                 'https://abs.twimg.com',
+                 'https://cdn.syndication.twimg.com',
+                 'https://fonts.googleapis.com/',
+                 'https://pbs.twimg.com',
+                 'https://syndication.twitter.com'],
     cache: { timeframe: '1w' }
   }
   HTMLProofer.check_directory(dir, defaults.merge(options)).run
