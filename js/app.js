@@ -44,8 +44,12 @@ $(document).ready(function () {
   });
 
   // Stick the BCH-only filter to the top on scroll
-  $('.bch-only').fixTo('html', {
-    useNativeSticky: false
+  $('.ui.sticky.bch-only').sticky({
+		onStick: function(){
+			$(this).css({
+				height: 'auto'
+			});
+		}
   });
 
   // Scroll to the top via floating action button and filter bar link, then pop some flair
