@@ -16,7 +16,7 @@ stages:
   - name: imgbot
     if: sender IN (svenfuchs, imgbot[bot])
   - name: Run build
-    if: type IN (push, cron)
+    if: type IN (push, cron) AND (branch = master OR tag IS present)
 jobs:
   include:
     - &test-baseline
@@ -56,7 +56,7 @@ jobs:
         # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push acceptbitcoincash/acceptbitcoincash
           docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; docker push acceptbitcoincash/acceptbitcoincash
         on:
-          tags: true
+          all_branches: true # <== new!
           condition: $NEXT_BUILD_TAG != "latest"
       - provider: pages
         skip-cleanup: true
@@ -66,7 +66,7 @@ jobs:
         repo: acceptbitcoincash/acceptbitcoincash
         target_branch: gh-pages
         on:
-          tags: true
+          all_branches: true # <== new!
   allow_failures:
     - stage: Test
       script:
