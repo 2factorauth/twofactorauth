@@ -39,9 +39,9 @@ $(document).ready(function () {
 		  $('#ticker_value').html(output);
 		}
 	  }).done(function () {
-		setTimeout(function(){ ticker(ticker_currencies); }, 30000);
+		setTimeout(function(){ ticker(ticker_currencies); }, 60000);
 	  }).fail(function() {
-		setTimeout(function(){ ticker(ticker_currencies); }, 30000);
+		setTimeout(function(){ ticker(ticker_currencies); }, 60000);
 	  });
 	}
 
