@@ -1301,11 +1301,22 @@ span.progress {
   }
 }
 
-/*
-#ama-merchant {
-  background-color: #BF5700;
+.ama-merchant {
+  h3 {
+    margin-bottom: 1rem;
+    font-weight: normal;
+    text-align: center;
+
+    big {
+      font-weight: bold;
+    }
+  }
+  h4 {
+    margin-bottom: 2rem;
+  }
 }
 
+/*
 #ama-customer {
   background-color: #007373;
 }
