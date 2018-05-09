@@ -42,18 +42,18 @@
           <p>Supported:</p>
           {%- if website.bch -%}
           <div class="mobile-logo coin-wrap green-coin-wrap">
-				  <noscript>
-				    <img src="/img/coin-bch.png" alt="Bitcoin Cash" height="40">
-				  </noscript>
+            <noscript>
+              <img src="/img/coin-bch.png" alt="Bitcoin Cash" height="40">
+            </noscript>
             <img src="{{ page.img_placeholder }}" data-src="/img/coin-bch.png" alt="Bitcoin Cash" height="40">
           </div>
           {%- endif -%}
           {%- if website.btc -%}
           <div class="mobile-logo coin-wrap orange-coin-wrap">
-            <noscript>
-              <img src="/img/coin-btc.png" alt="Bitcoin (Legacy)" height="40">
-            </noscript>
-            <img src="{{ page.img_placeholder }}" data-src="/img/coin-btc.png" alt="Bitcoin (Legacy)" height="40">
+            <span class="coin-wrap orange-coin-wrap btc-mobile-icon">
+              <span class="btc-b"></span>
+              <i class="bitcoin big icon"></i>
+            </span>
           </div>
           {%- endif -%}
           {%- if website.othercrypto -%}
@@ -70,10 +70,10 @@
 			{%- assign social_count = social_count | plus: '1' -%}
     		<a title="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" class="ui twitter mini button" href="https://twitter.com/share?url={{site.twitter_url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank">Ask on <i class="twitter big icon"></i></a>
     		{%- endif -%}
-            {%- if website.facebook -%} 
+            {%- if website.facebook -%}
 			{%- assign social_count = social_count | plus: '1' -%}
 			<a title="{{page.link_facebook|replace:'FACEBOOKHANDLE',website.facebook}}" class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank">Ask on <i class="facebook big icon"></i></a>{%- endif -%}
-            {%- if website.email_address and social_count < 2 -%} 			
+            {%- if website.email_address and social_count < 2 -%}
 			{%- assign social_count = social_count | plus: '1' -%}
 			<a title="Send an e-mail to {{website.name}}" class="ui green mini button" href="mailto:{{website.email_address}}?subject={{page.email_subject}}" target="_blank">Ask via <i class="mail big icon"></i></a>{%- endif -%}
             {%- endif -%}
