@@ -38,11 +38,6 @@ $(document).ready(function () {
     openCategory(window.location.hash.substring(1));
   }
 
-  // Some frilly animations on click of the main Bitcoin Cash logo
-  $('#coin-toggle').click(function (){
-    coinEffect();
-  });
-
   // Stick the BCH-only filter to the top on scroll
   $('.ui.sticky.bch-only').sticky({
 		onStick: function(){
@@ -143,9 +138,6 @@ $(document).ready(function () {
     label: 'percent',
     showActivity: false
   });
-
-  // Retrieve latest production version
-  //getLatestRelease();
 });
 
 /**
@@ -168,41 +160,6 @@ function coinEffect() {
   setTimeout(
     function(){ rightSideCoin.addClass('top-side-right-side-force') }
   , 1);
-}
-
-function getLatestRelease() {
-  var githubfeed = $.getJSON("https://api.github.com/repos/acceptbitcoincash/acceptbitcoincash/releases/latest", function(data){
-    $("span.version").html('Current Release: <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/releases/latest" target="_blank" data-tooltip="Read the ' + data.tag_name + ' release notes" data-position="top center" data-inverted=""><i class="tag icon"></i><b>' + data.tag_name + '</b></a> &nbsp;&bull;&nbsp; <a href="https://github.com/acceptbitcoincash/acceptbitcoincash/compare/' + data.tag_name + '...master" target="_blank" data-tooltip="View a list of approved commits that have not yet been deployed to this site" data-position="top center" data-inverted="">Upcoming changes <i class="sign in icon"></i></a>');
-  });
-}
-
-
-// Set a cookie to store prefs
-function createCookie(name,value,days) {
-  var expires = "";
-  if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days*24*60*60*1000));
-      expires = "; expires=" + date.toUTCString();
-  }
-  document.cookie = name + "=" + value + expires + "; path=/";
-}
-
-// Get a cookie to read prefs
-function readCookie(name) {
-  var nameEQ = name + "=";
-  var ca = document.cookie.split(';');
-  for(var i=0;i < ca.length;i++) {
-      var c = ca[i];
-      while (c.charAt(0)==' ') c = c.substring(1,c.length);
-      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-  }
-  return null;
-}
-
-// Clean up the cookie crumbs
-function eraseCookie(name) {
-  createCookie(name,"",-1);
 }
 
 /**
@@ -249,13 +206,12 @@ if(document.getElementById('bch-merchant-search') instanceof Object){
 		  $('.category').hide();
 		  table.css('display', 'block');
 		  content.parent().show();
-		  var l = content.length;
-		  for(var i = 0; i < l; i++) {
-			var section = content[i];
+		  for(var i = 0; i < content.length; i++) {
+			var section = $(content[i]);
 			// Hide table when all rows within are hidden by Jets
-			if ($(section).children(':hidden').length === $(section).children().length) {
-			  if (platform == 'mobile') $(section).parent().hide();
-			  else $(section).parent().parent().hide();
+			if (section.children(':hidden').length === section.children().length) {
+			  if (platform == 'mobile') section.parent().hide();
+			  else section.parent().parent().hide();
 			}
 		  }
 
@@ -311,15 +267,14 @@ function BCHfilter() {
     $('.bch-only-none-found').css('display', 'table-row');
     $('.bch-only-none-found-mobile').css('display', 'block');
     $('.bch-only-hidden').css('opacity', '0.4');
-    if (isSearching) jets.options.didSearch( $('#bch-merchant-search').val() );
   } else {
     $('.website-table:visible img').trigger('unveil');
     $('.bch-only-none-found, .bch-only-none-found-mobile').css('display', 'none');
     $('.bch-only-hidden').css('opacity', '1');
     $('.mobile-table .no-bch').css('display', 'block');
     $('.desktop-table .no-bch').css('display', 'table-row');
-    if (isSearching) jets.options.didSearch( $('#bch-merchant-search').val() );
   }
+  if (isSearching) jets.options.didSearch( $('#bch-merchant-search').val() );
 }
 
 /**
