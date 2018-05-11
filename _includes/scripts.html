@@ -13,11 +13,11 @@
 
 {% if page.id == "adult-listings" %}
 <!-- Adult section warning modal -->
-  <script>
+<script>
     $(document).ready(function () {
 
       $('#adult-warning-checkbox').click(function(){
-        if($(this).prop('checked')) {
+        if( $(this).prop('checked') ) {
           createCookie('hideAdultWarning')
         } else {
           eraseCookie('hideAdultWarning')
@@ -29,7 +29,7 @@
           .modal('setting','closable', false)
           .modal('show');
       }
-
     });
-  </script>
+    {% include js/cookie.js %}
+</script>
 {% endif %}
