@@ -23,7 +23,7 @@ We offer two easy ways to submit a new site to be listed.
 - `twitter` -- Twitter Username (no @ symbol)
 - `facebook` -- Facebook Username or Page URL
 - `region` -- Region (see region code list below)
-- `country` -- Country (see wikipedia link below)
+- `country` -- Country (see Wikipedia link below)
 - _(Optional)_ `city` -- City (capitalize name)
 - `bch` -- Accepting Bitcoin Cash (yes/no)
 - `btc` -- Accepting Bitcoin Legacy (yes/no)
