@@ -206,8 +206,6 @@ The following is an example of a website that *does not* support BCH:
       othercrypto: yes
 ```
 
-The `region:` field codes should be 2-character lowercase [ISO_3166-1_alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) codes.
-
 ### Exceptions & Restrictions
 
 If a site has an exception or important detail regarding BCH, you can note this on the
