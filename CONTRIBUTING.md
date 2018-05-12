@@ -33,9 +33,9 @@ We offer two easy ways to submit a new site to be listed.
 - _(Optional)_ `lang` -- Language if not `en` (see Wikipedia link below)
 - _(Optional)_ `keywords/-` -- words that can be useful for users that are trying to search for something that relates to this listing.
 
-For 2-letter _country_ codes, use [ISO_3166-1_alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) codes.
+For 2-letter _country_ codes, use [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) codes.
 
-For 2-letter _language_ codes, use [ISO_639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
+For 2-letter _language_ codes, use [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
 
 For 2-letter _region_ codes, use:
 
