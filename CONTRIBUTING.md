@@ -1,4 +1,4 @@
-Contributing to TwoFactorAuth.org
+Contributing to DongleAuth.info 
 =======================
 
 All the data is managed through a series of [Yaml][yaml] files so it may be
@@ -99,7 +99,7 @@ id, using the `.yml` extension.
 ## New Sites
 
 First and foremost, make sure the new site meets our [definition
-requirements](#a-note-on-definitions) of Two Factor Auth.
+requirements](#a-note-on-definitions) of DongleAuth.
 
 If you are adding multiple sites to the TwoFactorAuth list, please create a new
 git branch for each website, and submit a separate pull request for each branch.
@@ -116,11 +116,9 @@ websites:
     url: https://www.site.com/
     img: site.png
     tfa: Yes
-    sms: Yes
-    email: Yes
-    phone: Yes
-    software: Yes
     hardware: Yes
+    otp: Yes
+    u2f: Yes
     doc: <link to site TFA documentation>
 ```
 
@@ -129,8 +127,7 @@ The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
 #### Adding a site that *supports* TFA
 
 If a site does provide TFA, it is strongly recommended that you add the `doc:`
-field where public documentation is available. Other fields should be included
-if the website supports them. Any services that are not supported can be excluded.
+field where public documentation is available. 
 Sites supporting TFA should not have a Twitter, Facebook or Email field.
 
 The following is an example of a website that *supports* TFA:
@@ -140,10 +137,9 @@ The following is an example of a website that *supports* TFA:
       url: https://www.youtube.com/
       img: youtube.png
       tfa: Yes
-      sms: Yes
-      software: Yes
-      phone: Yes
       hardware: Yes
+      otp: Yes
+      u2f: No
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 ```
 
@@ -152,8 +148,7 @@ The following is an example of a website that *supports* TFA:
 If a site does not provide TFA, the `twitter:` field should be included if the site uses
 Twitter. Facebook can also be included using the `facebook` field, as well as Email using
 the `email_address` field. If the website does not use the English language, the `lang:`
-field should also be included. The fields `sms:`, `email:`, `phone:`, `software:` and
-`hardware:` can be completely removed.
+field should also be included.
 
 The following is an example of a website that *does not* support TFA:
 
@@ -165,6 +160,7 @@ The following is an example of a website that *does not* support TFA:
       email_address: example@netflix.com (Only if available and monitored)
       img: netflix.png
       tfa: No
+      hardware: No
       lang: <ISO 639-1 language code> (Only for non-English websites)
 ```
 
@@ -183,7 +179,7 @@ website. There are 4 ways to customize how it is displayed:
       url: https://www.site.com/
       img: site.png
       tfa: Yes
-      sms: Yes
+      hardware: Yes
       exceptions: Yes
       doc: <link to site TFA documentation>
    ```
@@ -194,7 +190,7 @@ website. There are 4 ways to customize how it is displayed:
       url: https://www.site.com/
       img: site.png
       tfa: Yes
-      sms: Yes
+      hardware: Yes
       exceptions:
           text: "Specific text goes here."
       doc: <link to site TFA documentation>
@@ -207,7 +203,7 @@ website. There are 4 ways to customize how it is displayed:
       url: https://www.site.com/
       img: site.png
       tfa: Yes
-      sms: Yes
+      hardware: Yes
       exceptions:
           link: Yes
       doc: <link to site TFA documentation>
@@ -219,7 +215,7 @@ website. There are 4 ways to customize how it is displayed:
       url: https://www.site.com/
       img: site.png
       tfa: Yes
-      sms: Yes
+      hardware: Yes
       exceptions:
           link: Yes
           text: "Specific text can go here as well."
@@ -248,6 +244,8 @@ website. There are 4 ways to customize how it is displayed:
 
 ## A Note on Definitions
 
+There are many forms of Two Factor Auth, but DongleAuth.info is only interested in listing sites that support Two Factor Authentication using USB dongles. Currently that means the site must support either One Time Passwords (HOTP / RFC 4226 or TOTP / RFC 6238) or FIDO Universal 2nd Factor (U2F).
+
 A lot of people have different ideas of what constitutes Two Factor Auth and
 what doesn't, so it stands to reason that we should clarify a bit. For the
 purposes of this site, Two Factor Auth is defined as any service provided as a
@@ -267,5 +265,5 @@ For context, check out the discussion in issue [#242][242].
 [bundler]: http://bundler.io/
 [gemfile]: /Gemfile
 [jekyll]: http://jekyllrb.com/
-[travis]: https://travis-ci.org/2factorauth/twofactorauth
+[travis]: https://travis-ci.org/nitrokey/dongleauth
 [yaml]: http://www.yaml.org/
