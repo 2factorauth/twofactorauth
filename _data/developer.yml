@@ -80,7 +80,7 @@ websites:
       doc: https://kb.builtwith.com/account-management/how-to-enable-2fa-on-builtwith/
 
     - name: Cedexis
-      url: http://www.cedexis.com/
+      url: https://www.cedexis.com/
       img: cedexis.png
       tfa: No
       twitter: Cedexis
@@ -116,16 +116,16 @@ websites:
       img: codeanywhere.png
       tfa: Yes
       sms: Yes
-      doc: https://blog.codeanywhere.com/codeanywhere-now-offers-two-factor-authentication/
+      doc: https://docs.codeanywhere.com/features/twofactorauth.html
       exceptions:
           text: "Only available on paid accounts at $7/10 per month (annual/monthly) or more."
 
     - name: Codeship
       url: https://codeship.com/
-      twitter: codeship
-      facebook: codeship
       img: codeship.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://documentation.codeship.com/general/about/2fa/
 
     - name: Compose.io
       url: https://www.compose.io/
@@ -143,10 +143,17 @@ websites:
       doc: https://context.io/security-faq
 
     - name: Deploybot
-      url: http://deploybot.com/
+      url: https://deploybot.com/
       twitter: deploybothq
       img: deploybot.png
       tfa: No
+
+    - name: DeployHQ
+      url: https://www.deployhq.com/
+      img: deployhq.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.deployhq.com/support/managing-your-account/personal-profile/two-factor-authentication
 
     - name: Docker
       url: https://www.docker.com/
@@ -191,7 +198,7 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
-      doc: https://docs.gitlab.com/ee/security/two_factor_authentication.html
+      doc: https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html
 
     - name: Hashicorp Atlas
       url: https://atlas.hashicorp.com/
@@ -473,12 +480,12 @@ websites:
       tfa: No
 
     - name: Visual Studio Online
-      url: http://www.visualstudio.com/
+      url: https://www.visualstudio.com/
       img: visualstudio.png
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+      doc: https://windows.microsoft.com/en-us/windows/two-step-verification-faq
 
     - name: Zapier
       url: https://zapier.com

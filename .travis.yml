@@ -1,5 +1,4 @@
 sudo: false
-language: ruby
 rvm: 2.4.0
 os: linux
 cache:
@@ -11,6 +10,7 @@ addons:
     - libcurl4-openssl-dev
     - ca-certificates
 matrix:
+  fast_finish: true
   include:
     - script: bundle exec rake
     - script: bundle exec rake proof_external
