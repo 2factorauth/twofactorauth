@@ -13,6 +13,8 @@ The goal is to build a website ([dongleauth.info](https://www.dongleauth.info)) 
 Our hope is to aid consumers who are deciding between alternative services based on the security they
 offer for their customers. This can also serve as an indicator for the effort a site has put into security in general.
 
+This site is a fork of [TwoFactorAuth](twofactorauth.org). The fork is necessary to further differentiate the 'Hardware' section. The TwoFactorAuth projects wants to give a general overview and do not wants to mark the technical details as well. We respect this decision. In need of a differentiation between OTP and U2F we decided to fork the project. Please see [the note on definitions][https://github.com/Nitrokey/dongleauth/blob/device_authenticators/CONTRIBUTING.md#a-note-on-definitions] as well.
+
 ## Contributing
 
 If you'd like to contribute, read the entire guidelines here in
