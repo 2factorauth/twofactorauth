@@ -194,7 +194,6 @@ websites:
       img: github.png
       tfa: Yes
       sms: Yes
-      hardware: Yes
       software: Yes
       hardware: Yes
       otp: Yes
@@ -247,18 +246,10 @@ websites:
       software: Yes
       doc: https://www.koding.com/blog/2015/06/two-factor-authentication/
 
-    - name: Koding
-      url: https://koding.com
-      img: koding.png
-      tfa: Yes
-      software: Yes
-      doc: http://learn.koding.com/guides/2-factor-auth/
-
     - name: Launchpad
       url: https://launchpad.net
       img: launchpad.png
       tfa: Yes
-      hardware: Yes
       software: Yes
       hardware: Yes
       otp: Yes

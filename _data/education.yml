@@ -282,44 +282,6 @@ websites:
       software: Yes
       doc: https://computerservices.temple.edu/two-step-verification
 
-    - name: PushCoin
-      url: https://pushcoin.com
-      img: pushcoin.png
-      tfa: Yes
-      hardware: Yes
-      exceptions:
-          text: "U2F support only for school admin accounts. 2FA for parent accounts is in progress."
-      doc: http://knowhow.pushcoin.com/using-security-key-for-2-step-verification/
-
-    - name: Robert Morris University
-      url: https://sentry.rmu.edu/login
-      twitter: rmu
-      facebook: RMUpgh
-      img: rmu.png
-      tfa: No
-
-    - name: Royal Roads University
-      url: http://www.royalroads.ca
-      twitter: RoyalRoads
-      facebook: royalroadsu
-      img: royalroads.png
-      tfa: No
-
-    - name: SchoolSoft
-      url: http://schoolsoft.se/
-      img: schoolsoft.png
-      email_address: support@schoolsoft.se
-      tfa: No
-
-    - name: Temple University
-      url: https://www.temple.edu/
-      img: templeuniversity.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://computerservices.temple.edu/two-step-verification
-
     - name: Udacity
       url: https://www.udacity.com/
       twitter: udacity
