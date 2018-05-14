@@ -22,6 +22,8 @@ websites:
       img: buycraft.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       sms: Yes
       exceptions:
           text: "SMS-capable phone required."
@@ -32,6 +34,8 @@ websites:
       img: dwolla.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: http://help.dwolla.com/customer/portal/articles/2068158-two-factor-authentication-faq?b_id=5438
 
     - name: Flattr
@@ -54,6 +58,8 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
+      u2f: Yes
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Klarna
@@ -166,6 +172,8 @@ websites:
       sms: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
+      u2f: Yes
       doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
 
     - name: Vantiv

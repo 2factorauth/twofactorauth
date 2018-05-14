@@ -35,6 +35,8 @@ websites:
       sms: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
+      u2f: Yes
       doc: https://support.bitfinex.com/hc/en-us/sections/203192029-Security
 
     - name: BitGo
@@ -58,6 +60,8 @@ websites:
       img: bitpay.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://bitpay.com/two-factor
 
     - name: Bitstamp
@@ -82,6 +86,7 @@ websites:
       email: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
       doc: https://support.blockchain.com/hc/en-us/articles/211164103-Enable-2-Step-Verification-2FA-
 
     - name: BTCJam
@@ -96,6 +101,8 @@ websites:
       img: campbx.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://campbx.com/faq.php#security-compliance
 
     - name: CEX.IO
@@ -136,6 +143,9 @@ websites:
       sms: Yes
       software: Yes
       phone: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: No
       doc: https://support.coinbase.com/customer/en/portal/articles/1658338-how-do-i-set-up-2-factor-authentication-with-authy-
 
     - name: Coinfloor
@@ -169,6 +179,8 @@ websites:
       tfa: Yes
       software: Yes
       sms: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://support.coinjar.com/kb/using-coinjar/keeping-your-coinjar-secure-with-multi-factor-authentication
 
     - name: Coins.ph
@@ -188,10 +200,11 @@ websites:
     - name: Kraken
       url: https://www.kraken.com/
       img: kraken.png
-      doc: https://support.kraken.com/hc/en-us/articles/203395513-How-do-I-set-up-two-factor-authentication-
       tfa: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
+      doc: https://support.kraken.com/hc/en-us/articles/203395513-How-do-I-set-up-two-factor-authentication-
 
     - name: LiteBit
       url: https://www.litebit.eu/
@@ -205,6 +218,8 @@ websites:
       img: localbitcoins.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://localbitcoins.blogspot.com.au/2013/05/using-two-factor-authentication-on.html
 
     - name: Luno

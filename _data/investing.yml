@@ -16,8 +16,11 @@ websites:
       url: https://www.betterment.com/
       img: betterment.png
       tfa: Yes
-      software: Yes
       sms: Yes
+      software: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: No
       doc: https://support.betterment.com/customer/en/portal/topics/1026376-two-factor-authentication-2fa-?b_id=9042
 
     - name: Charles Schwab
@@ -162,6 +165,12 @@ websites:
       url: https://www.scottrade.com/
       twitter: scottrade
       img: scottrade.png
+      tfa: No
+
+    - name: Sharebuilder
+      url: https://www.sharebuilder.com/
+      twitter: sharebuilder
+      img: sharebuilder.png
       tfa: No
 
     - name: SigFig

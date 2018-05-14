@@ -24,6 +24,8 @@ websites:
       img: amazon.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       sms: Yes
       exceptions:
           text: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
@@ -35,6 +37,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
+      opt: Yes
       exceptions:
           text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
       doc: http://support.apple.com/kb/ht5570

@@ -113,6 +113,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
 
     - name: Clickworker
@@ -312,6 +314,8 @@ websites:
       sms: Yes
       phone: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://www.kickstarter.com/help/faq/backer+questions#faq_63004
 
     - name: Liftopia
@@ -329,6 +333,25 @@ websites:
       email: Yes
       software: Yes
       doc: https://www.mathworks.com/mw_account/two_step_verification/frequently-asked-questions.html
+
+    - name: Linux PAM
+      url: http://www.linux-pam.org/
+      img: pam.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: Yes
+      doc: https://github.com/Yubico/pam-u2f
+
+    - name: Mandrill
+      url: https://mandrill.com/
+      img: mandrill.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      otp: Yes
+      doc: http://help.mandrill.com/entries/57465557
 
     - name: Mixpanel
       url: https://mixpanel.com/
@@ -378,8 +401,10 @@ websites:
     - name: PhraseApp
       url: https://phraseapp.com
       img: phraseapp.png
-      software: Yes
       tfa: Yes
+      software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://phraseapp.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
 
     - name: Pinboard
@@ -516,6 +541,16 @@ websites:
       img: wikipedia.png
       tfa: No
 
+    - name: WordPress (software)
+      url: https://wordpress.org
+      img: wordpress.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: Yes
+      doc: https://github.com/georgestephanis/two-factor
+
     - name: Yclas
       url: https://yclas.com/
       img: yclas.png
@@ -527,6 +562,9 @@ websites:
       url: https://www.zendesk.com
       img: zendesk.png
       tfa: Yes
-      software: Yes
       sms: Yes
+      software: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: No
       doc: https://support.zendesk.com/hc/en-us/articles/203824246

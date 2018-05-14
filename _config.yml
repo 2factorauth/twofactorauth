@@ -1,14 +1,13 @@
 permalink: pretty
 markdown: kramdown
 
-title: Two Factor Auth List
-author: Josh Davis
+title: USB Dongle Authentication 
+author: Nitrokey 
 description:
-    List of sites with Two Factor Auth support which includes SMS, email,
-    phone calls, hardware, and software.
-url: https://twofactorauth.org
-repo: https://github.com/2factorauth/twofactorauth
-img: img/logo.png
+    List of websites and whether or not they support One Time Passwords (OTP) or Universal 2nd Factor (U2F).
+url: https://dongleauth.org
+repo: https://github.com/nitrokey/dongleauth
+img: img/usb_stick.png
 
 exclude:
     - CNAME
@@ -18,6 +17,7 @@ exclude:
     - LICENSE
     - README.md
     - Rakefile
+    - UPSTREAM_DIFF.md
     - verify.rb
     - vendor
     - websites_schema.yml

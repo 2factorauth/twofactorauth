@@ -5,6 +5,7 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
+      software: Yes
       doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
     - name: FastMail
@@ -14,6 +15,8 @@ websites:
       sms: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
+      u2f: Yes
       doc: https://www.fastmail.com/help/account/2fa.html
 
     - name: Freenet
@@ -30,6 +33,8 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
+      u2f: Yes
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: GMX
@@ -45,6 +50,8 @@ websites:
       sms: Yes
       email: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://help.hushmail.com/entries/63282756-Two-step-verification
 
     - name: Legalmail
@@ -84,6 +91,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
       doc: https://support-en.mailbox.org/knowledge-base/article/is-there-a-two-factor-authentication
 
     - name: Mailfence
@@ -111,6 +119,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
 
     - name: Pobox
@@ -119,6 +129,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
       doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
 
     - name: Posteo
@@ -126,6 +137,9 @@ websites:
       img: posteo.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: No
       doc: https://posteo.de/en/help/what-is-two-factor-authentication-and-how-do-i-set-it-up
 
     - name: ProtonMail
@@ -133,6 +147,8 @@ websites:
       img: protonmail.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://protonmail.com/support/knowledge-base/two-factor-authentication/
 
     - name: Riseup Mail
@@ -150,9 +166,12 @@ websites:
 
     - name: StartMail
       url: https://www.startmail.com
+      twitter: MyStartMail
       img: startmail.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704/4/how-to-set-up-two-factor-authentication-2fa
 
     - name: T-Online

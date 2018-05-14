@@ -300,6 +300,23 @@ span.progress {
   padding-left: 10%;
 }
 
+.ui.menu .item.sponsored {
+  float: right;
+  width: 265px;
+  background: url(../img/nitrokey.png) no-repeat 145px 10px;
+  background-size: auto 30px;
+}
+
+a.recommend {
+  font-weight: bold;
+}
+a.recommend::after {
+  content: "\f005";
+  font-family: 'Icons';
+  font-size: 14px;
+  margin-left: 4px;
+}
+
 @media(max-width: 768px) {
   .mobile-table {
     display: block;
