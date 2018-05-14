@@ -10,9 +10,13 @@ websites:
       url: https://bitbay.net/
       img: bitbay.png
       tfa: Yes
-      sms: Yes
+      sms: No
+      email: Yes
       software: Yes
-      doc: https://www.youtube.com/watch?v=KFvoNHgl9Pw
+      hardware: Yes
+      otp: Yes
+      u2f: No
+      doc: https://bitbay.net/en/safety
 
     - name: Bitcoin.de
       url: https://bitcoin.de
