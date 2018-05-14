@@ -50,7 +50,9 @@ websites:
       hardware: Yes
       otp: Yes
       u2f: Yes
-      doc: https://support.dashlane.com/hc/en-us/articles/202625042-Protect-your-account-using-Two-Factor-Authentication#title3
+      exceptions:
+        text: "Premium account required for FIDO U2F."
+      doc: https://support.dashlane.com/hc/en-us/articles/202625042-Protect-your-account-using-Two-Factor-Authentication
 
     - name: Digidentity
       url: https://www.digidentity.eu/en/
