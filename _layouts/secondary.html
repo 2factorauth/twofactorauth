@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv='Content-Security-Policy' content="
+    script-src
+      'self'
+      https://ajax.cloudflare.com
+      https://code.jquery.com
+      https://cdnjs.cloudflare.com;
+    style-src
+      'self'
+      'unsafe-inline'
+      https://fonts.googleapis.com
+      https://cdnjs.cloudflare.com;
+    font-src
+      'self'
+      data:
+      https://fonts.gstatic.com
+      https://cdnjs.cloudflare.com;
+    img-src
+      'self';
+  ">
+  <meta charset="UTF-8">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/img/logo.png"/>
+
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ site.url }}/{{ site.img }}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:description" content="{{ page.description }}">
+
+  <title>{{ site.title }}</title>
+
+  <!-- Google Fonts should not use SRI hashes as the CSS served dynamically changes depending on browser -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css"
+        integrity="sha384-OWA++c6zXatjdqJdL8H+05IXMubqBVwUdl1Cd9GzMwpjc9lBoy0rSYmTLtj1IDKv" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/notes.css">
+</head>
+
+<body>
+<div class="ui teal inverted menu">
+  <a href="/" class="item">
+    <i class="home icon"></i>
+    Home
+  </a>
+
+  <div class="right menu">
+    <a href="{{ site.repo }}" class="item">
+      <i class="github alternate icon"></i>
+      Contribute
+    </a>
+  </div>
+</div>
+
+{{ content }}
+
+<div class="ui divider"></div>
+
+<div class="footer ui basic center aligned segment">
+  See an issue or want to add to this website? Fork it or create an issue on
+  <a href="{{ site.repo }}">GitHub</a>.
+</div>
+
+<div class="ui divider"></div>
+
+<div class="footer ui basic center aligned segment">
+    A friendly fork of 
+    <a href="https://github.com/2factorauth/twofactorauth/">Josh Davis's Two Factor Auth</a>
+    by 
+    <a href="https://www.nitrokey.com">Nitrokey</a>.
+</div>
+
+<!-- 3rd Party Libraries -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"
+	integrity="sha384-xfhRYqbW4Asj6UIfXB+Fp7GsmhF9uCf4R+oIGrp7YaBMAmlQWihnvGrW2WbdQRIS"
+	crossorigin="anonymous"></script>
+</body>
+</html>

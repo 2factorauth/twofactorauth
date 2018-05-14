@@ -2,77 +2,91 @@
 layout: default
 
 link: Tell them to support USB dongle auth
+link_mobile: TWEET THEM
 tweet: Security is important, @TWITTERHANDLE. We'd like it if you supported auth with USB dongles.
 
 link_progress: Thank them for working on USB dongle auth
+link_progress_mobile: THANK THEM
 tweet_progress: Thanks for working on support for USB dongle auth, @TWITTERHANDLE!
 hash: SupportDongleAuth
 ---
 
 {% include header.html page='home' %}
 
-<div class="main container">
-    <div class="ui grid">
-        <div class="column">
+<noscript>
+  <div class="ui icon error message">
+    <i class="warning sign icon"></i>
 
-            <div class="banner ui icon header">
-                <img src="{{ site.uri }}/img/usb_stick.png" class="icon" alt="{{ website.name }}">
-                <h2>USB-Dongle Authentication</h2>
-                <div class="sub header">List of websites and whether or not they support
-                    <a href="https://en.wikipedia.org/wiki/Initiative_For_Open_Authentication">One Time Passwords (OTP)</a> or
-                    <a href="https://en.wikipedia.org/wiki/Universal_2nd_Factor">Universal 2nd Factor (U2F)</a>.
-                </div>
-                <div class="sub header">
-                    Also see the list of <a href="{{ site.uri }}/dongles/">dongles</a> and the protocol they support.
-                </div>
-                <div id="{{ first.id }}" class="sub header">
-                    Add your own favorite site by submitting a pull request on the
-                    <a href="https://github.com/Nitrokey/dongleauth">GitHub repo</a>.
-                </div>
-                <div id="search-wrapper" class="sub header">
-                  <label for="jets-search">
-                    <i class="search icon"></i>
-                  </label>
-                  <input type="search" id="jets-search" placeholder="Search websites" autocomplete="off" spellcheck="false"
-                         tabindex="0">
-                </div>
-            </div>
+    <div class="content">
+      <h1>It looks like you have JavaScript disabled!</h1>
 
-            <div class="section">
-              <div class="column">
-                {% assign rowcount = 0 %}
-                {% for section in site.data.devices.main.sections %}
-                {% assign rowend = forloop.index | modulo: 5 %}
-                {% if rowend == 0 or forloop.index == forloop.length %}
-                <div id="{{ section.id }}" class="category column">
-                  <h5 class="ui icon header">
-                    <i class="circular {{ section.icon }} icon"></i>
-                    <small>{{ section.title }}</small>
-                  </h5>
-                </div>
-                {% include mobile-table.html id-param=section.id title-param=section.title %}
-                {% assign offcount = 5 | times: rowcount %}
-                {% for section in site.data.devices.main.sections limit: 5 offset: offcount %}
-                {% include desktop-table.html id-param=section.id title-param=section.title %}
-                {% endfor %}
-              </div>
-              {% if forloop.index != forloop.length %}
-              {% assign rowcount = rowcount | plus: '1' %}
-              <div class="five column row">
-              {% endif %}
-                {% else %}
-                <div id="{{ section.id }}" class="category column">
-                  <h5 class="ui icon header">
-                    <i class="circular {{ section.icon }} icon"></i>
-                    <small>{{ section.title }}</small>
-                  </h5>
-                </div>
-                {% include mobile-table.html id-param=section.id title-param=section.title %}
-                {% endif %}
-                {% endfor %}
-              </div>
-            </div>
+      <p>
+        Without JavaScript, this page probably won't work very well.
+        For more information, or if you would like to talk to us about this,
+        please take a look at our <a href="https://github.com/nitrokey/dongleauth/">
+        GitHub repository</a>.
+      </p>
+    </div>
+  </div>
+</noscript>
 
-        </div><!-- Column -->
-    </div><!-- UI Grid -->
-</div><!-- Main Container -->
+<div id="top-header" class="banner ui center aligned icon header">
+  <img src="{{ site.uri }}/img/usb_stick.png" class="icon" alt="{{ website.name }}">
+  <h2>USB-Dongle Authentication</h2>
+  <div class="sub header">List of websites and whether or not they support
+      <a href="https://en.wikipedia.org/wiki/Initiative_For_Open_Authentication">One Time Passwords (OTP)</a> or
+      <a href="https://en.wikipedia.org/wiki/Universal_2nd_Factor">Universal 2nd Factor (U2F)</a>.
+  </div>
+  <div class="sub header">
+      Also see the list of <a href="{{ site.uri }}/dongles/">dongles</a> and the protocol they support.
+  </div>
+  <div id="{{ first.id }}" class="sub header">
+      Add your own favorite site by submitting a pull request on the
+      <a href="https://github.com/Nitrokey/dongleauth">GitHub repo</a>.
+  </div>
+  <div id="search-wrapper" class="sub header">
+    <label for="jets-search">
+      <i class="search icon"></i>
+    </label>
+    <input type="search" id="jets-search" placeholder="Search websites" autocomplete="off" spellcheck="false"
+           tabindex="0">
+  </div>
+</div>
+
+<div class="ui stackable grid container">
+  <div class="five column row">
+    {% assign rowcount = 0 %}
+    {% for section in site.data.sections %}
+    {% assign rowend = forloop.index | modulo: 5 %}
+    {% if rowend == 0 or forloop.index == forloop.length %}
+    <div id="{{ section.id }}" class="category column">
+      <h5 class="ui icon header">
+        <i class="circular {{ section.icon }} icon"></i>
+        <small>{{ section.title }}</small>
+      </h5>
+    </div>
+    {% include mobile-table.html id-param=section.id title-param=section.title %}
+    {% assign offcount = 5 | times: rowcount %}
+    {% for section in site.data.sections limit: 5 offset: offcount %}
+    {% include desktop-table.html id-param=section.id title-param=section.title %}
+    {% endfor %}
+  </div>
+  {% if forloop.index != forloop.length %}
+  {% assign rowcount = rowcount | plus: '1' %}
+  <div class="five column row">
+  {% endif %}
+    {% else %}
+    <div id="{{ section.id }}" class="category column">
+      <h5 class="ui icon header">
+        <i class="circular {{ section.icon }} icon"></i>
+        <small>{{ section.title }}</small>
+      </h5>
+    </div>
+    {% include mobile-table.html id-param=section.id title-param=section.title %}
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  <div id="no-results">
+    <h2>No results found</h2>
+  </div>

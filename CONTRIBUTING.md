@@ -1,29 +1,26 @@
-Contributing to DongleAuth.info
+Contributing to DongleAuth.info 
 =======================
 
 All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
 
-To add a new site, go to the [`data/devices` files](_data/devices/) and get familiar with how it
-is setup. There is a section and corresponding file for each Category. Site icons are stored in folders corresponding to each of those categories in their own [folder](img/).
-
-Note: Please do *not* modify yaml files that are directly within the `data` directory. Be sure you're only working on yaml files in the `data/devices` sub-directory. This project is a fork of [the TFA.org project](https://github.com/2factorauth/twofactorauth) and we occasionally pull upstream changes, and this setup helps us avoid unnecessary conflicts.
+To add a new site, go to the [data files](_data/) and get familiar with how it
+is setup. There is a section and corresponding file for each Category. Site icons
+are stored in folders corresponding to each of those categories in their own
+[folder](img/).
 
 ## Guidelines
 
 1. **Don't break the build**: We have a simple continuous integration system
    setup with [Travis][travis]. If your pull request doesn't pass, it won't be
-   merged.
-
-   To manually test the build, just run the following:
-
-    ```bash
-    $ ruby verify.rb
-    ```
-
-2. **Use a Nice Icon**: The icon must be 32x32 in dimension. Earlier we were
-   using 16x16 but upgraded for various high density screens.
-3. **Be Awesome**: You need to be awesome. That is all.
+   merged. Travis will only check your changes after you submit a pull request.
+   If you want to test locally, instructions are listed below. Keep reading!
+2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
+   preferred format. If possible, please also run the image through an optimizing
+   utility such as OptiPNG before committing it to the repo.
+3. **HTTPS links**: All sites that support HTTPS should also be linked with an
+   HTTPS address.
+4. **Be Awesome**: You need to be awesome. That is all.
 
 ## Running Locally
 
@@ -38,6 +35,21 @@ everything for you.
 3. Run Jekyll: `bundle exec jekyll serve --watch`. The `--watch` is optional and
    makes Jekyll watch for file changes.
 
+#### Testing with Bundler
+   To verify that your additions are fine, you can run the entire set of tests
+   locally which will check all links and images with:
+
+   ```bash
+   $ bundle exec rake
+   ```
+
+   However, this can take a while as there are roughly 900 links that it checks.
+   If you just wish to test your YAML changes, you can run:
+
+   ```bash
+   $ bundle exec rake verify
+   ```
+
 ### Using Vanilla Jekyll
 
 1. Install Jekyll if you don't already have it: `gem install jekyll`.
@@ -46,8 +58,8 @@ everything for you.
 ## Site Criteria
 
 The following section contains rough criteria and explanations regarding
-what websites should be listed on DongleAuth.info. If one of the following
-criteria is met, it belongs on DongleAuth.info:
+what websites should be listed on twofactorauth.org. If one of the following
+criteria is met, it belongs on twofactorauth.org:
 
 1. **Personal Info/Image**: Any site that deals with personal info or a person's
    image. An example of a site with **Personal Info** would be their Amazon
@@ -60,7 +72,7 @@ criteria is met, it belongs on DongleAuth.info:
    of this is a website that allows remote access to a device.
 
 If you have any questions regarding whether or not a site matches one of the
-criteria, simply open an Issue and we'll take a look.
+criteria, simply open an issue and we'll take a look.
 
 ### Excluded Sites
 
@@ -70,71 +82,94 @@ its removal.
 
 View the complete list in the [EXCLUSION.md file][exclude].
 
-## New Sections
+## New Categories
 
-To add a new section, modify the `sections` value in [main.yml](_data/devices/main.yml)
+To add a new category, modify the `sections` value in [sections.yml](_data/sections.yml)
 and follow the template below:
 
 ```yml
-sections:
-  - id: category-id
-    title: Category Name
-    icon: icon-class
+- id: category-id
+  title: Category Name
+  icon: icon-class
 ```
 
-Then create a new file in the `_data/devices/` directory named the same as your section's
-id with the `.yml` extension.
+Then create a new file in the `_data` directory with the same name as your section's
+id, using the `.yml` extension.
 
 ## New Sites
 
 First and foremost, make sure the new site meets our [definition
-requirements](#a-note-on-definitions) for Two Factor Auth.
+requirements](#a-note-on-definitions) of DongleAuth.
 
-If you are adding multiple sites to the DongleAuth.info list, please create a new
+If you are adding multiple sites to the TwoFactorAuth list, please create a new
 git branch for each website, and submit a separate pull request for each branch.
-More information regarding how to create new git branches can be on
+More information regarding how to create new git branches can be found on
 [GitHub's Help Page](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/)
 or [DigitalOcean's Tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-git-branches).
 
-#### Adding a site that *supports* USB dongle auth
+Adding a new website should be pretty straight-forward. The `websites` array should
+already be defined; simply add a new website to it as shown in the following example:
 
-If a site does provide auth via USB dongle, it is strongly recommended that you add the `doc:`
-field where public documentation is available. Other fields should be included
-if the website supports them. Any services that are not supported can be excluded.
-Sites supporting auth via USB dongle should not have a Twitter field.
+```yml
+websites:
+  - name: Site Name
+    url: https://www.site.com/
+    img: site.png
+    tfa: Yes
+    hardware: Yes
+    otp: Yes
+    u2f: Yes
+    doc: <link to site TFA documentation>
+```
+
+The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
+
+#### Adding a site that *supports* TFA
+
+If a site does provide TFA, it is strongly recommended that you add the `doc:`
+field where public documentation is available. 
+Sites supporting TFA should not have a Twitter, Facebook or Email field.
 
 The following is an example of a website that *supports* TFA:
 
 ```yml
-  - name: YouTube
-    url: https://www.youtube.com/
-    img: youtube.png
-    tfa: Yes
-    otp: Yes
-    u2f: Yes
-    doc: http://www.google.com/intl/en-US/landing/2step/features.html
+    - name: YouTube
+      url: https://www.youtube.com/
+      img: youtube.png
+      tfa: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: No
+      doc: http://www.google.com/intl/en-US/landing/2step/features.html
 ```
 
-#### Adding a site that *does not* support USB dongle auth
+#### Adding a site that *does not* support TFA
 
 If a site does not provide TFA, the `twitter:` field should be included if the site uses
-Twitter. The fields `sms:`, `email:`, `phone:`, `software:` and `hardware:` can be
-completely removed.
+Twitter. Facebook can also be included using the `facebook` field, as well as Email using
+the `email_address` field. If the website does not use the English language, the `lang:`
+field should also be included.
 
-The following is an example of a website that *does not* supports TFA:
+The following is an example of a website that *does not* support TFA:
 
 ```yml
-  - name: Netflix
-    url: https://www.netflix.com/us/
-    twitter: Netflixhelps
-    img: netflix.png
-    tfa: No
+    - name: Netflix
+      url: https://www.netflix.com/us/
+      twitter: Netflixhelps
+      facebook: netflix
+      email_address: example@netflix.com (Only if available and monitored)
+      img: netflix.png
+      tfa: No
+      hardware: No
+      lang: <ISO 639-1 language code> (Only for non-English websites)
 ```
+
+The `lang:` field is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
 
 ### Exceptions & Restrictions
 
-If a site doesn't support authentication with a USB dongle in certain countries,
-you can note this on the website. There are 4 ways to customize how it is displayed:
+If a site doesn't support TFA in certain countries, you can note this on the
+website. There are 4 ways to customize how it is displayed:
 
 1. A default message acknowledging restrictions will be used with the following
    config:
@@ -142,25 +177,23 @@ you can note this on the website. There are 4 ways to customize how it is displa
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
-      otp: Yes
+      hardware: Yes
       exceptions: Yes
-      doc: <link to site 2FA documentation>
+      doc: <link to site TFA documentation>
    ```
 2. The message can be replaced with a custom set of words:
 
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
-      otp: Yes
+      hardware: Yes
       exceptions:
           text: "Specific text goes here."
-      doc: <link to site 2FA documentation>
+      doc: <link to site TFA documentation>
    ```
 3. The icon can be made into a link in which more details can be revealed such
    as country specific info and anything else.
@@ -168,27 +201,25 @@ you can note this on the website. There are 4 ways to customize how it is displa
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
-      otp: Yes
+      hardware: Yes
       exceptions:
           link: Yes
-      doc: <link to site 2FA documentation>
+      doc: <link to site TFA documentation>
    ```
 4. 2 and 3 can be combined into:
 
    ```yml
     - name: Site Name
       url: https://www.site.com/
-      twitter: SiteTwitter
       img: site.png
       tfa: Yes
-      otp: Yes
+      hardware: Yes
       exceptions:
           link: Yes
           text: "Specific text can go here as well."
-      doc: <link to site 2FA documentation>
+      doc: <link to site TFA documentation>
    ```
 
 ### Pro Tips
@@ -196,17 +227,14 @@ you can note this on the website. There are 4 ways to customize how it is displa
 - See Guideline #2 about icons. The png file should go in the corresponding
   `img/section` folder.
 
-- Only the auth methods implemented by a site need a `yes` tag, the others can
-  just be left off completely.
-
 - For the sake of organization and readability, it is appreciated if you insert
   new sites alphabetically and that your site chunk follows the same order as the
   example above.
 
-- If a site supports auth via USB dongle, their Twitter handle is not needed and can be left out
-  for cleanliness.
+- If a site supports TFA, their Twitter and Facebook handles as well as their email address
+  are not needed and can be left out for cleanliness.
 
-- If a site does not have auth via USB dongle but there is documentation that they are adding
+- If a site does not have TFA but there is documentation that they are adding
   it, then use:
 
   ```yml
@@ -216,10 +244,7 @@ you can note this on the website. There are 4 ways to customize how it is displa
 
 ## A Note on Definitions
 
-There are many forms of Two Factor Auth, but DongleAuth.info is **only** interested
-in listing sites that support Two Factor Authentication using USB dongles.
-Currently that means the site must support either One Time Passwords ([HOTP / RFC 4226](https://tools.ietf.org/html/rfc4226) or [TOTP / RFC 6238](https://tools.ietf.org/html/rfc6238))
-or [FIDO Universal 2nd Factor (U2F)](https://fidoalliance.org/specifications/overview/).
+There are many forms of Two Factor Auth, but DongleAuth.info is only interested in listing sites that support Two Factor Authentication using USB dongles. Currently that means the site must support either One Time Passwords (HOTP / RFC 4226 or TOTP / RFC 6238) or FIDO Universal 2nd Factor (U2F).
 
 A lot of people have different ideas of what constitutes Two Factor Auth and
 what doesn't, so it stands to reason that we should clarify a bit. For the
@@ -231,30 +256,14 @@ considered Two Factor Authentication.
 As an example, a site that prompts you for an authentication token following
 user login would be considered Two Factor Auth. A site that does not prompt you
 for a token upon login, but prompts you for a token when you try to perform a
-sensitive action would not be considered Two Factor Auth.
+sensitive action would not be considered Two Factor Authentication.
 
-For context, check out the discussion in [#242][242].
-
-### New Dongles
-
-Rather than split out a list USB Dongle providers on the main page, we elected to keep the main
-page clean and add another page dedicated to USB Dongle providers.
-
-To add a new provider simply add to the [`providers.yml` files](_data/devices/providers.yml) file,
-marking `Yes` where appropriate.
-
-```yml
-  - name: Company Name
-    url: https://example.com
-    img: company.png
-    otp: Yes
-    u2f: Yes
-```
+For context, check out the discussion in issue [#242][242].
 
 [242]: https://github.com/2factorauth/twofactorauth/issues/242
 [exclude]: /EXCLUSION.md
 [bundler]: http://bundler.io/
 [gemfile]: /Gemfile
 [jekyll]: http://jekyllrb.com/
-[travis]: https://travis-ci.org/2factorauth/twofactorauth
+[travis]: https://travis-ci.org/nitrokey/dongleauth
 [yaml]: http://www.yaml.org/

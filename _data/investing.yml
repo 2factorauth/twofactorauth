@@ -16,8 +16,11 @@ websites:
       url: https://www.betterment.com/
       img: betterment.png
       tfa: Yes
-      software: Yes
       sms: Yes
+      software: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: No
       doc: https://support.betterment.com/customer/en/portal/topics/1026376-two-factor-authentication-2fa-?b_id=9042
 
     - name: Charles Schwab
@@ -52,8 +55,17 @@ websites:
           text: "Only available for some account types"
       doc: /notes/fidelity/
 
+    - name: Flatex
+      url: https://www.flatex.de/
+      email_address: info@flatex.de
+      twitter: flatex
+      facebook: onlinebroker
+      img: flatex.png
+      tfa: No
+      lang: de
+
     - name: HealthEquity
-      url: http://www.healthequity.com/
+      url: https://www.healthequity.com/
       twitter: healthequity
       img: healthequity.png
       tfa: No
@@ -66,14 +78,16 @@ websites:
       software: Yes
       doc: https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log
 
-    - name: Loyal3
-      url: https://www.loyal3.com/
-      twitter: loyal3
-      img: loyal3.png
+    - name: John Hancock Pensions
+      url: https://www.jhancockpensions.com
+      twitter: johnhancockusa
+      facebook: johnhancock
+      email_address: My401K@jhancock.com
+      img: johnhancock.png
       tfa: No
 
     - name: Manulife
-      url: http://www.manulife.ca
+      url: https://www.manulife.ca
       twitter: Manulife
       img: manulife.png
       tfa: No
@@ -95,9 +109,10 @@ websites:
 
     - name: Nutmeg
       url: https://www.nutmeg.com/
-      twitter: thenutmegteam
       img: nutmeg.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://support.nutmeg.com/hc/en-us/articles/115000495111-How-to-set-up-and-manage-2-step-verification
 
     - name: OptionsHouse
       img: optionshouse.png
@@ -106,7 +121,7 @@ websites:
       twitter: OptionsHouse
 
     - name: OptionsXpress
-      url: http://www.optionsxpress.com/
+      url: https://www.optionsxpress.com/
       twitter: optionsXpress
       img: optionsxpress.png
       tfa: No
@@ -119,6 +134,13 @@ websites:
       phone: Yes
       doc: https://www.personalcapital.com/safety-and-security
 
+    - name: Questrade
+      url: https://www.questrade.com
+      img: questrade.png
+      tfa: No
+      twitter: Questrade
+      status: https://twitter.com/Questrade/status/864214855078866977
+
     - name: Raizers
       url: https://www.raizers.com
       img: raizers.png
@@ -126,7 +148,7 @@ websites:
       twitter: Raizers
 
     - name: RBC Direct Investing
-      url: http://www.rbcdirectinvesting.com
+      url: https://www.rbcdirectinvesting.com
       twitter: RBC
       img: rbc.png
       tfa: No
@@ -136,6 +158,7 @@ websites:
       img: robinhood.png
       tfa: Yes
       sms: Yes
+      software: Yes
       doc: https://support.robinhood.com/hc/en-us/articles/211546986-Two-Factor-Authentication
 
     - name: Scottrade
@@ -170,9 +193,10 @@ websites:
 
     - name: TIAA-CREF
       url: https://www.tiaa-cref.org
-      twitter: TC_Talks
       img: tiaacref.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
 
     - name: TradeKing
       url: https://www.tradeking.com
@@ -187,9 +211,7 @@ websites:
       sms: Yes
       phone: Yes
       hardware: Yes
-      doc: https://personal.vanguard.com/us/insights/article/security-codes-112015
-      exceptions:
-          text: "TFA is only available for Personal Investor accounts"
+      doc: https://investornews.vanguard/sign-up-for-these-3-security-features/
 
     - name: Wealthfront
       url: https://www.wealthfront.com/
@@ -197,7 +219,15 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://pages.wealthfront.com/faqs/how-do-i-enable-two-step-authentication-on-my-account/
+      doc: https://support.wealthfront.com/hc/en-us/articles/211004563-How-do-I-enable-two-step-authentication-for-my-account-
+
+    - name: Wealthsimple
+      url: https://www.wealthsimple.com
+      img: wealthsimple.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.wealthsimple.com/magazine/2-step-verification
 
     - name: WiseBanyan
       url: https://www.wisebanyan.com/
