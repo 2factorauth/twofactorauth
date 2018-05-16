@@ -419,6 +419,13 @@ websites:
       tfa: No
       twitter: Promoter_io
 
+    - name: Pushover
+      url: https://pushover.net/
+      img: pushover.png
+      tfa: Yes
+      doc: https://pushover.net/faq#security-2fa
+      software: Yes
+
     - name: Repairshopr
       url: https://www.repairshopr.com/
       img: repairshopr.png
