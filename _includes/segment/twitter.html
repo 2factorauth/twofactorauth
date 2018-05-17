@@ -3,8 +3,8 @@
 	<script>
 	var fired = false;
 	window.addEventListener("scroll", function(){
-    if ((document.documentElement.scrollTop != 0 && fired === false) || (document.body.scrollTop != 0 && fired === false)) {!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";js.async = 1;fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-
+    if ((document.documentElement.scrollTop != 0 && fired === false) || (document.body.scrollTop != 0 && fired === false)) {
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";js.async = 1;fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
         fired = true;
     }
 }, true);
