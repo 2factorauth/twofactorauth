@@ -108,6 +108,7 @@ $(document).ready(function () {
 
   $('#assets').on('click', function () {
     $('.ui.modal.assets').modal('show');
+    $('img.p-logo').trigger('unveil');
     $('img.image').trigger('unveil');
   });
 

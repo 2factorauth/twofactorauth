@@ -23,7 +23,7 @@
   <img src="{{ img_path }}" class="icon" alt="{{ website.name }}" height="32" width="32">
 </noscript>
 <img src="{{ page.img_placeholder }}" data-src="{{ img_path }}" class="icon" alt="{{ website.name }}" height="32" width="32">
-<a href="{{ website.url }}" class="name" target="_blank">{{ website.name }}</a>
+<a href="{{ website.url }}" class="name" target="_blank" rel="noopener">{{ website.name }}</a>
 {%- include exception.html website=website -%}
 {%- if website.lang and site.data.languages[website.lang] -%}
   {%- assign progress_tweet = site.data.languages[website.lang].progress_tweet -%}
@@ -34,7 +34,7 @@
 {%- endif -%}
 {%- if website.status -%}
   {%- if include.type == 'mobile' -%}
-  <a href="{{ website.status }}" target="_blank">
+  <a href="{{ website.status }}" target="_blank" rel="noopener">
     <i class="external url link large icon"></i>
   </a>
   {%- endif -%}
