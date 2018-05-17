@@ -12,9 +12,9 @@ websites:
 - name: AP Seller
   url: https://apseller.com/intl/
   img: apseller.png
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Bit2Me
   url: https://bit2me.com
   img: bit2me.png
@@ -224,9 +224,9 @@ websites:
   url: https://www.cryptopiece.com
   img: cryptopiece.png
   email_address: advertise@Cryptopiece.com
-  bch: Yes
-  btc: No
-  othercrypto: Yes
+  bch: true
+  btc: false
+  othercrypto: true
 - name: CZIP
   url: https://czip.org
   img: czip.png
@@ -380,11 +380,10 @@ websites:
   twitter: PurseIO
   facebook: PurseIO
   email_address: support@purse.io
-  bch: false
+  status: https://i.redd.it/uequ3r6rw8y01.png
+  bch: true
   btc: true
   doc: https://blog.purse.io/announcement-update-bitcoin-cash/
-  exceptions:
-    text: Withdrawal support only
 - name: Rocketr
   url: https://rocketr.net
   img: rocketr.png
@@ -427,6 +426,13 @@ websites:
   btc: true
   othercrypto: true
   doc: https://news.wmtransfer.com/en/blog/announcement_related_to_the_hard_fork_within_the_bitcoin_network
+- name: Working For Bitcoins
+  url: https://workingforbitcoins.com
+  img: workingforbitcoins.png
+  twitter: working4Bitcoin
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Xapo
   url: https://xapo.com
   img: xapo.png
@@ -441,6 +447,6 @@ websites:
   twitter: zupago
   facebook: zupago
   img: zupago.png
-  bch: yes
-  btc: yes
-  othercrypto: no
+  bch: true
+  btc: true
+  othercrypto: false
