@@ -28,7 +28,8 @@ websites:
   btc: false
   othercrypto: false
   exceptions:
-    text: "Used to accept Bitcoin but was disabled after Coinbase Merchant Tools were discontinued. Last checked May 5th, 2018"
+    text: Used to accept Bitcoin but was disabled after Coinbase Merchant Tools were
+      discontinued. Last checked May 5th, 2018
 - name: 99japan
   url: https://99japan.com/
   img: 99japancom.png
@@ -905,6 +906,14 @@ websites:
   btc: true
   othercrypto: false
   doc: https://mineralz.nl/content/12-bitcoin-cash
+- name: ModMyPi.com
+  url: https://modmypi.com
+  twitter: modmypi
+  facebook: modmypi
+  img: modmypi.png
+  bch: true
+  btc: true
+  othercrypto: false
 - name: Möbelmarkt Shop
   url: https://www.moebelmarkt-shop.de/
   img: moebelmarktshop.png
