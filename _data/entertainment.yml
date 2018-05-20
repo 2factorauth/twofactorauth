@@ -49,6 +49,7 @@ websites:
       img: computerbase.png
       twitter: computerbase
       facebook: computerbase
+      lang: de
       bch: Yes
       btc: Yes
       othercrypto: No
@@ -134,6 +135,16 @@ websites:
       bch: No
       twitter: lastfmsupport
       facebook: lastfm
+
+    - name: Louis C.K.
+      url: https://louisck.net/
+      img: louisck.png
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      keywords:
+      - bitpay
+      - bip70      
 
     - name: Mixer
       url: https://mixer.com/
@@ -248,6 +259,15 @@ websites:
       bch: No
       twitter: SCsupport
       facebook: SoundCloud
+
+    - name: SPAZ radio
+      url: http://spaz.radio
+      img: spazradio.png
+      email_address: aaron@spaz.org
+      bch: Yes
+      btc: No
+      othercrypto: No
+      doc: https://www.reddit.com/r/btc/comments/8dc0vr/please_help_us_beta_test_our_new_bch_dj_tipping/
 
     - name: Spotify
       url: https://www.spotify.com/

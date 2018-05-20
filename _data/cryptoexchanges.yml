@@ -142,16 +142,11 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-- name: BTER
-  url: https://bter.com
-  img: bter.png
-  bch: true
-  btc: true
-  othercrypto: true
 - name: Buda
   url: https://buda.com/
   img: buda.png
   twitter: BudaPuntoCom
+  lang: es
   facebook: BudaPuntoCom
   bch: true
   btc: true
@@ -206,6 +201,14 @@ websites:
   img: coinbene.png
   twitter: coinbene
   email_address: support@coinbene.com
+  bch: true
+  btc: true
+  othercrypto: true
+- name: CoinCola
+  url: https://www.coincola.com/
+  img: coincola.png
+  twitter: CoinCola7
+  facebook: CoinCola
   bch: true
   btc: true
   othercrypto: true
@@ -367,6 +370,9 @@ websites:
 - name: Mercado Bitcoin
   url: https://www.mercadobitcoin.com.br/
   img: mercadobitcoin.png
+  twitter: MercadoBitcoin
+  facebook: mbitcoin
+  lang: pt
   bch: true
   btc: true
   othercrypto: true
