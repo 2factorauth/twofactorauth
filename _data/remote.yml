@@ -77,11 +77,13 @@ websites:
 
     - name: Remote Desktop Manager
       url: https://www.remotedesktopmanager.com
-      img: remotedesktopmanager.png
+      img: RemoteDesktopManager.png
       tfa: Yes
       software: Yes
       doc: https://help.remotedesktopmanager.com/howto_googleauthenticator.htm
-
+      exceptions:
+             text:  "TFA is only available on the Enterprise Edition"
+  
     - name: TeamViewer
       url: https://www.teamviewer.com
       img: teamviewer.png
