@@ -42,15 +42,7 @@
         </td>
       {% elsif website.hardware %}
         <td class="main positive">
-          <div class="title">
-            {% if website.img %}
-              <noscript><img src="/img/{{ section_id }}/{{ website.img }}" class="icon" alt="{{ website.name }}"></noscript>
-              <img src="/img/placeholder.png" data-src="/img/{{ section_id }}/{{ website.img }}" class="icon"
-                   alt="{{ website.name }}">
-            {% endif %}
-            <a class="name" href="{{ website.url }}">{{ website.name }}</a>
-            {% include exception.html website=website %}
-          </div>
+          {% include row-title.html section=section_id website=website type='desktop' %}
         </td>
 
         <td class="positive icon">
