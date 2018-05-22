@@ -310,6 +310,14 @@ websites:
       email: Yes
       doc: https://www.dcu.org/online-banking/online-banking-enhancements.html
 
+    - name: Discount Bank
+      url: https://www.discountbank.co.il
+      tfa: No
+      twitter: discountbank
+      facebook: discountbank
+      img: idb.png
+      lang: he
+
     - name: Discover
       url: https://www.discover.com/
       img: discover.png
@@ -704,6 +712,15 @@ websites:
       img: RegionsBank.png
       tfa: No
 
+    - name: SAFE Credit Union
+      url: https://safecu.org
+      img: safecu.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      doc: https://www.safecu.org/personal/online-security/enhanced-login-security
+
     - name: San Diego County Credit Union
       url: https://www.sdccu.com
       twitter: sdccu
@@ -845,6 +862,14 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://hjalp.swedbank.se/logga-in/index.htm
+
+    - name: Synchrony Bank
+      url: https://www.synchronybank.com
+      img: synchrony.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.synchronybank.com/why-synchrony/secure-banking/
 
     - name: Tangerine
       url: https://www.tangerine.ca/

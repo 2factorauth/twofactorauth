@@ -43,6 +43,13 @@ websites:
       tfa: No
       twitter: auspost
 
+    - name: Australian Red Cross Blood Service
+      url: https://www.donateblood.com.au/
+      img: donateblood.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+
     - name: Autodesk
       url: https://www.autodesk.com
       img: autodesk.png
@@ -208,7 +215,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://help.figma.com/#_two-factor-authentication
+      doc: https://help.figma.com/managing-your-account/creating-and-managing-your-account
 
     - name: Findmyshift
       url: https://www.findmyshift.com/

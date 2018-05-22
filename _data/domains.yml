@@ -31,9 +31,9 @@ websites:
     - name: 1and1
       url: https://www.1and1.com/
       img: 1and1.png
-      tfa: No
-      twitter: 1and1
-      facebook: 1and1
+      tfa: Yes
+      software: Yes
+      doc: https://help.1and1.com/article/793179
 
     - name: 20i
       url: https://www.20i.com
@@ -217,7 +217,7 @@ websites:
       hardware: Yes
       otp: Yes
       u2f: Yes
-      doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
+      doc: https://doc.gandi.net/en/organization/users/security
 
     - name: GoDaddy
       img: godaddy.png
@@ -448,13 +448,13 @@ websites:
       sms: Yes
       doc: https://help.opensrs.com/hc/en-us/articles/209618017-Two-Factor-Authentication-2FA-for-Reseller-Account-Access
 
-    - name: pairNIC
-      url: https://www.pairnic.com/
-      img: pairnic.png
+    - name: pair Domains
+      url: https://www.pairdomains.com/
+      img: pairdomains.png
       tfa: Yes
       software: Yes
       sms: Yes
-      doc: https://www.pairnic.com/kb/posts/345
+      doc: https://www.pairdomains.com/kb/posts/345
 
     - name: PointDNS
       url: https://pointhq.com/
@@ -464,7 +464,7 @@ websites:
 
     - name: porkbun
       url: https://porkbun.com
-      img: porkbunBuns.png
+      img: porkbun.png
       tfa: Yes
       software: Yes
       doc: https://porkbun.com/products/two_factor_authentication
