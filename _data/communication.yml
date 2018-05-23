@@ -162,7 +162,8 @@ websites:
       sms: Yes
       software: Yes
       email: Yes
-      doc: https://help.salesforce.com/HTViewHelpDoc?id=security_require_two_factor_authentication.htm
+      hardware: Yes
+      doc: https://developer.salesforce.com/docs/atlas.en-us.identityImplGuide.meta/identityImplGuide/add_time-based_token.htm
 
     - name: SendGrid
       url: https://sendgrid.com/
