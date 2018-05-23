@@ -514,6 +514,9 @@ websites:
   bch: true
   btc: true
   facebook: fasttech.net
+  doc: https://support.fasttech.com/faq/?section=Payment
+  exceptions:
+    text: Refunds are made in the form of store credits (gift certificates) only.
 - name: First Golf
   url: https://www.firstgolf.club/
   img: firstgolf.png
@@ -686,6 +689,7 @@ websites:
   bch: Yes
   btc: Yes
   othercrypto: Yes
+  doc: https://www.hatlikedad.com/blogs/news/who-accepts-crypto-as-payment
   keywords:
   - coinbase
 - name: Headphones.com
@@ -696,6 +700,18 @@ websites:
   bch: false
   btc: true
   othercrypto: true
+- name: Hipptee
+  url: https://hipptee.com/
+  img: hipptee.png
+  twitter: hipptees
+  facebook: hipptee
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.reddit.com/r/btc/comments/8kxprt/hippteecom_now_accepts_bch_and_prices_in_bch_too/
+  keywords:
+  - coinbase
+  - coinpayments.net
 - name: Hold Monkey
   url: https://hodlmonkey.com/
   img: hodlmonkey.png
@@ -1369,6 +1385,7 @@ websites:
   img: tradingshenzhen.png
   twitter: tradingshenzhen
   facebook: tradingshenzhen
+  region: eu
   bch: true
   btc: true
   othercrypto: true
