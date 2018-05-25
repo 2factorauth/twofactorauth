@@ -1,8 +1,8 @@
 DongleAuth.info
 =================
 
-<!--[![Build Status](https://travis-ci.org/nitrokey/dongleauth.svg)](https://travis-ci.org/nitrokey/dongleauth)
-[![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)-->
+[![Build Status](https://travis-ci.org/nitrokey/dongleauth.svg)](https://travis-ci.org/nitrokey/dongleauth)
+[![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
 
 List of 2FA dongle providers and the platforms they support. 
 

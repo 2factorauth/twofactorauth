@@ -104,7 +104,6 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      u2f: No
       doc: https://ttlc.intuit.com/questions/2902682-what-is-two-step-verification
 
     - name: Invoiced
@@ -163,16 +162,6 @@ websites:
       twitter: nexonia
       img: nexonia.png
       tfa: No
-
-    - name: Neteller
-      url: http://www.neteller.com/
-      twitter: neteller
-      img: neteller.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      otp: Yes
-      doc: https://support.neteller.com/ACCOUNT/Two-Factor-Authentication/85238429/What-is-two-step-authentication-and-how-to-use-it.htm
 
     - name: Noddle
       url: https://www.noddle.co.uk

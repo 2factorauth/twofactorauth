@@ -65,7 +65,6 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      u2f: No
       doc: https://www.cloudns.net/wiki/article/201/
 
     - name: Crazy Domains
@@ -101,13 +100,6 @@ websites:
       hardware: Yes
       otp: Yes
       doc: https://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
-
-    - name: Domain Monster
-      url: https://www.domainmonster.com/
-      img: domainmonster.png
-      twitter: domainmonster
-      facebook: Domainmonster
-      tfa: No
 
     - name: Domain.com
       url: https://www.domain.com/

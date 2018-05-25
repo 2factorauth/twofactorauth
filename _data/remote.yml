@@ -60,15 +60,6 @@ websites:
       software: Yes
       doc: https://www.syspectr.com/en/faq/how-do-i-activate-deactivate-two-factor-authentication-for-my-account
 
-    - name: OpenSSH
-      url: http://www.openssh.com
-      img: openssh.png
-      tfa: Yes
-      hardware: Yes
-      otp: Yes
-      u2f: No
-      status: https://bugzilla.mindrot.org/show_bug.cgi?id=2319
-
     - name: Parsec
       url: https://www.parsecgaming.com
       img: parsec.png

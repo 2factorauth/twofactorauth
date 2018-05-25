@@ -17,12 +17,10 @@ websites:
       url: https://bitbay.net/
       img: bitbay.png
       tfa: Yes
-      sms: No
       email: Yes
       software: Yes
       hardware: Yes
       otp: Yes
-      u2f: No
       doc: https://bitbay.net/en/safety
 
     - name: Bitcoin.de
@@ -100,13 +98,6 @@ websites:
       otp: Yes
       doc: https://support.blockchain.com/hc/en-us/articles/211164103-Enable-2-Step-Verification-2FA-
 
-    - name: BTCJam
-      url: https://btcjam.com/
-      img: btcjam.png
-      tfa: Yes
-      software: Yes
-      doc: http://help.btcjam.com/customer/portal/articles/1987686
-
     - name: CampBX
       url: https://campbx.com/
       img: campbx.png
@@ -156,7 +147,6 @@ websites:
       phone: Yes
       hardware: Yes
       otp: Yes
-      u2f: No
       doc: https://support.coinbase.com/customer/en/portal/articles/1658338-how-do-i-set-up-2-factor-authentication-with-authy-
 
     - name: CoinDeal

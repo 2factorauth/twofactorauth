@@ -62,6 +62,12 @@ websites:
       u2f: Yes
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
+    - name: HYPE
+      url: https://www.hype.it
+      img: hype.png
+      tfa: Yes
+      sms: Yes
+
     - name: Klarna
       url: https://www.klarna.com
       img: klarna.png
@@ -76,6 +82,8 @@ websites:
       url: https://www.neteller.com/
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://support.neteller.com/ACCOUNT/Two-Factor-Authentication/85238429/What-is-two-step-authentication.htm
 
     - name: PAYEER

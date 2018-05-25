@@ -56,39 +56,9 @@ websites:
       url: https://www.digidentity.eu/en/
       img: digidentity.png
       tfa: Yes
+      sms: Yes
       software: Yes
-      hardware: Yes
-      otp: Yes
-      u2f: Yes
-
-    - name: Duo Security
-      url: https://duo.com
-      img: duo_security.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      otp: Yes
-      u2f: Yes
-      doc: https://guide.duo.com/u2f
-
-    - name: Gluu
-      url: https://www.gluu.org
-      img: gluu.png
-      tfa: Yes
-      hardware: Yes
-      otp: No
-      u2f: Yes
-      doc: https://www.gluu.org/identify-people-with-fido-u2f-tokens-using-the-gluu-server/
-
-    - name: GreenRADIUS
-      url: http://www.greenrocketsecurity.com
-      img: greenradius.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      otp: Yes
-      u2f: Yes
-      doc: http://www.greenrocketsecurity.com/greenradius/2fa/fido-1-0-u2f/
+      doc: https://helpdesk.digidentity.com/hc/en-us/articles/115002980109-What-is-two-factor-authentication-
 
     - name: ID.me
       url: https://www.id.me/
@@ -122,27 +92,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
-
-    - name: LinOTP
-      url: https://www.linotp.org
-      img: linotp.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      otp: Yes
-      u2f: Yes
-      doc: https://www.linotp.org/doc/latest/part-management/managingtokens/fido_u2f.html
-
-    - name: MiiCard
-      url: http://www.miicard.com/
-      img: miicard.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      otp: Yes
-      doc: http://support.miicard.com/hc/communities/public/questions/204691829-Add-a-YubiKey-to-your-miiCard
+      doc: https://helpdesk.lastpass.com/multifactor-authentication-options/
 
     - name: MyDigipass.com
       url: https://mydigipass.com/
@@ -183,16 +133,6 @@ websites:
       email: Yes
       hardware: Yes
       doc: https://help.passpack.com/knowledgebase/idx.php/44/0/
-
-    - name: privacyIDEA
-      url: https://privacyidea.org
-      img: privacyidea.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      otp: Yes
-      u2f: Yes
-      doc: http://privacyidea.readthedocs.io
 
     - name: RoboForm
       url: https://www.roboform.com/
