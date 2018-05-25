@@ -231,3 +231,12 @@ websites:
     tfa: Yes
     software: Yes
     doc: https://www.zetta.net/about/blog/how-set-zetta-two-factor-authentication/
+
+  - name: Zoolz
+    url: https://intelli.zoolz.com/
+    img: zoolz.png
+    tfa: Yes
+    software: Yes
+    exceptions:
+        text: "Only available for business accounts."
+    doc: http://wiki.zoolz.com/how-do-i-enable-two-factor-authentication-on-my-zoolz-intelligent-account/
