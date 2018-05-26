@@ -31,9 +31,16 @@ websites:
     - name: 1and1
       url: https://www.1and1.com/
       img: 1and1.png
-      tfa: No
-      twitter: 1and1
-      facebook: 1and1
+      tfa: Yes
+      software: Yes
+      doc: https://help.1and1.com/article/793179
+
+    - name: 20i
+      url: https://www.20i.com
+      img: 20i.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.20i.com/support/my-services/two-factor-authentication-my20i
 
     - name: Above.com
       url: https://www.above.com
@@ -85,13 +92,6 @@ websites:
       software: Yes
       doc: https://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
 
-    - name: Domain Monster
-      url: https://www.domainmonster.com/
-      img: domainmonster.png
-      twitter: domainmonster
-      facebook: Domainmonster
-      tfa: No
-
     - name: Domain.com
       url: https://www.domain.com/
       twitter: DomainDotCom
@@ -114,19 +114,20 @@ websites:
       sms: Yes
       doc: https://my.domains4bitcoins.com/kb/answer/2692
 
-    - name: DomainsAtCost
-      url: https://www.domainsatcost.ca/
-      twitter: domainsatcost
-      facebook: domainsatcost
-      img: domainsatcost.png
+    - name: DomainTools
+      url: https://www.domaintools.com/
+      twitter: DomainTools
+      facebook: domaintoolsllc
+      email_address: memberservices@domaintools.com
+      img: domaintools.png
       tfa: No
 
     - name: Domeny.tv
-      url: http://www.domeny.tv/en
+      url: https://www.domeny.tv/en
       img: domenytv.png
       tfa: Yes
       software: Yes
-      doc: http://www.domeny.tv/en/two-factor-authentication
+      doc: https://www.domeny.tv/en/two-factor-authentication
 
     - name: Dyn
       url: https://dyn.com/
@@ -139,12 +140,12 @@ websites:
       doc: https://help.dyn.com/2-factor-authentication/
 
     - name: Dynadot
-      url: http://dynadot.com/
+      url: https://dynadot.com/
       img: dynadot.png
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://dynadot.com/domain/security.html
+      doc: https://dynadot.com/domain/security.html
 
     - name: easyDNS
       url: https://easydns.com
@@ -169,11 +170,12 @@ websites:
       doc: http://help.eurodns.com/customer/en/portal/articles/1633106-how-do-i-activate-two-step-verification-on-my-account-
 
     - name: Fabulous
-      url: http://fabulous.com
+      url: https://fabulous.com
       img: fabulous.png
       tfa: Yes
-      hardware: yes
-      doc: http://fabulous.com/informationcenter/index.htm?formdata%5Bqid%5D=1194
+      hardware: Yes
+      software: Yes
+      doc: https://fabulous.com/knowledge/article/137
 
     - name: Fasthosts
       url: https://www.fasthosts.co.uk/
@@ -194,11 +196,11 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://wiki.gandi.net/en/contacts/login/2-factor-activation
+      doc: https://doc.gandi.net/en/organization/users/security
 
     - name: GoDaddy
       img: godaddy.png
-      url: http://www.godaddy.com/
+      url: https://www.godaddy.com/
       tfa: Yes
       sms: Yes
       software: Yes
@@ -230,7 +232,7 @@ websites:
 
     - name: Hover.com
       img: hover.png
-      url: http://www.hover.com/
+      url: https://www.hover.com/
       tfa: Yes
       sms: Yes
       software: Yes
@@ -252,7 +254,7 @@ websites:
       doc: https://docs.incapsula.com/Content/management-console-and-settings/account-settings.htm
 
     - name: Internet.bs
-      url: http://www.internet.bs
+      url: https://www.internet.bs
       img: internetbs.png
       tfa: Yes
       software: Yes
@@ -370,7 +372,7 @@ websites:
       tfa: No
 
     - name: Netregistry
-      url: http://www.netregistry.com.au/
+      url: https://www.netregistry.com.au/
       twitter: netregistry
       facebook: netregistry
       img: netregistry.png
@@ -391,11 +393,11 @@ websites:
       facebook: noipdns
 
     - name: Nominet
-      url: http://www.nominet.uk/
+      url: https://www.nominet.uk/
       img: nominet.png
       tfa: Yes
       software: Yes
-      doc: http://registrars.nominet.org.uk/sites/default/files/two_factor_authentication_userguide.pdf
+      doc: https://registrars.nominet.org.uk/sites/default/files/two_factor_authentication_userguide.pdf
 
     - name: NS1
       url: https://ns1.com/
@@ -419,13 +421,13 @@ websites:
       sms: Yes
       doc: https://help.opensrs.com/hc/en-us/articles/209618017-Two-Factor-Authentication-2FA-for-Reseller-Account-Access
 
-    - name: pairNIC
-      url: https://www.pairnic.com/
-      img: pairnic.png
+    - name: pair Domains
+      url: https://www.pairdomains.com/
+      img: pairdomains.png
       tfa: Yes
       software: Yes
       sms: Yes
-      doc: https://www.pairnic.com/kb/posts/345
+      doc: https://www.pairdomains.com/kb/posts/345
 
     - name: PointDNS
       url: https://pointhq.com/
@@ -435,10 +437,17 @@ websites:
 
     - name: porkbun
       url: https://porkbun.com
-      img: porkbunBuns.png
+      img: porkbun.png
       tfa: Yes
       software: Yes
       doc: https://porkbun.com/products/two_factor_authentication
+
+    - name: Rebel.com
+      url: https://www.rebel.com/
+      twitter: rebeldotcom
+      facebook: rebeldomains
+      img: rebel.png
+      tfa: No
 
     - name: Register4Less
       url: https://register4less.com/
@@ -490,6 +499,15 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.ud-reselling.com/en/security/
+
+    - name: united-domains.de
+      url: https://www.united-domains.de/
+      img: united-domains.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.united-domains.de/faq-article/wie-aktiviere-ich-die-zweistufige-verifizierung-und-mache-mein-portfolio-login-sicherer
+      exceptions:
+        text: "A phone number is required to enable two-factor authentication."
 
     - name: Verio
       url: https://www.verio.com/
