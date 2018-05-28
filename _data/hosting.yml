@@ -125,6 +125,13 @@ websites:
       img: globat.png
       tfa: No
       twitter: globat
+      
+    - name: Greenhost
+      url: https://greenhost.net
+      img: greenhost.png
+      tfa: Yes
+      software: Yes
+      doc: https://greenhost.net/2016/03/01/spring-news/
 
     - name: Hetzner Online
       url: https://www.hetzner.de/
@@ -362,9 +369,10 @@ websites:
 
     - name: Squarespace
       url: https://squarespace.com/
-      twitter: squarespace
       img: squarespace.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://support.squarespace.com/hc/en-us/articles/360000044827
 
     - name: Time4VPS
       url: https://www.time4vps.eu/

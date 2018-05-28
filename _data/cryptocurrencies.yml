@@ -91,13 +91,6 @@ websites:
       hardware: Yes
       doc: https://support.blockchain.com/hc/en-us/articles/211164103-Enable-2-Step-Verification-2FA-
 
-    - name: BTCJam
-      url: https://btcjam.com/
-      img: btcjam.png
-      tfa: Yes
-      software: Yes
-      doc: http://help.btcjam.com/customer/portal/articles/1987686
-
     - name: CampBX
       url: https://campbx.com/
       img: campbx.png
@@ -251,6 +244,13 @@ websites:
       phone: Yes
       software: Yes
       doc: https://support.uphold.com/hc/en-us/articles/206119683-How-does-phone-number-verification-work-
+
+    - name: WEX (BTC-E)
+      url: https://wex.nz/
+      img: wex.png
+      tfa: Yes
+      software: Yes
+      doc: https://wex.kayako.com/en-us/article/58-how-to-use-two-factor-authentication
 
     - name: Xapo
       url: https://xapo.com
