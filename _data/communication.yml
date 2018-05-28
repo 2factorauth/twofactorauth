@@ -171,6 +171,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      exceptions:
+          text: "Software authentication requires the Authy app"
       doc: https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
 
     - name: Sendloop
