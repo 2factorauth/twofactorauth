@@ -212,6 +212,17 @@ websites:
   bch: false
   twitter: jetbrains
   facebook: JetBrains
+- name: Joomstore
+  url: https://joomstore.com.au/
+  img: joomstore.png
+  twitter: johnpitchers
+  facebook: Joomstore
+  email_address: john@joomstore.com.au
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
+  exceptions:
+    text: "Payment instructions provided on invoice."
 - name: Koding
   url: https://koding.com
   img: koding.png

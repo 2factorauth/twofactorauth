@@ -196,6 +196,12 @@ websites:
   btc: true
   othercrypto: true
   doc: https://blog.coinbase.com/buy-sell-send-and-receive-bitcoin-cash-on-coinbase-65f1b2c7214b
+- name: Coinbase Pro
+  url: https://pro.coinbase.com/
+  img: coinbasepro.png
+  bch: true
+  btc: true
+  othercrypto: true
 - name: CoinBene
   url: https://www.coinbene.com/
   img: coinbene.png
@@ -311,6 +317,8 @@ websites:
   btc: true
   othercrypto: true
   doc: https://support.gdax.com/customer/portal/articles/2911310-bitcoin-cash-faq
+  exceptions:
+    text: GDAX is becoming Coinbase Pro on June 29, 2018.
 - name: Gemini
   url: https://gemini.com/
   img: gemini.png
@@ -367,6 +375,15 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Lykke
+  url: https://www.lykke.com/
+  img: lykke.png
+  twitter: lykke
+  facebook: LykkeCity
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.lykke.com/cp/tokens-and-coins-traded
 - name: Mercado Bitcoin
   url: https://www.mercadobitcoin.com.br/
   img: mercadobitcoin.png
