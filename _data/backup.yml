@@ -157,6 +157,8 @@ websites:
     tfa: Yes
     email: Yes
     software: Yes
+    exceptions:
+      text: "Only covers NAS system on local IP or custom domains"
     doc: https://www.qnap.com/en-us/how-to/tutorial/article/how-to-enhance-account-security-using-2-step-verification
 
   - name: SmartBox
@@ -196,6 +198,8 @@ websites:
     tfa: Yes
     software: Yes
     email: Yes
+    exceptions:
+      text: "Only covers NAS system on local IP or custom domains"
     doc: https://originwww.synology.com/en-us/knowledgebase/tutorials/615#t5
 
   - name: ThisData
