@@ -188,16 +188,16 @@ websites:
       img: github.png
       tfa: Yes
       sms: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
     - name: GitLab
       url: https://gitlab.com
       img: gitlab.png
       tfa: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
       doc: https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html
 
     - name: Hashicorp Atlas
@@ -240,8 +240,8 @@ websites:
       url: https://launchpad.net
       img: launchpad.png
       tfa: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
       doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
 
     - name: Looker
@@ -404,8 +404,8 @@ websites:
       img: sentry.png
       tfa: Yes
       sms: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
       doc: https://blog.getsentry.com/2016/06/22/introducing-2fa.html
 
     - name: SourceForge

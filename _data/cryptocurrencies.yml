@@ -17,9 +17,9 @@ websites:
       url: https://bitbay.net/
       img: bitbay.png
       tfa: Yes
-      sms: Yes
+      email: Yes
       software: Yes
-      doc: https://www.youtube.com/watch?v=KFvoNHgl9Pw
+      doc: https://bitbay.net/en/safety
 
     - name: Bitcoin.de
       url: https://bitcoin.de
@@ -211,10 +211,10 @@ websites:
     - name: Kraken
       url: https://www.kraken.com/
       img: kraken.png
-      doc: https://support.kraken.com/hc/en-us/articles/203395513-How-do-I-set-up-two-factor-authentication-
       tfa: Yes
       software: Yes
       hardware: Yes
+      doc: https://support.kraken.com/hc/en-us/articles/203395513-How-do-I-set-up-two-factor-authentication-
 
     - name: LiteBit
       url: https://www.litebit.eu/
