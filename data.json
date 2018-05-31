@@ -4,10 +4,10 @@ show_generated_date: true
 --- 
 {%- assign pages = site.data.sections | group_by:"page" | sort:"name" -%}
 {%- assign sortedPages = pages | reverse -%}
-{% for tracked_page in sortedPages %} 
-	"{{ tracked_page.name | capitalize }}": { {% for section in tracked_page.items %}{% assign section_file = site.data[section.id] %}
-		"{{ section.title }}": [ {% for website in section_file.websites %}
-			{{ website | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}
-		]{% unless forloop.last %},{% endunless %}{% endfor %}
-	}{% unless forloop.last %},{% endunless %}
+{%- for tracked_page in sortedPages -%} 
+	"{{ tracked_page.name | capitalize }}": { {%- for section in tracked_page.items -%}{%- assign section_file = site.data[section.id] -%}
+		"{{ section.title }}": [ {%- for website in section_file.websites -%}
+			{{ website | jsonify }}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}
+		]{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}
+	}{%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
