@@ -16,6 +16,19 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: COOL Networks
+  url: http://cool.net.au
+  img: coolnetworks.png
+  twitter: coolnetau
+  facebook: CoolNetworks
+  region: oc
+  country: AU
+  city: Adelaide
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: "Ask the guy if he takes crypto"
 - name: Dyrdahl Lumber
   url: https://dyrdahl-lumber.com
   img: DyrdahlLumber.png
