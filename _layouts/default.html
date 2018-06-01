@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="{{ site.url }}/{{ site.img }}">
   <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
 
   <title>{{ site.title }}</title>
 
