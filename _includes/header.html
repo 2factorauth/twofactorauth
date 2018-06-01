@@ -68,7 +68,7 @@
         <p>
           <button class="ui violet button submit-new"><a href="/add" target="_blank"><i class="add square icon"></i> &nbsp; Submit a new {{ page.list_of }}</a></button>
           <br>
-          <span><i class="info circle icon"></i> We prefer <a href="{{'/issues/new' | prepend: site.repo }}">new issues</a> or pull requests through Github.<br><a href="https://github.com/acceptbitcoincash/acceptbitcoincash/blob/master/CONTRIBUTING.md" target="_blank">Details here</a>.</span>
+          <span><i class="info circle icon"></i> We prefer <a href="{{'/issues/new' | prepend: site.repo }}">new issues</a> or pull requests through Github.<br><a href="{{ '/blob/master/CONTRIBUTING.md' | prepend: site.repo }}" target="_blank">Details here</a>.</span>
         </p>
       </div>
 	  {%- endif -%}
