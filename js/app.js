@@ -13,7 +13,7 @@ $(document).ready(function () {
     hoverable: true
   });
   $('a.popup.exception').popup();
-  $('.icon.popup').popup();
+  $('th.popup').popup();
 });
 
 /**
