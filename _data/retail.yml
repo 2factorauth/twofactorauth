@@ -1124,6 +1124,8 @@ websites:
   twitter: Overstock
   facebook: overstock
   email_address: international@overstock.com
+  exceptions:
+    text: "BTC payments are only available for US customers, other cryptocurrencies go through Shapeshift"
 - name: parfuemerie.de
   url: https://www.parfuemerie.de/
   img: parfuemeriede.png
