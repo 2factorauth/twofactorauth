@@ -16,6 +16,15 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: BCH Ad Spot
+    url: https://bchadspot.com
+    img: bch_adspot.jpg
+    email_address: info@bchadspot.com
+    bch: Yes
+    btc: No
+    othercrypto: No
+    exceptions: 
+      text: "Coinpayments.net"
 - name: COOL Networks
   url: http://cool.net.au
   img: coolnetworks.png
