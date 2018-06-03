@@ -71,6 +71,14 @@ websites:
   btc: false
   exceptions:
     text: Buycraft used to accept BTC, but as of 2018-04-26 stopped accepting it
+- name: CentroBill
+  url: https://centrobill.com/
+  img: centrobill.png
+  facebook: centrobill
+  email_address: support@centrobill.com
+  bch: false
+  btc: true
+  othercrypto: false
 - name: cheddr
   url: https://pos.cheddr.cash/
   img: cheddr.png
