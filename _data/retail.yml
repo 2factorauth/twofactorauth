@@ -57,6 +57,16 @@ websites:
   bch: Yes
   btc: Yes
   othercrypto: Yes
+- name: ACE Hack Ware
+  url: https://acehackware.com/
+  img: acehackware.png
+  twitter: acehackware
+  facebook: acehackware
+  bch: yes
+  btc: yes
+  othercrypto: yes
+  keywords:
+  - coinbase
 - name: Adafruit
   url: https://www.adafruit.com
   img: adafruit.png
@@ -252,6 +262,13 @@ websites:
   img: bitcoinbling.png
   bch: true
   btc: true
+- name: Bitcoin Cash Market
+  url: https://bitcoincash-market.com/
+  img: bitcoincashmarket.png
+  twitter: BCH_Market
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Bitcoin Cash Stickers
   url: http://bitcoincashstickers.com/
   img: bchstickers.png
@@ -1136,6 +1153,8 @@ websites:
   twitter: Overstock
   facebook: overstock
   email_address: international@overstock.com
+  exceptions:
+    text: "BTC payments are only available for US customers, other cryptocurrencies go through Shapeshift"
 - name: parfuemerie.de
   url: https://www.parfuemerie.de/
   img: parfuemeriede.png
