@@ -436,6 +436,13 @@ websites:
       exceptions:
           text: "SMS only available as a backup to Google Authenticator."
 
+    - name: Ripe NCC
+      url: https://www.ripe.net/
+      img: ripe.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.ripe.net/participate/member-support/ripe-ncc-access/two-step-verification
+
     - name: SaneBox
       url: https://www.sanebox.com/
       img: sanebox.png
