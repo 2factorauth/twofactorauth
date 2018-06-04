@@ -342,6 +342,13 @@ websites:
       img: plivo.png
       tfa: No
 
+    - name: Pushover
+      url: https://pushover.net/
+      img: pushover.png
+      tfa: Yes
+      software: Yes
+      doc: https://pushover.net/faq#security-2fa
+
     - name: PyPI
       url: https://pypi.python.org/
       twitter: pypi
