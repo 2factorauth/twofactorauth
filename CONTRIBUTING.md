@@ -139,7 +139,7 @@ The following is an example of a website that *supports* TFA:
       tfa: Yes
       hardware: Yes
       otp: Yes
-      u2f: No
+      u2f: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 ```
 
@@ -160,7 +160,6 @@ The following is an example of a website that *does not* support TFA:
       email_address: example@netflix.com (Only if available and monitored)
       img: netflix.png
       tfa: No
-      hardware: No
       lang: <ISO 639-1 language code> (Only for non-English websites)
 ```
 
