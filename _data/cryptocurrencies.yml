@@ -6,13 +6,20 @@ websites:
       software: Yes
       doc: https://anxpro.com/pages/security
 
+    - name: Binance
+      url: https://www.binance.com/
+      img: binance.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.binance.com/hc/en-us/articles/115002439332-Securing-Your-Trading-Account
+
     - name: BitBay
       url: https://bitbay.net/
       img: bitbay.png
       tfa: Yes
-      sms: Yes
+      email: Yes
       software: Yes
-      doc: https://www.youtube.com/watch?v=KFvoNHgl9Pw
+      doc: https://bitbay.net/en/safety
 
     - name: Bitcoin.de
       url: https://bitcoin.de
@@ -34,7 +41,17 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
       doc: https://support.bitfinex.com/hc/en-us/sections/203192029-Security
+
+    - name: Bitflyer
+      url: https://bitflyer.jp
+      img: bitflyer.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      software: Yes
+      doc: https://bitflyer.jp/en/faq/2-10
 
     - name: BitGo
       url: https://www.bitgo.com
@@ -43,6 +60,14 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://bitgo.zendesk.com/hc/en-us/sections/201009049-Two-Factor-Authentication-Help-Page
+
+    - name: Bithumb
+      url: https://www.bithumb.com/
+      img: bithumb.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://bithumb.cafe/archives/7286
 
     - name: Bitlish
       url: https://bitlish.com
@@ -58,13 +83,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://bitpay.com/two-factor
-
-    - name: Bitsewa
-      url: https://www.bitsewa.com
-      img: bitsewa.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.bitsewa.com/terms.php#2fa
 
     - name: Bitstamp
       url: https://bitstamp.net
@@ -88,14 +106,36 @@ websites:
       email: Yes
       software: Yes
       hardware: Yes
-      doc: https://blockchain.info/wallet/support-pages
+      doc: https://support.blockchain.com/hc/en-us/articles/211164103-Enable-2-Step-Verification-2FA-
 
-    - name: BTCJam
-      url: https://btcjam.com/
-      img: btcjam.png
+    - name: Braziliex
+      url: https://braziliex.com/
+      img: braziliex.png
       tfa: Yes
       software: Yes
-      doc: http://help.btcjam.com/customer/portal/articles/1987686
+      doc: https://braziliex.com/faq/index.php?id=288
+
+    - name: BTC BOX
+      url: https://www.btcbox.co.jp/
+      img: btcbox.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.btcbox.co.jp/help/ga
+
+    - name: BTCPOP
+      url: https://btcpop.co/
+      img: btcpop.png
+      tfa: Yes
+      software: Yes
+      doc: https://blog.btcpop.co/2017/04/27/signing-security-btcpop-co-account/
+
+    - name: BX Thailand
+      url: https://bx.in.th/
+      img: bxthailand.png
+      tfa: Yes
+      software: Yes
+      doc: https://bx.in.th/info/faq/
 
     - name: CampBX
       url: https://campbx.com/
@@ -111,6 +151,13 @@ websites:
       sms: Yes
       software: Yes
       doc: https://cex.io/guide#4
+
+    - name: Changelly
+      url: https://changelly.com/
+      img: changelly.png
+      tfa: Yes
+      software: Yes
+      doc: https://changelly.com/faq#what-is-2fa-authentication
 
     - name: Circle
       url: https://circle.com
@@ -144,6 +191,14 @@ websites:
       phone: Yes
       doc: https://support.coinbase.com/customer/en/portal/articles/1658338-how-do-i-set-up-2-factor-authentication-with-authy-
 
+    - name: CoinDeal
+      url: https://coindeal.com
+      img: coindeal.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://coindeal.com/security
+
     - name: Coinfloor
       url: https://www.coinfloor.co.uk/
       img: coinfloor.png
@@ -152,6 +207,13 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://www.coinfloor.co.uk/security
+
+    - name: CoinGate
+      url: https://coingate.com
+      img: coingate.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.coingate.com/en/65/how-do-i-set-up-2-factor-authentication-2fa-on-my-account
 
     - name: Coinify (Merchants)
       url: https://coinify.com/merchants
@@ -183,6 +245,14 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      
+    - name: Gemini
+      url: https://gemini.com/
+      img: gemini.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://gemini.com/blog/better-two-factor-authentication/
 
     - name: HitBTC
       url: https://www.hitbtc.com/
@@ -201,10 +271,17 @@ websites:
     - name: Kraken
       url: https://www.kraken.com/
       img: kraken.png
-      doc: https://support.kraken.com/hc/en-us/articles/203395513-How-do-I-set-up-two-factor-authentication-
       tfa: Yes
       software: Yes
       hardware: Yes
+      doc: https://support.kraken.com/hc/en-us/articles/203395513-How-do-I-set-up-two-factor-authentication-
+
+    - name: LiteBit
+      url: https://www.litebit.eu/
+      img: litebit.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.litebit.eu/hc/en-us/articles/115000953504-What-is-Two-Factor-Authentication-2FA-How-to-
 
     - name: LocalBitcoins
       url: https://localbitcoins.com/
@@ -243,6 +320,13 @@ websites:
       software: Yes
       doc: https://support.uphold.com/hc/en-us/articles/206119683-How-does-phone-number-verification-work-
 
+    - name: WEX (BTC-E)
+      url: https://wex.nz/
+      img: wex.png
+      tfa: Yes
+      software: Yes
+      doc: https://wex.kayako.com/en-us/article/58-how-to-use-two-factor-authentication
+
     - name: Xapo
       url: https://xapo.com
       img: xapo.png
@@ -250,4 +334,4 @@ websites:
       sms: Yes
       phone: Yes
       software: Yes
-      doc: https://support.xapo.com/how-do-i-enable-second-factor-authentication/view=faq
+      doc: https://support.xapo.com/how-do-i-enable-disable-the-second-factor-authentication/view=faq
