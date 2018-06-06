@@ -208,15 +208,6 @@ websites:
       img: cdcfcu.png
       tfa: No
 
-    - name: Chase
-      url: https://www.chase.com/
-      img: chase.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      email: Yes
-      doc: /notes/chase/
-
     - name: Charles Schwab Bank
       url: https://www.schwab.com/
       img: schwab.png
@@ -227,6 +218,15 @@ websites:
       software: No
       hardware: No
       doc: https://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe
+
+    - name: Chase
+      url: https://www.chase.com/
+      img: chase.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      email: Yes
+      doc: /notes/chase/
 
     - name: Chime
       url: https://www.chimebank.com
