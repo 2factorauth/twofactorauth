@@ -5,3 +5,4 @@
 {%- endcapture -%}
 User-agent: *
 Disallow: {{ disallow_val }}
+Sitemap: {{ "sitemap.xml" | absolute_url }}

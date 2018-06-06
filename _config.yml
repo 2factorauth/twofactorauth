@@ -21,6 +21,7 @@ sass:
 plugins:
   - jekyll-minifier
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 defaults:
   -
@@ -63,4 +64,4 @@ exclude:
 
 jekyll-minifier:
   compress_javascript: true         # Default: true
-  exclude: ['robots.txt'] # Keeping these files sexy guys
+  exclude: ['robots.txt', 'sitemap.xml'] # Keeping these files sexy guys
