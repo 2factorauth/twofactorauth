@@ -16,6 +16,15 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: BCH Ad Spot
+  url: https://bchadspot.com
+  img: bch_adspot.png
+  email_address: info@bchadspot.com
+  bch: Yes
+  btc: No
+  othercrypto: No
+  exceptions: 
+    text: "Coinpayments.net"
 - name: COOL Networks
   url: http://cool.net.au
   img: coolnetworks.png
@@ -106,7 +115,16 @@ websites:
   img: muse.png
   bch: true
   btc: true
-  othercrypto: true
+  othercrypto: 
+- name: MyMillennialGuide.com
+  url: https://www.mymillennialguide.com/
+  img: mymillennialguide.png
+  twitter: themillennialmg
+  facebook: mymillennialguide
+  email_address: brian@mymillennialguide.com
+  bch: false
+  btc: false
+  othercrypto: false
 - name: PekTech
   url: https://pek.tech
   img: pektech.png
