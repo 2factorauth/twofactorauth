@@ -11,10 +11,10 @@ websites:
 
     - name: Airbrake
       url: https://airbrake.io
-      twitter: airbrake
-      facebook: airbrake.io
       img: airbrake.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://airbrake.io/docs/features/two-factor-authentication/
 
     - name: Algolia
       url: https://algolia.com
@@ -85,6 +85,13 @@ websites:
       tfa: No
       twitter: Cedexis
       facebook: Cedexis
+
+    - name: Chocolatey
+      url: https://chocolatey.org/
+      img: chocolatey.png
+      tfa: No
+      twitter: chocolateynuget
+      facebook: ChocolateySoftware
 
     - name: Cloud9
       url: https://c9.io
@@ -188,16 +195,16 @@ websites:
       img: github.png
       tfa: Yes
       sms: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
       doc: https://help.github.com/articles/about-two-factor-authentication
 
     - name: GitLab
       url: https://gitlab.com
       img: gitlab.png
       tfa: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
       doc: https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html
 
     - name: Hashicorp Atlas
@@ -240,8 +247,8 @@ websites:
       url: https://launchpad.net
       img: launchpad.png
       tfa: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
       doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
 
     - name: Looker
@@ -411,8 +418,8 @@ websites:
       img: sentry.png
       tfa: Yes
       sms: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
       doc: https://blog.getsentry.com/2016/06/22/introducing-2fa.html
 
     - name: SourceForge

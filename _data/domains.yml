@@ -122,6 +122,16 @@ websites:
       img: domaintools.png
       tfa: No
 
+    - name: Domeneshop
+      url: https://domeneshop.no/
+      img: domeneshop.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      exceptions:
+        text: "SMS available only to customers in Norway, Sweden and Denmark."
+      doc: https://domeneshop.no/faq?id=344
+
     - name: Domeny.tv
       url: https://www.domeny.tv/en
       img: domenytv.png
