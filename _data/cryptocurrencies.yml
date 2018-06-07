@@ -232,12 +232,43 @@ websites:
       sms: Yes
       doc: https://support.coinjar.com/kb/using-coinjar/keeping-your-coinjar-secure-with-multi-factor-authentication
 
+    - name: CoinOne
+      url: https://coinone.co.kr/
+      img: coinone.png
+      tfa: Yes
+      software: Yes
+      doc: https://coinone.co.kr/static/download/coinone_guide.pdf
+
     - name: Coins.ph
       url: https://coins.ph/
       img: coinsph.png
       tfa: Yes
       software: Yes
       doc: https://support.coins.ph/hc/en-us/articles/202604924-What-is-two-factor-authentication-
+
+    - name: Coinspot
+      url: https://www.coinspot.com.au/
+      img: coinspot.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://coinspot.zendesk.com/hc/en-us/sections/115000049254-2FA-Google-Authenticator
+
+    - name: Cryptopia
+      url: https://www.cryptopia.co.nz
+      img: cryptopia.png
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://www.cryptopia.co.nz/Forum/Thread/1885
+
+    - name: DSX
+      url: https://dsx.uk/
+      img: dsx.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://docs.dsx.uk/dsx/getting-started-with-dsx/your-security-is-our-priority/enable-two-factor-authentication
 
     - name: Gatehub
       url: https://gatehub.net
