@@ -1,4 +1,5 @@
 ---
+sitemap: false
 ---
 {%- capture disallow_val -%}
 {%- if site.GH_ENV == 'gh_pages' -%}/{%- endif -%}

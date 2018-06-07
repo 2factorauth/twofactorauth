@@ -26,7 +26,7 @@ plugins:
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
+      path: "*.html" # an empty string here means all files in the project
     values:
       # Page Variables
       image: img/logo.png
@@ -41,7 +41,9 @@ defaults:
       progress_tweet: "Thanks for accepting Bitcoin Cash, @TWITTERHANDLE!"
       hash: "acceptBitcoinCash, BCHforEveryone"
       has_search: yes
-      list_of: "merchant"
+      has_nav: yes
+      has_ticker: yes
+      list_of: "merchants"
       encoded_img_placeholder: "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
       img_placeholder: "/img/placeholder.png"
 
