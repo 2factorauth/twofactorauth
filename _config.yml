@@ -66,4 +66,6 @@ exclude:
 
 jekyll-minifier:
   compress_javascript: true         # Default: true
-  exclude: ['robots.txt', 'sitemap.xml'] # Keeping these files sexy guys
+  exclude: # Keeping these files sexy guys
+  - 'robots.txt'
+  - 'sitemap.xml'
