@@ -59,7 +59,7 @@ websites:
       tfa: No
       twitter: Bonobos
       facebook: bonobos
- 
+
     - name: Boxed
       url: https://www.boxed.com
       img: boxed.png
@@ -129,8 +129,10 @@ websites:
     - name: Etsy
       url: https://www.etsy.com/
       img: etsy.png
-      sms: Yes
       tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
       doc: https://www.etsy.com/help/article/3335
 
     - name: Everlane
