@@ -45,5 +45,8 @@ $(document).ready(function () {
 	  });
 	}
 
-	ticker(ticker_currencies);
+	// Only do something if we see the element exists (this prevents errors
+    if($('#ticker_value').length) {
+      ticker(ticker_currencies);
+    }
 });

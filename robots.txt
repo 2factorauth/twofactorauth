@@ -1,7 +1,9 @@
 ---
+sitemap: false
 ---
 {%- capture disallow_val -%}
 {%- if site.GH_ENV == 'gh_pages' -%}/{%- endif -%}
 {%- endcapture -%}
 User-agent: *
 Disallow: {{ disallow_val }}
+Sitemap: {{ "sitemap.xml" | absolute_url }}

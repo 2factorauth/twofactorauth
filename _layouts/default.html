@@ -55,24 +55,21 @@
 {% include js-warning.html %}
 {% include header.html %}
 
-{%- include segment/navbar.html -%}
+{%- if page.has_nav -%}
+	{%- include segment/navbar.html -%}
+{%- endif -%}
 
 <!-- 'content' loads pages from the root (index.html/*.html) -->
 {{ content }}
 
-{%- if page.page_name == "home" -%}
-  {% include segment/twitter.html %}
-  {% include segment/moreinfo.html %}
-  {% include segment/assets.html %}
-{%- elsif page.page_name == "adult" -%}
-  {% include modals/adult-warning.html %}
-{%- endif -%}
 
+{%- if page.has_ticker -%}
+	{% include segment/ticker.html %}
+{%- endif -%}
 <!-- Global includes -->
-{% include modals/disclaimer.html %}
-{% include segment/ticker.html %}
 {% include fab.html %}
 {% include footer.html %}
+{% include modals/disclaimer.html %}
 {% include scripts.html %}
 </body>
 </html>
