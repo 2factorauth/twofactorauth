@@ -12,10 +12,10 @@ websites:
 
     - name: Airbrake
       url: https://airbrake.io
-      twitter: airbrake
-      facebook: airbrake.io
       img: airbrake.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://airbrake.io/docs/features/two-factor-authentication/
 
     - name: Algolia
       url: https://algolia.com
@@ -89,6 +89,13 @@ websites:
       tfa: No
       twitter: Cedexis
       facebook: Cedexis
+
+    - name: Chocolatey
+      url: https://chocolatey.org/
+      img: chocolatey.png
+      tfa: No
+      twitter: chocolateynuget
+      facebook: ChocolateySoftware
 
     - name: Cloud9
       url: https://c9.io
@@ -208,7 +215,7 @@ websites:
       hardware: Yes
       otp: Yes
       u2f: Yes
-      doc: https://docs.gitlab.com/ee/security/two_factor_authentication.html
+      doc: https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html
 
     - name: Hashicorp Atlas
       url: https://atlas.hashicorp.com/
@@ -354,6 +361,13 @@ websites:
       facebook: Plivo
       img: plivo.png
       tfa: No
+
+    - name: Pushover
+      url: https://pushover.net/
+      img: pushover.png
+      tfa: Yes
+      software: Yes
+      doc: https://pushover.net/faq#security-2fa
 
     - name: PyPI
       url: https://pypi.python.org/

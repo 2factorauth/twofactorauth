@@ -48,6 +48,15 @@ websites:
       u2f: Yes
       doc: https://support.bitfinex.com/hc/en-us/sections/203192029-Security
 
+    - name: Bitflyer
+      url: https://bitflyer.jp
+      img: bitflyer.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      software: Yes
+      doc: https://bitflyer.jp/en/faq/2-10
+
     - name: BitGo
       url: https://www.bitgo.com
       img: bitgo.png
@@ -55,6 +64,14 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://bitgo.zendesk.com/hc/en-us/sections/201009049-Two-Factor-Authentication-Help-Page
+
+    - name: Bithumb
+      url: https://www.bithumb.com/
+      img: bithumb.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://bithumb.cafe/archives/7286
 
     - name: Bitlish
       url: https://bitlish.com
@@ -98,6 +115,35 @@ websites:
       otp: Yes
       doc: https://support.blockchain.com/hc/en-us/articles/211164103-Enable-2-Step-Verification-2FA-
 
+    - name: Braziliex
+      url: https://braziliex.com/
+      img: braziliex.png
+      tfa: Yes
+      software: Yes
+      doc: https://braziliex.com/faq/index.php?id=288
+
+    - name: BTC BOX
+      url: https://www.btcbox.co.jp/
+      img: btcbox.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.btcbox.co.jp/help/ga
+
+    - name: BTCPOP
+      url: https://btcpop.co/
+      img: btcpop.png
+      tfa: Yes
+      software: Yes
+      doc: https://blog.btcpop.co/2017/04/27/signing-security-btcpop-co-account/
+
+    - name: BX Thailand
+      url: https://bx.in.th/
+      img: bxthailand.png
+      tfa: Yes
+      software: Yes
+      doc: https://bx.in.th/info/faq/
+
     - name: CampBX
       url: https://campbx.com/
       img: campbx.png
@@ -114,6 +160,13 @@ websites:
       sms: Yes
       software: Yes
       doc: https://cex.io/guide#4
+
+    - name: Changelly
+      url: https://changelly.com/
+      img: changelly.png
+      tfa: Yes
+      software: Yes
+      doc: https://changelly.com/faq#what-is-2fa-authentication
 
     - name: Circle
       url: https://circle.com
@@ -192,6 +245,13 @@ websites:
       otp: Yes
       doc: https://support.coinjar.com/kb/using-coinjar/keeping-your-coinjar-secure-with-multi-factor-authentication
 
+    - name: CoinOne
+      url: https://coinone.co.kr/
+      img: coinone.png
+      tfa: Yes
+      software: Yes
+      doc: https://coinone.co.kr/static/download/coinone_guide.pdf
+
     - name: Coins.ph
       url: https://coins.ph/
       img: coinsph.png
@@ -199,12 +259,58 @@ websites:
       software: Yes
       doc: https://support.coins.ph/hc/en-us/articles/202604924-What-is-two-factor-authentication-
 
+    - name: Coinspot
+      url: https://www.coinspot.com.au/
+      img: coinspot.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://coinspot.zendesk.com/hc/en-us/sections/115000049254-2FA-Google-Authenticator
+
+    - name: Cryptopia
+      url: https://www.cryptopia.co.nz
+      img: cryptopia.png
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://www.cryptopia.co.nz/Forum/Thread/1885
+
+    - name: DSX
+      url: https://dsx.uk/
+      img: dsx.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://docs.dsx.uk/dsx/getting-started-with-dsx/your-security-is-our-priority/enable-two-factor-authentication
+
     - name: Gatehub
       url: https://gatehub.net
       img: gatehub.png
       tfa: Yes
       sms: Yes
       software: Yes
+      
+    - name: Gemini
+      url: https://gemini.com/
+      img: gemini.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://gemini.com/blog/better-two-factor-authentication/
+
+    - name: HitBTC
+      url: https://www.hitbtc.com/
+      img: hitbtc.png
+      tfa: Yes
+      software: Yes
+      doc: https://hitbtc.com/faq/security
+
+    - name: Korbit
+      url: https://www.korbit.co.kr
+      img: korbit.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.korbit.co.kr/customer/en/portal/articles/1717692-what-is-2-factor-authentication-
 
     - name: Kraken
       url: https://www.kraken.com/

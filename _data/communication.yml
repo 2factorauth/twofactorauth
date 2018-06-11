@@ -106,7 +106,7 @@ websites:
       hardware: Yes
       otp: Yes
       u2f: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: HipChat
       url: https://www.hipchat.com
@@ -192,6 +192,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      exceptions:
+          text: "Software authentication requires the Authy app"
       doc: https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
 
     - name: Sendloop
