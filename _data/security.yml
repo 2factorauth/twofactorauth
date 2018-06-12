@@ -40,6 +40,13 @@ websites:
       hardware: Yes
       exceptions:
           text: "Requires X.509-capable cryptotoken or smartcard."
+    
+    - name: Cloudflare
+      url: https://cloudflare.com
+      img: cloudflare.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.cloudflare.com/hc/en-us/articles/200167866-How-do-I-set-up-two-factor-authentication-
 
     - name: Cobalt
       url: https://cobalt.io/
