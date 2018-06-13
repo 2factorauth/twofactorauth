@@ -104,6 +104,13 @@ websites:
       hardware: Yes
       doc: https://www.bochk.com/en/security/2factorauthentication.html
 
+    - name: Bank Zachodni WBK
+      url: https://www.bzwbk.pl
+      img: bzwbk.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.bzwbk.pl/firmy/bankowosc-elektroniczna/bzwbk24-mini-firma/metody-autoryzacji/metody-autoryzacji.html
+
     - name: Barclays UK
       url: https://www.barclays.co.uk/
       img: barclays.png
@@ -234,10 +241,9 @@ websites:
     - name: Citibank Australia
       url: https://www.citibank.com.au/
       img: citibank.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      doc: https://www.citibank.com.au/otp/
+      tfa: No
+      twitter: CitiAustralia
+      facebook: citiaustralia
 
     - name: Citizens Bank
       url: https://www.citizensbank.com
@@ -275,9 +281,9 @@ websites:
     - name: Commonwealth Bank of Australia
       url: https://www.commbank.com.au/
       img: commbank.png
-      tfa: Yes
-      sms: Yes
-      doc: https://www.commbank.com.au/security-privacy/netcode.html
+      tfa: No
+      twitter: CommBank
+      facebook: commonwealthbank
 
     - name: Credit Union Australia
       url: https://www.cua.com.au/
@@ -690,6 +696,15 @@ websites:
       img: postbank.png
       tfa: No
       lang: de
+
+    - name: PosteItaliane
+      url: https://www.poste.it/
+      twitter: PosteNews
+      facebook: PosteItaliane
+      email_address: servizio.clienti@posteitaliane.it
+      img: posteitaliane.png
+      tfa: No
+      lang: it
 
     - name: Raiffeisen Bank CZ
       url: https://www.rb.cz/
