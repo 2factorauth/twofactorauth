@@ -271,14 +271,14 @@ websites:
       img: weibo.png
       tfa: No
 
-    - name: WordPress.com
+    - name: WordPress
       url: https://wordpress.com
       img: wordpress.png
       tfa: Yes
       sms: Yes
       software: Yes
       exceptions:
-          text: "SMS-capable phone required."
+        text: "SMS required for 2FA."
       doc: https://en.support.wordpress.com/security/two-step-authentication/
 
     - name: XING
