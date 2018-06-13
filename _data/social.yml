@@ -278,7 +278,7 @@ websites:
       sms: Yes
       software: Yes
       exceptions:
-          text: "SMS-capable phone required."
+        text: "SMS required for 2FA."
       doc: https://en.support.wordpress.com/security/two-step-authentication/
 
     - name: XING
