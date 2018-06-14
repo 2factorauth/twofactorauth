@@ -81,15 +81,6 @@ websites:
       twitter: bananatag
       facebook: trackemail
 
-    - name: BasisCode Compliance
-      url: https://basiscode.com
-      img: basiscode.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      phone: Yes
-      doc: https://basiscode.com/blog/two-factor-authentication-compliance-software/
-
     - name: BuiltWith
       url: https://builtwith.com
       img: builtwith.png
@@ -139,13 +130,6 @@ websites:
       img: commuterbenefits.png
       tfa: No
       twitter: CommuterBenefit
-
-    - name: Cosmolex
-      url: https://www.cosmolex.com/
-      img: cosmolex.png
-      tfa: Yes
-      sms: Yes
-      doc: http://kb.cosmolex.com/support/solutions/articles/19000028547-how-to-enable-two-factor-authentication-
 
     - name: Crowd Supply
       url: https://www.crowdsupply.com
@@ -427,12 +411,6 @@ websites:
       img: postmates.png
       tfa: No
 
-    - name: Pozible
-      url: https://www.pozible.com
-      img: pozible.png
-      twitter: pozible
-      tfa: No
-
     - name: Promoter.io
       url: https://promoter.io/
       img: promoter.png
@@ -519,17 +497,6 @@ websites:
       img: wageworks.png
       tfa: No
       twitter: WageWorksCares
-
-    - name: Watchman Monitoring
-      url: https://www.watchmanmonitoring.com
-      img: watchmanmonitoring.png
-      tfa: Yes
-      hardware: Yes
-      sms: Yes
-      software: Yes
-      doc: https://www.watchmanmonitoring.com/two-factor-authentication
-      exceptions:
-          text: "Two factor authentication unavailable for 'End User' access, which is read-only."
 
     - name: Wikia
       url: https://www.wikia.com/
