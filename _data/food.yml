@@ -25,7 +25,8 @@ websites:
   bch: false
   othercrypto: false
   exceptions:
-    text: "Used to accept Bitcoin but was disabled after Coinbase Merchant Tools were discontinued. Last checked May 5th, 2018"
+    text: Used to accept Bitcoin but was disabled after Coinbase Merchant Tools were
+      discontinued. Last checked May 5th, 2018
 - name: Bar Foxx
   url: http://barfoxx.com
   img: barfoxx.png
@@ -47,9 +48,9 @@ websites:
   twitter: BitSoulKitchen
   facebook: BitcoinSoulKitchen
   email_address: info@bit-soul-kitchen.org
-  bch: Yes
-  btc: Yes
-  othercrypto: No
+  bch: true
+  btc: true
+  othercrypto: false
   doc: https://bitcointalk.org/index.php?topic=4406105.0
 - name: Blue Apron
   url: https://www.blueapron.com/
@@ -204,6 +205,13 @@ websites:
   keywords:
   - bitpay
   - bip70
+- name: Morello International
+  url: https://www.morelloint.com
+  img: morelloIntl.png
+  email_address: framore@morelloint.com
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Nonno Angelo
   url: http://www.nonnoangelo.co.il/
   img: NonnoAngeloPizza.png
@@ -376,9 +384,9 @@ websites:
   twitter: umamisnack
   region: eu
   lang: de
-  bch: Yes
-  btc: Yes
-  othercrypto: No
+  bch: true
+  btc: true
+  othercrypto: false
   doc: https://twitter.com/umamisnack/status/992325968437104641
 - name: Village Catalog
   url: https://villagecatalog.com
