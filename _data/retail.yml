@@ -54,17 +54,17 @@ websites:
   img: abrahamartist.png
   twitter: Mad_spinner
   email_address: abrahama@abrahamartist.com
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
 - name: ACE Hack Ware
   url: https://acehackware.com/
   img: acehackware.png
   twitter: acehackware
   facebook: acehackware
-  bch: yes
-  btc: yes
-  othercrypto: yes
+  bch: true
+  btc: true
+  othercrypto: true
   keywords:
   - coinbase
 - name: Adafruit
@@ -180,21 +180,31 @@ websites:
   twitter: apparelastro
   facebook: astronautapparel
   email_address: brandon@astronautapparel.com
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   doc: https://twitter.com/apparelastro/status/993870025294536705
   keywords:
   - coinbase
+- name: ATHEIST / The Meaningful Shoe Company
+  url: http://www.atheistberlin.com/
+  img: AtheistShoes.png
+  twitter: AtheistShoes
+  facebook: AtheistShoes
+  bch: true
+  btc: false
+  othercrypto: false
+  exceptions:
+    text: Ask them or visit their shop in Berlin
 - name: Autodekor
   url: https://cockpitdekor.com
   img: autodekor.png
   twitter: Fityourselfcouk
   facebook: cockpitdekor
   email_address: info@cockpitdekor.com
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   doc: https://cockpitdekor.com/en/content/5-secure-payment
 - name: Avocadostore
   url: https://www.avocadostore.de/
@@ -446,6 +456,19 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Cryptone.Media
+  url: http://www.cryptonemedia.com
+  img: CryptoneMedia.png
+  twitter: CryptoneMedia
+  facebook: cryptonemedia
+  email_address: cryptone.media@gmail.com
+  country: US
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://twitter.com/CryptoneMedia/status/1007057798201528320
+  exceptions:
+    text: Select Other Payment Options at Check Out
 - name: CryptoVerge
   url: http://www.cryptoverge.com/
   img: cryptoverge.png
@@ -668,9 +691,9 @@ websites:
   region: na
   country: CA
   city: Toronto
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
 - name: growhaus
   url: https://www.growhaus.de/
   img: growhaus.png
@@ -732,9 +755,9 @@ websites:
   img: hatlikedad.png
   facebook: hatlikedad
   email_address: hatlikedad@gmail.com
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   doc: https://www.hatlikedad.com/blogs/news/who-accepts-crypto-as-payment
   keywords:
   - coinbase
@@ -836,9 +859,9 @@ websites:
   url: https://justhodlapparel.com
   img: justhodlapparel.png
   region: na
-  bch: Yes
-  btc: No
-  othercrypto: Yes
+  bch: true
+  btc: false
+  othercrypto: true
   doc: https://www.reddit.com/r/Bitcoincash/comments/8k93jt/recently_launched_a_crypto_store_and_naturally/
 - name: Kawaii Crypto
   url: https://kawaiicrypto.com
@@ -929,6 +952,17 @@ websites:
   twitter: asklazadasg
   img: lazada.png
   bch: false
+- name: Lazy Pyramid
+  url: https://lazypyramid.com/
+  img: lazypyramid.png
+  twitter: TheLazyPyramid
+  facebook: lazypyramid
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinpayments
+  - coinbase commerce
 - name: Lehner Versand
   url: https://www.lehner-versand.ch/
   img: lehnerversand.png
@@ -958,9 +992,9 @@ websites:
   email_address: intl@loomenaughty.com
   region: na
   country: US
-  bch: Yes
-  btc: No
-  othercrypto: No
+  bch: true
+  btc: false
+  othercrypto: false
   doc: https://loomenaughty.com/help/
 - name: Lowes
   url: https://www.lowes.com
@@ -1165,7 +1199,8 @@ websites:
   facebook: overstock
   email_address: international@overstock.com
   exceptions:
-    text: "BTC payments are only available for US customers, other cryptocurrencies go through Shapeshift"
+    text: BTC payments are only available for US customers, other cryptocurrencies
+      go through Shapeshift
 - name: parfuemerie.de
   url: https://www.parfuemerie.de/
   img: parfuemeriede.png
@@ -1434,9 +1469,9 @@ websites:
   email_address: cannington@stormcomputers.com.au
   region: oc
   country: AU
-  bch: Yes
-  btc: Yes
-  othercrypto: No
+  bch: true
+  btc: true
+  othercrypto: false
   doc: https://www.stormcomputers.com.au/catalog/bitcoininfo.php
 - name: StreamWorks
   url: http://streamworks.com/shop
