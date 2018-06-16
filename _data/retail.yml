@@ -192,10 +192,11 @@ websites:
   twitter: AtheistShoes
   facebook: AtheistShoes
   bch: true
-  btc: false
+  btc: true
   othercrypto: false
-  exceptions:
-    text: Ask them or visit their shop in Berlin
+  keywords:
+  - bitpay
+  - bip70
 - name: Autodekor
   url: https://cockpitdekor.com
   img: autodekor.png
