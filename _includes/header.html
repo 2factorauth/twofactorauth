@@ -31,7 +31,7 @@
 
     <div class="inner-title">
       <div class="sub header">
-        <p>A community-curated list of <b>{{ page.list_of }} that accept <a href="https://bitcoincash.org" data-tooltip="Learn about Bitcoin Cash" data-position="top center">Bitcoin Cash</a></b>, a peer-to-peer electronic cash system{% if page.id == 'donation-listings' %}, for donations{% endif %}.</p>
+        <p>A community-curated list of <b>{{ page.list_of }}{% if page.id == 'donation-listings' or 'adult-listings' %}s{% endif %} that accept <a href="https://bitcoincash.org" data-tooltip="Learn about Bitcoin Cash" data-position="top center">Bitcoin Cash</a></b>, a peer-to-peer electronic cash system{% if page.id == 'donation-listings' %}, for donations{% endif %}.</p>
       </div>
       {%- if page.has_search -%}
       <i class="btc icon"></i>

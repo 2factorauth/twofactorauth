@@ -1406,6 +1406,7 @@ span.progress {
   background: rgba(255,255,255,0.7);
   margin: 0;
   border-bottom: 10px solid $green-light;
+  border-radius: 0;
   padding: 1.4rem 2rem 1rem;
 
   p {
@@ -1420,6 +1421,26 @@ span.progress {
     &.version {
       font-size: 0.88rem;
       color: $gray-lighter;
+    }
+  }
+
+  &.top {
+    background: rgba(50, 123, 158, 0.8);
+    padding: .5rem 0;
+    border-bottom: 10px solid #63b0d5;
+    color: $white-dark;
+
+    a {
+      color: #fff;
+      font-weight: bold;
+
+      &:hover {
+        color: $link-on-dark;
+      }
+
+      i {
+        font-weight: normal;
+      }
     }
   }
 }
