@@ -39,9 +39,9 @@ websites:
 - name: BitPro
   url: https://bitpro.cc
   email_address: info@bitpro.cc
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   doc: https://www.reddit.com/r/Bitcoincash/comments/8gqi5v/payment_gateway_bch_surpassed_btc/
 - name: Braintree
   img: braintree.png
@@ -62,6 +62,16 @@ websites:
   btc: false
   exceptions:
     text: Buycraft used to accept BTC, but as of 2018-04-26 stopped accepting it
+- name: CashFlow
+  url: https://cashflow.fm
+  img: cashflow.png
+  region: Middle East
+  country: TR
+  city: Istanbul
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://cashflow.fm/doc
 - name: CentroBill
   url: https://centrobill.com/
   img: centrobill.png
@@ -121,9 +131,9 @@ websites:
   url: https://cryptapi.io
   img: cryptapi.png
   twitter: CryptAPI_io
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   doc: https://cryptapi.io/blog/post/2/
 - name: Cryptonator
   url: https://www.cryptonator.com/
@@ -187,7 +197,7 @@ websites:
   bch: true
   btc: false
   othercrypto: false
-  twitter: YoursOrg  
+  twitter: YoursOrg
 - name: NETELLER
   img: neteller.png
   url: https://www.neteller.com/en_us
