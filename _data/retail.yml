@@ -230,6 +230,14 @@ websites:
   keywords:
   - bitpay
   - bip70
+- name: Baron Fig
+  url: https://www.baronfig.com/
+  img: baronfig.png
+  twitter: baronfig
+  facebook: baronfig
+  bch: true
+  btc: true
+  othercrypto: true
 - name: BCHSticker.com
   url: http://BCHSticker.com
   img: bchsticker.png
@@ -1085,15 +1093,15 @@ websites:
   img: monorean.png
   twitter: monorean
   facebook: monorean
-  bch: Yes
-  btc: No
-  othercrypto: No
+  bch: true
+  btc: false
+  othercrypto: false
   doc: http://blog.monorean.com/en/bitcoin-cash-accepted-here
   keywords:
-    - earpiece
-    - headphones
-    - wireless
-    - exam
+  - earpiece
+  - headphones
+  - wireless
+  - exam
 - name: myFINBEC
   url: http://coin.myfinbec.com/
   img: myfinbec.png
