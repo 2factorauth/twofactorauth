@@ -3,7 +3,10 @@ websites:
 - name: Crowd Supply
   url: https://www.crowdsupply.com
   img: crowdsupply.png
+  btc: true
   bch: false
   twitter: crowd_supply
   facebook: CrowdSupply
   email_address: support@crowdsupply.com
+  exceptions:
+    text: "Alternate forms of payment may incur additional service charges and fees, and they may require pre-payment. To use them, you’ll need to contact orders@crowdsupply.com"
