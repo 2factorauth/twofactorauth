@@ -22,9 +22,26 @@ websites:
   email_address: support@crowdsupply.com
   exceptions:
     text: "Alternate forms of payment may incur additional service charges and fees, and they may require pre-payment. To use them, you’ll need to contact orders@crowdsupply.com"
+- name: Kickstarter
+  url: https://www.kickstarter.com
+  img: kickstarter.png
+  bch: false
+  twitter: kickstarter
+  facebook: Kickstarter
 - name: Lighthouse
   url: https://lighthouse.cash/
   img: lighthouse.png
   bch: true
   btc: false
   othercrypto: false
+- name: Pozible
+  url: https://www.pozible.com
+  img: pozible.png
+  bch: false
+  twitter: pozible
+- name: Ulule
+  url: https://www.ulule.com/
+  twitter: ulule
+  facebook: ululeEN
+  img: ulule.png
+  bch: false
