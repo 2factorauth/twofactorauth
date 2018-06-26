@@ -165,6 +165,15 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: ARTLy
+  url: https://shop.gohuozumi.com/
+  img: artly.png
+  email_address: shop.goh@gmail.com
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinpayments.net
 - name: AstorBond.com
   url: https://www.astorbond.com/
   img: astorbond.png
@@ -192,10 +201,11 @@ websites:
   twitter: AtheistShoes
   facebook: AtheistShoes
   bch: true
-  btc: false
+  btc: true
   othercrypto: false
-  exceptions:
-    text: Ask them or visit their shop in Berlin
+  keywords:
+  - bitpay
+  - bip70
 - name: Autodekor
   url: https://cockpitdekor.com
   img: autodekor.png
@@ -548,6 +558,15 @@ websites:
   bch: false
   twitter: eBay
   facebook: eBay
+- name: ECOSYSTEMS Retail
+  img: ecosystems.png
+  url: https://store.ecosystems-group.co.uk
+  email_address: store@ecosystems-group.co.uk
+  region: eu
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.reddit.com/r/Bitcoincash/comments/8qanek/new_refurbished_laptops_and_pcs_pay_with_bitcoin/
 - name: Etsy
   url: https://www.etsy.com/
   img: etsy.png

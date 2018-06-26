@@ -10,10 +10,6 @@ websites:
   doc: 
 - name: ABACO Hosting
   url: https://abacohosting.com/
-  region: NA
-  country: US
-  state: TX
-  city: Austin
   twitter: abacohosting
   facebook: abacohosting
   img: abacohosting.png
@@ -650,11 +646,13 @@ websites:
   img: servercow.png
   facebook: servercow
   email_address: info@servercow.de
-  region: eu
-  country: DE
+  lang: de
   bch: true
   btc: true
   othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
 - name: Shine Servers
   url: https://www.shineservers.com/
   img: shineservers.png
