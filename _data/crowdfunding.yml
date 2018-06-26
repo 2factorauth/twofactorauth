@@ -25,7 +25,7 @@ websites:
 - name: Kickstarter
   url: https://www.kickstarter.com
   img: kickstarter.png
-  bch: No
+  bch: false
   twitter: kickstarter
   facebook: Kickstarter
 - name: Lighthouse
@@ -34,3 +34,9 @@ websites:
   bch: true
   btc: false
   othercrypto: false
+- name: Ulule
+  url: https://www.ulule.com/
+  twitter: ulule
+  facebook: ululeEN
+  img: ulule.png
+  bch: false
