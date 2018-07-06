@@ -1,21 +1,12 @@
 websites:
     - name: Bitcoin ABC
-      url: https://www.bitcoinabc.org
+      url: https://www.bitcoinabc.org/
       img: bitcoinabc.png
       bch: Yes
       btc: No
 
-    - name: Bitcoin Classic
-      url: https://bitcoinclassic.com/
-      img: bitcoinclassic.png
-      bch: Yes
-      btc: Yes
-      doc: https://bitcoinclassic.com/downloads/bcc/
-      exceptions:
-        text: "Bitcoin Classic Closing its doors: https://bitcoinclassic.com/news/closing.html"
-
     - name: Bitcoin Unlimited
-      url: https://www.bitcoinunlimited.info
+      url: https://www.bitcoinunlimited.info/
       img: bitcoinunlimited.png
       bch: Yes
       btc: Yes
