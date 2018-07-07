@@ -36,8 +36,11 @@ websites:
       twitter: commoncrawl
       email_address: info@commoncrawl.org
       bch: No
-      btc: Yes
+      btc: No
       othercrypto: No
+      exceptions:
+        text: "Common Crawl used to accept BTC, but as of 2018-05-01 stopped accepting it"
+
       
     - name: Democracy at Work
       url: https://democracyatwork.info
