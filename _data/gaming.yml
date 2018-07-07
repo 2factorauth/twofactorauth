@@ -415,13 +415,13 @@ websites:
 - name: Xbox Live (with Microsoft Account)
   url: https://www.xbox.com/live
   img: xbox.png
-  bch: true
-  btc: true
+  bch: false
+  btc: false
   othercrypto: false
   twitter: XboxSupport
   facebook: Xbox
   exceptions:
-    text: "Limited to US customers only. Last checked May 4th, 2018"
+    text: "Xbox Live used to accept BTC & BCH, but as of 2018-07-07 stopped accepting it"
 - name: YoYo Games
   url: https://www.yoyogames.com/
   img: yoyogames.png

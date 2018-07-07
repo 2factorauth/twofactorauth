@@ -65,14 +65,16 @@ websites:
       btc: Yes
       othercrypto: Yes
 
-    - name: Outlook.com
+    - name: Outlook.com (with Microsoft Account)
       url: https://outlook.com
       img: outlook.png
       twitter: outlook
       facebook: Outlook
-      bch: Yes
-      btc: Yes
+      bch: No
+      btc: No
       othercrypto: No
+      exceptions:
+        text: "Outlook.com used to accept BTC & BCH, but as of 2018-07-07 stopped accepting it"
 
     - name: Ownbay
       url: https://ownbay.net/

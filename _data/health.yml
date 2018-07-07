@@ -218,11 +218,11 @@ websites:
 - name: HealthVault (with Microsoft Account)
   url: https://www.healthvault.com
   img: healthvault.png
-  bch: true
-  btc: true
+  bch: false
+  btc: false
   othercrypto: false
   exceptions:
-    text: "Limited to US customers only. Last checked May 4th, 2018"
+    text: "HealthVault used to accept BTC & BCH, but as of 2018-07-07 stopped accepting it"
 - name: Hint Health
   url: https://www.hint.com
   img: hint.png

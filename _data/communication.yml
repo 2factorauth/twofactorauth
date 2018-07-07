@@ -186,16 +186,16 @@ websites:
       btc: No
       othercrypto: No
 
-    - name: Skype (via Microsoft Account)
+    - name: Skype (with Microsoft Account)
       url: https://www.skype.com
       img: skype.png
       twitter: skype
       facebook: skype
-      bch: Yes
-      btc: Yes
+      bch: No
+      btc: No
       othercrypto: No
       exceptions:
-        text: "Limited to US customers only. Last checked May 4th, 2018"
+        text: "Skype used to accept BTC & BCH, but as of 2018-07-07 stopped accepting it"
 
     - name: Slack
       url: https://slack.com/
