@@ -469,6 +469,18 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Crypto Discounts Australia
+  url: https://www.cryptodiscounts.com.au/
+  img: cryptodiscountsau.png
+  twitter: Cryptodiscounts
+  facebook: Cryptodiscountsaustralia
+  email_address: admin@cryptodiscounts.com.au
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.reddit.com/r/Bitcoincash/comments/8o6tto/proudly_accepting_bitcoin_cash/
+  exceptions:
+    text: "This is a drop shipper. The items sold might have a markup over normal prices"
 - name: CRYPTOMATIC
   url: https://cryptomatic.io
   twitter: cryptomatic_io
@@ -497,6 +509,14 @@ websites:
   othercrypto: true
   exceptions:
     text: Select Other Payment Options at Check Out
+- name: CryptoShoppe
+  url: https://cryptoshoppe.net/store/
+  twitter: cryptoshoppe
+  region: na
+  country: US
+  bch: Yes
+  btc: No
+  othercrypto: Yes
 - name: CryptoVerge
   url: http://www.cryptoverge.com/
   img: cryptoverge.png
@@ -666,6 +686,8 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+  exceptions:
+    text: "This is a drop shipper. The items sold might have a markup over normal prices"
 - name: Full Circle Clothing
   url: https://imfullcircle.com/
   img: fullcircle.png
@@ -706,6 +728,15 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Ghost Gunner
+  url: https://ghostgunner.net
+  img: ghostrunner.png
+  twitter: DefDist
+  facebook: DefenseDistributed
+  region: na
+  bch: yes
+  btc: yes
+  othercrypto: yes
 - name: Gilt
   url: https://www.gilt.com
   twitter: gilt
@@ -858,6 +889,16 @@ websites:
   region: af
   country: AU
   bch: false
+- name: IBuyPokemon.com
+  url: https://www.ibuypokemon.com
+  img: ibuypokemon.png
+  facebook: ibuypokemon
+  email_address: ibuypokemoncom@gmail.com
+  region: na
+  country: US
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
 - name: IKEA
   url: https://www.ikea.com
   img: ikea.png
@@ -1129,6 +1170,18 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: Mission Belt
+  url: https://missionbelt.com
+  img: missionbelt.png
+  twitter: MissionBeltCo
+  facebook: MissionBeltCo
+  email_address: support@missionbelt.com
+  bch: Yes
+  btc: Yes
+  othercrypto: No
+  keywords:
+  - bitpay
+  - bip70
 - name: ModMyPi.com
   url: https://modmypi.com
   twitter: modmypi
@@ -1509,6 +1562,15 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.kombo.krakow.pl/Regulamin.htm#krypto
+- name: Spend Crypto Here
+  url: https://spendcryptohere.com
+  facebook: Spendcryptohere
+  email_address: spendceyptohere@gmail.com
+  region: na
+  country: US
+  bch: Yes
+  btc: No
+  othercrypto: Yes
 - name: Stack Social
   url: https://stacksocial.com
   twitter: StackSocial

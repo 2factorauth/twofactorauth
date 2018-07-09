@@ -75,6 +75,8 @@ websites:
       bch: Yes
       btc: No
       othercrypto: No
+      exceptions:
+        text: "Must have a coinbase.com account for spend and replace"
 
     - name: Coinomi
       url: https://coinomi.com/
