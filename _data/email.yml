@@ -113,8 +113,10 @@ websites:
       twitter: protonmail
       facebook: ProtonMail
       bch: No
-      btc: Yes
+      btc: No
       othercrypto: No
+      exceptions:
+        text: "ProtonMail accepts BTC for donations only, not for premium services."
 
     - name: Runbox
       url: https://runbox.com
@@ -139,9 +141,9 @@ websites:
       img: Tutanota.png
       twitter: tutanotateam
       facebook: tutanota
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
+      bch: No
+      btc: No
+      othercrypto: No
 
     - name: Zoho Mail
       url: https://www.zoho.com/mail/

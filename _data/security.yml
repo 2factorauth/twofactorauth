@@ -276,9 +276,11 @@ websites:
   url: https://protonvpn.com/
   img: protonvpn.png
   bch: false
-  btc: true
+  btc: false
   twitter: ProtonVPN
   facebook: ProtonVPN
+  exceptions:
+    text: "ProtonVPN accepts BTC for donations only, not for premium services."
 - name: PureVPN
   url: https://www.purevpn.com
   img: purevpn.png
