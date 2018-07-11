@@ -544,11 +544,14 @@ websites:
       img: wikia.png
       tfa: No
 
-    - name: Wikipedia
-      url: https://www.wikipedia.org/
-      twitter: Wikipedia
+    -name: Wikimedia
+      url: https://www.wikimedia.org/
       img: wikipedia.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://meta.wikimedia.org/wiki/Help:Two-factor_authentication
+      exceptions:
+          text: "Currently limited to administrators (and users with admin-like permissions like interface editors), bureaucrats, checkusers, oversighters, stewards, edit filter managers and the OATH-testers global group."
 
     - name: Yclas
       url: https://yclas.com/
