@@ -261,6 +261,14 @@ p {
   &.donation-listings {
     background: rgba(30, 0, 74, 0.8);
   }
+  
+  button a {
+    color: #eee;
+
+    &:hover {
+      color: #fff;
+    }
+  }
 
   a {
     color: $link-on-dark;
@@ -268,13 +276,13 @@ p {
     &:hover {
       color: $orange;
     }
-  }
+	
+	&.button {
+      color: #eee;
 
-  button a {
-    color: #eee;
-
-    &:hover {
-      color: #fff;
+      &:hover {
+        color: #fff;
+      }
     }
   }
 
