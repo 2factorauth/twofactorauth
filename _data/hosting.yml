@@ -153,6 +153,14 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: Hostpoint
+      url: https://www.hostpoint.ch/
+      img: hostpoint.png
+      tfa: No
+      twitter: hostpoint
+      facebook: hostpointch
+      lang: de
+
     - name: ICUK
       url: https://www.icuk.net
       img: icuk.png
@@ -369,9 +377,10 @@ websites:
 
     - name: Squarespace
       url: https://squarespace.com/
-      twitter: squarespace
       img: squarespace.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://support.squarespace.com/hc/en-us/articles/360000044827
 
     - name: Time4VPS
       url: https://www.time4vps.eu/
@@ -437,14 +446,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://github.com/2factorauth/twofactorauth/pull/2311#issuecomment-273424695
-
-    - name: Vultr
-      url: https://www.vultr.com/
-      img: vultr.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.vultr.com/faq/#authy
 
     - name: WebFaction
       url: https://www.webfaction.com
