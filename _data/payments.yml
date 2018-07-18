@@ -1,9 +1,13 @@
 websites:
-    - name: Amazon Payments
-      url: https://payments.amazon.com
-      twitter: AmazonPayments
-      img: amazon.png
-      tfa: No
+    - name: Amazon Pay
+      url: https://pay.amazon.com
+      img: amazonpay.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      exceptions:
+          text: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
+      doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
 
     - name: Braintree
       img: braintree.png
@@ -14,14 +18,14 @@ websites:
       doc: https://articles.braintreepayments.com/reference/security/two-factor-authentication
 
     - name: Buycraft
-      url: http://buycraft.net
+      url: https://buycraft.net
       img: buycraft.png
       tfa: Yes
       software: Yes
       sms: Yes
       exceptions:
           text: "SMS-capable phone required."
-      doc: http://server.buycraft.net/tfa
+      doc: https://help.buycraft.net/article/83-two-factor-authentication
 
     - name: Dwolla
       url: https://www.dwolla.com
@@ -43,23 +47,50 @@ websites:
       tfa: No
 
     - name: Google Wallet
-      url: http://www.google.se/wallet/
+      url: https://www.google.se/wallet/
       img: googlewallet.png
       tfa: Yes
       sms: Yes
       phone: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
-    - name: Litle & Co
-      img: litleco.png
-      twitter: litleco
-      tfa: No
-      url: https://www.litle.com
+    - name: HYPE
+      url: https://www.hype.it
+      img: hype.png
+      tfa: Yes
+      sms: Yes
+
+    - name: Klarna
+      url: https://www.klarna.com
+      img: klarna.png
+      tfa: Yes
+      email: Yes
+      software: Yes
+      exceptions:
+         text: "Software 2FA is only available for Swedish citizens with BankID."
+
+    - name: NETELLER
+      img: neteller.png
+      url: https://www.neteller.com/
+      tfa: Yes
+      software: Yes
+      doc: https://support.neteller.com/ACCOUNT/Two-Factor-Authentication/85238429/What-is-two-step-authentication.htm
+
+    - name: PAYEER
+      url: https://payeer.com/en/
+      img: payeer.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      exceptions:
+          text: "Receiving codes via SMS cost 0.05$ each message. 2FA is personalizable in account settings."
+      doc: https://payeer.com/en/faq/
 
     - name: Payoneer
-      url: http://www.payoneer.com/
+      url: https://www.payoneer.com/
       twitter: Payoneer
       img: payoneer.png
       tfa: No
@@ -72,21 +103,74 @@ websites:
       software: Yes
       hardware: Yes
       exceptions:
-          text: "2FA is only available in the United States, Canada, United Kingdom, Germany, Austria and Australia."
+          text: "2FA is only available in a few countries. Contact PayPal on twitter for an up to date list of available countries."
       doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
 
     - name: Paysafecard
       url: https://www.paysafecard.com/
       img: paysafecard.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.paysafecard.com/en-au/lp-products/2-step-login/
+
+    - name: Paytm
+      url: https://paytm.com/
+      img: paytm.png
+      tfa: Yes
+      sms: Yes
+      doc: https://blog.paytm.com/secure-2-step-authentication-login-on-paytms-website-6dd5a20ae1b2
+
+    - name: Payza
+      url: https://www.payza.eu/
+      img: payza.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.payza.eu/docs/personal-manual-advanced-security#section-how-do-i-set-up-2-factor-authentication
+
+    - name: Privacy
+      url: https://privacy.com/
+      img: privacy.png
+      tfa: Yes
+      software: Yes
+      doc: https://privacy.com/faq
+
+    - name: Ravelin
+      url: https://www.ravelin.com/
+      img: ravelin.png
+      tfa: Yes
+      software: Yes
+      doc: https://ravelin.zendesk.com/hc/en-us/articles/115001071665-Two-Factor-Authentication
+
+    - name: SixthContinent
+      url: https://sixthcontinent.com/
+      img: sixthcontinent.png
       tfa: No
-      twitter: paysafecard
+      twitter: sxc_italia
+      facebook: sixthcontinent.it
 
     - name: Skrill
       url: https://skrill.com/
       img: skrill.png
       tfa: Yes
       hardware: Yes
-      doc: https://help.skrill.com/pkb_sc_article_FAQ?id=kA0D0000000Ci3x&l=en_GB
+      software: Yes
+      doc: https://www.skrill.com/en/support#/path/ACCOUNT/Two-Factor-Authentication/905761532/Two-Factor-Authentication-2FA.htm
+
+    - name: Square
+      url: https://squareup.com
+      img: squareup.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      exceptions:
+        text: "SMS only supported in US and Canada"
+      doc: https://squareup.com/help/us/en/article/5593-2-step-verification
+
+    - name: Square Cash
+      url: https://cash.me
+      img: square-cash.png
+      tfa: No
+      twitter: SquareCash
 
     - name: Stripe
       img: stripe.png
@@ -94,21 +178,34 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
       doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
 
-    - name: Square
-      url: https://squareup.com
-      img: squareup.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-        text: "Currently only US merchants, protects only Dashboard access"
-      doc: https://squareup.com/help/us/en/article/5593-2-step-verification
+    - name: Vantiv
+      url: https://www.vantiv.com/
+      twitter: Vantiv
+      facebook: Vantiv
+      img: vantiv.png
+      tfa: No
 
     - name: Venmo
       url: https://venmo.com
       img: venmo.png
       tfa: Yes
       sms: Yes
-      email: Yes
-      doc: https://help.venmo.com/customer/portal/articles/1910230-confirm-my-identity-on-sign-in-why
+      doc: https://help.venmo.com/hc/en-us/articles/217532397--Confirm-my-identity-on-sign-in-Why
+
+    - name: Visa Checkout
+      url: https://secure.checkout.visa.com/
+      img: visa-checkout.png
+      tfa: No
+      twitter: VisaCheckout
+
+    - name: Yandex.Money
+      url: https://money.yandex.ru
+      img: yandexmoney.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://money.yandex.ru/doc.xml?id=524852

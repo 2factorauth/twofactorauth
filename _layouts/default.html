@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv='Content-Security-Policy' content="script-src 'self' https://ajax.cloudflare.com https://code.jquery.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' data: https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self';">
   <meta charset="UTF-8">
   <meta name="description" content="{{ site.description }}">
   <meta name="author" content="{{ site.author }}">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/img/logo.png"/>
 
   <meta property="og:title" content="{{ site.title }}">
   <meta property="og:type" content="website">
@@ -15,8 +16,10 @@
 
   <title>{{ site.title }}</title>
 
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700">
-  <link rel="stylesheet" href="/lib/semantic/css/semantic.min.css">
+  <!-- Google Fonts should not use SRI hashes as the CSS served dynamically changes depending on browser -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"
+        integrity="sha384-vQPhfJdJkfTCHP7ouiqoAojjcDFuU346yP8z/pRpSn0xsWOfkMd+DkNmxns9jy4l" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/corner.css">
 </head>
@@ -45,11 +48,18 @@
 </div>
 
 <!-- 3rd Party Libraries -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="/lib/semantic/javascript/semantic.min.js"></script>
-<script src="/js/jquery.unveil.min.js"></script>
-<script src="/js/jets.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"
+	integrity="sha384-d0+ufSr6Y7eU5V6E8Bt1AioIn4ParGkr0AwQ5RZD/S2mTaiEXMV78mqaYKMLE2qv"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.7/jquery.lazy.min.js"
+	integrity="sha384-wEyDFNGLEw12qsWXsjI32XObMejLosmqXK9KGBRTeR7Nbn2AED6YnD3mxmRqnBv9"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.14.0/jets.min.js"
+	integrity="sha384-NWhMP2tjh/VCnDqD+TXCEUMpy11tXXR80Jm/xqsYYwTLwuD4DwfPpcyr4xPdKAXl"
+	crossorigin="anonymous"></script>
 <!-- TFA JS -->
 <script src="/js/app.js"></script>
 </body>

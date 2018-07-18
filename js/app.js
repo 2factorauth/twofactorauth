@@ -5,8 +5,14 @@ $(document).ready(function () {
     openCategory(window.location.hash.substring(1));
   }
 
-  // Unveil images 50px before they appear
-  $('img').unveil(50);
+  // Unveil images when visible in jquery
+  $(function() { $('img').Lazy({visibleOnly: true}); });
+
+  // Show exception warnings upon hover
+  $('span.popup.exception').popup({
+    hoverable: true
+  });
+  $('a.popup.exception').popup();
 });
 
 /**
@@ -22,49 +28,54 @@ $(window).resize(function () {
   }, 500);
 });
 
-// Show exception warnings upon hover
-(function (root, $) {
-  $('span.popup.exception').popup({
-    hoverable: true
-  });
-  $('a.popup.exception').popup();
-}(window, jQuery));
-
 var isSearching = false;
 var jets = new Jets({
   searchTag: '#jets-search',
   contentTag: '.jets-content',
   didSearch: function (searchPhrase) {
+    document.location.hash = '';
+    $('#no-results').css('display', 'none');
     $('.category h5 i').removeClass('active-icon');
-    var platform;
-    $(window).width() > 768 ? platform = 'desktop' : platform = 'mobile';
+    // Two separate table layouts are used for desktop/mobile
+    var platform = ($(window).width() > 768) ? 'desktop' : 'mobile';
     var content = $('.' + platform + '-table .jets-content');
     var table = $('.' + platform + '-table');
 
     // Non-strict comparison operator is used to allow for null
     if (searchPhrase == '') {
+      // Show all categories when no search term is entered
       $('.website-table').css('display', 'none');
       $('.website-table .label').css('display', 'none');
       $('.category').show();
       $('table').show();
       isSearching = false;
     } else {
+      // Hide irrelevant categories
       $('.website-table').css('display', 'none');
       $('.website-table .label').css('display', 'block');
       $('.category').hide();
       table.css('display', 'block');
       content.parent().show();
-      content.each(function () {
-        // Hide table when all rows are hidden by Jets
-        if ($(this).children(':hidden').length === $(this).children().length) {
-          if (platform == 'mobile') $(this).parent().hide();
-          else $(this).parent().parent().hide();
+      for(var i = 0; i < content.length; i++) {
+			  var section = $(content[i]);
+        // Hide table when all rows within are hidden by Jets
+        if (section.children(':hidden').length === section.children().length) {
+          if (platform == 'mobile') section.parent().hide();
+          else section.parent().parent().hide();
         }
-      });
+      }
+
+      if (table.children().length == table.children(':hidden').length) {
+          $('#no-results').css('display', 'block');
+      }
+
       isSearching = true;
     }
   },
-  columns: [0] // Search by first column only
+  // Process searchable elements manually
+  manualContentHandling: function(tag) {
+    return $(tag).find('.keywords').text();
+  }
 });
 
 /**
@@ -101,6 +112,9 @@ function openCategory(category) {
   $('.category h5 i').removeClass('active-icon');
   $('.website-table').css('display', 'none');
 
+  // Place the category being viewed in the URL bar
+  window.location.hash = category;
+
   var icon = $('#' + category + ' h5 i');
   icon.addClass('active-icon');
   if ($(window).width() > 768) {
@@ -118,9 +132,10 @@ function openCategory(category) {
 /**
  * Closes a category and ensures the icon is inactive
  *
- * @param category The id of a category as a sring
+ * @param category The id of a category as a string
  */
 function closeCategory(category) {
   $('#' + category + ' h5 i').removeClass('active-icon');
   $('.' + category + '-table').css('display', 'none');
+  document.location.hash = '';
 }

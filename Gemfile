@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-# Freeze to GitHub Pages versions:
-# https://pages.github.com/versions/
-gem 'github-pages', '~> 40'
-gem 'jekyll', '~> 2.4.0'
-gem 'kramdown', '~> 1.9.0'
+# Dependencies are bundled with the github-pages gem
+gem 'github-pages', group: :jekyll_plugins
 
 group :test do
-  gem 'rake'
   gem 'fastimage'
+  gem 'html-proofer'
+  gem 'kwalify'
+  gem 'rake'
+  gem 'rubocop'
 end

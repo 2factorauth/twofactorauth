@@ -13,6 +13,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, 
 html, body {
   @include box-sizing(border-box);
   height: 100%;
+  font-size: 18px;
 }
 
 *, *:before, *:after {
@@ -121,6 +122,12 @@ input[type=search] {
   }
 }
 
+#no-results {
+  display: none;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
 .active-icon {
   background-color: $primary-color;
   color: white;
@@ -157,6 +164,7 @@ input[type=search] {
 }
 
 .website-table {
+  display: none;
   margin: auto;
   position: relative;
   width: 90vw;
@@ -183,6 +191,28 @@ input[type=search] {
       padding: 2em;
     }
 
+    .main {
+      .title {
+        @include display-flex();
+        @include flex-direction(row);
+        -ms-flex-align: center;
+        align-items: center;
+
+        .name {
+          -webkit-box-flex: 2;
+          -ms-flex-positive: 2;
+          flex-grow: 2;
+          margin: 0 5px;
+        }
+      }
+
+      .button-group {
+        @include display-flex();
+        @include flex-direction(row);
+        justify-content: space-between;
+      }
+    }
+
     .button {
       padding: 1em;
       width: 100%;
@@ -203,6 +233,34 @@ input[type=search] {
 .ui.table td {
   &.main {
     line-height: 2em;
+
+    .title {
+      @include display-flex();
+      @include flex-direction(row);
+      -ms-flex-align: center;
+      align-items: center;
+
+      .name {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex: 1;
+        padding-left: 0;
+        line-height: 1.5;
+      }
+    }
+
+    .progress-info {
+      @include display-flex();
+      -webkit-justify-content: center;
+      justify-content: center;
+
+      a {
+        width: 120px;
+        min-width: 120px;
+        padding-left: 0;
+      }
+    }
   }
 
   &.icon {
@@ -212,7 +270,7 @@ input[type=search] {
 }
 
 td img.icon,
-.left img {
+.title img {
   -webkit-box-shadow: 0 0 0 .1em rgba(0, 0, 0, .1) inset;
   box-shadow: 0 0 0 .1em rgba(0, 0, 0, .1) inset;
   background-color: white;
@@ -220,6 +278,7 @@ td img.icon,
   float: left;
   padding: 4px 4px;
   height: 2em;
+  width: 2em;
   line-height: 1;
   margin-right: 0.8em;
 }
@@ -230,6 +289,10 @@ td img.icon,
   padding-left: 3%;
   margin-bottom: 5px;
   vertical-align: top;
+}
+
+.ui.mini.button {
+  margin: 0.2em;
 }
 
 span.progress {

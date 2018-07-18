@@ -1,19 +1,17 @@
 ---
 ---
 {
-    {% for section in site.data.main.sections %}
+    {% for section in site.data.sections %}
     {% assign section_file = site.data[section.id] %}
     "{{ section.title }}": {
                         {% for website in section_file.websites %}
                                 "{{ website.name }}": {
-                                            "tfa": {% if website.tfa %}true{% else %}false{% endif %},
-                                            "url": "{{ website.url }}",
-                                            "img": "/img/{{ section.id }}/{{ website.img }}",
-                                            "twitter": "{{ website.twitter }}",
-                                            "sms": {% if website.sms %}true{% else %}false{% endif %},
-                                            "software": {% if website.software %}true{% else %}false{% endif %},
-                                            "phone": {% if website.phone %}true{% else %}false{% endif %},
-                                            "hardware": {% if website.hardware %}true{% else %}false{% endif %}
+                                    {%for tag in website %}
+                                    {%if tag[0] != "exceptions"%}"{{ tag[0] }}": {% if tag[1] == true or tag[1] == false %}{{tag[1]}}{%else%}"{{ tag[1] }}"{%endif%}{%else%}"{{ tag[0] }}": {
+                                    {% for exception in tag[1] %}
+                                     "{{ exception[0] }}": "{{ exception[1] }}"{%if forloop.last != true%},{%endif%}
+                                {%endfor%}}{%endif%}{%if forloop.last != true%},{%endif%}
+                                    {%endfor%}
                                }{% if forloop.last != true %},{% endif %}
                         {% endfor %}
                         }{% if forloop.last != true %},{% endif %}

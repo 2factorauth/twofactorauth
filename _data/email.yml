@@ -5,28 +5,32 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
-      exceptions:
-        text: "Currently U.S. only. International support coming soon."
-      doc: https://help.aol.com/articles/2-factor-authentication-stronger-than-your-password-alone
+      doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
     - name: FastMail
-      url: https://www.fastmail.fm/
+      url: https://www.fastmail.com/
       img: fastmail.png
       tfa: Yes
       sms: Yes
       software: Yes
       hardware: Yes
-      doc: https://www.fastmail.fm/help/features_alternative_logins.html
+      doc: https://www.fastmail.com/help/account/2fa.html
+
+    - name: Freenet
+      url: https://www.freenet.de/
+      img: freenet.png
+      tfa: No
+      facebook: freenet
 
     - name: Gmail
-      url: https://gmail.com
+      url: https://mail.google.com
       img: gmail.png
       tfa: Yes
       sms: Yes
       phone: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: GMX
       url: https://www.gmx.com/
@@ -43,24 +47,63 @@ websites:
       software: Yes
       doc: https://help.hushmail.com/entries/63282756-Two-step-verification
 
+    - name: Legalmail
+      url: https://www.legalmail.it/
+      img: legalmail.png
+      tfa: No
+      twitter: InfoCert_it
+      facebook: InfoCertSpa
+      lang: it
+
     - name: Mail.com
       url: https://www.mail.com/
       twitter: maildotcom
+      facebook: mail.com
       img: maildotcom.png
       tfa: No
 
+    - name: mail.de
+      url: https://mail.de/
+      img: mailde.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://mail.de/hilfe/u2f-authenticator
+
+    - name: Mail.Ru
+      url: https://mail.ru/
+      img: mailru.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.mail.ru/mail-help/2auth
+
     - name: mailbox.org
-      url: https://www.mailbox.org/
+      url: https://mailbox.org/
       img: mailbox.png
       tfa: Yes
+      software: Yes
       hardware: Yes
-      doc: https://mailbox.org/en/one-time-passwords-for-secure-login-to-our-webmailer/
+      doc: https://support-en.mailbox.org/knowledge-base/article/is-there-a-two-factor-authentication
 
-    - name: Mailstache
-      url: https://mailstache.io
-      twitter: mailstache
-      img: mailstache.png
+    - name: Mailfence
+      url: https://mailfence.com/
+      img: mailfence.png
+      tfa: Yes
+      software: Yes
+      doc: https://mailfence.com/c/mailfence/more/totp.jsp
+
+    - name: Migadu
+      url: https://www.migadu.com/
+      email_address: contact@migadu.com
+      img: migadu.png
       tfa: No
+
+    - name: MXroute
+      url: https://mxroute.com/
+      img: mxroute.png
+      tfa: Yes
+      software: Yes
 
     - name: Outlook.com
       url: https://outlook.com
@@ -68,7 +111,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+      doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
 
     - name: Pobox
       url: https://www.pobox.com/
@@ -87,9 +130,10 @@ websites:
 
     - name: ProtonMail
       url: https://protonmail.com/
-      twitter: ProtonMail
       img: protonmail.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://protonmail.com/support/knowledge-base/two-factor-authentication/
 
     - name: Riseup Mail
       url: https://mail.riseup.net
@@ -97,12 +141,68 @@ websites:
       img: riseup.png
       tfa: No
 
-    - name: Yahoo Mail
-      url: https://mail.yahoo.com/
-      img: yahoomail.png
+    - name: Runbox
+      url: https://runbox.com
+      img: runbox.png
       tfa: Yes
-      sms: Yes
-      doc: https://help.yahoo.com/kb/SLN5013.html
+      software: Yes
+      doc: https://help.runbox.com/account-security/
+
+    - name: StartMail
+      url: https://www.startmail.com
+      img: startmail.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704/4/how-to-set-up-two-factor-authentication-2fa
+
+    - name: T-Online
+      url: http://www.t-online.de/
+      twitter: Telekom_hilft
+      facebook: tonline.de
+      img: tonline.png
+      lang: de
+      tfa: No
+
+    - name: Thexyz
+      url: https://www.thexyz.com/
+      img: thexyz.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.thexyz.com/account/knowledgebase/15/Enabling-two-factor-authentication.html
+
+    - name: TIM Mail
+      url: https://mail.tim.it/
+      img: tim.png
+      tfa: No
+      twitter: TIM_Official
+      facebook: TimOfficialPage
+      lang: it
+
+    - name: Tutanota
+      url: https://tutanota.com/
+      img: tutanota.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+        text: "2FA only available on their beta client."
+      doc: https://tutanota.uservoice.com/knowledgebase/articles/1201942
+
+    - name: Virgin Media E-Mail
+      url: https://www.virginmedia.com/
+      twitter: virginmedia
+      facebook: virgin
+      img: virginmedia.png
+      tfa: No
+
+    - name: Web.de
+      url: https://web.de
+      twitter: WEBDE
+      facebook: WEB.DE
+      img: webde.png
+      lang: de
+      tfa: No
 
     - name: Yahoo Japan Mail
       url: https://mail.yahoo.co.jp/
@@ -110,7 +210,15 @@ websites:
       tfa: Yes
       email: Yes
       software: Yes
-      doc: http://id.yahoo.co.jp/security/otp.html
+      doc: https://id.yahoo.co.jp/security/otp.html
+
+    - name: Yahoo Mail
+      url: https://mail.yahoo.com/
+      img: yahoomail.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://help.yahoo.com/kb/SLN5013.html
 
     - name: Yandex.Mail
       url: https://mail.yandex.com/
@@ -123,10 +231,12 @@ websites:
 
     - name: Zimbra
       url: https://www.zimbra.com/
-      twitter: zimbra
       img: zimbra.png
-      tfa: No
-      status: https://bugzilla.zimbra.com/show_bug.cgi?id=98623
+      tfa: Yes
+      software: Yes
+      exceptions:
+        text: "Available in Zimbra Collaboration 8.7 and above, Network Edition only"
+      doc: https://blog.zimbra.com/2016/02/zimbra-collaboration-8-7-two-factor-authentication-2fa-technical-preview/
 
     - name: Zoho Mail
       url: https://www.zoho.com/mail/
