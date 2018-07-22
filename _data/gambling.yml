@@ -246,6 +246,18 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: Red Stag Casino
+  url: https://www.redstagcasino.eu/
+  img: redstagcasino.png
+  twitter: redstagcasino
+  facebook: RedStagCasino
+  email_address: support@redstagcasino.eu
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.redstagcasino.eu/banking
+  exceptions:
+    text: "Deposits only. Withdrawals must be in other coins."
 - name: SafeDice
   url: https://safedice.com/
   img: safedice.png
