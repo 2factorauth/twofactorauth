@@ -925,9 +925,11 @@ websites:
 
     - name: TD Canada Trust
       url: https://www.tdcanadatrust.com
-      twitter: TD_Canada
       img: tdbank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.td.com/privacy-and-security/privacy-and-security/how-we-protect-you/online-security/2fa.jsp
 
     - name: Tower Federal Credit Union
       url: https://www.towerfcu.org/
