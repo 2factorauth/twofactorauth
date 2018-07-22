@@ -278,6 +278,18 @@ websites:
   bch: true
   btc: false
   othercrypto: false
+- name: Slotland
+  url: https://www.slotland.eu/
+  img: slotland.png
+  twitter: slotland
+  facebook: Slotland
+  email_address: support@slotland.eu
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.slotland.eu/en/banking
+  exceptions:
+    text: "Withdrawals are only done on Tuesdays."
 - name: Sloto'Cash
   url: https://www.slotocash.im/
   img: slotocash.png
