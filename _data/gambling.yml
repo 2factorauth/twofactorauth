@@ -244,6 +244,17 @@ websites:
   bch: true
   btc: false
   othercrypto: false
+- name: Sloto'Cash
+  url: https://www.slotocash.im/
+  img: slotocash.png
+  facebook: SlotoCash.Casino
+  email_address: support@slotocash.im
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.slotocash.im/en/banking/deposit-methods
+  exceptions:
+    text: "Deposits only. Withdrawals must be in other coins."
 - name: Sportsbetting
   url: https://www.sportsbetting.ag
   img: SportsBettingAG.png
