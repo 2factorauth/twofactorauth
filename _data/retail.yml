@@ -463,6 +463,19 @@ websites:
   bch: true
   btc: false
   othercrypto: false
+- name: Crypto and Tech Gear
+  url: https://cryptoandtechgear.com/
+  img: cryptotechgear.png
+  facebook: Crypto-And-Tech-Gear-252120468687324
+  email_address: btcltcethmerch@gmail.com
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: "BitPay payment option is broken"
+  keywords:
+  - coinbase
+  - coinpayments.net
 - name: Crypto Armory
   url: https://www.crypto-armory.com/
   img: cryptoarmory.png
