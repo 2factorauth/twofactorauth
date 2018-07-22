@@ -404,6 +404,17 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.privcoin.io/bitcoincash/
+- name: Protosbay
+  url: https://www.protosbay.com/
+  img: protosbay.png
+  twitter: protosbay
+  facebook: protosbay
+  email_address: admin@protosbay.com
+  bch: true
+  btc: true
+  othercrypto: false
+  exceptions:
+    text: "Some of the vendors might be drop shippers. The items sold might have a high markup over normal prices"
 - name: Purse
   url: https://purse.io/
   img: purse.png
