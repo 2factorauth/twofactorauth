@@ -641,6 +641,20 @@ websites:
   btc: true
   othercrypto: true
   doc: https://blog.seedboxes.cc/post/168895178115/extending-cryptocurrency-support
+- name: senang.online
+  url: https://web.senang.online
+  img: senang.png
+  twitter: senangonline
+  facebook: senangdotonline
+  email_address: so@senang.online
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://web.senang.online/support
+  exceptions:
+    text: "Link to complete payment at Support page"
+  keywords:
+  - coinpayments.net
 - name: Servercow
   url: https://www.servercow.de
   img: servercow.png
