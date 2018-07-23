@@ -131,11 +131,13 @@ websites:
       doc: https://help.roboform.com/hc/en-us/articles/115002729512-Setting-up-Google-Authenticator-for-your-account
 
     - name: SAASPASS
-      url: https://www.saaspass.com
+      url: https://saaspass.com
       img: saaspass.png
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
+      doc: https://saaspass.com/faq/
 
     - name: SecureSafe
       url: https://www.securesafe.com
