@@ -300,10 +300,16 @@ websites:
     - name: Twitch
       url: https://www.twitch.tv/
       img: twitch.png
-      bch: No
-      btc: No
+      bch: Yes
+      btc: Yes
+      othercrypto: No
       twitter: Twitch
       facebook: Twitch
+      keywords:
+      - xsolla
+      - skrill
+      - bitpay
+      - bip70
 
     - name: Vimeo
       url: https://vimeo.com/

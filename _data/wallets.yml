@@ -196,6 +196,16 @@ websites:
       btc: yes
       othercrypto: yes
 
+    - name: Mycelium
+      url: https://wallet.mycelium.com/
+      img: mycelium.png
+      email_address: protected@bahnhof.se
+      bch: Yes
+      btc: Yes
+      othercrypto: No
+      exceptions:
+        text: "Only supports selling BCH for BTC. Full BCH support is coming soon."
+
     - name: Parity
       url: https://parity.io
       img: parity.png

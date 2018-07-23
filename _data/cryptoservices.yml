@@ -49,6 +49,14 @@ websites:
   btc: true
   othercrypto: true
   doc: https://blog.bitgo.com/bitcoin-cash-bch-update-6dced6c8c53d
+- name: Bitify
+  url: https://bitify.com/
+  img: bitify.png
+  twitter: bitify_com
+  facebook: Bitify.PTYLtd
+  bch: false
+  btc: true
+  othercrypto: false
 - name: Bitit
   url: https://bitit.io/
   img: Bitit.png
@@ -65,6 +73,15 @@ websites:
   othercrypto: true
   keywords:
   - gocoin
+- name: Bitport.io
+  url: https://bitport.io/
+  img: bitportio.png
+  twitter: bitport_io
+  facebook: bitportio
+  email_address: info@bitport.io
+  bch: false
+  btc: true
+  othercrypto: false
 - name: Blockchain
   url: https://blockchain.info/
   img: blockchain.png
@@ -387,6 +404,17 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.privcoin.io/bitcoincash/
+- name: Protosbay
+  url: https://www.protosbay.com/
+  img: protosbay.png
+  twitter: protosbay
+  facebook: protosbay
+  email_address: admin@protosbay.com
+  bch: true
+  btc: true
+  othercrypto: false
+  exceptions:
+    text: "Some of the vendors might be drop shippers. The items sold might have a high markup over normal prices"
 - name: Purse
   url: https://purse.io/
   img: purse.png

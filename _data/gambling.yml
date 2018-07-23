@@ -22,6 +22,16 @@ websites:
   bch: Yes
   btc: No
   othercrypto: No
+- name: Betchain
+  url: https://www.betchain.com/
+  img: betchain.png
+  twitter: betchain
+  facebook: BetChain
+  email_address: support@betchain.com
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.betchain.com/payment-methods
 - name: Betcoin.ag
   url: https://betcoin.ag
   img: betcoin.png
@@ -51,6 +61,15 @@ websites:
   btc: true
   othercrypto: true
   doc: https://calvinayre.com/2018/02/02/bitcoin/bitstarz-starts-accepting-bitcoin-cash/
+- name: Bitzillions
+  url: https://bitzillions.com
+  img: bitzillions.png
+  twitter: SatoshiBones
+  email_address: contact@bitzillions.com
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
+  doc: https://medium.com/@bitzillions/bitcoin-cash-lessons-from-a-block-size-canary-db4a7f020d7
 - name: Blockchain Poker
   url: https://blockchain.poker/#/cash
   img: BlockchainPoker.png
@@ -81,6 +100,18 @@ websites:
   btc: true
   othercrypto: false
   doc: https://www.bovada.lv/bitcoinhelp
+- name: Casino Extreme
+  url: https://casinoextreme.eu/
+  img: casinoextreme.png
+  twitter: casinoextreme
+  facebook: casinoextremeonline
+  email_address: support@casinoextreme.com
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://casinoextreme.eu/banking
+  exceptions:
+    text: "Deposits only. Withdrawals must be in other coins."
 - name: Cherry Jackpot
   url: https://cherryjackpot.com
   img: cherryjackpot.png
@@ -97,6 +128,15 @@ websites:
   btc: true
   othercrypto: false
   doc: https://www.cloudbet.com/en/bitcoin-cash-promotion
+- name: Crypto Wild
+  url: https://www.cryptowild.com/
+  img: cryptowild.png
+  twitter: CryptoWild777
+  facebook: CryptoWild
+  email_address: support@cryptowild.com
+  bch: true
+  btc: true
+  othercrypto: true
 - name: CryptoSportsBet.World
   url: https://cryptosportsbet.world
   img: cryptosportsbetworld.png
@@ -116,6 +156,16 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: FortuneJack
+  url: https://fortunejack.com/
+  img: fortunejack.png
+  twitter: fortunejackcom
+  facebook: fjcasino
+  email_address: support@fortunejack.com
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://fortunejack.com/bitcoincash-gambling
 - name: LuckyGames
   url: https://luckygames.io/
   twitter: luckygamesio
@@ -123,6 +173,13 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: MARDUK.io
+  url: https://marduk.io/
+  img: mardukio.png
+  email_address: info@marduk.io
+  bch: true
+  btc: false
+  othercrypto: false
 - name: mBit Casino
   url: https://www.mbitcasino.com/
   img: mbitCasino.png
@@ -189,6 +246,18 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: Red Stag Casino
+  url: https://www.redstagcasino.eu/
+  img: redstagcasino.png
+  twitter: redstagcasino
+  facebook: RedStagCasino
+  email_address: support@redstagcasino.eu
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.redstagcasino.eu/banking
+  exceptions:
+    text: "Deposits only. Withdrawals must be in other coins."
 - name: SafeDice
   url: https://safedice.com/
   img: safedice.png
@@ -209,6 +278,29 @@ websites:
   bch: true
   btc: false
   othercrypto: false
+- name: Slotland
+  url: https://www.slotland.eu/
+  img: slotland.png
+  twitter: slotland
+  facebook: Slotland
+  email_address: support@slotland.eu
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.slotland.eu/en/banking
+  exceptions:
+    text: "Withdrawals are only done on Tuesdays."
+- name: Sloto'Cash
+  url: https://www.slotocash.im/
+  img: slotocash.png
+  facebook: SlotoCash.Casino
+  email_address: support@slotocash.im
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.slotocash.im/en/banking/deposit-methods
+  exceptions:
+    text: "Deposits only. Withdrawals must be in other coins."
 - name: Sportsbetting
   url: https://www.sportsbetting.ag
   img: SportsBettingAG.png
@@ -231,3 +323,15 @@ websites:
   btc: true
   othercrypto: false
   doc: https://swcpoker.eu/swcpoker-faq/#WhatIsBitcoin
+- name: Win A Day Casino
+  url: https://www.winadaycasino.eu/
+  img: winadaycasino.png
+  twitter: winadaycasino
+  facebook: WinADayCasino
+  email_address: support@winadaycasino.eu
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.winadaycasino.eu/en/bitcoin-cash
+  exceptions:
+    text: "Withdrawals are only done on Wednesdays."

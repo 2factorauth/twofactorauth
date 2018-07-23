@@ -72,9 +72,6 @@ websites:
 - name: CashFlow
   url: https://cashflow.fm
   img: cashflow.png
-  region: Middle East
-  country: TR
-  city: Istanbul
   bch: true
   btc: false
   othercrypto: false
@@ -134,6 +131,15 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: CopPay
+  url: https://coppay.io/
+  img: coppay.png
+  twitter: CopPay_io
+  facebook: CopPay
+  bch: false
+  btc: true
+  othercrypto: true
+  status: https://twitter.com/CopPay_io/status/1020372956151676935
 - name: CryptAPI
   url: https://cryptapi.io
   img: cryptapi.png
@@ -160,6 +166,13 @@ websites:
   url: https://flattr.com
   twitter: flattr
   bch: false
+- name: GloBee
+  url: https://globee.com/
+  img: globee.png
+  twitter: GlobeeCom
+  bch: true
+  btc: true
+  othercrypto: true
 - name: GoCardless
   img: gocardless.png
   url: https://gocardless.com/
@@ -329,6 +342,16 @@ websites:
   img: visa-checkout.png
   bch: false
   twitter: VisaCheckout
+- name: Xsolla
+  url: https://xsolla.com/
+  img: xsolla.png
+  twitter: xsolla
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
 - name: Yandex.Money
   url: https://money.yandex.ru
   img: yandexmoney.png

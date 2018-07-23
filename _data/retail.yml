@@ -463,6 +463,19 @@ websites:
   bch: true
   btc: false
   othercrypto: false
+- name: Crypto and Tech Gear
+  url: https://cryptoandtechgear.com/
+  img: cryptotechgear.png
+  facebook: Crypto-And-Tech-Gear-252120468687324
+  email_address: btcltcethmerch@gmail.com
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: "BitPay payment option is broken"
+  keywords:
+  - coinbase
+  - coinpayments.net
 - name: Crypto Armory
   url: https://www.crypto-armory.com/
   img: cryptoarmory.png
@@ -480,7 +493,19 @@ websites:
   othercrypto: true
   doc: https://www.reddit.com/r/Bitcoincash/comments/8o6tto/proudly_accepting_bitcoin_cash/
   exceptions:
-    text: "This is a drop shipper. The items sold might have a markup over normal prices"
+    text: "This is a drop shipper. The items sold might have a high markup over normal prices"
+- name: Crypto Pro Shop
+  url: https://cryptopro.shop/
+  img: cryptoproshop.png
+  twitter: Crypto_Pro_Shop
+  facebook: TheCryptoProShop
+  email_address: social.media@cryptopro.shop
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://cryptopro.shop/cryptocurrency-clothing-store/
+  keywords:
+  - coinpayments.net
 - name: CRYPTOMATIC
   url: https://cryptomatic.io
   twitter: cryptomatic_io
@@ -687,7 +712,7 @@ websites:
   btc: true
   othercrypto: true
   exceptions:
-    text: "This is a drop shipper. The items sold might have a markup over normal prices"
+    text: "This is a drop shipper. The items sold might have a high markup over normal prices"
 - name: Full Circle Clothing
   url: https://imfullcircle.com/
   img: fullcircle.png
@@ -785,6 +810,17 @@ websites:
   keywords:
   - bitpay
   - bip70
+- name: Gully Flip
+  url: https://gullyflip.com
+  img: gullyflip.png
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - bitpay
+  - globee
+  exceptions:
+    text: "This is a drop shipper. The items sold might have a high markup over normal prices"
 - name: GVRNURSLF
   url: https://gvrnurslf.com/
   twitter: gvrnurslf
@@ -1107,6 +1143,16 @@ websites:
   facebook: Macys
   img: macys.png
   bch: false
+- name: Mass Sticker Shop
+  url: https://www.massstickershop.com/
+  img: massstickershop.png
+  region: na
+  country: US
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinbase
 - name: Massdrop
   url: https://www.massdrop.com
   twitter: Massdrop
