@@ -594,9 +594,10 @@ websites:
     - name: Navy Federal Credit Union
       url: https://www.navyfederal.org/
       img: navyfederal.png
-      tfa: No
-      twitter: NavyFederal
-      facebook: NavyFederal
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: https://nfcucloud.custhelp.com/app/answers/list/c/543
 
     - name: NEFCU
       url: https://www.mynefcu.org/
