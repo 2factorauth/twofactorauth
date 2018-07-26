@@ -47,7 +47,12 @@ websites:
       twitter: ClashMagazine
       facebook: clashmagazine
       img: clash-magazine.png
-      bch: yes
+      bch: true
+      btc: true
+      othercrypto: false
+      keywords:
+      - bitpay
+      - bip70
 
     - name: computerbase.de
       url: https://www.computerbase.de/
@@ -149,7 +154,7 @@ websites:
       othercrypto: No
       keywords:
       - bitpay
-      - bip70      
+      - bip70
 
     - name: Mixer
       url: https://mixer.com/
