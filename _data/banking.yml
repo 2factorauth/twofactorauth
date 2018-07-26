@@ -751,11 +751,12 @@ websites:
 
     - name: San Francisco Fire Credit Union
       url: https://www.sffirecu.org
-      twitter: SFFireCU
-      facebook: sffirecu
       img: sffirecu.png
-      tfa: No
-      status: https://twitter.com/sffirecu/status/577532435228991488
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      doc: https://www.sffirecu.org/access/online-and-mobile-banking/new-olb
 
     - name: Santa Clara County Federal Credit Union
       url: https://www.sccfcu.org/
