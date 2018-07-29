@@ -1,65 +1,68 @@
+---
 websites:
-    - name: bchvenezuela
-      url: https://twitter.com/bchvenezuela
-      img: bchvenezuela.png
-      twitter: bchvenezuela
-      email_address: bitcoincashve01798@gmail.com
-      region: sa
-      country: VE
-      city: Caracas
-      bch: Yes
-      btc: No
-      othercrypto: No
-      doc: https://www.yours.org/content/crowdfunding-for-the-home-for-the-elderly-padre-machado-c2c23a94c71f
-
-    - name: eatBCH
-      url: https://twitter.com/EatBCH
-      img: eatBCH.png
-      twitter: eatBCH
-      email_address: vzlan@protonmail.com
-      region: sa
-      country: VE
-      bch: Yes
-      btc: No
-      othercrypto: No
-
-    - name: eatBCH South Sudan
-      url: https://twitter.com/eatbch_ss
-      img: eatBCHss.png
-      twitter: eatbch_ss
-      email_address: lizzie.lace@gmail.com
-      region: af
-      country: SS
-      bch: Yes
-      btc: No
-      othercrypto: No
-
-    - name: Electronic Frontier Foundation
-      url: https://www.eff.org/
-      img: eff.png
-      twitter: EFF
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://twitter.com/EFF/status/973722550445289473
-    
-    - name: FareShare
-      url: http://www.fareshare.net.au/
-      img: fareshare.png
-      twitter: FareShare1
-      region: af
-      country: AU
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://twitter.com/FareShare1/status/949041934453981185
-
-    - name: Run 2 Rescue
-      url: http://run2rescue.com
-      img: run2rescue.png
-      twitter: run2rescue
-      facebook: Run2Rescue
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: http://run2rescue.com/bitcoin.php
+- name: bchvenezuela
+  url: https://twitter.com/bchvenezuela
+  img: bchvenezuela.png
+  twitter: bchvenezuela
+  email_address: bitcoincashve01798@gmail.com
+  region: sa
+  country: VE
+  city: Caracas
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://www.yours.org/content/crowdfunding-for-the-home-for-the-elderly-padre-machado-c2c23a94c71f
+- name: eatBCH
+  url: https://twitter.com/EatBCH
+  img: eatBCH.png
+  twitter: eatBCH
+  email_address: vzlan@protonmail.com
+  region: sa
+  country: VE
+  bch: true
+  btc: false
+  othercrypto: false
+- name: eatBCH South Sudan
+  url: https://twitter.com/eatbch_ss
+  img: eatBCHss.png
+  twitter: eatbch_ss
+  email_address: lizzie.lace@gmail.com
+  region: af
+  country: SS
+  bch: true
+  btc: false
+  othercrypto: false
+- name: Electronic Frontier Foundation
+  url: https://www.eff.org/
+  img: eff.png
+  twitter: EFF
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://twitter.com/EFF/status/973722550445289473
+- name: FareShare
+  url: http://www.fareshare.net.au/
+  img: fareshare.png
+  twitter: FareShare1
+  region: af
+  country: AU
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://twitter.com/FareShare1/status/949041934453981185
+- name: Hope Team Help for Africa
+  url: https://hope-team-help-for-africa.github.io/page/
+  img: HopeTeamHelp4Africa.png
+  twitter: PatrickGiroux14
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Run 2 Rescue
+  url: http://run2rescue.com
+  img: run2rescue.png
+  twitter: run2rescue
+  facebook: Run2Rescue
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: http://run2rescue.com/bitcoin.php
