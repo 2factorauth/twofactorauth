@@ -432,6 +432,16 @@ websites:
       sms: Yes
       doc: https://www.pairdomains.com/kb/posts/345
 
+    - name: OpenDNS
+      url: https://www.opendns.com/
+      img: opendns.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      exceptions:
+          text: "Only available for enterprise accounts."
+      doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
+
     - name: PointDNS
       url: https://pointhq.com/
       twitter: pointdns
