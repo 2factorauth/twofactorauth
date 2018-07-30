@@ -1,124 +1,134 @@
+---
 websites:
-    - name: Antiwar.com
-      url: https://antiwar.com/
-      img: antiwar.png
-      twitter: Antiwarcom
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://www.antiwar.com/cryptocurrencies/
-
-    - name: Ayn Rand Institute
-      url: https://ari.aynrand.org/
-      img: aynrand.png
-      twitter: AynRandInst
-      facebook: AynRandInstitute
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://ari.aynrand.org/donate/bitcoin
-
-    - name: Coins 4 Clothes
-      url: https://www.coins4clothes.com
-      img: coins4clothes.png
-      twitter: coins4clothes
-      facebook: coins4clothes
-      region: na
-      country: CA
-      city: Toronto
-      bch: Yes
-      btc: No
-      othercrypto: No
-      
-    - name: Common Crawl
-      url: http://commoncrawl.org/
-      img: commoncrawl.png
-      twitter: commoncrawl
-      email_address: info@commoncrawl.org
-      bch: No
-      btc: No
-      othercrypto: No
-      exceptions:
-        text: "Common Crawl used to accept BTC, but as of 2018-05-01 stopped accepting it"
-
-      
-    - name: Democracy at Work
-      url: https://democracyatwork.info
-      img: daw.png
-      twitter: democracyatwrk
-      facebook: democracyatwrk
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://bitpay.com/267321/donate
-
-    - name: East African Center
-      url: https://www.eastafricancenter.org/
-      img: eac.png
-      twitter: eackenya
-      facebook: eackenya
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coinbase
-
-    - name: Growing Veterans
-      url: https://growingveterans.org/
-      img: growingveterans.png
-      twitter: growingveterans
-      facebook: growingveterans
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://growingveterans.org/how-to-help/invest-with-cryptocurrency.html
-
-    - name: Mises Institute
-      url: https://mises.org/
-      img: mises.png
-      twitter: mises
-      facebook: mises.institute
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://mises.org/giving/bitcoin-and-paypal-gifts
-      
-    - name: NutritionFacts.org
-      url: https://nutritionfacts.org/
-      img: nutritionfacts.png
-      twitter: nutrition_facts
-      facebook: NutritionFacts.org
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://nutritionfacts.org/donate/
-
-    - name: The Bitcoin Cash Fund
-      url: https://www.thebitcoincash.fund/
-      img: bitcoincashfund.png
-      twitter: BitcoinCashFund
-      facebook: bitcoincashfund
-      bch: Yes
-      btc: No
-      othercrypto: No
-      doc: https://www.thebitcoincash.fund/donate/
-
-    - name: WeAreChange
-      url: https://wearechange.org/
-      img: wearechange.png
-      twitter: LukeWeAreChange
-      facebook: WeAreChange.org
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://wearechange.org/donate/
-
-    - name: Wikipedia
-      url: https://www.wikipedia.org/
-      img: wikipedia.png
-      bch: No
-      btc: No
-      twitter: Wikipedia
-      doc: https://wikimediafoundation.org/wiki/Ways_to_Give#bitcoin
-      exceptions:
-        text: "As of late April 2018, our Bitcoin processor has deprecated their services, and we are searching for alternatives. We apologize for the inconvenience, and hope to have the Bitcoin option available again soon."
+- name: Antiwar.com
+  url: https://antiwar.com/
+  img: antiwar.png
+  twitter: Antiwarcom
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.antiwar.com/cryptocurrencies/
+- name: Ayn Rand Institute
+  url: https://ari.aynrand.org/
+  img: aynrand.png
+  twitter: AynRandInst
+  facebook: AynRandInstitute
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://ari.aynrand.org/donate/bitcoin
+- name: Coins 4 Clothes
+  url: https://www.coins4clothes.com
+  img: coins4clothes.png
+  twitter: coins4clothes
+  facebook: coins4clothes
+  region: na
+  country: CA
+  city: Toronto
+  bch: true
+  btc: false
+  othercrypto: false
+- name: Common Crawl
+  url: http://commoncrawl.org/
+  img: commoncrawl.png
+  twitter: commoncrawl
+  email_address: info@commoncrawl.org
+  bch: false
+  btc: false
+  othercrypto: false
+  exceptions:
+    text: Common Crawl used to accept BTC, but as of 2018-05-01 stopped accepting
+      it
+- name: Democracy at Work
+  url: https://democracyatwork.info
+  img: daw.png
+  twitter: democracyatwrk
+  facebook: democracyatwrk
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://bitpay.com/267321/donate
+- name: East African Center
+  url: https://www.eastafricancenter.org/
+  img: eac.png
+  twitter: eackenya
+  facebook: eackenya
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinbase
+- name: Growing Veterans
+  url: https://growingveterans.org/
+  img: growingveterans.png
+  twitter: growingveterans
+  facebook: growingveterans
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://growingveterans.org/how-to-help/invest-with-cryptocurrency.html
+- name: Have I Been Pwned
+  url: https://haveibeenpwned.com/
+  img: haveibeenpwned.png
+  twitter: troyhunt
+  facebook: troyahunt
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://haveibeenpwned.com/Donate
+- name: Mises Institute
+  url: https://mises.org/
+  img: mises.png
+  twitter: mises
+  facebook: mises.institute
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://mises.org/giving/bitcoin-and-paypal-gifts
+- name: NutritionFacts.org
+  url: https://nutritionfacts.org/
+  img: nutritionfacts.png
+  twitter: nutrition_facts
+  facebook: NutritionFacts.org
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://nutritionfacts.org/donate/
+- name: The Bitcoin Cash Fund
+  url: https://www.thebitcoincash.fund/
+  img: bitcoincashfund.png
+  twitter: BitcoinCashFund
+  facebook: bitcoincashfund
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://www.thebitcoincash.fund/donate/
+- name: The Ocean Cleanup
+  url: https://www.theoceancleanup.com
+  img: theoceancleanup.png
+  twitter: theoceancleanup
+  facebook: TheOceanCleanup
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.theoceancleanup.com/fund/
+- name: WeAreChange
+  url: https://wearechange.org/
+  img: wearechange.png
+  twitter: LukeWeAreChange
+  facebook: WeAreChange.org
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://wearechange.org/donate/
+- name: Wikipedia
+  url: https://www.wikipedia.org/
+  img: wikipedia.png
+  bch: false
+  btc: false
+  twitter: Wikipedia
+  doc: https://wikimediafoundation.org/wiki/Ways_to_Give#bitcoin
+  exceptions:
+    text: As of late April 2018, our Bitcoin processor has deprecated their services,
+      and we are searching for alternatives. We apologize for the inconvenience, and
+      hope to have the Bitcoin option available again soon.
