@@ -23,7 +23,7 @@ websites:
   bch: Yes
   btc: No
   othercrypto: No
-  exceptions: 
+  exceptions:
     text: "Coinpayments.net"
 - name: Canine Solutions
   url: http://www.robsdogwalking.com
@@ -48,6 +48,18 @@ websites:
   othercrypto: true
   exceptions:
     text: "Ask the guy if he takes crypto"
+- name: Denison Yacht Sales
+  url: https://www.denisonyachtsales.com/
+  img: denisonyachtsales.png
+  twitter: denisonyachts
+  facebook: DenisonYachtSales
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://www.denisonyachtsales.com/denison-yacht-sales-now-accepting-bitcoin/
+  keywords:
+  - bitpay
+  - bip70
 - name: Dyrdahl Lumber
   url: https://dyrdahl-lumber.com
   img: DyrdahlLumber.png
@@ -136,7 +148,7 @@ websites:
   img: muse.png
   bch: true
   btc: true
-  othercrypto: 
+  othercrypto:
 - name: MyMillennialGuide.com
   url: https://www.mymillennialguide.com/
   img: mymillennialguide.png
