@@ -56,13 +56,14 @@ var jets = new Jets({
       $('.category').hide();
       table.css('display', 'block');
       content.parent().show();
-      content.each(function () {
+      for(var i = 0; i < content.length; i++) {
+			  var section = $(content[i]);
         // Hide table when all rows within are hidden by Jets
-        if ($(this).children(':hidden').length === $(this).children().length) {
-          if (platform == 'mobile') $(this).parent().hide();
-          else $(this).parent().parent().hide();
+        if (section.children(':hidden').length === section.children().length) {
+          if (platform == 'mobile') section.parent().hide();
+          else section.parent().parent().hide();
         }
-      });
+      }
 
       if (table.children().length == table.children(':hidden').length) {
           $('#no-results').css('display', 'block');

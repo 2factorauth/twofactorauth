@@ -56,6 +56,12 @@ websites:
       hardware: Yes
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
+    - name: HYPE
+      url: https://www.hype.it
+      img: hype.png
+      tfa: Yes
+      sms: Yes
+
     - name: Klarna
       url: https://www.klarna.com
       img: klarna.png
@@ -115,11 +121,11 @@ websites:
       doc: https://blog.paytm.com/secure-2-step-authentication-login-on-paytms-website-6dd5a20ae1b2
 
     - name: Payza
-      url: https://www.payza.com/
+      url: https://www.payza.eu/
       img: payza.png
       tfa: Yes
       software: Yes
-      doc: https://docs.payza.com/docs/personal-manual-advanced-security#section-how-do-i-set-up-2-factor-authentication
+      doc: https://docs.payza.eu/docs/personal-manual-advanced-security#section-how-do-i-set-up-2-factor-authentication
 
     - name: Privacy
       url: https://privacy.com/
@@ -134,6 +140,21 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://ravelin.zendesk.com/hc/en-us/articles/115001071665-Two-Factor-Authentication
+
+    - name: Recurly
+      url: https://www.recurly.com/
+      img: recurly.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://docs.recurly.com/docs/two-factor-authentication
+
+    - name: SixthContinent
+      url: https://sixthcontinent.com/
+      img: sixthcontinent.png
+      tfa: No
+      twitter: sxc_italia
+      facebook: sixthcontinent.it
 
     - name: Skrill
       url: https://skrill.com/

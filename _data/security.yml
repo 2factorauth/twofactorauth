@@ -6,6 +6,20 @@ websites:
       twitter: airvpn
       facebook: airvpn.org
 
+    - name: AVG
+      url: https://www.avg.com
+      img: avg.png
+      tfa: No
+      twitter: AVGFree
+      facebook: AVG
+
+    - name: Bitdefender
+      url: https://www.bitdefender.com
+      img: bitdefender.png
+      tfa: No
+      twitter: Bitdefender
+      facebook: bitdefender
+
     - name: Blur
       url: https://www.abine.com/
       img: blur.png
@@ -40,6 +54,13 @@ websites:
       hardware: Yes
       exceptions:
           text: "Requires X.509-capable cryptotoken or smartcard."
+    
+    - name: Cloudflare
+      url: https://cloudflare.com
+      img: cloudflare.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.cloudflare.com/hc/en-us/articles/200167866-How-do-I-set-up-two-factor-authentication-
 
     - name: Cobalt
       url: https://cobalt.io/
@@ -86,6 +107,13 @@ websites:
       hardware: Yes
       doc: http://www.entrust.net/certificate-services/cms-authentication.htm
 
+    - name: ExpressVPN
+      img: expressvpn.png
+      url: https://www.expressvpn.com
+      tfa: No
+      twitter: expressvpn
+      facebook: ExpressVPN
+
     - name: GeoTrust
       url: https://www.geotrust.com/
       img: geotrust.png
@@ -97,6 +125,7 @@ websites:
       img: gogetssl.png
       tfa: No
       twitter: gogetssl
+      facebook: gogetssl
 
     - name: hide.me VPN
       url: https://hide.me/
@@ -104,6 +133,26 @@ websites:
       facebook: www.hide.me
       img: hidemevpn.png
       tfa: No
+
+    - name: IPVanish
+      url: https://www.ipvanish.com
+      img: ipvanish.png
+      tfa: No
+      twitter: IPVanish
+      facebook: ipvanish
+
+    - name: IVPN
+      url: https://www.ivpn.net/
+      twitter: ivpnnet
+      img: ivpn.png
+      tfa: No
+
+    - name: NordVPN
+      url: https://nordvpn.com
+      img: nordvpn.png
+      tfa: No
+      twitter: NordVPN
+      facebook: NordVPN
 
     - name: Norton
       url: https://us.norton.com
@@ -145,6 +194,19 @@ websites:
       tfa: No
       twitter: piacsm
 
+    - name: ProtonVPN
+      url: https://protonvpn.com/
+      img: protonvpn.png
+      tfa: Yes
+      software: Yes
+
+    - name: PureVPN
+      url: https://www.purevpn.com
+      img: purevpn.png
+      tfa: No
+      twitter: PureVPNcom
+      facebook: PureVPNcom
+
     - name: Pwnie Express Pwn Pulse
       url: https://www.pwnieexpress.com/products/pulse-device-detection
       img: pwnieexpress.png
@@ -160,6 +222,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
+
+    - name: SaferVPN
+      url: https://www.safervpn.com
+      img: safervpn.png
+      tfa: No
+      twitter: SaferVPN
+      facebook: SaferVPNCom
 
     - name: SSLTrust
       url: https://www.ssltrust.com.au/
@@ -217,12 +286,14 @@ websites:
       url: https://vpnunlimitedapp.com/
       img: vpnunlimited.png
       twitter: vpnunlimited
+      facebook: vpnunlimitedapp
       tfa: No
 
     - name: Webroot
       url: https://www.webroot.com
       img: webroot.png
       twitter: Webroot
+      facebook: Webroot
       tfa: No
 
     - name: Windscribe
