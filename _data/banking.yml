@@ -570,6 +570,13 @@ websites:
       facebook: MeridianCreditUnion
       tfa: No
 
+    - name: Monzo
+      url: https://www.monzo.com
+      twitter: monzo
+      facebook: monzobank
+      img: monzobank.png
+      tfa: No
+
     - name: N26
       url: https://n26.com
       img: n26.png
@@ -594,9 +601,10 @@ websites:
     - name: Navy Federal Credit Union
       url: https://www.navyfederal.org/
       img: navyfederal.png
-      tfa: No
-      twitter: NavyFederal
-      facebook: NavyFederal
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: https://nfcucloud.custhelp.com/app/answers/list/c/543
 
     - name: NEFCU
       url: https://www.mynefcu.org/
@@ -751,11 +759,12 @@ websites:
 
     - name: San Francisco Fire Credit Union
       url: https://www.sffirecu.org
-      twitter: SFFireCU
-      facebook: sffirecu
       img: sffirecu.png
-      tfa: No
-      status: https://twitter.com/sffirecu/status/577532435228991488
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      doc: https://www.sffirecu.org/access/online-and-mobile-banking/new-olb
 
     - name: Santa Clara County Federal Credit Union
       url: https://www.sccfcu.org/
@@ -829,6 +838,13 @@ websites:
       sms: Yes
       doc: https://www.simple.com/help/articles/account-maintenance/security
 
+    - name: Simplii Financial 
+      url: https://www.simplii.com
+      img: simplii.png
+      tfa: No
+      facebook: SimpliiFinancial
+      twitter: SimpliiFin
+
     - name: Sparda Banken
       url: http://www.sparda.de/
       twitter: spardaberlin
@@ -854,6 +870,13 @@ websites:
       hardware: Yes
       doc: https://www.splitskabanka.hr/LinkClick.aspx?fileticket=uADVHHVmbUU%3d&tabid=4756&portalid=8&mid=8287
 
+    - name: Startling Bank
+      url: https://www.starlingbank.com/
+      img: starlingbank.png
+      twitter: StarlingBank
+      facebook: StarlingBankUK
+      tfa: No
+
     - name: State Bank of India
       url: https://www.onlinesbi.com/
       img: sbi.png
@@ -861,6 +884,13 @@ websites:
       sms: Yes
       software: Yes
       doc: https://www.onlinesbi.com/sbijava/mobile/sbsecure_otp_app_faq.html
+
+    - name: State Employees Credit Union
+      url: https://www.ncsecu.org/
+      img: ncsecu.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.ncsecu.org/MobileServices/OneTimePasscode.html
 
     - name: State Farm
       url: https://www.statefarm.com/

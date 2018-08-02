@@ -38,6 +38,15 @@ websites:
       hardware: Yes
       doc: https://atechmedia.com/blog/general/launches/two-factor-authentication
 
+    - name: Atlassian Cloud
+      url: https://id.atlassian.com
+      img: atlassian.png
+      tfa: Yes
+      software: Yes
+      doc: https://confluence.atlassian.com/cloud/secure-your-account-with-two-step-verification-939505063.html
+      exceptions:
+          text: "2FA settings are service-specific."
+
     - name: Balsamiq
       url: https://balsamiq.com
       twitter: balsamiq
