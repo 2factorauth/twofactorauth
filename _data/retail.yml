@@ -1298,9 +1298,11 @@ websites:
   img: unixstickers.png
   twitter: unixstickers
   facebook: unixstickers
-  bch: true
-  btc: true
+  bch: false
+  btc: false
   othercrypto: false
+  exceptions:
+    text: "Unix Stickers used to accept BTC & BCH, but as of 2018-08-03 stopped accepting it"
 - name: USB Kill
   url: https://usbkill.com/
   img: usbkill.png
