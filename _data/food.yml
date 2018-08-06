@@ -131,9 +131,11 @@ websites:
   img: huel.png
   twitter: gethuel
   facebook: huel
-  bch: true
-  btc: true
+  bch: false
+  btc: false
   othercrypto: false
+  exceptions:
+    text: "Huel used to accept BTC & BCH, but as of 2018-08-03 stopped accepting it"
 - name: Hungry.dk
   url: https://www.hungry.dk/
   twitter: Hungrydk
