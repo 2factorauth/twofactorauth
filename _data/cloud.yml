@@ -103,12 +103,13 @@ websites:
       software: Yes
       doc: https://docs.joyent.com/public-cloud/getting-started/2fa
 
-    - name: LeaseWeb
+    - name: Leaseweb
       url: https://www.leaseweb.com/
       img: leaseweb.png
       tfa: Yes
       sms: Yes
-      doc: https://kb.leaseweb.com/display/KB/Two+factor+authentication%3A+Cyber+Security
+      software: Yes
+      doc: https://kb.leaseweb.com/display/KB/2-step+verification
 
     - name: Linode
       url: https://www.linode.com/
@@ -154,7 +155,7 @@ websites:
       img: profitbricks.png
       tfa: Yes
       software: Yes
-      doc: https://www.profitbricks.com/help/2-Factor_Authentication 
+      doc: https://www.profitbricks.com/help/2-Factor_Authentication
 
     - name: Rackspace
       url: https://www.rackspace.com/

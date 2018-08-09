@@ -10,8 +10,8 @@ websites:
       url: https://www.bitium.com
       img: bitium.png
       tfa: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
       doc: https://support.bitium.com/customer/portal/articles/1417358-enabling-two-factor-authentication-2fa-
 
     - name: bitwarden
@@ -43,7 +43,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://support.dashlane.com/hc/en-us/articles/202625042-Protect-your-account-using-Two-Factor-Authentication#title3
+      doc: https://support.dashlane.com/hc/en-us/articles/202625042-Protect-your-account-using-Two-Factor-Authentication
 
     - name: ID.me
       url: https://www.id.me/
@@ -53,13 +53,21 @@ websites:
       facebook: IDmeInc
       email_address: help@id.me
 
+    - name: IDentité Numérique (IDN)
+      url: https://www.idn.laposte.fr
+      twitter: lisalaposte
+      facebook: laposte
+      img: identitenumerique.png
+      tfa: No
+      lang: fr
+
     - name: Keeper
       url: https://keepersecurity.com/
       img: keeper.png
       tfa: Yes
-      software: Yes
       phone: Yes
       sms: Yes
+      software: Yes
       doc: https://www.keepersecurity.com/security#twoFactor
 
     - name: Keybase
@@ -123,11 +131,13 @@ websites:
       doc: https://help.roboform.com/hc/en-us/articles/115002729512-Setting-up-Google-Authenticator-for-your-account
 
     - name: SAASPASS
-      url: https://www.saaspass.com
+      url: https://saaspass.com
       img: saaspass.png
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
+      doc: https://saaspass.com/faq/
 
     - name: SecureSafe
       url: https://www.securesafe.com

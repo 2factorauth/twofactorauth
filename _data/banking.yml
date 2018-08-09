@@ -14,6 +14,14 @@ websites:
       software: Yes
       doc: https://www.addiko.hr/sites/addiko.hr/files/content/addiko_bank_uputa_za_koristenje_tokena_mtokena.pdf
 
+    - name: AirBank
+      url: https://www.airbank.cz
+      img: airbank.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.airbank.cz/co-vas-nejvic-zajima/jake-bezpecnostni-prvky-u-nas-mame
+
     - name: Alliant Credit Union
       url: https://www.alliantcreditunion.org/
       twitter: AlliantCU
@@ -94,8 +102,6 @@ websites:
       tfa: Yes
       sms: Yes
       email: Yes
-      hardware: Yes
-      doc: https://www.bankofamerica.com/privacy/online-mobile-banking-privacy/safepass.go
 
     - name: Bank of China (Hong Kong)
       url: http://www.bochk.com
@@ -103,6 +109,13 @@ websites:
       tfa: Yes
       hardware: Yes
       doc: https://www.bochk.com/en/security/2factorauthentication.html
+
+    - name: Bank Zachodni WBK
+      url: https://www.bzwbk.pl
+      img: bzwbk.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.bzwbk.pl/firmy/bankowosc-elektroniczna/bzwbk24-mini-firma/metody-autoryzacji/metody-autoryzacji.html
 
     - name: Barclays UK
       url: https://www.barclays.co.uk/
@@ -234,10 +247,9 @@ websites:
     - name: Citibank Australia
       url: https://www.citibank.com.au/
       img: citibank.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      doc: https://www.citibank.com.au/otp/
+      tfa: No
+      twitter: CitiAustralia
+      facebook: citiaustralia
 
     - name: Citizens Bank
       url: https://www.citizensbank.com
@@ -275,9 +287,9 @@ websites:
     - name: Commonwealth Bank of Australia
       url: https://www.commbank.com.au/
       img: commbank.png
-      tfa: Yes
-      sms: Yes
-      doc: https://www.commbank.com.au/security-privacy/netcode.html
+      tfa: No
+      twitter: CommBank
+      facebook: commonwealthbank
 
     - name: Credit Union Australia
       url: https://www.cua.com.au/
@@ -558,6 +570,13 @@ websites:
       facebook: MeridianCreditUnion
       tfa: No
 
+    - name: Monzo
+      url: https://www.monzo.com
+      twitter: monzo
+      facebook: monzobank
+      img: monzobank.png
+      tfa: No
+
     - name: N26
       url: https://n26.com
       img: n26.png
@@ -582,9 +601,10 @@ websites:
     - name: Navy Federal Credit Union
       url: https://www.navyfederal.org/
       img: navyfederal.png
-      tfa: No
-      twitter: NavyFederal
-      facebook: NavyFederal
+      tfa: Yes
+      email: Yes
+      software: Yes
+      doc: https://nfcucloud.custhelp.com/app/answers/list/c/543
 
     - name: NEFCU
       url: https://www.mynefcu.org/
@@ -691,6 +711,15 @@ websites:
       tfa: No
       lang: de
 
+    - name: PosteItaliane
+      url: https://www.poste.it/
+      twitter: PosteNews
+      facebook: PosteItaliane
+      email_address: servizio.clienti@posteitaliane.it
+      img: posteitaliane.png
+      tfa: No
+      lang: it
+
     - name: Raiffeisen Bank CZ
       url: https://www.rb.cz/
       img: raiffeisenbank_cz.png
@@ -712,6 +741,15 @@ websites:
       img: RegionsBank.png
       tfa: No
 
+    - name: SAFE Credit Union
+      url: https://safecu.org
+      img: safecu.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      doc: https://www.safecu.org/personal/online-security/enhanced-login-security
+
     - name: San Diego County Credit Union
       url: https://www.sdccu.com
       twitter: sdccu
@@ -721,11 +759,12 @@ websites:
 
     - name: San Francisco Fire Credit Union
       url: https://www.sffirecu.org
-      twitter: SFFireCU
-      facebook: sffirecu
       img: sffirecu.png
-      tfa: No
-      status: https://twitter.com/sffirecu/status/577532435228991488
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      doc: https://www.sffirecu.org/access/online-and-mobile-banking/new-olb
 
     - name: Santa Clara County Federal Credit Union
       url: https://www.sccfcu.org/
@@ -799,6 +838,13 @@ websites:
       sms: Yes
       doc: https://www.simple.com/help/articles/account-maintenance/security
 
+    - name: Simplii Financial
+      url: https://www.simplii.com
+      img: simplii.png
+      tfa: No
+      facebook: SimpliiFinancial
+      twitter: SimpliiFin
+
     - name: Sparda Banken
       url: http://www.sparda.de/
       twitter: spardaberlin
@@ -824,6 +870,13 @@ websites:
       hardware: Yes
       doc: https://www.splitskabanka.hr/LinkClick.aspx?fileticket=uADVHHVmbUU%3d&tabid=4756&portalid=8&mid=8287
 
+    - name: Starling Bank
+      url: https://www.starlingbank.com/
+      img: starlingbank.png
+      twitter: StarlingBank
+      facebook: StarlingBankUK
+      tfa: No
+
     - name: State Bank of India
       url: https://www.onlinesbi.com/
       img: sbi.png
@@ -831,6 +884,13 @@ websites:
       sms: Yes
       software: Yes
       doc: https://www.onlinesbi.com/sbijava/mobile/sbsecure_otp_app_faq.html
+
+    - name: State Employees Credit Union
+      url: https://www.ncsecu.org/
+      img: ncsecu.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.ncsecu.org/MobileServices/OneTimePasscode.html
 
     - name: State Farm
       url: https://www.statefarm.com/
@@ -853,6 +913,14 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://hjalp.swedbank.se/logga-in/index.htm
+
+    - name: Synchrony Bank
+      url: https://www.synchronybank.com
+      img: synchrony.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.synchronybank.com/why-synchrony/secure-banking/
 
     - name: Tangerine
       url: https://www.tangerine.ca/
@@ -887,9 +955,11 @@ websites:
 
     - name: TD Canada Trust
       url: https://www.tdcanadatrust.com
-      twitter: TD_Canada
       img: tdbank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.td.com/privacy-and-security/privacy-and-security/how-we-protect-you/online-security/2fa.jsp
 
     - name: Tower Federal Credit Union
       url: https://www.towerfcu.org/
@@ -958,6 +1028,7 @@ websites:
       tfa: Yes
       sms: Yes
       hardware: Yes
+      email: Yes
       software: Yes
       doc: https://www.usaa.com/inet/pages/security_token_logon_options
 

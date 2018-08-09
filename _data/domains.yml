@@ -31,9 +31,9 @@ websites:
     - name: 1and1
       url: https://www.1and1.com/
       img: 1and1.png
-      tfa: No
-      twitter: 1and1
-      facebook: 1and1
+      tfa: Yes
+      software: Yes
+      doc: https://help.1and1.com/article/793179
 
     - name: 20i
       url: https://www.20i.com
@@ -48,13 +48,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: http://domains.above.com/manual-two-step-authentication.html
-
-    - name: Cloudflare
-      url: https://cloudflare.com
-      img: cloudflare.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
     - name: ClouDNS
       url: https://www.cloudns.net/
@@ -90,7 +83,7 @@ websites:
       img: dnsimple.png
       tfa: Yes
       software: Yes
-      doc: https://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
+      doc: https://support.dnsimple.com/articles/two-factor-authentication/
 
     - name: Domain.com
       url: https://www.domain.com/
@@ -121,6 +114,16 @@ websites:
       email_address: memberservices@domaintools.com
       img: domaintools.png
       tfa: No
+
+    - name: Domeneshop
+      url: https://domeneshop.no/
+      img: domeneshop.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      exceptions:
+        text: "SMS available only to customers in Norway, Sweden and Denmark."
+      doc: https://domeneshop.no/faq?id=344
 
     - name: Domeny.tv
       url: https://www.domeny.tv/en

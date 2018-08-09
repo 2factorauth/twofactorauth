@@ -43,6 +43,13 @@ websites:
       tfa: No
       twitter: auspost
 
+    - name: Australian Red Cross Blood Service
+      url: https://www.donateblood.com.au/
+      img: donateblood.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+
     - name: Autodesk
       url: https://www.autodesk.com
       img: autodesk.png
@@ -51,7 +58,7 @@ websites:
       email: Yes
       phone: Yes
       software: Yes
-      doc: https://knowledge.autodesk.com/search-result/caas/sfdcarticles/sfdcarticles/Autodesk-Two-Factor-Authentication-FAQ.html
+      doc: https://knowledge.autodesk.com/search-result/caas/sfdcarticles/sfdcarticles/Autodesk-Two-Factor-Authorization-FAQ.html
 
     - name: Automater
       url: https://automater.pl/en/
@@ -215,6 +222,13 @@ websites:
       software: Yes
       doc: https://www.findmyshift.com/help/what-is-two-factor-authentication
 
+    - name: Firefox
+      url: https://accounts.firefox.com
+      img: firefox.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.mozilla.org/en-US/kb/secure-firefox-account-two-step-authentication
+
     - name: Fiverr
       url: https://www.fiverr.com/
       img: fiverr.png
@@ -271,9 +285,10 @@ websites:
     - name: Indeed
       url: https://www.indeed.com/
       img: indeed.png
-      tfa: No
-      twitter: indeed
-      facebook: Indeed
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://support.indeed.com/hc/en-us/articles/360000244123
 
     - name: Indiegogo
       url: https://www.indiegogo.com/
@@ -289,6 +304,13 @@ websites:
       email_address: support@help.instapaper.com
       img: instapaper.png
       tfa: No
+
+    - name: Jitbit Helpdesk
+      url: https://www.jitbit.com/hosted-helpdesk/
+      img: jitbit.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.jitbit.com/helpdesk/KB/View/11048235-twofactor-authentication
 
     - name: karriere.at
       url: https://www.karriere.at
@@ -344,6 +366,12 @@ websites:
       twitter: Monster
       facebook: monster
 
+    - name: No Starch Press
+      url: https://nostarch.com/
+      img: nostarchpress.png
+      tfa: Yes
+      software: Yes
+
     - name: Office 365
       url: https://office.microsoft.com/en-us/business/
       img: office365.png
@@ -378,8 +406,8 @@ websites:
     - name: PhraseApp
       url: https://phraseapp.com
       img: phraseapp.png
-      software: Yes
       tfa: Yes
+      software: Yes
       doc: https://phraseapp.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
 
     - name: Pinboard
@@ -429,6 +457,13 @@ websites:
       exceptions:
           text: "SMS only available as a backup to Google Authenticator."
 
+    - name: Ripe NCC
+      url: https://www.ripe.net/
+      img: ripe.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.ripe.net/participate/member-support/ripe-ncc-access/two-step-verification
+
     - name: SaneBox
       url: https://www.sanebox.com/
       img: sanebox.png
@@ -465,7 +500,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://help.ubnt.com/hc/en-us/articles/115012986607-How-to-Enable-Two-Factor-Authentication
-      
+
     - name: Ulule
       url: https://www.ulule.com/
       twitter: ulule
@@ -512,9 +547,12 @@ websites:
 
     - name: Wikipedia
       url: https://www.wikipedia.org/
-      twitter: Wikipedia
       img: wikipedia.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://meta.wikimedia.org/wiki/Help:Two-factor_authentication
+      exceptions:
+          text: "Currently limited to administrators (and users with admin-like permissions like interface editors), bureaucrats, checkusers, oversighters, stewards, edit filter managers and the OATH-testers global group."
 
     - name: Yclas
       url: https://yclas.com/
@@ -527,6 +565,6 @@ websites:
       url: https://www.zendesk.com
       img: zendesk.png
       tfa: Yes
-      software: Yes
       sms: Yes
+      software: Yes
       doc: https://support.zendesk.com/hc/en-us/articles/203824246
