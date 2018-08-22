@@ -525,8 +525,11 @@ websites:
     - name: WageWorks
       url: https://www.wageworks.com
       img: wageworks.png
-      tfa: No
-      twitter: WageWorksCares
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      exceptions:
+          text: "Employer/plan sponsor may opt to not offer 2FA."
 
     - name: Watchman Monitoring
       url: https://www.watchmanmonitoring.com
