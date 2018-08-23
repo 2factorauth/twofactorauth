@@ -184,7 +184,8 @@ websites:
       email: Yes
       hardware: Yes
       otp: Yes
-      doc: https://developer.salesforce.com/docs/atlas.en-us.identityImplGuide.meta/identityImplGuide/add_time-based_token.htm
+      u2f: Yes
+      doc: https://help.salesforce.com/articleView?id=activating_computer.htm&type=5
 
     - name: SendGrid
       url: https://sendgrid.com/
