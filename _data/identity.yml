@@ -1,4 +1,4 @@
-websites:
+﻿websites:
     - name: 1Password
       url: https://1password.com/
       img: 1password.png
@@ -112,6 +112,16 @@ websites:
       hardware: Yes
       software: Yes
       doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
+
+    - name: PassHub
+      url: https://www.passhub.net/
+      img: PassHub.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+          text: "hardware tokens only work on desktop."
+      doc: https://passhub.net/security.php
 
     - name: Passpack
       url: https://www.passpack.com/
