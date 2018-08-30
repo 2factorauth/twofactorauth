@@ -212,17 +212,13 @@ input[type=search] {
         flex-wrap: wrap;
         margin: 0 10px;
 
-        > p {
+        p {
           margin: 5px 0;
         }
       }
 
-      &.positive {
-        .methods {
-          > p {
-            flex-basis: 50%;
-          }
-        }
+      &.positive .methods p {
+        flex-basis: 50%;
       }
 
       .button-group {
