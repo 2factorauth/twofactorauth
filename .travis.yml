@@ -1,5 +1,6 @@
 sudo: false
 os: linux
+dist: xenial
 cache:
   bundler: true
   directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
@@ -8,13 +9,5 @@ addons:
     packages:
     - libcurl4-openssl-dev
     - ca-certificates
-matrix:
-  fast_finish: true
-  include:
-    - script: bundle exec rake
-    - script: bundle exec rake proof_external
-      env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  allow_failures:
-    - script: bundle exec rake proof_external
 notifications:
     email: false
