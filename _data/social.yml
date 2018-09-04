@@ -153,7 +153,7 @@ websites:
       tfa: Yes
       email: Yes
       exceptions:
-        text: "Medium doesn't use passwords, instead emails a link to user to login"
+      text: "Medium doesn't use passwords, instead emails a link to user to login"
 
     - name: Meetup
       url: https://www.meetup.com
@@ -280,7 +280,7 @@ websites:
       sms: Yes
       software: Yes
       exceptions:
-        text: "SMS required for 2FA."
+      text: "SMS required for 2FA."
       doc: https://en.support.wordpress.com/security/two-step-authentication/
 
     - name: Wykop

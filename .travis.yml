@@ -7,15 +7,18 @@ cache:
 addons:
   apt:
     packages:
-    - libcurl4-openssl-dev
-    - ca-certificates
+      - libcurl4-openssl-dev
+      - ca-certificates
+install:
+  - bundle install
+  - pip install --user yamllint
 matrix:
   fast_finish: true
   include:
-    - script: bundle exec rake
+    - script: bundle exec rake && yamllint -c .yamllint.yml _data/*.yml
     - script: bundle exec rake proof_external
       env: NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   allow_failures:
     - script: bundle exec rake proof_external
 notifications:
-    email: false
+  email: false
