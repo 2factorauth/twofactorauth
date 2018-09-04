@@ -273,7 +273,7 @@ websites:
       sms: Yes
       doc: https://cbonline.cbq.qa/RIB/Common/FAQContent
       exceptions:
-       text: "An SMS capable phone with a Qatar phone number is required."
+      text: "An SMS capable phone with a Qatar phone number is required."
 
     - name: Commerzbank
       url: https://www.commerzbank.de/
@@ -993,7 +993,7 @@ websites:
 
     - name: Umpqua Bank
       url: https://www.umpquabank.com/
-      img:  umpqua.png
+      img: umpqua.png
       tfa: Yes
       sms: Yes
       phone: Yes
@@ -1096,7 +1096,7 @@ websites:
 
     - name: Zurich Cantonal Bank (ZKB)
       url: https://www.zkb.ch/
-      img:  zkb.png
+      img: zkb.png
       tfa: Yes
       sms: Yes
       email: Yes

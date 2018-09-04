@@ -69,7 +69,7 @@ websites:
       email: Yes
       software: Yes
       exceptions:
-         text: "Software 2FA is only available for Swedish citizens with BankID."
+      text: "Software 2FA is only available for Swedish citizens with BankID."
 
     - name: NETELLER
       img: neteller.png
@@ -178,7 +178,7 @@ websites:
       sms: Yes
       software: Yes
       exceptions:
-        text: "SMS only supported in US and Canada"
+      text: "SMS only supported in US and Canada"
       doc: https://squareup.com/help/us/en/article/5593-2-step-verification
 
     - name: Square Cash

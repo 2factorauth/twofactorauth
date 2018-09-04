@@ -13,7 +13,7 @@ websites:
     sms: Yes
     software: Yes
     exceptions:
-        text: "See https://support.apple.com/HT202656 for a list of supported SMS carriers."
+    text: "See https://support.apple.com/HT202656 for a list of supported SMS carriers."
     doc: https://support.apple.com/HT204152
 
   - name: Backblaze
@@ -229,7 +229,7 @@ websites:
     tfa: Yes
     software: Yes
     exceptions:
-        text: "SMS-capable phone required for initial setup."
+    text: "SMS-capable phone required for initial setup."
     doc: https://yandex.com/support/passport/authorization/twofa.html
 
   - name: Zetta.net
@@ -245,5 +245,5 @@ websites:
     tfa: Yes
     software: Yes
     exceptions:
-        text: "Only available for business accounts."
+    text: "Only available for business accounts."
     doc: http://wiki.zoolz.com/how-do-i-enable-two-factor-authentication-on-my-zoolz-intelligent-account/

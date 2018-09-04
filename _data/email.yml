@@ -186,7 +186,7 @@ websites:
       software: Yes
       hardware: Yes
       exceptions:
-        text: "2FA only available on their beta client."
+      text: "2FA only available on their beta client."
       doc: https://tutanota.uservoice.com/knowledgebase/articles/1201942
 
     - name: Virgin Media E-Mail
@@ -226,7 +226,7 @@ websites:
       tfa: Yes
       software: Yes
       exceptions:
-        text: "SMS-capable phone required for initial setup."
+      text: "SMS-capable phone required for initial setup."
       doc: https://yandex.com/support/passport/authorization/twofa.xml
 
     - name: Zimbra
@@ -235,7 +235,7 @@ websites:
       tfa: Yes
       software: Yes
       exceptions:
-        text: "Available in Zimbra Collaboration 8.7 and above, Network Edition only"
+      text: "Available in Zimbra Collaboration 8.7 and above, Network Edition only"
       doc: https://blog.zimbra.com/2016/02/zimbra-collaboration-8-7-two-factor-authentication-2fa-technical-preview/
 
     - name: Zoho Mail
