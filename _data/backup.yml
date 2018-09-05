@@ -29,7 +29,7 @@ websites:
     img: box.png
     tfa: Yes
     sms: Yes
-    doc: https://support.box.com/hc/en-us/articles/200526658-Can-I-enable-2-step-verification-for-my-account-
+    doc: https://community.box.com/t5/How-to-Guides-for-Account/Manage-Account-Settings/ta-p/20022#authentication
 
   - name: CloudApp
     url: https://www.getcloudapp.com/
@@ -68,7 +68,7 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
-    doc: https://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
+    doc: https://help.evernote.com/hc/en-us/articles/208314238-How-to-set-up-two-step-verification
 
   - name: FileThis
     url: https://filethis.com
@@ -128,6 +128,13 @@ websites:
     img: mega.png
     tfa: No
 
+  - name: MultCloud
+    url: https://www.multcloud.com/home.html
+    twitter: multcloud
+    facebook: multcloud
+    img: multcloud.png
+    tfa: No
+
   - name: Nimbox
     url: https://www.nimbox.co.uk/
     img: nimbox.png
@@ -157,15 +164,16 @@ websites:
     tfa: Yes
     email: Yes
     software: Yes
-    doc: https://www.qnap.com/i/useng/tutorial/con_show.php?op=showone&cid=151
+    doc: https://www.qnap.com/en-us/how-to/tutorial/article/how-to-enhance-account-security-using-2-step-verification
 
   - name: SmartBox
-    url: https://www.panterranetworks.com/smartbox/smartbox_overview.php
+    url: https://www.panterranetworks.com/products/smartbox.php
     img: smartbox.png
     tfa: Yes
     email: Yes
     software: Yes
-    doc: https://www.panterranetworks.com/smartbox/sb-features/sbf-security.php
+    exceptions:
+      text: "Only available for Enterprise users"
 
   - name: SpiderOak
     url: https://spideroak.com
@@ -215,13 +223,6 @@ websites:
     email: Yes
     doc: https://support.tresorit.com/entries/104192996-How-to-set-up-two-step-verification
 
-  - name: XXL Cloud
-    url: https://xxlcloud.com
-    twitter: xxlcloud
-    img: xxlcloud.png
-    tfa: No
-    facebook: xxlcloud
-
   - name: Yandex.Disk
     url: https://disk.yandex.com
     img: yandexdisk.png
@@ -232,8 +233,17 @@ websites:
     doc: https://yandex.com/support/passport/authorization/twofa.html
 
   - name: Zetta.net
-    url: http://www.zetta.net/
+    url: https://www.zetta.net/
     img: zetta.png
     tfa: Yes
     software: Yes
-    doc: http://www.zetta.net/about/blog/how-set-zetta-two-factor-authentication/
+    doc: https://www.zetta.net/about/blog/how-set-zetta-two-factor-authentication/
+
+  - name: Zoolz
+    url: https://intelli.zoolz.com/
+    img: zoolz.png
+    tfa: Yes
+    software: Yes
+    exceptions:
+        text: "Only available for business accounts."
+    doc: http://wiki.zoolz.com/how-do-i-enable-two-factor-authentication-on-my-zoolz-intelligent-account/

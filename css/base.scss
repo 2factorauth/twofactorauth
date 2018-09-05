@@ -164,6 +164,7 @@ input[type=search] {
 }
 
 .website-table {
+  display: none;
   margin: auto;
   position: relative;
   width: 90vw;
@@ -276,7 +277,6 @@ td img.icon,
   border-radius: 50%;
   float: left;
   padding: 4px 4px;
-  width: 2em;
   height: 2em;
   width: 2em;
   line-height: 1;

@@ -36,19 +36,13 @@ websites:
       software: Yes
       doc: https://cloud.ca/two-factor-authentication-is-now-available-on-cloud-ca/
 
-    - name: Datapipe
-      url: https://www.datapipe.com/
-      img: datapipe.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.datapipe.com/security_compliance/managed_security/two_factor_authentication/
-
     - name: DigitalOcean
       url: https://www.digitalocean.com/
       img: digitalocean.png
       tfa: Yes
+      sms: Yes
       software: Yes
-      doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
+      doc: https://www.digitalocean.com/docs/accounts/security/2fa/
 
     - name: EngineYard
       url: https://www.engineyard.com
@@ -110,12 +104,20 @@ websites:
       software: Yes
       doc: https://docs.joyent.com/public-cloud/getting-started/2fa
 
-    - name: LeaseWeb
+    - name: Laravel Forge
+      url: https://forge.laravel.com/
+      img: forge.png
+      tfa: Yes
+      software: Yes
+      doc: https://forge.laravel.com/user/profile#/authentication
+
+    - name: Leaseweb
       url: https://www.leaseweb.com/
       img: leaseweb.png
       tfa: Yes
       sms: Yes
-      doc: https://kb.leaseweb.com/display/KB/Two+factor+authentication%3A+Cyber+Security
+      software: Yes
+      doc: https://kb.leaseweb.com/display/KB/2-step+verification
 
     - name: Linode
       url: https://www.linode.com/
@@ -161,7 +163,7 @@ websites:
       img: profitbricks.png
       tfa: Yes
       software: Yes
-      doc: https://www.profitbricks.com/help/2-Factor_Authentication 
+      doc: https://www.profitbricks.com/help/2-Factor_Authentication
 
     - name: Rackspace
       url: https://www.rackspace.com/
@@ -208,6 +210,13 @@ websites:
       exceptions:
           text: "SMS-capable phone required."
       doc: http://blog.tilaa.com/post/128110588046/two-factor-authentication-and-session-management
+
+    - name: UpCloud
+      url: https://www.upcloud.com
+      img: upcloud.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.upcloud.com/support/two-factor-authentication/
 
     - name: Userify
       url: https://userify.com
