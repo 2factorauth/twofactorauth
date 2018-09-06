@@ -11,12 +11,12 @@ websites:
       img: auth0.png
       tfa: Yes
       sms: Yes
-      software: Yes
-      phone: Yes
       email: Yes
-      exceptions:
-        text: "Developer Pro account required for third party multifactor providers.
+      phone: Yes
+      software: Yes
       hardware: Yes
+      exceptions:
+        text: "Developer Pro account required for third party multifactor providers."
       doc: https://auth0.com/docs/multifactor-authentication
 
     - name: Bitium
