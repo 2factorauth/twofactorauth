@@ -113,6 +113,16 @@ websites:
       software: Yes
       doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
 
+    - name: PassHub
+      url: https://passhub.net/
+      img: passhub.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+          text: "Hardware tokens only work on desktop."
+      doc: https://passhub.net/security.php
+
     - name: Passpack
       url: https://www.passpack.com/
       img: passpack.png
