@@ -1020,7 +1020,9 @@ websites:
       twitter: usbank
       facebook: usbank
       img: usbank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://github.com/2factorauth/twofactorauth.git
 
     - name: USAA
       url: https://www.usaa.com/
