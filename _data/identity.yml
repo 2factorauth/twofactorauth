@@ -6,6 +6,18 @@ websites:
       software: Yes
       doc: https://support.1password.com/two-factor-authentication/
 
+    - name: Auth0
+      url: https://auth0.com/
+      img: auth0.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+        text: "Developer Pro account required for third party multifactor providers."
+      doc: https://auth0.com/docs/multifactor-authentication
+
     - name: Bitium
       url: https://www.bitium.com
       img: bitium.png
