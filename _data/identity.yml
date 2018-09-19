@@ -6,6 +6,13 @@ websites:
       software: Yes
       doc: https://support.1password.com/two-factor-authentication/
 
+    - name: Æ-DIR
+      url: https://ae-dir.com
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.ae-dir.com/install.html#oath-ldap
+
     - name: Bitium
       url: https://www.bitium.com
       img: bitium.png
