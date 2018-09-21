@@ -36,6 +36,19 @@ websites:
   - coinpayments.net
   - bitpay
   - bip70
+- name: Avira
+  img: avira.png
+  url: https://www.avira.com
+  bch: true
+  btc: true
+  othercrypto: false
+  twitter: avira
+  facebook: avira
+  keywords:
+  - bitpay
+  - bip70
+  exceptions:
+    text: "Bitcoin is accepted for Phantom VPN Pro only"
 - name: Blur
   url: https://www.abine.com/
   img: blur.png

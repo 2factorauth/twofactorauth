@@ -211,6 +211,20 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Interkassa
+  url: https://www.interkassa.com/
+  img: interkassa.png
+  facebook: interkassa
+  email_address: support@interkassa.com
+  bch: false
+  btc: true
+  othercrypto: false
+- name: ioChain
+  url: https://www.iochain.co/
+  img: iochain.png
+  bch: false
+  btc: true
+  othercrypto: true
 - name: Klarna
   url: https://www.klarna.com
   img: klarna.png
@@ -236,9 +250,17 @@ websites:
   url: https://www.moneybutton.com/
   img: moneybutton.png
   bch: true
-  btc: false
+  btc: true
+  othercrypto: true
+  twitter: money_button
+- name: Mycelium Gear
+  url: https://gear.mycelium.com/
+  img: myceliumgear.png
+  twitter: MyceliumGear
+  email_address: gear.support@mycelium.com
+  bch: false
+  btc: true
   othercrypto: false
-  twitter: YoursOrg
 - name: NETELLER
   img: neteller.png
   url: https://www.neteller.com/en_us
@@ -253,6 +275,12 @@ websites:
   url: https://www.paybear.io/
   img: paybear.png
   twitter: PayBeario
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Payeer
+  img: payeer.png
+  url: https://payeer.com/
   bch: true
   btc: true
   othercrypto: true
@@ -301,6 +329,14 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.reddit.com/r/btc/comments/82p4x6/pyxpub_fast_and_safe_0conf_transactions_for_any/
+- name: Rapidz Pay
+  url: https://www.rapidz.io/
+  img: rapidzpay.png
+  twitter: RapidzPay
+  facebook: Rapidz.io
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Ravelin
   url: https://www.ravelin.com/
   twitter: Ravelinhq
@@ -351,6 +387,14 @@ websites:
   twitter: Stripe
   bch: false
   btc: false
+- name: TransferGo
+  url: https://www.transfergo.com/
+  img: transfergo.png
+  facebook: TransferGo
+  twitter: TransferGo
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Vantiv
   url: https://www.vantiv.com/
   twitter: Vantiv
