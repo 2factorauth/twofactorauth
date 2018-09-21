@@ -43,6 +43,7 @@ namespace :add do
     loop do
       errors = validate_revision(listing)
       break if errors.count.zero?
+
       extract_paths(errors).each do |path|
         puts "#{path} failed validation, please provide a new value"
         site[path] = value_prompt(path)
@@ -176,6 +177,7 @@ namespace :add do
   def read_yaml(set_name, subset = nil)
     data = SafeYAML.load_file(File.join(base_dir, "_data/#{set_name}.yml"))
     return data, data[subset] unless subset.nil?
+
     data
   end
 
