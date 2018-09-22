@@ -188,7 +188,7 @@ input[type=search] {
 
     > div {
       border-bottom: 1px groove rgba(34, 36, 38, 0.14902);
-      padding: 2em;
+      padding: 1em;
     }
 
     .main {
@@ -206,10 +206,31 @@ input[type=search] {
         }
       }
 
+      .methods {
+        @include display-flex();
+        @include flex-direction(row);
+        flex-wrap: wrap;
+        margin: 0 10px;
+
+        p {
+          margin: 5px 0;
+        }
+      }
+
+      &.positive .methods p {
+        flex-basis: 50%;
+      }
+
       .button-group {
         @include display-flex();
         @include flex-direction(row);
         justify-content: space-between;
+        margin-top: 10px;
+      }
+
+      .icon {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
       }
     }
 
