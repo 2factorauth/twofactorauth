@@ -149,6 +149,20 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: LagaiPhone
+  url: https://lagaiphone.se/
+  img: lagaiphone.png
+  twitter: Lagaiphone
+  facebook: lagaiphone.se
+  email_address: info@lagaiphone.se
+  region: eu
+  country: SE
+  lang: sv
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: "Ask for payment in Bitcoin Cash in store or by e-mail."
 - name: Locks Keys and More
   url: https://lockskeysandmore.com
   img: lockskeysmore.png
