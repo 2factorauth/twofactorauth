@@ -510,6 +510,15 @@ websites:
   btc: true
   othercrypto: true
   doc: https://info.shapeshift.io/blog/2017/07/27/important-bitcoin-hard-fork-information
+- name: The Big Coin
+  url: https://www.thebigcoin.io
+  img: thebigcoin.png
+  facebook: TheBigCoin.io
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: "They only accept Bitcoin Cash if you contact them first."
 - name: Tippr
   url: https://tippr.rocketr.net
   img: tippr.png
