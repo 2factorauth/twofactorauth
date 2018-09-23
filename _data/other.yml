@@ -218,14 +218,16 @@ websites:
       keywords:
       - coinbase
 
-    - name: Office 365
+    - name: Office 365 (with Microsoft Account)
       url: https://www.office.com
       img: office365.png
-      bch: Yes
-      btc: Yes
+      bch: No
+      btc: No
       othercrypto: No
       twitter: Office365
       facebook: Office365
+      exceptions:
+        text: "Office 365 used to accept BTC & BCH, but as of 2018-07-07 stopped accepting it"
 
     - name: Onshape
       url: https://www.onshape.com/
