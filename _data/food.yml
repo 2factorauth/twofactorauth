@@ -330,6 +330,18 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: Mason Bar
+  url: http://t.dianping.com/deal/20656559
+  img: masonbar.png
+  region: as
+  country: CN
+  city: Beijing
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://twitter.com/nishantsharma87/status/958396424269385729
+  exceptions:
+    text: "Remember to ask the bartender the price of the drink in BCH before paying. The bar uses an exchange rate that may be different from the one that you use."
 - name: Menufy
   url: https://www.menufy.com
   img: menufy.png
