@@ -124,11 +124,11 @@ websites:
 - name: Wikipedia
   url: https://www.wikipedia.org/
   img: wikipedia.png
-  bch: false
-  btc: false
+  bch: true
+  btc: true
+  othercrypto: false
   twitter: Wikipedia
-  doc: https://wikimediafoundation.org/wiki/Ways_to_Give#bitcoin
-  exceptions:
-    text: As of late April 2018, our Bitcoin processor has deprecated their services,
-      and we are searching for alternatives. We apologize for the inconvenience, and
-      hope to have the Bitcoin option available again soon.
+  doc: https://donate.wikimedia.org/wiki/Ways_to_Give#bitcoin
+  keywords:
+  - bitpay
+  - bip70

@@ -1,5 +1,16 @@
 ---
 websites:
+- name: Alagoria
+  url: https://alagoria.com
+  img: alagoria.png
+  email_address: support@alagoria.com
+  twitter: AlagoriaShop
+  facebook: CryptoRetailShop
+  region: na
+  country: US
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
 - name: Alfatop.me
   url: https://www.alfatop.me
   img: ALFAtopme.png
@@ -17,6 +28,13 @@ websites:
   othercrypto: true
   keywords:
   - coinpayments.net
+- name: BestMixer.io
+  url: https://bestmixer.io/en
+  img: bestmixer.png
+  email_address: bestmixer@protonmail.com
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Bit2Me
   url: https://bit2me.com
   img: bit2me.png
@@ -299,6 +317,16 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: Fivebucks
+  url: https://fivebucks.com/
+  img: fivebucks.png
+  email_address: inquiries@fivebucks.com
+  twitter: fivebuckscom
+  facebook: fivebuckscom
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://www.yours.org/content/fivebucks--the-only-truly-global-freelance-services-marketplace-is-now-20d53893af96
 - name: GiftOff
   url: https://www.giftoff.com/
   img: giftoff.png
@@ -408,6 +436,17 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Paid By Coins
+  url: https://paidbycoins.com/
+  img: paidbycoins.png
+  twitter: PaidByCoins
+  facebook: paidbycoins
+  email_address: info@paidbycoins.com
+  region: oc
+  country: AU
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Pastecoin
   url: https://www.pastecoin.com
   twitter: PasteCoin
@@ -471,6 +510,15 @@ websites:
   btc: true
   othercrypto: true
   doc: https://info.shapeshift.io/blog/2017/07/27/important-bitcoin-hard-fork-information
+- name: The Big Coin
+  url: https://www.thebigcoin.io
+  img: thebigcoin.png
+  facebook: TheBigCoin.io
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: "They only accept Bitcoin Cash if you contact them first."
 - name: Tippr
   url: https://tippr.rocketr.net
   img: tippr.png
