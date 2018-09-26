@@ -239,10 +239,11 @@ websites:
 
     - name: Citibank
       url: https://online.citi.com/
-      twitter: Citibank
-      facebook: citibank
       img: citibank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://online.citi.com/JRS/pands/detail.do?ID=SecurityCenter&section=security_tools
 
     - name: Citibank Australia
       url: https://www.citibank.com.au/
