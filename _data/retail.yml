@@ -407,6 +407,11 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+  exceptions:
+    text: "Minimum order ammount for Bitcoin payments is 100"
+  keywords:
+  - bitpay
+  - bip70
 - name: Comixology
   url: https://www.comixology.com/
   img: comixology.png
