@@ -40,8 +40,9 @@ websites:
       url: https://www.digitalocean.com/
       img: digitalocean.png
       tfa: Yes
+      sms: Yes
       software: Yes
-      doc: https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
+      doc: https://www.digitalocean.com/docs/accounts/security/2fa/
 
     - name: EngineYard
       url: https://www.engineyard.com
@@ -55,7 +56,7 @@ websites:
       img: fortrabbit.png
       tfa: Yes
       software: Yes
-      doc: https://help.fortrabbit.com/security#toc-two-factor-authentication
+      doc: https://help.fortrabbit.com/account#toc-setting-up-2fa
 
     - name: Google Cloud Platform
       url: https://cloud.google.com
@@ -102,6 +103,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://docs.joyent.com/public-cloud/getting-started/2fa
+
+    - name: Laravel Forge
+      url: https://forge.laravel.com/
+      img: forge.png
+      tfa: Yes
+      software: Yes
+      doc: https://forge.laravel.com/user/profile#/authentication
 
     - name: Leaseweb
       url: https://www.leaseweb.com/

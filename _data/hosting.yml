@@ -6,6 +6,13 @@ websites:
       software: yes
       doc: https://www.34sp.com/kb/142/how-to-enable-two-factor-authentication-on-your-account
 
+    - name: A2 Hosting
+      url: https://www.a2hosting.com
+      img: a2hosting.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.a2hosting.com/kb/a2-hosting-customer-portal/account-management/enabling-two-factor-authentication-for-your-a2-hosting-account
+
     - name: ARP Networks
       url: https://arpnetworks.com/
       img: arpnetworks.png
@@ -125,7 +132,7 @@ websites:
       img: globat.png
       tfa: No
       twitter: globat
-      
+
     - name: Greenhost
       url: https://greenhost.net
       img: greenhost.png
@@ -216,6 +223,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://kinsta.com/blog/wordpress-two-factor-authentication/
+
+    - name: KnownHost
+      url: https://www.knownhost.com
+      img: knownhost.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.knownhost.com/wiki/my-knownhost/two-factor
 
     - name: LCN.com
       url: https://www.lcn.com
@@ -362,6 +376,13 @@ websites:
       img: site5.png
       tfa: No
 
+    - name: SiteGround
+      url: https://www.siteground.com
+      img: siteground.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.siteground.com/tutorials/two-factor-authentication/
+
     - name: Softlayer
       url: https://www.softlayer.com
       img: softlayer.png
@@ -431,7 +452,8 @@ websites:
       tfa: Yes
       sms: Yes
       email: Yes
-      doc: https://ventraip.com.au/blog/products-and-services/vipcontrol-2-1/
+      software: Yes
+      doc: https://ventraip.com.au/faq/article/two-factor-authentication-faq-vipcontrol/
 
     - name: Versio
       url: https://www.versio.nl

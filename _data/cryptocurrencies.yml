@@ -137,13 +137,6 @@ websites:
       software: Yes
       doc: https://bx.in.th/info/faq/
 
-    - name: CampBX
-      url: https://campbx.com/
-      img: campbx.png
-      tfa: Yes
-      software: Yes
-      doc: https://campbx.com/faq.php#security-compliance
-
     - name: CEX.IO
       url: https://cex.io/
       img: cex.png
@@ -312,7 +305,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://support.kraken.com/hc/en-us/articles/203395513-How-do-I-set-up-two-factor-authentication-
+      doc: https://support.kraken.com/hc/en-us/articles/360000426923
 
     - name: LiteBit
       url: https://www.litebit.eu/
@@ -327,6 +320,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://localbitcoins.blogspot.com.au/2013/05/using-two-factor-authentication-on.html
+
+    - name: localethereum
+      url: https://localethereum.com
+      img: localethereum.png
+      tfa: Yes
+      software: Yes
+      email: Yes
 
     - name: Luno
       url: https://www.luno.com/
@@ -372,4 +372,4 @@ websites:
       sms: Yes
       phone: Yes
       software: Yes
-      doc: https://support.xapo.com/how-do-i-enable-disable-the-second-factor-authentication/view=faq
+      doc: https://support.xapo.com/en/my-account/second-factor-authentication-2fa/

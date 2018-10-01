@@ -239,10 +239,11 @@ websites:
 
     - name: Citibank
       url: https://online.citi.com/
-      twitter: Citibank
-      facebook: citibank
       img: citibank.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://online.citi.com/JRS/pands/detail.do?ID=SecurityCenter&section=security_tools
 
     - name: Citibank Australia
       url: https://www.citibank.com.au/
@@ -349,7 +350,6 @@ websites:
 
     - name: Dutch-Bangla Bank Limited (DBBL)
       url: https://www.dutchbanglabank.com/
-      facebook: Dutchbanglabankltd
       email_address: hrd_head@dbbl.com.bd
       img: dbbl.png
       tfa: No
@@ -499,9 +499,8 @@ websites:
       sms: Yes
 
     - name: ING-DiBa Austria
-      url: https://www.ing-diba.at
+      url: https://www.ing.at
       twitter: INGDiBaAustria
-      facebook: ingdibaaustria
       img: ingdibaaustria.png
       tfa: No
       lang: de
@@ -679,7 +678,6 @@ websites:
       sms: Yes
       email: Yes
       phone: Yes
-      doc: https://www.patelco.org/Privacy-Security/Protection
 
     - name: PenFed
       url: https://www.penfed.org/

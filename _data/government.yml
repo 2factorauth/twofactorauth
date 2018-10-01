@@ -60,7 +60,7 @@ websites:
       twitter: dgfip_officiel
       facebook: Direction-générale-des-Finances-publiques-250996308359760
       lang: fr
-      
+
     - name: login.gov
       url: https://login.gov/
       img: login-gov.png
@@ -103,9 +103,13 @@ websites:
 
     - name: US Internal Revenue Service
       url: https://www.irs.gov/Individuals/Get-Transcript
-      twitter: IRSnews
       img: usirs.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      exceptions:
+          text: "IRS2Go app required for software 2FA."
+      doc: https://www.irs.gov/individuals/secure-access-how-to-register-for-certain-online-self-help-tools
 
     - name: US Social Security Administration
       url: https://www.ssa.gov

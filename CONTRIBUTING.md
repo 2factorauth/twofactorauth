@@ -20,7 +20,9 @@ are stored in folders corresponding to each of those categories in their own
    utility such as OptiPNG before committing it to the repo.
 3. **HTTPS links**: All sites that support HTTPS should also be linked with an
    HTTPS address.
-4. **Be Awesome**: You need to be awesome. That is all.
+4. **Alexa top 200k**: A new site, that is not already listed, has to be within the
+   Alexa top 200k ranking. You can check the ranking of a site [here](https://www.alexa.com/siteinfo).
+5. **Be Awesome**: You need to be awesome. That is all.
 
 ## Running Locally
 

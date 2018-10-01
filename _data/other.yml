@@ -58,7 +58,7 @@ websites:
       email: Yes
       phone: Yes
       software: Yes
-      doc: https://knowledge.autodesk.com/search-result/caas/sfdcarticles/sfdcarticles/Autodesk-Two-Factor-Authorization-FAQ.html
+      doc: https://knowledge.autodesk.com/customer-service/account-management/account-profile/account-security/two-step-verification
 
     - name: Automater
       url: https://automater.pl/en/
@@ -89,13 +89,6 @@ websites:
       email: Yes
       phone: Yes
       doc: https://basiscode.com/blog/two-factor-authentication-compliance-software/
-
-    - name: BuiltWith
-      url: https://builtwith.com
-      img: builtwith.png
-      tfa: Yes
-      software: Yes
-      doc: https://kb.builtwith.com/account-management/how-to-enable-2fa-on-builtwith/
 
     - name: CA Technologies
       url: https://www.ca.com/
@@ -160,12 +153,6 @@ websites:
       img: crowdflower.png
       tfa: No
       twitter: CrowdFlower
-
-    - name: Delicious
-      url: https://del.icio.us/
-      img: delicious.png
-      twitter: Delicious
-      tfa: No
 
     - name: Delighted
       url: https://delightedapp.com/
@@ -525,8 +512,11 @@ websites:
     - name: WageWorks
       url: https://www.wageworks.com
       img: wageworks.png
-      tfa: No
-      twitter: WageWorksCares
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      exceptions:
+          text: "Employer/plan sponsor may opt to not offer 2FA."
 
     - name: Watchman Monitoring
       url: https://www.watchmanmonitoring.com

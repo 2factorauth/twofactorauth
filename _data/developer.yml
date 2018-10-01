@@ -21,7 +21,7 @@ websites:
       img: algolia.png
       tfa: Yes
       software: Yes
-      doc: https://www.algolia.com/doc/security/best-security-practices#two-factor-authentication
+      doc: https://www.algolia.com/doc/security/best-security-practices/#two-factor-authentication-2fa
 
     - name: AppVeyor
       url: https://www.appveyor.com
@@ -68,6 +68,14 @@ websites:
       hardware: Yes
       doc: https://confluence.atlassian.com/x/425QLg
 
+    - name: Buddy
+      url: https://buddy.works
+      img: buddy.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://buddy.works/blog/introducing-two-factor-authentication
+
     - name: Bugsnag
       url: https://bugsnag.com
       img: bugsnag.png
@@ -86,7 +94,6 @@ websites:
       img: builtwith.png
       tfa: Yes
       software: Yes
-      doc: https://kb.builtwith.com/account-management/how-to-enable-2fa-on-builtwith/
 
     - name: Cacoo
       url: https://cacoo.com/
@@ -308,7 +315,7 @@ websites:
       sms: Yes
       software: Yes
       phone: Yes
-      doc: https://docs.cloud.mongodb.com/core/two-factor-authentication/
+      doc: https://docs.cloudmanager.mongodb.com/core/two-factor-authentication/
 
     - name: New Relic
       url: https://newrelic.com
