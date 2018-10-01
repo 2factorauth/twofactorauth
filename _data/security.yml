@@ -236,6 +236,14 @@ websites:
       tfa: No
       twitter: SaferVPN
       facebook: SaferVPNCom
+      
+    - name: Sophos Central
+      url: https://central.sophos.com
+      img: sophoscentral.png
+      tfa: yes
+      software: yes
+      email: yes
+      doc: https://docs.sophos.com/central/Customer/help/en-us/central/Customer/concepts/ep_MultiFactorAuthentication.html
 
     - name: SSLTrust
       url: https://www.ssltrust.com.au/
