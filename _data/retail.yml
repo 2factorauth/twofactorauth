@@ -40,14 +40,6 @@ websites:
   doc: https://9figures.co.uk/blogs/news/accepting-cryptocurrency-1
   keywords:
   - coinbase
-- name: AbrahamArtist
-  url: https://abrahamartist.myshopify.com/
-  img: abrahamartist.png
-  twitter: Mad_spinner
-  email_address: abrahama@abrahamartist.com
-  bch: true
-  btc: true
-  othercrypto: true
 - name: ACE Hack Ware
   url: https://acehackware.com/
   img: acehackware.png
@@ -125,7 +117,7 @@ websites:
   twitter: Amazon
   facebook: Amazon
 - name: Antsle
-  url: https://antsle.com
+  url: https://antsle.com/
   img: antsle.png
   twitter: antsle_Inc
   facebook: antsle
@@ -162,15 +154,6 @@ websites:
   - bitpay
   - bip70
   doc: https://www.aria.co.uk/Support/BitCoin
-- name: ARTLy
-  url: https://shop.gohuozumi.com/
-  img: artly.png
-  email_address: shop.goh@gmail.com
-  bch: true
-  btc: true
-  othercrypto: true
-  keywords:
-  - coinpayments.net
 - name: Autodekor
   url: https://cockpitdekor.com
   img: autodekor.png
@@ -407,6 +390,11 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+  exceptions:
+    text: "Minimum order ammount for Bitcoin payments is 100"
+  keywords:
+  - bitpay
+  - bip70
 - name: Comixology
   url: https://www.comixology.com/
   img: comixology.png
@@ -445,15 +433,6 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-- name: Crypto Art
-  url: https://cryptoart.com/
-  img: cryptoart.png
-  twitter: cryptoartcom
-  bch: true
-  btc: true
-  othercrypto: false
-  keywords:
-  - coinpayments.net
 - name: Crypto Discounts Australia
   url: https://www.cryptodiscounts.com.au/
   img: cryptodiscountsau.png
@@ -1021,18 +1000,6 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: Lynx Art Collection
-  url: https://lynxartcollection.com/
-  img: lynxartcollection.png
-  twitter: lynxcollection
-  facebook: lynxartcollection
-  bch: true
-  btc: true
-  othercrypto: true
-  keywords:
-  - globee
-  - coinbase
-  - coinpayments.net
 - name: Macy's
   url: https://www.macys.com/
   twitter: macys
@@ -1119,6 +1086,14 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: Mofobit
+  url: https://mofobit.com/
+  img: mofobit.png
+  twitter: Mofobit
+  facebook: MofoBit
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Monorean
   url: https://www.monorean.com/
   img: monorean.png
@@ -1133,17 +1108,6 @@ websites:
   - headphones
   - wireless
   - exam
-- name: myFINBEC
-  url: http://coin.myfinbec.com/
-  img: myfinbec.png
-  facebook: myFINBEC
-  email_address: sales@myfinbec.com
-  bch: true
-  btc: true
-  othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
 - name: Möbelmarkt Shop
   url: https://www.moebelmarkt-shop.de/
   img: moebelmarktshop.png
@@ -1468,15 +1432,6 @@ websites:
   btc: true
   othercrypto: false
   doc: https://www.scan.co.uk/info/bitcoin
-- name: Scott Mills Art
-  url: http://www.scottmillsart.com
-  img: scottmillsart.png
-  twitter: scottmillsart
-  facebook: scottmillsart
-  email_address: scottkmills@gmail.com
-  bch: true
-  btc: true
-  othercrypto: true
 - name: Servershop24
   url: https://www.servershop24.de/
   img: servershop24.png
@@ -1694,16 +1649,6 @@ websites:
   othercrypto: false
   keywords:
   - bitpay
-- name: The Wall Today
-  url: https://thewalltoday.com/en/
-  img: thewalltoday.png
-  facebook: thewalltoday
-  bch: true
-  btc: true
-  othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
 - name: ThinkPenguin
   url: https://www.thinkpenguin.com/
   img: thinkpenguin.png

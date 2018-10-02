@@ -416,11 +416,16 @@ websites:
     - name: No-IP
       url: https://www.noip.com/
       img: noip.png
-      bch: No
+      bch: yes
       btc: yes
       twitter: NoIPcom
       facebook: noipdns
       doc: https://www.noip.com/bitcoin
+      keywords:
+      - bitpay
+      - bip70
+      exceptions:
+        text: "To pay with Bitcoin Cash you need to contact their support"
 
     - name: Nominet
       url: https://www.nominet.uk/
