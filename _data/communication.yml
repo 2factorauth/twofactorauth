@@ -214,6 +214,8 @@ websites:
       email: Yes
       sms: Yes
       software: Yes
+      exceptions:
+          text: "Must be associated with a Microsoft Account."
       doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
 
     - name: Slack
