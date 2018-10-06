@@ -153,7 +153,6 @@ function closeCategory(category) {
  * be triggered. The function will be called after it stops being called for
  * N milliseconds.
  * 
- * leading edge, instead of the trailing.
  * @param func The function to be debounced
  * @param wait The time in ms to debounce 
  */
