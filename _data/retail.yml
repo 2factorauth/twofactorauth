@@ -1200,8 +1200,9 @@ websites:
   facebook: overstock
   email_address: international@overstock.com
   exceptions:
-    text: BTC payments are only available for US customers, other cryptocurrencies
-      go through Shapeshift
+    text: BTC payments are only available for US customers
+  keywords:
+  - coinpayments.net
 - name: ozdingo
   url: https://ozdingo.com.au/
   img: ozdingo.png
