@@ -132,9 +132,12 @@ websites:
 
   - name: Mega
     url: https://mega.nz/
-    twitter: MEGAprivacy
     img: mega.png
-    tfa: No
+    tfa: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    doc: https://mega.nz/help/client/webclient/security-and-privacy/5bb5436cf1b70966038b456b
 
   - name: Nimbox
     url: https://www.nimbox.co.uk/
