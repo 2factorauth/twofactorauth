@@ -133,6 +133,8 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://docs.hackerone.com/hackers/two-factor-authentication.html
+      exceptions:
+          text: "SMS-capable phone required for initial setup."
 
     - name: hide.me VPN
       url: https://hide.me/
