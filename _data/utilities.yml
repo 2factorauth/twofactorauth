@@ -126,10 +126,12 @@ websites:
       img: ecodirect.png
       twitter: ecodirect
       facebook: ecodirect
-      btc: Yes
+      btc: No
       bch: No
       othercrypto: No
-      
+      exceptions:
+        text: "ecodirect used to accept BTC, but as of 2018-10-12 stopped accepting it"
+
     - name: EE
       url: https://ee.co.uk/
       twitter: EE
