@@ -78,8 +78,12 @@ websites:
 - name: AliExpress
   url: https://www.aliexpress.com/
   img: aliexpress.png
-  bch: false
+  bch: true
+  btc: true
+  othercrypto: true
   twitter: AliExpress_EN
+  keywords:
+  - webmoney
 - name: All Tattoo Accessories and Technics
   url: https://tattoo.sell.systems/
   bch: true
