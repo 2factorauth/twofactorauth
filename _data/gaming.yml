@@ -161,11 +161,15 @@ websites:
   twitter: Garenaonline
   facebook: Garenaonline
 - name: GOG.com
-  url: https://www.gog.com
+  url: https://www.gog.com/
   img: gog.png
-  bch: false
+  bch: true
+  btc: true
+  othercrypto: true
   twitter: gogcom
   facebook: gogcom
+  keywords:
+  - webmoney
 - name: GREE
   url: https://product.gree.net/
   img: gree.png
