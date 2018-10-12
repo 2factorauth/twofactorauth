@@ -517,10 +517,11 @@ websites:
   img: tradingview.png
   twitter: tradingview
   facebook: tradingview
-  bch: false
+  bch: true
   btc: true
-  othercrypto: false
-  doc: https://www.tradingview.com/wiki/FAQ
+  othercrypto: true
+  keywords:
+  - coinbase
 - name: UPbit
   url: https://upbit.com/
   img: upbit.png
