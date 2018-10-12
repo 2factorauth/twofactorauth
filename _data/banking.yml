@@ -288,9 +288,10 @@ websites:
     - name: Commonwealth Bank of Australia
       url: https://www.commbank.com.au/
       img: commbank.png
-      tfa: No
-      twitter: CommBank
-      facebook: commonwealthbank
+      tfa: Yes
+      sms: Yes
+      hardware: Yes
+      doc: https://www.commbank.com.au/support.digital-banking.explain-netcode-token.html
 
     - name: Credit Union Australia
       url: https://www.cua.com.au/
