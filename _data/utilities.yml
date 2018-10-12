@@ -183,8 +183,10 @@ websites:
       facebook: gogreensolar
       img: gogreensolar.png
       bch: No
-      btc: Yes
+      btc: No
       othercrypto: No
+      exceptions:
+        text: "GoGreenSolar.com used to accept BTC, but as of 2018-10-12 stopped accepting it"
 
     - name: Google Fiber
       url: https://fiber.google.com/
