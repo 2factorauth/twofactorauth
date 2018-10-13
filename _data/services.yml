@@ -20,11 +20,11 @@ websites:
   url: https://bchadspot.com
   img: bch_adspot.png
   email_address: info@bchadspot.com
-  bch: Yes
-  btc: No
-  othercrypto: No
+  bch: true
+  btc: false
+  othercrypto: false
   exceptions:
-    text: "Coinpayments.net"
+    text: Coinpayments.net
 - name: Canine Solutions
   url: http://www.robsdogwalking.com
   email_address: reiding@comcast.net
@@ -32,9 +32,9 @@ websites:
   country: US
   city: Tallahassee
   state: Florida
-  bch: Yes
-  btc: No
-  othercrypto: Yes
+  bch: true
+  btc: false
+  othercrypto: true
 - name: COOL Networks
   url: http://cool.net.au
   img: coolnetworks.png
@@ -47,7 +47,7 @@ websites:
   btc: true
   othercrypto: true
   exceptions:
-    text: "Ask the guy if he takes crypto"
+    text: Ask the guy if he takes crypto
 - name: Denison Yacht Sales
   url: https://www.denisonyachtsales.com/
   img: denisonyachtsales.png
@@ -153,7 +153,7 @@ websites:
   btc: true
   othercrypto: true
   exceptions:
-    text: "Ask for payment in Bitcoin Cash in store or by e-mail."
+    text: Ask for payment in Bitcoin Cash in store or by e-mail.
 - name: Locks Keys and More
   url: https://lockskeysandmore.com
   img: lockskeysmore.png
@@ -162,9 +162,9 @@ websites:
   region: na
   country: US
   city: El Paso, Texas
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
 - name: MarketingPont.com
   url: https://marketingpont.com/
   img: marketingpont.png
@@ -172,9 +172,9 @@ websites:
   facebook: marketingpont
   email_address: info@marketingpont.com
   lang: es
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
 - name: medical valuations
   url: https://medicalvaluations.com
   img: medicalValuations.png
@@ -190,7 +190,7 @@ websites:
   img: muse.png
   bch: true
   btc: true
-  othercrypto:
+  othercrypto: 
 - name: MyMillennialGuide.com
   url: https://www.mymillennialguide.com/
   img: mymillennialguide.png
@@ -291,9 +291,9 @@ websites:
   img: southlexicontr.png
   facebook: south.lexicon.translations
   email_address: itzortzak@gmail.com
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   doc: https://www.lexicon-translations.com/2018/06/bitcoin-cash-and-bitcoin-core-accepted.html
 - name: Spatial Simulations
   url: https://www.spatialsim.com/
@@ -345,6 +345,14 @@ websites:
   keywords:
   - bitpay
   - bip70
+- name: Voipbuster
+  url: https://voipbuster.com
+  img: voipbuster.png
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
 - name: WIRmachenDRUCK
   url: https://www.wir-machen-druck.de/
   img: wirmachendruck.png
