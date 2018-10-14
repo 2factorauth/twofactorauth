@@ -143,7 +143,10 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-  doc: https://donate.torproject.org/pdr
+  doc: https://www.torproject.org/donate/donate-options.html
+  keywords:
+  - bitpay
+  - bip70
   exceptions:
     text: Due to the current state of the Bitcoin market, our payment processor, Bitpay,
       will not allow us to accept donations of less than 5 USD. However, we can also
