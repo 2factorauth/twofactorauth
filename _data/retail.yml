@@ -1,5 +1,15 @@
 ---
 websites:
+- name: 13-37.org electronics
+  url: https://13-37.org/
+  img: 1337.png
+  email_address: info@13-37.org
+  region: eu
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
+  keywords:
+  - coingate
 - name: 1stBoards
   url: http://1stboards.world
   facebook: 1stboardstaiwan
@@ -839,6 +849,14 @@ websites:
   bch: false
   twitter: IKEAUSA
   facebook: IKEAUSA
+- name: iMANIA.dk
+  url: https://www.imania.dk/
+  img: imaniadk.png
+  twitter: iManiadk
+  lang: da
+  bch: Yes
+  btc: Yes
+  othercrypto: No
 - name: Indiequid
   url: https://indiequid.com/
   img: indiequid.png
@@ -988,6 +1006,18 @@ websites:
   country: ch
   keywords:
   - coinify
+- name: Little Fish Store
+  url: https://littlefishstore.com
+  img: littlefishstore.png
+  facebook: buyshrimpandfishonline
+  email_address: lfs@littlefishstore.com
+  region: na
+  country: US
+  bch: Yes
+  btc: No
+  othercrypto: No
+  keywords:
+  - coinbase
 - name: Lowes
   url: https://www.lowes.com
   img: lowes.png
@@ -1131,6 +1161,16 @@ websites:
   facebook: Newegg
   exceptions:
     text: Newegg has some restrictions on what items are allowed to be paid with cryptocurrencies.
+- name: NEWPARTS
+  url: https://www.newparts.com/
+  img: newparts.png
+  twitter: New_Parts
+  facebook: NewPartsAutoParts
+  region: na
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
+  doc: https://news.bitcoin.com/online-automotive-parts-retailer-newparts-now-accepts-bitcoin-cash/
 - name: Nordstrom
   url: https://shop.nordstrom.com
   img: nordstrom.png

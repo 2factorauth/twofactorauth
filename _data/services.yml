@@ -25,6 +25,18 @@ websites:
   othercrypto: false
   exceptions:
     text: Coinpayments.net
+- name: Bitcoin MXN
+  url: http://bitcoinmxn.com/enviar-ico/
+  img: bitcoinmxn.png
+  twitter: mxn_bitcoin
+  facebook: bitcoinmxnoficial
+  email_address: admin@bitcoinmxn.com
+  lang: es
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
+  exceptions:
+    text: "Use the contact form when requesting a press release or other service."
 - name: Canine Solutions
   url: http://www.robsdogwalking.com
   email_address: reiding@comcast.net
@@ -72,6 +84,16 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: DotComWriters
+  url: http://dotcomwriters.com
+  img: dotcomwriters.png
+  twitter: dotcomwriters
+  email_address: admin@dotcomwriters.com
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
+  exceptions:
+    text: "User must contact the admin to make a custom request. This may be done through the contact form."
 - name: Dyrdahl Lumber
   url: https://dyrdahl-lumber.com
   img: DyrdahlLumber.png
@@ -87,6 +109,17 @@ websites:
   doc: https://www.facebook.com/dyrdahllumber/photos/a.929204377258037.1073741829.266220780223070/929203443924797/?type=3&theater
   exceptions:
     text: Contact us at https://www.dyrdahl-lumber.com/contact
+- name: G-Nome Computers
+  url: https://www.g-nome.co.za/
+  img: gnome.png
+  email_address: info@g-nome.co.za
+  region: af
+  country: ZA
+  city: Johannesburg
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
+  doc: https://www.g-nome.co.za/
 - name: Gana Control
   url: https://ganacontrol.com/
   img: ganacontrol.png
@@ -222,15 +255,6 @@ websites:
   btc: false
   othercrypto: true
   doc: https://twitter.com/pek_tech/status/962967524605231104
-- name: Ponti Partners
-  url: https://pontipartners.com.au/
-  img: pontipartners.png
-  facebook: pontipartners
-  region: oc
-  bch: true
-  btc: false
-  othercrypto: false
-  doc: https://www.reddit.com/r/btc/comments/7rht8s/bitcoin_cash_moving_beyond_just_merchant_adoption/
 - name: Prospero Media
   url: https://www.prosperomedia.co/
   img: prosperomedia.png

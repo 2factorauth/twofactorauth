@@ -1,13 +1,14 @@
 ---
 websites:
 - name: Binary Fortress Software
-  url: https://www.binaryfortress.com/Donate/
+  url: https://www.binaryfortress.com/
   img: binaryfortress.png
   twitter: BinaryFortress
   facebook: BinaryFortress
   bch: true
   btc: true
   othercrypto: false
+  doc: https://www.binaryfortress.com/Donate/
   keywords:
   - bitpay
   - bip70
@@ -17,18 +18,26 @@ websites:
   bch: true
   btc: false
   othercrypto: false
+- name: Bitcoin Unlimited
+  url: https://www.bitcoinunlimited.info/
+  img: bitcoinunlimited.png
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://www.bitcoinunlimited.info/donate
 - name: cheddr
-  url: https://pos.cheddr.cash/#landingDonate
+  url: https://pos.cheddr.cash/
   img: cheddr.png
   bch: true
   btc: false
   othercrypto: false
+  doc: https://pos.cheddr.cash/#landingDonate
 - name: Electron Cash
   url: https://electroncash.org/
   img: electroncash.png
   bch: true
   btc: false
-  doc: https://electroncash.org/#donate
+  doc: https://electroncash.org/#faq
 - name: Emuparadise
   url: https://www.emuparadise.me
   img: emuparadise.png
@@ -47,12 +56,8 @@ websites:
   btc: false
   othercrypto: false
   doc: http://www.flowee.org/donations/
-- name: Frostwire
-  url: http://www.frostwire.com/
-  img: frostwire.png
-  bch: true
-  btc: true
-  twitter: FrostWire
+  keywords:
+  - moneybutton
 - name: GNOME
   url: https://www.gnome.org/
   img: gnome.png
@@ -74,6 +79,9 @@ websites:
   btc: true
   othercrypto: false
   doc: https://www.kde.org/community/donations/others.php
+  keywords:
+  - bitpay
+  - bip70
 - name: LibreOffice
   url: https://www.libreoffice.org/
   img: libreoffice.png
@@ -102,6 +110,8 @@ websites:
   keywords:
   - bitpay
   - bip70
+  exceptions:
+    text: "BitPay limits the size of transactions we can accept to $10000 per day. Larger BitCoin donations may need to be split up and donated over multiple days."
 - name: Pi-hole
   url: https://pi-hole.net
   img: pihole.png
@@ -117,13 +127,13 @@ websites:
   twitter: pypi
   doc: https://www.python.org/psf/donations/
 - name: Riseup Mail
-  url: https://riseup.net
+  url: https://riseup.net/
   img: riseup.png
   twitter: riseupnet
   bch: true
   btc: true
   othercrypto: true
-  doc: https://riseup.net/en/donate
+  doc: https://riseup.net/donate
   exceptions:
     text: This is a free service that accepts donations. They refer to Bitcoin Cash
       improperly as BCash. We hope they will realize the error of this misnaming but
@@ -143,7 +153,10 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-  doc: https://donate.torproject.org/pdr
+  doc: https://www.torproject.org/donate/donate-options.html
+  keywords:
+  - bitpay
+  - bip70
   exceptions:
     text: Due to the current state of the Bitcoin market, our payment processor, Bitpay,
       will not allow us to accept donations of less than 5 USD. However, we can also
@@ -157,6 +170,7 @@ websites:
   bch: Yes
   btc: Yes
   othercrypto: Yes
+  doc: https://www.tutanota.com/community#donate
 - name: VeraCrypt
   url: https://veracrypt.fr/
   img: veracrypt.png
@@ -166,6 +180,14 @@ websites:
   btc: true
   othercrypto: true
   doc: https://veracrypt.fr/en/Donation.html#BitcoinCash
+- name: voidtools
+  url: https://www.voidtools.com/
+  img: voidtools.png
+  email_address: david@voidtools.com
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.voidtools.com/donate/
 - name: Vue.js
   url: https://vuejs.org
   img: vue.png
