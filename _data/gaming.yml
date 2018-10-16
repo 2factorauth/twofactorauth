@@ -7,6 +7,12 @@ websites:
       software: Yes
       doc: https://support.ankama.com/hc/en-us/categories/200093427-DOFUS-Security
 
+    - name: Aternos
+      url: https://aternos.org/
+      img: aternos.png
+      tfa: Yes
+      software: Yes
+
     - name: Black Desert Online
       url: https://www.blackdesertonline.com/
       img: bdo.png
@@ -28,6 +34,8 @@ websites:
       sms: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+          text: "Software authentication requires the Blizzard Authenticator app."
       doc: https://us.battle.net/support/en/article/Blizzard-Authenticator
 
     - name: Curse
@@ -60,7 +68,7 @@ websites:
       sms: Yes
       software: Yes
       exceptions:
-          text: "2FA is only available on paid plans."
+          text: "2FA is only available on paid plans. Software authentication requires the Authy app."
       doc: https://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
 
     - name: Epic Games
@@ -68,7 +76,8 @@ websites:
       img: epicgames.png
       tfa: Yes
       email: Yes
-      doc: http://epicgames.desk.com/customer/en/portal/articles/2879127-what-is-two-factor-sign-in-and-how-do-i-opt-in-
+      software: Yes
+      doc: https://epicgames.helpshift.com/a/epic-accounts/?s=epic-accounts&f=what-is-two-factor-authentication-2fa-and-how-do-i-opt-in
 
     - name: EVE Online
       url: https://www.eveonline.com/
@@ -229,6 +238,13 @@ websites:
       software: Yes
       doc: https://support.runescape.com/hc/en-gb/articles/206811835-Setting-the-Authenticator-Mobile-Device
 
+    - name: Scryfall
+      url: https://www.scryfall.com/
+      img: scryfall.png
+      tfa: Yes
+      software: Yes
+      doc: https://scryfall.com/docs/privacy#scryfall-accounts
+
     - name: Square Enix
       url: https://na.square-enix.com/
       img: squarenix.png
@@ -284,7 +300,7 @@ websites:
       img: uplay.png
       tfa: Yes
       software: Yes
-      doc: http://forums.ubi.com/showthread.php/1463703-Secure-your-account-with-2-Step-Verification
+      doc: https://support.ubi.com/en-GB/Faqs/000025170/Secure-your-account-with-2-Step-Verification
 
     - name: Wargaming
       url: http://wargaming.net/
@@ -307,7 +323,7 @@ websites:
       sms: Yes
       email: Yes
       software: Yes
-      doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+      doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
 
     - name: YoYo Games
       url: https://www.yoyogames.com/

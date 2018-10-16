@@ -19,6 +19,14 @@ websites:
       tfa: No
       twitter: AliExpress_EN
 
+    - name: Allegro
+      url: https://allegro.pl
+      img: allegro.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://allegro.pl/pomoc/faq/dwustopniowe-logowanie-faq-oGgdkGDqXCq
+
     - name: Amazon
       url: https://www.amazon.com
       img: amazon.png
@@ -59,7 +67,7 @@ websites:
       tfa: No
       twitter: Bonobos
       facebook: bonobos
- 
+
     - name: Boxed
       url: https://www.boxed.com
       img: boxed.png
@@ -95,7 +103,7 @@ websites:
       facebook: Costco
 
     - name: Dell
-      url: http://www.dell.com
+      url: https://www.dell.com
       img: dell.png
       tfa: No
       twitter: DellCares
@@ -105,6 +113,13 @@ websites:
       img: dwi.png
       tfa: No
       facebook: DWIAUS
+
+    - name: Digitec
+      url: https://www.digitec.ch
+      img: digitec.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.digitec.ch/en/page/new-two-factor-authentication-for-your-user-account-6589
 
     - name: EB Games Australia
       url: https://ebgames.com.au/
@@ -129,8 +144,10 @@ websites:
     - name: Etsy
       url: https://www.etsy.com/
       img: etsy.png
-      sms: Yes
       tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
       doc: https://www.etsy.com/help/article/3335
 
     - name: Everlane
@@ -312,12 +329,28 @@ websites:
       sms: Yes
       doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
 
+    - name: Shopify
+      url: https://shopify.com/
+      img: shopify.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.shopify.com/manual/your-account/account-security/two-step-authentication
+
     - name: Sierra Trading Post
       url: https://www.sierratradingpost.com
       img: sierratradingpost.png
       tfa: No
       twitter: Sierratp
       facebook: sierratradingpost
+
+    - name: Snapdeal
+      url: https://www.snapdeal.com/
+      img: snapdeal.png
+      tfa: No
+      twitter: SnapdealTech
+      facebook: Snapdeal
+      email_address: help@snapdeal.com
 
     - name: Stack Social
       url: https://stacksocial.com
@@ -329,6 +362,13 @@ websites:
       url: https://www.target.com/
       twitter: target
       img: target.png
+      tfa: No
+
+    - name: Trade Me
+      url: https://www.trademe.co.nz
+      twitter: trademe
+      facebook: TradeMe
+      img: trademe.png
       tfa: No
 
     - name: Walgreens
@@ -383,3 +423,4 @@ websites:
       tfa: No
       twitter: zooplusDE
       facebook: zooplusde
+

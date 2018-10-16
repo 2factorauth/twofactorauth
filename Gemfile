@@ -6,6 +6,7 @@ gem 'github-pages', group: :jekyll_plugins
 group :test do
   gem 'fastimage'
   gem 'html-proofer'
+  gem 'jsonlint'
   gem 'kwalify'
   gem 'rake'
   gem 'rubocop'
