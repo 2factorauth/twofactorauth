@@ -149,6 +149,18 @@ websites:
       hardware: Yes
       doc: https://saaspass.com/faq/
 
+    - name: SailPoint
+      url: https://www.sailpoint.com/
+      img: sailpoint.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+          text: "Applies to IdentityIQ and IdentityNow."
+
     - name: SecureSafe
       url: https://www.securesafe.com
       img: securesafe.png
