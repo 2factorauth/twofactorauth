@@ -5,8 +5,8 @@ $(document).ready(function () {
     openCategory(window.location.hash.substring(1));
   }
 
-  // Unveil images 50px before they appear
-  $('img').unveil(50);
+  // Unveil images when visible in jquery
+  $(function() { $('img').Lazy({visibleOnly: true}); });
 
   // Show exception warnings upon hover
   $('span.popup.exception').popup({
@@ -56,13 +56,14 @@ var jets = new Jets({
       $('.category').hide();
       table.css('display', 'block');
       content.parent().show();
-      content.each(function () {
+      for(var i = 0; i < content.length; i++) {
+			  var section = $(content[i]);
         // Hide table when all rows within are hidden by Jets
-        if ($(this).children(':hidden').length === $(this).children().length) {
-          if (platform == 'mobile') $(this).parent().hide();
-          else $(this).parent().parent().hide();
+        if (section.children(':hidden').length === section.children().length) {
+          if (platform == 'mobile') section.parent().hide();
+          else section.parent().parent().hide();
         }
-      });
+      }
 
       if (table.children().length == table.children(':hidden').length) {
           $('#no-results').css('display', 'block');
@@ -73,7 +74,7 @@ var jets = new Jets({
   },
   // Process searchable elements manually
   manualContentHandling: function(tag) {
-    return $(tag).find('.title > a.name').text();
+    return $(tag).find('.keywords').text();
   }
 });
 

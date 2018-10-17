@@ -13,6 +13,14 @@ websites:
       tfa: No
       twitter: canrevagency
 
+    - name: Datové schránky
+      url: https://www.mojedatovaschranka.cz
+      img: cz_datovky.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.mojedatovaschranka.cz/static/ISDS/help/page10.html#10_5_2
+
     - name: DigiD
       url: https://www.digid.nl/
       img: digid.png
@@ -44,6 +52,23 @@ websites:
       sms: Yes
       software: Yes
       doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-text-messages
+
+    - name: impots.gouv.fr
+      url: https://www.impots.gouv.fr
+      img: impotsgouvfr.png
+      tfa: No
+      twitter: dgfip_officiel
+      facebook: Direction-générale-des-Finances-publiques-250996308359760
+      lang: fr
+
+    - name: login.gov
+      url: https://login.gov/
+      img: login-gov.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://login.gov/help/privacy-and-security/how-does-logingov-protect-my-data/
 
     - name: myGov
       url: https://my.gov.au
@@ -77,10 +102,14 @@ websites:
       facebook: CompaniesHouse
 
     - name: US Internal Revenue Service
-      url: http://www.irs.gov/Individuals/Get-Transcript
-      twitter: IRSnews
+      url: https://www.irs.gov/Individuals/Get-Transcript
       img: usirs.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      exceptions:
+          text: "IRS2Go app required for software 2FA."
+      doc: https://www.irs.gov/individuals/secure-access-how-to-register-for-certain-online-self-help-tools
 
     - name: US Social Security Administration
       url: https://www.ssa.gov

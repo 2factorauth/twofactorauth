@@ -16,8 +16,8 @@ websites:
       url: https://www.betterment.com/
       img: betterment.png
       tfa: Yes
-      software: Yes
       sms: Yes
+      software: Yes
       doc: https://support.betterment.com/customer/en/portal/topics/1026376-two-factor-authentication-2fa-?b_id=9042
 
     - name: Charles Schwab
@@ -40,7 +40,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://us.etrade.com/e/t/jumppage/viewjumppage?PageName=secureid_enter#
+      doc: https://us.etrade.com/landing/secureid_enter
 
     - name: Fidelity Investments
       url: https://www.fidelity.com
@@ -62,7 +62,7 @@ websites:
       lang: de
 
     - name: HealthEquity
-      url: http://www.healthequity.com/
+      url: https://www.healthequity.com/
       twitter: healthequity
       img: healthequity.png
       tfa: No
@@ -84,7 +84,7 @@ websites:
       tfa: No
 
     - name: Manulife
-      url: http://www.manulife.ca
+      url: https://www.manulife.ca
       twitter: Manulife
       img: manulife.png
       tfa: No
@@ -118,7 +118,7 @@ websites:
       twitter: OptionsHouse
 
     - name: OptionsXpress
-      url: http://www.optionsxpress.com/
+      url: https://www.optionsxpress.com/
       twitter: optionsXpress
       img: optionsxpress.png
       tfa: No
@@ -145,7 +145,7 @@ websites:
       twitter: Raizers
 
     - name: RBC Direct Investing
-      url: http://www.rbcdirectinvesting.com
+      url: https://www.rbcdirectinvesting.com
       twitter: RBC
       img: rbc.png
       tfa: No
@@ -155,18 +155,13 @@ websites:
       img: robinhood.png
       tfa: Yes
       sms: Yes
-      doc: https://support.robinhood.com/hc/en-us/articles/211546986-Two-Factor-Authentication
+      software: Yes
+      doc: https://support.robinhood.com/hc/en-us/articles/360001213783
 
     - name: Scottrade
       url: https://www.scottrade.com/
       twitter: scottrade
       img: scottrade.png
-      tfa: No
-
-    - name: Sharebuilder
-      url: https://www.sharebuilder.com/
-      twitter: sharebuilder
-      img: sharebuilder.png
       tfa: No
 
     - name: SigFig
@@ -207,7 +202,7 @@ websites:
       sms: Yes
       phone: Yes
       hardware: Yes
-      doc: https://personal.vanguard.com/us/insights/article/security-codes-112015
+      doc: https://investornews.vanguard/sign-up-for-these-3-security-features/
 
     - name: Wealthfront
       url: https://www.wealthfront.com/
@@ -223,7 +218,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://www.wealthsimple.com/magazine/2-step-verification
+      doc: https://help.wealthsimple.com/hc/en-ca/articles/360005175373-Does-Wealthsimple-offer-Two-Step-Verification-
 
     - name: WiseBanyan
       url: https://www.wisebanyan.com/

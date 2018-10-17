@@ -6,6 +6,13 @@ websites:
       software: yes
       doc: https://www.34sp.com/kb/142/how-to-enable-two-factor-authentication-on-your-account
 
+    - name: A2 Hosting
+      url: https://www.a2hosting.com
+      img: a2hosting.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.a2hosting.com/kb/a2-hosting-customer-portal/account-management/enabling-two-factor-authentication-for-your-a2-hosting-account
+
     - name: ARP Networks
       url: https://arpnetworks.com/
       img: arpnetworks.png
@@ -114,7 +121,7 @@ websites:
       lang: sv
 
     - name: Glesys
-      url: http://glesys.com/
+      url: https://glesys.com/
       img: glesys.png
       tfa: Yes
       software: Yes
@@ -125,6 +132,13 @@ websites:
       img: globat.png
       tfa: No
       twitter: globat
+
+    - name: Greenhost
+      url: https://greenhost.net
+      img: greenhost.png
+      tfa: Yes
+      software: Yes
+      doc: https://greenhost.net/2016/03/01/spring-news/
 
     - name: Hetzner Online
       url: https://www.hetzner.de/
@@ -138,13 +152,21 @@ websites:
       img: hostens.png
       tfa: Yes
       software: Yes
-      doc: https://billing.hostens.com/knowledgebase/article/29/how-to-enhance-account-security-/
+      doc: https://www.hostens.com/knowledgebase/how-to-enhance-account-security/
 
     - name: HostHatch
       url: https://hosthatch.com/
       img: hosthatch.png
       tfa: Yes
       software: Yes
+
+    - name: Hostpoint
+      url: https://www.hostpoint.ch/
+      img: hostpoint.png
+      tfa: No
+      twitter: hostpoint
+      facebook: hostpointch
+      lang: de
 
     - name: ICUK
       url: https://www.icuk.net
@@ -201,6 +223,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://kinsta.com/blog/wordpress-two-factor-authentication/
+
+    - name: KnownHost
+      url: https://www.knownhost.com
+      img: knownhost.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.knownhost.com/wiki/my-knownhost/two-factor
 
     - name: LCN.com
       url: https://www.lcn.com
@@ -313,21 +342,21 @@ websites:
       hardware: Yes
 
     - name: PlanetHoster
-      url: https://planethoster.net
+      url: https://www.planethoster.com/
       img: PlanetHoster.png
       tfa: Yes
       software: Yes
-      doc: http://blog.planethoster.net/securite-espace-client-planethoster/
+      doc: https://blog.planethoster.com/securite-espace-client-planethoster/
 
     - name: Rackspace
       url: https://www.rackspace.com/
       img: rackspace.png
       tfa: Yes
       sms: Yes
-      doc: http://www.rackspace.com/knowledge_center/article/myrackspace-two-factor-authentication
+      doc: https://support.rackspace.com/how-to/myrackspace-multi-factor-authentication/
 
     - name: RamNode
-      url: http://www.ramnode.com
+      url: https://www.ramnode.com
       img: ramnode.png
       tfa: Yes
       software: Yes
@@ -347,12 +376,19 @@ websites:
       img: site5.png
       tfa: No
 
+    - name: SiteGround
+      url: https://www.siteground.com
+      img: siteground.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.siteground.com/tutorials/two-factor-authentication/
+
     - name: Softlayer
       url: https://www.softlayer.com
       img: softlayer.png
       tfa: Yes
       software: Yes
-      doc: https://knowledgelayer.softlayer.com/procedure/configure-portal-account-one-time-password-access-manage
+      doc: https://knowledgelayer.softlayer.com/node/6443
 
     - name: SpeedIT Solutions
       url: https://www.speedit.org/
@@ -362,9 +398,10 @@ websites:
 
     - name: Squarespace
       url: https://squarespace.com/
-      twitter: squarespace
       img: squarespace.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://support.squarespace.com/hc/en-us/articles/360000044827
 
     - name: Time4VPS
       url: https://www.time4vps.eu/
@@ -415,7 +452,8 @@ websites:
       tfa: Yes
       sms: Yes
       email: Yes
-      doc: https://ventraip.com.au/blog/products-and-services/vipcontrol-2-1/
+      software: Yes
+      doc: https://ventraip.com.au/faq/article/two-factor-authentication-faq-vipcontrol/
 
     - name: Versio
       url: https://www.versio.nl
@@ -430,14 +468,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://github.com/2factorauth/twofactorauth/pull/2311#issuecomment-273424695
-
-    - name: Vultr
-      url: https://www.vultr.com/
-      img: vultr.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.vultr.com/faq/#authy
 
     - name: WebFaction
       url: https://www.webfaction.com

@@ -2,18 +2,16 @@ websites:
     - name: 1Password
       url: https://1password.com/
       img: 1password.png
-      tfa: No
-      email_address: support@1password.com
-      facebook: 1Password
-      twitter: 1Password
-      status: https://twitter.com/1Password/status/809091553381777409
+      tfa: Yes
+      software: Yes
+      doc: https://support.1password.com/two-factor-authentication/
 
     - name: Bitium
       url: https://www.bitium.com
       img: bitium.png
       tfa: Yes
-      hardware: Yes
       software: Yes
+      hardware: Yes
       doc: https://support.bitium.com/customer/portal/articles/1417358-enabling-two-factor-authentication-2fa-
 
     - name: bitwarden
@@ -45,7 +43,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://support.dashlane.com/hc/en-us/articles/202625042-Protect-your-account-using-Two-Factor-Authentication#title3
+      doc: https://support.dashlane.com/hc/en-us/articles/202625042-Protect-your-account-using-Two-Factor-Authentication
 
     - name: ID.me
       url: https://www.id.me/
@@ -55,13 +53,21 @@ websites:
       facebook: IDmeInc
       email_address: help@id.me
 
+    - name: IDentité Numérique (IDN)
+      url: https://www.idn.laposte.fr
+      twitter: lisalaposte
+      facebook: laposte
+      img: identitenumerique.png
+      tfa: No
+      lang: fr
+
     - name: Keeper
       url: https://keepersecurity.com/
       img: keeper.png
       tfa: Yes
-      software: Yes
       phone: Yes
       sms: Yes
+      software: Yes
       doc: https://www.keepersecurity.com/security#twoFactor
 
     - name: Keybase
@@ -76,7 +82,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://helpdesk.lastpass.com/security-options/multifactor-authentication-options/
+      doc: https://helpdesk.lastpass.com/multifactor-authentication-options/
 
     - name: MyDigipass.com
       url: https://mydigipass.com/
@@ -107,6 +113,16 @@ websites:
       software: Yes
       doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
 
+    - name: PassHub
+      url: https://passhub.net/
+      img: passhub.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+          text: "Hardware tokens only work on desktop."
+      doc: https://passhub.net/security.php
+
     - name: Passpack
       url: https://www.passpack.com/
       img: passpack.png
@@ -125,20 +141,34 @@ websites:
       doc: https://help.roboform.com/hc/en-us/articles/115002729512-Setting-up-Google-Authenticator-for-your-account
 
     - name: SAASPASS
-      url: https://www.saaspass.com
+      url: https://saaspass.com
       img: saaspass.png
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
+      doc: https://saaspass.com/faq/
+
+    - name: SailPoint
+      url: https://www.sailpoint.com/
+      img: sailpoint.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+          text: "Applies to IdentityIQ and IdentityNow."
 
     - name: SecureSafe
-      url: http://www.securesafe.com
+      url: https://www.securesafe.com
       img: securesafe.png
       tfa: Yes
       sms: Yes
       exceptions:
           text: "2FA is only available on paid plans."
-      doc: http://www.securesafe.com/en/faq/security.html
+      doc: https://www.securesafe.com/en/faq/general-questions/how-can-i-activate-2-factor-authentication/
 
     - name: True Key
       url: https://www.truekey.com

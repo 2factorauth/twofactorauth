@@ -18,21 +18,21 @@ websites:
       doc: https://articles.braintreepayments.com/reference/security/two-factor-authentication
 
     - name: Buycraft
-      url: http://buycraft.net
+      url: https://buycraft.net
       img: buycraft.png
       tfa: Yes
       software: Yes
       sms: Yes
       exceptions:
           text: "SMS-capable phone required."
-      doc: http://help.buycraft.net/article/83-two-factor-authentication
+      doc: https://help.buycraft.net/article/83-two-factor-authentication
 
     - name: Dwolla
       url: https://www.dwolla.com
       img: dwolla.png
       tfa: Yes
       software: Yes
-      doc: http://help.dwolla.com/customer/portal/articles/2068158-two-factor-authentication-faq?b_id=5438
+      doc: https://support.dwolla.com/customer/portal/articles/2079147
 
     - name: Flattr
       img: flattr.png
@@ -47,7 +47,7 @@ websites:
       tfa: No
 
     - name: Google Wallet
-      url: http://www.google.se/wallet/
+      url: https://www.google.se/wallet/
       img: googlewallet.png
       tfa: Yes
       sms: Yes
@@ -55,6 +55,12 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
+
+    - name: HYPE
+      url: https://www.hype.it
+      img: hype.png
+      tfa: Yes
+      sms: Yes
 
     - name: Klarna
       url: https://www.klarna.com
@@ -84,7 +90,7 @@ websites:
       doc: https://payeer.com/en/faq/
 
     - name: Payoneer
-      url: http://www.payoneer.com/
+      url: https://www.payoneer.com/
       twitter: Payoneer
       img: payoneer.png
       tfa: No
@@ -115,11 +121,18 @@ websites:
       doc: https://blog.paytm.com/secure-2-step-authentication-login-on-paytms-website-6dd5a20ae1b2
 
     - name: Payza
-      url: https://www.payza.com/
+      url: https://www.payza.eu/
       img: payza.png
       tfa: Yes
       software: Yes
-      doc: https://docs.payza.com/docs/personal-manual-advanced-security#section-how-do-i-set-up-2-factor-authentication
+      doc: https://docs.payza.eu/docs/personal-manual-advanced-security#section-how-do-i-set-up-2-factor-authentication
+
+    - name: Plastiq
+      url: https://www.plastiq.com/
+      img: plastiq.png
+      tfa: Yes
+      sms: Yes
+      doc: https://help.plastiq.com/hc/en-us/articles/360006794893
 
     - name: Privacy
       url: https://privacy.com/
@@ -134,6 +147,21 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://ravelin.zendesk.com/hc/en-us/articles/115001071665-Two-Factor-Authentication
+
+    - name: Recurly
+      url: https://www.recurly.com/
+      img: recurly.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://docs.recurly.com/docs/two-factor-authentication
+
+    - name: SixthContinent
+      url: https://sixthcontinent.com/
+      img: sixthcontinent.png
+      tfa: No
+      twitter: sxc_italia
+      facebook: sixthcontinent.it
 
     - name: Skrill
       url: https://skrill.com/
