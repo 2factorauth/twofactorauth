@@ -189,7 +189,7 @@ namespace :add do
     end
 
     if request['img'].nil?
-      request['img'] = value_prompt('image name')
+      request['img'] = value_prompt("image name for #{request['name']}")
     elsif request['img'].include? 'http'
       puts "Download the image from #{request['img']}"
       request['img'] = value_prompt('image name')
