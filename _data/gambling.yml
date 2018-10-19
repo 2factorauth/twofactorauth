@@ -19,9 +19,9 @@ websites:
   doc: https://www.americascardroom.eu/bitcoin-cash-cryptocurrency/
 - name: BCH Dice (Telegram Bot)
   url: https://t.me/BCH_Dice_Bot
-  bch: Yes
-  btc: No
-  othercrypto: No
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Betchain
   url: https://www.betchain.com/
   img: betchain.png
@@ -38,6 +38,14 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Betcoin.Cash
+  url: https://www.betcoin.cash/
+  img: betcoincash.png
+  twitter: BetcoinCash
+  email_address: betcoin.cash@betcoin.cash
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Betonline
   url: https://www.betonline.ag/
   img: betonline.png
@@ -66,9 +74,9 @@ websites:
   img: bitzillions.png
   twitter: SatoshiBones
   email_address: contact@bitzillions.com
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   doc: https://medium.com/@bitzillions/bitcoin-cash-lessons-from-a-block-size-canary-db4a7f020d7
 - name: Blockchain Poker
   url: https://blockchain.poker/#/cash
@@ -111,7 +119,7 @@ websites:
   othercrypto: true
   doc: https://casinoextreme.eu/banking
   exceptions:
-    text: "Deposits only. Withdrawals must be in other coins."
+    text: Deposits only. Withdrawals must be in other coins.
 - name: Cherry Jackpot
   url: https://cherryjackpot.com
   img: cherryjackpot.png
@@ -256,7 +264,7 @@ websites:
   othercrypto: true
   doc: https://www.redstagcasino.eu/banking
   exceptions:
-    text: "Deposits only. Withdrawals must be in other coins."
+    text: Deposits only. Withdrawals must be in other coins.
 - name: SafeDice
   url: https://safedice.com/
   img: safedice.png
@@ -281,9 +289,9 @@ websites:
   url: https://www.satoshing.com
   twitter: satoshingcom
   email_address: info@satoshing.com
-  bch: Yes
-  btc: No
-  othercrypto: No
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Slotland
   url: https://www.slotland.eu/
   img: slotland.png
@@ -295,7 +303,7 @@ websites:
   othercrypto: true
   doc: https://www.slotland.eu/en/banking
   exceptions:
-    text: "Withdrawals are only done on Tuesdays."
+    text: Withdrawals are only done on Tuesdays.
 - name: Sloto'Cash
   url: https://www.slotocash.im/
   img: slotocash.png
@@ -306,7 +314,7 @@ websites:
   othercrypto: true
   doc: https://www.slotocash.im/en/banking/deposit-methods
   exceptions:
-    text: "Deposits only. Withdrawals must be in other coins."
+    text: Deposits only. Withdrawals must be in other coins.
 - name: SpinBCH.com
   url: https://spinbch.com/
   img: spinbch.png
@@ -331,9 +339,9 @@ websites:
   img: stake.png
   twitter: stake
   facebook: StakeCasino
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   doc: https://twitter.com/Stake/status/1044934831870812161
 - name: SwCPoker
   url: https://swcpoker.eu/
@@ -364,4 +372,4 @@ websites:
   othercrypto: true
   doc: https://www.winadaycasino.eu/en/bitcoin-cash
   exceptions:
-    text: "Withdrawals are only done on Wednesdays."
+    text: Withdrawals are only done on Wednesdays.
