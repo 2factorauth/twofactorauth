@@ -1,19 +1,19 @@
+---
 websites:
-    - name: Erowid
-      url: https://www.erowid.org/
-      img: erowid.png
-      twitter: erowid
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://www.erowid.org/donations/donations_cryptocurrency.php
-
-    - name: Internet Archive
-      url: https://archive.org/
-      img: internetarchive.png
-      twitter: internetarchive
-      facebook: internetnetarchive
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://archive.org/donate/bitcoin.php
+- name: Erowid
+  url: https://www.erowid.org/
+  img: erowid.png
+  twitter: erowid
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.erowid.org/donations/donations_cryptocurrency.php
+- name: Internet Archive
+  url: https://archive.org/
+  img: internetarchive.png
+  twitter: internetarchive
+  facebook: internetnetarchive
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://archive.org/donate/bitcoin.php

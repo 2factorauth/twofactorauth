@@ -232,11 +232,11 @@ websites:
   twitter: johnpitchers
   facebook: Joomstore
   email_address: john@joomstore.com.au
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   exceptions:
-    text: "Payment instructions provided on invoice."
+    text: Payment instructions provided on invoice.
 - name: Koding
   url: https://koding.com
   img: koding.png
@@ -443,12 +443,12 @@ websites:
   twitter: underlabs
   email_address: hello@underlabs.ca
   region: na
-  bch: Yes
-  btc: Yes
-  othercrypto: No
+  bch: true
+  btc: true
+  othercrypto: false
   doc: https://underlabs.ca/smart-contracts.html
-  exceptions: 
-   text: "Should to get in touch with them on the terms."
+  exceptions:
+    text: Should to get in touch with them on the terms.
 - name: Unfuddle
   url: https://unfuddle.com/
   img: unfuddle.png

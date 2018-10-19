@@ -57,9 +57,9 @@ websites:
   twitter: aulerion
   facebook: aulerion
   email_address: support@aulerion.com
-  bch: Yes
-  btc: No
-  othercrypto: Yes
+  bch: true
+  btc: false
+  othercrypto: true
 - name: BaCloud
   url: https://www.bacloud.com
   twitter: bacloud
@@ -421,9 +421,9 @@ websites:
   twitter: it_itch
 - name: JustColo
   url: https://justcolo.com.au/
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Kinsta
   url: https://kinsta.com
   img: kinsta.png
@@ -691,7 +691,7 @@ websites:
   othercrypto: true
   doc: https://web.senang.online/support
   exceptions:
-    text: "Link to complete payment at Support page"
+    text: Link to complete payment at Support page
   keywords:
   - coinpayments.net
 - name: Servercow

@@ -1,279 +1,249 @@
+---
 websites:
-    - name: AeroFS
-      url: https://www.aerofs.com/
-      bch: No
-      btc: No
-      facebook: AeroFS
-      twitter: aerofs
-      othercrypto: No
-      img: aerofs.png
-
-    - name: Apple iCloud
-      url: https://www.icloud.com
-      img: icloud.png
-      twitter: applesupport
-      facebook: apple
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Backblaze
-      url: https://www.backblaze.com
-      img: backblaze.png
-      facebook: backblaze
-      twitter: backblaze
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: BackupBox
-      url: https://www.backupbox.com
-      img: backupbox.png
-      facebook: BackupBox-129373244263945
-      twitter: BackupBox_app
-      bch: no
-      btc: yes
-      othercrypto: no
-
-    - name: blaucloud
-      url: https://www.blaucloud.de/
-      img: blaucloud.png
-      facebook: blaucloud.de
-      twitter: blaucloud_de
-      email_address: support@blaucloud.de
-      bch: yes
-      btc: yes
-      othercrypto: no
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: Box
-      url: https://www.box.com/
-      img: box.png
-      facebook: box
-      twitter: BoxHQ
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Boxcryptor
-      url: https://www.boxcryptor.com
-      img: boxcryptor.png
-      bch: No
-      twitter: boxcryptor
-      facebook: boxcryptor
-      email_address: info@boxcryptor.com
-
-    - name: CloudApp
-      url: https://www.getcloudapp.com/
-      twitter: cloudapp
-      img: cloudapp.png
-      bch: No
-      btc: No
-      othercrypto: No
-      facebook: getcloudapp
-
-    - name: CrashPlan
-      url: https://www.crashplan.com
-      twitter: crashplan
-      img: crashplan.png
-      facebook: CrashPlan
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Dropbox
-      url: https://www.dropbox.com
-      img: dropbox.png
-      twitter: Dropbox
-      facebook: Dropbox
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Evernote
-      url: https://evernote.com
-      img: evernote.png
-      facebook: evernote
-      twitter: evernote
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: FileThis
-      url: https://filethis.com
-      twitter: FileThisCompany
-      img: filethis.png
-      facebook: FileThis
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Google Drive
-      url: https://drive.google.com
-      twitter: googledrive
-      img: drive.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: hubiC
-      url: https://hubic.com/
-      twitter: hubic
-      img: hubic.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: IDrive
-      url: https://www.idrive.com
-      twitter: IDriveBackup
-      facebook: IDriveBackup
-      img: idrive.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Jottacloud
-      url: https://www.jottacloud.com
-      twitter: jottacloud
-      email_address: support@jottacloud.com
-      facebook: Jottacloud
-      img: jotta.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: JustCloud
-      url: https://www.justcloud.com
-      twitter: justcloudcom
-      img: justcloud.png
-      facebook: JustCloudStorage
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Koofr
-      url: https://koofr.eu
-      img: koofr.png
-      twitter: koofrnet
-      facebook: koofr
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Mega
-      url: https://mega.nz
-      twitter: MEGAprivacy
-      img: mega.png
-      bch: No
-      btc: Yes
-      othercrypto: No
-
-    - name: Nimbox
-      url: https://www.nimbox.co.uk/
-      img: nimbox.png
-      twitter: nimbox
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: OneDrive
-      url: https://onedrive.live.com
-      img: onedrive.png
-      twitter: onedrive
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Pogoplug
-      url: https://pogoplug.com/
-      twitter: pogoplug
-      img: pogoplug.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: QNAP
-      url: https://www.qnap.com
-      img: qnap.png
-      twitter: qnap_nas
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: SmartBox
-      url: https://www.panterranetworks.com/products/smartbox.php
-      twitter: panterranetwork
-      img: smartbox.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: SpiderOak
-      url: https://spideroak.com
-      twitter: spideroak
-      img: spideroak.png
-      facebook: SpiderOak
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: SugarSync
-      twitter: SugarSync
-      url: https://www.sugarsync.com/
-      img: sugarsync.png
-      facebook: SugarSync
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Sync
-      url: https://www.sync.com
-      img: sync.png
-      twitter: sync
-      facebook: syncus
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Synology
-      url: https://www.synology.com/
-      twitter: synology
-      img: synology.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: ThisData
-      url: https://thisdata.com
-      img: thisdata.png
-      twitter: thisdatahq
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Tresorit
-      url: https://tresorit.com/
-      twitter: tresorit
-      img: tresorit.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Yandex.Disk
-      url: https://disk.yandex.com
-      img: yandexdisk.png
-      twitter: yandexdisk
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Zetta.net
-      url: https://www.zetta.net/
-      img: zetta.png
-      twitter: zetta_corp
-      bch: No
-      btc: No
-      othercrypto: No
+- name: AeroFS
+  url: https://www.aerofs.com/
+  bch: false
+  btc: false
+  facebook: AeroFS
+  twitter: aerofs
+  othercrypto: false
+  img: aerofs.png
+- name: Apple iCloud
+  url: https://www.icloud.com
+  img: icloud.png
+  twitter: applesupport
+  facebook: apple
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Backblaze
+  url: https://www.backblaze.com
+  img: backblaze.png
+  facebook: backblaze
+  twitter: backblaze
+  bch: false
+  btc: false
+  othercrypto: false
+- name: BackupBox
+  url: https://www.backupbox.com
+  img: backupbox.png
+  facebook: BackupBox-129373244263945
+  twitter: BackupBox_app
+  bch: false
+  btc: true
+  othercrypto: false
+- name: blaucloud
+  url: https://www.blaucloud.de/
+  img: blaucloud.png
+  facebook: blaucloud.de
+  twitter: blaucloud_de
+  email_address: support@blaucloud.de
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: Box
+  url: https://www.box.com/
+  img: box.png
+  facebook: box
+  twitter: BoxHQ
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Boxcryptor
+  url: https://www.boxcryptor.com
+  img: boxcryptor.png
+  bch: false
+  twitter: boxcryptor
+  facebook: boxcryptor
+  email_address: info@boxcryptor.com
+- name: CloudApp
+  url: https://www.getcloudapp.com/
+  twitter: cloudapp
+  img: cloudapp.png
+  bch: false
+  btc: false
+  othercrypto: false
+  facebook: getcloudapp
+- name: CrashPlan
+  url: https://www.crashplan.com
+  twitter: crashplan
+  img: crashplan.png
+  facebook: CrashPlan
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Dropbox
+  url: https://www.dropbox.com
+  img: dropbox.png
+  twitter: Dropbox
+  facebook: Dropbox
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Evernote
+  url: https://evernote.com
+  img: evernote.png
+  facebook: evernote
+  twitter: evernote
+  bch: false
+  btc: false
+  othercrypto: false
+- name: FileThis
+  url: https://filethis.com
+  twitter: FileThisCompany
+  img: filethis.png
+  facebook: FileThis
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Google Drive
+  url: https://drive.google.com
+  twitter: googledrive
+  img: drive.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: hubiC
+  url: https://hubic.com/
+  twitter: hubic
+  img: hubic.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: IDrive
+  url: https://www.idrive.com
+  twitter: IDriveBackup
+  facebook: IDriveBackup
+  img: idrive.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Jottacloud
+  url: https://www.jottacloud.com
+  twitter: jottacloud
+  email_address: support@jottacloud.com
+  facebook: Jottacloud
+  img: jotta.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: JustCloud
+  url: https://www.justcloud.com
+  twitter: justcloudcom
+  img: justcloud.png
+  facebook: JustCloudStorage
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Koofr
+  url: https://koofr.eu
+  img: koofr.png
+  twitter: koofrnet
+  facebook: koofr
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Mega
+  url: https://mega.nz
+  twitter: MEGAprivacy
+  img: mega.png
+  bch: false
+  btc: true
+  othercrypto: false
+- name: Nimbox
+  url: https://www.nimbox.co.uk/
+  img: nimbox.png
+  twitter: nimbox
+  bch: false
+  btc: false
+  othercrypto: false
+- name: OneDrive
+  url: https://onedrive.live.com
+  img: onedrive.png
+  twitter: onedrive
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Pogoplug
+  url: https://pogoplug.com/
+  twitter: pogoplug
+  img: pogoplug.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: QNAP
+  url: https://www.qnap.com
+  img: qnap.png
+  twitter: qnap_nas
+  bch: false
+  btc: false
+  othercrypto: false
+- name: SmartBox
+  url: https://www.panterranetworks.com/products/smartbox.php
+  twitter: panterranetwork
+  img: smartbox.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: SpiderOak
+  url: https://spideroak.com
+  twitter: spideroak
+  img: spideroak.png
+  facebook: SpiderOak
+  bch: false
+  btc: false
+  othercrypto: false
+- name: SugarSync
+  twitter: SugarSync
+  url: https://www.sugarsync.com/
+  img: sugarsync.png
+  facebook: SugarSync
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Sync
+  url: https://www.sync.com
+  img: sync.png
+  twitter: sync
+  facebook: syncus
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Synology
+  url: https://www.synology.com/
+  twitter: synology
+  img: synology.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: ThisData
+  url: https://thisdata.com
+  img: thisdata.png
+  twitter: thisdatahq
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Tresorit
+  url: https://tresorit.com/
+  twitter: tresorit
+  img: tresorit.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Yandex.Disk
+  url: https://disk.yandex.com
+  img: yandexdisk.png
+  twitter: yandexdisk
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Zetta.net
+  url: https://www.zetta.net/
+  img: zetta.png
+  twitter: zetta_corp
+  bch: false
+  btc: false
+  othercrypto: false

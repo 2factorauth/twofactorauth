@@ -1,423 +1,375 @@
+---
 websites:
-    - name: Air Canada
-      url: https://www.aircanada.com/ca/en/aco/home.html
-      twitter: AirCanada
-      facebook: aircanada
-      img: aircanada.png
-      bch: No
-      btc: No
-
-    - name: Air France
-      url: https://www.airfrance.com
-      twitter: airfrance
-      facebook: airfrance
-      img: airfrance.png
-      bch: No
-      btc: No
-
-    - name: Air New Zealand
-      url: https://www.airnewzealand.co.nz
-      twitter: FlyAirNZ
-      facebook: AirNewZealand
-      img: airnz.png
-      bch: No
-      btc: No
-
-    - name: Alaska Airlines
-      url: https://www.alaskaair.com
-      twitter: AlaskaAir
-      facebook: alaskaairlines
-      img: alaska.png
-      bch: No
-      btc: No
-
-    - name: American Airlines
-      url: https://www.aa.com/
-      twitter: AmericanAir
-      facebook: AmericanAirlines
-      img: aa.png
-      bch: No
-      btc: No
-
-    - name: Amtrak
-      url: https://www.amtrak.com/
-      twitter: Amtrak
-      facebook: Amtrak
-      img: amtrak.png
-      bch: No
-      btc: No
-
-    - name: British Airways
-      url: https://www.britishairways.com/
-      twitter: British_Airways
-      facebook: britishairways
-      img: ba.png
-      bch: No
-      btc: No
-
-    - name: BTCTrip
-      url: https://btctrip.com/
-      img: btctrip.png
-      twitter: btctrip
-      email_address: contact@btctrip.com
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - bitpay
-      - gocoin
-
-    - name: Captain Train
-      url: https://www.captaintrain.com
-      twitter: captaintrain
-      img: captain_train.png
-      bch: No
-      btc: No
-
-    - name: CheapAir
-      url: https://www.cheapair.com/
-      twitter: cheapair
-      facebook: cheapair
-      img: cheapair.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Clipper
-      url: https://www.clippercard.com
-      twitter: BayAreaClipper
-      facebook: BayAreaClipper
-      img: clipper.png
-      bch: No
-      btc: No
-
-    - name: Delta
-      url: https://www.delta.com/
-      twitter: Delta
-      facebook: delta
-      img: delta.png
-      bch: No
-      btc: No
-      
-    - name: Destinia
-      url: https://destinia.com/
-      img: destinia.png
-      twitter: Destinia
-      facebook: Destinia.com
-      email_address: admincont@destinia.com
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://twitter.com/Destinia/status/972053118555967488
-
-    - name: Deutsche Bahn (DB)
-      url: https://www.bahn.com
-      twitter: DB_Bahn
-      facebook: DBPersonenverkehr
-      img: db.png
-      bch: No
-      btc: No
-
-    - name: easyJet
-      url: https://www.easyjet.com/en/
-      twitter: easyJet
-      facebook: easyJet
-      img: easyjet.png
-      bch: No
-      btc: No
-      
-    - name: European Class Limousine
-      url: http://euclasslimo.com/
-      img: euclasslimo.png
-      twitter: euclasslimo
-      facebook: euclasslimo
-      region: na
-      country: US
-      state: Illinois
-      city: Chicago
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Expedia
-      url: https://www.expedia.com
-      twitter: Expedia
-      facebook: Expedia
-      img: expedia.png
-      bch: No
-      btc: No
-      exceptions:
-        text: "Expedia used to accept BTC, but as of 2018-05-12 stopped accepting it"
-
-    - name: Frontier
-      url: https://www.flyfrontier.com
-      twitter: FrontierCare
-      facebook: flyfrontier
-      img: frontier.png
-      bch: No
-      btc: No
-
-    - name: Greyhound
-      url: https://www.greyhound.com
-      twitter: GHoundBusHelp
-      facebook: GreyhoundBus
-      img: greyhound.png
-      bch: No
-      btc: No
-
-    - name: Hawaiian Airlines
-      url: https://www.hawaiianairlines.com
-      twitter: HawaiianAir
-      facebook: HawaiianAirlines
-      img: hawaiian.png
-      bch: No
-      btc: No
-
-    - name: JetBlue
-      url: https://www.jetblue.com
-      twitter: JetBlue
-      facebook: JetBlue
-      img: jetblue.png
-      bch: No
-      btc: No
-
-    - name: JetSmarter
-      url: https://jetsmarter.com/
-      twitter: JetSmarter
-      facebook: JetSmarter
-      img: jetsmarter.png
-      bch: No
-      btc: No
-
-    - name: Jetstar
-      url: https://www.jetstar.com
-      twitter: JetstarAirways
-      facebook: JetstarAustralia
-      img: jetstar.png
-      bch: No
-      btc: No
-
-    - name: LATAM Airlines
-      url: https://www.latam.com
-      twitter: LATAMAirlines
-      facebook: LATAMAirlines
-      img: latam.png
-      bch: No
-      btc: No
-
-    - name: Lufthansa
-      url: https://www.lufthansa.com
-      twitter: lufthansa
-      facebook: lufthansa
-      img: lufthansa.png
-      bch: No
-      btc: No
-
-    - name: Lyft
-      url: https://www.lyft.com/
-      twitter: AskLyft
-      facebook: lyft
-      img: lyft.png
-      bch: No
-      btc: No
-
-    - name: MOONLIMO.eu
-      url: https://moonlimo.eu
-      img: moonlimoeu.png
-      twitter: moonlimoeu
-      facebook: moonlimo.eu
-      email_address: info@moonlimo.eu
-      region: eu
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://moonlimo.eu/pay-with-crypto/
-
-    - name: More Stamps Global
-      url: https://www.morestamps.global
-      img: morestampsglobal.png
-      twitter: MoreStamps
-      facebook: MoreStampsGlobal
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: My Trip to Buea
-      url: https://mytriptobuea.com/
-      img: mytriptobuea.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      twitter: MyTriptoBuea
-      email_address: info@mytriptobuea.com
-      keywords:
-      - coinbase
-
-    - name: mytaxi
-      url: https://us.mytaxi.com
-      img: mytaxi.png
-      bch: No
-      btc: No
-      twitter: mytaxius
-      facebook: myTaxi.us
-
-    - name: Norwegian
-      url: https://www.norwegian.com/
-      twitter: Fly_Norwegian
-      facebook: norwegianairlines
-      img: norwegian.png
-      bch: No
-      btc: No
-
-    - name: NSB
-      url: https://www.nsb.no
-      twitter: nsb_no
-      facebook: nsb.no
-      img: nsb.png
-      bch: No
-      btc: No
-
-    - name: OV-chipkaart
-      url: https://www.ov-chipkaart.nl/
-      twitter: OVchipkaart
-      img: ov-chipkaart.png
-      bch: No
-      btc: No
-
-    - name: Qantas
-      url: https://www.qantas.com
-      twitter: Qantas
-      facebook: Qantas
-      img: qantas.png
-      bch: No
-      btc: No
-
-    - name: Ryanair
-      url: https://www.ryanair.com
-      twitter: Ryanair
-      facebook: ryanair
-      img: ryanair.png
-      bch: No
-      btc: No
-
-    - name: SAS
-      url: https://www.flysas.com/
-      twitter: SAS
-      facebook: SAS
-      img: sas.png
-      bch: No
-      btc: No
-
-    - name: ScotRail
-      url: https://www.scotrail.co.uk
-      twitter: ScotRail
-      facebook: ScotRail
-      img: scotrail.png
-      bch: No
-      btc: No
-
-    - name: SJ
-      url: https://www.sj.se/
-      twitter: SJ_AB
-      facebook: sj
-      img: sj.png
-      bch: No
-      btc: No
-
-    - name: SL
-      url: https://sl.se/sv/
-      twitter: SL_AB
-      facebook: KanalSL
-      img: sl.png
-      bch: No
-      btc: No
-
-    - name: SmarTrip
-      url: https://smartrip.wmata.com
-      twitter: wmata
-      facebook: MetroForward
-      img: wmata.png
-      bch: No
-      btc: No
-
-    - name: Southwest
-      url: https://www.southwest.com/
-      twitter: SouthwestAir
-      facebook: SouthwestAir
-      img: southwest.png
-      bch: No
-      btc: No
-
-    - name: Spirit
-      url: https://www.spirit.com
-      twitter: SpiritAirlines
-      img: spirit.png
-      bch: No
-      btc: No
-
-    - name: Tesla
-      url: https://www.tesla.com
-      img: tesla.png
-      twitter: TeslaMotors
-      bch: No
-
-    - name: Transport for London
-      url: https://tfl.gov.uk/
-      twitter: tflwaystopay
-      facebook: transportforlondon
-      img: tfl.png
-      bch: No
-      btc: No
-
-    - name: Uber
-      url: https://www.uber.com/
-      twitter: uber_support
-      facebook: uber
-      img: uber.png
-      bch: No
-      btc: No
-
-    - name: United
-      url: https://www.united.com/
-      twitter: united
-      facebook: United
-      img: united.png
-      bch: No
-      btc: No
-
-    - name: Unity Automotive
-      region: NA
-      country: CA
-      city: Toronto
-      url: http://unityauto.com
-      twitter: UnityAuto
-      facebook: unityauto
-      img: unityauto.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: http://unityauto.com/bitcoin.php
-
-    - name: Virgin Australia
-      url: https://www.virginaustralia.com
-      twitter: virginaustralia
-      facebook: virginaustralia
-      img: virginaustralia.png
-      bch: No
-      btc: No
-
-    - name: Voyages-SNCF
-      url: https://www.voyages-sncf.com/
-      twitter: ouisncf
-      facebook: en.oui.sncf
-      img: sncf.png
-      bch: No
-      btc: No
-
-    - name: WestJet
-      url: https://www.westjet.com/
-      twitter: WestJet
-      facebook: westjet
-      img: westjet.png
-      bch: No
-      btc: No
+- name: Air Canada
+  url: https://www.aircanada.com/ca/en/aco/home.html
+  twitter: AirCanada
+  facebook: aircanada
+  img: aircanada.png
+  bch: false
+  btc: false
+- name: Air France
+  url: https://www.airfrance.com
+  twitter: airfrance
+  facebook: airfrance
+  img: airfrance.png
+  bch: false
+  btc: false
+- name: Air New Zealand
+  url: https://www.airnewzealand.co.nz
+  twitter: FlyAirNZ
+  facebook: AirNewZealand
+  img: airnz.png
+  bch: false
+  btc: false
+- name: Alaska Airlines
+  url: https://www.alaskaair.com
+  twitter: AlaskaAir
+  facebook: alaskaairlines
+  img: alaska.png
+  bch: false
+  btc: false
+- name: American Airlines
+  url: https://www.aa.com/
+  twitter: AmericanAir
+  facebook: AmericanAirlines
+  img: aa.png
+  bch: false
+  btc: false
+- name: Amtrak
+  url: https://www.amtrak.com/
+  twitter: Amtrak
+  facebook: Amtrak
+  img: amtrak.png
+  bch: false
+  btc: false
+- name: British Airways
+  url: https://www.britishairways.com/
+  twitter: British_Airways
+  facebook: britishairways
+  img: ba.png
+  bch: false
+  btc: false
+- name: BTCTrip
+  url: https://btctrip.com/
+  img: btctrip.png
+  twitter: btctrip
+  email_address: contact@btctrip.com
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - bitpay
+  - gocoin
+- name: Captain Train
+  url: https://www.captaintrain.com
+  twitter: captaintrain
+  img: captain_train.png
+  bch: false
+  btc: false
+- name: CheapAir
+  url: https://www.cheapair.com/
+  twitter: cheapair
+  facebook: cheapair
+  img: cheapair.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Clipper
+  url: https://www.clippercard.com
+  twitter: BayAreaClipper
+  facebook: BayAreaClipper
+  img: clipper.png
+  bch: false
+  btc: false
+- name: Delta
+  url: https://www.delta.com/
+  twitter: Delta
+  facebook: delta
+  img: delta.png
+  bch: false
+  btc: false
+- name: Destinia
+  url: https://destinia.com/
+  img: destinia.png
+  twitter: Destinia
+  facebook: Destinia.com
+  email_address: admincont@destinia.com
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://twitter.com/Destinia/status/972053118555967488
+- name: Deutsche Bahn (DB)
+  url: https://www.bahn.com
+  twitter: DB_Bahn
+  facebook: DBPersonenverkehr
+  img: db.png
+  bch: false
+  btc: false
+- name: easyJet
+  url: https://www.easyjet.com/en/
+  twitter: easyJet
+  facebook: easyJet
+  img: easyjet.png
+  bch: false
+  btc: false
+- name: European Class Limousine
+  url: http://euclasslimo.com/
+  img: euclasslimo.png
+  twitter: euclasslimo
+  facebook: euclasslimo
+  region: na
+  country: US
+  state: Illinois
+  city: Chicago
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Expedia
+  url: https://www.expedia.com
+  twitter: Expedia
+  facebook: Expedia
+  img: expedia.png
+  bch: false
+  btc: false
+  exceptions:
+    text: Expedia used to accept BTC, but as of 2018-05-12 stopped accepting it
+- name: Frontier
+  url: https://www.flyfrontier.com
+  twitter: FrontierCare
+  facebook: flyfrontier
+  img: frontier.png
+  bch: false
+  btc: false
+- name: Greyhound
+  url: https://www.greyhound.com
+  twitter: GHoundBusHelp
+  facebook: GreyhoundBus
+  img: greyhound.png
+  bch: false
+  btc: false
+- name: Hawaiian Airlines
+  url: https://www.hawaiianairlines.com
+  twitter: HawaiianAir
+  facebook: HawaiianAirlines
+  img: hawaiian.png
+  bch: false
+  btc: false
+- name: JetBlue
+  url: https://www.jetblue.com
+  twitter: JetBlue
+  facebook: JetBlue
+  img: jetblue.png
+  bch: false
+  btc: false
+- name: JetSmarter
+  url: https://jetsmarter.com/
+  twitter: JetSmarter
+  facebook: JetSmarter
+  img: jetsmarter.png
+  bch: false
+  btc: false
+- name: Jetstar
+  url: https://www.jetstar.com
+  twitter: JetstarAirways
+  facebook: JetstarAustralia
+  img: jetstar.png
+  bch: false
+  btc: false
+- name: LATAM Airlines
+  url: https://www.latam.com
+  twitter: LATAMAirlines
+  facebook: LATAMAirlines
+  img: latam.png
+  bch: false
+  btc: false
+- name: Lufthansa
+  url: https://www.lufthansa.com
+  twitter: lufthansa
+  facebook: lufthansa
+  img: lufthansa.png
+  bch: false
+  btc: false
+- name: Lyft
+  url: https://www.lyft.com/
+  twitter: AskLyft
+  facebook: lyft
+  img: lyft.png
+  bch: false
+  btc: false
+- name: MOONLIMO.eu
+  url: https://moonlimo.eu
+  img: moonlimoeu.png
+  twitter: moonlimoeu
+  facebook: moonlimo.eu
+  email_address: info@moonlimo.eu
+  region: eu
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://moonlimo.eu/pay-with-crypto/
+- name: More Stamps Global
+  url: https://www.morestamps.global
+  img: morestampsglobal.png
+  twitter: MoreStamps
+  facebook: MoreStampsGlobal
+  bch: true
+  btc: true
+  othercrypto: true
+- name: My Trip to Buea
+  url: https://mytriptobuea.com/
+  img: mytriptobuea.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: MyTriptoBuea
+  email_address: info@mytriptobuea.com
+  keywords:
+  - coinbase
+- name: mytaxi
+  url: https://us.mytaxi.com
+  img: mytaxi.png
+  bch: false
+  btc: false
+  twitter: mytaxius
+  facebook: myTaxi.us
+- name: Norwegian
+  url: https://www.norwegian.com/
+  twitter: Fly_Norwegian
+  facebook: norwegianairlines
+  img: norwegian.png
+  bch: false
+  btc: false
+- name: NSB
+  url: https://www.nsb.no
+  twitter: nsb_no
+  facebook: nsb.no
+  img: nsb.png
+  bch: false
+  btc: false
+- name: OV-chipkaart
+  url: https://www.ov-chipkaart.nl/
+  twitter: OVchipkaart
+  img: ov-chipkaart.png
+  bch: false
+  btc: false
+- name: Qantas
+  url: https://www.qantas.com
+  twitter: Qantas
+  facebook: Qantas
+  img: qantas.png
+  bch: false
+  btc: false
+- name: Ryanair
+  url: https://www.ryanair.com
+  twitter: Ryanair
+  facebook: ryanair
+  img: ryanair.png
+  bch: false
+  btc: false
+- name: SAS
+  url: https://www.flysas.com/
+  twitter: SAS
+  facebook: SAS
+  img: sas.png
+  bch: false
+  btc: false
+- name: ScotRail
+  url: https://www.scotrail.co.uk
+  twitter: ScotRail
+  facebook: ScotRail
+  img: scotrail.png
+  bch: false
+  btc: false
+- name: SJ
+  url: https://www.sj.se/
+  twitter: SJ_AB
+  facebook: sj
+  img: sj.png
+  bch: false
+  btc: false
+- name: SL
+  url: https://sl.se/sv/
+  twitter: SL_AB
+  facebook: KanalSL
+  img: sl.png
+  bch: false
+  btc: false
+- name: SmarTrip
+  url: https://smartrip.wmata.com
+  twitter: wmata
+  facebook: MetroForward
+  img: wmata.png
+  bch: false
+  btc: false
+- name: Southwest
+  url: https://www.southwest.com/
+  twitter: SouthwestAir
+  facebook: SouthwestAir
+  img: southwest.png
+  bch: false
+  btc: false
+- name: Spirit
+  url: https://www.spirit.com
+  twitter: SpiritAirlines
+  img: spirit.png
+  bch: false
+  btc: false
+- name: Tesla
+  url: https://www.tesla.com
+  img: tesla.png
+  twitter: TeslaMotors
+  bch: false
+- name: Transport for London
+  url: https://tfl.gov.uk/
+  twitter: tflwaystopay
+  facebook: transportforlondon
+  img: tfl.png
+  bch: false
+  btc: false
+- name: Uber
+  url: https://www.uber.com/
+  twitter: uber_support
+  facebook: uber
+  img: uber.png
+  bch: false
+  btc: false
+- name: United
+  url: https://www.united.com/
+  twitter: united
+  facebook: United
+  img: united.png
+  bch: false
+  btc: false
+- name: Unity Automotive
+  region: NA
+  country: CA
+  city: Toronto
+  url: http://unityauto.com
+  twitter: UnityAuto
+  facebook: unityauto
+  img: unityauto.png
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: http://unityauto.com/bitcoin.php
+- name: Virgin Australia
+  url: https://www.virginaustralia.com
+  twitter: virginaustralia
+  facebook: virginaustralia
+  img: virginaustralia.png
+  bch: false
+  btc: false
+- name: Voyages-SNCF
+  url: https://www.voyages-sncf.com/
+  twitter: ouisncf
+  facebook: en.oui.sncf
+  img: sncf.png
+  bch: false
+  btc: false
+- name: WestJet
+  url: https://www.westjet.com/
+  twitter: WestJet
+  facebook: westjet
+  img: westjet.png
+  bch: false
+  btc: false

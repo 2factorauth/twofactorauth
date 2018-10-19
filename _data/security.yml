@@ -48,7 +48,7 @@ websites:
   - bitpay
   - bip70
   exceptions:
-    text: "Bitcoin is accepted for Phantom VPN Pro only"
+    text: Bitcoin is accepted for Phantom VPN Pro only
 - name: Blur
   url: https://www.abine.com/
   img: blur.png
@@ -320,13 +320,11 @@ websites:
 - name: SaferVPN
   url: https://www.safervpn.com
   img: safervpn.png
-  twitter: SaferVPN
+  twitter: safervpn
   facebook: SaferVPNCom
   bch: true
   btc: true
   othercrypto: true
-  twitter: safervpn
-  facebook: SaferVPNCom
   keywords:
   - coingate
 - name: ShadeYou
@@ -386,7 +384,7 @@ websites:
   keywords:
   - coinpayments.net
   exceptions:
-    text: "No refunds for cryptocurrency, only store credit"
+    text: No refunds for cryptocurrency, only store credit
 - name: The Keyois Capsule
   url: https://keyois.com/
   img: keyois.png
@@ -436,9 +434,9 @@ websites:
   url: https://vpn.surf
   img: vpnsurf.png
   email_address: sales@vpn.surf
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   keywords:
   - coinpayments
 - name: VPN Unlimited

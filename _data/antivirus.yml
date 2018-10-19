@@ -1,124 +1,112 @@
+---
 websites:
-    - name: AVG AntiVirus
-      url: https://www.avg.com
-      img: avg.png
-      twitter: avgfree
-      facebook: AVG
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Avira
-      url: https://www.avira.com/
-      img: avira.png
-      twitter: avira
-      facebook: avira
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: BitDefender
-      url: https://bitdefender.com
-      img: bitdefender.png
-      twitter: Bitdefender
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: BullGuard
-      url: https://www.bullguard.com
-      img: bullguard.png
-      twitter: BullGuard
-      facebook: BullGuard
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: eScan
-      url: https://www.escanav.com/en/index.asp
-      img: escan.png
-      twitter: eScan_tweet
-      facebook: eScanFanPage
-      bch: No
-      btc: No
-      othercrypto: No
-      
-    - name: ESET NOD32
-      url: https://www.eset.com/
-      img: eset.png
-      twitter: eset
-      facebook: eset
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: F-Secure
-      url: https://www.f-secure.com
-      img: fsecure.png
-      twitter: FSecure
-      facebook: F-Secure-107471754306
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: MalwareBytes
-      url: https://www.malwarebytes.com/
-      img: malwarebytes.png
-      facebook: malwarebytes
-      twitter: malwarebytes
-      btc: No
-      bch: No
-      othercrypto: No
-
-    - name: McAfee
-      url: https://www.mcafee.com
-      img: mcafee.png
-      twitter: McAfee_Home
-      facebook: McAfee
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Norton Anti-Virus
-      url: https://norton.com/
-      img: norton.png
-      twitter: nortononline
-      facebook: norton
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Panda
-      url: https://www.pandasecurity.com/
-      img: panda.png
-      twitter: Panda_Security
-      facebook: PandaSecurity
-      email_address: info@pandasecurity.com
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Trend Micro
-      url: https://trendmicro.com
-      img: trendmicro.png
-      twitter: TrendMicro
-      facebook: Trendmicro
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Webroot
-      url: https://www.webroot.com
-      img: webroot.png
-      twitter: Webroot
-      facebook: Webroot
-      bch: No
-
-    - name: ZoneAlarm
-      url: https://www.zonealarm.com/
-      img: zonealarm.png
-      twitter: zonealarm
-      facebook: ZoneAlarm2017
-      bch: No
-      btc: No
-      othercrypto: No
+- name: AVG AntiVirus
+  url: https://www.avg.com
+  img: avg.png
+  twitter: avgfree
+  facebook: AVG
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Avira
+  url: https://www.avira.com/
+  img: avira.png
+  twitter: avira
+  facebook: avira
+  bch: false
+  btc: false
+  othercrypto: false
+- name: BitDefender
+  url: https://bitdefender.com
+  img: bitdefender.png
+  twitter: Bitdefender
+  bch: false
+  btc: false
+  othercrypto: false
+- name: BullGuard
+  url: https://www.bullguard.com
+  img: bullguard.png
+  twitter: BullGuard
+  facebook: BullGuard
+  bch: false
+  btc: false
+  othercrypto: false
+- name: eScan
+  url: https://www.escanav.com/en/index.asp
+  img: escan.png
+  twitter: eScan_tweet
+  facebook: eScanFanPage
+  bch: false
+  btc: false
+  othercrypto: false
+- name: ESET NOD32
+  url: https://www.eset.com/
+  img: eset.png
+  twitter: eset
+  facebook: eset
+  bch: false
+  btc: false
+  othercrypto: false
+- name: F-Secure
+  url: https://www.f-secure.com
+  img: fsecure.png
+  twitter: FSecure
+  facebook: F-Secure-107471754306
+  bch: false
+  btc: false
+  othercrypto: false
+- name: MalwareBytes
+  url: https://www.malwarebytes.com/
+  img: malwarebytes.png
+  facebook: malwarebytes
+  twitter: malwarebytes
+  btc: false
+  bch: false
+  othercrypto: false
+- name: McAfee
+  url: https://www.mcafee.com
+  img: mcafee.png
+  twitter: McAfee_Home
+  facebook: McAfee
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Norton Anti-Virus
+  url: https://norton.com/
+  img: norton.png
+  twitter: nortononline
+  facebook: norton
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Panda
+  url: https://www.pandasecurity.com/
+  img: panda.png
+  twitter: Panda_Security
+  facebook: PandaSecurity
+  email_address: info@pandasecurity.com
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Trend Micro
+  url: https://trendmicro.com
+  img: trendmicro.png
+  twitter: TrendMicro
+  facebook: Trendmicro
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Webroot
+  url: https://www.webroot.com
+  img: webroot.png
+  twitter: Webroot
+  facebook: Webroot
+  bch: false
+- name: ZoneAlarm
+  url: https://www.zonealarm.com/
+  img: zonealarm.png
+  twitter: zonealarm
+  facebook: ZoneAlarm2017
+  bch: false
+  btc: false
+  othercrypto: false

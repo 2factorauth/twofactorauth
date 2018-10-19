@@ -1,350 +1,310 @@
+---
 websites:
-    - name: Anarchapulco
-      url: https://anarchapulco.com/
-      twitter: Anarchapulco
-      facebook: anarchapulco
-      img: anarchapulco.png
-      country: MX
-      city: Acapulco
-      bch: yes
-      btc: yes
-      othercrypto: no
-
-    - name: andreas events
-      url: https://andreas.events/
-      img: andreasevents.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: https://twitter.com/aantonop/status/984531022959267841
-
-    - name: Bandcamp
-      url: https://bandcamp.com
-      img: bandcamp.png
-      bch: No
-      twitter: bandcamp
-      facebook: Bandcamp
-
-    - name: Big Tickets
-      url: https://www.bigtickets.com/
-      img: bigtickets.png
-      twitter: realbigtickets
-      facebook: xorbia
-      bch: yes
-      btc: no
-      othercrypto: no
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: CashVid.io
-      url: https://www.cashvid.io
-      twitter: CashVidio
-      facebook: CashVid.io
-      img: cashvidio.png
-      bch: yes
-      btc: no
-      othercrypto: no
-      doc: https://www.cashvid.io/Faq.php
-
-    - name: CD Baby
-      url: https://www.cdbaby.com/
-      img: cdbaby.png
-      bch: No
-      twitter: cdbaby
-      facebook: cdbaby
-
-    - name: CLASH Magazine
-      url: https://clash-magazine.myshopify.com/
-      twitter: ClashMagazine
-      facebook: clashmagazine
-      img: clash-magazine.png
-      bch: true
-      btc: true
-      othercrypto: false
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: computerbase.de
-      url: https://www.computerbase.de/
-      img: computerbase.png
-      twitter: computerbase
-      facebook: computerbase
-      lang: de
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Counter Markets
-      url: http://countermarkets.com/
-      twitter: countermarkets
-      facebook: CounterMarkets
-      img: countermarkets.png
-      bch: yes
-      btc: no
-      othercrypto: yes
-
-    - name: Crunchyroll
-      url: http://www.crunchyroll.com/
-      img: crunchyroll.png
-      bch: No
-      twitter: Crunchyroll
-      facebook: Crunchyroll
-
-    - name: Elven Tower
-      url: https://www.elventower.com/
-      img: elventower.png
-      twitter: elventower
-      facebook: ElvenTower
-      region: na
-      country: MX
-      city: Le
-      bch: yes
-      btc: no
-      othercrypto: yes
-      doc: https://www.elventower.com/commission-custom-maps
-
-    - name: Emancipated Human
-      url: https://emancipatedhuman.com/
-      img: emancipatedhuman.png
-      twitter: EmancipatedH
-      facebook: emancipatedh
-      email_address: contact@emancipatedhuman.com
-      bch: yes
-      btc: yes
-      othercrypto: yes
-
-    - name: Eruce - Buy your music
-      url: https://www.eruce.com/
-      img: eruce.png
-      bch: yes
-      btc: no
-      othercrypto: no
-      doc: https://www.eruce.com/bitcoin-cash-supported/
-
-    - name: Google Play
-      url: https://play.google.com
-      img: googleplay.png
-      bch: No
-      twitter: GooglePlay
-      facebook: GooglePlay
-
-    - name: Hulu
-      url: https://www.hulu.com/
-      img: hulu.png
-      bch: No
-      twitter: hulu_support
-      facebook: hulu
-
-    - name: IBM Cloud Video (Ustream)
-      url: https://video.ibm.com/
-      img: ustream.png
-      bch: No
-      twitter: ibmcloudvideo
-      facebook: ibmcloudvideo
-
-    - name: IMDb
-      url: https://www.imdb.com
-      img: imdb.png
-      bch: No
-      twitter: IMDb
-      facebook: imdb
-
-    - name: Last.fm
-      url: https://www.last.fm/
-      img: lastfm.png
-      bch: No
-      twitter: lastfmsupport
-      facebook: lastfm
-
-    - name: Louis C.K.
-      url: https://louisck.net/
-      img: louisck.png
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: Mixer
-      url: https://mixer.com/
-      img: mixer.png
-      bch: No
-      twitter: WatchMixer
-      facebook: WatchMixer
-
-    - name: MusicPlug.com.au
-      url: https://musicplug.com.au
-      img: musicplug.png
-      country: AU
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Netflix
-      url: https://www.netflix.com/us/
-      img: netflix.png
-      bch: No
-      twitter: Netflixhelps
-      facebook: netflix
-
-    - name: Pandora
-      url: https://www.pandora.com
-      img: pandora.png
-      bch: No
-      twitter: pandorasupport
-      facebook: pandora
-
-    - name: Picarto.TV
-      url: https://picarto.tv/
-      img: picartotv.png
-      bch: No
-      twitter: PicartoTV
-      facebook: picartotv
-      email_address: support@picarto.tv
-
-    - name: Plex
-      url: https://www.plex.tv
-      img: plex.png
-      bch: No
-      twitter: plexapp
-      facebook: plexapp
-
-    - name: Qobuz
-      url: https://www.qobuz.com
-      img: qobuz.png
-      bch: No
-      twitter: qobuz
-      facebook: qobuz
-
-    - name: Rock Stuff
-      url: https://www.rockstuff.com.au/
-      img: rockstuff.png
-      facebook: RockStuffCheck12
-      email_address: info@rockstuff.rocks
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Roku
-      url: https://www.roku.com
-      img: roku.png
-      bch: No
-      twitter: RokuSupport
-      facebook: roku
-
-    - name: Satoshi's Vision conference
-      url: https://satoshisvisionconference.com/
-      twitter: satoshis_vision
-      img: satoshisvisionconference.png
-      bch: yes
-      btc: yes
-      othercrypto: no
-
-    - name: Self Ownership
-      url: http://vinarmani.com/selfownership/
-      twitter: vinarmani
-      facebook: vinarmani
-      img: selfownership.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-
-    - name: Sheet Music 2 Celebrate
-      url: https://www.sheetmusic2celebrate.com
-      img: sheetmusic2celebrate.png
-      facebook: Sheet-Music-to-Celebrate-2040933102814363
-      email_address: contact@sheetmusic2celebrate.com
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Sling TV
-      url: https://www.sling.com/
-      img: sling.png
-      bch: No
-      twitter: slinganswers
-      facebook: sling
-
-    - name: smashcast
-      url: https://www.smashcast.tv/
-      img: smashcast.png
-      bch: No
-      twitter: Smashcast_tv
-      facebook: Smashcast
-
-    - name: SoundCloud
-      url: https://soundcloud.com/
-      img: soundcloud.png
-      bch: No
-      twitter: SCsupport
-      facebook: SoundCloud
-
-    - name: SPAZ radio
-      url: http://spaz.radio
-      img: spazradio.png
-      email_address: aaron@spaz.org
-      bch: Yes
-      btc: No
-      othercrypto: No
-      doc: https://www.reddit.com/r/btc/comments/8dc0vr/please_help_us_beta_test_our_new_bch_dj_tipping/
-
-    - name: Spotify
-      url: https://www.spotify.com/
-      img: spotify.png
-      bch: No
-      twitter: spotifycares
-      facebook: spotify
-
-    - name: The Dollar Vigilante
-      url: https://dollarvigilante.com/
-      twitter: DollarVigilante
-      facebook: DollarVigilante
-      img: dollarvigilante.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-
-    - name: TIDAL
-      url: https://tidal.com/
-      img: tidal.png
-      bch: No
-      twitter: TIDALHiFi
-      facebook: TIDAL
-
-    - name: TiVo
-      url: https://www.tivo.com/
-      img: tivo.png
-      bch: No
-      twitter: TiVo
-      facebook: TiVo
-
-    - name: Twitch
-      url: https://www.twitch.tv/
-      img: twitch.png
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      twitter: Twitch
-      facebook: Twitch
-      keywords:
-      - xsolla
-      - skrill
-      - bitpay
-      - bip70
-
-    - name: Vimeo
-      url: https://vimeo.com/
-      img: vimeo.png
-      bch: No
-      twitter: vimeo
-      facebook: Vimeo
-
-    - name: YouTube
-      url: https://www.youtube.com/
-      img: youtube.png
-      bch: No
-      twitter: YouTube
-      facebook: YouTube
+- name: Anarchapulco
+  url: https://anarchapulco.com/
+  twitter: Anarchapulco
+  facebook: anarchapulco
+  img: anarchapulco.png
+  country: MX
+  city: Acapulco
+  bch: true
+  btc: true
+  othercrypto: false
+- name: andreas events
+  url: https://andreas.events/
+  img: andreasevents.png
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://twitter.com/aantonop/status/984531022959267841
+- name: Bandcamp
+  url: https://bandcamp.com
+  img: bandcamp.png
+  bch: false
+  twitter: bandcamp
+  facebook: Bandcamp
+- name: Big Tickets
+  url: https://www.bigtickets.com/
+  img: bigtickets.png
+  twitter: realbigtickets
+  facebook: xorbia
+  bch: true
+  btc: false
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: CashVid.io
+  url: https://www.cashvid.io
+  twitter: CashVidio
+  facebook: CashVid.io
+  img: cashvidio.png
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://www.cashvid.io/Faq.php
+- name: CD Baby
+  url: https://www.cdbaby.com/
+  img: cdbaby.png
+  bch: false
+  twitter: cdbaby
+  facebook: cdbaby
+- name: CLASH Magazine
+  url: https://clash-magazine.myshopify.com/
+  twitter: ClashMagazine
+  facebook: clashmagazine
+  img: clash-magazine.png
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: computerbase.de
+  url: https://www.computerbase.de/
+  img: computerbase.png
+  twitter: computerbase
+  facebook: computerbase
+  lang: de
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Counter Markets
+  url: http://countermarkets.com/
+  twitter: countermarkets
+  facebook: CounterMarkets
+  img: countermarkets.png
+  bch: true
+  btc: false
+  othercrypto: true
+- name: Crunchyroll
+  url: http://www.crunchyroll.com/
+  img: crunchyroll.png
+  bch: false
+  twitter: Crunchyroll
+  facebook: Crunchyroll
+- name: Elven Tower
+  url: https://www.elventower.com/
+  img: elventower.png
+  twitter: elventower
+  facebook: ElvenTower
+  region: na
+  country: MX
+  city: Le
+  bch: true
+  btc: false
+  othercrypto: true
+  doc: https://www.elventower.com/commission-custom-maps
+- name: Emancipated Human
+  url: https://emancipatedhuman.com/
+  img: emancipatedhuman.png
+  twitter: EmancipatedH
+  facebook: emancipatedh
+  email_address: contact@emancipatedhuman.com
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Eruce - Buy your music
+  url: https://www.eruce.com/
+  img: eruce.png
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://www.eruce.com/bitcoin-cash-supported/
+- name: Google Play
+  url: https://play.google.com
+  img: googleplay.png
+  bch: false
+  twitter: GooglePlay
+  facebook: GooglePlay
+- name: Hulu
+  url: https://www.hulu.com/
+  img: hulu.png
+  bch: false
+  twitter: hulu_support
+  facebook: hulu
+- name: IBM Cloud Video (Ustream)
+  url: https://video.ibm.com/
+  img: ustream.png
+  bch: false
+  twitter: ibmcloudvideo
+  facebook: ibmcloudvideo
+- name: IMDb
+  url: https://www.imdb.com
+  img: imdb.png
+  bch: false
+  twitter: IMDb
+  facebook: imdb
+- name: Last.fm
+  url: https://www.last.fm/
+  img: lastfm.png
+  bch: false
+  twitter: lastfmsupport
+  facebook: lastfm
+- name: Louis C.K.
+  url: https://louisck.net/
+  img: louisck.png
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: Mixer
+  url: https://mixer.com/
+  img: mixer.png
+  bch: false
+  twitter: WatchMixer
+  facebook: WatchMixer
+- name: MusicPlug.com.au
+  url: https://musicplug.com.au
+  img: musicplug.png
+  country: AU
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Netflix
+  url: https://www.netflix.com/us/
+  img: netflix.png
+  bch: false
+  twitter: Netflixhelps
+  facebook: netflix
+- name: Pandora
+  url: https://www.pandora.com
+  img: pandora.png
+  bch: false
+  twitter: pandorasupport
+  facebook: pandora
+- name: Picarto.TV
+  url: https://picarto.tv/
+  img: picartotv.png
+  bch: false
+  twitter: PicartoTV
+  facebook: picartotv
+  email_address: support@picarto.tv
+- name: Plex
+  url: https://www.plex.tv
+  img: plex.png
+  bch: false
+  twitter: plexapp
+  facebook: plexapp
+- name: Qobuz
+  url: https://www.qobuz.com
+  img: qobuz.png
+  bch: false
+  twitter: qobuz
+  facebook: qobuz
+- name: Rock Stuff
+  url: https://www.rockstuff.com.au/
+  img: rockstuff.png
+  facebook: RockStuffCheck12
+  email_address: info@rockstuff.rocks
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Roku
+  url: https://www.roku.com
+  img: roku.png
+  bch: false
+  twitter: RokuSupport
+  facebook: roku
+- name: Satoshi's Vision conference
+  url: https://satoshisvisionconference.com/
+  twitter: satoshis_vision
+  img: satoshisvisionconference.png
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Self Ownership
+  url: http://vinarmani.com/selfownership/
+  twitter: vinarmani
+  facebook: vinarmani
+  img: selfownership.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Sheet Music 2 Celebrate
+  url: https://www.sheetmusic2celebrate.com
+  img: sheetmusic2celebrate.png
+  facebook: Sheet-Music-to-Celebrate-2040933102814363
+  email_address: contact@sheetmusic2celebrate.com
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Sling TV
+  url: https://www.sling.com/
+  img: sling.png
+  bch: false
+  twitter: slinganswers
+  facebook: sling
+- name: smashcast
+  url: https://www.smashcast.tv/
+  img: smashcast.png
+  bch: false
+  twitter: Smashcast_tv
+  facebook: Smashcast
+- name: SoundCloud
+  url: https://soundcloud.com/
+  img: soundcloud.png
+  bch: false
+  twitter: SCsupport
+  facebook: SoundCloud
+- name: SPAZ radio
+  url: http://spaz.radio
+  img: spazradio.png
+  email_address: aaron@spaz.org
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://www.reddit.com/r/btc/comments/8dc0vr/please_help_us_beta_test_our_new_bch_dj_tipping/
+- name: Spotify
+  url: https://www.spotify.com/
+  img: spotify.png
+  bch: false
+  twitter: spotifycares
+  facebook: spotify
+- name: The Dollar Vigilante
+  url: https://dollarvigilante.com/
+  twitter: DollarVigilante
+  facebook: DollarVigilante
+  img: dollarvigilante.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: TIDAL
+  url: https://tidal.com/
+  img: tidal.png
+  bch: false
+  twitter: TIDALHiFi
+  facebook: TIDAL
+- name: TiVo
+  url: https://www.tivo.com/
+  img: tivo.png
+  bch: false
+  twitter: TiVo
+  facebook: TiVo
+- name: Twitch
+  url: https://www.twitch.tv/
+  img: twitch.png
+  bch: true
+  btc: true
+  othercrypto: false
+  twitter: Twitch
+  facebook: Twitch
+  keywords:
+  - xsolla
+  - skrill
+  - bitpay
+  - bip70
+- name: Vimeo
+  url: https://vimeo.com/
+  img: vimeo.png
+  bch: false
+  twitter: vimeo
+  facebook: Vimeo
+- name: YouTube
+  url: https://www.youtube.com/
+  img: youtube.png
+  bch: false
+  twitter: YouTube
+  facebook: YouTube

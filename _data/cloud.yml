@@ -1,238 +1,207 @@
+---
 websites:
-    - name: Amazon Web Services
-      url: https://aws.amazon.com
-      img: aws.png
-      bch: No
-      twitter: awscloud
-      facebook: amazonwebservices
-
-    - name: appFog
-      url: https://www.ctl.io/appfog/
-      img: appfog.png
-      bch: No
-      twitter: appfog
-
-    - name: bithost.io
-      url: https://bithost.io/
-      img: bithost.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      twitter: bithostio
-      email_address: support@bithost.io
-
-    - name: Brightbox
-      url: https://www.brightbox.com/
-      img: brightbox.png
-      bch: No
-      twitter: brightbox
-      facebook: brightbox
-      email_address: support@brightbox.com
-
-    - name: Cloud 66
-      url: https://www.cloud66.com
-      img: cloud66.png
-      bch: No
-      twitter: brightbox
-      facebook: brightbox
-
-    - name: cloud.ca
-      url: https://cloud.ca
-      img: cloudca.png
-      bch: No
-      twitter: cloud_dot_ca
-      email_address: info@cloud.ca
-
-    - name: Datapipe
-      url: https://www.datapipe.com/
-      img: datapipe.png
-      bch: No
-      twitter: datapipe
-
-    - name: DigitalOcean
-      url: https://www.digitalocean.com/
-      img: digitalocean.png
-      bch: No
-      twitter: digitalocean
-      facebook: DigitalOceanCloudHosting
-
-    - name: EngineYard
-      url: https://www.engineyard.com
-      img: engineyard.png
-      bch: No
-      twitter: engineyard
-
-    - name: fortrabbit
-      url: https://www.fortrabbit.com/
-      img: fortrabbit.png
-      bch: No
-      twitter: fortrabbit
-      facebook: fortrabbit
-
-    - name: Google Cloud Platform
-      url: https://cloud.google.com
-      img: googlecloud.png
-      bch: No
-      twitter: googlecloud
-      facebook: GoogleCloud
-
-    - name: Heroku
-      url: https://www.heroku.com/
-      img: heroku.png
-      bch: No
-      twitter: heroku
-      facebook: heroku
-
-    - name: Hostiso
-      url: https://hostiso.com/
-      img: hostiso.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      twitter: hostiso
-      email_address: marketing@hostiso.com
-
-    - name: Hyper.sh
-      url: https://www.hyper.sh
-      img: hypersh.png
-      bch: No
-      twitter: hyper_sh
-      email_address: contact@hyper.sh
-
-    - name: IBM BlueMix
-      url: https://bluemix.net
-      img: ibmbluemix.png
-      bch: No
-      twitter: IBMCloud
-      facebook: IBMCloud
-
-    - name: Joyent
-      url: https://www.joyent.com/
-      img: joyent.png
-      bch: No
-      twitter: joyent
-      facebook: joyentcloud
-
-    - name: LeaseWeb
-      url: https://www.leaseweb.com/
-      img: leaseweb.png
-      bch: No
-      twitter: leaseweb
-      facebook: leaseweb
-
-    - name: Linode
-      url: https://www.linode.com/
-      img: linode.png
-      bch: No
-      twitter: linode
-      facebook: linode
-
-    - name: Microsoft Azure
-      url: https://azure.microsoft.com/
-      img: microsoftazure.png
-      bch: No
-      twitter: azure
-      facebook: microsoftazure
-
-    - name: mLab
-      url: https://mlab.com/
-      img: mlab.png
-      bch: No
-      twitter: mlab
-      facebook: MongoLab
-
-    - name: opeNode
-      url: https://www.openode.io/
-      img: openode.png
-      twitter: opeNodeio
-      bch: No
-      btc: Yes
-      othercrypto: No
-      keywords:
-      - iochain
-
-    - name: OpenShift
-      url: https://www.openshift.com/
-      img: openshift.png
-      bch: No
-      twitter: openshift
-      facebook: openshift
-
-    - name: Packet
-      url: https://www.packet.net/
-      img: packet.png
-      bch: No
-      twitter: packethost
-      facebook: getpacket
-
-    - name: ProfitBricks
-      url: https://www.profitbricks.de
-      img: profitbricks.png
-      bch: No
-      twitter: ProfitBricksDE
-      facebook: ProfitBricksDE
-
-    - name: put.io
-      url: https://put.io/
-      img: putio.png
-      bch: Yes
-      btc: Yes
-      twitter: putdotio
-      facebook: putdotio
-
-    - name: Rackspace
-      url: https://www.rackspace.com/
-      img: rackspace.png
-      bch: No
-      twitter: rackspace
-      facebook: Rackspace
-
-    - name: RightScale
-      url: https://www.rightscale.com/
-      img: rightscale.png
-      bch: No
-      twitter: RightScale
-      facebook: RightScale
-
-    - name: Scaleway
-      url: https://www.scaleway.com
-      img: scaleway.png
-      bch: No
-      twitter: scaleway
-      facebook: scaleway
-
-    - name: Scalr
-      url: https://www.scalr.com
-      img: scalr.png
-      bch: No
-      twitter: scalr
-      facebook: Scalr
-
-    - name: SingleHop
-      url: https://www.singlehop.com
-      img: singlehop.png
-      bch: No
-      twitter: singlehop
-      facebook: SingleHop
-
-    - name: SporeStack
-      url: https://sporestack.com
-      img: sporestack.png
-      btc: Yes
-      bch: Yes
-      doc: https://sporestack.com/news#2017-12-12
-      exceptions:
-        text: "Bitcoin (Legacy) payments are deprecated"
-
-    - name: Tilaa
-      url: https://www.tilaa.com
-      img: tilaa.png
-      bch: No
-      twitter: tilaavps
-      facebook: tilaavps
-
-    - name: Userify
-      url: https://userify.com
-      img: userify.png
-      bch: No
-      twitter: userify
+- name: Amazon Web Services
+  url: https://aws.amazon.com
+  img: aws.png
+  bch: false
+  twitter: awscloud
+  facebook: amazonwebservices
+- name: appFog
+  url: https://www.ctl.io/appfog/
+  img: appfog.png
+  bch: false
+  twitter: appfog
+- name: bithost.io
+  url: https://bithost.io/
+  img: bithost.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: bithostio
+  email_address: support@bithost.io
+- name: Brightbox
+  url: https://www.brightbox.com/
+  img: brightbox.png
+  bch: false
+  twitter: brightbox
+  facebook: brightbox
+  email_address: support@brightbox.com
+- name: Cloud 66
+  url: https://www.cloud66.com
+  img: cloud66.png
+  bch: false
+  twitter: brightbox
+  facebook: brightbox
+- name: cloud.ca
+  url: https://cloud.ca
+  img: cloudca.png
+  bch: false
+  twitter: cloud_dot_ca
+  email_address: info@cloud.ca
+- name: Datapipe
+  url: https://www.datapipe.com/
+  img: datapipe.png
+  bch: false
+  twitter: datapipe
+- name: DigitalOcean
+  url: https://www.digitalocean.com/
+  img: digitalocean.png
+  bch: false
+  twitter: digitalocean
+  facebook: DigitalOceanCloudHosting
+- name: EngineYard
+  url: https://www.engineyard.com
+  img: engineyard.png
+  bch: false
+  twitter: engineyard
+- name: fortrabbit
+  url: https://www.fortrabbit.com/
+  img: fortrabbit.png
+  bch: false
+  twitter: fortrabbit
+  facebook: fortrabbit
+- name: Google Cloud Platform
+  url: https://cloud.google.com
+  img: googlecloud.png
+  bch: false
+  twitter: googlecloud
+  facebook: GoogleCloud
+- name: Heroku
+  url: https://www.heroku.com/
+  img: heroku.png
+  bch: false
+  twitter: heroku
+  facebook: heroku
+- name: Hostiso
+  url: https://hostiso.com/
+  img: hostiso.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: hostiso
+  email_address: marketing@hostiso.com
+- name: Hyper.sh
+  url: https://www.hyper.sh
+  img: hypersh.png
+  bch: false
+  twitter: hyper_sh
+  email_address: contact@hyper.sh
+- name: IBM BlueMix
+  url: https://bluemix.net
+  img: ibmbluemix.png
+  bch: false
+  twitter: IBMCloud
+  facebook: IBMCloud
+- name: Joyent
+  url: https://www.joyent.com/
+  img: joyent.png
+  bch: false
+  twitter: joyent
+  facebook: joyentcloud
+- name: LeaseWeb
+  url: https://www.leaseweb.com/
+  img: leaseweb.png
+  bch: false
+  twitter: leaseweb
+  facebook: leaseweb
+- name: Linode
+  url: https://www.linode.com/
+  img: linode.png
+  bch: false
+  twitter: linode
+  facebook: linode
+- name: Microsoft Azure
+  url: https://azure.microsoft.com/
+  img: microsoftazure.png
+  bch: false
+  twitter: azure
+  facebook: microsoftazure
+- name: mLab
+  url: https://mlab.com/
+  img: mlab.png
+  bch: false
+  twitter: mlab
+  facebook: MongoLab
+- name: opeNode
+  url: https://www.openode.io/
+  img: openode.png
+  twitter: opeNodeio
+  bch: false
+  btc: true
+  othercrypto: false
+  keywords:
+  - iochain
+- name: OpenShift
+  url: https://www.openshift.com/
+  img: openshift.png
+  bch: false
+  twitter: openshift
+  facebook: openshift
+- name: Packet
+  url: https://www.packet.net/
+  img: packet.png
+  bch: false
+  twitter: packethost
+  facebook: getpacket
+- name: ProfitBricks
+  url: https://www.profitbricks.de
+  img: profitbricks.png
+  bch: false
+  twitter: ProfitBricksDE
+  facebook: ProfitBricksDE
+- name: put.io
+  url: https://put.io/
+  img: putio.png
+  bch: true
+  btc: true
+  twitter: putdotio
+  facebook: putdotio
+- name: Rackspace
+  url: https://www.rackspace.com/
+  img: rackspace.png
+  bch: false
+  twitter: rackspace
+  facebook: Rackspace
+- name: RightScale
+  url: https://www.rightscale.com/
+  img: rightscale.png
+  bch: false
+  twitter: RightScale
+  facebook: RightScale
+- name: Scaleway
+  url: https://www.scaleway.com
+  img: scaleway.png
+  bch: false
+  twitter: scaleway
+  facebook: scaleway
+- name: Scalr
+  url: https://www.scalr.com
+  img: scalr.png
+  bch: false
+  twitter: scalr
+  facebook: Scalr
+- name: SingleHop
+  url: https://www.singlehop.com
+  img: singlehop.png
+  bch: false
+  twitter: singlehop
+  facebook: SingleHop
+- name: SporeStack
+  url: https://sporestack.com
+  img: sporestack.png
+  btc: true
+  bch: true
+  doc: https://sporestack.com/news#2017-12-12
+  exceptions:
+    text: Bitcoin (Legacy) payments are deprecated
+- name: Tilaa
+  url: https://www.tilaa.com
+  img: tilaa.png
+  bch: false
+  twitter: tilaavps
+  facebook: tilaavps
+- name: Userify
+  url: https://userify.com
+  img: userify.png
+  bch: false
+  twitter: userify

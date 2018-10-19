@@ -1,58 +1,54 @@
+---
 websites:
-    - name: Biblioteca de Alejandría - IDVPS
-      url: http://www.librosprohibidos.ml/
-      email_address: indexprohibido@gmail.com
-      region: eu
-      country: ES
-      lang: es
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      
-    - name: Coin Dance
-      url: https://cash.coin.dance
-      img: coindance.png
-      twitter: coin_dance
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      
-    - name: Deep Center
-      url: http://www.deepcenter.org/
-      img: deepkids.png
-      twitter: deepcenter912
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: http://www.deepcenter.org/give/
-
-    - name: Gyanada Foundation
-      url: http://gyanada.org/
-      img: gyanada.png
-      twitter: Gyanada_Fdn
-      facebook: gyanadafoundation
-      bch: Yes
-      btc: No
-      othercrypto: No
-      exceptions:
-        text: "BCH donation address listed in Twitter profile"
-
-    - name: MAPS
-      url: http://www.maps.org/
-      img: maps.png
-      twitter: maps
-      facebook: mapsmdma
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: http://www.maps.org/donate-redirect/cryptocurrency
-
-    - name: Pathways to Education
-      url: https://www.pathwaystoeducation.ca/
-      img: pathways.png
-      twitter: PathwaysCanada
-      facebook: pathwaystoeducationcanada
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://www.pathwaystoeducation.ca/donate-bitcoin-cash
+- name: Biblioteca de Alejandría - IDVPS
+  url: http://www.librosprohibidos.ml/
+  email_address: indexprohibido@gmail.com
+  region: eu
+  country: ES
+  lang: es
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Coin Dance
+  url: https://cash.coin.dance
+  img: coindance.png
+  twitter: coin_dance
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Deep Center
+  url: http://www.deepcenter.org/
+  img: deepkids.png
+  twitter: deepcenter912
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: http://www.deepcenter.org/give/
+- name: Gyanada Foundation
+  url: http://gyanada.org/
+  img: gyanada.png
+  twitter: Gyanada_Fdn
+  facebook: gyanadafoundation
+  bch: true
+  btc: false
+  othercrypto: false
+  exceptions:
+    text: BCH donation address listed in Twitter profile
+- name: MAPS
+  url: http://www.maps.org/
+  img: maps.png
+  twitter: maps
+  facebook: mapsmdma
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: http://www.maps.org/donate-redirect/cryptocurrency
+- name: Pathways to Education
+  url: https://www.pathwaystoeducation.ca/
+  img: pathways.png
+  twitter: PathwaysCanada
+  facebook: pathwaystoeducationcanada
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.pathwaystoeducation.ca/donate-bitcoin-cash

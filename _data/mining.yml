@@ -1,102 +1,92 @@
+---
 websites:
-    - name: Antpool
-      url: https://antpool.com/
-      img: antpool.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: BitClub Network
-      url: https://bitclubpool.com/
-      img: bitclub.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Bitcoin.com
-      url: https://pool.bitcoin.com/
-      img: bitcoincom.png
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: BitMain
-      url: https://www.bitmain.com/
-      img: bitmain.png
-      twitter: bitmaintech
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: BTC.com
-      url: https://pool.btc.com
-      img: btccom.png
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Gigampz
-      url: http://www.gigampz.com
-      twitter: gigampz
-      img: gigampz.png
-      bch: yes
-      btc: no
-      othercrypto: no
-      
-    - name: GPU Mining Bios
-      url: https://mining-bios.eu/
-      img: miningbios.png
-      facebook: indeedminers
-      region: eu
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: https://mining-bios.eu/2018/01/21/more-native-crypto/
-
-    - name: gpuShack
-      url: https://www.gpushack.com
-      twitter: gpuShack
-      facebook: shack.gpu
-      img: gpushack.png
-      bch: Yes
-      btc: No
-      othercrypto: Yes
-      doc: https://gpushack.com/pages/bitcoin-payments
-
-    - name: MinerParts
-      url: https://minerparts.com/
-      img: minerparts.png
-      twitter: MinerParts
-      facebook: minerparts
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coinpayments.net
-
-    - name: Suprnova
-      url: https://www.suprnova.cc/
-      img: suprnova.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      
-    - name: Taimine
-      url: https://taimine.com
-      img: taimine.png
-      twitter: taimineminer
-      facebook: taimineindustries
-      email_address: service@taimine.com
-      region: as
-      country: TW
-      lang: zh
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: ViaBTC
-      url: https://pool.viabtc.com/
-      img: viabtc.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
+- name: Antpool
+  url: https://antpool.com/
+  img: antpool.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: BitClub Network
+  url: https://bitclubpool.com/
+  img: bitclub.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Bitcoin.com
+  url: https://pool.bitcoin.com/
+  img: bitcoincom.png
+  bch: true
+  btc: true
+  othercrypto: false
+- name: BitMain
+  url: https://www.bitmain.com/
+  img: bitmain.png
+  twitter: bitmaintech
+  bch: true
+  btc: true
+  othercrypto: true
+- name: BTC.com
+  url: https://pool.btc.com
+  img: btccom.png
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Gigampz
+  url: http://www.gigampz.com
+  twitter: gigampz
+  img: gigampz.png
+  bch: true
+  btc: false
+  othercrypto: false
+- name: GPU Mining Bios
+  url: https://mining-bios.eu/
+  img: miningbios.png
+  facebook: indeedminers
+  region: eu
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://mining-bios.eu/2018/01/21/more-native-crypto/
+- name: gpuShack
+  url: https://www.gpushack.com
+  twitter: gpuShack
+  facebook: shack.gpu
+  img: gpushack.png
+  bch: true
+  btc: false
+  othercrypto: true
+  doc: https://gpushack.com/pages/bitcoin-payments
+- name: MinerParts
+  url: https://minerparts.com/
+  img: minerparts.png
+  twitter: MinerParts
+  facebook: minerparts
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinpayments.net
+- name: Suprnova
+  url: https://www.suprnova.cc/
+  img: suprnova.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Taimine
+  url: https://taimine.com
+  img: taimine.png
+  twitter: taimineminer
+  facebook: taimineindustries
+  email_address: service@taimine.com
+  region: as
+  country: TW
+  lang: zh
+  bch: true
+  btc: true
+  othercrypto: true
+- name: ViaBTC
+  url: https://pool.viabtc.com/
+  img: viabtc.png
+  bch: true
+  btc: true
+  othercrypto: true

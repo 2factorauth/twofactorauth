@@ -1,87 +1,88 @@
+---
 websites:
-    - name: Bandicam
-      url: https://www.bandicam.com/
-      img: bandicam.png
-      twitter: bandicam
-      facebook: bandicam
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      keywords:
-      - bitpay
-      - bip70
-    - name: Binary Fortress Software
-      url: https://www.binaryfortress.com/
-      img: binaryfortress.png
-      twitter: BinaryFortress
-      facebook: BinaryFortress
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      keywords:
-      - bitpay
-      - bip70
-    - name: Daemon Tools
-      url: https://www.daemon-tools.cc/
-      img: daemontools.png
-      twitter: daemon_tools_cc
-      facebook: daemontools
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coinify
-    - name: Email Marketing Software Ninja
-      url: https://ems.ninja/
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - gourl
-    - name: Internet Download Manager
-      url: http://www.internetdownloadmanager.com/
-      img: idm.png
-      email_address: info@tonec.com
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coinify
-    - name: pcTattletale
-      url: https://www.pctattletale.com/
-      img: pctattletale.png
-      twitter: pctattle
-      facebook: pctattletalesw
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://www.pctattletale.com/blog/2961/buy-with-bitcoin/
-      keywords:
-      - bitpay
-      - bip70
-    - name: RealityRipple Software
-      url: https://realityripple.com
-      img: realityripple.png
-      email_address: webmaster@RealityRipple.com
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-    - name: RedFox
-      url: https://www.redfox.bz/
-      img: redfox.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://www.redfox.bz/bitcoin.html
-    - name: XSplit
-      url: https://www.xsplit.com/
-      img: xsplit.png
-      twitter: xsplit
-      facebook: XSplit
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      keywords:
-      - xsolla
-      - bitpay
-      - bip70
+- name: Bandicam
+  url: https://www.bandicam.com/
+  img: bandicam.png
+  twitter: bandicam
+  facebook: bandicam
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: Binary Fortress Software
+  url: https://www.binaryfortress.com/
+  img: binaryfortress.png
+  twitter: BinaryFortress
+  facebook: BinaryFortress
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: Daemon Tools
+  url: https://www.daemon-tools.cc/
+  img: daemontools.png
+  twitter: daemon_tools_cc
+  facebook: daemontools
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinify
+- name: Email Marketing Software Ninja
+  url: https://ems.ninja/
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - gourl
+- name: Internet Download Manager
+  url: http://www.internetdownloadmanager.com/
+  img: idm.png
+  email_address: info@tonec.com
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinify
+- name: pcTattletale
+  url: https://www.pctattletale.com/
+  img: pctattletale.png
+  twitter: pctattle
+  facebook: pctattletalesw
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://www.pctattletale.com/blog/2961/buy-with-bitcoin/
+  keywords:
+  - bitpay
+  - bip70
+- name: RealityRipple Software
+  url: https://realityripple.com
+  img: realityripple.png
+  email_address: webmaster@RealityRipple.com
+  bch: true
+  btc: true
+  othercrypto: true
+- name: RedFox
+  url: https://www.redfox.bz/
+  img: redfox.png
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.redfox.bz/bitcoin.html
+- name: XSplit
+  url: https://www.xsplit.com/
+  img: xsplit.png
+  twitter: xsplit
+  facebook: XSplit
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - xsolla
+  - bitpay
+  - bip70

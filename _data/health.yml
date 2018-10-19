@@ -73,7 +73,8 @@ websites:
   btc: false
   othercrypto: false
   exceptions:
-    text: "Beard Friendly used to accept BTC, but as of 2018-05-31 stopped accepting it"
+    text: Beard Friendly used to accept BTC, but as of 2018-05-31 stopped accepting
+      it
 - name: Beard Head
   url: https://www.beardhead.cz
   img: beardheadcz.png
@@ -147,9 +148,9 @@ websites:
   region: as
   country: JP
   city: Kyoto
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   doc: https://www.instagram.com/p/Big1SVugaAD/
 - name: CrossFit Spaarne
   url: https://www.crossfitspaarne.nl/
@@ -253,7 +254,8 @@ websites:
   btc: false
   othercrypto: false
   exceptions:
-    text: "HealthVault used to accept BTC & BCH, but as of 2018-07-07 stopped accepting it"
+    text: HealthVault used to accept BTC & BCH, but as of 2018-07-07 stopped accepting
+      it
 - name: Hint Health
   url: https://www.hint.com
   img: hint.png
@@ -360,7 +362,7 @@ websites:
   bch: true
   btc: false
   othercrypto: false
-- name:  Nature Provides
+- name: Nature Provides
   url: https://mountain-blood.com/
   img: natureprovides.png
   facebook: NatureProvidesLtd

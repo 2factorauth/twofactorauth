@@ -202,7 +202,7 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-  doc: https://www.reddit.com/r/btc/comments/9hlsio/figures_restaurant_toronto_accepts_bitcoin_cash_i/  
+  doc: https://www.reddit.com/r/btc/comments/9hlsio/figures_restaurant_toronto_accepts_bitcoin_cash_i/
 - name: Flavours Place
   url: https://www.flavoursplace.com/
   img: FlavoursPlace.png
@@ -218,9 +218,9 @@ websites:
   region: eu
   country: DE
   city: Berlin
-  bch: Yes
-  btc: Yes
-  othercrypto: No
+  bch: true
+  btc: true
+  othercrypto: false
 - name: Heat Hot Sauce Shop
   url: https://heathotsauce.com/
   img: heathotsauce.png
@@ -275,7 +275,7 @@ websites:
   btc: false
   othercrypto: false
   exceptions:
-    text: "Huel used to accept BTC & BCH, but as of 2018-08-03 stopped accepting it"
+    text: Huel used to accept BTC & BCH, but as of 2018-08-03 stopped accepting it
 - name: Hungry.dk
   url: https://www.hungry.dk/
   twitter: Hungrydk
@@ -352,7 +352,8 @@ websites:
   othercrypto: false
   doc: https://twitter.com/nishantsharma87/status/958396424269385729
   exceptions:
-    text: "Remember to ask the bartender the price of the drink in BCH before paying. The bar uses an exchange rate that may be different from the one that you use."
+    text: Remember to ask the bartender the price of the drink in BCH before paying.
+      The bar uses an exchange rate that may be different from the one that you use.
 - name: Menufy
   url: https://www.menufy.com
   img: menufy.png
@@ -418,9 +419,9 @@ websites:
   region: na
   country: CA
   city: St. Stephen
-  bch: Yes
-  btc: No
-  othercrypto: No
+  bch: true
+  btc: false
+  othercrypto: false
   doc: https://www.facebook.com/PeoplesPub/posts/2191402587761488
 - name: Pex Peppers
   url: https://www.pexpeppers.com/
@@ -488,9 +489,9 @@ websites:
   facebook: coffeeandcare
   email_address: sales@sarahscoffee.com
   country: GB
-  bch: Yes
-  btc: No
-  othercrypto: No
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Shuttle Delivery
   url: https://www.shuttledelivery.co.kr/
   img: shuttledelivery.png

@@ -1,395 +1,361 @@
+---
 websites:
-  - name: 24k Wholesale Jewelry
-    url: http://www.24kwholesalejewelry.com
-    img: 24kwholesalejewelry.png
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-
-  - name: Affici
-    url: https://www.affici.com/
-    img: affici.png
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-    keywords:
-    - coingate
-
-  - name: Amagi Metals
-    url: https://www.amagimetals.com
-    img: amagimetals.png
-    twitter: amagimetals
-    facebook: AmagiMetals
-    btc: Yes
-    bch: Yes
-    othercrypto: Yes
-    keywords:
-    - coinpayments.net
-
-  - name: Antwerp Or
-    url: https://www.antwerpor.com
-    img: antwerpor.png
-    twitter: AntwerpOr
-    facebook: AntwerpOr
-    email_address: support@antwerpor.com
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-    doc: https://www.antwerpor.com/blog/2017-08-18%20We%20Are%20Now%20Accepting%20Bitcoin%20Payments
-
-  - name: Apmex
-    url: https://www.apmex.com/
-    img: APMEX.png
-    twitter: APMEX
-    facebook: APMEX
-    region: na
-    country: US
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-
-  - name: BitGild
-    url: https://www.bitgild.com/
-    img: BitGild.png
-    twitter: Bitgildcom
-    facebook: bitgild
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-    keywords:
-    - bitpay
-    - coinpayments.net
-
-  - name: BullionStar
-    url: https://www.bullionstar.com/
-    img: bullionstar.png
-    twitter: BullionStar
-    facebook: bullionstar
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-    doc: https://www.bullionstar.com/blogs/bullionstar/bullionstar-adds-ethereum-bitcoin-cash-litecoin-payment-options-currencies/
-
-  - name: Celestial Jewelers
-    url: http://www.celestialjeweler.com/
-    img: celestialjewelers.png
-    twitter: CelestialJewler
-    facebook: CelestialJewelers
-    email_address: email@celestialjeweler.com
-    region: na
-    country: US
-    state: Georgia
-    city: Atlanta
-    bch: Yes
-    btc: No
-    othercrypto: Yes
-    exceptions:
-      text: "Call the store"
-
-  - name: Crypto Jeweler
-    url: https://cryptojeweler.com
-    img: cryptojeweler.png
-    twitter: cryptojeweler
-    facebook: CryptoJeweler
-    email_address: sales@cryptojeweler.com
-    region: na
-    country: CA
-    city: Oshawa
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-    doc: https://www.cryptojeweler.com/about-us
-    
-  - name: Denarium Bitcoin
-    url: https://denarium.com/
-    img: denariumbitcoin.png
-    twitter: DenariumBitcoin
-    facebook: denariumbitcoin
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-    
-  - name: Diadem Jewellery
-    url: https://diademjewellery.co.uk/
-    img: DiademJewellery.png
-    twitter: DiademJewellery
-    bch: No
-    btc: Yes
-    othercrypto: Yes
-
-  - name: Do Amore
-    url: https://www.doamore.com/
-    img: doamore.png
-    twitter: DoAmore
-    facebook: DoAmore
-    bch: No
-    btc: Yes
-    othercrypto: No
-    keywords:
-    - gourl
-
-  - name: Efilenka
-    url: https://t.me/Efilenka
-    img: efilenka.png
-    facebook: profile.php?id=100012520656584
-    email_address: morenita250685@gmail.com
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-
-  - name: FabFox.co.uk
-    url: https://FabFox.co.uk
-    img: fabfox.png
-    twitter: FabFoxUK
-    facebook: FabFox.co.uk
-    email_address: online@fabfox.co.uk
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-    keywords:
-    - coinbase
-
-  - name: Giacobbe and Co
-    url: https://giacobbeandco.com/
-    img: Giacobbeandco.png
-    twitter: Giacobbeandco
-    facebook: GiacobbeandCo
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-
-  - name: GoldSilver
-    url: https://goldsilver.com/
-    img: GoldSilverDotCom.png
-    twitter: GoldSilver_com
-    facebook: GoldSilverDotCom
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-
-  - name: Jens Hansen
-    url: https://www.jenshansen.com/
-    img: jenshansen.png
-    twitter: the_ringmaker
-    facebook: theringmaker
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-    keywords:
-    - bitpay
-    - bip70
-
-  - name: Jewelry Affairs
-    url: https://www.jewelryaffairs.com/
-    img: JewelryAffairs.png
-    twitter: JewelryAffairs
-    facebook: JewelryAffairs
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-
-  - name: JM Bullion
-    url: https://www.jmbullion.com/
-    img: jmbullion.png
-    twitter: JMBullion
-    facebook: JMBullion
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-    exceptions:
-      text: "Bitcoin / Bitcoin Cash is approved for orders between $100.00 and $250,000.00. All BTC / BCH Orders Receive a 3% Discount Relative to Credit Card/PayPal Pricing"
-    keywords:
-    - bitpay
-    - bip70
-
-  - name: Kobelli Jewelry
-    url: https://www.kobelli.com/
-    img: kobelli.png
-    twitter: KobelliJewelry
-    facebook: KobelliJewelry
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-    
-  - name: Menē
-    url: https://mene.com/
-    img: mene.png
-    twitter: mene
-    facebook: Mene24k
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-
-  - name: Moldavite Plus
-    url: https://www.moldaviteplus.com/
-    img: moldaviteplus.png
-    twitter: moldaviteplus
-    facebook: moldaviteplus
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-    keywords:
-    - bitpay
-    - bip70
-
-  - name: Money Metals Exchange
-    url: https://www.moneymetals.com/
-    img: moneymetals.png
-    twitter: MoneyMetals
-    facebook: MoneyMetals
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-
-  - name: Oxbridge Coins
-    url: https://oxbridgecoins.com/
-    img: oxbridgecoins.png
-    email_address: Info@oxbridgecoins.com
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-    keywords:
-    - bitpay
-    - bip70
-
-  - name: Peaceful Warrior BCH
-    url: https://peacefulwarrior.cash/
-    img: peacefulwarriorbch.png
-    twitter: PWBCH
-    email_address: peacefulwarriorbch@gmail.com
-    bch: Yes
-    btc: No
-    othercrypto: No
-    keywords:
-    - coinbase
-
-  - name: PenceBit
-    url: https://pencebit.com/
-    img: pencebit.png
-    twitter: PenceBIT
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-
-  - name: Provident Metals
-    url: https://www.providentmetals.com/
-    img: providentmetals.png
-    twitter: providentmetals
-    facebook: providentmetals
-    region: na
-    country: US
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-    keywords:
-    - bitpay
-    - bip70
-
-  - name: Reeds Jewelers
-    url: https://www.reeds.com/
-    img: reeds.png
-    twitter: ReedsJewelers
-    facebook: reedsfb
-    bch: No
-    btc: Yes
-    othercrypto: Yes
-    keywords:
-    - coinbase
-
-  - name: Roberts & Roberts
-    url: https://www.rrbi.co/
-    img: rbbi.png
-    email_address: info@rrbrokerageinc.com
-    twitter: fullmetaliberty
-    facebook: RobertsandRobertsBrokerage
-    region: na
-    country: US
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-    keywords:
-    - bitpay
-    - bip70
-
-  - name: Schiff Gold
-    url: https://schiffgold.com/
-    img: schiffgold.png
-    twitter: schiffgold
-    facebook: schiffgold
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-    
-  - name: ShinyBars
-    url: https://www.shinybars.com
-    img: shinybars.png
-    twitter: shinybarsdotcom
-    facebook: shinybars
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-    keywords:
-    - coinbase
-
-  - name: SilverGoldBull.com
-    url: https://silvergoldbull.com/
-    img: silvergoldbull.png
-    twitter: silvergoldbull
-    facebook: silvergoldbull
-    country: US
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-
-  - name: Silverinvest.no
-    url: http://www.silverinvest.no/
-    img: silverinvest.png
-    facebook: silverinvest.no
-    region: eu
-    country: 'NO'
-    lang: 'no'
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-
-  - name: That Ring Shop
-    url: https://thatringshop.com/
-    img: thatringshop.png
-    twitter: thatringshop
-    email_address: hello@thatringshop.com
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-    keywords:
-    - bitpay
-    - bip70
-
-  - name: Trendy Stone Jewelry
-    url: https://www.trendystonejewelry.com/
-    img: trendystonejewelry.png
-    twitter: TrendyStone
-    facebook: trendystonejewelry
-    email_address: sales@trendystonejewelry.com
-    bch: Yes
-    btc: Yes
-    othercrypto: No
-    doc: https://twitter.com/TrendyStone/status/1033799974788771841
-
-  - name: Veldt Gold
-    url: https://veldtgold.com/
-    img: veldtgold.png
-    bch: Yes
-    btc: Yes
-    othercrypto: Yes
-    doc: https://veldtgold.com/sell-gold-for-bitcoin/
-
-  - name: Zilvergoudwinkel
-    url: https://zilvergoudwinkel.nl/
-    img: zilvergoudwinkel.png
-    twitter: ZilverGoud
-    facebook: Zilvergoudwinkel
-    bch: No
-    btc: Yes
-    othercrypto: No
-    keywords:
-    - bitkassa
+- name: 24k Wholesale Jewelry
+  url: http://www.24kwholesalejewelry.com
+  img: 24kwholesalejewelry.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Affici
+  url: https://www.affici.com/
+  img: affici.png
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coingate
+- name: Amagi Metals
+  url: https://www.amagimetals.com
+  img: amagimetals.png
+  twitter: amagimetals
+  facebook: AmagiMetals
+  btc: true
+  bch: true
+  othercrypto: true
+  keywords:
+  - coinpayments.net
+- name: Antwerp Or
+  url: https://www.antwerpor.com
+  img: antwerpor.png
+  twitter: AntwerpOr
+  facebook: AntwerpOr
+  email_address: support@antwerpor.com
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.antwerpor.com/blog/2017-08-18%20We%20Are%20Now%20Accepting%20Bitcoin%20Payments
+- name: Apmex
+  url: https://www.apmex.com/
+  img: APMEX.png
+  twitter: APMEX
+  facebook: APMEX
+  region: na
+  country: US
+  bch: true
+  btc: true
+  othercrypto: false
+- name: BitGild
+  url: https://www.bitgild.com/
+  img: BitGild.png
+  twitter: Bitgildcom
+  facebook: bitgild
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - bitpay
+  - coinpayments.net
+- name: BullionStar
+  url: https://www.bullionstar.com/
+  img: bullionstar.png
+  twitter: BullionStar
+  facebook: bullionstar
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.bullionstar.com/blogs/bullionstar/bullionstar-adds-ethereum-bitcoin-cash-litecoin-payment-options-currencies/
+- name: Celestial Jewelers
+  url: http://www.celestialjeweler.com/
+  img: celestialjewelers.png
+  twitter: CelestialJewler
+  facebook: CelestialJewelers
+  email_address: email@celestialjeweler.com
+  region: na
+  country: US
+  state: Georgia
+  city: Atlanta
+  bch: true
+  btc: false
+  othercrypto: true
+  exceptions:
+    text: Call the store
+- name: Crypto Jeweler
+  url: https://cryptojeweler.com
+  img: cryptojeweler.png
+  twitter: cryptojeweler
+  facebook: CryptoJeweler
+  email_address: sales@cryptojeweler.com
+  region: na
+  country: CA
+  city: Oshawa
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.cryptojeweler.com/about-us
+- name: Denarium Bitcoin
+  url: https://denarium.com/
+  img: denariumbitcoin.png
+  twitter: DenariumBitcoin
+  facebook: denariumbitcoin
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Diadem Jewellery
+  url: https://diademjewellery.co.uk/
+  img: DiademJewellery.png
+  twitter: DiademJewellery
+  bch: false
+  btc: true
+  othercrypto: true
+- name: Do Amore
+  url: https://www.doamore.com/
+  img: doamore.png
+  twitter: DoAmore
+  facebook: DoAmore
+  bch: false
+  btc: true
+  othercrypto: false
+  keywords:
+  - gourl
+- name: Efilenka
+  url: https://t.me/Efilenka
+  img: efilenka.png
+  facebook: profile.php?id=100012520656584
+  email_address: morenita250685@gmail.com
+  bch: true
+  btc: true
+  othercrypto: true
+- name: FabFox.co.uk
+  url: https://FabFox.co.uk
+  img: fabfox.png
+  twitter: FabFoxUK
+  facebook: FabFox.co.uk
+  email_address: online@fabfox.co.uk
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinbase
+- name: Giacobbe and Co
+  url: https://giacobbeandco.com/
+  img: Giacobbeandco.png
+  twitter: Giacobbeandco
+  facebook: GiacobbeandCo
+  bch: true
+  btc: true
+  othercrypto: true
+- name: GoldSilver
+  url: https://goldsilver.com/
+  img: GoldSilverDotCom.png
+  twitter: GoldSilver_com
+  facebook: GoldSilverDotCom
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Jens Hansen
+  url: https://www.jenshansen.com/
+  img: jenshansen.png
+  twitter: the_ringmaker
+  facebook: theringmaker
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: Jewelry Affairs
+  url: https://www.jewelryaffairs.com/
+  img: JewelryAffairs.png
+  twitter: JewelryAffairs
+  facebook: JewelryAffairs
+  bch: true
+  btc: true
+  othercrypto: false
+- name: JM Bullion
+  url: https://www.jmbullion.com/
+  img: jmbullion.png
+  twitter: JMBullion
+  facebook: JMBullion
+  bch: true
+  btc: true
+  othercrypto: false
+  exceptions:
+    text: Bitcoin / Bitcoin Cash is approved for orders between $100.00 and $250,000.00.
+      All BTC / BCH Orders Receive a 3% Discount Relative to Credit Card/PayPal Pricing
+  keywords:
+  - bitpay
+  - bip70
+- name: Kobelli Jewelry
+  url: https://www.kobelli.com/
+  img: kobelli.png
+  twitter: KobelliJewelry
+  facebook: KobelliJewelry
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Menē
+  url: https://mene.com/
+  img: mene.png
+  twitter: mene
+  facebook: Mene24k
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Moldavite Plus
+  url: https://www.moldaviteplus.com/
+  img: moldaviteplus.png
+  twitter: moldaviteplus
+  facebook: moldaviteplus
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: Money Metals Exchange
+  url: https://www.moneymetals.com/
+  img: moneymetals.png
+  twitter: MoneyMetals
+  facebook: MoneyMetals
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Oxbridge Coins
+  url: https://oxbridgecoins.com/
+  img: oxbridgecoins.png
+  email_address: Info@oxbridgecoins.com
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: Peaceful Warrior BCH
+  url: https://peacefulwarrior.cash/
+  img: peacefulwarriorbch.png
+  twitter: PWBCH
+  email_address: peacefulwarriorbch@gmail.com
+  bch: true
+  btc: false
+  othercrypto: false
+  keywords:
+  - coinbase
+- name: PenceBit
+  url: https://pencebit.com/
+  img: pencebit.png
+  twitter: PenceBIT
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Provident Metals
+  url: https://www.providentmetals.com/
+  img: providentmetals.png
+  twitter: providentmetals
+  facebook: providentmetals
+  region: na
+  country: US
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: Reeds Jewelers
+  url: https://www.reeds.com/
+  img: reeds.png
+  twitter: ReedsJewelers
+  facebook: reedsfb
+  bch: false
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinbase
+- name: Roberts & Roberts
+  url: https://www.rrbi.co/
+  img: rbbi.png
+  email_address: info@rrbrokerageinc.com
+  twitter: fullmetaliberty
+  facebook: RobertsandRobertsBrokerage
+  region: na
+  country: US
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: Schiff Gold
+  url: https://schiffgold.com/
+  img: schiffgold.png
+  twitter: schiffgold
+  facebook: schiffgold
+  bch: true
+  btc: true
+  othercrypto: false
+- name: ShinyBars
+  url: https://www.shinybars.com
+  img: shinybars.png
+  twitter: shinybarsdotcom
+  facebook: shinybars
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinbase
+- name: SilverGoldBull.com
+  url: https://silvergoldbull.com/
+  img: silvergoldbull.png
+  twitter: silvergoldbull
+  facebook: silvergoldbull
+  country: US
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Silverinvest.no
+  url: http://www.silverinvest.no/
+  img: silverinvest.png
+  facebook: silverinvest.no
+  region: eu
+  country: 'NO'
+  lang: 'no'
+  bch: true
+  btc: true
+  othercrypto: false
+- name: That Ring Shop
+  url: https://thatringshop.com/
+  img: thatringshop.png
+  twitter: thatringshop
+  email_address: hello@thatringshop.com
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: Trendy Stone Jewelry
+  url: https://www.trendystonejewelry.com/
+  img: trendystonejewelry.png
+  twitter: TrendyStone
+  facebook: trendystonejewelry
+  email_address: sales@trendystonejewelry.com
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://twitter.com/TrendyStone/status/1033799974788771841
+- name: Veldt Gold
+  url: https://veldtgold.com/
+  img: veldtgold.png
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://veldtgold.com/sell-gold-for-bitcoin/
+- name: Zilvergoudwinkel
+  url: https://zilvergoudwinkel.nl/
+  img: zilvergoudwinkel.png
+  twitter: ZilverGoud
+  facebook: Zilvergoudwinkel
+  bch: false
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitkassa
