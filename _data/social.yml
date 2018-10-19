@@ -1,302 +1,270 @@
+---
 websites:
-    - name: about.me
-      url: https://about.me
-      img: aboutme.png
-      bch: No
-      twitter: aboutdotme
-
-    - name: Badoo
-      url: https://badoo.com
-      img: badoo.png
-      bch: No
-      twitter: Badoo
-
-    - name: Bitly
-      url: https://bitly.com/
-      img: bitly.png
-      bch: No
-      twitter: bitly
-      facebook: bitly
-
-    - name: BlockPress
-      url: https://blockpress.com
-      img: blockpress.png
-      twitter: BlockPressApp
-      bch: Yes
-      btc: No
-      othercrypto: No
-
-    - name: Buffer
-      url: https://bufferapp.com
-      img: bufferapp.png
-      bch: No
-      twitter: buffer
-
-    - name: DeviantArt
-      url: https://www.deviantart.com
-      img: deviantart.png
-      bch: No
-      twitter: deviantart
-      facebook: deviantart
-
-    - name: Ello
-      url: https://ello.co
-      img: ello.png
-      bch: No
-      twitter: ellohype
-      facebook: ellohype
-      email_address: suggestions@ello.co
-
-    - name: Facebook
-      url: https://facebook.com
-      img: facebook.png
-      bch: No
-      twitter: facebook
-      facebook: Facebook
-
-    - name: Findmate
-      url: https://findmate.app/
-      img: findmate.png
-      twitter: FindmateApp
-      facebook: FindmateApp
-      email_address: findmate.asia@gmail.com
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://findmate.app/content/bitcoin
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: Flipboard
-      url: https://flipboard.com
-      img: flipboard.png
-      bch: No
-      twitter: FlipboardCS
-
-    - name: Foursquare
-      url: https://foursquare.com
-      img: foursquare.png
-      bch: No
-      twitter: foursquare
-
-    - name: gab.ai
-      url: https://gab.ai/
-      img: gabai.png
-      twitter: getongab
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      keywords:
-      - bitpay
-      - bip70
-      doc: https://www.reddit.com/r/btc/comments/991j2a/gabai_accepts_bitcoin_cash_through_bitpay_gab_is/
-
-    - name: Goodreads
-      url: https://www.goodreads.com
-      img: goodreads.png
-      bch: No
-      twitter: goodreads
-
-    - name: Google+
-      url: https://plus.google.com
-      img: g+.png
-      bch: No
-      twitter: GooglePlus
-      facebook: GooglePlus
-
-    - name: HootSuite
-      url: https://hootsuite.com
-      img: hootsuite.png
-      bch: No
-      twitter: hootsuite
-      facebook: hootsuite
-
-    - name: ICQ
-      url: https://icq.com/
-      img: icq.png
-      bch: No
-      twitter: ICQ
-      facebook: ICQ
-
-    - name: Imgur
-      url: https://imgur.com
-      img: imgur.png
-      bch: No
-      twitter: imgur
-
-    - name: Instagram
-      url: https://www.instagram.com
-      img: instagram.png
-      bch: No
-      twitter: Instagram
-      facebook: Instagram
-
-    - name: LinkedIn
-      url: https://linkedin.com
-      img: linkedin.png
-      bch: No
-      twitter: LinkedIn
-      facebook: LinkedIn
-
-    - name: LiveJournal
-      url: https://www.livejournal.com
-      img: livejournal.png
-      bch: No
-      twitter: LiveJournal
-
-    - name: Lobsters
-      url: https://lobste.rs/
-      img: lobsters.png
-      bch: No
-      twitter: lobsters
-
-    - name: Medium
-      url: https://medium.com
-      img: medium.png
-      bch: No
-      twitter: Medium
-      facebook: Medium
-
-    - name: Meetup
-      url: https://www.meetup.com
-      img: meetup.png
-      bch: No
-      twitter: meetup_support
-
-    - name: Memo.cash
-      url: https://memo.cash
-      img: memocash.png
-      bch: Yes
-      doc: https://memo.cash/introducing-memo
-
-    - name: Minds
-      url: https://www.minds.com/
-      img: minds.png
-      bch: No
-      twitter: minds
-      email_address: info@minds.com
-
-    - name: Newgrounds
-      url: https://www.newgrounds.com/
-      img: newgrounds.png
-      bch: No
-      twitter: Newgrounds
-      facebook: newgrounds
-      email_address: support@newgrounds.com
-
-    - name: Nextdoor
-      url: https://nextdoor.com
-      img: nextdoor.png
-      bch: No
-      twitter: Nextdoor
-
-    - name: OkCupid
-      url: https://www.okcupid.com/
-      img: okcupid.png
-      bch: No
-      twitter: okcupid
-      facebook: okcupid
-      exceptions:
-          text: "OkCupid accepted Bitcoin until March 2017."
-
-    - name: Pinterest
-      url: https://pinterest.com
-      img: pinterest.png
-      bch: No
-      twitter: Pinterest
-      facebook: Pinterest
-
-    - name: Quora
-      url: https://www.quora.com
-      img: quora.png
-      bch: No
-      twitter: quora
-
-    - name: Reddit
-      url: https://www.reddit.com/
-      img: reddit.png
-      twitter: reddit
-      bch: No
-      btc: No
-      exceptions:
-        text: "On March 23rd, 2018 Reddit disabled BTC payments for buying Reddit Gold."
-
-    - name: Snapchat
-      url: https://www.snapchat.com/
-      img: snapchat.png
-      bch: No
-      twitter: SnapChat
-      facebook: SnapChat
-
-    - name: Stack Exchange
-      url: https://stackexchange.com/
-      img: stack_exchange.png
-      bch: No
-      twitter: StackExchange
-
-    - name: Tumblr
-      url: https://www.tumblr.com/
-      img: tumblr.png
-      bch: No
-      twitter: tumblr
-      facebook: Tumblr
-
-    - name: Twitter
-      url: https://twitter.com
-      img: twitter.png
-      bch: No
-      twitter: twitter
-      facebook: TwitterInc
-
-    - name: VanillaForums.com
-      url: https://vanillaforums.com
-      img: vanilla.png
-      bch: No
-      twitter: vanilla
-
-    - name: Viadeo
-      url: http://www.viadeo.com
-      img: viadeo.png
-      bch: No
-      twitter: Viadeo
-
-    - name: VK
-      url: https://vk.com
-      img: vk.png
-      bch: No
-      email_address: partners@corp.vk.com
-
-
-    - name: Weibo
-      url: https://www.weibo.com
-      img: weibo.png
-      bch: No
-      twitter: ChineseWeibo
-
-    - name: WordPress.com
-      url: https://wordpress.com
-      img: wordpress.png
-      bch: No
-      twitter:
-      facebook:
-
-    - name: XING
-      url: https://www.xing.com
-      img: xing.png
-      bch: No
-      twitter: XING_com
-
-    - name: Yours
-      url: https://www.yours.org
-      img: yours.png
-      bch: Yes
-      btc: No
-      twitter: YoursOrg
-
-    - name: Zocle
-      url: https://zocle.com/
-      img: zocle.png
-      bch: No
-      twitter: zocle
-      facebook: zocleapp
+- name: about.me
+  url: https://about.me
+  img: aboutme.png
+  bch: false
+  twitter: aboutdotme
+- name: Badoo
+  url: https://badoo.com
+  img: badoo.png
+  bch: false
+  twitter: Badoo
+- name: Bitly
+  url: https://bitly.com/
+  img: bitly.png
+  bch: false
+  twitter: bitly
+  facebook: bitly
+- name: BitSoapBox
+  url: http://bitsoapbox.com
+  img: bitsoapbox.png
+  twitter: bitsoapbox
+  email_address: admin@dotcomwriters.com
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: Select Bitcoin Cash Payment under user options.
+- name: BlockPress
+  url: https://blockpress.com
+  img: blockpress.png
+  twitter: BlockPressApp
+  bch: true
+  btc: false
+  othercrypto: false
+- name: Buffer
+  url: https://bufferapp.com
+  img: bufferapp.png
+  bch: false
+  twitter: buffer
+- name: DeviantArt
+  url: https://www.deviantart.com
+  img: deviantart.png
+  bch: false
+  twitter: deviantart
+  facebook: deviantart
+- name: Ello
+  url: https://ello.co
+  img: ello.png
+  bch: false
+  twitter: ellohype
+  facebook: ellohype
+  email_address: suggestions@ello.co
+- name: Facebook
+  url: https://facebook.com
+  img: facebook.png
+  bch: false
+  twitter: facebook
+  facebook: Facebook
+- name: Findmate
+  url: https://findmate.app/
+  img: findmate.png
+  twitter: FindmateApp
+  facebook: FindmateApp
+  email_address: findmate.asia@gmail.com
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://findmate.app/content/bitcoin
+  keywords:
+  - bitpay
+  - bip70
+- name: Flipboard
+  url: https://flipboard.com
+  img: flipboard.png
+  bch: false
+  twitter: FlipboardCS
+- name: Foursquare
+  url: https://foursquare.com
+  img: foursquare.png
+  bch: false
+  twitter: foursquare
+- name: gab.ai
+  url: https://gab.ai/
+  img: gabai.png
+  twitter: getongab
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+  doc: https://www.reddit.com/r/btc/comments/991j2a/gabai_accepts_bitcoin_cash_through_bitpay_gab_is/
+- name: Goodreads
+  url: https://www.goodreads.com
+  img: goodreads.png
+  bch: false
+  twitter: goodreads
+- name: Google+
+  url: https://plus.google.com
+  img: g+.png
+  bch: false
+  twitter: GooglePlus
+  facebook: GooglePlus
+- name: HootSuite
+  url: https://hootsuite.com
+  img: hootsuite.png
+  bch: false
+  twitter: hootsuite
+  facebook: hootsuite
+- name: ICQ
+  url: https://icq.com/
+  img: icq.png
+  bch: false
+  twitter: ICQ
+  facebook: ICQ
+- name: Imgur
+  url: https://imgur.com
+  img: imgur.png
+  bch: false
+  twitter: imgur
+- name: Instagram
+  url: https://www.instagram.com
+  img: instagram.png
+  bch: false
+  twitter: Instagram
+  facebook: Instagram
+- name: LinkedIn
+  url: https://linkedin.com
+  img: linkedin.png
+  bch: false
+  twitter: LinkedIn
+  facebook: LinkedIn
+- name: LiveJournal
+  url: https://www.livejournal.com
+  img: livejournal.png
+  bch: false
+  twitter: LiveJournal
+- name: Lobsters
+  url: https://lobste.rs/
+  img: lobsters.png
+  bch: false
+  twitter: lobsters
+- name: Medium
+  url: https://medium.com
+  img: medium.png
+  bch: false
+  twitter: Medium
+  facebook: Medium
+- name: Meetup
+  url: https://www.meetup.com
+  img: meetup.png
+  bch: false
+  twitter: meetup_support
+- name: Memo.cash
+  url: https://memo.cash
+  img: memocash.png
+  bch: true
+  doc: https://memo.cash/introducing-memo
+- name: Minds
+  url: https://www.minds.com/
+  img: minds.png
+  bch: false
+  twitter: minds
+  email_address: info@minds.com
+- name: Newgrounds
+  url: https://www.newgrounds.com/
+  img: newgrounds.png
+  bch: false
+  twitter: Newgrounds
+  facebook: newgrounds
+  email_address: support@newgrounds.com
+- name: Nextdoor
+  url: https://nextdoor.com
+  img: nextdoor.png
+  bch: false
+  twitter: Nextdoor
+- name: OkCupid
+  url: https://www.okcupid.com/
+  img: okcupid.png
+  bch: false
+  twitter: okcupid
+  facebook: okcupid
+  exceptions:
+    text: OkCupid accepted Bitcoin until March 2017.
+- name: Pinterest
+  url: https://pinterest.com
+  img: pinterest.png
+  bch: false
+  twitter: Pinterest
+  facebook: Pinterest
+- name: Quora
+  url: https://www.quora.com
+  img: quora.png
+  bch: false
+  twitter: quora
+- name: Reddit
+  url: https://www.reddit.com/
+  img: reddit.png
+  twitter: reddit
+  bch: false
+  btc: false
+  exceptions:
+    text: On March 23rd, 2018 Reddit disabled BTC payments for buying Reddit Gold.
+- name: Snapchat
+  url: https://www.snapchat.com/
+  img: snapchat.png
+  bch: false
+  twitter: SnapChat
+  facebook: SnapChat
+- name: Stack Exchange
+  url: https://stackexchange.com/
+  img: stack_exchange.png
+  bch: false
+  twitter: StackExchange
+- name: Tumblr
+  url: https://www.tumblr.com/
+  img: tumblr.png
+  bch: false
+  twitter: tumblr
+  facebook: Tumblr
+- name: Twitter
+  url: https://twitter.com
+  img: twitter.png
+  bch: false
+  twitter: twitter
+  facebook: TwitterInc
+- name: VanillaForums.com
+  url: https://vanillaforums.com
+  img: vanilla.png
+  bch: false
+  twitter: vanilla
+- name: Viadeo
+  url: http://www.viadeo.com
+  img: viadeo.png
+  bch: false
+  twitter: Viadeo
+- name: VK
+  url: https://vk.com
+  img: vk.png
+  bch: false
+  email_address: partners@corp.vk.com
+- name: Weibo
+  url: https://www.weibo.com
+  img: weibo.png
+  bch: false
+  twitter: ChineseWeibo
+- name: WordPress.com
+  url: https://wordpress.com
+  img: wordpress.png
+  bch: false
+  twitter: 
+  facebook: 
+- name: XING
+  url: https://www.xing.com
+  img: xing.png
+  bch: false
+  twitter: XING_com
+- name: Yours
+  url: https://www.yours.org
+  img: yours.png
+  bch: true
+  btc: false
+  twitter: YoursOrg
+- name: Zocle
+  url: https://zocle.com/
+  img: zocle.png
+  bch: false
+  twitter: zocle
+  facebook: zocleapp

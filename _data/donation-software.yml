@@ -32,6 +32,18 @@ websites:
   btc: false
   othercrypto: false
   doc: https://pos.cheddr.cash/#landingDonate
+- name: DAVDroid
+  url: https://www.davdroid.com/donate/
+  img: DAVDroid.png
+  twitter: davdroidapp
+  facebook: 
+  region: eu
+  country: AT
+  city: Bad Vöslau
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://twitter.com/davdroidapp/status/1045246447682310146
 - name: Electron Cash
   url: https://electroncash.org/
   img: electroncash.png
@@ -111,7 +123,8 @@ websites:
   - bitpay
   - bip70
   exceptions:
-    text: "BitPay limits the size of transactions we can accept to $10000 per day. Larger BitCoin donations may need to be split up and donated over multiple days."
+    text: BitPay limits the size of transactions we can accept to $10000 per day.
+      Larger BitCoin donations may need to be split up and donated over multiple days.
 - name: Pi-hole
   url: https://pi-hole.net
   img: pihole.png
@@ -167,9 +180,9 @@ websites:
   img: Tutanota.png
   twitter: tutanotateam
   facebook: tutanota
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   doc: https://www.tutanota.com/community#donate
 - name: VeraCrypt
   url: https://veracrypt.fr/
