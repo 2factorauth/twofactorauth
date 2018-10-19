@@ -8,17 +8,17 @@ websites:
   facebook: Ankama
 - name: Bitcoin Cash Dozer
   url: https://dozer.cash/
-  bch: Yes
-  btc: No
-  othercrypto: No
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Bitcoin Cash Football
   url: https://BitcoinCashFootball.com/
   img: bchfootball.png
   twitter: PeanutManEric
   email_address: Eric@BitcoinCashFootball.com
-  bch: Yes
-  btc: No
-  othercrypto: No
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Black Desert Online
   url: https://www.blackdesertonline.com/
   img: bdo.png
@@ -301,9 +301,9 @@ websites:
   twitter: mmogah_com
   facebook: MmoGahGold
   email_address: mmogah@gmail.com
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   keywords:
   - coinbase
 - name: MOGS
@@ -497,7 +497,8 @@ websites:
   twitter: XboxSupport
   facebook: Xbox
   exceptions:
-    text: "Xbox Live used to accept BTC & BCH, but as of 2018-07-07 stopped accepting it"
+    text: Xbox Live used to accept BTC & BCH, but as of 2018-07-07 stopped accepting
+      it
 - name: YoYo Games
   url: https://www.yoyogames.com/
   img: yoyogames.png

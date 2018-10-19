@@ -1,526 +1,471 @@
+---
 websites:
-    - name: American Electric Power
-      url: https://www.aep.com/
-      twitter: AEPnews
-      facebook: americanelectricpower
-      img: aep.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Andrews &amp; Arnold
-      url: https://aa.net.uk
-      img: aaisp.png
-      twitter: aaisp
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: AT&amp;T
-      url: https://www.att.com/
-      twitter: ATTCares
-      facebook: ATT
-      img: att.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: CallCentric
-      url: https://www.callcentric.com/
-      img: callcentric.png
-      twitter: callcentric
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: CenturyLink
-      url: https://www.centurylink.com/
-      twitter: CenturyLink
-      facebook: CenturyLink
-      img: centurylink.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Charter Spectrum
-      url: https://www.spectrum.com/
-      twitter: GetSpectrum
-      facebook: Spectrum
-      img: charter.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Comcast
-      url: https://www.xfinity.com/
-      img: comcast.png
-      twitter: xfinity
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Con Edison
-      url: https://www.coned.com/
-      twitter: ConEdison
-      facebook: ConEdison
-      img: coned.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Cox
-      url: https://www.cox.com/
-      twitter: CoxHelp
-      facebook: coxcommunications
-      img: cox.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: DIRECTV
-      url: https://www.directv.com/
-      twitter: DIRECTVService
-      facebook: directv
-      img: directv.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: DISH Network
-      url: https://www.dish.com/
-      twitter: dish_answers
-      facebook: DISH
-      img: dish.png
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Dominion Energy
-      url: https://www.dominionenergy.com/
-      twitter: dominionenergy
-      img: dominion.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: DTE Energy
-      url: https://www.dteenergy.com/
-      twitter: DTE_Energy
-      facebook: dteenergy
-      img: dteenergy.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Duke Energy
-      url: https://www.duke-energy.com/
-      twitter: DukeEnergy
-      facebook: duke.energy
-      img: duke.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: ecodirect
-      url: http://www.ecodirect.com/
-      img: ecodirect.png
-      twitter: ecodirect
-      facebook: ecodirect
-      btc: No
-      bch: No
-      othercrypto: No
-      exceptions:
-        text: "ecodirect used to accept BTC, but as of 2018-10-12 stopped accepting it"
-
-    - name: EE
-      url: https://ee.co.uk/
-      twitter: EE
-      facebook: ee
-      img: ee.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Eversource
-      url: https://www.eversource.com/
-      twitter: EversourceCorp
-      facebook: EversourceEnergy
-      img: eversource.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Florida Power and Light
-      url: https://www.fpl.com/
-      twitter: insideFPL
-      facebook: fplconnect
-      img: fpl.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Frontier
-      url: https://frontier.com/
-      twitter: AskFrontier
-      facebook: FrontierCorp
-      img: frontier.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Georgia Power
-      url: https://www.georgiapower.com/
-      twitter: GeorgiaPower
-      facebook: GeorgiaPower
-      img: georgiapower.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: GoGreenSolar.com
-      url: https://www.gogreensolar.com
-      twitter: gogreensolar
-      facebook: gogreensolar
-      img: gogreensolar.png
-      bch: No
-      btc: No
-      othercrypto: No
-      exceptions:
-        text: "GoGreenSolar.com used to accept BTC, but as of 2018-10-12 stopped accepting it"
-
-    - name: Google Fiber
-      url: https://fiber.google.com/
-      img: googlefiber.png
-      twitter: googlefiber
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Halebop
-      url: https://www.halebop.se/
-      img: halebop.png
-      twitter: halebop_sverige
-      facebook: halebop
-      bch: No
-      btc: No
-      othercrypto: No
-      
-    - name: Hushed
-      url: https://hushed.com/
-      img: hushed.png
-      twitter: hushedapp
-      email_address: support@hushed.com
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://hushed.com/payment-step-1/
-
-    - name: LV.Net
-      url: https://www.lv.net
-      img: LVNet.png
-      twitter: LVNet
-      region: na
-      country: US
-      bch: No
-      btc: Yes
-      othercrypto: Yes
-      
-    - name: Mobile Vikings
-      url: https://mobilevikings.be/en/v2/
-      img: mobilevikings.png
-      twitter: mobilevikingsBE
-      facebook: mobilevikings
-      email_address: info@mobilevikings.be
-      region: eu
-      country: BE
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Moj Tele2
-      url: https://moj.tele2.hr/
-      twitter: Tele2Croatia
-      facebook: tele2.hr
-      img: mojtele2.png
-      bch: No
-      btc: No
-      othercrypto: No
-      lang: hr
-
-    - name: Optus
-      url: https://www.optus.com.au/
-      twitter: Optus
-      facebook: optus
-      img: optus.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: opwaarderen.nl
-      url: https://www.opwaarderen.nl
-      img: opwaarderen.png
-      twitter: opwaarderen
-      facebook: opwaarderen
-      region: eu
-      country: NL
-      lang: nl
-      bch: No
-      btc: No
-      othercrypto: No
-      
-    - name: Orange
-      url: https://www.orange.fr/portail
-      twitter: Orange_France
-      facebook: Orange.France
-      img: orange.png
-      bch: No
-      btc: No
-      othercrypto: No
-      lang: fr
-
-    - name: Pacific Gas and Electric Company PG&amp;E
-      url: https://www.pge.com/
-      twitter: PGE4Me
-      facebook: pacificgasandelectric
-      img: pge.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: PowerStream
-      url: https://www.powerstream.ca/
-      twitter: PowerStreamNews
-      facebook: PowerStreamPage
-      img: powerstream.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Project Fi
-      url: https://fi.google.com/
-      img: projectfi.png
-      twitter: projectfi
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: RCN
-      url: https://www.rcn.com/
-      twitter: RCNconnects
-      facebook: RCN
-      img: rcn.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Rochester Gas & Electric
-      url: https://www.rge.com/
-      twitter: RGandE
-      facebook: RochGandE
-      img: rge.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Rogers
-      url: https://www.rogers.com/
-      twitter: RogersHelps
-      facebook: Rogers
-      img: rogers.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: San Diego Gas & Electric
-      url: https://www.sdge.com/
-      twitter: SDGE
-      facebook: SanDiegoGasandElectric
-      img: sdge.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Sonic
-      url: https://www.sonic.com/
-      img: sonic.png
-      twitter: sonic
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Southern California Edison
-      url: https://www.sce.com/
-      twitter: SCE
-      facebook: sce
-      img: sce.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Sprint
-      url: https://www.sprint.com/
-      twitter: sprint
-      facebook: sprint
-      img: sprint.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: T-Mobile
-      url: https://www.t-mobile.com/
-      twitter: TMobileHelp
-      facebook: TMobile
-      img: tmobile.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Telia (Sweden)
-      url: https://www.telia.se/
-      img: telia.png
-      twitter: teliadanmark
-      facebook: teliadanmark
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Telstra
-      url: https://www.telstra.com.au/
-      twitter: Telstra
-      facebook: Telstra24x7
-      img: telstra.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Telzio
-      url: https://www.telzio.com/
-      img: telzio.png
-      twitter: telzio
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Three UK
-      url: http://www.three.co.uk/
-      twitter: ThreeUK
-      facebook: ThreeUK
-      img: three.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Time Warner Cable
-      url: https://www.timewarnercable.com/
-      twitter: TWC_Help
-      facebook: twc
-      img: timewarner.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Ting
-      url: https://ting.com/
-      img: ting.png
-      twitter: tingFTW
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Verizon
-      url: https://www.verizon.com/
-      twitter: VerizonSupport
-      facebook: verizon
-      img: verizon.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Verizon Wireless
-      url: https://www.verizonwireless.com/
-      twitter: VZWSupport
-      img: verizon.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Vimla
-      url: https://vimla.se/
-      twitter: Vimla_se
-      facebook: vimla.se
-      img: vimla.png
-      bch: No
-      btc: No
-      othercrypto: No
-      lang: sv
-
-    - name: Virgin Media (IE)
-      url: https://www.virginmedia.ie/
-      twitter: VirginMediaIE
-      facebook: VirginMediaIreland
-      img: virginmedia.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Virgin Media (UK)
-      url: https://www.virginmedia.com/
-      twitter: virginmedia
-      facebook: virginmedia
-      img: virginmedia.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Virgin Mobile
-      url: https://www.virgin.com/gateways/mobile
-      twitter: Virgin
-      facebook: virgin
-      img: virginmobile.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Vodafone (IE)
-      url: https://www.vodafone.ie/
-      twitter: VodafoneIreland
-      facebook: vodafoneireland
-      img: vodafone.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Vodafone (IT)
-      url: http://www.vodafone.it/
-      twitter: VodafoneIT
-      facebook: vodafoneit
-      img: vodafone.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Vodafone (UK)
-      url: https://www.vodafone.co.uk/
-      img: vodafone.png
-      twitter: vodafoneUK
-      facebook: vodafoneuk
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: VoIP Supply
-      url: https://www.voipsupply.com
-      img: voipsupply.png
-      bch: No
-      btc: No
-      othercrypto: No
-      exceptions:
-        text: "Stopped supporting Bitcoin in the beginning of June 2017"
-
-    - name: VoIP.ms
-      url: https://voip.ms/
-      twitter: voipms
-      img: voipms.png
-      bch: No
-      btc: No
-      othercrypto: No
+- name: American Electric Power
+  url: https://www.aep.com/
+  twitter: AEPnews
+  facebook: americanelectricpower
+  img: aep.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Andrews &amp; Arnold
+  url: https://aa.net.uk
+  img: aaisp.png
+  twitter: aaisp
+  bch: false
+  btc: false
+  othercrypto: false
+- name: AT&amp;T
+  url: https://www.att.com/
+  twitter: ATTCares
+  facebook: ATT
+  img: att.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: CallCentric
+  url: https://www.callcentric.com/
+  img: callcentric.png
+  twitter: callcentric
+  bch: false
+  btc: false
+  othercrypto: false
+- name: CenturyLink
+  url: https://www.centurylink.com/
+  twitter: CenturyLink
+  facebook: CenturyLink
+  img: centurylink.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Charter Spectrum
+  url: https://www.spectrum.com/
+  twitter: GetSpectrum
+  facebook: Spectrum
+  img: charter.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Comcast
+  url: https://www.xfinity.com/
+  img: comcast.png
+  twitter: xfinity
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Con Edison
+  url: https://www.coned.com/
+  twitter: ConEdison
+  facebook: ConEdison
+  img: coned.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Cox
+  url: https://www.cox.com/
+  twitter: CoxHelp
+  facebook: coxcommunications
+  img: cox.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: DIRECTV
+  url: https://www.directv.com/
+  twitter: DIRECTVService
+  facebook: directv
+  img: directv.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: DISH Network
+  url: https://www.dish.com/
+  twitter: dish_answers
+  facebook: DISH
+  img: dish.png
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Dominion Energy
+  url: https://www.dominionenergy.com/
+  twitter: dominionenergy
+  img: dominion.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: DTE Energy
+  url: https://www.dteenergy.com/
+  twitter: DTE_Energy
+  facebook: dteenergy
+  img: dteenergy.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Duke Energy
+  url: https://www.duke-energy.com/
+  twitter: DukeEnergy
+  facebook: duke.energy
+  img: duke.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: ecodirect
+  url: http://www.ecodirect.com/
+  img: ecodirect.png
+  twitter: ecodirect
+  facebook: ecodirect
+  btc: false
+  bch: false
+  othercrypto: false
+  exceptions:
+    text: ecodirect used to accept BTC, but as of 2018-10-12 stopped accepting it
+- name: EE
+  url: https://ee.co.uk/
+  twitter: EE
+  facebook: ee
+  img: ee.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Eversource
+  url: https://www.eversource.com/
+  twitter: EversourceCorp
+  facebook: EversourceEnergy
+  img: eversource.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Florida Power and Light
+  url: https://www.fpl.com/
+  twitter: insideFPL
+  facebook: fplconnect
+  img: fpl.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Frontier
+  url: https://frontier.com/
+  twitter: AskFrontier
+  facebook: FrontierCorp
+  img: frontier.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Georgia Power
+  url: https://www.georgiapower.com/
+  twitter: GeorgiaPower
+  facebook: GeorgiaPower
+  img: georgiapower.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: GoGreenSolar.com
+  url: https://www.gogreensolar.com
+  twitter: gogreensolar
+  facebook: gogreensolar
+  img: gogreensolar.png
+  bch: false
+  btc: false
+  othercrypto: false
+  exceptions:
+    text: GoGreenSolar.com used to accept BTC, but as of 2018-10-12 stopped accepting
+      it
+- name: Google Fiber
+  url: https://fiber.google.com/
+  img: googlefiber.png
+  twitter: googlefiber
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Halebop
+  url: https://www.halebop.se/
+  img: halebop.png
+  twitter: halebop_sverige
+  facebook: halebop
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Hushed
+  url: https://hushed.com/
+  img: hushed.png
+  twitter: hushedapp
+  email_address: support@hushed.com
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://hushed.com/payment-step-1/
+- name: LV.Net
+  url: https://www.lv.net
+  img: LVNet.png
+  twitter: LVNet
+  region: na
+  country: US
+  bch: false
+  btc: true
+  othercrypto: true
+- name: Mobile Vikings
+  url: https://mobilevikings.be/en/v2/
+  img: mobilevikings.png
+  twitter: mobilevikingsBE
+  facebook: mobilevikings
+  email_address: info@mobilevikings.be
+  region: eu
+  country: BE
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Moj Tele2
+  url: https://moj.tele2.hr/
+  twitter: Tele2Croatia
+  facebook: tele2.hr
+  img: mojtele2.png
+  bch: false
+  btc: false
+  othercrypto: false
+  lang: hr
+- name: Optus
+  url: https://www.optus.com.au/
+  twitter: Optus
+  facebook: optus
+  img: optus.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: opwaarderen.nl
+  url: https://www.opwaarderen.nl
+  img: opwaarderen.png
+  twitter: opwaarderen
+  facebook: opwaarderen
+  region: eu
+  country: NL
+  lang: nl
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Orange
+  url: https://www.orange.fr/portail
+  twitter: Orange_France
+  facebook: Orange.France
+  img: orange.png
+  bch: false
+  btc: false
+  othercrypto: false
+  lang: fr
+- name: Pacific Gas and Electric Company PG&amp;E
+  url: https://www.pge.com/
+  twitter: PGE4Me
+  facebook: pacificgasandelectric
+  img: pge.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: PowerStream
+  url: https://www.powerstream.ca/
+  twitter: PowerStreamNews
+  facebook: PowerStreamPage
+  img: powerstream.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Project Fi
+  url: https://fi.google.com/
+  img: projectfi.png
+  twitter: projectfi
+  bch: false
+  btc: false
+  othercrypto: false
+- name: RCN
+  url: https://www.rcn.com/
+  twitter: RCNconnects
+  facebook: RCN
+  img: rcn.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Rochester Gas & Electric
+  url: https://www.rge.com/
+  twitter: RGandE
+  facebook: RochGandE
+  img: rge.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Rogers
+  url: https://www.rogers.com/
+  twitter: RogersHelps
+  facebook: Rogers
+  img: rogers.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: San Diego Gas & Electric
+  url: https://www.sdge.com/
+  twitter: SDGE
+  facebook: SanDiegoGasandElectric
+  img: sdge.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Sonic
+  url: https://www.sonic.com/
+  img: sonic.png
+  twitter: sonic
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Southern California Edison
+  url: https://www.sce.com/
+  twitter: SCE
+  facebook: sce
+  img: sce.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Sprint
+  url: https://www.sprint.com/
+  twitter: sprint
+  facebook: sprint
+  img: sprint.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: T-Mobile
+  url: https://www.t-mobile.com/
+  twitter: TMobileHelp
+  facebook: TMobile
+  img: tmobile.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Telia (Sweden)
+  url: https://www.telia.se/
+  img: telia.png
+  twitter: teliadanmark
+  facebook: teliadanmark
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Telstra
+  url: https://www.telstra.com.au/
+  twitter: Telstra
+  facebook: Telstra24x7
+  img: telstra.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Telzio
+  url: https://www.telzio.com/
+  img: telzio.png
+  twitter: telzio
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Three UK
+  url: http://www.three.co.uk/
+  twitter: ThreeUK
+  facebook: ThreeUK
+  img: three.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Time Warner Cable
+  url: https://www.timewarnercable.com/
+  twitter: TWC_Help
+  facebook: twc
+  img: timewarner.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Ting
+  url: https://ting.com/
+  img: ting.png
+  twitter: tingFTW
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Verizon
+  url: https://www.verizon.com/
+  twitter: VerizonSupport
+  facebook: verizon
+  img: verizon.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Verizon Wireless
+  url: https://www.verizonwireless.com/
+  twitter: VZWSupport
+  img: verizon.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Vimla
+  url: https://vimla.se/
+  twitter: Vimla_se
+  facebook: vimla.se
+  img: vimla.png
+  bch: false
+  btc: false
+  othercrypto: false
+  lang: sv
+- name: Virgin Media (IE)
+  url: https://www.virginmedia.ie/
+  twitter: VirginMediaIE
+  facebook: VirginMediaIreland
+  img: virginmedia.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Virgin Media (UK)
+  url: https://www.virginmedia.com/
+  twitter: virginmedia
+  facebook: virginmedia
+  img: virginmedia.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Virgin Mobile
+  url: https://www.virgin.com/gateways/mobile
+  twitter: Virgin
+  facebook: virgin
+  img: virginmobile.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Vodafone (IE)
+  url: https://www.vodafone.ie/
+  twitter: VodafoneIreland
+  facebook: vodafoneireland
+  img: vodafone.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Vodafone (IT)
+  url: http://www.vodafone.it/
+  twitter: VodafoneIT
+  facebook: vodafoneit
+  img: vodafone.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Vodafone (UK)
+  url: https://www.vodafone.co.uk/
+  img: vodafone.png
+  twitter: vodafoneUK
+  facebook: vodafoneuk
+  bch: false
+  btc: false
+  othercrypto: false
+- name: VoIP Supply
+  url: https://www.voipsupply.com
+  img: voipsupply.png
+  bch: false
+  btc: false
+  othercrypto: false
+  exceptions:
+    text: Stopped supporting Bitcoin in the beginning of June 2017
+- name: VoIP.ms
+  url: https://voip.ms/
+  twitter: voipms
+  img: voipms.png
+  bch: false
+  btc: false
+  othercrypto: false

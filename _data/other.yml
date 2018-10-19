@@ -1,373 +1,324 @@
+---
 websites:
-    - name: 101 Studios
-      url: http://www.101studios.com
-      img: 101studios.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-
-    - name: Adobe
-      url: https://www.adobe.com/
-      img: adobe.png
-      bch: No
-      twitter: adobe
-      facebook: Adobe
-
-    - name: Aerohive Networks
-      url: https://www.aerohive.com/
-      img: aerohive.png
-      bch: No
-      twitter: aerohive
-      facebook: aerohivenetworks
-
-    - name: Airtable
-      url: https://airtable.com
-      img: airtable.png
-      bch: No
-      twitter: airbnb
-
-    - name: AngelList
-      url: https://angel.co
-      img: angellist.png
-      bch: No
-      twitter: angellist
-      facebook: angellist
-
-    - name: Australia Post
-      url: https://auspost.com.au/
-      img: auspost.png
-      bch: No
-      twitter: auspost
-
-    - name: Autodesk
-      url: https://www.autodesk.com
-      img: autodesk.png
-      bch: No
-      twitter: autodesk
-      facebook: autodesk
-
-    - name: Automater
-      url: https://automater.pl/en/
-      img: automater.png
-      bch: No
-      email_address: kontakt@automater.pl
-
-    - name: AwardWallet
-      url: https://awardwallet.com
-      img: awardwallet.png
-      bch: No
-      twitter: awardwallet
-
-    - name: BuiltWith
-      url: https://builtwith.com
-      img: builtwith.png
-      bch: No
-      twitter: builtwith
-      facebook: builtwith
-
-    - name: CA Technologies
-      url: https://www.ca.com/
-      img: ca-technologies.png
-      bch: No
-      twitter: CAinc
-      facebook: CATechnologies
-
-    - name: Cisco Meraki
-      url: https://meraki.cisco.com/
-      img: meraki.png
-      bch: No
-      twitter: meraki
-      facebook: CiscoMeraki
-
-    - name: Clio
-      url: https://goclio.com
-      img: clio.png
-      bch: No
-      twitter: goclio
-      facebook: goclio
-
-    - name: Cloudinary
-      url: https://cloudinary.com
-      img: cloudinary.png
-      bch: No
-      twitter: cloudinary
-      facebook: Cloudinary
-
-    - name: CommuterBenefits
-      url: https://commuterbenefits.com/
-      img: commuterbenefits.png
-      bch: No
-      twitter: CommuterBenefit
-
-    - name: Delighted
-      url: https://delightedapp.com/
-      img: delighted.png
-      bch: No
-      twitter: delighted
-      facebook: delighted
-
-    - name: DirectAdmin
-      url: https://www.directadmin.com
-      img: directadmin.png
-      bch: No
-      facebook: DirectAdmin
-
-    - name: Envato
-      url: https://envato.com
-      img: envato.png
-      bch: No
-      twitter: envato
-
-    - name: Figma
-      url: https://www.figma.com/
-      img: figma.png
-      bch: No
-      twitter: figmadesign
-      facebook: FigmaDesign
-
-    - name: Findmyshift
-      url: https://www.findmyshift.com/
-      img: findmyshift.png
-      bch: No
-      twitter: findmyshift
-      facebook: findmyshift
-
-    - name: Formstack
-      url: https://www.formstack.com/
-      img: formstack.png
-      bch: No
-      twitter: formstack
-      facebook: formstack
-
-    - name: IEEE
-      url: https://www.ieee.org
-      img: ieee.png
-      bch: No
-      twitter: IEEEorg
-      facebook: IEEE.org
-
-    - name: ImmobilienScout24
-      url: https://www.immobilienscout24.de
-      img: immobilienscout24.png
-      bch: No
-      twitter: immobilienscout
-      facebook: ImmobilienScout24
-
-    - name: Indeed
-      url: https://www.indeed.com/
-      img: indeed.png
-      bch: No
-      twitter: indeed
-      facebook: Indeed
-
-    - name: karriere.at
-      url: https://www.karriere.at
-      img: karriereat.png
-      bch: No
-      twitter: karriere_at
-      facebook: karriere.at
-      lang: de
-
-    - name: Kayako
-      url: https://www.kayako.com
-      img: kayako.png
-      bch: No
-      twitter: kayako
-      facebook: kayako
-
-    - name: Liftopia
-      url: https://www.liftopia.com
-      img: liftopia.png
-      bch: No
-      twitter: Liftopia
-      facebook: liftopia
-
-    - name: Mixpanel
-      url: https://mixpanel.com/
-      img: mixpanel.png
-      bch: No
-      twitter: mixpanel
-      facebook: mixpanel
-
-    - name: MOJAVECAFÉ
-      url: https://www.mojave.cafe/
-      email_address: info@mojave.cafe
-      region: na
-      country: US
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coinpayments
-
-    - name: Monster
-      url: https://www.monster.com
-      img: monster.png
-      bch: No
-      twitter: Monster
-      facebook: monster
-
-    - name: Office 365 (with Microsoft Account)
-      url: https://www.office.com
-      img: office365.png
-      bch: No
-      btc: No
-      othercrypto: No
-      twitter: Office365
-      facebook: Office365
-      exceptions:
-        text: "Office 365 used to accept BTC & BCH, but as of 2018-07-07 stopped accepting it"
-
-    - name: Onshape
-      url: https://www.onshape.com/
-      img: onshape.png
-      bch: No
-      twitter: onshape
-      facebook: Onshapeinc
-
-    - name: Pastebin
-      url: https://pastebin.com
-      img: pastebin.png
-      bch: No
-      btc: Yes
-      twitter: pastebin
-      facebook: pastebin
-      email_address: admin@pastebin.com
-
-    - name: Patreon
-      url: https://www.patreon.com/
-      img: patreon.png
-      bch: No
-      twitter: patreon
-      facebook: patreon
-      
-    - name: PhraseApp
-      url: https://phraseapp.com
-      img: phraseapp.png
-      bch: No
-      twitter: phraseapp
-      facebook: phraseapp
-
-    - name: Pinboard
-      url: https://pinboard.in/
-      img: pinboard.png
-      bch: No
-      twitter: Pinboard
-
-    - name: Planning Center Online
-      url: https://planning.center/
-      img: planningcenter.png
-      bch: No
-      twitter: planningcenter
-      facebook: PlanningCenter
-
-    - name: Pocket
-      url: https://www.getpocket.com
-      img: pocket.png
-      bch: No
-      twitter: Pocket
-
-    - name: Promoter.io
-      url: https://promoter.io/
-      img: promoter.png
-      bch: No
-      twitter: Promoter_io
-
-    - name: Repairshopr
-      url: https://www.repairshopr.com/
-      img: repairshopr.png
-      bch: No
-      twitter: repairshopr
-      facebook: repairshopr
-
-    - name: StartJOIN
-      url: http://www.startjoin.com/
-      img: startjoin.png
-      bch: No
-      twitter: startjoin
-      facebook: startjoin
-
-    - name: TokenStars
-      url: https://tokenstars.com/
-      twitter: TokenStars
-      facebook: TokenStars
-      img: tokenstars.png
-      bch: yes
-      btc: no
-      othercrypto: yes
-
-    - name: ttrss.info
-      region: eu
-      country: fr
-      url: https://ttrss.info/
-      twitter: ttrss_info
-      img: ttrss.png
-      bch: yes
-      btc: yes
-      othercrypto: no
-      doc: https://ttrss.info/help.html
-
-    - name: Upwork
-      url: https://www.upwork.com
-      img: upwork.png
-      bch: No
-      twitter: UpworkHelp
-      facebook: upwork
-
-    - name: US Electric & Control
-      url: https://us-elec.com
-      img: uselec.png
-      region: na
-      country: US
-      city: Durham
-      bch: No
-      btc: No
-      othercrypto: No
-      doc: https://us-elec.com/bitcoin/
-
-    - name: Usabilla
-      url: https://usabilla.com
-      img: usabilla.png
-      bch: No
-      twitter: usabilla
-      facebook: usabilla
-
-    - name: WageWorks
-      url: https://www.wageworks.com
-      img: wageworks.png
-      bch: No
-      twitter: WageWorksCares
-
-    - name: Watchman Monitoring
-      url: https://www.watchmanmonitoring.com
-      img: watchmanmonitoring.png
-      bch: No
-      twitter: watchmanmonitor
-      facebook: watchmanmonitoring
-
-    - name: Webmin
-      url: http://www.webmin.com/
-      img: webmin.png
-      bch: No
-      twitter: webmin
-      facebook: Webmin-115912965151333
-
-    - name: Wikia
-      url: https://www.wikia.com/
-      img: wikia.png
-      bch: No
-      twitter: wikia
-
-    - name: Yclas
-      url: https://yclas.com/
-      img: yclas.png
-      bch: No
-      twitter: yclascom
-      facebook: yclascom
-
-    - name: Zendesk
-      url: https://www.zendesk.com
-      img: zendesk.png
-      bch: No
-      twitter: zendesk
-      facebook: zendesk
+- name: 101 Studios
+  url: http://www.101studios.com
+  img: 101studios.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Adobe
+  url: https://www.adobe.com/
+  img: adobe.png
+  bch: false
+  twitter: adobe
+  facebook: Adobe
+- name: Aerohive Networks
+  url: https://www.aerohive.com/
+  img: aerohive.png
+  bch: false
+  twitter: aerohive
+  facebook: aerohivenetworks
+- name: Airtable
+  url: https://airtable.com
+  img: airtable.png
+  bch: false
+  twitter: airbnb
+- name: AngelList
+  url: https://angel.co
+  img: angellist.png
+  bch: false
+  twitter: angellist
+  facebook: angellist
+- name: Australia Post
+  url: https://auspost.com.au/
+  img: auspost.png
+  bch: false
+  twitter: auspost
+- name: Autodesk
+  url: https://www.autodesk.com
+  img: autodesk.png
+  bch: false
+  twitter: autodesk
+  facebook: autodesk
+- name: Automater
+  url: https://automater.pl/en/
+  img: automater.png
+  bch: false
+  email_address: kontakt@automater.pl
+- name: AwardWallet
+  url: https://awardwallet.com
+  img: awardwallet.png
+  bch: false
+  twitter: awardwallet
+- name: BuiltWith
+  url: https://builtwith.com
+  img: builtwith.png
+  bch: false
+  twitter: builtwith
+  facebook: builtwith
+- name: CA Technologies
+  url: https://www.ca.com/
+  img: ca-technologies.png
+  bch: false
+  twitter: CAinc
+  facebook: CATechnologies
+- name: Cisco Meraki
+  url: https://meraki.cisco.com/
+  img: meraki.png
+  bch: false
+  twitter: meraki
+  facebook: CiscoMeraki
+- name: Clio
+  url: https://goclio.com
+  img: clio.png
+  bch: false
+  twitter: goclio
+  facebook: goclio
+- name: Cloudinary
+  url: https://cloudinary.com
+  img: cloudinary.png
+  bch: false
+  twitter: cloudinary
+  facebook: Cloudinary
+- name: CommuterBenefits
+  url: https://commuterbenefits.com/
+  img: commuterbenefits.png
+  bch: false
+  twitter: CommuterBenefit
+- name: Delighted
+  url: https://delightedapp.com/
+  img: delighted.png
+  bch: false
+  twitter: delighted
+  facebook: delighted
+- name: DirectAdmin
+  url: https://www.directadmin.com
+  img: directadmin.png
+  bch: false
+  facebook: DirectAdmin
+- name: Envato
+  url: https://envato.com
+  img: envato.png
+  bch: false
+  twitter: envato
+- name: Figma
+  url: https://www.figma.com/
+  img: figma.png
+  bch: false
+  twitter: figmadesign
+  facebook: FigmaDesign
+- name: Findmyshift
+  url: https://www.findmyshift.com/
+  img: findmyshift.png
+  bch: false
+  twitter: findmyshift
+  facebook: findmyshift
+- name: Formstack
+  url: https://www.formstack.com/
+  img: formstack.png
+  bch: false
+  twitter: formstack
+  facebook: formstack
+- name: IEEE
+  url: https://www.ieee.org
+  img: ieee.png
+  bch: false
+  twitter: IEEEorg
+  facebook: IEEE.org
+- name: ImmobilienScout24
+  url: https://www.immobilienscout24.de
+  img: immobilienscout24.png
+  bch: false
+  twitter: immobilienscout
+  facebook: ImmobilienScout24
+- name: Indeed
+  url: https://www.indeed.com/
+  img: indeed.png
+  bch: false
+  twitter: indeed
+  facebook: Indeed
+- name: karriere.at
+  url: https://www.karriere.at
+  img: karriereat.png
+  bch: false
+  twitter: karriere_at
+  facebook: karriere.at
+  lang: de
+- name: Kayako
+  url: https://www.kayako.com
+  img: kayako.png
+  bch: false
+  twitter: kayako
+  facebook: kayako
+- name: Liftopia
+  url: https://www.liftopia.com
+  img: liftopia.png
+  bch: false
+  twitter: Liftopia
+  facebook: liftopia
+- name: Mixpanel
+  url: https://mixpanel.com/
+  img: mixpanel.png
+  bch: false
+  twitter: mixpanel
+  facebook: mixpanel
+- name: MOJAVECAFÉ
+  url: https://www.mojave.cafe/
+  email_address: info@mojave.cafe
+  region: na
+  country: US
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinpayments
+- name: Monster
+  url: https://www.monster.com
+  img: monster.png
+  bch: false
+  twitter: Monster
+  facebook: monster
+- name: Office 365 (with Microsoft Account)
+  url: https://www.office.com
+  img: office365.png
+  bch: false
+  btc: false
+  othercrypto: false
+  twitter: Office365
+  facebook: Office365
+  exceptions:
+    text: Office 365 used to accept BTC & BCH, but as of 2018-07-07 stopped accepting
+      it
+- name: Onshape
+  url: https://www.onshape.com/
+  img: onshape.png
+  bch: false
+  twitter: onshape
+  facebook: Onshapeinc
+- name: Pastebin
+  url: https://pastebin.com
+  img: pastebin.png
+  bch: false
+  btc: true
+  twitter: pastebin
+  facebook: pastebin
+  email_address: admin@pastebin.com
+- name: Patreon
+  url: https://www.patreon.com/
+  img: patreon.png
+  bch: false
+  twitter: patreon
+  facebook: patreon
+- name: PhraseApp
+  url: https://phraseapp.com
+  img: phraseapp.png
+  bch: false
+  twitter: phraseapp
+  facebook: phraseapp
+- name: Pinboard
+  url: https://pinboard.in/
+  img: pinboard.png
+  bch: false
+  twitter: Pinboard
+- name: Planning Center Online
+  url: https://planning.center/
+  img: planningcenter.png
+  bch: false
+  twitter: planningcenter
+  facebook: PlanningCenter
+- name: Pocket
+  url: https://www.getpocket.com
+  img: pocket.png
+  bch: false
+  twitter: Pocket
+- name: Promoter.io
+  url: https://promoter.io/
+  img: promoter.png
+  bch: false
+  twitter: Promoter_io
+- name: Repairshopr
+  url: https://www.repairshopr.com/
+  img: repairshopr.png
+  bch: false
+  twitter: repairshopr
+  facebook: repairshopr
+- name: StartJOIN
+  url: http://www.startjoin.com/
+  img: startjoin.png
+  bch: false
+  twitter: startjoin
+  facebook: startjoin
+- name: TokenStars
+  url: https://tokenstars.com/
+  twitter: TokenStars
+  facebook: TokenStars
+  img: tokenstars.png
+  bch: true
+  btc: false
+  othercrypto: true
+- name: ttrss.info
+  region: eu
+  country: fr
+  url: https://ttrss.info/
+  twitter: ttrss_info
+  img: ttrss.png
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://ttrss.info/help.html
+- name: Upwork
+  url: https://www.upwork.com
+  img: upwork.png
+  bch: false
+  twitter: UpworkHelp
+  facebook: upwork
+- name: US Electric & Control
+  url: https://us-elec.com
+  img: uselec.png
+  region: na
+  country: US
+  city: Durham
+  bch: false
+  btc: false
+  othercrypto: false
+  doc: https://us-elec.com/bitcoin/
+- name: Usabilla
+  url: https://usabilla.com
+  img: usabilla.png
+  bch: false
+  twitter: usabilla
+  facebook: usabilla
+- name: WageWorks
+  url: https://www.wageworks.com
+  img: wageworks.png
+  bch: false
+  twitter: WageWorksCares
+- name: Watchman Monitoring
+  url: https://www.watchmanmonitoring.com
+  img: watchmanmonitoring.png
+  bch: false
+  twitter: watchmanmonitor
+  facebook: watchmanmonitoring
+- name: Webmin
+  url: http://www.webmin.com/
+  img: webmin.png
+  bch: false
+  twitter: webmin
+  facebook: Webmin-115912965151333
+- name: Wikia
+  url: https://www.wikia.com/
+  img: wikia.png
+  bch: false
+  twitter: wikia
+- name: Yclas
+  url: https://yclas.com/
+  img: yclas.png
+  bch: false
+  twitter: yclascom
+  facebook: yclascom
+- name: Zendesk
+  url: https://www.zendesk.com
+  img: zendesk.png
+  bch: false
+  twitter: zendesk
+  facebook: zendesk

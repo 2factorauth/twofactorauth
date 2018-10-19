@@ -1,565 +1,495 @@
+---
 websites:
-    - name: 007Names
-      url: https://www.007names.com
-      img: 007names.png
-      bch: No
-      email_address: support@007names.com
-
-    - name: 101domain
-      url: https://101domain.com
-      img: 101domain.png
-      bch: No
-      twitter: 101domain
-      facebook: 101-Domain
-
-    - name: 10Dollar
-      url: https://10dollar.ca/
-      img: 10dollar.png
-      bch: No
-      twitter: 10dollar_ca
-      facebook: 10dollar.ca
-
-    - name: 123 Reg
-      url: https://www.123-reg.co.uk
-      img: 123reg.png
-      bch: No
-      twitter: 123reg
-      facebook: 123regfans
-
-    - name: 1and1
-      url: https://www.1and1.com/
-      img: 1and1.png
-      bch: No
-      twitter: 1and1
-      facebook: 1and1
-
-    - name: Above.com
-      url: https://www.above.com
-      img: above.png
-      bch: No
-      email_address: expert-help@above.com
-      twitter: above_domain
-      facebook: above.domain
-
-    - name: Bitdomain.BIZ
-      url: http://www3.bitdomain.biz/
-      img: bitdomain.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      email_address: customersupport@bitdomain.biz
-      twitter: BitcoinDomain
-      keywords:
-      - coinpayments.net
-
-    - name: Cloudflare
-      url: https://cloudflare.com
-      img: cloudflare.png
-      bch: No
-      twitter: Cloudflare
-      facebook: Cloudflare
-
-    - name: ClouDNS
-      url: https://www.cloudns.net/
-      img: cloudns.png
-      bch: Yes
-      btc: Yes
-      twitter: ClouDNS
-      facebook: ClouDNS
-
-    - name: Crazy Domains
-      url: https://www.crazydomains.com
-      img: crazydomains.png
-      bch: No
-      twitter: CrazyDomains
-      facebook: crazydomains
-
-    - name: Directnic
-      url: https://directnic.com
-      img: directnic.png
-      bch: No
-      twitter: directnic
-      facebook: directniccom
-
-    - name: DNS Made Easy
-      url: https://www.dnsmadeeasy.com
-      img: dnsmadeeasy.png
-      bch: No
-      twitter: dnsmadeeasy
-      facebook: dnsmadeeasy
-
-    - name: DNSimple
-      url: https://dnsimple.com/
-      img: dnsimple.png
-      bch: No
-      twitter: dnsimple
-      facebook: dnsimple
-
-    - name: Domain Monster
-      url: https://www.domainmonster.com/
-      img: domainmonster.png
-      bch: No
-      twitter: domainmonster
-      facebook: Domainmonster
-
-    - name: Domain.com
-      url: https://www.domain.com/
-      twitter: DomainDotCom
-      bch: No
-      facebook: Domaindotcom
-      img: domaindotcom.png
-
-    - name: domainFACTORY
-      url: https://www.df.eu
-      img: domainfactory.png
-      bch: No
-      twitter: domainfactory
-      facebook: domainfactory.GmbH
-      lang: de
-
-    - name: Domains4Bitcoins.com
-      url: https://www.domains4bitcoins.com
-      img: domains4bitcoins.png
-      bch: No
-      btc: Yes
-      email_address: support@domains4bitcoins.com
-      twitter: Domains4Bitcoin
-
-    - name: Domeny.tv
-      url: https://www.domeny.tv
-      img: domenytv.png
-      bch: No
-      facebook: DomenyTV
-      twitter: domenyTV
-
-    - name: Dyn
-      url: https://dyn.com/
-      img: dyn.png
-      bch: No
-      twitter: Dyn
-      facebook: Dyn
-
-    - name: Dynadot
-      url: https://www.dynadot.com/
-      img: dynadot.png
-      bch: No
-      twitter: dynadot
-      facebook: Dynadot
-
-    - name: easyDNS
-      url: https://easydns.com
-      img: easydns.png
-      twitter: easyDNS
-      facebook: easyDNS
-      email_address: markjr@easydns.com
-      city: Toronto
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: https://www.easydns.com/blog/2018/01/08/0-confirmations-now-accepting-bitcoin-cash-as-a-payment-method/
-      exceptions:
-        text: "Crypto-Payments only for existing customers/non-new accounts"
-
-    - name: eNom
-      url: https://www.enom.com/
-      img: enom.png
-      bch: No
-      twitter: enom
-      facebook: eNomCom
-
-    - name: EuroDNS
-      url: https://www.eurodns.com
-      img: eurodns.png
-      bch: No
-      twitter: EuroDNS
-      facebook: EuroDNS
-
-    - name: Fabulous
-      url: https://fabulous.com
-      img: fabulous.png
-      bch: No
-      email_address: support@fabulous.com
-      twitter: fabulousdotcom
-      facebook: fabulousdomains
-
-    - name: Fasthosts
-      url: https://www.fasthosts.co.uk/
-      img: fasthosts.png
-      bch: No
-      twitter: Fasthosts
-      facebook: fasthostsinternet
-
-    - name: FreeDNS
-      url: https://freedns.afraid.org/
-      img: freedns.png
-      othercrypto: No
-      bch: Yes
-      btc: Yes
-      email_address: dnsadmin@afraid.org
-      doc: https://freedns.afraid.org/pricing/?ls=1
-      exceptions:
-        text: "Use the docs link to pay, the site is a bit confusing with older payment links"
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: Gandi
-      url: https://gandi.net
-      img: gandi.png
-      bch: Yes
-      btc: Yes
-      twitter: gandibar
-      facebook: GandiBar
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: GoDaddy
-      img: godaddy.png
-      url: https://www.godaddy.com/
-      bch: No
-      twitter: GoDaddy
-      facebook: GoDaddy
-
-    - name: Google Domains
-      url: https://domains.google.com
-      img: googledomains.png
-      bch: No
-      email_address: support@googledomains.com
-
-    - name: Heart Internet
-      url: https://www.heartinternet.uk/
-      img: heartinternet.png
-      bch: No
-      twitter: HeartInternet
-      facebook: heartinternet
-
-    - name: Hexonet
-      url: https://www.hexonet.net/
-      img: hexonet.png
-      bch: No
-      twitter: hexonet
-      facebook: Hexonet
-
-    - name: Hover.com
-      img: hover.png
-      url: https://www.hover.com/
-      bch: No
-      twitter: hover
-      facebook: hover
-
-    - name: Hurricane Electric
-      url: https://www.he.net/
-      img: hurricane.png
-      bch: No
-      email_address: info@he.net
-      twitter: henet
-
-    - name: Idotz.net
-      url: https://idotz.net
-      img: idotz.png
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      twitter: idotz
-      facebook: idotz.net
-
-    - name: Incapsula
-      url: https://www.incapsula.com/
-      img: incapsula.png
-      bch: No
-      twitter: incapsula_com
-      facebook: Incapsula
-
-    - name: Internet.bs
-      url: https://internetbs.net/
-      img: internetbs.png
-      bch: No
-      email_address: contact-en@internet.bs
-      twitter: internetbs
-
-    - name: INWX
-      url: https://www.inwx.com/en/
-      img: internetworx.png
-      bch: No
-      twitter: INWX
-      facebook: InterNetworX
-
-    - name: iWantMyName
-      url: https://iwantmyname.com/
-      img: iwantmyname.png
-      bch: No
-      email_address: help@support.iwantmyname.com
-      twitter: iwantmyname
-
-    - name: Joker.com
-      url: https://joker.com
-      img: joker.png
-      bch: No
-      twitter: jokercom
-      facebook: JokerDomains
-
-    - name: Loopia
-      url: https://www.loopia.se/
-      img: loopia.png
-      bch: No
-      twitter: loopia
-      facebook: Loopia
-
-    - name: MarkMonitor
-      url: https://www.markmonitor.com
-      img: markmonitor.png
-      bch: No
-      twitter: markmonitor
-
-    - name: Metaname
-      url: https://metaname.net/
-      img: metaname.png
-      bch: No
-      email_address: support@metaname.co.nz
-      twitter: MetanameNZ
-
-    - name: Moniker
-      url: https://www.moniker.com/
-      img: moniker.png
-      bch: No
-      twitter: moniker
-      facebook: MonikerLLC
-
-    - name: MonoVM
-      url: https://monovm.com/domain/
-      img: monovm.png
-      bch: Yes
-      btc: Yes
-      twitter: monovm
-      facebook: monovm
-
-    - name: MyDomain
-      url: https://www.mydomain.com/
-      img: mydomain.png
-      bch: No
-      twitter: mydomaindotcom
-      facebook: mydomain
-
-    - name: Name.com
-      url: https://www.name.com/
-      img: namecom.png
-      bch: No
-      twitter: namedotcom
-      facebook: namedotcom
-
-    - name: Namecheap
-      url: https://www.namecheap.com/
-      img: namecheap.png
-      bch: Yes
-      btc: Yes
-      twitter: Namecheap
-      facebook: Namecheap
-
-    - name: NameSilo.com
-      url: https://www.namesilo.com/
-      img: namesilo.png
-      bch: No
-      btc: Yes
-      twitter: namesilo
-      facebook: namesilo
-
-    - name: NamesPro.ca
-      url: https://www.namespro.ca/
-      img: namespro.png
-      bch: No
-      twitter: namespro
-      facebook: namespro
-
-    - name: NearlyFreeSpeech.net
-      url: https://www.nearlyfreespeech.net/
-      img: nfsn.png
-      bch: Yes
-      btc: Yes
-      email_address: support@NearlyFreeSpeech.NET
-      twitter: nfsn
-
-    - name: Netfirms
-      url: https://www.netfirms.com
-      img: netfirms.png
-      bch: No
-      twitter: netfirms
-      facebook: netfirmsfans
-
-    - name: Netim
-      url: https://www.netim.com/
-      img: netim.png
-      bch: No
-      twitter: Netim_com
-      facebook: netimcom
-
-    - name: Netregistry
-      url: https://www.netregistry.com.au/
-      img: netregistry.png
-      bch: No
-      twitter: netregistry
-      facebook: netregistry
-
-    - name: Network Solutions
-      url: https://www.networksolutions.com/
-      img: networksolutions.png
-      bch: No
-      twitter: netsolcares
-      facebook: Web.com
-
-    - name: Njalla
-      url: https://njal.la
-      twitter: njal_la
-      img: njal_la.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: https://twitter.com/njal_la/status/930417225013628928
-
-    - name: No-IP
-      url: https://www.noip.com/
-      img: noip.png
-      bch: yes
-      btc: yes
-      twitter: NoIPcom
-      facebook: noipdns
-      doc: https://www.noip.com/bitcoin
-      keywords:
-      - bitpay
-      - bip70
-      exceptions:
-        text: "To pay with Bitcoin Cash you need to contact their support"
-
-    - name: Nominet
-      url: https://www.nominet.uk/
-      img: nominet.png
-      bch: No
-      twitter: nominet
-      facebook: Nominet
-
-    - name: NS1
-      url: https://ns1.com/
-      img: ns1.png
-      bch: No
-      twitter: nsoneinc
-      facebook: nsoneinc
-
-    - name: Openprovider
-      url: https://www.openprovider.co.uk
-      img: openprovider.png
-      bch: No
-      twitter: openprovider
-      facebook: openprovider
-
-    - name: OpenSRS
-      url: https://opensrs.com
-      img: opensrs.png
-      bch: No
-      twitter: opensrs
-      email_address: help@opensrs.com
-
-    - name: pairNIC
-      url: https://www.pairnic.com/
-      img: pairnic.png
-      bch: No
-      twitter: pairnetworks
-      facebook: pairnetworks
-
-    - name: PointDNS
-      url: https://pointhq.com/
-      img: pointdns.png
-      bch: No
-      twitter: pointdns
-
-    - name: porkbun
-      url: https://porkbun.com
-      img: porkbunBuns.png
-      bch: No
-      btc: No
-      twitter: PorkbunLLC
-      facebook: Porkbun-1626180577611026
-      exceptions:
-        text: "Porkbun used to accept BTC, but as of 2018-04-26 stopped accepting it"
-      doc: https://porkbun.com/support/payment_options
-
-    - name: Rebel.ca
-      url: https://www.rebel.ca
-      img: rebeldotcom.png
-      bch: No
-      twitter: rebeldotcom
-      facebook: rebeldomains
-
-    - name: Register4Less
-      url: https://register4less.com/
-      img: register4less.png
-      bch: Yes
-      btc: Yes
-      twitter: Register4Less
-      facebook: Register4Less
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: Registro.br
-      url: https://registro.br
-      img: registrobr.png
-      bch: No
-      email_address: pagamento@registro.br
-      twitter: registrobr
-
-    - name: ScrybaWEB
-      url: https://www.scrybaweb.com/
-      twitter: scrybaweb
-      facebook: scrybaweb
-      email_address: contact@scrybaweb.com
-      img: scrybaweb.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: SoxDomains
-      url: https://www.soxdomains.com/
-      img: soxdomains.png
-      twitter: soxdomains
-      facebook: SoxDomains
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: STRATO
-      url: https://www.strato.de/
-      img: strato.png
-      bch: No
-      twitter: STRATO_AG
-      facebook: strato
-      lang: de
-
-    - name: UK2
-      url: https://www.uk2.net/
-      img: uk2.png
-      bch: No
-      twitter: UK2
-      facebook: UK2.net
-
-    - name: Uniregistry
-      url: https://uniregistry.com/
-      img: uniregistry.png
-      bch: No
-      twitter: Uniregistry
-      facebook: Uniregistry
-
-    - name: united-domains Reselling
-      url: https://www.ud-reselling.com/en/
-      img: udreselling.png
-      bch: No
-      email_address: support@ud-reselling.com
-      twitter: udreselling
-
-    - name: Verio
-      url: https://www.verio.com/
-      img: verio.png
-      bch: No
-      twitter: Verio
+- name: 007Names
+  url: https://www.007names.com
+  img: 007names.png
+  bch: false
+  email_address: support@007names.com
+- name: 101domain
+  url: https://101domain.com
+  img: 101domain.png
+  bch: false
+  twitter: 101domain
+  facebook: 101-Domain
+- name: 10Dollar
+  url: https://10dollar.ca/
+  img: 10dollar.png
+  bch: false
+  twitter: 10dollar_ca
+  facebook: 10dollar.ca
+- name: 123 Reg
+  url: https://www.123-reg.co.uk
+  img: 123reg.png
+  bch: false
+  twitter: 123reg
+  facebook: 123regfans
+- name: 1and1
+  url: https://www.1and1.com/
+  img: 1and1.png
+  bch: false
+  twitter: 1and1
+  facebook: 1and1
+- name: Above.com
+  url: https://www.above.com
+  img: above.png
+  bch: false
+  email_address: expert-help@above.com
+  twitter: above_domain
+  facebook: above.domain
+- name: Bitdomain.BIZ
+  url: http://www3.bitdomain.biz/
+  img: bitdomain.png
+  bch: true
+  btc: true
+  othercrypto: true
+  email_address: customersupport@bitdomain.biz
+  twitter: BitcoinDomain
+  keywords:
+  - coinpayments.net
+- name: Cloudflare
+  url: https://cloudflare.com
+  img: cloudflare.png
+  bch: false
+  twitter: Cloudflare
+  facebook: Cloudflare
+- name: ClouDNS
+  url: https://www.cloudns.net/
+  img: cloudns.png
+  bch: true
+  btc: true
+  twitter: ClouDNS
+  facebook: ClouDNS
+- name: Crazy Domains
+  url: https://www.crazydomains.com
+  img: crazydomains.png
+  bch: false
+  twitter: CrazyDomains
+  facebook: crazydomains
+- name: Directnic
+  url: https://directnic.com
+  img: directnic.png
+  bch: false
+  twitter: directnic
+  facebook: directniccom
+- name: DNS Made Easy
+  url: https://www.dnsmadeeasy.com
+  img: dnsmadeeasy.png
+  bch: false
+  twitter: dnsmadeeasy
+  facebook: dnsmadeeasy
+- name: DNSimple
+  url: https://dnsimple.com/
+  img: dnsimple.png
+  bch: false
+  twitter: dnsimple
+  facebook: dnsimple
+- name: Domain Monster
+  url: https://www.domainmonster.com/
+  img: domainmonster.png
+  bch: false
+  twitter: domainmonster
+  facebook: Domainmonster
+- name: Domain.com
+  url: https://www.domain.com/
+  twitter: DomainDotCom
+  bch: false
+  facebook: Domaindotcom
+  img: domaindotcom.png
+- name: domainFACTORY
+  url: https://www.df.eu
+  img: domainfactory.png
+  bch: false
+  twitter: domainfactory
+  facebook: domainfactory.GmbH
+  lang: de
+- name: Domains4Bitcoins.com
+  url: https://www.domains4bitcoins.com
+  img: domains4bitcoins.png
+  bch: false
+  btc: true
+  email_address: support@domains4bitcoins.com
+  twitter: Domains4Bitcoin
+- name: Domeny.tv
+  url: https://www.domeny.tv
+  img: domenytv.png
+  bch: false
+  facebook: DomenyTV
+  twitter: domenyTV
+- name: Dyn
+  url: https://dyn.com/
+  img: dyn.png
+  bch: false
+  twitter: Dyn
+  facebook: Dyn
+- name: Dynadot
+  url: https://www.dynadot.com/
+  img: dynadot.png
+  bch: false
+  twitter: dynadot
+  facebook: Dynadot
+- name: easyDNS
+  url: https://easydns.com
+  img: easydns.png
+  twitter: easyDNS
+  facebook: easyDNS
+  email_address: markjr@easydns.com
+  city: Toronto
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.easydns.com/blog/2018/01/08/0-confirmations-now-accepting-bitcoin-cash-as-a-payment-method/
+  exceptions:
+    text: Crypto-Payments only for existing customers/non-new accounts
+- name: eNom
+  url: https://www.enom.com/
+  img: enom.png
+  bch: false
+  twitter: enom
+  facebook: eNomCom
+- name: EuroDNS
+  url: https://www.eurodns.com
+  img: eurodns.png
+  bch: false
+  twitter: EuroDNS
+  facebook: EuroDNS
+- name: Fabulous
+  url: https://fabulous.com
+  img: fabulous.png
+  bch: false
+  email_address: support@fabulous.com
+  twitter: fabulousdotcom
+  facebook: fabulousdomains
+- name: Fasthosts
+  url: https://www.fasthosts.co.uk/
+  img: fasthosts.png
+  bch: false
+  twitter: Fasthosts
+  facebook: fasthostsinternet
+- name: FreeDNS
+  url: https://freedns.afraid.org/
+  img: freedns.png
+  othercrypto: false
+  bch: true
+  btc: true
+  email_address: dnsadmin@afraid.org
+  doc: https://freedns.afraid.org/pricing/?ls=1
+  exceptions:
+    text: Use the docs link to pay, the site is a bit confusing with older payment
+      links
+  keywords:
+  - bitpay
+  - bip70
+- name: Gandi
+  url: https://gandi.net
+  img: gandi.png
+  bch: true
+  btc: true
+  twitter: gandibar
+  facebook: GandiBar
+  keywords:
+  - bitpay
+  - bip70
+- name: GoDaddy
+  img: godaddy.png
+  url: https://www.godaddy.com/
+  bch: false
+  twitter: GoDaddy
+  facebook: GoDaddy
+- name: Google Domains
+  url: https://domains.google.com
+  img: googledomains.png
+  bch: false
+  email_address: support@googledomains.com
+- name: Heart Internet
+  url: https://www.heartinternet.uk/
+  img: heartinternet.png
+  bch: false
+  twitter: HeartInternet
+  facebook: heartinternet
+- name: Hexonet
+  url: https://www.hexonet.net/
+  img: hexonet.png
+  bch: false
+  twitter: hexonet
+  facebook: Hexonet
+- name: Hover.com
+  img: hover.png
+  url: https://www.hover.com/
+  bch: false
+  twitter: hover
+  facebook: hover
+- name: Hurricane Electric
+  url: https://www.he.net/
+  img: hurricane.png
+  bch: false
+  email_address: info@he.net
+  twitter: henet
+- name: Idotz.net
+  url: https://idotz.net
+  img: idotz.png
+  bch: true
+  btc: true
+  othercrypto: false
+  twitter: idotz
+  facebook: idotz.net
+- name: Incapsula
+  url: https://www.incapsula.com/
+  img: incapsula.png
+  bch: false
+  twitter: incapsula_com
+  facebook: Incapsula
+- name: Internet.bs
+  url: https://internetbs.net/
+  img: internetbs.png
+  bch: false
+  email_address: contact-en@internet.bs
+  twitter: internetbs
+- name: INWX
+  url: https://www.inwx.com/en/
+  img: internetworx.png
+  bch: false
+  twitter: INWX
+  facebook: InterNetworX
+- name: iWantMyName
+  url: https://iwantmyname.com/
+  img: iwantmyname.png
+  bch: false
+  email_address: help@support.iwantmyname.com
+  twitter: iwantmyname
+- name: Joker.com
+  url: https://joker.com
+  img: joker.png
+  bch: false
+  twitter: jokercom
+  facebook: JokerDomains
+- name: Loopia
+  url: https://www.loopia.se/
+  img: loopia.png
+  bch: false
+  twitter: loopia
+  facebook: Loopia
+- name: MarkMonitor
+  url: https://www.markmonitor.com
+  img: markmonitor.png
+  bch: false
+  twitter: markmonitor
+- name: Metaname
+  url: https://metaname.net/
+  img: metaname.png
+  bch: false
+  email_address: support@metaname.co.nz
+  twitter: MetanameNZ
+- name: Moniker
+  url: https://www.moniker.com/
+  img: moniker.png
+  bch: false
+  twitter: moniker
+  facebook: MonikerLLC
+- name: MonoVM
+  url: https://monovm.com/domain/
+  img: monovm.png
+  bch: true
+  btc: true
+  twitter: monovm
+  facebook: monovm
+- name: MyDomain
+  url: https://www.mydomain.com/
+  img: mydomain.png
+  bch: false
+  twitter: mydomaindotcom
+  facebook: mydomain
+- name: Name.com
+  url: https://www.name.com/
+  img: namecom.png
+  bch: false
+  twitter: namedotcom
+  facebook: namedotcom
+- name: Namecheap
+  url: https://www.namecheap.com/
+  img: namecheap.png
+  bch: true
+  btc: true
+  twitter: Namecheap
+  facebook: Namecheap
+- name: NameSilo.com
+  url: https://www.namesilo.com/
+  img: namesilo.png
+  bch: false
+  btc: true
+  twitter: namesilo
+  facebook: namesilo
+- name: NamesPro.ca
+  url: https://www.namespro.ca/
+  img: namespro.png
+  bch: false
+  twitter: namespro
+  facebook: namespro
+- name: NearlyFreeSpeech.net
+  url: https://www.nearlyfreespeech.net/
+  img: nfsn.png
+  bch: true
+  btc: true
+  email_address: support@NearlyFreeSpeech.NET
+  twitter: nfsn
+- name: Netfirms
+  url: https://www.netfirms.com
+  img: netfirms.png
+  bch: false
+  twitter: netfirms
+  facebook: netfirmsfans
+- name: Netim
+  url: https://www.netim.com/
+  img: netim.png
+  bch: false
+  twitter: Netim_com
+  facebook: netimcom
+- name: Netregistry
+  url: https://www.netregistry.com.au/
+  img: netregistry.png
+  bch: false
+  twitter: netregistry
+  facebook: netregistry
+- name: Network Solutions
+  url: https://www.networksolutions.com/
+  img: networksolutions.png
+  bch: false
+  twitter: netsolcares
+  facebook: Web.com
+- name: Njalla
+  url: https://njal.la
+  twitter: njal_la
+  img: njal_la.png
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://twitter.com/njal_la/status/930417225013628928
+- name: No-IP
+  url: https://www.noip.com/
+  img: noip.png
+  bch: true
+  btc: true
+  twitter: NoIPcom
+  facebook: noipdns
+  doc: https://www.noip.com/bitcoin
+  keywords:
+  - bitpay
+  - bip70
+  exceptions:
+    text: To pay with Bitcoin Cash you need to contact their support
+- name: Nominet
+  url: https://www.nominet.uk/
+  img: nominet.png
+  bch: false
+  twitter: nominet
+  facebook: Nominet
+- name: NS1
+  url: https://ns1.com/
+  img: ns1.png
+  bch: false
+  twitter: nsoneinc
+  facebook: nsoneinc
+- name: Openprovider
+  url: https://www.openprovider.co.uk
+  img: openprovider.png
+  bch: false
+  twitter: openprovider
+  facebook: openprovider
+- name: OpenSRS
+  url: https://opensrs.com
+  img: opensrs.png
+  bch: false
+  twitter: opensrs
+  email_address: help@opensrs.com
+- name: pairNIC
+  url: https://www.pairnic.com/
+  img: pairnic.png
+  bch: false
+  twitter: pairnetworks
+  facebook: pairnetworks
+- name: PointDNS
+  url: https://pointhq.com/
+  img: pointdns.png
+  bch: false
+  twitter: pointdns
+- name: porkbun
+  url: https://porkbun.com
+  img: porkbunBuns.png
+  bch: false
+  btc: false
+  twitter: PorkbunLLC
+  facebook: Porkbun-1626180577611026
+  exceptions:
+    text: Porkbun used to accept BTC, but as of 2018-04-26 stopped accepting it
+  doc: https://porkbun.com/support/payment_options
+- name: Rebel.ca
+  url: https://www.rebel.ca
+  img: rebeldotcom.png
+  bch: false
+  twitter: rebeldotcom
+  facebook: rebeldomains
+- name: Register4Less
+  url: https://register4less.com/
+  img: register4less.png
+  bch: true
+  btc: true
+  twitter: Register4Less
+  facebook: Register4Less
+  keywords:
+  - bitpay
+  - bip70
+- name: Registro.br
+  url: https://registro.br
+  img: registrobr.png
+  bch: false
+  email_address: pagamento@registro.br
+  twitter: registrobr
+- name: ScrybaWEB
+  url: https://www.scrybaweb.com/
+  twitter: scrybaweb
+  facebook: scrybaweb
+  email_address: contact@scrybaweb.com
+  img: scrybaweb.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: SoxDomains
+  url: https://www.soxdomains.com/
+  img: soxdomains.png
+  twitter: soxdomains
+  facebook: SoxDomains
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: STRATO
+  url: https://www.strato.de/
+  img: strato.png
+  bch: false
+  twitter: STRATO_AG
+  facebook: strato
+  lang: de
+- name: UK2
+  url: https://www.uk2.net/
+  img: uk2.png
+  bch: false
+  twitter: UK2
+  facebook: UK2.net
+- name: Uniregistry
+  url: https://uniregistry.com/
+  img: uniregistry.png
+  bch: false
+  twitter: Uniregistry
+  facebook: Uniregistry
+- name: united-domains Reselling
+  url: https://www.ud-reselling.com/en/
+  img: udreselling.png
+  bch: false
+  email_address: support@ud-reselling.com
+  twitter: udreselling
+- name: Verio
+  url: https://www.verio.com/
+  img: verio.png
+  bch: false
+  twitter: Verio

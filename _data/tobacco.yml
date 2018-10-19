@@ -1,218 +1,200 @@
+---
 websites:
-    - name: 101 Vape
-      url: https://101vape.com/
-      img: 101vape.png
-      twitter: 101vape
-      facebook: 101vape
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Baton Vapor
-      url: https://batonvapor.com
-      img: batonvapor.png
-      facebook: batonvapor
-      email_address: timmy@batonvapor.com
-      country: US
-      state: Oregon
-      city: Seattle
-      bch: Yes
-      btc: No
-      othercrypto: Yes
-
-    - name: BitVapes
-      url: https://bitvapes.com
-      img: bitvapes.png
-      twitter: bitvapes
-      bch: Yes
-      btc: No
-      othercrypto: No
-
-    - name: Cigaret Kretek
-      url: https://cigaretkretek.com/
-      img: cigaretkretek.png
-      facebook: cigaretkretekcom
-      twitter: CigaretKretekco
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      
-    - name: CIGSSpot
-      url: https://www.cigsspot.com
-      img: cigssport.png
-      twitter: CigsSpot
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Congrevape
-      region: na
-      country: US
-      city: Stockon
-      url: https://congrevape.com/shop
-      twitter: Congrevape
-      facebook: Congrevape
-      img: congrevape.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: https://congrevape.com/what-is-cryptocurrency-and-why-do-we-accept-it/
-
-    - name: Frontier Vapor
-      url: https://frontiervapor.com/
-      img: frontiervapor.png
-      bch: No
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coinpayments.net
-
-    - name: Hookah On Mars
-      url: https://hookahonmars.com/
-      img: hookahonmars.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coinpayments.net
-
-    - name: King Pen Vapes
-      url: https://kingpenvapes.com/
-      twitter: KingPenVapes
-      facebook: kingpenv
-      img: kingpenvapes.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: https://www.reddit.com/r/btc/comments/7jq1hc/we_just_added_bitcoin_cash_as_a_payment_method_on/
-
-    - name: La Casa Del Habano
-      url: http://www.lcdh.com/
-      img: lcdh.png
-      twitter: lcdhstkitts
-      facebook: lcdhstkitts
-      email_address: info@lcdh.kn
-      bch: Yes
-      btc: No
-      othercrypto: No
-      doc: https://www.instagram.com/p/Bk_UHxLFzSr/
-
-    - name: Liquido24
-      url: https://www.liquido24.de/
-      img: liquido24.png
-      facebook: liquido24
-      email_address: kontakt@liquido24.de
-      bch: yes
-      btc: yes
-      othercrypto: no
-      lang: de
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: MaxVaping
-      url: https://maxvaping.com/
-      img: maxvaping.png
-      twitter: MaxVapingStore
-      facebook: MaxVapingStore
-      email_address: phil@maxvaping.com
-      region: na
-      country: US
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://maxvaping.com/pages/bitcoin-vaping-supplies
-      keywords:
-      - bitpay
-      - coinbase
-
-    - name: MistHub
-      url: https://www.misthub.com/
-      img: misthub.png
-      twitter: MistHub
-      facebook: misthubstore
-      region: na
-      country: US
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - bitpay
-      - gocoin
-
-    - name: The Vapor Station
-      url: https://www.vaporstation.com/
-      img: thevaporstation.png
-      email_address: help@vaporstation.com
-      twitter: vaporstation
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: VapeClubMY
-      url: https://vapeclubmy.com
-      img: vapeclubmy.png
-      twitter: vapeclubmy
-      facebook: vapeclubmy
-      email_address: hello@vapeclubmy.com
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      doc: https://vapeclubmy.com/blogs/features/vape-club-supports-cryptocurrency-payments-via-coinbase-commerce
-
-    - name: Vapes.com
-      url: https://www.vapes.com/
-      img: vapescom.png
-      twitter: vapescom
-      facebook: vapescom
-      bch: No
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Vaporize.com.au
-      url: https://www.vaporize.com.au/
-      img: vaporizecomau.png
-      email_address: info@vaporize.com.au
-      region: oc
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coinpayments.net
-
-    - name: Vaporizers Direct
-      url: https://vaporizersdirect.com.au
-      img: vaporizersdirect.png
-      twitter: vaporizerdirect
-      facebook: vaporizersdirect
-      email_address: christian@vaporizersdirect.com.au
-      region: oc
-      country: AU
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Vapour Depot
-      url: https://vapourdepot.com
-      img: vapourdepot.png
-      twitter: vapourdepot
-      facebook: vapourdepot
-      email_address: social@vapourdepot.com
-      bch: Yes
-      btc: No
-      othercrypto: Yes
-
-    - name: Velvet Cloud
-      url: https://velvetcloud.com/
-      img: velvetcloud.png
-      facebook: VelvetCloudVapor
-      email_address: info@velvetcloud.com
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      keywords:
-      - bitpay
-      - bip70
+- name: 101 Vape
+  url: https://101vape.com/
+  img: 101vape.png
+  twitter: 101vape
+  facebook: 101vape
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Baton Vapor
+  url: https://batonvapor.com
+  img: batonvapor.png
+  facebook: batonvapor
+  email_address: timmy@batonvapor.com
+  country: US
+  state: Oregon
+  city: Seattle
+  bch: true
+  btc: false
+  othercrypto: true
+- name: BitVapes
+  url: https://bitvapes.com
+  img: bitvapes.png
+  twitter: bitvapes
+  bch: true
+  btc: false
+  othercrypto: false
+- name: Cigaret Kretek
+  url: https://cigaretkretek.com/
+  img: cigaretkretek.png
+  facebook: cigaretkretekcom
+  twitter: CigaretKretekco
+  bch: true
+  btc: true
+  othercrypto: true
+- name: CIGSSpot
+  url: https://www.cigsspot.com
+  img: cigssport.png
+  twitter: CigsSpot
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Congrevape
+  region: na
+  country: US
+  city: Stockon
+  url: https://congrevape.com/shop
+  twitter: Congrevape
+  facebook: Congrevape
+  img: congrevape.png
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://congrevape.com/what-is-cryptocurrency-and-why-do-we-accept-it/
+- name: Frontier Vapor
+  url: https://frontiervapor.com/
+  img: frontiervapor.png
+  bch: false
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinpayments.net
+- name: Hookah On Mars
+  url: https://hookahonmars.com/
+  img: hookahonmars.png
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinpayments.net
+- name: King Pen Vapes
+  url: https://kingpenvapes.com/
+  twitter: KingPenVapes
+  facebook: kingpenv
+  img: kingpenvapes.png
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.reddit.com/r/btc/comments/7jq1hc/we_just_added_bitcoin_cash_as_a_payment_method_on/
+- name: La Casa Del Habano
+  url: http://www.lcdh.com/
+  img: lcdh.png
+  twitter: lcdhstkitts
+  facebook: lcdhstkitts
+  email_address: info@lcdh.kn
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://www.instagram.com/p/Bk_UHxLFzSr/
+- name: Liquido24
+  url: https://www.liquido24.de/
+  img: liquido24.png
+  facebook: liquido24
+  email_address: kontakt@liquido24.de
+  bch: true
+  btc: true
+  othercrypto: false
+  lang: de
+  keywords:
+  - bitpay
+  - bip70
+- name: MaxVaping
+  url: https://maxvaping.com/
+  img: maxvaping.png
+  twitter: MaxVapingStore
+  facebook: MaxVapingStore
+  email_address: phil@maxvaping.com
+  region: na
+  country: US
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://maxvaping.com/pages/bitcoin-vaping-supplies
+  keywords:
+  - bitpay
+  - coinbase
+- name: MistHub
+  url: https://www.misthub.com/
+  img: misthub.png
+  twitter: MistHub
+  facebook: misthubstore
+  region: na
+  country: US
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - bitpay
+  - gocoin
+- name: The Vapor Station
+  url: https://www.vaporstation.com/
+  img: thevaporstation.png
+  email_address: help@vaporstation.com
+  twitter: vaporstation
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: VapeClubMY
+  url: https://vapeclubmy.com
+  img: vapeclubmy.png
+  twitter: vapeclubmy
+  facebook: vapeclubmy
+  email_address: hello@vapeclubmy.com
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://vapeclubmy.com/blogs/features/vape-club-supports-cryptocurrency-payments-via-coinbase-commerce
+- name: Vapes.com
+  url: https://www.vapes.com/
+  img: vapescom.png
+  twitter: vapescom
+  facebook: vapescom
+  bch: false
+  btc: true
+  othercrypto: true
+- name: Vaporize.com.au
+  url: https://www.vaporize.com.au/
+  img: vaporizecomau.png
+  email_address: info@vaporize.com.au
+  region: oc
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinpayments.net
+- name: Vaporizers Direct
+  url: https://vaporizersdirect.com.au
+  img: vaporizersdirect.png
+  twitter: vaporizerdirect
+  facebook: vaporizersdirect
+  email_address: christian@vaporizersdirect.com.au
+  region: oc
+  country: AU
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Vapour Depot
+  url: https://vapourdepot.com
+  img: vapourdepot.png
+  twitter: vapourdepot
+  facebook: vapourdepot
+  email_address: social@vapourdepot.com
+  bch: true
+  btc: false
+  othercrypto: true
+- name: Velvet Cloud
+  url: https://velvetcloud.com/
+  img: velvetcloud.png
+  facebook: VelvetCloudVapor
+  email_address: info@velvetcloud.com
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70

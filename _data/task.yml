@@ -1,73 +1,66 @@
+---
 websites:
-    - name: ActiveCollab
-      url: https://www.activecollab.com/
-      twitter: activecollab
-      img: activecollab.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Any.do
-      url: https://web.any.do/
-      img: anydo.png
-      bch: No
-      btc: No
-      othercrypto: No
-      twitter: AnyDO
-      facebook: Any.do
-
-    - name: Asana
-      url: https://www.asana.com
-      img: asana.png
-      bch: No
-      btc: No
-      othercrypto: No
-      twitter: asana
-
-    - name: Azendoo
-      url: https://app.azendoo.com
-      img: azendoo.png
-      bch: No
-      btc: No
-      othercrypto: No
-      twitter: Azendoo
-
-    - name: fruux
-      url: https://fruux.com
-      img: fruux.png
-      twitter: fruux
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Todoist
-      url: https://todoist.com
-      twitter: todoist
-      img: todoist.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Toodledo
-      url: https://www.toodledo.com
-      img: toodledo.png
-      bch: No
-      btc: No
-      othercrypto: No
-      exceptions:
-        text: "Toodledo used to accept Bitcoin as payment."
-
-    - name: Trello
-      url: https://trello.com
-      img: trello.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Wunderlist
-      url: https://www.wunderlist.com
-      twitter: Wunderlist
-      img: wunderlist.png
-      bch: No
-      btc: No
-      othercrypto: No
+- name: ActiveCollab
+  url: https://www.activecollab.com/
+  twitter: activecollab
+  img: activecollab.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Any.do
+  url: https://web.any.do/
+  img: anydo.png
+  bch: false
+  btc: false
+  othercrypto: false
+  twitter: AnyDO
+  facebook: Any.do
+- name: Asana
+  url: https://www.asana.com
+  img: asana.png
+  bch: false
+  btc: false
+  othercrypto: false
+  twitter: asana
+- name: Azendoo
+  url: https://app.azendoo.com
+  img: azendoo.png
+  bch: false
+  btc: false
+  othercrypto: false
+  twitter: Azendoo
+- name: fruux
+  url: https://fruux.com
+  img: fruux.png
+  twitter: fruux
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Todoist
+  url: https://todoist.com
+  twitter: todoist
+  img: todoist.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Toodledo
+  url: https://www.toodledo.com
+  img: toodledo.png
+  bch: false
+  btc: false
+  othercrypto: false
+  exceptions:
+    text: Toodledo used to accept Bitcoin as payment.
+- name: Trello
+  url: https://trello.com
+  img: trello.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Wunderlist
+  url: https://www.wunderlist.com
+  twitter: Wunderlist
+  img: wunderlist.png
+  bch: false
+  btc: false
+  othercrypto: false

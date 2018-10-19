@@ -1,104 +1,96 @@
 ---
 websites:
-    - name: Adormo
-      url: https://www.adormo.com/
-      img: adormo.png
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      twitter: adormonews
-      facebook: Adormo
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: Airbnb
-      url: https://www.airbnb.com/
-      img: airbnb.png
-      bch: No
-      twitter: airbnb
-      facebook: AirBNB
-      
-    - name: CryptoCribs
-      url: https://www.cryptocribs.com/
-      img: cryptocribs.png
-      twitter: CryptoCribs
-      facebook: cryptocribs
-      email_address: info@cryptocribs.com
-      bch: yes
-      btc: yes
-      othercrypto: yes
-
-    - name: Liberstad
-      url: https://www.liberstad.com/
-      img: liberstad.png
-      twitter: liberstad
-      facebook: liberstad.english
-      email_address: liberstad@gmail.com
-      bch: yes
-      btc: yes
-      othercrypto: no
-
-    - name: Perivoli Guest Rooms
-      url: https://www.guest-rooms.com
-      img: perivoli.png
-      facebook: perivoli.guest.rooms
-      email_address: itzortzak@gmail.com
-      region: eu
-      country: GR
-      city: Kokkinos Pirgos
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: https://www.guest-rooms.com/2018/06/bitcoin-cash-and-bitcoin-core-accepted.html
-
-    - name: Private Mansions
-      url: https://book.privatemansions.org/
-      img: privatemansions.png
-      email_address: welcome@privatemansions.org
-      region: eu
-      country: NL
-      city: Amsterdam
-      bch: yes
-      btc: yes
-      othercrypto: yes
-
-    - name: Riddell Travel
-      url: https://www.riddelltravel.com
-      img: riddelltravel.png
-      email_address: bookings@riddelltravel.com
-      bch: Yes
-      btc: No
-      othercrypto: Yes
-      doc: https://www.reddit.com/r/btc/comments/88yb6o/crypto_giving_you_sleepless_nights_rather_go_on_a/
-      exceptions: 
-        text: "Bitcoin Cash address will be provided once you've decided on your preferred package."
-
-    - name: SV Breta
-      url: https://breta.weebly.com/
-      img: svbreta.png
-      twitter: RoyWessbecher
-      email_address: BretaNet00@hotmail.com
-      region: na
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Villa Vvedene
-      url: http://maxkite.wixsite.com/vvedene
-      email_address: max_kite@mail.ru
-      region: eu
-      country: RU
-      lang: ru
-      city: Yaroslavl
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Washington Intern Housing Network
-      url: https://www.thewihn.com
-      facebook: dcinternhousing
-      img: wihn.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
+- name: Adormo
+  url: https://www.adormo.com/
+  img: adormo.png
+  bch: true
+  btc: true
+  othercrypto: false
+  twitter: adormonews
+  facebook: Adormo
+  keywords:
+  - bitpay
+  - bip70
+- name: Airbnb
+  url: https://www.airbnb.com/
+  img: airbnb.png
+  bch: false
+  twitter: airbnb
+  facebook: AirBNB
+- name: CryptoCribs
+  url: https://www.cryptocribs.com/
+  img: cryptocribs.png
+  twitter: CryptoCribs
+  facebook: cryptocribs
+  email_address: info@cryptocribs.com
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Liberstad
+  url: https://www.liberstad.com/
+  img: liberstad.png
+  twitter: liberstad
+  facebook: liberstad.english
+  email_address: liberstad@gmail.com
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Perivoli Guest Rooms
+  url: https://www.guest-rooms.com
+  img: perivoli.png
+  facebook: perivoli.guest.rooms
+  email_address: itzortzak@gmail.com
+  region: eu
+  country: GR
+  city: Kokkinos Pirgos
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.guest-rooms.com/2018/06/bitcoin-cash-and-bitcoin-core-accepted.html
+- name: Private Mansions
+  url: https://book.privatemansions.org/
+  img: privatemansions.png
+  email_address: welcome@privatemansions.org
+  region: eu
+  country: NL
+  city: Amsterdam
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Riddell Travel
+  url: https://www.riddelltravel.com
+  img: riddelltravel.png
+  email_address: bookings@riddelltravel.com
+  bch: true
+  btc: false
+  othercrypto: true
+  doc: https://www.reddit.com/r/btc/comments/88yb6o/crypto_giving_you_sleepless_nights_rather_go_on_a/
+  exceptions:
+    text: Bitcoin Cash address will be provided once you've decided on your preferred
+      package.
+- name: SV Breta
+  url: https://breta.weebly.com/
+  img: svbreta.png
+  twitter: RoyWessbecher
+  email_address: BretaNet00@hotmail.com
+  region: na
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Villa Vvedene
+  url: http://maxkite.wixsite.com/vvedene
+  email_address: max_kite@mail.ru
+  region: eu
+  country: RU
+  lang: ru
+  city: Yaroslavl
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Washington Intern Housing Network
+  url: https://www.thewihn.com
+  facebook: dcinternhousing
+  img: wihn.png
+  bch: true
+  btc: true
+  othercrypto: true

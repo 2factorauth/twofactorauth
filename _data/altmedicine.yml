@@ -1,57 +1,54 @@
+---
 websites:
-    - name: Float Away Spa
-      url: https://www.floatawayspa.com/
-      img: floatawayspa.png
-      twitter: floatawayspa
-      facebook: floatawayspa
-      email_address: sean@floatawayspa.com
-      region: na
-      country: US
-      city: Highland Village
-      bch: Yes
-      btc: No
-      othercrypto: No
-      doc: https://www.facebook.com/floatawayspa/posts/1370645059748005
-      exceptions: 
-        text: "Payment is only accepted in person at this point."
-
-    - name: Greenleaf Nutrients
-      url: https://greenleafnutrients.com
-      img: greenleafnutrients.png
-      twitter: greenleafnutes
-      facebook: GreenleafNutrients
-      region: na
-      country: US
-      bch: yes
-      btc: no
-      othercrypto: no
-
-    - name: Hikari Clinic Floating Tank
-      url: http://hikariclinic.jp/floating-tank/
-      img: hikariclinicfloatingtank.png
-      twitter: hikariclinic
-      facebook: HIKARICLINIC
-      lang: ja
-      region: as
-      country: JP
-      city: Okayama
-      bch: Yes
-      btc: No
-      othercrypto: No
-
-    - name: Kationickratom
-      url: http://www.kationickratom.com
-      img: kationickratom.png
-      bch: yes
-      btc: yes
-      othercrypto: yes
-      doc: http://kationickratom.com/lovingkratom/pago-bitcoin-altcoin/
-
-    - name: Kratom Buddha
-      url: https://kratombuddha.com/
-      img: kratombuddha.png
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      exceptions:
-        text: "BCH payments are accepted but only manually at this time."
+- name: Float Away Spa
+  url: https://www.floatawayspa.com/
+  img: floatawayspa.png
+  twitter: floatawayspa
+  facebook: floatawayspa
+  email_address: sean@floatawayspa.com
+  region: na
+  country: US
+  city: Highland Village
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://www.facebook.com/floatawayspa/posts/1370645059748005
+  exceptions:
+    text: Payment is only accepted in person at this point.
+- name: Greenleaf Nutrients
+  url: https://greenleafnutrients.com
+  img: greenleafnutrients.png
+  twitter: greenleafnutes
+  facebook: GreenleafNutrients
+  region: na
+  country: US
+  bch: true
+  btc: false
+  othercrypto: false
+- name: Hikari Clinic Floating Tank
+  url: http://hikariclinic.jp/floating-tank/
+  img: hikariclinicfloatingtank.png
+  twitter: hikariclinic
+  facebook: HIKARICLINIC
+  lang: ja
+  region: as
+  country: JP
+  city: Okayama
+  bch: true
+  btc: false
+  othercrypto: false
+- name: Kationickratom
+  url: http://www.kationickratom.com
+  img: kationickratom.png
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: http://kationickratom.com/lovingkratom/pago-bitcoin-altcoin/
+- name: Kratom Buddha
+  url: https://kratombuddha.com/
+  img: kratombuddha.png
+  bch: true
+  btc: true
+  othercrypto: false
+  exceptions:
+    text: BCH payments are accepted but only manually at this time.

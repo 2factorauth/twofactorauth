@@ -1,289 +1,258 @@
+---
 websites:
-    - name: Basecamp
-      url: https://basecamp.com/
-      img: basecamp.png
-      twitter: basecamp
-      facebook: 37signals
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Carbon Black Community Exchange
-      url: https://community.carbonblack.com/
-      img: carbonblack.png
-      bch: No
-      btc: No
-      othercrypto: No
-      twitter: CarbonBlack_Inc
-      facebook: carbonblackinc
-      
-    - name: Customer.io
-      url: https://customer.io
-      img: customerio.png
-      twitter: customerio
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Diamondcard.us VOIP Service
-      url: https://www.diamondcard.us
-      img: diamondcard.png
-      email_address: sales@diamondcard.us
-      city: Thailand
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      
-    - name: Disqus
-      url: https://disqus.com
-      twitter: disqus
-      facebook: disqus
-      img: disqus.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Doodle
-      url: https://www.doodle.com
-      img: doodle.png
-      twitter: doodletweet
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Fleep
-      url: https://fleep.io
-      twitter: fleepio
-      facebook: fleepio
-      img: fleep.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Flowdock
-      url: https://www.flowdock.com
-      twitter: flowdock
-      facebook: flowdock
-      img: flowdock.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Front App
-      url: https://frontapp.com
-      img: front_app.png
-      twitter: frontapp
-      facebook: frontapp
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Grape
-      url: https://chatgrape.com/
-      img: grape.png
-      twitter: chatgrapecom
-      facebook: chatgrape
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: HipChat
-      url: https://www.hipchat.com
-      twitter: HipChat
-      facebook: HipChat
-      img: hipchat.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: IRCCloud
-      url: https://www.irccloud.com
-      img: irccloud.png
-      twitter: IRCCloud
-      facebook: irccloud
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Keyport
-      url: https://www.keyport.cash/
-      img: keyport.png
-      twitter: keyportapp
-      email_address: shravan@atlantislabs.co
-      bch: Yes
-      btc: No
-      othercrypto: No
-
-    - name: MailChimp
-      url: https://mailchimp.com/
-      img: mailchimp.png
-      twitter: mailchimp
-      facebook: mailchimp
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Mailgun
-      url: https://www.mailgun.com
-      img: mailgun.png
-      twitter: mail_gun
-      facebook: mailgun
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: receive-a-sms.com
-      url: https://receive-a-sms.com/
-      img: receiveasms.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coinpayments.net
-
-    - name: RocketResponder
-      url: https://www.rocketresponder.com/
-      img: rocketresponder.png
-      bch: yes
-      btc: no
-      othercrypto: no
-      doc: https://www.rocketresponder.com/blog/now-accept-bitcoin-cash/
-
-    - name: Ryver
-      url: https://ryver.com/
-      img: ryver.png
-      twitter: ryverapp
-      facebook: RyverApp
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Salesforce
-      url: https://www.salesforce.com
-      img: salesforce.png
-      twitter: salesforce
-      facebook: salesforce
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: ScrybaSMS
-      url: https://www.scrybasms.com/
-      twitter: scrybasms
-      facebook: scrybasms
-      email_address: support@scrybasms.com
-      img: scrybasms.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: SendGrid
-      url: https://sendgrid.com/
-      img: sendgrid.png
-      twitter: sendgrid
-      facebook: sendgrid
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Sendloop
-      url: https://app.sendloop.com
-      img: sendloop.png
-      twitter: sendloop
-      facebook: sendloop
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Skype (with Microsoft Account)
-      url: https://www.skype.com
-      img: skype.png
-      twitter: skype
-      facebook: skype
-      bch: No
-      btc: No
-      othercrypto: No
-      exceptions:
-        text: "Skype used to accept BTC & BCH, but as of 2018-07-07 stopped accepting it"
-
-    - name: Slack
-      url: https://slack.com/
-      img: slack.png
-      twitter: slackhq
-      facebook: slackhq
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: SMSVeri
-      url: https://smsveri.com/
-      img: smsveri.png
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-      keywords:
-      - coinpayments.net
-
-    - name: SocketLabs
-      url: https://socketlabs.com/
-      img: socketlabs.png
-      twitter: socketlabs
-      facebook: socketlabs
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: SparkPost
-      url: https://sparkpost.com/
-      img: sparkpost.png
-      twitter: sparkpost
-      facebook: sparkpost
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Stackfield
-      url: https://www.stackfield.com/
-      img: stackfield.png
-      twitter: stackfieldapp
-      facebook: stackfieldapp
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: TeamSpeak
-      url: https://www.teamspeak.com/
-      twitter: teamspeak
-      facebook: teamspeak
-      img: teamspeak.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Telegram
-      url: https://telegram.org/
-      img: telegram.png
-      twitter: telegram
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: ToutApp
-      url: https://www1.toutapp.com/
-      twitter: toutapp
-      facebook: toutapp
-      img: toutapp.png
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: WoltLab
-      url: https://www.woltlab.com/
-      twitter: woltlab
-      facebook: WoltLab
-      email_address: woltlab@woltlab.com
-      img: woltlab.png
-      bch: No
-      btc: No
-      othercrypto: No
-
+- name: Basecamp
+  url: https://basecamp.com/
+  img: basecamp.png
+  twitter: basecamp
+  facebook: 37signals
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Carbon Black Community Exchange
+  url: https://community.carbonblack.com/
+  img: carbonblack.png
+  bch: false
+  btc: false
+  othercrypto: false
+  twitter: CarbonBlack_Inc
+  facebook: carbonblackinc
+- name: Customer.io
+  url: https://customer.io
+  img: customerio.png
+  twitter: customerio
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Diamondcard.us VOIP Service
+  url: https://www.diamondcard.us
+  img: diamondcard.png
+  email_address: sales@diamondcard.us
+  city: Thailand
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Disqus
+  url: https://disqus.com
+  twitter: disqus
+  facebook: disqus
+  img: disqus.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Doodle
+  url: https://www.doodle.com
+  img: doodle.png
+  twitter: doodletweet
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Fleep
+  url: https://fleep.io
+  twitter: fleepio
+  facebook: fleepio
+  img: fleep.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Flowdock
+  url: https://www.flowdock.com
+  twitter: flowdock
+  facebook: flowdock
+  img: flowdock.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Front App
+  url: https://frontapp.com
+  img: front_app.png
+  twitter: frontapp
+  facebook: frontapp
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Grape
+  url: https://chatgrape.com/
+  img: grape.png
+  twitter: chatgrapecom
+  facebook: chatgrape
+  bch: false
+  btc: false
+  othercrypto: false
+- name: HipChat
+  url: https://www.hipchat.com
+  twitter: HipChat
+  facebook: HipChat
+  img: hipchat.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: IRCCloud
+  url: https://www.irccloud.com
+  img: irccloud.png
+  twitter: IRCCloud
+  facebook: irccloud
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Keyport
+  url: https://www.keyport.cash/
+  img: keyport.png
+  twitter: keyportapp
+  email_address: shravan@atlantislabs.co
+  bch: true
+  btc: false
+  othercrypto: false
+- name: MailChimp
+  url: https://mailchimp.com/
+  img: mailchimp.png
+  twitter: mailchimp
+  facebook: mailchimp
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Mailgun
+  url: https://www.mailgun.com
+  img: mailgun.png
+  twitter: mail_gun
+  facebook: mailgun
+  bch: false
+  btc: false
+  othercrypto: false
+- name: receive-a-sms.com
+  url: https://receive-a-sms.com/
+  img: receiveasms.png
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinpayments.net
+- name: RocketResponder
+  url: https://www.rocketresponder.com/
+  img: rocketresponder.png
+  bch: true
+  btc: false
+  othercrypto: false
+  doc: https://www.rocketresponder.com/blog/now-accept-bitcoin-cash/
+- name: Ryver
+  url: https://ryver.com/
+  img: ryver.png
+  twitter: ryverapp
+  facebook: RyverApp
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Salesforce
+  url: https://www.salesforce.com
+  img: salesforce.png
+  twitter: salesforce
+  facebook: salesforce
+  bch: false
+  btc: false
+  othercrypto: false
+- name: ScrybaSMS
+  url: https://www.scrybasms.com/
+  twitter: scrybasms
+  facebook: scrybasms
+  email_address: support@scrybasms.com
+  img: scrybasms.png
+  bch: true
+  btc: true
+  othercrypto: true
+- name: SendGrid
+  url: https://sendgrid.com/
+  img: sendgrid.png
+  twitter: sendgrid
+  facebook: sendgrid
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Sendloop
+  url: https://app.sendloop.com
+  img: sendloop.png
+  twitter: sendloop
+  facebook: sendloop
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Skype (with Microsoft Account)
+  url: https://www.skype.com
+  img: skype.png
+  twitter: skype
+  facebook: skype
+  bch: false
+  btc: false
+  othercrypto: false
+  exceptions:
+    text: Skype used to accept BTC & BCH, but as of 2018-07-07 stopped accepting it
+- name: Slack
+  url: https://slack.com/
+  img: slack.png
+  twitter: slackhq
+  facebook: slackhq
+  bch: false
+  btc: false
+  othercrypto: false
+- name: SMSVeri
+  url: https://smsveri.com/
+  img: smsveri.png
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinpayments.net
+- name: SocketLabs
+  url: https://socketlabs.com/
+  img: socketlabs.png
+  twitter: socketlabs
+  facebook: socketlabs
+  bch: false
+  btc: false
+  othercrypto: false
+- name: SparkPost
+  url: https://sparkpost.com/
+  img: sparkpost.png
+  twitter: sparkpost
+  facebook: sparkpost
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Stackfield
+  url: https://www.stackfield.com/
+  img: stackfield.png
+  twitter: stackfieldapp
+  facebook: stackfieldapp
+  bch: false
+  btc: false
+  othercrypto: false
+- name: TeamSpeak
+  url: https://www.teamspeak.com/
+  twitter: teamspeak
+  facebook: teamspeak
+  img: teamspeak.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Telegram
+  url: https://telegram.org/
+  img: telegram.png
+  twitter: telegram
+  bch: false
+  btc: false
+  othercrypto: false
+- name: ToutApp
+  url: https://www1.toutapp.com/
+  twitter: toutapp
+  facebook: toutapp
+  img: toutapp.png
+  bch: false
+  btc: false
+  othercrypto: false
+- name: WoltLab
+  url: https://www.woltlab.com/
+  twitter: woltlab
+  facebook: WoltLab
+  email_address: woltlab@woltlab.com
+  img: woltlab.png
+  bch: false
+  btc: false
+  othercrypto: false

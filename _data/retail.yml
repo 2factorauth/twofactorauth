@@ -5,9 +5,9 @@ websites:
   img: 1337.png
   email_address: info@13-37.org
   region: eu
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   keywords:
   - coingate
 - name: 1stBoards
@@ -405,7 +405,7 @@ websites:
   btc: true
   othercrypto: false
   exceptions:
-    text: "Minimum order ammount for Bitcoin payments is 100"
+    text: Minimum order ammount for Bitcoin payments is 100
   keywords:
   - bitpay
   - bip70
@@ -458,7 +458,8 @@ websites:
   othercrypto: true
   doc: https://www.reddit.com/r/Bitcoincash/comments/8o6tto/proudly_accepting_bitcoin_cash/
   exceptions:
-    text: "This is a drop shipper. The items sold might have a high markup over normal prices"
+    text: This is a drop shipper. The items sold might have a high markup over normal
+      prices
 - name: Cryptomined
   url: https://cryptomined.com
   img: Cryptomined.png
@@ -481,9 +482,9 @@ websites:
   twitter: cryptoshoppe
   region: na
   country: US
-  bch: Yes
-  btc: No
-  othercrypto: Yes
+  bch: true
+  btc: false
+  othercrypto: true
 - name: Dell
   url: http://www.dell.com/en-us
   img: dell.png
@@ -496,9 +497,9 @@ websites:
   email_address: store@denarium.com
   twitter: DenariumBitcoin
   facebook: denariumbitcoin
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   keywords:
   - bitpay
   - coinpayments.net
@@ -708,9 +709,9 @@ websites:
   twitter: DefDist
   facebook: DefenseDistributed
   region: na
-  bch: yes
-  btc: yes
-  othercrypto: yes
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Gilt
   url: https://www.gilt.com
   twitter: gilt
@@ -776,7 +777,8 @@ websites:
   - bitpay
   - globee
   exceptions:
-    text: "This is a drop shipper. The items sold might have a high markup over normal prices"
+    text: This is a drop shipper. The items sold might have a high markup over normal
+      prices
 - name: Hak5 Gear
   url: https://hakshop.com/
   img: hak5gear.png
@@ -840,9 +842,9 @@ websites:
   email_address: ibuypokemoncom@gmail.com
   region: na
   country: US
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
 - name: IKEA
   url: https://www.ikea.com
   img: ikea.png
@@ -854,9 +856,9 @@ websites:
   img: imaniadk.png
   twitter: iManiadk
   lang: da
-  bch: Yes
-  btc: Yes
-  othercrypto: No
+  bch: true
+  btc: true
+  othercrypto: false
 - name: Indiequid
   url: https://indiequid.com/
   img: indiequid.png
@@ -1013,9 +1015,9 @@ websites:
   email_address: lfs@littlefishstore.com
   region: na
   country: US
-  bch: Yes
-  btc: No
-  othercrypto: No
+  bch: true
+  btc: false
+  othercrypto: false
   keywords:
   - coinbase
 - name: Lowes
@@ -1167,9 +1169,9 @@ websites:
   twitter: New_Parts
   facebook: NewPartsAutoParts
   region: na
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   doc: https://news.bitcoin.com/online-automotive-parts-retailer-newparts-now-accepts-bitcoin-cash/
 - name: Nordstrom
   url: https://shop.nordstrom.com
@@ -1642,9 +1644,9 @@ websites:
   facebook: swedronsverige
   email_address: info@swedron.se
   region: eu
-  bch: Yes
-  btc: Yes
-  othercrypto: No
+  bch: true
+  btc: true
+  othercrypto: false
   keywords:
   - bitpay
   - bip70
@@ -1661,9 +1663,9 @@ websites:
   facebook: tarrisstravelgear
   email_address: marketing-directories@tarriss.com
   region: na
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   keywords:
   - coinbase
 - name: tazzine.de
@@ -1764,7 +1766,8 @@ websites:
   btc: false
   othercrypto: false
   exceptions:
-    text: "Unix Stickers used to accept BTC & BCH, but as of 2018-08-03 stopped accepting it"
+    text: Unix Stickers used to accept BTC & BCH, but as of 2018-08-03 stopped accepting
+      it
 - name: USB Kill
   url: https://usbkill.com/
   img: usbkill.png

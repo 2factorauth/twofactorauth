@@ -183,7 +183,7 @@ websites:
   btc: true
   othercrypto: true
   exceptions:
-    text: "BitPay payment option is broken"
+    text: BitPay payment option is broken
   keywords:
   - coinbase
   - coinpayments.net
@@ -202,9 +202,9 @@ websites:
 - name: CryptoLamboMerch.com
   url: https://www.cryptolambomerch.com/
   email_address: joel.holsinger@yahoo.com
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   keywords:
   - bitpay
   - coinbase
@@ -356,7 +356,8 @@ websites:
   btc: true
   othercrypto: true
   exceptions:
-    text: "This is a drop shipper. The items sold might have a high markup over normal prices"
+    text: This is a drop shipper. The items sold might have a high markup over normal
+      prices
 - name: Full Circle Clothing
   url: https://imfullcircle.com/
   img: fullcircle.png
@@ -570,9 +571,9 @@ websites:
   img: maggieandmae.png
   region: na
   country: US
-  bch: Yes
-  btc: Yes
-  othercrypto: No
+  bch: true
+  btc: true
+  othercrypto: false
   keywords:
   - bitpay
   - bip70
@@ -606,9 +607,9 @@ websites:
   twitter: MissionBeltCo
   facebook: MissionBeltCo
   email_address: support@missionbelt.com
-  bch: Yes
-  btc: Yes
-  othercrypto: No
+  bch: true
+  btc: true
+  othercrypto: false
   keywords:
   - bitpay
   - bip70
@@ -617,10 +618,10 @@ websites:
   img: molonlabebrand.png
   facebook: molonlabe0
   email_address: molonlabe@molonlabebrand.com
-  bch: Yes
-  btc: No
-  othercrypto: Yes
-  doc: https://www.facebook.com/molonlabe0/photos/a.676830492689110/676830459355780/?type=3&theater  
+  bch: true
+  btc: false
+  othercrypto: true
+  doc: https://www.facebook.com/molonlabe0/photos/a.676830492689110/676830459355780/?type=3&theater
 - name: Negash
   url: https://www.negash83.com/
   img: negash.png
@@ -750,9 +751,9 @@ websites:
   email_address: spendceyptohere@gmail.com
   region: na
   country: US
-  bch: Yes
-  btc: No
-  othercrypto: Yes
+  bch: true
+  btc: false
+  othercrypto: true
 - name: Strapping Fellow
   url: https://www.strappingfellow.com/
   img: strappingfellow.png

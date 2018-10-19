@@ -1,153 +1,140 @@
+---
 websites:
-    - name: FastMail
-      url: https://www.fastmail.com/
-      img: fastmail.png
-      twitter: fastmail
-      facebook: FastMail
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Hushmail
-      url: https://www.hushmail.com
-      img: hushmail.png
-      twitter: hushmail
-      facebook: hushmail
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: kolab now
-      url: https://kolabnow.com
-      img: mykolab.png
-      twitter: kolabsys
-      facebook: Kolab-Now-503394299799839
-      region: eu
-      country: ch
-      city: KUESNACHT
-      bch: yes
-      btc: yes
-      othercrypto: no
-      doc: https://kolabnow.com/support/payments
-
-    - name: mailbox.org
-      url: https://mailbox.org/
-      img: mailbox.png
-      twitter: mailbox_org
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Mailfence
-      url: https://mailfence.com/
-      img: mailfence.png
-      twitter: mailfence
-      facebook: mailfence
-      bch: No
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Migadu
-      url: https://www.migadu.com/
-      email_address: contact@migadu.com
-      img: migadu.png
-      twitter: MigaduMail
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: MXroute
-      url: https://mxroute.com/
-      img: mxroute.png
-      twitter: mxroute
-      facebook: mxroute
-      bch: Yes
-      btc: Yes
-      othercrypto: Yes
-
-    - name: Outlook.com (with Microsoft Account)
-      url: https://outlook.com
-      img: outlook.png
-      twitter: outlook
-      facebook: Outlook
-      bch: No
-      btc: No
-      othercrypto: No
-      exceptions:
-        text: "Outlook.com used to accept BTC & BCH, but as of 2018-07-07 stopped accepting it"
-
-    - name: Ownbay
-      url: https://ownbay.net/
-      img: ownbay.png
-      twitter: ownbaynet
-      facebook: ownbay
-      lang: de
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-      doc: https://ownbay.net/sicherheit
-      keywords:
-      - bitpay
-      - bip70
-
-    - name: Pobox
-      url: https://www.pobox.com/
-      img: pobox.png
-      twitter: pobox
-      email_address: pobox@pobox.com
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Posteo
-      url: https://posteo.de/
-      img: posteo.png
-      twitter: posteo_de
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: ProtonMail
-      url: https://protonmail.com/
-      img: protonmail.png
-      twitter: protonmail
-      facebook: ProtonMail
-      bch: No
-      btc: Yes
-      othercrypto: No
-
-    - name: Runbox
-      url: https://runbox.com
-      img: runbox.png
-      twitter: runbox
-      facebook: Runbox-85087490877
-      bch: Yes
-      btc: Yes
-      othercrypto: No
-
-    - name: Thexyz
-      url: https://www.thexyz.com/
-      img: thexyz.png
-      twitter: thexyz
-      facebook: thexyz
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Tutanota
-      url: https://www.tutanota.com
-      img: Tutanota.png
-      twitter: tutanotateam
-      facebook: tutanota
-      bch: No
-      btc: No
-      othercrypto: No
-
-    - name: Zoho Mail
-      url: https://www.zoho.com/mail/
-      img: zoho.png
-      twitter: zoho
-      facebook: zoho
-      bch: No
-      btc: No
-      othercrypto: No
+- name: FastMail
+  url: https://www.fastmail.com/
+  img: fastmail.png
+  twitter: fastmail
+  facebook: FastMail
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Hushmail
+  url: https://www.hushmail.com
+  img: hushmail.png
+  twitter: hushmail
+  facebook: hushmail
+  bch: false
+  btc: false
+  othercrypto: false
+- name: kolab now
+  url: https://kolabnow.com
+  img: mykolab.png
+  twitter: kolabsys
+  facebook: Kolab-Now-503394299799839
+  region: eu
+  country: ch
+  city: KUESNACHT
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://kolabnow.com/support/payments
+- name: mailbox.org
+  url: https://mailbox.org/
+  img: mailbox.png
+  twitter: mailbox_org
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Mailfence
+  url: https://mailfence.com/
+  img: mailfence.png
+  twitter: mailfence
+  facebook: mailfence
+  bch: false
+  btc: true
+  othercrypto: true
+- name: Migadu
+  url: https://www.migadu.com/
+  email_address: contact@migadu.com
+  img: migadu.png
+  twitter: MigaduMail
+  bch: false
+  btc: false
+  othercrypto: false
+- name: MXroute
+  url: https://mxroute.com/
+  img: mxroute.png
+  twitter: mxroute
+  facebook: mxroute
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Outlook.com (with Microsoft Account)
+  url: https://outlook.com
+  img: outlook.png
+  twitter: outlook
+  facebook: Outlook
+  bch: false
+  btc: false
+  othercrypto: false
+  exceptions:
+    text: Outlook.com used to accept BTC & BCH, but as of 2018-07-07 stopped accepting
+      it
+- name: Ownbay
+  url: https://ownbay.net/
+  img: ownbay.png
+  twitter: ownbaynet
+  facebook: ownbay
+  lang: de
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://ownbay.net/sicherheit
+  keywords:
+  - bitpay
+  - bip70
+- name: Pobox
+  url: https://www.pobox.com/
+  img: pobox.png
+  twitter: pobox
+  email_address: pobox@pobox.com
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Posteo
+  url: https://posteo.de/
+  img: posteo.png
+  twitter: posteo_de
+  bch: false
+  btc: false
+  othercrypto: false
+- name: ProtonMail
+  url: https://protonmail.com/
+  img: protonmail.png
+  twitter: protonmail
+  facebook: ProtonMail
+  bch: false
+  btc: true
+  othercrypto: false
+- name: Runbox
+  url: https://runbox.com
+  img: runbox.png
+  twitter: runbox
+  facebook: Runbox-85087490877
+  bch: true
+  btc: true
+  othercrypto: false
+- name: Thexyz
+  url: https://www.thexyz.com/
+  img: thexyz.png
+  twitter: thexyz
+  facebook: thexyz
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Tutanota
+  url: https://www.tutanota.com
+  img: Tutanota.png
+  twitter: tutanotateam
+  facebook: tutanota
+  bch: false
+  btc: false
+  othercrypto: false
+- name: Zoho Mail
+  url: https://www.zoho.com/mail/
+  img: zoho.png
+  twitter: zoho
+  facebook: zoho
+  bch: false
+  btc: false
+  othercrypto: false
