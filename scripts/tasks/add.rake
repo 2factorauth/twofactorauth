@@ -66,9 +66,24 @@ namespace :add do
   end
 
   task :github do
-    url = 'https://api.github.com/repos/acceptbitcoincash/acceptbitcoincash/issues/'
-    url += value_prompt('issue number')
-    uri = URI(url)
+    issue_num = value_prompt('issue number')
+    add_from_github(issue_num)
+  end
+
+  task :githubs do
+    issue_nums = value_prompt('issue numbers (separated by commas)')
+    commit_msg = ''
+    issue_nums.split(',').each do |num|
+      if add_from_github(num)
+        commit_msg += ' closes #' + num
+      end
+    end
+    puts "Be sure to mention the following in your commit message: #{commit_msg}"
+  end
+
+  def add_from_github(issue_num)
+    github_url = 'https://api.github.com/repos/acceptbitcoincash/acceptbitcoincash/issues'
+    uri = URI("#{github_url}/#{issue_num}")
     puts 'pulling issue from repository'
     issue = Net::HTTP.get(uri)
     issue = JSON.parse(issue)
@@ -78,7 +93,7 @@ namespace :add do
     section, websites = read_yaml(category, 'websites')
     unless valid_to_ins(websites, request, 'name')
       puts 'Duplicate of entry, update functionality not yet available'
-      return
+      return false
     end
 
     if request['img'].nil?
@@ -87,13 +102,16 @@ namespace :add do
       puts "Download the image from #{request['img']}"
       request['img'] = value_prompt('image name')
     end
-    puts "Be sure you saved the logo to img/#{category}/#{request['img']}"
+    puts "Be sure you saved the logo to img/#{category}/#{request['img']}" \
+      unless File.exist?(File.join(base_dir, "img/#{category}/#{request['img']}"))
 
     section['websites'] = add_and_sort(websites, request, 'name')
     if valid_revision(section)
       write_yaml(category, section)
+      return true
     else
       puts 'Invalid entry, try changing the data before trying again.'
+      return false
     end
   end
 
