@@ -160,7 +160,6 @@ begin
   validator = get_validator('websites_schema.yml')
 
   sections.each do |section|
-
     process_section(section, validator)
   end
 
