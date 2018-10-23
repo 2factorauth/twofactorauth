@@ -58,10 +58,12 @@ def process_section(section, validator)
   section_file = "_data/#{section['id']}.yml"
   data = SafeYAML.load_file(File.join(__dir__, section_file))
   websites = data['websites']
+
   validate_data(validator, data, section_file, 'name', websites)
 
-  # Check section alphabetization
-  validate_alphabetical(websites, 'name', section_file)
+  # Set section alphabetization
+  data['websites'] = websites.sort_by { |s| s['name'].downcase }
+  File.write(File.join(__dir__, section_file), YAML.dump(data))
 
   # Collect list of all images for section
   imgs = Dir["img/#{section['id']}/*"]
@@ -158,6 +160,7 @@ begin
   validator = get_validator('websites_schema.yml')
 
   sections.each do |section|
+
     process_section(section, validator)
   end
 
