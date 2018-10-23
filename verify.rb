@@ -58,7 +58,6 @@ def process_section(section, validator)
   section_file = "_data/#{section['id']}.yml"
   data = SafeYAML.load_file(File.join(__dir__, section_file))
   websites = data['websites']
-
   validate_data(validator, data, section_file, 'name', websites)
 
   # Set section alphabetization
