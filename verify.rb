@@ -60,8 +60,9 @@ def process_section(section, validator)
   websites = data['websites']
   validate_data(validator, data, section_file, 'name', websites)
 
-  # Check section alphabetization
-  validate_alphabetical(websites, 'name', section_file)
+  # Set section alphabetization
+  data['websites'] = websites.sort_by { |s| s['name'].downcase }
+  File.write(File.join(__dir__, section_file), YAML.dump(data))
 
   # Collect list of all images for section
   imgs = Dir["img/#{section['id']}/*"]
