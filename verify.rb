@@ -27,10 +27,10 @@ def error(msg)
   puts "#{@output}. #{msg}"
 end
 
-# rubocop:disable AbcSize,CyclomaticComplexity
 def test_img(img, name, imgs)
   # Exception if image file not found
   raise "#{name} image not found." unless File.exist?(img)
+
   # Remove img from array unless it doesn't exist (double reference case)
   imgs.delete_at(imgs.index(img)) unless imgs.index(img).nil?
 
@@ -38,17 +38,26 @@ def test_img(img, name, imgs)
   error("#{img} is not #{@img_dimensions.join('x')} pixels.")\
     unless FastImage.size(img) == @img_dimensions
 
+  test_img_file(img)
+end
+
+def test_img_file(img)
   # Check image file extension and type
   error("#{img} is not using the #{@img_extension} format.")\
     unless File.extname(img) == @img_extension && FastImage.type(img) == :png
 
   # Check image file size
   img_size = File.size(img)
-  return unless img_size > @img_max_size
-  error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
-          " currently #{img_size} bytes.")
+  unless img_size <= @img_max_size
+    error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
+              " currently #{img_size} bytes.")
+  end
+
+  # Check image permissions
+  perms = File.stat(img).mode
+  error("#{img} is not set 644. It is currently #{perms.to_s(8)}")\
+    unless perms.to_s(8) == '100644'
 end
-# rubocop:enable AbcSize,CyclomaticComplexity
 
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing
@@ -78,6 +87,7 @@ begin
     websites.each do |website|
       @tfa_tags[!website['tfa']].each do |tag|
         next if website[tag].nil?
+
         error("\'#{tag}\' should NOT be "\
             "present when tfa: #{website['tfa'] ? 'true' : 'false'}.")
       end

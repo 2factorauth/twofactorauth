@@ -1,9 +1,24 @@
 websites:
+    - name: 500px
+      url: https://500px.com/
+      img: 500px.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.500px.com/hc/en-us/articles/205115877-How-do-I-setup-Two-Factor-Authentication
+
     - name: about.me
       url: https://about.me
       twitter: aboutdotme
       img: aboutme.png
       tfa: No
+
+    - name: ASKfm
+      url: https://ask.fm/
+      img: askfm.png
+      tfa: No
+      twitter: askfm
+      facebook: askfmpage
 
     - name: Badoo
       url: https://badoo.com
@@ -47,8 +62,6 @@ websites:
       sms: Yes
       software: Yes
       hardware: Yes
-      exceptions:
-          text: "SMS required for 2FA. 1 account per phone number."
       doc: https://www.facebook.com/help/148233965247823
 
     - name: Flipboard
@@ -104,6 +117,7 @@ websites:
       img: instagram.png
       tfa: Yes
       sms: Yes
+      software: Yes
       doc: https://help.instagram.com/566810106808145
 
     - name: LinkedIn
@@ -114,7 +128,7 @@ websites:
       doc: https://help.linkedin.com/app/answers/detail/a_id/531/related/1
 
     - name: LiveJournal
-      url: http://www.livejournal.com
+      url: https://www.livejournal.com
       twitter: LiveJournal
       img: livejournal.png
       tfa: No
@@ -125,13 +139,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://lobste.rs/s/1cyltz/two_factor_authentication_now_available
-
-    - name: Mastodon
-      url: https://joinmastodon.org/
-      img: mastodon.png
-      tfa: Yes
-      software: Yes
-      doc: https://github.com/tootsuite/documentation/blob/master/Using-Mastodon/2FA.md
 
     - name: Medium
       url: https://medium.com
@@ -182,6 +189,12 @@ websites:
       software: Yes
       doc: https://help.pinterest.com/en/articles/two-factor-authentication
 
+    - name: Plurk
+      url: https://plurk.com
+      img: plurk.png
+      tfa: Yes
+      software: Yes
+
     - name: Quora
       url: https://www.quora.com
       img: quora.png
@@ -201,7 +214,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://support.snapchat.com/ca/login-verification
+      doc: https://support.snapchat.com/en-US/article/enable-login-verification
 
     - name: Stack Exchange
       url: https://stackexchange.com/
@@ -223,8 +236,9 @@ websites:
       tfa: Yes
       sms: Yes
       exceptions:
-          text: "SMS only available on select providers. SMS required for 2FA. 10 accounts per phone number, 1 phone number per account."
+          text: "SMS only available on select providers. Phone number associated with account required for 2FA. 10 accounts per phone number, 1 phone number per account."
       software: Yes
+      hardware: Yes
       doc: https://support.twitter.com/articles/20170388
 
     - name: VanillaForums.com
@@ -259,8 +273,14 @@ websites:
       sms: Yes
       software: Yes
       exceptions:
-          text: "SMS-capable phone required."
+        text: "SMS required for 2FA."
       doc: https://en.support.wordpress.com/security/two-step-authentication/
+
+    - name: Wykop
+      url: https://www.wykop.pl
+      img: wykop.png
+      tfa: Yes
+      software: Yes
 
     - name: XING
       url: https://www.xing.com
