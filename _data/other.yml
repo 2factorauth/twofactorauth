@@ -3,12 +3,10 @@ websites:
       url: https://accounts.adobe.com/
       img: adobe.png
       tfa: Yes
+      email: Yes
       sms: Yes
       software: Yes
-      email: Yes
-      doc: https://helpx.adobe.com/x-productkb/global/adobe-id-account-change.html#2-step-verification
-      exceptions:
-          text: "To activate 2-Step Verification, you must provide a mobile phone number."
+      doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
     - name: Aerohive Networks
       url: https://www.aerohive.com/
