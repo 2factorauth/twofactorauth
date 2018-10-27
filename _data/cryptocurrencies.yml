@@ -123,6 +123,15 @@ websites:
       software: Yes
       doc: https://www.btcbox.co.jp/help/ga
 
+    - name: BTC Markets
+      url: https://www.btcmarkets.net/
+      img: btcmarkets.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.btcmarkets.net/faq#q27
+      exceptions:
+          text: "A mobile phone number is required to reset two-factor authentication."
+
     - name: BTCPOP
       url: https://btcpop.co/
       img: btcpop.png
