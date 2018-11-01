@@ -47,6 +47,13 @@ websites:
       exceptions:
           text: "2FA settings are service-specific."
 
+    - name: Authy
+      url: https://dashboard.authy.com
+      img: authy.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+
     - name: Balsamiq
       url: https://balsamiq.com
       twitter: balsamiq
