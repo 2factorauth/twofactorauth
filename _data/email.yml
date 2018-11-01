@@ -99,6 +99,15 @@ websites:
       img: migadu.png
       tfa: No
 
+    - name: Mimecast
+      url: https://www.mimecast.com/
+      img: mimecast.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: https://community.mimecast.com/docs/DOC-1915
+
     - name: MXroute
       url: https://mxroute.com/
       img: mxroute.png
