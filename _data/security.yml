@@ -54,7 +54,7 @@ websites:
       hardware: Yes
       exceptions:
           text: "Requires X.509-capable cryptotoken or smartcard."
-    
+
     - name: Cloudflare
       url: https://cloudflare.com
       img: cloudflare.png
@@ -110,9 +110,8 @@ websites:
     - name: ExpressVPN
       img: expressvpn.png
       url: https://www.expressvpn.com
-      tfa: No
-      twitter: expressvpn
-      facebook: ExpressVPN
+      tfa: Yes
+      email: Yes
 
     - name: GeoTrust
       url: https://www.geotrust.com/
