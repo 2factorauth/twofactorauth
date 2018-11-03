@@ -75,6 +75,15 @@ websites:
       software: Yes
       doc: https://www.realvnc.com/en/connect/docs/multi-factor-auth.html#protecting-your-realvnc-account
 
+    - name: Remote Desktop Manager
+      url: https://www.remotedesktopmanager.com
+      img: RemoteDesktopManager.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.remotedesktopmanager.com/howto_googleauthenticator.htm
+      exceptions:
+             text: "2FA is only available on the Enterprise Edition"
+
     - name: TeamViewer
       url: https://www.teamviewer.com
       img: teamviewer.png
