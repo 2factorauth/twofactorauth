@@ -89,6 +89,13 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: Buildkite
+      url: https://buildkite.com
+      img: buildkite.png
+      tfa: Yes
+      software: Yes
+      doc: https://buildkite.com/changelog/31-two-factor-authentication
+
     - name: BuiltWith
       url: https://builtwith.com
       img: builtwith.png
