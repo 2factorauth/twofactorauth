@@ -519,6 +519,15 @@ websites:
       exceptions:
         text: "A phone number is required to enable two-factor authentication."
 
+    - name: VentraIP
+      url: https://ventraip.com.au/
+      img: ventraip.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      email: Yes
+      doc: https://ventraip.com.au/faq/article/two-factor-authentication-faq-vipcontrol/
+
     - name: Verio
       url: https://www.verio.com/
       twitter: Verio
