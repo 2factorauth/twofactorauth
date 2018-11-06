@@ -30,6 +30,7 @@ end
 def test_img(img, name, imgs)
   # Exception if image file not found
   raise "#{name} image not found." unless File.exist?(img)
+
   # Remove img from array unless it doesn't exist (double reference case)
   imgs.delete_at(imgs.index(img)) unless imgs.index(img).nil?
 
@@ -86,6 +87,7 @@ begin
     websites.each do |website|
       @tfa_tags[!website['tfa']].each do |tag|
         next if website[tag].nil?
+
         error("\'#{tag}\' should NOT be "\
             "present when tfa: #{website['tfa'] ? 'true' : 'false'}.")
       end

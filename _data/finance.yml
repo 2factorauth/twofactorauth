@@ -45,6 +45,13 @@ websites:
       img: creditkarma.png
       tfa: Yes
       sms: Yes
+      phone: Yes
+
+    - name: DEGIRO
+      url: https://www.degiro.nl
+      img: degiro.png
+      tfa: Yes
+      software: Yes
 
     - name: ditech
       url: https://www.ditech.com
@@ -65,6 +72,13 @@ websites:
       img: freshbooks.png
       twitter: freshbooks
       facebook: FreshBooks
+      tfa: No
+
+    - name: Funding Circle
+      url: https://www.fundingcircle.com/
+      img: fundingcircle.png
+      twitter: fundingcircle
+      facebook: FundingCircleUK
       tfa: No
 
     - name: Geico
@@ -126,7 +140,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://help.justworks.com/customer/en/portal/articles/2488740-two-factor-authentication
+      doc: https://help.justworks.com/hc/en-us/articles/360004477492-Two-Factor-Authentication
 
     - name: Kiva
       url: https://www.kiva.org
@@ -148,6 +162,20 @@ websites:
       img: levelup.png
       tfa: No
 
+    - name: Linxo
+      url: https://www.linxo.com/
+      twitter: Linxo
+      facebook: Linxo
+      img: linxo.png
+      tfa: No
+
+    - name: Metorik
+      url: https://www.metorik.com
+      img: metorik.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.metorik.com/article/22-how-can-i-enable-2fa-on-my-account
+
     - name: Mint
       url: https://www.mint.com
       img: mint.png
@@ -155,6 +183,7 @@ websites:
       sms: Yes
       email: Yes
       software: Yes
+      doc: https://ttlc.intuit.com/questions/2905185
 
     - name: money by Envestnet | Yodlee
       url: https://money.yodlee.com/
@@ -163,7 +192,7 @@ websites:
       tfa: No
 
     - name: Moneybird
-      url: https://www.moneybird.nl/
+      url: https://www.moneybird.com/
       img: moneybird.png
       tfa: Yes
       software: Yes
@@ -217,7 +246,7 @@ websites:
       img: pocketsmith.png
       tfa: Yes
       software: Yes
-      doc: https://www.pocketsmith.com/blog/2014/07/18/2fa-orginal-merchant-and-other-updates
+      doc: https://learn.pocketsmith.com/article/167-two-factor-authentication-2fa-on-your-pocketsmith-account
 
     - name: Popmoney
       url: https://www.popmoney.com

@@ -34,6 +34,8 @@ websites:
       sms: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+          text: "Software authentication requires the Blizzard Authenticator app."
       doc: https://us.battle.net/support/en/article/Blizzard-Authenticator
 
     - name: Curse
@@ -74,7 +76,8 @@ websites:
       img: epicgames.png
       tfa: Yes
       email: Yes
-      doc: http://epicgames.desk.com/customer/en/portal/articles/2879127-what-is-two-factor-sign-in-and-how-do-i-opt-in-
+      software: Yes
+      doc: https://epicgames.helpshift.com/a/epic-accounts/?s=epic-accounts&f=what-is-two-factor-authentication-2fa-and-how-do-i-opt-in
 
     - name: EVE Online
       url: https://www.eveonline.com/
@@ -284,6 +287,13 @@ websites:
       software: Yes
       doc: http://www.tibia.com/support/?subtopic=faq&question=authenticator
 
+    - name: Toontown Rewritten
+      url: https://www.toontownrewritten.com/
+      img: toontownrewritten.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.toontownrewritten.com/help/faq/accounts--login#twostep
+
     - name: Trion Worlds
       url: https://www.trionworlds.com/en/
       img: trionworlds.png
@@ -312,6 +322,14 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://support.wildstar-online.com/hc/en-us/articles/203982369-Two-Step-Verification-FAQ
+
+    - name: Wizard101
+      url: https://www.wizard101.com
+      twitter: wizard101
+      facebook: wizard101
+      email_address: support@wizard101.com
+      img: wizard101.png
+      tfa: No
 
     - name: Xbox Live
       url: https://www.xbox.com/live
