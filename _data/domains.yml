@@ -417,6 +417,16 @@ websites:
       software: Yes
       doc: https://ns1.com/articles/enabling-2-factor-authentication
 
+    - name: OpenDNS
+      url: https://www.opendns.com/
+      img: opendns.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      exceptions:
+          text: "Only available for enterprise accounts."
+      doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
+
     - name: Openprovider
       url: https://www.openprovider.co.uk
       img: openprovider.png

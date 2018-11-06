@@ -179,16 +179,6 @@ websites:
       phone: Yes
       doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us
 
-    - name: OpenDNS
-      url: https://www.opendns.com/
-      img: opendns.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "Only available for enterprise accounts."
-      doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
-
     - name: Perfect Privacy VPN
       url: https://www.perfect-privacy.com/
       img: perfectprivacyvpn.png
