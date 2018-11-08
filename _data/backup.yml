@@ -136,6 +136,14 @@ websites:
     img: multcloud.png
     tfa: No
 
+  - name: Nextcloud
+    url: https://nextcloud.com/
+    img: nextcloud.svg
+    tfa: Yes
+    software: Yes
+    hardware: Yes
+    doc: https://apps.nextcloud.com/apps/twofactor_u2f
+
   - name: Nimbox
     url: https://www.nimbox.co.uk/
     img: nimbox.png
