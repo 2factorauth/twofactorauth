@@ -1,31 +1,44 @@
-require 'html/proofer'
+require 'html-proofer'
+require 'rubocop/rake_task'
+require 'jekyll'
+require 'jsonlint/rake_task'
 
-task :default => [:verify, :test]
+task default: %w[proof verify jsonlint rubocop]
+
+task :build do
+  config = Jekyll.configuration(
+    'source' => './',
+    'destination' => './_site'
+  )
+  site = Jekyll::Site.new(config)
+  Jekyll::Commands::Build.build site, config
+end
+
+task proof: 'build' do
+  HTMLProofer.check_directory(
+    './_site', \
+    assume_extension: true, \
+    check_html: true, \
+    disable_external: true
+  ).run
+end
+
+task proof_external: 'build' do
+  HTMLProofer.check_directory(
+    './_site', \
+    assume_extension: true, \
+    check_html: true, \
+    cache: { timeframe: '1w' }, \
+    hydra: { max_concurrency: 12 }
+  ).run
+end
+
+JsonLint::RakeTask.new do |t|
+  t.paths = %w[_site/data.json]
+end
 
 task :verify do
-    ruby "./verify.rb"
+  ruby './verify.rb'
 end
 
-task :test do
-  begin
-    sh 'bundle exec jekyll build --drafts'
-    HTML::Proofer.new('./_site',
-      :parallel => { :in_threads => 8 },
-
-      :followlocation => true,
-
-      # Some certificates need this to pass
-      :ssl_verifypeer => false,
-
-      # Ignore 302 errors and 503's. Some sites use Cloudflare for DDOS
-      # protection and this causes 503's.
-      :only_4xx => true,
-
-      # For when we are feeling risky
-      #validate_html => true,
-    ).run
-  rescue => e
-    # Don't fail the build, just output errors
-    puts e
-  end
-end
+RuboCop::RakeTask.new
