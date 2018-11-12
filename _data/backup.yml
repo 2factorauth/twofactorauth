@@ -64,6 +64,8 @@ websites:
     hardware: Yes
     otp: Yes
     u2f: Yes
+    exceptions:
+        text: "U2F can only be used if phone or OTP was configured as two-factor first."
     doc: https://www.dropbox.com/en/help/363
 
   - name: Evernote
