@@ -318,12 +318,12 @@ websites:
 
     - name: Oderland
       url: https://www.oderland.se/
-      twitter: oderlandab
-      facebook: oderland
-      email_address: support@oderland.se
       img: oderland.png
-      tfa: No
-      lang: sv
+      tfa: Yes
+      software: Yes
+      exceptions:
+          text: "Only available for the main client area. Hosting panels not supported."
+      doc: https://www.oderland.se/support/en/artikel/how-is-my-personal-information-handled/#how-do-i-encrypt-personal-information
 
     - name: One.com
       url: https://www.one.com/
