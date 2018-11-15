@@ -118,13 +118,6 @@ websites:
       hardware: Yes
       doc: https://www.bochk.com/en/security/2factorauthentication.html
 
-    - name: Bank Zachodni WBK
-      url: https://www.bzwbk.pl
-      img: bzwbk.png
-      tfa: Yes
-      sms: Yes
-      doc: https://www.bzwbk.pl/firmy/bankowosc-elektroniczna/bzwbk24-mini-firma/metody-autoryzacji/metody-autoryzacji.html
-
     - name: Barclays UK
       url: https://www.barclays.co.uk/
       img: barclays.png
@@ -803,6 +796,16 @@ websites:
       facebook: santanderbrasil
       email_address: santander.email@santander.com.br
       lang: pt
+
+    - name: Santander PL
+      url: https://santander.pl
+      img: santander.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://santander.pl/firmy/bankowosc-elektroniczna/bzwbk24-mini-firma/metody-autoryzacji/metody-autoryzacji.html
+      exceptions:
+       text: "Software authentication only available via Santander mobile."
 
     - name: Santander UK
       url: https://www.santander.co.uk
