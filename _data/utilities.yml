@@ -469,3 +469,14 @@ websites:
   bch: false
   btc: false
   othercrypto: false
+- name: igiftcards
+  url: https://igiftcards.nl
+  img: igiftcards.png
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
+  region: eu
+  country: NL
+  doc: Note: several other country domains: fr/de/at/it/es exist as well
+  exceptions: 
+    text: "Choose Bitcoin (Not cryptocurrencies)"
