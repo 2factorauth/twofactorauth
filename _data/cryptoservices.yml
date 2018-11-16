@@ -602,3 +602,13 @@ websites:
   bch: Yes
   btc: No
   othercrypto: No
+- name: Bitcoin People Online
+  url: https://bitcoinpeople.online/
+  img: BitcoinPeopleOnline.png
+  bch: Yes
+  btc: Yes
+  othercrypto: Yes
+  twitter: _bitcoinpeople
+  facebook: bitcoinpeopleonline
+  exceptions: 
+    text: "Some merchants listed on the site do not accept BCH. The website is a place for independent crypto-accepting merchants to sell things. Each merchant is different."
