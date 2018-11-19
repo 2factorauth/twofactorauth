@@ -156,13 +156,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://support.robinhood.com/hc/en-us/articles/211546986-Two-Factor-Authentication
-
-    - name: Scottrade
-      url: https://www.scottrade.com/
-      twitter: scottrade
-      img: scottrade.png
-      tfa: No
+      doc: https://support.robinhood.com/hc/en-us/articles/360001213783
 
     - name: SigFig
       url: https://www.sigfig.com/
@@ -202,6 +196,8 @@ websites:
       sms: Yes
       phone: Yes
       hardware: Yes
+      exceptions:
+        text: "Hardware 2FA requires using a Chrome browser and only supports the following hardware keys: Yubikey 4 Series, Yubikey NEO, Yubikey FIDO U2F Security Key."
       doc: https://investornews.vanguard/sign-up-for-these-3-security-features/
 
     - name: Wealthfront

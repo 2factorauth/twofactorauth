@@ -9,9 +9,9 @@ websites:
     - name: Basecamp
       url: https://basecamp.com/
       img: basecamp.png
-      tfa: Yes
-      sms: Yes
-      doc: https://basecamp.com/help/guides/you/phone-verification
+      tfa: No
+      twitter: basecamp
+      email_address: email@basecamp.com
 
     - name: Campfire
       url: https://campfirenow.com/
@@ -19,6 +19,13 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://help.37signals.com/sign-in/questions/460-how-do-i-set-up-and-use-phone-verification-for-logging-in
+
+    - name: Capsule
+      url: https://capsulecrm.com/
+      img: capsule.png
+      tfa: yes
+      software: yes
+      doc: https://capsulecrm.com/support/user-preferences/#enabling-two-factor-authentication
 
     - name: Carbon Black Community Exchange
       url: https://community.carbonblack.com/
@@ -92,12 +99,30 @@ websites:
       software: Yes
       doc: https://chatgrape.com/doc/deployment/2fa.html
 
+    - name: Hangouts
+      url: https://hangouts.google.com/
+      img: hangouts.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+
     - name: HipChat
       url: https://www.hipchat.com
       twitter: HipChat
       facebook: HipChat
       img: hipchat.png
       tfa: No
+
+    - name: HubSpot
+      url: https://www.hubspot.com/
+      img: hubspot.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://knowledge.hubspot.com/articles/kcs_article/account/how-can-i-set-up-two-factor-authentication-for-my-hubspot-login
 
     - name: IRCCloud
       url: https://www.irccloud.com
@@ -172,7 +197,7 @@ websites:
       sms: Yes
       software: Yes
       exceptions:
-          text: "Software authentication requires the Authy app"
+          text: "Software authentication requires the Authy app."
       doc: https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
 
     - name: Sendloop
@@ -188,7 +213,7 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
-      doc: https://support.signal.org/hc/en-us/articles/360001842431-What-is-Registration-Lock-
+      doc: https://support.signal.org/hc/en-us/articles/360007059792
 
     - name: Skype
       url: https://www.skype.com
@@ -197,6 +222,8 @@ websites:
       email: Yes
       sms: Yes
       software: Yes
+      exceptions:
+          text: "Must be associated with a Microsoft Account."
       doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
 
     - name: Slack

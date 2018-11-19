@@ -96,12 +96,12 @@ websites:
       twitter: collegedupage
       facebook: collegeofdupage
       email_address: studenthelp@dupage.edu
-      img: CoD.png
+      img: cod.png
       tfa: No
 
     - name: CompTIA
       url: https://certification.comptia.org/
-      img: CompTIA.png
+      img: comptia.png
       tfa: No
       twitter: comptia
       facebook: CompTIA
@@ -120,6 +120,16 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://tjanster.csn.se/bas/vanligaFragor.do
+
+    - name: Duke University
+      url: https://www.duke.edu
+      img: duke.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://idms-mfa.oit.duke.edu/mfa/help
 
     - name: Duolingo
       url: https://www.duolingo.com
@@ -219,6 +229,13 @@ websites:
       tfa: No
       twitter: ISACANews
       facebook: ISACAHQ
+
+    - name: KnowBe4 
+      url: https://www.knowbe4.com/
+      img: knowbe4.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.knowbe4.com/hc/en-us/articles/225681448-How-do-I-enable-two-factor-or-multi-factor-authentication-on-my-account-
 
     - name: Massachusetts Institute of Technology
       url: https://web.mit.edu/
@@ -332,7 +349,7 @@ websites:
       phone: Yes
       hardware: Yes
       software: Yes
-      doc: http://its.umich.edu/accounts-access/uniqnames-passwords/two-factor-authentication
+      doc: https://www.safecomputing.umich.edu/two-factor-authentication
 
     - name: Virginia Commonwealth University
       url: https://www.vcu.edu
@@ -342,7 +359,7 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
-      doc: https://www.ts.vcu.edu/askit/essential-computing/information-security/2factor/
+      doc: https://ts.vcu.edu/askit/essential-computing/information-security/2factor/
 
     - name: Virginia Tech
       url: https://www.vt.edu/

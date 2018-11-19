@@ -1,17 +1,20 @@
 # Languages should be categorized according to ISO 639-1
 # Language codes (including within data files) should be in lowercase
+cs:
+  progress_tweet: Děkujeme za práci na podpoře dvoufaktorového ověření, @TWITTERHANDLE!
+  work_tweet: Bezpečnost je důležitá, @TWITTERHANDLE. Byli bychom rádi, kdybyste podporovali dvoufaktorové ověření.
 de:
-  work_tweet: Sicherheit ist wichtig, @TWITTERHANDLE. Bitte aktiviert Zwei-Faktor-Authentifizierung auf eurer Webseite.
   progress_tweet: Vielen Dank für die Fortschritte bei der Zwei-Faktor-Authentifizierung, @TWITTERHANDLE!
+  work_tweet: Sicherheit ist wichtig, @TWITTERHANDLE. Bitte aktiviert Zwei-Faktor-Authentifizierung auf eurer Webseite.
 en:
-  work_tweet: Security is important, @TWITTERHANDLE. We'd like it if you supported two factor auth.
   progress_tweet: Thanks for working on support for two factor auth, @TWITTERHANDLE!
+  work_tweet: Security is important, @TWITTERHANDLE. We'd like it if you supported two factor auth.
 fr:
-  work_tweet: La sécurité est importante @TWITTERHANDLE. C'est pour quand la double authentification (2FA)?
   progress_tweet: Merci d'avoir commencé à mettre en place un système de double authentification (2FA), @TWITTERHANDLE!
-sv:
-  work_tweet: Säkerhet är viktigt, @TWITTERHANDLE. Vänligen lägg till two factor authentication på er hemsida.
-  progress_tweet: Tack för att ni arbetar på two factor authentication, @TWITTERHANDLE!
+  work_tweet: La sécurité est importante @TWITTERHANDLE. C'est pour quand la double authentification (2FA)?
 it:
-  work_tweet: La sicurezza è importante, @TWITTERHANDLE. Ci piacerebbe che supportaste l'autenticazione a due fattori (2FA).
   progress_tweet: Grazie per l'interesse nel supportare l'autenticazione a due fattori (2FA), @TWITTERHANDLE!
+  work_tweet: La sicurezza è importante, @TWITTERHANDLE. Ci piacerebbe che supportaste l'autenticazione a due fattori (2FA).
+sv:
+  progress_tweet: Tack för att ni arbetar på two factor authentication, @TWITTERHANDLE!
+  work_tweet: Säkerhet är viktigt, @TWITTERHANDLE. Vänligen lägg till two factor authentication på er hemsida.

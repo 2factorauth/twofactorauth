@@ -11,6 +11,11 @@
     right: 0;
     top: 0;
     width: 80px;
+    pointer-events: none;
+  }
+
+  .octo-triangle {
+    pointer-events:auto;
   }
 
   .octo-arm {

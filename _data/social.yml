@@ -1,4 +1,12 @@
 websites:
+    - name: 500px
+      url: https://500px.com/
+      img: 500px.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.500px.com/hc/en-us/articles/205115877-How-do-I-setup-Two-Factor-Authentication
+
     - name: about.me
       url: https://about.me
       twitter: aboutdotme
@@ -109,6 +117,7 @@ websites:
       img: instagram.png
       tfa: Yes
       sms: Yes
+      software: Yes
       doc: https://help.instagram.com/566810106808145
 
     - name: LinkedIn
@@ -130,13 +139,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://lobste.rs/s/1cyltz/two_factor_authentication_now_available
-
-    - name: Mastodon
-      url: https://joinmastodon.org/
-      img: mastodon.png
-      tfa: Yes
-      software: Yes
-      doc: https://github.com/tootsuite/documentation/blob/master/Using-Mastodon/2FA.md
 
     - name: Medium
       url: https://medium.com
@@ -190,9 +192,8 @@ websites:
     - name: Plurk
       url: https://plurk.com
       img: plurk.png
-      tfa: No
-      twitter: plurk
-      facebook: plurkers
+      tfa: Yes
+      software: Yes
 
     - name: Quora
       url: https://www.quora.com
@@ -213,7 +214,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://support.snapchat.com/ca/login-verification
+      doc: https://support.snapchat.com/en-US/article/enable-login-verification
 
     - name: Stack Exchange
       url: https://stackexchange.com/
@@ -237,6 +238,7 @@ websites:
       exceptions:
           text: "SMS only available on select providers. Phone number associated with account required for 2FA. 10 accounts per phone number, 1 phone number per account."
       software: Yes
+      hardware: Yes
       doc: https://support.twitter.com/articles/20170388
 
     - name: VanillaForums.com
@@ -271,14 +273,21 @@ websites:
       sms: Yes
       software: Yes
       exceptions:
-          text: "SMS-capable phone required."
+        text: "SMS required for 2FA."
       doc: https://en.support.wordpress.com/security/two-step-authentication/
+
+    - name: Wykop
+      url: https://www.wykop.pl
+      img: wykop.png
+      tfa: Yes
+      software: Yes
 
     - name: XING
       url: https://www.xing.com
       img: xing.png
-      tfa: No
-      twitter: XING_com
+      tfa: Yes
+      sms: Yes
+      software: Yes
 
     - name: Zocle
       url: https://zocle.com/
