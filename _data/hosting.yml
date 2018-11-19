@@ -1,5 +1,15 @@
 ---
 websites:
+- name: 1gbits.com
+  url: https://1gbits.com
+  img: 1gbits.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: 1gbits
+  facebook: 1gbits
+  email_address: sales@1gbits.com
+  region: eu
 - name: 34SP.com
   url: https://www.34SP.com
   img: 34sp.png
@@ -194,6 +204,15 @@ websites:
   bch: false
   twitter: cyon
   facebook: cyonhosting
+- name: DataQuest Digital Pty Ltd
+  url: https://dataquestdigital.com.au/
+  img: DataQuestDigitalPtyLtd.png
+  twitter: dq_digital
+  facebook: dq_digital
+  country: AU
+  bch: false
+  btc: false
+  othercrypto: false
 - name: Dreamhost
   url: https://dreamhost.com
   img: dreamhost.png
@@ -907,22 +926,3 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: DataQuest Digital Pty Ltd
-  url: https://dataquestdigital.com.au/
-  img: DataQuestDigitalPtyLtd.png 
-  twitter: dq_digital
-  facebook: dq_digital
-  country: AU
-  bch: No
-  btc: No
-  othercrypto: No
-- name: 1gbits.com
-  url: https://1gbits.com
-  img: 1gbits.png
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
-  twitter: 1gbits
-  facebook: 1gbits
-  email_address: sales@1gbits.com
-  region: eu
