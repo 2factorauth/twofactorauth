@@ -1,5 +1,17 @@
 ---
 websites:
+- name: a&amp;o hostels
+  url: https://www.aohostels.com
+  img: aohostels.png
+  bch: true
+  btc: true
+  othercrypto: false
+  facebook: aohostels
+  country: DE
+  doc: https://www.aohostels.com/en/services/frequent-guest-advantage/
+  keywords:
+  - bitpay
+  - bip70
 - name: Adormo
   url: https://www.adormo.com/
   img: adormo.png
@@ -17,6 +29,16 @@ websites:
   bch: false
   twitter: airbnb
   facebook: AirBNB
+- name: Apia Inn Samoa
+  url: https://www.apiainnsamoa.com
+  img: ApiaInnSamoa.png
+  bch: true
+  btc: false
+  othercrypto: false
+  twitter: apiainnsamoa
+  facebook: apiainnsamoa
+  email_address: info@apiainnsamoa.com
+  doc: https://www.apiainnsamoa.com/now-accepting-bitcoin-cash/
 - name: CryptoCribs
   url: https://www.cryptocribs.com/
   img: cryptocribs.png
@@ -94,25 +116,3 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-- name: a&amp;o hostels
-  url: https://www.aohostels.com
-  img: aohostels.png 
-  bch: Yes
-  btc: Yes
-  othercrypto: No
-  facebook: aohostels
-  country: DE
-  doc: https://www.aohostels.com/en/services/frequent-guest-advantage/
-  keywords: 
-  - bitpay 
-  - bip70 
-- name: Apia Inn Samoa
-  url: https://www.apiainnsamoa.com
-  img: ApiaInnSamoa.png
-  bch: Yes
-  btc: No
-  othercrypto: No
-  twitter: apiainnsamoa
-  facebook: apiainnsamoa
-  email_address: info@apiainnsamoa.com
-  doc: https://www.apiainnsamoa.com/now-accepting-bitcoin-cash/
