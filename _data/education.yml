@@ -351,6 +351,17 @@ websites:
       software: Yes
       doc: https://www.safecomputing.umich.edu/two-factor-authentication
 
+    - name: University of Washington
+      url: https://www.washington.edu/
+      img: uw.png
+      tfa: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      exceptions:
+          text: "Available for employees only"
+      doc: https://itconnect.uw.edu/security/uw-netids/2fa/
+
     - name: Virginia Commonwealth University
       url: https://www.vcu.edu
       img: vcu.png
