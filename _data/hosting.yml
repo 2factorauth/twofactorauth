@@ -1,5 +1,15 @@
 ---
 websites:
+- name: 1gbits.com
+  url: https://1gbits.com
+  img: 1gbits.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: 1gbits
+  facebook: 1gbits
+  email_address: sales@1gbits.com
+  region: eu
 - name: 34SP.com
   url: https://www.34SP.com
   img: 34sp.png
@@ -194,6 +204,15 @@ websites:
   bch: false
   twitter: cyon
   facebook: cyonhosting
+- name: DataQuest Digital Pty Ltd
+  url: https://dataquestdigital.com.au/
+  img: DataQuestDigitalPtyLtd.png
+  twitter: dq_digital
+  facebook: dq_digital
+  country: AU
+  bch: false
+  btc: false
+  othercrypto: false
 - name: Dreamhost
   url: https://dreamhost.com
   img: dreamhost.png
@@ -821,6 +840,15 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Vero Servers
+  url: https://www.veroservers.com/
+  img: VeroServers.png 
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: veroservers
+  email_address: contact@veroservers.com
+  region: eu
 - name: Versio
   url: https://www.versio.nl
   twitter: versio
@@ -853,6 +881,18 @@ websites:
   othercrypto: false
   exceptions:
     text: Crypto-Payments only for existing customers/non-new accounts
+- name: Web4Africa
+  url: https://web4africa.com
+  img: web4africa.png
+  twitter: web4africa
+  facebook: web4africa
+  region: AF
+  country: ZA
+  city: Johannesburg
+  bch: no
+  btc: yes
+  othercrypto: yes
+  doc: https://web4africa.com/web-hosting/pay-with-bitcoin/
 - name: WebFaction
   url: https://www.webfaction.com
   twitter: webfaction
@@ -907,12 +947,3 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: DataQuest Digital Pty Ltd
-  url: https://dataquestdigital.com.au/
-  img: DataQuestDigitalPtyLtd.png 
-  twitter: dq_digital
-  facebook: dq_digital
-  country: AU
-  bch: No
-  btc: No
-  othercrypto: No

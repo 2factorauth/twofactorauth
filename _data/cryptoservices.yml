@@ -64,6 +64,18 @@ websites:
   bch: false
   btc: true
   othercrypto: false
+- name: Bitcoin People Online
+  url: https://bitcoinpeople.online/
+  img: BitcoinPeopleOnline.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: _bitcoinpeople
+  facebook: bitcoinpeopleonline
+  exceptions:
+    text: Some merchants listed on the site do not accept BCH. The website is a place
+      for independent crypto-accepting merchants to sell things. Each merchant is
+      different.
 - name: Bitcoin Superstore
   url: https://bitcoinsuperstore.us
   img: bitcoinSuperstore.png
@@ -548,8 +560,6 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-  exceptions:
-    text: They only accept Bitcoin Cash if you contact them first.
 - name: Tippr
   url: https://tippr.rocketr.net
   img: tippr.png
@@ -563,6 +573,14 @@ websites:
   btc: true
   othercrypto: true
   doc: https://uphold.com/en/blog/posts/uphold/bitcoin-cash-live-on-uphold
+- name: Vanity Cash
+  url: https://vanity.cash
+  img: VanityCash.png
+  twitter: coin_dance
+  email_address: david@blockchain.ventures
+  bch: true
+  btc: false
+  othercrypto: false
 - name: WebMoney
   url: https://www.wmtransfer.com
   img: webmoney.png
@@ -594,11 +612,16 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: Vanity Cash
-  url: https://vanity.cash
-  img: VanityCash.png
-  twitter: coin_dance
-  email_address: david@blockchain.ventures
+- name: DOBI ATM
+  url: http://www.dobiatm.com
+  img: DOBIATM.png 
   bch: Yes
-  btc: No
-  othercrypto: No
+  btc: Yes
+  othercrypto: Yes
+  twitter: dobiatm
+  email_address: viva@dobitrade.com
+  region: na
+  city: Los Angeles
+  doc: https://coinatmradar.com/manufacturer/93/dobi-atm-bitcoin-atm-producer/
+  exceptions: 
+    text: "yes. Users have cash or bank card through Bitcoin ATM to use Bitcoin Cash"

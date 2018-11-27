@@ -331,7 +331,19 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: Mamas Banh – Vietnamese Culinary Diversity
+- name: MAMACHA
+  url: https://mamacha.nyc/
+  img: MAMACHA.png
+  bch: true
+  btc: true
+  othercrypto: false
+  email_address: hello@mamacha.nyc
+  region: na
+  country: US
+  city: New York City
+  exceptions:
+    text: They provide a QR code using a mobile app.
+- name: Mamas Banh - Vietnamese Culinary Diversity
   url: http://mamasbanh.com/
   img: mamasbanh.png
   facebook: mamasbanh
@@ -643,3 +655,14 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: a3farms
+  url: https://a3farms.com
+  img: a3farms.png 
+  bch: Yes
+  btc: Yes
+  othercrypto: No
+  facebook: a3farms
+  email_address: jim@a3farms.com
+  region: na
+  country: US
+  city: North Central Florida

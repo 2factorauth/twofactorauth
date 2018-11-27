@@ -486,3 +486,15 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: Wellness Home and Life
+  url: https://www.wellnesshomeandlife.com.au
+  img: WellnessHomeandLife.png
+  bch: true
+  btc: true
+  othercrypto: true
+  facebook: wellnesshomeandlife
+  email_address: info@wellnesshomeandlife.com.au
+  region: oc
+  country: AU
+  exceptions:
+    text: Payment processed via CoinBase Merchant, so select that at checkout

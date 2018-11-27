@@ -86,3 +86,11 @@ websites:
   - xsolla
   - bitpay
   - bip70
+- name: WP-GPL
+  url: https://wp-gpl.org
+  bch: Yes
+  btc: No
+  othercrypto: Yes
+  email_address: jack@wp-gpl.org
+  exceptions:
+    text: "Note: GPL software can usually be obtained for free."
