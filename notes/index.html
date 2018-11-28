@@ -5,7 +5,7 @@ layout: secondary
   <div class="three column row">
 {%- assign row_count = 0 -%}
 {%- for related_page in site.pages -%}
-  {%- if related_page.layout == 'secondary' and related_page.name != 'notes.html' -%}
+  {%- if related_page.layout == 'secondary' and related_page.name != 'index.html' -%}
     {%- assign row_count = row_count | plus: 1 -%}
     <div class="column">
       <div class="ui card">
