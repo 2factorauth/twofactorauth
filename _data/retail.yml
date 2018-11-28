@@ -1162,9 +1162,10 @@ websites:
   othercrypto: true
   facebook: nativomoebel.de
   region: eu
+  lang: de
   doc: https://nativo-moebel.de/content/5-zahlung
-  exceptions:
-    text: over Coingate
+  keywords:
+  - coingate
 - name: Newegg
   url: https://www.newegg.com
   img: newegg.png
