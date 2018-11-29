@@ -104,6 +104,17 @@ websites:
       hardware: Yes
       doc: https://help.okta.com/en/prod/Content/Topics/Security/MFA.htm
 
+    - name: OneLogin
+      url: https://www.onelogin.com/
+      img: onelogin.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      phone: No
+      email: No
+      hardware: Yes
+      doc: https://onelogin.service-now.com/support?id=kb_article&sys_id=43d99143db109700d5505eea4b96197a
+
     - name: PassHub
       url: https://passhub.net/
       img: passhub.png
