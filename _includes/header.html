@@ -1,12 +1,8 @@
 <div class="ui teal inverted menu">
-  {% if include.page == 'home' %}
-  <a href="/" class="active item">
-    {% else %}
-    <a href="/" class="item">
-      {% endif %}
-      <i class="home icon"></i>
-      Home
-    </a>
+  <a href="/" class="{% if include.page == 'home' %}active {% endif %}item">
+    <i class="home icon"></i>
+    Home
+  </a>
 
     {% if include.page == 'home' %}
     <div class="ui dropdown item">
@@ -38,14 +34,10 @@
 
     {% if 1 == 0 %}
     <!-- Don't show for right now -->
-    {% if include.page == 'restrictions' %}
-    <a href="/restrictions" class="active item">
-      {% else %}
-      <a href="/restrictions" class="item">
-        {% endif %}
+    <a href="/restrictions" class="{% if include.page == 'restrictions' %}active {% endif %}item">
         <i class="warning icon"></i>
         Restrictions
-      </a>
-      {% endif %}
+    </a>
+    {% endif %}
 
 </div>
