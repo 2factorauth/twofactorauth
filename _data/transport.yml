@@ -232,10 +232,11 @@ websites:
 
     - name: Uber
       url: https://www.uber.com/
-      twitter: uber_support
-      facebook: uber
       img: uber.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.uber.com/h/b8bb9152-8c91-4f49-83c4-35cf2e1dcf72
 
     - name: United
       url: https://www.united.com/
