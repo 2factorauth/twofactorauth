@@ -28,16 +28,23 @@ In order to run the site locally, it is necessary to install bundler, install al
 the site. If the `gem` command is not available to you, it is necessary to install Ruby with RubyGems.
 Once Ruby and RubyGems are installed and available from the command line, TwoFactorAuth can be setup using the following commands.
 
-```
+```shell
 gem install bundler
 cd ~/twofactorauth
 bundle install
 bundle exec jekyll serve
 ```
 
+If you're using Ubuntu or [Bash on Windows (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) you'll probably need to install these dependencies first:
+
+```shell
+sudo apt install libffi-dev nodejs python-dev gcc ruby rails make zlib1g-dev ruby-dev libcurl3
+gem install bundler
+```
+
 The TwoFactorAuth website should then be accessible from `http://localhost:4000`.
 
-Another option is to run Jekyll inside a Docker container.  Please read the [Jekyll Docker Documentation](https://github.com/envygeeks/jekyll-docker/blob/master/README.md) on how to do this.
+Another option is to run Jekyll inside a [Docker](https://www.docker.com/) container.  Please read the [Jekyll Docker Documentation](https://github.com/envygeeks/jekyll-docker/blob/master/README.md) on how to do this.
 
 ## License
 
