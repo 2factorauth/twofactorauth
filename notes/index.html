@@ -1,60 +1,29 @@
 ---
 layout: secondary
 ---
-
-<div id="note-header" class="ui center aligned icon header">
-  <i class="circular file outline icon"></i>
-
-  <h2>Notes</h2>
-</div>
-
 <div class="ui stackable grid container">
   <div class="three column row">
+{%- assign row_count = 0 -%}
+{%- for related_page in site.pages -%}
+  {%- if related_page.layout == 'secondary' and related_page.name != 'index.html' -%}
+    {%- assign row_count = row_count | plus: 1 -%}
     <div class="column">
       <div class="ui card">
-        <a class="image" href="/notes/chase">
-          <img src="img/chase.svg" alt="Chase">
+        <a class="image" href="{{related_page.url}}">
+          <img src="img/{{related_page.img}}" alt="{{related_page.company}}">
         </a>
 
         <div class="content">
-          <a class="header" href="/notes/chase">Chase</a>
+          <a class="header" href="{{related_page.url}}">{{related_page.company}}</a>
         </div>
       </div>
     </div>
-    <div class="column">
-      <div class="ui card">
-        <a class="image" href="/notes/fidelity">
-          <img src="img/fidelity.png" alt="Fidelity">
-        </a>
-
-        <div class="content">
-          <a class="header" href="/notes/fidelity">Fidelity Investments</a>
-        </div>
-      </div>
-    </div>
+  {%- endif -%} 
+  {%- if row_count == 3 -%}
+    {%- assign row_count = 0 -%}
   </div>
   <div class="three column row">
-    <div class="column">
-      <div class="ui card">
-        <a class="image" href="/notes/gree">
-          <img src="img/gree.png" alt="GREE">
-        </a>
-
-        <div class="content">
-          <a class="header" href="/notes/gree">GREE</a>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="ui card">
-        <a class="image" href="/notes/internetbs">
-          <img src="img/internetbs.png" alt="Internet.bs">
-        </a>
-
-        <div class="content">
-          <a class="header" href="/notes/internetbs">Internet.bs</a>
-        </div>
-      </div>
-    </div>
+  {%- endif -%}
+{%- endfor -%}    
   </div>
 </div>
