@@ -69,8 +69,8 @@
 
 				{%- endif -%}
 			  </td>
-			  <td class="{% if website.othercrypto %}positive{% else %}negative{% endif %} icon">
-				{%- if website.othercrypto -%}
+			  <td class="{% if website.othercrypto or website.bsv %}positive{% else %}negative{% endif %} icon">
+				{%- if website.othercrypto or website.bsv -%}
 				<span data-tooltip="Other cryptocurrencies are accepted at {{ website.name }}" data-position="top center" data-inverted="">
 				  <i class="checkmark large icon"></i>
 				</span>
