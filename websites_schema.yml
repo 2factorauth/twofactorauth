@@ -33,6 +33,10 @@ mapping:
             type: bool
             desc: Do they accept BTC?
             pattern: /(true|false)/
+          "bsv":
+            type: bool
+            desc: Do they accept BSV?
+            pattern: /(true|false)/
           "othercrypto":
             type: bool
             desc: Do they accept Other Crypto?
