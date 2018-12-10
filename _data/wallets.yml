@@ -63,11 +63,9 @@ websites:
   url: https://cashpay.solutions
   img: cashpay.png
   twitter: CashPayWallet
-  bch: true
+  bch: false
   btc: false
-  othercrypto: false
-  exceptions:
-    text: Must have a coinbase.com account for spend and replace
+  othercrypto: true
 - name: Coinomi
   url: https://coinomi.com/
   img: coinomi.png
