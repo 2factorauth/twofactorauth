@@ -29,11 +29,11 @@ show_generated_date: false
 		{%- assign section_listings = section_file.websites | size -%}
 		{%- assign count_total = count_total | plus: section_listings -%}
 		{%- for website in section_file.websites -%}
-			{%- if website.bch or website.btc or website.othercrypto -%}
+			{%- if website.bch or website.btc or website.othercrypto or website.bsv -%}
 				{%- assign count_any_crypto = count_any_crypto | plus: '1' -%}
 				{%- if website.bch -%}
 					{%- assign count_bch = count_bch | plus: '1' -%}
-					{%- unless website.btc or website.othercrypto -%}
+					{%- unless website.btc or website.othercrypto or website.bsv -%}
 						{%- assign count_only_bch = count_only_bch | plus: '1' -%}
 					{% endunless %}
 				{%- endif -%}
@@ -43,7 +43,7 @@ show_generated_date: false
 						{%- assign count_cobra = count_cobra | plus: '1' -%}
 					{%- endif -%}
 				{%- endif -%}
-				{%- if website.othercrypto -%}
+				{%- if website.othercrypto or website.bsv -%}
 					{%- assign count_other_crypto = count_other_crypto | plus: '1' -%}
 				{%- endif -%}
 			{%- endif -%}
