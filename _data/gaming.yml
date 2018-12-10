@@ -253,11 +253,13 @@ websites:
   keywords:
   - bitpay
   - bip70
-- name: KeyMarket
-  url: https://steamcommunity.com/id/keymarket01
-  img: keymarket.png
-  btc: false
+- name: Keys4Coins
+  url: https://www.keys4coins.com
+  img: keys4coins.png
   bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.keys4coins.com/bitcoin-cash-accepted-here/
 - name: Kinguin
   url: https://www.kinguin.net/
   img: kinguin.png
@@ -280,12 +282,14 @@ websites:
   url: https://livecards.eu/
   img: livecards.png
   email_address: support@supportprofessionals.net
-  bch: true
+  bch: false
   btc: true
   othercrypto: false
   keywords:
   - bitpay
   - bip70
+  exceptions:
+    text: LIVECARDS used to accept Bitcoin Cash, but as of 2018-12-06 stopped accepting it
 - name: LucKey Productions
   url: https://luckeyproductions.nl
   img: luckeyproductions.png
@@ -353,7 +357,7 @@ websites:
   doc: https://www.offgamers.com/payment-guide/pg/e-wallet/bitcoin-bitcoin-cash
   keywords:
   - bitpay
-  - bip70
+  - webmoney
 - name: OMGSERV
   url: https://www.omgserv.com
   img: OMGSERV.png
@@ -362,16 +366,17 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: Online Key Store
-  url: https://www.onlinekeystore.com/
-  img: onlinekeystore.png
-  twitter: OnlineKeyStore
-  facebook: OnlineKeyStore
+- name: Titancodes
+  url: https://www.titancodes.com/
+  img: titancodes.png
+  twitter: TitanCodes
+  facebook: Titancodes
   bch: true
   btc: true
-  othercrypto: true
+  othercrypto: false
   keywords:
-  - coinpayments.net
+  - bitpay
+  - webmoney
 - name: Origin
   url: https://www.origin.com/
   img: origin.png
@@ -530,8 +535,10 @@ websites:
   email_address: info@zap-hosting.com
   twitter: zaphosting
   facebook: zaphosting
-  bch: true
+  bch: false
   btc: true
-  othercrypto: true
+  othercrypto: false
   keywords:
   - coinify
+  exceptions:
+    text: ZAP-Hosting used to accept BCH & Other Cryptos, but as of 2018-12-06 stopped accepting it
