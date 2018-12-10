@@ -38,7 +38,7 @@
       <div class="main {{main_class}}">
         {% include segment/table-row-title.html section=section_id website=website type='mobile' show_social=show_social %}
         {%- if website.status -%}
-        {%- elsif website.bch or website.btc or website.othercrypto -%}
+        {%- elsif website.bch or website.btc or website.othercrypto or website.bsv -%}
           <p>Supported:</p>
           {%- if website.bch -%}
           <div class="mobile-logo coin-wrap green-coin-wrap">
@@ -56,7 +56,7 @@
             </span>
           </div>
           {%- endif -%}
-          {%- if website.othercrypto -%}
+          {%- if website.othercrypto or website.bsv-%}
           <div class="mobile-logo tbl-other-crypto">Other<br>Crypto</div>
           {%- endif -%}
           {%- if website.doc or website.twitter or website.facebook or website.email_address -%}
@@ -65,7 +65,7 @@
             <a href="{{ website.doc }}" class="ui button mini blue docs" target="_blank" title="{{page.rtfm}} {{website.name}}'s website"><i class="book big icon"></i></a>
             {%- endif -%}
             {%- if website.bch -%}
-            {%- elsif website.btc or website.othercrypto -%}
+            {%- elsif website.btc or website.othercrypto or website.bsv -%}
             {%- if website.twitter -%}
 			{%- assign social_count = social_count | plus: '1' -%}
     		<a title="{{page.link_tweet|replace:'TWITTERHANDLE',website.twitter}}" class="ui twitter mini button" href="https://twitter.com/share?url={{site.twitter_url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank">Ask on <i class="twitter big icon"></i></a>
