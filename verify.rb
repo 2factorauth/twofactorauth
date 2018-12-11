@@ -56,7 +56,7 @@ def test_img_file(img)
   # Check image permissions
   perms = File.stat(img).mode
   error("#{img} is not set 644. It is currently #{perms.to_s(8)}")\
-    unless perms.to_s(8) == '100644'
+    unless perms.to_s(8) == '100644' || perms.to_s(8) == '100664'
 end
 
 # Load each section, check for errors such as invalid syntax
