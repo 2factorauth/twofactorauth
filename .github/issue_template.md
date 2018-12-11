@@ -17,6 +17,9 @@ Requesting to add {{**site_name_here**}} to the {{**category_name_here**}} categ
   btc: yes_or_no
   othercrypto: yes_or_no
   doc: URL_to_site_with_bitcoin_cash_announcement_or_help/support_article_etc
+  keywords:
+  - keyword1
+  - keyword2
 ```
 
 Add more information here if necessary.
