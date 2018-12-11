@@ -59,7 +59,7 @@ def test_img_file(img)
 
   # Check image permissions
   perms = File.stat(img).mode.to_s(8).split(//).last(3).join
-  error("#{img} is not set 644 or 664. It is currently #{perms}")\
+  error("#{img} permissions must be one of: #{@img_permissions.join(',')}. It is currently #{perms}.")\
   unless @img_permissions.include?(perms)
 end
 # rubocop:enable Metrics/AbcSize
