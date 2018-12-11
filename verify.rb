@@ -47,16 +47,15 @@ def test_img_file(img)
     unless File.extname(img) == @img_extension && FastImage.type(img) == :png
 
   # Check image file size
-  img_size = File.size(img)
-  unless img_size <= @img_max_size
+  unless File.size(img) <= @img_max_size
     error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
-              " currently #{img_size} bytes.")
+          " currently #{File.size(img)} bytes.")
   end
 
   # Check image permissions
-  perms = File.stat(img).mode
-  error("#{img} is not set 644. It is currently #{perms.to_s(8)}")\
-    unless perms.to_s(8) == '100644' || perms.to_s(8) == '100664'
+  perms = File.stat(img).mode.to_s(8)
+  error("#{img} is not set 644. It is currently #{perms}")\
+    unless %w[100644 100664].include? perms
 end
 
 # Load each section, check for errors such as invalid syntax
