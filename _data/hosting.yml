@@ -141,6 +141,16 @@ websites:
   btc: true
   othercrypto: false
   twitter: chunkhost
+- name: Cleverhost
+  url: https://cleverhost.ca
+  img: Cleverhost.png 
+  bch: false
+  btc: true
+  othercrypto: true
+  twitter: cleverhostca
+  facebook: cleverhost
+  keywords:
+  - coinpayments
 - name: Cloud9
   url: https://cloud9hosting.com/
   img: cloud9hosting.png
@@ -910,9 +920,9 @@ websites:
   region: AF
   country: ZA
   city: Johannesburg
-  bch: no
-  btc: yes
-  othercrypto: yes
+  bch: false
+  btc: true
+  othercrypto: true
   doc: https://web4africa.com/web-hosting/pay-with-bitcoin/
 - name: WebFaction
   url: https://www.webfaction.com
