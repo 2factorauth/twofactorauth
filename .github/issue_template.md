@@ -14,6 +14,7 @@ Requesting to add {{**site_name_here**}} to the {{**category_name_here**}} categ
   country: see_wikipedia_link_below
   city: capitalize_city_name
   bch: yes_or_no
+  bsv: yes_or_no
   btc: yes_or_no
   othercrypto: yes_or_no
   doc: URL_to_site_with_bitcoin_cash_announcement_or_help/support_article_etc
