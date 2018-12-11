@@ -33,7 +33,7 @@ show_bch_only: no
 	{%- for section in tracked_page.items -%}
 		{%- assign section_file = site.data[section.id] -%}
 		{%- for website in section_file.websites -%}
-			{%- if website.btc or website.othercrypto -%}
+			{%- if website.btc or website.othercrypto or website.bsv -%}
 				{%- assign count_total = count_total | plus: '1' -%}
 			{%- elsif website.bch -%}
 				{%- assign count_bch = count_bch | plus: '1' -%}
