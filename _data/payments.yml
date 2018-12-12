@@ -212,6 +212,8 @@ websites:
   bch: false
   btc: true
   othercrypto: true
+  exceptions:
+    text: GloBee used to accept BCH, but on 2018-11-23 stopped accepting it
 - name: GoCardless
   img: gocardless.png
   url: https://gocardless.com/

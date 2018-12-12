@@ -260,7 +260,9 @@ websites:
   btc: true
   othercrypto: true
   keywords:
-  - coinbase
+  - globee
+  exceptions:
+    text: Due to GloBee stopping BCH support Billfodl accepts BCH manually, you need to contact support.
 - name: Bit Shopping
   url: https://bitshopping.com.au/
   img: bitshopping.png
