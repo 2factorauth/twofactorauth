@@ -112,6 +112,14 @@ websites:
   btc: true
   othercrypto: true
   doc: https://linuxmint.com/donors.php
+- name: OBS Project
+  url: https://obsproject.com/
+  img: OBSProject.png
+  bch: true
+  btc: true
+  othercrypto: false
+  twitter: obsproject
+  doc: https://obsproject.com/donate
 - name: OpenBSD Foundation
   url: https://www.openbsdfoundation.org/
   img: openbsd.png
@@ -223,6 +231,6 @@ websites:
   img: Sci_Hub.png
   twitter: Sci_Hub
   facebook: sci.hub.org
-  bch: No
-  btc: Yes
-  othercrypto: No
+  bch: false
+  btc: true
+  othercrypto: false
