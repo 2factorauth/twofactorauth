@@ -8,6 +8,14 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Art by Matt Habel
+  url: https://www.etsy.com/shop/matthabel
+  img: ArtbyMattHabel.png
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: "Checkout with payment method 'Other' and message me for payment address."
 - name: ARTLy
   url: https://shop.gohuozumi.com/
   img: artly.png
@@ -108,9 +116,9 @@ websites:
 - name: Dope! Gallery
   url: https://dope.gallery
   img: DopeGallery.png
-  bch: Yes
-  btc: Yes
-  othercrypto: No
+  bch: true
+  btc: true
+  othercrypto: false
   facebook: letartbeyourdope
   email_address: info@dope.gallery
   region: as
