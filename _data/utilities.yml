@@ -193,6 +193,15 @@ websites:
   btc: true
   othercrypto: true
   doc: https://hushed.com/payment-step-1/
+- name: igiftcards
+  url: https://igiftcards.nl
+  img: igiftcards.png
+  bch: true
+  btc: true
+  othercrypto: true
+  region: eu
+  exceptions:
+    text: Choose Bitcoin (Not cryptocurrencies). There is also igiftcards.fr/de/at/it/es
 - name: LV.Net
   url: https://www.lv.net
   img: LVNet.png
@@ -469,12 +478,3 @@ websites:
   bch: false
   btc: false
   othercrypto: false
-- name: igiftcards
-  url: https://igiftcards.nl
-  img: igiftcards.png
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
-  region: eu
-  exceptions: 
-    text: "Choose Bitcoin (Not cryptocurrencies). There is also igiftcards.fr/de/at/it/es"
