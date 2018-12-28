@@ -1,6 +1,9 @@
 require 'yaml'
 require 'fastimage'
 require 'kwalify'
+require 'rugged'
+require 'hashdiff'
+require 'mailchimp'
 @output = 0
 
 # YAML tags related to TFA
@@ -123,4 +126,43 @@ rescue => e
 # rubocop:enable Style/RescueStandardError
 else
   puts "<------------ No errors. You\'re good to go! ------------>\n"
+end
+if ENV['TRAVIS_EVENT_TYPE'] == 'cron' && \
+   ENV['TRAVIS_SECURE_ENV'] == 'true' && Date.today.monday?
+  puts 'Sending weekly diff email'
+  # Find commits 1 week old
+  repo = Rugged::Repository.new('.')
+  walker = Rugged::Walker.new(repo)
+  walker.push(repo.head.target)
+  commit_to_diff = nil
+  walker.each do |commit|
+    commit_to_diff = commit if Date.today - 7 < Date.parse(commit.time.inspect)
+    break if Date.today - 7 >= Date.parse(commit.time.inspect)
+  end
+  ymls = repo.head.target.diff(commit_to_diff).deltas.map do |d|
+    d.new_file[:path]
+  end
+  ymls.map! { |y| Pathname.new(y).each_filename.to_a }
+  ymls.select! { |y| y[0] == '_data' && y[1] != 'sections.yml' }
+  ymls.map! { |y| y[1] }
+  outputs = []
+  ymls.each do |y|
+    yml_oid = repo.lookup(commit_to_diff.tree['_data'][:oid])[y][:oid]
+    old_content = YAML.safe_load(repo.lookup(yml_oid).content)
+    curr_content = YAML.load_file("_data/#{y}")
+    HashDiff.diff(old_content, curr_content).each do |d|
+      websites_regex = /(?<=websites\[).*(?=\])/
+
+      next unless d[0] == '+' && d[1] =~ websites_regex
+
+      outputs.push(curr_content['websites'][websites_regex.match(d[1]).to_s.to_i])
+      puts outputs
+      if curr_content['websites'][websites_regex.match(d[1]).to_s.to_i]['tfa']
+        puts 'HIT'
+      end
+    end
+  end
+  mailchimp = Mailchimp::API.new(ENV['MAILCHIMPAPIKEY'])
+  weekly_email = mailchimp.campaigns.create('regular', { "list_id": 'b3fb7479bb', "subject": 'Weekly Update', from_email: 'stephen@egroat.com', from_name: 'stephen' }, html: outputs.to_s)
+  mailchimp.campaigns.send(weekly_email['id'])
 end
