@@ -367,10 +367,12 @@ websites:
   url: https://njal.la
   twitter: njal_la
   img: njal_la.png
-  bch: true
+  bch: false
   btc: true
   othercrypto: true
   doc: https://twitter.com/njal_la/status/930417225013628928
+  exceptions:
+    text: Njalla used to accept BCH, but as of 2018-12-22 stopped accepting it
 - name: No-IP
   url: https://www.noip.com/
   img: noip.png

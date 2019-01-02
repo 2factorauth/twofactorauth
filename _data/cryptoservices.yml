@@ -249,7 +249,7 @@ websites:
       support.
 - name: CoinMall
   url: https://www.coinmall.com
-  img: CoinMall.png 
+  img: CoinMall.png
   bch: true
   btc: true
   othercrypto: true
@@ -318,8 +318,9 @@ websites:
   url: https://www.cryptonize.it
   twitter: cryptonize_it
   img: cryptonizeit.png
-  bch: true
+  bch: false
   btc: false
+  bsv: true
   othercrypto: false
   doc: https://www.reddit.com/r/btc/comments/7jmcyz/pay_for_anything_online_with_bch_cryptonizeit/
 - name: Cryptopiece
@@ -346,6 +347,19 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: DOBI ATM
+  url: http://www.dobiatm.com
+  img: DOBIATM.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: dobiatm
+  email_address: viva@dobitrade.com
+  region: na
+  city: Los Angeles
+  doc: https://coinatmradar.com/manufacturer/93/dobi-atm-bitcoin-atm-producer/
+  exceptions:
+    text: yes. Users have cash or bank card through Bitcoin ATM to use Bitcoin Cash
 - name: eGifter
   url: https://www.egifter.com/Default.aspx
   img: egifter.png
@@ -618,16 +632,3 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: DOBI ATM
-  url: http://www.dobiatm.com
-  img: DOBIATM.png 
-  bch: true
-  btc: true
-  othercrypto: true
-  twitter: dobiatm
-  email_address: viva@dobitrade.com
-  region: na
-  city: Los Angeles
-  doc: https://coinatmradar.com/manufacturer/93/dobi-atm-bitcoin-atm-producer/
-  exceptions: 
-    text: "yes. Users have cash or bank card through Bitcoin ATM to use Bitcoin Cash"

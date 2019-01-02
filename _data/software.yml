@@ -74,6 +74,14 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.redfox.bz/bitcoin.html
+- name: WP-GPL
+  url: https://wp-gpl.org
+  bch: true
+  btc: false
+  othercrypto: true
+  email_address: jack@wp-gpl.org
+  exceptions:
+    text: 'Note: GPL software can usually be obtained for free.'
 - name: XSplit
   url: https://www.xsplit.com/
   img: xsplit.png
@@ -86,11 +94,3 @@ websites:
   - xsolla
   - bitpay
   - bip70
-- name: WP-GPL
-  url: https://wp-gpl.org
-  bch: Yes
-  btc: No
-  othercrypto: Yes
-  email_address: jack@wp-gpl.org
-  exceptions:
-    text: "Note: GPL software can usually be obtained for free."

@@ -1,5 +1,12 @@
 ---
 websites:
+- name: Bitbacker.io
+  url: https://bitbacker.io/
+  img: bitbackerio.png
+  twitter: BitBacker_io
+  bch: true
+  btc: true
+  othercrypto: true
 - name: BitFund.cash
   url: http://bitfund.cash/
   img: bitfund.png
@@ -32,8 +39,9 @@ websites:
 - name: Lighthouse
   url: https://lighthouse.cash/
   img: lighthouse.png
-  bch: true
+  bch: false
   btc: false
+  bsv: true
   othercrypto: false
 - name: Pozible
   url: https://www.pozible.com
