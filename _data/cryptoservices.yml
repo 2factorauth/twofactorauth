@@ -551,6 +551,14 @@ websites:
   btc: true
   othercrypto: true
   doc: https://info.shapeshift.io/blog/2017/07/27/important-bitcoin-hard-fork-information
+- name: SMT
+  url: https://smt.ua/
+  img: SMT.png
+  bch: true
+  btc: true
+  othercrypto: true
+  region: eu
+  country: UA
 - name: The Big Coin
   url: https://www.thebigcoin.io
   img: thebigcoin.png
@@ -613,9 +621,9 @@ websites:
 - name: DOBI ATM
   url: http://www.dobiatm.com
   img: DOBIATM.png 
-  bch: Yes
-  btc: Yes
-  othercrypto: Yes
+  bch: true
+  btc: true
+  othercrypto: true
   twitter: dobiatm
   email_address: viva@dobitrade.com
   region: na
