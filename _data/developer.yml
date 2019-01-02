@@ -12,6 +12,8 @@ websites:
 
     - name: Airbrake
       url: https://airbrake.io
+      twitter: airbrake
+      facebook: airbrake.io
       img: airbrake.png
       tfa: Yes
       software: Yes
@@ -22,7 +24,7 @@ websites:
       img: algolia.png
       tfa: Yes
       software: Yes
-      doc: https://www.algolia.com/doc/security/best-security-practices#two-factor-authentication
+      doc: https://www.algolia.com/doc/security/best-security-practices/#two-factor-authentication-2fa
 
     - name: AppVeyor
       url: https://www.appveyor.com
@@ -39,6 +41,15 @@ websites:
       hardware: Yes
       otp: Yes
       doc: https://atechmedia.com/blog/general/launches/two-factor-authentication
+
+    - name: Atlassian Cloud
+      url: https://id.atlassian.com
+      img: atlassian.png
+      tfa: Yes
+      software: Yes
+      doc: https://confluence.atlassian.com/cloud/secure-your-account-with-two-step-verification-939505063.html
+      exceptions:
+          text: "2FA settings are service-specific."
 
     - name: Balsamiq
       url: https://balsamiq.com
@@ -63,6 +74,14 @@ websites:
       u2f: Yes
       doc: https://confluence.atlassian.com/x/425QLg
 
+    - name: Buddy
+      url: https://buddy.works
+      img: buddy.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://buddy.works/blog/introducing-two-factor-authentication
+
     - name: Bugsnag
       url: https://bugsnag.com
       img: bugsnag.png
@@ -76,12 +95,25 @@ websites:
       tfa: Yes
       software: Yes
 
+    - name: Buildkite
+      url: https://buildkite.com
+      img: buildkite.png
+      tfa: Yes
+      software: Yes
+      doc: https://buildkite.com/changelog/31-two-factor-authentication
+
     - name: BuiltWith
       url: https://builtwith.com
       img: builtwith.png
       tfa: Yes
       software: Yes
-      doc: https://kb.builtwith.com/account-management/how-to-enable-2fa-on-builtwith/
+
+    - name: Cacoo
+      url: https://cacoo.com/
+      img: cacoo.png
+      tfa: No
+      facebook: Cacoocom
+      twitter: cacoocom
 
     - name: Cedexis
       url: https://www.cedexis.com/
@@ -120,16 +152,13 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      hardware: Yes
-      otp: Yes
       doc: https://docs.codeclimate.com/docs/enabling-two-factor-authentication
 
     - name: Codeanywhere
       url: https://codeanywhere.com
       img: codeanywhere.png
       tfa: Yes
-      sms: Yes
-      doc: https://docs.codeanywhere.com/features/twofactorauth.html
+      software: Yes
       exceptions:
           text: "Only available on paid accounts at $7/10 per month (annual/monthly) or more."
 
@@ -154,6 +183,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://context.io/security-faq
+
+    - name: Crowdin
+      url: https://crowdin.com/
+      img: crowdin.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.crowdin.com/account-settings/#two-factor-authentication
 
     - name: Deploybot
       url: https://deploybot.com/
@@ -225,6 +261,13 @@ websites:
       sms: Yes
       doc: https://atlas.hashicorp.com/help/user-accounts/authentication#two-factor-authentication
 
+    - name: imgix
+      url: https://www.imgix.com/
+      twitter: imgix
+      facebook: imgix
+      img: imgix.png
+      tfa: No
+
     - name: Infobip
       url: https://www.infobip.com/
       img: infobip.png
@@ -292,7 +335,7 @@ websites:
       sms: Yes
       software: Yes
       phone: Yes
-      doc: https://docs.cloud.mongodb.com/core/two-factor-authentication/
+      doc: https://docs.cloudmanager.mongodb.com/core/two-factor-authentication/
 
     - name: New Relic
       url: https://newrelic.com
@@ -328,6 +371,13 @@ websites:
       tfa: No
       twitter: packagist
       email_address: contact@packagist.org
+
+    - name: Panic Sync
+      url: https://panic.com/
+      img: panic.png
+      tfa: Yes
+      software: Yes
+      doc: https://library.panic.com/general/sync-2fa/
 
     - name: Papertrail
       url: https://papertrailapp.com/
@@ -429,7 +479,7 @@ websites:
       software: Yes
 
     - name: Sentry
-      url: https://getsentry.com
+      url: https://sentry.io
       img: sentry.png
       tfa: Yes
       sms: Yes
@@ -458,10 +508,11 @@ websites:
       img: statuscake.png
       tfa: Yes
       sms: Yes
+      software: Yes
 
     - name: StatusPage.io
       url: https://www.statuspage.io
-      twitter: statuspageio
+      twitter: statuspage
       facebook: statuspageio
       img: statuspageio.png
       tfa: No

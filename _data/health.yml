@@ -14,6 +14,13 @@ websites:
       facebook: carilionclinic
       email_address: direct@carilionclinic.org
 
+    - name: Cigna
+      url: https://my.cigna.com
+      img: cigna.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+
     - name: CVS Caremark
       url: https://www.caremark.com
       twitter: CVSHealth
@@ -109,18 +116,24 @@ websites:
       img: myfitnesspal.png
       tfa: No
 
-    - name: Nokia Health (Withings)
-      url: https://health.nokia.com/
-      twitter: NokiaHealth
-      facebook: NokiaHealth
-      img: nokiahealth.png
-      tfa: No
+    - name: RunSignUp
+      url: https://runsignup.com/
+      img: runsignup.png
+      tfa: Yes
+      software: Yes
 
     - name: Runtastic
       url: https://www.runtastic.com
       twitter: Runtastic
       facebook: runtastic
       img: runtastic.png
+      tfa: No
+
+    - name: Strava
+      url: https://www.strava.com
+      twitter: Strava
+      facebook: Strava
+      img: strava.png
       tfa: No
 
     - name: Thriva
@@ -135,6 +148,13 @@ websites:
       twitter: WebMD
       facebook: WebMD
       img: webmd.png
+      tfa: No
+
+    - name: Withings
+      url: https://www.withings.com/
+      twitter: AskWithings
+      facebook: withings
+      img: withings.png
       tfa: No
 
     - name: ZocDoc

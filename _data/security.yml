@@ -6,6 +6,20 @@ websites:
       twitter: airvpn
       facebook: airvpn.org
 
+    - name: AVG
+      url: https://www.avg.com
+      img: avg.png
+      tfa: No
+      twitter: AVGFree
+      facebook: AVG
+
+    - name: Bitdefender
+      url: https://www.bitdefender.com
+      img: bitdefender.png
+      tfa: No
+      twitter: Bitdefender
+      facebook: bitdefender
+
     - name: Blur
       url: https://www.abine.com/
       img: blur.png
@@ -40,6 +54,13 @@ websites:
       hardware: Yes
       exceptions:
           text: "Requires X.509-capable cryptotoken or smartcard."
+
+    - name: Cloudflare
+      url: https://cloudflare.com
+      img: cloudflare.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.cloudflare.com/hc/en-us/articles/200167866-How-do-I-set-up-two-factor-authentication-
 
     - name: Cobalt
       url: https://cobalt.io/
@@ -89,10 +110,18 @@ websites:
       hardware: Yes
       doc: http://www.entrust.net/certificate-services/cms-authentication.htm
 
+    - name: ESET
+      img: eset.png
+      url: https://www.eset.com
+      tfa: No
+      facebook: eset
+      twitter: ESET
+
     - name: ExpressVPN
       img: expressvpn.png
       url: https://www.expressvpn.com
-      tfa: No
+      tfa: Yes
+      email: Yes
       twitter: expressvpn
       facebook: ExpressVPN
 
@@ -108,6 +137,15 @@ websites:
       tfa: No
       twitter: gogetssl
       facebook: gogetssl
+
+    - name: HackerOne
+      url: https://hackerone.com
+      img: hackerone.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.hackerone.com/hackers/two-factor-authentication.html
+      exceptions:
+          text: "SMS-capable phone required for initial setup."
 
     - name: hide.me VPN
       url: https://hide.me/
@@ -182,7 +220,8 @@ websites:
     - name: ProtonVPN
       url: https://protonvpn.com/
       img: protonvpn.png
-      tfa: No
+      tfa: Yes
+      software: Yes
       twitter: ProtonVPN
       facebook: ProtonVPN
 
@@ -216,6 +255,14 @@ websites:
       twitter: SaferVPN
       facebook: SaferVPNCom
 
+    - name: Sophos Central
+      url: https://www.sophos.com
+      img: sophoscentral.png
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://docs.sophos.com/central/Customer/help/en-us/central/Customer/concepts/ep_MultiFactorAuthentication.html
+
     - name: SSLTrust
       url: https://www.ssltrust.com.au/
       img: ssltrust.png
@@ -224,6 +271,13 @@ websites:
       hardware: Yes
       otp: Yes
       doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
+
+    - name: Surfshark
+      url: https://surfshark.com/
+      img: surfshark.png
+      tfa: No
+      twitter: SurfsharkSecure
+      facebook: SurfsharkPrivacy
 
     - name: Threat X
       url: https://threat-x.com/

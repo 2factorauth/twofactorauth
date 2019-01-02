@@ -64,8 +64,6 @@ websites:
     hardware: Yes
     otp: Yes
     u2f: Yes
-    exceptions:
-        text: "U2F can only be used if phone or OTP was configured as two-factor first."
     doc: https://www.dropbox.com/en/help/363
 
   - name: Evernote
@@ -76,7 +74,7 @@ websites:
     software: Yes
     hardware: Yes
     otp: Yes
-    doc: https://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
+    doc: https://help.evernote.com/hc/en-us/articles/208314238-How-to-set-up-two-step-verification
 
   - name: FileThis
     url: https://filethis.com
@@ -140,6 +138,13 @@ websites:
     hardware: Yes
     otp: Yes
     doc: https://mega.nz/help/client/webclient/security-and-privacy/5bb5436cf1b70966038b456b
+
+  - name: MultCloud
+    url: https://www.multcloud.com/home.html
+    twitter: multcloud
+    facebook: multcloud
+    img: multcloud.png
+    tfa: No
 
   - name: Nextcloud
     url: https://nextcloud.com/
@@ -264,12 +269,3 @@ websites:
     hardware: Yes
     otp: Yes
     doc: https://www.zetta.net/about/blog/how-set-zetta-two-factor-authentication/
-
-  - name: Zoolz
-    url: https://intelli.zoolz.com/
-    img: zoolz.png
-    tfa: Yes
-    software: Yes
-    exceptions:
-        text: "Only available for business accounts."
-    doc: http://wiki.zoolz.com/how-do-i-enable-two-factor-authentication-on-my-zoolz-intelligent-account/
