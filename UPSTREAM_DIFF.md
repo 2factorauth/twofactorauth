@@ -21,13 +21,18 @@ This list includes the main files diverting from 'upstream' twofactorauth.org. I
 
 # How to compare changes
 
-It is recommended to use the program [meld](http://meldmerge.org/) and compare the `_data` folder of dongleauth.info and twofactorauth.org accordingly.
+It is recommended to use the program [meld](http://meldmerge.org/) and git's mergetool to compare the dongleauth.info and twofactorauth.org step by step.
 
 ```
 git clone https://github.com/Nitrokey/dongleauth.git
-git clone https://github.com/2factorauth/twofactorauth.git
+git remote add upstream https://github.com/2factorauth/twofactorauth.git
+git merge upstream master
+git mergetool -t meld # use meld to compare, other tools possible
 ```
 
-Start 'meld' and choose folder comparing. Have a look, what needs to get merged, save and commit accordingly.
+Be careful what to include. Especially changes in the files mentioned above should be inlcuded with
+care.
 
 We are able to use their changes directly, but unfortunately we can not push ours directly upstream.
+Thus, every 'otp' and 'u2f' should be kept when comparing. Sites deleted on twofactorauth.org may be
+deleted on dongleauth.info as well.
