@@ -188,6 +188,8 @@ websites:
       sms: Yes
       software: Yes
       doc: https://help.pinterest.com/en/articles/two-factor-authentication
+      exceptions:
+        text: "Software authentication requires the Authy app."
 
     - name: Plurk
       url: https://plurk.com
