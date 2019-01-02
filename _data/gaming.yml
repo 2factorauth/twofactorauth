@@ -289,7 +289,8 @@ websites:
   - bitpay
   - bip70
   exceptions:
-    text: LIVECARDS used to accept Bitcoin Cash, but as of 2018-12-06 stopped accepting it
+    text: LIVECARDS used to accept Bitcoin Cash, but as of 2018-12-06 stopped accepting
+      it
 - name: LucKey Productions
   url: https://luckeyproductions.nl
   img: luckeyproductions.png
@@ -366,17 +367,6 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: Titancodes
-  url: https://www.titancodes.com/
-  img: titancodes.png
-  twitter: TitanCodes
-  facebook: Titancodes
-  bch: true
-  btc: true
-  othercrypto: false
-  keywords:
-  - bitpay
-  - webmoney
 - name: Origin
   url: https://www.origin.com/
   img: origin.png
@@ -407,9 +397,9 @@ websites:
   img: PlayersChoiceVideogames.png
   twitter: playerschoice
   facebook: PlayersChoice
-  bch: Yes
-  btc: Yes
-  othercrypto: No
+  bch: true
+  btc: true
+  othercrypto: false
   keywords:
   - bitpay
   - bip70
@@ -489,6 +479,17 @@ websites:
   bch: false
   twitter: tibia
   facebook: Tibia
+- name: Titancodes
+  url: https://www.titancodes.com/
+  img: titancodes.png
+  twitter: TitanCodes
+  facebook: Titancodes
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - webmoney
 - name: Trion Worlds
   url: https://www.trionworlds.com/
   img: trionworlds.png
@@ -541,4 +542,5 @@ websites:
   keywords:
   - coinify
   exceptions:
-    text: ZAP-Hosting used to accept BCH & Other Cryptos, but as of 2018-12-06 stopped accepting it
+    text: ZAP-Hosting used to accept BCH & Other Cryptos, but as of 2018-12-06 stopped
+      accepting it
