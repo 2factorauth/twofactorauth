@@ -47,7 +47,7 @@ websites:
       img: above.png
       tfa: Yes
       software: Yes
-      doc: http://domains.above.com/manual-two-step-authentication.html
+      doc: https://www.above.com/manual/my-account-manual-two-step-auth.html
 
     - name: Cloudflare
       url: https://cloudflare.com
@@ -166,12 +166,20 @@ websites:
       software: Yes
       doc: https://dynadot.com/domain/security.html
 
+    - name: Dynu
+      url: https://www.dynu.com/
+      img: dynu.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.dynu.com/en-US/Blog/Article?Article=It-is-time-to-enable-two-factor-authentication
+
     - name: easyDNS
       url: https://easydns.com
       img: easydns.png
       tfa: Yes
       sms: Yes
       email: Yes
+      software: Yes
       hardware: Yes
       otp: Yes
       doc: https://fusion.easydns.com/Knowledgebase/Article/View/347/0/account-security
@@ -253,7 +261,7 @@ websites:
       img: hexonet.png
       tfa: Yes
       software: Yes
-      doc: https://cp.hexonet.net/cp2/downloads/2FA.pdf
+      doc: https://www.hexonet.net/assets/pdf/2FA.pdf
 
     - name: Hover.com
       img: hover.png
@@ -439,6 +447,16 @@ websites:
       software: Yes
       doc: https://ns1.com/articles/enabling-2-factor-authentication
 
+    - name: OpenDNS
+      url: https://www.opendns.com/
+      img: opendns.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      exceptions:
+          text: "Only available for enterprise accounts."
+      doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
+
     - name: Openprovider
       url: https://www.openprovider.co.uk
       img: openprovider.png
@@ -545,6 +563,15 @@ websites:
       doc: https://help.united-domains.de/faq-article/wie-aktiviere-ich-die-zweistufige-verifizierung-und-mache-mein-portfolio-login-sicherer
       exceptions:
         text: "A phone number is required to enable two-factor authentication."
+
+    - name: VentraIP
+      url: https://ventraip.com.au/
+      img: ventraip.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      email: Yes
+      doc: https://ventraip.com.au/faq/article/two-factor-authentication-faq-vipcontrol/
 
     - name: Verio
       url: https://www.verio.com/

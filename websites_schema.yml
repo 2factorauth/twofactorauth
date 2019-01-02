@@ -17,6 +17,7 @@ mapping:
             unique: yes
           "img":
             type: str
+            pattern: /^[a-z0-9_\-\+]+\.png/
             required: yes
           "tfa":
             type: bool

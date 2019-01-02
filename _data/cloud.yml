@@ -44,10 +44,9 @@ websites:
       url: https://www.digitalocean.com/
       img: digitalocean.png
       tfa: Yes
+      sms: Yes
       software: Yes
-      hardware: Yes
-      otp: Yes
-      doc: https://cloudsupport.digitalocean.com/s/#Account|ka21N000000fxh1QAA
+      doc: https://www.digitalocean.com/docs/accounts/security/2fa/
 
     - name: EngineYard
       url: https://www.engineyard.com
@@ -63,7 +62,7 @@ websites:
       img: fortrabbit.png
       tfa: Yes
       software: Yes
-      doc: https://help.fortrabbit.com/security#toc-two-factor-authentication
+      doc: https://help.fortrabbit.com/account#toc-setting-up-2fa
 
     - name: Google Cloud Platform
       url: https://cloud.google.com
@@ -117,12 +116,20 @@ websites:
       otp: Yes
       doc: https://docs.joyent.com/public-cloud/getting-started/2fa
 
-    - name: LeaseWeb
+    - name: Laravel Forge
+      url: https://forge.laravel.com/
+      img: forge.png
+      tfa: Yes
+      software: Yes
+      doc: https://forge.laravel.com/user/profile#/authentication
+
+    - name: Leaseweb
       url: https://www.leaseweb.com/
       img: leaseweb.png
       tfa: Yes
       sms: Yes
-      doc: https://kb.leaseweb.com/display/KB/Two+factor+authentication%3A+Cyber+Security
+      software: Yes
+      doc: https://kb.leaseweb.com/users-and-accounts/managing-your-profile/setup-two-factor-authentication
 
     - name: Linode
       url: https://www.linode.com/

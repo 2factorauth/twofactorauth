@@ -20,6 +20,9 @@ require 'kwalify'
 # Image format used for all images in the 'img/' directories.
 @img_extension = '.png'
 
+# Permissions set for all the images in the 'img/' directories.
+@img_permissions = %w[644 664]
+
 # Send error message
 def error(msg)
   @output += 1
@@ -41,6 +44,8 @@ def test_img(img, name, imgs)
   test_img_file(img)
 end
 
+# rubocop:disable Metrics/AbcSize
+# rubocop:disable Metrics/MethodLength
 def test_img_file(img)
   # Check image file extension and type
   error("#{img} is not using the #{@img_extension} format.")\
@@ -54,10 +59,16 @@ def test_img_file(img)
   end
 
   # Check image permissions
-  perms = File.stat(img).mode
-  error("#{img} is not set 644. It is currently #{perms.to_s(8)}")\
-    unless perms.to_s(8) == '100644'
+  perms = File.stat(img).mode.to_s(8).split(//).last(3).join
+  # rubocop:disable Style/GuardClause
+  unless @img_permissions.include?(perms)
+    error("#{img} permissions must be one of: #{@img_permissions.join(',')}. "\
+    "It is currently #{perms}.")
+  end
+  # rubocop:enable Style/GuardClause
 end
+# rubocop:enable Metrics/AbcSize
+# rubocop:enable Metrics/MethodLength
 
 # Load each section, check for errors such as invalid syntax
 # as well as if an image is missing

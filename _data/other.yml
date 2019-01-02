@@ -3,9 +3,9 @@ websites:
       url: https://accounts.adobe.com/
       img: adobe.png
       tfa: Yes
+      email: Yes
       sms: Yes
       software: Yes
-      email: Yes
       hardware: Yes
       otp: Yes
       doc: https://helpx.adobe.com/x-productkb/global/adobe-id-account-change.html#2-step-verification
@@ -60,7 +60,7 @@ websites:
       email: Yes
       phone: Yes
       software: Yes
-      doc: https://knowledge.autodesk.com/search-result/caas/sfdcarticles/sfdcarticles/Autodesk-Two-Factor-Authentication-FAQ.html
+      doc: https://knowledge.autodesk.com/customer-service/account-management/account-profile/account-security/two-step-verification
 
     - name: Automater
       url: https://automater.pl/en/
@@ -92,12 +92,11 @@ websites:
       phone: Yes
       doc: https://basiscode.com/blog/two-factor-authentication-compliance-software/
 
-    - name: BuiltWith
-      url: https://builtwith.com
-      img: builtwith.png
+    - name: Booking.com
+      url: https://www.booking.com/
+      img: bookingcom.png
       tfa: Yes
-      software: Yes
-      doc: https://kb.builtwith.com/account-management/how-to-enable-2fa-on-builtwith/
+      sms: Yes
 
     - name: CA Technologies
       url: https://www.ca.com/
@@ -165,12 +164,6 @@ websites:
       tfa: No
       twitter: CrowdFlower
 
-    - name: Delicious
-      url: https://del.icio.us/
-      img: delicious.png
-      twitter: Delicious
-      tfa: No
-
     - name: Delighted
       url: https://delightedapp.com/
       img: delighted.png
@@ -217,7 +210,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://help.figma.com/managing-your-account/creating-and-managing-your-account
+      doc: https://help.figma.com/article/208-update-your-figma-account#factor
 
     - name: Findmyshift
       url: https://www.findmyshift.com/
@@ -261,7 +254,7 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
-      doc: https://support.gofundme.com/hc/en-us/sections/200611108-Phone-Verification-
+      doc: https://support.gofundme.com/hc/en-us/articles/360001980947
       exceptions:
           text: "2FA only for North American customers that create Personal campaigns."
 
@@ -289,9 +282,10 @@ websites:
     - name: Indeed
       url: https://www.indeed.com/
       img: indeed.png
-      tfa: No
-      twitter: indeed
-      facebook: Indeed
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://support.indeed.com/hc/en-us/articles/360000244123
 
     - name: Indiegogo
       url: https://www.indiegogo.com/
@@ -307,6 +301,13 @@ websites:
       email_address: support@help.instapaper.com
       img: instapaper.png
       tfa: No
+
+    - name: Jitbit Helpdesk
+      url: https://www.jitbit.com/hosted-helpdesk/
+      img: jitbit.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.jitbit.com/helpdesk/KB/View/11048235-twofactor-authentication
 
     - name: karriere.at
       url: https://www.karriere.at
@@ -500,7 +501,7 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://help.ubnt.com/hc/en-us/articles/115012986607-How-to-Enable-Two-Factor-Authentication
-      
+
     - name: Ulule
       url: https://www.ulule.com/
       twitter: ulule
@@ -525,8 +526,11 @@ websites:
     - name: WageWorks
       url: https://www.wageworks.com
       img: wageworks.png
-      tfa: No
-      twitter: WageWorksCares
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      exceptions:
+          text: "Employer/plan sponsor may opt to not offer 2FA."
 
     - name: Watchman Monitoring
       url: https://www.watchmanmonitoring.com
@@ -549,7 +553,11 @@ websites:
       url: https://www.wikipedia.org/
       twitter: Wikipedia
       img: wikipedia.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://meta.wikimedia.org/wiki/Help:Two-factor_authentication
+      exceptions:
+          text: "Currently limited to administrators (and users with admin-like permissions like interface editors), bureaucrats, checkusers, oversighters, stewards, edit filter managers and the OATH-testers global group."
 
     - name: Yclas
       url: https://yclas.com/
