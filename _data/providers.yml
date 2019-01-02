@@ -10,6 +10,13 @@ providers:
     hardware: Yes
     u2f: Yes
 
+  - name: E-WBM
+    url: https://www.e-wbm.com/
+    img: ewbm.png
+    hardware: Yes
+    u2f: Yes
+    otp: No
+
   - name: Feitian Technologes Co., Ltd.
     url: https://www.ftsafe.com
     img: ftsafe.png
@@ -49,6 +56,12 @@ providers:
     otp: Yes
     u2f: Yes
 
+  - name: Titan Security Key
+    url: https://cloud.google.com/titan-security-key/
+    img: google.png
+    hardware: Yes
+    u2f: Yes
+
   - name: TREZOR
     url: https://www.trezor.io
     img: trezor.png
@@ -77,11 +90,3 @@ providers:
     img: yubico.png
     u2f: Yes
     otp: Yes
-    
-  - name: E-WBM
-    url: https://www.e-wbm.com/
-    img: ewbm.png
-    hardware: Yes
-    u2f: Yes
-    otp: No
-    
