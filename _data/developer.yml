@@ -243,13 +243,21 @@ websites:
       hardware: Yes
       doc: https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html
 
-    - name: Hashicorp Atlas
-      url: https://atlas.hashicorp.com/
-      img: hashicorp-atlas.png
+    - name: HashiCorp Terraform Enterprise
+      url: https://app.terraform.io/
+      img: hashicorp-terraform-enterprise.png
       tfa: Yes
       software: Yes
       sms: Yes
-      doc: https://atlas.hashicorp.com/help/user-accounts/authentication#two-factor-authentication
+      doc: https://www.terraform.io/docs/enterprise/users-teams-organizations/2fa.html
+
+    - name: HashiCorp Vagrant Cloud
+      url: https://app.vagrantup.com/
+      img: hashicorp-vagrant-cloud.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://www.vagrantup.com/docs/vagrant-cloud/users/authentication.html#two-factor-authentication
 
     - name: imgix
       url: https://www.imgix.com/
