@@ -26,9 +26,9 @@ websites:
     - name: AppVeyor
       url: https://www.appveyor.com
       img: appveyor.png
-      tfa: No
-      twitter: appveyor
-      email_address: team@appveyor.com
+      tfa: Yes
+      software: Yes
+      doc: https://www.appveyor.com/blog/2018/11/07/2FA-implementation/
 
     - name: aTech Media
       url: https://atechmedia.com
