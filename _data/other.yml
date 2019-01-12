@@ -340,6 +340,15 @@ websites:
       tfa: No
       twitter: Liftopia
       facebook: liftopia
+      
+    - name: The Church of Jesus Christ of Latter-day Saints
+      url: https://www.lds.org/
+      img: lds.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://account.lds.org/help/twoStepVerification # requires log in to view
 
     - name: MathWorks
       url: https://www.mathworks.com/
