@@ -50,6 +50,16 @@ websites:
   img: awardwallet.png
   bch: false
   twitter: awardwallet
+- name: bitcoincashnotes.com
+  url: https://bitcoincashnotes.com
+  img: bitcoincashnotescom.png
+  bch: true
+  btc: false
+  othercrypto: false
+  twitter: bitcoincashnote
+  email_address: info@globalnotes.com.au
+  exceptions:
+    text: "You would need to proceed through our shopping cart and checkout"
 - name: BuiltWith
   url: https://builtwith.com
   img: builtwith.png
