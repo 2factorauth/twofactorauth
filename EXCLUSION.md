@@ -12,7 +12,7 @@ Below is a list of categories and websites that we've opted out from listing on 
 *   #### Religious and Political sites
 
     The line between Religious/political views protected by free speech and hate speech can sometimes be very hard to distinguish between.
-    To skip having to make those decisions we've opted out from listing any Religious or Political sites.
+    To avoid having to make those decisions we've opted out from listing any Religious or Political sites.
 
     Our goal with twofactorauth.org is
 
