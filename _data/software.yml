@@ -1,0 +1,83 @@
+websites:
+  - name: Gluu
+    url: https://www.gluu.org
+    img: gluu.png
+    tfa: Yes
+    hardware: Yes
+    u2f: Yes
+    doc: https://www.gluu.org/identify-people-with-fido-u2f-tokens-using-the-gluu-server/
+
+  - name: GreenRADIUS
+    url: http://www.greenrocketsecurity.com
+    img: greenradius.png
+    tfa: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    u2f: Yes
+    doc: http://www.greenrocketsecurity.com/greenradius/2fa/fido-1-0-u2f/
+
+  - name: LinOTP
+    url: https://www.linotp.org
+    img: linotp.png
+    tfa: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    u2f: Yes
+    doc: https://www.linotp.org/doc/latest/part-management/managingtokens/fido_u2f.html
+
+  - name: Linux PAM
+    url: http://www.linux-pam.org/
+    img: pam.png
+    tfa: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    u2f: Yes
+    doc: https://github.com/Yubico/pam-u2f
+
+  - name: Mastodon
+    url: https://joinmastodon.org/
+    img: mastodon.png
+    tfa: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    doc: https://github.com/tootsuite/documentation/blob/master/Using-Mastodon/2FA.md
+
+  - name: Nextcloud
+    url: https://nextcloud.com/
+    img: nextcloud.png
+    tfa: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    u2f: Yes
+    doc: https://docs.nextcloud.com/server/14/user_manual/user_2fa.html
+
+  - name: privacyIDEA
+    url: https://privacyidea.org
+    img: privacyidea.png
+    tfa: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    u2f: Yes
+    doc: http://privacyidea.readthedocs.io
+
+  - name: Seafile
+    url: https://www.seafile.com/
+    twitter: seafile
+    img: seafile.png
+    tfa: No
+
+  - name: WordPress (Software)
+    url: https://wordpress.org
+    img: wordpress.png
+    tfa: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    u2f: Yes
+    doc: https://github.com/georgestephanis/two-factor

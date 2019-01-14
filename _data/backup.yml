@@ -146,16 +146,6 @@ websites:
     img: multcloud.png
     tfa: No
 
-  - name: Nextcloud
-    url: https://nextcloud.com/
-    img: nextcloud.png
-    tfa: Yes
-    software: Yes
-    hardware: Yes
-    otp: Yes
-    u2f: Yes
-    doc: https://docs.nextcloud.com/server/14/user_manual/user_2fa.html
-
   - name: Nimbox
     url: https://www.nimbox.co.uk/
     img: nimbox.png
