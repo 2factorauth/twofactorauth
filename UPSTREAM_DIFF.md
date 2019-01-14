@@ -1,6 +1,8 @@
 # Main Differences to twofactorauth
 
-This list includes the main files diverting from 'upstream' twofactorauth.org. If there are changes here, look carefully, if we can adapt these easily without breaking dongleauth.info.
+This list includes the main files diverting from 'upstream' twofactorauth.org.
+If there are changes here, look carefully, if we can adapt these easily without
+breaking dongleauth.info.
 
 * \_config.yml
 * \_data/providers.yml
@@ -21,7 +23,8 @@ This list includes the main files diverting from 'upstream' twofactorauth.org. I
 
 # How to compare changes
 
-It is recommended to use the program [meld](http://meldmerge.org/) and git's mergetool to compare the dongleauth.info and twofactorauth.org step by step.
+It is recommended to use the program [meld](http://meldmerge.org/) and git's mergetool
+to compare the dongleauth.info and twofactorauth.org step by step.
 
 ```
 git clone https://github.com/Nitrokey/dongleauth.git
@@ -34,5 +37,5 @@ Be careful what to include. Especially changes in the files mentioned above shou
 care.
 
 We are able to use their changes directly, but unfortunately we can not push ours directly upstream.
-Thus, every 'otp' and 'u2f' should be kept when comparing. Sites deleted on twofactorauth.org may be
-deleted on dongleauth.info as well.
+Thus, every `otp`, `u2f`, and `multipleu2f` should be kept when comparing. Sites deleted on
+twofactorauth.org may be deleted on dongleauth.info as well.

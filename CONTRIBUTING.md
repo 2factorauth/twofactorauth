@@ -1,10 +1,10 @@
 Contributing to DongleAuth.info 
-=======================
+===============================
 
 All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
 
-To add a new site, go to the [data files](_data/) and get familiar with how it
+To add or edit site, go to the [data files](_data/) and get familiar with how it
 is setup. There is a section and corresponding file for each Category. Site icons
 are stored in folders corresponding to each of those categories in their own
 [folder](img/).
@@ -22,7 +22,8 @@ are stored in folders corresponding to each of those categories in their own
    HTTPS address.
 4. **Alexa top 200k**: A new site, that is not already listed, has to be within the
    Alexa top 200k ranking. You can check the ranking of a site [here](https://www.alexa.com/siteinfo).
-5. **No 2FA providers**: We do not list 2FA providers, such as [Authy](https://authy.com/), [Duo](https://duo.com/) or [Google Authenticator](https://github.com/google/google-authenticator).
+5. **No 2FA providers**: We do not list 2FA providers, such as [Authy](https://authy.com/),
+[Duo](https://duo.com/) or [Google Authenticator](https://github.com/google/google-authenticator).
 6. **Be Awesome**: You need to be awesome. That is all.
 
 ## Running Locally
@@ -61,8 +62,8 @@ everything for you.
 ## Site Criteria
 
 The following section contains rough criteria and explanations regarding
-what websites should be listed on twofactorauth.org. If one of the following
-criteria is met, it belongs on twofactorauth.org:
+what websites should be listed on dongleauth.info. If one of the following
+criteria is met, it belongs on dongleauth.info:
 
 1. **Personal Info/Image**: Any site that deals with personal info or a person's
    image. An example of a site with **Personal Info** would be their Amazon
@@ -133,7 +134,7 @@ If a site does provide TFA, it is strongly recommended that you add the `doc:`
 field where public documentation is available. 
 Sites supporting TFA should not have a Twitter, Facebook or Email field.
 
-The following is an example of a website that *supports* TFA:
+The following is an example of a website that *supports* TFA but not multiple dongles:
 
 ```yml
     - name: YouTube
@@ -166,7 +167,8 @@ The following is an example of a website that *does not* support TFA:
       lang: <ISO 639-1 language code> (Only for non-English websites)
 ```
 
-The `lang:` field is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
+The `lang:` field is only used for non-English websites. The language codes should be
+lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
 
 ### Exceptions & Restrictions
 
@@ -246,7 +248,11 @@ website. There are 4 ways to customize how it is displayed:
 
 ## A Note on Definitions
 
-There are many forms of Two Factor Auth, but DongleAuth.info is only interested in listing sites that support Two Factor Authentication using USB dongles. Currently that means the site must support either One Time Passwords (HOTP / RFC 4226 or TOTP / RFC 6238) or FIDO Universal 2nd Factor (U2F).
+There are many forms of Two Factor Auth, but DongleAuth.info is only interested in
+listing sites that support Two Factor Authentication using USB dongles. Currently
+that means the site must support either One Time Passwords (HOTP / RFC 4226 or TOTP / RFC 6238)
+or FIDO Universal 2nd Factor (U2F). If a site supports multiple U2F dongles (e.g. as a backup),
+`multipleu2f` may be set to `Yes`.
 
 A lot of people have different ideas of what constitutes Two Factor Auth and
 what doesn't, so it stands to reason that we should clarify a bit. For the

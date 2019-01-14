@@ -34,6 +34,9 @@ mapping:
           "u2f":
             type: bool
             pattern: /true/
+          "multipleu2f":
+            type: bool
+            pattern: /true/
           "sms":
             type: bool
             pattern: /true/
