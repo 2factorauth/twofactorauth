@@ -6,7 +6,7 @@ require 'kwalify'
 # YAML tags related to TFA
 @tfa_tags = {
   # YAML tags for TFA Yes
-  true => %w[email hardware software sms phone doc],
+  true => %w[email hardware software sms phone doc otp u2f],
   # YAML tags for TFA No
   false => %w[status twitter facebook email_address lang]
 }.freeze
@@ -79,6 +79,7 @@ begin
     if sections != (sections.sort_by { |section| section['id'].downcase })
   schema = YAML.load_file('websites_schema.yml')
   validator = Kwalify::Validator.new(schema)
+
   sections.each do |section|
     data = YAML.load_file("_data/#{section['id']}.yml")
     websites = data['websites']
@@ -96,15 +97,19 @@ begin
     imgs = Dir["img/#{section['id']}/*"]
 
     websites.each do |website|
+      test_img("img/#{section['id']}/#{website['img']}", website['name'],
+               imgs)
+
+      # prevent travis fail when hardware is not present
+      # tested tags are desired in this case for dongleauth.info
+      next if website['hardware'].nil?
+
       @tfa_tags[!website['tfa']].each do |tag|
         next if website[tag].nil?
 
-        # temporary workarround to prevent travis fail when hardware: No
-        puts("\'#{tag}\' should NOT be "\
-            "present when tfa: #{website['tfa'] ? 'true' : 'false'}.")
+        error("\'#{tag}\' should NOT be "\
+            "present when hardware: #{website['tfa'] ? 'true' : 'false'}.")
       end
-      test_img("img/#{section['id']}/#{website['img']}", website['name'],
-               imgs)
     end
 
     # After removing images associated with entries in test_img, alert
