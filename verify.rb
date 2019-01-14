@@ -117,6 +117,24 @@ begin
     imgs.each { |img| next unless img.nil? error("#{img} is not used") }
   end
 
+  # Test the very same for the dongleauth.info's provider.yml as well
+  data = YAML.load_file('_data/providers.yml')
+  providers = data['providers']
+
+  # Check section alphabetization
+  error('_data/providers.yml is not alphabetized by name') \
+    if providers != (providers.sort_by { |provider| provider['name'].downcase })
+
+  # Collect list of all images for section
+  imgs = Dir['img/providers/*']
+
+  providers.each do |provider|
+    test_img("img/providers/#{provider['img']}", provider['name'],
+             imgs)
+  end
+
+  imgs.each { |img| next unless img.nil? error("#{img} is not used") }
+
   exit 1 if @output > 0
 rescue Psych::SyntaxError => e
   puts "<------------ ERROR in a YAML file ------------>\n"
