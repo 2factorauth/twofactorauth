@@ -14,10 +14,6 @@ Below is a list of categories and websites that we've opted out from listing on 
     The line between Religious/political views protected by free speech and hate speech can sometimes be very hard to distinguish between.  
     To avoid having to make those decisions we've opted out from listing any Religious or Political sites.
 
-    Our goal with twofactorauth.org is
-
-    > [...] to build a website (TwoFactorAuth.org) with a comprehensive list of sites that support Two Factor Authentication, as well as the methods that they provide.
-
 *   #### Self-hosted services
 
     The category "self-hosted services/sites" includes all types of software that's designed to be hosted by the end user (such as [ownCloud](https://owncloud.org/), [NextCloud](https://nextcloud.com/), [Mastodon](https://joinmastodon.org/), [phpBB](https://www.phpbb.com/), [XenForo](https://xenforo.com/) etc).  
