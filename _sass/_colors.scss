@@ -16,8 +16,14 @@ div,
       margin-top: 10px;
     }
 
-    span {
-      vertical-align: middle;
+    .buttons {
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+
+      span {
+        vertical-align: middle;
+      }
     }
   }
 
