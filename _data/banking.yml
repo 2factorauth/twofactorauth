@@ -198,7 +198,7 @@ websites:
       img: boursorama.png
       tfa: No
       lang: fr
-      
+
     - name: Caisse D'Epargne
       url: https://www.caisse-epargne.fr/
       twitter: CaissEpargneSAV
@@ -301,6 +301,13 @@ websites:
       sms: Yes
       hardware: Yes
       doc: https://www.commbank.com.au/support.digital-banking.explain-netcode-token.html
+
+    - name: Community America Credit Union
+      url: https://www.communityamerica.com/
+      img: community_america_cu.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
 
     - name: Credit Union Australia
       url: https://www.cua.com.au/
@@ -409,6 +416,14 @@ websites:
       facebook: FifthThirdBank
       img: fifththird.png
       tfa: No
+
+    - name: First Community Credit Union
+      url: https://www.firstcommunity.com/
+      img: first_community_cu.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      email: Yes
 
     - name: First Direct
       url: https://www1.firstdirect.com/
