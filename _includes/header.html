@@ -1,5 +1,5 @@
 <div class="ui teal inverted menu">
-  <a href="/" class="{% if include.page == 'home' %}active {% endif %}item">
+  <a href="/" class="item">
     <i class="home icon"></i>
     Home
   </a>
@@ -31,13 +31,4 @@
         Contribute
       </a>
     </div>
-
-    {% if 1 == 0 %}
-    <!-- Don't show for right now -->
-    <a href="/restrictions" class="{% if include.page == 'restrictions' %}active {% endif %}item">
-        <i class="warning icon"></i>
-        Restrictions
-    </a>
-    {% endif %}
-
 </div>
