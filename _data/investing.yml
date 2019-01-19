@@ -134,9 +134,10 @@ websites:
     - name: Questrade
       url: https://www.questrade.com
       img: questrade.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      email: Yes
       twitter: Questrade
-      status: https://twitter.com/Questrade/status/864214855078866977
 
     - name: Raizers
       url: https://www.raizers.com
