@@ -75,6 +75,9 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      otp: Yes
+      u2f: Yes
+      multipleu2f: Yes
       doc: https://mail.de/hilfe/u2f-authenticator
 
     - name: Mail.Ru
