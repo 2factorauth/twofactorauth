@@ -160,7 +160,11 @@ input[type=search] {
 }
 
 .ui.table td.twitter {
-  text-align: center;
+  text-align: left;
+
+  span {
+    vertical-align: middle;
+  }
 }
 
 .website-table {
