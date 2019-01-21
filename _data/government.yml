@@ -76,7 +76,10 @@ websites:
       img: mygov.png
       tfa: Yes
       sms: Yes
-      doc: https://my.gov.au/mygov/content/html/help.html#sec-features
+      software: Yes
+      exceptions:
+        text: myGov Access app required for Software 2FA.
+      doc: https://my.gov.au/mygov/content/html/help.html#securityCode
 
     - name: RealMe
       url: https://www.realme.govt.nz/
