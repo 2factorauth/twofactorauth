@@ -1025,12 +1025,15 @@ websites:
   img: lehnerversand.png
   facebook: lehnerversand
   email_address: info@lehner-versand.ch
-  bch: true
+  bch: false
+  bsv: true
   btc: true
   othercrypto: true
   country: ch
   keywords:
   - coinify
+  exceptions:
+    text: Lehner Versand used to accept BCH, but as of 2019-01-22 stopped accepting it
 - name: Little Fish Store
   url: https://littlefishstore.com
   img: littlefishstore.png

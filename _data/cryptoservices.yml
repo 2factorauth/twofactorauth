@@ -111,10 +111,12 @@ websites:
   url: https://bitit.io/
   img: Bitit.png
   twitter: Bitit_Gift
-  bch: true
+  bch: false
+  bsv: false
   btc: true
   othercrypto: true
-  doc: https://support.bitit.io/hc/en-us/articles/360000566429-How-to-buy-Bitcoin-Cash-BCH-on-Bitit-by-credit-card-cash-and-wire-transfer-
+  exceptions:
+    text: Bitit used to support BCH, but as of 2019-01-10 stopped supporting it
 - name: Bitkoyn
   url: https://bitkoyn.com/
   img: bitkoyn.png
