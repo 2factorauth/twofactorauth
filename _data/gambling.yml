@@ -265,9 +265,12 @@ websites:
   img: playphun.png
   twitter: phun_io
   facebook: playphun.io
-  bch: true
+  bch: false
+  bsv: true
   btc: false
   othercrypto: false
+  exceptions:
+    text: Phun.io used to accept BCH, but as of 2019-01-24 stopped accepting it
 - name: Pinnacle Sports
   url: https://www.pinnacle.com
   img: PinnacleSports.png
