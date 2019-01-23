@@ -184,6 +184,16 @@ websites:
       img: georgiapower.png
       tfa: No
 
+    - name: Google Fi
+      url: https://fi.google.com/
+      img: projectfi.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+
     - name: Google Fiber
       url: https://fiber.google.com/
       img: googlefiber.png
@@ -246,16 +256,6 @@ websites:
       facebook: PowerStreamPage
       img: powerstream.png
       tfa: No
-
-    - name: Project Fi
-      url: https://fi.google.com/
-      img: projectfi.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: RCN
       url: https://www.rcn.com/
