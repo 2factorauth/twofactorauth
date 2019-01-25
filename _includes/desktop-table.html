@@ -83,9 +83,10 @@
           {% include row-title.html section=section_id website=website type='desktop' %}
         </td>
         <td class="twitter negative" colspan="6">
-        {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> {{page.link}} on Twitter</a>{% endif %}
-        {% if website.facebook %} <a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i> {{page.link}} on Facebook</a>{%endif%}
-        {% if website.email_address %} <a class="ui green mini button" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i>{{page.link}} via Email</a>{% endif %}
+          {% if website.twitter or website.facebook or website.email_address %}<span>{{page.link}} </span>{% endif %}
+          {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> on Twitter</a>{% endif %}
+          {% if website.facebook %} <a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i> on Facebook</a>{%endif%}
+          {% if website.email_address %} <a class="ui green mini button" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i> via Email</a>{% endif %}
         </td>
       {% endif %}
     </tr>
