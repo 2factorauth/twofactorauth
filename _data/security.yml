@@ -264,12 +264,6 @@ websites:
       twitter: SurfsharkSecure
       facebook: SurfsharkPrivacy
 
-    - name: Threat X
-      url: https://threat-x.com/
-      img: threatx.png
-      tfa: Yes
-      software: Yes
-
     - name: ThreatConnect
       url: https://threatconnect.com/
       img: threatconnect.png
@@ -288,6 +282,13 @@ websites:
       img: threatsim.png
       tfa: Yes
       sms: Yes
+
+    - name: ThreatX
+      url: https://www.threatx.com/
+      img: threatx.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.threatx.com/hc/en-us/articles/360022157591
 
     - name: Tinfoil Security
       url: https://www.tinfoilsecurity.com
