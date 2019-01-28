@@ -1119,6 +1119,8 @@ websites:
       phone: Yes
       hardware: Yes
       doc: https://www.wellsfargo.com/privacy-security/advanced-access
+      exceptions:
+       text: "Hardware token: specific vendor only"
 
     - name: Wescom Credit Union
       url: https://www.wescom.org/
