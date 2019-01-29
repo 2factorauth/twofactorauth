@@ -19,6 +19,14 @@ websites:
       tfa: No
       twitter: AliExpress_EN
 
+    - name: Allegro
+      url: https://allegro.pl
+      img: allegro.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://allegro.pl/pomoc/faq/dwustopniowe-logowanie-faq-oGgdkGDqXCq
+
     - name: Amazon
       url: https://www.amazon.com
       img: amazon.png
@@ -52,6 +60,20 @@ websites:
       img: bigw.png
       tfa: No
       facebook: BIGWaustralia
+
+    - name: Bonobos
+      url: https://bonobos.com
+      img: bonobos.png
+      tfa: No
+      twitter: Bonobos
+      facebook: bonobos
+
+    - name: Boxed
+      url: https://www.boxed.com
+      img: boxed.png
+      tfa: No
+      twitter: BoxedWholesale
+      facebook: BoxedWholesale
 
     - name: Combatant Gentlemen
       url: https://combatgent.com
@@ -92,6 +114,13 @@ websites:
       tfa: No
       facebook: DWIAUS
 
+    - name: Digitec
+      url: https://www.digitec.ch
+      img: digitec.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.digitec.ch/en/page/new-two-factor-authentication-for-your-user-account-6589
+
     - name: EB Games Australia
       url: https://ebgames.com.au/
       img: ebgamesaustralia.png
@@ -115,8 +144,10 @@ websites:
     - name: Etsy
       url: https://www.etsy.com/
       img: etsy.png
-      sms: Yes
       tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
       doc: https://www.etsy.com/help/article/3335
 
     - name: Everlane
@@ -193,6 +224,13 @@ websites:
       url: https://jet.com
       twitter: JetHeads
       img: jet.png
+      tfa: No
+
+    - name: Kobo
+      url: https://www.kobo.com
+      twitter: KoboHelp
+      facebook: Kobo
+      img: kobo.png
       tfa: No
 
     - name: Kohl's
@@ -276,7 +314,7 @@ websites:
       img: purse.png
       tfa: Yes
       software: Yes
-      doc: https://support.purse.io/profile/2fa/
+      doc: https://support.purse.io/account/2-factor-authentication-2fa
 
     - name: Rakuten
       url: https://www.rakuten.com/
@@ -291,12 +329,28 @@ websites:
       sms: Yes
       doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
 
+    - name: Shopify
+      url: https://shopify.com/
+      img: shopify.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.shopify.com/manual/your-account/account-security/two-step-authentication
+
     - name: Sierra Trading Post
       url: https://www.sierratradingpost.com
       img: sierratradingpost.png
       tfa: No
       twitter: Sierratp
       facebook: sierratradingpost
+
+    - name: Snapdeal
+      url: https://www.snapdeal.com/
+      img: snapdeal.png
+      tfa: No
+      twitter: SnapdealTech
+      facebook: Snapdeal
+      email_address: help@snapdeal.com
 
     - name: Stack Social
       url: https://stacksocial.com
@@ -308,6 +362,13 @@ websites:
       url: https://www.target.com/
       twitter: target
       img: target.png
+      tfa: No
+
+    - name: Trade Me
+      url: https://www.trademe.co.nz
+      twitter: trademe
+      facebook: TradeMe
+      img: trademe.png
       tfa: No
 
     - name: Walgreens
@@ -335,11 +396,11 @@ websites:
       twitter: Wayfair
       facebook: wayfair
 
-    - name: Zalando (UK)
-      url: https://www.zalando.co.uk/
+    - name: Zalando
+      url: https://www.zalando.com/
       img: zalando.png
       tfa: No
-      twitter: zalando_uk
+      twitter: ZalandoTech
       facebook: Zalando.co.uk
       email_address: service@zalando.co.uk
 
@@ -357,8 +418,9 @@ websites:
       facebook: zazzle
 
     - name: Zooplus
-      url: http://www.zooplus.com/
+      url: https://www.zooplus.com/
       img: zooplus.png
       tfa: No
       twitter: zooplusDE
       facebook: zooplusde
+

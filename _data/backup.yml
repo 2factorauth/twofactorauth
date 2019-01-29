@@ -1,11 +1,4 @@
 websites:
-  - name: AeroFS
-    url: https://www.aerofs.com/
-    tfa: Yes
-    software: Yes
-    img: aerofs.png
-    doc: https://support.aerofs.com/hc/en-us/articles/202610424-How-Do-I-Set-Up-Two-Factor-Authentication-
-
   - name: Apple iCloud
     url: https://www.icloud.com
     img: icloud.png
@@ -68,7 +61,7 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
-    doc: https://blog.evernote.com/blog/2013/10/04/two-step-verification-available-to-all-users/
+    doc: https://help.evernote.com/hc/en-us/articles/208314238-How-to-set-up-two-step-verification
 
   - name: FileThis
     url: https://filethis.com
@@ -124,8 +117,16 @@ websites:
 
   - name: Mega
     url: https://mega.nz/
-    twitter: MEGAprivacy
     img: mega.png
+    tfa: Yes
+    software: Yes
+    doc: https://mega.nz/help/client/webclient/security-and-privacy/5bb5436cf1b70966038b456b
+
+  - name: MultCloud
+    url: https://www.multcloud.com/home.html
+    twitter: multcloud
+    facebook: multcloud
+    img: multcloud.png
     tfa: No
 
   - name: Nimbox
@@ -157,7 +158,7 @@ websites:
     tfa: Yes
     email: Yes
     software: Yes
-    doc: https://www.qnap.com/i/useng/tutorial/con_show.php?op=showone&cid=151
+    doc: https://www.qnap.com/en-us/how-to/tutorial/article/how-to-enhance-account-security-using-2-step-verification
 
   - name: SmartBox
     url: https://www.panterranetworks.com/products/smartbox.php
@@ -226,8 +227,17 @@ websites:
     doc: https://yandex.com/support/passport/authorization/twofa.html
 
   - name: Zetta.net
-    url: http://www.zetta.net/
+    url: https://www.zetta.net/
     img: zetta.png
     tfa: Yes
     software: Yes
-    doc: http://www.zetta.net/about/blog/how-set-zetta-two-factor-authentication/
+    doc: https://www.zetta.net/about/blog/how-set-zetta-two-factor-authentication/
+
+  - name: Zoolz
+    url: https://intelli.zoolz.com/
+    img: zoolz.png
+    tfa: Yes
+    software: Yes
+    exceptions:
+        text: "Only available for business accounts."
+    doc: http://wiki.zoolz.com/how-do-i-enable-two-factor-authentication-on-my-zoolz-intelligent-account/

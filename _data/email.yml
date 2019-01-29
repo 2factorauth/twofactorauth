@@ -5,7 +5,6 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
-      software: Yes
       doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
     - name: FastMail
@@ -24,7 +23,7 @@ websites:
       facebook: freenet
 
     - name: Gmail
-      url: https://gmail.com
+      url: https://mail.google.com
       img: gmail.png
       tfa: Yes
       sms: Yes
@@ -77,7 +76,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://help.mail.ru/enmail-help/settings/2auth
+      doc: https://help.mail.ru/mail-help/2auth
 
     - name: mailbox.org
       url: https://mailbox.org/
@@ -100,6 +99,15 @@ websites:
       img: migadu.png
       tfa: No
 
+    - name: Mimecast
+      url: https://www.mimecast.com/
+      img: mimecast.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: https://community.mimecast.com/docs/DOC-1915
+
     - name: MXroute
       url: https://mxroute.com/
       img: mxroute.png
@@ -112,7 +120,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://windows.microsoft.com/en-us/windows/two-step-verification-faq
+      doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
 
     - name: Pobox
       url: https://www.pobox.com/
@@ -149,6 +157,13 @@ websites:
       software: Yes
       doc: https://help.runbox.com/account-security/
 
+    - name: StartMail
+      url: https://www.startmail.com
+      img: startmail.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704/4/how-to-set-up-two-factor-authentication-2fa
+
     - name: T-Online
       url: http://www.t-online.de/
       twitter: Telekom_hilft
@@ -172,6 +187,16 @@ websites:
       twitter: TIM_Official
       facebook: TimOfficialPage
       lang: it
+
+    - name: Tutanota
+      url: https://tutanota.com/
+      img: tutanota.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+        text: "2FA only available on their beta client."
+      doc: https://tutanota.uservoice.com/knowledgebase/articles/1201942
 
     - name: Virgin Media E-Mail
       url: https://www.virginmedia.com/

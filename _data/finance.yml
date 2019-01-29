@@ -11,6 +11,13 @@ websites:
       img: adp.png
       tfa: No
 
+    - name: AltoIRA
+      url: https://www.altoira.com
+      img: altoira.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.altoira.com/hc/en-us/articles/360007374654-Enabling-Disabling-Two-Factor-Authentication-2FA-
+
     - name: Baden-Württembergische Bank
       url: https://www.bw-bank.de/de/
       tfa: No
@@ -25,6 +32,14 @@ websites:
       email: Yes
       software: Yes
 
+    - name: Carta
+      url: https://carta.com/
+      img: carta.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://support.carta.com/article/388-2-factor-authentication
+
     - name: ClearScore
       url: https://www.clearscore.com
       twitter: ClearScore
@@ -37,6 +52,13 @@ websites:
       img: creditkarma.png
       tfa: Yes
       sms: Yes
+      phone: Yes
+
+    - name: DEGIRO
+      url: https://www.degiro.nl
+      img: degiro.png
+      tfa: Yes
+      software: Yes
 
     - name: ditech
       url: https://www.ditech.com
@@ -45,6 +67,13 @@ websites:
       img: ditech.png
       tfa: No
 
+    - name: Exact Online
+      url: https://exact.com/
+      img: exact.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.exactonline.com/community/s/knowledge-base#All-All-HNO-Concept-general-security-gen-auth-totpc
+
     - name: FreeAgent
       url: https://www.freeagent.com
       img: freeagent.png
@@ -52,11 +81,27 @@ websites:
       software: Yes
       doc: https://www.freeagent.com/support/kb/getting-started/two-step-verification
 
+    - name: FreeTaxUSA
+      url: https://www.freetaxusa.com/
+      img: freetaxusa.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: https://www.freetaxusa.com/safe.jsp
+
     - name: FreshBooks
       url: https://www.freshbooks.com
       img: freshbooks.png
       twitter: freshbooks
       facebook: FreshBooks
+      tfa: No
+
+    - name: Funding Circle
+      url: https://www.fundingcircle.com/
+      img: fundingcircle.png
+      twitter: fundingcircle
+      facebook: FundingCircleUK
       tfa: No
 
     - name: Geico
@@ -82,8 +127,8 @@ websites:
 
     - name: HelloWallet
       url: https://www.hellowallet.com
-      twitter: HelloWallet
-      facebook: hellowallet
+      twitter: keybank
+      facebook: keybank
       img: hellowallet.png
       tfa: No
 
@@ -118,7 +163,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://help.justworks.com/customer/en/portal/articles/2488740-two-factor-authentication
+      doc: https://help.justworks.com/hc/en-us/articles/360004477492-Two-Factor-Authentication
 
     - name: Kiva
       url: https://www.kiva.org
@@ -140,6 +185,20 @@ websites:
       img: levelup.png
       tfa: No
 
+    - name: Linxo
+      url: https://www.linxo.com/
+      twitter: Linxo
+      facebook: Linxo
+      img: linxo.png
+      tfa: No
+
+    - name: Metorik
+      url: https://www.metorik.com
+      img: metorik.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.metorik.com/article/22-how-can-i-enable-2fa-on-my-account
+
     - name: Mint
       url: https://www.mint.com
       img: mint.png
@@ -147,6 +206,7 @@ websites:
       sms: Yes
       email: Yes
       software: Yes
+      doc: https://help.mint.com/Security/908045661
 
     - name: money by Envestnet | Yodlee
       url: https://money.yodlee.com/
@@ -154,8 +214,15 @@ websites:
       img: yodlee.png
       tfa: No
 
+    - name: Moneybird
+      url: https://www.moneybird.com/
+      img: moneybird.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.moneybird.nl/blog/twee-staps-verificatie/
+
     - name: Nexonia
-      url: http://www.nexonia.com/
+      url: https://www.nexonia.com/
       facebook: nexonia
       twitter: nexonia
       img: nexonia.png
@@ -202,7 +269,7 @@ websites:
       img: pocketsmith.png
       tfa: Yes
       software: Yes
-      doc: https://www.pocketsmith.com/blog/2014/07/18/2fa-orginal-merchant-and-other-updates
+      doc: https://learn.pocketsmith.com/article/167-two-factor-authentication-2fa-on-your-pocketsmith-account
 
     - name: Popmoney
       url: https://www.popmoney.com
@@ -226,16 +293,16 @@ websites:
       tfa: No
 
     - name: Quickbooks Online
-      url: http://www.quickbooks.com
+      url: https://www.quickbooks.com
       img: quickbooks.png
       tfa: Yes
       sms: Yes
       phone: Yes
       software: Yes
-      doc: https://community.intuit.com/articles/1164912-multi-factor-authentication-faq
+      doc: https://accounts-help.lc.intuit.com/questions/1590157
 
     - name: QuickFile
-      url: http://www.quickfile.co.uk
+      url: https://www.quickfile.co.uk
       img: quickfile.png
       tfa: Yes
       software: Yes
@@ -246,6 +313,13 @@ websites:
       img: quizzle.png
       tfa: No
       twitter: Quizzle
+
+    - name: Rocket Mortgage
+      url: https://www.rocketmortgage.com/
+      twitter: RocketMortgage
+      facebook: RocketMortgage
+      img: rocketmortgage.png
+      tfa: No
 
     - name: Shoeboxed
       url: https://www.shoeboxed.com/
