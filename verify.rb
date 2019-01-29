@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'yaml'
 require 'fastimage'
 require 'kwalify'
@@ -115,7 +117,7 @@ begin
     imgs.each { |img| next unless img.nil? error("#{img} is not used") }
   end
 
-  exit 1 if @output > 0
+  exit 1 if @output.positive?
 rescue Psych::SyntaxError => e
   puts "<------------ ERROR in a YAML file ------------>\n"
   puts e
