@@ -15,11 +15,33 @@ websites:
       exceptions:
           text: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
 
+    - name: Arcadia Power
+      url: https://www.arcadiapower.com/
+      twitter: ArcadiaPower
+      facebook: ArcadiaPower
+      email_address: customercare@arcadiapower.com
+      img: arcadia.png
+      tfa: No
+
     - name: AT&amp;T
       url: https://www.att.com/
       twitter: ATTCares
       facebook: ATT
       img: att.png
+      tfa: No
+
+    - name: Blau.de
+      url: https://www.blau.de/
+      img: blau.png
+      facebook: blaumobilfunk
+      tfa: No
+      lang: de
+
+    - name: Bulb
+      url: https://www.bulb.co.uk
+      twitter: bulbenergy
+      facebook: bulb
+      img: bulbenergy.png
       tfa: No
 
     - name: CallCentric
@@ -62,10 +84,12 @@ websites:
 
     - name: Con Edison
       url: https://www.coned.com/
-      twitter: ConEdison
-      facebook: ConEdison
       img: coned.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://www.coned.com/en/accounts-billing/new-my-account-faqs
 
     - name: Cox
       url: https://www.cox.com/
@@ -74,8 +98,17 @@ websites:
       img: cox.png
       tfa: No
 
+    - name: Deutsche Telekom
+      url: https://www.telekom.de/
+      twitter: deutschetelekom
+      facebook: deutschetelekom
+      email_address: impressum@telekom.de
+      img: deutschetelekom.png
+      tfa: No
+      lang: de
+
     - name: DIRECTV
-      url: http://www.directv.com/
+      url: https://www.directv.com/
       twitter: DIRECTVService
       facebook: directv
       img: directv.png
@@ -115,6 +148,14 @@ websites:
       img: ee.png
       tfa: No
 
+    - name: Ergon Energy
+      url: https://www.ergon.com.au/
+      twitter: ErgonEnergy
+      facebook: ErgonEnergy
+      email_address: customerservice@ergon.com.au
+      img: ergon.png
+      tfa: No
+
     - name: Eversource
       url: https://www.eversource.com/
       twitter: EversourceCorp
@@ -142,6 +183,16 @@ websites:
       facebook: GeorgiaPower
       img: georgiapower.png
       tfa: No
+
+    - name: Google Fi
+      url: https://fi.google.com/
+      img: projectfi.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Google Fiber
       url: https://fiber.google.com/
@@ -206,22 +257,19 @@ websites:
       img: powerstream.png
       tfa: No
 
-    - name: Project Fi
-      url: https://fi.google.com/
-      img: projectfi.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
-
     - name: RCN
       url: https://www.rcn.com/
       twitter: RCNconnects
       facebook: RCN
       img: rcn.png
       tfa: No
+
+    - name: Republic Wireless
+      url: https://republicwireless.com/
+      img: rw.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.republicwireless.com/hc/en-us/articles/360008803994
 
     - name: 'Rochester Gas & Electric'
       url: https://www.rge.com/
@@ -259,7 +307,15 @@ websites:
       sms: Yes
       software: Yes
       phone: Yes
-      doc: https://wiki.sonic.net/wiki/2-Step_Verification
+      doc: https://help.sonic.com/hc/en-us/articles/236079387
+
+    - name: Sosh
+      url: https://www.sosh.fr
+      twitter: Sosh_fr
+      facebook: sosh
+      img: sosh.png
+      tfa: No
+      lang: fr
 
     - name: Southern California Edison
       url: https://www.sce.com/
@@ -275,12 +331,20 @@ websites:
       img: sprint.png
       tfa: No
 
+    - name: Swisscom
+      url: https://www.swisscom.ch/
+      twitter: Swisscom_de
+      facebook: Swisscom
+      img: swisscom.png
+      tfa: No
+      lang: de
+
     - name: T-Mobile
       url: https://www.t-mobile.com/
-      twitter: TMobileHelp
-      facebook: TMobile
       img: tmobile.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://support.t-mobile.com/docs/DOC-2727
 
     - name: Telia (Sweden)
       url: https://www.telia.se/
@@ -336,7 +400,7 @@ websites:
       doc: https://help.ting.com/hc/en-us/articles/209351258-Two-Factor-Authentication
 
     - name: Verizon
-      url: http://www.verizon.com/
+      url: https://www.verizon.com/
       twitter: VerizonSupport
       facebook: verizon
       img: verizon.png

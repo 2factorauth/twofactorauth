@@ -1,6 +1,6 @@
 websites:
     - name: ActiveCollab
-      url: https://www.activecollab.com/
+      url: https://activecollab.com/
       twitter: activecollab
       img: activecollab.png
       tfa: No
@@ -31,6 +31,13 @@ websites:
       twitter: BreezeTeam
       facebook: breeze.pm
 
+    - name: ClickUp
+      url: https://clickup.com
+      img: clickup.png
+      tfa: Yes
+      sms: Yes
+      doc: https://docs.clickup.com/general/two-factor-authentication
+
     - name: fruux
       url: https://fruux.com
       img: fruux.png
@@ -53,10 +60,24 @@ websites:
       software: Yes
       doc: https://support.plan.io/news/133
 
+    - name: Remember The Milk
+      url: https://www.rememberthemilk.com
+      twitter: rememberthemilk
+      facebook: rememberthemilk
+      img: rememberthemilk.png
+      tfa: No
+
     - name: Todoist
       url: https://todoist.com
       twitter: todoist
       img: todoist.png
+      tfa: No
+
+    - name: Toggl
+      url: https://toggl.com
+      img: toggl.png
+      twitter: toggl
+      facebook: Toggl
       tfa: No
 
     - name: Toodledo
