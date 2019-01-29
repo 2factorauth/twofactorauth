@@ -5,8 +5,8 @@ $(document).ready(function () {
     openCategory(window.location.hash.substring(1));
   }
 
-  // Unveil images 50px before they appear
-  $('img').unveil(50);
+  // Unveil images when visible in jquery
+  $(function() { $('img').Lazy({visibleOnly: true}); });
 
   // Show exception warnings upon hover
   $('span.popup.exception').popup({
@@ -30,7 +30,7 @@ $(window).resize(function () {
 
 var isSearching = false;
 var jets = new Jets({
-  searchTag: '#jets-search',
+  callSearchManually: true,
   contentTag: '.jets-content',
   didSearch: function (searchPhrase) {
     document.location.hash = '';
@@ -56,13 +56,14 @@ var jets = new Jets({
       $('.category').hide();
       table.css('display', 'block');
       content.parent().show();
-      content.each(function () {
+      for(var i = 0; i < content.length; i++) {
+			  var section = $(content[i]);
         // Hide table when all rows within are hidden by Jets
-        if ($(this).children(':hidden').length === $(this).children().length) {
-          if (platform == 'mobile') $(this).parent().hide();
-          else $(this).parent().parent().hide();
+        if (section.children(':hidden').length === section.children().length) {
+          if (platform == 'mobile') section.parent().hide();
+          else section.parent().parent().hide();
         }
-      });
+      }
 
       if (table.children().length == table.children(':hidden').length) {
           $('#no-results').css('display', 'block');
@@ -73,9 +74,17 @@ var jets = new Jets({
   },
   // Process searchable elements manually
   manualContentHandling: function(tag) {
-    return $(tag).find('.title > a.name').text();
+    return $(tag).find('.keywords').text();
   }
 });
+
+// Wrap the jets.search function with a debounced function
+var debouncedSearch = debounce(function(e) {
+  jets.search(e.target.value);
+}, 350);
+
+// Attach a keyup event listener to the input
+$('#jets-search').keyup(debouncedSearch);
 
 /**
  * Ensure searching is conducted with regard to the user's viewport
@@ -138,3 +147,27 @@ function closeCategory(category) {
   $('.' + category + '-table').css('display', 'none');
   document.location.hash = '';
 }
+
+/**
+ * Returns a function, that, as long as it continues to be invoked, will not
+ * be triggered. The function will be called after it stops being called for
+ * N milliseconds.
+ * 
+ * @param func The function to be debounced
+ * @param wait The time in ms to debounce 
+ */
+function debounce(func, wait) {
+  var timeout;
+  
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			func.apply(context, args);
+    };
+    
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (!timeout) func.apply(context, args);
+	};
+};
