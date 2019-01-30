@@ -141,13 +141,12 @@ websites:
   twitter: easyDNS
   facebook: easyDNS
   email_address: markjr@easydns.com
-  city: Toronto
-  bch: true
+  bch: false
   btc: true
   othercrypto: true
-  doc: https://www.easydns.com/blog/2018/01/08/0-confirmations-now-accepting-bitcoin-cash-as-a-payment-method/
+  doc: https://easydns.com/blog/2019/01/29/bitcoin-cash-is-out-litecoin-is-in/
   exceptions:
-    text: Crypto-Payments only for existing customers/non-new accounts
+    text: easyDNS used to accept BCH, but as of 2019-01-29 stopped accepting it
 - name: eNom
   url: https://www.enom.com/
   img: enom.png
