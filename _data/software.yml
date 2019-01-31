@@ -27,15 +27,12 @@ websites:
   img: daemontools.png
   twitter: daemon_tools_cc
   facebook: daemontools
-  bch: false
+  bch: true
   bsv: true
   btc: true
   othercrypto: true
   keywords:
   - coinify
-  exceptions:
-    text: Daemon Tools used to accept BCH, but as of 2019-01-22 stopped accepting
-      it
 - name: Email Marketing Software Ninja
   url: https://ems.ninja/
   bch: true
@@ -47,15 +44,12 @@ websites:
   url: http://www.internetdownloadmanager.com/
   img: idm.png
   email_address: info@tonec.com
-  bch: false
+  bch: true
   bsv: true
   btc: true
   othercrypto: true
   keywords:
   - coinify
-  exceptions:
-    text: Internet Download Manager used to accept BCH, but as of 2019-01-22 stopped
-      accepting it
 - name: pcTattletale
   url: https://www.pctattletale.com/
   img: pctattletale.png

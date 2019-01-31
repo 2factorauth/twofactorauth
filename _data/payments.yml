@@ -132,13 +132,11 @@ websites:
   img: coinify.png
   twitter: coinify
   facebook: coinify
-  bch: false
+  bch: true
   bsv: true
   btc: true
   othercrypto: true
   doc: https://help.coinify.com/article/108-list-of-supported-blockchain-currencies
-  exceptions:
-    text: Coinify used to accept BCH, but as of 2019-01-22 stopped accepting it
 - name: Coinpay
   url: https://coinpay.in.th/
   img: coinpay.png
