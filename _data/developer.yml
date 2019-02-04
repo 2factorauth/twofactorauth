@@ -435,6 +435,13 @@ websites:
       software: Yes
       doc: http://support.beanbaginc.com/support/solutions/articles/3000006998-enabling-two-factor-authentication
 
+    - name: Read the Docs
+      url: https://readthedocs.org
+      img: readthedocs.png
+      tfa: No
+      email_address: hello@readthedocs.com
+      status: https://github.com/rtfd/readthedocs.org/issues/3523
+
     - name: Rollbar
       url: https://rollbar.com/
       img: rollbar.png
