@@ -62,8 +62,9 @@ websites:
     - name: Private Internet Access
       url: https://www.privateinternetaccess.com
       img: privateinternetaccess.png
-      tfa: No
-      twitter: piacsm
+      tfa: Yes
+      software: Yes
+      doc: https://www.privateinternetaccess.com/helpdesk/kb/articles/how-do-i-use-the-2fa-system
 
     - name: ProtonVPN
       url: https://protonvpn.com/
