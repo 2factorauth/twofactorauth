@@ -407,6 +407,18 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: Idle-Empire
+  url: https://www.idle-empire.com
+  img: IdleEmpire.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: csgoidleempire
+  facebook: idle.empire.csgo
+  email_address: admin@idle-empire.com
+  doc: https://blog.idle-empire.com/coinbase-withdrawals-integrated/
+  exceptions:
+    text: "Users can earn virtual credits by watching videos, completing tasks, mining cryptocurrencies, and many other things. Those credits can then be redeemed for Bitcoin Cash, other cryptocurrencies, and gaming rewards."
 - name: Insight
   url: https://insight.bitpay.com/
   img: insight.png
