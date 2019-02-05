@@ -587,6 +587,16 @@ websites:
   bch: true
   btc: true
   doc: https://www.nearlyfreespeech.net/about/faq#Payment
+- name: Neocities
+  url: https://neocities.org
+  img: Neocities.png
+  bch: false
+  btc: true
+  othercrypto: false
+  twitter: neocities
+  facebook: neocities
+  exceptions:
+    text: "Send verification screenshot of the transaction to their support email"
 - name: Netcup
   url: https://netcup.eu/
   img: netcup.png
