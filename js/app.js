@@ -179,7 +179,7 @@ $(window).resize(function () {
 var isSearching = false;
 if(document.getElementById('bch-merchant-search') instanceof Object){
 	var jets = new Jets({
-	  searchTag: '#bch-merchant-search',
+	  callSearchManually: true,
 	  contentTag: '.bch-merchant-content',
 	  didSearch: function (searchPhrase) {
 		document.location.hash = '';
@@ -236,8 +236,40 @@ if(document.getElementById('bch-merchant-search') instanceof Object){
 		return searchItems;
 	  }
 	});
+	
+	// Wrap the jets.search function with a debounced function
+	var debouncedSearch = debounce(function(e) {
+	  jets.search(e.target.value);
+	}, 350);
+
+	// Attach a keyup event listener to the input
+	$('#bch-merchant-search').keyup(debouncedSearch);
+
 }
 
+/**
+ * Returns a function, that, as long as it continues to be invoked, will not
+ * be triggered. The function will be called after it stops being called for
+ * N milliseconds.
+ * 
+ * @param func The function to be debounced
+ * @param wait The time in ms to debounce 
+ */
+function debounce(func, wait) {
+  var timeout;
+
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			func.apply(context, args);
+    };
+
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (!timeout) func.apply(context, args);
+	};
+};
 /**
  * Ensure searching is conducted with regard to the user's viewport
  * after re-sizing the screen and close all categories after re-sizing
