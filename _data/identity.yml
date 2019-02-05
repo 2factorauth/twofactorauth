@@ -48,10 +48,12 @@ websites:
     - name: ID.me
       url: https://www.id.me/
       img: idme.png
-      tfa: No
-      twitter: IDme
-      facebook: IDmeInc
-      email_address: help@id.me
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      phone: Yes
+      doc: https://help.id.me/hc/en-us/sections/115000551794
 
     - name: IDentité Numérique (IDN)
       url: https://www.idn.laposte.fr
