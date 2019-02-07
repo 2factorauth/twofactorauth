@@ -71,8 +71,9 @@ websites:
       tfa: Yes
       sms: Yes
       email: Yes
+      software: Yes
       exceptions:
-          text: "SMS-capable phone and a non-Comcast.net email required for 2FA."
+          text: "SMS-capable phone and a non-Comcast.net email required for 2FA. Software authentication requires Xfinity Authenticator mobile app."
       doc: https://www.xfinity.com/support/account/enroll-2-step-verification/
 
     - name: ComEd
