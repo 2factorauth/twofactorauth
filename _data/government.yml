@@ -121,3 +121,14 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://secure.ssa.gov/RIL/HpsView.do#question3
+
+    - name: US Veteran Affairs
+      url: https://www.va.gov
+      img: va.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      phone: Yes
+      exceptions:
+          text: "2FA is only available when using the Identity Management service ID.me"
