@@ -62,9 +62,7 @@ websites:
       tfa: Yes
       software: Yes
       exceptions:
-          link: Yes
-          text: "TFA required for all accounts. Configure Single Sing-On via third-party Identity Providers to enable additional TFA methods."
-      doc: https://falcon.crowdstrike.com/support/documentation/11/getting-started-guide#accessing
+          text: "TFA required for all accounts."
 
     - name: Detectify
       url: https://detectify.com/
