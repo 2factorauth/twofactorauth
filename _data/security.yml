@@ -55,6 +55,16 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://cobalt.io/blog/new-feature-two-factor-auth/
+      
+    - name: CrowdStrike Falcon
+      url: https://falcon.crowdstrike.com/
+      img: crowdstrike-falcon.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+          link: Yes
+          text: "TFA required for all accounts. Configure Single Sing-On via third-party Identity Providers to enable additional TFA methods."
+      doc: https://falcon.crowdstrike.com/support/documentation/11/getting-started-guide#accessing
 
     - name: Detectify
       url: https://detectify.com/
