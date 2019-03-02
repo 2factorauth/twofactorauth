@@ -1474,9 +1474,13 @@ websites:
   twitter: Puri_sm
   facebook: purismcomputer
   email_address: info@puri.sm
-  bch: true
+  bch: false
   btc: true
   othercrypto: true
+  keywords:
+  - globee
+  exceptions:
+    text: Purism used to accept BCH, but on 2018-11-23 stopped accepting it
 - name: Rack Your Board
   url: https://www.rackyourboard.com/
   img: rackyourboard.png
