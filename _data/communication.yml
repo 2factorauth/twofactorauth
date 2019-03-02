@@ -171,11 +171,13 @@ websites:
   img: skype.png
   twitter: skype
   facebook: skype
-  bch: false
-  btc: false
+  bch: true
+  btc: true
   othercrypto: false
-  exceptions:
-    text: Skype used to accept BTC & BCH, but as of 2018-07-07 stopped accepting it
+  doc: https://support.microsoft.com/help/13942/
+  keywords:
+  - bitpay
+  - bip70
 - name: Slack
   url: https://slack.com/
   img: slack.png

@@ -64,12 +64,13 @@ websites:
   img: outlook.png
   twitter: outlook
   facebook: Outlook
-  bch: false
-  btc: false
+  bch: true
+  btc: true
   othercrypto: false
-  exceptions:
-    text: Outlook.com used to accept BTC & BCH, but as of 2018-07-07 stopped accepting
-      it
+  doc: https://support.microsoft.com/help/13942/
+  keywords:
+  - bitpay
+  - bip70
 - name: Ownbay
   url: https://ownbay.net/
   img: ownbay.png

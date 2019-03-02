@@ -258,12 +258,13 @@ websites:
 - name: HealthVault (with Microsoft Account)
   url: https://www.healthvault.com
   img: healthvault.png
-  bch: false
-  btc: false
+  bch: true
+  btc: true
   othercrypto: false
-  exceptions:
-    text: HealthVault used to accept BTC & BCH, but as of 2018-07-07 stopped accepting
-      it
+  doc: https://support.microsoft.com/help/13942/
+  keywords:
+  - bitpay
+  - bip70
 - name: Hint Health
   url: https://www.hint.com
   img: hint.png
