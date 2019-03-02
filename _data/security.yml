@@ -49,6 +49,13 @@ websites:
   - bip70
   exceptions:
     text: Bitcoin is accepted for Phantom VPN Pro only
+- name: BA.net AdBlock VPN
+  url: https://ba.net/adblockvpn
+  img: BAnetAdBlockVPN.png
+  bch: true
+  btc: false
+  othercrypto: false
+  email_address: adblock@ba.net
 - name: Blur
   url: https://www.abine.com/
   img: blur.png
