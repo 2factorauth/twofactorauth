@@ -111,11 +111,15 @@ websites:
   othercrypto: true
   twitter: CrypticVPN
 - name: CyberGhost
-  url: https://www.cyberghostvpn.com
+  url: https://www.cyberghostvpn.com/
   img: cyberghost.png
-  bch: false
+  bch: true
+  btc: true
   twitter: cyberghost_EN
   facebook: cyberghostEN
+  keywords:
+  - bitpay
+  - bip70
 - name: Detectify
   url: https://detectify.com/
   img: detectify.png
