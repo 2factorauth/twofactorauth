@@ -501,6 +501,18 @@ websites:
   othercrypto: true
   keywords:
   - coinpayments.net
+- name: CryptoSwagShop
+  url: https://www.cryptoswagshop.com/
+  img: cryptoswagshop.png
+  twitter: cryptoswagshop
+  facebook: cswagshop
+  bch: true
+  btc: true
+  bsv: true
+  othercrypto: false
+  exceptions:
+    text: This is a drop shipper. The items sold might have a high markup over normal
+      prices
 - name: Dell
   url: http://www.dell.com/en-us
   img: dell.png
