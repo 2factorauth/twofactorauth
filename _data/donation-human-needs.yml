@@ -62,7 +62,9 @@ websites:
   img: uniceffr.png
   twitter: UNICEF_france
   facebook: UNICEF.France
-  bch: true
+  bch: false
   btc: true
   othercrypto: true
   doc: https://lp.unicef.fr/faire-un-don-en-cryptomonnaie/
+  exceptions:
+    text: UNICEF France used to accept BCH, but as of 2018-12-28 stopped accepting it
