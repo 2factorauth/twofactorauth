@@ -183,6 +183,15 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: ChainTip
+  url: https://www.chaintip.org/
+  img: chaintip.png
+  twitter: tudorvintilescu
+  facebook: chaintip
+  email_address: chaintip@protonmail.com
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Changelly
   url: https://changelly.com
   img: changelly.png
@@ -413,6 +422,12 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: GitCash
+  url: https://gitcash.io/
+  img: gitcash.png
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Gyft
   url: https://www.gyft.com/
   img: gyft.png
