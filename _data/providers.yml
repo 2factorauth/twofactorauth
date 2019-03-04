@@ -55,6 +55,13 @@ providers:
     hardware: Yes
     otp: Yes
     u2f: Yes
+    
+  - name: SoloKeys
+    img: solokey.png
+    url: https://shop.solokeys.com
+    hardware: Yes
+    otp: No
+    u2f: Yes
 
   - name: Titan Security Key
     url: https://cloud.google.com/titan-security-key/
