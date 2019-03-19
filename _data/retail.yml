@@ -743,6 +743,19 @@ websites:
   keywords:
   - bitpay
   - bip70
+- name: Galaxus
+  url: https://www.galaxus.ch/
+  img: galaxus.png
+  bch: true
+  btc: true
+  othercrypto: true
+  region: eu
+  country: CH
+  doc: https://www.galaxus.ch/en/page/cryptocurrencies-now-accepted-on-digitec-and-galaxus-11214
+  keywords:
+  - coinify
+  exceptions:
+    text: Minimum order amount for Cryptocurrency payments is 200 CHF
 - name: GearBest
   url: https://www.gearbest.com/
   twitter: TheGearbest
