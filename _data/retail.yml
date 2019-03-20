@@ -616,16 +616,20 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.reddit.com/r/Bitcoincash/comments/8qanek/new_refurbished_laptops_and_pcs_pay_with_bitcoin/
-- name: electrocatstore.com
+- name: ElectroCat
   url: https://www.electrocatstore.com/
   img: electrocatstore.png
   twitter: ElectroCatStore
   facebook: ElectroCat
-  region: eu
-  country: EE
   bch: true
   btc: true
   othercrypto: true
+  exceptions:
+    text: This is a drop shipper. The items sold might have a high markup over normal
+      prices
+  keywords:
+  - coinbase
+  - coinpayments.net
 - name: Elite Pet Fan
   url: https://elitefanco.com/
   img: elitepetfan.png
