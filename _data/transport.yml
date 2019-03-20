@@ -254,15 +254,6 @@ websites:
   img: ov-chipkaart.png
   bch: false
   btc: false
-- name: Please.com
-  url: https://please.com/
-  img: pleasecom.png
-  twitter: PleaseProtocol
-  bch: true
-  btc: true
-  othercrypto: true
-  keywords:
-  - coinbase
 - name: Post Oak Motor Cars
   url: https://www.postoakmotors.com/
   img: postoakmotorcars.png
@@ -351,6 +342,17 @@ websites:
   img: tfl.png
   bch: false
   btc: false
+- name: TravelbyBit
+  url: https://www.travelbybit.com
+  img: TravelbyBit.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: travelbybit
+  facebook: travelbybitaustralia
+  region: oc
+  country: AU
+  doc: https://twitter.com/TravelbyBit/status/1039057132623020033?s=09
 - name: Uber
   url: https://www.uber.com/
   twitter: uber_support

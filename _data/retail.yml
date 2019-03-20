@@ -180,6 +180,18 @@ websites:
   btc: true
   othercrypto: true
   doc: https://cockpitdekor.com/en/content/5-secure-payment
+- name: Avnet
+  url: https://www.avnet.com/
+  img: avnet.png
+  twitter: Avnet
+  facebook: AvnetInc
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://news.avnet.com/press-release/avnet/avnet-leads-industry-accepting-cryptocurrency
+  keywords:
+  - bitpay
+  - bip70
 - name: Babygoodies
   url: https://www.babygoodies.shop/
   img: babygoodies.png
@@ -202,17 +214,6 @@ websites:
   othercrypto: true
   keywords:
   - coinbase
-- name: Batch Brew
-  url: https://www.batchbrew.co.uk/
-  img: batchbrew.png
-  twitter: BatchBrew
-  facebook: BatchBrew
-  region: eu
-  bch: true
-  btc: true
-  othercrypto: true
-  keywords:
-  - coingate
 - name: BCHSticker.com
   url: http://BCHSticker.com
   img: bchsticker.png
@@ -221,28 +222,6 @@ websites:
   btc: false
   othercrypto: false
   doc: https://www.yours.org/content/excited-to-announce-the-launch-of-bchstickercom--dc5394649d16
-- name: BEBI Vodka
-  url: https://www.bebivodka.com/
-  twitter: vegasbebi
-  img: bebivodka.png
-  country: US
-  state: Nevada
-  city: Las Vegas
-  bch: true
-  btc: false
-  othercrypto: true
-- name: Bier Kaufen
-  url: https://www.bier-kaufen.de/
-  img: bierkaufen.png
-  email_address: shop@bier-kaufen.de
-  bch: true
-  btc: true
-  othercrypto: false
-  doc: https://www.bier-kaufen.de/de/zahlung/
-  lang: de
-  keywords:
-  - bitpay
-  - bip70
 - name: Big W
   url: https://www.bigw.com.au/
   img: bigw.png
@@ -276,6 +255,13 @@ websites:
   - bitpay
   - gocoin
   - coinbase
+- name: BitCars
+  url: https://bitcars.eu/
+  img: bitcars.png
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://bitcars.eu/pages/frequently-asked-questions
 - name: Bitcoin Cash Market
   url: https://bitcoincash-market.com/
   img: bitcoincashmarket.png
@@ -391,6 +377,15 @@ websites:
   keywords:
   - bitpay
   - bip70
+- name: Buywithcoins.online
+  url: https://www.buywithcoins.online/
+  img: buywithcoins.png
+  twitter: BuywithcoinsO
+  facebook: Buywithcoins-310810293063601
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.buywithcoins.online/we-accept-crypto-currency-payment-method/
 - name: BTC Media Store
   url: https://store.btcmedia.org/
   img: btcmediastore.png
@@ -410,7 +405,7 @@ websites:
   btc: true
   othercrypto: false
   exceptions:
-    text: Minimum order ammount for Bitcoin payments is 100€
+    text: Minimum order amount for Bitcoin payments is 100€
   keywords:
   - bitpay
   - bip70
@@ -621,16 +616,20 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.reddit.com/r/Bitcoincash/comments/8qanek/new_refurbished_laptops_and_pcs_pay_with_bitcoin/
-- name: electrocatstore.com
+- name: ElectroCat
   url: https://www.electrocatstore.com/
   img: electrocatstore.png
   twitter: ElectroCatStore
   facebook: ElectroCat
-  region: eu
-  country: EE
   bch: true
   btc: true
   othercrypto: true
+  exceptions:
+    text: This is a drop shipper. The items sold might have a high markup over normal
+      prices
+  keywords:
+  - coinbase
+  - coinpayments.net
 - name: Elite Pet Fan
   url: https://elitefanco.com/
   img: elitepetfan.png
@@ -727,6 +726,19 @@ websites:
   keywords:
   - bitpay
   - bip70
+- name: Galaxus
+  url: https://www.galaxus.ch/
+  img: galaxus.png
+  bch: true
+  btc: true
+  othercrypto: true
+  region: eu
+  country: CH
+  doc: https://www.galaxus.ch/en/page/cryptocurrencies-now-accepted-on-digitec-and-galaxus-11214
+  keywords:
+  - coinify
+  exceptions:
+    text: Minimum order amount for Cryptocurrency payments is 200 CHF
 - name: GearBest
   url: https://www.gearbest.com/
   twitter: TheGearbest
@@ -1033,19 +1045,6 @@ websites:
   doc: https://www.kitsystem.ru/blog/info/oplachivayte-tovary-i-uslugi-kriptovalyutoy
   keywords:
   - cryptonator
-- name: Klebe Monster
-  url: https://www.klebe-monster.de/
-  img: klebemonster.png
-  facebook: KlebeMonster
-  email_address: info@klebe-monster.de
-  bch: true
-  btc: true
-  othercrypto: false
-  lang: de
-  country: de
-  keywords:
-  - bitpay
-  - bip70
 - name: Kohl's
   url: https://www.kohls.com
   img: kohls.png
@@ -1111,6 +1110,14 @@ websites:
   bch: false
   twitter: Lowes
   facebook: lowes
+- name: LSW Mind Cards
+  url: https://lswmindcards.com/
+  img: lswmindcards.png
+  twitter: LSWmindcards
+  facebook: LSWmindcards
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Lucky Aquatics
   url: https://luckyaquatics.com
   img: LuckyAquatics.png
@@ -1628,6 +1635,19 @@ websites:
   othercrypto: false
   exceptions:
     text: Use Coinbase Commerce at checkout
+- name: Sheldon Store
+  url: https://sheldon.store/
+  img: sheldonstore.png
+  twitter: sheldon_store
+  facebook: sheldonstore
+  email_address: support@sheldon.store
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: This is a drop shipper. The items sold might have a high markup over normal prices
+  keywords:
+  - coinpayments.net
 - name: Shire Soaps
   url: http://shiresoaps.com/
   img: shiresoaps.png
@@ -1865,15 +1885,6 @@ websites:
   othercrypto: true
   keywords:
   - coinbase
-- name: tazzine.de
-  url: https://tazzine.de/
-  img: tazzine.png
-  bch: true
-  btc: true
-  othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
 - name: Technikware
   url: https://technikware.at/
   img: technikware.png

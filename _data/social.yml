@@ -102,13 +102,11 @@ websites:
   url: https://gab.ai/
   img: gabai.png
   twitter: getongab
-  bch: true
+  bch: false
   btc: true
   othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
-  doc: https://www.reddit.com/r/btc/comments/991j2a/gabai_accepts_bitcoin_cash_through_bitpay_gab_is/
+  exceptions:
+    text: Gab.ai used to accept BCH, but as of 2018-11-21 stopped accepting it
 - name: Goodreads
   url: https://www.goodreads.com
   img: goodreads.png

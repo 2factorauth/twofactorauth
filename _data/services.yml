@@ -25,6 +25,18 @@ websites:
   twitter: audioventaca
   facebook: audioventa.ca
   email_address: audioventa.ca@gmail.com
+- name: Avnet
+  url: https://www.avnet.com/
+  img: avnet.png
+  twitter: Avnet
+  facebook: AvnetInc
+  bch: true
+  btc: true
+  othercrypto: false
+  doc: https://news.avnet.com/press-release/avnet/avnet-leads-industry-accepting-cryptocurrency
+  keywords:
+  - bitpay
+  - bip70
 - name: BCH Ad Spot
   url: https://bchadspot.com
   img: bch_adspot.png
@@ -69,17 +81,6 @@ websites:
   othercrypto: true
   exceptions:
     text: Ask the guy if he takes crypto
-- name: Crispy Barbers
-  url: https://facebook.com/crispybarbers
-  img: CrispyBarbers.png
-  bch: true
-  btc: true
-  othercrypto: true
-  facebook: crispybarbers
-  email_address: crispybarbers@gmail.com
-  region: as
-  country: TW
-  city: Tainan City
 - name: Crypto Accountant
   url: http://www.cryptoaccountant.pro/
   twitter: CryptoAcco
@@ -179,6 +180,13 @@ websites:
   country: GB
   keywords:
   - coingate
+- name: Freelance for Coins
+  url: https://freelanceforcoins.com/
+  img: freelanceforcoi.png
+  email_address: hello@freelanceforcoins.com
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Gana Control
   url: https://ganacontrol.com/
   img: ganacontrol.png
@@ -476,6 +484,16 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Tradingview
+  url: https://www.tradingview.com/
+  img: tradingview.png
+  twitter: tradingview
+  facebook: tradingview
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinbase
 - name: Viabox
   url: https://www.viabox.com/
   img: viabox.png
@@ -491,14 +509,6 @@ websites:
   keywords:
   - bitpay
   - bip70
-- name: Voipbuster
-  url: https://voipbuster.com
-  img: voipbuster.png
-  bch: true
-  btc: true
-  othercrypto: false
-  keywords:
-  - bitpay
 - name: WIRmachenDRUCK
   url: https://www.wir-machen-druck.de/
   img: wirmachendruck.png

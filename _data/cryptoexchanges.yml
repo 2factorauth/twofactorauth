@@ -1,12 +1,5 @@
 ---
 websites:
-- name: 1Fox
-  url: https://1fox.com/
-  img: 1fox.png
-  twitter: 1Foxcom
-  bch: true
-  btc: true
-  othercrypto: false
 - name: 3XBIT
   url: https://3xbit.com.br/
   img: 3xbit.png
@@ -27,6 +20,14 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.abra.com/blog/bitcoin-cash-support/
+- name: ALFAcashier
+  url: https://www.alfacashier.com/
+  img: alfacashier.png
+  twitter: alfacashier
+  facebook: alfacashiercom
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Alluma
   url: https://www.alluma.io/
   img: alluma.png
@@ -210,15 +211,6 @@ websites:
   btc: true
   othercrypto: true
   doc: https://blog.cex.io/news/bitcoin-cash-deposits-withdrawals-enabled-cex-io-16432
-- name: CFINEX
-  url: https://cfinex.com/
-  img: cfinex.png
-  twitter: cfinex
-  email_address: support@cfinex.info
-  bch: true
-  btc: true
-  othercrypto: true
-  doc: https://twitter.com/cfinex/status/984134767288438784
 - name: Cobinhood
   url: https://cobinhood.com/
   img: cobinhood.png
@@ -432,7 +424,6 @@ websites:
   bch: true
   btc: false
   othercrypto: true
-  status: https://news.bitcoin.com/adding-bitcoin-cash-and-litecoin-is-main-goal-of-2018-for-gemini-exchange/
 - name: Ginero
   url: https://ginero.io
   img: ginero.png
@@ -569,12 +560,6 @@ websites:
   btc: true
   othercrypto: true
   doc: https://poloniex.com/press-releases/2017.08.03-Bitcoin-Cash-Update/
-- name: QuadrigaCX
-  url: https://www.quadrigacx.com
-  img: quadrigacx.png
-  bch: true
-  btc: true
-  othercrypto: true
 - name: Quoine
   url: https://quoine.com/
   img: quoine.png
@@ -588,9 +573,11 @@ websites:
   img: switchaindotcom.png
   twitter: switchaindotcom
   email_address: support@switchain.com
-  bch: true
+  bch: false
   btc: true
   othercrypto: true
+  exceptions:
+    text: Switchain used to accept BCH, but as of 2019-03-20 stopped accepting it
 - name: Tidex
   url: https://www.tidex.com
   img: tidex.png
@@ -605,16 +592,6 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-- name: Tradingview
-  url: https://www.tradingview.com/
-  img: tradingview.png
-  twitter: tradingview
-  facebook: tradingview
-  bch: true
-  btc: true
-  othercrypto: true
-  keywords:
-  - coinbase
 - name: UPbit
   url: https://upbit.com/
   img: upbit.png
@@ -648,9 +625,11 @@ websites:
   bch: false
   btc: true
   othercrypto: true
-- name: WEX (BTC-E)
-  url: https://btc-e.nz
-  img: wex.png
+- name: XCH4NGE
+  url: https://www.xch4nge.com/
+  img: xch4nge.png
+  twitter: xch4nge
+  facebook: xch4nge
   bch: true
   btc: true
   othercrypto: true
