@@ -376,16 +376,15 @@ websites:
   - bitpay
   - bip70
 - name: Giacomo Cortes
-  url: https://shop.giacomocortes.com/
+  url: https://giacomocortes.com/
   img: giacomocortes.png
   twitter: GiacomoCortes
   facebook: GiacomoCortes
-  lang: de
   bch: false
-  btc: true
+  btc: false
   othercrypto: false
-  keywords:
-  - coingate
+  exceptions:
+    text: Giacomo Cortes used to accept BTC, but as of 2019-03-21 stopped accepting it
 - name: GORUCK
   url: https://www.goruck.com/
   img: goruck.png
