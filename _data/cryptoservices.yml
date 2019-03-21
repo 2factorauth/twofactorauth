@@ -705,6 +705,16 @@ websites:
   doc: https://blog.xapo.com/xapo-bitcoincash-bch-update/
   exceptions:
     text: Xapo has enabled Bitcoin Cash withdrawal but does not yet offer full support.
+- name: YOVO Pay
+  url: https://yovopay.com/
+  img: yovopay.png
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: They have a 19% fee which is not stated in their terms of service.
+  keywords:
+  - coingate
 - name: ZuPago
   url: https://zupago.pe/
   twitter: zupago
