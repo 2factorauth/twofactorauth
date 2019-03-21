@@ -337,11 +337,14 @@ websites:
   othercrypto: true
   doc: https://www.cryptofacilities.com/cryptocurrency-news/bch-usd-futures/
 - name: Cryptopia
-  url: https://www.cryptopia.co.nz
+  url: https://www.cryptopia.co.nz/
   img: cryptopia.png
   bch: true
   btc: true
   othercrypto: true
+  doc: https://support.cryptopia.co.nz/csm?id=kb_article&sys_id=48613b3cdb50338032a664a14a9619ba
+  exceptions:
+    text: Cryptopia was hacked and repaid users with Cryptopia Loss Marker (CLM) token. This might result in bankruptcy. See docs link for details.
 - name: DSX
   url: https://dsx.uk/
   img: dsx.png
