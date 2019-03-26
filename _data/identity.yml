@@ -4,6 +4,8 @@ websites:
       img: 1password.png
       tfa: Yes
       software: Yes
+      exceptions:
+        text: "1Password advertises hardware 2FA on Yubikey but it's just software TOTP. Teams using Duo with 1Password can't enable additional 2FA as it's already handled by Duo"
       doc: https://support.1password.com/two-factor-authentication/
 
     - name: Bitium
