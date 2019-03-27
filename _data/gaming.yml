@@ -253,9 +253,12 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+  doc: https://www.jjgames.com/page/bitcoin
   keywords:
   - bitpay
   - bip70
+  exceptions:
+    text: You need to apply the promo code bitcoin for Bitcoin payment to appear. See the doc link for details.
 - name: Keys4Coins
   url: https://www.keys4coins.com
   img: keys4coins.png
