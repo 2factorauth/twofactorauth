@@ -134,7 +134,7 @@ The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
 If a site does provide TFA, it is strongly recommended that you add the `doc:`
 field where public documentation is available. Other fields should be included
 if the website supports them. Any services that are not supported can be excluded.
-Sites supporting TFA should not have a Twitter, Facebook or Email field.
+Sites supporting TFA should not have a `twitter`, `facebook` or `email_address` field.
 
 The following is an example of a website that *supports* TFA:
 
