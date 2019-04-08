@@ -42,6 +42,17 @@ websites:
   img: amtrak.png
   bch: false
   btc: false
+- name: bitcoin.travel
+  url: https://bitcoin.travel/
+  img: bitcointravel.png
+  bch: true
+  btc: true
+  othercrypto: true
+  facebook: bitcoin.travel
+  email_address: support@bitcoin.travel
+  doc: https://bitcoin.travel/how-it-works/#
+  exceptions:
+    text: "Book your desired rental/hotels, tours, or activities using cryptocurrency with this website. Does not currently accept cryptocurrencies for booking flights."
 - name: British Airways
   url: https://www.britishairways.com/
   twitter: British_Airways
