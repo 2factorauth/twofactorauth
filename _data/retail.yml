@@ -903,6 +903,17 @@ websites:
   bch: false
   btc: true
   othercrypto: true
+- name: Helios Touch
+  url: https://heliostouch.com/
+  img: HeliosTouch.png
+  bch: true
+  btc: true
+  othercrypto: false
+  twitter: heliostouch
+  facebook: heliostouch
+  email_address: info@heliostouch.com
+  exceptions:
+    text: "Selcet Bitpay option at checkout"
 - name: Home & Stone
   url: https://www.homeandstone.com/
   img: homeandstone.png
