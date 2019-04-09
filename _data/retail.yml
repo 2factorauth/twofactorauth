@@ -912,8 +912,9 @@ websites:
   twitter: heliostouch
   facebook: heliostouch
   email_address: info@heliostouch.com
-  exceptions:
-    text: "Selcet Bitpay option at checkout"
+  keywords:
+  - bitpay
+  - bip70
 - name: Home & Stone
   url: https://www.homeandstone.com/
   img: homeandstone.png
