@@ -42,10 +42,9 @@ websites:
       img: apple.png
       tfa: Yes
       sms: Yes
+      phone: Yes
       software: Yes
-      exceptions:
-          text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
-      doc: http://support.apple.com/kb/ht5570
+      doc: https://support.apple.com/en-us/HT204915
 
     - name: Arcaplanet
       url: https://www.arcaplanet.it/
