@@ -24,10 +24,10 @@ websites:
 
     - name: Alliant Credit Union
       url: https://www.alliantcreditunion.org/
-      twitter: AlliantCU
-      facebook: alliantcreditunion
       img: alliantcreditunion.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://www.alliantcreditunion.org/help/how-does-alliant-two-factor-authentication-work
 
     - name: Ally Bank
       url: https://www.ally.com/
@@ -198,7 +198,7 @@ websites:
       img: boursorama.png
       tfa: No
       lang: fr
-      
+
     - name: Caisse D'Epargne
       url: https://www.caisse-epargne.fr/
       twitter: CaissEpargneSAV
