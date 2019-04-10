@@ -67,6 +67,16 @@ websites:
       img: rememberthemilk.png
       tfa: No
 
+    - name: Standard Notes
+      url: https://standardnotes.org/
+      twitter: standardnotes
+      img: standardnotes.png
+      email_address: help@standardnotes.org
+      tfa: Yes
+      software: Yes
+      exceptions:
+text: "Requieres standardnotes extended or self-hosted server."
+
     - name: Todoist
       url: https://todoist.com
       twitter: todoist
