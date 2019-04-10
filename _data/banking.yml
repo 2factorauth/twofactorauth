@@ -510,6 +510,8 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
+      exceptions:
+          text: "Software 2FA requires HSBC app."
       doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
 
     - name: Huntington National Bank
