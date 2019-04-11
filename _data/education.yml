@@ -44,6 +44,14 @@ websites:
           text: "SMS-capable phone required for initial setup."
       doc: https://imss.caltech.edu/node/1408
 
+    - name: Carnegie Mellon University
+      url: https://www.cmu.edu/
+      img: cmu.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.cmu.edu/computing/services/security/identity-access/authentication/how-to/use2fa-weblogin.html
+
     - name: CBT Nuggets
       url: https://www.cbtnuggets.com/
       img: cbtnuggets.png
@@ -247,6 +255,16 @@ websites:
       software: Yes
       doc: https://kb.mit.edu/confluence/display/istcontrib/Duo+Authentication+Landing+Page
 
+    - name: Miami University
+      url: https://miamioh.edu/
+      img: miamioh.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: yes
+      software: yes
+      doc: https://miamioh.edu/it-services/initiatives-and-projects/info-security/duo/
+
     - name: Montclair State University
       url: https://www.montclair.edu/employee-services/
       twitter: montclairstateu
@@ -268,7 +286,7 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
-      doc: https://www.identity.psu.edu/services/authentication-services/two-factor/
+      doc: http://www.identity.psu.edu/services/authentication-services/two-factor/
 
     - name: Purdue University
       url: https://www.purdue.edu/

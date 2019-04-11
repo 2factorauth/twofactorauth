@@ -182,6 +182,14 @@ websites:
       software: Yes
       doc: https://support.circle.com/hc/en-us/articles/213560483--What-is-two-factor-authentication-2FA-
 
+    - name: COBINHOOD
+      url: https://cobinhood.com
+      img: cobinhood.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://cobinhood.zendesk.com/hc/en-us/articles/115003476871
+
     - name: Coin Cafe
       url: https://coincafe.com
       img: coincafe.png
@@ -389,10 +397,8 @@ websites:
       url: https://uphold.com/
       img: uphold.png
       tfa: Yes
-      sms: Yes
-      phone: Yes
       software: Yes
-      doc: https://support.uphold.com/hc/en-us/articles/206119683-How-does-phone-number-verification-work-
+      doc: https://support.uphold.com/hc/en-us/articles/360024042471
 
     - name: Xapo
       url: https://xapo.com

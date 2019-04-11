@@ -76,6 +76,20 @@ websites:
       img: easyjet.png
       tfa: No
 
+    - name: Eurowings
+      url: https://www.eurowings.com
+      twitter: eurowings
+      facebook: eurowings
+      img: eurowings.png
+      tfa: No
+
+    - name: Finnair
+      url: https://www.finnair.com/
+      img: finnair.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+
     - name: Frontier
       url: https://www.flyfrontier.com
       twitter: FrontierCare
@@ -214,6 +228,13 @@ websites:
       twitter: SouthwestAir
       facebook: SouthwestAir
       img: southwest.png
+      tfa: No
+
+    - name: Southwestern Railway
+      url: https://www.southwesternrailway.com/
+      twitter: SW_Help
+      facebook: swrailway
+      img: swr.png
       tfa: No
 
     - name: Spirit

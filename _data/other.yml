@@ -144,6 +144,13 @@ websites:
       sms: Yes
       doc: https://support.cosmolex.com/knowledge-base/how-to-enable-two-factor-authentication/
 
+    - name: Couchsurfing
+      url: https://www.couchsurfing.com/
+      img: couchsurfing.png
+      tfa: No
+      twitter: couchsurfing
+      facebook: couchsurfing
+
     - name: Crowd Supply
       url: https://www.crowdsupply.com
       img: crowdsupply.png
@@ -427,6 +434,13 @@ websites:
       img: pocket.png
       tfa: No
 
+    - name: Postcrossing
+      url: https://www.postcrossing.com/
+      img: postcrossing.png
+      tfa: No
+      facebook: postcrossing
+      twitter: postcrossing
+      
     - name: Postmates
       url: https://postmates.com
       twitter: postmates
@@ -506,6 +520,13 @@ websites:
       img: ulule.png
       tfa: No
 
+    - name: UPS
+      url: https://www.ups.com
+      img: ups.png
+      tfa: No
+      twitter: ups
+      facebook: ups
+
     - name: Upwork
       url: https://www.upwork.com
       img: upwork.png
@@ -562,6 +583,12 @@ websites:
       software: Yes
       doc: https://docs.yclas.com/2-step-authentication/
 
+    - name: YourAcclaim
+      url: https://youracclaim.com
+      img: youracclaim.png
+      tfa: Yes
+      software: Yes
+      
     - name: Zendesk
       url: https://www.zendesk.com
       img: zendesk.png
