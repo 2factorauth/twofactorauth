@@ -24,6 +24,16 @@ websites:
       img: bw_bank.png
       lang: de
 
+    - name: BGL Corporate Solutions
+      url: https://www.bglcorp.com/
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      img: bgl.png
+      doc: https://sf360.zendesk.com/hc/en-au/articles/360020963051
+      exceptions:
+        text: "2FA covers Simple Fund 360, CAS 360, BGL API and BGL Account. It doesn't cover BGL Client Centre."
+
     - name: Bitbond
       url: https://www.bitbond.com
       img: bitbond.png
