@@ -240,9 +240,11 @@ websites:
   email_address: info@mobilevikings.be
   region: eu
   country: BE
-  bch: true
-  btc: true
+  bch: false
+  btc: false
   othercrypto: false
+  exceptions:
+    text: Mobile Vikings used to accept BTC & BCH, but as of 2018-06-23 stopped accepting it.
 - name: Moj Tele2
   url: https://moj.tele2.hr/
   twitter: Tele2Croatia
