@@ -24,10 +24,10 @@ websites:
 
     - name: Alliant Credit Union
       url: https://www.alliantcreditunion.org/
-      twitter: AlliantCU
-      facebook: alliantcreditunion
       img: alliantcreditunion.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://www.alliantcreditunion.org/help/how-does-alliant-two-factor-authentication-work
 
     - name: Ally Bank
       url: https://www.ally.com/
@@ -198,7 +198,7 @@ websites:
       img: boursorama.png
       tfa: No
       lang: fr
-      
+
     - name: Caisse D'Epargne
       url: https://www.caisse-epargne.fr/
       twitter: CaissEpargneSAV
@@ -510,6 +510,8 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
+      exceptions:
+          text: "Software 2FA requires HSBC app."
       doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
 
     - name: Huntington National Bank
@@ -580,6 +582,15 @@ websites:
       facebook: LendingClubTeam
       img: lendingclub.png
       tfa: No
+
+    - name: LHV
+      url: https://www.lhv.ee/
+      twitter: ellhaavee
+      facebook: LHVPank
+      img: lhv.png
+      email_address: info@lhv.ee
+      tfa: No
+      lang: et
 
     - name: Lloyds Bank
       url: https://www.lloydsbank.com/
