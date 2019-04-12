@@ -34,6 +34,8 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://support.ancestry.com/s/article/MFA
+      exceptions:
+          text: "2FA is currently only available for customers with an US based mobile phone number."
 
     - name: AngelList
       url: https://angel.co
