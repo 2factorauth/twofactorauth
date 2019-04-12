@@ -68,14 +68,12 @@ websites:
       tfa: No
 
     - name: Standard Notes
-      url: https://standardnotes.org/
-      twitter: standardnotes
+      url: https://standardnotes.org
       img: standardnotes.png
-      email_address: help@standardnotes.org
       tfa: Yes
       software: Yes
       exceptions:
-       text: "Requieres standardnotes extended or self-hosted server."
+          text: "Requieres standardnotes extended or self-hosted server."
 
     - name: Todoist
       url: https://todoist.com
