@@ -323,6 +323,14 @@ websites:
       tfa: No
       twitter: dbsbank
       facebook: dbs.sg
+      
+    - name: Desert Financial Credit Union
+      url: https://www.desertfinancial.com
+      img: desertfinancialcu.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      doc: https://www.desertfinancial.com/faq/online-solutions-faqs/security
 
     - name: Desjardins
       url: https://www.desjardins.com/
@@ -581,6 +589,12 @@ websites:
       twitter: lendingclub
       facebook: LendingClubTeam
       img: lendingclub.png
+      tfa: No
+
+    - name: LGE Community Credit Union
+      url: https://www.lgeccu.org/
+      twitter: LGEccu
+      img: lgecommunitycu.png
       tfa: No
 
     - name: LHV
