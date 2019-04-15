@@ -368,6 +368,8 @@ websites:
       phone: Yes
       software: Yes
       doc: https://transferwise.com/help/article/2811597/borderless-account/how-can-i-setup-2-step-login
+      exceptions:
+        text: "Software verification requires use of the TransferWise Mobile app. SMS-capable phone is required."
 
     - name: Treasury Direct
       url: https://www.treasurydirect.gov
