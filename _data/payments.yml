@@ -516,12 +516,11 @@ websites:
   url: https://xsolla.com/
   img: xsolla.png
   twitter: xsolla
-  bch: true
-  btc: true
+  bch: false
+  btc: false
   othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
+  exceptions:
+    text: Xsolla used to accept BTC & BCH, but as of 2019-04-10 stopped accepting it
 - name: Yandex.Money
   url: https://money.yandex.ru
   img: yandexmoney.png
