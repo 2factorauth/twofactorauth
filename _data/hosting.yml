@@ -41,6 +41,13 @@ websites:
       software: Yes
       doc: https://blogg.binero.se/2017/10/tvafaktorsautentisering/
 
+    - name: Blacknight
+      url: https://blacknight.com
+      img: blacknight.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.blacknight.com/hc/en-us/articles/360001358517
+
     - name: Bluehost
       url: https://www.bluehost.com/
       img: bluehost.png
@@ -289,11 +296,9 @@ websites:
 
     - name: Miss Hosting
       url: https://misshosting.com/
-      twitter: misshostingcom
-      facebook: misshostingcom
       img: misshosting.png
-      tfa: No
-      lang: sv
+      tfa: Yes
+      software: Yes
 
     - name: Mittwald
       url: https://www.mittwald.de/
@@ -504,6 +509,13 @@ websites:
       tfa: No
       twitter: weebly
       facebook: weebly
+      
+    - name: Wix
+      url: https://www.wix.com/
+      twitter: WixHelp
+      facebook: wix
+      img: wix.png
+      tfa: No
 
     - name: WP Engine
       url: https://wpengine.com/

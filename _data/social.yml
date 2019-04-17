@@ -26,6 +26,13 @@ websites:
       tfa: No
       twitter: Badoo
 
+    - name: BiggerPockets
+      url: https://www.biggerpockets.com
+      img: biggerpockets.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.biggerpockets.com/forums/25/topics/232201
+     
     - name: Bitly
       url: https://bitly.com/
       img: bitly.png
@@ -81,16 +88,6 @@ websites:
       twitter: goodreads
       img: goodreads.png
       tfa: No
-
-    - name: Google+
-      url: https://plus.google.com
-      img: g+.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: HootSuite
       url: https://hootsuite.com

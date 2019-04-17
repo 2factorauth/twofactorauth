@@ -42,10 +42,9 @@ websites:
       img: apple.png
       tfa: Yes
       sms: Yes
+      phone: Yes
       software: Yes
-      exceptions:
-          text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
-      doc: http://support.apple.com/kb/ht5570
+      doc: https://support.apple.com/en-us/HT204915
 
     - name: Arcaplanet
       url: https://www.arcaplanet.it/
@@ -352,6 +351,13 @@ websites:
       facebook: Snapdeal
       email_address: help@snapdeal.com
 
+    - name: speedcube.com.au
+      url: https://www.speedcube.com.au/
+      img: speedcubecomau.png
+      tfa: No
+      twitter: speedcubecomau
+      facebook: speedcubecomau
+
     - name: Stack Social
       url: https://stacksocial.com
       twitter: StackSocial
@@ -363,6 +369,15 @@ websites:
       twitter: target
       img: target.png
       tfa: No
+
+    - name: Tokopedia
+      url: https://www.tokopedia.com/
+      img: tokopedia.png
+      tfa: Yes
+      software: Yes
+      phone: Yes
+      sms: Yes
+      doc: https://www.tokopedia.com/panduan-keamanan/fitur-keamanan-tambahan/
 
     - name: Trade Me
       url: https://www.trademe.co.nz
@@ -423,4 +438,3 @@ websites:
       tfa: No
       twitter: zooplusDE
       facebook: zooplusde
-
