@@ -178,6 +178,16 @@ websites:
   btc: true
   othercrypto: true
   doc: https://support.bittrex.com/hc/en-us/articles/115000808991-Statement-on-Bitcoin-Cash-BCH-
+- name: Bittylicious
+  url: https://bittylicious.com/
+  img: bittylicious.png
+  twitter: Bittylicious_
+  facebook: BittyliciousBitcoins
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: Coin availability depends on location.
 - name: Braziliex
   url: https://braziliex.com/
   img: braziliex.png
