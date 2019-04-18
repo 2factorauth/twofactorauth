@@ -11,7 +11,7 @@ websites:
   keywords:
   - coingate
 - name: 1stBoards
-  url: http://1stboards.world
+  url: http://1stboards.com/
   facebook: 1stboardstaiwan
   img: 1stboards.png
   bch: true
@@ -79,12 +79,6 @@ websites:
   othercrypto: false
   keywords:
   - bitpay
-- name: Ali Lightning
-  url: http://alilightning.com/
-  img: alilightning.png
-  bch: true
-  btc: true
-  othercrypto: true
 - name: AliExpress
   url: https://www.aliexpress.com/
   img: aliexpress.png
@@ -216,14 +210,6 @@ websites:
   othercrypto: true
   keywords:
   - coinbase
-- name: BCHSticker.com
-  url: http://BCHSticker.com
-  img: bchsticker.png
-  email_address: contact@bchsticker.com
-  bch: true
-  btc: false
-  othercrypto: false
-  doc: https://www.yours.org/content/excited-to-announce-the-launch-of-bchstickercom--dc5394649d16
 - name: Big W
   url: https://www.bigw.com.au/
   img: bigw.png
@@ -264,13 +250,6 @@ websites:
   btc: true
   othercrypto: true
   doc: https://bitcars.eu/pages/frequently-asked-questions
-- name: Bitcoin Cash Market
-  url: https://bitcoincash-market.com/
-  img: bitcoincashmarket.png
-  twitter: BCH_Market
-  bch: true
-  btc: false
-  othercrypto: false
 - name: Bitcoin Cash Stickers
   url: http://bitcoincashstickers.com/
   img: bchstickers.png
@@ -363,13 +342,6 @@ websites:
   bch: false
   btc: false
   othercrypto: true
-- name: Bokeh Life
-  url: https://bokeh.life/
-  img: bokehlife.png
-  bch: false
-  btc: true
-  twitter: bokeh_life
-  facebook: bokehlifemmxv
 - name: Breviary Stuff Publications
   url: https://www.breviarystuff.org.uk/
   img: breviarystuff.png
@@ -691,16 +663,6 @@ websites:
   bch: false
   twitter: flipkartsupport
   facebook: flipkart
-- name: Franklin Arms
-  url: https://www.franklinarms.ca
-  img: FranklinArms.png
-  twitter: franklin_arms
-  email_address: info@franklinarms.ca
-  region: na
-  country: CA
-  bch: true
-  btc: true
-  othercrypto: true
 - name: Free Press Publications
   url: http://fpp.cc/
   img: fpp.png
@@ -790,13 +752,6 @@ websites:
   twitter: gilt
   img: gilt.png
   bch: false
-- name: GimbalZone
-  url: https://www.gimbalzone.com/
-  img: gimbalzone.png
-  facebook: GimbalZone-152411641998649
-  bch: true
-  btc: true
-  othercrypto: false
 - name: GPIO Australia
   url: https://www.buyraspberrypi.com.au/
   img: gpioaustralia.png
@@ -849,18 +804,6 @@ websites:
   keywords:
   - bitpay
   - bip70
-- name: Gully Flip
-  url: https://gullyflip.com
-  img: gullyflip.png
-  bch: true
-  btc: true
-  othercrypto: true
-  keywords:
-  - bitpay
-  - globee
-  exceptions:
-    text: This is a drop shipper. The items sold might have a high markup over normal
-      prices
 - name: Gumnut
   url: https://www.gumnut.io/
   img: gumnut.png
@@ -978,16 +921,6 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: Indiequid
-  url: https://indiequid.com/
-  img: indiequid.png
-  facebook: Indiequid-1750338658349419
-  email_address: jeandelarue2002@hotmail.com
-  bch: true
-  btc: true
-  othercrypto: true
-  keywords:
-  - coinbase
 - name: Inet.se
   url: https://www.inet.se/
   img: inetse.png
@@ -1153,15 +1086,6 @@ websites:
   country: US
   keywords:
   - coinbase
-- name: Lulu's Market
-  url: https://livelove.organic/
-  img: LuLusMarket.png
-  twitter: ShopLuLusMarket
-  facebook: liveloveorganics
-  region: na
-  bch: true
-  btc: true
-  othercrypto: false
 - name: Macy's
   url: https://www.macys.com/
   twitter: macys
@@ -1539,13 +1463,6 @@ websites:
   othercrypto: false
   keywords:
   - mollie
-- name: Pokemon Bitcoin
-  url: http://pokemonbtc.com/
-  img: pokemonbitcoin.png
-  twitter: pokemonbitcoin
-  bch: true
-  btc: true
-  othercrypto: false
 - name: powercube.dk
   url: https://powercube.dk/
   img: powercubedk.png
@@ -1890,6 +1807,18 @@ websites:
   doc: https://www.sugartrends.com/de/zahlungsmoeglichkeiten
   keywords:
   - coinpayments.net
+- name: Super-Savvy's
+  url: https://savvys.co.uk
+  img: supersavvys.png
+  twitter: savvys16
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinbase
+  exceptions:
+    text: This is a drop shipper. The items sold might have a high markup over normal
+      prices
 - name: Surfnow
   url: https://www.surfnow.eu/
   img: surfnow.png

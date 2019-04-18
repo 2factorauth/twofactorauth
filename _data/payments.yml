@@ -256,6 +256,17 @@ websites:
   twitter: dwolla
   facebook: dwolla
   bch: false
+- name: ELIPAY
+  url: https://elipay.com/
+  img: elipay.png
+  twitter: eligmacom
+  facebook: eligmacom
+  bch: true
+  btc: true
+  othercrypto: true
+  region: eu
+  country: SI
+  doc: https://elipay.com/locations
 - name: Flattr
   img: flattr.png
   url: https://flattr.com
@@ -323,6 +334,12 @@ websites:
   twitter: Klarna
   facebook: KlarnaUSA
   bch: false
+- name: Menu.cash
+  url: https://menu.cash/
+  img: menucash.png
+  bch: true
+  btc: false
+  othercrypto: false
 - name: MiniPOS
   url: https://www.minipos.cash/
   img: minipos.png
@@ -516,12 +533,11 @@ websites:
   url: https://xsolla.com/
   img: xsolla.png
   twitter: xsolla
-  bch: true
-  btc: true
+  bch: false
+  btc: false
   othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
+  exceptions:
+    text: Xsolla used to accept BTC & BCH, but as of 2019-04-10 stopped accepting it
 - name: Yandex.Money
   url: https://money.yandex.ru
   img: yandexmoney.png

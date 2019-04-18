@@ -36,6 +36,13 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: altilly
+  url: https://www.altilly.com/
+  img: altilly.png
+  twitter: altillycom
+  bch: true
+  btc: true
+  othercrypto: true
 - name: ANXPRO Bitcoin Exchange
   url: https://anxpro.com/
   img: anxpro.png
@@ -114,6 +121,14 @@ websites:
   btc: true
   othercrypto: true
   doc: https://bitflyer.jp/cam/bch-201708/ja/?top_link
+- name: BitForex
+  url: https://www.bitforex.com/
+  img: bitforex.png
+  twitter: bitforexcom
+  facebook: bitforexcom
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Bithumb
   url: https://www.bithumb.com/
   img: bithumb.png
@@ -171,6 +186,16 @@ websites:
   btc: true
   othercrypto: true
   doc: https://support.bittrex.com/hc/en-us/articles/115000808991-Statement-on-Bitcoin-Cash-BCH-
+- name: Bittylicious
+  url: https://bittylicious.com/
+  img: bittylicious.png
+  twitter: Bittylicious_
+  facebook: BittyliciousBitcoins
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: Coin availability depends on location.
 - name: Braziliex
   url: https://braziliex.com/
   img: braziliex.png
@@ -326,6 +351,15 @@ websites:
   img: coinspot.png
   region: oc
   country: AU
+  bch: true
+  btc: true
+  othercrypto: true
+- name: CoinSwitch
+  url: https://coinswitch.co/
+  img: coinswitch.png
+  twitter: coinswitch
+  facebook: coinswitch
+  email_address: partnership@coinswitch.co
   bch: true
   btc: true
   othercrypto: true
@@ -530,6 +564,14 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: LiteBit
+  url: https://www.litebit.eu/
+  img: litebit.png
+  twitter: litebiteu
+  facebook: litebiteu
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Livecoin
   url: https://www.livecoin.net
   img: livecoin.png
@@ -581,6 +623,13 @@ websites:
   twitter: OKEx_
   facebook: OKEx.Official
   email_address: support@okex.com
+  bch: true
+  btc: true
+  othercrypto: true
+- name: One Page Exchange
+  url: https://onepagex.com/
+  img: onepageexchange.png
+  twitter: OnePageX
   bch: true
   btc: true
   othercrypto: true
