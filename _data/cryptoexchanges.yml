@@ -684,6 +684,17 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Stealthex.io
+  url: https://stealthex.io/
+  img: stealthexio.png
+  twitter: Stealthex_io
+  facebook: Stealthex.io
+  email_address: pr@stealthex.io
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: Funds from users in prohibited jurisdictions will be seized, check terms and conditions.
 - name: Switchain
   url: https://switchain.com
   img: switchaindotcom.png
