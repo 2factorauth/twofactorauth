@@ -31,6 +31,14 @@ websites:
   twitter: AmazonPayments
   img: amazon.png
   bch: false
+- name: Anypay
+  url: https://anypay.global/
+  img: anypay.png
+  twitter: anypay_
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://twitter.com/Anypay_/status/1091385727533936641
 - name: AtomicPay
   url: https://atomicpay.io/
   img: atomicpay.png
@@ -40,14 +48,6 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-- name: Anypay
-  url: https://anypay.global/
-  img: anypay.png
-  twitter: anypay_
-  bch: true
-  btc: true
-  othercrypto: true
-  doc: https://twitter.com/Anypay_/status/1091385727533936641
 - name: BCHPLS.io
   url: https://bchpls.io/
   img: bchplsPOS.png
@@ -537,7 +537,8 @@ websites:
   btc: false
   othercrypto: false
   exceptions:
-    text: Xsolla used to accept BTC & BCH, but as of 2019-04-10 stopped accepting it
+    text: Xsolla used to accept BTC & BCH, but as of 2019-04-10 stopped accepting
+      it
 - name: Yandex.Money
   url: https://money.yandex.ru
   img: yandexmoney.png

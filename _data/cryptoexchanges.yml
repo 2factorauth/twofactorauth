@@ -404,7 +404,8 @@ websites:
   othercrypto: true
   doc: https://support.cryptopia.co.nz/csm?id=kb_article&sys_id=48613b3cdb50338032a664a14a9619ba
   exceptions:
-    text: Cryptopia was hacked and repaid users with Cryptopia Loss Marker (CLM) token. This might result in bankruptcy. See docs link for details.
+    text: Cryptopia was hacked and repaid users with Cryptopia Loss Marker (CLM) token.
+      This might result in bankruptcy. See docs link for details.
 - name: DSX
   url: https://dsx.uk/
   img: dsx.png
@@ -440,7 +441,7 @@ websites:
   facebook: FaastCrypto
   bch: true
   btc: true
-  othercrypto: true  
+  othercrypto: true
   doc: https://medium.com/faast/bitcoin-cash-bch-now-supported-on-faast-3332c8e6f85f
 - name: FastX
   url: https://fastx.io
@@ -468,15 +469,6 @@ websites:
   btc: true
   othercrypto: false
   doc: https://support.gatehub.net/hc/en-us/articles/115004422789-Bitcoin-Cash-BCH-update
-- name: Gibraltar Blockchain Exchange
-  url: https://gbx.gi/
-  img: gbx.png
-  twitter: GibBlockEx
-  facebook: GibBlockEx
-  bch: true
-  btc: true
-  othercrypto: true
-  region: eu
 - name: GDAX
   url: https://www.gdax.com/
   img: gdax.png
@@ -496,6 +488,15 @@ websites:
   bch: true
   btc: false
   othercrypto: true
+- name: Gibraltar Blockchain Exchange
+  url: https://gbx.gi/
+  img: gbx.png
+  twitter: GibBlockEx
+  facebook: GibBlockEx
+  bch: true
+  btc: true
+  othercrypto: true
+  region: eu
 - name: Ginero
   url: https://ginero.io
   img: ginero.png

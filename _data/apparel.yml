@@ -148,12 +148,6 @@ websites:
   doc: https://clockworkcrypto.com/2018/05/30/soft-launch/
   keywords:
   - coinpayments.net
-- name: Combatant Gentlemen
-  url: https://combatgent.com
-  img: combatgent.png
-  bch: false
-  twitter: CombatGent
-  facebook: combatgent
 - name: CoinSpice Store
   url: https://store.coinspice.io/
   img: coinspicestore.png
@@ -163,6 +157,12 @@ websites:
   othercrypto: false
   keywords:
   - coinbase
+- name: Combatant Gentlemen
+  url: https://combatgent.com
+  img: combatgent.png
+  bch: false
+  twitter: CombatGent
+  facebook: combatgent
 - name: Crizzle's Buttons
   url: https://www.etsy.com/shop/CrizzleOnEtsy
   img: CrizzlesButtons.png
@@ -176,7 +176,8 @@ websites:
   state: WA
   city: Spokane
   exceptions:
-    text: "When ordering from the etsy shop, select 'other' as your payment method and send a message in regards as to how you wish to pay with crypto."
+    text: When ordering from the etsy shop, select 'other' as your payment method
+      and send a message in regards as to how you wish to pay with crypto.
 - name: Cryptartica
   url: https://cryptartica.com/
   img: cryptartica.png
@@ -339,7 +340,8 @@ websites:
   btc: false
   othercrypto: false
   exceptions:
-    text: Giacomo Cortes used to accept BTC, but as of 2019-03-21 stopped accepting it
+    text: Giacomo Cortes used to accept BTC, but as of 2019-03-21 stopped accepting
+      it
 - name: GORUCK
   url: https://www.goruck.com/
   img: goruck.png

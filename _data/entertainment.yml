@@ -135,7 +135,7 @@ websites:
   othercrypto: false
   doc: https://www.reddit.com/r/btc/comments/b72uh6/check_out_my_website_where_im_selling_songs_for/
   exceptions:
-    text: "Put in TXid to check database"
+    text: Put in TXid to check database
 - name: Google Play
   url: https://play.google.com
   img: googleplay.png
@@ -344,7 +344,8 @@ websites:
   - xsolla
   - skrill
   exceptions:
-    text: Twitch used to accept BTC & BCH, but as of 2019-03-23 stopped accepting it
+    text: Twitch used to accept BTC & BCH, but as of 2019-03-23 stopped accepting
+      it
 - name: Vimeo
   url: https://vimeo.com/
   img: vimeo.png

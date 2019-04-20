@@ -351,15 +351,6 @@ websites:
   keywords:
   - bitpay
   - bip70
-- name: Buywithcoins.online
-  url: https://www.buywithcoins.online/
-  img: buywithcoins.png
-  twitter: BuywithcoinsO
-  facebook: Buywithcoins-310810293063601
-  bch: true
-  btc: true
-  othercrypto: true
-  doc: https://www.buywithcoins.online/we-accept-crypto-currency-payment-method/
 - name: BTC Media Store
   url: https://store.btcmedia.org/
   img: btcmediastore.png
@@ -369,6 +360,15 @@ websites:
   keywords:
   - bitpay
   - bip70
+- name: Buywithcoins.online
+  url: https://www.buywithcoins.online/
+  img: buywithcoins.png
+  twitter: BuywithcoinsO
+  facebook: Buywithcoins-310810293063601
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.buywithcoins.online/we-accept-crypto-currency-payment-method/
 - name: Caseking.de
   url: https://www.caseking.de
   img: Caseking.png
@@ -727,17 +727,6 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-- name: GostBed
-  url: https://www.ghostbed.com/
-  img: ghostbed.png
-  twitter: theghostbed
-  facebook: ghostbed
-  bch: true
-  btc: true
-  othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
 - name: Ghost Gunner
   url: https://ghostgunner.net
   img: ghostrunner.png
@@ -752,6 +741,17 @@ websites:
   twitter: gilt
   img: gilt.png
   bch: false
+- name: GostBed
+  url: https://www.ghostbed.com/
+  img: ghostbed.png
+  twitter: theghostbed
+  facebook: ghostbed
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
 - name: GPIO Australia
   url: https://www.buyraspberrypi.com.au/
   img: gpioaustralia.png
@@ -1205,17 +1205,6 @@ websites:
   - headphones
   - wireless
   - exam
-- name: Möbelmarkt Shop
-  url: https://www.moebelmarkt-shop.de/
-  img: moebelmarktshop.png
-  bch: true
-  btc: true
-  othercrypto: false
-  region: eu
-  lang: de
-  keywords:
-  - bitpay
-  - bip70
 - name: My Digital Discount
   url: https://www.mydigitaldiscount.com/
   img: mydigitaldiscount.png
@@ -1225,6 +1214,17 @@ websites:
   btc: true
   othercrypto: false
   doc: https://www.mydigitaldiscount.com/bitpay
+  keywords:
+  - bitpay
+  - bip70
+- name: Möbelmarkt Shop
+  url: https://www.moebelmarkt-shop.de/
+  img: moebelmarktshop.png
+  bch: true
+  btc: true
+  othercrypto: false
+  region: eu
+  lang: de
   keywords:
   - bitpay
   - bip70
@@ -1618,7 +1618,8 @@ websites:
   btc: true
   othercrypto: true
   exceptions:
-    text: This is a drop shipper. The items sold might have a high markup over normal prices
+    text: This is a drop shipper. The items sold might have a high markup over normal
+      prices
   keywords:
   - coinpayments.net
 - name: Shire Soaps
@@ -1909,7 +1910,8 @@ websites:
   lang: es
   doc: https://local.google.com/place?id=16425660169615501579&use=posts&lpsid=6859890619787811776
   exceptions:
-    text: "Choose payment option online and wait for wallet address to be sent per e-mail."
+    text: Choose payment option online and wait for wallet address to be sent per
+      e-mail.
 - name: The Gamer's Hut
   url: https://shopgamerhut.com
   img: TheGamersHut.png
@@ -2074,15 +2076,6 @@ websites:
   bch: false
   twitter: zazzle
   facebook: zazzle
-- name: ZimbabweDollars.net
-  url: https://zimbabwedollars.net/
-  img: zimbabwedollars.png
-  bch: true
-  btc: true
-  othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
 - name: Zen Magnets
   url: https://zenmagnets.com/
   img: zenmagnets.png
@@ -2096,6 +2089,15 @@ websites:
   keywords:
   - bitpay
   - gocoin
+- name: ZimbabweDollars.net
+  url: https://zimbabwedollars.net/
+  img: zimbabwedollars.png
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
 - name: ZUMI
   url: https://zumi.com.au/
   img: zumi.png
