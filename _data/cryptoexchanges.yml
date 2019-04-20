@@ -700,11 +700,9 @@ websites:
   img: switchaindotcom.png
   twitter: switchaindotcom
   email_address: support@switchain.com
-  bch: false
+  bch: true
   btc: true
   othercrypto: true
-  exceptions:
-    text: Switchain used to accept BCH, but as of 2019-03-20 stopped accepting it
 - name: Tidex
   url: https://www.tidex.com
   img: tidex.png
