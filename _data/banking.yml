@@ -223,6 +223,16 @@ websites:
       img: cdcfcu.png
       tfa: No
 
+    - name: Ceska Sporitelna
+      url: https://www.csas.cz/en/
+      img: csas-cz.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.csas.cz/cs/mobilni-aplikace/george-klic
+      exceptions:
+       text: "Software implementation requires use of George Klic app."
+
     - name: Chase
       url: https://www.chase.com/
       img: chase.png
