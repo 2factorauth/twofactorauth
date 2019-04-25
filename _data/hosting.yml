@@ -107,15 +107,6 @@ websites:
   bch: false
   twitter: bluehost
   facebook: bluehost
-- name: BuyVM
-  url: https://www.buyvm.net/
-  img: buyvm.png
-  doc: https://twitter.com/FrantechCA/status/942115712239153152
-  btc: true
-  bch: true
-  email_address: admin@frantech.ca
-  othercrypto: true
-  twitter: FrantechCA
 - name: BudgetNode
   url: https://budgetnode.com/
   img: budgetnode.png
@@ -127,6 +118,15 @@ websites:
   keywords:
   - bitpay
   - bip70
+- name: BuyVM
+  url: https://www.buyvm.net/
+  img: buyvm.png
+  doc: https://twitter.com/FrantechCA/status/942115712239153152
+  btc: true
+  bch: true
+  email_address: admin@frantech.ca
+  othercrypto: true
+  twitter: FrantechCA
 - name: Bytesized Hosting
   url: https://bytesized-hosting.com/
   img: bytesizedhosting.png
@@ -353,16 +353,6 @@ websites:
   facebook: hetzner.de
   img: hetzner.png
   bch: false
-- name: Host-Unlimited.de
-  url: https://host-unlimited.de/
-  img: hostunlimited.png
-  twitter: host_unlimited
-  facebook: HostUnlimited.de
-  bch: true
-  btc: true
-  othercrypto: true
-  keywords:
-  - coinbase
 - name: Host Hatch
   url: https://hosthatch.com/
   img: hosthatch.png
@@ -381,6 +371,16 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Host-Unlimited.de
+  url: https://host-unlimited.de/
+  img: hostunlimited.png
+  twitter: host_unlimited
+  facebook: HostUnlimited.de
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinbase
 - name: Host1.no
   url: https://host1.no
   img: host1.png
@@ -650,7 +650,7 @@ websites:
   twitter: neocities
   facebook: neocities
   exceptions:
-    text: "Send verification screenshot of the transaction to their support email"
+    text: Send verification screenshot of the transaction to their support email
 - name: Netcup
   url: https://netcup.eu/
   img: netcup.png

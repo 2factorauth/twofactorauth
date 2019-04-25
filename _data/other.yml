@@ -181,14 +181,15 @@ websites:
 - name: Office 365 (with Microsoft Account)
   url: https://www.office.com
   img: office365.png
-  bch: false
-  btc: false
+  bch: true
+  btc: true
   othercrypto: false
   twitter: Office365
   facebook: Office365
-  exceptions:
-    text: Office 365 used to accept BTC & BCH, but as of 2018-07-07 stopped accepting
-      it
+  doc: https://support.microsoft.com/help/13942/
+  keywords:
+  - bitpay
+  - bip70
 - name: Onshape
   url: https://www.onshape.com/
   img: onshape.png
