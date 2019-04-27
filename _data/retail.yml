@@ -1459,10 +1459,12 @@ websites:
   img: plastic2print.png
   email_address: info@plastic2print.com
   bch: false
-  btc: true
+  btc: false
   othercrypto: false
   keywords:
   - mollie
+  exceptions:
+    text: plastic2print used to accept BTC, but as of 2019-05-01 stopped accepting it
 - name: powercube.dk
   url: https://powercube.dk/
   img: powercubedk.png
@@ -1825,13 +1827,14 @@ websites:
   img: surfnow.png
   twitter: surfnow_eu
   facebook: surfnoweu
-  bch: true
-  btc: true
-  othercrypto: true
+  bch: false
+  btc: false
+  othercrypto: false
   keywords:
   - mollie
-  - coinpayments.net
   doc: https://www.surfnow.eu/pages/payment-option
+  exceptions:
+    text: Surfnow used to accept BTC, but as of 2019-05-01 stopped accepting it
 - name: Svedana Box
   url: https://www.svedana-box.net/
   email_address: info@svedana-box.net

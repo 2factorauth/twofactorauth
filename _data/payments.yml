@@ -353,8 +353,10 @@ websites:
   twitter: molliepayments
   facebook: molliehq
   bch: false
-  btc: true
+  btc: false
   othercrypto: false
+  exceptions:
+    text: Mollie used to accept BTC, but as of 2019-05-01 stopped accepting it
 - name: moneybutton.com
   url: https://www.moneybutton.com/
   img: moneybutton.png
