@@ -14,7 +14,7 @@ websites:
       tfa: No
 
     - name: Crunchyroll
-      url: http://www.crunchyroll.com/
+      url: https://www.crunchyroll.com/
       img: crunchyroll.png
       tfa: No
       twitter: Crunchyroll
@@ -45,7 +45,7 @@ websites:
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Hotstar
-      url: http://www.hotstar.com/
+      url: https://www.hotstar.com/
       twitter: hotstar_helps
       facebook: hotstar
       img: hotstar.png
@@ -185,7 +185,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://blog.twitch.tv/2015/11/two-factor-authentication-now-available-on-your-twitch-account/
+      doc: https://blog.twitch.tv/two-factor-authentication-now-available-on-your-twitch-account-b03300862ba7
       exceptions:
           text: "To activate two factor authentication, you must provide a mobile phone number. Software authentication requires the Authy app."
 
