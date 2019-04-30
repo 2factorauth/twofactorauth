@@ -223,6 +223,16 @@ websites:
       img: cdcfcu.png
       tfa: No
 
+    - name: Ceska Sporitelna
+      url: https://www.csas.cz/en/
+      img: csas-cz.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.csas.cz/cs/mobilni-aplikace/george-klic
+      exceptions:
+       text: "Software implementation requires use of George Klic app."
+
     - name: Chase
       url: https://www.chase.com/
       img: chase.png
@@ -433,6 +443,14 @@ websites:
       img: fifththird.png
       tfa: No
 
+    - name: Fio banka
+      url: https://www.fio.cz
+      twitter: Fio_banka
+      facebook: Fiobanka
+      img: fio-cz.png
+      tfa: No
+      lang: cz
+      
     - name: First Community Credit Union
       url: https://www.firstcommunity.com/
       img: first_community_cu.png
@@ -649,6 +667,14 @@ websites:
       img: monzobank.png
       tfa: No
 
+    - name: Mountain America Credit Union
+      url: https://www.macu.com
+      img: macu.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+
     - name: N26
       url: https://n26.com
       img: n26.png
@@ -739,6 +765,14 @@ websites:
       twitter: nubankbrasil
       facebook: nubankbrasil
       lang: pt
+
+    - name: Openbank
+      url: https://www.openbank.es
+      img: openbank.png
+      tfa: No
+      twitter: openbank_es
+      facebook: openbank.es
+      lang: es
 
     - name: Optum Bank
       url: https://www.optumbank.com
