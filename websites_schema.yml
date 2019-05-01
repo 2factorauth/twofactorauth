@@ -19,22 +19,10 @@ mapping:
             type: str
             pattern: /^[a-z0-9_\-\+]+\.png/
             required: yes
-          "tfa":
+          "lightning":
             type: bool
             required: yes
-          "software":
-            type: bool
-            pattern: /true/
-          "hardware":
-            type: bool
-            pattern: /true/
-          "sms":
-            type: bool
-            pattern: /true/
-          "phone":
-            type: bool
-            pattern: /true/
-          "email":
+          "other":
             type: bool
             pattern: /true/
           "exceptions":
@@ -43,19 +31,26 @@ mapping:
               "text":
                 type: str
                 required: yes
-          "doc":
-            type: str
           "twitter":
             type: str
             pattern: /(\w){1,15}$/
           "facebook":
             type: str
             pattern: /(\w){1,50}$/
-          "email_address":
+          "instagram":
             type: str
-            pattern: /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
-          "status":
+            pattern: /(\w){1,50}$/
+          "linkedin":
             type: str
+            pattern: /(\w){1,50}$/
             pattern: /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/
-          "lang":
+          "country":
+            type: str
+          "summary"
+            type: map
+            mapping:
+                "text"
+                type str
+            required: no
+          "keywords"
             type: str

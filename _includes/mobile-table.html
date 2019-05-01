@@ -25,14 +25,14 @@
            target="_blank"><i class="twitter icon"></i> {{page.link_progress_mobile}}</a>
       </div>
     </div>
-    {% elsif website.tfa %}
+    {% elsif website.lightning %}
     <div class="main positive">
       {% include row-title.html section=section_id website=website type='mobile' %}
       <div class="methods">
         {% if website.hardware %}<p><i class="checkmark small icon" title="Hardware"></i> Hardware</p>{% endif %}
         {% if website.software %}<p><i class="checkmark small icon" title="Software"></i> Software</p>{% endif %}
-        {% if website.sms %}<p><i class="checkmark small icon" title="SMS"></i> SMS</p>{% endif %}
-        {% if website.phone %}<p><i class="checkmark small icon" title="Phone"></i> Phone</p>{% endif %}
+        {% if website.other %}<p><i class="checkmark small icon" title="Other Crypto"></i> Other Crypto</p>{% endif %}
+        <!-- {% if website.phone %}<p><i class="checkmark small icon" title="Phone"></i> Phone</p>{% endif %} -->
         {% if website.email %}<p><i class="checkmark small icon" title="Email"></i> Email</p>{% endif %}
       </div>
       {% if website.doc %}

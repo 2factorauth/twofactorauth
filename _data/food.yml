@@ -1,65 +1,48 @@
 websites:
-    - name: Deliveroo
-      url: https://deliveroo.com/
-      img: deliveroo.png
-      tfa: No
-      twitter: Deliveroo
-      facebook: Deliveroo
-
-    - name: Dutch Bros
-      url: https://dutchbros.com/
-      img: dutchbros.png
-      tfa: No
-      twitter: DutchBros
-      facebook: dutchbros
-
-    - name: Grubhub
-      url: https://www.grubhub.com/
-      img: grubhub.png
-      tfa: No
-      facebook: grubhub
-      twitter: grubhub
-
-    - name: Max
-      url: https://max.se/
-      img: max.png
-      tfa: No
-      facebook: maxburgers
-      twitter: maxburgers_se
-      lang: sv
-
-    - name: Seamless
-      url: https://www.seamless.com/
-      img: seamless.png
-      tfa: No
-      facebook: seamless
-      twitter: seamless
-
-    - name: Starbucks
-      url: https://www.starbucks.com/
-      img: starbucks.png
-      tfa: No
-      twitter: Starbucks
-      facebook: Starbucks
-
-    - name: Taco Bell
-      url: https://www.tacobell.com
-      img: tacobell.png
-      tfa: No
-      twitter: tacobell
-      facebook: tacobell
+  - name: LN.PIZZA
+    url: https://ln.pizza/
+    lightning: Yes #TODO: Don't need this, should be by default
+    other: No
+    summary:
+      text: Order Dominos Pizza in the US via Lightning Network
+    # keywords: pizza order dominos
+    twitter: fold_app
+    instagram: foldapp
+    linkedin: card-for-coin
+    facebook: FoldBitcoin
+    # doc: https://ln.pizza/about
+    country: US #TODO Add support for country codes
+    node:
+      key: 02816caed43171d3c9854e3b0ab2cf0c42be086ff1bd4005acc2a5f7db70d83774
+      uri: mainnet-lnd.ln.pizza:9735
+    
+  - name: Energy Kitchen
+    url: https://shop.energy-kitchen.ch/
+    img: energy_kitchen.png
+    lightning: Yes
+    other: No
+    # summary: 
+    #   text: Buy delicious food and drinks and pay with Bitcoin over the Lightning Network
+    facebook: barfoo
+    # doc: https://shop.energy-kitchen.ch/#/shop/help
   
-    - name: Wolt
-      url: https://wolt.com/
-      img: wolt.png
-      tfa: No
-      twitter: woltapp
-      facebook: woltapp
-      email_address: support@wolt.com
- 
-    - name: Zomato
-      url: https://www.zomato.com
-      img: zomato.png
-      tfa: No
-      twitter: Zomato
-      facebook: zomato
+  - name:  Classic Crust Pizza
+    url: https://www.classiccrustaz.com/
+    img: crust_pizza.png
+    lightning: Yes
+    other: No
+    summary:
+      text: Pizzeria in Phoenix, USA (payments in store).
+    facebook: ClassicCrustPizza
+    instagram: classiccrustaz
+    # doc: https://www.classiccrustaz.com/
+  
+  - name:  KaffeBox
+    url: https://www.kaffebox.no/product/kaffebox-gift-subscription/
+    img:  kaffebox.png 
+    lightning: Yes
+    other: No
+    summary:
+      text: Scandinavian roasted specialty coffee shipping worldwide
+    # doc: https://www.kaffebox.no/about/
+    

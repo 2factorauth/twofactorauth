@@ -6,13 +6,13 @@ require 'kwalify'
 require 'diffy'
 @output = 0
 
-# YAML tags related to TFA
-@tfa_tags = {
-  # YAML tags for TFA Yes
-  true => %w[email hardware software sms phone doc],
-  # YAML tags for TFA No
-  false => %w[status twitter facebook email_address lang]
-}.freeze
+# YAML tags related to lightning
+# @lightning_tags = {
+#   # YAML tags for lightning Yes
+#   true => %w[doc other,
+#   # YAML tags for lightning No
+#   false => %w[status twitter facebook email_address lang]
+# }.freeze
 
 # Image max size (in bytes)
 @img_max_size = 2500
@@ -34,6 +34,9 @@ def error(msg)
 end
 
 def test_img(img, name, imgs)
+
+  # Fallback img if not presented
+  
   # Exception if image file not found
   raise "#{name} image not found." unless File.exist?(img)
 
@@ -102,12 +105,12 @@ begin
     imgs = Dir["img/#{section['id']}/*"]
 
     websites.each do |website|
-      @tfa_tags[!website['tfa']].each do |tag|
-        next if website[tag].nil?
+      # @lightning_tags[!website['lightning']].each do |tag|
+      #   next if website[tag].nil?
 
-        error("\'#{tag}\' should NOT be "\
-            "present when tfa: #{website['tfa'] ? 'true' : 'false'}.")
-      end
+      #   error("\'#{tag}\' should NOT be "\
+      #       "present when lightning: #{website['lightning'] ? 'true' : 'false'}.")
+      # end
       test_img("img/#{section['id']}/#{website['img']}", website['name'],
                imgs)
     end

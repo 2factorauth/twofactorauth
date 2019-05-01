@@ -118,47 +118,47 @@ websites:
   - name: Site Name
     url: https://www.site.com/
     img: site.png
-    tfa: Yes
-    sms: Yes
+    lightning: Yes
+    other: Yes
     email: Yes
     phone: Yes
     software: Yes
     hardware: Yes
-    doc: <link to site TFA documentation>
+    doc: <link to site lightning documentation>
 ```
 
-The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
+The fields `name:`, `url:`, `img:`, `lightning:` are required for all entries.
 
-#### Adding a site that *supports* TFA
+#### Adding a site that *supports* lightning
 
-If a site does provide TFA, it is strongly recommended that you add the `doc:`
+If a site does provide lightning, it is strongly recommended that you add the `doc:`
 field where public documentation is available. Other fields should be included
 if the website supports them. Any services that are not supported can be excluded.
-Sites supporting TFA should not have a `twitter`, `facebook` or `email_address` field.
+Sites supporting lightning should not have a `twitter`, `facebook` or `email_address` field.
 
-The following is an example of a website that *supports* TFA:
+The following is an example of a website that *supports* lightning:
 
 ```yml
     - name: YouTube
       url: https://www.youtube.com/
       img: youtube.png
-      tfa: Yes
-      sms: Yes
+      lightning: Yes
+      other: Yes
       software: Yes
       phone: Yes
       hardware: Yes
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 ```
 
-#### Adding a site that *does not* support TFA
+#### Adding a site that *does not* support lightning
 
-If a site does not provide TFA, the `twitter:` field should be included if the site uses
+If a site does not provide lightning, the `twitter:` field should be included if the site uses
 Twitter. Facebook can also be included using the `facebook` field, as well as Email using
 the `email_address` field. If the website does not use the English language, the `lang:`
-field should also be included. The fields `sms:`, `email:`, `phone:`, `software:` and
+field should also be included. The fields `other:`, `email:`, `phone:`, `software:` and
 `hardware:` can be completely removed.
 
-The following is an example of a website that *does not* support TFA:
+The following is an example of a website that *does not* support lightning:
 
 ```yml
     - name: Netflix
@@ -167,7 +167,7 @@ The following is an example of a website that *does not* support TFA:
       facebook: netflix
       email_address: example@netflix.com (Only if available and monitored)
       img: netflix.png
-      tfa: No
+      lightning: No
       lang: <ISO 639-1 language code> (Only for non-English websites)
 ```
 
@@ -175,7 +175,7 @@ The `lang:` field is only used for non-English websites. The language codes shou
 
 ### Exceptions & Restrictions
 
-If a site doesn't support TFA in certain countries, you can note this on the
+If a site doesn't support lightning in certain countries, you can note this on the
 website. There are 4 ways to customize how it is displayed:
 
 1. A default message acknowledging restrictions will be used with the following
@@ -185,10 +185,10 @@ website. There are 4 ways to customize how it is displayed:
     - name: Site Name
       url: https://www.site.com/
       img: site.png
-      tfa: Yes
-      sms: Yes
+      lightning: Yes
+      other: Yes
       exceptions: Yes
-      doc: <link to site TFA documentation>
+      doc: <link to site lightning documentation>
    ```
 2. The message can be replaced with a custom set of words:
 
@@ -196,11 +196,11 @@ website. There are 4 ways to customize how it is displayed:
     - name: Site Name
       url: https://www.site.com/
       img: site.png
-      tfa: Yes
-      sms: Yes
+      lightning: Yes
+      other: Yes
       exceptions:
           text: "Specific text goes here."
-      doc: <link to site TFA documentation>
+      doc: <link to site lightning documentation>
    ```
 3. The icon can be made into a link in which more details can be revealed such
    as country specific info and anything else.
@@ -209,11 +209,11 @@ website. There are 4 ways to customize how it is displayed:
     - name: Site Name
       url: https://www.site.com/
       img: site.png
-      tfa: Yes
-      sms: Yes
+      lightning: Yes
+      other: Yes
       exceptions:
           link: Yes
-      doc: <link to site TFA documentation>
+      doc: <link to site lightning documentation>
    ```
 4. 2 and 3 can be combined into:
 
@@ -221,12 +221,12 @@ website. There are 4 ways to customize how it is displayed:
     - name: Site Name
       url: https://www.site.com/
       img: site.png
-      tfa: Yes
-      sms: Yes
+      lightning: Yes
+      other: Yes
       exceptions:
           link: Yes
           text: "Specific text can go here as well."
-      doc: <link to site TFA documentation>
+      doc: <link to site lightning documentation>
    ```
 
 ### Pro Tips
@@ -238,14 +238,14 @@ website. There are 4 ways to customize how it is displayed:
   new sites alphabetically and that your site chunk follows the same order as the
   example above.
 
-- If a site supports TFA, their Twitter and Facebook handles as well as their email address
+- If a site supports lightning, their Twitter and Facebook handles as well as their email address
   are not needed and can be left out for cleanliness.
 
-- If a site does not have TFA but there is documentation that they are adding
+- If a site does not have lightning but there is documentation that they are adding
   it, then use:
 
   ```yml
-  tfa: No
+  lightning: No
   status: <url to documentation>
   ```
 

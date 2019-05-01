@@ -1,0 +1,20 @@
+
+{% if website.twitter %}
+<a class="ui twitter" href="https://twitter.com/{{website.twitter|cgi_escape}}" target="_blank"><i 
+    class="twitter large icon"></i></a>
+{% endif %}
+
+{% if website.facebook %}
+<a class="ui facebook" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i
+    class="facebook large icon"></i></a>
+{% endif %}
+
+{% if website.instagram %}
+<a class="ui instagram" href="https://www.instagram.com/{{website.instagram}}/" target="_blank"><i
+    class="instagram large brown icon"></i></a>
+{% endif %}
+
+{% if website.linkedin %}
+<a class="ui linkedin" href="https://www.linkedin.com/company/{{website.linkedin}}/" target="_blank"><i
+    class="linkedin large icon"></i></a>
+{% endif %}

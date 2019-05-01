@@ -1,16 +1,20 @@
 {%- assign website = include.website -%}
+{% if website.img %}
 {%- assign img_path = '/img/' | append: include.section | append: '/' | append: website.img -%}
+{% else %}
+{%- assign img_path = '/img/logo.png' -%}
+{% endif %}
 <div class="title">
-  <div class="keywords" style="display:none;">{{ website.name }}&nbsp;{{ website.url }}</div>
+  <div class="keywords" style="display:none;">{{ website.name }}&nbsp;{{ website.url }}&nbsp;{{ website.keywords }}&nbsp;{{ website.summary.text }} &nbsp;</div>
   <noscript>
     <img src="{{ img_path }}" class="icon" alt="{{ website.name }}">
   </noscript>
   <img src="/img/placeholder.png" data-src="{{ img_path }}" class="icon" alt="{{ website.name }}">
-  <a href="{{ website.url }}" class="name">{{ website.name }}</a>
-  {%- include exception.html website=website -%}
-  {%- if website.status and include.type == 'mobile' -%}
+  <a href="{{ website.url }}" target="_blank" class="name">{{ website.name }}</a>
+  {%- include summary.html website=website -%}
+  <!-- {%- if website.status and include.type == 'mobile' -%}
     <a href="{{ website.status }}" target="_blank">
       <i class="external url link large icon"></i>
     </a>
-  {%- endif -%}
+  {%- endif -%} -->
 </div>
