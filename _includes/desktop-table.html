@@ -7,18 +7,18 @@
     <tr>
       <th class="single line three wide"><h3>{{ section_title }}</h3></th>
       <th class="two wide">About</th>
-      <th class="two wide">Other Supported Crypto</th>
+      <th class="two wide">Supports</th>
+      <th class="two wide">Others</th>
     </tr>
     </thead>
     <tbody class="jets-content">
-    {% for website in section_file.websites %} 
+    {% for website in section_file.websites %}
     <tr class="desktop-tr">
       <td class="main positive">
         {% include row-title.html section=section_id website=website type='desktop' %}
       </td>
       {% if website.summary %}
       <td class="positive icon">
-        
         {% capture html %}
         <div class='header'>
             Summary
@@ -41,6 +41,17 @@
       </td>
       {% endif %}
       <td class="positive icon">
+        {% if website.bitcoin %}
+        <img src="/img/bitcoin.png" width="40" height="40" title="Supports Bitcoin Payments">
+        {% endif %}
+        {% if website.lightning %}
+        <img src="/img/logo.png" width="40" height="40" title="Supports Lightning Payments">
+          <!-- {% if website.node.uri %}
+          <a href="https://1ml.com/node/{{website.node.key}}" target="_blank">{{website.node.key}}@{{website.node.uri}}</a>
+          {% endif %} -->
+        {% endif %}
+      </td>
+      <td class="positive icon">
         {% if website.other %}
         {% capture html %}
         <div class='header'>
@@ -53,7 +64,7 @@
         </div>
         {% endcapture %}
         <span class="popup exception" data-position="bottom center" data-html="{{ html | strip_newlines }}">
-          <i class="checkmark large icon" title="Other Supported Crypto"></i>
+          <i class="checkmark large icon" title="Other Supported Payments"></i>
         </span>
         {% else %}
         <i class="x red large icon" title="Other Supported Crypto"></i>
@@ -63,7 +74,9 @@
     {% if website.node %}
     <tr>
       <td class="single line wide" colspan="3">
-        <b>Channel: </b><a href="https://1ml.com/node/{{website.node.key}}" target="_blank">{{website.node.key}}@{{website.node.uri}}</a>
+        <b>Channel:</b><a href="https://1ml.com/node/{{website.node.key}}" target="_blank"> 
+          {{website.node.key}}@{{website.node.uri}}</a><input id="copyText" hidden value={{website.node.key}}@{{website.node.uri}}</input>
+        <button class="button" onclick="copyText();"><img src="/img/copy.png" width="20" height="20" title="Copy Node Key"></button>
       </td>
     </tr>
     <!-- <tr>
