@@ -169,7 +169,7 @@ begin
 
   @output -= @warning
 
-  exit 1 if @output.positive? > 0
+  exit 1 if @output.positive?
 rescue Psych::SyntaxError => e
   puts "<--------- ERROR in a YAML file --------->\n"
   puts e
@@ -178,7 +178,7 @@ rescue StandardError => e
   puts e
   exit 1
 else
-  if @warning.positive? > 0
+  if @warning.positive?
     puts "<--------- No errors found! --------->\n"
     puts "<--------- #{@warning} warning(s) reported! --------->\n"
   else
