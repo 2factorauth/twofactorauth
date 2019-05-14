@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 # Dependencies are bundled with the github-pages gem
@@ -14,6 +16,7 @@ group :test do
   gem 'fastimage'
   gem 'highline'
   gem 'html-proofer'
+  gem 'jsonlint'
   gem 'kwalify'
   gem 'rake'
   gem 'rubocop'

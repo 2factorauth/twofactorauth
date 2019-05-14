@@ -1,9 +1,12 @@
+# frozen_string_literal: true
+
 Rake.add_rakelib 'scripts/tasks'
 require 'rubocop/rake_task'
 require 'jekyll'
 require 'safe_yaml/load'
+require 'jsonlint/rake_task'
 
-task default: %w[verify rubocop proof]
+task default: %w[verify rubocop proof jsonlint]
 task external: %w[verify rubocop proof_external]
 
 task :build do
@@ -29,6 +32,10 @@ task proof_external: 'build' do
     http_status_ignore: [0, 301, 302, 403, 503],
     hydra: { max_concurrency: 20 }
   )
+end
+
+JsonLint::RakeTask.new do |t|
+  t.paths = %w[_site/data.json _site/stats.json]
 end
 
 task :verify do
