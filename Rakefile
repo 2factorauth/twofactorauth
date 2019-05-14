@@ -7,7 +7,7 @@ require 'safe_yaml/load'
 require 'jsonlint/rake_task'
 
 task default: %w[verify rubocop proof jsonlint]
-task external: %w[verify rubocop proof_external jsonlint]
+task external: %w[verify rubocop proof_external]
 
 task :build do
   config = Jekyll.configuration(
@@ -35,7 +35,7 @@ task proof_external: 'build' do
 end
 
 JsonLint::RakeTask.new do |t|
-  t.paths = %w[_site/data.json _site/stats.json _site/sections.json]
+  t.paths = %w[_site/data.json _site/stats.json]
 end
 
 task :verify do
