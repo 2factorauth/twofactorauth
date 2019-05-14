@@ -6,7 +6,7 @@ require 'jekyll'
 require 'safe_yaml/load'
 require 'jsonlint/rake_task'
 
-task default: %w[verify rubocop proof]
+task default: %w[verify rubocop proof jsonlint]
 task external: %w[verify rubocop proof_external jsonlint]
 
 task :build do
