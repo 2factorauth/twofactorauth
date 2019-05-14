@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 namespace :docker do
   desc 'build docker images'
   task :build do

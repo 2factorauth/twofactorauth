@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # rubocop:disable BlockLength
 namespace :add do
   require 'net/http'
