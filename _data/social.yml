@@ -5,6 +5,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      exceptions:
+        text: "A verified phone number is required for the use of two-factor authentication software."
       doc: https://support.500px.com/hc/en-us/articles/205115877-How-do-I-setup-Two-Factor-Authentication
 
     - name: about.me
