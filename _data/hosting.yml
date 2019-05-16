@@ -13,13 +13,13 @@ websites:
       software: Yes
       doc: https://www.a2hosting.com/kb/a2-hosting-customer-portal/account-management/enabling-two-factor-authentication-for-your-a2-hosting-account
 
-    - name: Acquia 
+    - name: Acquia
       url: https://www.acquia.com
       img: acquia.png
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://docs.acquia.com/acquia-cloud/access/signin/ 
+      doc: https://docs.acquia.com/acquia-cloud/access/signin/
 
     - name: ARP Networks
       url: https://arpnetworks.com/
@@ -97,6 +97,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.cyon.ch/support/a/225/wie-aktiviere-ich-die-zwei-schritt-verifizierung
+
+    - name: DataPacket
+      url: https://datapacket.com
+      img: datapacket.png
+      tfa: Yes
+      software: Yes
+      doc: https://changelog.datapacket.com/two-factor-authentication-101352
 
     - name: Dreamhost
       url: https://dreamhost.com
@@ -509,7 +516,7 @@ websites:
       tfa: No
       twitter: weebly
       facebook: weebly
-      
+
     - name: Wix
       url: https://www.wix.com/
       twitter: WixHelp
