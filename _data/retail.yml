@@ -132,8 +132,10 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      exceptions:
+        text: "Software implementation requires use of the eBay app."
 
-    - name: ebay Kleinanzeigen
+- name: ebay Kleinanzeigen
       url: https://www.ebay-kleinanzeigen.de
       twitter: eBay_KA
       facebook: eBayKleinanzeigen
