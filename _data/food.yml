@@ -296,12 +296,11 @@ websites:
   img: heathotsauce.png
   twitter: heathotsauce
   facebook: HeatHotSauceShop
-  bch: true
-  btc: true
+  bch: false
+  btc: false
   othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
+  exceptions:
+    text: Heat Hot Sauce Shop used to accept BTC & BCH, but as of 2019-05-06 stopped accepting it
 - name: Heirloom & Perennial
   url: https://www.foodforests.eu/
   img: heirloomperennial.png
