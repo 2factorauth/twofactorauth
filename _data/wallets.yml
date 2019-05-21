@@ -195,14 +195,15 @@ websites:
   btc: true
   doc: https://blog.jaxx.io/update-bch-jaxx/
 - name: KeepKey
-  url: https://www.keepkey.com/
+  url: https://shapeshift.io/keepkey/
   img: keepkey.png
   bch: true
   btc: true
   othercrypto: true
-  doc: https://www.keepkey.com/2017/07/31/bitcoin-cash-keepkey/
-  exceptions:
-    text: Wallet currently in beta testing.
+  doc: https://keepkey.zendesk.com/hc/en-us/articles/360003047479
+  keywords:
+  - bitpay
+  - bip70
 - name: Keoken
   url: https://www.keoken.io/
   img: keoken.png

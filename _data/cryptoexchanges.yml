@@ -370,6 +370,14 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Coinsuper
+  url: https://www.coinsuper.com/
+  img: coinsuper.png
+  twitter: Coinsuper_OFCL
+  facebook: Coinsuper-2022907647988954
+  bch: true
+  btc: true
+  othercrypto: true
 - name: CoinSwitch
   url: https://coinswitch.co/
   img: coinswitch.png
@@ -404,16 +412,6 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.cryptofacilities.com/cryptocurrency-news/bch-usd-futures/
-- name: Cryptopia
-  url: https://www.cryptopia.co.nz/
-  img: cryptopia.png
-  bch: true
-  btc: true
-  othercrypto: true
-  doc: https://support.cryptopia.co.nz/csm?id=kb_article&sys_id=48613b3cdb50338032a664a14a9619ba
-  exceptions:
-    text: Cryptopia was hacked and repaid users with Cryptopia Loss Marker (CLM) token.
-      This might result in bankruptcy. See docs link for details.
 - name: DSX
   url: https://dsx.uk/
   img: dsx.png
@@ -584,6 +582,14 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Local.bitcoin.com
+  url: https://local.bitcoin.com/
+  img: localbitcoincom.png
+  twitter: bitcoincom
+  facebook: buy.bitcoin.news
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Lykke
   url: https://www.lykke.com/
   img: lykke.png

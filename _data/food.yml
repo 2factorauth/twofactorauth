@@ -280,6 +280,17 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: FYM Hot Sauce
+  url: https://fymhotsauce.rocks/
+  img: fymhotsauce.png
+  twitter: fymhotsauce
+  facebook: fymhotsauce
+  email_address: dane@fymhotsauce.com
+  bch: true
+  btc: false
+  othercrypto: true
+  keywords:
+  - coinbase
 - name: Hawaiian Kombucha
   url: https://www.hawaiiankombucha.jp
   img: HawaiianKombucha.png
@@ -296,12 +307,11 @@ websites:
   img: heathotsauce.png
   twitter: heathotsauce
   facebook: HeatHotSauceShop
-  bch: true
-  btc: true
+  bch: false
+  btc: false
   othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
+  exceptions:
+    text: Heat Hot Sauce Shop used to accept BTC & BCH, but as of 2019-05-06 stopped accepting it
 - name: Heirloom & Perennial
   url: https://www.foodforests.eu/
   img: heirloomperennial.png
