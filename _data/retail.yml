@@ -44,12 +44,11 @@ websites:
       img: apple.png
       tfa: Yes
       sms: Yes
+      phone: Yes
       software: Yes
       hardware: Yes
       otp: Yes
-      exceptions:
-          text: "See http://support.apple.com/kb/HT5593 for a list of supported SMS carriers."
-      doc: http://support.apple.com/kb/ht5570
+      doc: https://support.apple.com/en-us/HT204915
 
     - name: Arcaplanet
       url: https://www.arcaplanet.it/
@@ -98,7 +97,7 @@ websites:
       url: https://www.comixology.com/
       img: comixology.png
       tfa: No
-      twitter: comixology
+      twitter: comiXology
 
     - name: Costco
       url: https://www.costco.com
@@ -136,6 +135,19 @@ websites:
       img: ebay.png
       tfa: Yes
       sms: Yes
+      software: Yes
+      exceptions:
+        text: "Software implementation requires use of the eBay app."
+      doc: https://community.ebay.com/t5/Announcements/eBay-launches-a-new-2-step-verification-method-to-increase/ba-p/29818464
+
+    - name: ebay Kleinanzeigen
+      url: https://www.ebay-kleinanzeigen.de
+      twitter: eBay_KA
+      facebook: eBayKleinanzeigen
+      email_address: service@ebay-kleinanzeigen.de
+      img: ebay-kleinanzeigen.png
+      tfa: No
+      lang: de
 
     - name: ePRICE
       url: https://www.eprice.it/
@@ -156,7 +168,7 @@ websites:
 
     - name: Everlane
       url: https://www.everlane.com/
-      twitter: everlane
+      twitter: Everlane
       img: everlane.png
       tfa: No
 
@@ -182,7 +194,7 @@ websites:
 
     - name: Gilt
       url: https://www.gilt.com
-      twitter: gilt
+      twitter: Gilt
       img: gilt.png
       tfa: No
 
@@ -259,7 +271,7 @@ websites:
 
     - name: Macy's
       url: https://www.macys.com/
-      twitter: macys
+      twitter: Macys
       img: macys.png
       tfa: No
 
@@ -345,7 +357,8 @@ websites:
       url: https://www.sierratradingpost.com
       img: sierratradingpost.png
       tfa: No
-      twitter: Sierratp
+      email_address: customerservice@sierra.com
+      twitter: sierraofficial
       facebook: sierratradingpost
 
     - name: Snapdeal
@@ -356,6 +369,13 @@ websites:
       facebook: Snapdeal
       email_address: help@snapdeal.com
 
+    - name: speedcube.com.au
+      url: https://www.speedcube.com.au/
+      img: speedcubecomau.png
+      tfa: No
+      twitter: speedcubecomau
+      facebook: speedcubecomau
+
     - name: Stack Social
       url: https://stacksocial.com
       twitter: StackSocial
@@ -364,26 +384,35 @@ websites:
 
     - name: Target
       url: https://www.target.com/
-      twitter: target
+      twitter: Target
       img: target.png
       tfa: No
 
+    - name: Tokopedia
+      url: https://www.tokopedia.com/
+      img: tokopedia.png
+      tfa: Yes
+      software: Yes
+      phone: Yes
+      sms: Yes
+      doc: https://www.tokopedia.com/panduan-keamanan/fitur-keamanan-tambahan/
+
     - name: Trade Me
       url: https://www.trademe.co.nz
-      twitter: trademe
+      twitter: TradeMe
       facebook: TradeMe
       img: trademe.png
       tfa: No
 
     - name: Walgreens
       url: https://www.walgreens.com
-      twitter: walgreens
+      twitter: Walgreens
       img: walgreens.png
       tfa: No
 
     - name: Walmart
       url: https://www.walmart.com/
-      twitter: walmartlabs
+      twitter: walmarthelp
       img: walmart.png
       tfa: No
 
@@ -427,4 +456,3 @@ websites:
       tfa: No
       twitter: zooplusDE
       facebook: zooplusde
-

@@ -1,11 +1,4 @@
 websites:
-    - name: Air VPN
-      url: https://airvpn.org/
-      img: airvpn.png
-      tfa: No
-      twitter: airvpn
-      facebook: airvpn.org
-
     - name: AVG
       url: https://www.avg.com
       img: avg.png
@@ -27,17 +20,12 @@ websites:
       software: Yes
       doc: https://dnt.abine.com/#help/faq/faq-enabletwoFactor
 
-    - name: BolehVPN
-      url: https://www.bolehvpn.net/
-      img: bolehvpn.png
-      tfa: No
-      twitter: bolehvpn
-
     - name: Boxcryptor
       url: https://www.boxcryptor.com
       img: boxcryptor.png
       tfa: Yes
       software: Yes
+      hardware: Yes
       doc: https://www.boxcryptor.com/help/boxcryptor-account/#two-factor-authentication
 
     - name: bugcrowd
@@ -60,6 +48,8 @@ websites:
       img: cloudflare.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://support.cloudflare.com/hc/en-us/articles/200167866-How-do-I-set-up-two-factor-authentication-
 
     - name: Cobalt
@@ -68,13 +58,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://cobalt.io/blog/new-feature-two-factor-auth/
-
-    - name: CyberGhost
-      url: https://www.cyberghostvpn.com
-      img: cyberghost.png
-      twitter: cyberghost_EN
-      facebook: cyberghostEN
-      tfa: No
 
     - name: Detectify
       url: https://detectify.com/
@@ -108,7 +91,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.entrust.net/certificate-services/cms-authentication.htm
+      doc: https://www.entrust.com/multi-factor-authentication-tools/
 
     - name: ESET
       img: eset.png
@@ -116,14 +99,6 @@ websites:
       tfa: No
       facebook: eset
       twitter: ESET
-
-    - name: ExpressVPN
-      img: expressvpn.png
-      url: https://www.expressvpn.com
-      tfa: Yes
-      email: Yes
-      twitter: expressvpn
-      facebook: ExpressVPN
 
     - name: GeoTrust
       url: https://www.geotrust.com/
@@ -147,32 +122,12 @@ websites:
       exceptions:
           text: "SMS-capable phone required for initial setup."
 
-    - name: hide.me VPN
-      url: https://hide.me/
-      twitter: thevpncompany
-      facebook: www.hide.me
-      img: hidemevpn.png
+    - name: McAfee
+      url: https://www.mcafee.com/
+      img: mcafee.png
       tfa: No
-
-    - name: IPVanish
-      url: https://www.ipvanish.com
-      img: ipvanish.png
-      tfa: No
-      twitter: IPVanish
-      facebook: ipvanish
-
-    - name: IVPN
-      url: https://www.ivpn.net/
-      twitter: ivpnnet
-      img: ivpn.png
-      tfa: No
-
-    - name: NordVPN
-      url: https://nordvpn.com
-      img: nordvpn.png
-      tfa: No
-      twitter: NordVPN
-      facebook: NordVPN
+      twitter: McAfee
+      facebook: McAfee
 
     - name: Norton
       url: https://us.norton.com
@@ -180,57 +135,16 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      u2f: Yes
       sms: Yes
       phone: Yes
       doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us
-
-    - name: OpenDNS
-      url: https://www.opendns.com/
-      img: opendns.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      otp: Yes
-      exceptions:
-          text: "Only available for enterprise accounts."
-      doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
-
-    - name: Perfect Privacy VPN
-      url: https://www.perfect-privacy.com/
-      img: perfectprivacyvpn.png
-      tfa: No
-      twitter: perfectprivacy
-      facebook: perfect.privacy
 
     - name: Prey
       url: https://www.preyproject.com
       img: prey.png
       tfa: Yes
       software: Yes
-      doc: http://help.preyproject.com/article/248-how-to-enable-the-two-step-authenticator-for-prey
-
-    - name: Private Internet Access
-      url: https://www.privateinternetaccess.com
-      img: privateinternetaccess.png
-      tfa: No
-      twitter: piacsm
-
-    - name: ProtonVPN
-      url: https://protonvpn.com/
-      img: protonvpn.png
-      tfa: Yes
-      software: Yes
-      twitter: ProtonVPN
-      facebook: ProtonVPN
-
-    - name: PureVPN
-      url: https://www.purevpn.com
-      img: purevpn.png
-      tfa: No
-      twitter: PureVPNcom
-      facebook: PureVPNcom
+      doc: https://help.preyproject.com/article/248-how-to-enable-the-two-step-authenticator-for-prey
 
     - name: Pwnie Express Pwn Pulse
       url: https://www.pwnieexpress.com/products/pulse-device-detection
@@ -248,13 +162,6 @@ websites:
       software: Yes
       doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
 
-    - name: SaferVPN
-      url: https://www.safervpn.com
-      img: safervpn.png
-      tfa: No
-      twitter: SaferVPN
-      facebook: SaferVPNCom
-
     - name: Sophos Central
       url: https://www.sophos.com
       img: sophoscentral.png
@@ -270,7 +177,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: http://www.ssltrust.com.au/enable-two-factor-authentication.html
+      doc: https://www.ssltrust.com.au/help/account-management/enable-2factor
 
     - name: Surfshark
       url: https://surfshark.com/
@@ -279,18 +186,12 @@ websites:
       twitter: SurfsharkSecure
       facebook: SurfsharkPrivacy
 
-    - name: Threat X
-      url: https://threat-x.com/
-      img: threatx.png
-      tfa: Yes
-      software: Yes
-
     - name: ThreatConnect
       url: https://threatconnect.com/
       img: threatconnect.png
       tfa: Yes
       software: Yes
-      doc: http://kb.threatconnect.com/customer/en/portal/articles/2214975-configuring-user-settings-and-two-factor-authentication
+      doc: https://kb.threatconnect.com/customer/en/portal/articles/2214975
 
     - name: ThreatMetrix
       url: https://www.threatmetrix.com/
@@ -304,6 +205,13 @@ websites:
       tfa: Yes
       sms: Yes
 
+    - name: ThreatX
+      url: https://www.threatx.com/
+      img: threatx.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.threatx.com/hc/en-us/articles/360022157591
+
     - name: Tinfoil Security
       url: https://www.tinfoilsecurity.com
       img: tinfoil.png
@@ -311,7 +219,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: http://support.tinfoilsecurity.com/customer/portal/articles/1559364-do-you-support-two-factor-authentication-how-do-i-set-it-up-
+      doc: https://support.tinfoilsecurity.com/article/43-do-you-support-two-factor-authentication-how-do-i-set-it-up
 
     - name: TorGuard
       url: https://torguard.net
@@ -319,30 +227,9 @@ websites:
       tfa: Yes
       software: Yes
 
-    - name: TunnelBear
-      url: https://tunnelbear.com/
-      img: tunnelbear.png
-      tfa: No
-      twitter: theTunnelBear
-      facebook: tunnelbear
-
-    - name: VPN Unlimited
-      url: https://vpnunlimitedapp.com/
-      img: vpnunlimited.png
-      twitter: vpnunlimited
-      facebook: vpnunlimitedapp
-      tfa: No
-
     - name: Webroot
       url: https://www.webroot.com
       img: webroot.png
       twitter: Webroot
       facebook: Webroot
       tfa: No
-
-    - name: Windscribe
-      url: https://windscribe.com
-      img: windscribe.png
-      tfa: No
-      twitter: windscribecom
-      facebook: windscribe

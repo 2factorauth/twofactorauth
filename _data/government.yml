@@ -11,7 +11,7 @@ websites:
       url: http://www.cra-arc.gc.ca
       img: canadarevenueagency.png
       tfa: No
-      twitter: canrevagency
+      twitter: CanRevAgency
 
     - name: Datové schránky
       url: https://www.mojedatovaschranka.cz
@@ -78,7 +78,10 @@ websites:
       img: mygov.png
       tfa: Yes
       sms: Yes
-      doc: https://my.gov.au/mygov/content/html/help.html#sec-features
+      software: Yes
+      exceptions:
+        text: myGov Access app required for Software 2FA.
+      doc: https://my.gov.au/mygov/content/html/help.html#securityCode
 
     - name: RealMe
       url: https://www.realme.govt.nz/
@@ -119,4 +122,16 @@ websites:
       img: usssa.png
       tfa: Yes
       sms: Yes
-      doc: https://secure.ssa.gov/RIL/HpsView.do#question3
+      email: Yes
+      doc: https://www.ssa.gov/myaccount/MoreInformationAboutMFA.html
+
+    - name: US Veteran Affairs
+      url: https://www.va.gov
+      img: va.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      phone: Yes
+      exceptions:
+          text: "2FA is only available when using the Identity Management service ID.me"

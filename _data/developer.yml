@@ -5,10 +5,10 @@ websites:
       tfa: Yes
       sms: Yes
       phone: Yes
-      software: Yes
       hardware: Yes
       otp: Yes
-      doc: http://support.aha.io/hc/en-us/articles/202000957-Add-two-factor-authentication-2FA-
+      software: Yes
+      doc: https://support.aha.io/hc/en-us/articles/202000957
 
     - name: Airbrake
       url: https://airbrake.io
@@ -26,12 +26,19 @@ websites:
       software: Yes
       doc: https://www.algolia.com/doc/security/best-security-practices/#two-factor-authentication-2fa
 
+    - name: AppSignal
+      url: https://appsignal.com
+      img: appsignal.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.appsignal.com/user-account/two-factor-authentication.html
+
     - name: AppVeyor
       url: https://www.appveyor.com
       img: appveyor.png
-      tfa: No
-      twitter: appveyor
-      email_address: team@appveyor.com
+      tfa: Yes
+      software: Yes
+      doc: https://www.appveyor.com/blog/2018/11/07/2FA-implementation/
 
     - name: aTech Media
       url: https://atechmedia.com
@@ -177,13 +184,6 @@ websites:
       software: Yes
       doc: https://docs.compose.io/security/compose-two-factor-authentication.html
 
-    - name: Context.IO
-      url: https://context.io
-      img: contextio.png
-      tfa: Yes
-      software: Yes
-      doc: https://context.io/security-faq
-
     - name: Crowdin
       url: https://crowdin.com/
       img: crowdin.png
@@ -193,7 +193,7 @@ websites:
 
     - name: Deploybot
       url: https://deploybot.com/
-      twitter: deploybothq
+      twitter: DeployBotHQ
       img: deploybot.png
       tfa: No
 
@@ -206,7 +206,7 @@ websites:
 
     - name: Docker
       url: https://www.docker.com/
-      twitter: docker
+      twitter: Docker
       facebook: docker.run
       img: docker.png
       tfa: No
@@ -218,6 +218,13 @@ websites:
       software: Yes
       doc: https://support.dominodatalab.com/hc/en-us/articles/115000998406-Two-Factor-Authentication
 
+    - name: Drupal.org
+      url: https://www.drupal.org/
+      img: drupalorg.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.drupal.org/drupalorg/docs/user-accounts/setting-up-two-factor-authentication
+
     - name: Esri
       url: https://www.esri.com
       img: esri.png
@@ -226,11 +233,11 @@ websites:
       doc: https://doc.arcgis.com/en/arcgis-online/reference/multifactor.htm
 
     - name: 'FogBugz & Kiln'
-      url: https://www.fogcreek.com/fogbugz
+      url: https://www.fogbugz.com/
       img: fogbugz.png
       tfa: Yes
       software: Yes
-      doc: http://help.fogcreek.com/10892/two-factor-authentication
+      doc: https://help.manuscript.com/10892
 
     - name: GitHub
       url: https://github.com
@@ -253,13 +260,21 @@ websites:
       u2f: Yes
       doc: https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html
 
-    - name: Hashicorp Atlas
-      url: https://atlas.hashicorp.com/
-      img: hashicorp-atlas.png
+    - name: HashiCorp Terraform Enterprise
+      url: https://app.terraform.io/
+      img: hashicorp-terraform-enterprise.png
       tfa: Yes
       software: Yes
       sms: Yes
-      doc: https://atlas.hashicorp.com/help/user-accounts/authentication#two-factor-authentication
+      doc: https://www.terraform.io/docs/enterprise/users-teams-organizations/2fa.html
+
+    - name: HashiCorp Vagrant Cloud
+      url: https://app.vagrantup.com/
+      img: hashicorp-vagrant-cloud.png
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://www.vagrantup.com/docs/vagrant-cloud/users/authentication.html#two-factor-authentication
 
     - name: imgix
       url: https://www.imgix.com/
@@ -447,7 +462,20 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://support.beanbaginc.com/support/solutions/articles/3000006998-enabling-two-factor-authentication
+      doc: https://beanbag.freshdesk.com/support/solutions/articles/3000006998
+
+    - name: Read the Docs
+      url: https://readthedocs.org
+      img: readthedocs.png
+      tfa: No
+      email_address: hello@readthedocs.com
+      status: https://github.com/rtfd/readthedocs.org/issues/3523
+
+    - name: Report URI
+      url: https://report-uri.com
+      img: report-uri.png
+      tfa: Yes
+      software: Yes
 
     - name: Rollbar
       url: https://rollbar.com/
@@ -487,7 +515,7 @@ websites:
       hardware: Yes
       otp: Yes
       u2f: Yes
-      doc: https://blog.getsentry.com/2016/06/22/introducing-2fa.html
+      doc: https://blog.sentry.io/2016/06/22/introducing-2fa
 
     - name: SourceForge
       url: https://sourceforge.net/
@@ -512,7 +540,7 @@ websites:
 
     - name: StatusPage.io
       url: https://www.statuspage.io
-      twitter: statuspage
+      twitter: Statuspage
       facebook: statuspageio
       img: statuspageio.png
       tfa: No
@@ -569,7 +597,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://windows.microsoft.com/en-us/windows/two-step-verification-faq
+      doc: https://support.microsoft.com/en-us/help/12408/
 
     - name: Zapier
       url: https://zapier.com

@@ -1,6 +1,9 @@
+# frozen_string_literal: true
+
 require 'yaml'
 require 'fastimage'
 require 'kwalify'
+require 'diffy'
 @output = 0
 
 # YAML tags related to TFA
@@ -79,7 +82,6 @@ begin
     if sections != (sections.sort_by { |section| section['id'].downcase })
   schema = YAML.load_file('websites_schema.yml')
   validator = Kwalify::Validator.new(schema)
-
   sections.each do |section|
     data = YAML.load_file("_data/#{section['id']}.yml")
     websites = data['websites']
@@ -90,8 +92,11 @@ begin
     end
 
     # Check section alphabetization
-    error("_data/#{section['id']}.yml is not alphabetized by name") \
-      if websites != (websites.sort_by { |website| website['name'].downcase })
+    if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
+      error("_data/#{section['id']}.yml not ordered by name. Correct order:" \
+        "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
+                               context: 10).to_s(:color))
+    end
 
     # Collect list of all images for section
     imgs = Dir["img/#{section['id']}/*"]
@@ -135,16 +140,14 @@ begin
 
   imgs.each { |img| next unless img.nil? error("#{img} is not used") }
 
-  exit 1 if @output > 0
+  exit 1 if @output.positive?
 rescue Psych::SyntaxError => e
   puts "<------------ ERROR in a YAML file ------------>\n"
   puts e
   exit 1
-# rubocop:disable Style/RescueStandardError
-rescue => e
+rescue StandardError => e
   puts e
   exit 1
-# rubocop:enable Style/RescueStandardError
 else
   puts "<------------ No errors. You\'re good to go! ------------>\n"
 end

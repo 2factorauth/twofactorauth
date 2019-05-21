@@ -22,8 +22,7 @@ are stored in folders corresponding to each of those categories in their own
    HTTPS address.
 4. **Alexa top 200k**: A new site, that is not already listed, has to be within the
    Alexa top 200k ranking. You can check the ranking of a site [here](https://www.alexa.com/siteinfo).
-5. **No 2FA providers**: We do not list 2FA providers, such as [Authy](https://authy.com/),
-[Duo](https://duo.com/) or [Google Authenticator](https://github.com/google/google-authenticator).
+5. **No 2FA providers**: We do not list 2FA providers, such as [Authy](https://authy.com/), [Duo](https://duo.com/) or [Google Authenticator](https://github.com/google/google-authenticator).
 6. **Be Awesome**: You need to be awesome. That is all.
 
 ## Running Locally
@@ -131,8 +130,9 @@ The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
 #### Adding a site that *supports* TFA
 
 If a site does provide TFA, it is strongly recommended that you add the `doc:`
-field where public documentation is available. 
-Sites supporting TFA should not have a Twitter, Facebook or Email field.
+field where public documentation is available. Other fields should be included
+if the website supports them. Any services that are not supported can be excluded.
+Sites supporting TFA should not have a `twitter`, `facebook` or `email_address` field.
 
 The following is an example of a website that *supports* TFA but not multiple dongles:
 
@@ -152,7 +152,8 @@ The following is an example of a website that *supports* TFA but not multiple do
 If a site does not provide TFA, the `twitter:` field should be included if the site uses
 Twitter. Facebook can also be included using the `facebook` field, as well as Email using
 the `email_address` field. If the website does not use the English language, the `lang:`
-field should also be included.
+field should also be included. The fields `sms:`, `email:`, `phone:`, `software:` and
+`hardware:` can be completely removed.
 
 The following is an example of a website that *does not* support TFA:
 
@@ -167,8 +168,7 @@ The following is an example of a website that *does not* support TFA:
       lang: <ISO 639-1 language code> (Only for non-English websites)
 ```
 
-The `lang:` field is only used for non-English websites. The language codes should be
-lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
+The `lang:` field is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
 
 ### Exceptions & Restrictions
 

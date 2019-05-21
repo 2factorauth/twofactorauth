@@ -41,6 +41,13 @@ websites:
       software: Yes
       doc: https://blogg.binero.se/2017/10/tvafaktorsautentisering/
 
+    - name: Blacknight
+      url: https://blacknight.com
+      img: blacknight.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.blacknight.com/hc/en-us/articles/360001358517
+
     - name: Bluehost
       url: https://www.bluehost.com/
       img: bluehost.png
@@ -63,7 +70,7 @@ websites:
       software: Yes
 
     - name: CloudAtCost
-      url: http://cloudatcost.com
+      url: https://cloudatcost.com/
       img: cloudatcost.png
       twitter: cloudatcost
       tfa: No
@@ -122,6 +129,14 @@ websites:
       hardware: Yes
       otp: Yes
       doc: https://docs.fastly.com/guides/account-management-and-security/enabling-and-disabling-two-factor-authentication
+
+    - name: Flywheel
+      url: https://getflywheel.com
+      img: flywheel.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://getflywheel.com/wordpress-support/how-to-enable-two-factor-authentication-on-flywheel
 
     - name: FS Data
       url: https://fsdata.se/
@@ -296,11 +311,9 @@ websites:
 
     - name: Miss Hosting
       url: https://misshosting.com/
-      twitter: misshostingcom
-      facebook: misshostingcom
       img: misshosting.png
-      tfa: No
-      lang: sv
+      tfa: Yes
+      software: Yes
 
     - name: Mittwald
       url: https://www.mittwald.de/
@@ -324,7 +337,7 @@ websites:
       img: netcup.png
       tfa: Yes
       software: Yes
-      doc: http://www.netcup-wiki.de/wiki/Stammdaten_CCP#Zwei-Faktor-Authentifizierung_.282FA.29
+      doc: https://www.netcup-wiki.de/wiki/Stammdaten_CCP#Zwei-Faktor-Authentifizierung_.282FA.29
 
     - name: Nitrado
       url: https://server.nitrado.net/
@@ -522,6 +535,13 @@ websites:
       tfa: No
       twitter: weebly
       facebook: weebly
+      
+    - name: Wix
+      url: https://www.wix.com/
+      twitter: WixHelp
+      facebook: wix
+      img: wix.png
+      tfa: No
 
     - name: WP Engine
       url: https://wpengine.com/

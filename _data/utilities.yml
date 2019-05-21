@@ -71,8 +71,9 @@ websites:
       tfa: Yes
       sms: Yes
       email: Yes
+      software: Yes
       exceptions:
-          text: "SMS-capable phone and a non-Comcast.net email required for 2FA."
+          text: "SMS-capable phone and a non-Comcast.net email required for 2FA. Software authentication requires Xfinity Authenticator mobile app."
       doc: https://www.xfinity.com/support/account/enroll-2-step-verification/
 
     - name: ComEd
@@ -123,7 +124,7 @@ websites:
 
     - name: Dominion Energy
       url: https://www.dominionenergy.com/
-      twitter: dominionenergy
+      twitter: DominionEnergy
       img: dominion.png
       tfa: No
 
@@ -184,6 +185,16 @@ websites:
       img: georgiapower.png
       tfa: No
 
+    - name: Google Fi
+      url: https://fi.google.com/
+      img: projectfi.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+
     - name: Google Fiber
       url: https://fiber.google.com/
       img: googlefiber.png
@@ -219,7 +230,7 @@ websites:
       tfa: No
 
     - name: Optus
-      url: http://www.optus.com.au/
+      url: https://www.optus.com.au/
       twitter: Optus
       facebook: optus
       img: optus.png
@@ -242,20 +253,10 @@ websites:
 
     - name: PowerStream
       url: https://www.powerstream.ca/
-      twitter: PowerStreamNews
+      twitter: AlectraNews
       facebook: PowerStreamPage
       img: powerstream.png
       tfa: No
-
-    - name: Project Fi
-      url: https://fi.google.com/
-      img: projectfi.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: RCN
       url: https://www.rcn.com/
@@ -263,6 +264,13 @@ websites:
       facebook: RCN
       img: rcn.png
       tfa: No
+
+    - name: Republic Wireless
+      url: https://republicwireless.com/
+      img: rw.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.republicwireless.com/hc/en-us/articles/360008803994
 
     - name: 'Rochester Gas & Electric'
       url: https://www.rge.com/
@@ -300,7 +308,7 @@ websites:
       sms: Yes
       software: Yes
       phone: Yes
-      doc: https://wiki.sonic.net/wiki/2-Step_Verification
+      doc: https://help.sonic.com/hc/en-us/articles/236079387
 
     - name: Sosh
       url: https://www.sosh.fr
@@ -371,7 +379,7 @@ websites:
 
     - name: TIM
       url: https://www.tim.it/
-      twitter: tim_official
+      twitter: TIM_Official
       facebook: TimOfficialPage
       img: tim.png
       tfa: No

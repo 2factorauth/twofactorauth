@@ -6,6 +6,13 @@ websites:
       software: Yes
       doc: https://www.007names.com/info/two-step.xhtml
 
+    - name: 1&amp;1 IONOS
+      url: https://www.ionos.com/
+      img: 1and1.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.ionos.com/help/index.php?id=3269
+
     - name: 101domain
       url: https://101domain.com
       img: 101domain.png
@@ -28,13 +35,6 @@ websites:
       twitter: 123reg
       facebook: 123regfans
 
-    - name: 1and1
-      url: https://www.1and1.com/
-      img: 1and1.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.1and1.com/article/793179
-
     - name: 20i
       url: https://www.20i.com
       img: 20i.png
@@ -48,15 +48,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.above.com/manual/my-account-manual-two-step-auth.html
-
-    - name: Cloudflare
-      url: https://cloudflare.com
-      img: cloudflare.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      otp: Yes
-      doc: https://support.cloudflare.com/hc/en-us/articles/200167866-What-is-Authy-2-Factor-Authentication-
 
     - name: ClouDNS
       url: https://www.cloudns.net/
@@ -90,7 +81,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: http://help.dnsmadeeasy.com/managed-dns/administrative/enable-two-factor-authentication/
+      doc: https://help.dnsmadeeasy.com/administrative/enable-two-factor-authentication/
 
     - name: DNSimple
       url: https://dnsimple.com/
@@ -99,11 +90,11 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://blog.dnsimple.com/2012/08/protect-your-dnsimple-account-with-two-factor-authentication-from-authy/
+      doc: https://support.dnsimple.com/articles/two-factor-authentication/
 
     - name: Domain.com
       url: https://www.domain.com/
-      twitter: DomainDotCom
+      twitter: Domaindotcom
       facebook: Domaindotcom
       img: domaindotcom.png
       tfa: No
@@ -111,7 +102,7 @@ websites:
     - name: domainFACTORY
       url: https://www.df.eu
       img: domainfactory.png
-      twitter: domainfactory
+      twitter: DomainFactory
       facebook: domainfactory.GmbH
       tfa: No
       lang: de
@@ -182,21 +173,21 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://fusion.easydns.com/Knowledgebase/Article/View/347/0/account-security
+      doc: https://kb.easydns.com/knowledge/account-security/
 
     - name: eNom
       url: https://www.enom.com/
       img: enom.png
       tfa: Yes
       software: Yes
-      doc: http://www.enom.com/kb/kb/kb_1687-setup-2-factor.htm
+      doc: https://www.enom.com/kb/kb/kb_1687-setup-2-factor.htm
 
     - name: EuroDNS
       url: https://www.eurodns.com
       img: eurodns.png
       tfa: Yes
       software: Yes
-      doc: http://help.eurodns.com/customer/en/portal/articles/1633106-how-do-i-activate-two-step-verification-on-my-account-
+      doc: https://help.eurodns.com/customer/en/portal/articles/1633106
 
     - name: Fabulous
       url: https://fabulous.com
@@ -227,7 +218,7 @@ websites:
       hardware: Yes
       otp: Yes
       u2f: Yes
-      doc: https://doc.gandi.net/en/organization/users/security
+      doc: https://docs.gandi.net/en/account_management/security/
 
     - name: GoDaddy
       img: godaddy.png
@@ -346,12 +337,12 @@ websites:
       url: https://www.moniker.com/
       img: moniker.png
       tfa: No
-      twitter: monikersnap
+      twitter: MonikerSnap
       facebook: MonikerLLC
 
     - name: MyDomain
       url: https://www.mydomain.com/
-      twitter: mydomaindotcom
+      twitter: MyDomaindotcom
       facebook: mydomain
       img: mydomain.png
       tfa: No
@@ -368,12 +359,11 @@ websites:
       img: namecheap.png
       tfa: Yes
       sms: Yes
-      phone: Yes
       software: Yes
       hardware: Yes
       otp: Yes
       u2f: Yes
-      doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-can-i-enabledisable-twofactor-authentication
+      doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
 
     - name: NameSilo.com
       url: https://www.namesilo.com/
@@ -386,7 +376,7 @@ websites:
 
     - name: NamesPro.ca
       url: https://www.namespro.ca/
-      twitter: namespro
+      twitter: Namespro
       facebook: namespro
       img: namespro.png
       tfa: No
@@ -401,7 +391,7 @@ websites:
 
     - name: Netfirms
       url: https://www.netfirms.com
-      twitter: netfirms
+      twitter: Netfirms
       facebook: netfirmsfans
       img: netfirms.png
       tfa: No
@@ -454,6 +444,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       exceptions:
           text: "Only available for enterprise accounts."
       doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
@@ -463,7 +455,6 @@ websites:
       img: openprovider.png
       tfa: Yes
       software: Yes
-      doc: https://www.openprovider.co.uk/about-openprovider/news/secure-your-account-with-two-factor-authentication
 
     - name: OpenSRS
       url: https://opensrs.com
@@ -499,7 +490,7 @@ websites:
     - name: Rebel.com
       url: https://www.rebel.com/
       twitter: rebeldotcom
-      facebook: rebeldomains
+      facebook: rebeldotcomhosting
       img: rebel.png
       tfa: No
 
@@ -510,7 +501,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: http://blog.register4less.com/?p=43
+      doc: https://blog.register4less.com/two-factor-authentication/
 
     - name: Registro.br
       url: https://registro.br
@@ -578,6 +569,6 @@ websites:
 
     - name: Verio
       url: https://www.verio.com/
-      twitter: Verio
+      twitter: verio
       img: verio.png
       tfa: No

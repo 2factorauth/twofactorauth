@@ -27,7 +27,9 @@ websites:
       twitter: AlliantCU
       facebook: alliantcreditunion
       img: alliantcreditunion.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://www.alliantcreditunion.org/help/how-does-alliant-two-factor-authentication-work
 
     - name: Ally Bank
       url: https://www.ally.com/
@@ -35,14 +37,16 @@ websites:
       tfa: Yes
       sms: Yes
       email: Yes
-      doc: http://www.ally.com/messages/sms/index.html
+      doc: https://www.ally.com/messages/sms/
 
     - name: Altra Federal Credit Union
       url: https://www.altra.org/
       twitter: AltraCU
       facebook: altra.org
       img: altrafcu.png
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      email: Yes
 
     - name: America First Credit Union
       url: https://www.americafirst.com/
@@ -114,7 +118,7 @@ websites:
       doc: https://www.bankofamerica.com/privacy/online-mobile-banking-privacy/safepass.go
 
     - name: Bank of China (Hong Kong)
-      url: http://www.bochk.com
+      url: https://www.bochk.com/
       img: bochk.png
       tfa: Yes
       hardware: Yes
@@ -193,6 +197,14 @@ websites:
       phone: Yes
       doc: https://www.mybankofinternet.com/tob/live/usp-core/static/help.html#login_security
 
+    - name: Boursorama
+      url: https://www.boursorama.com/
+      twitter: Boursorama
+      facebook: Boursorama-Banque-1741973942734447
+      img: boursorama.png
+      tfa: No
+      lang: fr
+
     - name: Caisse D'Epargne
       url: https://www.caisse-epargne.fr/
       twitter: CaissEpargneSAV
@@ -216,6 +228,16 @@ websites:
       facebook: CDCFederalCreditUnion
       img: cdcfcu.png
       tfa: No
+
+    - name: Ceska Sporitelna
+      url: https://www.csas.cz/en/
+      img: csas-cz.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.csas.cz/cs/mobilni-aplikace/george-klic
+      exceptions:
+       text: "Software implementation requires use of George Klic app."
 
     - name: Chase
       url: https://www.chase.com/
@@ -259,7 +281,7 @@ websites:
 
     - name: Citizens Bank
       url: https://www.citizensbank.com
-      twitter: citizensbank
+      twitter: CitizensBank
       facebook: citizensbank
       img: citizensbank.png
       tfa: No
@@ -298,12 +320,35 @@ websites:
       hardware: Yes
       doc: https://www.commbank.com.au/support.digital-banking.explain-netcode-token.html
 
+    - name: Community America Credit Union
+      url: https://www.communityamerica.com/
+      img: community_america_cu.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      doc: https://www.cacuonlinebanking.com/tob/live/usp-core/static/help.html#login_security
+
     - name: Credit Union Australia
       url: https://www.cua.com.au/
       img: cua.png
       tfa: No
-      twitter: cua_connect
+      twitter: CUA_Connect
       facebook: CUA
+
+    - name: DBS Bank Singapore
+      url: https://www.dbs.com.sg/
+      img: dbs.png
+      tfa: No
+      twitter: dbsbank
+      facebook: dbs.sg
+      
+    - name: Desert Financial Credit Union
+      url: https://www.desertfinancial.com
+      img: desertfinancialcu.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      doc: https://www.desertfinancial.com/faq/online-solutions-faqs/security
 
     - name: Desjardins
       url: https://www.desjardins.com/
@@ -337,7 +382,14 @@ websites:
       img: idb.png
       lang: he
 
-    - name: Discover
+    - name: Discover (Banking)
+      url: https://www.discover.com/online-banking/
+      img: discover.png
+      tfa: No
+      twitter: Discover
+      facebook: discover
+
+    - name: Discover (Credit Cards)
       url: https://www.discover.com/
       img: discover.png
       tfa: Yes
@@ -356,7 +408,6 @@ websites:
 
     - name: Dutch-Bangla Bank Limited (DBBL)
       url: https://www.dutchbanglabank.com/
-      facebook: Dutchbanglabankltd
       email_address: hrd_head@dbbl.com.bd
       img: dbbl.png
       tfa: No
@@ -395,10 +446,27 @@ websites:
 
     - name: Fifth Third Bank
       url: https://www.53.com/
-      twitter: fifththird
+      twitter: FifthThird
       facebook: FifthThirdBank
       img: fifththird.png
       tfa: No
+
+    - name: Fio banka
+      url: https://www.fio.cz
+      twitter: Fio_banka
+      facebook: Fiobanka
+      img: fio-cz.png
+      tfa: No
+      lang: cz
+      
+    - name: First Community Credit Union
+      url: https://www.firstcommunity.com/
+      img: first_community_cu.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      email: Yes
+      doc: https://www.firstcommunityexpressnet.com/tob/live/usp-core/static/help.html#login_security
 
     - name: First Direct
       url: https://www1.firstdirect.com/
@@ -406,7 +474,7 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
-      doc: https://www1.firstdirect.com/1/2/securekey/
+      doc: https://www1.firstdirect.com/help/secure-key/
 
     - name: First Republic Bank
       url: https://www.firstrepublic.com/
@@ -471,11 +539,13 @@ websites:
       tfa: No
 
     - name: HSBC
-      url: http://www.hsbc.com
+      url: https://www.hsbc.com/
       img: hsbc.png
       tfa: Yes
       hardware: Yes
       software: Yes
+      exceptions:
+          text: "Software 2FA requires HSBC app."
       doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
 
     - name: Huntington National Bank
@@ -494,7 +564,7 @@ websites:
 
     - name: ICICI
       url: https://www.icicibank.com
-      twitter: icicibank
+      twitter: ICICIBank
       facebook: icicibank
       img: icici.png
       tfa: No
@@ -525,7 +595,7 @@ websites:
       img: intesasanpaolo.png
       tfa: Yes
       hardware: Yes
-      doc: http://www.intesasanpaolo.com/servizi-multicanale/sicurezza.jsp
+      doc: https://www.intesasanpaolo.com/it/common/footer/sicurezza.html
 
     - name: KeyBank
       url: https://www.key.com
@@ -543,10 +613,25 @@ websites:
 
     - name: LendingClub
       url: https://www.lendingclub.com/
-      twitter: lendingclub
+      twitter: LendingClub
       facebook: LendingClubTeam
       img: lendingclub.png
       tfa: No
+
+    - name: LGE Community Credit Union
+      url: https://www.lgeccu.org/
+      twitter: LGEccu
+      img: lgecommunitycu.png
+      tfa: No
+
+    - name: LHV
+      url: https://www.lhv.ee/
+      twitter: ellhaavee
+      facebook: LHVPank
+      img: lhv.png
+      email_address: info@lhv.ee
+      tfa: No
+      lang: et
 
     - name: Lloyds Bank
       url: https://www.lloydsbank.com/
@@ -561,7 +646,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.lansforsakringar.se/privat/att-vara-kund/digitala-tjanster-telefonbank/internetbanken/
+      doc: https://www.lansforsakringar.se/privat/att-vara-kund/digitala-tjanster-telefonbank/internetbanken/
 
     - name: MandT Bank
       url: https://www.mtb.com/
@@ -574,13 +659,13 @@ websites:
       url: https://www.mbna.ca
       img: mbnacanada.png
       tfa: No
-      twitter: mbna_canada
+      twitter: MBNA_Canada
       facebook: MBNACanada
 
     - name: Meridian Credit Union
       url: https://www.meridiancu.ca
       img: meridian.png
-      twitter: meridiancu
+      twitter: MeridianCU
       facebook: MeridianCreditUnion
       tfa: No
 
@@ -590,6 +675,14 @@ websites:
       facebook: monzobank
       img: monzobank.png
       tfa: No
+
+    - name: Mountain America Credit Union
+      url: https://www.macu.com
+      img: macu.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
 
     - name: N26
       url: https://n26.com
@@ -682,6 +775,14 @@ websites:
       facebook: nubankbrasil
       lang: pt
 
+    - name: Openbank
+      url: https://www.openbank.es
+      img: openbank.png
+      tfa: No
+      twitter: openbank_es
+      facebook: openbank.es
+      lang: es
+
     - name: Optum Bank
       url: https://www.optumbank.com
       img: optum.png
@@ -722,7 +823,7 @@ websites:
       tfa: Yes
       hardware: Yes
       software: Yes
-      doc: http://www.poba.hr/get_file.php?d=pobaklik__upute_gradani.pdf&PHPSESSID=cafutfbcjozu
+      doc: https://www.poba.hr/get_file.php?d=pobaklik__upute_gradani.pdf
 
     - name: Postbank
       url: https://www.postbank.de/
@@ -844,7 +945,7 @@ websites:
       doc: https://www.szkb.ch/pub/ueber-die-szkb/servicezentrum/e-services/sicherheit
 
     - name: Scotiabank
-      url: http://www.scotiabank.com
+      url: https://www.scotiabank.com
       img: scotiabank.png
       tfa: No
       twitter: ScotiabankHelps
@@ -886,8 +987,8 @@ websites:
       twitter: SimpliiFin
 
     - name: Sparda Banken
-      url: http://www.sparda.de/
-      twitter: spardaberlin
+      url: https://www.sparda.de/
+      twitter: SpardaBerlin
       facebook: spardaberlin
       email_address: info@sparda-verband.de
       img: spardabank.png
@@ -964,7 +1065,7 @@ websites:
 
     - name: Tangerine
       url: https://www.tangerine.ca/
-      twitter: tangerinebank
+      twitter: TangerineBank
       facebook: TangerineBank
       img: tangerine.png
       tfa: No
@@ -1001,6 +1102,13 @@ websites:
       sms: Yes
       phone: Yes
       doc: https://www.td.com/privacy-and-security/privacy-and-security/how-we-protect-you/online-security/2fa.jsp
+
+    - name: Tesco Bank
+      url: https://www.tescobank.com/
+      twitter: tescobankhelp
+      facebook: tesco.bank
+      img: tescobank.png
+      tfa: No
 
     - name: Tower Federal Credit Union
       url: https://www.towerfcu.org/

@@ -34,6 +34,14 @@ websites:
       twitter: CarbonBlack_Inc
       facebook: carbonblackinc
 
+    - name: Cloze
+      url: https://www.cloze.com/
+      img: cloze.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.cloze.com/knowledge_base/topics/how-do-i-enable-2-step-authentication
+
     - name: Customer.io
       url: https://customer.io
       img: customerio.png
@@ -100,6 +108,13 @@ websites:
       sms: Yes
       software: Yes
       doc: https://chatgrape.com/doc/deployment/2fa.html
+
+    - name: GroupMe
+      url: https://groupme.com/
+      img: groupme.png
+      tfa: Yes
+      sms: Yes
+      doc: https://help.groupme.com/hc/en-us/articles/360000579167
 
     - name: Hangouts
       url: https://hangouts.google.com/
@@ -181,10 +196,17 @@ websites:
       software: Yes
       doc: https://peerio.zendesk.com/hc/en-us/articles/202933829-How-do-I-setup-two-factor-authentication-
 
+    - name: Riot
+      url: https://about.riot.im/
+      img: riot.png
+      twitter: RiotChat
+      facebook: RiotChat
+      tfa: No
+      
     - name: Ryver
       url: https://ryver.com/
       img: ryver.png
-      twitter: ryverapp
+      twitter: RyverApp
       facebook: RyverApp
       tfa: No
 
@@ -234,7 +256,7 @@ websites:
       software: Yes
       exceptions:
           text: "Must be associated with a Microsoft Account."
-      doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
+      doc: https://support.microsoft.com/en-us/help/12408/
 
     - name: Slack
       url: https://slack.com/
@@ -266,7 +288,7 @@ websites:
       img: stackfield.png
       tfa: Yes
       software: Yes
-      doc: http://en.stackfield.help/article/92-activating-deactivating-the-two-factor-authentication
+      doc: https://en.stackfield.help/article/92-activating-deactivating-the-two-factor-authentication
 
     - name: TeamSpeak
       url: https://www.teamspeak.com/
@@ -285,7 +307,6 @@ websites:
 
     - name: ToutApp
       url: https://www1.toutapp.com/
-      twitter: toutapp
       facebook: toutapp
       img: toutapp.png
       tfa: No
@@ -316,7 +337,7 @@ websites:
 
     - name: Yammer
       url: https://www.yammer.com
-      twitter: yammer
+      twitter: Yammer
       facebook: Yammer
       img: yammer.png
       tfa: No

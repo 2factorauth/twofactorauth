@@ -160,7 +160,11 @@ input[type=search] {
 }
 
 .ui.table td.twitter {
-  text-align: center;
+  text-align: left;
+
+  span {
+    vertical-align: middle;
+  }
 }
 
 .website-table {
@@ -308,7 +312,6 @@ td img.icon,
 .ui.celled.table .exception,
 .ui.celled.table .exception * {
   padding-left: 3%;
-  margin-bottom: 5px;
   vertical-align: top;
 }
 

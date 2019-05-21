@@ -1,12 +1,12 @@
 websites:
     - name: Adirondack Insurance Exchange
-      url: http://www.aie-ny.com/
+      url: https://www.aie-ny.com/
       img: adirondackinsurnaceexchange.png
       tfa: No
 
     - name: ADP
       url: https://www.adp.com
-      twitter: adp
+      twitter: ADP
       facebook: AutomaticDataProcessing
       img: adp.png
       tfa: No
@@ -16,13 +16,30 @@ websites:
       img: altoira.png
       tfa: Yes
       software: Yes
-      doc: https://help.altoira.com/hc/en-us/articles/360007374654-Enabling-Disabling-Two-Factor-Authentication-2FA-
+      doc: https://help.altoira.com/hc/en-us/articles/360007374654
+
+    - name: Amundi (épargne salariale & retraite)
+      url: https://www.amundi-ee.com
+      twitter: Amundi_FR
+      img: amundiee.png
+      tfa: No
+      lang: fr
 
     - name: Baden-Württembergische Bank
       url: https://www.bw-bank.de/de/
       tfa: No
       img: bw_bank.png
       lang: de
+
+    - name: BGL Corporate Solutions
+      url: https://www.bglcorp.com/
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      img: bgl.png
+      doc: https://sf360.zendesk.com/hc/en-au/articles/360020963051
+      exceptions:
+        text: "2FA covers Simple Fund 360, CAS 360, BGL API and BGL Account. It doesn't cover BGL Client Centre."
 
     - name: Bitbond
       url: https://www.bitbond.com
@@ -81,6 +98,15 @@ websites:
       software: Yes
       doc: https://www.freeagent.com/support/kb/getting-started/two-step-verification
 
+    - name: FreeTaxUSA
+      url: https://www.freetaxusa.com/
+      img: freetaxusa.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      software: Yes
+      doc: https://www.freetaxusa.com/safe.jsp
+
     - name: FreshBooks
       url: https://www.freshbooks.com
       img: freshbooks.png
@@ -98,7 +124,7 @@ websites:
     - name: Geico
       url: https://www.geico.com/
       img: geico.png
-      twitter: geico_service
+      twitter: GEICO_Service
       facebook: geico
       tfa: No
 
@@ -110,7 +136,7 @@ websites:
       doc: https://support.gusto.com/hc/en-us/articles/210838787-Two-Step-Authentication
 
     - name: Hargreaves Lansdown
-      url: http://www.hl.co.uk
+      url: https://www.hl.co.uk/
       twitter: HLInvest
       facebook: hargreaveslansdowninvest
       img: hargreaveslansdown.png
@@ -125,7 +151,6 @@ websites:
 
     - name: InEx Finance
       url: https://www.inexfinance.com/
-      twitter: InexFinance
       facebook: inex.finance
       img: inex.png
       tfa: No
@@ -160,14 +185,14 @@ websites:
 
     - name: Kiva
       url: https://www.kiva.org
-      twitter: kiva
+      twitter: Kiva
       facebook: kiva
       img: kiva.png
       tfa: No
 
     - name: Kualto
       url: https://www.kualto.com
-      twitter: kualtoapp
+      twitter: Kualto
       img: kualto.png
       tfa: No
 
@@ -282,7 +307,7 @@ websites:
 
     - name: Progressive
       url: https://www.progressive.com
-      twitter: progressive
+      twitter: Progressive
       facebook: progressive
       img: progressive.png
       tfa: No
@@ -294,7 +319,7 @@ websites:
       sms: Yes
       phone: Yes
       software: Yes
-      doc: https://community.intuit.com/articles/1164912-multi-factor-authentication-faq
+      doc: https://accounts-help.lc.intuit.com/questions/1590157
 
     - name: QuickFile
       url: https://www.quickfile.co.uk
@@ -346,6 +371,8 @@ websites:
       phone: Yes
       software: Yes
       doc: https://transferwise.com/help/article/2811597/borderless-account/how-can-i-setup-2-step-login
+      exceptions:
+        text: "Software verification requires use of the TransferWise Mobile app. SMS-capable phone is required."
 
     - name: Treasury Direct
       url: https://www.treasurydirect.gov
@@ -355,7 +382,6 @@ websites:
 
     - name: Valic
       url: https://www.valic.com/
-      twitter: VALIC_retire
       facebook: valic
       img: valic.png
       tfa: No
@@ -371,7 +397,7 @@ websites:
       url: https://www.waveapps.com
       img: wave.png
       tfa: No
-      twitter: wavehq
+      twitter: WaveHQ
       facebook: waveHQ
 
     - name: Xero

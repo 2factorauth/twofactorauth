@@ -6,6 +6,8 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
+      exceptions:
+        text: "1Password advertises hardware 2FA on Yubikey but it's just software TOTP. Teams using Duo with 1Password can't enable additional 2FA as it's already handled by Duo"
       doc: https://support.1password.com/two-factor-authentication/
 
     - name: Bitium
@@ -57,10 +59,12 @@ websites:
     - name: ID.me
       url: https://www.id.me/
       img: idme.png
-      tfa: No
-      twitter: IDme
-      facebook: IDmeInc
-      email_address: help@id.me
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      phone: Yes
+      doc: https://help.id.me/hc/en-us/sections/115000551794
 
     - name: IDentité Numérique (IDN)
       url: https://www.idn.laposte.fr
