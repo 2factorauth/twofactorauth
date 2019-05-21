@@ -29,7 +29,7 @@ to compare the dongleauth.info and twofactorauth.org step by step.
 ```
 git clone https://github.com/Nitrokey/dongleauth.git
 git remote add upstream https://github.com/2factorauth/twofactorauth.git
-git merge upstream master
+git merge upstream/master
 git mergetool -t meld # use meld to compare, other tools possible
 ```
 
