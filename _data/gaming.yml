@@ -16,9 +16,9 @@ websites:
     - name: Black Desert Online
       url: https://www.blackdesertonline.com/
       img: bdo.png
-      twitter: BDO_News
-      facebook: BlackDesertOnline
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://blackdesert.zendesk.com/hc/en-us/articles/360000535909
 
     - name: 'Blade & Soul'
       url: https://www.bladeandsoul.com/
@@ -37,6 +37,12 @@ websites:
       exceptions:
           text: "Software authentication requires the Blizzard Authenticator app."
       doc: https://us.battle.net/support/en/article/Blizzard-Authenticator
+
+    - name: Bohemia Interactive
+      url: https://www.bohemia.net/
+      img: bohemia.png
+      tfa: Yes
+      software: Yes
 
     - name: Curse
       url: https://www.curse.com/
@@ -335,13 +341,6 @@ websites:
       software: Yes
       img: wargaming.png
       doc: https://wargaming.net/support/kb/articles/792
-
-    - name: WildStar
-      url: https://www.wildstar-online.com/
-      img: wildstar.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.wildstar-online.com/hc/en-us/articles/203982369-Two-Step-Verification-FAQ
 
     - name: Wizard101
       url: https://www.wizard101.com
