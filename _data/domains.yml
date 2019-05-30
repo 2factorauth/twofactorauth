@@ -456,12 +456,13 @@ websites:
       img: pointdns.png
       tfa: No
 
-    - name: porkbun
+    - name: Porkbun
       url: https://porkbun.com
       img: porkbun.png
       tfa: Yes
       software: Yes
-      doc: https://porkbun.com/products/two_factor_authentication
+      hardware: Yes
+      doc: https://kb.porkbun.com/category/20--
 
     - name: Rebel.com
       url: https://www.rebel.com/
