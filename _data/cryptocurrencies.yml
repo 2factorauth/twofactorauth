@@ -329,7 +329,11 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://gemini.com/blog/better-two-factor-authentication/
+      hardware: Yes
+      otp: Yes
+      u2f: Yes
+      multipleu2f: Yes
+      doc: https://medium.com/gemini/securing-your-gemini-account-with-webauthn-b5f369b8beec
 
     - name: HitBTC
       url: https://www.hitbtc.com/
