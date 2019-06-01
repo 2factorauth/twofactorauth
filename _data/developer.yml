@@ -484,6 +484,14 @@ websites:
       facebook: saucelabs
       email_address: support@saucelabs.com
 
+    - name: Segment
+      url: https://segment.com/
+      img: segment.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://segment.com/docs/iam/mfa/
+
     - name: Semaphore
       url: https://semaphoreci.com
       img: semaphore.png
