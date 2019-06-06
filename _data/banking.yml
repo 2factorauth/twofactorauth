@@ -1232,4 +1232,6 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+          text: "Software & Hardware authentication requires the ZKB photoTAN app or PhotoTAN device."
       doc: https://www.zkb.ch/de/pr/pk/efinance/ebanking/login-verfahren.html
