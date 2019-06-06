@@ -472,9 +472,9 @@ websites:
     - name: RubyGems.org
       url: https://rubygems.org
       img: rubygems.png
-      tfa: No
-      twitter: rubygems
-      email_address: security@rubygems.org
+      tfa: Yes
+      software: Yes
+      doc: https://guides.rubygems.org/setting-up-multifactor-authentication/
 
     - name: Sauce Labs
       url: https://saucelabs.com
