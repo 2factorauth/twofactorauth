@@ -121,6 +121,16 @@ websites:
       facebook: plexapp
       img: plex.png
       tfa: No
+      
+    - name: Pornhub
+      url: https://www.pornhub.com
+      img: pornhub.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.pornhub.com/blog/7061
+      exceptions:
+          text: "Signing up for SMS 2FA also activates software tokens on that phone number's Authy account. For non-models, the correct 2FA setting is in the regular user settings."
 
     - name: Qobuz
       url: https://www.qobuz.com
