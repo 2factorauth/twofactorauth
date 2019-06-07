@@ -575,6 +575,14 @@ websites:
       exceptions:
           text: "Two factor authentication unavailable for 'End User' access, which is read-only."
 
+    - name: Weclapp 
+      url: https://weclapp.com/
+      img: weclapp.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://doc.weclapp.com/knowledgebase/zwei-wege-authentifizierung-2fa/
+
     - name: Wikia
       url: https://www.wikia.com/
       twitter: wikia
