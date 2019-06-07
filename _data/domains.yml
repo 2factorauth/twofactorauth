@@ -496,10 +496,11 @@ websites:
 
     - name: UK2
       url: https://www.uk2.net/
-      twitter: UK2
-      facebook: UK2.net
       img: uk2.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://www.uk2.net/knowledgebase/display/UK2/Two+Factor+Authentication+Security+-+2FA
 
     - name: Uniregistry
       url: https://uniregistry.com/
