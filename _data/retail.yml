@@ -2,9 +2,10 @@ websites:
     - name: Adafruit
       url: https://www.adafruit.com
       img: adafruit.png
-      tfa: No
-      twitter: adafruit
-      facebook: adafruitindustries
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://learn.adafruit.com/how-to-set-up-2-factor-authentication-on-adafruit
 
     - name: AdoramaPix
       url: https://www.adoramapix.com
