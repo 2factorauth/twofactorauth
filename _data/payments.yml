@@ -101,10 +101,9 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      hardware: Yes
       exceptions:
-          text: "2FA is only available in a few countries. Contact PayPal on twitter for an up to date list of available countries."
-      doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
+          text: "2FA is only available in a few countries. Contact PayPal on Twitter for an up-to-date list of available countries."
+      doc: https://www.paypal.com/us/smarthelp/article/faq4057
 
     - name: Paysafecard
       url: https://www.paysafecard.com/
