@@ -76,7 +76,7 @@ websites:
       img: dnsmadeeasy.png
       tfa: Yes
       software: Yes
-      doc: http://help.dnsmadeeasy.com/managed-dns/administrative/enable-two-factor-authentication/
+      doc: https://help.dnsmadeeasy.com/administrative/enable-two-factor-authentication/
 
     - name: DNSimple
       url: https://dnsimple.com/
@@ -87,7 +87,7 @@ websites:
 
     - name: Domain.com
       url: https://www.domain.com/
-      twitter: DomainDotCom
+      twitter: Domaindotcom
       facebook: Domaindotcom
       img: domaindotcom.png
       tfa: No
@@ -95,7 +95,7 @@ websites:
     - name: domainFACTORY
       url: https://www.df.eu
       img: domainfactory.png
-      twitter: domainfactory
+      twitter: DomainFactory
       facebook: domainfactory.GmbH
       tfa: No
       lang: de
@@ -171,14 +171,14 @@ websites:
       img: enom.png
       tfa: Yes
       software: Yes
-      doc: http://www.enom.com/kb/kb/kb_1687-setup-2-factor.htm
+      doc: https://www.enom.com/kb/kb/kb_1687-setup-2-factor.htm
 
     - name: EuroDNS
       url: https://www.eurodns.com
       img: eurodns.png
       tfa: Yes
       software: Yes
-      doc: http://help.eurodns.com/customer/en/portal/articles/1633106-how-do-i-activate-two-step-verification-on-my-account-
+      doc: https://help.eurodns.com/customer/en/portal/articles/1633106
 
     - name: Fabulous
       url: https://fabulous.com
@@ -327,7 +327,7 @@ websites:
 
     - name: MyDomain
       url: https://www.mydomain.com/
-      twitter: mydomaindotcom
+      twitter: MyDomaindotcom
       facebook: mydomain
       img: mydomain.png
       tfa: No
@@ -357,7 +357,7 @@ websites:
 
     - name: NamesPro.ca
       url: https://www.namespro.ca/
-      twitter: namespro
+      twitter: Namespro
       facebook: namespro
       img: namespro.png
       tfa: No
@@ -372,7 +372,7 @@ websites:
 
     - name: Netfirms
       url: https://www.netfirms.com
-      twitter: netfirms
+      twitter: Netfirms
       facebook: netfirmsfans
       img: netfirms.png
       tfa: No
@@ -457,12 +457,13 @@ websites:
       img: pointdns.png
       tfa: No
 
-    - name: porkbun
+    - name: Porkbun
       url: https://porkbun.com
       img: porkbun.png
       tfa: Yes
       software: Yes
-      doc: https://porkbun.com/products/two_factor_authentication
+      hardware: Yes
+      doc: https://kb.porkbun.com/category/20--
 
     - name: Rebel.com
       url: https://www.rebel.com/
@@ -476,7 +477,7 @@ websites:
       img: register4less.png
       tfa: Yes
       software: Yes
-      doc: http://blog.register4less.com/?p=43
+      doc: https://blog.register4less.com/two-factor-authentication/
 
     - name: Registro.br
       url: https://registro.br
@@ -496,10 +497,11 @@ websites:
 
     - name: UK2
       url: https://www.uk2.net/
-      twitter: UK2
-      facebook: UK2.net
       img: uk2.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://www.uk2.net/knowledgebase/display/UK2/Two+Factor+Authentication+Security+-+2FA
 
     - name: Uniregistry
       url: https://uniregistry.com/
@@ -542,6 +544,6 @@ websites:
 
     - name: Verio
       url: https://www.verio.com/
-      twitter: Verio
+      twitter: verio
       img: verio.png
       tfa: No

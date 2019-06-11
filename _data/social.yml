@@ -5,6 +5,8 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      exceptions:
+        text: "A verified phone number is required for the use of two-factor authentication software."
       doc: https://support.500px.com/hc/en-us/articles/205115877-How-do-I-setup-Two-Factor-Authentication
 
     - name: about.me
@@ -50,7 +52,7 @@ websites:
 
     - name: DeviantArt
       url: https://www.deviantart.com
-      twitter: deviantart
+      twitter: DeviantArt
       img: deviantart.png
       tfa: No
 
@@ -79,7 +81,7 @@ websites:
 
     - name: Foursquare
       url: https://foursquare.com
-      twitter: foursquare
+      twitter: Foursquare
       img: foursquare.png
       tfa: No
 
@@ -198,7 +200,7 @@ websites:
       url: https://www.quora.com
       img: quora.png
       tfa: No
-      twitter: quora
+      twitter: Quora
 
     - name: Reddit
       url: https://www.reddit.com/
@@ -261,7 +263,7 @@ websites:
       doc: https://vk.com/page-59800369_47885415
 
     - name: Weibo
-      url: http://www.weibo.com
+      url: https://www.weibo.com/
       img: weibo.png
       tfa: No
 
