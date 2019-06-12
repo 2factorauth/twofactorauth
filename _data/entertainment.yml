@@ -335,17 +335,14 @@ websites:
 - name: Twitch
   url: https://www.twitch.tv/
   img: twitch.png
-  bch: false
-  btc: false
+  bch: true
+  btc: true
   othercrypto: false
   twitter: Twitch
   facebook: Twitch
   keywords:
   - xsolla
   - skrill
-  exceptions:
-    text: Twitch used to accept BTC & BCH, but as of 2019-03-23 stopped accepting
-      it
 - name: Vimeo
   url: https://vimeo.com/
   img: vimeo.png
