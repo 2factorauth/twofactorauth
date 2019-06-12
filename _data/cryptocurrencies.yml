@@ -219,7 +219,9 @@ websites:
       phone: Yes
       hardware: Yes
       otp: Yes
-      doc: https://support.coinbase.com/customer/en/portal/articles/1658338-how-do-i-set-up-2-factor-authentication-with-authy-
+      u2f: Yes
+      multipleu2f: Yes
+      doc: https://support.coinbase.com/customer/en/portal/articles/2820377-2-factor-authentication-2fa-faq
 
     - name: CoinDeal
       url: https://coindeal.com
