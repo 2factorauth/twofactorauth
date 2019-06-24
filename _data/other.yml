@@ -28,6 +28,15 @@ websites:
       sms: Yes
       doc: https://support.airtable.com/hc/en-us/articles/219409917-Setting-up-two-factor-authentication
 
+    - name: Ancestry
+      url: https://www.ancestry.com
+      img: ancestry.png
+      tfa: Yes
+      sms: Yes
+      doc: https://support.ancestry.com/s/article/MFA
+      exceptions:
+          text: "2FA is currently only available for customers with a U.S. based phone number."
+
     - name: AngelList
       url: https://angel.co
       img: angellist.png
