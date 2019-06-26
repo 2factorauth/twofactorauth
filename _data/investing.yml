@@ -187,7 +187,9 @@ websites:
       phone: Yes
       hardware: Yes
       u2f: Yes
-      doc: https://investornews.vanguard/sign-up-for-these-3-security-features/
+      doc: https://investor.vanguard.com/security/security-keys
+      exceptions:
+        text: "SMS 2FA setup required to use U2F"
 
     - name: Wealthfront
       url: https://www.wealthfront.com/
