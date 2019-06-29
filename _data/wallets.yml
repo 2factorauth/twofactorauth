@@ -18,11 +18,14 @@ websites:
 - name: Bitcoin ABC
   url: https://www.bitcoinabc.org/
   img: bitcoinabc.png
+  twitter: Bitcoin_ABC
+  facebook: bitcoinabc.org
   bch: true
   btc: false
 - name: Bitcoin Unlimited
   url: https://www.bitcoinunlimited.info/
   img: bitcoinunlimited.png
+  twitter: BitcoinUnlimit
   bch: true
   btc: true
 - name: Bitcoin XT
@@ -33,6 +36,7 @@ websites:
 - name: Bitcoin.com Wallet
   url: https://wallet.bitcoin.com/
   img: bitcoincom.png
+  twitter: BitcoinCom
   bch: true
   btc: true
   doc: https://news.bitcoin.com/introducing-the-simple-to-use-and-robust-bitcoin-com-wallet/
@@ -134,8 +138,8 @@ websites:
   btc: true
   othercrypto: false
 - name: Crescent Cash
-  url: https://pokkst.xyz/crescentcash/
-  twitter: pokkst
+  url: https://crescent.cash/
+  twitter: crescentcash
   bch: true
   btc: false
   othercrypto: false
@@ -197,6 +201,7 @@ websites:
 - name: KeepKey
   url: https://shapeshift.io/keepkey/
   img: keepkey.png
+  twitter: cryptokeepkey
   bch: true
   btc: true
   othercrypto: true
@@ -214,6 +219,8 @@ websites:
 - name: Ledger
   url: https://www.ledgerwallet.com/
   img: ledger.png
+  twitter: Ledger
+  facebook: Ledger
   bch: true
   btc: true
   othercrypto: true
