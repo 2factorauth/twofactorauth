@@ -233,5 +233,5 @@ websites:
       software: Yes
       hardware: Yes
       exceptions:
-        text: "While the documentation makes no mention of this, when you go to add a Yubikey (the only hardware token supported), it says U2F Yubikeys are not supported. Yubikeys are only supported in OTP mode, not U2F mode."
+        text: "Hardware 2FA only supports YubiKeys with Yubico OTP credentials."
       doc: https://www.vultr.com/docs/using-two-factor-authentication-to-login-to-vultr-control-panel
