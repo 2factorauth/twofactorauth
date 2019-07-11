@@ -1,4 +1,13 @@
 websites:
+  - name: Discourse
+    url: https://www.discourse.org/
+    img: discourse.png
+    tfa: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    doc: https://meta.discourse.org/t/discourse-2-0-0-beta4-release-notes/82446
+
   - name: Gluu
     url: https://www.gluu.org
     img: gluu.png
