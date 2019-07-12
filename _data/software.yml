@@ -26,6 +26,15 @@ websites:
     u2f: Yes
     doc: http://www.greenrocketsecurity.com/greenradius/2fa/fido-1-0-u2f/
 
+  - name: Joomla
+    url: https://www.joomla.org/
+    img: joomla.png
+    tfa: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    doc: https://docs.joomla.org/J3.x:Two_Factor_Authentication
+
   - name: LinOTP
     url: https://www.linotp.org
     img: linotp.png
@@ -64,6 +73,16 @@ websites:
     otp: Yes
     u2f: Yes
     doc: https://docs.nextcloud.com/server/14/user_manual/user_2fa.html
+
+  - name: phpMyAdmin
+    url: https://www.phpmyadmin.net/
+    img: phpmyadmin.png
+    tfa: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    u2f: Yes
+    doc: https://docs.phpmyadmin.net/en/latest/two_factor.html
 
   - name: privacyIDEA
     url: https://privacyidea.org
