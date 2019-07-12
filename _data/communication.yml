@@ -182,6 +182,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
+      doc: https://help.mailgun.com/hc/en-us/articles/360011664433
 
     - name: Maxemail
       url: https://maxemail.emailcenteruk.com/
@@ -221,7 +222,7 @@ websites:
       hardware: Yes
       otp: Yes
       u2f: Yes
-      doc: https://help.salesforce.com/articleView?id=activating_computer.htm&type=5
+      doc: https://developer.salesforce.com/docs/atlas.en-us.identityImplGuide.meta/identityImplGuide/add_time-based_token.htm
 
     - name: SendGrid
       url: https://sendgrid.com/
@@ -231,7 +232,7 @@ websites:
       software: Yes
       exceptions:
           text: "Software authentication requires the Authy app."
-      doc: https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
+      doc: https://sendgrid.com/docs/ui/account-and-settings/two-factor-authentication/
 
     - name: Sendloop
       url: https://app.sendloop.com

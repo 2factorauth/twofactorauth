@@ -103,7 +103,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://kb.mailbox.org/pages/viewpage.action?pageId=1180161
+      doc: https://kb.mailbox.org/x/5AcS
 
     - name: Mailfence
       url: https://mailfence.com/
@@ -189,8 +189,11 @@ websites:
       twitter: seznam_cz
       facebook: sledujseznam
       img: seznamcz.png
-      tfa: No
-      lang: cz
+      tfa: Yes
+      software: Yes
+      exceptions:
+        text: "Software implementation requires use of the Seznam app."
+      doc: https://blog.seznam.cz/2018/04/seznam-cz-ma-nove-dvoufazove-overeni-u-vsech-svych-sluzeb-zvysi-zabezpeci-prihlasovani-napriklad-do-emailu/
       
     - name: StartMail
       url: https://www.startmail.com

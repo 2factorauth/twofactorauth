@@ -37,7 +37,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: http://help.dwolla.com/customer/portal/articles/2068158-two-factor-authentication-faq?b_id=5438
+      doc: https://support.dwolla.com/customer/portal/articles/2079147
 
     - name: Flattr
       img: flattr.png
@@ -112,7 +112,9 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://www.paypal.com/us/smarthelp/article/what-is-2-step-verification-faq4057
+      exceptions:
+          text: "2FA is only available in a few countries. Contact PayPal on Twitter for an up-to-date list of available countries."
+      doc: https://www.paypal.com/us/smarthelp/article/faq4057
 
     - name: Paysafecard
       url: https://www.paysafecard.com/

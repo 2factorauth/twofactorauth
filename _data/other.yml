@@ -32,6 +32,15 @@ websites:
       sms: Yes
       doc: https://support.airtable.com/hc/en-us/articles/219409917-Setting-up-two-factor-authentication
 
+    - name: Ancestry
+      url: https://www.ancestry.com
+      img: ancestry.png
+      tfa: Yes
+      sms: Yes
+      doc: https://support.ancestry.com/s/article/MFA
+      exceptions:
+          text: "2FA is currently only available for customers with a U.S. based phone number."
+
     - name: AngelList
       url: https://angel.co
       img: angellist.png
@@ -279,6 +288,14 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://docs.growingio.com/docs/configuration/account-management#22-kai-qi-er-ci-ren-zheng
+
+    - name: Help Scout
+      url: https://helpscout.com
+      img: helpscout.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://docs.helpscout.com/article/907--
 
     - name: IEEE
       url: https://www.ieee.org
@@ -580,6 +597,14 @@ websites:
       doc: https://www.watchmanmonitoring.com/two-factor-authentication
       exceptions:
           text: "Two factor authentication unavailable for 'End User' access, which is read-only."
+
+    - name: Weclapp 
+      url: https://weclapp.com/
+      img: weclapp.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://doc.weclapp.com/knowledgebase/zwei-wege-authentifizierung-2fa/
 
     - name: Wikia
       url: https://www.wikia.com/

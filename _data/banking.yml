@@ -341,7 +341,7 @@ websites:
       tfa: No
       twitter: dbsbank
       facebook: dbs.sg
-      
+
     - name: Desert Financial Credit Union
       url: https://www.desertfinancial.com
       img: desertfinancialcu.png
@@ -458,7 +458,7 @@ websites:
       img: fio-cz.png
       tfa: No
       lang: cz
-      
+
     - name: First Community Credit Union
       url: https://www.firstcommunity.com/
       img: first_community_cu.png
@@ -508,13 +508,6 @@ websites:
       img: gls.png
       tfa: No
       lang: de
-
-    - name: GS Bank
-      url: https://www.gsbank.com
-      twitter: GoldmanSachs
-      facebook: goldmansachs
-      img: gsbank.png
-      tfa: No
 
     - name: Halifax
       url: https://www.halifax.co.uk
@@ -654,6 +647,13 @@ websites:
       tfa: No
       twitter: MandT_Help
       facebook: MandTBank
+
+    - name: Marcus by Goldman Sachs
+      url: https://www.marcus.com/
+      img: marcus.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
 
     - name: MBNA Canada
       url: https://www.mbna.ca
@@ -1246,11 +1246,10 @@ websites:
 
     - name: Zurich Cantonal Bank (ZKB)
       url: https://www.zkb.ch/
-      img:  zkb.png
+      img: zkb.png
       tfa: Yes
-      sms: Yes
-      email: Yes
-      phone: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+          text: "Software & Hardware authentication requires the ZKB photoTAN app or PhotoTAN device."
       doc: https://www.zkb.ch/de/pr/pk/efinance/ebanking/login-verfahren.html

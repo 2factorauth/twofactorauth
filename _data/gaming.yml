@@ -16,9 +16,9 @@ websites:
     - name: Black Desert Online
       url: https://www.blackdesertonline.com/
       img: bdo.png
-      twitter: BDO_News
-      facebook: BlackDesertOnline
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://blackdesert.zendesk.com/hc/en-us/articles/360000535909
 
     - name: 'Blade & Soul'
       url: https://www.bladeandsoul.com/
@@ -37,6 +37,12 @@ websites:
       exceptions:
           text: "Authentication requires the Blizzard Authenticator app."
       doc: https://us.battle.net/support/en/article/Blizzard-Authenticator
+
+    - name: Bohemia Interactive
+      url: https://www.bohemia.net/
+      img: bohemia.png
+      tfa: Yes
+      software: Yes
 
     - name: Curse
       url: https://www.curse.com/
@@ -209,7 +215,6 @@ websites:
       email: Yes
       doc: https://support.riotgames.com/hc/en-us/articles/360010367273
 
-
     - name: lichess.org
       url: https://lichess.org
       img: lichess.png
@@ -221,6 +226,13 @@ websites:
       twitter: MojangSupport
       img: mojang.png
       tfa: No
+      
+    - name: Nexus Mods
+      url: https://www.nexusmods.com/
+      img: nexusmods.png
+      tfa: Yes
+      email: Yes
+      doc: https://help.nexusmods.com/article/74--
 
     - name: Nintendo Account
       url: https://accounts.nintendo.com/
@@ -258,6 +270,13 @@ websites:
       software: Yes
       email: Yes
       doc: https://robertsspaceindustries.com/faq/two-step-authentication
+
+    - name: Roblox
+      url: https://roblox.com
+      img: roblox.png
+      tfa: Yes
+      email: Yes
+      doc: https://en.help.roblox.com/hc/en-us/articles/212459863
 
     - name: Rockstar Games Social Club
       url: https://socialclub.rockstargames.com
@@ -342,6 +361,7 @@ websites:
       img: uplay.png
       tfa: Yes
       software: Yes
+      email: Yes
       doc: https://support.ubi.com/en-GB/Faqs/000025170/Secure-your-account-with-2-Step-Verification
 
     - name: Wargaming
@@ -350,13 +370,6 @@ websites:
       software: Yes
       img: wargaming.png
       doc: https://wargaming.net/support/kb/articles/792
-
-    - name: WildStar
-      url: https://www.wildstar-online.com/
-      img: wildstar.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.wildstar-online.com/hc/en-us/articles/203982369-Two-Step-Verification-FAQ
 
     - name: Wizard101
       url: https://www.wizard101.com

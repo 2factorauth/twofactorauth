@@ -493,9 +493,9 @@ websites:
     - name: RubyGems.org
       url: https://rubygems.org
       img: rubygems.png
-      tfa: No
-      twitter: rubygems
-      email_address: security@rubygems.org
+      tfa: Yes
+      software: Yes
+      doc: https://guides.rubygems.org/setting-up-multifactor-authentication/
 
     - name: Sauce Labs
       url: https://saucelabs.com
@@ -588,7 +588,8 @@ websites:
       img: unity.png
       tfa: Yes
       sms: Yes
-      doc: https://support.unity3d.com/hc/en-us/articles/208764976-How-do-I-enable-Two-Factor-Authentication-on-my-account-
+      software: Yes
+      doc: https://support.unity3d.com/hc/en-us/articles/208764976
 
     - name: Uptime Robot
       url: https://uptimerobot.com
