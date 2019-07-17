@@ -215,6 +215,8 @@ websites:
       email: Yes
       software: Yes
       doc: https://www.capitalone.com/identity-protection/swiftid/
+      exceptions:
+       text: "Software implementation requires use of Capital One app."
 
     - name: CDC Federal Credit Union
       url: https://www.cdcfcu.com
