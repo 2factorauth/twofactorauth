@@ -232,4 +232,6 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+        text: "Hardware 2FA only supports YubiKeys with Yubico OTP credentials."
       doc: https://www.vultr.com/docs/using-two-factor-authentication-to-login-to-vultr-control-panel
