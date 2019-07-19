@@ -422,10 +422,12 @@ websites:
       doc: https://pushover.net/faq#security-2fa
 
     - name: PyPI
-      url: https://pypi.python.org/
-      twitter: pypi
+      url: https://pypi.org/
       img: pypi.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://pypi.org/help/#twofa
 
     - name: PythonAnywhere
       url: https://www.pythonanywhere.com
