@@ -34,6 +34,16 @@ websites:
       facebook: babbel.languages
       email_address: support@en.babbel.com
 
+    - name: Boston University
+      url: https://www.bu.edu
+      img: bu.png
+      tfa: Yes
+      sms: yes
+      phone: yes
+      software: yes
+      hardware: yes
+      doc: https://www.bu.edu/tech/support/duo/
+
     - name: California Institute of Technology (CalTech)
       url: https://www.caltech.edu
       img: caltech.png
@@ -317,6 +327,14 @@ websites:
       facebook: royalroadsu
       img: royalroads.png
       tfa: No
+      
+    - name: Ryerson University
+      url: https://www.ryerson.ca
+      tfa: Yes
+      img: ryerson.png
+      hardware: Yes
+      software: Yes
+      doc: https://www.ryerson.ca/ccs/services/ITSecurity/protecting-your-identity/two-factor-authentication/
 
     - name: SchoolSoft
       url: https://www.schoolsoft.se/

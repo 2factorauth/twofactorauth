@@ -456,19 +456,27 @@ websites:
       img: pointdns.png
       tfa: No
 
-    - name: porkbun
+    - name: Porkbun
       url: https://porkbun.com
       img: porkbun.png
       tfa: Yes
       software: Yes
-      doc: https://porkbun.com/products/two_factor_authentication
+      hardware: Yes
+      doc: https://kb.porkbun.com/category/20--
 
     - name: Rebel.com
       url: https://www.rebel.com/
       twitter: rebeldotcom
-      facebook: rebeldotcomhosting
+      facebook: rebelhostinganddomains
       img: rebel.png
       tfa: No
+      
+    - name: Rebrandly
+      url: https://rebrandly.com
+      img: rebrandly.png
+      tfa: Yes 
+      software: Yes
+      doc: https://support.rebrandly.com/hc/en-us/articles/360007220373
 
     - name: Register4Less
       url: https://register4less.com/
@@ -495,10 +503,11 @@ websites:
 
     - name: UK2
       url: https://www.uk2.net/
-      twitter: UK2
-      facebook: UK2.net
       img: uk2.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      sms: Yes
+      doc: https://www.uk2.net/knowledgebase/display/UK2/Two+Factor+Authentication+Security+-+2FA
 
     - name: Uniregistry
       url: https://uniregistry.com/

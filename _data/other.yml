@@ -28,6 +28,15 @@ websites:
       sms: Yes
       doc: https://support.airtable.com/hc/en-us/articles/219409917
 
+    - name: Ancestry
+      url: https://www.ancestry.com
+      img: ancestry.png
+      tfa: Yes
+      sms: Yes
+      doc: https://support.ancestry.com/s/article/MFA
+      exceptions:
+          text: "2FA is currently only available for customers with a U.S. based phone number."
+
     - name: AngelList
       url: https://angel.co
       img: angellist.png
@@ -574,6 +583,14 @@ websites:
       doc: https://www.watchmanmonitoring.com/two-factor-authentication
       exceptions:
           text: "Two factor authentication unavailable for 'End User' access, which is read-only."
+
+    - name: Weclapp 
+      url: https://weclapp.com/
+      img: weclapp.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://doc.weclapp.com/knowledgebase/zwei-wege-authentifizierung-2fa/
 
     - name: Wikia
       url: https://www.wikia.com/

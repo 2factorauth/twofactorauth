@@ -422,10 +422,12 @@ websites:
       doc: https://pushover.net/faq#security-2fa
 
     - name: PyPI
-      url: https://pypi.python.org/
-      twitter: pypi
+      url: https://pypi.org/
       img: pypi.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://pypi.org/help/#twofa
 
     - name: PythonAnywhere
       url: https://www.pythonanywhere.com
@@ -472,9 +474,9 @@ websites:
     - name: RubyGems.org
       url: https://rubygems.org
       img: rubygems.png
-      tfa: No
-      twitter: rubygems
-      email_address: security@rubygems.org
+      tfa: Yes
+      software: Yes
+      doc: https://guides.rubygems.org/setting-up-multifactor-authentication/
 
     - name: Sauce Labs
       url: https://saucelabs.com
@@ -563,6 +565,7 @@ websites:
       img: unity.png
       tfa: Yes
       sms: Yes
+      software: Yes
       doc: https://support.unity3d.com/hc/en-us/articles/208764976
 
     - name: Uptime Robot

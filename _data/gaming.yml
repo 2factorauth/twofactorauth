@@ -200,7 +200,6 @@ websites:
       email: Yes
       doc: https://support.riotgames.com/hc/en-us/articles/360010367273
 
-
     - name: lichess.org
       url: https://lichess.org
       img: lichess.png
@@ -212,6 +211,13 @@ websites:
       twitter: MojangSupport
       img: mojang.png
       tfa: No
+      
+    - name: Nexus Mods
+      url: https://www.nexusmods.com/
+      img: nexusmods.png
+      tfa: Yes
+      email: Yes
+      doc: https://help.nexusmods.com/article/74--
 
     - name: Nintendo Account
       url: https://accounts.nintendo.com/
@@ -249,6 +255,13 @@ websites:
       software: Yes
       email: Yes
       doc: https://robertsspaceindustries.com/faq/two-step-authentication
+
+    - name: Roblox
+      url: https://roblox.com
+      img: roblox.png
+      tfa: Yes
+      email: Yes
+      doc: https://en.help.roblox.com/hc/en-us/articles/212459863
 
     - name: Rockstar Games Social Club
       url: https://socialclub.rockstargames.com
@@ -333,7 +346,8 @@ websites:
       img: uplay.png
       tfa: Yes
       software: Yes
-      doc: https://support.ubi.com/en-GB/Faqs/000025170
+      email: Yes
+      doc: https://support.ubi.com/en-GB/Faqs/000039953
 
     - name: Wargaming
       url: https://wargaming.net/
