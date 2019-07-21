@@ -32,11 +32,18 @@ websites:
       hardware: Yes
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
-    - name: GMX
+    - name: GMX.com
       url: https://www.gmx.com/
       twitter: gmxmail
       img: gmx.png
       tfa: No
+
+    - name: GMX.net
+      url: https://www.gmx.net/
+      img: gmx_net.png
+      tfa: Yes
+      software: Yes
+      doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
 
     - name: Hushmail
       url: https://www.hushmail.com
