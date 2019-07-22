@@ -43,8 +43,9 @@ websites:
     - name: GoCardless
       img: gocardless.png
       url: https://gocardless.com/
-      twitter: GoCardless
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://support.gocardless.com/hc/en-gb/articles/360001164385
 
     - name: Google Wallet
       url: https://www.google.se/wallet/
