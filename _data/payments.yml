@@ -146,7 +146,7 @@ websites:
       img: ravelin.png
       tfa: Yes
       software: Yes
-      doc: https://ravelin.zendesk.com/hc/en-us/articles/115001071665-Two-Factor-Authentication
+      doc: https://ravelin.zendesk.com/hc/en-us/articles/115001071665
 
     - name: Recurly
       url: https://www.recurly.com/
@@ -179,7 +179,7 @@ websites:
       software: Yes
       exceptions:
         text: "SMS only supported in US and Canada"
-      doc: https://squareup.com/help/us/en/article/5593-2-step-verification
+      doc: https://squareup.com/help/us/en/article/5593
 
     - name: Square Cash
       url: https://cash.me
@@ -208,7 +208,7 @@ websites:
       img: venmo.png
       tfa: Yes
       sms: Yes
-      doc: https://help.venmo.com/hc/en-us/articles/217532397--Confirm-my-identity-on-sign-in-Why
+      doc: https://help.venmo.com/hc/en-us/articles/217532397
 
     - name: Visa Checkout
       url: https://secure.checkout.visa.com/

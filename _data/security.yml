@@ -55,7 +55,7 @@ websites:
       img: cloudflare.png
       tfa: Yes
       software: Yes
-      doc: https://support.cloudflare.com/hc/en-us/articles/200167866-How-do-I-set-up-two-factor-authentication-
+      doc: https://support.cloudflare.com/hc/en-us/articles/200167866
 
     - name: Cobalt
       url: https://cobalt.io/
@@ -146,7 +146,7 @@ websites:
       img: prey.png
       tfa: Yes
       software: Yes
-      doc: https://help.preyproject.com/article/248-how-to-enable-the-two-step-authenticator-for-prey
+      doc: https://help.preyproject.com/article/248--
 
     - name: Pwnie Express Pwn Pulse
       url: https://www.pwnieexpress.com/products/pulse-device-detection
@@ -155,7 +155,7 @@ websites:
       software: Yes
       exceptions:
           text: "TFA can be enabled on Pwn Pulse Accounts upon customer request."
-      doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909-chapter-5-pulse-administration-user-management
+      doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909
 
     - name: RBLTracker
       url: https://rbltracker.com/
