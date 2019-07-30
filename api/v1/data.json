@@ -1,0 +1,30 @@
+---
+---
+{
+{%-  assign tfa_tags = "tfa, sms, phone, software, hardware" | split: ', ' -%}
+
+    {%- for section in site.data.sections -%}
+    {%- assign section_file = site.data[section.id] -%}
+    "{{ section.title }}": {
+                        {%- for website in section_file.websites -%}
+                                "{{ website.name }}": {
+                                    {%-for tag in website -%}
+                                      {%- unless tfa_tags contains tag[0] -%}
+                                    {%-if tag[0] != "exceptions"-%}"{{ tag[0] }}": {%- if tag[1] == true or tag[1] == false -%}{{tag[1]}}{%-else-%}"{{ tag[1] }}"{%-endif-%}{%-else-%}"{{ tag[0] }}": {
+                                    {%- for exception in tag[1] -%}
+                                     "{{ exception[0] }}": "{{ exception[1] }}"{%-if forloop.last != true-%},{%-endif-%}
+                                {%-endfor-%}}{%-endif-%}
+                                      {%- else -%}
+                                        {%- unless tag[1] == false -%}
+                                         "{{ tag[0] }}": true
+                                          {%- else -%}
+                                          "{{ tag[0] }}": false
+                                          {%-  endunless -%}
+                                        {%- endunless -%}
+                                      {%-if forloop.last != true-%},{%-endif-%}
+                                    {%-endfor-%}
+                               }{%- if forloop.last != true -%},{%- endif -%}
+                        {%- endfor -%}
+                        }{%- if forloop.last != true -%},{%- endif -%}
+    {%- endfor -%}
+}
