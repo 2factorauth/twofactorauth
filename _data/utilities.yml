@@ -464,6 +464,7 @@ websites:
 
     - name: VoIP.ms
       url: https://voip.ms/
-      twitter: voipms
       img: voipms.png
-      tfa: No
+      tfa: Yes
+      email: Yes
+      doc: https://wiki.voip.ms/article/Two-step_Verification
