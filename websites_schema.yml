@@ -25,6 +25,7 @@ mapping:
             mapping:
               "text":
                 type: str
+                pattern: /^(sms)+$|^(phone)+$|^(email)+$|^(software)+$|^(hardware)+$|^(totp)+$|^(proprietary_software)+$/
                 required: yes
           "exceptions":
             type: map
@@ -48,3 +49,4 @@ mapping:
             pattern: /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/
           "lang":
             type: str
+            pattern: /^[a-z]+$/
