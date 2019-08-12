@@ -20,13 +20,9 @@ mapping:
             pattern: /^[a-z0-9_\-\+]+\.png/
             required: yes
           "tfa":
-            required: yes
-            type: map
-            mapping:
-              "text":
-                type: str
-                pattern: /^(sms)+$|^(phone)+$|^(email)+$|^(software)+$|^(hardware)+$|^(totp)+$|^(proprietary_software)+$/
-                required: yes
+            type: seq
+            sequence:
+              - type: str
           "exceptions":
             type: map
             mapping:

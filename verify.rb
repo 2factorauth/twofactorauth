@@ -6,10 +6,11 @@ require 'kwalify'
 require 'diffy'
 @output = 0
 
+@tfa_options = %w[email hardware software sms phone totp proprietary_software]
 # YAML tags related to TFA
 @tfa_tags = {
   # YAML tags for TFA Yes
-  true => %w[email hardware software sms phone doc],
+  true => %w[doc],
   # YAML tags for TFA No
   false => %w[status twitter facebook email_address lang]
 }.freeze
@@ -102,6 +103,17 @@ begin
     imgs = Dir["img/#{section['id']}/*"]
 
     websites.each do |website|
+      unless website['tfa'].nil?
+      website['tfa'].each do |tag|
+        next if @tfa_options.include? tag
+          if tag =~ /[A-Z]/
+            error("#{website['name']}: \"#{tag}\" is not lowercase.")
+          else
+            error("#{website['name']}: \"#{tag}\" is not a valid tfa option.")
+          end
+        end
+      end
+
       @tfa_tags[!website['tfa']].each do |tag|
         next if website[tag].nil?
 
