@@ -1,33 +1,8 @@
 <div class="ui teal inverted menu">
-  {% if include.page == 'home' %}
-  <a href="/" class="active item">
-    {% else %}
-    <a href="/" class="item">
-      {% endif %}
-      <i class="home icon"></i>
-      Home
-    </a>
-
-    {% if include.page == 'home' %}
-    <div class="ui dropdown item">
-      Categories <i class="dropdown icon"></i>
-      <div class="menu">
-        {% for section in site.data.main.sections %}
-        {% if forloop.first %}
-        <a href="#" class="item">
-          <i class="{{ section.icon }} icon"></i>
-          {{ section.title }}
-        </a>
-        {% else %}
-        <a href="#{{ section.id }}" class="item">
-          <i class="{{ section.icon }} icon"></i>
-          {{ section.title }}
-        </a>
-        {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
+  <a href="/" class="item">
+    <i class="home icon"></i>
+    Home
+  </a>
 
     <div class="right menu">
       <a href="{{ site.repo }}" class="item">
@@ -35,17 +10,4 @@
         Contribute
       </a>
     </div>
-
-    {% if 1 == 0 %}
-    <!-- Don't show for right now -->
-    {% if include.page == 'restrictions' %}
-    <a href="/restrictions" class="active item">
-      {% else %}
-      <a href="/restrictions" class="item">
-        {% endif %}
-        <i class="warning icon"></i>
-        Restrictions
-      </a>
-      {% endif %}
-
 </div>

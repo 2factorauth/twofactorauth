@@ -32,11 +32,18 @@ websites:
       hardware: Yes
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
-    - name: GMX
+    - name: GMX.com
       url: https://www.gmx.com/
       twitter: gmxmail
       img: gmx.png
       tfa: No
+
+    - name: GMX.net
+      url: https://www.gmx.net/
+      img: gmx_net.png
+      tfa: Yes
+      software: Yes
+      doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
 
     - name: Hushmail
       url: https://www.hushmail.com
@@ -45,7 +52,14 @@ websites:
       sms: Yes
       email: Yes
       software: Yes
-      doc: https://help.hushmail.com/entries/63282756-Two-step-verification
+      doc: https://help.hushmail.com/hc/en-us/articles/213268943
+
+    - name: Kerio Connect
+      url: https://www.kerio.com/products/kerio-connect
+      img: kerio.png
+      twitter: keriotech
+      facebook: keriotech
+      tfa: No
 
     - name: Legalmail
       url: https://www.legalmail.it/
@@ -84,7 +98,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://support-en.mailbox.org/knowledge-base/article/is-there-a-two-factor-authentication
+      doc: https://kb.mailbox.org/x/5AcS
 
     - name: Mailfence
       url: https://mailfence.com/
@@ -95,9 +109,9 @@ websites:
 
     - name: Migadu
       url: https://www.migadu.com/
-      email_address: contact@migadu.com
       img: migadu.png
-      tfa: No
+      tfa: Yes
+      software: Yes
 
     - name: Mimecast
       url: https://www.mimecast.com/
@@ -120,7 +134,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
+      doc: https://support.microsoft.com/en-us/help/12408/
 
     - name: Pobox
       url: https://www.pobox.com/
@@ -157,15 +171,24 @@ websites:
       software: Yes
       doc: https://help.runbox.com/account-security/
 
+    - name: Seznam.cz
+      url: https://seznam.cz
+      img: seznamcz.png
+      tfa: Yes
+      software: Yes
+      exceptions:
+        text: "Software implementation requires use of the Seznam app."
+      doc: https://blog.seznam.cz/2018/04/seznam-cz-ma-nove-dvoufazove-overeni-u-vsech-svych-sluzeb-zvysi-zabezpeci-prihlasovani-napriklad-do-emailu/
+      
     - name: StartMail
       url: https://www.startmail.com
       img: startmail.png
       tfa: Yes
       software: Yes
-      doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704/4/how-to-set-up-two-factor-authentication-2fa
+      doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704
 
     - name: T-Online
-      url: http://www.t-online.de/
+      url: https://www.t-online.de/
       twitter: Telekom_hilft
       facebook: tonline.de
       img: tonline.png

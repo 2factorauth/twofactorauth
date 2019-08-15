@@ -4,10 +4,9 @@ websites:
     img: icloud.png
     tfa: Yes
     sms: Yes
+    phone: Yes
     software: Yes
-    exceptions:
-        text: "See https://support.apple.com/HT202656 for a list of supported SMS carriers."
-    doc: https://support.apple.com/HT204152
+    doc: https://support.apple.com/en-us/HT204915
 
   - name: Backblaze
     url: https://www.backblaze.com
@@ -15,7 +14,7 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
-    doc: https://help.backblaze.com/hc/en-us/articles/217666588-Two-Factor-Verification
+    doc: https://help.backblaze.com/hc/en-us/articles/217666588
 
   - name: Box
     url: https://www.box.com/
@@ -53,7 +52,7 @@ websites:
     sms: Yes
     software: Yes
     hardware: Yes
-    doc: https://www.dropbox.com/en/help/363
+    doc: https://help.dropbox.com/security/enable-two-step-verification
 
   - name: Evernote
     url: https://evernote.com
@@ -61,7 +60,7 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
-    doc: https://help.evernote.com/hc/en-us/articles/208314238-How-to-set-up-two-step-verification
+    doc: https://help.evernote.com/hc/en-us/articles/208314238
 
   - name: FileThis
     url: https://filethis.com
@@ -88,10 +87,10 @@ websites:
 
   - name: IDrive
     url: https://www.idrive.com
-    twitter: IDriveBackup
     img: idrive.png
-    tfa: No
-    facebook: IDriveBackup
+    tfa: Yes
+    email: Yes
+    doc: https://blog.idrive.com/2018/11/16/idrive-adds-two-factor-authentication/
 
   - name: Jottacloud
     url: https://www.jottacloud.com
@@ -103,7 +102,7 @@ websites:
 
   - name: JustCloud
     url: https://www.justcloud.com
-    twitter: justcloudcom
+    twitter: JustCloudcom
     img: justcloud.png
     tfa: No
     facebook: JustCloudStorage
@@ -144,7 +143,15 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
-    doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
+    doc: https://support.microsoft.com/en-us/help/12408/
+
+  - name: PCloud
+    url: https://www.pcloud.com
+    img: pcloud.png
+    tfa: Yes
+    sms: Yes
+    software: Yes
+    doc: https://www.pcloud.com/help/general-help-center/67-how-can-i-set-up-two-factor-authentication
 
   - name: Pogoplug
     url: https://pogoplug.com/
@@ -171,7 +178,7 @@ websites:
 
   - name: SpiderOak
     url: https://spideroak.com
-    twitter: spideroak
+    twitter: SpiderOak
     img: spideroak.png
     tfa: No
     facebook: SpiderOak
@@ -205,7 +212,7 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
-    doc: https://thisdata.com/blog/how-to-enable-two-factor-authentication/
+    doc: http://help.thisdata.com/docs/two-factor-authentication
 
   - name: Tresorit
     url: https://tresorit.com/
@@ -215,7 +222,14 @@ websites:
     phone: Yes
     software: Yes
     email: Yes
-    doc: https://support.tresorit.com/entries/104192996-How-to-set-up-two-step-verification
+    doc: https://support.tresorit.com/hc/en-us/articles/216114527
+
+  - name: Wasabi
+    url: https://wasabi.com/
+    img: wasabi.png
+    tfa: Yes
+    software: Yes
+    doc: https://wasabi.com/wp-content/themes/wasabi/docs/User_Guide/index.html#t=topics%2FCONSOLE_ACCESS_for_the_Root_User.htm
 
   - name: Yandex.Disk
     url: https://disk.yandex.com

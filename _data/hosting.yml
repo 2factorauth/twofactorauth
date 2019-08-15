@@ -32,7 +32,7 @@ websites:
       img: binarylane.png
       tfa: Yes
       software: yes
-      doc: https://www.binarylane.com.au/support/solutions/articles/1000199372-two-factor-authentication
+      doc: https://www.binarylane.com.au/support/solutions/articles/1000199372
 
     - name: Binero
       url: https://www.binero.se
@@ -40,6 +40,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://blogg.binero.se/2017/10/tvafaktorsautentisering/
+
+    - name: Blacknight
+      url: https://blacknight.com
+      img: blacknight.png
+      tfa: Yes
+      software: Yes
+      doc: https://help.blacknight.com/hc/en-us/articles/360001358517
 
     - name: Bluehost
       url: https://www.bluehost.com/
@@ -49,6 +56,13 @@ websites:
       email: Yes
       doc: https://my.bluehost.com/cgi/help/two-factor-authentication
 
+    - name: CDN77
+      url: https://www.cdn77.com
+      img: cdn77.png
+      tfa: Yes
+      software: Yes
+      doc: https://client.cdn77.com/support/knowledgebase/billing/cdn77-two-step-authentication
+      
     - name: CDNsun
       url: https://cdnsun.com
       img: cdnsun.png
@@ -63,7 +77,7 @@ websites:
       software: Yes
 
     - name: CloudAtCost
-      url: http://cloudatcost.com
+      url: https://cloudatcost.com/
       img: cloudatcost.png
       twitter: cloudatcost
       tfa: No
@@ -201,7 +215,9 @@ websites:
       url: https://www.infomaniak.com/
       img: infomaniak.png
       tfa: Yes
+      sms: Yes
       software: Yes
+      hardware: Yes
       doc: https://www.infomaniak.ch/en/support/faq/1940
 
     - name: INIZ
@@ -289,11 +305,9 @@ websites:
 
     - name: Miss Hosting
       url: https://misshosting.com/
-      twitter: misshostingcom
-      facebook: misshostingcom
       img: misshosting.png
-      tfa: No
-      lang: sv
+      tfa: Yes
+      software: Yes
 
     - name: Mittwald
       url: https://www.mittwald.de/
@@ -315,7 +329,7 @@ websites:
       img: netcup.png
       tfa: Yes
       software: Yes
-      doc: http://www.netcup-wiki.de/wiki/Stammdaten_CCP#Zwei-Faktor-Authentifizierung_.282FA.29
+      doc: https://www.netcup-wiki.de/wiki/Stammdaten_CCP#Zwei-Faktor-Authentifizierung_.282FA.29
 
     - name: Nitrado
       url: https://server.nitrado.net/
@@ -383,6 +397,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://clientarea.ramnode.com/knowledgebase.php?action=displayarticle&id=70
+
+    - name: RunCloud
+      url: https://www.runcloud.io
+      img: runcloud.png
+      tfa: Yes
+      software: Yes
+      doc: https://runcloud.io/docs/account/authentication.html
 
     - name: section.io
       url: https://www.section.io
@@ -504,6 +525,13 @@ websites:
       tfa: No
       twitter: weebly
       facebook: weebly
+      
+    - name: Wix
+      url: https://www.wix.com/
+      twitter: WixHelp
+      facebook: wix
+      img: wix.png
+      tfa: No
 
     - name: WP Engine
       url: https://wpengine.com/
