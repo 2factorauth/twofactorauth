@@ -1,7 +1,7 @@
 websites:
     - name: Bandcamp
       url: https://bandcamp.com
-      twitter: bandcamp
+      twitter: Bandcamp
       facebook: Bandcamp
       img: bandcamp.png
       tfa: No
@@ -14,7 +14,7 @@ websites:
       tfa: No
 
     - name: Crunchyroll
-      url: http://www.crunchyroll.com/
+      url: https://www.crunchyroll.com/
       img: crunchyroll.png
       tfa: No
       twitter: Crunchyroll
@@ -25,6 +25,13 @@ websites:
       twitter: DeezerHelp
       facebook: Deezer
       img: deezer.png
+      tfa: No
+
+    - name: Floatplane
+      url: https://www.floatplane.com/
+      twitter: floatplanemedia
+      facebook: FloatplaneMedia
+      img: floatplane.png
       tfa: No
 
     - name: Google Play
@@ -38,7 +45,7 @@ websites:
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
     - name: Hotstar
-      url: http://www.hotstar.com/
+      url: https://www.hotstar.com/
       twitter: hotstar_helps
       facebook: hotstar
       img: hotstar.png
@@ -51,11 +58,11 @@ websites:
       img: hulu.png
       tfa: No
 
-    - name: IBM Cloud Video (Ustream)
-      url: https://www.ustream.tv/
-      twitter: ibmcloudvideo
-      facebook: ibmcloudvideo
-      img: ustream.png
+    - name: IBM Watson Media (Ustream)
+      url: https://video.ibm.com
+      twitter: IBMWatsonMedia
+      facebook: ibmwatsonmedia
+      img: ibm.png
       tfa: No
 
     - name: IMDb
@@ -67,7 +74,7 @@ websites:
 
     - name: Last.fm
       url: https://www.last.fm/
-      twitter: lastfmsupport
+      twitter: lastfm
       facebook: lastfm
       img: lastfm.png
       tfa: No
@@ -77,7 +84,7 @@ websites:
       img: mixer.png
       tfa: Yes
       software: Yes
-      doc: https://watchbeam.zendesk.com/hc/en-us/articles/115000997646-What-is-2FA-two-factor-authentication-and-How-do-I-set-it-up-
+      doc: https://watchbeam.zendesk.com/hc/en-us/articles/115000997646
 
     - name: Netflix
       url: https://www.netflix.com/us/
@@ -86,11 +93,18 @@ websites:
       img: netflix.png
       tfa: No
 
+    - name: Niconico
+      url: https://www.nicovideo.jp/
+      img: niconico.png
+      tfa: Yes
+      software: Yes
+      doc: https://qa.nicovideo.jp/faq/show/4500
+      
     - name: Pandora
       url: https://www.pandora.com
       img: pandora.png
       tfa: No
-      twitter: pandorasupport
+      twitter: PandoraSupport
       facebook: pandora
 
     - name: Picarto.TV
@@ -103,7 +117,7 @@ websites:
 
     - name: Plex
       url: https://www.plex.tv
-      twitter: plexapp
+      twitter: plex
       facebook: plexapp
       img: plex.png
       tfa: No
@@ -145,14 +159,14 @@ websites:
 
     - name: Spotify
       url: https://www.spotify.com/
-      twitter: spotifycares
+      twitter: SpotifyCares
       facebook: spotify
       img: spotify.png
       tfa: No
 
     - name: TIDAL
       url: https://tidal.com/
-      twitter: TIDALHiFi
+      twitter: TIDALSupport
       facebook: TIDAL
       email_address: support@tidal.com
       img: tidal.png
@@ -171,13 +185,13 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://blog.twitch.tv/2015/11/two-factor-authentication-now-available-on-your-twitch-account/
+      doc: https://help.twitch.tv/s/article/two-factor-authentication-with-authy
       exceptions:
-          text: "To activate two factor authentication, you must provide a mobile phone number."
+          text: "To activate two factor authentication, you must provide a mobile phone number. Software authentication requires the Authy app."
 
     - name: Vimeo
       url: https://vimeo.com/
-      twitter: vimeo
+      twitter: Vimeo
       facebook: Vimeo
       img: vimeo.png
       tfa: No

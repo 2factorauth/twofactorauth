@@ -7,7 +7,7 @@ websites:
       phone: Yes
       hardware: Yes
       software: Yes
-      doc: http://support.aha.io/hc/en-us/articles/202000957-Add-two-factor-authentication-2FA-
+      doc: https://support.aha.io/hc/en-us/articles/202000957
 
     - name: Airbrake
       url: https://airbrake.io
@@ -22,6 +22,13 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://www.algolia.com/doc/security/best-security-practices/#two-factor-authentication-2fa
+
+    - name: AppSignal
+      url: https://appsignal.com
+      img: appsignal.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.appsignal.com/user-account/two-factor-authentication.html
 
     - name: AppVeyor
       url: https://www.appveyor.com
@@ -180,7 +187,7 @@ websites:
 
     - name: Deploybot
       url: https://deploybot.com/
-      twitter: deploybothq
+      twitter: DeployBotHQ
       img: deploybot.png
       tfa: No
 
@@ -193,7 +200,7 @@ websites:
 
     - name: Docker
       url: https://www.docker.com/
-      twitter: docker
+      twitter: Docker
       facebook: docker.run
       img: docker.png
       tfa: No
@@ -203,7 +210,14 @@ websites:
       img: domino.png
       tfa: Yes
       software: Yes
-      doc: https://support.dominodatalab.com/hc/en-us/articles/115000998406-Two-Factor-Authentication
+      doc: https://support.dominodatalab.com/hc/en-us/articles/115000998406
+
+    - name: Drupal.org
+      url: https://www.drupal.org/
+      img: drupalorg.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.drupal.org/drupalorg/docs/user-accounts/setting-up-two-factor-authentication
 
     - name: Esri
       url: https://www.esri.com
@@ -213,11 +227,11 @@ websites:
       doc: https://doc.arcgis.com/en/arcgis-online/reference/multifactor.htm
 
     - name: 'FogBugz & Kiln'
-      url: https://www.fogcreek.com/fogbugz
+      url: https://www.fogbugz.com/
       img: fogbugz.png
       tfa: Yes
       software: Yes
-      doc: http://help.fogcreek.com/10892/two-factor-authentication
+      doc: https://help.manuscript.com/10892
 
     - name: GitHub
       url: https://github.com
@@ -271,7 +285,7 @@ websites:
       img: itglue.png
       tfa: Yes
       software: Yes
-      doc: https://kb.itglue.com/hc/en-us/articles/213293197-Using-multi-factor-authentication-MFA-
+      doc: https://kb.itglue.com/hc/en-us/articles/213293197
 
     - name: JetBrains
       url: https://jetbrains.com
@@ -408,10 +422,12 @@ websites:
       doc: https://pushover.net/faq#security-2fa
 
     - name: PyPI
-      url: https://pypi.python.org/
-      twitter: pypi
+      url: https://pypi.org/
       img: pypi.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://pypi.org/help/#twofa
 
     - name: PythonAnywhere
       url: https://www.pythonanywhere.com
@@ -433,7 +449,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://support.beanbaginc.com/support/solutions/articles/3000006998-enabling-two-factor-authentication
+      doc: https://beanbag.freshdesk.com/support/solutions/articles/3000006998
 
     - name: Read the Docs
       url: https://readthedocs.org
@@ -458,9 +474,9 @@ websites:
     - name: RubyGems.org
       url: https://rubygems.org
       img: rubygems.png
-      tfa: No
-      twitter: rubygems
-      email_address: security@rubygems.org
+      tfa: Yes
+      software: Yes
+      doc: https://guides.rubygems.org/setting-up-multifactor-authentication/
 
     - name: Sauce Labs
       url: https://saucelabs.com
@@ -509,7 +525,7 @@ websites:
 
     - name: StatusPage.io
       url: https://www.statuspage.io
-      twitter: statuspage
+      twitter: Statuspage
       facebook: statuspageio
       img: statuspageio.png
       tfa: No
@@ -549,7 +565,8 @@ websites:
       img: unity.png
       tfa: Yes
       sms: Yes
-      doc: https://support.unity3d.com/hc/en-us/articles/208764976-How-do-I-enable-Two-Factor-Authentication-on-my-account-
+      software: Yes
+      doc: https://support.unity3d.com/hc/en-us/articles/208764976
 
     - name: Uptime Robot
       url: https://uptimerobot.com
@@ -564,7 +581,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://windows.microsoft.com/en-us/windows/two-step-verification-faq
+      doc: https://support.microsoft.com/en-us/help/12408/
 
     - name: Zapier
       url: https://zapier.com

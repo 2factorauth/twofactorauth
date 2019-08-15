@@ -83,6 +83,13 @@ websites:
       img: eurowings.png
       tfa: No
 
+    - name: Finnair
+      url: https://www.finnair.com/
+      img: finnair.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+
     - name: Frontier
       url: https://www.flyfrontier.com
       twitter: FrontierCare
@@ -111,13 +118,6 @@ websites:
       img: jetblue.png
       tfa: No
 
-    - name: JetSmarter
-      url: https://jetsmarter.com/
-      twitter: JetSmarter
-      facebook: JetSmarter
-      img: jetsmarter.png
-      tfa: No
-
     - name: Lufthansa
       url: https://www.lufthansa.com
       twitter: lufthansa
@@ -136,13 +136,13 @@ websites:
       url: https://us.mytaxi.com
       img: mytaxi.png
       tfa: No
-      twitter: mytaxius
+      twitter: mytaxiUS
       facebook: myTaxi.us
 
     - name: Norwegian
       url: https://www.norwegian.com/
       twitter: Fly_Norwegian
-      facebook: norwegianairlines
+      facebook: flynorwegiannow
       img: norwegian.png
       tfa: No
 
@@ -246,7 +246,7 @@ websites:
 
     - name: Transport for London
       url: https://tfl.gov.uk/
-      twitter: tflwaystopay
+      twitter: TfL
       facebook: transportforlondon
       img: tfl.png
       tfa: No
@@ -271,4 +271,11 @@ websites:
       twitter: WestJet
       facebook: westjet
       img: westjet.png
+      tfa: No
+
+    - name: XO
+      url: https://flyxo.com/
+      twitter: flyxo_
+      facebook: XO-2289779651103450
+      img: xo.png
       tfa: No
