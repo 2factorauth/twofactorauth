@@ -282,11 +282,10 @@ websites:
 
     - name: comdirect
       url: https://www.comdirect.de/
-      twitter: comdirect
-      facebook: comdirect
       img: comdirect.png
-      tfa: No
-      lang: de
+      tfa: Yes
+      software: Yes
+      doc: https://www.comdirect.de/konto/photo-tan.html#Vorteile
 
     - name: Commercial Bank of Qatar
       url: http://www.cbq.qa/
@@ -991,12 +990,10 @@ websites:
 
     - name: Sparkasse
       url: https://www.sparkasse.de/
-      twitter: sparkasse
-      facebook: sparkasse
-      email_address: sparkasse@sparkassen-finanzportal.de
       img: sparkasse.png
-      tfa: No
-      lang: de
+      tfa: Yes
+      hardware: Yes
+      doc: https://www.sparkasse.de/service/sicherheit-im-internet/ihre-daten-bei-der-sparkasse.html
 
     - name: Splitska banka
       url: https://www.splitskabanka.hr/
