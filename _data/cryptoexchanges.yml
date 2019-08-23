@@ -51,6 +51,14 @@ websites:
   othercrypto: true
   facebook: ANXINTL
   twitter: ANX_PRO
+- name: BC Bitcoin
+  url: https://www.bcbitcoin.co.uk/
+  img: bcbitcoin.png
+  twitter: bc_bitcoin
+  facebook: BCBitcoinCrypto
+  bch: true
+  btc: true
+  othercrypto: true
 - name: BestRate.org
   url: https://bestrate.org
   twitter: Bestrateorg
@@ -152,6 +160,15 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: bitqist
+  url: https://www.bitqist.com
+  img: bitqist.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: bitqist
+  facebook: bitqist
+  email_address: derk@bitqist.com
 - name: Bitrush.nl
   url: https://bitrush.nl/nl/shop/eur-bch/bitcoin-cash
   img: bitrush.png
@@ -163,6 +180,8 @@ websites:
 - name: Bitstamp
   url: https://bitstamp.net
   img: bitstamp.png
+  twitter: Bitstamp
+  facebook: Bitstamp
   bch: true
   btc: true
   othercrypto: true
@@ -254,6 +273,14 @@ websites:
   btc: true
   othercrypto: true
   doc: https://blog.cex.io/news/bitcoin-cash-deposits-withdrawals-enabled-cex-io-16432
+- name: ChangeNOW
+  url: https://changenow.io/
+  img: changenow.png
+  twitter: ChangeNOW_io
+  facebook: ChangeNOW.io
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Cobinhood
   url: https://cobinhood.com/
   img: cobinhood.png
@@ -265,6 +292,8 @@ websites:
 - name: Coinbase
   url: https://www.coinbase.com/
   img: coinbase.png
+  twitter: Coinbase
+  facebook: coinbase
   bch: true
   btc: true
   othercrypto: true
@@ -272,6 +301,7 @@ websites:
 - name: Coinbase Pro
   url: https://pro.coinbase.com/
   img: coinbasepro.png
+  twitter: CoinbasePro
   bch: true
   btc: true
   othercrypto: true
@@ -286,7 +316,6 @@ websites:
 - name: CoinCola
   url: https://www.coincola.com/
   img: coincola.png
-  twitter: CoinCola7
   facebook: CoinCola
   bch: true
   btc: true
@@ -294,8 +323,6 @@ websites:
 - name: CoinDeal
   url: https://coindeal.com/
   img: CoinDeal.png
-  twitter: coin_deal
-  facebook: CoinDealCom
   email_address: katarzyna.pergol@coindeal.com
   bch: true
   btc: true
@@ -354,6 +381,14 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Coinsuper
+  url: https://www.coinsuper.com/
+  img: coinsuper.png
+  twitter: Coinsuper_OFCL
+  facebook: Coinsuper-2022907647988954
+  bch: true
+  btc: true
+  othercrypto: true
 - name: CoinSwitch
   url: https://coinswitch.co/
   img: coinswitch.png
@@ -388,15 +423,6 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.cryptofacilities.com/cryptocurrency-news/bch-usd-futures/
-- name: Cryptopia
-  url: https://www.cryptopia.co.nz/
-  img: cryptopia.png
-  bch: true
-  btc: true
-  othercrypto: true
-  doc: https://support.cryptopia.co.nz/csm?id=kb_article&sys_id=48613b3cdb50338032a664a14a9619ba
-  exceptions:
-    text: Cryptopia was hacked and repaid users with Cryptopia Loss Marker (CLM) token. This might result in bankruptcy. See docs link for details.
 - name: DSX
   url: https://dsx.uk/
   img: dsx.png
@@ -408,6 +434,13 @@ websites:
   img: dxexchange.png
   twitter: DXdotExchange
   facebook: dx.exchange
+  bch: true
+  btc: true
+  othercrypto: true
+- name: Easyrabbit
+  url: https://easyrabbit.net/
+  img: easyrabbit.png
+  twitter: easyrabbit_net
   bch: true
   btc: true
   othercrypto: true
@@ -432,7 +465,7 @@ websites:
   facebook: FaastCrypto
   bch: true
   btc: true
-  othercrypto: true  
+  othercrypto: true
   doc: https://medium.com/faast/bitcoin-cash-bch-now-supported-on-faast-3332c8e6f85f
 - name: FastX
   url: https://fastx.io
@@ -460,6 +493,13 @@ websites:
   btc: true
   othercrypto: false
   doc: https://support.gatehub.net/hc/en-us/articles/115004422789-Bitcoin-Cash-BCH-update
+- name: Gemini
+  url: https://gemini.com/
+  img: gemini.png
+  twitter: GeminiDotCom
+  bch: true
+  btc: false
+  othercrypto: true
 - name: Gibraltar Blockchain Exchange
   url: https://gbx.gi/
   img: gbx.png
@@ -469,25 +509,6 @@ websites:
   btc: true
   othercrypto: true
   region: eu
-- name: GDAX
-  url: https://www.gdax.com/
-  img: gdax.png
-  twitter: gdax
-  facebook: GDAX.Exchange
-  bch: true
-  btc: true
-  othercrypto: true
-  doc: https://support.gdax.com/customer/portal/articles/2911310-bitcoin-cash-faq
-  exceptions:
-    text: GDAX is becoming Coinbase Pro on June 29, 2018.
-- name: Gemini
-  url: https://gemini.com/
-  img: gemini.png
-  twitter: GeminiDotCom
-  facebook: GeminiDotCom
-  bch: true
-  btc: false
-  othercrypto: true
 - name: Ginero
   url: https://ginero.io
   img: ginero.png
@@ -495,6 +516,14 @@ websites:
   btc: true
   othercrypto: true
   facebook: ginero.io
+- name: Handle Krypto
+  url: https://handlekrypto.no/
+  img: handlekrypto.png
+  twitter: HandleKrypto
+  facebook: HandleKrypto-2498391390188760
+  bch: true
+  btc: true
+  othercrypto: true
 - name: HitBTC
   url: https://www.hitbtc.com/
   img: hitbtc.png
@@ -560,7 +589,6 @@ websites:
   url: https://www.lbank.info/
   img: lbank.png
   twitter: LBank_Exchange
-  facebook: lbank.lbank.5
   bch: true
   btc: true
   othercrypto: true
@@ -578,6 +606,14 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Local.bitcoin.com
+  url: https://local.bitcoin.com/
+  img: localbitcoincom.png
+  twitter: bitcoincom
+  facebook: buy.bitcoin.news
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Lykke
   url: https://www.lykke.com/
   img: lykke.png
@@ -620,7 +656,6 @@ websites:
 - name: OKEx
   url: https://www.okex.com/
   img: okex.png
-  twitter: OKEx_
   facebook: OKEx.Official
   email_address: support@okex.com
   bch: true
@@ -667,16 +702,34 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: SengiCoin
+  url: https://sengicoin.com
+  img: SengiCoin.png
+  bch: true
+  btc: false
+  othercrypto: true
+  email_address: support@sengicoin.com
+  country: CD
+  city: Kinshasa 
+- name: Stealthex.io
+  url: https://stealthex.io/
+  img: stealthexio.png
+  twitter: Stealthex_io
+  facebook: Stealthex.io
+  email_address: pr@stealthex.io
+  bch: true
+  btc: true
+  othercrypto: true
+  exceptions:
+    text: Funds from users in prohibited jurisdictions will be seized, check terms and conditions.
 - name: Switchain
   url: https://switchain.com
   img: switchaindotcom.png
   twitter: switchaindotcom
   email_address: support@switchain.com
-  bch: false
+  bch: true
   btc: true
   othercrypto: true
-  exceptions:
-    text: Switchain used to accept BCH, but as of 2019-03-20 stopped accepting it
 - name: Tidex
   url: https://www.tidex.com
   img: tidex.png

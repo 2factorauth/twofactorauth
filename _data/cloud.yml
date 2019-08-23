@@ -10,7 +10,6 @@ websites:
   url: https://www.ctl.io/appfog/
   img: appfog.png
   bch: false
-  twitter: appfog
 - name: bithost.io
   url: https://bithost.io/
   img: bithost.png
@@ -126,11 +125,10 @@ websites:
   url: https://www.openode.io/
   img: openode.png
   twitter: opeNodeio
-  bch: false
+  bch: true
   btc: true
-  othercrypto: false
-  keywords:
-  - iochain
+  othercrypto: true
+  doc: https://twitter.com/opeNodeio/status/1128468637902307330
 - name: OpenShift
   url: https://www.openshift.com/
   img: openshift.png
@@ -147,7 +145,6 @@ websites:
   url: https://www.profitbricks.de
   img: profitbricks.png
   bch: false
-  twitter: ProfitBricksDE
   facebook: ProfitBricksDE
 - name: put.io
   url: https://put.io/

@@ -1,5 +1,17 @@
 ---
 websites:
+- name: 3 Bro's Coffee
+  url: https://www.3broscoffee.com
+  img: BrosCoffee.png
+  bch: true
+  btc: false
+  othercrypto: true
+  facebook: the3broscoffee
+  email_address: the3broscoffee@gmail.com
+  region: na
+  country: US
+  keywords:
+  - coinbase
 - name: 5 dogs Fortitude Valley
   url: http://www.5dogs.com.au/
   img: 5dogsfv.png
@@ -138,7 +150,7 @@ websites:
   doc: https://bitcointalk.org/index.php?topic=4406105.0
 - name: Black Ink Coffee Company
   url: https://blackinkcoffee.com
-  img: BlackInkCoffeeCompany.png 
+  img: BlackInkCoffeeCompany.png
   bch: true
   btc: true
   othercrypto: true
@@ -209,13 +221,17 @@ websites:
   country: US
   keywords:
   - coinpayments.net
-- name: CoffeeCoin
-  url: https://coffeecoin.io/
-  img: coffeecoin.png
-  twitter: javanomad
+- name: CORSO
+  url: https://www.facebook.com/caffebarcorsorasinja/
   bch: true
-  btc: false
+  btc: true
   othercrypto: true
+  email_address: ultrarik123@gmail.com
+  region: eu
+  country: HR
+  doc: https://www.facebook.com/groups/334085863723507/permalink/642110256254398/
+  exceptions:
+    text: "Use Bitcoin.com or Elipay wallet"
 - name: De Wine Spot
   url: https://dewinespot.co/
   img: dewinespot.png
@@ -280,6 +296,17 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: FYM Hot Sauce
+  url: https://fymhotsauce.rocks/
+  img: fymhotsauce.png
+  twitter: fymhotsauce
+  facebook: fymhotsauce
+  email_address: dane@fymhotsauce.com
+  bch: true
+  btc: false
+  othercrypto: true
+  keywords:
+  - coinbase
 - name: Hawaiian Kombucha
   url: https://www.hawaiiankombucha.jp
   img: HawaiianKombucha.png
@@ -296,12 +323,11 @@ websites:
   img: heathotsauce.png
   twitter: heathotsauce
   facebook: HeatHotSauceShop
-  bch: true
-  btc: true
+  bch: false
+  btc: false
   othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
+  exceptions:
+    text: Heat Hot Sauce Shop used to accept BTC & BCH, but as of 2019-05-06 stopped accepting it
 - name: Heirloom & Perennial
   url: https://www.foodforests.eu/
   img: heirloomperennial.png
@@ -409,7 +435,6 @@ websites:
 - name: Mamas Banh - Vietnamese Culinary Diversity
   url: http://mamasbanh.com/
   img: mamasbanh.png
-  facebook: mamasbanh
   email_address: daiquy@mamasbanh.com
   region: eu
   city: Berlin
@@ -639,6 +664,14 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: Teanobi
+  url: http://www.teanobi.com/
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
 - name: Teasenz
   url: https://www.teasenz.com
   img: teasenz.png

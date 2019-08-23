@@ -26,12 +26,16 @@ websites:
   othercrypto: false
 - name: AT&amp;T
   url: https://www.att.com/
-  twitter: ATTCares
-  facebook: ATT
-  img: att.png
-  bch: false
-  btc: false
+  img: ATT.png
+  bch: true
+  btc: true
   othercrypto: false
+  twitter: att
+  facebook: att
+  doc: https://about.att.com/story/2019/att_bitpay.html
+  keywords:
+  - bitpay
+  - bip70
 - name: CallCentric
   url: https://www.callcentric.com/
   img: callcentric.png
@@ -226,7 +230,6 @@ websites:
 - name: LV.Net
   url: https://www.lv.net
   img: LVNet.png
-  twitter: LVNet
   region: na
   country: US
   bch: false
@@ -244,7 +247,8 @@ websites:
   btc: false
   othercrypto: false
   exceptions:
-    text: Mobile Vikings used to accept BTC & BCH, but as of 2018-06-23 stopped accepting it.
+    text: Mobile Vikings used to accept BTC & BCH, but as of 2018-06-23 stopped accepting
+      it.
 - name: Moj Tele2
   url: https://moj.tele2.hr/
   twitter: Tele2Croatia

@@ -28,14 +28,6 @@ websites:
   othercrypto: true
   keywords:
   - coinpayments.net
-- name: BestMixer.io
-  url: https://bestmixer.io/
-  img: bestmixer.png
-  twitter: BestMixerIO
-  email_address: bestmixer@protonmail.com
-  bch: true
-  btc: true
-  othercrypto: true
 - name: Bit2Bill
   url: https://www.bit2bill.com.au
   img: bit2bill.png
@@ -85,6 +77,12 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Bitcoin.com Notary
+  url: https://notary.bitcoin.com/
+  img: bitcoincomnotar.png
+  bch: true
+  btc: false
+  othercrypto: false
 - name: bitcoinfees.cash
   url: https://bitcoinfees.cash/
   img: bitcoinfeescash.png
@@ -125,12 +123,9 @@ websites:
   url: https://bitit.io/
   img: Bitit.png
   twitter: Bitit_Gift
-  bch: false
-  bsv: false
+  bch: true
   btc: true
   othercrypto: true
-  exceptions:
-    text: Bitit used to support BCH, but as of 2019-01-10 stopped supporting it
 - name: Bitkoyn
   url: https://bitkoyn.com/
   img: bitkoyn.png
@@ -322,7 +317,6 @@ websites:
 - name: Crypto Traders Pro
   url: https://cryptotraderspro.com/
   img: CryptoTradersPro.png
-  twitter: CTProCommunity
   facebook: CryptoTradersNews
   bch: true
   btc: true
@@ -401,7 +395,6 @@ websites:
   url: https://fivebucks.com/
   img: fivebucks.png
   email_address: inquiries@fivebucks.com
-  twitter: fivebuckscom
   facebook: fivebuckscom
   bch: false
   btc: false
@@ -463,7 +456,9 @@ websites:
   email_address: admin@idle-empire.com
   doc: https://blog.idle-empire.com/coinbase-withdrawals-integrated/
   exceptions:
-    text: "Users can earn virtual credits by watching videos, completing tasks, mining cryptocurrencies, and many other things. Those credits can then be redeemed for Bitcoin Cash, other cryptocurrencies, and gaming rewards."
+    text: Users can earn virtual credits by watching videos, completing tasks, mining
+      cryptocurrencies, and many other things. Those credits can then be redeemed
+      for Bitcoin Cash, other cryptocurrencies, and gaming rewards.
 - name: Insight
   url: https://insight.bitpay.com/
   img: insight.png

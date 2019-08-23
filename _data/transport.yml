@@ -52,7 +52,8 @@ websites:
   email_address: support@bitcoin.travel
   doc: https://bitcoin.travel/how-it-works/#
   exceptions:
-    text: "Book your desired rental/hotels, tours, or activities using cryptocurrency with this website. Does not currently accept cryptocurrencies for booking flights."
+    text: Book your desired rental/hotels, tours, or activities using cryptocurrency
+      with this website. Does not currently accept cryptocurrencies for booking flights.
 - name: British Airways
   url: https://www.britishairways.com/
   twitter: British_Airways
@@ -189,7 +190,6 @@ websites:
 - name: JetSmarter
   url: https://jetsmarter.com/
   twitter: JetSmarter
-  facebook: JetSmarter
   img: jetsmarter.png
   bch: false
   btc: false
@@ -249,7 +249,6 @@ websites:
 - name: Norwegian
   url: https://www.norwegian.com/
   twitter: Fly_Norwegian
-  facebook: norwegianairlines
   img: norwegian.png
   bch: false
   btc: false
@@ -345,11 +344,9 @@ websites:
 - name: Tesla
   url: https://www.tesla.com
   img: tesla.png
-  twitter: TeslaMotors
   bch: false
 - name: Transport for London
   url: https://tfl.gov.uk/
-  twitter: tflwaystopay
   facebook: transportforlondon
   img: tfl.png
   bch: false

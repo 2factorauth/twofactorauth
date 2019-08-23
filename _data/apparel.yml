@@ -148,12 +148,6 @@ websites:
   doc: https://clockworkcrypto.com/2018/05/30/soft-launch/
   keywords:
   - coinpayments.net
-- name: Combatant Gentlemen
-  url: https://combatgent.com
-  img: combatgent.png
-  bch: false
-  twitter: CombatGent
-  facebook: combatgent
 - name: CoinSpice Store
   url: https://store.coinspice.io/
   img: coinspicestore.png
@@ -163,6 +157,23 @@ websites:
   othercrypto: false
   keywords:
   - coinbase
+- name: Combatant Gentlemen
+  url: https://combatgent.com
+  img: combatgent.png
+  bch: false
+  twitter: CombatGent
+  facebook: combatgent
+- name: Corridor Digital
+  url: https://corridordigital.store/
+  img: corridordigital.png
+  twitter: corridordigital
+  facebook: corridordigital
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
 - name: Crizzle's Buttons
   url: https://www.etsy.com/shop/CrizzleOnEtsy
   img: CrizzlesButtons.png
@@ -176,7 +187,8 @@ websites:
   state: WA
   city: Spokane
   exceptions:
-    text: "When ordering from the etsy shop, select 'other' as your payment method and send a message in regards as to how you wish to pay with crypto."
+    text: When ordering from the etsy shop, select 'other' as your payment method
+      and send a message in regards as to how you wish to pay with crypto.
 - name: Cryptartica
   url: https://cryptartica.com/
   img: cryptartica.png
@@ -339,7 +351,8 @@ websites:
   btc: false
   othercrypto: false
   exceptions:
-    text: Giacomo Cortes used to accept BTC, but as of 2019-03-21 stopped accepting it
+    text: Giacomo Cortes used to accept BTC, but as of 2019-03-21 stopped accepting
+      it
 - name: GORUCK
   url: https://www.goruck.com/
   img: goruck.png
@@ -480,6 +493,18 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Krypto Threadz
+  url: https://www.kryptothreadz.com/
+  img: kryptothreadz.png
+  twitter: KryptoThreadz
+  facebook: kryptothreadz
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - bitpay
+  - coinbase
+  - coinpayments.net
 - name: Lanieri S.r.l.
   url: https://www.lanieri.com/
   img: LanieriSrl.png
@@ -648,6 +673,17 @@ websites:
   keywords:
   - bitpay
   - bip70
+- name: Print-ted.com
+  url: https://print-ted.com
+  img: Printtedcom.png
+  bch: true
+  btc: false
+  othercrypto: true
+  twitter: printtedstore
+  email_address: info@print-ted.com
+  doc: https://print-ted.com/pages/payment-methods
+  keywords:
+  - coinpayments.net
 - name: Pro Crypto
   url: http://procrypto.net/
   img: procrypto.png
@@ -656,6 +692,15 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: Relax Wear
+  url: https://relax-wear.com/
+  img: relaxwear.png
+  facebook: RelaxWearOfficial
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinbase
 - name: RespawnWear
   url: https://respawnwear.com/
   img: respawnwear.png
@@ -820,7 +865,6 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-  facebook: youphorialove
   email_address: youphoriafestivalwear@gmail.com
   doc: https://www.facebook.com/youphorialove/photos/a.372299386611232/580019099172592/?type=3&theater
   keywords:

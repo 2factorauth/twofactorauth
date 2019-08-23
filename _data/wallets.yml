@@ -1,5 +1,15 @@
 ---
 websites:
+- name: Atomic Wallet
+  url: https://atomicwallet.io
+  img: AtomicWallet.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: atomicwallet
+  facebook: atomicwallet
+  email_address: mick@atomicwallet.io
+  doc: https://atomicwallet.io/bitcoin-cash-wallet
 - name: BCHgallery
   url: https://pokkst.xyz/info/bchgallery/
   bch: true
@@ -8,11 +18,14 @@ websites:
 - name: Bitcoin ABC
   url: https://www.bitcoinabc.org/
   img: bitcoinabc.png
+  twitter: Bitcoin_ABC
+  facebook: bitcoinabc.org
   bch: true
   btc: false
 - name: Bitcoin Unlimited
   url: https://www.bitcoinunlimited.info/
   img: bitcoinunlimited.png
+  twitter: BitcoinUnlimit
   bch: true
   btc: true
 - name: Bitcoin XT
@@ -23,6 +36,7 @@ websites:
 - name: Bitcoin.com Wallet
   url: https://wallet.bitcoin.com/
   img: bitcoincom.png
+  twitter: BitcoinCom
   bch: true
   btc: true
   doc: https://news.bitcoin.com/introducing-the-simple-to-use-and-robust-bitcoin-com-wallet/
@@ -39,6 +53,17 @@ websites:
   othercrypto: true
   facebook: blockchain
   twitter: blockchain
+- name: Blockplate
+  url: https://www.blockplate.com
+  img: Blockplate.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: blockplate
+  region: na
+  country: US
+  keywords:
+  - coinbase
 - name: Bread
   url: https://breadapp.com/
   img: bread.png
@@ -113,8 +138,8 @@ websites:
   btc: true
   othercrypto: false
 - name: Crescent Cash
-  url: https://pokkst.xyz/crescentcash/
-  twitter: pokkst
+  url: https://crescent.cash/
+  twitter: crescentcash
   bch: true
   btc: false
   othercrypto: false
@@ -174,14 +199,16 @@ websites:
   btc: true
   doc: https://blog.jaxx.io/update-bch-jaxx/
 - name: KeepKey
-  url: https://www.keepkey.com/
+  url: https://shapeshift.io/keepkey/
   img: keepkey.png
+  twitter: cryptokeepkey
   bch: true
   btc: true
   othercrypto: true
-  doc: https://www.keepkey.com/2017/07/31/bitcoin-cash-keepkey/
-  exceptions:
-    text: Wallet currently in beta testing.
+  doc: https://keepkey.zendesk.com/hc/en-us/articles/360003047479
+  keywords:
+  - bitpay
+  - bip70
 - name: Keoken
   url: https://www.keoken.io/
   img: keoken.png
@@ -192,6 +219,8 @@ websites:
 - name: Ledger
   url: https://www.ledgerwallet.com/
   img: ledger.png
+  twitter: Ledger
+  facebook: Ledger
   bch: true
   btc: true
   othercrypto: true

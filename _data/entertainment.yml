@@ -34,7 +34,6 @@ websites:
   url: https://www.bigtickets.com/
   img: bigtickets.png
   twitter: realbigtickets
-  facebook: xorbia
   bch: true
   btc: false
   othercrypto: false
@@ -135,7 +134,7 @@ websites:
   othercrypto: false
   doc: https://www.reddit.com/r/btc/comments/b72uh6/check_out_my_website_where_im_selling_songs_for/
   exceptions:
-    text: "Put in TXid to check database"
+    text: Put in TXid to check database
 - name: Google Play
   url: https://play.google.com
   img: googleplay.png
@@ -173,7 +172,6 @@ websites:
   url: https://www.last.fm/
   img: lastfm.png
   bch: false
-  twitter: lastfmsupport
   facebook: lastfm
 - name: Louis C.K.
   url: https://louisck.net/
@@ -335,16 +333,14 @@ websites:
 - name: Twitch
   url: https://www.twitch.tv/
   img: twitch.png
-  bch: false
-  btc: false
+  bch: true
+  btc: true
   othercrypto: false
   twitter: Twitch
   facebook: Twitch
   keywords:
   - xsolla
   - skrill
-  exceptions:
-    text: Twitch used to accept BTC & BCH, but as of 2019-03-23 stopped accepting it
 - name: Vimeo
   url: https://vimeo.com/
   img: vimeo.png

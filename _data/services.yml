@@ -16,9 +16,9 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: Audioventa Maria Ysabel 
+- name: Audioventa Maria Ysabel
   url: https://audioventa.wixsite.com/mariaysabel
-  img: AudioventaMariaYsabel.png 
+  img: AudioventaMariaYsabel.png
   bch: true
   btc: true
   othercrypto: true
@@ -69,7 +69,7 @@ websites:
   country: CA
   city: Southern Ontario
   exceptions:
-    text: "Depending on agreement of payment timeline for giving project"
+    text: Depending on agreement of payment timeline for giving project
 - name: COOL Networks
   url: http://cool.net.au
   img: coolnetworks.png
@@ -95,8 +95,7 @@ websites:
 - name: Denison Yacht Sales
   url: https://www.denisonyachtsales.com/
   img: denisonyachtsales.png
-  twitter: denisonyachts
-  facebook: DenisonYachtSales
+  facebook: DenisonYachting
   bch: true
   btc: true
   othercrypto: false
@@ -160,17 +159,6 @@ websites:
   doc: https://www.facebook.com/dyrdahllumber/photos/a.929204377258037.1073741829.266220780223070/929203443924797/?type=3&theater
   exceptions:
     text: Contact us at https://www.dyrdahl-lumber.com/contact
-- name: G-Nome Computers
-  url: https://www.g-nome.co.za/
-  img: gnome.png
-  email_address: info@g-nome.co.za
-  region: af
-  country: ZA
-  city: Johannesburg
-  bch: true
-  btc: true
-  othercrypto: true
-  doc: https://www.g-nome.co.za/
 - name: Fleur Maison Middlesbrough
   url: https://www.fleurmaison.co.uk/
   img: fleurmaisonmidd.png
@@ -189,6 +177,17 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: G-Nome Computers
+  url: https://www.g-nome.co.za/
+  img: gnome.png
+  email_address: info@g-nome.co.za
+  region: af
+  country: ZA
+  city: Johannesburg
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.g-nome.co.za/
 - name: Gana Control
   url: https://ganacontrol.com/
   img: ganacontrol.png
@@ -265,7 +264,17 @@ websites:
   email_address: support@itrockstars.co.uk
   region: na
   exceptions:
-    text: "Please email support@itrockstars.co.uk for bitcoin and crypto purchases"
+    text: Please email support@itrockstars.co.uk for bitcoin and crypto purchases
+- name: Junkfree®
+  url: https://www.junkfree.com
+  img: Junkfree.png
+  bch: true
+  btc: false
+  othercrypto: false
+  email_address: david@junkfree.com
+  region: na
+  country: US
+  doc: https://junkfree.com/bitcoinabc-3/
 - name: KeyInstant.com
   url: https://keyinstant.com/
   img: keyinstantcom.png
@@ -308,7 +317,6 @@ websites:
   bch: true
   btc: false
   othercrypto: false
-  twitter: lingocash1
   facebook: lingocash1
   email_address: translations@lingo.cash
 - name: Locks Keys and More
@@ -417,6 +425,19 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Queo.io
+  url: https://queo.io
+  img: Queoio.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: queo_io
+  email_address: arnaud@queo.io
+  doc: https://twitter.com/Queo_io/status/1123844940562300928
+  exceptions:
+    text: "Directly contact me to get my wallet address or make a donation for the blog section using Coinpayments button"
+  keywords:
+  - coinpayments.net
 - name: Ramon L. Perez Photography
   url: https://ramonlperez.weebly.com/
   region: na
@@ -464,6 +485,14 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: soar.sh
+  url: https://www.soar.sh
+  img: soarsh.png
+  bch: true
+  btc: false
+  othercrypto: true
+  keywords:
+  - savvy
 - name: South Lexicon Translations
   url: https://www.lexicon-translations.com
   img: southlexicontr.png
@@ -519,6 +548,17 @@ websites:
   othercrypto: true
   keywords:
   - coinbase
+- name: Triple E Heating and Air
+  url: https://eeehvac.com/
+  img: TripleEHeatingandAir.png
+  bch: true
+  btc: false
+  othercrypto: true
+  facebook: eeehvac
+  email_address: contact@eeehvac.com
+  region: na
+  country: US
+  city: Baltimore Metro Area
 - name: Truehand Engraving
   url: https://www.truehand.com
   img: TruehandEngraving.png

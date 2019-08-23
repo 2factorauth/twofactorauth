@@ -70,6 +70,15 @@ websites:
   exceptions:
     text: To use any cryptocurrency, the order must exceed $100 before the option
       becomes available during checkout.
+- name: ADHOC
+  url: https://adhoc.zone
+  img: ADHOC.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: adhoc_zone
+  facebook: adhoc.zone
+  email_address: info@adhoc.zone
 - name: Aerospace Robotics
   url: https://aerospacerobotics.com/
   img: aerospacerobotics.png
@@ -106,7 +115,6 @@ websites:
 - name: Allforcrypto.com
   url: https://allforcrypto.com/
   img: allforcrypto.png
-  facebook: allforcorypto
   bch: false
   btc: true
   othercrypto: true
@@ -149,7 +157,6 @@ websites:
   url: https://www.fantasymotiongraphics.com/online-store
   img: AQiKaleidoscopes.png
   twitter: ThalitaGoosen
-  facebook: FMGkaleidoscopes
   region: af
   bch: true
   btc: true
@@ -351,15 +358,6 @@ websites:
   keywords:
   - bitpay
   - bip70
-- name: Buywithcoins.online
-  url: https://www.buywithcoins.online/
-  img: buywithcoins.png
-  twitter: BuywithcoinsO
-  facebook: Buywithcoins-310810293063601
-  bch: true
-  btc: true
-  othercrypto: true
-  doc: https://www.buywithcoins.online/we-accept-crypto-currency-payment-method/
 - name: BTC Media Store
   url: https://store.btcmedia.org/
   img: btcmediastore.png
@@ -369,6 +367,15 @@ websites:
   keywords:
   - bitpay
   - bip70
+- name: Buywithcoins.online
+  url: https://www.buywithcoins.online/
+  img: buywithcoins.png
+  twitter: BuywithcoinsO
+  facebook: Buywithcoins-310810293063601
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://www.buywithcoins.online/we-accept-crypto-currency-payment-method/
 - name: Caseking.de
   url: https://www.caseking.de
   img: Caseking.png
@@ -407,6 +414,18 @@ websites:
   img: comixology.png
   bch: false
   twitter: comixology
+- name: Cool Components
+  url: https://coolcomponents.co.uk
+  img: coolcomponents.png
+  twitter: coolcomponents
+  facebook: coolcomponents
+  email_address: sales@coolcomponents.co.uk
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
 - name: Cool Stuff Japan
   url: https://www.coolstuffjapan.com/
   img: coolstuffjapan.png
@@ -593,7 +612,6 @@ websites:
 - name: ElectroCat
   url: https://www.electrocatstore.com/
   img: electrocatstore.png
-  twitter: ElectroCatStore
   facebook: ElectroCat
   bch: true
   btc: true
@@ -727,17 +745,6 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-- name: GostBed
-  url: https://www.ghostbed.com/
-  img: ghostbed.png
-  twitter: theghostbed
-  facebook: ghostbed
-  bch: true
-  btc: true
-  othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
 - name: Ghost Gunner
   url: https://ghostgunner.net
   img: ghostrunner.png
@@ -752,6 +759,17 @@ websites:
   twitter: gilt
   img: gilt.png
   bch: false
+- name: GostBed
+  url: https://www.ghostbed.com/
+  img: ghostbed.png
+  twitter: theghostbed
+  facebook: ghostbed
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
 - name: GPIO Australia
   url: https://www.buyraspberrypi.com.au/
   img: gpioaustralia.png
@@ -1001,6 +1019,16 @@ websites:
   doc: https://www.kitsystem.ru/blog/info/oplachivayte-tovary-i-uslugi-kriptovalyutoy
   keywords:
   - cryptonator
+- name: Kite Surf SUP
+  url: https://kitesurfsupuae.myshopify.com
+  img: kitesurfsup.png
+  facebook: NaishofUAE
+  email_address: leigh@kitesurfsup.com
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - coinbase
 - name: Kohl's
   url: https://www.kohls.com
   img: kohls.png
@@ -1051,7 +1079,6 @@ websites:
 - name: Little Fish Store
   url: https://littlefishstore.com
   img: littlefishstore.png
-  facebook: buyshrimpandfishonline
   email_address: lfs@littlefishstore.com
   region: na
   country: US
@@ -1080,10 +1107,21 @@ websites:
   bch: true
   btc: false
   othercrypto: false
-  facebook: buyshrimpandfishonline
   email_address: paco@luckyaquatics.com
   region: na
   country: US
+  keywords:
+  - coinbase
+- name: Lushes Curtains
+  url: https://www.lushescurtains.com/
+  img: LushesCurtains.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: lushescurtains
+  facebook: lushescurtains
+  email_address: joe@lushescurtains.com
+  doc: https://twitter.com/LushesCurtains/status/1124391852071895045
   keywords:
   - coinbase
 - name: Macy's
@@ -1187,7 +1225,6 @@ websites:
   url: https://mofobit.com/
   img: mofobit.png
   twitter: Mofobit
-  facebook: MofoBit
   bch: true
   btc: true
   othercrypto: true
@@ -1205,17 +1242,6 @@ websites:
   - headphones
   - wireless
   - exam
-- name: Möbelmarkt Shop
-  url: https://www.moebelmarkt-shop.de/
-  img: moebelmarktshop.png
-  bch: true
-  btc: true
-  othercrypto: false
-  region: eu
-  lang: de
-  keywords:
-  - bitpay
-  - bip70
 - name: My Digital Discount
   url: https://www.mydigitaldiscount.com/
   img: mydigitaldiscount.png
@@ -1225,6 +1251,17 @@ websites:
   btc: true
   othercrypto: false
   doc: https://www.mydigitaldiscount.com/bitpay
+  keywords:
+  - bitpay
+  - bip70
+- name: Möbelmarkt Shop
+  url: https://www.moebelmarkt-shop.de/
+  img: moebelmarktshop.png
+  bch: true
+  btc: true
+  othercrypto: false
+  region: eu
+  lang: de
   keywords:
   - bitpay
   - bip70
@@ -1459,10 +1496,12 @@ websites:
   img: plastic2print.png
   email_address: info@plastic2print.com
   bch: false
-  btc: true
+  btc: false
   othercrypto: false
   keywords:
   - mollie
+  exceptions:
+    text: plastic2print used to accept BTC, but as of 2019-05-01 stopped accepting it
 - name: powercube.dk
   url: https://powercube.dk/
   img: powercubedk.png
@@ -1533,6 +1572,27 @@ websites:
   btc: true
   bch: false
   othercrypto: true
+  keywords:
+  - coinpayments.net
+- name: Reach Records / 116
+  url: https://reach.merchline.com/
+  img: reachrecords116.png
+  twitter: reachrecords
+  facebook: reachrecords
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
+- name: Rex Silentium
+  url: https://rexsilentium.com/
+  img: rexsilentium.png
+  bch: true
+  btc: true
+  othercrypto: true
+  region: na
+  country: US
   keywords:
   - coinpayments.net
 - name: Rift Recon
@@ -1618,7 +1678,8 @@ websites:
   btc: true
   othercrypto: true
   exceptions:
-    text: This is a drop shipper. The items sold might have a high markup over normal prices
+    text: This is a drop shipper. The items sold might have a high markup over normal
+      prices
   keywords:
   - coinpayments.net
 - name: Shire Soaps
@@ -1667,7 +1728,6 @@ websites:
   img: sierratradingpost.png
   bch: false
   twitter: Sierratp
-  facebook: sierratradingpost
 - name: Single Speed Company
   url: https://single-speed.co.uk/
   img: singlespeed.png
@@ -1824,13 +1884,14 @@ websites:
   img: surfnow.png
   twitter: surfnow_eu
   facebook: surfnoweu
-  bch: true
-  btc: true
-  othercrypto: true
+  bch: false
+  btc: false
+  othercrypto: false
   keywords:
   - mollie
-  - coinpayments.net
   doc: https://www.surfnow.eu/pages/payment-option
+  exceptions:
+    text: Surfnow used to accept BTC, but as of 2019-05-01 stopped accepting it
 - name: Svedana Box
   url: https://www.svedana-box.net/
   email_address: info@svedana-box.net
@@ -1909,7 +1970,8 @@ websites:
   lang: es
   doc: https://local.google.com/place?id=16425660169615501579&use=posts&lpsid=6859890619787811776
   exceptions:
-    text: "Choose payment option online and wait for wallet address to be sent per e-mail."
+    text: Choose payment option online and wait for wallet address to be sent per
+      e-mail.
 - name: The Gamer's Hut
   url: https://shopgamerhut.com
   img: TheGamersHut.png
@@ -2074,15 +2136,6 @@ websites:
   bch: false
   twitter: zazzle
   facebook: zazzle
-- name: ZimbabweDollars.net
-  url: https://zimbabwedollars.net/
-  img: zimbabwedollars.png
-  bch: true
-  btc: true
-  othercrypto: false
-  keywords:
-  - bitpay
-  - bip70
 - name: Zen Magnets
   url: https://zenmagnets.com/
   img: zenmagnets.png
@@ -2096,6 +2149,15 @@ websites:
   keywords:
   - bitpay
   - gocoin
+- name: ZimbabweDollars.net
+  url: https://zimbabwedollars.net/
+  img: zimbabwedollars.png
+  bch: true
+  btc: true
+  othercrypto: false
+  keywords:
+  - bitpay
+  - bip70
 - name: ZUMI
   url: https://zumi.com.au/
   img: zumi.png
