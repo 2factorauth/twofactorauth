@@ -1,6 +1,5 @@
 sudo: false
 os: linux
-dist: xenial
 cache:
   bundler: true
   directories: $TRAVIS_BUILD_DIR/tmp/.htmlproofer
