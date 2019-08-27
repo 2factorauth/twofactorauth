@@ -120,6 +120,18 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: The Scot Hotel
+  url: https://thescotoban.com/
+  img: TheScotHotel.png
+  bch: true
+  btc: false
+  othercrypto: false
+  email_address: info@thescotoban.com
+  region: eu
+  country: GB
+  city: Oban
+  exceptions:
+    text: "Can reserve room with credit card info and pay with BCH at reception."
 - name: Travala
   url: https://www.travala.com/
   img: travala.png
