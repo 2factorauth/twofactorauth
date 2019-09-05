@@ -22,7 +22,8 @@ are stored in folders corresponding to each of those categories in their own
    HTTPS address.
 4. **Alexa top 200k**: A new site, that is not already listed, has to be within the
    Alexa top 200k ranking. You can check the ranking of a site [here](https://www.alexa.com/siteinfo).
-5. **Be Awesome**: You need to be awesome. That is all.
+5. **No 2FA providers**: We do not list 2FA providers, such as [Authy](https://authy.com/), [Duo](https://duo.com/) or [Google Authenticator](https://github.com/google/google-authenticator).
+6. **Be Awesome**: You need to be awesome. That is all.
 
 ## Running Locally
 
@@ -133,7 +134,7 @@ The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
 If a site does provide TFA, it is strongly recommended that you add the `doc:`
 field where public documentation is available. Other fields should be included
 if the website supports them. Any services that are not supported can be excluded.
-Sites supporting TFA should not have a Twitter, Facebook or Email field.
+Sites supporting TFA should not have a `twitter`, `facebook` or `email_address` field.
 
 The following is an example of a website that *supports* TFA:
 

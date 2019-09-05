@@ -5,7 +5,9 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://support.500px.com/hc/en-us/articles/205115877-How-do-I-setup-Two-Factor-Authentication
+      exceptions:
+        text: "A verified phone number is required for the use of two-factor authentication software."
+      doc: https://support.500px.com/hc/en-us/articles/205115877
 
     - name: about.me
       url: https://about.me
@@ -26,12 +28,19 @@ websites:
       tfa: No
       twitter: Badoo
 
+    - name: BiggerPockets
+      url: https://www.biggerpockets.com
+      img: biggerpockets.png
+      tfa: Yes
+      sms: Yes
+      doc: https://www.biggerpockets.com/forums/25/topics/232201
+     
     - name: Bitly
       url: https://bitly.com/
       img: bitly.png
       tfa: Yes
       sms: Yes
-      doc: https://support.bitly.com/hc/en-us/articles/230650187-What-is-2-step-verification-
+      doc: https://support.bitly.com/hc/en-us/articles/230650187
 
     - name: Buffer
       url: https://bufferapp.com
@@ -43,7 +52,7 @@ websites:
 
     - name: DeviantArt
       url: https://www.deviantart.com
-      twitter: deviantart
+      twitter: DeviantArt
       img: deviantart.png
       tfa: No
 
@@ -72,7 +81,7 @@ websites:
 
     - name: Foursquare
       url: https://foursquare.com
-      twitter: foursquare
+      twitter: Foursquare
       img: foursquare.png
       tfa: No
 
@@ -82,22 +91,12 @@ websites:
       img: goodreads.png
       tfa: No
 
-    - name: Google+
-      url: https://plus.google.com
-      img: g+.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
-
     - name: HootSuite
       url: https://hootsuite.com
       img: hootsuite.png
       tfa: Yes
       software: Yes
-      doc: https://help.hootsuite.com/entries/22527304-Managing-Google-Authenticator
+      doc: https://help.hootsuite.com/hc/en-us/articles/204595950
 
     - name: ICQ
       url: https://icq.com/
@@ -125,7 +124,8 @@ websites:
       img: linkedin.png
       tfa: Yes
       sms: Yes
-      doc: https://help.linkedin.com/app/answers/detail/a_id/531/related/1
+      software: Yes
+      doc: https://www.linkedin.com/help/linkedin/answer/531
 
     - name: LiveJournal
       url: https://www.livejournal.com
@@ -139,13 +139,6 @@ websites:
       tfa: Yes
       software: Yes
       doc: https://lobste.rs/s/1cyltz/two_factor_authentication_now_available
-
-    - name: Mastodon
-      url: https://joinmastodon.org/
-      img: mastodon.png
-      tfa: Yes
-      software: Yes
-      doc: https://github.com/tootsuite/documentation/blob/master/Using-Mastodon/2FA.md
 
     - name: Medium
       url: https://medium.com
@@ -195,6 +188,8 @@ websites:
       sms: Yes
       software: Yes
       doc: https://help.pinterest.com/en/articles/two-factor-authentication
+      exceptions:
+        text: "Software authentication requires the Authy app."
 
     - name: Plurk
       url: https://plurk.com
@@ -206,7 +201,7 @@ websites:
       url: https://www.quora.com
       img: quora.png
       tfa: No
-      twitter: quora
+      twitter: Quora
 
     - name: Reddit
       url: https://www.reddit.com/
@@ -221,7 +216,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://support.snapchat.com/ca/login-verification
+      doc: https://support.snapchat.com/en-US/article/enable-login-verification
 
     - name: Stack Exchange
       url: https://stackexchange.com/
@@ -269,7 +264,7 @@ websites:
       doc: https://vk.com/page-59800369_47885415
 
     - name: Weibo
-      url: http://www.weibo.com
+      url: https://www.weibo.com/
       img: weibo.png
       tfa: No
 
@@ -292,8 +287,10 @@ websites:
     - name: XING
       url: https://www.xing.com
       img: xing.png
-      tfa: No
-      twitter: XING_com
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://faq.xing.com/en/settings-security/two-factor-login-two-factor-authentication
 
     - name: Zocle
       url: https://zocle.com/

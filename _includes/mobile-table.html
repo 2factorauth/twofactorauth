@@ -28,28 +28,29 @@
     {% elsif website.tfa %}
     <div class="main positive">
       {% include row-title.html section=section_id website=website type='mobile' %}
-      <p>
-        Supported:
-        {% if website.sms %}SMS{% endif %}
-        {% if website.phone %}Phone{% endif %}
-        {% if website.email %}Email{% endif %}
-        {% if website.hardware %}Hardware{% endif %}
-        {% if website.software %}Software{% endif %}
-      </p>
+      <div class="methods">
+        {% if website.hardware %}<p><i class="checkmark small icon" title="Hardware"></i> Hardware</p>{% endif %}
+        {% if website.software %}<p><i class="checkmark small icon" title="Software"></i> Software</p>{% endif %}
+        {% if website.sms %}<p><i class="checkmark small icon" title="SMS"></i> SMS</p>{% endif %}
+        {% if website.phone %}<p><i class="checkmark small icon" title="Phone"></i> Phone</p>{% endif %}
+        {% if website.email %}<p><i class="checkmark small icon" title="Email"></i> Email</p>{% endif %}
+      </div>
       {% if website.doc %}
       <div class="button-group">
-        <a href="{{ website.doc }}" class="ui twitter mini button"><i class="large book icon"></i></a>
+        <a alt="Documentation" href="{{ website.doc }}" class="ui twitter mini button"><i class="large book icon"></i> Docs</a>
       </div>
       {% endif %}
     </div>
     {% else %}
     <div class="main negative">
       {% include row-title.html section=section_id website=website type='mobile' %}
-      <p>2FA not supported</p>
+      <div class="methods">
+        <p><i class="ban small icon" title="None"></i> 2FA not supported</p>
+      </div>
       <div class="button-group">
-        {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i></a>{% endif %}
-        {% if website.facebook %} <a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i></a>{%endif%}
-        {% if website.email_address %} <a class="ui green mini button" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i></a>{% endif %}
+        {% if website.twitter %} <a class="ui twitter mini button" alt="Twitter" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i></a>{% endif %}
+        {% if website.facebook %} <a class="ui facebook mini button" alt="Facebook" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i></a>{%endif%}
+        {% if website.email_address %} <a class="ui green mini button" alt="Email" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i></a>{% endif %}
       </div>
     </div>
     {% endif %}

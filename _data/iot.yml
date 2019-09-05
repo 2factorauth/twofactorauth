@@ -35,12 +35,26 @@ websites:
       facebook: onstar
       twitter: OnStar
 
+    - name: Ring
+      url: https://ring.com
+      img: ringcom.png
+      tfa: Yes
+      sms: Yes
+      doc: https://support.ring.com/hc/en-us/articles/360024818291
+
     - name: Samsung SmartThings
       url: https://www.smartthings.com/
       img: smartthings.png
       tfa: Yes
       sms: Yes
       doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
+
+    - name: SimpliSafe
+      url: https://simplisafe.com/
+      twitter: SimpliSafe
+      facebook: SimpliSafe
+      img: simplisafe.png
+      tfa: No
 
     - name: Solar.web
       url: https://www.solarweb.com
@@ -53,7 +67,7 @@ websites:
       url: https://www.tesla.com
       img: tesla.png
       tfa: No
-      twitter: TeslaMotors
+      twitter: Tesla
 
     - name: Total Connect Comfort
       url: https://www.mytotalconnectcomfort.com
@@ -61,3 +75,10 @@ websites:
       facebook: honeywellhome
       img: totalconnect.png
       tfa: No
+
+    - name: Wyze
+      url: https://www.wyzecam.com
+      img: wyze.png
+      tfa: No
+      twitter: WyzeCam
+      facebook: WyzeCam

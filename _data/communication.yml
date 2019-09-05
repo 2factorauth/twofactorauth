@@ -9,16 +9,16 @@ websites:
     - name: Basecamp
       url: https://basecamp.com/
       img: basecamp.png
-      tfa: Yes
-      sms: Yes
-      doc: https://basecamp.com/help/guides/you/phone-verification
+      tfa: No
+      twitter: basecamp
+      email_address: email@basecamp.com
 
     - name: Campfire
       url: https://campfirenow.com/
       img: campfire.png
       tfa: Yes
       sms: Yes
-      doc: https://help.37signals.com/sign-in/questions/460-how-do-i-set-up-and-use-phone-verification-for-logging-in
+      doc: https://help.37signals.com/sign-in/questions/460
 
     - name: Capsule
       url: https://capsulecrm.com/
@@ -33,6 +33,14 @@ websites:
       tfa: No
       twitter: CarbonBlack_Inc
       facebook: carbonblackinc
+
+    - name: Cloze
+      url: https://www.cloze.com/
+      img: cloze.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://help.cloze.com/knowledge_base/topics/how-do-i-enable-2-step-authentication
 
     - name: Customer.io
       url: https://customer.io
@@ -99,6 +107,13 @@ websites:
       software: Yes
       doc: https://chatgrape.com/doc/deployment/2fa.html
 
+    - name: GroupMe
+      url: https://groupme.com/
+      img: groupme.png
+      tfa: Yes
+      sms: Yes
+      doc: https://help.groupme.com/hc/en-us/articles/360000579167
+
     - name: Hangouts
       url: https://hangouts.google.com/
       img: hangouts.png
@@ -109,12 +124,13 @@ websites:
       hardware: Yes
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
-    - name: HipChat
-      url: https://www.hipchat.com
-      twitter: HipChat
-      facebook: HipChat
-      img: hipchat.png
-      tfa: No
+    - name: HubSpot
+      url: https://www.hubspot.com/
+      img: hubspot.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://knowledge.hubspot.com/articles/kcs_article/account/how-can-i-set-up-two-factor-authentication-for-my-hubspot-login
 
     - name: IRCCloud
       url: https://www.irccloud.com
@@ -150,6 +166,7 @@ websites:
       img: mailgun.png
       tfa: Yes
       software: Yes
+      doc: https://help.mailgun.com/hc/en-us/articles/360011664433
 
     - name: Maxemail
       url: https://maxemail.emailcenteruk.com/
@@ -163,12 +180,19 @@ websites:
       img: peerio.png
       tfa: Yes
       software: Yes
-      doc: https://peerio.zendesk.com/hc/en-us/articles/202933829-How-do-I-setup-two-factor-authentication-
+      doc: https://support.peerio.com/hc/en-us/articles/203665635
 
+    - name: Riot
+      url: https://about.riot.im/
+      img: riot.png
+      twitter: RiotChat
+      facebook: RiotChat
+      tfa: No
+      
     - name: Ryver
       url: https://ryver.com/
       img: ryver.png
-      twitter: ryverapp
+      twitter: RyverApp
       facebook: RyverApp
       tfa: No
 
@@ -180,7 +204,7 @@ websites:
       software: Yes
       email: Yes
       hardware: Yes
-      doc: https://developer.salesforce.com/docs/atlas.en-us.identityImplGuide.meta/identityImplGuide/add_time-based_token.htm
+      doc: https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/add_time-based_token.htm
 
     - name: SendGrid
       url: https://sendgrid.com/
@@ -190,7 +214,7 @@ websites:
       software: Yes
       exceptions:
           text: "Software authentication requires the Authy app."
-      doc: https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
+      doc: https://sendgrid.com/docs/ui/account-and-settings/two-factor-authentication/
 
     - name: Sendloop
       url: https://app.sendloop.com
@@ -214,7 +238,9 @@ websites:
       email: Yes
       sms: Yes
       software: Yes
-      doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
+      exceptions:
+          text: "Must be associated with a Microsoft Account."
+      doc: https://support.microsoft.com/en-us/help/12408/
 
     - name: Slack
       url: https://slack.com/
@@ -222,7 +248,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://slack.zendesk.com/hc/en-us/articles/204509068-Enabling-two-factor-authentication
+      doc: https://get.slack.help/hc/en-us/articles/204509068
 
     - name: SocketLabs
       url: https://socketlabs.com/
@@ -230,21 +256,21 @@ websites:
       sms: Yes
       tfa: Yes
       software: Yes
-      doc: https://support.socketlabs.com/kb/145
+      doc: https://help.socketlabs.com/docs/two-step-verification
 
     - name: SparkPost
       url: https://sparkpost.com/
       img: sparkpost.png
       tfa: Yes
       software: Yes
-      doc: https://support.sparkpost.com/customer/portal/articles/1948449
+      doc: https://www.sparkpost.com/docs/my-account-and-profile/enabling-two-factor-authentication/
 
     - name: Stackfield
       url: https://www.stackfield.com/
       img: stackfield.png
       tfa: Yes
       software: Yes
-      doc: http://en.stackfield.help/article/92-activating-deactivating-the-two-factor-authentication
+      doc: https://en.stackfield.help/article/92-activating-deactivating-the-two-factor-authentication
 
     - name: TeamSpeak
       url: https://www.teamspeak.com/
@@ -263,7 +289,6 @@ websites:
 
     - name: ToutApp
       url: https://www1.toutapp.com/
-      twitter: toutapp
       facebook: toutapp
       img: toutapp.png
       tfa: No
@@ -294,7 +319,7 @@ websites:
 
     - name: Yammer
       url: https://www.yammer.com
-      twitter: yammer
+      twitter: Yammer
       facebook: Yammer
       img: yammer.png
       tfa: No

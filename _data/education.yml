@@ -2,19 +2,19 @@ websites:
     - name: (ISC)2
       url: https://www.isc2.org
       img: isc2.png
-      tfa: No
-      twitter: ISC2
-      facebook: isc2fb
+      tfa: Yes
+      sms: Yes
+      software: Yes
 
     - name: AAI@EduHr
-      url: http://www.aaiedu.hr/
+      url: https://www.aaiedu.hr/
       email_address: aai@srce.hr
       img: aaieduhr.png
       tfa: No
       lang: hr
 
     - name: Academic Earth
-      url: http://academicearth.org/
+      url: https://academicearth.org/
       twitter: academicearth
       facebook: academicearth
       img: academicearth.png
@@ -34,6 +34,16 @@ websites:
       facebook: babbel.languages
       email_address: support@en.babbel.com
 
+    - name: Boston University
+      url: https://www.bu.edu
+      img: bu.png
+      tfa: Yes
+      sms: yes
+      phone: yes
+      software: yes
+      hardware: yes
+      doc: https://www.bu.edu/tech/support/duo/
+
     - name: California Institute of Technology (CalTech)
       url: https://www.caltech.edu
       img: caltech.png
@@ -43,6 +53,14 @@ websites:
       exceptions:
           text: "SMS-capable phone required for initial setup."
       doc: https://imss.caltech.edu/node/1408
+
+    - name: Carnegie Mellon University
+      url: https://www.cmu.edu/
+      img: cmu.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.cmu.edu/computing/services/security/identity-access/authentication/how-to/use2fa-weblogin.html
 
     - name: CBT Nuggets
       url: https://www.cbtnuggets.com/
@@ -75,35 +93,34 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://support.clever.com/hc/en-us/articles/202062333-Two-Factor-Authentication
+      doc: https://support.clever.com/hc/en-us/articles/202062333
 
     - name: Code School
       url: https://www.codeschool.com/
-      twitter: codeschool
       facebook: CodeSchool
       img: codeschool.png
       tfa: No
 
     - name: Codecademy
       url: https://www.codecademy.com/
-      twitter: codecademy
+      twitter: Codecademy
       facebook: codecademy
       img: codecademy.png
       tfa: No
 
     - name: College Of DuPage
       url: https://www.cod.edu/
-      twitter: collegedupage
+      twitter: CollegeDuPage
       facebook: collegeofdupage
       email_address: studenthelp@dupage.edu
-      img: CoD.png
+      img: cod.png
       tfa: No
 
     - name: CompTIA
       url: https://certification.comptia.org/
-      img: CompTIA.png
+      img: comptia.png
       tfa: No
-      twitter: comptia
+      twitter: CompTIA
       facebook: CompTIA
 
     - name: Coursera
@@ -121,6 +138,16 @@ websites:
       software: Yes
       doc: https://tjanster.csn.se/bas/vanligaFragor.do
 
+    - name: Duke University
+      url: https://www.duke.edu
+      img: duke.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://idms-mfa.oit.duke.edu/mfa/help
+
     - name: Duolingo
       url: https://www.duolingo.com
       img: duolingo.png
@@ -135,7 +162,7 @@ websites:
       sms: Yes
       phone: Yes
       software: Yes
-      doc: https://www.ecu.edu/cs-itcs/office365/multi-factor-authentication.cfm
+      doc: https://itcs.ecu.edu/services/accounts-passwords/multi-factor-authentication/
 
     - name: Eastern Michigan University
       url: https://www.emich.edu
@@ -220,6 +247,13 @@ websites:
       twitter: ISACANews
       facebook: ISACAHQ
 
+    - name: KnowBe4 
+      url: https://www.knowbe4.com/
+      img: knowbe4.png
+      tfa: Yes
+      software: Yes
+      doc: https://support.knowbe4.com/hc/en-us/articles/225681448
+
     - name: Massachusetts Institute of Technology
       url: https://web.mit.edu/
       img: mit.png
@@ -229,6 +263,16 @@ websites:
       hardware: Yes
       software: Yes
       doc: https://kb.mit.edu/confluence/display/istcontrib/Duo+Authentication+Landing+Page
+
+    - name: Miami University
+      url: https://miamioh.edu/
+      img: miamioh.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: yes
+      software: yes
+      doc: https://miamioh.edu/it-services/initiatives-and-projects/info-security/duo/
 
     - name: Montclair State University
       url: https://www.montclair.edu/employee-services/
@@ -244,7 +288,7 @@ websites:
       tfa: No
 
     - name: Pennsylvania State University
-      url: http://www.psu.edu/
+      url: https://www.psu.edu/
       img: psu.png
       tfa: Yes
       sms: Yes
@@ -252,6 +296,14 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://www.identity.psu.edu/services/authentication-services/two-factor/
+
+    - name: Purdue University
+      url: https://www.purdue.edu/
+      img: purdue.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://www.purdue.edu/securepurdue/iamoServices/BoilerKey.php
 
     - name: PushCoin
       url: https://pushcoin.com
@@ -264,7 +316,7 @@ websites:
 
     - name: Robert Morris University
       url: https://sentry.rmu.edu/login
-      twitter: rmu
+      twitter: RMU
       facebook: RMUpgh
       img: rmu.png
       tfa: No
@@ -275,9 +327,17 @@ websites:
       facebook: royalroadsu
       img: royalroads.png
       tfa: No
+      
+    - name: Ryerson University
+      url: https://www.ryerson.ca
+      tfa: Yes
+      img: ryerson.png
+      hardware: Yes
+      software: Yes
+      doc: https://www.ryerson.ca/ccs/services/ITSecurity/protecting-your-identity/two-factor-authentication/
 
     - name: SchoolSoft
-      url: http://schoolsoft.se/
+      url: https://www.schoolsoft.se/
       img: schoolsoft.png
       email_address: support@schoolsoft.se
       tfa: No
@@ -332,7 +392,28 @@ websites:
       phone: Yes
       hardware: Yes
       software: Yes
-      doc: http://its.umich.edu/accounts-access/uniqnames-passwords/two-factor-authentication
+      doc: https://www.safecomputing.umich.edu/two-factor-authentication
+
+    - name: University of Notre Dame
+      url: https://www.nd.edu
+      img: nd.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://oit.nd.edu/services/accounts/okta-account-services-and-two-step-login/
+
+    - name: University of Washington
+      url: https://www.washington.edu/
+      img: uw.png
+      tfa: Yes
+      phone: Yes
+      hardware: Yes
+      software: Yes
+      exceptions:
+          text: "Available for employees only"
+      doc: https://itconnect.uw.edu/security/uw-netids/2fa/
 
     - name: Virginia Commonwealth University
       url: https://www.vcu.edu
@@ -342,7 +423,7 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
-      doc: https://www.ts.vcu.edu/askit/essential-computing/information-security/2factor/
+      doc: https://ts.vcu.edu/askit/essential-computing/information-security/2factor/
 
     - name: Virginia Tech
       url: https://www.vt.edu/
@@ -352,4 +433,4 @@ websites:
       phone: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.tech.it.vt.edu/2factor/
+      doc: https://www.tech.it.vt.edu/2factor/

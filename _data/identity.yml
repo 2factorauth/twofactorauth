@@ -4,6 +4,9 @@ websites:
       img: 1password.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      exceptions:
+        text: "Teams using Duo with 1Password can't enable additional 2FA as it's already handled by Duo"
       doc: https://support.1password.com/two-factor-authentication/
 
     - name: Bitium
@@ -12,7 +15,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://support.bitium.com/customer/portal/articles/1417358-enabling-two-factor-authentication-2fa-
+      doc: https://support.bitium.com/administration/multi-factor-authentication/
 
     - name: bitwarden
       url: https://bitwarden.com
@@ -43,15 +46,17 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://support.dashlane.com/hc/en-us/articles/202625042-Protect-your-account-using-Two-Factor-Authentication
+      doc: https://support.dashlane.com/hc/en-us/articles/202625042
 
     - name: ID.me
       url: https://www.id.me/
       img: idme.png
-      tfa: No
-      twitter: IDme
-      facebook: IDmeInc
-      email_address: help@id.me
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      hardware: Yes
+      phone: Yes
+      doc: https://help.id.me/hc/en-us/categories/360001435974
 
     - name: IDentité Numérique (IDN)
       url: https://www.idn.laposte.fr
@@ -65,6 +70,7 @@ websites:
       url: https://keepersecurity.com/
       img: keeper.png
       tfa: Yes
+      hardware: Yes
       phone: Yes
       sms: Yes
       software: Yes
@@ -104,15 +110,6 @@ websites:
       hardware: Yes
       doc: https://help.okta.com/en/prod/Content/Topics/Security/MFA.htm
 
-    - name: OneLogin
-      url: https://www.onelogin.com
-      img: onelogin.png
-      tfa: Yes
-      sms: Yes
-      hardware: Yes
-      software: Yes
-      doc: http://www.onelogin.com/product/strong-authentication/two-factor-authentication/
-
     - name: PassHub
       url: https://passhub.net/
       img: passhub.png
@@ -138,7 +135,7 @@ websites:
       email: Yes
       sms: Yes
       software: Yes
-      doc: https://help.roboform.com/hc/en-us/articles/115002729512-Setting-up-Google-Authenticator-for-your-account
+      doc: https://help.roboform.com/hc/en-us/articles/115002729512
 
     - name: SAASPASS
       url: https://saaspass.com
@@ -148,6 +145,18 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://saaspass.com/faq/
+
+    - name: SailPoint
+      url: https://www.sailpoint.com/
+      img: sailpoint.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      phone: Yes
+      software: Yes
+      hardware: Yes
+      exceptions:
+          text: "Applies to IdentityIQ and IdentityNow."
 
     - name: SecureSafe
       url: https://www.securesafe.com

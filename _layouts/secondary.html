@@ -3,18 +3,18 @@
 <head>
   <meta http-equiv='Content-Security-Policy' content="script-src 'self' https://ajax.cloudflare.com https://code.jquery.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self';">
   <meta charset="UTF-8">
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="author" content="{{ site.author }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/img/logo.png"/>
 
-  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
   <meta property="og:type" content="website">
   <meta property="og:image" content="{{ site.url }}/{{ site.img }}">
-  <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
 
-  <title>{{ site.title }}</title>
+  <title>{{ page.title | default: site.title }}</title>
 
   <!-- Google Fonts should not use SRI hashes as the CSS served dynamically changes depending on browser -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
@@ -38,6 +38,17 @@
     </a>
   </div>
 </div>
+{%- if page.dir == '/notes/' and page.name == 'index.html' -%}
+  <div id="note-header" class="ui center aligned icon header">
+    <i class="circular file outline icon"></i>
+    <h2>Notes</h2>
+  </div>
+{%- else -%}
+  <div class="ui center aligned icon header">
+    <i class="circular mobile alternate icon"></i>
+    <h2>Two Factor Auth (2FA)</h2>
+  </div>
+{%- endif -%}
 
 {{ content }}
 

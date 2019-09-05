@@ -1,6 +1,6 @@
 websites:
     - name: ActiveCollab
-      url: https://www.activecollab.com/
+      url: https://activecollab.com/
       twitter: activecollab
       img: activecollab.png
       tfa: No
@@ -9,7 +9,7 @@ websites:
       url: https://web.any.do/
       img: anydo.png
       tfa: No
-      twitter: AnyDO
+      twitter: Anydo
       facebook: Any.do
 
     - name: Asana
@@ -22,7 +22,7 @@ websites:
       url: https://app.azendoo.com
       img: azendoo.png
       tfa: No
-      twitter: Azendoo
+      twitter: azendoo
 
     - name: Breeze
       url: https://www.breeze.pm
@@ -30,6 +30,13 @@ websites:
       tfa: No
       twitter: BreezeTeam
       facebook: breeze.pm
+
+    - name: ClickUp
+      url: https://clickup.com
+      img: clickup.png
+      tfa: Yes
+      sms: Yes
+      doc: https://docs.clickup.com/general/two-factor-authentication
 
     - name: fruux
       url: https://fruux.com
@@ -44,7 +51,7 @@ websites:
       email: Yes
       sms: Yes
       software: Yes
-      doc: https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification
+      doc: https://support.microsoft.com/en-us/help/12408/
 
     - name: Planio
       url: https://plan.io
@@ -53,9 +60,18 @@ websites:
       software: Yes
       doc: https://support.plan.io/news/133
 
+    - name: Remember The Milk
+      url: https://www.rememberthemilk.com
+      twitter: rememberthemilk
+      facebook: rememberthemilk
+      img: rememberthemilk.png
+      tfa: No
+
     - name: Todoist
       url: https://todoist.com
       twitter: todoist
+      facebook: Todoist
+      email_address: support@todoist.com
       img: todoist.png
       tfa: No
 
@@ -79,7 +95,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://help.trello.com/article/993-enabling-two-factor-authentication-for-your-trello-account
+      doc: https://help.trello.com/article/993--
 
     - name: Wunderlist
       url: https://www.wunderlist.com
