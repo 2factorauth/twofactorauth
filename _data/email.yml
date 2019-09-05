@@ -230,11 +230,10 @@ websites:
 
     - name: Web.de
       url: https://web.de
-      twitter: WEBDE
-      facebook: WEB.DE
       img: webde.png
-      lang: de
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://hilfe.web.de/sicherheit/2fa/index.html
 
     - name: Yahoo Japan Mail
       url: https://mail.yahoo.co.jp/
