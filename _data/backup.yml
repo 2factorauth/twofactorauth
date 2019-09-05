@@ -61,6 +61,8 @@ websites:
     sms: Yes
     software: Yes
     doc: https://help.evernote.com/hc/en-us/articles/208314238
+    exceptions:
+      text: "SMS authentication only available for Evernote Premium users"
 
   - name: FileThis
     url: https://filethis.com
