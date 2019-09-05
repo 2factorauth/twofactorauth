@@ -245,9 +245,10 @@ websites:
     - name: Fiverr
       url: https://www.fiverr.com/
       img: fiverr.png
-      tfa: No
-      twitter: FiverrSupport
-      facebook: Fiverr
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      doc: https://sellers.fiverr.com/en/article/two-factor-authentication
 
     - name: Formstack
       url: https://www.formstack.com/
