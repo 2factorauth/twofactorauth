@@ -94,11 +94,11 @@ websites:
 
   - name: Jottacloud
     url: https://www.jottacloud.com
-    twitter: jottacloud
-    email_address: support@jottacloud.com
-    facebook: Jottacloud
     img: jotta.png
-    tfa: No
+    tfa: Yes
+    software: Yes
+    sms: Yes
+    doc: https://docs.jottacloud.com/en/articles/1292931
 
   - name: JustCloud
     url: https://www.justcloud.com
