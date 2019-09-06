@@ -145,6 +145,9 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
+    hardware: Yes
+    exceptions:
+        text: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
     doc: https://support.microsoft.com/en-us/help/12408/
 
   - name: PCloud

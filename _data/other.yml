@@ -422,6 +422,9 @@ websites:
       software: Yes
       sms: Yes
       phone: Yes
+      hardware: Yes
+      exceptions:
+          text: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
       doc: https://support.office.com/en-US/article/Set-up-multi-factor-authentication-for-Office-365-8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 
     - name: Onshape
