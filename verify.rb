@@ -6,7 +6,7 @@ require 'kwalify'
 require 'diffy'
 @output = 0
 
-@tfa_options = %w[email hardware software sms phone totp proprietary_software]
+@tfa_options = %w[email hardware software sms phone totp proprietary_software u2f]
 # YAML tags related to TFA
 @tfa_tags = {
   # YAML tags for TFA Yes
@@ -25,7 +25,7 @@ require 'diffy'
 @img_extension = '.png'
 
 # Permissions set for all the images in the 'img/' directories.
-@img_permissions = %w[644 664]
+@img_permissions = %w[644 664 777]
 
 # Send error message
 def error(msg)
