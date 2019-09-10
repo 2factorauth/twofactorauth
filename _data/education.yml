@@ -95,12 +95,6 @@ websites:
       software: Yes
       doc: https://support.clever.com/hc/en-us/articles/202062333
 
-    - name: Code School
-      url: https://www.codeschool.com/
-      facebook: CodeSchool
-      img: codeschool.png
-      tfa: No
-
     - name: Codecademy
       url: https://www.codecademy.com/
       twitter: Codecademy
@@ -296,6 +290,14 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://www.identity.psu.edu/services/authentication-services/two-factor/
+      
+    - name: Pluralsight
+      url: https://www.pluralsight.com
+      img: pluralsight.png
+      tfa: No
+      twitter: pluralsight
+      facebook: pluralsight
+      email_address: support@pluralsight.com
 
     - name: Purdue University
       url: https://www.purdue.edu/
