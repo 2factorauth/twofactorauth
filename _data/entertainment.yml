@@ -1,10 +1,11 @@
 websites:
     - name: Bandcamp
       url: https://bandcamp.com
-      twitter: Bandcamp
-      facebook: Bandcamp
       img: bandcamp.png
       tfa: No
+      twitter: Bandcamp
+      facebook: Bandcamp
+      email_address: support@bandcamp.com
 
     - name: CD Baby
       url: https://www.cdbaby.com/
@@ -68,9 +69,10 @@ websites:
     - name: IMDb
       url: https://www.imdb.com
       img: imdb.png
+      tfa: No
       twitter: IMDb
       facebook: imdb
-      tfa: No
+      email_address: support-imdb@imdb.com
 
     - name: Last.fm
       url: https://www.last.fm/
