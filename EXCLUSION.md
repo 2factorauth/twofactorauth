@@ -6,7 +6,7 @@ Below is a list of categories and websites that we've opted out from listing on 
 
 *   #### Pornographic sites
 
-    As the volunteers of [2factorauth](https://github.com/2factorauth) need to go through all sites to validate that the site/service provides 2FA to it's users and verify that the pull request meets our style guidelines we've chosen not   to list pornographic sites.  
+    As the volunteers of [2factorauth](https://github.com/2factorauth) need to go through all sites to validate that the site/service provides 2FA to it's users and verify that the pull request meets our style guidelines we've chosen not to list pornographic sites.  
     We've also chosen to do this so that we don't have to go through potentially disturbing or illegal material.
 
 *   #### Self-hosted services
