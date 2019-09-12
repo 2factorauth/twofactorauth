@@ -83,12 +83,14 @@ websites:
       exceptions:
           text: "While both the main client area and the shared hosting panel support 2FA, each system is separate and requires its own setup."
 
-    - name: IBM BlueMix
-      url: https://bluemix.net
-      img: ibmbluemix.png
-      tfa: No
-      twitter: IBMcloud
-      facebook: IBMCloud
+    - name: IBM Cloud
+      url: https://cloud.ibm.com
+      img: ibmcloud.png
+      tfa: Yes
+      sms: Yes
+      phone: Yes
+      software: Yes
+      doc: https://cloud.ibm.com/docs/iam?topic=iam-types
 
     - name: Joyent
       url: https://www.joyent.com/
