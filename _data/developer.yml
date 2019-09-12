@@ -266,6 +266,14 @@ websites:
       sms: Yes
       doc: https://www.vagrantup.com/docs/vagrant-cloud/users/authentication.html#two-factor-authentication
 
+    - name: IBM Cloud App ID
+      url: https://www.ibm.com/cloud/app-id
+      img: ibm-cloud-app-id.png
+      tfa: Yes
+      sms: Yes
+      email: Yes
+      doc: https://cloud.ibm.com/docs/services/appid?topic=appid-cd-mfa
+
     - name: imgix
       url: https://www.imgix.com/
       twitter: imgix
