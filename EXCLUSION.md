@@ -9,11 +9,6 @@ Below is a list of categories and websites that we've opted out from listing on 
     As the volunteers of [2factorauth](https://github.com/2factorauth) need to go through all sites to validate that the site/service provides 2FA to it's users and verify that the pull request meets our style guidelines we've chosen not   to list pornographic sites.  
     We've also chosen to do this so that we don't have to go through potentially disturbing or illegal material.
 
-*   #### Religious and Political sites
-
-    The line between Religious/political views protected by free speech and hate speech can sometimes be very hard to distinguish between.  
-    To avoid having to make those decisions we've opted out from listing any Religious or Political sites.
-
 *   #### Self-hosted services
 
     The category "self-hosted services/sites" includes all types of software that's designed to be hosted by the end user (such as [ownCloud](https://owncloud.org/), [NextCloud](https://nextcloud.com/), [Mastodon](https://joinmastodon.org/), [phpBB](https://www.phpbb.com/), [XenForo](https://xenforo.com/) etc).  
