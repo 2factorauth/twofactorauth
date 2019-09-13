@@ -18,7 +18,7 @@ Below is a list of categories and websites that we've opted out from listing on 
 
     -   TwoFactorAuth.org is targeted towards consumers and not website administrators. As of right now, very few general internet users choose to host their own websites and services. Therefore we think that the effort on our part to maintain such a list of self hosted alternatives would outweigh the minimal theoretical change in the internet landscape by listing such services.
 
-    -   If the core project doesn't support two factor authentication but instead through plugins it would mean that we would have to list all plugins that enable two factor authentication for the service. Something that is currently impossible with out website layout.
+    -   If the core project doesn't support two factor authentication but instead through plugins it would mean that we would have to list all plugins that enable two factor authentication for the service. Something that is currently impossible with our website layout.
 
 ## Sites
 
