@@ -4,7 +4,7 @@ websites:
       img: adguard.png
       tfa: Yes
       software: Yes
-      doc: https://adguard.com/en/blog/adguard-2fa.html
+      doc: https://kb.adguard.com/en/general/2fa
 
     - name: AVG
       url: https://www.avg.com
@@ -55,7 +55,7 @@ websites:
       img: cloudflare.png
       tfa: Yes
       software: Yes
-      doc: https://support.cloudflare.com/hc/en-us/articles/200167866-How-do-I-set-up-two-factor-authentication-
+      doc: https://support.cloudflare.com/hc/en-us/articles/200167866
 
     - name: Cobalt
       url: https://cobalt.io/
@@ -79,6 +79,21 @@ websites:
       software: Yes
       doc: https://www.digicert.com/two-factor-authentication.htm
 
+    - name: DMARC Analyzer
+      url: https://www.dmarcanalyzer.com/
+      img: dmarcanalyzer.png
+      tfa: Yes
+      software: Yes
+      doc: https://www.dmarcanalyzer.com/set-two-factor-authentication-additional-security/
+
+    - name: dmarcian
+      url: https://dmarcian.com/
+      img: dmarcian.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      doc: https://dmarcian.com/secure-dmarcian-2fa/
+    
     - name: Dome9 Security
       url: https://dome9.com/
       img: dome9.png
@@ -146,7 +161,7 @@ websites:
       img: prey.png
       tfa: Yes
       software: Yes
-      doc: https://help.preyproject.com/article/248-how-to-enable-the-two-step-authenticator-for-prey
+      doc: https://help.preyproject.com/article/248--
 
     - name: Pwnie Express Pwn Pulse
       url: https://www.pwnieexpress.com/products/pulse-device-detection
@@ -155,7 +170,7 @@ websites:
       software: Yes
       exceptions:
           text: "TFA can be enabled on Pwn Pulse Accounts upon customer request."
-      doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909-chapter-5-pulse-administration-user-management
+      doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909
 
     - name: RBLTracker
       url: https://rbltracker.com/
@@ -222,6 +237,12 @@ websites:
     - name: TorGuard
       url: https://torguard.net
       img: torguard.png
+      tfa: Yes
+      software: Yes
+
+    - name: VirusTotal
+      url: https://www.virustotal.com
+      img: virustotal.png
       tfa: Yes
       software: Yes
 

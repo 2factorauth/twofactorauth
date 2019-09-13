@@ -14,7 +14,7 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
-    doc: https://help.backblaze.com/hc/en-us/articles/217666588-Two-Factor-Verification
+    doc: https://help.backblaze.com/hc/en-us/articles/217666588
 
   - name: Box
     url: https://www.box.com/
@@ -25,10 +25,11 @@ websites:
 
   - name: CloudApp
     url: https://www.getcloudapp.com/
-    twitter: cloudapp
     img: cloudapp.png
     tfa: No
+    twitter: cloudapp
     facebook: getcloudapp
+    email_address: support@getcloudapp.com
 
   - name: CrashPlan
     url: https://www.crashplan.com
@@ -52,7 +53,7 @@ websites:
     sms: Yes
     software: Yes
     hardware: Yes
-    doc: https://www.dropbox.com/en/help/363
+    doc: https://help.dropbox.com/security/enable-two-step-verification
 
   - name: Evernote
     url: https://evernote.com
@@ -60,7 +61,9 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
-    doc: https://help.evernote.com/hc/en-us/articles/208314238-How-to-set-up-two-step-verification
+    doc: https://help.evernote.com/hc/en-us/articles/208314238
+    exceptions:
+      text: "SMS authentication only available for Evernote Premium users"
 
   - name: FileThis
     url: https://filethis.com
@@ -87,18 +90,18 @@ websites:
 
   - name: IDrive
     url: https://www.idrive.com
-    twitter: IDriveBackup
     img: idrive.png
-    tfa: No
-    facebook: IDriveBackup
+    tfa: Yes
+    email: Yes
+    doc: https://blog.idrive.com/2018/11/16/idrive-adds-two-factor-authentication/
 
   - name: Jottacloud
     url: https://www.jottacloud.com
-    twitter: jottacloud
-    email_address: support@jottacloud.com
-    facebook: Jottacloud
     img: jotta.png
-    tfa: No
+    tfa: Yes
+    software: Yes
+    sms: Yes
+    doc: https://docs.jottacloud.com/en/articles/1292931
 
   - name: JustCloud
     url: https://www.justcloud.com
@@ -135,7 +138,7 @@ websites:
     email: Yes
     sms: Yes
     software: Yes
-    doc: http://support.nimbox.co.uk/knowledge_base/topics/two-step-slash-two-factor-authentication
+    doc: https://www.nimbox.co.uk/help-centre/two-step-two-factor-authentication-2fa/
 
   - name: OneDrive
     url: https://onedrive.live.com
@@ -143,7 +146,18 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
+    hardware: Yes
+    exceptions:
+        text: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
     doc: https://support.microsoft.com/en-us/help/12408/
+
+  - name: PCloud
+    url: https://www.pcloud.com
+    img: pcloud.png
+    tfa: Yes
+    sms: Yes
+    software: Yes
+    doc: https://www.pcloud.com/help/general-help-center/67-how-can-i-set-up-two-factor-authentication
 
   - name: Pogoplug
     url: https://pogoplug.com/
@@ -204,7 +218,7 @@ websites:
     tfa: Yes
     sms: Yes
     software: Yes
-    doc: https://thisdata.com/blog/how-to-enable-two-factor-authentication/
+    doc: http://help.thisdata.com/docs/two-factor-authentication
 
   - name: Tresorit
     url: https://tresorit.com/
@@ -214,7 +228,7 @@ websites:
     phone: Yes
     software: Yes
     email: Yes
-    doc: https://support.tresorit.com/entries/104192996-How-to-set-up-two-step-verification
+    doc: https://support.tresorit.com/hc/en-us/articles/216114527
 
   - name: Wasabi
     url: https://wasabi.com/
@@ -246,4 +260,4 @@ websites:
     software: Yes
     exceptions:
         text: "Only available for business accounts."
-    doc: http://wiki.zoolz.com/how-do-i-enable-two-factor-authentication-on-my-zoolz-intelligent-account/
+    doc: https://wiki.zoolz.com/how-do-i-enable-two-factor-authentication-on-my-zoolz-intelligent-account/

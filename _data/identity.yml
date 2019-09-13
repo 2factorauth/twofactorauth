@@ -4,8 +4,9 @@ websites:
       img: 1password.png
       tfa: Yes
       software: Yes
+      hardware: Yes
       exceptions:
-        text: "1Password advertises hardware 2FA on Yubikey but it's just software TOTP. Teams using Duo with 1Password can't enable additional 2FA as it's already handled by Duo"
+        text: "Teams using Duo with 1Password can't enable additional 2FA as it's already handled by Duo"
       doc: https://support.1password.com/two-factor-authentication/
 
     - name: Bitium
@@ -14,7 +15,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://support.bitium.com/customer/portal/articles/1417358-enabling-two-factor-authentication-2fa-
+      doc: https://support.bitium.com/administration/multi-factor-authentication/
 
     - name: bitwarden
       url: https://bitwarden.com
@@ -45,7 +46,7 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: https://support.dashlane.com/hc/en-us/articles/202625042-Protect-your-account-using-Two-Factor-Authentication
+      doc: https://support.dashlane.com/hc/en-us/articles/202625042
 
     - name: ID.me
       url: https://www.id.me/
@@ -55,7 +56,7 @@ websites:
       software: Yes
       hardware: Yes
       phone: Yes
-      doc: https://help.id.me/hc/en-us/sections/115000551794
+      doc: https://help.id.me/hc/en-us/categories/360001435974
 
     - name: IDentité Numérique (IDN)
       url: https://www.idn.laposte.fr
@@ -134,7 +135,7 @@ websites:
       email: Yes
       sms: Yes
       software: Yes
-      doc: https://help.roboform.com/hc/en-us/articles/115002729512-Setting-up-Google-Authenticator-for-your-account
+      doc: https://help.roboform.com/hc/en-us/articles/115002729512
 
     - name: SAASPASS
       url: https://saaspass.com

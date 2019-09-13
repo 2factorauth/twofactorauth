@@ -15,6 +15,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
       doc: https://articles.braintreepayments.com/reference/security/two-factor-authentication
 
     - name: Buycraft
@@ -43,8 +44,9 @@ websites:
     - name: GoCardless
       img: gocardless.png
       url: https://gocardless.com/
-      twitter: GoCardless
-      tfa: No
+      tfa: Yes
+      sms: Yes
+      doc: https://support.gocardless.com/hc/en-gb/articles/360001164385
 
     - name: Google Wallet
       url: https://www.google.se/wallet/
@@ -101,10 +103,9 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      hardware: Yes
       exceptions:
-          text: "2FA is only available in a few countries. Contact PayPal on twitter for an up to date list of available countries."
-      doc: https://www.paypal.com/us/cgi-bin?cmd=xpt/Marketing_CommandDriven/securitycenter/PayPalSecurityKey-outside&bn_r=o
+          text: "2FA is only available in a few countries. Contact PayPal on Twitter for an up-to-date list of available countries."
+      doc: https://www.paypal.com/us/smarthelp/article/faq4057
 
     - name: Paysafecard
       url: https://www.paysafecard.com/
@@ -146,7 +147,7 @@ websites:
       img: ravelin.png
       tfa: Yes
       software: Yes
-      doc: https://ravelin.zendesk.com/hc/en-us/articles/115001071665-Two-Factor-Authentication
+      doc: https://ravelin.zendesk.com/hc/en-us/articles/115001071665
 
     - name: Recurly
       url: https://www.recurly.com/
@@ -179,7 +180,7 @@ websites:
       software: Yes
       exceptions:
         text: "SMS only supported in US and Canada"
-      doc: https://squareup.com/help/us/en/article/5593-2-step-verification
+      doc: https://squareup.com/help/us/en/article/5593
 
     - name: Square Cash
       url: https://cash.me
@@ -208,7 +209,7 @@ websites:
       img: venmo.png
       tfa: Yes
       sms: Yes
-      doc: https://help.venmo.com/hc/en-us/articles/217532397--Confirm-my-identity-on-sign-in-Why
+      doc: https://help.venmo.com/hc/en-us/articles/217532397
 
     - name: Visa Checkout
       url: https://secure.checkout.visa.com/
