@@ -249,6 +249,15 @@ websites:
       software: Yes
       hardware: Yes
       doc: https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html
+      
+    - name: Gyroscope
+      url: https://www.antradar.com/docs-gyroscope-doc
+      img: gyro32.png
+      tfa: Yes
+      software: Yes
+      hardware: Yes
+      sms: Yes
+      doc: https://www.antradar.com/blog-gyroscope-multi-factor-authentication
 
     - name: HashiCorp Terraform Enterprise
       url: https://app.terraform.io/
