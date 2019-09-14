@@ -36,7 +36,7 @@ task proof_external: 'build' do
 end
 
 JsonLint::RakeTask.new do |t|
-  t.paths = %w[_site/data.json]
+  t.paths = %w[_site/api/v1/data.json _site/api/v2/data.json]
 end
 
 task :verify do
