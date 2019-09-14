@@ -109,7 +109,7 @@ If you are adding multiple sites to the TwoFactorAuth list, please create a new
 git branch for each website, and submit a separate pull request for each branch.
 More information regarding how to create new git branches can be found on
 [GitHub's Help Page][github-tutorial]
-or [DigitalOcean's Tutorial][do-tutorial]7.
+or [DigitalOcean's Tutorial][do-tutorial].
 
 Adding a new website should be pretty straight-forward. The `websites` array should
 already be defined; simply add a new website to it as shown in the following example:
