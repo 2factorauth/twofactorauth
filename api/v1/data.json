@@ -10,7 +10,7 @@
     "{{ website.name }}": {
     {%-for tag in website -%}
       {%- unless tag[0] == 'tfa' -%}
-        {%- if tag[0] != "exceptions" -%}
+        {%- if tag[0] != "exception" -%}
           "{{ tag[0] }}":
           {%- if tag[1] == true or tag[1] == false -%}
             {
@@ -20,12 +20,7 @@
            "{{ tag[1] }}"
           {%- endif -%}
         {%- else -%}
-          "{{ tag[0] }}": {
-           {%- for exception in tag[1] -%}
-            "{{ exception[0] }}": "{{ exception[1] }}"
-            {%- unless forloop.last -%},{%- endunless -%}
-          {%- endfor -%}
-          }
+          "exceptions": {"text": "{{ tag[1] }}"}
         {%- endif -%}
       {%- else -%}
         "tfa": true,

@@ -9,7 +9,7 @@
         {%- if tag[0] == "name" -%}
           {%- continue -%}
         {%- endif -%}
-        {%- unless tag[0] == "exceptions" -%}"{{ tag[0] }}":
+        "{{ tag[0] }}":
           {%- unless tag[0] == "tfa" -%}
             {%- if tag[0] == "doc" and tag[1] contains "/notes/" -%}
               "{{ tag[1] | prepend: site.url }}"
@@ -23,15 +23,7 @@
               {%- unless forloop.last -%},{%- endunless -%}
             {%- endfor -%}
             ]
-          {%- endunless  -%}
-        {%- else -%}
-          "{{ tag[0] }}":{
-          {%- for exception in tag[1] -%}
-            "{{ exception[0] }}":"{{ exception[1] }}"
-            {%- unless forloop.last -%},{%- endunless -%}
-          {%- endfor -%}
-          }
-        {%- endunless -%}
+          {%- endunless -%}
         {%- unless forloop.last -%},{%- endunless -%}
       {%- endfor -%}
       }

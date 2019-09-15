@@ -16,8 +16,9 @@
         "proprietary",
         "u2f"
       ],
-      "doc": "https://example.com/doc/2fa-documentation"
-    }  
+      "doc": "https://example.com/doc/2fa-documentation",
+      "exception": "Text describing any discrepancies in the 2FA implementation."
+    }
   }
 }
 ```
@@ -28,7 +29,7 @@ Mandatory tags for websites with 2fa are:
 
 Optional tags for websites with 2fa are:
 - doc
-- exception (Map containing `text` key with string value)
+- exception
 
 
 ## Example website with 2FA disabled:

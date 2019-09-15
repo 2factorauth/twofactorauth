@@ -24,12 +24,8 @@ mapping:
             sequence:
               - type: str
                 pattern: /^(sms|hardware|phone|software|email|u2f|totp|proprietary)+$/
-          "exceptions":
-            type: map
-            mapping:
-              "text":
-                type: str
-                required: yes
+          "exception":
+            type: str
           "doc":
             type: str
           "twitter":
