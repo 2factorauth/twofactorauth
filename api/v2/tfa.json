@@ -6,37 +6,34 @@
  {%- assign websites = section_file.websites | where_exp: "item", "item.tfa != nil" -%}
     {%- for website in websites -%}"{{ website.name }}":{
       {%- for tag in website -%}
-        {% unless tag[0] == "name" -%}
+        {%- if tag[0] == "name" -%}
+          {%- continue -%}
+        {%- endif -%}
         {%- unless tag[0] == "exceptions" -%}"{{ tag[0] }}":
-          {%- if tag[1] == true or tag[1] == false -%}
-            {{tag[1]}}
+          {%- unless tag[0] == "tfa" -%}
+            "{{tag[1]}}"
           {%- else -%}
-            {%- if tag[0] == "tfa" -%}
-              [
-              {%- for method in tag[1] -%}
-                "{{ method }}"
-                {%- unless forloop.last -%},{%- endunless -%}
-              {%- endfor -%}
-              ]
-            {%- else -%}
-              "{{ tag[1] }}"
-            {%- endif -%}
-          {%- endif  -%}
+            [
+            {%- for method in tag[1] -%}
+              "{{ method }}"
+              {%- unless forloop.last -%},{%- endunless -%}
+            {%- endfor -%}
+            ]
+          {%- endunless  -%}
         {%- else -%}
           "{{ tag[0] }}":{
           {%- for exception in tag[1] -%}
             "{{ exception[0] }}":"{{ exception[1] }}"
-              {%- if forloop.last != true -%},{%- endif -%}
+            {%- unless forloop.last -%},{%- endunless -%}
           {%- endfor -%}
           }
         {%- endunless -%}
-        {%- if forloop.last != true -%},{%- endif -%}
-       {%- endunless -%}
+        {%- unless forloop.last -%},{%- endunless -%}
       {%- endfor -%}
       }
-      {%- if forloop.last != true -%},{%- endif -%}
+      {%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
   }
-  {%- if forloop.last != true -%},{%- endif -%}
+  {%- unless forloop.last -%},{%- endunless -%}
 {%- endfor -%}
 }

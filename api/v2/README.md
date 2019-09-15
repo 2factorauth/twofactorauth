@@ -5,7 +5,6 @@
 {
   "Category name": {
     "Example Website": {
-      "name": "Example Website",
       "url": "https://example.com/",
       "img": "example.png",
       "tfa": [
@@ -23,14 +22,13 @@
 }
 ```
 Mandatory tags for websites with 2fa are:
-- name
 - url
 - img
 - tfa (Array containing any or all of the above strings)
 
 Optional tags for websites with 2fa are:
 - doc
-- exception (either as a Boolean or map containing `text` key with string value)
+- exception (Map containing `text` key with string value)
 
 
 ## Example website with 2FA disabled:
@@ -38,7 +36,6 @@ Optional tags for websites with 2fa are:
 {
   "Category name": {
     "Example Website": {
-      "name": "Example Website",
       "url": "https://example.com/",
       "img": "example.png",
       "twitter": "example",
@@ -49,7 +46,6 @@ Optional tags for websites with 2fa are:
 }
 ```
 Mandatory tags for websites without 2fa are:
-- name
 - url
 - img
 
