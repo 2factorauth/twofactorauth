@@ -266,6 +266,13 @@ websites:
       sms: Yes
       doc: https://www.vagrantup.com/docs/vagrant-cloud/users/authentication.html#two-factor-authentication
 
+    - name: Heap Analytics
+      url: https://heapanalytics.com/
+      img: heapanalytics.png
+      tfa: Yes
+      software: Yes
+      doc: https://docs.heap.io/docs/2fa
+
     - name: imgix
       url: https://www.imgix.com/
       twitter: imgix
