@@ -5,6 +5,7 @@
  {%- assign section_file = site.data[section.id] -%}"{{ section.title }}":{
     {%- for website in section_file.websites -%}"{{ website.name }}":{
       {%- for tag in website -%}
+        {%- unless tag[0] == "name" -%}
         {%- unless tag[0] == "exceptions" -%}"{{ tag[0] }}":
           {%- if tag[1] == true or tag[1] == false -%}
             {{tag[1]}}
@@ -29,6 +30,7 @@
           }
         {%- endunless -%}
         {%- if forloop.last != true -%},{%- endif -%}
+       {%- endunless -%}
       {%- endfor -%}
       }
       {%- if forloop.last != true -%},{%- endif -%}
