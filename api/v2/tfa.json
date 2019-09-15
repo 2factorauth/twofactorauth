@@ -11,7 +11,11 @@
         {%- endif -%}
         {%- unless tag[0] == "exceptions" -%}"{{ tag[0] }}":
           {%- unless tag[0] == "tfa" -%}
-            "{{tag[1]}}"
+            {%- if tag[0] == "doc" and tag[1] contains "/notes/" -%}
+              "{{ tag[1] | prepend: site.url }}"
+            {%- else -%}
+              "{{tag[1]}}"
+            {%- endif -%}
           {%- else -%}
             [
             {%- for method in tag[1] -%}
