@@ -8,22 +8,20 @@ websites:
       hardware: Yes
       doc: https://aws.amazon.com/iam/details/mfa/
 
-    - name: Aruba Cloud
-      url: https://www.arubacloud.com/
-      img: arubacloud.png
-      tfa: Yes
-      sms: No
-      software: Yes
-      hardware: No
-      doc: https://kb.cloud.it/computing/uso-e-tecnologie/accesso-al-pannello-di-controllo-con-otp.aspx
-      exceptions:
-          text: "Only the control panel supports 2FA (the main client area does not), and it requires installing a proprietary app."
-
     - name: appFog
       url: https://www.ctl.io/appfog/
       facebook: CenturyLinkTech
       img: appfog.png
       tfa: No
+
+    - name: Aruba Cloud
+      url: https://www.arubacloud.com/
+      img: arubacloud.png
+      tfa: Yes
+      software: Yes
+      doc: https://kb.cloud.it/computing/uso-e-tecnologie/accesso-al-pannello-di-controllo-con-otp.aspx
+      exceptions:
+          text: "Only the control panel supports 2FA (the main client area does not), and it requires installing a proprietary app."
 
     - name: Brightbox
       url: https://www.brightbox.com/
