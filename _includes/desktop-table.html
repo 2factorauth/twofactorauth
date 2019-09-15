@@ -42,7 +42,6 @@
         <td class="main positive">
           {% include row-title.html section=section_id website=website type='desktop' %}
         </td>
-
         <td class="positive icon">
           {% if website.doc %}
           <a href="{{ website.doc }}"><i class="book link large icon"></i></a>
@@ -50,31 +49,31 @@
         </td>
 
         <td class="positive icon">
-          {% if website.sms %}
+          {% if website.sms or website.tfa contains 'sms' %}
           <i class="checkmark large icon" title="SMS"></i>
           {% endif %}
         </td>
 
         <td class="positive icon">
-          {% if website.phone %}
+          {% if website.phone or website.tfa contains 'phone' %}
           <i class="checkmark large icon" title="Phone"></i>
           {% endif %}
         </td>
 
         <td class="positive icon">
-          {% if website.email %}
+          {% if website.email or website.tfa contains 'email' %}
           <i class="checkmark large icon" title="Email"></i>
           {% endif %}
         </td>
 
         <td class="positive icon">
-          {% if website.hardware %}
+          {% if website.hardware or website.tfa contains 'u2f' or website.tfa contains 'hardware' %}
           <i class="checkmark large icon" title="Hardware Token"></i>
           {% endif %}
         </td>
 
         <td class="positive icon">
-          {% if website.software %}
+          {% if website.software or website.tfa contains 'software' or website.tfa contains 'totp' or website.tfa contains 'proprietary' %}
           <i class="checkmark large icon" title="Software Token"></i>
           {% endif %}
         </td>
