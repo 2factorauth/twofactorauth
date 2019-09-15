@@ -20,23 +20,12 @@ mapping:
             pattern: /^[a-z0-9_\-\+]+\.png/
             required: yes
           "tfa":
-            type: bool
             required: yes
-          "software":
-            type: bool
-            pattern: /true/
-          "hardware":
-            type: bool
-            pattern: /true/
-          "sms":
-            type: bool
-            pattern: /true/
-          "phone":
-            type: bool
-            pattern: /true/
-          "email":
-            type: bool
-            pattern: /true/
+            type: map
+            mapping:
+              "text":
+                type: str
+                required: yes
           "exceptions":
             type: map
             mapping:
