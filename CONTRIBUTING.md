@@ -91,7 +91,7 @@ View the complete list in the [EXCLUSION.md file][exclude].
 To add a new category, modify the `sections` value in [sections.yml](_data/sections.yml)
 and follow the template below:
 
-```yml
+```YAML
 - id: category-id
   title: Category Name
   icon: icon-class
@@ -114,7 +114,7 @@ or [DigitalOcean's Tutorial][do-tutorial].
 Adding a new website should be pretty straight-forward. The `websites` array should
 already be defined; simply add a new website to it as shown in the following example:
 
-```yml
+```YAML
 websites:
   - name: Site Name
     url: https://www.site.com/
@@ -124,7 +124,10 @@ websites:
       - email
       - phone
       - software
-      - hardware  
+      - hardware
+      - proprietary (Software based 2FA that requires a special app to use)
+      - totp (Normal software 2FA)
+      - u2f
     doc: <link to site TFA documentation>
 ```
 
@@ -139,7 +142,7 @@ Sites supporting TFA should not have a `twitter`, `facebook` or `email_address` 
 
 The following is an example of a website that *supports* TFA:
 
-```yml
+```YAML
   - name: YouTube
     url: https://www.youtube.com/
     img: youtube.png
@@ -149,6 +152,8 @@ The following is an example of a website that *supports* TFA:
       - phone
       - software
       - hardware
+      - totp
+      - u2f
     doc: http://www.google.com/intl/en-US/landing/2step/features.html
 ```
 
@@ -161,7 +166,7 @@ field should also be included. The fields `tfa:` and `doc:` can be completely re
 
 The following is an example of a website that *does not* support TFA:
 
-```yml
+```YAML
     - name: Netflix
       url: https://www.netflix.com/us/
       twitter: Netflixhelps
@@ -175,57 +180,16 @@ The `lang:` field is only used for non-English websites. The language codes shou
 
 ### Exceptions & Restrictions
 
-If a site doesn't support TFA in certain countries, you can note this on the
-website. There are 4 ways to customize how it is displayed:
+If a site is only available in certain countries or requires the user to do something out of the ordinary to set up 2FA, you can note this on the
+website.
 
-1. A default message acknowledging restrictions will be used with the following
-   config:
-
-   ```yml
+   ```YAML
     - name: Site Name
       url: https://www.site.com/
       img: site.png
-      tfa: Yes
-      sms: Yes
-      exceptions: Yes
-      doc: <link to site TFA documentation>
-   ```
-2. The message can be replaced with a custom set of words:
-
-   ```yml
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-          text: "Specific text goes here."
-      doc: <link to site TFA documentation>
-   ```
-3. The icon can be made into a link in which more details can be revealed such
-   as country specific info and anything else.
-
-   ```yml
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-          link: Yes
-      doc: <link to site TFA documentation>
-   ```
-4. 2 and 3 can be combined into:
-
-   ```yml
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-          link: Yes
-          text: "Specific text can go here as well."
+      tfa:
+        - sms
+      exceptions: "Specific text goes here."
       doc: <link to site TFA documentation>
    ```
 
@@ -244,8 +208,7 @@ website. There are 4 ways to customize how it is displayed:
 - If a site does not have TFA but there is documentation that they are adding
   it, then use:
 
-  ```yml
-  tfa: No
+  ```YAML
   status: <url to documentation>
   ```
 
