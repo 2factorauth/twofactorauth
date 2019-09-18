@@ -49,6 +49,8 @@ websites:
       img: gmx_net.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
 
     - name: Hushmail
@@ -260,6 +262,8 @@ websites:
       img: webde.png
       tfa: Yes
       software: Yes
+      hardware: Yes
+      otp: Yes
       doc: https://hilfe.web.de/sicherheit/2fa/index.html
 
     - name: Yahoo Japan Mail
