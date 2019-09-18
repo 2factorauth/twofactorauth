@@ -167,7 +167,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://www.etsy.com/help/article/3335
+      doc: https://help.etsy.com/hc/en-us/articles/115015569567
 
     - name: Everlane
       url: https://www.everlane.com/
@@ -354,15 +354,16 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
+      hardware: Yes
       doc: https://help.shopify.com/manual/your-account/account-security/two-step-authentication
 
-    - name: Sierra Trading Post
-      url: https://www.sierratradingpost.com
-      img: sierratradingpost.png
+    - name: Sierra
+      url: https://www.sierra.com
+      img: sierra.png
       tfa: No
       email_address: customerservice@sierra.com
       twitter: sierraofficial
-      facebook: sierratradingpost
+      facebook: sierraofficial
 
     - name: Snapdeal
       url: https://www.snapdeal.com/

@@ -221,6 +221,8 @@ websites:
       email: Yes
       software: Yes
       doc: https://www.capitalone.com/identity-protection/swiftid/
+      exceptions:
+       text: "Software implementation requires use of Capital One app."
 
     - name: CDC Federal Credit Union
       url: https://www.cdcfcu.com
@@ -790,6 +792,14 @@ websites:
       twitter: myOptum
       facebook: myOptum
 
+    - name: OTP banka
+      url: https://www.otpbanka.hr/
+      img: otpbanka.png
+      tfa: Yes
+      hardware: Yes
+      software: Yes
+      doc: https://www.otpbanka.hr/hr/upute/otp-token-upute-za-koristenje
+
     - name: Partners Federal Credit Union
       url: https://partnersfcu.org/
       img: partners.png
@@ -926,9 +936,7 @@ websites:
     - name: Santander UK
       url: https://www.santander.co.uk
       img: santander.png
-      tfa: Yes
-      sms: Yes
-      doc: https://www.santander.co.uk/uk/help-support/security-centre
+      tfa: No
 
     - name: SchoolsFirst FCU
       url: https://www.schoolsfirstfcu.org/
@@ -986,6 +994,14 @@ websites:
       facebook: SimpliiFinancial
       twitter: SimpliiFin
 
+    - name: SoFi
+      url: https://www.sofi.com/
+      img: sofi.png
+      tfa: Yes
+      sms: Yes
+      software: Yes
+      doc: https://www.sofi.com/blog/introducing-two-step-verification-sofi-next-level-account-protection/
+
     - name: Sparda Banken
       url: https://www.sparda.de/
       twitter: SpardaBerlin
@@ -1003,13 +1019,6 @@ websites:
       img: sparkasse.png
       tfa: No
       lang: de
-
-    - name: Splitska banka
-      url: https://www.splitskabanka.hr/
-      img: splitska.png
-      tfa: Yes
-      hardware: Yes
-      doc: https://www.splitskabanka.hr/LinkClick.aspx?fileticket=uADVHHVmbUU%3d&tabid=4756&portalid=8&mid=8287
 
     - name: Starling Bank
       url: https://www.starlingbank.com/
@@ -1079,12 +1088,12 @@ websites:
       lang: de
 
     - name: TBC Bank
-      url: http://www.tbcbank.ge
+      url: https://www.tbcbank.ge
       img: tbcbank.png
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: http://www.tbcbank.ge/web/en/web/guest/tbc-digipass
+      doc: https://www.tbcbank.ge/web/en/web/guest/tbc-digipass
 
     - name: TD Bank
       url: https://www.tdbank.com
@@ -1177,7 +1186,6 @@ websites:
       img: usaa.png
       tfa: Yes
       sms: Yes
-      hardware: Yes
       email: Yes
       software: Yes
       doc: https://www.usaa.com/inet/pages/security_token_logon_options

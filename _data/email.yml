@@ -38,11 +38,18 @@ websites:
       multipleu2f: Yes
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
-    - name: GMX
+    - name: GMX.com
       url: https://www.gmx.com/
       twitter: gmxmail
       img: gmx.png
       tfa: No
+
+    - name: GMX.net
+      url: https://www.gmx.net/
+      img: gmx_net.png
+      tfa: Yes
+      software: Yes
+      doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
 
     - name: Hushmail
       url: https://www.hushmail.com
@@ -53,7 +60,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://help.hushmail.com/entries/63282756-Two-step-verification
+      doc: https://help.hushmail.com/hc/en-us/articles/213268943
 
     - name: Kerio Connect
       url: https://www.kerio.com/products/kerio-connect
@@ -142,6 +149,8 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
+      exceptions:
+          text: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
       doc: https://support.microsoft.com/en-us/help/12408/
 
     - name: Pobox
@@ -202,7 +211,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704/4/how-to-set-up-two-factor-authentication-2fa
+      doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704
 
     - name: T-Online
       url: https://www.t-online.de/
@@ -237,7 +246,7 @@ websites:
       otp: Yes
       u2f: Yes
       multipleu2f: Yes
-      doc: https://tutanota.com/faq/#2fa
+      doc: https://tutanota.com/howto/#2fa
 
     - name: Virgin Media E-Mail
       url: https://www.virginmedia.com/
@@ -248,11 +257,10 @@ websites:
 
     - name: Web.de
       url: https://web.de
-      twitter: WEBDE
-      facebook: WEB.DE
       img: webde.png
-      lang: de
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://hilfe.web.de/sicherheit/2fa/index.html
 
     - name: Yahoo Japan Mail
       url: https://mail.yahoo.co.jp/

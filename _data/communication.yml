@@ -18,7 +18,7 @@ websites:
       img: campfire.png
       tfa: Yes
       sms: Yes
-      doc: https://help.37signals.com/sign-in/questions/460-how-do-i-set-up-and-use-phone-verification-for-logging-in
+      doc: https://help.37signals.com/sign-in/questions/460
 
     - name: Capsule
       url: https://capsulecrm.com/
@@ -129,13 +129,6 @@ websites:
       multipleu2f: Yes
       doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
-    - name: HipChat
-      url: https://www.hipchat.com
-      twitter: HipChat
-      facebook: HipChat
-      img: hipchat.png
-      tfa: No
-
     - name: HubSpot
       url: https://www.hubspot.com/
       img: hubspot.png
@@ -196,7 +189,7 @@ websites:
       img: peerio.png
       tfa: Yes
       software: Yes
-      doc: https://peerio.zendesk.com/hc/en-us/articles/202933829-How-do-I-setup-two-factor-authentication-
+      doc: https://support.peerio.com/hc/en-us/articles/203665635
 
     - name: Riot
       url: https://about.riot.im/
@@ -222,7 +215,7 @@ websites:
       hardware: Yes
       otp: Yes
       u2f: Yes
-      doc: https://developer.salesforce.com/docs/atlas.en-us.identityImplGuide.meta/identityImplGuide/add_time-based_token.htm
+      doc: https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/add_time-based_token.htm
 
     - name: SendGrid
       url: https://sendgrid.com/
@@ -268,7 +261,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://slack.zendesk.com/hc/en-us/articles/204509068-Enabling-two-factor-authentication
+      doc: https://get.slack.help/hc/en-us/articles/204509068
 
     - name: SocketLabs
       url: https://socketlabs.com/
@@ -276,14 +269,14 @@ websites:
       sms: Yes
       tfa: Yes
       software: Yes
-      doc: https://support.socketlabs.com/kb/145
+      doc: https://help.socketlabs.com/docs/two-step-verification
 
     - name: SparkPost
       url: https://sparkpost.com/
       img: sparkpost.png
       tfa: Yes
       software: Yes
-      doc: https://support.sparkpost.com/customer/portal/articles/1948449
+      doc: https://www.sparkpost.com/docs/my-account-and-profile/enabling-two-factor-authentication/
 
     - name: Stackfield
       url: https://www.stackfield.com/
@@ -294,10 +287,11 @@ websites:
 
     - name: TeamSpeak
       url: https://www.teamspeak.com/
-      twitter: teamspeak
-      facebook: teamspeak
       img: teamspeak.png
       tfa: No
+      twitter: teamspeak
+      facebook: teamspeak
+      email_address: sales@teamspeak.com
 
     - name: Telegram
       url: https://telegram.org/

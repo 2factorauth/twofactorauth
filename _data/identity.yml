@@ -19,7 +19,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://support.bitium.com/customer/portal/articles/1417358-enabling-two-factor-authentication-2fa-
+      doc: https://support.bitium.com/administration/multi-factor-authentication/
 
     - name: bitwarden
       url: https://bitwarden.com
@@ -56,7 +56,7 @@ websites:
       u2f: Yes
       exceptions:
         text: "Premium account required for FIDO U2F."
-      doc: https://support.dashlane.com/hc/en-us/articles/202625042-Protect-your-account-using-Two-Factor-Authentication
+      doc: https://support.dashlane.com/hc/en-us/articles/202625042
 
     - name: ID.me
       url: https://www.id.me/
@@ -66,7 +66,7 @@ websites:
       software: Yes
       hardware: Yes
       phone: Yes
-      doc: https://help.id.me/hc/en-us/sections/115000551794
+      doc: https://help.id.me/hc/en-us/categories/360001435974
 
     - name: IDentité Numérique (IDN)
       url: https://www.idn.laposte.fr
@@ -80,12 +80,13 @@ websites:
       url: https://keepersecurity.com/
       img: keeper.png
       tfa: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: Yes
+      multipleu2f: Yes
       phone: Yes
       sms: Yes
       software: Yes
-      hardware: Yes
-      multipleu2f: Yes
-      otp: Yes
       doc: https://www.keepersecurity.com/security#twoFactor
 
     - name: Keybase
@@ -151,7 +152,7 @@ websites:
       email: Yes
       sms: Yes
       software: Yes
-      doc: https://help.roboform.com/hc/en-us/articles/115002729512-Setting-up-Google-Authenticator-for-your-account
+      doc: https://help.roboform.com/hc/en-us/articles/115002729512
 
     - name: SAASPASS
       url: https://saaspass.com

@@ -5,32 +5,35 @@ websites:
       tfa: No
       twitter: airvpn
       facebook: airvpn.org
+      email_address: support@airvpn.org
 
     - name: BolehVPN
       url: https://www.bolehvpn.net/
       img: bolehvpn.png
       tfa: No
       twitter: bolehvpn
+      email_address: support@bolehvpn.net
 
     - name: CyberGhost
       url: https://www.cyberghostvpn.com
       img: cyberghost.png
+      tfa: No
       twitter: CyberGhost_EN
       facebook: cyberghostEN
-      tfa: No
 
     - name: ExpressVPN
-      img: expressvpn.png
       url: https://www.expressvpn.com
+      img: expressvpn.png
       tfa: Yes
       email: Yes
 
     - name: hide.me VPN
       url: https://hide.me/
-      twitter: thevpncompany
-      facebook: www.hide.me
       img: hidemevpn.png
       tfa: No
+      twitter: thevpncompany
+      facebook: www.hide.me
+      email_address: support@hide.me
 
     - name: IPVanish
       url: https://www.ipvanish.com
@@ -38,12 +41,14 @@ websites:
       tfa: No
       twitter: IPVanish
       facebook: ipvanish
+      email_address: support@ipvanish.com
 
     - name: IVPN
       url: https://www.ivpn.net/
-      twitter: ivpnnet
       img: ivpn.png
       tfa: No
+      twitter: ivpnnet
+      email_address: support@ivpn.net
 
     - name: NordVPN
       url: https://nordvpn.com
@@ -51,6 +56,7 @@ websites:
       tfa: No
       twitter: NordVPN
       facebook: NordVPN
+      email_address: support@nordvpn.com
 
     - name: Perfect Privacy VPN
       url: https://www.perfect-privacy.com/
@@ -78,6 +84,7 @@ websites:
       tfa: No
       twitter: PureVPNcom
       facebook: PureVPNcom
+      email_address: support@purevpn.com
 
     - name: SaferVPN
       url: https://www.safervpn.com
@@ -85,6 +92,7 @@ websites:
       tfa: No
       twitter: SaferVPN
       facebook: SaferVPNCom
+      email_address: support@safervpn.com
 
     - name: TunnelBear
       url: https://tunnelbear.com/
@@ -92,13 +100,15 @@ websites:
       tfa: No
       twitter: theTunnelBear
       facebook: tunnelbear
+      email_address: support@tunnelbear.com
 
     - name: VPN Unlimited
       url: https://vpnunlimitedapp.com/
       img: vpnunlimited.png
+      tfa: No
       twitter: vpnunlimited
       facebook: vpnunlimitedapp
-      tfa: No
+      email_address: support@keepsolid.com
 
     - name: Windscribe
       url: https://windscribe.com
@@ -106,3 +116,4 @@ websites:
       tfa: No
       twitter: windscribecom
       facebook: windscribe
+      email_address: support@windscribe.com

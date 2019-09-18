@@ -17,7 +17,8 @@ are stored in folders corresponding to each of those categories in their own
    If you want to test locally, instructions are listed below. Keep reading!
 2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
    preferred format. If possible, please also run the image through an optimizing
-   utility such as OptiPNG before committing it to the repo.
+   utility such as OptiPNG before committing it to the repo and keep the file
+   to be under 2.5 kB.
 3. **HTTPS links**: All sites that support HTTPS should also be linked with an
    HTTPS address.
 4. **Alexa top 200k**: A new site, that is not already listed, has to be within the

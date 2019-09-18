@@ -261,7 +261,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://help.hover.com/entries/26677644
+      doc: https://help.hover.com/hc/en-us/articles/217282267
 
     - name: Hurricane Electric
       url: https://www.he.net/
@@ -337,9 +337,12 @@ websites:
     - name: Moniker
       url: https://www.moniker.com/
       img: moniker.png
-      tfa: No
       twitter: MonikerSnap
       facebook: MonikerLLC
+      tfa: Yes
+      software: Yes
+      email: Yes
+      doc: https://faq.moniker.com/login-into-moniker
 
     - name: MyDomain
       url: https://www.mydomain.com/
@@ -365,7 +368,7 @@ websites:
       otp: Yes
       u2f: Yes
       multipleu2f: Yes
-      doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45/how-to-two-factor-authentication
+      doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45
 
     - name: NameSilo.com
       url: https://www.namesilo.com/
@@ -464,7 +467,7 @@ websites:
       tfa: Yes
       software: Yes
       sms: Yes
-      doc: https://help.opensrs.com/hc/en-us/articles/209618017-Two-Factor-Authentication-2FA-for-Reseller-Account-Access
+      doc: https://help.opensrs.com/hc/en-us/articles/209618017
 
     - name: pair Domains
       url: https://www.pairdomains.com/
@@ -492,9 +495,16 @@ websites:
     - name: Rebel.com
       url: https://www.rebel.com/
       twitter: rebeldotcom
-      facebook: rebeldotcomhosting
+      facebook: rebelhostinganddomains
       img: rebel.png
       tfa: No
+      
+    - name: Rebrandly
+      url: https://rebrandly.com
+      img: rebrandly.png
+      tfa: Yes 
+      software: Yes
+      doc: https://support.rebrandly.com/hc/en-us/articles/360007220373
 
     - name: Register4Less
       url: https://register4less.com/
@@ -521,6 +531,15 @@ websites:
       tfa: No
       lang: de
 
+    - name: Synergy Wholesale
+      url: https://synergywholesale.com/
+      img: synergywholesale.png
+      tfa: Yes
+      email: Yes
+      sms: Yes
+      software: Yes
+      doc: https://synergywholesale.com/faq/article/can-i-enable-two-factor-authentication-on-my-wholesale-system-account/
+    
     - name: UK2
       url: https://www.uk2.net/
       twitter: UK2
@@ -545,7 +564,7 @@ websites:
       img: uniteddomains-usa.png
       tfa: Yes
       software: Yes
-      doc: https://help.uniteddomains.com/hc/en-us/articles/115001458813-How-to-Enable-Disable-Two-Factor-Authentication
+      doc: https://help.uniteddomains.com/hc/en-us/articles/115001458813
 
     - name: united-domains Reselling
       url: https://www.ud-reselling.com/en/

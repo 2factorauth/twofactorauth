@@ -7,6 +7,13 @@ websites:
       software: Yes
       doc: https://support.ankama.com/hc/en-us/categories/200093427-DOFUS-Security
 
+    - name: Ashes of Creation
+      url: https://ashesofcreation.com
+      img: ashesofcreation.png
+      tfa: Yes
+      software: Yes
+      doc: https://ashesofcreation.zendesk.com/hc/en-us/articles/360022983234
+
     - name: Aternos
       url: https://aternos.org/
       img: aternos.png
@@ -25,7 +32,7 @@ websites:
       img: bladeandsoul.png
       tfa: Yes
       software: Yes
-      doc: https://support.bladeandsoul.com/hc/en-us/articles/207578553-Supported-Two-Step-OTP-Authentication-Verification-Methods
+      doc: https://support.bladeandsoul.com/hc/en-us/articles/207578553
 
     - name: Blizzard
       url: https://blizzard.com
@@ -35,7 +42,7 @@ websites:
       software: Yes
       hardware: Yes
       exceptions:
-          text: "Authentication requires the Blizzard Authenticator app."
+          text: "Software authentication requires the Blizzard Authenticator app."
       doc: https://us.battle.net/support/en/article/Blizzard-Authenticator
 
     - name: Bohemia Interactive
@@ -43,13 +50,6 @@ websites:
       img: bohemia.png
       tfa: Yes
       software: Yes
-
-    - name: Curse
-      url: https://www.curse.com/
-      img: curse.png
-      tfa: No
-      twitter: curseapp
-      facebook: curseapp
 
     - name: Elder Scrolls Online
       url: https://www.elderscrollsonline.com/
@@ -77,7 +77,7 @@ websites:
       software: Yes
       exceptions:
           text: "2FA is only available on paid plans. Software authentication requires the Authy app."
-      doc: https://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
+      doc: https://support.enjin.com/hc/en-us/articles/201090770
 
     - name: Epic Games
       url: https://www.epicgames.com/
@@ -97,14 +97,14 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://support.eveonline.com/hc/en-us/articles/203465601-Two-Factor-Authentication-and-Authenticator
+      doc: https://support.eveonline.com/hc/en-us/articles/203465601
 
     - name: FaceIT
       url: https://www.faceit.com
       img: faceit.png
       tfa: Yes
       software: Yes
-      doc: https://support.faceit.com/hc/en-us/articles/115000254670-Enabling-2-Factor-Authentication-
+      doc: https://support.faceit.com/hc/en-us/articles/115000254670
 
     - name: Gaijin Entertainment
       url: https://gaijin.net
@@ -113,7 +113,7 @@ websites:
       email: Yes
       sms: Yes
       software: Yes
-      doc: https://support.gaijin.net/hc/en-us/articles/203623622-How-to-set-up-the-Two-Step-Authorization-Google-Authenticator-
+      doc: https://support.gaijin.net/hc/en-us/articles/203623622
       exceptions:
           text: "A verified phone number is required for the use of two-factor authentication through email or software."
 
@@ -170,11 +170,10 @@ websites:
       sms: Yes
       tfa: Yes
       email: Yes
-      phone: Yes
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://help.guildwars2.com/hc/en-us/articles/230672927-Securing-Your-Account-With-Authentication
+      doc: https://help.guildwars2.com/hc/en-us/articles/230672927
 
     - name: Humble Bundle
       url: https://www.humblebundle.com/
@@ -283,14 +282,14 @@ websites:
       img: rockstargames.png
       tfa: Yes
       software: Yes
-      doc: https://support.rockstargames.com/hc/en-us/articles/360000031747-Setting-Up-2-Step-Verification-with-Social-Club
+      doc: https://support.rockstargames.com/articles/360000031747
 
     - name: RuneScape
       url: https://www.runescape.com/
       img: runescape.png
       tfa: Yes
       software: Yes
-      doc: https://support.runescape.com/hc/en-gb/articles/206811835-Setting-the-Authenticator-Mobile-Device
+      doc: https://support.runescape.com/hc/en-gb/articles/206811835
 
     - name: Scryfall
       url: https://www.scryfall.com/
@@ -310,12 +309,12 @@ websites:
           text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
 
     - name: "Star Wars: The Old Republic"
-      url: http://www.swtor.com/
+      url: https://www.swtor.com/
       img: swtor.png
       tfa: Yes
       software: Yes
       hardware: Yes
-      doc: http://www.swtor.com/info/security-key
+      doc: https://www.swtor.com/info/security-key
 
     - name: Stardock Corporation
       url: https://www.stardock.com/
@@ -354,7 +353,7 @@ websites:
       tfa: Yes
       email: Yes
       software: Yes
-      doc: https://support.trionworlds.com/hc/en-us/articles/204183357-Adding-a-Mobile-Authenticator
+      doc: https://support.trionworlds.com/hc/en-us/articles/204183357
 
     - name: Ubisoft/Uplay
       url: https://uplay.ubi.com/
@@ -362,7 +361,7 @@ websites:
       tfa: Yes
       software: Yes
       email: Yes
-      doc: https://support.ubi.com/en-GB/Faqs/000025170/Secure-your-account-with-2-Step-Verification
+      doc: https://support.ubi.com/en-GB/Faqs/000039953
 
     - name: Wargaming
       url: https://wargaming.net/

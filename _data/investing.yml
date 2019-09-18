@@ -20,7 +20,7 @@ websites:
       software: Yes
       hardware: Yes
       otp: Yes
-      doc: https://support.betterment.com/customer/en/portal/topics/1026376-two-factor-authentication-2fa-?b_id=9042
+      doc: https://help.betterment.com/hc/en-us/articles/115004260006
 
     - name: Charles Schwab
       url: https://www.schwab.com/
@@ -111,7 +111,7 @@ websites:
       img: nutmeg.png
       tfa: Yes
       software: Yes
-      doc: https://support.nutmeg.com/hc/en-us/articles/115000495111-How-to-set-up-and-manage-2-step-verification
+      doc: https://support.nutmeg.com/hc/en-us/articles/115000495111
 
     - name: Personal Capital
       url: https://www.personalcapital.com
@@ -187,9 +187,9 @@ websites:
       phone: Yes
       hardware: Yes
       u2f: Yes
-      doc: https://investor.vanguard.com/security/security-keys
       exceptions:
-        text: "SMS 2FA setup required to use U2F"
+        text: "Hardware 2FA requires using a Chrome browser and only supports the following hardware keys: Yubikey 4 Series, YubiKey 5 Series, Yubikey Security Key Series."
+      doc: https://investor.vanguard.com/security/security-keys
 
     - name: Wealthfront
       url: https://www.wealthfront.com/
@@ -197,7 +197,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://support.wealthfront.com/hc/en-us/articles/211004563-How-do-I-enable-two-step-authentication-for-my-account-
+      doc: https://support.wealthfront.com/hc/en-us/articles/211004563
 
     - name: Wealthsimple
       url: https://www.wealthsimple.com
@@ -205,7 +205,7 @@ websites:
       tfa: Yes
       sms: Yes
       software: Yes
-      doc: https://help.wealthsimple.com/hc/en-ca/articles/360005175373-Does-Wealthsimple-offer-Two-Step-Verification-
+      doc: https://help.wealthsimple.com/hc/en-ca/articles/360005175373
 
     - name: WiseBanyan
       url: https://www.wisebanyan.com/
