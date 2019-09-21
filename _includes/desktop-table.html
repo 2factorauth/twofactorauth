@@ -1,6 +1,7 @@
 {% assign section_id = include.id-param %}
 {% assign section_title = include.title-param %}
 {% assign section_file = site.data[section_id] %}
+{% assign multi_section_file = site.data["multi"] %}
 <div class="website-table desktop-table {{ section_id }}-table" id="{{ section_id }}-desktoptable">
   <table class="ui celled table content-wrapper">
     <thead>
@@ -15,8 +16,9 @@
     </tr>
     </thead>
     <tbody class="jets-content">
-    {% for website in section_file.websites %}
-    {% if website.lang and site.data.languages[website.lang] %}
+    {% assign multi_sites = multi_section_file.websites | where: "categories", section_id | concat: section_file.websites | sort: "name" %}
+    {% for website in multi_sites %}
+      {% if website.lang and site.data.languages[website.lang] %}
       {% assign progress_tweet = site.data.languages[website.lang].progress_tweet %}
       {% assign workonit_tweet = site.data.languages[website.lang].work_tweet %}
     {% else %}

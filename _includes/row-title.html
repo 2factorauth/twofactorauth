@@ -1,5 +1,9 @@
 {%- assign website = include.website -%}
+{%- if website contains "categories" -%}
+{%- assign img_path = '/img/multi/' | append: website.img -%}
+{%- else -%}
 {%- assign img_path = '/img/' | append: include.section | append: '/' | append: website.img -%}
+{%- endif -%}
 <div class="title">
   <div class="keywords" style="display:none;">{{ website.name }}&nbsp;{{ website.url }}</div>
   <noscript>
