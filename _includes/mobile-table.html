@@ -5,6 +5,7 @@
   <div class="label">
     <h3>{{ section_title }}</h3>
   </div>
+  <div class="info-publicity" style="text-align:center"><b>Attention!</b><br/>Posting to social media could potentially give other people clues to what account you have.<br/><a onClick="closePublicity()">Dismiss</a><br/>&nbsp;</div>
   <div class="jets-content">
     {% for website in section_file.websites %}
     {% if website.lang and site.data.languages[website.lang] %}

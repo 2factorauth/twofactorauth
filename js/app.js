@@ -171,3 +171,19 @@ function debounce(func, wait) {
 		if (!timeout) func.apply(context, args);
 	};
 };
+
+/**
+ * Removes 'ignoreable'-class from view on desktop table.
+ *
+ * @param popupNum The suffix for the 'ignoreable'-classname to be disabled.
+ */
+function removePopUp(popupNum) {
+  $('.ignoreable' + popupNum).unbind('mouseenter mouseleave');
+}
+
+/**
+ * Removes 'info-publicity'-class from view on mobile table.
+ */
+function closePublicity() {
+  $('.info-publicity').css('display', 'none');
+}
