@@ -11,7 +11,7 @@ Below is a list of categories and websites that we've opted out from listing on 
 
 *   #### Self-hosted services
 
-    The category "self-hosted services/sites" includes all types of software that's designed to be hosted by the end user (such as [ownCloud](https://owncloud.org/), [NextCloud](https://nextcloud.com/), [Mastodon](https://joinmastodon.org/), [phpBB](https://www.phpbb.com/), [XenForo](https://xenforo.com/) etc).  
+    The category "self-hosted services/sites" includes all types of software that's designed to be hosted by the end user (such as [ownCloud](https://owncloud.org/), [Nextcloud](https://nextcloud.com/), [Mastodon](https://joinmastodon.org/), [phpBB](https://www.phpbb.com/), [XenForo](https://xenforo.com/) etc).  
     It also includes [Wordpress.org](https://wordpress.org/) (the open source software) but not [Wordpress.com](https://wordpress.com/) (the company).
 
     There are several resons for why we've opted to not list such sites and services.
