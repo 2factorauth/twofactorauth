@@ -20,6 +20,12 @@ Below is a list of categories and websites that we've opted out from listing on 
 
     -   If the core project doesn't support two factor authentication but instead through plugins it would mean that we would have to list all plugins that enable two factor authentication for the service. Something that is currently impossible with our website layout.
 
+*   #### Potential controversial sites 
+
+    Any site that could damage the reputation of TwoFactorAuth.org and/or lead to any controversy with either the maintainers or users, should not be listed.
+    The group of active maintainers will decide on whether to include or exclude a site within a specific timeframe. Once an exclusion was decided upon, the site will be listed in the section below and - if a pull request exists - it will be closed.
+    This decision will also be in effect for pull requests that already existed before this exclusion documentation was published. 
+
 ## Sites
 
 Below is a list of specific sites/services excluded from TwoFactorAuth.org.
