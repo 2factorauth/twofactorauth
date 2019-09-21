@@ -48,11 +48,17 @@
       <div class="methods">
         <p><i class="ban small icon" title="None"></i> 2FA not supported</p>
       </div>
+      {% if website.twitter or website.facebook %}
       <div class="button-group">
-        {% if website.twitter %} <span class="popup exception" data-position="bottom center" data-html="<div class='header'>Heads up!</div><div class='content'>Posting to Twitter could potentially give other people clues to what accounts you have.</div>"><a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> on Twitter</a></span>{% endif %}
-        {% if website.facebook %} <span class="popup exception" data-position="bottom center" data-html="<div class='header'>Heads up!</div><div class='content'>Posting to Facebook could potentially give other people clues to what accounts you have.</div>"><a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i> on Facebook</a></span>{%endif%}
-        {% if website.email_address %} <a class="ui green mini button" alt="Email" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i></a>{% endif %}
+        {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> Ask for it on Twitter</a>{% endif %}
+        {% if website.facebook %} <a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i> Ask for it on Facebook</a>{% endif %}
       </div>
+      {% endif %}
+      {% if website.email_address %}
+      <div class="button-group">
+        <a class="ui green mini button" alt="Email" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i></a>
+      </div>
+      {% endif %}
     </div>
     {% endif %}
     {% endfor %}
