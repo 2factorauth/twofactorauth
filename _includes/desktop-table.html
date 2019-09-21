@@ -84,8 +84,8 @@
         </td>
         <td class="twitter negative" colspan="6">
           {% if website.twitter or website.facebook or website.email_address %}<span>{{page.link}} </span>{% endif %}
-          {% if website.twitter %} {% assign this_link = "https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" %}{% include desktop_publicity.html class="twitter" where="Twitter" link=this_link %}{% endif %}
-          {% if website.facebook %} {% assign this_link = "https://facebook.com/{{website.facebook}}" %}{% include desktop_publicity.html class="facebook" where="Facebook" link=this_link %}{% endif %}
+          {% if website.twitter %} {% capture this_link %}https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}{% endcapture %}{% include desktop_publicity.html class="twitter" where="Twitter" link=this_link %}{% endif %}
+          {% if website.facebook %} {% capture this_link %}https://facebook.com/{{website.facebook}}{% endcapture %}{% include desktop_publicity.html class="facebook" where="Facebook" link=this_link %}{% endif %}
           {% if website.email_address %} <span class="exception"><a class="ui green mini button" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i> via Email</a></span>{% endif %}
         </td>
       {% endif %}
