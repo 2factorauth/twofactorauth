@@ -65,6 +65,15 @@ websites:
     exceptions:
       text: "SMS authentication only available for Evernote Premium users"
 
+  - name: Files.com
+    url: https://www.files.com
+    img: files.png
+    tfa: Yes
+    sms: Yes
+    software: Yes
+    hardware: Yes
+    doc: https://www.files.com/docs/features/two-factor-auth/
+
   - name: FileThis
     url: https://filethis.com
     twitter: FileThisCompany
