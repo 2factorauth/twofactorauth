@@ -88,6 +88,8 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+        text: "Premium, Families, Teams, or Enterprise required for YubiKey and FIDO U2F."
       doc: https://helpdesk.lastpass.com/multifactor-authentication-options/
 
     - name: MyDigipass.com
