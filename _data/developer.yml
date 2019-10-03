@@ -578,10 +578,10 @@ websites:
 
     - name: Uptime Robot
       url: https://uptimerobot.com
-      twitter: uptimerobot
-      facebook: UptimeRobot
       img: uptimerobot.png
-      tfa: No
+      tfa: Yes
+      software: Yes
+      doc: https://blog.uptimerobot.com/introducing-two-factor-authentication-2fa/
 
     - name: Visual Studio Online
       url: https://www.visualstudio.com/
