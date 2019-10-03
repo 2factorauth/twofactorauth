@@ -465,11 +465,10 @@ websites:
       url: https://www.transip.nl/
       img: transip.png
       tfa: Yes
-      sms: Yes
       software: Yes
-      hardware: Yes
-      doc: https://www.transip.nl/vragen/574-hoe-stel-two-factor-authentication/
-
+      doc: https://www.transip.nl/knowledgebase/artikel/162
+      exceptions:
+          text: "While both the main control panel and STACK support 2FA, each system is separate and requires its own setup."
     - name: UKFast
       url: https://www.ukfast.co.uk/
       img: ukfast.png
