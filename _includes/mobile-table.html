@@ -30,10 +30,10 @@
       <div class="methods">
         {% if website.hardware or website.tfa contains 'hardware' %}<p><i class="checkmark small icon" title="Hardware"></i> Hardware</p>{% endif %}
         {% if website.tfa contains 'u2f' %}<p><i class="checkmark small icon" title="U2F"></i> U2F</p>{% endif %}
-        {% if website.software or website.tfa contains 'software' or website.tfa contains 'totp' or website.tfa contains 'proprietary' %}<p><i class="checkmark small icon" title="Software"></i> Software</p>{% endif %}
-        {% if website.sms or website.tfa contains 'sms' %}<p><i class="checkmark small icon" title="SMS"></i> SMS</p>{% endif %}
-        {% if website.phone or website.tfa contains 'phone' %}<p><i class="checkmark small icon" title="Phone"></i> Phone</p>{% endif %}
-        {% if website.email or website.tfa contains 'email' %}<p><i class="checkmark small icon" title="Email"></i> Email</p>{% endif %}
+        {% if website.tfa contains 'software' or website.tfa contains 'totp' or website.tfa contains 'proprietary' %}<p><i class="checkmark small icon" title="Software"></i> Software</p>{% endif %}
+        {% if website.tfa contains 'sms' %}<p><i class="checkmark small icon" title="SMS"></i> SMS</p>{% endif %}
+        {% if website.tfa contains 'phone' %}<p><i class="checkmark small icon" title="Phone"></i> Phone</p>{% endif %}
+        {% if website.tfa contains 'email' %}<p><i class="checkmark small icon" title="Email"></i> Email</p>{% endif %}
       </div>
       {% if website.doc %}
       <div class="button-group">
