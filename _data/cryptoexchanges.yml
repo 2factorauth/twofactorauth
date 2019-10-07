@@ -606,14 +606,15 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-- name: Local.bitcoin.com
+- name: Local.Bitcoin.com
   url: https://local.bitcoin.com/
-  img: localbitcoincom.png
-  twitter: bitcoincom
-  facebook: buy.bitcoin.news
+  img: LocalBitcoincom.png
   bch: true
   btc: false
   othercrypto: false
+  twitter: bitcoincom
+  facebook: buy.bitcoin.news
+  email_address: marketing@bitcoin.com
 - name: Lykke
   url: https://www.lykke.com/
   img: lykke.png
