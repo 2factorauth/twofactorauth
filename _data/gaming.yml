@@ -212,6 +212,8 @@ websites:
       tfa: Yes
       software: Yes
       hardware: Yes
+      exceptions:
+          text: "SMS required to enable 2FA."
 
     - name: Mojang
       url: https://mojang.com/
