@@ -6,8 +6,7 @@ websites:
       - sms
       - software
     doc: https://support.500px.com/hc/en-us/articles/205115877
-    exception: A verified phone number is required for the use of two-factor authentication
-      software.
+    exception: "A verified phone number is required for the use of two-factor authentication software."
 
   - name: about.me
     url: https://about.me
@@ -140,7 +139,7 @@ websites:
     img: medium.png
     tfa:
       - email
-    exception: Medium doesn't use passwords, instead emails a link to user to login
+    exception: "Medium doesn't use passwords, instead emails a link to user to login"
 
   - name: Meetup
     url: https://www.meetup.com
@@ -178,7 +177,7 @@ websites:
       - sms
       - software
     doc: https://help.pinterest.com/en/articles/two-factor-authentication
-    exception: Software authentication requires the Authy app.
+    exception: "Software authentication requires the Authy app."
 
   - name: Plurk
     url: https://plurk.com
@@ -227,8 +226,7 @@ websites:
       - software
       - hardware
     doc: https://support.twitter.com/articles/20170388
-    exception: SMS only available on select providers. Phone number associated with
-      account required for 2FA. 10 accounts per phone number, 1 phone number per account.
+    exception: "SMS only available on select providers. Phone number associated with account required for 2FA. 10 accounts per phone number, 1 phone number per account."
 
   - name: VanillaForums.com
     url: https://vanillaforums.com
@@ -259,7 +257,7 @@ websites:
       - sms
       - software
     doc: https://en.support.wordpress.com/security/two-step-authentication/
-    exception: SMS required for 2FA.
+    exception: "SMS required for 2FA."
 
   - name: Wykop
     url: https://www.wykop.pl

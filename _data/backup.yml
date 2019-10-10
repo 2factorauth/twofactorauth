@@ -59,7 +59,7 @@ websites:
       - sms
       - software
     doc: https://help.evernote.com/hc/en-us/articles/208314238
-    exception: SMS authentication only available for Evernote Premium users
+    exception: "SMS authentication only available for Evernote Premium users"
 
   - name: Files.com
     url: https://www.files.com
@@ -149,8 +149,7 @@ websites:
       - software
       - hardware
     doc: https://support.microsoft.com/en-us/help/12408/
-    exception: Hardware token supporting FIDO2/WebAuthn can only be used in Windows
-      10 version 1809 and above using Edge browser.
+    exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
 
   - name: PCloud
     url: https://www.pcloud.com
@@ -174,7 +173,7 @@ websites:
     tfa:
       - email
       - software
-    exception: Only available for Enterprise users
+    exception: "Only available for Enterprise users"
 
   - name: SpiderOak
     url: https://spideroak.com
@@ -235,7 +234,7 @@ websites:
     tfa:
       - software
     doc: https://yandex.com/support/passport/authorization/twofa.html
-    exception: SMS-capable phone required for initial setup.
+    exception: "SMS-capable phone required for initial setup."
 
   - name: Zetta.net
     url: https://www.zetta.net/
@@ -250,4 +249,4 @@ websites:
     tfa:
       - software
     doc: https://wiki.zoolz.com/how-do-i-enable-two-factor-authentication-on-my-zoolz-intelligent-account/
-    exception: Only available for business accounts.
+    exception: "Only available for business accounts."

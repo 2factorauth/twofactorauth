@@ -346,7 +346,7 @@ websites:
     tfa:
       - software
     doc: https://www.oderland.se/support/en/artikel/how-is-my-personal-information-handled/#how-do-i-encrypt-personal-information
-    exception: Only available for the main client area. Hosting panels not supported.
+    exception: "Only available for the main client area. Hosting panels not supported."
 
   - name: One.com
     url: https://www.one.com/
@@ -359,7 +359,7 @@ websites:
     tfa:
       - sms
       - software
-    exception: SMS available only to customers in France.
+    exception: "SMS available only to customers in France."
 
   - name: OVH
     url: https://www.ovh.com/
@@ -451,8 +451,7 @@ websites:
     tfa:
       - software
     doc: https://www.transip.nl/knowledgebase/artikel/162
-    exception: While both the main control panel and STACK support 2FA, each system
-      is separate and requires its own setup.
+    exception: "While both the main control panel and STACK support 2FA, each system is separate and requires its own setup."
 
   - name: UKFast
     url: https://www.ukfast.co.uk/
@@ -478,7 +477,7 @@ websites:
     tfa:
       - software
     doc: https://www.upcloud.com/support/two-factor-authentication/
-    exception: SMS is required for password recovery.
+    exception: "SMS is required for password recovery."
 
   - name: VentraIP
     url: https://ventraip.com.au

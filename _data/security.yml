@@ -45,7 +45,7 @@ websites:
     img: cacert.png
     tfa:
       - hardware
-    exception: Requires X.509-capable cryptotoken or smartcard.
+    exception: "Requires X.509-capable cryptotoken or smartcard."
 
   - name: Cloudflare
     url: https://cloudflare.com

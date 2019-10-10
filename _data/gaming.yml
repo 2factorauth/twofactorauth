@@ -42,7 +42,7 @@ websites:
       - software
       - hardware
     doc: https://us.battle.net/support/en/article/Blizzard-Authenticator
-    exception: Software authentication requires the Blizzard Authenticator app.
+    exception: "Software authentication requires the Blizzard Authenticator app."
 
   - name: Bohemia Interactive
     url: https://www.bohemia.net/
@@ -73,8 +73,7 @@ websites:
       - sms
       - software
     doc: https://support.enjin.com/hc/en-us/articles/201090770
-    exception: 2FA is only available on paid plans. Software authentication requires
-      the Authy app.
+    exception: "2FA is only available on paid plans. Software authentication requires the Authy app."
 
   - name: Epic Games
     url: https://www.epicgames.com/
@@ -107,8 +106,7 @@ websites:
       - email
       - software
     doc: https://support.gaijin.net/hc/en-us/articles/203623622
-    exception: A verified phone number is required for the use of two-factor authentication
-      through email or software.
+    exception: "A verified phone number is required for the use of two-factor authentication through email or software."
 
   - name: GameFly
     url: https://www.gamefly.com/
@@ -129,7 +127,7 @@ websites:
     tfa:
       - software
     doc: https://account.garena.com/
-    exception: A mobile phone and Garena account level 3 or higher is required for 2FA.
+    exception: "A mobile phone and Garena account level 3 or higher is required for 2FA."
 
   - name: GeForce (Nvidia)
     url: https://www.geforce.com/
@@ -218,8 +216,7 @@ websites:
     tfa:
       - software
     doc: https://en-americas-support.nintendo.com/app/answers/detail/a_id/27496
-    exception: 2FA not available for child accounts (users 12 years of age or younger)
-      or supervised accounts (users 13 years of age or older attached to a parent account).
+    exception: "2FA not available for child accounts (users 12 years of age or younger) or supervised accounts (users 13 years of age or older attached to a parent account)."
 
   - name: Nintendo Network
     url: https://id.nintendo.net/
@@ -283,8 +280,7 @@ websites:
       - software
       - hardware
     doc: http://www.square-enix.com/na/account/otp/
-    exception: Software implementation requires you to have purchased either Final Fantasy
-      XI or Final Fantasy XIV and registered the game.
+    exception: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
 
   - name: 'Star Wars: The Old Republic'
     url: https://www.swtor.com/
@@ -307,9 +303,7 @@ websites:
       - email
       - software
     doc: https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030
-    exception: Software implementation requires use of the Steam Mobile app. Authentication
-      on non-phone devices is not officially supported. SMS support is limited to receiving
-      account recovery codes for password resets.
+    exception: "Software implementation requires use of the Steam Mobile app. Authentication on non-phone devices is not officially supported. SMS support is limited to receiving account recovery codes for password resets."
 
   - name: Tibia
     url: https://www.tibia.com/

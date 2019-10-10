@@ -51,7 +51,7 @@ websites:
   tfa:
   - software
   doc: https://confluence.atlassian.com/cloud/secure-your-account-with-two-step-verification-939505063.html
-  exception: 2FA settings are service-specific.
+  exception: "2FA settings are service-specific."
 
 - name: Balsamiq
   url: https://balsamiq.com
@@ -128,7 +128,7 @@ websites:
   url: https://c9.io
   twitter: Cloud9IDE
   img: cloud9.png
-  exception: TFA available by signing up using GitHub
+  exception: "TFA available by signing up using GitHub"
 
 - name: CM Telecom
   url: https://www.cmtelecom.com/
@@ -152,8 +152,7 @@ websites:
   img: codeanywhere.png
   tfa:
   - software
-  exception: Only available on paid accounts at $7/10 per month (annual/monthly) or
-    more.
+  exception: "Only available on paid accounts at $7/10 per month (annual/monthly) or more."
 
 - name: Codeship
   url: https://codeship.com/

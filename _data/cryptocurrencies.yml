@@ -141,7 +141,7 @@ websites:
     tfa:
       - software
     doc: https://www.btcmarkets.net/faq#q27
-    exception: A mobile phone number is required to reset two-factor authentication.
+    exception: "A mobile phone number is required to reset two-factor authentication."
 
   - name: BTCPOP
     url: https://btcpop.co/
@@ -250,9 +250,7 @@ websites:
     tfa:
       - software
       - hardware
-    exception: While Coinify has aquired BIPS to allow for trading, only merchant accounts
-      support TFA at this time. Trading is done through a separate account. Hardware
-      support is limited to a print-out character matrix.
+    exception: "While Coinify has aquired BIPS to allow for trading, only merchant accounts support TFA at this time. Trading is done through a separate account. Hardware support is limited to a print-out character matrix."
 
   - name: Coinjar
     url: https://coinjar.com

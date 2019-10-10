@@ -11,8 +11,7 @@ websites:
     tfa:
       - software
     doc: https://aa.net.uk/kb-broadband-2fa.html
-    exception: While both the accounts and control web pages support 2FA, each system
-      is separate and requires its own setup.
+    exception: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
 
   - name: Arcadia Power
     url: https://www.arcadiapower.com/
@@ -72,8 +71,7 @@ websites:
       - email
       - software
     doc: https://www.xfinity.com/support/account/enroll-2-step-verification/
-    exception: SMS-capable phone and a non-Comcast.net email required for 2FA. Software
-      authentication requires Xfinity Authenticator mobile app.
+    exception: "SMS-capable phone and a non-Comcast.net email required for 2FA. Software authentication requires Xfinity Authenticator mobile app."
 
   - name: ComEd
     url: https://www.comed.com/
@@ -196,7 +194,7 @@ websites:
     tfa:
       - software
     doc: https://github.com/2factorauth/twofactorauth/pull/2304#issue-200730083
-    exception: 2FA is only available for Swedish citizens with BankID.
+    exception: "2FA is only available for Swedish citizens with BankID."
 
   - name: Moj Tele2
     url: https://moj.tele2.hr/
@@ -322,7 +320,7 @@ websites:
     tfa:
       - software
     doc: https://www.telia.se/privat/support/info/logga-in-med-bankid-och-eleg-pa-mitt-telia
-    exception: 2FA is only available for Swedish citizens with BankID.
+    exception: "2FA is only available for Swedish citizens with BankID."
 
   - name: Telstra
     url: https://www.telstra.com.au/

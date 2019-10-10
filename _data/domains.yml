@@ -116,7 +116,7 @@ websites:
       - sms
       - software
     doc: https://domeneshop.no/faq?id=344
-    exception: SMS available only to customers in Norway, Sweden and Denmark.
+    exception: "SMS available only to customers in Norway, Sweden and Denmark."
 
   - name: Domeny.tv
     url: https://www.domeny.tv/en
@@ -132,9 +132,7 @@ websites:
       - sms
       - software
     doc: https://help.dyn.com/2-factor-authentication/
-    exception: Currently only supported for the Managed DNS & Email Delivery platforms
-      (via DynID). Eventually DynID (and 2FA) will be rolled out to all platforms (no
-      ETA).
+    exception: "Currently only supported for the Managed DNS & Email Delivery platforms (via DynID). Eventually DynID (and 2FA) will be rolled out to all platforms (no ETA)."
 
   - name: Dynadot
     url: https://dynadot.com/
@@ -297,7 +295,7 @@ websites:
     tfa:
       - software
     doc: https://blogg.loopia.se/2015/03/16/nu-kan-du-logga-in-med-tvafaktorsautentiering-hos-loopia-genom-bankid/
-    exception: TFA only available for Swedish residents with BankID.
+    exception: "TFA only available for Swedish residents with BankID."
 
   - name: MarkMonitor
     url: https://www.markmonitor.com
@@ -416,7 +414,7 @@ websites:
       - sms
       - software
     doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
-    exception: Only available for enterprise accounts.
+    exception: "Only available for enterprise accounts."
 
   - name: Openprovider
     url: https://www.openprovider.co.uk
@@ -532,7 +530,7 @@ websites:
     tfa:
       - software
     doc: https://help.united-domains.de/faq-article/wie-aktiviere-ich-die-zweistufige-verifizierung-und-mache-mein-portfolio-login-sicherer
-    exception: A phone number is required to enable two-factor authentication.
+    exception: "A phone number is required to enable two-factor authentication."
 
   - name: VentraIP
     url: https://ventraip.com.au/

@@ -32,8 +32,7 @@ websites:
     tfa:
       - sms
     doc: https://support.ancestry.com/s/article/MFA
-    exception: 2FA is currently only available for customers with a U.S. based phone
-      number.
+    exception: "2FA is currently only available for customers with a U.S. based phone number."
 
   - name: AngelList
     url: https://angel.co
@@ -112,7 +111,7 @@ websites:
       - sms
       - software
     doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888
-    exception: SMS required for 2FA.
+    exception: "SMS required for 2FA."
 
   - name: Cisco Meraki
     url: https://meraki.cisco.com/
@@ -264,7 +263,7 @@ websites:
       - sms
       - phone
     doc: https://support.gofundme.com/hc/en-us/articles/360001980947
-    exception: 2FA only for North American customers that create Personal campaigns.
+    exception: "2FA only for North American customers that create Personal campaigns."
 
   - name: Grammarly
     url: https://grammarly.com/
@@ -273,7 +272,7 @@ websites:
       - sms
       - software
     doc: https://support.grammarly.com/hc/en-us/articles/360032922091
-    exception: SMS-capable phone is required.
+    exception: "SMS-capable phone is required."
 
   - name: GrowingIO
     url: https://www.growingio.com/
@@ -423,8 +422,7 @@ websites:
       - software
       - hardware
     doc: https://support.office.com/en-US/article/Set-up-multi-factor-authentication-for-Office-365-8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-    exception: Hardware token supporting FIDO2/WebAuthn can only be used in Windows
-      10 version 1809 and above using Edge browser.
+    exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
 
   - name: Onshape
     url: https://www.onshape.com/
@@ -501,7 +499,7 @@ websites:
       - sms
       - software
     doc: https://feedback.repairshopr.com/knowledgebase/articles/928266
-    exception: SMS only available as a backup to Google Authenticator.
+    exception: "SMS only available as a backup to Google Authenticator."
 
   - name: Ripe NCC
     url: https://www.ripe.net/
@@ -576,7 +574,7 @@ websites:
     tfa:
       - sms
       - email
-    exception: Employer/plan sponsor may opt to not offer 2FA.
+    exception: "Employer/plan sponsor may opt to not offer 2FA."
 
   - name: Watchman Monitoring
     url: https://www.watchmanmonitoring.com
@@ -586,8 +584,7 @@ websites:
       - software
       - hardware
     doc: https://www.watchmanmonitoring.com/two-factor-authentication
-    exception: Two factor authentication unavailable for 'End User' access, which is
-      read-only.
+    exception: "Two factor authentication unavailable for 'End User' access, which is read-only."
 
   - name: Weclapp
     url: https://weclapp.com/
@@ -608,9 +605,7 @@ websites:
     tfa:
       - software
     doc: https://meta.wikimedia.org/wiki/Help:Two-factor_authentication
-    exception: Currently limited to administrators (and users with admin-like permissions
-      like interface editors), bureaucrats, checkusers, oversighters, stewards, edit
-      filter managers and the OATH-testers global group.
+    exception: "Currently limited to administrators (and users with admin-like permissions like interface editors), bureaucrats, checkusers, oversighters, stewards, edit filter managers and the OATH-testers global group."
 
   - name: Yclas
     url: https://yclas.com/

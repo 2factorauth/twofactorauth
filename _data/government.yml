@@ -18,7 +18,7 @@ websites:
       - sms
       - software
     doc: https://www.mojedatovaschranka.cz/static/ISDS/help/page1.html#1_5_4
-    exception: Software implementation requires use of the ISDS Mobile Key app.
+    exception: "Software implementation requires use of the ISDS Mobile Key app."
 
   - name: DigiD
     url: https://www.digid.nl/
@@ -28,8 +28,7 @@ websites:
       - phone
       - software
     doc: https://www.digid.nl/nl/vraag-en-antwoord/hoe-kan-ik-de-sms-controle-toevoegen/
-    exception: Software 2FA requires DigiD app and SMS or phone call. One account per
-      device.
+    exception: "Software 2FA requires DigiD app and SMS or phone call. One account per device."
 
   - name: Federal Student Aid
     url: https://studentaid.ed.gov
@@ -74,7 +73,7 @@ websites:
       - sms
       - software
     doc: https://my.gov.au/mygov/content/html/help.html#securityCode
-    exception: myGov Access app required for Software 2FA.
+    exception: "myGov Access app required for Software 2FA."
 
   - name: RealMe
     url: https://www.realme.govt.nz/
@@ -114,7 +113,7 @@ websites:
       - sms
       - software
     doc: https://www.irs.gov/individuals/secure-access-how-to-register-for-certain-online-self-help-tools
-    exception: IRS2Go app required for software 2FA.
+    exception: "IRS2Go app required for software 2FA."
 
   - name: US Social Security Administration
     url: https://www.ssa.gov
@@ -132,4 +131,4 @@ websites:
       - phone
       - software
       - hardware
-    exception: 2FA is only available when using the Identity Management service ID.me
+    exception: "2FA is only available when using the Identity Management service ID.me"

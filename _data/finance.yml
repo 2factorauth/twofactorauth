@@ -34,8 +34,7 @@ websites:
       - software
     img: bgl.png
     doc: https://sf360.zendesk.com/hc/en-au/articles/360020963051
-    exception: 2FA covers Simple Fund 360, CAS 360, BGL API and BGL Account. It doesn't
-      cover BGL Client Centre.
+    exception: "2FA covers Simple Fund 360, CAS 360, BGL API and BGL Account. It doesn't cover BGL Client Centre."
 
   - name: Bitbond
     url: https://www.bitbond.com
@@ -339,8 +338,7 @@ websites:
       - phone
       - software
     doc: https://transferwise.com/help/12/managing-your-profile/2932125
-    exception: Software verification requires use of the TransferWise Mobile app. SMS-capable
-      phone is required.
+    exception: "Software verification requires use of the TransferWise Mobile app. SMS-capable phone is required."
 
   - name: Treasury Direct
     url: https://www.treasurydirect.gov
