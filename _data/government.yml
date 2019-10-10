@@ -1,145 +1,135 @@
 websites:
-    - name: Agenzia delle Entrate
-      url: https://www.agenziaentrate.gov.it/
-      img: agenziaentrate.png
-      tfa: No
-      twitter: Agenzia_Entrate
-      facebook: agenziadelleentrate
-      lang: it
+  - name: Agenzia delle Entrate
+    url: https://www.agenziaentrate.gov.it/
+    img: agenziaentrate.png
+    twitter: Agenzia_Entrate
+    facebook: agenziadelleentrate
+    lang: it
 
-    - name: Canada Revenue Agency
-      url: https://www.canada.ca/en/revenue-agency.html
-      img: canadarevenueagency.png
-      tfa: No
-      twitter: CanRevAgency
+  - name: Canada Revenue Agency
+    url: https://www.canada.ca/en/revenue-agency.html
+    img: canadarevenueagency.png
+    twitter: CanRevAgency
 
-    - name: Datové schránky
-      url: https://www.mojedatovaschranka.cz
-      img: cz_datovky.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://www.mojedatovaschranka.cz/static/ISDS/help/page1.html#1_5_4
-      exceptions:
-        text: "Software implementation requires use of the ISDS Mobile Key app."
+  - name: Datové schránky
+    url: https://www.mojedatovaschranka.cz
+    img: cz_datovky.png
+    tfa:
+      - sms
+      - software
+    doc: https://www.mojedatovaschranka.cz/static/ISDS/help/page1.html#1_5_4
+    exception: Software implementation requires use of the ISDS Mobile Key app.
 
-    - name: DigiD
-      url: https://www.digid.nl/
-      img: digid.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      phone: Yes
-      doc: https://www.digid.nl/nl/vraag-en-antwoord/hoe-kan-ik-de-sms-controle-toevoegen/
-      exceptions:
-        text: "Software 2FA requires DigiD app and SMS or phone call. One account per device."
+  - name: DigiD
+    url: https://www.digid.nl/
+    img: digid.png
+    tfa:
+      - sms
+      - phone
+      - software
+    doc: https://www.digid.nl/nl/vraag-en-antwoord/hoe-kan-ik-de-sms-controle-toevoegen/
+    exception: Software 2FA requires DigiD app and SMS or phone call. One account per
+      device.
 
-    - name: Federal Student Aid
-      url: https://studentaid.ed.gov
-      img: federalstudentaid.png
-      tfa: No
-      twitter: FAFSA
-      facebook: FederalStudentAid
+  - name: Federal Student Aid
+    url: https://studentaid.ed.gov
+    img: federalstudentaid.png
+    twitter: FAFSA
+    facebook: FederalStudentAid
 
-    - name: Healthcare.gov
-      url: https://healthcare.gov
-      twitter: HealthCareGov
-      img: healthcaregov.png
-      tfa: No
+  - name: Healthcare.gov
+    url: https://healthcare.gov
+    twitter: HealthCareGov
+    img: healthcaregov.png
 
-    - name: HMRC
-      url: https://hmrc.gov.uk
-      img: hmrc.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-text-messages
+  - name: HMRC
+    url: https://hmrc.gov.uk
+    img: hmrc.png
+    tfa:
+      - sms
+      - software
+    doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-text-messages
 
-    - name: impots.gouv.fr
-      url: https://www.impots.gouv.fr
-      img: impotsgouvfr.png
-      tfa: No
-      twitter: dgfip_officiel
-      facebook: Direction-générale-des-Finances-publiques-250996308359760
-      lang: fr
+  - name: impots.gouv.fr
+    url: https://www.impots.gouv.fr
+    img: impotsgouvfr.png
+    twitter: dgfip_officiel
+    facebook: Direction-générale-des-Finances-publiques-250996308359760
+    lang: fr
 
-    - name: login.gov
-      url: https://login.gov/
-      img: login-gov.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.login.gov/help/creating-an-account/two-factor-authentication/
+  - name: login.gov
+    url: https://login.gov/
+    img: login-gov.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://www.login.gov/help/creating-an-account/two-factor-authentication/
 
-    - name: myGov
-      url: https://my.gov.au
-      img: mygov.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-        text: myGov Access app required for Software 2FA.
-      doc: https://my.gov.au/mygov/content/html/help.html#securityCode
+  - name: myGov
+    url: https://my.gov.au
+    img: mygov.png
+    tfa:
+      - sms
+      - software
+    doc: https://my.gov.au/mygov/content/html/help.html#securityCode
+    exception: myGov Access app required for Software 2FA.
 
-    - name: RealMe
-      url: https://www.realme.govt.nz/
-      img: realme.png
-      tfa: Yes
-      sms: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://www.realme.govt.nz/help/#second-factor-authentication
+  - name: RealMe
+    url: https://www.realme.govt.nz/
+    img: realme.png
+    tfa:
+      - sms
+      - software
+      - hardware
+    doc: https://www.realme.govt.nz/help/#second-factor-authentication
 
-    - name: Skatteverket
-      url: https://www.skatteverket.se
-      img: skatteverket.png
-      tfa: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://www.skatteverket.se/privat/sjalvservice/allaetjanster/omelegitimation.4.18e1b10334ebe8bc80004811.html
+  - name: Skatteverket
+    url: https://www.skatteverket.se
+    img: skatteverket.png
+    tfa:
+      - software
+      - hardware
+    doc: https://www.skatteverket.se/privat/sjalvservice/allaetjanster/omelegitimation.4.18e1b10334ebe8bc80004811.html
 
-    - name: Thrift Savings Plan
-      url: https://www.tsp.gov
-      img: tsp.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      doc: https://www.tsp.gov/PlanParticipation/AccountManagement/managing/protectYourTSPAccount.html
+  - name: Thrift Savings Plan
+    url: https://www.tsp.gov
+    img: tsp.png
+    tfa:
+      - sms
+      - email
+    doc: https://www.tsp.gov/PlanParticipation/AccountManagement/managing/protectYourTSPAccount.html
 
-    - name: UK Companies House
-      url: https://www.gov.uk/companieshouse
-      img: companieshouse.png
-      tfa: No
-      twitter: CompaniesHouse
-      facebook: CompaniesHouse
+  - name: UK Companies House
+    url: https://www.gov.uk/companieshouse
+    img: companieshouse.png
+    twitter: CompaniesHouse
+    facebook: CompaniesHouse
 
-    - name: US Internal Revenue Service
-      url: https://www.irs.gov/Individuals/Get-Transcript
-      img: usirs.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "IRS2Go app required for software 2FA."
-      doc: https://www.irs.gov/individuals/secure-access-how-to-register-for-certain-online-self-help-tools
+  - name: US Internal Revenue Service
+    url: https://www.irs.gov/Individuals/Get-Transcript
+    img: usirs.png
+    tfa:
+      - sms
+      - software
+    doc: https://www.irs.gov/individuals/secure-access-how-to-register-for-certain-online-self-help-tools
+    exception: IRS2Go app required for software 2FA.
 
-    - name: US Social Security Administration
-      url: https://www.ssa.gov
-      img: usssa.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      doc: https://www.ssa.gov/myaccount/MoreInformationAboutMFA.html
+  - name: US Social Security Administration
+    url: https://www.ssa.gov
+    img: usssa.png
+    tfa:
+      - sms
+      - email
+    doc: https://www.ssa.gov/myaccount/MoreInformationAboutMFA.html
 
-    - name: US Veteran Affairs
-      url: https://www.va.gov
-      img: va.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      phone: Yes
-      exceptions:
-          text: "2FA is only available when using the Identity Management service ID.me"
+  - name: US Veteran Affairs
+    url: https://www.va.gov
+    img: va.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    exception: 2FA is only available when using the Identity Management service ID.me

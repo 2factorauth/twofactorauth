@@ -1,456 +1,403 @@
 websites:
-    - name: Adafruit
-      url: https://www.adafruit.com
-      img: adafruit.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://learn.adafruit.com/how-to-set-up-2-factor-authentication-on-adafruit
-
-    - name: AdoramaPix
-      url: https://www.adoramapix.com
-      img: adoramapix.png
-      tfa: No
-      twitter: AdoramaPix
-      facebook: AdoramaPix
-
-    - name: AliExpress
-      url: https://www.aliexpress.com/
-      img: aliexpress.png
-      tfa: No
-      twitter: AliExpress_EN
-
-    - name: Allegro
-      url: https://allegro.pl
-      img: allegro.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://allegro.pl/pomoc/faq/dwustopniowe-logowanie-faq-oGgdkGDqXCq
-
-    - name: Amazon
-      url: https://www.amazon.com
-      img: amazon.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      exceptions:
-          text: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
-      doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201596330
-
-    - name: Apple
-      url: https://appleid.apple.com
-      img: apple.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://support.apple.com/en-us/HT204915
-
-    - name: Arcaplanet
-      url: https://www.arcaplanet.it/
-      img: arcaplanet.png
-      tfa: No
-      twitter: Arcaplanet
-      facebook: Arcaplanet
-      lang: it
-
-    - name: Big W
-      url: https://www.bigw.com.au/
-      img: bigw.png
-      tfa: No
-      facebook: BIGWaustralia
-
-    - name: Bonobos
-      url: https://bonobos.com
-      img: bonobos.png
-      tfa: No
-      twitter: Bonobos
-      facebook: bonobos
-
-    - name: Boxed
-      url: https://www.boxed.com
-      img: boxed.png
-      tfa: No
-      twitter: BoxedWholesale
-      facebook: BoxedWholesale
-
-    - name: Combatant Gentlemen
-      url: https://combatgent.com
-      img: combatgent.png
-      tfa: No
-      twitter: CombatGent
-      facebook: combatgent
-
-    - name: Comet
-      url: https://www.comet.it/
-      img: comet.png
-      tfa: No
-      twitter: gruppocomet
-      facebook: facecomet
-      lang: it
-
-    - name: Comixology
-      url: https://www.comixology.com/
-      img: comixology.png
-      tfa: No
-      twitter: comiXology
-
-    - name: Costco
-      url: https://www.costco.com
-      img: costco.png
-      tfa: No
-      facebook: Costco
-
-    - name: Dell
-      url: https://www.dell.com
-      img: dell.png
-      tfa: No
-      twitter: DellCares
-
-    - name: Digital World International
-      url: https://www.dwidigitalcameras.com.au/
-      img: dwi.png
-      tfa: No
-      facebook: DWIAUS
-
-    - name: Digitec
-      url: https://www.digitec.ch
-      img: digitec.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.digitec.ch/en/page/new-two-factor-authentication-for-your-user-account-6589
-
-    - name: EB Games Australia
-      url: https://ebgames.com.au/
-      img: ebgamesaustralia.png
-      tfa: No
-      twitter: EBGamesAus
-
-    - name: eBay
-      url: https://www.ebay.com
-      img: ebay.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-        text: "Software implementation requires use of the eBay app."
-      doc: https://community.ebay.com/t5/Announcements/eBay-launches-a-new-2-step-verification-method-to-increase/ba-p/29818464
-
-    - name: ebay Kleinanzeigen
-      url: https://www.ebay-kleinanzeigen.de
-      twitter: eBay_KA
-      facebook: eBayKleinanzeigen
-      email_address: service@ebay-kleinanzeigen.de
-      img: ebay-kleinanzeigen.png
-      tfa: No
-      lang: de
-
-    - name: ePRICE
-      url: https://www.eprice.it/
-      img: eprice.png
-      tfa: No
-      twitter: EPRICEIT
-      facebook: ePRICE.it
-      lang: it
-
-    - name: Etsy
-      url: https://www.etsy.com/
-      img: etsy.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://help.etsy.com/hc/en-us/articles/115015569567
-
-    - name: Everlane
-      url: https://www.everlane.com/
-      twitter: Everlane
-      img: everlane.png
-      tfa: No
-
-    - name: FastTech
-      url: https://www.fasttech.com
-      img: fasttech.png
-      tfa: No
-      facebook: fasttech.net
-
-    - name: Flipkart
-      url: https://www.flipkart.com
-      img: flipkart.png
-      tfa: No
-      twitter: flipkartsupport
-      facebook: flipkart
-
-    - name: GamersGate
-      url: https://www.gamersgate.com/
-      twitter: GamersGate
-      facebook: GamersGate
-      img: gamersgate.png
-      tfa: No
-
-    - name: Gilt
-      url: https://www.gilt.com
-      twitter: Gilt
-      img: gilt.png
-      tfa: No
-
-    - name: Groupon
-      url: https://www.groupon.com
-      twitter: Groupon
-      img: groupon.png
-      tfa: No
-
-    - name: Home Depot
-      url: https://www.homedepot.com
-      img: homedepot.png
-      tfa: No
-      twitter: HomeDepot
-      facebook: homedepot
-
-    - name: Hudson's Bay
-      url: https://www.thebay.com
-      img: bay.png
-      twitter: hudsonsbay
-      tfa: No
-
-    - name: Hypop
-      url: https://www.hypop.com.au/
-      img: hypop.png
-      twitter: hypop
-      tfa: No
-
-    - name: IKEA
-      url: https://www.ikea.com
-      img: ikea.png
-      tfa: No
-      twitter: IKEAUSA
-      facebook: IKEAUSA
-
-    - name: JB Hi-Fi
-      url: https://www.jbhifi.com.au/
-      twitter: JBHiFi
-      img: jbhifi.png
-      tfa: No
-
-    - name: Jet
-      url: https://jet.com
-      twitter: JetHeads
-      img: jet.png
-      tfa: No
-
-    - name: Kobo
-      url: https://www.kobo.com
-      twitter: KoboHelp
-      facebook: Kobo
-      img: kobo.png
-      tfa: No
-
-    - name: Kohl's
-      url: https://www.kohls.com
-      img: kohls.png
-      tfa: No
-      twitter: Kohls
-      facebook: kohls
-
-    - name: Lazada
-      url: https://www.lazada.com/
-      twitter: asklazadasg
-      img: lazada.png
-      tfa: No
-
-    - name: Lowes
-      url: https://www.lowes.com
-      img: lowes.png
-      tfa: No
-      twitter: Lowes
-      facebook: lowes
-
-    - name: Macy's
-      url: https://www.macys.com/
-      twitter: Macys
-      img: macys.png
-      tfa: No
-
-    - name: Massdrop
-      url: https://www.massdrop.com
-      twitter: Massdrop
-      img: massdrop.png
-      tfa: No
-
-    - name: Mercado Libre
-      url: https://www.mercadolibre.com
-      img: mercado-libre.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      doc: https://ayuda.mercadolibre.com.ar/ayuda/Consejos-para-fortalecer-la-se_961
-
-    - name: Newegg
-      url: https://www.newegg.com
-      img: newegg.png
-      tfa: Yes
-      software: Yes
-      email: Yes
-      sms: Yes
-
-    - name: Nordstrom
-      url: https://shop.nordstrom.com
-      img: nordstrom.png
-      tfa: No
-      twitter: Nordstrom
-      facebook: Nordstrom
-
-    - name: Northern Tool + Equipment
-      url: https://www.northerntool.com/
-      img: northerntool.png
-      tfa: No
-      twitter: NorthernTool
-      facebook: northerntool
-
-    - name: Overstock
-      url: https://www.overstock.com
-      img: overstock.png
-      tfa: No
-      twitter: Overstock
-      facebook: overstock
-      email_address: international@overstock.com
-
-    - name: PC Case Gear
-      url: https://www.pccasegear.com/
-      twitter: pccasegear
-      img: pccasegear.png
-      tfa: No
-
-    - name: Purse
-      url: https://purse.io/
-      img: purse.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.purse.io/account/2-factor-authentication-2fa
-
-    - name: Rakuten
-      url: https://www.rakuten.com/
-      twitter: AskRakutenUS
-      img: rakuten.png
-      tfa: No
-
-    - name: Samsung
-      url: https://www.samsung.com/
-      img: samsung.png
-      tfa: Yes
-      sms: Yes
-      doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
-
-    - name: Shopify
-      url: https://shopify.com/
-      img: shopify.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://help.shopify.com/manual/your-account/account-security/two-step-authentication
-
-    - name: Sierra
-      url: https://www.sierra.com
-      img: sierra.png
-      tfa: No
-      email_address: customerservice@sierra.com
-      twitter: sierraofficial
-      facebook: sierraofficial
-
-    - name: Snapdeal
-      url: https://www.snapdeal.com/
-      img: snapdeal.png
-      tfa: No
-      twitter: SnapdealTech
-      facebook: Snapdeal
-      email_address: help@snapdeal.com
-
-    - name: speedcube.com.au
-      url: https://www.speedcube.com.au/
-      img: speedcubecomau.png
-      tfa: No
-      twitter: speedcubecomau
-      facebook: speedcubecomau
-
-    - name: Stack Social
-      url: https://stacksocial.com
-      twitter: StackSocial
-      img: stacksocial.png
-      tfa: No
-
-    - name: Target
-      url: https://www.target.com/
-      twitter: Target
-      img: target.png
-      tfa: No
-
-    - name: Tokopedia
-      url: https://www.tokopedia.com/
-      img: tokopedia.png
-      tfa: Yes
-      software: Yes
-      phone: Yes
-      sms: Yes
-      doc: https://www.tokopedia.com/panduan-keamanan/fitur-keamanan-tambahan/
-
-    - name: Trade Me
-      url: https://www.trademe.co.nz
-      twitter: TradeMe
-      facebook: TradeMe
-      img: trademe.png
-      tfa: No
-
-    - name: Walgreens
-      url: https://www.walgreens.com
-      twitter: Walgreens
-      img: walgreens.png
-      tfa: No
-
-    - name: Walmart
-      url: https://www.walmart.com/
-      twitter: walmarthelp
-      img: walmart.png
-      tfa: No
-
-    - name: Warby Parker
-      url: https://www.warbyparker.com
-      twitter: WarbyParkerHelp
-      img: warbyparker.png
-      tfa: No
-
-    - name: Wayfair
-      url: https://www.wayfair.com
-      img: wayfair.png
-      tfa: No
-      twitter: Wayfair
-      facebook: wayfair
-
-    - name: Zalando
-      url: https://www.zalando.com/
-      img: zalando.png
-      tfa: No
-      twitter: ZalandoTech
-      facebook: Zalando.co.uk
-      email_address: service@zalando.co.uk
-
-    - name: Zappos
-      url: https://www.zappos.com/
-      twitter: Zappos
-      img: zappos.png
-      tfa: No
-
-    - name: Zazzle
-      url: https://www.zazzle.com
-      img: zazzle.png
-      tfa: No
-      twitter: zazzle
-      facebook: zazzle
-
-    - name: Zooplus
-      url: https://www.zooplus.com/
-      img: zooplus.png
-      tfa: No
-      twitter: zooplusDE
-      facebook: zooplusde
+  - name: Adafruit
+    url: https://www.adafruit.com
+    img: adafruit.png
+    tfa:
+      - sms
+      - software
+    doc: https://learn.adafruit.com/how-to-set-up-2-factor-authentication-on-adafruit
+
+  - name: AdoramaPix
+    url: https://www.adoramapix.com
+    img: adoramapix.png
+    twitter: AdoramaPix
+    facebook: AdoramaPix
+
+  - name: AliExpress
+    url: https://www.aliexpress.com/
+    img: aliexpress.png
+    twitter: AliExpress_EN
+
+  - name: Allegro
+    url: https://allegro.pl
+    img: allegro.png
+    tfa:
+      - sms
+      - software
+    doc: https://allegro.pl/pomoc/faq/dwustopniowe-logowanie-faq-oGgdkGDqXCq
+
+  - name: Amazon
+    url: https://www.amazon.com
+    img: amazon.png
+    tfa:
+      - sms
+      - software
+    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201596330
+    exception: SMS or phone call required to enable 2FA. Enabling on Amazon.com activates
+      2FA on other regional Amazon sites, such as UK and DE.
+
+  - name: Apple
+    url: https://appleid.apple.com
+    img: apple.png
+    tfa:
+      - sms
+      - phone
+      - software
+    doc: https://support.apple.com/en-us/HT204915
+
+  - name: Arcaplanet
+    url: https://www.arcaplanet.it/
+    img: arcaplanet.png
+    twitter: Arcaplanet
+    facebook: Arcaplanet
+    lang: it
+
+  - name: Big W
+    url: https://www.bigw.com.au/
+    img: bigw.png
+    facebook: BIGWaustralia
+
+  - name: Bonobos
+    url: https://bonobos.com
+    img: bonobos.png
+    twitter: Bonobos
+    facebook: bonobos
+
+  - name: Boxed
+    url: https://www.boxed.com
+    img: boxed.png
+    twitter: BoxedWholesale
+    facebook: BoxedWholesale
+
+  - name: Combatant Gentlemen
+    url: https://combatgent.com
+    img: combatgent.png
+    twitter: CombatGent
+    facebook: combatgent
+
+  - name: Comet
+    url: https://www.comet.it/
+    img: comet.png
+    twitter: gruppocomet
+    facebook: facecomet
+    lang: it
+
+  - name: Comixology
+    url: https://www.comixology.com/
+    img: comixology.png
+    twitter: comiXology
+
+  - name: Costco
+    url: https://www.costco.com
+    img: costco.png
+    facebook: Costco
+
+  - name: Dell
+    url: https://www.dell.com
+    img: dell.png
+    twitter: DellCares
+
+  - name: Digital World International
+    url: https://www.dwidigitalcameras.com.au/
+    img: dwi.png
+    facebook: DWIAUS
+
+  - name: Digitec
+    url: https://www.digitec.ch
+    img: digitec.png
+    tfa:
+      - software
+    doc: https://www.digitec.ch/en/page/new-two-factor-authentication-for-your-user-account-6589
+
+  - name: EB Games Australia
+    url: https://ebgames.com.au/
+    img: ebgamesaustralia.png
+    twitter: EBGamesAus
+
+  - name: eBay
+    url: https://www.ebay.com
+    img: ebay.png
+    tfa:
+      - sms
+      - software
+    doc: https://community.ebay.com/t5/Announcements/eBay-launches-a-new-2-step-verification-method-to-increase/ba-p/29818464
+    exception: Software implementation requires use of the eBay app.
+
+  - name: ebay Kleinanzeigen
+    url: https://www.ebay-kleinanzeigen.de
+    twitter: eBay_KA
+    facebook: eBayKleinanzeigen
+    email_address: service@ebay-kleinanzeigen.de
+    img: ebay-kleinanzeigen.png
+    lang: de
+
+  - name: ePRICE
+    url: https://www.eprice.it/
+    img: eprice.png
+    twitter: EPRICEIT
+    facebook: ePRICE.it
+    lang: it
+
+  - name: Etsy
+    url: https://www.etsy.com/
+    img: etsy.png
+    tfa:
+      - sms
+      - phone
+      - software
+    doc: https://help.etsy.com/hc/en-us/articles/115015569567
+
+  - name: Everlane
+    url: https://www.everlane.com/
+    twitter: Everlane
+    img: everlane.png
+
+  - name: FastTech
+    url: https://www.fasttech.com
+    img: fasttech.png
+    facebook: fasttech.net
+
+  - name: Flipkart
+    url: https://www.flipkart.com
+    img: flipkart.png
+    twitter: flipkartsupport
+    facebook: flipkart
+
+  - name: GamersGate
+    url: https://www.gamersgate.com/
+    twitter: GamersGate
+    facebook: GamersGate
+    img: gamersgate.png
+
+  - name: Gilt
+    url: https://www.gilt.com
+    twitter: Gilt
+    img: gilt.png
+
+  - name: Groupon
+    url: https://www.groupon.com
+    twitter: Groupon
+    img: groupon.png
+
+  - name: Home Depot
+    url: https://www.homedepot.com
+    img: homedepot.png
+    twitter: HomeDepot
+    facebook: homedepot
+
+  - name: Hudson's Bay
+    url: https://www.thebay.com
+    img: bay.png
+    twitter: hudsonsbay
+
+  - name: Hypop
+    url: https://www.hypop.com.au/
+    img: hypop.png
+    twitter: hypop
+
+  - name: IKEA
+    url: https://www.ikea.com
+    img: ikea.png
+    twitter: IKEAUSA
+    facebook: IKEAUSA
+
+  - name: JB Hi-Fi
+    url: https://www.jbhifi.com.au/
+    twitter: JBHiFi
+    img: jbhifi.png
+
+  - name: Jet
+    url: https://jet.com
+    twitter: JetHeads
+    img: jet.png
+
+  - name: Kobo
+    url: https://www.kobo.com
+    twitter: KoboHelp
+    facebook: Kobo
+    img: kobo.png
+
+  - name: Kohl's
+    url: https://www.kohls.com
+    img: kohls.png
+    twitter: Kohls
+    facebook: kohls
+
+  - name: Lazada
+    url: https://www.lazada.com/
+    twitter: asklazadasg
+    img: lazada.png
+
+  - name: Lowes
+    url: https://www.lowes.com
+    img: lowes.png
+    twitter: Lowes
+    facebook: lowes
+
+  - name: Macy's
+    url: https://www.macys.com/
+    twitter: Macys
+    img: macys.png
+
+  - name: Massdrop
+    url: https://www.massdrop.com
+    twitter: Massdrop
+    img: massdrop.png
+
+  - name: Mercado Libre
+    url: https://www.mercadolibre.com
+    img: mercado-libre.png
+    tfa:
+      - sms
+      - software
+    doc: https://ayuda.mercadolibre.com.ar/ayuda/Consejos-para-fortalecer-la-se_961
+
+  - name: Newegg
+    url: https://www.newegg.com
+    img: newegg.png
+    tfa:
+      - sms
+      - email
+      - software
+
+  - name: Nordstrom
+    url: https://shop.nordstrom.com
+    img: nordstrom.png
+    twitter: Nordstrom
+    facebook: Nordstrom
+
+  - name: Northern Tool + Equipment
+    url: https://www.northerntool.com/
+    img: northerntool.png
+    twitter: NorthernTool
+    facebook: northerntool
+
+  - name: Overstock
+    url: https://www.overstock.com
+    img: overstock.png
+    twitter: Overstock
+    facebook: overstock
+    email_address: international@overstock.com
+
+  - name: PC Case Gear
+    url: https://www.pccasegear.com/
+    twitter: pccasegear
+    img: pccasegear.png
+
+  - name: Purse
+    url: https://purse.io/
+    img: purse.png
+    tfa:
+      - software
+    doc: https://support.purse.io/account/2-factor-authentication-2fa
+
+  - name: Rakuten
+    url: https://www.rakuten.com/
+    twitter: AskRakutenUS
+    img: rakuten.png
+
+  - name: Samsung
+    url: https://www.samsung.com/
+    img: samsung.png
+    tfa:
+      - sms
+    doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
+
+  - name: Shopify
+    url: https://shopify.com/
+    img: shopify.png
+    tfa:
+      - sms
+      - software
+      - hardware
+    doc: https://help.shopify.com/manual/your-account/account-security/two-step-authentication
+
+  - name: Sierra
+    url: https://www.sierra.com
+    img: sierra.png
+    email_address: customerservice@sierra.com
+    twitter: sierraofficial
+    facebook: sierraofficial
+
+  - name: Snapdeal
+    url: https://www.snapdeal.com/
+    img: snapdeal.png
+    twitter: SnapdealTech
+    facebook: Snapdeal
+    email_address: help@snapdeal.com
+
+  - name: speedcube.com.au
+    url: https://www.speedcube.com.au/
+    img: speedcubecomau.png
+    twitter: speedcubecomau
+    facebook: speedcubecomau
+
+  - name: Stack Social
+    url: https://stacksocial.com
+    twitter: StackSocial
+    img: stacksocial.png
+
+  - name: Target
+    url: https://www.target.com/
+    twitter: Target
+    img: target.png
+
+  - name: Tokopedia
+    url: https://www.tokopedia.com/
+    img: tokopedia.png
+    tfa:
+      - sms
+      - phone
+      - software
+    doc: https://www.tokopedia.com/panduan-keamanan/fitur-keamanan-tambahan/
+
+  - name: Trade Me
+    url: https://www.trademe.co.nz
+    twitter: TradeMe
+    facebook: TradeMe
+    img: trademe.png
+
+  - name: Walgreens
+    url: https://www.walgreens.com
+    twitter: Walgreens
+    img: walgreens.png
+
+  - name: Walmart
+    url: https://www.walmart.com/
+    twitter: walmarthelp
+    img: walmart.png
+
+  - name: Warby Parker
+    url: https://www.warbyparker.com
+    twitter: WarbyParkerHelp
+    img: warbyparker.png
+
+  - name: Wayfair
+    url: https://www.wayfair.com
+    img: wayfair.png
+    twitter: Wayfair
+    facebook: wayfair
+
+  - name: Zalando
+    url: https://www.zalando.com/
+    img: zalando.png
+    twitter: ZalandoTech
+    facebook: Zalando.co.uk
+    email_address: service@zalando.co.uk
+
+  - name: Zappos
+    url: https://www.zappos.com/
+    twitter: Zappos
+    img: zappos.png
+
+  - name: Zazzle
+    url: https://www.zazzle.com
+    img: zazzle.png
+    twitter: zazzle
+    facebook: zazzle
+
+  - name: Zooplus
+    url: https://www.zooplus.com/
+    img: zooplus.png
+    twitter: zooplusDE
+    facebook: zooplusde

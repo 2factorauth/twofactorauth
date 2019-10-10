@@ -1,606 +1,583 @@
 websites:
-    - name: Aha!
-      url: https://www.aha.io/
-      img: aha.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://support.aha.io/hc/en-us/articles/202000957
-
-    - name: Airbrake
-      url: https://airbrake.io
-      img: airbrake.png
-      tfa: Yes
-      software: Yes
-      doc: https://airbrake.io/docs/features/two-factor-authentication/
-
-    - name: Algolia
-      url: https://algolia.com
-      img: algolia.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.algolia.com/doc/security/best-security-practices/#two-factor-authentication-2fa
-
-    - name: AppSignal
-      url: https://appsignal.com
-      img: appsignal.png
-      tfa: Yes
-      software: Yes
-      doc: https://docs.appsignal.com/user-account/two-factor-authentication.html
-
-    - name: AppVeyor
-      url: https://www.appveyor.com
-      img: appveyor.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.appveyor.com/blog/2018/11/07/2FA-implementation/
-
-    - name: aTech Media
-      url: https://atechmedia.com
-      img: atechmedia.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://atechmedia.com/blog/general/launches/two-factor-authentication
-
-    - name: Atlassian Cloud
-      url: https://id.atlassian.com
-      img: atlassian.png
-      tfa: Yes
-      software: Yes
-      doc: https://confluence.atlassian.com/cloud/secure-your-account-with-two-step-verification-939505063.html
-      exceptions:
-          text: "2FA settings are service-specific."
-
-    - name: Balsamiq
-      url: https://balsamiq.com
-      twitter: balsamiq
-      facebook: balsamiq
-      img: balsamiq.png
-      tfa: No
-
-    - name: Bintray
-      url: https://bintray.com/
-      img: bintray.png
-      tfa: No
-      twitter: bintray
-
-    - name: Bitbucket
-      url: https://bitbucket.org
-      img: bitbucket.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://confluence.atlassian.com/x/425QLg
-
-    - name: Buddy
-      url: https://buddy.works
-      img: buddy.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://buddy.works/blog/introducing-two-factor-authentication
-
-    - name: Bugsnag
-      url: https://bugsnag.com
-      img: bugsnag.png
-      tfa: Yes
-      software: Yes
-      doc: https://docs.bugsnag.com/product/account-and-security/#security
-
-    - name: Bugzilla@Mozilla
-      url: https://bugzilla.mozilla.org
-      img: bugzilla.png
-      tfa: Yes
-      software: Yes
-
-    - name: Buildkite
-      url: https://buildkite.com
-      img: buildkite.png
-      tfa: Yes
-      software: Yes
-      doc: https://buildkite.com/changelog/31-two-factor-authentication
-
-    - name: BuiltWith
-      url: https://builtwith.com
-      img: builtwith.png
-      tfa: Yes
-      software: Yes
-
-    - name: Cacoo
-      url: https://cacoo.com/
-      img: cacoo.png
-      tfa: No
-      facebook: Cacoocom
-      twitter: cacoocom
-
-    - name: Cedexis
-      url: https://www.cedexis.com/
-      img: cedexis.png
-      tfa: No
-      twitter: Cedexis
-      facebook: Cedexis
-
-    - name: Chocolatey
-      url: https://chocolatey.org/
-      img: chocolatey.png
-      tfa: No
-      twitter: chocolateynuget
-      facebook: ChocolateySoftware
-
-    - name: Cloud9
-      url: https://c9.io
-      twitter: Cloud9IDE
-      img: cloud9.png
-      tfa: No
-      exceptions:
-          text: "TFA available by signing up using GitHub"
-
-    - name: CM Telecom
-      url: https://www.cmtelecom.com/
-      img: cmtelecom.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://help.onlinesmsgateway.com/en/accounts-and-payments/how-do-i-enable-two-factor-authentication
-
-    - name: Code Climate
-      url: https://codeclimate.com
-      img: codeclimate.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://docs.codeclimate.com/docs/enabling-two-factor-authentication
-
-    - name: Codeanywhere
-      url: https://codeanywhere.com
-      img: codeanywhere.png
-      tfa: Yes
-      software: Yes
-      exceptions:
-          text: "Only available on paid accounts at $7/10 per month (annual/monthly) or more."
-
-    - name: Codeship
-      url: https://codeship.com/
-      img: codeship.png
-      tfa: Yes
-      software: Yes
-      doc: https://documentation.codeship.com/general/about/2fa/
-
-    - name: Compose.io
-      url: https://www.compose.io/
-      img: composeio.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://docs.compose.io/security/compose-two-factor-authentication.html
-
-    - name: Crowdin
-      url: https://crowdin.com/
-      img: crowdin.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.crowdin.com/account-settings/#two-factor-authentication
-
-    - name: Deploybot
-      url: https://deploybot.com/
-      twitter: DeployBotHQ
-      img: deploybot.png
-      tfa: No
-
-    - name: DeployHQ
-      url: https://www.deployhq.com/
-      img: deployhq.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.deployhq.com/support/managing-your-account/personal-profile/two-factor-authentication
-
-    - name: Docker
-      url: https://www.docker.com/
-      twitter: Docker
-      facebook: docker.run
-      img: docker.png
-      tfa: No
-
-    - name: Domino Data Lab
-      url: https://www.dominodatalab.com/
-      img: domino.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.dominodatalab.com/hc/en-us/articles/115000998406
-
-    - name: Drupal.org
-      url: https://www.drupal.org/
-      img: drupalorg.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.drupal.org/drupalorg/docs/user-accounts/setting-up-two-factor-authentication
-
-    - name: Esri
-      url: https://www.esri.com
-      img: esri.png
-      tfa: Yes
-      software: Yes
-      doc: https://doc.arcgis.com/en/arcgis-online/reference/multifactor.htm
-
-    - name: 'FogBugz & Kiln'
-      url: https://www.fogbugz.com/
-      img: fogbugz.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.manuscript.com/10892
-
-    - name: GitHub
-      url: https://github.com
-      img: github.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://help.github.com/articles/about-two-factor-authentication
-
-    - name: GitLab
-      url: https://gitlab.com
-      img: gitlab.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html
-
-    - name: HashiCorp Terraform Enterprise
-      url: https://app.terraform.io/
-      img: hashicorp-terraform-enterprise.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      doc: https://www.terraform.io/docs/enterprise/users-teams-organizations/2fa.html
-
-    - name: HashiCorp Vagrant Cloud
-      url: https://app.vagrantup.com/
-      img: hashicorp-vagrant-cloud.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      doc: https://www.vagrantup.com/docs/vagrant-cloud/users/authentication.html#two-factor-authentication
-
-    - name: Heap Analytics
-      url: https://heapanalytics.com/
-      img: heapanalytics.png
-      tfa: Yes
-      software: Yes
-      doc: https://docs.heap.io/docs/2fa
-
-    - name: imgix
-      url: https://www.imgix.com/
-      twitter: imgix
-      facebook: imgix
-      img: imgix.png
-      tfa: No
-
-    - name: Infobip
-      url: https://www.infobip.com/
-      img: infobip.png
-      tfa: Yes
-      sms: Yes
-      doc: https://www.infobip.com/messaging/enterprise/2_factor_authentication/
-
-    - name: IT Glue
-      url: https://www.itglue.com/
-      img: itglue.png
-      tfa: Yes
-      software: Yes
-      doc: https://kb.itglue.com/hc/en-us/articles/213293197
-
-    - name: JetBrains
-      url: https://jetbrains.com
-      img: jetbrains.png
-      tfa: No
-      twitter: jetbrains
-      facebook: JetBrains
-      email_address: support@jetbrains.com
-
-    - name: Koding
-      url: https://koding.com
-      img: koding.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.koding.com/blog/2015/06/two-factor-authentication/
-
-    - name: Launchpad
-      url: https://launchpad.net
-      img: launchpad.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
-
-    - name: Looker
-      url: https://looker.com/
-      img: looker.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.looker.com/docs/admin/security/two-factor-authentication
-
-    - name: Mapbox
-      url: https://www.mapbox.com
-      img: mapbox.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.mapbox.com/help/two-step-verification/
-
-    - name: Metrological
-      url: https://www.metrological.com/
-      img: metrological.png
-      tfa: Yes
-      software: Yes
-      doc: https://github.com/2factorauth/twofactorauth/pull/2273#issuecomment-271876292
-
-    - name: MongoDB Cloud Manager
-      url: https://cloud.mongodb.com
-      img: mongodbmms.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      phone: Yes
-      doc: https://docs.cloudmanager.mongodb.com/core/two-factor-authentication/
-
-    - name: New Relic
-      url: https://newrelic.com
-      twitter: newrelic
-      facebook: NewRelic
-      img: newrelic.png
-      tfa: No
-
-    - name: Nexmo
-      url: https://www.nexmo.com/
-      img: nexmo.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-
-    - name: npm
-      url: https://www.npmjs.com/
-      img: npm.png
-      tfa: Yes
-      software: Yes
-      doc: https://docs.npmjs.com/getting-started/using-two-factor-authentication
-
-    - name: NuGet
-      url: https://www.nuget.org
-      img: nuget.png
-      tfa: No
-      twitter: nuget
-      email_address: support@nuget.org
-
-    - name: Packagist
-      url: https://packagist.org
-      img: packagist.png
-      tfa: No
-      twitter: packagist
-      email_address: contact@packagist.org
-
-    - name: Panic Sync
-      url: https://panic.com/
-      img: panic.png
-      tfa: Yes
-      software: Yes
-      doc: https://library.panic.com/general/sync-2fa/
-
-    - name: Papertrail
-      url: https://papertrailapp.com/
-      twitter: papertrailapp
-      img: papertrail.png
-      tfa: No
-
-    - name: Phacility
-      url: https://phacility.com/
-      img: phacility.png
-      tfa: Yes
-      software: Yes
-
-    - name: Pingdom
-      url: https://www.pingdom.com
-      img: pingdom.png
-      tfa: No
-      twitter: pingdom
-      facebook: pingdom
-
-    - name: Pivotal Tracker
-      url: https://www.pivotaltracker.com
-      twitter: pivotaltracker
-      facebook: pivotaltracker
-      img: pivotaltracker.png
-      tfa: No
-
-    - name: Plivo
-      url: https://www.plivo.com
-      twitter: plivo
-      facebook: Plivo
-      img: plivo.png
-      tfa: No
-
-    - name: Pushover
-      url: https://pushover.net/
-      img: pushover.png
-      tfa: Yes
-      software: Yes
-      doc: https://pushover.net/faq#security-2fa
-
-    - name: PyPI
-      url: https://pypi.org/
-      img: pypi.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://pypi.org/help/#twofa
-
-    - name: PythonAnywhere
-      url: https://www.pythonanywhere.com
-      img: pythonanywhere.png
-      tfa: Yes
-      software: Yes
-
-    - name: Raygun
-      url: https://raygun.com
-      img: raygun.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://raygun.com/docs/workflow/two-factor-authentication
-
-    - name: RBCommons
-      url: https://rbcommons.com
-      img: rbcommons.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://beanbag.freshdesk.com/support/solutions/articles/3000006998
-
-    - name: Read the Docs
-      url: https://readthedocs.org
-      img: readthedocs.png
-      tfa: No
-      email_address: hello@readthedocs.com
-      status: https://github.com/rtfd/readthedocs.org/issues/3523
-
-    - name: ReadMe
-      url: https://readme.io
-      img: readme.png
-      tfa: Yes
-      software: Yes
-      doc: https://docs.readme.com/docs/two-factor-authentication
-
-    - name: Report URI
-      url: https://report-uri.com
-      img: report-uri.png
-      tfa: Yes
-      software: Yes
-
-    - name: Rollbar
-      url: https://rollbar.com/
-      img: rollbar.png
-      tfa: Yes
-      software: Yes
-      doc: https://rollbar.com/docs/two-factor-authentication/
-
-    - name: RubyGems.org
-      url: https://rubygems.org
-      img: rubygems.png
-      tfa: Yes
-      software: Yes
-      doc: https://guides.rubygems.org/setting-up-multifactor-authentication/
-
-    - name: Sauce Labs
-      url: https://saucelabs.com
-      img: saucelabs.png
-      tfa: No
-      twitter: saucelabs
-      facebook: saucelabs
-      email_address: support@saucelabs.com
-
-    - name: Semaphore
-      url: https://semaphoreci.com
-      img: semaphore.png
-      tfa: Yes
-      doc: https://semaphoreci.com/docs/two-step-verification.html
-      software: Yes
-
-    - name: Sentry
-      url: https://sentry.io
-      img: sentry.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://blog.sentry.io/2016/06/22/introducing-2fa
-
-    - name: SourceForge
-      url: https://sourceforge.net/
-      img: sourceforge.png
-      tfa: Yes
-      software: Yes
-      doc: https://sourceforge.net/blog/introducing-multifactor-authentication-on-sourceforge/
-
-    - name: Status.io
-      url: https://status.io/
-      img: statusio.png
-      tfa: Yes
-      hardware: Yes
-      doc: https://blog.status.io/2014/03/01/yubikey/
-
-    - name: StatusCake
-      url: https://statuscake.com/
-      img: statuscake.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-
-    - name: StatusPage.io
-      url: https://www.statuspage.io
-      twitter: Statuspage
-      facebook: statuspageio
-      img: statuspageio.png
-      tfa: No
-
-    - name: Sumo Logic
-      url: https://www.sumologic.com
-      img: sumologic.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.sumologic.com/Manage/Security/About_2-Step_Verification
-
-    - name: Taiga.io
-      url: https://taiga.io
-      twitter: taigaio
-      facebook: taigaio
-      img: taigaio.png
-      tfa: No
-
-    - name: Twilio
-      url: https://www.twilio.com/
-      img: twilio.png
-      tfa: Yes
-      sms: Yes
-      doc: https://www.twilio.com/help/faq/twilio-basics/what-happens-when-i-enable-two-factor-authentication
-
-    - name: Unfuddle
-      url: https://unfuddle.com/
-      img: unfuddle.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://unfuddle.com/blog/2014/07/140721-two-factor-authentication
-
-    - name: Unity
-      url: https://unity3d.com/
-      img: unity.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.unity3d.com/hc/en-us/articles/208764976
-
-    - name: Uptime Robot
-      url: https://uptimerobot.com
-      img: uptimerobot.png
-      tfa: Yes
-      software: Yes
-      doc: https://blog.uptimerobot.com/introducing-two-factor-authentication-2fa/
-
-    - name: Visual Studio Online
-      url: https://www.visualstudio.com/
-      img: visualstudio.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.microsoft.com/en-us/help/12408/
-
-    - name: Zapier
-      url: https://zapier.com
-      img: zapier.png
-      tfa: Yes
-      software: Yes
-      doc: https://zapier.com/help/two-factor-authentication/
+- name: Aha!
+  url: https://www.aha.io/
+  img: aha.png
+  tfa:
+  - sms
+  - phone
+  - software
+  - hardware
+  doc: https://support.aha.io/hc/en-us/articles/202000957
+
+- name: Airbrake
+  url: https://airbrake.io
+  img: airbrake.png
+  tfa:
+  - software
+  doc: https://airbrake.io/docs/features/two-factor-authentication/
+
+- name: Algolia
+  url: https://algolia.com
+  img: algolia.png
+  tfa:
+  - software
+  doc: https://www.algolia.com/doc/security/best-security-practices/#two-factor-authentication-2fa
+
+- name: AppSignal
+  url: https://appsignal.com
+  img: appsignal.png
+  tfa:
+  - software
+  doc: https://docs.appsignal.com/user-account/two-factor-authentication.html
+
+- name: AppVeyor
+  url: https://www.appveyor.com
+  img: appveyor.png
+  tfa:
+  - software
+  doc: https://www.appveyor.com/blog/2018/11/07/2FA-implementation/
+
+- name: aTech Media
+  url: https://atechmedia.com
+  img: atechmedia.png
+  tfa:
+  - software
+  - hardware
+  doc: https://atechmedia.com/blog/general/launches/two-factor-authentication
+
+- name: Atlassian Cloud
+  url: https://id.atlassian.com
+  img: atlassian.png
+  tfa:
+  - software
+  doc: https://confluence.atlassian.com/cloud/secure-your-account-with-two-step-verification-939505063.html
+  exception: 2FA settings are service-specific.
+
+- name: Balsamiq
+  url: https://balsamiq.com
+  twitter: balsamiq
+  facebook: balsamiq
+  img: balsamiq.png
+
+- name: Bintray
+  url: https://bintray.com/
+  img: bintray.png
+  twitter: bintray
+
+- name: Bitbucket
+  url: https://bitbucket.org
+  img: bitbucket.png
+  tfa:
+  - software
+  - hardware
+  doc: https://confluence.atlassian.com/x/425QLg
+
+- name: Buddy
+  url: https://buddy.works
+  img: buddy.png
+  tfa:
+  - sms
+  - software
+  doc: https://buddy.works/blog/introducing-two-factor-authentication
+
+- name: Bugsnag
+  url: https://bugsnag.com
+  img: bugsnag.png
+  tfa:
+  - software
+  doc: https://docs.bugsnag.com/product/account-and-security/#security
+
+- name: Bugzilla@Mozilla
+  url: https://bugzilla.mozilla.org
+  img: bugzilla.png
+  tfa:
+  - software
+
+- name: Buildkite
+  url: https://buildkite.com
+  img: buildkite.png
+  tfa:
+  - software
+  doc: https://buildkite.com/changelog/31-two-factor-authentication
+
+- name: BuiltWith
+  url: https://builtwith.com
+  img: builtwith.png
+  tfa:
+  - software
+
+- name: Cacoo
+  url: https://cacoo.com/
+  img: cacoo.png
+  facebook: Cacoocom
+  twitter: cacoocom
+
+- name: Cedexis
+  url: https://www.cedexis.com/
+  img: cedexis.png
+  twitter: Cedexis
+  facebook: Cedexis
+
+- name: Chocolatey
+  url: https://chocolatey.org/
+  img: chocolatey.png
+  twitter: chocolateynuget
+  facebook: ChocolateySoftware
+
+- name: Cloud9
+  url: https://c9.io
+  twitter: Cloud9IDE
+  img: cloud9.png
+  exception: TFA available by signing up using GitHub
+
+- name: CM Telecom
+  url: https://www.cmtelecom.com/
+  img: cmtelecom.png
+  tfa:
+  - sms
+  - phone
+  - software
+  doc: https://help.onlinesmsgateway.com/en/accounts-and-payments/how-do-i-enable-two-factor-authentication
+
+- name: Code Climate
+  url: https://codeclimate.com
+  img: codeclimate.png
+  tfa:
+  - sms
+  - software
+  doc: https://docs.codeclimate.com/docs/enabling-two-factor-authentication
+
+- name: Codeanywhere
+  url: https://codeanywhere.com
+  img: codeanywhere.png
+  tfa:
+  - software
+  exception: Only available on paid accounts at $7/10 per month (annual/monthly) or
+    more.
+
+- name: Codeship
+  url: https://codeship.com/
+  img: codeship.png
+  tfa:
+  - software
+  doc: https://documentation.codeship.com/general/about/2fa/
+
+- name: Compose.io
+  url: https://www.compose.io/
+  img: composeio.png
+  tfa:
+  - sms
+  - software
+  doc: https://docs.compose.io/security/compose-two-factor-authentication.html
+
+- name: Crowdin
+  url: https://crowdin.com/
+  img: crowdin.png
+  tfa:
+  - software
+  doc: https://support.crowdin.com/account-settings/#two-factor-authentication
+
+- name: Deploybot
+  url: https://deploybot.com/
+  twitter: DeployBotHQ
+  img: deploybot.png
+
+- name: DeployHQ
+  url: https://www.deployhq.com/
+  img: deployhq.png
+  tfa:
+  - software
+  doc: https://www.deployhq.com/support/managing-your-account/personal-profile/two-factor-authentication
+
+- name: Docker
+  url: https://www.docker.com/
+  twitter: Docker
+  facebook: docker.run
+  img: docker.png
+
+- name: Domino Data Lab
+  url: https://www.dominodatalab.com/
+  img: domino.png
+  tfa:
+  - software
+  doc: https://support.dominodatalab.com/hc/en-us/articles/115000998406
+
+- name: Drupal.org
+  url: https://www.drupal.org/
+  img: drupalorg.png
+  tfa:
+  - software
+  doc: https://www.drupal.org/drupalorg/docs/user-accounts/setting-up-two-factor-authentication
+
+- name: Esri
+  url: https://www.esri.com
+  img: esri.png
+  tfa:
+  - software
+  doc: https://doc.arcgis.com/en/arcgis-online/reference/multifactor.htm
+
+- name: FogBugz & Kiln
+  url: https://www.fogbugz.com/
+  img: fogbugz.png
+  tfa:
+  - software
+  doc: https://help.manuscript.com/10892
+
+- name: GitHub
+  url: https://github.com
+  img: github.png
+  tfa:
+  - sms
+  - software
+  - hardware
+  doc: https://help.github.com/articles/about-two-factor-authentication
+
+- name: GitLab
+  url: https://gitlab.com
+  img: gitlab.png
+  tfa:
+  - software
+  - hardware
+  doc: https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html
+
+- name: HashiCorp Terraform Enterprise
+  url: https://app.terraform.io/
+  img: hashicorp-terraform-enterprise.png
+  tfa:
+  - sms
+  - software
+  doc: https://www.terraform.io/docs/enterprise/users-teams-organizations/2fa.html
+
+- name: HashiCorp Vagrant Cloud
+  url: https://app.vagrantup.com/
+  img: hashicorp-vagrant-cloud.png
+  tfa:
+  - sms
+  - software
+  doc: https://www.vagrantup.com/docs/vagrant-cloud/users/authentication.html#two-factor-authentication
+
+- name: Heap Analytics
+  url: https://heapanalytics.com/
+  img: heapanalytics.png
+  tfa:
+  - software
+  doc: https://docs.heap.io/docs/2fa
+
+- name: imgix
+  url: https://www.imgix.com/
+  twitter: imgix
+  facebook: imgix
+  img: imgix.png
+
+- name: Infobip
+  url: https://www.infobip.com/
+  img: infobip.png
+  tfa:
+  - sms
+  doc: https://www.infobip.com/messaging/enterprise/2_factor_authentication/
+
+- name: IT Glue
+  url: https://www.itglue.com/
+  img: itglue.png
+  tfa:
+  - software
+  doc: https://kb.itglue.com/hc/en-us/articles/213293197
+
+- name: JetBrains
+  url: https://jetbrains.com
+  img: jetbrains.png
+  twitter: jetbrains
+  facebook: JetBrains
+  email_address: support@jetbrains.com
+
+- name: Koding
+  url: https://koding.com
+  img: koding.png
+  tfa:
+  - software
+  doc: https://www.koding.com/blog/2015/06/two-factor-authentication/
+
+- name: Launchpad
+  url: https://launchpad.net
+  img: launchpad.png
+  tfa:
+  - software
+  - hardware
+  doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
+
+- name: Looker
+  url: https://looker.com/
+  img: looker.png
+  tfa:
+  - software
+  doc: https://www.looker.com/docs/admin/security/two-factor-authentication
+
+- name: Mapbox
+  url: https://www.mapbox.com
+  img: mapbox.png
+  tfa:
+  - software
+  doc: https://www.mapbox.com/help/two-step-verification/
+
+- name: Metrological
+  url: https://www.metrological.com/
+  img: metrological.png
+  tfa:
+  - software
+  doc: https://github.com/2factorauth/twofactorauth/pull/2273#issuecomment-271876292
+
+- name: MongoDB Cloud Manager
+  url: https://cloud.mongodb.com
+  img: mongodbmms.png
+  tfa:
+  - sms
+  - phone
+  - software
+  doc: https://docs.cloudmanager.mongodb.com/core/two-factor-authentication/
+
+- name: New Relic
+  url: https://newrelic.com
+  twitter: newrelic
+  facebook: NewRelic
+  img: newrelic.png
+
+- name: Nexmo
+  url: https://www.nexmo.com/
+  img: nexmo.png
+  tfa:
+  - sms
+  - phone
+
+- name: npm
+  url: https://www.npmjs.com/
+  img: npm.png
+  tfa:
+  - software
+  doc: https://docs.npmjs.com/getting-started/using-two-factor-authentication
+
+- name: NuGet
+  url: https://www.nuget.org
+  img: nuget.png
+  twitter: nuget
+  email_address: support@nuget.org
+
+- name: Packagist
+  url: https://packagist.org
+  img: packagist.png
+  twitter: packagist
+  email_address: contact@packagist.org
+
+- name: Panic Sync
+  url: https://panic.com/
+  img: panic.png
+  tfa:
+  - software
+  doc: https://library.panic.com/general/sync-2fa/
+
+- name: Papertrail
+  url: https://papertrailapp.com/
+  twitter: papertrailapp
+  img: papertrail.png
+
+- name: Phacility
+  url: https://phacility.com/
+  img: phacility.png
+  tfa:
+  - software
+
+- name: Pingdom
+  url: https://www.pingdom.com
+  img: pingdom.png
+  twitter: pingdom
+  facebook: pingdom
+
+- name: Pivotal Tracker
+  url: https://www.pivotaltracker.com
+  twitter: pivotaltracker
+  facebook: pivotaltracker
+  img: pivotaltracker.png
+
+- name: Plivo
+  url: https://www.plivo.com
+  twitter: plivo
+  facebook: Plivo
+  img: plivo.png
+
+- name: Pushover
+  url: https://pushover.net/
+  img: pushover.png
+  tfa:
+  - software
+  doc: https://pushover.net/faq#security-2fa
+
+- name: PyPI
+  url: https://pypi.org/
+  img: pypi.png
+  tfa:
+  - software
+  - hardware
+  doc: https://pypi.org/help/#twofa
+
+- name: PythonAnywhere
+  url: https://www.pythonanywhere.com
+  img: pythonanywhere.png
+  tfa:
+  - software
+
+- name: Raygun
+  url: https://raygun.com
+  img: raygun.png
+  tfa:
+  - sms
+  - software
+  doc: https://raygun.com/docs/workflow/two-factor-authentication
+
+- name: RBCommons
+  url: https://rbcommons.com
+  img: rbcommons.png
+  tfa:
+  - sms
+  - software
+  doc: https://beanbag.freshdesk.com/support/solutions/articles/3000006998
+
+- name: Read the Docs
+  url: https://readthedocs.org
+  img: readthedocs.png
+  email_address: hello@readthedocs.com
+  status: https://github.com/rtfd/readthedocs.org/issues/3523
+
+- name: ReadMe
+  url: https://readme.io
+  img: readme.png
+  tfa:
+  - software
+  doc: https://docs.readme.com/docs/two-factor-authentication
+
+- name: Report URI
+  url: https://report-uri.com
+  img: report-uri.png
+  tfa:
+  - software
+
+- name: Rollbar
+  url: https://rollbar.com/
+  img: rollbar.png
+  tfa:
+  - software
+  doc: https://rollbar.com/docs/two-factor-authentication/
+
+- name: RubyGems.org
+  url: https://rubygems.org
+  img: rubygems.png
+  tfa:
+  - software
+  doc: https://guides.rubygems.org/setting-up-multifactor-authentication/
+
+- name: Sauce Labs
+  url: https://saucelabs.com
+  img: saucelabs.png
+  twitter: saucelabs
+  facebook: saucelabs
+  email_address: support@saucelabs.com
+
+- name: Semaphore
+  url: https://semaphoreci.com
+  img: semaphore.png
+  tfa:
+  - software
+  doc: https://semaphoreci.com/docs/two-step-verification.html
+
+- name: Sentry
+  url: https://sentry.io
+  img: sentry.png
+  tfa:
+  - sms
+  - software
+  - hardware
+  doc: https://blog.sentry.io/2016/06/22/introducing-2fa
+
+- name: SourceForge
+  url: https://sourceforge.net/
+  img: sourceforge.png
+  tfa:
+  - software
+  doc: https://sourceforge.net/blog/introducing-multifactor-authentication-on-sourceforge/
+
+- name: Status.io
+  url: https://status.io/
+  img: statusio.png
+  tfa:
+  - hardware
+  doc: https://blog.status.io/2014/03/01/yubikey/
+
+- name: StatusCake
+  url: https://statuscake.com/
+  img: statuscake.png
+  tfa:
+  - sms
+  - software
+
+- name: StatusPage.io
+  url: https://www.statuspage.io
+  twitter: Statuspage
+  facebook: statuspageio
+  img: statuspageio.png
+
+- name: Sumo Logic
+  url: https://www.sumologic.com
+  img: sumologic.png
+  tfa:
+  - software
+  doc: https://help.sumologic.com/Manage/Security/About_2-Step_Verification
+
+- name: Taiga.io
+  url: https://taiga.io
+  twitter: taigaio
+  facebook: taigaio
+  img: taigaio.png
+
+- name: Twilio
+  url: https://www.twilio.com/
+  img: twilio.png
+  tfa:
+  - sms
+  doc: https://www.twilio.com/help/faq/twilio-basics/what-happens-when-i-enable-two-factor-authentication
+
+- name: Unfuddle
+  url: https://unfuddle.com/
+  img: unfuddle.png
+  tfa:
+  - sms
+  - phone
+  - software
+  doc: https://unfuddle.com/blog/2014/07/140721-two-factor-authentication
+
+- name: Unity
+  url: https://unity3d.com/
+  img: unity.png
+  tfa:
+  - sms
+  - software
+  doc: https://support.unity3d.com/hc/en-us/articles/208764976
+
+- name: Uptime Robot
+  url: https://uptimerobot.com
+  img: uptimerobot.png
+  tfa:
+  - software
+  doc: https://blog.uptimerobot.com/introducing-two-factor-authentication-2fa/
+
+- name: Visual Studio Online
+  url: https://www.visualstudio.com/
+  img: visualstudio.png
+  tfa:
+  - sms
+  - software
+  doc: https://support.microsoft.com/en-us/help/12408/
+
+- name: Zapier
+  url: https://zapier.com
+  img: zapier.png
+  tfa:
+  - software
+  doc: https://zapier.com/help/two-factor-authentication/

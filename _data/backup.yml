@@ -2,31 +2,30 @@ websites:
   - name: Apple iCloud
     url: https://www.icloud.com
     img: icloud.png
-    tfa: Yes
-    sms: Yes
-    phone: Yes
-    software: Yes
+    tfa:
+      - sms
+      - phone
+      - software
     doc: https://support.apple.com/en-us/HT204915
 
   - name: Backblaze
     url: https://www.backblaze.com
     img: backblaze.png
-    tfa: Yes
-    sms: Yes
-    software: Yes
+    tfa:
+      - sms
+      - software
     doc: https://help.backblaze.com/hc/en-us/articles/217666588
 
   - name: Box
     url: https://www.box.com/
     img: box.png
-    tfa: Yes
-    sms: Yes
+    tfa:
+      - sms
     doc: https://community.box.com/t5/How-to-Guides-for-Account/Manage-Account-Settings/ta-p/20022#authentication
 
   - name: CloudApp
     url: https://www.getcloudapp.com/
     img: cloudapp.png
-    tfa: No
     twitter: cloudapp
     facebook: getcloudapp
     email_address: support@getcloudapp.com
@@ -35,13 +34,11 @@ websites:
     url: https://www.crashplan.com
     twitter: crashplan
     img: crashplan.png
-    tfa: No
     facebook: CrashPlan
 
   - name: Degoo
     url: https://degoo.com/
     img: degoo.png
-    tfa: No
     twitter: DegooBackup
     facebook: DegooBackup
     email_address: support@degoo.com
@@ -49,88 +46,84 @@ websites:
   - name: Dropbox
     url: https://www.dropbox.com
     img: dropbox.png
-    tfa: Yes
-    sms: Yes
-    software: Yes
-    hardware: Yes
+    tfa:
+      - sms
+      - software
+      - hardware
     doc: https://help.dropbox.com/security/enable-two-step-verification
 
   - name: Evernote
     url: https://evernote.com
     img: evernote.png
-    tfa: Yes
-    sms: Yes
-    software: Yes
+    tfa:
+      - sms
+      - software
     doc: https://help.evernote.com/hc/en-us/articles/208314238
-    exceptions:
-      text: "SMS authentication only available for Evernote Premium users"
+    exception: SMS authentication only available for Evernote Premium users
 
   - name: Files.com
     url: https://www.files.com
     img: files.png
-    tfa: Yes
-    sms: Yes
-    software: Yes
-    hardware: Yes
+    tfa:
+      - sms
+      - software
+      - hardware
     doc: https://www.files.com/docs/features/two-factor-auth/
 
   - name: FileThis
     url: https://filethis.com
     twitter: FileThisCompany
     img: filethis.png
-    tfa: No
     facebook: FileThis
 
   - name: Google Drive
     url: https://drive.google.com
     img: drive.png
-    tfa: Yes
-    sms: Yes
-    phone: Yes
-    software: Yes
-    hardware: Yes
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: hubiC
     url: https://hubic.com/
     twitter: hubic
     img: hubic.png
-    tfa: No
 
   - name: IDrive
     url: https://www.idrive.com
     img: idrive.png
-    tfa: Yes
-    email: Yes
+    tfa:
+      - email
     doc: https://blog.idrive.com/2018/11/16/idrive-adds-two-factor-authentication/
 
   - name: Jottacloud
     url: https://www.jottacloud.com
     img: jotta.png
-    tfa: Yes
-    software: Yes
-    sms: Yes
+    tfa:
+      - sms
+      - software
     doc: https://docs.jottacloud.com/en/articles/1292931
 
   - name: JustCloud
     url: https://www.justcloud.com
     twitter: JustCloudcom
     img: justcloud.png
-    tfa: No
     facebook: JustCloudStorage
 
   - name: Koofr
     url: https://koofr.eu
-    tfa: Yes
-    software: Yes
+    tfa:
+      - software
     img: koofr.png
     doc: https://koofr.eu/help/other/how-do-i-enable-2-step-verification/
 
   - name: Mega
     url: https://mega.nz/
     img: mega.png
-    tfa: Yes
-    software: Yes
+    tfa:
+      - software
     doc: https://mega.nz/help/client/webclient/security-and-privacy/5bb5436cf1b70966038b456b
 
   - name: MultCloud
@@ -138,129 +131,123 @@ websites:
     twitter: multcloud
     facebook: multcloud
     img: multcloud.png
-    tfa: No
 
   - name: Nimbox
     url: https://www.nimbox.co.uk/
     img: nimbox.png
-    tfa: Yes
-    email: Yes
-    sms: Yes
-    software: Yes
+    tfa:
+      - sms
+      - email
+      - software
     doc: https://www.nimbox.co.uk/help-centre/two-step-two-factor-authentication-2fa/
 
   - name: OneDrive
     url: https://onedrive.live.com
     img: onedrive.png
-    tfa: Yes
-    sms: Yes
-    software: Yes
-    hardware: Yes
-    exceptions:
-        text: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
+    tfa:
+      - sms
+      - software
+      - hardware
     doc: https://support.microsoft.com/en-us/help/12408/
+    exception: Hardware token supporting FIDO2/WebAuthn can only be used in Windows
+      10 version 1809 and above using Edge browser.
 
   - name: PCloud
     url: https://www.pcloud.com
     img: pcloud.png
-    tfa: Yes
-    sms: Yes
-    software: Yes
+    tfa:
+      - sms
+      - software
     doc: https://www.pcloud.com/help/general-help-center/67-how-can-i-set-up-two-factor-authentication
 
   - name: QNAP
     url: https://www.qnap.com
     img: qnap.png
-    tfa: Yes
-    email: Yes
-    software: Yes
+    tfa:
+      - email
+      - software
     doc: https://www.qnap.com/en-us/how-to/tutorial/article/how-to-enhance-account-security-using-2-step-verification
 
   - name: SmartBox
     url: https://www.panterranetworks.com/products/smartbox.php
     img: smartbox.png
-    tfa: Yes
-    email: Yes
-    software: Yes
-    exceptions:
-      text: "Only available for Enterprise users"
+    tfa:
+      - email
+      - software
+    exception: Only available for Enterprise users
 
   - name: SpiderOak
     url: https://spideroak.com
     twitter: SpiderOak
     img: spideroak.png
-    tfa: No
     facebook: SpiderOak
 
   - name: SugarSync
     twitter: SugarSync
     url: https://www.sugarsync.com/
     img: sugarsync.png
-    tfa: No
     facebook: SugarSync
 
   - name: Sync
     url: https://www.sync.com
     img: sync.png
-    software: Yes
-    email: Yes
-    tfa: Yes
+    tfa:
+      - email
+      - software
     doc: https://www.sync.com/help/how-do-i-setup-two-factor-authentication/
 
   - name: Synology
     url: https://www.synology.com/
     img: synology.png
-    tfa: Yes
-    software: Yes
-    email: Yes
+    tfa:
+      - email
+      - software
     doc: https://originwww.synology.com/en-us/knowledgebase/tutorials/615#t5
 
   - name: ThisData
     url: https://thisdata.com
     img: thisdata.png
-    tfa: Yes
-    sms: Yes
-    software: Yes
+    tfa:
+      - sms
+      - software
     doc: http://help.thisdata.com/docs/two-factor-authentication
 
   - name: Tresorit
     url: https://tresorit.com/
     img: tresorit.png
-    tfa: Yes
-    sms: Yes
-    phone: Yes
-    software: Yes
-    email: Yes
+    tfa:
+      - sms
+      - phone
+      - email
+      - software
     doc: https://support.tresorit.com/hc/en-us/articles/216114527
 
   - name: Wasabi
     url: https://wasabi.com/
     img: wasabi.png
-    tfa: Yes
-    software: Yes
+    tfa:
+      - software
     doc: https://wasabi.com/wp-content/themes/wasabi/docs/User_Guide/index.html#t=topics%2FCONSOLE_ACCESS_for_the_Root_User.htm
 
   - name: Yandex.Disk
     url: https://disk.yandex.com
     img: yandexdisk.png
-    tfa: Yes
-    software: Yes
-    exceptions:
-        text: "SMS-capable phone required for initial setup."
+    tfa:
+      - software
     doc: https://yandex.com/support/passport/authorization/twofa.html
+    exception: SMS-capable phone required for initial setup.
 
   - name: Zetta.net
     url: https://www.zetta.net/
     img: zetta.png
-    tfa: Yes
-    software: Yes
+    tfa:
+      - software
     doc: https://www.zetta.net/about/blog/how-set-zetta-two-factor-authentication/
 
   - name: Zoolz
     url: https://intelli.zoolz.com/
     img: zoolz.png
-    tfa: Yes
-    software: Yes
-    exceptions:
-        text: "Only available for business accounts."
+    tfa:
+      - software
     doc: https://wiki.zoolz.com/how-do-i-enable-two-factor-authentication-on-my-zoolz-intelligent-account/
+    exception: Only available for business accounts.

@@ -1,279 +1,267 @@
 websites:
-    - name: Aol Mail
-      url: https://mail.aol.com
-      img: aol.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
+  - name: Aol Mail
+    url: https://mail.aol.com
+    img: aol.png
+    tfa:
+      - sms
+      - phone
+    doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
-    - name: FastMail
-      url: https://www.fastmail.com/
-      img: fastmail.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.fastmail.com/help/account/2fa.html
+  - name: FastMail
+    url: https://www.fastmail.com/
+    img: fastmail.png
+    tfa:
+      - sms
+      - software
+      - hardware
+    doc: https://www.fastmail.com/help/account/2fa.html
 
-    - name: Freenet
-      url: https://www.freenet.de/
-      img: freenet.png
-      tfa: No
-      facebook: freenet
+  - name: Freenet
+    url: https://www.freenet.de/
+    img: freenet.png
+    facebook: freenet
 
-    - name: Gmail
-      url: https://mail.google.com
-      img: gmail.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+  - name: Gmail
+    url: https://mail.google.com
+    img: gmail.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
-    - name: GMX.com
-      url: https://www.gmx.com/
-      twitter: gmxmail
-      img: gmx.png
-      tfa: No
+  - name: GMX.com
+    url: https://www.gmx.com/
+    twitter: gmxmail
+    img: gmx.png
 
-    - name: GMX.net
-      url: https://www.gmx.net/
-      img: gmx_net.png
-      tfa: Yes
-      software: Yes
-      doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
+  - name: GMX.net
+    url: https://www.gmx.net/
+    img: gmx_net.png
+    tfa:
+      - software
+    doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
 
-    - name: Hushmail
-      url: https://www.hushmail.com
-      img: hushmail.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      doc: https://help.hushmail.com/hc/en-us/articles/213268943
+  - name: Hushmail
+    url: https://www.hushmail.com
+    img: hushmail.png
+    tfa:
+      - sms
+      - email
+      - software
+    doc: https://help.hushmail.com/hc/en-us/articles/213268943
 
-    - name: Kerio Connect
-      url: https://www.kerio.com/products/kerio-connect
-      img: kerio.png
-      twitter: keriotech
-      facebook: keriotech
-      tfa: No
+  - name: Kerio Connect
+    url: https://www.kerio.com/products/kerio-connect
+    img: kerio.png
+    twitter: keriotech
+    facebook: keriotech
 
-    - name: Legalmail
-      url: https://www.legalmail.it/
-      img: legalmail.png
-      tfa: No
-      twitter: InfoCert_it
-      facebook: InfoCertSpa
-      lang: it
+  - name: Legalmail
+    url: https://www.legalmail.it/
+    img: legalmail.png
+    twitter: InfoCert_it
+    facebook: InfoCertSpa
+    lang: it
 
-    - name: Mail.com
-      url: https://www.mail.com/
-      twitter: maildotcom
-      facebook: mail.com
-      img: maildotcom.png
-      tfa: No
+  - name: Mail.com
+    url: https://www.mail.com/
+    twitter: maildotcom
+    facebook: mail.com
+    img: maildotcom.png
 
-    - name: mail.de
-      url: https://mail.de/
-      img: mailde.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://mail.de/hilfe/u2f-authenticator
+  - name: mail.de
+    url: https://mail.de/
+    img: mailde.png
+    tfa:
+      - software
+      - hardware
+    doc: https://mail.de/hilfe/u2f-authenticator
 
-    - name: Mail.Ru
-      url: https://mail.ru/
-      img: mailru.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.mail.ru/mail-help/2auth
+  - name: Mail.Ru
+    url: https://mail.ru/
+    img: mailru.png
+    tfa:
+      - sms
+      - software
+    doc: https://help.mail.ru/mail-help/2auth
 
-    - name: mailbox.org
-      url: https://mailbox.org/
-      img: mailbox.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://kb.mailbox.org/x/5AcS
+  - name: mailbox.org
+    url: https://mailbox.org/
+    img: mailbox.png
+    tfa:
+      - software
+      - hardware
+    doc: https://kb.mailbox.org/x/5AcS
 
-    - name: Mailfence
-      url: https://mailfence.com/
-      img: mailfence.png
-      tfa: Yes
-      software: Yes
-      doc: https://mailfence.com/c/mailfence/more/totp.jsp
+  - name: Mailfence
+    url: https://mailfence.com/
+    img: mailfence.png
+    tfa:
+      - software
+    doc: https://mailfence.com/c/mailfence/more/totp.jsp
 
-    - name: Migadu
-      url: https://www.migadu.com/
-      img: migadu.png
-      tfa: Yes
-      software: Yes
+  - name: Migadu
+    url: https://www.migadu.com/
+    img: migadu.png
+    tfa:
+      - software
 
-    - name: Mimecast
-      url: https://www.mimecast.com/
-      img: mimecast.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      doc: https://community.mimecast.com/docs/DOC-1915
+  - name: Mimecast
+    url: https://www.mimecast.com/
+    img: mimecast.png
+    tfa:
+      - sms
+      - email
+      - software
+    doc: https://community.mimecast.com/docs/DOC-1915
 
-    - name: MXroute
-      url: https://mxroute.com/
-      img: mxroute.png
-      tfa: Yes
-      software: Yes
+  - name: MXroute
+    url: https://mxroute.com/
+    img: mxroute.png
+    tfa:
+      - software
 
-    - name: Outlook.com
-      url: https://outlook.com
-      img: outlook.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-          text: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
-      doc: https://support.microsoft.com/en-us/help/12408/
+  - name: Outlook.com
+    url: https://outlook.com
+    img: outlook.png
+    tfa:
+      - sms
+      - software
+      - hardware
+    doc: https://support.microsoft.com/en-us/help/12408/
+    exception: Hardware token supporting FIDO2/WebAuthn can only be used in Windows
+      10 version 1809 and above using Edge browser.
 
-    - name: Pobox
-      url: https://www.pobox.com/
-      img: pobox.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
+  - name: Pobox
+    url: https://www.pobox.com/
+    img: pobox.png
+    tfa:
+      - software
+      - hardware
+    doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
 
-    - name: Posteo
-      url: https://posteo.de/
-      img: posteo.png
-      tfa: Yes
-      software: Yes
-      doc: https://posteo.de/en/help/what-is-two-factor-authentication-and-how-do-i-set-it-up
+  - name: Posteo
+    url: https://posteo.de/
+    img: posteo.png
+    tfa:
+      - software
+    doc: https://posteo.de/en/help/what-is-two-factor-authentication-and-how-do-i-set-it-up
 
-    - name: ProtonMail
-      url: https://protonmail.com/
-      img: protonmail.png
-      tfa: Yes
-      software: Yes
-      doc: https://protonmail.com/support/knowledge-base/two-factor-authentication/
+  - name: ProtonMail
+    url: https://protonmail.com/
+    img: protonmail.png
+    tfa:
+      - software
+    doc: https://protonmail.com/support/knowledge-base/two-factor-authentication/
 
-    - name: Riseup Mail
-      url: https://mail.riseup.net
-      twitter: riseupnet
-      img: riseup.png
-      tfa: No
+  - name: Riseup Mail
+    url: https://mail.riseup.net
+    twitter: riseupnet
+    img: riseup.png
 
-    - name: Runbox
-      url: https://runbox.com
-      img: runbox.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.runbox.com/account-security/
+  - name: Runbox
+    url: https://runbox.com
+    img: runbox.png
+    tfa:
+      - software
+    doc: https://help.runbox.com/account-security/
 
-    - name: Seznam.cz
-      url: https://seznam.cz
-      img: seznamcz.png
-      tfa: Yes
-      software: Yes
-      exceptions:
-        text: "Software implementation requires use of the Seznam app."
-      doc: https://blog.seznam.cz/2018/04/seznam-cz-ma-nove-dvoufazove-overeni-u-vsech-svych-sluzeb-zvysi-zabezpeci-prihlasovani-napriklad-do-emailu/
-      
-    - name: StartMail
-      url: https://www.startmail.com
-      img: startmail.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704
+  - name: Seznam.cz
+    url: https://seznam.cz
+    img: seznamcz.png
+    tfa:
+      - software
+    doc: https://blog.seznam.cz/2018/04/seznam-cz-ma-nove-dvoufazove-overeni-u-vsech-svych-sluzeb-zvysi-zabezpeci-prihlasovani-napriklad-do-emailu/
+    exception: Software implementation requires use of the Seznam app.
 
-    - name: T-Online
-      url: https://www.t-online.de/
-      twitter: Telekom_hilft
-      facebook: tonline.de
-      img: tonline.png
-      lang: de
-      tfa: No
+  - name: StartMail
+    url: https://www.startmail.com
+    img: startmail.png
+    tfa:
+      - software
+    doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704
 
-    - name: Thexyz
-      url: https://www.thexyz.com/
-      img: thexyz.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.thexyz.com/account/knowledgebase/15/Enabling-two-factor-authentication.html
+  - name: T-Online
+    url: https://www.t-online.de/
+    twitter: Telekom_hilft
+    facebook: tonline.de
+    img: tonline.png
+    lang: de
 
-    - name: TIM Mail
-      url: https://mail.tim.it/
-      img: tim.png
-      tfa: No
-      twitter: TIM_Official
-      facebook: TimOfficialPage
-      lang: it
+  - name: Thexyz
+    url: https://www.thexyz.com/
+    img: thexyz.png
+    tfa:
+      - software
+      - hardware
+    doc: https://www.thexyz.com/account/knowledgebase/15/Enabling-two-factor-authentication.html
 
-    - name: Tutanota
-      url: https://tutanota.com/
-      img: tutanota.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://tutanota.com/howto/#2fa
+  - name: TIM Mail
+    url: https://mail.tim.it/
+    img: tim.png
+    twitter: TIM_Official
+    facebook: TimOfficialPage
+    lang: it
 
-    - name: Virgin Media E-Mail
-      url: https://www.virginmedia.com/
-      twitter: virginmedia
-      facebook: virgin
-      img: virginmedia.png
-      tfa: No
+  - name: Tutanota
+    url: https://tutanota.com/
+    img: tutanota.png
+    tfa:
+      - software
+      - hardware
+    doc: https://tutanota.com/howto/#2fa
 
-    - name: Web.de
-      url: https://web.de
-      img: webde.png
-      tfa: Yes
-      software: Yes
-      doc: https://hilfe.web.de/sicherheit/2fa/index.html
+  - name: Virgin Media E-Mail
+    url: https://www.virginmedia.com/
+    twitter: virginmedia
+    facebook: virgin
+    img: virginmedia.png
 
-    - name: Yahoo Japan Mail
-      url: https://mail.yahoo.co.jp/
-      img: yahoojapanmail.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://id.yahoo.co.jp/security/otp.html
+  - name: Web.de
+    url: https://web.de
+    img: webde.png
+    tfa:
+      - software
+    doc: https://hilfe.web.de/sicherheit/2fa/index.html
 
-    - name: Yahoo Mail
-      url: https://mail.yahoo.com/
-      img: yahoomail.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      doc: https://help.yahoo.com/kb/SLN5013.html
+  - name: Yahoo Japan Mail
+    url: https://mail.yahoo.co.jp/
+    img: yahoojapanmail.png
+    tfa:
+      - email
+      - software
+    doc: https://id.yahoo.co.jp/security/otp.html
 
-    - name: Yandex.Mail
-      url: https://mail.yandex.com/
-      img: yandexmail.png
-      tfa: Yes
-      software: Yes
-      exceptions:
-        text: "SMS-capable phone required for initial setup."
-      doc: https://yandex.com/support/passport/authorization/twofa.xml
+  - name: Yahoo Mail
+    url: https://mail.yahoo.com/
+    img: yahoomail.png
+    tfa:
+      - sms
+      - phone
+    doc: https://help.yahoo.com/kb/SLN5013.html
 
-    - name: Zimbra
-      url: https://www.zimbra.com/
-      img: zimbra.png
-      tfa: Yes
-      software: Yes
-      exceptions:
-        text: "Available in Zimbra Collaboration 8.7 and above, Network Edition only"
-      doc: https://blog.zimbra.com/2016/02/zimbra-collaboration-8-7-two-factor-authentication-2fa-technical-preview/
+  - name: Yandex.Mail
+    url: https://mail.yandex.com/
+    img: yandexmail.png
+    tfa:
+      - software
+    doc: https://yandex.com/support/passport/authorization/twofa.xml
+    exception: SMS-capable phone required for initial setup.
 
-    - name: Zoho Mail
-      url: https://www.zoho.com/mail/
-      img: zoho.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://adminconsole.wiki.zoho.com/mail/Two-Factor-Authentication.html
+  - name: Zimbra
+    url: https://www.zimbra.com/
+    img: zimbra.png
+    tfa:
+      - software
+    doc: https://blog.zimbra.com/2016/02/zimbra-collaboration-8-7-two-factor-authentication-2fa-technical-preview/
+    exception: Available in Zimbra Collaboration 8.7 and above, Network Edition only
+
+  - name: Zoho Mail
+    url: https://www.zoho.com/mail/
+    img: zoho.png
+    tfa:
+      - sms
+      - software
+    doc: https://adminconsole.wiki.zoho.com/mail/Two-Factor-Authentication.html

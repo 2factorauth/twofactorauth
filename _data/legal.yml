@@ -1,27 +1,27 @@
 websites:
-    - name: Clio
-      url: https://www.clio.com
-      img: clio.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.clio.com/hc/en-us/articles/203184210
+  - name: Clio
+    url: https://www.clio.com
+    img: clio.png
+    tfa:
+      - software
+    doc: https://support.clio.com/hc/en-us/articles/203184210
 
-    - name: Docusign
-      url: https://www.docusign.com
-      img: docusign.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      phone: Yes
-      software: Yes
-      doc: https://support.docusign.com/en/guides/ndse-user-guide-two-step-verification
+  - name: Docusign
+    url: https://www.docusign.com
+    img: docusign.png
+    tfa:
+      - sms
+      - phone
+      - email
+      - software
+    doc: https://support.docusign.com/en/guides/ndse-user-guide-two-step-verification
 
-    - name: HelloSign
-      url: https://www.hellosign.com/
-      img: hellosign.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "SMS Two-factor authentication is only available to paid Business plan senders and above."
-      doc: https://faq.hellosign.com/hc/en-us/articles/360025164091
+  - name: HelloSign
+    url: https://www.hellosign.com/
+    img: hellosign.png
+    tfa:
+      - sms
+      - software
+    doc: https://faq.hellosign.com/hc/en-us/articles/360025164091
+    exception: SMS Two-factor authentication is only available to paid Business plan
+      senders and above.

@@ -1,319 +1,301 @@
 websites:
-    - name: Action Network
-      url: https://actionnetwork.org/
-      img: actionnetwork.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.actionnetwork.org/hc/en-us/articles/217206826
+  - name: Action Network
+    url: https://actionnetwork.org/
+    img: actionnetwork.png
+    tfa:
+      - software
+    doc: https://help.actionnetwork.org/hc/en-us/articles/217206826
 
-    - name: Basecamp
-      url: https://basecamp.com/
-      img: basecamp.png
-      tfa: No
-      twitter: basecamp
-      email_address: email@basecamp.com
+  - name: Basecamp
+    url: https://basecamp.com/
+    img: basecamp.png
+    twitter: basecamp
+    email_address: email@basecamp.com
 
-    - name: Campfire
-      url: https://campfirenow.com/
-      img: campfire.png
-      tfa: Yes
-      sms: Yes
-      doc: https://help.37signals.com/sign-in/questions/460
+  - name: Campfire
+    url: https://campfirenow.com/
+    img: campfire.png
+    tfa:
+      - sms
+    doc: https://help.37signals.com/sign-in/questions/460
 
-    - name: Capsule
-      url: https://capsulecrm.com/
-      img: capsule.png
-      tfa: yes
-      software: yes
-      doc: https://capsulecrm.com/support/user-preferences/#enabling-two-factor-authentication
+  - name: Capsule
+    url: https://capsulecrm.com/
+    img: capsule.png
+    tfa:
+      - software
+    doc: https://capsulecrm.com/support/user-preferences/#enabling-two-factor-authentication
 
-    - name: Carbon Black Community Exchange
-      url: https://community.carbonblack.com/
-      img: carbonblack.png
-      tfa: No
-      twitter: CarbonBlack_Inc
-      facebook: carbonblackinc
+  - name: Carbon Black Community Exchange
+    url: https://community.carbonblack.com/
+    img: carbonblack.png
+    twitter: CarbonBlack_Inc
+    facebook: carbonblackinc
 
-    - name: Cloze
-      url: https://www.cloze.com/
-      img: cloze.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.cloze.com/knowledge_base/topics/how-do-i-enable-2-step-authentication
+  - name: Cloze
+    url: https://www.cloze.com/
+    img: cloze.png
+    tfa:
+      - sms
+      - software
+    doc: https://help.cloze.com/knowledge_base/topics/how-do-i-enable-2-step-authentication
 
-    - name: Customer.io
-      url: https://customer.io
-      img: customerio.png
-      tfa: Yes
-      software: Yes
-      doc: https://customer.io/docs/two-factor-auth.html
+  - name: Customer.io
+    url: https://customer.io
+    img: customerio.png
+    tfa:
+      - software
+    doc: https://customer.io/docs/two-factor-auth.html
 
-    - name: Direct Mail
-      url: https://directmailmac.com
-      img: directmail.png
-      tfa: Yes
-      software: Yes
-      doc: https://directmailmac.com/support/article/507
+  - name: Direct Mail
+    url: https://directmailmac.com
+    img: directmail.png
+    tfa:
+      - software
+    doc: https://directmailmac.com/support/article/507
 
-    - name: Discord
-      url: https://discordapp.com/
-      img: discord.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      doc: https://support.discordapp.com/hc/en-us/articles/219576828
+  - name: Discord
+    url: https://discordapp.com/
+    img: discord.png
+    tfa:
+      - sms
+      - email
+      - software
+    doc: https://support.discordapp.com/hc/en-us/articles/219576828
 
-    - name: Disqus
-      url: https://disqus.com
-      twitter: disqus
-      facebook: disqus
-      img: disqus.png
-      tfa: No
+  - name: Disqus
+    url: https://disqus.com
+    twitter: disqus
+    facebook: disqus
+    img: disqus.png
 
-    - name: Doodle
-      url: https://www.doodle.com
-      img: doodle.png
-      twitter: doodletweet
-      tfa: No
+  - name: Doodle
+    url: https://www.doodle.com
+    img: doodle.png
+    twitter: doodletweet
 
-    - name: Fleep
-      url: https://fleep.io
-      twitter: fleepio
-      facebook: fleepio
-      img: fleep.png
-      tfa: No
+  - name: Fleep
+    url: https://fleep.io
+    twitter: fleepio
+    facebook: fleepio
+    img: fleep.png
 
-    - name: Flowdock
-      url: https://www.flowdock.com
-      twitter: flowdock
-      facebook: flowdock
-      img: flowdock.png
-      tfa: No
+  - name: Flowdock
+    url: https://www.flowdock.com
+    twitter: flowdock
+    facebook: flowdock
+    img: flowdock.png
 
-    - name: Front App
-      url: https://frontapp.com
-      img: front_app.png
-      tfa: Yes
-      software: Yes
-      doc: https://community.frontapp.com/t/q56jf8/activating-two-factor-authentication-2fa
+  - name: Front App
+    url: https://frontapp.com
+    img: front_app.png
+    tfa:
+      - software
+    doc: https://community.frontapp.com/t/q56jf8/activating-two-factor-authentication-2fa
 
-    - name: Grape
-      url: https://chatgrape.com/
-      img: grape.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://chatgrape.com/doc/deployment/2fa.html
+  - name: Grape
+    url: https://chatgrape.com/
+    img: grape.png
+    tfa:
+      - sms
+      - software
+    doc: https://chatgrape.com/doc/deployment/2fa.html
 
-    - name: GroupMe
-      url: https://groupme.com/
-      img: groupme.png
-      tfa: Yes
-      sms: Yes
-      doc: https://help.groupme.com/hc/en-us/articles/360000579167
+  - name: GroupMe
+    url: https://groupme.com/
+    img: groupme.png
+    tfa:
+      - sms
+    doc: https://help.groupme.com/hc/en-us/articles/360000579167
 
-    - name: Hangouts
-      url: https://hangouts.google.com/
-      img: hangouts.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+  - name: Hangouts
+    url: https://hangouts.google.com/
+    img: hangouts.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
-    - name: HubSpot
-      url: https://www.hubspot.com/
-      img: hubspot.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://knowledge.hubspot.com/articles/kcs_article/account/how-can-i-set-up-two-factor-authentication-for-my-hubspot-login
+  - name: HubSpot
+    url: https://www.hubspot.com/
+    img: hubspot.png
+    tfa:
+      - sms
+      - software
+    doc: https://knowledge.hubspot.com/articles/kcs_article/account/how-can-i-set-up-two-factor-authentication-for-my-hubspot-login
 
-    - name: IRCCloud
-      url: https://www.irccloud.com
-      img: irccloud.png
-      twitter: IRCCloud
-      facebook: irccloud
-      tfa: No
+  - name: IRCCloud
+    url: https://www.irccloud.com
+    img: irccloud.png
+    twitter: IRCCloud
+    facebook: irccloud
 
-    - name: Kik
-      url: https://www.kik.com/
-      img: kik.png
-      tfa: No
-      twitter: Kik
-      facebook: kikplaynice
-      email_address: support@kik.com
+  - name: Kik
+    url: https://www.kik.com/
+    img: kik.png
+    twitter: Kik
+    facebook: kikplaynice
+    email_address: support@kik.com
 
-    - name: LINE
-      url: https://line.me/en/
-      img: line.png
-      tfa: No
-      facebook: line.worldwide
+  - name: LINE
+    url: https://line.me/en/
+    img: line.png
+    facebook: line.worldwide
 
-    - name: MailChimp
-      url: https://mailchimp.com/
-      img: mailchimp.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://kb.mailchimp.com/accounts/login/set-up-a-two-factor-authentication-app-at-login
+  - name: MailChimp
+    url: https://mailchimp.com/
+    img: mailchimp.png
+    tfa:
+      - sms
+      - software
+    doc: https://kb.mailchimp.com/accounts/login/set-up-a-two-factor-authentication-app-at-login
 
-    - name: Mailgun
-      url: https://www.mailgun.com
-      img: mailgun.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.mailgun.com/hc/en-us/articles/360011664433
+  - name: Mailgun
+    url: https://www.mailgun.com
+    img: mailgun.png
+    tfa:
+      - software
+    doc: https://help.mailgun.com/hc/en-us/articles/360011664433
 
-    - name: Maxemail
-      url: https://maxemail.emailcenteruk.com/
-      img: maxemail.png
-      tfa: Yes
-      hardware: Yes
-      doc: https://www.emailcenteruk.com/maxemail/platform-security-collaboration/
+  - name: Maxemail
+    url: https://maxemail.emailcenteruk.com/
+    img: maxemail.png
+    tfa:
+      - hardware
+    doc: https://www.emailcenteruk.com/maxemail/platform-security-collaboration/
 
-    - name: Riot
-      url: https://about.riot.im/
-      img: riot.png
-      twitter: RiotChat
-      facebook: RiotChat
-      tfa: No
-      
-    - name: Ryver
-      url: https://ryver.com/
-      img: ryver.png
-      twitter: RyverApp
-      facebook: RyverApp
-      tfa: No
+  - name: Riot
+    url: https://about.riot.im/
+    img: riot.png
+    twitter: RiotChat
+    facebook: RiotChat
 
-    - name: Salesforce
-      url: https://www.salesforce.com
-      img: salesforce.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      email: Yes
-      hardware: Yes
-      doc: https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/add_time-based_token.htm
+  - name: Ryver
+    url: https://ryver.com/
+    img: ryver.png
+    twitter: RyverApp
+    facebook: RyverApp
 
-    - name: SendGrid
-      url: https://sendgrid.com/
-      img: sendgrid.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "Software authentication requires the Authy app."
-      doc: https://sendgrid.com/docs/ui/account-and-settings/two-factor-authentication/
+  - name: Salesforce
+    url: https://www.salesforce.com
+    img: salesforce.png
+    tfa:
+      - sms
+      - email
+      - software
+      - hardware
+    doc: https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/add_time-based_token.htm
 
-    - name: Sendloop
-      url: https://app.sendloop.com
-      img: sendloop.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.sendloop.com/docs/securing-your-account
+  - name: SendGrid
+    url: https://sendgrid.com/
+    img: sendgrid.png
+    tfa:
+      - sms
+      - software
+    doc: https://sendgrid.com/docs/ui/account-and-settings/two-factor-authentication/
+    exception: Software authentication requires the Authy app.
 
-    - name: Signal
-      url: https://www.signal.org/
-      img: signal.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      doc: https://support.signal.org/hc/en-us/articles/360007059792
+  - name: Sendloop
+    url: https://app.sendloop.com
+    img: sendloop.png
+    tfa:
+      - software
+    doc: https://help.sendloop.com/docs/securing-your-account
 
-    - name: Skype
-      url: https://www.skype.com
-      img: skype.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "Must be associated with a Microsoft Account."
-      doc: https://support.microsoft.com/en-us/help/12408/
+  - name: Signal
+    url: https://www.signal.org/
+    img: signal.png
+    tfa:
+      - sms
+      - phone
+    doc: https://support.signal.org/hc/en-us/articles/360007059792
 
-    - name: Slack
-      url: https://slack.com/
-      img: slack.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://get.slack.help/hc/en-us/articles/204509068
+  - name: Skype
+    url: https://www.skype.com
+    img: skype.png
+    tfa:
+      - sms
+      - email
+      - software
+    doc: https://support.microsoft.com/en-us/help/12408/
+    exception: Must be associated with a Microsoft Account.
 
-    - name: SocketLabs
-      url: https://socketlabs.com/
-      img: socketlabs.png
-      sms: Yes
-      tfa: Yes
-      software: Yes
-      doc: https://help.socketlabs.com/docs/two-step-verification
+  - name: Slack
+    url: https://slack.com/
+    img: slack.png
+    tfa:
+      - sms
+      - software
+    doc: https://get.slack.help/hc/en-us/articles/204509068
 
-    - name: SparkPost
-      url: https://sparkpost.com/
-      img: sparkpost.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.sparkpost.com/docs/my-account-and-profile/enabling-two-factor-authentication/
+  - name: SocketLabs
+    url: https://socketlabs.com/
+    img: socketlabs.png
+    tfa:
+      - sms
+      - software
+    doc: https://help.socketlabs.com/docs/two-step-verification
 
-    - name: Stackfield
-      url: https://www.stackfield.com/
-      img: stackfield.png
-      tfa: Yes
-      software: Yes
-      doc: https://en.stackfield.help/article/92-activating-deactivating-the-two-factor-authentication
+  - name: SparkPost
+    url: https://sparkpost.com/
+    img: sparkpost.png
+    tfa:
+      - software
+    doc: https://www.sparkpost.com/docs/my-account-and-profile/enabling-two-factor-authentication/
 
-    - name: TeamSpeak
-      url: https://www.teamspeak.com/
-      img: teamspeak.png
-      tfa: No
-      twitter: teamspeak
-      facebook: teamspeak
-      email_address: sales@teamspeak.com
+  - name: Stackfield
+    url: https://www.stackfield.com/
+    img: stackfield.png
+    tfa:
+      - software
+    doc: https://en.stackfield.help/article/92-activating-deactivating-the-two-factor-authentication
 
-    - name: Telegram
-      url: https://telegram.org/
-      img: telegram.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      doc: https://telegram.org/blog/sessions-and-2-step-verification
+  - name: TeamSpeak
+    url: https://www.teamspeak.com/
+    img: teamspeak.png
+    twitter: teamspeak
+    facebook: teamspeak
+    email_address: sales@teamspeak.com
 
-    - name: ToutApp
-      url: https://www1.toutapp.com/
-      facebook: toutapp
-      img: toutapp.png
-      tfa: No
+  - name: Telegram
+    url: https://telegram.org/
+    img: telegram.png
+    tfa:
+      - sms
+      - phone
+    doc: https://telegram.org/blog/sessions-and-2-step-verification
 
-    - name: Viber
-      url: https://www.viber.com
-      img: viber.png
-      tfa: No
-      twitter: ViberHelp
-      facebook: viber
-      email_address: support@viber.com
+  - name: ToutApp
+    url: https://www1.toutapp.com/
+    facebook: toutapp
+    img: toutapp.png
 
-    - name: WhatsApp
-      url: https://www.whatsapp.com/
-      img: whatsapp.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      doc: https://www.whatsapp.com/faq/en/general/26000021
+  - name: Viber
+    url: https://www.viber.com
+    img: viber.png
+    twitter: ViberHelp
+    facebook: viber
+    email_address: support@viber.com
 
-    - name: WoltLab
-      url: https://www.woltlab.com/
-      twitter: woltlab
-      facebook: WoltLab
-      email_address: woltlab@woltlab.com
-      img: woltlab.png
-      tfa: No
+  - name: WhatsApp
+    url: https://www.whatsapp.com/
+    img: whatsapp.png
+    tfa:
+      - sms
+      - phone
+    doc: https://www.whatsapp.com/faq/en/general/26000021
 
-    - name: Yammer
-      url: https://www.yammer.com
-      twitter: Yammer
-      facebook: Yammer
-      img: yammer.png
-      tfa: No
+  - name: WoltLab
+    url: https://www.woltlab.com/
+    twitter: woltlab
+    facebook: WoltLab
+    email_address: woltlab@woltlab.com
+    img: woltlab.png
+
+  - name: Yammer
+    url: https://www.yammer.com
+    twitter: Yammer
+    facebook: Yammer
+    img: yammer.png
