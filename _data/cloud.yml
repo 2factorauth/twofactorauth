@@ -1,232 +1,226 @@
 websites:
-    - name: Amazon Web Services
-      url: https://aws.amazon.com
-      img: aws.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://aws.amazon.com/iam/details/mfa/
+  - name: Amazon Web Services
+    url: https://aws.amazon.com
+    img: aws.png
+    tfa:
+      - sms
+      - software
+      - hardware
+    doc: https://aws.amazon.com/iam/details/mfa/
 
-    - name: appFog
-      url: https://www.ctl.io/appfog/
-      facebook: CenturyLinkTech
-      img: appfog.png
-      tfa: No
+  - name: appFog
+    url: https://www.ctl.io/appfog/
+    facebook: CenturyLinkTech
+    img: appfog.png
 
-    - name: Brightbox
-      url: https://www.brightbox.com/
-      twitter: brightbox
-      facebook: brightbox
-      email_address: support@brightbox.com
-      img: brightbox.png
-      tfa: No
+  - name: Brightbox
+    url: https://www.brightbox.com/
+    twitter: brightbox
+    facebook: brightbox
+    email_address: support@brightbox.com
+    img: brightbox.png
 
-    - name: Cloud 66
-      url: https://www.cloud66.com
-      img: cloud66.png
-      tfa: Yes
-      software: Yes
-      doc: https://blog.cloud66.com/two-factor-authentication-for-your-accounts/
+  - name: Cloud 66
+    url: https://www.cloud66.com
+    img: cloud66.png
+    tfa:
+      - software
+    doc: https://blog.cloud66.com/two-factor-authentication-for-your-accounts/
 
-    - name: cloud.ca
-      url: https://cloud.ca
-      img: cloudca.png
-      tfa: Yes
-      software: Yes
-      doc: https://cloud.ca/two-factor-authentication-is-now-available-on-cloud-ca/
+  - name: cloud.ca
+    url: https://cloud.ca
+    img: cloudca.png
+    tfa:
+      - software
+    doc: https://cloud.ca/two-factor-authentication-is-now-available-on-cloud-ca/
 
-    - name: DigitalOcean
-      url: https://www.digitalocean.com/
-      img: digitalocean.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://www.digitalocean.com/docs/accounts/security/2fa/
+  - name: DigitalOcean
+    url: https://www.digitalocean.com/
+    img: digitalocean.png
+    tfa:
+      - sms
+      - software
+    doc: https://www.digitalocean.com/docs/accounts/security/2fa/
 
-    - name: EngineYard
-      url: https://www.engineyard.com
-      img: engineyard.png
-      tfa: Yes
-      software: Yes
-      doc: https://blog.engineyard.com/2015/engine-yards-two-factor-authentication
+  - name: EngineYard
+    url: https://www.engineyard.com
+    img: engineyard.png
+    tfa:
+      - software
+    doc: https://blog.engineyard.com/2015/engine-yards-two-factor-authentication
 
-    - name: fortrabbit
-      url: https://www.fortrabbit.com/
-      img: fortrabbit.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.fortrabbit.com/account#toc-setting-up-2fa
+  - name: fortrabbit
+    url: https://www.fortrabbit.com/
+    img: fortrabbit.png
+    tfa:
+      - software
+    doc: https://help.fortrabbit.com/account#toc-setting-up-2fa
 
-    - name: Google Cloud Platform
-      url: https://cloud.google.com
-      img: googlecloud.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      phone: Yes
-      hardware: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+  - name: Google Cloud Platform
+    url: https://cloud.google.com
+    img: googlecloud.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
-    - name: Heroku
-      url: https://www.heroku.com/
-      img: heroku.png
-      tfa: Yes
-      software: Yes
-      doc: https://devcenter.heroku.com/articles/two-factor-authentication
+  - name: Heroku
+    url: https://www.heroku.com/
+    img: heroku.png
+    tfa:
+      - software
+    doc: https://devcenter.heroku.com/articles/two-factor-authentication
 
-    - name: Hostiso
-      url: https://hostiso.com/
-      img: hostiso.png
-      tfa: Yes
-      software: Yes
-      exceptions:
-          text: "While both the main client area and the shared hosting panel support 2FA, each system is separate and requires its own setup."
+  - name: Hostiso
+    url: https://hostiso.com/
+    img: hostiso.png
+    tfa:
+      - software
+    exception: While both the main client area and the shared hosting panel support
+      2FA, each system is separate and requires its own setup.
 
-    - name: IBM Cloud
-      url: https://cloud.ibm.com
-      img: ibmcloud.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://cloud.ibm.com/docs/iam?topic=iam-types
+  - name: IBM Cloud
+    url: https://cloud.ibm.com
+    img: ibmcloud.png
+    tfa:
+      - sms
+      - phone
+      - software
+    doc: https://cloud.ibm.com/docs/iam?topic=iam-types
 
-    - name: Joyent
-      url: https://www.joyent.com/
-      img: joyent.png
-      tfa: Yes
-      software: Yes
-      doc: https://docs.joyent.com/public-cloud/getting-started/2fa
+  - name: Joyent
+    url: https://www.joyent.com/
+    img: joyent.png
+    tfa:
+      - software
+    doc: https://docs.joyent.com/public-cloud/getting-started/2fa
 
-    - name: Laravel Forge
-      url: https://forge.laravel.com/
-      img: forge.png
-      tfa: Yes
-      software: Yes
-      doc: https://forge.laravel.com/user/profile#/authentication
+  - name: Laravel Forge
+    url: https://forge.laravel.com/
+    img: forge.png
+    tfa:
+      - software
+    doc: https://forge.laravel.com/user/profile#/authentication
 
-    - name: Leaseweb
-      url: https://www.leaseweb.com/
-      img: leaseweb.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://kb.leaseweb.com/users-and-accounts/managing-your-profile/setup-two-factor-authentication
+  - name: Leaseweb
+    url: https://www.leaseweb.com/
+    img: leaseweb.png
+    tfa:
+      - sms
+      - software
+    doc: https://kb.leaseweb.com/users-and-accounts/managing-your-profile/setup-two-factor-authentication
 
-    - name: Linode
-      url: https://www.linode.com/
-      img: linode.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.linode.com/docs/security/linode-manager-security-controls
+  - name: Linode
+    url: https://www.linode.com/
+    img: linode.png
+    tfa:
+      - software
+    doc: https://www.linode.com/docs/security/linode-manager-security-controls
 
-    - name: MacStadium
-      url: https://www.macstadium.com/
-      img: macstadium.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.macstadium.com/articles/macstadium-two-factor-authentication-guide
+  - name: MacStadium
+    url: https://www.macstadium.com/
+    img: macstadium.png
+    tfa:
+      - software
+    doc: https://help.macstadium.com/articles/macstadium-two-factor-authentication-guide
 
-    - name: Microsoft Azure
-      url: https://azure.microsoft.com/
-      img: microsoftazure.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication/
+  - name: Microsoft Azure
+    url: https://azure.microsoft.com/
+    img: microsoftazure.png
+    tfa:
+      - sms
+      - phone
+      - software
+    doc: https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication/
 
-    - name: mLab
-      url: https://mlab.com/
-      img: mlab.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://docs.mlab.com/security/#two-factor-authentication
+  - name: mLab
+    url: https://mlab.com/
+    img: mlab.png
+    tfa:
+      - sms
+      - software
+    doc: https://docs.mlab.com/security/#two-factor-authentication
 
-    - name: OpenShift
-      url: https://www.openshift.com/
-      twitter: openshift
-      facebook: openshift
-      img: openshift.png
-      tfa: No
+  - name: OpenShift
+    url: https://www.openshift.com/
+    twitter: openshift
+    facebook: openshift
+    img: openshift.png
 
-    - name: Packet
-      url: https://www.packet.com/
-      img: packet.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.packet.com/kb/articles/portal
+  - name: Packet
+    url: https://www.packet.com/
+    img: packet.png
+    tfa:
+      - sms
+      - software
+    doc: https://support.packet.com/kb/articles/portal
 
-    - name: ProfitBricks
-      url: https://www.profitbricks.de
-      img: profitbricks.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.profitbricks.com/help/2-Factor_Authentication
+  - name: ProfitBricks
+    url: https://www.profitbricks.de
+    img: profitbricks.png
+    tfa:
+      - software
+    doc: https://www.profitbricks.com/help/2-Factor_Authentication
 
-    - name: Rackspace
-      url: https://www.rackspace.com/
-      img: rackspace.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.rackspace.com/how-to/multi-factor-authentication-from-the-cloud-control-panel/
+  - name: Rackspace
+    url: https://www.rackspace.com/
+    img: rackspace.png
+    tfa:
+      - sms
+      - software
+    doc: https://support.rackspace.com/how-to/multi-factor-authentication-from-the-cloud-control-panel/
 
-    - name: RightScale
-      url: https://www.rightscale.com/
-      img: rightscale.png
-      tfa: No
-      twitter: rightscale
-      facebook: RightScale
+  - name: RightScale
+    url: https://www.rightscale.com/
+    img: rightscale.png
+    twitter: rightscale
+    facebook: RightScale
 
-    - name: Scaleway
-      url: https://www.scaleway.com
-      img: scaleway.png
-      tfa: Yes
-      software: Yes
-      doc: https://blog.online.net/2017/06/13/introducing-two-factor-authentication-on-scaleway/
+  - name: Scaleway
+    url: https://www.scaleway.com
+    img: scaleway.png
+    tfa:
+      - software
+    doc: https://blog.online.net/2017/06/13/introducing-two-factor-authentication-on-scaleway/
 
-    - name: Scalr
-      url: https://www.scalr.com
-      img: scalr.png
-      tfa: Yes
-      software: Yes
-      doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
+  - name: Scalr
+    url: https://www.scalr.com
+    img: scalr.png
+    tfa:
+      - software
+    doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
 
-    - name: Tilaa
-      url: https://www.tilaa.com
-      img: tilaa.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-          text: "SMS-capable phone required."
-      doc: https://blog.tilaa.com/post/128110588046
+  - name: Tilaa
+    url: https://www.tilaa.com
+    img: tilaa.png
+    tfa:
+      - software
+      - hardware
+    doc: https://blog.tilaa.com/post/128110588046
+    exception: SMS-capable phone required.
 
-    - name: UpCloud
-      url: https://www.upcloud.com
-      img: upcloud.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.upcloud.com/support/two-factor-authentication/
+  - name: UpCloud
+    url: https://www.upcloud.com
+    img: upcloud.png
+    tfa:
+      - software
+    doc: https://www.upcloud.com/support/two-factor-authentication/
 
-    - name: Userify
-      url: https://userify.com
-      img: userify.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://userify.com/docs/multifactor-authentication/
+  - name: Userify
+    url: https://userify.com
+    img: userify.png
+    tfa:
+      - software
+      - hardware
+    doc: https://userify.com/docs/multifactor-authentication/
 
-    - name: Vultr
-      url: https://www.vultr.com
-      img: vultr.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-        text: "Hardware 2FA only supports YubiKeys with Yubico OTP credentials."
-      doc: https://www.vultr.com/docs/using-two-factor-authentication-to-login-to-vultr-control-panel
+  - name: Vultr
+    url: https://www.vultr.com
+    img: vultr.png
+    tfa:
+      - software
+      - hardware
+    doc: https://www.vultr.com/docs/using-two-factor-authentication-to-login-to-vultr-control-panel
+    exception: Hardware 2FA only supports YubiKeys with Yubico OTP credentials.

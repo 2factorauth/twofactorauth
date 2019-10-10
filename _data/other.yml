@@ -1,673 +1,634 @@
 websites:
-    - name: Adobe ID
-      url: https://accounts.adobe.com/
-      img: adobe.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      software: Yes
-      doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
-
-    - name: Aerohive Networks
-      url: https://www.aerohive.com/
-      img: aerohive.png
-      tfa: No
-      twitter: Aerohive
-
-    - name: Airbnb
-      url: https://www.airbnb.com/
-      img: airbnb.png
-      tfa: No
-      twitter: Airbnb
-
-    - name: Airtable
-      url: https://airtable.com
-      img: airtable.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      doc: https://support.airtable.com/hc/en-us/articles/219409917
-
-    - name: Ancestry
-      url: https://www.ancestry.com
-      img: ancestry.png
-      tfa: Yes
-      sms: Yes
-      doc: https://support.ancestry.com/s/article/MFA
-      exceptions:
-          text: "2FA is currently only available for customers with a U.S. based phone number."
-
-    - name: AngelList
-      url: https://angel.co
-      img: angellist.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-
-    - name: Australia Post
-      url: https://auspost.com.au/
-      img: auspost.png
-      tfa: No
-      twitter: auspost
-
-    - name: Australian Red Cross Blood Service
-      url: https://www.donateblood.com.au/
-      img: donateblood.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-
-    - name: Autodesk
-      url: https://www.autodesk.com
-      img: autodesk.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      phone: Yes
-      software: Yes
-      doc: https://knowledge.autodesk.com/customer-service/account-management/account-profile/account-security/two-step-verification
-
-    - name: Automater
-      url: https://automater.pl/en/
-      img: automater.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.youtube.com/watch?v=5OLcvjVhhuI
-
-    - name: AwardWallet
-      url: https://awardwallet.com
-      img: awardwallet.png
-      tfa: Yes
-      software: Yes
-      doc: https://awardwallet.com/faqs#44
-
-    - name: Bananatag
-      url: https://www.bananatag.com/
-      img: bananatag.png
-      tfa: No
-      twitter: bananatag
-      facebook: trackemail
-
-    - name: BasisCode Compliance
-      url: https://basiscode.com
-      img: basiscode.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      phone: Yes
-      doc: https://basiscode.com/blog/two-factor-authentication-compliance-software/
-
-    - name: Booking.com
-      url: https://www.booking.com/
-      img: bookingcom.png
-      tfa: Yes
-      sms: Yes
-
-    - name: CA Technologies
-      url: https://www.ca.com/
-      img: ca-technologies.png
-      tfa: No
-      twitter: CAinc
-      facebook: CATechnologies
-
-    - name: Chartbeat
-      url: https://chartbeat.com/
-      img: chartbeat.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888
-      exceptions:
-          text: "SMS required for 2FA."
-
-    - name: Cisco Meraki
-      url: https://meraki.cisco.com/
-      img: meraki.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
-
-    - name: Clickworker
-      url: https://www.clickworker.com/
-      img: clickworker.png
-      tfa: No
-      twitter: clickworker_com
-
-    - name: CloudConvert
-      url: https://cloudconvert.com
-      img: cloudconvert.png
-      tfa: Yes
-      software: Yes
-
-    - name: Cloudinary
-      url: https://cloudinary.com
-      img: cloudinary.png
-      tfa: Yes
-      software: Yes
-
-    - name: CommuterBenefits
-      url: https://commuterbenefits.com/
-      img: commuterbenefits.png
-      tfa: No
-      twitter: CommuterBenefit
-
-    - name: Cosmolex
-      url: https://www.cosmolex.com/
-      img: cosmolex.png
-      tfa: Yes
-      sms: Yes
-      doc: https://support.cosmolex.com/knowledge-base/how-to-enable-two-factor-authentication/
-
-    - name: Couchsurfing
-      url: https://www.couchsurfing.com/
-      img: couchsurfing.png
-      tfa: No
-      twitter: Couchsurfing
-      facebook: couchsurfing
-
-    - name: Crowd Supply
-      url: https://www.crowdsupply.com
-      img: crowdsupply.png
-      tfa: No
-      twitter: crowd_supply
-      facebook: CrowdSupply
-      email_address: support@crowdsupply.com
-
-    - name: CrowdFlower
-      url: https://www.crowdflower.com/
-      img: crowdflower.png
-      tfa: No
-      twitter: CrowdFlower
-
-    - name: Delighted
-      url: https://delightedapp.com/
-      img: delighted.png
-      tfa: Yes
-      sms: Yes
-
-    - name: DHL Deutschland
-      url: https://www.dhl.de
-      img: dhl.png
-      tfa: Yes
-      email: Yes
-
-    - name: DirectAdmin
-      url: https://www.directadmin.com
-      img: directadmin.png
-      tfa: Yes
-      software: Yes
-      doc: https://directadmin.com/features.php?id=1754
-
-    - name: DoorDash
-      url: https://www.doordash.com
-      img: doordash.png
-      twitter: DoorDash
-      tfa: No
-
-    - name: Dreamstime
-      url: https://www.dreamstime.com/
-      img: dreamstime.png
-      twitter: Dreamstime
-      tfa: No
-
-    - name: Envato
-      url: https://envato.com
-      img: envato.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.market.envato.com/hc/en-us/articles/115005592963
-
-    - name: Everlaw
-      url: https://everlaw.com
-      img: everlaw.png
-      tfa: Yes
-      software: Yes
-      email: Yes
-      doc: https://support.everlaw.com/hc/en-us/articles/206312165
-
-    - name: Figma
-      url: https://www.figma.com/
-      img: figma.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.figma.com/article/208--
-
-    - name: Findmyshift
-      url: https://www.findmyshift.com/
-      img: findmyshift.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.findmyshift.com/help/what-is-two-factor-authentication
-
-    - name: Firefox
-      url: https://accounts.firefox.com
-      img: firefox.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.mozilla.org/en-US/kb/secure-firefox-account-two-step-authentication
-
-    - name: Fiverr
-      url: https://www.fiverr.com/
-      img: fiverr.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      doc: https://sellers.fiverr.com/en/article/two-factor-authentication
-
-    - name: Formstack
-      url: https://www.formstack.com/
-      img: formstack.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.formstack.com/hc/en-us/articles/360019517891
-
-    - name: Freelancer
-      url: https://www.freelancer.com/
-      img: freelancer.png
-      tfa: No
-      twitter: freelancer
-      facebook: fansoffreelancer
-
-    - name: GoFundMe
-      url: https://www.gofundme.com/
-      img: gofundme.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      doc: https://support.gofundme.com/hc/en-us/articles/360001980947
-      exceptions:
-          text: "2FA only for North American customers that create Personal campaigns."
-
-    - name: Grammarly
-      url: https://grammarly.com/
-      img: grammarly.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.grammarly.com/hc/en-us/articles/360032922091
-      exceptions:
-          text: "SMS-capable phone is required."
-
-    - name: GrowingIO
-      url: https://www.growingio.com/
-      img: growing.png
-      tfa: Yes
-      software: Yes
-      doc: https://docs.growingio.com/docs/configuration/account-management#22-kai-qi-er-ci-ren-zheng
-
-    - name: Help Scout
-      url: https://helpscout.com
-      img: helpscout.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://docs.helpscout.com/article/907--
-
-    - name: Hilton Honors
-      url: https://www.hilton.com
-      img: hilton.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-
-    - name: IEEE
-      url: https://www.ieee.org
-      img: ieee.png
-      tfa: No
-      twitter: IEEEorg
-      facebook: IEEE.org
-
-    - name: IFTTT
-      url: https://ifttt.com
-      img: ifttt.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://ifttt.com/settings#two-step-verification
-
-    - name: ImmobilienScout24
-      url: https://www.immobilienscout24.de
-      img: immobilienscout24.png
-      tfa: Yes
-      software: Yes
-
-    - name: Indeed
-      url: https://www.indeed.com/
-      img: indeed.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      doc: https://support.indeed.com/hc/en-us/articles/360000244123
-
-    - name: Indiegogo
-      url: https://www.indiegogo.com/
-      twitter: Indiegogo
-      facebook: Indiegogo
-      img: indiegogo.png
-      tfa: No
-
-    - name: Instapaper
-      url: https://www.instapaper.com
-      twitter: InstapaperHelp
-      facebook: instapaperholdings
-      email_address: support@help.instapaper.com
-      img: instapaper.png
-      tfa: No
-
-    - name: Jitbit Helpdesk
-      url: https://www.jitbit.com/hosted-helpdesk/
-      img: jitbit.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.jitbit.com/helpdesk/KB/View/11048235
-
-    - name: JustGiving
-      url: https://www.justgiving.com/
-      img: justgiving.png
-      tfa: No
-      twitter: JGhelp
-      facebook: justgiving
-
-    - name: karriere.at
-      url: https://www.karriere.at
-      img: karriereat.png
-      tfa: No
-      twitter: karriere_at
-      facebook: karriere.at
-      lang: de
-
-    - name: Kayako
-      url: https://www.kayako.com
-      img: kayako.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.kayako.com/article/1198-securing-your-user-account-with-two-factor-authentication-2fa
-
-    - name: Kickstarter
-      url: https://www.kickstarter.com
-      img: kickstarter.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://help.kickstarter.com/hc/en-us/articles/115005127094
-
-    - name: Liftopia
-      url: https://www.liftopia.com
-      img: liftopia.png
-      tfa: No
-      twitter: Liftopia
-      facebook: liftopia
-
-    - name: MathWorks
-      url: https://www.mathworks.com/
-      img: mathworks.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      doc: https://www.mathworks.com/mw_account/two_step_verification/frequently-asked-questions.html
-
-    - name: Mixpanel
-      url: https://mixpanel.com/
-      img: mixpanel.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-
-    - name: Monster
-      url: https://www.monster.com
-      img: monster.png
-      tfa: No
-      twitter: Monster
-      facebook: monster
-      
-    - name: NationBuilder
-      url: https://nationbuilder.com
-      img: nationbuilder.png
-      tfa: No
-      twitter: NationBuilder
-      facebook: nationbuilder
-
-    - name: No Starch Press
-      url: https://nostarch.com/
-      img: nostarchpress.png
-      tfa: Yes
-      software: Yes
-
-    - name: Office 365
-      url: https://office.microsoft.com/en-us/business/
-      img: office365.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      exceptions:
-          text: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
-      doc: https://support.office.com/en-US/article/Set-up-multi-factor-authentication-for-Office-365-8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-
-    - name: Onshape
-      url: https://www.onshape.com/
-      img: onshape.png
-      tfa: Yes
-      software: Yes
-      doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
-
-    - name: Pastebin
-      url: https://pastebin.com
-      img: pastebin.png
-      tfa: No
-      twitter: pastebin
-      facebook: pastebin
-      email_address: admin@pastebin.com
-
-    - name: Patreon
-      url: https://www.patreon.com/
-      img: patreon.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.patreon.com/hc/en-us/articles/206538086
-
-    - name: PhraseApp
-      url: https://phraseapp.com
-      img: phraseapp.png
-      tfa: Yes
-      software: Yes
-      doc: https://phraseapp.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
-
-    - name: Pinboard
-      url: https://pinboard.in/
-      twitter: Pinboard
-      img: pinboard.png
-      tfa: No
-
-    - name: Planning Center Online
-      url: https://planning.center/
-      twitter: PlanningCenter
-      facebook: PlanningCenter
-      img: planningcenter.png
-      tfa: No
-
-    - name: Pocket
-      url: https://www.getpocket.com
-      img: pocket.png
-      tfa: No
-      twitter: Pocket
-      facebook: pocket
-      email_address: support@getpocket.com
-
-    - name: Postcrossing
-      url: https://www.postcrossing.com/
-      img: postcrossing.png
-      tfa: No
-      facebook: postcrossing
-      twitter: postcrossing
-      
-    - name: Postmates
-      url: https://postmates.com
-      twitter: Postmates
-      img: postmates.png
-      tfa: No
-
-    - name: Pozible
-      url: https://www.pozible.com
-      img: pozible.png
-      twitter: Pozible
-      tfa: No
-
-    - name: Promoter.io
-      url: https://promoter.io/
-      img: promoter.png
-      tfa: No
-      twitter: Promoter_io
-
-    - name: Repairshopr
-      url: https://www.repairshopr.com/
-      img: repairshopr.png
-      tfa: Yes
-      doc: https://feedback.repairshopr.com/knowledgebase/articles/928266
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "SMS only available as a backup to Google Authenticator."
-
-    - name: Ripe NCC
-      url: https://www.ripe.net/
-      img: ripe.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.ripe.net/participate/member-support/ripe-ncc-access/two-step-verification
-
-    - name: SaneBox
-      url: https://www.sanebox.com/
-      img: sanebox.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.sanebox.com/help/127
-
-    - name: SignNow
-      url: https://www.signnow.com/
-      img: signnow.png
-      tfa: No
-      twitter: signnow
-      facebook: esignaturesignnow
-
-    - name: SmartSimple
-      url: https://www.smartsimple.com
-      img: smartsimple.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://wiki.smartsimple.com/wiki/Two-Factor_Authentication
-
-    - name: Spare5
-      url: https://app.spare5.com/fives
-      img: spare5.png
-      tfa: No
-      twitter: spare5
-      facebook: spare5app
-      email_address: feedback@spare5.com
-
-    - name: Ubiquiti Networks
-      url: https://www.ubnt.com
-      img: ubiquiti.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.ubnt.com/hc/en-us/articles/115012986607
-
-    - name: Ulule
-      url: https://www.ulule.com/
-      twitter: ulule
-      facebook: ululeEN
-      img: ulule.png
-      tfa: No
-
-    - name: UPS
-      url: https://www.ups.com
-      img: ups.png
-      tfa: No
-      twitter: UPS
-      facebook: ups
-
-    - name: Upwork
-      url: https://www.upwork.com
-      img: upwork.png
-      tfa: No
-      twitter: UpworkHelp
-      facebook: upwork
-
-    - name: Usabilla
-      url: https://usabilla.com
-      img: usabilla.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.usabilla.com/hc/en-us/articles/115003081611
-
-    - name: WageWorks
-      url: https://www.wageworks.com
-      img: wageworks.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      exceptions:
-          text: "Employer/plan sponsor may opt to not offer 2FA."
-
-    - name: Watchman Monitoring
-      url: https://www.watchmanmonitoring.com
-      img: watchmanmonitoring.png
-      tfa: Yes
-      hardware: Yes
-      sms: Yes
-      software: Yes
-      doc: https://www.watchmanmonitoring.com/two-factor-authentication
-      exceptions:
-          text: "Two factor authentication unavailable for 'End User' access, which is read-only."
-
-    - name: Weclapp 
-      url: https://weclapp.com/
-      img: weclapp.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://doc.weclapp.com/knowledgebase/zwei-wege-authentifizierung-2fa/
-
-    - name: Wikia
-      url: https://www.wikia.com/
-      twitter: wikia
-      img: wikia.png
-      tfa: No
-
-    - name: Wikipedia
-      url: https://www.wikipedia.org/
-      img: wikipedia.png
-      tfa: Yes
-      software: Yes
-      doc: https://meta.wikimedia.org/wiki/Help:Two-factor_authentication
-      exceptions:
-          text: "Currently limited to administrators (and users with admin-like permissions like interface editors), bureaucrats, checkusers, oversighters, stewards, edit filter managers and the OATH-testers global group."
-
-    - name: Yclas
-      url: https://yclas.com/
-      img: yclas.png
-      tfa: Yes
-      software: Yes
-      doc: https://docs.yclas.com/2-step-authentication/
-
-    - name: YourAcclaim
-      url: https://youracclaim.com
-      img: youracclaim.png
-      tfa: Yes
-      software: Yes
-      
-    - name: Zendesk
-      url: https://www.zendesk.com
-      img: zendesk.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.zendesk.com/hc/en-us/articles/203824246
+  - name: Adobe ID
+    url: https://accounts.adobe.com/
+    img: adobe.png
+    tfa:
+      - sms
+      - email
+      - software
+    doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
+
+  - name: Aerohive Networks
+    url: https://www.aerohive.com/
+    img: aerohive.png
+    twitter: Aerohive
+
+  - name: Airbnb
+    url: https://www.airbnb.com/
+    img: airbnb.png
+    twitter: Airbnb
+
+  - name: Airtable
+    url: https://airtable.com
+    img: airtable.png
+    tfa:
+      - sms
+      - software
+    doc: https://support.airtable.com/hc/en-us/articles/219409917
+
+  - name: Ancestry
+    url: https://www.ancestry.com
+    img: ancestry.png
+    tfa:
+      - sms
+    doc: https://support.ancestry.com/s/article/MFA
+    exception: 2FA is currently only available for customers with a U.S. based phone
+      number.
+
+  - name: AngelList
+    url: https://angel.co
+    img: angellist.png
+    tfa:
+      - sms
+      - software
+
+  - name: Australia Post
+    url: https://auspost.com.au/
+    img: auspost.png
+    twitter: auspost
+
+  - name: Australian Red Cross Blood Service
+    url: https://www.donateblood.com.au/
+    img: donateblood.png
+    tfa:
+      - sms
+      - email
+
+  - name: Autodesk
+    url: https://www.autodesk.com
+    img: autodesk.png
+    tfa:
+      - sms
+      - phone
+      - email
+      - software
+    doc: https://knowledge.autodesk.com/customer-service/account-management/account-profile/account-security/two-step-verification
+
+  - name: Automater
+    url: https://automater.pl/en/
+    img: automater.png
+    tfa:
+      - software
+    doc: https://www.youtube.com/watch?v=5OLcvjVhhuI
+
+  - name: AwardWallet
+    url: https://awardwallet.com
+    img: awardwallet.png
+    tfa:
+      - software
+    doc: https://awardwallet.com/faqs#44
+
+  - name: Bananatag
+    url: https://www.bananatag.com/
+    img: bananatag.png
+    twitter: bananatag
+    facebook: trackemail
+
+  - name: BasisCode Compliance
+    url: https://basiscode.com
+    img: basiscode.png
+    tfa:
+      - sms
+      - phone
+      - email
+    doc: https://basiscode.com/blog/two-factor-authentication-compliance-software/
+
+  - name: Booking.com
+    url: https://www.booking.com/
+    img: bookingcom.png
+    tfa:
+      - sms
+
+  - name: CA Technologies
+    url: https://www.ca.com/
+    img: ca-technologies.png
+    twitter: CAinc
+    facebook: CATechnologies
+
+  - name: Chartbeat
+    url: https://chartbeat.com/
+    img: chartbeat.png
+    tfa:
+      - sms
+      - software
+    doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888
+    exception: SMS required for 2FA.
+
+  - name: Cisco Meraki
+    url: https://meraki.cisco.com/
+    img: meraki.png
+    tfa:
+      - sms
+      - software
+    doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
+
+  - name: Clickworker
+    url: https://www.clickworker.com/
+    img: clickworker.png
+    twitter: clickworker_com
+
+  - name: CloudConvert
+    url: https://cloudconvert.com
+    img: cloudconvert.png
+    tfa:
+      - software
+
+  - name: Cloudinary
+    url: https://cloudinary.com
+    img: cloudinary.png
+    tfa:
+      - software
+
+  - name: CommuterBenefits
+    url: https://commuterbenefits.com/
+    img: commuterbenefits.png
+    twitter: CommuterBenefit
+
+  - name: Cosmolex
+    url: https://www.cosmolex.com/
+    img: cosmolex.png
+    tfa:
+      - sms
+    doc: https://support.cosmolex.com/knowledge-base/how-to-enable-two-factor-authentication/
+
+  - name: Couchsurfing
+    url: https://www.couchsurfing.com/
+    img: couchsurfing.png
+    twitter: Couchsurfing
+    facebook: couchsurfing
+
+  - name: Crowd Supply
+    url: https://www.crowdsupply.com
+    img: crowdsupply.png
+    twitter: crowd_supply
+    facebook: CrowdSupply
+    email_address: support@crowdsupply.com
+
+  - name: CrowdFlower
+    url: https://www.crowdflower.com/
+    img: crowdflower.png
+    twitter: CrowdFlower
+
+  - name: Delighted
+    url: https://delightedapp.com/
+    img: delighted.png
+    tfa:
+      - sms
+
+  - name: DHL Deutschland
+    url: https://www.dhl.de
+    img: dhl.png
+    tfa:
+      - email
+
+  - name: DirectAdmin
+    url: https://www.directadmin.com
+    img: directadmin.png
+    tfa:
+      - software
+    doc: https://directadmin.com/features.php?id=1754
+
+  - name: DoorDash
+    url: https://www.doordash.com
+    img: doordash.png
+    twitter: DoorDash
+
+  - name: Dreamstime
+    url: https://www.dreamstime.com/
+    img: dreamstime.png
+    twitter: Dreamstime
+
+  - name: Envato
+    url: https://envato.com
+    img: envato.png
+    tfa:
+      - software
+    doc: https://help.market.envato.com/hc/en-us/articles/115005592963
+
+  - name: Everlaw
+    url: https://everlaw.com
+    img: everlaw.png
+    tfa:
+      - email
+      - software
+    doc: https://support.everlaw.com/hc/en-us/articles/206312165
+
+  - name: Figma
+    url: https://www.figma.com/
+    img: figma.png
+    tfa:
+      - sms
+      - software
+    doc: https://help.figma.com/article/208--
+
+  - name: Findmyshift
+    url: https://www.findmyshift.com/
+    img: findmyshift.png
+    tfa:
+      - software
+    doc: https://www.findmyshift.com/help/what-is-two-factor-authentication
+
+  - name: Firefox
+    url: https://accounts.firefox.com
+    img: firefox.png
+    tfa:
+      - software
+    doc: https://support.mozilla.org/en-US/kb/secure-firefox-account-two-step-authentication
+
+  - name: Fiverr
+    url: https://www.fiverr.com/
+    img: fiverr.png
+    tfa:
+      - sms
+      - email
+    doc: https://sellers.fiverr.com/en/article/two-factor-authentication
+
+  - name: Formstack
+    url: https://www.formstack.com/
+    img: formstack.png
+    tfa:
+      - sms
+      - software
+    doc: https://help.formstack.com/hc/en-us/articles/360019517891
+
+  - name: Freelancer
+    url: https://www.freelancer.com/
+    img: freelancer.png
+    twitter: freelancer
+    facebook: fansoffreelancer
+
+  - name: GoFundMe
+    url: https://www.gofundme.com/
+    img: gofundme.png
+    tfa:
+      - sms
+      - phone
+    doc: https://support.gofundme.com/hc/en-us/articles/360001980947
+    exception: 2FA only for North American customers that create Personal campaigns.
+
+  - name: Grammarly
+    url: https://grammarly.com/
+    img: grammarly.png
+    tfa:
+      - sms
+      - software
+    doc: https://support.grammarly.com/hc/en-us/articles/360032922091
+    exception: SMS-capable phone is required.
+
+  - name: GrowingIO
+    url: https://www.growingio.com/
+    img: growing.png
+    tfa:
+      - software
+    doc: https://docs.growingio.com/docs/configuration/account-management#22-kai-qi-er-ci-ren-zheng
+
+  - name: Help Scout
+    url: https://helpscout.com
+    img: helpscout.png
+    tfa:
+      - sms
+      - software
+    doc: https://docs.helpscout.com/article/907--
+
+  - name: Hilton Honors
+    url: https://www.hilton.com
+    img: hilton.png
+    tfa:
+      - sms
+      - email
+
+  - name: IEEE
+    url: https://www.ieee.org
+    img: ieee.png
+    twitter: IEEEorg
+    facebook: IEEE.org
+
+  - name: IFTTT
+    url: https://ifttt.com
+    img: ifttt.png
+    tfa:
+      - sms
+      - software
+    doc: https://ifttt.com/settings#two-step-verification
+
+  - name: ImmobilienScout24
+    url: https://www.immobilienscout24.de
+    img: immobilienscout24.png
+    tfa:
+      - software
+
+  - name: Indeed
+    url: https://www.indeed.com/
+    img: indeed.png
+    tfa:
+      - sms
+      - phone
+    doc: https://support.indeed.com/hc/en-us/articles/360000244123
+
+  - name: Indiegogo
+    url: https://www.indiegogo.com/
+    twitter: Indiegogo
+    facebook: Indiegogo
+    img: indiegogo.png
+
+  - name: Instapaper
+    url: https://www.instapaper.com
+    twitter: InstapaperHelp
+    facebook: instapaperholdings
+    email_address: support@help.instapaper.com
+    img: instapaper.png
+
+  - name: Jitbit Helpdesk
+    url: https://www.jitbit.com/hosted-helpdesk/
+    img: jitbit.png
+    tfa:
+      - software
+    doc: https://support.jitbit.com/helpdesk/KB/View/11048235
+
+  - name: JustGiving
+    url: https://www.justgiving.com/
+    img: justgiving.png
+    twitter: JGhelp
+    facebook: justgiving
+
+  - name: karriere.at
+    url: https://www.karriere.at
+    img: karriereat.png
+    twitter: karriere_at
+    facebook: karriere.at
+    lang: de
+
+  - name: Kayako
+    url: https://www.kayako.com
+    img: kayako.png
+    tfa:
+      - software
+    doc: https://support.kayako.com/article/1198-securing-your-user-account-with-two-factor-authentication-2fa
+
+  - name: Kickstarter
+    url: https://www.kickstarter.com
+    img: kickstarter.png
+    tfa:
+      - sms
+      - phone
+      - software
+    doc: https://help.kickstarter.com/hc/en-us/articles/115005127094
+
+  - name: Liftopia
+    url: https://www.liftopia.com
+    img: liftopia.png
+    twitter: Liftopia
+    facebook: liftopia
+
+  - name: MathWorks
+    url: https://www.mathworks.com/
+    img: mathworks.png
+    tfa:
+      - sms
+      - email
+      - software
+    doc: https://www.mathworks.com/mw_account/two_step_verification/frequently-asked-questions.html
+
+  - name: Mixpanel
+    url: https://mixpanel.com/
+    img: mixpanel.png
+    tfa:
+      - sms
+      - software
+
+  - name: Monster
+    url: https://www.monster.com
+    img: monster.png
+    twitter: Monster
+    facebook: monster
+
+  - name: NationBuilder
+    url: https://nationbuilder.com
+    img: nationbuilder.png
+    twitter: NationBuilder
+    facebook: nationbuilder
+
+  - name: No Starch Press
+    url: https://nostarch.com/
+    img: nostarchpress.png
+    tfa:
+      - software
+
+  - name: Office 365
+    url: https://office.microsoft.com/en-us/business/
+    img: office365.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://support.office.com/en-US/article/Set-up-multi-factor-authentication-for-Office-365-8f0454b2-f51a-4d9c-bcde-2c48e41621c6
+    exception: Hardware token supporting FIDO2/WebAuthn can only be used in Windows
+      10 version 1809 and above using Edge browser.
+
+  - name: Onshape
+    url: https://www.onshape.com/
+    img: onshape.png
+    tfa:
+      - software
+    doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
+
+  - name: Pastebin
+    url: https://pastebin.com
+    img: pastebin.png
+    twitter: pastebin
+    facebook: pastebin
+    email_address: admin@pastebin.com
+
+  - name: Patreon
+    url: https://www.patreon.com/
+    img: patreon.png
+    tfa:
+      - sms
+      - software
+    doc: https://support.patreon.com/hc/en-us/articles/206538086
+
+  - name: PhraseApp
+    url: https://phraseapp.com
+    img: phraseapp.png
+    tfa:
+      - software
+    doc: https://phraseapp.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
+
+  - name: Pinboard
+    url: https://pinboard.in/
+    twitter: Pinboard
+    img: pinboard.png
+
+  - name: Planning Center Online
+    url: https://planning.center/
+    twitter: PlanningCenter
+    facebook: PlanningCenter
+    img: planningcenter.png
+
+  - name: Pocket
+    url: https://www.getpocket.com
+    img: pocket.png
+    twitter: Pocket
+    facebook: pocket
+    email_address: support@getpocket.com
+
+  - name: Postcrossing
+    url: https://www.postcrossing.com/
+    img: postcrossing.png
+    facebook: postcrossing
+    twitter: postcrossing
+
+  - name: Postmates
+    url: https://postmates.com
+    twitter: Postmates
+    img: postmates.png
+
+  - name: Pozible
+    url: https://www.pozible.com
+    img: pozible.png
+    twitter: Pozible
+
+  - name: Promoter.io
+    url: https://promoter.io/
+    img: promoter.png
+    twitter: Promoter_io
+
+  - name: Repairshopr
+    url: https://www.repairshopr.com/
+    img: repairshopr.png
+    tfa:
+      - sms
+      - software
+    doc: https://feedback.repairshopr.com/knowledgebase/articles/928266
+    exception: SMS only available as a backup to Google Authenticator.
+
+  - name: Ripe NCC
+    url: https://www.ripe.net/
+    img: ripe.png
+    tfa:
+      - software
+    doc: https://www.ripe.net/participate/member-support/ripe-ncc-access/two-step-verification
+
+  - name: SaneBox
+    url: https://www.sanebox.com/
+    img: sanebox.png
+    tfa:
+      - software
+    doc: https://www.sanebox.com/help/127
+
+  - name: SignNow
+    url: https://www.signnow.com/
+    img: signnow.png
+    twitter: signnow
+    facebook: esignaturesignnow
+
+  - name: SmartSimple
+    url: https://www.smartsimple.com
+    img: smartsimple.png
+    tfa:
+      - software
+      - hardware
+    doc: https://wiki.smartsimple.com/wiki/Two-Factor_Authentication
+
+  - name: Spare5
+    url: https://app.spare5.com/fives
+    img: spare5.png
+    twitter: spare5
+    facebook: spare5app
+    email_address: feedback@spare5.com
+
+  - name: Ubiquiti Networks
+    url: https://www.ubnt.com
+    img: ubiquiti.png
+    tfa:
+      - software
+    doc: https://help.ubnt.com/hc/en-us/articles/115012986607
+
+  - name: Ulule
+    url: https://www.ulule.com/
+    twitter: ulule
+    facebook: ululeEN
+    img: ulule.png
+
+  - name: UPS
+    url: https://www.ups.com
+    img: ups.png
+    twitter: UPS
+    facebook: ups
+
+  - name: Upwork
+    url: https://www.upwork.com
+    img: upwork.png
+    twitter: UpworkHelp
+    facebook: upwork
+
+  - name: Usabilla
+    url: https://usabilla.com
+    img: usabilla.png
+    tfa:
+      - software
+    doc: https://support.usabilla.com/hc/en-us/articles/115003081611
+
+  - name: WageWorks
+    url: https://www.wageworks.com
+    img: wageworks.png
+    tfa:
+      - sms
+      - email
+    exception: Employer/plan sponsor may opt to not offer 2FA.
+
+  - name: Watchman Monitoring
+    url: https://www.watchmanmonitoring.com
+    img: watchmanmonitoring.png
+    tfa:
+      - sms
+      - software
+      - hardware
+    doc: https://www.watchmanmonitoring.com/two-factor-authentication
+    exception: Two factor authentication unavailable for 'End User' access, which is
+      read-only.
+
+  - name: Weclapp
+    url: https://weclapp.com/
+    img: weclapp.png
+    tfa:
+      - software
+      - hardware
+    doc: https://doc.weclapp.com/knowledgebase/zwei-wege-authentifizierung-2fa/
+
+  - name: Wikia
+    url: https://www.wikia.com/
+    twitter: wikia
+    img: wikia.png
+
+  - name: Wikipedia
+    url: https://www.wikipedia.org/
+    img: wikipedia.png
+    tfa:
+      - software
+    doc: https://meta.wikimedia.org/wiki/Help:Two-factor_authentication
+    exception: Currently limited to administrators (and users with admin-like permissions
+      like interface editors), bureaucrats, checkusers, oversighters, stewards, edit
+      filter managers and the OATH-testers global group.
+
+  - name: Yclas
+    url: https://yclas.com/
+    img: yclas.png
+    tfa:
+      - software
+    doc: https://docs.yclas.com/2-step-authentication/
+
+  - name: YourAcclaim
+    url: https://youracclaim.com
+    img: youracclaim.png
+    tfa:
+      - software
+
+  - name: Zendesk
+    url: https://www.zendesk.com
+    img: zendesk.png
+    tfa:
+      - sms
+      - software
+    doc: https://support.zendesk.com/hc/en-us/articles/203824246

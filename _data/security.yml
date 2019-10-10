@@ -1,254 +1,242 @@
 websites:
-    - name: AdGuard
-      url: https://adguard.com
-      img: adguard.png
-      tfa: Yes
-      software: Yes
-      doc: https://kb.adguard.com/en/general/2fa
+  - name: AdGuard
+    url: https://adguard.com
+    img: adguard.png
+    tfa:
+      - software
+    doc: https://kb.adguard.com/en/general/2fa
 
-    - name: AVG
-      url: https://www.avg.com
-      img: avg.png
-      tfa: No
-      twitter: AVGFree
-      facebook: AVG
+  - name: AVG
+    url: https://www.avg.com
+    img: avg.png
+    twitter: AVGFree
+    facebook: AVG
 
-    - name: Bitdefender
-      url: https://www.bitdefender.com
-      img: bitdefender.png
-      tfa: No
-      twitter: Bitdefender
-      facebook: bitdefender
+  - name: Bitdefender
+    url: https://www.bitdefender.com
+    img: bitdefender.png
+    twitter: Bitdefender
+    facebook: bitdefender
 
-    - name: Blur
-      url: https://www.abine.com/
-      img: blur.png
-      tfa: Yes
-      software: Yes
-      doc: https://dnt.abine.com/#help/faq/faq-enabletwoFactor
+  - name: Blur
+    url: https://www.abine.com/
+    img: blur.png
+    tfa:
+      - software
+    doc: https://dnt.abine.com/#help/faq/faq-enabletwoFactor
 
-    - name: Boxcryptor
-      url: https://www.boxcryptor.com
-      img: boxcryptor.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.boxcryptor.com/help/boxcryptor-account/#two-factor-authentication
+  - name: Boxcryptor
+    url: https://www.boxcryptor.com
+    img: boxcryptor.png
+    tfa:
+      - software
+      - hardware
+    doc: https://www.boxcryptor.com/help/boxcryptor-account/#two-factor-authentication
 
-    - name: bugcrowd
-      url: https://bugcrowd.com
-      img: bugcrowd.png
-      tfa: Yes
-      software: Yes
-      doc: https://docs.bugcrowd.com/v1.0/docs/two-factor-authentication-1
+  - name: bugcrowd
+    url: https://bugcrowd.com
+    img: bugcrowd.png
+    tfa:
+      - software
+    doc: https://docs.bugcrowd.com/v1.0/docs/two-factor-authentication-1
 
-    - name: CAcert
-      url: http://www.cacert.org/
-      img: cacert.png
-      tfa: Yes
-      hardware: Yes
-      exceptions:
-          text: "Requires X.509-capable cryptotoken or smartcard."
+  - name: CAcert
+    url: http://www.cacert.org/
+    img: cacert.png
+    tfa:
+      - hardware
+    exception: Requires X.509-capable cryptotoken or smartcard.
 
-    - name: Cloudflare
-      url: https://cloudflare.com
-      img: cloudflare.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.cloudflare.com/hc/en-us/articles/200167866
+  - name: Cloudflare
+    url: https://cloudflare.com
+    img: cloudflare.png
+    tfa:
+      - software
+    doc: https://support.cloudflare.com/hc/en-us/articles/200167866
 
-    - name: Cobalt
-      url: https://cobalt.io/
-      img: cobalt.png
-      tfa: Yes
-      software: Yes
-      doc: https://cobalt.io/blog/new-feature-two-factor-auth/
+  - name: Cobalt
+    url: https://cobalt.io/
+    img: cobalt.png
+    tfa:
+      - software
+    doc: https://cobalt.io/blog/new-feature-two-factor-auth/
 
-    - name: Detectify
-      url: https://detectify.com/
-      img: detectify.png
-      twitter: detectify
-      facebook: detectify
-      email_address: hello@detectify.com
-      tfa: No
+  - name: Detectify
+    url: https://detectify.com/
+    img: detectify.png
+    twitter: detectify
+    facebook: detectify
+    email_address: hello@detectify.com
 
-    - name: DigiCert
-      url: https://www.digicert.com/
-      img: digicert.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.digicert.com/two-factor-authentication.htm
+  - name: DigiCert
+    url: https://www.digicert.com/
+    img: digicert.png
+    tfa:
+      - software
+    doc: https://www.digicert.com/two-factor-authentication.htm
 
-    - name: DMARC Analyzer
-      url: https://www.dmarcanalyzer.com/
-      img: dmarcanalyzer.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.dmarcanalyzer.com/set-two-factor-authentication-additional-security/
+  - name: DMARC Analyzer
+    url: https://www.dmarcanalyzer.com/
+    img: dmarcanalyzer.png
+    tfa:
+      - software
+    doc: https://www.dmarcanalyzer.com/set-two-factor-authentication-additional-security/
 
-    - name: dmarcian
-      url: https://dmarcian.com/
-      img: dmarcian.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://dmarcian.com/secure-dmarcian-2fa/
-    
-    - name: Dome9 Security
-      url: https://dome9.com/
-      img: dome9.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://dome9.com/overview/strong-2-factor-authentication
+  - name: dmarcian
+    url: https://dmarcian.com/
+    img: dmarcian.png
+    tfa:
+      - software
+      - hardware
+    doc: https://dmarcian.com/secure-dmarcian-2fa/
 
-    - name: Entrust
-      img: entrust.png
-      url: https://www.entrust.net
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.entrust.com/multi-factor-authentication-tools/
+  - name: Dome9 Security
+    url: https://dome9.com/
+    img: dome9.png
+    tfa:
+      - software
+      - hardware
+    doc: https://dome9.com/overview/strong-2-factor-authentication
 
-    - name: ESET
-      img: eset.png
-      url: https://www.eset.com
-      tfa: No
-      facebook: eset
-      twitter: ESET
+  - name: Entrust
+    img: entrust.png
+    url: https://www.entrust.net
+    tfa:
+      - software
+      - hardware
+    doc: https://www.entrust.com/multi-factor-authentication-tools/
 
-    - name: GeoTrust
-      url: https://www.geotrust.com/
-      img: geotrust.png
-      tfa: Yes
-      email: Yes
+  - name: ESET
+    img: eset.png
+    url: https://www.eset.com
+    facebook: eset
+    twitter: ESET
 
-    - name: GoGetSSL
-      url: https://gogetssl.com/
-      img: gogetssl.png
-      tfa: No
-      twitter: gogetssl
-      facebook: gogetssl
+  - name: GeoTrust
+    url: https://www.geotrust.com/
+    img: geotrust.png
+    tfa:
+      - email
 
-    - name: HackerOne
-      url: https://hackerone.com
-      img: hackerone.png
-      tfa: Yes
-      software: Yes
-      doc: https://docs.hackerone.com/hackers/two-factor-authentication.html
-      exceptions:
-          text: "SMS-capable phone required for initial setup."
+  - name: GoGetSSL
+    url: https://gogetssl.com/
+    img: gogetssl.png
+    twitter: gogetssl
+    facebook: gogetssl
 
-    - name: McAfee
-      url: https://www.mcafee.com/
-      img: mcafee.png
-      tfa: No
-      twitter: McAfee
-      facebook: McAfee
+  - name: HackerOne
+    url: https://hackerone.com
+    img: hackerone.png
+    tfa:
+      - software
+    doc: https://docs.hackerone.com/hackers/two-factor-authentication.html
+    exception: SMS-capable phone required for initial setup.
 
-    - name: Norton
-      url: https://us.norton.com
-      img: norton.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      sms: Yes
-      phone: Yes
-      doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us
+  - name: McAfee
+    url: https://www.mcafee.com/
+    img: mcafee.png
+    twitter: McAfee
+    facebook: McAfee
 
-    - name: Prey
-      url: https://www.preyproject.com
-      img: prey.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.preyproject.com/article/248--
+  - name: Norton
+    url: https://us.norton.com
+    img: norton.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us
 
-    - name: Pwnie Express Pwn Pulse
-      url: https://www.pwnieexpress.com/products/pulse-device-detection
-      img: pwnieexpress.png
-      tfa: Yes
-      software: Yes
-      exceptions:
-          text: "TFA can be enabled on Pwn Pulse Accounts upon customer request."
-      doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909
+  - name: Prey
+    url: https://www.preyproject.com
+    img: prey.png
+    tfa:
+      - software
+    doc: https://help.preyproject.com/article/248--
 
-    - name: RBLTracker
-      url: https://rbltracker.com/
-      img: rbltracker.png
-      tfa: Yes
-      software: Yes
-      doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
+  - name: Pwnie Express Pwn Pulse
+    url: https://www.pwnieexpress.com/products/pulse-device-detection
+    img: pwnieexpress.png
+    tfa:
+      - software
+    doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909
+    exception: TFA can be enabled on Pwn Pulse Accounts upon customer request.
 
-    - name: Sophos Central
-      url: https://www.sophos.com
-      img: sophoscentral.png
-      tfa: Yes
-      software: Yes
-      email: Yes
-      doc: https://docs.sophos.com/central/Customer/help/en-us/central/Customer/concepts/ep_MultiFactorAuthentication.html
+  - name: RBLTracker
+    url: https://rbltracker.com/
+    img: rbltracker.png
+    tfa:
+      - software
+    doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
 
-    - name: SSLTrust
-      url: https://www.ssltrust.com.au/
-      img: ssltrust.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.ssltrust.com.au/help/account-management/enable-2factor
+  - name: Sophos Central
+    url: https://www.sophos.com
+    img: sophoscentral.png
+    tfa:
+      - email
+      - software
+    doc: https://docs.sophos.com/central/Customer/help/en-us/central/Customer/concepts/ep_MultiFactorAuthentication.html
 
-    - name: Surfshark
-      url: https://surfshark.com/
-      img: surfshark.png
-      tfa: No
-      twitter: SurfsharkSecure
-      facebook: SurfsharkPrivacy
+  - name: SSLTrust
+    url: https://www.ssltrust.com.au/
+    img: ssltrust.png
+    tfa:
+      - software
+    doc: https://www.ssltrust.com.au/help/account-management/enable-2factor
 
-    - name: ThreatConnect
-      url: https://threatconnect.com/
-      img: threatconnect.png
-      tfa: Yes
-      software: Yes
-      doc: https://kb.threatconnect.com/customer/en/portal/articles/2214975
+  - name: Surfshark
+    url: https://surfshark.com/
+    img: surfshark.png
+    twitter: SurfsharkSecure
+    facebook: SurfsharkPrivacy
 
-    - name: ThreatMetrix
-      url: https://www.threatmetrix.com/
-      img: threatmetrix.png
-      tfa: No
-      twitter: ThreatMetrix
+  - name: ThreatConnect
+    url: https://threatconnect.com/
+    img: threatconnect.png
+    tfa:
+      - software
+    doc: https://kb.threatconnect.com/customer/en/portal/articles/2214975
 
-    - name: ThreatSim
-      url: https://login.threatsim.com
-      img: threatsim.png
-      tfa: Yes
-      sms: Yes
+  - name: ThreatMetrix
+    url: https://www.threatmetrix.com/
+    img: threatmetrix.png
+    twitter: ThreatMetrix
 
-    - name: ThreatX
-      url: https://www.threatx.com/
-      img: threatx.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.threatx.com/hc/en-us/articles/360022157591
+  - name: ThreatSim
+    url: https://login.threatsim.com
+    img: threatsim.png
+    tfa:
+      - sms
 
-    - name: Tinfoil Security
-      url: https://www.tinfoilsecurity.com
-      img: tinfoil.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.tinfoilsecurity.com/article/43-do-you-support-two-factor-authentication-how-do-i-set-it-up
+  - name: ThreatX
+    url: https://www.threatx.com/
+    img: threatx.png
+    tfa:
+      - software
+    doc: https://support.threatx.com/hc/en-us/articles/360022157591
 
-    - name: TorGuard
-      url: https://torguard.net
-      img: torguard.png
-      tfa: Yes
-      software: Yes
+  - name: Tinfoil Security
+    url: https://www.tinfoilsecurity.com
+    img: tinfoil.png
+    tfa:
+      - software
+    doc: https://support.tinfoilsecurity.com/article/43-do-you-support-two-factor-authentication-how-do-i-set-it-up
 
-    - name: VirusTotal
-      url: https://www.virustotal.com
-      img: virustotal.png
-      tfa: Yes
-      software: Yes
+  - name: TorGuard
+    url: https://torguard.net
+    img: torguard.png
+    tfa:
+      - software
 
-    - name: Webroot
-      url: https://www.webroot.com
-      img: webroot.png
-      twitter: Webroot
-      facebook: Webroot
-      tfa: No
+  - name: VirusTotal
+    url: https://www.virustotal.com
+    img: virustotal.png
+    tfa:
+      - software
+
+  - name: Webroot
+    url: https://www.webroot.com
+    img: webroot.png
+    twitter: Webroot
+    facebook: Webroot

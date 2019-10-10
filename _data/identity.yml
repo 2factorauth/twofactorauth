@@ -1,169 +1,163 @@
 websites:
-    - name: 1Password
-      url: https://1password.com/
-      img: 1password.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-        text: "Teams using Duo with 1Password can't enable additional 2FA as it's already handled by Duo"
-      doc: https://support.1password.com/two-factor-authentication/
+  - name: 1Password
+    url: https://1password.com/
+    img: 1password.png
+    tfa:
+      - software
+      - hardware
+    doc: https://support.1password.com/two-factor-authentication/
+    exception: Teams using Duo with 1Password can't enable additional 2FA as it's already
+      handled by Duo
 
-    - name: Bitium
-      url: https://www.bitium.com
-      img: bitium.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://support.bitium.com/administration/multi-factor-authentication/
+  - name: Bitium
+    url: https://www.bitium.com
+    img: bitium.png
+    tfa:
+      - software
+      - hardware
+    doc: https://support.bitium.com/administration/multi-factor-authentication/
 
-    - name: bitwarden
-      url: https://bitwarden.com
-      img: bitwarden.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-        text: "Premium account required for Duo, YubiKey and FIDO U2F."
-      doc: https://help.bitwarden.com/article/setup-two-step-login/
+  - name: bitwarden
+    url: https://bitwarden.com
+    img: bitwarden.png
+    tfa:
+      - sms
+      - phone
+      - email
+      - software
+      - hardware
+    doc: https://help.bitwarden.com/article/setup-two-step-login/
+    exception: Premium account required for Duo, YubiKey and FIDO U2F.
 
-    - name: Centrify
-      url: https://www.centrify.com
-      img: centrify.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      phone: Yes
-      software: Yes
-      doc: https://www.centrify.com/solutions/why-multi-factor-authentication/
+  - name: Centrify
+    url: https://www.centrify.com
+    img: centrify.png
+    tfa:
+      - sms
+      - phone
+      - email
+      - software
+    doc: https://www.centrify.com/solutions/why-multi-factor-authentication/
 
-    - name: Dashlane
-      url: https://www.dashlane.com
-      img: dashlane.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://support.dashlane.com/hc/en-us/articles/202625042
+  - name: Dashlane
+    url: https://www.dashlane.com
+    img: dashlane.png
+    tfa:
+      - software
+      - hardware
+    doc: https://support.dashlane.com/hc/en-us/articles/202625042
 
-    - name: ID.me
-      url: https://www.id.me/
-      img: idme.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      phone: Yes
-      doc: https://help.id.me/hc/en-us/categories/360001435974
+  - name: ID.me
+    url: https://www.id.me/
+    img: idme.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://help.id.me/hc/en-us/categories/360001435974
 
-    - name: IDentité Numérique (IDN)
-      url: https://www.idn.laposte.fr
-      twitter: lisalaposte
-      facebook: laposte
-      img: identitenumerique.png
-      tfa: No
-      lang: fr
+  - name: IDentité Numérique (IDN)
+    url: https://www.idn.laposte.fr
+    twitter: lisalaposte
+    facebook: laposte
+    img: identitenumerique.png
+    lang: fr
 
-    - name: Keeper
-      url: https://keepersecurity.com/
-      img: keeper.png
-      tfa: Yes
-      hardware: Yes
-      phone: Yes
-      sms: Yes
-      software: Yes
-      doc: https://www.keepersecurity.com/security#twoFactor
+  - name: Keeper
+    url: https://keepersecurity.com/
+    img: keeper.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://www.keepersecurity.com/security#twoFactor
 
-    - name: Keybase
-      url: https://keybase.io
-      twitter: KeybaseIO
-      img: keybase.png
-      tfa: No
+  - name: Keybase
+    url: https://keybase.io
+    twitter: KeybaseIO
+    img: keybase.png
 
-    - name: LastPass
-      url: https://lastpass.com/
-      img: lastpass.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://helpdesk.lastpass.com/multifactor-authentication-options/
+  - name: LastPass
+    url: https://lastpass.com/
+    img: lastpass.png
+    tfa:
+      - software
+      - hardware
+    doc: https://helpdesk.lastpass.com/multifactor-authentication-options/
 
-    - name: Okta
-      url: https://www.okta.com/
-      img: okta.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      phone: Yes
-      email: Yes
-      hardware: Yes
-      doc: https://help.okta.com/en/prod/Content/Topics/Security/MFA.htm
+  - name: Okta
+    url: https://www.okta.com/
+    img: okta.png
+    tfa:
+      - sms
+      - phone
+      - email
+      - software
+      - hardware
+    doc: https://help.okta.com/en/prod/Content/Topics/Security/MFA.htm
 
-    - name: PassHub
-      url: https://passhub.net/
-      img: passhub.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-          text: "Hardware tokens only work on desktop."
-      doc: https://passhub.net/security.php
+  - name: PassHub
+    url: https://passhub.net/
+    img: passhub.png
+    tfa:
+      - software
+      - hardware
+    doc: https://passhub.net/security.php
+    exception: Hardware tokens only work on desktop.
 
-    - name: Passpack
-      url: https://www.passpack.com/
-      img: passpack.png
-      tfa: Yes
-      email: Yes
-      hardware: Yes
-      doc: https://help.passpack.com/knowledgebase/idx.php/44/0/
+  - name: Passpack
+    url: https://www.passpack.com/
+    img: passpack.png
+    tfa:
+      - email
+      - hardware
+    doc: https://help.passpack.com/knowledgebase/idx.php/44/0/
 
-    - name: RoboForm
-      url: https://www.roboform.com/
-      img: roboform.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.roboform.com/hc/en-us/articles/115002729512
+  - name: RoboForm
+    url: https://www.roboform.com/
+    img: roboform.png
+    tfa:
+      - sms
+      - email
+      - software
+    doc: https://help.roboform.com/hc/en-us/articles/115002729512
 
-    - name: SAASPASS
-      url: https://saaspass.com
-      img: saaspass.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://saaspass.com/faq/
+  - name: SAASPASS
+    url: https://saaspass.com
+    img: saaspass.png
+    tfa:
+      - sms
+      - software
+      - hardware
+    doc: https://saaspass.com/faq/
 
-    - name: SailPoint
-      url: https://www.sailpoint.com/
-      img: sailpoint.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-          text: "Applies to IdentityIQ and IdentityNow."
+  - name: SailPoint
+    url: https://www.sailpoint.com/
+    img: sailpoint.png
+    tfa:
+      - sms
+      - phone
+      - email
+      - software
+      - hardware
+    exception: Applies to IdentityIQ and IdentityNow.
 
-    - name: SecureSafe
-      url: https://www.securesafe.com
-      img: securesafe.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-          text: "2FA is only available on paid plans."
-      doc: https://www.securesafe.com/en/faq/general-questions/how-can-i-activate-2-factor-authentication/
+  - name: SecureSafe
+    url: https://www.securesafe.com
+    img: securesafe.png
+    tfa:
+      - sms
+    doc: https://www.securesafe.com/en/faq/general-questions/how-can-i-activate-2-factor-authentication/
+    exception: 2FA is only available on paid plans.
 
-    - name: True Key
-      url: https://www.truekey.com
-      img: truekey.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://help.truekey.com/hc/en-us/articles/218580447-How-can-I-add-additional-factors-
+  - name: True Key
+    url: https://www.truekey.com
+    img: truekey.png
+    tfa:
+      - sms
+      - email
+      - software
+      - hardware
+    doc: https://help.truekey.com/hc/en-us/articles/218580447-How-can-I-add-additional-factors-

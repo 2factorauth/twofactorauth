@@ -1,209 +1,187 @@
 websites:
-    - name: Bandcamp
-      url: https://bandcamp.com
-      img: bandcamp.png
-      tfa: No
-      twitter: Bandcamp
-      facebook: Bandcamp
-      email_address: support@bandcamp.com
+  - name: Bandcamp
+    url: https://bandcamp.com
+    img: bandcamp.png
+    twitter: Bandcamp
+    facebook: Bandcamp
+    email_address: support@bandcamp.com
 
-    - name: CD Baby
-      url: https://www.cdbaby.com/
-      twitter: cdbaby
-      facebook: cdbaby
-      img: cdbaby.png
-      tfa: No
+  - name: CD Baby
+    url: https://www.cdbaby.com/
+    twitter: cdbaby
+    facebook: cdbaby
+    img: cdbaby.png
 
-    - name: Crunchyroll
-      url: https://www.crunchyroll.com/
-      img: crunchyroll.png
-      tfa: No
-      twitter: Crunchyroll
-      facebook: Crunchyroll
+  - name: Crunchyroll
+    url: https://www.crunchyroll.com/
+    img: crunchyroll.png
+    twitter: Crunchyroll
+    facebook: Crunchyroll
 
-    - name: Deezer
-      url: https://www.deezer.com
-      twitter: DeezerHelp
-      facebook: Deezer
-      img: deezer.png
-      tfa: No
+  - name: Deezer
+    url: https://www.deezer.com
+    twitter: DeezerHelp
+    facebook: Deezer
+    img: deezer.png
 
-    - name: Floatplane
-      url: https://www.floatplane.com/
-      twitter: floatplanemedia
-      facebook: FloatplaneMedia
-      img: floatplane.png
-      tfa: No
+  - name: Floatplane
+    url: https://www.floatplane.com/
+    twitter: floatplanemedia
+    facebook: FloatplaneMedia
+    img: floatplane.png
 
-    - name: Google Play
-      url: https://play.google.com
-      img: googleplay.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+  - name: Google Play
+    url: https://play.google.com
+    img: googleplay.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
-    - name: Hotstar
-      url: https://www.hotstar.com/
-      twitter: hotstar_helps
-      facebook: hotstar
-      img: hotstar.png
-      tfa: No
+  - name: Hotstar
+    url: https://www.hotstar.com/
+    twitter: hotstar_helps
+    facebook: hotstar
+    img: hotstar.png
 
-    - name: Hulu
-      url: https://www.hulu.com/
-      twitter: hulu_support
-      facebook: hulu
-      img: hulu.png
-      tfa: No
+  - name: Hulu
+    url: https://www.hulu.com/
+    twitter: hulu_support
+    facebook: hulu
+    img: hulu.png
 
-    - name: IBM Watson Media (Ustream)
-      url: https://video.ibm.com
-      twitter: IBMWatsonMedia
-      facebook: ibmwatsonmedia
-      img: ibm.png
-      tfa: No
+  - name: IBM Watson Media (Ustream)
+    url: https://video.ibm.com
+    twitter: IBMWatsonMedia
+    facebook: ibmwatsonmedia
+    img: ibm.png
 
-    - name: IMDb
-      url: https://www.imdb.com
-      img: imdb.png
-      tfa: No
-      twitter: IMDb
-      facebook: imdb
-      email_address: support-imdb@imdb.com
+  - name: IMDb
+    url: https://www.imdb.com
+    img: imdb.png
+    twitter: IMDb
+    facebook: imdb
+    email_address: support-imdb@imdb.com
 
-    - name: Last.fm
-      url: https://www.last.fm/
-      twitter: lastfm
-      facebook: lastfm
-      img: lastfm.png
-      tfa: No
+  - name: Last.fm
+    url: https://www.last.fm/
+    twitter: lastfm
+    facebook: lastfm
+    img: lastfm.png
 
-    - name: Mixer
-      url: https://mixer.com/
-      img: mixer.png
-      tfa: Yes
-      software: Yes
-      doc: https://watchbeam.zendesk.com/hc/en-us/articles/115000997646
+  - name: Mixer
+    url: https://mixer.com/
+    img: mixer.png
+    tfa:
+      - software
+    doc: https://watchbeam.zendesk.com/hc/en-us/articles/115000997646
 
-    - name: Netflix
-      url: https://www.netflix.com/us/
-      twitter: Netflixhelps
-      facebook: netflix
-      img: netflix.png
-      tfa: No
+  - name: Netflix
+    url: https://www.netflix.com/us/
+    twitter: Netflixhelps
+    facebook: netflix
+    img: netflix.png
 
-    - name: Niconico
-      url: https://www.nicovideo.jp/
-      img: niconico.png
-      tfa: Yes
-      software: Yes
-      doc: https://qa.nicovideo.jp/faq/show/4500
-      
-    - name: Pandora
-      url: https://www.pandora.com
-      img: pandora.png
-      tfa: No
-      twitter: PandoraSupport
-      facebook: pandora
+  - name: Niconico
+    url: https://www.nicovideo.jp/
+    img: niconico.png
+    tfa:
+      - software
+    doc: https://qa.nicovideo.jp/faq/show/4500
 
-    - name: Picarto.TV
-      url: https://picarto.tv/
-      twitter: PicartoTV
-      facebook: picartotv
-      email_address: support@picarto.tv
-      img: picartotv.png
-      tfa: No
+  - name: Pandora
+    url: https://www.pandora.com
+    img: pandora.png
+    twitter: PandoraSupport
+    facebook: pandora
 
-    - name: Plex
-      url: https://www.plex.tv
-      twitter: plex
-      facebook: plexapp
-      img: plex.png
-      tfa: No
+  - name: Picarto.TV
+    url: https://picarto.tv/
+    twitter: PicartoTV
+    facebook: picartotv
+    email_address: support@picarto.tv
+    img: picartotv.png
 
-    - name: Qobuz
-      url: https://www.qobuz.com
-      twitter: qobuz
-      facebook: qobuz
-      img: qobuz.png
-      tfa: No
+  - name: Plex
+    url: https://www.plex.tv
+    twitter: plex
+    facebook: plexapp
+    img: plex.png
 
-    - name: Roku
-      url: https://www.roku.com
-      img: roku.png
-      tfa: No
-      twitter: RokuSupport
-      facebook: roku
+  - name: Qobuz
+    url: https://www.qobuz.com
+    twitter: qobuz
+    facebook: qobuz
+    img: qobuz.png
 
-    - name: Sling TV
-      url: https://www.sling.com/
-      twitter: slinganswers
-      facebook: sling
-      img: sling.png
-      tfa: No
+  - name: Roku
+    url: https://www.roku.com
+    img: roku.png
+    twitter: RokuSupport
+    facebook: roku
 
-    - name: smashcast
-      url: https://www.smashcast.tv/
-      img: smashcast.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.smashcast.tv/customer/en/portal/articles/2779887
+  - name: Sling TV
+    url: https://www.sling.com/
+    twitter: slinganswers
+    facebook: sling
+    img: sling.png
 
-    - name: SoundCloud
-      url: https://soundcloud.com/
-      twitter: SCsupport
-      facebook: SoundCloud
-      img: soundcloud.png
-      tfa: No
+  - name: smashcast
+    url: https://www.smashcast.tv/
+    img: smashcast.png
+    tfa:
+      - software
+    doc: https://help.smashcast.tv/customer/en/portal/articles/2779887
 
-    - name: Spotify
-      url: https://www.spotify.com/
-      twitter: SpotifyCares
-      facebook: spotify
-      img: spotify.png
-      tfa: No
+  - name: SoundCloud
+    url: https://soundcloud.com/
+    twitter: SCsupport
+    facebook: SoundCloud
+    img: soundcloud.png
 
-    - name: TIDAL
-      url: https://tidal.com/
-      twitter: TIDALSupport
-      facebook: TIDAL
-      email_address: support@tidal.com
-      img: tidal.png
-      tfa: No
+  - name: Spotify
+    url: https://www.spotify.com/
+    twitter: SpotifyCares
+    facebook: spotify
+    img: spotify.png
 
-    - name: TiVo
-      url: https://www.tivo.com/
-      twitter: TiVo
-      facebook: TiVo
-      img: tivo.png
-      tfa: No
+  - name: TIDAL
+    url: https://tidal.com/
+    twitter: TIDALSupport
+    facebook: TIDAL
+    email_address: support@tidal.com
+    img: tidal.png
 
-    - name: Twitch
-      url: https://www.twitch.tv/
-      img: twitch.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.twitch.tv/s/article/two-factor-authentication-with-authy
-      exceptions:
-          text: "To activate two factor authentication, you must provide a mobile phone number. Software authentication requires the Authy app."
+  - name: TiVo
+    url: https://www.tivo.com/
+    twitter: TiVo
+    facebook: TiVo
+    img: tivo.png
 
-    - name: Vimeo
-      url: https://vimeo.com/
-      twitter: Vimeo
-      facebook: Vimeo
-      img: vimeo.png
-      tfa: No
+  - name: Twitch
+    url: https://www.twitch.tv/
+    img: twitch.png
+    tfa:
+      - sms
+      - software
+    doc: https://help.twitch.tv/s/article/two-factor-authentication-with-authy
+    exception: To activate two factor authentication, you must provide a mobile phone
+      number. Software authentication requires the Authy app.
 
-    - name: YouTube
-      url: https://www.youtube.com/
-      img: youtube.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      phone: Yes
-      hardware: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
+  - name: Vimeo
+    url: https://vimeo.com/
+    twitter: Vimeo
+    facebook: Vimeo
+    img: vimeo.png
+
+  - name: YouTube
+    url: https://www.youtube.com/
+    img: youtube.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html

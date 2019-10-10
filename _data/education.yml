@@ -1,449 +1,422 @@
 websites:
-    - name: (ISC)2
-      url: https://www.isc2.org
-      img: isc2.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+  - name: "(ISC)2"
+    url: https://www.isc2.org
+    img: isc2.png
+    tfa:
+      - sms
+      - software
 
-    - name: AAI@EduHr
-      url: https://www.aaiedu.hr/
-      email_address: aai@srce.hr
-      img: aaieduhr.png
-      tfa: No
-      lang: hr
+  - name: AAI@EduHr
+    url: https://www.aaiedu.hr/
+    email_address: aai@srce.hr
+    img: aaieduhr.png
+    lang: hr
 
-    - name: Academic Earth
-      url: https://academicearth.org/
-      twitter: academicearth
-      facebook: academicearth
-      img: academicearth.png
-      tfa: No
+  - name: Academic Earth
+    url: https://academicearth.org/
+    twitter: academicearth
+    facebook: academicearth
+    img: academicearth.png
 
-    - name: Antagning.se
-      url: https://www.antagning.se
-      img: antagning.png
-      twitter: antagningse
-      tfa: No
+  - name: Antagning.se
+    url: https://www.antagning.se
+    img: antagning.png
+    twitter: antagningse
 
-    - name: Babbel
-      url: https://www.babbel.com
-      img: babbel.png
-      tfa: No
-      twitter: babbel
-      facebook: babbel.languages
-      email_address: support@en.babbel.com
+  - name: Babbel
+    url: https://www.babbel.com
+    img: babbel.png
+    twitter: babbel
+    facebook: babbel.languages
+    email_address: support@en.babbel.com
 
-    - name: Boston University
-      url: https://www.bu.edu
-      img: bu.png
-      tfa: Yes
-      sms: yes
-      phone: yes
-      software: yes
-      hardware: yes
-      doc: https://www.bu.edu/tech/support/duo/
+  - name: Boston University
+    url: https://www.bu.edu
+    img: bu.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://www.bu.edu/tech/support/duo/
 
-    - name: California Institute of Technology (CalTech)
-      url: https://www.caltech.edu
-      img: caltech.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-          text: "SMS-capable phone required for initial setup."
-      doc: https://imss.caltech.edu/node/1408
+  - name: California Institute of Technology (CalTech)
+    url: https://www.caltech.edu
+    img: caltech.png
+    tfa:
+      - software
+      - hardware
+    doc: https://imss.caltech.edu/node/1408
+    exception: SMS-capable phone required for initial setup.
 
-    - name: Carnegie Mellon University
-      url: https://www.cmu.edu/
-      img: cmu.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.cmu.edu/computing/services/security/identity-access/authentication/how-to/use2fa-weblogin.html
+  - name: Carnegie Mellon University
+    url: https://www.cmu.edu/
+    img: cmu.png
+    tfa:
+      - software
+      - hardware
+    doc: https://www.cmu.edu/computing/services/security/identity-access/authentication/how-to/use2fa-weblogin.html
 
-    - name: CBT Nuggets
-      url: https://www.cbtnuggets.com/
-      img: cbtnuggets.png
-      twitter: CBTNuggets
-      facebook: cbtnuggets
-      tfa: No
+  - name: CBT Nuggets
+    url: https://www.cbtnuggets.com/
+    img: cbtnuggets.png
+    twitter: CBTNuggets
+    facebook: cbtnuggets
 
-    - name: Certified Wireless Network Professional (CWNP)
-      url: https://www.cwnp.com
-      img: cwnp.png
-      tfa: No
-      twitter: CWNP
-      facebook: OfficialCWNP
-      email_address: customercare@cwnp.com
+  - name: Certified Wireless Network Professional (CWNP)
+    url: https://www.cwnp.com
+    img: cwnp.png
+    twitter: CWNP
+    facebook: OfficialCWNP
+    email_address: customercare@cwnp.com
 
-    - name: Clemson University
-      url: https://www.clemson.edu/
-      img: clemson.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://2fa.app.clemson.edu/
+  - name: Clemson University
+    url: https://www.clemson.edu/
+    img: clemson.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://2fa.app.clemson.edu/
 
-    - name: Clever
-      url: https://clever.com
-      img: clever.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.clever.com/hc/en-us/articles/202062333
+  - name: Clever
+    url: https://clever.com
+    img: clever.png
+    tfa:
+      - sms
+      - software
+    doc: https://support.clever.com/hc/en-us/articles/202062333
 
-    - name: Codecademy
-      url: https://www.codecademy.com/
-      twitter: Codecademy
-      facebook: codecademy
-      img: codecademy.png
-      tfa: No
+  - name: Codecademy
+    url: https://www.codecademy.com/
+    twitter: Codecademy
+    facebook: codecademy
+    img: codecademy.png
 
-    - name: College Of DuPage
-      url: https://www.cod.edu/
-      twitter: CollegeDuPage
-      facebook: collegeofdupage
-      email_address: studenthelp@dupage.edu
-      img: cod.png
-      tfa: No
+  - name: College Of DuPage
+    url: https://www.cod.edu/
+    twitter: CollegeDuPage
+    facebook: collegeofdupage
+    email_address: studenthelp@dupage.edu
+    img: cod.png
 
-    - name: CompTIA
-      url: https://certification.comptia.org/
-      img: comptia.png
-      tfa: No
-      twitter: CompTIA
-      facebook: CompTIA
+  - name: CompTIA
+    url: https://certification.comptia.org/
+    img: comptia.png
+    twitter: CompTIA
+    facebook: CompTIA
 
-    - name: Coursera
-      url: https://www.coursera.org/
-      twitter: coursera
-      facebook: Coursera
-      img: coursera.png
-      tfa: No
+  - name: Coursera
+    url: https://www.coursera.org/
+    twitter: coursera
+    facebook: Coursera
+    img: coursera.png
 
-    - name: CSN
-      url: https://www.csn.se
-      img: csn.png
-      tfa: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://tjanster.csn.se/bas/vanligaFragor.do
+  - name: CSN
+    url: https://www.csn.se
+    img: csn.png
+    tfa:
+      - software
+      - hardware
+    doc: https://tjanster.csn.se/bas/vanligaFragor.do
 
-    - name: Duke University
-      url: https://www.duke.edu
-      img: duke.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://idms-mfa.oit.duke.edu/mfa/help
+  - name: Duke University
+    url: https://www.duke.edu
+    img: duke.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://idms-mfa.oit.duke.edu/mfa/help
 
-    - name: Duolingo
-      url: https://www.duolingo.com
-      img: duolingo.png
-      tfa: No
-      twitter: duolingo
-      facebook: duolingo
-      email_address: support@duolingo.com
+  - name: Duolingo
+    url: https://www.duolingo.com
+    img: duolingo.png
+    twitter: duolingo
+    facebook: duolingo
+    email_address: support@duolingo.com
 
-    - name: East Carolina University
-      url: https://www.ecu.edu
-      img: ecu.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://itcs.ecu.edu/services/accounts-passwords/multi-factor-authentication/
+  - name: East Carolina University
+    url: https://www.ecu.edu
+    img: ecu.png
+    tfa:
+      - sms
+      - phone
+      - software
+    doc: https://itcs.ecu.edu/services/accounts-passwords/multi-factor-authentication/
 
-    - name: Eastern Michigan University
-      url: https://www.emich.edu
-      img: emu.png
-      tfa: Yes
-      hardware: Yes
-      software: Yes
-      exceptions:
-          text: "Available for employees"
-      doc: https://www.emich.edu/it/security/esp/duo.php
+  - name: Eastern Michigan University
+    url: https://www.emich.edu
+    img: emu.png
+    tfa:
+      - software
+      - hardware
+    doc: https://www.emich.edu/it/security/esp/duo.php
+    exception: Available for employees
 
-    - name: EC-Council
-      url: https://www.eccouncil.org
-      img: eccouncil.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      doc: https://aspen.eccouncil.org/aspen/Help/2FactorAuthentication-User_Manual.pdf
+  - name: EC-Council
+    url: https://www.eccouncil.org
+    img: eccouncil.png
+    tfa:
+      - sms
+      - email
+    doc: https://aspen.eccouncil.org/aspen/Help/2FactorAuthentication-User_Manual.pdf
 
-    - name: Edmodo
-      url: https://www.edmodo.com/
-      twitter: edmodo
-      facebook: edmodo
-      img: edmodo.png
-      tfa: No
+  - name: Edmodo
+    url: https://www.edmodo.com/
+    twitter: edmodo
+    facebook: edmodo
+    img: edmodo.png
 
-    - name: edX
-      url: https://www.edx.org/
-      img: edx.png
-      tfa: No
-      twitter: edXOnline
-      facebook: edX
-      email_address: info@edx.org
+  - name: edX
+    url: https://www.edx.org/
+    img: edx.png
+    twitter: edXOnline
+    facebook: edX
+    email_address: info@edx.org
 
-    - name: Georgia Institute of Technology
-      url: https://www.gatech.edu
-      img: gatech.png
-      tfa: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://twofactor.oit.gatech.edu
+  - name: Georgia Institute of Technology
+    url: https://www.gatech.edu
+    img: gatech.png
+    tfa:
+      - phone
+      - software
+      - hardware
+    doc: https://twofactor.oit.gatech.edu
 
-    - name: Global Information Assurance Certification (GIAC)
-      url: https://www.giac.org
-      img: giac.png
-      tfa: No
-      twitter: CertifyGIAC
-      facebook: GIAC.org
-      email_address: info@giac.org
+  - name: Global Information Assurance Certification (GIAC)
+    url: https://www.giac.org
+    img: giac.png
+    twitter: CertifyGIAC
+    facebook: GIAC.org
+    email_address: info@giac.org
 
-    - name: HackerRank
-      url: https://www.hackerrank.com
-      img: hackerrank.png
-      tfa: No
-      twitter: hackerrank
-      facebook: hackerrank
+  - name: HackerRank
+    url: https://www.hackerrank.com
+    img: hackerrank.png
+    twitter: hackerrank
+    facebook: hackerrank
 
-    - name: Harvard University
-      url: https://www.harvard.edu
-      img: harvard.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://huit.harvard.edu/twostep
+  - name: Harvard University
+    url: https://www.harvard.edu
+    img: harvard.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://huit.harvard.edu/twostep
 
-    - name: Illinois Institute Of Technology
-      url: https://web.iit.edu/
-      twitter: illinoistech
-      facebook: illinoistech
-      email_address: supportdesk@iit.edu
-      img: iit.png
-      tfa: No
-      exceptions:
-          text: "Illinois Tech uses Google Apps for Eductation for their email; so they could very easily add tfa to their email, but at the time of this commit, they have it disabled and do not plan to implement it any time soon."
+  - name: Illinois Institute Of Technology
+    url: https://web.iit.edu/
+    twitter: illinoistech
+    facebook: illinoistech
+    email_address: supportdesk@iit.edu
+    img: iit.png
+    exception: Illinois Tech uses Google Apps for Eductation for their email; so they
+      could very easily add tfa to their email, but at the time of this commit, they
+      have it disabled and do not plan to implement it any time soon.
 
-    - name: ISACA
-      url: https://www.isaca.org
-      img: isaca.png
-      tfa: No
-      twitter: ISACANews
-      facebook: ISACAHQ
+  - name: ISACA
+    url: https://www.isaca.org
+    img: isaca.png
+    twitter: ISACANews
+    facebook: ISACAHQ
 
-    - name: Karlsruher Institut für Technologie
-      url: https://www.kit.edu
-      img: kit.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.scc.kit.edu/dienste/2fa.php
+  - name: Karlsruher Institut für Technologie
+    url: https://www.kit.edu
+    img: kit.png
+    tfa:
+      - software
+      - hardware
+    doc: https://www.scc.kit.edu/dienste/2fa.php
 
-    - name: KnowBe4 
-      url: https://www.knowbe4.com/
-      img: knowbe4.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.knowbe4.com/hc/en-us/articles/225681448
+  - name: KnowBe4
+    url: https://www.knowbe4.com/
+    img: knowbe4.png
+    tfa:
+      - software
+    doc: https://support.knowbe4.com/hc/en-us/articles/225681448
 
-    - name: Massachusetts Institute of Technology
-      url: https://web.mit.edu/
-      img: mit.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://kb.mit.edu/confluence/display/istcontrib/Duo+Authentication+Landing+Page
+  - name: Massachusetts Institute of Technology
+    url: https://web.mit.edu/
+    img: mit.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://kb.mit.edu/confluence/display/istcontrib/Duo+Authentication+Landing+Page
 
-    - name: Miami University
-      url: https://miamioh.edu/
-      img: miamioh.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: yes
-      software: yes
-      doc: https://miamioh.edu/it-services/initiatives-and-projects/info-security/duo/
+  - name: Miami University
+    url: https://miamioh.edu/
+    img: miamioh.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://miamioh.edu/it-services/initiatives-and-projects/info-security/duo/
 
-    - name: Montclair State University
-      url: https://www.montclair.edu/employee-services/
-      twitter: montclairstateu
-      img: montclair.png
-      tfa: No
+  - name: Montclair State University
+    url: https://www.montclair.edu/employee-services/
+    twitter: montclairstateu
+    img: montclair.png
 
-    - name: My Study Life
-      url: https://www.mystudylife.com/
-      twitter: mystudylife
-      facebook: mystudylife
-      img: mystudylife.png
-      tfa: No
+  - name: My Study Life
+    url: https://www.mystudylife.com/
+    twitter: mystudylife
+    facebook: mystudylife
+    img: mystudylife.png
 
-    - name: Pennsylvania State University
-      url: https://www.psu.edu/
-      img: psu.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.identity.psu.edu/services/authentication-services/two-factor/
-      
-    - name: Pluralsight
-      url: https://www.pluralsight.com
-      img: pluralsight.png
-      tfa: No
-      twitter: pluralsight
-      facebook: pluralsight
-      email_address: support@pluralsight.com
+  - name: Pennsylvania State University
+    url: https://www.psu.edu/
+    img: psu.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://www.identity.psu.edu/services/authentication-services/two-factor/
 
-    - name: Purdue University
-      url: https://www.purdue.edu/
-      img: purdue.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.purdue.edu/securepurdue/iamoServices/BoilerKey.php
+  - name: Pluralsight
+    url: https://www.pluralsight.com
+    img: pluralsight.png
+    twitter: pluralsight
+    facebook: pluralsight
+    email_address: support@pluralsight.com
 
-    - name: PushCoin
-      url: https://pushcoin.com
-      img: pushcoin.png
-      tfa: Yes
-      hardware: Yes
-      exceptions:
-          text: "U2F support only for school admin accounts. 2FA for parent accounts is in progress."
-      doc: http://knowhow.pushcoin.com/using-security-key-for-2-step-verification/
+  - name: Purdue University
+    url: https://www.purdue.edu/
+    img: purdue.png
+    tfa:
+      - software
+      - hardware
+    doc: https://www.purdue.edu/securepurdue/iamoServices/BoilerKey.php
 
-    - name: Robert Morris University
-      url: https://sentry.rmu.edu/login
-      twitter: RMU
-      facebook: RMUpgh
-      img: rmu.png
-      tfa: No
+  - name: PushCoin
+    url: https://pushcoin.com
+    img: pushcoin.png
+    tfa:
+      - hardware
+    doc: http://knowhow.pushcoin.com/using-security-key-for-2-step-verification/
+    exception: U2F support only for school admin accounts. 2FA for parent accounts is
+      in progress.
 
-    - name: Royal Roads University
-      url: http://www.royalroads.ca
-      twitter: RoyalRoads
-      facebook: royalroadsu
-      img: royalroads.png
-      tfa: No
-      
-    - name: Ryerson University
-      url: https://www.ryerson.ca
-      tfa: Yes
-      img: ryerson.png
-      hardware: Yes
-      software: Yes
-      doc: https://www.ryerson.ca/ccs/services/ITSecurity/protecting-your-identity/two-factor-authentication/
+  - name: Robert Morris University
+    url: https://sentry.rmu.edu/login
+    twitter: RMU
+    facebook: RMUpgh
+    img: rmu.png
 
-    - name: SchoolSoft
-      url: https://www.schoolsoft.se/
-      img: schoolsoft.png
-      email_address: support@schoolsoft.se
-      tfa: No
+  - name: Royal Roads University
+    url: http://www.royalroads.ca
+    twitter: RoyalRoads
+    facebook: royalroadsu
+    img: royalroads.png
 
-    - name: Stanford University
-      url: https://www.stanford.edu/
-      img: stanford.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://uit.stanford.edu/service/webauth/twostep
+  - name: Ryerson University
+    url: https://www.ryerson.ca
+    tfa:
+      - software
+      - hardware
+    img: ryerson.png
+    doc: https://www.ryerson.ca/ccs/services/ITSecurity/protecting-your-identity/two-factor-authentication/
 
-    - name: Temple University
-      url: https://www.temple.edu/
-      img: templeuniversity.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://its.temple.edu/two-step-verification
+  - name: SchoolSoft
+    url: https://www.schoolsoft.se/
+    img: schoolsoft.png
+    email_address: support@schoolsoft.se
 
-    - name: Udacity
-      url: https://www.udacity.com/
-      twitter: udacity
-      facebook: Udacity
-      img: udacity.png
-      tfa: No
+  - name: Stanford University
+    url: https://www.stanford.edu/
+    img: stanford.png
+    tfa:
+      - sms
+      - phone
+      - software
+    doc: https://uit.stanford.edu/service/webauth/twostep
 
-    - name: Udemy
-      url: https://www.udemy.com/
-      img: udemy.png
-      tfa: No
-      twitter: udemy
-      facebook: udemy
-      email_address: support@udemy.com
+  - name: Temple University
+    url: https://www.temple.edu/
+    img: templeuniversity.png
+    tfa:
+      - sms
+      - phone
+      - software
+    doc: https://its.temple.edu/two-step-verification
 
-    - name: University of Idaho
-      url: https://www.uidaho.edu
-      img: uidaho.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://support.uidaho.edu/TDClient/KB/ArticleDet?ID=109
+  - name: Udacity
+    url: https://www.udacity.com/
+    twitter: udacity
+    facebook: Udacity
+    img: udacity.png
 
-    - name: University of Michigan
-      url: https://www.umich.edu
-      img: umich.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://www.safecomputing.umich.edu/two-factor-authentication
+  - name: Udemy
+    url: https://www.udemy.com/
+    img: udemy.png
+    twitter: udemy
+    facebook: udemy
+    email_address: support@udemy.com
 
-    - name: University of Notre Dame
-      url: https://www.nd.edu
-      img: nd.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://oit.nd.edu/services/accounts/okta-account-services-and-two-step-login/
+  - name: University of Idaho
+    url: https://www.uidaho.edu
+    img: uidaho.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://support.uidaho.edu/TDClient/KB/ArticleDet?ID=109
 
-    - name: University of Washington
-      url: https://www.washington.edu/
-      img: uw.png
-      tfa: Yes
-      phone: Yes
-      hardware: Yes
-      software: Yes
-      exceptions:
-          text: "Available for employees only"
-      doc: https://itconnect.uw.edu/security/uw-netids/2fa/
+  - name: University of Michigan
+    url: https://www.umich.edu
+    img: umich.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://www.safecomputing.umich.edu/two-factor-authentication
 
-    - name: Virginia Commonwealth University
-      url: https://www.vcu.edu
-      img: vcu.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://ts.vcu.edu/askit/essential-computing/information-security/2factor/
+  - name: University of Notre Dame
+    url: https://www.nd.edu
+    img: nd.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://oit.nd.edu/services/accounts/okta-account-services-and-two-step-login/
 
-    - name: Virginia Tech
-      url: https://www.vt.edu/
-      img: virginiatech.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.tech.it.vt.edu/2factor/
+  - name: University of Washington
+    url: https://www.washington.edu/
+    img: uw.png
+    tfa:
+      - phone
+      - software
+      - hardware
+    doc: https://itconnect.uw.edu/security/uw-netids/2fa/
+    exception: Available for employees only
+
+  - name: Virginia Commonwealth University
+    url: https://www.vcu.edu
+    img: vcu.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://ts.vcu.edu/askit/essential-computing/information-security/2factor/
+
+  - name: Virginia Tech
+    url: https://www.vt.edu/
+    img: virginiatech.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://www.tech.it.vt.edu/2factor/

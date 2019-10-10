@@ -1,572 +1,549 @@
 websites:
-    - name: 007Names
-      url: https://www.007names.com
-      img: 007names.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.007names.com/info/two-step.xhtml
-
-    - name: 1&amp;1 IONOS
-      url: https://www.ionos.com/
-      img: 1and1.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.ionos.com/help/index.php?id=3269
-
-    - name: 101domain
-      url: https://101domain.com
-      img: 101domain.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.101domain.com/vip_security_card.htm
-
-    - name: 10Dollar
-      url: https://10dollar.ca/
-      img: 10dollar.png
-      twitter: 10dollar_ca
-      facebook: 10dollar.ca
-      tfa: No
-
-    - name: 123 Reg
-      url: https://www.123-reg.co.uk
-      img: 123reg.png
-      tfa: No
-      twitter: 123reg
-      facebook: 123regfans
-
-    - name: 20i
-      url: https://www.20i.com
-      img: 20i.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.20i.com/support/my-services/two-factor-authentication-my20i
-
-    - name: Above.com
-      url: https://www.above.com
-      img: above.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.above.com/manual/my-account-manual-two-step-auth.html
-
-    - name: ClouDNS
-      url: https://www.cloudns.net/
-      img: cloudns.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.cloudns.net/wiki/article/201/
-
-    - name: Crazy Domains
-      url: https://www.crazydomains.com
-      img: crazydomains.png
-      tfa: No
-      twitter: CrazyDomains
-      facebook: crazydomains
-
-    - name: Directnic
-      url: https://directnic.com
-      img: directnic.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://directnic.com/knowledge/article/137:how+do+i+set+up+two-factor+authentication%3F
-
-    - name: DNS Made Easy
-      url: https://www.dnsmadeeasy.com
-      img: dnsmadeeasy.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.dnsmadeeasy.com/administrative/enable-two-factor-authentication/
-
-    - name: DNSimple
-      url: https://dnsimple.com/
-      img: dnsimple.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.dnsimple.com/articles/two-factor-authentication/
-
-    - name: Domain.com
-      url: https://www.domain.com/
-      twitter: Domaindotcom
-      facebook: Domaindotcom
-      img: domaindotcom.png
-      tfa: No
-
-    - name: domainFACTORY
-      url: https://www.df.eu
-      img: domainfactory.png
-      twitter: DomainFactory
-      facebook: domainfactory.GmbH
-      tfa: No
-      lang: de
-
-    - name: Domains4Bitcoins.com
-      url: https://www.domains4bitcoins.com
-      img: domains4bitcoins.png
-      tfa: Yes
-      sms: Yes
-      doc: https://my.domains4bitcoins.com/kb/answer/2692
-
-    - name: DomainTools
-      url: https://www.domaintools.com/
-      twitter: DomainTools
-      facebook: domaintoolsllc
-      email_address: memberservices@domaintools.com
-      img: domaintools.png
-      tfa: No
-
-    - name: Domeneshop
-      url: https://domeneshop.no/
-      img: domeneshop.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-        text: "SMS available only to customers in Norway, Sweden and Denmark."
-      doc: https://domeneshop.no/faq?id=344
-
-    - name: Domeny.tv
-      url: https://www.domeny.tv/en
-      img: domenytv.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.domeny.tv/en/two-factor-authentication
-
-    - name: Dyn
-      url: https://dyn.com/
-      img: dyn.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-        text: "Currently only supported for the Managed DNS & Email Delivery platforms (via DynID). Eventually DynID (and 2FA) will be rolled out to all platforms (no ETA)."
-      doc: https://help.dyn.com/2-factor-authentication/
-
-    - name: Dynadot
-      url: https://dynadot.com/
-      img: dynadot.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://dynadot.com/domain/security.html
-
-    - name: Dynu
-      url: https://www.dynu.com/
-      img: dynu.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.dynu.com/en-US/Blog/Article?Article=It-is-time-to-enable-two-factor-authentication
-
-    - name: easyDNS
-      url: https://easydns.com
-      img: easydns.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      doc: https://kb.easydns.com/knowledge/account-security/
-
-    - name: eNom
-      url: https://www.enom.com/
-      img: enom.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.enom.com/kb/kb/kb_1687-setup-2-factor.htm
-
-    - name: Epik
-      url: https://www.epik.com
-      img: epik.png
-      tfa: Yes
-      sms: Yes
-      doc: https://www.epik.com/support/knowledgebase/enabling-disabling-mobile-2-factor-authentication/
-
-    - name: EuroDNS
-      url: https://www.eurodns.com
-      img: eurodns.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.eurodns.com/customer/en/portal/articles/1633106
-
-    - name: Fabulous
-      url: https://fabulous.com
-      img: fabulous.png
-      tfa: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://fabulous.com/knowledge/article/137
-
-    - name: Fasthosts
-      url: https://www.fasthosts.co.uk/
-      twitter: Fasthosts
-      facebook: fasthostsinternet
-      img: fasthosts.png
-      tfa: No
-
-    - name: FreeDNS
-      url: https://freedns.afraid.org/
-      email_address: dnsadmin@afraid.org
-      img: freedns.png
-      tfa: No
-
-    - name: Gandi
-      url: https://gandi.net
-      img: gandi.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://docs.gandi.net/en/account_management/security/
-
-    - name: GoDaddy
-      img: godaddy.png
-      url: https://www.godaddy.com/
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.godaddy.com/help/enable-two-step-verification-7502
-
-    - name: Google Domains
-      url: https://domains.google.com
-      img: googledomains.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.google.com/intl/en-US/landing/2step/features.html
-
-    - name: Heart Internet
-      url: https://www.heartinternet.uk/
-      img: heartinternet.png
-      tfa: No
-      twitter: HeartInternet
-      facebook: heartinternet
-
-    - name: Hexonet
-      url: https://www.hexonet.net/
-      img: hexonet.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.hexonet.net/assets/pdf/2FA.pdf
-
-    - name: Hover.com
-      img: hover.png
-      url: https://www.hover.com/
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.hover.com/hc/en-us/articles/217282267
-
-    - name: Hurricane Electric
-      url: https://www.he.net/
-      img: hurricane.png
-      tfa: Yes
-      software: Yes
-
-    - name: Incapsula
-      url: https://www.incapsula.com/
-      img: incapsula.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      sms: Yes
-      doc: https://docs.incapsula.com/Content/management-console-and-settings/account-settings.htm
-
-    - name: Internet.bs
-      url: https://www.internet.bs
-      img: internetbs.png
-      tfa: Yes
-      software: Yes
-      doc: /notes/internetbs/
-
-    - name: INWX
-      url: https://www.inwx.com/en/
-      img: internetworx.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.inwx.com/en/offer/mobiletan
-
-    - name: iWantMyName
-      url: https://iwantmyname.com/
-      img: iwantmyname.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.iwantmyname.com/customer/portal/articles/1139898
-
-    - name: Joker.com
-      url: https://joker.com
-      img: joker.png
-      tfa: Yes
-      software: Yes
-      doc: https://joker.com/faq/content/52/480/en/what-is-two_factor_authentication.html
-
-    - name: Loopia
-      url: https://www.loopia.se/
-      img: loopia.png
-      tfa: Yes
-      software: Yes
-      doc: https://blogg.loopia.se/2015/03/16/nu-kan-du-logga-in-med-tvafaktorsautentiering-hos-loopia-genom-bankid/
-      exceptions:
-          text: "TFA only available for Swedish residents with BankID."
-
-    - name: MarkMonitor
-      url: https://www.markmonitor.com
-      img: markmonitor.png
-      tfa: Yes
-      hardware: Yes
-      sms: Yes
-      software: Yes
-
-    - name: Metaname
-      url: https://metaname.net/
-      img: metaname.png
-      tfa: Yes
-      sms: Yes
-      doc: https://metaname.net/public/two_factor_authentication
-
-    - name: Moniker
-      url: https://www.moniker.com/
-      img: moniker.png
-      tfa: Yes
-      software: Yes
-      email: Yes
-      doc: https://faq.moniker.com/login-into-moniker
-
-    - name: MyDomain
-      url: https://www.mydomain.com/
-      twitter: MyDomaindotcom
-      facebook: mydomain
-      img: mydomain.png
-      tfa: No
-
-    - name: Name.com
-      url: https://www.name.com/
-      img: namecom.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.name.com/services/two-step-verification
-
-    - name: Namecheap
-      url: https://www.namecheap.com/
-      img: namecheap.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45
-
-    - name: NameSilo.com
-      url: https://www.namesilo.com/
-      img: namesilo.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.namesilo.com/Support/2~Factor-Authentication
-
-    - name: NamesPro.ca
-      url: https://www.namespro.ca/
-      twitter: Namespro
-      facebook: namespro
-      img: namespro.png
-      tfa: No
-
-    - name: NearlyFreeSpeech.net
-      url: https://www.nearlyfreespeech.net/
-      img: nfsn.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
-
-    - name: Netfirms
-      url: https://www.netfirms.com
-      twitter: Netfirms
-      facebook: netfirmsfans
-      img: netfirms.png
-      tfa: No
-
-    - name: Netim
-      url: https://www.netim.com/
-      twitter: Netim_com
-      facebook: netimcom
-      img: netim.png
-      tfa: No
-
-    - name: Netregistry
-      url: https://www.netregistry.com.au/
-      twitter: netregistry
-      facebook: netregistry
-      img: netregistry.png
-      tfa: No
-
-    - name: Network Solutions
-      url: https://www.networksolutions.com/
-      twitter: netsolcares
-      facebook: Web.com
-      img: networksolutions.png
-      tfa: No
-
-    - name: No-IP
-      url: https://www.noip.com/
-      img: noip.png
-      tfa: No
-      twitter: NoIPcom
-      facebook: noipdns
-
-    - name: Nominet
-      url: https://www.nominet.uk/
-      img: nominet.png
-      tfa: Yes
-      software: Yes
-      doc: https://registrars.nominet.org.uk/sites/default/files/two_factor_authentication_userguide.pdf
-
-    - name: NS1
-      url: https://ns1.com/
-      img: ns1.png
-      tfa: Yes
-      software: Yes
-      doc: https://ns1.com/articles/enabling-2-factor-authentication
-
-    - name: OpenDNS
-      url: https://www.opendns.com/
-      img: opendns.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "Only available for enterprise accounts."
-      doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
-
-    - name: Openprovider
-      url: https://www.openprovider.co.uk
-      img: openprovider.png
-      tfa: Yes
-      software: Yes
-
-    - name: OpenSRS
-      url: https://opensrs.com
-      img: opensrs.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      doc: https://help.opensrs.com/hc/en-us/articles/209618017
-
-    - name: pair Domains
-      url: https://www.pairdomains.com/
-      img: pairdomains.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      doc: https://www.pairdomains.com/kb/posts/345
-
-    - name: PointDNS
-      url: https://pointhq.com/
-      twitter: pointdns
-      img: pointdns.png
-      tfa: No
-
-    - name: Porkbun
-      url: https://porkbun.com
-      img: porkbun.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://kb.porkbun.com/category/20--
-
-    - name: Rebel.com
-      url: https://www.rebel.com/
-      twitter: rebeldotcom
-      facebook: rebeldotcomhosting
-      img: rebel.png
-      tfa: No
-      
-    - name: Rebrandly
-      url: https://rebrandly.com
-      img: rebrandly.png
-      tfa: Yes 
-      software: Yes
-      doc: https://support.rebrandly.com/hc/en-us/articles/360007220373
-
-    - name: Register4Less
-      url: https://register4less.com/
-      img: register4less.png
-      tfa: Yes
-      software: Yes
-      doc: https://blog.register4less.com/two-factor-authentication/
-
-    - name: Registro.br
-      url: https://registro.br
-      img: registrobr.png
-      tfa: Yes
-      hardware: Yes
-      software: Yes
-      doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
-
-    - name: STRATO
-      url: https://www.strato.de/
-      twitter: STRATO_AG
-      facebook: strato
-      img: strato.png
-      tfa: No
-      lang: de
-
-    - name: Synergy Wholesale
-      url: https://synergywholesale.com/
-      img: synergywholesale.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      software: Yes
-      doc: https://synergywholesale.com/faq/article/can-i-enable-two-factor-authentication-on-my-wholesale-system-account/
-    
-    - name: UK2
-      url: https://www.uk2.net/
-      img: uk2.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      doc: https://www.uk2.net/knowledgebase/display/UK2/Two+Factor+Authentication+Security+-+2FA
-
-    - name: Uniregistry
-      url: https://uniregistry.com/
-      img: uniregistry.png
-      tfa: Yes
-      software: Yes
-      doc: https://uniregistry.help/my-account-en/what-is-two-step-verification/
-
-    - name: United Domains USA
-      url: https://www.uniteddomains.com/
-      img: uniteddomains-usa.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.uniteddomains.com/hc/en-us/articles/115001458813
-
-    - name: united-domains Reselling
-      url: https://www.ud-reselling.com/en/
-      img: udreselling.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.ud-reselling.com/en/security/
-
-    - name: united-domains.de
-      url: https://www.united-domains.de/
-      img: united-domains.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.united-domains.de/faq-article/wie-aktiviere-ich-die-zweistufige-verifizierung-und-mache-mein-portfolio-login-sicherer
-      exceptions:
-        text: "A phone number is required to enable two-factor authentication."
-
-    - name: VentraIP
-      url: https://ventraip.com.au/
-      img: ventraip.png
-      tfa: Yes
-      software: Yes
-      sms: Yes
-      email: Yes
-      doc: https://ventraip.com.au/faq/article/two-factor-authentication-faq-vipcontrol/
-
-    - name: Verio
-      url: https://www.verio.com/
-      twitter: verio
-      img: verio.png
-      tfa: No
+  - name: 007Names
+    url: https://www.007names.com
+    img: 007names.png
+    tfa:
+      - software
+    doc: https://www.007names.com/info/two-step.xhtml
+
+  - name: 1&amp;1 IONOS
+    url: https://www.ionos.com/
+    img: 1and1.png
+    tfa:
+      - software
+    doc: https://www.ionos.com/help/index.php?id=3269
+
+  - name: 101domain
+    url: https://101domain.com
+    img: 101domain.png
+    tfa:
+      - software
+      - hardware
+    doc: https://www.101domain.com/vip_security_card.htm
+
+  - name: 10Dollar
+    url: https://10dollar.ca/
+    img: 10dollar.png
+    twitter: 10dollar_ca
+    facebook: 10dollar.ca
+
+  - name: 123 Reg
+    url: https://www.123-reg.co.uk
+    img: 123reg.png
+    twitter: 123reg
+    facebook: 123regfans
+
+  - name: 20i
+    url: https://www.20i.com
+    img: 20i.png
+    tfa:
+      - software
+    doc: https://www.20i.com/support/my-services/two-factor-authentication-my20i
+
+  - name: Above.com
+    url: https://www.above.com
+    img: above.png
+    tfa:
+      - software
+    doc: https://www.above.com/manual/my-account-manual-two-step-auth.html
+
+  - name: ClouDNS
+    url: https://www.cloudns.net/
+    img: cloudns.png
+    tfa:
+      - software
+    doc: https://www.cloudns.net/wiki/article/201/
+
+  - name: Crazy Domains
+    url: https://www.crazydomains.com
+    img: crazydomains.png
+    twitter: CrazyDomains
+    facebook: crazydomains
+
+  - name: Directnic
+    url: https://directnic.com
+    img: directnic.png
+    tfa:
+      - software
+      - hardware
+    doc: https://directnic.com/knowledge/article/137:how+do+i+set+up+two-factor+authentication%3F
+
+  - name: DNS Made Easy
+    url: https://www.dnsmadeeasy.com
+    img: dnsmadeeasy.png
+    tfa:
+      - software
+    doc: https://help.dnsmadeeasy.com/administrative/enable-two-factor-authentication/
+
+  - name: DNSimple
+    url: https://dnsimple.com/
+    img: dnsimple.png
+    tfa:
+      - software
+    doc: https://support.dnsimple.com/articles/two-factor-authentication/
+
+  - name: Domain.com
+    url: https://www.domain.com/
+    twitter: Domaindotcom
+    facebook: Domaindotcom
+    img: domaindotcom.png
+
+  - name: domainFACTORY
+    url: https://www.df.eu
+    img: domainfactory.png
+    twitter: DomainFactory
+    facebook: domainfactory.GmbH
+    lang: de
+
+  - name: Domains4Bitcoins.com
+    url: https://www.domains4bitcoins.com
+    img: domains4bitcoins.png
+    tfa:
+      - sms
+    doc: https://my.domains4bitcoins.com/kb/answer/2692
+
+  - name: DomainTools
+    url: https://www.domaintools.com/
+    twitter: DomainTools
+    facebook: domaintoolsllc
+    email_address: memberservices@domaintools.com
+    img: domaintools.png
+
+  - name: Domeneshop
+    url: https://domeneshop.no/
+    img: domeneshop.png
+    tfa:
+      - sms
+      - software
+    doc: https://domeneshop.no/faq?id=344
+    exception: SMS available only to customers in Norway, Sweden and Denmark.
+
+  - name: Domeny.tv
+    url: https://www.domeny.tv/en
+    img: domenytv.png
+    tfa:
+      - software
+    doc: https://www.domeny.tv/en/two-factor-authentication
+
+  - name: Dyn
+    url: https://dyn.com/
+    img: dyn.png
+    tfa:
+      - sms
+      - software
+    doc: https://help.dyn.com/2-factor-authentication/
+    exception: Currently only supported for the Managed DNS & Email Delivery platforms
+      (via DynID). Eventually DynID (and 2FA) will be rolled out to all platforms (no
+      ETA).
+
+  - name: Dynadot
+    url: https://dynadot.com/
+    img: dynadot.png
+    tfa:
+      - sms
+      - software
+    doc: https://dynadot.com/domain/security.html
+
+  - name: Dynu
+    url: https://www.dynu.com/
+    img: dynu.png
+    tfa:
+      - software
+    doc: https://www.dynu.com/en-US/Blog/Article?Article=It-is-time-to-enable-two-factor-authentication
+
+  - name: easyDNS
+    url: https://easydns.com
+    img: easydns.png
+    tfa:
+      - sms
+      - email
+      - software
+    doc: https://kb.easydns.com/knowledge/account-security/
+
+  - name: eNom
+    url: https://www.enom.com/
+    img: enom.png
+    tfa:
+      - software
+    doc: https://www.enom.com/kb/kb/kb_1687-setup-2-factor.htm
+
+  - name: Epik
+    url: https://www.epik.com
+    img: epik.png
+    tfa:
+      - sms
+    doc: https://www.epik.com/support/knowledgebase/enabling-disabling-mobile-2-factor-authentication/
+
+  - name: EuroDNS
+    url: https://www.eurodns.com
+    img: eurodns.png
+    tfa:
+      - software
+    doc: https://help.eurodns.com/customer/en/portal/articles/1633106
+
+  - name: Fabulous
+    url: https://fabulous.com
+    img: fabulous.png
+    tfa:
+      - software
+      - hardware
+    doc: https://fabulous.com/knowledge/article/137
+
+  - name: Fasthosts
+    url: https://www.fasthosts.co.uk/
+    twitter: Fasthosts
+    facebook: fasthostsinternet
+    img: fasthosts.png
+
+  - name: FreeDNS
+    url: https://freedns.afraid.org/
+    email_address: dnsadmin@afraid.org
+    img: freedns.png
+
+  - name: Gandi
+    url: https://gandi.net
+    img: gandi.png
+    tfa:
+      - software
+      - hardware
+    doc: https://docs.gandi.net/en/account_management/security/
+
+  - name: GoDaddy
+    img: godaddy.png
+    url: https://www.godaddy.com/
+    tfa:
+      - sms
+      - software
+      - hardware
+    doc: https://www.godaddy.com/help/enable-two-step-verification-7502
+
+  - name: Google Domains
+    url: https://domains.google.com
+    img: googledomains.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html
+
+  - name: Heart Internet
+    url: https://www.heartinternet.uk/
+    img: heartinternet.png
+    twitter: HeartInternet
+    facebook: heartinternet
+
+  - name: Hexonet
+    url: https://www.hexonet.net/
+    img: hexonet.png
+    tfa:
+      - software
+    doc: https://www.hexonet.net/assets/pdf/2FA.pdf
+
+  - name: Hover.com
+    img: hover.png
+    url: https://www.hover.com/
+    tfa:
+      - sms
+      - software
+    doc: https://help.hover.com/hc/en-us/articles/217282267
+
+  - name: Hurricane Electric
+    url: https://www.he.net/
+    img: hurricane.png
+    tfa:
+      - software
+
+  - name: Incapsula
+    url: https://www.incapsula.com/
+    img: incapsula.png
+    tfa:
+      - sms
+      - email
+      - software
+    doc: https://docs.incapsula.com/Content/management-console-and-settings/account-settings.htm
+
+  - name: Internet.bs
+    url: https://www.internet.bs
+    img: internetbs.png
+    tfa:
+      - software
+    doc: "/notes/internetbs/"
+
+  - name: INWX
+    url: https://www.inwx.com/en/
+    img: internetworx.png
+    tfa:
+      - software
+    doc: https://www.inwx.com/en/offer/mobiletan
+
+  - name: iWantMyName
+    url: https://iwantmyname.com/
+    img: iwantmyname.png
+    tfa:
+      - software
+    doc: https://help.iwantmyname.com/customer/portal/articles/1139898
+
+  - name: Joker.com
+    url: https://joker.com
+    img: joker.png
+    tfa:
+      - software
+    doc: https://joker.com/faq/content/52/480/en/what-is-two_factor_authentication.html
+
+  - name: Loopia
+    url: https://www.loopia.se/
+    img: loopia.png
+    tfa:
+      - software
+    doc: https://blogg.loopia.se/2015/03/16/nu-kan-du-logga-in-med-tvafaktorsautentiering-hos-loopia-genom-bankid/
+    exception: TFA only available for Swedish residents with BankID.
+
+  - name: MarkMonitor
+    url: https://www.markmonitor.com
+    img: markmonitor.png
+    tfa:
+      - sms
+      - software
+      - hardware
+
+  - name: Metaname
+    url: https://metaname.net/
+    img: metaname.png
+    tfa:
+      - sms
+    doc: https://metaname.net/public/two_factor_authentication
+
+  - name: Moniker
+    url: https://www.moniker.com/
+    img: moniker.png
+    tfa:
+      - email
+      - software
+    doc: https://faq.moniker.com/login-into-moniker
+
+  - name: MyDomain
+    url: https://www.mydomain.com/
+    twitter: MyDomaindotcom
+    facebook: mydomain
+    img: mydomain.png
+
+  - name: Name.com
+    url: https://www.name.com/
+    img: namecom.png
+    tfa:
+      - software
+    doc: https://www.name.com/services/two-step-verification
+
+  - name: Namecheap
+    url: https://www.namecheap.com/
+    img: namecheap.png
+    tfa:
+      - sms
+      - software
+      - hardware
+    doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45
+
+  - name: NameSilo.com
+    url: https://www.namesilo.com/
+    img: namesilo.png
+    tfa:
+      - software
+    doc: https://www.namesilo.com/Support/2~Factor-Authentication
+
+  - name: NamesPro.ca
+    url: https://www.namespro.ca/
+    twitter: Namespro
+    facebook: namespro
+    img: namespro.png
+
+  - name: NearlyFreeSpeech.net
+    url: https://www.nearlyfreespeech.net/
+    img: nfsn.png
+    tfa:
+      - sms
+      - software
+    doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
+
+  - name: Netfirms
+    url: https://www.netfirms.com
+    twitter: Netfirms
+    facebook: netfirmsfans
+    img: netfirms.png
+
+  - name: Netim
+    url: https://www.netim.com/
+    twitter: Netim_com
+    facebook: netimcom
+    img: netim.png
+
+  - name: Netregistry
+    url: https://www.netregistry.com.au/
+    twitter: netregistry
+    facebook: netregistry
+    img: netregistry.png
+
+  - name: Network Solutions
+    url: https://www.networksolutions.com/
+    twitter: netsolcares
+    facebook: Web.com
+    img: networksolutions.png
+
+  - name: No-IP
+    url: https://www.noip.com/
+    img: noip.png
+    twitter: NoIPcom
+    facebook: noipdns
+
+  - name: Nominet
+    url: https://www.nominet.uk/
+    img: nominet.png
+    tfa:
+      - software
+    doc: https://registrars.nominet.org.uk/sites/default/files/two_factor_authentication_userguide.pdf
+
+  - name: NS1
+    url: https://ns1.com/
+    img: ns1.png
+    tfa:
+      - software
+    doc: https://ns1.com/articles/enabling-2-factor-authentication
+
+  - name: OpenDNS
+    url: https://www.opendns.com/
+    img: opendns.png
+    tfa:
+      - sms
+      - software
+    doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
+    exception: Only available for enterprise accounts.
+
+  - name: Openprovider
+    url: https://www.openprovider.co.uk
+    img: openprovider.png
+    tfa:
+      - software
+
+  - name: OpenSRS
+    url: https://opensrs.com
+    img: opensrs.png
+    tfa:
+      - sms
+      - software
+    doc: https://help.opensrs.com/hc/en-us/articles/209618017
+
+  - name: pair Domains
+    url: https://www.pairdomains.com/
+    img: pairdomains.png
+    tfa:
+      - sms
+      - software
+    doc: https://www.pairdomains.com/kb/posts/345
+
+  - name: PointDNS
+    url: https://pointhq.com/
+    twitter: pointdns
+    img: pointdns.png
+
+  - name: Porkbun
+    url: https://porkbun.com
+    img: porkbun.png
+    tfa:
+      - software
+      - hardware
+    doc: https://kb.porkbun.com/category/20--
+
+  - name: Rebel.com
+    url: https://www.rebel.com/
+    twitter: rebeldotcom
+    facebook: rebeldotcomhosting
+    img: rebel.png
+
+  - name: Rebrandly
+    url: https://rebrandly.com
+    img: rebrandly.png
+    tfa:
+      - software
+    doc: https://support.rebrandly.com/hc/en-us/articles/360007220373
+
+  - name: Register4Less
+    url: https://register4less.com/
+    img: register4less.png
+    tfa:
+      - software
+    doc: https://blog.register4less.com/two-factor-authentication/
+
+  - name: Registro.br
+    url: https://registro.br
+    img: registrobr.png
+    tfa:
+      - software
+      - hardware
+    doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
+
+  - name: STRATO
+    url: https://www.strato.de/
+    twitter: STRATO_AG
+    facebook: strato
+    img: strato.png
+    lang: de
+
+  - name: Synergy Wholesale
+    url: https://synergywholesale.com/
+    img: synergywholesale.png
+    tfa:
+      - sms
+      - email
+      - software
+    doc: https://synergywholesale.com/faq/article/can-i-enable-two-factor-authentication-on-my-wholesale-system-account/
+
+  - name: UK2
+    url: https://www.uk2.net/
+    img: uk2.png
+    tfa:
+      - sms
+      - software
+    doc: https://www.uk2.net/knowledgebase/display/UK2/Two+Factor+Authentication+Security+-+2FA
+
+  - name: Uniregistry
+    url: https://uniregistry.com/
+    img: uniregistry.png
+    tfa:
+      - software
+    doc: https://uniregistry.help/my-account-en/what-is-two-step-verification/
+
+  - name: United Domains USA
+    url: https://www.uniteddomains.com/
+    img: uniteddomains-usa.png
+    tfa:
+      - software
+    doc: https://help.uniteddomains.com/hc/en-us/articles/115001458813
+
+  - name: united-domains Reselling
+    url: https://www.ud-reselling.com/en/
+    img: udreselling.png
+    tfa:
+      - software
+    doc: https://www.ud-reselling.com/en/security/
+
+  - name: united-domains.de
+    url: https://www.united-domains.de/
+    img: united-domains.png
+    tfa:
+      - software
+    doc: https://help.united-domains.de/faq-article/wie-aktiviere-ich-die-zweistufige-verifizierung-und-mache-mein-portfolio-login-sicherer
+    exception: A phone number is required to enable two-factor authentication.
+
+  - name: VentraIP
+    url: https://ventraip.com.au/
+    img: ventraip.png
+    tfa:
+      - sms
+      - email
+      - software
+    doc: https://ventraip.com.au/faq/article/two-factor-authentication-faq-vipcontrol/
+
+  - name: Verio
+    url: https://www.verio.com/
+    twitter: verio
+    img: verio.png

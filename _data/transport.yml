@@ -1,281 +1,243 @@
 websites:
-    - name: Air Canada
-      url: https://www.aircanada.com/
-      twitter: AirCanada
-      facebook: aircanada
-      img: aircanada.png
-      tfa: No
+  - name: Air Canada
+    url: https://www.aircanada.com/
+    twitter: AirCanada
+    facebook: aircanada
+    img: aircanada.png
 
-    - name: Air France
-      url: https://www.airfrance.com
-      twitter: airfrance
-      facebook: airfrance
-      img: airfrance.png
-      tfa: No
+  - name: Air France
+    url: https://www.airfrance.com
+    twitter: airfrance
+    facebook: airfrance
+    img: airfrance.png
 
-    - name: Alaska Airlines
-      url: https://www.alaskaair.com
-      twitter: AlaskaAir
-      facebook: alaskaairlines
-      img: alaska.png
-      tfa: No
+  - name: Alaska Airlines
+    url: https://www.alaskaair.com
+    twitter: AlaskaAir
+    facebook: alaskaairlines
+    img: alaska.png
 
-    - name: American Airlines
-      url: https://www.aa.com/
-      twitter: AmericanAir
-      facebook: AmericanAirlines
-      img: aa.png
-      tfa: No
+  - name: American Airlines
+    url: https://www.aa.com/
+    twitter: AmericanAir
+    facebook: AmericanAirlines
+    img: aa.png
 
-    - name: Amtrak
-      url: https://www.amtrak.com/
-      twitter: Amtrak
-      facebook: Amtrak
-      img: amtrak.png
-      tfa: No
+  - name: Amtrak
+    url: https://www.amtrak.com/
+    twitter: Amtrak
+    facebook: Amtrak
+    img: amtrak.png
 
-    - name: BRA (Braathens Regional Airlines)
-      url: https://flygbra.se/
-      twitter: flygbra_se
-      facebook: FlygBRA
-      img: bra.png
-      tfa: No
+  - name: BRA (Braathens Regional Airlines)
+    url: https://flygbra.se/
+    twitter: flygbra_se
+    facebook: FlygBRA
+    img: bra.png
 
-    - name: British Airways
-      url: https://www.britishairways.com/
-      twitter: British_Airways
-      facebook: britishairways
-      img: ba.png
-      tfa: No
+  - name: British Airways
+    url: https://www.britishairways.com/
+    twitter: British_Airways
+    facebook: britishairways
+    img: ba.png
 
-    - name: Clipper
-      url: https://www.clippercard.com
-      twitter: BayAreaClipper
-      facebook: BayAreaClipper
-      img: clipper.png
-      tfa: No
+  - name: Clipper
+    url: https://www.clippercard.com
+    twitter: BayAreaClipper
+    facebook: BayAreaClipper
+    img: clipper.png
 
-    - name: Delta
-      url: https://www.delta.com/
-      twitter: Delta
-      facebook: delta
-      img: delta.png
-      tfa: No
+  - name: Delta
+    url: https://www.delta.com/
+    twitter: Delta
+    facebook: delta
+    img: delta.png
 
-    - name: Deutsche Bahn (DB)
-      url: https://www.bahn.com
-      twitter: DB_Bahn
-      facebook: DBPersonenverkehr
-      img: db.png
-      tfa: No
+  - name: Deutsche Bahn (DB)
+    url: https://www.bahn.com
+    twitter: DB_Bahn
+    facebook: DBPersonenverkehr
+    img: db.png
 
-    - name: easyJet
-      url: https://www.easyjet.com
-      twitter: easyJet
-      facebook: easyJet
-      img: easyjet.png
-      tfa: No
+  - name: easyJet
+    url: https://www.easyjet.com
+    twitter: easyJet
+    facebook: easyJet
+    img: easyjet.png
 
-    - name: Eurowings
-      url: https://www.eurowings.com
-      twitter: eurowings
-      facebook: eurowings
-      img: eurowings.png
-      tfa: No
+  - name: Eurowings
+    url: https://www.eurowings.com
+    twitter: eurowings
+    facebook: eurowings
+    img: eurowings.png
 
-    - name: Finnair
-      url: https://www.finnair.com/
-      img: finnair.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
+  - name: Finnair
+    url: https://www.finnair.com/
+    img: finnair.png
+    tfa:
+      - sms
+      - software
 
-    - name: Frontier
-      url: https://www.flyfrontier.com
-      twitter: FrontierCare
-      facebook: flyfrontier
-      img: frontier.png
-      tfa: No
+  - name: Frontier
+    url: https://www.flyfrontier.com
+    twitter: FrontierCare
+    facebook: flyfrontier
+    img: frontier.png
 
-    - name: Greyhound
-      url: https://www.greyhound.com
-      twitter: GHoundBusHelp
-      facebook: GreyhoundBus
-      img: greyhound.png
-      tfa: No
+  - name: Greyhound
+    url: https://www.greyhound.com
+    twitter: GHoundBusHelp
+    facebook: GreyhoundBus
+    img: greyhound.png
 
-    - name: Hawaiian Airlines
-      url: https://www.hawaiianairlines.com
-      twitter: HawaiianAir
-      facebook: HawaiianAirlines
-      img: hawaiian.png
-      tfa: No
+  - name: Hawaiian Airlines
+    url: https://www.hawaiianairlines.com
+    twitter: HawaiianAir
+    facebook: HawaiianAirlines
+    img: hawaiian.png
 
-    - name: JetBlue
-      url: https://www.jetblue.com
-      twitter: JetBlue
-      facebook: JetBlue
-      img: jetblue.png
-      tfa: No
+  - name: JetBlue
+    url: https://www.jetblue.com
+    twitter: JetBlue
+    facebook: JetBlue
+    img: jetblue.png
 
-    - name: Lufthansa
-      url: https://www.lufthansa.com
-      twitter: lufthansa
-      facebook: lufthansa
-      img: lufthansa.png
-      tfa: No
+  - name: Lufthansa
+    url: https://www.lufthansa.com
+    twitter: lufthansa
+    facebook: lufthansa
+    img: lufthansa.png
 
-    - name: Lyft
-      url: https://www.lyft.com/
-      twitter: AskLyft
-      facebook: lyft
-      img: lyft.png
-      tfa: No
+  - name: Lyft
+    url: https://www.lyft.com/
+    twitter: AskLyft
+    facebook: lyft
+    img: lyft.png
 
-    - name: mytaxi
-      url: https://us.mytaxi.com
-      img: mytaxi.png
-      tfa: No
-      twitter: mytaxiUS
-      facebook: myTaxi.us
+  - name: mytaxi
+    url: https://us.mytaxi.com
+    img: mytaxi.png
+    twitter: mytaxiUS
+    facebook: myTaxi.us
 
-    - name: Norwegian
-      url: https://www.norwegian.com/
-      twitter: Fly_Norwegian
-      facebook: flynorwegiannow
-      img: norwegian.png
-      tfa: No
+  - name: Norwegian
+    url: https://www.norwegian.com/
+    twitter: Fly_Norwegian
+    facebook: flynorwegiannow
+    img: norwegian.png
 
-    - name: NSB
-      url: https://www.nsb.no
-      twitter: nsb_no
-      facebook: nsb.no
-      img: nsb.png
-      tfa: No
+  - name: NSB
+    url: https://www.nsb.no
+    twitter: nsb_no
+    facebook: nsb.no
+    img: nsb.png
 
-    - name: Oui.sncf
-      url: https://www.oui.sncf
-      twitter: ouisncf
-      facebook: oui.sncf
-      img: ouisncf.png
-      tfa: No
+  - name: Oui.sncf
+    url: https://www.oui.sncf
+    twitter: ouisncf
+    facebook: oui.sncf
+    img: ouisncf.png
 
-    - name: OV-chipkaart
-      url: https://www.ov-chipkaart.nl/
-      twitter: OVchipkaart
-      img: ov-chipkaart.png
-      tfa: No
+  - name: OV-chipkaart
+    url: https://www.ov-chipkaart.nl/
+    twitter: OVchipkaart
+    img: ov-chipkaart.png
 
-    - name: redBus
-      url: https://www.redbus.in/
-      twitter: redBus_in
-      facebook: redBus.in
-      email_address: support@redbus.in
-      img: redbus.png
-      tfa: No
+  - name: redBus
+    url: https://www.redbus.in/
+    twitter: redBus_in
+    facebook: redBus.in
+    email_address: support@redbus.in
+    img: redbus.png
 
-    - name: Ryanair
-      url: https://www.ryanair.com
-      twitter: Ryanair
-      facebook: ryanair
-      img: ryanair.png
-      tfa: No
+  - name: Ryanair
+    url: https://www.ryanair.com
+    twitter: Ryanair
+    facebook: ryanair
+    img: ryanair.png
 
-    - name: SAS
-      url: https://www.flysas.com/
-      twitter: SAS
-      facebook: SAS
-      img: sas.png
-      tfa: No
+  - name: SAS
+    url: https://www.flysas.com/
+    twitter: SAS
+    facebook: SAS
+    img: sas.png
 
-    - name: ScotRail
-      url: https://www.scotrail.co.uk
-      twitter: ScotRail
-      facebook: ScotRail
-      img: scotrail.png
-      tfa: No
+  - name: ScotRail
+    url: https://www.scotrail.co.uk
+    twitter: ScotRail
+    facebook: ScotRail
+    img: scotrail.png
 
-    - name: SJ
-      url: https://www.sj.se/
-      twitter: SJ_AB
-      facebook: sj
-      img: sj.png
-      tfa: No
+  - name: SJ
+    url: https://www.sj.se/
+    twitter: SJ_AB
+    facebook: sj
+    img: sj.png
 
-    - name: SL
-      url: https://sl.se/
-      twitter: SL_AB
-      facebook: KanalSL
-      img: sl.png
-      tfa: No
+  - name: SL
+    url: https://sl.se/
+    twitter: SL_AB
+    facebook: KanalSL
+    img: sl.png
 
-    - name: SmarTrip
-      url: https://smartrip.wmata.com
-      twitter: wmata
-      facebook: MetroForward
-      img: wmata.png
-      tfa: No
+  - name: SmarTrip
+    url: https://smartrip.wmata.com
+    twitter: wmata
+    facebook: MetroForward
+    img: wmata.png
 
-    - name: Southwest
-      url: https://www.southwest.com/
-      twitter: SouthwestAir
-      facebook: SouthwestAir
-      img: southwest.png
-      tfa: No
+  - name: Southwest
+    url: https://www.southwest.com/
+    twitter: SouthwestAir
+    facebook: SouthwestAir
+    img: southwest.png
 
-    - name: Southwestern Railway
-      url: https://www.southwesternrailway.com/
-      twitter: SW_Help
-      facebook: swrailway
-      img: swr.png
-      tfa: No
+  - name: Southwestern Railway
+    url: https://www.southwesternrailway.com/
+    twitter: SW_Help
+    facebook: swrailway
+    img: swr.png
 
-    - name: Spirit
-      url: https://www.spirit.com
-      twitter: SpiritAirlines
-      facebook: SpiritAirlines
-      img: spirit.png
-      tfa: No
+  - name: Spirit
+    url: https://www.spirit.com
+    twitter: SpiritAirlines
+    facebook: SpiritAirlines
+    img: spirit.png
 
-    - name: Trainline
-      url: https://www.trainline.eu
-      twitter: thetrainline
-      facebook: trainline.eu
-      img: trainline.png
-      tfa: No
+  - name: Trainline
+    url: https://www.trainline.eu
+    twitter: thetrainline
+    facebook: trainline.eu
+    img: trainline.png
 
-    - name: Transport for London
-      url: https://tfl.gov.uk/
-      twitter: TfL
-      facebook: transportforlondon
-      img: tfl.png
-      tfa: No
+  - name: Transport for London
+    url: https://tfl.gov.uk/
+    twitter: TfL
+    facebook: transportforlondon
+    img: tfl.png
 
-    - name: Uber
-      url: https://www.uber.com/
-      img: uber.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.uber.com/h/b8bb9152-8c91-4f49-83c4-35cf2e1dcf72
+  - name: Uber
+    url: https://www.uber.com/
+    img: uber.png
+    tfa:
+      - sms
+      - software
+    doc: https://help.uber.com/h/b8bb9152-8c91-4f49-83c4-35cf2e1dcf72
 
-    - name: United
-      url: https://www.united.com/
-      twitter: united
-      facebook: United
-      img: united.png
-      tfa: No
+  - name: United
+    url: https://www.united.com/
+    twitter: united
+    facebook: United
+    img: united.png
 
-    - name: WestJet
-      url: https://www.westjet.com/
-      twitter: WestJet
-      facebook: westjet
-      img: westjet.png
-      tfa: No
+  - name: WestJet
+    url: https://www.westjet.com/
+    twitter: WestJet
+    facebook: westjet
+    img: westjet.png
 
-    - name: XO
-      url: https://flyxo.com/
-      twitter: flyxo_
-      facebook: XO-2289779651103450
-      img: xo.png
-      tfa: No
+  - name: XO
+    url: https://flyxo.com/
+    twitter: flyxo_
+    facebook: XO-2289779651103450
+    img: xo.png

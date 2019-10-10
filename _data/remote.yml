@@ -1,99 +1,95 @@
 websites:
-    - name: Amazon AWS WorkSpaces
-      url: https://aws.amazon.com/workspaces/
-      doc: https://aws.amazon.com/blogs/aws/multi-factor-auth-for-workspaces/
-      tfa: Yes
-      hardware: Yes
-      software: Yes
-      img: awsworkspaces.png
+  - name: Amazon AWS WorkSpaces
+    url: https://aws.amazon.com/workspaces/
+    doc: https://aws.amazon.com/blogs/aws/multi-factor-auth-for-workspaces/
+    tfa:
+      - software
+      - hardware
+    img: awsworkspaces.png
 
-    - name: Anydesk
-      url: https://anydesk.com/
-      twitter: anydesk
-      facebook: AnyDesk
-      img: anydesk.png
-      tfa: No
+  - name: Anydesk
+    url: https://anydesk.com/
+    twitter: anydesk
+    facebook: AnyDesk
+    img: anydesk.png
 
-    - name: ConnectWise Control (ScreenConnect)
-      url: https://www.connectwise.com/software/control
-      img: connectwisecontrol.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://docs.connectwise.com/ConnectWise_Control_Documentation/Get_started/Administration_page/Security_page/Enable_two-factor_authentication_for_host_accounts
+  - name: ConnectWise Control (ScreenConnect)
+    url: https://www.connectwise.com/software/control
+    img: connectwisecontrol.png
+    tfa:
+      - sms
+      - email
+      - software
+      - hardware
+    doc: https://docs.connectwise.com/ConnectWise_Control_Documentation/Get_started/Administration_page/Security_page/Enable_two-factor_authentication_for_host_accounts
 
-    - name: join.me (w/ LogMeIn account)
-      url: https://join.me/
-      img: joinme.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://secure.logmein.com/welcome/webhelp/EN/Pro/LogMeIn/c_common_Security_TwoStep.html
+  - name: join.me (w/ LogMeIn account)
+    url: https://join.me/
+    img: joinme.png
+    tfa:
+      - sms
+      - software
+    doc: https://secure.logmein.com/welcome/webhelp/EN/Pro/LogMeIn/c_common_Security_TwoStep.html
 
-    - name: Linksys Smart Wi-Fi
-      url: https://www.linksyssmartwifi.com
-      twitter: LinksysCares
-      facebook: linksys
-      img: linksyssmartwifi.png
-      tfa: No
+  - name: Linksys Smart Wi-Fi
+    url: https://www.linksyssmartwifi.com
+    twitter: LinksysCares
+    facebook: linksys
+    img: linksyssmartwifi.png
 
-    - name: LogMeIn
-      url: https://secure.logmein.com/
-      img: logmein.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://secure.logmein.com/welcome/webhelp/EN/Pro/LogMeIn/c_Common_Account_Security.html
+  - name: LogMeIn
+    url: https://secure.logmein.com/
+    img: logmein.png
+    tfa:
+      - sms
+      - email
+      - software
+      - hardware
+    doc: https://secure.logmein.com/welcome/webhelp/EN/Pro/LogMeIn/c_Common_Account_Security.html
 
-    - name: MB Connect Line
-      url: https://www.mbconnectline.com
-      img: mbconnectline.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      email: Yes
-      software: Yes
-      doc: http://www.cc-onlinehelp.com/en/#index/administrati/users/authenticati/authenticati.html
+  - name: MB Connect Line
+    url: https://www.mbconnectline.com
+    img: mbconnectline.png
+    tfa:
+      - sms
+      - phone
+      - email
+      - software
+    doc: http://www.cc-onlinehelp.com/en/#index/administrati/users/authenticati/authenticati.html
 
-    - name: O&amp;O Syspectr
-      url: https://www.syspectr.com
-      img: oosyspectr.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.syspectr.com/en/faq/how-do-i-activate-deactivate-two-factor-authentication-for-my-account
+  - name: O&amp;O Syspectr
+    url: https://www.syspectr.com
+    img: oosyspectr.png
+    tfa:
+      - software
+    doc: https://www.syspectr.com/en/faq/how-do-i-activate-deactivate-two-factor-authentication-for-my-account
 
-    - name: Parsec
-      url: https://www.parsecgaming.com
-      img: parsec.png
-      tfa: No
-      status: https://twitter.com/ParsecTeam/status/957465838076026880
-      twitter: ParsecTeam
-      facebook: parsecgaming
-      email_address: founders@parsecgaming.com
+  - name: Parsec
+    url: https://www.parsecgaming.com
+    img: parsec.png
+    status: https://twitter.com/ParsecTeam/status/957465838076026880
+    twitter: ParsecTeam
+    facebook: parsecgaming
+    email_address: founders@parsecgaming.com
 
-    - name: RealVNC
-      url: https://www.realvnc.com
-      img: realvnc.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.realvnc.com/en/connect/docs/multi-factor-auth.html#protecting-your-realvnc-account
+  - name: RealVNC
+    url: https://www.realvnc.com
+    img: realvnc.png
+    tfa:
+      - software
+    doc: https://www.realvnc.com/en/connect/docs/multi-factor-auth.html#protecting-your-realvnc-account
 
-    - name: Remote Desktop Manager
-      url: https://www.remotedesktopmanager.com
-      img: remotedesktopmanager.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.remotedesktopmanager.com/howto_googleauthenticator.htm
-      exceptions:
-             text: "2FA is only available on the Enterprise Edition"
+  - name: Remote Desktop Manager
+    url: https://www.remotedesktopmanager.com
+    img: remotedesktopmanager.png
+    tfa:
+      - software
+    doc: https://help.remotedesktopmanager.com/howto_googleauthenticator.htm
+    exception: 2FA is only available on the Enterprise Edition
 
-    - name: TeamViewer
-      url: https://www.teamviewer.com
-      img: teamviewer.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.teamviewer.com/en/help/402-How-do-I-activate-deactivate-two-factor-authentication-for-my-TeamViewer-account.aspx
+  - name: TeamViewer
+    url: https://www.teamviewer.com
+    img: teamviewer.png
+    tfa:
+      - software
+    doc: https://www.teamviewer.com/en/help/402-How-do-I-activate-deactivate-two-factor-authentication-for-my-TeamViewer-account.aspx
