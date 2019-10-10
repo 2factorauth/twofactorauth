@@ -6,8 +6,7 @@ websites:
       - software
       - hardware
     doc: https://support.1password.com/two-factor-authentication/
-    exception: Teams using Duo with 1Password can't enable additional 2FA as it's already
-      handled by Duo
+    exception: "Teams using Duo with 1Password can't enable additional 2FA as it's already handled by Duo"
 
   - name: Bitium
     url: https://www.bitium.com
@@ -27,7 +26,7 @@ websites:
       - software
       - hardware
     doc: https://help.bitwarden.com/article/setup-two-step-login/
-    exception: Premium account required for Duo, YubiKey and FIDO U2F.
+    exception: "Premium account required for Duo, YubiKey and FIDO U2F."
 
   - name: Centrify
     url: https://www.centrify.com
@@ -105,7 +104,7 @@ websites:
       - software
       - hardware
     doc: https://passhub.net/security.php
-    exception: Hardware tokens only work on desktop.
+    exception: "Hardware tokens only work on desktop."
 
   - name: Passpack
     url: https://www.passpack.com/
@@ -142,7 +141,7 @@ websites:
       - email
       - software
       - hardware
-    exception: Applies to IdentityIQ and IdentityNow.
+    exception: "Applies to IdentityIQ and IdentityNow."
 
   - name: SecureSafe
     url: https://www.securesafe.com
@@ -150,7 +149,7 @@ websites:
     tfa:
       - sms
     doc: https://www.securesafe.com/en/faq/general-questions/how-can-i-activate-2-factor-authentication/
-    exception: 2FA is only available on paid plans.
+    exception: "2FA is only available on paid plans."
 
   - name: True Key
     url: https://www.truekey.com

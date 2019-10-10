@@ -78,8 +78,7 @@ websites:
     img: hostiso.png
     tfa:
       - software
-    exception: While both the main client area and the shared hosting panel support
-      2FA, each system is separate and requires its own setup.
+    exception: "While both the main client area and the shared hosting panel support 2FA, each system is separate and requires its own setup."
 
   - name: IBM Cloud
     url: https://cloud.ibm.com
@@ -199,7 +198,7 @@ websites:
       - software
       - hardware
     doc: https://blog.tilaa.com/post/128110588046
-    exception: SMS-capable phone required.
+    exception: "SMS-capable phone required."
 
   - name: UpCloud
     url: https://www.upcloud.com
@@ -223,4 +222,4 @@ websites:
       - software
       - hardware
     doc: https://www.vultr.com/docs/using-two-factor-authentication-to-login-to-vultr-control-panel
-    exception: Hardware 2FA only supports YubiKeys with Yubico OTP credentials.
+    exception: "Hardware 2FA only supports YubiKeys with Yubico OTP credentials."

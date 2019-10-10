@@ -47,7 +47,7 @@ websites:
       - software
       - hardware
     doc: https://imss.caltech.edu/node/1408
-    exception: SMS-capable phone required for initial setup.
+    exception: "SMS-capable phone required for initial setup."
 
   - name: Carnegie Mellon University
     url: https://www.cmu.edu/
@@ -154,7 +154,7 @@ websites:
       - software
       - hardware
     doc: https://www.emich.edu/it/security/esp/duo.php
-    exception: Available for employees
+    exception: "Available for employees"
 
   - name: EC-Council
     url: https://www.eccouncil.org
@@ -215,9 +215,7 @@ websites:
     facebook: illinoistech
     email_address: supportdesk@iit.edu
     img: iit.png
-    exception: Illinois Tech uses Google Apps for Eductation for their email; so they
-      could very easily add tfa to their email, but at the time of this commit, they
-      have it disabled and do not plan to implement it any time soon.
+    exception: "Illinois Tech uses Google Apps for Eductation for their email; so they could very easily add tfa to their email, but at the time of this commit, they have it disabled and do not plan to implement it any time soon."
 
   - name: ISACA
     url: https://www.isaca.org
@@ -302,8 +300,7 @@ websites:
     tfa:
       - hardware
     doc: http://knowhow.pushcoin.com/using-security-key-for-2-step-verification/
-    exception: U2F support only for school admin accounts. 2FA for parent accounts is
-      in progress.
+    exception: "U2F support only for school admin accounts. 2FA for parent accounts is in progress."
 
   - name: Robert Morris University
     url: https://sentry.rmu.edu/login
@@ -399,7 +396,7 @@ websites:
       - software
       - hardware
     doc: https://itconnect.uw.edu/security/uw-netids/2fa/
-    exception: Available for employees only
+    exception: "Available for employees only"
 
   - name: Virginia Commonwealth University
     url: https://www.vcu.edu

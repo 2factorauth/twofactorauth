@@ -167,8 +167,7 @@ websites:
       - sms
       - software
     doc: https://help.twitch.tv/s/article/two-factor-authentication-with-authy
-    exception: To activate two factor authentication, you must provide a mobile phone
-      number. Software authentication requires the Authy app.
+    exception: "To activate two factor authentication, you must provide a mobile phone number. Software authentication requires the Authy app."
 
   - name: Vimeo
     url: https://vimeo.com/

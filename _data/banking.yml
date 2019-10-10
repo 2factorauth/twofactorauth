@@ -203,7 +203,7 @@ websites:
       - email
       - software
     doc: https://www.capitalone.com/identity-protection/swiftid/
-    exception: Software implementation requires use of Capital One app.
+    exception: "Software implementation requires use of Capital One app."
 
   - name: CDC Federal Credit Union
     url: https://www.cdcfcu.com
@@ -218,7 +218,7 @@ websites:
       - sms
       - software
     doc: https://www.csas.cz/cs/mobilni-aplikace/george-klic
-    exception: Software implementation requires use of George Klic app.
+    exception: "Software implementation requires use of George Klic app."
 
   - name: Chase
     url: https://www.chase.com/
@@ -274,7 +274,7 @@ websites:
     tfa:
       - sms
     doc: https://cbonline.cbq.qa/RIB/Common/FAQContent
-    exception: An SMS capable phone with a Qatar phone number is required.
+    exception: "An SMS capable phone with a Qatar phone number is required."
 
   - name: Commerzbank
     url: https://www.commerzbank.de/
@@ -495,7 +495,7 @@ websites:
       - software
       - hardware
     doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
-    exception: Software 2FA requires HSBC app.
+    exception: "Software 2FA requires HSBC app."
 
   - name: Huntington National Bank
     url: https://www.huntington.com
@@ -703,7 +703,7 @@ websites:
     img: nordnet.png
     tfa:
       - software
-    exception: TFA only available for Swedish residents with BankID.
+    exception: "TFA only available for Swedish residents with BankID."
 
   - name: Northeast Credit Union
     url: https://necu.org
@@ -857,7 +857,7 @@ websites:
       - sms
       - software
     doc: https://santander.pl/firmy/bankowosc-elektroniczna/bzwbk24-mini-firma/metody-autoryzacji/metody-autoryzacji.html
-    exception: Software authentication only available via Santander mobile.
+    exception: "Software authentication only available via Santander mobile."
 
   - name: Santander UK
     url: https://www.santander.co.uk
@@ -1158,5 +1158,4 @@ websites:
       - software
       - hardware
     doc: https://www.zkb.ch/de/pr/pk/efinance/ebanking/login-verfahren.html
-    exception: Software & Hardware authentication requires the ZKB photoTAN app or PhotoTAN
-      device.
+    exception: "Software & Hardware authentication requires the ZKB photoTAN app or PhotoTAN device."

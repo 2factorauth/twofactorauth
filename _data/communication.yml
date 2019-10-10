@@ -195,7 +195,7 @@ websites:
       - sms
       - software
     doc: https://sendgrid.com/docs/ui/account-and-settings/two-factor-authentication/
-    exception: Software authentication requires the Authy app.
+    exception: "Software authentication requires the Authy app."
 
   - name: Sendloop
     url: https://app.sendloop.com
@@ -220,7 +220,7 @@ websites:
       - email
       - software
     doc: https://support.microsoft.com/en-us/help/12408/
-    exception: Must be associated with a Microsoft Account.
+    exception: "Must be associated with a Microsoft Account."
 
   - name: Slack
     url: https://slack.com/

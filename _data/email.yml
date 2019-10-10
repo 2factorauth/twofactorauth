@@ -131,8 +131,7 @@ websites:
       - software
       - hardware
     doc: https://support.microsoft.com/en-us/help/12408/
-    exception: Hardware token supporting FIDO2/WebAuthn can only be used in Windows
-      10 version 1809 and above using Edge browser.
+    exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
 
   - name: Pobox
     url: https://www.pobox.com/
@@ -174,7 +173,7 @@ websites:
     tfa:
       - software
     doc: https://blog.seznam.cz/2018/04/seznam-cz-ma-nove-dvoufazove-overeni-u-vsech-svych-sluzeb-zvysi-zabezpeci-prihlasovani-napriklad-do-emailu/
-    exception: Software implementation requires use of the Seznam app.
+    exception: "Software implementation requires use of the Seznam app."
 
   - name: StartMail
     url: https://www.startmail.com
@@ -248,7 +247,7 @@ websites:
     tfa:
       - software
     doc: https://yandex.com/support/passport/authorization/twofa.xml
-    exception: SMS-capable phone required for initial setup.
+    exception: "SMS-capable phone required for initial setup."
 
   - name: Zimbra
     url: https://www.zimbra.com/
@@ -256,7 +255,7 @@ websites:
     tfa:
       - software
     doc: https://blog.zimbra.com/2016/02/zimbra-collaboration-8-7-two-factor-authentication-2fa-technical-preview/
-    exception: Available in Zimbra Collaboration 8.7 and above, Network Edition only
+    exception: "Available in Zimbra Collaboration 8.7 and above, Network Edition only"
 
   - name: Zoho Mail
     url: https://www.zoho.com/mail/

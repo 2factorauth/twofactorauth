@@ -6,8 +6,7 @@ websites:
       - sms
       - software
     doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
-    exception: SMS or phone call required to enable 2FA. Enabling on Amazon.com activates
-      2FA on other regional Amazon sites, such as UK and DE.
+    exception: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
 
   - name: Braintree
     img: braintree.png
@@ -25,7 +24,7 @@ websites:
       - sms
       - software
     doc: https://help.buycraft.net/article/83-two-factor-authentication
-    exception: SMS-capable phone required.
+    exception: "SMS-capable phone required."
 
   - name: Dwolla
     url: https://www.dwolla.com
@@ -68,7 +67,7 @@ websites:
     tfa:
       - email
       - software
-    exception: Software 2FA is only available for Swedish citizens with BankID.
+    exception: "Software 2FA is only available for Swedish citizens with BankID."
 
   - name: NETELLER
     img: neteller.png
@@ -85,8 +84,7 @@ websites:
       - email
       - software
     doc: https://payeer.com/en/faq/
-    exception: Receiving codes via SMS cost 0.05$ each message. 2FA is personalizable
-      in account settings.
+    exception: "Receiving codes via SMS cost 0.05$ each message. 2FA is personalizable in account settings."
 
   - name: Payoneer
     url: https://www.payoneer.com/
@@ -100,8 +98,7 @@ websites:
       - sms
       - software
     doc: https://www.paypal.com/us/smarthelp/article/faq4057
-    exception: 2FA is only available in a few countries. Contact PayPal on Twitter for
-      an up-to-date list of available countries.
+    exception: "2FA is only available in a few countries. Contact PayPal on Twitter for an up-to-date list of available countries."
 
   - name: Paysafecard
     url: https://www.paysafecard.com/
@@ -174,7 +171,7 @@ websites:
       - sms
       - software
     doc: https://squareup.com/help/us/en/article/5593
-    exception: SMS only supported in US and Canada
+    exception: "SMS only supported in US and Canada"
 
   - name: Square Cash
     url: https://cash.me
