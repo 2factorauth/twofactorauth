@@ -34,7 +34,7 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://www.biggerpockets.com/forums/25/topics/232201
-     
+
     - name: Bitly
       url: https://bitly.com/
       img: bitly.png
@@ -90,6 +90,14 @@ websites:
       url: https://foursquare.com
       twitter: Foursquare
       img: foursquare.png
+      tfa: No
+
+    - name: Glassdoor
+      url: https://glassdoor.com
+      twitter: Glassdoor
+      facebook: Glassdoor
+      email_address: feedback@glassdoor.com
+      img: glassdoor.png
       tfa: No
 
     - name: Goodreads
