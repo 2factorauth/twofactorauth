@@ -34,7 +34,7 @@ websites:
       tfa: Yes
       sms: Yes
       doc: https://www.biggerpockets.com/forums/25/topics/232201
-     
+
     - name: Bitly
       url: https://bitly.com/
       img: bitly.png
@@ -298,6 +298,13 @@ websites:
       sms: Yes
       software: Yes
       doc: https://faq.xing.com/en/settings-security/two-factor-login-two-factor-authentication
+
+    - name: Yelp
+      url: https://www.yelp.com
+      twitter: yelpsupport
+      facebook: yelp
+      img: yelp.png
+      tfa: No
 
     - name: Zocle
       url: https://zocle.com/
