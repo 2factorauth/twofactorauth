@@ -161,6 +161,9 @@ websites:
       img: elisa.png
       tfa: Yes
       sms: Yes
+      software: Yes
+      exceptions:
+          text: "Software Based authentication is only available for Finnish citizens via Mobile ID."
       doc: https://elisa.fi/asiakaspalvelu/ohje/elisa-tunnus/
 
     - name: Ergon Energy
