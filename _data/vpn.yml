@@ -1,119 +1,106 @@
 websites:
-    - name: Air VPN
-      url: https://airvpn.org/
-      img: airvpn.png
-      tfa: No
-      twitter: airvpn
-      facebook: airvpn.org
-      email_address: support@airvpn.org
+  - name: Air VPN
+    url: https://airvpn.org/
+    img: airvpn.png
+    twitter: airvpn
+    facebook: airvpn.org
+    email_address: support@airvpn.org
 
-    - name: BolehVPN
-      url: https://www.bolehvpn.net/
-      img: bolehvpn.png
-      tfa: No
-      twitter: bolehvpn
-      email_address: support@bolehvpn.net
+  - name: BolehVPN
+    url: https://www.bolehvpn.net/
+    img: bolehvpn.png
+    twitter: bolehvpn
+    email_address: support@bolehvpn.net
 
-    - name: CyberGhost
-      url: https://www.cyberghostvpn.com
-      img: cyberghost.png
-      tfa: No
-      twitter: CyberGhost_EN
-      facebook: cyberghostEN
+  - name: CyberGhost
+    url: https://www.cyberghostvpn.com
+    img: cyberghost.png
+    twitter: CyberGhost_EN
+    facebook: cyberghostEN
 
-    - name: ExpressVPN
-      url: https://www.expressvpn.com
-      img: expressvpn.png
-      tfa: Yes
-      email: Yes
+  - name: ExpressVPN
+    url: https://www.expressvpn.com
+    img: expressvpn.png
+    tfa:
+      - email
 
-    - name: hide.me VPN
-      url: https://hide.me/
-      img: hidemevpn.png
-      tfa: No
-      twitter: thevpncompany
-      facebook: www.hide.me
-      email_address: support@hide.me
+  - name: hide.me VPN
+    url: https://hide.me/
+    img: hidemevpn.png
+    twitter: thevpncompany
+    facebook: www.hide.me
+    email_address: support@hide.me
 
-    - name: IPVanish
-      url: https://www.ipvanish.com
-      img: ipvanish.png
-      tfa: No
-      twitter: IPVanish
-      facebook: ipvanish
-      email_address: support@ipvanish.com
+  - name: IPVanish
+    url: https://www.ipvanish.com
+    img: ipvanish.png
+    twitter: IPVanish
+    facebook: ipvanish
+    email_address: support@ipvanish.com
 
-    - name: IVPN
-      url: https://www.ivpn.net/
-      img: ivpn.png
-      tfa: No
-      twitter: ivpnnet
-      email_address: support@ivpn.net
+  - name: IVPN
+    url: https://www.ivpn.net/
+    img: ivpn.png
+    twitter: ivpnnet
+    email_address: support@ivpn.net
 
-    - name: NordVPN
-      url: https://nordvpn.com
-      img: nordvpn.png
-      tfa: No
-      twitter: NordVPN
-      facebook: NordVPN
-      email_address: support@nordvpn.com
+  - name: NordVPN
+    url: https://nordvpn.com
+    img: nordvpn.png
+    twitter: NordVPN
+    facebook: NordVPN
+    email_address: support@nordvpn.com
 
-    - name: Perfect Privacy VPN
-      url: https://www.perfect-privacy.com/
-      img: perfectprivacyvpn.png
-      tfa: No
-      twitter: perfectprivacy
-      facebook: perfect.privacy
+  - name: Perfect Privacy VPN
+    url: https://www.perfect-privacy.com/
+    img: perfectprivacyvpn.png
+    twitter: perfectprivacy
+    facebook: perfect.privacy
 
-    - name: Private Internet Access
-      url: https://www.privateinternetaccess.com
-      img: privateinternetaccess.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.privateinternetaccess.com/helpdesk/kb/articles/how-do-i-use-the-2fa-system
+  - name: Private Internet Access
+    url: https://www.privateinternetaccess.com
+    img: privateinternetaccess.png
+    tfa:
+      - software
+    doc: https://www.privateinternetaccess.com/helpdesk/kb/articles/how-do-i-use-the-2fa-system
 
-    - name: ProtonVPN
-      url: https://protonvpn.com/
-      img: protonvpn.png
-      tfa: Yes
-      software: Yes
+  - name: ProtonVPN
+    url: https://protonvpn.com/
+    img: protonvpn.png
+    tfa:
+      - software
 
-    - name: PureVPN
-      url: https://www.purevpn.com
-      img: purevpn.png
-      tfa: No
-      twitter: PureVPNcom
-      facebook: PureVPNcom
-      email_address: support@purevpn.com
+  - name: PureVPN
+    url: https://www.purevpn.com
+    img: purevpn.png
+    twitter: PureVPNcom
+    facebook: PureVPNcom
+    email_address: support@purevpn.com
 
-    - name: SaferVPN
-      url: https://www.safervpn.com
-      img: safervpn.png
-      tfa: No
-      twitter: SaferVPN
-      facebook: SaferVPNCom
-      email_address: support@safervpn.com
+  - name: SaferVPN
+    url: https://www.safervpn.com
+    img: safervpn.png
+    twitter: SaferVPN
+    facebook: SaferVPNCom
+    email_address: support@safervpn.com
 
-    - name: TunnelBear
-      url: https://tunnelbear.com/
-      img: tunnelbear.png
-      tfa: No
-      twitter: theTunnelBear
-      facebook: tunnelbear
-      email_address: support@tunnelbear.com
+  - name: TunnelBear
+    url: https://tunnelbear.com/
+    img: tunnelbear.png
+    twitter: theTunnelBear
+    facebook: tunnelbear
+    email_address: support@tunnelbear.com
 
-    - name: VPN Unlimited
-      url: https://vpnunlimitedapp.com/
-      img: vpnunlimited.png
-      tfa: No
-      twitter: vpnunlimited
-      facebook: vpnunlimitedapp
-      email_address: support@keepsolid.com
+  - name: VPN Unlimited
+    url: https://vpnunlimitedapp.com/
+    img: vpnunlimited.png
+    twitter: vpnunlimited
+    facebook: vpnunlimitedapp
+    email_address: support@keepsolid.com
 
-    - name: Windscribe
-      url: https://windscribe.com
-      img: windscribe.png
-      tfa: No
-      twitter: windscribecom
-      facebook: windscribe
-      email_address: support@windscribe.com
+  - name: Windscribe
+    url: https://windscribe.com
+    img: windscribe.png
+    twitter: windscribecom
+    facebook: windscribe
+    email_address: support@windscribe.com
