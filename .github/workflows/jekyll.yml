@@ -13,4 +13,4 @@ jobs:
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll \
-        jekyll/builder:stable /bin/bash -c "chmod 777 /srv/jekyll && cd /srv/jekyll/ && ls -la && bundle exec rake"
+        jekyll/builder:stable /bin/bash -c "chmod 777 /srv/jekyll && cd /srv/jekyll/ && pwd && ls -la && bundle exec rake"
