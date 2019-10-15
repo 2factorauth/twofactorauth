@@ -1,115 +1,105 @@
 websites:
-    - name: ActiveCollab
-      url: https://activecollab.com/
-      twitter: activecollab
-      img: activecollab.png
-      tfa: No
+  - name: ActiveCollab
+    url: https://activecollab.com/
+    twitter: activecollab
+    img: activecollab.png
 
-    - name: Any.do
-      url: https://web.any.do/
-      img: anydo.png
-      tfa: No
-      twitter: Anydo
-      facebook: Any.do
-      email_address: feedback@any.do
+  - name: Any.do
+    url: https://web.any.do/
+    img: anydo.png
+    twitter: Anydo
+    facebook: Any.do
+    email_address: feedback@any.do
 
-    - name: Asana
-      url: https://www.asana.com
-      img: asana.png
-      tfa: No
-      twitter: asana
-      facebook: asana
-      email_address: support@asana.com
+  - name: Asana
+    url: https://www.asana.com
+    img: asana.png
+    twitter: asana
+    facebook: asana
+    email_address: support@asana.com
 
-    - name: Azendoo
-      url: https://app.azendoo.com
-      img: azendoo.png
-      tfa: No
-      twitter: azendoo
+  - name: Azendoo
+    url: https://app.azendoo.com
+    img: azendoo.png
+    twitter: azendoo
 
-    - name: Breeze
-      url: https://www.breeze.pm
-      img: breeze.png
-      tfa: No
-      twitter: BreezeTeam
-      facebook: breeze.pm
+  - name: Breeze
+    url: https://www.breeze.pm
+    img: breeze.png
+    twitter: BreezeTeam
+    facebook: breeze.pm
 
-    - name: ClickUp
-      url: https://clickup.com
-      img: clickup.png
-      tfa: Yes
-      sms: Yes
-      doc: https://docs.clickup.com/general/two-factor-authentication
+  - name: ClickUp
+    url: https://clickup.com
+    img: clickup.png
+    tfa:
+      - sms
+    doc: https://docs.clickup.com/general/two-factor-authentication
 
-    - name: fruux
-      url: https://fruux.com
-      img: fruux.png
-      twitter: fruux
-      tfa: No
+  - name: fruux
+    url: https://fruux.com
+    img: fruux.png
+    twitter: fruux
 
-    - name: Meistertask
-      url: https://www.meistertask.com
-      img: meistertask.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.meistertask.com/hc/en-us/articles/207318670
+  - name: Meistertask
+    url: https://www.meistertask.com
+    img: meistertask.png
+    tfa:
+      - software
+    doc: https://support.meistertask.com/hc/en-us/articles/207318670
 
-    - name: Microsoft To-Do
-      url: https://todo.microsoft.com/
-      img: microsofttodo.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.microsoft.com/en-us/help/12408/
+  - name: Microsoft To-Do
+    url: https://todo.microsoft.com/
+    img: microsofttodo.png
+    tfa:
+      - sms
+      - email
+      - software
+    doc: https://support.microsoft.com/en-us/help/12408/
 
-    - name: Planio
-      url: https://plan.io
-      img: planio.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.plan.io/news/133
+  - name: Planio
+    url: https://plan.io
+    img: planio.png
+    tfa:
+      - software
+    doc: https://support.plan.io/news/133
 
-    - name: Remember The Milk
-      url: https://www.rememberthemilk.com
-      twitter: rememberthemilk
-      facebook: rememberthemilk
-      img: rememberthemilk.png
-      tfa: No
-      email_address: help@rememberthemilk.com
+  - name: Remember The Milk
+    url: https://www.rememberthemilk.com
+    twitter: rememberthemilk
+    facebook: rememberthemilk
+    img: rememberthemilk.png
+    email_address: help@rememberthemilk.com
 
-    - name: Todoist
-      url: https://todoist.com
-      twitter: todoist
-      facebook: Todoist
-      email_address: support@todoist.com
-      img: todoist.png
-      tfa: No
+  - name: Todoist
+    url: https://todoist.com
+    twitter: todoist
+    facebook: Todoist
+    email_address: support@todoist.com
+    img: todoist.png
 
-    - name: Toggl
-      url: https://toggl.com
-      img: toggl.png
-      twitter: toggl
-      facebook: Toggl
-      tfa: No
+  - name: Toggl
+    url: https://toggl.com
+    img: toggl.png
+    twitter: toggl
+    facebook: Toggl
 
-    - name: Toodledo
-      url: https://www.toodledo.com
-      img: toodledo.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.toodledo.com/info/help.php#168
+  - name: Toodledo
+    url: https://www.toodledo.com
+    img: toodledo.png
+    tfa:
+      - software
+    doc: https://www.toodledo.com/info/help.php#168
 
-    - name: Trello
-      url: https://trello.com
-      img: trello.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.trello.com/article/993--
+  - name: Trello
+    url: https://trello.com
+    img: trello.png
+    tfa:
+      - sms
+      - software
+    doc: https://help.trello.com/article/993--
 
-    - name: Wunderlist
-      url: https://www.wunderlist.com
-      twitter: Wunderlist
-      img: wunderlist.png
-      tfa: No
+  - name: Wunderlist
+    url: https://www.wunderlist.com
+    twitter: Wunderlist
+    img: wunderlist.png
