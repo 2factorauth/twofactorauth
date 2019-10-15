@@ -12,5 +12,7 @@ jobs:
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && bundle exec rake"
+        -v ${{ github.workspace }}:/srv/jekyll \ 
+        -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        -it jekyll/builder:latest \
+        /bin/bash -c "chmod 777 /srv/jekyll && pwd && bundle exec rake"
