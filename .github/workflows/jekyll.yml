@@ -14,5 +14,5 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll \ 
         -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        -it jekyll/builder:latest \
-        /bin/bash -c "chmod 777 /srv/jekyll && pwd && bundle exec rake"
+        jekyll/builder:latest \
+        /bin/bash -c "chmod 777 /srv/jekyll && cd /srv/jekyll/ && bundle exec rake"
