@@ -21,6 +21,13 @@ websites:
       - software
     doc: https://docs.acquia.com/acquia-cloud/access/signin/
 
+  - name: ALL-INKL.COM
+    url: https://all-inkl.com/
+    img: all-inkl.png
+    tfa:
+      - totp
+    doc: https://all-inkl.com/wichtig/faq/#2fa
+
   - name: ARP Networks
     url: https://arpnetworks.com/
     img: arpnetworks.png
