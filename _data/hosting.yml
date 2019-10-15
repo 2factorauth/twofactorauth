@@ -284,6 +284,8 @@ websites:
   doc: https://easy.gr/el/payment-methods
   keywords:
   - coinbase
+  exceptions: 
+    text: "Be aware that Easy.gr may ask for KYC information after accepting payment. This is not a recommended vendor for customers seeking privacy."
 - name: Fastly
   url: https://www.fastly.com
   twitter: fastly
