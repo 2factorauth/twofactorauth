@@ -1,34 +1,18 @@
-{% if include.website.exceptions %}
+{% if include.website.exception %}
 
 {% capture html %}
 <div class='header'>
     Exceptions &amp; Restrictions
 </div>
 <div class='content'>
-    {% if include.website.exceptions.text %}
-        {{ include.website.exceptions.text }}
-    {% else %}
-        {% if include.website.exceptions.link %}
-            Click to see more info on the restrictions.
-        {% else %}
-            Some restrictions on 2FA for this site exist.
-        {% endif %}
+    {% if include.website.exception %}
+        {{ include.website.exception }}
     {% endif %}
 </div>
 {% endcapture %}
-
-    {% if include.website.exceptions.link %}
-        <a class="popup exception"
-            href="/restrictions#{{ include.website.name | downcase | handle }}"
-            data-position="bottom center"
-            data-html="{{ html | strip_newlines }}">
-            <i class="warning sign red link icon"></i>
-        </a>
-    {% else %}
         <span class="popup exception"
             data-position="bottom center"
             data-html="{{ html | strip_newlines }}">
             <i class="warning sign red link icon"></i>
         </span>
-    {% endif %}
 {% endif %}
