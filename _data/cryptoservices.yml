@@ -77,14 +77,6 @@ websites:
     text: Some merchants listed on the site do not accept BCH. The website is a place
       for independent crypto-accepting merchants to sell things. Each merchant is
       different.
-- name: Bitcoin Superstore
-  url: https://bitcoinsuperstore.us
-  img: bitcoinSuperstore.png
-  twitter: BitcoinSuperst1
-  email_address: customerservice@bitcoinsuperstore.us
-  bch: true
-  btc: true
-  othercrypto: true
 - name: Bitcoin.com Notary
   url: https://notary.bitcoin.com/
   img: bitcoincomnotar.png
@@ -233,15 +225,6 @@ websites:
   facebook: Coinapult
   twitter: Coinapult
   email_address: support@coinapult.com
-- name: coinbought.com
-  url: https://coinbought.com/
-  img: coinbought.png
-  twitter: coinbought
-  email_address: support@coinbought.com
-  region: na
-  bch: true
-  btc: true
-  othercrypto: true
 - name: CoinCards.ca
   url: https://coincards.ca/
   img: coincardsca.png
@@ -390,15 +373,6 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: Findbits
-  url: https://findbits.com
-  twitter: findbits
-  facebook: findbits
-  email_address: info@findbits.com
-  img: findbits.png
-  bch: false
-  btc: true
-  othercrypto: true
 - name: Fivebucks
   url: https://fivebucks.com/
   img: fivebucks.png
@@ -608,6 +582,8 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.privcoin.io/bitcoincash/
+  exceptions:
+    text: Residents of the United States of America or Netherlands are not permitted
 - name: Protosbay
   url: https://www.protosbay.com/
   img: protosbay.png
@@ -651,7 +627,6 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-  doc: https://info.shapeshift.io/blog/2017/07/27/important-bitcoin-hard-fork-information
 - name: SMT
   url: https://smt.ua/
   img: SMT.png
