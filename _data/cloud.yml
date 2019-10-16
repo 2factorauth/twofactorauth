@@ -19,8 +19,7 @@ websites:
     tfa:
       - proprietary
     doc: https://kb.cloud.it/computing/uso-e-tecnologie/accesso-al-pannello-di-controllo-con-otp.aspx
-    exceptions:
-        text: "Only the control panel supports 2FA (the main client area does not), and it requires installing a proprietary app."
+    exception: "Only the control panel supports 2FA (the main client area does not), and it requires installing a proprietary app."
 
   - name: Brightbox
     url: https://www.brightbox.com/
