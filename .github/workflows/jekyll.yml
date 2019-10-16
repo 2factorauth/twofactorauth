@@ -14,4 +14,11 @@ jobs:
         sudo gem install bundler
         bundle install
     - name: Build site
-      run: bundle exec jekyll build   
+      run: bundle exec jekyll build
+      timeout-minutes: 1
+    - name: Test Rake script
+      run: bundle exec rake
+    - name: Test external links
+      run: bundle exec rake proof_external
+      continue-on-error: true
+      timeout-minutes: 3
