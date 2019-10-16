@@ -8,10 +8,10 @@ jobs:
     name: Test using Docker
     steps:
     - uses: actions/checkout@v1
-    - name: Run Rake script
+    - name: Install requirements
       run: |
-        sudo apt install libffi-dev nodejs python-dev gcc ruby rails make zlib1g-dev ruby-dev libcurl3
-        gem install bundler
+        sudo apt install libffi-dev nodejs python-dev gcc ruby rails make zlib1g-dev ruby-dev libcurl3 -y
+        sudo gem install bundler
         bundle install
-        bundle exec jekyll build
-    
+    - name: Build site
+      run: bundle exec jekyll build   
