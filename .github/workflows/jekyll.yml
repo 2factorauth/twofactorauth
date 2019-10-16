@@ -3,14 +3,15 @@ name: Jekyll site CI
 on: [push]
 
 jobs:
-  build:
-
+  Test Jekyll:
     runs-on: ubuntu-latest
-
+    name: Test using Docker
     steps:
     - uses: actions/checkout@v1
     - name: Run Rake script
       run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll -R && cd /srv/jekyll/ && bundle install && bundle exec rake"
+        sudo apt install libffi-dev nodejs python-dev gcc ruby rails make zlib1g-dev ruby-dev libcurl3
+        gem install bundler
+        bundle install
+        bundle exec jekyll build
+    
