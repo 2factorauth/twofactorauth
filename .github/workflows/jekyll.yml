@@ -10,9 +10,8 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install requirements
       run: |
-        sudo apt install libffi-dev nodejs python-dev gcc ruby rails make zlib1g-dev ruby-dev libcurl3 -y
-        sudo gem install bundler
-        bundle install
+        sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev -y
+        sudo bundle install
     - name: Build site
       run: bundle exec jekyll build
       timeout-minutes: 1
