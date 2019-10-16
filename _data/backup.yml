@@ -49,7 +49,7 @@ websites:
     tfa:
       - sms
       - totp
-      - hardware
+      - u2f
     doc: https://help.dropbox.com/security/enable-two-step-verification
 
   - name: Evernote
