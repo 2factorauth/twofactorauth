@@ -3,7 +3,7 @@ name: Jekyll site CI
 on: [push]
 
 jobs:
-  Test Jekyll:
+  Test_Jekyll:
     runs-on: ubuntu-latest
     name: Test using Docker
     steps:
