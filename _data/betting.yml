@@ -1,6 +1,14 @@
 websites:
-    - name: Betvictor
-      url: https://www.betvictor.com
-      img: betvictor.png
-      tfa: Yes
-      sms: Yes
+  - name: Betvictor
+    url: https://www.betvictor.com
+    img: betvictor.png
+    tfa:
+      - sms
+      - software
+
+  - name: win2day
+    url: https://www.win2day.at/
+    img: win2day.png
+    twitter: win2dayat
+    facebook: win2dayat
+    lang: de
