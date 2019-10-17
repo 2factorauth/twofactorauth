@@ -40,6 +40,14 @@ p {
   margin: 1em 0;
 }
 
+table {
+  thead {
+    top: 0;
+    position: sticky;
+    z-index: 1;
+  }
+}
+
 .website-table .left,
 .website-table .right {
   display: inline-block;
