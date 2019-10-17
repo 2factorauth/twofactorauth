@@ -68,6 +68,18 @@ websites:
     otp: Yes
     doc: https://help.evernote.com/hc/en-us/articles/208314238
 
+  - name: Files.com
+    url: https://www.files.com
+    img: files.png
+    tfa: Yes
+    sms: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    u2f: Yes
+    multipleu2f: Yes
+    doc: https://www.files.com/docs/features/two-factor-auth/
+
   - name: FileThis
     url: https://filethis.com
     twitter: FileThisCompany
