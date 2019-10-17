@@ -189,7 +189,7 @@ website.
       img: site.png
       tfa:
         - sms
-      exceptions: "Specific text goes here."
+      exception: "Specific text goes here."
       doc: <link to site TFA documentation>
    ```
 
