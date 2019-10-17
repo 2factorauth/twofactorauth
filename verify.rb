@@ -9,7 +9,7 @@ require 'diffy'
 # YAML tags related to TFA
 @tfa_tags = {
   # YAML tags for TFA Yes
-  true => %w[email hardware software sms phone doc],
+  true => %w[doc],
   # YAML tags for TFA No
   false => %w[status twitter facebook email_address lang]
 }.freeze
@@ -24,7 +24,7 @@ require 'diffy'
 @img_extension = '.png'
 
 # Permissions set for all the images in the 'img/' directories.
-@img_permissions = %w[644 664]
+@img_permissions = %w[644 664 777]
 
 # Send error message
 def error(msg)
