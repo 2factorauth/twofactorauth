@@ -263,10 +263,12 @@ websites:
 
   - name: comdirect
     url: https://www.comdirect.de/
-    twitter: comdirect
-    facebook: comdirect
     img: comdirect.png
-    lang: de
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.comdirect.de/konto/psd2-phototan.html
 
   - name: Commercial Bank of Qatar
     url: http://www.cbq.qa/
