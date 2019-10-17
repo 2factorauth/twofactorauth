@@ -20,6 +20,16 @@ Below is a list of categories and websites that we've opted out from listing on 
 
     -   If the core project doesn't support two factor authentication but instead through plugins it would mean that we would have to list all plugins that enable two factor authentication for the service. Something that is currently impossible with our website layout.
 
+    However, this exclusion can be lifted by the active maintainers given all these points are met:
+
+    1.  All [Site Criteria](CONTRIBUTING.md#site-criteria) and [Guidelines](CONTRIBUTING.md#guidelines) are met
+
+    1.  Public interest and public accessibility are given  
+
+    1.  The site has an independent authentication database
+
+    1.  The underlying service supports 2FA natively or through a first-party (developer) plugin
+    
 *   #### Potential controversial sites 
 
     Any site that could damage the reputation of TwoFactorAuth.org and/or lead to any controversy with either the maintainers or users, should not be listed.
