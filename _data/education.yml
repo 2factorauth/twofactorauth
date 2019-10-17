@@ -23,6 +23,16 @@ websites:
     img: antagning.png
     twitter: antagningse
 
+  - name: Arkansas Tech University
+    url: https://www.atu.edu/
+    img: atu.png
+    tfa:
+      - sms
+      - phone
+      - software
+    exceptions: "Requires submitting a support ticket to activate. Currently only applies to email, but they are looking into implementing it account-wide."
+    doc: https://support.atu.edu/support/solutions/folders/7000074931/
+
   - name: Babbel
     url: https://www.babbel.com
     img: babbel.png
