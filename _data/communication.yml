@@ -3,7 +3,7 @@ websites:
     url: https://actionnetwork.org/
     img: actionnetwork.png
     tfa:
-      - software
+      - totp
     doc: https://help.actionnetwork.org/hc/en-us/articles/217206826
 
   - name: Basecamp
@@ -23,7 +23,7 @@ websites:
     url: https://capsulecrm.com/
     img: capsule.png
     tfa:
-      - software
+      - totp
     doc: https://capsulecrm.com/support/user-preferences/#enabling-two-factor-authentication
 
   - name: Carbon Black Community Exchange
@@ -37,21 +37,21 @@ websites:
     img: cloze.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.cloze.com/knowledge_base/topics/how-do-i-enable-2-step-authentication
 
   - name: Customer.io
     url: https://customer.io
     img: customerio.png
     tfa:
-      - software
-    doc: https://customer.io/docs/two-factor-auth.html
+      - totp
+    doc: https://customer.io/docs/two-factor-auth
 
   - name: Direct Mail
     url: https://directmailmac.com
     img: directmail.png
     tfa:
-      - software
+      - totp
     doc: https://directmailmac.com/support/article/507
 
   - name: Discord
@@ -60,7 +60,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://support.discordapp.com/hc/en-us/articles/219576828
 
   - name: Disqus
@@ -90,15 +90,15 @@ websites:
     url: https://frontapp.com
     img: front_app.png
     tfa:
-      - software
-    doc: https://community.frontapp.com/t/q56jf8/activating-two-factor-authentication-2fa
+      - totp
+    doc: https://help.frontapp.com/t/36249g
 
   - name: Grape
     url: https://chatgrape.com/
     img: grape.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://chatgrape.com/doc/deployment/2fa.html
 
   - name: GroupMe
@@ -114,8 +114,9 @@ websites:
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - proprietary
+      - totp
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: HubSpot
@@ -123,7 +124,7 @@ websites:
     img: hubspot.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://knowledge.hubspot.com/articles/kcs_article/account/how-can-i-set-up-two-factor-authentication-for-my-hubspot-login
 
   - name: IRCCloud
@@ -149,14 +150,14 @@ websites:
     img: mailchimp.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://kb.mailchimp.com/accounts/login/set-up-a-two-factor-authentication-app-at-login
 
   - name: Mailgun
     url: https://www.mailgun.com
     img: mailgun.png
     tfa:
-      - software
+      - totp
     doc: https://help.mailgun.com/hc/en-us/articles/360011664433
 
   - name: Maxemail
@@ -184,8 +185,8 @@ websites:
     tfa:
       - sms
       - email
-      - software
-      - hardware
+      - totp
+      - u2f
     doc: https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/add_time-based_token.htm
 
   - name: SendGrid
@@ -193,7 +194,7 @@ websites:
     img: sendgrid.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://sendgrid.com/docs/ui/account-and-settings/two-factor-authentication/
     exception: "Software authentication requires the Authy app."
 
@@ -201,7 +202,7 @@ websites:
     url: https://app.sendloop.com
     img: sendloop.png
     tfa:
-      - software
+      - proprietary
     doc: https://help.sendloop.com/docs/securing-your-account
 
   - name: Signal
@@ -217,8 +218,10 @@ websites:
     img: skype.png
     tfa:
       - sms
-      - email
-      - software
+      - proprietary
+      - totp
+      - u2f
+      - phone
     doc: https://support.microsoft.com/en-us/help/12408/
     exception: "Must be associated with a Microsoft Account."
 
@@ -227,7 +230,7 @@ websites:
     img: slack.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://get.slack.help/hc/en-us/articles/204509068
 
   - name: SocketLabs
@@ -235,22 +238,22 @@ websites:
     img: socketlabs.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.socketlabs.com/docs/two-step-verification
 
   - name: SparkPost
     url: https://sparkpost.com/
     img: sparkpost.png
     tfa:
-      - software
+      - totp
     doc: https://www.sparkpost.com/docs/my-account-and-profile/enabling-two-factor-authentication/
 
   - name: Stackfield
     url: https://www.stackfield.com/
     img: stackfield.png
     tfa:
-      - software
-    doc: https://en.stackfield.help/article/92-activating-deactivating-the-two-factor-authentication
+      - totp
+    doc: https://www.stackfield.com/help/-2032
 
   - name: TeamSpeak
     url: https://www.teamspeak.com/
