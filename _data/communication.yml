@@ -9,8 +9,9 @@ websites:
   - name: Basecamp
     url: https://basecamp.com/
     img: basecamp.png
-    twitter: basecamp
-    email_address: email@basecamp.com
+    tfa:
+      - totp
+    doc: https://3.basecamp-help.com/article/84-logging-in#enable-two-factor-authentication
 
   - name: Campfire
     url: https://campfirenow.com/
