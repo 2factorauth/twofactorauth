@@ -505,6 +505,15 @@ websites:
     facebook: HuntingtonBank
     img: huntingtonnationalbank.png
 
+  - name: HypoVereinsbank
+    url: https://www.hypovereinsbank.de/
+    img: hypovereinsbank.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.hypovereinsbank.de/hvb/services/digitales-banking/psd2/tan-verfahren
+
   - name: IberiaBank
     url: https://www.iberiabank.com
     twitter: IBERIABANK
