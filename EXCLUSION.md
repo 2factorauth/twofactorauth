@@ -4,7 +4,7 @@ Below is a list of categories and websites that we've opted out from listing on 
 
 Apart from the reasons stated below, these exclusions are also intended to prevent TwoFactorAuth.org from being added to any professional or academic web filters, where automatic addition of sites supersedes human checks during which the goal of our project would be weighted higher than the link to a potentially questionable site.
 
-If you want to make a copy (fork) of our site to list any of these sites you're welcome to do so as long as you comply with our [license](https://github.com/2factorauth/twofactorauth/blob/master/LICENSE).
+If you want to make a copy (fork) of our site to list any of these sites you're welcome to do so as long as you comply with our [license](LICENSE).
 
 ## Categories
 
@@ -15,8 +15,15 @@ If you want to make a copy (fork) of our site to list any of these sites you're 
 
 *   #### Self-hosted services
 
-    The category "self-hosted services/sites" includes all types of software that's designed to be hosted by the end user (such as [ownCloud](https://owncloud.org/), [Nextcloud](https://nextcloud.com/), [Mastodon](https://joinmastodon.org/), [phpBB](https://www.phpbb.com/), [XenForo](https://xenforo.com/) etc).  
-    It also includes [Wordpress.org](https://wordpress.org/) (the open source software) but not [Wordpress.com](https://wordpress.com/) (the company).
+    The category "self-hosted services/sites" includes all types of software that's designed to be hosted by the end user. These are excluded from listing unless all these points are met:
+
+    1. All [Site Criteria](CONTRIBUTING.md#site-criteria) and [Guidelines](CONTRIBUTING.md#guidelines) are met
+
+    2. Public interest and public accessibility are given  
+
+    3. The site has an independent authentication database
+
+    4. The underlying service supports 2FA natively or through a first-party (developer) plugin
 
     There are several resons for why we've opted to not list such sites and services.
 
@@ -24,16 +31,8 @@ If you want to make a copy (fork) of our site to list any of these sites you're 
 
     -   If the core project doesn't support two factor authentication but instead through plugins it would mean that we would have to list all plugins that enable two factor authentication for the service. Something that is currently impossible with our website layout.
 
-    However, this exclusion can be lifted by the active maintainers given all these points are met:
+    If you have any questions regarding whether or not a site qualifies for listing, simply open an issue and we'll take a look.
 
-    1.  All [Site Criteria](CONTRIBUTING.md#site-criteria) and [Guidelines](CONTRIBUTING.md#guidelines) are met
-
-    1.  Public interest and public accessibility are given  
-
-    1.  The site has an independent authentication database
-
-    1.  The underlying service supports 2FA natively or through a first-party (developer) plugin
-    
 *   #### Potential controversial sites 
 
     Any site that could damage the reputation of TwoFactorAuth.org and/or lead to any controversy with either the maintainers or users, should not be listed.
