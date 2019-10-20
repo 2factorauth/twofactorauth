@@ -944,11 +944,12 @@ websites:
 
   - name: Sparkasse
     url: https://www.sparkasse.de/
-    twitter: sparkasse
-    facebook: sparkasse
-    email_address: sparkasse@sparkassen-finanzportal.de
     img: sparkasse.png
-    lang: de
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.sparkasse.de/service/sicherheit-im-internet/tan-verfahren.html
 
   - name: Starling Bank
     url: https://www.starlingbank.com/
