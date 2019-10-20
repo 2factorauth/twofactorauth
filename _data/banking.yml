@@ -785,10 +785,11 @@ websites:
 
   - name: Postbank
     url: https://www.postbank.de/
-    twitter: postbank
-    facebook: postbank
     img: postbank.png
-    lang: de
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.postbank.de/privatkunden/sicherheitsverfahren.html
 
   - name: PosteItaliane
     url: https://www.poste.it/
