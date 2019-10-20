@@ -1008,9 +1008,11 @@ websites:
   - name: TARGOBANK
     url: https://www.targobank.de/
     img: targobank.png
-    twitter: TARGOBANK
-    facebook: targobank
-    lang: de
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.targobank.de/service/psd2/index.html
 
   - name: TBC Bank
     url: https://www.tbcbank.ge
