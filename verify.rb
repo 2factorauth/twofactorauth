@@ -25,7 +25,7 @@ def error(msg)
   puts "  #{@output}. #{msg}"
 end
 
-# rubocop:disable AbcSize
+# rubocop:disable Metrics/AbcSize
 def test_img(img, name, imgs, section)
   # Exception if image file not found
   raise "#{section}: #{name} image not found." unless File.exist?(img)
@@ -55,7 +55,7 @@ def test_img_size(img)
   @warning += 1
 end
 
-# rubocop:disable MethodLength
+# rubocop:disable Metrics/MethodLength
 def process_section(section, validator)
   section_file = "_data/#{section['id']}.yml"
   data = SafeYAML.load_file(File.join(__dir__, section_file))
@@ -87,7 +87,7 @@ def process_section(section, validator)
     error("#{img} is not used")
   end
 end
-# rubocop:enable MethodLength
+# rubocop:enable Metrics/MethodLength
 
 def validate_data(validator, data, file, identifier, subset = nil)
   val = 2
@@ -115,7 +115,7 @@ def parse_error_msg(error, val, subset)
 
   msg
 end
-# rubocop:enable AbcSize
+# rubocop:enable Metrics/AbcSize
 
 def validate_schema(parser, schema)
   parser.parse_file(File.join(__dir__, schema))

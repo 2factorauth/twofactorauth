@@ -48,7 +48,7 @@ end
 
 RuboCop::RakeTask.new
 
-# rubocop:disable MethodLength
+# rubocop:disable Metrics/MethodLength
 def check_site(options = {})
   require 'html-proofer'
 
@@ -69,7 +69,7 @@ def check_site(options = {})
   }
   HTMLProofer.check_directory(dir, defaults.merge(options)).run
 end
-# rubocop:enable MethodLength
+# rubocop:enable Metrics/MethodLength
 
 def jekyll_site_dir
   dir = './_site'
