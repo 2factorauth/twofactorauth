@@ -39,8 +39,10 @@ websites:
   - name: Starbucks
     url: https://www.starbucks.com/
     img: starbucks.png
-    twitter: Starbucks
-    facebook: Starbucks
+    tfa:
+      - sms
+      - phone
+    doc: https://customerservice.starbucks.com/app/answers/detail/a_id/6180/kw/two%20factor%20authentication
 
   - name: Taco Bell
     url: https://www.tacobell.com
