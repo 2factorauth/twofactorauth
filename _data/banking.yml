@@ -802,6 +802,15 @@ websites:
     img: posteitaliane.png
     lang: it
 
+  - name: PSD Banken
+    url: https://www.psd-bank.de/
+    img: psd.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.psd-bank.de/tanbereich/tanverfahren/c204.html
+
   - name: Rabobank
     url: https://www.rabobank.nl/
     img: rabobank.png
