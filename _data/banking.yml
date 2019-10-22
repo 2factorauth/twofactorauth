@@ -938,11 +938,11 @@ websites:
 
   - name: Sparda Banken
     url: https://www.sparda.de/
-    twitter: SpardaBerlin
-    facebook: spardaberlin
-    email_address: info@sparda-verband.de
     img: spardabank.png
-    lang: de
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.sparda.de/online-sicherheit-psd2/
 
   - name: Sparkasse
     url: https://www.sparkasse.de/
