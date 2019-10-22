@@ -376,6 +376,15 @@ websites:
       - hardware
     doc: https://www.dnb.no/privat/kundeservice/innlogging-nettbank.html
 
+  - name: Donner & Reuschel
+    url: https://www.donner-reuschel.de/
+    img: donner-reuschel.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://banking.donner-reuschel.de/de/pdf/datensicherheit.pdf
+
   - name: Dutch-Bangla Bank Limited (DBBL)
     url: https://www.dutchbanglabank.com/
     email_address: hrd_head@dbbl.com.bd
