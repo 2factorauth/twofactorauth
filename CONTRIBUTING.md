@@ -96,6 +96,7 @@ and follow the template below:
   title: Category Name
   icon: icon-class
 ```
+The `icon-class` value needs to be chosen from https://semantic-ui.com/elements/icon.html.
 
 Then create a new file in the `_data` directory with the same name as your section's
 id, using the `.yml` extension.
