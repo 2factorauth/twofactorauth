@@ -439,6 +439,14 @@ websites:
       - email
     doc: https://www.fairwinds.org/inside/privacy/security_we.asp#multifactor-auth
 
+  - name: Fidor
+    url: https://www.fidor.de/
+    img: fidor.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.fidor.de/psd2-fur-privat-und-geschaeftskunden
+
   - name: Fifth Third Bank
     url: https://www.53.com/
     twitter: FifthThird
