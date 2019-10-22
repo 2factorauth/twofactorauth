@@ -86,6 +86,13 @@ websites:
       - hardware
     doc: https://helpdesk.lastpass.com/multifactor-authentication-options/
 
+  - name: netID
+    url: https://netid.de/
+    img: netid.png
+    tfa:
+      - totp
+    doc: https://hilfe.netid.de/netidni/2fa/index.html
+
   - name: Okta
     url: https://www.okta.com/
     img: okta.png
