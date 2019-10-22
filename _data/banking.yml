@@ -280,11 +280,12 @@ websites:
 
   - name: Commerzbank
     url: https://www.commerzbank.de/
-    twitter: commerzbank
-    facebook: commerzbank
     img: commerzbank.png
-    email_address: directbanking@commerzbank.com
-    lang: de
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.commerzbank.de/portal/de/privatkunden/konten-karten/wissen/zahlungsverkehr-organisieren/psd2.html
 
   - name: Commonwealth Bank of Australia
     url: https://www.commbank.com.au/
