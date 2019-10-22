@@ -1122,6 +1122,16 @@ websites:
       - software
     doc: https://www.uwcu.org/OnlineBanking/OnlineSecurity/VerifyU.aspx
 
+  - name: Volksbanken Raiffeisenbanken
+    url: https://www.vr.de/
+    img: vr.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.vr.de/privatkunden/unsere-produkte/was-ist-ein-girokonto/online-banking.html
+    exception: "Support for 2fa types depends on regional V&R banks."
+
   - name: VyStar Credit Union
     url: https://vystarcu.org/
     twitter: OfficialVyStar
