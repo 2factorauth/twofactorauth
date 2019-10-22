@@ -68,7 +68,8 @@ websites:
     url: https://protonvpn.com/
     img: protonvpn.png
     tfa:
-      - software
+      - totp
+    doc: https://protonvpn.com/support/two-factor-authentication/
 
   - name: PureVPN
     url: https://www.purevpn.com

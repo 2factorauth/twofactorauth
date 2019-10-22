@@ -1,46 +1,35 @@
 websites:
-  - name: ANXPRO Bitcoin Exchange
-    url: https://anxpro.com/
-    img: anxpro.png
-    tfa:
-      - software
-    doc: https://anxpro.com/pages/security
-
   - name: AnycoinDirect
     url: https://anycoindirect.eu
     img: anycoindirect.png
     tfa:
-      - software
+      - totp
     doc: https://support.anycoindirect.eu/hc/en-gb/articles/115001423191
 
   - name: Binance
     url: https://www.binance.com/
     img: binance.png
     tfa:
-      - software
-    doc: https://support.binance.com/hc/en-us/articles/115002439332
+      - totp
+      - hardware
+      - sms
+    doc: https://www.binance.com/en/support/sections/360000011592
 
   - name: BitBay
     url: https://bitbay.net/
     img: bitbay.png
     tfa:
       - email
-      - software
+      - totp
     doc: https://bitbay.net/en/safety
 
   - name: Bitcoin.de
     url: https://bitcoin.de
     img: bitcoinde.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://www.bitcoin.de/de/faq/was-ist-die-2-step-verification-2-faktor-authentifizierung/46.html
-
-  - name: Bitcoins Norway
-    url: https://bitcoinsnorway.com
-    img: bitcoinsnorway.png
-    tfa:
-      - software
 
   - name: BitcoinTrade
     url: https://bitcointrade.com.br/
@@ -52,9 +41,8 @@ websites:
     url: https://www.bitfinex.com
     img: bitfinex.png
     tfa:
-      - sms
-      - software
-      - hardware
+      - totp
+      - u2f
     doc: https://support.bitfinex.com/hc/en-us/sections/203192029
 
   - name: Bitflyer
@@ -63,7 +51,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://bitflyer.com/en-jp/faq/2-10
 
   - name: BitGo
@@ -94,21 +82,21 @@ websites:
     url: https://bitpay.com
     img: bitpay.png
     tfa:
-      - software
+      - totp
     doc: https://support.bitpay.com/hc/en-us/articles/360006612692
 
   - name: Bitstamp
     url: https://bitstamp.net
     img: bitstamp.png
     tfa:
-      - software
+      - totp
     doc: https://www.bitstamp.net/s/documents/bitstamp_2_factor_authentication_guide.pdf
 
   - name: Bittrex
     url: https://bittrex.com
     img: bittrex.png
     tfa:
-      - software
+      - totp
     doc: https://bittrex.zendesk.com/hc/en-us/articles/115000198612
 
   - name: Blockchain
@@ -116,8 +104,7 @@ websites:
     img: blockchain.png
     tfa:
       - sms
-      - email
-      - software
+      - totp
       - hardware
     doc: https://support.blockchain.com/hc/en-us/articles/211164103
 
@@ -125,14 +112,14 @@ websites:
     url: https://braziliex.com/
     img: braziliex.png
     tfa:
-      - software
+      - totp
     doc: https://braziliex.com/faq/index.php?id=288
 
   - name: BTC BOX
     url: https://www.btcbox.co.jp/
     img: btcbox.png
     tfa:
-      - software
+      - totp
     doc: https://support.btcbox.co.jp/hc/en-us/articles/360001886053
 
   - name: BTC Markets
@@ -147,14 +134,14 @@ websites:
     url: https://btcpop.co/
     img: btcpop.png
     tfa:
-      - software
+      - totp
     doc: https://blog.btcpop.co/2017/04/27/signing-security-btcpop-co-account/
 
   - name: BX Thailand
     url: https://bx.in.th/
     img: bxthailand.png
     tfa:
-      - software
+      - totp
     doc: https://bx.in.th/info/faq/
 
   - name: CEX.IO
@@ -162,14 +149,14 @@ websites:
     img: cex.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://cex.io/guide#4
 
   - name: Changelly
     url: https://changelly.com/
     img: changelly.png
     tfa:
-      - software
+      - totp
     doc: https://changelly.com/faq#what-is-2fa-authentication
 
   - name: Circle
@@ -177,7 +164,7 @@ websites:
     img: circle.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.circle.com/hc/en-us/articles/213560483
 
   - name: COBINHOOD
@@ -185,7 +172,7 @@ websites:
     img: cobinhood.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://cobinhood.zendesk.com/hc/en-us/articles/115003476871
 
   - name: Coin Cafe
@@ -193,14 +180,14 @@ websites:
     img: coincafe.png
     tfa:
       - email
-      - software
+      - totp
     doc: https://coincafeinc.wordpress.com/2016/01/08/2fa/
 
   - name: Coinapult
     url: https://coinapult.com
     img: coinapult.png
     tfa:
-      - software
+      - totp
     doc: https://coinapult.com/faq
 
   - name: Coinbase
@@ -208,9 +195,8 @@ websites:
     img: coinbase.png
     tfa:
       - sms
-      - phone
-      - software
-      - hardware
+      - totp
+      - u2f
     doc: https://support.coinbase.com/customer/en/portal/articles/1658338
 
   - name: CoinDeal
@@ -218,22 +204,22 @@ websites:
     img: coindeal.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://coindeal.com/security
 
   - name: CoinFalcon
     url: https://coinfalcon.com/
     img: coinfalcon.png
     tfa:
-      - software
-    doc: https://support.coinfalcon.com/en-us/article/how-to-setup-two-factor-authentication-2fa-nkjppd/
+      - totp
+    doc: https://support.coinfalcon.com/en-us/article/-nkjppd/
 
   - name: Coinfloor
     url: https://www.coinfloor.co.uk/
     img: coinfloor.png
     tfa:
       - sms
-      - software
+      - proprietary
       - hardware
     doc: https://www.coinfloor.co.uk/security
 
@@ -241,14 +227,14 @@ websites:
     url: https://coingate.com
     img: coingate.png
     tfa:
-      - software
-    doc: https://support.coingate.com/en/65/how-do-i-set-up-2-factor-authentication-2fa-on-my-account
+      - totp
+    doc: https://support.coingate.com/en/65/-
 
   - name: Coinify (Merchants)
     url: https://coinify.com/merchants
     img: coinify.png
     tfa:
-      - software
+      - totp
       - hardware
     exception: "While Coinify has aquired BIPS to allow for trading, only merchant accounts support TFA at this time. Trading is done through a separate account. Hardware support is limited to a print-out character matrix."
 
@@ -257,7 +243,7 @@ websites:
     img: coinjar.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.coinjar.com/hc/en-us/articles/202910075
 
   - name: CoinOne
@@ -265,13 +251,12 @@ websites:
     img: coinone.png
     tfa:
       - software
-    doc: https://coinone.co.kr/static/download/coinone_guide.pdf
 
   - name: Coins.ph
     url: https://coins.ph/
     img: coinsph.png
     tfa:
-      - software
+      - totp
     doc: https://support.coins.ph/hc/en-us/articles/202604924
 
   - name: Coinspot
@@ -279,20 +264,20 @@ websites:
     img: coinspot.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://coinspot.zendesk.com/hc/en-us/sections/115000049254
 
   - name: CoinTracking
     url: https://cointracking.info/
     img: cointracking.png
     tfa:
-      - software
+      - totp
 
   - name: Coinut
     url: https://coinut.com/
     img: coinut.png
     tfa:
-      - software
+      - totp
     doc: https://help.coinut.com/hc/en-us/articles/360005061354
 
   - name: Cryptopia
@@ -300,7 +285,8 @@ websites:
     img: cryptopia.png
     tfa:
       - email
-      - software
+      - totp
+      - proprietary
     doc: https://support.cryptopia.co.nz/csm?id=kb_article&sys_id=a8c51421dbed1f009990f6fcbf96194a
 
   - name: DSX
@@ -308,7 +294,8 @@ websites:
     img: dsx.png
     tfa:
       - sms
-      - software
+      - totp
+      - u2f
     doc: https://docs.dsx.uk/dsx/getting-started-with-dsx/your-security-is-our-priority/enable-two-factor-authentication
 
   - name: Gatehub
@@ -316,35 +303,36 @@ websites:
     img: gatehub.png
     tfa:
       - sms
-      - software
+      - totp
 
   - name: Gemini
     url: https://gemini.com/
     img: gemini.png
     tfa:
       - sms
-      - software
+      - proprietary
+      - phone
     doc: https://gemini.com/blog/better-two-factor-authentication/
 
   - name: HitBTC
     url: https://www.hitbtc.com/
     img: hitbtc.png
     tfa:
-      - software
+      - totp
     doc: https://support.hitbtc.com/hc/en-us/articles/360000719229
 
   - name: Korbit
     url: https://www.korbit.co.kr
     img: korbit.png
     tfa:
-      - software
+      - totp
     doc: https://support.korbit.co.kr/customer/en/portal/articles/1717692
 
   - name: Kraken
     url: https://www.kraken.com/
     img: kraken.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://support.kraken.com/hc/en-us/articles/360000426923
 
@@ -352,63 +340,64 @@ websites:
     url: https://www.litebit.eu/
     img: litebit.png
     tfa:
-      - software
+      - sms
+      - totp
     doc: https://support.litebit.eu/hc/en-us/articles/115000953504
 
   - name: LocalBitcoins
     url: https://localbitcoins.com/
     img: localbitcoins.png
     tfa:
-      - software
-    doc: https://localbitcoins.blogspot.com.au/2013/05/using-two-factor-authentication-on.html
+      - totp
+    doc: https://localbitcoins.com/guides/security
 
   - name: localethereum
     url: https://localethereum.com
     img: localethereum.png
     tfa:
       - email
-      - software
+      - totp
 
   - name: Luno
     url: https://www.luno.com/
     img: luno.png
     tfa:
-      - software
+      - totp
     doc: https://www.luno.com/help/en/articles/1000203420
 
   - name: Mercado Bitcoin
     url: https://www.mercadobitcoin.com.br/
     img: mercadobitcoin.png
     tfa:
-      - software
+      - totp
     doc: https://suporte.mercadobitcoin.com.br/hc/pt-br/articles/360000385152
 
   - name: Poloniex
     url: https://poloniex.com/
     img: poloniex.png
     tfa:
-      - software
+      - totp
     doc: https://support.poloniex.circle.com/hc/en-us/articles/360025399352
 
   - name: SatoshiTango
     url: https://satoshitango.com/
     img: satoshitango.png
     tfa:
-      - software
+      - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2321#issuecomment-273971890
 
   - name: Uphold
     url: https://uphold.com/
     img: uphold.png
     tfa:
-      - software
+      - totp
     doc: https://support.uphold.com/hc/en-us/articles/360024042471
 
   - name: Wirex
     url: https://wirexapp.com/
     img: wirex.png
     tfa:
-      - software
+      - totp
     doc: https://wirexapp.com/hc/articles/207160259
 
   - name: Xapo
@@ -417,5 +406,5 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
     doc: https://support.xapo.com/en/articles?id=59

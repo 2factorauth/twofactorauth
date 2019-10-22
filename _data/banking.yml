@@ -263,10 +263,12 @@ websites:
 
   - name: comdirect
     url: https://www.comdirect.de/
-    twitter: comdirect
-    facebook: comdirect
     img: comdirect.png
-    lang: de
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.comdirect.de/konto/psd2-phototan.html
 
   - name: Commercial Bank of Qatar
     url: http://www.cbq.qa/
@@ -278,11 +280,12 @@ websites:
 
   - name: Commerzbank
     url: https://www.commerzbank.de/
-    twitter: commerzbank
-    facebook: commerzbank
     img: commerzbank.png
-    email_address: directbanking@commerzbank.com
-    lang: de
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.commerzbank.de/portal/de/privatkunden/konten-karten/wissen/zahlungsverkehr-organisieren/psd2.html
 
   - name: Commonwealth Bank of Australia
     url: https://www.commbank.com.au/
@@ -504,6 +507,15 @@ websites:
     twitter: Huntington_Bank
     facebook: HuntingtonBank
     img: huntingtonnationalbank.png
+
+  - name: HypoVereinsbank
+    url: https://www.hypovereinsbank.de/
+    img: hypovereinsbank.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.hypovereinsbank.de/hvb/services/digitales-banking/psd2/tan-verfahren
 
   - name: IberiaBank
     url: https://www.iberiabank.com
@@ -776,10 +788,11 @@ websites:
 
   - name: Postbank
     url: https://www.postbank.de/
-    twitter: postbank
-    facebook: postbank
     img: postbank.png
-    lang: de
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.postbank.de/privatkunden/sicherheitsverfahren.html
 
   - name: PosteItaliane
     url: https://www.poste.it/
@@ -926,19 +939,20 @@ websites:
 
   - name: Sparda Banken
     url: https://www.sparda.de/
-    twitter: SpardaBerlin
-    facebook: spardaberlin
-    email_address: info@sparda-verband.de
     img: spardabank.png
-    lang: de
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.sparda.de/online-sicherheit-psd2/
 
   - name: Sparkasse
     url: https://www.sparkasse.de/
-    twitter: sparkasse
-    facebook: sparkasse
-    email_address: sparkasse@sparkassen-finanzportal.de
     img: sparkasse.png
-    lang: de
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.sparkasse.de/service/sicherheit-im-internet/tan-verfahren.html
 
   - name: Starling Bank
     url: https://www.starlingbank.com/
@@ -998,9 +1012,11 @@ websites:
   - name: TARGOBANK
     url: https://www.targobank.de/
     img: targobank.png
-    twitter: TARGOBANK
-    facebook: targobank
-    lang: de
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.targobank.de/service/psd2/index.html
 
   - name: TBC Bank
     url: https://www.tbcbank.ge
