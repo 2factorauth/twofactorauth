@@ -650,8 +650,10 @@ websites:
   - name: N26
     url: https://n26.com
     img: n26.png
-    twitter: n26
-    facebook: N26
+    tfa:
+      - sms
+      - proprietary
+    doc: https://support.n26.com/en-de/getting-started/psd2/psd2-strong-customer-authentication
 
   - name: NASA Federal Credit Union
     url: https://www.nasafcu.com/
