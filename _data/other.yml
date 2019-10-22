@@ -205,6 +205,13 @@ websites:
       - software
     doc: https://support.everlaw.com/hc/en-us/articles/206312165
 
+  - name: FAX.PLUS
+    url: https://www.fax.plus
+    img: faxplus.png
+    tfa:
+      - totp
+    doc: https://www.fax.plus/help/articles/how-can-i-enable-disable-two-factor-authentication
+
   - name: Figma
     url: https://www.figma.com/
     img: figma.png
