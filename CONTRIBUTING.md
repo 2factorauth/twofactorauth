@@ -21,8 +21,8 @@ are stored in folders corresponding to each of those categories in their own
    to be under 2.5 kB.
 3. **HTTPS links**: All sites that support HTTPS should also be linked with an
    HTTPS address.
-4. **Alexa top 200k**: A new site, that is not already listed, has to be within the
-   Alexa top 200k ranking. You can check the ranking of a site [here](https://www.alexa.com/siteinfo).
+4. **Alexa top 200K**: A new site, that is not already listed, has to be within the
+   Alexa top 200,000 ranking. You can check the ranking of a site [here][alexa].
 5. **No 2FA providers**: We do not list 2FA providers, such as [Authy](https://authy.com/), [Duo](https://duo.com/) or [Google Authenticator](https://github.com/google/google-authenticator).
 6. **Be Awesome**: You need to be awesome. That is all.
 
@@ -91,7 +91,7 @@ View the complete list in the [EXCLUSION.md file][exclude].
 To add a new category, modify the `sections` value in [sections.yml](_data/sections.yml)
 and follow the template below:
 
-```yml
+```YAML
 - id: category-id
   title: Category Name
   icon: icon-class
@@ -108,23 +108,26 @@ requirements](#a-note-on-definitions) of Two Factor Auth.
 If you are adding multiple sites to the TwoFactorAuth list, please create a new
 git branch for each website, and submit a separate pull request for each branch.
 More information regarding how to create new git branches can be found on
-[GitHub's Help Page](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/)
-or [DigitalOcean's Tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-git-branches).
+[GitHub's Help Page][github-tutorial]
+or [DigitalOcean's Tutorial][do-tutorial].
 
 Adding a new website should be pretty straight-forward. The `websites` array should
 already be defined; simply add a new website to it as shown in the following example:
 
-```yml
+```YAML
 websites:
   - name: Site Name
     url: https://www.site.com/
     img: site.png
-    tfa: Yes
-    sms: Yes
-    email: Yes
-    phone: Yes
-    software: Yes
-    hardware: Yes
+    tfa:
+      - sms
+      - email
+      - phone
+      - software
+      - hardware
+      - proprietary (Software based 2FA that requires a special app to use)
+      - totp (Normal software 2FA)
+      - u2f
     doc: <link to site TFA documentation>
 ```
 
@@ -139,16 +142,19 @@ Sites supporting TFA should not have a `twitter`, `facebook` or `email_address` 
 
 The following is an example of a website that *supports* TFA:
 
-```yml
-    - name: YouTube
-      url: https://www.youtube.com/
-      img: youtube.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      phone: Yes
-      hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+```YAML
+  - name: YouTube
+    url: https://www.youtube.com/
+    img: youtube.png
+    tfa:
+      - sms
+      - email
+      - phone
+      - software
+      - hardware
+      - totp
+      - u2f
+    doc: http://www.google.com/intl/en-US/landing/2step/features.html
 ```
 
 #### Adding a site that *does not* support TFA
@@ -156,19 +162,17 @@ The following is an example of a website that *supports* TFA:
 If a site does not provide TFA, the `twitter:` field should be included if the site uses
 Twitter. Facebook can also be included using the `facebook` field, as well as Email using
 the `email_address` field. If the website does not use the English language, the `lang:`
-field should also be included. The fields `sms:`, `email:`, `phone:`, `software:` and
-`hardware:` can be completely removed.
+field should also be included. The fields `tfa:` and `doc:` can be completely removed.
 
 The following is an example of a website that *does not* support TFA:
 
-```yml
+```YAML
     - name: Netflix
       url: https://www.netflix.com/us/
       twitter: Netflixhelps
       facebook: netflix
       email_address: example@netflix.com (Only if available and monitored)
       img: netflix.png
-      tfa: No
       lang: <ISO 639-1 language code> (Only for non-English websites)
 ```
 
@@ -176,57 +180,16 @@ The `lang:` field is only used for non-English websites. The language codes shou
 
 ### Exceptions & Restrictions
 
-If a site doesn't support TFA in certain countries, you can note this on the
-website. There are 4 ways to customize how it is displayed:
+If a site is only available in certain countries or requires the user to do something out of the ordinary to set up 2FA, you can note this on the
+website.
 
-1. A default message acknowledging restrictions will be used with the following
-   config:
-
-   ```yml
+   ```YAML
     - name: Site Name
       url: https://www.site.com/
       img: site.png
-      tfa: Yes
-      sms: Yes
-      exceptions: Yes
-      doc: <link to site TFA documentation>
-   ```
-2. The message can be replaced with a custom set of words:
-
-   ```yml
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-          text: "Specific text goes here."
-      doc: <link to site TFA documentation>
-   ```
-3. The icon can be made into a link in which more details can be revealed such
-   as country specific info and anything else.
-
-   ```yml
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-          link: Yes
-      doc: <link to site TFA documentation>
-   ```
-4. 2 and 3 can be combined into:
-
-   ```yml
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-          link: Yes
-          text: "Specific text can go here as well."
+      tfa:
+        - sms
+      exception: "Specific text goes here."
       doc: <link to site TFA documentation>
    ```
 
@@ -245,8 +208,7 @@ website. There are 4 ways to customize how it is displayed:
 - If a site does not have TFA but there is documentation that they are adding
   it, then use:
 
-  ```yml
-  tfa: No
+  ```YAML
   status: <url to documentation>
   ```
 
@@ -273,3 +235,6 @@ For context, check out the discussion in issue [#242][242].
 [jekyll]: http://jekyllrb.com/
 [travis]: https://travis-ci.org/2factorauth/twofactorauth
 [yaml]: http://www.yaml.org/
+[alexa]: https://www.alexa.com/siteinfo
+[github-tutorial]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
+[do-tutorial]: https://www.digitalocean.com/community/tutorials/how-to-use-git-branches
