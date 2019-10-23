@@ -329,6 +329,14 @@ websites:
     img: desjardins.png
     lang: fr
 
+  - name: Deutsche Apotheker- und &Auml;rztebank
+    url: https://www.apobank.de/
+    img: apobank.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.apobank.de/footer/tan-app.html
+
   - name: Deutsche Kreditbank (DKB)
     url: https://www.dkb.de/
     img: dkb.png
