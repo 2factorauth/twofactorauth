@@ -396,6 +396,15 @@ websites:
       - hardware
     doc: https://www.erstebank.hr/content/dam/hr/ebc/www_erstebank_hr/gradani/downloads/e-bankarstvo/Upute%20za%20prijavu.pdf
 
+  - name: EthikBank
+    url: https://www.ethikbank.de/
+    img: ethikbank.png
+    tfa:
+      - sms
+      - hardware
+      - proprietary
+    doc: https://www.ethikbank.de/onlinebanking/sicherheit/psd-2.html#c20704
+
   - name: everbank.com
     url: https://everbank.com
     img: everbank.png
