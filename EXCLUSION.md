@@ -1,8 +1,8 @@
 # TwoFactorAuth.org excluded categories and websites
 
-Below is a list of categories and websites that we've opted out from listing on TwoFactorAuth.org.
+Below is a list of categories and websites that we, [the collaborators](https://github.com/orgs/2factorauth/teams/collaborators/members), have opted to not list on TwoFactorAuth.org.
 
-Apart from the reasons stated below, these exclusions are also intended to prevent TwoFactorAuth.org from being added to any professional or academic web filters, where automatic addition of sites supersedes human checks during which the goal of our project would be weighted higher than the link to a potentially questionable site.
+One of the primary concerns we seek to address with these exclusions is professional and academic web filters. We believe that the service that this site provides should be as accessible as possible, to help as many people as possible, in as many environments as possible. Dynamic web filters can block websites based solely on the existence of keywords which could lead to this service being filtered for mentioning or linking out to categories of websites that web admins have deemed unacceptable for their domain. While we believe that every site should make an effort to protect their users (which often includes enabling Two Factor Authentication), we also believe that accessibility to this list for all has more value than listing every possible site and service.
 
 If you want to make a copy (fork) of our site to list any of these sites you're welcome to do so as long as you comply with our [license](LICENSE).
 
@@ -10,8 +10,7 @@ If you want to make a copy (fork) of our site to list any of these sites you're 
 
 *   #### Pornographic sites
 
-    As the volunteers of [2factorauth](https://github.com/2factorauth) need to go through all sites to validate that the site/service provides 2FA to it's users and verify that the pull request meets our style guidelines we've chosen not to list sites that primarily host and serve pornographic content.
-    We've also chosen to do this so that we don't have to go through potentially disturbing or illegal material.
+    As the volunteers of [2factorauth](https://github.com/2factorauth) need to review all submissions to validate that the site/service provides 2FA to its users in addition to verifying that the pull request meets our style guidelines, we've chosen to not list sites that primarily host and serve pornographic content. Given the volunteer driven nature of this project, there is no guarantee that there will always be a collaborator available to review a submission that also does not have an  objection to reviewing such material. Special consideration must also be given due to the potential for content in this category to quickly cross subjective personal boundaries that vary widely from person to person.
 
 *   #### Self-hosted services
 
@@ -37,7 +36,6 @@ If you want to make a copy (fork) of our site to list any of these sites you're 
 
     Any site that could damage the reputation of TwoFactorAuth.org and/or lead to any controversy with either the maintainers or users, should not be listed.
     The group of active maintainers will decide on whether to include or exclude a site within a specific timeframe. Once an exclusion was decided upon, the site will be listed in the section below and - if a pull request exists - it will be closed.
-    This decision will also be in effect for pull requests that already existed before this exclusion documentation was published. 
 
 ## Sites
 
