@@ -363,8 +363,8 @@ websites:
   - name: Packagist
     url: https://packagist.org
     img: packagist.png
-    twitter: packagist
-    email_address: contact@packagist.org
+    tfa:
+      - totp
 
   - name: Panic Sync
     url: https://panic.com/
