@@ -17,7 +17,3 @@ jobs:
       timeout-minutes: 1
     - name: Test Rake script
       run: bundle exec rake
-    - name: Test external links
-      run: bundle exec rake proof_external
-      continue-on-error: true
-      timeout-minutes: 3
