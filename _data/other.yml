@@ -172,6 +172,9 @@ websites:
     img: dhl.png
     tfa:
       - email
+      - sms
+    doc: https://www.dhl.de/de/toolbar/footer/datenschutz.html#kundenkontoundempfaengerservices
+    exception: "The web interface uses e-mail, the app uses SMS for 2FA."
 
   - name: DirectAdmin
     url: https://www.directadmin.com
