@@ -1,11 +1,11 @@
-name: Jekyll site CI
+name: Jekyll Tests
 
 on: [push]
 
 jobs:
   Test_Jekyll:
     runs-on: ubuntu-latest
-    name: Test using Docker
+    name: Test Jekyll
     steps:
     - uses: actions/checkout@v1
     - name: Install requirements
