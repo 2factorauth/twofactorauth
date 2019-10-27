@@ -1,0 +1,19 @@
+name: Jekyll Tests
+
+on: [push]
+
+jobs:
+  Test_Jekyll:
+    runs-on: ubuntu-latest
+    name: Test Jekyll
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install requirements
+      run: |
+        sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev -y
+        sudo bundle install
+    - name: Build site
+      run: bundle exec jekyll build
+      timeout-minutes: 1
+    - name: Test Rake script
+      run: bundle exec rake
