@@ -35,38 +35,38 @@ end
 
 def test_img(img, name, imgs)
   # Exception if image file not found
-  raise "#{name} image not found." unless File.exist?(img)
+  raise "#{name}: image #{img} not found." unless File.exist?(img)
 
   # Remove img from array unless it doesn't exist (double reference case)
   imgs.delete_at(imgs.index(img)) unless imgs.index(img).nil?
 
   # Check image dimensions
-  error("#{img} is not #{@img_dimensions.join('x')} pixels.")\
+  error("#{name}: #{img} is not #{@img_dimensions.join('x')} pixels.")\
     unless FastImage.size(img) == @img_dimensions
 
-  test_img_file(img)
+  test_img_file(img, name)
 end
 
 # rubocop:disable Metrics/AbcSize
 # rubocop:disable Metrics/MethodLength
-def test_img_file(img)
+def test_img_file(img, name)
   # Check image file extension and type
-  error("#{img} is not using the #{@img_extension} format.")\
+  error("#{name}: #{img} is not using the #{@img_extension} format.")\
     unless File.extname(img) == @img_extension && FastImage.type(img) == :png
 
   # Check image file size
   img_size = File.size(img)
   unless img_size <= @img_max_size
-    error("#{img} should not be larger than #{@img_max_size} bytes. It is"\
-              " currently #{img_size} bytes.")
+    error("#{name}: #{img} must not be larger than #{@img_max_size} bytes. "\
+              "It is currently #{img_size} bytes.")
   end
 
   # Check image permissions
   perms = File.stat(img).mode.to_s(8).split(//).last(3).join
   # rubocop:disable Style/GuardClause
   unless @img_permissions.include?(perms)
-    error("#{img} permissions must be one of: #{@img_permissions.join(',')}. "\
-    "It is currently #{perms}.")
+    error("#{name}: #{img} permissions must be one of: "\
+    "#{@img_permissions.join(',')}. It is currently #{perms}.")
   end
   # rubocop:enable Style/GuardClause
 end
@@ -105,8 +105,8 @@ begin
       @tfa_tags[!website['tfa']].each do |tag|
         next if website[tag].nil?
 
-        error("\'#{tag}\' should NOT be "\
-            "present when tfa: #{website['tfa'] ? 'true' : 'false'}.")
+        error("#{website['name']}: \'#{tag}\' must NOT be present when "\
+            "\'tfa\' #{website['tfa'] ? 'is present' : 'is not present'}.")
       end
       test_img("img/#{section['id']}/#{website['img']}", website['name'],
                imgs)
