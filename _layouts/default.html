@@ -14,6 +14,13 @@
   <meta property="og:url" content="{{ page.url | prepend: site.url }}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
 
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta property="twitter:creator" content="{{ site.author }}">
+  <meta property="twitter:site" content="{{ site.twitter }}">
+  <meta property="twitter:image" content="{{ site.social_image }}">
+  <meta property="twitter:description" content="{{ page.description | default: site.description }}">
+
   <title>{{ page.title | default: site.title }}</title>
 
   <!-- Google Fonts should not use SRI hashes as the CSS served dynamically changes depending on browser -->
