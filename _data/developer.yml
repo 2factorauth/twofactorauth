@@ -364,8 +364,9 @@ websites:
   - name: Packagist
     url: https://packagist.org
     img: packagist.png
-    twitter: packagist
-    email_address: contact@packagist.org
+    tfa:
+      - totp
+    doc: https://github.com/composer/packagist/pull/1031
 
   - name: Panic Sync
     url: https://panic.com/
