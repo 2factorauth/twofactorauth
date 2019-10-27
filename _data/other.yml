@@ -90,6 +90,9 @@ websites:
     img: bookingcom.png
     tfa:
       - sms
+      - email
+    doc: "/notes/booking/"
+    exception: "Setup requires SMS verification"
 
   - name: CA Technologies
     url: https://www.ca.com/
