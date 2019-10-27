@@ -190,9 +190,10 @@ websites:
 
   - name: Docker
     url: https://www.docker.com/
-    twitter: Docker
-    facebook: docker.run
     img: docker.png
+    tfa:
+      - totp
+    doc: https://www.docker.com/blog/designing-docker-hub-2fa/
 
   - name: Domino Data Lab
     url: https://www.dominodatalab.com/
