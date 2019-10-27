@@ -57,16 +57,16 @@ def test_img_file(img, name)
   # Check image file size
   img_size = File.size(img)
   unless img_size <= @img_max_size
-    error("#{name}: #{img} must not be larger than #{@img_max_size} bytes. It is"\
-              " currently #{img_size} bytes.")
+    error("#{name}: #{img} must not be larger than #{@img_max_size} bytes. "\
+              "It is currently #{img_size} bytes.")
   end
 
   # Check image permissions
   perms = File.stat(img).mode.to_s(8).split(//).last(3).join
   # rubocop:disable Style/GuardClause
   unless @img_permissions.include?(perms)
-    error("#{name}: #{img} permissions must be one of: #{@img_permissions.join(',')}. "\
-    "It is currently #{perms}.")
+    error("#{name}: #{img} permissions must be one of: "\
+    "#{@img_permissions.join(',')}. It is currently #{perms}.")
   end
   # rubocop:enable Style/GuardClause
 end
@@ -105,8 +105,8 @@ begin
       @tfa_tags[!website['tfa']].each do |tag|
         next if website[tag].nil?
 
-        error("#{website['name']}: \'#{tag}\' must NOT be "\
-            "present when \'tfa\' #{website['tfa'] ? 'is present' : 'is not present'}.")
+        error("#{website['name']}: \'#{tag}\' must NOT be present when "\
+            "\'tfa\' #{website['tfa'] ? 'is present' : 'is not present'}.")
       end
       test_img("img/#{section['id']}/#{website['img']}", website['name'],
                imgs)
