@@ -11,6 +11,16 @@ websites:
     img: canadarevenueagency.png
     twitter: CanRevAgency
 
+  - name: CSAM (Belgium.be)
+    url: https://www.csam.be//en/
+    img: csam.png
+    tfa:
+      - sms
+      - software
+      - hardware
+    doc: https://sma-help.bosa.belgium.be/en
+    exception: "Belgian eID is the hardware token."
+
   - name: Datové schránky
     url: https://www.mojedatovaschranka.cz
     img: cz_datovky.png
