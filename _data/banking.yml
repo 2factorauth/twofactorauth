@@ -572,6 +572,14 @@ websites:
     facebook: labanquepostale
     img: labanquepostale.png
     lang: fr
+    
+  - name: Lake Michigan Credit Union
+    url: https://www.lmcu.org/
+    img: lakemichigancreditunion.png
+    tfa:
+      - proprietary
+    exception: "Software authentication requires Lake Michigan Credit Union Mobile App on Android or IOS"
+    doc: https://www.lmcu.org/personal/banking/services/mobile-authenticator/
 
   - name: LendingClub
     url: https://www.lendingclub.com/
