@@ -50,10 +50,12 @@ websites:
     url: https://www.fidelity.com
     img: fidelity.png
     tfa:
+      - sms
+      - phone
       - software
       - hardware
-    doc: "/notes/fidelity/"
-    exception: "Only available for some account types"
+    doc: https://www.fidelity.com/security/how-two-factor-authentication-works
+    exception: "Specific support varies between account types"
 
   - name: Flatex
     url: https://www.flatex.de/
