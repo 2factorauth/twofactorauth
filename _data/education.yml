@@ -371,6 +371,16 @@ websites:
     facebook: udemy
     email_address: support@udemy.com
 
+  - name: University of Delaware
+    url: https://www.udel.edu/
+    img: udel.png
+    tfa:
+      - totp
+      - phone
+      - sms
+      - hardware
+    doc: https://www1.udel.edu/it/help/2fa/main.html
+
   - name: University of Idaho
     url: https://www.uidaho.edu
     img: uidaho.png
