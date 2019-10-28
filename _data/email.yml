@@ -262,6 +262,8 @@ websites:
     img: zoho.png
     tfa:
       - sms
-      - software
-      - hardware
-    doc: https://adminconsole.wiki.zoho.com/mail/Two-Factor-Authentication.html
+      - proprietary
+      - totp
+      - u2f
+    doc: https://help.zoho.com/portal/kb/articles/zohoone-configure-mfa
+    exception: "YubiKey registeration works only on the new version of Zoho Accounts. Only one (1) YubiKey may be registered at a time. Supported Devices: YubiKey NEO, YubiKey 4 Nano, YubiKey 4, YubiKey 4C, YubiKey 4C Nano,YubiKey NEO-n, YubiKey Edge, YubiKey Edge-n."
