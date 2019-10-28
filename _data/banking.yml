@@ -706,6 +706,14 @@ websites:
     facebook: NEFCU
     email_address: info@mynefcu.org
 
+  - name: netbank
+    url: https://www.netbank.de/
+    img: netbank.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.netbank.de/privatkunden/service/Starke-Kundenauthentifizierung/
+
   - name: Nordea Sverige
     url: https://www.nordea.se/
     img: nordea.png
