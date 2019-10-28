@@ -168,6 +168,13 @@ websites:
       - hardware
     doc: https://www.emailcenteruk.com/maxemail/platform-security-collaboration/
 
+  - name: NodeBB
+    url: https://nodebb.org
+    img: nodebb.png
+    tfa:
+      - totp
+    doc: https://github.com/julianlam/nodebb-plugin-2factor
+
   - name: Riot
     url: https://about.riot.im/
     img: riot.png
