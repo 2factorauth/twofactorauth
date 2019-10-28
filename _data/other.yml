@@ -315,7 +315,10 @@ websites:
     url: https://www.immobilienscout24.de
     img: immobilienscout24.png
     tfa:
-      - software
+      - sms
+      - totp
+    doc: https://sicherheit.immobilienscout24.de/phishing/absicherung-login.html
+    exception: "SMS is only available to commercial real estate providers."
 
   - name: Indeed
     url: https://www.indeed.com/
