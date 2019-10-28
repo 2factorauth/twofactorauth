@@ -6,50 +6,49 @@ img: schwab.png
 <div class="ui very padded segment teal">
     <h2 class="ui header">
         Charles Schwab
-        <div class="sub header">Info regarding Schwab's 2FA</div>
+        <div class="sub header">Advanced TFA</div>
     </h2>
     <p>
-        Schwab uses either a physical token 
-        or the Symantec VIP Access smartphone app. You can use the same 
-        VIP Access token with Schwab and with other supported services, 
-        such as Fidelity.
+        While Schwab supports standard SMS-based two factor authentication, advanced TFA is only
+        supported using the Symantec's VIP Access product suite through either a Symantec
+        physical token or the Symantec VIP Access phone/desktop app. If you have other TFA sites
+        that also use Symantec (Fidelity for example), you can use the identical Symantec VIP
+        configuration (Schwab does not require any custom settings).
     </p>
 </div>
 
 <div class="ui very padded segment teal">
     <h2 class="ui header">
-        How to Setup 2FA for Schwab
+        How to Setup Advanced 2FA
     </h2>
     <ol class="ui list">
         <li>Do one of the following:
-            <ol>
-                <li>
-                    Obtain a physical token by calling Schwab Account
-                    Support at +1 800-435-4000.
-                </li>
-                <li>
-                    Install the Symantec VIP Access app for
-                    <a href="https://itunes.apple.com/app/vip-access-for-iphone/id307658513?mt=8">iPhone</a>
-                    or the
-                    <a href="https://play.google.com/store/apps/details?id=com.verisign.mvip.main">Android</a>
-                    version.
-                </li>
-            </ol>
+            <ul>
+              <li>
+                Obtain a physical token by calling Schwab Technical Support Services at +1 800-435-9196.
+              </li>
+              <li>
+                Install the respective Symantec VIP Access app:
+                <a href="https://itunes.apple.com/app/vip-access-for-iphone/id307658513?mt=8">iPhone</a>,
+                <a href="https://play.google.com/store/apps/details?id=com.verisign.mvip.main">Android</a>,
+                <a href="https://m.vip.symantec.com/">MacOS or Windows</a>
+              </li>
+            </ul>
         </li>
         <li>
-            Get the Credential ID from the token or app.
+          Get the Credential ID from the token or app.
         </li>
         <li>
-            Login to your accout at schwab.com.
+          Login to your account at schwab.com.
         </li>
         <li>
-            In top panel, choose Service -> Security Center.
-            There, enable Enhanced Authentication.
-            You will need to provide the Credential ID supplied by your token or app.
+          From the top menu panel, choose Service -> Security Center.
+          Under "<code>Two-step Verification</code>", select "<code>Always at login</code>" and then "<code>Security Token</code>".
+          You will need to provide the <i>Credential ID</i> supplied by your token or app.
         </li>
         <li>
-            The next time you log in to the Schwab website with just your 
-            password, Schwab will prompt you for a tokencode.
+          The next time you log in to the Schwab website, Schwab will prompt you for the
+          respective <i>Security Code</i> from your token or app.
         </li>
     </ol>
 </div>
