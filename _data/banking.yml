@@ -303,6 +303,14 @@ websites:
       - phone
     doc: https://www.cacuonlinebanking.com/tob/live/usp-core/static/help.html#login_security
 
+  - name: Consorsbank
+    url: https://www.consorsbank.de/
+    img: consorsbank.png
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.consorsbank.de/ev/Service-Beratung/secureplus
+
   - name: Credit Union Australia
     url: https://www.cua.com.au/
     img: cua.png
