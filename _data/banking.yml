@@ -476,10 +476,11 @@ websites:
 
   - name: GLS Gemeinschaftsbank
     url: https://www.gls.de/
-    twitter: glsbank
-    facebook: glsbank
     img: gls.png
-    lang: de
+    tfa:
+      - sms
+      - hardware
+    doc: https://www.gls.de/privatkunden/faq/allgemeines-finanz-glossar/was-ist-zwei-faktor-authentifizierung-1/
 
   - name: Halifax
     url: https://www.halifax.co.uk
