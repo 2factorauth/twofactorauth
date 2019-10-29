@@ -130,6 +130,13 @@ websites:
     img: cloud9.png
     exception: "TFA available by signing up using GitHub"
 
+  - name: Clubhouse
+    url: https://clubhouse.io/
+    img: clubhouse.png
+    tfa:
+      - totp
+    doc: https://help.clubhouse.io/hc/en-us/articles/206288915-Setting-Up-Two-Factor-Authorization-for-Your-Account
+
   - name: CM Telecom
     url: https://www.cmtelecom.com/
     img: cmtelecom.png
