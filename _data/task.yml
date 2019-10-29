@@ -36,6 +36,13 @@ websites:
       - sms
     doc: https://docs.clickup.com/general/two-factor-authentication
 
+  - name: Clubhouse
+    url: https://clubhouse.io
+    img: clubhouse.png
+    tfa:
+      - software
+    doc: https://help.clubhouse.io/hc/en-us/articles/206288915-Setting-Up-Two-Factor-Authorization-for-Your-Account
+
   - name: fruux
     url: https://fruux.com
     img: fruux.png
