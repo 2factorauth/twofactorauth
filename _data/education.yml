@@ -292,6 +292,14 @@ websites:
       - hardware
     doc: https://www.identity.psu.edu/services/authentication-services/two-factor/
 
+  - name: Philipps-Universität Marburg
+    url: https://www.uni-marburg.de/
+    img: unimarburg.png
+    tfa:
+      - totp
+      - hardware
+    doc: https://www.uni-marburg.de/de/hrz/dienste/2fa
+
   - name: Pluralsight
     url: https://www.pluralsight.com
     img: pluralsight.png
