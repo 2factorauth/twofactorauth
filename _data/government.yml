@@ -84,6 +84,15 @@ websites:
       - hardware
     doc: https://www.realme.govt.nz/help/#second-factor-authentication
 
+  - name: SingPass
+    url: https://www.singpass.gov.sg/
+    img: singpass.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.ifaq.gov.sg/SINGPASS/apps/fcd_faqmain.aspx#TOPIC_210129
+
   - name: Skatteverket
     url: https://www.skatteverket.se
     img: skatteverket.png
