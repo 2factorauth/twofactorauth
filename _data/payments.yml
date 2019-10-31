@@ -174,9 +174,11 @@ websites:
     exception: "SMS only supported in US and Canada"
 
   - name: Square Cash
-    url: https://cash.me
+    url: https://cash.app/
     img: square-cash.png
-    twitter: SquareCash
+    tfa:
+      - email
+    doc: https://cash.app/help/en/en-us/3127
 
   - name: Stripe
     img: stripe.png
