@@ -1150,9 +1150,11 @@ websites:
 
   - name: VyStar Credit Union
     url: https://vystarcu.org/
-    twitter: OfficialVyStar
-    facebook: VyStarCU
     img: vystar.png
+    tfa:
+      - sms
+      - phone
+    doc: https://vystarcu.org/Online-Services/Internet-Banking-Access/Internet-Mobile-Banking-New-User-Enrollment
 
   - name: Wells Fargo
     url: https://www.wellsfargo.com/
