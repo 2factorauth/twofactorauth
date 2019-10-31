@@ -16,7 +16,10 @@ websites:
   - name: Airbnb
     url: https://www.airbnb.com/
     img: airbnb.png
-    twitter: Airbnb
+    tfa:
+      - email
+      - sms
+    doc: https://www.airbnb.com/help/article/501
 
   - name: Airtable
     url: https://airtable.com
