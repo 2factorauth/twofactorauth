@@ -66,14 +66,14 @@ websites:
       - phone
     doc: https://help.creditkarma.com/hc/en-us/articles/360001472366
 
-  - name: ČSOB (Czech)
+  - name: CSOB (Czech)
     url: https://www.csob.cz/
     img: csob.png
     tfa:
       - sms
       - software
-    exception: "Software implementation requires use of ČSOB Smart Key app."
-	doc: https://www.csob.cz/portal/people/accounts/internet-and-mobile-banking/csob-smart-key
+    exception: "Software implementation requires use of CSOB Smart Key app."
+    doc: https://www.csob.cz/portal/people/accounts/internet-and-mobile-banking/csob-smart-key
 
   - name: DEGIRO
     url: https://www.degiro.nl
