@@ -317,6 +317,15 @@ websites:
     img: cua.png
     twitter: CUA_Connect
     facebook: CUA
+    
+  - name: ČSOB (Czech)
+    url: https://www.csob.cz/
+    img: csob.png
+    tfa:
+      - sms
+      - software
+    exception: "Software implementation requires use of ČSOB Smart Key app."
+    doc: https://www.csob.cz/portal/people/accounts/internet-and-mobile-banking/csob-smart-key
 
   - name: DBS Bank Singapore
     url: https://www.dbs.com.sg/
