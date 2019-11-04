@@ -33,6 +33,13 @@ websites:
     twitter: CarbonBlack_Inc
     facebook: carbonblackinc
 
+  - name: Close
+    url: https://www.close.com/
+    img: close.png
+    tfa:
+      - totp
+    doc: https://help.close.com/docs/enabling-2fa
+
   - name: Cloze
     url: https://www.cloze.com/
     img: cloze.png
