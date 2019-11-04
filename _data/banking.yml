@@ -116,9 +116,9 @@ websites:
     url: https://www.barclays.co.uk/
     img: barclays.png
     tfa:
-      - software
+      - proprietary
       - hardware
-    doc: https://www.barclays.co.uk/Helpsupport/UpgradetoPINsentry/P1242559314766
+    doc: https://www.barclays.co.uk/ways-to-bank/online-banking/pinsentry-guide/
 
   - name: Barclays US
     url: https://www.banking.barclaysus.com/
@@ -127,6 +127,7 @@ websites:
       - sms
       - phone
       - email
+    doc: https://www.barclaycardus.com/servicing/security-center?howWeProtectYou=#loginProcess
 
   - name: BB&amp;T
     url: https://www.bbt.com/
@@ -303,6 +304,14 @@ websites:
       - phone
     doc: https://www.cacuonlinebanking.com/tob/live/usp-core/static/help.html#login_security
 
+  - name: Consorsbank
+    url: https://www.consorsbank.de/
+    img: consorsbank.png
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.consorsbank.de/ev/Service-Beratung/secureplus
+
   - name: Credit Union Australia
     url: https://www.cua.com.au/
     img: cua.png
@@ -468,10 +477,11 @@ websites:
 
   - name: GLS Gemeinschaftsbank
     url: https://www.gls.de/
-    twitter: glsbank
-    facebook: glsbank
     img: gls.png
-    lang: de
+    tfa:
+      - sms
+      - hardware
+    doc: https://www.gls.de/privatkunden/faq/allgemeines-finanz-glossar/was-ist-zwei-faktor-authentifizierung-1/
 
   - name: Halifax
     url: https://www.halifax.co.uk
@@ -525,9 +535,10 @@ websites:
 
   - name: ICICI
     url: https://www.icicibank.com
-    twitter: ICICIBank
-    facebook: icicibank
     img: icici.png
+    tfa:
+      - sms
+    doc: https://www.icicibank.com/online-safe-banking/otp.page
 
   - name: ING (Luxembourg)
     url: https://www.ing.lu
@@ -572,6 +583,14 @@ websites:
     facebook: labanquepostale
     img: labanquepostale.png
     lang: fr
+    
+  - name: Lake Michigan Credit Union
+    url: https://www.lmcu.org/
+    img: lakemichigancreditunion.png
+    tfa:
+      - proprietary
+    exception: "Software authentication requires Lake Michigan Credit Union Mobile App on Android or IOS"
+    doc: https://www.lmcu.org/personal/banking/services/mobile-authenticator/
 
   - name: LendingClub
     url: https://www.lendingclub.com/
@@ -697,6 +716,14 @@ websites:
     twitter: mynefcu
     facebook: NEFCU
     email_address: info@mynefcu.org
+
+  - name: netbank
+    url: https://www.netbank.de/
+    img: netbank.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.netbank.de/privatkunden/service/Starke-Kundenauthentifizierung/
 
   - name: Nordea Sverige
     url: https://www.nordea.se/

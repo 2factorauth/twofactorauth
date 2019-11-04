@@ -338,9 +338,10 @@ websites:
     img: namecheap.png
     tfa:
       - sms
-      - software
-      - hardware
-    doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45
+      - proprietary
+      - totp
+      - u2f
+    doc: https://www.namecheap.com/security/2fa-two-factor-authentication/
 
   - name: NameSilo.com
     url: https://www.namesilo.com/

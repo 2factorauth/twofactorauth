@@ -33,6 +33,13 @@ websites:
     twitter: CarbonBlack_Inc
     facebook: carbonblackinc
 
+  - name: Close
+    url: https://www.close.com/
+    img: close.png
+    tfa:
+      - totp
+    doc: https://help.close.com/docs/enabling-2fa
+
   - name: Cloze
     url: https://www.cloze.com/
     img: cloze.png
@@ -167,6 +174,13 @@ websites:
     tfa:
       - hardware
     doc: https://www.emailcenteruk.com/maxemail/platform-security-collaboration/
+
+  - name: Pipedrive
+    url: https://www.pipedrive.com/
+    img: pipedrive.png
+    tfa:
+      - email
+    doc: https://support.pipedrive.com/hc/en-us/articles/360000808405
 
   - name: Riot
     url: https://about.riot.im/

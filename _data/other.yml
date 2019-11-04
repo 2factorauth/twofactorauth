@@ -85,6 +85,8 @@ websites:
     img: bookingcom.png
     tfa:
       - sms
+      - email
+    exception: "Setup requires SMS verification. Email is available via 'other options' at login."
 
   - name: CA Technologies
     url: https://www.ca.com/
@@ -167,6 +169,7 @@ websites:
     img: dhl.png
     tfa:
       - email
+    doc: https://www.dhl.de/de/toolbar/footer/datenschutz.html#kundenkontoundempfaengerservices
 
   - name: DirectAdmin
     url: https://www.directadmin.com
@@ -284,6 +287,12 @@ websites:
       - software
     doc: https://docs.helpscout.com/article/907--
 
+  - name: Hermes DE
+    url: https://www.myhermes.de/
+    img: hermes.png
+    twitter: hermesDE
+    lang: de
+
   - name: IEEE
     url: https://www.ieee.org
     img: ieee.png
@@ -302,7 +311,10 @@ websites:
     url: https://www.immobilienscout24.de
     img: immobilienscout24.png
     tfa:
-      - software
+      - sms
+      - totp
+    doc: https://sicherheit.immobilienscout24.de/phishing/absicherung-login.html
+    exception: "SMS is only available to commercial real estate providers."
 
   - name: Indeed
     url: https://www.indeed.com/
@@ -546,8 +558,10 @@ websites:
   - name: Upwork
     url: https://www.upwork.com
     img: upwork.png
-    twitter: UpworkHelp
-    facebook: upwork
+    tfa:
+      - sms
+      - email
+    doc: https://support.upwork.com/hc/en-us/articles/360009491414
 
   - name: Usabilla
     url: https://usabilla.com

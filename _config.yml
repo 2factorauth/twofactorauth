@@ -9,9 +9,10 @@ description:
 url: https://twofactorauth.org
 repo: https://github.com/2factorauth/twofactorauth
 img: img/logo.png
+twitter: 2faorg
+social_image: https://repository-images.githubusercontent.com/17724730/63495880-b408-11e9-8cc4-03451aa4cc14
 sass:
     style: compressed
-
 exclude:
     - CNAME
     - CONTRIBUTING.md
@@ -23,3 +24,4 @@ exclude:
     - verify.rb
     - vendor
     - websites_schema.yml
+    - api/v2/README.md

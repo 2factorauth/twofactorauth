@@ -203,6 +203,13 @@ websites:
     twitter: MojangSupport
     img: mojang.png
 
+  - name: Nexon
+    url: https://www.nexon.com
+    img: nexon.png
+    tfa:
+      - totp
+    doc: https://support.nexon.net/hc/en-us/articles/360025920992
+
   - name: Nexus Mods
     url: https://www.nexusmods.com/
     img: nexusmods.png
