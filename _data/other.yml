@@ -108,6 +108,16 @@ websites:
     doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888
     exception: "SMS required for 2FA."
 
+  - name: Chaturbate
+    url: https://chaturbate.com/
+    img: chaturbate.png
+    tfa:
+      - sms
+      - phone
+      - software
+      - hardware
+    doc: https://support.chaturbate.com/customer/en/portal/articles/2760387-what-is-2-step-verification-
+
   - name: Cisco Meraki
     url: https://meraki.cisco.com/
     img: meraki.png
