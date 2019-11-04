@@ -535,9 +535,10 @@ websites:
 
   - name: ICICI
     url: https://www.icicibank.com
-    twitter: ICICIBank
-    facebook: icicibank
     img: icici.png
+    tfa:
+      - sms
+    doc: https://www.icicibank.com/online-safe-banking/otp.page
 
   - name: ING (Luxembourg)
     url: https://www.ing.lu
