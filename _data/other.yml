@@ -564,8 +564,10 @@ websites:
   - name: Upwork
     url: https://www.upwork.com
     img: upwork.png
-    twitter: UpworkHelp
-    facebook: upwork
+    tfa:
+      - sms
+      - email
+    doc: https://support.upwork.com/hc/en-us/articles/360009491414
 
   - name: Usabilla
     url: https://usabilla.com
