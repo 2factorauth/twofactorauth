@@ -324,11 +324,11 @@ websites:
 
   - name: Immowelt
     url: https://www.immowelt.de/
-    twitter: immowelt
-    facebook: immowelt
-    email_address: info@immowelt.de
     img: immowelt.png
-    lang: de
+    tfa:
+      - email
+    doc: https://support.immowelt.de/immoweltde/faq/gewerbliche-anbieter/meine-immowelt/sichere-anmeldung.html
+    exception: "2FA is only available for commercial partners."
 
   - name: Indeed
     url: https://www.indeed.com/
