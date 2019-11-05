@@ -507,10 +507,9 @@ websites:
     url: https://www.hsbc.com/
     img: hsbc.png
     tfa:
-      - software
+      - proprietary
       - hardware
-    doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
-    exception: "Software 2FA requires HSBC app."
+    doc: https://www.hsbc.co.uk/help/security-centre/secure-key/secure-key-help/
 
   - name: Huntington National Bank
     url: https://www.huntington.com
