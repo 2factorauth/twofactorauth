@@ -16,9 +16,9 @@
     </thead>
     <tbody class="jets-content">
     {% for website in section_file.websites %}
-    {% assign email_subject  = page.email_subject  %}
-    {% assign progress_tweet = page.progress_tweet %}
-    {% assign workonit_tweet = page.workonit_tweet %}
+    {% assign email_subject  = site.data.languages["en"].email_subject  %}
+    {% assign progress_tweet = site.data.languages["en"].progress_tweet %}
+    {% assign workonit_tweet = site.data.languages["en"].work_tweet     %}
     {% if website.lang and site.data.languages[website.lang] %}
       {% if site.data.languages[website.lang].email_subject %}
         {% assign email_subject = site.data.languages[website.lang].email_subject %}
