@@ -1,0 +1,57 @@
+websites:
+  - name: Crowd Supply
+    url: https://www.crowdsupply.com
+    img: crowdsupply.png
+    twitter: crowd_supply
+    facebook: CrowdSupply
+    email_address: support@crowdsupply.com
+
+  - name: GoFundMe
+    url: https://www.gofundme.com/
+    img: gofundme.png
+    tfa:
+      - sms
+      - phone
+    doc: https://support.gofundme.com/hc/en-us/articles/360001980947
+    exception: "2FA only for North American customers that create Personal campaigns."
+
+  - name: Indiegogo
+    url: https://www.indiegogo.com/
+    twitter: Indiegogo
+    facebook: Indiegogo
+    img: indiegogo.png
+
+  - name: JustGiving
+    url: https://www.justgiving.com/
+    img: justgiving.png
+    twitter: JGhelp
+    facebook: justgiving
+
+  - name: Kickstarter
+    url: https://www.kickstarter.com
+    img: kickstarter.png
+    tfa:
+      - sms
+      - phone
+      - software
+    doc: https://help.kickstarter.com/hc/en-us/articles/115005127094
+
+  - name: Patreon
+    url: https://www.patreon.com/
+    img: patreon.png
+    tfa:
+      - sms
+      - software
+    doc: https://support.patreon.com/hc/en-us/articles/206538086
+
+  - name: Pozible
+    url: https://www.pozible.com
+    img: pozible.png
+    twitter: Pozible
+
+  - name: Ulule
+    url: https://www.ulule.com/
+    twitter: ulule
+    facebook: ululeEN
+    img: ulule.png
+
