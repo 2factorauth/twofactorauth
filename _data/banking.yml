@@ -135,6 +135,14 @@ websites:
     facebook: BBTBank
     img: bbt.png
 
+  - name: BBBank
+    url: https://www.bbbank.de/
+    img: bbbank.png
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.bbbank.de/produkte/konten-und-karten/online-banking/tan-verfahren.html
+
   - name: BBVA Compass
     url: https://www.bbvacompass.com/
     img: bbvacompass.png
