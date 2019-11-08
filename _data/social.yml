@@ -257,6 +257,14 @@ websites:
     url: https://www.weibo.com/
     img: weibo.png
 
+  - name: Wikipedia
+    url: https://www.wikipedia.org/
+    img: wikipedia.png
+    tfa:
+      - totp
+    doc: https://meta.wikimedia.org/wiki/Help:Two-factor_authentication
+    exception: "Currently limited to administrators (and users with admin-like permissions like interface editors), bureaucrats, checkusers, oversighters, stewards, edit filter managers and the OATH-testers global group."
+
   - name: WordPress.com
     url: https://wordpress.com
     img: wordpress.png
