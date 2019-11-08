@@ -102,8 +102,9 @@ websites:
   - name: Hint Health
     url: https://www.hint.com
     img: hint.png
-    twitter: HintHealth
-    facebook: hinthealth
+    tfa:
+      - totp
+    doc: https://support.hint.com/en/articles/2360627
 
   - name: MedicAlert
     url: https://www.medicalert.ca
