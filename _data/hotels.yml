@@ -5,6 +5,20 @@ websites:
     facebook: airbnb
     img: airbnb.png
 
+  - name: Booking.com
+    url: https://www.booking.com/
+    img: bookingcom.png
+    tfa:
+      - sms
+      - email
+    exception: "Setup requires SMS verification. Email is available via 'other options' at login."
+
+  - name: Couchsurfing
+    url: https://www.couchsurfing.com/
+    img: couchsurfing.png
+    twitter: Couchsurfing
+    facebook: couchsurfing
+
   - name: Hilton Honors
     url: https://www.hilton.com
     img: hilton.png
