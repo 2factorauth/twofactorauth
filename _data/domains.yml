@@ -478,6 +478,8 @@ websites:
     tfa:
       - software
       - hardware
+      - totp
+      - u2f
     doc: https://registro.br/ajuda/gerenciamento-de-conta/token/
 
   - name: STRATO
