@@ -135,6 +135,14 @@ websites:
     facebook: BBTBank
     img: bbt.png
 
+  - name: BBBank
+    url: https://www.bbbank.de/
+    img: bbbank.png
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.bbbank.de/produkte/konten-und-karten/online-banking/tan-verfahren.html
+
   - name: BBVA Compass
     url: https://www.bbvacompass.com/
     img: bbvacompass.png
@@ -334,9 +342,11 @@ websites:
 
   - name: Desjardins
     url: https://www.desjardins.com/
-    facebook: desjardins
     img: desjardins.png
-    lang: fr
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.desjardins.com/securite/validation-2-etapes/
 
   - name: Deutsche Kreditbank (DKB)
     url: https://www.dkb.de/
@@ -507,10 +517,9 @@ websites:
     url: https://www.hsbc.com/
     img: hsbc.png
     tfa:
-      - software
+      - proprietary
       - hardware
-    doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
-    exception: "Software 2FA requires HSBC app."
+    doc: https://www.hsbc.co.uk/help/security-centre/secure-key/secure-key-help/
 
   - name: Huntington National Bank
     url: https://www.huntington.com
@@ -669,8 +678,10 @@ websites:
   - name: N26
     url: https://n26.com
     img: n26.png
-    twitter: n26
-    facebook: N26
+    tfa:
+      - sms
+      - proprietary
+    doc: https://support.n26.com/en-gb/getting-started/psd2/how-to-log-in-with-two-factor-authentication
 
   - name: NASA Federal Credit Union
     url: https://www.nasafcu.com/
@@ -1151,9 +1162,11 @@ websites:
 
   - name: VyStar Credit Union
     url: https://vystarcu.org/
-    twitter: OfficialVyStar
-    facebook: VyStarCU
     img: vystar.png
+    tfa:
+      - sms
+      - phone
+    doc: https://vystarcu.org/Online-Services/Internet-Banking-Access/Internet-Mobile-Banking-New-User-Enrollment
 
   - name: Wells Fargo
     url: https://www.wellsfargo.com/

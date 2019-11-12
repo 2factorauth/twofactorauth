@@ -13,11 +13,6 @@ websites:
     img: aerohive.png
     twitter: Aerohive
 
-  - name: Airbnb
-    url: https://www.airbnb.com/
-    img: airbnb.png
-    twitter: Airbnb
-
   - name: Airtable
     url: https://airtable.com
     img: airtable.png
@@ -85,14 +80,6 @@ websites:
       - email
     doc: https://basiscode.com/blog/two-factor-authentication-compliance-software/
 
-  - name: Booking.com
-    url: https://www.booking.com/
-    img: bookingcom.png
-    tfa:
-      - sms
-      - email
-    exception: "Setup requires SMS verification. Email is available via 'other options' at login."
-
   - name: CA Technologies
     url: https://www.ca.com/
     img: ca-technologies.png
@@ -145,12 +132,6 @@ websites:
       - sms
     doc: https://support.cosmolex.com/knowledge-base/how-to-enable-two-factor-authentication/
 
-  - name: Couchsurfing
-    url: https://www.couchsurfing.com/
-    img: couchsurfing.png
-    twitter: Couchsurfing
-    facebook: couchsurfing
-
   - name: CrowdFlower
     url: https://www.crowdflower.com/
     img: crowdflower.png
@@ -175,11 +156,6 @@ websites:
     tfa:
       - software
     doc: https://directadmin.com/features.php?id=1754
-
-  - name: DoorDash
-    url: https://www.doordash.com
-    img: doordash.png
-    twitter: DoorDash
 
   - name: Dreamstime
     url: https://www.dreamstime.com/
@@ -281,13 +257,6 @@ websites:
     img: hermes.png
     twitter: hermesDE
     lang: de
-
-  - name: Hilton Honors
-    url: https://www.hilton.com
-    img: hilton.png
-    tfa:
-      - sms
-      - email
 
   - name: IEEE
     url: https://www.ieee.org
@@ -443,11 +412,6 @@ websites:
     img: postcrossing.png
     facebook: postcrossing
     twitter: postcrossing
-
-  - name: Postmates
-    url: https://postmates.com
-    twitter: Postmates
-    img: postmates.png
 
   - name: Promoter.io
     url: https://promoter.io/
