@@ -8,11 +8,6 @@ websites:
       - software
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
-  - name: Aerohive Networks
-    url: https://www.aerohive.com/
-    img: aerohive.png
-    twitter: Aerohive
-
   - name: Airtable
     url: https://airtable.com
     img: airtable.png
@@ -102,14 +97,6 @@ websites:
       - software
     doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888
     exception: "SMS required for 2FA."
-
-  - name: Cisco Meraki
-    url: https://meraki.cisco.com/
-    img: meraki.png
-    tfa:
-      - sms
-      - software
-    doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
 
   - name: Clickworker
     url: https://www.clickworker.com/
@@ -357,13 +344,6 @@ websites:
     facebook: karriere.at
     lang: de
 
-  - name: Kayako
-    url: https://www.kayako.com
-    img: kayako.png
-    tfa:
-      - software
-    doc: https://support.kayako.com/article/1198-securing-your-user-account-with-two-factor-authentication-2fa
-
   - name: Kickstarter
     url: https://www.kickstarter.com
     img: kickstarter.png
@@ -492,15 +472,6 @@ websites:
     img: promoter.png
     twitter: Promoter_io
 
-  - name: Repairshopr
-    url: https://www.repairshopr.com/
-    img: repairshopr.png
-    tfa:
-      - sms
-      - software
-    doc: https://feedback.repairshopr.com/knowledgebase/articles/928266
-    exception: "SMS only available as a backup to Google Authenticator."
-
   - name: Ripe NCC
     url: https://www.ripe.net/
     img: ripe.png
@@ -578,16 +549,6 @@ websites:
       - email
     exception: "Employer/plan sponsor may opt to not offer 2FA."
 
-  - name: Watchman Monitoring
-    url: https://www.watchmanmonitoring.com
-    img: watchmanmonitoring.png
-    tfa:
-      - sms
-      - software
-      - hardware
-    doc: https://www.watchmanmonitoring.com/two-factor-authentication
-    exception: "Two factor authentication unavailable for 'End User' access, which is read-only."
-
   - name: Weclapp
     url: https://weclapp.com/
     img: weclapp.png
@@ -621,11 +582,3 @@ websites:
     img: youracclaim.png
     tfa:
       - software
-
-  - name: Zendesk
-    url: https://www.zendesk.com
-    img: zendesk.png
-    tfa:
-      - sms
-      - software
-    doc: https://support.zendesk.com/hc/en-us/articles/203824246

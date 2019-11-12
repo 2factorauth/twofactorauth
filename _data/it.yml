@@ -1,0 +1,47 @@
+websites:
+  - name: Aerohive Networks
+    url: https://www.aerohive.com/
+    img: aerohive.png
+    twitter: Aerohive
+
+  - name: Cisco Meraki
+    url: https://meraki.cisco.com/
+    img: meraki.png
+    tfa:
+      - sms
+      - software
+    doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
+
+  - name: Kayako
+    url: https://www.kayako.com
+    img: kayako.png
+    tfa:
+      - software
+    doc: https://support.kayako.com/article/1198-securing-your-user-account-with-two-factor-authentication-2fa
+
+  - name: Repairshopr
+    url: https://www.repairshopr.com/
+    img: repairshopr.png
+    tfa:
+      - sms
+      - software
+    doc: https://feedback.repairshopr.com/knowledgebase/articles/928266
+    exception: "SMS only available as a backup to Google Authenticator."
+
+  - name: Watchman Monitoring
+    url: https://www.watchmanmonitoring.com
+    img: watchmanmonitoring.png
+    tfa:
+      - sms
+      - software
+      - hardware
+    doc: https://www.watchmanmonitoring.com/two-factor-authentication
+    exception: "Two factor authentication unavailable for 'End User' access, which is read-only."
+
+  - name: Zendesk
+    url: https://www.zendesk.com
+    img: zendesk.png
+    tfa:
+      - sms
+      - software
+    doc: https://support.zendesk.com/hc/en-us/articles/203824246
