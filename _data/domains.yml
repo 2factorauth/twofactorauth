@@ -476,9 +476,9 @@ websites:
     url: https://registro.br
     img: registrobr.png
     tfa:
-      - software
-      - hardware
-    doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
+      - totp
+      - u2f
+    doc: https://registro.br/ajuda/gerenciamento-de-conta/token/
 
   - name: STRATO
     url: https://www.strato.de/
