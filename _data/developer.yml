@@ -286,9 +286,8 @@ websites:
   - name: JetBrains
     url: https://jetbrains.com
     img: jetbrains.png
-    twitter: jetbrains
-    facebook: JetBrains
-    email_address: support@jetbrains.com
+    tfa:
+      - totp
 
   - name: Koding
     url: https://koding.com
