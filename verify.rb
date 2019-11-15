@@ -93,7 +93,7 @@ begin
 
     # Check section alphabetization
     if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
-      error("_data/#{section['id']}.yml not ordered by name. Correct order:" \
+      error("_data/#{section['id']}.yml is not alphabetical. Correct order:" \
         "\n" + Diffy::Diff.new(websites.to_yaml, sites_sort.to_yaml, \
                                context: 10).to_s(:color))
     end
