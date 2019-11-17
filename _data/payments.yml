@@ -52,14 +52,15 @@ websites:
       - sms
     doc: https://support.gocardless.com/hc/en-gb/articles/360001164385
 
-  - name: Google Wallet
-    url: https://www.google.se/wallet/
-    img: googlewallet.png
+  - name: Google Pay
+    url: https://pay.google.com/
+    img: googlepay.png
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - proprietary
+      - totp
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: HYPE
