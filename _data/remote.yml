@@ -23,6 +23,13 @@ websites:
       - hardware
     doc: https://docs.connectwise.com/ConnectWise_Control_Documentation/Get_started/Administration_page/Security_page/Enable_two-factor_authentication_for_host_accounts
 
+  - name: DirectAdmin
+    url: https://www.directadmin.com
+    img: directadmin.png
+    tfa:
+      - software
+    doc: https://directadmin.com/features.php?id=1754
+
   - name: join.me (w/ LogMeIn account)
     url: https://join.me/
     img: joinme.png

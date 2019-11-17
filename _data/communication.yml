@@ -82,6 +82,13 @@ websites:
     img: doodle.png
     twitter: doodletweet
 
+  - name: FAX.PLUS
+    url: https://www.fax.plus
+    img: faxplus.png
+    tfa:
+      - totp
+    doc: https://www.fax.plus/help/articles/how-can-i-enable-disable-two-factor-authentication
+
   - name: Fleep
     url: https://fleep.io
     twitter: fleepio
@@ -181,6 +188,12 @@ websites:
     tfa:
       - email
     doc: https://support.pipedrive.com/hc/en-us/articles/360000808405
+
+  - name: Postcrossing
+    url: https://www.postcrossing.com/
+    img: postcrossing.png
+    facebook: postcrossing
+    twitter: postcrossing
 
   - name: Riot
     url: https://about.riot.im/
