@@ -16,10 +16,10 @@ websites:
 
   - name: Brightbox
     url: https://www.brightbox.com/
-    twitter: brightbox
-    facebook: brightbox
-    email_address: support@brightbox.com
     img: brightbox.png
+    tfa:
+      - totp
+    doc: https://www.brightbox.com/docs/guides/manager/two-factor-authentication/
 
   - name: Cloud 66
     url: https://www.cloud66.com

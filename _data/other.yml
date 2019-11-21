@@ -13,11 +13,6 @@ websites:
     img: aerohive.png
     twitter: Aerohive
 
-  - name: Airbnb
-    url: https://www.airbnb.com/
-    img: airbnb.png
-    twitter: Airbnb
-
   - name: Airtable
     url: https://airtable.com
     img: airtable.png
@@ -90,6 +85,8 @@ websites:
     img: bookingcom.png
     tfa:
       - sms
+      - email
+    exception: "Setup requires SMS verification. Email is available via 'other options' at login."
 
   - name: CA Technologies
     url: https://www.ca.com/
@@ -290,12 +287,11 @@ websites:
       - software
     doc: https://docs.helpscout.com/article/907--
 
-  - name: Hilton Honors
-    url: https://www.hilton.com
-    img: hilton.png
-    tfa:
-      - sms
-      - email
+  - name: Hermes DE
+    url: https://www.myhermes.de/
+    img: hermes.png
+    twitter: hermesDE
+    lang: de
 
   - name: IEEE
     url: https://www.ieee.org
@@ -562,8 +558,10 @@ websites:
   - name: Upwork
     url: https://www.upwork.com
     img: upwork.png
-    twitter: UpworkHelp
-    facebook: upwork
+    tfa:
+      - sms
+      - email
+    doc: https://support.upwork.com/hc/en-us/articles/360009491414
 
   - name: Usabilla
     url: https://usabilla.com

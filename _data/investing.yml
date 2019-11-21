@@ -11,12 +11,6 @@ websites:
       - software
     doc: https://www.youinvest.co.uk/faq/how-do-i-set-two-factor-authentication
 
-  - name: American Funds
-    url: https://www.americanfunds.com
-    img: americanfunds.png
-    twitter: AmericanFunds
-    facebook: americanfunds
-
   - name: Betterment
     url: https://www.betterment.com/
     img: betterment.png
@@ -24,6 +18,14 @@ websites:
       - sms
       - software
     doc: https://help.betterment.com/hc/en-us/articles/115004260006
+
+  - name: Capital Group / American Funds
+    url: https://www.capitalgroup.com/
+    img: capitalgroup.png
+    tfa:
+      - sms
+      - email
+    doc: https://www.capitalgroup.com/individual/news/one-time-passcode-login-security.html
 
   - name: Charles Schwab
     url: https://www.schwab.com/

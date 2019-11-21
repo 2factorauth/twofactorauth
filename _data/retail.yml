@@ -53,8 +53,10 @@ websites:
   - name: Best Buy
     url: https://www.bestbuy.com/
     img: bestbuy.png
-    twitter: BestBuySupport
-    facebook: bestbuy
+    tfa:
+      - sms
+      - totp
+    doc: https://www.bestbuy.com/site/help-topics/2-step-verification/pcmcat1561056149844.c
 
   - name: Big W
     url: https://www.bigw.com.au/

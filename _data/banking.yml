@@ -116,9 +116,9 @@ websites:
     url: https://www.barclays.co.uk/
     img: barclays.png
     tfa:
-      - software
+      - proprietary
       - hardware
-    doc: https://www.barclays.co.uk/Helpsupport/UpgradetoPINsentry/P1242559314766
+    doc: https://www.barclays.co.uk/ways-to-bank/online-banking/pinsentry-guide/
 
   - name: Barclays US
     url: https://www.banking.barclaysus.com/
@@ -127,12 +127,21 @@ websites:
       - sms
       - phone
       - email
+    doc: https://www.barclaycardus.com/servicing/security-center?howWeProtectYou=#loginProcess
 
   - name: BB&amp;T
     url: https://www.bbt.com/
     twitter: BBT
     facebook: BBTBank
     img: bbt.png
+
+  - name: BBBank
+    url: https://www.bbbank.de/
+    img: bbbank.png
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.bbbank.de/produkte/konten-und-karten/online-banking/tan-verfahren.html
 
   - name: BBVA Compass
     url: https://www.bbvacompass.com/
@@ -506,10 +515,9 @@ websites:
     url: https://www.hsbc.com/
     img: hsbc.png
     tfa:
-      - software
+      - proprietary
       - hardware
-    doc: https://www.hsbc.co.uk/1/2/customer-support/online-banking-security/secure-key
-    exception: "Software 2FA requires HSBC app."
+    doc: https://www.hsbc.co.uk/help/security-centre/secure-key/secure-key-help/
 
   - name: Huntington National Bank
     url: https://www.huntington.com
@@ -534,9 +542,10 @@ websites:
 
   - name: ICICI
     url: https://www.icicibank.com
-    twitter: ICICIBank
-    facebook: icicibank
     img: icici.png
+    tfa:
+      - sms
+    doc: https://www.icicibank.com/online-safe-banking/otp.page
 
   - name: ING (Luxembourg)
     url: https://www.ing.lu
@@ -667,8 +676,10 @@ websites:
   - name: N26
     url: https://n26.com
     img: n26.png
-    twitter: n26
-    facebook: N26
+    tfa:
+      - sms
+      - proprietary
+    doc: https://support.n26.com/en-gb/getting-started/psd2/how-to-log-in-with-two-factor-authentication
 
   - name: NASA Federal Credit Union
     url: https://www.nasafcu.com/
@@ -1149,9 +1160,11 @@ websites:
 
   - name: VyStar Credit Union
     url: https://vystarcu.org/
-    twitter: OfficialVyStar
-    facebook: VyStarCU
     img: vystar.png
+    tfa:
+      - sms
+      - phone
+    doc: https://vystarcu.org/Online-Services/Internet-Banking-Access/Internet-Mobile-Banking-New-User-Enrollment
 
   - name: Wells Fargo
     url: https://www.wellsfargo.com/

@@ -62,6 +62,12 @@ websites:
       - software
     doc: https://my.bluehost.com/cgi/help/two-factor-authentication
 
+  - name: BunnyCDN
+    url: https://bunnycdn.com
+    img: bunnycdn.png
+    tfa:
+      - totp
+
   - name: CDN77
     url: https://www.cdn77.com
     img: cdn77.png
