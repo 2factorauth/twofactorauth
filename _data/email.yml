@@ -230,8 +230,9 @@ websites:
     url: https://web.de
     img: webde.png
     tfa:
-      - software
+      - totp
     doc: https://hilfe.web.de/sicherheit/2fa/index.html
+    exception: "Setup requires SMS verification."
 
   - name: Yahoo Japan Mail
     url: https://mail.yahoo.co.jp/
