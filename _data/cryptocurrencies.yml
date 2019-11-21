@@ -287,15 +287,6 @@ websites:
       - totp
     doc: https://help.coinut.com/hc/en-us/articles/360005061354
 
-  - name: Cryptopia
-    url: https://www.cryptopia.co.nz
-    img: cryptopia.png
-    tfa:
-      - email
-      - totp
-      - proprietary
-    doc: https://support.cryptopia.co.nz/csm?id=kb_article&sys_id=a8c51421dbed1f009990f6fcbf96194a
-
   - name: DSX
     url: https://dsx.uk/
     img: dsx.png
