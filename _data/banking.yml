@@ -342,9 +342,11 @@ websites:
 
   - name: Desjardins
     url: https://www.desjardins.com/
-    facebook: desjardins
     img: desjardins.png
-    lang: fr
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.desjardins.com/securite/validation-2-etapes/
 
   - name: Deutsche Kreditbank (DKB)
     url: https://www.dkb.de/
