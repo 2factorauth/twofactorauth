@@ -75,14 +75,6 @@ websites:
       - email
     doc: https://basiscode.com/blog/two-factor-authentication-compliance-software/
 
-  - name: Booking.com
-    url: https://www.booking.com/
-    img: bookingcom.png
-    tfa:
-      - sms
-      - email
-    exception: "Setup requires SMS verification. Email is available via 'other options' at login."
-
   - name: CA Technologies
     url: https://www.ca.com/
     img: ca-technologies.png
@@ -120,18 +112,19 @@ websites:
     img: commuterbenefits.png
     twitter: CommuterBenefit
 
+  - name: Contentful
+    url: https://www.contentful.com/
+    img: contentful.png
+    tfa:
+      - totp
+    doc: https://www.contentful.com/faq/two-factor-authentication/
+
   - name: Cosmolex
     url: https://www.cosmolex.com/
     img: cosmolex.png
     tfa:
       - sms
     doc: https://support.cosmolex.com/knowledge-base/how-to-enable-two-factor-authentication/
-
-  - name: Couchsurfing
-    url: https://www.couchsurfing.com/
-    img: couchsurfing.png
-    twitter: Couchsurfing
-    facebook: couchsurfing
 
   - name: Crowd Supply
     url: https://www.crowdsupply.com
@@ -164,11 +157,6 @@ websites:
     tfa:
       - software
     doc: https://directadmin.com/features.php?id=1754
-
-  - name: DoorDash
-    url: https://www.doordash.com
-    img: doordash.png
-    twitter: DoorDash
 
   - name: Dreamstime
     url: https://www.dreamstime.com/
@@ -456,11 +444,6 @@ websites:
     img: postcrossing.png
     facebook: postcrossing
     twitter: postcrossing
-
-  - name: Postmates
-    url: https://postmates.com
-    twitter: Postmates
-    img: postmates.png
 
   - name: Pozible
     url: https://www.pozible.com
