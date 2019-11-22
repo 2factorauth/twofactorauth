@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-ruby@v1
-      
+
       # For now only twitter gem is needed. TODO: move to bundler
     - name: Install dependencies
       run: gem install twitter
