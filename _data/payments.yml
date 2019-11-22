@@ -215,6 +215,14 @@ websites:
     img: visa-checkout.png
     twitter: VisaCheckout
 
+  - name: WePay
+    url: https://go.wepay.com
+    img: wepay.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.wepay.com/hc/en-us/articles/203609693
+
   - name: Yandex.Money
     url: https://money.yandex.ru
     img: yandexmoney.png
