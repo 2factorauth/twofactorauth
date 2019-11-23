@@ -11,8 +11,8 @@ jobs:
 
     - name: Install requirements
       run: |
-        sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev -y
-        sudo bundle install
+        sudo apt install ruby-bundler ruby-dev zlib1g-dev -y
+        sudo bundle install --path vendor/bundle
 
     - name: Build site
       run: bundle exec jekyll build
