@@ -17,7 +17,7 @@ jobs:
         key: ${{ runner.os }}-bundler
 
     - name: Install requirements
-      run: sudo snap install ruby --classic
+      run: sudo snap install ruby --classic --no-wait
 
     - name: Run Bundler
       run: bundle install --path vendor/bundle

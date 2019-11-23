@@ -16,12 +16,13 @@ task :build do
   Jekyll::Commands::Build.build site, config
 end
 
-task proof: 'build' do
+task :proof do
   HTMLProofer.check_directory(
     './_site', \
     assume_extension: true, \
     check_html: true, \
-    disable_external: true
+    disable_external: true, \
+    cache: { timeframe: '2d', storage_dir: '/tmp/html-proofer' }
   ).run
 end
 
