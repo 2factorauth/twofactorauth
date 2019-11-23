@@ -7,6 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Test Jekyll
     steps:
+
+    - name: Install requirements
+      run: sudo snap install ruby --classic --no-wait
+
     - uses: actions/checkout@v1
 
     - name: Get Cache
@@ -15,9 +19,6 @@ jobs:
       with:
         path: vendor/bundle
         key: ${{ runner.os }}-bundler
-
-    - name: Install requirements
-      run: sudo snap install ruby --classic --no-wait
 
     - name: Run Bundler
       run: bundle install --path vendor/bundle
