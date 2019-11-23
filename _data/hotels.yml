@@ -1,9 +1,11 @@
 websites:
   - name: Airbnb
     url: https://www.airbnb.com
-    twitter: Airbnb
-    facebook: airbnb
     img: airbnb.png
+    tfa:
+      - email
+      - sms
+    doc: https://www.airbnb.com/help/article/501
 
   - name: Booking.com
     url: https://www.booking.com/
