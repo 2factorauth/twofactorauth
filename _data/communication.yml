@@ -88,6 +88,13 @@ websites:
     img: epost.png
     lang: de
 
+  - name: FAX.PLUS
+    url: https://www.fax.plus
+    img: faxplus.png
+    tfa:
+      - totp
+    doc: https://www.fax.plus/help/articles/how-can-i-enable-disable-two-factor-authentication
+
   - name: Fleep
     url: https://fleep.io
     twitter: fleepio
