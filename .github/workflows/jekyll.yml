@@ -8,12 +8,21 @@ jobs:
     name: Test Jekyll
     steps:
     - uses: actions/checkout@v1
+
     - name: Install requirements
       run: |
         sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev -y
         sudo bundle install
+
     - name: Build site
       run: bundle exec jekyll build
       timeout-minutes: 1
-    - name: Test Rake script
-      run: bundle exec rake
+
+    - name: Run build checks
+      run: bundle exec rake verify
+
+    - name: Test HTML files
+      run: bundle exec rake proof
+
+    - name: Test JSON files
+      run: bundle exec rake jsonlint

@@ -1,0 +1,22 @@
+name: Rubocop
+
+on:
+  push:
+    paths: verify.rb
+  pull_request:
+    paths: verify.rb
+
+jobs:
+  rubocop:
+    runs-on: ubuntu-latest
+    name: Rubocop
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Install requirements
+      run: |
+        sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev -y
+        sudo bundle install
+
+    - name: Run Rubocop
+      run: ruby bundle exec rake rubocop
