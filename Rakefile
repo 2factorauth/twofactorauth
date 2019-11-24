@@ -43,7 +43,7 @@ end
 # rubocop:enable Metrics/LineLength
 
 task :verify do
-  ruby './verify.rb'
+  ruby '.tests/verify.rb'
 end
 
 RuboCop::RakeTask.new

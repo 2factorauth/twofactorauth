@@ -2,9 +2,9 @@ name: Rubocop
 
 on:
   push:
-    paths: verify.rb
+    paths: .tests/verify.rb
   pull_request:
-    paths: verify.rb
+    paths: .tests/verify.rb
 
 jobs:
   rubocop:
