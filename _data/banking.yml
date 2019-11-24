@@ -1016,8 +1016,10 @@ websites:
   - name: State Farm
     url: https://www.statefarm.com/
     img: statefarm.png
-    twitter: StateFarm
-    facebook: StateFarm
+    tfa:
+      - sms
+      - email
+    doc: https://www.statefarm.com/customer-care/privacy-security-center/identity-verification
 
   - name: SunTrust
     url: https://www.suntrust.com/
