@@ -1,16 +1,16 @@
-name: PR Tests
+name: Site Tests
 
 on:
   pull_request:
     paths:
-      - _data/*
+      - _data/*.yml
 
 jobs:
-  build:
-
+  tests:
     runs-on: ubuntu-latest
-
+    name: Site Tests
     steps:
+
     - uses: actions/checkout@v1
     - uses: actions/setup-ruby@v1
 
