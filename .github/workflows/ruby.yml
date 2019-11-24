@@ -27,4 +27,4 @@ jobs:
       run: bundle install --path vendor/bundle
 
     - name: Run Rubocop
-      run: ruby bundle exec rake rubocop
+      run: bundle exec rake rubocop
