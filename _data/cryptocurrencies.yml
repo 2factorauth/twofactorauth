@@ -35,7 +35,8 @@ websites:
     url: https://bitcointrade.com.br/
     img: bitcointrade.png
     tfa:
-      - software
+      - totp
+    doc: https://blog.bitcointrade.com.br/2fa-o-que-e-e-como-cadastrar/
 
   - name: Bitfinex
     url: https://www.bitfinex.com
