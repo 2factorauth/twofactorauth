@@ -72,9 +72,10 @@ websites:
 
   - name: Australia and New Zealand Banking Group
     url: https://www.anz.com.au/
-    twitter: ANZ_AU
-    facebook: ANZAustralia
     img: anz.png
+    tfa:
+      - sms
+    doc: https://www.anz.com.au/security/protect-your-virtual-valuables/two-factor-authentication/
 
   - name: Avanza
     url: https://www.avanza.se/
