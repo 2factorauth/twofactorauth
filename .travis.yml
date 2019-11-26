@@ -11,7 +11,7 @@ before_install:
 jobs:
   include:
   - name: "Check Twitter handles"
-    script: gem install twitter; bash ./.tests/twitter.sh
+    script: gem install twitter; bash ./twitter.sh
 
   - name: "Check Alexa ranking"
-    script: bash ./.tests/alexa.sh"
+    script: bash ./alexa.sh"
