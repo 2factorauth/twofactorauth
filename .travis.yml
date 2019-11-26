@@ -14,4 +14,4 @@ jobs:
     script: gem install twitter; bash ./twitter.sh
 
   - name: "Check Alexa ranking"
-    script: bash ./alexa.sh"
+    script: bash ./alexa.sh
