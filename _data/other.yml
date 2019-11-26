@@ -77,7 +77,15 @@ websites:
       - software
     doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888
     exception: "SMS required for 2FA."
-
+    
+  - name: The Church of Jesus Christ of Latter-Day Saints
+    url: https://churchofjesuschrist.org/
+    img: churchofjesuschrist.png
+    tfa:
+      - sms
+      - software
+      - hardware
+   
   - name: Cisco Meraki
     url: https://meraki.cisco.com/
     img: meraki.png
