@@ -329,8 +329,9 @@ websites:
   - name: DBS Bank Singapore
     url: https://www.dbs.com.sg/
     img: dbs.png
-    twitter: dbsbank
-    facebook: dbs.sg
+    tfa:
+      - hardware
+    doc: https://www.dbs.com.sg/personal/deposits/security-and-you/we-protect-you.page#slideToN10051
 
   - name: Desert Financial Credit Union
     url: https://www.desertfinancial.com
