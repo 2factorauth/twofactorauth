@@ -24,7 +24,7 @@ If you would like to contribute, please read the entire guidelines here in
 ## Running Locally
 
 TwoFactorAuth.org is built upon [Jekyll](https://jekyllrb.com/), using the [github-pages](https://github.com/github/pages-gem) gem.
-In order to run the site locally, bundler, and all other dependencies will need to be installed, and afterwards Jekyll can be serve
+In order to run the site locally, bundler, and all other dependencies will need to be installed, and afterwards Jekyll can serve
 the site. If the `gem` command is not available, Ruby with RubyGems needs to be installed.
 Once Ruby and RubyGems are installed and available from the command line, TwoFactorAuth can be setup using the following commands.
 
