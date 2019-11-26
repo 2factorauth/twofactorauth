@@ -1,0 +1,13 @@
+os: linux
+language: ruby
+
+jobs:
+  include:
+  - name: "Install dependencies"
+    script: gem install twitter
+
+  - name: "Check Twitter handles"
+    script: bash ./tests/twitter.sh
+
+  - name: "Check Alexa ranking"
+    script: bash ./tests/alexa.sh"
