@@ -2,7 +2,7 @@ os: linux
 language: ruby
 addons:
   snaps:
-    - ruby:
+    - name: ruby
       confinement: classic
 
 before_install:
