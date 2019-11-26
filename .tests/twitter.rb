@@ -3,10 +3,10 @@ require 'twitter'
 
 # Set auth keys
 client = Twitter::REST::Client.new do |config|
-  config.access_token        = ENV["access_key"]
-  config.access_token_secret = ENV["access_secret"]
-  config.consumer_key        = ENV["consumer_key"]
-  config.consumer_secret     = ENV["consumer_secret"]
+  config.access_token        = ENV["twitter_access_key"]
+  config.access_token_secret = ENV["twitter_access_secret"]
+  config.consumer_key        = ENV["twitter_consumer_key"]
+  config.consumer_secret     = ENV["twitter_consumer_secret"]
 end
 
 # Check that an argument has been sent
@@ -25,7 +25,7 @@ rescue Exception => e
 	if e.class == Twitter::Error::NotFound
 		puts "Twitter user #{ARGV[0]} not found."
 		exit 2
-	elsif e.class == Twitter::Error::TooManyRequests 
+	elsif e.class == Twitter::Error::TooManyRequests
 		puts "Disregarding Twitter checks due to too many requests."
 		exit 0 # Soft fail if unable to access twitter api
 	else

@@ -7,8 +7,8 @@ require "net/https"
 require "rexml/document"
 require "time"
 
-access_key_id = ENV["access_key"]
-secret_access_key = ENV["access_secret"]
+access_key_id = ENV["alexa_access_key"]
+secret_access_key = ENV["alexa_access_secret"]
 #
 # Sample request to Alexa Web Information Service
 #
