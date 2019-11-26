@@ -1,0 +1,17 @@
+os: linux
+language: bash
+addons:
+  snaps:
+    - name: ruby
+      confinement: classic
+
+before_install:
+  - cd ./.tests/
+
+jobs:
+  include:
+  - name: "Check Twitter handles"
+    script:  'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then gem install twitter; bash ./twitter.sh; else exit 0; fi'
+
+  - name: "Check Alexa ranking"
+    script:  'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./alexa.sh; else exit 0; fi'
