@@ -3,7 +3,7 @@
 # Check Alexa rank
 check_rank () {
 	url="$(git --no-pager diff origin/master..HEAD ../_data| grep ^+[[:space:]] | grep url | cut -c11-)"
-	if [ -z "$url" ]; then
+	if [ -n "$url" ]; then
     echo "running ruby alexa.rb ${url}"
 		alexa_rank="$(ruby alexa.rb ${url})"
 		if [ "$alexa_rank" -gt 200000 ]; then
