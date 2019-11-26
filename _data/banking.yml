@@ -603,9 +603,10 @@ websites:
 
   - name: LendingClub
     url: https://www.lendingclub.com/
-    twitter: LendingClub
-    facebook: LendingClubTeam
     img: lendingclub.png
+    tfa:
+      - email
+    doc: https://help.lendingclub.com/hc/en-us/articles/360023227211
 
   - name: LGE Community Credit Union
     url: https://www.lgeccu.org/
