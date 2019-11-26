@@ -775,9 +775,9 @@ websites:
   - name: Openbank
     url: https://www.openbank.es
     img: openbank.png
-    twitter: openbank_es
-    facebook: openbank.es
-    lang: es
+    tfa:
+      - sms
+    doc: https://www.openbank.es/en/security
 
   - name: Optum Bank
     url: https://www.optumbank.com
