@@ -12,6 +12,9 @@ check_rank () {
 			echo "${url} has an Alexa ranking of (${alexa_rank})."
 			exit 0
 		fi
+  else
+    echo "No URLs found"
+    exit 0
 	fi
 }
 
