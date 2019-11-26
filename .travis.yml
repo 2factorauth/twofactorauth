@@ -1,5 +1,12 @@
 os: linux
 language: ruby
+addons:
+  snaps:
+    - ruby
+      confinement: classic
+
+before_install:
+  - cd ./.tests/
 
 jobs:
   include:
@@ -8,4 +15,3 @@ jobs:
 
   - name: "Check Alexa ranking"
     script: bash ./.tests/alexa.sh"
-
