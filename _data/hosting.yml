@@ -370,9 +370,8 @@ websites:
     url: https://www.online.net/
     img: online.png
     tfa:
-      - sms
-      - software
-    exception: "SMS available only to customers in France."
+      - totp
+    doc: https://documentation.online.net/en/account-management/account/enable-2fa
 
   - name: OVH
     url: https://www.ovh.com/
