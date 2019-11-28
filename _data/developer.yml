@@ -474,6 +474,12 @@ websites:
     facebook: saucelabs
     email_address: support@saucelabs.com
 
+  - name: Scripting Helpers
+    url: https://scriptinghelpers.org/
+    img: scriptinghelpers.png
+    tfa:
+      - totp
+
   - name: Semaphore
     url: https://semaphoreci.com
     img: semaphore.png
