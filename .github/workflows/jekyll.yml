@@ -8,12 +8,31 @@ jobs:
     name: Test Jekyll
     steps:
     - uses: actions/checkout@v1
+
+    - name: Get Cache
+      id: cache
+      uses: actions/cache@v1
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-bundler
+
     - name: Install requirements
-      run: |
-        sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev -y
-        sudo bundle install
+      run: sudo snap install ruby --classic
+
+    - name: Run Bundler
+      run: bundle install --path vendor/bundle
+
     - name: Build site
       run: bundle exec jekyll build
       timeout-minutes: 1
-    - name: Test Rake script
-      run: bundle exec rake
+
+    - name: Run build checks
+      run: bundle exec rake verify
+
+    - name: Test HTML files
+      run: bundle exec rake proof
+      env:
+        NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+
+    - name: Test JSON files
+      run: bundle exec rake jsonlint
