@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  tests:
+
+    docker:
+      - image: ruby:2.5.3
+
+    steps:
+      - checkout
+
+      - run:
+          name: Check Twitter handles
+          command: gem install twitter; cd .tests/; bash twitter.sh
+
+      - run:
+          name: Check Alexa ranking
+          command: cd .tests/; bash alexa.sh
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - tests

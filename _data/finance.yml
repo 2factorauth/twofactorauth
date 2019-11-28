@@ -16,7 +16,7 @@ websites:
       - software
     doc: https://help.altoira.com/hc/en-us/articles/360007374654
 
-  - name: Amundi (épargne salariale & retraite)
+  - name: Amundi (épargne salariale &amp; retraite)
     url: https://www.amundi-ee.com
     twitter: Amundi_FR
     img: amundiee.png
@@ -57,6 +57,12 @@ websites:
     twitter: ClearScore
     facebook: clearscore
     img: clearscore.png
+
+  - name: Concur
+    url: https://www.concur.com/
+    twitter: SAPConcur
+    facebook: SAPConcur
+    img: concur.png
 
   - name: Credit Karma
     url: https://www.creditkarma.com
@@ -118,6 +124,12 @@ websites:
     img: geico.png
     twitter: GEICO_Service
     facebook: geico
+
+  - name: Gerber Life Insurance
+    url: https://www.gerberlife.com
+    twitter: GerberLife
+    facebook: gerberlife
+    img: gerberlife.png
 
   - name: Gusto
     url: https://www.gusto.com
@@ -221,12 +233,6 @@ websites:
     twitter: nexonia
     img: nexonia.png
 
-  - name: Noddle
-    url: https://www.noddle.co.uk
-    twitter: useyournoddle
-    facebook: noodleuk
-    img: noddle.png
-
   - name: Northwestern Mutual
     url: https://www.northwesternmutual.com/
     facebook: northwesternmutual
@@ -281,6 +287,14 @@ websites:
     twitter: Progressive
     facebook: progressive
     img: progressive.png
+
+  - name: PushCoin
+    url: https://pushcoin.com
+    img: pushcoin.png
+    tfa:
+      - hardware
+    doc: http://knowhow.pushcoin.com/using-security-key-for-2-step-verification/
+    exception: "U2F support only for school admin accounts. 2FA for parent accounts is in progress."
 
   - name: Quickbooks Online
     url: https://www.quickbooks.com
@@ -339,6 +353,11 @@ websites:
       - software
     doc: https://transferwise.com/help/12/managing-your-profile/2932125
     exception: "Software verification requires use of the TransferWise Mobile app. SMS-capable phone is required."
+
+  - name: TransUnion
+    url: https://www.transunion.com/
+    twitter: TransUnion
+    img: transunion.png
 
   - name: Treasury Direct
     url: https://www.treasurydirect.gov
