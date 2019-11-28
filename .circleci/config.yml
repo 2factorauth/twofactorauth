@@ -13,6 +13,10 @@ jobs:
           command: gem install twitter; cd .tests/; bash twitter.sh
 
       - run:
+         name: Check Facebook handles
+         command: cd .tests/; bash facebook.sh
+
+      - run:
           name: Check Alexa ranking
           command: cd .tests/; bash alexa.sh
 
