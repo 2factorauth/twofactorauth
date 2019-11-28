@@ -1,0 +1,38 @@
+name: Jekyll Tests
+
+on: [push, pull_request]
+
+jobs:
+  Test_Jekyll:
+    runs-on: ubuntu-latest
+    name: Test Jekyll
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Get Cache
+      id: cache
+      uses: actions/cache@v1
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-bundler
+
+    - name: Install requirements
+      run: sudo snap install ruby --classic
+
+    - name: Run Bundler
+      run: bundle install --path vendor/bundle
+
+    - name: Build site
+      run: bundle exec jekyll build
+      timeout-minutes: 1
+
+    - name: Run build checks
+      run: bundle exec rake verify
+
+    - name: Test HTML files
+      run: bundle exec rake proof
+      env:
+        NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+
+    - name: Test JSON files
+      run: bundle exec rake jsonlint
