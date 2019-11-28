@@ -11,12 +11,6 @@ websites:
       - software
     doc: https://www.youinvest.co.uk/faq/how-do-i-set-two-factor-authentication
 
-  - name: American Funds
-    url: https://www.americanfunds.com
-    img: americanfunds.png
-    twitter: AmericanFunds
-    facebook: americanfunds
-
   - name: Betterment
     url: https://www.betterment.com/
     img: betterment.png
@@ -25,10 +19,19 @@ websites:
       - software
     doc: https://help.betterment.com/hc/en-us/articles/115004260006
 
+  - name: Capital Group / American Funds
+    url: https://www.capitalgroup.com/
+    img: capitalgroup.png
+    tfa:
+      - sms
+      - email
+    doc: https://www.capitalgroup.com/individual/news/one-time-passcode-login-security.html
+
   - name: Charles Schwab
     url: https://www.schwab.com/
     img: charlesschwab.png
     tfa:
+      - sms
       - software
       - hardware
     doc: "/notes/schwab/"
@@ -50,10 +53,12 @@ websites:
     url: https://www.fidelity.com
     img: fidelity.png
     tfa:
+      - sms
+      - phone
       - software
       - hardware
-    doc: "/notes/fidelity/"
-    exception: "Only available for some account types"
+    doc: https://www.fidelity.com/security/how-two-factor-authentication-works
+    exception: "Specific support varies between account types"
 
   - name: Flatex
     url: https://www.flatex.de/
@@ -118,6 +123,12 @@ websites:
       - email
     doc: https://www.personalcapital.com/safety-and-security
 
+  - name: Prudential Financial
+    url: https://www.prudential.com
+    img: prudential.png
+    tfa:
+      - sms
+
   - name: Questrade
     url: https://www.questrade.com
     img: questrade.png
@@ -147,6 +158,12 @@ websites:
     url: https://www.sigfig.com/
     twitter: SigFigInsider
     img: sigfig.png
+
+  - name: Sunsuper
+    url: https://www.sunsuper.com.au/
+    twitter: Sunsuper
+    facebook: Sunsuper
+    img: sunsuper.png
 
   - name: TD Ameritrade
     url: https://www.tdameritrade.com

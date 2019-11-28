@@ -1,10 +1,10 @@
 TwoFactorAuth.org
 =================
 
-[![Build Status](https://travis-ci.org/2factorauth/twofactorauth.svg)](https://travis-ci.org/2factorauth/twofactorauth)
-[![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat)](/LICENSE)
-[![Gitter](https://img.shields.io/gitter/room/2factorauth/twofactorauth.svg)](https://gitter.im/2factorauth/twofactorauth)
-[![Twitter](https://img.shields.io/badge/Twitter-@2faorg-blue.svg)](https://twitter.com/2faorg)
+[![Build Status](https://img.shields.io/travis/2factorauth/twofactorauth/master?style=for-the-badge)](https://travis-ci.org/2factorauth/twofactorauth)
+[![License](https://img.shields.io/badge/license-mit-9A0F2D.svg?style=for-the-badge)](/LICENSE)
+[![Gitter](https://img.shields.io/gitter/room/2factorauth/twofactorauth.svg?style=for-the-badge&logo=gitter&color=ED1965)](https://gitter.im/2factorauth/twofactorauth)
+[![Twitter](https://img.shields.io/badge/Twitter-@2faorg-1DA1F2.svg?style=for-the-badge&logo=twitter)](https://twitter.com/2faorg)
 
 A list of popular sites and whether or not they accept two factor auth.
 
@@ -38,8 +38,7 @@ bundle exec jekyll serve
 If you're using Ubuntu or [Bash on Windows (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) you'll probably need to install these dependencies first:
 
 ```shell
-sudo apt install libffi-dev nodejs python-dev gcc ruby rails make zlib1g-dev ruby-dev libcurl3
-gem install bundler
+sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev
 ```
 
 The TwoFactorAuth website should then be accessible from `http://localhost:4000`.
