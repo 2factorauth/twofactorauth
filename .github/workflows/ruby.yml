@@ -1,0 +1,30 @@
+name: Rubocop
+
+on:
+  push:
+    paths: .tests/verify.rb
+  pull_request:
+    paths: .tests/verify.rb
+
+jobs:
+  rubocop:
+    runs-on: ubuntu-latest
+    name: Rubocop
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Get Cache
+      id: cache
+      uses: actions/cache@v1
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-bundler
+
+    - name: Install requirements
+      run: sudo snap install ruby --classic
+
+    - name: Run Bundler
+      run: bundle install --path vendor/bundle
+
+    - name: Run Rubocop
+      run: bundle exec rake rubocop
