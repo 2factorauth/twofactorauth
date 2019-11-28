@@ -18,4 +18,4 @@ check_twitter () {
 }
 
 check_twitter
-exit 0
+
