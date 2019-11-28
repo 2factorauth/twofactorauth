@@ -13,19 +13,6 @@ websites:
     img: aerohive.png
     twitter: Aerohive
 
-  - name: Airbnb
-    url: https://www.airbnb.com/
-    img: airbnb.png
-    twitter: Airbnb
-
-  - name: Airtable
-    url: https://airtable.com
-    img: airtable.png
-    tfa:
-      - sms
-      - software
-    doc: https://support.airtable.com/hc/en-us/articles/219409917
-
   - name: Ancestry
     url: https://www.ancestry.com
     img: ancestry.png
@@ -76,21 +63,6 @@ websites:
     twitter: bananatag
     facebook: trackemail
 
-  - name: BasisCode Compliance
-    url: https://basiscode.com
-    img: basiscode.png
-    tfa:
-      - sms
-      - phone
-      - email
-    doc: https://basiscode.com/blog/two-factor-authentication-compliance-software/
-
-  - name: Booking.com
-    url: https://www.booking.com/
-    img: bookingcom.png
-    tfa:
-      - sms
-
   - name: CA Technologies
     url: https://www.ca.com/
     img: ca-technologies.png
@@ -136,18 +108,12 @@ websites:
     img: commuterbenefits.png
     twitter: CommuterBenefit
 
-  - name: Cosmolex
-    url: https://www.cosmolex.com/
-    img: cosmolex.png
+  - name: Contentful
+    url: https://www.contentful.com/
+    img: contentful.png
     tfa:
-      - sms
-    doc: https://support.cosmolex.com/knowledge-base/how-to-enable-two-factor-authentication/
-
-  - name: Couchsurfing
-    url: https://www.couchsurfing.com/
-    img: couchsurfing.png
-    twitter: Couchsurfing
-    facebook: couchsurfing
+      - totp
+    doc: https://www.contentful.com/faq/two-factor-authentication/
 
   - name: Crowd Supply
     url: https://www.crowdsupply.com
@@ -174,18 +140,6 @@ websites:
       - email
     doc: https://www.dhl.de/de/toolbar/footer/datenschutz.html#kundenkontoundempfaengerservices
 
-  - name: DirectAdmin
-    url: https://www.directadmin.com
-    img: directadmin.png
-    tfa:
-      - software
-    doc: https://directadmin.com/features.php?id=1754
-
-  - name: DoorDash
-    url: https://www.doordash.com
-    img: doordash.png
-    twitter: DoorDash
-
   - name: Dreamstime
     url: https://www.dreamstime.com/
     img: dreamstime.png
@@ -197,21 +151,6 @@ websites:
     tfa:
       - software
     doc: https://help.market.envato.com/hc/en-us/articles/115005592963
-
-  - name: Everlaw
-    url: https://everlaw.com
-    img: everlaw.png
-    tfa:
-      - email
-      - software
-    doc: https://support.everlaw.com/hc/en-us/articles/206312165
-
-  - name: FAX.PLUS
-    url: https://www.fax.plus
-    img: faxplus.png
-    tfa:
-      - totp
-    doc: https://www.fax.plus/help/articles/how-can-i-enable-disable-two-factor-authentication
 
   - name: Figma
     url: https://www.figma.com/
@@ -290,12 +229,11 @@ websites:
       - software
     doc: https://docs.helpscout.com/article/907--
 
-  - name: Hilton Honors
-    url: https://www.hilton.com
-    img: hilton.png
-    tfa:
-      - sms
-      - email
+  - name: Hermes DE
+    url: https://www.myhermes.de/
+    img: hermes.png
+    twitter: hermesDE
+    lang: de
 
   - name: IEEE
     url: https://www.ieee.org
@@ -315,7 +253,10 @@ websites:
     url: https://www.immobilienscout24.de
     img: immobilienscout24.png
     tfa:
-      - software
+      - sms
+      - totp
+    doc: https://sicherheit.immobilienscout24.de/phishing/absicherung-login.html
+    exception: "SMS is only available to commercial real estate providers."
 
   - name: Indeed
     url: https://www.indeed.com/
@@ -472,17 +413,6 @@ websites:
     facebook: pocket
     email_address: support@getpocket.com
 
-  - name: Postcrossing
-    url: https://www.postcrossing.com/
-    img: postcrossing.png
-    facebook: postcrossing
-    twitter: postcrossing
-
-  - name: Postmates
-    url: https://postmates.com
-    twitter: Postmates
-    img: postmates.png
-
   - name: Pozible
     url: https://www.pozible.com
     img: pozible.png
@@ -559,8 +489,10 @@ websites:
   - name: Upwork
     url: https://www.upwork.com
     img: upwork.png
-    twitter: UpworkHelp
-    facebook: upwork
+    tfa:
+      - sms
+      - email
+    doc: https://support.upwork.com/hc/en-us/articles/360009491414
 
   - name: Usabilla
     url: https://usabilla.com
