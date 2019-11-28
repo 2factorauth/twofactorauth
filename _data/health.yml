@@ -6,6 +6,13 @@ websites:
       - software
     doc: https://customercare.23andme.com/hc/en-us/articles/360034119874
 
+  - name: Australian Red Cross Blood Service
+    url: https://www.donateblood.com.au/
+    img: donateblood.png
+    tfa:
+      - sms
+      - email
+
   - name: Carilion Clinic
     url: https://www.carilionclinic.org
     img: carilionclinic.png
@@ -84,19 +91,12 @@ websites:
       - hardware
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
-  - name: HealthVault (w/Microsoft Account)
-    url: https://www.healthvault.com
-    img: healthvault.png
-    tfa:
-      - sms
-      - software
-    doc: https://support.microsoft.com/en-us/help/12408/
-
   - name: Hint Health
     url: https://www.hint.com
     img: hint.png
-    twitter: HintHealth
-    facebook: hinthealth
+    tfa:
+      - totp
+    doc: https://support.hint.com/en/articles/2360627
 
   - name: MedicAlert
     url: https://www.medicalert.ca

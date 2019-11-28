@@ -5,6 +5,11 @@ websites:
     twitter: Deliveroo
     facebook: Deliveroo
 
+  - name: DoorDash
+    url: https://www.doordash.com
+    img: doordash.png
+    twitter: DoorDash
+
   - name: Dutch Bros
     url: https://dutchbros.com/
     img: dutchbros.png
@@ -30,6 +35,11 @@ websites:
     twitter: maxburgers_se
     lang: sv
 
+  - name: Postmates
+    url: https://postmates.com
+    twitter: Postmates
+    img: postmates.png
+
   - name: Seamless
     url: https://www.seamless.com/
     img: seamless.png
@@ -39,8 +49,9 @@ websites:
   - name: Starbucks
     url: https://www.starbucks.com/
     img: starbucks.png
-    twitter: Starbucks
-    facebook: Starbucks
+    tfa:
+      - sms
+    doc: https://customerservice.starbucks.com/app/answers/detail/a_id/6180
 
   - name: Taco Bell
     url: https://www.tacobell.com
