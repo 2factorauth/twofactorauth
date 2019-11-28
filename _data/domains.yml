@@ -338,9 +338,10 @@ websites:
     img: namecheap.png
     tfa:
       - sms
-      - software
-      - hardware
-    doc: https://www.namecheap.com/support/knowledgebase/article.aspx/9253/45
+      - proprietary
+      - totp
+      - u2f
+    doc: https://www.namecheap.com/security/2fa-two-factor-authentication/
 
   - name: NameSilo.com
     url: https://www.namesilo.com/
@@ -438,6 +439,13 @@ websites:
       - software
     doc: https://www.pairdomains.com/kb/posts/345
 
+  - name: Park.io
+    url: https://park.io/
+    img: parkio.png
+    tfa:
+      - proprietary
+    doc: https://park.io/support
+
   - name: PointDNS
     url: https://pointhq.com/
     twitter: pointdns
@@ -475,9 +483,9 @@ websites:
     url: https://registro.br
     img: registrobr.png
     tfa:
-      - software
-      - hardware
-    doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
+      - totp
+      - u2f
+    doc: https://registro.br/ajuda/gerenciamento-de-conta/token/
 
   - name: STRATO
     url: https://www.strato.de/

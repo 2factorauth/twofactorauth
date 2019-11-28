@@ -1,0 +1,41 @@
+websites:
+  - name: Airbnb
+    url: https://www.airbnb.com
+    img: airbnb.png
+    tfa:
+      - email
+      - sms
+    doc: https://www.airbnb.com/help/article/501
+
+  - name: Booking.com
+    url: https://www.booking.com/
+    img: bookingcom.png
+    tfa:
+      - sms
+      - email
+    exception: "Setup requires SMS verification. Email is available via 'other options' at login."
+
+  - name: Couchsurfing
+    url: https://www.couchsurfing.com/
+    img: couchsurfing.png
+    twitter: Couchsurfing
+    facebook: couchsurfing
+
+  - name: Hilton Honors
+    url: https://www.hilton.com
+    img: hilton.png
+    tfa:
+      - sms
+      - email
+
+  - name: IHG
+    url: https://www.ihg.com
+    twitter: IHGService
+    facebook: ihg
+    img: ihg.png
+
+  - name: Marriott
+    url: https://www.marriott.com
+    twitter: Marriott
+    facebook: Marriott
+    img: marriott.png
