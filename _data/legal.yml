@@ -1,10 +1,26 @@
 websites:
+  - name: BasisCode Compliance
+    url: https://basiscode.com
+    img: basiscode.png
+    tfa:
+      - sms
+      - phone
+      - email
+    doc: https://basiscode.com/blog/two-factor-authentication-compliance-software/
+
   - name: Clio
     url: https://www.clio.com
     img: clio.png
     tfa:
       - software
     doc: https://support.clio.com/hc/en-us/articles/203184210
+
+  - name: Cosmolex
+    url: https://www.cosmolex.com/
+    img: cosmolex.png
+    tfa:
+      - sms
+    doc: https://support.cosmolex.com/knowledge-base/how-to-enable-two-factor-authentication/
 
   - name: Docusign
     url: https://www.docusign.com
@@ -15,6 +31,14 @@ websites:
       - email
       - software
     doc: https://support.docusign.com/en/guides/ndse-user-guide-two-step-verification
+
+  - name: Everlaw
+    url: https://everlaw.com
+    img: everlaw.png
+    tfa:
+      - email
+      - software
+    doc: https://support.everlaw.com/hc/en-us/articles/206312165
 
   - name: HelloSign
     url: https://www.hellosign.com/
