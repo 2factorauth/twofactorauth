@@ -6,6 +6,13 @@ websites:
       - sms
       - totp
 
+  - name: Cloudbet
+    url: https://www.cloudbet.com/
+    img: cloudbet.png
+    tfa:
+      - totp
+    doc: https://www.cloudbet.com/en/2_step_authentication
+
   - name: win2day
     url: https://www.win2day.at/
     img: win2day.png
