@@ -32,4 +32,4 @@ check_facebook () {
 }
 
 check_facebook
-exit 0
+
