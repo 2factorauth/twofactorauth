@@ -439,6 +439,13 @@ websites:
       - software
     doc: https://www.pairdomains.com/kb/posts/345
 
+  - name: Park.io
+    url: https://park.io/
+    img: parkio.png
+    tfa:
+      - proprietary
+    doc: https://park.io/support
+
   - name: PointDNS
     url: https://pointhq.com/
     twitter: pointdns
@@ -476,9 +483,9 @@ websites:
     url: https://registro.br
     img: registrobr.png
     tfa:
-      - software
-      - hardware
-    doc: https://registro.br/ajuda.html?secao=GerenciamentoConta&item=310
+      - totp
+      - u2f
+    doc: https://registro.br/ajuda/gerenciamento-de-conta/token/
 
   - name: STRATO
     url: https://www.strato.de/

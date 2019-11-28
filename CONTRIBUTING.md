@@ -96,6 +96,7 @@ and follow the template below:
   title: Category Name
   icon: icon-class
 ```
+The `icon-class` value needs to be chosen from [Semantic-Ui][semantic-ui].
 
 Then create a new file in the `_data` directory with the same name as your section's
 id, using the `.yml` extension.
@@ -239,3 +240,4 @@ For context, check out the discussion in issue [#242][242].
 [github-tutorial]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
 [do-tutorial]: https://www.digitalocean.com/community/tutorials/how-to-use-git-branches
 [tinypng]: https://tinypng.com/
+[semantic-ui]: https://semantic-ui.com/elements/icon.html
