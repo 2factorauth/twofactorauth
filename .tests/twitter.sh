@@ -2,17 +2,20 @@
 
 # Check Twitter handle
 check_twitter () {
-	handle="$(git --no-pager diff origin/master..HEAD ../_data | grep ^+[[:space:]] | grep twitter | cut -c15-)"
-  if [ -z "$handle" ]; then
+	handles="$(git --no-pager diff origin/master..HEAD ../_data | grep ^+[[:space:]] | grep twitter | cut -c15-)"
+  if [ -z "$handles" ]; then
     echo "No Twitter handles found"
     exit 0
   else
-    twitter="$(ruby twitter.rb ${handle})"
-    if [ "$twitter" ]; then
-      echo "::error::$twitter"
-      exit 1
-    fi
+    echo "${handles}" | while IFS= read -r handle; do
+      twitter="$(ruby twitter.rb ${handle})"
+      if [ "$twitter" ]; then
+        echo "::error::$twitter"
+        exit 1
+      fi
+    done
   fi
 }
 
 check_twitter
+exit 0

@@ -11,6 +11,7 @@ end
 
 # Check that an argument has been sent
 if ARGV.length != 1
+  puts "Error: Invalid amount of arguments passed."
 	puts "Usage: twitter.rb handle"
 	exit 1
 end
@@ -28,6 +29,9 @@ rescue Exception => e
 	elsif e.class == Twitter::Error::TooManyRequests
 		puts "Disregarding Twitter checks due to too many requests."
 		exit 0 # Soft fail if unable to access twitter api
+  elsif e.class == Twitter::Error::BadRequest
+    puts "Invalid authentication. Check Environment variables."
+    exit 1
 	else
 		puts e.backtrace
 		raise
