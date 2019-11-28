@@ -17,8 +17,8 @@ are stored in folders corresponding to each of those categories in their own
    If you want to test locally, instructions are listed below. Keep reading!
 2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
    preferred format. If possible, please also run the image through an optimizing
-   utility such as OptiPNG before committing it to the repo and keep the file
-   to be under 2.5 kB.
+   utility such as [TinyPNG][tinypng] before committing it to the repo and keep
+   the file to be under 2.5 kB.
 3. **HTTPS links**: All sites that support HTTPS should also be linked with an
    HTTPS address.
 4. **Alexa top 200K**: A new site, that is not already listed, has to be within the
@@ -96,6 +96,7 @@ and follow the template below:
   title: Category Name
   icon: icon-class
 ```
+The `icon-class` value needs to be chosen from [Semantic-Ui][semantic-ui].
 
 Then create a new file in the `_data` directory with the same name as your section's
 id, using the `.yml` extension.
@@ -189,7 +190,7 @@ website.
       img: site.png
       tfa:
         - sms
-      exceptions: "Specific text goes here."
+      exception: "Specific text goes here."
       doc: <link to site TFA documentation>
    ```
 
@@ -238,3 +239,5 @@ For context, check out the discussion in issue [#242][242].
 [alexa]: https://www.alexa.com/siteinfo
 [github-tutorial]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
 [do-tutorial]: https://www.digitalocean.com/community/tutorials/how-to-use-git-branches
+[tinypng]: https://tinypng.com/
+[semantic-ui]: https://semantic-ui.com/elements/icon.html

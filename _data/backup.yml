@@ -5,7 +5,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
     doc: https://support.apple.com/en-us/HT204915
 
   - name: Backblaze
@@ -13,7 +13,7 @@ websites:
     img: backblaze.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.backblaze.com/hc/en-us/articles/217666588
 
   - name: Box
@@ -48,8 +48,8 @@ websites:
     img: dropbox.png
     tfa:
       - sms
-      - software
-      - hardware
+      - totp
+      - u2f
     doc: https://help.dropbox.com/security/enable-two-step-verification
 
   - name: Evernote
@@ -57,7 +57,7 @@ websites:
     img: evernote.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.evernote.com/hc/en-us/articles/208314238
     exception: "SMS authentication only available for Evernote Premium users"
 
@@ -66,8 +66,9 @@ websites:
     img: files.png
     tfa:
       - sms
-      - software
       - hardware
+      - u2f
+      - totp
     doc: https://www.files.com/docs/features/two-factor-auth/
 
   - name: FileThis
@@ -82,8 +83,9 @@ websites:
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - proprietary
+      - totp
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: hubiC
@@ -103,7 +105,7 @@ websites:
     img: jotta.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://docs.jottacloud.com/en/articles/1292931
 
   - name: JustCloud
@@ -115,7 +117,7 @@ websites:
   - name: Koofr
     url: https://koofr.eu
     tfa:
-      - software
+      - totp
     img: koofr.png
     doc: https://koofr.eu/help/other/how-do-i-enable-2-step-verification/
 
@@ -123,7 +125,7 @@ websites:
     url: https://mega.nz/
     img: mega.png
     tfa:
-      - software
+      - totp
     doc: https://mega.nz/help/client/webclient/security-and-privacy/5bb5436cf1b70966038b456b
 
   - name: MultCloud
@@ -138,7 +140,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://www.nimbox.co.uk/help-centre/two-step-two-factor-authentication-2fa/
 
   - name: OneDrive
@@ -146,8 +148,9 @@ websites:
     img: onedrive.png
     tfa:
       - sms
-      - software
-      - hardware
+      - proprietary
+      - totp
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
     exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
 
@@ -156,15 +159,15 @@ websites:
     img: pcloud.png
     tfa:
       - sms
-      - software
-    doc: https://www.pcloud.com/help/general-help-center/67-how-can-i-set-up-two-factor-authentication
+      - totp
+    doc: https://www.pcloud.com/help/general-help-center/how-can-i-set-up-two-factor-authentication
 
   - name: QNAP
     url: https://www.qnap.com
     img: qnap.png
     tfa:
       - email
-      - software
+      - totp
     doc: https://www.qnap.com/en-us/how-to/tutorial/article/how-to-enhance-account-security-using-2-step-verification
 
   - name: SmartBox
@@ -192,7 +195,7 @@ websites:
     img: sync.png
     tfa:
       - email
-      - software
+      - totp
     doc: https://www.sync.com/help/how-do-i-setup-two-factor-authentication/
 
   - name: Synology
@@ -200,7 +203,7 @@ websites:
     img: synology.png
     tfa:
       - email
-      - software
+      - totp
     doc: https://originwww.synology.com/en-us/knowledgebase/tutorials/615#t5
 
   - name: ThisData
@@ -208,7 +211,7 @@ websites:
     img: thisdata.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: http://help.thisdata.com/docs/two-factor-authentication
 
   - name: Tresorit
@@ -218,7 +221,7 @@ websites:
       - sms
       - phone
       - email
-      - software
+      - totp
     doc: https://support.tresorit.com/hc/en-us/articles/216114527
 
   - name: Wasabi
@@ -232,21 +235,14 @@ websites:
     url: https://disk.yandex.com
     img: yandexdisk.png
     tfa:
-      - software
+      - proprietary
     doc: https://yandex.com/support/passport/authorization/twofa.html
     exception: "SMS-capable phone required for initial setup."
-
-  - name: Zetta.net
-    url: https://www.zetta.net/
-    img: zetta.png
-    tfa:
-      - software
-    doc: https://www.zetta.net/about/blog/how-set-zetta-two-factor-authentication/
 
   - name: Zoolz
     url: https://intelli.zoolz.com/
     img: zoolz.png
     tfa:
-      - software
+      - totp
     doc: https://wiki.zoolz.com/how-do-i-enable-two-factor-authentication-on-my-zoolz-intelligent-account/
     exception: "Only available for business accounts."
