@@ -16,12 +16,19 @@
     </thead>
     <tbody class="jets-content">
     {% for website in section_file.websites %}
+    {% assign email_subject  = site.data.languages["en"].email_subject  %}
+    {% assign progress_tweet = site.data.languages["en"].progress_tweet %}
+    {% assign workonit_tweet = site.data.languages["en"].work_tweet     %}
     {% if website.lang and site.data.languages[website.lang] %}
-      {% assign progress_tweet = site.data.languages[website.lang].progress_tweet %}
-      {% assign workonit_tweet = site.data.languages[website.lang].work_tweet %}
-    {% else %}
-      {% assign progress_tweet = page.progress_tweet %}
-      {% assign workonit_tweet = page.workonit_tweet %}
+      {% if site.data.languages[website.lang].email_subject %}
+        {% assign email_subject = site.data.languages[website.lang].email_subject %}
+      {% endif %}
+      {% if site.data.languages[website.lang].progress_tweet %}
+        {% assign progress_tweet = site.data.languages[website.lang].progress_tweet %}
+      {% endif %}
+      {% if site.data.languages[website.lang].work_tweet %}
+        {% assign workonit_tweet = site.data.languages[website.lang].work_tweet %}
+      {% endif %}
     {% endif %}
     <tr class="desktop-tr">
       {% if website.status %}
@@ -85,7 +92,7 @@
           {% if website.twitter or website.facebook or website.email_address %}<span>{{page.link}} </span>{% endif %}
           {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> on Twitter</a>{% endif %}
           {% if website.facebook %} <a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i> on Facebook</a>{%endif%}
-          {% if website.email_address %} <a class="ui green mini button" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i> via Email</a>{% endif %}
+          {% if website.email_address %} <a class="ui green mini button" href="mailto:{{website.email_address}}?subject={{email_subject|uri_escape}}" target="_blank"><i class="mail icon"></i> via Email</a>{% endif %}
         </td>
       {% endif %}
     </tr>
