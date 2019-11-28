@@ -140,7 +140,7 @@ websites:
     img: gog.png
     tfa:
       - email
-    doc: https://www.gog.com/support/support_view/twostep_login_faq
+    doc: https://support.gog.com/hc/en-us/articles/115003660533
 
   - name: GREE
     url: https://product.gree.net/
@@ -202,6 +202,13 @@ websites:
     url: https://mojang.com/
     twitter: MojangSupport
     img: mojang.png
+
+  - name: Nexon
+    url: https://www.nexon.com
+    img: nexon.png
+    tfa:
+      - totp
+    doc: https://support.nexon.net/hc/en-us/articles/360025920992
 
   - name: Nexus Mods
     url: https://www.nexusmods.com/
