@@ -35,7 +35,8 @@ websites:
     url: https://bitcointrade.com.br/
     img: bitcointrade.png
     tfa:
-      - software
+      - totp
+    doc: https://blog.bitcointrade.com.br/2fa-o-que-e-e-como-cadastrar/
 
   - name: Bitfinex
     url: https://www.bitfinex.com
@@ -107,6 +108,13 @@ websites:
       - totp
       - hardware
     doc: https://support.blockchain.com/hc/en-us/articles/211164103
+
+  - name: BlockFi
+    url: https://blockfi.com/
+    img: blockfi.png
+    tfa:
+      - totp
+    doc: https://blockfi.com/blockfi-news/two-factor-authentication-2fa-now-available-for-all-blockfi-accounts/
 
   - name: Braziliex
     url: https://braziliex.com/
@@ -280,15 +288,6 @@ websites:
       - totp
     doc: https://help.coinut.com/hc/en-us/articles/360005061354
 
-  - name: Cryptopia
-    url: https://www.cryptopia.co.nz
-    img: cryptopia.png
-    tfa:
-      - email
-      - totp
-      - proprietary
-    doc: https://support.cryptopia.co.nz/csm?id=kb_article&sys_id=a8c51421dbed1f009990f6fcbf96194a
-
   - name: DSX
     url: https://dsx.uk/
     img: dsx.png
@@ -302,8 +301,8 @@ websites:
     url: https://gatehub.net
     img: gatehub.png
     tfa:
-      - sms
       - totp
+    doc: https://support.gatehub.net/hc/en-us/articles/360021168234
 
   - name: Gemini
     url: https://gemini.com/
@@ -358,9 +357,9 @@ websites:
       - totp
     doc: https://localbitcoins.com/guides/security
 
-  - name: localethereum
-    url: https://localethereum.com
-    img: localethereum.png
+  - name: LocalCryptos
+    url: https://localcryptos.com
+    img: localcryptos.png
     tfa:
       - email
       - totp
@@ -386,6 +385,13 @@ websites:
       - totp
     doc: https://support.poloniex.circle.com/hc/en-us/articles/360025399352
 
+  - name: Remitano
+    url: https://remitano.com/
+    img: remitano.png
+    tfa:
+      - totp
+    doc: https://support.remitano.com/en/articles/781044
+
   - name: SatoshiTango
     url: https://satoshitango.com/
     img: satoshitango.png
@@ -399,6 +405,13 @@ websites:
     tfa:
       - totp
     doc: https://support.uphold.com/hc/en-us/articles/360024042471
+
+  - name: ViaBTC
+    url: https://viabtc.com/
+    img: viabtc.png
+    tfa:
+      - totp
+    doc: https://support.viabtc.com/hc/en-us/articles/360016173751
 
   - name: Wirex
     url: https://wirexapp.com/
