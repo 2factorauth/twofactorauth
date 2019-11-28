@@ -13,14 +13,6 @@ websites:
     img: aerohive.png
     twitter: Aerohive
 
-  - name: Airtable
-    url: https://airtable.com
-    img: airtable.png
-    tfa:
-      - sms
-      - software
-    doc: https://support.airtable.com/hc/en-us/articles/219409917
-
   - name: Ancestry
     url: https://www.ancestry.com
     img: ancestry.png
@@ -70,15 +62,6 @@ websites:
     img: bananatag.png
     twitter: bananatag
     facebook: trackemail
-
-  - name: BasisCode Compliance
-    url: https://basiscode.com
-    img: basiscode.png
-    tfa:
-      - sms
-      - phone
-      - email
-    doc: https://basiscode.com/blog/two-factor-authentication-compliance-software/
 
   - name: CA Technologies
     url: https://www.ca.com/
@@ -132,13 +115,6 @@ websites:
       - totp
     doc: https://www.contentful.com/faq/two-factor-authentication/
 
-  - name: Cosmolex
-    url: https://www.cosmolex.com/
-    img: cosmolex.png
-    tfa:
-      - sms
-    doc: https://support.cosmolex.com/knowledge-base/how-to-enable-two-factor-authentication/
-
   - name: Crowd Supply
     url: https://www.crowdsupply.com
     img: crowdsupply.png
@@ -164,13 +140,6 @@ websites:
       - email
     doc: https://www.dhl.de/de/toolbar/footer/datenschutz.html#kundenkontoundempfaengerservices
 
-  - name: DirectAdmin
-    url: https://www.directadmin.com
-    img: directadmin.png
-    tfa:
-      - software
-    doc: https://directadmin.com/features.php?id=1754
-
   - name: Dreamstime
     url: https://www.dreamstime.com/
     img: dreamstime.png
@@ -182,21 +151,6 @@ websites:
     tfa:
       - software
     doc: https://help.market.envato.com/hc/en-us/articles/115005592963
-
-  - name: Everlaw
-    url: https://everlaw.com
-    img: everlaw.png
-    tfa:
-      - email
-      - software
-    doc: https://support.everlaw.com/hc/en-us/articles/206312165
-
-  - name: FAX.PLUS
-    url: https://www.fax.plus
-    img: faxplus.png
-    tfa:
-      - totp
-    doc: https://www.fax.plus/help/articles/how-can-i-enable-disable-two-factor-authentication
 
   - name: Figma
     url: https://www.figma.com/
@@ -458,12 +412,6 @@ websites:
     twitter: Pocket
     facebook: pocket
     email_address: support@getpocket.com
-
-  - name: Postcrossing
-    url: https://www.postcrossing.com/
-    img: postcrossing.png
-    facebook: postcrossing
-    twitter: postcrossing
 
   - name: Pozible
     url: https://www.pozible.com

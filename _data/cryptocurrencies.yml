@@ -35,7 +35,8 @@ websites:
     url: https://bitcointrade.com.br/
     img: bitcointrade.png
     tfa:
-      - software
+      - totp
+    doc: https://blog.bitcointrade.com.br/2fa-o-que-e-e-como-cadastrar/
 
   - name: Bitfinex
     url: https://www.bitfinex.com
@@ -300,8 +301,8 @@ websites:
     url: https://gatehub.net
     img: gatehub.png
     tfa:
-      - sms
       - totp
+    doc: https://support.gatehub.net/hc/en-us/articles/360021168234
 
   - name: Gemini
     url: https://gemini.com/
@@ -349,9 +350,9 @@ websites:
       - totp
     doc: https://localbitcoins.com/guides/security
 
-  - name: localethereum
-    url: https://localethereum.com
-    img: localethereum.png
+  - name: LocalCryptos
+    url: https://localcryptos.com
+    img: localcryptos.png
     tfa:
       - email
       - totp
@@ -376,6 +377,13 @@ websites:
     tfa:
       - totp
     doc: https://support.poloniex.circle.com/hc/en-us/articles/360025399352
+
+  - name: Remitano
+    url: https://remitano.com/
+    img: remitano.png
+    tfa:
+      - totp
+    doc: https://support.remitano.com/en/articles/781044
 
   - name: SatoshiTango
     url: https://satoshitango.com/
