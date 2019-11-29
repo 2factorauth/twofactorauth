@@ -4,8 +4,6 @@ jobs:
 
     docker:
       - image: ruby:2.5.3
-    working_directory: .tests/
-
     steps:
       - checkout
 
@@ -14,14 +12,17 @@ jobs:
           command: |
             gem i twitter -q --no-suggest --minimal-deps
             bash twitter.sh
+          working_directory: ./.tests
 
       - run:
          name: Check Facebook handles
          command: bash facebook.sh
+         working_directory: ./.tests
 
       - run:
           name: Check Alexa ranking
           command: bash alexa.sh
+          working_directory: ./.tests
 
 workflows:
   version: 2
