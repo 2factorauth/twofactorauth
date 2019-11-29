@@ -258,6 +258,14 @@ websites:
     doc: https://sicherheit.immobilienscout24.de/phishing/absicherung-login.html
     exception: "SMS is only available to commercial real estate providers."
 
+  - name: Immowelt
+    url: https://www.immowelt.de/
+    img: immowelt.png
+    tfa:
+      - email
+    doc: https://support.immowelt.de/immoweltde/faq/gewerbliche-anbieter/meine-immowelt/sichere-anmeldung.html
+    exception: "2FA is only available for commercial partners."
+
   - name: Indeed
     url: https://www.indeed.com/
     img: indeed.png
