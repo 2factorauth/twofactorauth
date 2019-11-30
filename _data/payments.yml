@@ -26,6 +26,13 @@ websites:
     doc: https://help.buycraft.net/article/83-two-factor-authentication
     exception: "SMS-capable phone required."
 
+  - name: ClickPay
+    url: https://www.clickpay.com/
+    twitter: ClickPay1
+    facebook: ClickPayPlatform
+    email_address: support@clickpay.com
+    img: clickpay.png
+
   - name: Dwolla
     url: https://www.dwolla.com
     img: dwolla.png
@@ -45,14 +52,15 @@ websites:
       - sms
     doc: https://support.gocardless.com/hc/en-gb/articles/360001164385
 
-  - name: Google Wallet
-    url: https://www.google.se/wallet/
-    img: googlewallet.png
+  - name: Google Pay
+    url: https://pay.google.com/
+    img: googlepay.png
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - proprietary
+      - totp
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: HYPE
@@ -206,6 +214,14 @@ websites:
     url: https://secure.checkout.visa.com/
     img: visa-checkout.png
     twitter: VisaCheckout
+
+  - name: WePay
+    url: https://go.wepay.com
+    img: wepay.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.wepay.com/hc/en-us/articles/203609693
 
   - name: Yandex.Money
     url: https://money.yandex.ru
