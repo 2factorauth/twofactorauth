@@ -539,7 +539,14 @@ websites:
     twitter: WixHelp
     facebook: wix
     img: wix.png
-
+    
+  - name: World4You
+    url: https://www.world4you.com
+    img: world4you.png
+    tfa:
+      - totp
+    doc: https://www.world4you.com/faq/en/w4y-app/faq.zwei-faktor-authentifizierung-world4you-app.html
+    
   - name: WP Engine
     url: https://wpengine.com/
     img: wpengine.png
