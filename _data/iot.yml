@@ -5,6 +5,14 @@ websites:
     facebook: ecobee
     img: ecobee.png
 
+  - name: IFTTT
+    url: https://ifttt.com
+    img: ifttt.png
+    tfa:
+      - sms
+      - totp
+    doc: https://help.ifttt.com/hc/en-us/articles/115010193007
+
   - name: Nest
     url: https://nest.com
     img: nest.png
