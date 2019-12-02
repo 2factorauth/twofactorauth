@@ -1,4 +1,11 @@
 websites:
+  - name: BeerAdvocate
+    url: https://www.beeradvocate.com/
+    img: beeradvocate.png
+    tfa:
+      - totp
+      - email
+
   - name: Deliveroo
     url: https://deliveroo.com/
     img: deliveroo.png
