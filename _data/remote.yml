@@ -7,11 +7,12 @@ websites:
       - hardware
     img: awsworkspaces.png
 
-  - name: Anydesk
+  - name: AnyDesk
     url: https://anydesk.com/
-    twitter: anydesk
-    facebook: AnyDesk
     img: anydesk.png
+    tfa:
+      - totp
+    doc: https://support.anydesk.com/Two_Factor_Authentication
 
   - name: ConnectWise Control (ScreenConnect)
     url: https://www.connectwise.com/software/control
