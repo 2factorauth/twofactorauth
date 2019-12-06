@@ -6,6 +6,14 @@ websites:
       - totp
     doc: https://support.anycoindirect.eu/hc/en-gb/articles/115001423191
 
+  - name: Bcnex
+    url: https://www.bcnex.net/
+    img: bcnex.png
+    tfa:
+      - totp
+      - sms
+    doc: https://support.bcnex.net/hc/en-us/articles/360019419173
+
   - name: Binance
     url: https://www.binance.com/
     img: binance.png
