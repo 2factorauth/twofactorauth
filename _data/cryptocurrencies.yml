@@ -87,6 +87,13 @@ websites:
       - software
     doc: https://bitlish.com/how#mfa
 
+  - name: Bitpanda
+    url: https://www.bitpanda.com/
+    img: bitpanda.png
+    tfa:
+      - totp
+    doc: https://support.bitpanda.com/hc/en-us/articles/360002015220
+
   - name: Bitpay
     url: https://bitpay.com
     img: bitpay.png
