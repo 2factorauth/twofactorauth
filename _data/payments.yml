@@ -26,6 +26,13 @@ websites:
     doc: https://help.buycraft.net/article/83-two-factor-authentication
     exception: "SMS-capable phone required."
 
+  - name: Chargebee
+    url: https://www.chargebee.com/
+    img: chargebee.png
+    tfa:
+      - totp
+    doc: https://www.chargebee.com/docs/2fa.html
+
   - name: ClickPay
     url: https://www.clickpay.com/
     twitter: ClickPay1
