@@ -24,6 +24,15 @@ websites:
     twitter: Bitdefender
     facebook: bitdefender
 
+  - name: Bitwarden
+    url: https://www.bitwarden.com
+    img: bitwarden.png
+    tfa:
+      - email
+      - hardware
+      - software
+    doc: https://help.bitwarden.com/article/setup-two-step-login/
+
   - name: Blur
     url: https://www.abine.com/
     img: blur.png
