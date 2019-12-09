@@ -400,6 +400,14 @@ websites:
       - totp
     doc: https://support.remitano.com/en/articles/781044
 
+  - name: River Financial
+    url: https://www.river.com
+    img: river.png
+    tfa:
+      - sms
+      - software
+    doc: https://river.com/support/knowledge-base/articles/enable-multi-factor-authentication
+
   - name: SatoshiTango
     url: https://satoshitango.com/
     img: satoshitango.png
