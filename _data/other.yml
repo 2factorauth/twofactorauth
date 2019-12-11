@@ -1,11 +1,11 @@
 websites:
   - name: Adobe ID
-    url: https://accounts.adobe.com/
+    url: https://adobe.com/
     img: adobe.png
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
   - name: Aerohive Networks
