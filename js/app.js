@@ -69,6 +69,9 @@ var jets = new Jets({
           $('#no-results').css('display', 'block');
       }
 
+      // Display images that came into view by searching
+      $('img').Lazy({visibleOnly: true});
+
       isSearching = true;
     }
   },
