@@ -48,3 +48,11 @@ websites:
       - software
     doc: https://faq.hellosign.com/hc/en-us/articles/360025164091
     exception: "SMS Two-factor authentication is only available to paid Business plan senders and above."
+
+  - name: LegalRobot
+    url: https://legalrobot.com/
+    img: legalrobot.png
+    tfa:
+      - software
+      - hardware
+    doc: https://legalrobot.com/security
