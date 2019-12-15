@@ -8,6 +8,13 @@ websites:
     doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
     exception: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
 
+  - name: AppFolio
+    url: https://www.appfolio.com/
+    img: appfolio.png
+    tfa:
+      - totp
+    doc: https://www.appfolio.com/help/online-portal
+
   - name: Braintree
     img: braintree.png
     url: https://www.braintreepayments.com/
@@ -25,6 +32,13 @@ websites:
       - software
     doc: https://help.buycraft.net/article/83-two-factor-authentication
     exception: "SMS-capable phone required."
+
+  - name: Chargebee
+    url: https://www.chargebee.com/
+    img: chargebee.png
+    tfa:
+      - totp
+    doc: https://www.chargebee.com/docs/2fa.html
 
   - name: ClickPay
     url: https://www.clickpay.com/

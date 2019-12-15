@@ -237,6 +237,13 @@ websites:
     tfa:
       - email
 
+  - name: Parsec
+    url: https://www.parsecgaming.com
+    img: parsec.png
+    tfa:
+      - totp
+    doc: https://support.parsecgaming.com/hc/en-us/articles/360015480691
+
   - name: Playstation Network
     url: https://www.playstation.com/
     img: psn.png
