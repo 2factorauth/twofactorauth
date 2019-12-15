@@ -79,5 +79,7 @@ websites:
   - name: Wyze
     url: https://www.wyzecam.com
     img: wyze.png
-    twitter: WyzeCam
-    facebook: WyzeCam
+    tfa:
+      - sms
+    doc: https://support.wyzecam.com/hc/en-us/articles/360024402052
+    exception: "2FA via SMS is only available for USA and Canada."
