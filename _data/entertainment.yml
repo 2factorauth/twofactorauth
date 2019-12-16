@@ -49,7 +49,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
       - hardware
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
@@ -88,7 +88,7 @@ websites:
     url: https://mixer.com/
     img: mixer.png
     tfa:
-      - software
+      - totp
     doc: https://watchbeam.zendesk.com/hc/en-us/articles/115000997646
 
   - name: Netflix
@@ -101,7 +101,7 @@ websites:
     url: https://www.nicovideo.jp/
     img: niconico.png
     tfa:
-      - software
+      - totp
     doc: https://qa.nicovideo.jp/faq/show/4500
 
   - name: Pandora
@@ -145,8 +145,8 @@ websites:
     url: https://www.smashcast.tv/
     img: smashcast.png
     tfa:
-      - software
-    doc: https://help.smashcast.tv/customer/en/portal/articles/2779887
+      - totp
+    doc: https://support.desk.com/customer/portal/articles/1894034
 
   - name: SoundCloud
     url: https://soundcloud.com/
@@ -185,9 +185,9 @@ websites:
     img: twitch.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://help.twitch.tv/s/article/two-factor-authentication-with-authy
-    exception: "To activate two factor authentication, you must provide a mobile phone number. Software authentication requires the Authy app."
+    exception: "To activate two factor authentication, you must provide a mobile phone number."
 
   - name: Vimeo
     url: https://vimeo.com/
@@ -201,6 +201,6 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
       - hardware
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
