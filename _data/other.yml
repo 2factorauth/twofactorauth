@@ -26,7 +26,8 @@ websites:
     img: angellist.png
     tfa:
       - sms
-      - software
+      - totp
+    doc: https://angel.co/projects/106166
 
   - name: Australia Post
     url: https://auspost.com.au/
@@ -40,21 +41,21 @@ websites:
       - sms
       - phone
       - email
-      - software
+      - totp
     doc: https://knowledge.autodesk.com/customer-service/account-management/account-profile/account-security/two-step-verification
 
   - name: Automater
     url: https://automater.pl/en/
     img: automater.png
     tfa:
-      - software
-    doc: https://www.youtube.com/watch?v=5OLcvjVhhuI
+      - totp
+    doc: https://help.automater.com/help/two-factor-authentication-2fa
 
   - name: AwardWallet
     url: https://awardwallet.com
     img: awardwallet.png
     tfa:
-      - software
+      - totp
     doc: https://awardwallet.com/faqs#44
 
   - name: Bananatag
@@ -74,16 +75,15 @@ websites:
     img: chartbeat.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888
-    exception: "SMS required for 2FA."
 
   - name: Cisco Meraki
     url: https://meraki.cisco.com/
     img: meraki.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
 
   - name: Clickworker
@@ -95,13 +95,13 @@ websites:
     url: https://cloudconvert.com
     img: cloudconvert.png
     tfa:
-      - software
+      - totp
 
   - name: Cloudinary
     url: https://cloudinary.com
     img: cloudinary.png
     tfa:
-      - software
+      - totp
 
   - name: CommuterBenefits
     url: https://commuterbenefits.com/
@@ -149,7 +149,7 @@ websites:
     url: https://envato.com
     img: envato.png
     tfa:
-      - software
+      - totp
     doc: https://help.market.envato.com/hc/en-us/articles/115005592963
 
   - name: Figma
@@ -157,21 +157,21 @@ websites:
     img: figma.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.figma.com/article/208--
 
   - name: Findmyshift
     url: https://www.findmyshift.com/
     img: findmyshift.png
     tfa:
-      - software
+      - totp
     doc: https://www.findmyshift.com/help/what-is-two-factor-authentication
 
   - name: Firefox
     url: https://accounts.firefox.com
     img: firefox.png
     tfa:
-      - software
+      - totp
     doc: https://support.mozilla.org/en-US/kb/secure-firefox-account-two-step-authentication
 
   - name: Fiverr
@@ -187,7 +187,7 @@ websites:
     img: formstack.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.formstack.com/hc/en-us/articles/360019517891
 
   - name: Freelancer
@@ -210,7 +210,7 @@ websites:
     img: grammarly.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.grammarly.com/hc/en-us/articles/360032922091
     exception: "SMS-capable phone is required."
 
@@ -218,15 +218,15 @@ websites:
     url: https://www.growingio.com/
     img: growing.png
     tfa:
-      - software
-    doc: https://docs.growingio.com/docs/configuration/account-management#22-kai-qi-er-ci-ren-zheng
+      - totp
+    doc: https://docs.growingio.com/docs/product-manual/sysmanage/personal/security#kai-qi-er-ci-yan-zheng
 
   - name: Help Scout
     url: https://helpscout.com
     img: helpscout.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://docs.helpscout.com/article/907--
 
   - name: Hermes DE
@@ -283,7 +283,7 @@ websites:
     url: https://www.jitbit.com/hosted-helpdesk/
     img: jitbit.png
     tfa:
-      - software
+      - totp
     doc: https://support.jitbit.com/helpdesk/KB/View/11048235
 
   - name: JustGiving
@@ -303,8 +303,8 @@ websites:
     url: https://www.kayako.com
     img: kayako.png
     tfa:
-      - software
-    doc: https://support.kayako.com/article/1198-securing-your-user-account-with-two-factor-authentication-2fa
+      - totp
+    doc: https://help.kayako.com/hc/en-us/articles/360006376420
 
   - name: Kickstarter
     url: https://www.kickstarter.com
@@ -312,7 +312,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
     doc: https://help.kickstarter.com/hc/en-us/articles/115005127094
 
   - name: Liftopia
@@ -327,7 +327,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://www.mathworks.com/mw_account/two_step_verification/frequently-asked-questions.html
 
   - name: Mixpanel
@@ -335,7 +335,7 @@ websites:
     img: mixpanel.png
     tfa:
       - sms
-      - software
+    doc: https://help.mixpanel.com/hc/en-us/articles/115004485966
 
   - name: Monster
     url: https://www.monster.com
@@ -353,7 +353,7 @@ websites:
     url: https://nostarch.com/
     img: nostarchpress.png
     tfa:
-      - software
+      - totp
 
   - name: Office 365
     url: https://office.microsoft.com/en-us/business/
@@ -361,7 +361,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
       - hardware
     doc: https://support.office.com/en-US/article/Set-up-multi-factor-authentication-for-Office-365-8f0454b2-f51a-4d9c-bcde-2c48e41621c6
     exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
@@ -370,7 +370,7 @@ websites:
     url: https://www.onshape.com/
     img: onshape.png
     tfa:
-      - software
+      - totp
     doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
 
   - name: Pastebin
@@ -385,14 +385,14 @@ websites:
     img: patreon.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.patreon.com/hc/en-us/articles/206538086
 
   - name: PhraseApp
     url: https://phraseapp.com
     img: phraseapp.png
     tfa:
-      - software
+      - totp
     doc: https://phraseapp.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
 
   - name: Pinboard
@@ -428,7 +428,7 @@ websites:
     img: repairshopr.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://feedback.repairshopr.com/knowledgebase/articles/928266
     exception: "SMS only available as a backup to Google Authenticator."
 
@@ -436,14 +436,14 @@ websites:
     url: https://www.ripe.net/
     img: ripe.png
     tfa:
-      - software
+      - totp
     doc: https://www.ripe.net/participate/member-support/ripe-ncc-access/two-step-verification
 
   - name: SaneBox
     url: https://www.sanebox.com/
     img: sanebox.png
     tfa:
-      - software
+      - totp
     doc: https://www.sanebox.com/help/127
 
   - name: SignNow
@@ -456,7 +456,7 @@ websites:
     url: https://www.smartsimple.com
     img: smartsimple.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://wiki.smartsimple.com/wiki/Two-Factor_Authentication
 
@@ -471,7 +471,7 @@ websites:
     url: https://www.ubnt.com
     img: ubiquiti.png
     tfa:
-      - software
+      - totp
     doc: https://help.ubnt.com/hc/en-us/articles/115012986607
 
   - name: Ulule
@@ -498,7 +498,7 @@ websites:
     url: https://usabilla.com
     img: usabilla.png
     tfa:
-      - software
+      - totp
     doc: https://support.usabilla.com/hc/en-us/articles/115003081611
 
   - name: WageWorks
@@ -514,16 +514,16 @@ websites:
     img: watchmanmonitoring.png
     tfa:
       - sms
-      - software
+      - totp
       - hardware
-    doc: https://www.watchmanmonitoring.com/two-factor-authentication
+    doc: https://support.watchmanmonitoring.com/hc/en-us/articles/205004059
     exception: "Two factor authentication unavailable for 'End User' access, which is read-only."
 
   - name: Weclapp
     url: https://weclapp.com/
     img: weclapp.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://doc.weclapp.com/knowledgebase/zwei-wege-authentifizierung-2fa/
 
@@ -536,7 +536,7 @@ websites:
     url: https://www.wikipedia.org/
     img: wikipedia.png
     tfa:
-      - software
+      - totp
     doc: https://meta.wikimedia.org/wiki/Help:Two-factor_authentication
     exception: "Currently limited to administrators (and users with admin-like permissions like interface editors), bureaucrats, checkusers, oversighters, stewards, edit filter managers and the OATH-testers global group."
 
@@ -544,19 +544,19 @@ websites:
     url: https://yclas.com/
     img: yclas.png
     tfa:
-      - software
+      - totp
     doc: https://docs.yclas.com/2-step-authentication/
 
   - name: YourAcclaim
     url: https://youracclaim.com
     img: youracclaim.png
     tfa:
-      - software
+      - totp
 
   - name: Zendesk
     url: https://www.zendesk.com
     img: zendesk.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.zendesk.com/hc/en-us/articles/206373587
