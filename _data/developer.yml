@@ -5,7 +5,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
       - hardware
     doc: https://support.aha.io/hc/en-us/articles/202000957
 
@@ -13,28 +13,28 @@ websites:
     url: https://airbrake.io
     img: airbrake.png
     tfa:
-      - software
+      - totp
     doc: https://airbrake.io/docs/features/two-factor-authentication/
 
   - name: Algolia
     url: https://algolia.com
     img: algolia.png
     tfa:
-      - software
+      - totp
     doc: https://www.algolia.com/doc/security/best-security-practices/#two-factor-authentication-2fa
 
   - name: AppSignal
     url: https://appsignal.com
     img: appsignal.png
     tfa:
-      - software
+      - totp
     doc: https://docs.appsignal.com/user-account/two-factor-authentication.html
 
   - name: AppVeyor
     url: https://www.appveyor.com
     img: appveyor.png
     tfa:
-      - software
+      - totp
     doc: https://www.appveyor.com/blog/2018/11/07/2FA-implementation/
 
   - name: aTech Media
@@ -49,7 +49,7 @@ websites:
     url: https://id.atlassian.com
     img: atlassian.png
     tfa:
-      - software
+      - totp
     doc: https://confluence.atlassian.com/cloud/secure-your-account-with-two-step-verification-939505063.html
     exception: "2FA settings are service-specific."
 
@@ -68,7 +68,7 @@ websites:
     url: https://bitbucket.org
     img: bitbucket.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://confluence.atlassian.com/x/425QLg
 
@@ -77,34 +77,36 @@ websites:
     img: buddy.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://buddy.works/blog/introducing-two-factor-authentication
 
   - name: Bugsnag
     url: https://bugsnag.com
     img: bugsnag.png
     tfa:
-      - software
+      - totp
     doc: https://docs.bugsnag.com/product/account-and-security/#security
 
   - name: Bugzilla@Mozilla
     url: https://bugzilla.mozilla.org
     img: bugzilla.png
     tfa:
-      - software
+      - proprietary
+      - totp
 
   - name: Buildkite
     url: https://buildkite.com
     img: buildkite.png
     tfa:
-      - software
+      - totp
     doc: https://buildkite.com/changelog/31-two-factor-authentication
 
   - name: BuiltWith
     url: https://builtwith.com
     img: builtwith.png
     tfa:
-      - software
+      - totp
+    doc: https://kb.builtwith.com/account-management/how-to-enable-2fa-on-builtwith/
 
   - name: Cacoo
     url: https://cacoo.com/
@@ -129,45 +131,44 @@ websites:
     img: cmtelecom.png
     tfa:
       - sms
-      - phone
-      - software
-    doc: https://help.onlinesmsgateway.com/en/accounts-and-payments/how-do-i-enable-two-factor-authentication
+      - proprietary
+    doc: https://help.cmtelecom.com/en/account-wallet/account/how-do-i-enable-two-factor-authentication-2fa
 
   - name: Code Climate
     url: https://codeclimate.com
     img: codeclimate.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://docs.codeclimate.com/docs/enabling-two-factor-authentication
 
   - name: Codeanywhere
     url: https://codeanywhere.com
     img: codeanywhere.png
     tfa:
-      - software
-    exception: "Only available on paid accounts at $7/10 per month (annual/monthly) or more."
+      - sms
+    doc: https://docs.codeanywhere.com/#two-factor-authentication
 
   - name: Codeship
     url: https://codeship.com/
     img: codeship.png
     tfa:
-      - software
+      - totp
     doc: https://documentation.codeship.com/general/about/2fa/
 
-  - name: Compose.io
-    url: https://www.compose.io/
+  - name: Compose
+    url: https://www.compose.com/
     img: composeio.png
     tfa:
       - sms
-      - software
-    doc: https://docs.compose.io/security/compose-two-factor-authentication.html
+      - totp
+    doc: https://help.compose.com/docs/two-factor-authentication
 
   - name: Crowdin
     url: https://crowdin.com/
     img: crowdin.png
     tfa:
-      - software
+      - totp
     doc: https://support.crowdin.com/account-settings/#two-factor-authentication
 
   - name: Deploybot
@@ -179,7 +180,7 @@ websites:
     url: https://www.deployhq.com/
     img: deployhq.png
     tfa:
-      - software
+      - totp
     doc: https://www.deployhq.com/support/managing-your-account/personal-profile/two-factor-authentication
 
   - name: Docker
@@ -193,45 +194,45 @@ websites:
     url: https://www.dominodatalab.com/
     img: domino.png
     tfa:
-      - software
+      - totp
     doc: https://support.dominodatalab.com/hc/en-us/articles/115000998406
 
   - name: Drupal.org
     url: https://www.drupal.org/
     img: drupalorg.png
     tfa:
-      - software
+      - totp
     doc: https://www.drupal.org/drupalorg/docs/user-accounts/setting-up-two-factor-authentication
 
   - name: Esri
     url: https://www.esri.com
     img: esri.png
     tfa:
-      - software
+      - totp
     doc: https://doc.arcgis.com/en/arcgis-online/reference/multifactor.htm
 
   - name: FogBugz & Kiln
     url: https://www.fogbugz.com/
     img: fogbugz.png
     tfa:
-      - software
-    doc: https://help.manuscript.com/10892
+      - totp
+    doc: https://support.fogbugz.com/hc/en-us/articles/360011256234
 
   - name: GitHub
     url: https://github.com
     img: github.png
     tfa:
       - sms
-      - software
+      - totp
       - hardware
-    doc: https://help.github.com/articles/about-two-factor-authentication
+    doc: https://help.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication
 
   - name: GitLab
     url: https://gitlab.com
     img: gitlab.png
     tfa:
-      - software
-      - hardware
+      - totp
+      - u2f
     doc: https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html
 
   - name: HashiCorp Terraform Enterprise
@@ -239,7 +240,7 @@ websites:
     img: hashicorp-terraform-enterprise.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://www.terraform.io/docs/enterprise/users-teams-organizations/2fa.html
 
   - name: HashiCorp Vagrant Cloud
@@ -247,14 +248,14 @@ websites:
     img: hashicorp-vagrant-cloud.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://www.vagrantup.com/docs/vagrant-cloud/users/authentication.html#two-factor-authentication
 
   - name: Heap Analytics
     url: https://heapanalytics.com/
     img: heapanalytics.png
     tfa:
-      - software
+      - totp
     doc: https://docs.heap.io/docs/2fa
 
   - name: imgix
@@ -274,7 +275,7 @@ websites:
     url: https://www.itglue.com/
     img: itglue.png
     tfa:
-      - software
+      - totp
     doc: https://kb.itglue.com/hc/en-us/articles/213293197
 
   - name: JetBrains
@@ -287,14 +288,14 @@ websites:
     url: https://koding.com
     img: koding.png
     tfa:
-      - software
+      - totp
     doc: https://www.koding.com/blog/2015/06/two-factor-authentication/
 
   - name: Launchpad
     url: https://launchpad.net
     img: launchpad.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
 
@@ -302,21 +303,21 @@ websites:
     url: https://looker.com/
     img: looker.png
     tfa:
-      - software
+      - totp
     doc: https://www.looker.com/docs/admin/security/two-factor-authentication
 
   - name: Mapbox
     url: https://www.mapbox.com
     img: mapbox.png
     tfa:
-      - software
-    doc: https://www.mapbox.com/help/two-step-verification/
+      - totp
+    doc: https://docs.mapbox.com/accounts/overview/settings/#security
 
   - name: Metrological
     url: https://www.metrological.com/
     img: metrological.png
     tfa:
-      - software
+      - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2273#issuecomment-271876292
 
   - name: MongoDB Cloud Manager
@@ -325,7 +326,8 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
+      - hardware
     doc: https://docs.cloudmanager.mongodb.com/core/two-factor-authentication/
 
   - name: New Relic
@@ -345,8 +347,8 @@ websites:
     url: https://www.npmjs.com/
     img: npm.png
     tfa:
-      - software
-    doc: https://docs.npmjs.com/getting-started/using-two-factor-authentication
+      - totp
+    doc: https://docs.npmjs.com/configuring-two-factor-authentication
 
   - name: NuGet
     url: https://www.nuget.org
@@ -365,7 +367,7 @@ websites:
     url: https://panic.com/
     img: panic.png
     tfa:
-      - software
+      - totp
     doc: https://library.panic.com/general/sync-2fa/
 
   - name: Papertrail
@@ -401,29 +403,29 @@ websites:
     url: https://pushover.net/
     img: pushover.png
     tfa:
-      - software
-    doc: https://pushover.net/faq#security-2fa
+      - totp
+    doc: https://support.pushover.app/i49
 
   - name: PyPI
     url: https://pypi.org/
     img: pypi.png
     tfa:
-      - software
-      - hardware
+      - totp
+      - u2f
     doc: https://pypi.org/help/#twofa
 
   - name: PythonAnywhere
     url: https://www.pythonanywhere.com
     img: pythonanywhere.png
     tfa:
-      - software
+      - totp
 
   - name: Raygun
     url: https://raygun.com
     img: raygun.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://raygun.com/docs/workflow/two-factor-authentication
 
   - name: RBCommons
@@ -431,7 +433,7 @@ websites:
     img: rbcommons.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://beanbag.freshdesk.com/support/solutions/articles/3000006998
 
   - name: Read the Docs
@@ -444,27 +446,28 @@ websites:
     url: https://readme.io
     img: readme.png
     tfa:
-      - software
+      - totp
     doc: https://docs.readme.com/docs/two-factor-authentication
 
   - name: Report URI
     url: https://report-uri.com
     img: report-uri.png
     tfa:
-      - software
+      - totp
+    doc: https://scotthelme.co.uk/dealing-with-account-recovery-and-2fa/
 
   - name: Rollbar
     url: https://rollbar.com/
     img: rollbar.png
     tfa:
-      - software
+      - totp
     doc: https://rollbar.com/docs/two-factor-authentication/
 
   - name: RubyGems.org
     url: https://rubygems.org
     img: rubygems.png
     tfa:
-      - software
+      - totp
     doc: https://guides.rubygems.org/setting-up-multifactor-authentication/
 
   - name: Sauce Labs
@@ -484,7 +487,7 @@ websites:
     url: https://semaphoreci.com
     img: semaphore.png
     tfa:
-      - software
+      - totp
     doc: https://semaphoreci.com/docs/two-step-verification.html
 
   - name: Sentry
@@ -492,15 +495,15 @@ websites:
     img: sentry.png
     tfa:
       - sms
-      - software
-      - hardware
+      - totp
+      - u2f
     doc: https://blog.sentry.io/2016/06/22/introducing-2fa
 
   - name: SourceForge
     url: https://sourceforge.net/
     img: sourceforge.png
     tfa:
-      - software
+      - totp
     doc: https://sourceforge.net/blog/introducing-multifactor-authentication-on-sourceforge/
 
   - name: Status.io
@@ -515,7 +518,8 @@ websites:
     img: statuscake.png
     tfa:
       - sms
-      - software
+      - totp
+    doc: https://www.statuscake.com/kb/knowledge-base/how-to-change-the-statuscake-password-for-login/
 
   - name: StatusPage.io
     url: https://www.statuspage.io
@@ -527,7 +531,7 @@ websites:
     url: https://www.sumologic.com
     img: sumologic.png
     tfa:
-      - software
+      - totp
     doc: https://help.sumologic.com/Manage/Security/About_2-Step_Verification
 
   - name: Taiga.io
@@ -549,7 +553,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
     doc: https://unfuddle.com/blog/2014/07/140721-two-factor-authentication
 
   - name: Unity
@@ -557,14 +561,14 @@ websites:
     img: unity.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.unity3d.com/hc/en-us/articles/208764976
 
   - name: Uptime Robot
     url: https://uptimerobot.com
     img: uptimerobot.png
     tfa:
-      - software
+      - totp
     doc: https://blog.uptimerobot.com/introducing-two-factor-authentication-2fa/
 
   - name: Visual Studio Online
@@ -572,12 +576,12 @@ websites:
     img: visualstudio.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.microsoft.com/en-us/help/12408/
 
   - name: Zapier
     url: https://zapier.com
     img: zapier.png
     tfa:
-      - software
+      - totp
     doc: https://zapier.com/help/two-factor-authentication/
