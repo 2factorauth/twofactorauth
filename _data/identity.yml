@@ -32,12 +32,12 @@ websites:
     url: https://www.centrify.com
     img: centrify.png
     tfa:
-      - sms
       - phone
-      - email
       - totp
+      - proprietary
       - hardware
-    doc: https://www.centrify.com/solutions/why-multi-factor-authentication/
+      - u2f
+    doc: https://www.centrify.com/privileged-access-management/authentication-service/mfa/
 
   - name: Dashlane
     url: https://www.dashlane.com
