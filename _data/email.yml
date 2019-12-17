@@ -12,7 +12,7 @@ websites:
     img: fastmail.png
     tfa:
       - sms
-      - software
+      - totp
       - hardware
     doc: https://www.fastmail.com/help/account/2fa.html
 
@@ -27,8 +27,9 @@ websites:
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - totp
+      - proprietary
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: GMX.com
@@ -40,7 +41,7 @@ websites:
     url: https://www.gmx.net/
     img: gmx_net.png
     tfa:
-      - software
+      - totp
     doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
 
   - name: Hushmail
@@ -49,7 +50,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://help.hushmail.com/hc/en-us/articles/213268943
 
   - name: Kerio Connect
@@ -75,7 +76,7 @@ websites:
     url: https://mail.de/
     img: mailde.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://mail.de/hilfe/u2f-authenticator
 
@@ -84,14 +85,14 @@ websites:
     img: mailru.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://help.mail.ru/mail-help/2auth
 
   - name: mailbox.org
     url: https://mailbox.org/
     img: mailbox.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://kb.mailbox.org/x/5AcS
 
@@ -99,14 +100,14 @@ websites:
     url: https://mailfence.com/
     img: mailfence.png
     tfa:
-      - software
+      - totp
     doc: https://mailfence.com/c/mailfence/more/totp.jsp
 
   - name: Migadu
     url: https://www.migadu.com/
     img: migadu.png
     tfa:
-      - software
+      - totp
 
   - name: Mimecast
     url: https://www.mimecast.com/
@@ -114,21 +115,15 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://community.mimecast.com/docs/DOC-1915
-
-  - name: MXroute
-    url: https://mxroute.com/
-    img: mxroute.png
-    tfa:
-      - software
 
   - name: Outlook.com
     url: https://outlook.com
     img: outlook.png
     tfa:
       - sms
-      - software
+      - totp
       - hardware
     doc: https://support.microsoft.com/en-us/help/12408/
     exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
@@ -137,7 +132,7 @@ websites:
     url: https://www.pobox.com/
     img: pobox.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
 
@@ -145,14 +140,14 @@ websites:
     url: https://posteo.de/
     img: posteo.png
     tfa:
-      - software
+      - totp
     doc: https://posteo.de/en/help/what-is-two-factor-authentication-and-how-do-i-set-it-up
 
   - name: ProtonMail
     url: https://protonmail.com/
     img: protonmail.png
     tfa:
-      - software
+      - totp
     doc: https://protonmail.com/support/knowledge-base/two-factor-authentication/
 
   - name: Riseup Mail
@@ -164,7 +159,7 @@ websites:
     url: https://runbox.com
     img: runbox.png
     tfa:
-      - software
+      - totp
     doc: https://help.runbox.com/account-security/
 
   - name: SAPO Mail
@@ -179,15 +174,14 @@ websites:
     url: https://seznam.cz
     img: seznamcz.png
     tfa:
-      - software
+      - proprietary
     doc: https://blog.seznam.cz/2018/04/seznam-cz-ma-nove-dvoufazove-overeni-u-vsech-svych-sluzeb-zvysi-zabezpeci-prihlasovani-napriklad-do-emailu/
-    exception: "Software implementation requires use of the Seznam app."
 
   - name: StartMail
     url: https://www.startmail.com
     img: startmail.png
     tfa:
-      - software
+      - totp
     doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704
 
   - name: T-Online
@@ -201,7 +195,7 @@ websites:
     url: https://www.thexyz.com/
     img: thexyz.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://www.thexyz.com/account/knowledgebase/15/Enabling-two-factor-authentication.html
 
@@ -216,7 +210,7 @@ websites:
     url: https://tutanota.com/
     img: tutanota.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://tutanota.com/howto/#2fa
 
@@ -239,7 +233,7 @@ websites:
     img: yahoojapanmail.png
     tfa:
       - email
-      - software
+      - totp
     doc: https://id.yahoo.co.jp/security/otp.html
 
   - name: Yahoo Mail
@@ -254,7 +248,7 @@ websites:
     url: https://mail.yandex.com/
     img: yandexmail.png
     tfa:
-      - software
+      - totp
     doc: https://yandex.com/support/passport/authorization/twofa.xml
     exception: "SMS-capable phone required for initial setup."
 
@@ -262,7 +256,7 @@ websites:
     url: https://www.zimbra.com/
     img: zimbra.png
     tfa:
-      - software
+      - totp
     doc: https://blog.zimbra.com/2016/02/zimbra-collaboration-8-7-two-factor-authentication-2fa-technical-preview/
     exception: "Available in Zimbra Collaboration 8.7 and above, Network Edition only"
 
