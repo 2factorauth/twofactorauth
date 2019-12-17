@@ -4,7 +4,7 @@ websites:
     img: amazonpay.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
     exception: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
 
@@ -20,7 +20,7 @@ websites:
     url: https://www.braintreepayments.com/
     tfa:
       - sms
-      - software
+      - totp
       - hardware
     doc: https://articles.braintreepayments.com/reference/security/two-factor-authentication
 
@@ -29,7 +29,7 @@ websites:
     img: buycraft.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.buycraft.net/article/83-two-factor-authentication
     exception: "SMS-capable phone required."
 
@@ -51,8 +51,8 @@ websites:
     url: https://www.dwolla.com
     img: dwolla.png
     tfa:
-      - software
-    doc: https://support.dwolla.com/customer/portal/articles/2079147
+      - totp
+    doc: https://www.dwolla.com/updates/introducing-two-factor-authentication-for-dwolla/
 
   - name: Flattr
     img: flattr.png
@@ -88,14 +88,14 @@ websites:
     img: klarna.png
     tfa:
       - email
-      - software
+      - proprietary
     exception: "Software 2FA is only available for Swedish citizens with BankID."
 
   - name: NETELLER
     img: neteller.png
     url: https://www.neteller.com/
     tfa:
-      - software
+      - totp
     doc: https://support.neteller.com/ACCOUNT/Two-Factor-Authentication/85238429/What-is-two-step-authentication.htm
 
   - name: PAYEER
@@ -104,7 +104,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - proprietary
     doc: https://payeer.com/en/faq/
     exception: "Receiving codes via SMS cost 0.05$ each message. 2FA is personalizable in account settings."
 
@@ -118,7 +118,7 @@ websites:
     img: paypal.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://www.paypal.com/us/smarthelp/article/faq4057
     exception: "2FA is only available in a few countries. Contact PayPal on Twitter for an up-to-date list of available countries."
 
@@ -126,7 +126,7 @@ websites:
     url: https://www.paysafecard.com/
     img: paysafecard.png
     tfa:
-      - software
+      - totp
     doc: https://www.paysafecard.com/en-au/lp-products/2-step-login/
 
   - name: Paytm
@@ -147,14 +147,14 @@ websites:
     url: https://privacy.com/
     img: privacy.png
     tfa:
-      - software
-    doc: https://privacy.com/faq
+      - totp
+    doc: https://support.privacy.com/hc/en-us/articles/360012047174
 
   - name: Ravelin
     url: https://www.ravelin.com/
     img: ravelin.png
     tfa:
-      - software
+      - totp
     doc: https://ravelin.zendesk.com/hc/en-us/articles/115001071665
 
   - name: Recurly
@@ -162,7 +162,7 @@ websites:
     img: recurly.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://docs.recurly.com/docs/two-factor-authentication
 
   - name: SixthContinent
@@ -175,7 +175,7 @@ websites:
     url: https://skrill.com/
     img: skrill.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://www.skrill.com/en/support#/path/ACCOUNT/Two-Factor-Authentication/905761532/Two-Factor-Authentication-2FA.htm
 
@@ -184,7 +184,7 @@ websites:
     img: squareup.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://squareup.com/help/us/en/article/5593
     exception: "SMS only supported in US and Canada"
 
@@ -200,7 +200,7 @@ websites:
     url: https://www.stripe.com/
     tfa:
       - sms
-      - software
+      - totp
       - hardware
     doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
 
@@ -235,6 +235,6 @@ websites:
     img: yandexmoney.png
     tfa:
       - sms
-      - software
+      - totp
       - hardware
     doc: https://money.yandex.ru/doc.xml?id=524852
