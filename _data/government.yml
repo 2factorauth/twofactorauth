@@ -16,9 +16,8 @@ websites:
     img: cz_datovky.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://www.mojedatovaschranka.cz/static/ISDS/help/page1.html#1_5_4
-    exception: "Software implementation requires use of the ISDS Mobile Key app."
 
   - name: DigiD
     url: https://www.digid.nl/
@@ -26,9 +25,8 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
     doc: https://www.digid.nl/nl/vraag-en-antwoord/hoe-kan-ik-de-sms-controle-toevoegen/
-    exception: "Software 2FA requires DigiD app and SMS or phone call. One account per device."
 
   - name: Federal Student Aid
     url: https://studentaid.ed.gov
@@ -46,7 +44,7 @@ websites:
     img: hmrc.png
     tfa:
       - sms
-      - software
+      - phone
     doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-text-messages
 
   - name: impots.gouv.fr
@@ -62,7 +60,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
       - hardware
     doc: https://www.login.gov/help/creating-an-account/two-factor-authentication/
 
@@ -71,16 +69,15 @@ websites:
     img: mygov.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://my.gov.au/mygov/content/html/help.html#securityCode
-    exception: "myGov Access app required for Software 2FA."
 
   - name: RealMe
     url: https://www.realme.govt.nz/
     img: realme.png
     tfa:
       - sms
-      - software
+      - totp
       - hardware
     doc: https://www.realme.govt.nz/help/#second-factor-authentication
 
@@ -97,7 +94,7 @@ websites:
     url: https://www.skatteverket.se
     img: skatteverket.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www.skatteverket.se/privat/sjalvservice/allaetjanster/omelegitimation.4.18e1b10334ebe8bc80004811.html
 
@@ -120,9 +117,9 @@ websites:
     img: usirs.png
     tfa:
       - sms
-      - software
+      - phone
+      - proprietary
     doc: https://www.irs.gov/individuals/secure-access-how-to-register-for-certain-online-self-help-tools
-    exception: "IRS2Go app required for software 2FA."
 
   - name: US Social Security Administration
     url: https://www.ssa.gov
@@ -138,6 +135,6 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
       - hardware
     exception: "2FA is only available when using the Identity Management service ID.me"
