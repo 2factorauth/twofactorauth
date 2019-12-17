@@ -3,7 +3,7 @@ websites:
     url: https://adguard.com
     img: adguard.png
     tfa:
-      - software
+      - totp
     doc: https://kb.adguard.com/en/general/2fa
 
   - name: Avast
@@ -28,14 +28,14 @@ websites:
     url: https://www.abine.com/
     img: blur.png
     tfa:
-      - software
+      - totp
     doc: https://dnt.abine.com/#help/faq/faq-enabletwoFactor
 
   - name: Boxcryptor
     url: https://www.boxcryptor.com
     img: boxcryptor.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://www.boxcryptor.com/help/boxcryptor-account/#two-factor-authentication
 
@@ -43,7 +43,7 @@ websites:
     url: https://bugcrowd.com
     img: bugcrowd.png
     tfa:
-      - software
+      - totp
     doc: https://docs.bugcrowd.com/v1.0/docs/two-factor-authentication-1
 
   - name: CAcert
@@ -57,14 +57,14 @@ websites:
     url: https://cloudflare.com
     img: cloudflare.png
     tfa:
-      - software
+      - totp
     doc: https://support.cloudflare.com/hc/en-us/articles/200167866
 
   - name: Cobalt
     url: https://cobalt.io/
     img: cobalt.png
     tfa:
-      - software
+      - totp
     doc: https://cobalt.io/blog/new-feature-two-factor-auth/
 
   - name: Detectify
@@ -78,21 +78,21 @@ websites:
     url: https://www.digicert.com/
     img: digicert.png
     tfa:
-      - software
+      - totp
     doc: https://www.digicert.com/two-factor-authentication.htm
 
   - name: DMARC Analyzer
     url: https://www.dmarcanalyzer.com/
     img: dmarcanalyzer.png
     tfa:
-      - software
+      - totp
     doc: https://www.dmarcanalyzer.com/set-two-factor-authentication-additional-security/
 
   - name: dmarcian
     url: https://dmarcian.com/
     img: dmarcian.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://dmarcian.com/secure-dmarcian-2fa/
 
@@ -100,7 +100,7 @@ websites:
     url: https://dome9.com/
     img: dome9.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://dome9.com/overview/strong-2-factor-authentication
 
@@ -108,7 +108,7 @@ websites:
     img: entrust.png
     url: https://www.entrust.net
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www.entrust.com/multi-factor-authentication-tools/
 
@@ -134,7 +134,7 @@ websites:
     url: https://hackerone.com
     img: hackerone.png
     tfa:
-      - software
+      - totp
     doc: https://docs.hackerone.com/hackers/two-factor-authentication.html
     exception: SMS-capable phone required for initial setup.
 
@@ -158,22 +158,22 @@ websites:
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - proprietary
+      - u2f
     doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us
 
   - name: Prey
     url: https://www.preyproject.com
     img: prey.png
     tfa:
-      - software
+      - totp
     doc: https://help.preyproject.com/article/248--
 
   - name: Pwnie Express Pwn Pulse
     url: https://www.pwnieexpress.com/products/pulse-device-detection
     img: pwnieexpress.png
     tfa:
-      - software
+      - totp
     doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909
     exception: TFA can be enabled on Pwn Pulse Accounts upon customer request.
 
@@ -181,7 +181,7 @@ websites:
     url: https://rbltracker.com/
     img: rbltracker.png
     tfa:
-      - software
+      - totp
     doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
 
   - name: Sophos Central
@@ -189,14 +189,14 @@ websites:
     img: sophoscentral.png
     tfa:
       - email
-      - software
+      - totp
     doc: https://docs.sophos.com/central/Customer/help/en-us/central/Customer/concepts/ep_MultiFactorAuthentication.html
 
   - name: SSLTrust
     url: https://www.ssltrust.com.au/
     img: ssltrust.png
     tfa:
-      - software
+      - totp
     doc: https://www.ssltrust.com.au/help/account-management/enable-2factor
 
   - name: Surfshark
@@ -209,7 +209,7 @@ websites:
     url: https://threatconnect.com/
     img: threatconnect.png
     tfa:
-      - software
+      - totp
     doc: https://kb.threatconnect.com/customer/en/portal/articles/2214975
 
   - name: ThreatMetrix
@@ -227,27 +227,27 @@ websites:
     url: https://www.threatx.com/
     img: threatx.png
     tfa:
-      - software
+      - totp
     doc: https://support.threatx.com/hc/en-us/articles/360022157591
 
   - name: Tinfoil Security
     url: https://www.tinfoilsecurity.com
     img: tinfoil.png
     tfa:
-      - software
+      - totp
     doc: https://support.tinfoilsecurity.com/article/43-do-you-support-two-factor-authentication-how-do-i-set-it-up
 
   - name: TorGuard
     url: https://torguard.net
     img: torguard.png
     tfa:
-      - software
+      - totp
 
   - name: VirusTotal
     url: https://www.virustotal.com
     img: virustotal.png
     tfa:
-      - software
+      - totp
 
   - name: Webroot
     url: https://www.webroot.com
