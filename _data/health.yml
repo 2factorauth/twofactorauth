@@ -3,7 +3,7 @@ websites:
     url: https://www.23andme.com/
     img: 23andme.png
     tfa:
-      - software
+      - totp
     doc: https://customercare.23andme.com/hc/en-us/articles/360034119874
 
   - name: Australian Red Cross Blood Service
@@ -37,7 +37,7 @@ websites:
     url: https://www.drchrono.com
     img: drchrono.png
     tfa:
-      - software
+      - proprietary
     doc: https://www.drchrono.com/blog/two-factor-authentication-extra-security-for-your-health-records/
 
   - name: Drugs.com
@@ -72,8 +72,8 @@ websites:
     tfa:
       - sms
       - email
-      - software
-    doc: http://support.followmyhealth.com/customer/portal/articles/1309938
+      - totp
+    doc: http://support.followmyhealth.com/customer/en/portal/articles/2982690
 
   - name: Garmin
     url: https://www.garmin.com/
@@ -87,8 +87,9 @@ websites:
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - totp
+      - proprietary
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: Hint Health
@@ -132,7 +133,8 @@ websites:
     url: https://runsignup.com/
     img: runsignup.png
     tfa:
-      - software
+      - totp
+    doc: https://runsignup.blog/2018/09/06/multi-factor-authentication/
 
   - name: Runtastic
     url: https://www.runtastic.com
