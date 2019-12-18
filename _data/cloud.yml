@@ -80,7 +80,8 @@ websites:
     url: https://hostiso.com/
     img: hostiso.png
     tfa:
-      - software
+      - totp
+    doc: https://github.com/2factorauth/twofactorauth/pull/4451#issuecomment-567219085
     exception: "While both the main client area and the shared hosting panel support 2FA, each system is separate and requires its own setup."
 
   - name: IBM Cloud
