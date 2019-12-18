@@ -509,8 +509,8 @@ websites:
     img: uk2.png
     tfa:
       - sms
-      - software
-    doc: https://www.uk2.net/knowledgebase/display/UK2/Two+Factor+Authentication+Security+-+2FA
+      - totp
+    doc: https://github.com/2factorauth/twofactorauth/pull/3845#issuecomment-491518360
 
   - name: Uniregistry
     url: https://uniregistry.com/
