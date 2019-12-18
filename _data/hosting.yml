@@ -187,12 +187,6 @@ websites:
       - totp
     doc: https://www.hostens.com/knowledgebase/how-to-enhance-account-security/
 
-  - name: HostHatch
-    url: https://hosthatch.com/
-    img: hosthatch.png
-    tfa:
-      - software
-
   - name: Hostnet
     url: https://www.hostnet.nl/
     img: hostnet.png
@@ -321,7 +315,8 @@ websites:
     url: https://misshosting.com/
     img: misshosting.png
     tfa:
-      - software
+      - totp
+    doc: https://github.com/2factorauth/twofactorauth/issues/3634#issuecomment-454688629
 
   - name: Mittwald
     url: https://www.mittwald.de/
@@ -444,12 +439,6 @@ websites:
       - totp
     doc: https://www.siteground.com/tutorials/two-factor-authentication/
 
-  - name: SpeedIT Solutions
-    url: https://www.speedit.org/
-    img: speedit.png
-    tfa:
-      - software
-
   - name: Squarespace
     url: https://squarespace.com/
     img: squarespace.png
@@ -478,8 +467,9 @@ websites:
     img: ukfast.png
     tfa:
       - sms
-      - software
+      - totp
       - hardware
+    doc: https://github.com/2factorauth/twofactorauth/pull/997#issuecomment-77708501
 
   - name: Ukraine
     url: https://www.ukraine.com.ua/
