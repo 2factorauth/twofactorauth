@@ -28,7 +28,7 @@ require 'diffy'
 # Send error message
 def error(msg, file = nil)
   file = " file=#{file}" unless file.nil?
-  puts "::error#{file}:: #{msg}"
+  raise "::error#{file}:: #{msg}"
 end
 
 def test_img(img, name, imgs)
@@ -121,7 +121,7 @@ rescue Psych::SyntaxError => e
   puts "::error:: #{e}"
   exit 1
 rescue StandardError => e
-  puts "::error:: #{e}"
+  puts "#{e}"
   exit 1
 else
   puts "<------------ No errors. You\'re good to go! ------------>\n"

@@ -8,7 +8,7 @@ websites:
     url: https://www.youinvest.co.uk/
     img: youinvest.png
     tfa:
-      - software
+      - totp
     doc: https://www.youinvest.co.uk/faq/how-do-i-set-two-factor-authentication
 
   - name: Axos Invest
@@ -21,8 +21,9 @@ websites:
     img: betterment.png
     tfa:
       - sms
-      - software
-    doc: https://help.betterment.com/hc/en-us/articles/115004260006
+      - phone
+      - totp
+    doc: https://www.betterment.com/resources/understanding-account-security/#3
 
   - name: Capital Group / American Funds
     url: https://www.capitalgroup.com/
@@ -37,7 +38,7 @@ websites:
     img: charlesschwab.png
     tfa:
       - sms
-      - software
+      - proprietary
       - hardware
     doc: "/notes/schwab/"
 
@@ -50,9 +51,9 @@ websites:
     url: https://www.etrade.com/
     img: etrade.png
     tfa:
-      - software
+      - proprietary
       - hardware
-    doc: https://us.etrade.com/landing/secureid_enter
+    doc: https://us.etrade.com/security-center/securityid
 
   - name: Fidelity Investments
     url: https://www.fidelity.com
@@ -60,7 +61,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
       - hardware
     doc: https://www.fidelity.com/security/how-two-factor-authentication-works
     exception: "Specific support varies between account types"
@@ -82,9 +83,11 @@ websites:
     url: https://www.interactivebrokers.com
     img: interactivebrokers.png
     tfa:
-      - software
+      - sms
+      - proprietary
       - hardware
     doc: https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log
+    exception: "SMS 2FA only works as long as no other method has been enabled."
 
   - name: John Hancock Pensions
     url: https://www.jhancockpensions.com
@@ -117,7 +120,7 @@ websites:
     url: https://www.nutmeg.com/
     img: nutmeg.png
     tfa:
-      - software
+      - totp
     doc: https://support.nutmeg.com/hc/en-us/articles/115000495111
 
   - name: Personal Capital
@@ -139,7 +142,7 @@ websites:
     img: questrade.png
     tfa:
       - sms
-      - email
+    doc: https://questrade-support.secure.force.com/mylearning/view/h/Account/Account-security-centre/
 
   - name: Raizers
     url: https://www.raizers.com
@@ -156,7 +159,7 @@ websites:
     img: robinhood.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.robinhood.com/hc/en-us/articles/360001213783
 
   - name: SigFig
@@ -208,7 +211,7 @@ websites:
     img: wealthfront.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.wealthfront.com/hc/en-us/articles/211004563
 
   - name: Wealthsimple
@@ -216,5 +219,5 @@ websites:
     img: wealthsimple.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.wealthsimple.com/hc/en-ca/articles/360005175373
