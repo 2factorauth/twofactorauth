@@ -98,6 +98,13 @@ websites:
       - hardware
     doc: https://www.bca.co.id/en/Individu/Produk/E-Banking/Klik-BCA
 
+  - name: Bank Leumi
+    url: https://www.leumi.co.il/
+    img: leumi.png
+    twitter: LeumiDigital
+    facebook: LeumiDigital
+    lang: he
+
   - name: Bank of America
     url: https://www.bankofamerica.com/
     img: bankofamerica.png
@@ -332,6 +339,15 @@ websites:
     tfa:
       - hardware
     doc: https://www.dbs.com.sg/personal/deposits/security-and-you/we-protect-you.page#slideToN10051
+
+  - name: Degussa Bank
+    url: https://www.degussa-bank.de/
+    img: degussa.png
+    tfa:
+      - hardware
+      - sms
+      - proprietary
+    doc: https://www.degussa-bank.de/apptan-verfahren
 
   - name: Desert Financial Credit Union
     url: https://www.desertfinancial.com
@@ -913,6 +929,14 @@ websites:
       - software
     doc: https://santander.pl/firmy/bankowosc-elektroniczna/bzwbk24-mini-firma/metody-autoryzacji/metody-autoryzacji.html
     exception: "Software authentication only available via Santander mobile."
+
+  - name: Santander PT
+    url: https://www.santandertotta.pt/
+    img: santander.png
+    twitter: santanderpt
+    facebook: santanderpt
+    email_address: netbancoparticulares@santander.pt
+    lang: pt
 
   - name: Santander UK
     url: https://www.santander.co.uk
