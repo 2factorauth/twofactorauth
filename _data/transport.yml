@@ -81,7 +81,7 @@ websites:
     img: finnair.png
     tfa:
       - sms
-      - software
+      - proprietary
 
   - name: Frontier
     url: https://www.flyfrontier.com
@@ -94,6 +94,12 @@ websites:
     twitter: GHoundBusHelp
     facebook: GreyhoundBus
     img: greyhound.png
+
+  - name: Hamburger Verkehrsverbund
+    url: https://www.hvv.de/
+    facebook: HVV.HamburgerVerkehrsverbund
+    img: hvv.png
+    lang: de
 
   - name: Hawaiian Airlines
     url: https://www.hawaiianairlines.com
@@ -227,12 +233,19 @@ websites:
     facebook: transportforlondon
     img: tfl.png
 
+  - name: TripIt
+    url: https://www.tripit.com
+    twitter: TripIt
+    facebook: tripitcom
+    email_address: security@tripit.com
+    img: tripit.png
+
   - name: Uber
     url: https://www.uber.com/
     img: uber.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.uber.com/h/b8bb9152-8c91-4f49-83c4-35cf2e1dcf72
 
   - name: United
