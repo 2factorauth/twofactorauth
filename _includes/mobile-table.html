@@ -25,11 +25,13 @@
     <div class="main progress">
       {% include row-title.html section=section_id website=website type='mobile' %}
       <p>IN PROGRESS!</p>
+      {% if website.twitter %}
       <div>
         <a class="ui twitter mini button"
            href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
            target="_blank"><i class="twitter icon"></i> {{page.link_progress_mobile}}</a>
       </div>
+      {% endif %}
     </div>
     {% elsif website.tfa %}
     <div class="main positive">

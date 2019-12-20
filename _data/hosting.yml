@@ -200,9 +200,10 @@ websites:
   - name: Hostpoint
     url: https://www.hostpoint.ch/
     img: hostpoint.png
-    twitter: hostpoint
-    facebook: hostpointch
-    lang: de
+    tfa:
+      - totp
+      - sms
+    doc: https://support.hostpoint.ch/en/administrative/hostpoint-id/general-questions-about-two-factor-authentication
 
   - name: HostUS
     url: https://hostus.us
