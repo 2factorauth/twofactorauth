@@ -34,6 +34,7 @@ websites:
       - phone
       - totp
     doc: https://help.kickstarter.com/hc/en-us/articles/115005127094
+    exception: "SMS is required to set up 2FA and always available as a backup authentication method."
 
   - name: Patreon
     url: https://www.patreon.com/
