@@ -258,7 +258,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://docs.imperva.com/bundle/cloud-application-security/page/settings/account-settings.htm
 
   - name: Internet.bs
