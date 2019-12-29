@@ -512,9 +512,12 @@ websites:
 
   - name: Halifax
     url: https://www.halifax.co.uk
-    twitter: AskHalifaxBank
-    facebook: halifax
     img: halifax.png
+    tfa:
+      - proprietary
+      - phone
+      - sms
+    doc: https://www.halifax.co.uk/aboutonline/changes-to-online-banking/
 
   - name: Handelsbanken
     url: https://www.handelsbanken.se/
@@ -609,7 +612,7 @@ websites:
     facebook: labanquepostale
     img: labanquepostale.png
     lang: fr
-    
+
   - name: Lake Michigan Credit Union
     url: https://www.lmcu.org/
     img: lakemichigancreditunion.png
