@@ -148,7 +148,6 @@ websites:
   - name: H&R Block
     url: https://www.hrblock.com/
     tfa:
-      - sms
       - email
       - totp
     img: hrblock.png
