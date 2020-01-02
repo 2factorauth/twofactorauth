@@ -10,6 +10,7 @@ websites:
     tfa:
       - sms
       - software
+    exception: "Software token can be bypassed by SMS."
     doc: https://support.airtable.com/hc/en-us/articles/219409917
 
   - name: Any.do
