@@ -122,6 +122,14 @@ websites:
     facebook: myfitnesspal
     email_address: support@myfitnesspal.com
 
+  - name: MyHeritage
+    url: https://www.myheritage.com/
+    img: myheritage.png
+    tfa:
+      - sms
+      - totp
+    doc: https://www.myheritage.com/help-center/en/article/how-do-i-set-up-two-factor-authentication-for-my-myheritage-account
+
   - name: Runkeeper
     url: https://runkeeper.com
     twitter: RKSupport
