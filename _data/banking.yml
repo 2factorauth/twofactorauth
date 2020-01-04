@@ -441,13 +441,6 @@ websites:
       - hardware
     doc: https://www.erstebank.hr/content/dam/hr/ebc/www_erstebank_hr/gradani/downloads/e-bankarstvo/Upute%20za%20prijavu.pdf
 
-  - name: everbank.com
-    url: https://everbank.com
-    img: everbank.png
-    tfa:
-      - sms
-      - phone
-
   - name: Fairwinds
     url: https://www.fairwinds.org
     img: fairwinds.png
@@ -1135,6 +1128,14 @@ websites:
     twitter: tescobankhelp
     facebook: tesco.bank
     img: tescobank.png
+
+  - name: TIAA Bank
+    url: https://www.tiaabank.com
+    img: tiaabank.png
+    tfa:
+      - sms
+      - phone
+    doc: https://www.tiaabank.com/security?solutions=security-tools
 
   - name: Tower Federal Credit Union
     url: https://www.towerfcu.org/
