@@ -58,9 +58,10 @@ websites:
     img: evernote.png
     tfa:
       - sms
+      - phone
       - totp
     doc: https://help.evernote.com/hc/en-us/articles/208314238
-    exception: "SMS authentication only available for Evernote Premium users"
+    exception: "SMS and phone call are always enabled as backup methods for TOTP."
 
   - name: Files.com
     url: https://www.files.com
