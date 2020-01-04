@@ -640,9 +640,12 @@ websites:
 
   - name: Lloyds Bank
     url: https://www.lloydsbank.com/
-    twitter: AskLloydsBank
-    facebook: lloydsbank
     img: lloydsbank.png
+    tfa:
+      - proprietary
+      - phone
+      - sms
+    doc: https://www.lloydsbank.com/online-banking/changes-to-internet-banking.asp
 
   - name: Länsförsäkringar
     url: https://www.lansforsakringar.se/
