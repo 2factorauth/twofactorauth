@@ -21,8 +21,10 @@ websites:
   - name: Bitdefender
     url: https://www.bitdefender.com
     img: bitdefender.png
-    twitter: Bitdefender
-    facebook: bitdefender
+    tfa:
+      - email
+      - totp
+    doc: https://www.bitdefender.com/consumer/support/answer/1581/
 
   - name: Blur
     url: https://www.abine.com/
