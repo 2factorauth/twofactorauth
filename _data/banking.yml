@@ -119,6 +119,15 @@ websites:
       - hardware
     doc: https://www.bochk.com/en/security/2factorauthentication.html
 
+  - name: Bank of Scotland
+    url: https://www.bankofscotland.co.uk
+    img: bankofscotland.png
+    tfa:
+      - proprietary
+      - phone
+      - sms
+    doc: https://www.bankofscotland.co.uk/aboutonline/changes-to-internet-banking.html
+
   - name: Barclays UK
     url: https://www.barclays.co.uk/
     img: barclays.png
@@ -612,7 +621,7 @@ websites:
     facebook: labanquepostale
     img: labanquepostale.png
     lang: fr
-    
+
   - name: Lake Michigan Credit Union
     url: https://www.lmcu.org/
     img: lakemichigancreditunion.png
