@@ -252,14 +252,14 @@ websites:
     tfa:
       - software
 
-  - name: Incapsula
-    url: https://www.incapsula.com/
-    img: incapsula.png
+  - name: Imperva
+    url: https://www.imperva.com/
+    img: imperva.png
     tfa:
       - sms
       - email
-      - software
-    doc: https://docs.incapsula.com/Content/management-console-and-settings/account-settings.htm
+      - totp
+    doc: https://docs.imperva.com/bundle/cloud-application-security/page/settings/account-settings.htm
 
   - name: Internet.bs
     url: https://www.internet.bs
