@@ -301,13 +301,6 @@ websites:
       - software
     doc: https://www.mammoth.net.au/news/2012/10/22/two-factor-authentication-now-available
 
-  - name: MaxCDN
-    url: https://www.maxcdn.com
-    img: maxcdn.png
-    tfa:
-      - software
-    doc: https://www.maxcdn.com/one/tutorial/enable-two-step-verification/
-
   - name: Media Temple
     url: https://mediatemple.net/
     twitter: mediatemple
@@ -450,6 +443,13 @@ websites:
     tfa:
       - software
     doc: https://support.squarespace.com/hc/en-us/articles/360000044827
+
+  - name: StackPath
+    url: https://www.stackpath.com
+    img: stackpath.png
+    tfa:
+      - totp
+    doc: https://support.stackpath.com/hc/en-us/articles/360022992631
 
   - name: Time4VPS
     url: https://www.time4vps.eu/
