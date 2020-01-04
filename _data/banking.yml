@@ -512,9 +512,12 @@ websites:
 
   - name: Halifax
     url: https://www.halifax.co.uk
-    twitter: AskHalifaxBank
-    facebook: halifax
     img: halifax.png
+    tfa:
+      - proprietary
+      - phone
+      - sms
+    doc: https://www.halifax.co.uk/aboutonline/changes-to-online-banking/
 
   - name: Handelsbanken
     url: https://www.handelsbanken.se/
