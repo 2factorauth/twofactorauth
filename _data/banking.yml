@@ -119,6 +119,15 @@ websites:
       - hardware
     doc: https://www.bochk.com/en/security/2factorauthentication.html
 
+  - name: Bank of Scotland
+    url: https://www.bankofscotland.co.uk
+    img: bankofscotland.png
+    tfa:
+      - proprietary
+      - phone
+      - sms
+    doc: https://www.bankofscotland.co.uk/aboutonline/changes-to-internet-banking.html
+
   - name: Barclays UK
     url: https://www.barclays.co.uk/
     img: barclays.png
@@ -340,6 +349,15 @@ websites:
       - hardware
     doc: https://www.dbs.com.sg/personal/deposits/security-and-you/we-protect-you.page#slideToN10051
 
+  - name: Degussa Bank
+    url: https://www.degussa-bank.de/
+    img: degussa.png
+    tfa:
+      - hardware
+      - sms
+      - proprietary
+    doc: https://www.degussa-bank.de/apptan-verfahren
+
   - name: Desert Financial Credit Union
     url: https://www.desertfinancial.com
     img: desertfinancialcu.png
@@ -423,13 +441,6 @@ websites:
       - hardware
     doc: https://www.erstebank.hr/content/dam/hr/ebc/www_erstebank_hr/gradani/downloads/e-bankarstvo/Upute%20za%20prijavu.pdf
 
-  - name: everbank.com
-    url: https://everbank.com
-    img: everbank.png
-    tfa:
-      - sms
-      - phone
-
   - name: Fairwinds
     url: https://www.fairwinds.org
     img: fairwinds.png
@@ -503,9 +514,12 @@ websites:
 
   - name: Halifax
     url: https://www.halifax.co.uk
-    twitter: AskHalifaxBank
-    facebook: halifax
     img: halifax.png
+    tfa:
+      - proprietary
+      - phone
+      - sms
+    doc: https://www.halifax.co.uk/aboutonline/changes-to-online-banking/
 
   - name: Handelsbanken
     url: https://www.handelsbanken.se/
@@ -514,6 +528,13 @@ websites:
       - software
       - hardware
     doc: https://www.handelsbanken.se/shb/INeT/ICentSv.nsf/Default/qAE99695C4C1D033DC12579120036EB43?Opendocument
+
+  - name: Hanseatic Bank
+    url: https://www.hanseaticbank.de/
+    img: hanseatic.png
+    tfa:
+      - sms
+    doc: https://www.hanseaticbank.de/services/hilfe-services/psd2
 
   - name: Holvi
     url: https://www.holvi.com/
@@ -589,6 +610,13 @@ websites:
       - hardware
     doc: https://www.intesasanpaolo.com/it/common/footer/sicurezza.html
 
+  - name: Jovia Financial
+    url: https://www.joviafinancial.com/
+    img: jovia.png
+    tfa:
+      - sms
+      - phone
+
   - name: KeyBank
     url: https://www.key.com
     twitter: KeyBank_Help
@@ -600,7 +628,7 @@ websites:
     facebook: labanquepostale
     img: labanquepostale.png
     lang: fr
-    
+
   - name: Lake Michigan Credit Union
     url: https://www.lmcu.org/
     img: lakemichigancreditunion.png
@@ -631,9 +659,12 @@ websites:
 
   - name: Lloyds Bank
     url: https://www.lloydsbank.com/
-    twitter: AskLloydsBank
-    facebook: lloydsbank
     img: lloydsbank.png
+    tfa:
+      - proprietary
+      - phone
+      - sms
+    doc: https://www.lloydsbank.com/online-banking/changes-to-internet-banking.asp
 
   - name: Länsförsäkringar
     url: https://www.lansforsakringar.se/
@@ -729,13 +760,6 @@ websites:
       - email
       - software
     doc: https://nfcucloud.custhelp.com/app/answers/list/c/543
-
-  - name: NEFCU
-    url: https://www.mynefcu.org/
-    img: nefcu.png
-    twitter: mynefcu
-    facebook: NEFCU
-    email_address: info@mynefcu.org
 
   - name: netbank
     url: https://www.netbank.de/
@@ -873,6 +897,13 @@ websites:
     twitter: askRegions
     facebook: RegionsBank
     img: regionsbank.png
+
+  - name: Royal Bank of Scotland
+    url: https://rbs.co.uk/
+    img: rbs.png
+    tfa:
+      - sms
+    doc: https://personal.rbs.co.uk/personal/fraud-and-security/sca.html
 
   - name: SAFE Credit Union
     url: https://safecu.org
@@ -1104,6 +1135,14 @@ websites:
     twitter: tescobankhelp
     facebook: tesco.bank
     img: tescobank.png
+
+  - name: TIAA Bank
+    url: https://www.tiaabank.com
+    img: tiaabank.png
+    tfa:
+      - sms
+      - phone
+    doc: https://www.tiaabank.com/security?solutions=security-tools
 
   - name: Tower Federal Credit Union
     url: https://www.towerfcu.org/

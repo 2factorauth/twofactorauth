@@ -3,7 +3,7 @@ websites:
     url: https://aws.amazon.com/workspaces/
     doc: https://aws.amazon.com/blogs/aws/multi-factor-auth-for-workspaces/
     tfa:
-      - software
+      - totp
       - hardware
     img: awsworkspaces.png
 
@@ -20,7 +20,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
       - hardware
     doc: https://docs.connectwise.com/ConnectWise_Control_Documentation/Get_started/Administration_page/Security_page/Enable_two-factor_authentication_for_host_accounts
 
@@ -28,7 +28,7 @@ websites:
     url: https://www.directadmin.com
     img: directadmin.png
     tfa:
-      - software
+      - totp
     doc: https://directadmin.com/features.php?id=1754
 
   - name: join.me (w/ LogMeIn account)
@@ -36,7 +36,7 @@ websites:
     img: joinme.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://secure.logmein.com/welcome/webhelp/EN/Pro/LogMeIn/c_common_Security_TwoStep.html
 
   - name: Linksys Smart Wi-Fi
@@ -51,7 +51,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
       - hardware
     doc: https://secure.logmein.com/welcome/webhelp/EN/Pro/LogMeIn/c_Common_Account_Security.html
 
@@ -62,28 +62,30 @@ websites:
       - sms
       - phone
       - email
-      - software
+      - totp
     doc: http://www.cc-onlinehelp.com/en/#index/administrati/users/authenticati/authenticati.html
 
   - name: O&amp;O Syspectr
     url: https://www.syspectr.com
     img: oosyspectr.png
     tfa:
-      - software
+      - totp
     doc: https://www.syspectr.com/en/faq/how-do-i-activate-deactivate-two-factor-authentication-for-my-account
 
   - name: RealVNC
     url: https://www.realvnc.com
     img: realvnc.png
     tfa:
-      - software
+      - proprietary
+      - hardware
     doc: https://www.realvnc.com/en/connect/docs/multi-factor-auth.html#protecting-your-realvnc-account
+    exception: "2FA is only available for the Professional or Enterprise subscription."
 
   - name: Remote Desktop Manager
     url: https://www.remotedesktopmanager.com
     img: remotedesktopmanager.png
     tfa:
-      - software
+      - totp
     doc: https://help.remotedesktopmanager.com/howto_googleauthenticator.htm
     exception: "2FA is only available on the Enterprise Edition"
 
@@ -91,5 +93,5 @@ websites:
     url: https://www.teamviewer.com
     img: teamviewer.png
     tfa:
-      - software
+      - totp
     doc: https://www.teamviewer.com/en/help/402-How-do-I-activate-deactivate-two-factor-authentication-for-my-TeamViewer-account.aspx
