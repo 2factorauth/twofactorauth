@@ -145,6 +145,13 @@ websites:
       - sms
     doc: https://support.gusto.com/1066223171
 
+  - name: H&R Block
+    url: https://www.hrblock.com/
+    tfa:
+      - email
+      - totp
+    img: hrblock.png
+      
   - name: Hargreaves Lansdown
     url: https://www.hl.co.uk/
     twitter: HLInvest
