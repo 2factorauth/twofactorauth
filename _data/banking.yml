@@ -594,7 +594,10 @@ websites:
   - name: ING-DiBa Austria
     url: https://www.ing.at
     img: ingdibaaustria.png
-    lang: de
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.ing.at/haeufige-fragen-faq/pin-zugangsdaten
 
   - name: ING-DiBa Deutschland
     url: https://www.ing.de
