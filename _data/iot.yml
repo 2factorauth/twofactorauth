@@ -1,4 +1,14 @@
 websites:
+  - name: Arlo
+    url: https://www.arlo.com/
+    img: arlo.png
+    tfa:
+      - sms
+      - email
+      - proprietary
+    doc: https://kb.arlo.com/000062288
+    exception: "Email 2FA is always available as a backup."
+
   - name: ecobee
     url: https://ecobee.com
     twitter: ecobee
