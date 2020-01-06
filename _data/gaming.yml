@@ -211,8 +211,8 @@ websites:
     url: https://www.nexusmods.com/
     img: nexusmods.png
     tfa:
-      - email
-    doc: https://help.nexusmods.com/article/74--
+      - totp
+    doc: https://help.nexusmods.com/article/74-two-factor-authentication-for-nexus-mods
 
   - name: Nintendo Account
     url: https://accounts.nintendo.com/
