@@ -39,9 +39,9 @@ websites:
 
   - name: Floatplane
     url: https://www.floatplane.com/
-    twitter: floatplanemedia
-    facebook: FloatplaneMedia
     img: floatplane.png
+    tfa:
+      - totp
 
   - name: Google Play
     url: https://play.google.com
