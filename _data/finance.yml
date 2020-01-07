@@ -9,6 +9,13 @@ websites:
     facebook: AutomaticDataProcessing
     img: adp.png
 
+  - name: Allianz
+    url: https://www.allianz.de/
+    img: allianz.png
+    tfa:
+      - sms
+    doc: https://www.allianz.de/datenschutz/allianz-deutschland-ag/online-service-meine-allianz/
+
   - name: AltoIRA
     url: https://www.altoira.com
     img: altoira.png
@@ -138,6 +145,13 @@ websites:
       - sms
     doc: https://support.gusto.com/1066223171
 
+  - name: H&R Block
+    url: https://www.hrblock.com/
+    tfa:
+      - email
+      - totp
+    img: hrblock.png
+      
   - name: Hargreaves Lansdown
     url: https://www.hl.co.uk/
     twitter: HLInvest
@@ -354,6 +368,11 @@ websites:
     doc: https://transferwise.com/help/12/managing-your-profile/2932125
     exception: "Software verification requires use of the TransferWise Mobile app. SMS-capable phone is required."
 
+  - name: TransUnion
+    url: https://www.transunion.com/
+    twitter: TransUnion
+    img: transunion.png
+
   - name: Treasury Direct
     url: https://www.treasurydirect.gov
     img: treasurydirect.png
@@ -372,7 +391,7 @@ websites:
     facebook: VitalityUK
     img: vitality.png
 
-  - name: WaveApps
+  - name: Wave
     url: https://www.waveapps.com
     img: wave.png
     twitter: WaveHQ

@@ -9,7 +9,7 @@ websites:
     url: https://aa.net.uk
     img: aaisp.png
     tfa:
-      - software
+      - totp
     doc: https://aa.net.uk/kb-broadband-2fa.html
     exception: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
 
@@ -69,9 +69,9 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - proprietary
     doc: https://www.xfinity.com/support/account/enroll-2-step-verification/
-    exception: "SMS-capable phone and a non-Comcast.net email required for 2FA. Software authentication requires Xfinity Authenticator mobile app."
+    exception: "Email 2FA requires the use of a non-Comcast.net email address."
 
   - name: ComEd
     url: https://www.comed.com/
@@ -85,7 +85,8 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
+      - proprietary
     doc: https://www.coned.com/en/accounts-billing/new-my-account-faqs
 
   - name: Cox
@@ -174,7 +175,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
       - hardware
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
@@ -184,7 +185,8 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
+      - proprietary
       - hardware
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
@@ -192,7 +194,7 @@ websites:
     url: https://www.halebop.se/
     img: halebop.png
     tfa:
-      - software
+      - proprietary
     doc: https://github.com/2factorauth/twofactorauth/pull/2304#issue-200730083
     exception: "2FA is only available for Swedish citizens with BankID."
 
@@ -250,7 +252,7 @@ websites:
     url: https://republicwireless.com/
     img: rw.png
     tfa:
-      - software
+      - totp
     doc: https://help.republicwireless.com/hc/en-us/articles/360008803994
 
   - name: Rochester Gas & Electric
@@ -284,7 +286,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
     doc: https://help.sonic.com/hc/en-us/articles/236079387
 
   - name: Sosh
@@ -324,7 +326,7 @@ websites:
     url: https://www.telia.se/
     img: telia.png
     tfa:
-      - software
+      - proprietary
     doc: https://www.telia.se/privat/support/info/logga-in-med-bankid-och-eleg-pa-mitt-telia
     exception: "2FA is only available for Swedish citizens with BankID."
 
@@ -344,7 +346,7 @@ websites:
     url: https://www.telzio.com/
     img: telzio.png
     tfa:
-      - software
+      - totp
     doc: https://telzio.com/support/two-factor-authentication
 
   - name: Three UK
@@ -365,7 +367,7 @@ websites:
     img: ting.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.ting.com/hc/en-us/articles/209351258
 
   - name: Verizon
