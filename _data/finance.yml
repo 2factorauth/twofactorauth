@@ -20,7 +20,7 @@ websites:
     url: https://www.altoira.com
     img: altoira.png
     tfa:
-      - software
+      - totp
     doc: https://help.altoira.com/hc/en-us/articles/360007374654
 
   - name: Amundi (épargne salariale &amp; retraite)
@@ -38,7 +38,7 @@ websites:
     url: https://www.bglcorp.com/
     tfa:
       - sms
-      - software
+      - totp
     img: bgl.png
     doc: https://sf360.zendesk.com/hc/en-au/articles/360020963051
     exception: "2FA covers Simple Fund 360, CAS 360, BGL API and BGL Account. It doesn't cover BGL Client Centre."
@@ -49,14 +49,15 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
+    doc: https://github.com/2factorauth/twofactorauth/pull/2181#issuecomment-266315173
 
   - name: Carta
     url: https://carta.com/
     img: carta.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.carta.com/s/article/2-factor-authentication
 
   - name: ClearScore
@@ -83,7 +84,7 @@ websites:
     url: https://www.degiro.nl
     img: degiro.png
     tfa:
-      - software
+      - totp
 
   - name: ditech
     url: https://www.ditech.com
@@ -95,14 +96,14 @@ websites:
     url: https://exact.com/
     img: exact.png
     tfa:
-      - software
-    doc: https://support.exactonline.com/community/s/knowledge-base#All-All-HNO-Concept-general-security-gen-auth-totpc
+      - totp
+    doc: https://support.exactonline.com/community/s/knowledge-base#All-All-HNO-Task-general-security-gen-auth-totpregphndsktpt
 
   - name: FreeAgent
     url: https://www.freeagent.com
     img: freeagent.png
     tfa:
-      - software
+      - totp
     doc: https://www.freeagent.com/support/kb/getting-started/two-step-verification
 
   - name: FreeTaxUSA
@@ -110,9 +111,10 @@ websites:
     img: freetaxusa.png
     tfa:
       - sms
+      - phone
       - email
-      - software
-    doc: https://www.freetaxusa.com/safe.jsp
+      - totp
+    doc: https://www.freetaxusa.com/faqsearch?search_keyword=authentication
 
   - name: FreshBooks
     url: https://www.freshbooks.com
@@ -170,8 +172,7 @@ websites:
     tfa:
       - sms
       - phone
-      - email
-      - software
+      - totp
     doc: https://ttlc.intuit.com/questions/2902682-what-is-two-step-verification
 
   - name: Invoiced
@@ -179,7 +180,7 @@ websites:
     img: invoiced.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://support.invoiced.com/knowledge_base/topics/setting-up-two-factor-authentication
 
   - name: Justworks
@@ -187,7 +188,8 @@ websites:
     img: justworks.png
     tfa:
       - sms
-      - software
+      - email
+      - totp
     doc: https://help.justworks.com/hc/en-us/articles/360004477492
 
   - name: Kiva
@@ -217,7 +219,7 @@ websites:
     url: https://www.metorik.com
     img: metorik.png
     tfa:
-      - software
+      - totp
     doc: https://help.metorik.com/article/22-how-can-i-enable-2fa-on-my-account
 
   - name: Mint
@@ -225,8 +227,8 @@ websites:
     img: mint.png
     tfa:
       - sms
-      - email
-      - software
+      - phone
+      - totp
     doc: https://help.mint.com/Security/908045661
 
   - name: money by Envestnet | Yodlee
@@ -238,7 +240,7 @@ websites:
     url: https://www.moneybird.com/
     img: moneybird.png
     tfa:
-      - software
+      - totp
     doc: https://www.moneybird.nl/blog/twee-staps-verificatie/
 
   - name: Nexonia
@@ -266,7 +268,6 @@ websites:
       - sms
       - phone
       - email
-      - software
     doc: https://www.paycor.com/security/how-to-keep-your-account-safe
 
   - name: Paytrust
@@ -279,7 +280,7 @@ websites:
     url: https://www.pocketsmith.com
     img: pocketsmith.png
     tfa:
-      - software
+      - totp
     doc: https://learn.pocketsmith.com/article/167--
 
   - name: Popmoney
@@ -311,19 +312,20 @@ websites:
     exception: "U2F support only for school admin accounts. 2FA for parent accounts is in progress."
 
   - name: Quickbooks Online
-    url: https://www.quickbooks.com
+    url: https://quickbooks.intuit.com/
     img: quickbooks.png
     tfa:
       - sms
       - phone
-      - software
+      - totp
     doc: https://accounts-help.lc.intuit.com/questions/1590157
+    exception: "TOTP 2FA only available after enabling SMS or phone 2FA."
 
   - name: QuickFile
     url: https://www.quickfile.co.uk
     img: quickfile.png
     tfa:
-      - software
+      - totp
     doc: https://community.quickfile.co.uk/t/2-factor-authentication/8892
 
   - name: Quizzle
@@ -347,7 +349,7 @@ websites:
     url: https://simpletax.ca/
     img: simpletax.png
     tfa:
-      - software
+      - totp
     doc: https://help.simpletax.ca/questions/two-factor-authentication
 
   - name: Taxact
@@ -364,9 +366,9 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
     doc: https://transferwise.com/help/12/managing-your-profile/2932125
-    exception: "Software verification requires use of the TransferWise Mobile app. SMS-capable phone is required."
+    exception: "SMS-capable phone is required."
 
   - name: TransUnion
     url: https://www.transunion.com/
@@ -400,12 +402,12 @@ websites:
     url: https://www.xero.com/
     img: xero.png
     tfa:
-      - software
+      - totp
     doc: https://help.xero.com/nz/MyXero_Two-Step_About
 
   - name: You Need A Budget (YNAB)
     url: https://www.youneedabudget.com/
     img: ynab.png
     tfa:
-      - software
+      - totp
     doc: https://docs.youneedabudget.com/article/1364--
