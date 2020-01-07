@@ -7,7 +7,7 @@ websites:
       - phone
       - proprietary
       - hardware
-    doc: https://support.aha.io/hc/en-us/articles/202000957
+    doc: https://support.aha.io/hc/en-us/articles/360031319232-Account-settings#SSO
 
   - name: Airbrake
     url: https://airbrake.io
@@ -49,6 +49,7 @@ websites:
     url: https://id.atlassian.com
     img: atlassian.png
     tfa:
+      - sms
       - totp
     doc: https://confluence.atlassian.com/cloud/secure-your-account-with-two-step-verification-939505063.html
     exception: "2FA settings are service-specific."
@@ -329,6 +330,7 @@ websites:
       - totp
       - hardware
     doc: https://docs.cloudmanager.mongodb.com/core/two-factor-authentication/
+    exception: "Phone 2FA for US / Canada only."
 
   - name: New Relic
     url: https://newrelic.com
@@ -419,6 +421,7 @@ websites:
     img: pythonanywhere.png
     tfa:
       - totp
+    doc: https://help.pythonanywhere.com/pages/SecuringYourAccount/
 
   - name: Raygun
     url: https://raygun.com
