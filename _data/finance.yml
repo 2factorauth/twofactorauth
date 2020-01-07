@@ -111,6 +111,7 @@ websites:
     img: freetaxusa.png
     tfa:
       - sms
+      - phone
       - email
       - totp
     doc: https://www.freetaxusa.com/faqsearch?search_keyword=authentication
@@ -164,7 +165,6 @@ websites:
     tfa:
       - sms
       - phone
-      - email
       - totp
     doc: https://ttlc.intuit.com/questions/2902682-what-is-two-step-verification
 
@@ -181,6 +181,7 @@ websites:
     img: justworks.png
     tfa:
       - sms
+      - email
       - totp
     doc: https://help.justworks.com/hc/en-us/articles/360004477492
 
@@ -219,7 +220,7 @@ websites:
     img: mint.png
     tfa:
       - sms
-      - email
+      - phone
       - totp
     doc: https://help.mint.com/Security/908045661
 
@@ -304,13 +305,14 @@ websites:
     exception: "U2F support only for school admin accounts. 2FA for parent accounts is in progress."
 
   - name: Quickbooks Online
-    url: https://www.quickbooks.com
+    url: https://quickbooks.intuit.com/
     img: quickbooks.png
     tfa:
       - sms
       - phone
       - totp
     doc: https://accounts-help.lc.intuit.com/questions/1590157
+    exception: "TOTP 2FA only available after enabling SMS or phone 2FA."
 
   - name: QuickFile
     url: https://www.quickfile.co.uk
