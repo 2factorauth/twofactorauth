@@ -340,7 +340,7 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-  - name: HostUp
+- name: HostUp
   url: https://hostup.org/
   img: hostup.png
   twitter: hostup
@@ -348,11 +348,11 @@ websites:
   email_address: contact@hostup.org
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   doc: https://twitter.com/hostup/status/1214266743541161985
-  exceptions:
-    text: Select 'Bitcoin' as a payment method and you can pay with Bitcoin Cash or
-      Bitcoin Legacy
+  keywords:
+  - bitpay
+  - bip70
 - name: Hawk Host
   url: https://www.hawkhost.com
   img: hawkhost.png
