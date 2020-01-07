@@ -202,10 +202,10 @@ namespace :add do
     section['websites'] = add_and_sort(websites, request, 'name')
     if valid_revision(section)
       write_yaml(category, section)
-      return true
+      true
     else
       puts 'Invalid entry, try changing the data before trying again.'
-      return false
+      false
     end
   end
 
