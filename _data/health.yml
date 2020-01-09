@@ -6,7 +6,7 @@ websites:
       - totp
     doc: https://customercare.23andme.com/hc/en-us/articles/360034119874
 
-  - name: Australian Red Cross Blood Service
+  - name: Australian Red Cross Lifeblood
     url: https://www.donateblood.com.au/
     img: donateblood.png
     tfa:
@@ -121,6 +121,14 @@ websites:
     twitter: MyFitnessPal
     facebook: myfitnesspal
     email_address: support@myfitnesspal.com
+
+  - name: MyHeritage
+    url: https://www.myheritage.com/
+    img: myheritage.png
+    tfa:
+      - sms
+      - totp
+    doc: https://www.myheritage.com/help-center/en/article/how-do-i-set-up-two-factor-authentication-for-my-myheritage-account
 
   - name: Runkeeper
     url: https://runkeeper.com
