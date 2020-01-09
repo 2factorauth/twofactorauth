@@ -10,8 +10,9 @@ websites:
     tfa:
       - sms
       - software
-    exception: "Software token can be bypassed by SMS."
+      - totp
     doc: https://support.airtable.com/hc/en-us/articles/219409917
+    exception: "Software token can be bypassed by SMS."
 
   - name: Any.do
     url: https://web.any.do/
@@ -61,8 +62,8 @@ websites:
     url: https://www.meistertask.com
     img: meistertask.png
     tfa:
-      - software
-    doc: https://support.meistertask.com/hc/en-us/articles/207318670
+      - totp
+    doc: https://support.mindmeister.com/hc/en-us/articles/218901367
 
   - name: Microsoft To-Do
     url: https://todo.microsoft.com/
@@ -70,14 +71,14 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://support.microsoft.com/en-us/help/12408/
 
   - name: Planio
     url: https://plan.io
     img: planio.png
     tfa:
-      - software
+      - totp
     doc: https://support.plan.io/news/133
 
   - name: Remember The Milk
@@ -104,7 +105,7 @@ websites:
     url: https://www.toodledo.com
     img: toodledo.png
     tfa:
-      - software
+      - totp
     doc: https://www.toodledo.com/info/help.php#168
 
   - name: Trello
@@ -112,10 +113,5 @@ websites:
     img: trello.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.trello.com/article/993--
-
-  - name: Wunderlist
-    url: https://www.wunderlist.com
-    twitter: Wunderlist
-    img: wunderlist.png

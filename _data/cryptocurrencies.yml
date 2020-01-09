@@ -303,6 +303,15 @@ websites:
       - totp
     doc: https://help.coinut.com/hc/en-us/articles/360005061354
 
+  - name: Cryptonator
+    url: https://www.cryptonator.com
+    img: cryptonator.png
+    tfa:
+      - totp
+      - proprietary
+      - sms
+    doc: https://cryptonator.zendesk.com/hc/en-us/articles/201715352
+
   - name: DSX
     url: https://dsx.uk/
     img: dsx.png
