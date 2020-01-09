@@ -68,8 +68,10 @@ websites:
   - name: Canva
     url: https://www.canva.com
     img: canva.png
-    twitter: canva
-    facebook: canva
+    tfa:
+      - sms
+    doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
+    exception: "2FA only for Australian customers."
     
   - name: Chartbeat
     url: https://chartbeat.com/
