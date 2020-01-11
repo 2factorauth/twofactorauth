@@ -213,6 +213,7 @@ websites:
       - totp
       - hardware
     doc: https://tutanota.com/howto/#2fa
+    exception: "Hardware 2FA not supported for the desktop & mobile apps."
 
   - name: Virgin Media E-Mail
     url: https://www.virginmedia.com/
