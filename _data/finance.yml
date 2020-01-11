@@ -62,9 +62,10 @@ websites:
 
   - name: ClearScore
     url: https://www.clearscore.com
-    twitter: ClearScore
-    facebook: clearscore
     img: clearscore.png
+    tfa:
+      - sms
+    doc: https://help.clearscore.com/hc/en-us/articles/360010189440-About-two-factor-authentication
 
   - name: Concur
     url: https://www.concur.com/
