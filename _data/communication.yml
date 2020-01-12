@@ -129,7 +129,7 @@ websites:
       - sms
     doc: https://help.groupme.com/hc/en-us/articles/360000579167
 
-  - name: Hangouts
+  - name: Hangouts (Google account)
     url: https://hangouts.google.com/
     img: hangouts.png
     tfa:
@@ -139,6 +139,7 @@ websites:
       - totp
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    exception: “NFC security keys not supported.”
 
   - name: HubSpot
     url: https://www.hubspot.com/
