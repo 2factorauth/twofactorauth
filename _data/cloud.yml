@@ -64,7 +64,7 @@ websites:
       - totp
     doc: https://help.fortrabbit.com/account#toc-setting-up-2fa
 
-  - name: Google Cloud Platform
+  - name: Google Cloud Platform (Google account)
     url: https://cloud.google.com
     img: googlecloud.png
     tfa:
@@ -74,6 +74,7 @@ websites:
       - proprietary
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    exception: “NFC security keys not supported.”
 
   - name: Heroku
     url: https://www.heroku.com/
