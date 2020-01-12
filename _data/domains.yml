@@ -215,7 +215,7 @@ websites:
       - hardware
     doc: https://www.godaddy.com/help/enable-two-step-verification-7502
 
-  - name: Google Domains
+  - name: Google Domains (Google account)
     url: https://domains.google.com
     img: googledomains.png
     tfa:
@@ -224,6 +224,7 @@ websites:
       - software
       - hardware
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    exception: “NFC security keys not supported.”
 
   - name: Heart Internet
     url: https://www.heartinternet.uk/
