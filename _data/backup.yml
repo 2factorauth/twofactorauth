@@ -80,7 +80,7 @@ websites:
     img: filethis.png
     facebook: FileThis
 
-  - name: Google Drive
+  - name: Google Drive (Google account)
     url: https://drive.google.com
     img: drive.png
     tfa:
@@ -90,6 +90,7 @@ websites:
       - totp
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    exception: "NFC security keys not supported."
 
   - name: hubiC
     url: https://hubic.com/
