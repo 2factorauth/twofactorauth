@@ -52,6 +52,7 @@ websites:
       - totp
       - u2f
     doc: https://help.dropbox.com/security/enable-two-step-verification
+    exception: "Hardware 2FA requires also enabling Software or SMS 2FA as a back-up."
 
   - name: Evernote
     url: https://evernote.com
