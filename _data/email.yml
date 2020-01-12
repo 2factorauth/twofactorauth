@@ -21,7 +21,7 @@ websites:
     img: freenet.png
     facebook: freenet
 
-  - name: Gmail
+  - name: Gmail (Google account)
     url: https://mail.google.com
     img: gmail.png
     tfa:
@@ -31,6 +31,7 @@ websites:
       - proprietary
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    exception: “NFC security keys not supported.”
 
   - name: GMX.com
     url: https://www.gmx.com/
