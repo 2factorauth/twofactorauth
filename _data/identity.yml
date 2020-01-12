@@ -44,8 +44,9 @@ websites:
     img: dashlane.png
     tfa:
       - totp
-      - hardware
+      - u2f
     doc: https://support.dashlane.com/hc/en-us/articles/202625042
+    exception: "FIDO U2F is a Premium feature only."
 
   - name: ID.me
     url: https://www.id.me/
@@ -55,6 +56,7 @@ websites:
       - phone
       - totp
       - hardware
+      - u2f
     doc: https://help.id.me/hc/en-us/categories/360001435974
 
   - name: IDentité Numérique (IDN)
@@ -71,7 +73,7 @@ websites:
       - sms
       - phone
       - totp
-      - hardware
+      - u2f
     doc: https://www.keepersecurity.com/security#twoFactor
 
   - name: Keybase
@@ -96,6 +98,7 @@ websites:
       - email
       - totp
       - hardware
+      - u2f
     doc: https://help.okta.com/en/prod/Content/Topics/Security/MFA.htm
 
   - name: OneLogin
