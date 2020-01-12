@@ -43,7 +43,7 @@ websites:
     tfa:
       - totp
 
-  - name: Google Play
+  - name: Google Play (Google account)
     url: https://play.google.com
     img: googleplay.png
     tfa:
@@ -53,6 +53,7 @@ websites:
       - proprietary
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    exception: “NFC security keys not supported.”
 
   - name: Hotstar
     url: https://www.hotstar.com/
