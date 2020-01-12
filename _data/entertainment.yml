@@ -196,7 +196,7 @@ websites:
     facebook: Vimeo
     img: vimeo.png
 
-  - name: YouTube
+  - name: YouTube (Google account)
     url: https://www.youtube.com/
     img: youtube.png
     tfa:
@@ -206,3 +206,4 @@ websites:
       - proprietary
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    exception: “NFC security keys not supported.”
