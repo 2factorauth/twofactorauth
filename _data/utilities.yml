@@ -169,7 +169,7 @@ websites:
     facebook: GeorgiaPower
     img: georgiapower.png
 
-  - name: Google Fi
+  - name: Google Fi (Google account)
     url: https://fi.google.com/
     img: projectfi.png
     tfa:
@@ -178,8 +178,9 @@ websites:
       - totp
       - hardware
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    exception: "NFC keys unsupported."
 
-  - name: Google Fiber
+  - name: Google Fiber (Google account)
     url: https://fiber.google.com/
     img: googlefiber.png
     tfa:
@@ -189,6 +190,7 @@ websites:
       - proprietary
       - hardware
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    exception: "NFC keys unsupported."
 
   - name: Halebop
     url: https://www.halebop.se/
