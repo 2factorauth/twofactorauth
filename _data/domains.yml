@@ -212,7 +212,7 @@ websites:
     tfa:
       - sms
       - software
-      - U2F
+      - u2f
     doc: https://www.godaddy.com/help/enable-two-step-verification-7502
     exception: "If hardware 2FA enabled, customer support unavailable by phone without also enabling software or SMS 2FA."
 
