@@ -81,7 +81,7 @@ websites:
     facebook: Garmin
     img: garmin.png
 
-  - name: Google Fit
+  - name: Google Fit (Google account)
     url: https://fit.google.com
     img: googlefit.png
     tfa:
@@ -91,6 +91,7 @@ websites:
       - proprietary
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    exception: “NFC security keys not supported.”
 
   - name: Hint Health
     url: https://www.hint.com
