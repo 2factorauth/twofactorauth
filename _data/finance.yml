@@ -153,7 +153,7 @@ websites:
       - email
       - totp
     img: hrblock.png
-      
+
   - name: Hargreaves Lansdown
     url: https://www.hl.co.uk/
     twitter: HLInvest
@@ -358,7 +358,8 @@ websites:
     tfa:
       - sms
       - email
-    doc: https://www.taxact.com/support/24138/2016/how-is-a-verification-code-used
+      - totp
+    doc: https://www.taxact.com/support/24138/2019/how-is-a-verification-code-used?hideLayout=True
 
   - name: TransferWise
     url: https://transferwise.com
