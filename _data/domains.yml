@@ -3,23 +3,22 @@ websites:
     url: https://www.007names.com
     img: 007names.png
     tfa:
-      - software
+      - totp
     doc: https://www.007names.com/info/two-step.xhtml
 
   - name: 1&amp;1 IONOS
     url: https://www.ionos.com/
     img: 1and1.png
     tfa:
-      - software
+      - totp
     doc: https://www.ionos.com/help/index.php?id=3269
 
   - name: 101domain
     url: https://101domain.com
     img: 101domain.png
     tfa:
-      - software
-      - hardware
-    doc: https://www.101domain.com/vip_security_card.htm
+      - totp
+    doc: https://help.101domain.com/account-management/account-security/enabling-disabling-two-factor-verification
 
   - name: 10Dollar
     url: https://10dollar.ca/
@@ -37,21 +36,21 @@ websites:
     url: https://www.20i.com
     img: 20i.png
     tfa:
-      - software
+      - totp
     doc: https://www.20i.com/support/my-services/two-factor-authentication-my20i
 
   - name: Above.com
     url: https://www.above.com
     img: above.png
     tfa:
-      - software
+      - totp
     doc: https://www.above.com/manual/my-account-manual-two-step-auth.html
 
   - name: ClouDNS
     url: https://www.cloudns.net/
     img: cloudns.png
     tfa:
-      - software
+      - totp
     doc: https://www.cloudns.net/wiki/article/201/
 
   - name: Crazy Domains
@@ -64,7 +63,7 @@ websites:
     url: https://directnic.com
     img: directnic.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://directnic.com/knowledge/article/137:how+do+i+set+up+two-factor+authentication%3F
 
@@ -72,14 +71,14 @@ websites:
     url: https://www.dnsmadeeasy.com
     img: dnsmadeeasy.png
     tfa:
-      - software
-    doc: https://help.dnsmadeeasy.com/administrative/enable-two-factor-authentication/
+      - totp
+    doc: https://support.dnsmadeeasy.com/support/solutions/articles/47001001027-enable-two-factor-authentication
 
   - name: DNSimple
     url: https://dnsimple.com/
     img: dnsimple.png
     tfa:
-      - software
+      - totp
     doc: https://support.dnsimple.com/articles/two-factor-authentication/
 
   - name: Domain.com
@@ -114,23 +113,16 @@ websites:
     img: domeneshop.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://domeneshop.no/faq?id=344
     exception: "SMS available only to customers in Norway, Sweden and Denmark."
-
-  - name: Domeny.tv
-    url: https://www.domeny.tv/en
-    img: domenytv.png
-    tfa:
-      - software
-    doc: https://www.domeny.tv/en/two-factor-authentication
 
   - name: Dyn
     url: https://dyn.com/
     img: dyn.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.dyn.com/2-factor-authentication/
     exception: "Currently only supported for the Managed DNS & Email Delivery platforms (via DynID). Eventually DynID (and 2FA) will be rolled out to all platforms (no ETA)."
 
@@ -139,14 +131,15 @@ websites:
     img: dynadot.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://dynadot.com/domain/security.html
 
   - name: Dynu
     url: https://www.dynu.com/
     img: dynu.png
     tfa:
-      - software
+      - totp
+      - sms
     doc: https://www.dynu.com/en-US/Blog/Article?Article=It-is-time-to-enable-two-factor-authentication
 
   - name: easyDNS
@@ -155,14 +148,14 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://kb.easydns.com/knowledge/account-security/
 
   - name: eNom
     url: https://www.enom.com/
     img: enom.png
     tfa:
-      - software
+      - totp
     doc: https://www.enom.com/kb/kb/kb_1687-setup-2-factor.htm
 
   - name: Epik
@@ -176,14 +169,14 @@ websites:
     url: https://www.eurodns.com
     img: eurodns.png
     tfa:
-      - software
+      - totp
     doc: https://help.eurodns.com/customer/en/portal/articles/1633106
 
   - name: Fabulous
     url: https://fabulous.com
     img: fabulous.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://fabulous.com/knowledge/article/137
 
@@ -202,7 +195,7 @@ websites:
     url: https://gandi.net
     img: gandi.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://docs.gandi.net/en/account_management/security/
 
@@ -211,7 +204,7 @@ websites:
     url: https://www.godaddy.com/
     tfa:
       - sms
-      - software
+      - totp
       - hardware
     doc: https://www.godaddy.com/help/enable-two-step-verification-7502
 
@@ -221,8 +214,9 @@ websites:
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - proprietary
+      - totp
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
   - name: Heart Internet
@@ -235,7 +229,7 @@ websites:
     url: https://www.hexonet.net/
     img: hexonet.png
     tfa:
-      - software
+      - totp
     doc: https://www.hexonet.net/assets/pdf/2FA.pdf
 
   - name: Hover.com
@@ -243,14 +237,14 @@ websites:
     url: https://www.hover.com/
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.hover.com/hc/en-us/articles/217282267
 
   - name: Hurricane Electric
     url: https://www.he.net/
     img: hurricane.png
     tfa:
-      - software
+      - totp
 
   - name: Imperva
     url: https://www.imperva.com/
@@ -265,35 +259,35 @@ websites:
     url: https://www.internet.bs
     img: internetbs.png
     tfa:
-      - software
+      - totp
     doc: "/notes/internetbs/"
 
   - name: INWX
     url: https://www.inwx.com/en/
     img: internetworx.png
     tfa:
-      - software
+      - totp
     doc: https://www.inwx.com/en/offer/mobiletan
 
   - name: iWantMyName
     url: https://iwantmyname.com/
     img: iwantmyname.png
     tfa:
-      - software
+      - proprietary
     doc: https://help.iwantmyname.com/customer/portal/articles/1139898
 
   - name: Joker.com
     url: https://joker.com
     img: joker.png
     tfa:
-      - software
+      - totp
     doc: https://joker.com/faq/content/52/480/en/what-is-two_factor_authentication.html
 
   - name: Loopia
     url: https://www.loopia.se/
     img: loopia.png
     tfa:
-      - software
+      - proprietary
     doc: https://blogg.loopia.se/2015/03/16/nu-kan-du-logga-in-med-tvafaktorsautentiering-hos-loopia-genom-bankid/
     exception: "TFA only available for Swedish residents with BankID."
 
@@ -302,7 +296,7 @@ websites:
     img: markmonitor.png
     tfa:
       - sms
-      - software
+      - proprietary
       - hardware
 
   - name: Metaname
@@ -317,7 +311,7 @@ websites:
     img: moniker.png
     tfa:
       - email
-      - software
+      - totp
     doc: https://faq.moniker.com/login-into-moniker
 
   - name: MyDomain
@@ -330,7 +324,7 @@ websites:
     url: https://www.name.com/
     img: namecom.png
     tfa:
-      - software
+      - totp
     doc: https://www.name.com/services/two-step-verification
 
   - name: Namecheap
@@ -347,7 +341,7 @@ websites:
     url: https://www.namesilo.com/
     img: namesilo.png
     tfa:
-      - software
+      - totp
     doc: https://www.namesilo.com/Support/2~Factor-Authentication
 
   - name: NamesPro.ca
@@ -361,7 +355,7 @@ websites:
     img: nfsn.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
 
   - name: Netfirms
@@ -398,14 +392,14 @@ websites:
     url: https://www.nominet.uk/
     img: nominet.png
     tfa:
-      - software
-    doc: https://registrars.nominet.org.uk/sites/default/files/two_factor_authentication_userguide.pdf
+      - totp
+    doc: https://registrars.nominet.uk/gtlds/onboarding-account-management/your-account/account-security-2/two-factor-authentication-user-guide-2/
 
   - name: NS1
     url: https://ns1.com/
     img: ns1.png
     tfa:
-      - software
+      - totp
     doc: https://ns1.com/articles/enabling-2-factor-authentication
 
   - name: OpenDNS
@@ -413,30 +407,30 @@ websites:
     img: opendns.png
     tfa:
       - sms
-      - software
-    doc: https://engineering.opendns.com/2014/05/22/launching-two-step-verification/
+      - totp
+    doc: https://umbrella.cisco.com/blog/2014/05/22/launching-two-step-verification/
     exception: "Only available for enterprise accounts."
 
   - name: Openprovider
     url: https://www.openprovider.co.uk
     img: openprovider.png
     tfa:
-      - software
+      - totp
 
   - name: OpenSRS
     url: https://opensrs.com
     img: opensrs.png
     tfa:
       - sms
-      - software
-    doc: https://help.opensrs.com/hc/en-us/articles/209618017
+      - totp
+    doc: https://help.opensrs.com/hc/en-us/articles/360009702113-Using-two-factor-authentication-in-webmail
 
   - name: pair Domains
     url: https://www.pairdomains.com/
     img: pairdomains.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://www.pairdomains.com/kb/posts/345
 
   - name: Park.io
@@ -455,7 +449,7 @@ websites:
     url: https://porkbun.com
     img: porkbun.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://kb.porkbun.com/category/20--
 
@@ -469,14 +463,14 @@ websites:
     url: https://rebrandly.com
     img: rebrandly.png
     tfa:
-      - software
+      - totp
     doc: https://support.rebrandly.com/hc/en-us/articles/360007220373
 
   - name: Register4Less
     url: https://register4less.com/
     img: register4less.png
     tfa:
-      - software
+      - totp
     doc: https://blog.register4less.com/two-factor-authentication/
 
   - name: Registro.br
@@ -500,7 +494,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://synergywholesale.com/faq/article/can-i-enable-two-factor-authentication-on-my-wholesale-system-account/
 
   - name: UK2
@@ -508,35 +502,35 @@ websites:
     img: uk2.png
     tfa:
       - sms
-      - software
-    doc: https://www.uk2.net/knowledgebase/display/UK2/Two+Factor+Authentication+Security+-+2FA
+      - totp
+    doc: https://github.com/2factorauth/twofactorauth/pull/3845#issuecomment-491518360
 
   - name: Uniregistry
     url: https://uniregistry.com/
     img: uniregistry.png
     tfa:
-      - software
+      - totp
     doc: https://uniregistry.help/my-account-en/what-is-two-step-verification/
 
   - name: United Domains USA
     url: https://www.uniteddomains.com/
     img: uniteddomains-usa.png
     tfa:
-      - software
+      - totp
     doc: https://help.uniteddomains.com/hc/en-us/articles/115001458813
 
   - name: united-domains Reselling
     url: https://www.ud-reselling.com/en/
     img: udreselling.png
     tfa:
-      - software
+      - totp
     doc: https://www.ud-reselling.com/en/security/
 
   - name: united-domains.de
     url: https://www.united-domains.de/
     img: united-domains.png
     tfa:
-      - software
+      - totp
     doc: https://help.united-domains.de/faq-article/wie-aktiviere-ich-die-zweistufige-verifizierung-und-mache-mein-portfolio-login-sicherer
     exception: "A phone number is required to enable two-factor authentication."
 
@@ -546,7 +540,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://ventraip.com.au/faq/article/two-factor-authentication-faq-vipcontrol/
 
   - name: Verio
