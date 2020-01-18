@@ -15,7 +15,7 @@ websites:
       - sms
       - totp
     doc: https://help.backblaze.com/hc/en-us/articles/217666588
-    exception: "SMS is required to set up 2FA and always available as a backup authentication method."
+    exception: "SMS-capable phone required for initial setup."
 
   - name: Box
     url: https://www.box.com/
