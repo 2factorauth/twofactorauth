@@ -9,7 +9,7 @@
   <a href="{{ website.url }}" class="name">{{ website.name }}</a>
   {%- include exception.html website=website -%}
   {%- if website.status and include.type == 'mobile' -%}
-    <a href="{{ website.status }}" target="_blank">
+    <a href="{{ website.status }}" target="_blank" rel="noopener noreferrer">
       <i class="external url link large icon"></i>
     </a>
   {%- endif -%}
