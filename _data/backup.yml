@@ -225,6 +225,7 @@ websites:
       - email
       - totp
     doc: https://support.tresorit.com/hc/en-us/articles/216114527
+    exception: "Requires enabling at least two 2FA methods."
 
   - name: Wasabi
     url: https://wasabi.com/
