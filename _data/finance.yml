@@ -298,6 +298,15 @@ websites:
       - phone
       - email
 
+  - name: Principal
+    url: https://www.principal.com
+    img: principal.png
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://secure02.principal.com/publicvsupply/GetFile?fm=ww42&ty=VOP&EXT=.VOP
+
   - name: Progressive
     url: https://www.progressive.com
     twitter: Progressive
