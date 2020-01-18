@@ -172,14 +172,6 @@ websites:
       - totp
     doc: https://www.qnap.com/en-us/how-to/tutorial/article/how-to-enhance-account-security-using-2-step-verification
 
-  - name: SmartBox
-    url: https://www.panterranetworks.com/products/smartbox.php
-    img: smartbox.png
-    tfa:
-      - email
-      - software
-    exception: "Only available for Enterprise users"
-
   - name: SpiderOak
     url: https://spideroak.com
     twitter: SpiderOak
