@@ -41,9 +41,13 @@
           </div>
         </td>
         <td class="twitter progress" colspan="6">
+          {% if website.twitter %}
           <a class="ui twitter mini button"
              href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
              target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
+          {% else %}
+          &nbsp;
+          {% endif %}
         </td>
       {% elsif website.tfa %}
         <td class="main positive">

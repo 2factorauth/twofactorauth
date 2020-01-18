@@ -4,7 +4,7 @@ websites:
     img: 500px.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.500px.com/hc/en-us/articles/205115877
     exception: "A verified phone number is required for the use of two-factor authentication software."
 
@@ -43,7 +43,7 @@ websites:
     img: bufferapp.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://blog.bufferapp.com/introducing-the-safest-social-media-publishing-on-the-web
 
   - name: DeviantArt
@@ -69,8 +69,8 @@ websites:
     img: facebook.png
     tfa:
       - sms
-      - software
-      - hardware
+      - totp
+      - u2f
     doc: https://www.facebook.com/help/148233965247823
     exception: "Software or SMS 2FA must be set up before a hardware token can be added."
 
@@ -106,7 +106,7 @@ websites:
     url: https://hootsuite.com
     img: hootsuite.png
     tfa:
-      - software
+      - totp
     doc: https://help.hootsuite.com/hc/en-us/articles/204595950
 
   - name: ICQ
@@ -125,7 +125,7 @@ websites:
     img: instagram.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.instagram.com/566810106808145
 
   - name: LinkedIn
@@ -133,7 +133,7 @@ websites:
     img: linkedin.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://www.linkedin.com/help/linkedin/answer/531
 
   - name: LiveJournal
@@ -145,7 +145,7 @@ websites:
     url: https://lobste.rs/
     img: lobsters.png
     tfa:
-      - software
+      - totp
     doc: https://lobste.rs/s/1cyltz/two_factor_authentication_now_available
 
   - name: Medium
@@ -189,15 +189,15 @@ websites:
     img: pinterest.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://help.pinterest.com/en/articles/two-factor-authentication
-    exception: "Software authentication requires the Authy app."
 
   - name: Plurk
     url: https://plurk.com
     img: plurk.png
     tfa:
-      - software
+      - totp
+    doc: https://www.plurk.com/p/mrcii5
 
   - name: Postcrossing
     url: https://www.postcrossing.com/
@@ -214,7 +214,7 @@ websites:
     url: https://www.reddit.com/
     img: reddit.png
     tfa:
-      - software
+      - totp
     doc: https://www.reddithelp.com/en/categories/using-reddit/your-reddit-account/how-set-two-factor-authentication
 
   - name: Short.cm
@@ -229,7 +229,7 @@ websites:
     img: snapchat.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.snapchat.com/en-US/article/enable-login-verification
 
   - name: Stack Exchange
@@ -242,7 +242,7 @@ websites:
     img: tumblr.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://www.tumblr.com/docs/en/two_factor_auth
 
   - name: Twitter
@@ -250,7 +250,7 @@ websites:
     img: twitter.png
     tfa:
       - sms
-      - software
+      - totp
       - hardware
     doc: https://support.twitter.com/articles/20170388
     exception: "SMS only available on select providers."
@@ -270,8 +270,8 @@ websites:
     img: vk.png
     tfa:
       - sms
-      - software
-    doc: https://vk.com/page-59800369_47885415
+      - totp
+    doc: https://vk.com/page-777107_53677752
 
   - name: Weibo
     url: https://www.weibo.com/
@@ -282,7 +282,7 @@ websites:
     img: wordpress.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://en.support.wordpress.com/security/two-step-authentication/
     exception: "SMS required for 2FA."
 
@@ -290,14 +290,14 @@ websites:
     url: https://www.wykop.pl
     img: wykop.png
     tfa:
-      - software
+      - totp
 
   - name: XING
     url: https://www.xing.com
     img: xing.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://faq.xing.com/en/settings-security/two-factor-login-two-factor-authentication
 
   - name: Yelp
