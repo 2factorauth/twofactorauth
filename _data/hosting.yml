@@ -68,6 +68,13 @@ websites:
     tfa:
       - totp
 
+  - name: Carrd
+    url: https://carrd.co/
+    img: carrd.png
+    tfa:
+      - totp
+    doc: https://carrd.co/docs/account/enabling-google-authenticator
+
   - name: CDN77
     url: https://www.cdn77.com
     img: cdn77.png
