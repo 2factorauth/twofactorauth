@@ -1,9 +1,6 @@
 ---
 ---
 {
-{%-  assign tfa_tags = "tfa, sms, phone" | split: ', ' -%}
-{%- assign software_tags = "totp, proprietary" | split: ', ' -%}
-{%- assign hardware_tags = "u2f, hardware" | split: ', ' -%}
 {%- for section in site.data.sections -%}
   {%- assign section_file = site.data[section.id] -%}
   "{{ section.title }}": {
