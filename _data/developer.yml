@@ -41,9 +41,8 @@ websites:
     url: https://atechmedia.com
     img: atechmedia.png
     tfa:
-      - software
-      - hardware
-    doc: https://atechmedia.com/blog/general/launches/two-factor-authentication
+      - totp
+    doc: https://www.deployhq.com/support/managing-your-account/personal-profile/two-factor-authentication
 
   - name: Atlassian Cloud
     url: https://id.atlassian.com
@@ -381,7 +380,7 @@ websites:
     url: https://phacility.com/
     img: phacility.png
     tfa:
-      - software
+      - totp
 
   - name: Pingdom
     url: https://www.pingdom.com
