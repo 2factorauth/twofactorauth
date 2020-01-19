@@ -1,7 +1,6 @@
 ---
 ---
 {
-{%-  assign tfa_tags = "tfa, sms, phone, software, hardware" | split: ', ' -%}
 
 {%- for section in site.data.sections -%}
   {%- assign section_file = site.data[section.id] -%}
@@ -25,7 +24,14 @@
       {%- else -%}
         "tfa": true,
         {%- for tfa_tag in website.tfa -%}
-          "{{tfa_tag}}": true{%- unless forloop.last -%},{%- endunless -%}
+          {%- if tfa_tag == 'totp' or tfa_tag == 'proprietary' -%}
+          "software":
+          {%- elsif tfa_tag == 'u2f' -%}
+          "hardware":
+          {%- else -%}
+          "{{tfa_tag}}":
+          {%- endif -%}
+          true{%- unless forloop.last -%},{%- endunless -%}
         {%- endfor -%}
       {%- endunless -%}
       {%- unless forloop.last-%},{%- endunless -%}
