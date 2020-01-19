@@ -1,6 +1,8 @@
 ---
 ---
 {
+{%-  assign tfa_tags = "tfa, sms, phone, software, hardware" | split: ', ' -%}
+
 {%- for section in site.data.sections -%}
   {%- assign section_file = site.data[section.id] -%}
   "{{ section.title }}": {
