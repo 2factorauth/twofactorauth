@@ -64,7 +64,15 @@ websites:
     img: ca-technologies.png
     twitter: CAinc
     facebook: CATechnologies
-
+    
+  - name: Canva
+    url: https://www.canva.com
+    img: canva.png
+    tfa:
+      - sms
+    doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
+    exception: "2FA only available for Australian customers."
+    
   - name: Chartbeat
     url: https://chartbeat.com/
     img: chartbeat.png
