@@ -1,12 +1,9 @@
 websites:
   - name: 500px
-    url: https://500px.com/
+    url: https://web.500px.com/
+    twitter: 500px
+    facebook: 500px
     img: 500px.png
-    tfa:
-      - sms
-      - totp
-    doc: https://support.500px.com/hc/en-us/articles/205115877
-    exception: "A verified phone number is required for the use of two-factor authentication software."
 
   - name: about.me
     url: https://about.me
