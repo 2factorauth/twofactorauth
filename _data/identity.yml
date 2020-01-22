@@ -8,14 +8,6 @@ websites:
     doc: https://support.1password.com/two-factor-authentication/
     exception: "Teams using Duo with 1Password can't enable additional 2FA as it's already handled by Duo"
 
-  - name: Bitium
-    url: https://www.bitium.com
-    img: bitium.png
-    tfa:
-      - totp
-      - hardware
-    doc: https://support.bitium.com/administration/multi-factor-authentication/
-
   - name: bitwarden
     url: https://bitwarden.com
     img: bitwarden.png
