@@ -382,6 +382,12 @@ websites:
       - totp
     doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
 
+  - name: Opera
+    url: https://auth.opera.com
+    img: opera.png
+    tfa:
+      - totp
+
   - name: Pastebin
     url: https://pastebin.com
     img: pastebin.png
