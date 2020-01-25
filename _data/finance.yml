@@ -57,9 +57,10 @@ websites:
 
   - name: ClearScore
     url: https://www.clearscore.com
-    twitter: ClearScore
-    facebook: clearscore
     img: clearscore.png
+    tfa:
+      - sms
+    doc: https://help.clearscore.com/hc/en-us/sections/360003360940
 
   - name: Concur
     url: https://www.concur.com/
