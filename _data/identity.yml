@@ -3,18 +3,10 @@ websites:
     url: https://1password.com/
     img: 1password.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://support.1password.com/two-factor-authentication/
     exception: "Teams using Duo with 1Password can't enable additional 2FA as it's already handled by Duo"
-
-  - name: Bitium
-    url: https://www.bitium.com
-    img: bitium.png
-    tfa:
-      - software
-      - hardware
-    doc: https://support.bitium.com/administration/multi-factor-authentication/
 
   - name: bitwarden
     url: https://bitwarden.com
@@ -23,8 +15,8 @@ websites:
       - sms
       - phone
       - email
-      - software
-      - hardware
+      - totp
+      - u2f
     doc: https://help.bitwarden.com/article/setup-two-step-login/
     exception: "Premium account required for Duo, YubiKey and FIDO U2F."
 
@@ -32,19 +24,21 @@ websites:
     url: https://www.centrify.com
     img: centrify.png
     tfa:
-      - sms
       - phone
-      - email
-      - software
-    doc: https://www.centrify.com/solutions/why-multi-factor-authentication/
+      - totp
+      - proprietary
+      - hardware
+      - u2f
+    doc: https://www.centrify.com/privileged-access-management/authentication-service/mfa/
 
   - name: Dashlane
     url: https://www.dashlane.com
     img: dashlane.png
     tfa:
-      - software
-      - hardware
+      - totp
+      - u2f
     doc: https://support.dashlane.com/hc/en-us/articles/202625042
+    exception: "FIDO U2F is a Premium feature only."
 
   - name: ID.me
     url: https://www.id.me/
@@ -52,8 +46,9 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
       - hardware
+      - u2f
     doc: https://help.id.me/hc/en-us/categories/360001435974
 
   - name: IDentité Numérique (IDN)
@@ -69,8 +64,8 @@ websites:
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - totp
+      - u2f
     doc: https://www.keepersecurity.com/security#twoFactor
 
   - name: Keybase
@@ -82,7 +77,7 @@ websites:
     url: https://lastpass.com/
     img: lastpass.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://helpdesk.lastpass.com/multifactor-authentication-options/
 
@@ -93,15 +88,26 @@ websites:
       - sms
       - phone
       - email
-      - software
+      - totp
       - hardware
+      - u2f
     doc: https://help.okta.com/en/prod/Content/Topics/Security/MFA.htm
+
+  - name: OneLogin
+    url: https://www.onelogin.com/
+    img: onelogin.png
+    tfa:
+      - proprietary
+      - sms
+      - totp
+      - hardware
+    doc: https://onelogin.service-now.com/support?id=kb_article&sys_id=43d99143db109700d5505eea4b96197a
 
   - name: PassHub
     url: https://passhub.net/
     img: passhub.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://passhub.net/security.php
     exception: "Hardware tokens only work on desktop."
@@ -120,7 +126,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://help.roboform.com/hc/en-us/articles/115002729512
 
   - name: SAASPASS
@@ -128,7 +134,7 @@ websites:
     img: saaspass.png
     tfa:
       - sms
-      - software
+      - proprietary
       - hardware
     doc: https://saaspass.com/faq/
 
@@ -139,7 +145,7 @@ websites:
       - sms
       - phone
       - email
-      - software
+      - proprietary
       - hardware
     exception: "Applies to IdentityIQ and IdentityNow."
 
@@ -155,8 +161,7 @@ websites:
     url: https://www.truekey.com
     img: truekey.png
     tfa:
-      - sms
       - email
-      - software
+      - proprietary
       - hardware
-    doc: https://help.truekey.com/hc/en-us/articles/218580447-How-can-I-add-additional-factors-
+    doc: https://service.mcafee.com/webcenter/portal/cp/home/articleview?articleId=TS102352

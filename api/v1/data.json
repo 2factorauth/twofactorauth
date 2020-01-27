@@ -1,8 +1,6 @@
 ---
 ---
 {
-{%-  assign tfa_tags = "tfa, sms, phone, software, hardware" | split: ', ' -%}
-
 {%- for section in site.data.sections -%}
   {%- assign section_file = site.data[section.id] -%}
   "{{ section.title }}": {
@@ -24,8 +22,10 @@
         {%- endif -%}
       {%- else -%}
         "tfa": true,
-        {%- for tfa_tag in website.tfa -%}
-          "{{tfa_tag}}": true{%- unless forloop.last -%},{%- endunless -%}
+        {%- assign website_tfa = website.tfa | join: ", " -%}
+        {%- assign tags = website_tfa | replace: "totp", "software" | replace: "proprietary", "software" | replace: "u2f", "hardware" | split: ", " | uniq  -%}
+        {%- for tfa_tag in tags -%}
+        "{{tfa_tag}}": true{%- unless forloop.last -%},{%- endunless -%}
         {%- endfor -%}
       {%- endunless -%}
       {%- unless forloop.last-%},{%- endunless -%}
