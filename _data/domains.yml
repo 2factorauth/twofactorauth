@@ -338,6 +338,13 @@ websites:
       - u2f
     doc: https://www.namecheap.com/security/2fa-two-factor-authentication/
 
+  - name: Namesco
+    url: https://www.names.co.uk/
+    img: namesco.png
+    tfa:
+      - totp
+    doc: https://www.names.co.uk/support/3011.html
+
   - name: NameSilo.com
     url: https://www.namesilo.com/
     img: namesilo.png
