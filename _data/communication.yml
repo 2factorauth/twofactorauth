@@ -12,7 +12,7 @@ websites:
     tfa:
       - totp
     doc: https://docs.airship.com/tutorials/security/2fa/
-
+    exception: "2FA is only available upon request for customers on their Essential and Comprehensive plans."
   - name: Basecamp
     url: https://basecamp.com/
     img: basecamp.png
