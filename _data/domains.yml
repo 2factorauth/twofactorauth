@@ -182,8 +182,9 @@ websites:
 
   - name: Fasthosts
     url: https://www.fasthosts.co.uk/
-    twitter: Fasthosts
-    facebook: fasthostsinternet
+    tfa:
+      - totp
+    doc: https://help.fasthosts.co.uk/app/answers/detail/a_id/3345
     img: fasthosts.png
 
   - name: FreeDNS
