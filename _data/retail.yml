@@ -4,7 +4,7 @@ websites:
     img: adafruit.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://learn.adafruit.com/how-to-set-up-2-factor-authentication-on-adafruit
 
   - name: AdoramaPix
@@ -30,7 +30,7 @@ websites:
     img: amazon.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201596330
     exception: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
 
@@ -40,7 +40,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
     doc: https://support.apple.com/en-us/HT204915
 
   - name: Arcaplanet
@@ -113,7 +113,7 @@ websites:
     url: https://www.digitec.ch
     img: digitec.png
     tfa:
-      - software
+      - totp
     doc: https://www.digitec.ch/en/page/new-two-factor-authentication-for-your-user-account-6589
 
   - name: EB Games Australia
@@ -126,9 +126,8 @@ websites:
     img: ebay.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://community.ebay.com/t5/Announcements/eBay-launches-a-new-2-step-verification-method-to-increase/ba-p/29818464
-    exception: "Software implementation requires use of the eBay app."
 
   - name: ebay Kleinanzeigen
     url: https://www.ebay-kleinanzeigen.de
@@ -151,7 +150,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
     doc: https://help.etsy.com/hc/en-us/articles/115015569567
 
   - name: EVENTIM
@@ -271,8 +270,7 @@ websites:
     img: mercado-libre.png
     tfa:
       - sms
-      - software
-    doc: https://ayuda.mercadolibre.com.ar/ayuda/Consejos-para-fortalecer-la-se_961
+      - proprietary
 
   - name: Newegg
     url: https://www.newegg.com
@@ -280,7 +278,8 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
+    doc: https://kb.newegg.com/knowledge-base/2-step-verification/
 
   - name: Nordstrom
     url: https://shop.nordstrom.com
@@ -316,7 +315,7 @@ websites:
     url: https://purse.io/
     img: purse.png
     tfa:
-      - software
+      - totp
     doc: https://support.purse.io/account/2-factor-authentication-2fa
 
   - name: Rakuten
@@ -342,7 +341,7 @@ websites:
     img: shopify.png
     tfa:
       - sms
-      - software
+      - totp
       - hardware
     doc: https://help.shopify.com/manual/your-account/account-security/two-step-authentication
 
@@ -388,7 +387,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
     doc: https://www.tokopedia.com/panduan-keamanan/fitur-keamanan-tambahan/
 
   - name: Trade Me
