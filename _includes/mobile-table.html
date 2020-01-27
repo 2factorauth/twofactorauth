@@ -25,11 +25,13 @@
     <div class="main progress">
       {% include row-title.html section=section_id website=website type='mobile' %}
       <p>IN PROGRESS!</p>
+      {% if website.twitter %}
       <div>
         <a class="ui twitter mini button"
            href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
            target="_blank"><i class="twitter icon"></i> {{page.link_progress_mobile}}</a>
       </div>
+      {% endif %}
     </div>
     {% elsif website.tfa %}
     <div class="main positive">
@@ -37,7 +39,7 @@
       <div class="methods">
         {% if website.hardware or website.tfa contains 'hardware' %}<p><i class="checkmark small icon" title="Hardware"></i> Hardware</p>{% endif %}
         {% if website.tfa contains 'u2f' %}<p><i class="checkmark small icon" title="U2F"></i> U2F</p>{% endif %}
-        {% if website.tfa contains 'software' or website.tfa contains 'totp' or website.tfa contains 'proprietary' %}<p><i class="checkmark small icon" title="Software"></i> Software</p>{% endif %}
+        {% if website.tfa contains 'totp' or website.tfa contains 'proprietary' %}<p><i class="checkmark small icon" title="Software"></i> Software</p>{% endif %}
         {% if website.tfa contains 'sms' %}<p><i class="checkmark small icon" title="SMS"></i> SMS</p>{% endif %}
         {% if website.tfa contains 'phone' %}<p><i class="checkmark small icon" title="Phone"></i> Phone</p>{% endif %}
         {% if website.tfa contains 'email' %}<p><i class="checkmark small icon" title="Email"></i> Email</p>{% endif %}
