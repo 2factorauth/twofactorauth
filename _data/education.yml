@@ -262,6 +262,16 @@ websites:
       - hardware
     doc: https://kb.mit.edu/confluence/display/istcontrib/Duo+Authentication+Landing+Page
 
+  - name: McGill University
+    url: https://mcgill.ca/
+    img: mcgill.png
+    tfa:
+      - totp
+      - proprietary
+      - sms
+      - phone
+    doc: http://kb.mcgill.ca/#artId:7948
+
   - name: Miami University
     url: https://miamioh.edu/
     img: miamioh.png
