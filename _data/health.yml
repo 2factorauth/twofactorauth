@@ -91,7 +91,7 @@ websites:
       - proprietary
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
-    exception: “NFC security keys not supported.”
+    exception: "NFC security keys cannot currently be used on iOS for Google accounts."
 
   - name: Hint Health
     url: https://www.hint.com
