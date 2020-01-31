@@ -15,7 +15,7 @@ websites:
       - sms
       - totp
     doc: https://help.backblaze.com/hc/en-us/articles/217666588
-    exception: "SMS is required to set up 2FA and always available as a backup authentication method."
+    exception: "SMS-capable phone required for initial setup."
 
   - name: Box
     url: https://www.box.com/
@@ -52,6 +52,7 @@ websites:
       - totp
       - u2f
     doc: https://help.dropbox.com/security/enable-two-step-verification
+    exception: "Hardware 2FA requires also enabling Software or SMS 2FA as a back-up."
 
   - name: Evernote
     url: https://evernote.com
@@ -172,14 +173,6 @@ websites:
       - totp
     doc: https://www.qnap.com/en-us/how-to/tutorial/article/how-to-enhance-account-security-using-2-step-verification
 
-  - name: SmartBox
-    url: https://www.panterranetworks.com/products/smartbox.php
-    img: smartbox.png
-    tfa:
-      - email
-      - software
-    exception: "Only available for Enterprise users"
-
   - name: SpiderOak
     url: https://spideroak.com
     twitter: SpiderOak
@@ -225,6 +218,7 @@ websites:
       - email
       - totp
     doc: https://support.tresorit.com/hc/en-us/articles/216114527
+    exception: "Requires enabling at least two 2FA methods."
 
   - name: Wasabi
     url: https://wasabi.com/

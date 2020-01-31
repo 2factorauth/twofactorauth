@@ -124,7 +124,6 @@ websites:
       - sms
       - email
       - phone
-      - software
       - hardware
       - proprietary (Software based 2FA that requires a special app to use)
       - totp (Normal software 2FA)
@@ -151,7 +150,6 @@ The following is an example of a website that *supports* TFA:
       - sms
       - email
       - phone
-      - software
       - hardware
       - totp
       - u2f
