@@ -29,11 +29,6 @@ websites:
     img: amundiee.png
     lang: fr
 
-  - name: Baden-Württembergische Bank
-    url: https://www.bw-bank.de/de/
-    img: bw_bank.png
-    lang: de
-
   - name: BGL Corporate Solutions
     url: https://www.bglcorp.com/
     tfa:
@@ -62,9 +57,10 @@ websites:
 
   - name: ClearScore
     url: https://www.clearscore.com
-    twitter: ClearScore
-    facebook: clearscore
     img: clearscore.png
+    tfa:
+      - sms
+    doc: https://help.clearscore.com/hc/en-us/sections/360003360940
 
   - name: Concur
     url: https://www.concur.com/
@@ -145,6 +141,7 @@ websites:
     img: gusto.png
     tfa:
       - sms
+      - totp
     doc: https://support.gusto.com/1066223171
 
   - name: H&R Block
@@ -153,7 +150,7 @@ websites:
       - email
       - totp
     img: hrblock.png
-      
+
   - name: Hargreaves Lansdown
     url: https://www.hl.co.uk/
     twitter: HLInvest
@@ -174,6 +171,7 @@ websites:
       - phone
       - totp
     doc: https://ttlc.intuit.com/questions/2902682-what-is-two-step-verification
+    exception: "Software 2FA requires enabling SMS or phone call as a back-up."
 
   - name: Invoiced
     url: https://invoiced.com/
@@ -297,6 +295,15 @@ websites:
       - phone
       - email
 
+  - name: Principal
+    url: https://www.principal.com
+    img: principal.png
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://secure02.principal.com/publicvsupply/GetFile?fm=ww42&ty=VOP&EXT=.VOP
+
   - name: Progressive
     url: https://www.progressive.com
     twitter: Progressive
@@ -339,6 +346,13 @@ websites:
     facebook: RocketMortgage
     img: rocketmortgage.png
 
+  - name: SCHUFA
+    url: https://www.meineschufa.de/
+    twitter: SCHUFAHoldingAG
+    email_address: meineSCHUFA@SCHUFA.de
+    img: schufa.png
+    lang: de
+
   - name: Shoeboxed
     url: https://www.shoeboxed.com/
     twitter: Shoeboxed
@@ -358,7 +372,8 @@ websites:
     tfa:
       - sms
       - email
-    doc: https://www.taxact.com/support/24138/2016/how-is-a-verification-code-used
+      - totp
+    doc: https://www.taxact.com/support/24138/2019/how-is-a-verification-code-used?hideLayout=True
 
   - name: TransferWise
     url: https://transferwise.com
@@ -380,6 +395,7 @@ websites:
     img: treasurydirect.png
     tfa:
       - email
+    doc: https://www.treasurydirect.gov/indiv/help/TDHelp/help_ug_274-SecFeaturesProtectAcctLearnMore.htm
 
   - name: Valic
     url: https://www.valic.com/

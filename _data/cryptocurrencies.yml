@@ -67,24 +67,24 @@ websites:
     url: https://www.bitgo.com
     img: bitgo.png
     tfa:
-      - software
+      - totp
       - hardware
-    doc: https://bitgo.freshdesk.com/support/solutions/articles/27000037397
+      - u2f
 
   - name: Bithumb
     url: https://www.bithumb.com/
     img: bithumb.png
     tfa:
       - sms
-      - software
-    doc: https://bithumb.cafe/archives/7286
+      - totp
+    doc: https://en.bithumb.com/customer_support/info_guide?seq=510
 
   - name: Bitlish
     url: https://bitlish.com
     img: bitlish.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://bitlish.com/how#mfa
 
   - name: Bitpanda
@@ -149,7 +149,7 @@ websites:
     url: https://www.btcmarkets.net/
     img: btcmarkets.png
     tfa:
-      - software
+      - totp
     doc: https://www.btcmarkets.net/faq#q27
     exception: "A mobile phone number is required to reset two-factor authentication."
 
@@ -273,7 +273,7 @@ websites:
     url: https://coinone.co.kr/
     img: coinone.png
     tfa:
-      - software
+      - totp
 
   - name: Coins.ph
     url: https://coins.ph/
