@@ -178,7 +178,7 @@ websites:
       - totp
       - hardware
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
-    exception: "NFC keys unsupported."
+    exception: "NFC security keys cannot currently be used on iOS for Google accounts."
 
   - name: Google Fiber (Google account)
     url: https://fiber.google.com/
@@ -190,7 +190,7 @@ websites:
       - proprietary
       - hardware
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
-    exception: "NFC keys unsupported."
+    exception: "NFC security keys cannot currently be used on iOS for Google accounts."
 
   - name: Halebop
     url: https://www.halebop.se/
