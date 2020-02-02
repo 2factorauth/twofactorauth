@@ -345,19 +345,19 @@ websites:
       - sms
     doc: https://support.ubi.com/en-GB/Faqs/000039953
 
-  - name: Wargaming
-    url: https://wargaming.net/
-    tfa:
-      - totp
-    img: wargaming.png
-    doc: https://eu.wargaming.net/support/en/products/wot/article/10568/
-
   - name: Warframe
     url: https://www.warframe.com
     img: warframe.png
     tfa:
       - email
     doc: https://digitalextremes.zendesk.com/hc/en-us/articles/360028551411-Warframe-Two-Factor-Authentication-FAQ
+
+  - name: Wargaming
+    url: https://wargaming.net/
+    tfa:
+      - totp
+    img: wargaming.png
+    doc: https://eu.wargaming.net/support/en/products/wot/article/10568/
 
   - name: Wizard101
     url: https://www.wizard101.com
