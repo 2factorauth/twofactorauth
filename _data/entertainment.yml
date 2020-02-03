@@ -187,7 +187,7 @@ websites:
       - sms
       - proprietary
     doc: https://help.twitch.tv/s/article/two-factor-authentication-with-authy
-    exception: "To activate two factor authentication, you must provide a mobile phone number."
+    exception: "Requires a mobile phone number. Software authentication only supported via Authy."
 
   - name: Vimeo
     url: https://vimeo.com/
