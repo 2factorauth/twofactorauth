@@ -47,6 +47,12 @@ websites:
       - totp
     doc: https://blogg.binero.se/2017/10/tvafaktorsautentisering/
 
+  - name: BitLaunch
+    url: https://bitlaunch.io
+    img: bitlaunch.png
+    tfa:
+      - totp
+
   - name: Blacknight
     url: https://blacknight.com
     img: blacknight.png
