@@ -8,11 +8,6 @@ websites:
       - totp
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
-  - name: Aerohive Networks
-    url: https://www.aerohive.com/
-    img: aerohive.png
-    twitter: Aerohive
-
   - name: Ancestry
     url: https://www.ancestry.com
     img: ancestry.png
@@ -69,7 +64,15 @@ websites:
     img: ca-technologies.png
     twitter: CAinc
     facebook: CATechnologies
-
+    
+  - name: Canva
+    url: https://www.canva.com
+    img: canva.png
+    tfa:
+      - sms
+    doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
+    exception: "2FA only available for Australian customers."
+    
   - name: Chartbeat
     url: https://chartbeat.com/
     img: chartbeat.png
@@ -151,6 +154,12 @@ websites:
     tfa:
       - totp
     doc: https://help.market.envato.com/hc/en-us/articles/115005592963
+
+  - name: Extreme Networks
+    url: https://www.extremenetworks.com/
+    img: extremenetworks.png
+    twitter: ExtremeNetworks
+    facebook: extremenetworks
 
   - name: Figma
     url: https://www.figma.com/
@@ -372,6 +381,12 @@ websites:
     tfa:
       - totp
     doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
+
+  - name: Opera
+    url: https://auth.opera.com
+    img: opera.png
+    tfa:
+      - totp
 
   - name: Pastebin
     url: https://pastebin.com

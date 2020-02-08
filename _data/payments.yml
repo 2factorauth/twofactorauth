@@ -24,15 +24,6 @@ websites:
       - hardware
     doc: https://articles.braintreepayments.com/reference/security/two-factor-authentication
 
-  - name: Buycraft
-    url: https://buycraft.net
-    img: buycraft.png
-    tfa:
-      - sms
-      - totp
-    doc: https://help.buycraft.net/article/83-two-factor-authentication
-    exception: "SMS-capable phone required."
-
   - name: Chargebee
     url: https://www.chargebee.com/
     img: chargebee.png
@@ -204,11 +195,13 @@ websites:
       - hardware
     doc: https://support.stripe.com/questions/how-do-i-enable-two-step-verification
 
-  - name: Vantiv
-    url: https://www.vantiv.com/
-    twitter: Vantiv
-    facebook: Vantiv
-    img: vantiv.png
+  - name: Tebex
+    url: https://www.tebex.io/
+    img: tebex.png
+    tfa:
+      - email
+      - totp
+    doc: https://help.tebex.io/en/articles/2319372
 
   - name: Venmo
     url: https://venmo.com
@@ -229,6 +222,22 @@ websites:
       - sms
       - totp
     doc: https://support.wepay.com/hc/en-us/articles/203609693
+
+  - name: Western Union
+    url: https://www.westernunion.com/
+    img: westernunion.png
+    tfa:
+      - sms
+      - phone
+      - proprietary
+    doc: https://business.westernunion.com/en-us/product-documents/tfa-overview/Set-up-two-Factor
+    exception: "2FA is only available for business accounts."
+
+  - name: Worldpay
+    url: https://www.worldpay.com/
+    twitter: Worldpay_Global
+    facebook: worldpay
+    img: worldpay.png
 
   - name: Yandex.Money
     url: https://money.yandex.ru
