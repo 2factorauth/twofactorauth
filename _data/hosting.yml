@@ -108,12 +108,11 @@ websites:
     doc: https://support.cloudways.com/enabling-two-factor-authentication-for-your-cloudways-account/
 
   - name: Contabo
-    url: https://contabo.de/
+    url: https://contabo.com/
     img: contabo.png
-    twitter: ContaboCom
-    facebook: ContaboDe
-    email_address: support@contabo.de
-    lang: de
+    tfa:
+      - totp
+    doc: https://contabo.com/?show=faq#100
 
   - name: cyon
     url: https://www.cyon.ch

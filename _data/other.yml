@@ -202,8 +202,10 @@ websites:
   - name: Freelancer
     url: https://www.freelancer.com/
     img: freelancer.png
-    twitter: freelancer
-    facebook: fansoffreelancer
+    tfa:
+      - sms
+      - email
+    doc: https://www.freelancer.com/support/general/2-step-verification
 
   - name: GoFundMe
     url: https://www.gofundme.com/
