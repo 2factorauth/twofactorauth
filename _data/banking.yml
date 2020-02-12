@@ -9,7 +9,7 @@ websites:
     url: https://www.addiko.hr/
     img: addikobank.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://www.addiko.hr/static/uploads/mtoken-uputa-za-koristenje.pdf
 
@@ -18,7 +18,7 @@ websites:
     img: airbank.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://www.airbank.cz/co-vas-nejvic-zajima/jake-bezpecnostni-prvky-u-nas-mame
 
   - name: Alliant Credit Union
@@ -80,9 +80,17 @@ websites:
     url: https://www.avanza.se/
     img: avanza.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://www.avanza.se/kundservice.html/1335/tvafaktorsinloggning/d264248e-bea3-48a0-bf2d-157309734649
+
+  - name: Baden-Württembergische Bank
+    url: https://www.bw-bank.de/
+    img: bw-bank.png
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://meine.bw-bank.de/articles/am-14-september-tritt-psd2-in-kraft-was-bedeutet-das-fuer-sie
 
   - name: Banca Mediolanum
     url: https://www.bmedonline.it
@@ -98,6 +106,12 @@ websites:
       - hardware
     doc: https://www.bca.co.id/en/Individu/Produk/E-Banking/Klik-BCA
 
+  - name: Bank Hapoalim
+    url: https://www.bankhapoalim.co.il/
+    img: poalim.png
+    twitter: PoaliMarkeTweet
+    lang: he
+
   - name: Bank Leumi
     url: https://www.leumi.co.il/
     img: leumi.png
@@ -111,6 +125,7 @@ websites:
     tfa:
       - sms
       - email
+    doc: https://www.bankofamerica.com/security-center/online-banking/
 
   - name: Bank of China (Hong Kong)
     url: https://www.bochk.com/
@@ -118,6 +133,15 @@ websites:
     tfa:
       - hardware
     doc: https://www.bochk.com/en/security/2factorauthentication.html
+
+  - name: Bank of Scotland
+    url: https://www.bankofscotland.co.uk
+    img: bankofscotland.png
+    tfa:
+      - proprietary
+      - phone
+      - sms
+    doc: https://www.bankofscotland.co.uk/aboutonline/changes-to-internet-banking.html
 
   - name: Barclays UK
     url: https://www.barclays.co.uk/
@@ -211,15 +235,21 @@ websites:
     img: caisse_epargne.png
     lang: fr
 
+  - name: Caixadirecta
+    url: https://www.cgd.pt/
+    tfa: 
+      - sms
+    doc: https://www.cgd.pt/Ajuda/Seguranca/Pages/Autenticacao-Dupla-SMS-Token.aspx
+    img: caixa_directa.png
+
   - name: Capital One
     url: https://www.capitalone.com/
     img: capitalone.png
     tfa:
       - sms
       - email
-      - software
+      - proprietary
     doc: https://www.capitalone.com/identity-protection/swiftid/
-    exception: "Software implementation requires use of Capital One app."
 
   - name: CDC Federal Credit Union
     url: https://www.cdcfcu.com
@@ -232,9 +262,8 @@ websites:
     img: csas-cz.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://www.csas.cz/cs/mobilni-aplikace/george-klic
-    exception: "Software implementation requires use of George Klic app."
 
   - name: Chase
     url: https://www.chase.com/
@@ -340,6 +369,15 @@ websites:
       - hardware
     doc: https://www.dbs.com.sg/personal/deposits/security-and-you/we-protect-you.page#slideToN10051
 
+  - name: Degussa Bank
+    url: https://www.degussa-bank.de/
+    img: degussa.png
+    tfa:
+      - hardware
+      - sms
+      - proprietary
+    doc: https://www.degussa-bank.de/apptan-verfahren
+
   - name: Desert Financial Credit Union
     url: https://www.desertfinancial.com
     img: desertfinancialcu.png
@@ -399,8 +437,9 @@ websites:
     url: https://www.dnb.no/
     img: dnb.png
     tfa:
-      - software
+      - proprietary
       - hardware
+      - sms
     doc: https://www.dnb.no/privat/kundeservice/innlogging-nettbank.html
 
   - name: Dutch-Bangla Bank Limited (DBBL)
@@ -419,16 +458,9 @@ websites:
     url: https://www.erstebank.hr/
     img: erstehr.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www.erstebank.hr/content/dam/hr/ebc/www_erstebank_hr/gradani/downloads/e-bankarstvo/Upute%20za%20prijavu.pdf
-
-  - name: everbank.com
-    url: https://everbank.com
-    img: everbank.png
-    tfa:
-      - sms
-      - phone
 
   - name: Fairwinds
     url: https://www.fairwinds.org
@@ -465,7 +497,7 @@ websites:
     url: https://www1.firstdirect.com/
     img: firstdirect.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www1.firstdirect.com/help/secure-key/
 
@@ -482,7 +514,7 @@ websites:
     url: https://www.firsttechfed.com/
     img: firsttechfcu.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www.firsttechfed.com/Tools-and-Resources/Tools-and-Resources/What-You-Can-Do-To-Protect-Your-Privacy#3
 
@@ -503,17 +535,27 @@ websites:
 
   - name: Halifax
     url: https://www.halifax.co.uk
-    twitter: AskHalifaxBank
-    facebook: halifax
     img: halifax.png
+    tfa:
+      - proprietary
+      - phone
+      - sms
+    doc: https://www.halifax.co.uk/aboutonline/changes-to-online-banking/
 
   - name: Handelsbanken
     url: https://www.handelsbanken.se/
     img: handelsbanken.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www.handelsbanken.se/shb/INeT/ICentSv.nsf/Default/qAE99695C4C1D033DC12579120036EB43?Opendocument
+
+  - name: Hanseatic Bank
+    url: https://www.hanseaticbank.de/
+    img: hanseatic.png
+    tfa:
+      - sms
+    doc: https://www.hanseaticbank.de/services/hilfe-services/psd2
 
   - name: Holvi
     url: https://www.holvi.com/
@@ -573,7 +615,10 @@ websites:
   - name: ING-DiBa Austria
     url: https://www.ing.at
     img: ingdibaaustria.png
-    lang: de
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.ing.at/haeufige-fragen-faq/pin-zugangsdaten
 
   - name: ING-DiBa Deutschland
     url: https://www.ing.de
@@ -589,6 +634,13 @@ websites:
       - hardware
     doc: https://www.intesasanpaolo.com/it/common/footer/sicurezza.html
 
+  - name: Jovia Financial
+    url: https://www.joviafinancial.com/
+    img: jovia.png
+    tfa:
+      - sms
+      - phone
+
   - name: KeyBank
     url: https://www.key.com
     twitter: KeyBank_Help
@@ -600,13 +652,12 @@ websites:
     facebook: labanquepostale
     img: labanquepostale.png
     lang: fr
-    
+
   - name: Lake Michigan Credit Union
     url: https://www.lmcu.org/
     img: lakemichigancreditunion.png
     tfa:
       - proprietary
-    exception: "Software authentication requires Lake Michigan Credit Union Mobile App on Android or IOS"
     doc: https://www.lmcu.org/personal/banking/services/mobile-authenticator/
 
   - name: LendingClub
@@ -631,15 +682,18 @@ websites:
 
   - name: Lloyds Bank
     url: https://www.lloydsbank.com/
-    twitter: AskLloydsBank
-    facebook: lloydsbank
     img: lloydsbank.png
+    tfa:
+      - proprietary
+      - phone
+      - sms
+    doc: https://www.lloydsbank.com/online-banking/changes-to-internet-banking.asp
 
   - name: Länsförsäkringar
     url: https://www.lansforsakringar.se/
     img: lansforsakringar.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www.lansforsakringar.se/privat/att-vara-kund/digitala-tjanster-telefonbank/internetbanken/
 
@@ -727,15 +781,8 @@ websites:
     img: navyfederal.png
     tfa:
       - email
-      - software
+      - proprietary
     doc: https://nfcucloud.custhelp.com/app/answers/list/c/543
-
-  - name: NEFCU
-    url: https://www.mynefcu.org/
-    img: nefcu.png
-    twitter: mynefcu
-    facebook: NEFCU
-    email_address: info@mynefcu.org
 
   - name: netbank
     url: https://www.netbank.de/
@@ -749,7 +796,7 @@ websites:
     url: https://www.nordea.se/
     img: nordea.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www.nordea.se/privat/vardagstjanster/internet-mobil-telefon/bank-id.html
 
@@ -763,7 +810,7 @@ websites:
     url: https://www.nordnet.se/
     img: nordnet.png
     tfa:
-      - software
+      - proprietary
     exception: "TFA only available for Swedish residents with BankID."
 
   - name: Northeast Credit Union
@@ -796,7 +843,7 @@ websites:
     url: https://www.otpbanka.hr/
     img: otpbanka.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www.otpbanka.hr/hr/upute/otp-token-upute-za-koristenje
 
@@ -829,7 +876,7 @@ websites:
     url: https://www.poba.hr/
     img: podravska.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www.poba.hr/get_file.php?d=pobaklik__upute_gradani.pdf
 
@@ -874,6 +921,13 @@ websites:
     facebook: RegionsBank
     img: regionsbank.png
 
+  - name: Royal Bank of Scotland
+    url: https://rbs.co.uk/
+    img: rbs.png
+    tfa:
+      - sms
+    doc: https://personal.rbs.co.uk/personal/fraud-and-security/sca.html
+
   - name: SAFE Credit Union
     url: https://safecu.org
     img: safecu.png
@@ -917,9 +971,16 @@ websites:
     img: santander.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://santander.pl/firmy/bankowosc-elektroniczna/bzwbk24-mini-firma/metody-autoryzacji/metody-autoryzacji.html
-    exception: "Software authentication only available via Santander mobile."
+
+  - name: Santander PT
+    url: https://www.santandertotta.pt/
+    img: santander.png
+    twitter: santanderpt
+    facebook: santanderpt
+    email_address: netbancoparticulares@santander.pt
+    lang: pt
 
   - name: Santander UK
     url: https://www.santander.co.uk
@@ -948,7 +1009,7 @@ websites:
     url: https://seb.se/
     img: seb.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://seb.se/privat/digitala-tjanster
 
@@ -981,7 +1042,6 @@ websites:
     img: sofi.png
     tfa:
       - sms
-      - software
     doc: https://www.sofi.com/blog/introducing-two-step-verification-sofi-next-level-account-protection/
 
   - name: Sparda Banken
@@ -1012,7 +1072,7 @@ websites:
     img: sbi.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://www.onlinesbi.com/sbijava/mobile/sbsecure_otp_app_faq.html
 
   - name: State Employees Credit Union
@@ -1040,9 +1100,9 @@ websites:
     url: https://www.swedbank.se/
     img: swedbank.png
     tfa:
-      - software
+      - proprietary
       - hardware
-    doc: https://hjalp.swedbank.se/logga-in/index.htm
+    doc: https://www.swedbank.se/foretag/digitala-tjanster/mobilt-bankid/fragor-och-svar-om-mobilt-bankid.html
 
   - name: Synchrony Bank
     url: https://www.synchronybank.com
@@ -1072,7 +1132,7 @@ websites:
     img: tbcbank.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://www.tbcbank.ge/web/en/web/guest/tbc-digipass
 
   - name: TD Bank
@@ -1096,6 +1156,14 @@ websites:
     twitter: tescobankhelp
     facebook: tesco.bank
     img: tescobank.png
+
+  - name: TIAA Bank
+    url: https://www.tiaabank.com
+    img: tiaabank.png
+    tfa:
+      - sms
+      - phone
+    doc: https://www.tiaabank.com/security?solutions=security-tools
 
   - name: Tower Federal Credit Union
     url: https://www.towerfcu.org/
@@ -1159,7 +1227,7 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - proprietary
     doc: https://www.usaa.com/inet/pages/security_token_logon_options
 
   - name: UW Credit Union
@@ -1168,7 +1236,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
     doc: https://www.uwcu.org/OnlineBanking/OnlineSecurity/VerifyU.aspx
 
   - name: VyStar Credit Union
@@ -1211,7 +1279,7 @@ websites:
     url: https://www.zaba.hr/
     img: zagrebacka.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www.zaba.hr/home/token#pan3
 
@@ -1219,10 +1287,9 @@ websites:
     url: https://www.zkb.ch/
     img: zkb.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www.zkb.ch/de/pr/pk/efinance/ebanking/login-verfahren.html
-    exception: "Software & Hardware authentication requires the ZKB photoTAN app or PhotoTAN device."
 
   - name: ČSOB (Czech)
     url: https://www.csob.cz/
@@ -1230,5 +1297,4 @@ websites:
     tfa:
       - sms
       - proprietary
-    exception: "Software implementation requires use of ČSOB Smart Key app."
     doc: https://www.csob.cz/portal/people/accounts/internet-and-mobile-banking/csob-smart-key
