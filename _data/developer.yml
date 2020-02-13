@@ -59,6 +59,13 @@ websites:
     facebook: balsamiq
     img: balsamiq.png
 
+  - name: Batch
+    url: https://batch.com
+    img: batch.png
+    tfa:
+      - totp
+    doc: https://help.batch.com/en/articles/2721053
+
   - name: Bintray
     url: https://bintray.com/
     img: bintray.png
