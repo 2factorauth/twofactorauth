@@ -223,6 +223,16 @@ websites:
       - totp
     doc: https://support.wepay.com/hc/en-us/articles/203609693
 
+  - name: Western Union
+    url: https://www.westernunion.com/
+    img: westernunion.png
+    tfa:
+      - sms
+      - phone
+      - proprietary
+    doc: https://business.westernunion.com/en-us/product-documents/tfa-overview/Set-up-two-Factor
+    exception: "2FA is only available for business accounts."
+
   - name: Worldpay
     url: https://www.worldpay.com/
     twitter: Worldpay_Global
