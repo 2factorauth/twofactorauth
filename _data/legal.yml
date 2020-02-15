@@ -12,7 +12,7 @@ websites:
     url: https://www.clio.com
     img: clio.png
     tfa:
-      - software
+      - totp
     doc: https://support.clio.com/hc/en-us/articles/203184210
 
   - name: Cosmolex
@@ -29,7 +29,7 @@ websites:
       - sms
       - phone
       - email
-      - software
+      - totp
     doc: https://support.docusign.com/en/guides/ndse-user-guide-two-step-verification
 
   - name: Everlaw
@@ -37,7 +37,7 @@ websites:
     img: everlaw.png
     tfa:
       - email
-      - software
+      - totp
     doc: https://support.everlaw.com/hc/en-us/articles/206312165
 
   - name: HelloSign
@@ -45,6 +45,6 @@ websites:
     img: hellosign.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://faq.hellosign.com/hc/en-us/articles/360025164091
     exception: "SMS Two-factor authentication is only available to paid Business plan senders and above."

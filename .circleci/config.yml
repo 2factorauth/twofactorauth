@@ -10,7 +10,7 @@ jobs:
       - run:
           name: Check Twitter handles
           command: |
-            gem i twitter -q --no-suggest --minimal-deps
+            gem i twitter --no-post-install-message --no-suggestions --minimal-deps --no-verbose -N -q
             bash twitter.sh
           working_directory: ./.tests
 

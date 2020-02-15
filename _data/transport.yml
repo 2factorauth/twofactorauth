@@ -81,7 +81,7 @@ websites:
     img: finnair.png
     tfa:
       - sms
-      - software
+      - proprietary
 
   - name: Frontier
     url: https://www.flyfrontier.com
@@ -112,6 +112,12 @@ websites:
     twitter: JetBlue
     facebook: JetBlue
     img: jetblue.png
+
+  - name: LNER
+    url: https://www.lner.co.uk
+    twitter: LNER
+    facebook: LNERail
+    img: lner.png
 
   - name: Lufthansa
     url: https://www.lufthansa.com
@@ -245,7 +251,7 @@ websites:
     img: uber.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.uber.com/h/b8bb9152-8c91-4f49-83c4-35cf2e1dcf72
 
   - name: United
