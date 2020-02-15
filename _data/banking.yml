@@ -106,6 +106,15 @@ websites:
       - hardware
     doc: https://www.bca.co.id/en/Individu/Produk/E-Banking/Klik-BCA
 
+- name: Banco Galicia
+    url: https://www.bancogalicia.com
+    img: bancogalicia.png
+    tfa:
+      - propietary
+    doc: https://www.bancogalicia.com/banca/online/web/Personas/ProductosyServicios/preguntas-frecuentes-token
+    exception: “Only required for high risk transactions, not for accessing the online banking.”
+    lang: es
+
   - name: Bank Hapoalim
     url: https://www.bankhapoalim.co.il/
     img: poalim.png
@@ -173,6 +182,15 @@ websites:
       - proprietary
       - hardware
     doc: https://www.bbbank.de/produkte/konten-und-karten/online-banking/tan-verfahren.html
+
+  - name: BBVA Argentina
+    url: https://www.bbva.com.ar
+    img: bbvaargentina.png
+    tfa:
+      - sms       - propietary
+    doc: https://www.bbva.com.ar/personas/preguntas-frecuentes/landings/factores-de-seguridad.html
+    exception: “Only required for high risk transactions, not for accessing the online banking.”
+    lang: es
 
   - name: BBVA Compass
     url: https://www.bbvacompass.com/
@@ -592,6 +610,15 @@ websites:
     facebook: IberiaBank
     img: iberiabank.png
 
+  - name: ICBC AR
+    url: https://www.icbc.com.ar
+    img: icbc.png
+    tfa:
+      - propietary
+    doc: https://www.icbc.com.ar/personas/como-ayudarte/finanzas/Token-un-aliado-que-te-garantiza-doble-proteccion-en-online-banking
+    exception: “Only required for high risk transactions, not for accessing the online banking.”
+    lang: es
+
   - name: ICICI
     url: https://www.icicibank.com
     img: icici.png
@@ -957,6 +984,14 @@ websites:
     twitter: SCCFCU
     facebook: SCCFCU
     img: sccfcu.png
+
+  - name: Santander AR
+    url: https://www.santander.com.ar/
+    img: santander.png
+    tfa:       - propietary
+    doc: https://www.santander.com.ar/banco/online/personas/pagar-y-transferir/token-de-seguridad/faq
+    exception: “Only required for high risk transactions, not for accessing the online banking.”
+    lang: es
 
   - name: Santander BR
     url: https://www.santander.com.br/
