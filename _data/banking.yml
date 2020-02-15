@@ -110,7 +110,7 @@ websites:
     url: https://www.bancogalicia.com
     img: bancogalicia.png
     tfa:
-      - propietary
+      - proprietary
     doc: https://www.bancogalicia.com/banca/online/web/Personas/ProductosyServicios/preguntas-frecuentes-token
     exception: “Only required for high risk transactions, not for accessing the online banking.”
     lang: es
@@ -187,7 +187,8 @@ websites:
     url: https://www.bbva.com.ar
     img: bbvaargentina.png
     tfa:
-      - sms       - propietary
+      - sms
+      - proprietary
     doc: https://www.bbva.com.ar/personas/preguntas-frecuentes/landings/factores-de-seguridad.html
     exception: “Only required for high risk transactions, not for accessing the online banking.”
     lang: es
@@ -614,7 +615,7 @@ websites:
     url: https://www.icbc.com.ar
     img: icbc.png
     tfa:
-      - propietary
+      - proprietary
     doc: https://www.icbc.com.ar/personas/como-ayudarte/finanzas/Token-un-aliado-que-te-garantiza-doble-proteccion-en-online-banking
     exception: “Only required for high risk transactions, not for accessing the online banking.”
     lang: es
@@ -988,7 +989,8 @@ websites:
   - name: Santander AR
     url: https://www.santander.com.ar/
     img: santander.png
-    tfa:       - proprietary
+    tfa:
+      - proprietary
     doc: https://www.santander.com.ar/banco/online/personas/pagar-y-transferir/token-de-seguridad/faq
     exception: “Only required for high risk transactions, not for accessing the online banking.”
     lang: es
