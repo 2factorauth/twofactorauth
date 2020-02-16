@@ -561,7 +561,10 @@ websites:
     img: twilio.png
     tfa:
       - sms
-    doc: https://www.twilio.com/help/faq/twilio-basics/what-happens-when-i-enable-two-factor-authentication
+      - phone
+      - software
+    doc: https://support.twilio.com/hc/en-us/articles/223136307-Enabling-two-factor-authentication-on-your-Twilio-project
+    exception: Software authentication requires the Authy app.
 
   - name: Unfuddle
     url: https://unfuddle.com/
