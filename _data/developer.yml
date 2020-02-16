@@ -561,7 +561,9 @@ websites:
     img: twilio.png
     tfa:
       - sms
-    doc: https://www.twilio.com/help/faq/twilio-basics/what-happens-when-i-enable-two-factor-authentication
+      - phone
+      - proprietary
+    doc: https://support.twilio.com/hc/en-us/articles/223136307
 
   - name: Unfuddle
     url: https://unfuddle.com/
