@@ -446,6 +446,13 @@ websites:
       - totp
     doc: https://support.stackpath.com/hc/en-us/articles/360022992631
 
+  - name: Swizzonic
+    url: https://switchplus.ch/
+    img: swizzonic.png
+    tfa:
+      - sms
+    doc: https://switchie.ch/en/2-factor-authentication-2fa/
+
   - name: Time4VPS
     url: https://www.time4vps.eu/
     img: time4vps.png
