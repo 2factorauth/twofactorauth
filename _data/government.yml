@@ -1,4 +1,13 @@
 websites:
+  - name: AFIP
+    url: https://www.afip.gob.ar
+    img: afip.png
+    tfa:
+      - hardware
+      - proprietary
+    doc: https://serviciosweb.afip.gob.ar/genericos/GuiaDeTramites/VerGuia.aspx?tr=38
+    exception: "2FA is only available for users with security level (Clave Fiscal) 4"
+
   - name: Agenzia delle Entrate
     url: https://www.agenziaentrate.gov.it/
     img: agenziaentrate.png
