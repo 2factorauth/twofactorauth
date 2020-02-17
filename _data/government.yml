@@ -6,7 +6,7 @@ websites:
       - hardware
       - proprietary
     doc: https://serviciosweb.afip.gob.ar/genericos/GuiaDeTramites/VerGuia.aspx?tr=38
-    exception: "2FA is required for users with Clave Fiscal (security level) 4"
+    exception: "2FA is only available for users with security level (Clave Fiscal) 4"
 
   - name: Agenzia delle Entrate
     url: https://www.agenziaentrate.gov.it/
