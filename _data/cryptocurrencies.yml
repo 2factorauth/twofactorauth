@@ -6,6 +6,14 @@ websites:
       - totp
     doc: https://support.anycoindirect.eu/hc/en-gb/articles/115001423191
 
+  - name: Bcnex
+    url: https://www.bcnex.net/
+    img: bcnex.png
+    tfa:
+      - totp
+      - sms
+    doc: https://support.bcnex.net/hc/en-us/articles/360019419173
+
   - name: Binance
     url: https://www.binance.com/
     img: binance.png
@@ -59,25 +67,32 @@ websites:
     url: https://www.bitgo.com
     img: bitgo.png
     tfa:
-      - software
+      - totp
       - hardware
-    doc: https://bitgo.freshdesk.com/support/solutions/articles/27000037397
+      - u2f
 
   - name: Bithumb
     url: https://www.bithumb.com/
     img: bithumb.png
     tfa:
       - sms
-      - software
-    doc: https://bithumb.cafe/archives/7286
+      - totp
+    doc: https://en.bithumb.com/customer_support/info_guide?seq=510
 
   - name: Bitlish
     url: https://bitlish.com
     img: bitlish.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://bitlish.com/how#mfa
+
+  - name: Bitpanda
+    url: https://www.bitpanda.com/
+    img: bitpanda.png
+    tfa:
+      - totp
+    doc: https://support.bitpanda.com/hc/en-us/articles/360002015220
 
   - name: Bitpay
     url: https://bitpay.com
@@ -134,7 +149,7 @@ websites:
     url: https://www.btcmarkets.net/
     img: btcmarkets.png
     tfa:
-      - software
+      - totp
     doc: https://www.btcmarkets.net/faq#q27
     exception: "A mobile phone number is required to reset two-factor authentication."
 
@@ -258,7 +273,7 @@ websites:
     url: https://coinone.co.kr/
     img: coinone.png
     tfa:
-      - software
+      - totp
 
   - name: Coins.ph
     url: https://coins.ph/
@@ -287,6 +302,15 @@ websites:
     tfa:
       - totp
     doc: https://help.coinut.com/hc/en-us/articles/360005061354
+
+  - name: Cryptonator
+    url: https://www.cryptonator.com
+    img: cryptonator.png
+    tfa:
+      - totp
+      - proprietary
+      - sms
+    doc: https://cryptonator.zendesk.com/hc/en-us/articles/201715352
 
   - name: DSX
     url: https://dsx.uk/
@@ -370,6 +394,13 @@ websites:
     tfa:
       - totp
     doc: https://suporte.mercadobitcoin.com.br/hc/pt-br/articles/360000385152
+
+  - name: PayKassa
+    url: https://paykassa.pro/
+    img: paykassa.png
+    tfa:
+      - totp
+    doc: https://paykassa.pro/en/news/s-paykassa-vashi-dannye-pod-nadejnoy-zashchitoy/
 
   - name: Poloniex
     url: https://poloniex.com/
