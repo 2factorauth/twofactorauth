@@ -1,4 +1,11 @@
 websites:
+  - name: ActiveState
+    url: https://www.activestate.com
+    img: activestate.png
+    tfa:
+      - totp
+    doc: https://docs.activestate.com/platform/prefs/twofactor.html
+
   - name: Aha!
     url: https://www.aha.io/
     img: aha.png
@@ -58,6 +65,13 @@ websites:
     twitter: balsamiq
     facebook: balsamiq
     img: balsamiq.png
+
+  - name: Batch
+    url: https://batch.com
+    img: batch.png
+    tfa:
+      - totp
+    doc: https://help.batch.com/en/articles/2721053
 
   - name: Bintray
     url: https://bintray.com/
@@ -554,7 +568,9 @@ websites:
     img: twilio.png
     tfa:
       - sms
-    doc: https://www.twilio.com/help/faq/twilio-basics/what-happens-when-i-enable-two-factor-authentication
+      - phone
+      - proprietary
+    doc: https://support.twilio.com/hc/en-us/articles/223136307
 
   - name: Unfuddle
     url: https://unfuddle.com/

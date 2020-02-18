@@ -103,6 +103,13 @@ websites:
       - hardware
     doc: https://onelogin.service-now.com/support?id=kb_article&sys_id=43d99143db109700d5505eea4b96197a
 
+  - name: ORCID
+    url: https://orcid.org/
+    img: orcid.png
+    tfa:
+      - totp
+    doc: https://support.orcid.org/hc/en-us/articles/360006971673
+
   - name: PassHub
     url: https://passhub.net/
     img: passhub.png
