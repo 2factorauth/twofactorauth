@@ -3,7 +3,6 @@ websites:
     url: https://aws.amazon.com
     img: aws.png
     tfa:
-      - sms
       - totp
       - hardware
       - u2f
