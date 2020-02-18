@@ -1,12 +1,9 @@
 websites:
   - name: 500px
-    url: https://500px.com/
+    url: https://web.500px.com/
+    twitter: 500px
+    facebook: 500px
     img: 500px.png
-    tfa:
-      - sms
-      - totp
-    doc: https://support.500px.com/hc/en-us/articles/205115877
-    exception: "A verified phone number is required for the use of two-factor authentication software."
 
   - name: about.me
     url: https://about.me
@@ -215,7 +212,7 @@ websites:
     img: reddit.png
     tfa:
       - totp
-    doc: https://www.reddithelp.com/en/categories/using-reddit/your-reddit-account/how-set-two-factor-authentication
+    doc: https://www.reddithelp.com/en/categories/privacy-security/account-security/what-two-factor-authentication-and-how-do-i-set-it
 
   - name: Short.cm
     url: https://short.cm/
@@ -236,6 +233,7 @@ websites:
     url: https://stackexchange.com/
     img: stack_exchange.png
     email_address: team@stackexchange.com
+    twitter: StackExchange
 
   - name: Tumblr
     url: https://www.tumblr.com/

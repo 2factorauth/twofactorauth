@@ -64,7 +64,15 @@ websites:
     img: ca-technologies.png
     twitter: CAinc
     facebook: CATechnologies
-
+    
+  - name: Canva
+    url: https://www.canva.com
+    img: canva.png
+    tfa:
+      - sms
+    doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
+    exception: "2FA only available for Australian customers."
+    
   - name: Chartbeat
     url: https://chartbeat.com/
     img: chartbeat.png
@@ -194,8 +202,10 @@ websites:
   - name: Freelancer
     url: https://www.freelancer.com/
     img: freelancer.png
-    twitter: freelancer
-    facebook: fansoffreelancer
+    tfa:
+      - sms
+      - email
+    doc: https://www.freelancer.com/support/general/2-step-verification
 
   - name: GoFundMe
     url: https://www.gofundme.com/
@@ -221,6 +231,14 @@ websites:
     tfa:
       - totp
     doc: https://docs.growingio.com/docs/product-manual/sysmanage/personal/security#kai-qi-er-ci-yan-zheng
+
+  - name: Heise online
+    url: https://www.heise.de/
+    img: heise.png
+    twitter: heiseonline
+    facebook: heiseonline
+    email_address: webmaster@heise.de
+    lang: de
 
   - name: Help Scout
     url: https://helpscout.com
@@ -373,6 +391,12 @@ websites:
     tfa:
       - totp
     doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
+
+  - name: Opera
+    url: https://auth.opera.com
+    img: opera.png
+    tfa:
+      - totp
 
   - name: Pastebin
     url: https://pastebin.com

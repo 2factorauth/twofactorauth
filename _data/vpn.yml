@@ -41,8 +41,9 @@ websites:
   - name: IVPN
     url: https://www.ivpn.net/
     img: ivpn.png
-    twitter: ivpnnet
-    email_address: support@ivpn.net
+    tfa:
+      - totp
+    doc: https://www.ivpn.net/knowledgebase/232/Do-you-offer-Two-Factor-Authentication.html
 
   - name: NordVPN
     url: https://nordvpn.com
