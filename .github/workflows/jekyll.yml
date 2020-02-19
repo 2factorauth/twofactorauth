@@ -21,8 +21,11 @@ jobs:
 
     - name: Run Bundler
       run: |
+        echo --- list vendor/cache ---
+        ls -la vendor/cache
         echo --- Install bundle dependencies ---
         bundle install --path vendor/cache
+        echo --- Package bundle gems ---
         [ -d "vendor/cache" ] || { bundle package; }
 
     - name: Build site
