@@ -13,7 +13,7 @@ jobs:
       id: cache
       uses: actions/cache@v1
       with:
-        path: vendor/bundle
+        path: vendor/cache
         key: ${{ runner.os }}-bundle
 
     - name: Install requirements
@@ -29,7 +29,7 @@ jobs:
         ls -la vendor
         echo --- Install bundle dependencies ---
         bundle install --path vendor/cache
-        bundle package
+        [ -d "vendor/cache" ] || { bundle package; }
 
     - name: Build site
       run: bundle exec jekyll build
