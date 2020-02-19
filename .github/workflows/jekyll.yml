@@ -14,19 +14,15 @@ jobs:
       uses: actions/cache@v1
       with:
         path: vendor/cache
-        key: ${{ runner.os }}-bundle
+        key: ${{ runner.os }}-bundle-2
 
     - name: Install requirements
       run: sudo snap install ruby --classic
 
     - name: Run Bundler
       run: |
-        echo --- Ruby version ---
-        ruby -v
-        echo --- Bundle env ---
-        bundle env
         echo --- ls vendor directory ---
-        ls -la vendor
+        ls -la vendor/cache
         echo --- Install bundle dependencies ---
         bundle install --path vendor/cache
         [ -d "vendor/cache" ] || { bundle package; }
