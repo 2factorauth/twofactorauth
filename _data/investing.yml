@@ -8,16 +8,22 @@ websites:
     url: https://www.youinvest.co.uk/
     img: youinvest.png
     tfa:
-      - software
+      - totp
     doc: https://www.youinvest.co.uk/faq/how-do-i-set-two-factor-authentication
+
+  - name: Axos Invest
+    url: https://www.axosinvest.com/
+    twitter: AxosInvest
+    img: axosinvest.png
 
   - name: Betterment
     url: https://www.betterment.com/
     img: betterment.png
     tfa:
       - sms
-      - software
-    doc: https://help.betterment.com/hc/en-us/articles/115004260006
+      - phone
+      - totp
+    doc: https://www.betterment.com/resources/understanding-account-security/#3
 
   - name: Capital Group / American Funds
     url: https://www.capitalgroup.com/
@@ -32,7 +38,7 @@ websites:
     img: charlesschwab.png
     tfa:
       - sms
-      - software
+      - proprietary
       - hardware
     doc: "/notes/schwab/"
 
@@ -45,9 +51,9 @@ websites:
     url: https://www.etrade.com/
     img: etrade.png
     tfa:
-      - software
+      - proprietary
       - hardware
-    doc: https://us.etrade.com/landing/secureid_enter
+    doc: https://us.etrade.com/security-center/securityid
 
   - name: Fidelity Investments
     url: https://www.fidelity.com
@@ -55,7 +61,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
       - hardware
     doc: https://www.fidelity.com/security/how-two-factor-authentication-works
     exception: "Specific support varies between account types"
@@ -77,9 +83,11 @@ websites:
     url: https://www.interactivebrokers.com
     img: interactivebrokers.png
     tfa:
-      - software
+      - sms
+      - proprietary
       - hardware
     doc: https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log
+    exception: "SMS 2FA only works as long as no other method has been enabled."
 
   - name: John Hancock Pensions
     url: https://www.jhancockpensions.com
@@ -100,6 +108,13 @@ websites:
       - sms
     doc: https://github.com/2factorauth/twofactorauth/issues/2275
 
+  - name: Mintos
+    url: https://www.mintos.com/
+    img: mintos.png
+    tfa:
+      - totp
+    doc: https://help.mintos.com/hc/en-us/sections/360000373858
+
   - name: MotifInvesting
     url: https://www.motifinvesting.com/
     img: motif.png
@@ -112,7 +127,7 @@ websites:
     url: https://www.nutmeg.com/
     img: nutmeg.png
     tfa:
-      - software
+      - totp
     doc: https://support.nutmeg.com/hc/en-us/articles/115000495111
 
   - name: Personal Capital
@@ -134,7 +149,7 @@ websites:
     img: questrade.png
     tfa:
       - sms
-      - email
+    doc: https://questrade-support.secure.force.com/mylearning/view/h/Account/Account-security-centre/
 
   - name: Raizers
     url: https://www.raizers.com
@@ -151,7 +166,7 @@ websites:
     img: robinhood.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.robinhood.com/hc/en-us/articles/360001213783
 
   - name: SigFig
@@ -188,6 +203,11 @@ websites:
     twitter: TradeKing
     img: tradeking.png
 
+  - name: UniSuper
+    url: https://www.unisuper.com.au/
+    twitter: UniSuperNews
+    img: unisuper.png
+
   - name: Vanguard
     url: https://www.vanguard.com/
     img: vanguard.png
@@ -203,7 +223,7 @@ websites:
     img: wealthfront.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://support.wealthfront.com/hc/en-us/articles/211004563
 
   - name: Wealthsimple
@@ -211,10 +231,5 @@ websites:
     img: wealthsimple.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.wealthsimple.com/hc/en-ca/articles/360005175373
-
-  - name: WiseBanyan
-    url: https://www.wisebanyan.com/
-    twitter: WiseBanyan
-    img: wisebanyan.png
