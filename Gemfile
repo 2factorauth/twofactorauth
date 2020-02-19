@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '2.5.1'
+ruby '2.7.0'
 
 # Dependencies are bundled with the github-pages gem
 gem 'github-pages', group: :jekyll_plugins
