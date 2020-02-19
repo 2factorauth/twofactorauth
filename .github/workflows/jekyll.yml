@@ -20,7 +20,12 @@ jobs:
       run: sudo snap install ruby --classic
 
     - name: Run Bundler
-      run: bundle install --path vendor/bundle
+      run: |
+        ls -la vendor
+        ls -la vendor/bundle
+        ls -la vendor/ruby/2.5.0
+        ls -la vendor/ruby/2.5.0/cache
+        bundle install --path vendor/bundle
 
     - name: Build site
       run: bundle exec jekyll build
