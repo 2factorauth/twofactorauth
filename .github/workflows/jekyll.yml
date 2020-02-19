@@ -24,8 +24,8 @@ jobs:
         ls -la vendor
         ls -la vendor/bundle
         ls -la vendor/bundle/ruby
-        ls -la vendor/bundle/ruby/2.5.0
-        ls -la vendor/bundle/ruby/2.5.0/cache
+        ls -la vendor/bundle/ruby/2.6.0
+        ls -la vendor/bundle/ruby/2.6.0/cache
         bundle install --path vendor/bundle
 
     - name: Build site
