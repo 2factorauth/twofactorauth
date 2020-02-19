@@ -14,7 +14,7 @@ jobs:
       uses: actions/cache@v1
       with:
         path: vendor/bundle
-        key: ${{ runner.os }}-bundler
+        key: ${{ runner.os }}-bundle
 
     - name: Install requirements
       run: sudo snap install ruby --classic
@@ -25,17 +25,11 @@ jobs:
         ruby -v
         echo --- Bundle env ---
         bundle env
-        echo --- Copy 2.6 dir to 2.5 ---
-        cp vendor/bundle/ruby/2.6.0 vendor/bundle/ruby/2.5.0 -R
-        cp vendor/bundle/ruby/2.6.0 vendor/bundle/ruby/2.7.0 -R
         echo --- ls vendor directory ---
         ls -la vendor
-        ls -la vendor/bundle
-        ls -la vendor/bundle/ruby
-        ls -la vendor/bundle/ruby/2.5.0
-        ls -la vendor/bundle/ruby/2.5.0/cache
         echo --- Install bundle dependencies ---
-        bundle install --path vendor/bundle --local
+        bundle install --path vendor/cache
+        bundle package
 
     - name: Build site
       run: bundle exec jekyll build
