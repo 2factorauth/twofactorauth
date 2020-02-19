@@ -2,6 +2,8 @@
 
 source 'https://rubygems.org'
 
+ruby '2.5.1'
+
 # Dependencies are bundled with the github-pages gem
 gem 'github-pages', group: :jekyll_plugins
 
