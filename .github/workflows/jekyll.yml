@@ -21,8 +21,6 @@ jobs:
 
     - name: Run Bundler
       run: |
-        echo --- ls vendor directory ---
-        ls -la vendor/cache
         echo --- Install bundle dependencies ---
         bundle install --path vendor/cache
         [ -d "vendor/cache" ] || { bundle package; }
