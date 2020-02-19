@@ -82,6 +82,13 @@ websites:
       - proprietary
     exception: "Software 2FA is only available for Swedish citizens with BankID."
 
+  - name: Mercado Pago
+    url: https://www.mercadopago.com
+    img: mercado-pago.png
+    tfa:
+      - sms
+      - proprietary
+
   - name: NETELLER
     img: neteller.png
     url: https://www.neteller.com/
