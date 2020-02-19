@@ -390,6 +390,13 @@ websites:
     facebook: Web.com
     img: networksolutions.png
 
+  - name: NIC Argentina
+    url: https://nic.ar
+    tfa:
+       - hardware
+       - proprietary
+     exception: "2FA is only available through AFIP login."
+
   - name: No-IP
     url: https://www.noip.com/
     img: noip.png
