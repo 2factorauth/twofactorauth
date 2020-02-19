@@ -21,12 +21,18 @@ jobs:
 
     - name: Run Bundler
       run: |
+        echo --- Ruby version ---
+        ruby -v
+        echo --- Bundle env ---
+        bundle env
+        echo --- ls vendor directory ---
         ls -la vendor
         ls -la vendor/bundle
         ls -la vendor/bundle/ruby
         ls -la vendor/bundle/ruby/2.6.0
         ls -la vendor/bundle/ruby/2.6.0/cache
-        bundle install --path vendor/bundle
+        echo --- Install bundle dependencies ---
+        bundle install --path vendor/bundle --local
 
     - name: Build site
       run: bundle exec jekyll build
