@@ -31,6 +31,8 @@ jobs:
         ls -la vendor/bundle/ruby
         ls -la vendor/bundle/ruby/2.6.0
         ls -la vendor/bundle/ruby/2.6.0/cache
+        echo --- Copy 2.6 dir to 2.5 ---
+        cp vendor/bundle/ruby/2.6.0 vendor/bundle/ruby/2.5.0 -R
         echo --- Install bundle dependencies ---
         bundle install --path vendor/bundle --local
 
