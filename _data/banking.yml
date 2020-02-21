@@ -285,9 +285,10 @@ websites:
   - name: Chime
     url: https://www.chimebank.com
     img: chime.png
-    twitter: Chime
-    facebook: chimebank
-
+    tfa:
+      - sms
+    doc: https://www.chime.com/security-and-control/
+    
   - name: CIBC
     url: https://www.cibc.ca
     twitter: cibc
