@@ -108,6 +108,13 @@ websites:
       - sms
     doc: https://github.com/2factorauth/twofactorauth/issues/2275
 
+  - name: Mintos
+    url: https://www.mintos.com/
+    img: mintos.png
+    tfa:
+      - totp
+    doc: https://help.mintos.com/hc/en-us/sections/360000373858
+
   - name: MotifInvesting
     url: https://www.motifinvesting.com/
     img: motif.png
