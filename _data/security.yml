@@ -106,6 +106,16 @@ websites:
       - hardware
     doc: https://dome9.com/overview/strong-2-factor-authentication
 
+  - name: Duo Security
+    url: https://duo.com/
+    img: duosecurity.png
+    tfa:
+      - phone
+      - sms
+      - proprietary
+      - hardware
+    doc: https://duo.com/docs/administration-admins#admin-authentication-methods
+
   - name: Entrust
     img: entrust.png
     url: https://www.entrust.net
