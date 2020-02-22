@@ -54,6 +54,13 @@ websites:
       - proprietary
       - hardware
     doc: https://us.etrade.com/security-center/securityid
+    
+  - name: eToro
+    url: https://www.etoro.com
+    img: etoro.png
+    tfa:
+      - sms
+    doc: https://www.etoro.com/en-us/customer-service/help/1281239912/-
 
   - name: Fidelity Investments
     url: https://www.fidelity.com
