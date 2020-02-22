@@ -18,11 +18,11 @@ end
 
 task :proof do
   HTMLProofer.check_directory(
-    './_site', \
-    assume_extension: true, \
-    check_html: true, \
-    disable_external: true, \
-    cache: { timeframe: '2d', storage_dir: '/tmp/html-proofer' }
+    './_site',
+    assume_extension: true,
+    check_html: true,
+    disable_external: true,
+    parallel: { in_threads: 5 }
   ).run
 end
 
