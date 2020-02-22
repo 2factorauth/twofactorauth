@@ -6,6 +6,13 @@ websites:
       - totp
     doc: https://kb.adguard.com/en/general/2fa
 
+  - name: Authy
+    url: https://authy.com
+    img: authy.png
+    tfa:
+      - sms
+      - proprietary
+
   - name: Avast
     url: https://www.avast.com
     img: avast.png
