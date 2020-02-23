@@ -740,6 +740,12 @@ websites:
       - phone
     doc: https://www.mbna.ca/help-centre/credit-cards/two-step-verification-faq/
 
+  - name: Mercury
+    url: https://mercury.com
+    img: mercury.png
+    tfa:
+      - totp
+
   - name: Meridian Credit Union
     url: https://www.meridiancu.ca
     img: meridian.png
