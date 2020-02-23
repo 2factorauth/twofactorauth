@@ -177,9 +177,10 @@ websites:
 
   - name: OkCupid
     url: https://www.okcupid.com/
-    twitter: okcupid
-    facebook: okcupid
     img: okcupid.png
+    tfa:
+      - sms
+    doc: https://help.okcupid.com/article/202--
 
   - name: Pinterest
     url: https://pinterest.com
