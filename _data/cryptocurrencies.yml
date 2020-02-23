@@ -259,6 +259,7 @@ websites:
     tfa:
       - totp
       - hardware
+    doc: https://help.coinify.com/article/114
     exception: "While Coinify has aquired BIPS to allow for trading, only merchant accounts support TFA at this time. Trading is done through a separate account. Hardware support is limited to a print-out character matrix."
 
   - name: Coinjar
