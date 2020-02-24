@@ -19,14 +19,16 @@ websites:
     img: basecamp.png
     tfa:
       - totp
-    doc: https://3.basecamp-help.com/article/84-logging-in#enable-two-factor-authentication
+      - u2f
+    doc: https://3.basecamp-help.com/article/443--
 
   - name: Campfire
     url: https://campfirenow.com/
     img: campfire.png
     tfa:
-      - sms
-    doc: https://help.37signals.com/sign-in/questions/460
+      - totp
+      - u2f
+    doc: https://help.37signals.com/sign-in/questions/480
 
   - name: Capsule
     url: https://capsulecrm.com/
