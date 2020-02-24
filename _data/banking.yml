@@ -1018,12 +1018,11 @@ websites:
     doc: https://www.santander.pl/klient-indywidualny/kontakt/pytania-i-odpowiedzi-bankowosc-internetowa
 
   - name: Santander PT
-    url: https://www.santandertotta.pt/
+    url: https://www.santander.pt/
     img: santander.png
-    twitter: santanderpt
-    facebook: santanderpt
-    email_address: netbancoparticulares@santander.pt
-    lang: pt
+    tfa:
+      - sms
+    doc: https://www.santander.pt/pt_PT/Particulares/Informacoes/psd2-diretiva-servicos-pagamento.html
 
   - name: Santander UK
     url: https://www.santander.co.uk
