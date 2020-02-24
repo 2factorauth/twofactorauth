@@ -250,8 +250,8 @@ websites:
     img: coinify.png
     tfa:
       - totp
-      - hardware
-    exception: "While Coinify has aquired BIPS to allow for trading, only merchant accounts support TFA at this time. Trading is done through a separate account. Hardware support is limited to a print-out character matrix."
+    doc: https://help.coinify.com/article/114
+    exception: "2FA is only available for merchant accounts. myCoinify trading accounts do not support 2FA."
 
   - name: Coinjar
     url: https://coinjar.com
