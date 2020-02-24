@@ -107,7 +107,7 @@ websites:
     url: https://www.neteller.com/
     tfa:
       - totp
-    doc: https://support.neteller.com/ACCOUNT/Two-Factor-Authentication/85238429/What-is-two-step-authentication.htm
+    doc: https://support.neteller.com/ACCOUNT/Two-Factor-Authentication/85238429
 
   - name: PAYEER
     url: https://payeer.com/en/
@@ -188,7 +188,7 @@ websites:
     tfa:
       - totp
       - hardware
-    doc: https://www.skrill.com/en/support#/path/ACCOUNT/Two-Factor-Authentication/905761532/Two-Factor-Authentication-2FA.htm
+    doc: https://www.skrill.com/en/support#/path/ACCOUNT/Two-Factor-Authentication/905761532
 
   - name: Square
     url: https://squareup.com
