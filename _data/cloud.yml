@@ -43,13 +43,13 @@ websites:
       - totp
     doc: https://www.digitalocean.com/docs/accounts/security/2fa/
 
-  - name: EngineYard
+  - name: Engine Yard
     url: https://www.engineyard.com
     img: engineyard.png
     tfa:
       - totp
-    doc: https://blog.engineyard.com/2015/engine-yards-two-factor-authentication
-    exception: "To enable 2FA on EngineYard, contact support."
+    doc: https://support.cloud.engineyard.com/hc/en-us/community/posts/203752678
+    exception: "To enable 2FA on Engine Yard, contact support."
 
   - name: Flexera
     url: https://www.flexera.com/
