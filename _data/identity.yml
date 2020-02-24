@@ -8,6 +8,12 @@ websites:
     doc: https://support.1password.com/two-factor-authentication/
     exception: "Teams using Duo with 1Password can't enable additional 2FA as it's already handled by Duo"
 
+  - name: 7Pass
+    url: https://7pass.de
+    email_address: service@7pass.de
+    img: 7pass.png
+    lang: de
+
   - name: bitwarden
     url: https://bitwarden.com
     img: bitwarden.png
