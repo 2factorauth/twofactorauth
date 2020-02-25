@@ -1,5 +1,5 @@
 ---
-name: Add site without 2FA
+name: 🔓 Add site without 2FA
 about: Request that a site that does not support 2FA be added.
 title: Add [site name]
 labels: add site
