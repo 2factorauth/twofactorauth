@@ -1,5 +1,5 @@
 ---
-name: Add site with 2FA
+name: 🔒 Add site with 2FA
 about: Request that a site that supports 2FA be added.
 title: Add [site name]
 labels: add site
