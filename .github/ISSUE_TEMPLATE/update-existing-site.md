@@ -1,5 +1,5 @@
 ---
-name: Update existing site
+name: 🔄 Update existing site
 about: Request that an existing listed site be updated with new information.
 title: Update [site name]
 labels: update site
@@ -32,6 +32,7 @@ This site entry should be updated because:
 - [ ] Its name has changed.
 - [ ] Its documentation link has changed.
 - [ ] Its Twitter username, Facebook page, and/or email address have changed.
+- [ ] It fits better in a different category.
 - [ ] Its logo has changed.
 - [ ] It has been acquired or absorbed by another site, and the new site is eligible to be listed on twofactorauth.org.
 - [ ] Other (please describe below).
