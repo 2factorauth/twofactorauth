@@ -9,6 +9,11 @@ assignees: ''
 
 <!-- Before submitting this issue, please update the title to include the name of the site to be added.
 Submit a single issue for each site to be added.
+
+In Markdown, checkboxes work like this:
+- [ ] Unchecked box.
+- [x] Checked box.
+
 Check both boxes below before submitting your issue to verify that you have already checked for duplicate issues and pull requests relating to your request. -->
 
 - [ ] I have searched both open and closed [issues](https://github.com/2factorauth/twofactorauth/issues). The issue I'm creating is not a duplicate of an existing issue.
