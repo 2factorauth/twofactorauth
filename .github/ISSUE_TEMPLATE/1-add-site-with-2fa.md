@@ -32,17 +32,17 @@ Attach screenshots of the setup/login process if no public-facing documentation 
 See our [wiki](https://github.com/2factorauth/twofactorauth/wiki/FAQ-2FA-Types) for more information about different types of 2FA implementations. -->
 
 * Software:
-  - TOTP (RFC-6238, Google Authenticator) - [ ]
-  - Proprietary (Authy, Duo, etc.) - [ ]
+  - [ ] TOTP (RFC-6238, Google Authenticator)
+  - [ ] Proprietary (Authy, Duo, etc.)
 
 * Hardware:
-  - U2F keys - [ ]
-  - WebAuthn - [ ]
-  - Other - [ ]
+  - [ ] U2F keys
+  - [ ] WebAuthn
+  - [ ] Other
 
-* Phone calls - [ ]
-* SMS tokens - [ ]
-* Email tokens - [ ]
+- [ ] Phone calls
+- [ ] SMS tokens
+- [ ] Email tokens
 
 ### Information about the site's eligibility to be added to twofactorauth.org: ###
 <!-- Check each box below to verify that the site meets our requirements for being listed.
