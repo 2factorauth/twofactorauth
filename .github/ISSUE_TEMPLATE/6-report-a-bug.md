@@ -13,7 +13,7 @@ In Markdown, checkboxes work like this:
 - [ ] Unchecked box.
 - [x] Checked box.
 
-Check the box below before submitting your issue to verify that you have already checked for duplicate open issues and pull requests relating to your request. -->
+Check the box below before submitting your issue to verify that you have already checked for duplicate open issues and pull requests relating to your report. -->
 
 - [ ] I have searched [open issues and pull requests](https://github.com/2factorauth/twofactorauth/issues?q=is%3Aopen). The issue I'm creating is not a duplicate of an existing open issue or pull request.
 
