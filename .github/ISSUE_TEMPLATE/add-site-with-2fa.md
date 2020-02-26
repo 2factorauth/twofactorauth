@@ -1,5 +1,5 @@
 ---
-name: 🔒 Add site with 2FA
+name: 🔒 1. Add site with 2FA
 about: Request that a site that supports 2FA be added.
 title: Add [site name]
 labels: add site
@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-<!-- Before submitting this issue, please update the title to include the name of the site to be added. 
+<!-- Before submitting this issue, please update the title to include the name of the site to be added.
 Submit a single issue for each site to be added.
 Check both boxes below before submitting your issue to verify that you have already checked for duplicate issues and pull requests relating to your request. -->
 

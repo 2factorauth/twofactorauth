@@ -1,5 +1,5 @@
 ---
-name: 🔄 Update existing site
+name: 🔄 3. Update existing site
 about: Request that an existing listed site be updated with new information.
 title: Update [site name]
 labels: update site
@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-<!-- Before submitting this issue, please update the title to include the name of the site to be updated. 
+<!-- Before submitting this issue, please update the title to include the name of the site to be updated.
 Submit a single issue for each site to be updated.
 Check the box below before submitting your issue to verify that you have already checked for duplicate open issues and pull requests relating to your request. -->
 
@@ -24,7 +24,7 @@ Check the box below before submitting your issue to verify that you have already
 * Site category - ``
 
 ### Information about why the site entry should be updated: ###
-This site entry should be updated because:
+**This site entry should be updated because:**
 - [ ] It now supports 2FA.
 - [ ] The methods of 2FA that it supports have changed.
 - [ ] It has begun the process of implementing 2FA.

@@ -1,5 +1,5 @@
 ---
-name: 🗑 Remove existing site
+name: 🗑 4. Remove existing site
 about: Request that an existing listed site be removed.
 title: Remove [site name]
 labels: remove site
@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-<!-- Before submitting this issue, please update the title to include the name of the site to be removed. 
+<!-- Before submitting this issue, please update the title to include the name of the site to be removed.
 Submit a single issue for each site to be removed.
 Check the box below before submitting your issue to verify that you have already checked for duplicate open issues and pull requests relating to your request. -->
 
@@ -24,7 +24,7 @@ Check the box below before submitting your issue to verify that you have already
 * Site category - ``
 
 ### Information about why the site entry should be removed: ###
-This site entry should be removed because:
+**This site entry should be removed because:**
 - [ ] It is a duplicate of an existing site entry.
 - [ ] It will be discontinued in the near future.
 - [ ] It has been shut down by the owner and is no longer accessible.
@@ -34,5 +34,5 @@ This site entry should be removed because:
 - [ ] It contains content that violates twofactorauth.org's [excluded categories and websites guidelines](https://github.com/2factorauth/twofactorauth/blob/master/EXCLUSION.md).
 - [ ] Other (please describe below).
 
-Additional information about why this site entry should be removed:
+**Additional information about why this site entry should be removed:**
 <!-- Please include any supporting documentation, such as official announcements, social media posts, blog entries, press releases, or other information that helps to verify that the listed site entry should be removed below. -->
