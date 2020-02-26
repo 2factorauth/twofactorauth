@@ -1,5 +1,5 @@
 ---
-name: 🗑 4. Remove existing site
+name: 🗑 Remove existing site
 about: Request that an existing listed site be removed.
 title: Remove [site name]
 labels: remove site

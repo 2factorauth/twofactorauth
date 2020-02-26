@@ -1,5 +1,5 @@
 ---
-name: 💎 5. Request a feature
+name: 💎 Request a feature
 about: Request that a new feature be added to the site.
 title: ''
 labels: enhancement

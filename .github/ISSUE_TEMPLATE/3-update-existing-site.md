@@ -1,5 +1,5 @@
 ---
-name: 🔄 3. Update existing site
+name: 🔄 Update existing site
 about: Request that an existing listed site be updated with new information.
 title: Update [site name]
 labels: update site
