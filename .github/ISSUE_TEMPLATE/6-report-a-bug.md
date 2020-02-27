@@ -20,7 +20,7 @@ Check the box below before submitting your issue to verify that you have already
 ### Information about the bug: ###
 **Bug description:**
 <!-- Provide a brief description of the bug. What's going wrong?
-If applicable, also provide screenshots of the bug in action. -->
+If applicable, also provide screenshots of the bug in action, redacting any personal information. -->
 
 
 **Bug reproduction:**
