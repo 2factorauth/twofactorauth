@@ -46,4 +46,4 @@ Check the box below before submitting your issue to verify that you have already
 <!-- List the specific changes to the site entry that should be made below.
 For example, if a site now supports 2FA, list the methods of 2FA the site now supports.
 Please include any supporting documentation for the changes as well, such as official documentation links or announcement blog posts.
-If no public-facing documentation is available, please include screenshots of the changes. -->
+If no public-facing documentation is available, please include screenshots of the changes, redacting any personal information. -->

@@ -51,7 +51,7 @@ See our [wiki](https://github.com/2factorauth/twofactorauth/wiki/FAQ-2FA-Types) 
 
 ### Information about the site's eligibility to be added to twofactorauth.org: ###
 <!-- Check each box below to verify that the site meets our requirements for being listed.
-If a site does not meet any of these requirements, feel free to continue your issue submission.
+If a site does not meet all of these requirements, feel free to continue your issue submission.
 Leave any unmet requirements unchecked, and add any additional information or questions in the "Additional information" section below. -->
 
 - [ ] I have checked that the site meets twofactorauth.org's [contributing guidelines and site criteria](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
