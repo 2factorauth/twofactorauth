@@ -41,8 +41,7 @@ See our [wiki](https://github.com/2factorauth/twofactorauth/wiki/FAQ-2FA-Types) 
   - [ ] Proprietary (Authy, Duo, etc.)
 
 * Hardware:
-  - [ ] U2F keys
-  - [ ] WebAuthn
+  - [ ] FIDO2/U2F security keys
   - [ ] Other
 
 - [ ] Phone calls
