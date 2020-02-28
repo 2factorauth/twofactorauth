@@ -136,7 +136,14 @@ websites:
     twitter: multcloud
     facebook: multcloud
     img: multcloud.png
-
+    
+  - name: Nextcloud
+    url: https://www.nextcloud.com
+    img: nextcloud.png
+    tfa:
+      - totp
+    doc: https://docs.nextcloud.com/server/17/user_manual/user_2fa.html
+    
   - name: Nimbox
     url: https://www.nimbox.co.uk/
     img: nimbox.png
