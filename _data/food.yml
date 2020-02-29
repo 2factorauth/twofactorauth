@@ -187,17 +187,6 @@ websites:
   bch: false
   btc: false
   othercrypto: false
-- name: City Lounge
-  url: http://www.ourcitylounge.com/
-  img: cityLounge.png
-  facebook: CityLoungeCudahy
-  email_address: info@ourcitylounge.com
-  region: na
-  country: US
-  city: Cudahy
-  bch: true
-  btc: true
-  othercrypto: true
 - name: Classic Crust Pizza
   url: https://classiccrustpizza.com/
   img: classiccrustpizza.png
@@ -399,6 +388,16 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: La Confiturière
+  url: https://laconfituriere.com/
+  img: LaConfiturire.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: laconfituriere
+  facebook: laconfituriere
+  email_address: contact@laconfituriere.com
+  region: eu
 - name: Lieferando
   url: https://www.lieferando.de/
   img: lieferando.png
@@ -411,9 +410,10 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-- name: lieferservice.at
-  url: https://www.lieferservice.at/
-  img: lieferservice.png
+- name: lieferando.at
+  url: https://www.lieferando.at/
+  img: lieferando.png
+  twitter: lieferandoAT
   region: eu
   country: AT
   lang: de
@@ -513,16 +513,6 @@ websites:
   btc: false
   othercrypto: false
   doc: https://morizocoin.com/bchpayment_osarucoffee/
-- name: People's Pub
-  url: https://www.facebook.com/PeoplesPub/
-  email_address: peoplespubnb@gmail.com
-  region: na
-  country: CA
-  city: St. Stephen
-  bch: true
-  btc: false
-  othercrypto: false
-  doc: https://www.facebook.com/PeoplesPub/posts/2191402587761488
 - name: Pex Peppers
   url: https://www.pexpeppers.com/
   img: pexpeppers.png

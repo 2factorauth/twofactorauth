@@ -90,14 +90,6 @@ websites:
   keywords:
   - bitpay
   - bip70
-- name: BuyPrivacy
-  url: https://www.buyprivacy.net
-  img: buyprivacy.png
-  twitter: TheBuyPrivacy
-  email_address: socialmedia@buyprivacy.net
-  bch: true
-  btc: true
-  othercrypto: true
 - name: CAcert
   url: http://www.cacert.org/
   img: cacert.png
@@ -349,6 +341,15 @@ websites:
   othercrypto: false
   twitter: perfectprivacy
   facebook: perfect.privacy
+- name: PlasmaVPN
+  url: https://plasmavpn.com
+  img: PlasmaVPN.png
+  bch: true
+  btc: true
+  othercrypto: true
+  email_address: pokkst@tutanota.com
+  exceptions:
+    text: Currently in BETA
 - name: Premiumize.me
   url: https://www.premiumize.me
   img: premiumizeme.png
@@ -482,7 +483,7 @@ websites:
 - name: Surfshark
   url: https://surfshark.com
   img: surfshark.png
-  twitter: SurfsharkSecure
+  twitter: Surfshark
   facebook: SurfsharkPrivacy
   bch: true
   btc: true

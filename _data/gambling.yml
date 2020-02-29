@@ -137,6 +137,11 @@ websites:
   btc: true
   othercrypto: false
   doc: https://www.cloudbet.com/en/bitcoin-cash-promotion
+- name: CoinWin888
+  url: https://www.coinwin888.com/
+  bch: true
+  btc: true
+  othercrypto: true
 - name: Crypto Wild
   url: https://www.cryptowild.com/
   img: cryptowild.png
@@ -162,6 +167,16 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Fanduel
+  url: https://www.fanduel.com/
+  img: Fanduel.png
+  bch: true
+  btc: true
+  othercrypto: false
+  twitter: fanduel
+  facebook: fanduel
+  region: na
+  doc: https://news.bitcoin.com/fantasy-sports-giant-fanduel-now-accepts-bitcoin-cash/
 - name: FortuneJack
   url: https://fortunejack.com/
   img: fortunejack.png
@@ -314,7 +329,6 @@ websites:
 - name: Sloto'Cash
   url: https://www.slotocash.im/
   img: slotocash.png
-  facebook: SlotoCash.Casino
   email_address: support@slotocash.im
   bch: true
   btc: true

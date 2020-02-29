@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# rubocop:disable BlockLength
+# rubocop:disable Metrics/BlockLength
 namespace :add do
   require 'net/http'
   require 'json'
@@ -24,7 +24,7 @@ namespace :add do
     make_new_category_file(new_section['id'])
   end
 
-  # rubocop:disable UselessAssignment
+  # rubocop:disable Lint/UselessAssignment
   # disable rubocop on this until completed
   task :keywords do
     category = prompt_category
@@ -34,8 +34,8 @@ namespace :add do
       puts "#{index}: #{value}"
     end
   end
-  # rubocop:enable UselessAssignment
-  # rubocop:disable MethodLength
+  # rubocop:enable Lint/UselessAssignment
+  # rubocop:disable Metrics/MethodLength
   task :manual do
     listing = {}
     site = {}
@@ -100,7 +100,7 @@ namespace :add do
     category
   end
 
-  # rubocop:disable Semicolon
+  # rubocop:disable Style/Semicolon
   def yesno(prompt = 'Continue?', default = true, details = nil)
     a = ''
     s = default ? '[Y/n]' : '[y/N]'
@@ -112,7 +112,7 @@ namespace :add do
     end
     a == 'y'
   end
-  # rubocop:enable Semicolon
+  # rubocop:enable Style/Semicolon
 
   def new_entry(schema_file, class_name)
     entry = {}
@@ -174,7 +174,7 @@ namespace :add do
     File.exist?(File.join(base_dir, "img/#{category}/#{img_name}"))
   end
 
-  # rubocop:disable AbcSize, CyclomaticComplexity, PerceivedComplexity
+  # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
   def add_from_github(issue_num)
     github_url = 'https://api.github.com/repos/acceptbitcoincash/acceptbitcoincash/issues'
     uri = URI("#{github_url}/#{issue_num}")
@@ -202,10 +202,10 @@ namespace :add do
     section['websites'] = add_and_sort(websites, request, 'name')
     if valid_revision(section)
       write_yaml(category, section)
-      return true
+      true
     else
       puts 'Invalid entry, try changing the data before trying again.'
-      return false
+      false
     end
   end
 
@@ -253,7 +253,7 @@ namespace :add do
 
     output
   end
-  # rubocop:enable AbcSize, CyclomaticComplexity, PerceivedComplexity
+  # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
 
   def valid_to_ins(list, new_entry, identifier)
     id = new_entry[identifier]
@@ -312,4 +312,4 @@ namespace :add do
     data
   end
 end
-# rubocop:enable MethodLength, BlockLength
+# rubocop:enable Metrics/MethodLength, Metrics/BlockLength

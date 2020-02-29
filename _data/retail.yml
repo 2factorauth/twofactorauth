@@ -164,7 +164,6 @@ websites:
 - name: Aria PC Technology
   img: ariapctech.png
   url: https://www.aria.co.uk/
-  twitter: aria_technology
   facebook: AriaPCTechnology
   bch: true
   btc: true
@@ -257,6 +256,12 @@ websites:
   btc: true
   othercrypto: true
   doc: https://bitcars.eu/pages/frequently-asked-questions
+- name: Bitcoin BCH Store
+  url: https://bitcoinbch.com/store/
+  img: BitcoinBCH.png
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Bitcoin Cash Stickers
   url: http://bitcoincashstickers.com/
   img: bchstickers.png
@@ -489,18 +494,6 @@ websites:
   othercrypto: true
   keywords:
   - coinpayments.net
-- name: CryptoSwagShop
-  url: https://www.cryptoswagshop.com/
-  img: cryptoswagshop.png
-  twitter: cryptoswagshop
-  facebook: cswagshop
-  bch: true
-  btc: true
-  bsv: true
-  othercrypto: false
-  exceptions:
-    text: This is a drop shipper. The items sold might have a high markup over normal
-      prices
 - name: Dell
   url: http://www.dell.com/
   img: dell.png
@@ -622,16 +615,6 @@ websites:
   keywords:
   - coinbase
   - coinpayments.net
-- name: Elite Pet Fan
-  url: https://elitefanco.com/
-  img: elitepetfan.png
-  twitter: ElitePetFan
-  facebook: elitefanco
-  bch: false
-  btc: true
-  othercrypto: true
-  keywords:
-  - gocoin
 - name: Etsy
   url: https://www.etsy.com/
   img: etsy.png
@@ -1867,18 +1850,6 @@ websites:
   doc: https://www.sugartrends.com/de/zahlungsmoeglichkeiten
   keywords:
   - coinpayments.net
-- name: Super-Savvy's
-  url: https://savvys.co.uk
-  img: supersavvys.png
-  twitter: savvys16
-  bch: true
-  btc: true
-  othercrypto: true
-  keywords:
-  - coinbase
-  exceptions:
-    text: This is a drop shipper. The items sold might have a high markup over normal
-      prices
 - name: Surfnow
   url: https://www.surfnow.eu/
   img: surfnow.png
