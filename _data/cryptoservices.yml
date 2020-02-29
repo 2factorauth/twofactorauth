@@ -179,6 +179,13 @@ websites:
   bch: true
   btc: false
   othercrypto: false
+- name: Cardbit
+  url: http://www.cardbit.io
+  img: cardbit.png
+  facebook: cardbit.io
+  bch: false
+  btc: true
+  othercrypto: false
 - name: ChainTip
   url: https://www.chaintip.org/
   img: chaintip.png
@@ -539,11 +546,10 @@ websites:
   email_address: info@korsit.com
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   lang: de
   keywords:
   - bitpay
-  - bip70
 - name: Open Bazaar
   url: https://www.openbazaar.org/
   img: openbazaar.png

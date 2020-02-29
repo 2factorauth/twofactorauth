@@ -39,12 +39,11 @@ websites:
   url: https://www.avira.com
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   twitter: avira
   facebook: avira
   keywords:
   - bitpay
-  - bip70
   exceptions:
     text: Bitcoin is accepted for Phantom VPN Pro only
 - name: BA.net AdBlock VPN
@@ -59,11 +58,10 @@ websites:
   img: bitwarden.png
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   doc: https://blog.bitwarden.com/now-accepting-bitcoin-11bdf6e04ad1
   keywords:
   - bitpay
-  - bip70
 - name: Blur
   url: https://www.abine.com/
   img: blur.png
@@ -79,17 +77,15 @@ websites:
   twitter: bolehvpn
   keywords:
   - bitpay
-  - bip70
   - coinpayments.net
 - name: BulletVPN
   url: https://www.bulletvpn.com/
   img: bulletvpn.png
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: CAcert
   url: http://www.cacert.org/
   img: cacert.png
@@ -114,11 +110,11 @@ websites:
   img: cyberghost.png
   bch: true
   btc: true
+  othercrypto: true
   twitter: cyberghost_EN
   facebook: cyberghostEN
   keywords:
   - bitpay
-  - bip70
 - name: Detectify
   url: https://detectify.com/
   img: detectify.png
@@ -157,11 +153,11 @@ websites:
   url: https://www.expressvpn.com
   bch: false
   btc: true
+  othercrypto: true
   twitter: expressvpn
   facebook: ExpressVPN
   keywords:
   - bitpay
-  - bip70
 - name: Firo Solutions
   url: https://firosolutions.com
   img: FiroSolutions.png
@@ -190,10 +186,9 @@ websites:
   email_address: staff@hide-my-ip.com
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: hide.me VPN
   url: https://hide.me/
   img: hidemevpn.png
@@ -212,7 +207,6 @@ websites:
   othercrypto: true
   keywords:
   - bitpay
-  - bip70
   - coinpayments.net
 - name: InterSSL
   url: https://www.interssl.com/
@@ -223,7 +217,6 @@ websites:
   facebook: interssl
   keywords:
   - bitpay
-  - bip70
 - name: IPVanish
   url: https://www.ipvanish.com
   img: ipvanish.png
@@ -238,10 +231,9 @@ websites:
   facebook: ironsocket
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: Ivacy VPN
   url: https://www.ivacy.com/
   img: ivacyvpn.png
@@ -250,7 +242,6 @@ websites:
   othercrypto: true
   keywords:
   - bitpay
-  - bip70
   - coinpayments.net
 - name: IVPN
   url: https://www.ivpn.net/
@@ -258,10 +249,9 @@ websites:
   twitter: ivpnnet
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: LiquidVPN
   url: https://www.liquidvpn.com/
   img: liquidvpn.png
@@ -293,7 +283,7 @@ websites:
 - name: NordVPN
   url: https://www.nordvpn.com
   img: nordvpn.png
-  bch: false
+  bch: true
   btc: true
   othercrypto: true
   twitter: nordvpn
@@ -327,12 +317,11 @@ websites:
   img: OVPNIntegritetAB.png
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   twitter: ovpn_official
   email_address: support@ovpn.com
   keywords:
   - bitpay
-  - bip70
 - name: Perfect Privacy VPN
   url: https://www.perfect-privacy.com/
   img: perfectprivacyvpn.png
@@ -370,6 +359,7 @@ websites:
   img: privateinternetaccess.png
   bch: true
   btc: true
+  othercrypto: true
   twitter: piacsm
   keywords:
   - bitpay
@@ -437,10 +427,9 @@ websites:
   email_address: hosting@shellfire.de
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: SigaVPN
   region: na
   country: us
@@ -456,10 +445,9 @@ websites:
   facebook: slickvpn
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: Snusbase
   url: https://snusbase.com
   twitter: publicdbhost
@@ -563,7 +551,6 @@ websites:
   keywords:
   - coinpayments.net
   - bitpay
-  - bip70
 - name: VPNArea
   url: https://vpnarea.com/
   img: vpnarea.png
@@ -571,10 +558,9 @@ websites:
   facebook: vpnarea
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: Windscribe
   url: https://windscribe.com
   img: windscribe.png

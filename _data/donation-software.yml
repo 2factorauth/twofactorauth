@@ -15,11 +15,10 @@ websites:
   facebook: BinaryFortress
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   doc: https://www.binaryfortress.com/Donate/
   keywords:
   - bitpay
-  - bip70
 - name: Bitcoin ABC
   url: https://www.bitcoinabc.org/
   img: bitcoinabc.png
@@ -117,11 +116,10 @@ websites:
   twitter: gnome
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   doc: https://www.gnome.org/support-gnome/donate/
   keywords:
   - bitpay
-  - bip70
 - name: KDE
   url: https://www.kde.org/
   img: kde.png
@@ -129,11 +127,10 @@ websites:
   facebook: kde
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   doc: https://www.kde.org/community/donations/others.php
   keywords:
   - bitpay
-  - bip70
 - name: KeePassXC
   url: https://keepassxc.org/
   img: keepassxc.png
@@ -173,11 +170,10 @@ websites:
   img: openbsd.png
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   doc: https://www.openbsdfoundation.org/donations.html
   keywords:
   - bitpay
-  - bip70
   exceptions:
     text: BitPay limits the size of transactions we can accept to $10000 per day.
       Larger BitCoin donations may need to be split up and donated over multiple days.
@@ -229,11 +225,10 @@ websites:
   twitter: torproject
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   doc: https://www.torproject.org/donate/donate-options.html
   keywords:
   - bitpay
-  - bip70
   exceptions:
     text: Due to the current state of the Bitcoin market, our payment processor, Bitpay,
       will not allow us to accept donations of less than 5 USD. However, we can also
