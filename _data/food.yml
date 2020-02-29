@@ -222,11 +222,13 @@ websites:
   exceptions:
     text: "Use Bitcoin.com or Elipay wallet"
 - name: David Wolfe Shop
-  url: https://shop.davidwolfe.com/collections/chocolate
+  url: https://shop.davidwolfe.com/
   img: DavidWolfeShop.png
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
+  keywords:
+  - bitpay
 - name: De Wine Spot
   url: https://dewinespot.co/
   img: dewinespot.png
