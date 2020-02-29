@@ -4,7 +4,6 @@ websites:
   url: https://3xbit.com.br/
   img: 3xbit.png
   twitter: 3xbit
-  facebook: 3xbit.global
   bch: true
   btc: true
   othercrypto: true
@@ -83,6 +82,16 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Bit4.Sale
+  url: https://bit4.sale
+  img: BitSale.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: bit4sale
+  email_address: hello@bit4.sale
+  region: eu
+  doc: https://bitcointalk.org/index.php?topic=5091470.msg48983263
 - name: BitBay
   url: https://bitbay.net/
   img: bitbay.png
@@ -128,7 +137,6 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-  doc: https://bitflyer.jp/cam/bch-201708/ja/?top_link
 - name: BitForex
   url: https://www.bitforex.com/
   img: bitforex.png
@@ -450,6 +458,14 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Exchange.bitcoin.com
+  url: https://exchange.bitcoin.com/
+  img: Exchangebitcoincom.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: bitcoincomexch
+  facebook: buy.bitcoin.news
 - name: EXX.com
   url: https://www.exx.com/
   img: exx.png
@@ -492,7 +508,6 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-  doc: https://support.gatehub.net/hc/en-us/articles/115004422789-Bitcoin-Cash-BCH-update
 - name: Gemini
   url: https://gemini.com/
   img: gemini.png
@@ -585,6 +600,14 @@ websites:
   btc: true
   othercrypto: true
   doc: https://blog.kraken.com/post/1191/kraken-enables-bitcoin-cash-bch-deposits-and-withdrawals/
+- name: Kucoin
+  url: https://www.kucoin.com/
+  img: Kucoin.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: kucoincom
+  facebook: kucoinofficial
 - name: LBank
   url: https://www.lbank.info/
   img: lbank.png
@@ -606,14 +629,15 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-- name: Local.bitcoin.com
+- name: Local.Bitcoin.com
   url: https://local.bitcoin.com/
-  img: localbitcoincom.png
-  twitter: bitcoincom
-  facebook: buy.bitcoin.news
+  img: LocalBitcoincom.png
   bch: true
   btc: false
   othercrypto: false
+  twitter: bitcoincom
+  facebook: buy.bitcoin.news
+  email_address: marketing@bitcoin.com
 - name: Lykke
   url: https://www.lykke.com/
   img: lykke.png

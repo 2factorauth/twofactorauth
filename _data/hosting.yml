@@ -60,14 +60,6 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-- name: Aulerion
-  url: https://www.aulerion.com/
-  img: aulerion.png
-  facebook: aulerion
-  email_address: support@aulerion.com
-  bch: true
-  btc: false
-  othercrypto: true
 - name: BaCloud
   url: https://www.bacloud.com
   twitter: bacloud
@@ -250,6 +242,14 @@ websites:
   othercrypto: true
   keywords:
   - coinpayments.net
+- name: CryptoServers
+  url: https://cryptoservers.net/
+  img: CryptoServersCloudKVMservers.png
+  bch: true
+  btc: true
+  othercrypto: true
+  email_address: support@cryptoservers.net
+  region: eu
 - name: cyon
   url: https://www.cyon.ch
   img: cyon.png
@@ -284,6 +284,8 @@ websites:
   doc: https://easy.gr/el/payment-methods
   keywords:
   - coinbase
+  exceptions: 
+    text: "Be aware that Easy.gr may ask for KYC information after accepting payment. This is not a recommended vendor for customers seeking privacy."
 - name: Fastly
   url: https://www.fastly.com
   twitter: fastly
@@ -346,6 +348,19 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: HostUp
+  url: https://hostup.org/
+  img: hostup.png
+  twitter: hostup
+  facebook: hostupdotorg
+  email_address: contact@hostup.org
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://twitter.com/hostup/status/1214266743541161985
+  keywords:
+  - bitpay
+  - bip70
 - name: Hawk Host
   url: https://www.hawkhost.com
   img: hawkhost.png
@@ -737,7 +752,6 @@ websites:
   bch: false
 - name: OVH
   url: https://www.ovh.com/
-  twitter: ovh
   img: ovh.png
   bch: false
   doc: https://www.ovh.com/support/termsofservice/payment.xml
@@ -763,14 +777,6 @@ websites:
   img: PlanetHoster.png
   bch: false
   lang: fr
-- name: Puroxy
-  url: https://puroxy.org/
-  twitter: puroxyii
-  facebook: PuroxyII
-  img: puroxy.png
-  bch: true
-  btc: true
-  othercrypto: true
 - name: QHoster
   url: https://www.qhoster.com
   img: qhoster.png
@@ -796,6 +802,18 @@ websites:
   keywords:
   - bitpay
   - bip70
+- name: RapidTechHosting
+  url: https://rapidtechhosting.com
+  img: RapidTechHosting.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: rthosting
+  facebook: rapidtechhosting
+  email_address: sales@rapidtechhosting.com
+  doc: https://blog.rapidtechhosting.com/bitcoin-cash-payments-now-available/
+  exceptions:
+    text: Just need to choose 'Bitcoin' as payment method.
 - name: Rivalhost
   url: https://www.rivalhost.com/
   img: rivalhost.png
@@ -1025,7 +1043,6 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-  doc: https://www.vintcer.com/pay-with-bitpay
   keywords:
   - bitpay
   - bip70
