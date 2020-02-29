@@ -65,7 +65,6 @@ websites:
   bch: true
   btc: true
   othercrypto: false
-  doc: https://btcapi.org/docs
 - name: Bitek
   url: https://bitek.co
   img: bitekco.png
@@ -250,6 +249,14 @@ websites:
   othercrypto: true
   twitter: cryptopay
   facebook: cryptopayme
+- name: Donatebutton.cash
+  url: https://donatebutton.cash
+  img: donatebutton.cash.png
+  bch: true
+  btc: false
+  othercrypto: false
+  email_address: info@donatebutton.cash
+  lang: en
 - name: Dwolla
   url: https://www.dwolla.com
   img: dwolla.png
@@ -260,7 +267,6 @@ websites:
   url: https://elipay.com/
   img: elipay.png
   twitter: eligmacom
-  facebook: eligmacom
   bch: true
   btc: true
   othercrypto: true
@@ -319,12 +325,6 @@ websites:
   img: interkassa.png
   facebook: interkassa
   email_address: support@interkassa.com
-  bch: false
-  btc: true
-  othercrypto: false
-- name: ioChain
-  url: https://www.iochain.co/
-  img: iochain.png
   bch: false
   btc: true
   othercrypto: false
@@ -444,7 +444,7 @@ websites:
 - name: Rapidz Pay
   url: https://www.rapidz.io/
   img: rapidzpay.png
-  twitter: RapidzPay
+  twitter: Rapidz_io
   facebook: Rapidz.io
   bch: true
   btc: true

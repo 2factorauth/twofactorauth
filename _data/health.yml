@@ -72,16 +72,6 @@ websites:
   othercrypto: true
   keywords:
   - coinbase
-- name: Beard Friendly
-  url: https://www.beardfriendly.com/
-  img: beardfriendly.png
-  twitter: Beard_Friendly
-  facebook: beardfriendly
-  bch: true
-  btc: true
-  othercrypto: true
-  keywords:
-  - coinbase
 - name: Beard Head
   url: https://www.beardhead.cz
   img: beardheadcz.png
@@ -133,6 +123,13 @@ websites:
   twitter: CarilionClinic
   facebook: carilionclinic
   email_address: direct@carilionclinic.org
+- name: Cathy Doll Beauty
+  url: https://www.cathy-doll-beauty.website/
+  img: CathyDollBeauty.png
+  bch: true
+  btc: true
+  othercrypto: true
+  email_address: karmart.cosmetics@gmail.com
 - name: CBD Oil Solutions
   url: https://cbd-oil.solutions
   img: CBDOilSolutions.png
@@ -477,6 +474,28 @@ websites:
   othercrypto: true
   keywords:
   - coingate
+- name: Peluquería Diferent
+  url: https://www.facebook.com/peludiferent
+  img: PeluqueraDiferent.png
+  bch: true
+  btc: false
+  othercrypto: false
+  facebook: peludiferent
+  region: eu
+  country: ES
+  city: El Arenal
+  doc: https://www.reddit.com/r/btc/comments/c2ugkb/get_a_fancy_haircut_in_the_first_brick_and_mortar/
+- name: PPM Silver Cosmetics
+  url: http://ppmsilvercosmetics.com/CryptoOrder.html
+  img: PPMSilverCosmetics.png
+  bch: true
+  btc: true
+  othercrypto: true
+  email_address: admin@ppmSilverCosmetics.com
+  region: na
+  country: US
+  exceptions:
+    text: "Email for wallet address, make payment, email completed form, receive product"
 - name: Premier Medical
   url: https://www.premiermedicalinc.com/
   bch: true
@@ -512,9 +531,8 @@ websites:
   - bitpay
   - bip70
 - name: Runtastic
-  url: https://www.runtastic.com/shop
-  twitter: Runtastic
-  facebook: runtastic
+  url: https://www.runtastic.com
+  facebook: adidasRuntastic
   img: runtastic.png
   bch: false
   btc: false

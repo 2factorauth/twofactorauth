@@ -78,6 +78,15 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: Manna Cottage
+  url: https://www.mannacottage.com/
+  bch: true
+  btc: true
+  othercrypto: true
+  email_address: mannacottage@protonmail.com
+  region: eu
+  country: GR
+  city: Siros
 - name: Perivoli Guest Rooms
   url: https://www.guest-rooms.com
   img: perivoli.png
@@ -120,6 +129,19 @@ websites:
   bch: true
   btc: true
   othercrypto: false
+- name: The Scot Hotel
+  url: https://thescotoban.com/
+  img: TheScotHotel.png
+  bch: true
+  btc: false
+  othercrypto: false
+  email_address: info@thescotoban.com
+  facebook: thescotoban
+  region: eu
+  country: GB
+  city: Oban
+  exceptions:
+    text: "Can reserve room with credit card info and pay with BCH at reception."
 - name: Travala
   url: https://www.travala.com/
   img: travala.png
@@ -129,16 +151,6 @@ websites:
   btc: true
   othercrypto: true
   doc: https://www.travala.com/payment-options
-- name: Villa Vvedene
-  url: http://maxkite.wixsite.com/vvedene
-  email_address: max_kite@mail.ru
-  region: eu
-  country: RU
-  lang: ru
-  city: Yaroslavl
-  bch: true
-  btc: true
-  othercrypto: true
 - name: Washington Intern Housing Network
   url: https://www.thewihn.com
   facebook: dcinternhousing
