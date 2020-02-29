@@ -181,9 +181,9 @@ websites:
 - name: FreeDNS
   url: https://freedns.afraid.org/
   img: freedns.png
-  othercrypto: false
   bch: true
   btc: true
+  othercrypto: true
   email_address: dnsadmin@afraid.org
   doc: https://freedns.afraid.org/pricing/?ls=1
   exceptions:
@@ -191,17 +191,16 @@ websites:
       links
   keywords:
   - bitpay
-  - bip70
 - name: Gandi
   url: https://gandi.net
   img: gandi.png
   bch: true
   btc: true
+  othercrypto: true
   twitter: gandibar
   facebook: GandiBar
   keywords:
   - bitpay
-  - bip70
 - name: GoDaddy
   img: godaddy.png
   url: https://www.godaddy.com/
@@ -387,12 +386,12 @@ websites:
   img: noip.png
   bch: true
   btc: true
+  othercrypto: true
   twitter: NoIPcom
   facebook: noipdns
   doc: https://www.noip.com/bitcoin
   keywords:
   - bitpay
-  - bip70
   exceptions:
     text: To pay with Bitcoin Cash you need to contact their support
 - name: Nominet
@@ -450,11 +449,11 @@ websites:
   img: register4less.png
   bch: true
   btc: true
+  othercrypto: true
   twitter: Register4Less
   facebook: Register4Less
   keywords:
   - bitpay
-  - bip70
 - name: Registro.br
   url: https://registro.br
   img: registrobr.png
@@ -468,10 +467,9 @@ websites:
   facebook: SoxDomains
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: STRATO
   url: https://www.strato.de/
   img: strato.png

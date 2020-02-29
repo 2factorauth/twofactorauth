@@ -45,19 +45,18 @@ websites:
   facebook: ChessTempo
   bch: true
   btc: true
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: Chess.com
   url: https://www.chess.com/
   img: Chesscom.png
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   twitter: chesscom
   keywords:
   - bitpay
-  - bip70
 - name: CJS CD Keys
   url: https://www.cjs-cdkeys.com
   img: CJSCDKEYS.png
@@ -140,14 +139,13 @@ websites:
   img: g2g.png
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   twitter: g2gdotcom
   facebook: G2Gdotcom
   email_address: support@g2g.com
   doc: https://www.g2g.com/payment-guide/pg/e-wallet/bitcoin-bitcoin-cash
   keywords:
   - bitpay
-  - bip70
 - name: GameFly
   url: https://www.gamefly.com/
   img: gamefly.png
@@ -167,10 +165,9 @@ websites:
   facebook: gamesplanet
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: Garena Online
   url: https://intl.garena.com
   img: garena.png
@@ -224,7 +221,7 @@ websites:
   country: US
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
 - name: Instant Gaming
@@ -249,11 +246,10 @@ websites:
   email_address: service@jjgames.com
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   doc: https://www.jjgames.com/page/bitcoin
   keywords:
   - bitpay
-  - bip70
   exceptions:
     text: You need to apply the promo code bitcoin for Bitcoin payment to appear.
       See the doc link for details.
@@ -275,7 +271,6 @@ websites:
   othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: League of Legends
   url: https://leagueoflegends.com
   img: leagueoflegends.png
@@ -288,10 +283,9 @@ websites:
   email_address: support@supportprofessionals.net
   bch: false
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
   exceptions:
     text: LIVECARDS used to accept Bitcoin Cash, but as of 2018-12-06 stopped accepting
       it
@@ -338,10 +332,9 @@ websites:
   facebook: mogscom
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: Mojang
   url: https://mojang.com/
   img: mojang.png
@@ -364,7 +357,7 @@ websites:
   img: offgamers.png
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   twitter: offgamers
   facebook: OffGamers
   doc: https://www.offgamers.com/payment-guide/pg/e-wallet/bitcoin-bitcoin-cash
@@ -411,10 +404,9 @@ websites:
   facebook: PlayersChoice
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: Playstation Network
   url: https://www.playstation.com/
   img: psn.png

@@ -103,7 +103,7 @@ websites:
   facebook: bitpayofficial
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
 - name: BitPro
   url: https://bitpro.cc
   email_address: info@bitpro.cc
@@ -379,9 +379,9 @@ websites:
   facebook: neteller
   bch: true
   btc: true
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: Paybis
   url: https://paybis.com/
   img: Paybis.png
@@ -487,7 +487,6 @@ websites:
   othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: Square
   url: https://squareup.com
   twitter: square
@@ -535,10 +534,9 @@ websites:
   twitter: xsolla
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: Yandex.Money
   url: https://money.yandex.ru
   img: yandexmoney.png
