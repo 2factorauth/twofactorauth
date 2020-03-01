@@ -9,18 +9,19 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Get Cache
-      id: cache
-      uses: actions/cache@v1
+    - uses: actions/cache@v1
       with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-bundler
+        path: vendor/cache
+        key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: ${{ runner.os }}-bundle-
 
     - name: Install requirements
-      run: sudo snap install ruby --classic
-
-    - name: Run Bundler
-      run: bundle install --path vendor/bundle
+      run: |
+         sudo snap install ruby --classic
+         bundle config set path 'vendor/cache'
+         bundle config set cache_all true
+         bundle install --jobs 4 --retry 3
+         [ -d "vendor/cache" ] || { bundle package; }
 
     - name: Build site
       run: bundle exec jekyll build
@@ -29,10 +30,10 @@ jobs:
     - name: Run build checks
       run: bundle exec rake verify
 
+    - name: Test JSON files
+      run: bundle exec rake jsonlint
+
     - name: Test HTML files
       run: bundle exec rake proof
       env:
         NOKOGIRI_USE_SYSTEM_LIBRARIES: true
-
-    - name: Test JSON files
-      run: bundle exec rake jsonlint
