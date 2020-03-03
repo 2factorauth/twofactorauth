@@ -1441,6 +1441,18 @@ websites:
   - mollie
   exceptions:
     text: plastic2print used to accept BTC, but as of 2019-05-01 stopped accepting it
+- name: Playtech
+  url: https://www.playtech.co.nz/
+  img: playtech.png
+  twitter: PlaytechNZ
+  facebook: PlaytechNZ
+  bch: true
+  btc: true
+  othercrypto: true
+  region: oc
+  country: NZ
+  keywords:
+  - bitpay
 - name: powercube.dk
   url: https://powercube.dk/
   img: powercubedk.png
