@@ -93,6 +93,19 @@ websites:
     facebook: BancaMediolanum
     lang: it
 
+  - name: Bancolombia
+    url: https://www.grupobancolombia.com
+    img: bancolombia.png
+    tfa:
+      - sms
+      - email
+      - totp
+      - hardware
+    doc: https://www.grupobancolombia.com/personas/productos-servicios/canales-servicio/sucursal-web/clave-dinamica
+    twitter: bancolombia
+    facebook: bancolombia
+    lang: es
+
   - name: Banco Ciudad
     url: https://www.bancociudad.com.ar
     img: bancociudad.png
