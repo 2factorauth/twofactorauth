@@ -177,9 +177,10 @@ websites:
 
   - name: OkCupid
     url: https://www.okcupid.com/
-    twitter: okcupid
-    facebook: okcupid
     img: okcupid.png
+    tfa:
+      - sms
+    doc: https://help.okcupid.com/article/202--
 
   - name: Pinterest
     url: https://pinterest.com
@@ -233,6 +234,7 @@ websites:
     url: https://stackexchange.com/
     img: stack_exchange.png
     email_address: team@stackexchange.com
+    twitter: StackExchange
 
   - name: Tumblr
     url: https://www.tumblr.com/
@@ -250,7 +252,7 @@ websites:
       - totp
       - hardware
     doc: https://support.twitter.com/articles/20170388
-    exception: "SMS only available on select providers."
+    exception: "Mobile apps do not support Hardware 2FA. Hardware 2FA requires enabling back-up method. Cannot add multiple security keys. SMS only available on select providers."
 
   - name: VanillaForums.com
     url: https://vanillaforums.com

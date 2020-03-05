@@ -1,10 +1,9 @@
 websites:
-  - name: Air VPN
+  - name: AirVPN
     url: https://airvpn.org/
     img: airvpn.png
-    twitter: airvpn
-    facebook: airvpn.org
-    email_address: support@airvpn.org
+    tfa:
+      - totp
 
   - name: BolehVPN
     url: https://www.bolehvpn.net/

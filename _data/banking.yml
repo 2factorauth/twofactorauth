@@ -49,12 +49,6 @@ websites:
     facebook: americafirstcu
     img: americafirstcu.png
 
-  - name: American Express
-    url: https://www.americanexpress.com/
-    twitter: AmericanExpress
-    facebook: AmericanExpressUS
-    img: americanexpress.png
-
   - name: America’s Christian Credit Union
     url: https://www.americaschristiancu.com
     img: accu.png
@@ -98,6 +92,27 @@ websites:
     twitter: BancaMediolanum
     facebook: BancaMediolanum
     lang: it
+
+  - name: Banco Ciudad
+    url: https://www.bancociudad.com.ar
+    img: bancociudad.png
+    twitter: BancoCiudad
+    facebook: bancociudad
+    lang: es
+
+  - name: Banco Galicia
+    url: https://www.bancogalicia.com
+    img: bancogalicia.png
+    twitter: BancoGalicia
+    facebook: bancogalicia
+    lang: es
+
+  - name: Banco Provincia
+    url: https://www.bancoprovincia.com.ar
+    img: bancoprovincia.png
+    twitter: BPResponde
+    facebook: bancoprovincia
+    lang: es
 
   - name: Bank Central Asia (BCA)
     url: https://www.bca.co.id/en
@@ -174,9 +189,16 @@ websites:
       - hardware
     doc: https://www.bbbank.de/produkte/konten-und-karten/online-banking/tan-verfahren.html
 
+  - name: BBVA Argentina
+    url: https://www.bbva.com.ar/
+    img: bbva.png
+    facebook: bbva.argentina
+    twitter: bbva_argentina
+    lang: es
+
   - name: BBVA Compass
     url: https://www.bbvacompass.com/
-    img: bbvacompass.png
+    img: bbva.png
     facebook: bbvacompass
     twitter: BBVACompass
 
@@ -570,6 +592,13 @@ websites:
       - proprietary
       - hardware
     doc: https://www.hsbc.co.uk/help/security-centre/secure-key/secure-key-help/
+    
+  - name: HSBC Argentina
+    url: https://www.hsbc.com.ar/
+    twitter: HSBC_AR
+    facebook: HSBCArgentina
+    img: hsbc.png
+    lang: es
 
   - name: Huntington National Bank
     url: https://www.huntington.com
@@ -591,6 +620,13 @@ websites:
     twitter: IBERIABANK
     facebook: IberiaBank
     img: iberiabank.png
+
+  - name: ICBC Argentina
+    url: https://www.icbc.com.ar
+    twitter: ICBCArgentina
+    facebook: ICBCArgentina
+    img: icbc.png
+    lang: es
 
   - name: ICICI
     url: https://www.icicibank.com
@@ -870,7 +906,7 @@ websites:
     img: pncbank.png
     tfa:
       - sms
-    doc: https://www.pnc.com/en/customer-service/update-center/sign-on-changes.html
+    doc: https://www.pnc.com/en/security-privacy/added-layer-security.html
 
   - name: Podravska banka
     url: https://www.poba.hr/
@@ -950,13 +986,20 @@ websites:
       - sms
       - phone
       - email
-    doc: https://www.sffirecu.org/access/online-and-mobile-banking/new-olb
+    doc: https://www.sffirecu.org/support/frequently-asked-questions/
 
   - name: Santa Clara County Federal Credit Union
     url: https://www.sccfcu.org/
     twitter: SCCFCU
     facebook: SCCFCU
     img: sccfcu.png
+
+  - name: Santander AR
+    url: https://www.santander.com.ar/
+    img: santander.png
+    twitter: Santander_Ar
+    facebook: Santander.Ar
+    lang: es
 
   - name: Santander BR
     url: https://www.santander.com.br/
@@ -972,19 +1015,19 @@ websites:
     tfa:
       - sms
       - proprietary
-    doc: https://santander.pl/firmy/bankowosc-elektroniczna/bzwbk24-mini-firma/metody-autoryzacji/metody-autoryzacji.html
+    doc: https://www.santander.pl/klient-indywidualny/kontakt/pytania-i-odpowiedzi-bankowosc-internetowa
 
   - name: Santander PT
-    url: https://www.santandertotta.pt/
+    url: https://www.santander.pt/
     img: santander.png
-    twitter: santanderpt
-    facebook: santanderpt
-    email_address: netbancoparticulares@santander.pt
-    lang: pt
+    tfa:
+      - sms
+    doc: https://www.santander.pt/pt_PT/Particulares/Informacoes/psd2-diretiva-servicos-pagamento.html
 
   - name: Santander UK
     url: https://www.santander.co.uk
     img: santander.png
+    status: https://www.santander.co.uk/personal/support/ways-to-bank/changes-to-how-you-log-on-to-online-banking
 
   - name: SchoolsFirst FCU
     url: https://www.schoolsfirstfcu.org/
@@ -1274,6 +1317,13 @@ websites:
     twitter: widiba_tw
     facebook: widiba.it
     lang: it
+
+  - name: Wilobank
+    url: https://www.wilobank.com
+    img: wilobank.png
+    twitter: wilobank
+    facebook: wilobank
+    lang: es
 
   - name: Zagrebačka banka
     url: https://www.zaba.hr/

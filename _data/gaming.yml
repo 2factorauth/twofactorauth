@@ -5,7 +5,7 @@ websites:
     tfa:
       - email
       - proprietary
-    doc: https://support.ankama.com/hc/en-us/categories/200093427-DOFUS-Security
+    doc: https://support.ankama.com/hc/en-us/categories/200093427
 
   - name: Ashes of Creation
     url: https://ashesofcreation.com
@@ -311,8 +311,9 @@ websites:
     url: https://store.steampowered.com/
     img: steam.png
     tfa:
+      - email
       - proprietary
-    doc: https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030
+    doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
 
   - name: Tibia
     url: https://www.tibia.com/
@@ -344,6 +345,13 @@ websites:
       - totp
       - sms
     doc: https://support.ubi.com/en-GB/Faqs/000039953
+
+  - name: Warframe
+    url: https://www.warframe.com/
+    img: warframe.png
+    tfa:
+      - email
+    doc: https://www.warframe.com/2fa-faq
 
   - name: Wargaming
     url: https://wargaming.net/

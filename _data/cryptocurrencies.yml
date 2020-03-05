@@ -190,14 +190,6 @@ websites:
       - totp
     doc: https://support.circle.com/hc/en-us/articles/213560483
 
-  - name: COBINHOOD
-    url: https://cobinhood.com
-    img: cobinhood.png
-    tfa:
-      - sms
-      - totp
-    doc: https://cobinhood.zendesk.com/hc/en-us/articles/115003476871
-
   - name: Coin Cafe
     url: https://coincafe.com
     img: coincafe.png
@@ -258,8 +250,8 @@ websites:
     img: coinify.png
     tfa:
       - totp
-      - hardware
-    exception: "While Coinify has aquired BIPS to allow for trading, only merchant accounts support TFA at this time. Trading is done through a separate account. Hardware support is limited to a print-out character matrix."
+    doc: https://help.coinify.com/article/114
+    exception: "2FA is only available for merchant accounts. myCoinify trading accounts do not support 2FA."
 
   - name: Coinjar
     url: https://coinjar.com
@@ -394,6 +386,13 @@ websites:
     tfa:
       - totp
     doc: https://suporte.mercadobitcoin.com.br/hc/pt-br/articles/360000385152
+
+  - name: PayKassa
+    url: https://paykassa.pro/
+    img: paykassa.png
+    tfa:
+      - totp
+    doc: https://paykassa.pro/en/news/s-paykassa-vashi-dannye-pod-nadejnoy-zashchitoy/
 
   - name: Poloniex
     url: https://poloniex.com/
