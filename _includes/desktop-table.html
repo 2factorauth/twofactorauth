@@ -30,7 +30,7 @@
         {% assign workonit_tweet = site.data.languages[website.lang].work_tweet %}
       {% endif %}
     {% endif %}
-    <tr class="desktop-tr">
+    <tr class="desktop-tr" data-tfa="{{website.tfa | join: " "}}">
       {% if website.status %}
         <td class="main progress">
           {% include row-title.html section=section_id website=website type='desktop' %}

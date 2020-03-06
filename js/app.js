@@ -119,6 +119,7 @@ function isOpen(category) {
  * @param category The id of a category as a string
  */
 function openCategory(category) {
+
   // Close all active categories
   $('.category h5 i').removeClass('active-icon');
   $('.website-table').css('display', 'none');
@@ -128,11 +129,27 @@ function openCategory(category) {
 
   var icon = $('#' + category + ' h5 i');
   icon.addClass('active-icon');
+
   if ($(window).width() > 768) {
-    $('#' + category + '-desktoptable').css('display', 'block');
+    var suffix = '-desktoptable';
   } else {
-    $('#' + category + '-mobiletable').css('display', 'block');
+    var suffix = '-mobiletable'
   }
+  // Hide all rows
+  $('#' + category + suffix + '>table>tbody>tr').css('display', 'none');
+
+  // Show the relevant rows
+  const tfaTypes = ["sms", "phone", "email", "software", "hardware"];
+
+  for(i in tfaTypes) {
+    var tfaType = tfaTypes[i];
+    if ($('#checkbox-' + tfaType).is(":checked")) {
+      $('#' + category + suffix + '>table>tbody>tr[data-tfa*="'+tfaType+'"]').css('display', 'table-row');
+    }
+  }
+
+  // Show the entire category
+  $('#' + category + suffix).css('display', 'block');
 
   // Scroll smoothly to category selector
   $('html, body').animate({
@@ -155,20 +172,20 @@ function closeCategory(category) {
  * Returns a function, that, as long as it continues to be invoked, will not
  * be triggered. The function will be called after it stops being called for
  * N milliseconds.
- * 
+ *
  * @param func The function to be debounced
- * @param wait The time in ms to debounce 
+ * @param wait The time in ms to debounce
  */
 function debounce(func, wait) {
   var timeout;
-  
+
 	return function() {
 		var context = this, args = arguments;
 		var later = function() {
 			timeout = null;
 			func.apply(context, args);
     };
-    
+
 		clearTimeout(timeout);
 		timeout = setTimeout(later, wait);
 		if (!timeout) func.apply(context, args);
