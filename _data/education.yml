@@ -317,9 +317,9 @@ websites:
   - name: Pluralsight
     url: https://www.pluralsight.com
     img: pluralsight.png
-    twitter: pluralsight
-    facebook: pluralsight
-    email_address: support@pluralsight.com
+    tfa:
+      - totp
+    doc: https://help.pluralsight.com/help/multifactor-authentication
 
   - name: Purdue University
     url: https://www.purdue.edu/
