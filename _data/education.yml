@@ -114,6 +114,17 @@ websites:
     twitter: CompTIA
     facebook: CompTIA
 
+  - name: Cornell University
+    url: https://cornell.edu/
+    img: cornell.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+      - u2f
+      - phone
+    doc: https://it.cornell.edu/twostep
+
   - name: Coursera
     url: https://www.coursera.org/
     twitter: coursera
