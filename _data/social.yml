@@ -106,7 +106,7 @@ websites:
       - totp
       - email
     doc: https://help.hootsuite.com/hc/en-us/articles/204595950
-    exception: Email is always enabled as backup method for Software Token.
+    exception: "Email is always enabled as backup method for Software Token."
 
   - name: ICQ
     url: https://icq.com/
