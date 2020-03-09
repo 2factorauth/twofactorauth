@@ -188,7 +188,8 @@ websites:
     tfa:
       - email
       - sms
-    doc: http://www.skrill.com/en/support/#/path/905761532
+    doc: https://www.skrill.com/en/support#/path/SECURITY/1362150272/
+    exception: "Email method requires an additional PIN"
 
   - name: Square
     url: https://squareup.com
