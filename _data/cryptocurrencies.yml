@@ -160,6 +160,13 @@ websites:
       - totp
     doc: https://blog.btcpop.co/2017/04/27/signing-security-btcpop-co-account/
 
+  - name: Buda
+    url: https://www.buda.com
+    img: buda.png
+    tfa:
+      - totp
+    doc: https://soporte.buda.com/es/articles/2379080
+
   - name: BX Thailand
     url: https://bx.in.th/
     img: bxthailand.png
