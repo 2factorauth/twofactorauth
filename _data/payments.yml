@@ -186,9 +186,9 @@ websites:
     url: https://skrill.com/
     img: skrill.png
     tfa:
-      - totp
-      - hardware
-    doc: https://www.skrill.com/en/support#/path/ACCOUNT/Two-Factor-Authentication/905761532
+      - email
+      - sms
+    doc: http://www.skrill.com/en/support/#/path/905761532
 
   - name: Square
     url: https://squareup.com
