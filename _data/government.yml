@@ -1,4 +1,13 @@
 websites:
+  - name: AFIP
+    url: https://www.afip.gob.ar
+    img: afip.png
+    tfa:
+      - hardware
+      - proprietary
+    doc: https://serviciosweb.afip.gob.ar/genericos/GuiaDeTramites/VerGuia.aspx?tr=38
+    exception: "2FA is only available for users with security level (Clave Fiscal) 4"
+
   - name: Agenzia delle Entrate
     url: https://www.agenziaentrate.gov.it/
     img: agenziaentrate.png
@@ -28,11 +37,26 @@ websites:
       - proprietary
     doc: https://www.digid.nl/nl/vraag-en-antwoord/hoe-kan-ik-de-sms-controle-toevoegen/
 
+  - name: Elster
+    url: https://www.elster.de/
+    img: elster.png
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.elster.de/eportal/helpGlobal?themaGlobal=help_eop
+
   - name: Federal Student Aid
     url: https://studentaid.ed.gov
     img: federalstudentaid.png
     twitter: FAFSA
     facebook: FederalStudentAid
+
+  - name: Hamburg Serviceportal
+    url: https://serviceportal.hamburg.de/
+    img: hamburg.png
+    tfa:
+      - hardware
+    doc: https://serviceportal.hamburg.de/HamburgGateway/FVP/FV/BasisHilfe/HilfeA-Z.aspx#Wie_kann_ich_die_Funktion_„Anmelden_mit_Online-Ausweisfunktion“_einrichten
 
   - name: Healthcare.gov
     url: https://healthcare.gov

@@ -18,6 +18,11 @@ websites:
     twitter: APMEX
     img: apmex.png
 
+  - name: Axos Invest
+    url: https://www.axosinvest.com/
+    twitter: AxosInvest
+    img: axosinvest.png
+
   - name: Betterment
     url: https://www.betterment.com/
     img: betterment.png
@@ -56,6 +61,13 @@ websites:
       - proprietary
       - hardware
     doc: https://us.etrade.com/security-center/securityid
+    
+  - name: eToro
+    url: https://www.etoro.com
+    img: etoro.png
+    tfa:
+      - sms
+    doc: https://www.etoro.com/en-us/customer-service/help/1281239912/-
 
   - name: Fidelity Investments
     url: https://www.fidelity.com
@@ -110,6 +122,13 @@ websites:
       - sms
     doc: https://github.com/2factorauth/twofactorauth/issues/2275
 
+  - name: Mintos
+    url: https://www.mintos.com/
+    img: mintos.png
+    tfa:
+      - totp
+    doc: https://help.mintos.com/hc/en-us/sections/360000373858
+
   - name: MotifInvesting
     url: https://www.motifinvesting.com/
     img: motif.png
@@ -132,6 +151,13 @@ websites:
       - phone
       - email
     doc: https://www.personalcapital.com/safety-and-security
+
+  - name: Provident Metals
+    url: https://www.providentmetals.com/
+    img: providentmetals.png
+    twitter: ProvidentMetals
+    facebook: providentmetals
+    email_address: help@providentmetals.com
 
   - name: Prudential Financial
     url: https://www.prudential.com
@@ -169,6 +195,15 @@ websites:
     twitter: SigFigInsider
     img: sigfig.png
 
+  - name: Stash
+    url: https://www.stashinvest.com
+    img: stash.png
+    tfa:
+      - sms
+      - phone
+      - email
+    doc: https://ask.stashinvest.com/ask/what-is-two-factor-authentication/
+
   - name: Sunsuper
     url: https://www.sunsuper.com.au/
     twitter: Sunsuper
@@ -198,6 +233,11 @@ websites:
     twitter: TradeKing
     img: tradeking.png
 
+  - name: UniSuper
+    url: https://www.unisuper.com.au/
+    twitter: UniSuperNews
+    img: unisuper.png
+
   - name: Vanguard
     url: https://www.vanguard.com/
     img: vanguard.png
@@ -223,8 +263,3 @@ websites:
       - sms
       - totp
     doc: https://help.wealthsimple.com/hc/en-ca/articles/360005175373
-
-  - name: WiseBanyan
-    url: https://www.wisebanyan.com/
-    twitter: WiseBanyan
-    img: wisebanyan.png
