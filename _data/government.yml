@@ -73,7 +73,8 @@ websites:
       hardware: Yes
       otp: Yes
       u2f: Yes
-      doc: https://www.login.gov/help/changing-settings/how-do-I-set-up-an-authentication-app/
+      multipleu2f: Yes
+      doc: https://www.login.gov/help/authentication-methods/which-authentication-method-should-i-use/
 
     - name: myGov
       url: https://my.gov.au
