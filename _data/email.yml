@@ -18,6 +18,8 @@ websites:
       u2f: Yes
       multipleu2f: Yes
       doc: https://www.fastmail.com/help/account/2fa.html
+      exceptions:
+          text: "U2F is only supported on Firefox and Chrome desktop browsers. TOTP or SMS auth needs to be used on mobile apps and browsers."
 
     - name: Freenet
       url: https://www.freenet.de/
