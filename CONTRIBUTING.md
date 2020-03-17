@@ -148,6 +148,22 @@ The following is an example of a website that *supports* TFA but not multiple do
       doc: http://www.google.com/intl/en-US/landing/2step/features.html
 ```
 
+The following is an example of a website that additionally supports adding multiple dongles
+and passwordless authentication with FIDO2 devices:
+
+```yml
+    - name: Windows Hello
+      url: https://www.microsoft.com/
+      img: windows-hello.png
+      tfa: Yes
+      hardware: Yes
+      otp: Yes
+      u2f: Yes
+      multipleu2f: Yes
+      passwordless: Yes
+      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+```
+
 #### Adding a site that *does not* support TFA
 
 If a site does not provide TFA, the `twitter:` field should be included if the site uses

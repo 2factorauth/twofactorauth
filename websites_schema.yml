@@ -37,6 +37,9 @@ mapping:
           "multipleu2f":
             type: bool
             pattern: /true/
+          "passwordless":
+            type: bool
+            pattern: /true/
           "sms":
             type: bool
             pattern: /true/

@@ -98,6 +98,9 @@
           {% if website.multipleu2f %}
           <i class="clone large icon" title="Multiple Dongle Support (>1)"></i>
           {% endif %}
+          {% if website.passwordless %}
+          <i class="sign in alt large icon" title="Passwordless Authentication With FIDO2"></i>
+          {% endif %}
         </td>
       {% else %}
         <td class="main negative">

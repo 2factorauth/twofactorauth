@@ -38,5 +38,5 @@ Be careful what to include. Especially changes in the files mentioned above shou
 care.
 
 We are able to use their changes directly, but unfortunately we can not push ours directly upstream.
-Thus, every `otp`, `u2f`, and `multipleu2f` should be kept when comparing. Sites deleted on
-twofactorauth.org may be deleted on dongleauth.info as well.
+Thus, every `otp`, `u2f`, `multipleu2f`, `passwordless` should be kept when comparing. Sites deleted
+on twofactorauth.org may be deleted on dongleauth.info as well.
