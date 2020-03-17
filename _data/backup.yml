@@ -233,10 +233,12 @@ websites:
   - name: Sync
     url: https://www.sync.com
     img: sync.png
-    software: Yes
-    email: Yes
     tfa: Yes
-    doc: https://www.sync.com/help/how-do-i-setup-two-factor-authentication/
+    email: Yes
+    software: Yes
+    hardware: Yes
+    otp: Yes
+    doc: https://www.sync.com/help/account-security/#security2fa
 
   - name: Synology
     url: https://www.synology.com/
