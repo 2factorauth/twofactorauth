@@ -186,6 +186,12 @@ websites:
     doc: https://ttlc.intuit.com/questions/2902682
     exception: "Software 2FA requires enabling SMS or phone call as a back-up."
 
+  - name: InvoiceBerry
+    url: https://www.invoiceberry.com/
+    img: invoiceberry.png
+    twitter: invoiceberry
+    facebook: InvoiceBerry
+
   - name: Invoiced
     url: https://invoiced.com/
     img: invoiced.png
@@ -440,9 +446,3 @@ websites:
     tfa:
       - totp
     doc: https://docs.youneedabudget.com/article/1364--
-
-  - name: InvoiceBerry
-    url: https://www.invoiceberry.com/
-    img: invoiceberry.png
-    twitter: invoiceberry
-    facebook: InvoiceBerry
