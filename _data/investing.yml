@@ -11,6 +11,13 @@ websites:
       - totp
     doc: https://www.youinvest.co.uk/faq/how-do-i-set-two-factor-authentication
 
+  - name: APMEX
+    url: https://www.apmex.com/
+    email_address: service@APMEX.com
+    facebook: APMEX
+    twitter: APMEX
+    img: apmex.png
+
   - name: Axos Invest
     url: https://www.axosinvest.com/
     twitter: AxosInvest
@@ -54,6 +61,13 @@ websites:
       - proprietary
       - hardware
     doc: https://us.etrade.com/security-center/securityid
+    
+  - name: eToro
+    url: https://www.etoro.com
+    img: etoro.png
+    tfa:
+      - sms
+    doc: https://www.etoro.com/en-us/customer-service/help/1281239912/-
 
   - name: Fidelity Investments
     url: https://www.fidelity.com
@@ -108,6 +122,13 @@ websites:
       - sms
     doc: https://github.com/2factorauth/twofactorauth/issues/2275
 
+  - name: Mintos
+    url: https://www.mintos.com/
+    img: mintos.png
+    tfa:
+      - totp
+    doc: https://help.mintos.com/hc/en-us/sections/360000373858
+
   - name: MotifInvesting
     url: https://www.motifinvesting.com/
     img: motif.png
@@ -130,6 +151,13 @@ websites:
       - phone
       - email
     doc: https://www.personalcapital.com/safety-and-security
+
+  - name: Provident Metals
+    url: https://www.providentmetals.com/
+    img: providentmetals.png
+    twitter: ProvidentMetals
+    facebook: providentmetals
+    email_address: help@providentmetals.com
 
   - name: Prudential Financial
     url: https://www.prudential.com
@@ -166,6 +194,15 @@ websites:
     url: https://www.sigfig.com/
     twitter: SigFigInsider
     img: sigfig.png
+
+  - name: Stash
+    url: https://www.stashinvest.com
+    img: stash.png
+    tfa:
+      - sms
+      - phone
+      - email
+    doc: https://ask.stashinvest.com/ask/what-is-two-factor-authentication/
 
   - name: Sunsuper
     url: https://www.sunsuper.com.au/

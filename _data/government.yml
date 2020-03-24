@@ -1,10 +1,26 @@
 websites:
+  - name: AFIP
+    url: https://www.afip.gob.ar
+    img: afip.png
+    tfa:
+      - hardware
+      - proprietary
+    doc: https://serviciosweb.afip.gob.ar/genericos/GuiaDeTramites/VerGuia.aspx?tr=38
+    exception: "2FA is only available for users with security level (Clave Fiscal) 4"
+
   - name: Agenzia delle Entrate
     url: https://www.agenziaentrate.gov.it/
     img: agenziaentrate.png
     twitter: Agenzia_Entrate
     facebook: agenziadelleentrate
     lang: it
+
+  - name: ANSES
+    url: https://www.anses.gob.ar
+    img: anses.png
+    twitter: ansesgob
+    facebook: ansesgob
+    lang: es
 
   - name: Canada Revenue Agency
     url: https://www.canada.ca/en/revenue-agency.html
@@ -42,6 +58,13 @@ websites:
     twitter: FAFSA
     facebook: FederalStudentAid
 
+  - name: Hamburg Serviceportal
+    url: https://serviceportal.hamburg.de/
+    img: hamburg.png
+    tfa:
+      - hardware
+    doc: https://serviceportal.hamburg.de/HamburgGateway/FVP/FV/BasisHilfe/HilfeA-Z.aspx#Wie_kann_ich_die_Funktion_„Anmelden_mit_Online-Ausweisfunktion“_einrichten
+
   - name: Healthcare.gov
     url: https://healthcare.gov
     twitter: HealthCareGov
@@ -71,6 +94,13 @@ websites:
       - totp
       - hardware
     doc: https://www.login.gov/help/creating-an-account/two-factor-authentication/
+
+  - name: Mi Argentina
+    url: https://www.argentina.gob.ar
+    img: miargentina.png
+    facebook: mi.argentina.gob.ar
+    twitter: GobDigitalAR
+    lang: es
 
   - name: myGov
     url: https://my.gov.au

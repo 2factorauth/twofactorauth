@@ -69,7 +69,7 @@ websites:
       - totp
       - u2f
     doc: https://www.facebook.com/help/148233965247823
-    exception: "Software or SMS 2FA must be set up before a hardware token can be added."
+    exception: "Hardware 2FA requires also enabling a back-up method and is unsupported on mobile."
 
   - name: Flickr
     url: https://www.flickr.com
@@ -104,7 +104,9 @@ websites:
     img: hootsuite.png
     tfa:
       - totp
+      - email
     doc: https://help.hootsuite.com/hc/en-us/articles/204595950
+    exception: "Email is always enabled as backup method for Software Token."
 
   - name: ICQ
     url: https://icq.com/
@@ -177,9 +179,10 @@ websites:
 
   - name: OkCupid
     url: https://www.okcupid.com/
-    twitter: okcupid
-    facebook: okcupid
     img: okcupid.png
+    tfa:
+      - sms
+    doc: https://help.okcupid.com/article/202--
 
   - name: Pinterest
     url: https://pinterest.com
@@ -233,6 +236,7 @@ websites:
     url: https://stackexchange.com/
     img: stack_exchange.png
     email_address: team@stackexchange.com
+    twitter: StackExchange
 
   - name: Tumblr
     url: https://www.tumblr.com/
@@ -250,7 +254,7 @@ websites:
       - totp
       - hardware
     doc: https://support.twitter.com/articles/20170388
-    exception: "SMS only available on select providers."
+    exception: "Mobile apps do not support Hardware 2FA. Hardware 2FA requires enabling back-up method. Cannot add multiple security keys. SMS only available on select providers."
 
   - name: VanillaForums.com
     url: https://vanillaforums.com
