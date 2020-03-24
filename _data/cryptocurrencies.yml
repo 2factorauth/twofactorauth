@@ -333,8 +333,9 @@ websites:
     tfa:
       - sms
       - proprietary
-      - phone
-    doc: https://gemini.com/blog/better-two-factor-authentication/
+      - hardware
+      - u2f
+    doc: https://gemini24.zendesk.com/hc/en-us/sections/360001694951
 
   - name: HitBTC
     url: https://www.hitbtc.com/
