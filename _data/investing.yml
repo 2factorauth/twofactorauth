@@ -11,6 +11,13 @@ websites:
       - totp
     doc: https://www.youinvest.co.uk/faq/how-do-i-set-two-factor-authentication
 
+  - name: APMEX
+    url: https://www.apmex.com/
+    email_address: service@APMEX.com
+    facebook: APMEX
+    twitter: APMEX
+    img: apmex.png
+
   - name: Axos Invest
     url: https://www.axosinvest.com/
     twitter: AxosInvest
@@ -96,6 +103,12 @@ websites:
     doc: https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log
     exception: "SMS 2FA only works as long as no other method has been enabled."
 
+  - name: JM Bullion
+    url: https://www.jmbullion.com/
+    twitter: JMBullion
+    facebook: JMBullion
+    img: jmbullion.png
+
   - name: John Hancock Pensions
     url: https://www.jhancockpensions.com
     twitter: johnhancockusa
@@ -136,6 +149,14 @@ websites:
     tfa:
       - totp
     doc: https://support.nutmeg.com/hc/en-us/articles/115000495111
+
+  - name: onvista bank
+    url: https://www.onvista-bank.de/
+    img: onvista.png
+    tfa:
+      - sms
+      - phone
+    doc: https://www.onvista-bank.de/service/sicherheit/transaktionssicherheit.html#tab-1301-2
 
   - name: Personal Capital
     url: https://www.personalcapital.com
@@ -256,3 +277,11 @@ websites:
       - sms
       - totp
     doc: https://help.wealthsimple.com/hc/en-ca/articles/360005175373
+
+  - name: WeltSparen
+    url: https://www.weltsparen.de/
+    img: weltsparen.png
+    twitter: WeltSparen
+    facebook: WeltSparen
+    email_address: kundenservice@weltsparen.de
+    lang: de

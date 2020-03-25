@@ -87,6 +87,15 @@ websites:
       - proprietary
     doc: https://bitlish.com/how#mfa
 
+  - name: BitMEX
+    url: https://www.bitmex.com
+    img: bitmex.png
+    tfa:
+      - totp
+      - hardware
+    doc: https://blog.bitmex.com/use-two-factor-authentication-and-dont-reuse-passwords/
+    exception: "At most one 2FA method can be enabled at any time."
+
   - name: Bitpanda
     url: https://www.bitpanda.com/
     img: bitpanda.png
@@ -160,12 +169,28 @@ websites:
       - totp
     doc: https://blog.btcpop.co/2017/04/27/signing-security-btcpop-co-account/
 
+  - name: Buda
+    url: https://www.buda.com
+    img: buda.png
+    tfa:
+      - totp
+    doc: https://soporte.buda.com/es/articles/2379080
+
   - name: BX Thailand
     url: https://bx.in.th/
     img: bxthailand.png
     tfa:
       - totp
     doc: https://bx.in.th/info/faq/
+
+  - name: Bybit
+    url: https://www.bybit.com/
+    img: bybit.png
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://help.bybit.com/hc/en-us/articles/360039748653
 
   - name: CEX.IO
     url: https://cex.io/
@@ -326,8 +351,9 @@ websites:
     tfa:
       - sms
       - proprietary
-      - phone
-    doc: https://gemini.com/blog/better-two-factor-authentication/
+      - hardware
+      - u2f
+    doc: https://gemini24.zendesk.com/hc/en-us/sections/360001694951
 
   - name: HitBTC
     url: https://www.hitbtc.com/
