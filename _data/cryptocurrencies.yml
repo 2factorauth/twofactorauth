@@ -87,6 +87,15 @@ websites:
       - proprietary
     doc: https://bitlish.com/how#mfa
 
+  - name: BitMEX
+    url: https://www.bitmex.com
+    img: bitmex.png
+    tfa:
+      - totp
+      - hardware
+    doc: https://blog.bitmex.com/use-two-factor-authentication-and-dont-reuse-passwords/
+    exception: "At most one 2FA method can be enabled at any time."
+
   - name: Bitpanda
     url: https://www.bitpanda.com/
     img: bitpanda.png
