@@ -183,6 +183,15 @@ websites:
       - totp
     doc: https://bx.in.th/info/faq/
 
+  - name: Bybit
+    url: https://www.bybit.com/
+    img: bybit.png
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://help.bybit.com/hc/en-us/articles/360039748653
+
   - name: CEX.IO
     url: https://cex.io/
     img: cex.png
