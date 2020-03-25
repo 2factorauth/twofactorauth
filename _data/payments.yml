@@ -69,6 +69,7 @@ websites:
     url: https://gocardless.com/
     tfa:
       - sms
+      - totp
     doc: https://support.gocardless.com/hc/en-gb/articles/360001164385
 
   - name: Google Pay
