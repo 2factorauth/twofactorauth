@@ -323,10 +323,13 @@ websites:
     facebook: chimebank
 
   - name: CIBC
-    url: https://www.cibc.ca
-    twitter: cibc
-    facebook: CIBC
+    url: https://www.cibc.com
     img: cibc.png
+    tfa:
+      - sms
+      - phone
+      - email
+    doc: https://www.cibc.com/en/privacy-security/two-step-verification-b.html
 
   - name: Citibank
     url: https://online.citi.com/
