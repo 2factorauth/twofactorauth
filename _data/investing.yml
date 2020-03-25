@@ -144,6 +144,14 @@ websites:
       - totp
     doc: https://support.nutmeg.com/hc/en-us/articles/115000495111
 
+  - name: onvista bank
+    url: https://www.onvista-bank.de/
+    img: onvista.png
+    tfa:
+      - sms
+      - phone
+    doc: https://www.onvista-bank.de/service/sicherheit/transaktionssicherheit.html#tab-1301-2
+
   - name: Personal Capital
     url: https://www.personalcapital.com
     img: personalcapital.png
