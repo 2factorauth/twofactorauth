@@ -239,6 +239,13 @@ websites:
       - u2f
     doc: https://support.coinbase.com/customer/en/portal/articles/1658338
 
+  - name: Coincheck
+    url: https://coincheck.com/
+    img: coincheck.png
+    tfa:
+      - totp
+    doc: https://faq.coincheck.com/s/article/20204
+
   - name: CoinDeal
     url: https://coindeal.com
     img: coindeal.png
