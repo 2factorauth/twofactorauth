@@ -22,5 +22,5 @@ spec:
         - containerPort: 80
         resources:
           requests:
-            memory: "64Mi"
+            memory: "16Mi"
       restartPolicy: Always
