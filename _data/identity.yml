@@ -4,9 +4,10 @@ websites:
     img: 1password.png
     tfa:
       - totp
+      - u2f
       - hardware
     doc: https://support.1password.com/two-factor-authentication/
-    exception: "Teams using Duo with 1Password can't enable additional 2FA as it's already handled by Duo"
+    exception: "Teams using Duo with 1Password can't enable additional 2FA as it's already handled by Duo. Hardware tokens (not U2F) are only available through Duo."
 
   - name: 7Pass
     url: https://7pass.de

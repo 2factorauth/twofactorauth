@@ -198,6 +198,15 @@ websites:
       - hardware
     doc: https://www.emailcenteruk.com/maxemail/platform-security-collaboration/
 
+  - name: Nulab
+    url: https://nulab.com/
+    img: nulab.png
+    tfa:
+      - u2f
+      - totp
+      - sms
+    doc: https://support.nulab.com/hc/en-us/articles/115001025087
+
   - name: Pipedrive
     url: https://www.pipedrive.com/
     img: pipedrive.png
