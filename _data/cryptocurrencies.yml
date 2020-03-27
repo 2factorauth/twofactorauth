@@ -455,6 +455,14 @@ websites:
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2321#issuecomment-273971890
 
+  - name: STEX
+    url: https://stex.com
+    img: stex.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://help.stex.com/en/articles/3486981#individual-account-security-settings
+
   - name: Uphold
     url: https://uphold.com/
     img: uphold.png
