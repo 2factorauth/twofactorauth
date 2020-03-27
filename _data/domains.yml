@@ -207,7 +207,7 @@ websites:
       - totp
       - u2f
     doc: https://www.godaddy.com/help/enable-two-step-verification-7502
-    exception: "If hardware 2FA enabled, customer support unavailable by phone without also enabling software or SMS 2FA."
+    exception: "If hardware 2FA enabled, customer support by phone requires enabling back-up method."
 
   - name: Google Domains
     url: https://domains.google.com
