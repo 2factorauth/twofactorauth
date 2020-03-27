@@ -84,28 +84,16 @@ websites:
   region: eu
   country: GR
   city: Siros
-- name: Perivoli Guest Rooms
-  url: https://www.guest-rooms.com
-  img: perivoli.png
-  facebook: perivoli.guest.rooms
-  email_address: itzortzak@gmail.com
-  region: eu
-  country: GR
-  city: Kokkinos Pirgos
-  bch: true
-  btc: true
-  othercrypto: true
-  doc: https://www.guest-rooms.com/2018/06/bitcoin-cash-and-bitcoin-core-accepted.html
 - name: Private Mansions
-  url: https://book.privatemansions.org/
+  url: https://privatemansions.org/
   img: privatemansions.png
   email_address: welcome@privatemansions.org
   region: eu
   country: NL
   city: Amsterdam
-  bch: true
-  btc: true
-  othercrypto: true
+  bch: false
+  btc: false
+  othercrypto: false
 - name: Riddell Travel
   url: https://www.riddelltravel.com
   img: riddelltravel.png
@@ -115,8 +103,7 @@ websites:
   othercrypto: true
   doc: https://www.reddit.com/r/btc/comments/88yb6o/crypto_giving_you_sleepless_nights_rather_go_on_a/
   exceptions:
-    text: Bitcoin Cash address will be provided once you've decided on your preferred
-      package.
+    text: Bitcoin Cash address will be provided once you've decided on your preferred package.
 - name: SV Breta
   url: https://breta.weebly.com/
   img: svbreta.png

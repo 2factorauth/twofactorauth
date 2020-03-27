@@ -3,11 +3,11 @@ Contributing to acceptBitcoin.Cash
 
 ## Introduction
 
-First off, **thanks for your interest in contributing!** Your help will foster growth for the benefit of Bitcoin Cash, and the community overall. More are always welcomed.
+First off, **thanks for your interest in contributing!** Your help will foster growth for the benefit of Bitcoin Cash and the community overall. More are always welcomed.
 
 ### _A quick note..._
 
-The site maintainers do not endorse nor confirm the legitimacy of any of the listings linked to on this site. While we try our best to verify the information submitted, it's possible that we may miss something, or a service may change/information becomes outdated. If you notice anything, please [raise a new issue](https://github.com/acceptbitcoincash/acceptbitcoincash/issues/new).
+The site maintainers do not endorse nor confirm the legitimacy of the listings linked to on this site. While we try our best to verify the information submitted, it's possible that we may miss something, or a service may change/information becomes outdated. If you notice anything, please [raise a new issue](https://github.com/acceptbitcoincash/acceptbitcoincash/issues/new).
 
 Adding a site is easy. Read below for the basics, and if you're more technically-inclined, detailed instructions are further down this document. Regardless, the only thing **you need** is **a Github account**.
 
@@ -59,7 +59,7 @@ All the data is managed through a series of [YAML](http://yaml.org) files so it 
 useful to read up on the YAML syntax.
 
 To add a new site, go to the [data files](_data/) and get familiar with how it
-is setup. There is a section and corresponding file for each Category. Site icons
+is set up. There is a section and corresponding file for each Category. Site icons
 are stored in folders corresponding to each of those categories in their own
 [folder](img/), and must be a 32x32 PNG (alpha optional) or JPG image.
 
