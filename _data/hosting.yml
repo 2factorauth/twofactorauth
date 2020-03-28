@@ -186,6 +186,13 @@ websites:
       - hardware
     doc: https://wiki.hetzner.de/index.php/KonsoleH:Zwei-Faktor-Authentifizierung
 
+  - name: Host Europe
+    url: https://www.hosteurope.de/
+    img: hosteurope.png
+    tfa:
+      - sms
+    doc: https://www.hosteurope.de/faq/kis/allgemeines0/wo-kann-ich-passworte-neu-vergeben/
+
   - name: Hostens
     url: https://www.hostens.com/
     img: hostens.png
@@ -323,6 +330,13 @@ websites:
       - sms
       - totp
     doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
+
+  - name: Neolo
+    url: https://www.neolo.com
+    img: neolo.png
+    tfa:
+      - totp
+    doc: https://ar.neolo.com/knowledgebase/215/Autenticacion-de-2-factores.html
 
   - name: Netcup
     url: https://netcup.eu/

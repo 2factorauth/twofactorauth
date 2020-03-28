@@ -106,6 +106,19 @@ websites:
     twitter: BancoGalicia
     facebook: bancogalicia
     lang: es
+    
+  - name: Banco Macro
+    url: https://www.macro.com.ar
+    img: bancomacro.png
+    facebook: bancomacro
+    lang: es
+
+  - name: Banco Nación
+    url: https://www.bna.com.ar/
+    img: banconacion.png
+    facebook: banconacion
+    email_address: asistenciaproteccionusuarios@bna.com.ar
+    lang: es
 
   - name: Banco Provincia
     url: https://www.bancoprovincia.com.ar
@@ -306,14 +319,18 @@ websites:
   - name: Chime
     url: https://www.chimebank.com
     img: chime.png
-    twitter: Chime
-    facebook: chimebank
-
+    tfa:
+      - sms
+    doc: https://www.chime.com/security-and-control/
+    
   - name: CIBC
-    url: https://www.cibc.ca
-    twitter: cibc
-    facebook: CIBC
+    url: https://www.cibc.com
     img: cibc.png
+    tfa:
+      - sms
+      - phone
+      - email
+    doc: https://www.cibc.com/en/privacy-security/two-step-verification-b.html
 
   - name: Citibank
     url: https://online.citi.com/
@@ -647,7 +664,8 @@ websites:
     img: ing.png
     tfa:
       - hardware
-    doc: https://www.ing.lu/web/ING/EN/Personal/Customerservices/FAQ/MYING_FAQ_EN
+      - proprietary
+    doc: https://www.ing.lu/webing/content/siteing/en/Individuals/Onlineproduct/Services/frequently-asked-questions/faq-online-banking-.html
 
   - name: ING Australia
     url: https://www.ing.com.au

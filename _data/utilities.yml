@@ -13,11 +13,11 @@ websites:
     doc: https://aa.net.uk/kb-broadband-2fa.html
     exception: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
 
-  - name: Arcadia Power
-    url: https://www.arcadiapower.com/
-    twitter: ArcadiaPower
-    facebook: ArcadiaPower
-    email_address: customercare@arcadiapower.com
+  - name: Arcadia
+    url: https://www.arcadia.com/
+    twitter: arcadia
+    facebook: ArcadiaHQ
+    email_address: support@arcadia.com
     img: arcadia.png
 
   - name: AT&amp;T
@@ -96,6 +96,12 @@ websites:
       - proprietary
     doc: https://www.coned.com/-/media/files/coned/documents/small-medium-large-businesses/building-project-center/contractor-resources/user-registration-guide.pdf?la=en
     exception: "Requires phone number to set up. Can be bypassed by customer support." 
+
+  - name: Consumer Cellular
+    url: https://www.consumercellular.com
+    img: consumercellular.png
+    twitter: Consumer_Cell
+    facebook: consumercellular
 
   - name: Cox
     url: https://www.cox.com/
