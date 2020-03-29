@@ -1,4 +1,10 @@
 websites:
+  - name: AirDroid
+    url: https://www.airdroid.com/
+    twitter: AirDroidTeam
+    facebook: AirDroid
+    img: airdroid.png
+
   - name: Amazon AWS WorkSpaces
     url: https://aws.amazon.com/workspaces/
     doc: https://aws.amazon.com/blogs/aws/multi-factor-auth-for-workspaces/
@@ -30,6 +36,16 @@ websites:
     tfa:
       - totp
     doc: https://directadmin.com/features.php?id=1754
+
+  - name: ISL Online
+    url: https://islonline.com/
+    img: islonline.png
+    tfa:
+      - totp
+      - sms
+      - email
+      - u2f
+    doc: https://help.islonline.com/35746/286527
 
   - name: join.me (w/ LogMeIn account)
     url: https://join.me/

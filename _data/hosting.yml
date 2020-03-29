@@ -108,12 +108,11 @@ websites:
     doc: https://support.cloudways.com/enabling-two-factor-authentication-for-your-cloudways-account/
 
   - name: Contabo
-    url: https://contabo.de/
+    url: https://contabo.com/
     img: contabo.png
-    twitter: ContaboCom
-    facebook: ContaboDe
-    email_address: support@contabo.de
-    lang: de
+    tfa:
+      - totp
+    doc: https://contabo.com/?show=faq#100
 
   - name: cyon
     url: https://www.cyon.ch
@@ -187,6 +186,13 @@ websites:
       - hardware
     doc: https://wiki.hetzner.de/index.php/KonsoleH:Zwei-Faktor-Authentifizierung
 
+  - name: Host Europe
+    url: https://www.hosteurope.de/
+    img: hosteurope.png
+    tfa:
+      - sms
+    doc: https://www.hosteurope.de/faq/kis/allgemeines0/wo-kann-ich-passworte-neu-vergeben/
+
   - name: Hostens
     url: https://www.hostens.com/
     img: hostens.png
@@ -207,7 +213,7 @@ websites:
     img: hostus.png
     tfa:
       - totp
-    doc: https://my.hostus.us/knowledgebase/106/How-do-I-secure-my-account-with-Two-Factor-Authentication-or-TOTP.html
+    doc: https://my.hostus.us/knowledgebase/106
 
   - name: ICDSoft
     url: https://www.icdsoft.com
@@ -324,6 +330,13 @@ websites:
       - sms
       - totp
     doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
+
+  - name: Neolo
+    url: https://www.neolo.com
+    img: neolo.png
+    tfa:
+      - totp
+    doc: https://ar.neolo.com/knowledgebase/215/Autenticacion-de-2-factores.html
 
   - name: Netcup
     url: https://netcup.eu/
@@ -446,6 +459,13 @@ websites:
     tfa:
       - totp
     doc: https://support.stackpath.com/hc/en-us/articles/360022992631
+
+  - name: Swizzonic
+    url: https://switchplus.ch/
+    img: swizzonic.png
+    tfa:
+      - sms
+    doc: https://switchie.ch/en/2-factor-authentication-2fa/
 
   - name: Time4VPS
     url: https://www.time4vps.eu/

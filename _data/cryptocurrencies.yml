@@ -87,6 +87,15 @@ websites:
       - proprietary
     doc: https://bitlish.com/how#mfa
 
+  - name: BitMEX
+    url: https://www.bitmex.com
+    img: bitmex.png
+    tfa:
+      - totp
+      - hardware
+    doc: https://blog.bitmex.com/use-two-factor-authentication-and-dont-reuse-passwords/
+    exception: "At most one 2FA method can be enabled at any time."
+
   - name: Bitpanda
     url: https://www.bitpanda.com/
     img: bitpanda.png
@@ -160,12 +169,28 @@ websites:
       - totp
     doc: https://blog.btcpop.co/2017/04/27/signing-security-btcpop-co-account/
 
+  - name: Buda
+    url: https://www.buda.com
+    img: buda.png
+    tfa:
+      - totp
+    doc: https://soporte.buda.com/es/articles/2379080
+
   - name: BX Thailand
     url: https://bx.in.th/
     img: bxthailand.png
     tfa:
       - totp
     doc: https://bx.in.th/info/faq/
+
+  - name: Bybit
+    url: https://www.bybit.com/
+    img: bybit.png
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://help.bybit.com/hc/en-us/articles/360039748653
 
   - name: CEX.IO
     url: https://cex.io/
@@ -190,14 +215,6 @@ websites:
       - totp
     doc: https://support.circle.com/hc/en-us/articles/213560483
 
-  - name: COBINHOOD
-    url: https://cobinhood.com
-    img: cobinhood.png
-    tfa:
-      - sms
-      - totp
-    doc: https://cobinhood.zendesk.com/hc/en-us/articles/115003476871
-
   - name: Coin Cafe
     url: https://coincafe.com
     img: coincafe.png
@@ -221,6 +238,13 @@ websites:
       - totp
       - u2f
     doc: https://support.coinbase.com/customer/en/portal/articles/1658338
+
+  - name: Coincheck
+    url: https://coincheck.com/
+    img: coincheck.png
+    tfa:
+      - totp
+    doc: https://faq.coincheck.com/s/article/20204?language=en_US
 
   - name: CoinDeal
     url: https://coindeal.com
@@ -258,8 +282,8 @@ websites:
     img: coinify.png
     tfa:
       - totp
-      - hardware
-    exception: "While Coinify has aquired BIPS to allow for trading, only merchant accounts support TFA at this time. Trading is done through a separate account. Hardware support is limited to a print-out character matrix."
+    doc: https://help.coinify.com/article/114
+    exception: "2FA is only available for merchant accounts. myCoinify trading accounts do not support 2FA."
 
   - name: Coinjar
     url: https://coinjar.com
@@ -334,8 +358,9 @@ websites:
     tfa:
       - sms
       - proprietary
-      - phone
-    doc: https://gemini.com/blog/better-two-factor-authentication/
+      - hardware
+      - u2f
+    doc: https://gemini24.zendesk.com/hc/en-us/sections/360001694951
 
   - name: HitBTC
     url: https://www.hitbtc.com/
@@ -358,6 +383,13 @@ websites:
       - totp
       - hardware
     doc: https://support.kraken.com/hc/en-us/articles/360000426923
+
+  - name: Liquid
+    url: https://www.liquid.com/
+    img: liquid.png
+    tfa:
+      - totp
+    doc: https://help.liquid.com/en/articles/2273273
 
   - name: LiteBit
     url: https://www.litebit.eu/
@@ -395,6 +427,13 @@ websites:
       - totp
     doc: https://suporte.mercadobitcoin.com.br/hc/pt-br/articles/360000385152
 
+  - name: PayKassa
+    url: https://paykassa.pro/
+    img: paykassa.png
+    tfa:
+      - totp
+    doc: https://paykassa.pro/en/news/s-paykassa-vashi-dannye-pod-nadejnoy-zashchitoy/
+
   - name: Poloniex
     url: https://poloniex.com/
     img: poloniex.png
@@ -415,6 +454,14 @@ websites:
     tfa:
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2321#issuecomment-273971890
+
+  - name: STEX
+    url: https://stex.com
+    img: stex.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://help.stex.com/en/articles/3486981#individual-account-security-settings
 
   - name: Uphold
     url: https://uphold.com/

@@ -71,6 +71,13 @@ websites:
     facebook: OfficialCWNP
     email_address: customercare@cwnp.com
 
+  - name: Citationsy
+    url: https://citationsy.com
+    img: citationsy.png
+    twitter: Citationsy
+    facebook: Citationsy
+    email_address: support@citationsy.com
+
   - name: Clemson University
     url: https://www.clemson.edu/
     img: clemson.png
@@ -113,6 +120,17 @@ websites:
     img: comptia.png
     twitter: CompTIA
     facebook: CompTIA
+
+  - name: Cornell University
+    url: https://cornell.edu/
+    img: cornell.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+      - u2f
+      - phone
+    doc: https://it.cornell.edu/twostep
 
   - name: Coursera
     url: https://www.coursera.org/
@@ -228,7 +246,7 @@ websites:
     url: https://www.isaca.org
     img: isaca.png
     twitter: ISACANews
-    facebook: ISACAHQ
+    facebook: ISACAGlobal
 
   - name: Karlsruher Institut für Technologie
     url: https://www.kit.edu
@@ -261,6 +279,16 @@ websites:
       - proprietary
       - hardware
     doc: https://kb.mit.edu/confluence/display/istcontrib/Duo+Authentication+Landing+Page
+
+  - name: McGill University
+    url: https://mcgill.ca/
+    img: mcgill.png
+    tfa:
+      - totp
+      - proprietary
+      - sms
+      - phone
+    doc: http://kb.mcgill.ca/#artId:7948
 
   - name: Miami University
     url: https://miamioh.edu/
@@ -296,9 +324,9 @@ websites:
   - name: Pluralsight
     url: https://www.pluralsight.com
     img: pluralsight.png
-    twitter: pluralsight
-    facebook: pluralsight
-    email_address: support@pluralsight.com
+    tfa:
+      - totp
+    doc: https://help.pluralsight.com/help/multifactor-authentication
 
   - name: Purdue University
     url: https://www.purdue.edu/
