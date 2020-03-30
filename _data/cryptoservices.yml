@@ -171,13 +171,6 @@ websites:
   bch: true
   btc: false
   othercrypto: false
-- name: Cardbit
-  url: http://www.cardbit.io
-  img: cardbit.png
-  facebook: cardbit.io
-  bch: false
-  btc: true
-  othercrypto: false
 - name: ChainTip
   url: https://www.chaintip.org/
   img: chaintip.png
@@ -318,15 +311,6 @@ websites:
   bch: false
   bsv: true
   othercrypto: false
-- name: Cryptonize.it
-  url: https://www.cryptonize.it
-  twitter: cryptonize_it
-  img: cryptonizeit.png
-  bch: false
-  btc: false
-  bsv: true
-  othercrypto: false
-  doc: https://www.reddit.com/r/btc/comments/7jmcyz/pay_for_anything_online_with_bch_cryptonizeit/
 - name: Cryptopiece
   url: https://www.cryptopiece.com
   img: cryptopiece.png
@@ -660,6 +644,13 @@ websites:
   facebook: thewcomp
   email_address: info@thewhitecompanyus.com
   doc: https://dailyhodl.com/2019/03/28/e-commerce-portal-with-stellar-backed-stablecoin-launches-crypto-wallet-for-btc-eth-bch-xlm-bsv-and-bat/
+- name: tipbitcoin.cash
+  url: https://tipbitcoin.cash/
+  img: tipbitcoincash.png
+  twitter: tipbitcoincash
+  bch: true
+  btc: false
+  othercrypto: false
 - name: Tippr
   url: https://tippr.rocketr.net
   img: tippr.png

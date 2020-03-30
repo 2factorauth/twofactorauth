@@ -70,9 +70,30 @@ websites:
 - name: Binance
   url: https://www.binance.com/
   img: binance.png
+  twitter: binance
+  facebook: binance
   bch: true
   btc: true
   othercrypto: true
+- name: Binance Jersey
+  url: https://www.binance.je/
+  img: binancejersey.png
+  twitter: binanceje
+  facebook: Binance-Jersey-879404125783248
+  bch: true
+  btc: true
+  othercrypto: true
+  region: eu
+- name: Binance Uganda
+  url: https://www.binance.co.ug/
+  img: binanceuganda.png
+  twitter: BinanceUG
+  facebook: BinanceUganda
+  bch: true
+  btc: true
+  othercrypto: true
+  region: af
+  country: UG
 - name: Bit-Z
   url: https://www.bit-z.com/
   img: bitz.png
@@ -161,14 +182,6 @@ websites:
   othercrypto: true
   twitter: bitlish_com
   facebook: bitlish.english
-- name: Bitmarket
-  url: https://www.bitmarket.net/
-  img: Bitmarket.png
-  twitter: BitmarketNet
-  facebook: bitmarketpl
-  bch: true
-  btc: true
-  othercrypto: true
 - name: bitqist
   url: https://www.bitqist.com
   img: bitqist.png
@@ -261,12 +274,13 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-- name: BX Thailand
-  url: https://bx.in.th/
-  img: bxthailand.png
-  bch: true
+- name: Cardbit
+  url: http://www.cardbit.io
+  img: cardbit.png
+  facebook: cardbit.io
+  bch: false
   btc: true
-  othercrypto: true
+  othercrypto: false
 - name: Cash2VN
   url: https://www.cash2vn.com/
   img: cash2vn.png
@@ -617,6 +631,15 @@ websites:
   bch: true
   btc: true
   othercrypto: true
+- name: Liquid.com
+  url: https://www.liquid.com/
+  img: liquidcom.png
+  twitter: liquid_global
+  facebook: LiquidGlobal
+  bch: true
+  btc: true
+  othercrypto: true
+  doc: https://app.liquid.com/exchange/BCHUSDC
 - name: LiteBit
   url: https://www.litebit.eu/
   img: litebit.png
@@ -737,7 +760,7 @@ websites:
   othercrypto: true
   email_address: support@sengicoin.com
   country: CD
-  city: Kinshasa 
+  city: Kinshasa
 - name: Stealthex.io
   url: https://stealthex.io/
   img: stealthexio.png

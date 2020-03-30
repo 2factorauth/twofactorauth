@@ -528,6 +528,17 @@ websites:
   bch: false
   twitter: wargaming_net
   facebook: WarGamingNet
+- name: War Thunder
+  url: https://warthunder.com/
+  img: warthunder.png
+  twitter: WarThunder
+  facebook: WarThunder
+  bch: true
+  btc: true
+  othercrypto: true
+  keywords:
+  - xsolla
+  - bitpay
 - name: WildStar
   url: https://www.wildstar-online.com/
   img: wildstar.png
@@ -541,11 +552,10 @@ websites:
   facebook: Xbox
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   doc: https://support.microsoft.com/help/13942/
   keywords:
   - bitpay
-  - bip70
 - name: YoYo Games
   url: https://www.yoyogames.com/
   img: yoyogames.png

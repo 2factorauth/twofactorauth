@@ -474,15 +474,6 @@ websites:
   bch: true
   btc: true
   othercrypto: true
-- name: CryptoPet
-  url: http://cryptopet.com/
-  img: cryptopet.png
-  twitter: CryptoPet
-  bch: false
-  btc: true
-  othercrypto: true
-  keywords:
-  - coinpayments.net
 - name: Dell
   url: http://www.dell.com/
   img: dell.png
@@ -1450,6 +1441,18 @@ websites:
   - mollie
   exceptions:
     text: plastic2print used to accept BTC, but as of 2019-05-01 stopped accepting it
+- name: Playtech
+  url: https://www.playtech.co.nz/
+  img: playtech.png
+  twitter: PlaytechNZ
+  facebook: PlaytechNZ
+  bch: true
+  btc: true
+  othercrypto: true
+  region: oc
+  country: NZ
+  keywords:
+  - bitpay
 - name: powercube.dk
   url: https://powercube.dk/
   img: powercubedk.png
@@ -1938,13 +1941,12 @@ websites:
   img: TriccessBrands.png
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   region: eu
   lang: de
   doc: https://triccess-brands-shop.de/zahlungsinformationen-und-zahlungsarten/
   keywords:
   - bitpay
-  - bip70
 - name: Triton Aquariums
   url: https://www.tritonaquariums.com
   img: tritonaquariums.png
@@ -2075,19 +2077,17 @@ websites:
   img: zimbabwedollars.png
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   keywords:
   - bitpay
-  - bip70
 - name: ZUMI
   url: https://zumi.com.au/
   img: zumi.png
   bch: true
   btc: true
-  othercrypto: false
+  othercrypto: true
   region: oc
   country: AU
   doc: https://zumi.com.au/pages/buy-with-bitcoin-australia
   keywords:
   - bitpay
-  - bip70

@@ -31,9 +31,15 @@ websites:
   url: https://mailbox.org/
   img: mailbox.png
   twitter: mailbox_org
-  bch: true
-  btc: true
+  bch: false
+  btc: false
   othercrypto: false
+  keywords:
+  - bitpay
+  exceptions:
+    text: mailbox.org used to accept BCH, but as of 2020-03-03 stopped accepting
+      it due to BitPay suspending their operations in Germany to get a required
+      BaFin license.
 - name: Mailfence
   url: https://mailfence.com/
   img: mailfence.png

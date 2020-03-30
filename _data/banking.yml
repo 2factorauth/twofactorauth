@@ -1,5 +1,15 @@
 ---
 websites:
+- name: 2gether
+  url: https://www.2gether.global/
+  img: 2gether.png
+  twitter: 2gether_global
+  facebook: 2gether-480056032377263
+  email_address: support@2gether.global
+  bch: true
+  btc: true
+  othercrypto: true
+  region: eu
 - name: Bitcoin Suisse
   url: https://www.bitcoinsuisse.ch/
   img: BitcoinSuisse.png
@@ -11,6 +21,16 @@ websites:
   email_address: inquiry@bitcoinsuisse.ch
   country: CH
   doc: https://onlinetrading.bitcoinsuisse.ch/en/faq#faq-100
+- name: BlockCard
+  url: https://getblockcard.com/
+  img: blockcard.png
+  twitter: terniotoken
+  facebook: terniotoken
+  bch: true
+  btc: true
+  othercrypto: true
+  region: na
+  country: US
 - name: Hranilnica Lon Bank
   region: eu
   country: si
@@ -20,3 +40,12 @@ websites:
   bch: false
   btc: false
   othercrypto: false
+- name: Nexo.io
+  url: https://nexo.io/
+  img: nexoio.png
+  twitter: Block_Legend
+  facebook: NexoFinance
+  email_address: info@nexo.io
+  bch: true
+  btc: true
+  othercrypto: true
