@@ -186,9 +186,10 @@ websites:
     url: https://skrill.com/
     img: skrill.png
     tfa:
-      - totp
-      - hardware
-    doc: https://www.skrill.com/en/support#/path/ACCOUNT/Two-Factor-Authentication/905761532
+      - email
+      - sms
+    doc: https://www.skrill.com/en/support#/path/SECURITY/1362150272/
+    exception: "Email method requires an additional PIN"
 
   - name: Square
     url: https://squareup.com
