@@ -6,6 +6,7 @@ websites:
       - email
       - sms
     doc: https://www.airbnb.com/help/article/501
+    exception: "Airbnb decides when 2FA is required; user cannot enable 2FA for every login."
 
   - name: Booking.com
     url: https://www.booking.com/
