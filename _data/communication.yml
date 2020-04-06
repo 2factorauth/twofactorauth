@@ -361,4 +361,5 @@ websites:
     img: zoom.png
     tfa:
       - totp
-    doc: https://support.zoom.us/hc/en-us/articles/360038247071-Setting-up-and-using-two-factor-authentication
+    doc: https://support.zoom.us/hc/en-us/articles/360038247071
+    exception: "2FA is only available on paid plans and doesn't protect the desktop or mobile apps."
