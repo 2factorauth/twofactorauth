@@ -362,3 +362,11 @@ websites:
     twitter: Yammer
     facebook: Yammer
     img: yammer.png
+
+  - name: Zoom
+    url: https://www.zoom.us
+    img: zoom.png
+    tfa:
+      - totp
+    doc: https://support.zoom.us/hc/en-us/articles/360038247071
+    exception: "2FA is only available on paid plans and doesn't protect the desktop or mobile apps."
