@@ -1359,6 +1359,14 @@ websites:
     facebook: wilobank
     lang: es
 
+  - name: Woodforest National Bank
+    url: https://www.woodforest.com/
+    img: woodforest.png
+    tfa:
+      - totp
+      - sms
+    doc: https://www.woodforest.com/Personal/Services/Online-Banking/Online-Banking-Security
+
   - name: Zagrebačka banka
     url: https://www.zaba.hr/
     img: zagrebacka.png
