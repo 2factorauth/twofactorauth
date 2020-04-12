@@ -874,6 +874,15 @@ websites:
       - proprietary
     exception: "TFA only available for Swedish residents with BankID."
 
+  - name: norisbank
+    url: https://www.norisbank.de/
+    img: norisbank.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.norisbank.de/service/zwei-faktor-authentifizierung.html
+
   - name: Northeast Credit Union
     url: https://necu.org
     img: necu.png
