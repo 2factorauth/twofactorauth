@@ -1,4 +1,11 @@
 websites:
+  - name: Aerolíneas Argentinas
+    url: https://www.aerolineas.com.ar/
+    twitter: Aerolineas_AR
+    facebook: aerolineas.argentinas
+    img: aerolineasargentinas.png
+    lang: es
+    
   - name: Air Canada
     url: https://www.aircanada.com/
     twitter: AirCanada
@@ -52,6 +59,13 @@ websites:
     facebook: BayAreaClipper
     img: clipper.png
 
+  - name: Copa Airlines
+    url: https://www.copaair.com
+    twitter: CopaAirlines 
+    facebook: copaairlines
+    img: copaairlines.png
+    lang: es
+
   - name: Delta
     url: https://www.delta.com/
     twitter: Delta
@@ -81,7 +95,7 @@ websites:
     img: finnair.png
     tfa:
       - sms
-      - software
+      - proprietary
 
   - name: Frontier
     url: https://www.flyfrontier.com
@@ -89,11 +103,23 @@ websites:
     facebook: flyfrontier
     img: frontier.png
 
+  - name: Great Western Railway
+    url: https://www.gwr.com
+    twitter: GWRHelp
+    facebook: gwruk
+    img: gwr.png
+
   - name: Greyhound
     url: https://www.greyhound.com
     twitter: GHoundBusHelp
     facebook: GreyhoundBus
     img: greyhound.png
+
+  - name: Hamburger Verkehrsverbund
+    url: https://www.hvv.de/
+    facebook: HVV.HamburgerVerkehrsverbund
+    img: hvv.png
+    lang: de
 
   - name: Hawaiian Airlines
     url: https://www.hawaiianairlines.com
@@ -106,6 +132,19 @@ websites:
     twitter: JetBlue
     facebook: JetBlue
     img: jetblue.png
+
+  - name: LATAM Airlines
+    url: https://www.latam.com
+    twitter: LATAMAirlines
+    facebook: LATAMAirlines
+    img: latam.png
+    lang: es
+
+  - name: LNER
+    url: https://www.lner.co.uk
+    twitter: LNER
+    facebook: LNERail
+    img: lner.png
 
   - name: Lufthansa
     url: https://www.lufthansa.com
@@ -218,7 +257,7 @@ websites:
   - name: Trainline
     url: https://www.trainline.eu
     twitter: thetrainline
-    facebook: trainline.eu
+    facebook: trainline
     img: trainline.png
 
   - name: Transport for London
@@ -227,12 +266,19 @@ websites:
     facebook: transportforlondon
     img: tfl.png
 
+  - name: TripIt
+    url: https://www.tripit.com
+    twitter: TripIt
+    facebook: tripitcom
+    email_address: security@tripit.com
+    img: tripit.png
+
   - name: Uber
     url: https://www.uber.com/
     img: uber.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.uber.com/h/b8bb9152-8c91-4f49-83c4-35cf2e1dcf72
 
   - name: United

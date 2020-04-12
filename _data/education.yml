@@ -4,7 +4,7 @@ websites:
     img: isc2.png
     tfa:
       - sms
-      - software
+      - totp
 
   - name: AAI@EduHr
     url: https://www.aaiedu.hr/
@@ -36,7 +36,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
       - hardware
     doc: https://www.bu.edu/tech/support/duo/
 
@@ -44,7 +44,7 @@ websites:
     url: https://www.caltech.edu
     img: caltech.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://imss.caltech.edu/node/1408
     exception: "SMS-capable phone required for initial setup."
@@ -53,8 +53,9 @@ websites:
     url: https://www.cmu.edu/
     img: cmu.png
     tfa:
-      - software
+      - proprietary
       - hardware
+      - u2f
     doc: https://www.cmu.edu/computing/services/security/identity-access/authentication/how-to/use2fa-weblogin.html
 
   - name: CBT Nuggets
@@ -70,13 +71,20 @@ websites:
     facebook: OfficialCWNP
     email_address: customercare@cwnp.com
 
+  - name: Citationsy
+    url: https://citationsy.com
+    img: citationsy.png
+    twitter: Citationsy
+    facebook: Citationsy
+    email_address: support@citationsy.com
+
   - name: Clemson University
     url: https://www.clemson.edu/
     img: clemson.png
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
       - hardware
     doc: https://2fa.app.clemson.edu/
 
@@ -85,7 +93,7 @@ websites:
     img: clever.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://support.clever.com/hc/en-us/articles/202062333
 
   - name: Codecademy
@@ -113,6 +121,17 @@ websites:
     twitter: CompTIA
     facebook: CompTIA
 
+  - name: Cornell University
+    url: https://cornell.edu/
+    img: cornell.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+      - u2f
+      - phone
+    doc: https://it.cornell.edu/twostep
+
   - name: Coursera
     url: https://www.coursera.org/
     twitter: coursera
@@ -123,7 +142,7 @@ websites:
     url: https://www.csn.se
     img: csn.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://tjanster.csn.se/bas/vanligaFragor.do
 
@@ -133,7 +152,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
       - hardware
     doc: https://idms-mfa.oit.duke.edu/mfa/help
 
@@ -150,14 +169,14 @@ websites:
     tfa:
       - sms
       - phone
-      - software
-    doc: https://itcs.ecu.edu/services/accounts-passwords/multi-factor-authentication/
+      - totp
+    doc: https://ecu.teamdynamix.com/TDClient/1409/Portal/Requests/ServiceDet?ID=31556
 
   - name: Eastern Michigan University
     url: https://www.emich.edu
     img: emu.png
     tfa:
-      - software
+      - proprietary
       - hardware
     doc: https://www.emich.edu/it/security/esp/duo.php
     exception: "Available for employees"
@@ -176,6 +195,12 @@ websites:
     facebook: edmodo
     img: edmodo.png
 
+  - name: Eduonix
+    url: https://www.eduonix.com
+    twitter: Tutor_Eduonix
+    facebook: EDUonix
+    img: eduonix.png
+
   - name: edX
     url: https://www.edx.org/
     img: edx.png
@@ -188,7 +213,7 @@ websites:
     img: gatech.png
     tfa:
       - phone
-      - software
+      - proprietary
       - hardware
     doc: https://twofactor.oit.gatech.edu
 
@@ -211,7 +236,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
       - hardware
     doc: https://huit.harvard.edu/twostep
 
@@ -227,13 +252,13 @@ websites:
     url: https://www.isaca.org
     img: isaca.png
     twitter: ISACANews
-    facebook: ISACAHQ
+    facebook: ISACAGlobal
 
   - name: Karlsruher Institut für Technologie
     url: https://www.kit.edu
     img: kit.png
     tfa:
-      - software
+      - totp
       - hardware
     doc: https://www.scc.kit.edu/dienste/2fa.php
 
@@ -241,7 +266,7 @@ websites:
     url: https://www.knowbe4.com/
     img: knowbe4.png
     tfa:
-      - software
+      - totp
     doc: https://support.knowbe4.com/hc/en-us/articles/225681448
 
   - name: Linux Professional Institute (LPI)
@@ -257,9 +282,19 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
       - hardware
     doc: https://kb.mit.edu/confluence/display/istcontrib/Duo+Authentication+Landing+Page
+
+  - name: McGill University
+    url: https://mcgill.ca/
+    img: mcgill.png
+    tfa:
+      - totp
+      - proprietary
+      - sms
+      - phone
+    doc: http://kb.mcgill.ca/#artId:7948
 
   - name: Miami University
     url: https://miamioh.edu/
@@ -267,7 +302,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
       - hardware
     doc: https://miamioh.edu/it-services/initiatives-and-projects/info-security/duo/
 
@@ -288,24 +323,24 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
       - hardware
-    doc: https://www.identity.psu.edu/services/authentication-services/two-factor/
+    doc: https://security.psu.edu/two-factor-authentication/
 
   - name: Pluralsight
     url: https://www.pluralsight.com
     img: pluralsight.png
-    twitter: pluralsight
-    facebook: pluralsight
-    email_address: support@pluralsight.com
+    tfa:
+      - totp
+    doc: https://help.pluralsight.com/help/multifactor-authentication
 
   - name: Purdue University
     url: https://www.purdue.edu/
     img: purdue.png
     tfa:
-      - software
+      - proprietary
       - hardware
-    doc: https://www.purdue.edu/securepurdue/iamoServices/BoilerKey.php
+    doc: https://www.purdue.edu/securepurdue/identity-access/boilerkey/
 
   - name: Robert Morris University
     url: https://sentry.rmu.edu/login
@@ -322,8 +357,8 @@ websites:
   - name: Ryerson University
     url: https://www.ryerson.ca
     tfa:
-      - software
-      - hardware
+      - totp
+      - u2f
     img: ryerson.png
     doc: https://www.ryerson.ca/ccs/services/ITSecurity/protecting-your-identity/two-factor-authentication/
 
@@ -338,7 +373,8 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
+      - hardware
     doc: https://uit.stanford.edu/service/webauth/twostep
 
   - name: Temple University
@@ -347,7 +383,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
     doc: https://its.temple.edu/two-step-verification
 
   - name: Udacity
@@ -379,8 +415,8 @@ websites:
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - proprietary
+      - u2f
     doc: https://support.uidaho.edu/TDClient/KB/ArticleDet?ID=109
 
   - name: University of Michigan
@@ -389,8 +425,8 @@ websites:
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - proprietary
+      - u2f
     doc: https://www.safecomputing.umich.edu/two-factor-authentication
 
   - name: University of Notre Dame
@@ -399,7 +435,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
       - hardware
     doc: https://oit.nd.edu/services/accounts/okta-account-services-and-two-step-login/
 
@@ -408,8 +444,8 @@ websites:
     img: uw.png
     tfa:
       - phone
-      - software
-      - hardware
+      - proprietary
+      - u2f
     doc: https://itconnect.uw.edu/security/uw-netids/2fa/
     exception: "Available for employees only"
 
@@ -419,8 +455,8 @@ websites:
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - proprietary
+      - u2f
     doc: https://ts.vcu.edu/askit/essential-computing/information-security/2factor/
 
   - name: Virginia Tech
@@ -429,6 +465,6 @@ websites:
     tfa:
       - sms
       - phone
-      - software
-      - hardware
+      - proprietary
+      - u2f
     doc: https://www.tech.it.vt.edu/2factor/
