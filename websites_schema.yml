@@ -23,7 +23,7 @@ mapping:
             type: seq
             sequence:
               - type: str
-                pattern: /^(sms|hardware|phone|software|email|u2f|totp|proprietary)+$/
+                pattern: /^(sms|hardware|phone|email|u2f|totp|proprietary)+$/
           "exception":
             type: str
           "doc":

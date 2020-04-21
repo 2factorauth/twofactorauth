@@ -73,7 +73,7 @@ websites:
       - sms
       - email
       - totp
-    doc: http://support.followmyhealth.com/customer/en/portal/articles/2982690
+    doc: https://support.followmyhealth.com/2020/03/10/turning-on-two-factor-authentication-while-logged-into-your-account/
 
   - name: Garmin
     url: https://www.garmin.com/
@@ -130,6 +130,13 @@ websites:
       - totp
     doc: https://www.myheritage.com/help-center/en/article/how-do-i-set-up-two-factor-authentication-for-my-myheritage-account
 
+  - name: OSDE	
+    url: https://www.osde.com.ar
+    img: osde.png
+    facebook: grupoosdeoficial
+    email_address: contacto@osde.com.ar
+    lang: es
+
   - name: Runkeeper
     url: https://runkeeper.com
     twitter: RKSupport
@@ -155,6 +162,14 @@ websites:
     twitter: Strava
     facebook: Strava
     img: strava.png
+    
+  - name: Swiss Medical
+    url: https://www.swissmedical.com.ar
+    twitter: SwissMedicalG
+    facebook: SwissMedicalGroup
+    email_address: info@swissmedical.com.ar
+    img: swissmedical.png
+    lang: es
 
   - name: Thriva
     url: https://thriva.co

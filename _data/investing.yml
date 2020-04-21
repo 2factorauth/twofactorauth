@@ -11,6 +11,13 @@ websites:
       - totp
     doc: https://www.youinvest.co.uk/faq/how-do-i-set-two-factor-authentication
 
+  - name: APMEX
+    url: https://www.apmex.com/
+    email_address: service@APMEX.com
+    facebook: APMEX
+    twitter: APMEX
+    img: apmex.png
+
   - name: Axos Invest
     url: https://www.axosinvest.com/
     twitter: AxosInvest
@@ -54,6 +61,13 @@ websites:
       - proprietary
       - hardware
     doc: https://us.etrade.com/security-center/securityid
+    
+  - name: eToro
+    url: https://www.etoro.com
+    img: etoro.png
+    tfa:
+      - sms
+    doc: https://www.etoro.com/en-us/customer-service/help/1281239912/-
 
   - name: Fidelity Investments
     url: https://www.fidelity.com
@@ -89,6 +103,12 @@ websites:
     doc: https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log
     exception: "SMS 2FA only works as long as no other method has been enabled."
 
+  - name: JM Bullion
+    url: https://www.jmbullion.com/
+    twitter: JMBullion
+    facebook: JMBullion
+    img: jmbullion.png
+
   - name: John Hancock Pensions
     url: https://www.jhancockpensions.com
     twitter: johnhancockusa
@@ -108,6 +128,13 @@ websites:
       - sms
     doc: https://github.com/2factorauth/twofactorauth/issues/2275
 
+  - name: Mintos
+    url: https://www.mintos.com/
+    img: mintos.png
+    tfa:
+      - totp
+    doc: https://help.mintos.com/hc/en-us/sections/360000373858
+
   - name: MotifInvesting
     url: https://www.motifinvesting.com/
     img: motif.png
@@ -123,6 +150,14 @@ websites:
       - totp
     doc: https://support.nutmeg.com/hc/en-us/articles/115000495111
 
+  - name: onvista bank
+    url: https://www.onvista-bank.de/
+    img: onvista.png
+    tfa:
+      - sms
+      - phone
+    doc: https://www.onvista-bank.de/service/sicherheit/transaktionssicherheit.html#tab-1301-2
+
   - name: Personal Capital
     url: https://www.personalcapital.com
     img: personalcapital.png
@@ -130,6 +165,13 @@ websites:
       - phone
       - email
     doc: https://www.personalcapital.com/safety-and-security
+
+  - name: Provident Metals
+    url: https://www.providentmetals.com/
+    img: providentmetals.png
+    twitter: ProvidentMetals
+    facebook: providentmetals
+    email_address: help@providentmetals.com
 
   - name: Prudential Financial
     url: https://www.prudential.com
@@ -167,6 +209,15 @@ websites:
     twitter: SigFigInsider
     img: sigfig.png
 
+  - name: Stash
+    url: https://www.stashinvest.com
+    img: stash.png
+    tfa:
+      - sms
+      - phone
+      - email
+    doc: https://ask.stashinvest.com/ask/what-is-two-factor-authentication/
+
   - name: Sunsuper
     url: https://www.sunsuper.com.au/
     twitter: Sunsuper
@@ -196,6 +247,11 @@ websites:
     twitter: TradeKing
     img: tradeking.png
 
+  - name: UniSuper
+    url: https://www.unisuper.com.au/
+    twitter: UniSuperNews
+    img: unisuper.png
+
   - name: Vanguard
     url: https://www.vanguard.com/
     img: vanguard.png
@@ -221,3 +277,11 @@ websites:
       - sms
       - totp
     doc: https://help.wealthsimple.com/hc/en-ca/articles/360005175373
+
+  - name: WeltSparen
+    url: https://www.weltsparen.de/
+    img: weltsparen.png
+    twitter: WeltSparen
+    facebook: WeltSparen
+    email_address: kundenservice@weltsparen.de
+    lang: de

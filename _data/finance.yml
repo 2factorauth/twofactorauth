@@ -9,6 +9,12 @@ websites:
     facebook: AutomaticDataProcessing
     img: adp.png
 
+  - name: Aetna
+    url: https://www.aetna.com/
+    img: aetna.png
+    twitter: Aetna
+    facebook: aetna
+
   - name: Allianz
     url: https://www.allianz.de/
     img: allianz.png
@@ -21,7 +27,7 @@ websites:
     img: altoira.png
     tfa:
       - totp
-    doc: https://help.altoira.com/hc/en-us/articles/360007374654
+    doc: https://help.altoira.com/enabling-/-disabling-two-factor-authentication-2fa
 
   - name: Amundi (épargne salariale &amp; retraite)
     url: https://www.amundi-ee.com
@@ -29,10 +35,12 @@ websites:
     img: amundiee.png
     lang: fr
 
-  - name: Baden-Württembergische Bank
-    url: https://www.bw-bank.de/de/
-    img: bw_bank.png
-    lang: de
+  - name: AOK
+    url: https://www.aok.de/
+    img: aok.png
+    tfa:
+      - sms
+    doc: https://meine.aok.de/landingpage/faq
 
   - name: BGL Corporate Solutions
     url: https://www.bglcorp.com/
@@ -62,9 +70,10 @@ websites:
 
   - name: ClearScore
     url: https://www.clearscore.com
-    twitter: ClearScore
-    facebook: clearscore
     img: clearscore.png
+    tfa:
+      - sms
+    doc: https://help.clearscore.com/hc/en-us/sections/360003360940
 
   - name: Concur
     url: https://www.concur.com/
@@ -99,6 +108,13 @@ websites:
       - totp
     doc: https://support.exactonline.com/community/s/knowledge-base#All-All-HNO-Task-general-security-gen-auth-totpregphndsktpt
 
+  - name: Experian Ltd
+    url: https://www.experian.co.uk/
+    img: experianltd.png
+    tfa:
+      - sms
+      - phone
+      
   - name: FreeAgent
     url: https://www.freeagent.com
     img: freeagent.png
@@ -145,6 +161,7 @@ websites:
     img: gusto.png
     tfa:
       - sms
+      - totp
     doc: https://support.gusto.com/1066223171
 
   - name: H&R Block
@@ -152,8 +169,9 @@ websites:
     tfa:
       - email
       - totp
+      - sms
     img: hrblock.png
-      
+
   - name: Hargreaves Lansdown
     url: https://www.hl.co.uk/
     twitter: HLInvest
@@ -173,7 +191,14 @@ websites:
       - sms
       - phone
       - totp
-    doc: https://ttlc.intuit.com/questions/2902682-what-is-two-step-verification
+    doc: https://ttlc.intuit.com/questions/2902682
+    exception: "Software 2FA requires enabling SMS or phone call as a back-up."
+
+  - name: InvoiceBerry
+    url: https://www.invoiceberry.com/
+    img: invoiceberry.png
+    twitter: invoiceberry
+    facebook: Invoiceberry
 
   - name: Invoiced
     url: https://invoiced.com/
@@ -297,6 +322,15 @@ websites:
       - phone
       - email
 
+  - name: Principal
+    url: https://www.principal.com
+    img: principal.png
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://secure02.principal.com/publicvsupply/GetFile?fm=ww42&ty=VOP&EXT=.VOP
+
   - name: Progressive
     url: https://www.progressive.com
     twitter: Progressive
@@ -339,6 +373,13 @@ websites:
     facebook: RocketMortgage
     img: rocketmortgage.png
 
+  - name: SCHUFA
+    url: https://www.meineschufa.de/
+    twitter: SCHUFAHoldingAG
+    email_address: meineSCHUFA@SCHUFA.de
+    img: schufa.png
+    lang: de
+
   - name: Shoeboxed
     url: https://www.shoeboxed.com/
     twitter: Shoeboxed
@@ -358,7 +399,8 @@ websites:
     tfa:
       - sms
       - email
-    doc: https://www.taxact.com/support/24138/2016/how-is-a-verification-code-used
+      - totp
+    doc: https://www.taxact.com/support/24138/2019/how-is-a-verification-code-used?hideLayout=True
 
   - name: TransferWise
     url: https://transferwise.com
@@ -380,6 +422,7 @@ websites:
     img: treasurydirect.png
     tfa:
       - email
+    doc: https://www.treasurydirect.gov/indiv/help/TDHelp/help_ug_274-SecFeaturesProtectAcctLearnMore.htm
 
   - name: Valic
     url: https://www.valic.com/

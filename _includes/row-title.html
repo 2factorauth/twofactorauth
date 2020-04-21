@@ -1,7 +1,7 @@
 {%- assign website = include.website -%}
 {%- assign img_path = '/img/' | append: include.section | append: '/' | append: website.img -%}
 <div class="title">
-  <div class="keywords" style="display:none;">{{ website.name }}&nbsp;{{ website.url }}</div>
+  <div class="keywords" style="display:none;">{{ website.name }}&nbsp;{{ website.url }}&nbsp;{% for item in website.tfa %} tfa:{{ item }}{% endfor %}</div>
   <noscript>
     <img src="{{ img_path }}" class="icon" alt="{{ website.name }}">
   </noscript>
