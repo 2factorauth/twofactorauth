@@ -14,6 +14,14 @@ websites:
     facebook: CenturyLinkTech
     img: appfog.png
 
+  - name: Aruba Cloud
+    url: https://www.arubacloud.com/
+    img: arubacloud.png
+    tfa:
+      - proprietary
+    doc: https://kb.cloud.it/computing/uso-e-tecnologie/accesso-al-pannello-di-controllo-con-otp.aspx
+    exception: "Only the control panel supports 2FA (the main client area does not)."
+
   - name: Brightbox
     url: https://www.brightbox.com/
     img: brightbox.png
@@ -43,13 +51,19 @@ websites:
       - totp
     doc: https://www.digitalocean.com/docs/accounts/security/2fa/
 
-  - name: EngineYard
+  - name: Engine Yard
     url: https://www.engineyard.com
     img: engineyard.png
     tfa:
       - totp
-    doc: https://blog.engineyard.com/2015/engine-yards-two-factor-authentication
-    exception: "To enable 2FA on EngineYard, contact support."
+    doc: https://support.cloud.engineyard.com/hc/en-us/community/posts/203752678
+    exception: "To enable 2FA on Engine Yard, contact support."
+
+  - name: Flexera
+    url: https://www.flexera.com/
+    img: flexera.png
+    twitter: flexera
+    facebook: flexera
 
   - name: fortrabbit
     url: https://www.fortrabbit.com/
@@ -80,7 +94,7 @@ websites:
     url: https://hostiso.com/
     img: hostiso.png
     tfa:
-      - software
+      - totp
     exception: "While both the main client area and the shared hosting panel support 2FA, each system is separate and requires its own setup."
 
   - name: IBM Cloud
@@ -168,12 +182,6 @@ websites:
       - totp
     doc: https://support.rackspace.com/how-to/multi-factor-authentication-from-the-cloud-control-panel/
 
-  - name: RightScale
-    url: https://www.rightscale.com/
-    img: rightscale.png
-    twitter: rightscale
-    facebook: RightScale
-
   - name: Scaleway
     url: https://www.scaleway.com
     img: scaleway.png
@@ -194,8 +202,7 @@ websites:
     tfa:
       - totp
       - hardware
-    doc: https://blog.tilaa.com/post/128110588046
-    exception: "SMS-capable phone required."
+    doc: https://support.tilaa.com/hc/en-us/articles/360020167352
 
   - name: UpCloud
     url: https://www.upcloud.com
