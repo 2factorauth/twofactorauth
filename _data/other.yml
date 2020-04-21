@@ -143,6 +143,13 @@ websites:
       - email
     doc: https://www.dhl.de/de/toolbar/footer/datenschutz.html#kundenkontoundempfaengerservices
 
+  - name: DPD
+    url: https://www.dpd.de/
+    twitter: dpd_de
+    facebook: dpdindeutschland
+    img: dpd.png
+    lang: de
+
   - name: Dreamstime
     url: https://www.dreamstime.com/
     img: dreamstime.png
@@ -167,7 +174,7 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://help.figma.com/article/208--
+    doc: https://help.figma.com/hc/en-us/articles/360039817634
 
   - name: Findmyshift
     url: https://www.findmyshift.com/
@@ -231,6 +238,20 @@ websites:
     tfa:
       - totp
     doc: https://docs.growingio.com/docs/product-manual/sysmanage/personal/security#kai-qi-er-ci-yan-zheng
+
+  - name: Gumtree
+    url: https://www.gumtree.com/
+    img: gumtree.png
+    twitter: Gumtree
+    facebook: gumtree
+
+  - name: Heise online
+    url: https://www.heise.de/
+    img: heise.png
+    twitter: heiseonline
+    facebook: heiseonline
+    email_address: webmaster@heise.de
+    lang: de
 
   - name: Help Scout
     url: https://helpscout.com

@@ -14,6 +14,14 @@ websites:
     facebook: CenturyLinkTech
     img: appfog.png
 
+  - name: Aruba Cloud
+    url: https://www.arubacloud.com/
+    img: arubacloud.png
+    tfa:
+      - proprietary
+    doc: https://kb.cloud.it/computing/uso-e-tecnologie/accesso-al-pannello-di-controllo-con-otp.aspx
+    exception: "Only the control panel supports 2FA (the main client area does not)."
+
   - name: Brightbox
     url: https://www.brightbox.com/
     img: brightbox.png
@@ -43,13 +51,13 @@ websites:
       - totp
     doc: https://www.digitalocean.com/docs/accounts/security/2fa/
 
-  - name: EngineYard
+  - name: Engine Yard
     url: https://www.engineyard.com
     img: engineyard.png
     tfa:
       - totp
-    doc: https://blog.engineyard.com/2015/engine-yards-two-factor-authentication
-    exception: "To enable 2FA on EngineYard, contact support."
+    doc: https://support.cloud.engineyard.com/hc/en-us/community/posts/203752678
+    exception: "To enable 2FA on Engine Yard, contact support."
 
   - name: Flexera
     url: https://www.flexera.com/
@@ -194,8 +202,7 @@ websites:
     tfa:
       - totp
       - hardware
-    doc: https://blog.tilaa.com/post/128110588046
-    exception: "SMS-capable phone required."
+    doc: https://support.tilaa.com/hc/en-us/articles/360020167352
 
   - name: UpCloud
     url: https://www.upcloud.com

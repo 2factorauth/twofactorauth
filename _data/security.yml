@@ -60,7 +60,8 @@ websites:
     img: cloudflare.png
     tfa:
       - totp
-    doc: https://support.cloudflare.com/hc/en-us/articles/200167866
+      - u2f
+    doc: https://support.cloudflare.com/hc/en-us/articles/200167906
 
   - name: Cobalt
     url: https://cobalt.io/

@@ -1,7 +1,7 @@
 TwoFactorAuth.org
 =================
 
-[![Build Status](https://img.shields.io/travis/2factorauth/twofactorauth/master?style=for-the-badge)](https://travis-ci.org/2factorauth/twofactorauth)
+[![Build Status](https://img.shields.io/github/workflow/status/2factorauth/twofactorauth/Jekyll%20Tests?style=for-the-badge)](https://github.com/2factorauth/twofactorauth/actions)
 [![License](https://img.shields.io/badge/license-mit-9A0F2D.svg?style=for-the-badge)](/LICENSE)
 [![Gitter](https://img.shields.io/gitter/room/2factorauth/twofactorauth.svg?style=for-the-badge&logo=gitter&color=ED1965)](https://gitter.im/2factorauth/twofactorauth)
 [![Twitter](https://img.shields.io/badge/Twitter-@2faorg-1DA1F2.svg?style=for-the-badge&logo=twitter)](https://twitter.com/2faorg)

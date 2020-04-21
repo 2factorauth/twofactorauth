@@ -6,19 +6,29 @@ websites:
       - totp
     doc: https://help.actionnetwork.org/hc/en-us/articles/217206826
 
+  - name: Airship
+    url: https://www.airship.com/
+    img: airship.png
+    tfa:
+      - totp
+    doc: https://docs.airship.com/tutorials/security/2fa/
+    exception: "2FA is only available upon request for customers on their Essential and Comprehensive plans."
+
   - name: Basecamp
     url: https://basecamp.com/
     img: basecamp.png
     tfa:
       - totp
-    doc: https://3.basecamp-help.com/article/84-logging-in#enable-two-factor-authentication
+      - u2f
+    doc: https://3.basecamp-help.com/article/443--
 
   - name: Campfire
     url: https://campfirenow.com/
     img: campfire.png
     tfa:
-      - sms
-    doc: https://help.37signals.com/sign-in/questions/460
+      - totp
+      - u2f
+    doc: https://help.37signals.com/sign-in/questions/480
 
   - name: Capsule
     url: https://capsulecrm.com/
@@ -34,7 +44,7 @@ websites:
     facebook: carbonblackinc
 
   - name: Close
-    url: https://www.close.com/
+    url: https://close.com/
     img: close.png
     tfa:
       - totp
@@ -140,6 +150,13 @@ websites:
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
+  - name: Houseparty
+    url: https://houseparty.com
+    twitter: houseparty
+    facebook: houseparty
+    email_address: support@houseparty.com
+    img: houseparty.png
+
   - name: HubSpot
     url: https://www.hubspot.com/
     img: hubspot.png
@@ -147,6 +164,13 @@ websites:
       - sms
       - totp
     doc: https://knowledge.hubspot.com/articles/kcs_article/account/how-can-i-set-up-two-factor-authentication-for-my-hubspot-login
+
+  - name: Intercom
+    url: https://www.intercom.com/
+    img: intercom.png
+    tfa:
+      - totp
+    doc: https://www.intercom.com/help/en/articles/181
 
   - name: IRCCloud
     url: https://www.irccloud.com
@@ -158,7 +182,7 @@ websites:
     url: https://www.kik.com/
     img: kik.png
     twitter: Kik
-    facebook: kikplaynice
+    facebook: kikapp
     email_address: support@kik.com
 
   - name: LINE
@@ -187,6 +211,15 @@ websites:
     tfa:
       - hardware
     doc: https://www.emailcenteruk.com/maxemail/platform-security-collaboration/
+
+  - name: Nulab
+    url: https://nulab.com/
+    img: nulab.png
+    tfa:
+      - u2f
+      - totp
+      - sms
+    doc: https://support.nulab.com/hc/en-us/articles/115001025087
 
   - name: Pipedrive
     url: https://www.pipedrive.com/
@@ -224,7 +257,6 @@ websites:
       - sms
       - proprietary
     doc: https://sendgrid.com/docs/ui/account-and-settings/two-factor-authentication/
-    exception: "Software authentication requires the Authy app."
 
   - name: Sendloop
     url: https://app.sendloop.com
@@ -330,3 +362,11 @@ websites:
     twitter: Yammer
     facebook: Yammer
     img: yammer.png
+
+  - name: Zoom
+    url: https://www.zoom.us
+    img: zoom.png
+    tfa:
+      - totp
+    doc: https://support.zoom.us/hc/en-us/articles/360038247071
+    exception: "2FA is only available on paid plans and doesn't protect the desktop or mobile apps."
