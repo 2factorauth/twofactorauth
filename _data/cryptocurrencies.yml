@@ -492,3 +492,11 @@ websites:
       - phone
       - proprietary
     doc: https://support.xapo.com/en/articles?id=59
+
+  - name: MaiCoin
+    url: https://www.maicoin.com
+    img: maicoin.png
+    tfa:
+      - sms
+      - totp
+    doc: https://maicoin2.freshdesk.com/en/support/solutions/articles/32000016118-about-2-factor-authenticator
