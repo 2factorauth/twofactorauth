@@ -38,6 +38,8 @@ websites:
       - totp
       - hardware
     doc: https://www.bitcoin.de/de/faq/was-ist-die-2-step-verification-2-faktor-authentifizierung/46.html
+    regions:
+      - de
 
   - name: BitcoinTrade
     url: https://bitcointrade.com.br/
@@ -45,6 +47,8 @@ websites:
     tfa:
       - totp
     doc: https://blog.bitcointrade.com.br/2fa-o-que-e-e-como-cadastrar/
+    regions:
+      - br
 
   - name: Bitfinex
     url: https://www.bitfinex.com
@@ -62,6 +66,8 @@ websites:
       - email
       - totp
     doc: https://bitflyer.com/en-jp/faq/2-10
+    regions:
+      - jp
 
   - name: BitGo
     url: https://www.bitgo.com
@@ -78,6 +84,8 @@ websites:
       - sms
       - totp
     doc: https://en.bithumb.com/customer_support/info_guide?seq=510
+    regions:
+      - kr
 
   - name: Bitlish
     url: https://bitlish.com
@@ -146,6 +154,8 @@ websites:
     tfa:
       - totp
     doc: https://braziliex.com/faq/index.php?id=288
+    regions:
+      - br
 
   - name: BTC BOX
     url: https://www.btcbox.co.jp/
@@ -153,6 +163,8 @@ websites:
     tfa:
       - totp
     doc: https://support.btcbox.co.jp/hc/en-us/articles/360001886053
+    regions:
+      - jp
 
   - name: BTC Markets
     url: https://www.btcmarkets.net/
@@ -161,6 +173,8 @@ websites:
       - totp
     doc: https://www.btcmarkets.net/faq#q27
     exception: "A mobile phone number is required to reset two-factor authentication."
+    regions:
+      - au
 
   - name: BTCPOP
     url: https://btcpop.co/
@@ -175,6 +189,11 @@ websites:
     tfa:
       - totp
     doc: https://soporte.buda.com/es/articles/2379080
+    regions:
+      - ar
+      - cl
+      - co
+      - pe
 
   - name: BX Thailand
     url: https://bx.in.th/
@@ -182,6 +201,8 @@ websites:
     tfa:
       - totp
     doc: https://bx.in.th/info/faq/
+    regions:
+      - th
 
   - name: Bybit
     url: https://www.bybit.com/
@@ -245,6 +266,8 @@ websites:
     tfa:
       - totp
     doc: https://faq.coincheck.com/s/article/20204?language=en_US
+    regions:
+      - jp
 
   - name: CoinDeal
     url: https://coindeal.com
@@ -269,6 +292,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.coinfloor.co.uk/security
+    regions:
+      - uk
 
   - name: CoinGate
     url: https://coingate.com
@@ -298,6 +323,8 @@ websites:
     img: coinone.png
     tfa:
       - totp
+    regions:
+      - kr
 
   - name: Coins.ph
     url: https://coins.ph/
@@ -313,6 +340,8 @@ websites:
       - sms
       - totp
     doc: https://coinspot.zendesk.com/hc/en-us/sections/115000049254
+    regions:
+      - au
 
   - name: CoinTracking
     url: https://cointracking.info/
@@ -326,6 +355,9 @@ websites:
     tfa:
       - totp
     doc: https://help.coinut.com/hc/en-us/articles/360005061354
+    regions:
+      - ca
+      - sg
 
   - name: Cryptonator
     url: https://www.cryptonator.com
@@ -361,6 +393,14 @@ websites:
       - hardware
       - u2f
     doc: https://gemini24.zendesk.com/hc/en-us/sections/360001694951
+    regions:
+      - us
+      - ca
+      - hk
+      - sg
+      - kr
+      - uk
+      - au
 
   - name: HitBTC
     url: https://www.hitbtc.com/
@@ -375,6 +415,8 @@ websites:
     tfa:
       - totp
     doc: https://support.korbit.co.kr/customer/en/portal/articles/1717692
+    regions:
+      - kr
 
   - name: Kraken
     url: https://www.kraken.com/
@@ -426,6 +468,8 @@ websites:
     tfa:
       - totp
     doc: https://suporte.mercadobitcoin.com.br/hc/pt-br/articles/360000385152
+    regoins:
+      - br
 
   - name: PayKassa
     url: https://paykassa.pro/
