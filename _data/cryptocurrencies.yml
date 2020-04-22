@@ -419,6 +419,14 @@ websites:
     tfa:
       - totp
     doc: https://www.luno.com/help/en/articles/1000203420
+    
+  - name: MaiCoin
+      url: https://www.maicoin.com
+      img: maicoin.png
+      tfa:
+        - sms
+        - totp
+      doc: https://maicoin2.freshdesk.com/en/support/solutions/articles/32000016118-about-2-factor-authenticator
 
   - name: Mercado Bitcoin
     url: https://www.mercadobitcoin.com.br/
@@ -493,10 +501,3 @@ websites:
       - proprietary
     doc: https://support.xapo.com/en/articles?id=59
 
-  - name: MaiCoin
-    url: https://www.maicoin.com
-    img: maicoin.png
-    tfa:
-      - sms
-      - totp
-    doc: https://maicoin2.freshdesk.com/en/support/solutions/articles/32000016118-about-2-factor-authenticator
