@@ -538,6 +538,13 @@ websites:
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2311#issuecomment-273424695
 
+  - name: Váš Hosting
+    url: https://www.vas-hosting.cz/
+    img: vas-hosting.png
+    tfa:
+      - sms
+    doc: https://www.vas-hosting.cz/blog-novinky-v-zakaznickem-centru-4-20
+
   - name: WebFaction
     url: https://www.webfaction.com
     img: webfaction.png
