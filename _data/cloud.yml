@@ -3,11 +3,10 @@ websites:
     url: https://aws.amazon.com
     img: aws.png
     tfa:
-      - sms
       - totp
       - hardware
       - u2f
-    doc: https://aws.amazon.com/iam/details/mfa/
+    doc: https://aws.amazon.com/iam/features/mfa/
 
   - name: appFog
     url: https://www.ctl.io/appfog/
