@@ -247,6 +247,7 @@ websites:
       - totp
       - hardware
     doc: https://help.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication
+    exception: "Hardware tokens are allowed only if at least one other 2FA method is enabled."
 
   - name: GitLab
     url: https://gitlab.com
