@@ -247,6 +247,7 @@ websites:
       - totp
       - hardware
     doc: https://help.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication
+    exception: "Security keys are allowed only when at least one other 2FA option is enabled (authenticator app or SMS)."
 
   - name: GitLab
     url: https://gitlab.com
