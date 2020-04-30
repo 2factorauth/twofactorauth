@@ -9,8 +9,10 @@ websites:
     img: airtable.png
     tfa:
       - sms
+      - phone
       - totp
     doc: https://support.airtable.com/hc/en-us/articles/219409917
+    exception: "SMS must be enabled first and software 2FA can be bypassed by SMS."
 
   - name: Any.do
     url: https://web.any.do/
