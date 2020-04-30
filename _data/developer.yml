@@ -247,6 +247,7 @@ websites:
       - totp
       - hardware
     doc: https://help.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication
+    exception: "Hardware tokens must have a backup method, either SMS or software token."
 
   - name: GitLab
     url: https://gitlab.com
