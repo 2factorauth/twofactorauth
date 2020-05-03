@@ -178,16 +178,6 @@ websites:
       - sms
     doc: https://www.bankofscotland.co.uk/aboutonline/changes-to-internet-banking.html
 
-  - name: Bank Polski
-    url: https://www.pkobp.pl/
-    img: pkobp.png
-    tfa:
-      - sms
-      - proprietary
-    doc: https://iko.pkobp.pl/funkcje/mobilna-autoryzacja/
-    regions:
-      - pl
-
   - name: Barclays UK
     url: https://www.barclays.co.uk/
     img: barclays.png
@@ -944,6 +934,16 @@ websites:
     twitter: PenFed
     facebook: PenFed
     img: penfed.png
+
+  - name: PKO Bank Polski
+    url: https://www.pkobp.pl/
+    img: pkobp.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://iko.pkobp.pl/funkcje/mobilna-autoryzacja/
+    regions:
+      - pl
 
   - name: PNC Bank
     url: https://www.pnc.com/
