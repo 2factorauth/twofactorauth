@@ -251,8 +251,17 @@ websites:
   - name: itslearning
     url: https://itslearning.com
     img: itslearning.png
-    twitter: itslearning
-    facebook: itslearning
+    tfa:
+      - totp
+    exception: "Only available to system administrators"
+    regions:
+      - de
+      - dk
+      - nl
+      - "no"
+      - uk
+      - us
+      - se
 
   - name: Karlsruher Institut für Technologie
     url: https://www.kit.edu
