@@ -394,6 +394,12 @@ websites:
       - totp
       - hardware
 
+  - name: Private Data Clouds
+    url: https://privatedataclouds.com.au/
+    img: privatedataclouds.png
+    tfa:
+      - totp
+
   - name: PlanetHoster
     url: https://www.planethoster.com/
     img: planethoster.png
