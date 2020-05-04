@@ -20,7 +20,9 @@ if File.exist?("/tmp/alexa/#{site}.txt")
   # Prettify rank
   rank = rank_i.to_s.reverse.scan(/\d{1,3}/).join(',').reverse
 else
-  url = URI("https://awis.api.alexa.com/api?Action=UrlInfo&ResponseGroup=Rank&Output=json&Url=#{site}")
+  url = URI('https://awis.api.alexa.com/api' \
+  "?Action=UrlInfo&ResponseGroup=Rank&Output=json&Url=#{site}")
+
   https = Net::HTTP.new(url.host, url.port)
   https.use_ssl = true
 
