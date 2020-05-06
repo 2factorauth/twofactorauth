@@ -105,6 +105,13 @@ websites:
       - totp
     doc: https://cloud.ibm.com/docs/iam?topic=iam-types
 
+  - name: Jelastic
+    url: https://jelastic.com
+    img: jelastic.png
+    tfa:
+      - totp
+    doc: https://docs.jelastic.com/two-factor-authentication
+
   - name: Joyent
     url: https://www.joyent.com/
     img: joyent.png
