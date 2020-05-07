@@ -5,6 +5,8 @@ websites:
     tfa:
       - totp
     doc: https://www.34sp.com/kb/142/how-to-enable-two-factor-authentication-on-your-account
+    regions:
+      - us
 
   - name: A2 Hosting
     url: https://www.a2hosting.com
@@ -39,6 +41,8 @@ websites:
     tfa:
       - totp
     doc: https://www.binarylane.com.au/support/solutions/articles/1000199372
+    regions:
+      - au
 
   - name: Binero
     url: https://www.binero.se
@@ -46,6 +50,8 @@ websites:
     tfa:
       - totp
     doc: https://blogg.binero.se/2017/10/tvafaktorsautentisering/
+    regions:
+      - se
 
   - name: Blacknight
     url: https://blacknight.com
@@ -53,6 +59,9 @@ websites:
     tfa:
       - totp
     doc: https://help.blacknight.com/hc/en-us/articles/360001358517
+    regions:
+      - ie
+      - uk
 
   - name: Bluehost
     url: https://www.bluehost.com/
@@ -120,6 +129,8 @@ websites:
     tfa:
       - totp
     doc: https://www.cyon.ch/support/a/zwei-schritt-verifizierung-aktivieren
+    regions:
+      - ch
 
   - name: Dreamhost
     url: https://dreamhost.com
@@ -135,6 +146,8 @@ websites:
     tfa:
       - totp
     doc: https://easy.gr/el/faq
+    regions:
+      - gr
 
   - name: Fastly
     url: https://www.fastly.com
@@ -158,6 +171,8 @@ websites:
     facebook: fsdata
     email_address: info@fsdata.se
     lang: sv
+    regions:
+      - se
 
   - name: Glesys
     url: https://glesys.com/
@@ -165,6 +180,8 @@ websites:
     tfa:
       - totp
       - hardware
+    regions:
+      - se
 
   - name: Globat
     url: https://www.globat.com/
@@ -185,6 +202,8 @@ websites:
       - totp
       - hardware
     doc: https://wiki.hetzner.de/index.php/KonsoleH:Zwei-Faktor-Authentifizierung/en
+    regions:
+      - de
 
   - name: Host Europe
     url: https://www.hosteurope.de/
@@ -192,6 +211,8 @@ websites:
     tfa:
       - sms
     doc: https://www.hosteurope.de/faq/kis/allgemeines0/wo-kann-ich-passworte-neu-vergeben/
+    regions:
+      - de
 
   - name: Hostens
     url: https://www.hostens.com/
@@ -228,6 +249,8 @@ websites:
     tfa:
       - totp
     doc: https://www.icuk.net/reseller/security.asp
+    regions:
+      - uk
 
   - name: Infomaniak
     url: https://www.infomaniak.com/
@@ -252,6 +275,8 @@ websites:
     facebook: Inleed
     email_address: support@inleed.se
     lang: sv
+    regions:
+      - se
 
   - name: InMotion Hosting
     url: https://www.inmotionhosting.com/
@@ -304,6 +329,8 @@ websites:
     tfa:
       - totp
     doc: https://www.mammoth.net.au/news/2012/10/22/two-factor-authentication-now-available
+    regions:
+      - au
 
   - name: Media Temple
     url: https://mediatemple.net/
@@ -322,6 +349,8 @@ websites:
     twitter: mittwald
     img: mittwald.png
     lang: de
+    regions:
+      - de
 
   - name: NearlyFreeSpeech.NET
     url: https://www.nearlyfreespeech.net/
@@ -330,6 +359,8 @@ websites:
       - sms
       - totp
     doc: https://blog.nearlyfreespeech.net/2014/02/28/price-cuts-more-security-and-recovery-options/
+    regions:
+      - us
 
   - name: Neolo
     url: https://www.neolo.com
@@ -344,6 +375,8 @@ websites:
     tfa:
       - totp
     doc: https://www.netcup-wiki.de/wiki/Stammdaten_CCP#Zwei-Faktor-Authentifizierung_.282FA.29
+    regions:
+      - de
 
   - name: Netlify
     url: https://www.netlify.com
@@ -365,6 +398,8 @@ websites:
     tfa:
       - totp
     doc: https://noez.de/de/faq/?r=199
+    regions:
+      - de
 
   - name: Oderland
     url: https://www.oderland.se/
@@ -373,6 +408,8 @@ websites:
       - totp
     doc: https://www.oderland.se/support/en/artikel/how-is-my-personal-information-handled/#how-do-i-encrypt-personal-information
     exception: "Only available for the main client area. Hosting panels not supported."
+    regions:
+      - se
 
   - name: One.com
     url: https://www.one.com/
@@ -472,6 +509,11 @@ websites:
     tfa:
       - sms
     doc: https://switchie.ch/en/2-factor-authentication-2fa/
+    regions:
+      - ch
+      - de
+      - fr
+      - it
 
   - name: Time4VPS
     url: https://www.time4vps.eu/
@@ -487,6 +529,8 @@ websites:
       - totp
     doc: https://www.transip.nl/knowledgebase/artikel/162
     exception: "While both the main control panel and STACK support 2FA, each system is separate and requires its own setup."
+    regions:
+      - nl
 
   - name: UKFast
     url: https://www.ukfast.co.uk/
@@ -496,6 +540,8 @@ websites:
       - totp
       - hardware
     doc: https://github.com/2factorauth/twofactorauth/pull/997#issuecomment-77708501
+    regions:
+      - uk
 
   - name: Ukraine
     url: https://www.ukraine.com.ua/
@@ -506,6 +552,8 @@ websites:
       - totp
       - hardware
     doc: https://www.ukraine.com.ua/faq/rekomendatsii-po-zashchite-ot-vzloma-uchetnoj-zapisi.html
+    regions:
+      - ua
 
   - name: UpCloud
     url: https://www.upcloud.com
@@ -523,6 +571,8 @@ websites:
       - email
       - totp
     doc: https://ventraip.com.au/faq/article/two-factor-authentication-faq-vipcontrol/
+    regions:
+      - au
 
   - name: Versio
     url: https://www.versio.nl
@@ -530,6 +580,8 @@ websites:
     tfa:
       - totp
     doc: https://www.versio.nl/nieuws/twofactor-authenticatie-nu-beschikbaar-voor-uw-klantenaccount-205
+    regions:
+      - nl
 
   - name: VPS Server
     url: https://www.vpsserver.com/
