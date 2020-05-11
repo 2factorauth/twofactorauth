@@ -258,3 +258,12 @@ websites:
     tfa:
       - totp
     doc: https://docs.webroot.com/us/en/home/wsa_website_userguide/wsa_managementwebsite_userguide.htm#GettingStarted/Enabling2-FactorAuthentication.htm
+
+
+  - name: Zero Networks
+    url: https://zeronetworks.com
+    img: zeronetworks.png
+    tfa:
+      - totp
+      - sms
+      - email
