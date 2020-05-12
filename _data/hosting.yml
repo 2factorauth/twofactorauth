@@ -429,7 +429,8 @@ websites:
     tfa:
       - sms
       - totp
-      - hardware
+      - u2f
+    doc: https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/
 
   - name: PlanetHoster
     url: https://www.planethoster.com/
