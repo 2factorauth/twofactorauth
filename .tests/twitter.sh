@@ -2,12 +2,14 @@
 
 # Check Twitter handle
 check_twitter () {
-	handles="$(git --no-pager diff origin/master..HEAD ../_data | grep ^+[[:space:]] | grep twitter | cut -c15-)"
+	handles="$(git log -p origin/master..HEAD ../_data | grep ^+[[:space:]] | grep twitter | cut -c15-)"
 
   if [ -z "$handles" ]; then
     echo "No Twitter handles found."
     exit 0
   fi
+
+  gem i twitter --no-post-install-message --no-suggestions --minimal-deps --no-verbose -N -q
 
   # Loop through all Twitter handles
   echo "${handles}" | while IFS= read -r handle; do
