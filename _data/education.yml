@@ -286,6 +286,21 @@ websites:
     twitter: ISACANews
     facebook: ISACAGlobal
 
+  - name: itslearning
+    url: https://itslearning.com
+    img: itslearning.png
+    tfa:
+      - totp
+    exception: "Only available to system administrators"
+    regions:
+      - de
+      - dk
+      - nl
+      - "no"
+      - uk
+      - us
+      - se
+
   - name: Karlsruher Institut für Technologie
     url: https://www.kit.edu
     img: kit.png
