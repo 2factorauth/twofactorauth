@@ -935,6 +935,16 @@ websites:
     facebook: PenFed
     img: penfed.png
 
+  - name: PKO Bank Polski
+    url: https://www.pkobp.pl/
+    img: pkobp.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://iko.pkobp.pl/funkcje/mobilna-autoryzacja/
+    regions:
+      - pl
+
   - name: PNC Bank
     url: https://www.pnc.com/
     img: pncbank.png
