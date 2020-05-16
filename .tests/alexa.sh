@@ -16,8 +16,14 @@ check_rank () {
     domain="$(echo ${url} | cut -d'/' -f3)"
 
     # Get Alexa rank for the domain
-    echo "$(ruby alexa.rb ${domain})"
+    cmd="ruby alexa.rb ${domain}"
+    $cmd
 
+    # Get exit code from the ruby script
+    status=$?
+
+    # Echo ruby script output & exit with it's status code
+    return $status
   done
 }
 
