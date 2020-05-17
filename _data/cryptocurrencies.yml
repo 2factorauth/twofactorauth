@@ -6,6 +6,14 @@ websites:
       - totp
     doc: https://support.anycoindirect.eu/hc/en-gb/articles/115001423191
 
+  - name: Basic Attention Token
+    url: https://publishers.basicattentiontoken.org/
+    img: basicattentiontoken.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://support.brave.com/hc/en-us/articles/360021649491
+
   - name: Bcnex
     url: https://www.bcnex.net/
     img: bcnex.png
