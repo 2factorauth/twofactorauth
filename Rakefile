@@ -22,6 +22,7 @@ task :proof do
     './_site/index.html',
     assume_extension: true,
     check_html: true,
+    empty_alt_ignore: true,
     disable_external: true,
     parallel: { in_threads: 5 }
   ).run
