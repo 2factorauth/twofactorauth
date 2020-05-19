@@ -20,11 +20,10 @@ end
 task :proof do
   HTMLProofer.check_file(
     './_site/index.html',
-    assume_extension: true,
     check_html: true,
     empty_alt_ignore: true,
     disable_external: true,
-    parallel: { in_threads: 5 }
+    checks_to_ignore: ['ScriptCheck']
   ).run
 end
 
