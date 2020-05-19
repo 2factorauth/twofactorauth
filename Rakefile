@@ -10,7 +10,8 @@ task default: %w[proof verify jsonlint rubocop]
 task :build do
   config = Jekyll.configuration(
     'source' => './',
-    'destination' => './_site'
+    'destination' => './_site',
+    'disable_disk_cache' => true
   )
   site = Jekyll::Site.new(config)
   Jekyll::Commands::Build.build site, config
@@ -43,7 +44,7 @@ end
 # rubocop:enable Layout/LineLength
 
 task :verify do
-  ruby '.tests/verify.rb'
+  ruby '_deployment/tests/verify.rb'
 end
 
 RuboCop::RakeTask.new

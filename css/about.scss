@@ -1,0 +1,90 @@
+---
+---
+.title {
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 4vh;
+
+  &.mobile-only {
+    font-size: 8vw;
+  }
+}
+
+#team-title {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.row {
+  width: 95%;
+  margin: auto;
+
+  a {
+    text-decoration: none !important;
+    color: initial;
+  }
+}
+
+.maintainer {
+  align-items: center;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+
+  .card {
+    border-radius: 2px;
+    transition: all ease .4s;
+
+    &:hover {
+      transform: translateY(-0.75em);
+    }
+
+    .maintainer-name {
+      text-align: center;
+      color: black;
+    }
+
+    .twitter {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #55acee;
+      display: flex;
+      margin: auto;
+
+      .fa-twitter {
+        margin: auto;
+        font-size: 18px;
+        color: white;
+      }
+    }
+
+    .linkedin {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #0a66c2;
+      display: flex;
+      margin: auto;
+
+      .fa-linkedin-in {
+        margin: auto;
+        font-size: 18px;
+      }
+    }
+
+    .website {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #34465d;
+      display: flex;
+      margin: auto;
+
+      .fa-globe {
+        margin: auto;
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }
+}
