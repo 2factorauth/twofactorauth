@@ -18,8 +18,8 @@ task :build do
 end
 
 task :proof do
-  HTMLProofer.check_directory(
-    './_site',
+  HTMLProofer.check_file(
+    './_site/index.html',
     assume_extension: true,
     check_html: true,
     disable_external: true,
@@ -28,8 +28,8 @@ task :proof do
 end
 
 task proof_external: 'build' do
-  HTMLProofer.check_directory(
-    './_site', \
+  HTMLProofer.check_file(
+    './_site/index.html', \
     assume_extension: true, \
     check_html: true, \
     cache: { timeframe: '1w' }, \
