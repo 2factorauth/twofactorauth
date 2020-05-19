@@ -1,15 +1,21 @@
 name: Jekyll Tests
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   Test_Jekyll:
     runs-on: ubuntu-latest
     name: Test Jekyll
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.1.0
 
-    - uses: actions/cache@v1
+    - uses: actions/cache@v1.1.2
       with:
         path: vendor/cache
         key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
@@ -23,8 +29,11 @@ jobs:
          bundle install --jobs 4 --retry 3
          [ -d "vendor/cache" ] || { bundle package; }
 
-    - name: Build site
-      run: bundle exec jekyll build
+    - name: Build region sites
+      run: ruby ./_deployment/regions.rb
+
+    - name: Build main site
+      run: bundle exec jekyll build --config _config.yml _deployment/config-production.yml
       timeout-minutes: 1
 
     - name: Run build checks
