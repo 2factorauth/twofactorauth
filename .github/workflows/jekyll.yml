@@ -1,12 +1,6 @@
 name: Jekyll Tests
 
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+on: [push, pull_request]
 
 jobs:
   Test_Jekyll:
