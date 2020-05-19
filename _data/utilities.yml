@@ -246,7 +246,8 @@ websites:
       - sms
       - phone
       - totp
-      - hardware
+      - proprietary
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
     regions:
       - us
@@ -259,7 +260,7 @@ websites:
       - phone
       - totp
       - proprietary
-      - hardware
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
     regions:
       - us
