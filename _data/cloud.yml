@@ -180,6 +180,14 @@ websites:
       - totp
     doc: https://support.packet.com/kb/articles/portal
 
+  - name: Plaid
+    url: https://www.plaid.com/
+    img: plaid.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.plaid.com/hc/en-us/articles/360008278414
+
   - name: Rackspace
     url: https://www.rackspace.com/
     img: rackspace.png
