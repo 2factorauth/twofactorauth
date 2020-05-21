@@ -266,6 +266,16 @@ websites:
     img: hermes.png
     twitter: hermesDE
     lang: de
+  
+  - name: iBodyshop
+    url: https://app.ibodyshop.com/
+    img: ibodyshop.png
+    tfa:
+      - totp
+    doc: https://www.ibodyshop.com/support/
+    regions:
+      - au
+      - nz
 
   - name: IEEE
     url: https://www.ieee.org
