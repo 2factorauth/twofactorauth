@@ -23,6 +23,15 @@ jobs:
          bundle install --jobs 4 --retry 3
          [ -d "vendor/cache" ] || { bundle package; }
 
+    - name: Check file extensions
+      env:
+        dir: ${{ GITHUB_WORKSPACE }}
+      run: |
+        ./_deployment/tests/extensions.sh $dir/notes md
+        ./_deployment/tests/extensions.sh $dir/_layouts html
+        ./_deployment/tests/extensions.sh $dir/_includes html
+        ./_deployment/tests/extensions.sh $dir/_data yml
+
     - name: Build region sites
       run: ruby ./_deployment/regions.rb
 
@@ -35,8 +44,3 @@ jobs:
 
     - name: Test JSON files
       run: bundle exec rake jsonlint
-
-    - name: Test HTML files
-      run: bundle exec rake proof
-      env:
-        NOKOGIRI_USE_SYSTEM_LIBRARIES: true
