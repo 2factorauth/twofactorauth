@@ -12,7 +12,7 @@ formated_max_ranking="$(format_number ${max_ranking})"
 
 # Check Alexa rank
 check_rank () {
-  urls="$(git --no-pager diff origin/master..HEAD ../_data| grep ^+[[:space:]] | grep url | cut -c11-)"
+  urls="$(git --no-pager diff origin/master..HEAD ../../_data| grep ^+[[:space:]] | grep url | cut -c11-)"
 
   if [ -z "$urls" ]; then
     echo "No URLs found."
