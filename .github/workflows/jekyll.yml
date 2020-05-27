@@ -24,13 +24,11 @@ jobs:
          [ -d "vendor/cache" ] || { bundle package; }
 
     - name: Check file extensions
-      env:
-        dir: ${{ GITHUB_WORKSPACE }}
       run: |
-        ./_deployment/tests/extensions.sh $dir/notes md
-        ./_deployment/tests/extensions.sh $dir/_layouts html
-        ./_deployment/tests/extensions.sh $dir/_includes html
-        ./_deployment/tests/extensions.sh $dir/_data yml
+        ./_deployment/tests/extensions.sh ${{ github.workspace }}/notes md
+        ./_deployment/tests/extensions.sh ${{ github.workspace }}/_layouts html
+        ./_deployment/tests/extensions.sh ${{ github.workspace }}/_includes html
+        ./_deployment/tests/extensions.sh ${{ github.workspace }}/_data yml
 
     - name: Build region sites
       run: ruby ./_deployment/regions.rb
