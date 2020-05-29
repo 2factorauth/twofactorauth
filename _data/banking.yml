@@ -440,6 +440,17 @@ websites:
       - proprietary
     doc: https://www.desjardins.com/securite/validation-2-etapes/
 
+  - name: Deutsche Bank
+    url: https://www.deutsche-bank.de/
+    img: deutschebank.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.deutsche-bank.de/pk/lp/psd2.html
+    regions:
+      - de
+
   - name: Deutsche Kreditbank (DKB)
     url: https://www.dkb.de/
     img: dkb.png
