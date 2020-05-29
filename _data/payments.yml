@@ -4,9 +4,16 @@ websites:
     img: amazonpay.png
     tfa:
       - sms
+      - phone
       - totp
     doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
     exception: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
+
+  - name: American Express
+    url: https://www.americanexpress.com/
+    twitter: AmericanExpress
+    facebook: AmericanExpressUS
+    img: americanexpress.png
 
   - name: AppFolio
     url: https://www.appfolio.com/
@@ -14,6 +21,8 @@ websites:
     tfa:
       - totp
     doc: https://www.appfolio.com/help/online-portal
+    regions:
+      - us
 
   - name: Braintree
     img: braintree.png
@@ -30,6 +39,8 @@ websites:
     tfa:
       - totp
     doc: https://www.chargebee.com/docs/2fa.html
+    regions:
+      - us
 
   - name: ClickPay
     url: https://www.clickpay.com/
@@ -37,6 +48,8 @@ websites:
     facebook: ClickPayPlatform
     email_address: support@clickpay.com
     img: clickpay.png
+    regions:
+      - us
 
   - name: Dwolla
     url: https://www.dwolla.com
@@ -44,6 +57,15 @@ websites:
     tfa:
       - totp
     doc: https://www.dwolla.com/updates/introducing-two-factor-authentication-for-dwolla/
+    regions:
+      - us
+
+  - name: FastSpring
+    url: https://fastspring.com/
+    twitter: FastSpring
+    facebook: fastspring
+    email_address: support@fastspring.com
+    img: fastspring.png
 
   - name: Flattr
     img: flattr.png
@@ -55,7 +77,11 @@ websites:
     url: https://gocardless.com/
     tfa:
       - sms
+      - totp
     doc: https://support.gocardless.com/hc/en-gb/articles/360001164385
+    regions:
+      - fr
+      - uk
 
   - name: Google Pay
     url: https://pay.google.com/
@@ -73,6 +99,8 @@ websites:
     img: hype.png
     tfa:
       - sms
+    regions:
+      - it
 
   - name: Klarna
     url: https://www.klarna.com
@@ -82,12 +110,30 @@ websites:
       - proprietary
     exception: "Software 2FA is only available for Swedish citizens with BankID."
 
+  - name: MasterCard Argentina
+    url: https://www.masterconsultas.com.ar
+    img: mastercard.png
+    twitter: MastercardArg
+    facebook: MastercardArgentina
+    lang: es
+    regions:
+      - ar
+
+  - name: Mercado Pago
+    url: https://www.mercadopago.com
+    img: mercado-pago.png
+    tfa:
+      - sms
+      - proprietary
+    regions:
+      - ar
+
   - name: NETELLER
-    img: neteller.png
     url: https://www.neteller.com/
+    img: neteller.png
     tfa:
       - totp
-    doc: https://support.neteller.com/ACCOUNT/Two-Factor-Authentication/85238429/What-is-two-step-authentication.htm
+    doc: https://support.neteller.com/ACCOUNT/Two-Factor-Authentication/85238429
 
   - name: PAYEER
     url: https://payeer.com/en/
@@ -98,6 +144,12 @@ websites:
       - proprietary
     doc: https://payeer.com/en/faq/
     exception: "Receiving codes via SMS cost 0.05$ each message. 2FA is personalizable in account settings."
+    regions:
+      - ru
+      - es
+      - fr
+      - us
+      - ch
 
   - name: Payoneer
     url: https://www.payoneer.com/
@@ -126,6 +178,8 @@ websites:
     tfa:
       - sms
     doc: https://blog.paytm.com/secure-2-step-authentication-login-on-paytms-website-6dd5a20ae1b2
+    regions:
+      - in
 
   - name: Plastiq
     url: https://www.plastiq.com/
@@ -133,6 +187,8 @@ websites:
     tfa:
       - sms
     doc: https://help.plastiq.com/hc/en-us/articles/360006794893
+    regions:
+      - us
 
   - name: Privacy
     url: https://privacy.com/
@@ -140,6 +196,8 @@ websites:
     tfa:
       - totp
     doc: https://support.privacy.com/hc/en-us/articles/360012047174
+    regions:
+      - us
 
   - name: Ravelin
     url: https://www.ravelin.com/
@@ -161,14 +219,19 @@ websites:
     img: sixthcontinent.png
     twitter: sxc_italia
     facebook: sixthcontinent.it
+    regions:
+      - de
+      - it
+      - us
 
   - name: Skrill
     url: https://skrill.com/
     img: skrill.png
     tfa:
-      - totp
-      - hardware
-    doc: https://www.skrill.com/en/support#/path/ACCOUNT/Two-Factor-Authentication/905761532/Two-Factor-Authentication-2FA.htm
+      - email
+      - sms
+    doc: https://www.skrill.com/en/support#/path/SECURITY/1362150272/
+    exception: "Email method requires an additional PIN"
 
   - name: Square
     url: https://squareup.com
@@ -178,6 +241,9 @@ websites:
       - totp
     doc: https://squareup.com/help/us/en/article/5593
     exception: "SMS only supported in US and Canada"
+    regions:
+      - ca
+      - us
 
   - name: Square Cash
     url: https://cash.app/
@@ -185,10 +251,12 @@ websites:
     tfa:
       - email
     doc: https://cash.app/help/en/en-us/3127
+    regions:
+      - us
 
   - name: Stripe
-    img: stripe.png
     url: https://www.stripe.com/
+    img: stripe.png
     tfa:
       - sms
       - totp
@@ -203,12 +271,31 @@ websites:
       - totp
     doc: https://help.tebex.io/en/articles/2319372
 
+  - name: Todo Pago
+    url: https://todopago.com.ar/
+    twitter: todopagoar
+    facebook: TodoPagoAr
+    img: todopago.png
+    lang: es
+    regions:
+      - ar
+
   - name: Venmo
     url: https://venmo.com
     img: venmo.png
     tfa:
       - sms
     doc: https://help.venmo.com/hc/en-us/articles/217532397
+    regions:
+      - us
+
+  - name: Visa Argentina
+    url: https://www.visa.com.ar/
+    img: visa.png
+    twitter: VisaArgentina
+    lang: es
+    regions:
+      - ar
 
   - name: Visa Checkout
     url: https://secure.checkout.visa.com/
@@ -222,6 +309,8 @@ websites:
       - sms
       - totp
     doc: https://support.wepay.com/hc/en-us/articles/203609693
+    regions:
+      - us
 
   - name: Western Union
     url: https://www.westernunion.com/
@@ -238,6 +327,17 @@ websites:
     twitter: Worldpay_Global
     facebook: worldpay
     img: worldpay.png
+    regions:
+      - ca
+      - mx
+      - ar
+      - jp
+      - ch
+      - br
+      - de
+      - au
+      - uk
+      - sg
 
   - name: Yandex.Money
     url: https://money.yandex.ru
@@ -247,3 +347,5 @@ websites:
       - totp
       - hardware
     doc: https://money.yandex.ru/doc.xml?id=524852
+    regions:
+      - ru

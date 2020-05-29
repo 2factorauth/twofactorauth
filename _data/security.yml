@@ -60,7 +60,8 @@ websites:
     img: cloudflare.png
     tfa:
       - totp
-    doc: https://support.cloudflare.com/hc/en-us/articles/200167866
+      - u2f
+    doc: https://support.cloudflare.com/hc/en-us/articles/200167906
 
   - name: Cobalt
     url: https://cobalt.io/
@@ -204,8 +205,10 @@ websites:
   - name: Surfshark
     url: https://surfshark.com/
     img: surfshark.png
-    twitter: SurfsharkSecure
-    facebook: SurfsharkPrivacy
+    tfa:
+      - email
+      - totp
+    doc: https://support.surfshark.com/hc/en-us/articles/360011448319
 
   - name: ThreatConnect
     url: https://threatconnect.com/

@@ -9,6 +9,12 @@ websites:
     facebook: AutomaticDataProcessing
     img: adp.png
 
+  - name: Aetna
+    url: https://www.aetna.com/
+    img: aetna.png
+    twitter: Aetna
+    facebook: aetna
+
   - name: Allianz
     url: https://www.allianz.de/
     img: allianz.png
@@ -21,13 +27,20 @@ websites:
     img: altoira.png
     tfa:
       - totp
-    doc: https://help.altoira.com/hc/en-us/articles/360007374654
+    doc: https://help.altoira.com/enabling-/-disabling-two-factor-authentication-2fa
 
   - name: Amundi (épargne salariale &amp; retraite)
     url: https://www.amundi-ee.com
     twitter: Amundi_FR
     img: amundiee.png
     lang: fr
+
+  - name: AOK
+    url: https://www.aok.de/
+    img: aok.png
+    tfa:
+      - sms
+    doc: https://meine.aok.de/landingpage/faq
 
   - name: BGL Corporate Solutions
     url: https://www.bglcorp.com/
@@ -68,7 +81,13 @@ websites:
     facebook: SAPConcur
     img: concur.png
 
-  - name: Credit Karma
+  - name: Credit Karma (UK), formerly Noddle
+    url: https://www.creditkarma.co.uk
+    img: creditkarma.png
+    twitter: useyournoddle
+    facebook: noddleuk
+
+  - name: Credit Karma (US)
     url: https://www.creditkarma.com
     img: creditkarma.png
     tfa:
@@ -88,6 +107,12 @@ websites:
     facebook: ditech
     img: ditech.png
 
+  - name: Equifax
+    url: https://www.equifax.com/
+    twitter: AskEquifax
+    facebook: Equifax
+    img: equifax.png
+
   - name: Exact Online
     url: https://exact.com/
     img: exact.png
@@ -95,6 +120,13 @@ websites:
       - totp
     doc: https://support.exactonline.com/community/s/knowledge-base#All-All-HNO-Task-general-security-gen-auth-totpregphndsktpt
 
+  - name: Experian Ltd
+    url: https://www.experian.co.uk/
+    img: experianltd.png
+    tfa:
+      - sms
+      - phone
+      
   - name: FreeAgent
     url: https://www.freeagent.com
     img: freeagent.png
@@ -149,6 +181,7 @@ websites:
     tfa:
       - email
       - totp
+      - sms
     img: hrblock.png
 
   - name: Hargreaves Lansdown
@@ -170,8 +203,14 @@ websites:
       - sms
       - phone
       - totp
-    doc: https://ttlc.intuit.com/questions/2902682-what-is-two-step-verification
+    doc: https://ttlc.intuit.com/questions/2902682
     exception: "Software 2FA requires enabling SMS or phone call as a back-up."
+
+  - name: InvoiceBerry
+    url: https://www.invoiceberry.com/
+    img: invoiceberry.png
+    twitter: invoiceberry
+    facebook: Invoiceberry
 
   - name: Invoiced
     url: https://invoiced.com/
