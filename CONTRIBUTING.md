@@ -124,7 +124,6 @@ websites:
       - sms
       - email
       - phone
-      - software
       - hardware
       - proprietary (Software based 2FA that requires a special app to use)
       - totp (Normal software 2FA)
@@ -151,11 +150,10 @@ The following is an example of a website that *supports* TFA:
       - sms
       - email
       - phone
-      - software
       - hardware
       - totp
       - u2f
-    doc: http://www.google.com/intl/en-US/landing/2step/features.html
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html
 ```
 
 #### Adding a site that *does not* support TFA
@@ -231,11 +229,11 @@ For context, check out the discussion in issue [#242][242].
 
 [242]: https://github.com/2factorauth/twofactorauth/issues/242
 [exclude]: /EXCLUSION.md
-[bundler]: http://bundler.io/
+[bundler]: https://bundler.io/
 [gemfile]: /Gemfile
-[jekyll]: http://jekyllrb.com/
+[jekyll]: https://jekyllrb.com/
 [travis]: https://travis-ci.org/2factorauth/twofactorauth
-[yaml]: http://www.yaml.org/
+[yaml]: https://yaml.org/
 [alexa]: https://www.alexa.com/siteinfo
 [github-tutorial]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
 [do-tutorial]: https://www.digitalocean.com/community/tutorials/how-to-use-git-branches
