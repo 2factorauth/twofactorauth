@@ -448,6 +448,17 @@ websites:
       - proprietary
     doc: https://www.desjardins.com/securite/validation-2-etapes/
 
+  - name: Deutsche Bank
+    url: https://www.deutsche-bank.de/
+    img: deutschebank.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.deutsche-bank.de/pk/lp/psd2.html
+    regions:
+      - de
+
   - name: Deutsche Kreditbank (DKB)
     url: https://www.dkb.de/
     img: dkb.png
@@ -527,9 +538,9 @@ websites:
 
   - name: Fifth Third Bank
     url: https://www.53.com/
-    twitter: FifthThird
-    facebook: FifthThirdBank
     img: fifththird.png
+    tfa:
+      - sms
 
   - name: Fio banka
     url: https://www.fio.cz
@@ -942,6 +953,16 @@ websites:
     twitter: PenFed
     facebook: PenFed
     img: penfed.png
+
+  - name: PKO Bank Polski
+    url: https://www.pkobp.pl/
+    img: pkobp.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://iko.pkobp.pl/funkcje/mobilna-autoryzacja/
+    regions:
+      - pl
 
   - name: PNC Bank
     url: https://www.pnc.com/

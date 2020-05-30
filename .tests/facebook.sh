@@ -2,7 +2,7 @@
 
 # Check Facebook handle
 check_facebook () {
-  handles="$(git --no-pager diff origin/master..HEAD ../_data | grep ^+[[:space:]] | grep facebook | cut -c16-)"
+  handles="$(git log -p origin/master..HEAD ../_data | grep ^+[[:space:]] | grep facebook | cut -c16-)"
 
   if [ -z "$handles" ]; then
     echo "No Facebook handles found."

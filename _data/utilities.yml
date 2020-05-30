@@ -4,6 +4,8 @@ websites:
     twitter: AEPnews
     facebook: americanelectricpower
     img: aep.png
+    regions:
+      - us
 
   - name: Andrews &amp; Arnold
     url: https://aa.net.uk
@@ -12,6 +14,8 @@ websites:
       - totp
     doc: https://aa.net.uk/kb-broadband-2fa.html
     exception: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
+    regions:
+      - uk
 
   - name: Arcadia
     url: https://www.arcadia.com/
@@ -19,30 +23,40 @@ websites:
     facebook: ArcadiaHQ
     email_address: support@arcadia.com
     img: arcadia.png
+    regions:
+      - us
 
   - name: AT&amp;T
     url: https://www.att.com/
     twitter: ATTCares
     facebook: ATT
     img: att.png
+    regions:
+      - us
 
   - name: Blau.de
     url: https://www.blau.de/
     img: blau.png
     facebook: blaumobilfunk
     lang: de
+    regions:
+      - de
 
   - name: BT
     url: https://www.bt.com/
     img: bt.png
     twitter: bt_uk
     facebook: BTUK
+    regions:
+      - uk
 
   - name: Bulb
     url: https://www.bulb.co.uk
     twitter: bulbenergy
     facebook: bulb
     img: bulbenergy.png
+    regions:
+      - uk
 
   - name: Cablevisión Fibertel
     url: https://www.cablevisionfibertel.com.ar/
@@ -50,6 +64,8 @@ websites:
     facebook: cablevisionfibertel
     img: cablevisionfibertel.png
     lang: es
+    regions:
+      - ar
 
   - name: CallCentric
     url: https://www.callcentric.com/
@@ -57,18 +73,24 @@ websites:
     tfa:
       - email
     doc: https://www.callcentric.com/features/two_point_authentication
+    regions:
+      - us
 
   - name: CenturyLink
     url: https://www.centurylink.com/
     twitter: CenturyLink
     facebook: CenturyLink
     img: centurylink.png
+    regions:
+      - us
 
   - name: Charter Spectrum
     url: https://www.spectrum.com/
     twitter: GetSpectrum
     facebook: Spectrum
     img: charter.png
+    regions:
+      - us
 
   - name: Comcast
     url: https://www.xfinity.com/
@@ -79,12 +101,16 @@ websites:
       - proprietary
     doc: https://www.xfinity.com/support/account/enroll-2-step-verification/
     exception: "Email 2FA requires the use of a non-Comcast.net email address."
+    regions:
+      - us
 
   - name: ComEd
     url: https://www.comed.com/
     twitter: ComEd
     facebook: ComEd
     img: comed.png
+    regions:
+      - us
 
   - name: Con Edison
     url: https://www.coned.com/
@@ -95,19 +121,25 @@ websites:
       - totp
       - proprietary
     doc: https://www.coned.com/-/media/files/coned/documents/small-medium-large-businesses/building-project-center/contractor-resources/user-registration-guide.pdf?la=en
-    exception: "Requires phone number to set up. Can be bypassed by customer support." 
+    exception: "Requires phone number to set up. Can be bypassed by customer support."
+    regions:
+      - us
 
   - name: Consumer Cellular
     url: https://www.consumercellular.com
     img: consumercellular.png
     twitter: Consumer_Cell
     facebook: consumercellular
+    regions:
+      - us
 
   - name: Cox
     url: https://www.cox.com/
     twitter: CoxHelp
     facebook: coxcommunications
     img: cox.png
+    regions:
+      - us
 
   - name: Deutsche Telekom
     url: https://www.telekom.de/
@@ -116,41 +148,55 @@ websites:
     email_address: impressum@telekom.de
     img: deutschetelekom.png
     lang: de
+    regions:
+      - de
 
   - name: DIRECTV
     url: https://www.directv.com/
     twitter: DIRECTVService
     facebook: directv
     img: directv.png
+    regions:
+      - us
 
   - name: DISH Network
     url: https://www.dish.com/
     twitter: dish_answers
     facebook: DISH
     img: dish.png
+    regions:
+      - us
 
   - name: Dominion Energy
     url: https://www.dominionenergy.com/
     twitter: DominionEnergy
     img: dominion.png
+    regions:
+      - us
 
   - name: DTE Energy
     url: https://www.dteenergy.com/
     twitter: DTE_Energy
     facebook: dteenergy
     img: dteenergy.png
+    regions:
+      - us
 
   - name: Duke Energy
     url: https://www.duke-energy.com/
     twitter: DukeEnergy
     facebook: duke.energy
     img: duke.png
+    regions:
+      - us
 
   - name: EE
     url: https://ee.co.uk/
     twitter: EE
     facebook: ee
     img: ee.png
+    regions:
+      - uk
 
   - name: Ergon Energy
     url: https://www.ergon.com.au/
@@ -158,30 +204,40 @@ websites:
     facebook: ErgonEnergy
     email_address: customerservice@ergon.com.au
     img: ergon.png
+    regions:
+      - au
 
   - name: Eversource
     url: https://www.eversource.com/
     twitter: EversourceCorp
     facebook: EversourceEnergy
     img: eversource.png
+    regions:
+      - us
 
   - name: Florida Power and Light
     url: https://www.fpl.com/
     twitter: insideFPL
     facebook: fplconnect
     img: fpl.png
+    regions:
+      - us
 
   - name: Frontier
     url: https://frontier.com/
     twitter: AskFrontier
     facebook: FrontierCorp
     img: frontier.png
+    regions:
+      - us
 
   - name: Georgia Power
     url: https://www.georgiapower.com/
     twitter: GeorgiaPower
     facebook: GeorgiaPower
     img: georgiapower.png
+    regions:
+      - us
 
   - name: Google Fi
     url: https://fi.google.com/
@@ -190,8 +246,11 @@ websites:
       - sms
       - phone
       - totp
-      - hardware
+      - proprietary
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    regions:
+      - us
 
   - name: Google Fiber
     url: https://fiber.google.com/
@@ -201,8 +260,10 @@ websites:
       - phone
       - totp
       - proprietary
-      - hardware
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    regions:
+      - us
 
   - name: Halebop
     url: https://www.halebop.se/
@@ -211,12 +272,16 @@ websites:
       - proprietary
     doc: https://github.com/2factorauth/twofactorauth/pull/2304#issue-200730083
     exception: "2FA is only available for Swedish citizens with BankID."
+    regions:
+      - se
 
   - name: Koodo Mobile
     url: https://www.koodomobile.com
     twitter: koodo
     facebook: Koodo
     img: koodo.png
+    regions:
+      - ca
 
   - name: Moj Tele2
     url: https://moj.tele2.hr/
@@ -224,18 +289,24 @@ websites:
     facebook: tele2.hr
     img: mojtele2.png
     lang: hr
+    regions:
+      - hr
 
   - name: Nicor Gas
     url: https://www.nicorgas.com/
     twitter: Nicor_Gas
     facebook: NicorGas
     img: nicorgas.png
+    regions:
+      - us
 
   - name: Optus
     url: https://www.optus.com.au/
     twitter: Optus
     facebook: optus
     img: optus.png
+    regions:
+      - au
 
   - name: Orange
     url: https://www.orange.fr/portail
@@ -243,24 +314,32 @@ websites:
     facebook: Orange.France
     img: orange.png
     lang: fr
+    regions:
+      - fr
 
   - name: Pacific Gas and Electric Company PG&amp;E
     url: https://www.pge.com/
     twitter: PGE4Me
     facebook: pacificgasandelectric
     img: pge.png
+    regions:
+      - us
 
   - name: PowerStream
     url: https://www.powerstream.ca/
     twitter: AlectraNews
     facebook: PowerStreamPage
     img: powerstream.png
+    regions:
+      - ca
 
   - name: RCN
     url: https://www.rcn.com/
     twitter: RCNconnects
     facebook: RCN
     img: rcn.png
+    regions:
+      - us
 
   - name: Republic Wireless
     url: https://republicwireless.com/
@@ -268,24 +347,32 @@ websites:
     tfa:
       - totp
     doc: https://help.republicwireless.com/hc/en-us/articles/360008803994
+    regions:
+      - us
 
   - name: Rochester Gas & Electric
     url: https://www.rge.com/
     twitter: RGandE
     facebook: RochGandE
     img: rge.png
+    regions:
+      - us
 
   - name: Rogers
     url: https://www.rogers.com/
     twitter: RogersHelps
     facebook: Rogers
     img: rogers.png
+    regions:
+      - ca
 
   - name: San Diego Gas & Electric
     url: https://www.sdge.com/
     twitter: SDGE
     facebook: SanDiegoGasandElectric
     img: sdge.png
+    regions:
+      - us
 
   - name: sipgate
     url: https://www.sipgate.de/
@@ -293,6 +380,8 @@ websites:
     facebook: sipgate
     img: sipgate.png
     lang: de
+    regions:
+      - de
 
   - name: Sonic
     url: https://www.sonic.com/
@@ -302,6 +391,8 @@ websites:
       - phone
       - totp
     doc: https://help.sonic.com/hc/en-us/articles/236079387
+    regions:
+      - us
 
   - name: Sosh
     url: https://www.sosh.fr
@@ -309,18 +400,24 @@ websites:
     facebook: sosh
     img: sosh.png
     lang: fr
+    regions:
+      - fr
 
   - name: Southern California Edison
     url: https://www.sce.com/
     twitter: SCE
     facebook: sce
     img: sce.png
+    regions:
+      - us
 
   - name: Sprint
     url: https://www.sprint.com/
     twitter: sprint
     facebook: sprint
     img: sprint.png
+    regions:
+      - us
 
   - name: Swisscom
     url: https://www.swisscom.ch/
@@ -328,6 +425,8 @@ websites:
     facebook: Swisscom
     img: swisscom.png
     lang: de
+    regions:
+      - ch
 
   - name: T-Mobile
     url: https://www.t-mobile.com/
@@ -335,6 +434,8 @@ websites:
     tfa:
       - sms
     doc: https://support.t-mobile.com/docs/DOC-2727
+    regions:
+      - us
 
   - name: Telia (Sweden)
     url: https://www.telia.se/
@@ -343,18 +444,24 @@ websites:
       - proprietary
     doc: https://www.telia.se/privat/support/info/logga-in-med-bankid-och-eleg-pa-mitt-telia
     exception: "2FA is only available for Swedish citizens with BankID."
+    regions:
+      - se
 
   - name: Telstra
     url: https://www.telstra.com.au/
     twitter: Telstra
     facebook: Telstra24x7
     img: telstra.png
+    regions:
+      - au
 
   - name: Telus
     url: https://www.telus.com
     twitter: TELUSsupport
     facebook: telus
     img: telus.png
+    regions:
+      - ca
 
   - name: Telzio
     url: https://www.telzio.com/
@@ -362,12 +469,16 @@ websites:
     tfa:
       - totp
     doc: https://telzio.com/support/two-factor-authentication
+    regions:
+      - us
 
   - name: Three UK
     url: http://www.three.co.uk/
     twitter: ThreeUK
     facebook: ThreeUK
     img: three.png
+    regions:
+      - uk
 
   - name: TIM
     url: https://www.tim.it/
@@ -375,6 +486,8 @@ websites:
     facebook: TimOfficialPage
     img: tim.png
     lang: it
+    regions:
+      - it
 
   - name: Ting
     url: https://ting.com/
@@ -383,17 +496,23 @@ websites:
       - sms
       - totp
     doc: https://help.ting.com/hc/en-us/articles/209351258
+    regions:
+      - us
 
   - name: Verizon
     url: https://www.verizon.com/
     twitter: VerizonSupport
     facebook: verizon
     img: verizon.png
+    regions:
+      - us
 
   - name: Verizon Wireless
     url: https://www.verizonwireless.com/
     twitter: VZWSupport
     img: verizon.png
+    regions:
+      - us
 
   - name: Vimla
     url: https://vimla.se/
@@ -401,18 +520,24 @@ websites:
     facebook: vimla.se
     img: vimla.png
     lang: sv
+    regions:
+      - se
 
   - name: Virgin Media (IE)
     url: https://www.virginmedia.ie/
     twitter: VirginMediaIE
     facebook: VirginMediaIreland
     img: virginmedia.png
+    regions:
+      - ie
 
   - name: Virgin Media (UK)
     url: https://www.virginmedia.com/
     twitter: virginmedia
     facebook: virginmedia
     img: virginmedia.png
+    regions:
+      - uk
 
   - name: Virgin Mobile
     url: https://www.virgin.com/gateways/mobile
@@ -426,24 +551,32 @@ websites:
     facebook: vodafoneDE
     img: vodafone.png
     lang: de
+    regions:
+      - de
 
   - name: Vodafone (IE)
     url: https://www.vodafone.ie/
     twitter: VodafoneIreland
     facebook: vodafoneireland
     img: vodafone.png
+    regions:
+      - ie
 
   - name: Vodafone (IT)
     url: http://www.vodafone.it/
     twitter: VodafoneIT
     facebook: vodafoneit
     img: vodafone.png
+    regions:
+      - it
 
   - name: Vodafone (UK)
     url: https://www.vodafone.co.uk/
     img: vodafone.png
     tfa:
       - sms
+    regions:
+      - uk
 
   - name: VoIP.ms
     url: https://voip.ms/
