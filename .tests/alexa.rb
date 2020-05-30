@@ -1,86 +1,61 @@
-#/usr/bin/ruby
-require "cgi"
-require "base64"
-require "openssl"
-require "uri"
-require "net/https"
-require "rexml/document"
-require "time"
+# frozen_string_literal: true
 
-access_key_id = ENV["alexa_access_key"]
-secret_access_key = ENV["alexa_access_secret"]
-#
-# Sample request to Alexa Web Information Service
-#
+require 'uri'
+require 'net/http'
+require 'json'
+require 'fileutils'
 
-if ARGV.length < 1
-  $stderr.puts "Usage: urlinfo.rb site"
+max_ranking = 200_000
+max_ranking_string = max_ranking.to_s.reverse.scan(/\d{1,3}/).join(',').reverse
+
+if ARGV.empty?
+  warn 'Usage: alexa.rb url'
   exit(-1)
+end
+
+site = ARGV[0]
+
+if File.exist?("/tmp/alexa/#{site}.txt")
+  rank_i = File.open("/tmp/alexa/#{site}.txt", &:readline).to_i
+  # Prettify rank
+  rank = rank_i.to_s.reverse.scan(/\d{1,3}/).join(',').reverse
 else
-  site = ARGV[0]
+  url = URI('https://awis.api.alexa.com/api' \
+  "?Action=UrlInfo&ResponseGroup=Rank&Output=json&Url=#{site}")
+
+  https = Net::HTTP.new(url.host, url.port)
+  https.use_ssl = true
+
+  request = Net::HTTP::Get.new(url)
+  request['x-api-key'] = ENV['alexa_access_key']
+  request['Accept'] = 'application/json'
+  response = https.request(request)
+
+  unless response.code == '200'
+    raise("Request failed. Check URL & API key. (#{response.code})")
+  end
+
+  # Parse response
+  body = JSON.parse(response.body)
+  body = body['Awis']['Results']['Result']['Alexa']['TrafficData']
+
+  rank_i = body['Rank'].to_i
+
+  # Prettify rank_i output
+  rank = rank_i.to_s.reverse.scan(/\d{1,3}/).join(',').reverse
+
+  # Create cache file
+  FileUtils.mkdir_p '/tmp/alexa'
+  file = File.new("/tmp/alexa/#{site}.txt", 'w')
+  file.puts(rank_i)
+  file.close
 end
 
-SERVICE_HOST = "awis.amazonaws.com"
-SERVICE_ENDPOINT = "awis.us-west-1.amazonaws.com"
-SERVICE_PORT = 443
-SERVICE_URI = "/api"
-SERVICE_REGION = "us-west-1"
-SERVICE_NAME = "awis"
+# rubocop:disable Layout/LineLength
+raise("\e[31m#{site} has an Alexa ranking above #{max_ranking_string}. (Currently: #{rank})\e[0m") if max_ranking < rank_i
 
-def getSignatureKey(key, dateStamp, regionName, serviceName)
-  kDate    = OpenSSL::HMAC.digest('sha256', "AWS4" + key, dateStamp)
-  kRegion  = OpenSSL::HMAC.digest('sha256', kDate, regionName)
-  kService = OpenSSL::HMAC.digest('sha256', kRegion, serviceName)
-  kSigning = OpenSSL::HMAC.digest('sha256', kService, "aws4_request")
-  kSigning
-end
+raise("\e[31m#{site} doesn't have an Alexa rank. #{max_ranking_string} or less required.\e[0m") if rank_i.zero?
 
-# escape str to RFC 3986
-def escapeRFC3986(str)
-  return URI.escape(str,/[^A-Za-z0-9\-_.~]/)
-end
+# rubocop:enable Layout/LineLength
 
-action = "UrlInfo"
-responseGroup = "Rank,LinksInCount"
-timestamp = ( Time::now ).utc.strftime("%Y%m%dT%H%M%SZ")
-datestamp = ( Time::now ).utc.strftime("%Y%m%d")
-
-headers = {
-  "host"        => SERVICE_ENDPOINT,
-  "x-amz-date"  => timestamp
-}
-
-query = {
-  "Action"           => action,
-  "ResponseGroup"    => responseGroup,
-  "Url"              => site
-}
-
-query_str = query.sort.map{|k,v| k + "=" + escapeRFC3986(v.to_s())}.join('&')
-headers_str = headers.sort.map{|k,v| k + ":" + v}.join("\n") + "\n"
-headers_lst = headers.sort.map{|k,v| k}.join(";")
-payload_hash = Digest::SHA256.hexdigest ""
-canonical_request = "GET" + "\n" + SERVICE_URI + "\n" + query_str + "\n" + headers_str + "\n" + headers_lst + "\n" + payload_hash
-algorithm = "AWS4-HMAC-SHA256"
-credential_scope = datestamp + "/" + SERVICE_REGION + "/" + SERVICE_NAME + "/" + "aws4_request"
-string_to_sign = algorithm + "\n" +  timestamp + "\n" +  credential_scope + "\n" + (Digest::SHA256.hexdigest canonical_request)
-signing_key = getSignatureKey(secret_access_key, datestamp, SERVICE_REGION, SERVICE_NAME)
-signature=OpenSSL::HMAC.hexdigest('sha256', signing_key, string_to_sign)
-authorization_header = algorithm + " " + "Credential=" + access_key_id + "/" + credential_scope + ", " +  "SignedHeaders=" + headers_lst + ", " + "Signature=" + signature;
-
-url = "https://" + SERVICE_HOST + SERVICE_URI + "?" + query_str
-uri = URI(url)
-req = Net::HTTP::Get.new(uri)
-req["Accept"] = "application/xml"
-req["Content-Type"] = "application/xml"
-req["x-amz-date"] = timestamp
-req["Authorization"] = authorization_header
-
-res = Net::HTTP.start(uri.host, uri.port,
-  :use_ssl => uri.scheme == 'https') {|http|
-  http.request(req)
-}
-
-xml  = REXML::Document.new( res.body )
-
-REXML::XPath.each(xml,"//aws:Rank"){|el| puts el.text}
+puts("\e[32m#{site} has an Alexa ranking of #{rank}.\e[0m")

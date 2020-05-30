@@ -18,11 +18,11 @@ end
 
 task :proof do
   HTMLProofer.check_directory(
-    './_site', \
-    assume_extension: true, \
-    check_html: true, \
-    disable_external: true, \
-    cache: { timeframe: '2d', storage_dir: '/tmp/html-proofer' }
+    './_site',
+    assume_extension: true,
+    check_html: true,
+    disable_external: true,
+    parallel: { in_threads: 5 }
   ).run
 end
 
@@ -36,11 +36,11 @@ task proof_external: 'build' do
   ).run
 end
 
-# rubocop:disable Metrics/LineLength
+# rubocop:disable Layout/LineLength
 JsonLint::RakeTask.new do |t|
   t.paths = %w[_site/api/v1/data.json _site/api/v2/all.json _site/api/v2/tfa.json]
 end
-# rubocop:enable Metrics/LineLength
+# rubocop:enable Layout/LineLength
 
 task :verify do
   ruby '.tests/verify.rb'
