@@ -29,6 +29,13 @@ jobs:
           sudo apt install webp -y
           [ -d "vendor/cache" ] || { bundle package; }
 
+      - name: Check file extensions
+        run: |
+          ./_deployment/tests/extensions.sh ${{ github.workspace }}/notes md
+          ./_deployment/tests/extensions.sh ${{ github.workspace }}/_layouts html
+          ./_deployment/tests/extensions.sh ${{ github.workspace }}/_includes html
+          ./_deployment/tests/extensions.sh ${{ github.workspace }}/_data yml
+
       - name: Build region sites
         run: ruby ./_deployment/regions.rb
 
@@ -39,6 +46,14 @@ jobs:
 
       - name: Build the site
         run: bundle exec jekyll build --config _config.yml _deployment/config-production.yml
+
+      - name: Test HTML files
+          run: bundle exec rake proof
+          env:
+            NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+
+      - name: Test JSON files
+          run: bundle exec rake jsonlint
 
       - name: Deploy to GH Pages
         if: success()

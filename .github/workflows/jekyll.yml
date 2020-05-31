@@ -30,10 +30,7 @@ jobs:
         ./_deployment/tests/extensions.sh ${{ github.workspace }}/_includes html
         ./_deployment/tests/extensions.sh ${{ github.workspace }}/_data yml
 
-    - name: Build region sites
-      run: ruby ./_deployment/regions.rb
-
-    - name: Build main site
+    - name: Build site
       run: bundle exec jekyll build --config _config.yml _deployment/config-production.yml
       timeout-minutes: 1
 
