@@ -48,12 +48,12 @@ jobs:
         run: bundle exec jekyll build --config _config.yml _deployment/config-production.yml
 
       - name: Test HTML files
-          run: bundle exec rake proof
-          env:
-            NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+        run: bundle exec rake proof
+        env:
+          NOKOGIRI_USE_SYSTEM_LIBRARIES: true
 
       - name: Test JSON files
-          run: bundle exec rake jsonlint
+        run: bundle exec rake jsonlint
 
       - name: Deploy to GH Pages
         if: success()
