@@ -29,6 +29,7 @@ jobs:
     - name: Check file extensions
       run: |
         ./_deployment/tests/extensions.sh ${{ github.workspace }}/notes md
+        ./_deployment/tests/extensions.sh ${{ github.workspace }}/css scss
         ./_deployment/tests/extensions.sh ${{ github.workspace }}/_layouts html
         ./_deployment/tests/extensions.sh ${{ github.workspace }}/_includes html
         ./_deployment/tests/extensions.sh ${{ github.workspace }}/_data yml
