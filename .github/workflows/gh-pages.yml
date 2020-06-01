@@ -25,7 +25,7 @@ jobs:
           bundle config set path 'vendor/cache'
           bundle config set cache_all true
           bundle install --jobs 4 --retry 3
-          sudo npm i babel-minify -g
+          npm i babel-minify
           sudo apt install webp -y
           [ -d "vendor/cache" ] || { bundle package; }
 
@@ -33,6 +33,7 @@ jobs:
         run: |
           ./_deployment/tests/extensions.sh ${{ github.workspace }}/notes md
           ./_deployment/tests/extensions.sh ${{ github.workspace }}/css scss
+          ./_deployment/tests/extensions.sh ${{ github.workspace }}/js js
           ./_deployment/tests/extensions.sh ${{ github.workspace }}/_layouts html
           ./_deployment/tests/extensions.sh ${{ github.workspace }}/_includes html
           ./_deployment/tests/extensions.sh ${{ github.workspace }}/_data yml
@@ -40,13 +41,14 @@ jobs:
       - name: Build region sites
         run: ruby ./_deployment/regions.rb
 
-      - name: Minify content
-        run: |
-          ./_deployment/minify-js.sh
-          ./_deployment/webp.sh
+      - name: Generate webp images
+        run: ./_deployment/webp.sh
 
       - name: Build the site
         run: bundle exec jekyll build --config _config.yml,_deployment/config-production.yml
+
+      - name: Minify JavaScript files
+        run: ./_deployment/minify-js.sh
 
       - name: Test HTML files
         run: bundle exec rake proof

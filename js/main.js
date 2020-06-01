@@ -6,7 +6,7 @@ $(document).ready(function () {
   $('.exception').popup({ position: 'right center', hoverable: true, title: 'Exceptions & Restrictions' });
 
   // Register service worker
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js');
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/js/service-worker.js');
 
   // Show category of query
   const query = window.location.hash;
