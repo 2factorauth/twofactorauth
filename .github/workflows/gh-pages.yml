@@ -46,7 +46,7 @@ jobs:
           ./_deployment/webp.sh
 
       - name: Build the site
-        run: bundle exec jekyll build --config _config.yml _deployment/config-production.yml
+        run: bundle exec jekyll build --config _config.yml,_deployment/config-production.yml
 
       - name: Test HTML files
         run: bundle exec rake proof
