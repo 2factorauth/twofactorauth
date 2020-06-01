@@ -15,13 +15,16 @@ jobs:
         key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: ${{ runner.os }}-bundle-
 
-    - name: Install requirements
+    - uses: actions/setup-ruby@v1
+
+    - name: Install dependencies
       run: |
-         sudo snap install ruby --classic
-         bundle config set path 'vendor/cache'
-         bundle config set cache_all true
-         bundle install --jobs 4 --retry 3
-         [ -d "vendor/cache" ] || { bundle package; }
+        bundle config set path 'vendor/cache'
+        bundle config set cache_all true
+        bundle install --jobs 4 --retry 3
+        sudo npm i babel-minify -g
+        sudo apt install webp -y
+        [ -d "vendor/cache" ] || { bundle package; }
 
     - name: Check file extensions
       run: |
