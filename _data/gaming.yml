@@ -79,9 +79,10 @@ websites:
     url: https://www.epicgames.com/
     img: epicgames.png
     tfa:
+      - sms
       - email
       - totp
-    doc: https://epicgames.helpshift.com/a/epic-accounts/?s=epic-accounts&f=what-is-two-factor-authentication-2fa-and-how-do-i-opt-in
+    doc: https://www.epicgames.com/help/en-US/c74/c112/a3218
 
   - name: EVE Online
     url: https://www.eveonline.com/
@@ -187,7 +188,7 @@ websites:
     img: leagueoflegends.png
     tfa:
       - email
-    doc: https://support.riotgames.com/hc/en-us/articles/360010367273
+    doc: https://support-leagueoflegends.riotgames.com/hc/en-us/articles/360010367273
 
   - name: lichess.org
     url: https://lichess.org

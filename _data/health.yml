@@ -12,6 +12,8 @@ websites:
     tfa:
       - sms
       - email
+    regions:
+      - au
 
   - name: Carilion Clinic
     url: https://www.carilionclinic.org
@@ -19,6 +21,8 @@ websites:
     twitter: CarilionClinic
     facebook: carilionclinic
     email_address: direct@carilionclinic.org
+    regions:
+      - us
 
   - name: Cigna
     url: https://my.cigna.com
@@ -26,12 +30,18 @@ websites:
     tfa:
       - sms
       - email
+    regions:
+      - es
+      - uk
+      - us
 
   - name: CVS Caremark
     url: https://www.caremark.com
     twitter: CVSHealth
     facebook: CVS
     img: cvscaremark.png
+    regions:
+      - us
 
   - name: drchrono
     url: https://www.drchrono.com
@@ -39,6 +49,8 @@ websites:
     tfa:
       - proprietary
     doc: https://www.drchrono.com/blog/two-factor-authentication-extra-security-for-your-health-records/
+    regions:
+      - us
 
   - name: Drugs.com
     url: https://www.drugs.com/
@@ -46,12 +58,16 @@ websites:
     facebook: Drugscom
     img: drugscom.png
     status: https://twitter.com/Drugscom/status/493856207572975620
+    regions:
+      - us
 
   - name: Elation Health
     url: https://www.elationhealth.com/
     twitter: ElationHealth
     facebook: ElationHealth
     img: elationhealth.png
+    regions:
+      - us
 
   - name: Endomondo
     url: https://www.endomondo.com
@@ -73,7 +89,9 @@ websites:
       - sms
       - email
       - totp
-    doc: http://support.followmyhealth.com/customer/en/portal/articles/2982690
+    doc: https://support.followmyhealth.com/2020/03/10/turning-on-two-factor-authentication-while-logged-into-your-account/
+    regions:
+      - us
 
   - name: Garmin
     url: https://www.garmin.com/
@@ -98,22 +116,30 @@ websites:
     tfa:
       - totp
     doc: https://support.hint.com/en/articles/2360627
+    regions:
+      - us
 
   - name: Maccabi Healthcare Services
     url: https://www.maccabi4u.co.il/
     facebook: MaccabiHealth
     img: maccabi.png
     lang: he
+    regions:
+      - il
 
   - name: MedicAlert
     url: https://www.medicalert.ca
     img: medicalert.png
     twitter: MedicAlertCA
+    regions:
+      - ca
 
   - name: Misfit
     url: https://misfit.com/
     twitter: Misfit
     img: misfit.png
+    regions:
+      - us
 
   - name: myfitnesspal
     url: https://www.myfitnesspal.com
@@ -129,6 +155,15 @@ websites:
       - sms
       - totp
     doc: https://www.myheritage.com/help-center/en/article/how-do-i-set-up-two-factor-authentication-for-my-myheritage-account
+
+  - name: OSDE
+    url: https://www.osde.com.ar
+    img: osde.png
+    facebook: grupoosdeoficial
+    email_address: contacto@osde.com.ar
+    lang: es
+    regions:
+      - ar
 
   - name: Runkeeper
     url: https://runkeeper.com
@@ -156,6 +191,16 @@ websites:
     facebook: Strava
     img: strava.png
 
+  - name: Swiss Medical
+    url: https://www.swissmedical.com.ar
+    twitter: SwissMedicalG
+    facebook: SwissMedicalGroup
+    email_address: info@swissmedical.com.ar
+    img: swissmedical.png
+    lang: es
+    regions:
+      - ar
+
   - name: Thriva
     url: https://thriva.co
     img: thriva.png
@@ -168,6 +213,8 @@ websites:
     twitter: WebMD
     facebook: WebMD
     img: webmd.png
+    regions:
+      - us
 
   - name: Withings
     url: https://www.withings.com/
@@ -180,3 +227,5 @@ websites:
     twitter: Zocdoc
     facebook: ZocDoc
     img: zocdoc.png
+    regions:
+      - us

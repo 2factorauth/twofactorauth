@@ -9,9 +9,7 @@ jobs:
 
       - run:
           name: Check Twitter handles
-          command: |
-            gem i twitter --no-post-install-message --no-suggestions --minimal-deps --no-verbose -N -q
-            bash twitter.sh
+          command: bash twitter.sh
           working_directory: ./.tests
 
       - run:
@@ -19,10 +17,19 @@ jobs:
          command: bash facebook.sh
          working_directory: ./.tests
 
+      - restore_cache:
+          keys:
+            - awis-cache
+
       - run:
           name: Check Alexa ranking
           command: bash alexa.sh
           working_directory: ./.tests
+
+      - save_cache:
+          key: awis-cache
+          paths:
+            - "/tmp/alexa/*"
 
 workflows:
   version: 2

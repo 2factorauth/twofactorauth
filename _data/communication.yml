@@ -150,6 +150,13 @@ websites:
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
+  - name: Houseparty
+    url: https://houseparty.com
+    twitter: houseparty
+    facebook: houseparty
+    email_address: support@houseparty.com
+    img: houseparty.png
+
   - name: HubSpot
     url: https://www.hubspot.com/
     img: hubspot.png
@@ -157,6 +164,13 @@ websites:
       - sms
       - totp
     doc: https://knowledge.hubspot.com/articles/kcs_article/account/how-can-i-set-up-two-factor-authentication-for-my-hubspot-login
+
+  - name: Intercom
+    url: https://www.intercom.com/
+    img: intercom.png
+    tfa:
+      - totp
+    doc: https://www.intercom.com/help/en/articles/181
 
   - name: IRCCloud
     url: https://www.irccloud.com
@@ -197,6 +211,15 @@ websites:
     tfa:
       - hardware
     doc: https://www.emailcenteruk.com/maxemail/platform-security-collaboration/
+
+  - name: Nulab
+    url: https://nulab.com/
+    img: nulab.png
+    tfa:
+      - u2f
+      - totp
+      - sms
+    doc: https://support.nulab.com/hc/en-us/articles/115001025087
 
   - name: Pipedrive
     url: https://www.pipedrive.com/
@@ -339,3 +362,11 @@ websites:
     twitter: Yammer
     facebook: Yammer
     img: yammer.png
+
+  - name: Zoom
+    url: https://www.zoom.us
+    img: zoom.png
+    tfa:
+      - totp
+    doc: https://support.zoom.us/hc/en-us/articles/360038247071
+    exception: "2FA is only available on paid plans and doesn't protect the desktop or mobile apps."

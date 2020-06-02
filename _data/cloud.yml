@@ -3,16 +3,23 @@ websites:
     url: https://aws.amazon.com
     img: aws.png
     tfa:
-      - sms
       - totp
       - hardware
       - u2f
-    doc: https://aws.amazon.com/iam/details/mfa/
+    doc: https://aws.amazon.com/iam/features/mfa/
 
   - name: appFog
     url: https://www.ctl.io/appfog/
     facebook: CenturyLinkTech
     img: appfog.png
+
+  - name: Aruba Cloud
+    url: https://www.arubacloud.com/
+    img: arubacloud.png
+    tfa:
+      - proprietary
+    doc: https://kb.cloud.it/computing/uso-e-tecnologie/accesso-al-pannello-di-controllo-con-otp.aspx
+    exception: "Only the control panel supports 2FA (the main client area does not)."
 
   - name: Brightbox
     url: https://www.brightbox.com/
@@ -97,6 +104,13 @@ websites:
       - phone
       - totp
     doc: https://cloud.ibm.com/docs/iam?topic=iam-types
+
+  - name: Jelastic
+    url: https://jelastic.com
+    img: jelastic.png
+    tfa:
+      - totp
+    doc: https://docs.jelastic.com/two-factor-authentication
 
   - name: Joyent
     url: https://www.joyent.com/

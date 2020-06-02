@@ -206,8 +206,9 @@ websites:
     tfa:
       - sms
       - totp
-      - hardware
+      - u2f
     doc: https://www.godaddy.com/help/enable-two-step-verification-7502
+    exception: "If hardware 2FA enabled, customer support by phone requires enabling back-up method."
 
   - name: Google Domains
     url: https://domains.google.com
@@ -326,7 +327,7 @@ websites:
     img: namecom.png
     tfa:
       - totp
-    doc: https://www.name.com/services/two-step-verification
+    doc: https://www.name.com/support/categories/200296798
 
   - name: Namecheap
     url: https://www.namecheap.com/
