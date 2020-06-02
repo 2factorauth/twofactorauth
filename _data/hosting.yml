@@ -613,9 +613,10 @@ websites:
 
   - name: Wix
     url: https://www.wix.com/
-    twitter: WixHelp
-    facebook: wix
     img: wix.png
+    tfa:
+      - sms
+    doc: https://support.wix.com/en/article/using-2-step-verification-for-your-wix-account
 
   - name: World4You
     url: https://www.world4you.com
