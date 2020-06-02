@@ -30,8 +30,9 @@ websites:
     img: amazon.png
     tfa:
       - sms
+      - phone
       - totp
-    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201596330
+    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
     exception: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
 
   - name: Apple
@@ -350,6 +351,13 @@ websites:
       - sms
     doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
 
+  - name: Saturn
+    url: https://www.saturn.de
+    img: saturn.png
+    twitter: SaturnDE
+    facebook: SaturnDE
+    lang: de
+
   - name: Shopify
     url: https://shopify.com/
     img: shopify.png
@@ -394,6 +402,13 @@ websites:
     url: https://www.target.com/
     twitter: Target
     img: target.png
+
+  - name: Thalia
+    url: https://www.thalia.de/
+    facebook: thalia.de
+    email_address: info@thalia.de
+    img: thalia.png
+    lang: de
 
   - name: Tokopedia
     url: https://www.tokopedia.com/

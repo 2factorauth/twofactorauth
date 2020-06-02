@@ -10,6 +10,13 @@ websites:
     twitter: aboutdotme
     img: aboutme.png
 
+  - name: ArtStation
+    url: https://www.artstation.com/
+    twitter: ArtStationHQ
+    facebook: artstationhq
+    email_address: support@artstation.com
+    img: artstation.png
+
   - name: ASKfm
     url: https://ask.fm/
     img: askfm.png
@@ -69,7 +76,7 @@ websites:
       - totp
       - u2f
     doc: https://www.facebook.com/help/148233965247823
-    exception: "Software or SMS 2FA must be set up before a hardware token can be added."
+    exception: "Hardware 2FA requires also enabling a back-up method and is unsupported on mobile."
 
   - name: Flickr
     url: https://www.flickr.com
@@ -104,7 +111,9 @@ websites:
     img: hootsuite.png
     tfa:
       - totp
+      - email
     doc: https://help.hootsuite.com/hc/en-us/articles/204595950
+    exception: "Email is always enabled as backup method for Software Token."
 
   - name: ICQ
     url: https://icq.com/
@@ -132,6 +141,7 @@ websites:
       - sms
       - totp
     doc: https://www.linkedin.com/help/linkedin/answer/531
+    exception: "Only one 2FA method is allowed at a time."
 
   - name: LiveJournal
     url: https://www.livejournal.com

@@ -11,6 +11,13 @@ websites:
       - totp
     doc: https://www.youinvest.co.uk/faq/how-do-i-set-two-factor-authentication
 
+  - name: APMEX
+    url: https://www.apmex.com/
+    email_address: service@APMEX.com
+    facebook: APMEX
+    twitter: APMEX
+    img: apmex.png
+
   - name: Axos Invest
     url: https://www.axosinvest.com/
     twitter: AxosInvest
@@ -24,6 +31,13 @@ websites:
       - phone
       - totp
     doc: https://www.betterment.com/resources/understanding-account-security/#3
+
+  - name: Bullion Exchanges
+    url: https://www.bullionexchanges.com/
+    email_address: customerservice@bullionexchanges.com
+    facebook: bullionexchanges
+    twitter: goldexchangenyc
+    img: bullionexchanges.png
 
   - name: Capital Group / American Funds
     url: https://www.capitalgroup.com/
@@ -54,7 +68,7 @@ websites:
       - proprietary
       - hardware
     doc: https://us.etrade.com/security-center/securityid
-    
+
   - name: eToro
     url: https://www.etoro.com
     img: etoro.png
@@ -95,6 +109,12 @@ websites:
       - hardware
     doc: https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log
     exception: "SMS 2FA only works as long as no other method has been enabled."
+
+  - name: JM Bullion
+    url: https://www.jmbullion.com/
+    twitter: JMBullion
+    facebook: JMBullion
+    img: jmbullion.png
 
   - name: John Hancock Pensions
     url: https://www.jhancockpensions.com
@@ -137,6 +157,14 @@ websites:
       - totp
     doc: https://support.nutmeg.com/hc/en-us/articles/115000495111
 
+  - name: onvista bank
+    url: https://www.onvista-bank.de/
+    img: onvista.png
+    tfa:
+      - sms
+      - phone
+    doc: https://www.onvista-bank.de/service/sicherheit/transaktionssicherheit.html#tab-1301-2
+
   - name: Personal Capital
     url: https://www.personalcapital.com
     img: personalcapital.png
@@ -144,6 +172,13 @@ websites:
       - phone
       - email
     doc: https://www.personalcapital.com/safety-and-security
+
+  - name: Provident Metals
+    url: https://www.providentmetals.com/
+    img: providentmetals.png
+    twitter: ProvidentMetals
+    facebook: providentmetals
+    email_address: help@providentmetals.com
 
   - name: Prudential Financial
     url: https://www.prudential.com
@@ -214,11 +249,6 @@ websites:
       - sms
       - phone
 
-  - name: TradeKing
-    url: https://www.tradeking.com
-    twitter: TradeKing
-    img: tradeking.png
-
   - name: UniSuper
     url: https://www.unisuper.com.au/
     twitter: UniSuperNews
@@ -249,3 +279,11 @@ websites:
       - sms
       - totp
     doc: https://help.wealthsimple.com/hc/en-ca/articles/360005175373
+
+  - name: WeltSparen
+    url: https://www.weltsparen.de/
+    img: weltsparen.png
+    twitter: WeltSparen
+    facebook: WeltSparen
+    email_address: kundenservice@weltsparen.de
+    lang: de

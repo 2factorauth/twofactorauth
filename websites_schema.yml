@@ -43,3 +43,7 @@ mapping:
           "lang":
             type: str
             pattern: /^[a-z]+$/
+          "regions":
+            type: seq
+            sequence:
+              - type: str

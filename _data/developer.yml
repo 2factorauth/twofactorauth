@@ -247,6 +247,7 @@ websites:
       - totp
       - hardware
     doc: https://help.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication
+    exception: "Hardware tokens must have a backup method, either SMS or software token."
 
   - name: GitLab
     url: https://gitlab.com
@@ -570,7 +571,15 @@ websites:
       - sms
       - phone
       - proprietary
-    doc: https://support.twilio.com/hc/en-us/articles/223136307
+      - totp
+    doc: https://support.twilio.com/hc/en-us/sections/360008377353
+
+  - name: Unbounce
+    url: https://unbounce.com
+    img: unbounce.png
+    tfa:
+      - totp
+    doc: https://documentation.unbounce.com/hc/en-us/articles/360001372503
 
   - name: Unfuddle
     url: https://unfuddle.com/
