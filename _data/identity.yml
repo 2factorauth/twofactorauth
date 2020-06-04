@@ -32,6 +32,7 @@ websites:
       hardware: Yes
       otp: Yes
       u2f: Yes
+      multipleu2f: Yes
       exceptions:
         text: "Premium account required for Duo, YubiKey and FIDO U2F."
       doc: https://help.bitwarden.com/article/setup-two-step-login/
