@@ -60,6 +60,15 @@ websites:
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2181#issuecomment-266315173
 
+  - name: Buxfer
+    url: https://www.buxfer.com
+    img: buxfer.png
+    tfa:
+      - sms
+      - phone
+      - totp
+    exception: "Only supported on 'Prime' accounts, software 2FA via Authy app only."
+
   - name: Carta
     url: https://carta.com/
     img: carta.png
