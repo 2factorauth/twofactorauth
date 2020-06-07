@@ -66,8 +66,8 @@ websites:
     tfa:
       - sms
       - phone
-      - totp
-    exception: "Only supported on 'Prime' accounts, software 2FA via Authy app only."
+      - proprietary
+    exception: "Only supported on 'Prime' accounts."
 
   - name: Carta
     url: https://carta.com/
