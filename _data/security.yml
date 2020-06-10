@@ -141,6 +141,13 @@ websites:
     doc: https://docs.hackerone.com/hackers/two-factor-authentication.html
     exception: SMS-capable phone required for initial setup.
 
+  - name: intigriti
+    url: https://www.intigriti.com/
+    img: intigriti.png
+    tfa:
+      - totp
+    doc: https://kb.intigriti.com/en/articles/2642631
+    
   - name: Kaspersky
     url: https://www.kaspersky.com/
     img: kaspersky.png
