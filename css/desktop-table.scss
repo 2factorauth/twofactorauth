@@ -1,0 +1,99 @@
+---
+---
+
+@media screen and (min-width: 993px) {
+  /* Desktop table */
+  .category-table {
+    width: 100%;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+
+    .category-href {
+      display: none;
+    }
+
+    table {
+      font-family: 'Spartan', sans-serif;
+      border-radius: 2px;
+      width: 100%;
+      margin-bottom: 0;
+      border-left: 0; // See tbody>tr>td> border-left
+      border-right: 0; // See tbody>tr>td> border-left
+
+      thead {
+        th {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          font-family: 'Open Sans', sans-serif;
+        }
+
+      }
+
+      tbody {
+        tr {
+          td {
+            border-left: 1px solid rgb(222, 226, 230); // Weird bug that displays borders outside of the table at 1st td in row.
+            &:first-child{
+              border-left: 0 solid !important;
+            }
+          }
+
+          &.table-danger {
+            td {
+              text-align: left;
+            }
+          }
+        }
+
+        td {
+          font-weight: 400;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 18px !important;
+
+          .site-name {
+            text-align: left;
+            margin: auto 0;
+            text-overflow: ellipsis;
+            width: calc(100% - 32px - 0.8em);
+            max-height: 52px;
+            overflow: hidden;
+            white-space: nowrap;
+
+            &.exception-site {
+              margin-right: -24px;
+            }
+          }
+        }
+
+        /* 2FA cells */
+        .icon-cell {
+          width: 12%;
+
+          .u2f-icon {
+            width: min-content;
+            margin: auto;
+
+            img {
+              text-align: center;
+              margin: auto
+            }
+          }
+
+          .fa-book, .tfa-icon {
+            font-size: 27px;
+            line-height: 35px;
+          }
+
+          .tfa-icon {
+            color: #2c662d;
+          }
+        }
+      }
+
+      /* Both body and head */
+      tr {
+        height: 65.5px;
+      }
+    }
+  }
+}

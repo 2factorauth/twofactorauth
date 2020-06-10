@@ -1,30 +1,28 @@
 name: Rubocop
 
-on:
-  push:
-    paths: .tests/verify.rb
-  pull_request:
-    paths: .tests/verify.rb
+on: [push, pull_request]
 
 jobs:
   rubocop:
     runs-on: ubuntu-latest
     name: Rubocop
     steps:
-    - uses: actions/checkout@v1
+      - uses: actions/checkout@v2.1.0
 
-    - name: Get Cache
-      id: cache
-      uses: actions/cache@v1
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-bundler
+      - uses: actions/cache@v1.1.2
+        with:
+          path: vendor/cache
+          key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: ${{ runner.os }}-bundle-
 
-    - name: Install requirements
-      run: sudo snap install ruby --classic
+      - uses: actions/setup-ruby@v1
 
-    - name: Run Bundler
-      run: bundle install --path vendor/bundle
+      - name: Run Bundler
+        run: |
+          bundle config set path 'vendor/cache'
+          bundle config set cache_all true
+          bundle install --jobs 4 --retry 3
+          [ -d "vendor/cache" ] || { bundle package; }
 
-    - name: Run Rubocop
-      run: bundle exec rake rubocop
+      - name: Run Rubocop
+        run: bundle exec rake rubocop

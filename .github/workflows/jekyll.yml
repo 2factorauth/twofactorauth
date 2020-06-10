@@ -7,24 +7,36 @@ jobs:
     runs-on: ubuntu-latest
     name: Test Jekyll
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2.1.0
 
-    - uses: actions/cache@v1
+    - uses: actions/cache@v1.1.2
       with:
         path: vendor/cache
         key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: ${{ runner.os }}-bundle-
 
-    - name: Install requirements
+    - uses: actions/setup-ruby@v1
+
+    - name: Install dependencies
       run: |
-         sudo snap install ruby --classic
-         bundle config set path 'vendor/cache'
-         bundle config set cache_all true
-         bundle install --jobs 4 --retry 3
-         [ -d "vendor/cache" ] || { bundle package; }
+        bundle config set path 'vendor/cache'
+        bundle config set cache_all true
+        bundle install --jobs 4 --retry 3
+        sudo npm i babel-minify -g
+        sudo apt install webp -y
+        [ -d "vendor/cache" ] || { bundle package; }
+
+    - name: Check file extensions
+      run: |
+        ./_deployment/tests/extensions.sh ${{ github.workspace }}/notes md
+        ./_deployment/tests/extensions.sh ${{ github.workspace }}/css scss
+        ./_deployment/tests/extensions.sh ${{ github.workspace }}/js js
+        ./_deployment/tests/extensions.sh ${{ github.workspace }}/_layouts html
+        ./_deployment/tests/extensions.sh ${{ github.workspace }}/_includes html
+        ./_deployment/tests/extensions.sh ${{ github.workspace }}/_data yml
 
     - name: Build site
-      run: bundle exec jekyll build
+      run: bundle exec jekyll build --config _config.yml _deployment/config-production.yml
       timeout-minutes: 1
 
     - name: Run build checks
@@ -32,8 +44,3 @@ jobs:
 
     - name: Test JSON files
       run: bundle exec rake jsonlint
-
-    - name: Test HTML files
-      run: bundle exec rake proof
-      env:
-        NOKOGIRI_USE_SYSTEM_LIBRARIES: true
