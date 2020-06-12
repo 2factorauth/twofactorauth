@@ -9,9 +9,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2.1.0
 
-    - uses: actions/cache@v1.1.2
+    - uses: actions/cache@v2
       with:
-        path: vendor/cache
+        path: |
+          vendor/cache
+          /tmp/iso-3166.txt
         key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: ${{ runner.os }}-bundle-
 
@@ -41,6 +43,9 @@ jobs:
 
     - name: Run build checks
       run: bundle exec rake verify
+
+    - name: Check region tags
+      run: ruby _deployment/tests/region_codes.rb
 
     - name: Test JSON files
       run: bundle exec rake jsonlint
