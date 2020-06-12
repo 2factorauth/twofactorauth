@@ -45,7 +45,7 @@ jobs:
       run: bundle exec rake verify
 
     - name: Check region tags
-      run: ruby _deployment/tests/region-codes.rb
+      run: ruby _deployment/tests/region_codes.rb
 
     - name: Test JSON files
       run: bundle exec rake jsonlint
