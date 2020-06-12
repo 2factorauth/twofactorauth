@@ -7,12 +7,12 @@
     <thead class="sticky-top">
       <tr>
         <th scope="col">{{ section_title }}</th>
-        <th scope="col">Docs</th>
-        <th scope="col">SMS</th>
-        <th scope="col">Phone Call</th>
-        <th scope="col">Email</th>
-        <th scope="col">Hardware token</th>
-        <th scope="col">Software token</th>
+        <th scope="col" class="icon-cell">Docs</th>
+        <th scope="col" class="icon-cell">SMS</th>
+        <th scope="col" class="icon-cell">Phone Call</th>
+        <th scope="col" class="icon-cell">Email</th>
+        <th scope="col" class="icon-cell">Hardware token</th>
+        <th scope="col" class="icon-cell">Software token</th>
       </tr>
     </thead>
     <tbody class="searchContainer">
@@ -21,7 +21,7 @@
         <tr class="table-{% if website.tfa %}success{%else %}danger{% endif %}">
 
           <td>
-          <div class="searchWords" style="display: none;">{{ website.name }}&nbsp;{{ website.url }}&nbsp;{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}</div>
+            <div class="searchWords" style="display: none;">{{ website.name }}&nbsp;{{ website.url }}&nbsp;{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}</div>
             <div class="row no-gutters">
               <picture>
                 {% assign webp = website.img | replace: ".png", ".webp" %}

@@ -75,6 +75,9 @@ ruby ./_deployment/regions.rb
 
 # Building the site
 bundle exec jekyll build
+
+# Running the site locally
+bundle exec jekyll serve --watch
 ```
 
 The TwoFactorAuth website should now be accessible from `http://localhost:4000`.
