@@ -10,11 +10,9 @@ jobs:
     if: github.repository == '2factorauth/twofactorauth'
 
     steps:
-      - uses: actions/checkout@v2.1.0
+      - uses: actions/checkout@v2
 
-      - name: Get Cache
-        id: cache
-        uses: actions/cache@v1.1.2
+      - uses: actions/cache@v2
         with:
           path: vendor/cache
           key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
@@ -27,7 +25,7 @@ jobs:
           bundle config set cache_all true
           bundle install --jobs 4 --retry 3
           npm i babel-minify
-          sudo apt install webp -y
+          sudo apt install webp -y &
           [ -d "vendor/cache" ] || { bundle package; }
 
       - name: Check file extensions
@@ -61,7 +59,7 @@ jobs:
 
       - name: Deploy to GH Pages
         if: success()
-        uses: crazy-max/ghaction-github-pages@v2.0.0
+        uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
           build_dir: _site
