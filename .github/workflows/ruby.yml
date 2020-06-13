@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Rubocop
     steps:
-      - uses: actions/checkout@v2.1.0
+      - uses: actions/checkout@v2
 
-      - uses: actions/cache@v1.1.2
+      - uses: actions/cache@v2
         with:
           path: vendor/cache
           key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}

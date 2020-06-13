@@ -3,7 +3,7 @@ jobs:
   tests:
 
     docker:
-      - image: ruby:2.5.3
+      - image: ruby:latest
     steps:
       - checkout
 

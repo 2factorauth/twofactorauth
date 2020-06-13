@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Test Jekyll
     steps:
-    - uses: actions/checkout@v2.1.0
+    - uses: actions/checkout@v2
 
     - uses: actions/cache@v2
       with:
@@ -24,8 +24,6 @@ jobs:
         bundle config set path 'vendor/cache'
         bundle config set cache_all true
         bundle install --jobs 4 --retry 3
-        sudo npm i babel-minify -g
-        sudo apt install webp -y
         [ -d "vendor/cache" ] || { bundle package; }
 
     - name: Check file extensions
