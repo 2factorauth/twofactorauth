@@ -31,15 +31,33 @@ websites:
       - "no"
       - se
 
-  - name: Foodora
-    url: https://www.foodora.com/
+  - name: Foodora (Finland)
+    url: https://www.foodora.fi/
     img: foodora.png
-    facebook: foodora.se
-    email_address: support@foodora.se
+    facebook: foodora.fi
+    email_address: info@foodora.fi
     regions:
     - fi
+    lang: fi
+
+  - name: Foodora (Norway)
+    url: https://www.foodora.no/
+    img: foodora.png
+    facebook: foodora.no
+    email_address: support@foodora.no
+    regions:
     - "no"
+    lang: "no"
+
+  - name: Foodora (Sweden)
+    url: https://www.foodora.se/
+    img: foodora.png
+    facebook: foodora.se
+    twitter: foodora_se
+    email_address: support@foodora.se
+    regions:
     - se
+    lang: sv
 
   - name: Grubhub
     url: https://www.grubhub.com/
