@@ -66,6 +66,13 @@ websites:
       - totp
     doc: https://help.ea.com/en-us/help/account/origin-login-verification-information/
 
+  - name: EN World
+    url: https://www.enworld.org/
+    img: enworld.png
+    tfa:
+      - email
+      - totp
+
   - name: Enjin
     url: https://www.enjin.com/
     img: enjin.png
