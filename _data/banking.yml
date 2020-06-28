@@ -872,11 +872,23 @@ websites:
       - hardware
     doc: https://www.nordea.se/privat/vardagstjanster/internet-mobil-telefon/bank-id.html
 
-  - name: Nordnet Finland
+  - name: Nordea Suomi
+    url: https://www.nordea.fi/
+    img: nordea.png
+    tfa:
+      - proprietary
+      - hardware
+    docs: https://www.nordea.fi/en/personal/our-services/online-mobile-services/code-app.html
+    regions:
+      - fi
+
+  - name: Nordnet Suomi
     url: https://www.nordnet.fi/
     img: nordnet.png
     twitter: nordnetFI
     lang: fi
+    regions:
+      - fi
 
   - name: Nordnet Sverige
     url: https://www.nordnet.se/
@@ -884,6 +896,8 @@ websites:
     tfa:
       - proprietary
     exception: "TFA only available for Swedish residents with BankID."
+    regions:
+      - se
 
   - name: norisbank
     url: https://www.norisbank.de/
