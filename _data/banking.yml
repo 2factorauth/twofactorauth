@@ -864,14 +864,6 @@ websites:
       - proprietary
     doc: https://www.netbank.de/privatkunden/service/Starke-Kundenauthentifizierung/
 
-  - name: Nordea Sverige
-    url: https://www.nordea.se/
-    img: nordea.png
-    tfa:
-      - proprietary
-      - hardware
-    doc: https://www.nordea.se/privat/vardagstjanster/internet-mobil-telefon/bank-id.html
-
   - name: Nordea Suomi
     url: https://www.nordea.fi/
     img: nordea.png
@@ -881,6 +873,16 @@ websites:
     doc: https://www.nordea.fi/en/personal/our-services/online-mobile-services/code-app.html
     regions:
       - fi
+
+  - name: Nordea Sverige
+    url: https://www.nordea.se/
+    img: nordea.png
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.nordea.se/privat/vardagstjanster/internet-mobil-telefon/bank-id.html
+    regions:
+      - se
 
   - name: Nordnet Suomi
     url: https://www.nordnet.fi/
