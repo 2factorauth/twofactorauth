@@ -656,6 +656,16 @@ websites:
     facebook: IberiaBank
     img: iberiabank.png
 
+  - name: ICA Banken
+    url: https://www.icabanken.se/
+    img: icabanken.png
+    tfa:
+      - hardware
+      - proprietary
+    doc: https://www.icabanken.se/kort-och-betala/mobilt-bankid/
+    regions:
+      - se
+
   - name: ICBC Argentina
     url: https://www.icbc.com.ar
     twitter: ICBCArgentina
