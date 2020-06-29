@@ -7,12 +7,6 @@ websites:
       - totp
     doc: https://learn.adafruit.com/how-to-set-up-2-factor-authentication-on-adafruit
 
-  - name: AdoramaPix
-    url: https://www.adoramapix.com
-    img: adoramapix.png
-    twitter: AdoramaPix
-    facebook: AdoramaPix
-
   - name: AliExpress
     url: https://www.aliexpress.com/
     img: aliexpress.png
@@ -24,6 +18,8 @@ websites:
     tfa:
       - sms
     doc: https://allegro.pl/pomoc/dla-kupujacych/logowanie-i-haslo/dwustopniowe-logowanie-najczesciej-zadawane-pytania-dykqg9nMKSZ
+    regions:
+      - pl
 
   - name: Amazon
     url: https://www.amazon.com
@@ -50,12 +46,16 @@ websites:
     twitter: Arcaplanet
     facebook: Arcaplanet
     lang: it
+    regions:
+      - it
 
   - name: Barnes &amp; Noble
     url: https://www.barnesandnoble.com/
     twitter: BN_care
     facebook: barnesandnoble
     img: barnesandnoble.png
+    regions:
+      - us
 
   - name: Best Buy
     url: https://www.bestbuy.com/
@@ -64,29 +64,42 @@ websites:
       - sms
       - totp
     doc: https://www.bestbuy.com/site/help-topics/2-step-verification/pcmcat1561056149844.c
+    regions:
+      - ca
+      - us
+      - mx
 
   - name: Big W
     url: https://www.bigw.com.au/
     img: bigw.png
     facebook: BIGWaustralia
+    regions:
+      - au
 
   - name: Bonobos
     url: https://bonobos.com
     img: bonobos.png
     twitter: Bonobos
     facebook: bonobos
+    regions:
+      - us
 
   - name: Boxed
     url: https://www.boxed.com
     img: boxed.png
     twitter: BoxedWholesale
     facebook: BoxedWholesale
+    regions:
+      - us
 
   - name: Combatant Gentlemen
     url: https://combatgent.com
     img: combatgent.png
     twitter: CombatGent
     facebook: combatgent
+    regions:
+      - ca
+      - us
 
   - name: Comet
     url: https://www.comet.it/
@@ -94,6 +107,8 @@ websites:
     twitter: gruppocomet
     facebook: comet.it
     lang: it
+    regions:
+      - it
 
   - name: Comixology
     url: https://www.comixology.com/
@@ -104,6 +119,12 @@ websites:
     url: https://www.costco.com
     img: costco.png
     facebook: Costco
+    regions:
+      - ca
+      - us
+      - gb
+      - mx
+      - es
 
   - name: Dell
     url: https://www.dell.com
@@ -116,11 +137,15 @@ websites:
     tfa:
       - totp
     doc: https://www.digitec.ch/en/page/new-two-factor-authentication-for-your-user-account-6589
+    regions:
+      - ch
 
   - name: EB Games Australia
     url: https://ebgames.com.au/
     img: ebgamesaustralia.png
     twitter: EBGamesAus
+    regions:
+      - au
 
   - name: eBay
     url: https://www.ebay.com
@@ -137,6 +162,8 @@ websites:
     email_address: service@ebay-kleinanzeigen.de
     img: ebay-kleinanzeigen.png
     lang: de
+    regions:
+      - de
 
   - name: ePRICE
     url: https://www.eprice.it/
@@ -144,6 +171,8 @@ websites:
     twitter: EPRICEIT
     facebook: ePRICE.it
     lang: it
+    regions:
+      - it
 
   - name: Etsy
     url: https://www.etsy.com/
@@ -161,6 +190,8 @@ websites:
     email_address: info@eventim.de
     img: eventim.png
     lang: de
+    regions:
+      - de
 
   - name: Everlane
     url: https://www.everlane.com/
@@ -177,6 +208,8 @@ websites:
     img: flipkart.png
     twitter: flipkartsupport
     facebook: flipkart
+    regions:
+      - in
 
   - name: GamersGate
     url: https://www.gamersgate.com/
@@ -199,16 +232,22 @@ websites:
     img: homedepot.png
     twitter: HomeDepot
     facebook: homedepot
+    regions:
+      - us
 
   - name: Hudson's Bay
     url: https://www.thebay.com
     img: bay.png
     twitter: hudsonsbay
+    regions:
+      - us
 
   - name: Hypop
     url: https://www.hypop.com.au/
     img: hypop.png
     twitter: hypop
+    regions:
+      - au
 
   - name: IKEA
     url: https://www.ikea.com
@@ -220,11 +259,8 @@ websites:
     url: https://www.jbhifi.com.au/
     twitter: JBHiFi
     img: jbhifi.png
-
-  - name: Jet
-    url: https://jet.com
-    twitter: JetHeads
-    img: jet.png
+    regions:
+      - au
 
   - name: jpc
     url: https://www.jpc.de/
@@ -232,6 +268,8 @@ websites:
     facebook: jpc.de
     img: jpc.png
     lang: de
+    regions:
+      - de
 
   - name: Jumbo Argentina
     url: https://www.jumbo.com.ar
@@ -239,6 +277,8 @@ websites:
     facebook: JumboArgentina
     img: jumboargentina.png
     lang: es
+    regions:
+      - ar
 
   - name: Kobo
     url: https://www.kobo.com
@@ -251,6 +291,8 @@ websites:
     img: kohls.png
     twitter: Kohls
     facebook: kohls
+    regions:
+      - us
 
   - name: Lazada
     url: https://www.lazada.com/
@@ -262,11 +304,16 @@ websites:
     img: lowes.png
     twitter: Lowes
     facebook: lowes
+    regions:
+      - ca
+      - us
 
   - name: Macy's
     url: https://www.macys.com/
     twitter: Macys
     img: macys.png
+    regions:
+      - us
 
   - name: Massdrop
     url: https://www.massdrop.com
@@ -279,6 +326,8 @@ websites:
     twitter: mediamarkt_de
     facebook: mediamarkt
     lang: de
+    regions:
+      - de
 
   - name: Mercado Libre
     url: https://www.mercadolibre.com
@@ -286,6 +335,11 @@ websites:
     tfa:
       - sms
       - proprietary
+    regions:
+      - ar
+      - mx
+      - co
+      - br
 
   - name: Newegg
     url: https://www.newegg.com
@@ -301,18 +355,25 @@ websites:
     img: nordstrom.png
     twitter: Nordstrom
     facebook: Nordstrom
+    regions:
+      - us
 
   - name: Northern Tool + Equipment
     url: https://www.northerntool.com/
     img: northerntool.png
     twitter: NorthernTool
     facebook: northerntool
+    regions:
+      - us
 
   - name: Office Depot
     url: https://www.officedepot.com
     twitter: officedepot
     facebook: OfficeDepot
     img: officedepot.png
+    regions:
+      - ca
+      - us
 
   - name: Overstock
     url: https://www.overstock.com
@@ -325,6 +386,8 @@ websites:
     url: https://www.pccasegear.com/
     twitter: pccasegear
     img: pccasegear.png
+    regions:
+      - au
 
   - name: Purse
     url: https://purse.io/
@@ -332,17 +395,27 @@ websites:
     tfa:
       - totp
     doc: https://support.purse.io/account/2-factor-authentication-2fa
+    regions:
+      - ca
+      - gb
+      - jp
+      - us
 
   - name: Rakuten
     url: https://www.rakuten.com/
     twitter: AskRakutenUS
     img: rakuten.png
+    regions:
+      - us
+      - jp
 
   - name: RCWilley
     url: https://www.rcwilley.com
     twitter: RCWilley
     facebook: rcwilley
     img: rcwilley.png
+    regions:
+      - us
 
   - name: Samsung
     url: https://www.samsung.com/
@@ -357,6 +430,8 @@ websites:
     twitter: SaturnDE
     facebook: SaturnDE
     lang: de
+    regions:
+      - de
 
   - name: Shopify
     url: https://shopify.com/
@@ -373,6 +448,8 @@ websites:
     email_address: customerservice@sierra.com
     twitter: sierraofficial
     facebook: sierraofficial
+    regions:
+      - us
 
   - name: Snapdeal
     url: https://www.snapdeal.com/
@@ -380,12 +457,16 @@ websites:
     twitter: SnapdealTech
     facebook: Snapdeal
     email_address: help@snapdeal.com
+    regions:
+      - in
 
   - name: speedcube.com.au
     url: https://www.speedcube.com.au/
     img: speedcubecomau.png
     twitter: speedcubecomau
     facebook: speedcubecomau
+    regions:
+      - au
 
   - name: Stack Social
     url: https://stacksocial.com
@@ -397,11 +478,16 @@ websites:
     twitter: Staples
     facebook: staples
     img: staples.png
+    regions:
+      - us
+      - ca
 
   - name: Target
     url: https://www.target.com/
     twitter: Target
     img: target.png
+    regions:
+      - us
 
   - name: Thalia
     url: https://www.thalia.de/
@@ -409,6 +495,8 @@ websites:
     email_address: info@thalia.de
     img: thalia.png
     lang: de
+    regions:
+      - de
 
   - name: Tokopedia
     url: https://www.tokopedia.com/
@@ -418,33 +506,46 @@ websites:
       - phone
       - totp
     doc: https://www.tokopedia.com/panduan-keamanan/fitur-keamanan-tambahan/
+    regions:
+      - id
 
   - name: Trade Me
     url: https://www.trademe.co.nz
     twitter: TradeMe
     facebook: TradeMe
     img: trademe.png
+    regions:
+      - nz
 
   - name: Walgreens
     url: https://www.walgreens.com
     twitter: Walgreens
     img: walgreens.png
+    regions:
+      - us
 
   - name: Walmart
     url: https://www.walmart.com/
     twitter: walmarthelp
     img: walmart.png
+    regions:
+      - us
 
   - name: Warby Parker
     url: https://www.warbyparker.com
     twitter: WarbyParkerHelp
     img: warbyparker.png
+    regions:
+      - ca
+      - us
 
   - name: Wayfair
     url: https://www.wayfair.com
     img: wayfair.png
     twitter: Wayfair
     facebook: wayfair
+    regions:
+      - us
 
   - name: Zalando
     url: https://www.zalando.com/
@@ -457,6 +558,8 @@ websites:
     url: https://www.zappos.com/
     twitter: Zappos
     img: zappos.png
+    regions:
+      - us
 
   - name: Zazzle
     url: https://www.zazzle.com
@@ -469,3 +572,5 @@ websites:
     img: zooplus.png
     twitter: zooplusDE
     facebook: zooplusde
+    regions:
+      - de
