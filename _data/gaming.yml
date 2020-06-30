@@ -283,12 +283,19 @@ websites:
     tfa:
       - totp
     doc: https://scryfall.com/docs/privacy#scryfall-accounts
-
+    
   - name: Shadow
     url: https://shadow.tech/
     img: shadow.png
     twitter: Shadow_Official
     facebook: ShadowNorthAmerica
+
+  - name: Speedrun.com
+    url: https://www.speedrun.com/
+    img: speedruncom.png
+    tfa:
+      - email
+    doc: https://www.speedrun.com/the_site/thread/g7osi/1
 
   - name: Square Enix
     url: https://na.square-enix.com/
