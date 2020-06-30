@@ -89,7 +89,6 @@ websites:
     img: anz.png
     regions:
       - au
-      - nz
 
   - name: Avanza
     url: https://www.avanza.se/
@@ -275,13 +274,13 @@ websites:
     regions:
       - ar
 
-  - name: BBVA Compass
-    url: https://www.bbvacompass.com/
+  - name: BBVA US
+    url: https://www.bbvausa.com/
     img: bbva.png
-    facebook: bbvacompass
-    twitter: BBVACompass
+    facebook: bbvaintheusa
+    twitter: BBVA_USA
     regions:
-      - ar
+      - us
 
   - name: Bethpage Federal Credit Union
     url: https://www.bethpagefcu.com/
@@ -404,7 +403,7 @@ websites:
       - us
 
   - name: Chime
-    url: https://www.chimebank.com
+    url: https://www.chime.com
     img: chime.png
     tfa:
       - sms
@@ -637,7 +636,6 @@ websites:
     lang: bn
     regions:
       - bd
-      - nl
 
   - name: Easybank
     url: https://www.easybank.at
