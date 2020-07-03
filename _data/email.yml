@@ -1,4 +1,11 @@
 websites:
+  - name: 33Mail
+    url: https://www.33mail.com
+    img: 33mail.png
+    tfa:
+      - totp
+    doc: https://blog.33mail.com/2019/02/08/2-factor-authentication/
+
   - name: Aol Mail
     url: https://mail.aol.com
     img: aol.png
