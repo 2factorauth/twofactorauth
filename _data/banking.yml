@@ -45,9 +45,11 @@ websites:
 
   - name: America First Credit Union
     url: https://www.americafirst.com/
-    twitter: AFCU
-    facebook: americafirstcu
     img: americafirstcu.png
+    tfa:
+      - sms
+      - email
+    doc: https://www.americafirst.com/online_banking.html
 
   - name: America’s Christian Credit Union
     url: https://www.americaschristiancu.com
