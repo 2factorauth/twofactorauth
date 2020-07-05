@@ -5,67 +5,45 @@ require 'json'
 require 'yaml'
 
 data_dir = './_data'
-sections = YAML.load_file("#{data_dir}/sections.yml")
+tags = %w[url img twitter facebook email_address doc exception tfa doc]
 
-# map of output
-categories = {}
-
-# Copy var "categories"
-def deep_copy(original)
-  Marshal.load(Marshal.dump(original))
-end
-
-# Section loop
-sections.each { |section| categories[section['title']] = {} }
-
-# Copy categories to all output sub-hashmaps
+# All files to write to
 output = {
-  'sms' => categories,
-  'phone' => deep_copy(categories),
-  'proprietary' => deep_copy(categories),
-  'totp' => deep_copy(categories),
-  'hardware' => deep_copy(categories),
-  'u2f' => deep_copy(categories),
-  'email' => deep_copy(categories),
-  'tfa' => deep_copy(categories),
-  'all' => deep_copy(categories)
+  'sms' => {},
+  'phone' => {},
+  'proprietary' => {},
+  'totp' => {},
+  'hardware' => {},
+  'u2f' => {},
+  'email' => {},
+  'tfa' => {},
+  'all' => {}
 }
 
 # Loop through all sections
-sections.each do |section|
-  sctn_name = section['title']
-  # Website loop
-  YAML.load_file("#{data_dir}/#{section['id']}.yml")['websites'].each do |website|
-    wbst_name = website['name']
-    # Create map of all data to send to output maps.
-    c = {}
-    c['url'] = website['url']
-    c['img'] = website['img']
-    if website['tfa'].nil?
-      c['twitter'] = website['twitter'] unless website['twitter'].nil?
-      c['facebook'] = website['facebook'] unless website['facebook'].nil?
-      c['email_address'] = website['email_address'] unless website['email_address'].nil?
-    else
-      c['tfa'] = website['tfa']
-      c['doc'] = website['doc'] unless website['doc'].nil?
-      c['exception'] = website['exception'] unless website['exception'].nil?
-      website['tfa'].each do |d|
-        # Add website to specific tfa map
-        output[d][sctn_name][wbst_name] = c
-      end
-      # Add website to general tfa map
-      output['tfa'][sctn_name][wbst_name] = c
-    end
+YAML.load_file("#{data_dir}/sections.yml").each do |section|
+  # Add section to each output map
+  section_name = section['title']
+  output.each { |map| map[section_name] = {} }
 
-    # Add website to map of all sites
-    output['all'][sctn_name][wbst_name] = c
+  # Loop through all websites in section
+  YAML.load_file("#{data_dir}/#{section['id']}.yml")['websites'].each do |website|
+    website_data = {}
+    website_name = website['name']
+
+    # Add all tags to website_data unless they're empty
+    tags.each { |tag| website_data[tag] = website[tag] unless website[tag].nil? }
+
+    # Write to relevant output maps
+    unless website['tfa'].nil?
+      website['tfa'].each { |method| output[method][section_name][website_name] = website_data }
+      output['tfa'][section_name][website_name] = website_data
+    end
+    output['all'][section_name][website_name] = website_data
   end
 end
 
-# Loop through all maps in output
+# Write to all output files
 output.map.each do |k, v|
   File.open("./api/v2/#{k}.json", 'w') { |file| file.write v.to_h.to_json }
 end
-
-# Write out to all.json
-File.open('./api/v2/all.json', 'w') { |file| file.write output['all'].to_h.to_json }
