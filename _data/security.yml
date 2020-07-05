@@ -209,14 +209,6 @@ websites:
       - totp
     doc: https://www.ssltrust.com.au/help/account-management/enable-2factor
 
-  - name: Surfshark
-    url: https://surfshark.com/
-    img: surfshark.png
-    tfa:
-      - email
-      - totp
-    doc: https://support.surfshark.com/hc/en-us/articles/360011448319
-
   - name: ThreatConnect
     url: https://threatconnect.com/
     img: threatconnect.png
