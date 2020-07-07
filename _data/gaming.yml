@@ -5,7 +5,7 @@ websites:
     tfa:
       - email
       - proprietary
-    doc: https://support.ankama.com/hc/en-us/categories/200093427-DOFUS-Security
+    doc: https://support.ankama.com/hc/en-us/categories/200093427
 
   - name: Ashes of Creation
     url: https://ashesofcreation.com
@@ -79,9 +79,10 @@ websites:
     url: https://www.epicgames.com/
     img: epicgames.png
     tfa:
+      - sms
       - email
       - totp
-    doc: https://epicgames.helpshift.com/a/epic-accounts/?s=epic-accounts&f=what-is-two-factor-authentication-2fa-and-how-do-i-opt-in
+    doc: https://www.epicgames.com/help/en-US/c74/c112/a3218
 
   - name: EVE Online
     url: https://www.eveonline.com/
@@ -145,7 +146,6 @@ websites:
     img: gree.png
     tfa:
       - totp
-    doc: "/notes/gree/"
 
   - name: Guild Wars 2
     url: https://www.guildwars2.com
@@ -187,7 +187,7 @@ websites:
     img: leagueoflegends.png
     tfa:
       - email
-    doc: https://support.riotgames.com/hc/en-us/articles/360010367273
+    doc: https://support-leagueoflegends.riotgames.com/hc/en-us/articles/360010367273
 
   - name: lichess.org
     url: https://lichess.org
@@ -283,6 +283,19 @@ websites:
     tfa:
       - totp
     doc: https://scryfall.com/docs/privacy#scryfall-accounts
+    
+  - name: Shadow
+    url: https://shadow.tech/
+    img: shadow.png
+    twitter: Shadow_Official
+    facebook: ShadowNorthAmerica
+
+  - name: Speedrun.com
+    url: https://www.speedrun.com/
+    img: speedruncom.png
+    tfa:
+      - email
+    doc: https://www.speedrun.com/the_site/thread/g7osi/1
 
   - name: Square Enix
     url: https://na.square-enix.com/
@@ -311,8 +324,9 @@ websites:
     url: https://store.steampowered.com/
     img: steam.png
     tfa:
+      - email
       - proprietary
-    doc: https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030
+    doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
 
   - name: Tibia
     url: https://www.tibia.com/
@@ -344,6 +358,13 @@ websites:
       - totp
       - sms
     doc: https://support.ubi.com/en-GB/Faqs/000039953
+
+  - name: Warframe
+    url: https://www.warframe.com/
+    img: warframe.png
+    tfa:
+      - email
+    doc: https://www.warframe.com/2fa-faq
 
   - name: Wargaming
     url: https://wargaming.net/

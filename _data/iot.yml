@@ -11,9 +11,10 @@ websites:
 
   - name: ecobee
     url: https://ecobee.com
-    twitter: ecobee
-    facebook: ecobee
     img: ecobee.png
+    tfa:
+      - sms
+    doc: https://support.ecobee.com/hc/en-us/articles/360040957212
 
   - name: IFTTT
     url: https://ifttt.com
@@ -54,7 +55,8 @@ websites:
     img: ringcom.png
     tfa:
       - sms
-    doc: https://support.ring.com/hc/en-us/articles/360024818291
+      - email
+    doc: https://support.ring.com/hc/en-us/articles/360039693891
 
   - name: Samsung SmartThings
     url: https://www.smartthings.com/

@@ -38,6 +38,8 @@ websites:
       - totp
       - hardware
     doc: https://www.bitcoin.de/de/faq/was-ist-die-2-step-verification-2-faktor-authentifizierung/46.html
+    regions:
+      - de
 
   - name: BitcoinTrade
     url: https://bitcointrade.com.br/
@@ -45,6 +47,8 @@ websites:
     tfa:
       - totp
     doc: https://blog.bitcointrade.com.br/2fa-o-que-e-e-como-cadastrar/
+    regions:
+      - br
 
   - name: Bitfinex
     url: https://www.bitfinex.com
@@ -62,6 +66,8 @@ websites:
       - email
       - totp
     doc: https://bitflyer.com/en-jp/faq/2-10
+    regions:
+      - jp
 
   - name: BitGo
     url: https://www.bitgo.com
@@ -78,6 +84,8 @@ websites:
       - sms
       - totp
     doc: https://en.bithumb.com/customer_support/info_guide?seq=510
+    regions:
+      - kr
 
   - name: Bitlish
     url: https://bitlish.com
@@ -86,6 +94,15 @@ websites:
       - sms
       - proprietary
     doc: https://bitlish.com/how#mfa
+
+  - name: BitMEX
+    url: https://www.bitmex.com
+    img: bitmex.png
+    tfa:
+      - totp
+      - hardware
+    doc: https://blog.bitmex.com/use-two-factor-authentication-and-dont-reuse-passwords/
+    exception: "At most one 2FA method can be enabled at any time."
 
   - name: Bitpanda
     url: https://www.bitpanda.com/
@@ -137,6 +154,8 @@ websites:
     tfa:
       - totp
     doc: https://braziliex.com/faq/index.php?id=288
+    regions:
+      - br
 
   - name: BTC BOX
     url: https://www.btcbox.co.jp/
@@ -144,6 +163,8 @@ websites:
     tfa:
       - totp
     doc: https://support.btcbox.co.jp/hc/en-us/articles/360001886053
+    regions:
+      - jp
 
   - name: BTC Markets
     url: https://www.btcmarkets.net/
@@ -152,6 +173,8 @@ websites:
       - totp
     doc: https://www.btcmarkets.net/faq#q27
     exception: "A mobile phone number is required to reset two-factor authentication."
+    regions:
+      - au
 
   - name: BTCPOP
     url: https://btcpop.co/
@@ -160,12 +183,35 @@ websites:
       - totp
     doc: https://blog.btcpop.co/2017/04/27/signing-security-btcpop-co-account/
 
+  - name: Buda
+    url: https://www.buda.com
+    img: buda.png
+    tfa:
+      - totp
+    doc: https://soporte.buda.com/es/articles/2379080
+    regions:
+      - ar
+      - cl
+      - co
+      - pe
+
   - name: BX Thailand
     url: https://bx.in.th/
     img: bxthailand.png
     tfa:
       - totp
     doc: https://bx.in.th/info/faq/
+    regions:
+      - th
+
+  - name: Bybit
+    url: https://www.bybit.com/
+    img: bybit.png
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://help.bybit.com/hc/en-us/articles/360039748653
 
   - name: CEX.IO
     url: https://cex.io/
@@ -189,14 +235,6 @@ websites:
       - sms
       - totp
     doc: https://support.circle.com/hc/en-us/articles/213560483
-
-  - name: COBINHOOD
-    url: https://cobinhood.com
-    img: cobinhood.png
-    tfa:
-      - sms
-      - totp
-    doc: https://cobinhood.zendesk.com/hc/en-us/articles/115003476871
 
   - name: Coin Cafe
     url: https://coincafe.com
@@ -222,6 +260,15 @@ websites:
       - u2f
     doc: https://support.coinbase.com/customer/en/portal/articles/1658338
 
+  - name: Coincheck
+    url: https://coincheck.com/
+    img: coincheck.png
+    tfa:
+      - totp
+    doc: https://faq.coincheck.com/s/article/20204?language=en_US
+    regions:
+      - jp
+
   - name: CoinDeal
     url: https://coindeal.com
     img: coindeal.png
@@ -245,6 +292,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.coinfloor.co.uk/security
+    regions:
+      - gb
 
   - name: CoinGate
     url: https://coingate.com
@@ -258,8 +307,8 @@ websites:
     img: coinify.png
     tfa:
       - totp
-      - hardware
-    exception: "While Coinify has aquired BIPS to allow for trading, only merchant accounts support TFA at this time. Trading is done through a separate account. Hardware support is limited to a print-out character matrix."
+    doc: https://help.coinify.com/article/114
+    exception: "2FA is only available for merchant accounts. myCoinify trading accounts do not support 2FA."
 
   - name: Coinjar
     url: https://coinjar.com
@@ -274,6 +323,8 @@ websites:
     img: coinone.png
     tfa:
       - totp
+    regions:
+      - kr
 
   - name: Coins.ph
     url: https://coins.ph/
@@ -289,6 +340,8 @@ websites:
       - sms
       - totp
     doc: https://coinspot.zendesk.com/hc/en-us/sections/115000049254
+    regions:
+      - au
 
   - name: CoinTracking
     url: https://cointracking.info/
@@ -302,6 +355,9 @@ websites:
     tfa:
       - totp
     doc: https://help.coinut.com/hc/en-us/articles/360005061354
+    regions:
+      - ca
+      - sg
 
   - name: Cryptonator
     url: https://www.cryptonator.com
@@ -334,8 +390,17 @@ websites:
     tfa:
       - sms
       - proprietary
-      - phone
-    doc: https://gemini.com/blog/better-two-factor-authentication/
+      - hardware
+      - u2f
+    doc: https://gemini24.zendesk.com/hc/en-us/sections/360001694951
+    regions:
+      - us
+      - ca
+      - hk
+      - sg
+      - kr
+      - gb
+      - au
 
   - name: HitBTC
     url: https://www.hitbtc.com/
@@ -350,6 +415,8 @@ websites:
     tfa:
       - totp
     doc: https://support.korbit.co.kr/customer/en/portal/articles/1717692
+    regions:
+      - kr
 
   - name: Kraken
     url: https://www.kraken.com/
@@ -358,6 +425,13 @@ websites:
       - totp
       - hardware
     doc: https://support.kraken.com/hc/en-us/articles/360000426923
+
+  - name: Liquid
+    url: https://www.liquid.com/
+    img: liquid.png
+    tfa:
+      - totp
+    doc: https://help.liquid.com/en/articles/2273273
 
   - name: LiteBit
     url: https://www.litebit.eu/
@@ -388,12 +462,31 @@ websites:
       - totp
     doc: https://www.luno.com/help/en/articles/1000203420
 
+  - name: MaiCoin
+    url: https://www.maicoin.com
+    img: maicoin.png
+    tfa:
+      - sms
+      - totp
+    doc: https://maicoin2.freshdesk.com/en/support/solutions/articles/32000016116
+    regions:
+        - tw
+
   - name: Mercado Bitcoin
     url: https://www.mercadobitcoin.com.br/
     img: mercadobitcoin.png
     tfa:
       - totp
     doc: https://suporte.mercadobitcoin.com.br/hc/pt-br/articles/360000385152
+    regions:
+      - br
+
+  - name: PayKassa
+    url: https://paykassa.pro/
+    img: paykassa.png
+    tfa:
+      - totp
+    doc: https://paykassa.pro/en/news/s-paykassa-vashi-dannye-pod-nadejnoy-zashchitoy/
 
   - name: Poloniex
     url: https://poloniex.com/
@@ -415,6 +508,14 @@ websites:
     tfa:
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2321#issuecomment-273971890
+
+  - name: STEX
+    url: https://stex.com
+    img: stex.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://help.stex.com/en/articles/3486981#individual-account-security-settings
 
   - name: Uphold
     url: https://uphold.com/

@@ -1,4 +1,10 @@
 websites:
+  - name: AirDroid
+    url: https://www.airdroid.com/
+    twitter: AirDroidTeam
+    facebook: AirDroid
+    img: airdroid.png
+
   - name: Amazon AWS WorkSpaces
     url: https://aws.amazon.com/workspaces/
     doc: https://aws.amazon.com/blogs/aws/multi-factor-auth-for-workspaces/
@@ -30,6 +36,16 @@ websites:
     tfa:
       - totp
     doc: https://directadmin.com/features.php?id=1754
+
+  - name: ISL Online
+    url: https://islonline.com/
+    img: islonline.png
+    tfa:
+      - totp
+      - sms
+      - email
+      - u2f
+    doc: https://help.islonline.com/35746/286527
 
   - name: join.me (w/ LogMeIn account)
     url: https://join.me/
@@ -76,10 +92,8 @@ websites:
     url: https://www.realvnc.com
     img: realvnc.png
     tfa:
-      - proprietary
-      - hardware
-    doc: https://www.realvnc.com/en/connect/docs/multi-factor-auth.html#protecting-your-realvnc-account
-    exception: "2FA is only available for the Professional or Enterprise subscription."
+      - totp
+    doc: https://help.realvnc.com/hc/en-us/articles/360003110878
 
   - name: Remote Desktop Manager
     url: https://www.remotedesktopmanager.com

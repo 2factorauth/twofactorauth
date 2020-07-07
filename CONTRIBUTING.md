@@ -1,5 +1,4 @@
-Contributing to TwoFactorAuth.org
-=======================
+# Contributing to TwoFactorAuth.org
 
 All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
@@ -40,19 +39,20 @@ everything for you.
    makes Jekyll watch for file changes.
 
 #### Testing with Bundler
-   To verify that your additions are fine, you can run the entire set of tests
-   locally which will check all links and images with:
 
-   ```bash
-   $ bundle exec rake
-   ```
+To verify that your additions are fine, you can run the entire set of tests
+locally which will check all links and images with:
 
-   However, this can take a while as there are roughly 900 links that it checks.
-   If you just wish to test your YAML changes, you can run:
+```bash
+$ bundle exec rake
+```
 
-   ```bash
-   $ bundle exec rake verify
-   ```
+However, this can take a while as there are roughly 900 links that it checks.
+If you just wish to test your YAML changes, you can run:
+
+```bash
+$ bundle exec rake verify
+```
 
 ### Using Vanilla Jekyll
 
@@ -96,6 +96,7 @@ and follow the template below:
   title: Category Name
   icon: icon-class
 ```
+
 The `icon-class` value needs to be chosen from [Semantic-Ui][semantic-ui].
 
 Then create a new file in the `_data` directory with the same name as your section's
@@ -133,14 +134,14 @@ websites:
 
 The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
 
-#### Adding a site that *supports* TFA
+#### Adding a site that _supports_ TFA
 
 If a site does provide TFA, it is strongly recommended that you add the `doc:`
 field where public documentation is available. Other fields should be included
 if the website supports them. Any services that are not supported can be excluded.
 Sites supporting TFA should not have a `twitter`, `facebook` or `email_address` field.
 
-The following is an example of a website that *supports* TFA:
+The following is an example of a website that _supports_ TFA:
 
 ```YAML
   - name: YouTube
@@ -153,17 +154,17 @@ The following is an example of a website that *supports* TFA:
       - hardware
       - totp
       - u2f
-    doc: http://www.google.com/intl/en-US/landing/2step/features.html
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html
 ```
 
-#### Adding a site that *does not* support TFA
+#### Adding a site that _does not_ support TFA
 
 If a site does not provide TFA, the `twitter:` field should be included if the site uses
 Twitter. Facebook can also be included using the `facebook` field, as well as Email using
 the `email_address` field. If the website does not use the English language, the `lang:`
 field should also be included. The fields `tfa:` and `doc:` can be completely removed.
 
-The following is an example of a website that *does not* support TFA:
+The following is an example of a website that _does not_ support TFA:
 
 ```YAML
     - name: Netflix
@@ -182,15 +183,15 @@ The `lang:` field is only used for non-English websites. The language codes shou
 If a site is only available in certain countries or requires the user to do something out of the ordinary to set up 2FA, you can note this on the
 website.
 
-   ```YAML
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      tfa:
-        - sms
-      exception: "Specific text goes here."
-      doc: <link to site TFA documentation>
-   ```
+```YAML
+ - name: Site Name
+   url: https://www.site.com/
+   img: site.png
+   tfa:
+     - sms
+   exception: "Specific text goes here."
+   doc: <link to site TFA documentation>
+```
 
 ### Pro Tips
 
@@ -216,8 +217,8 @@ website.
 A lot of people have different ideas of what constitutes Two Factor Auth and
 what doesn't, so it stands to reason that we should clarify a bit. For the
 purposes of this site, Two Factor Auth is defined as any service provided as a
-redundant layer for account *authentication*. Services that provide
-*authorization* redundancy are certainly appreciated, but should not be
+redundant layer for account _authentication_. Services that provide
+_authorization_ redundancy are certainly appreciated, but should not be
 considered Two Factor Auth.
 
 As an example, a site that prompts you for an authentication token following
@@ -229,11 +230,11 @@ For context, check out the discussion in issue [#242][242].
 
 [242]: https://github.com/2factorauth/twofactorauth/issues/242
 [exclude]: /EXCLUSION.md
-[bundler]: http://bundler.io/
+[bundler]: https://bundler.io/
 [gemfile]: /Gemfile
-[jekyll]: http://jekyllrb.com/
+[jekyll]: https://jekyllrb.com/
 [travis]: https://travis-ci.org/2factorauth/twofactorauth
-[yaml]: http://www.yaml.org/
+[yaml]: https://yaml.org/
 [alexa]: https://www.alexa.com/siteinfo
 [github-tutorial]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
 [do-tutorial]: https://www.digitalocean.com/community/tutorials/how-to-use-git-branches

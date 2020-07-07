@@ -1,10 +1,9 @@
 websites:
-  - name: Air VPN
+  - name: AirVPN
     url: https://airvpn.org/
     img: airvpn.png
-    twitter: airvpn
-    facebook: airvpn.org
-    email_address: support@airvpn.org
+    tfa:
+      - totp
 
   - name: BolehVPN
     url: https://www.bolehvpn.net/
@@ -85,6 +84,12 @@ websites:
     twitter: SaferVPN
     facebook: SaferVPNCom
     email_address: support@safervpn.com
+
+  - name: TorGuard
+    url: https://torguard.net
+    img: torguard.png
+    tfa:
+      - totp
 
   - name: TunnelBear
     url: https://tunnelbear.com/
