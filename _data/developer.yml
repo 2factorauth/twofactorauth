@@ -280,6 +280,11 @@ websites:
       - totp
     doc: https://docs.heap.io/docs/2fa
 
+  - name: Hotjar
+    url: https://hotjar.com/
+    img: hotjar.png
+    twitter: hotjar
+
   - name: imgix
     url: https://www.imgix.com/
     twitter: imgix
@@ -305,6 +310,9 @@ websites:
     img: jetbrains.png
     tfa:
       - totp
+      - u2f
+    doc: https://www.jetbrains.com/help/hub/2fa-with-token.html
+    exception: "U2F only available for Hub account (e.g. YouTrack). Limited to one software token OR one hardware token."
 
   - name: Koding
     url: https://koding.com

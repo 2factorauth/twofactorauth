@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<ul>
+  {% for page in site.pages %}
+    {% assign array = page.url | split: "/" %}
+    {% if array[1] == "notes" and array.size > 2 %}
+      <li>
+        <a href="{{ page.url }}">{{page.title}}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
