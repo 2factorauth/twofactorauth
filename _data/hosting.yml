@@ -380,9 +380,10 @@ websites:
 
   - name: Netlify
     url: https://www.netlify.com
-    twitter: Netlify
-    facebook: netlify
     img: netlify.png
+    tfa:
+      - totp
+    doc: https://docs.netlify.com/accounts-and-billing/user-settings/#two-factor-authentication-2fa
 
   - name: Nitrado
     url: https://server.nitrado.net/
