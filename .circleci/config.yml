@@ -3,26 +3,33 @@ jobs:
   tests:
 
     docker:
-      - image: ruby:2.5.3
+      - image: ruby:latest
     steps:
       - checkout
 
       - run:
           name: Check Twitter handles
-          command: |
-            gem i twitter -q --no-suggest --minimal-deps
-            bash twitter.sh
-          working_directory: ./.tests
+          command: bash twitter.sh
+          working_directory: _deployment/tests
 
       - run:
          name: Check Facebook handles
          command: bash facebook.sh
-         working_directory: ./.tests
+         working_directory: _deployment/tests
+
+      - restore_cache:
+          keys:
+            - awis-cache
 
       - run:
           name: Check Alexa ranking
           command: bash alexa.sh
-          working_directory: ./.tests
+          working_directory: _deployment/tests
+
+      - save_cache:
+          key: awis-cache
+          paths:
+            - "/tmp/alexa/*"
 
 workflows:
   version: 2
