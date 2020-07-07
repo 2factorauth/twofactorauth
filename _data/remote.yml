@@ -92,10 +92,8 @@ websites:
     url: https://www.realvnc.com
     img: realvnc.png
     tfa:
-      - proprietary
-      - hardware
-    doc: https://www.realvnc.com/en/connect/docs/multi-factor-auth.html#protecting-your-realvnc-account
-    exception: "2FA is only available for the Professional or Enterprise subscription."
+      - totp
+    doc: https://help.realvnc.com/hc/en-us/articles/360003110878
 
   - name: Remote Desktop Manager
     url: https://www.remotedesktopmanager.com

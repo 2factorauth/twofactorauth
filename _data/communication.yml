@@ -139,6 +139,12 @@ websites:
       - sms
     doc: https://help.groupme.com/hc/en-us/articles/360000579167
 
+  - name: Groups.io
+    url: https://groups.io
+    img: groups_io.png
+    tfa:
+      - totp
+
   - name: Hangouts
     url: https://hangouts.google.com/
     img: hangouts.png
