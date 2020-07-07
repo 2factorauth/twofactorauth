@@ -5,7 +5,8 @@
   svg {
     border: 0;
     color:#FFFFFF;
-    fill:#39CCCC;
+    fill:
+{{ site.theme_color }};
     height: 80px;
     position: absolute;
     right: 0;

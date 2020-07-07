@@ -1,7 +1,6 @@
-TwoFactorAuth.org
-=================
+# TwoFactorAuth.org
 
-[![Build Status](https://img.shields.io/travis/2factorauth/twofactorauth/master?style=for-the-badge)](https://travis-ci.org/2factorauth/twofactorauth)
+[![Build Status](https://img.shields.io/github/workflow/status/2factorauth/twofactorauth/Jekyll%20Tests?style=for-the-badge)](https://github.com/2factorauth/twofactorauth/actions)
 [![License](https://img.shields.io/badge/license-mit-9A0F2D.svg?style=for-the-badge)](/LICENSE)
 [![Gitter](https://img.shields.io/gitter/room/2factorauth/twofactorauth.svg?style=for-the-badge&logo=gitter&color=ED1965)](https://gitter.im/2factorauth/twofactorauth)
 [![Twitter](https://img.shields.io/badge/Twitter-@2faorg-1DA1F2.svg?style=for-the-badge&logo=twitter)](https://twitter.com/2faorg)
@@ -10,42 +9,83 @@ A list of popular sites and whether or not they accept two factor auth.
 
 ## The Goal
 
-The goal is to build a website ([TwoFactorAuth.org](https://twofactorauth.org)) with a list of popular sites that support
+The goal of this project is to build a website ([TwoFactorAuth.org](https://twofactorauth.org)) with a list of popular sites that support
 Two Factor Authentication, as well as the methods that they provide.
 
 Our hope is to aid consumers who are deciding between alternative services based on the security they
-offer for their customers. This can also serve as an indicator for the effort a site has put into security in general.
+offer for their customers. This project also serves as an indicator of general security efforts used on a site.
 
-## Contributing
+## Contributing :pencil2:
 
-If you'd like to contribute, read the entire guidelines here in
+If you would like to contribute, please read the entire guidelines here in
 [CONTRIBUTING.md][contrib].
 
-## Running Locally
+## Local installation :hammer_and_wrench:
 
 TwoFactorAuth.org is built upon [Jekyll](https://jekyllrb.com/), using the [github-pages](https://github.com/github/pages-gem) gem.
-In order to run the site locally, it is necessary to install bundler, install all dependencies, and then use Jekyll to serve
-the site. If the `gem` command is not available to you, it is necessary to install Ruby with RubyGems.
-Once Ruby and RubyGems are installed and available from the command line, TwoFactorAuth can be setup using the following commands.
+In order to run the site locally, bundler, and all other dependencies will need to be installed, and afterwards Jekyll can serve
+the site. Ubuntu:
 
-```shell
+```bash
+sudo snap install ruby --classic
+sudo apt install webp npm
+npm i babel-minify
+bundle install --path vendor/bundle
+```
+
+Windows Subsystem for Linux (WSL)
+
+```bash
+sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev npm webp
+npm i babel-minify
+bundle install --path vendor/bundle
+```
+
+MacOS (_Requires Xcode_)
+
+```bash
+# Install homebrew
+xcode-select --install
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
+
+# Install ruby, webp & nodejs(npm)
+brew install ruby
+brew install webp
+brew install nodejs
+echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
+
+# Install Bundler and dependencies
 gem install bundler
-cd ~/twofactorauth
-bundle install
-bundle exec jekyll serve
+bundle install --path vendor/bundle
+npm i babel-minify
 ```
 
-If you're using Ubuntu or [Bash on Windows (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) you'll probably need to install these dependencies first:
+## Running locally :running:
 
-```shell
-sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev
+Ubuntu/WSL/MacOS:
+
+```bash
+# Generating regional sites (Optional)
+ruby ./_deployment/regions.rb
+
+# Minify JS (Optional)
+./_deployment/minify-js.sh
+
+# Generate WebP images
+./_deployment/webp.sh
+
+# Building the site
+bundle exec jekyll build
+
+# Running the site locally
+bundle exec jekyll serve --watch
 ```
 
-The TwoFactorAuth website should then be accessible from `http://localhost:4000`.
+The TwoFactorAuth website should now be accessible from `http://localhost:4000`.
 
-Another option is to run Jekyll inside a [Docker](https://www.docker.com/) container.  Please read the [Jekyll Docker Documentation](https://github.com/envygeeks/jekyll-docker/blob/master/README.md) on how to do this.
+Another option is to run Jekyll inside a [Docker](https://www.docker.com/) container. Please read the [Jekyll Docker Documentation](https://github.com/envygeeks/jekyll-docker/blob/master/README.md) on how to use Jekyll.
 
-## License
+## License :balance_scale:
 
 This code is distributed under the MIT license. For more info, read the
 [LICENSE][license] file distributed with the source code.
