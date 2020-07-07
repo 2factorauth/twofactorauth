@@ -85,6 +85,12 @@ websites:
     facebook: SaferVPNCom
     email_address: support@safervpn.com
 
+  - name: TorGuard
+    url: https://torguard.net
+    img: torguard.png
+    tfa:
+      - totp
+
   - name: TunnelBear
     url: https://tunnelbear.com/
     img: tunnelbear.png
