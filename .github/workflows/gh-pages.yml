@@ -43,6 +43,9 @@ jobs:
       - name: Generate webp images
         run: ./_deployment/webp.sh
 
+      - name: Generate API files
+        run: ./_deployment/api.rb
+
       - name: Build the site
         run: bundle exec jekyll build --config _config.yml,_deployment/config-production.yml
 
