@@ -367,13 +367,6 @@ websites:
     facebook: NewRelic
     img: newrelic.png
 
-  - name: Nexmo
-    url: https://www.nexmo.com/
-    img: nexmo.png
-    tfa:
-      - sms
-      - phone
-
   - name: npm
     url: https://www.npmjs.com/
     img: npm.png
@@ -620,6 +613,13 @@ websites:
       - sms
       - totp
     doc: https://support.microsoft.com/en-us/help/12408/
+
+  - name: Vonage
+    url: https://developer.nexmo.com/
+    img: vonage.png
+    tfa:
+      - sms
+      - phone
 
   - name: Zapier
     url: https://zapier.com
