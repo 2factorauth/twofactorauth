@@ -448,6 +448,14 @@ websites:
       - totp
     doc: https://localbitcoins.com/guides/security
 
+  - name: LocalCoinSwap
+    url: https://localcoinswap.com
+    img: localcoinswap.png
+    tfa:
+      - email
+      - totp
+    doc: https://support.localcoinswap.com/hc/en-us/articles/360018889034-How-to-enable-Multi-Factor-Authentication-MFA-
+
   - name: LocalCryptos
     url: https://localcryptos.com
     img: localcryptos.png
