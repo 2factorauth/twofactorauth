@@ -73,14 +73,6 @@ websites:
     doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
     exception: "2FA only available for Australian customers."
     
-  - name: Chartbeat
-    url: https://chartbeat.com/
-    img: chartbeat.png
-    tfa:
-      - sms
-      - totp
-    doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888
-
   - name: CharlieHR
     url: https://charliehr.com/
     img: charliehr.png
@@ -89,6 +81,14 @@ websites:
     twitter: JoinCharlie
     facebook: JoinCharlie
     email_address: help@charliehr.com
+
+  - name: Chartbeat
+    url: https://chartbeat.com/
+    img: chartbeat.png
+    tfa:
+      - sms
+      - totp
+    doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888
 
   - name: Cisco Meraki
     url: https://meraki.cisco.com/
