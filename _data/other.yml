@@ -81,6 +81,15 @@ websites:
       - totp
     doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888
 
+  - name: CharlieHR
+    url: https://charliehr.com/
+    img: charliehr.png
+    tfa:
+      - totp
+    twitter: JoinCharlie
+    facebook: JoinCharlie
+    email_address: help@charliehr.com
+
   - name: Cisco Meraki
     url: https://meraki.cisco.com/
     img: meraki.png
