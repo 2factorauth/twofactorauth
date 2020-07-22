@@ -21,8 +21,10 @@ websites:
   - name: Bitdefender
     url: https://www.bitdefender.com
     img: bitdefender.png
-    twitter: Bitdefender
-    facebook: bitdefender
+    tfa:
+      - email
+      - totp
+    doc: https://www.bitdefender.com/consumer/support/answer/1581/
 
   - name: Blur
     url: https://www.abine.com/
@@ -58,7 +60,8 @@ websites:
     img: cloudflare.png
     tfa:
       - totp
-    doc: https://support.cloudflare.com/hc/en-us/articles/200167866
+      - u2f
+    doc: https://support.cloudflare.com/hc/en-us/articles/200167906
 
   - name: Cobalt
     url: https://cobalt.io/
@@ -138,6 +141,13 @@ websites:
     doc: https://docs.hackerone.com/hackers/two-factor-authentication.html
     exception: SMS-capable phone required for initial setup.
 
+  - name: intigriti
+    url: https://www.intigriti.com/
+    img: intigriti.png
+    tfa:
+      - totp
+    doc: https://kb.intigriti.com/en/articles/2642631
+    
   - name: Kaspersky
     url: https://www.kaspersky.com/
     img: kaspersky.png
@@ -199,12 +209,6 @@ websites:
       - totp
     doc: https://www.ssltrust.com.au/help/account-management/enable-2factor
 
-  - name: Surfshark
-    url: https://surfshark.com/
-    img: surfshark.png
-    twitter: SurfsharkSecure
-    facebook: SurfsharkPrivacy
-
   - name: ThreatConnect
     url: https://threatconnect.com/
     img: threatconnect.png
@@ -237,12 +241,6 @@ websites:
       - totp
     doc: https://support.tinfoilsecurity.com/article/43-do-you-support-two-factor-authentication-how-do-i-set-it-up
 
-  - name: TorGuard
-    url: https://torguard.net
-    img: torguard.png
-    tfa:
-      - totp
-
   - name: VirusTotal
     url: https://www.virustotal.com
     img: virustotal.png
@@ -252,5 +250,6 @@ websites:
   - name: Webroot
     url: https://www.webroot.com
     img: webroot.png
-    twitter: Webroot
-    facebook: Webroot
+    tfa:
+      - totp
+    doc: https://docs.webroot.com/us/en/home/wsa_website_userguide/wsa_managementwebsite_userguide.htm#GettingStarted/Enabling2-FactorAuthentication.htm
