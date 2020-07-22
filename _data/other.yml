@@ -73,6 +73,13 @@ websites:
     doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
     exception: "2FA only available for Australian customers."
     
+  - name: CharlieHR
+    url: https://charliehr.com/
+    img: charliehr.png
+    tfa:
+      - totp
+    doc: https://intercom.help/charliehr/en/articles/1037152
+
   - name: Chartbeat
     url: https://chartbeat.com/
     img: chartbeat.png
