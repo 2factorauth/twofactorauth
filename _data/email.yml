@@ -5,6 +5,7 @@ websites:
     tfa:
       - sms
       - phone
+      - email
     doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
   - name: FastMail
@@ -43,6 +44,14 @@ websites:
     tfa:
       - totp
     doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
+
+  - name: HEY
+    url: https://hey.com/
+    img: hey.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://hey.com/security/
 
   - name: Hushmail
     url: https://www.hushmail.com
@@ -243,7 +252,10 @@ websites:
     tfa:
       - sms
       - phone
+      - email
+      - proprietary
     doc: https://help.yahoo.com/kb/SLN5013.html
+    exception: "Linked phone number required for 2FA."
 
   - name: Yandex.Mail
     url: https://mail.yandex.com/

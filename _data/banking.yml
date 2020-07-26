@@ -45,15 +45,11 @@ websites:
 
   - name: America First Credit Union
     url: https://www.americafirst.com/
-    twitter: AFCU
-    facebook: americafirstcu
     img: americafirstcu.png
-
-  - name: American Express
-    url: https://www.americanexpress.com/
-    twitter: AmericanExpress
-    facebook: AmericanExpressUS
-    img: americanexpress.png
+    tfa:
+      - sms
+      - email
+    doc: https://www.americafirst.com/online_banking.html
 
   - name: America’s Christian Credit Union
     url: https://www.americaschristiancu.com
@@ -84,12 +80,61 @@ websites:
       - hardware
     doc: https://www.avanza.se/kundservice.html/1335/tvafaktorsinloggning/d264248e-bea3-48a0-bf2d-157309734649
 
+  - name: Baden-Württembergische Bank
+    url: https://www.bw-bank.de/
+    img: bw-bank.png
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://meine.bw-bank.de/articles/am-14-september-tritt-psd2-in-kraft-was-bedeutet-das-fuer-sie
+
   - name: Banca Mediolanum
     url: https://www.bmedonline.it
     img: mediolanum.png
     twitter: BancaMediolanum
     facebook: BancaMediolanum
     lang: it
+
+  - name: Banco Ciudad
+    url: https://www.bancociudad.com.ar
+    img: bancociudad.png
+    twitter: BancoCiudad
+    facebook: bancociudad
+    lang: es
+
+  - name: Banco Galicia
+    url: https://www.bancogalicia.com
+    img: bancogalicia.png
+    twitter: BancoGalicia
+    facebook: bancogalicia
+    lang: es
+    
+  - name: Banco Macro
+    url: https://www.macro.com.ar
+    img: bancomacro.png
+    facebook: bancomacro
+    lang: es
+
+  - name: Banco Nación
+    url: https://www.bna.com.ar/
+    img: banconacion.png
+    facebook: banconacion
+    email_address: asistenciaproteccionusuarios@bna.com.ar
+    lang: es
+
+  - name: Banco Provincia
+    url: https://www.bancoprovincia.com.ar
+    img: bancoprovincia.png
+    twitter: BPResponde
+    facebook: bancoprovincia
+    lang: es
+
+  - name: Bancolombia
+    url: https://www.grupobancolombia.com
+    img: bancolombia.png
+    twitter: Bancolombia
+    facebook: bancolombia
+    lang: es
 
   - name: Bank Central Asia (BCA)
     url: https://www.bca.co.id/en
@@ -117,6 +162,7 @@ websites:
     tfa:
       - sms
       - email
+    doc: https://www.bankofamerica.com/security-center/online-banking/
 
   - name: Bank of China (Hong Kong)
     url: https://www.bochk.com/
@@ -165,9 +211,16 @@ websites:
       - hardware
     doc: https://www.bbbank.de/produkte/konten-und-karten/online-banking/tan-verfahren.html
 
+  - name: BBVA Argentina
+    url: https://www.bbva.com.ar/
+    img: bbva.png
+    facebook: bbva.argentina
+    twitter: bbva_argentina
+    lang: es
+
   - name: BBVA Compass
     url: https://www.bbvacompass.com/
-    img: bbvacompass.png
+    img: bbva.png
     facebook: bbvacompass
     twitter: BBVACompass
 
@@ -268,14 +321,18 @@ websites:
   - name: Chime
     url: https://www.chimebank.com
     img: chime.png
-    twitter: Chime
-    facebook: chimebank
-
+    tfa:
+      - sms
+    doc: https://www.chime.com/security-and-control/
+    
   - name: CIBC
-    url: https://www.cibc.ca
-    twitter: cibc
-    facebook: CIBC
+    url: https://www.cibc.com
     img: cibc.png
+    tfa:
+      - sms
+      - phone
+      - email
+    doc: https://www.cibc.com/en/privacy-security/two-step-verification-b.html
 
   - name: Citibank
     url: https://online.citi.com/
@@ -353,6 +410,26 @@ websites:
     twitter: CUA_Connect
     facebook: CUA
 
+  - name: Danske Bank (Denmark)
+    url: https://danskebank.dk/
+    img: danskebank.png
+    tfa:
+    - hardware
+    - proprietary
+    doc: https://www.nemid.nu/dk-en/get_started/
+    regions:
+    - dk
+
+  - name: Danske Bank (Sweden)
+    url: https://danskebank.se/
+    img: danskebank.png
+    tfa:
+    - hardware
+    - proprietary
+    doc: https://danskebank.se/privat/digitala-tjanster/ovriga-tjanster/bankid
+    regions:
+    - se
+
   - name: DBS Bank Singapore
     url: https://www.dbs.com.sg/
     img: dbs.png
@@ -384,6 +461,17 @@ websites:
       - sms
       - proprietary
     doc: https://www.desjardins.com/securite/validation-2-etapes/
+
+  - name: Deutsche Bank
+    url: https://www.deutsche-bank.de/
+    img: deutschebank.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.deutsche-bank.de/pk/lp/psd2.html
+    regions:
+      - de
 
   - name: Deutsche Kreditbank (DKB)
     url: https://www.dkb.de/
@@ -464,9 +552,9 @@ websites:
 
   - name: Fifth Third Bank
     url: https://www.53.com/
-    twitter: FifthThird
-    facebook: FifthThirdBank
     img: fifththird.png
+    tfa:
+      - sms
 
   - name: Fio banka
     url: https://www.fio.cz
@@ -561,6 +649,13 @@ websites:
       - proprietary
       - hardware
     doc: https://www.hsbc.co.uk/help/security-centre/secure-key/secure-key-help/
+    
+  - name: HSBC Argentina
+    url: https://www.hsbc.com.ar/
+    twitter: HSBC_AR
+    facebook: HSBCArgentina
+    img: hsbc.png
+    lang: es
 
   - name: Huntington National Bank
     url: https://www.huntington.com
@@ -583,6 +678,23 @@ websites:
     facebook: IberiaBank
     img: iberiabank.png
 
+  - name: ICA Banken
+    url: https://www.icabanken.se/
+    img: icabanken.png
+    tfa:
+      - hardware
+      - proprietary
+    doc: https://www.icabanken.se/kundservice/hjalp-med-att-logga-in/
+    regions:
+      - se
+
+  - name: ICBC Argentina
+    url: https://www.icbc.com.ar
+    twitter: ICBCArgentina
+    facebook: ICBCArgentina
+    img: icbc.png
+    lang: es
+
   - name: ICICI
     url: https://www.icicibank.com
     img: icici.png
@@ -595,7 +707,8 @@ websites:
     img: ing.png
     tfa:
       - hardware
-    doc: https://www.ing.lu/web/ING/EN/Personal/Customerservices/FAQ/MYING_FAQ_EN
+      - proprietary
+    doc: https://www.ing.lu/webing/content/siteing/en/Individuals/Onlineproduct/Services/frequently-asked-questions/faq-online-banking-.html
 
   - name: ING Australia
     url: https://www.ing.com.au
@@ -804,6 +917,15 @@ websites:
       - proprietary
     exception: "TFA only available for Swedish residents with BankID."
 
+  - name: norisbank
+    url: https://www.norisbank.de/
+    img: norisbank.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.norisbank.de/service/zwei-faktor-authentifizierung.html
+
   - name: Northeast Credit Union
     url: https://necu.org
     img: necu.png
@@ -841,6 +963,7 @@ websites:
   - name: Partners Federal Credit Union
     url: https://partnersfcu.org/
     img: partners.png
+    facebook: PartnersFCU
 
   - name: Patelco Credit Union
     url: https://www.patelco.org/
@@ -856,12 +979,22 @@ websites:
     facebook: PenFed
     img: penfed.png
 
+  - name: PKO Bank Polski
+    url: https://www.pkobp.pl/
+    img: pkobp.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://iko.pkobp.pl/funkcje/mobilna-autoryzacja/
+    regions:
+      - pl
+
   - name: PNC Bank
     url: https://www.pnc.com/
     img: pncbank.png
     tfa:
       - sms
-    doc: https://www.pnc.com/en/customer-service/update-center/sign-on-changes.html
+    doc: https://www.pnc.com/en/security-privacy/added-layer-security.html
 
   - name: Podravska banka
     url: https://www.poba.hr/
@@ -941,13 +1074,20 @@ websites:
       - sms
       - phone
       - email
-    doc: https://www.sffirecu.org/access/online-and-mobile-banking/new-olb
+    doc: https://www.sffirecu.org/support/frequently-asked-questions/
 
   - name: Santa Clara County Federal Credit Union
     url: https://www.sccfcu.org/
     twitter: SCCFCU
     facebook: SCCFCU
     img: sccfcu.png
+
+  - name: Santander AR
+    url: https://www.santander.com.ar/
+    img: santander.png
+    twitter: Santander_Ar
+    facebook: Santander.Ar
+    lang: es
 
   - name: Santander BR
     url: https://www.santander.com.br/
@@ -963,19 +1103,21 @@ websites:
     tfa:
       - sms
       - proprietary
-    doc: https://santander.pl/firmy/bankowosc-elektroniczna/bzwbk24-mini-firma/metody-autoryzacji/metody-autoryzacji.html
+    doc: https://www.santander.pl/klient-indywidualny/kontakt/pytania-i-odpowiedzi-bankowosc-internetowa
 
   - name: Santander PT
-    url: https://www.santandertotta.pt/
+    url: https://www.santander.pt/
     img: santander.png
-    twitter: santanderpt
-    facebook: santanderpt
-    email_address: netbancoparticulares@santander.pt
-    lang: pt
+    tfa:
+      - sms
+    doc: https://www.santander.pt/pt_PT/Particulares/Informacoes/psd2-diretiva-servicos-pagamento.html
 
   - name: Santander UK
     url: https://www.santander.co.uk
     img: santander.png
+    twitter: santanderukhelp
+    facebook: santanderuk
+    status: https://www.santander.co.uk/personal/support/ways-to-bank/changes-to-how-you-log-on-to-online-banking
 
   - name: SchoolsFirst FCU
     url: https://www.schoolsfirstfcu.org/
@@ -1087,7 +1229,7 @@ websites:
     facebook: suntrust
     img: suntrust.png
 
-  - name: Swedbank
+  - name: Swedbank & Sparbankerna
     url: https://www.swedbank.se/
     img: swedbank.png
     tfa:
@@ -1265,6 +1407,21 @@ websites:
     twitter: widiba_tw
     facebook: widiba.it
     lang: it
+
+  - name: Wilobank
+    url: https://www.wilobank.com
+    img: wilobank.png
+    twitter: wilobank
+    facebook: wilobank
+    lang: es
+
+  - name: Woodforest National Bank
+    url: https://www.woodforest.com/
+    img: woodforest.png
+    tfa:
+      - totp
+      - sms
+    doc: https://www.woodforest.com/Personal/Services/Online-Banking/Online-Banking-Security
 
   - name: Zagrebačka banka
     url: https://www.zaba.hr/
