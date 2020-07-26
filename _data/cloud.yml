@@ -28,6 +28,13 @@ websites:
       - totp
     doc: https://www.brightbox.com/docs/guides/manager/two-factor-authentication/
 
+
+  - name: Civo
+    url: https://www.civo.com
+    img: civo.png
+    tfa:
+      - totp
+ 
   - name: Cloud 66
     url: https://www.cloud66.com
     img: cloud66.png
