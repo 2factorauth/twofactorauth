@@ -1,9 +1,14 @@
 ---
 ---
+
 body {
   background-color: #fff;
-  font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
+  font-family: open sans, Helvetica, Arial, sans-serif;
   min-width: 300px;
+}
+
+h1,h2,h3,h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -79,8 +84,8 @@ thead {
     text-align: center;
 
     h2 {
-      font-family: 'Roboto', sans-serif;
       font-weight: 300 !important;
+      font-size: 2.3rem;
     }
   }
 
@@ -110,9 +115,10 @@ thead {
         float: none;
         line-height: 23px;
         position: static;
-        font-family: 'Spartan', sans-serif;
-        font-weight: 500;
-        font-size: 93%;
+        font-family: -apple-system, BlinkMacSystemFont, spartan, sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 0.528px;
       }
 
       .category-icon {
