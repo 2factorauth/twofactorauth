@@ -52,8 +52,11 @@ websites:
     img: joinme.png
     tfa:
       - sms
+      - email
       - totp
-    doc: https://secure.logmein.com/welcome/webhelp/EN/Pro/LogMeIn/c_common_Security_TwoStep.html
+      - proprietary
+    doc: https://support.logmeininc.com/pro/help#logmein-t-login-policy-set-twofactor-ownaccount
+    exception: "SMS or email must be set up as a backup method"
 
   - name: Linksys Smart Wi-Fi
     url: https://www.linksyssmartwifi.com
@@ -62,14 +65,15 @@ websites:
     img: linksyssmartwifi.png
 
   - name: LogMeIn
-    url: https://secure.logmein.com/
+    url: https://www.logmein.com/
     img: logmein.png
     tfa:
       - sms
       - email
       - totp
-      - hardware
-    doc: https://secure.logmein.com/welcome/webhelp/EN/Pro/LogMeIn/c_Common_Account_Security.html
+      - proprietary
+    doc: https://support.logmeininc.com/pro/help#logmein-t-login-policy-set-twofactor-ownaccount
+    exception: "SMS or email must be set up as a backup method"
 
   - name: MB Connect Line
     url: https://www.mbconnectline.com
@@ -92,10 +96,8 @@ websites:
     url: https://www.realvnc.com
     img: realvnc.png
     tfa:
-      - proprietary
-      - hardware
-    doc: https://www.realvnc.com/en/connect/docs/multi-factor-auth.html#protecting-your-realvnc-account
-    exception: "2FA is only available for the Professional or Enterprise subscription."
+      - totp
+    doc: https://help.realvnc.com/hc/en-us/articles/360003110878
 
   - name: Remote Desktop Manager
     url: https://www.remotedesktopmanager.com

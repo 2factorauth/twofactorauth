@@ -141,6 +141,13 @@ websites:
     doc: https://docs.hackerone.com/hackers/two-factor-authentication.html
     exception: SMS-capable phone required for initial setup.
 
+  - name: intigriti
+    url: https://www.intigriti.com/
+    img: intigriti.png
+    tfa:
+      - totp
+    doc: https://kb.intigriti.com/en/articles/2642631
+    
   - name: Kaspersky
     url: https://www.kaspersky.com/
     img: kaspersky.png
@@ -202,14 +209,6 @@ websites:
       - totp
     doc: https://www.ssltrust.com.au/help/account-management/enable-2factor
 
-  - name: Surfshark
-    url: https://surfshark.com/
-    img: surfshark.png
-    tfa:
-      - email
-      - totp
-    doc: https://support.surfshark.com/hc/en-us/articles/360011448319
-
   - name: ThreatConnect
     url: https://threatconnect.com/
     img: threatconnect.png
@@ -241,12 +240,6 @@ websites:
     tfa:
       - totp
     doc: https://support.tinfoilsecurity.com/article/43-do-you-support-two-factor-authentication-how-do-i-set-it-up
-
-  - name: TorGuard
-    url: https://torguard.net
-    img: torguard.png
-    tfa:
-      - totp
 
   - name: VirusTotal
     url: https://www.virustotal.com

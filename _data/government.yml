@@ -7,6 +7,8 @@ websites:
       - proprietary
     doc: https://serviciosweb.afip.gob.ar/genericos/GuiaDeTramites/VerGuia.aspx?tr=38
     exception: "2FA is only available for users with security level (Clave Fiscal) 4"
+    regions:
+      - ar
 
   - name: Agenzia delle Entrate
     url: https://www.agenziaentrate.gov.it/
@@ -14,6 +16,8 @@ websites:
     twitter: Agenzia_Entrate
     facebook: agenziadelleentrate
     lang: it
+    regions:
+      - it
 
   - name: ANSES
     url: https://www.anses.gob.ar
@@ -21,11 +25,15 @@ websites:
     twitter: ansesgob
     facebook: ansesgob
     lang: es
+    regions:
+      - ar
 
   - name: Canada Revenue Agency
     url: https://www.canada.ca/en/revenue-agency.html
     img: canadarevenueagency.png
     twitter: CanRevAgency
+    regions:
+      - ca
 
   - name: Datové schránky
     url: https://www.mojedatovaschranka.cz
@@ -34,6 +42,8 @@ websites:
       - sms
       - proprietary
     doc: https://www.mojedatovaschranka.cz/static/ISDS/help/page1.html#1_5_4
+    regions:
+      - cz
 
   - name: DigiD
     url: https://www.digid.nl/
@@ -43,6 +53,8 @@ websites:
       - phone
       - proprietary
     doc: https://www.digid.nl/nl/vraag-en-antwoord/hoe-kan-ik-de-sms-controle-toevoegen/
+    regions:
+      - nl
 
   - name: Elster
     url: https://www.elster.de/
@@ -51,12 +63,16 @@ websites:
       - proprietary
       - hardware
     doc: https://www.elster.de/eportal/helpGlobal?themaGlobal=help_eop
+    regions:
+      - de
 
   - name: Federal Student Aid
     url: https://studentaid.ed.gov
     img: federalstudentaid.png
     twitter: FAFSA
     facebook: FederalStudentAid
+    regions:
+      - us
 
   - name: Hamburg Serviceportal
     url: https://serviceportal.hamburg.de/
@@ -64,11 +80,15 @@ websites:
     tfa:
       - hardware
     doc: https://serviceportal.hamburg.de/HamburgGateway/FVP/FV/BasisHilfe/HilfeA-Z.aspx#Wie_kann_ich_die_Funktion_„Anmelden_mit_Online-Ausweisfunktion“_einrichten
+    regions:
+      - de
 
   - name: Healthcare.gov
     url: https://healthcare.gov
     twitter: HealthCareGov
     img: healthcaregov.png
+    regions:
+      - us
 
   - name: HMRC
     url: https://hmrc.gov.uk
@@ -77,6 +97,8 @@ websites:
       - sms
       - phone
     doc: https://www.gov.uk/government/publications/genuine-hmrc-contact-and-recognising-phishing-emails/genuine-hmrc-contact-and-recognising-phishing-emails#hmrc-short-message-service-text-messages
+    regions:
+      - gb
 
   - name: impots.gouv.fr
     url: https://www.impots.gouv.fr
@@ -84,6 +106,8 @@ websites:
     twitter: dgfip_officiel
     facebook: Direction-générale-des-Finances-publiques-250996308359760
     lang: fr
+    regions:
+      - fr
 
   - name: login.gov
     url: https://login.gov/
@@ -94,6 +118,8 @@ websites:
       - totp
       - hardware
     doc: https://www.login.gov/help/creating-an-account/two-factor-authentication/
+    regions:
+      - us
 
   - name: Mi Argentina
     url: https://www.argentina.gob.ar
@@ -101,6 +127,8 @@ websites:
     facebook: mi.argentina.gob.ar
     twitter: GobDigitalAR
     lang: es
+    regions:
+      - ar
 
   - name: myGov
     url: https://my.gov.au
@@ -109,6 +137,8 @@ websites:
       - sms
       - proprietary
     doc: https://my.gov.au/mygov/content/html/help.html#securityCode
+    regions:
+      - au
 
   - name: RealMe
     url: https://www.realme.govt.nz/
@@ -118,6 +148,8 @@ websites:
       - totp
       - hardware
     doc: https://www.realme.govt.nz/help/#second-factor-authentication
+    regions:
+      - nz
 
   - name: SingPass
     url: https://www.singpass.gov.sg/
@@ -127,6 +159,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.ifaq.gov.sg/SINGPASS/apps/fcd_faqmain.aspx#TOPIC_210129
+    regions:
+      - sg
 
   - name: Skatteverket
     url: https://www.skatteverket.se
@@ -135,6 +169,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.skatteverket.se/privat/sjalvservice/allaetjanster/omelegitimation.4.18e1b10334ebe8bc80004811.html
+    regions:
+      - se
 
   - name: Thrift Savings Plan
     url: https://www.tsp.gov
@@ -143,12 +179,16 @@ websites:
       - sms
       - email
     doc: https://www.tsp.gov/PlanParticipation/AccountManagement/managing/protectYourTSPAccount.html
+    regions:
+      - us
 
   - name: UK Companies House
     url: https://www.gov.uk/companieshouse
     img: companieshouse.png
     twitter: CompaniesHouse
     facebook: CompaniesHouse
+    regions:
+      - gb
 
   - name: US Internal Revenue Service
     url: https://www.irs.gov/Individuals/Get-Transcript
@@ -158,6 +198,8 @@ websites:
       - phone
       - proprietary
     doc: https://www.irs.gov/individuals/secure-access-how-to-register-for-certain-online-self-help-tools
+    regions:
+      - us
 
   - name: US Social Security Administration
     url: https://www.ssa.gov
@@ -166,6 +208,8 @@ websites:
       - sms
       - email
     doc: https://www.ssa.gov/myaccount/MoreInformationAboutMFA.html
+    regions:
+      - us
 
   - name: US Veteran Affairs
     url: https://www.va.gov
@@ -176,3 +220,5 @@ websites:
       - proprietary
       - hardware
     exception: "2FA is only available when using the Identity Management service ID.me"
+    regions:
+      - us

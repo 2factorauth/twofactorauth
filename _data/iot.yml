@@ -14,6 +14,7 @@ websites:
     img: ecobee.png
     tfa:
       - sms
+      - totp
     doc: https://support.ecobee.com/hc/en-us/articles/360040957212
 
   - name: IFTTT
@@ -55,7 +56,8 @@ websites:
     img: ringcom.png
     tfa:
       - sms
-    doc: https://support.ring.com/hc/en-us/articles/360024818291
+      - email
+    doc: https://support.ring.com/hc/en-us/articles/360039693891
 
   - name: Samsung SmartThings
     url: https://www.smartthings.com/
