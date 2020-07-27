@@ -18,6 +18,10 @@
       .site-title {
         font-size: 18px;
         line-height: 53px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #3596ff;
 
         .fa-exclamation-triangle {
           float: right;
