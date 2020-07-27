@@ -45,9 +45,11 @@ websites:
 
   - name: America First Credit Union
     url: https://www.americafirst.com/
-    twitter: AFCU
-    facebook: americafirstcu
     img: americafirstcu.png
+    tfa:
+      - sms
+      - email
+    doc: https://www.americafirst.com/online_banking.html
 
   - name: America’s Christian Credit Union
     url: https://www.americaschristiancu.com
@@ -408,6 +410,26 @@ websites:
     twitter: CUA_Connect
     facebook: CUA
 
+  - name: Danske Bank (Denmark)
+    url: https://danskebank.dk/
+    img: danskebank.png
+    tfa:
+    - hardware
+    - proprietary
+    doc: https://www.nemid.nu/dk-en/get_started/
+    regions:
+    - dk
+
+  - name: Danske Bank (Sweden)
+    url: https://danskebank.se/
+    img: danskebank.png
+    tfa:
+    - hardware
+    - proprietary
+    doc: https://danskebank.se/privat/digitala-tjanster/ovriga-tjanster/bankid
+    regions:
+    - se
+
   - name: DBS Bank Singapore
     url: https://www.dbs.com.sg/
     img: dbs.png
@@ -665,6 +687,16 @@ websites:
     twitter: IBERIABANK
     facebook: IberiaBank
     img: iberiabank.png
+
+  - name: ICA Banken
+    url: https://www.icabanken.se/
+    img: icabanken.png
+    tfa:
+      - hardware
+      - proprietary
+    doc: https://www.icabanken.se/kundservice/hjalp-med-att-logga-in/
+    regions:
+      - se
 
   - name: ICBC Argentina
     url: https://www.icbc.com.ar
@@ -1207,7 +1239,7 @@ websites:
     facebook: suntrust
     img: suntrust.png
 
-  - name: Swedbank
+  - name: Swedbank & Sparbankerna
     url: https://www.swedbank.se/
     img: swedbank.png
     tfa:

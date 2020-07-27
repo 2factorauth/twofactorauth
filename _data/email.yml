@@ -45,6 +45,14 @@ websites:
       - totp
     doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
 
+  - name: HEY
+    url: https://hey.com/
+    img: hey.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://hey.com/security/
+
   - name: Hushmail
     url: https://www.hushmail.com
     img: hushmail.png
