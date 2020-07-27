@@ -1,73 +1,101 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv='Content-Security-Policy' content="script-src 'self' https://ajax.cloudflare.com https://code.jquery.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' data: https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self';">
-  <meta charset="UTF-8">
-  <meta name="description" content="{{ page.description | default: site.description }}">
-  <meta name="author" content="{{ site.author }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="/img/logo.png"/>
 
-  <meta property="og:title" content="{{ page.title | default: site.title }}">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="{{ site.url }}/{{ site.img }}">
-  <meta property="og:url" content="{{ page.url | prepend: site.url }}">
-  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="default" name="apple-mobile-web-app-status-bar-style">
+    <meta name="msapplication-TileColor" content="{{ site.theme_color }}">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="theme-color" content="{{ site.theme_color }}">
+    <meta name="application-name" content="{{ site.title }}">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta content="https://twofactorauth.org/img/logo.png" property="og:image">
+    <meta content="website" property="og:type">
+    <meta content="summary_large_image" property="twitter:card">
+    <meta property="twitter:title" content="{{ site.title }}">
+    <meta property="twitter:creator" content="{{ site.author }}">
+    <meta property="twitter:site" content="{{ site.twitter }}">
+    <meta property="twitter:image" content="{{ site.social_image }}">
+    <meta property="twitter:description" content="{{ site.description }}">
+    <title>{{ site.title }}</title>
+    {% include icons.html %}
+    <link href="/manifest.json" rel="manifest">
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" crossorigin="anonymous" integrity="sha512-9BwLAVqqt6oFdXohPLuNHxhx36BVj5uGSGmizkmGkgl3uMSgNalKc/smum+GJU/TTP0jy0+ruwC3xNAk3F759A==" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+    <link rel="stylesheet" crossorigin="anonymous" integrity="sha512-xbKj38YamwOa1yyC9gTFLExhbbV6r8WZwaEYYYaedfU0gosQuncv6p//9zcjK1NO2nkV/Nv5X5TkM/zjOnlc+w==" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300|Spartan:500&display=swap">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="/css/corner.css" rel="stylesheet">
+    {% if page.name == "index.html" %}
+      <link href="/css/popup.css" rel="stylesheet">
+      <link href="/css/desktop-table.css" rel="stylesheet">
+      <link href="/css/mobile-table.css" rel="stylesheet">
+      <link href="/css/social-media.css" rel="stylesheet">
+    {% elsif page.name == "about.html" %}
+      <link href="/css/about.css" rel="stylesheet">
+    {% endif %}
+  </head>
 
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="{{ page.title | default: site.title }}">
-  <meta property="twitter:creator" content="{{ site.author }}">
-  <meta property="twitter:site" content="{{ site.twitter }}">
-  <meta property="twitter:image" content="{{ site.social_image }}">
-  <meta property="twitter:description" content="{{ page.description | default: site.description }}">
+  <body>
+    {% include navbar.html %}
+    <a href="{{ site.github.repository_url }}" class="github-corner" aria-label="View source on Github">
+      <svg viewbox="0 0 250 250">
+        <path class="octo-triangle" d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path class="octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"></path>
+        <path class="octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"></path>
+      </svg>
+    </a>
 
-  <title>{{ page.title | default: site.title }}</title>
+    {% unless page.name == "index.html" %}
+      <div class="back-arrow">
+        <a onclick="history.back()">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+      </div>
+    {% endunless %}
 
-  <!-- Google Fonts should not use SRI hashes as the CSS served dynamically changes depending on browser -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"
-        integrity="sha384-vQPhfJdJkfTCHP7ouiqoAojjcDFuU346yP8z/pRpSn0xsWOfkMd+DkNmxns9jy4l" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/corner.css">
-</head>
+    <div class="container">
+      <noscript>
+        <div class="alert bg-danger text-white border" style="padding: 1vh 1vw;margin-top: 1vh;">
+          <h2>It looks like you have JavaScript disabled!</h2>
+          <p>Without JavaScript, this page probably won't work very well.
+                  For more information, or if you would like to talk to us about this,
+                  please take a look at our
+            <b><a href="{{ site.repo }}" style="color: whitesmoke;">
+              GitHub repository</a></b>.</p>
+        </div>
+      </noscript>
+      {{ content }}
+    </div>
 
-<body>
-{{ content }}
+    <div class="footer">
+      <div id="innerFooter">Created by
+        <a href="https://joshldavis.com">Josh Davis</a>, designed by <a href="https://carlgo11.com">Carlgo11</a>
+        and maintained by
+        <a href="https://github.com/2factorauth">2factorauth</a>.<br>
+		With help from some awesome <a href="https://github.com/2factorauth/twofactorauth/graphs/contributors">contributors</a>. <i style="color: {{ site.theme_color }}" class="fas fa-heart"></i>
+      </div>
+      <div id="buildNumber" class="desktop-only" title="{{ site.github.build_revision }}">
+        Build #: {{ site.github.build_revision | slice: 0,7 }}<br>
+        Build Date: {{ site.time | slice: 0,10}}
+      </div>
+    </div>
 
-<div class="ui divider"></div>
+    <script crossorigin="anonymous" integrity="sha512-C5x7QiS49O4ubITbqnAX93oOLk9/cASa+m8GawJMki1i4z8AjFDeklRCqiBBjj7niQULNW6nDhqf7l06zrZ9mA==" src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.14.1/jets.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-nkVN47hpd3LOCD7BXeONKhZVrx2EE69VNvOwH28U6QTfjZ/LBfUN6EkmsinvuGVD5UWhyQeJudkVkkT+B4ffrA==" src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@15.1.1/dist/lazyload.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/popup.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/social-media.js"></script>
+    <script src="/js/search.js"></script>
+  </body>
 
-<div class="footer ui basic center aligned segment">
-  See an issue or want to add to this website? Fork it or create an issue on
-  <a href="{{ site.repo }}">GitHub</a>.
-</div>
-
-<div class="ui divider"></div>
-
-<div class="footer ui basic center aligned segment">
-  Made with tea
-  <i class="leaf circular small icon"></i>
-  by
-  <a href="http://joshldavis.com">Josh Davis</a>
-  and love
-  <i class="heart circular small icon"></i>
-  from some awesome
-  <a href="{{ site.repo }}/graphs/contributors">Contributors</a>.
-</div>
-
-<!-- 3rd Party Libraries -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-	integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
-	crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"
-	integrity="sha384-d0+ufSr6Y7eU5V6E8Bt1AioIn4ParGkr0AwQ5RZD/S2mTaiEXMV78mqaYKMLE2qv"
-	crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.7/jquery.lazy.min.js"
-	integrity="sha384-wEyDFNGLEw12qsWXsjI32XObMejLosmqXK9KGBRTeR7Nbn2AED6YnD3mxmRqnBv9"
-	crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.14.0/jets.min.js"
-	integrity="sha384-NWhMP2tjh/VCnDqD+TXCEUMpy11tXXR80Jm/xqsYYwTLwuD4DwfPpcyr4xPdKAXl"
-	crossorigin="anonymous"></script>
-<!-- TFA JS -->
-<script src="/js/app.js"></script>
-</body>
 </html>

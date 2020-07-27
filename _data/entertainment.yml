@@ -39,9 +39,9 @@ websites:
 
   - name: Floatplane
     url: https://www.floatplane.com/
-    twitter: floatplanemedia
-    facebook: FloatplaneMedia
     img: floatplane.png
+    tfa:
+      - totp
 
   - name: Google Play
     url: https://play.google.com
@@ -129,6 +129,13 @@ websites:
     twitter: qobuz
     facebook: qobuz
     img: qobuz.png
+
+  - name: Rocket Beans TV
+    url: https://rocketbeans.tv/
+    img: rocketbeanstv.png
+    tfa:
+      - totp
+    doc: https://forum.rocketbeans.tv/t/35407/31
 
   - name: Roku
     url: https://www.roku.com

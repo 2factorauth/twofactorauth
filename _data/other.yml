@@ -8,11 +8,6 @@ websites:
       - totp
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
-  - name: Aerohive Networks
-    url: https://www.aerohive.com/
-    img: aerohive.png
-    twitter: Aerohive
-
   - name: Ancestry
     url: https://www.ancestry.com
     img: ancestry.png
@@ -69,6 +64,21 @@ websites:
     img: ca-technologies.png
     twitter: CAinc
     facebook: CATechnologies
+    
+  - name: Canva
+    url: https://www.canva.com
+    img: canva.png
+    tfa:
+      - sms
+    doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
+    exception: "2FA only available for Australian customers."
+    
+  - name: CharlieHR
+    url: https://charliehr.com/
+    img: charliehr.png
+    tfa:
+      - totp
+    doc: https://intercom.help/charliehr/en/articles/1037152
 
   - name: Chartbeat
     url: https://chartbeat.com/
@@ -140,6 +150,13 @@ websites:
       - email
     doc: https://www.dhl.de/de/toolbar/footer/datenschutz.html#kundenkontoundempfaengerservices
 
+  - name: DPD
+    url: https://www.dpd.de/
+    twitter: dpd_de
+    facebook: dpdindeutschland
+    img: dpd.png
+    lang: de
+
   - name: Dreamstime
     url: https://www.dreamstime.com/
     img: dreamstime.png
@@ -152,13 +169,19 @@ websites:
       - totp
     doc: https://help.market.envato.com/hc/en-us/articles/115005592963
 
+  - name: Extreme Networks
+    url: https://www.extremenetworks.com/
+    img: extremenetworks.png
+    twitter: ExtremeNetworks
+    facebook: extremenetworks
+
   - name: Figma
     url: https://www.figma.com/
     img: figma.png
     tfa:
       - sms
       - totp
-    doc: https://help.figma.com/article/208--
+    doc: https://help.figma.com/hc/en-us/articles/360039817634
 
   - name: Findmyshift
     url: https://www.findmyshift.com/
@@ -193,8 +216,20 @@ websites:
   - name: Freelancer
     url: https://www.freelancer.com/
     img: freelancer.png
-    twitter: freelancer
-    facebook: fansoffreelancer
+    tfa:
+      - sms
+      - email
+    doc: https://www.freelancer.com/support/general/2-step-verification
+
+  - name: GLS-ONE
+    url: https://www.gls-one.de/
+    twitter: GLS_Germany
+    facebook: GLSGermany
+    email_address: mail@gls-one.de
+    img: gls-one.png
+    lang: de
+    regions:
+       - de
 
   - name: GoFundMe
     url: https://www.gofundme.com/
@@ -204,6 +239,15 @@ websites:
       - phone
     doc: https://support.gofundme.com/hc/en-us/articles/360001980947
     exception: "2FA only for North American customers that create Personal campaigns."
+
+  - name: Golem
+    url: https://www.golem.de/
+    img: golem.png
+    twitter: golem
+    facebook: golem
+    lang: de
+    regions:
+      - de
 
   - name: Grammarly
     url: https://grammarly.com/
@@ -220,6 +264,20 @@ websites:
     tfa:
       - totp
     doc: https://docs.growingio.com/docs/product-manual/sysmanage/personal/security#kai-qi-er-ci-yan-zheng
+
+  - name: Gumtree
+    url: https://www.gumtree.com/
+    img: gumtree.png
+    twitter: Gumtree
+    facebook: gumtree
+
+  - name: Heise online
+    url: https://www.heise.de/
+    img: heise.png
+    twitter: heiseonline
+    facebook: heiseonline
+    email_address: webmaster@heise.de
+    lang: de
 
   - name: Help Scout
     url: https://helpscout.com
@@ -373,6 +431,12 @@ websites:
       - totp
     doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
 
+  - name: Opera
+    url: https://auth.opera.com
+    img: opera.png
+    tfa:
+      - totp
+
   - name: Pastebin
     url: https://pastebin.com
     img: pastebin.png
@@ -467,12 +531,18 @@ websites:
     facebook: spare5app
     email_address: feedback@spare5.com
 
-  - name: Ubiquiti Networks
-    url: https://www.ubnt.com
+  - name: Ubiquiti Inc
+    url: https://www.ui.com
     img: ubiquiti.png
     tfa:
       - totp
     doc: https://help.ubnt.com/hc/en-us/articles/115012986607
+
+  - name: UK Postbox
+    url: https://www.ukpostbox.com
+    img: ukpostbox.png
+    tfa:
+      - email
 
   - name: Ulule
     url: https://www.ulule.com/
@@ -500,6 +570,12 @@ websites:
     tfa:
       - totp
     doc: https://support.usabilla.com/hc/en-us/articles/115003081611
+    
+  - name: Vivaldi
+    url: https://vivaldi.com/
+    img: vivaldi.png
+    facebook: vivaldi.browser
+    twitter: vivaldibrowser
 
   - name: WageWorks
     url: https://www.wageworks.com
