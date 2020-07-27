@@ -10,7 +10,6 @@
       "tfa": [
         "sms",
         "phone",
-        "software",
         "hardware",
         "totp",
         "proprietary",

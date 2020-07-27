@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<h1 class="display-3 desktop-only title">The 2FactorAuth Group</h1>
+<h1 class="mobile-only title">The 2FactorAuth Group</h1>
+<!--
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies orci varius, dignissim dolor sed, malesuada
+        risus. Aenean lobortis orci augue, eu ultricies justo rutrum ac. Donec ultrices ullamcorper nunc, nec consectetur
+        nisl pharetra eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus
+        ultrices risus ut consectetur egestas. Donec dignissim, lectus et auctor ornare, quam ante aliquam augue, posuere
+        scelerisque est velit id nulla. Suspendisse neque ante, sodales et iaculis quis, aliquam quis lectus. Quisque
+        viverra posuere dignissim. Integer porta quis diam ut placerat.
+</p>
+
+<h2 class="display-4" id="team-title" style="display: none;">The Team</h2>-->
+<div class="row">
+  {% for maintainer in site.github.organization_members %}
+    <div class="maintainer col-12 col-md-4 col-lg-3" id="{{ maintainer.login }}">
+      <a href="{{ maintainer.html_url}}">
+        <div class="card">
+          <img class="maintainer-img card-img-top lazyload" data-src="{{ maintainer.avatar_url }}&size=291" src="/img/placeholder.png">
+          <div class="card-body">
+            <h2 class="maintainer-name card-title">{{ maintainer.login }}</h2>
+            <hr>
+          </div>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>

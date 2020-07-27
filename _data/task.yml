@@ -9,8 +9,10 @@ websites:
     img: airtable.png
     tfa:
       - sms
-      - software
+      - phone
+      - totp
     doc: https://support.airtable.com/hc/en-us/articles/219409917
+    exception: "SMS must be enabled first and software 2FA can be bypassed by SMS."
 
   - name: Any.do
     url: https://web.any.do/
@@ -44,6 +46,13 @@ websites:
       - sms
     doc: https://docs.clickup.com/general/two-factor-authentication
 
+  - name: Clubhouse
+    url: https://clubhouse.io
+    img: clubhouse.png
+    tfa:
+      - totp
+    doc: https://help.clubhouse.io/hc/en-us/articles/206288915
+
   - name: fruux
     url: https://fruux.com
     img: fruux.png
@@ -53,8 +62,8 @@ websites:
     url: https://www.meistertask.com
     img: meistertask.png
     tfa:
-      - software
-    doc: https://support.meistertask.com/hc/en-us/articles/207318670
+      - totp
+    doc: https://support.mindmeister.com/hc/en-us/articles/218901367
 
   - name: Microsoft To-Do
     url: https://todo.microsoft.com/
@@ -62,14 +71,14 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
     doc: https://support.microsoft.com/en-us/help/12408/
 
   - name: Planio
     url: https://plan.io
     img: planio.png
     tfa:
-      - software
+      - totp
     doc: https://support.plan.io/news/133
 
   - name: Remember The Milk
@@ -78,6 +87,12 @@ websites:
     facebook: rememberthemilk
     img: rememberthemilk.png
     email_address: help@rememberthemilk.com
+
+  - name: Tick
+    url: https://www.tickspot.com
+    img: tickspot.png
+    twitter: tickspot
+    email_address: support@tickspot.com
 
   - name: Todoist
     url: https://todoist.com
@@ -96,7 +111,7 @@ websites:
     url: https://www.toodledo.com
     img: toodledo.png
     tfa:
-      - software
+      - totp
     doc: https://www.toodledo.com/info/help.php#168
 
   - name: Trello
@@ -104,10 +119,5 @@ websites:
     img: trello.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://help.trello.com/article/993--
-
-  - name: Wunderlist
-    url: https://www.wunderlist.com
-    twitter: Wunderlist
-    img: wunderlist.png
