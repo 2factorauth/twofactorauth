@@ -1,27 +1,29 @@
 permalink: pretty
 markdown: kramdown
-
-title: Two Factor Auth List
+title: Two Factor Auth
 author: Josh Davis
 description:
-    List of sites with Two Factor Auth support which includes SMS, email,
-    phone calls, hardware, and software.
+  List of sites with Two Factor Auth support which includes SMS, email,
+  phone calls, hardware, and software.
 url: https://twofactorauth.org
-repo: https://github.com/2factorauth/twofactorauth
-img: img/logo.png
+repository: 2factorauth/twofactorauth
+img: /img/logo.png
+env: development
 twitter: 2faorg
 social_image: https://repository-images.githubusercontent.com/17724730/63495880-b408-11e9-8cc4-03451aa4cc14
-sass:
-    style: compressed
+theme_color: "#39CCCC"
 exclude:
-    - CNAME
-    - CONTRIBUTING.md
-    - EXCLUSION.md
-    - Gemfile
-    - LICENSE
-    - README.md
-    - Rakefile
-    - verify.rb
-    - vendor
-    - websites_schema.yml
-    - api/v2/README.md
+  - CNAME
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - EXCLUSION.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - Rakefile
+  - vendor/
+  - api/v2/README.md
+  - .*
+  - node_modules/
+theme: null
