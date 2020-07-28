@@ -4,7 +4,7 @@ websites:
     img: adafruit.png
     tfa:
       - sms
-      - software
+      - totp
     doc: https://learn.adafruit.com/how-to-set-up-2-factor-authentication-on-adafruit
 
   - name: AdoramaPix
@@ -30,8 +30,9 @@ websites:
     img: amazon.png
     tfa:
       - sms
-      - software
-    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201596330
+      - phone
+      - totp
+    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
     exception: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
 
   - name: Apple
@@ -40,7 +41,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - proprietary
     doc: https://support.apple.com/en-us/HT204915
 
   - name: Arcaplanet
@@ -75,6 +76,16 @@ websites:
     twitter: Bonobos
     facebook: bonobos
 
+  - name: Boots
+    url: https://www.boots.com/
+    img: boots.png
+    twitter: BootsHelp
+    facebook: BootsUK
+    email_address: Boots.CustomerCare_Team@boots.co.uk
+    regions:
+      - gb
+      - ie
+
   - name: Boxed
     url: https://www.boxed.com
     img: boxed.png
@@ -91,7 +102,7 @@ websites:
     url: https://www.comet.it/
     img: comet.png
     twitter: gruppocomet
-    facebook: facecomet
+    facebook: comet.it
     lang: it
 
   - name: Comixology
@@ -113,7 +124,7 @@ websites:
     url: https://www.digitec.ch
     img: digitec.png
     tfa:
-      - software
+      - totp
     doc: https://www.digitec.ch/en/page/new-two-factor-authentication-for-your-user-account-6589
 
   - name: EB Games Australia
@@ -126,9 +137,8 @@ websites:
     img: ebay.png
     tfa:
       - sms
-      - software
+      - proprietary
     doc: https://community.ebay.com/t5/Announcements/eBay-launches-a-new-2-step-verification-method-to-increase/ba-p/29818464
-    exception: "Software implementation requires use of the eBay app."
 
   - name: ebay Kleinanzeigen
     url: https://www.ebay-kleinanzeigen.de
@@ -151,7 +161,7 @@ websites:
     tfa:
       - sms
       - phone
-      - software
+      - totp
     doc: https://help.etsy.com/hc/en-us/articles/115015569567
 
   - name: EVENTIM
@@ -233,6 +243,13 @@ websites:
     img: jpc.png
     lang: de
 
+  - name: Jumbo Argentina
+    url: https://www.jumbo.com.ar
+    twitter: JumboArg
+    facebook: JumboArgentina
+    img: jumboargentina.png
+    lang: es
+
   - name: Kobo
     url: https://www.kobo.com
     twitter: KoboHelp
@@ -266,13 +283,19 @@ websites:
     twitter: Massdrop
     img: massdrop.png
 
+  - name: MediaMarkt (DE)
+    url: https://www.mediamarkt.de/
+    img: mediamarkt.png
+    twitter: mediamarkt_de
+    facebook: mediamarkt
+    lang: de
+
   - name: Mercado Libre
     url: https://www.mercadolibre.com
     img: mercado-libre.png
     tfa:
       - sms
-      - software
-    doc: https://ayuda.mercadolibre.com.ar/ayuda/Consejos-para-fortalecer-la-se_961
+      - proprietary
 
   - name: Newegg
     url: https://www.newegg.com
@@ -280,7 +303,8 @@ websites:
     tfa:
       - sms
       - email
-      - software
+      - totp
+    doc: https://kb.newegg.com/knowledge-base/2-step-verification/
 
   - name: Nordstrom
     url: https://shop.nordstrom.com
@@ -316,7 +340,7 @@ websites:
     url: https://purse.io/
     img: purse.png
     tfa:
-      - software
+      - totp
     doc: https://support.purse.io/account/2-factor-authentication-2fa
 
   - name: Rakuten
@@ -337,12 +361,19 @@ websites:
       - sms
     doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
 
+  - name: Saturn
+    url: https://www.saturn.de
+    img: saturn.png
+    twitter: SaturnDE
+    facebook: SaturnDE
+    lang: de
+
   - name: Shopify
     url: https://shopify.com/
     img: shopify.png
     tfa:
       - sms
-      - software
+      - totp
       - hardware
     doc: https://help.shopify.com/manual/your-account/account-security/two-step-authentication
 
@@ -382,13 +413,20 @@ websites:
     twitter: Target
     img: target.png
 
+  - name: Thalia
+    url: https://www.thalia.de/
+    facebook: thalia.de
+    email_address: info@thalia.de
+    img: thalia.png
+    lang: de
+
   - name: Tokopedia
     url: https://www.tokopedia.com/
     img: tokopedia.png
     tfa:
       - sms
       - phone
-      - software
+      - totp
     doc: https://www.tokopedia.com/panduan-keamanan/fitur-keamanan-tambahan/
 
   - name: Trade Me

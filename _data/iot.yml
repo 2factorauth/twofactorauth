@@ -1,9 +1,29 @@
 websites:
+  - name: Arlo
+    url: https://www.arlo.com/
+    img: arlo.png
+    tfa:
+      - sms
+      - email
+      - proprietary
+    doc: https://kb.arlo.com/000062288
+    exception: "Email 2FA is always available as a backup."
+
   - name: ecobee
     url: https://ecobee.com
-    twitter: ecobee
-    facebook: ecobee
     img: ecobee.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.ecobee.com/hc/en-us/articles/360040957212
+
+  - name: IFTTT
+    url: https://ifttt.com
+    img: ifttt.png
+    tfa:
+      - sms
+      - totp
+    doc: https://help.ifttt.com/hc/en-us/articles/115010193007
 
   - name: Nest
     url: https://nest.com
@@ -36,7 +56,8 @@ websites:
     img: ringcom.png
     tfa:
       - sms
-    doc: https://support.ring.com/hc/en-us/articles/360024818291
+      - email
+    doc: https://support.ring.com/hc/en-us/articles/360039693891
 
   - name: Samsung SmartThings
     url: https://www.smartthings.com/
@@ -71,5 +92,7 @@ websites:
   - name: Wyze
     url: https://www.wyzecam.com
     img: wyze.png
-    twitter: WyzeCam
-    facebook: WyzeCam
+    tfa:
+      - sms
+    doc: https://support.wyzecam.com/hc/en-us/articles/360024402052
+    exception: "2FA via SMS is only available for USA and Canada."
