@@ -202,6 +202,14 @@ websites:
     twitter: RBC
     img: rbc.png
 
+  - name: River Financial
+    url: https://www.river.com
+    img: river.png
+    tfa:
+      - sms
+      - totp
+    doc: https://river.com/support/knowledge-base/articles/enable-multi-factor-authentication
+
   - name: Robinhood
     url: https://www.robinhood.com/
     img: robinhood.png
