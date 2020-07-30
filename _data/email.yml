@@ -1,5 +1,19 @@
 ---
 websites:
+- name: CTemplar
+  url: https://ctemplar.com/
+  img: CTemplar.png
+  bch: true
+  btc: true
+  othercrypto: true
+  twitter: realctemplar
+  facebook: ctemplarencryption
+  email_address: ruona@ctemplar.com
+  country: IS
+  city: Reykjavik
+  doc: https://get.ctemplar.help/article/64-payment-options
+  exceptions:
+    text: "No just pay to address and we will confirm"
 - name: FastMail
   url: https://www.fastmail.com/
   img: fastmail.png
