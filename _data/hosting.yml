@@ -28,14 +28,14 @@ websites:
     img: active24.png
     tfa:
       - totp
-    doc: https://faq.active24.com/cz/183996-Ov%C4%9B%C5%99en%C3%AD-p%C5%99ihl%C3%A1%C5%A1en%C3%AD---dvoufaktorov%C3%A1-autorizace-2FA?l=cs
-
-  - name: ACTIVE 24 CZ
-    url: https://www.active24.cz/
-    img: active24.png
-    tfa:
-      - totp
-    doc: https://faq.active24.com/cz/183996-Ov%C4%9B%C5%99en%C3%AD-p%C5%99ihl%C3%A1%C5%A1en%C3%AD---dvoufaktorov%C3%A1-autorizace-2FA?l=cs
+    doc: https://faq.active24.com/cz/183996-
+    regions:
+      - cz
+      - gb
+      - nl
+      - sk
+      - de
+      - es
 
   - name: ALL-INKL.COM
     url: https://all-inkl.com/
