@@ -27,6 +27,14 @@ websites:
     url: https://badoo.com
     img: badoo.png
     twitter: Badoo
+    
+  - name: Beeradvocate
+    url: https://www.beeradvocate.com/
+    img: beeradvocate.png
+    tfa:
+      - email
+      - totp
+    doc: https://www.beeradvocate.com/community/threads/how-to-secure-your-account.643532/
 
   - name: BiggerPockets
     url: https://www.biggerpockets.com
