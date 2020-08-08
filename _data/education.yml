@@ -130,6 +130,17 @@ websites:
     img: cod.png
     regions:
       - us
+      
+  - name: Colorado School of Mines
+    url: https://www.mines.edu/
+    img: coloradoschoolofmines.png
+    tfa:
+      - proprietary
+      - hardware
+      - u2f
+    doc: https://its.mines.edu/mfa/
+    regions:
+      - us
 
   - name: CompTIA
     url: https://certification.comptia.org/
