@@ -35,6 +35,13 @@ websites:
       - gb
       - us
 
+  - name: Cronometer
+    url: https://cronometer.com/
+    img: cronometer.png
+    tfa:
+      - totp
+    doc: https://cronometer.zendesk.com/hc/en-us/articles/360042096672
+
   - name: CVS Caremark
     url: https://www.caremark.com
     twitter: CVSHealth
