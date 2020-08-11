@@ -1,4 +1,4 @@
-#!/bin/ruby
+#!/usr/bin/env ruby
 # frozen_string_literal: true
 
 require 'json'
@@ -24,7 +24,7 @@ output = {
 YAML.load_file("#{data_dir}/sections.yml").each do |section|
   # Add section to each output map
   section_name = section['title']
-  output.each { |map| map[section_name] = {} }
+  output.each { |map| map[1][section_name] = {} }
 
   # Loop through all websites in section
   YAML.load_file("#{data_dir}/#{section['id']}.yml")['websites'].each do |website|
