@@ -108,7 +108,7 @@ websites:
     twitter: BancoGalicia
     facebook: bancogalicia
     lang: es
-    
+
   - name: Banco Macro
     url: https://www.macro.com.ar
     img: bancomacro.png
@@ -324,7 +324,7 @@ websites:
     tfa:
       - sms
     doc: https://www.chime.com/security-and-control/
-    
+
   - name: CIBC
     url: https://www.cibc.com
     img: cibc.png
@@ -556,6 +556,17 @@ websites:
     tfa:
       - sms
 
+  - name: Fineco Bank
+    url: https://finecobank.com/
+    img: finecobank.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://finecobank.com/it/online/sicurezza/
+    regions:
+      - it
+      - gb
+
   - name: Fio banka
     url: https://www.fio.cz
     twitter: Fio_banka
@@ -649,7 +660,7 @@ websites:
       - proprietary
       - hardware
     doc: https://www.hsbc.co.uk/help/security-centre/secure-key/secure-key-help/
-    
+
   - name: HSBC Argentina
     url: https://www.hsbc.com.ar/
     twitter: HSBC_AR
