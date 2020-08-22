@@ -23,6 +23,20 @@ websites:
       - totp
     doc: https://docs.acquia.com/acquia-cloud/access/signin/
 
+  - name: ACTIVE 24
+    url: https://www.active24.com/
+    img: active24.png
+    tfa:
+      - totp
+    doc: https://faq.active24.com/cz/183996-
+    regions:
+      - cz
+      - gb
+      - nl
+      - sk
+      - de
+      - es
+
   - name: ALL-INKL.COM
     url: https://all-inkl.com/
     img: all-inkl.png
@@ -61,7 +75,7 @@ websites:
     doc: https://help.blacknight.com/hc/en-us/articles/360001358517
     regions:
       - ie
-      - uk
+      - gb
 
   - name: Bluehost
     url: https://www.bluehost.com/
@@ -250,7 +264,7 @@ websites:
       - totp
     doc: https://www.icuk.net/reseller/security.asp
     regions:
-      - uk
+      - gb
 
   - name: Infomaniak
     url: https://www.infomaniak.com/
@@ -380,9 +394,10 @@ websites:
 
   - name: Netlify
     url: https://www.netlify.com
-    twitter: Netlify
-    facebook: netlify
     img: netlify.png
+    tfa:
+      - totp
+    doc: https://docs.netlify.com/accounts-and-billing/user-settings/#two-factor-authentication-2fa
 
   - name: Nitrado
     url: https://server.nitrado.net/
@@ -542,7 +557,7 @@ websites:
       - hardware
     doc: https://github.com/2factorauth/twofactorauth/pull/997#issuecomment-77708501
     regions:
-      - uk
+      - gb
 
   - name: Ukraine
     url: https://www.ukraine.com.ua/
@@ -613,12 +628,10 @@ websites:
 
   - name: Wix
     url: https://www.wix.com/
-    twitter: WixHelp
-    facebook: wix
     img: wix.png
     tfa:
       - sms
-    doc: https://support.wix.com/en/article/using-2-step-verification-for-your-wix-accounts
+    doc: https://support.wix.com/en/article/using-2-step-verification-for-your-wix-account
 
   - name: World4You
     url: https://www.world4you.com

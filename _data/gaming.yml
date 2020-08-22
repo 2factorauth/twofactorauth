@@ -146,7 +146,6 @@ websites:
     img: gree.png
     tfa:
       - totp
-    doc: "/notes/gree/"
 
   - name: Guild Wars 2
     url: https://www.guildwars2.com
@@ -155,6 +154,13 @@ websites:
       - sms
       - totp
     doc: https://help.guildwars2.com/hc/en-us/articles/230672927
+
+  - name: Hi-Rez Studios
+    url: https://www.hirezstudios.com/
+    img: hirez.png
+    tfa:
+      - email
+      - sms
 
   - name: Humble Bundle
     url: https://www.humblebundle.com/
@@ -284,6 +290,19 @@ websites:
     tfa:
       - totp
     doc: https://scryfall.com/docs/privacy#scryfall-accounts
+    
+  - name: Shadow
+    url: https://shadow.tech/
+    img: shadow.png
+    twitter: Shadow_Official
+    facebook: ShadowNorthAmerica
+
+  - name: Speedrun.com
+    url: https://www.speedrun.com/
+    img: speedruncom.png
+    tfa:
+      - email
+    doc: https://www.speedrun.com/the_site/thread/g7osi/1
 
   - name: Square Enix
     url: https://na.square-enix.com/

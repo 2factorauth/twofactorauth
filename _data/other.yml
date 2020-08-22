@@ -73,6 +73,13 @@ websites:
     doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
     exception: "2FA only available for Australian customers."
     
+  - name: CharlieHR
+    url: https://charliehr.com/
+    img: charliehr.png
+    tfa:
+      - totp
+    doc: https://intercom.help/charliehr/en/articles/1037152
+
   - name: Chartbeat
     url: https://chartbeat.com/
     img: chartbeat.png
@@ -214,6 +221,16 @@ websites:
       - email
     doc: https://www.freelancer.com/support/general/2-step-verification
 
+  - name: GLS-ONE
+    url: https://www.gls-one.de/
+    twitter: GLS_Germany
+    facebook: GLSGermany
+    email_address: mail@gls-one.de
+    img: gls-one.png
+    lang: de
+    regions:
+       - de
+
   - name: GoFundMe
     url: https://www.gofundme.com/
     img: gofundme.png
@@ -222,6 +239,15 @@ websites:
       - phone
     doc: https://support.gofundme.com/hc/en-us/articles/360001980947
     exception: "2FA only for North American customers that create Personal campaigns."
+
+  - name: Golem
+    url: https://www.golem.de/
+    img: golem.png
+    twitter: golem
+    facebook: golem
+    lang: de
+    regions:
+      - de
 
   - name: Grammarly
     url: https://grammarly.com/
@@ -512,6 +538,12 @@ websites:
       - totp
     doc: https://help.ubnt.com/hc/en-us/articles/115012986607
 
+  - name: UK Postbox
+    url: https://www.ukpostbox.com
+    img: ukpostbox.png
+    tfa:
+      - email
+
   - name: Ulule
     url: https://www.ulule.com/
     twitter: ulule
@@ -538,6 +570,12 @@ websites:
     tfa:
       - totp
     doc: https://support.usabilla.com/hc/en-us/articles/115003081611
+    
+  - name: Vivaldi
+    url: https://vivaldi.com/
+    img: vivaldi.png
+    facebook: vivaldi.browser
+    twitter: vivaldibrowser
 
   - name: WageWorks
     url: https://www.wageworks.com
