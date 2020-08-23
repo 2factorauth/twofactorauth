@@ -256,11 +256,11 @@ websites:
     doc: https://www.playstation.com/en-us/account-security/2-step-verification/
     
   - name: Pokefarm Q
-   url: https://pokefarm.com
-   img: pfq.png
-   tfa:
-     - totp
-   doc: https://pokefarm.com/forum/thread/276850/Two-Factor-Authentication
+    url: https://pokefarm.com
+    img: pfq.png
+    tfa:
+      - totp
+    doc: https://pokefarm.com/forum/thread/276850/Two-Factor-Authentication
 
   - name: Roberts Space Industries
     url: https://robertsspaceindustries.com/
