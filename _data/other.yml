@@ -424,7 +424,6 @@ websites:
       - totp
       - u2f
     doc: https://support.office.com/en-US/article/Set-up-multi-factor-authentication-for-Office-365-8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-    exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above."
 
   - name: Onshape
     url: https://www.onshape.com/

@@ -155,7 +155,6 @@ websites:
       - totp
       - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
-    exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above."
 
   - name: PCloud
     url: https://www.pcloud.com
