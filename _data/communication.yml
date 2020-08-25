@@ -283,12 +283,12 @@ websites:
     img: skype.png
     tfa:
       - sms
+      - email
       - proprietary
       - totp
       - u2f
-      - phone
     doc: https://support.microsoft.com/en-us/help/12408/
-    exception: "Must be associated with a Microsoft Account. U2F authentication only available on Edge browser."
+    exception: "Must be associated with a Microsoft Account."
 
   - name: Slack
     url: https://slack.com/
