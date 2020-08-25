@@ -132,10 +132,12 @@ websites:
     img: outlook.png
     tfa:
       - sms
+      - email
+      - proprietary
       - totp
-      - hardware
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
-    exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
+    exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above."
 
   - name: Pobox
     url: https://www.pobox.com/
