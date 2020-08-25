@@ -613,12 +613,15 @@ websites:
       - totp
     doc: https://blog.uptimerobot.com/introducing-two-factor-authentication-2fa/
 
-  - name: Visual Studio Online
+  - name: Visual Studio Codespaces
     url: https://www.visualstudio.com/
     img: visualstudio.png
     tfa:
       - sms
+      - email
+      - proprietary
       - totp
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
 
   - name: Zapier
