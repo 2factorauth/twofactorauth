@@ -245,7 +245,7 @@ websites:
     tfa:
       - sms
       - totp
-      - hardware
+      - u2f
     doc: https://help.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication
     exception: "Hardware tokens must have a backup method, either SMS or software token."
 
