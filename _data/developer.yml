@@ -83,7 +83,7 @@ websites:
     img: bitbucket.png
     tfa:
       - totp
-      - hardware
+      - u2f
     doc: https://confluence.atlassian.com/x/425QLg
 
   - name: Buddy
