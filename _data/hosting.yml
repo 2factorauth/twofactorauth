@@ -23,6 +23,20 @@ websites:
       - totp
     doc: https://docs.acquia.com/acquia-cloud/access/signin/
 
+  - name: ACTIVE 24
+    url: https://www.active24.com/
+    img: active24.png
+    tfa:
+      - totp
+    doc: https://faq.active24.com/cz/183996-
+    regions:
+      - cz
+      - gb
+      - nl
+      - sk
+      - de
+      - es
+
   - name: ALL-INKL.COM
     url: https://all-inkl.com/
     img: all-inkl.png
@@ -398,7 +412,7 @@ websites:
     img: noez.png
     tfa:
       - totp
-    doc: https://noez.de/de/faq/?r=199
+    doc: https://noez.de/en/faq/post/199/
     regions:
       - de
 
@@ -411,6 +425,16 @@ websites:
     exception: "Only available for the main client area. Hosting panels not supported."
     regions:
       - se
+      
+  - name: OMGServ
+    url: https://www.omgserv.com
+    img: omgserv.png
+    tfa:
+      - totp
+    doc: https://www.omgserv.com/fr/faq-site/comment_activer_la_double_authentification-103/
+    regions:
+      - fr
+    
 
   - name: One.com
     url: https://www.one.com/

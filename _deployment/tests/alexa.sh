@@ -2,7 +2,7 @@
 
 # Check Alexa rank
 check_rank () {
-  urls="$(git log -p origin/master..HEAD ../../_data | grep "^+[[:space:]]*url: " | cut -c11-)"
+  urls="$(git diff origin/master...HEAD ../../_data | grep "^+[[:space:]]*url:" | cut -c11-)"
 
   if [ -z "$urls" ]; then
     echo "No URLs found."
