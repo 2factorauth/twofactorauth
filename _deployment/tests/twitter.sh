@@ -2,7 +2,7 @@
 
 # Check Twitter handle
 check_twitter () {
-	handles="$(git log -p origin/master..HEAD ../../_data | grep ^+[[:space:]] | grep twitter | cut -c15-)"
+  handles="$(git diff origin/master...HEAD ../../_data | grep "^+[[:space:]]*twitter:" | cut -c15-)"
 
   if [ -z "$handles" ]; then
     echo "No Twitter handles found."

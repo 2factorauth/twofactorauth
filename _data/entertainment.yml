@@ -36,6 +36,8 @@ websites:
     facebook: filmweb
     img: filmweb.png
     lang: pl
+    regions:
+      - pl
 
   - name: Floatplane
     url: https://www.floatplane.com/
@@ -59,12 +61,18 @@ websites:
     twitter: hotstar_helps
     facebook: hotstar
     img: hotstar.png
+    regions:
+      - in
+      - ca
+      - us
 
   - name: Hulu
     url: https://www.hulu.com/
     twitter: hulu_support
     facebook: hulu
     img: hulu.png
+    regions:
+      - us
 
   - name: IBM Watson Media (Ustream)
     url: https://video.ibm.com
@@ -85,13 +93,6 @@ websites:
     facebook: lastfm
     img: lastfm.png
 
-  - name: Mixer
-    url: https://mixer.com/
-    img: mixer.png
-    tfa:
-      - totp
-    doc: https://watchbeam.zendesk.com/hc/en-us/articles/115000997646
-
   - name: Netflix
     url: https://www.netflix.com/us/
     twitter: Netflixhelps
@@ -110,6 +111,8 @@ websites:
     img: pandora.png
     twitter: PandoraSupport
     facebook: pandora
+    regions:
+    - us
 
   - name: Picarto.TV
     url: https://picarto.tv/

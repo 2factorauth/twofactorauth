@@ -16,11 +16,18 @@ layout: default
 
 <div class="row justify-content-start category-row">
   {% assign rowcount = 0 %}
+  {% assign tailcount = site.data.sections.size | modulo: 5 %}
   {% for section in site.data.sections %}
     {% assign rowend = forloop.index | modulo: 5 %}
     {% if rowend == 0 or forloop.index == forloop.length %}
 
       {% include category-button.html %}
+
+      {% if forloop.index == forloop.length and tailcount != 0 %}
+        {% for c in (tailcount..4) %}
+          <div class="col"></div>
+        {% endfor %}
+      {% endif %}
 
       {% include mobile-table.html id-param=section.id title-param=section.title %}
       {% assign offcount = 5 | times: rowcount %}
@@ -40,8 +47,5 @@ layout: default
 
     {% endif %}
   {% endfor %}
-  <div class="col"></div>
-  <div class="col"></div>
-  <div class="col"></div>
 </div>
 <h2 id="no-results">No results found.</h2>
