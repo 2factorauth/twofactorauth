@@ -223,6 +223,13 @@ websites:
       - hardware
     doc: https://www.emailcenteruk.com/maxemail/platform-security-collaboration/
 
+  - name: Missive App
+    url: https://missiveapp.com/
+    img: missiveapp.png
+    tfa:
+      - totp
+    doc: https://missiveapp.com/faq/enable-2-factor-authentication
+
   - name: Nulab
     url: https://nulab.com/
     img: nulab.png
