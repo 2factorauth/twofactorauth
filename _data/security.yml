@@ -260,3 +260,9 @@ websites:
     tfa:
       - totp
     doc: https://docs.webroot.com/us/en/home/wsa_website_userguide/wsa_managementwebsite_userguide.htm#GettingStarted/Enabling2-FactorAuthentication.htm
+
+  - name: Breachlock
+    url: https://www.breachlock.com
+    img: breachlock.png
+    tfa:
+      - totp
