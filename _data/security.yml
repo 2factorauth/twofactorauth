@@ -41,6 +41,12 @@ websites:
       - hardware
     doc: https://www.boxcryptor.com/help/boxcryptor-account/#two-factor-authentication
 
+  - name: Breachlock
+    url: https://www.breachlock.com
+    img: breachlock.png
+    tfa:
+      - totp
+
   - name: bugcrowd
     url: https://bugcrowd.com
     img: bugcrowd.png
@@ -260,9 +266,3 @@ websites:
     tfa:
       - totp
     doc: https://docs.webroot.com/us/en/home/wsa_website_userguide/wsa_managementwebsite_userguide.htm#GettingStarted/Enabling2-FactorAuthentication.htm
-
-  - name: Breachlock
-    url: https://www.breachlock.com
-    img: breachlock.png
-    tfa:
-      - totp
