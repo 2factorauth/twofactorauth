@@ -197,7 +197,7 @@ websites:
     img: gandi.png
     tfa:
       - totp
-      - hardware
+      - u2f
     doc: https://docs.gandi.net/en/account_management/security/
 
   - name: GoDaddy

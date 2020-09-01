@@ -512,6 +512,13 @@ websites:
     regions:
       - de
 
+  - name: Credit Suisse
+    url: https://www.credit-suisse.com/
+    img: credit-suisse.png
+    tfa:
+      - proprietary
+    doc: https://www.credit-suisse.com/ch/en/private-clients/account-cards/services/faq-securesign-login.html
+
   - name: Credit Union Australia
     url: https://www.cua.com.au/
     img: cua.png
@@ -519,6 +526,26 @@ websites:
     facebook: CUA
     regions:
       - au
+
+  - name: Danske Bank (Denmark)
+    url: https://danskebank.dk/
+    img: danskebank.png
+    tfa:
+    - hardware
+    - proprietary
+    doc: https://www.nemid.nu/dk-en/get_started/
+    regions:
+    - dk
+
+  - name: Danske Bank (Sweden)
+    url: https://danskebank.se/
+    img: danskebank.png
+    tfa:
+    - hardware
+    - proprietary
+    doc: https://danskebank.se/privat/digitala-tjanster/ovriga-tjanster/bankid
+    regions:
+    - se
 
   - name: DBS Bank Singapore
     url: https://www.dbs.com.sg/
@@ -676,6 +703,17 @@ websites:
     regions:
       - us
 
+  - name: Fineco Bank
+    url: https://finecobank.com/
+    img: finecobank.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://finecobank.com/it/online/sicurezza/
+    regions:
+      - it
+      - gb
+
   - name: Fio banka
     url: https://www.fio.cz
     twitter: Fio_banka
@@ -776,6 +814,15 @@ websites:
     regions:
       - de
 
+  - name: Hello bank! France
+    url: https://www.hellobank.fr/
+    img: hellobank_fr.png
+    twitter: Hellobank_fr
+    facebook: HelloBankFr
+    lang: fr
+    regions:
+      - fr
+
   - name: Holvi
     url: https://www.holvi.com/
     img: holvi.png
@@ -837,6 +884,16 @@ websites:
     img: iberiabank.png
     regions:
       - us
+
+  - name: ICA Banken
+    url: https://www.icabanken.se/
+    img: icabanken.png
+    tfa:
+      - hardware
+      - proprietary
+    doc: https://www.icabanken.se/kundservice/hjalp-med-att-logga-in/
+    regions:
+      - se
 
   - name: ICBC Argentina
     url: https://www.icbc.com.ar
@@ -933,6 +990,15 @@ websites:
     tfa:
       - proprietary
     doc: https://www.lmcu.org/personal/banking/services/mobile-authenticator/
+    regions:
+      - fr
+
+  - name: Le Crédit Lyonnais (LCL)
+    url: https://www.lcl.fr/
+    img: lcl.png
+    twitter: LCL
+    facebook: LCL
+    lang: fr
     regions:
       - fr
 
@@ -1645,6 +1711,14 @@ websites:
     regions:
       - it
 
+  - name: UBS
+    url: https://www.ubs.com/
+    img: ubs.png
+    tfa:
+      - hardware
+      - proprietary
+    doc: https://www.ubs.com/ch/en/help/e-banking/process.html
+
   - name: Umpqua Bank
     url: https://www.umpquabank.com/
     img: umpqua.png
@@ -1703,6 +1777,18 @@ websites:
     doc: https://www.uwcu.org/OnlineBanking/OnlineSecurity/VerifyU.aspx
     regions:
       - us
+
+  - name: Volksbanken Raiffeisenbanken
+    url: https://www.vr.de/
+    img: vr.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://www.vr.de/privatkunden/unsere-produkte/was-ist-ein-girokonto/online-banking.html
+    exception: "Support for 2FA types depends on regional V&amp;R banks."
+    regions:
+      - de
 
   - name: VyStar Credit Union
     url: https://vystarcu.org/

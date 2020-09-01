@@ -73,6 +73,13 @@ websites:
     doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
     exception: "2FA only available for Australian customers."
     
+  - name: CharlieHR
+    url: https://charliehr.com/
+    img: charliehr.png
+    tfa:
+      - totp
+    doc: https://intercom.help/charliehr/en/articles/1037152
+
   - name: Chartbeat
     url: https://chartbeat.com/
     img: chartbeat.png
@@ -167,6 +174,12 @@ websites:
     img: extremenetworks.png
     twitter: ExtremeNetworks
     facebook: extremenetworks
+    
+  - name: FANDOM
+    url: https://www.fandom.com/
+    twitter: getFANDOM
+    facebook: getFANDOM
+    img: fandom.png
 
   - name: Figma
     url: https://www.figma.com/
@@ -214,6 +227,16 @@ websites:
       - email
     doc: https://www.freelancer.com/support/general/2-step-verification
 
+  - name: GLS-ONE
+    url: https://www.gls-one.de/
+    twitter: GLS_Germany
+    facebook: GLSGermany
+    email_address: mail@gls-one.de
+    img: gls-one.png
+    lang: de
+    regions:
+       - de
+
   - name: GoFundMe
     url: https://www.gofundme.com/
     img: gofundme.png
@@ -222,6 +245,15 @@ websites:
       - phone
     doc: https://support.gofundme.com/hc/en-us/articles/360001980947
     exception: "2FA only for North American customers that create Personal campaigns."
+
+  - name: Golem
+    url: https://www.golem.de/
+    img: golem.png
+    twitter: golem
+    facebook: golem
+    lang: de
+    regions:
+      - de
 
   - name: Grammarly
     url: https://grammarly.com/
@@ -393,10 +425,11 @@ websites:
     tfa:
       - sms
       - phone
+      - email
+      - proprietary
       - totp
-      - hardware
+      - u2f
     doc: https://support.office.com/en-US/article/Set-up-multi-factor-authentication-for-Office-365-8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-    exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
 
   - name: Onshape
     url: https://www.onshape.com/
@@ -512,6 +545,12 @@ websites:
       - totp
     doc: https://help.ubnt.com/hc/en-us/articles/115012986607
 
+  - name: UK Postbox
+    url: https://www.ukpostbox.com
+    img: ukpostbox.png
+    tfa:
+      - email
+
   - name: Ulule
     url: https://www.ulule.com/
     twitter: ulule
@@ -530,6 +569,7 @@ websites:
     tfa:
       - sms
       - email
+      - totp
     doc: https://support.upwork.com/hc/en-us/articles/360009491414
 
   - name: Usabilla
@@ -570,11 +610,6 @@ websites:
       - totp
       - hardware
     doc: https://doc.weclapp.com/knowledgebase/zwei-wege-authentifizierung-2fa/
-
-  - name: Wikia
-    url: https://www.wikia.com/
-    twitter: wikia
-    img: wikia.png
 
   - name: Wikipedia
     url: https://www.wikipedia.org/

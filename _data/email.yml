@@ -45,6 +45,14 @@ websites:
       - totp
     doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
 
+  - name: HEY
+    url: https://hey.com/
+    img: hey.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://hey.com/security/
+
   - name: Hushmail
     url: https://www.hushmail.com
     img: hushmail.png
@@ -124,10 +132,11 @@ websites:
     img: outlook.png
     tfa:
       - sms
+      - email
+      - proprietary
       - totp
-      - hardware
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
-    exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
 
   - name: Pobox
     url: https://www.pobox.com/

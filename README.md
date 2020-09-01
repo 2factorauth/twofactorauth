@@ -68,9 +68,6 @@ Ubuntu/WSL/MacOS:
 # Generating regional sites (Optional)
 ruby ./_deployment/regions.rb
 
-# Minify JS (Optional)
-./_deployment/minify-js.sh
-
 # Generate WebP images
 ./_deployment/webp.sh
 
@@ -79,6 +76,9 @@ bundle exec jekyll build
 
 # Running the site locally
 bundle exec jekyll serve --watch
+
+# Minify JS (Optional)
+./_deployment/minify-js.sh
 ```
 
 The TwoFactorAuth website should now be accessible from `http://localhost:4000`.
