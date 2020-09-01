@@ -209,6 +209,14 @@ websites:
       - totp
     doc: https://docs.sophos.com/central/Customer/help/en-us/central/Customer/concepts/ep_MultiFactorAuthentication.html
 
+- name: SecPoint Penetrator
+    url: https://www.secpoint.com
+    img: secpoint.png
+    tfa:
+      - email
+      - totp
+    doc: https://support.secpoint.com/hc/en-us/articles/360004167694-Google-Authenticator-2FA-Penetrator
+
   - name: SSLTrust
     url: https://www.ssltrust.com.au/
     img: ssltrust.png
