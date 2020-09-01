@@ -742,7 +742,7 @@ websites:
       - hardware
     doc: https://www1.firstdirect.com/help/secure-key/
     regions:
-      - us
+      - gb
 
   - name: First Republic Bank
     url: https://www.firstrepublic.com/
@@ -751,7 +751,7 @@ websites:
       - sms
       - phone
       - email
-    doc: https://www.firstrepublic.com/resource/banking-online-faqs#su10
+    doc: https://www.firstrepublic.com/resource/entering-a-6-digit-code-at-every-sign-in
     regions:
       - us
 
@@ -780,7 +780,7 @@ websites:
     tfa:
       - sms
       - hardware
-    doc: https://www.gls.de/privatkunden/faq/allgemeines-finanz-glossar/was-ist-zwei-faktor-authentifizierung-1/
+    doc: https://www.gls.de/privatkunden/faq/onlinebanking-sicherheit/was-ist-die-zwei-faktor-authentifizierung-2fa/
     regions:
       - de
 
@@ -795,7 +795,7 @@ websites:
     regions:
       - gb
 
-  - name: Handelsbanken
+  - name: Handelsbanken Sverige
     url: https://www.handelsbanken.se/
     img: handelsbanken.png
     tfa:
@@ -839,8 +839,8 @@ websites:
       - it
       - gb
 
-  - name: HSBC
-    url: https://www.hsbc.com/
+  - name: HSBC UK
+    url: https://www.hsbc.co.uk/
     img: hsbc.png
     tfa:
       - proprietary
@@ -877,10 +877,10 @@ websites:
     regions:
       - de
 
-  - name: IberiaBank
+  - name: IBERIABANK
     url: https://www.iberiabank.com
     twitter: IBERIABANK
-    facebook: IberiaBank
+    facebook: IBERIABANK
     img: iberiabank.png
     regions:
       - us
@@ -911,7 +911,7 @@ websites:
       - sms
     doc: https://www.icicibank.com/online-safe-banking/otp.page
     regions:
-      - us
+      - in
 
   - name: ING (Luxembourg)
     url: https://www.ing.lu
@@ -991,7 +991,7 @@ websites:
       - proprietary
     doc: https://www.lmcu.org/personal/banking/services/mobile-authenticator/
     regions:
-      - fr
+      - us
 
   - name: Le Crédit Lyonnais (LCL)
     url: https://www.lcl.fr/
@@ -1007,7 +1007,7 @@ websites:
     img: lendingclub.png
     tfa:
       - email
-    doc: https://help.lendingclub.com/hc/en-us/articles/360023227211
+    doc: https://help.lendingclub.com/hc/en-us/articles/215562677#h_95bff530-80b8-43ec-9ae1-ffae87e563f5
     regions:
       - us
 
@@ -1091,6 +1091,7 @@ websites:
     img: monzobank.png
     regions:
       - gb
+      - us
 
   - name: Mountain America Credit Union
     url: https://www.macu.com
@@ -1231,6 +1232,9 @@ websites:
     doc: https://www.openbank.es/en/security
     regions:
       - es
+      - de
+      - nl
+      - pt
 
   - name: Optum Bank
     url: https://www.optumbank.com
@@ -1347,7 +1351,7 @@ websites:
     facebook: rbc
     img: rbc.png
     regions:
-      - gb
+      - ca
 
   - name: Regions Bank
     url: https://www.regions.com
@@ -1813,7 +1817,7 @@ websites:
 
   - name: Wescom Credit Union
     url: https://www.wescom.org/
-    twitter: Liz_Wescom
+    twitter: _wescom
     facebook: WescomCreditUnion
     img: wescom.png
     regions:
@@ -1825,7 +1829,7 @@ websites:
     facebook: westminstersavings
     img: wscu.png
     regions:
-      - us
+      - ca
 
   - name: Widiba
     url: https://www.widiba.it
