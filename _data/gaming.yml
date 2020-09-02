@@ -84,6 +84,13 @@ websites:
       - totp
     doc: https://www.epicgames.com/help/en-US/c74/c112/a3218
 
+  - name: ESL
+    url: https://www.eslgaming.com
+    img: esl.png
+    tfa:
+      - totp
+      - u2f
+
   - name: EVE Online
     url: https://www.eveonline.com/
     img: eveonline.png
@@ -297,7 +304,7 @@ websites:
     tfa:
       - totp
     doc: https://scryfall.com/docs/privacy#scryfall-accounts
-    
+
   - name: Shadow
     url: https://shadow.tech/
     img: shadow.png
