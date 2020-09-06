@@ -9,7 +9,7 @@ check_twitter () {
     exit 0
   fi
 
-  gem i twitter --no-post-install-message --no-suggestions --minimal-deps --no-verbose -N -q
+  gem i twitter --no-post-install-message --no-suggestions --minimal-deps --no-verbose -N -q --silent
 
   # Loop through all Twitter handles
   echo "${handles}" | while IFS= read -r handle; do
