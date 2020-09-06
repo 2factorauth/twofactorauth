@@ -17,10 +17,10 @@ check_twitter () {
     twitter="$(ruby twitter.rb ${handle})"
 
     if [ "$twitter" ]; then
-      echo "::error:: $twitter"
+      echo -e "\e[31m$twitter\e[39m"
       exit 1
     else
-      echo "Twitter handle \"${handle}\" is valid."
+      echo -e "\e[32mTwitter handle \"${handle}\" is valid.\e[39m"
     fi
 
   done

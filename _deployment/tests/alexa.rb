@@ -50,10 +50,13 @@ else
 end
 
 # rubocop:disable Layout/LineLength
-raise("\e[31m#{site} has an Alexa ranking above #{max_ranking_string}. (Currently: #{rank})\e[0m") if max_ranking < rank_i
-
-raise("\e[31m#{site} doesn't have an Alexa rank. #{max_ranking_string} or less required.\e[0m") if rank_i.zero?
-
+if max_ranking < rank_i
+  puts("\e[31m#{site} has an Alexa ranking above #{max_ranking_string}. (Currently: #{rank})\e[39m")
+	exit(1)
+elsif rank_i.zero?
+  puts("\e[31m#{site} doesn't have an Alexa rank. #{max_ranking_string} or less required.\e[39m")
+	exit(1)
+end
 # rubocop:enable Layout/LineLength
 
-puts("\e[32m#{site} has an Alexa ranking of #{rank}.\e[0m")
+puts("\e[32m#{site} has an Alexa ranking of #{rank}.\e[39m")
