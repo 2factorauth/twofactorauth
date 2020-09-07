@@ -32,6 +32,7 @@ websites:
       - proprietary
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
+    exception: "Requires setting up either the Phone or the Hardware Token first."
 
   - name: GMX.com
     url: https://www.gmx.com/
