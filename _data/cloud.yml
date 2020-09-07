@@ -7,6 +7,7 @@ websites:
       - hardware
       - u2f
     doc: https://aws.amazon.com/iam/features/mfa/
+    exception: "You can have only one MFA device (virtual, U2F security key, or hardware) assigned to a user at a time."
 
   - name: appFog
     url: https://www.ctl.io/appfog/
