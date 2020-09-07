@@ -179,6 +179,12 @@ websites:
       - u2f
     doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us
 
+  - name: Panther
+    url: https://runpanther.io
+    img: panther.png
+    tfa:
+      - totp
+
   - name: Prey
     url: https://www.preyproject.com
     img: prey.png
