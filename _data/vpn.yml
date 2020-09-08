@@ -51,6 +51,13 @@ websites:
     facebook: NordVPN
     email_address: support@nordvpn.com
 
+  - name: NordVPN Teams
+    url: https://nordvpnteams.com
+    img: nordvpn.png
+    tfa:
+      - totp
+      - sms
+
   - name: Perfect Privacy VPN
     url: https://www.perfect-privacy.com/
     img: perfectprivacyvpn.png

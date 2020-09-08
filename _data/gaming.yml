@@ -49,6 +49,12 @@ websites:
     tfa:
       - totp
 
+  - name: CDKeys
+    url: https://www.cdkeys.com/
+    img: cdkeys.png
+    twitter: cdkeyscom
+    facebook: cdkeyscom
+
   - name: Elder Scrolls Online
     url: https://www.elderscrollsonline.com/
     img: eso.png
@@ -84,6 +90,13 @@ websites:
       - totp
     doc: https://www.epicgames.com/help/en-US/c74/c112/a3218
 
+  - name: ESL
+    url: https://www.eslgaming.com
+    img: esl.png
+    tfa:
+      - totp
+      - u2f
+
   - name: EVE Online
     url: https://www.eveonline.com/
     img: eveonline.png
@@ -98,6 +111,13 @@ websites:
     tfa:
       - totp
     doc: https://support.faceit.com/hc/en-us/articles/115000254670
+
+  - name: Fanatical
+    url: https://www.fanatical.com
+    img: fanatical.png
+    tfa:
+      - totp
+    doc: https://support.fanatical.com/hc/en-us/articles/360002761397
 
   - name: Gaijin Entertainment
     url: https://gaijin.net
@@ -290,7 +310,7 @@ websites:
     tfa:
       - totp
     doc: https://scryfall.com/docs/privacy#scryfall-accounts
-    
+
   - name: Shadow
     url: https://shadow.tech/
     img: shadow.png
@@ -393,7 +413,9 @@ websites:
     tfa:
       - sms
       - email
+      - proprietary
       - totp
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
 
   - name: YoYo Games
