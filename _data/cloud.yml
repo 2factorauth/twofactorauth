@@ -7,6 +7,7 @@ websites:
       - hardware
       - u2f
     doc: https://aws.amazon.com/iam/features/mfa/
+    exception: "Limited to one software token OR one hardware token."
 
   - name: appFog
     url: https://www.ctl.io/appfog/
