@@ -235,6 +235,21 @@ websites:
       - totp
     doc: https://www.hostens.com/knowledgebase/how-to-enhance-account-security/
 
+  - name: HostingPlus LAT
+    url: https://www.hostingplus.lat
+    img: hostingplus.png
+    tfa:
+      - totp
+    doc: https://clientes.hostingplus.lat/knowledgebase/33/
+    regions:
+      - us
+      - ar
+      - cl
+      - co
+      - mx
+      - pe
+      - es
+
   - name: Hostpoint
     url: https://www.hostpoint.ch/
     img: hostpoint.png
