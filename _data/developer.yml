@@ -83,8 +83,13 @@ websites:
     img: bitbucket.png
     tfa:
       - totp
-      - hardware
+      - u2f
     doc: https://confluence.atlassian.com/x/425QLg
+
+  - name: Bitnami
+    url: https://bitnami.com
+    img: bitnami.png
+    twitter: bitnami
 
   - name: Buddy
     url: https://buddy.works
@@ -245,7 +250,7 @@ websites:
     tfa:
       - sms
       - totp
-      - hardware
+      - u2f
     doc: https://help.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication
     exception: "Hardware tokens must have a backup method, either SMS or software token."
 
@@ -366,13 +371,6 @@ websites:
     twitter: newrelic
     facebook: NewRelic
     img: newrelic.png
-
-  - name: Nexmo
-    url: https://www.nexmo.com/
-    img: nexmo.png
-    tfa:
-      - sms
-      - phone
 
   - name: npm
     url: https://www.npmjs.com/
@@ -613,13 +611,23 @@ websites:
       - totp
     doc: https://blog.uptimerobot.com/introducing-two-factor-authentication-2fa/
 
-  - name: Visual Studio Online
+  - name: Visual Studio Codespaces
     url: https://www.visualstudio.com/
     img: visualstudio.png
     tfa:
       - sms
+      - email
+      - proprietary
       - totp
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
+
+  - name: Vonage
+    url: https://developer.nexmo.com/
+    img: vonage.png
+    tfa:
+      - sms
+      - phone
 
   - name: Zapier
     url: https://zapier.com

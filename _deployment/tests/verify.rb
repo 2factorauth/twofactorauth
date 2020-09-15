@@ -45,7 +45,6 @@ def test_img(img, name, imgs)
   test_img_file(img, name)
 end
 
-# rubocop:disable Metrics/AbcSize
 # rubocop:disable Metrics/MethodLength
 def test_img_file(img, name)
   # Check image file extension and type
@@ -68,8 +67,6 @@ def test_img_file(img, name)
   end
   # rubocop:enable Style/GuardClause
 end
-
-# rubocop:enable Metrics/AbcSize
 # rubocop:enable Metrics/MethodLength
 
 # Load each section, check for errors such as invalid syntax
