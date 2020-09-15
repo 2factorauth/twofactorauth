@@ -481,6 +481,14 @@ websites:
     regions:
       - br
 
+  - name: OKEx
+    url: https://www.okex.com/
+    img: okex.png
+    tfa:
+      - totp
+      - sms
+    doc: https://www.okex.com/support/hc/en-us/articles/360000350271
+
   - name: PayKassa
     url: https://paykassa.pro/
     img: paykassa.png
