@@ -19,3 +19,11 @@ websites:
     twitter: win2dayat
     facebook: win2dayat
     lang: de
+    
+  - name: Wolf.bet
+    url: https://wolf.bet/
+    img: wolfbet.png
+    tfa:
+      - totp
+      - email
+    doc: https://wolf.bet/user/settings?tab=2fa
