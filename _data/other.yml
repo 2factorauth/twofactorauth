@@ -59,6 +59,14 @@ websites:
     twitter: bananatag
     facebook: trackemail
 
+  - name: Basic Attention Token
+    url: https://publishers.basicattentiontoken.org/
+    img: basicattentiontoken.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://support.brave.com/hc/en-us/articles/360021649491
+
   - name: CA Technologies
     url: https://www.ca.com/
     img: ca-technologies.png
