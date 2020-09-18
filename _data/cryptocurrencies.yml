@@ -537,6 +537,14 @@ websites:
     tfa:
       - totp
     doc: https://wirexapp.com/hc/articles/207160259
+    
+  - name: Wolf.bet
+    url: https://wolf.bet/
+    img: wolfbet.png
+    tfa:
+      - totp
+      - email
+    doc: https://wolf.bet/user/settings?tab=2fa
 
   - name: Xapo
     url: https://xapo.com
