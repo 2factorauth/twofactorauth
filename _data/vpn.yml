@@ -123,6 +123,5 @@ websites:
   - name: Windscribe
     url: https://windscribe.com
     img: windscribe.png
-    twitter: windscribecom
-    facebook: windscribe
-    email_address: support@windscribe.com
+    tfa:
+      - totp
