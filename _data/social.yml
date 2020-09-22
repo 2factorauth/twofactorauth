@@ -133,6 +133,7 @@ websites:
       - sms
       - totp
     doc: https://help.instagram.com/566810106808145
+    exception: "2FA activation only available through mobile app."
 
   - name: LinkedIn
     url: https://linkedin.com
