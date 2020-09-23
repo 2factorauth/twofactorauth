@@ -106,6 +106,13 @@ websites:
       - totp
       - hardware
     doc: https://dome9.com/overview/strong-2-factor-authentication
+  
+  - name: EasyDMARC
+    url: https://www.easydmarc.com
+    img: easydmarc.png
+    tfa:
+      - totp
+    doc: https://easydmarc.com/blog/two-factor-authentication/
 
   - name: Entrust
     img: entrust.png
