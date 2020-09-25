@@ -4,7 +4,7 @@ All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
 
 To add a new site, go to the [data files](_data/) and get familiar with how it
-is setup. There is a section and corresponding file for each Category. Site icons
+is set up. There is a section and corresponding file for each category. Site icons
 are stored in folders corresponding to each of those categories in their own
 [folder](img/).
 
@@ -20,7 +20,7 @@ are stored in folders corresponding to each of those categories in their own
    the file to be under 2.5 kB.
 3. **HTTPS links**: All sites that support HTTPS should also be linked with an
    HTTPS address.
-4. **Alexa top 200K**: A new site, that is not already listed, has to be within the
+4. **Alexa top 200K**: A new site that is not already listed has to be within the
    Alexa top 200,000 ranking. You can check the ranking of a site [here][alexa].
 5. **No 2FA providers**: We do not list 2FA providers, such as [Authy](https://authy.com/), [Duo](https://duo.com/) or [Google Authenticator](https://github.com/google/google-authenticator).
 6. **Be Awesome**: You need to be awesome. That is all.
@@ -139,7 +139,7 @@ The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
 If a site does provide TFA, it is strongly recommended that you add the `doc:`
 field where public documentation is available. Other fields should be included
 if the website supports them. Any services that are not supported can be excluded.
-Sites supporting TFA should not have a `twitter`, `facebook` or `email_address` field.
+Sites supporting TFA should not have a `twitter:`, `facebook:` or `email_address:` field.
 
 The following is an example of a website that _supports_ TFA:
 
@@ -160,8 +160,8 @@ The following is an example of a website that _supports_ TFA:
 #### Adding a site that _does not_ support TFA
 
 If a site does not provide TFA, the `twitter:` field should be included if the site uses
-Twitter. Facebook can also be included using the `facebook` field, as well as Email using
-the `email_address` field. If the website does not use the English language, the `lang:`
+Twitter. Facebook can also be included using the `facebook:` field, as well as Email using
+the `email_address:` field. If the website does not use the English language, the `lang:`
 field should also be included. The fields `tfa:` and `doc:` can be completely removed.
 
 The following is an example of a website that _does not_ support TFA:

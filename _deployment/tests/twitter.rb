@@ -29,7 +29,7 @@ rescue Twitter::Error => e
     puts '\e[31mDisregarding Twitter checks due to too many requests.\e[39m'
     exit 0 # Soft fail if unable to access twitter api
   elsif e.class == Twitter::Error::BadRequest
-    puts '\e[31mInvalid authentication. Check Environment variables.\e[39m'
+    puts '\e[31mInvalid authentication. Check environment variables.\e[39m'
     exit 1
   else
     puts e.backtrace

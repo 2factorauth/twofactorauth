@@ -22,7 +22,7 @@ check_rank () {
     # Get exit code from the ruby script
     status=$?
 
-    # Echo ruby script output & exit with it's status code
+    # Echo ruby script output & exit with its status code
     return $status
   done
 }
