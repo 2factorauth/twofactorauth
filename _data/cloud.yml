@@ -21,6 +21,13 @@ websites:
     doc: https://kb.cloud.it/computing/uso-e-tecnologie/accesso-al-pannello-di-controllo-con-otp.aspx
     exception: "Only the control panel supports 2FA (the main client area does not)."
 
+  - name: Autotask PSA
+    url: https://www.datto.com/business-management/autotask-psa
+    img: autotask.png
+    tfa:
+      - totp
+    doc: https://help.aem.autotask.net/en/Content/2SETUP/Users/TwoFactorAuthentication.htm
+
   - name: Brightbox
     url: https://www.brightbox.com/
     img: brightbox.png
