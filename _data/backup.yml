@@ -16,6 +16,14 @@ websites:
       - totp
     doc: https://help.backblaze.com/hc/en-us/articles/217666588
 
+  - name: Backupify
+    url: https://www.backupify.com/
+    img: backupify.png
+    tfa:
+      - totp
+    doc: https://www.backupify.com/blog/backupify-2-factor-authentication
+    exception: "A mobile phone is required for 2FA set-up."
+
   - name: Box
     url: https://www.box.com/
     img: box.png
