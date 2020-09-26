@@ -145,6 +145,14 @@ websites:
     img: crowdflower.png
     twitter: CrowdFlower
 
+  - name: Datto
+    url: https://www.datto.com
+    img: datto.png
+    tfa:
+      - totp
+      - proprietary
+    doc: https://kb.datto.com/hc/en-us/articles/360021169311
+
   - name: Delighted
     url: https://delightedapp.com/
     img: delighted.png
