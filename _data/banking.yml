@@ -469,6 +469,16 @@ websites:
       - proprietary
     doc: https://www.desjardins.com/securite/validation-2-etapes/
 
+  - name: Deutsche Apotheker- und &Auml;rztebank
+    url: https://www.apobank.de/
+    img: apobank.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.apobank.de/footer/tan-app.html
+    regions:
+      - de
+
   - name: Deutsche Bank
     url: https://www.deutsche-bank.de/
     img: deutschebank.png
