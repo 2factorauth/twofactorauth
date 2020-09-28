@@ -132,14 +132,14 @@ websites:
     doc: <link to site TFA documentation>
 ```
 
-The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
+The fields `name`, `url`, `img`, `tfa` are required for all entries.
 
 #### Adding a site that _supports_ TFA
 
-If a site does provide TFA, it is strongly recommended that you add the `doc:`
+If a site does provide TFA, it is strongly recommended that you add the `doc`
 field where public documentation is available. Other fields should be included
 if the website supports them. Any services that are not supported can be excluded.
-Sites supporting TFA must not have a `twitter:`, `facebook:` or `email_address:` field.
+Sites supporting TFA must not have a `twitter`, `facebook` or `email_address` field.
 
 The following is an example of a website that _supports_ TFA:
 
@@ -159,10 +159,10 @@ The following is an example of a website that _supports_ TFA:
 
 #### Adding a site that _does not_ support TFA
 
-If a site does not provide TFA, the `twitter:` field should be included if the site uses
-Twitter. Facebook can also be included using the `facebook:` field, as well as Email using
-the `email_address:` field. If the website does not use the English language, the `lang:`
-field should also be included. The fields `tfa:` and `doc:` can be completely removed.
+If a site does not provide TFA, the `twitter` field should be included if the site uses
+Twitter. Facebook can also be included using the `facebook` field, as well as Email using
+the `email_address` field. If the website does not use the English language, the `lang`
+field should also be included. The fields `tfa` and `doc` can be completely removed.
 
 The following is an example of a website that _does not_ support TFA:
 
@@ -176,7 +176,7 @@ The following is an example of a website that _does not_ support TFA:
       lang: <ISO 639-1 language code> (Only for non-English websites)
 ```
 
-The `lang:` field is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
+The `lang` field is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
 
 ### Exceptions & Restrictions
 
