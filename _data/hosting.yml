@@ -1,4 +1,11 @@
 websites:
+  - name: 20i
+    url: https://www.20i.com
+    img: 20i.png
+    tfa:
+      - totp
+    doc: https://www.20i.com/support/my-services/two-factor-authentication-my20i
+
   - name: 34SP.com
     url: https://www.34SP.com
     img: 34sp.png
@@ -425,7 +432,7 @@ websites:
     exception: "Only available for the main client area. Hosting panels not supported."
     regions:
       - se
-      
+
   - name: OMGServ
     url: https://www.omgserv.com
     img: omgserv.png
@@ -434,7 +441,7 @@ websites:
     doc: https://www.omgserv.com/fr/faq-site/comment_activer_la_double_authentification-103/
     regions:
       - fr
-    
+
 
   - name: One.com
     url: https://www.one.com/
