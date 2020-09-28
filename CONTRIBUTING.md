@@ -205,13 +205,6 @@ website.
 - If a site supports TFA, their Twitter and Facebook handles as well as their email address
   are not needed and can be left out for cleanliness.
 
-- If a site does not have TFA but there is documentation that they are adding
-  it, then use:
-
-  ```YAML
-  status: <url to documentation>
-  ```
-
 ## A Note on Definitions
 
 A lot of people have different ideas of what constitutes Two Factor Auth and
