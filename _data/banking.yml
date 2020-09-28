@@ -1,4 +1,14 @@
 websites:
+  - name: 1822direkt
+    url: https://www.1822direkt.de/
+    img: 1822direkt.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.1822direkt.de/service/sicherheitsportal/allgemeines-psd2/starke-kundenauthentifizierung/
+    regions:
+      - de
+
   - name: Actors Federal Credit Union
     url: https://www.actorsfcu.com/
     twitter: ActorsFCU
