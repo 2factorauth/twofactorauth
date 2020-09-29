@@ -2,6 +2,15 @@ websites:
   - name: Adirondack Insurance Exchange
     url: https://www.aie-ny.com/
     img: adirondackinsurnaceexchange.png
+    email_address: service@ngic.com
+
+  - name: Admiral (UK)
+    url: https://www.admiral.com
+    twitter: AdmiralUK
+    facebook: admiralUK
+    img: admiral.png
+    regions:
+      - gb
 
   - name: ADP
     url: https://www.adp.com
@@ -81,7 +90,13 @@ websites:
     facebook: SAPConcur
     img: concur.png
 
-  - name: Credit Karma
+  - name: Credit Karma (UK), formerly Noddle
+    url: https://www.creditkarma.co.uk
+    img: creditkarma.png
+    twitter: useyournoddle
+    facebook: noddleuk
+
+  - name: Credit Karma (US)
     url: https://www.creditkarma.com
     img: creditkarma.png
     tfa:
@@ -101,6 +116,12 @@ websites:
     facebook: ditech
     img: ditech.png
 
+  - name: Equifax
+    url: https://www.equifax.com/
+    twitter: AskEquifax
+    facebook: Equifax
+    img: equifax.png
+
   - name: Exact Online
     url: https://exact.com/
     img: exact.png
@@ -114,7 +135,7 @@ websites:
     tfa:
       - sms
       - phone
-      
+
   - name: FreeAgent
     url: https://www.freeagent.com
     img: freeagent.png
@@ -169,6 +190,7 @@ websites:
     tfa:
       - email
       - totp
+      - sms
     img: hrblock.png
 
   - name: Hargreaves Lansdown
@@ -192,6 +214,12 @@ websites:
       - totp
     doc: https://ttlc.intuit.com/questions/2902682
     exception: "Software 2FA requires enabling SMS or phone call as a back-up."
+
+  - name: Invoice2go
+    url: https://invoice.2go.com/
+    img: invoice2go.png
+    twitter: Invoice2go
+    facebook: invoice2go
 
   - name: InvoiceBerry
     url: https://www.invoiceberry.com/

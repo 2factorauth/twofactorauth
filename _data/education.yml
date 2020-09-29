@@ -11,6 +11,8 @@ websites:
     email_address: aai@srce.hr
     img: aaieduhr.png
     lang: hr
+    regions:
+      - hr
 
   - name: Academic Earth
     url: https://academicearth.org/
@@ -22,6 +24,8 @@ websites:
     url: https://www.antagning.se
     img: antagning.png
     twitter: antagningse
+    regions:
+      - se
 
   - name: Babbel
     url: https://www.babbel.com
@@ -39,6 +43,8 @@ websites:
       - proprietary
       - hardware
     doc: https://www.bu.edu/tech/support/duo/
+    regions:
+      - us
 
   - name: California Institute of Technology (CalTech)
     url: https://www.caltech.edu
@@ -48,6 +54,8 @@ websites:
       - hardware
     doc: https://imss.caltech.edu/node/1408
     exception: "SMS-capable phone required for initial setup."
+    regions:
+      - us
 
   - name: Carnegie Mellon University
     url: https://www.cmu.edu/
@@ -57,6 +65,8 @@ websites:
       - hardware
       - u2f
     doc: https://www.cmu.edu/computing/services/security/identity-access/authentication/how-to/use2fa-weblogin.html
+    regions:
+      - us
 
   - name: CBT Nuggets
     url: https://www.cbtnuggets.com/
@@ -87,6 +97,8 @@ websites:
       - proprietary
       - hardware
     doc: https://2fa.app.clemson.edu/
+    regions:
+      - us
 
   - name: Clever
     url: https://clever.com
@@ -107,6 +119,8 @@ websites:
     twitter: collegeboard
     facebook: thecollegeboard
     img: collegeboard.png
+    regions:
+      - us
 
   - name: College Of DuPage
     url: https://www.cod.edu/
@@ -114,6 +128,20 @@ websites:
     facebook: collegeofdupage
     email_address: studenthelp@dupage.edu
     img: cod.png
+    regions:
+      - us
+      
+  - name: Colorado School of Mines
+    url: https://www.mines.edu/
+    img: coloradoschoolofmines.png
+    tfa:
+      - proprietary
+      - hardware
+      - u2f
+    doc: https://its.mines.edu/mfa/
+    exception: "Only available for employees"
+    regions:
+      - us
 
   - name: CompTIA
     url: https://certification.comptia.org/
@@ -131,6 +159,8 @@ websites:
       - u2f
       - phone
     doc: https://it.cornell.edu/twostep
+    regions:
+      - us
 
   - name: Coursera
     url: https://www.coursera.org/
@@ -145,6 +175,8 @@ websites:
       - proprietary
       - hardware
     doc: https://tjanster.csn.se/bas/vanligaFragor.do
+    regions:
+      - us
 
   - name: Duke University
     url: https://www.duke.edu
@@ -155,6 +187,8 @@ websites:
       - proprietary
       - hardware
     doc: https://idms-mfa.oit.duke.edu/mfa/help
+    regions:
+      - us
 
   - name: Duolingo
     url: https://www.duolingo.com
@@ -171,6 +205,8 @@ websites:
       - phone
       - totp
     doc: https://ecu.teamdynamix.com/TDClient/1409/Portal/Requests/ServiceDet?ID=31556
+    regions:
+      - us
 
   - name: Eastern Michigan University
     url: https://www.emich.edu
@@ -180,6 +216,8 @@ websites:
       - hardware
     doc: https://www.emich.edu/it/security/esp/duo.php
     exception: "Available for employees"
+    regions:
+      - us
 
   - name: EC-Council
     url: https://www.eccouncil.org
@@ -194,6 +232,12 @@ websites:
     twitter: edmodo
     facebook: edmodo
     img: edmodo.png
+
+  - name: Eduonix
+    url: https://www.eduonix.com
+    twitter: Tutor_Eduonix
+    facebook: EDUonix
+    img: eduonix.png
 
   - name: edX
     url: https://www.edx.org/
@@ -210,6 +254,8 @@ websites:
       - proprietary
       - hardware
     doc: https://twofactor.oit.gatech.edu
+    regions:
+      - us
 
   - name: Global Information Assurance Certification (GIAC)
     url: https://www.giac.org
@@ -233,6 +279,8 @@ websites:
       - proprietary
       - hardware
     doc: https://huit.harvard.edu/twostep
+    regions:
+      - us
 
   - name: Illinois Institute Of Technology
     url: https://web.iit.edu/
@@ -241,12 +289,29 @@ websites:
     email_address: supportdesk@iit.edu
     img: iit.png
     exception: "Illinois Tech uses Google Apps for Eductation for their email; so they could very easily add tfa to their email, but at the time of this commit, they have it disabled and do not plan to implement it any time soon."
+    regions:
+      - us
 
   - name: ISACA
     url: https://www.isaca.org
     img: isaca.png
     twitter: ISACANews
     facebook: ISACAGlobal
+
+  - name: itslearning
+    url: https://itslearning.com
+    img: itslearning.png
+    tfa:
+      - totp
+    exception: "Only available to system administrators"
+    regions:
+      - de
+      - dk
+      - nl
+      - "no"
+      - gb
+      - us
+      - se
 
   - name: Karlsruher Institut für Technologie
     url: https://www.kit.edu
@@ -255,6 +320,8 @@ websites:
       - totp
       - hardware
     doc: https://www.scc.kit.edu/dienste/2fa.php
+    regions:
+      - de
 
   - name: KnowBe4
     url: https://www.knowbe4.com/
@@ -279,6 +346,8 @@ websites:
       - proprietary
       - hardware
     doc: https://kb.mit.edu/confluence/display/istcontrib/Duo+Authentication+Landing+Page
+    regions:
+      - us
 
   - name: McGill University
     url: https://mcgill.ca/
@@ -289,6 +358,14 @@ websites:
       - sms
       - phone
     doc: http://kb.mcgill.ca/#artId:7948
+    regions:
+      - ca
+
+  - name: Mendeley
+    url: https://www.mendeley.com
+    img: mendeley.png
+    twitter: MendeleySupport
+    facebook: mendeley
 
   - name: Miami University
     url: https://miamioh.edu/
@@ -299,17 +376,27 @@ websites:
       - proprietary
       - hardware
     doc: https://miamioh.edu/it-services/initiatives-and-projects/info-security/duo/
+    regions:
+      - us
 
   - name: Montclair State University
     url: https://www.montclair.edu/employee-services/
     twitter: montclairstateu
     img: montclair.png
+    regions:
+      - us
 
   - name: My Study Life
     url: https://www.mystudylife.com/
     twitter: mystudylife
     facebook: mystudylife
     img: mystudylife.png
+
+  - name: mySQA
+    url: https://www.mysqa.org.uk/
+    twitter: sqanews
+    facebook: ScottishQualificationsAuthority
+    img: mysqa.png
 
   - name: Pennsylvania State University
     url: https://www.psu.edu/
@@ -320,6 +407,18 @@ websites:
       - proprietary
       - hardware
     doc: https://security.psu.edu/two-factor-authentication/
+    regions:
+      - us
+
+  - name: Philipps-Universität Marburg
+    url: https://www.uni-marburg.de/
+    img: unimarburg.png
+    tfa:
+      - totp
+      - hardware
+    doc: https://www.uni-marburg.de/de/hrz/dienste/2fa
+    regions:
+      - de
 
   - name: Pluralsight
     url: https://www.pluralsight.com
@@ -335,18 +434,30 @@ websites:
       - proprietary
       - hardware
     doc: https://www.purdue.edu/securepurdue/identity-access/boilerkey/
+    regions:
+      - us
+
+  - name: Quizlet
+    url: https://www.quizlet.com/
+    img: quizlet.png
+    twitter: quizlet
+    facebook: quizlet
 
   - name: Robert Morris University
     url: https://sentry.rmu.edu/login
     twitter: RMU
     facebook: RMUpgh
     img: rmu.png
+    regions:
+      - us
 
   - name: Royal Roads University
     url: http://www.royalroads.ca
     twitter: RoyalRoads
     facebook: royalroadsu
     img: royalroads.png
+    regions:
+      - ca
 
   - name: Ryerson University
     url: https://www.ryerson.ca
@@ -355,11 +466,15 @@ websites:
       - u2f
     img: ryerson.png
     doc: https://www.ryerson.ca/ccs/services/ITSecurity/protecting-your-identity/two-factor-authentication/
+    regions:
+      - ca
 
   - name: SchoolSoft
     url: https://www.schoolsoft.se/
     img: schoolsoft.png
     email_address: support@schoolsoft.se
+    regions:
+      - se
 
   - name: Stanford University
     url: https://www.stanford.edu/
@@ -370,6 +485,8 @@ websites:
       - proprietary
       - hardware
     doc: https://uit.stanford.edu/service/webauth/twostep
+    regions:
+      - us
 
   - name: Temple University
     url: https://www.temple.edu/
@@ -379,6 +496,8 @@ websites:
       - phone
       - proprietary
     doc: https://its.temple.edu/two-step-verification
+    regions:
+      - us
 
   - name: Udacity
     url: https://www.udacity.com/
@@ -402,6 +521,8 @@ websites:
       - sms
       - hardware
     doc: https://www1.udel.edu/it/help/2fa/main.html
+    regions:
+      - us
 
   - name: University of Idaho
     url: https://www.uidaho.edu
@@ -412,6 +533,8 @@ websites:
       - proprietary
       - u2f
     doc: https://support.uidaho.edu/TDClient/KB/ArticleDet?ID=109
+    regions:
+      - us
 
   - name: University of Michigan
     url: https://www.umich.edu
@@ -422,6 +545,8 @@ websites:
       - proprietary
       - u2f
     doc: https://www.safecomputing.umich.edu/two-factor-authentication
+    regions:
+      - us
 
   - name: University of Notre Dame
     url: https://www.nd.edu
@@ -432,6 +557,8 @@ websites:
       - proprietary
       - hardware
     doc: https://oit.nd.edu/services/accounts/okta-account-services-and-two-step-login/
+    regions:
+      - us
 
   - name: University of Washington
     url: https://www.washington.edu/
@@ -442,6 +569,8 @@ websites:
       - u2f
     doc: https://itconnect.uw.edu/security/uw-netids/2fa/
     exception: "Available for employees only"
+    regions:
+      - us
 
   - name: Virginia Commonwealth University
     url: https://www.vcu.edu
@@ -452,6 +581,8 @@ websites:
       - proprietary
       - u2f
     doc: https://ts.vcu.edu/askit/essential-computing/information-security/2factor/
+    regions:
+      - us
 
   - name: Virginia Tech
     url: https://www.vt.edu/
@@ -462,3 +593,5 @@ websites:
       - proprietary
       - u2f
     doc: https://www.tech.it.vt.edu/2factor/
+    regions:
+      - us

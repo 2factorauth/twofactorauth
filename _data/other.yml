@@ -59,6 +59,14 @@ websites:
     twitter: bananatag
     facebook: trackemail
 
+  - name: Basic Attention Token
+    url: https://publishers.basicattentiontoken.org/
+    img: basicattentiontoken.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://support.brave.com/hc/en-us/articles/360021649491
+
   - name: CA Technologies
     url: https://www.ca.com/
     img: ca-technologies.png
@@ -73,6 +81,13 @@ websites:
     doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
     exception: "2FA only available for Australian customers."
     
+  - name: CharlieHR
+    url: https://charliehr.com/
+    img: charliehr.png
+    tfa:
+      - totp
+    doc: https://intercom.help/charliehr/en/articles/1037152
+
   - name: Chartbeat
     url: https://chartbeat.com/
     img: chartbeat.png
@@ -167,6 +182,12 @@ websites:
     img: extremenetworks.png
     twitter: ExtremeNetworks
     facebook: extremenetworks
+    
+  - name: FANDOM
+    url: https://www.fandom.com/
+    twitter: getFANDOM
+    facebook: getFANDOM
+    img: fandom.png
 
   - name: Figma
     url: https://www.figma.com/
@@ -214,6 +235,16 @@ websites:
       - email
     doc: https://www.freelancer.com/support/general/2-step-verification
 
+  - name: GLS-ONE
+    url: https://www.gls-one.de/
+    twitter: GLS_Germany
+    facebook: GLSGermany
+    email_address: mail@gls-one.de
+    img: gls-one.png
+    lang: de
+    regions:
+       - de
+
   - name: GoFundMe
     url: https://www.gofundme.com/
     img: gofundme.png
@@ -222,6 +253,15 @@ websites:
       - phone
     doc: https://support.gofundme.com/hc/en-us/articles/360001980947
     exception: "2FA only for North American customers that create Personal campaigns."
+
+  - name: Golem
+    url: https://www.golem.de/
+    img: golem.png
+    twitter: golem
+    facebook: golem
+    lang: de
+    regions:
+      - de
 
   - name: Grammarly
     url: https://grammarly.com/
@@ -296,7 +336,8 @@ websites:
     tfa:
       - sms
       - phone
-    doc: https://support.indeed.com/hc/en-us/articles/360000244123
+    doc: https://www.indeed.com/lead/two-factor-authentication
+    exception: "2FA is only available for employees and not for job seekers."
 
   - name: Indiegogo
     url: https://www.indiegogo.com/
@@ -393,10 +434,11 @@ websites:
     tfa:
       - sms
       - phone
+      - email
+      - proprietary
       - totp
-      - hardware
+      - u2f
     doc: https://support.office.com/en-US/article/Set-up-multi-factor-authentication-for-Office-365-8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-    exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
 
   - name: Onshape
     url: https://www.onshape.com/
@@ -505,12 +547,18 @@ websites:
     facebook: spare5app
     email_address: feedback@spare5.com
 
-  - name: Ubiquiti Networks
-    url: https://www.ubnt.com
+  - name: Ubiquiti Inc
+    url: https://www.ui.com
     img: ubiquiti.png
     tfa:
       - totp
     doc: https://help.ubnt.com/hc/en-us/articles/115012986607
+
+  - name: UK Postbox
+    url: https://www.ukpostbox.com
+    img: ukpostbox.png
+    tfa:
+      - email
 
   - name: Ulule
     url: https://www.ulule.com/
@@ -530,6 +578,7 @@ websites:
     tfa:
       - sms
       - email
+      - totp
     doc: https://support.upwork.com/hc/en-us/articles/360009491414
 
   - name: Usabilla
@@ -538,6 +587,12 @@ websites:
     tfa:
       - totp
     doc: https://support.usabilla.com/hc/en-us/articles/115003081611
+    
+  - name: Vivaldi
+    url: https://vivaldi.com/
+    img: vivaldi.png
+    facebook: vivaldi.browser
+    twitter: vivaldibrowser
 
   - name: WageWorks
     url: https://www.wageworks.com
@@ -564,11 +619,6 @@ websites:
       - totp
       - hardware
     doc: https://doc.weclapp.com/knowledgebase/zwei-wege-authentifizierung-2fa/
-
-  - name: Wikia
-    url: https://www.wikia.com/
-    twitter: wikia
-    img: wikia.png
 
   - name: Wikipedia
     url: https://www.wikipedia.org/

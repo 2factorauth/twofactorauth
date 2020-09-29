@@ -30,8 +30,9 @@ websites:
     img: amazon.png
     tfa:
       - sms
+      - phone
       - totp
-    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201596330
+    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
     exception: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
 
   - name: Apple
@@ -74,6 +75,16 @@ websites:
     img: bonobos.png
     twitter: Bonobos
     facebook: bonobos
+
+  - name: Boots
+    url: https://www.boots.com/
+    img: boots.png
+    twitter: BootsHelp
+    facebook: BootsUK
+    email_address: Boots.CustomerCare_Team@boots.co.uk
+    regions:
+      - gb
+      - ie
 
   - name: Boxed
     url: https://www.boxed.com
@@ -196,8 +207,8 @@ websites:
   - name: Home Depot
     url: https://www.homedepot.com
     img: homedepot.png
-    twitter: HomeDepot
-    facebook: homedepot
+    tfa:
+      - sms
 
   - name: Hudson's Bay
     url: https://www.thebay.com
@@ -224,6 +235,14 @@ websites:
     url: https://jet.com
     twitter: JetHeads
     img: jet.png
+
+  - name: John Lewis & Partners
+    url: https://www.johnlewis.com/
+    img: john-lewis.png
+    twitter: jlandpartners
+    facebook: JohnLewisandPartners
+    regions:
+      - gb
 
   - name: jpc
     url: https://www.jpc.de/
@@ -401,6 +420,13 @@ websites:
     url: https://www.target.com/
     twitter: Target
     img: target.png
+
+  - name: Thalia
+    url: https://www.thalia.de/
+    facebook: thalia.de
+    email_address: info@thalia.de
+    img: thalia.png
+    lang: de
 
   - name: Tokopedia
     url: https://www.tokopedia.com/

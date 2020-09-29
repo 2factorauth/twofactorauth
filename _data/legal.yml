@@ -7,6 +7,8 @@ websites:
       - phone
       - email
     doc: https://basiscode.com/blog/two-factor-authentication-compliance-software/
+    regions:
+      - us
 
   - name: Clio
     url: https://www.clio.com
@@ -21,6 +23,9 @@ websites:
     tfa:
       - sms
     doc: https://support.cosmolex.com/knowledge-base/how-to-enable-two-factor-authentication/
+    regions:
+      - ca
+      - us
 
   - name: Docusign
     url: https://www.docusign.com
@@ -48,3 +53,19 @@ websites:
       - totp
     doc: https://faq.hellosign.com/hc/en-us/articles/360025164091
     exception: "SMS Two-factor authentication is only available to paid Business plan senders and above."
+
+  - name: iubenda
+    url: https://www.iubenda.com/
+    img: iubenda.png
+    facebook: iubenda
+    twitter: iubenda
+    email_address: info@iubenda.com
+
+  - name: Resolver
+    url: https://www.resolver.co.uk
+    img: resolver.png
+    twitter: resolvercouk
+    facebook: resolvercouk
+    regions:
+      - gb
+      - in

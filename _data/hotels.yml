@@ -6,6 +6,7 @@ websites:
       - email
       - sms
     doc: https://www.airbnb.com/help/article/501
+    exception: "Airbnb decides when 2FA is required; user cannot enable 2FA for every login."
 
   - name: Booking.com
     url: https://www.booking.com/
@@ -39,3 +40,21 @@ websites:
     twitter: Marriott
     facebook: Marriott
     img: marriott.png
+
+  - name: Melia Hotels
+    url: https://www.melia.com
+    twitter: MeliaHtlResorts
+    facebook: Melia.Hotels
+    img: melia.png
+
+  - name: NH Hotels
+    url: https://www.nh-hotels.com
+    twitter: NHHotels
+    facebook: NH.Hotels
+    img: nh.png
+
+  - name: Wyndham Hotels
+    url: https://www.wyndhamhotels.com
+    twitter: WyndhamHotels
+    facebook: wyndhamhotels
+    img: wyndham.png

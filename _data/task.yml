@@ -9,8 +9,10 @@ websites:
     img: airtable.png
     tfa:
       - sms
+      - phone
       - totp
     doc: https://support.airtable.com/hc/en-us/articles/219409917
+    exception: "SMS must be enabled first and software 2FA can be bypassed by SMS."
 
   - name: Any.do
     url: https://web.any.do/
@@ -68,9 +70,13 @@ websites:
     img: microsofttodo.png
     tfa:
       - sms
+      - phone
       - email
+      - proprietary
       - totp
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
+    exception: "2FA phone calls may not be available in all regions"
 
   - name: Planio
     url: https://plan.io
@@ -85,6 +91,12 @@ websites:
     facebook: rememberthemilk
     img: rememberthemilk.png
     email_address: help@rememberthemilk.com
+
+  - name: Tick
+    url: https://www.tickspot.com
+    img: tickspot.png
+    twitter: tickspot
+    email_address: support@tickspot.com
 
   - name: Todoist
     url: https://todoist.com

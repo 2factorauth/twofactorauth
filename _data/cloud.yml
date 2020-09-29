@@ -3,11 +3,10 @@ websites:
     url: https://aws.amazon.com
     img: aws.png
     tfa:
-      - sms
       - totp
       - hardware
       - u2f
-    doc: https://aws.amazon.com/iam/details/mfa/
+    doc: https://aws.amazon.com/iam/features/mfa/
 
   - name: appFog
     url: https://www.ctl.io/appfog/
@@ -105,6 +104,13 @@ websites:
       - phone
       - totp
     doc: https://cloud.ibm.com/docs/iam?topic=iam-types
+
+  - name: Jelastic
+    url: https://jelastic.com
+    img: jelastic.png
+    tfa:
+      - totp
+    doc: https://docs.jelastic.com/two-factor-authentication
 
   - name: Joyent
     url: https://www.joyent.com/

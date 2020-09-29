@@ -82,7 +82,6 @@ websites:
     url: https://www.flickr.com
     twitter: FlickrHelp
     img: flickr.png
-    status: https://help.flickr.com/changes-to-login-featured-rkF1q3cIV
 
   - name: Flipboard
     url: https://flipboard.com
@@ -140,7 +139,7 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://www.linkedin.com/help/linkedin/answer/531
+    doc: https://www.linkedin.com/help/linkedin/answer/544
 
   - name: LiveJournal
     url: https://www.livejournal.com
@@ -222,7 +221,7 @@ websites:
     img: reddit.png
     tfa:
       - totp
-    doc: https://www.reddithelp.com/en/categories/privacy-security/account-security/what-two-factor-authentication-and-how-do-i-set-it
+    doc: https://www.reddithelp.com/hc/en-us/articles/360043470031
 
   - name: Short.cm
     url: https://short.cm/
@@ -259,7 +258,7 @@ websites:
     tfa:
       - sms
       - totp
-      - hardware
+      - u2f
     doc: https://support.twitter.com/articles/20170388
     exception: "Mobile apps do not support Hardware 2FA. Hardware 2FA requires enabling back-up method. Cannot add multiple security keys. SMS only available on select providers."
 
@@ -284,6 +283,7 @@ websites:
   - name: Weibo
     url: https://www.weibo.com/
     img: weibo.png
+    twitter: SinaWeibo
 
   - name: WordPress.com
     url: https://wordpress.com

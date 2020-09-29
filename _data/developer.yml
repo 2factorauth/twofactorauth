@@ -83,8 +83,13 @@ websites:
     img: bitbucket.png
     tfa:
       - totp
-      - hardware
+      - u2f
     doc: https://confluence.atlassian.com/x/425QLg
+
+  - name: Bitnami
+    url: https://bitnami.com
+    img: bitnami.png
+    twitter: bitnami
 
   - name: Buddy
     url: https://buddy.works
@@ -178,6 +183,12 @@ websites:
       - totp
     doc: https://help.compose.com/docs/two-factor-authentication
 
+  - name: Cookiebot
+    url: https://www.cookiebot.com/
+    img: cookiebot.png
+    twitter: CybotCorp
+    facebook: cybotcorp
+
   - name: Crowdin
     url: https://crowdin.com/
     img: crowdin.png
@@ -245,8 +256,9 @@ websites:
     tfa:
       - sms
       - totp
-      - hardware
+      - u2f
     doc: https://help.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication
+    exception: "Hardware tokens must have a backup method, either SMS or software token."
 
   - name: GitLab
     url: https://gitlab.com
@@ -279,6 +291,11 @@ websites:
       - totp
     doc: https://docs.heap.io/docs/2fa
 
+  - name: Hotjar
+    url: https://hotjar.com/
+    img: hotjar.png
+    twitter: hotjar
+
   - name: imgix
     url: https://www.imgix.com/
     twitter: imgix
@@ -304,6 +321,9 @@ websites:
     img: jetbrains.png
     tfa:
       - totp
+      - u2f
+    doc: https://www.jetbrains.com/help/hub/2fa-with-token.html
+    exception: "U2F only available for Hub account (e.g. YouTrack). Limited to one software token OR one hardware token."
 
   - name: Koding
     url: https://koding.com
@@ -357,13 +377,6 @@ websites:
     twitter: newrelic
     facebook: NewRelic
     img: newrelic.png
-
-  - name: Nexmo
-    url: https://www.nexmo.com/
-    img: nexmo.png
-    tfa:
-      - sms
-      - phone
 
   - name: npm
     url: https://www.npmjs.com/
@@ -463,7 +476,6 @@ websites:
     url: https://readthedocs.org
     img: readthedocs.png
     email_address: hello@readthedocs.com
-    status: https://github.com/rtfd/readthedocs.org/issues/3523
 
   - name: ReadMe
     url: https://readme.io
@@ -570,7 +582,8 @@ websites:
       - sms
       - phone
       - proprietary
-    doc: https://support.twilio.com/hc/en-us/articles/223136307
+      - totp
+    doc: https://support.twilio.com/hc/en-us/sections/360008377353
 
   - name: Unbounce
     url: https://unbounce.com
@@ -603,13 +616,23 @@ websites:
       - totp
     doc: https://blog.uptimerobot.com/introducing-two-factor-authentication-2fa/
 
-  - name: Visual Studio Online
+  - name: Visual Studio Codespaces
     url: https://www.visualstudio.com/
     img: visualstudio.png
     tfa:
       - sms
+      - email
+      - proprietary
       - totp
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
+
+  - name: Vonage
+    url: https://developer.nexmo.com/
+    img: vonage.png
+    tfa:
+      - sms
+      - phone
 
   - name: Zapier
     url: https://zapier.com
