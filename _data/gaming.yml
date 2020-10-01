@@ -427,3 +427,11 @@ websites:
       - email
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/4435#issuecomment-566448568
+
+  - name: G2A
+    url: https://www.g2a.com/
+    img: g2a.png
+    tfa:
+      - totp
+      - sms
+    doc: https://supporthub.g2a.com/marketplace/en/g2a-account/two-factor-authentication---how-can-i-enable-an-additional-login-verification-on-my-g2a-account
