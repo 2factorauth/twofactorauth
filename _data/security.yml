@@ -106,6 +106,13 @@ websites:
       - totp
       - hardware
     doc: https://dome9.com/overview/strong-2-factor-authentication
+  
+  - name: EasyDMARC
+    url: https://www.easydmarc.com
+    img: easydmarc.png
+    tfa:
+      - totp
+    doc: https://easydmarc.com/blog/two-factor-authentication/
 
   - name: Entrust
     img: entrust.png
@@ -140,6 +147,13 @@ websites:
       - totp
     doc: https://docs.hackerone.com/hackers/two-factor-authentication.html
     exception: SMS-capable phone required for initial setup.
+    
+  - name: hCaptcha
+    url: https://hcaptcha.com
+    img: hcaptcha.png
+    twitter: hCaptcha
+    facebook: hcaptcha
+    email_address: support@hcaptcha.com
 
   - name: intigriti
     url: https://www.intigriti.com/
@@ -147,7 +161,7 @@ websites:
     tfa:
       - totp
     doc: https://kb.intigriti.com/en/articles/2642631
-    
+
   - name: Kaspersky
     url: https://www.kaspersky.com/
     img: kaspersky.png
@@ -171,6 +185,12 @@ websites:
       - proprietary
       - u2f
     doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us
+
+  - name: Panther
+    url: https://runpanther.io
+    img: panther.png
+    tfa:
+      - totp
 
   - name: Prey
     url: https://www.preyproject.com
@@ -209,14 +229,6 @@ websites:
       - totp
     doc: https://www.ssltrust.com.au/help/account-management/enable-2factor
 
-  - name: Surfshark
-    url: https://surfshark.com/
-    img: surfshark.png
-    tfa:
-      - email
-      - totp
-    doc: https://support.surfshark.com/hc/en-us/articles/360011448319
-
   - name: ThreatConnect
     url: https://threatconnect.com/
     img: threatconnect.png
@@ -248,12 +260,6 @@ websites:
     tfa:
       - totp
     doc: https://support.tinfoilsecurity.com/article/43-do-you-support-two-factor-authentication-how-do-i-set-it-up
-
-  - name: TorGuard
-    url: https://torguard.net
-    img: torguard.png
-    tfa:
-      - totp
 
   - name: VirusTotal
     url: https://www.virustotal.com

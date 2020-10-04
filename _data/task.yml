@@ -70,9 +70,13 @@ websites:
     img: microsofttodo.png
     tfa:
       - sms
+      - phone
       - email
+      - proprietary
       - totp
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
+    exception: "2FA phone calls may not be available in all regions"
 
   - name: Planio
     url: https://plan.io

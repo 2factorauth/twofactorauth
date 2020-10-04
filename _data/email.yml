@@ -6,6 +6,7 @@ websites:
       - sms
       - phone
       - email
+      - u2f
     doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
   - name: FastMail
@@ -44,6 +45,14 @@ websites:
     tfa:
       - totp
     doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
+
+  - name: HEY
+    url: https://hey.com/
+    img: hey.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://hey.com/security/
 
   - name: Hushmail
     url: https://www.hushmail.com
@@ -124,10 +133,13 @@ websites:
     img: outlook.png
     tfa:
       - sms
+      - phone
+      - email
+      - proprietary
       - totp
-      - hardware
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
-    exception: "Hardware token supporting FIDO2/WebAuthn can only be used in Windows 10 version 1809 and above using Edge browser."
+    exception: "2FA phone calls may not be available in all regions"
 
   - name: Pobox
     url: https://www.pobox.com/
@@ -246,6 +258,7 @@ websites:
       - phone
       - email
       - proprietary
+      - u2f
     doc: https://help.yahoo.com/kb/SLN5013.html
     exception: "Linked phone number required for 2FA."
 

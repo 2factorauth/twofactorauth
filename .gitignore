@@ -13,6 +13,8 @@ vendor/
 
 # NPM files
 node_modules/
+package-lock.json
+package.json
 
 # OS files
 *.DS_Store
@@ -23,6 +25,8 @@ tmp/
 
 # Project files
 *.webp
+
+# Generated regional sites
 ar/
 au/
 de/
@@ -31,3 +35,6 @@ nl/
 nz/
 se/
 us/
+ca/
+fr/
+it/

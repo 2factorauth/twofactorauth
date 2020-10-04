@@ -84,6 +84,16 @@ websites:
     regions:
       - us
 
+  - name: Boots
+    url: https://www.boots.com/
+    img: boots.png
+    twitter: BootsHelp
+    facebook: BootsUK
+    email_address: Boots.CustomerCare_Team@boots.co.uk
+    regions:
+      - gb
+      - ie
+
   - name: Boxed
     url: https://www.boxed.com
     img: boxed.png
@@ -230,8 +240,8 @@ websites:
   - name: Home Depot
     url: https://www.homedepot.com
     img: homedepot.png
-    twitter: HomeDepot
-    facebook: homedepot
+    tfa:
+      - sms
     regions:
       - us
 
@@ -261,6 +271,14 @@ websites:
     img: jbhifi.png
     regions:
       - au
+
+  - name: John Lewis & Partners
+    url: https://www.johnlewis.com/
+    img: john-lewis.png
+    twitter: jlandpartners
+    facebook: JohnLewisandPartners
+    regions:
+      - gb
 
   - name: jpc
     url: https://www.jpc.de/

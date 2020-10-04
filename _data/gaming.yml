@@ -49,6 +49,12 @@ websites:
     tfa:
       - totp
 
+  - name: CDKeys
+    url: https://www.cdkeys.com/
+    img: cdkeys.png
+    twitter: cdkeyscom
+    facebook: cdkeyscom
+
   - name: Elder Scrolls Online
     url: https://www.elderscrollsonline.com/
     img: eso.png
@@ -84,6 +90,13 @@ websites:
       - totp
     doc: https://www.epicgames.com/help/en-US/c74/c112/a3218
 
+  - name: ESL
+    url: https://www.eslgaming.com
+    img: esl.png
+    tfa:
+      - totp
+      - u2f
+
   - name: EVE Online
     url: https://www.eveonline.com/
     img: eveonline.png
@@ -98,6 +111,13 @@ websites:
     tfa:
       - totp
     doc: https://support.faceit.com/hc/en-us/articles/115000254670
+
+  - name: Fanatical
+    url: https://www.fanatical.com
+    img: fanatical.png
+    tfa:
+      - totp
+    doc: https://support.fanatical.com/hc/en-us/articles/360002761397
 
   - name: Gaijin Entertainment
     url: https://gaijin.net
@@ -154,6 +174,13 @@ websites:
       - sms
       - totp
     doc: https://help.guildwars2.com/hc/en-us/articles/230672927
+
+  - name: Hi-Rez Studios
+    url: https://www.hirezstudios.com/
+    img: hirez.png
+    tfa:
+      - email
+      - sms
 
   - name: Humble Bundle
     url: https://www.humblebundle.com/
@@ -290,6 +317,13 @@ websites:
     twitter: Shadow_Official
     facebook: ShadowNorthAmerica
 
+  - name: Speedrun.com
+    url: https://www.speedrun.com/
+    img: speedruncom.png
+    tfa:
+      - email
+    doc: https://www.speedrun.com/the_site/thread/g7osi/1
+
   - name: Square Enix
     url: https://na.square-enix.com/
     img: squarenix.png
@@ -379,8 +413,12 @@ websites:
     tfa:
       - sms
       - email
+      - proprietary
+      - phone
       - totp
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
+    exception: "2FA phone calls may not be available in all regions"
 
   - name: YoYo Games
     url: https://www.yoyogames.com/
