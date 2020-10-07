@@ -397,6 +397,18 @@ websites:
     twitter: sqanews
     facebook: ScottishQualificationsAuthority
     img: mysqa.png
+    
+  - name: North Carolina State University
+    url: https://ncsu.edu
+    img: ncsu.png
+    tfa:
+      - sms
+      - phone
+      - hardware
+      - proprietary
+      - totp
+      - u2f
+    doc: https://oit.ncsu.edu/it-security/2fa/
 
   - name: Pennsylvania State University
     url: https://www.psu.edu/
