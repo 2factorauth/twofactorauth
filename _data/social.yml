@@ -180,8 +180,10 @@ websites:
 
   - name: Nextdoor
     url: https://nextdoor.com
-    twitter: Nextdoor
     img: nextdoor.png
+    tfa:
+      - email
+    doc: https://help.nextdoor.com/s/article/About-2-Step-Verification
 
   - name: OkCupid
     url: https://www.okcupid.com/
