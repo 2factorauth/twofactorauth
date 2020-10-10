@@ -58,6 +58,14 @@ websites:
     doc: https://support.cloud.engineyard.com/hc/en-us/community/posts/203752678
     exception: "To enable 2FA on Engine Yard, contact support."
 
+  - name: Equinix Metal
+    url: https://metal.equinix.com
+    img: equinix-metal.png
+    tfa:
+      - sms
+      - totp
+    doc: https://metal.equinix.com/developers/docs/accounts/two-factor-authentication/
+
   - name: Flexera
     url: https://www.flexera.com/
     img: flexera.png
@@ -171,14 +179,6 @@ websites:
     twitter: openshift
     facebook: openshift
     img: openshift.png
-
-  - name: Packet
-    url: https://www.packet.com/
-    img: packet.png
-    tfa:
-      - sms
-      - totp
-    doc: https://support.packet.com/kb/articles/portal
 
   - name: Rackspace
     url: https://www.rackspace.com/
