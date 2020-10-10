@@ -293,12 +293,12 @@ websites:
       - totp
     doc: https://support.coingate.com/en/65/-
 
-  - name: Coinify (Merchants)
-    url: https://coinify.com/merchants
+  - name: Coinify
+    url: https://coinify.com/
     img: coinify.png
     tfa:
       - totp
-    doc: https://help.coinify.com/article/114
+    doc: https://help.coinify.com/hc/en-us/articles/360014173320
     exception: "2FA is only available for merchant accounts. myCoinify trading accounts do not support 2FA."
 
   - name: Coinjar
