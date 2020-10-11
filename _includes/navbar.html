@@ -28,11 +28,11 @@
               Global</a>
             {% for region in regions %}
               <a class="dropdown-item" href="/{{ region.id }}/">
-		{% if region.id == 'ch' %}
+                {% if region.id == 'ch' %}
                   <span class="flag-icon flag-icon-squared flag-icon-{{ region.id }}"></span>
-		{% else %}
+                {% else %}
                   <span class="flag-icon flag-icon-{{ region.id }}"></span>
-		{% endif %}
+                {% endif %}
                 {{ region.name }}</a>
             {% endfor %}
           </div>
