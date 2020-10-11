@@ -17,7 +17,11 @@
             {% assign regions = site.data.regions | sort: "name" %}
             {% assign regions2 = regions | map: 'id' %}
             {% if regions2 contains baseurl %}
-              <span class="flag-icon flag-icon-{{ baseurl }}"></span>
+              {% if baseurl == 'ch' %}
+                <span class="flag-icon flag-icon-squared flag-icon-{{ baseurl }}"></span>
+              {% else %}
+                <span class="flag-icon flag-icon-{{ baseurl }}"></span>
+              {% endif %}
             {% else %}
               <i class="fas fa-globe-africa"></i>
             {% endif %}
