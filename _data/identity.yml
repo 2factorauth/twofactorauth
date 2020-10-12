@@ -134,6 +134,14 @@ websites:
       - hardware
     doc: https://help.passpack.com/knowledgebase/idx.php/44/0/
 
+  - name: Passwarden
+    url: https://www.keepsolid.com/passwarden/
+    img: passwarden.png
+    tfa:
+      - totp
+      - email
+    doc: https://www.keepsolid.com/passwarden/security/tfa
+
   - name: RoboForm
     url: https://www.roboform.com/
     img: roboform.png
