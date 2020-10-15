@@ -169,8 +169,10 @@ websites:
 
   - name: Dominion Energy
     url: https://www.dominionenergy.com/
-    twitter: DominionEnergy
     img: dominion.png
+    tfa:
+      - sms
+      - email
     regions:
       - us
 
