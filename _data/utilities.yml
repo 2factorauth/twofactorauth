@@ -169,10 +169,11 @@ websites:
 
   - name: Dominion Energy
     url: https://www.dominionenergy.com/
-    twitter: DominionEnergy
     img: dominion.png
-    regions:
-      - us
+    tfa:
+      - sms
+      - email
+    doc: https://www.dominionenergy.com/privacy
 
   - name: DTE Energy
     url: https://www.dteenergy.com/
