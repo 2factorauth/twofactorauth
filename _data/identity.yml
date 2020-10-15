@@ -89,7 +89,7 @@ websites:
       - proprietary
       - u2f
     doc: https://support.logmeininc.com/lastpass/help/enable-multifactor-authentication-lp010002
-    exception: "Duo, RSA SecurID, Symantec VIP, and SecureAuth require LastPass Enterprise or Identity"
+    exception: "Availability of 2FA options depends on your account type."
 
   - name: Okta
     url: https://www.okta.com/
