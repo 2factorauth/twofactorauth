@@ -86,7 +86,10 @@ websites:
     tfa:
       - totp
       - hardware
-    doc: https://helpdesk.lastpass.com/multifactor-authentication-options/
+      - proprietary
+      - u2f
+    doc: https://support.logmeininc.com/lastpass/help/enable-multifactor-authentication-lp010002
+    exception: "Duo, RSA SecurID, Symantec VIP, and SecureAuth require LastPass Enterprise or Identity"
 
   - name: Okta
     url: https://www.okta.com/
