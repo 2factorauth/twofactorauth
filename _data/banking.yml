@@ -319,6 +319,15 @@ websites:
     facebook: CDCFederalCreditUnion
     img: cdcfcu.png
 
+  - name: Cembra Money Bank
+    url: https://www.cembra.ch/
+    img: cembra-money-bank.png
+    tfa:
+      - sms
+    doc: https://faq.cembra.ch/de/videos/login-mit-mtan/
+    regions:
+      - ch
+
   - name: Ceska Sporitelna
     url: https://www.csas.cz/en/
     img: csas-cz.png
