@@ -581,7 +581,17 @@ websites:
     img: idb.svg
     lang: he
 
+<<<<<<< HEAD
   - name: Discover
+=======
+  - name: Discover (Banking)
+    url: https://www.discover.com/online-banking/
+    img: discover.svg
+    twitter: Discover
+    facebook: discover
+
+  - name: Discover (Credit Cards)
+>>>>>>> SVG icons for Banking
     url: https://www.discover.com/
     img: discover.svg
     tfa:
@@ -1363,7 +1373,7 @@ websites:
 
   - name: Swedbank & Sparbankerna
     url: https://www.swedbank.se/
-    img: swedbank.png
+    img: swedbank.svg
     tfa:
       - proprietary
       - hardware
