@@ -429,9 +429,11 @@ websites:
 
   - name: Pivotal Tracker
     url: https://www.pivotaltracker.com
-    twitter: pivotaltracker
-    facebook: pivotaltracker
     img: pivotaltracker.png
+    tfa:
+      - totp
+    doc: https://www.pivotaltracker.com/help/articles/two_factor_auth/
+    exception: "2FA only works on the web version. If enabled, you will not be able to use the mobile apps."
 
   - name: Plivo
     url: https://www.plivo.com
