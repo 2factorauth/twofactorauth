@@ -273,7 +273,8 @@ websites:
     img: psn.png
     tfa:
       - sms
-    doc: https://www.playstation.com/en-us/account-security/2-step-verification/
+      - totp
+    doc: https://playstation.com/support/2sv/
 
   - name: Roberts Space Industries
     url: https://robertsspaceindustries.com/
