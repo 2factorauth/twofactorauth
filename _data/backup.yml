@@ -32,9 +32,10 @@ websites:
 
   - name: CrashPlan
     url: https://www.crashplan.com
-    twitter: crashplan
     img: crashplan.png
-    facebook: CrashPlan
+    tfa:
+      - totp
+    doc: https://support.code42.com/Administrator/Small_Business/Get_started_with_CrashPlan_for_Small_Business/Two-factor_authentication_for_CrashPlan_for_Small_Business
 
   - name: Degoo
     url: https://degoo.com/
