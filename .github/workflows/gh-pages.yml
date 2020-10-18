@@ -40,7 +40,7 @@ jobs:
       - name: Build region sites
         run: |
           ruby ./_deployment/used_regions.rb > api/v2/regions.json
-          ruby ./_deployment/regions.rb
+          ruby ./_deployment/regions.rb --production
 
       - name: Generate webp images
         run: ./_deployment/webp.sh
