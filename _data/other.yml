@@ -553,7 +553,7 @@ websites:
     tfa:
       - email
       - sms
-    exception: "SMS only available when email is enabled."
+    exception: "2FA is only available with a verified email address."
     doc: https://www.turbosquid.com/MemberInfo/Index.cfm/MFAInfo
 
   - name: Ubiquiti Inc
