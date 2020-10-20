@@ -207,12 +207,6 @@ websites:
       - email
     doc: https://www.barclaycardus.com/servicing/security-center?howWeProtectYou=#loginProcess
 
-  - name: BB&amp;T
-    url: https://www.bbt.com/
-    twitter: BBT
-    facebook: BBTBank
-    img: bbt.png
-
   - name: BBBank
     url: https://www.bbbank.de/
     img: bbbank.png
@@ -1321,12 +1315,6 @@ websites:
       - email
     doc: https://www.statefarm.com/customer-care/privacy-security-center/identity-verification
 
-  - name: SunTrust
-    url: https://www.suntrust.com/
-    twitter: SunTrust
-    facebook: suntrust
-    img: suntrust.png
-
   - name: Swedbank & Sparbankerna
     url: https://www.swedbank.se/
     img: swedbank.png
@@ -1410,6 +1398,14 @@ websites:
     facebook: triodos.de
     img: triodosbank.png
     lang: de
+
+  - name: Truist
+    url: https://www.truist.com
+    img: truist.png
+    no_img_border: true
+    twitter: TruistNews
+    regions:
+      - us
 
   - name: TSB Bank
     url: https://www.tsb.co.uk
