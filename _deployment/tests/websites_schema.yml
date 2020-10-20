@@ -19,6 +19,8 @@ mapping:
             type: str
             pattern: /^[a-z0-9_\-\+]+\.(png|svg)$/
             required: yes
+          "no_img_border":
+            type: bool
           "tfa":
             type: seq
             sequence:
