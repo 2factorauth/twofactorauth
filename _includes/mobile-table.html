@@ -11,7 +11,14 @@
       <!-- Title -->
       <div class="site-title">
         <a class="site-name" href="{{ website.url }}">
-          <img class="logo lazyload{% if website.no_img_border %} no-border{%endif%}" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png" alt="">
+          <picture>
+            {% assign extension = website.img | split: "." | last %}
+            {% if extension == ".png" %}
+              {% assign webp = website.img | replace: ".png", ".webp" %}
+              <source data-srcset="/img/{{section_id}}/{{webp}} 1x" type="image/webp">
+            {% endif %}
+            <img class="logo lazyload{% if website.no_img_border or extension == 'svg' %} no-border{%endif%}" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png" alt="">
+          </picture>
           {{ website.name }}</a>
           {% if website.exception %}
                 <i class="fas fa-exclamation-triangle exception" data-content="{{ website.exception }}"></i>
