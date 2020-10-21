@@ -5,7 +5,7 @@ require 'json'
 require 'yaml'
 
 data_dir = './_data'
-tags = %w[url img twitter facebook email_address doc exception tfa doc]
+tags = %w[url img no_img_border twitter facebook email_address doc exception tfa doc]
 
 # All files to write to
 output = {

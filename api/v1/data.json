@@ -11,9 +11,7 @@
         {%- if tag[0] != "exception" -%}
           "{{ tag[0] }}":
           {%- if tag[1] == true or tag[1] == false -%}
-            {
-              {{tag[1]}}
-            }
+            {{tag[1]}}
           {%- else -%}
            "{{ tag[1] }}"
           {%- endif -%}
