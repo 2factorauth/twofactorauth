@@ -1,381 +1,439 @@
 websites:
-    - name: Ankama
-      url: https://www.ankama.com
-      img: ankama.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://support.ankama.com/hc/en-us/categories/200093427-DOFUS-Security
+  - name: Ankama
+    url: https://www.ankama.com
+    img: ankama.png
+    tfa:
+      - email
+      - proprietary
+    doc: https://support.ankama.com/hc/en-us/categories/200093427
 
-    - name: Aternos
-      url: https://aternos.org/
-      img: aternos.png
-      tfa: Yes
-      software: Yes
+  - name: Ashes of Creation
+    url: https://ashesofcreation.com
+    img: ashesofcreation.png
+    tfa:
+      - totp
+    doc: https://ashesofcreation.zendesk.com/hc/en-us/articles/360022983234
 
-    - name: Black Desert Online
-      url: https://www.blackdesertonline.com/
-      img: bdo.png
-      tfa: Yes
-      software: Yes
-      doc: https://blackdesert.zendesk.com/hc/en-us/articles/360000535909
+  - name: Aternos
+    url: https://aternos.org/
+    img: aternos.png
+    tfa:
+      - totp
 
-    - name: 'Blade & Soul'
-      url: https://www.bladeandsoul.com/
-      img: bladeandsoul.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.bladeandsoul.com/hc/en-us/articles/207578553-Supported-Two-Step-OTP-Authentication-Verification-Methods
+  - name: Bethesda
+    url: https://bethesda.net/
+    img: bethesda.png
+    tfa:
+      - totp
+      - sms
+    doc: https://help.bethesda.net/app/answers/detail/a_id/48931
+    exception: "SMS requires TOTP to be set up"
 
-    - name: Blizzard
-      url: https://blizzard.com
-      img: blizzard.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      exceptions:
-          text: "Software authentication requires the Blizzard Authenticator app."
-      doc: https://us.battle.net/support/en/article/Blizzard-Authenticator
+  - name: Black Desert Online
+    url: https://www.blackdesertonline.com/
+    img: bdo.png
+    tfa:
+      - totp
+    doc: https://blackdesert.zendesk.com/hc/en-us/articles/360000535909
 
-    - name: Bohemia Interactive
-      url: https://www.bohemia.net/
-      img: bohemia.png
-      tfa: Yes
-      software: Yes
+  - name: Blade & Soul
+    url: https://www.bladeandsoul.com/
+    img: bladeandsoul.png
+    tfa:
+      - totp
+    doc: https://support.bladeandsoul.com/hc/en-us/articles/207578553
 
-    - name: Curse
-      url: https://www.curse.com/
-      img: curse.png
-      tfa: No
-      twitter: curseapp
-      facebook: curseapp
+  - name: Blizzard
+    url: https://blizzard.com
+    img: blizzard.png
+    tfa:
+      - sms
+      - proprietary
+      - hardware
+    doc: https://us.battle.net/support/en/article/Blizzard-Authenticator
 
-    - name: Elder Scrolls Online
-      url: https://www.elderscrollsonline.com/
-      img: eso.png
-      tfa: Yes
-      email: Yes
-      doc: https://help.elderscrollsonline.com/app/answers/detail/a_id/8611
+  - name: Bohemia Interactive
+    url: https://www.bohemia.net/
+    img: bohemia.png
+    tfa:
+      - totp
 
-    - name: Electronic Arts (Origin)
-      url: https://www.ea.com/
-      img: ea.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.ea.com/en-us/help/account/origin-login-verification-information/
+  - name: CDKeys
+    url: https://www.cdkeys.com/
+    img: cdkeys.png
+    twitter: cdkeyscom
+    facebook: cdkeyscom
 
-    - name: Enjin
-      url: https://www.enjin.com/
-      img: enjin.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-          text: "2FA is only available on paid plans. Software authentication requires the Authy app."
-      doc: https://support.enjin.com/hc/en-us/articles/201090770-2-Factor-Authentication-Authy-
+  - name: Elder Scrolls Online
+    url: https://www.elderscrollsonline.com/
+    img: eso.png
+    tfa:
+      - email
+    doc: https://help.elderscrollsonline.com/app/answers/detail/a_id/8611
 
-    - name: Epic Games
-      url: https://www.epicgames.com/
-      img: epicgames.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://epicgames.helpshift.com/a/epic-accounts/?s=epic-accounts&f=what-is-two-factor-authentication-2fa-and-how-do-i-opt-in
+  - name: Electronic Arts (Origin)
+    url: https://www.ea.com/
+    img: ea.png
+    tfa:
+      - sms
+      - email
+      - phone
+      - totp
+    doc: https://help.ea.com/en-us/help/account/origin-login-verification-information/
 
-    - name: EVE Online
-      url: https://www.eveonline.com/
-      img: eveonline.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://support.eveonline.com/hc/en-us/articles/203465601-Two-Factor-Authentication-and-Authenticator
+  - name: Enjin
+    url: https://www.enjin.com/
+    img: enjin.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://support.enjin.com/hc/en-us/articles/201090770
+    exception: "2FA is only available on paid plans."
 
-    - name: FaceIT
-      url: https://www.faceit.com
-      img: faceit.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.faceit.com/hc/en-us/articles/115000254670-Enabling-2-Factor-Authentication-
+  - name: Epic Games
+    url: https://www.epicgames.com/
+    img: epicgames.png
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://www.epicgames.com/help/en-US/c74/c112/a3218
 
-    - name: Gaijin Entertainment
-      url: https://gaijin.net
-      img: gaijin.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.gaijin.net/hc/en-us/articles/203623622-How-to-set-up-the-Two-Step-Authorization-Google-Authenticator-
-      exceptions:
-          text: "A verified phone number is required for the use of two-factor authentication through email or software."
+  - name: ESL
+    url: https://www.eslgaming.com
+    img: esl.png
+    tfa:
+      - totp
+      - u2f
 
-    - name: GameFly
-      url: https://www.gamefly.com/
-      twitter: GameFly
-      facebook: gamefly
-      img: gamefly.png
-      tfa: No
+  - name: EVE Online
+    url: https://www.eveonline.com/
+    img: eveonline.png
+    tfa:
+      - email
+      - totp
+    doc: https://support.eveonline.com/hc/en-us/articles/203465601
 
-    - name: Gamesplanet
-      url: https://gamesplanet.com/
-      twitter: GamesplanetUK
-      facebook: gamesplanet
-      img: gamesplanet.png
-      tfa: No
-      email_address: help@gamesplanet.com
+  - name: FaceIT
+    url: https://www.faceit.com
+    img: faceit.png
+    tfa:
+      - totp
+    doc: https://support.faceit.com/hc/en-us/articles/115000254670
 
-    - name: Garena Online
-      url: https://www.garena.sg/
-      img: garena.png
-      tfa: Yes
-      software: Yes
-      doc: https://account.garena.com/
-      exceptions:
-          text: "A mobile phone and Garena account level 3 or higher is required for 2FA."
+  - name: Fanatical
+    url: https://www.fanatical.com
+    img: fanatical.png
+    tfa:
+      - totp
+    doc: https://support.fanatical.com/hc/en-us/articles/360002761397
 
-    - name: GeForce (Nvidia)
-      url: https://www.geforce.com/
-      twitter: NVIDIAGeForce
-      facebook: NVIDIAGeForce
-      img: geforce.png
-      tfa: No
+  - name: Gaijin Entertainment
+    url: https://gaijin.net
+    img: gaijin.png
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://support.gaijin.net/hc/en-us/articles/203623622
 
-    - name: GOG.com
-      url: https://www.gog.com
-      img: gog.png
-      tfa: Yes
-      email: Yes
-      doc: https://www.gog.com/support/support_view/twostep_login_faq
+  - name: GameFly
+    url: https://www.gamefly.com/
+    twitter: GameFly
+    facebook: gamefly
+    img: gamefly.png
 
-    - name: GREE
-      url: https://product.gree.net/
-      img: gree.png
-      tfa: Yes
-      software: Yes
-      doc: /notes/gree/
+  - name: Gamesplanet
+    url: https://gamesplanet.com/
+    twitter: GamesplanetUK
+    facebook: gamesplanet
+    img: gamesplanet.png
+    email_address: help@gamesplanet.com
 
-    - name: Guild Wars 2
-      url: https://www.guildwars2.com
-      img: guildwars2.png
-      sms: Yes
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://help.guildwars2.com/hc/en-us/articles/230672927-Securing-Your-Account-With-Authentication
+  - name: Garena Online
+    url: https://www.garena.sg/
+    img: garena.png
+    tfa:
+      - proprietary
+    exception: "A mobile phone is required for 2FA."
 
-    - name: Humble Bundle
-      url: https://www.humblebundle.com/
-      img: humble.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.humblebundle.com/hc/en-us/articles/202421374
+  - name: GeForce (Nvidia)
+    url: https://www.geforce.com/
+    twitter: NVIDIAGeForce
+    facebook: NVIDIAGeForce
+    img: geforce.png
 
-    - name: IndieGala
-      url: https://www.indiegala.com/
-      img: indiegala.png
-      twitter: IndieGala
-      facebook: IndieGala
-      tfa: No
+  - name: GOG.com
+    url: https://www.gog.com
+    img: gog.png
+    tfa:
+      - email
+    doc: https://support.gog.com/hc/en-us/articles/115003660533
 
-    - name: itch.io
-      url: https://itch.io/
-      img: itchio.png
-      tfa: Yes
-      software: Yes
-      doc: https://itch.io/docs/advanced/two-factor-authentication
+  - name: GREE
+    url: https://product.gree.net/
+    img: gree.png
+    tfa:
+      - totp
 
-    - name: Kinguin
-      url: https://www.kinguin.net
-      img: kinguin.png
-      tfa: Yes
-      email: Yes
+  - name: Guild Wars 2
+    url: https://www.guildwars2.com
+    img: guildwars2.png
+    tfa:
+      - sms
+      - totp
+    doc: https://help.guildwars2.com/hc/en-us/articles/230672927
 
-    - name: League of Legends
-      url: https://leagueoflegends.com
-      img: leagueoflegends.png
-      tfa: Yes
-      email: Yes
-      doc: https://support.riotgames.com/hc/en-us/articles/360010367273
+  - name: Hi-Rez Studios
+    url: https://www.hirezstudios.com/
+    img: hirez.png
+    tfa:
+      - email
+      - sms
 
-    - name: lichess.org
-      url: https://lichess.org
-      img: lichess.png
-      tfa: Yes
-      software: Yes
+  - name: Humble Bundle
+    url: https://www.humblebundle.com/
+    img: humble.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.humblebundle.com/hc/en-us/articles/202421374
 
-    - name: Mojang
-      url: https://mojang.com/
-      twitter: MojangSupport
-      img: mojang.png
-      tfa: No
-      
-    - name: Nexus Mods
-      url: https://www.nexusmods.com/
-      img: nexusmods.png
-      tfa: Yes
-      email: Yes
-      doc: https://help.nexusmods.com/article/74--
+  - name: IndieGala
+    url: https://www.indiegala.com/
+    img: indiegala.png
+    twitter: IndieGala
+    facebook: IndieGala
 
-    - name: Nintendo Account
-      url: https://accounts.nintendo.com/
-      img: nintendo-account.png
-      tfa: Yes
-      software: Yes
-      doc: https://en-americas-support.nintendo.com/app/answers/detail/a_id/27496
-      exceptions:
-          text: "2FA not available for child accounts (users 12 years of age or younger) or supervised accounts (users 13 years of age or older attached to a parent account)."
+  - name: itch.io
+    url: https://itch.io/
+    img: itchio.png
+    tfa:
+      - totp
+    doc: https://itch.io/docs/advanced/two-factor-authentication
 
-    - name: Nintendo Network
-      url: https://id.nintendo.net/
-      twitter: NintendoAmerica
-      facebook: Nintendo
-      img: nintendo-network.png
-      tfa: No
+  - name: Kinguin
+    url: https://www.kinguin.net
+    img: kinguin.png
+    tfa:
+      - email
 
-    - name: osu!
-      url: https://osu.ppy.sh
-      img: osu.png
-      tfa: Yes
-      email: Yes
+  - name: League of Legends
+    url: https://leagueoflegends.com
+    img: leagueoflegends.png
+    tfa:
+      - email
+    doc: https://support-leagueoflegends.riotgames.com/hc/en-us/articles/360010367273
 
-    - name: Playstation Network
-      url: https://www.playstation.com/
-      img: psn.png
-      tfa: Yes
-      sms: Yes
-      doc: https://www.playstation.com/en-us/account-security/2-step-verification/
+  - name: lichess.org
+    url: https://lichess.org
+    img: lichess.png
+    tfa:
+      - totp
 
-    - name: Roberts Space Industries
-      url: https://robertsspaceindustries.com/
-      img: robertsspaceindustries.png
-      tfa: Yes
-      software: Yes
-      email: Yes
-      doc: https://robertsspaceindustries.com/faq/two-step-authentication
+  - name: Mojang
+    url: https://mojang.com/
+    twitter: MojangSupport
+    img: mojang.png
 
-    - name: Roblox
-      url: https://roblox.com
-      img: roblox.png
-      tfa: Yes
-      email: Yes
-      doc: https://en.help.roblox.com/hc/en-us/articles/212459863
+  - name: Nexon
+    url: https://www.nexon.com
+    img: nexon.png
+    tfa:
+      - totp
+    doc: https://support.nexon.net/hc/en-us/articles/360025920992
 
-    - name: Rockstar Games Social Club
-      url: https://socialclub.rockstargames.com
-      img: rockstargames.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.rockstargames.com/hc/en-us/articles/360000031747-Setting-Up-2-Step-Verification-with-Social-Club
+  - name: Nexus Mods
+    url: https://www.nexusmods.com/
+    img: nexusmods.png
+    tfa:
+      - totp
+    doc: https://help.nexusmods.com/article/74--
 
-    - name: RuneScape
-      url: https://www.runescape.com/
-      img: runescape.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.runescape.com/hc/en-gb/articles/206811835-Setting-the-Authenticator-Mobile-Device
+  - name: Nintendo Account
+    url: https://accounts.nintendo.com/
+    img: nintendo-account.png
+    tfa:
+      - totp
+    doc: https://en-americas-support.nintendo.com/app/answers/detail/a_id/27496
+    exception: "2FA not available for child accounts (users 12 years of age or younger) or supervised accounts (users 13 years of age or older attached to a parent account)."
 
-    - name: Scryfall
-      url: https://www.scryfall.com/
-      img: scryfall.png
-      tfa: Yes
-      software: Yes
-      doc: https://scryfall.com/docs/privacy#scryfall-accounts
+  - name: Nintendo Network
+    url: https://id.nintendo.net/
+    twitter: NintendoAmerica
+    facebook: Nintendo
+    img: nintendo-network.png
 
-    - name: Square Enix
-      url: https://na.square-enix.com/
-      img: squarenix.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.square-enix.com/na/account/otp/
-      exceptions:
-          text: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
+  - name: osu!
+    url: https://osu.ppy.sh
+    img: osu.png
+    tfa:
+      - email
 
-    - name: "Star Wars: The Old Republic"
-      url: http://www.swtor.com/
-      img: swtor.png
-      tfa: Yes
-      software: Yes
-      hardware: Yes
-      doc: http://www.swtor.com/info/security-key
+  - name: Parsec
+    url: https://www.parsecgaming.com
+    img: parsec.png
+    tfa:
+      - totp
+    doc: https://support.parsecgaming.com/hc/en-us/articles/360015480691
 
-    - name: Stardock Corporation
-      url: https://www.stardock.com/
-      twitter: Stardock
-      facebook: official.stardock
-      img: stardock.png
-      tfa: No
+  - name: Playstation Network
+    url: https://www.playstation.com/
+    img: psn.png
+    tfa:
+      - sms
+      - totp
+    doc: https://playstation.com/support/2sv/
 
-    - name: Steam
-      url: https://store.steampowered.com/
-      img: steam.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030
-      exceptions:
-        text: "Software implementation requires use of the Steam Mobile app. Authentication on non-phone devices is not officially supported. SMS support is limited to receiving account recovery codes for password resets."
+  - name: Roberts Space Industries
+    url: https://robertsspaceindustries.com/
+    img: robertsspaceindustries.png
+    tfa:
+      - email
+      - totp
+    doc: https://support.robertsspaceindustries.com/hc/en-us/articles/115009965628
 
-    - name: Tibia
-      url: https://www.tibia.com/
-      img: tibia.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.tibia.com/support/?subtopic=gethelp&topicid=21
+  - name: Roblox
+    url: https://roblox.com
+    img: roblox.png
+    tfa:
+      - email
+    doc: https://en.help.roblox.com/hc/en-us/articles/212459863
 
-    - name: Toontown Rewritten
-      url: https://www.toontownrewritten.com/
-      img: toontownrewritten.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.toontownrewritten.com/help/faq/accounts--login#twostep
+  - name: Rockstar Games Social Club
+    url: https://socialclub.rockstargames.com
+    img: rockstargames.png
+    tfa:
+      - totp
+    doc: https://support.rockstargames.com/articles/360000031747
 
-    - name: Trion Worlds
-      url: https://www.trionworlds.com/en/
-      img: trionworlds.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://support.trionworlds.com/hc/en-us/articles/204183357-Adding-a-Mobile-Authenticator
+  - name: RuneScape
+    url: https://www.runescape.com/
+    img: runescape.png
+    tfa:
+      - totp
+    doc: https://support.runescape.com/hc/en-gb/articles/206811835
 
-    - name: Ubisoft/Uplay
-      url: https://uplay.ubi.com/
-      img: uplay.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.ubi.com/en-GB/Faqs/000025170/Secure-your-account-with-2-Step-Verification
+  - name: Scryfall
+    url: https://www.scryfall.com/
+    img: scryfall.png
+    tfa:
+      - totp
+    doc: https://scryfall.com/docs/privacy#scryfall-accounts
 
-    - name: Wargaming
-      url: https://wargaming.net/
-      tfa: Yes
-      software: Yes
-      img: wargaming.png
-      doc: https://wargaming.net/support/kb/articles/792
+  - name: Shadow
+    url: https://shadow.tech/
+    img: shadow.png
+    twitter: Shadow_Official
+    facebook: ShadowNorthAmerica
 
-    - name: Wizard101
-      url: https://www.wizard101.com
-      twitter: Wizard101
-      facebook: wizard101
-      email_address: support@wizard101.com
-      img: wizard101.png
-      tfa: No
+  - name: Speedrun.com
+    url: https://www.speedrun.com/
+    img: speedruncom.png
+    tfa:
+      - email
+    doc: https://www.speedrun.com/the_site/thread/g7osi/1
 
-    - name: Xbox Live
-      url: https://www.xbox.com/live
-      img: xbox.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      doc: https://support.microsoft.com/en-us/help/12408/
+  - name: Square Enix
+    url: https://na.square-enix.com/
+    img: squarenix.png
+    tfa:
+      - proprietary
+      - hardware
+    doc: http://www.square-enix.com/na/account/otp/
+    exception: "Software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game."
 
-    - name: YoYo Games
-      url: https://www.yoyogames.com/
-      img: yoyogames.png
-      tfa: Yes
-      email: Yes
-      software: Yes
-      doc: https://help.yoyogames.com/hc/en-us/articles/216757288-Creating-a-YoYo-Account
+  - name: 'Star Wars: The Old Republic'
+    url: https://www.swtor.com/
+    img: swtor.png
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.swtor.com/info/security-key
+
+  - name: Stardock Corporation
+    url: https://www.stardock.com/
+    twitter: Stardock
+    facebook: official.stardock
+    img: stardock.png
+
+  - name: Steam
+    url: https://store.steampowered.com/
+    img: steam.png
+    tfa:
+      - email
+      - proprietary
+    doc: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
+
+  - name: Tibia
+    url: https://www.tibia.com/
+    img: tibia.png
+    tfa:
+      - totp
+    doc: https://www.tibia.com/support/?subtopic=gethelp&topicid=21
+
+  - name: Toontown Rewritten
+    url: https://www.toontownrewritten.com/
+    img: toontownrewritten.png
+    tfa:
+      - totp
+    doc: https://www.toontownrewritten.com/help/faq/accounts--login#twostep
+
+  - name: Trion Worlds
+    url: https://www.trionworlds.com/en/
+    img: trionworlds.png
+    tfa:
+      - email
+      - proprietary
+    doc: https://support.trionworlds.com/hc/en-us/articles/204183357
+
+  - name: Ubisoft/Uplay
+    url: https://uplay.ubi.com/
+    img: uplay.png
+    tfa:
+      - email
+      - totp
+      - sms
+    doc: https://support.ubi.com/en-GB/Faqs/000039953
+
+  - name: Warframe
+    url: https://www.warframe.com/
+    img: warframe.png
+    tfa:
+      - email
+    doc: https://www.warframe.com/2fa-faq
+
+  - name: Wargaming
+    url: https://wargaming.net/
+    tfa:
+      - totp
+    img: wargaming.png
+    doc: https://eu.wargaming.net/support/en/products/wot/article/10568/
+
+  - name: Wizard101
+    url: https://www.wizard101.com
+    twitter: Wizard101
+    facebook: wizard101
+    email_address: support@wizard101.com
+    img: wizard101.png
+
+  - name: Xbox Live
+    url: https://www.xbox.com/live
+    img: xbox.png
+    tfa:
+      - sms
+      - email
+      - proprietary
+      - phone
+      - totp
+      - u2f
+    doc: https://support.microsoft.com/en-us/help/12408/
+    exception: "2FA phone calls may not be available in all regions"
+
+  - name: YoYo Games
+    url: https://www.yoyogames.com/
+    img: yoyogames.png
+    tfa:
+      - email
+      - totp
+    doc: https://github.com/2factorauth/twofactorauth/pull/4435#issuecomment-566448568

@@ -1,0 +1,73 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.repository == '2factorauth/twofactorauth'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/cache@v2
+        with:
+          path: vendor/cache
+          key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
+
+      - uses: actions/setup-ruby@v1
+
+      - name: Install dependencies
+        run: |
+          bundle config set path 'vendor/cache'
+          bundle config set cache_all true
+          bundle install --jobs 4 --retry 3
+          npm i babel-minify
+          sudo apt install webp -y &
+          [ -d "vendor/cache" ] || { bundle package; }
+
+      - name: Check file extensions
+        run: |
+          ./_deployment/tests/extensions.sh ${{ github.workspace }}/notes md
+          ./_deployment/tests/extensions.sh ${{ github.workspace }}/css scss
+          ./_deployment/tests/extensions.sh ${{ github.workspace }}/js js
+          ./_deployment/tests/extensions.sh ${{ github.workspace }}/_layouts html
+          ./_deployment/tests/extensions.sh ${{ github.workspace }}/_includes html
+          ./_deployment/tests/extensions.sh ${{ github.workspace }}/_data yml
+
+      - name: Build region sites
+        run: |
+          ruby ./_deployment/used_regions.rb > api/v2/regions.json
+          ruby ./_deployment/regions.rb --production
+
+      - name: Generate webp images
+        run: ./_deployment/webp.sh
+
+      - name: Generate API files
+        run: ./_deployment/api.rb
+
+      - name: Build the site
+        run: bundle exec jekyll build --config _config.yml,_deployment/config-production.yml
+
+      - name: Minify JavaScript files
+        run: ./_deployment/minify-js.sh
+
+      - name: Test HTML files
+        run: bundle exec rake proof
+        env:
+          NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+
+      - name: Test JSON files
+        run: bundle exec rake jsonlint
+
+      - name: Deploy to GH Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: _site
+          fqdn: twofactorauth.org
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

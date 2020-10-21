@@ -1,411 +1,484 @@
 websites:
-    - name: Adirondack Insurance Exchange
-      url: https://www.aie-ny.com/
-      img: adirondackinsurnaceexchange.png
-      tfa: No
+  - name: Adirondack Insurance Exchange
+    url: https://www.aie-ny.com/
+    img: adirondackinsurnaceexchange.png
+    email_address: service@ngic.com
 
-    - name: ADP
-      url: https://www.adp.com
-      twitter: ADP
-      facebook: AutomaticDataProcessing
-      img: adp.png
-      tfa: No
+  - name: Admiral (UK)
+    url: https://www.admiral.com
+    twitter: AdmiralUK
+    facebook: admiralUK
+    img: admiral.png
+    regions:
+      - gb
 
-    - name: AltoIRA
-      url: https://www.altoira.com
-      img: altoira.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.altoira.com/hc/en-us/articles/360007374654
+  - name: ADP
+    url: https://www.adp.com
+    twitter: ADP
+    facebook: AutomaticDataProcessing
+    img: adp.png
 
-    - name: Amundi (épargne salariale & retraite)
-      url: https://www.amundi-ee.com
-      twitter: Amundi_FR
-      img: amundiee.png
-      tfa: No
-      lang: fr
+  - name: Aetna
+    url: https://www.aetna.com/
+    img: aetna.png
+    twitter: Aetna
+    facebook: aetna
 
-    - name: Baden-Württembergische Bank
-      url: https://www.bw-bank.de/de/
-      tfa: No
-      img: bw_bank.png
-      lang: de
+  - name: Allianz
+    url: https://www.allianz.de/
+    img: allianz.png
+    tfa:
+      - sms
+    doc: https://www.allianz.de/datenschutz/allianz-deutschland-ag/online-service-meine-allianz/
 
-    - name: BGL Corporate Solutions
-      url: https://www.bglcorp.com/
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      img: bgl.png
-      doc: https://sf360.zendesk.com/hc/en-au/articles/360020963051
-      exceptions:
-        text: "2FA covers Simple Fund 360, CAS 360, BGL API and BGL Account. It doesn't cover BGL Client Centre."
+  - name: AltoIRA
+    url: https://www.altoira.com
+    img: altoira.png
+    tfa:
+      - totp
+    doc: https://help.altoira.com/enabling-/-disabling-two-factor-authentication-2fa
 
-    - name: Bitbond
-      url: https://www.bitbond.com
-      img: bitbond.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
+  - name: Amundi (épargne salariale &amp; retraite)
+    url: https://www.amundi-ee.com
+    twitter: Amundi_FR
+    img: amundiee.png
+    lang: fr
 
-    - name: Carta
-      url: https://carta.com/
-      img: carta.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.carta.com/article/388-2-factor-authentication
+  - name: AOK
+    url: https://www.aok.de/
+    img: aok.png
+    tfa:
+      - sms
+    doc: https://meine.aok.de/landingpage/faq
 
-    - name: ClearScore
-      url: https://www.clearscore.com
-      twitter: ClearScore
-      facebook: clearscore
-      img: clearscore.png
-      tfa: No
+  - name: BGL Corporate Solutions
+    url: https://www.bglcorp.com/
+    tfa:
+      - sms
+      - totp
+    img: bgl.png
+    doc: https://sf360.zendesk.com/hc/en-au/articles/360020963051
+    exception: "2FA covers Simple Fund 360, CAS 360, BGL API and BGL Account. It doesn't cover BGL Client Centre."
 
-    - name: Credit Karma
-      url: https://www.creditkarma.com
-      img: creditkarma.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
+  - name: Bitbond
+    url: https://www.bitbond.com
+    img: bitbond.png
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://github.com/2factorauth/twofactorauth/pull/2181#issuecomment-266315173
 
-    - name: DEGIRO
-      url: https://www.degiro.nl
-      img: degiro.png
-      tfa: Yes
-      software: Yes
+  - name: Carta
+    url: https://carta.com/
+    img: carta.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.carta.com/s/article/2-factor-authentication
 
-    - name: ditech
-      url: https://www.ditech.com
-      twitter: ditech
-      facebook: ditech
-      img: ditech.png
-      tfa: No
+  - name: ClearScore
+    url: https://www.clearscore.com
+    img: clearscore.png
+    tfa:
+      - sms
+    doc: https://help.clearscore.com/hc/en-us/sections/360003360940
 
-    - name: Exact Online
-      url: https://exact.com/
-      img: exact.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.exactonline.com/community/s/knowledge-base#All-All-HNO-Concept-general-security-gen-auth-totpc
+  - name: Concur
+    url: https://www.concur.com/
+    twitter: SAPConcur
+    facebook: SAPConcur
+    img: concur.png
 
-    - name: FreeAgent
-      url: https://www.freeagent.com
-      img: freeagent.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.freeagent.com/support/kb/getting-started/two-step-verification
+  - name: Credit Karma (UK), formerly Noddle
+    url: https://www.creditkarma.co.uk
+    img: creditkarma.png
+    twitter: useyournoddle
+    facebook: noddleuk
 
-    - name: FreeTaxUSA
-      url: https://www.freetaxusa.com/
-      img: freetaxusa.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      doc: https://www.freetaxusa.com/safe.jsp
+  - name: Credit Karma (US)
+    url: https://www.creditkarma.com
+    img: creditkarma.png
+    tfa:
+      - sms
+      - phone
+    doc: https://help.creditkarma.com/hc/en-us/articles/360001472366
 
-    - name: FreshBooks
-      url: https://www.freshbooks.com
-      img: freshbooks.png
-      twitter: freshbooks
-      facebook: FreshBooks
-      tfa: No
+  - name: DEGIRO
+    url: https://www.degiro.nl
+    img: degiro.png
+    tfa:
+      - totp
 
-    - name: Funding Circle
-      url: https://www.fundingcircle.com/
-      img: fundingcircle.png
-      twitter: fundingcircle
-      facebook: FundingCircleUK
-      tfa: No
+  - name: ditech
+    url: https://www.ditech.com
+    twitter: ditech
+    facebook: ditech
+    img: ditech.png
 
-    - name: Geico
-      url: https://www.geico.com/
-      img: geico.png
-      twitter: GEICO_Service
-      facebook: geico
-      tfa: No
+  - name: Equifax
+    url: https://www.equifax.com/
+    twitter: AskEquifax
+    facebook: Equifax
+    img: equifax.png
 
-    - name: Gusto
-      url: https://www.gusto.com
-      img: gusto.png
-      tfa: Yes
-      sms: Yes
-      doc: https://support.gusto.com/hc/en-us/articles/210838787-Two-Step-Authentication
+  - name: Exact Online
+    url: https://exact.com/
+    img: exact.png
+    tfa:
+      - totp
+    doc: https://support.exactonline.com/community/s/knowledge-base#All-All-HNO-Task-general-security-gen-auth-totpregphndsktpt
 
-    - name: Hargreaves Lansdown
-      url: https://www.hl.co.uk/
-      twitter: HLInvest
-      facebook: hargreaveslansdowninvest
-      img: hargreaveslansdown.png
-      tfa: No
+  - name: Experian Ltd
+    url: https://www.experian.co.uk/
+    img: experianltd.png
+    tfa:
+      - sms
+      - phone
 
-    - name: HelloWallet
-      url: https://www.hellowallet.com
-      twitter: keybank
-      facebook: keybank
-      img: hellowallet.png
-      tfa: No
+  - name: FreeAgent
+    url: https://www.freeagent.com
+    img: freeagent.png
+    tfa:
+      - totp
+    doc: https://www.freeagent.com/support/kb/getting-started/two-step-verification
 
-    - name: InEx Finance
-      url: https://www.inexfinance.com/
-      facebook: inex.finance
-      img: inex.png
-      tfa: No
+  - name: FreeTaxUSA
+    url: https://www.freetaxusa.com/
+    img: freetaxusa.png
+    tfa:
+      - sms
+      - phone
+      - email
+      - totp
+    doc: https://www.freetaxusa.com/faqsearch?search_keyword=authentication
 
-    - name: Intuit TurboTax
-      url: https://turbotax.intuit.com/
-      img: turbotax.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      email: Yes
-      software: Yes
-      doc: https://ttlc.intuit.com/questions/2902682-what-is-two-step-verification
+  - name: FreshBooks
+    url: https://www.freshbooks.com
+    img: freshbooks.png
+    twitter: freshbooks
+    facebook: FreshBooks
 
-    - name: Invoiced
-      url: https://invoiced.com/
-      img: invoiced.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.invoiced.com/knowledge_base/topics/setting-up-two-factor-authentication
+  - name: Funding Circle
+    url: https://www.fundingcircle.com/
+    img: fundingcircle.png
+    twitter: fundingcircle
+    facebook: FundingCircleUK
 
-    - name: Justworks
-      url: https://justworks.com/
-      img: justworks.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.justworks.com/hc/en-us/articles/360004477492-Two-Factor-Authentication
+  - name: Geico
+    url: https://www.geico.com/
+    img: geico.png
+    twitter: GEICO_Service
+    facebook: geico
 
-    - name: Kiva
-      url: https://www.kiva.org
-      twitter: Kiva
-      facebook: kiva
-      img: kiva.png
-      tfa: No
+  - name: Gerber Life Insurance
+    url: https://www.gerberlife.com
+    twitter: GerberLife
+    facebook: gerberlife
+    img: gerberlife.png
 
-    - name: Kualto
-      url: https://www.kualto.com
-      twitter: Kualto
-      img: kualto.png
-      tfa: No
+  - name: Gusto
+    url: https://www.gusto.com
+    img: gusto.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.gusto.com/1066223171
 
-    - name: LevelUp
-      url: https://www.thelevelup.com
-      twitter: TheLevelUp
-      facebook: LevelUpApp
-      img: levelup.png
-      tfa: No
+  - name: H&R Block
+    url: https://www.hrblock.com/
+    tfa:
+      - email
+      - totp
+      - sms
+    img: hrblock.png
 
-    - name: Linxo
-      url: https://www.linxo.com/
-      twitter: Linxo
-      facebook: Linxo
-      img: linxo.png
-      tfa: No
+  - name: Hargreaves Lansdown
+    url: https://www.hl.co.uk/
+    twitter: HLInvest
+    facebook: hargreaveslansdowninvest
+    img: hargreaveslansdown.png
 
-    - name: Metorik
-      url: https://www.metorik.com
-      img: metorik.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.metorik.com/article/22-how-can-i-enable-2fa-on-my-account
+  - name: HelloWallet
+    url: https://www.hellowallet.com
+    twitter: keybank
+    facebook: keybank
+    img: hellowallet.png
 
-    - name: Mint
-      url: https://www.mint.com
-      img: mint.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      software: Yes
-      doc: https://help.mint.com/Security/908045661
+  - name: Intuit TurboTax
+    url: https://turbotax.intuit.com/
+    img: turbotax.png
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://ttlc.intuit.com/questions/2902682
+    exception: "Software 2FA requires enabling SMS or phone call as a back-up."
 
-    - name: money by Envestnet | Yodlee
-      url: https://money.yodlee.com/
-      twitter: Yodlee
-      img: yodlee.png
-      tfa: No
+  - name: Invoice2go
+    url: https://invoice.2go.com/
+    img: invoice2go.png
+    tfa:
+      - email
+    doc: https://support.2go.com/hc/en-au/articles/360049057751
 
-    - name: Moneybird
-      url: https://www.moneybird.com/
-      img: moneybird.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.moneybird.nl/blog/twee-staps-verificatie/
+  - name: InvoiceBerry
+    url: https://www.invoiceberry.com/
+    img: invoiceberry.png
+    twitter: invoiceberry
+    facebook: Invoiceberry
 
-    - name: Nexonia
-      url: https://www.nexonia.com/
-      facebook: nexonia
-      twitter: nexonia
-      img: nexonia.png
-      tfa: No
+  - name: Invoiced
+    url: https://invoiced.com/
+    img: invoiced.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://support.invoiced.com/knowledge_base/topics/setting-up-two-factor-authentication
 
-    - name: Noddle
-      url: https://www.noddle.co.uk
-      twitter: useyournoddle
-      facebook: noodleuk
-      img: noddle.png
-      tfa: No
+  - name: Justworks
+    url: https://justworks.com/
+    img: justworks.png
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://help.justworks.com/hc/en-us/articles/360004477492
 
-    - name: Northwestern Mutual
-      url: https://www.northwesternmutual.com/
-      facebook: northwesternmutual
-      img: northwesternmutual.png
-      tfa: No
+  - name: Kiva
+    url: https://www.kiva.org
+    twitter: Kiva
+    facebook: kiva
+    img: kiva.png
 
-    - name: Paychex
-      url: https://www.paychex.com
-      img: paychex.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
+  - name: Kualto
+    url: https://www.kualto.com
+    twitter: Kualto
+    img: kualto.png
 
-    - name: Paycor
-      url: https://www.paycor.com
-      img: paycor.png
-      tfa: Yes
-      sms: Yes
-      email: Yes
-      phone: Yes
-      software: Yes
-      doc: https://www.paycor.com/security/how-to-keep-your-account-safe
+  - name: LevelUp
+    url: https://www.thelevelup.com
+    twitter: TheLevelUp
+    facebook: LevelUpApp
+    img: levelup.png
 
-    - name: Paytrust
-      url: http://paytrust.quicken.com
-      img: paytrust.png
-      tfa: Yes
-      phone: Yes
+  - name: Linxo
+    url: https://www.linxo.com/
+    twitter: Linxo
+    facebook: Linxo
+    img: linxo.png
 
-    - name: Pocketsmith
-      url: https://www.pocketsmith.com
-      img: pocketsmith.png
-      tfa: Yes
-      software: Yes
-      doc: https://learn.pocketsmith.com/article/167-two-factor-authentication-2fa-on-your-pocketsmith-account
+  - name: Metorik
+    url: https://www.metorik.com
+    img: metorik.png
+    tfa:
+      - totp
+    doc: https://help.metorik.com/article/22-how-can-i-enable-2fa-on-my-account
 
-    - name: Popmoney
-      url: https://www.popmoney.com
-      twitter: popmoney
-      facebook: popmoney
-      img: popmoney.png
-      tfa: No
+  - name: Mint
+    url: https://www.mint.com
+    img: mint.png
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://help.mint.com/Security/908045661
 
-    - name: President's Choice Financial
-      url: https://www.pcfinancial.ca
-      twitter: PCFinancial
-      facebook: PCFinancial
-      img: presidentschoice.png
-      tfa: No
+  - name: money by Envestnet | Yodlee
+    url: https://money.yodlee.com/
+    twitter: Yodlee
+    img: yodlee.png
 
-    - name: Progressive
-      url: https://www.progressive.com
-      twitter: Progressive
-      facebook: progressive
-      img: progressive.png
-      tfa: No
+  - name: Moneybird
+    url: https://www.moneybird.com/
+    img: moneybird.png
+    tfa:
+      - totp
+    doc: https://www.moneybird.nl/blog/twee-staps-verificatie/
 
-    - name: Quickbooks Online
-      url: https://www.quickbooks.com
-      img: quickbooks.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://accounts-help.lc.intuit.com/questions/1590157
+  - name: Nexonia
+    url: https://www.nexonia.com/
+    facebook: nexonia
+    twitter: nexonia
+    img: nexonia.png
 
-    - name: QuickFile
-      url: https://www.quickfile.co.uk
-      img: quickfile.png
-      tfa: Yes
-      software: Yes
-      doc: https://community.quickfile.co.uk/t/2-factor-authentication/8892
+  - name: Northwestern Mutual
+    url: https://www.northwesternmutual.com/
+    facebook: northwesternmutual
+    img: northwesternmutual.png
 
-    - name: Quizzle
-      url: https://www.quizzle.com
-      img: quizzle.png
-      tfa: No
-      twitter: Quizzle
+  - name: Paychex
+    url: https://www.paychex.com
+    img: paychex.png
+    tfa:
+      - sms
+      - phone
 
-    - name: Rocket Mortgage
-      url: https://www.rocketmortgage.com/
-      twitter: RocketMortgage
-      facebook: RocketMortgage
-      img: rocketmortgage.png
-      tfa: No
+  - name: Paycor
+    url: https://www.paycor.com
+    img: paycor.png
+    tfa:
+      - sms
+      - phone
+      - email
+    doc: https://www.paycor.com/security/how-to-keep-your-account-safe
 
-    - name: Shoeboxed
-      url: https://www.shoeboxed.com/
-      twitter: Shoeboxed
-      facebook: shoeboxed
-      img: shoeboxed.png
-      tfa: No
+  - name: Paytrust
+    url: http://paytrust.quicken.com
+    img: paytrust.png
+    tfa:
+      - phone
 
-    - name: SimpleTax
-      url: https://simpletax.ca/
-      img: simpletax.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.simpletax.ca/questions/two-factor-authentication
+  - name: Pocketsmith
+    url: https://www.pocketsmith.com
+    img: pocketsmith.png
+    tfa:
+      - totp
+    doc: https://learn.pocketsmith.com/article/167--
 
-    - name: Taxact
-      url: https://www.taxact.com
-      img: taxact.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      doc: https://www.taxact.com/support/24138/2016/how-is-a-verification-code-used
+  - name: Popmoney
+    url: https://www.popmoney.com
+    twitter: popmoney
+    facebook: popmoney
+    img: popmoney.png
 
-    - name: TransferWise
-      url: https://transferwise.com
-      img: transferwise.png
-      tfa: Yes
-      sms: Yes
-      phone: Yes
-      software: Yes
-      doc: https://transferwise.com/help/article/2811597/borderless-account/how-can-i-setup-2-step-login
-      exceptions:
-        text: "Software verification requires use of the TransferWise Mobile app. SMS-capable phone is required."
+  - name: President's Choice Financial
+    url: https://www.pcfinancial.ca
+    img: pcfinancial.png
+    tfa:
+      - sms
+      - phone
+      - email
 
-    - name: Treasury Direct
-      url: https://www.treasurydirect.gov
-      img: treasurydirect.png
-      tfa: Yes
-      email: Yes
+  - name: Principal
+    url: https://www.principal.com
+    img: principal.png
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://secure02.principal.com/publicvsupply/GetFile?fm=ww42&ty=VOP&EXT=.VOP
 
-    - name: Valic
-      url: https://www.valic.com/
-      facebook: valic
-      img: valic.png
-      tfa: No
+  - name: Progressive
+    url: https://www.progressive.com
+    twitter: Progressive
+    facebook: progressive
+    img: progressive.png
 
-    - name: Vitality
-      url: https://www.vitality.co.uk
-      twitter: Vitality_UK
-      facebook: VitalityUK
-      img: vitality.png
-      tfa: No
+  - name: PushCoin
+    url: https://pushcoin.com
+    img: pushcoin.png
+    tfa:
+      - hardware
+    doc: http://knowhow.pushcoin.com/using-security-key-for-2-step-verification/
+    exception: "U2F support only for school admin accounts. 2FA for parent accounts is in progress."
 
-    - name: WaveApps
-      url: https://www.waveapps.com
-      img: wave.png
-      tfa: No
-      twitter: WaveHQ
-      facebook: waveHQ
+  - name: Quickbooks Online
+    url: https://quickbooks.intuit.com/
+    img: quickbooks.png
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://accounts-help.lc.intuit.com/questions/1590157
+    exception: "TOTP 2FA only available after enabling SMS or phone 2FA."
 
-    - name: Xero
-      url: https://www.xero.com/
-      img: xero.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.xero.com/nz/MyXero_Two-Step_About
+  - name: QuickFile
+    url: https://www.quickfile.co.uk
+    img: quickfile.png
+    tfa:
+      - totp
+    doc: https://community.quickfile.co.uk/t/2-factor-authentication/8892
 
-    - name: You Need A Budget (YNAB)
-      url: https://www.youneedabudget.com/
-      twitter: ynab
-      facebook: iYNAB
-      img: ynab.png
-      tfa: No
+  - name: Quizzle
+    url: https://www.quizzle.com
+    img: quizzle.png
+    twitter: Quizzle
+
+  - name: Rocket Mortgage
+    url: https://www.rocketmortgage.com/
+    twitter: RocketMortgage
+    facebook: RocketMortgage
+    img: rocketmortgage.png
+
+  - name: SCHUFA
+    url: https://www.meineschufa.de/
+    twitter: SCHUFAHoldingAG
+    email_address: meineSCHUFA@SCHUFA.de
+    img: schufa.png
+    lang: de
+
+  - name: Shoeboxed
+    url: https://www.shoeboxed.com/
+    twitter: Shoeboxed
+    facebook: shoeboxed
+    img: shoeboxed.png
+
+  - name: SimpleTax
+    url: https://simpletax.ca/
+    img: simpletax.png
+    tfa:
+      - totp
+    doc: https://help.simpletax.ca/questions/two-factor-authentication
+
+  - name: Taxact
+    url: https://www.taxact.com
+    img: taxact.png
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://www.taxact.com/support/24138/2019/how-is-a-verification-code-used?hideLayout=True
+
+  - name: TransferWise
+    url: https://transferwise.com
+    img: transferwise.png
+    tfa:
+      - sms
+      - phone
+      - proprietary
+    doc: https://transferwise.com/help/12/managing-your-profile/2932125
+    exception: "SMS-capable phone is required."
+
+  - name: TransUnion
+    url: https://www.transunion.com/
+    twitter: TransUnion
+    img: transunion.png
+
+  - name: Treasury Direct
+    url: https://www.treasurydirect.gov
+    img: treasurydirect.png
+    tfa:
+      - email
+    doc: https://www.treasurydirect.gov/indiv/help/TDHelp/help_ug_274-SecFeaturesProtectAcctLearnMore.htm
+
+  - name: Valic
+    url: https://www.valic.com/
+    facebook: valic
+    img: valic.png
+
+  - name: Vitality
+    url: https://www.vitality.co.uk
+    twitter: Vitality_UK
+    facebook: VitalityUK
+    img: vitality.png
+
+  - name: Wave
+    url: https://www.waveapps.com
+    img: wave.png
+    twitter: WaveHQ
+    facebook: waveHQ
+
+  - name: Xero
+    url: https://www.xero.com/
+    img: xero.png
+    tfa:
+      - totp
+    doc: https://help.xero.com/nz/MyXero_Two-Step_About
+
+  - name: You Need A Budget (YNAB)
+    url: https://www.youneedabudget.com/
+    img: ynab.png
+    tfa:
+      - totp
+    doc: https://docs.youneedabudget.com/article/1364--

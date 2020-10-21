@@ -1,84 +1,100 @@
 websites:
-    - name: ecobee
-      url: https://ecobee.com
-      twitter: ecobee
-      facebook: ecobee
-      img: ecobee.png
-      tfa: No
+  - name: Arlo
+    url: https://www.arlo.com/
+    img: arlo.png
+    tfa:
+      - sms
+      - email
+      - proprietary
+    doc: https://kb.arlo.com/000062288
+    exception: "Email 2FA is always available as a backup."
 
-    - name: Nest
-      url: https://nest.com
-      img: nest.png
-      tfa: Yes
-      sms: Yes
-      doc: https://nest.com/support/article/How-to-use-2-step-verification-to-add-stronger-security-to-your-Nest-Account
+  - name: ecobee
+    url: https://ecobee.com
+    img: ecobee.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.ecobee.com/hc/en-us/articles/360040957212
 
-    - name: Netatmo
-      url: https://www.netatmo.com
-      twitter: NetatmoSupport
-      facebook: Netatmo
-      img: netatmo.png
-      tfa: No
+  - name: IFTTT
+    url: https://ifttt.com
+    img: ifttt.png
+    tfa:
+      - sms
+      - totp
+    doc: https://help.ifttt.com/hc/en-us/articles/115010193007
 
-    - name: Noke
-      url: https://noke.com
-      img: noke.png
-      tfa: No
-      twitter: NokeLocks
-      facebook: nokelocks
-      email_address: support@noke.com
+  - name: Nest
+    url: https://nest.com
+    img: nest.png
+    tfa:
+      - sms
+    doc: https://nest.com/support/article/How-to-use-2-step-verification-to-add-stronger-security-to-your-Nest-Account
 
-    - name: OnStar
-      url: https://www.onstar.com/
-      img: onstar.png
-      tfa: No
-      facebook: onstar
-      twitter: OnStar
+  - name: Netatmo
+    url: https://www.netatmo.com
+    twitter: NetatmoSupport
+    facebook: Netatmo
+    img: netatmo.png
 
-    - name: Ring
-      url: https://ring.com
-      img: ringcom.png
-      tfa: No
-      twitter: ring
-      facebook: ring
+  - name: Noke
+    url: https://noke.com
+    img: noke.png
+    twitter: NokeLocks
+    facebook: nokelocks
+    email_address: support@noke.com
 
-    - name: Samsung SmartThings
-      url: https://www.smartthings.com/
-      img: smartthings.png
-      tfa: Yes
-      sms: Yes
-      doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
+  - name: OnStar
+    url: https://www.onstar.com/
+    img: onstar.png
+    facebook: onstar
+    twitter: OnStar
 
-    - name: SimpliSafe
-      url: https://simplisafe.com/
-      twitter: SimpliSafe
-      facebook: SimpliSafe
-      img: simplisafe.png
-      tfa: No
+  - name: Ring
+    url: https://ring.com
+    img: ringcom.png
+    tfa:
+      - sms
+      - email
+    doc: https://support.ring.com/hc/en-us/articles/360039693891
 
-    - name: Solar.web
-      url: https://www.solarweb.com
-      img: solarweb.png
-      tfa: No
-      twitter: FroniusUSASolar
-      facebook: FroniusUSASolarEnergy
+  - name: Samsung SmartThings
+    url: https://www.smartthings.com/
+    img: smartthings.png
+    tfa:
+      - sms
+    doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
 
-    - name: Tesla
-      url: https://www.tesla.com
-      img: tesla.png
-      tfa: No
-      twitter: Tesla
+  - name: SimpliSafe
+    url: https://simplisafe.com/
+    twitter: SimpliSafe
+    facebook: SimpliSafe
+    img: simplisafe.png
 
-    - name: Total Connect Comfort
-      url: https://www.mytotalconnectcomfort.com
-      twitter: Honeywell_Home
-      facebook: honeywellhome
-      img: totalconnect.png
-      tfa: No
+  - name: Solar.web
+    url: https://www.solarweb.com
+    img: solarweb.png
+    twitter: FroniusUSASolar
+    facebook: FroniusUSASolarEnergy
 
-    - name: Wyze
-      url: https://www.wyzecam.com
-      img: wyze.png
-      tfa: No
-      twitter: WyzeCam
-      facebook: WyzeCam
+  - name: Tesla
+    url: https://www.tesla.com
+    img: tesla.png
+    tfa:
+      - totp
+    doc: https://www.tesla.com/support/multi-factor-authentication
+
+  - name: Total Connect Comfort
+    url: https://www.mytotalconnectcomfort.com
+    twitter: Honeywell_Home
+    facebook: honeywellhome
+    img: totalconnect.png
+
+  - name: Wyze
+    url: https://www.wyzecam.com
+    img: wyze.png
+    tfa:
+      - sms
+    doc: https://support.wyzecam.com/hc/en-us/articles/360024402052
+    exception: "2FA via SMS is only available for USA and Canada."

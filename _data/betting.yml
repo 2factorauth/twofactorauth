@@ -1,6 +1,21 @@
 websites:
-    - name: Betvictor
-      url: https://www.betvictor.com
-      img: betvictor.png
-      tfa: Yes
-      sms: Yes
+  - name: Betvictor
+    url: https://www.betvictor.com
+    img: betvictor.png
+    tfa:
+      - sms
+      - totp
+
+  - name: Cloudbet
+    url: https://www.cloudbet.com/
+    img: cloudbet.png
+    tfa:
+      - totp
+    doc: https://www.cloudbet.com/en/2_step_authentication
+
+  - name: win2day
+    url: https://www.win2day.at/
+    img: win2day.png
+    twitter: win2dayat
+    facebook: win2dayat
+    lang: de

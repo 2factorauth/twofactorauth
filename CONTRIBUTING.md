@@ -1,11 +1,10 @@
-Contributing to TwoFactorAuth.org
-=======================
+# Contributing to TwoFactorAuth.org
 
 All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
 
 To add a new site, go to the [data files](_data/) and get familiar with how it
-is setup. There is a section and corresponding file for each Category. Site icons
+is set up. There is a section and corresponding file for each category. Site icons
 are stored in folders corresponding to each of those categories in their own
 [folder](img/).
 
@@ -17,11 +16,12 @@ are stored in folders corresponding to each of those categories in their own
    If you want to test locally, instructions are listed below. Keep reading!
 2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
    preferred format. If possible, please also run the image through an optimizing
-   utility such as OptiPNG before committing it to the repo.
+   utility such as [TinyPNG][tinypng] before committing it to the repo and keep
+   the file to be under 2.5 kB.
 3. **HTTPS links**: All sites that support HTTPS should also be linked with an
    HTTPS address.
-4. **Alexa top 200k**: A new site, that is not already listed, has to be within the
-   Alexa top 200k ranking. You can check the ranking of a site [here](https://www.alexa.com/siteinfo).
+4. **Alexa top 200K**: A new site that is not already listed has to be within the
+   Alexa top 200,000 ranking. You can check the ranking of a site [here][alexa].
 5. **No 2FA providers**: We do not list 2FA providers, such as [Authy](https://authy.com/), [Duo](https://duo.com/) or [Google Authenticator](https://github.com/google/google-authenticator).
 6. **Be Awesome**: You need to be awesome. That is all.
 
@@ -39,19 +39,20 @@ everything for you.
    makes Jekyll watch for file changes.
 
 #### Testing with Bundler
-   To verify that your additions are fine, you can run the entire set of tests
-   locally which will check all links and images with:
 
-   ```bash
-   $ bundle exec rake
-   ```
+To verify that your additions are fine, you can run the entire set of tests
+locally which will check all links and images with:
 
-   However, this can take a while as there are roughly 900 links that it checks.
-   If you just wish to test your YAML changes, you can run:
+```bash
+$ bundle exec rake
+```
 
-   ```bash
-   $ bundle exec rake verify
-   ```
+However, this can take a while as there are roughly 900 links that it checks.
+If you just wish to test your YAML changes, you can run:
+
+```bash
+$ bundle exec rake verify
+```
 
 ### Using Vanilla Jekyll
 
@@ -90,11 +91,13 @@ View the complete list in the [EXCLUSION.md file][exclude].
 To add a new category, modify the `sections` value in [sections.yml](_data/sections.yml)
 and follow the template below:
 
-```yml
+```YAML
 - id: category-id
   title: Category Name
   icon: icon-class
 ```
+
+The `icon-class` value needs to be chosen from [Semantic-Ui][semantic-ui].
 
 Then create a new file in the `_data` directory with the same name as your section's
 id, using the `.yml` extension.
@@ -107,127 +110,88 @@ requirements](#a-note-on-definitions) of Two Factor Auth.
 If you are adding multiple sites to the TwoFactorAuth list, please create a new
 git branch for each website, and submit a separate pull request for each branch.
 More information regarding how to create new git branches can be found on
-[GitHub's Help Page](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/)
-or [DigitalOcean's Tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-git-branches).
+[GitHub's Help Page][github-tutorial]
+or [DigitalOcean's Tutorial][do-tutorial].
 
 Adding a new website should be pretty straight-forward. The `websites` array should
 already be defined; simply add a new website to it as shown in the following example:
 
-```yml
+```YAML
 websites:
   - name: Site Name
     url: https://www.site.com/
     img: site.png
-    tfa: Yes
-    sms: Yes
-    email: Yes
-    phone: Yes
-    software: Yes
-    hardware: Yes
+    tfa:
+      - sms
+      - email
+      - phone
+      - hardware
+      - proprietary (Software based 2FA that requires a special app to use)
+      - totp (Normal software 2FA)
+      - u2f
     doc: <link to site TFA documentation>
 ```
 
-The fields `name:`, `url:`, `img:`, `tfa:` are required for all entries.
+The fields `name`, `url`, `img`, `tfa` are required for all entries.
 
-#### Adding a site that *supports* TFA
+#### Adding a site that _supports_ TFA
 
-If a site does provide TFA, it is strongly recommended that you add the `doc:`
+If a site does provide TFA, it is strongly recommended that you add the `doc`
 field where public documentation is available. Other fields should be included
 if the website supports them. Any services that are not supported can be excluded.
-Sites supporting TFA should not have a `twitter`, `facebook` or `email_address` field.
+Sites supporting TFA must not have a `twitter`, `facebook` or `email_address` field.
 
-The following is an example of a website that *supports* TFA:
+The following is an example of a website that _supports_ TFA:
 
-```yml
-    - name: YouTube
-      url: https://www.youtube.com/
-      img: youtube.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      phone: Yes
-      hardware: Yes
-      doc: http://www.google.com/intl/en-US/landing/2step/features.html
+```YAML
+  - name: YouTube
+    url: https://www.youtube.com/
+    img: youtube.png
+    tfa:
+      - sms
+      - email
+      - phone
+      - hardware
+      - totp
+      - u2f
+    doc: https://www.google.com/intl/en-US/landing/2step/features.html
 ```
 
-#### Adding a site that *does not* support TFA
+#### Adding a site that _does not_ support TFA
 
-If a site does not provide TFA, the `twitter:` field should be included if the site uses
+If a site does not provide TFA, the `twitter` field should be included if the site uses
 Twitter. Facebook can also be included using the `facebook` field, as well as Email using
-the `email_address` field. If the website does not use the English language, the `lang:`
-field should also be included. The fields `sms:`, `email:`, `phone:`, `software:` and
-`hardware:` can be completely removed.
+the `email_address` field. If the website does not use the English language, the `lang`
+field should also be included. The fields `tfa` and `doc` can be completely removed.
 
-The following is an example of a website that *does not* support TFA:
+The following is an example of a website that _does not_ support TFA:
 
-```yml
+```YAML
     - name: Netflix
       url: https://www.netflix.com/us/
       twitter: Netflixhelps
       facebook: netflix
       email_address: example@netflix.com (Only if available and monitored)
       img: netflix.png
-      tfa: No
       lang: <ISO 639-1 language code> (Only for non-English websites)
 ```
 
-The `lang:` field is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
+The `lang` field is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
 
 ### Exceptions & Restrictions
 
-If a site doesn't support TFA in certain countries, you can note this on the
-website. There are 4 ways to customize how it is displayed:
+If a site is only available in certain countries or requires the user to do something out of the ordinary to set up 2FA, you can note this on the
+website.
 
-1. A default message acknowledging restrictions will be used with the following
-   config:
-
-   ```yml
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      tfa: Yes
-      sms: Yes
-      exceptions: Yes
-      doc: <link to site TFA documentation>
-   ```
-2. The message can be replaced with a custom set of words:
-
-   ```yml
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-          text: "Specific text goes here."
-      doc: <link to site TFA documentation>
-   ```
-3. The icon can be made into a link in which more details can be revealed such
-   as country specific info and anything else.
-
-   ```yml
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-          link: Yes
-      doc: <link to site TFA documentation>
-   ```
-4. 2 and 3 can be combined into:
-
-   ```yml
-    - name: Site Name
-      url: https://www.site.com/
-      img: site.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-          link: Yes
-          text: "Specific text can go here as well."
-      doc: <link to site TFA documentation>
-   ```
+```YAML
+ - name: Site Name
+   url: https://www.site.com/
+   img: site.png
+   tfa:
+     - sms
+   exception: "Specific text goes here."
+   doc: <link to site TFA documentation>
+```
 
 ### Pro Tips
 
@@ -241,21 +205,13 @@ website. There are 4 ways to customize how it is displayed:
 - If a site supports TFA, their Twitter and Facebook handles as well as their email address
   are not needed and can be left out for cleanliness.
 
-- If a site does not have TFA but there is documentation that they are adding
-  it, then use:
-
-  ```yml
-  tfa: No
-  status: <url to documentation>
-  ```
-
 ## A Note on Definitions
 
 A lot of people have different ideas of what constitutes Two Factor Auth and
 what doesn't, so it stands to reason that we should clarify a bit. For the
 purposes of this site, Two Factor Auth is defined as any service provided as a
-redundant layer for account *authentication*. Services that provide
-*authorization* redundancy are certainly appreciated, but should not be
+redundant layer for account _authentication_. Services that provide
+_authorization_ redundancy are certainly appreciated, but should not be
 considered Two Factor Auth.
 
 As an example, a site that prompts you for an authentication token following
@@ -267,8 +223,13 @@ For context, check out the discussion in issue [#242][242].
 
 [242]: https://github.com/2factorauth/twofactorauth/issues/242
 [exclude]: /EXCLUSION.md
-[bundler]: http://bundler.io/
+[bundler]: https://bundler.io/
 [gemfile]: /Gemfile
-[jekyll]: http://jekyllrb.com/
+[jekyll]: https://jekyllrb.com/
 [travis]: https://travis-ci.org/2factorauth/twofactorauth
-[yaml]: http://www.yaml.org/
+[yaml]: https://yaml.org/
+[alexa]: https://www.alexa.com/siteinfo
+[github-tutorial]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
+[do-tutorial]: https://www.digitalocean.com/community/tutorials/how-to-use-git-branches
+[tinypng]: https://tinypng.com/
+[semantic-ui]: https://semantic-ui.com/elements/icon.html

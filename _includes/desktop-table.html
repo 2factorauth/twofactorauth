@@ -1,96 +1,121 @@
 {% assign section_id = include.id-param %}
 {% assign section_title = include.title-param %}
-{% assign section_file = site.data[section_id] %}
-<div class="website-table desktop-table {{ section_id }}-table" id="{{ section_id }}-desktoptable">
-  <table class="ui celled table content-wrapper">
-    <thead>
-    <tr>
-      <th class="single line four wide"><h3>{{ section_title }}</h3></th>
-      <th class="two wide">Docs</th>
-      <th class="two wide">SMS</th>
-      <th class="two wide">Phone Call</th>
-      <th class="two wide">Email</th>
-      <th class="two wide">Hardware Token</th>
-      <th class="two wide">Software Token</th>
-    </tr>
+
+<div id="{{section_id}}-table" class="collapse category-table desktop-only">
+  <a id="{{section_id}}" class="category-href"></a>
+  <table class="table table-hover table-bordered table-bordered">
+    <thead class="sticky-top">
+      <tr>
+        <th scope="col">{{ section_title }}</th>
+        <th scope="col" class="icon-cell">Docs</th>
+        <th scope="col" class="icon-cell">SMS</th>
+        <th scope="col" class="icon-cell">Phone Call</th>
+        <th scope="col" class="icon-cell">Email</th>
+        <th scope="col" class="icon-cell">Hardware token</th>
+        <th scope="col" class="icon-cell">Software token</th>
+      </tr>
     </thead>
-    <tbody class="jets-content">
-    {% for website in section_file.websites %}
-    {% if website.lang and site.data.languages[website.lang] %}
-      {% assign progress_tweet = site.data.languages[website.lang].progress_tweet %}
-      {% assign workonit_tweet = site.data.languages[website.lang].work_tweet %}
-    {% else %}
-      {% assign progress_tweet = page.progress_tweet %}
-      {% assign workonit_tweet = page.workonit_tweet %}
-    {% endif %}
-    <tr class="desktop-tr">
-      {% if website.status %}
-        <td class="main progress">
-          {% include row-title.html section=section_id website=website type='desktop' %}
-          <div class="progress-info">
-            <a class="ui mini orange button" href="{{website.status}}" target="_blank">
-              <i class="star icon"></i> In Progress!
-            </a>
-          </div>
-        </td>
-        <td class="twitter progress" colspan="6">
-          <a class="ui twitter mini button"
-             href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
-             target="_blank"><i class="twitter icon"></i> {{page.link_progress}}</a>
-        </td>
-      {% elsif website.tfa %}
-        <td class="main positive">
-          {% include row-title.html section=section_id website=website type='desktop' %}
-        </td>
+    <tbody class="searchContainer">
+      {% for website in site.data[section_id].websites %}
 
-        <td class="positive icon">
-          {% if website.doc %}
-          <a href="{{ website.doc }}"><i class="book link large icon"></i></a>
-          {% endif %}
-        </td>
+        <tr class="table-{% if website.tfa %}success{%else %}danger{% endif %}">
 
-        <td class="positive icon">
-          {% if website.sms %}
-          <i class="checkmark large icon" title="SMS"></i>
-          {% endif %}
-        </td>
+          <td>
+            <div class="searchWords" style="display: none;">{{ website.name }}&nbsp;{{ website.url }}&nbsp;{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}</div>
+            <div class="row no-gutters">
+              <picture>
+                {% assign webp = website.img | replace: ".png", ".webp" %}
+                <source data-srcset="/img/{{section_id}}/{{webp}} 1x" type="image/webp">
+                <img class="logo lazyload{% if website.no_img_border %} no-border{%endif%}" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png" alt="">
+              </picture>
 
-        <td class="positive icon">
-          {% if website.phone %}
-          <i class="checkmark large icon" title="Phone"></i>
-          {% endif %}
-        </td>
+              <a class="site-name {% if website.exception %}exception-site{% endif %}" href="{{ website.url }}">{{ website.name }}</a>
 
-        <td class="positive icon">
-          {% if website.email %}
-          <i class="checkmark large icon" title="Email"></i>
-          {% endif %}
-        </td>
+              {% if website.exception %}
+                <i class="fas fa-exclamation-triangle exception" data-content="{{ website.exception }}"></i>
+              {% endif %}
+            </div>
+          </td>
 
-        <td class="positive icon">
-          {% if website.hardware %}
-          <i class="checkmark large icon" title="Hardware Token"></i>
-          {% endif %}
-        </td>
+          {% if website.tfa %}
+            {% assign tfa = website.tfa %}
 
-        <td class="positive icon">
-          {% if website.software %}
-          <i class="checkmark large icon" title="Software Token"></i>
+            <td class="icon-cell">
+              {% if website.doc %}
+                <a href="{{ website.doc }}">
+                  <i class="fas fa-book"></i>
+                </a>
+              {% endif %}
+            </td>
+
+            <td class="icon-cell">
+              {% if tfa contains "sms" %}
+                <i class="tfa-icon fas fa-check"></i>
+              {% endif %}
+            </td>
+
+            <td class="icon-cell">
+              {% if tfa contains "phone" %}
+                <i class="tfa-icon fas fa-check"></i>
+                {%endif%}</td>
+            </td>
+            <td class="icon-cell">
+              {% if tfa contains "email" %}
+                <i class="tfa-icon fas fa-check"></i>
+              {% endif %}
+            </td>
+
+            <td class="icon-cell">
+              <div class="row">
+                {% if tfa contains "hardware" %}
+                  <i class="tfa-icon fas fa-check col"></i>
+                {% endif %}
+
+                {% if tfa contains "u2f" %}
+                  <i class="tfa-icon u2f-icon col" title="U2F">
+                    <img alt="U2F" height="20" src="/img/u2f.svg" type="image/svg">
+                  </i>
+                {% endif %}
+              </div>
+            </td>
+
+            <td class="icon-cell">
+              <div class="row">
+                {% if tfa contains "totp" %}
+                  <i class="tfa-icon fas fa-check col"></i>
+                {% endif %}
+                {% if tfa contains "proprietary" %}
+                  <i class="tfa-icon fas fa-info col" title="Proprietary software based 2FA"></i>
+                {% endif %}
+              </div>
+            </td>
+          {% else %}
+
+            <td colspan="6">
+              Tell them to support 2FA!
+              <div class="social-button-group">
+                {% if website.twitter %}
+                  <div class="twitter-button social-button btn" data-twitter="{{ website.twitter }}" data-lang="{{ website.lang }}">
+                    <i class="fab fa-twitter"></i>
+                    On Twitter
+                  </div>
+                {% endif %}
+                {% if website.facebook %}
+                  <div class="facebook-button social-button btn" data-facebook="{{ website.facebook }}">
+                    <i class="fab fa-facebook-f"></i>
+                    On Facebook
+                  </div>
+                {% endif %}
+                {% if website.email_address %}
+                  <div class="email-button social-button btn" data-email="{{ website.email_address }}" data-lang="{{ website.lang }}">
+                    <i class="fas fa-envelope"></i>
+                    Via Email</div>
+                {% endif %}
+              </div>
+            </td>
           {% endif %}
-        </td>
-      {% else %}
-        <td class="main negative">
-          {% include row-title.html section=section_id website=website type='desktop' %}
-        </td>
-        <td class="twitter negative" colspan="6">
-          {% if website.twitter or website.facebook or website.email_address %}<span>{{page.link}} </span>{% endif %}
-          {% if website.twitter %} <a class="ui twitter mini button" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i> on Twitter</a>{% endif %}
-          {% if website.facebook %} <a class="ui facebook mini button" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i> on Facebook</a>{%endif%}
-          {% if website.email_address %} <a class="ui green mini button" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i> via Email</a>{% endif %}
-        </td>
-      {% endif %}
-    </tr>
-    {% endfor %}
+        </tr>
+      {% endfor %}
     </tbody>
   </table>
 </div>

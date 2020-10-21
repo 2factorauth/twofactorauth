@@ -1,299 +1,324 @@
 websites:
-    - name: 500px
-      url: https://500px.com/
-      img: 500px.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-        text: "A verified phone number is required for the use of two-factor authentication software."
-      doc: https://support.500px.com/hc/en-us/articles/205115877-How-do-I-setup-Two-Factor-Authentication
+  - name: 500px
+    url: https://web.500px.com/
+    twitter: 500px
+    facebook: 500px
+    img: 500px.png
 
-    - name: about.me
-      url: https://about.me
-      twitter: aboutdotme
-      img: aboutme.png
-      tfa: No
+  - name: about.me
+    url: https://about.me
+    twitter: aboutdotme
+    img: aboutme.png
 
-    - name: ASKfm
-      url: https://ask.fm/
-      img: askfm.png
-      tfa: No
-      twitter: askfm
-      facebook: askfmpage
+  - name: ArtStation
+    url: https://www.artstation.com/
+    twitter: ArtStationHQ
+    facebook: artstationhq
+    email_address: support@artstation.com
+    img: artstation.png
 
-    - name: Badoo
-      url: https://badoo.com
-      img: badoo.png
-      tfa: No
-      twitter: Badoo
+  - name: ASKfm
+    url: https://ask.fm/
+    img: askfm.png
+    twitter: askfm
+    facebook: askfmpage
 
-    - name: BiggerPockets
-      url: https://www.biggerpockets.com
-      img: biggerpockets.png
-      tfa: Yes
-      sms: Yes
-      doc: https://www.biggerpockets.com/forums/25/topics/232201
-     
-    - name: Bitly
-      url: https://bitly.com/
-      img: bitly.png
-      tfa: Yes
-      sms: Yes
-      doc: https://support.bitly.com/hc/en-us/articles/230650187-What-is-2-step-verification-
+  - name: Badoo
+    url: https://badoo.com
+    img: badoo.png
+    twitter: Badoo
 
-    - name: Buffer
-      url: https://bufferapp.com
-      img: bufferapp.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://blog.bufferapp.com/introducing-the-safest-social-media-publishing-on-the-web
+  - name: BiggerPockets
+    url: https://www.biggerpockets.com
+    img: biggerpockets.png
+    tfa:
+      - sms
+    doc: https://www.biggerpockets.com/forums/25/topics/232201
 
-    - name: DeviantArt
-      url: https://www.deviantart.com
-      twitter: DeviantArt
-      img: deviantart.png
-      tfa: No
+  - name: Bitly
+    url: https://bitly.com/
+    img: bitly.png
+    tfa:
+      - sms
+    doc: https://support.bitly.com/hc/en-us/articles/230650187
 
-    - name: Ello
-      url: https://ello.co
-      twitter: ellohype
-      facebook: ellohype
-      email_address: suggestions@ello.co
-      img: ello.png
-      tfa: No
+  - name: Buffer
+    url: https://bufferapp.com
+    img: bufferapp.png
+    tfa:
+      - sms
+      - totp
+    doc: https://blog.bufferapp.com/introducing-the-safest-social-media-publishing-on-the-web
 
-    - name: Facebook
-      url: https://facebook.com
-      img: facebook.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      hardware: Yes
-      doc: https://www.facebook.com/help/148233965247823
+  - name: DeviantArt
+    url: https://www.deviantart.com
+    twitter: DeviantArt
+    img: deviantart.png
 
-    - name: Flipboard
-      url: https://flipboard.com
-      img: flipboard.png
-      twitter: FlipboardCS
-      tfa: No
+  - name: Ello
+    url: https://ello.co
+    twitter: ellohype
+    facebook: ellohype
+    email_address: suggestions@ello.co
+    img: ello.png
 
-    - name: Foursquare
-      url: https://foursquare.com
-      twitter: Foursquare
-      img: foursquare.png
-      tfa: No
+  - name: Eventbrite
+    url: https://www.eventbrite.com/
+    twitter: eventbritehelp
+    facebook: Eventbrite
+    img: eventbrite.png
 
-    - name: Goodreads
-      url: https://www.goodreads.com
-      twitter: goodreads
-      img: goodreads.png
-      tfa: No
+  - name: Facebook
+    url: https://facebook.com
+    img: facebook.png
+    tfa:
+      - sms
+      - totp
+      - u2f
+    doc: https://www.facebook.com/help/148233965247823
+    exception: "Hardware 2FA requires also enabling a back-up method and is unsupported on mobile."
 
-    - name: HootSuite
-      url: https://hootsuite.com
-      img: hootsuite.png
-      tfa: Yes
-      software: Yes
-      doc: https://help.hootsuite.com/entries/22527304-Managing-Google-Authenticator
+  - name: Flickr
+    url: https://www.flickr.com
+    twitter: FlickrHelp
+    img: flickr.png
 
-    - name: ICQ
-      url: https://icq.com/
-      twitter: ICQ
-      facebook: ICQ
-      img: icq.png
-      tfa: No
+  - name: Flipboard
+    url: https://flipboard.com
+    img: flipboard.png
+    twitter: FlipboardCS
 
-    - name: Imgur
-      url: https://imgur.com
-      twitter: imgur
-      img: imgur.png
-      tfa: No
+  - name: Foursquare
+    url: https://foursquare.com
+    twitter: Foursquare
+    img: foursquare.png
 
-    - name: Instagram
-      url: https://www.instagram.com
-      img: instagram.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.instagram.com/566810106808145
+  - name: Glassdoor
+    url: https://glassdoor.com
+    img: glassdoor.png
+    twitter: Glassdoor
+    facebook: Glassdoor
+    email_address: feedback@glassdoor.com
 
-    - name: LinkedIn
-      url: https://linkedin.com
-      img: linkedin.png
-      tfa: Yes
-      sms: Yes
-      doc: https://help.linkedin.com/app/answers/detail/a_id/531/related/1
+  - name: Goodreads
+    url: https://www.goodreads.com
+    twitter: goodreads
+    img: goodreads.png
 
-    - name: LiveJournal
-      url: https://www.livejournal.com
-      twitter: LiveJournal
-      img: livejournal.png
-      tfa: No
+  - name: HootSuite
+    url: https://hootsuite.com
+    img: hootsuite.png
+    tfa:
+      - totp
+      - email
+    doc: https://help.hootsuite.com/hc/en-us/articles/204595950
+    exception: "Email is always enabled as backup method for Software Token."
 
-    - name: Lobsters
-      url: https://lobste.rs/
-      img: lobsters.png
-      tfa: Yes
-      software: Yes
-      doc: https://lobste.rs/s/1cyltz/two_factor_authentication_now_available
+  - name: ICQ
+    url: https://icq.com/
+    twitter: ICQ
+    facebook: ICQ
+    img: icq.png
 
-    - name: Medium
-      url: https://medium.com
-      img: medium.png
-      tfa: Yes
-      email: Yes
-      exceptions:
-        text: "Medium doesn't use passwords, instead emails a link to user to login"
+  - name: Imgur
+    url: https://imgur.com
+    twitter: imgur
+    img: imgur.png
 
-    - name: Meetup
-      url: https://www.meetup.com
-      twitter: meetup_support
-      img: meetup.png
-      tfa: No
+  - name: Instagram
+    url: https://www.instagram.com
+    img: instagram.png
+    tfa:
+      - sms
+      - totp
+    doc: https://help.instagram.com/566810106808145
 
-    - name: Minds
-      url: https://www.minds.com/
-      img: minds.png
-      tfa: Yes
-      sms: Yes
+  - name: LinkedIn
+    url: https://linkedin.com
+    img: linkedin.png
+    tfa:
+      - sms
+      - totp
+    doc: https://www.linkedin.com/help/linkedin/answer/544
 
-    - name: Newgrounds
-      url: https://www.newgrounds.com/
-      twitter: Newgrounds
-      email_address: support@newgrounds.com
-      facebook: newgrounds
-      img: newgrounds.png
-      tfa: No
+  - name: LiveJournal
+    url: https://www.livejournal.com
+    twitter: LiveJournal
+    img: livejournal.png
 
-    - name: Nextdoor
-      url: https://nextdoor.com
-      twitter: Nextdoor
-      img: nextdoor.png
-      tfa: No
+  - name: Lobsters
+    url: https://lobste.rs/
+    img: lobsters.png
+    tfa:
+      - totp
+    doc: https://lobste.rs/s/1cyltz/two_factor_authentication_now_available
 
-    - name: OkCupid
-      url: https://www.okcupid.com/
-      twitter: okcupid
-      facebook: okcupid
-      img: okcupid.png
-      tfa: No
+  - name: Medium
+    url: https://medium.com
+    img: medium.png
+    tfa:
+      - email
+    exception: "Medium doesn't use passwords, instead emails a link to user to login"
 
-    - name: Pinterest
-      url: https://pinterest.com
-      img: pinterest.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.pinterest.com/en/articles/two-factor-authentication
-      exceptions:
-        text: "Software authentication requires the Authy app."
+  - name: Meetup
+    url: https://www.meetup.com
+    twitter: meetup_support
+    img: meetup.png
 
-    - name: Plurk
-      url: https://plurk.com
-      img: plurk.png
-      tfa: Yes
-      software: Yes
+  - name: Minds
+    url: https://www.minds.com/
+    img: minds.png
+    tfa:
+      - sms
 
-    - name: Quora
-      url: https://www.quora.com
-      img: quora.png
-      tfa: No
-      twitter: Quora
+  - name: Newgrounds
+    url: https://www.newgrounds.com/
+    twitter: Newgrounds
+    email_address: support@newgrounds.com
+    facebook: newgrounds
+    img: newgrounds.png
 
-    - name: Reddit
-      url: https://www.reddit.com/
-      img: reddit.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.reddithelp.com/en/categories/using-reddit/your-reddit-account/how-set-two-factor-authentication
+  - name: Nextdoor
+    url: https://nextdoor.com
+    img: nextdoor.png
+    tfa:
+      - email
+    doc: https://help.nextdoor.com/s/article/About-2-Step-Verification
 
-    - name: Snapchat
-      url: https://www.snapchat.com/
-      img: snapchat.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.snapchat.com/en-US/article/enable-login-verification
+  - name: OkCupid
+    url: https://www.okcupid.com/
+    img: okcupid.png
+    tfa:
+      - sms
+    doc: https://help.okcupid.com/article/202--
 
-    - name: Stack Exchange
-      url: https://stackexchange.com/
-      twitter: StackExchange
-      img: stack_exchange.png
-      tfa: No
+  - name: Pinterest
+    url: https://pinterest.com
+    img: pinterest.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://help.pinterest.com/en/articles/two-factor-authentication
 
-    - name: Tumblr
-      url: https://www.tumblr.com/
-      img: tumblr.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://www.tumblr.com/docs/en/two_factor_auth
+  - name: Plurk
+    url: https://plurk.com
+    img: plurk.png
+    tfa:
+      - totp
+    doc: https://www.plurk.com/p/mrcii5
 
-    - name: Twitter
-      url: https://twitter.com
-      img: twitter.png
-      tfa: Yes
-      sms: Yes
-      exceptions:
-          text: "SMS only available on select providers. Phone number associated with account required for 2FA. 10 accounts per phone number, 1 phone number per account."
-      software: Yes
-      hardware: Yes
-      doc: https://support.twitter.com/articles/20170388
+  - name: Postcrossing
+    url: https://www.postcrossing.com/
+    img: postcrossing.png
+    facebook: postcrossing
+    twitter: postcrossing
 
-    - name: VanillaForums.com
-      url: https://vanillaforums.com
-      img: vanilla.png
-      tfa: No
-      twitter: vanilla
+  - name: Quora
+    url: https://www.quora.com
+    img: quora.png
+    twitter: Quora
 
-    - name: Viadeo
-      url: http://www.viadeo.com
-      img: viadeo.png
-      tfa: No
-      twitter: Viadeo
+  - name: Reddit
+    url: https://www.reddit.com/
+    img: reddit.png
+    tfa:
+      - totp
+    doc: https://www.reddithelp.com/hc/en-us/articles/360043470031
 
-    - name: VK
-      url: https://vk.com
-      img: vk.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://vk.com/page-59800369_47885415
+  - name: Short.io
+    url: https://short.io/
+    img: shortio.png
+    tfa:
+      - totp
+    doc: https://help.short.io/en/articles/4065798
 
-    - name: Weibo
-      url: https://www.weibo.com/
-      img: weibo.png
-      tfa: No
+  - name: Snapchat
+    url: https://www.snapchat.com/
+    img: snapchat.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.snapchat.com/en-US/article/enable-login-verification
 
-    - name: WordPress.com
-      url: https://wordpress.com
-      img: wordpress.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      exceptions:
-        text: "SMS required for 2FA."
-      doc: https://en.support.wordpress.com/security/two-step-authentication/
+  - name: Stack Exchange
+    url: https://stackexchange.com/
+    img: stack_exchange.png
+    email_address: team@stackexchange.com
+    twitter: StackExchange
 
-    - name: Wykop
-      url: https://www.wykop.pl
-      img: wykop.png
-      tfa: Yes
-      software: Yes
+  - name: Tumblr
+    url: https://www.tumblr.com/
+    img: tumblr.png
+    tfa:
+      - sms
+      - totp
+    doc: https://www.tumblr.com/docs/en/two_factor_auth
 
-    - name: XING
-      url: https://www.xing.com
-      img: xing.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://faq.xing.com/en/settings-security/two-factor-login-two-factor-authentication
+  - name: Twitter
+    url: https://twitter.com
+    img: twitter.png
+    tfa:
+      - sms
+      - totp
+      - u2f
+    doc: https://support.twitter.com/articles/20170388
+    exception: "Mobile apps do not support Hardware 2FA. Hardware 2FA requires enabling back-up method. Cannot add multiple security keys. SMS only available on select providers."
 
-    - name: Zocle
-      url: https://zocle.com/
-      img: zocle.png
-      tfa: Yes
-      sms: Yes
-      doc: https://zocle.com/knowledgebase/enabling-two-step-verification/
+  - name: VanillaForums.com
+    url: https://vanillaforums.com
+    img: vanilla.png
+    twitter: vanilla
+
+  - name: Viadeo
+    url: http://www.viadeo.com
+    img: viadeo.png
+    twitter: Viadeo
+
+  - name: VK
+    url: https://vk.com
+    img: vk.png
+    tfa:
+      - sms
+      - totp
+    doc: https://vk.com/page-777107_53677752
+
+  - name: Weibo
+    url: https://www.weibo.com/
+    img: weibo.png
+    twitter: SinaWeibo
+
+  - name: WordPress.com
+    url: https://wordpress.com
+    img: wordpress.png
+    tfa:
+      - sms
+      - totp
+    doc: https://en.support.wordpress.com/security/two-step-authentication/
+    exception: "SMS required for 2FA."
+
+  - name: Wykop
+    url: https://www.wykop.pl
+    img: wykop.png
+    tfa:
+      - totp
+
+  - name: XING
+    url: https://www.xing.com
+    img: xing.png
+    tfa:
+      - sms
+      - totp
+    doc: https://faq.xing.com/en/settings-security/two-factor-login-two-factor-authentication
+
+  - name: Yelp
+    url: https://www.yelp.com
+    twitter: yelpsupport
+    facebook: yelp
+    img: yelp.png
+
+  - name: Zocle
+    url: https://zocle.com/
+    img: zocle.png
+    tfa:
+      - sms
+    doc: https://zocle.com/knowledgebase/enabling-two-step-verification/

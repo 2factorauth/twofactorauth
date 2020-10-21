@@ -1,59 +1,80 @@
 {% assign section_id = include.id-param %}
 {% assign section_title = include.title-param %}
-{% assign section_file = site.data[section_id] %}
-<div class="website-table mobile-table {{ section_id }}-table" id="{{ section_id }}-mobiletable">
-  <div class="label">
-    <h3>{{ section_title }}</h3>
-  </div>
-  <div class="jets-content">
-    {% for website in section_file.websites %}
-    {% if website.lang and site.data.languages[website.lang] %}
-      {% assign progress_tweet = site.data.languages[website.lang].progress_tweet %}
-      {% assign workonit_tweet = site.data.languages[website.lang].work_tweet %}
-    {% else %}
-      {% assign progress_tweet = page.progress_tweet %}
-      {% assign workonit_tweet = page.workonit_tweet %}
-    {% endif %}
-    {% if website.status %}
-    <div class="main progress">
-      {% include row-title.html section=section_id website=website type='mobile' %}
-      <p>IN PROGRESS!</p>
 
-      <div>
-        <a class="ui twitter mini button"
-           href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{progress_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}"
-           target="_blank"><i class="twitter icon"></i> {{page.link_progress_mobile}}</a>
+<div class="collapse category-table mobile-only searchContainer" id="{{section_id}}-mobile-table">
+<h2 class="search-table-title">{{ section_title }}</h2>
+  {% for website in site.data[section_id].websites %}
+
+    <div class="col-11 {% if website.tfa %}table-success{%else%}table-danger{%endif%}">
+
+      <div class="searchWords" style="display: none;">{{ website.name }}&nbsp;{{ website.url }}&nbsp;{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}</div>
+      <!-- Title -->
+      <div class="site-title">
+        <a class="site-name" href="{{ website.url }}">
+          <img class="logo lazyload{% if website.no_img_border %} no-border{%endif%}" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png" alt="">
+          {{ website.name }}</a>
+          {% if website.exception %}
+                <i class="fas fa-exclamation-triangle exception" data-content="{{ website.exception }}"></i>
+          {% endif %}
       </div>
-    </div>
-    {% elsif website.tfa %}
-    <div class="main positive">
-      {% include row-title.html section=section_id website=website type='mobile' %}
-      <div class="methods">
-        {% if website.hardware %}<p><i class="checkmark small icon" title="Hardware"></i> Hardware</p>{% endif %}
-        {% if website.software %}<p><i class="checkmark small icon" title="Software"></i> Software</p>{% endif %}
-        {% if website.sms %}<p><i class="checkmark small icon" title="SMS"></i> SMS</p>{% endif %}
-        {% if website.phone %}<p><i class="checkmark small icon" title="Phone"></i> Phone</p>{% endif %}
-        {% if website.email %}<p><i class="checkmark small icon" title="Email"></i> Email</p>{% endif %}
-      </div>
-      {% if website.doc %}
-      <div class="button-group">
-        <a alt="Documentation" href="{{ website.doc }}" class="ui twitter mini button"><i class="large book icon"></i> Docs</a>
-      </div>
+
+      <!-- tfa options -->
+      {% if website.tfa %}
+        <div class="row row-cols-2">
+          {% for tfa in website.tfa %}
+
+            <div class="col text-success">
+              <i class="fas fa-check"></i>
+              <b>
+                {{ tfa | replace: "proprietary", "software" | replace: "hardware", "hardware" | capitalize | replace: "Sms", "SMS" | replace: "Totp", "TOTP" | replace: "U2f", "U2F" }}</b>
+            </div>
+
+          {% endfor %}
+
+        </div>
+
+        {% if website.doc %}
+          <div class="btn doc-btn col-11 col-sm-8 d-flex justify-content-center website-doc">
+            <a href="{{ website.doc }}">
+              <i class="fas fa-book"></i>
+              Read more
+            </a>
+          </div>
+        {% endif %}
+
+      {% else %}
+
+        <b class="text-danger">2FA not supported</b>
+        <div class="row justify-content-center">
+
+          {% if website.twitter %}
+
+            <div class="col ml-md-auto twitter-button social-button btn" title="Tweet them!" data-twitter="{{ website.twitter }}" data-lang="{{ website.lang }}">
+              <i class="fab fa-twitter"></i>
+            </div>
+
+          {% endif %}
+
+          {% if website.facebook %}
+
+            <div class="col facebook-button social-button btn" title="Contact them!" data-facebook="{{ website.facebook }}">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+
+          {% endif %}
+
+          {% if website.email_address %}
+
+            <div class="col email-button social-button btn" title="Email them!" data-email="{{ website.email_address }}" data-lang="{{ website.lang }}">
+              <i class="fas fa-envelope"></i>
+            </div>
+
+          {% endif %}
+
+        </div>
       {% endif %}
+
     </div>
-    {% else %}
-    <div class="main negative">
-      {% include row-title.html section=section_id website=website type='mobile' %}
-      <div class="methods">
-        <p><i class="ban small icon" title="None"></i> 2FA not supported</p>
-      </div>
-      <div class="button-group">
-        {% if website.twitter %} <a class="ui twitter mini button" alt="Twitter" href="https://twitter.com/share?url={{site.url|cgi_escape}}&amp;text={{workonit_tweet|replace:'TWITTERHANDLE',website.twitter|cgi_escape}}&amp;hashtags={{page.hash|cgi_escape}}" target="_blank"><i class="twitter icon"></i></a>{% endif %}
-        {% if website.facebook %} <a class="ui facebook mini button" alt="Facebook" href="https://facebook.com/{{website.facebook}}/" target="_blank"><i class="facebook icon"></i></a>{%endif%}
-        {% if website.email_address %} <a class="ui green mini button" alt="Email" href="mailto:{{website.email_address}}?subject=Support%20Two%20Factor%20Authentication" target="_blank"><i class="mail icon"></i></a>{% endif %}
-      </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-  </div>
+  {% endfor %}
+
 </div>

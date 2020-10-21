@@ -1,104 +1,127 @@
 websites:
-    - name: ActiveCollab
-      url: https://activecollab.com/
-      twitter: activecollab
-      img: activecollab.png
-      tfa: No
+  - name: ActiveCollab
+    url: https://activecollab.com/
+    twitter: activecollab
+    img: activecollab.png
 
-    - name: Any.do
-      url: https://web.any.do/
-      img: anydo.png
-      tfa: No
-      twitter: Anydo
-      facebook: Any.do
+  - name: Airtable
+    url: https://airtable.com
+    img: airtable.png
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://support.airtable.com/hc/en-us/articles/219409917
+    exception: "SMS must be enabled first and software 2FA can be bypassed by SMS."
 
-    - name: Asana
-      url: https://www.asana.com
-      img: asana.png
-      tfa: No
-      twitter: asana
+  - name: Any.do
+    url: https://web.any.do/
+    img: anydo.png
+    twitter: Anydo
+    facebook: Any.do
+    email_address: feedback@any.do
 
-    - name: Azendoo
-      url: https://app.azendoo.com
-      img: azendoo.png
-      tfa: No
-      twitter: azendoo
+  - name: Asana
+    url: https://www.asana.com
+    img: asana.png
+    twitter: asana
+    facebook: asana
+    email_address: support@asana.com
 
-    - name: Breeze
-      url: https://www.breeze.pm
-      img: breeze.png
-      tfa: No
-      twitter: BreezeTeam
-      facebook: breeze.pm
+  - name: Azendoo
+    url: https://app.azendoo.com
+    img: azendoo.png
+    twitter: azendoo
 
-    - name: ClickUp
-      url: https://clickup.com
-      img: clickup.png
-      tfa: Yes
-      sms: Yes
-      doc: https://docs.clickup.com/general/two-factor-authentication
+  - name: Breeze
+    url: https://www.breeze.pm
+    img: breeze.png
+    twitter: BreezeTeam
+    facebook: breeze.pm
 
-    - name: fruux
-      url: https://fruux.com
-      img: fruux.png
-      twitter: fruux
-      tfa: No
+  - name: ClickUp
+    url: https://clickup.com
+    img: clickup.png
+    tfa:
+      - sms
+    doc: https://docs.clickup.com/general/two-factor-authentication
 
-    - name: Microsoft To-Do
-      url: https://todo.microsoft.com/
-      img: microsofttodo.png
-      tfa: Yes
-      email: Yes
-      sms: Yes
-      software: Yes
-      doc: https://support.microsoft.com/en-us/help/12408/
+  - name: Clubhouse
+    url: https://clubhouse.io
+    img: clubhouse.png
+    tfa:
+      - totp
+    doc: https://help.clubhouse.io/hc/en-us/articles/360044506931
 
-    - name: Planio
-      url: https://plan.io
-      img: planio.png
-      tfa: Yes
-      software: Yes
-      doc: https://support.plan.io/news/133
+  - name: fruux
+    url: https://fruux.com
+    img: fruux.png
+    twitter: fruux
 
-    - name: Remember The Milk
-      url: https://www.rememberthemilk.com
-      twitter: rememberthemilk
-      facebook: rememberthemilk
-      img: rememberthemilk.png
-      tfa: No
+  - name: Meistertask
+    url: https://www.meistertask.com
+    img: meistertask.png
+    tfa:
+      - totp
+    doc: https://support.mindmeister.com/hc/en-us/articles/218901367
 
-    - name: Todoist
-      url: https://todoist.com
-      twitter: todoist
-      facebook: Todoist
-      email_address: support@todoist.com
-      img: todoist.png
-      tfa: No
+  - name: Microsoft To-Do
+    url: https://todo.microsoft.com/
+    img: microsofttodo.png
+    tfa:
+      - sms
+      - phone
+      - email
+      - proprietary
+      - totp
+      - u2f
+    doc: https://support.microsoft.com/en-us/help/12408/
+    exception: "2FA phone calls may not be available in all regions"
 
-    - name: Toggl
-      url: https://toggl.com
-      img: toggl.png
-      twitter: toggl
-      facebook: Toggl
-      tfa: No
+  - name: Planio
+    url: https://plan.io
+    img: planio.png
+    tfa:
+      - totp
+    doc: https://support.plan.io/news/133
 
-    - name: Toodledo
-      url: https://www.toodledo.com
-      img: toodledo.png
-      tfa: Yes
-      software: Yes
-      doc: https://www.toodledo.com/info/help.php#168
+  - name: Remember The Milk
+    url: https://www.rememberthemilk.com
+    twitter: rememberthemilk
+    facebook: rememberthemilk
+    img: rememberthemilk.png
+    email_address: help@rememberthemilk.com
 
-    - name: Trello
-      url: https://trello.com
-      img: trello.png
-      tfa: Yes
-      sms: Yes
-      software: Yes
-      doc: https://help.trello.com/article/993-enabling-two-factor-authentication-for-your-trello-account
+  - name: Tick
+    url: https://www.tickspot.com
+    img: tickspot.png
+    twitter: tickspot
+    email_address: support@tickspot.com
 
-    - name: Wunderlist
-      url: https://www.wunderlist.com
-      twitter: Wunderlist
-      img: wunderlist.png
-      tfa: No
+  - name: Todoist
+    url: https://todoist.com
+    twitter: todoist
+    facebook: Todoist
+    email_address: support@todoist.com
+    img: todoist.png
+
+  - name: Toggl
+    url: https://toggl.com
+    img: toggl.png
+    twitter: toggl
+    facebook: Toggl
+
+  - name: Toodledo
+    url: https://www.toodledo.com
+    img: toodledo.png
+    tfa:
+      - totp
+    doc: https://www.toodledo.com/info/help.php#168
+
+  - name: Trello
+    url: https://trello.com
+    img: trello.png
+    tfa:
+      - sms
+      - totp
+    doc: https://help.trello.com/article/993--
