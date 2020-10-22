@@ -575,6 +575,19 @@ websites:
     regions:
       - us
 
+  - name: University of Nebraska Medical Center
+    url: https://www.unmc.edu/
+    img: unmc.png
+    tfa:
+      - sms
+      - phone
+      - proprietary
+      - hardware
+      - u2f
+    doc: https://its.nebraska.edu/two-factor
+    regions:
+      - us
+
   - name: University of Nebraska-Lincoln
     url: https://www.unl.edu
     img: unl.png
@@ -601,19 +614,6 @@ websites:
     regions:
       - us
 
-  - name: University of Nebraska Medical Center
-    url: https://www.unmc.edu/
-    img: unmc.png
-    tfa:
-      - sms
-      - phone
-      - proprietary
-      - hardware
-      - u2f
-    doc: https://its.nebraska.edu/two-factor
-    regions:
-      - us
-
   - name: University of Nebraska-Omaha
     url: https://www.unomaha.edu/
     img: unomaha.png
@@ -626,7 +626,7 @@ websites:
     doc: https://www.unomaha.edu/information-technology-services/information-security/duo/index.php
     regions:
       - us
-      
+
   - name: University of Notre Dame
     url: https://www.nd.edu
     img: nd.png
