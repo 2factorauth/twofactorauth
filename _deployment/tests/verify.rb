@@ -15,7 +15,7 @@ require 'diffy'
 
 # Image max size (in bytes)
 @img_max_size_png = 2500
-@img_max_size_svg = 10240
+@img_max_size_svg = 10_240
 
 # Image dimensions
 @img_dimensions = [32, 32]
@@ -41,7 +41,7 @@ def test_img(img, name, imgs)
 
   # Check image dimensions
   error("#{name}: #{img} is not #{@img_dimensions.join('x')} pixels.", img)\
-    unless img.match?(/svg$/) or FastImage.size(img) == @img_dimensions
+    unless img.match?(/svg$/) || FastImage.size(img) == @img_dimensions
 
   test_img_file(img, name)
 end
