@@ -588,19 +588,6 @@ websites:
     regions:
       - us
 
-  - name: University of Nebraska-Lincoln
-    url: https://www.unl.edu
-    img: unl.png
-    tfa:
-      - sms
-      - phone
-      - proprietary
-      - hardware
-      - u2f
-    doc: https://its.unl.edu/services/duo/
-    regions:
-      - us
-
   - name: University of Nebraska-Kearney
     url: https://www.unk.edu/
     img: unk.png
@@ -611,6 +598,19 @@ websites:
       - hardware
       - u2f
     doc: https://www.unk.edu/offices/its/help_desk/identity-faq.php
+    regions:
+      - us
+
+  - name: University of Nebraska-Lincoln
+    url: https://www.unl.edu
+    img: unl.png
+    tfa:
+      - sms
+      - phone
+      - proprietary
+      - hardware
+      - u2f
+    doc: https://its.unl.edu/services/duo/
     regions:
       - us
 
