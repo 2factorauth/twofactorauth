@@ -24,11 +24,12 @@
             <div class="searchWords" style="display: none;">{{ website.name }}&nbsp;{{ website.url }}&nbsp;{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}</div>
             <div class="row no-gutters">
               <picture>
-                {% if website.img contains ".png" %}
-                {% assign webp = website.img | replace: ".png", ".webp" %}
-                <source data-srcset="/img/{{section_id}}/{{webp}} 1x" type="image/webp">
+                {% assign extension = website.img | split: "." | last %}
+                {% if extension == "png" %}
+                  {% assign webp = website.img | replace: ".png", ".webp" %}
+                  <source data-srcset="/img/{{section_id}}/{{webp}} 1x" type="image/webp">
                 {% endif %}
-                <img class="logo lazyload{% if website.no_img_border %} no-border{%endif%}" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png" alt="">
+                <img class="logo lazyload{% if website.no_img_border or extension == 'svg' %} no-border{%endif%}" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png" alt="">
               </picture>
 
               <a class="site-name {% if website.exception %}exception-site{% endif %}" href="{{ website.url }}">{{ website.name }}</a>
