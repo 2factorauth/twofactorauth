@@ -249,6 +249,46 @@ websites:
       - sms
       - email
 
+  - name: Bitwala
+    url: https://www.bitwala.com/
+    img: bitwala.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.bitwala.com/hc/en-gb/articles/360000613360
+    regions:
+      - AT
+      - BE
+      - BG
+      - CH
+      - CY
+      - CZ
+      - DE
+      - DK
+      - EE
+      - EL
+      - ES
+      - FI
+      - FR
+      - HR
+      - HU
+      - IE
+      - IS
+      - IT
+      - LI
+      - LT
+      - LU
+      - LV
+      - MT
+      - NL
+      - NO
+      - PL
+      - PT
+      - RO
+      - SE
+      - SI
+      - SK
+
   - name: Black Hills Federal Credit Union
     url: https://www.bhfcu.com
     img: bhfcu.png
