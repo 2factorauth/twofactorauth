@@ -14,7 +14,8 @@ require 'diffy'
 }.freeze
 
 # Image max size (in bytes)
-@img_max_size = 2500
+@img_max_size_png = 2500
+@img_max_size_svg = 10_240
 
 # Image dimensions
 @img_dimensions = [32, 32]
@@ -40,7 +41,7 @@ def test_img(img, name, imgs)
 
   # Check image dimensions
   error("#{name}: #{img} is not #{@img_dimensions.join('x')} pixels.", img)\
-    unless FastImage.size(img) == @img_dimensions
+    unless img.match?(/svg$/) || FastImage.size(img) == @img_dimensions
 
   test_img_file(img, name)
 end
@@ -52,8 +53,9 @@ def test_img_file(img, name)
     unless @img_extension.include?((File.extname(img)[1..-1])) && @img_extension.include?(FastImage.type(img)[1..-1])
 
   # Check image file size
-  unless File.size(img) <= @img_max_size
-    error("#{name}: #{img} must not be larger than #{@img_max_size} bytes. "  \
+  img_max_size = img.match?(/svg$/) ? @img_max_size_svg : @img_max_size_png
+  unless File.size(img) <= img_max_size
+    error("#{name}: #{img} must not be larger than #{img_max_size} bytes. "  \
           "It is currently #{File.size(img)} bytes.", img)
   end
 
