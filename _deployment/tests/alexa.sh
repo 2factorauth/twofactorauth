@@ -9,8 +9,9 @@ check_rank () {
     exit 0
   fi
 
+  res=0
   # Loop through all URLs
-  echo "${urls}" | while IFS= read -r url; do
+  for url in $urls; do
 
     # Get the domain from the URL
     domain="$(echo ${url} | cut -d'/' -f3)"
@@ -19,12 +20,13 @@ check_rank () {
     cmd="ruby alexa.rb ${domain}"
     $cmd
 
-    # Get exit code from the ruby script
-    status=$?
+    if [ $? -ne 0 ]; then
+      res=1
+    fi
 
-    # Echo ruby script output & exit with its status code
-    return $status
   done
+
+  return $res
 }
 
 check_rank
