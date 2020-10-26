@@ -9,7 +9,7 @@ check_facebook () {
     exit 0
   fi
 
-  res=0
+  status=0
   # Loop through all handles
   for handle in $handles; do
 
@@ -21,15 +21,15 @@ check_facebook () {
       echo -e "\e[32mFacebook page \"${handle}\" is valid.\e[39m"
     elif [ -z "$fb_handle" ]; then
       echo -e "\e[31mFacebook page \"${handle}\" not found.\e[39m"
-      res=1
+      status=1
     else
       echo -e "\e[31mFacebook handle \"${handle}\" should be \"${fb_handle}\".\e[39m"
-      res=1
+      status=1
     fi
 
   done
 
-  exit $res
+  exit $status
 }
 
 check_facebook

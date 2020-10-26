@@ -9,7 +9,7 @@ check_rank () {
     exit 0
   fi
 
-  res=0
+  status=0
   # Loop through all URLs
   for url in $urls; do
 
@@ -21,12 +21,12 @@ check_rank () {
     $cmd
 
     if [ $? -ne 0 ]; then
-      res=1
+      status=1
     fi
 
   done
 
-  return $res
+  return $status
 }
 
 check_rank

@@ -11,7 +11,7 @@ check_twitter () {
 
   gem i twitter --no-post-install-message --no-suggestions --minimal-deps --no-verbose -N -q --silent
 
-  res=0
+  status=0
   # Loop through all Twitter handles
   for handle in $handles; do
 
@@ -19,14 +19,14 @@ check_twitter () {
 
     if [ "$twitter" ]; then
       echo -e "\e[31m$twitter\e[39m"
-      res=1
+      status=1
     else
       echo -e "\e[32mTwitter handle \"${handle}\" is valid.\e[39m"
     fi
 
   done
 
-  exit $res
+  exit $status
 }
 
 check_twitter
