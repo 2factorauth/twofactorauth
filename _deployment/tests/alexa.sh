@@ -17,12 +17,7 @@ check_rank () {
     domain="$(echo ${url} | cut -d'/' -f3)"
 
     # Get Alexa rank for the domain
-    cmd="ruby alexa.rb ${domain}"
-    $cmd
-
-    if [ $? -ne 0 ]; then
-      status=1
-    fi
+    ruby alexa.rb ${domain} || status=1
 
   done
 
