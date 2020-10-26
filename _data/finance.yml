@@ -421,6 +421,14 @@ websites:
       - totp
     doc: https://help.simpletax.ca/questions/two-factor-authentication
 
+  - name: Swiss Life
+    url: https://www.swisslife.ch
+    img: swisslife.png
+    tfa:
+      - sms
+    regions:
+      - ch
+
   - name: Taxact
     url: https://www.taxact.com
     img: taxact.png
