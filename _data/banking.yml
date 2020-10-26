@@ -299,7 +299,7 @@ websites:
 
   - name: Caixadirecta
     url: https://www.cgd.pt/
-    tfa: 
+    tfa:
       - sms
     doc: https://www.cgd.pt/Ajuda/Seguranca/Pages/Autenticacao-Dupla-SMS-Token.aspx
     img: caixa_directa.png
@@ -1452,7 +1452,12 @@ websites:
     url: https://www.unionbank.com/
     twitter: UnionBank
     facebook: UnionBank
-    img: unionbank.png
+    img: bankigud.png
+
+      - name: Union Bank Israel (Bank Igud)
+        url: https://www.unionbank.co.il
+                facebook: igudbank
+        img: bankigud.png
 
   - name: US Bank
     url: https://www.usbank.com/
