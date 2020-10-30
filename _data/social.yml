@@ -225,6 +225,13 @@ websites:
       - totp
     doc: https://www.reddithelp.com/hc/en-us/articles/360043470031
 
+  - name: Restream.io
+    url: http://restream.io/
+    img: restream.png
+    tfa:
+      - totp
+    doc: https://support.restream.io/en/articles/870429
+
   - name: Short.io
     url: https://short.io/
     img: shortio.png
