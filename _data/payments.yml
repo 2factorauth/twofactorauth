@@ -153,8 +153,11 @@ websites:
 
   - name: Payoneer
     url: https://www.payoneer.com/
-    twitter: Payoneer
     img: payoneer.png
+    tfa:
+      - sms
+      - phone
+    doc: https://payoneer.custhelp.com/app/answers/detail/a_id/31268
 
   - name: PayPal
     url: https://www.paypal.com/
