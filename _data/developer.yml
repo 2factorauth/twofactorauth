@@ -641,6 +641,13 @@ websites:
       - sms
       - phone
 
+  - name: Webflow
+    url: https://webflow.com/
+    img: webflow.png
+    tfa:
+      - totp
+    doc: https://university.webflow.com/lesson/two-factor-authentication-2fa
+
   - name: Zapier
     url: https://zapier.com
     img: zapier.png
