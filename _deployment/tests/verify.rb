@@ -10,7 +10,7 @@ require 'diffy'
   # YAML tags for TFA Yes
   true => %w[doc],
   # YAML tags for TFA No
-  false => %w[status twitter facebook email_address lang]
+  false => %w[twitter facebook email_address lang]
 }.freeze
 
 # Image max size (in bytes)

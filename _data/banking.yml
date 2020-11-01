@@ -1,4 +1,14 @@
 websites:
+  - name: 1822direkt
+    url: https://www.1822direkt.de/
+    img: 1822direkt.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.1822direkt.de/service/sicherheitsportal/allgemeines-psd2/starke-kundenauthentifizierung/
+    regions:
+      - de
+
   - name: Actors Federal Credit Union
     url: https://www.actorsfcu.com/
     twitter: ActorsFCU
@@ -284,6 +294,14 @@ websites:
     regions:
       - us
 
+  - name: Bendigo Bank
+    url: https://www.bendigobank.com.au
+    img: bendigobank.png
+    facebook: BendigoBank
+    twitter: bendigobank
+    regions:
+      - au
+
   - name: Bethpage Federal Credit Union
     url: https://www.bethpagefcu.com/
     img: bfcu.png
@@ -382,6 +400,15 @@ websites:
     img: cdcfcu.png
     regions:
       - us
+
+  - name: Cembra Money Bank
+    url: https://www.cembra.ch/
+    img: cembra-money-bank.png
+    tfa:
+      - sms
+    doc: https://faq.cembra.ch/de/videos/login-mit-mtan/
+    regions:
+      - ch
 
   - name: Ceska Sporitelna
     url: https://www.csas.cz/en/
@@ -586,6 +613,16 @@ websites:
     doc: https://www.desjardins.com/securite/validation-2-etapes/
     regions:
       - ca
+
+  - name: Deutsche Apotheker- und &Auml;rztebank
+    url: https://www.apobank.de/
+    img: apobank.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.apobank.de/footer/tan-app.html
+    regions:
+      - de
 
   - name: Deutsche Bank
     url: https://www.deutsche-bank.de/
@@ -1169,6 +1206,16 @@ websites:
     regions:
       - de
 
+  - name: Nordea Suomi
+    url: https://www.nordea.fi/
+    img: nordea.png
+    tfa:
+      - proprietary
+      - hardware
+    doc: https://www.nordea.fi/en/personal/our-services/online-mobile-services/code-app.html
+    regions:
+      - fi
+
   - name: Nordea Sverige
     url: https://www.nordea.se/
     img: nordea.png
@@ -1179,7 +1226,7 @@ websites:
     regions:
       - se
 
-  - name: Nordnet Finland
+  - name: Nordnet Suomi
     url: https://www.nordnet.fi/
     img: nordnet.png
     twitter: nordnetFI
@@ -1426,6 +1473,16 @@ websites:
     lang: pt
     regions:
       - br
+
+  - name: Santander DE
+    url: https://www.santander.de/
+    img: santander.png
+    tfa:
+      - sms
+      - proprietary
+    doc: https://www.santander.de/privatkunden/service-kontakt/information/psd2/
+    regions:
+      - de
 
   - name: Santander PL
     url: https://santander.pl
@@ -1752,6 +1809,14 @@ websites:
     regions:
       - us
 
+  - name: Union Bank Israel (Bank Igud)
+    url: https://www.unionbank.co.il/
+    facebook: igudbank
+    img: bankigud.png
+    lang: he
+    regions:
+      - il
+
   - name: US Bank
     url: https://www.usbank.com/
     img: usbank.png
@@ -1822,14 +1887,6 @@ websites:
     img: wescom.png
     regions:
       - us
-
-  - name: Westminster Savings Credit Union (WSCU)
-    url: https://www.wscu.com/
-    twitter: wscu
-    facebook: westminstersavings
-    img: wscu.png
-    regions:
-      - ca
 
   - name: Widiba
     url: https://www.widiba.it

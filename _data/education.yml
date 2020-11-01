@@ -361,6 +361,12 @@ websites:
     regions:
       - ca
 
+  - name: Mendeley
+    url: https://www.mendeley.com
+    img: mendeley.png
+    twitter: MendeleySupport
+    facebook: mendeley
+
   - name: Miami University
     url: https://miamioh.edu/
     img: miamioh.png
@@ -391,6 +397,19 @@ websites:
     twitter: sqanews
     facebook: ScottishQualificationsAuthority
     img: mysqa.png
+    
+  - name: North Carolina State University
+    url: https://ncsu.edu
+    img: ncsu.png
+    tfa:
+      - sms
+      - phone
+      - proprietary
+      - totp
+      - u2f
+    doc: https://oit.ncsu.edu/it-security/2fa/
+    regions:
+      - us
 
   - name: Pennsylvania State University
     url: https://www.psu.edu/
@@ -400,7 +419,8 @@ websites:
       - phone
       - proprietary
       - hardware
-    doc: https://security.psu.edu/two-factor-authentication/
+      - u2f
+    doc: https://get2fa.psu.edu
     regions:
       - us
 

@@ -20,6 +20,15 @@ websites:
     tfa:
       - totp
 
+  - name: Bethesda
+    url: https://bethesda.net/
+    img: bethesda.png
+    tfa:
+      - totp
+      - sms
+    doc: https://help.bethesda.net/app/answers/detail/a_id/48931
+    exception: "SMS requires TOTP to be set up"
+
   - name: Black Desert Online
     url: https://www.blackdesertonline.com/
     img: bdo.png
@@ -48,6 +57,12 @@ websites:
     img: bohemia.png
     tfa:
       - totp
+
+  - name: CDKeys
+    url: https://www.cdkeys.com/
+    img: cdkeys.png
+    twitter: cdkeyscom
+    facebook: cdkeyscom
 
   - name: Elder Scrolls Online
     url: https://www.elderscrollsonline.com/
@@ -84,6 +99,13 @@ websites:
       - totp
     doc: https://www.epicgames.com/help/en-US/c74/c112/a3218
 
+  - name: ESL
+    url: https://www.eslgaming.com
+    img: esl.png
+    tfa:
+      - totp
+      - u2f
+
   - name: EVE Online
     url: https://www.eveonline.com/
     img: eveonline.png
@@ -98,7 +120,7 @@ websites:
     tfa:
       - totp
     doc: https://support.faceit.com/hc/en-us/articles/115000254670
-    
+
   - name: Fanatical
     url: https://www.fanatical.com
     img: fanatical.png
@@ -260,7 +282,8 @@ websites:
     img: psn.png
     tfa:
       - sms
-    doc: https://www.playstation.com/en-us/account-security/2-step-verification/
+      - totp
+    doc: https://playstation.com/support/2sv/
 
   - name: Roberts Space Industries
     url: https://robertsspaceindustries.com/
@@ -297,7 +320,7 @@ websites:
     tfa:
       - totp
     doc: https://scryfall.com/docs/privacy#scryfall-accounts
-    
+
   - name: Shadow
     url: https://shadow.tech/
     img: shadow.png
@@ -401,9 +424,11 @@ websites:
       - sms
       - email
       - proprietary
+      - phone
       - totp
       - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
+    exception: "2FA phone calls may not be available in all regions"
 
   - name: YoYo Games
     url: https://www.yoyogames.com/

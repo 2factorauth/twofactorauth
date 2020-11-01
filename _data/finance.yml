@@ -4,6 +4,14 @@ websites:
     img: adirondackinsurnaceexchange.png
     email_address: service@ngic.com
 
+  - name: Admiral (UK)
+    url: https://www.admiral.com
+    twitter: AdmiralUK
+    facebook: admiralUK
+    img: admiral.png
+    regions:
+      - gb
+
   - name: ADP
     url: https://www.adp.com
     twitter: ADP
@@ -127,7 +135,7 @@ websites:
     tfa:
       - sms
       - phone
-      
+
   - name: FreeAgent
     url: https://www.freeagent.com
     img: freeagent.png
@@ -210,8 +218,9 @@ websites:
   - name: Invoice2go
     url: https://invoice.2go.com/
     img: invoice2go.png
-    twitter: Invoice2go
-    facebook: invoice2go
+    tfa:
+      - email
+    doc: https://support.2go.com/hc/en-au/articles/360049057751
 
   - name: InvoiceBerry
     url: https://www.invoiceberry.com/
@@ -411,6 +420,14 @@ websites:
     tfa:
       - totp
     doc: https://help.simpletax.ca/questions/two-factor-authentication
+
+  - name: Swiss Life
+    url: https://www.swisslife.ch
+    img: swisslife.png
+    tfa:
+      - sms
+    regions:
+      - ch
 
   - name: Taxact
     url: https://www.taxact.com

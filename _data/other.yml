@@ -59,6 +59,14 @@ websites:
     twitter: bananatag
     facebook: trackemail
 
+  - name: Basic Attention Token
+    url: https://publishers.basicattentiontoken.org/
+    img: basicattentiontoken.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://support.brave.com/hc/en-us/articles/360021649491
+
   - name: CA Technologies
     url: https://www.ca.com/
     img: ca-technologies.png
@@ -311,7 +319,7 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://sicherheit.immobilienscout24.de/phishing/absicherung-login.html
+    doc: https://www.youtube.com/watch?v=37Tgxy3NoG4
     exception: "SMS is only available to commercial real estate providers."
 
   - name: Immowelt
@@ -328,7 +336,8 @@ websites:
     tfa:
       - sms
       - phone
-    doc: https://support.indeed.com/hc/en-us/articles/360000244123
+    doc: https://www.indeed.com/lead/two-factor-authentication
+    exception: "2FA is only available for employees and not for job seekers."
 
   - name: Indiegogo
     url: https://www.indiegogo.com/

@@ -116,13 +116,13 @@ websites:
   - name: VPN Unlimited
     url: https://vpnunlimitedapp.com/
     img: vpnunlimited.png
-    twitter: vpnunlimited
-    facebook: vpnunlimitedapp
-    email_address: support@keepsolid.com
+    tfa:
+      - totp
+      - email
+    doc: https://www.vpnunlimitedapp.com/help/manuals/two-factor-authentication
 
   - name: Windscribe
     url: https://windscribe.com
     img: windscribe.png
-    twitter: windscribecom
-    facebook: windscribe
-    email_address: support@windscribe.com
+    tfa:
+      - totp

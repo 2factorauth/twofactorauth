@@ -183,6 +183,12 @@ websites:
       - totp
     doc: https://help.compose.com/docs/two-factor-authentication
 
+  - name: Cookiebot
+    url: https://www.cookiebot.com/
+    img: cookiebot.png
+    twitter: CybotCorp
+    facebook: cybotcorp
+
   - name: Crowdin
     url: https://crowdin.com/
     img: crowdin.png
@@ -242,7 +248,7 @@ websites:
     img: fogbugz.png
     tfa:
       - totp
-    doc: https://support.fogbugz.com/hc/en-us/articles/360011256234
+    doc: https://support.fogbugz.com/hc/en-us/articles/360011262434
 
   - name: GitHub
     url: https://github.com
@@ -308,7 +314,7 @@ websites:
     img: itglue.png
     tfa:
       - totp
-    doc: https://kb.itglue.com/hc/en-us/articles/213293197
+    doc: https://support.itglue.com/hc/en-us/articles/360004933757
 
   - name: JetBrains
     url: https://jetbrains.com
@@ -372,13 +378,6 @@ websites:
     facebook: NewRelic
     img: newrelic.png
 
-  - name: Nexmo
-    url: https://www.nexmo.com/
-    img: nexmo.png
-    tfa:
-      - sms
-      - phone
-
   - name: npm
     url: https://www.npmjs.com/
     img: npm.png
@@ -389,8 +388,13 @@ websites:
   - name: NuGet
     url: https://www.nuget.org
     img: nuget.png
-    twitter: nuget
-    email_address: support@nuget.org
+    tfa:
+      - sms
+      - proprietary
+      - totp
+      - u2f
+      - phone
+    doc: https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication/
 
   - name: Packagist
     url: https://packagist.org
@@ -425,9 +429,11 @@ websites:
 
   - name: Pivotal Tracker
     url: https://www.pivotaltracker.com
-    twitter: pivotaltracker
-    facebook: pivotaltracker
     img: pivotaltracker.png
+    tfa:
+      - totp
+    doc: https://www.pivotaltracker.com/help/articles/two_factor_auth/
+    exception: "2FA only works on the web version. If enabled, you will not be able to use the mobile apps."
 
   - name: Plivo
     url: https://www.plivo.com
@@ -477,7 +483,6 @@ websites:
     url: https://readthedocs.org
     img: readthedocs.png
     email_address: hello@readthedocs.com
-    status: https://github.com/rtfd/readthedocs.org/issues/3523
 
   - name: ReadMe
     url: https://readme.io
@@ -628,6 +633,13 @@ websites:
       - totp
       - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
+
+  - name: Vonage
+    url: https://developer.nexmo.com/
+    img: vonage.png
+    tfa:
+      - sms
+      - phone
 
   - name: Zapier
     url: https://zapier.com
