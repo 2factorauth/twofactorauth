@@ -448,6 +448,13 @@ websites:
       - totp
     doc: https://www.taxact.com/support/24138/2019/how-is-a-verification-code-used?hideLayout=True
 
+  - name: Techniker Krankenkasse
+    url: https://www.tk.de/
+    img: techniker.png
+    tfa:
+      - proprietary
+    doc: https://www.tk.de/techniker/unternehmensseiten/unternehmen/die-tk-app/2023678
+
   - name: TransferWise
     url: https://transferwise.com
     img: transferwise.png
