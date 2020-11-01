@@ -45,6 +45,7 @@ websites:
     tfa:
       - totp
     doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
+    exception: "Setup requires SMS verification."
 
   - name: HEY
     url: https://hey.com/
