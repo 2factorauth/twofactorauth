@@ -639,6 +639,13 @@ websites:
       - totp
     doc: https://docs.webfaction.com/user-guide/control_panel.html#two-step-login
 
+  - name: Webflow
+    url: https://webflow.com/
+    img: webflow.png
+    tfa:
+      - totp
+    doc: https://university.webflow.com/lesson/two-factor-authentication-2fa
+
   - name: Wedos
     url: https://hosting.wedos.com
     img: wedos.png
