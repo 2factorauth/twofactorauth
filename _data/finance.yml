@@ -111,6 +111,15 @@ websites:
     tfa:
       - totp
 
+  - name: Deutsche Rentenversicherung
+    url: https://www.deutsche-rentenversicherung.de/
+    img: drv.png
+    tfa:
+      - hardware
+    doc: https://www.deutsche-rentenversicherung.de/DRV/DE/Online-Dienste/unsere_online-dienste.html
+    regions:
+      - de
+
   - name: ditech
     url: https://www.ditech.com
     twitter: ditech
