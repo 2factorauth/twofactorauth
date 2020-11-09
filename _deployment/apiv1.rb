@@ -35,7 +35,7 @@ YAML.load_file("#{data_dir}/sections.yml").each do |section|
         website_data['software'] = true if s.include?('totp') || s.include?('proprietary')
         website_data['hardware'] = true if s.include?('hardware') || s.include?('u2f')
       end
-      website_data['exceptions'] = ['text' => website['exception']] unless website['exception'].nil?
+      website_data['exceptions'] = { 'text' => website['exception'] } unless website['exception'].nil?
       unless website['doc'].nil?
         website_data['doc'] =
           website['doc'].start_with?('/notes/') ? "https://twofactorauth.org#{website['doc']}" : website['doc']
