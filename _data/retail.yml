@@ -435,7 +435,8 @@ websites:
     img: samsung.png
     tfa:
       - sms
-    doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
+      - totp
+    doc: https://account.samsung.com/membership/guide/2step/
 
   - name: Saturn
     url: https://www.saturn.de

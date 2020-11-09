@@ -17,7 +17,8 @@
             {% assign regions = site.data.regions | sort: "name" %}
             {% assign regions2 = regions | map: 'id' %}
             {% if regions2 contains baseurl %}
-              <span class="flag-icon flag-icon-{{ baseurl }}"></span>
+	      {% assign region = regions | where: 'id', baseurl %}
+              <span class="flag-icon {% if region.first.square_flag %}flag-icon-squared{% endif %} flag-icon-{{ baseurl }}"></span>
             {% else %}
               <i class="fas fa-globe-africa"></i>
             {% endif %}
@@ -28,7 +29,7 @@
               Global</a>
             {% for region in regions %}
               <a class="dropdown-item" href="/{{ region.id }}/">
-                <span class="flag-icon flag-icon-{{ region.id }}"></span>
+                <span class="flag-icon {% if region.square_flag %}flag-icon-squared{% endif %} flag-icon-{{ region.id }}"></span>
                 {{ region.name }}</a>
             {% endfor %}
           </div>

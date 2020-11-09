@@ -5,7 +5,7 @@ websites:
     tfa:
       - sms
       - proprietary
-    doc: https://www.1822direkt.de/service/sicherheitsportal/allgemeines-psd2/starke-kundenauthentifizierung/
+    doc: https://www.1822direkt.de/service/sicherheitsportal/sicheres-online-banking/
     regions:
       - de
 
@@ -249,6 +249,46 @@ websites:
       - sms
       - email
 
+  - name: Bitwala
+    url: https://www.bitwala.com/
+    img: bitwala.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.bitwala.com/hc/en-gb/articles/360000613360
+    regions:
+      - at
+      - be
+      - bg
+      - ch
+      - cy
+      - cz
+      - de
+      - dk
+      - ee
+      - es
+      - fi
+      - fr
+      - gr
+      - hr
+      - hu
+      - ie
+      - is
+      - it
+      - li
+      - lt
+      - lu
+      - lv
+      - mt
+      - nl
+      - "no"
+      - pl
+      - pt
+      - ro
+      - se
+      - si
+      - sk
+
   - name: Black Hills Federal Credit Union
     url: https://www.bhfcu.com
     img: bhfcu.png
@@ -299,7 +339,7 @@ websites:
 
   - name: Caixadirecta
     url: https://www.cgd.pt/
-    tfa: 
+    tfa:
       - sms
     doc: https://www.cgd.pt/Ajuda/Seguranca/Pages/Autenticacao-Dupla-SMS-Token.aspx
     img: caixa_directa.png
@@ -1453,6 +1493,14 @@ websites:
     twitter: UnionBank
     facebook: UnionBank
     img: unionbank.png
+
+  - name: Union Bank Israel (Bank Igud)
+    url: https://www.unionbank.co.il/
+    facebook: igudbank
+    img: bankigud.png
+    lang: he
+    regions:
+      - il
 
   - name: US Bank
     url: https://www.usbank.com/
