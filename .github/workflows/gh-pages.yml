@@ -46,7 +46,9 @@ jobs:
         run: ./_deployment/webp.sh
 
       - name: Generate API files
-        run: ./_deployment/api.rb
+        run: |
+          ./_deployment/apiv1.rb
+          ./_deployment/apiv2.rb
 
       - name: Build the site
         run: bundle exec jekyll build --config _config.yml,_deployment/config-production.yml
