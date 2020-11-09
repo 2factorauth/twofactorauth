@@ -61,9 +61,6 @@ jobs:
         env:
           NOKOGIRI_USE_SYSTEM_LIBRARIES: true
 
-      - name: Test JSON files
-        run: bundle exec rake jsonlint
-
       - name: Deploy to GH Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
