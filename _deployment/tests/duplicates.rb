@@ -10,7 +10,7 @@ urls = []
 YAML.load_file('_data/sections.yml').each do |section|
   YAML.load_file("_data/#{section['id']}.yml")['websites'].each do |website|
     domain = Addressable::URI.parse(website['url']).host
-    raise("Duplicate entries for #{domain}") if urls.include?(domain)
+    raise("::error:: Duplicate entries for #{domain}") if urls.include?(domain)
 
     urls << domain
   end
