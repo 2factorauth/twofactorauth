@@ -480,13 +480,6 @@ websites:
       - totp
     doc: https://blog.planethoster.com/securite-espace-client-planethoster/
 
-  - name: Rackspace
-    url: https://www.rackspace.com/
-    img: rackspace.png
-    tfa:
-      - sms
-    doc: https://support.rackspace.com/how-to/myrackspace-multi-factor-authentication/
-
   - name: RamNode
     url: https://www.ramnode.com
     img: ramnode.png
