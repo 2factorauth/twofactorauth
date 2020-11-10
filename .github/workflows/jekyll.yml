@@ -35,6 +35,9 @@ jobs:
         ./_deployment/tests/extensions.sh ${{ github.workspace }}/_includes html
         ./_deployment/tests/extensions.sh ${{ github.workspace }}/_data yml
 
+    - name: Run duplicate check
+      run: ./_deployment/tests/duplicates.rb
+
     - name: Build site
       run: bundle exec jekyll build --config _config.yml _deployment/config-production.yml
       timeout-minutes: 1

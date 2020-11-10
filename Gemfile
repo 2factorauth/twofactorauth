@@ -9,6 +9,7 @@ group :jekyll_plugins do
 end
 
 group :test do
+  gem 'addressable'
   gem 'diff-lcs', platforms: :mswin
   gem 'diffy'
   gem 'fastimage'
