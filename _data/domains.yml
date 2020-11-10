@@ -528,15 +528,6 @@ websites:
     doc: https://help.united-domains.de/faq-article/wie-aktiviere-ich-die-zweistufige-verifizierung-und-mache-mein-portfolio-login-sicherer
     exception: "A phone number is required to enable two-factor authentication."
 
-  - name: VentraIP
-    url: https://ventraip.com.au/
-    img: ventraip.png
-    tfa:
-      - sms
-      - email
-      - totp
-    doc: https://ventraip.com.au/faq/article/two-factor-authentication-faq-vipcontrol/
-
   - name: Verio
     url: https://www.verio.com/
     twitter: verio
