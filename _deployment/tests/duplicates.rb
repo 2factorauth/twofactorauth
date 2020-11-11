@@ -16,7 +16,7 @@ YAML.load_file('_data/sections.yml').each do |section|
 
       urls << domain
     rescue StandardError => e
-      print "\e[31m::error:: #{e}\e[39m\n"
+      print "::error:: \e[31m#{e}\e[39m\n"
       errors ||= true
     end
   end
