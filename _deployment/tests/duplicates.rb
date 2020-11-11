@@ -7,11 +7,19 @@ require 'uri/http'
 require 'addressable/uri'
 
 urls = []
+errors = false
 YAML.load_file('_data/sections.yml').each do |section|
   YAML.load_file("_data/#{section['id']}.yml")['websites'].each do |website|
-    domain = Addressable::URI.parse(website['url']).host
-    raise("::error:: Duplicate entries for #{domain}") if urls.include?(domain)
+    begin
+      domain = Addressable::URI.parse(website['url']).host
+      raise("Duplicate entries for #{domain}") if urls.include?(domain)
 
-    urls << domain
+      urls << domain
+    rescue StandardError => e
+      print "\e[31m::error:: #{e}\e[39m\n"
+      errors ||= true
+    end
   end
 end
+
+exit(true) if errors
