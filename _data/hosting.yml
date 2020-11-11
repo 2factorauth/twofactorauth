@@ -590,14 +590,6 @@ websites:
     regions:
       - ua
 
-  - name: UpCloud
-    url: https://www.upcloud.com
-    img: upcloud.png
-    tfa:
-      - totp
-    doc: https://www.upcloud.com/support/two-factor-authentication/
-    exception: "SMS is required for password recovery."
-
   - name: VentraIP
     url: https://ventraip.com.au
     img: ventraip.png
