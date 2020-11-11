@@ -22,4 +22,4 @@ YAML.load_file('_data/sections.yml').each do |section|
   end
 end
 
-exit(true) if errors
+exit(1) if errors
