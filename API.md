@@ -12,7 +12,7 @@
 
 |Key|Value|Always required|Description|
 |---|-----|---------------|-----------|
-|url|URL|:heavy_check_mark:|URL to the main page of the site|
+|url|URL|:heavy_check_mark:|URL to the main page of the site/service|
 |img|String|:heavy_check_mark:|Image name used|
 |tfa|Boolean|:heavy_check_mark:|2FA support|
 |sms|Boolean||SMS token support|
@@ -21,7 +21,7 @@
 |software|Boolean||Software token support (including RFC-6238)|
 |hardware|Boolean||Hardware token support (including U2F-tokens)|
 |doc|URL||URL to documentation page|
-|exceptions|Array\<Map>||Array containing the key `text` describing any discrepancies in the 2FA implementation|
+|exceptions|Mapping\<"text": String>||Array containing the key `text` describing any discrepancies in the 2FA implementation|
 |twitter|String||Twitter handle|
 |facebook|String||Facebook page name|
 |email_address|String||Email address to support|
@@ -56,7 +56,10 @@
       "email": true,
       "software": true,
       "hardware": true,
-      "doc": "https://example.com/documention/enable-2fa/"
+      "doc": "https://example.com/documention/enable-2fa/",
+      "exceptions": {
+        "text": "Text describing any discrepancies in the 2FA implementation."
+      }
     }   
   }
 }
@@ -83,16 +86,16 @@ If a website only supports some 2FA methods, the unsupported 2FA methods won't b
 
 ### Elements
 
-|Key|Value|Always required|Required for 2FA|Description|
-|---|-----|---------------|----------------|-----------|
-|url|URL|:heavy_check_mark:||URL to the main page of the site|
-|img|String|:heavy_check_mark:||Image name used|
-|tfa|Array\<String>||:heavy_check_mark:|Array containing all supported 2FA methods|
-|doc|URL|||URL to documentation page|
-|exception|String|||Text describing any discrepancies in the 2FA implementation|
-|twitter|String|||Twitter handle|
-|facebook|String|||Facebook page name|
-|email_address|String|||Email address to support|
+|Key|Value|Always required|Description|
+|---|-----|---------------|-----------|
+|url|URL|:heavy_check_mark:|URL to the main page of the site/service|
+|img|String|:heavy_check_mark:|Image name used|
+|tfa|Sequence\<String>||Array containing all supported 2FA methods|
+|doc|URL||URL to documentation page|
+|exception|String||Text describing any discrepancies in the 2FA implementation|
+|twitter|String||Twitter handle|
+|facebook|String||Facebook page name|
+|email_address|String||Email address to support|
 
 ### Example website with 2FA enabled
 
