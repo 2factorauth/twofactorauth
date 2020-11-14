@@ -21,7 +21,7 @@
 |software|Boolean||Software token support (including RFC-6238)|
 |hardware|Boolean||Hardware token support (including U2F-tokens)|
 |doc|URL||URL to documentation page|
-|exceptions|Mapping\<"text": String>||Array containing the key `text` describing any discrepancies in the 2FA implementation|
+|exceptions|Object\<"text": String>||Object containing the key `text` describing any discrepancies in the 2FA implementation|
 |twitter|String||Twitter handle|
 |facebook|String||Facebook page name|
 |email_address|String||Email address to support|
@@ -90,7 +90,7 @@ If a website only supports some 2FA methods, the unsupported 2FA methods won't b
 |---|-----|---------------|-----------|
 |url|URL|:heavy_check_mark:|URL to the main page of the site/service|
 |img|String|:heavy_check_mark:|Image name used|
-|tfa|Sequence\<String>||Array containing all supported 2FA methods|
+|tfa|Array\<String>||Array containing all supported 2FA methods|
 |doc|URL||URL to documentation page|
 |exception|String||Text describing any discrepancies in the 2FA implementation|
 |twitter|String||Twitter handle|
