@@ -28,7 +28,7 @@
 
 ### Example website with 2FA disabled
 
-```YAML
+```JSON
 {
   "Category name": {
     "Website name": {
@@ -43,7 +43,7 @@
 
 ### Example website with 2FA enabled
 
-```YAML
+```JSON
 {
   "Category name": {
     "Website name": {
