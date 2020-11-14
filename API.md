@@ -3,18 +3,37 @@
 ## Version 1 (Deprecated) :warning:
 
 ### URIs
+
 |URI|Coverage|
-|---|-----------|
+|---|--------|
 |https://twofactorauth.org/api/v1/data.json|All sites|
+
+### Elements
+
+|Key|Value|Always required|Description|
+|---|-----|---------------|-----------|
+|url|URL|:heavy_check_mark:|URL to the main page of the site|
+|img|String|:heavy_check_mark:|Image name used|
+|tfa|Boolean|:heavy_check_mark:|2FA support|
+|sms|Boolean||SMS token support|
+|phone|Boolean||Phone call support|
+|email|Boolean||Email token support|
+|software|Boolean||Software token support (including RFC-6238)|
+|hardware|Boolean||Hardware token support (including U2F-tokens)|
+|doc|URL||URL to documentation page|
+|exceptions|Array\<Map>||Array containing the key `text` describing any discrepancies in the 2FA implementation|
+|twitter|String||Twitter handle|
+|facebook|String||Facebook page name|
+|email_address|String||Email address to support|
 
 ### Example website with 2FA disabled
 
 ```YAML
 {
-  "Category name" {
+  "Category name": {
     "Website name": {
       "name": "Website name",
-      "url": "https://example.com",
+      "url": "https://example.com/",
       "img": "example.png",
       "tfa": false
     }   
@@ -26,10 +45,10 @@
 
 ```YAML
 {
-  "Category name" {
+  "Category name": {
     "Website name": {
       "name": "Website name",
-      "url": "https://example.com",
+      "url": "https://example.com/",
       "img": "example.png",
       "tfa": true,
       "sms": true,
@@ -37,17 +56,20 @@
       "email": true,
       "software": true,
       "hardware": true,
-      "doc": "https://example.com/documention/enable-2fa"
+      "doc": "https://example.com/documention/enable-2fa/"
     }   
   }
 }
 ```
+
 If a website only supports some 2FA methods, the unsupported 2FA methods won't be listed (i.e. NULL).
 
 ## Version 2
+
 ### URIs
+
 |URI|Coverage|
-|---|-----------|
+|---|--------|
 |https://twofactorauth.org/api/v2/all.json|All sites|
 |https://twofactorauth.org/api/v2/tfa.json|All 2FA-supporting sites|
 |https://twofactorauth.org/api/v2/sms.json|SMS|
@@ -73,10 +95,11 @@ If a website only supports some 2FA methods, the unsupported 2FA methods won't b
 |email_address|String|||Email address to support|
 
 ### Example website with 2FA enabled
+
 ```JSON
 {
   "Category name": {
-    "Example Website": {
+    "Website name": {
       "url": "https://example.com/",
       "img": "example.png",
       "tfa": [
@@ -87,7 +110,7 @@ If a website only supports some 2FA methods, the unsupported 2FA methods won't b
         "proprietary",
         "u2f"
       ],
-      "doc": "https://example.com/doc/2fa-documentation",
+      "doc": "https://example.com/documention/enable-2fa/",
       "exception": "Text describing any discrepancies in the 2FA implementation."
     }
   }
@@ -95,10 +118,11 @@ If a website only supports some 2FA methods, the unsupported 2FA methods won't b
 ```
 
 ### Example website with 2FA disabled
+
 ```JSON
 {
   "Category name": {
-    "Example Website": {
+    "Website name": {
       "url": "https://example.com/",
       "img": "example.png",
       "twitter": "example",
