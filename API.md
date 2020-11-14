@@ -10,7 +10,7 @@
 
 ### Elements
 
-|Key|Value|Always required|Description|
+|Key|Value|Always defined|Description|
 |---|-----|---------------|-----------|
 |url|URL|:heavy_check_mark:|URL to the main page of the site/service|
 |img|String|:heavy_check_mark:|Image name used|
@@ -86,7 +86,7 @@ If a website only supports some 2FA methods, the unsupported 2FA methods won't b
 
 ### Elements
 
-|Key|Value|Always required|Description|
+|Key|Value|Always defined|Description|
 |---|-----|---------------|-----------|
 |url|URL|:heavy_check_mark:|URL to the main page of the site/service|
 |img|String|:heavy_check_mark:|Image name used|
@@ -135,3 +135,17 @@ If a website only supports some 2FA methods, the unsupported 2FA methods won't b
   }
 }
 ```
+
+## Notes and remarks
+
+### URL & Domain matching
+
+If you're using our API to match client URLs with our dataset make sure you're only use the domain of the `url`-element as a website commonly uses subdomains and subdirectories.
+
+### Caching
+
+If you intent to query our JSON-files often and with a lot of traffic you may be blocked by Cloudflare, our reverse proxy provider. We therefore recommend that you cache the files locally for any large traffic cases.
+
+### Avoid downloading unnecessary data
+
+If you only intent on using a specific dataset, like all sites supporting RFC-6238, we recommend that you use the URI which lists just that. See [URIs](#uris-1) for a list of available paths. The smaller the better.
