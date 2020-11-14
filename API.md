@@ -1,0 +1,110 @@
+# API usage
+
+## Version 1 (Deprecated) :warning:
+
+### URIs
+|URI|Coverage|
+|---|-----------|
+|https://twofactorauth.org/api/v1/data.json|All sites|
+
+### Example website with 2FA disabled
+
+```YAML
+{
+  "Category name" {
+    "Website name": {
+      "name": "Website name",
+      "url": "https://example.com",
+      "img": "example.png",
+      "tfa": false
+    }   
+  }
+}
+```
+
+### Example website with 2FA enabled
+
+```YAML
+{
+  "Category name" {
+    "Website name": {
+      "name": "Website name",
+      "url": "https://example.com",
+      "img": "example.png",
+      "tfa": true,
+      "sms": true,
+      "phone": true,
+      "email": true,
+      "software": true,
+      "hardware": true,
+      "doc": "https://example.com/documention/enable-2fa"
+    }   
+  }
+}
+```
+If a website only supports some 2FA methods, the unsupported 2FA methods won't be listed (i.e. NULL).
+
+## Version 2
+### URIs
+|URI|Coverage|
+|---|-----------|
+|https://twofactorauth.org/api/v2/all.json|All sites|
+|https://twofactorauth.org/api/v2/tfa.json|All 2FA-supporting sites|
+|https://twofactorauth.org/api/v2/sms.json|SMS|
+|https://twofactorauth.org/api/v2/phone.json|Phone calls|
+|https://twofactorauth.org/api/v2/email.json|Email 2FA|
+|https://twofactorauth.org/api/v2/hardware.json|non-U2F hardware 2FA tokens|
+|https://twofactorauth.org/api/v2/u2f.json|U2F hardware tokens|
+|https://twofactorauth.org/api/v2/totp.json|RFC-6238|
+|https://twofactorauth.org/api/v2/proprietary.json|non-RFC-6238 software 2FA
+
+
+### Elements
+
+|Key|Value|Always required|Required for 2FA|Description|
+|---|-----|---------------|----------------|-----------|
+|url|URL|:heavy_check_mark:||URL to the main page of the site|
+|img|String|:heavy_check_mark:||Image name used|
+|tfa|Array\<String>||:heavy_check_mark:|Array containing all supported 2FA methods|
+|doc|URL|||URL to documentation page|
+|exception|String|||Text describing any discrepancies in the 2FA implementation|
+|twitter|String|||Twitter handle|
+|facebook|String|||Facebook page name|
+|email_address|String|||Email address to support|
+
+### Example website with 2FA enabled
+```JSON
+{
+  "Category name": {
+    "Example Website": {
+      "url": "https://example.com/",
+      "img": "example.png",
+      "tfa": [
+        "sms",
+        "phone",
+        "hardware",
+        "totp",
+        "proprietary",
+        "u2f"
+      ],
+      "doc": "https://example.com/doc/2fa-documentation",
+      "exception": "Text describing any discrepancies in the 2FA implementation."
+    }
+  }
+}
+```
+
+### Example website with 2FA disabled
+```JSON
+{
+  "Category name": {
+    "Example Website": {
+      "url": "https://example.com/",
+      "img": "example.png",
+      "twitter": "example",
+      "facebook": "example",
+      "email_address": "email@example.com"
+    }  
+  }
+}
+```
