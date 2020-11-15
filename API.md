@@ -81,7 +81,7 @@ If a website only supports some 2FA methods, the unsupported 2FA methods won't b
 |https://twofactorauth.org/api/v2/hardware.json|non-U2F hardware 2FA tokens|
 |https://twofactorauth.org/api/v2/u2f.json|U2F hardware tokens|
 |https://twofactorauth.org/api/v2/totp.json|RFC-6238|
-|https://twofactorauth.org/api/v2/proprietary.json|non-RFC-6238 software 2FA
+|https://twofactorauth.org/api/v2/proprietary.json|non-RFC-6238 software 2FA|
 
 
 ### Elements
