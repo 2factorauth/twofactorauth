@@ -19,7 +19,7 @@
 |phone|Boolean||Phone call support|
 |email|Boolean||Email token support|
 |software|Boolean||Software token support (including RFC-6238)|
-|hardware|Boolean||Hardware token support (including U2F-tokens)|
+|hardware|Boolean||Hardware token support (including U2F tokens)|
 |doc|URL||URL to documentation page|
 |exceptions|Object\<"text": String>||Object containing the key `text` describing any discrepancies in the 2FA implementation|
 |twitter|String||Twitter handle|
