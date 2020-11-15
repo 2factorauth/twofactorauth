@@ -140,7 +140,7 @@ If a website only supports some 2FA methods, the unsupported 2FA methods won't b
 
 ### URL & Domain matching
 
-If you're using our API to match client URLs with our dataset make sure you're only use the domain of the `url`-element as a website commonly uses subdomains and subdirectories.
+If you're using our API to match client URLs with our dataset make sure you only use the domain of the `url`-element, as a website commonly uses subdomains and subdirectories.
 
 ### Caching
 
