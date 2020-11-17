@@ -1,71 +1,19 @@
 # API usage
+## Introduction
 
-## Version 1 (Deprecated) :warning:
+The data collected for the twofactorauth.org website is also available as JSON files in order to enable developers to use it in their own programs. It is recommended to use the API with the highest version number, since older versions might not include all available information.
 
-### URIs
+### URL & Domain matching
 
-|URI|Coverage|
-|---|--------|
-|https://twofactorauth.org/api/v1/data.json|All sites|
+If you're using our API to match client URLs with our dataset make sure you only use the domain of the `url`-element, as a website commonly uses subdomains and subdirectories. Please note that there are exceptions like `.co.uk`, `.com.au` or `.co.nz` where the actual domain is found at a lower level.
 
-### Elements
+### Caching
 
-|Key|Value|Always defined|Description|
-|---|-----|---------------|-----------|
-|url|URL|:heavy_check_mark:|URL to the main page of the site/service|
-|img|String|:heavy_check_mark:|Image name used|
-|tfa|Boolean|:heavy_check_mark:|2FA support|
-|sms|Boolean||SMS token support|
-|phone|Boolean||Phone call support|
-|email|Boolean||Email token support|
-|software|Boolean||Software token support (including RFC-6238)|
-|hardware|Boolean||Hardware token support (including U2F tokens)|
-|doc|URL||URL to documentation page|
-|exceptions|Object\<"text": String>||Object containing the key `text` describing any discrepancies in the 2FA implementation|
-|twitter|String||Twitter handle|
-|facebook|String||Facebook page name|
-|email_address|String||Email address to support|
+If you intent to query our JSON files often and with a lot of traffic, you may be blocked by Cloudflare, our reverse proxy provider. We therefore recommend that you cache the files locally for any large traffic cases.
 
-### Example website with 2FA disabled
+### Avoid downloading unnecessary data
 
-```JSON
-{
-  "Category name": {
-    "Website name": {
-      "name": "Website name",
-      "url": "https://example.com/",
-      "img": "example.png",
-      "tfa": false
-    }   
-  }
-}
-```
-
-### Example website with 2FA enabled
-
-```JSON
-{
-  "Category name": {
-    "Website name": {
-      "name": "Website name",
-      "url": "https://example.com/",
-      "img": "example.png",
-      "tfa": true,
-      "sms": true,
-      "phone": true,
-      "email": true,
-      "software": true,
-      "hardware": true,
-      "doc": "https://example.com/documention/enable-2fa/",
-      "exceptions": {
-        "text": "Text describing any discrepancies in the 2FA implementation."
-      }
-    }   
-  }
-}
-```
-
-If a website only supports some 2FA methods, the unsupported 2FA methods won't be listed (i.e. NULL).
+If you only intent on using a specific dataset, like all sites supporting RFC-6238, we recommend that you use the URI which lists just that. See [URIs](#uris-1) for a list of available paths. The smaller the better.
 
 ## Version 2
 
@@ -136,16 +84,69 @@ If a website only supports some 2FA methods, the unsupported 2FA methods won't b
 }
 ```
 
-## Notes and remarks
+## Version 1 (Deprecated) :warning:
 
-### URL & Domain matching
+### URIs
 
-If you're using our API to match client URLs with our dataset make sure you only use the domain of the `url`-element, as a website commonly uses subdomains and subdirectories.
+|URI|Coverage|
+|---|--------|
+|https://twofactorauth.org/api/v1/data.json|All sites|
 
-### Caching
+### Elements
 
-If you intent to query our JSON-files often and with a lot of traffic you may be blocked by Cloudflare, our reverse proxy provider. We therefore recommend that you cache the files locally for any large traffic cases.
+|Key|Value|Always defined|Description|
+|---|-----|---------------|-----------|
+|url|URL|:heavy_check_mark:|URL to the main page of the site/service|
+|img|String|:heavy_check_mark:|Image name used|
+|tfa|Boolean|:heavy_check_mark:|2FA support|
+|sms|Boolean||SMS token support|
+|phone|Boolean||Phone call support|
+|email|Boolean||Email token support|
+|software|Boolean||Software token support (including RFC-6238)|
+|hardware|Boolean||Hardware token support (including U2F tokens)|
+|doc|URL||URL to documentation page|
+|exceptions|Object\<"text": String>||Object containing the key `text` describing any discrepancies in the 2FA implementation|
+|twitter|String||Twitter handle|
+|facebook|String||Facebook page name|
+|email_address|String||Email address to support|
 
-### Avoid downloading unnecessary data
+### Example website with 2FA disabled
 
-If you only intent on using a specific dataset, like all sites supporting RFC-6238, we recommend that you use the URI which lists just that. See [URIs](#uris-1) for a list of available paths. The smaller the better.
+```JSON
+{
+  "Category name": {
+    "Website name": {
+      "name": "Website name",
+      "url": "https://example.com/",
+      "img": "example.png",
+      "tfa": false
+    }   
+  }
+}
+```
+
+### Example website with 2FA enabled
+
+```JSON
+{
+  "Category name": {
+    "Website name": {
+      "name": "Website name",
+      "url": "https://example.com/",
+      "img": "example.png",
+      "tfa": true,
+      "sms": true,
+      "phone": true,
+      "email": true,
+      "software": true,
+      "hardware": true,
+      "doc": "https://example.com/documention/enable-2fa/",
+      "exceptions": {
+        "text": "Text describing any discrepancies in the 2FA implementation."
+      }
+    }   
+  }
+}
+```
+
+If a website only supports some 2FA methods, the unsupported 2FA methods won't be listed (i.e. NULL).
