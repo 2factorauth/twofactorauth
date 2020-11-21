@@ -23,4 +23,6 @@ websites:
   - name: betfair
     url: https://www.betfair.com/
     img: betfair.png
-    twitter: betfair
+    tfa:
+      - sms
+      - totp
