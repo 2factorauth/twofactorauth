@@ -399,7 +399,15 @@ websites:
     tfa:
       - totp
     doc: https://support.hitbtc.com/en/support/solutions/articles/63000224976
-
+    
+  - name: invictuscapital.com
+    url: https://invictuscapital.com
+    img: invictuscapital.png
+    tfa:
+      - sms
+      - phone
+      - totp
+      
   - name: Korbit
     url: https://www.korbit.co.kr
     img: korbit.png
