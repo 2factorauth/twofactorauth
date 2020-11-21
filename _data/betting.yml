@@ -1,4 +1,12 @@
 websites:
+ - name: Betfair
+    url: https://www.betfair.com/
+    img: betfair.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.betfair.com/app/answers/detail/a_id/126
+
   - name: Betvictor
     url: https://www.betvictor.com
     img: betvictor.png
@@ -13,14 +21,6 @@ websites:
       - totp
     doc: https://www.cloudbet.com/en/2_step_authentication
  
- - name: Betfair
-    url: https://www.betfair.com/
-    img: betfair.png
-    tfa:
-      - sms
-      - totp
-    doc: https://support.betfair.com/app/answers/detail/a_id/126
-
   - name: win2day
     url: https://www.win2day.at/
     img: win2day.png
