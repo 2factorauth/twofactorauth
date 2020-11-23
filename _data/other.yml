@@ -547,6 +547,14 @@ websites:
     facebook: spare5app
     email_address: feedback@spare5.com
 
+  - name: TurboSquid
+    url: https://www.turbosquid.com
+    img: turbosquid.png
+    tfa:
+      - email
+      - sms
+    exception: "2FA is only available with a verified email address"
+
   - name: Ubiquiti Inc
     url: https://www.ui.com
     img: ubiquiti.png
