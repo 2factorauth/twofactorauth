@@ -169,8 +169,10 @@ websites:
 
   - name: Dominion Energy
     url: https://www.dominionenergy.com/
-    twitter: DominionEnergy
     img: dominion.png
+    tfa:
+      - sms
+      - email
     regions:
       - us
 
@@ -586,3 +588,12 @@ websites:
     tfa:
       - email
     doc: https://wiki.voip.ms/article/Two-step_Verification
+
+  - name: Wingo
+    url: https://www.wingo.ch
+    img: wingo.png
+    twitter: Wingo_de
+    facebook: WingoCH
+    lang: de
+    regions:
+      - ch

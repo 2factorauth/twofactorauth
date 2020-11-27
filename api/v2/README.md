@@ -53,4 +53,3 @@ Optional tags for websites without 2fa are:
 - twitter
 - facebook
 - email_address
-- status (url to status page)

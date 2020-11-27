@@ -5,20 +5,12 @@ websites:
     facebook: AirDroid
     img: airdroid.png
 
-  - name: Amazon AWS WorkSpaces
-    url: https://aws.amazon.com/workspaces/
-    doc: https://aws.amazon.com/blogs/aws/multi-factor-auth-for-workspaces/
-    tfa:
-      - totp
-      - hardware
-    img: awsworkspaces.png
-
   - name: AnyDesk
     url: https://anydesk.com/
     img: anydesk.png
     tfa:
       - totp
-    doc: https://support.anydesk.com/Two_Factor_Authentication
+    doc: https://support.anydesk.com/Two-Factor_Authentication
 
   - name: ConnectWise Control (ScreenConnect)
     url: https://www.connectwise.com/software/control

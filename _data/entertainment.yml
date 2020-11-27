@@ -92,7 +92,7 @@ websites:
     twitter: lastfm
     facebook: lastfm
     img: lastfm.png
-    
+
   - name: Nebula
     url: https://watchnebula.com/
     img: nebula.png
@@ -129,9 +129,10 @@ websites:
 
   - name: Plex
     url: https://www.plex.tv
-    twitter: plex
-    facebook: plexapp
     img: plex.png
+    tfa:
+      - totp
+    doc: https://support.plex.tv/articles/two-factor-authentication/
 
   - name: Qobuz
     url: https://www.qobuz.com

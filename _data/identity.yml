@@ -86,7 +86,10 @@ websites:
     tfa:
       - totp
       - hardware
-    doc: https://helpdesk.lastpass.com/multifactor-authentication-options/
+      - proprietary
+      - u2f
+    doc: https://support.logmeininc.com/lastpass/help/enable-multifactor-authentication-lp010002
+    exception: "Availability of 2FA options depends on your account type."
 
   - name: Okta
     url: https://www.okta.com/
@@ -133,6 +136,14 @@ websites:
       - email
       - hardware
     doc: https://help.passpack.com/knowledgebase/idx.php/44/0/
+
+  - name: Passwarden
+    url: https://www.keepsolid.com/passwarden/
+    img: passwarden.png
+    tfa:
+      - totp
+      - email
+    doc: https://www.keepsolid.com/passwarden/security/tfa
 
   - name: RoboForm
     url: https://www.roboform.com/

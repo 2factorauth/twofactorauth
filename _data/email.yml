@@ -45,6 +45,7 @@ websites:
     tfa:
       - totp
     doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
+    exception: "Setup requires SMS verification."
 
   - name: HEY
     url: https://hey.com/
@@ -133,11 +134,13 @@ websites:
     img: outlook.png
     tfa:
       - sms
+      - phone
       - email
       - proprietary
       - totp
       - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
+    exception: "2FA phone calls may not be available in all regions"
 
   - name: Pobox
     url: https://www.pobox.com/
@@ -193,7 +196,7 @@ websites:
     img: startmail.png
     tfa:
       - totp
-    doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704
+    doc: https://support.startmail.com/hc/en-us/articles/360006682158
 
   - name: T-Online
     url: https://www.t-online.de/

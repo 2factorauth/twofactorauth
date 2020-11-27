@@ -82,7 +82,6 @@ websites:
     url: https://www.flickr.com
     twitter: FlickrHelp
     img: flickr.png
-    status: https://help.flickr.com/changes-to-login-featured-rkF1q3cIV
 
   - name: Flipboard
     url: https://flipboard.com
@@ -140,8 +139,7 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://www.linkedin.com/help/linkedin/answer/531
-    exception: "Only one 2FA method is allowed at a time."
+    doc: https://www.linkedin.com/help/linkedin/answer/544
 
   - name: LiveJournal
     url: https://www.livejournal.com
@@ -182,8 +180,10 @@ websites:
 
   - name: Nextdoor
     url: https://nextdoor.com
-    twitter: Nextdoor
     img: nextdoor.png
+    tfa:
+      - email
+    doc: https://help.nextdoor.com/s/article/About-2-Step-Verification
 
   - name: OkCupid
     url: https://www.okcupid.com/
@@ -225,12 +225,19 @@ websites:
       - totp
     doc: https://www.reddithelp.com/hc/en-us/articles/360043470031
 
-  - name: Short.cm
-    url: https://short.cm/
-    img: shortcm.png
+  - name: Restream.io
+    url: https://restream.io/
+    img: restream.png
     tfa:
       - totp
-    doc: https://support.short.cm/hc/en-us/articles/360031504191
+    doc: https://support.restream.io/en/articles/870429
+
+  - name: Short.io
+    url: https://short.io/
+    img: shortio.png
+    tfa:
+      - totp
+    doc: https://help.short.io/en/articles/4065798
 
   - name: Snapchat
     url: https://www.snapchat.com/

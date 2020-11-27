@@ -150,11 +150,13 @@ websites:
     img: onedrive.png
     tfa:
       - sms
+      - phone
       - email
       - proprietary
       - totp
       - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
+    exception: "2FA phone calls may not be available in all regions"
 
   - name: PCloud
     url: https://www.pcloud.com
@@ -199,14 +201,6 @@ websites:
       - email
       - totp
     doc: https://originwww.synology.com/en-us/knowledgebase/tutorials/615#t5
-
-  - name: ThisData
-    url: https://thisdata.com
-    img: thisdata.png
-    tfa:
-      - sms
-      - proprietary
-    doc: http://help.thisdata.com/docs/two-factor-authentication
 
   - name: Tresorit
     url: https://tresorit.com/

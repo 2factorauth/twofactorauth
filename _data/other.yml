@@ -319,7 +319,7 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://sicherheit.immobilienscout24.de/phishing/absicherung-login.html
+    doc: https://www.youtube.com/watch?v=37Tgxy3NoG4
     exception: "SMS is only available to commercial real estate providers."
 
   - name: Immowelt
@@ -337,6 +337,7 @@ websites:
       - sms
       - phone
     doc: https://www.indeed.com/lead/two-factor-authentication
+    exception: "2FA is only available for employees and not for job seekers."
 
   - name: Indiegogo
     url: https://www.indiegogo.com/
@@ -545,6 +546,14 @@ websites:
     twitter: spare5
     facebook: spare5app
     email_address: feedback@spare5.com
+
+  - name: TurboSquid
+    url: https://www.turbosquid.com
+    img: turbosquid.png
+    tfa:
+      - email
+      - sms
+    exception: "2FA is only available with a verified email address"
 
   - name: Ubiquiti Inc
     url: https://www.ui.com
