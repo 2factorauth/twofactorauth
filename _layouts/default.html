@@ -24,6 +24,14 @@
     <meta property="twitter:image" content="{{ site.social_image }}">
     <meta property="twitter:description" content="{{ site.description }}">
     <title>{{ site.title }}</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SMXGN4C672"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-SMXGN4C672');
+    </script>
     {% include icons.html %}
     <link href="/manifest.json" rel="manifest">
     <link rel="stylesheet" href="/css/bootstrap.css"/>
