@@ -63,6 +63,13 @@ websites:
       - u2f
     doc: https://support.cloudflare.com/hc/en-us/articles/200167906
 
+  - name: CloudGuard Dome9
+    url: https://www.checkpoint.com/dome9/
+    img: cloudguard.png
+    tfa:
+      - totp
+    doc: https://supportcenter.checkpoint.com/supportcenter/portal?solutionid=sk144515
+
   - name: Cobalt
     url: https://cobalt.io/
     img: cobalt.png
@@ -99,14 +106,6 @@ websites:
       - hardware
     doc: https://dmarcian.com/secure-dmarcian-2fa/
 
-  - name: Dome9 Security
-    url: https://dome9.com/
-    img: dome9.png
-    tfa:
-      - totp
-      - hardware
-    doc: https://dome9.com/overview/strong-2-factor-authentication
-  
   - name: EasyDMARC
     url: https://easydmarc.com
     img: easydmarc.png
