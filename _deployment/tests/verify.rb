@@ -14,13 +14,14 @@ require 'diffy'
 }.freeze
 
 # Image max size (in bytes)
-@img_max_size = 2500
+@img_max_size_png = 2500
+@img_max_size_svg = 10_240
 
 # Image dimensions
 @img_dimensions = [32, 32]
 
 # Image format used for all images in the 'img/' directories.
-@img_extension = '.png'
+@img_extension = '%w[png svg]'
 
 # Permissions set for all the images in the 'img/' directories.
 @img_permissions = %w[644 664 777]
@@ -40,55 +41,50 @@ def test_img(img, name, imgs)
 
   # Check image dimensions
   error("#{name}: #{img} is not #{@img_dimensions.join('x')} pixels.", img)\
-    unless FastImage.size(img) == @img_dimensions
+    unless img.match?(/svg$/) || FastImage.size(img) == @img_dimensions
 
   test_img_file(img, name)
 end
 
-# rubocop:disable Metrics/MethodLength
+# rubocop:disable Metrics/AbcSize
 def test_img_file(img, name)
   # Check image file extension and type
-  error("#{name}: #{img} is not using the #{@img_extension} format.", img)\
-    unless File.extname(img) == @img_extension && FastImage.type(img) == :png
+  error("#{name}: #{img} is not using a supported image format.", img) \
+    unless @img_extension.include?((File.extname(img)[1..-1])) && @img_extension.include?(FastImage.type(img)[1..-1])
 
   # Check image file size
-  img_size = File.size(img)
-  unless img_size <= @img_max_size
-    error("#{name}: #{img} must not be larger than #{@img_max_size} bytes. "\
-              "It is currently #{img_size} bytes.", img)
+  img_max_size = img.match?(/svg$/) ? @img_max_size_svg : @img_max_size_png
+  unless File.size(img) <= img_max_size
+    error("#{name}: #{img} must not be larger than #{img_max_size} bytes. "  \
+          "It is currently #{File.size(img)} bytes.", img)
   end
 
   # Check image permissions
   perms = File.stat(img).mode.to_s(8).split(//).last(3).join
-  # rubocop:disable Style/GuardClause
-  unless @img_permissions.include?(perms)
-    error("#{name}: #{img} permissions must be one of: "\
-    "#{@img_permissions.join(',')}. It is currently #{perms}.", img)
-  end
-  # rubocop:enable Style/GuardClause
-end
-# rubocop:enable Metrics/MethodLength
+  return if @img_permissions.include?(perms)
 
-# Load each section, check for errors such as invalid syntax
-# as well as if an image is missing
+  error("#{name}: #{img} permissions must be one of: #{@img_permissions.join(',')}. It is currently #{perms}.", img)
+end
+# rubocop:enable Metrics/AbcSize
+
+# Load each section, check for errors such as invalid syntax as well as if an image is missing
 begin
   sections_file = '_data/sections.yml'
   sections = YAML.load_file(sections_file)
+
   # Check sections.yml alphabetization
   error('section.yml is not alphabetized by name', sections_file) \
     if sections != (sections.sort_by { |section| section['id'].downcase })
+
   schema = YAML.load_file('_deployment/tests/websites_schema.yml')
   validator = Kwalify::Validator.new(schema)
-  # rubocop:disable Metrics/BlockLength
   sections.each do |section|
     data_file = "_data/#{section['id']}.yml"
     data = YAML.load_file(data_file)
     websites = data['websites']
     errors = validator.validate(data)
 
-    errors.each do |e|
-      error("#{websites.at(e.path.split('/')[2].to_i)['name']}: #{e.message}")
-    end
+    errors.each { |e| error("#{websites.at(e.path.split('/')[2].to_i)['name']}: #{e.message}") }
 
     # Check section alphabetization
     if websites != (sites_sort = websites.sort_by { |s| s['name'].downcase })
@@ -111,17 +107,9 @@ begin
                imgs)
     end
 
-    # After removing images associated with entries in test_img, alert
-    # for unused or orphaned images
-    imgs.each do |img|
-      next if img.nil? || img.end_with?('webp') do
-        next
-      end
-
-      error("#{img} is not used", img)
-    end
+    # After removing images associated with entries in test_img, alert for unused or orphaned images
+    imgs.each { |img| error("#{img} is not used", img) unless img.nil? || img.end_with?('webp') }
   end
-# rubocop:enable Metrics/BlockLength
 rescue Psych::SyntaxError => e
   puts "<------------ ERROR in a YAML file ------------>\n"
   puts "::error:: #{e}"

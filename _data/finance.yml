@@ -29,6 +29,7 @@ websites:
     img: allianz.png
     tfa:
       - sms
+      - hardware
     doc: https://www.allianz.de/datenschutz/allianz-deutschland-ag/online-service-meine-allianz/
 
   - name: AltoIRA
@@ -110,11 +111,28 @@ websites:
     tfa:
       - totp
 
+  - name: Deutsche Rentenversicherung
+    url: https://www.deutsche-rentenversicherung.de/
+    img: drv.png
+    tfa:
+      - hardware
+    doc: https://www.deutsche-rentenversicherung.de/DRV/DE/Online-Dienste/unsere_online-dienste.html
+    regions:
+      - de
+
   - name: ditech
     url: https://www.ditech.com
     twitter: ditech
     facebook: ditech
     img: ditech.png
+
+  - name: Emma
+    url: https://emma.ca/
+    twitter: EmmaAssurance
+    facebook: EmmaAssurance
+    img: emma.png
+    regions:
+      - ca
 
   - name: Equifax
     url: https://www.equifax.com/
@@ -421,6 +439,14 @@ websites:
       - totp
     doc: https://help.simpletax.ca/questions/two-factor-authentication
 
+  - name: Swiss Life
+    url: https://www.swisslife.ch
+    img: swisslife.png
+    tfa:
+      - sms
+    regions:
+      - ch
+
   - name: Taxact
     url: https://www.taxact.com
     img: taxact.png
@@ -429,6 +455,13 @@ websites:
       - email
       - totp
     doc: https://www.taxact.com/support/24138/2019/how-is-a-verification-code-used?hideLayout=True
+
+  - name: Techniker Krankenkasse
+    url: https://www.tk.de/
+    img: techniker.png
+    tfa:
+      - proprietary
+    doc: https://www.tk.de/techniker/unternehmensseiten/unternehmen/die-tk-app/2023678
 
   - name: TransferWise
     url: https://transferwise.com

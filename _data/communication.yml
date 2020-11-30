@@ -22,6 +22,13 @@ websites:
       - u2f
     doc: https://3.basecamp-help.com/article/443--
 
+  - name: Bitrix24
+    url: https://www.bitrix24.com/
+    img: bitrix24.png
+    tfa:
+      - totp
+    doc: https://helpdesk.bitrix24.com/open/9800171/
+
   - name: Campfire
     url: https://campfirenow.com/
     img: campfire.png
@@ -379,6 +386,6 @@ websites:
     url: https://www.zoom.us
     img: zoom.png
     tfa:
+      - sms
       - totp
     doc: https://support.zoom.us/hc/en-us/articles/360038247071
-    exception: "2FA is only available on paid plans and doesn't protect the desktop or mobile apps."

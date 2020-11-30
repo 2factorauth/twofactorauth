@@ -309,6 +309,14 @@ websites:
       - sms
     doc: https://www.infobip.com/messaging/enterprise/2_factor_authentication/
 
+  - name: InVision
+    url: https://www.invisionapp.com
+    img: invision.png
+    tfa:
+      - totp
+      - sms
+    doc: https://support.invisionapp.com/hc/en-us/articles/360033708112
+
   - name: IT Glue
     url: https://www.itglue.com/
     img: itglue.png
@@ -402,6 +410,12 @@ websites:
     tfa:
       - totp
     doc: https://github.com/composer/packagist/pull/1031
+
+  - name: Pagerduty
+    url: https://pagerduty.com
+    img: pagerduty.png
+    twitter: PagerDutyHelp
+    email_address: support@pagerduty.com
 
   - name: Panic Sync
     url: https://panic.com/

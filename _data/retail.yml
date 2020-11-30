@@ -174,6 +174,12 @@ websites:
     regions:
       - ch
 
+  - name: Drop
+    url: https://www.drop.com
+    twitter: drop
+    facebook: drop
+    img: drop.png
+
   - name: EB Games Australia
     url: https://ebgames.com.au/
     img: ebgamesaustralia.png
@@ -290,11 +296,6 @@ websites:
     twitter: JBHiFi
     img: jbhifi.png
 
-  - name: Jet
-    url: https://jet.com
-    twitter: JetHeads
-    img: jet.png
-
   - name: John Lewis & Partners
     url: https://www.johnlewis.com/
     img: john-lewis.png
@@ -344,11 +345,6 @@ websites:
     url: https://www.macys.com/
     twitter: Macys
     img: macys.png
-
-  - name: Massdrop
-    url: https://www.massdrop.com
-    twitter: Massdrop
-    img: massdrop.png
 
   - name: MediaMarkt (DE)
     url: https://www.mediamarkt.de/
@@ -435,7 +431,8 @@ websites:
     img: samsung.png
     tfa:
       - sms
-    doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
+      - totp
+    doc: https://account.samsung.com/membership/guide/2step/
 
   - name: Saturn
     url: https://www.saturn.de

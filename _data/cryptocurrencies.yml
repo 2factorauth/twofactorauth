@@ -400,6 +400,14 @@ websites:
       - totp
     doc: https://support.hitbtc.com/en/support/solutions/articles/63000224976
 
+  - name: Invictus Capital
+    url: https://invictuscapital.com
+    img: invictuscapital.png
+    tfa:
+      - sms
+      - phone
+      - totp
+
   - name: Korbit
     url: https://www.korbit.co.kr
     img: korbit.png
@@ -471,6 +479,14 @@ websites:
     doc: https://suporte.mercadobitcoin.com.br/hc/pt-br/articles/360000385152
     regions:
       - br
+
+  - name: OKEx
+    url: https://www.okex.com/
+    img: okex.png
+    tfa:
+      - totp
+      - sms
+    doc: https://www.okex.com/support/hc/en-us/articles/360000350271
 
   - name: PayKassa
     url: https://paykassa.pro/
