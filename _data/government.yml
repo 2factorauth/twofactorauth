@@ -140,6 +140,16 @@ websites:
     regions:
       - au
 
+  - name: Pennsylvania Dept of Revenue
+    url: https://mypath.pa.gov
+    img: PA-revenue.png
+    tfa:
+      - sms
+      - email
+      - totp
+    regions:
+      - us
+
   - name: RealMe
     url: https://www.realme.govt.nz/
     img: realme.png
