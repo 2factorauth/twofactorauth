@@ -45,6 +45,7 @@ $(document).ready(function () {
     // Delay setting default consent settings until consentcookie has started up
     'wait_for_update': 500
   });
+  gtag('require', 'dnt');
   gtag('config', 'G-SMXGN4C672');
 });
 
