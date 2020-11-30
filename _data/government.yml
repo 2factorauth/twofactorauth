@@ -190,6 +190,16 @@ websites:
     regions:
       - gb
 
+- name: US Citizenship and Immigration Service
+    url: https://myaccount.uscis.gov/
+    img: uscis.png
+    tfa:
+      - sms
+      - email
+      - totp
+    regions:
+      - us
+
   - name: US Internal Revenue Service
     url: https://www.irs.gov/Individuals/Get-Transcript
     img: usirs.png
