@@ -189,6 +189,14 @@ websites:
     facebook: CompaniesHouse
     regions:
       - gb
+  
+  - name: US Postal Service
+    url: https://usps.com
+    img: usps.png
+    tfa:
+      - sms
+    regions:
+      - us
 
   - name: US Internal Revenue Service
     url: https://www.irs.gov/Individuals/Get-Transcript
