@@ -21,6 +21,13 @@ websites:
       - totp
     doc: https://www.cloudbet.com/en/2_step_authentication
 
+  - name: Smarkets
+    url: https://www.smarkets.com/
+    img: smarkets.png
+    tfa:
+      - totp
+    doc: https://help.smarkets.com/hc/en-gb/articles/115000822171-Using-two-factor-authentication/
+
   - name: win2day
     url: https://www.win2day.at/
     img: win2day.png
