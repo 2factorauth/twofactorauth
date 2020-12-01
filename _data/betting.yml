@@ -21,6 +21,13 @@ websites:
       - totp
     doc: https://www.cloudbet.com/en/2_step_authentication
 
+  - name: Parimatch
+    url: https://www.parimatch.com/
+    img: parimatch.png
+    tfa:
+      - totp
+    doc: https://air.parimatchgoal.com/en/faq/authentication/
+
   - name: win2day
     url: https://www.win2day.at/
     img: win2day.png
