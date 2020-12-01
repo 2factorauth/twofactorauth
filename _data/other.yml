@@ -589,13 +589,6 @@ websites:
       - totp
     doc: https://support.upwork.com/hc/en-us/articles/360009491414
 
-  - name: Usabilla
-    url: https://usabilla.com
-    img: usabilla.png
-    tfa:
-      - totp
-    doc: https://support.usabilla.com/hc/en-us/articles/115003081611
-
   - name: US Postal Service
     url: https://usps.com
     img: usps.png
@@ -604,6 +597,13 @@ websites:
     doc: https://faq.usps.com/s/article/USPS-com-Account#Two-Factor_Authentication
     regions:
       - us
+
+  - name: Usabilla
+    url: https://usabilla.com
+    img: usabilla.png
+    tfa:
+      - totp
+    doc: https://support.usabilla.com/hc/en-us/articles/115003081611
 
   - name: Vivaldi
     url: https://vivaldi.com/
