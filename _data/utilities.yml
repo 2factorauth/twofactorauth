@@ -436,7 +436,7 @@ websites:
     tfa:
       - sms
       - totp
-      - proprietary
+      - hardware
     doc: https://support.t-mobile.com/docs/DOC-2727
     exception: "Backup methods of SMS or recovery questions can't be disabled."
     regions:
