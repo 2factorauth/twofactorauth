@@ -502,6 +502,15 @@ websites:
     regions:
       - us
 
+  - name: Surf
+    url: https://www.surf.nl/
+    img: surf.png
+    tfa:
+      - totp
+    doc: https://wiki.surfnet.nl/display/RDRIVE/How+to+enable+two-factor+authentication+%282FA%29+for+your+account/
+    regions:
+      - nl
+
   - name: Temple University
     url: https://www.temple.edu/
     img: templeuniversity.png
