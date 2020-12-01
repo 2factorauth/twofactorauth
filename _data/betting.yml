@@ -28,6 +28,13 @@ websites:
       - totp
     doc: https://help.smarkets.com/hc/en-gb/articles/115000822171
 
+  - name: Parimatch
+    url: https://www.parimatch.com/
+    img: parimatch.png
+    tfa:
+      - totp
+    doc: https://air.parimatchgoal.com/en/faq/authentication/
+
   - name: win2day
     url: https://www.win2day.at/
     img: win2day.png
