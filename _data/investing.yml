@@ -211,6 +211,13 @@ websites:
       - totp
     doc: https://support.robinhood.com/hc/en-us/articles/360001213783
 
+  - name: SelfWealth
+    url: https://www.selfwealth.com.au/
+    img: selfwealth.png
+    tfa:
+      - totp
+    doc: https://www.selfwealth.com.au/two-factor-authentication-now-available/
+
   - name: SigFig
     url: https://www.sigfig.com/
     twitter: SigFigInsider
@@ -224,13 +231,6 @@ websites:
       - phone
       - email
     doc: https://ask.stash.com/ask/what-is-two-factor-authentication/
-
-  - name: SelfWealth
-    url: https://www.selfwealth.com.au/
-    img: selfwealth.png
-    tfa:
-      - totp
-    doc: https://www.selfwealth.com.au/two-factor-authentication-now-available/
 
   - name: Sunsuper
     url: https://www.sunsuper.com.au/
