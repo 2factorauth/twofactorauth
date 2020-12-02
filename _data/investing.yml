@@ -225,6 +225,13 @@ websites:
       - email
     doc: https://ask.stash.com/ask/what-is-two-factor-authentication/
 
+  - name: SelfWealth
+    url: https://www.selfwealth.com.au/
+    img: selfwealth.png
+    tfa:
+      - totp
+    doc: https://www.selfwealth.com.au/two-factor-authentication-now-available/
+
   - name: Sunsuper
     url: https://www.sunsuper.com.au/
     twitter: Sunsuper
