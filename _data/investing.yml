@@ -232,15 +232,12 @@ websites:
     img: sunsuper.png
 
   - name: TD Ameritrade
-    url: https://www.tdameritrade.com
+    url: https://www.tdameritrade.com/
     img: tdameritrade.png
     tfa:
       - sms
-
-  - name: TD Waterhouse
-    url: https://www.tdwaterhouse.ca
-    twitter: TD_Canada
-    img: tdameritrade.png
+    regions:
+      - us
 
   - name: TIAA-CREF
     url: https://www.tiaa-cref.org
