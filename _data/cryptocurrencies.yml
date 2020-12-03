@@ -368,6 +368,14 @@ websites:
       - u2f
     doc: https://docs.dsx.uk/dsx/getting-started-with-dsx/your-security-is-our-priority/enable-two-factor-authentication
 
+  - name: Exmo
+    url: https://exmo.com/
+    img: exmo.png
+    tfa:
+      - sms
+      - totp
+    doc: https://info.exmo.com/en/education/how-to-enable-2fa/
+
   - name: Gatehub
     url: https://gatehub.net
     img: gatehub.png
