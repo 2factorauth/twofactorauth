@@ -1401,20 +1401,15 @@ websites:
     doc: https://www.tbcbank.ge/web/en/web/guest/tbc-digipass
 
   - name: TD Bank
-    url: https://www.tdbank.com
+    url: https://www.td.com/
     img: tdbank.svg
     tfa:
       - sms
       - phone
     doc: https://www.td.com/privacy-and-security/privacy-and-security/how-we-protect-you/online-security/2fa.jsp
-
-  - name: TD Canada Trust
-    url: https://www.tdcanadatrust.com
-    img: tdbank.svg
-    tfa:
-      - sms
-      - phone
-    doc: https://www.td.com/privacy-and-security/privacy-and-security/how-we-protect-you/online-security/2fa.jsp
+    regions:
+      - us
+      - ca
 
   - name: Tesco Bank
     url: https://www.tescobank.com/
