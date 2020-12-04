@@ -253,6 +253,14 @@ websites:
       - email
     doc: https://support.pipedrive.com/hc/en-us/articles/360000808405
 
+  - name: Pepipost
+    url: https://www.pepipost.com/
+    img: pepipost.png
+    tfa:
+      - email
+      - totp
+    doc: https://docs.pepipost.com/docs/two-factor-authentication-2fa
+
   - name: Ryver
     url: https://ryver.com/
     img: ryver.png
