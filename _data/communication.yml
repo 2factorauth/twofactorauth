@@ -246,13 +246,6 @@ websites:
       - sms
     doc: https://support.nulab.com/hc/en-us/articles/115001025087
 
-  - name: Pipedrive
-    url: https://www.pipedrive.com/
-    img: pipedrive.png
-    tfa:
-      - email
-    doc: https://support.pipedrive.com/hc/en-us/articles/360000808405
-
   - name: Pepipost
     url: https://www.pepipost.com/
     img: pepipost.png
@@ -260,6 +253,13 @@ websites:
       - email
       - totp
     doc: https://docs.pepipost.com/docs/two-factor-authentication-2fa
+
+  - name: Pipedrive
+    url: https://www.pipedrive.com/
+    img: pipedrive.png
+    tfa:
+      - email
+    doc: https://support.pipedrive.com/hc/en-us/articles/360000808405
 
   - name: Ryver
     url: https://ryver.com/
