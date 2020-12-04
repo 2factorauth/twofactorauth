@@ -105,6 +105,14 @@ websites:
     img: epost.png
     lang: de
 
+  - name: Elastic Email
+    url: https://elasticemail.com
+    img: elasticemail.png
+    tfa:
+      - sms
+      - email
+    doc: https://help.elasticemail.com/en/articles/2783376
+
   - name: Element
     url: https://element.io/
     img: element.png
