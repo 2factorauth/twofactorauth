@@ -261,6 +261,15 @@ websites:
       - email
     doc: https://support.pipedrive.com/hc/en-us/articles/360000808405
 
+  - name: Postmarkapp
+    url: https://www.postmarkapp.com/
+    img: postmarkapp.png
+    tfa:
+      - sms
+      - totp
+    doc: https://postmarkapp.com/support/article/1081-how-do-i-use-two-factor-authentication-2fa
+    exception: "Setup requires SMS verification."
+
   - name: Ryver
     url: https://ryver.com/
     img: ryver.png
