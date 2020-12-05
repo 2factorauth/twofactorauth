@@ -39,6 +39,7 @@ jobs:
 
       - name: Build region sites
         run: |
+          mkdir -p api/v{1,2}
           ruby ./_deployment/used_regions.rb > api/v2/regions.json
           ruby ./_deployment/regions.rb --production
 
