@@ -326,6 +326,13 @@ websites:
     regions:
       - au
 
+  - name: CoinTracker
+    url: https://www.cointracker.io
+    img: cointracker.png
+    tfa:
+      - totp
+    doc: https://help.cointracker.io/en/articles/2641553
+
   - name: CoinTracking
     url: https://cointracking.info/
     img: cointracking.png
