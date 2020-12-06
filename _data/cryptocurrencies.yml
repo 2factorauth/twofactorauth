@@ -87,14 +87,6 @@ websites:
     regions:
       - kr
 
-  - name: Bitlish
-    url: https://bitlish.com
-    img: bitlish.png
-    tfa:
-      - sms
-      - proprietary
-    doc: https://bitlish.com/how#mfa
-
   - name: BitMEX
     url: https://www.bitmex.com
     img: bitmex.png
@@ -334,6 +326,13 @@ websites:
     regions:
       - au
 
+  - name: CoinTracker
+    url: https://www.cointracker.io
+    img: cointracker.png
+    tfa:
+      - totp
+    doc: https://help.cointracker.io/en/articles/2641553
+
   - name: CoinTracking
     url: https://cointracking.info/
     img: cointracking.png
@@ -424,6 +423,13 @@ websites:
       - totp
       - hardware
     doc: https://support.kraken.com/hc/en-us/articles/360000426923
+
+  - name: Kuna
+    url: https://www.kuna.io/
+    img: kuna.png
+    tfa:
+      - totp
+    doc: https://support.kuna.io/en/support/solutions/articles/17000083405
 
   - name: Liquid
     url: https://www.liquid.com/

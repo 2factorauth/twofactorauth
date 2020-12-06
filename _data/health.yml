@@ -153,6 +153,16 @@ websites:
     regions:
       - us
 
+  - name: MyChart
+    url: https://www.mychart.com
+    img: mychart.png
+    tfa:
+      - sms
+      - email
+    doc: https://www.mychart.com/Features
+    regions:
+      - us
+
   - name: myfitnesspal
     url: https://www.myfitnesspal.com
     img: myfitnesspal.png
