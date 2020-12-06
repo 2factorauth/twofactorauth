@@ -39,14 +39,17 @@ jobs:
 
       - name: Build region sites
         run: |
+          mkdir -p api/v{1,2}
           ruby ./_deployment/used_regions.rb > api/v2/regions.json
-          ruby ./_deployment/regions.rb
+          ruby ./_deployment/regions.rb --production
 
       - name: Generate webp images
         run: ./_deployment/webp.sh
 
       - name: Generate API files
-        run: ./_deployment/api.rb
+        run: |
+          ./_deployment/apiv1.rb
+          ./_deployment/apiv2.rb
 
       - name: Build the site
         run: bundle exec jekyll build --config _config.yml,_deployment/config-production.yml
@@ -58,9 +61,6 @@ jobs:
         run: bundle exec rake proof
         env:
           NOKOGIRI_USE_SYSTEM_LIBRARIES: true
-
-      - name: Test JSON files
-        run: bundle exec rake jsonlint
 
       - name: Deploy to GH Pages
         if: success()

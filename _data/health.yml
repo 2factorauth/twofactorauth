@@ -64,7 +64,6 @@ websites:
     twitter: Drugscom
     facebook: Drugscom
     img: drugscom.png
-    status: https://twitter.com/Drugscom/status/493856207572975620
     regions:
       - us
 
@@ -122,7 +121,7 @@ websites:
     img: hint.png
     tfa:
       - totp
-    doc: https://support.hint.com/en/articles/2360627
+    doc: https://support.hint.com/support/solutions/articles/61000283118
     regions:
       - us
 
@@ -151,6 +150,16 @@ websites:
     url: https://misfit.com/
     twitter: Misfit
     img: misfit.png
+    regions:
+      - us
+
+  - name: MyChart
+    url: https://www.mychart.com
+    img: mychart.png
+    tfa:
+      - sms
+      - email
+    doc: https://www.mychart.com/Features
     regions:
       - us
 

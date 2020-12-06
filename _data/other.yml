@@ -24,11 +24,6 @@ websites:
       - totp
     doc: https://angel.co/projects/106166
 
-  - name: Australia Post
-    url: https://auspost.com.au/
-    img: auspost.png
-    twitter: auspost
-
   - name: Autodesk
     url: https://www.autodesk.com
     img: autodesk.png
@@ -58,6 +53,14 @@ websites:
     img: bananatag.png
     twitter: bananatag
     facebook: trackemail
+
+  - name: Basic Attention Token
+    url: https://publishers.basicattentiontoken.org/
+    img: basicattentiontoken.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://support.brave.com/hc/en-us/articles/360021649491
 
   - name: CA Technologies
     url: https://www.ca.com/
@@ -136,20 +139,6 @@ websites:
     tfa:
       - sms
 
-  - name: DHL Deutschland
-    url: https://www.dhl.de
-    img: dhl.png
-    tfa:
-      - email
-    doc: https://www.dhl.de/de/toolbar/footer/datenschutz.html#kundenkontoundempfaengerservices
-
-  - name: DPD
-    url: https://www.dpd.de/
-    twitter: dpd_de
-    facebook: dpdindeutschland
-    img: dpd.png
-    lang: de
-
   - name: Dreamstime
     url: https://www.dreamstime.com/
     img: dreamstime.png
@@ -167,6 +156,12 @@ websites:
     img: extremenetworks.png
     twitter: ExtremeNetworks
     facebook: extremenetworks
+    
+  - name: FANDOM
+    url: https://www.fandom.com/
+    twitter: getFANDOM
+    facebook: getFANDOM
+    img: fandom.png
 
   - name: Figma
     url: https://www.figma.com/
@@ -213,16 +208,6 @@ websites:
       - sms
       - email
     doc: https://www.freelancer.com/support/general/2-step-verification
-
-  - name: GLS-ONE
-    url: https://www.gls-one.de/
-    twitter: GLS_Germany
-    facebook: GLSGermany
-    email_address: mail@gls-one.de
-    img: gls-one.png
-    lang: de
-    regions:
-       - de
 
   - name: Golem
     url: https://www.golem.de/
@@ -271,12 +256,6 @@ websites:
       - totp
     doc: https://docs.helpscout.com/article/907--
 
-  - name: Hermes DE
-    url: https://www.myhermes.de/
-    img: hermes.png
-    twitter: hermesDE
-    lang: de
-
   - name: IEEE
     url: https://www.ieee.org
     img: ieee.png
@@ -289,7 +268,7 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://sicherheit.immobilienscout24.de/phishing/absicherung-login.html
+    doc: https://www.youtube.com/watch?v=37Tgxy3NoG4
     exception: "SMS is only available to commercial real estate providers."
 
   - name: Immowelt
@@ -306,7 +285,8 @@ websites:
     tfa:
       - sms
       - phone
-    doc: https://support.indeed.com/hc/en-us/articles/360000244123
+    doc: https://www.indeed.com/lead/two-factor-authentication
+    exception: "2FA is only available for employees and not for job seekers."
 
   - name: Instapaper
     url: https://www.instapaper.com
@@ -482,6 +462,14 @@ websites:
     facebook: spare5app
     email_address: feedback@spare5.com
 
+  - name: TurboSquid
+    url: https://www.turbosquid.com
+    img: turbosquid.png
+    tfa:
+      - email
+      - sms
+    exception: "2FA is only available with a verified email address"
+
   - name: Ubiquiti Inc
     url: https://www.ui.com
     img: ubiquiti.png
@@ -489,24 +477,13 @@ websites:
       - totp
     doc: https://help.ubnt.com/hc/en-us/articles/115012986607
 
-  - name: UK Postbox
-    url: https://www.ukpostbox.com
-    img: ukpostbox.png
-    tfa:
-      - email
-
-  - name: UPS
-    url: https://www.ups.com
-    img: ups.png
-    twitter: UPS
-    facebook: ups
-
   - name: Upwork
     url: https://www.upwork.com
     img: upwork.png
     tfa:
       - sms
       - email
+      - totp
     doc: https://support.upwork.com/hc/en-us/articles/360009491414
 
   - name: Usabilla
@@ -515,7 +492,7 @@ websites:
     tfa:
       - totp
     doc: https://support.usabilla.com/hc/en-us/articles/115003081611
-    
+
   - name: Vivaldi
     url: https://vivaldi.com/
     img: vivaldi.png
@@ -547,11 +524,6 @@ websites:
       - totp
       - hardware
     doc: https://doc.weclapp.com/knowledgebase/zwei-wege-authentifizierung-2fa/
-
-  - name: Wikia
-    url: https://www.wikia.com/
-    twitter: wikia
-    img: wikia.png
 
   - name: Wikipedia
     url: https://www.wikipedia.org/

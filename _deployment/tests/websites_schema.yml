@@ -36,9 +36,6 @@ mapping:
           "email_address":
             type: str
             pattern: /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
-          "status":
-            type: str
-            pattern: /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/
           "lang":
             type: str
             pattern: /^[a-z]{2}$/

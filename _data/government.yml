@@ -178,7 +178,7 @@ websites:
     tfa:
       - sms
       - email
-    doc: https://www.tsp.gov/PlanParticipation/AccountManagement/managing/protectYourTSPAccount.html
+    doc: https://www.tsp.gov/account-basics/protect-your-tsp-account/
     regions:
       - us
 
@@ -189,6 +189,16 @@ websites:
     facebook: CompaniesHouse
     regions:
       - gb
+
+  - name: US Citizenship and Immigration Services
+    url: https://uscis.gov/
+    img: uscis.png
+    tfa:
+      - sms
+      - email
+      - totp
+    regions:
+      - us
 
   - name: US Internal Revenue Service
     url: https://www.irs.gov/Individuals/Get-Transcript

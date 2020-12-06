@@ -27,5 +27,5 @@ let lang = $(this).data('lang') // TODO: Check if langs contains key of lang val
   if (!langs.has(lang)) lang = "en"
   const text = langs.get(lang).replace('TWITTERHANDLE', handle)
 
-  window.open('https://twitter.com/share?url={{site.url | cgi_escape}}&amp;hashtags=SupportTwoFactorAuth&amp;text=' + text, '_blank');
+  window.open('https://twitter.com/share?url={{site.url | cgi_escape}}&hashtags=SupportTwoFactorAuth&text=' + text, '_blank');
 })

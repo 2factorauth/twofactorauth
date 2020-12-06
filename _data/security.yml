@@ -46,7 +46,7 @@ websites:
     img: bugcrowd.png
     tfa:
       - totp
-    doc: https://docs.bugcrowd.com/v1.0/docs/two-factor-authentication-1
+    doc: https://docs.bugcrowd.com/customers/role-and-account-management/two-factor-authentication/
 
   - name: CAcert
     url: http://www.cacert.org/
@@ -106,6 +106,13 @@ websites:
       - totp
       - hardware
     doc: https://dome9.com/overview/strong-2-factor-authentication
+  
+  - name: EasyDMARC
+    url: https://easydmarc.com
+    img: easydmarc.png
+    tfa:
+      - totp
+    doc: https://easydmarc.com/blog/two-factor-authentication/
 
   - name: Entrust
     img: entrust.png
@@ -178,6 +185,12 @@ websites:
       - proprietary
       - u2f
     doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us
+
+  - name: Panther
+    url: https://runpanther.io
+    img: panther.png
+    tfa:
+      - totp
 
   - name: Prey
     url: https://www.preyproject.com
