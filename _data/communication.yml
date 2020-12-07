@@ -399,6 +399,13 @@ websites:
     facebook: Yammer
     img: yammer.png
 
+  - name: YetiForceCRM
+    url: https://yetiforce.com
+    img: yetiforce.png
+    tfa:
+      - totp
+    doc: https://yetiforce.com/en/knowledge-base/documentation/developer-documentation/category/security
+
   - name: Zoom
     url: https://www.zoom.us
     img: zoom.png
