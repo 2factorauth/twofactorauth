@@ -3,7 +3,9 @@
 
 require 'json'
 require 'yaml'
+require 'fileutils'
 
+api_dir = 'api/v2'
 data_dir = './_data'
 tags = %w[url img twitter facebook email_address doc exception tfa doc]
 
@@ -19,6 +21,8 @@ output = {
   'tfa' => {},
   'all' => {}
 }
+
+FileUtils.mkdir_p api_dir
 
 # Loop through all sections
 YAML.load_file("#{data_dir}/sections.yml").each do |section|
@@ -45,5 +49,5 @@ end
 
 # Write to all output files
 output.map.each do |k, v|
-  File.open("./api/v2/#{k}.json", 'w') { |file| file.write v.to_h.to_json }
+  File.open("#{api_dir}/#{k}.json", 'w') { |file| file.write v.to_h.to_json }
 end

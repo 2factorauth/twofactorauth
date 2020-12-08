@@ -112,6 +112,14 @@ websites:
       - totp
     doc: https://easysendy.com/sendy/sendy-version-2-1-0-two-factor-authentication-released
 
+  - name: Elastic Email
+    url: https://elasticemail.com
+    img: elasticemail.png
+    tfa:
+      - sms
+      - email
+    doc: https://help.elasticemail.com/en/articles/2783376
+
   - name: Element
     url: https://element.io/
     img: element.png
@@ -156,7 +164,7 @@ websites:
     img: groupme.png
     tfa:
       - sms
-    doc: https://help.groupme.com/hc/en-us/articles/360000579167
+    doc: https://support.microsoft.com/en-us/office/30a7b8fd-5052-4b6f-aa10-85c1560cdf59
 
   - name: Groups.io
     url: https://groups.io
@@ -259,6 +267,15 @@ websites:
     tfa:
       - email
     doc: https://support.pipedrive.com/hc/en-us/articles/360000808405
+
+  - name: Postmarkapp
+    url: https://www.postmarkapp.com/
+    img: postmarkapp.png
+    tfa:
+      - sms
+      - totp
+    doc: https://postmarkapp.com/support/article/1081-how-do-i-use-two-factor-authentication-2fa
+    exception: "Setup requires SMS verification."
 
   - name: Ryver
     url: https://ryver.com/
