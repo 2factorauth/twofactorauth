@@ -24,6 +24,15 @@ websites:
     regions:
       - us
 
+  - name: Bill
+    url: https://www.bill.com
+    img: bill.png
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://help.bill.com/hc/en-us/articles/360000023843
+
   - name: Braintree
     img: braintree.png
     url: https://www.braintreepayments.com/
