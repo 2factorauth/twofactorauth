@@ -32,6 +32,7 @@ websites:
       - phone
       - totp
     doc: https://help.bill.com/hc/en-us/articles/360000023843
+    exception: "2FA via phone call is available for US and CA only."
 
   - name: Braintree
     img: braintree.png
