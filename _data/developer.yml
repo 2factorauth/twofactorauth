@@ -512,6 +512,13 @@ websites:
       - totp
     doc: https://scotthelme.co.uk/dealing-with-account-recovery-and-2fa/
 
+  - name: RevenueCat
+    url: https://revenuecat.com
+    img: revenuecat.png
+    tfa:
+      - totp
+    doc: https://docs.revenuecat.com/docs/security
+
   - name: Rollbar
     url: https://rollbar.com/
     img: rollbar.png
