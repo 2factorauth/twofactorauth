@@ -147,6 +147,13 @@ websites:
       - totp
     doc: https://support.exactonline.com/community/s/knowledge-base#All-All-HNO-Task-general-security-gen-auth-totpregphndsktpt
 
+  - name: Expensify
+    url: https://www.expensify.com/
+    img: expensify.png
+    tfa:
+      - totp
+    doc: https://community.expensify.com/discussion/7385/how-to-enable-two-factor-authentication-on-your-account
+
   - name: Experian Ltd
     url: https://www.experian.co.uk/
     img: experianltd.png
