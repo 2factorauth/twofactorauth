@@ -349,6 +349,13 @@ websites:
       - ca
       - sg
 
+  - name: Crypto
+    url: https://www.crypto.com
+    img: crypto.png
+    tfa:
+      - totp
+    doc: https://help.crypto.com/en/articles/3511439
+
   - name: Cryptonator
     url: https://www.cryptonator.com
     img: cryptonator.png
