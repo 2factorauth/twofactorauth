@@ -189,6 +189,13 @@ websites:
     twitter: CybotCorp
     facebook: cybotcorp
 
+  - name: Countly
+    url: https://www.count.ly
+    img: countly.png
+    tfa:
+      - totp
+    doc: https://count.ly/plugins/two-factor-authentication
+
   - name: Crowdin
     url: https://crowdin.com/
     img: crowdin.png
