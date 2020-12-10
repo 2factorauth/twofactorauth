@@ -1,4 +1,12 @@
 websites:
+  - name: 2Checkout
+    url: https://www.2checkout.com
+    img: 2checkout.png
+    tfa:
+      - totp
+      - email
+    doc: https://knowledgecenter.2checkout.com/Onboarding/Activate-and-set-up-your-2Checkout-account/Two-factor-authentication
+
   - name: Amazon Pay
     url: https://pay.amazon.com
     img: amazonpay.png
