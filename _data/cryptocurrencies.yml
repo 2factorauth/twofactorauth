@@ -349,13 +349,20 @@ websites:
       - ca
       - sg
 
+  - name: Crypto
+    url: https://www.crypto.com
+    img: crypto.png
+    tfa:
+      - totp
+      - proprietary
+      - sms
+    doc: https://help.crypto.com/en/articles/3511439
+
   - name: Cryptonator
     url: https://www.cryptonator.com
     img: cryptonator.png
     tfa:
       - totp
-      - proprietary
-      - sms
     doc: https://cryptonator.zendesk.com/hc/en-us/articles/201715352
 
   - name: DSX
