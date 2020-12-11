@@ -52,6 +52,12 @@ websites:
       - sms
     doc: https://meine.aok.de/landingpage/faq
 
+  - name: Bankrate
+    url: https://www.bankrate.com/
+    img: bankrate.png
+    twitter: Bankrate
+    facebook: Bankrate
+
   - name: BGL Corporate Solutions
     url: https://www.bglcorp.com/
     tfa:
@@ -224,12 +230,6 @@ websites:
     facebook: hargreaveslansdowninvest
     img: hargreaveslansdown.png
 
-  - name: HelloWallet
-    url: https://www.hellowallet.com
-    twitter: keybank
-    facebook: keybank
-    img: hellowallet.png
-
   - name: Intuit TurboTax
     url: https://turbotax.intuit.com/
     img: turbotax.png
@@ -329,9 +329,13 @@ websites:
 
   - name: Northwestern Mutual
     url: https://www.northwesternmutual.com/
-    facebook: northwesternmutual
+    tfa:
+      - sms
+      - phone
+      - totp
     img: northwesternmutual.png
-
+    doc: https://www.northwesternmutual.com/security-and-privacy/
+    
   - name: Paychex
     url: https://www.paychex.com
     img: paychex.png
@@ -415,11 +419,6 @@ websites:
       - totp
     doc: https://community.quickfile.co.uk/t/2-factor-authentication/8892
 
-  - name: Quizzle
-    url: https://www.quizzle.com
-    img: quizzle.png
-    twitter: Quizzle
-
   - name: Rocket Mortgage
     url: https://www.rocketmortgage.com/
     twitter: RocketMortgage
@@ -491,11 +490,6 @@ websites:
     tfa:
       - email
     doc: https://www.treasurydirect.gov/indiv/help/TDHelp/help_ug_274-SecFeaturesProtectAcctLearnMore.htm
-
-  - name: Valic
-    url: https://www.valic.com/
-    facebook: valic
-    img: valic.png
 
   - name: Vitality
     url: https://www.vitality.co.uk

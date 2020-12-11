@@ -1,0 +1,116 @@
+---
+layout: landing_page 
+title: Which banks support Two Factor Authentication?
+description: Listing of which large US banks support Two Factor Authentication, and which forms of 2FA they support.
+us_banks:
+  - Chase
+  - Bank of America
+  - Citibank
+  - Wells Fargo
+  - Marcus by Goldman Sachs
+  - TD Bank
+  - PNC Bank
+  - Capital One
+  - HSBC
+  - BMO Harris Bank
+  - Fifth Third Bank
+  - Ally Bank
+  - Barclays US
+  - USAA
+  - Citizens Bank
+  - First Republic Bank
+
+---
+<h1>Which banks support Two Factor Authenication (2FA)?</h1>
+
+<div class="category-table">
+  <table class="table table-hover table-bordered table-bordered">
+    <thead class="sticky-top">
+      <tr>
+        <th scope="col">Bank Name</th>
+        <th scope="col" class="icon-cell">Docs</th>
+        <th scope="col" class="icon-cell">SMS</th>
+        <th scope="col" class="icon-cell">Phone Call</th>
+        <th scope="col" class="icon-cell">Email</th>
+        <th scope="col" class="icon-cell">Hardware token</th>
+        <th scope="col" class="icon-cell">Software token</th>
+      </tr>
+    </thead>
+
+    <tbody class="searchContainer">
+      {% for website in site.data.banking.websites %}
+          {% if page.us_banks contains website.name %}
+            <tr class="table-{% if website.tfa %}success{%else %}danger{% endif %}">
+              <td>
+                <div class="row no-gutters">
+                  {% if website.landing_page_url %}
+                    <a class="site-name" href="{{ website.landing_page_url }}">{{ website.name }}</a>
+                  {% else %}
+                    <a class="site-name" href="{{ website.url }}">{{ website.name }}</a>
+                  {% endif %}
+                </div>
+              </td>
+
+              {% if website.tfa %}
+                {% assign tfa = website.tfa %}
+
+                <td class="icon-cell">
+                  {% if website.doc %}
+                    <a href="{{ website.doc }}">
+                      <i class="fas fa-book"></i>
+                    </a>
+                  {% endif %}
+                </td>
+
+                <td class="icon-cell">
+                  {% if tfa contains "sms" %}
+                    <i class="tfa-icon fas fa-check"></i>
+                  {% endif %}
+                </td>
+
+                <td class="icon-cell">
+                  {% if tfa contains "phone" %}
+                    <i class="tfa-icon fas fa-check"></i>
+                    {%endif%}</td>
+                </td>
+                <td class="icon-cell">
+                  {% if tfa contains "email" %}
+                    <i class="tfa-icon fas fa-check"></i>
+                  {% endif %}
+                </td>
+
+                <td class="icon-cell">
+                  <div class="row">
+                    {% if tfa contains "hardware" %}
+                      <i class="tfa-icon fas fa-check col"></i>
+                    {% endif %}
+
+                    {% if tfa contains "u2f" %}
+                      <i class="tfa-icon u2f-icon col" title="U2F">
+                        <img alt="U2F" height="20" src="/img/u2f.svg" type="image/svg">
+                      </i>
+                    {% endif %}
+                  </div>
+                </td>
+
+                <td class="icon-cell">
+                  <div class="row">
+                    {% if tfa contains "totp" %}
+                      <i class="tfa-icon fas fa-check col"></i>
+                    {% endif %}
+                    {% if tfa contains "proprietary" %}
+                      <i class="tfa-icon fas fa-info col" title="Proprietary software based 2FA"></i>
+                    {% endif %}
+                  </div>
+                </td>
+              {% else %}
+                <td colspan="6" style="text-align: center;">
+                  No Two Factor Authentication Support
+                </td>
+              {% endif %}
+            </tr>
+          {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

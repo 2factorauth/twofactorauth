@@ -1,5 +1,7 @@
 ---
 ---
+{% capture title %}Does {{ page.bank_name }} support Two Factor Authentication?{% endcapture %}
+{% capture description %}Full details about which methods of Two Factor Authentication (2FA) are supported by {{ page.bank_name }}.{% endcapture %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,21 +11,21 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="default" name="apple-mobile-web-app-status-bar-style">
     <meta name="msapplication-TileColor" content="{{ site.theme_color }}">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ description }}">
     <meta name="theme-color" content="{{ site.theme_color }}">
     <meta name="application-name" content="{{ site.title }}">
-    <meta property="og:title" content="{{ site.title }}">
-    <meta property="og:url" content="{{ site.url }}">
-    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:url" content="{{ page.url }}">
+    <meta property="og:description" content="{{ description }}">
     <meta content="https://twofactorauth.org/img/logo.png" property="og:image">
     <meta content="website" property="og:type">
     <meta content="summary_large_image" property="twitter:card">
-    <meta property="twitter:title" content="{{ site.title }}">
+    <meta property="twitter:title" content="{{ title }}">
     <meta property="twitter:creator" content="{{ site.author }}">
     <meta property="twitter:site" content="{{ site.twitter }}">
     <meta property="twitter:image" content="{{ site.social_image }}">
-    <meta property="twitter:description" content="{{ site.description }}">
-    <title>{{ site.title }}</title>
+    <meta property="twitter:description" content="{{ description }}">
+    <title>{{ title }}</title>
     {% include icons.html %}
     <link href="/manifest.json" rel="manifest">
     <link rel="stylesheet" href="/css/bootstrap.css"/>
@@ -34,14 +36,6 @@
     <link href="/css/main.css" rel="stylesheet">
     <link href="/css/navbar.css" rel="stylesheet">
     <link href="/css/corner.css" rel="stylesheet">
-    {% if page.name == "index.html" %}
-      <link href="/css/popup.css" rel="stylesheet">
-      <link href="/css/desktop-table.css" rel="stylesheet">
-      <link href="/css/mobile-table.css" rel="stylesheet">
-      <link href="/css/social-media.css" rel="stylesheet">
-    {% elsif page.name == "about.html" %}
-      <link href="/css/about.css" rel="stylesheet">
-    {% endif %}
   </head>
 
   <body>
@@ -54,18 +48,55 @@
       </svg>
     </a>
 
+    {% for website in site.data.banking.websites %}
+        {% if website.name == page.bank_name %}
+          {% assign bank_info = website %}
+        {% endif %}
+    {% endfor %}
+
     <div class="container">
-      <noscript>
-        <div class="alert bg-danger text-white border" style="padding: 1vh 1vw;margin-top: 1vh;">
-          <h2>It looks like you have JavaScript disabled!</h2>
-          <p>Without JavaScript, this page probably won't work very well.
-                  For more information, or if you would like to talk to us about this,
-                  please take a look at our
-            <b><a href="{{ site.repo }}" style="color: whitesmoke;">
-              GitHub repository</a></b>.</p>
+      <div id="main">
+        <img alt="" id="logo" src="/img/icons/icon.svg">
+        <h2>{{ page.bank_name }} Two Factor Auth Information</h2>
+        <div class="sub header"></a>
         </div>
-      </noscript>
-      {{ content }}
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h2>Does {{ page.bank_name }} support Two Factor Authentication?</h2>
+          <p>
+          {% if bank_info.tfa %}
+            Yes, {{ page.bank_name }} supports Two Factor Authentication.
+          {% else %}
+            No, {{ page.bank_name }} does not currently support Two Factor Authentication.
+          {% endif %}
+          </p>
+
+          <h2>Which methods of Two Factor Authentication does {{ page.bank_name }} support?</h2>
+          <p>
+          {% if bank_info.tfa %}
+            {% if bank_info.tfa.size == 1 %}
+              {{ page.bank_name }} currently supports a single method of two factor authentication, {{ bank_info.tfa[0] }}
+            {% else %}
+              {{ page.bank_name }} currently supports {{ bank_info.tfa|size }} methods of two factor authentication: {% for method in bank_info.tfa %}{% if forloop.last %} and {% endif %}{{ method }}{% if forloop.last == false %}, {% endif %}{% endfor %}
+            {% endif %}
+          {% else %}
+            {{ page.bank_name }} doesn't currently support any methods of two factor authentication.
+          {% endif %}
+          </p>
+
+          {% if bank_info.doc %}
+            <h2>Where can I find details about {{ page.bank_name }}'s support for 2FA?</h2>
+
+            <p>
+              You can find more details about {{ page.bank_name }}'s two factor authenication
+              support on <a href="{{ bank_info.doc }}">this documentation page</a> found on
+              <a href="{{ bank_info.url }}">{{ page.bank_name }}'s main website</a>.
+            </p>
+          {% endif %}
+        </div>
+      </div>
     </div>
 
     <div class="footer">

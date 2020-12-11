@@ -342,9 +342,10 @@ websites:
 
   - name: LCN.com
     url: https://www.lcn.com
-    twitter: lcndotcom
-    facebook: lcndotcom
     img: lcn.png
+    tfa:
+      - totp
+    doc: https://www.lcn.com/support/articles/how-to-set-up-and-use-two-factor-authentication/
 
   - name: Liquid Web
     url: https://www.liquidweb.com

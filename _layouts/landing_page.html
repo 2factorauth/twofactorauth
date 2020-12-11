@@ -9,21 +9,21 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="default" name="apple-mobile-web-app-status-bar-style">
     <meta name="msapplication-TileColor" content="{{ site.theme_color }}">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ page.description }}">
     <meta name="theme-color" content="{{ site.theme_color }}">
     <meta name="application-name" content="{{ site.title }}">
-    <meta property="og:title" content="{{ site.title }}">
-    <meta property="og:url" content="{{ site.url }}">
-    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:url" content="{{ page.url }}">
+    <meta property="og:description" content="{{ page.description }}">
     <meta content="https://twofactorauth.org/img/logo.png" property="og:image">
     <meta content="website" property="og:type">
     <meta content="summary_large_image" property="twitter:card">
-    <meta property="twitter:title" content="{{ site.title }}">
+    <meta property="twitter:title" content="{{ page.title }}">
     <meta property="twitter:creator" content="{{ site.author }}">
     <meta property="twitter:site" content="{{ site.twitter }}">
     <meta property="twitter:image" content="{{ site.social_image }}">
-    <meta property="twitter:description" content="{{ site.description }}">
-    <title>{{ site.title }}</title>
+    <meta property="twitter:description" content="{{ page.description }}">
+    <title>{{ page.title }}</title>
     {% include icons.html %}
     <link href="/manifest.json" rel="manifest">
     <link rel="stylesheet" href="/css/bootstrap.css"/>
@@ -34,14 +34,6 @@
     <link href="/css/main.css" rel="stylesheet">
     <link href="/css/navbar.css" rel="stylesheet">
     <link href="/css/corner.css" rel="stylesheet">
-    {% if page.name == "index.html" %}
-      <link href="/css/popup.css" rel="stylesheet">
-      <link href="/css/desktop-table.css" rel="stylesheet">
-      <link href="/css/mobile-table.css" rel="stylesheet">
-      <link href="/css/social-media.css" rel="stylesheet">
-    {% elsif page.name == "about.html" %}
-      <link href="/css/about.css" rel="stylesheet">
-    {% endif %}
   </head>
 
   <body>
@@ -55,16 +47,6 @@
     </a>
 
     <div class="container">
-      <noscript>
-        <div class="alert bg-danger text-white border" style="padding: 1vh 1vw;margin-top: 1vh;">
-          <h2>It looks like you have JavaScript disabled!</h2>
-          <p>Without JavaScript, this page probably won't work very well.
-                  For more information, or if you would like to talk to us about this,
-                  please take a look at our
-            <b><a href="{{ site.repo }}" style="color: whitesmoke;">
-              GitHub repository</a></b>.</p>
-        </div>
-      </noscript>
       {{ content }}
     </div>
 
