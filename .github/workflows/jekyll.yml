@@ -41,6 +41,3 @@ jobs:
 
     - name: Run build checks
       run: bundle exec rake verify
-
-    - name: Check region tags
-      run: ruby _deployment/tests/region_codes.rb

@@ -37,12 +37,6 @@ jobs:
           ./_deployment/tests/extensions.sh ${{ github.workspace }}/_includes html
           ./_deployment/tests/extensions.sh ${{ github.workspace }}/_data yml
 
-      - name: Build region sites
-        run: |
-          mkdir -p api/v{1,2}
-          ruby ./_deployment/used_regions.rb > api/v2/regions.json
-          ruby ./_deployment/regions.rb --production
-
       - name: Generate webp images
         run: ./_deployment/webp.sh
 
