@@ -9,32 +9,6 @@
       <li class="nav-item">
         <a class="nav-link" href="/about">About</a>
       </li>
-      {% if page.name == "index.html" %}
-        <li class="nav-item dropdown">
-          <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" id="regionDropdown" role="button">
-            Region
-            {% assign baseurl = site.baseurl %}
-            {% assign regions = site.data.regions | sort: "name" %}
-            {% assign regions2 = regions | map: 'id' %}
-            {% if regions2 contains baseurl %}
-	      {% assign region = regions | where: 'id', baseurl %}
-              <span class="flag-icon {% if region.first.square_flag %}flag-icon-squared{% endif %} flag-icon-{{ baseurl }}"></span>
-            {% else %}
-              <i class="fas fa-globe-africa"></i>
-            {% endif %}
-          </a>
-          <div aria-labelledby="regionDropdown" class="dropdown-menu">
-            <a class="dropdown-item" href="/">
-              <i class="fas fa-globe-africa"></i>
-              Global</a>
-            {% for region in regions %}
-              <a class="dropdown-item" href="/{{ region.id }}/">
-                <span class="flag-icon {% if region.square_flag %}flag-icon-squared{% endif %} flag-icon-{{ region.id }}"></span>
-                {{ region.name }}</a>
-            {% endfor %}
-          </div>
-        </li>
-      {% endif %}
     </ul>
   </div>
 </nav>
