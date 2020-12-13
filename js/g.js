@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  if (window.location.hostname === 'localhost') {
+    return;
+  }
+
   let didSetConsent = false;
 
   function allowAnalytics() {
