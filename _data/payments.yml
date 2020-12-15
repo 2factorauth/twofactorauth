@@ -235,12 +235,13 @@ websites:
       - us
 
   - name: Skrill
-    url: https://skrill.com/
+    url: https://skrill.com
     img: skrill.png
     tfa:
       - email
       - sms
-    doc: https://www.skrill.com/en/support#/path/SECURITY/1362150272/
+      - totp
+    doc: https://skrill.com/en-us/support#/path/ACCOUNT/Two-Factor-Authentication/905782552/Two-Factor-Authentication-2FA.htm
     exception: "Email method requires an additional PIN"
 
   - name: Square
