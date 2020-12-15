@@ -110,6 +110,15 @@ websites:
     tfa:
       - totp
 
+  - name: Clover
+    url: https://www.clover.com
+    img: clover.png
+    tfa:
+      - totp
+    doc: https://www.clover.com/help/two-factor-authentication
+    regions:
+      - us
+
   - name: Cloudinary
     url: https://cloudinary.com
     img: cloudinary.png
