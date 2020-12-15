@@ -110,6 +110,12 @@ websites:
     tfa:
       - totp
 
+  - name: Cloudinary
+    url: https://cloudinary.com
+    img: cloudinary.png
+    tfa:
+      - totp
+
   - name: Clover
     url: https://www.clover.com
     img: clover.png
@@ -118,12 +124,6 @@ websites:
     doc: https://www.clover.com/help/two-factor-authentication
     regions:
       - us
-
-  - name: Cloudinary
-    url: https://cloudinary.com
-    img: cloudinary.png
-    tfa:
-      - totp
 
   - name: CommuterBenefits
     url: https://commuterbenefits.com/
