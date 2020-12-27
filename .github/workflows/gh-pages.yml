@@ -27,7 +27,7 @@ jobs:
           bundle config set cache_all true
           bundle install --jobs 4 --retry 3
           npm i babel-minify
-          sudo apt install webp -y &
+          sudo apt install webp -y
           [ -d "vendor/cache" ] || { bundle package; }
 
       - name: Check file extensions
