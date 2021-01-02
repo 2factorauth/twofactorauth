@@ -60,18 +60,18 @@ websites:
     doc: https://confluence.atlassian.com/cloud/secure-your-account-with-two-step-verification-939505063.html
     exception: "2FA settings are service-specific."
 
-  - name: Balsamiq
-    url: https://balsamiq.com
-    twitter: balsamiq
-    facebook: balsamiq
-    img: balsamiq.png
-    
   - name: Back4App
     url: https://back4app.com
     img: back4app.png
     tfa:
       - totp
     doc: https://www.back4app.com/docs/security/multi-factor-authentication
+
+  - name: Balsamiq
+    url: https://balsamiq.com
+    twitter: balsamiq
+    facebook: balsamiq
+    img: balsamiq.png
 
   - name: Batch
     url: https://batch.com
