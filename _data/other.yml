@@ -519,6 +519,13 @@ websites:
       - totp
     doc: https://community.teespring.com/blog/a-more-secure-teespring-two-factor-authentification/
 
+  - name: Timetastic
+    url: https://timetastic.co.uk
+    img: timetastic.png
+    tfa:
+      - totp
+    doc: https://help.timetastic.co.uk/hc/en-us/articles/360015994257
+
   - name: TurboSquid
     url: https://www.turbosquid.com
     img: turbosquid.png
