@@ -70,6 +70,12 @@ websites:
       - totp
     doc: https://cobalt.io/blog/new-feature-two-factor-auth/
 
+  - name: Crowdstrike
+    url: https://falcon.crowdstrike.com
+    img: crowdstrike.png
+    tfa:
+      - totp
+
   - name: Detectify
     url: https://detectify.com/
     img: detectify.png
