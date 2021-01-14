@@ -145,6 +145,13 @@ websites:
     twitter: chocolateynuget
     facebook: ChocolateySoftware
 
+  - name: Cloudsmith
+    url: https://cloudsmith.com
+    img: cloudsmith.png
+    tfa:
+      - totp
+    doc: https://help.cloudsmith.io/docs/two-factor-authentication
+
   - name: CM Telecom
     url: https://www.cmtelecom.com/
     img: cmtelecom.png
