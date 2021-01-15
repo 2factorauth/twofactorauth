@@ -12,6 +12,13 @@ websites:
     tfa:
       - totp
     doc: https://www.ionos.com/help/index.php?id=3269
+    
+    - name: 1blu
+    url: https://www.1blu.de
+    img: 1blu.png
+    tfa:
+      - totp
+    doc: https://faq.1blu.de/content/613/999/de/sie-moechten-die-2_faktor_authentisierung-fuer-den-1blu_kundenlogin-nutzen.html
 
   - name: 101domain
     url: https://101domain.com
