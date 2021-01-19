@@ -335,7 +335,7 @@ websites:
       - totp
     img: northwesternmutual.png
     doc: https://www.northwesternmutual.com/security-and-privacy/
-    
+
   - name: Paychex
     url: https://www.paychex.com
     img: paychex.png
@@ -418,6 +418,14 @@ websites:
     tfa:
       - totp
     doc: https://community.quickfile.co.uk/t/2-factor-authentication/8892
+
+  - name: River Financial
+    url: https://www.river.com
+    img: river.png
+    tfa:
+      - sms
+      - totp
+    doc: https://river.com/support/knowledge-base/articles/enable-multi-factor-authentication
 
   - name: Rocket Mortgage
     url: https://www.rocketmortgage.com/
