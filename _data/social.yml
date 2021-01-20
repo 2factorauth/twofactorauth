@@ -247,6 +247,13 @@ websites:
       - totp
     doc: https://support.snapchat.com/en-US/article/enable-login-verification
 
+  - name: SproutSocial
+    url: https://sproutsocial.com
+    img: sproutsocial.png
+    tfa:
+      - totp
+    doc: https://support.sproutsocial.com/hc/en-us/articles/213938786
+
   - name: Stack Exchange
     url: https://stackexchange.com/
     img: stack_exchange.png
