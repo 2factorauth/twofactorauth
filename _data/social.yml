@@ -239,13 +239,6 @@ websites:
       - totp
     doc: https://help.short.io/en/articles/4065798
 
-  - name: Socialbakers Suite
-    url: https://socialbakers.com
-    img: socialbakers.png
-    tfa:
-      - totp
-    doc: https://support.socialbakers.com/hc/en-us/articles/360015072719
-
   - name: Snapchat
     url: https://www.snapchat.com/
     img: snapchat.png
@@ -253,6 +246,13 @@ websites:
       - sms
       - totp
     doc: https://support.snapchat.com/en-US/article/enable-login-verification
+
+  - name: Socialbakers Suite
+    url: https://socialbakers.com
+    img: socialbakers.png
+    tfa:
+      - totp
+    doc: https://support.socialbakers.com/hc/en-us/articles/360015072719
 
   - name: Stack Exchange
     url: https://stackexchange.com/
