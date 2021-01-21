@@ -485,9 +485,10 @@ websites:
 
   - name: STRATO
     url: https://www.strato.de/
-    twitter: STRATO_AG
-    facebook: strato
     img: strato.png
+    tfa:
+      - totp
+    doc: https://registro.br/ajuda/gerenciamento-de-conta/token/
     lang: de
 
   - name: Synergy Wholesale
