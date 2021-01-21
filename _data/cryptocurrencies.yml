@@ -374,6 +374,15 @@ websites:
       - u2f
     doc: https://docs.dsx.uk/dsx/getting-started-with-dsx/your-security-is-our-priority/enable-two-factor-authentication
 
+  - name: Gate.io
+    url: https://gate.io
+    img: gate.png
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://www.gate.io/help/question/16445
+
   - name: Gatehub
     url: https://gatehub.net
     img: gatehub.png
