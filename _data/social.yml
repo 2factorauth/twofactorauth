@@ -62,6 +62,12 @@ websites:
     email_address: suggestions@ello.co
     img: ello.png
 
+  - name: e-Clincher
+    url: https://eclincher.com
+    img: eclincher.png
+    tfa:
+      - totp
+
   - name: Eventbrite
     url: https://www.eventbrite.com/
     twitter: eventbritehelp
