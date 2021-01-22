@@ -552,6 +552,13 @@ websites:
       - sms
     doc: https://support.viabtc.com/hc/en-us/articles/900001693343
 
+  - name: wallet.io
+    url: https://wallet.io
+    img: wallet.png
+    tfa:
+      - sms
+      - totp
+
   - name: Wirex
     url: https://wirexapp.com/
     img: wirex.png
