@@ -30,6 +30,15 @@ websites:
       - email
       - totp
     doc: https://bitbay.net/en/safety
+    
+  - name: Bitclude
+    url: https://bitclude.com/
+    img: bitclude.com
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://help.bitclude.com/how-to-enable-2fa-dual-authorization/
 
   - name: Bitcoin.de
     url: https://bitcoin.de
