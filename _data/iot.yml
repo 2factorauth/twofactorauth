@@ -14,6 +14,7 @@ websites:
     img: ecobee.png
     tfa:
       - sms
+      - totp
     doc: https://support.ecobee.com/hc/en-us/articles/360040957212
 
   - name: IFTTT
@@ -55,14 +56,16 @@ websites:
     img: ringcom.png
     tfa:
       - sms
-    doc: https://support.ring.com/hc/en-us/articles/360024818291
+      - email
+    doc: https://support.ring.com/hc/en-us/articles/360039693891
 
   - name: Samsung SmartThings
     url: https://www.smartthings.com/
     img: smartthings.png
     tfa:
       - sms
-    doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
+      - totp
+    doc: https://account.samsung.com/membership/guide/2step/
 
   - name: SimpliSafe
     url: https://simplisafe.com/
@@ -79,7 +82,9 @@ websites:
   - name: Tesla
     url: https://www.tesla.com
     img: tesla.png
-    twitter: Tesla
+    tfa:
+      - totp
+    doc: https://www.tesla.com/support/multi-factor-authentication
 
   - name: Total Connect Comfort
     url: https://www.mytotalconnectcomfort.com

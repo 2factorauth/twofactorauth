@@ -28,14 +28,14 @@ If you want to make a copy (fork) of our site to list any of these sites you're 
 
     -   TwoFactorAuth.org is targeted towards consumers and not website administrators. As of right now, very few general internet users choose to host their own websites and services. Therefore we think that the effort on our part to maintain such a list of self hosted alternatives would outweigh the minimal theoretical change in the internet landscape by listing such services.
 
-    -   If the core project doesn't support two factor authentication but instead through plugins it would mean that we would have to list all plugins that enable two factor authentication for the service. Something that is currently impossible with our website layout.
+    -   If the core project doesn't support two factor authentication but instead through plugins it would mean that we would have to list all plugins that enable two factor authentication for the service, something that is currently impossible with our website layout.
 
     If you have any questions regarding whether or not a site qualifies for listing, simply open an issue and we'll take a look.
 
 *   #### Potential controversial sites 
 
     Any site that could damage the reputation of TwoFactorAuth.org and/or lead to any controversy with either the maintainers or users, should not be listed.
-    The group of active maintainers will decide on whether to include or exclude a site within a specific timeframe. Once an exclusion was decided upon, the site will be listed in the section below and - if a pull request exists - it will be closed.
+    The group of active maintainers will decide on whether to include or exclude a site within a specific timeframe. Once an exclusion was decided upon, the site will be listed in the section below and any corresponding pull request will be closed.
 
 ## Sites
 

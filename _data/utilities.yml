@@ -15,7 +15,7 @@ websites:
     doc: https://aa.net.uk/kb-broadband-2fa.html
     exception: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
     regions:
-      - uk
+      - gb
 
   - name: Arcadia
     url: https://www.arcadia.com/
@@ -48,7 +48,7 @@ websites:
     twitter: bt_uk
     facebook: BTUK
     regions:
-      - uk
+      - gb
 
   - name: Bulb
     url: https://www.bulb.co.uk
@@ -56,7 +56,7 @@ websites:
     facebook: bulb
     img: bulbenergy.png
     regions:
-      - uk
+      - gb
 
   - name: Cablevisión Fibertel
     url: https://www.cablevisionfibertel.com.ar/
@@ -169,8 +169,10 @@ websites:
 
   - name: Dominion Energy
     url: https://www.dominionenergy.com/
-    twitter: DominionEnergy
     img: dominion.png
+    tfa:
+      - sms
+      - email
     regions:
       - us
 
@@ -196,7 +198,7 @@ websites:
     facebook: ee
     img: ee.png
     regions:
-      - uk
+      - gb
 
   - name: Ergon Energy
     url: https://www.ergon.com.au/
@@ -246,7 +248,8 @@ websites:
       - sms
       - phone
       - totp
-      - hardware
+      - proprietary
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
     regions:
       - us
@@ -259,7 +262,7 @@ websites:
       - phone
       - totp
       - proprietary
-      - hardware
+      - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
     regions:
       - us
@@ -432,7 +435,10 @@ websites:
     img: tmobile.png
     tfa:
       - sms
+      - totp
+      - hardware
     doc: https://support.t-mobile.com/docs/DOC-2727
+    exception: "Backup methods of SMS or recovery questions can't be disabled."
     regions:
       - us
 
@@ -477,7 +483,7 @@ websites:
     facebook: ThreeUK
     img: three.png
     regions:
-      - uk
+      - gb
 
   - name: TIM
     url: https://www.tim.it/
@@ -536,7 +542,7 @@ websites:
     facebook: virginmedia
     img: virginmedia.png
     regions:
-      - uk
+      - gb
 
   - name: Virgin Mobile
     url: https://www.virgin.com/gateways/mobile
@@ -575,7 +581,7 @@ websites:
     tfa:
       - sms
     regions:
-      - uk
+      - gb
 
   - name: VoIP.ms
     url: https://voip.ms/
@@ -583,3 +589,12 @@ websites:
     tfa:
       - email
     doc: https://wiki.voip.ms/article/Two-step_Verification
+
+  - name: Wingo
+    url: https://www.wingo.ch
+    img: wingo.png
+    twitter: Wingo_de
+    facebook: WingoCH
+    lang: de
+    regions:
+      - ch

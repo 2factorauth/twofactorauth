@@ -83,8 +83,13 @@ websites:
     img: bitbucket.png
     tfa:
       - totp
-      - hardware
+      - u2f
     doc: https://confluence.atlassian.com/x/425QLg
+
+  - name: Bitnami
+    url: https://bitnami.com
+    img: bitnami.png
+    twitter: bitnami
 
   - name: Buddy
     url: https://buddy.works
@@ -178,6 +183,12 @@ websites:
       - totp
     doc: https://help.compose.com/docs/two-factor-authentication
 
+  - name: Cookiebot
+    url: https://www.cookiebot.com/
+    img: cookiebot.png
+    twitter: CybotCorp
+    facebook: cybotcorp
+
   - name: Crowdin
     url: https://crowdin.com/
     img: crowdin.png
@@ -237,7 +248,7 @@ websites:
     img: fogbugz.png
     tfa:
       - totp
-    doc: https://support.fogbugz.com/hc/en-us/articles/360011256234
+    doc: https://support.fogbugz.com/hc/en-us/articles/360011262434
 
   - name: GitHub
     url: https://github.com
@@ -245,7 +256,7 @@ websites:
     tfa:
       - sms
       - totp
-      - hardware
+      - u2f
     doc: https://help.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication
     exception: "Hardware tokens must have a backup method, either SMS or software token."
 
@@ -280,6 +291,11 @@ websites:
       - totp
     doc: https://docs.heap.io/docs/2fa
 
+  - name: Hotjar
+    url: https://hotjar.com/
+    img: hotjar.png
+    twitter: hotjar
+
   - name: imgix
     url: https://www.imgix.com/
     twitter: imgix
@@ -293,18 +309,29 @@ websites:
       - sms
     doc: https://www.infobip.com/messaging/enterprise/2_factor_authentication/
 
+  - name: InVision
+    url: https://www.invisionapp.com
+    img: invision.png
+    tfa:
+      - totp
+      - sms
+    doc: https://support.invisionapp.com/hc/en-us/articles/360033708112
+
   - name: IT Glue
     url: https://www.itglue.com/
     img: itglue.png
     tfa:
       - totp
-    doc: https://kb.itglue.com/hc/en-us/articles/213293197
+    doc: https://support.itglue.com/hc/en-us/articles/360004933757
 
   - name: JetBrains
     url: https://jetbrains.com
     img: jetbrains.png
     tfa:
       - totp
+      - u2f
+    doc: https://www.jetbrains.com/help/hub/2fa-with-token.html
+    exception: "U2F only available for Hub account (e.g. YouTrack). Limited to one software token OR one hardware token."
 
   - name: Koding
     url: https://koding.com
@@ -359,13 +386,6 @@ websites:
     facebook: NewRelic
     img: newrelic.png
 
-  - name: Nexmo
-    url: https://www.nexmo.com/
-    img: nexmo.png
-    tfa:
-      - sms
-      - phone
-
   - name: npm
     url: https://www.npmjs.com/
     img: npm.png
@@ -376,8 +396,13 @@ websites:
   - name: NuGet
     url: https://www.nuget.org
     img: nuget.png
-    twitter: nuget
-    email_address: support@nuget.org
+    tfa:
+      - sms
+      - proprietary
+      - totp
+      - u2f
+      - phone
+    doc: https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication/
 
   - name: Packagist
     url: https://packagist.org
@@ -385,6 +410,12 @@ websites:
     tfa:
       - totp
     doc: https://github.com/composer/packagist/pull/1031
+
+  - name: Pagerduty
+    url: https://pagerduty.com
+    img: pagerduty.png
+    twitter: PagerDutyHelp
+    email_address: support@pagerduty.com
 
   - name: Panic Sync
     url: https://panic.com/
@@ -412,15 +443,24 @@ websites:
 
   - name: Pivotal Tracker
     url: https://www.pivotaltracker.com
-    twitter: pivotaltracker
-    facebook: pivotaltracker
     img: pivotaltracker.png
+    tfa:
+      - totp
+    doc: https://www.pivotaltracker.com/help/articles/two_factor_auth/
+    exception: "2FA only works on the web version. If enabled, you will not be able to use the mobile apps."
 
   - name: Plivo
     url: https://www.plivo.com
     twitter: plivo
     facebook: Plivo
     img: plivo.png
+
+  - name: ProfitWell
+    url: https://profitwell.com
+    img: profitwell.png
+    tfa:
+      - totp
+    doc: https://learn.profitwell.com/article/wsudrpi199-setting-up-2-factor-authentication
 
   - name: Pushover
     url: https://pushover.net/
@@ -464,10 +504,9 @@ websites:
     url: https://readthedocs.org
     img: readthedocs.png
     email_address: hello@readthedocs.com
-    status: https://github.com/rtfd/readthedocs.org/issues/3523
 
   - name: ReadMe
-    url: https://readme.io
+    url: https://readme.com
     img: readme.png
     tfa:
       - totp
@@ -605,13 +644,23 @@ websites:
       - totp
     doc: https://blog.uptimerobot.com/introducing-two-factor-authentication-2fa/
 
-  - name: Visual Studio Online
+  - name: Visual Studio Codespaces
     url: https://www.visualstudio.com/
     img: visualstudio.png
     tfa:
       - sms
+      - email
+      - proprietary
       - totp
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
+
+  - name: Vonage
+    url: https://developer.nexmo.com/
+    img: vonage.png
+    tfa:
+      - sms
+      - phone
 
   - name: Zapier
     url: https://zapier.com

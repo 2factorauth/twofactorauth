@@ -1,4 +1,11 @@
 websites:
+  - name: 20i
+    url: https://www.20i.com
+    img: 20i.png
+    tfa:
+      - totp
+    doc: https://www.20i.com/support/my-services/two-factor-authentication-my20i
+
   - name: 34SP.com
     url: https://www.34SP.com
     img: 34sp.png
@@ -22,6 +29,20 @@ websites:
       - sms
       - totp
     doc: https://docs.acquia.com/acquia-cloud/access/signin/
+
+  - name: ACTIVE 24
+    url: https://www.active24.com/
+    img: active24.png
+    tfa:
+      - totp
+    doc: https://faq.active24.com/cz/183996-
+    regions:
+      - cz
+      - gb
+      - nl
+      - sk
+      - de
+      - es
 
   - name: ALL-INKL.COM
     url: https://all-inkl.com/
@@ -61,7 +82,7 @@ websites:
     doc: https://help.blacknight.com/hc/en-us/articles/360001358517
     regions:
       - ie
-      - uk
+      - gb
 
   - name: Bluehost
     url: https://www.bluehost.com/
@@ -229,6 +250,15 @@ websites:
       - sms
     doc: https://support.hostpoint.ch/en/administrative/hostpoint-id/general-questions-about-two-factor-authentication
 
+  - name: Hoststar
+    url: https://www.hoststar.ch
+    img: hoststar.png
+    twitter: hoststar
+    facebook: Hoststar.Webhosting
+    lang: de
+    regions:
+      - ch
+
   - name: HostUS
     url: https://hostus.us
     img: hostus.png
@@ -250,7 +280,7 @@ websites:
       - totp
     doc: https://www.icuk.net/reseller/security.asp
     regions:
-      - uk
+      - gb
 
   - name: Infomaniak
     url: https://www.infomaniak.com/
@@ -380,9 +410,10 @@ websites:
 
   - name: Netlify
     url: https://www.netlify.com
-    twitter: Netlify
-    facebook: netlify
     img: netlify.png
+    tfa:
+      - totp
+    doc: https://docs.netlify.com/accounts-and-billing/user-settings/#two-factor-authentication-2fa
 
   - name: Nitrado
     url: https://server.nitrado.net/
@@ -397,7 +428,7 @@ websites:
     img: noez.png
     tfa:
       - totp
-    doc: https://noez.de/de/faq/?r=199
+    doc: https://noez.de/en/faq/post/199/
     regions:
       - de
 
@@ -410,6 +441,16 @@ websites:
     exception: "Only available for the main client area. Hosting panels not supported."
     regions:
       - se
+
+  - name: OMGServ
+    url: https://www.omgserv.com
+    img: omgserv.png
+    tfa:
+      - totp
+    doc: https://www.omgserv.com/fr/faq-site/comment_activer_la_double_authentification-103/
+    regions:
+      - fr
+
 
   - name: One.com
     url: https://www.one.com/
@@ -542,7 +583,7 @@ websites:
       - hardware
     doc: https://github.com/2factorauth/twofactorauth/pull/997#issuecomment-77708501
     regions:
-      - uk
+      - gb
 
   - name: Ukraine
     url: https://www.ukraine.com.ua/
@@ -598,6 +639,13 @@ websites:
       - totp
     doc: https://docs.webfaction.com/user-guide/control_panel.html#two-step-login
 
+  - name: Webflow
+    url: https://webflow.com/
+    img: webflow.png
+    tfa:
+      - totp
+    doc: https://university.webflow.com/lesson/two-factor-authentication-2fa
+
   - name: Wedos
     url: https://hosting.wedos.com
     img: wedos.png
@@ -613,9 +661,10 @@ websites:
 
   - name: Wix
     url: https://www.wix.com/
-    twitter: WixHelp
-    facebook: wix
     img: wix.png
+    tfa:
+      - sms
+    doc: https://support.wix.com/en/article/using-2-step-verification-for-your-wix-account
 
   - name: World4You
     url: https://www.world4you.com

@@ -76,11 +76,31 @@ websites:
     twitter: Bonobos
     facebook: bonobos
 
+  - name: Boots
+    url: https://www.boots.com/
+    img: boots.png
+    twitter: BootsHelp
+    facebook: BootsUK
+    email_address: Boots.CustomerCare_Team@boots.co.uk
+    regions:
+      - gb
+      - ie
+
   - name: Boxed
     url: https://www.boxed.com
     img: boxed.png
     twitter: BoxedWholesale
     facebook: BoxedWholesale
+
+  - name: Brack
+    url: https://www.brack.ch
+    img: brack.png
+    twitter: brack
+    facebook: brack.ch
+    email_address: info@brack.ch
+    lang: de
+    regions:
+      - ch
 
   - name: Combatant Gentlemen
     url: https://combatgent.com
@@ -100,6 +120,41 @@ websites:
     img: comixology.png
     twitter: comiXology
 
+  - name: Conrad
+    url: https://www.conrad.de
+    img: conrad.png
+    twitter: conradgermany
+    facebook: conradelectronic
+    email_address: kundenservice@conrad.de
+    lang: de
+    regions:
+      - at
+      - be
+      - ch
+      - cz
+      - de
+      - dk
+      - fr
+      - gb
+      - hr
+      - hu
+      - it
+      - nl
+      - pl
+      - ro
+      - se
+      - si
+      - sk
+
+  - name: Coop Genossenschaft
+    url: https://www.coop.ch
+    img: coopgenossenschaft.png
+    twitter: coop_ch
+    facebook: coop.ch
+    lang: de
+    regions:
+      - ch
+
   - name: Costco
     url: https://www.costco.com
     img: costco.png
@@ -115,7 +170,15 @@ websites:
     img: digitec.png
     tfa:
       - totp
-    doc: https://www.digitec.ch/en/page/new-two-factor-authentication-for-your-user-account-6589
+    doc: https://www.digitec.ch/en/page/6589
+    regions:
+      - ch
+
+  - name: Drop
+    url: https://www.drop.com
+    twitter: drop
+    facebook: drop
+    img: drop.png
 
   - name: EB Games Australia
     url: https://ebgames.com.au/
@@ -137,6 +200,18 @@ websites:
     email_address: service@ebay-kleinanzeigen.de
     img: ebay-kleinanzeigen.png
     lang: de
+
+  - name: ELV Elektronik
+    url: https://elv.com
+    img: elv.png
+    twitter: elvelektronik
+    facebook: elvelektronik
+    email_address: info@elv.com
+    lang: de
+    regions:
+      - at
+      - ch
+      - de
 
   - name: ePRICE
     url: https://www.eprice.it/
@@ -197,8 +272,8 @@ websites:
   - name: Home Depot
     url: https://www.homedepot.com
     img: homedepot.png
-    twitter: HomeDepot
-    facebook: homedepot
+    tfa:
+      - sms
 
   - name: Hudson's Bay
     url: https://www.thebay.com
@@ -221,10 +296,13 @@ websites:
     twitter: JBHiFi
     img: jbhifi.png
 
-  - name: Jet
-    url: https://jet.com
-    twitter: JetHeads
-    img: jet.png
+  - name: John Lewis & Partners
+    url: https://www.johnlewis.com/
+    img: john-lewis.png
+    twitter: jlandpartners
+    facebook: JohnLewisandPartners
+    regions:
+      - gb
 
   - name: jpc
     url: https://www.jpc.de/
@@ -268,11 +346,6 @@ websites:
     twitter: Macys
     img: macys.png
 
-  - name: Massdrop
-    url: https://www.massdrop.com
-    twitter: Massdrop
-    img: massdrop.png
-
   - name: MediaMarkt (DE)
     url: https://www.mediamarkt.de/
     img: mediamarkt.png
@@ -287,6 +360,15 @@ websites:
       - sms
       - proprietary
 
+  - name: Migros
+    url: https://www.migros.ch
+    img: migros.png
+    tfa:
+      - totp
+    doc: https://login.migros.ch/help/security/2fa?hl=en
+    regions:
+      - ch
+
   - name: Newegg
     url: https://www.newegg.com
     img: newegg.png
@@ -295,6 +377,14 @@ websites:
       - email
       - totp
     doc: https://kb.newegg.com/knowledge-base/2-step-verification/
+    
+  - name: Next
+    url: https://www.next.co.uk
+    img: next.png
+    twitter: nextofficial
+    facebook: nextofficial
+    regions: 
+      - gb
 
   - name: Nordstrom
     url: https://shop.nordstrom.com
@@ -349,7 +439,8 @@ websites:
     img: samsung.png
     tfa:
       - sms
-    doc: https://help.content.samsung.com/csweb/faq/searchFaq.do?category1_id=sacb-01-003&serviceCd=saccount
+      - totp
+    doc: https://account.samsung.com/membership/guide/2step/
 
   - name: Saturn
     url: https://www.saturn.de
@@ -397,6 +488,16 @@ websites:
     twitter: Staples
     facebook: staples
     img: staples.png
+
+  - name: STEG Electronics
+    url: https://www.steg-electronics.ch
+    img: steg.png
+    twitter: STEGelectronics
+    facebook: stegelectronics
+    email_address: info@steg-electronics.ch
+    lang: de
+    regions:
+      - ch
 
   - name: Target
     url: https://www.target.com/

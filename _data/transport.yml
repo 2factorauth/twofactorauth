@@ -124,7 +124,7 @@ websites:
     facebook: gwruk
     img: gwr.png
     regions:
-      - uk
+      - gb
 
   - name: Greyhound
     url: https://www.greyhound.com
@@ -167,7 +167,7 @@ websites:
     facebook: LNERail
     img: lner.png
     regions:
-      - uk
+      - gb
 
   - name: Lufthansa
     url: https://www.lufthansa.com
@@ -183,25 +183,11 @@ websites:
     regions:
       - us
 
-  - name: mytaxi
-    url: https://us.mytaxi.com
-    img: mytaxi.png
-    twitter: mytaxiUS
-    facebook: myTaxi.us
-
   - name: Norwegian
     url: https://www.norwegian.com/
     twitter: Fly_Norwegian
     facebook: flynorwegiannow
     img: norwegian.png
-
-  - name: NSB
-    url: https://www.nsb.no
-    twitter: nsb_no
-    facebook: nsb.no
-    img: nsb.png
-    regions:
-      - "no"
 
   - name: Oui.sncf
     url: https://www.oui.sncf
@@ -243,7 +229,7 @@ websites:
     facebook: ScotRail
     img: scotrail.png
     regions:
-      - uk
+      - gb
 
   - name: Sixt
     url: https://www.sixt.com/
@@ -287,7 +273,7 @@ websites:
     facebook: swrailway
     img: swr.png
     regions:
-      - uk
+      - gb
 
   - name: Spirit
     url: https://www.spirit.com
@@ -305,7 +291,7 @@ websites:
       - nl
       - be
       - fr
-      - uk
+      - gb
       - it
       - es
 
@@ -315,7 +301,7 @@ websites:
     facebook: transportforlondon
     img: tfl.png
     regions:
-      - uk
+      - gb
 
   - name: TripIt
     url: https://www.tripit.com
@@ -343,6 +329,14 @@ websites:
     twitter: VirginAtlantic
     facebook: virginatlantic
     img: virginatlantic.png
+
+  - name: Vy
+    url: https://www.vy.no
+    twitter: vygruppen
+    facebook: VyNordic
+    img: vy.png
+    regions:
+      - "no"
 
   - name: WestJet
     url: https://www.westjet.com/

@@ -51,6 +51,13 @@ websites:
     facebook: NordVPN
     email_address: support@nordvpn.com
 
+  - name: NordVPN Teams
+    url: https://nordvpnteams.com
+    img: nordvpn.png
+    tfa:
+      - totp
+      - sms
+
   - name: Perfect Privacy VPN
     url: https://www.perfect-privacy.com/
     img: perfectprivacyvpn.png
@@ -62,7 +69,7 @@ websites:
     img: privateinternetaccess.png
     tfa:
       - totp
-    doc: https://www.privateinternetaccess.com/helpdesk/kb/articles/how-do-i-use-the-2fa-system
+    doc: https://www.privateinternetaccess.com/helpdesk/kb/articles/how-do-i-enable-and-use-two-factor-authentication
 
   - name: ProtonVPN
     url: https://protonvpn.com/
@@ -85,6 +92,20 @@ websites:
     facebook: SaferVPNCom
     email_address: support@safervpn.com
 
+  - name: Surfshark
+    url: https://surfshark.com/
+    img: surfshark.png
+    tfa:
+      - email
+      - totp
+    doc: https://support.surfshark.com/hc/en-us/articles/360011448319
+
+  - name: TorGuard
+    url: https://torguard.net
+    img: torguard.png
+    tfa:
+      - totp
+
   - name: TunnelBear
     url: https://tunnelbear.com/
     img: tunnelbear.png
@@ -95,13 +116,13 @@ websites:
   - name: VPN Unlimited
     url: https://vpnunlimitedapp.com/
     img: vpnunlimited.png
-    twitter: vpnunlimited
-    facebook: vpnunlimitedapp
-    email_address: support@keepsolid.com
+    tfa:
+      - totp
+      - email
+    doc: https://www.vpnunlimitedapp.com/help/manuals/two-factor-authentication
 
   - name: Windscribe
     url: https://windscribe.com
     img: windscribe.png
-    twitter: windscribecom
-    facebook: windscribe
-    email_address: support@windscribe.com
+    tfa:
+      - totp

@@ -130,6 +130,17 @@ websites:
     img: cod.png
     regions:
       - us
+      
+  - name: Colorado School of Mines
+    url: https://www.mines.edu/
+    img: coloradoschoolofmines.png
+    tfa:
+      - proprietary
+      - hardware
+      - u2f
+    doc: https://its.mines.edu/mfa/
+    regions:
+      - us
 
   - name: CompTIA
     url: https://certification.comptia.org/
@@ -297,7 +308,7 @@ websites:
       - dk
       - nl
       - "no"
-      - uk
+      - gb
       - us
       - se
 
@@ -349,6 +360,12 @@ websites:
     regions:
       - ca
 
+  - name: Mendeley
+    url: https://www.mendeley.com
+    img: mendeley.png
+    twitter: MendeleySupport
+    facebook: mendeley
+
   - name: Miami University
     url: https://miamioh.edu/
     img: miamioh.png
@@ -374,6 +391,25 @@ websites:
     facebook: mystudylife
     img: mystudylife.png
 
+  - name: mySQA
+    url: https://www.mysqa.org.uk/
+    twitter: sqanews
+    facebook: ScottishQualificationsAuthority
+    img: mysqa.png
+    
+  - name: North Carolina State University
+    url: https://ncsu.edu
+    img: ncsu.png
+    tfa:
+      - sms
+      - phone
+      - proprietary
+      - totp
+      - u2f
+    doc: https://oit.ncsu.edu/it-security/2fa/
+    regions:
+      - us
+
   - name: Pennsylvania State University
     url: https://www.psu.edu/
     img: psu.png
@@ -382,9 +418,20 @@ websites:
       - phone
       - proprietary
       - hardware
-    doc: https://security.psu.edu/two-factor-authentication/
+      - u2f
+    doc: https://get2fa.psu.edu
     regions:
       - us
+
+  - name: Philipps-Universität Marburg
+    url: https://www.uni-marburg.de/
+    img: unimarburg.png
+    tfa:
+      - totp
+      - hardware
+    doc: https://www.uni-marburg.de/de/hrz/dienste/2fa
+    regions:
+      - de
 
   - name: Pluralsight
     url: https://www.pluralsight.com

@@ -36,7 +36,7 @@ websites:
       - proprietary
       - hardware
       - u2f
-    doc: https://www.centrify.com/privileged-access-management/authentication-service/mfa/
+    doc: https://www.centrify.com/pam/authentication-service/mfa/
 
   - name: Dashlane
     url: https://www.dashlane.com
@@ -86,7 +86,16 @@ websites:
     tfa:
       - totp
       - hardware
-    doc: https://helpdesk.lastpass.com/multifactor-authentication-options/
+      - proprietary
+    doc: https://support.logmeininc.com/lastpass/help/enable-multifactor-authentication-lp010002
+    exception: "Availability of 2FA options depends on your account type."
+
+  - name: NordPass
+    url: https://nordpass.com/
+    img: nordpass.png
+    tfa:
+      - totp
+    doc: https://support.nordpass.com/hc/en-us/articles/360002770497-How-to-enable-Two-Factor-Authentication-
 
   - name: Okta
     url: https://www.okta.com/
@@ -133,6 +142,14 @@ websites:
       - email
       - hardware
     doc: https://help.passpack.com/knowledgebase/idx.php/44/0/
+
+  - name: Passwarden
+    url: https://www.keepsolid.com/passwarden/
+    img: passwarden.png
+    tfa:
+      - totp
+      - email
+    doc: https://www.keepsolid.com/passwarden/security/tfa
 
   - name: RoboForm
     url: https://www.roboform.com/

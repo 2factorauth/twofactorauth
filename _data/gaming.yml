@@ -20,6 +20,15 @@ websites:
     tfa:
       - totp
 
+  - name: Bethesda
+    url: https://bethesda.net/
+    img: bethesda.png
+    tfa:
+      - totp
+      - sms
+    doc: https://help.bethesda.net/app/answers/detail/a_id/48931
+    exception: "SMS requires TOTP to be set up"
+
   - name: Black Desert Online
     url: https://www.blackdesertonline.com/
     img: bdo.png
@@ -48,6 +57,19 @@ websites:
     img: bohemia.png
     tfa:
       - totp
+      
+  - name: Call Of Duty
+    url: https://callofduty.com
+    img: callofduty.png
+    tfa:
+      - totp
+    doc: https://profile.callofduty.com/cod/announcement2FA
+
+  - name: CDKeys
+    url: https://www.cdkeys.com/
+    img: cdkeys.png
+    twitter: cdkeyscom
+    facebook: cdkeyscom
 
   - name: Elder Scrolls Online
     url: https://www.elderscrollsonline.com/
@@ -84,6 +106,13 @@ websites:
       - totp
     doc: https://www.epicgames.com/help/en-US/c74/c112/a3218
 
+  - name: ESL
+    url: https://www.eslgaming.com
+    img: esl.png
+    tfa:
+      - totp
+      - u2f
+
   - name: EVE Online
     url: https://www.eveonline.com/
     img: eveonline.png
@@ -98,6 +127,13 @@ websites:
     tfa:
       - totp
     doc: https://support.faceit.com/hc/en-us/articles/115000254670
+
+  - name: Fanatical
+    url: https://www.fanatical.com
+    img: fanatical.png
+    tfa:
+      - totp
+    doc: https://support.fanatical.com/hc/en-us/articles/360002761397
 
   - name: Gaijin Entertainment
     url: https://gaijin.net
@@ -146,7 +182,6 @@ websites:
     img: gree.png
     tfa:
       - totp
-    doc: "/notes/gree/"
 
   - name: Guild Wars 2
     url: https://www.guildwars2.com
@@ -155,6 +190,13 @@ websites:
       - sms
       - totp
     doc: https://help.guildwars2.com/hc/en-us/articles/230672927
+
+  - name: Hi-Rez Studios
+    url: https://www.hirezstudios.com/
+    img: hirez.png
+    tfa:
+      - email
+      - sms
 
   - name: Humble Bundle
     url: https://www.humblebundle.com/
@@ -247,7 +289,16 @@ websites:
     img: psn.png
     tfa:
       - sms
-    doc: https://www.playstation.com/en-us/account-security/2-step-verification/
+      - totp
+    doc: https://playstation.com/support/2sv/
+    
+  - name: Razer
+    url: https://www.razer.com/
+    img: razer.png
+    tfa:
+      - sms
+      - totp
+    doc: https://mysupport.razer.com/app/answers/detail/a_id/1716
 
   - name: Roberts Space Industries
     url: https://robertsspaceindustries.com/
@@ -284,6 +335,19 @@ websites:
     tfa:
       - totp
     doc: https://scryfall.com/docs/privacy#scryfall-accounts
+
+  - name: Shadow
+    url: https://shadow.tech/
+    img: shadow.png
+    twitter: Shadow_Official
+    facebook: ShadowNorthAmerica
+
+  - name: Speedrun.com
+    url: https://www.speedrun.com/
+    img: speedruncom.png
+    tfa:
+      - email
+    doc: https://www.speedrun.com/the_site/thread/g7osi/1
 
   - name: Square Enix
     url: https://na.square-enix.com/
@@ -374,8 +438,12 @@ websites:
     tfa:
       - sms
       - email
+      - proprietary
+      - phone
       - totp
+      - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
+    exception: "2FA phone calls may not be available in all regions"
 
   - name: YoYo Games
     url: https://www.yoyogames.com/

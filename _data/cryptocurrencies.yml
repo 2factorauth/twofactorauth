@@ -19,9 +19,9 @@ websites:
     img: binance.png
     tfa:
       - totp
-      - hardware
+      - u2f
       - sms
-    doc: https://www.binance.com/en/support/sections/360000011592
+    doc: https://www.binance.com/en/support/faq/c-1#/1/11
 
   - name: BitBay
     url: https://bitbay.net/
@@ -86,14 +86,6 @@ websites:
     doc: https://en.bithumb.com/customer_support/info_guide?seq=510
     regions:
       - kr
-
-  - name: Bitlish
-    url: https://bitlish.com
-    img: bitlish.png
-    tfa:
-      - sms
-      - proprietary
-    doc: https://bitlish.com/how#mfa
 
   - name: BitMEX
     url: https://www.bitmex.com
@@ -195,15 +187,6 @@ websites:
       - co
       - pe
 
-  - name: BX Thailand
-    url: https://bx.in.th/
-    img: bxthailand.png
-    tfa:
-      - totp
-    doc: https://bx.in.th/info/faq/
-    regions:
-      - th
-
   - name: Bybit
     url: https://www.bybit.com/
     img: bybit.png
@@ -293,7 +276,7 @@ websites:
       - hardware
     doc: https://www.coinfloor.co.uk/security
     regions:
-      - uk
+      - gb
 
   - name: CoinGate
     url: https://coingate.com
@@ -302,12 +285,12 @@ websites:
       - totp
     doc: https://support.coingate.com/en/65/-
 
-  - name: Coinify (Merchants)
-    url: https://coinify.com/merchants
+  - name: Coinify
+    url: https://coinify.com/
     img: coinify.png
     tfa:
       - totp
-    doc: https://help.coinify.com/article/114
+    doc: https://help.coinify.com/hc/en-us/articles/360014173320
     exception: "2FA is only available for merchant accounts. myCoinify trading accounts do not support 2FA."
 
   - name: Coinjar
@@ -343,6 +326,13 @@ websites:
     regions:
       - au
 
+  - name: CoinTracker
+    url: https://www.cointracker.io
+    img: cointracker.png
+    tfa:
+      - totp
+    doc: https://help.cointracker.io/en/articles/2641553
+
   - name: CoinTracking
     url: https://cointracking.info/
     img: cointracking.png
@@ -358,6 +348,13 @@ websites:
     regions:
       - ca
       - sg
+
+  - name: Crypto
+    url: https://www.crypto.com
+    img: crypto.png
+    tfa:
+      - totp
+    doc: https://help.crypto.com/en/articles/3511439
 
   - name: Cryptonator
     url: https://www.cryptonator.com
@@ -399,7 +396,7 @@ websites:
       - hk
       - sg
       - kr
-      - uk
+      - gb
       - au
 
   - name: HitBTC
@@ -407,7 +404,15 @@ websites:
     img: hitbtc.png
     tfa:
       - totp
-    doc: https://support.hitbtc.com/hc/en-us/articles/360000719229
+    doc: https://support.hitbtc.com/en/support/solutions/articles/63000224976
+
+  - name: Invictus Capital
+    url: https://invictuscapital.com
+    img: invictuscapital.png
+    tfa:
+      - sms
+      - phone
+      - totp
 
   - name: Korbit
     url: https://www.korbit.co.kr
@@ -425,6 +430,13 @@ websites:
       - totp
       - hardware
     doc: https://support.kraken.com/hc/en-us/articles/360000426923
+
+  - name: Kuna
+    url: https://www.kuna.io/
+    img: kuna.png
+    tfa:
+      - totp
+    doc: https://support.kuna.io/en/support/solutions/articles/17000083405
 
   - name: Liquid
     url: https://www.liquid.com/
@@ -481,6 +493,14 @@ websites:
     regions:
       - br
 
+  - name: OKEx
+    url: https://www.okex.com/
+    img: okex.png
+    tfa:
+      - totp
+      - sms
+    doc: https://www.okex.com/support/hc/en-us/articles/360000350271
+
   - name: PayKassa
     url: https://paykassa.pro/
     img: paykassa.png
@@ -529,7 +549,8 @@ websites:
     img: viabtc.png
     tfa:
       - totp
-    doc: https://support.viabtc.com/hc/en-us/articles/360016173751
+      - sms
+    doc: https://support.viabtc.com/hc/en-us/articles/900001693343
 
   - name: Wirex
     url: https://wirexapp.com/

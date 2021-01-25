@@ -51,6 +51,13 @@ websites:
     regions:
       - us
 
+  - name: DigitalRiver
+    url: https://www.digitalriver.com
+    img: digitalriver.png
+    tfa:
+      - sms
+    doc: https://docs.digitalriver.com/digital-river-api/dashboard/profile-settings/enabling-two-factor-authentication
+
   - name: Dwolla
     url: https://www.dwolla.com
     img: dwolla.png
@@ -81,7 +88,7 @@ websites:
     doc: https://support.gocardless.com/hc/en-gb/articles/360001164385
     regions:
       - fr
-      - uk
+      - gb
 
   - name: Google Pay
     url: https://pay.google.com/
@@ -133,7 +140,7 @@ websites:
     img: neteller.png
     tfa:
       - totp
-    doc: https://support.neteller.com/ACCOUNT/Two-Factor-Authentication/85238429
+    doc: https://www.neteller.com/en/support#/path/ACCOUNT/Two-Factor-Authentication/85238429
 
   - name: PAYEER
     url: https://payeer.com/en/
@@ -153,8 +160,11 @@ websites:
 
   - name: Payoneer
     url: https://www.payoneer.com/
-    twitter: Payoneer
     img: payoneer.png
+    tfa:
+      - sms
+      - phone
+    doc: https://payoneer.custhelp.com/app/answers/detail/a_id/31268
 
   - name: PayPal
     url: https://www.paypal.com/
@@ -225,12 +235,13 @@ websites:
       - us
 
   - name: Skrill
-    url: https://skrill.com/
+    url: https://skrill.com
     img: skrill.png
     tfa:
       - email
       - sms
-    doc: https://www.skrill.com/en/support#/path/SECURITY/1362150272/
+      - totp
+    doc: https://skrill.com/en-us/support#/path/ACCOUNT/Two-Factor-Authentication/905782552/Two-Factor-Authentication-2FA.htm
     exception: "Email method requires an additional PIN"
 
   - name: Square
@@ -336,7 +347,7 @@ websites:
       - br
       - de
       - au
-      - uk
+      - gb
       - sg
 
   - name: Yandex.Money

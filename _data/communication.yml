@@ -22,6 +22,13 @@ websites:
       - u2f
     doc: https://3.basecamp-help.com/article/443--
 
+  - name: Bitrix24
+    url: https://www.bitrix24.com/
+    img: bitrix24.png
+    tfa:
+      - totp
+    doc: https://helpdesk.bitrix24.com/open/9800171/
+
   - name: Campfire
     url: https://campfirenow.com/
     img: campfire.png
@@ -98,6 +105,19 @@ websites:
     img: epost.png
     lang: de
 
+  - name: Elastic Email
+    url: https://elasticemail.com
+    img: elasticemail.png
+    tfa:
+      - sms
+      - email
+    doc: https://help.elasticemail.com/en/articles/2783376
+
+  - name: Element
+    url: https://element.io/
+    img: element.png
+    twitter: element_hq
+
   - name: FAX.PLUS
     url: https://www.fax.plus
     img: faxplus.png
@@ -137,7 +157,13 @@ websites:
     img: groupme.png
     tfa:
       - sms
-    doc: https://help.groupme.com/hc/en-us/articles/360000579167
+    doc: https://support.microsoft.com/en-us/office/30a7b8fd-5052-4b6f-aa10-85c1560cdf59
+
+  - name: Groups.io
+    url: https://groups.io
+    img: groups_io.png
+    tfa:
+      - totp
 
   - name: Hangouts
     url: https://hangouts.google.com/
@@ -212,6 +238,13 @@ websites:
       - hardware
     doc: https://www.emailcenteruk.com/maxemail/platform-security-collaboration/
 
+  - name: Missive App
+    url: https://missiveapp.com/
+    img: missiveapp.png
+    tfa:
+      - totp
+    doc: https://missiveapp.com/faq/enable-2-factor-authentication
+
   - name: Nulab
     url: https://nulab.com/
     img: nulab.png
@@ -228,11 +261,14 @@ websites:
       - email
     doc: https://support.pipedrive.com/hc/en-us/articles/360000808405
 
-  - name: Riot
-    url: https://about.riot.im/
-    img: riot.png
-    twitter: RiotChat
-    facebook: RiotChat
+  - name: Postmarkapp
+    url: https://www.postmarkapp.com/
+    img: postmarkapp.png
+    tfa:
+      - sms
+      - totp
+    doc: https://postmarkapp.com/support/article/1081-how-do-i-use-two-factor-authentication-2fa
+    exception: "Setup requires SMS verification."
 
   - name: Ryver
     url: https://ryver.com/
@@ -278,12 +314,12 @@ websites:
     img: skype.png
     tfa:
       - sms
+      - email
       - proprietary
       - totp
       - u2f
-      - phone
     doc: https://support.microsoft.com/en-us/help/12408/
-    exception: "Must be associated with a Microsoft Account. U2F authentication only available on Edge browser."
+    exception: "Must be associated with a Microsoft Account."
 
   - name: Slack
     url: https://slack.com/
@@ -367,6 +403,6 @@ websites:
     url: https://www.zoom.us
     img: zoom.png
     tfa:
+      - sms
       - totp
     doc: https://support.zoom.us/hc/en-us/articles/360038247071
-    exception: "2FA is only available on paid plans and doesn't protect the desktop or mobile apps."

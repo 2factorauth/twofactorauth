@@ -32,8 +32,15 @@ websites:
       - email
     regions:
       - es
-      - uk
+      - gb
       - us
+
+  - name: Cronometer
+    url: https://cronometer.com/
+    img: cronometer.png
+    tfa:
+      - totp
+    doc: https://cronometer.zendesk.com/hc/en-us/articles/360042096672
 
   - name: CVS Caremark
     url: https://www.caremark.com
@@ -57,7 +64,6 @@ websites:
     twitter: Drugscom
     facebook: Drugscom
     img: drugscom.png
-    status: https://twitter.com/Drugscom/status/493856207572975620
     regions:
       - us
 
@@ -115,9 +121,15 @@ websites:
     img: hint.png
     tfa:
       - totp
-    doc: https://support.hint.com/en/articles/2360627
+    doc: https://support.hint.com/support/solutions/articles/61000283118
     regions:
       - us
+
+  - name: LetsGetChecked
+    url: https://www.letsgetchecked.com
+    img: letsgetchecked.png
+    twitter: LetsGetChecked
+    facebook: Letsgetchecked
 
   - name: Maccabi Healthcare Services
     url: https://www.maccabi4u.co.il/
@@ -138,6 +150,16 @@ websites:
     url: https://misfit.com/
     twitter: Misfit
     img: misfit.png
+    regions:
+      - us
+
+  - name: MyChart
+    url: https://www.mychart.com
+    img: mychart.png
+    tfa:
+      - sms
+      - email
+    doc: https://www.mychart.com/Features
     regions:
       - us
 
