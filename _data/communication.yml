@@ -371,6 +371,15 @@ websites:
     facebook: toutapp
     img: toutapp.png
 
+  - name: Typetalk
+    url: https://www.typetalk.com/
+    img: typetalk.png
+    tfa:
+      - u2f
+      - totp
+      - sms
+    doc: https://support.typetalk.com/hc/en-us/sections/205803567
+
   - name: Viber
     url: https://www.viber.com
     img: viber.png
