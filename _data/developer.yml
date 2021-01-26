@@ -60,6 +60,15 @@ websites:
     doc: https://confluence.atlassian.com/cloud/secure-your-account-with-two-step-verification-939505063.html
     exception: "2FA settings are service-specific."
 
+  - name: Backlog
+    url: https://backlog.com
+    img: backlog.png
+    tfa:
+      - u2f
+      - totp
+      - sms
+    doc: https://support.backlog.com/hc/en-us/community/posts/360029520833
+
   - name: Balsamiq
     url: https://balsamiq.com
     twitter: balsamiq
