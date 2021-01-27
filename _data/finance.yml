@@ -230,6 +230,16 @@ websites:
     facebook: hargreaveslansdowninvest
     img: hargreaveslansdown.png
 
+  - name: Intuit
+    url: https://intuit.com
+    img: intuit.png
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://accounts-help.intuit.com/app/intuit/1995176
+    exception: "Software 2FA requires enabling SMS or phone call as a back-up."
+
   - name: Intuit TurboTax
     url: https://turbotax.intuit.com/
     img: turbotax.png
