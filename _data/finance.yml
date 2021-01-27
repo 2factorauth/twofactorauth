@@ -301,13 +301,16 @@ websites:
     doc: https://help.metorik.com/article/22-how-can-i-enable-2fa-on-my-account
 
   - name: Mint
-    url: https://www.mint.com
+    url: https://mint.intuit.com
     img: mint.png
     tfa:
       - sms
       - phone
       - totp
     doc: https://help.mint.com/Security/908045661
+    regions:
+      - us
+      - ca
 
   - name: money by Envestnet | Yodlee
     url: https://money.yodlee.com/
