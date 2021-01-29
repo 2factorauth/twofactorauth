@@ -88,6 +88,13 @@ websites:
     facebook: fitbit
     img: fitbit.png
 
+  - name: FitnessSyncer
+    url: https://www.fitnesssyncer.com/
+    img: fitnesssyncer.png
+    tfa:
+      - totp
+    doc: https://www.fitnesssyncer.com/support/two-factor-authentication
+
   - name: FollowMyHealth
     url: https://www.followmyhealth.com/
     img: followmyhealth.png
