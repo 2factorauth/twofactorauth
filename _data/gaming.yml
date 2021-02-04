@@ -81,6 +81,14 @@ websites:
       - totp
     doc: https://help.ea.com/en-us/help/account/origin-login-verification-information/
 
+  - name: Eneba
+    url: https://www.eneba.com/
+    img: eneba.png
+    tfa:
+      - totp
+      - sms
+    doc: https://support.eneba.com/hc/en-us/articles/360010216714
+
   - name: Enjin
     url: https://www.enjin.com/
     img: enjin.png
