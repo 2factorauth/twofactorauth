@@ -153,6 +153,14 @@ websites:
       - totp
     doc: https://lobste.rs/s/1cyltz/two_factor_authentication_now_available
 
+  - name: Mastodon
+    url: https://joinmastodon.org
+    img: mastodon.png
+    tfa:
+      - totp
+      - email
+    doc: https://docs.framasoft.org/en/mastodon/User-guide.html#two-factor-authentication
+
   - name: Medium
     url: https://medium.com
     img: medium.png
