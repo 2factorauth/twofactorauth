@@ -221,6 +221,13 @@ websites:
       - hardware
     doc: https://userify.com/docs/multifactor-authentication/
 
+  - name: VMware
+    url: https://vmware.com
+    img: vmware.png
+    tfa:
+      - totp
+    doc: https://kb.vmware.com/s/article/74603?lang=en_US&queryTerm=74603
+
   - name: Vultr
     url: https://www.vultr.com
     img: vultr.png
