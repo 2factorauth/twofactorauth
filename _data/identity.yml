@@ -77,8 +77,10 @@ websites:
 
   - name: Keybase
     url: https://keybase.io
-    twitter: KeybaseIO
     img: keybase.png
+    tfa:
+      - proprietary
+    doc: https://book.keybase.io/docs/lockdown
 
   - name: LastPass
     url: https://lastpass.com/
