@@ -26,6 +26,13 @@ websites:
       - totp
     doc: https://www.bitdefender.com/consumer/support/answer/1581/
 
+  - name: BitSight
+    url: https://service.bitsighttech.com
+    img: bitsight.png
+    tfa:
+      - totp
+    doc: https://help.bitsighttech.com/hc/en-us/articles/360057228514-BitSight-2-Factor-Authentication#bitsight_2fa
+
   - name: Blur
     url: https://www.abine.com/
     img: blur.png
