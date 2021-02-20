@@ -22,13 +22,13 @@ begin
 
 # Catch any exceptions
 rescue Twitter::Error => e
-  if e.class == Twitter::Error::NotFound
+  if e.instance_of?(Twitter::Error::NotFound)
     puts "\e[31mTwitter user #{ARGV[0]} not found.\e[39m"
     exit 2
-  elsif e.class == Twitter::Error::TooManyRequests
+  elsif e.instance_of?(Twitter::Error::TooManyRequests)
     puts '\e[31mDisregarding Twitter checks due to too many requests.\e[39m'
     exit 0 # Soft fail if unable to access twitter api
-  elsif e.class == Twitter::Error::BadRequest
+  elsif e.instance_of?(Twitter::Error::BadRequest)
     puts '\e[31mInvalid authentication. Check environment variables.\e[39m'
     exit 1
   else
