@@ -1,4 +1,4 @@
-# TwoFactorAuth.org
+# 2fa.directory
 
 [![Build Status](https://img.shields.io/github/workflow/status/2factorauth/twofactorauth/Jekyll%20Tests?style=for-the-badge)](https://github.com/2factorauth/twofactorauth/actions)
 [![License](https://img.shields.io/badge/license-mit-9A0F2D.svg?style=for-the-badge)](/LICENSE)
@@ -9,7 +9,7 @@ A list of popular sites and whether or not they accept two factor auth.
 
 ## The Goal
 
-The goal of this project is to build a website ([TwoFactorAuth.org](https://twofactorauth.org)) with a list of popular sites that support
+The goal of this project is to build a website ([2fa.directory](https://2fa.directory)) with a list of popular sites that support
 Two Factor Authentication, as well as the methods that they provide.
 
 Our hope is to aid consumers who are deciding between alternative services based on the security they
@@ -22,7 +22,7 @@ If you would like to contribute, please read the entire guidelines here in
 
 ## Local installation :hammer_and_wrench:
 
-TwoFactorAuth.org is built upon [Jekyll](https://jekyllrb.com/), using the [github-pages](https://github.com/github/pages-gem) gem.
+2fa.directory is built upon [Jekyll](https://jekyllrb.com/), using the [github-pages](https://github.com/github/pages-gem) gem.
 In order to run the site locally, bundler, and all other dependencies will need to be installed, and afterwards Jekyll can serve
 the site. Ubuntu:
 
