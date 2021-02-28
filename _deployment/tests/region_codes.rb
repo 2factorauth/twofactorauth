@@ -41,26 +41,24 @@ end
 # rubocop:enable Metrics/MethodLength
 # rubocop:enable Metrics/AbcSize
 
-begin
-  fetch_codes
-  regions_file = '_data/regions.yml'
-  regions = YAML.load_file(regions_file)
-  regions.each do |region|
-    raise("::error:: #{region['id']} is not a real ISO 3166-2 code.") unless @codes.include?(region['id'])
-  end
+fetch_codes
+regions_file = '_data/regions.yml'
+regions = YAML.load_file(regions_file)
+regions.each do |region|
+  raise("::error:: #{region['id']} is not a real ISO 3166-2 code.") unless @codes.include?(region['id'])
+end
 
-  sections_file = '_data/sections.yml'
-  sections = YAML.load_file(sections_file)
-  sections.each do |section|
-    data_file = "_data/#{section['id']}.yml"
-    data = YAML.load_file(data_file)
-    websites = data['websites']
-    websites.each do |website|
-      next if website['regions'].nil?
+sections_file = '_data/sections.yml'
+sections = YAML.load_file(sections_file)
+sections.each do |section|
+  data_file = "_data/#{section['id']}.yml"
+  data = YAML.load_file(data_file)
+  websites = data['websites']
+  websites.each do |website|
+    next if website['regions'].nil?
 
-      website['regions'].each do |region|
-        raise("#{website['name']} contains an invalid ISO-3166-2 code. (\"#{region}\")") unless @codes.include?(region)
-      end
+    website['regions'].each do |region|
+      raise("#{website['name']} contains an invalid ISO-3166-2 code. (\"#{region}\")") unless @codes.include?(region)
     end
   end
 end
