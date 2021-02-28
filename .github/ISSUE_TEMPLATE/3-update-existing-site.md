@@ -19,13 +19,13 @@ Check the box below before submitting your issue to verify that you have already
 - [ ] I have searched [open issues and pull requests](https://github.com/2factorauth/twofactorauth/issues?q=is%3Aopen). The issue I'm creating is not a duplicate of an existing open issue or pull request.
 
 ### Information about the site entry to be updated: ###
-<!-- Name of the site, as currently listed on twofactorauth.org -->
+<!-- Name of the site, as currently listed on 2fa.directory -->
 * Site name - ``
 
-<!-- Link to the main page of the site, as currently listed on twofactorauth.org -->
+<!-- Link to the main page of the site, as currently listed on 2fa.directory -->
 * Site URL - ``
 
-<!-- Category of the site, as currently listed on twofactorauth.org -->
+<!-- Category of the site, as currently listed on 2fa.directory -->
 * Site category - ``
 
 ### Information about why the site entry should be updated: ###
@@ -39,7 +39,7 @@ Check the box below before submitting your issue to verify that you have already
 - [ ] Its Twitter username, Facebook page, and/or email address have changed.
 - [ ] It fits better in a different category.
 - [ ] Its logo has changed.
-- [ ] It has been acquired or absorbed by another site, and the new site is eligible to be listed on twofactorauth.org.
+- [ ] It has been acquired or absorbed by another site, and the new site is eligible to be listed on 2fa.directory.
 - [ ] Other (please describe below).
 
 ### Information about how the site entry should be updated: ###
