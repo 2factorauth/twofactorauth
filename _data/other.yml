@@ -512,6 +512,13 @@ websites:
     facebook: spare5app
     email_address: feedback@spare5.com
 
+- name: Timetastic
+    url: https://timetastic.co.uk
+    img: timetastic.png
+    tfa:
+      - totp
+    doc: https://help.timetastic.co.uk/hc/en-us/articles/360015994257
+
   - name: TurboSquid
     url: https://www.turbosquid.com
     img: turbosquid.png
