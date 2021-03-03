@@ -78,6 +78,12 @@ websites:
     doc: https://support.microsoft.com/en-us/help/12408/
     exception: "2FA phone calls may not be available in all regions"
 
+  - name: Nozbe Teams
+    url: https://nozbe.com/
+    img: nozbeteams.png
+    tfa:
+      - totp
+
   - name: Planio
     url: https://plan.io
     img: planio.png
