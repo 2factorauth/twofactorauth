@@ -83,6 +83,8 @@ websites:
     img: nozbeteams.png
     tfa:
       - totp
+      - sms
+    doc: https://teams.nozbe.help/management/settings/#settings_2fa
 
   - name: Planio
     url: https://plan.io
