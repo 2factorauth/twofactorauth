@@ -17,7 +17,9 @@ jobs:
           path: vendor/cache
           key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
 
-      - uses: actions/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
 
       - name: Install dependencies
         run: |
@@ -62,6 +64,6 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: _site
-          fqdn: twofactorauth.org
+          fqdn: 2fa.directory
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
