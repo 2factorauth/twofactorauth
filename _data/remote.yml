@@ -67,13 +67,6 @@ websites:
     doc: https://support.logmeininc.com/pro/help#logmein-t-login-policy-set-twofactor-ownaccount
     exception: "SMS or email must be set up as a backup method"
 
-  - name: MyFRITZ!
-    url: https://www.myfritz.net/
-    img: myfritz.png
-    tfa:
-      - totp
-      - u2f
-
   - name: MB Connect Line
     url: https://www.mbconnectline.com
     img: mbconnectline.png
@@ -83,6 +76,13 @@ websites:
       - email
       - totp
     doc: http://www.cc-onlinehelp.com/en/#index/administrati/users/authenticati/authenticati.html
+
+  - name: MyFRITZ!
+    url: https://www.myfritz.net/
+    img: myfritz.png
+    tfa:
+      - totp
+      - u2f
 
   - name: O&amp;O Syspectr
     url: https://www.syspectr.com
