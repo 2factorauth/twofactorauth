@@ -264,6 +264,14 @@ websites:
     facebook: Nintendo
     img: nintendo-network.png
 
+  - name: Oculus
+    url: https://oculus.com/
+    img: oculus.png
+    tfa:
+      - sms
+      - totp
+    doc: https://support.oculus.com/357942391637117/
+
   - name: osu!
     url: https://osu.ppy.sh
     img: osu.png
