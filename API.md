@@ -1,7 +1,7 @@
 # API usage
 ## Introduction
 
-The data collected for the twofactorauth.org website is also available as JSON files in order to enable developers to use it in their own programs. It is recommended to use the API with the highest version number, since older versions might not include all available information.
+The data collected for the 2fa.directory website is also available as JSON files in order to enable developers to use it in their own programs. It is recommended to use the API with the highest version number, since older versions might not include all available information.
 
 ### URL & Domain matching
 
@@ -21,15 +21,15 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
 
 |URI|Coverage|
 |---|--------|
-|https://twofactorauth.org/api/v2/all.json|All sites|
-|https://twofactorauth.org/api/v2/tfa.json|All 2FA-supporting sites|
-|https://twofactorauth.org/api/v2/sms.json|SMS|
-|https://twofactorauth.org/api/v2/phone.json|Phone calls|
-|https://twofactorauth.org/api/v2/email.json|Email 2FA|
-|https://twofactorauth.org/api/v2/hardware.json|non-U2F hardware 2FA tokens|
-|https://twofactorauth.org/api/v2/u2f.json|U2F hardware tokens|
-|https://twofactorauth.org/api/v2/totp.json|RFC-6238|
-|https://twofactorauth.org/api/v2/proprietary.json|non-RFC-6238 software 2FA|
+|https://2fa.directory/api/v2/all.json|All sites|
+|https://2fa.directory/api/v2/tfa.json|All 2FA-supporting sites|
+|https://2fa.directory/api/v2/sms.json|SMS|
+|https://2fa.directory/api/v2/phone.json|Phone calls|
+|https://2fa.directory/api/v2/email.json|Email 2FA|
+|https://2fa.directory/api/v2/hardware.json|non-U2F hardware 2FA tokens|
+|https://2fa.directory/api/v2/u2f.json|U2F hardware tokens|
+|https://2fa.directory/api/v2/totp.json|RFC-6238|
+|https://2fa.directory/api/v2/proprietary.json|non-RFC-6238 software 2FA|
 
 
 ### Elements
@@ -90,7 +90,7 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
 
 |URI|Coverage|
 |---|--------|
-|https://twofactorauth.org/api/v1/data.json|All sites|
+|https://2fa.directory/api/v1/data.json|All sites|
 
 ### Elements
 
