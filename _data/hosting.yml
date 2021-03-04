@@ -518,6 +518,12 @@ websites:
       - totp
     doc: https://segment.com/docs/iam/mfa/
 
+  - name: Server.pro
+    url: https://server.pro/
+    img: serverpro.png
+    tfa:
+      - totp
+
   - name: Site5
     url: https://www.site5.com/
     twitter: site5
