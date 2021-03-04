@@ -199,6 +199,14 @@ websites:
       - totp
     doc: https://support.humblebundle.com/hc/en-us/articles/202421374
 
+  - name: Hypixel
+    url: https://hypixel.net/
+    img: hypixel.png
+    tfa:
+      - email
+      - totp
+    doc: https://hypixel.net/threads/two-step-verification-tutorial.445659/
+
   - name: IndieGala
     url: https://www.indiegala.com/
     img: indiegala.png
