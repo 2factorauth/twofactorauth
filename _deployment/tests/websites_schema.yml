@@ -44,3 +44,5 @@ mapping:
             sequence:
               - type: str
                 pattern: /^[a-z]{2}$/
+          "landing_page_url":
+            type: str

@@ -512,6 +512,13 @@ websites:
     facebook: spare5app
     email_address: feedback@spare5.com
 
+  - name: Teespring
+    url: https://teespring.com
+    img: teespring.png
+    tfa:
+      - totp
+    doc: https://community.teespring.com/blog/a-more-secure-teespring-two-factor-authentification/
+
   - name: TurboSquid
     url: https://www.turbosquid.com
     img: turbosquid.png

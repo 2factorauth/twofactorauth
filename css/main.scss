@@ -56,24 +56,6 @@ thead {
   background-color: #ffffff;
 }
 
-.back-arrow {
-  top: 0;
-  left: 0;
-  margin-top: 35px;
-  margin-left: 30px;
-
-  a {
-    .fa-arrow-left {
-      font-size: 35px;
-      color: #ccc;
-
-      &:hover {
-        color: #fff;
-      }
-    }
-  }
-}
-
 .container {
   max-width: calc(1327px + 2rem);
   padding: 0;

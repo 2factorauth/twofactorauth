@@ -57,6 +57,13 @@ websites:
     img: bohemia.png
     tfa:
       - totp
+      
+  - name: Call Of Duty
+    url: https://callofduty.com
+    img: callofduty.png
+    tfa:
+      - totp
+    doc: https://profile.callofduty.com/cod/announcement2FA
 
   - name: CDKeys
     url: https://www.cdkeys.com/
@@ -284,6 +291,14 @@ websites:
       - sms
       - totp
     doc: https://playstation.com/support/2sv/
+    
+  - name: Razer
+    url: https://www.razer.com/
+    img: razer.png
+    tfa:
+      - sms
+      - totp
+    doc: https://mysupport.razer.com/app/answers/detail/a_id/1716
 
   - name: Roberts Space Industries
     url: https://robertsspaceindustries.com/
