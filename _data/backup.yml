@@ -21,7 +21,8 @@ websites:
     img: box.png
     tfa:
       - sms
-    doc: https://community.box.com/t5/How-to-Guides-for-Account/Manage-Account-Settings/ta-p/20022#authentication
+      - totp
+    doc: https://support.box.com/hc/en-us/articles/360043697154
 
   - name: CloudApp
     url: https://www.getcloudapp.com/
