@@ -216,6 +216,13 @@ websites:
     img: line.png
     facebook: line.worldwide
 
+  - name: Litmus
+    url: https://www.litmus.com
+    img: litmus.png
+    tfa:
+      - sms
+    doc: https://help.litmus.com/article/128-two-step-verification
+
   - name: MailChimp
     url: https://mailchimp.com/
     img: mailchimp.png
