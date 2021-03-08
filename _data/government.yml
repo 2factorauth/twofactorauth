@@ -150,6 +150,15 @@ websites:
     regions:
       - us
 
+  - name: MyGovID.ie
+    url: https://www.mygovid.ie/
+    img: mygovidie.png
+    tfa:
+      - sms
+    doc: https://www.mygovid.ie/en-IE/HelpAndSupport?section=pageButton-SecurityAndPrivacy&answer=show-answer32
+    regions:
+      - ie
+
   - name: RealMe
     url: https://www.realme.govt.nz/
     img: realme.png
