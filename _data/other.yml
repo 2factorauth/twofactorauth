@@ -477,6 +477,14 @@ websites:
     doc: https://feedback.repairshopr.com/knowledgebase/articles/928266
     exception: "SMS only available as a backup to Google Authenticator."
 
+  - name: Rev
+    url: https://www.rev.com/
+    img: rev.png
+    tfa:
+      - totp
+      - email
+    doc: https://support.rev.com/hc/en-us/articles/360035810851
+
   - name: Ripe NCC
     url: https://www.ripe.net/
     img: ripe.png
