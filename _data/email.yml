@@ -36,8 +36,11 @@ websites:
 
   - name: GMX.com
     url: https://www.gmx.com/
-    twitter: gmxmail
     img: gmx.png
+    tfa:
+      - totp
+    doc: https://support.gmx.com/security/2fa/setup-twofactor.html#indexlink_help_security_2fa
+    exception: "Setup requires SMS verification."
 
   - name: GMX.net
     url: https://www.gmx.net/
