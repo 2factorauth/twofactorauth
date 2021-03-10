@@ -505,6 +505,13 @@ websites:
       - hardware
     doc: https://wiki.smartsimple.com/wiki/Two-Factor_Authentication
 
+  - name: Sonix
+    url: https://sonix.ai
+    img: sonix.svg
+    tfa:
+      - totp
+    doc: https://help.sonix.ai/en/articles/4188823
+
   - name: Spare5
     url: https://app.spare5.com/fives
     img: spare5.png
