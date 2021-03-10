@@ -78,6 +78,15 @@ websites:
     doc: https://support.microsoft.com/en-us/help/12408/
     exception: "2FA phone calls may not be available in all regions"
 
+  - name: Monday.com
+    url: https://monday.com
+    img: monday.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.monday.com/hc/en-us/articles/360000787745
+    exception: "Team admins must enable 2FA before members can use it."
+
   - name: Planio
     url: https://plan.io
     img: planio.png
