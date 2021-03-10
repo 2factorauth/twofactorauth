@@ -512,6 +512,13 @@ websites:
     facebook: spare5app
     email_address: feedback@spare5.com
 
+  - name: ThriveCart
+    url: https://www.thrivecart.com
+    img: thrivecart.svg
+    tfa:
+      - totp
+    doc: https://support.thrivecart.com/help/where-do-i-get-my-6-digit-access-code-2-factor-authentication
+
   - name: TurboSquid
     url: https://www.turbosquid.com
     img: turbosquid.png
