@@ -62,8 +62,8 @@ $ bundle exec rake verify
 ## Site Criteria
 
 The following section contains rough criteria and explanations regarding
-what websites should be listed on twofactorauth.org. If one of the following
-criteria is met, it belongs on twofactorauth.org:
+what websites should be listed on 2fa.directory. If one of the following
+criteria is met, it belongs on 2fa.directory:
 
 1. **Personal Info/Image**: Any site that deals with personal info or a person's
    image. An example of a site with **Personal Info** would be their Amazon

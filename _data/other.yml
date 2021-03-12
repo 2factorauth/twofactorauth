@@ -505,6 +505,13 @@ websites:
       - hardware
     doc: https://wiki.smartsimple.com/wiki/Two-Factor_Authentication
 
+  - name: Sonix
+    url: https://sonix.ai
+    img: sonix.svg
+    tfa:
+      - totp
+    doc: https://help.sonix.ai/en/articles/4188823
+
   - name: Spare5
     url: https://app.spare5.com/fives
     img: spare5.png
@@ -518,6 +525,13 @@ websites:
     tfa:
       - totp
     doc: https://help.timetastic.co.uk/hc/en-us/articles/360015994257
+
+  - name: ThriveCart
+    url: https://www.thrivecart.com
+    img: thrivecart.svg
+    tfa:
+      - totp
+    doc: https://support.thrivecart.com/help/where-do-i-get-my-6-digit-access-code-2-factor-authentication
 
   - name: TurboSquid
     url: https://www.turbosquid.com

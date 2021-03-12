@@ -38,7 +38,7 @@ YAML.load_file("#{data_dir}/sections.yml").each do |section|
       website_data['exceptions'] = { 'text' => website['exception'] } unless website['exception'].nil?
       unless website['doc'].nil?
         website_data['doc'] =
-          website['doc'].start_with?('/notes/') ? "https://twofactorauth.org#{website['doc']}" : website['doc']
+          website['doc'].start_with?('/notes/') ? "https://2fa.directory#{website['doc']}" : website['doc']
       end
     end
     section_data[website['name']] = website_data
