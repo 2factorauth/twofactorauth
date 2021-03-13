@@ -1,4 +1,4 @@
-# Contributing to TwoFactorAuth.org
+# Contributing to 2fa.directory
 
 All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
