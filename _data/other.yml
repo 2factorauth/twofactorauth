@@ -151,6 +151,16 @@ websites:
     img: dreamstime.png
     twitter: Dreamstime
 
+  - name: Egnyte
+    url: https://www.egnyte.com/
+    img: egnyte.png
+    tfa:
+      - totp
+      - sms
+      - phone
+    doc: https://helpdesk.egnyte.com/hc/en-us/articles/360028032991
+    exception: "Availability of 2FA options depends on your account type."
+
   - name: Envato
     url: https://envato.com
     img: envato.png
