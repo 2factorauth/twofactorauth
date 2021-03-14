@@ -526,6 +526,13 @@ websites:
       - totp
     doc: https://support.thrivecart.com/help/where-do-i-get-my-6-digit-access-code-2-factor-authentication
 
+  - name: Tito
+    url: https://ti.to
+    img: tito.svg
+    tfa:
+      - totp
+    doc: https://ti.to/docs/two_factor_authentication
+
   - name: TurboSquid
     url: https://www.turbosquid.com
     img: turbosquid.png
