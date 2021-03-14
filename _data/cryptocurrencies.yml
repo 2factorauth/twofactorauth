@@ -501,6 +501,14 @@ websites:
       - sms
     doc: https://www.okex.com/support/hc/en-us/articles/360000350271
 
+  - name: Paxful
+    url: https://paxful.com
+    img: paxful.png
+    tfa:
+      - sms
+      - totp
+    doc: https://paxful.com/support/en-us/articles/360012619094
+
   - name: PayKassa
     url: https://paykassa.pro/
     img: paykassa.png
