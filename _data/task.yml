@@ -101,6 +101,13 @@ websites:
     img: rememberthemilk.png
     email_address: help@rememberthemilk.com
 
+  - name: Teamwork
+    url: https://teamwork.com
+    img: teamwork.svg
+    tfa:
+      - totp
+    doc: https://support.teamwork.com/projects/security/enabling-two-factor-authentication-on-your-profile
+
   - name: Tick
     url: https://www.tickspot.com
     img: tickspot.png
