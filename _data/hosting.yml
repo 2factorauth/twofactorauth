@@ -325,6 +325,14 @@ websites:
     twitter: iPage
     img: ipage.png
 
+  - name: justhost
+    url: https://justhost.com
+    img: justhost.png
+    tfa:
+      - totp
+      - email
+    doc: https://my.justhost.com/hosting/help/two-factor-authentication
+
   - name: Kinsta
     url: https://kinsta.com
     img: kinsta.png
