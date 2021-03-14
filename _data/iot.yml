@@ -17,6 +17,13 @@ websites:
       - totp
     doc: https://support.ecobee.com/hc/en-us/articles/360040957212
 
+  - name: Hive
+    url: https://hivehome.com
+    img: hive.svg
+    tfa:
+      - sms
+    doc: https://community.hivehome.com/s/article/What-is-Two-Factor-Authentication-and-how-do-I-set-it-up
+
   - name: IFTTT
     url: https://ifttt.com
     img: ifttt.png
