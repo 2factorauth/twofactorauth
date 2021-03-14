@@ -45,8 +45,10 @@ websites:
   - name: BT
     url: https://www.bt.com/
     img: bt.png
-    twitter: bt_uk
-    facebook: BTUK
+    tfa:
+      - email
+      - sms
+    doc: https://www.bt.com/help/security/two-step-authentication
     regions:
       - gb
 
