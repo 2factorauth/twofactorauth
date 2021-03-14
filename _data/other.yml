@@ -317,6 +317,13 @@ websites:
     email_address: support@help.instapaper.com
     img: instapaper.png
 
+  - name: Jamf Now
+    url: https://jamfnow.com
+    img: jamfnow.png
+    tfa:
+      - totp
+    doc: https://support.jamfnow.com/s/article/207717923-How-to-turn-on-Two-Factor-Authentication
+
   - name: Jitbit Helpdesk
     url: https://www.jitbit.com/hosted-helpdesk/
     img: jitbit.png
