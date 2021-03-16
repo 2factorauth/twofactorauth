@@ -181,11 +181,15 @@ websites:
 
   - name: SAPO Mail
     url: https://mail.sapo.pt
-    email_address: conteudos@mail.sapo.pt
-    img: sapo.png
-    twitter: sapo
-    facebook: sapo
+    img: sapo.svg
+    tfa:
+      - totp
+      - sms
+      - u2f
+    doc: https://ajuda.sapo.pt/id-67553
     lang: pt
+    regions:
+      - pt
 
   - name: Seznam.cz
     url: https://seznam.cz
