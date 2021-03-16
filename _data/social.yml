@@ -12,10 +12,11 @@ websites:
 
   - name: ArtStation
     url: https://www.artstation.com/
-    twitter: ArtStationHQ
-    facebook: artstationhq
-    email_address: support@artstation.com
     img: artstation.png
+    tfa:
+      - email
+    doc: https://help.artstation.com/en/articles/220-setting-up-two-factor-authentication
+    exception: "2FA must be enabled from the app"
 
   - name: ASKfm
     url: https://ask.fm/
