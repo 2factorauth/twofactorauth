@@ -641,6 +641,15 @@ websites:
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2311#issuecomment-273424695
 
+  - name: Web Hosting Canada (WHC)
+    url: https://whc.ca
+    img: whc.svg
+    tfa:
+      - totp
+    doc: https://clients.whc.ca/en/knowledgebase/1430/How-to-activate-and-use-Two-Factor-Authentication.html#client-area
+    regions:
+      - ca
+
   - name: WebFaction
     url: https://www.webfaction.com
     img: webfaction.png
@@ -654,15 +663,6 @@ websites:
     tfa:
       - totp
     doc: https://university.webflow.com/lesson/two-factor-authentication-2fa
-
-  - name: Web Hosting Canada (WHC)
-    url: https://whc.ca
-    img: whc.svg
-    tfa:
-      - totp
-    doc: https://clients.whc.ca/en/knowledgebase/1430/How-to-activate-and-use-Two-Factor-Authentication.html#client-area
-    regions:
-      - ca
 
   - name: Wedos
     url: https://hosting.wedos.com
