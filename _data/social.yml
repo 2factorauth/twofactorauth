@@ -96,9 +96,10 @@ websites:
   - name: Glassdoor
     url: https://glassdoor.com
     img: glassdoor.png
-    twitter: Glassdoor
-    facebook: Glassdoor
-    email_address: feedback@glassdoor.com
+    tfa:
+      - totp
+      - sms
+    doc: https://help.glassdoor.com/article/Manage-Two-Factor-Authentication/
 
   - name: Goodreads
     url: https://www.goodreads.com
