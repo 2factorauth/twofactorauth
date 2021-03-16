@@ -24,9 +24,9 @@ websites:
   - name: Asana
     url: https://www.asana.com
     img: asana.png
-    twitter: asana
-    facebook: asana
-    email_address: support@asana.com
+    tfa:
+      - totp
+    doc: https://asana.com/guide/help/fundamentals/two-factor-authentication
 
   - name: Azendoo
     url: https://app.azendoo.com
