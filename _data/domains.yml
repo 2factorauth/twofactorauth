@@ -457,9 +457,11 @@ websites:
 
   - name: Rebel.com
     url: https://www.rebel.com/
-    twitter: rebeldotcom
-    facebook: rebeldotcomhosting
     img: rebel.png
+    tfa:
+      - totp
+    doc: https://support.rebel.com/hc/en-us/articles/360039417613
+    exception: "You must contact customer support to enable 2FA."
 
   - name: Rebrandly
     url: https://rebrandly.com
