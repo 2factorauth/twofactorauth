@@ -46,7 +46,7 @@ websites:
       - sms
       - totp
     doc: https://docs.clickup.com/en/articles/2601429
-    exception: "Availability of 2FA options depends on your account type."
+    exception: "SMS only available on Business and Enterprise price plans."
 
   - name: Clubhouse
     url: https://clubhouse.io
