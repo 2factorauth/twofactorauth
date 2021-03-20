@@ -216,15 +216,13 @@ websites:
       - totp
     doc: https://greenhost.net/blog/2016/03/01/spring-news-2-factor-authentication-service-center-haproxy-plugin-for-let-s-encrypt-and-more/
 
-  - name: Hetzner Online
-    url: https://www.hetzner.de/
-    img: hetzner.png
+  - name: Hetzner
+    url: https://www.hetzner.com
+    img: hetzner.svg
     tfa:
       - totp
       - hardware
-    doc: https://wiki.hetzner.de/index.php/KonsoleH:Zwei-Faktor-Authentifizierung/en
-    regions:
-      - de
+    doc: https://docs.hetzner.com/accounts-panel/accounts/two-factor-authentication/
 
   - name: Host Europe
     url: https://www.hosteurope.de/
