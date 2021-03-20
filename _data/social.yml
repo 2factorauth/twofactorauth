@@ -14,9 +14,9 @@ websites:
     url: https://www.artstation.com/
     img: artstation.svg
     tfa:
-      - email
+      - proprietary
     doc: https://help.artstation.com/en/articles/220
-    exception: "2FA must be enabled from the app"
+    exception: "2FA must be enabled from the app and requires email confirmation to setup."
 
   - name: ASKfm
     url: https://ask.fm/
