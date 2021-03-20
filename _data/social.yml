@@ -76,7 +76,7 @@ websites:
       - totp
       - u2f
     doc: https://www.facebook.com/help/148233965247823
-    exception: "Hardware 2FA requires also enabling a back-up method and is unsupported on mobile."
+    exception: "Hardware 2FA requires also enabling a back-up method"
 
   - name: Flickr
     url: https://www.flickr.com
