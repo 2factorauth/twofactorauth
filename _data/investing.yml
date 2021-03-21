@@ -1,8 +1,10 @@
 websites:
   - name: Acorns
     url: https://www.acorns.com/
-    twitter: acorns
     img: acorns.png
+    tfa:
+      - sms
+    doc: https://www.acorns.com/support/how-do-i-turn-on-two-factor-authentication-on-my-account/
 
   - name: AJ Bell Youinvest
     url: https://www.youinvest.co.uk/
