@@ -80,9 +80,10 @@ websites:
 
   - name: ClearScore
     url: https://www.clearscore.com
-    img: clearscore.png
+    img: clearscore.svg
     tfa:
       - sms
+      - totp
     doc: https://help.clearscore.com/hc/en-us/sections/360003360940
 
   - name: Concur
