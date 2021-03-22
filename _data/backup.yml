@@ -73,12 +73,6 @@ websites:
       - totp
     doc: https://www.files.com/docs/features/two-factor-auth/
 
-  - name: FileThis
-    url: https://filethis.com
-    twitter: FileThisCompany
-    img: filethis.png
-    facebook: FileThis
-
   - name: Google Drive
     url: https://drive.google.com
     img: drive.png
@@ -102,27 +96,6 @@ websites:
       - email
     doc: https://blog.idrive.com/2018/11/16/idrive-adds-two-factor-authentication/
 
-  - name: Jottacloud
-    url: https://www.jottacloud.com
-    img: jotta.png
-    tfa:
-      - sms
-      - totp
-    doc: https://docs.jottacloud.com/en/articles/1292931
-
-  - name: JustCloud
-    url: https://www.justcloud.com
-    twitter: JustCloudcom
-    img: justcloud.png
-    facebook: JustCloudStorage
-
-  - name: Koofr
-    url: https://koofr.eu
-    tfa:
-      - totp
-    img: koofr.png
-    doc: https://koofr.eu/help/other/how-do-i-enable-2-step-verification/
-
   - name: Mega
     url: https://mega.nz/
     img: mega.png
@@ -135,15 +108,6 @@ websites:
     twitter: multcloud
     facebook: multcloud
     img: multcloud.png
-
-  - name: Nimbox
-    url: https://www.nimbox.co.uk/
-    img: nimbox.png
-    tfa:
-      - sms
-      - email
-      - totp
-    doc: https://www.nimbox.co.uk/help-centre/two-step-two-factor-authentication-2fa/
 
   - name: OneDrive
     url: https://onedrive.live.com
@@ -173,12 +137,6 @@ websites:
       - email
       - totp
     doc: https://www.qnap.com/en-us/how-to/tutorial/article/how-to-enhance-account-security-using-2-step-verification
-
-  - name: SpiderOak
-    url: https://spideroak.com
-    twitter: SpiderOak
-    img: spideroak.png
-    facebook: SpiderOak
 
   - name: SugarSync
     twitter: SugarSync
