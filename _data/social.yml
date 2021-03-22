@@ -249,6 +249,13 @@ websites:
       - totp
     doc: https://support.snapchat.com/en-US/article/enable-login-verification
 
+  - name: Socialbakers
+    url: https://socialbakers.com
+    img: socialbakers.svg
+    tfa:
+      - totp
+    doc: https://support.socialbakers.com/hc/en-us/articles/360015072719
+
   - name: Stack Exchange
     url: https://stackexchange.com/
     img: stack_exchange.png
