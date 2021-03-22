@@ -79,6 +79,13 @@ websites:
     doc: https://www.facebook.com/help/148233965247823
     exception: "Hardware 2FA requires also enabling a back-up method"
 
+  - name: Falcon
+    url: https://falcon.io
+    img: falcon.svg
+    tfa:
+      - totp
+    doc: https://help.falcon.io/hc/en-us/articles/360027689451
+
   - name: Flickr
     url: https://www.flickr.com
     twitter: FlickrHelp
