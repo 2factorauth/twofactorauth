@@ -69,6 +69,12 @@ websites:
     regions:
       - jp
 
+  - name: Bitforex
+    url: https://bitforex.com
+    img: bitforex.svg
+    tfa:
+      - totp
+
   - name: BitGo
     url: https://www.bitgo.com
     img: bitgo.png
