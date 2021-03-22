@@ -487,10 +487,12 @@ websites:
 
   - name: STRATO
     url: https://www.strato.de/
-    twitter: STRATO_AG
-    facebook: strato
-    img: strato.png
-    lang: de
+    img: strato.svg
+    tfa:
+      - totp
+    doc: https://www.strato.de/faq/cloud-speicher/2-Faktor-Authentifizierung/
+    regions:
+      - de
 
   - name: Synergy Wholesale
     url: https://synergywholesale.com/
