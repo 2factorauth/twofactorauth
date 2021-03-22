@@ -28,7 +28,8 @@ websites:
     img: cloud66.png
     tfa:
       - totp
-    doc: https://blog.cloud66.com/two-factor-authentication-for-your-accounts/
+      - u2f
+    doc: https://help.cloud66.com/node/account/two-factor-authentication.html
 
   - name: cloud.ca
     url: https://cloud.ca
