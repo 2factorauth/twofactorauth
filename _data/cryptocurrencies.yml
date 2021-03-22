@@ -374,6 +374,13 @@ websites:
       - u2f
     doc: https://docs.dsx.uk/dsx/getting-started-with-dsx/your-security-is-our-priority/enable-two-factor-authentication
 
+  - name: Falcon
+    url: https://falcon.io
+    img: falcon.svg
+    tfa:
+      - totp
+    doc: https://help.falcon.io/hc/en-us/articles/360027689451
+
   - name: Gatehub
     url: https://gatehub.net
     img: gatehub.png
