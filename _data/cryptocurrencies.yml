@@ -414,6 +414,14 @@ websites:
       - totp
     doc: https://huobiglobal.zendesk.com/hc/en-us/articles/360000191282
 
+  - name: HUOBI
+    url: https://huobi.com
+    img: huobi.png
+    tfa:
+      - sms
+      - totp
+    doc: https://huobiglobal.zendesk.com/hc/en-us/articles/360000191282
+
   - name: Invictus Capital
     url: https://invictuscapital.com
     img: invictuscapital.png
