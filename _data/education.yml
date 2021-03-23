@@ -411,6 +411,13 @@ websites:
     regions:
       - us
 
+  - name: Open Science Framework (OSF)
+    url: https://osf.io
+    img: osf.png
+    tfa:
+      - totp
+    doc: https://help.osf.io/hc/en-us/articles/360019738054
+
   - name: Pennsylvania State University
     url: https://www.psu.edu/
     img: psu.png
