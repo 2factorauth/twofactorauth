@@ -91,6 +91,12 @@ websites:
     doc: https://support.logmeininc.com/lastpass/help/enable-multifactor-authentication-lp010002
     exception: "Availability of 2FA options depends on your account type."
 
+  - name: NordPass
+    url: https://nordpass.com/
+    img: nordpass.svg
+    tfa:
+      - totp
+
   - name: Okta
     url: https://www.okta.com/
     img: okta.png
