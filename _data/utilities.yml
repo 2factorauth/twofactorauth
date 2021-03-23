@@ -7,16 +7,6 @@ websites:
     regions:
       - us
 
-  - name: Andrews &amp; Arnold
-    url: https://aa.net.uk
-    img: aaisp.png
-    tfa:
-      - totp
-    doc: https://aa.net.uk/kb-broadband-2fa.html
-    exception: "While both the accounts and control web pages support 2FA, each system is separate and requires its own setup."
-    regions:
-      - gb
-
   - name: Arcadia
     url: https://www.arcadia.com/
     twitter: arcadia
@@ -200,15 +190,6 @@ websites:
     regions:
       - gb
 
-  - name: Ergon Energy
-    url: https://www.ergon.com.au/
-    twitter: ErgonEnergy
-    facebook: ErgonEnergy
-    email_address: customerservice@ergon.com.au
-    img: ergon.png
-    regions:
-      - au
-
   - name: Eversource
     url: https://www.eversource.com/
     twitter: EversourceCorp
@@ -376,15 +357,6 @@ websites:
     regions:
       - us
 
-  - name: sipgate
-    url: https://www.sipgate.de/
-    twitter: sipgateDE
-    facebook: sipgate
-    img: sipgate.png
-    lang: de
-    regions:
-      - de
-
   - name: Sonic
     url: https://www.sonic.com/
     img: sonic.png
@@ -518,15 +490,6 @@ websites:
     img: verizon.png
     regions:
       - us
-
-  - name: Vimla
-    url: https://vimla.se/
-    twitter: Vimla_se
-    facebook: vimla.se
-    img: vimla.png
-    lang: sv
-    regions:
-      - se
 
   - name: Virgin Media (IE)
     url: https://www.virginmedia.ie/
