@@ -465,16 +465,6 @@ websites:
       - proprietary
     doc: https://www.tk.de/techniker/unternehmensseiten/unternehmen/die-tk-app/2023678
 
-  - name: TransferWise
-    url: https://transferwise.com
-    img: transferwise.png
-    tfa:
-      - sms
-      - phone
-      - proprietary
-    doc: https://transferwise.com/help/12/managing-your-profile/2932125
-    exception: "SMS-capable phone is required."
-
   - name: TransUnion
     url: https://www.transunion.com/
     twitter: TransUnion
@@ -503,6 +493,16 @@ websites:
     img: wave.png
     twitter: WaveHQ
     facebook: waveHQ
+
+  - name: Wise
+    url: https://wise.com
+    img: wise.png
+    tfa:
+      - sms
+      - phone
+      - proprietary
+    doc: https://wise.com/help/12/managing-your-profile/2932125
+    exception: "SMS-capable phone is required."
 
   - name: Xero
     url: https://www.xero.com/
