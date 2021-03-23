@@ -24,11 +24,12 @@ websites:
 
   - name: Acquia
     url: https://www.acquia.com
-    img: acquia.png
+    img: acquia.svg
     tfa:
       - sms
       - totp
-    doc: https://docs.acquia.com/acquia-cloud/access/signin/
+    doc: https://docs.acquia.com/cloud-platform/access/signin/
+    exception: "SMS 2FA is only available for US or Canada phone numbers."
 
   - name: ACTIVE 24
     url: https://www.active24.com/
