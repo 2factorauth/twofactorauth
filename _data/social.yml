@@ -102,6 +102,14 @@ websites:
       - sms
     doc: https://help.glassdoor.com/article/Manage-Two-Factor-Authentication/
 
+  - name: Glassdoor (UK)
+    url: https://glassdoor.co.uk
+    img: glassdoor.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.glassdoor.com/article/Manage-Two-Factor-Authentication/
+
   - name: Goodreads
     url: https://www.goodreads.com
     twitter: goodreads
