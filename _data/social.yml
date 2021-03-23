@@ -12,10 +12,11 @@ websites:
 
   - name: ArtStation
     url: https://www.artstation.com/
-    twitter: ArtStationHQ
-    facebook: artstationhq
-    email_address: support@artstation.com
-    img: artstation.png
+    img: artstation.svg
+    tfa:
+      - proprietary
+    doc: https://help.artstation.com/en/articles/220
+    exception: "2FA must be enabled from the app and requires email confirmation to setup."
 
   - name: ASKfm
     url: https://ask.fm/
@@ -76,7 +77,7 @@ websites:
       - totp
       - u2f
     doc: https://www.facebook.com/help/148233965247823
-    exception: "Hardware 2FA requires also enabling a back-up method and is unsupported on mobile."
+    exception: "Hardware 2FA requires also enabling a back-up method"
 
   - name: Flickr
     url: https://www.flickr.com
@@ -95,10 +96,11 @@ websites:
 
   - name: Glassdoor
     url: https://glassdoor.com
-    img: glassdoor.png
-    twitter: Glassdoor
-    facebook: Glassdoor
-    email_address: feedback@glassdoor.com
+    img: glassdoor.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.glassdoor.com/article/Manage-Two-Factor-Authentication/
 
   - name: Goodreads
     url: https://www.goodreads.com
