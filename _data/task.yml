@@ -23,10 +23,10 @@ websites:
 
   - name: Asana
     url: https://www.asana.com
-    img: asana.png
-    twitter: asana
-    facebook: asana
-    email_address: support@asana.com
+    img: asana.svg
+    tfa:
+      - totp
+    doc: https://asana.com/guide/help/fundamentals/two-factor-authentication
 
   - name: Azendoo
     url: https://app.azendoo.com
@@ -85,6 +85,15 @@ websites:
       - totp
       - sms
     doc: https://teams.nozbe.help/management/settings/#settings_2fa
+
+  - name: Monday.com
+    url: https://monday.com
+    img: monday.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.monday.com/hc/en-us/articles/360000787745
+    exception: "Team admins must enable 2FA before members can use it."
 
   - name: Planio
     url: https://plan.io
