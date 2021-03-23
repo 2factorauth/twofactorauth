@@ -96,6 +96,14 @@ websites:
       - email
     doc: https://blog.idrive.com/2018/11/16/idrive-adds-two-factor-authentication/
 
+  - name: Jottacloud
+    url: https://www.jottacloud.com
+    img: jotta.png
+    tfa:
+      - sms
+      - totp
+    doc: https://docs.jottacloud.com/en/articles/1292931
+
   - name: Mega
     url: https://mega.nz/
     img: mega.png
