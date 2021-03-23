@@ -145,6 +145,12 @@ websites:
       - totp
     doc: https://www.nimbox.co.uk/help-centre/two-step-two-factor-authentication-2fa/
 
+  - name: NordLocker
+    url: https://nordlocker.com/
+    img: nordlocker.svg
+    tfa:
+      - totp
+
   - name: OneDrive
     url: https://onedrive.live.com
     img: onedrive.png
