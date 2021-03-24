@@ -78,14 +78,6 @@ websites:
     doc: https://support.microsoft.com/en-us/help/12408/
     exception: "2FA phone calls may not be available in all regions"
 
-  - name: Nozbe Teams
-    url: https://nozbe.com/
-    img: nozbeteams.png
-    tfa:
-      - totp
-      - sms
-    doc: https://teams.nozbe.help/management/settings/#settings_2fa
-
   - name: Monday.com
     url: https://monday.com
     img: monday.svg
@@ -94,6 +86,14 @@ websites:
       - sms
     doc: https://support.monday.com/hc/en-us/articles/360000787745
     exception: "Team admins must enable 2FA before members can use it."
+
+  - name: Nozbe Teams
+    url: https://nozbe.com/
+    img: nozbeteams.png
+    tfa:
+      - totp
+      - sms
+    doc: https://teams.nozbe.help/management/settings/#settings_2fa
 
   - name: Planio
     url: https://plan.io
