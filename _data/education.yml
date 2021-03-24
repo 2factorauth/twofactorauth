@@ -264,6 +264,13 @@ websites:
     facebook: GIAC.org
     email_address: info@giac.org
 
+  - name: Hack The Box
+    url: https://hackthebox.eu
+    img: hackthebox.svg
+    tfa:
+      - totp
+    doc: https://help.hackthebox.eu/getting-started/v2-setting-up-your-account#General%20Settings,%20Security%20and%20Notifications-0
+
   - name: HackerRank
     url: https://www.hackerrank.com
     img: hackerrank.png

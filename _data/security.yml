@@ -140,13 +140,6 @@ websites:
     twitter: gogetssl
     facebook: gogetssl
 
-  - name: Hack The Box
-    url: https://hackthebox.eu
-    img: hackthebox.svg
-    tfa:
-      - totp
-    doc: https://help.hackthebox.eu/getting-started/v2-setting-up-your-account#General%20Settings,%20Security%20and%20Notifications-0
-
   - name: HackerOne
     url: https://hackerone.com
     img: hackerone.png
