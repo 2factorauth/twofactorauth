@@ -94,6 +94,13 @@ websites:
       - totp
     doc: https://support.plan.io/news/133
 
+  - name: Podio
+    url: https://podio.com/
+    img: podio.svg
+    tfa:
+      - totp
+    doc: https://help.podio.com/hc/en-us/articles/360017456279
+
   - name: Remember The Milk
     url: https://www.rememberthemilk.com
     twitter: rememberthemilk
