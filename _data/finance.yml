@@ -173,6 +173,13 @@ websites:
       - totp
     doc: https://www.freetaxusa.com/faqsearch?search_keyword=authentication
 
+  - name: Freewallet
+    url: https://freewallet.org/
+    img: freewallet.svg
+    tfa:
+      - totp
+    doc: https://freewallet.org/blog/2fa-faq
+
   - name: FreshBooks
     url: https://www.freshbooks.com
     img: freshbooks.png
