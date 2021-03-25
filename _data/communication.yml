@@ -301,6 +301,15 @@ websites:
       - proprietary
     doc: https://help.sendloop.com/docs/securing-your-account
 
+  - name: SendSafely
+    url: https://www.sendsafely.com/
+    img: sendsafely.png
+    tfa:
+      - totp
+      - sms
+    doc: https://blog.sendsafely.com/authenticator-app
+    exception: "TOTP 2FA requires SMS as a backup option"
+
   - name: Signal
     url: https://www.signal.org/
     img: signal.png
