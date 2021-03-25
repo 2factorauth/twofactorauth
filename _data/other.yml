@@ -511,6 +511,15 @@ websites:
       - totp
     doc: https://www.sanebox.com/help/127
 
+  - name: Scalefusion
+    url: https://scalefusion.com/
+    img: scalefusion.svg
+    tfa:
+      - email
+      - totp
+    doc: https://help.mobilock.in/article/6j7ps7cw8x
+    exception: "Only account owners and co-account owners can enable 2FA."
+
   - name: SignNow
     url: https://www.signnow.com/
     img: signnow.png
