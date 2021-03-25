@@ -7,6 +7,13 @@ websites:
       - email
     doc: https://knowledgecenter.2checkout.com/Onboarding/Activate-and-set-up-your-2Checkout-account/Two-factor-authentication
 
+  - name: Accelo
+    url: https://www.accelo.com/
+    img: accelo.svg
+    tfa:
+      - totp
+    doc: https://www.accelo.com/resources/help/faq/user-permissions-and-settings/two-factor-authentication/
+
   - name: Adobe ID
     url: https://adobe.com/
     img: adobe.png
