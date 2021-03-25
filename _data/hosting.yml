@@ -222,6 +222,15 @@ websites:
       - totp
     doc: https://www.hostens.com/knowledgebase/how-to-enhance-account-security/
 
+  - name: Hostinger
+    url: https://www.hostinger.com/
+    img: hostinger.svg
+    tfa:
+      - totp
+      - email
+    doc: https://support.hostinger.com/en/articles/4888148
+    exception: "You can only have one 2FA option enabled at a time."
+
   - name: Hostpoint
     url: https://www.hostpoint.ch/
     img: hostpoint.png
