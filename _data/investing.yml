@@ -293,3 +293,12 @@ websites:
     facebook: WeltSparen
     email_address: kundenservice@weltsparen.de
     lang: de
+
+  - name: Zerodah Kite
+    url: https://zerodha.com/products/kite
+    img: zerodah.svg
+    tfa:
+      - totp
+    doc: https://support.zerodha.com/category/your-zerodha-account/login-credentials/login-credentials-of-trading-platforms/articles/time-based-otp-setup
+    regions:
+      - in
