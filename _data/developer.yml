@@ -303,6 +303,13 @@ websites:
     img: hotjar.png
     twitter: hotjar
 
+  - name: Honeybadger
+    url: https://www.honeybadger.io/
+    img: honeybadger.svg
+    tfa:
+      - totp
+    doc: https://www.honeybadger.io/blog/account-security-updates/#how-to-enable
+
   - name: imgix
     url: https://www.imgix.com/
     twitter: imgix
