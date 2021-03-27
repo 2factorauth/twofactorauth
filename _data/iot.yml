@@ -51,6 +51,13 @@ websites:
     facebook: onstar
     twitter: OnStar
 
+  - name: Particle
+    url: https://particle.io
+    img: particle.svg
+    tfa:
+      - totp
+    doc: https://docs.particle.io/tutorials/developer-tools/two-step-authentication/
+
   - name: Ring
     url: https://ring.com
     img: ringcom.png
