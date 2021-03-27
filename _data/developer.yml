@@ -188,6 +188,7 @@ websites:
     tfa:
       - sms
       - totp
+      - u2f
     doc: https://help.compose.com/docs/two-factor-authentication
 
   - name: Cookiebot
