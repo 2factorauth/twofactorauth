@@ -9,6 +9,13 @@ websites:
     doc: https://kb.arlo.com/000062288
     exception: "Email 2FA is always available as a backup."
 
+  - name: Balena
+    url: https://www.balena.io
+    img: balena.png
+    tfa:
+      - totp
+    doc: https://www.balena.io/docs/learn/manage/account/#two-factor-authentication
+
   - name: ecobee
     url: https://ecobee.com
     img: ecobee.png
