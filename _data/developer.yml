@@ -145,6 +145,13 @@ websites:
     twitter: chocolateynuget
     facebook: ChocolateySoftware
 
+  - name: CloudBees
+    url: https://cloudbees.com
+    img: cloudbees.svg
+    tfa:
+      - totp
+    doc: https://docs.cloudbees.com/docs/cloudbees-feature-management/latest/security/two-factor-authentication
+
   - name: CM Telecom
     url: https://www.cmtelecom.com/
     img: cmtelecom.png
@@ -167,13 +174,6 @@ websites:
     tfa:
       - sms
     doc: https://docs.codeanywhere.com/#two-factor-authentication
-
-  - name: Codeship
-    url: https://codeship.com/
-    img: codeship.png
-    tfa:
-      - totp
-    doc: https://documentation.codeship.com/general/about/2fa/
 
   - name: Compose
     url: https://www.compose.com/
