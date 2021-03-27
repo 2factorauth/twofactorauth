@@ -506,18 +506,11 @@ websites:
 
   - name: Verizon
     url: https://www.verizon.com/
-    twitter: VerizonSupport
-    facebook: verizon
     img: verizon.png
-    regions:
-      - us
-
-  - name: Verizon Wireless
-    url: https://www.verizonwireless.com/
-    twitter: VZWSupport
-    img: verizon.png
-    regions:
-      - us
+    tfa:
+      - sms
+      - email
+    doc: https://www.verizon.com/support/keeping-your-account-safe-faqs/
 
   - name: Vimla
     url: https://vimla.se/
