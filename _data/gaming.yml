@@ -231,6 +231,14 @@ websites:
     tfa:
       - totp
 
+  - name: Mineplex
+    url: https://www.mineplex.com/
+    img: mineplex.png
+    tfa:
+      - totp
+      - email
+    doc: https://www.mineplex.com/threads/239/
+
   - name: Mojang
     url: https://mojang.com/
     twitter: MojangSupport
