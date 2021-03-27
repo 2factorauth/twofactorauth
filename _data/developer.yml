@@ -44,13 +44,6 @@ websites:
       - totp
     doc: https://www.appveyor.com/blog/2018/11/07/2FA-implementation/
 
-  - name: aTech Media
-    url: https://atechmedia.com
-    img: atechmedia.png
-    tfa:
-      - totp
-    doc: https://www.deployhq.com/support/managing-your-account/personal-profile/two-factor-authentication
-
   - name: Atlassian Cloud
     url: https://id.atlassian.com
     img: atlassian.png
@@ -59,6 +52,13 @@ websites:
       - totp
     doc: https://confluence.atlassian.com/cloud/secure-your-account-with-two-step-verification-939505063.html
     exception: "2FA settings are service-specific."
+
+  - name: Back4App
+    url: https://back4app.com
+    img: back4app.png
+    tfa:
+      - totp
+    doc: https://www.back4app.com/docs/security/multi-factor-authentication
 
   - name: Balsamiq
     url: https://balsamiq.com
@@ -145,6 +145,13 @@ websites:
     twitter: chocolateynuget
     facebook: ChocolateySoftware
 
+  - name: CloudBees
+    url: https://cloudbees.com
+    img: cloudbees.svg
+    tfa:
+      - totp
+    doc: https://docs.cloudbees.com/docs/cloudbees-feature-management/latest/security/two-factor-authentication
+
   - name: CM
     url: https://www.cm.com/
     img: cmtelecom.png
@@ -167,13 +174,6 @@ websites:
     tfa:
       - sms
     doc: https://docs.codeanywhere.com/#two-factor-authentication
-
-  - name: Codeship
-    url: https://codeship.com/
-    img: codeship.png
-    tfa:
-      - totp
-    doc: https://documentation.codeship.com/general/about/2fa/
 
   - name: Compose
     url: https://www.compose.com/
@@ -213,7 +213,7 @@ websites:
     img: docker.png
     tfa:
       - totp
-    doc: https://www.docker.com/blog/designing-docker-hub-2fa/
+    doc: https://docs.docker.com/docker-hub/2fa/
 
   - name: Domino Data Lab
     url: https://www.dominodatalab.com/

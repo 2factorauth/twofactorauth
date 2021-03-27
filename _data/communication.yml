@@ -366,6 +366,14 @@ websites:
       - phone
     doc: https://telegram.org/blog/sessions-and-2-step-verification
 
+  - name: Textlocal
+    url: https://textlocal.com
+    img: textlocal.png
+    tfa:
+      - sms
+      - totp
+    doc: https://www.textlocal.com/support/knowledge-base/two-factor-authentication/
+
   - name: ToutApp
     url: https://www1.toutapp.com/
     facebook: toutapp
