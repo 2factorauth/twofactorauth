@@ -16,8 +16,11 @@ layout: default
 
 <div class="row justify-content-start category-row">
   {% assign rowcount = 0 %}
-  {% assign tailcount = site.data.sections.size | modulo: 5 %}
-  {% for section in site.data.sections %}
+  {% assign secMain = site.data.sections | where_exp: "item", "item.id != 'other'" %}
+  {% assign secOther = site.data.sections | where_exp: "item", "item.id == 'other'" %}
+  {% assign sections = secMain | concat: secOther %}
+  {% assign tailcount = sections.size | modulo: 5 %}
+  {% for section in sections %}
     {% assign rowend = forloop.index | modulo: 5 %}
     {% if rowend == 0 or forloop.index == forloop.length %}
 
@@ -31,7 +34,7 @@ layout: default
 
       {% include mobile-table.html id-param=section.id title-param=section.title %}
       {% assign offcount = 5 | times: rowcount %}
-      {% for section in site.data.sections limit: 5 offset: offcount %}
+      {% for section in sections limit: 5 offset: offcount %}
         {% include desktop-table.html id-param=section.id title-param=section.title %}
       {% endfor %}
 
