@@ -44,13 +44,6 @@ websites:
       - totp
     doc: https://www.appveyor.com/blog/2018/11/07/2FA-implementation/
 
-  - name: aTech Media
-    url: https://atechmedia.com
-    img: atechmedia.png
-    tfa:
-      - totp
-    doc: https://www.deployhq.com/support/managing-your-account/personal-profile/two-factor-authentication
-
   - name: Atlassian Cloud
     url: https://id.atlassian.com
     img: atlassian.png
