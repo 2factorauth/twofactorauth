@@ -17,6 +17,13 @@ websites:
       - proprietary
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
+  - name: American Kennel Club (AKC)
+    url: https://www.akc.org/
+    img: akc.svg
+    tfa:
+      - email
+    doc: https://www.akc.org/about/site/two-factor-authentication/
+
   - name: Ancestry
     url: https://www.ancestry.com
     img: ancestry.png
