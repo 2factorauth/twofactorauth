@@ -373,6 +373,13 @@ websites:
       - totp
     doc: https://help.kickstarter.com/hc/en-us/articles/115005127094
 
+  - name: Knack
+    url: https://www.knack.com/
+    img: knack.svg
+    tfa:
+      - totp
+    doc: https://support.knack.com/hc/en-us/articles/360033507792
+
   - name: Liftopia
     url: https://www.liftopia.com
     img: liftopia.png
