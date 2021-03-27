@@ -344,6 +344,12 @@ websites:
       - totp
     doc: https://www.sparkpost.com/docs/my-account-and-profile/enabling-two-factor-authentication/
 
+  - name: SRFax
+    url: https://www.srfax.com
+    img: srfax.png
+    tfa:
+      - totp
+
   - name: Stackfield
     url: https://www.stackfield.com/
     img: stackfield.png
