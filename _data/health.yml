@@ -82,11 +82,12 @@ websites:
     email_address: support@endomondo.com
     img: endomondo.png
 
-  - name: FitBit
+  - name: Fitbit
     url: https://www.fitbit.com/
-    twitter: fitbit
-    facebook: fitbit
     img: fitbit.png
+    tfa:
+      - sms
+    doc: https://help.fitbit.com/articles/en_US/Help_article/2197
 
   - name: FollowMyHealth
     url: https://www.followmyhealth.com/
