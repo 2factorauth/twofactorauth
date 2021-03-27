@@ -41,10 +41,12 @@ websites:
 
   - name: ClickUp
     url: https://clickup.com
-    img: clickup.png
+    img: clickup.svg
     tfa:
       - sms
-    doc: https://docs.clickup.com/general/two-factor-authentication
+      - totp
+    doc: https://docs.clickup.com/en/articles/2601429
+    exception: "SMS only available on Business and Enterprise price plans."
 
   - name: Clubhouse
     url: https://clubhouse.io
