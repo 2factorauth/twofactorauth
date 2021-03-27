@@ -63,6 +63,13 @@ websites:
     twitter: bananatag
     facebook: trackemail
 
+  - name: Baremetrics
+    url: https://baremetrics.com/
+    img: baremetrics.svg
+    tfa:
+      - totp
+    doc: https://changelog.baremetrics.com/two-factor-authentication-3X2v9m
+
   - name: Basic Attention Token
     url: https://publishers.basicattentiontoken.org/
     img: basicattentiontoken.png
