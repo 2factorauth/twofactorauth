@@ -1,9 +1,10 @@
 websites:
   - name: 500px
     url: https://web.500px.com/
-    twitter: 500px
-    facebook: 500px
     img: 500px.png
+    tfa:
+      - totp
+    doc: https://support.500px.com/hc/en-us/articles/205115877
 
   - name: about.me
     url: https://about.me
