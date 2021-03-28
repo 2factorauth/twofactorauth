@@ -34,14 +34,13 @@ websites:
 
   - name: NordVPN
     url: https://nordvpn.com
-    img: nordvpn.png
-    twitter: NordVPN
-    facebook: NordVPN
-    email_address: support@nordvpn.com
+    img: nordvpn.svg
+    tfa:
+      - totp
 
   - name: NordVPN Teams
     url: https://nordvpnteams.com
-    img: nordvpn.png
+    img: nordvpn.svg
     tfa:
       - totp
       - sms
