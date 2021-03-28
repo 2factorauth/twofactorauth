@@ -47,8 +47,8 @@ websites:
   - name: Carbon Black Community Exchange
     url: https://community.carbonblack.com/
     img: carbonblack.png
-    twitter: CarbonBlack_Inc
-    facebook: carbonblackinc
+    twitter: vmw_carbonblack
+    facebook: VMWCarbonBlack
 
   - name: Close
     url: https://close.com/
@@ -164,6 +164,7 @@ websites:
     img: groups_io.png
     tfa:
       - totp
+    doc: https://groups.io/helpcenter/membersmanual/1/understanding-groups-io-accounts/setting-account-preferences-and-viewing-account-information
 
   - name: Hangouts
     url: https://hangouts.google.com/
@@ -366,10 +367,13 @@ websites:
       - phone
     doc: https://telegram.org/blog/sessions-and-2-step-verification
 
-  - name: ToutApp
-    url: https://www1.toutapp.com/
-    facebook: toutapp
-    img: toutapp.png
+  - name: Textlocal
+    url: https://textlocal.com
+    img: textlocal.png
+    tfa:
+      - sms
+      - totp
+    doc: https://www.textlocal.com/support/knowledge-base/two-factor-authentication/
 
   - name: Viber
     url: https://www.viber.com

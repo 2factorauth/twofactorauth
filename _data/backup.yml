@@ -73,12 +73,6 @@ websites:
       - totp
     doc: https://www.files.com/docs/features/two-factor-auth/
 
-  - name: FileThis
-    url: https://filethis.com
-    twitter: FileThisCompany
-    img: filethis.png
-    facebook: FileThis
-
   - name: Google Drive
     url: https://drive.google.com
     img: drive.png
@@ -89,11 +83,6 @@ websites:
       - totp
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
-
-  - name: hubiC
-    url: https://hubic.com/
-    twitter: hubic
-    img: hubic.png
 
   - name: IDrive
     url: https://www.idrive.com
@@ -110,12 +99,6 @@ websites:
       - totp
     doc: https://docs.jottacloud.com/en/articles/1292931
 
-  - name: JustCloud
-    url: https://www.justcloud.com
-    twitter: JustCloudcom
-    img: justcloud.png
-    facebook: JustCloudStorage
-
   - name: Koofr
     url: https://koofr.eu
     tfa:
@@ -124,14 +107,14 @@ websites:
     doc: https://koofr.eu/help/other/how-do-i-enable-2-step-verification/
 
   - name: Mega
-    url: https://mega.nz/
+    url: https://mega.io/
     img: mega.png
     tfa:
       - totp
-    doc: https://mega.nz/help/client/webclient/security-and-privacy/5bb5436cf1b70966038b456b
+    doc: https://mega.io/blog_48
 
   - name: MultCloud
-    url: https://www.multcloud.com/home.html
+    url: https://www.multcloud.com/
     twitter: multcloud
     facebook: multcloud
     img: multcloud.png
@@ -181,10 +164,11 @@ websites:
     facebook: SpiderOak
 
   - name: SugarSync
-    twitter: SugarSync
     url: https://www.sugarsync.com/
     img: sugarsync.png
-    facebook: SugarSync
+    tfa:
+      - proprietary
+    doc: https://support.sugarsync.com/hc/en-us/articles/1260802041509
 
   - name: Sync
     url: https://www.sync.com
@@ -218,7 +202,7 @@ websites:
     img: wasabi.png
     tfa:
       - totp
-    doc: https://wasabi.com/wp-content/themes/wasabi/docs/User_Guide/index.html#t=topics%2FCONSOLE_ACCESS_for_the_Root_User.htm
+    doc: https://wasabi.com/wp-content/themes/wasabi/docs/User_Guide/topics/Creating_a_Virtual_MFA_Device.htm
 
   - name: Yandex.Disk
     url: https://disk.yandex.com
