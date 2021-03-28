@@ -374,6 +374,15 @@ websites:
       - u2f
     doc: https://docs.dsx.uk/dsx/getting-started-with-dsx/your-security-is-our-priority/enable-two-factor-authentication
 
+  - name: Gate.io
+    url: https://gate.io
+    img: gate.svg
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://www.gate.io/help/question/16445
+
   - name: Gatehub
     url: https://gatehub.net
     img: gatehub.png
@@ -437,6 +446,15 @@ websites:
     tfa:
       - totp
     doc: https://support.kuna.io/en/support/solutions/articles/17000083405
+
+  - name: LATOKEN
+    url: https://latoken.com
+    img: latoken.svg
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://latoken.zendesk.com/hc/en-us/articles/360010034040
 
   - name: Liquid
     url: https://www.liquid.com/
