@@ -361,12 +361,10 @@ websites:
     url: https://cloud.mongodb.com
     img: mongodbmms.png
     tfa:
-      - sms
-      - phone
       - totp
-      - hardware
-    doc: https://docs.cloudmanager.mongodb.com/core/two-factor-authentication/
-    exception: "Phone 2FA for US / Canada only."
+      - email
+      - proprietary
+    doc: https://docs.cloudmanager.mongodb.com/core/multi-factor-authentication/
 
   - name: New Relic
     url: https://newrelic.com
