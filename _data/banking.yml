@@ -1299,7 +1299,9 @@ websites:
     img: sofi.png
     tfa:
       - sms
-    doc: https://www.sofi.com/blog/introducing-two-step-verification-sofi-next-level-account-protection/
+      - phone
+      - email
+    doc: https://support.sofi.com/hc/en-us/articles/360043651452
 
   - name: Sparda Banken
     url: https://www.sparda.de/
