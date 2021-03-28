@@ -89,6 +89,14 @@ websites:
     doc: https://support.monday.com/hc/en-us/articles/360000787745
     exception: "Team admins must enable 2FA before members can use it."
 
+  - name: Nozbe Teams
+    url: https://nozbe.com/
+    img: nozbeteams.png
+    tfa:
+      - totp
+      - sms
+    doc: https://teams.nozbe.help/management/settings/#settings_2fa
+
   - name: Planio
     url: https://plan.io
     img: planio.png
