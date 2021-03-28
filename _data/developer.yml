@@ -355,13 +355,6 @@ websites:
       - totp
     doc: https://docs.mapbox.com/accounts/overview/settings/#security
 
-  - name: Metrological
-    url: https://www.metrological.com/
-    img: metrological.png
-    tfa:
-      - totp
-    doc: https://github.com/2factorauth/twofactorauth/pull/2273#issuecomment-271876292
-
   - name: MongoDB Cloud Manager
     url: https://cloud.mongodb.com
     img: mongodbmms.png
