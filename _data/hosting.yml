@@ -24,11 +24,12 @@ websites:
 
   - name: Acquia
     url: https://www.acquia.com
-    img: acquia.png
+    img: acquia.svg
     tfa:
       - sms
       - totp
-    doc: https://docs.acquia.com/acquia-cloud/access/signin/
+    doc: https://docs.acquia.com/cloud-platform/access/signin/
+    exception: "SMS 2FA is only available for US or Canada phone numbers."
 
   - name: ACTIVE 24
     url: https://www.active24.com/
@@ -130,10 +131,10 @@ websites:
 
   - name: Contabo
     url: https://contabo.com/
-    img: contabo.png
+    img: contabo.svg
     tfa:
       - totp
-    doc: https://contabo.com/?show=faq#100
+    doc: https://contabo.com/en/customer-support/faq/#2fa-questions
 
   - name: cyon
     url: https://www.cyon.ch
@@ -270,13 +271,6 @@ websites:
       - hardware
     doc: https://www.infomaniak.ch/en/support/faq/1940
 
-  - name: INIZ
-    url: https://iniz.com
-    img: iniz.png
-    tfa:
-      - totp
-    doc: https://my.iniz.com/knowledgebase/51
-
   - name: InMotion Hosting
     url: https://www.inmotionhosting.com/
     twitter: inmotionhosting
@@ -316,6 +310,13 @@ websites:
     tfa:
       - totp
     doc: https://www.knownhost.com/wiki/my-knownhost/two-factor
+
+  - name: Krystal
+    url: https://krystal.uk
+    img: krystal.svg
+    tfa:
+      - totp
+    doc: https://help.krystal.uk/getting-started/how-do-i-setup-two-factor-authentication-2-fa-on-my-krystal-account
 
   - name: LCN.com
     url: https://www.lcn.com
