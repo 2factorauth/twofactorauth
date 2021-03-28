@@ -365,15 +365,6 @@ websites:
       - sms
     doc: https://cryptonator.zendesk.com/hc/en-us/articles/201715352
 
-  - name: DSX
-    url: https://dsx.uk/
-    img: dsx.png
-    tfa:
-      - sms
-      - totp
-      - u2f
-    doc: https://docs.dsx.uk/dsx/getting-started-with-dsx/your-security-is-our-priority/enable-two-factor-authentication
-
   - name: Gate.io
     url: https://gate.io
     img: gate.svg
