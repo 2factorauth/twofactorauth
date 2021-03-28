@@ -311,6 +311,13 @@ websites:
       - totp
     doc: https://www.knownhost.com/wiki/my-knownhost/two-factor
 
+  - name: Krystal
+    url: https://krystal.uk
+    img: krystal.svg
+    tfa:
+      - totp
+    doc: https://help.krystal.uk/getting-started/how-do-i-setup-two-factor-authentication-2-fa-on-my-krystal-account
+
   - name: LCN.com
     url: https://www.lcn.com
     img: lcn.png
