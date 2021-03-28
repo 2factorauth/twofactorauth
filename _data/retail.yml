@@ -501,8 +501,13 @@ websites:
 
   - name: Target
     url: https://www.target.com/
-    twitter: Target
     img: target.png
+    tfa:
+      - sms
+      - email
+    doc: https://security.target.com/FAQs
+    regions:
+      - us
 
   - name: Thalia
     url: https://www.thalia.de/

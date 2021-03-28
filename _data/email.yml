@@ -67,6 +67,13 @@ websites:
       - totp
     doc: https://help.hushmail.com/hc/en-us/articles/213268943
 
+  - name: ImprovMX
+    url: https://improvmx.com
+    img: improvmx.svg
+    tfa:
+      - totp
+    doc: http://help.improvmx.com/en/articles/4892466
+
   - name: Kerio Connect
     url: https://www.kerio.com/products/kerio-connect
     img: kerio.png
