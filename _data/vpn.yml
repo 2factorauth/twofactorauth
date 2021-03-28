@@ -1,16 +1,4 @@
 websites:
-  - name: AirVPN
-    url: https://airvpn.org/
-    img: airvpn.png
-    tfa:
-      - totp
-
-  - name: BolehVPN
-    url: https://www.bolehvpn.net/
-    img: bolehvpn.png
-    twitter: bolehvpn
-    email_address: support@bolehvpn.net
-
   - name: CyberGhost
     url: https://www.cyberghostvpn.com
     img: cyberghost.png
@@ -46,10 +34,9 @@ websites:
 
   - name: NordVPN
     url: https://nordvpn.com
-    img: nordvpn.png
-    twitter: NordVPN
-    facebook: NordVPN
-    email_address: support@nordvpn.com
+    img: nordvpn.svg
+    tfa:
+      - totp
 
   - name: NordVPN Teams
     url: https://nordvpnteams.com

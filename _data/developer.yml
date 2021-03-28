@@ -4,7 +4,7 @@ websites:
     img: activestate.png
     tfa:
       - totp
-    doc: https://docs.activestate.com/platform/prefs/twofactor.html
+    doc: https://docs.activestate.com/platform/user/prefs/twofactor/
 
   - name: Aha!
     url: https://www.aha.io/
@@ -13,8 +13,8 @@ websites:
       - sms
       - phone
       - proprietary
-      - hardware
-    doc: https://support.aha.io/hc/en-us/articles/360031319232-Account-settings#SSO
+      - u2f
+    doc: https://support.aha.io/hc/en-us/articles/360031319232#enable-2fa-for-your-account
 
   - name: Airbrake
     url: https://airbrake.io
@@ -28,7 +28,7 @@ websites:
     img: algolia.png
     tfa:
       - totp
-    doc: https://www.algolia.com/doc/security/best-security-practices/#two-factor-authentication-2fa
+    doc: https://www.algolia.com/doc/security/best-security-practices/#two-factor-authentication
 
   - name: AppSignal
     url: https://appsignal.com
@@ -44,13 +44,6 @@ websites:
       - totp
     doc: https://www.appveyor.com/blog/2018/11/07/2FA-implementation/
 
-  - name: aTech Media
-    url: https://atechmedia.com
-    img: atechmedia.png
-    tfa:
-      - totp
-    doc: https://www.deployhq.com/support/managing-your-account/personal-profile/two-factor-authentication
-
   - name: Atlassian Cloud
     url: https://id.atlassian.com
     img: atlassian.png
@@ -59,6 +52,13 @@ websites:
       - totp
     doc: https://confluence.atlassian.com/cloud/secure-your-account-with-two-step-verification-939505063.html
     exception: "2FA settings are service-specific."
+
+  - name: Back4App
+    url: https://back4app.com
+    img: back4app.png
+    tfa:
+      - totp
+    doc: https://www.back4app.com/docs/security/multi-factor-authentication
 
   - name: Balsamiq
     url: https://balsamiq.com
@@ -84,7 +84,8 @@ websites:
     tfa:
       - totp
       - u2f
-    doc: https://confluence.atlassian.com/x/425QLg
+    doc: https://support.atlassian.com/bitbucket-cloud/docs/enable-two-step-verification/
+    exception: "An SSH key must be associated with your account to enable 2FA."
 
   - name: Bitnami
     url: https://bitnami.com
@@ -118,7 +119,7 @@ websites:
     img: buildkite.png
     tfa:
       - totp
-    doc: https://buildkite.com/changelog/31-two-factor-authentication
+    doc: https://buildkite.com/docs/tutorials/2fa
 
   - name: BuiltWith
     url: https://builtwith.com
@@ -133,25 +134,26 @@ websites:
     facebook: Cacoocom
     twitter: cacoocom
 
-  - name: Cedexis
-    url: https://www.cedexis.com/
-    img: cedexis.png
-    twitter: Cedexis
-    facebook: Cedexis
-
   - name: Chocolatey
     url: https://chocolatey.org/
     img: chocolatey.png
     twitter: chocolateynuget
     facebook: ChocolateySoftware
 
-  - name: CM Telecom
-    url: https://www.cmtelecom.com/
+  - name: CloudBees
+    url: https://cloudbees.com
+    img: cloudbees.svg
+    tfa:
+      - totp
+    doc: https://docs.cloudbees.com/docs/cloudbees-feature-management/latest/security/two-factor-authentication
+
+  - name: CM
+    url: https://www.cm.com/
     img: cmtelecom.png
     tfa:
       - sms
       - proprietary
-    doc: https://help.cmtelecom.com/en/account-wallet/account/how-do-i-enable-two-factor-authentication-2fa
+    doc: https://www.cm.com/help/570/
 
   - name: Code Climate
     url: https://codeclimate.com
@@ -167,13 +169,6 @@ websites:
     tfa:
       - sms
     doc: https://docs.codeanywhere.com/#two-factor-authentication
-
-  - name: Codeship
-    url: https://codeship.com/
-    img: codeship.png
-    tfa:
-      - totp
-    doc: https://documentation.codeship.com/general/about/2fa/
 
   - name: Compose
     url: https://www.compose.com/
@@ -213,7 +208,7 @@ websites:
     img: docker.png
     tfa:
       - totp
-    doc: https://www.docker.com/blog/designing-docker-hub-2fa/
+    doc: https://docs.docker.com/docker-hub/2fa/
 
   - name: Domino Data Lab
     url: https://www.dominodatalab.com/
@@ -307,7 +302,8 @@ websites:
     img: infobip.png
     tfa:
       - sms
-    doc: https://www.infobip.com/messaging/enterprise/2_factor_authentication/
+      - phone
+    doc: https://www.infobip.com/news/increased-portal-account-security-with-2-factor-authentication
 
   - name: InVision
     url: https://www.invisionapp.com
@@ -333,13 +329,6 @@ websites:
     doc: https://www.jetbrains.com/help/hub/2fa-with-token.html
     exception: "U2F only available for Hub account (e.g. YouTrack). Limited to one software token OR one hardware token."
 
-  - name: Koding
-    url: https://koding.com
-    img: koding.png
-    tfa:
-      - totp
-    doc: https://www.koding.com/blog/2015/06/two-factor-authentication/
-
   - name: Launchpad
     url: https://launchpad.net
     img: launchpad.png
@@ -360,25 +349,16 @@ websites:
     img: mapbox.png
     tfa:
       - totp
-    doc: https://docs.mapbox.com/accounts/overview/settings/#security
-
-  - name: Metrological
-    url: https://www.metrological.com/
-    img: metrological.png
-    tfa:
-      - totp
-    doc: https://github.com/2factorauth/twofactorauth/pull/2273#issuecomment-271876292
+    doc: https://docs.mapbox.com/accounts/guides/settings/#two-factor-authentication
 
   - name: MongoDB Cloud Manager
     url: https://cloud.mongodb.com
     img: mongodbmms.png
     tfa:
-      - sms
-      - phone
       - totp
-      - hardware
-    doc: https://docs.cloudmanager.mongodb.com/core/two-factor-authentication/
-    exception: "Phone 2FA for US / Canada only."
+      - email
+      - proprietary
+    doc: https://docs.cloudmanager.mongodb.com/core/multi-factor-authentication/
 
   - name: New Relic
     url: https://newrelic.com
@@ -429,12 +409,6 @@ websites:
     twitter: papertrailapp
     img: papertrail.png
 
-  - name: Phacility
-    url: https://phacility.com/
-    img: phacility.png
-    tfa:
-      - totp
-
   - name: Pingdom
     url: https://www.pingdom.com
     img: pingdom.png
@@ -451,9 +425,10 @@ websites:
 
   - name: Plivo
     url: https://www.plivo.com
-    twitter: plivo
-    facebook: Plivo
     img: plivo.png
+    tfa:
+      - sms
+    doc: https://www.plivo.com/blog/two-factor-authentication-for-plivo-console/
 
   - name: ProfitWell
     url: https://profitwell.com
@@ -490,7 +465,7 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://raygun.com/docs/workflow/two-factor-authentication
+    doc: https://raygun.com/documentation/privacy-security/two-factor-auth/
 
   - name: RBCommons
     url: https://rbcommons.com
@@ -567,7 +542,7 @@ websites:
     img: sourceforge.png
     tfa:
       - totp
-    doc: https://sourceforge.net/blog/introducing-multifactor-authentication-on-sourceforge/
+    doc: https://sourceforge.net/p/forge/documentation/Multifactor%20Authentication/
 
   - name: Status.io
     url: https://status.io/
@@ -645,8 +620,8 @@ websites:
     doc: https://blog.uptimerobot.com/introducing-two-factor-authentication-2fa/
 
   - name: Visual Studio Codespaces
-    url: https://www.visualstudio.com/
-    img: visualstudio.png
+    url: https://visualstudio.microsoft.com/
+    img: visualstudio.svg
     tfa:
       - sms
       - email
