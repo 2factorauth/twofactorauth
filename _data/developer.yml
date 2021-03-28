@@ -333,13 +333,6 @@ websites:
     doc: https://www.jetbrains.com/help/hub/2fa-with-token.html
     exception: "U2F only available for Hub account (e.g. YouTrack). Limited to one software token OR one hardware token."
 
-  - name: Koding
-    url: https://koding.com
-    img: koding.png
-    tfa:
-      - totp
-    doc: https://www.koding.com/blog/2015/06/two-factor-authentication/
-
   - name: Launchpad
     url: https://launchpad.net
     img: launchpad.png
