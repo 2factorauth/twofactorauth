@@ -181,10 +181,11 @@ websites:
     facebook: SpiderOak
 
   - name: SugarSync
-    twitter: SugarSync
     url: https://www.sugarsync.com/
     img: sugarsync.png
-    facebook: SugarSync
+    tfa:
+      - proprietary
+    doc: https://support.sugarsync.com/hc/en-us/articles/1260802041509
 
   - name: Sync
     url: https://www.sync.com
