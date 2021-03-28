@@ -65,6 +65,13 @@ websites:
       - totp
     doc: https://help.cloze.com/knowledge_base/topics/how-do-i-enable-2-step-authentication
 
+  - name: Coda
+    url: https://coda.io
+    img: coda.svg
+    tfa:
+      - totp
+    doc: https://help.coda.io/en/articles/3833338
+
   - name: Customer.io
     url: https://customer.io
     img: customerio.png
