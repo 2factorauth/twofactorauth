@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 for file in api/v*/*.json; do
 echo "$file.sig"
