@@ -227,6 +227,5 @@ websites:
     img: vultr.png
     tfa:
       - totp
-      - hardware
+      - u2f
     doc: https://www.vultr.com/docs/using-two-factor-authentication-to-login-to-vultr-control-panel
-    exception: "Hardware 2FA only supports YubiKeys with Yubico OTP credentials."
