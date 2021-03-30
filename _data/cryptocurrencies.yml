@@ -476,6 +476,13 @@ websites:
       - email
       - totp
 
+  - name: LocalMonero
+    url: https://localmonero.co
+    img: localmonero.png
+    tfa:
+      - totp
+    doc: https://localmonero.co/guides/2fa
+
   - name: Luno
     url: https://www.luno.com/
     img: luno.png
