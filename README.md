@@ -8,7 +8,7 @@
 A list of popular sites and whether or not they accept two factor auth.
 
 ## The Goal
-
+ 
 The goal of this project is to build a website ([2fa.directory](https://2fa.directory)) with a list of popular sites that support
 Two Factor Authentication, as well as the methods that they provide.
 
