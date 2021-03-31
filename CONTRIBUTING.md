@@ -3,26 +3,28 @@
 All the data is managed through a series of [Yaml][yaml] files so it may be
 useful to read up on the Yaml syntax.
 
-To add a new site, go to the [data files](_data/) and get familiar with how it
+To add a new site, go to the [data files][data] and get familiar with how it
 is set up. There is a section and corresponding file for each category. Site icons
 are stored in folders corresponding to each of those categories in their own
-[folder](img/).
+[folder][img].
 
 ## Guidelines
 
 1. **Don't break the build**: We have a simple continuous integration system
-   setup with [Travis][travis]. If your pull request doesn't pass, it won't be
-   merged. Travis will only check your changes after you submit a pull request.
+   setup with Github Actions. If your pull request doesn't pass, it won't be
+   merged. GH Actions will only check your changes after you submit a pull request.
    If you want to test locally, instructions are listed below. Keep reading!
-2. **Use a Nice Icon**: The icon must have a resolution of 32x32. PNG is the
-   preferred format. If possible, please also run the image through an optimizing
+2. **Use a Nice Icon**: SVG is the preferred format. If possible, please also run the image 
+   through an optimizing utility such as [svgo][svgo] to reduce the file size.
+   If an SVG icon is not available, the icon should be a PNG with a resolution of 32x32.
+   If possible, please also run the image through an optimizing
    utility such as [TinyPNG][tinypng] before committing it to the repo and keep
    the file to be under 2.5 kB.
 3. **HTTPS links**: All sites that support HTTPS should also be linked with an
    HTTPS address.
 4. **Alexa top 200K**: A new site that is not already listed has to be within the
    Alexa top 200,000 ranking. You can check the ranking of a site [here][alexa].
-5. **No 2FA providers**: We do not list 2FA providers, such as [Authy](https://authy.com/), [Duo](https://duo.com/) or [Google Authenticator](https://github.com/google/google-authenticator).
+5. **No 2FA providers**: We do not list 2FA providers, such as [Authy][authy], [Duo][duo] or [Google Authenticator][googleauthenticator].
 6. **Be Awesome**: You need to be awesome. That is all.
 
 ## Running Locally
@@ -47,7 +49,7 @@ locally which will check all links and images with:
 $ bundle exec rake
 ```
 
-However, this can take a while as there are roughly 900 links that it checks.
+However, this can take a while as there are over 1000 links that it checks.
 If you just wish to test your YAML changes, you can run:
 
 ```bash
@@ -88,7 +90,7 @@ View the complete list in the [EXCLUSION.md file][exclude].
 
 ## New Categories
 
-To add a new category, modify the `sections` value in [sections.yml](_data/sections.yml)
+To add a new category, modify the `sections` value in [sections.yml][sections]
 and follow the template below:
 
 ```YAML
@@ -97,7 +99,7 @@ and follow the template below:
   icon: icon-class
 ```
 
-The `icon-class` value needs to be chosen from [Semantic-Ui][semantic-ui].
+The `icon-class` value needs to be chosen from [Font Awesome][font-awesome].
 
 Then create a new file in the `_data` directory with the same name as your section's
 id, using the `.yml` extension.
@@ -105,7 +107,7 @@ id, using the `.yml` extension.
 ## New Sites
 
 First and foremost, make sure the new site meets our [definition
-requirements](#a-note-on-definitions) of Two Factor Auth.
+requirements][definitions] of Two Factor Auth.
 
 If you are adding multiple sites to the TwoFactorAuth list, please create a new
 git branch for each website, and submit a separate pull request for each branch.
@@ -120,7 +122,7 @@ already be defined; simply add a new website to it as shown in the following exa
 websites:
   - name: Site Name
     url: https://www.site.com/
-    img: site.png
+    img: site.svg
     tfa:
       - sms
       - email
@@ -146,7 +148,7 @@ The following is an example of a website that _supports_ TFA:
 ```YAML
   - name: YouTube
     url: https://www.youtube.com/
-    img: youtube.png
+    img: youtube.svg
     tfa:
       - sms
       - email
@@ -172,30 +174,47 @@ The following is an example of a website that _does not_ support TFA:
       twitter: Netflixhelps
       facebook: netflix
       email_address: example@netflix.com (Only if available and monitored)
-      img: netflix.png
+      img: netflix.svg
       lang: <ISO 639-1 language code> (Only for non-English websites)
 ```
 
-The `lang` field is only used for non-English websites. The language codes should be lowercase [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) codes.
+The `lang` field is only used for non-English websites. The language codes should be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
 
 ### Exceptions & Restrictions
 
-If a site is only available in certain countries or requires the user to do something out of the ordinary to set up 2FA, you can note this on the
+If a site requires the user to do something out of the ordinary to set up 2FA or if 2FA is only available in sepcfic countries, you can note this on the
 website.
 
 ```YAML
  - name: Site Name
    url: https://www.site.com/
-   img: site.png
+   img: site.svg
    tfa:
      - sms
    exception: "Specific text goes here."
    doc: <link to site TFA documentation>
 ```
 
+### Adding a site that is only available in specific regions
+
+If a site (with or without 2FA) is only available in certain countries - for example a government site - you can note this with the `regions` field.
+
+```YAML
+ - name: Site Name
+   url: https://www.site.com/
+   img: site.svg
+   tfa:
+     - totp
+   doc: <link to site TFA documentation>
+   regions:
+     - <ISO 3166-1 country code>
+```
+
+The country codes should be lowercase [ISO 3166-1][iso-country-wikipedia] codes.
+
 ### Pro Tips
 
-- See Guideline #2 about icons. The png file should go in the corresponding
+- See Guideline #2 about icons. The SVG file should go in the corresponding
   `img/section` folder.
 
 - For the sake of organization and readability, it is appreciated if you insert
@@ -221,15 +240,24 @@ sensitive action would not be considered Two Factor Authentication.
 
 For context, check out the discussion in issue [#242][242].
 
-[242]: https://github.com/2factorauth/twofactorauth/issues/242
-[exclude]: /EXCLUSION.md
+[yaml]: https://yaml.org/
+[data]: _data/
+[img]: img/
+[svgo]: https://github.com/svg/svgo
+[tinypng]: https://tinypng.com/
+[alexa]: https://www.alexa.com/siteinfo
+[authy]: https://authy.com/
+[duo]: https://duo.com/
+[googleauthenticator]: https://github.com/google/google-authenticator
+[jekyll]: https://jekyllrb.com/
 [bundler]: https://bundler.io/
 [gemfile]: /Gemfile
-[jekyll]: https://jekyllrb.com/
-[travis]: https://travis-ci.org/2factorauth/twofactorauth
-[yaml]: https://yaml.org/
-[alexa]: https://www.alexa.com/siteinfo
+[exclude]: /EXCLUSION.md
+[sections]: _data/sections.yml
+[font-awesome]: https://fontawesome.com/icons?d=gallery&p=2&m=free
+[definitions]: #a-note-on-definitions
 [github-tutorial]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
 [do-tutorial]: https://www.digitalocean.com/community/tutorials/how-to-use-git-branches
-[tinypng]: https://tinypng.com/
-[semantic-ui]: https://semantic-ui.com/elements/icon.html
+[iso-lang-wikipedia]: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+[iso-country-wikipedia]: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
+[242]: https://github.com/2factorauth/twofactorauth/issues/242
