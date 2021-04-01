@@ -338,6 +338,13 @@ websites:
     email_address: support@help.instapaper.com
     img: instapaper.png
 
+  - name: Iterable
+    url: https://iterable.com/
+    img: iterable.svg
+    tfa:
+      - totp
+    doc: https://support.iterable.com/hc/en-us/articles/115004821703
+
   - name: Jitbit Helpdesk
     url: https://www.jitbit.com/hosted-helpdesk/
     img: jitbit.png
