@@ -99,6 +99,13 @@ websites:
       - hardware
     doc: https://dmarcian.com/secure-dmarcian-2fa/
 
+  - name: DNSFilter
+    url: https://www.dnsfilter.com/
+    img: dnsfilter.svg
+    tfa:
+      - totp
+    doc: https://docs.dnsfilter.com/docs/two-factor-authentication
+
   - name: Dome9 Security
     url: https://dome9.com/
     img: dome9.png
