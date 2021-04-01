@@ -123,6 +123,13 @@ websites:
       - totp
     doc: https://docs.joyent.com/public-cloud/getting-started/2fa
 
+  - name: JumpCloud
+    url: https://jumpcloud.com/
+    img: jumpcloud.svg
+    tfa:
+      - totp
+    doc: https://support.jumpcloud.com/support/s/article/using-multi-factor-authentication-with-your-jumpcloud-user-account-2019-08-21-10-36-47
+
   - name: Laravel Forge
     url: https://forge.laravel.com/
     img: forge.png
