@@ -505,6 +505,14 @@ websites:
     doc: https://feedback.repairshopr.com/knowledgebase/articles/928266
     exception: "SMS only available as a backup to Google Authenticator."
 
+  - name: Replicon
+    url: https://www.replicon.com/
+    img: replicon.svg
+    tfa:
+      - totp
+      - email
+    doc: https://www.replicon.com/help/setting-up-your-multi-factor-2-step-authentication-method/
+
   - name: Ripe NCC
     url: https://www.ripe.net/
     img: ripe.png
