@@ -301,6 +301,12 @@ websites:
       - totp
     doc: https://support.coinjar.com/hc/en-us/articles/202910075
 
+  - name: CoinLoan
+    url: https://coinloan.io/
+    img: coinloan.svg
+    tfa:
+      - totp
+
   - name: CoinOne
     url: https://coinone.co.kr/
     img: coinone.png
