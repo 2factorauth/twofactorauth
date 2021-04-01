@@ -151,3 +151,11 @@ websites:
       - sms
       - totp
     doc: https://help.trello.com/article/993--
+
+  - name: Wrike
+    url: https://www.wrike.com/
+    img: wrike.svg
+    tfa:
+      - totp
+    doc: https://help.wrike.com/hc/en-us/articles/210324445
+    exception: "Users with Enterprise accounts may need to contact their account administrator to enable 2FA."
