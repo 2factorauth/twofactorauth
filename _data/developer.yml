@@ -329,6 +329,13 @@ websites:
     doc: https://www.jetbrains.com/help/hub/2fa-with-token.html
     exception: "U2F only available for Hub account (e.g. YouTrack). Limited to one software token OR one hardware token."
 
+  - name: LaunchDarkly
+    url: https://launchdarkly.com/
+    img: launchdarkly.svg
+    tfa:
+      - totp
+    doc: https://docs.launchdarkly.com/home/account-security/mfa
+
   - name: Launchpad
     url: https://launchpad.net
     img: launchpad.png
