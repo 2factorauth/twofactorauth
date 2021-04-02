@@ -185,12 +185,6 @@ websites:
       - totp
     doc: https://help.compose.com/docs/two-factor-authentication
 
-  - name: Cookiebot
-    url: https://www.cookiebot.com/
-    img: cookiebot.png
-    twitter: CybotCorp
-    facebook: cybotcorp
-
   - name: Contentstack
     url: https://www.contentstack.com/
     img: contentstack.svg
@@ -198,6 +192,12 @@ websites:
       - totp
       - sms
     doc: https://www.contentstack.com/docs/developers/two-factor-authentication/
+
+  - name: Cookiebot
+    url: https://www.cookiebot.com/
+    img: cookiebot.png
+    twitter: CybotCorp
+    facebook: cybotcorp
 
   - name: Crowdin
     url: https://crowdin.com/
