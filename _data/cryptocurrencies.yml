@@ -381,6 +381,15 @@ websites:
       - totp
     doc: https://freewallet.org/blog/2fa-faq
 
+  - name: Gate.io
+    url: https://gate.io
+    img: gate.svg
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://www.gate.io/help/question/16445
+
   - name: Gatehub
     url: https://gatehub.net
     img: gatehub.png
