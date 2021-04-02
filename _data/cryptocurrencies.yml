@@ -374,6 +374,13 @@ websites:
       - u2f
     doc: https://docs.dsx.uk/dsx/getting-started-with-dsx/your-security-is-our-priority/enable-two-factor-authentication
 
+  - name: Freewallet
+    url: https://freewallet.org/
+    img: freewallet.svg
+    tfa:
+      - totp
+    doc: https://freewallet.org/blog/2fa-faq
+
   - name: Gatehub
     url: https://gatehub.net
     img: gatehub.png
