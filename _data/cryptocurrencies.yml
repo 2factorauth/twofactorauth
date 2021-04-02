@@ -575,6 +575,7 @@ websites:
     tfa:
       - totp
     doc: https://wirexapp.com/hc/articles/207160259
+    exception: "2FA setup requires email confirmation."
 
   - name: Xapo
     url: https://xapo.com
