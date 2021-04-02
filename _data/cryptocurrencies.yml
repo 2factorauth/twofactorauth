@@ -293,6 +293,13 @@ websites:
     doc: https://help.coinify.com/hc/en-us/articles/360014173320
     exception: "2FA is only available for merchant accounts. myCoinify trading accounts do not support 2FA."
 
+  - name: Coinigy
+    url: https://www.coinigy.com/
+    img: coinigy.png
+    tfa:
+      - totp
+    doc: https://support.coinigy.com/hc/en-us/articles/360001134694
+
   - name: Coinjar
     url: https://coinjar.com
     img: coinjar.png
