@@ -497,6 +497,13 @@ websites:
       - totp
     doc: https://segment.com/docs/iam/mfa/
 
+  - name: ServerPilot
+    url: https://serverpilot.io/
+    img: serverpilot.svg
+    tfa:
+      - totp
+    doc: https://serverpilot.io/docs/how-to-enable-two-factor-authentication/
+
   - name: Site5
     url: https://www.site5.com/
     twitter: site5
