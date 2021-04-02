@@ -56,6 +56,14 @@ websites:
     url: https://www.deviantart.com
     twitter: DeviantArt
     img: deviantart.png
+    
+  - name: Discord
+    url: https://discord.com/
+    img: discord.png
+    tfa:
+      - totp
+    doc: https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication/
+    
 
   - name: eclincher
     url: https://eclincher.com
@@ -359,3 +367,4 @@ websites:
     tfa:
       - sms
     doc: https://zocle.com/knowledgebase/enabling-two-step-verification/
+    
