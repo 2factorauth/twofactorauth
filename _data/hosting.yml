@@ -222,6 +222,14 @@ websites:
       - totp
     doc: https://www.hostens.com/knowledgebase/how-to-enhance-account-security/
 
+  - name: HostMonster
+    url: https://www.hostmonster.com/
+    img: hostmonster.png
+    tfa:
+      - totp
+      - email
+    doc: https://my.hostmonster.com/cgi/help/two-factor-authentication
+
   - name: Hostpoint
     url: https://www.hostpoint.ch/
     img: hostpoint.png
