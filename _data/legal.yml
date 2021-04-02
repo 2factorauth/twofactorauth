@@ -69,3 +69,12 @@ websites:
     regions:
       - gb
       - in
+
+  - name: SignRequest
+    url: https://signrequest.com/
+    img: signrequest.png
+    tfa:
+      - totp
+      - sms
+      - phone
+    doc: https://help.signrequest.com/hc/en-us/articles/360004932594
