@@ -258,13 +258,6 @@ websites:
     doc: https://hilfe.web.de/sicherheit/2fa/index.html
     exception: "Setup requires SMS verification."
 
-  - name: Xink
-    url: https://www.xink.io/
-    img: xink.png
-    tfa:
-      - totp
-    doc: https://support.xink.io/support/solutions/articles/1000271422
-
   - name: Yahoo Japan Mail
     url: https://mail.yahoo.co.jp/
     img: yahoojapanmail.png

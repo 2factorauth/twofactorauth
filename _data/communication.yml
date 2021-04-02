@@ -397,6 +397,13 @@ websites:
     email_address: woltlab@woltlab.com
     img: woltlab.png
 
+  - name: Xink
+    url: https://www.xink.io/
+    img: xink.png
+    tfa:
+      - totp
+    doc: https://support.xink.io/support/solutions/articles/1000271422
+
   - name: Yammer
     url: https://www.yammer.com
     twitter: Yammer
