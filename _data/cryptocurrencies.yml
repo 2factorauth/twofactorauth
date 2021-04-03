@@ -406,6 +406,15 @@ websites:
       - totp
     doc: https://support.hitbtc.com/en/support/solutions/articles/63000224976
 
+  - name: Huobi
+    url: https://www.huobi.com/
+    img: huobi.svg
+    tfa:
+      - email
+      - sms
+      - totp
+    doc: https://huobiglobal.zendesk.com/hc/en-us/articles/360000191282
+
   - name: Invictus Capital
     url: https://invictuscapital.com
     img: invictuscapital.png
@@ -509,6 +518,14 @@ websites:
       - totp
       - sms
     doc: https://www.okex.com/support/hc/en-us/articles/360000350271
+
+  - name: Paxful
+    url: https://paxful.com
+    img: paxful.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://paxful.com/support/en-us/articles/360012619094
 
   - name: PayKassa
     url: https://paykassa.pro/

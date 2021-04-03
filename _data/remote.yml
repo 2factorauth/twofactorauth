@@ -52,9 +52,11 @@ websites:
 
   - name: Linksys Smart Wi-Fi
     url: https://www.linksyssmartwifi.com
-    twitter: LinksysCares
-    facebook: linksys
     img: linksyssmartwifi.png
+    tfa:
+      - email
+      - sms
+    doc: https://www.linksys.com/us/support-article?articleNum=317753
 
   - name: LogMeIn
     url: https://www.logmein.com/
