@@ -84,9 +84,9 @@ websites:
       - totp
     doc: https://my.bluehost.com/cgi/help/two-factor-authentication
 
-  - name: BunnyCDN
-    url: https://bunnycdn.com
-    img: bunnycdn.png
+  - name: bunny.net
+    url: https://bunny.net/
+    img: bunny.svg
     tfa:
       - totp
 
@@ -310,6 +310,13 @@ websites:
     tfa:
       - totp
     doc: https://www.knownhost.com/wiki/my-knownhost/two-factor
+
+  - name: Krystal
+    url: https://krystal.uk
+    img: krystal.svg
+    tfa:
+      - totp
+    doc: https://help.krystal.uk/getting-started/how-do-i-setup-two-factor-authentication-2-fa-on-my-krystal-account
 
   - name: LCN.com
     url: https://www.lcn.com

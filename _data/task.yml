@@ -41,10 +41,12 @@ websites:
 
   - name: ClickUp
     url: https://clickup.com
-    img: clickup.png
+    img: clickup.svg
     tfa:
       - sms
-    doc: https://docs.clickup.com/general/two-factor-authentication
+      - totp
+    doc: https://docs.clickup.com/en/articles/2601429
+    exception: "SMS only available on Business and Enterprise price plans."
 
   - name: Clubhouse
     url: https://clubhouse.io
@@ -86,6 +88,14 @@ websites:
       - sms
     doc: https://support.monday.com/hc/en-us/articles/360000787745
     exception: "Team admins must enable 2FA before members can use it."
+
+  - name: Nozbe Teams
+    url: https://nozbe.com/
+    img: nozbeteams.png
+    tfa:
+      - totp
+      - sms
+    doc: https://teams.nozbe.help/management/settings/#settings_2fa
 
   - name: Planio
     url: https://plan.io
