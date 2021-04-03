@@ -548,6 +548,14 @@ websites:
       - totp
     doc: https://support.poloniex.circle.com/hc/en-us/articles/360025399352
 
+  - name: Quidax
+    url: https://quidax.com/
+    img: quidax.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://support.quidax.com/hc/en-us/articles/360016734491
+
   - name: Remitano
     url: https://remitano.com/
     img: remitano.png
