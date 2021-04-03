@@ -1,4 +1,12 @@
 websites:
+  - name: 2Checkout
+    url: https://www.2checkout.com
+    img: 2checkout.png
+    tfa:
+      - totp
+      - email
+    doc: https://knowledgecenter.2checkout.com/Onboarding/Activate-and-set-up-your-2Checkout-account/Two-factor-authentication
+
   - name: Adobe ID
     url: https://adobe.com/
     img: adobe.png
@@ -6,6 +14,7 @@ websites:
       - sms
       - email
       - totp
+      - proprietary
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
   - name: Ancestry
@@ -73,8 +82,8 @@ websites:
     img: canva.png
     tfa:
       - sms
-    doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
-    exception: "2FA only available for Australian customers."
+    doc: https://www.canva.com/help/article/login-verification
+    exception: "2FA only available to users from Australia, Philippines, UK, and USA."
     
   - name: CharlieHR
     url: https://charliehr.com/
@@ -151,6 +160,17 @@ websites:
     img: dreamstime.png
     twitter: Dreamstime
 
+  - name: Egnyte
+    url: https://www.egnyte.com/
+    img: egnyte.png
+    tfa:
+      - totp
+      - proprietary
+      - sms
+      - phone
+    doc: https://helpdesk.egnyte.com/hc/en-us/articles/360028032991
+    exception: "Availability of 2FA options depends on your account type."
+
   - name: Envato
     url: https://envato.com
     img: envato.png
@@ -198,7 +218,8 @@ websites:
     tfa:
       - sms
       - email
-    doc: https://sellers.fiverr.com/en/article/two-factor-authentication
+      - proprietary
+    doc: https://www.fiverr.com/support/articles/360010239658
 
   - name: Formstack
     url: https://www.formstack.com/
@@ -381,6 +402,13 @@ websites:
     twitter: Monster
     facebook: monster
 
+  - name: Moqups
+    url: https://moqups.com
+    img: moqups.svg
+    tfa:
+      - totp
+    doc: https://support.moqups.com/hc/en-us/articles/360019781980#account_2FA
+
   - name: NationBuilder
     url: https://nationbuilder.com
     img: nationbuilder.png
@@ -505,12 +533,33 @@ websites:
       - hardware
     doc: https://wiki.smartsimple.com/wiki/Two-Factor_Authentication
 
+  - name: Sonix
+    url: https://sonix.ai
+    img: sonix.svg
+    tfa:
+      - totp
+    doc: https://help.sonix.ai/en/articles/4188823
+
   - name: Spare5
     url: https://app.spare5.com/fives
     img: spare5.png
     twitter: spare5
     facebook: spare5app
     email_address: feedback@spare5.com
+
+  - name: ThriveCart
+    url: https://www.thrivecart.com
+    img: thrivecart.svg
+    tfa:
+      - totp
+    doc: https://support.thrivecart.com/help/where-do-i-get-my-6-digit-access-code-2-factor-authentication
+
+  - name: Tito
+    url: https://ti.to
+    img: tito.svg
+    tfa:
+      - totp
+    doc: https://ti.to/docs/two_factor_authentication
 
   - name: TurboSquid
     url: https://www.turbosquid.com

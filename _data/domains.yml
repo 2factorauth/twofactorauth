@@ -49,8 +49,10 @@ websites:
   - name: Crazy Domains
     url: https://www.crazydomains.com
     img: crazydomains.png
-    twitter: CrazyDomains
-    facebook: crazydomains
+    tfa:
+      - sms
+      - phone
+    doc: https://www.crazydomains.co.uk/help/how-to-enable-or-disable-two-step-verification-system/
 
   - name: Directnic
     url: https://directnic.com
@@ -298,7 +300,7 @@ websites:
     url: https://metaname.net/
     img: metaname.png
     tfa:
-      - sms
+      - totp
     doc: https://metaname.net/public/two_factor_authentication
 
   - name: Moniker
