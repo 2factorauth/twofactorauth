@@ -199,6 +199,14 @@ websites:
       - totp
     doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
 
+  - name: Serverspace
+    url: https://serverspace.io/
+    img: serverspace.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://serverspace.io/support/help/how-to-install-and-use-the-google-authenticator-application/
+
   - name: Tilaa
     url: https://www.tilaa.com
     img: tilaa.png
