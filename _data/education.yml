@@ -471,6 +471,15 @@ websites:
     twitter: quizlet
     facebook: quizlet
 
+  - name: RedShelf
+    url: https://www.redshelf.com/
+    img: redshelf.svg
+    tfa:
+      - totp
+    doc: https://solve.redshelf.com/hc/en-us/articles/1260802590609
+    regions:
+      - us
+
   - name: Robert Morris University
     url: https://sentry.rmu.edu/login
     twitter: RMU

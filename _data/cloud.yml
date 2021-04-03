@@ -28,7 +28,8 @@ websites:
     img: cloud66.png
     tfa:
       - totp
-    doc: https://blog.cloud66.com/two-factor-authentication-for-your-accounts/
+      - u2f
+    doc: https://help.cloud66.com/node/account/two-factor-authentication.html
 
   - name: cloud.ca
     url: https://cloud.ca
@@ -57,7 +58,7 @@ websites:
     img: engineyard.png
     tfa:
       - totp
-    doc: https://support.cloud.engineyard.com/hc/en-us/community/posts/203752678
+    doc: https://blog.engineyard.com/engine-yards-two-factor-authentication
     exception: "To enable 2FA on Engine Yard, contact support."
 
   - name: Equinix Metal
@@ -134,6 +135,7 @@ websites:
     img: forge.png
     tfa:
       - totp
+    doc: https://forge.laravel.com/docs/1.0/accounts/your-account.html#securing-your-account-with-two-factor-authentication
 
   - name: Leaseweb
     url: https://www.leaseweb.com/
@@ -155,7 +157,7 @@ websites:
     img: macstadium.png
     tfa:
       - totp
-    doc: https://help.macstadium.com/articles/macstadium-two-factor-authentication-guide
+    doc: https://docs.macstadium.com/docs/two-factor-authentication
 
   - name: Microsoft Azure
     url: https://azure.microsoft.com/
@@ -195,7 +197,7 @@ websites:
     img: scaleway.png
     tfa:
       - totp
-    doc: https://blog.scaleway.com/2017/introducing-two-factor-authentication-on-scaleway/
+    doc: https://www.scaleway.com/en/docs/how-to-activate-two-factor-authentication/
 
   - name: Scalr
     url: https://www.scalr.com
