@@ -17,15 +17,6 @@ websites:
       - proprietary
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
-  - name: Alchemer
-    url: https://www.alchemer.com/
-    img: alchemer.svg
-    tfa:
-      - totp
-      - sms
-    doc: https://help.alchemer.com/help/multi-factor-authentication#user
-    exception: "SMS 2FA is only available for Enterprise accounts with an SMS 2FA provision."
-
   - name: Ancestry
     url: https://www.ancestry.com
     img: ancestry.png
