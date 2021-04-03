@@ -293,6 +293,13 @@ websites:
       - totp
     doc: https://docs.heap.io/docs/2fa
 
+  - name: Hevo Data
+    url: https://www.hevodata.com
+    img: hevodata.svg
+    tfa:
+      - totp
+    doc: https://docs.hevodata.com/account-management/personal-settings/two-factor-authentication/
+
   - name: Hotjar
     url: https://hotjar.com/
     img: hotjar.png
