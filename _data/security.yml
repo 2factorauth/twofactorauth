@@ -202,6 +202,7 @@ websites:
       - u2f
       - phone
     doc: https://support.perimeter81.com/docs/two-factor-authentication
+    exception: "2FA is only available for users on Premium and Enterprise plans."
 
   - name: Prey
     url: https://www.preyproject.com
