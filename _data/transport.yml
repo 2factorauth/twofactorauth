@@ -10,9 +10,13 @@ websites:
 
   - name: Air Canada
     url: https://www.aircanada.com/
-    twitter: AirCanada
-    facebook: aircanada
-    img: aircanada.png
+    img: aircanada.svg
+    tfa:
+      - email
+      - sms
+    doc: https://www.aircanada.com/ca/en/aco/home/customer-profile/frequently-asked-questions.html
+    regions:
+      - ca
 
   - name: Air France
     url: https://www.airfrance.com
