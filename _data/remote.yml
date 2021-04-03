@@ -12,6 +12,14 @@ websites:
       - totp
     doc: https://support.anydesk.com/Two-Factor_Authentication
 
+  - name: Atera
+    url: https://www.atera.com/
+    img: atera.svg
+    tfa:
+      - totp
+    doc: https://support.atera.com/hc/en-us/articles/360022522253
+    exception: "2FA must be enabled by an admin before use."
+
   - name: ConnectWise Control (ScreenConnect)
     url: https://www.connectwise.com/software/control
     img: connectwisecontrol.png
