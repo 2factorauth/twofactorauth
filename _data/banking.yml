@@ -955,7 +955,7 @@ websites:
     tfa:
       - sms
       - proprietary
-    doc: https://support.n26.com/en-gb/getting-started/psd2/how-to-log-in-with-two-factor-authentication
+    doc: https://support.n26.com/en-eu/security/passwords-and-codes/how-to-log-in-with-two-factor-authentication
 
   - name: NASA Federal Credit Union
     url: https://www.nasafcu.com/
@@ -1299,7 +1299,9 @@ websites:
     img: sofi.png
     tfa:
       - sms
-    doc: https://www.sofi.com/blog/introducing-two-step-verification-sofi-next-level-account-protection/
+      - phone
+      - email
+    doc: https://support.sofi.com/hc/en-us/articles/360043651452
 
   - name: Sparda Banken
     url: https://www.sparda.de/

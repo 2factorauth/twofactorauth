@@ -14,6 +14,7 @@ websites:
       - sms
       - email
       - totp
+      - proprietary
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
   - name: Ancestry
@@ -81,8 +82,8 @@ websites:
     img: canva.png
     tfa:
       - sms
-    doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
-    exception: "2FA only available for Australian customers."
+    doc: https://www.canva.com/help/article/login-verification
+    exception: "2FA only available to users from Australia, Philippines, UK, and USA."
     
   - name: CharlieHR
     url: https://charliehr.com/
@@ -217,7 +218,8 @@ websites:
     tfa:
       - sms
       - email
-    doc: https://sellers.fiverr.com/en/article/two-factor-authentication
+      - proprietary
+    doc: https://www.fiverr.com/support/articles/360010239658
 
   - name: Formstack
     url: https://www.formstack.com/
@@ -399,6 +401,13 @@ websites:
     img: monster.png
     twitter: Monster
     facebook: monster
+
+  - name: Moqups
+    url: https://moqups.com
+    img: moqups.svg
+    tfa:
+      - totp
+    doc: https://support.moqups.com/hc/en-us/articles/360019781980#account_2FA
 
   - name: NationBuilder
     url: https://nationbuilder.com
