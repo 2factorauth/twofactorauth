@@ -358,6 +358,13 @@ websites:
       - totp
     doc: https://docs.mapbox.com/accounts/guides/settings/#two-factor-authentication
 
+  - name: Matomo Cloud
+    url: https://matomo.org/matomo-cloud/
+    img: matomo.png
+    tfa:
+      - totp
+    doc: https://matomo.org/faq/general/faq_27245/
+
   - name: MongoDB Cloud Manager
     url: https://cloud.mongodb.com
     img: mongodbmms.png
