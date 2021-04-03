@@ -525,6 +525,13 @@ websites:
     twitter: signnow
     facebook: esignaturesignnow
 
+  - name: Sisense Cloud Data Teams
+    url: https://www.sisense.com
+    img: sisense.svg
+    tfa:
+      - totp
+    doc: https://dtdocs.sisense.com/article/two-factor
+
   - name: SmartSimple
     url: https://www.smartsimple.com
     img: smartsimple.png
