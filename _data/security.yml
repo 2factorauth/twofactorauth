@@ -73,9 +73,9 @@ websites:
   - name: Detectify
     url: https://detectify.com/
     img: detectify.png
-    twitter: detectify
-    facebook: detectify
-    email_address: hello@detectify.com
+    tfa:
+      - totp
+    doc: https://support.detectify.com/support/solutions/articles/48001061904
 
   - name: DigiCert
     url: https://www.digicert.com/
