@@ -182,7 +182,7 @@ The `lang` field is only used for non-English websites. The language codes shoul
 
 ### Exceptions & Restrictions
 
-If a site requires the user to do something out of the ordinary to set up 2FA or if 2FA is only available in sepcfic countries, you can note this on the
+If a site requires the user to do something out of the ordinary to set up 2FA or if 2FA is only available in specfic countries, you can note this on the
 website.
 
 ```YAML
