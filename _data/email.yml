@@ -36,8 +36,11 @@ websites:
 
   - name: GMX.com
     url: https://www.gmx.com/
-    twitter: gmxmail
     img: gmx.png
+    tfa:
+      - totp
+    doc: https://support.gmx.com/security/2fa/setup-twofactor.html#indexlink_help_security_2fa
+    exception: "Setup requires SMS verification."
 
   - name: GMX.net
     url: https://www.gmx.net/
@@ -64,6 +67,13 @@ websites:
       - totp
     doc: https://help.hushmail.com/hc/en-us/articles/213268943
 
+  - name: ImprovMX
+    url: https://improvmx.com
+    img: improvmx.svg
+    tfa:
+      - totp
+    doc: http://help.improvmx.com/en/articles/4892466
+
   - name: Kerio Connect
     url: https://www.kerio.com/products/kerio-connect
     img: kerio.png
@@ -79,9 +89,11 @@ websites:
 
   - name: Mail.com
     url: https://www.mail.com/
-    twitter: maildotcom
-    facebook: mail.com
     img: maildotcom.png
+    tfa:
+      - totp
+    doc: https://support.mail.com/security/2fa/index.html
+    exception: "A verified phone number is required to set up 2FA."
 
   - name: mail.de
     url: https://mail.de/
@@ -178,11 +190,14 @@ websites:
 
   - name: SAPO Mail
     url: https://mail.sapo.pt
-    email_address: conteudos@mail.sapo.pt
-    img: sapo.png
-    twitter: sapo
-    facebook: sapo
-    lang: pt
+    img: sapo.svg
+    tfa:
+      - totp
+      - sms
+      - u2f
+    doc: https://ajuda.sapo.pt/id-67553
+    regions:
+      - pt
 
   - name: Seznam.cz
     url: https://seznam.cz

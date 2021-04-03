@@ -264,6 +264,13 @@ websites:
     facebook: GIAC.org
     email_address: info@giac.org
 
+  - name: Hack The Box
+    url: https://hackthebox.eu
+    img: hackthebox.svg
+    tfa:
+      - totp
+    doc: https://help.hackthebox.eu/getting-started/v2-setting-up-your-account#General%20Settings,%20Security%20and%20Notifications-0
+
   - name: HackerRank
     url: https://www.hackerrank.com
     img: hackerrank.png
@@ -411,6 +418,13 @@ websites:
     regions:
       - us
 
+  - name: Open Science Framework (OSF)
+    url: https://osf.io
+    img: osf.png
+    tfa:
+      - totp
+    doc: https://help.osf.io/hc/en-us/articles/360019738054
+
   - name: Pennsylvania State University
     url: https://www.psu.edu/
     img: psu.png
@@ -456,6 +470,15 @@ websites:
     img: quizlet.png
     twitter: quizlet
     facebook: quizlet
+
+  - name: RedShelf
+    url: https://www.redshelf.com/
+    img: redshelf.svg
+    tfa:
+      - totp
+    doc: https://solve.redshelf.com/hc/en-us/articles/1260802590609
+    regions:
+      - us
 
   - name: Robert Morris University
     url: https://sentry.rmu.edu/login
