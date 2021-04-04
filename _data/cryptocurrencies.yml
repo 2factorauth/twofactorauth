@@ -365,14 +365,14 @@ websites:
       - sms
     doc: https://cryptonator.zendesk.com/hc/en-us/articles/201715352
 
-  - name: DSX
-    url: https://dsx.uk/
-    img: dsx.png
+  - name: Gate.io
+    url: https://gate.io
+    img: gate.svg
     tfa:
       - sms
+      - email
       - totp
-      - u2f
-    doc: https://docs.dsx.uk/dsx/getting-started-with-dsx/your-security-is-our-priority/enable-two-factor-authentication
+    doc: https://www.gate.io/help/question/16445
 
   - name: Freewallet
     url: https://freewallet.org/
@@ -413,6 +413,15 @@ websites:
       - totp
     doc: https://support.hitbtc.com/en/support/solutions/articles/63000224976
 
+  - name: Huobi
+    url: https://www.huobi.com/
+    img: huobi.svg
+    tfa:
+      - email
+      - sms
+      - totp
+    doc: https://huobiglobal.zendesk.com/hc/en-us/articles/360000191282
+
   - name: Invictus Capital
     url: https://invictuscapital.com
     img: invictuscapital.png
@@ -445,6 +454,15 @@ websites:
       - totp
     doc: https://support.kuna.io/en/support/solutions/articles/17000083405
 
+  - name: LATOKEN
+    url: https://latoken.com
+    img: latoken.svg
+    tfa:
+      - sms
+      - email
+      - totp
+    doc: https://latoken.zendesk.com/hc/en-us/articles/360010034040
+
   - name: Liquid
     url: https://www.liquid.com/
     img: liquid.png
@@ -473,6 +491,13 @@ websites:
     tfa:
       - email
       - totp
+
+  - name: LocalMonero
+    url: https://localmonero.co
+    img: localmonero.png
+    tfa:
+      - totp
+    doc: https://localmonero.co/guides/2fa
 
   - name: Luno
     url: https://www.luno.com/
@@ -508,6 +533,14 @@ websites:
       - sms
     doc: https://www.okex.com/support/hc/en-us/articles/360000350271
 
+  - name: Paxful
+    url: https://paxful.com
+    img: paxful.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://paxful.com/support/en-us/articles/360012619094
+
   - name: PayKassa
     url: https://paykassa.pro/
     img: paykassa.png
@@ -521,6 +554,14 @@ websites:
     tfa:
       - totp
     doc: https://support.poloniex.circle.com/hc/en-us/articles/360025399352
+
+  - name: Quidax
+    url: https://quidax.com/
+    img: quidax.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://support.quidax.com/hc/en-us/articles/360016734491
 
   - name: Remitano
     url: https://remitano.com/

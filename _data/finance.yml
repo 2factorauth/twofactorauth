@@ -197,6 +197,15 @@ websites:
     facebook: gerberlife
     img: gerberlife.png
 
+  - name: Guideline
+    url: https://www.guideline.com
+    img: guideline.svg
+    tfa:
+      - totp
+    doc: https://success.guideline.com/hc/articles/360034791412
+    regions:
+      - us
+
   - name: Gusto
     url: https://www.gusto.com
     img: gusto.png
@@ -296,13 +305,14 @@ websites:
     doc: https://help.metorik.com/article/22-how-can-i-enable-2fa-on-my-account
 
   - name: Mint
-    url: https://www.mint.com
-    img: mint.png
+    url: https://mint.intuit.com
+    img: mint.svg
     tfa:
       - sms
       - phone
       - totp
     doc: https://help.mint.com/Security/908045661
+    exception: "Software 2FA requires enabling SMS or phone call as a back-up."
 
   - name: money by Envestnet | Yodlee
     url: https://money.yodlee.com/
