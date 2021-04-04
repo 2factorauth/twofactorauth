@@ -126,6 +126,13 @@ websites:
     img: element.png
     twitter: element_hq
 
+  - name: EmailMeForm
+    url: https://www.emailmeform.com/
+    img: emailmeform.svg
+    tfa:
+      - totp
+    doc: https://support.emailmeform.com/hc/en-us/sections/360002042671
+
   - name: FAX.PLUS
     url: https://www.fax.plus
     img: faxplus.png
