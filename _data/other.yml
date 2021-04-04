@@ -84,7 +84,18 @@ websites:
       - sms
     doc: https://www.canva.com/help/article/login-verification
     exception: "2FA only available to users from Australia, Philippines, UK, and USA."
-    
+
+  - name: Cashrewards
+    url: https://www.cashrewards.com.au
+    img: cashrewards.svg
+    tfa:
+      - sms
+    doc: https://help.cashrewards.com.au/support/solutions/articles/1000276115
+    exception: "Enabling 2FA requires email confirmation"
+    regions:
+      - au
+      - nz
+
   - name: CharlieHR
     url: https://charliehr.com/
     img: charliehr.png

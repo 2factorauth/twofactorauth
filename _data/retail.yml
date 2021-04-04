@@ -102,17 +102,6 @@ websites:
     regions:
       - ch
 
-  - name: Cashrewards
-    url: https://www.cashrewards.com.au
-    img: cashrewards.svg
-    tfa:
-      - sms
-    doc: https://help.cashrewards.com.au/support/solutions/articles/1000276115
-    exception: "Enabling 2FA requires email confirmation"
-    regions:
-      - au
-      - nz
-
   - name: Combatant Gentlemen
     url: https://combatgent.com
     img: combatgent.png
