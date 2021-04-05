@@ -419,7 +419,8 @@ websites:
       - sms
       - phone
       - totp
-    doc: https://accounts-help.lc.intuit.com/questions/1590157
+      - email
+    doc: https://quickbooks.intuit.com/learn-support/en-us/manage-passwords/verify-your-account-with-multi-factor-authentication/00/186340
     exception: "TOTP 2FA only available after enabling SMS or phone 2FA."
 
   - name: QuickFile
