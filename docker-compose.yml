@@ -1,0 +1,9 @@
+version: '3'
+services:
+  twofactorauth:
+    build: .
+    ports:
+      - 4000:4000
+    volumes:
+      - ./:/twofactorauth/
+      - ./.git:/twofactorauth/.git
