@@ -338,6 +338,15 @@ websites:
       - totp
     doc: https://get.slack.help/hc/en-us/articles/204509068
 
+  - name: SmartSurvey
+    url: https://www.smartsurvey.co.uk
+    img: smartsurvey.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.smartsurvey.co.uk/article/two-factor-authentication
+    exception: "SMS 2FA is only available for Enterprise users."
+
   - name: SocketLabs
     url: https://socketlabs.com/
     img: socketlabs.png
