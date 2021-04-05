@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # converting PNG images
 find $1 -type f -and -iname "*.png" | while read png_path; do
     webp_path=${png_path/%.[pP][nN][gG]/.webp}
