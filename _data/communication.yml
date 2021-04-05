@@ -133,6 +133,16 @@ websites:
       - totp
     doc: https://www.fax.plus/help/articles/how-can-i-enable-disable-two-factor-authentication
 
+  - name: Firmex VDR
+    url: https://www.firmex.com/
+    img: firmex.svg
+    tfa:
+      - totp
+      - sms
+      - email
+    doc: https://support.firmex.com/hc/en-us/articles/204467648
+    exception: "2FA must be enabled by a site administrator before use."
+
   - name: Fleep
     url: https://fleep.io
     twitter: fleepio
