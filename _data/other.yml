@@ -338,6 +338,13 @@ websites:
     email_address: support@help.instapaper.com
     img: instapaper.png
 
+  - name: Integromat
+    url: https://www.integromat.com
+    img: integromat.svg
+    tfa:
+      - totp
+    doc: https://support.integromat.com/hc/en-us/articles/360017490699
+
   - name: Jitbit Helpdesk
     url: https://www.jitbit.com/hosted-helpdesk/
     img: jitbit.png
