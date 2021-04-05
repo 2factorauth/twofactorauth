@@ -389,6 +389,13 @@ websites:
       - totp
     doc: https://www.mathworks.com/mw_account/two_step_verification/frequently-asked-questions.html
 
+  - name: Memsource
+    url: https://www.memsource.com
+    img: memsource.svg
+    tfa:
+      - totp
+    doc: https://help.memsource.com/hc/en-us/articles/360014479359#two-factor-authentication-0-0
+
   - name: Mixpanel
     url: https://mixpanel.com/
     img: mixpanel.png
