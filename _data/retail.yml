@@ -499,6 +499,13 @@ websites:
     regions:
       - ch
 
+  - name: StockX
+    url: https://stockx.com
+    img: stockx.svg
+    tfa:
+      - sms
+    doc: https://help.stockx.com/s/article/What-is-Two-Step-Verification
+
   - name: Target
     url: https://www.target.com/
     img: target.png
