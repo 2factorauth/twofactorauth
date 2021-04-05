@@ -365,6 +365,13 @@ websites:
       - sms
     doc: https://cryptonator.zendesk.com/hc/en-us/articles/201715352
 
+  - name: FTX
+    url: https://ftx.com
+    img: ftx.svg
+    tfa:
+      - totp
+    doc: https://help.ftx.com/hc/en-us/articles/360033774352
+
   - name: Gate.io
     url: https://gate.io
     img: gate.svg
