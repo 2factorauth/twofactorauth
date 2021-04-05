@@ -544,6 +544,13 @@ websites:
       - u2f
     doc: https://blog.sentry.io/2016/06/22/introducing-2fa
 
+  - name: Sisense Cloud Data Teams
+    url: https://www.sisense.com
+    img: sisense.svg
+    tfa:
+      - totp
+    doc: https://dtdocs.sisense.com/article/two-factor
+
   - name: SourceForge
     url: https://sourceforge.net/
     img: sourceforge.png
