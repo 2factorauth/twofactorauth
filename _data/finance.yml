@@ -70,6 +70,14 @@ websites:
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2181#issuecomment-266315173
 
+  - name: Brex
+    url: https://www.brex.com
+    img: brex.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://support.brex.com/how-do-i-opt-in-to-two-factor-authentication/
+
   - name: Carta
     url: https://carta.com/
     img: carta.png
