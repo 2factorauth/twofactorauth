@@ -9,6 +9,13 @@ websites:
     doc: https://kb.arlo.com/000062288
     exception: "Email 2FA is always available as a backup."
 
+  - name: Canary
+    url: https://canary.is
+    img: canary.svg
+    tfa:
+      - sms
+    doc: https://help.canary.is/hc/en-us/articles/360043987254
+
   - name: ecobee
     url: https://ecobee.com
     img: ecobee.png
