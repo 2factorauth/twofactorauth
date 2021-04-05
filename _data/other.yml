@@ -190,6 +190,15 @@ websites:
     facebook: getFANDOM
     img: fandom.png
 
+  - name: Fathom
+    url: https://www.fathomhq.com/
+    img: fathom.svg
+    tfa:
+      - totp
+      - email
+      - sms
+    doc: https://support.fathomhq.com/en/articles/4483786
+
   - name: Figma
     url: https://www.figma.com/
     img: figma.png

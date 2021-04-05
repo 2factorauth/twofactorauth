@@ -156,15 +156,6 @@ websites:
       - sms
       - phone
 
-  - name: Fathom
-    url: https://www.fathomhq.com/
-    img: fathom.svg
-    tfa:
-      - totp
-      - email
-      - sms
-    doc: https://support.fathomhq.com/en/articles/4483786
-
   - name: FreeAgent
     url: https://www.freeagent.com
     img: freeagent.png
