@@ -24,6 +24,8 @@ websites:
       - email
       - totp
       - u2f
+      - hardware
+      - proprietary
     doc: https://help.bitwarden.com/article/setup-two-step-login/
     exception: "Premium account required for Duo, YubiKey and FIDO U2F."
 
