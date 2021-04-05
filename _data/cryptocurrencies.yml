@@ -485,12 +485,21 @@ websites:
       - email
       - totp
 
+  - name: LocalMonero
+    url: https://localmonero.co
+    img: localmonero.png
+    tfa:
+      - totp
+    doc: https://localmonero.co/guides/2fa
+
   - name: Luno
     url: https://www.luno.com/
     img: luno.png
     tfa:
       - totp
     doc: https://www.luno.com/help/en/articles/1000203420
+    exception: "A mobile phone number is required to set up two-factor authentication."
+
 
   - name: MaiCoin
     url: https://www.maicoin.com
@@ -540,6 +549,14 @@ websites:
     tfa:
       - totp
     doc: https://support.poloniex.circle.com/hc/en-us/articles/360025399352
+
+  - name: Quidax
+    url: https://quidax.com/
+    img: quidax.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://support.quidax.com/hc/en-us/articles/360016734491
 
   - name: Remitano
     url: https://remitano.com/
