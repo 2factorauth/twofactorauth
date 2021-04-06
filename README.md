@@ -26,7 +26,7 @@ If you would like to contribute, please read the entire guidelines here in
 In order to run the site locally, bundler, and all other dependencies will need to be installed, and afterwards Jekyll can serve
 the site.
 
-Ubuntu
+Ubuntu:
 
 ```bash
 sudo snap install ruby --classic
@@ -35,7 +35,7 @@ npm i babel-minify
 bundle install --path vendor/bundle
 ```
 
-Windows Subsystem for Linux (WSL)
+Windows Subsystem for Linux (WSL):
 
 ```bash
 sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev npm webp
@@ -43,7 +43,7 @@ npm i babel-minify
 bundle install --path vendor/bundle
 ```
 
-MacOS (_Requires Xcode_)
+MacOS (_Requires Xcode_):
 
 ```bash
 # Install homebrew
