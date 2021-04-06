@@ -580,6 +580,13 @@ websites:
       - u2f
     doc: https://help.stex.com/en/articles/3486981#individual-account-security-settings
 
+  - name: Swyftx
+    url: https://swyftx.com/
+    img: swyftx.svg
+    tfa:
+      - totp
+    doc: https://help.swyftx.com.au/en/articles/3573346
+
   - name: Uphold
     url: https://uphold.com/
     img: uphold.png
