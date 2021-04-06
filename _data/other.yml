@@ -17,6 +17,13 @@ websites:
       - proprietary
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
+  - name: ActBlue
+    url: https://secure.actblue.com
+    img: actblue.png
+    tfa:
+      - totp
+    doc: https://support.actblue.com/campaigns/the-dashboard/two-factor-authentication/
+
   - name: Ancestry
     url: https://www.ancestry.com
     img: ancestry.png
