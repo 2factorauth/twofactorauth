@@ -7,6 +7,13 @@ websites:
       - email
     doc: https://knowledgecenter.2checkout.com/Onboarding/Activate-and-set-up-your-2Checkout-account/Two-factor-authentication
 
+  - name: ActBlue
+    url: https://secure.actblue.com
+    img: actblue.png
+    tfa:
+      - totp
+    doc: https://support.actblue.com/campaigns/the-dashboard/two-factor-authentication
+
   - name: Adobe ID
     url: https://adobe.com/
     img: adobe.png
@@ -16,13 +23,6 @@ websites:
       - totp
       - proprietary
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
-
-  - name: ActBlue
-    url: https://secure.actblue.com
-    img: actblue.png
-    tfa:
-      - totp
-    doc: https://support.actblue.com/campaigns/the-dashboard/two-factor-authentication/
 
   - name: Ancestry
     url: https://www.ancestry.com
