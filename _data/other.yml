@@ -234,6 +234,7 @@ websites:
     img: frame.svg
     tfa:
       - totp
+      - sms
     doc: https://support.frame.io/en/articles/4766302
     exception: "2FA is only available for Enterprise users with mandated 2FA."
 
