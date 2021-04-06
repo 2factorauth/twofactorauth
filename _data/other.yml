@@ -229,6 +229,14 @@ websites:
       - totp
     doc: https://help.formstack.com/hc/en-us/articles/360019517891
 
+  - name: Frame
+    url: https://www.frame.io/
+    img: frame.svg
+    tfa:
+      - totp
+    doc: https://support.frame.io/en/articles/4766302
+    exception: "2FA is only available for Enterprise users with mandated 2FA."
+
   - name: Freelancer
     url: https://www.freelancer.com/
     img: freelancer.png
