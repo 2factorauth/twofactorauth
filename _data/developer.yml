@@ -51,6 +51,13 @@ websites:
       - totp
     doc: https://support.arduino.cc/hc/en-us/articles/360018131120
 
+  - name: Assembla
+    url: https://www.assembla.com
+    img: assembla.svg
+    tfa:
+      - totp
+    doc: https://articles.assembla.com/en/articles/1914077
+
   - name: Atlassian Cloud
     url: https://id.atlassian.com
     img: atlassian.png
