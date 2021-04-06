@@ -73,6 +73,14 @@ websites:
       - totp
     doc: https://help.coda.io/en/articles/3833338
 
+  - name: ConvertKit
+    url: https://convertkit.com
+    img: convertkit.svg
+    tfa:
+      - sms
+      - proprietary
+    doc: https://help.convertkit.com/en/articles/3925724
+
   - name: Customer.io
     url: https://customer.io
     img: customerio.png
