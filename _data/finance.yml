@@ -469,6 +469,13 @@ websites:
       - totp
     doc: https://www.taxact.com/support/24138/2019/how-is-a-verification-code-used?hideLayout=True
 
+  - name: TaxDome
+    url: https://taxdome.com
+    img: taxdome.svg
+    tfa:
+      - totp
+    doc: https://help.taxdome.com/article/95-two-factor-authentication
+
   - name: Techniker Krankenkasse
     url: https://www.tk.de/
     img: techniker.png
