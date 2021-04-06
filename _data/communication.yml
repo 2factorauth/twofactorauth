@@ -1,4 +1,11 @@
 websites:
+  - name: 123 Form Builder
+    url: https://www.123formbuilder.com
+    img: 123formbuilder.svg
+    tfa:
+      - totp
+    doc: https://www.123formbuilder.com/docs/multi-factor-authentication-login
+
   - name: Action Network
     url: https://actionnetwork.org/
     img: actionnetwork.png
