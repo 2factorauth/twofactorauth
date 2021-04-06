@@ -46,6 +46,14 @@ websites:
       - totp
     doc: https://www.digitalocean.com/docs/accounts/security/2fa/
 
+  - name: Elastic Cloud
+    url: https://www.elastic.co
+    img: elasticcloud.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://www.elastic.co/guide/en/cloud/current/ec-account-user-settings.html#ec-account-security-mfa
+
   - name: Engine Yard
     url: https://www.engineyard.com
     img: engineyard.png
