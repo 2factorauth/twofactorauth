@@ -85,6 +85,13 @@ websites:
     img: bintray.png
     twitter: bintray
 
+  - name: BitBar
+    url: https://bitbar.com
+    img: bitbar.svg
+    tfa:
+      - totp
+    doc: https://bitbar.com/blog/multi-factor-authentication/
+
   - name: Bitbucket
     url: https://bitbucket.org
     img: bitbucket.png
