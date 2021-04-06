@@ -554,17 +554,11 @@ websites:
     twitter: verio
     img: verio.png
 
-  - name: Whois (Customer)
+  - name: Whois
     url: https://www.whois.com
     img: whois.png
     tfa:
       - sms
-    doc: https://manage.whois.com/kb/node/2690
-
-  - name: Whois (Reseller)
-    url: https://www.whois.com
-    img: whois.png
-    tfa:
       - totp
-      - sms
-    doc: https://manage.whois.com/kb/node/2693
+    doc: https://manage.whois.com/kb/node/2690
+    exception: "TOTP 2FA is only available for resellers."
