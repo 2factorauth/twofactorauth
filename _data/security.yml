@@ -199,14 +199,6 @@ websites:
       - totp
     doc: https://help.preyproject.com/article/248--
 
-  - name: Pwnie Express Pwn Pulse
-    url: https://www.pwnieexpress.com/products/pulse-device-detection
-    img: pwnieexpress.png
-    tfa:
-      - totp
-    doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909
-    exception: TFA can be enabled on Pwn Pulse Accounts upon customer request.
-
   - name: RBLTracker
     url: https://rbltracker.com/
     img: rbltracker.png
