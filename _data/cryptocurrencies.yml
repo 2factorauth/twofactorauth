@@ -550,6 +550,15 @@ websites:
       - totp
     doc: https://support.poloniex.circle.com/hc/en-us/articles/360025399352
 
+  - name: ProBit
+    url: https://www.probit.com/
+    img: probit.svg
+    tfa:
+      - sms
+      - totp
+      - u2f
+    doc: https://support.probit.com/hc/en-us/sections/900000153103
+
   - name: Quidax
     url: https://quidax.com/
     img: quidax.svg
