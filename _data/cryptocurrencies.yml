@@ -110,6 +110,13 @@ websites:
       - totp
     doc: https://support.bitpay.com/hc/en-us/articles/360006612692
 
+  - name: Bitso
+    url: https://bitso.com/
+    img: bitso.svg
+    tfa:
+      - totp
+    doc: https://help.bitso.com/en/support/solutions/articles/1000166781
+
   - name: Bitstamp
     url: https://bitstamp.net
     img: bitstamp.png
