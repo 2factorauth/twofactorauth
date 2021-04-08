@@ -385,6 +385,14 @@ websites:
       - email
     doc: "/notes/chase/"
 
+  - name: Charles Schwab
+    url: https://www.schwab.com/
+    img: charlesschwab.svg
+    tfa:
+      - totp
+      - hardware
+    doc: https://www.schwab.com/help/two-factor-authentication
+
   - name: Chime
     url: https://www.chimebank.com
     img: chime.png
