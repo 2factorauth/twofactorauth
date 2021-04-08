@@ -908,7 +908,7 @@ websites:
       - hardware
     doc: https://www.lansforsakringar.se/privat/att-vara-kund/digitala-tjanster-telefonbank/internetbanken/
 
-  - name: MandT Bank
+  - name: M&amp;T Bank
     url: https://www.mtb.com/
     img: mtbank.png
     twitter: MandT_Help
@@ -955,7 +955,7 @@ websites:
     tfa:
       - sms
       - proprietary
-    doc: https://support.n26.com/en-gb/getting-started/psd2/how-to-log-in-with-two-factor-authentication
+    doc: https://support.n26.com/en-eu/security/passwords-and-codes/how-to-log-in-with-two-factor-authentication
 
   - name: NASA Federal Credit Union
     url: https://www.nasafcu.com/
@@ -991,9 +991,10 @@ websites:
     url: https://www.navyfederal.org/
     img: navyfederal.png
     tfa:
+      - sms
       - email
       - proprietary
-    doc: https://nfcucloud.custhelp.com/app/answers/list/c/543
+    doc: https://www.navyfederal.org/services/security/two-step-verification.html
 
   - name: netbank
     url: https://www.netbank.de/
@@ -1299,7 +1300,9 @@ websites:
     img: sofi.png
     tfa:
       - sms
-    doc: https://www.sofi.com/blog/introducing-two-step-verification-sofi-next-level-account-protection/
+      - phone
+      - email
+    doc: https://support.sofi.com/hc/en-us/articles/360043651452
 
   - name: Sparda Banken
     url: https://www.sparda.de/

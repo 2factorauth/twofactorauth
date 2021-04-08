@@ -49,8 +49,10 @@ websites:
   - name: Crazy Domains
     url: https://www.crazydomains.com
     img: crazydomains.png
-    twitter: CrazyDomains
-    facebook: crazydomains
+    tfa:
+      - sms
+      - phone
+    doc: https://www.crazydomains.co.uk/help/how-to-enable-or-disable-two-step-verification-system/
 
   - name: Directnic
     url: https://directnic.com
@@ -298,7 +300,7 @@ websites:
     url: https://metaname.net/
     img: metaname.png
     tfa:
-      - sms
+      - totp
     doc: https://metaname.net/public/two_factor_authentication
 
   - name: Moniker
@@ -457,9 +459,11 @@ websites:
 
   - name: Rebel.com
     url: https://www.rebel.com/
-    twitter: rebeldotcom
-    facebook: rebeldotcomhosting
-    img: rebel.png
+    img: rebel.svg
+    tfa:
+      - totp
+    doc: https://support.rebel.com/hc/en-us/articles/360039417613
+    exception: "You must contact customer support to enable 2FA."
 
   - name: Rebrandly
     url: https://rebrandly.com

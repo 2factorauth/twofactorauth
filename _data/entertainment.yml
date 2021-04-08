@@ -203,7 +203,8 @@ websites:
     tfa:
       - sms
       - proprietary
-    doc: https://help.twitch.tv/s/article/two-factor-authentication-with-authy
+      - totp
+    doc: https://help.twitch.tv/s/article/two-factor-authentication
     exception: "To activate two factor authentication, you must provide a mobile phone number."
 
   - name: Vimeo

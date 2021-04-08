@@ -73,9 +73,9 @@ websites:
   - name: Detectify
     url: https://detectify.com/
     img: detectify.png
-    twitter: detectify
-    facebook: detectify
-    email_address: hello@detectify.com
+    tfa:
+      - totp
+    doc: https://support.detectify.com/support/solutions/articles/48001061904
 
   - name: DigiCert
     url: https://www.digicert.com/
@@ -198,14 +198,6 @@ websites:
     tfa:
       - totp
     doc: https://help.preyproject.com/article/248--
-
-  - name: Pwnie Express Pwn Pulse
-    url: https://www.pwnieexpress.com/products/pulse-device-detection
-    img: pwnieexpress.png
-    tfa:
-      - totp
-    doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909
-    exception: TFA can be enabled on Pwn Pulse Accounts upon customer request.
 
   - name: RBLTracker
     url: https://rbltracker.com/

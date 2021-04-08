@@ -416,6 +416,13 @@ websites:
     twitter: pccasegear
     img: pccasegear.png
 
+  - name: Pro Wrestling Tees
+    url: https://www.prowrestlingtees.com/
+    twitter: PWTees
+    facebook: prowrestlingtees
+    email_address: info@prowrestlingtees.com
+    img: prowrestlingtees.png
+
   - name: Purse
     url: https://purse.io/
     img: purse.png
@@ -501,8 +508,13 @@ websites:
 
   - name: Target
     url: https://www.target.com/
-    twitter: Target
     img: target.png
+    tfa:
+      - sms
+      - email
+    doc: https://security.target.com/FAQs
+    regions:
+      - us
 
   - name: Thalia
     url: https://www.thalia.de/
