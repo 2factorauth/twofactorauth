@@ -1143,6 +1143,17 @@ websites:
       - hardware
     doc: https://www.rabobank.nl/bedrijven/betalen/zelf-betalingen-doen/rabo-scanner/
 
+  - name: Radius Bank
+    url: https://radiusbank.com
+    img: radiusbank.svg
+    tfa:
+      - sms
+      - phone
+      - email
+      - totp
+    regions:
+      - us
+
   - name: Raiffeisen Bank CZ
     url: https://www.rb.cz/
     img: raiffeisenbank_cz.png
