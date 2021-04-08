@@ -193,6 +193,13 @@ websites:
     tfa:
       - totp
     doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
+    
+  - name: SecurityTrails
+    url: https://securitytrails.com/
+    img: securitytrails.svg
+    tfa:
+      - totp
+    doc: https://changelog.securitytrails.com/release:-june-11-2020-two-factor-authentication-(2fa)-2fuccE
 
   - name: Sophos Central
     url: https://www.sophos.com
