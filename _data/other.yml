@@ -373,6 +373,7 @@ websites:
       - phone
       - totp
     doc: https://help.kickstarter.com/hc/en-us/articles/115005127094
+    exception: "Currently requires a verified SMS Number as fallback for Software 2FA."
 
   - name: Liftopia
     url: https://www.liftopia.com
