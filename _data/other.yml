@@ -525,6 +525,13 @@ websites:
     twitter: signnow
     facebook: esignaturesignnow
 
+  - name: SimplyBook
+    url: https://simplybook.me
+    img: simplybook.svg
+    tfa:
+      - totp
+    doc: https://help.simplybook.me/index.php/Google_Authenticator_custom_feature
+
   - name: SmartSimple
     url: https://www.smartsimple.com
     img: smartsimple.png
