@@ -177,6 +177,13 @@ websites:
     facebook: openshift
     img: openshift.png
 
+  - name: Oracle Cloud
+    url: https://oracle.com
+    img: oracle.svg
+    tfa:
+      - totp
+    doc: https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/usingmfa.htm
+
   - name: Rackspace
     url: https://www.rackspace.com/
     img: rackspace.png
