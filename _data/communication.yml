@@ -113,6 +113,13 @@ websites:
     img: epost.png
     lang: de
 
+  - name: EasySendy
+    url: https://easysendy.com
+    img: easysendy.png
+    tfa:
+      - totp
+    doc: https://easysendy.com/sendy/sendy-version-2-1-0-two-factor-authentication-released
+
   - name: Elastic Email
     url: https://elasticemail.com
     img: elasticemail.png
