@@ -270,6 +270,14 @@ websites:
       - sms
     doc: https://support.nulab.com/hc/en-us/articles/115001025087
 
+  - name: Pepipost
+    url: https://www.pepipost.com/
+    img: pepipost.png
+    tfa:
+      - email
+      - totp
+    doc: https://docs.pepipost.com/docs/two-factor-authentication-2fa
+
   - name: Pipedrive
     url: https://www.pipedrive.com/
     img: pipedrive.png
