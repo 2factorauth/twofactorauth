@@ -531,6 +531,7 @@ websites:
     tfa:
       - totp
     doc: https://help.simplybook.me/index.php/Google_Authenticator_custom_feature
+    exception: "2FA is only available as a 'custom feature'."
 
   - name: SmartSimple
     url: https://www.smartsimple.com
