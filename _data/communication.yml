@@ -269,6 +269,14 @@ websites:
       - totp
     doc: https://missiveapp.com/faq/enable-2-factor-authentication
 
+  - name: Notejoy
+    url: https://notejoy.com
+    img: notejoy.svg
+    tfa:
+      - totp
+    doc: https://notejoy.com/help/two-factor-authentication
+    exception: "2FA is not available to Free plan users and is not available on the Android app."
+
   - name: Nulab
     url: https://nulab.com/
     img: nulab.png
