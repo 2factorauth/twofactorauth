@@ -379,6 +379,13 @@ websites:
       - totp
     doc: https://freewallet.org/blog/2fa-faq
 
+  - name: FTX
+    url: https://ftx.com
+    img: ftx.svg
+    tfa:
+      - totp
+    doc: https://help.ftx.com/hc/en-us/articles/360033774352
+
   - name: Gate.io
     url: https://gate.io
     img: gate.svg
