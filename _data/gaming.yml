@@ -419,6 +419,13 @@ websites:
       - sms
     doc: https://support.ubi.com/en-GB/Faqs/000039953
 
+  - name: VRChat
+    url: https://hello.vrchat.com
+    img: vrchat.png
+    tfa:
+      - totp
+    doc: https://docs.vrchat.com/docs/setup-2fa
+
   - name: Warframe
     url: https://www.warframe.com/
     img: warframe.png
