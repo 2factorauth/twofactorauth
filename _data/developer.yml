@@ -440,10 +440,11 @@ websites:
 
   - name: Plivo
     url: https://www.plivo.com
-    img: plivo.png
+    img: plivo.svg
     tfa:
       - sms
-    doc: https://www.plivo.com/blog/two-factor-authentication-for-plivo-console/
+      - phone
+    doc: https://support.plivo.com/hc/en-us/articles/360041766411
 
   - name: ProfitWell
     url: https://profitwell.com
