@@ -185,6 +185,14 @@ websites:
       - totp
     doc: https://help.compose.com/docs/two-factor-authentication
 
+  - name: Contentstack
+    url: https://www.contentstack.com/
+    img: contentstack.svg
+    tfa:
+      - proprietary
+      - sms
+    doc: https://www.contentstack.com/docs/developers/two-factor-authentication/
+
   - name: Cookiebot
     url: https://www.cookiebot.com/
     img: cookiebot.png
@@ -432,10 +440,11 @@ websites:
 
   - name: Plivo
     url: https://www.plivo.com
-    img: plivo.png
+    img: plivo.svg
     tfa:
       - sms
-    doc: https://www.plivo.com/blog/two-factor-authentication-for-plivo-console/
+      - phone
+    doc: https://support.plivo.com/hc/en-us/articles/360041766411
 
   - name: ProfitWell
     url: https://profitwell.com

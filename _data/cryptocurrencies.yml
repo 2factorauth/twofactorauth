@@ -110,6 +110,13 @@ websites:
       - totp
     doc: https://support.bitpay.com/hc/en-us/articles/360006612692
 
+  - name: Bitso
+    url: https://bitso.com/
+    img: bitso.svg
+    tfa:
+      - totp
+    doc: https://help.bitso.com/en/support/solutions/articles/1000166781
+
   - name: Bitstamp
     url: https://bitstamp.net
     img: bitstamp.png
@@ -365,6 +372,13 @@ websites:
       - sms
     doc: https://cryptonator.zendesk.com/hc/en-us/articles/201715352
 
+  - name: Freewallet
+    url: https://freewallet.org/
+    img: freewallet.svg
+    tfa:
+      - totp
+    doc: https://freewallet.org/blog/2fa-faq
+
   - name: Gate.io
     url: https://gate.io
     img: gate.svg
@@ -550,6 +564,15 @@ websites:
       - totp
     doc: https://support.poloniex.circle.com/hc/en-us/articles/360025399352
 
+  - name: ProBit
+    url: https://www.probit.com/
+    img: probit.svg
+    tfa:
+      - sms
+      - totp
+      - u2f
+    doc: https://support.probit.com/hc/en-us/sections/900000153103
+
   - name: Quidax
     url: https://quidax.com/
     img: quidax.svg
@@ -579,6 +602,18 @@ websites:
       - totp
       - u2f
     doc: https://help.stex.com/en/articles/3486981#individual-account-security-settings
+
+  - name: Swyftx
+    url: https://swyftx.com/
+    img: swyftx.svg
+    tfa:
+      - totp
+    doc: https://help.swyftx.com.au/en/articles/3573346
+    regions:
+      - au
+      - nz
+      - gb
+      - ca
 
   - name: Uphold
     url: https://uphold.com/
