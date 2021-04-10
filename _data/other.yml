@@ -43,6 +43,13 @@ websites:
       - totp
     doc: https://knowledge.autodesk.com/customer-service/account-management/account-profile/account-security/two-step-verification
 
+  - name: Automate.io
+    url: https://automate.io
+    img: automateio.png
+    tfa:
+      - totp
+    doc: https://docs.automate.io/en/articles/3068223
+
   - name: Automater
     url: https://automater.pl/en/
     img: automater.png
