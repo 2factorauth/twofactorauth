@@ -9,7 +9,7 @@ If you're using our API to match client URLs with our dataset make sure you only
 
 ### Caching
 
-If you intent to query our JSON files often and with a lot of traffic, you may be blocked by Cloudflare, our reverse proxy provider. We therefore recommend that you cache the files locally for any large traffic cases.
+If you intend to query our JSON files often and with a lot of traffic, you may be blocked by Cloudflare, our reverse proxy provider. We therefore recommend that you cache the files locally for any large traffic cases.
 
 ### Avoid downloading unnecessary data
 

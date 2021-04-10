@@ -80,9 +80,10 @@ websites:
 
   - name: ClearScore
     url: https://www.clearscore.com
-    img: clearscore.png
+    img: clearscore.svg
     tfa:
       - sms
+      - totp
     doc: https://help.clearscore.com/hc/en-us/sections/360003360940
 
   - name: Concur
@@ -196,6 +197,15 @@ websites:
     facebook: gerberlife
     img: gerberlife.png
 
+  - name: Guideline
+    url: https://www.guideline.com
+    img: guideline.svg
+    tfa:
+      - totp
+    doc: https://success.guideline.com/hc/articles/360034791412
+    regions:
+      - us
+
   - name: Gusto
     url: https://www.gusto.com
     img: gusto.png
@@ -295,13 +305,14 @@ websites:
     doc: https://help.metorik.com/article/22-how-can-i-enable-2fa-on-my-account
 
   - name: Mint
-    url: https://www.mint.com
-    img: mint.png
+    url: https://mint.intuit.com
+    img: mint.svg
     tfa:
       - sms
       - phone
       - totp
     doc: https://help.mint.com/Security/908045661
+    exception: "Software 2FA requires enabling SMS or phone call as a back-up."
 
   - name: money by Envestnet | Yodlee
     url: https://money.yodlee.com/
@@ -399,7 +410,8 @@ websites:
       - sms
       - phone
       - totp
-    doc: https://accounts-help.lc.intuit.com/questions/1590157
+      - email
+    doc: https://quickbooks.intuit.com/learn-support/en-us/manage-passwords/verify-your-account-with-multi-factor-authentication/00/186340
     exception: "TOTP 2FA only available after enabling SMS or phone 2FA."
 
   - name: QuickFile
@@ -464,16 +476,6 @@ websites:
       - proprietary
     doc: https://www.tk.de/techniker/unternehmensseiten/unternehmen/die-tk-app/2023678
 
-  - name: TransferWise
-    url: https://transferwise.com
-    img: transferwise.png
-    tfa:
-      - sms
-      - phone
-      - proprietary
-    doc: https://transferwise.com/help/12/managing-your-profile/2932125
-    exception: "SMS-capable phone is required."
-
   - name: TransUnion
     url: https://www.transunion.com/
     twitter: TransUnion
@@ -502,6 +504,16 @@ websites:
     img: wave.png
     twitter: WaveHQ
     facebook: waveHQ
+
+  - name: Wise
+    url: https://wise.com
+    img: wise.png
+    tfa:
+      - sms
+      - phone
+      - proprietary
+    doc: https://wise.com/help/12/managing-your-profile/2932125
+    exception: "SMS-capable phone is required."
 
   - name: Xero
     url: https://www.xero.com/
