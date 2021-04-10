@@ -908,7 +908,7 @@ websites:
       - hardware
     doc: https://www.lansforsakringar.se/privat/att-vara-kund/digitala-tjanster-telefonbank/internetbanken/
 
-  - name: MandT Bank
+  - name: M&amp;T Bank
     url: https://www.mtb.com/
     img: mtbank.png
     twitter: MandT_Help
@@ -991,9 +991,10 @@ websites:
     url: https://www.navyfederal.org/
     img: navyfederal.png
     tfa:
+      - sms
       - email
       - proprietary
-    doc: https://nfcucloud.custhelp.com/app/answers/list/c/543
+    doc: https://www.navyfederal.org/services/security/two-step-verification.html
 
   - name: netbank
     url: https://www.netbank.de/
@@ -1141,6 +1142,17 @@ websites:
     tfa:
       - hardware
     doc: https://www.rabobank.nl/bedrijven/betalen/zelf-betalingen-doen/rabo-scanner/
+
+  - name: Radius Bank
+    url: https://radiusbank.com
+    img: radiusbank.svg
+    tfa:
+      - sms
+      - phone
+      - email
+      - totp
+    regions:
+      - us
 
   - name: Raiffeisen Bank CZ
     url: https://www.rb.cz/
