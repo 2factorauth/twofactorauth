@@ -88,6 +88,13 @@ websites:
       - totp
     doc: https://customer.io/docs/two-factor-auth
 
+  - name: Demio
+    url: https://demio.com
+    img: demio.svg
+    tfa:
+      - totp
+    doc: https://help.demio.com/en/articles/4794494
+
   - name: Direct Mail
     url: https://directmailmac.com
     img: directmail.png
