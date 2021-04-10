@@ -180,6 +180,15 @@ websites:
     img: spideroak.png
     facebook: SpiderOak
 
+  - name: STRATO
+    url: https://www.strato.de/
+    img: strato.svg
+    tfa:
+      - totp
+    doc: https://www.strato.de/faq/cloud-speicher/2-Faktor-Authentifizierung/
+    regions:
+      - de
+
   - name: SugarSync
     twitter: SugarSync
     url: https://www.sugarsync.com/
