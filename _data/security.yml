@@ -170,6 +170,12 @@ websites:
       - sms
     doc: https://help.kaspersky.com/KPC/1.0/en-US/152628.htm
 
+  - name: LexisNexis Risk Solutions
+    url: https://risk.lexisnexis.com/
+    img: lexisnexis.png
+    twitter: LexisNexis
+    facebook: lexisnexisus
+
   - name: McAfee
     url: https://www.mcafee.com/
     img: mcafee.png
@@ -199,14 +205,6 @@ websites:
       - totp
     doc: https://help.preyproject.com/article/248--
 
-  - name: Pwnie Express Pwn Pulse
-    url: https://www.pwnieexpress.com/products/pulse-device-detection
-    img: pwnieexpress.png
-    tfa:
-      - totp
-    doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909
-    exception: TFA can be enabled on Pwn Pulse Accounts upon customer request.
-
   - name: RBLTracker
     url: https://rbltracker.com/
     img: rbltracker.png
@@ -235,11 +233,6 @@ websites:
     tfa:
       - totp
     doc: https://kb.threatconnect.com/customer/en/portal/articles/2214975
-
-  - name: ThreatMetrix
-    url: https://www.threatmetrix.com/
-    img: threatmetrix.png
-    twitter: ThreatMetrix
 
   - name: ThreatSim
     url: https://login.threatsim.com

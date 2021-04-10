@@ -113,6 +113,13 @@ websites:
     img: epost.png
     lang: de
 
+  - name: EasySendy
+    url: https://easysendy.com
+    img: easysendy.png
+    tfa:
+      - totp
+    doc: https://easysendy.com/sendy/sendy-version-2-1-0-two-factor-authentication-released
+
   - name: Elastic Email
     url: https://elasticemail.com
     img: elasticemail.png
@@ -262,6 +269,21 @@ websites:
       - totp
       - sms
     doc: https://support.nulab.com/hc/en-us/articles/115001025087
+
+  - name: OnceHub
+    url: https://www.oncehub.com
+    img: oncehub.svg
+    tfa:
+      - sms
+    doc: https://help.oncehub.com/help/set-up-two-factor-authentication
+
+  - name: Pepipost
+    url: https://www.pepipost.com/
+    img: pepipost.png
+    tfa:
+      - email
+      - totp
+    doc: https://docs.pepipost.com/docs/two-factor-authentication-2fa
 
   - name: Pipedrive
     url: https://www.pipedrive.com/
