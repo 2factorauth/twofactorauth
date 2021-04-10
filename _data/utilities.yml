@@ -471,9 +471,10 @@ websites:
 
   - name: Three UK
     url: http://www.three.co.uk/
-    twitter: ThreeUK
-    facebook: ThreeUK
     img: three.png
+    tfa:
+      - sms
+    doc: http://www.three.co.uk/hub/stay-safe-from-fraudsters/
     regions:
       - gb
 
