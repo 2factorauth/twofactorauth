@@ -372,6 +372,14 @@ websites:
       - sms
     doc: https://cryptonator.zendesk.com/hc/en-us/articles/201715352
 
+  - name: Exmo
+    url: https://exmo.com/
+    img: exmo.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://info.exmo.com/en/education/how-to-enable-2fa/
+
   - name: Freewallet
     url: https://freewallet.org/
     img: freewallet.svg
@@ -394,14 +402,6 @@ websites:
       - email
       - totp
     doc: https://www.gate.io/help/question/16445
-
-  - name: Exmo
-    url: https://exmo.com/
-    img: exmo.svg
-    tfa:
-      - sms
-      - totp
-    doc: https://info.exmo.com/en/education/how-to-enable-2fa/
 
   - name: Gatehub
     url: https://gatehub.net
