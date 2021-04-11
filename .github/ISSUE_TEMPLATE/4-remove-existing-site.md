@@ -19,13 +19,13 @@ Check the box below before submitting your issue to verify that you have already
 - [ ] I have searched [open issues and pull requests](https://github.com/2factorauth/twofactorauth/issues?q=is%3Aopen). The issue I'm creating is not a duplicate of an existing open issue or pull request.
 
 ### Information about the site entry to be removed: ###
-<!-- Name of the site, as currently listed on twofactorauth.org -->
+<!-- Name of the site, as currently listed on 2fa.directory -->
 * Site name - ``
 
-<!-- Link to the main page of the site, as currently listed on twofactorauth.org -->
+<!-- Link to the main page of the site, as currently listed on 2fa.directory -->
 * Site URL - ``
 
-<!-- Category of the site, as currently listed on twofactorauth.org -->
+<!-- Category of the site, as currently listed on 2fa.directory -->
 * Site category - ``
 
 ### Information about why the site entry should be removed: ###
@@ -33,10 +33,10 @@ Check the box below before submitting your issue to verify that you have already
 - [ ] It is a duplicate of an existing site entry.
 - [ ] It will be discontinued in the near future.
 - [ ] It has been shut down by the owner and is no longer accessible.
-- [ ] It has been acquired or absorbed by another site, and the new site is already listed on twofactorauth.org.
+- [ ] It has been acquired or absorbed by another site, and the new site is already listed on 2fa.directory.
 - [ ] It no longer has verifiable 2FA documentation and is no longer ranked within the top 200,000 sites on [Alexa](https://www.alexa.com/siteinfo/).
-- [ ] It no longer meets twofactorauth.org's [contributing guidelines and site criteria](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
-- [ ] It contains content that violates twofactorauth.org's [excluded categories and websites guidelines](https://github.com/2factorauth/twofactorauth/blob/master/EXCLUSION.md).
+- [ ] It no longer meets 2fa.directory's [contributing guidelines and site criteria](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
+- [ ] It contains content that violates 2fa.directory's [excluded categories and websites guidelines](https://github.com/2factorauth/twofactorauth/blob/master/EXCLUSION.md).
 - [ ] Other (please describe below).
 
 **Additional information about why this site entry should be removed:**
