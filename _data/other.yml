@@ -125,6 +125,23 @@ websites:
     tfa:
       - totp
 
+  - name: Clover
+    url: https://www.clover.com
+    img: clover.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://www.clover.com/help/two-factor-authentication
+    regions:
+      - us
+      - ca
+      - gb
+      - ie
+      - de
+      - at
+      - nl
+      - ar
+
   - name: CommuterBenefits
     url: https://commuterbenefits.com/
     img: commuterbenefits.png
@@ -148,6 +165,14 @@ websites:
     url: https://www.crowdflower.com/
     img: crowdflower.png
     twitter: CrowdFlower
+
+  - name: Databox
+    url: https://databox.com
+    img: databox.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.databox.com/article/515--
 
   - name: Delighted
     url: https://delightedapp.com/
@@ -461,12 +486,12 @@ websites:
       - totp
     doc: https://support.patreon.com/hc/en-us/articles/206538086
 
-  - name: PhraseApp
-    url: https://phraseapp.com
-    img: phraseapp.png
+  - name: Phrase
+    url: https://phrase.com
+    img: phrase.png
     tfa:
       - totp
-    doc: https://phraseapp.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
+    doc: https://phrase.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
 
   - name: Pinboard
     url: https://pinboard.in/
@@ -495,6 +520,15 @@ websites:
     url: https://promoter.io/
     img: promoter.png
     twitter: Promoter_io
+
+  - name: Refersion
+    url: https://refersion.com
+    img: refersion.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.refersion.com/en/articles/2989703
+    exception: "SMS 2FA is not available in all regions."
 
   - name: Repairshopr
     url: https://www.repairshopr.com/

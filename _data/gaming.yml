@@ -256,7 +256,9 @@ websites:
     img: nexon.png
     tfa:
       - totp
-    doc: https://support.nexon.net/hc/en-us/articles/360025920992
+      - email
+      - sms
+    doc: https://support.nexon.net/hc/en-us/articles/360026634532
 
   - name: Nexus Mods
     url: https://www.nexusmods.com/
@@ -418,6 +420,13 @@ websites:
       - totp
       - sms
     doc: https://support.ubi.com/en-GB/Faqs/000039953
+
+  - name: VRChat
+    url: https://hello.vrchat.com
+    img: vrchat.png
+    tfa:
+      - totp
+    doc: https://docs.vrchat.com/docs/setup-2fa
 
   - name: Warframe
     url: https://www.warframe.com/
