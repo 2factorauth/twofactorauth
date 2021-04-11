@@ -23,10 +23,10 @@ websites:
 
   - name: Asana
     url: https://www.asana.com
-    img: asana.png
-    twitter: asana
-    facebook: asana
-    email_address: support@asana.com
+    img: asana.svg
+    tfa:
+      - totp
+    doc: https://asana.com/guide/help/fundamentals/two-factor-authentication
 
   - name: Azendoo
     url: https://app.azendoo.com
@@ -41,10 +41,12 @@ websites:
 
   - name: ClickUp
     url: https://clickup.com
-    img: clickup.png
+    img: clickup.svg
     tfa:
       - sms
-    doc: https://docs.clickup.com/general/two-factor-authentication
+      - totp
+    doc: https://docs.clickup.com/en/articles/2601429
+    exception: "SMS only available on Business and Enterprise price plans."
 
   - name: Clubhouse
     url: https://clubhouse.io
@@ -52,6 +54,13 @@ websites:
     tfa:
       - totp
     doc: https://help.clubhouse.io/hc/en-us/articles/360044506931
+
+  - name: Deputy
+    url: https://deputy.com
+    img: deputy.svg
+    tfa:
+      - totp
+    doc: https://help.deputy.com/en/articles/1953504
 
   - name: fruux
     url: https://fruux.com
@@ -78,6 +87,23 @@ websites:
     doc: https://support.microsoft.com/en-us/help/12408/
     exception: "2FA phone calls may not be available in all regions"
 
+  - name: Monday.com
+    url: https://monday.com
+    img: monday.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.monday.com/hc/en-us/articles/360000787745
+    exception: "Team admins must enable 2FA before members can use it."
+
+  - name: Nozbe Teams
+    url: https://nozbe.com/
+    img: nozbeteams.png
+    tfa:
+      - totp
+      - sms
+    doc: https://teams.nozbe.help/management/settings/#settings_2fa
+
   - name: Planio
     url: https://plan.io
     img: planio.png
@@ -91,6 +117,13 @@ websites:
     facebook: rememberthemilk
     img: rememberthemilk.png
     email_address: help@rememberthemilk.com
+
+  - name: Teamwork
+    url: https://teamwork.com
+    img: teamwork.svg
+    tfa:
+      - totp
+    doc: https://support.teamwork.com/projects/security/enabling-two-factor-authentication-on-your-profile
 
   - name: Tick
     url: https://www.tickspot.com

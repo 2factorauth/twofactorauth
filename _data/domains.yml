@@ -49,8 +49,10 @@ websites:
   - name: Crazy Domains
     url: https://www.crazydomains.com
     img: crazydomains.png
-    twitter: CrazyDomains
-    facebook: crazydomains
+    tfa:
+      - sms
+      - phone
+    doc: https://www.crazydomains.co.uk/help/how-to-enable-or-disable-two-step-verification-system/
 
   - name: Directnic
     url: https://directnic.com
@@ -149,7 +151,7 @@ websites:
     img: enom.png
     tfa:
       - totp
-    doc: https://www.enom.com/kb/kb/kb_1687-setup-2-factor.htm
+    doc: https://enom.help/2fa
 
   - name: Epik
     url: https://www.epik.com
@@ -298,7 +300,7 @@ websites:
     url: https://metaname.net/
     img: metaname.png
     tfa:
-      - sms
+      - totp
     doc: https://metaname.net/public/two_factor_authentication
 
   - name: Moniker
@@ -457,9 +459,11 @@ websites:
 
   - name: Rebel.com
     url: https://www.rebel.com/
-    twitter: rebeldotcom
-    facebook: rebeldotcomhosting
-    img: rebel.png
+    img: rebel.svg
+    tfa:
+      - totp
+    doc: https://support.rebel.com/hc/en-us/articles/360039417613
+    exception: "You must contact customer support to enable 2FA."
 
   - name: Rebrandly
     url: https://rebrandly.com
@@ -549,3 +553,12 @@ websites:
     url: https://www.verio.com/
     twitter: verio
     img: verio.png
+
+  - name: Whois
+    url: https://www.whois.com
+    img: whois.png
+    tfa:
+      - sms
+      - totp
+    doc: https://manage.whois.com/kb/node/2690
+    exception: "TOTP 2FA is only available for resellers."

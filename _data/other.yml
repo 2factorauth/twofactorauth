@@ -1,4 +1,12 @@
 websites:
+  - name: 2Checkout
+    url: https://www.2checkout.com
+    img: 2checkout.png
+    tfa:
+      - totp
+      - email
+    doc: https://knowledgecenter.2checkout.com/Onboarding/Activate-and-set-up-your-2Checkout-account/Two-factor-authentication
+
   - name: Adobe ID
     url: https://adobe.com/
     img: adobe.png
@@ -6,6 +14,7 @@ websites:
       - sms
       - email
       - totp
+      - proprietary
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
   - name: Ancestry
@@ -23,11 +32,6 @@ websites:
       - sms
       - totp
     doc: https://angel.co/projects/106166
-
-  - name: Australia Post
-    url: https://auspost.com.au/
-    img: auspost.png
-    twitter: auspost
 
   - name: Autodesk
     url: https://www.autodesk.com
@@ -78,8 +82,8 @@ websites:
     img: canva.png
     tfa:
       - sms
-    doc: https://support.canva.com/account-basics/security/keep-your-account-secure/
-    exception: "2FA only available for Australian customers."
+    doc: https://www.canva.com/help/article/login-verification
+    exception: "2FA only available to users from Australia, Philippines, UK, and USA."
     
   - name: CharlieHR
     url: https://charliehr.com/
@@ -121,6 +125,23 @@ websites:
     tfa:
       - totp
 
+  - name: Clover
+    url: https://www.clover.com
+    img: clover.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://www.clover.com/help/two-factor-authentication
+    regions:
+      - us
+      - ca
+      - gb
+      - ie
+      - de
+      - at
+      - nl
+      - ar
+
   - name: CommuterBenefits
     url: https://commuterbenefits.com/
     img: commuterbenefits.png
@@ -145,30 +166,35 @@ websites:
     img: crowdflower.png
     twitter: CrowdFlower
 
+  - name: Databox
+    url: https://databox.com
+    img: databox.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.databox.com/article/515--
+
   - name: Delighted
     url: https://delightedapp.com/
     img: delighted.png
     tfa:
       - sms
 
-  - name: DHL Deutschland
-    url: https://www.dhl.de
-    img: dhl.png
-    tfa:
-      - email
-    doc: https://www.dhl.de/de/toolbar/footer/datenschutz.html#kundenkontoundempfaengerservices
-
-  - name: DPD
-    url: https://www.dpd.de/
-    twitter: dpd_de
-    facebook: dpdindeutschland
-    img: dpd.png
-    lang: de
-
   - name: Dreamstime
     url: https://www.dreamstime.com/
     img: dreamstime.png
     twitter: Dreamstime
+
+  - name: Egnyte
+    url: https://www.egnyte.com/
+    img: egnyte.png
+    tfa:
+      - totp
+      - proprietary
+      - sms
+      - phone
+    doc: https://helpdesk.egnyte.com/hc/en-us/articles/360028032991
+    exception: "Availability of 2FA options depends on your account type."
 
   - name: Envato
     url: https://envato.com
@@ -217,7 +243,8 @@ websites:
     tfa:
       - sms
       - email
-    doc: https://sellers.fiverr.com/en/article/two-factor-authentication
+      - proprietary
+    doc: https://www.fiverr.com/support/articles/360010239658
 
   - name: Formstack
     url: https://www.formstack.com/
@@ -234,16 +261,6 @@ websites:
       - sms
       - email
     doc: https://www.freelancer.com/support/general/2-step-verification
-
-  - name: GLS-ONE
-    url: https://www.gls-one.de/
-    twitter: GLS_Germany
-    facebook: GLSGermany
-    email_address: mail@gls-one.de
-    img: gls-one.png
-    lang: de
-    regions:
-       - de
 
   - name: GoFundMe
     url: https://www.gofundme.com/
@@ -300,12 +317,6 @@ websites:
       - sms
       - totp
     doc: https://docs.helpscout.com/article/907--
-
-  - name: Hermes DE
-    url: https://www.myhermes.de/
-    img: hermes.png
-    twitter: hermesDE
-    lang: de
 
   - name: IEEE
     url: https://www.ieee.org
@@ -416,6 +427,13 @@ websites:
     twitter: Monster
     facebook: monster
 
+  - name: Moqups
+    url: https://moqups.com
+    img: moqups.svg
+    tfa:
+      - totp
+    doc: https://support.moqups.com/hc/en-us/articles/360019781980#account_2FA
+
   - name: NationBuilder
     url: https://nationbuilder.com
     img: nationbuilder.png
@@ -468,12 +486,12 @@ websites:
       - totp
     doc: https://support.patreon.com/hc/en-us/articles/206538086
 
-  - name: PhraseApp
-    url: https://phraseapp.com
-    img: phraseapp.png
+  - name: Phrase
+    url: https://phrase.com
+    img: phrase.png
     tfa:
       - totp
-    doc: https://phraseapp.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
+    doc: https://phrase.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
 
   - name: Pinboard
     url: https://pinboard.in/
@@ -502,6 +520,15 @@ websites:
     url: https://promoter.io/
     img: promoter.png
     twitter: Promoter_io
+
+  - name: Refersion
+    url: https://refersion.com
+    img: refersion.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.refersion.com/en/articles/2989703
+    exception: "SMS 2FA is not available in all regions."
 
   - name: Repairshopr
     url: https://www.repairshopr.com/
@@ -540,12 +567,33 @@ websites:
       - hardware
     doc: https://wiki.smartsimple.com/wiki/Two-Factor_Authentication
 
+  - name: Sonix
+    url: https://sonix.ai
+    img: sonix.svg
+    tfa:
+      - totp
+    doc: https://help.sonix.ai/en/articles/4188823
+
   - name: Spare5
     url: https://app.spare5.com/fives
     img: spare5.png
     twitter: spare5
     facebook: spare5app
     email_address: feedback@spare5.com
+
+  - name: ThriveCart
+    url: https://www.thrivecart.com
+    img: thrivecart.svg
+    tfa:
+      - totp
+    doc: https://support.thrivecart.com/help/where-do-i-get-my-6-digit-access-code-2-factor-authentication
+
+  - name: Tito
+    url: https://ti.to
+    img: tito.svg
+    tfa:
+      - totp
+    doc: https://ti.to/docs/two_factor_authentication
 
   - name: TurboSquid
     url: https://www.turbosquid.com
@@ -562,23 +610,11 @@ websites:
       - totp
     doc: https://help.ubnt.com/hc/en-us/articles/115012986607
 
-  - name: UK Postbox
-    url: https://www.ukpostbox.com
-    img: ukpostbox.png
-    tfa:
-      - email
-
   - name: Ulule
     url: https://www.ulule.com/
     twitter: ulule
     facebook: ululeEN
     img: ulule.png
-
-  - name: UPS
-    url: https://www.ups.com
-    img: ups.png
-    twitter: UPS
-    facebook: ups
 
   - name: Upwork
     url: https://www.upwork.com
@@ -595,7 +631,7 @@ websites:
     tfa:
       - totp
     doc: https://support.usabilla.com/hc/en-us/articles/115003081611
-    
+
   - name: Vivaldi
     url: https://vivaldi.com/
     img: vivaldi.png

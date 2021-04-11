@@ -29,7 +29,7 @@ Check both boxes below before submitting your issue to verify that you have alre
 * Does the site support 2FA? - `No`
 
 ### Information about the site's contact information: ###
-<!-- This information is used to allow those visiting twofactorauth.org to contact the owner of the site and request that 2FA be supported.
+<!-- This information is used to allow those visiting 2fa.directory to contact the owner of the site and request that 2FA be supported.
 Leave any fields that do not have contact information blank. -->
 
 <!-- Language of the site.
@@ -47,14 +47,14 @@ List the language used for the site's Twitter and support email address. -->
 <!-- Support email address for the site -->
 * Email address - ``
 
-### Information about the site's eligibility to be added to twofactorauth.org: ###
+### Information about the site's eligibility to be added to 2fa.directory: ###
 <!-- Check each box below to verify that the site meets our requirements for being listed.
 If a site does not meet all of these requirements, feel free to continue your issue submission.
 Leave any unmet requirements unchecked, and add any additional information or questions in the "Additional information" section below. -->
 
-- [ ] I have checked that the site meets twofactorauth.org's [contributing guidelines and site criteria](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
+- [ ] I have checked that the site meets 2fa.directory's [contributing guidelines and site criteria](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
 - [ ] The site is ranked within the top 200,000 sites on [Alexa](https://www.alexa.com/siteinfo/) or has a substantial social media following.
-- [ ] The site does not contain or promote content that violates twofactorauth.org's [excluded categories and websites guidelines](https://github.com/2factorauth/twofactorauth/blob/master/EXCLUSION.md), including pornographic, discriminatory, or unlawful content.
+- [ ] The site does not contain or promote content that violates 2fa.directory's [excluded categories and websites guidelines](https://github.com/2factorauth/twofactorauth/blob/master/EXCLUSION.md), including pornographic, discriminatory, or unlawful content.
 
 ### Additional information: ###
 <!-- If you have any additional information to provide, please do so below. -->

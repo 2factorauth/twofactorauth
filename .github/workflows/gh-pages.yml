@@ -5,7 +5,7 @@ on:
     branches: master
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     if: github.repository == '2factorauth/twofactorauth'
 
@@ -17,7 +17,9 @@ jobs:
           path: vendor/cache
           key: ${{ runner.os }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
 
-      - uses: actions/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
 
       - name: Install dependencies
         run: |
@@ -39,6 +41,7 @@ jobs:
 
       - name: Build region sites
         run: |
+          mkdir -p api/v{1,2}
           ruby ./_deployment/used_regions.rb > api/v2/regions.json
           ruby ./_deployment/regions.rb --production
 
@@ -46,7 +49,19 @@ jobs:
         run: ./_deployment/webp.sh
 
       - name: Generate API files
-        run: ./_deployment/api.rb
+        run: |
+          ./_deployment/apiv1.rb
+          ./_deployment/apiv2.rb
+
+      - name: Import PGP key
+        id: pgp
+        uses: crazy-max/ghaction-import-gpg@v3
+        with:
+          gpg-private-key: ${{ secrets.pgp_key }}
+          passphrase: ${{ secrets.pgp_passphrase }}
+
+      - name: Sign API files
+        run: ./_deployment/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
 
       - name: Build the site
         run: bundle exec jekyll build --config _config.yml,_deployment/config-production.yml
@@ -59,15 +74,12 @@ jobs:
         env:
           NOKOGIRI_USE_SYSTEM_LIBRARIES: true
 
-      - name: Test JSON files
-        run: bundle exec rake jsonlint
-
       - name: Deploy to GH Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
           build_dir: _site
-          fqdn: twofactorauth.org
+          fqdn: 2fa.directory
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

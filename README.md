@@ -1,15 +1,15 @@
-# TwoFactorAuth.org
+# 2fa.directory
 
-[![Build Status](https://img.shields.io/github/workflow/status/2factorauth/twofactorauth/Jekyll%20Tests?style=for-the-badge)](https://github.com/2factorauth/twofactorauth/actions)
-[![License](https://img.shields.io/badge/license-mit-9A0F2D.svg?style=for-the-badge)](/LICENSE)
-[![Gitter](https://img.shields.io/gitter/room/2factorauth/twofactorauth.svg?style=for-the-badge&logo=gitter&color=ED1965)](https://gitter.im/2factorauth/twofactorauth)
-[![Twitter](https://img.shields.io/badge/Twitter-@2faorg-1DA1F2.svg?style=for-the-badge&logo=twitter)](https://twitter.com/2faorg)
+[![Build Status](https://img.shields.io/github/workflow/status/2factorauth/twofactorauth/Jekyll%20Tests?style=for-the-badge)][build_status]
+[![License](https://img.shields.io/badge/license-mit-9A0F2D.svg?style=for-the-badge)][license]
+[![Gitter](https://img.shields.io/gitter/room/2factorauth/twofactorauth.svg?style=for-the-badge&logo=gitter&color=ED1965)][gitter]
+[![Twitter](https://img.shields.io/badge/Twitter-@2faorg-1DA1F2.svg?style=for-the-badge&logo=twitter)][twitter]
 
 A list of popular sites and whether or not they accept two factor auth.
 
-## The Goal
+## The Goal :goal_net:
 
-The goal of this project is to build a website ([TwoFactorAuth.org](https://twofactorauth.org)) with a list of popular sites that support
+The goal of this project is to build a website ([2fa.directory][site_url]) with a list of popular sites that support
 Two Factor Authentication, as well as the methods that they provide.
 
 Our hope is to aid consumers who are deciding between alternative services based on the security they
@@ -22,9 +22,11 @@ If you would like to contribute, please read the entire guidelines here in
 
 ## Local installation :hammer_and_wrench:
 
-TwoFactorAuth.org is built upon [Jekyll](https://jekyllrb.com/), using the [github-pages](https://github.com/github/pages-gem) gem.
+2fa.directory is built upon [Jekyll][jekyll], using the [github-pages][pages-gem] gem.
 In order to run the site locally, bundler, and all other dependencies will need to be installed, and afterwards Jekyll can serve
-the site. Ubuntu:
+the site.
+
+Ubuntu:
 
 ```bash
 sudo snap install ruby --classic
@@ -33,7 +35,7 @@ npm i babel-minify
 bundle install --path vendor/bundle
 ```
 
-Windows Subsystem for Linux (WSL)
+Windows Subsystem for Linux (WSL):
 
 ```bash
 sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev npm webp
@@ -41,7 +43,7 @@ npm i babel-minify
 bundle install --path vendor/bundle
 ```
 
-MacOS (_Requires Xcode_)
+MacOS (_Requires Xcode_):
 
 ```bash
 # Install homebrew
@@ -83,12 +85,20 @@ bundle exec jekyll serve --watch
 
 The TwoFactorAuth website should now be accessible from `http://localhost:4000`.
 
-Another option is to run Jekyll inside a [Docker](https://www.docker.com/) container. Please read the [Jekyll Docker Documentation](https://github.com/envygeeks/jekyll-docker/blob/master/README.md) on how to use Jekyll.
+Another option is to run Jekyll inside a [Docker][docker] container. Please read the [Jekyll Docker Documentation][jekyll_docker] on how to use Jekyll.
 
 ## License :balance_scale:
 
 This code is distributed under the MIT license. For more info, read the
 [LICENSE][license] file distributed with the source code.
 
-[contrib]: /CONTRIBUTING.md
+[build_status]: https://github.com/2factorauth/twofactorauth/actions
 [license]: /LICENSE
+[gitter]: https://gitter.im/2factorauth/twofactorauth
+[twitter]: https://twitter.com/2faorg
+[site_url]: https://2fa.directory
+[contrib]: /CONTRIBUTING.md
+[jekyll]: https://jekyllrb.com/
+[pages-gem]: https://github.com/github/pages-gem
+[docker]: https://www.docker.com/
+[jekyll_docker]: https://github.com/envygeeks/jekyll-docker/blob/master/README.md

@@ -140,6 +140,16 @@ websites:
     regions:
       - au
 
+  - name: Pennsylvania Dept of Revenue myPATH
+    url: https://mypath.pa.gov
+    img: mypath.png
+    tfa:
+      - sms
+      - email
+      - totp
+    regions:
+      - us
+
   - name: RealMe
     url: https://www.realme.govt.nz/
     img: realme.png
@@ -189,6 +199,16 @@ websites:
     facebook: CompaniesHouse
     regions:
       - gb
+
+  - name: US Citizenship and Immigration Services
+    url: https://uscis.gov/
+    img: uscis.png
+    tfa:
+      - sms
+      - email
+      - totp
+    regions:
+      - us
 
   - name: US Internal Revenue Service
     url: https://www.irs.gov/Individuals/Get-Transcript
