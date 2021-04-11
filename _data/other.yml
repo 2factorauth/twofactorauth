@@ -149,6 +149,14 @@ websites:
     img: crowdflower.png
     twitter: CrowdFlower
 
+  - name: Databox
+    url: https://databox.com
+    img: databox.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.databox.com/article/515--
+
   - name: Delighted
     url: https://delightedapp.com/
     img: delighted.png
