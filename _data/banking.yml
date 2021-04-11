@@ -917,6 +917,16 @@ websites:
     twitter: MandT_Help
     facebook: MandTBank
 
+  - name: Macquarie Bank
+    url: https://www.macquarie.com.au/
+    img: macquariebank.svg
+    tfa:
+      - proprietary
+    doc: https://help.macquarie.com/s/article/How-do-I-set-up-two-factor-authentication
+    exception: "2FA is only available when 'Ultimate' security is enabled and an SMS-capable phone is required for initial setup."
+    regions:
+      - au
+
   - name: Marcus by Goldman Sachs
     url: https://www.marcus.com/
     img: marcus.png
