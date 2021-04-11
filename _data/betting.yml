@@ -21,19 +21,19 @@ websites:
       - totp
     doc: https://cloudbet.zendesk.com/hc/en-us/articles/223120088/
 
-  - name: Smarkets
-    url: https://www.smarkets.com/
-    img: smarkets.png
-    tfa:
-      - totp
-    doc: https://help.smarkets.com/hc/en-gb/articles/115000822171
-
   - name: Matchbook
     url: https://www.matchbook.com/
     img: matchbook.svg
     tfa:
       - totp
     doc: https://www.matchbook.com/page/getting_started/setup2fa/
+
+  - name: Smarkets
+    url: https://www.smarkets.com/
+    img: smarkets.png
+    tfa:
+      - totp
+    doc: https://help.smarkets.com/hc/en-gb/articles/115000822171
 
   - name: win2day
     url: https://www.win2day.at/
