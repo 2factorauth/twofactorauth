@@ -521,6 +521,15 @@ websites:
     img: promoter.png
     twitter: Promoter_io
 
+  - name: Refersion
+    url: https://refersion.com
+    img: refersion.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.refersion.com/en/articles/2989703
+    exception: "SMS 2FA is not available in all regions."
+
   - name: Repairshopr
     url: https://www.repairshopr.com/
     img: repairshopr.png
