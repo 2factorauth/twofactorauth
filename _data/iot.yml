@@ -9,6 +9,13 @@ websites:
     doc: https://kb.arlo.com/000062288
     exception: "Email 2FA is always available as a backup."
 
+  - name: Balena
+    url: https://www.balena.io
+    img: balena.svg
+    tfa:
+      - totp
+    doc: https://www.balena.io/docs/learn/manage/account/#two-factor-authentication
+
   - name: ecobee
     url: https://ecobee.com
     img: ecobee.png
@@ -93,9 +100,10 @@ websites:
     img: totalconnect.png
 
   - name: Wyze
-    url: https://www.wyzecam.com
+    url: https://www.wyze.com
     img: wyze.png
     tfa:
       - sms
+      - totp
     doc: https://support.wyzecam.com/hc/en-us/articles/360024402052
     exception: "2FA via SMS is only available for USA and Canada."

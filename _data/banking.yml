@@ -684,7 +684,10 @@ websites:
     tfa:
       - proprietary
       - hardware
-    doc: https://www.firsttechfed.com/Tools-and-Resources/Tools-and-Resources/What-You-Can-Do-To-Protect-Your-Privacy#3
+      - sms
+      - phone
+      - email
+    doc: https://www.firsttechfed.com/help/security/prevent#multifunction
 
   - name: FirstBank
     url: https://www.efirstbank.com/
@@ -908,11 +911,21 @@ websites:
       - hardware
     doc: https://www.lansforsakringar.se/privat/att-vara-kund/digitala-tjanster-telefonbank/internetbanken/
 
-  - name: MandT Bank
+  - name: M&amp;T Bank
     url: https://www.mtb.com/
     img: mtbank.png
     twitter: MandT_Help
     facebook: MandTBank
+
+  - name: Macquarie Bank
+    url: https://www.macquarie.com.au/
+    img: macquariebank.svg
+    tfa:
+      - proprietary
+    doc: https://help.macquarie.com/s/article/How-do-I-set-up-two-factor-authentication
+    exception: "2FA is only available when 'Ultimate' security is enabled and an SMS-capable phone is required for initial setup."
+    regions:
+      - au
 
   - name: Marcus by Goldman Sachs
     url: https://www.marcus.com/
@@ -955,7 +968,7 @@ websites:
     tfa:
       - sms
       - proprietary
-    doc: https://support.n26.com/en-gb/getting-started/psd2/how-to-log-in-with-two-factor-authentication
+    doc: https://support.n26.com/en-eu/security/passwords-and-codes/how-to-log-in-with-two-factor-authentication
 
   - name: NASA Federal Credit Union
     url: https://www.nasafcu.com/
@@ -991,9 +1004,10 @@ websites:
     url: https://www.navyfederal.org/
     img: navyfederal.png
     tfa:
+      - sms
       - email
       - proprietary
-    doc: https://nfcucloud.custhelp.com/app/answers/list/c/543
+    doc: https://www.navyfederal.org/services/security/two-step-verification.html
 
   - name: netbank
     url: https://www.netbank.de/
@@ -1135,20 +1149,23 @@ websites:
       - hardware
     doc: https://www.postbank.de/privatkunden/sicherheitsverfahren.html
 
-  - name: PosteItaliane
-    url: https://www.poste.it/
-    twitter: PosteNews
-    facebook: PosteItaliane
-    email_address: servizio.clienti@posteitaliane.it
-    img: posteitaliane.png
-    lang: it
-
   - name: Rabobank
     url: https://www.rabobank.nl/
     img: rabobank.png
     tfa:
       - hardware
     doc: https://www.rabobank.nl/bedrijven/betalen/zelf-betalingen-doen/rabo-scanner/
+
+  - name: Radius Bank
+    url: https://radiusbank.com
+    img: radiusbank.svg
+    tfa:
+      - sms
+      - phone
+      - email
+      - totp
+    regions:
+      - us
 
   - name: Raiffeisen Bank CZ
     url: https://www.rb.cz/
@@ -1307,7 +1324,9 @@ websites:
     img: sofi.png
     tfa:
       - sms
-    doc: https://www.sofi.com/blog/introducing-two-step-verification-sofi-next-level-account-protection/
+      - phone
+      - email
+    doc: https://support.sofi.com/hc/en-us/articles/360043651452
 
   - name: Sparda Banken
     url: https://www.sparda.de/
