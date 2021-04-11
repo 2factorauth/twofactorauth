@@ -629,6 +629,14 @@ websites:
       - sms
     doc: https://support.viabtc.com/hc/en-us/articles/900001693343
 
+  - name: Voyager
+    url: https://investvoyager.com
+    img: investvoyager.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.investvoyager.com/support/solutions/43000367274
+
   - name: Wirex
     url: https://wirexapp.com/
     img: wirex.png
