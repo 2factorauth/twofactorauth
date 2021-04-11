@@ -26,6 +26,12 @@ websites:
       - totp
     doc: https://www.bitdefender.com/consumer/support/answer/1581/
 
+  - name: BitSight
+    url: https://bitsight.com
+    img: bitsight.svg
+    tfa:
+      - totp
+
   - name: Blur
     url: https://www.abine.com/
     img: blur.png
