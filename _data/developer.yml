@@ -241,6 +241,13 @@ websites:
       - totp
     doc: https://docs.elmah.io/how-to-enable-two-factor-login/
 
+  - name: Envoyer
+    url: https://envoyer.io
+    img: envoyer.svg
+    tfa:
+      - totp
+    doc: https://docs.envoyer.io/1.0/accounts/your-account.html#securing-your-account-with-two-factor-authentication
+
   - name: Esri
     url: https://www.esri.com
     img: esri.png
