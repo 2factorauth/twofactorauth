@@ -541,6 +541,15 @@ websites:
     regions:
       - br
 
+  - name: NairaEx
+    url: https://nairaex.com/
+    img: nairaex.svg
+    tfa:
+      - totp
+    doc: https://support.nairaex.com/support/solutions/articles/43000335554
+    regions:
+      - ng
+
   - name: OKEx
     url: https://www.okex.com/
     img: okex.png
