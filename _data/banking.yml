@@ -919,7 +919,10 @@ websites:
     img: macquariebank.png
     tfa:
       - proprietary
-    doc: https://help.macquarie.com/s/article/How-do-I-set-up-two-factor-authentication
+    exception: "2FA is only available when 'Ultimate' security is enabled and an SMS-capable phone is required for initial setup."
+    doc: https://help.macquarie.com/s/article/How-do-I-set-up-two-factor-authenticatio
+    regions:
+      - au
 
   - name: Marcus by Goldman Sachs
     url: https://www.marcus.com/
