@@ -580,6 +580,16 @@ websites:
       - u2f
     doc: https://support.probit.com/hc/en-us/sections/900000153103
 
+  - name: River Financial
+    url: https://river.com/
+    img: river.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://river.com/support/knowledge-base/articles/enable-multi-factor-authentication
+    regions:
+      - us
+
   - name: Quidax
     url: https://quidax.com/
     img: quidax.svg
