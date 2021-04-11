@@ -125,6 +125,23 @@ websites:
     tfa:
       - totp
 
+  - name: Clover
+    url: https://www.clover.com
+    img: clover.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://www.clover.com/help/two-factor-authentication
+    regions:
+      - us
+      - ca
+      - gb
+      - ie
+      - de
+      - at
+      - nl
+      - ar
+
   - name: CommuterBenefits
     url: https://commuterbenefits.com/
     img: commuterbenefits.png
