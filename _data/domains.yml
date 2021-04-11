@@ -13,13 +13,6 @@ websites:
       - totp
     doc: https://www.ionos.com/help/index.php?id=3269
 
-  - name: 1blu
-    url: https://www.1blu.de
-    img: 1blu.png
-    tfa:
-      - totp
-    doc: https://faq.1blu.de/content/613/999/de/sie-moechten-die-2_faktor_authentisierung-fuer-den-1blu_kundenlogin-nutzen.html
-
   - name: 101domain
     url: https://101domain.com
     img: 101domain.png
@@ -38,6 +31,13 @@ websites:
     img: 123reg.png
     twitter: 123reg
     facebook: 123regfans
+
+  - name: 1blu
+    url: https://www.1blu.de
+    img: 1blu.png
+    tfa:
+      - totp
+    doc: https://faq.1blu.de/content/613/999/de/sie-moechten-die-2_faktor_authentisierung-fuer-den-1blu_kundenlogin-nutzen.html
 
   - name: Above.com
     url: https://www.above.com
