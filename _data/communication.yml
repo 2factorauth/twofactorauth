@@ -4,6 +4,7 @@ websites:
     img: actionnetwork.png
     tfa:
       - totp
+      - sms
     doc: https://help.actionnetwork.org/hc/en-us/articles/217206826
 
   - name: Airship
@@ -47,8 +48,8 @@ websites:
   - name: Carbon Black Community Exchange
     url: https://community.carbonblack.com/
     img: carbonblack.png
-    twitter: CarbonBlack_Inc
-    facebook: carbonblackinc
+    twitter: vmw_carbonblack
+    facebook: VMWCarbonBlack
 
   - name: Close
     url: https://close.com/
@@ -65,12 +66,34 @@ websites:
       - totp
     doc: https://help.cloze.com/knowledge_base/topics/how-do-i-enable-2-step-authentication
 
+  - name: Coda
+    url: https://coda.io
+    img: coda.svg
+    tfa:
+      - totp
+    doc: https://help.coda.io/en/articles/3833338
+
+  - name: ConvertKit
+    url: https://convertkit.com
+    img: convertkit.svg
+    tfa:
+      - sms
+      - proprietary
+    doc: https://help.convertkit.com/en/articles/3925724
+
   - name: Customer.io
     url: https://customer.io
     img: customerio.png
     tfa:
       - totp
     doc: https://customer.io/docs/two-factor-auth
+
+  - name: Demio
+    url: https://demio.com
+    img: demio.svg
+    tfa:
+      - totp
+    doc: https://help.demio.com/en/articles/4794494
 
   - name: Direct Mail
     url: https://directmailmac.com
@@ -104,6 +127,13 @@ websites:
     facebook: deutschepost
     img: epost.png
     lang: de
+
+  - name: EasySendy
+    url: https://easysendy.com
+    img: easysendy.png
+    tfa:
+      - totp
+    doc: https://easysendy.com/sendy/sendy-version-2-1-0-two-factor-authentication-released
 
   - name: Elastic Email
     url: https://elasticemail.com
@@ -164,6 +194,7 @@ websites:
     img: groups_io.png
     tfa:
       - totp
+    doc: https://groups.io/helpcenter/membersmanual/1/understanding-groups-io-accounts/setting-account-preferences-and-viewing-account-information
 
   - name: Hangouts
     url: https://hangouts.google.com/
@@ -245,6 +276,14 @@ websites:
       - totp
     doc: https://missiveapp.com/faq/enable-2-factor-authentication
 
+  - name: Notejoy
+    url: https://notejoy.com
+    img: notejoy.svg
+    tfa:
+      - totp
+    doc: https://notejoy.com/help/two-factor-authentication
+    exception: "2FA is not available to Free plan users and is not available on the Android app."
+
   - name: Nulab
     url: https://nulab.com/
     img: nulab.png
@@ -253,6 +292,21 @@ websites:
       - totp
       - sms
     doc: https://support.nulab.com/hc/en-us/articles/115001025087
+
+  - name: OnceHub
+    url: https://www.oncehub.com
+    img: oncehub.svg
+    tfa:
+      - sms
+    doc: https://help.oncehub.com/help/set-up-two-factor-authentication
+
+  - name: Pepipost
+    url: https://www.pepipost.com/
+    img: pepipost.png
+    tfa:
+      - email
+      - totp
+    doc: https://docs.pepipost.com/docs/two-factor-authentication-2fa
 
   - name: Pipedrive
     url: https://www.pipedrive.com/
@@ -366,10 +420,13 @@ websites:
       - phone
     doc: https://telegram.org/blog/sessions-and-2-step-verification
 
-  - name: ToutApp
-    url: https://www1.toutapp.com/
-    facebook: toutapp
-    img: toutapp.png
+  - name: Textlocal
+    url: https://textlocal.com
+    img: textlocal.png
+    tfa:
+      - sms
+      - totp
+    doc: https://www.textlocal.com/support/knowledge-base/two-factor-authentication/
 
   - name: Viber
     url: https://www.viber.com

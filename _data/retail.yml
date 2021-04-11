@@ -32,7 +32,7 @@ websites:
       - sms
       - phone
       - totp
-    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
+    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=G3PWZPU52FKN7PW4
     exception: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
 
   - name: Apple
@@ -416,6 +416,13 @@ websites:
     twitter: pccasegear
     img: pccasegear.png
 
+  - name: Pro Wrestling Tees
+    url: https://www.prowrestlingtees.com/
+    twitter: PWTees
+    facebook: prowrestlingtees
+    email_address: info@prowrestlingtees.com
+    img: prowrestlingtees.png
+
   - name: Purse
     url: https://purse.io/
     img: purse.png
@@ -501,8 +508,13 @@ websites:
 
   - name: Target
     url: https://www.target.com/
-    twitter: Target
     img: target.png
+    tfa:
+      - sms
+      - email
+    doc: https://security.target.com/FAQs
+    regions:
+      - us
 
   - name: Thalia
     url: https://www.thalia.de/
