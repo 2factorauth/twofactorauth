@@ -61,6 +61,14 @@ websites:
     regions:
       - jp
 
+  - name: BitForex
+    url: https://bitforex.com
+    img: bitforex.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.bitforex.com/hc/en-us/articles/360006825152
+
   - name: BitGo
     url: https://www.bitgo.com
     img: bitgo.png
