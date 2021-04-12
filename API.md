@@ -19,17 +19,17 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
 
 ### URIs
 
-|URI|Coverage|
-|---|--------|
-|https://2fa.directory/api/v2/all.json|All sites|
-|https://2fa.directory/api/v2/tfa.json|All 2FA-supporting sites|
-|https://2fa.directory/api/v2/sms.json|SMS|
-|https://2fa.directory/api/v2/phone.json|Phone calls|
-|https://2fa.directory/api/v2/email.json|Email 2FA|
-|https://2fa.directory/api/v2/hardware.json|non-U2F hardware 2FA tokens|
-|https://2fa.directory/api/v2/u2f.json|U2F hardware tokens|
-|https://2fa.directory/api/v2/totp.json|RFC-6238|
-|https://2fa.directory/api/v2/proprietary.json|non-RFC-6238 software 2FA|
+|Coverage|Unsigned file|Signed file|
+|--------|-------------|-----------|
+|All sites|https://2fa.directory/api/v2/all.json|https://2fa.directory/api/v2/all.json.sig|
+|All 2FA-supporting sites|https://2fa.directory/api/v2/tfa.json|https://2fa.directory/api/v2/tfa.json.sig|
+|SMS|https://2fa.directory/api/v2/sms.json|https://2fa.directory/api/v2/sms.json.sig|
+|Phone calls|https://2fa.directory/api/v2/phone.json|https://2fa.directory/api/v2/phone.json.sig|
+|Email 2FA|https://2fa.directory/api/v2/email.json|https://2fa.directory/api/v2/email.json.sig|
+|non-U2F hardware 2FA tokens|https://2fa.directory/api/v2/hardware.json|https://2fa.directory/api/v2/hardware.json.sig|
+|U2F hardware tokens|https://2fa.directory/api/v2/u2f.json|https://2fa.directory/api/v2/u2f.json.sig|
+|RFC-6238|https://2fa.directory/api/v2/totp.json|https://2fa.directory/api/v2/totp.json.sig|
+|non-RFC-6238 software 2FA|https://2fa.directory/api/v2/proprietary.json|https://2fa.directory/api/v2/proprietary.json.sig|
 
 
 ### Elements
@@ -88,9 +88,9 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
 
 ### URIs
 
-|URI|Coverage|
-|---|--------|
-|https://2fa.directory/api/v1/data.json|All sites|
+|Coverage|Unsigned file|Signed file|
+|--------|-------------|-----------|
+|All sites|https://2fa.directory/api/v1/data.json|https://2fa.directory/api/v1/data.json.sig|
 
 ### Elements
 
