@@ -574,6 +574,13 @@ websites:
       - totp
     doc: https://paxful.com/support/en-us/articles/360012619094
 
+  - name: Paxos
+    url: https://paxos.com
+    img: paxos.svg
+    tfa:
+      - totp
+    doc: https://help.paxos.com/hc/en-us/articles/360042320451
+
   - name: PayKassa
     url: https://paykassa.pro/
     img: paykassa.png
