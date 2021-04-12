@@ -566,6 +566,16 @@ websites:
       - sms
     doc: https://www.okex.com/support/hc/en-us/articles/360000350271
 
+  - name: Paritex
+    url: https://paritex.com
+    img: paritex.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://paritex.freshdesk.com/en/support/solutions/folders/44001201778
+    regions:
+      - tr
+
   - name: Paxful
     url: https://paxful.com
     img: paxful.svg
