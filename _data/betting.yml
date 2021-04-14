@@ -21,6 +21,13 @@ websites:
       - totp
     doc: https://cloudbet.zendesk.com/hc/en-us/articles/223120088/
 
+  - name: Parimatch
+    url: https://www.parimatch.com/
+    img: parimatch.svg
+    tfa:
+      - totp
+    doc: https://faq.parimatch.com/en/account-access-and-security/
+
   - name: Smarkets
     url: https://www.smarkets.com/
     img: smarkets.png
