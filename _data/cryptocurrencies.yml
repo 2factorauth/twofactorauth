@@ -333,6 +333,14 @@ websites:
     regions:
       - au
 
+  - name: CoinTiger
+    url: https://www.cointiger.com/
+    img: cointiger.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://cointiger.zendesk.com/hc/en-us/articles/360009805534
+
   - name: CoinTracker
     url: https://www.cointracker.io
     img: cointracker.png
