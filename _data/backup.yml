@@ -148,7 +148,8 @@ websites:
       - sms
       - totp
     doc: https://support.onehub.com/hc/en-us/articles/360039792571
-
+    exception: "Software 2FA requires adding a phone number as a fallback."
+    
   - name: PCloud
     url: https://www.pcloud.com
     img: pcloud.png
