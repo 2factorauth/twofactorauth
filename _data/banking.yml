@@ -1066,8 +1066,9 @@ websites:
   - name: Northeast Credit Union
     url: https://necu.org
     img: necu.png
-    twitter: NortheastCU
-    facebook: northeastcu
+    tfa:
+      - proprietary
+    doc: https://necu.org/business/online-services/online/online-security/
 
   - name: Nubank
     url: https://www.nubank.com.br
