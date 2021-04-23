@@ -112,7 +112,7 @@ websites:
       - totp
       - hardware
     doc: https://dome9.com/overview/strong-2-factor-authentication
-  
+
   - name: EasyDMARC
     url: https://easydmarc.com
     img: easydmarc.png
@@ -153,7 +153,7 @@ websites:
       - totp
     doc: https://docs.hackerone.com/hackers/two-factor-authentication.html
     exception: SMS-capable phone required for initial setup.
-    
+
   - name: hCaptcha
     url: https://hcaptcha.com
     img: hcaptcha.png
@@ -217,7 +217,7 @@ websites:
     tfa:
       - totp
     doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
-    
+
   - name: SecurityTrails
     url: https://securitytrails.com/
     img: securitytrails.svg
@@ -279,3 +279,10 @@ websites:
     tfa:
       - totp
     doc: https://docs.webroot.com/us/en/home/wsa_website_userguide/wsa_managementwebsite_userguide.htm#GettingStarted/Enabling2-FactorAuthentication.htm
+
+  - name: Boardgent
+    url: https://www.boardgent.com
+    img: boardgent.png
+    tfa:
+      - totp
+    doc: https://help.boardgent.com/en/articles/3347382-is-it-possible-to-use-two-factor-authentication-2fa-in-boardgent
