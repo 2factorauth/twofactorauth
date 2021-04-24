@@ -299,7 +299,7 @@ websites:
       - totp
       - u2f
     doc: https://support.twitter.com/articles/20170388
-    exception: "Mobile apps do not support Hardware 2FA. Hardware 2FA requires enabling back-up method. Cannot add multiple security keys. SMS only available on select providers."
+    exception: "Hardware 2FA requires enabling back-up method. SMS only available on select providers."
 
   - name: VanillaForums.com
     url: https://vanillaforums.com

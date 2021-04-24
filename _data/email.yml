@@ -9,13 +9,14 @@ websites:
       - u2f
     doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
-  - name: FastMail
+  - name: Fastmail
     url: https://www.fastmail.com/
     img: fastmail.png
     tfa:
       - sms
       - totp
       - hardware
+      - u2f
     doc: https://www.fastmail.com/help/account/2fa.html
 
   - name: Freenet

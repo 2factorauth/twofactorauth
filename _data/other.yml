@@ -125,6 +125,23 @@ websites:
     tfa:
       - totp
 
+  - name: Clover
+    url: https://www.clover.com
+    img: clover.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://www.clover.com/help/two-factor-authentication
+    regions:
+      - us
+      - ca
+      - gb
+      - ie
+      - de
+      - at
+      - nl
+      - ar
+
   - name: CommuterBenefits
     url: https://commuterbenefits.com/
     img: commuterbenefits.png
@@ -149,11 +166,20 @@ websites:
     img: crowdflower.png
     twitter: CrowdFlower
 
+  - name: Databox
+    url: https://databox.com
+    img: databox.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.databox.com/article/515--
+
   - name: Delighted
     url: https://delightedapp.com/
     img: delighted.png
     tfa:
       - sms
+    doc: https://help.delighted.com/article/526--#2-step
 
   - name: Dreamstime
     url: https://www.dreamstime.com/
@@ -446,6 +472,13 @@ websites:
     tfa:
       - totp
 
+  - name: Optimizely
+    url: https://www.optimizely.com
+    img: optimizely.svg
+    tfa:
+      - totp
+    doc: https://help.optimizely.com/Account_Settings/Protect_your_account_with_individual_2-step_verification
+
   - name: Pastebin
     url: https://pastebin.com
     img: pastebin.png
@@ -461,23 +494,24 @@ websites:
       - totp
     doc: https://support.patreon.com/hc/en-us/articles/206538086
 
-  - name: PhraseApp
-    url: https://phraseapp.com
-    img: phraseapp.png
+  - name: Phrase
+    url: https://phrase.com
+    img: phrase.png
     tfa:
       - totp
-    doc: https://phraseapp.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
+    doc: https://phrase.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
 
   - name: Pinboard
     url: https://pinboard.in/
     twitter: Pinboard
     img: pinboard.png
+    email_address: support@pinboard.in
 
-  - name: Planning Center Online
-    url: https://planning.center/
+  - name: Planning Center
+    url: https://www.planningcenter.com/
     twitter: PlanningCenter
     facebook: PlanningCenter
-    img: planningcenter.png
+    img: planningcenter.svg
 
   - name: Pocket
     url: https://www.getpocket.com
@@ -495,6 +529,15 @@ websites:
     url: https://promoter.io/
     img: promoter.png
     twitter: Promoter_io
+
+  - name: Refersion
+    url: https://refersion.com
+    img: refersion.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.refersion.com/en/articles/2989703
+    exception: "SMS 2FA is not available in all regions."
 
   - name: Repairshopr
     url: https://www.repairshopr.com/

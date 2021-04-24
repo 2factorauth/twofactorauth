@@ -52,11 +52,6 @@ websites:
       - totp
     doc: https://all-inkl.com/wichtig/faq/#2fa
 
-  - name: ARP Networks
-    url: https://arpnetworks.com/
-    img: arpnetworks.png
-    twitter: arpnetworks
-
   - name: Binary Lane
     url: https://www.binarylane.com.au/
     img: binarylane.png
@@ -378,7 +373,7 @@ websites:
       - totp
     doc: https://ar.neolo.com/knowledgebase/215/Autenticacion-de-2-factores.html
 
-  - name: Netcup
+  - name: netcup
     url: https://netcup.eu/
     img: netcup.png
     tfa:
@@ -497,6 +492,12 @@ websites:
       - totp
     doc: https://segment.com/docs/iam/mfa/
 
+  - name: Server.pro
+    url: https://server.pro/
+    img: serverpro.svg
+    tfa:
+      - totp
+
   - name: Site5
     url: https://www.site5.com/
     twitter: site5
@@ -583,6 +584,13 @@ websites:
       - totp
     doc: https://www.upcloud.com/support/two-factor-authentication/
     exception: "SMS is required for password recovery."
+    
+  - name: VeeroTech
+    url: https://www.veerotech.net
+    img: veerotech.png
+    tfa:
+      - totp
+    doc: https://www.veerotech.net/kb/account-management-portal-two-factor-authentication-billing-support/
 
   - name: VentraIP
     url: https://ventraip.com.au
