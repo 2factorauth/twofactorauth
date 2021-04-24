@@ -165,6 +165,15 @@ websites:
       - phone
     doc: https://www.onvista-bank.de/service/sicherheit/transaktionssicherheit.html#tab-1301-2
 
+  - name: Passfolio
+    url: https://passfolio.us
+    img: passfolio.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://www.passfolio.com/posts/how-to-use-authy-for-two-factor-authentication
+    exception: "SMS 2FA is enabled by default."
+
   - name: Personal Capital
     url: https://www.personalcapital.com
     img: personalcapital.png
