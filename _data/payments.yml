@@ -6,7 +6,7 @@ websites:
       - sms
       - phone
       - totp
-    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
+    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=G3PWZPU52FKN7PW4
     exception: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
 
   - name: American Express
@@ -23,6 +23,16 @@ websites:
     doc: https://www.appfolio.com/help/online-portal
     regions:
       - us
+
+  - name: Bill
+    url: https://www.bill.com
+    img: bill.svg
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://help.bill.com/hc/en-us/articles/360000023843
+    exception: "2FA via phone call is available for US and CA only."
 
   - name: Braintree
     img: braintree.png
