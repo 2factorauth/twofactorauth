@@ -151,7 +151,7 @@ websites:
     img: enom.png
     tfa:
       - totp
-    doc: https://www.enom.com/kb/kb/kb_1687-setup-2-factor.htm
+    doc: https://enom.help/2fa
 
   - name: Epik
     url: https://www.epik.com
@@ -553,3 +553,12 @@ websites:
     url: https://www.verio.com/
     twitter: verio
     img: verio.png
+
+  - name: Whois
+    url: https://www.whois.com
+    img: whois.png
+    tfa:
+      - sms
+      - totp
+    doc: https://manage.whois.com/kb/node/2690
+    exception: "TOTP 2FA is only available for resellers."
