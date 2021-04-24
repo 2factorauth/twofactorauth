@@ -399,7 +399,9 @@ websites:
     url: https://ftx.com
     img: ftx.svg
     tfa:
+      - sms
       - totp
+      - u2f
     doc: https://help.ftx.com/hc/en-us/articles/360033774352
 
   - name: Gate.io
