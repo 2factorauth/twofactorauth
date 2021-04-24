@@ -590,6 +590,14 @@ websites:
     facebook: spare5app
     email_address: feedback@spare5.com
 
+  - name: Talkdesk
+    url: https://www.talkdesk.com/
+    img: talkdesk.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://support.talkdesk.com/hc/en-us/articles/360015179592
+
   - name: ThriveCart
     url: https://www.thrivecart.com
     img: thrivecart.svg
