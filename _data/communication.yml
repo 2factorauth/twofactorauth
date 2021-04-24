@@ -30,18 +30,19 @@ websites:
       - totp
     doc: https://helpdesk.bitrix24.com/open/9800171/
 
-  - name: Campaign Monitor
-    url: https://campaignmonitor.com/
-    img: campaignmonitor.svg
-    tfa:
-      - totp
-    doc: https://help.campaignmonitor.com/two-factor-authentication
   - name: Bonusly
     url: https://bonus.ly/
     img: bonusly.svg
     tfa:
       - totp
     doc: https://help.bonus.ly/en/articles/2889878
+
+  - name: Campaign Monitor
+    url: https://campaignmonitor.com/
+    img: campaignmonitor.svg
+    tfa:
+      - totp
+    doc: https://help.campaignmonitor.com/two-factor-authentication
 
   - name: Campfire
     url: https://campfirenow.com/
