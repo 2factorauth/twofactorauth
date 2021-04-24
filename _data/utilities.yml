@@ -590,7 +590,8 @@ websites:
     img: voipms.png
     tfa:
       - email
-    doc: https://wiki.voip.ms/article/Two-step_Verification
+      - totp
+    doc: https://wiki.voip.ms/article/TOTP_Authentication
 
   - name: Wingo
     url: https://www.wingo.ch
