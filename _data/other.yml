@@ -39,6 +39,13 @@ websites:
       - totp
     doc: https://angel.co/projects/106166
 
+  - name: Audiense
+    url: https://audiense.com/
+    img: audiense.svg
+    tfa:
+      - totp
+    doc: https://help.audiense.com/hc/en-gb/articles/115001467232
+
   - name: Autodesk
     url: https://www.autodesk.com
     img: autodesk.png
@@ -405,6 +412,7 @@ websites:
       - phone
       - totp
     doc: https://help.kickstarter.com/hc/en-us/articles/115005127094
+    exception: "Software 2FA requires setting up SMS 2FA as a fallback."
 
   - name: Liftopia
     url: https://www.liftopia.com
@@ -477,6 +485,13 @@ websites:
     img: opera.png
     tfa:
       - totp
+
+  - name: Optimizely
+    url: https://www.optimizely.com
+    img: optimizely.svg
+    tfa:
+      - totp
+    doc: https://help.optimizely.com/Account_Settings/Protect_your_account_with_individual_2-step_verification
 
   - name: Pastebin
     url: https://pastebin.com

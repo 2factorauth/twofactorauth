@@ -399,7 +399,9 @@ websites:
     url: https://ftx.com
     img: ftx.svg
     tfa:
+      - sms
       - totp
+      - u2f
     doc: https://help.ftx.com/hc/en-us/articles/360033774352
 
   - name: Gate.io
@@ -670,6 +672,14 @@ websites:
     tfa:
       - totp
     doc: https://support.uphold.com/hc/en-us/articles/360024042471
+
+  - name: Valr
+    url: https://valr.com
+    img: valr.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.valr.com/hc/en-us/articles/360013860012
 
   - name: ViaBTC
     url: https://viabtc.com/

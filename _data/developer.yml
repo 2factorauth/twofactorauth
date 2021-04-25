@@ -101,6 +101,13 @@ websites:
     img: bitnami.png
     twitter: bitnami
 
+  - name: Bitrise
+    url: https://www.bitrise.io/
+    img: bitrise.svg
+    tfa:
+      - totp
+    doc: https://devcenter.bitrise.io/getting-started/account-security/
+
   - name: Buddy
     url: https://buddy.works
     img: buddy.png
@@ -375,9 +382,19 @@ websites:
       - totp
     doc: https://docs.mapbox.com/accounts/guides/settings/#two-factor-authentication
 
+  - name: MongoDB Atlas
+    url: https://atlas.mongodb.com
+    img: mongodb.png
+    tfa:
+      - totp
+      - email
+      - proprietary
+      - sms
+    doc: https://docs.atlas.mongodb.com/security-multi-factor-authentication/
+
   - name: MongoDB Cloud Manager
     url: https://cloud.mongodb.com
-    img: mongodbmms.png
+    img: mongodb.png
     tfa:
       - totp
       - email
