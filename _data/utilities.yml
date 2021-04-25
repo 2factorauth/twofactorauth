@@ -592,6 +592,7 @@ websites:
       - email
       - totp
     doc: https://wiki.voip.ms/article/TOTP_Authentication
+    exception: "Only one of the 2FA methods can be enabled at the same time."
 
   - name: Wingo
     url: https://www.wingo.ch
