@@ -399,6 +399,7 @@ websites:
       - phone
       - totp
     doc: https://help.kickstarter.com/hc/en-us/articles/115005127094
+    exception: "Software 2FA requires setting up SMS 2FA as a fallback."
 
   - name: Liftopia
     url: https://www.liftopia.com
