@@ -311,6 +311,13 @@ websites:
     twitter: Gumtree
     facebook: gumtree
 
+  - name: Heap
+    url: https://heap.io/
+    img: heap.svg
+    tfa:
+      - totp
+    doc: https://help.heap.io/category/heap-administration/secure-access/
+
   - name: Heise online
     url: https://www.heise.de/
     img: heise.png
