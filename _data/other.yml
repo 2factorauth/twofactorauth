@@ -317,6 +317,7 @@ websites:
     tfa:
       - totp
     doc: https://help.heap.io/heap-administration/secure-access/2fa/
+    exception: "2FA is only available for users on the Business plan."
 
   - name: Heise online
     url: https://www.heise.de/
