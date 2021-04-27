@@ -415,6 +415,13 @@ websites:
     twitter: Liftopia
     facebook: liftopia
 
+  - name: Looker
+    url: https://looker.com/
+    img: looker.svg
+    tfa:
+      - totp
+    doc: https://docs.looker.com/admin-options/security/two-factor-auth
+
   - name: MathWorks
     url: https://www.mathworks.com/
     img: mathworks.png
