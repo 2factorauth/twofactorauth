@@ -472,6 +472,13 @@ websites:
       - totp
     doc: https://support.rebrandly.com/hc/en-us/articles/360007220373
 
+  - name: Register365
+    url: https://www.register365.com/
+    img: register365.svg
+    tfa:
+      - totp
+    doc: https://www.register365.com/support/articles/enabling-two-factor-authentication-for-the-control-panel/
+
   - name: Register4Less
     url: https://register4less.com/
     img: register4less.png
