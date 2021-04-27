@@ -16,6 +16,20 @@ websites:
       - totp
     doc: https://www.balena.io/docs/learn/manage/account/#two-factor-authentication
 
+  - name: Canary
+    url: https://canary.is
+    img: canary.svg
+    tfa:
+      - sms
+    doc: https://help.canary.is/hc/en-us/articles/360043987254
+    regions:
+      - ca
+      - de
+      - fr
+      - gb
+      - ie
+      - us
+
   - name: ecobee
     url: https://ecobee.com
     img: ecobee.png
