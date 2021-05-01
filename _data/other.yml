@@ -195,6 +195,14 @@ websites:
       - sms
     doc: https://help.delighted.com/article/526--#2-step
 
+  - name: Domain
+    url: https://www.domain.com.au/
+    img: domain.svg
+    tfa:
+      - sms
+    doc: https://help.domain.com.au/hc/en-us/articles/360012412713
+    exception: "2FA is not available on the app."
+
   - name: Dreamstime
     url: https://www.dreamstime.com/
     img: dreamstime.png
