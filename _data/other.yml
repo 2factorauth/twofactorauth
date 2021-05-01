@@ -122,6 +122,13 @@ websites:
       - totp
     doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
 
+  - name: CleverTap
+    url: https://clevertap.com/
+    img: clevertap.svg
+    tfa:
+      - totp
+    doc: https://docs.clevertap.com/docs/account-security
+
   - name: Clickworker
     url: https://www.clickworker.com/
     img: clickworker.png
