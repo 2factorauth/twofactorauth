@@ -150,6 +150,14 @@ websites:
     facebook: Cacoocom
     twitter: cacoocom
 
+  - name: Caspio
+    url: https://www.caspio.com/
+    img: caspio.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://howto.caspio.com/caspio-id/managing-caspio-id/#Enable2FA
+
   - name: Chocolatey
     url: https://chocolatey.org/
     img: chocolatey.png
