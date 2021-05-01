@@ -364,9 +364,10 @@ websites:
 
   - name: Netim
     url: https://www.netim.com/
-    twitter: Netim_com
-    facebook: netimcom
-    img: netim.png
+    img: netim.svg
+    tfa:
+      - totp
+    doc: https://support.netim.com/en/wiki/2FA
 
   - name: Netregistry
     url: https://www.netregistry.com.au/
