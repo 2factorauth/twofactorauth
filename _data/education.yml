@@ -130,7 +130,7 @@ websites:
     img: cod.png
     regions:
       - us
-      
+
   - name: Colorado School of Mines
     url: https://www.mines.edu/
     img: coloradoschoolofmines.png
@@ -404,7 +404,7 @@ websites:
     twitter: sqanews
     facebook: ScottishQualificationsAuthority
     img: mysqa.png
-    
+
   - name: North Carolina State University
     url: https://ncsu.edu
     img: ncsu.png
@@ -560,6 +560,18 @@ websites:
     twitter: udemy
     facebook: udemy
     email_address: support@udemy.com
+
+  - name: University of California, Berkeley
+    url: https://www.berkeley.edu/
+    img: https://upload.wikimedia.org/wikipedia/commons/a/a1/Seal_of_University_of_California%2C_Berkeley.svg
+    tfa:
+      - sms
+      - phone
+      - proprietary
+      - u2f
+    doc: https://calnetweb.berkeley.edu/calnet-2-step
+    regions:
+      - us
 
   - name: University of Delaware
     url: https://www.udel.edu/
