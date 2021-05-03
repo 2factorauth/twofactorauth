@@ -143,9 +143,12 @@ websites:
 
   - name: Cox
     url: https://www.cox.com/
-    twitter: CoxHelp
-    facebook: coxcommunications
-    img: cox.png
+    img: cox.svg
+    tfa: 
+      - sms
+      - phone
+      - email
+    doc: https://www.cox.com/residential/support/enrolling-in-multifactor-authentication-in-my-account.html
     regions:
       - us
 
