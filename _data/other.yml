@@ -606,11 +606,13 @@ websites:
       - totp
     doc: https://www.sanebox.com/help/127
 
-  - name: SignNow
+  - name: signNow
     url: https://www.signnow.com/
-    img: signnow.png
-    twitter: signnow
-    facebook: esignaturesignnow
+    img: signnow.svg
+    tfa:
+      - sms
+      - phone
+    doc: https://www.signnow.com/features/setup-dual-factor-authentication
 
   - name: SmartSimple
     url: https://www.smartsimple.com
