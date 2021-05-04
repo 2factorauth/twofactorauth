@@ -151,6 +151,13 @@ websites:
     regions:
       - gr
 
+  - name: FastComet
+    url: https://www.fastcomet.com/
+    img: fastcomet.svg
+    tfa:
+      - totp
+    doc: https://www.fastcomet.com/tutorials/getting-started/enabling-two-factor-authenticationr
+
   - name: Fastly
     url: https://www.fastly.com
     img: fastly.png
