@@ -610,8 +610,7 @@ websites:
     url: https://www.signnow.com/
     img: signnow.svg
     tfa:
-      - sms
-      - phone
+      - email
     doc: https://www.signnow.com/features/setup-dual-factor-authentication
 
   - name: SmartSimple
