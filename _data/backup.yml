@@ -25,7 +25,7 @@ websites:
 
   - name: CloudApp
     url: https://www.getcloudapp.com/
-    img: cloudapp.png
+    img: cloudapp.svg
     twitter: cloudapp
     facebook: getcloudapp
     email_address: support@getcloudapp.com
@@ -141,6 +141,15 @@ websites:
     doc: https://support.microsoft.com/en-us/help/12408/
     exception: "2FA phone calls may not be available in all regions"
 
+  - name: Onehub
+    url: https://www.onehub.com/
+    img: onehub.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://support.onehub.com/hc/en-us/articles/360039792571
+    exception: "Software 2FA requires adding a phone number as a fallback."
+    
   - name: PCloud
     url: https://www.pcloud.com
     img: pcloud.png

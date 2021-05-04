@@ -106,6 +106,13 @@ websites:
       - phone
     doc: https://help.creditkarma.com/hc/en-us/articles/360001472366
 
+  - name: Deel
+    url: https://www.letsdeel.com
+    img: letsdeel.svg
+    tfa:
+      - totp
+    doc: https://help.letsdeel.com/en/articles/4810009
+
   - name: DEGIRO
     url: https://www.degiro.nl
     img: degiro.png
@@ -410,7 +417,8 @@ websites:
       - sms
       - phone
       - totp
-    doc: https://accounts-help.lc.intuit.com/questions/1590157
+      - email
+    doc: https://quickbooks.intuit.com/learn-support/en-us/manage-passwords/verify-your-account-with-multi-factor-authentication/00/186340
     exception: "TOTP 2FA only available after enabling SMS or phone 2FA."
 
   - name: QuickFile
@@ -424,6 +432,13 @@ websites:
     url: https://www.quizzle.com
     img: quizzle.png
     twitter: Quizzle
+
+  - name: RightCapital
+    url: https://www.rightcapital.com
+    img: rightcapital.svg
+    tfa:
+      - totp
+    doc: https://help.rightcapital.com/article/39-two-step-verification
 
   - name: Rocket Mortgage
     url: https://www.rocketmortgage.com/

@@ -51,6 +51,13 @@ websites:
       - totp
     doc: https://support.arduino.cc/hc/en-us/articles/360018131120
 
+  - name: Assembla
+    url: https://www.assembla.com
+    img: assembla.svg
+    tfa:
+      - totp
+    doc: https://articles.assembla.com/en/articles/1914077
+
   - name: Atlassian Cloud
     url: https://id.atlassian.com
     img: atlassian.png
@@ -80,11 +87,6 @@ websites:
       - totp
     doc: https://help.batch.com/en/articles/2721053
 
-  - name: Bintray
-    url: https://bintray.com/
-    img: bintray.png
-    twitter: bintray
-
   - name: Bitbucket
     url: https://bitbucket.org
     img: bitbucket.png
@@ -98,6 +100,13 @@ websites:
     url: https://bitnami.com
     img: bitnami.png
     twitter: bitnami
+
+  - name: Bitrise
+    url: https://www.bitrise.io/
+    img: bitrise.svg
+    tfa:
+      - totp
+    doc: https://devcenter.bitrise.io/getting-started/account-security/
 
   - name: Buddy
     url: https://buddy.works
@@ -140,6 +149,14 @@ websites:
     img: cacoo.png
     facebook: Cacoocom
     twitter: cacoocom
+
+  - name: Caspio
+    url: https://www.caspio.com/
+    img: caspio.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://howto.caspio.com/caspio-id/managing-caspio-id/#Enable2FA
 
   - name: Chocolatey
     url: https://chocolatey.org/
@@ -184,6 +201,14 @@ websites:
       - sms
       - totp
     doc: https://help.compose.com/docs/two-factor-authentication
+
+  - name: Contentstack
+    url: https://www.contentstack.com/
+    img: contentstack.svg
+    tfa:
+      - proprietary
+      - sms
+    doc: https://www.contentstack.com/docs/developers/two-factor-authentication/
 
   - name: Cookiebot
     url: https://www.cookiebot.com/
@@ -237,6 +262,13 @@ websites:
     tfa:
       - totp
     doc: https://docs.elmah.io/how-to-enable-two-factor-login/
+
+  - name: Envoyer
+    url: https://envoyer.io
+    img: envoyer.svg
+    tfa:
+      - totp
+    doc: https://docs.envoyer.io/1.0/accounts/your-account.html#securing-your-account-with-two-factor-authentication
 
   - name: Esri
     url: https://www.esri.com
@@ -297,6 +329,7 @@ websites:
     url: https://hotjar.com/
     img: hotjar.png
     twitter: hotjar
+    facebook: HotjarApps
 
   - name: imgix
     url: https://www.imgix.com/
@@ -346,7 +379,7 @@ websites:
 
   - name: Looker
     url: https://looker.com/
-    img: looker.png
+    img: looker.svg
     tfa:
       - totp
     doc: https://www.looker.com/docs/admin/security/two-factor-authentication
@@ -358,9 +391,19 @@ websites:
       - totp
     doc: https://docs.mapbox.com/accounts/guides/settings/#two-factor-authentication
 
+  - name: MongoDB Atlas
+    url: https://atlas.mongodb.com
+    img: mongodb.png
+    tfa:
+      - totp
+      - email
+      - proprietary
+      - sms
+    doc: https://docs.atlas.mongodb.com/security-multi-factor-authentication/
+
   - name: MongoDB Cloud Manager
     url: https://cloud.mongodb.com
-    img: mongodbmms.png
+    img: mongodb.png
     tfa:
       - totp
       - email
@@ -402,6 +445,7 @@ websites:
     url: https://pagerduty.com
     img: pagerduty.png
     twitter: PagerDutyHelp
+    facebook: PagerDuty
     email_address: support@pagerduty.com
 
   - name: Panic Sync
@@ -432,10 +476,18 @@ websites:
 
   - name: Plivo
     url: https://www.plivo.com
-    img: plivo.png
+    img: plivo.svg
     tfa:
       - sms
-    doc: https://www.plivo.com/blog/two-factor-authentication-for-plivo-console/
+      - phone
+    doc: https://support.plivo.com/hc/en-us/articles/360041766411
+
+  - name: Postman
+    url: https://postman.com
+    img: postman.svg
+    twitter: getpostman
+    facebook: getpostman
+    email_address: help@getpostman.com
 
   - name: ProfitWell
     url: https://profitwell.com
@@ -443,6 +495,12 @@ websites:
     tfa:
       - totp
     doc: https://learn.profitwell.com/article/wsudrpi199-setting-up-2-factor-authentication
+
+  - name: Pusher
+    url: https://pusher.com
+    img: pusher.svg
+    tfa:
+      - totp
 
   - name: Pushover
     url: https://pushover.net/
@@ -500,6 +558,13 @@ websites:
     tfa:
       - totp
     doc: https://scotthelme.co.uk/dealing-with-account-recovery-and-2fa/
+
+  - name: RevenueCat
+    url: https://revenuecat.com
+    img: revenuecat.svg
+    tfa:
+      - totp
+    doc: https://docs.revenuecat.com/docs/security
 
   - name: Rollbar
     url: https://rollbar.com/

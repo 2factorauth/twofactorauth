@@ -17,13 +17,20 @@ websites:
       - proprietary
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
+  - name: Alexa.com
+    url: https://www.alexa.com
+    img: alexa.svg
+    twitter: Alexa_Support
+    facebook: alexainternet
+
   - name: Ancestry
     url: https://www.ancestry.com
     img: ancestry.png
     tfa:
       - sms
+      - email
     doc: https://support.ancestry.com/s/article/MFA
-    exception: "2FA is currently only available for customers with a U.S. based phone number."
+    exception: "SMS 2FA is currently only available for customers with a U.S. based phone number."
 
   - name: AngelList
     url: https://angel.co
@@ -32,6 +39,13 @@ websites:
       - sms
       - totp
     doc: https://angel.co/projects/106166
+
+  - name: Audiense
+    url: https://audiense.com/
+    img: audiense.svg
+    tfa:
+      - totp
+    doc: https://help.audiense.com/hc/en-gb/articles/115001467232
 
   - name: Autodesk
     url: https://www.autodesk.com
@@ -108,6 +122,13 @@ websites:
       - totp
     doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
 
+  - name: CleverTap
+    url: https://clevertap.com/
+    img: clevertap.svg
+    tfa:
+      - totp
+    doc: https://docs.clevertap.com/docs/account-security
+
   - name: Clickworker
     url: https://www.clickworker.com/
     img: clickworker.png
@@ -124,6 +145,23 @@ websites:
     img: cloudinary.png
     tfa:
       - totp
+
+  - name: Clover
+    url: https://www.clover.com
+    img: clover.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://www.clover.com/help/two-factor-authentication
+    regions:
+      - us
+      - ca
+      - gb
+      - ie
+      - de
+      - at
+      - nl
+      - ar
 
   - name: CommuterBenefits
     url: https://commuterbenefits.com/
@@ -149,16 +187,39 @@ websites:
     img: crowdflower.png
     twitter: CrowdFlower
 
+  - name: Databox
+    url: https://databox.com
+    img: databox.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.databox.com/article/515--
+
   - name: Delighted
     url: https://delightedapp.com/
     img: delighted.png
     tfa:
       - sms
+    doc: https://help.delighted.com/article/526--#2-step
+
+  - name: Domain
+    url: https://www.domain.com.au/
+    img: domain.svg
+    tfa:
+      - sms
+    doc: https://help.domain.com.au/hc/en-us/articles/360012412713
+    exception: "2FA is not available on the app."
 
   - name: Dreamstime
     url: https://www.dreamstime.com/
     img: dreamstime.png
     twitter: Dreamstime
+
+  - name: Drift
+    url: https://www.drift.com/
+    img: drift.svg
+    tfa:
+      - totp
 
   - name: Egnyte
     url: https://www.egnyte.com/
@@ -277,6 +338,14 @@ websites:
     twitter: Gumtree
     facebook: gumtree
 
+  - name: Heap
+    url: https://heap.io/
+    img: heap.svg
+    tfa:
+      - totp
+    doc: https://help.heap.io/heap-administration/secure-access/2fa/
+    exception: "2FA is only available for users on the Business plan."
+
   - name: Heise online
     url: https://www.heise.de/
     img: heise.png
@@ -373,6 +442,7 @@ websites:
       - phone
       - totp
     doc: https://help.kickstarter.com/hc/en-us/articles/115005127094
+    exception: "Software 2FA requires setting up SMS 2FA as a fallback."
 
   - name: Liftopia
     url: https://www.liftopia.com
@@ -446,6 +516,13 @@ websites:
     tfa:
       - totp
 
+  - name: Optimizely
+    url: https://www.optimizely.com
+    img: optimizely.svg
+    tfa:
+      - totp
+    doc: https://help.optimizely.com/Account_Settings/Protect_your_account_with_individual_2-step_verification
+
   - name: Pastebin
     url: https://pastebin.com
     img: pastebin.png
@@ -461,23 +538,24 @@ websites:
       - totp
     doc: https://support.patreon.com/hc/en-us/articles/206538086
 
-  - name: PhraseApp
-    url: https://phraseapp.com
-    img: phraseapp.png
+  - name: Phrase
+    url: https://phrase.com
+    img: phrase.png
     tfa:
       - totp
-    doc: https://phraseapp.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
+    doc: https://phrase.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
 
   - name: Pinboard
     url: https://pinboard.in/
     twitter: Pinboard
     img: pinboard.png
+    email_address: support@pinboard.in
 
-  - name: Planning Center Online
-    url: https://planning.center/
+  - name: Planning Center
+    url: https://www.planningcenter.com/
     twitter: PlanningCenter
     facebook: PlanningCenter
-    img: planningcenter.png
+    img: planningcenter.svg
 
   - name: Pocket
     url: https://www.getpocket.com
@@ -495,6 +573,15 @@ websites:
     url: https://promoter.io/
     img: promoter.png
     twitter: Promoter_io
+
+  - name: Refersion
+    url: https://refersion.com
+    img: refersion.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.refersion.com/en/articles/2989703
+    exception: "SMS 2FA is not available in all regions."
 
   - name: Repairshopr
     url: https://www.repairshopr.com/
