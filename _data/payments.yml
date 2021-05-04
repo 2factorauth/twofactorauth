@@ -253,6 +253,13 @@ websites:
     doc: https://www.skrill.com/en/support#/path/SECURITY/1362150272/
     exception: "Email method requires an additional PIN"
 
+  - name: Spreedly
+    url: https://www.spreedly.com/
+    img: spreedly.svg
+    tfa:
+      - totp
+    doc: https://docs.spreedly.com/guides/multi-factor-authentication/
+
   - name: Square
     url: https://squareup.com
     img: squareup.png
