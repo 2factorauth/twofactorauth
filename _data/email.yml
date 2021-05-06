@@ -163,13 +163,15 @@ websites:
       - hardware
     doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
 
-  - name: POST
+  - name: POST Luxembourg
     url: https://webmail.pt.lu/webmail
     img: post.svg
     tfa:
       - sms
       - totp
     doc: https://support.pt.lu/2fa-two-factor-authentication/
+    regions:
+      - lu
 
   - name: Posteo
     url: https://posteo.de/
