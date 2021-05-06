@@ -612,6 +612,13 @@ websites:
     twitter: signnow
     facebook: esignaturesignnow
 
+  - name: Smartly.io
+    url: https://smartly.io
+    img: smartlyio.svg
+    tfa:
+      - totp
+    doc: https://support.smartly.io/hc/en-us/articles/360003493934
+
   - name: SmartSimple
     url: https://www.smartsimple.com
     img: smartsimple.png
