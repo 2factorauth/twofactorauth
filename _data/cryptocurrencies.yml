@@ -250,6 +250,15 @@ websites:
       - u2f
     doc: https://support.coinbase.com/customer/en/portal/articles/1658338
 
+  - name: Coinberry
+    url: https://www.coinberry.com/
+    img: coinberry.svg
+    tfa:
+      - totp
+    doc: https://help.coinberry.com/s/article/2-Factor-Authentication
+    regions:
+      - ca
+
   - name: Coincheck
     url: https://coincheck.com/
     img: coincheck.png
