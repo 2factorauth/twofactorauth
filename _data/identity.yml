@@ -91,6 +91,16 @@ websites:
     doc: https://support.logmeininc.com/lastpass/help/enable-multifactor-authentication-lp010002
     exception: "Availability of 2FA options depends on your account type."
 
+  - name: MojeID
+    url: https://www.mojeid.cz/
+    img: mojeid.svg
+    tfa:
+      - totp
+      - hardware
+      - proprietary
+      - u2f
+    doc: https://www.mojeid.cz/cs/podpora/dvoufaktorova-autentizace/
+
   - name: NordPass
     url: https://nordpass.com/
     img: nordpass.svg
