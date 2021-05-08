@@ -595,6 +595,13 @@ websites:
       - totp
     doc: https://www.sanebox.com/help/127
 
+  - name: Semrush
+    url: https://www.semrush.com/
+    img: semrush.svg
+    tfa:
+      - email
+    doc: https://www.semrush.com/kb/1130--
+
   - name: signNow
     url: https://www.signnow.com/
     img: signnow.svg
