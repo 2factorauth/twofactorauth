@@ -568,6 +568,15 @@ websites:
     regions:
       - ng
 
+  - name: NDAX
+    url: https://ndax.io/
+    img: ndax.svg
+    tfa:
+      - totp
+    doc: https://help.ndax.io/en-ca/category/2fa-rgk6to/
+    regions:
+      - ca
+
   - name: OKEx
     url: https://www.okex.com/
     img: okex.png
