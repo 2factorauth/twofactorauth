@@ -663,6 +663,14 @@ websites:
       - u2f
     doc: https://help.stex.com/en/articles/3486981#individual-account-security-settings
 
+  - name: StormGain
+    url: https://stormgain.com
+    img: stormgain.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.stormgain.com/articles/two-factor-authentication-google-authenticator-and-sms
+
   - name: Swyftx
     url: https://swyftx.com/
     img: swyftx.svg
