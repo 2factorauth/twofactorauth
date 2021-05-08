@@ -607,11 +607,11 @@ websites:
       - email
     doc: https://www.semrush.com/kb/1130--
 
-  - name: SignNow
+  - name: signNow
     url: https://www.signnow.com/
-    img: signnow.png
-    twitter: signnow
-    facebook: esignaturesignnow
+    img: signnow.svg
+    tfa:
+      - email
 
   - name: Smartly.io
     url: https://smartly.io
