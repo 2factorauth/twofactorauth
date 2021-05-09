@@ -30,6 +30,7 @@ websites:
       - sms
       - totp
     doc: https://support.bitbuy.ca/hc/en-us/articles/360059151172
+    exception: "SMS 2FA is only available for country code +1 (North America)"
     regions:
       - ca
 
