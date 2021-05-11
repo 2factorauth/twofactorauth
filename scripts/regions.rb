@@ -43,7 +43,6 @@ regions.each do |region|
   out_dir = "#{Dir.pwd}/#{region['id']}"
   puts "Building #{region['id']}..."
   configs = ['_config.yml']
-  configs.push('_deployment/config-production.yml') if ARGV.include?('--production')
   # rubocop:disable Layout/LineLength
   puts `bundle exec jekyll build -s #{dest_dir} -d #{out_dir} --config #{configs.join(',')} --baseurl #{region['id']}` # Add -V for debugging
   # rubocop:enable Layout/LineLength

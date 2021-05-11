@@ -7,9 +7,11 @@ $('.facebook-button').click(function () {
 $('.email-button').click(function () {
   let langs = new Map();
 {% for lang in site.data.languages %}
+  {% unless lang[1].email_subject == '' %}
   langs.set("{{ lang[0] }}", "{{ lang[1].email_subject }}");
+  {% endunless %}
 {% endfor %}
-let lang = $(this).data('lang') // TODO: See lang in function below
+let lang = $(this).data('lang')
 
   if (!langs.has(lang)) lang = "en"
   window.open('mailto:' + $(this).data('email') + '?subject=' + langs.get(lang))
@@ -18,14 +20,16 @@ let lang = $(this).data('lang') // TODO: See lang in function below
 $('.twitter-button').click(function () {
   let langs = new Map();
 {% for lang in site.data.languages %}
+  {% unless lang[1].tweet == '' %}
   langs.set("{{ lang[0] }}", "{{ lang[1].tweet |cgi_escape }}");
+  {% endunless %}
 {% endfor %}
 
-let lang = $(this).data('lang') // TODO: Check if langs contains key of lang value
+let lang = $(this).data('lang')
   const handle = $(this).data('twitter')
 
-  if (!langs.has(lang)) lang = "en"
+  if (!langs.has(lang) || lang == null) lang = "en"
   const text = langs.get(lang).replace('TWITTERHANDLE', handle)
 
-  window.open('https://twitter.com/share?url={{site.url | cgi_escape}}&hashtags=SupportTwoFactorAuth&text=' + text, '_blank');
+  window.open('https://twitter.com/share?hashtags=SupportTwoFactorAuth&text=' + text, '_blank');
 })

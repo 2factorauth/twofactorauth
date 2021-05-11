@@ -1,12 +1,10 @@
-{% assign section_id = include.id-param %}
-{% assign section_title = include.title-param %}
-
-<div id="{{section_id}}-table" class="collapse category-table desktop-only">
-  <a id="{{section_id}}" class="category-href"></a>
+{% assign entries = include.entries %}
+<div id="{{ include.category[0] }}-table" class="collapse category-table desktop-only">
+  <a id="{{ include.category[0] }}" class="category-href"></a>
   <table class="table table-hover table-bordered table-bordered">
     <thead class="sticky-top">
       <tr>
-        <th scope="col">{{ section_title }}</th>
+        <th scope="col">{{ include.category[1].title }}</th>
         <th scope="col" class="icon-cell">Docs</th>
         <th scope="col" class="icon-cell">SMS</th>
         <th scope="col" class="icon-cell">Phone Call</th>
@@ -16,25 +14,29 @@
       </tr>
     </thead>
     <tbody class="searchContainer">
-      {% for website in site.data[section_id].websites %}
-
-        <tr class="table-{% if website.tfa %}success{%else %}danger{% endif %}">
+      {% for _website in entries %}
+        {% assign name = _website[0] %}
+        {% assign website = _website[1] %}
+        <tr class="table-{% if website.tfa %}success{% else %}danger{% endif %}">
 
           <td>
-            <div class="searchWords" style="display: none;">{{ website.name }}&nbsp;{{ website.url }}&nbsp;{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}</div>
+            <div class="searchWords" style="display: none;">{{ name }} {{ website.domain }}{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}</div>
             <div class="row no-gutters">
-              <picture>
-                {% if website.img contains ".png" %}
-                {% assign webp = website.img | replace: ".png", ".webp" %}
-                <source data-srcset="/img/{{section_id}}/{{webp}} 1x" type="image/webp">
-                {% endif %}
-                <img class="logo lazyload{% if website.no_img_border %} no-border{%endif%}" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png" alt="">
-              </picture>
+              <a class="site-name {% if website.notes %}exception-site{% endif %}" href="{% if website.url %}{{ website.url }}{% else %}https://{{ website.domain }}{% endif %}">
+              <!-- Image -->
+              {% assign letter = website.domain | slice: 0 | downcase | append: "/" %}
+              {% if website.img %}
+                {% assign image = website.img | prepend: letter %}
+              {% else %}
+                {% assign image = website.domain | append: ".svg" | prepend: letter %}
+              {% endif %}
 
-              <a class="site-name {% if website.exception %}exception-site{% endif %}" href="{{ website.url }}">{{ website.name }}</a>
+              <img class="logo lazyload" data-src="/img/{{ image }}" alt="">
 
-              {% if website.exception %}
-                <i class="fas fa-exclamation-triangle exception" data-content="{{ website.exception }}"></i>
+              {{ name }}</a>
+
+              {% if website.notes %}
+                <i class="fas fa-exclamation-triangle exception" data-content="{{ website.notes }}"></i>
               {% endif %}
             </div>
           </td>
@@ -43,8 +45,8 @@
             {% assign tfa = website.tfa %}
 
             <td class="icon-cell">
-              {% if website.doc %}
-                <a href="{{ website.doc }}">
+              {% if website.documentation %}
+                <a href="{{ website.documentation }}">
                   <i class="fas fa-book"></i>
                 </a>
               {% endif %}
@@ -59,8 +61,9 @@
             <td class="icon-cell">
               {% if tfa contains "phone" %}
                 <i class="tfa-icon fas fa-check"></i>
-                {%endif%}</td>
+                {%endif%}
             </td>
+
             <td class="icon-cell">
               {% if tfa contains "email" %}
                 <i class="tfa-icon fas fa-check"></i>
@@ -69,7 +72,7 @@
 
             <td class="icon-cell">
               <div class="row">
-                {% if tfa contains "hardware" %}
+                {% if tfa contains "custom-hardware" %}
                   <i class="tfa-icon fas fa-check col"></i>
                 {% endif %}
 
@@ -86,7 +89,7 @@
                 {% if tfa contains "totp" %}
                   <i class="tfa-icon fas fa-check col"></i>
                 {% endif %}
-                {% if tfa contains "proprietary" %}
+                {% if tfa contains "custom-software" %}
                   <i class="tfa-icon fas fa-info col" title="Proprietary software based 2FA"></i>
                 {% endif %}
               </div>
@@ -96,20 +99,20 @@
             <td colspan="6">
               Tell them to support 2FA!
               <div class="social-button-group">
-                {% if website.twitter %}
-                  <div class="twitter-button social-button btn" data-twitter="{{ website.twitter }}" data-lang="{{ website.lang }}">
+                {% if website.contact.twitter %}
+                  <div class="twitter-button social-button btn" data-twitter="{{ website.contact.twitter }}" data-lang="{{ website.contact.lang }}">
                     <i class="fab fa-twitter"></i>
                     On Twitter
                   </div>
                 {% endif %}
-                {% if website.facebook %}
-                  <div class="facebook-button social-button btn" data-facebook="{{ website.facebook }}">
+                {% if website.contact.facebook %}
+                  <div class="facebook-button social-button btn" data-facebook="{{ website.contact.facebook }}">
                     <i class="fab fa-facebook-f"></i>
                     On Facebook
                   </div>
                 {% endif %}
-                {% if website.email_address %}
-                  <div class="email-button social-button btn" data-email="{{ website.email_address }}" data-lang="{{ website.lang }}">
+                {% if website.contact.email_address %}
+                  <div class="email-button social-button btn" data-email="{{ website.contact.email_address }}" data-lang="{{ website.contact.lang }}">
                     <i class="fas fa-envelope"></i>
                     Via Email</div>
                 {% endif %}
