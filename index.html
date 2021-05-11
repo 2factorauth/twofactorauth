@@ -3,7 +3,7 @@ layout: default
 ---
 <div id="main">
   <img alt="" id="logo" src="/img/icons/icon.svg">
-  <h2>Two Factor Auth (2FA)</h2>
+  <h2>2FA Directory</h2>
   <div class="sub header">List of websites and whether or not they support
     <a href="https://en.wikipedia.org/wiki/Two-factor_authentication">2FA</a>.
   </div>
@@ -14,38 +14,47 @@ layout: default
   <input aria-label="search" id="innerSearchBox" type="search">
 </div>
 
-<div class="row justify-content-start category-row">
-  {% assign rowcount = 0 %}
-  {% assign tailcount = site.data.sections.size | modulo: 5 %}
-  {% for section in site.data.sections %}
-    {% assign rowend = forloop.index | modulo: 5 %}
-    {% if rowend == 0 or forloop.index == forloop.length %}
+<!-- Categories list -->
+<div class="row justify-content-start category-row row-cols-1 row-cols-md-5">
+  {% assign keywords = site.data.categories | sort %}
+  {% assign all_entries = site.data.all %}
+  {% assign keywords_length  = keywords | size %}
 
-      {% include category-button.html %}
+  <!-- Category loop -->
+  {% for keyword in keywords %}
 
-      {% if forloop.index == forloop.length and tailcount != 0 %}
-        {% for c in (tailcount..4) %}
-          <div class="col"></div>
-        {% endfor %}
+    {% assign entries = "" | split: ',' %}
+    {% for entry in all_entries %}
+      {% if entry[1].keywords contains keyword[0] %}
+        {% assign entries = entries | push: entry %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign md = forloop.index | modulo: 6 %}
+
+    <!-- List previous 5 categories (desktop button) -->
+    {% if md == 0 or forloop.index == 1 %}
+      {% if md == 0 %}
+        {% assign _offset = forloop.index | minus: 1 %}
+      {% else %}
+        {% assign _offset = 0 %}
       {% endif %}
 
-      {% include mobile-table.html id-param=section.id title-param=section.title %}
-      {% assign offcount = 5 | times: rowcount %}
-      {% for section in site.data.sections limit: 5 offset: offcount %}
-        {% include desktop-table.html id-param=section.id title-param=section.title %}
+      {% for _keyword in keywords limit: 5 offset: _offset %}
+        {% include category-button.html category-param=_keyword viewport="desktop" %}
       {% endfor %}
 
-      {% if forloop.index != forloop.length %}
-        {% assign rowcount = rowcount | plus: '1' %}
-        <div class="w-100 d-none d-md-block"></div>
-
-      {% endif %}
-    {% else %}
-
-      {% include category-button.html %}
-      {% include mobile-table.html id-param=section.id title-param=section.title %}
-
     {% endif %}
+
+    <!-- Display mobile category button -->
+    {% include category-button.html category-param=keyword viewport="mobile" %}
+
+    <!-- Display desktop table -->
+    {% include desktop-table.html category=keyword entries=entries %}
+
+    <!-- Display mobile table -->
+    {% include mobile-table.html category=keyword entries=entries %}
+
   {% endfor %}
 </div>
 <h2 id="no-results">No results found.</h2>

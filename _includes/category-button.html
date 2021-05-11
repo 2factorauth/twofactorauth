@@ -1,11 +1,12 @@
-<div class="col-12 col-md btn cat" type="button" data-toggle="collapse" data-target="#{{section.id}}-table" aria-expanded="false" aria-controls="{{section.id}}-table" id="{{section.id}}">
-  <h5 style="display: inline-block; text-align: center; margin-top: 0;">
+{% assign name = include.category-param[0] %}
+{% assign title = include.category-param[1].title %}
+{% assign icon = include.category-param[1].icon %}
 
-    <div style="width: 100%;">
-      <div style="display: flex; align-items: center; margin: auto;">
-        <i class="{{section.icon}} category-icon fa-fw"></i>
+<div class="col align-self-start category-icon-outer {{ include.viewport }}-only">
+  <div class="cat btn cat-icon-inner" data-toggle="collapse" data-target="#{{ name }}-table" aria-expanded="false" aria-controls="{{ name }}-table" id="{{ name }}">
+        <div>
+          <i class="{{ icon }} category-icon fa-fw"></i>
+        </div>
+        <small class="category-title">{{ title }}</small>
       </div>
-      <small class="category-title">{{ section.title }}</small>
-    </div>
-  </h5>
 </div>

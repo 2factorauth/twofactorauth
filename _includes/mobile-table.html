@@ -1,20 +1,31 @@
-{% assign section_id = include.id-param %}
-{% assign section_title = include.title-param %}
+{% assign entries = include.entries %}
 
-<div class="collapse category-table mobile-only searchContainer" id="{{section_id}}-mobile-table">
-<h2 class="search-table-title">{{ section_title }}</h2>
-  {% for website in site.data[section_id].websites %}
+<div class="collapse category-table mobile-only searchContainer" id="{{ include.category[0] }}-table">
+<h2 class="search-table-title">{{ include.category[1].title }}</h2>
+  {% for _website in entries %}
+    {% assign name = _website[0] %}
+    {% assign website = _website[1] %}
 
     <div class="col-11 {% if website.tfa %}table-success{%else%}table-danger{%endif%}">
 
-      <div class="searchWords" style="display: none;">{{ website.name }}&nbsp;{{ website.url }}&nbsp;{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}</div>
+      <div class="searchWords" style="display: none;">{{ name }} {{ website.domain }}{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}</div>
       <!-- Title -->
       <div class="site-title">
-        <a class="site-name" href="{{ website.url }}">
-          <img class="logo lazyload{% if website.no_img_border %} no-border{%endif%}" data-src="/img/{{ section_id }}/{{ website.img }}" src="/img/placeholder.png" alt="">
-          {{ website.name }}</a>
-          {% if website.exception %}
-                <i class="fas fa-exclamation-triangle exception" data-content="{{ website.exception }}"></i>
+        <a class="site-name" href="{% if website.url %}{{ website.url }}{% else %}https://{{ website.domain }}{% endif %}">
+
+          <!-- Image -->
+          {% assign letter = website.domain | slice: 0 | downcase | append: "/" %}
+          {% if website.img %}
+          {% assign image = website.img | prepend: letter %}
+          {% else %}
+          {% assign image = website.domain | append: ".svg" | prepend: letter %}
+          {% endif %}
+
+          <img class="logo lazyload" data-src="/img/{{ image }}" alt="">
+
+          {{ name }}</a>
+          {% if website.notes %}
+                <i class="fas fa-exclamation-triangle exception" data-content="{{ website.notes }}"></i>
           {% endif %}
       </div>
 
@@ -23,19 +34,19 @@
         <div class="row row-cols-2">
           {% for tfa in website.tfa %}
 
-            <div class="col text-success">
+            <div class="col text-success tfa-option">
               <i class="fas fa-check"></i>
               <b>
-                {{ tfa | replace: "proprietary", "software" | replace: "hardware", "hardware" | capitalize | replace: "Sms", "SMS" | replace: "Totp", "TOTP" | replace: "U2f", "U2F" }}</b>
+                {{ tfa | replace: "custom-software", "custom Software" | replace: "custom-hardware", "custom Hardware" | capitalize | replace: "Sms", "SMS" | replace: "Totp", "TOTP" | replace: "U2f", "U2F" }}</b>
             </div>
 
           {% endfor %}
 
         </div>
 
-        {% if website.doc %}
+        {% if website.documentation %}
           <div class="btn doc-btn col-11 col-sm-8 d-flex justify-content-center website-doc">
-            <a href="{{ website.doc }}">
+            <a href="{{ website.documentation }}">
               <i class="fas fa-book"></i>
               Read more
             </a>
@@ -47,25 +58,25 @@
         <b class="text-danger">2FA not supported</b>
         <div class="row justify-content-center">
 
-          {% if website.twitter %}
+          {% if website.contact.twitter %}
 
-            <div class="col ml-md-auto twitter-button social-button btn" title="Tweet them!" data-twitter="{{ website.twitter }}" data-lang="{{ website.lang }}">
+            <div class="col ml-md-auto twitter-button social-button btn" title="Tweet them!" data-twitter="{{ website.contact.twitter }}" data-lang="{{ website.contact.lang }}">
               <i class="fab fa-twitter"></i>
             </div>
 
           {% endif %}
 
-          {% if website.facebook %}
+          {% if website.contact.facebook %}
 
-            <div class="col facebook-button social-button btn" title="Contact them!" data-facebook="{{ website.facebook }}">
+            <div class="col facebook-button social-button btn" title="Contact them!" data-facebook="{{ website.contact.facebook }}">
               <i class="fab fa-facebook-f"></i>
             </div>
 
           {% endif %}
 
-          {% if website.email_address %}
+          {% if website.contact.email_address %}
 
-            <div class="col email-button social-button btn" title="Email them!" data-email="{{ website.email_address }}" data-lang="{{ website.lang }}">
+            <div class="col email-button social-button btn" title="Email them!" data-email="{{ website.contact.email_address }}" data-lang="{{ website.contact.lang }}">
               <i class="fas fa-envelope"></i>
             </div>
 

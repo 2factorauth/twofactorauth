@@ -1,5 +1,8 @@
 ---
 ---
+:root {
+  --primary: hsl(180, 59%, 51%);
+}
 
 body {
   background-color: #fff;
@@ -39,7 +42,9 @@ h1,h2,h3,h4 {
     background-color: #f1b0b7;
     text-align: left;
   }
-
+  .category-icon-outer {
+    padding: 1em;
+  }
   .category-icon {
     background-color: #eee !important;
   }
@@ -96,7 +101,6 @@ thead {
       box-sizing: border-box;
       display: block;
       position: relative;
-      width: 90vw;
       z-index: 1000;
       -webkit-appearance: none;
       border-radius: 0;
@@ -242,11 +246,11 @@ thead {
 .active {
   .category-icon {
     color: #fff;
-    background: {{ site.theme_color }} !important;
+    background: var(--primary) !important;
   }
 
   .category-title {
-    color: {{ site.theme_color }} !important;
+    color: var(--primary) !important;
   }
 }
 

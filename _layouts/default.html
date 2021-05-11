@@ -6,23 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta content="default" name="apple-mobile-web-app-status-bar-style">
-    <meta name="msapplication-TileColor" content="{{ site.theme_color }}">
-    <meta name="description" content="{{ site.description }}">
-    <meta name="theme-color" content="{{ site.theme_color }}">
-    <meta name="application-name" content="{{ site.title }}">
-    <meta property="og:title" content="{{ site.title }}">
-    <meta property="og:url" content="{{ site.url }}">
-    <meta property="og:description" content="{{ site.description }}">
-    <meta content="https://2fa.directory/img/logo.png" property="og:image">
-    <meta content="website" property="og:type">
-    <meta content="summary_large_image" property="twitter:card">
-    <meta property="twitter:title" content="{{ site.title }}">
-    <meta property="twitter:creator" content="{{ site.author }}">
-    <meta property="twitter:site" content="{{ site.twitter }}">
-    <meta property="twitter:image" content="{{ site.social_image }}">
-    <meta property="twitter:description" content="{{ site.description }}">
+    {% include seo.html %}
     <title>{{ site.title }}</title>
     {% include icons.html %}
     <link href="/manifest.json" rel="manifest">
@@ -76,11 +60,8 @@
     </div>
 
     <div class="footer">
-      <div id="innerFooter">Created by
-        <a href="https://joshldavis.com">Josh Davis</a>, designed by <a href="https://carlgo11.com">Carlgo11</a>
-        and maintained by
-        <a href="https://github.com/2factorauth">2factorauth</a>.<br>
-		With help from some awesome <a href="https://github.com/2factorauth/twofactorauth/graphs/contributors">contributors</a>. <i style="color: {{ site.theme_color }}" class="fas fa-heart"></i>
+      <div id="innerFooter">Created by <a href="https://github.com/2factorauth">2factorauth</a>.<br>
+		With help from some awesome <a href="https://github.com/2factorauth/twofactorauth/graphs/contributors">contributors</a>. <i style="color: var(--primary)" class="fas fa-heart"></i>
       </div>
       <div id="buildNumber" class="desktop-only" title="{{ site.github.build_revision }}">
         Build #: {{ site.github.build_revision | slice: 0,7 }}<br>
