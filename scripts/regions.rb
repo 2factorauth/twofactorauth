@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require 'yaml'
+require 'json'
 require 'fileutils'
+require 'yaml'
 
 data_dir = './_data'
-
-sections = YAML.load_file("#{data_dir}/sections.yml")
+websites = JSON.parse(File.read("#{data_dir}/all.json"))
 regions = YAML.load_file("#{data_dir}/regions.yml")
 tmp_dir = '/tmp'
 
@@ -21,30 +21,17 @@ regions.each do |region|
     FileUtils.cp_r(files, dest_dir)
   end
 
-  # Category loop
-  sections.each do |section|
-    data = YAML.load_file("#{data_dir}/#{section['id']}.yml")
-    websites = data['websites']
-    section_array = []
+  all = {}
 
-    # Website loop
-    websites.each do |website|
-      section_array.push(website) if website['regions'].nil? || website['regions'].include?(region['id'].to_s)
-    end
-
-    website_array = { websites: section_array }
-    website_yaml = website_array.to_yaml.gsub("---\n:", '')
-
-    File.open("#{dest_dir}/_data/#{section['id']}.yml", 'w') do |file|
-      file.write website_yaml
-    end
+  # Website loop
+  websites.each do |name, website|
+    all[name] = website if website['regions'].nil? || website['regions'].include?(region['id'].to_s)
   end
 
-  out_dir = "#{Dir.pwd}/#{region['id']}"
+  File.open("#{dest_dir}/_data/all.yml", 'w') { |file| file.write JSON.generate(all) }
+
+  out_dir = "#{Dir.pwd}/_site/#{region['id']}"
   puts "Building #{region['id']}..."
-  configs = ['_config.yml']
-  # rubocop:disable Layout/LineLength
-  puts `bundle exec jekyll build -s #{dest_dir} -d #{out_dir} --config #{configs.join(',')} --baseurl #{region['id']}` # Add -V for debugging
-  # rubocop:enable Layout/LineLength
-  puts "#{region['id']} built!"
+  puts `bundle exec jekyll build -s #{dest_dir} --config _config.yml -d #{out_dir} --baseurl #{region['id']}`
+  puts "#{region['id']} built."
 end
