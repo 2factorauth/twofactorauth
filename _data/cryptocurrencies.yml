@@ -1,10 +1,11 @@
 websites:
-  - name: AnycoinDirect
+  - name: Anycoin Direct
     url: https://anycoindirect.eu
     img: anycoindirect.png
     tfa:
       - totp
-    doc: https://support.anycoindirect.eu/hc/en-gb/articles/115001423191
+      - sms
+    doc: https://anycoindirect.eu/en/support/anycoin-direct/security#what-is-two-factor-authentication-2fa
 
   - name: Binance
     url: https://www.binance.com/
