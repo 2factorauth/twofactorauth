@@ -364,6 +364,13 @@ websites:
     twitter: Gumtree
     facebook: gumtree
 
+  - name: HappyFox
+    url: https://www.happyfox.com
+    img: happyfox.svg
+    tfa:
+      - totp
+    doc: https://support.happyfox.com/kb/article/709--
+
   - name: Heap
     url: https://heap.io/
     img: heap.svg
@@ -371,6 +378,7 @@ websites:
       - totp
     doc: https://help.heap.io/heap-administration/secure-access/2fa/
     exception: "2FA is only available for users on the Business plan."
+
 
   - name: Heise online
     url: https://www.heise.de/
