@@ -384,6 +384,13 @@ websites:
       - hardware
     doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
 
+  - name: Lokalise
+    url: https://lokalise.com
+    img: lokalise.svg
+    tfa:
+      - totp
+    doc: https://docs.lokalise.com/en/articles/2329387
+
   - name: Looker
     url: https://looker.com/
     img: looker.svg
