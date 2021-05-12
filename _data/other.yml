@@ -115,6 +115,14 @@ websites:
       - totp
     doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888
 
+  - name: Checkfront
+    url: https://www.checkfront.com
+    img: checkfront.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.checkfront.com/hc/en-us/articles/115003849053
+
   - name: Cisco Meraki
     url: https://meraki.cisco.com/
     img: meraki.png
