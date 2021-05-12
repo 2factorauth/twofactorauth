@@ -652,13 +652,6 @@ websites:
     tfa:
       - email
 
-  - name: Smartly.io
-    url: https://smartly.io
-    img: smartlyio.svg
-    tfa:
-      - totp
-    doc: https://support.smartly.io/hc/en-us/articles/360003493934
-
   - name: SimplyBook
     url: https://simplybook.me
     img: simplybook.svg
@@ -666,6 +659,14 @@ websites:
       - totp
     doc: https://help.simplybook.me/index.php/Google_Authenticator_custom_feature
     exception: "2FA is only available as a 'custom feature' and must be enabled by an admin before use."
+
+  
+  - name: Smartly.io
+    url: https://smartly.io
+    img: smartlyio.svg
+    tfa:
+      - totp
+    doc: https://support.smartly.io/hc/en-us/articles/360003493934
 
   - name: SmartSimple
     url: https://www.smartsimple.com
