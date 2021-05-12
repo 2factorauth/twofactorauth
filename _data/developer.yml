@@ -427,6 +427,13 @@ websites:
       - totp
     doc: https://docs.mapbox.com/accounts/guides/settings/#two-factor-authentication
 
+  - name: Matomo Cloud
+    url: https://matomo.org/matomo-cloud/
+    img: matomo.svg
+    tfa:
+      - totp
+    doc: https://matomo.org/faq/general/faq_27245/
+
   - name: MongoDB Atlas
     url: https://atlas.mongodb.com
     img: mongodb.png
