@@ -24,6 +24,17 @@ websites:
       - totp
     doc: https://bitbay.net/en/safety#two-factor-authentication
 
+  - name: Bitbuy
+    url: https://bitbuy.ca/
+    img: bitbuy.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://support.bitbuy.ca/hc/en-us/articles/360059151172
+    exception: "SMS 2FA is only available for country code +1 (North America)"
+    regions:
+      - ca
+
   - name: Bitcoin.de
     url: https://bitcoin.de
     img: bitcoinde.png
