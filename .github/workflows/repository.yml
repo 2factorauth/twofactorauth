@@ -46,28 +46,17 @@ jobs:
       - name: Build the site
         run: bundle exec jekyll build --config _config.yml
       - name: Create Artifact
-        if: |
-          github.ref == 'refs/heads/master' &&
-          github.repository == '2factorauth/twofactorauth' &&
-          github.event_name == 'push'
-        run: zip -rz0 build.zip .
+        run: tar -czf build.tar.gz .
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
-        if: |
-          github.ref == 'refs/heads/master' &&
-          github.repository == '2factorauth/twofactorauth' &&
-          github.event_name == 'push'
         with:
           name: build
-          path: build.zip
+          path: build.tar.gz
 
   publish:
     name: Publish build
     needs: [ tests, build ]
-    if: |
-      github.ref == 'refs/heads/master' &&
-      github.repository == '2factorauth/twofactorauth' &&
-      github.event_name == 'push'
+    container: 2factorauth/twofactorauth:4.0
     runs-on: ubuntu-latest
     env:
       JEKYLL_ENV: production
@@ -75,29 +64,28 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: build
-      - name: Build region sites
-        run: ./scripts/regions.rb
-      - name: Import PGP key
+      - name: Extract artifact
+        run: tar -xzf build.tar.gz
+      - name: Bundle install
+        run: bundle install
+      - name: Install GnuPG
+        run: apk add --no-cache gnupg
+      - uses: crazy-max/ghaction-import-gpg@v3
         id: pgp
-        uses: crazy-max/ghaction-import-gpg@v3
         with:
           gpg-private-key: ${{ secrets.pgp_key }}
           passphrase: ${{ secrets.pgp_passphrase }}
       - name: Sign API files
         run: ./scripts/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
-      - name: Generate webp images
-        run: ./scripts/webp.sh
-      - name: Build the site
-        run: bundle exec jekyll build
       - name: Minify JavaScript files
         run: ./scripts/minify-js.sh
+      - name: Build region sites
+        run: ./scripts/regions.rb
       - name: Test HTML files
         run: bundle exec rake proof
         env:
           NOKOGIRI_USE_SYSTEM_LIBRARIES: true
-      - name: Deploy to GitHub Pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v2
+      - uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
           build_dir: _site
