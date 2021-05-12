@@ -23,6 +23,15 @@ websites:
     twitter: Alexa_Support
     facebook: alexainternet
 
+  - name: American Kennel Club
+    url: https://www.akc.org/
+    img: akc.svg
+    tfa:
+      - email
+    doc: https://www.akc.org/about/site/two-factor-authentication/
+    regions:
+      - us
+
   - name: Ancestry
     url: https://www.ancestry.com
     img: ancestry.png
