@@ -269,8 +269,10 @@ websites:
 
   - name: InMotion Hosting
     url: https://www.inmotionhosting.com/
-    twitter: inmotionhosting
-    img: inmotion.png
+    img: inmotion.svg
+    tfa:
+      - totp
+    doc: https://www.inmotionhosting.com/support/edu/cpanel/how-to-configure-and-use-two-factor-authentication/
 
   - name: IO Zoom
     url: https://www.iozoom.com
