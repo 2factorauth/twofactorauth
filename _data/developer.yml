@@ -214,7 +214,8 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://help.compose.com/docs/two-factor-authentication
+      - u2f
+    doc: https://www.compose.com/articles/introducing-fido-universal-2nd-factor-authentication/
 
   - name: Contentstack
     url: https://www.contentstack.com/
