@@ -167,6 +167,15 @@ websites:
       - totp
     doc: https://www.qnap.com/en-us/how-to/tutorial/article/how-to-enhance-account-security-using-2-step-verification
 
+  - name: SmartVault
+    url: https://www.smartvault.com/
+    img: smartvault.svg
+    tfa:
+      - email
+      - sms
+      - phone
+    doc: https://help.smartvault.com/hc/en-us/articles/360051275493
+
   - name: SugarSync
     url: https://www.sugarsync.com/
     img: sugarsync.png
