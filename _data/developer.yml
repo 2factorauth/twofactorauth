@@ -298,6 +298,14 @@ websites:
       - totp
     doc: https://support.fogbugz.com/hc/en-us/articles/360011262434
 
+  - name: Formsite
+    url: https://www.formsite.com
+    img: formsite.svg
+    tfa:
+      - totp
+    doc: https://support.formsite.com/hc/en-us/articles/360000686614
+    exception: "2FA is only available for Pro 3 accounts or higher."
+
   - name: GitHub
     url: https://github.com
     img: github.png
