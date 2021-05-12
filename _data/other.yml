@@ -494,6 +494,13 @@ websites:
     doc: https://help.kickstarter.com/hc/en-us/articles/115005127094
     exception: "Software 2FA requires setting up SMS 2FA as a fallback."
 
+  - name: Klaviyo
+    url: https://www.klaviyo.com/
+    img: klaviyo.svg
+    tfa:
+      - totp
+    doc: https://help.klaviyo.com/hc/en-us/articles/360026617692
+
   - name: Liftopia
     url: https://www.liftopia.com
     img: liftopia.png
