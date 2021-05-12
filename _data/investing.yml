@@ -39,6 +39,14 @@ websites:
     twitter: goldexchangenyc
     img: bullionexchanges.png
 
+  - name: BullionStar
+    url: https://www.bullionstar.com/
+    img: bullionstar.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://www.bullionstar.com/help/2-factor-authentication
+
   - name: Capital Group / American Funds
     url: https://www.capitalgroup.com/
     img: capitalgroup.png
