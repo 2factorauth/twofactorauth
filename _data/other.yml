@@ -500,6 +500,13 @@ websites:
       - totp
     doc: https://www.mathworks.com/mw_account/two_step_verification/frequently-asked-questions.html
 
+  - name: Mist
+    url: https://www.mist.com/
+    img: mist.png
+    tfa:
+      - totp
+    doc: https://www.mist.com/documentation/two-factor-authentication-mobile-authenticator/
+
   - name: Mixpanel
     url: https://mixpanel.com/
     img: mixpanel.png
