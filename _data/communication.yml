@@ -438,6 +438,13 @@ websites:
       - totp
     doc: https://help.socketlabs.com/docs/two-step-verification
 
+  - name: SoGoSurvey
+    url: https://www.sogosurvey.com
+    img: sogosurvey.svg
+    tfa:
+      - email
+    doc: https://www.sogosurvey.com/help/2-step-authentication/
+
   - name: SparkPost
     url: https://sparkpost.com/
     img: sparkpost.png
