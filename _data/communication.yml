@@ -253,6 +253,13 @@ websites:
       - totp
     doc: https://knowledge.hubspot.com/articles/kcs_article/account/how-can-i-set-up-two-factor-authentication-for-my-hubspot-login
 
+  - name: Infinity
+    url: https://www.infinity.co
+    img: infinity.svg
+    tfa:
+      - sms
+    doc: https://www.infinity.co/knowledge-base/article/2-factor-authentication
+
   - name: Intercom
     url: https://www.intercom.com/
     img: intercom.png
