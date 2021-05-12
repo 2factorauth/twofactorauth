@@ -106,7 +106,10 @@ websites:
   - name: HealthEquity
     url: https://www.healthequity.com/
     twitter: HealthEquity
+    facebook: HealthEquityPage
     img: healthequity.png
+    regions:
+      - us
 
   - name: Interactive Brokers
     url: https://www.interactivebrokers.com
@@ -124,8 +127,8 @@ websites:
     facebook: JMBullion
     img: jmbullion.png
 
-  - name: John Hancock Pensions
-    url: https://www.jhancockpensions.com
+  - name: John Hancock
+    url: https://www.johnhancock.com/
     twitter: johnhancockusa
     facebook: johnhancock
     email_address: My401K@jhancock.com
@@ -192,11 +195,6 @@ websites:
     tfa:
       - sms
     doc: https://questrade-support.secure.force.com/mylearning/view/h/Account/Account-security-centre/
-
-  - name: Raizers
-    url: https://www.raizers.com
-    img: raizers.png
-    twitter: Raizers
 
   - name: RBC Direct Investing
     url: https://www.rbcdirectinvesting.com
