@@ -109,6 +109,13 @@ websites:
     doc: https://help.remotedesktopmanager.com/howto_googleauthenticator.htm
     exception: "2FA is only available on the Enterprise Edition"
 
+  - name: Splashtop
+    url: https://www.splashtop.com/
+    img: splashtop.svg
+    tfa:
+      - totp
+    doc: https://support-splashtopbusiness.splashtop.com/hc/en-us/articles/212724923
+
   - name: TeamViewer
     url: https://www.teamviewer.com
     img: teamviewer.png
