@@ -1,4 +1,11 @@
 websites:
+  - name: Adyen
+    url: https://www.adyen.com/
+    img: adyen.svg
+    tfa:
+      - totp
+    doc: https://docs.adyen.com/account/two-factor-authentication
+
   - name: Amazon Pay
     url: https://pay.amazon.com
     img: amazonpay.png
