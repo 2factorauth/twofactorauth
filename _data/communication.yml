@@ -182,6 +182,14 @@ websites:
       - totp
     doc: https://help.frontapp.com/t/36249g
 
+  - name: Frontify
+    url: https://www.frontify.com
+    img: frontify.svg
+    tfa:
+      - totp
+    doc: https://help.frontify.com/en/articles/3947094
+    exception: "2FA is only available for Enterprise users with a security package."
+
   - name: Grape
     url: https://chatgrape.com/
     img: grape.png
