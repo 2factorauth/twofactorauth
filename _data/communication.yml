@@ -255,6 +255,14 @@ websites:
     img: line.png
     facebook: line.worldwide
 
+  - name: Litmus
+    url: https://www.litmus.com
+    img: litmus.svg
+    tfa:
+      - sms
+      - proprietary
+    doc: https://help.litmus.com/article/128--
+
   - name: MailChimp
     url: https://mailchimp.com/
     img: mailchimp.png
