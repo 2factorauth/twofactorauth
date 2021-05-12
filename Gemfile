@@ -9,13 +9,12 @@ group :jekyll_plugins do
 end
 
 group :test do
-  gem 'diff-lcs', platforms: :mswin
   gem 'diffy'
   gem 'fastimage'
   gem 'html-proofer'
   gem 'jsonlint'
+  gem 'json_schemer'
   gem 'kwalify'
   gem 'rubocop'
-  gem 'json_schemer'
   gem 'twitter'
 end
