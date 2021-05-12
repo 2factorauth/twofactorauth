@@ -640,6 +640,13 @@ websites:
       - totp
     doc: https://paykassa.pro/en/news/s-paykassa-vashi-dannye-pod-nadejnoy-zashchitoy/
 
+  - name: Phemex
+    url: https://phemex.com
+    img: phemex.svg
+    tfa:
+      - totp
+    doc: https://phemex.com/getting-started/how-do-i-enable-google-two-factor-authentication
+
   - name: Poloniex
     url: https://poloniex.com/
     img: poloniex.png
