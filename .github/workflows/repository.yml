@@ -28,7 +28,7 @@ jobs:
         run:  tests/file-extensions.sh
 
   build:
-    name: Build
+    name: Minimal build
     container: 2factorauth/twofactorauth:4.0
     runs-on: ubuntu-latest
     steps:
@@ -45,21 +45,33 @@ jobs:
           ./scripts/APIv3.rb
       - name: Build the site
         run: bundle exec jekyll build --config _config.yml
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Artifact
+        if: |
+          github.event == 'push' &&
+          github.ref == 'refs/heads/master' &&
+          github.repository == '2factorauth/twofactorauth'
         run: tar -czf build.tar.gz .
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
+        if: |
+          github.event == 'push' &&
+          github.ref == 'refs/heads/master' &&
+          github.repository == '2factorauth/twofactorauth'
         with:
           name: build
           path: build.tar.gz
 
-  publish:
-    name: Publish build
+  complete_build:
+    name: Complete build
+    if: |
+      github.event == 'push' &&
+      github.ref == 'refs/heads/master' &&
+      github.repository == '2factorauth/twofactorauth'
     needs: [ tests, build ]
     container: 2factorauth/twofactorauth:4.0
     runs-on: ubuntu-latest
-    env:
-      JEKYLL_ENV: production
     steps:
       - uses: actions/download-artifact@v2
         with:
@@ -81,14 +93,35 @@ jobs:
         run: ./scripts/minify-js.sh
       - name: Build region sites
         run: ./scripts/regions.rb
-      - name: Test HTML files
-        run: bundle exec rake proof
         env:
           NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+          PAGES_REPO_NWO:  ${{ github.repository }}
+          PAGES_ENV: production
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JEKYLL_ENV: production
+      - name: Create Artifact
+        run: tar -czf site.tar.gz _site
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: site.tar.gz
+
+  publish:
+    name: Publish build
+    needs: [complete_build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: site
+      - name: Extract artifact
+        run: tar -xzf site.tar.gz
       - uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
           build_dir: _site
-          fqdn: ${{ secrets.domain }}
+          jekyll: false
+          commit_message: "Deploy $GITHUB_SHA"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
