@@ -201,6 +201,13 @@ websites:
     doc: https://support.tresorit.com/hc/en-us/articles/216114527
     exception: "Requires enabling at least two 2FA methods."
 
+  - name: UpdraftPlus
+    url: https://updraftplus.com/
+    img: updraftplus.svg
+    tfa:
+      - totp
+    doc: https://updraftplus.com/my-account/two-factor-login-security-settings/
+
   - name: Wasabi
     url: https://wasabi.com/
     img: wasabi.png
