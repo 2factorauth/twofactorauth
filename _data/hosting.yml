@@ -369,6 +369,13 @@ websites:
     regions:
       - de
 
+  - name: NameHero
+    url: https://www.namehero.com/
+    img: namehero.svg
+    tfa:
+      - totp
+    doc: https://www.namehero.com/knowledgebase/163
+
   - name: NearlyFreeSpeech.NET
     url: https://www.nearlyfreespeech.net/
     img: nfsn.png
