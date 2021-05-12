@@ -224,6 +224,15 @@ websites:
     regions:
       - ar
 
+  - name: TherapyNotes
+    url: https://www.therapynotes.com
+    img: therapynotes.svg
+    tfa:
+      - totp
+    doc: https://support.therapynotes.com/article/231--
+    regions:
+      - us
+
   - name: Thriva
     url: https://thriva.co
     img: thriva.png
