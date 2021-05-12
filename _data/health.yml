@@ -58,12 +58,13 @@ websites:
     regions:
       - us
 
-  - name: drchrono
+  - name: DrChrono
     url: https://www.drchrono.com
     img: drchrono.png
     tfa:
       - proprietary
-    doc: https://www.drchrono.com/blog/two-factor-authentication-extra-security-for-your-health-records/
+      - sms
+    doc: https://support.drchrono.com/hc/en-us/articles/200030385
     regions:
       - us
 
