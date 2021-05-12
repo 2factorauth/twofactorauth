@@ -204,6 +204,18 @@ websites:
     tfa:
       - totp
 
+  - name: Perimeter 81
+    url: https://www.perimeter81.com/
+    img: perimeter81.png
+    tfa:
+      - sms
+      - totp
+      - proprietary
+      - u2f
+      - phone
+    doc: https://support.perimeter81.com/docs/two-factor-authentication
+    exception: "2FA is only available for users on Premium and Enterprise plans."
+
   - name: Prey
     url: https://www.preyproject.com
     img: prey.png
