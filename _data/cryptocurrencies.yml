@@ -145,7 +145,7 @@ websites:
     img: blockfi.png
     tfa:
       - totp
-    doc: https://blockfi.com/blockfi-news/two-factor-authentication-2fa-now-available-for-all-blockfi-accounts/
+    doc: https://help.blockfi.com/hc/en-us/articles/360049343611
 
   - name: Braziliex
     url: https://braziliex.com/
@@ -322,6 +322,13 @@ websites:
     tfa:
       - totp
     doc: https://support.coins.ph/hc/en-us/articles/202604924
+
+  - name: CoinSmart
+    url: https://www.coinsmart.com/
+    img: coinsmart.svg
+    tfa:
+      - totp
+    doc: https://coinsmart.zendesk.com/hc/en-us/articles/360014948893
 
   - name: Coinspot
     url: https://www.coinspot.com.au/
@@ -568,6 +575,15 @@ websites:
     regions:
       - ng
 
+  - name: NDAX
+    url: https://ndax.io/
+    img: ndax.svg
+    tfa:
+      - totp
+    doc: https://help.ndax.io/en-ca/category/2fa-rgk6to/
+    regions:
+      - ca
+
   - name: OKEx
     url: https://www.okex.com/
     img: okex.png
@@ -653,6 +669,14 @@ websites:
       - totp
       - u2f
     doc: https://help.stex.com/en/articles/3486981#individual-account-security-settings
+
+  - name: StormGain
+    url: https://stormgain.com
+    img: stormgain.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.stormgain.com/articles/two-factor-authentication-google-authenticator-and-sms
 
   - name: Swyftx
     url: https://swyftx.com/

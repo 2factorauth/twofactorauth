@@ -150,6 +150,14 @@ websites:
     facebook: Cacoocom
     twitter: cacoocom
 
+  - name: Caspio
+    url: https://www.caspio.com/
+    img: caspio.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://howto.caspio.com/caspio-id/managing-caspio-id/#Enable2FA
+
   - name: Chocolatey
     url: https://chocolatey.org/
     img: chocolatey.png
@@ -321,6 +329,7 @@ websites:
     url: https://hotjar.com/
     img: hotjar.png
     twitter: hotjar
+    facebook: HotjarApps
 
   - name: imgix
     url: https://www.imgix.com/
@@ -370,7 +379,7 @@ websites:
 
   - name: Looker
     url: https://looker.com/
-    img: looker.png
+    img: looker.svg
     tfa:
       - totp
     doc: https://www.looker.com/docs/admin/security/two-factor-authentication
@@ -436,6 +445,7 @@ websites:
     url: https://pagerduty.com
     img: pagerduty.png
     twitter: PagerDutyHelp
+    facebook: PagerDuty
     email_address: support@pagerduty.com
 
   - name: Panic Sync

@@ -106,12 +106,6 @@ websites:
       - totp
     doc: https://cdnsun.com/knowledgebase/billing/two-factor-authentication
 
-  - name: ChunkHost
-    url: https://chunkhost.com
-    img: chunkhost.png
-    tfa:
-      - proprietary
-
   - name: CloudAtCost
     url: https://cloudatcost.com/
     img: cloudatcost.png
@@ -156,6 +150,13 @@ websites:
     doc: https://easy.gr/el/faq
     regions:
       - gr
+
+  - name: FastComet
+    url: https://www.fastcomet.com/
+    img: fastcomet.svg
+    tfa:
+      - totp
+    doc: https://www.fastcomet.com/tutorials/getting-started/enabling-two-factor-authentication
 
   - name: Fastly
     url: https://www.fastly.com
@@ -268,8 +269,10 @@ websites:
 
   - name: InMotion Hosting
     url: https://www.inmotionhosting.com/
-    twitter: inmotionhosting
-    img: inmotion.png
+    img: inmotion.svg
+    tfa:
+      - totp
+    doc: https://www.inmotionhosting.com/support/edu/cpanel/how-to-configure-and-use-two-factor-authentication/
 
   - name: IO Zoom
     url: https://www.iozoom.com

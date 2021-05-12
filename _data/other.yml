@@ -17,6 +17,12 @@ websites:
       - proprietary
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
+  - name: Alexa.com
+    url: https://www.alexa.com
+    img: alexa.svg
+    twitter: Alexa_Support
+    facebook: alexainternet
+
   - name: Ancestry
     url: https://www.ancestry.com
     img: ancestry.png
@@ -79,12 +85,6 @@ websites:
       - u2f
     doc: https://support.brave.com/hc/en-us/articles/360021649491
 
-  - name: CA Technologies
-    url: https://www.ca.com/
-    img: ca-technologies.png
-    twitter: CAinc
-    facebook: CATechnologies
-    
   - name: Canva
     url: https://www.canva.com
     img: canva.png
@@ -115,6 +115,13 @@ websites:
       - sms
       - totp
     doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
+
+  - name: CleverTap
+    url: https://clevertap.com/
+    img: clevertap.svg
+    tfa:
+      - totp
+    doc: https://docs.clevertap.com/docs/account-security
 
   - name: Clickworker
     url: https://www.clickworker.com/
@@ -169,11 +176,6 @@ websites:
     facebook: CrowdSupply
     email_address: support@crowdsupply.com
 
-  - name: CrowdFlower
-    url: https://www.crowdflower.com/
-    img: crowdflower.png
-    twitter: CrowdFlower
-
   - name: Databox
     url: https://databox.com
     img: databox.svg
@@ -189,10 +191,24 @@ websites:
       - sms
     doc: https://help.delighted.com/article/526--#2-step
 
+  - name: Domain
+    url: https://www.domain.com.au/
+    img: domain.svg
+    tfa:
+      - sms
+    doc: https://help.domain.com.au/hc/en-us/articles/360012412713
+    exception: "2FA is not available on the app."
+
   - name: Dreamstime
     url: https://www.dreamstime.com/
     img: dreamstime.png
     twitter: Dreamstime
+
+  - name: Drift
+    url: https://www.drift.com/
+    img: drift.svg
+    tfa:
+      - totp
 
   - name: Egnyte
     url: https://www.egnyte.com/
@@ -310,6 +326,14 @@ websites:
     img: gumtree.png
     twitter: Gumtree
     facebook: gumtree
+
+  - name: Heap
+    url: https://heap.io/
+    img: heap.svg
+    tfa:
+      - totp
+    doc: https://help.heap.io/heap-administration/secure-access/2fa/
+    exception: "2FA is only available for users on the Business plan."
 
   - name: Heise online
     url: https://www.heise.de/
@@ -571,11 +595,25 @@ websites:
       - totp
     doc: https://www.sanebox.com/help/127
 
-  - name: SignNow
+  - name: Semrush
+    url: https://www.semrush.com/
+    img: semrush.svg
+    tfa:
+      - email
+    doc: https://www.semrush.com/kb/1130--
+
+  - name: signNow
     url: https://www.signnow.com/
-    img: signnow.png
-    twitter: signnow
-    facebook: esignaturesignnow
+    img: signnow.svg
+    tfa:
+      - email
+
+  - name: Smartly.io
+    url: https://smartly.io
+    img: smartlyio.svg
+    tfa:
+      - totp
+    doc: https://support.smartly.io/hc/en-us/articles/360003493934
 
   - name: SmartSimple
     url: https://www.smartsimple.com
