@@ -6,6 +6,14 @@ websites:
       - totp
     doc: https://customercare.23andme.com/hc/en-us/articles/360034119874
 
+  - name: Atrium Health
+    url: https://atriumhealth.org
+    img: atriumhealth.svg
+    tfa:
+      - email
+    regions:
+      - us
+
   - name: Australian Red Cross Lifeblood
     url: https://www.donateblood.com.au/
     img: donateblood.png
@@ -50,12 +58,13 @@ websites:
     regions:
       - us
 
-  - name: drchrono
+  - name: DrChrono
     url: https://www.drchrono.com
     img: drchrono.png
     tfa:
       - proprietary
-    doc: https://www.drchrono.com/blog/two-factor-authentication-extra-security-for-your-health-records/
+      - sms
+    doc: https://support.drchrono.com/hc/en-us/articles/200030385
     regions:
       - us
 
@@ -82,11 +91,12 @@ websites:
     email_address: support@endomondo.com
     img: endomondo.png
 
-  - name: FitBit
+  - name: Fitbit
     url: https://www.fitbit.com/
-    twitter: fitbit
-    facebook: fitbit
     img: fitbit.png
+    tfa:
+      - sms
+    doc: https://help.fitbit.com/articles/en_US/Help_article/2197
 
   - name: FollowMyHealth
     url: https://www.followmyhealth.com/
@@ -116,6 +126,13 @@ websites:
       - u2f
     doc: https://www.google.com/intl/en-US/landing/2step/features.html
 
+  - name: Headspace
+    url: https://headspace.com
+    img: headspace.svg
+    twitter: HeadspaceHelp
+    facebook: Headspace
+    email_address: help@headspace.com
+
   - name: Hint Health
     url: https://www.hint.com
     img: hint.png
@@ -138,13 +155,6 @@ websites:
     lang: he
     regions:
       - il
-
-  - name: MedicAlert
-    url: https://www.medicalert.ca
-    img: medicalert.png
-    twitter: MedicAlertCA
-    regions:
-      - ca
 
   - name: Misfit
     url: https://misfit.com/
@@ -222,6 +232,15 @@ websites:
     lang: es
     regions:
       - ar
+
+  - name: TherapyNotes
+    url: https://www.therapynotes.com
+    img: therapynotes.svg
+    tfa:
+      - totp
+    doc: https://support.therapynotes.com/article/231--
+    regions:
+      - us
 
   - name: Thriva
     url: https://thriva.co

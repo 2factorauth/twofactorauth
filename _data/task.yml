@@ -55,6 +55,13 @@ websites:
       - totp
     doc: https://help.clubhouse.io/hc/en-us/articles/360044506931
 
+  - name: Deputy
+    url: https://deputy.com
+    img: deputy.svg
+    tfa:
+      - totp
+    doc: https://help.deputy.com/en/articles/1953504
+
   - name: fruux
     url: https://fruux.com
     img: fruux.png
@@ -88,6 +95,13 @@ websites:
       - sms
     doc: https://support.monday.com/hc/en-us/articles/360000787745
     exception: "Team admins must enable 2FA before members can use it."
+
+  - name: Nimbus Note
+    url: https://nimbusweb.me
+    img: nimbusnote.svg
+    tfa:
+      - totp
+    doc: https://nimbusweb.me/feature-2-step-verification.php
 
   - name: Nozbe Teams
     url: https://nozbe.com/
@@ -151,3 +165,11 @@ websites:
       - sms
       - totp
     doc: https://help.trello.com/article/993--
+
+  - name: When I Work
+    url: https://wheniwork.com
+    img: wheniwork.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://help.wheniwork.com/articles/log-in-with-two-step-verification-computer/
