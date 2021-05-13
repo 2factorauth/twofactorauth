@@ -190,6 +190,14 @@ websites:
     facebook: TiVo
     img: tivo.png
 
+  - name: TuneCore
+    url: https://tunecore.com
+    img: tunecore.png
+    tfa:
+      - sms
+      - phone
+    doc: https://support.tunecore.com/hc/en-us/articles/360000650226
+
   - name: TV Time
     url: https://www.tvtime.com
     twitter: tvshowtime

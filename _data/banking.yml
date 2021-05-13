@@ -684,7 +684,10 @@ websites:
     tfa:
       - proprietary
       - hardware
-    doc: https://www.firsttechfed.com/Tools-and-Resources/Tools-and-Resources/What-You-Can-Do-To-Protect-Your-Privacy#3
+      - sms
+      - phone
+      - email
+    doc: https://www.firsttechfed.com/help/security/prevent#multifunction
 
   - name: FirstBank
     url: https://www.efirstbank.com/
@@ -908,11 +911,21 @@ websites:
       - hardware
     doc: https://www.lansforsakringar.se/privat/att-vara-kund/digitala-tjanster-telefonbank/internetbanken/
 
-  - name: MandT Bank
+  - name: M&amp;T Bank
     url: https://www.mtb.com/
     img: mtbank.png
     twitter: MandT_Help
     facebook: MandTBank
+
+  - name: Macquarie Bank
+    url: https://www.macquarie.com.au/
+    img: macquariebank.svg
+    tfa:
+      - proprietary
+    doc: https://help.macquarie.com/s/article/How-do-I-set-up-two-factor-authentication
+    exception: "2FA is only available when 'Ultimate' security is enabled and an SMS-capable phone is required for initial setup."
+    regions:
+      - au
 
   - name: Marcus by Goldman Sachs
     url: https://www.marcus.com/
@@ -928,6 +941,13 @@ websites:
       - sms
       - phone
     doc: https://www.mbna.ca/help-centre/credit-cards/two-step-verification-faq/
+
+  - name: Mercury
+    url: https://mercury.com
+    img: mercury.svg
+    tfa:
+      - totp
+    doc: https://help.mercury.com/t/m1h3d07
 
   - name: Meridian Credit Union
     url: https://www.meridiancu.ca
@@ -991,9 +1011,10 @@ websites:
     url: https://www.navyfederal.org/
     img: navyfederal.png
     tfa:
+      - sms
       - email
       - proprietary
-    doc: https://nfcucloud.custhelp.com/app/answers/list/c/543
+    doc: https://www.navyfederal.org/services/security/two-step-verification.html
 
   - name: netbank
     url: https://www.netbank.de/
@@ -1141,6 +1162,17 @@ websites:
     tfa:
       - hardware
     doc: https://www.rabobank.nl/bedrijven/betalen/zelf-betalingen-doen/rabo-scanner/
+
+  - name: Radius Bank
+    url: https://radiusbank.com
+    img: radiusbank.svg
+    tfa:
+      - sms
+      - phone
+      - email
+      - totp
+    regions:
+      - us
 
   - name: Raiffeisen Bank CZ
     url: https://www.rb.cz/

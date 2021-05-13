@@ -70,6 +70,16 @@ websites:
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2181#issuecomment-266315173
 
+  - name: Brex
+    url: https://www.brex.com
+    img: brex.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://support.brex.com/how-do-i-opt-in-to-two-factor-authentication/
+    regions:
+      - us
+
   - name: Carta
     url: https://carta.com/
     img: carta.png
@@ -105,6 +115,13 @@ websites:
       - sms
       - phone
     doc: https://help.creditkarma.com/hc/en-us/articles/360001472366
+
+  - name: Deel
+    url: https://www.letsdeel.com
+    img: letsdeel.svg
+    tfa:
+      - totp
+    doc: https://help.letsdeel.com/en/articles/4810009
 
   - name: DEGIRO
     url: https://www.degiro.nl
@@ -426,6 +443,13 @@ websites:
     img: quizzle.png
     twitter: Quizzle
 
+  - name: RightCapital
+    url: https://www.rightcapital.com
+    img: rightcapital.svg
+    tfa:
+      - totp
+    doc: https://help.rightcapital.com/article/39-two-step-verification
+
   - name: Rocket Mortgage
     url: https://www.rocketmortgage.com/
     twitter: RocketMortgage
@@ -468,6 +492,13 @@ websites:
       - email
       - totp
     doc: https://www.taxact.com/support/24138/2019/how-is-a-verification-code-used?hideLayout=True
+
+  - name: TaxDome
+    url: https://taxdome.com
+    img: taxdome.svg
+    tfa:
+      - totp
+    doc: https://help.taxdome.com/article/95--
 
   - name: Techniker Krankenkasse
     url: https://www.tk.de/
