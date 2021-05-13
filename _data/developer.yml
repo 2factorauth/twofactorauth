@@ -1,4 +1,11 @@
 websites:
+  - name: 123 Form Builder
+    url: https://www.123formbuilder.com
+    img: 123formbuilder.svg
+    tfa:
+      - totp
+    doc: https://www.123formbuilder.com/docs/multi-factor-authentication-login
+
   - name: ActiveState
     url: https://www.activestate.com
     img: activestate.png
@@ -87,6 +94,13 @@ websites:
       - totp
     doc: https://help.batch.com/en/articles/2721053
 
+  - name: BitBar
+    url: https://bitbar.com
+    img: bitbar.svg
+    tfa:
+      - totp
+    doc: https://bitbar.com/blog/multi-factor-authentication/
+
   - name: Bitbucket
     url: https://bitbucket.org
     img: bitbucket.png
@@ -100,6 +114,13 @@ websites:
     url: https://bitnami.com
     img: bitnami.png
     twitter: bitnami
+
+  - name: Bitrise
+    url: https://www.bitrise.io/
+    img: bitrise.svg
+    tfa:
+      - totp
+    doc: https://devcenter.bitrise.io/getting-started/account-security/
 
   - name: Buddy
     url: https://buddy.works
@@ -143,6 +164,14 @@ websites:
     facebook: Cacoocom
     twitter: cacoocom
 
+  - name: Caspio
+    url: https://www.caspio.com/
+    img: caspio.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://howto.caspio.com/caspio-id/managing-caspio-id/#Enable2FA
+
   - name: Chocolatey
     url: https://chocolatey.org/
     img: chocolatey.png
@@ -185,7 +214,8 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://help.compose.com/docs/two-factor-authentication
+      - u2f
+    doc: https://www.compose.com/articles/introducing-fido-universal-2nd-factor-authentication/
 
   - name: Contentstack
     url: https://www.contentstack.com/
@@ -269,6 +299,14 @@ websites:
       - totp
     doc: https://support.fogbugz.com/hc/en-us/articles/360011262434
 
+  - name: Formsite
+    url: https://www.formsite.com
+    img: formsite.svg
+    tfa:
+      - totp
+    doc: https://support.formsite.com/hc/en-us/articles/360000686614
+    exception: "2FA is only available for Pro 3 accounts or higher."
+
   - name: GitHub
     url: https://github.com
     img: github.png
@@ -310,10 +348,18 @@ websites:
       - totp
     doc: https://docs.heap.io/docs/2fa
 
+  - name: Hevo Data
+    url: https://www.hevodata.com
+    img: hevodata.svg
+    tfa:
+      - totp
+    doc: https://docs.hevodata.com/account-management/personal-settings/two-factor-authentication/
+
   - name: Hotjar
     url: https://hotjar.com/
     img: hotjar.png
     twitter: hotjar
+    facebook: HotjarApps
 
   - name: imgix
     url: https://www.imgix.com/
@@ -361,9 +407,16 @@ websites:
       - hardware
     doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
 
+  - name: Lokalise
+    url: https://lokalise.com
+    img: lokalise.svg
+    tfa:
+      - totp
+    doc: https://docs.lokalise.com/en/articles/2329387
+
   - name: Looker
     url: https://looker.com/
-    img: looker.png
+    img: looker.svg
     tfa:
       - totp
     doc: https://www.looker.com/docs/admin/security/two-factor-authentication
@@ -374,6 +427,13 @@ websites:
     tfa:
       - totp
     doc: https://docs.mapbox.com/accounts/guides/settings/#two-factor-authentication
+
+  - name: Matomo Cloud
+    url: https://matomo.org/matomo-cloud/
+    img: matomo.svg
+    tfa:
+      - totp
+    doc: https://matomo.org/faq/general/faq_27245/
 
   - name: MongoDB Atlas
     url: https://atlas.mongodb.com
@@ -429,6 +489,7 @@ websites:
     url: https://pagerduty.com
     img: pagerduty.png
     twitter: PagerDutyHelp
+    facebook: PagerDuty
     email_address: support@pagerduty.com
 
   - name: Panic Sync
@@ -465,12 +526,25 @@ websites:
       - phone
     doc: https://support.plivo.com/hc/en-us/articles/360041766411
 
+  - name: Postman
+    url: https://postman.com
+    img: postman.svg
+    twitter: getpostman
+    facebook: getpostman
+    email_address: help@getpostman.com
+
   - name: ProfitWell
     url: https://profitwell.com
     img: profitwell.png
     tfa:
       - totp
     doc: https://learn.profitwell.com/article/wsudrpi199-setting-up-2-factor-authentication
+
+  - name: Pusher
+    url: https://pusher.com
+    img: pusher.svg
+    tfa:
+      - totp
 
   - name: Pushover
     url: https://pushover.net/
@@ -578,6 +652,13 @@ websites:
       - totp
       - u2f
     doc: https://blog.sentry.io/2016/06/22/introducing-2fa
+
+  - name: Sisense Cloud Data Teams
+    url: https://www.sisense.com
+    img: sisense.svg
+    tfa:
+      - totp
+    doc: https://dtdocs.sisense.com/article/two-factor
 
   - name: SourceForge
     url: https://sourceforge.net/

@@ -1,4 +1,12 @@
 websites:
+  - name: Alectra Utilities
+    url: https://alectrautilities.com/
+    img: alectra.svg
+    twitter: alectranews
+    facebook: alectranews
+    regions:
+      - ca
+
   - name: American Electric Power
     url: https://www.aep.com/
     twitter: AEPnews
@@ -135,9 +143,12 @@ websites:
 
   - name: Cox
     url: https://www.cox.com/
-    twitter: CoxHelp
-    facebook: coxcommunications
-    img: cox.png
+    img: cox.svg
+    tfa: 
+      - sms
+      - phone
+      - email
+    doc: https://www.cox.com/residential/support/enrolling-in-multifactor-authentication-in-my-account.html
     regions:
       - us
 
@@ -326,14 +337,6 @@ websites:
     img: pge.png
     regions:
       - us
-
-  - name: PowerStream
-    url: https://www.powerstream.ca/
-    twitter: AlectraNews
-    facebook: PowerStreamPage
-    img: powerstream.png
-    regions:
-      - ca
 
   - name: RCN
     url: https://www.rcn.com/
@@ -590,7 +593,9 @@ websites:
     img: voipms.png
     tfa:
       - email
-    doc: https://wiki.voip.ms/article/Two-step_Verification
+      - totp
+    doc: https://wiki.voip.ms/article/TOTP_Authentication
+    exception: "Only one of the 2FA methods can be enabled at the same time."
 
   - name: Wingo
     url: https://www.wingo.ch

@@ -1,4 +1,11 @@
 websites:
+  - name: Adyen
+    url: https://www.adyen.com/
+    img: adyen.svg
+    tfa:
+      - totp
+    doc: https://docs.adyen.com/account/two-factor-authentication
+
   - name: Amazon Pay
     url: https://pay.amazon.com
     img: amazonpay.png
@@ -60,6 +67,13 @@ websites:
     img: clickpay.png
     regions:
       - us
+
+  - name: Currencycloud
+    url: https://www.currencycloud.com
+    img: currencycloud.svg
+    tfa:
+      - proprietary
+    doc: https://support.currencycloud.com/hc/en-gb/articles/360018656420
 
   - name: DigitalRiver
     url: https://www.digitalriver.com
@@ -252,6 +266,13 @@ websites:
       - sms
     doc: https://www.skrill.com/en/support#/path/SECURITY/1362150272/
     exception: "Email method requires an additional PIN"
+
+  - name: Spreedly
+    url: https://www.spreedly.com/
+    img: spreedly.svg
+    tfa:
+      - totp
+    doc: https://docs.spreedly.com/guides/multi-factor-authentication/
 
   - name: Square
     url: https://squareup.com

@@ -277,6 +277,14 @@ websites:
     twitter: Gilt
     img: gilt.png
 
+  - name: GoPro
+    url: https://gopro.com/
+    img: gopro.svg
+    tfa:
+      - sms
+    doc: https://community.gopro.com/t5/en/Setting-Up-Two-Step-Verification/ta-p/395873
+    exception: "2FA only applies on the GoPro website, not the app."
+
   - name: Groupon
     url: https://www.groupon.com
     twitter: Groupon
@@ -525,6 +533,13 @@ websites:
     lang: de
     regions:
       - ch
+
+  - name: StockX
+    url: https://stockx.com
+    img: stockx.svg
+    tfa:
+      - sms
+    doc: https://help.stockx.com/s/article/What-is-Two-Step-Verification
 
   - name: Target
     url: https://www.target.com/

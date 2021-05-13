@@ -105,6 +105,13 @@ websites:
       - hardware
     doc: https://dmarcian.com/secure-dmarcian-2fa/
 
+  - name: DNSFilter
+    url: https://www.dnsfilter.com/
+    img: dnsfilter.svg
+    tfa:
+      - totp
+    doc: https://docs.dnsfilter.com/docs/two-factor-authentication
+
   - name: Dome9 Security
     url: https://dome9.com/
     img: dome9.png
@@ -204,6 +211,18 @@ websites:
     tfa:
       - totp
 
+  - name: Perimeter 81
+    url: https://www.perimeter81.com/
+    img: perimeter81.png
+    tfa:
+      - sms
+      - totp
+      - proprietary
+      - u2f
+      - phone
+    doc: https://support.perimeter81.com/docs/two-factor-authentication
+    exception: "2FA is only available for users on Premium and Enterprise plans."
+
   - name: Prey
     url: https://www.preyproject.com
     img: prey.png
@@ -279,3 +298,10 @@ websites:
     tfa:
       - totp
     doc: https://docs.webroot.com/us/en/home/wsa_website_userguide/wsa_managementwebsite_userguide.htm#GettingStarted/Enabling2-FactorAuthentication.htm
+
+  - name: Wordfence Central
+    url: https://www.wordfence.com
+    img: wordfence.svg
+    tfa:
+      - totp
+    doc: https://www.wordfence.com/help/central/2fa/

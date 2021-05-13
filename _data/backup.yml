@@ -21,7 +21,8 @@ websites:
     img: box.png
     tfa:
       - sms
-    doc: https://community.box.com/t5/How-to-Guides-for-Account/Manage-Account-Settings/ta-p/20022#authentication
+      - totp
+    doc: https://support.box.com/hc/en-us/articles/360043697154
 
   - name: CloudApp
     url: https://www.getcloudapp.com/
@@ -141,6 +142,15 @@ websites:
     doc: https://support.microsoft.com/en-us/help/12408/
     exception: "2FA phone calls may not be available in all regions"
 
+  - name: Onehub
+    url: https://www.onehub.com/
+    img: onehub.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://support.onehub.com/hc/en-us/articles/360039792571
+    exception: "Software 2FA requires adding a phone number as a fallback."
+    
   - name: PCloud
     url: https://www.pcloud.com
     img: pcloud.png
@@ -156,6 +166,15 @@ websites:
       - email
       - totp
     doc: https://www.qnap.com/en-us/how-to/tutorial/article/how-to-enhance-account-security-using-2-step-verification
+
+  - name: SmartVault
+    url: https://www.smartvault.com/
+    img: smartvault.svg
+    tfa:
+      - email
+      - sms
+      - phone
+    doc: https://help.smartvault.com/hc/en-us/articles/360051275493
 
   - name: SugarSync
     url: https://www.sugarsync.com/
@@ -190,6 +209,13 @@ websites:
       - totp
     doc: https://support.tresorit.com/hc/en-us/articles/216114527
     exception: "Requires enabling at least two 2FA methods."
+
+  - name: UpdraftPlus
+    url: https://updraftplus.com/
+    img: updraftplus.svg
+    tfa:
+      - totp
+    doc: https://updraftplus.com/my-account/two-factor-login-security-settings/
 
   - name: Wasabi
     url: https://wasabi.com/

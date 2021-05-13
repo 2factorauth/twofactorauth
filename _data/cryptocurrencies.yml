@@ -1,10 +1,11 @@
 websites:
-  - name: AnycoinDirect
+  - name: Anycoin Direct
     url: https://anycoindirect.eu
     img: anycoindirect.png
     tfa:
       - totp
-    doc: https://support.anycoindirect.eu/hc/en-gb/articles/115001423191
+      - sms
+    doc: https://anycoindirect.eu/en/support/anycoin-direct/security#what-is-two-factor-authentication-2fa
 
   - name: Binance
     url: https://www.binance.com/
@@ -21,7 +22,18 @@ websites:
     tfa:
       - email
       - totp
-    doc: https://bitbay.net/en/safety
+    doc: https://bitbay.net/en/safety#two-factor-authentication
+
+  - name: Bitbuy
+    url: https://bitbuy.ca/
+    img: bitbuy.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://support.bitbuy.ca/hc/en-us/articles/360059151172
+    exception: "SMS 2FA is only available for country code +1 (North America)"
+    regions:
+      - ca
 
   - name: Bitcoin.de
     url: https://bitcoin.de
@@ -122,7 +134,7 @@ websites:
     img: bitstamp.png
     tfa:
       - totp
-    doc: https://www.bitstamp.net/s/documents/bitstamp_2_factor_authentication_guide.pdf
+    doc: https://www.bitstamp.net/faq/what-is-two-factor-authentication
 
   - name: Bittrex
     url: https://bittrex.com
@@ -145,7 +157,7 @@ websites:
     img: blockfi.png
     tfa:
       - totp
-    doc: https://blockfi.com/blockfi-news/two-factor-authentication-2fa-now-available-for-all-blockfi-accounts/
+    doc: https://help.blockfi.com/hc/en-us/articles/360049343611
 
   - name: Braziliex
     url: https://braziliex.com/
@@ -170,7 +182,7 @@ websites:
     img: btcmarkets.png
     tfa:
       - totp
-    doc: https://www.btcmarkets.net/faq#q27
+    doc: https://www.btcmarkets.net/frequently-asked-questions
     exception: "A mobile phone number is required to reset two-factor authentication."
     regions:
       - au
@@ -250,6 +262,15 @@ websites:
       - u2f
     doc: https://support.coinbase.com/customer/en/portal/articles/1658338
 
+  - name: Coinberry
+    url: https://www.coinberry.com/
+    img: coinberry.svg
+    tfa:
+      - totp
+    doc: https://help.coinberry.com/s/article/2-Factor-Authentication
+    regions:
+      - ca
+
   - name: Coincheck
     url: https://coincheck.com/
     img: coincheck.png
@@ -273,6 +294,13 @@ websites:
     tfa:
       - totp
     doc: https://support.coinfalcon.com/en-us/article/-nkjppd/
+
+  - name: CoinField
+    url: https://www.coinfield.com
+    img: coinfield.svg
+    tfa:
+      - totp
+    doc: https://coinfield.freshdesk.com/support/solutions/folders/36000055721
 
   - name: Coinfloor
     url: https://www.coinfloor.co.uk/
@@ -300,6 +328,13 @@ websites:
     doc: https://help.coinify.com/hc/en-us/articles/360014173320
     exception: "2FA is only available for merchant accounts. myCoinify trading accounts do not support 2FA."
 
+  - name: Coinigy
+    url: https://www.coinigy.com/
+    img: coinigy.svg
+    tfa:
+      - totp
+    doc: https://support.coinigy.com/hc/en-us/articles/360001134694
+
   - name: Coinjar
     url: https://coinjar.com
     img: coinjar.png
@@ -322,6 +357,13 @@ websites:
     tfa:
       - totp
     doc: https://support.coins.ph/hc/en-us/articles/202604924
+
+  - name: CoinSmart
+    url: https://www.coinsmart.com/
+    img: coinsmart.svg
+    tfa:
+      - totp
+    doc: https://coinsmart.zendesk.com/hc/en-us/articles/360014948893
 
   - name: Coinspot
     url: https://www.coinspot.com.au/
@@ -568,6 +610,15 @@ websites:
     regions:
       - ng
 
+  - name: NDAX
+    url: https://ndax.io/
+    img: ndax.svg
+    tfa:
+      - totp
+    doc: https://help.ndax.io/en-ca/category/2fa-rgk6to/
+    regions:
+      - ca
+
   - name: OKEx
     url: https://www.okex.com/
     img: okex.png
@@ -608,12 +659,19 @@ websites:
       - totp
     doc: https://paykassa.pro/en/news/s-paykassa-vashi-dannye-pod-nadejnoy-zashchitoy/
 
+  - name: Phemex
+    url: https://phemex.com
+    img: phemex.svg
+    tfa:
+      - totp
+    doc: https://phemex.com/getting-started/how-do-i-enable-google-two-factor-authentication
+
   - name: Poloniex
     url: https://poloniex.com/
     img: poloniex.png
     tfa:
       - totp
-    doc: https://support.poloniex.circle.com/hc/en-us/articles/360025399352
+    doc: https://support.poloniex.com/hc/en-us/articles/360040016513
 
   - name: ProBit
     url: https://www.probit.com/
@@ -639,12 +697,29 @@ websites:
       - totp
     doc: https://support.remitano.com/en/articles/781044
 
+  - name: River Financial
+    url: https://river.com/
+    img: river.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://river.com/support/knowledge-base/articles/enable-multi-factor-authentication
+    regions:
+      - us
+
   - name: SatoshiTango
     url: https://satoshitango.com/
     img: satoshitango.png
     tfa:
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2321#issuecomment-273971890
+
+  - name: Shrimpy
+    url: https://www.shrimpy.io
+    img: shrimpy.png
+    tfa:
+      - totp
+    doc: https://help.shrimpy.io/hc/en-us/articles/1260803097310
 
   - name: STEX
     url: https://stex.com
@@ -653,6 +728,14 @@ websites:
       - totp
       - u2f
     doc: https://help.stex.com/en/articles/3486981#individual-account-security-settings
+
+  - name: StormGain
+    url: https://stormgain.com
+    img: stormgain.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.stormgain.com/articles/two-factor-authentication-google-authenticator-and-sms
 
   - name: Swyftx
     url: https://swyftx.com/
@@ -712,3 +795,11 @@ websites:
       - phone
       - proprietary
     doc: https://support.xapo.com/en/articles?id=59
+
+  - name: YouHodler
+    url: https://www.youhodler.com
+    img: youhodler.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.youhodler.com/en/articles/3787039
