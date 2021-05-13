@@ -330,6 +330,12 @@ websites:
     regions:
       - de
 
+  - name: Kerboodle
+    url: https://www.kerboodle.com/
+    img: kerboodle.svg
+    twitter: kerboodle
+    email_address: support@kerboodle.com
+
   - name: KnowBe4
     url: https://www.knowbe4.com/
     img: knowbe4.png
@@ -471,6 +477,15 @@ websites:
     twitter: quizlet
     facebook: quizlet
 
+  - name: RedShelf
+    url: https://www.redshelf.com/
+    img: redshelf.svg
+    tfa:
+      - totp
+    doc: https://solve.redshelf.com/hc/en-us/articles/1260802590609
+    regions:
+      - us
+
   - name: Robert Morris University
     url: https://sentry.rmu.edu/login
     twitter: RMU
@@ -503,6 +518,18 @@ websites:
     email_address: support@schoolsoft.se
     regions:
       - se
+
+  - name: Seneca Learning
+    url: https://senecalearning.com
+    img: seneca.svg
+    twitter: SenecaLearn
+    facebook: senecalearning
+    email_address: learnmore@seneca.io
+    regions:
+      - gb
+      - us
+      - mx
+      - br
 
   - name: Stanford University
     url: https://www.stanford.edu/

@@ -1,4 +1,11 @@
 websites:
+  - name: Adyen
+    url: https://www.adyen.com/
+    img: adyen.svg
+    tfa:
+      - totp
+    doc: https://docs.adyen.com/account/two-factor-authentication
+
   - name: Amazon Pay
     url: https://pay.amazon.com
     img: amazonpay.png
@@ -6,7 +13,7 @@ websites:
       - sms
       - phone
       - totp
-    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
+    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=G3PWZPU52FKN7PW4
     exception: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
 
   - name: American Express
@@ -23,6 +30,16 @@ websites:
     doc: https://www.appfolio.com/help/online-portal
     regions:
       - us
+
+  - name: Bill
+    url: https://www.bill.com
+    img: bill.svg
+    tfa:
+      - sms
+      - phone
+      - totp
+    doc: https://help.bill.com/hc/en-us/articles/360000023843
+    exception: "2FA via phone call is available for US and CA only."
 
   - name: Braintree
     img: braintree.png
@@ -50,6 +67,13 @@ websites:
     img: clickpay.png
     regions:
       - us
+
+  - name: Currencycloud
+    url: https://www.currencycloud.com
+    img: currencycloud.svg
+    tfa:
+      - proprietary
+    doc: https://support.currencycloud.com/hc/en-gb/articles/360018656420
 
   - name: DigitalRiver
     url: https://www.digitalriver.com
@@ -168,7 +192,7 @@ websites:
 
   - name: PayPal
     url: https://www.paypal.com/
-    img: paypal.png
+    img: paypal.svg
     tfa:
       - sms
       - totp
@@ -242,6 +266,13 @@ websites:
       - sms
     doc: https://www.skrill.com/en/support#/path/SECURITY/1362150272/
     exception: "Email method requires an additional PIN"
+
+  - name: Spreedly
+    url: https://www.spreedly.com/
+    img: spreedly.svg
+    tfa:
+      - totp
+    doc: https://docs.spreedly.com/guides/multi-factor-authentication/
 
   - name: Square
     url: https://squareup.com
