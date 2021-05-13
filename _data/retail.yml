@@ -32,7 +32,7 @@ websites:
       - sms
       - phone
       - totp
-    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=201962420
+    doc: https://www.amazon.com/gp/help/customer/display.html?nodeId=G3PWZPU52FKN7PW4
     exception: "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE."
 
   - name: Apple
@@ -165,6 +165,19 @@ websites:
     img: dell.png
     twitter: DellCares
 
+  - name: Depop
+    url: https://www.depop.com
+    img: depop.svg
+    twitter: depop
+    facebook: depop
+    regions:
+      - gb
+      - au
+      - de
+      - fr
+      - it
+      - us
+
   - name: Digitec
     url: https://www.digitec.ch
     img: digitec.png
@@ -264,6 +277,14 @@ websites:
     twitter: Gilt
     img: gilt.png
 
+  - name: GoPro
+    url: https://gopro.com/
+    img: gopro.svg
+    tfa:
+      - sms
+    doc: https://community.gopro.com/t5/en/Setting-Up-Two-Step-Verification/ta-p/395873
+    exception: "2FA only applies on the GoPro website, not the app."
+
   - name: Groupon
     url: https://www.groupon.com
     twitter: Groupon
@@ -335,6 +356,12 @@ websites:
     twitter: asklazadasg
     img: lazada.png
 
+  - name: Lenovo
+    url: https://lenovo.com
+    img: lenovo.svg
+    twitter: LenovoSupport
+    facebook: lenovo
+
   - name: Lowes
     url: https://www.lowes.com
     img: lowes.png
@@ -364,6 +391,7 @@ websites:
     url: https://www.migros.ch
     img: migros.png
     tfa:
+      - sms
       - totp
     doc: https://login.migros.ch/help/security/2fa?hl=en
     regions:
@@ -415,6 +443,13 @@ websites:
     url: https://www.pccasegear.com/
     twitter: pccasegear
     img: pccasegear.png
+
+  - name: Pro Wrestling Tees
+    url: https://www.prowrestlingtees.com/
+    twitter: PWTees
+    facebook: prowrestlingtees
+    email_address: info@prowrestlingtees.com
+    img: prowrestlingtees.png
 
   - name: Purse
     url: https://purse.io/
@@ -499,10 +534,22 @@ websites:
     regions:
       - ch
 
+  - name: StockX
+    url: https://stockx.com
+    img: stockx.svg
+    tfa:
+      - sms
+    doc: https://help.stockx.com/s/article/What-is-Two-Step-Verification
+
   - name: Target
     url: https://www.target.com/
-    twitter: Target
     img: target.png
+    tfa:
+      - sms
+      - email
+    doc: https://security.target.com/FAQs
+    regions:
+      - us
 
   - name: Thalia
     url: https://www.thalia.de/

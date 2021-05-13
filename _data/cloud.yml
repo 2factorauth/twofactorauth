@@ -28,7 +28,8 @@ websites:
     img: cloud66.png
     tfa:
       - totp
-    doc: https://blog.cloud66.com/two-factor-authentication-for-your-accounts/
+      - u2f
+    doc: https://help.cloud66.com/node/account/two-factor-authentication.html
 
   - name: cloud.ca
     url: https://cloud.ca
@@ -45,12 +46,20 @@ websites:
       - totp
     doc: https://www.digitalocean.com/docs/accounts/security/2fa/
 
+  - name: Elastic Cloud
+    url: https://www.elastic.co
+    img: elasticcloud.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://www.elastic.co/guide/en/cloud/current/ec-account-user-settings.html#ec-account-security-mfa
+
   - name: Engine Yard
     url: https://www.engineyard.com
     img: engineyard.png
     tfa:
       - totp
-    doc: https://support.cloud.engineyard.com/hc/en-us/community/posts/203752678
+    doc: https://blog.engineyard.com/engine-yards-two-factor-authentication
     exception: "To enable 2FA on Engine Yard, contact support."
 
   - name: Equinix Metal
@@ -127,6 +136,7 @@ websites:
     img: forge.png
     tfa:
       - totp
+    doc: https://forge.laravel.com/docs/1.0/accounts/your-account.html#securing-your-account-with-two-factor-authentication
 
   - name: Leaseweb
     url: https://www.leaseweb.com/
@@ -148,7 +158,7 @@ websites:
     img: macstadium.png
     tfa:
       - totp
-    doc: https://help.macstadium.com/articles/macstadium-two-factor-authentication-guide
+    doc: https://docs.macstadium.com/docs/two-factor-authentication
 
   - name: Microsoft Azure
     url: https://azure.microsoft.com/
@@ -175,6 +185,13 @@ websites:
     facebook: openshift
     img: openshift.png
 
+  - name: Oracle Cloud
+    url: https://oracle.com
+    img: oracle.svg
+    tfa:
+      - totp
+    doc: https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/usingmfa.htm
+
   - name: Rackspace
     url: https://www.rackspace.com/
     img: rackspace.png
@@ -188,7 +205,7 @@ websites:
     img: scaleway.png
     tfa:
       - totp
-    doc: https://blog.scaleway.com/2017/introducing-two-factor-authentication-on-scaleway/
+    doc: https://www.scaleway.com/en/docs/how-to-activate-two-factor-authentication/
 
   - name: Scalr
     url: https://www.scalr.com
@@ -219,6 +236,13 @@ websites:
       - totp
       - hardware
     doc: https://userify.com/docs/multifactor-authentication/
+
+  - name: VMware
+    url: https://vmware.com
+    img: vmware.svg
+    tfa:
+      - totp
+    doc: https://kb.vmware.com/s/article/74603
 
   - name: Vultr
     url: https://www.vultr.com
