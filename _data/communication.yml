@@ -4,7 +4,16 @@ websites:
     img: actionnetwork.png
     tfa:
       - totp
+      - sms
     doc: https://help.actionnetwork.org/hc/en-us/articles/217206826
+
+  - name: ActiveCampaign
+    url: https://www.activecampaign.com/
+    img: activecampaign.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://help.activecampaign.com/hc/en-us/articles/360008574740
 
   - name: Airship
     url: https://www.airship.com/
@@ -28,6 +37,20 @@ websites:
     tfa:
       - totp
     doc: https://helpdesk.bitrix24.com/open/9800171/
+
+  - name: Bonusly
+    url: https://bonus.ly/
+    img: bonusly.svg
+    tfa:
+      - totp
+    doc: https://help.bonus.ly/en/articles/2889878
+
+  - name: Campaign Monitor
+    url: https://campaignmonitor.com/
+    img: campaignmonitor.svg
+    tfa:
+      - totp
+    doc: https://help.campaignmonitor.com/two-factor-authentication
 
   - name: Campfire
     url: https://campfirenow.com/
@@ -65,12 +88,34 @@ websites:
       - totp
     doc: https://help.cloze.com/knowledge_base/topics/how-do-i-enable-2-step-authentication
 
+  - name: Coda
+    url: https://coda.io
+    img: coda.svg
+    tfa:
+      - totp
+    doc: https://help.coda.io/en/articles/3833338
+
+  - name: ConvertKit
+    url: https://convertkit.com
+    img: convertkit.svg
+    tfa:
+      - sms
+      - proprietary
+    doc: https://help.convertkit.com/en/articles/3925724
+
   - name: Customer.io
     url: https://customer.io
     img: customerio.png
     tfa:
       - totp
     doc: https://customer.io/docs/two-factor-auth
+
+  - name: Demio
+    url: https://demio.com
+    img: demio.svg
+    tfa:
+      - totp
+    doc: https://help.demio.com/en/articles/4794494
 
   - name: Direct Mail
     url: https://directmailmac.com
@@ -98,12 +143,20 @@ websites:
     url: https://www.doodle.com
     img: doodle.png
     twitter: doodletweet
+    facebook: DoodleAG
 
   - name: E-POST
     url: https://www.epost.de/
     facebook: deutschepost
     img: epost.png
     lang: de
+
+  - name: EasySendy
+    url: https://easysendy.com
+    img: easysendy.png
+    tfa:
+      - totp
+    doc: https://easysendy.com/sendy/sendy-version-2-1-0-two-factor-authentication-released
 
   - name: Elastic Email
     url: https://elasticemail.com
@@ -118,12 +171,29 @@ websites:
     img: element.png
     twitter: element_hq
 
+  - name: EmailMeForm
+    url: https://www.emailmeform.com/
+    img: emailmeform.svg
+    tfa:
+      - totp
+    doc: https://support.emailmeform.com/hc/en-us/sections/360002042671
+
   - name: FAX.PLUS
     url: https://www.fax.plus
     img: faxplus.png
     tfa:
       - totp
     doc: https://www.fax.plus/help/articles/how-can-i-enable-disable-two-factor-authentication
+
+  - name: Firmex VDR
+    url: https://www.firmex.com/
+    img: firmex.svg
+    tfa:
+      - totp
+      - sms
+      - email
+    doc: https://support.firmex.com/hc/en-us/articles/204467648
+    exception: "2FA must be enabled by a site administrator before use."
 
   - name: Fleep
     url: https://fleep.io
@@ -143,6 +213,14 @@ websites:
     tfa:
       - totp
     doc: https://help.frontapp.com/t/36249g
+
+  - name: Frontify
+    url: https://www.frontify.com
+    img: frontify.svg
+    tfa:
+      - totp
+    doc: https://help.frontify.com/en/articles/3947094
+    exception: "2FA is only available for Enterprise users with a security package."
 
   - name: Grape
     url: https://chatgrape.com/
@@ -192,6 +270,13 @@ websites:
       - totp
     doc: https://knowledge.hubspot.com/articles/kcs_article/account/how-can-i-set-up-two-factor-authentication-for-my-hubspot-login
 
+  - name: Infinity
+    url: https://www.infinity.co
+    img: infinity.svg
+    tfa:
+      - sms
+    doc: https://www.infinity.co/knowledge-base/article/2-factor-authentication
+
   - name: Intercom
     url: https://www.intercom.com/
     img: intercom.png
@@ -205,6 +290,13 @@ websites:
     twitter: IRCCloud
     facebook: irccloud
 
+  - name: Iterable
+    url: https://iterable.com/
+    img: iterable.svg
+    tfa:
+      - totp
+    doc: https://support.iterable.com/hc/en-us/articles/115004821703
+
   - name: Kik
     url: https://www.kik.com/
     img: kik.png
@@ -216,6 +308,14 @@ websites:
     url: https://line.me/en/
     img: line.png
     facebook: line.worldwide
+
+  - name: Litmus
+    url: https://www.litmus.com
+    img: litmus.svg
+    tfa:
+      - sms
+      - proprietary
+    doc: https://help.litmus.com/article/128--
 
   - name: MailChimp
     url: https://mailchimp.com/
@@ -246,6 +346,21 @@ websites:
       - totp
     doc: https://missiveapp.com/faq/enable-2-factor-authentication
 
+  - name: Notejoy
+    url: https://notejoy.com
+    img: notejoy.svg
+    tfa:
+      - totp
+    doc: https://notejoy.com/help/two-factor-authentication
+    exception: "2FA is not available to Free plan users and is not available on the Android app."
+
+  - name: Notion
+    url: https://notion.so
+    img: notion.svg
+    twitter: NotionHQ
+    facebook: NotionHQ
+    email_address: team@makenotion.com
+
   - name: Nulab
     url: https://nulab.com/
     img: nulab.png
@@ -254,6 +369,21 @@ websites:
       - totp
       - sms
     doc: https://support.nulab.com/hc/en-us/articles/115001025087
+
+  - name: OnceHub
+    url: https://www.oncehub.com
+    img: oncehub.svg
+    tfa:
+      - sms
+    doc: https://help.oncehub.com/help/set-up-two-factor-authentication
+
+  - name: Pepipost
+    url: https://www.pepipost.com/
+    img: pepipost.png
+    tfa:
+      - email
+      - totp
+    doc: https://docs.pepipost.com/docs/two-factor-authentication-2fa
 
   - name: Pipedrive
     url: https://www.pipedrive.com/
@@ -270,6 +400,13 @@ websites:
       - totp
     doc: https://postmarkapp.com/support/article/1081-how-do-i-use-two-factor-authentication-2fa
     exception: "Setup requires SMS verification."
+
+  - name: QuestionPro
+    url: https://questionpro.com
+    img: questionpro.svg
+    tfa:
+      - sms
+    doc: https://questionpro.com/help/two-factor-authentication.html
 
   - name: Ryver
     url: https://ryver.com/
@@ -330,6 +467,15 @@ websites:
       - totp
     doc: https://get.slack.help/hc/en-us/articles/204509068
 
+  - name: SmartSurvey
+    url: https://www.smartsurvey.co.uk
+    img: smartsurvey.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.smartsurvey.co.uk/article/two-factor-authentication
+    exception: "SMS 2FA is only available for Enterprise users."
+
   - name: SocketLabs
     url: https://socketlabs.com/
     img: socketlabs.png
@@ -337,6 +483,13 @@ websites:
       - sms
       - totp
     doc: https://help.socketlabs.com/docs/two-step-verification
+
+  - name: SoGoSurvey
+    url: https://www.sogosurvey.com
+    img: sogosurvey.svg
+    tfa:
+      - email
+    doc: https://www.sogosurvey.com/help/2-step-authentication/
 
   - name: SparkPost
     url: https://sparkpost.com/
@@ -396,6 +549,13 @@ websites:
     facebook: WoltLab
     email_address: woltlab@woltlab.com
     img: woltlab.png
+
+  - name: Xink
+    url: https://www.xink.io/
+    img: xink.png
+    tfa:
+      - totp
+    doc: https://support.xink.io/support/solutions/articles/1000271422
 
   - name: Yammer
     url: https://www.yammer.com
