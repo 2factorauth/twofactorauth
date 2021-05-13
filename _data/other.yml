@@ -200,6 +200,15 @@ websites:
     facebook: CrowdSupply
     email_address: support@crowdsupply.com
 
+  - name: Current RMS
+    url: https://www.current-rms.com/
+    img: current-rms.svg
+    tfa:
+      - totp
+      - proprietary
+      - sms
+    doc: https://help.current-rms.com/en/articles/1767596
+
   - name: Databox
     url: https://databox.com
     img: databox.svg
