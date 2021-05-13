@@ -58,6 +58,13 @@ websites:
     tfa:
       - totp
 
+  - name: Call Of Duty
+    url: https://callofduty.com
+    img: callofduty.png
+    tfa:
+      - totp
+    doc: https://profile.callofduty.com/cod/announcement2FA
+
   - name: CDKeys
     url: https://www.cdkeys.com/
     img: cdkeys.png
@@ -80,6 +87,14 @@ websites:
       - phone
       - totp
     doc: https://help.ea.com/en-us/help/account/origin-login-verification-information/
+
+  - name: Eneba
+    url: https://www.eneba.com/
+    img: eneba.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.eneba.com/hc/en-us/articles/360010216714
 
   - name: Enjin
     url: https://www.enjin.com/
@@ -199,6 +214,14 @@ websites:
       - totp
     doc: https://support.humblebundle.com/hc/en-us/articles/202421374
 
+  - name: Hypixel
+    url: https://hypixel.net/
+    img: hypixel.png
+    tfa:
+      - email
+      - totp
+    doc: https://support.hypixel.net/hc/en-us/articles/360019538060
+
   - name: IndieGala
     url: https://www.indiegala.com/
     img: indiegala.png
@@ -241,7 +264,9 @@ websites:
     img: nexon.png
     tfa:
       - totp
-    doc: https://support.nexon.net/hc/en-us/articles/360025920992
+      - email
+      - sms
+    doc: https://support.nexon.net/hc/en-us/articles/360026634532
 
   - name: Nexus Mods
     url: https://www.nexusmods.com/
@@ -264,6 +289,14 @@ websites:
     facebook: Nintendo
     img: nintendo-network.png
 
+  - name: Oculus
+    url: https://oculus.com/
+    img: oculus.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://support.oculus.com/357942391637117/
+
   - name: osu!
     url: https://osu.ppy.sh
     img: osu.png
@@ -284,6 +317,14 @@ websites:
       - sms
       - totp
     doc: https://playstation.com/support/2sv/
+
+  - name: Razer
+    url: https://www.razer.com/
+    img: razer.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://mysupport.razer.com/app/answers/detail/a_id/1716
 
   - name: Roberts Space Industries
     url: https://robertsspaceindustries.com/
@@ -395,6 +436,13 @@ websites:
       - totp
       - sms
     doc: https://support.ubi.com/en-GB/Faqs/000039953
+
+  - name: VRChat
+    url: https://hello.vrchat.com
+    img: vrchat.png
+    tfa:
+      - totp
+    doc: https://docs.vrchat.com/docs/setup-2fa
 
   - name: Warframe
     url: https://www.warframe.com/

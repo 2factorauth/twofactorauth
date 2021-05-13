@@ -1,10 +1,17 @@
 websites:
+  - name: 123 Form Builder
+    url: https://www.123formbuilder.com
+    img: 123formbuilder.svg
+    tfa:
+      - totp
+    doc: https://www.123formbuilder.com/docs/multi-factor-authentication-login
+
   - name: ActiveState
     url: https://www.activestate.com
     img: activestate.png
     tfa:
       - totp
-    doc: https://docs.activestate.com/platform/prefs/twofactor.html
+    doc: https://docs.activestate.com/platform/user/prefs/twofactor/
 
   - name: Aha!
     url: https://www.aha.io/
@@ -13,8 +20,8 @@ websites:
       - sms
       - phone
       - proprietary
-      - hardware
-    doc: https://support.aha.io/hc/en-us/articles/360031319232-Account-settings#SSO
+      - u2f
+    doc: https://support.aha.io/hc/en-us/articles/360031319232#enable-2fa-for-your-account
 
   - name: Airbrake
     url: https://airbrake.io
@@ -28,7 +35,7 @@ websites:
     img: algolia.png
     tfa:
       - totp
-    doc: https://www.algolia.com/doc/security/best-security-practices/#two-factor-authentication-2fa
+    doc: https://www.algolia.com/doc/security/best-security-practices/#two-factor-authentication
 
   - name: AppSignal
     url: https://appsignal.com
@@ -44,12 +51,19 @@ websites:
       - totp
     doc: https://www.appveyor.com/blog/2018/11/07/2FA-implementation/
 
-  - name: aTech Media
-    url: https://atechmedia.com
-    img: atechmedia.png
+  - name: Arduino
+    url: https://arduino.cc
+    img: arduino.svg
     tfa:
       - totp
-    doc: https://www.deployhq.com/support/managing-your-account/personal-profile/two-factor-authentication
+    doc: https://support.arduino.cc/hc/en-us/articles/360018131120
+
+  - name: Assembla
+    url: https://www.assembla.com
+    img: assembla.svg
+    tfa:
+      - totp
+    doc: https://articles.assembla.com/en/articles/1914077
 
   - name: Atlassian Cloud
     url: https://id.atlassian.com
@@ -80,10 +94,12 @@ websites:
       - totp
     doc: https://help.batch.com/en/articles/2721053
 
-  - name: Bintray
-    url: https://bintray.com/
-    img: bintray.png
-    twitter: bintray
+  - name: BitBar
+    url: https://bitbar.com
+    img: bitbar.svg
+    tfa:
+      - totp
+    doc: https://bitbar.com/blog/multi-factor-authentication/
 
   - name: Bitbucket
     url: https://bitbucket.org
@@ -91,12 +107,20 @@ websites:
     tfa:
       - totp
       - u2f
-    doc: https://confluence.atlassian.com/x/425QLg
+    doc: https://support.atlassian.com/bitbucket-cloud/docs/enable-two-step-verification/
+    exception: "An SSH key must be associated with your account to enable 2FA."
 
   - name: Bitnami
     url: https://bitnami.com
     img: bitnami.png
     twitter: bitnami
+
+  - name: Bitrise
+    url: https://www.bitrise.io/
+    img: bitrise.svg
+    tfa:
+      - totp
+    doc: https://devcenter.bitrise.io/getting-started/account-security/
 
   - name: Buddy
     url: https://buddy.works
@@ -125,7 +149,7 @@ websites:
     img: buildkite.png
     tfa:
       - totp
-    doc: https://buildkite.com/changelog/31-two-factor-authentication
+    doc: https://buildkite.com/docs/tutorials/2fa
 
   - name: BuiltWith
     url: https://builtwith.com
@@ -140,11 +164,13 @@ websites:
     facebook: Cacoocom
     twitter: cacoocom
 
-  - name: Cedexis
-    url: https://www.cedexis.com/
-    img: cedexis.png
-    twitter: Cedexis
-    facebook: Cedexis
+  - name: Caspio
+    url: https://www.caspio.com/
+    img: caspio.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://howto.caspio.com/caspio-id/managing-caspio-id/#Enable2FA
 
   - name: Chocolatey
     url: https://chocolatey.org/
@@ -152,13 +178,20 @@ websites:
     twitter: chocolateynuget
     facebook: ChocolateySoftware
 
-  - name: CM Telecom
-    url: https://www.cmtelecom.com/
+  - name: CloudBees
+    url: https://cloudbees.com
+    img: cloudbees.svg
+    tfa:
+      - totp
+    doc: https://docs.cloudbees.com/docs/cloudbees-feature-management/latest/security/two-factor-authentication
+
+  - name: CM
+    url: https://www.cm.com/
     img: cmtelecom.png
     tfa:
       - sms
       - proprietary
-    doc: https://help.cmtelecom.com/en/account-wallet/account/how-do-i-enable-two-factor-authentication-2fa
+    doc: https://www.cm.com/help/570/
 
   - name: Code Climate
     url: https://codeclimate.com
@@ -175,20 +208,22 @@ websites:
       - sms
     doc: https://docs.codeanywhere.com/#two-factor-authentication
 
-  - name: Codeship
-    url: https://codeship.com/
-    img: codeship.png
-    tfa:
-      - totp
-    doc: https://documentation.codeship.com/general/about/2fa/
-
   - name: Compose
     url: https://www.compose.com/
     img: composeio.png
     tfa:
       - sms
       - totp
-    doc: https://help.compose.com/docs/two-factor-authentication
+      - u2f
+    doc: https://www.compose.com/articles/introducing-fido-universal-2nd-factor-authentication/
+
+  - name: Contentstack
+    url: https://www.contentstack.com/
+    img: contentstack.svg
+    tfa:
+      - proprietary
+      - sms
+    doc: https://www.contentstack.com/docs/developers/two-factor-authentication/
 
   - name: Cookiebot
     url: https://www.cookiebot.com/
@@ -220,7 +255,7 @@ websites:
     img: docker.png
     tfa:
       - totp
-    doc: https://www.docker.com/blog/designing-docker-hub-2fa/
+    doc: https://docs.docker.com/docker-hub/2fa/
 
   - name: Domino Data Lab
     url: https://www.dominodatalab.com/
@@ -243,6 +278,13 @@ websites:
       - totp
     doc: https://docs.elmah.io/how-to-enable-two-factor-login/
 
+  - name: Envoyer
+    url: https://envoyer.io
+    img: envoyer.svg
+    tfa:
+      - totp
+    doc: https://docs.envoyer.io/1.0/accounts/your-account.html#securing-your-account-with-two-factor-authentication
+
   - name: Esri
     url: https://www.esri.com
     img: esri.png
@@ -256,6 +298,14 @@ websites:
     tfa:
       - totp
     doc: https://support.fogbugz.com/hc/en-us/articles/360011262434
+
+  - name: Formsite
+    url: https://www.formsite.com
+    img: formsite.svg
+    tfa:
+      - totp
+    doc: https://support.formsite.com/hc/en-us/articles/360000686614
+    exception: "2FA is only available for Pro 3 accounts or higher."
 
   - name: GitHub
     url: https://github.com
@@ -305,10 +355,18 @@ websites:
       - totp
     doc: https://www.honeybadger.io/blog/account-security-updates/#how-to-enable
 
+  - name: Hevo Data
+    url: https://www.hevodata.com
+    img: hevodata.svg
+    tfa:
+      - totp
+    doc: https://docs.hevodata.com/account-management/personal-settings/two-factor-authentication/
+
   - name: Hotjar
     url: https://hotjar.com/
     img: hotjar.png
     twitter: hotjar
+    facebook: HotjarApps
 
   - name: imgix
     url: https://www.imgix.com/
@@ -321,7 +379,8 @@ websites:
     img: infobip.png
     tfa:
       - sms
-    doc: https://www.infobip.com/messaging/enterprise/2_factor_authentication/
+      - phone
+    doc: https://www.infobip.com/news/increased-portal-account-security-with-2-factor-authentication
 
   - name: InVision
     url: https://www.invisionapp.com
@@ -347,13 +406,6 @@ websites:
     doc: https://www.jetbrains.com/help/hub/2fa-with-token.html
     exception: "U2F only available for Hub account (e.g. YouTrack). Limited to one software token OR one hardware token."
 
-  - name: Koding
-    url: https://koding.com
-    img: koding.png
-    tfa:
-      - totp
-    doc: https://www.koding.com/blog/2015/06/two-factor-authentication/
-
   - name: Launchpad
     url: https://launchpad.net
     img: launchpad.png
@@ -362,9 +414,16 @@ websites:
       - hardware
     doc: https://help.ubuntu.com/community/SSO/FAQs/2FA
 
+  - name: Lokalise
+    url: https://lokalise.com
+    img: lokalise.svg
+    tfa:
+      - totp
+    doc: https://docs.lokalise.com/en/articles/2329387
+
   - name: Looker
     url: https://looker.com/
-    img: looker.png
+    img: looker.svg
     tfa:
       - totp
     doc: https://www.looker.com/docs/admin/security/two-factor-authentication
@@ -374,25 +433,33 @@ websites:
     img: mapbox.png
     tfa:
       - totp
-    doc: https://docs.mapbox.com/accounts/overview/settings/#security
+    doc: https://docs.mapbox.com/accounts/guides/settings/#two-factor-authentication
 
-  - name: Metrological
-    url: https://www.metrological.com/
-    img: metrological.png
+  - name: Matomo Cloud
+    url: https://matomo.org/matomo-cloud/
+    img: matomo.svg
     tfa:
       - totp
-    doc: https://github.com/2factorauth/twofactorauth/pull/2273#issuecomment-271876292
+    doc: https://matomo.org/faq/general/faq_27245/
+
+  - name: MongoDB Atlas
+    url: https://atlas.mongodb.com
+    img: mongodb.png
+    tfa:
+      - totp
+      - email
+      - proprietary
+      - sms
+    doc: https://docs.atlas.mongodb.com/security-multi-factor-authentication/
 
   - name: MongoDB Cloud Manager
     url: https://cloud.mongodb.com
-    img: mongodbmms.png
+    img: mongodb.png
     tfa:
-      - sms
-      - phone
       - totp
-      - hardware
-    doc: https://docs.cloudmanager.mongodb.com/core/two-factor-authentication/
-    exception: "Phone 2FA for US / Canada only."
+      - email
+      - proprietary
+    doc: https://docs.cloudmanager.mongodb.com/core/multi-factor-authentication/
 
   - name: New Relic
     url: https://newrelic.com
@@ -429,6 +496,7 @@ websites:
     url: https://pagerduty.com
     img: pagerduty.png
     twitter: PagerDutyHelp
+    facebook: PagerDuty
     email_address: support@pagerduty.com
 
   - name: Panic Sync
@@ -442,12 +510,6 @@ websites:
     url: https://papertrailapp.com/
     twitter: papertrailapp
     img: papertrail.png
-
-  - name: Phacility
-    url: https://phacility.com/
-    img: phacility.png
-    tfa:
-      - totp
 
   - name: Pingdom
     url: https://www.pingdom.com
@@ -465,9 +527,18 @@ websites:
 
   - name: Plivo
     url: https://www.plivo.com
-    twitter: plivo
-    facebook: Plivo
-    img: plivo.png
+    img: plivo.svg
+    tfa:
+      - sms
+      - phone
+    doc: https://support.plivo.com/hc/en-us/articles/360041766411
+
+  - name: Postman
+    url: https://postman.com
+    img: postman.svg
+    twitter: getpostman
+    facebook: getpostman
+    email_address: help@getpostman.com
 
   - name: ProfitWell
     url: https://profitwell.com
@@ -475,6 +546,12 @@ websites:
     tfa:
       - totp
     doc: https://learn.profitwell.com/article/wsudrpi199-setting-up-2-factor-authentication
+
+  - name: Pusher
+    url: https://pusher.com
+    img: pusher.svg
+    tfa:
+      - totp
 
   - name: Pushover
     url: https://pushover.net/
@@ -504,7 +581,7 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://raygun.com/docs/workflow/two-factor-authentication
+    doc: https://raygun.com/documentation/privacy-security/two-factor-auth/
 
   - name: RBCommons
     url: https://rbcommons.com
@@ -532,6 +609,13 @@ websites:
     tfa:
       - totp
     doc: https://scotthelme.co.uk/dealing-with-account-recovery-and-2fa/
+
+  - name: RevenueCat
+    url: https://revenuecat.com
+    img: revenuecat.svg
+    tfa:
+      - totp
+    doc: https://docs.revenuecat.com/docs/security
 
   - name: Rollbar
     url: https://rollbar.com/
@@ -576,12 +660,19 @@ websites:
       - u2f
     doc: https://blog.sentry.io/2016/06/22/introducing-2fa
 
+  - name: Sisense Cloud Data Teams
+    url: https://www.sisense.com
+    img: sisense.svg
+    tfa:
+      - totp
+    doc: https://dtdocs.sisense.com/article/two-factor
+
   - name: SourceForge
     url: https://sourceforge.net/
     img: sourceforge.png
     tfa:
       - totp
-    doc: https://sourceforge.net/blog/introducing-multifactor-authentication-on-sourceforge/
+    doc: https://sourceforge.net/p/forge/documentation/Multifactor%20Authentication/
 
   - name: Status.io
     url: https://status.io/
@@ -659,8 +750,8 @@ websites:
     doc: https://blog.uptimerobot.com/introducing-two-factor-authentication-2fa/
 
   - name: Visual Studio Codespaces
-    url: https://www.visualstudio.com/
-    img: visualstudio.png
+    url: https://visualstudio.microsoft.com/
+    img: visualstudio.svg
     tfa:
       - sms
       - email
