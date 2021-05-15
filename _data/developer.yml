@@ -264,6 +264,14 @@ websites:
       - totp
     doc: https://support.dominodatalab.com/hc/en-us/articles/115000998406
 
+  - name: Doppler
+    url: https://www.doppler.com/
+    img: doppler.svg
+    tfa:
+      - totp
+      - u2f
+    doc: https://docs.doppler.com/docs/security-fact-sheet#user-authentication
+
   - name: Drupal.org
     url: https://www.drupal.org/
     img: drupalorg.png
