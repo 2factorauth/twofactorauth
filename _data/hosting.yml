@@ -306,9 +306,8 @@ websites:
     url: https://kinsta.com
     img: kinsta.png
     tfa:
-      - sms
-      - proprietary
-    doc: https://kinsta.com/blog/wordpress-two-factor-authentication/
+      - totp
+    doc: https://kinsta.com/knowledgebase/two-factor-authentication/
 
   - name: KnownHost
     url: https://www.knownhost.com
