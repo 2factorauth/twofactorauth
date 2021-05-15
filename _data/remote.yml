@@ -87,6 +87,15 @@ websites:
       - totp
     doc: http://www.cc-onlinehelp.com/en/#index/administrati/users/authenticati/authenticati.html
 
+  - name: MyFRITZ!
+    url: https://sso.myfritz.net/
+    img: myfritz.png
+    tfa:
+      - totp
+      - hardware
+      - u2f
+    doc: https://en.avm.de/service/fritzbox/fritzbox-7590/knowledge-base/publication/show/3602
+
   - name: O&amp;O Syspectr
     url: https://www.syspectr.com
     img: oosyspectr.png
