@@ -6,15 +6,17 @@ websites:
       - sms
       - phone
       - email
+      - u2f
     doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
-  - name: FastMail
+  - name: Fastmail
     url: https://www.fastmail.com/
     img: fastmail.png
     tfa:
       - sms
       - totp
       - hardware
+      - u2f
     doc: https://www.fastmail.com/help/account/2fa.html
 
   - name: Freenet
@@ -35,8 +37,11 @@ websites:
 
   - name: GMX.com
     url: https://www.gmx.com/
-    twitter: gmxmail
     img: gmx.png
+    tfa:
+      - totp
+    doc: https://support.gmx.com/security/2fa/setup-twofactor.html#indexlink_help_security_2fa
+    exception: "Setup requires SMS verification."
 
   - name: GMX.net
     url: https://www.gmx.net/
@@ -44,6 +49,7 @@ websites:
     tfa:
       - totp
     doc: https://hilfe.gmx.net/sicherheit/2fa/einrichten.html
+    exception: "Setup requires SMS verification."
 
   - name: HEY
     url: https://hey.com/
@@ -62,6 +68,13 @@ websites:
       - totp
     doc: https://help.hushmail.com/hc/en-us/articles/213268943
 
+  - name: ImprovMX
+    url: https://improvmx.com
+    img: improvmx.svg
+    tfa:
+      - totp
+    doc: http://help.improvmx.com/en/articles/4892466
+
   - name: Kerio Connect
     url: https://www.kerio.com/products/kerio-connect
     img: kerio.png
@@ -77,9 +90,11 @@ websites:
 
   - name: Mail.com
     url: https://www.mail.com/
-    twitter: maildotcom
-    facebook: mail.com
     img: maildotcom.png
+    tfa:
+      - totp
+    doc: https://support.mail.com/security/2fa/index.html
+    exception: "A verified phone number is required to set up 2FA."
 
   - name: mail.de
     url: https://mail.de/
@@ -132,11 +147,13 @@ websites:
     img: outlook.png
     tfa:
       - sms
+      - phone
       - email
       - proprietary
       - totp
       - u2f
     doc: https://support.microsoft.com/en-us/help/12408/
+    exception: "2FA phone calls may not be available in all regions"
 
   - name: Pobox
     url: https://www.pobox.com/
@@ -174,11 +191,14 @@ websites:
 
   - name: SAPO Mail
     url: https://mail.sapo.pt
-    email_address: conteudos@mail.sapo.pt
-    img: sapo.png
-    twitter: sapo
-    facebook: sapo
-    lang: pt
+    img: sapo.svg
+    tfa:
+      - totp
+      - sms
+      - u2f
+    doc: https://ajuda.sapo.pt/id-67553
+    regions:
+      - pt
 
   - name: Seznam.cz
     url: https://seznam.cz
@@ -192,7 +212,7 @@ websites:
     img: startmail.png
     tfa:
       - totp
-    doc: https://support.startmail.com/index.php?/Knowledgebase/Article/View/704
+    doc: https://support.startmail.com/hc/en-us/articles/360006682158
 
   - name: T-Online
     url: https://www.t-online.de/
@@ -255,6 +275,7 @@ websites:
       - phone
       - email
       - proprietary
+      - u2f
     doc: https://help.yahoo.com/kb/SLN5013.html
     exception: "Linked phone number required for 2FA."
 

@@ -26,6 +26,12 @@ websites:
       - totp
     doc: https://www.bitdefender.com/consumer/support/answer/1581/
 
+  - name: BitSight
+    url: https://bitsight.com
+    img: bitsight.svg
+    tfa:
+      - totp
+
   - name: Blur
     url: https://www.abine.com/
     img: blur.png
@@ -46,7 +52,7 @@ websites:
     img: bugcrowd.png
     tfa:
       - totp
-    doc: https://docs.bugcrowd.com/v1.0/docs/two-factor-authentication-1
+    doc: https://docs.bugcrowd.com/customers/role-and-account-management/two-factor-authentication/
 
   - name: CAcert
     url: http://www.cacert.org/
@@ -73,9 +79,9 @@ websites:
   - name: Detectify
     url: https://detectify.com/
     img: detectify.png
-    twitter: detectify
-    facebook: detectify
-    email_address: hello@detectify.com
+    tfa:
+      - totp
+    doc: https://support.detectify.com/support/solutions/articles/48001061904
 
   - name: DigiCert
     url: https://www.digicert.com/
@@ -99,6 +105,13 @@ websites:
       - hardware
     doc: https://dmarcian.com/secure-dmarcian-2fa/
 
+  - name: DNSFilter
+    url: https://www.dnsfilter.com/
+    img: dnsfilter.svg
+    tfa:
+      - totp
+    doc: https://docs.dnsfilter.com/docs/two-factor-authentication
+
   - name: Dome9 Security
     url: https://dome9.com/
     img: dome9.png
@@ -106,6 +119,13 @@ websites:
       - totp
       - hardware
     doc: https://dome9.com/overview/strong-2-factor-authentication
+  
+  - name: EasyDMARC
+    url: https://easydmarc.com
+    img: easydmarc.png
+    tfa:
+      - totp
+    doc: https://easydmarc.com/blog/two-factor-authentication/
 
   - name: Entrust
     img: entrust.png
@@ -163,6 +183,12 @@ websites:
       - sms
     doc: https://help.kaspersky.com/KPC/1.0/en-US/152628.htm
 
+  - name: LexisNexis Risk Solutions
+    url: https://risk.lexisnexis.com/
+    img: lexisnexis.png
+    twitter: LexisNexis
+    facebook: lexisnexisus
+
   - name: McAfee
     url: https://www.mcafee.com/
     img: mcafee.png
@@ -179,6 +205,24 @@ websites:
       - u2f
     doc: https://support.norton.com/sp/en/us/home/current/solutions/v100023155_NortonM_Retail_1_en_us
 
+  - name: Panther
+    url: https://runpanther.io
+    img: panther.png
+    tfa:
+      - totp
+
+  - name: Perimeter 81
+    url: https://www.perimeter81.com/
+    img: perimeter81.png
+    tfa:
+      - sms
+      - totp
+      - proprietary
+      - u2f
+      - phone
+    doc: https://support.perimeter81.com/docs/two-factor-authentication
+    exception: "2FA is only available for users on Premium and Enterprise plans."
+
   - name: Prey
     url: https://www.preyproject.com
     img: prey.png
@@ -186,20 +230,19 @@ websites:
       - totp
     doc: https://help.preyproject.com/article/248--
 
-  - name: Pwnie Express Pwn Pulse
-    url: https://www.pwnieexpress.com/products/pulse-device-detection
-    img: pwnieexpress.png
-    tfa:
-      - totp
-    doc: http://support.pwnieexpress.com/customer/en/portal/articles/2858909
-    exception: TFA can be enabled on Pwn Pulse Accounts upon customer request.
-
   - name: RBLTracker
     url: https://rbltracker.com/
     img: rbltracker.png
     tfa:
       - totp
     doc: https://rbltracker.com/docs/setting-up-two-factor-authentication/
+    
+  - name: SecurityTrails
+    url: https://securitytrails.com/
+    img: securitytrails.svg
+    tfa:
+      - totp
+    doc: https://securitytrails.com/support/knowledge-base/two-factor-authentication-2fa-2/
 
   - name: Sophos Central
     url: https://www.sophos.com
@@ -222,11 +265,6 @@ websites:
     tfa:
       - totp
     doc: https://kb.threatconnect.com/customer/en/portal/articles/2214975
-
-  - name: ThreatMetrix
-    url: https://www.threatmetrix.com/
-    img: threatmetrix.png
-    twitter: ThreatMetrix
 
   - name: ThreatSim
     url: https://login.threatsim.com
@@ -260,3 +298,10 @@ websites:
     tfa:
       - totp
     doc: https://docs.webroot.com/us/en/home/wsa_website_userguide/wsa_managementwebsite_userguide.htm#GettingStarted/Enabling2-FactorAuthentication.htm
+
+  - name: Wordfence Central
+    url: https://www.wordfence.com
+    img: wordfence.svg
+    tfa:
+      - totp
+    doc: https://www.wordfence.com/help/central/2fa/

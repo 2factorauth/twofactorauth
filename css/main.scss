@@ -79,8 +79,7 @@ thead {
   padding: 0;
 
   #main {
-    margin: 5vh auto;
-    height: 40vh;
+    margin: 1em auto 1em auto;
     text-align: center;
 
     h2 {
@@ -135,9 +134,9 @@ thead {
   }
 
   #logo {
-    margin: 1vh auto;
-    height: 30vh;
-    display: block;
+    margin: auto;
+    height: 20em;
+    max-height: 33vw;
   }
 
   .col {
@@ -157,7 +156,6 @@ thead {
 
   /* Site name and logo */
   .logo {
-    border-radius: 50%;
     height: 32px;
     width: 32px;
     margin-right: .8em;
@@ -188,8 +186,7 @@ thead {
   color: rgba(0, 0, 0, .77);
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 0 5px;
-  margin: auto auto 6vh;
+  margin: 1em auto 1em auto;
 
   #searchIcon {
     font-size: 1.2em;

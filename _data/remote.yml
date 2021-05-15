@@ -5,20 +5,20 @@ websites:
     facebook: AirDroid
     img: airdroid.png
 
-  - name: Amazon AWS WorkSpaces
-    url: https://aws.amazon.com/workspaces/
-    doc: https://aws.amazon.com/blogs/aws/multi-factor-auth-for-workspaces/
-    tfa:
-      - totp
-      - hardware
-    img: awsworkspaces.png
-
   - name: AnyDesk
     url: https://anydesk.com/
     img: anydesk.png
     tfa:
       - totp
-    doc: https://support.anydesk.com/Two_Factor_Authentication
+    doc: https://support.anydesk.com/Two-Factor_Authentication
+
+  - name: Atera
+    url: https://www.atera.com/
+    img: atera.svg
+    tfa:
+      - totp
+    doc: https://support.atera.com/hc/en-us/articles/360022522253
+    exception: "2FA must be enabled by an admin before use."
 
   - name: ConnectWise Control (ScreenConnect)
     url: https://www.connectwise.com/software/control
@@ -60,9 +60,11 @@ websites:
 
   - name: Linksys Smart Wi-Fi
     url: https://www.linksyssmartwifi.com
-    twitter: LinksysCares
-    facebook: linksys
     img: linksyssmartwifi.png
+    tfa:
+      - email
+      - sms
+    doc: https://www.linksys.com/us/support-article?articleNum=317753
 
   - name: LogMeIn
     url: https://www.logmein.com/
@@ -106,6 +108,13 @@ websites:
       - totp
     doc: https://help.remotedesktopmanager.com/howto_googleauthenticator.htm
     exception: "2FA is only available on the Enterprise Edition"
+
+  - name: Splashtop
+    url: https://www.splashtop.com/
+    img: splashtop.svg
+    tfa:
+      - totp
+    doc: https://support-splashtopbusiness.splashtop.com/hc/en-us/articles/212724923
 
   - name: TeamViewer
     url: https://www.teamviewer.com

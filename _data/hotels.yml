@@ -6,6 +6,7 @@ websites:
       - email
       - sms
     doc: https://www.airbnb.com/help/article/501
+    exception: "Airbnb decides when 2FA is required; user cannot enable 2FA for every login."
 
   - name: Booking.com
     url: https://www.booking.com/
@@ -51,6 +52,14 @@ websites:
     twitter: NHHotels
     facebook: NH.Hotels
     img: nh.png
+
+  - name: Vrbo
+    url: https://www.vrbo.com/
+    img: vrbo.svg
+    tfa:
+      - sms
+      - phone
+    doc: https://help.vrbo.com/articles/How-do-I-set-up-two-factor-authentication
 
   - name: Wyndham Hotels
     url: https://www.wyndhamhotels.com

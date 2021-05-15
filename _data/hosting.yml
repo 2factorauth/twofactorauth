@@ -1,4 +1,11 @@
 websites:
+  - name: 20i
+    url: https://www.20i.com
+    img: 20i.png
+    tfa:
+      - totp
+    doc: https://www.20i.com/support/my-services/two-factor-authentication-my20i
+
   - name: 34SP.com
     url: https://www.34SP.com
     img: 34sp.png
@@ -17,11 +24,12 @@ websites:
 
   - name: Acquia
     url: https://www.acquia.com
-    img: acquia.png
+    img: acquia.svg
     tfa:
       - sms
       - totp
-    doc: https://docs.acquia.com/acquia-cloud/access/signin/
+    doc: https://docs.acquia.com/cloud-platform/access/signin/
+    exception: "SMS 2FA is only available for US or Canada phone numbers."
 
   - name: ACTIVE 24
     url: https://www.active24.com/
@@ -44,11 +52,6 @@ websites:
       - totp
     doc: https://all-inkl.com/wichtig/faq/#2fa
 
-  - name: ARP Networks
-    url: https://arpnetworks.com/
-    img: arpnetworks.png
-    twitter: arpnetworks
-
   - name: Binary Lane
     url: https://www.binarylane.com.au/
     img: binarylane.png
@@ -57,15 +60,6 @@ websites:
     doc: https://www.binarylane.com.au/support/solutions/articles/1000199372
     regions:
       - au
-
-  - name: Binero
-    url: https://www.binero.se
-    img: binero.png
-    tfa:
-      - totp
-    doc: https://blogg.binero.se/2017/10/tvafaktorsautentisering/
-    regions:
-      - se
 
   - name: Blacknight
     url: https://blacknight.com
@@ -85,9 +79,9 @@ websites:
       - totp
     doc: https://my.bluehost.com/cgi/help/two-factor-authentication
 
-  - name: BunnyCDN
-    url: https://bunnycdn.com
-    img: bunnycdn.png
+  - name: bunny.net
+    url: https://bunny.net/
+    img: bunny.svg
     tfa:
       - totp
 
@@ -112,12 +106,6 @@ websites:
       - totp
     doc: https://cdnsun.com/knowledgebase/billing/two-factor-authentication
 
-  - name: ChunkHost
-    url: https://chunkhost.com
-    img: chunkhost.png
-    tfa:
-      - proprietary
-
   - name: CloudAtCost
     url: https://cloudatcost.com/
     img: cloudatcost.png
@@ -132,10 +120,10 @@ websites:
 
   - name: Contabo
     url: https://contabo.com/
-    img: contabo.png
+    img: contabo.svg
     tfa:
       - totp
-    doc: https://contabo.com/?show=faq#100
+    doc: https://contabo.com/en/customer-support/faq/#2fa-questions
 
   - name: cyon
     url: https://www.cyon.ch
@@ -163,6 +151,13 @@ websites:
     regions:
       - gr
 
+  - name: FastComet
+    url: https://www.fastcomet.com/
+    img: fastcomet.svg
+    tfa:
+      - totp
+    doc: https://www.fastcomet.com/tutorials/getting-started/enabling-two-factor-authentication
+
   - name: Fastly
     url: https://www.fastly.com
     img: fastly.png
@@ -177,16 +172,6 @@ websites:
       - sms
       - totp
     doc: https://getflywheel.com/wordpress-support/how-to-enable-two-factor-authentication-on-flywheel
-
-  - name: FS Data
-    url: https://fsdata.se/
-    img: fsdata.png
-    twitter: fsdata
-    facebook: fsdata
-    email_address: info@fsdata.se
-    lang: sv
-    regions:
-      - se
 
   - name: Glesys
     url: https://glesys.com/
@@ -209,15 +194,13 @@ websites:
       - totp
     doc: https://greenhost.net/blog/2016/03/01/spring-news-2-factor-authentication-service-center-haproxy-plugin-for-let-s-encrypt-and-more/
 
-  - name: Hetzner Online
-    url: https://www.hetzner.de/
-    img: hetzner.png
+  - name: Hetzner
+    url: https://www.hetzner.com
+    img: hetzner.svg
     tfa:
       - totp
       - hardware
-    doc: https://wiki.hetzner.de/index.php/KonsoleH:Zwei-Faktor-Authentifizierung/en
-    regions:
-      - de
+    doc: https://docs.hetzner.com/accounts-panel/accounts/two-factor-authentication/
 
   - name: Host Europe
     url: https://www.hosteurope.de/
@@ -235,6 +218,14 @@ websites:
       - totp
     doc: https://www.hostens.com/knowledgebase/how-to-enhance-account-security/
 
+  - name: HostMonster
+    url: https://www.hostmonster.com/
+    img: hostmonster.png
+    tfa:
+      - totp
+      - email
+    doc: https://my.hostmonster.com/cgi/help/two-factor-authentication
+
   - name: Hostpoint
     url: https://www.hostpoint.ch/
     img: hostpoint.png
@@ -242,6 +233,15 @@ websites:
       - totp
       - sms
     doc: https://support.hostpoint.ch/en/administrative/hostpoint-id/general-questions-about-two-factor-authentication
+
+  - name: Hoststar
+    url: https://www.hoststar.ch
+    img: hoststar.png
+    twitter: hoststar
+    facebook: Hoststar.Webhosting
+    lang: de
+    regions:
+      - ch
 
   - name: HostUS
     url: https://hostus.us
@@ -275,27 +275,12 @@ websites:
       - hardware
     doc: https://www.infomaniak.ch/en/support/faq/1940
 
-  - name: INIZ
-    url: https://iniz.com
-    img: iniz.png
-    tfa:
-      - totp
-    doc: https://my.iniz.com/knowledgebase/51
-
-  - name: Inleed
-    url: https://www.inleed.se
-    img: inleed.png
-    twitter: Inleed
-    facebook: Inleed
-    email_address: support@inleed.se
-    lang: sv
-    regions:
-      - se
-
   - name: InMotion Hosting
     url: https://www.inmotionhosting.com/
-    twitter: inmotionhosting
-    img: inmotion.png
+    img: inmotion.svg
+    tfa:
+      - totp
+    doc: https://www.inmotionhosting.com/support/edu/cpanel/how-to-configure-and-use-two-factor-authentication/
 
   - name: IO Zoom
     url: https://www.iozoom.com
@@ -308,6 +293,14 @@ websites:
     url: https://www.ipage.com/ipage/index.html
     twitter: iPage
     img: ipage.png
+
+  - name: justhost
+    url: https://justhost.com
+    img: justhost.png
+    tfa:
+      - totp
+      - email
+    doc: https://my.justhost.com/hosting/help/two-factor-authentication
 
   - name: Kinsta
     url: https://kinsta.com
@@ -324,11 +317,19 @@ websites:
       - totp
     doc: https://www.knownhost.com/wiki/my-knownhost/two-factor
 
+  - name: Krystal
+    url: https://krystal.uk
+    img: krystal.svg
+    tfa:
+      - totp
+    doc: https://help.krystal.uk/getting-started/how-do-i-setup-two-factor-authentication-2-fa-on-my-krystal-account
+
   - name: LCN.com
     url: https://www.lcn.com
-    twitter: lcndotcom
-    facebook: lcndotcom
     img: lcn.png
+    tfa:
+      - totp
+    doc: https://www.lcn.com/support/articles/how-to-set-up-and-use-two-factor-authentication/
 
   - name: Liquid Web
     url: https://www.liquidweb.com
@@ -349,6 +350,7 @@ websites:
   - name: Media Temple
     url: https://mediatemple.net/
     twitter: mediatemple
+    facebook: mediatemple
     img: mediatemple.png
 
   - name: Miss Hosting
@@ -361,10 +363,18 @@ websites:
   - name: Mittwald
     url: https://www.mittwald.de/
     twitter: mittwald
+    facebook: mittwald
     img: mittwald.png
     lang: de
     regions:
       - de
+
+  - name: NameHero
+    url: https://www.namehero.com/
+    img: namehero.svg
+    tfa:
+      - totp
+    doc: https://www.namehero.com/knowledgebase/163
 
   - name: NearlyFreeSpeech.NET
     url: https://www.nearlyfreespeech.net/
@@ -383,7 +393,7 @@ websites:
       - totp
     doc: https://ar.neolo.com/knowledgebase/215/Autenticacion-de-2-factores.html
 
-  - name: Netcup
+  - name: netcup
     url: https://netcup.eu/
     img: netcup.png
     tfa:
@@ -425,7 +435,7 @@ websites:
     exception: "Only available for the main client area. Hosting panels not supported."
     regions:
       - se
-      
+
   - name: OMGServ
     url: https://www.omgserv.com
     img: omgserv.png
@@ -434,11 +444,11 @@ websites:
     doc: https://www.omgserv.com/fr/faq-site/comment_activer_la_double_authentification-103/
     regions:
       - fr
-    
 
   - name: One.com
     url: https://www.one.com/
     twitter: onecom
+    facebook: onecom
     img: onecom.png
 
   - name: Online
@@ -502,9 +512,23 @@ websites:
       - totp
     doc: https://segment.com/docs/iam/mfa/
 
+  - name: Server.pro
+    url: https://server.pro/
+    img: serverpro.svg
+    tfa:
+      - totp
+
+  - name: ServerPilot
+    url: https://serverpilot.io/
+    img: serverpilot.svg
+    tfa:
+      - totp
+    doc: https://serverpilot.io/docs/how-to-enable-two-factor-authentication/
+
   - name: Site5
     url: https://www.site5.com/
     twitter: site5
+    facebook: Site5
     img: site5.png
 
   - name: SiteGround
@@ -588,6 +612,13 @@ websites:
       - totp
     doc: https://www.upcloud.com/support/two-factor-authentication/
     exception: "SMS is required for password recovery."
+    
+  - name: VeeroTech
+    url: https://www.veerotech.net
+    img: veerotech.png
+    tfa:
+      - totp
+    doc: https://www.veerotech.net/kb/account-management-portal-two-factor-authentication-billing-support/
 
   - name: VentraIP
     url: https://ventraip.com.au
@@ -622,6 +653,13 @@ websites:
     tfa:
       - totp
     doc: https://docs.webfaction.com/user-guide/control_panel.html#two-step-login
+
+  - name: Webflow
+    url: https://webflow.com/
+    img: webflow.png
+    tfa:
+      - totp
+    doc: https://university.webflow.com/lesson/two-factor-authentication-2fa
 
   - name: Wedos
     url: https://hosting.wedos.com

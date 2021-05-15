@@ -1,16 +1,4 @@
 websites:
-  - name: AirVPN
-    url: https://airvpn.org/
-    img: airvpn.png
-    tfa:
-      - totp
-
-  - name: BolehVPN
-    url: https://www.bolehvpn.net/
-    img: bolehvpn.png
-    twitter: bolehvpn
-    email_address: support@bolehvpn.net
-
   - name: CyberGhost
     url: https://www.cyberghostvpn.com
     img: cyberghost.png
@@ -46,10 +34,16 @@ websites:
 
   - name: NordVPN
     url: https://nordvpn.com
-    img: nordvpn.png
-    twitter: NordVPN
-    facebook: NordVPN
-    email_address: support@nordvpn.com
+    img: nordvpn.svg
+    tfa:
+      - totp
+
+  - name: NordVPN Teams
+    url: https://nordvpnteams.com
+    img: nordvpnteams.svg
+    tfa:
+      - totp
+      - sms
 
   - name: Perfect Privacy VPN
     url: https://www.perfect-privacy.com/
@@ -62,7 +56,7 @@ websites:
     img: privateinternetaccess.png
     tfa:
       - totp
-    doc: https://www.privateinternetaccess.com/helpdesk/kb/articles/how-do-i-use-the-2fa-system
+    doc: https://www.privateinternetaccess.com/helpdesk/kb/articles/how-do-i-enable-and-use-two-factor-authentication
 
   - name: ProtonVPN
     url: https://protonvpn.com/
@@ -109,13 +103,13 @@ websites:
   - name: VPN Unlimited
     url: https://vpnunlimitedapp.com/
     img: vpnunlimited.png
-    twitter: vpnunlimited
-    facebook: vpnunlimitedapp
-    email_address: support@keepsolid.com
+    tfa:
+      - totp
+      - email
+    doc: https://www.vpnunlimitedapp.com/help/manuals/two-factor-authentication
 
   - name: Windscribe
     url: https://windscribe.com
     img: windscribe.png
-    twitter: windscribecom
-    facebook: windscribe
-    email_address: support@windscribe.com
+    tfa:
+      - totp

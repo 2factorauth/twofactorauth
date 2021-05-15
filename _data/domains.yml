@@ -20,24 +20,11 @@ websites:
       - totp
     doc: https://help.101domain.com/account-management/account-security/enabling-disabling-two-factor-verification
 
-  - name: 10Dollar
-    url: https://10dollar.ca/
-    img: 10dollar.png
-    twitter: 10dollar_ca
-    facebook: 10dollar.ca
-
   - name: 123 Reg
     url: https://www.123-reg.co.uk
     img: 123reg.png
     twitter: 123reg
     facebook: 123regfans
-
-  - name: 20i
-    url: https://www.20i.com
-    img: 20i.png
-    tfa:
-      - totp
-    doc: https://www.20i.com/support/my-services/two-factor-authentication-my20i
 
   - name: Above.com
     url: https://www.above.com
@@ -56,8 +43,10 @@ websites:
   - name: Crazy Domains
     url: https://www.crazydomains.com
     img: crazydomains.png
-    twitter: CrazyDomains
-    facebook: crazydomains
+    tfa:
+      - sms
+      - phone
+    doc: https://www.crazydomains.co.uk/help/how-to-enable-or-disable-two-step-verification-system/
 
   - name: Directnic
     url: https://directnic.com
@@ -156,7 +145,7 @@ websites:
     img: enom.png
     tfa:
       - totp
-    doc: https://www.enom.com/kb/kb/kb_1687-setup-2-factor.htm
+    doc: https://enom.help/2fa
 
   - name: Epik
     url: https://www.epik.com
@@ -170,7 +159,7 @@ websites:
     img: eurodns.png
     tfa:
       - totp
-    doc: https://help.eurodns.com/customer/en/portal/articles/1633106
+    doc: https://help.eurodns.com/s/article/how-do-i-activate-two-step-verification-on-my-account
 
   - name: Fabulous
     url: https://fabulous.com
@@ -197,7 +186,7 @@ websites:
     img: gandi.png
     tfa:
       - totp
-      - hardware
+      - u2f
     doc: https://docs.gandi.net/en/account_management/security/
 
   - name: GoDaddy
@@ -305,7 +294,7 @@ websites:
     url: https://metaname.net/
     img: metaname.png
     tfa:
-      - sms
+      - totp
     doc: https://metaname.net/public/two_factor_authentication
 
   - name: Moniker
@@ -375,9 +364,10 @@ websites:
 
   - name: Netim
     url: https://www.netim.com/
-    twitter: Netim_com
-    facebook: netimcom
-    img: netim.png
+    img: netim.svg
+    tfa:
+      - totp
+    doc: https://support.netim.com/en/wiki/2FA
 
   - name: Netregistry
     url: https://www.netregistry.com.au/
@@ -396,6 +386,7 @@ websites:
     img: noip.png
     twitter: NoIPcom
     facebook: noipdns
+    email_address: webmaster@no-ip.com
 
   - name: Nominet
     url: https://www.nominet.uk/
@@ -449,11 +440,6 @@ websites:
       - proprietary
     doc: https://park.io/support
 
-  - name: PointDNS
-    url: https://pointhq.com/
-    twitter: pointdns
-    img: pointdns.png
-
   - name: Porkbun
     url: https://porkbun.com
     img: porkbun.png
@@ -464,9 +450,11 @@ websites:
 
   - name: Rebel.com
     url: https://www.rebel.com/
-    twitter: rebeldotcom
-    facebook: rebeldotcomhosting
-    img: rebel.png
+    img: rebel.svg
+    tfa:
+      - totp
+    doc: https://support.rebel.com/hc/en-us/articles/360039417613
+    exception: "You must contact customer support to enable 2FA."
 
   - name: Rebrandly
     url: https://rebrandly.com
@@ -474,6 +462,13 @@ websites:
     tfa:
       - totp
     doc: https://support.rebrandly.com/hc/en-us/articles/360007220373
+
+  - name: Register365
+    url: https://www.register365.com/
+    img: register365.svg
+    tfa:
+      - totp
+    doc: https://www.register365.com/support/articles/enabling-two-factor-authentication-for-the-control-panel/
 
   - name: Register4Less
     url: https://register4less.com/
@@ -556,3 +551,12 @@ websites:
     url: https://www.verio.com/
     twitter: verio
     img: verio.png
+
+  - name: Whois
+    url: https://www.whois.com
+    img: whois.png
+    tfa:
+      - sms
+      - totp
+    doc: https://manage.whois.com/kb/node/2690
+    exception: "TOTP 2FA is only available for resellers."

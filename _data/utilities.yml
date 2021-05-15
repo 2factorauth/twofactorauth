@@ -1,4 +1,12 @@
 websites:
+  - name: Alectra Utilities
+    url: https://alectrautilities.com/
+    img: alectra.svg
+    twitter: alectranews
+    facebook: alectranews
+    regions:
+      - ca
+
   - name: American Electric Power
     url: https://www.aep.com/
     twitter: AEPnews
@@ -135,9 +143,12 @@ websites:
 
   - name: Cox
     url: https://www.cox.com/
-    twitter: CoxHelp
-    facebook: coxcommunications
-    img: cox.png
+    img: cox.svg
+    tfa: 
+      - sms
+      - phone
+      - email
+    doc: https://www.cox.com/residential/support/enrolling-in-multifactor-authentication-in-my-account.html
     regions:
       - us
 
@@ -169,8 +180,10 @@ websites:
 
   - name: Dominion Energy
     url: https://www.dominionenergy.com/
-    twitter: DominionEnergy
     img: dominion.png
+    tfa:
+      - sms
+      - email
     regions:
       - us
 
@@ -325,14 +338,6 @@ websites:
     regions:
       - us
 
-  - name: PowerStream
-    url: https://www.powerstream.ca/
-    twitter: AlectraNews
-    facebook: PowerStreamPage
-    img: powerstream.png
-    regions:
-      - ca
-
   - name: RCN
     url: https://www.rcn.com/
     twitter: RCNconnects
@@ -350,7 +355,7 @@ websites:
     regions:
       - us
 
-  - name: Rochester Gas & Electric
+  - name: Rochester Gas &amp; Electric
     url: https://www.rge.com/
     twitter: RGandE
     facebook: RochGandE
@@ -366,7 +371,7 @@ websites:
     regions:
       - ca
 
-  - name: San Diego Gas & Electric
+  - name: San Diego Gas &amp; Electric
     url: https://www.sdge.com/
     twitter: SDGE
     facebook: SanDiegoGasandElectric
@@ -411,14 +416,6 @@ websites:
     regions:
       - us
 
-  - name: Sprint
-    url: https://www.sprint.com/
-    twitter: sprint
-    facebook: sprint
-    img: sprint.png
-    regions:
-      - us
-
   - name: Swisscom
     url: https://www.swisscom.ch/
     twitter: Swisscom_de
@@ -436,6 +433,7 @@ websites:
       - totp
       - hardware
     doc: https://support.t-mobile.com/docs/DOC-2727
+    exception: "Backup methods of SMS or recovery questions can't be disabled."
     regions:
       - us
 
@@ -476,9 +474,10 @@ websites:
 
   - name: Three UK
     url: http://www.three.co.uk/
-    twitter: ThreeUK
-    facebook: ThreeUK
     img: three.png
+    tfa:
+      - sms
+    doc: http://www.three.co.uk/hub/stay-safe-from-fraudsters/
     regions:
       - gb
 
@@ -498,6 +497,15 @@ websites:
       - sms
       - totp
     doc: https://help.ting.com/hc/en-us/articles/209351258
+    regions:
+      - us
+
+  - name: US Mobile
+    url: https://www.usmobile.com/
+    img: usmobile.svg
+    twitter: USMobile
+    facebook: USMobile
+    email_address: help@usmobile.com
     regions:
       - us
 
@@ -585,4 +593,15 @@ websites:
     img: voipms.png
     tfa:
       - email
-    doc: https://wiki.voip.ms/article/Two-step_Verification
+      - totp
+    doc: https://wiki.voip.ms/article/TOTP_Authentication
+    exception: "Only one of the 2FA methods can be enabled at the same time."
+
+  - name: Wingo
+    url: https://www.wingo.ch
+    img: wingo.png
+    twitter: Wingo_de
+    facebook: WingoCH
+    lang: de
+    regions:
+      - ch

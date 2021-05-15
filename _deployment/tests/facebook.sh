@@ -2,7 +2,7 @@
 
 # Check Facebook handle
 check_facebook () {
-  handles="$(git log -p origin/master..HEAD ../../_data | grep ^+[[:space:]] | grep facebook | cut -c16-)"
+  handles="$(git diff origin/master...HEAD ../../_data | grep "^+[[:space:]]*facebook:" | cut -c16-)"
 
   if [ -z "$handles" ]; then
     echo "No Facebook handles found."
@@ -20,12 +20,12 @@ check_facebook () {
 
     # Compare 302 location with the handle
     if [ "$fb_handle" == "$handle" ]; then
-      echo "Facebook page \"${handle}\" is valid."
+      echo -e "\e[32mFacebook page \"${handle}\" is valid.\e[39m"
     elif [ -z "$fb_handle" ]; then
-      echo "::error:: Facebook page \"${handle}\" not found."
+      echo -e "\e[31mFacebook page \"${handle}\" not found.\e[39m"
       exit 1
     else
-      echo "::error:: Facebook handle \"${handle}\" should be \"${fb_handle}\"."
+      echo -e "\e[31mFacebook handle \"${handle}\" should be \"${fb_handle}\".\e[39m"
       exit 1
     fi
 

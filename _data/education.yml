@@ -264,6 +264,13 @@ websites:
     facebook: GIAC.org
     email_address: info@giac.org
 
+  - name: Hack The Box
+    url: https://hackthebox.eu
+    img: hackthebox.svg
+    tfa:
+      - totp
+    doc: https://help.hackthebox.eu/getting-started/v2-setting-up-your-account#General%20Settings,%20Security%20and%20Notifications-0
+
   - name: HackerRank
     url: https://www.hackerrank.com
     img: hackerrank.png
@@ -323,6 +330,12 @@ websites:
     regions:
       - de
 
+  - name: Kerboodle
+    url: https://www.kerboodle.com/
+    img: kerboodle.svg
+    twitter: kerboodle
+    email_address: support@kerboodle.com
+
   - name: KnowBe4
     url: https://www.knowbe4.com/
     img: knowbe4.png
@@ -361,6 +374,12 @@ websites:
     regions:
       - ca
 
+  - name: Mendeley
+    url: https://www.mendeley.com
+    img: mendeley.png
+    twitter: MendeleySupport
+    facebook: mendeley
+
   - name: Miami University
     url: https://miamioh.edu/
     img: miamioh.png
@@ -391,6 +410,26 @@ websites:
     twitter: sqanews
     facebook: ScottishQualificationsAuthority
     img: mysqa.png
+    
+  - name: North Carolina State University
+    url: https://ncsu.edu
+    img: ncsu.png
+    tfa:
+      - sms
+      - phone
+      - proprietary
+      - totp
+      - u2f
+    doc: https://oit.ncsu.edu/it-security/2fa/
+    regions:
+      - us
+
+  - name: Open Science Framework (OSF)
+    url: https://osf.io
+    img: osf.png
+    tfa:
+      - totp
+    doc: https://help.osf.io/hc/en-us/articles/360019738054
 
   - name: Pennsylvania State University
     url: https://www.psu.edu/
@@ -400,9 +439,20 @@ websites:
       - phone
       - proprietary
       - hardware
-    doc: https://security.psu.edu/two-factor-authentication/
+      - u2f
+    doc: https://get2fa.psu.edu
     regions:
       - us
+
+  - name: Philipps-Universität Marburg
+    url: https://www.uni-marburg.de/
+    img: unimarburg.png
+    tfa:
+      - totp
+      - hardware
+    doc: https://www.uni-marburg.de/de/hrz/dienste/2fa
+    regions:
+      - de
 
   - name: Pluralsight
     url: https://www.pluralsight.com
@@ -426,6 +476,15 @@ websites:
     img: quizlet.png
     twitter: quizlet
     facebook: quizlet
+
+  - name: RedShelf
+    url: https://www.redshelf.com/
+    img: redshelf.svg
+    tfa:
+      - totp
+    doc: https://solve.redshelf.com/hc/en-us/articles/1260802590609
+    regions:
+      - us
 
   - name: Robert Morris University
     url: https://sentry.rmu.edu/login
@@ -459,6 +518,18 @@ websites:
     email_address: support@schoolsoft.se
     regions:
       - se
+
+  - name: Seneca Learning
+    url: https://senecalearning.com
+    img: seneca.svg
+    twitter: SenecaLearn
+    facebook: senecalearning
+    email_address: learnmore@seneca.io
+    regions:
+      - gb
+      - us
+      - mx
+      - br
 
   - name: Stanford University
     url: https://www.stanford.edu/

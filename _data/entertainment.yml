@@ -93,6 +93,12 @@ websites:
     facebook: lastfm
     img: lastfm.png
 
+  - name: Nebula
+    url: https://watchnebula.com/
+    img: nebula.png
+    twitter: WatchNebula
+    email_address: nebula@standard.tv
+
   - name: Netflix
     url: https://www.netflix.com/us/
     twitter: Netflixhelps
@@ -123,9 +129,10 @@ websites:
 
   - name: Plex
     url: https://www.plex.tv
-    twitter: plex
-    facebook: plexapp
     img: plex.png
+    tfa:
+      - totp
+    doc: https://support.plex.tv/articles/two-factor-authentication/
 
   - name: Qobuz
     url: https://www.qobuz.com
@@ -183,6 +190,14 @@ websites:
     facebook: TiVo
     img: tivo.png
 
+  - name: TuneCore
+    url: https://tunecore.com
+    img: tunecore.png
+    tfa:
+      - sms
+      - phone
+    doc: https://support.tunecore.com/hc/en-us/articles/360000650226
+
   - name: TV Time
     url: https://www.tvtime.com
     twitter: tvshowtime
@@ -196,7 +211,8 @@ websites:
     tfa:
       - sms
       - proprietary
-    doc: https://help.twitch.tv/s/article/two-factor-authentication-with-authy
+      - totp
+    doc: https://help.twitch.tv/s/article/two-factor-authentication
     exception: "To activate two factor authentication, you must provide a mobile phone number."
 
   - name: Vimeo

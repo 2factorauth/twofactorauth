@@ -24,6 +24,8 @@ websites:
       - email
       - totp
       - u2f
+      - hardware
+      - proprietary
     doc: https://help.bitwarden.com/article/setup-two-step-login/
     exception: "Premium account required for Duo, YubiKey and FIDO U2F."
 
@@ -36,7 +38,7 @@ websites:
       - proprietary
       - hardware
       - u2f
-    doc: https://www.centrify.com/privileged-access-management/authentication-service/mfa/
+    doc: https://www.centrify.com/pam/authentication-service/mfa/
 
   - name: Dashlane
     url: https://www.dashlane.com
@@ -56,7 +58,8 @@ websites:
       - totp
       - hardware
       - u2f
-    doc: https://help.id.me/hc/en-us/categories/360001435974
+      - proprietary
+    doc: https://help.id.me/hc/en-us/articles/360025737794
 
   - name: IDentité Numérique (IDN)
     url: https://www.idn.laposte.fr
@@ -86,7 +89,17 @@ websites:
     tfa:
       - totp
       - hardware
-    doc: https://helpdesk.lastpass.com/multifactor-authentication-options/
+      - proprietary
+      - u2f
+    doc: https://support.logmeininc.com/lastpass/help/enable-multifactor-authentication-lp010002
+    exception: "Availability of 2FA options depends on your account type."
+
+  - name: NordPass
+    url: https://nordpass.com/
+    img: nordpass.svg
+    tfa:
+      - totp
+    doc: https://support.nordpass.com/hc/en-us/articles/360002770497
 
   - name: Okta
     url: https://www.okta.com/
@@ -133,6 +146,14 @@ websites:
       - email
       - hardware
     doc: https://help.passpack.com/knowledgebase/idx.php/44/0/
+
+  - name: Passwarden
+    url: https://www.keepsolid.com/passwarden/
+    img: passwarden.png
+    tfa:
+      - totp
+      - email
+    doc: https://www.keepsolid.com/passwarden/security/tfa
 
   - name: RoboForm
     url: https://www.roboform.com/

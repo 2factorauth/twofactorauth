@@ -4,6 +4,14 @@ websites:
     img: adirondackinsurnaceexchange.png
     email_address: service@ngic.com
 
+  - name: Admiral (UK)
+    url: https://www.admiral.com
+    twitter: AdmiralUK
+    facebook: admiralUK
+    img: admiral.png
+    regions:
+      - gb
+
   - name: ADP
     url: https://www.adp.com
     twitter: ADP
@@ -21,6 +29,7 @@ websites:
     img: allianz.png
     tfa:
       - sms
+      - hardware
     doc: https://www.allianz.de/datenschutz/allianz-deutschland-ag/online-service-meine-allianz/
 
   - name: AltoIRA
@@ -61,6 +70,16 @@ websites:
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2181#issuecomment-266315173
 
+  - name: Brex
+    url: https://www.brex.com
+    img: brex.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://support.brex.com/how-do-i-opt-in-to-two-factor-authentication/
+    regions:
+      - us
+
   - name: Carta
     url: https://carta.com/
     img: carta.png
@@ -71,9 +90,10 @@ websites:
 
   - name: ClearScore
     url: https://www.clearscore.com
-    img: clearscore.png
+    img: clearscore.svg
     tfa:
       - sms
+      - totp
     doc: https://help.clearscore.com/hc/en-us/sections/360003360940
 
   - name: Concur
@@ -96,17 +116,35 @@ websites:
       - phone
     doc: https://help.creditkarma.com/hc/en-us/articles/360001472366
 
+  - name: Deel
+    url: https://www.letsdeel.com
+    img: letsdeel.svg
+    tfa:
+      - totp
+    doc: https://help.letsdeel.com/en/articles/4810009
+
   - name: DEGIRO
     url: https://www.degiro.nl
     img: degiro.png
     tfa:
       - totp
 
-  - name: ditech
-    url: https://www.ditech.com
-    twitter: ditech
-    facebook: ditech
-    img: ditech.png
+  - name: Deutsche Rentenversicherung
+    url: https://www.deutsche-rentenversicherung.de/
+    img: drv.png
+    tfa:
+      - hardware
+    doc: https://www.deutsche-rentenversicherung.de/DRV/DE/Online-Dienste/unsere_online-dienste.html
+    regions:
+      - de
+
+  - name: Emma
+    url: https://emma.ca/
+    twitter: EmmaAssurance
+    facebook: EmmaAssurance
+    img: emma.png
+    regions:
+      - ca
 
   - name: Equifax
     url: https://www.equifax.com/
@@ -121,13 +159,20 @@ websites:
       - totp
     doc: https://support.exactonline.com/community/s/knowledge-base#All-All-HNO-Task-general-security-gen-auth-totpregphndsktpt
 
+  - name: Expensify
+    url: https://www.expensify.com/
+    img: expensify.png
+    tfa:
+      - totp
+    doc: https://community.expensify.com/discussion/7385
+
   - name: Experian Ltd
     url: https://www.experian.co.uk/
     img: experianltd.png
     tfa:
       - sms
       - phone
-      
+
   - name: FreeAgent
     url: https://www.freeagent.com
     img: freeagent.png
@@ -168,6 +213,15 @@ websites:
     twitter: GerberLife
     facebook: gerberlife
     img: gerberlife.png
+
+  - name: Guideline
+    url: https://www.guideline.com
+    img: guideline.svg
+    tfa:
+      - totp
+    doc: https://success.guideline.com/hc/articles/360034791412
+    regions:
+      - us
 
   - name: Gusto
     url: https://www.gusto.com
@@ -210,8 +264,9 @@ websites:
   - name: Invoice2go
     url: https://invoice.2go.com/
     img: invoice2go.png
-    twitter: Invoice2go
-    facebook: invoice2go
+    tfa:
+      - email
+    doc: https://support.2go.com/hc/en-au/articles/360049057751
 
   - name: InvoiceBerry
     url: https://www.invoiceberry.com/
@@ -267,13 +322,14 @@ websites:
     doc: https://help.metorik.com/article/22-how-can-i-enable-2fa-on-my-account
 
   - name: Mint
-    url: https://www.mint.com
-    img: mint.png
+    url: https://mint.intuit.com
+    img: mint.svg
     tfa:
       - sms
       - phone
       - totp
     doc: https://help.mint.com/Security/908045661
+    exception: "Software 2FA requires enabling SMS or phone call as a back-up."
 
   - name: money by Envestnet | Yodlee
     url: https://money.yodlee.com/
@@ -371,7 +427,8 @@ websites:
       - sms
       - phone
       - totp
-    doc: https://accounts-help.lc.intuit.com/questions/1590157
+      - email
+    doc: https://quickbooks.intuit.com/learn-support/en-us/manage-passwords/verify-your-account-with-multi-factor-authentication/00/186340
     exception: "TOTP 2FA only available after enabling SMS or phone 2FA."
 
   - name: QuickFile
@@ -385,6 +442,13 @@ websites:
     url: https://www.quizzle.com
     img: quizzle.png
     twitter: Quizzle
+
+  - name: RightCapital
+    url: https://www.rightcapital.com
+    img: rightcapital.svg
+    tfa:
+      - totp
+    doc: https://help.rightcapital.com/article/39-two-step-verification
 
   - name: Rocket Mortgage
     url: https://www.rocketmortgage.com/
@@ -412,6 +476,14 @@ websites:
       - totp
     doc: https://help.simpletax.ca/questions/two-factor-authentication
 
+  - name: Swiss Life
+    url: https://www.swisslife.ch
+    img: swisslife.png
+    tfa:
+      - sms
+    regions:
+      - ch
+
   - name: Taxact
     url: https://www.taxact.com
     img: taxact.png
@@ -421,15 +493,19 @@ websites:
       - totp
     doc: https://www.taxact.com/support/24138/2019/how-is-a-verification-code-used?hideLayout=True
 
-  - name: TransferWise
-    url: https://transferwise.com
-    img: transferwise.png
+  - name: TaxDome
+    url: https://taxdome.com
+    img: taxdome.svg
     tfa:
-      - sms
-      - phone
+      - totp
+    doc: https://help.taxdome.com/article/95--
+
+  - name: Techniker Krankenkasse
+    url: https://www.tk.de/
+    img: techniker.png
+    tfa:
       - proprietary
-    doc: https://transferwise.com/help/12/managing-your-profile/2932125
-    exception: "SMS-capable phone is required."
+    doc: https://www.tk.de/techniker/unternehmensseiten/unternehmen/die-tk-app/2023678
 
   - name: TransUnion
     url: https://www.transunion.com/
@@ -459,6 +535,16 @@ websites:
     img: wave.png
     twitter: WaveHQ
     facebook: waveHQ
+
+  - name: Wise
+    url: https://wise.com
+    img: wise.png
+    tfa:
+      - sms
+      - phone
+      - proprietary
+    doc: https://wise.com/help/12/managing-your-profile/2932125
+    exception: "SMS-capable phone is required."
 
   - name: Xero
     url: https://www.xero.com/
