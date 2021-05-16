@@ -17,14 +17,7 @@
     <link href="/css/main.css" rel="stylesheet">
     <link href="/css/navbar.css" rel="stylesheet">
     <link href="/css/corner.css" rel="stylesheet">
-    {% if page.name == "index.html" %}
-      <link href="/css/popup.css" rel="stylesheet">
-      <link href="/css/desktop-table.css" rel="stylesheet">
-      <link href="/css/mobile-table.css" rel="stylesheet">
-      <link href="/css/social-media.css" rel="stylesheet">
-    {% elsif page.name == "about.html" %}
-      <link href="/css/about.css" rel="stylesheet">
-    {% endif %}
+    <link href="/css/{{ page.name }}.css" rel="stylesheet">
   </head>
 
   <body>
@@ -71,7 +64,6 @@
 
     <script crossorigin="anonymous" integrity="sha512-C5x7QiS49O4ubITbqnAX93oOLk9/cASa+m8GawJMki1i4z8AjFDeklRCqiBBjj7niQULNW6nDhqf7l06zrZ9mA==" src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.14.1/jets.min.js"></script>
     <script crossorigin="anonymous" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script crossorigin="anonymous" integrity="sha512-nkVN47hpd3LOCD7BXeONKhZVrx2EE69VNvOwH28U6QTfjZ/LBfUN6EkmsinvuGVD5UWhyQeJudkVkkT+B4ffrA==" src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@15.1.1/dist/lazyload.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/popup.js"></script>
     <script src="/js/main.js"></script>
