@@ -1,0 +1,68 @@
+@media (prefers-color-scheme: dark) {
+
+  .category-title {
+    color: #eee;
+  }
+  .category-icon-outer {
+    padding: 1em;
+  }
+  .category-icon {
+    background-color: #eee !important;
+  }
+}
+
+
+.category-row {
+  margin: 2vh auto;
+
+  /* Category button */
+  .cat {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    z-index: 1000;
+    -webkit-appearance: none;
+    border-radius: 0;
+
+    h5 {
+      box-sizing: border-box;
+      display: inline-block;
+      float: none;
+      position: static;
+    }
+
+    .category-title {
+      box-sizing: border-box;
+      display: inline;
+      float: none;
+      line-height: 23px;
+      position: static;
+      font-family: -apple-system, BlinkMacSystemFont, spartan, sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      letter-spacing: 0.528px;
+    }
+
+    .category-icon {
+      background-color: #fff;
+      font-size: 36px;
+      margin: 15px auto;
+      text-align: center;
+      width: 1.7em;
+      line-height: 1.64em;
+      border-radius: 50%;
+      border: solid rgba(0, 0, 0, 0.1) 3px;
+    }
+  }
+}
+
+.active {
+  .category-icon {
+    color: #fff;
+    background: var(--primary) !important;
+  }
+
+  .category-title {
+    color: var(--primary) !important;
+  }
+}
