@@ -31,7 +31,7 @@
                 {% assign image = website.domain | append: ".svg" | prepend: letter %}
               {% endif %}
 
-              <img class="logo lazyload" data-src="/img/{{ image }}" alt="">
+              <img class="logo" loading="lazy" src="/img/{{ image }}" alt="">
 
               {{ name }}</a>
 
@@ -78,7 +78,7 @@
 
                 {% if tfa contains "u2f" %}
                   <i class="tfa-icon u2f-icon col" title="U2F">
-                    <img alt="U2F" height="20" src="/img/u2f.svg" type="image/svg">
+                    <img alt="U2F" height="20" src="/img/u2f.svg" loading="lazy" type="image/svg">
                   </i>
                 {% endif %}
               </div>

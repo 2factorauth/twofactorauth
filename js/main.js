@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  //  Lazy load images
-  const lazyLoadInstance = new LazyLoad({ elements_selector: ".lazyload" });
 
   // Show popup notice
   $('.exception').popup({ position: 'right center', hoverable: true, title: 'Exceptions & Restrictions' });
