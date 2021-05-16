@@ -41,19 +41,19 @@ layout: default
       {% endif %}
 
       {% for _keyword in keywords limit: 5 offset: _offset %}
-        {% include category-button.html category-param=_keyword viewport="desktop" %}
+        {% include html/category-button.html category-param=_keyword viewport="desktop" %}
       {% endfor %}
 
     {% endif %}
 
     <!-- Display mobile category button -->
-    {% include category-button.html category-param=keyword viewport="mobile" %}
+    {% include html/category-button.html category-param=keyword viewport="mobile" %}
 
     <!-- Display desktop table -->
-    {% include desktop-table.html category=keyword entries=entries %}
+    {% include html/desktop-table.html category=keyword entries=entries %}
 
     <!-- Display mobile table -->
-    {% include mobile-table.html category=keyword entries=entries %}
+    {% include html/mobile-table.html category=keyword entries=entries %}
 
   {% endfor %}
 </div>
