@@ -244,6 +244,13 @@ websites:
       - totp
     doc: https://groups.io/helpcenter/membersmanual/1/understanding-groups-io-accounts/setting-account-preferences-and-viewing-account-information
 
+  - name: Guilded
+    url: https://www.guilded.gg
+    img: guilded.svg
+    tfa:
+      - totp
+    doc: https://support.guilded.gg/hc/en-us/articles/1500008991902
+
   - name: Hangouts
     url: https://hangouts.google.com/
     img: hangouts.png
