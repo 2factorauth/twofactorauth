@@ -526,6 +526,14 @@ websites:
     doc: https://www.pivotaltracker.com/help/articles/two_factor_auth/
     exception: "2FA only works on the web version. If enabled, you will not be able to use the mobile apps."
 
+  - name: Piwik
+    url: https://piwik.pro
+    img: piwik.svg
+    tfa:
+      - totp
+    doc: https://help.piwik.pro/support/getting-started/two-factor-authentication/
+    exception: "Contact customer support to enable 2FA."
+
   - name: Plivo
     url: https://www.plivo.com
     img: plivo.svg
