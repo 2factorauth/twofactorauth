@@ -311,6 +311,14 @@ websites:
     facebook: kikapp
     email_address: support@kik.com
 
+  - name: Kintone
+    url: https://www.kintone.com
+    img: kintone.svg
+    tfa:
+      - totp
+    doc: https://get.kintone.help/general/en/user/list_personal/two_factor_authentication.html
+    exception: "2FA must be enabled by an admin before use."
+
   - name: LINE
     url: https://line.me/en/
     img: line.png
