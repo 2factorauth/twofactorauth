@@ -23,6 +23,15 @@ websites:
     doc: https://docs.airship.com/tutorials/security/2fa/
     exception: "2FA is only available upon request for customers on their Essential and Comprehensive plans."
 
+  - name: Alchemer
+    url: https://www.alchemer.com/
+    img: alchemer.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.alchemer.com/help/multi-factor-authentication#user
+    exception: "SMS 2FA is only available for Enterprise accounts with an SMS 2FA provision."
+
   - name: Basecamp
     url: https://basecamp.com/
     img: basecamp.png
