@@ -292,6 +292,13 @@ websites:
     tfa:
       - totp
 
+  - name: WatchGuard
+    url: https://www.watchguard.com/
+    img: watchguard.svg
+    tfa:
+      - proprietary
+    doc: https://www.watchguard.com/help/docs/help-center/en-US/Content/en-US/my_products/portal_users-manage-mfa.html
+
   - name: Webroot
     url: https://www.webroot.com
     img: webroot.png
