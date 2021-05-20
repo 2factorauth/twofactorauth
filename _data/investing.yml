@@ -47,6 +47,13 @@ websites:
       - totp
     doc: https://www.bullionstar.com/help/2-factor-authentication
 
+  - name: BullionVault
+    url: https://www.bullionvault.com/
+    img: bullionvault.png
+    tfa:
+      - totp
+    doc: https://www.bullionvault.com/help/two_factor_auth.html
+
   - name: Capital Group / American Funds
     url: https://www.capitalgroup.com/
     img: capitalgroup.png
