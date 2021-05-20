@@ -1,4 +1,11 @@
 websites:
+  - name: Aiven
+    url: https://aiven.io/
+    img: aiven.svg
+    tfa:
+      - totp
+    doc: https://help.aiven.io/en/articles/947120
+
   - name: Amazon Web Services
     url: https://aws.amazon.com
     img: aws.png
