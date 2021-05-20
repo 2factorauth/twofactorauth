@@ -46,6 +46,14 @@ websites:
       - totp
     doc: https://www.digitalocean.com/docs/accounts/security/2fa/
 
+  - name: Elastic Cloud
+    url: https://www.elastic.co
+    img: elasticcloud.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://www.elastic.co/guide/en/cloud/current/ec-account-user-settings.html#ec-account-security-mfa
+
   - name: Engine Yard
     url: https://www.engineyard.com
     img: engineyard.png
@@ -177,6 +185,13 @@ websites:
     facebook: openshift
     img: openshift.png
 
+  - name: Oracle Cloud
+    url: https://oracle.com
+    img: oracle.svg
+    tfa:
+      - totp
+    doc: https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/usingmfa.htm
+
   - name: Rackspace
     url: https://www.rackspace.com/
     img: rackspace.png
@@ -198,6 +213,14 @@ websites:
     tfa:
       - totp
     doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
+
+  - name: Serverspace
+    url: https://serverspace.io/
+    img: serverspace.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://serverspace.io/support/help/how-to-install-and-use-the-google-authenticator-application/
 
   - name: Tilaa
     url: https://www.tilaa.com
@@ -221,6 +244,13 @@ websites:
       - totp
       - hardware
     doc: https://userify.com/docs/multifactor-authentication/
+
+  - name: VMware
+    url: https://vmware.com
+    img: vmware.svg
+    tfa:
+      - totp
+    doc: https://kb.vmware.com/s/article/74603
 
   - name: Vultr
     url: https://www.vultr.com

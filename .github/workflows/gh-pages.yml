@@ -5,7 +5,7 @@ on:
     branches: master
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     if: github.repository == '2factorauth/twofactorauth'
 
@@ -52,6 +52,16 @@ jobs:
         run: |
           ./_deployment/apiv1.rb
           ./_deployment/apiv2.rb
+
+      - name: Import PGP key
+        id: pgp
+        uses: crazy-max/ghaction-import-gpg@v3
+        with:
+          gpg-private-key: ${{ secrets.pgp_key }}
+          passphrase: ${{ secrets.pgp_passphrase }}
+
+      - name: Sign API files
+        run: ./_deployment/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
 
       - name: Build the site
         run: bundle exec jekyll build --config _config.yml,_deployment/config-production.yml
