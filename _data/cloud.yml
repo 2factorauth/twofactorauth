@@ -45,6 +45,13 @@ websites:
       - totp
     doc: https://cloud.ca/two-factor-authentication-is-now-available-on-cloud-ca/
 
+  - name: cloudHQ
+    url: https://cloudhq.net
+    img: cloudhq.png
+    tfa:
+      - totp
+    doc: https://support.cloudhq.net/how-to-set-up-and-enable-two-factor-authentication-2fa/
+
   - name: DigitalOcean
     url: https://www.digitalocean.com/
     img: digitalocean.png
