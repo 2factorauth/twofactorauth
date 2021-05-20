@@ -143,6 +143,15 @@ websites:
     regions:
       - au
 
+  - name: MyGovID
+    url: https://www.mygovid.ie/
+    img: mygovidie.png
+    tfa:
+      - sms
+    doc: https://www.mygovid.ie/en-IE/HelpAndSupport?section=pageButton-SecurityAndPrivacy&answer=show-answer32
+    regions:
+      - ie
+
   - name: Pennsylvania Dept of Revenue myPATH
     url: https://mypath.pa.gov
     img: mypath.png
