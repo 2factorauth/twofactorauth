@@ -208,6 +208,13 @@ websites:
       - sms
     doc: https://docs.codeanywhere.com/#two-factor-authentication
 
+  - name: Codebase
+    url: https://codebasehq.com
+    img: codebase.svg
+    tfa:
+      - totp
+    doc: https://support.codebasehq.com/articles/tips-tricks/how-do-i-setup-two-factor-authentication
+
   - name: Compose
     url: https://www.compose.com/
     img: composeio.png
