@@ -21,6 +21,13 @@ websites:
       - totp
     doc: https://cloudbet.zendesk.com/hc/en-us/articles/223120088/
 
+  - name: Parimatch
+    url: https://www.parimatch.com/
+    img: parimatch.svg
+    tfa:
+      - totp
+    doc: https://faq.parimatch.com/en/account-access-and-security/
+
   - name: Smarkets
     url: https://www.smarkets.com/
     img: smarkets.png
@@ -34,3 +41,10 @@ websites:
     twitter: win2dayat
     facebook: win2dayat
     lang: de
+    
+  - name: Wolf.bet
+    url: https://wolf.bet/
+    img: wolfbet.png
+    tfa:
+      - totp
+    doc: https://www.youtube.com/watch?v=3B_zlGVldRY
