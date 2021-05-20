@@ -138,6 +138,13 @@ websites:
     regions:
       - de
 
+  - name: Dext Prepare
+    url: https://dext.com
+    img: dext.svg
+    tfa:
+      - totp
+    doc: https://help.receipt-bank.com/hc/articles/360002530177
+
   - name: Emma
     url: https://emma.ca/
     twitter: EmmaAssurance
