@@ -1,4 +1,11 @@
 websites:
+  - name: Actionstep
+    url: https://www.actionstep.com
+    img: actionstep.svg
+    tfa:
+      - totp
+    doc: https://intercom.help/actionstep/en/articles/4638611
+
   - name: BasisCode Compliance
     url: https://basiscode.com
     img: basiscode.png
@@ -61,6 +68,15 @@ websites:
     twitter: iubenda
     email_address: info@iubenda.com
 
+  - name: PracticePanther
+    url: https://www.practicepanther.com
+    img: practicepanther.svg
+    tfa:
+      - email
+    doc: https://support.practicepanther.com/en/articles/1658238
+    regions:
+      - us
+
   - name: Resolver
     url: https://www.resolver.co.uk
     img: resolver.png
@@ -69,3 +85,17 @@ websites:
     regions:
       - gb
       - in
+
+  - name: Termly
+    url: https://termly.io
+    img: termly.svg
+    email_address: support@termly.io
+    twitter: Termly_io
+    facebook: termly.io
+
+  - name: TermsFeed
+    url: https://www.termsfeed.com/
+    img: termsfeed.svg
+    facebook: termsfeed
+    twitter: TermsFeed
+    email_address: office@termsfeed.com

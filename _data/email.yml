@@ -9,13 +9,14 @@ websites:
       - u2f
     doc: https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone
 
-  - name: FastMail
+  - name: Fastmail
     url: https://www.fastmail.com/
     img: fastmail.png
     tfa:
       - sms
       - totp
       - hardware
+      - u2f
     doc: https://www.fastmail.com/help/account/2fa.html
 
   - name: Freenet
@@ -161,6 +162,16 @@ websites:
       - totp
       - hardware
     doc: https://pobox.com/helpspot/index.php?pg=kb.chapter&id=65
+
+  - name: POST Luxembourg
+    url: https://webmail.pt.lu
+    img: post.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://support.pt.lu/2fa-two-factor-authentication/
+    regions:
+      - lu
 
   - name: Posteo
     url: https://posteo.de/
