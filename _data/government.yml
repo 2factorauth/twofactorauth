@@ -31,7 +31,10 @@ websites:
   - name: Canada Revenue Agency
     url: https://www.canada.ca/en/revenue-agency.html
     img: canadarevenueagency.png
-    twitter: CanRevAgency
+    tfa:
+      - sms
+      - phone
+    doc: https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services/multi-factor-authentication-access-cra-login-services.html
     regions:
       - ca
 
