@@ -370,6 +370,13 @@ websites:
       - totp
     doc: https://docs.hevodata.com/account-management/personal-settings/two-factor-authentication/
 
+  - name: Honeybadger
+    url: https://www.honeybadger.io/
+    img: honeybadger.svg
+    tfa:
+      - totp
+    doc: https://www.honeybadger.io/blog/account-security-updates/#how-to-enable
+
   - name: Hotjar
     url: https://hotjar.com/
     img: hotjar.png
