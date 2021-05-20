@@ -7,6 +7,13 @@ websites:
       - email
     doc: https://knowledgecenter.2checkout.com/Onboarding/Activate-and-set-up-your-2Checkout-account/Two-factor-authentication
 
+  - name: Accelo
+    url: https://www.accelo.com/
+    img: accelo.svg
+    tfa:
+      - totp
+    doc: https://www.accelo.com/resources/help/faq/user-permissions-and-settings/two-factor-authentication/
+
   - name: Adobe ID
     url: https://adobe.com/
     img: adobe.png
@@ -17,13 +24,29 @@ websites:
       - proprietary
     doc: https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html
 
+  - name: Alexa.com
+    url: https://www.alexa.com
+    img: alexa.svg
+    twitter: Alexa_Support
+    facebook: alexainternet
+
+  - name: American Kennel Club
+    url: https://www.akc.org/
+    img: akc.svg
+    tfa:
+      - email
+    doc: https://www.akc.org/about/site/two-factor-authentication/
+    regions:
+      - us
+
   - name: Ancestry
     url: https://www.ancestry.com
     img: ancestry.png
     tfa:
       - sms
+      - email
     doc: https://support.ancestry.com/s/article/MFA
-    exception: "2FA is currently only available for customers with a U.S. based phone number."
+    exception: "SMS 2FA is currently only available for customers with a U.S. based phone number."
 
   - name: AngelList
     url: https://angel.co
@@ -31,7 +54,13 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://angel.co/projects/106166
+
+  - name: Audiense
+    url: https://audiense.com/
+    img: audiense.svg
+    tfa:
+      - totp
+    doc: https://help.audiense.com/hc/en-gb/articles/115001467232
 
   - name: Autodesk
     url: https://www.autodesk.com
@@ -42,6 +71,13 @@ websites:
       - email
       - totp
     doc: https://knowledge.autodesk.com/customer-service/account-management/account-profile/account-security/two-step-verification
+
+  - name: Automate.io
+    url: https://automate.io
+    img: automateio.svg
+    tfa:
+      - totp
+    doc: https://docs.automate.io/en/articles/3068223
 
   - name: Automater
     url: https://automater.pl/en/
@@ -71,12 +107,6 @@ websites:
       - u2f
     doc: https://support.brave.com/hc/en-us/articles/360021649491
 
-  - name: CA Technologies
-    url: https://www.ca.com/
-    img: ca-technologies.png
-    twitter: CAinc
-    facebook: CATechnologies
-    
   - name: Canva
     url: https://www.canva.com
     img: canva.png
@@ -84,7 +114,18 @@ websites:
       - sms
     doc: https://www.canva.com/help/article/login-verification
     exception: "2FA only available to users from Australia, Philippines, UK, and USA."
-    
+
+  - name: Cashrewards
+    url: https://www.cashrewards.com.au
+    img: cashrewards.svg
+    tfa:
+      - sms
+    doc: https://help.cashrewards.com.au/support/solutions/articles/1000276115
+    exception: "Enabling 2FA requires email confirmation"
+    regions:
+      - au
+      - nz
+
   - name: CharlieHR
     url: https://charliehr.com/
     img: charliehr.png
@@ -100,6 +141,14 @@ websites:
       - totp
     doc: https://chartbeat.zendesk.com/hc/en-us/articles/209531888
 
+  - name: Checkfront
+    url: https://www.checkfront.com
+    img: checkfront.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.checkfront.com/hc/en-us/articles/115003849053
+
   - name: Cisco Meraki
     url: https://meraki.cisco.com/
     img: meraki.png
@@ -107,6 +156,13 @@ websites:
       - sms
       - totp
     doc: https://documentation.meraki.com/zGeneral_Administration/Managing_Dashboard_Access/Using_Google_Authenticator_for_Two-factor_Authentication_in_Dashboard
+
+  - name: CleverTap
+    url: https://clevertap.com/
+    img: clevertap.svg
+    tfa:
+      - totp
+    doc: https://docs.clevertap.com/docs/account-security
 
   - name: Clickworker
     url: https://www.clickworker.com/
@@ -124,6 +180,23 @@ websites:
     img: cloudinary.png
     tfa:
       - totp
+
+  - name: Clover
+    url: https://www.clover.com
+    img: clover.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://www.clover.com/help/two-factor-authentication
+    regions:
+      - us
+      - ca
+      - gb
+      - ie
+      - de
+      - at
+      - nl
+      - ar
 
   - name: CommuterBenefits
     url: https://commuterbenefits.com/
@@ -144,21 +217,48 @@ websites:
     facebook: CrowdSupply
     email_address: support@crowdsupply.com
 
-  - name: CrowdFlower
-    url: https://www.crowdflower.com/
-    img: crowdflower.png
-    twitter: CrowdFlower
+  - name: Current RMS
+    url: https://www.current-rms.com/
+    img: current-rms.svg
+    tfa:
+      - totp
+      - proprietary
+      - sms
+    doc: https://help.current-rms.com/en/articles/1767596
+
+  - name: Databox
+    url: https://databox.com
+    img: databox.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.databox.com/article/515--
 
   - name: Delighted
     url: https://delightedapp.com/
     img: delighted.png
     tfa:
       - sms
+    doc: https://help.delighted.com/article/526--#2-step
+
+  - name: Domain
+    url: https://www.domain.com.au/
+    img: domain.svg
+    tfa:
+      - sms
+    doc: https://help.domain.com.au/hc/en-us/articles/360012412713
+    exception: "2FA is not available on the app."
 
   - name: Dreamstime
     url: https://www.dreamstime.com/
     img: dreamstime.png
     twitter: Dreamstime
+
+  - name: Drift
+    url: https://www.drift.com/
+    img: drift.svg
+    tfa:
+      - totp
 
   - name: Egnyte
     url: https://www.egnyte.com/
@@ -189,6 +289,19 @@ websites:
     twitter: getFANDOM
     facebook: getFANDOM
     img: fandom.png
+
+  - name: Fathom
+    url: https://www.fathomhq.com/
+    img: fathom.svg
+    tfa:
+      - totp
+      - email
+      - sms
+    doc: https://support.fathomhq.com/en/articles/4483786
+    regions:
+      - au
+      - gb
+      - us
 
   - name: Figma
     url: https://www.figma.com/
@@ -228,6 +341,15 @@ websites:
       - sms
       - totp
     doc: https://help.formstack.com/hc/en-us/articles/360019517891
+
+  - name: Frame
+    url: https://www.frame.io/
+    img: frame.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.frame.io/en/articles/4766302
+    exception: "2FA is only available for Enterprise users with mandated 2FA."
 
   - name: Freelancer
     url: https://www.freelancer.com/
@@ -277,6 +399,22 @@ websites:
     twitter: Gumtree
     facebook: gumtree
 
+  - name: HappyFox
+    url: https://www.happyfox.com
+    img: happyfox.svg
+    tfa:
+      - totp
+    doc: https://support.happyfox.com/kb/article/709--
+
+  - name: Heap
+    url: https://heap.io/
+    img: heap.svg
+    tfa:
+      - totp
+    doc: https://help.heap.io/heap-administration/secure-access/2fa/
+    exception: "2FA is only available for users on the Business plan."
+
+
   - name: Heise online
     url: https://www.heise.de/
     img: heise.png
@@ -323,7 +461,7 @@ websites:
       - sms
       - phone
     doc: https://www.indeed.com/lead/two-factor-authentication
-    exception: "2FA is only available for employees and not for job seekers."
+    exception: "2FA is only available for employers and not for job seekers."
 
   - name: Indiegogo
     url: https://www.indiegogo.com/
@@ -337,6 +475,13 @@ websites:
     facebook: instapaperholdings
     email_address: support@help.instapaper.com
     img: instapaper.png
+
+  - name: Integromat
+    url: https://www.integromat.com
+    img: integromat.svg
+    tfa:
+      - totp
+    doc: https://support.integromat.com/hc/en-us/articles/360017490699
 
   - name: Jitbit Helpdesk
     url: https://www.jitbit.com/hosted-helpdesk/
@@ -373,6 +518,21 @@ websites:
       - phone
       - totp
     doc: https://help.kickstarter.com/hc/en-us/articles/115005127094
+    exception: "Software 2FA requires setting up SMS 2FA as a fallback."
+
+  - name: Klaviyo
+    url: https://www.klaviyo.com/
+    img: klaviyo.svg
+    tfa:
+      - totp
+    doc: https://help.klaviyo.com/hc/en-us/articles/360026617692
+
+  - name: Knack
+    url: https://www.knack.com/
+    img: knack.svg
+    tfa:
+      - totp
+    doc: https://learn.knack.com/article/seuor9vxmw
 
   - name: Liftopia
     url: https://www.liftopia.com
@@ -388,6 +548,20 @@ websites:
       - email
       - totp
     doc: https://www.mathworks.com/mw_account/two_step_verification/frequently-asked-questions.html
+
+  - name: Memsource
+    url: https://www.memsource.com
+    img: memsource.svg
+    tfa:
+      - totp
+    doc: https://help.memsource.com/hc/en-us/articles/360014479359#two-factor-authentication-0-0
+
+  - name: Mist
+    url: https://www.mist.com/
+    img: mist.png
+    tfa:
+      - totp
+    doc: https://www.mist.com/documentation/two-factor-authentication-mobile-authenticator/
 
   - name: Mixpanel
     url: https://mixpanel.com/
@@ -438,13 +612,20 @@ websites:
     img: onshape.png
     tfa:
       - totp
-    doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
+    doc: https://cad.onshape.com/help/Content/managefreeaccount.htm
 
   - name: Opera
     url: https://auth.opera.com
     img: opera.png
     tfa:
       - totp
+
+  - name: Optimizely
+    url: https://www.optimizely.com
+    img: optimizely.svg
+    tfa:
+      - totp
+    doc: https://help.optimizely.com/Account_Settings/Protect_your_account_with_individual_2-step_verification
 
   - name: Pastebin
     url: https://pastebin.com
@@ -461,23 +642,24 @@ websites:
       - totp
     doc: https://support.patreon.com/hc/en-us/articles/206538086
 
-  - name: PhraseApp
-    url: https://phraseapp.com
-    img: phraseapp.png
+  - name: Phrase
+    url: https://phrase.com
+    img: phrase.png
     tfa:
       - totp
-    doc: https://phraseapp.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
+    doc: https://phrase.com/blog/posts/multi-factor-how-to-secure-your-account-using-multi-factor/
 
   - name: Pinboard
     url: https://pinboard.in/
     twitter: Pinboard
     img: pinboard.png
+    email_address: support@pinboard.in
 
-  - name: Planning Center Online
-    url: https://planning.center/
+  - name: Planning Center
+    url: https://www.planningcenter.com/
     twitter: PlanningCenter
     facebook: PlanningCenter
-    img: planningcenter.png
+    img: planningcenter.svg
 
   - name: Pocket
     url: https://www.getpocket.com
@@ -496,6 +678,23 @@ websites:
     img: promoter.png
     twitter: Promoter_io
 
+  - name: Quidco
+    url: https://www.quidco.com/
+    img: quidco.svg
+    twitter: quidco
+    facebook: quidco
+    regions:
+      - gb
+
+  - name: Refersion
+    url: https://refersion.com
+    img: refersion.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://support.refersion.com/en/articles/2989703
+    exception: "SMS 2FA is not available in all regions."
+
   - name: Repairshopr
     url: https://www.repairshopr.com/
     img: repairshopr.png
@@ -504,6 +703,22 @@ websites:
       - totp
     doc: https://feedback.repairshopr.com/knowledgebase/articles/928266
     exception: "SMS only available as a backup to Google Authenticator."
+
+  - name: Replicon
+    url: https://www.replicon.com/
+    img: replicon.svg
+    tfa:
+      - totp
+      - email
+    doc: https://www.replicon.com/help/setting-up-your-multi-factor-2-step-authentication-method/
+
+  - name: Rev
+    url: https://www.rev.com/
+    img: rev.svg
+    tfa:
+      - totp
+      - email
+    doc: https://support.rev.com/hc/en-us/articles/360035810851
 
   - name: Ripe NCC
     url: https://www.ripe.net/
@@ -519,11 +734,43 @@ websites:
       - totp
     doc: https://www.sanebox.com/help/127
 
-  - name: SignNow
+  - name: Scalefusion
+    url: https://scalefusion.com/
+    img: scalefusion.svg
+    tfa:
+      - email
+      - totp
+    doc: https://help.mobilock.in/article/6j7ps7cw8x
+    exception: "Only account owners and co-account owners can enable 2FA."
+
+  - name: Semrush
+    url: https://www.semrush.com/
+    img: semrush.svg
+    tfa:
+      - email
+    doc: https://www.semrush.com/kb/1130--
+
+  - name: signNow
     url: https://www.signnow.com/
-    img: signnow.png
-    twitter: signnow
-    facebook: esignaturesignnow
+    img: signnow.svg
+    tfa:
+      - email
+
+  - name: SimplyBook
+    url: https://simplybook.me
+    img: simplybook.svg
+    tfa:
+      - totp
+    doc: https://help.simplybook.me/index.php/Google_Authenticator_custom_feature
+    exception: "2FA is only available as a 'custom feature' and must be enabled by an admin before use."
+
+  
+  - name: Smartly.io
+    url: https://smartly.io
+    img: smartlyio.svg
+    tfa:
+      - totp
+    doc: https://support.smartly.io/hc/en-us/articles/360003493934
 
   - name: SmartSimple
     url: https://www.smartsimple.com
@@ -553,6 +800,14 @@ websites:
     tfa:
       - totp
     doc: https://help.studioninja.co/en/articles/4481947
+
+  - name: Talkdesk
+    url: https://www.talkdesk.com/
+    img: talkdesk.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://support.talkdesk.com/hc/en-us/articles/360015179592
 
   - name: ThriveCart
     url: https://www.thrivecart.com
@@ -588,6 +843,13 @@ websites:
     twitter: ulule
     facebook: ululeEN
     img: ulule.png
+
+  - name: Unleashed Inventory
+    url: https://www.unleashedsoftware.com
+    img: unleashed.svg
+    tfa:
+      - totp
+    doc: https://help.unleashedsoftware.com/authentication
 
   - name: Upwork
     url: https://www.upwork.com

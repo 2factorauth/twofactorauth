@@ -52,11 +52,6 @@ websites:
       - totp
     doc: https://all-inkl.com/wichtig/faq/#2fa
 
-  - name: ARP Networks
-    url: https://arpnetworks.com/
-    img: arpnetworks.png
-    twitter: arpnetworks
-
   - name: Binary Lane
     url: https://www.binarylane.com.au/
     img: binarylane.png
@@ -111,12 +106,6 @@ websites:
       - totp
     doc: https://cdnsun.com/knowledgebase/billing/two-factor-authentication
 
-  - name: ChunkHost
-    url: https://chunkhost.com
-    img: chunkhost.png
-    tfa:
-      - proprietary
-
   - name: CloudAtCost
     url: https://cloudatcost.com/
     img: cloudatcost.png
@@ -161,6 +150,13 @@ websites:
     doc: https://easy.gr/el/faq
     regions:
       - gr
+
+  - name: FastComet
+    url: https://www.fastcomet.com/
+    img: fastcomet.svg
+    tfa:
+      - totp
+    doc: https://www.fastcomet.com/tutorials/getting-started/enabling-two-factor-authentication
 
   - name: Fastly
     url: https://www.fastly.com
@@ -222,6 +218,23 @@ websites:
       - totp
     doc: https://www.hostens.com/knowledgebase/how-to-enhance-account-security/
 
+  - name: Hostinger
+    url: https://www.hostinger.com/
+    img: hostinger.svg
+    tfa:
+      - totp
+      - email
+    doc: https://support.hostinger.com/articles/4888148
+    exception: "You can only have one 2FA option enabled at a time."
+
+  - name: HostMonster
+    url: https://www.hostmonster.com/
+    img: hostmonster.png
+    tfa:
+      - totp
+      - email
+    doc: https://my.hostmonster.com/cgi/help/two-factor-authentication
+
   - name: Hostpoint
     url: https://www.hostpoint.ch/
     img: hostpoint.png
@@ -273,8 +286,10 @@ websites:
 
   - name: InMotion Hosting
     url: https://www.inmotionhosting.com/
-    twitter: inmotionhosting
-    img: inmotion.png
+    img: inmotion.svg
+    tfa:
+      - totp
+    doc: https://www.inmotionhosting.com/support/edu/cpanel/how-to-configure-and-use-two-factor-authentication/
 
   - name: IO Zoom
     url: https://www.iozoom.com
@@ -300,9 +315,8 @@ websites:
     url: https://kinsta.com
     img: kinsta.png
     tfa:
-      - sms
-      - proprietary
-    doc: https://kinsta.com/blog/wordpress-two-factor-authentication/
+      - totp
+    doc: https://kinsta.com/knowledgebase/two-factor-authentication/
 
   - name: KnownHost
     url: https://www.knownhost.com
@@ -344,6 +358,7 @@ websites:
   - name: Media Temple
     url: https://mediatemple.net/
     twitter: mediatemple
+    facebook: mediatemple
     img: mediatemple.png
 
   - name: Miss Hosting
@@ -356,10 +371,18 @@ websites:
   - name: Mittwald
     url: https://www.mittwald.de/
     twitter: mittwald
+    facebook: mittwald
     img: mittwald.png
     lang: de
     regions:
       - de
+
+  - name: NameHero
+    url: https://www.namehero.com/
+    img: namehero.svg
+    tfa:
+      - totp
+    doc: https://www.namehero.com/knowledgebase/163
 
   - name: NearlyFreeSpeech.NET
     url: https://www.nearlyfreespeech.net/
@@ -378,7 +401,7 @@ websites:
       - totp
     doc: https://ar.neolo.com/knowledgebase/215/Autenticacion-de-2-factores.html
 
-  - name: Netcup
+  - name: netcup
     url: https://netcup.eu/
     img: netcup.png
     tfa:
@@ -430,10 +453,10 @@ websites:
     regions:
       - fr
 
-
   - name: One.com
     url: https://www.one.com/
     twitter: onecom
+    facebook: onecom
     img: onecom.png
 
   - name: Online
@@ -497,9 +520,23 @@ websites:
       - totp
     doc: https://segment.com/docs/iam/mfa/
 
+  - name: Server.pro
+    url: https://server.pro/
+    img: serverpro.svg
+    tfa:
+      - totp
+
+  - name: ServerPilot
+    url: https://serverpilot.io/
+    img: serverpilot.svg
+    tfa:
+      - totp
+    doc: https://serverpilot.io/docs/how-to-enable-two-factor-authentication/
+
   - name: Site5
     url: https://www.site5.com/
     twitter: site5
+    facebook: Site5
     img: site5.png
 
   - name: SiteGround
@@ -583,6 +620,13 @@ websites:
       - totp
     doc: https://www.upcloud.com/support/two-factor-authentication/
     exception: "SMS is required for password recovery."
+    
+  - name: VeeroTech
+    url: https://www.veerotech.net
+    img: veerotech.png
+    tfa:
+      - totp
+    doc: https://www.veerotech.net/kb/account-management-portal-two-factor-authentication-billing-support/
 
   - name: VentraIP
     url: https://ventraip.com.au
@@ -610,6 +654,15 @@ websites:
     tfa:
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2311#issuecomment-273424695
+
+  - name: Web Hosting Canada
+    url: https://whc.ca
+    img: whc.svg
+    tfa:
+      - totp
+    doc: https://clients.whc.ca/en/knowledgebase/1430
+    regions:
+      - ca
 
   - name: WebFaction
     url: https://www.webfaction.com

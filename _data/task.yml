@@ -55,6 +55,13 @@ websites:
       - totp
     doc: https://help.clubhouse.io/hc/en-us/articles/360044506931
 
+  - name: Deputy
+    url: https://deputy.com
+    img: deputy.svg
+    tfa:
+      - totp
+    doc: https://help.deputy.com/en/articles/1953504
+
   - name: fruux
     url: https://fruux.com
     img: fruux.png
@@ -89,6 +96,13 @@ websites:
     doc: https://support.monday.com/hc/en-us/articles/360000787745
     exception: "Team admins must enable 2FA before members can use it."
 
+  - name: Nimbus Note
+    url: https://nimbusweb.me
+    img: nimbusnote.svg
+    tfa:
+      - totp
+    doc: https://nimbusweb.me/feature-2-step-verification.php
+
   - name: Nozbe Teams
     url: https://nozbe.com/
     img: nozbeteams.png
@@ -103,6 +117,13 @@ websites:
     tfa:
       - totp
     doc: https://support.plan.io/news/133
+
+  - name: Podio
+    url: https://podio.com/
+    img: podio.svg
+    tfa:
+      - totp
+    doc: https://help.podio.com/hc/en-us/articles/360017456279
 
   - name: Remember The Milk
     url: https://www.rememberthemilk.com
@@ -151,3 +172,19 @@ websites:
       - sms
       - totp
     doc: https://help.trello.com/article/993--
+
+  - name: When I Work
+    url: https://wheniwork.com
+    img: wheniwork.svg
+    tfa:
+      - sms
+      - totp
+    doc: https://help.wheniwork.com/articles/log-in-with-two-step-verification-computer/
+
+  - name: Wrike
+    url: https://www.wrike.com/
+    img: wrike.svg
+    tfa:
+      - totp
+    doc: https://help.wrike.com/hc/en-us/articles/210324445
+    exception: "Users with Enterprise accounts may need to contact their account administrator to enable 2FA."
