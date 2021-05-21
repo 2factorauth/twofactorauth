@@ -216,6 +216,13 @@ websites:
     facebook: flowdock
     img: flowdock.png
 
+  - name: Freshworks
+    url: https://www.freshworks.com/
+    img: freshworks.svg
+    tfa:
+      - totp
+    doc: https://support.freshworks.com/support/solutions/articles/50000001025
+
   - name: Front App
     url: https://frontapp.com
     img: front_app.png
