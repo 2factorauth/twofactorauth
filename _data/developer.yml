@@ -215,6 +215,13 @@ websites:
       - totp
     doc: https://support.codebasehq.com/articles/tips-tricks/how-do-i-setup-two-factor-authentication
 
+  - name: Codeship
+    url: https://app.codeship.com
+    img: codeship.svg
+    tfa:
+      - totp
+    doc: https://docs.cloudbees.com/docs/cloudbees-codeship/latest/general-about/2fa
+
   - name: Compose
     url: https://www.compose.com/
     img: composeio.png
