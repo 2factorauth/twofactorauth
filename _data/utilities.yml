@@ -514,16 +514,12 @@ websites:
 
   - name: Verizon
     url: https://www.verizon.com/
-    twitter: VerizonSupport
-    facebook: verizon
     img: verizon.png
-    regions:
-      - us
-
-  - name: Verizon Wireless
-    url: https://www.verizonwireless.com/
-    twitter: VZWSupport
-    img: verizon.png
+    tfa:
+      - sms
+      - email
+      - proprietary
+    doc: https://www.verizon.com/support/keeping-your-account-safe-faqs/
     regions:
       - us
 
