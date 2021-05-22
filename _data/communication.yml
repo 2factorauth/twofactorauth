@@ -23,6 +23,15 @@ websites:
     doc: https://docs.airship.com/tutorials/security/2fa/
     exception: "2FA is only available upon request for customers on their Essential and Comprehensive plans."
 
+  - name: Alchemer
+    url: https://www.alchemer.com/
+    img: alchemer.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://help.alchemer.com/help/multi-factor-authentication#user
+    exception: "SMS 2FA is only available for Enterprise accounts with an SMS 2FA provision."
+
   - name: Basecamp
     url: https://basecamp.com/
     img: basecamp.png
@@ -207,6 +216,13 @@ websites:
     facebook: flowdock
     img: flowdock.png
 
+  - name: Freshworks
+    url: https://www.freshworks.com/
+    img: freshworks.svg
+    tfa:
+      - totp
+    doc: https://support.freshworks.com/support/solutions/articles/50000001025
+
   - name: Front App
     url: https://frontapp.com
     img: front_app.png
@@ -243,6 +259,13 @@ websites:
     tfa:
       - totp
     doc: https://groups.io/helpcenter/membersmanual/1/understanding-groups-io-accounts/setting-account-preferences-and-viewing-account-information
+
+  - name: Guilded
+    url: https://www.guilded.gg
+    img: guilded.svg
+    tfa:
+      - totp
+    doc: https://support.guilded.gg/hc/en-us/articles/1500008991902
 
   - name: Hangouts
     url: https://hangouts.google.com/
@@ -303,6 +326,14 @@ websites:
     twitter: Kik
     facebook: kikapp
     email_address: support@kik.com
+
+  - name: Kintone
+    url: https://www.kintone.com
+    img: kintone.svg
+    tfa:
+      - totp
+    doc: https://get.kintone.help/general/en/user/list_personal/two_factor_authentication.html
+    exception: "2FA must be enabled by an admin before use."
 
   - name: LINE
     url: https://line.me/en/
@@ -438,6 +469,15 @@ websites:
     tfa:
       - proprietary
     doc: https://help.sendloop.com/docs/securing-your-account
+
+  - name: SendSafely
+    url: https://www.sendsafely.com/
+    img: sendsafely.png
+    tfa:
+      - totp
+      - sms
+    doc: https://blog.sendsafely.com/authenticator-app
+    exception: "TOTP 2FA requires SMS as a backup option"
 
   - name: Signal
     url: https://www.signal.org/

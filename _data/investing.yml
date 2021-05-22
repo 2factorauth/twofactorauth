@@ -1,8 +1,10 @@
 websites:
   - name: Acorns
     url: https://www.acorns.com/
-    twitter: acorns
     img: acorns.png
+    tfa:
+      - sms
+    doc: https://www.acorns.com/support/how-do-i-turn-on-two-factor-authentication-on-my-account/
 
   - name: AJ Bell Youinvest
     url: https://www.youinvest.co.uk/
@@ -46,6 +48,13 @@ websites:
       - sms
       - totp
     doc: https://www.bullionstar.com/help/2-factor-authentication
+
+  - name: BullionVault
+    url: https://www.bullionvault.com/
+    img: bullionvault.png
+    tfa:
+      - totp
+    doc: https://www.bullionvault.com/help/two_factor_auth.html
 
   - name: Capital Group / American Funds
     url: https://www.capitalgroup.com/
@@ -306,7 +315,8 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://help.wealthsimple.com/hc/en-ca/articles/360005175373
+      - email
+    doc: https://help.wealthsimple.com/hc/en-ca/articles/360058451253
 
   - name: WeltSparen
     url: https://www.weltsparen.de/
@@ -315,3 +325,12 @@ websites:
     facebook: WeltSparen
     email_address: kundenservice@weltsparen.de
     lang: de
+
+  - name: Zerodha Kite
+    url: https://zerodha.com/products/kite
+    img: zerodha.svg
+    tfa:
+      - totp
+    doc: https://support.zerodha.com/category/your-zerodha-account/login-credentials/login-credentials-of-trading-platforms/articles/time-based-otp-setup
+    regions:
+      - in

@@ -1,4 +1,11 @@
 websites:
+  - name: Aiven
+    url: https://aiven.io/
+    img: aiven.svg
+    tfa:
+      - totp
+    doc: https://help.aiven.io/en/articles/947120
+
   - name: Amazon Web Services
     url: https://aws.amazon.com
     img: aws.png
@@ -37,6 +44,13 @@ websites:
     tfa:
       - totp
     doc: https://cloud.ca/two-factor-authentication-is-now-available-on-cloud-ca/
+
+  - name: cloudHQ
+    url: https://cloudhq.net
+    img: cloudhq.png
+    tfa:
+      - totp
+    doc: https://support.cloudhq.net/how-to-set-up-and-enable-two-factor-authentication-2fa/
 
   - name: DigitalOcean
     url: https://www.digitalocean.com/
@@ -213,6 +227,14 @@ websites:
     tfa:
       - totp
     doc: https://scalr-wiki.atlassian.net/wiki/display/docs/Two-Factor+Authentication
+
+  - name: Serverspace
+    url: https://serverspace.io/
+    img: serverspace.svg
+    tfa:
+      - totp
+      - sms
+    doc: https://serverspace.io/support/help/how-to-install-and-use-the-google-authenticator-application/
 
   - name: Tilaa
     url: https://www.tilaa.com

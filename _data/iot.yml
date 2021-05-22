@@ -38,6 +38,13 @@ websites:
       - totp
     doc: https://support.ecobee.com/hc/en-us/articles/360040957212
 
+  - name: Hive
+    url: https://hivehome.com
+    img: hive.svg
+    tfa:
+      - sms
+    doc: https://community.hivehome.com/s/article/What-is-Two-Factor-Authentication-and-how-do-I-set-it-up
+
   - name: IFTTT
     url: https://ifttt.com
     img: ifttt.png
@@ -71,6 +78,13 @@ websites:
     img: onstar.png
     facebook: onstar
     twitter: OnStar
+
+  - name: Particle
+    url: https://particle.io
+    img: particle.svg
+    tfa:
+      - totp
+    doc: https://docs.particle.io/tutorials/developer-tools/two-step-authentication/
 
   - name: Ring
     url: https://ring.com

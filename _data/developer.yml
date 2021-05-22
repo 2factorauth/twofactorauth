@@ -208,6 +208,13 @@ websites:
       - sms
     doc: https://docs.codeanywhere.com/#two-factor-authentication
 
+  - name: Codebase
+    url: https://codebasehq.com
+    img: codebase.svg
+    tfa:
+      - totp
+    doc: https://support.codebasehq.com/articles/tips-tricks/how-do-i-setup-two-factor-authentication
+
   - name: Compose
     url: https://www.compose.com/
     img: composeio.png
@@ -263,6 +270,14 @@ websites:
     tfa:
       - totp
     doc: https://support.dominodatalab.com/hc/en-us/articles/115000998406
+
+  - name: Doppler
+    url: https://www.doppler.com/
+    img: doppler.svg
+    tfa:
+      - totp
+      - u2f
+    doc: https://docs.doppler.com/docs/security-fact-sheet#user-authentication
 
   - name: Drupal.org
     url: https://www.drupal.org/
@@ -355,6 +370,13 @@ websites:
       - totp
     doc: https://docs.hevodata.com/account-management/personal-settings/two-factor-authentication/
 
+  - name: Honeybadger
+    url: https://www.honeybadger.io/
+    img: honeybadger.svg
+    tfa:
+      - totp
+    doc: https://www.honeybadger.io/blog/account-security-updates/#how-to-enable
+
   - name: Hotjar
     url: https://hotjar.com/
     img: hotjar.png
@@ -398,6 +420,13 @@ websites:
       - u2f
     doc: https://www.jetbrains.com/help/hub/2fa-with-token.html
     exception: "U2F only available for Hub account (e.g. YouTrack). Limited to one software token OR one hardware token."
+
+  - name: LaunchDarkly
+    url: https://launchdarkly.com/
+    img: launchdarkly.svg
+    tfa:
+      - totp
+    doc: https://docs.launchdarkly.com/home/account-security/mfa
 
   - name: Launchpad
     url: https://launchpad.net
@@ -517,6 +546,14 @@ websites:
       - totp
     doc: https://www.pivotaltracker.com/help/articles/two_factor_auth/
     exception: "2FA only works on the web version. If enabled, you will not be able to use the mobile apps."
+
+  - name: Piwik
+    url: https://piwik.pro
+    img: piwik.svg
+    tfa:
+      - totp
+    doc: https://help.piwik.pro/support/getting-started/two-factor-authentication/
+    exception: "Contact customer support to enable 2FA."
 
   - name: Plivo
     url: https://www.plivo.com

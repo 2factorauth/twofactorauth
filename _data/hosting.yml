@@ -218,6 +218,15 @@ websites:
       - totp
     doc: https://www.hostens.com/knowledgebase/how-to-enhance-account-security/
 
+  - name: Hostinger
+    url: https://www.hostinger.com/
+    img: hostinger.svg
+    tfa:
+      - totp
+      - email
+    doc: https://support.hostinger.com/articles/4888148
+    exception: "You can only have one 2FA option enabled at a time."
+
   - name: HostMonster
     url: https://www.hostmonster.com/
     img: hostmonster.png
@@ -306,9 +315,8 @@ websites:
     url: https://kinsta.com
     img: kinsta.png
     tfa:
-      - sms
-      - proprietary
-    doc: https://kinsta.com/blog/wordpress-two-factor-authentication/
+      - totp
+    doc: https://kinsta.com/knowledgebase/two-factor-authentication/
 
   - name: KnownHost
     url: https://www.knownhost.com
@@ -646,6 +654,15 @@ websites:
     tfa:
       - totp
     doc: https://github.com/2factorauth/twofactorauth/pull/2311#issuecomment-273424695
+
+  - name: Web Hosting Canada
+    url: https://whc.ca
+    img: whc.svg
+    tfa:
+      - totp
+    doc: https://clients.whc.ca/en/knowledgebase/1430
+    regions:
+      - ca
 
   - name: WebFaction
     url: https://www.webfaction.com

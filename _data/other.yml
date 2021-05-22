@@ -7,6 +7,13 @@ websites:
       - email
     doc: https://knowledgecenter.2checkout.com/Onboarding/Activate-and-set-up-your-2Checkout-account/Two-factor-authentication
 
+  - name: Accelo
+    url: https://www.accelo.com/
+    img: accelo.svg
+    tfa:
+      - totp
+    doc: https://www.accelo.com/resources/help/faq/user-permissions-and-settings/two-factor-authentication/
+
   - name: Adobe ID
     url: https://adobe.com/
     img: adobe.png
@@ -47,7 +54,6 @@ websites:
     tfa:
       - sms
       - totp
-    doc: https://angel.co/projects/106166
 
   - name: Audiense
     url: https://audiense.com/
@@ -93,6 +99,12 @@ websites:
     twitter: bananatag
     facebook: trackemail
 
+  - name: Baremetrics
+    url: https://baremetrics.com/
+    img: baremetrics.svg
+    tfa:
+      - totp
+
   - name: Basic Attention Token
     url: https://publishers.basicattentiontoken.org/
     img: basicattentiontoken.png
@@ -108,7 +120,18 @@ websites:
       - sms
     doc: https://www.canva.com/help/article/login-verification
     exception: "2FA only available to users from Australia, Philippines, UK, and USA."
-    
+
+  - name: Cashrewards
+    url: https://www.cashrewards.com.au
+    img: cashrewards.svg
+    tfa:
+      - sms
+    doc: https://help.cashrewards.com.au/support/solutions/articles/1000276115
+    exception: "Enabling 2FA requires email confirmation"
+    regions:
+      - au
+      - nz
+
   - name: CharlieHR
     url: https://charliehr.com/
     img: charliehr.png
@@ -444,7 +467,7 @@ websites:
       - sms
       - phone
     doc: https://www.indeed.com/lead/two-factor-authentication
-    exception: "2FA is only available for employees and not for job seekers."
+    exception: "2FA is only available for employers and not for job seekers."
 
   - name: Indiegogo
     url: https://www.indiegogo.com/
@@ -465,6 +488,13 @@ websites:
     tfa:
       - totp
     doc: https://support.integromat.com/hc/en-us/articles/360017490699
+
+  - name: Jamf Now
+    url: https://jamfnow.com
+    img: jamfnow.svg
+    tfa:
+      - totp
+    doc: https://support.jamfnow.com/s/article/207717923-How-to-turn-on-Two-Factor-Authentication
 
   - name: Jitbit Helpdesk
     url: https://www.jitbit.com/hosted-helpdesk/
@@ -509,6 +539,13 @@ websites:
     tfa:
       - totp
     doc: https://help.klaviyo.com/hc/en-us/articles/360026617692
+
+  - name: Knack
+    url: https://www.knack.com/
+    img: knack.svg
+    tfa:
+      - totp
+    doc: https://learn.knack.com/article/seuor9vxmw
 
   - name: Liftopia
     url: https://www.liftopia.com
@@ -588,7 +625,7 @@ websites:
     img: onshape.png
     tfa:
       - totp
-    doc: https://cad.onshape.com/help/Content/twofactorauthentication.htm
+    doc: https://cad.onshape.com/help/Content/managefreeaccount.htm
 
   - name: Opera
     url: https://auth.opera.com
@@ -654,6 +691,14 @@ websites:
     img: promoter.png
     twitter: Promoter_io
 
+  - name: Quidco
+    url: https://www.quidco.com/
+    img: quidco.svg
+    twitter: quidco
+    facebook: quidco
+    regions:
+      - gb
+
   - name: Refersion
     url: https://refersion.com
     img: refersion.svg
@@ -672,6 +717,22 @@ websites:
     doc: https://feedback.repairshopr.com/knowledgebase/articles/928266
     exception: "SMS only available as a backup to Google Authenticator."
 
+  - name: Replicon
+    url: https://www.replicon.com/
+    img: replicon.svg
+    tfa:
+      - totp
+      - email
+    doc: https://www.replicon.com/help/setting-up-your-multi-factor-2-step-authentication-method/
+
+  - name: Rev
+    url: https://www.rev.com/
+    img: rev.svg
+    tfa:
+      - totp
+      - email
+    doc: https://support.rev.com/hc/en-us/articles/360035810851
+
   - name: Ripe NCC
     url: https://www.ripe.net/
     img: ripe.png
@@ -685,6 +746,15 @@ websites:
     tfa:
       - totp
     doc: https://www.sanebox.com/help/127
+
+  - name: Scalefusion
+    url: https://scalefusion.com/
+    img: scalefusion.svg
+    tfa:
+      - email
+      - totp
+    doc: https://help.mobilock.in/article/6j7ps7cw8x
+    exception: "Only account owners and co-account owners can enable 2FA."
 
   - name: Semrush
     url: https://www.semrush.com/
@@ -736,6 +806,14 @@ websites:
     twitter: spare5
     facebook: spare5app
     email_address: feedback@spare5.com
+
+  - name: Talkdesk
+    url: https://www.talkdesk.com/
+    img: talkdesk.png
+    tfa:
+      - totp
+      - u2f
+    doc: https://support.talkdesk.com/hc/en-us/articles/360015179592
 
   - name: ThriveCart
     url: https://www.thrivecart.com

@@ -118,6 +118,13 @@ websites:
       - totp
     doc: https://support.plan.io/news/133
 
+  - name: Podio
+    url: https://podio.com/
+    img: podio.svg
+    tfa:
+      - totp
+    doc: https://help.podio.com/hc/en-us/articles/360017456279
+
   - name: Remember The Milk
     url: https://www.rememberthemilk.com
     twitter: rememberthemilk
@@ -173,3 +180,11 @@ websites:
       - sms
       - totp
     doc: https://help.wheniwork.com/articles/log-in-with-two-step-verification-computer/
+
+  - name: Wrike
+    url: https://www.wrike.com/
+    img: wrike.svg
+    tfa:
+      - totp
+    doc: https://help.wrike.com/hc/en-us/articles/210324445
+    exception: "Users with Enterprise accounts may need to contact their account administrator to enable 2FA."
