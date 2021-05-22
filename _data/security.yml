@@ -119,14 +119,6 @@ websites:
       - totp
     doc: https://docs.dnsfilter.com/docs/two-factor-authentication
 
-  - name: Dome9 Security
-    url: https://dome9.com/
-    img: dome9.png
-    tfa:
-      - totp
-      - hardware
-    doc: https://dome9.com/overview/strong-2-factor-authentication
-  
   - name: EasyDMARC
     url: https://easydmarc.com
     img: easydmarc.png
