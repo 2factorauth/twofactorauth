@@ -61,6 +61,13 @@ websites:
       - hardware
     exception: "Requires X.509-capable cryptotoken or smartcard."
 
+  - name: Check Point
+    url: https://www.checkpoint.com/
+    img: checkpoint.svg
+    tfa:
+      - totp
+    doc: https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk144515
+
   - name: Cloudflare
     url: https://cloudflare.com
     img: cloudflare.png
@@ -69,7 +76,7 @@ websites:
       - u2f
     doc: https://support.cloudflare.com/hc/en-us/articles/200167906
 
-  - name: Cobalt
+- name: Cobalt
     url: https://cobalt.io/
     img: cobalt.png
     tfa:
