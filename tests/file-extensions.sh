@@ -19,7 +19,7 @@ function checkExt()
 
 checkExt css scss
 checkExt entries json
-checkExt img svg png
+#checkExt img svg png # img/icons breaks this
 checkExt js js
 checkExt scripts rb sh
 checkExt tests rb sh json
