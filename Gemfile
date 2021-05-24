@@ -15,6 +15,7 @@ group :test do
   gem 'html-proofer'
   gem 'jsonlint'
   gem 'kwalify'
-  gem 'rake'
   gem 'rubocop'
+  gem 'json_schemer'
+  gem 'twitter'
 end

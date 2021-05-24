@@ -9,7 +9,7 @@ client = Twitter::REST::Client.new do |config|
 end
 
 status = 0
-diff = `git diff origin/main...HEAD entries/ | grep "^+[[:space:]]*\\"twitter\\":" | cut -c20-`
+diff = `git diff origin/master...HEAD entries/ | grep "^+[[:space:]]*\\"twitter\\":" | cut -c20-`
 diff.gsub("\n", '').split('"').each do |handle|
   begin
     begin

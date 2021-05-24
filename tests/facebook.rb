@@ -5,7 +5,7 @@ require 'net/http'
 require 'uri'
 
 status = 0
-diff = `git diff origin/main...HEAD entries/ | grep "^+[[:space:]]*\\"facebook\\":" | cut -c21-`
+diff = `git diff origin/master...HEAD entries/ | grep "^+[[:space:]]*\\"facebook\\":" | cut -c21-`
 diff.gsub("\n", '').gsub(',', '').split('"').each do |page|
   url = URI("https://www.facebook.com/pg/#{page}")
   http = Net::HTTP.new(url.host, url.port)

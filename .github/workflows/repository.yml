@@ -1,0 +1,106 @@
+name: Repository builds and tests
+on: [ push, pull_request ]
+jobs:
+
+  tests:
+    name: Tests
+    container: 2factorauth/twofactorauth:4.0
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Bundle install
+        run: bundle install
+      - uses: actions/cache@v2
+        with:
+          path: |
+            /tmp/iso-*.txt
+            /tmp/alexa
+          key: tmp-files-${{ hashFiles('/tmp/alexa/*')}}
+      - name: Validate JSON structure
+        run:  bundle exec ruby ./tests/validate-json.rb
+      - name: Validate Region codes
+        run:  bundle exec ruby ./tests/region-codes.rb
+      - name: Validate Language codes
+        run: bundle exec ruby ./tests/language-codes.rb
+      - name: Validate Entry tags
+        run: bundle exec ruby ./tests/entry-tags.rb
+      - name: Validate file extensions
+        run:  tests/file-extensions.sh
+
+  build:
+    name: Build
+    container: 2factorauth/twofactorauth:4.0
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Bundle install
+        run: bundle install
+      - name: Generate API files
+        run: |
+          mkdir -p api/v1
+          mkdir -p api/v2
+          mkdir -p api/v3
+          ./scripts/APIv1.rb
+          ./scripts/APIv2.rb
+          ./scripts/APIv3.rb
+      - name: Build the site
+        run: bundle exec jekyll build --config _config.yml
+      - name: Create Artifact
+        if: |
+          github.ref == 'refs/heads/master' &&
+          github.repository == '2factorauth/twofactorauth' &&
+          github.event_name == 'push'
+        run: zip -rz0 build.zip .
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        if: |
+          github.ref == 'refs/heads/master' &&
+          github.repository == '2factorauth/twofactorauth' &&
+          github.event_name == 'push'
+        with:
+          name: build
+          path: build.zip
+
+  publish:
+    name: Publish build
+    needs: [ tests, build ]
+    if: |
+      github.ref == 'refs/heads/master' &&
+      github.repository == '2factorauth/twofactorauth' &&
+      github.event_name == 'push'
+    runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: build
+      - name: Build region sites
+        run: ./scripts/regions.rb
+      - name: Import PGP key
+        id: pgp
+        uses: crazy-max/ghaction-import-gpg@v3
+        with:
+          gpg-private-key: ${{ secrets.pgp_key }}
+          passphrase: ${{ secrets.pgp_passphrase }}
+      - name: Sign API files
+        run: ./scripts/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
+      - name: Generate webp images
+        run: ./scripts/webp.sh
+      - name: Build the site
+        run: bundle exec jekyll build
+      - name: Minify JavaScript files
+        run: ./scripts/minify-js.sh
+      - name: Test HTML files
+        run: bundle exec rake proof
+        env:
+          NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: _site
+          fqdn: ${{ secrets.domain }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
