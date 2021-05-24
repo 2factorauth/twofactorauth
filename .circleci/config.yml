@@ -9,7 +9,9 @@ jobs:
 
       - run:
           name: Check Twitter handles
-          command: ruby twitter.rb
+          command: |
+            gem i twitter
+            ruby twitter.rb
           working_directory: tests
 
       - run:
