@@ -274,8 +274,10 @@ websites:
     img: yahoojapanmail.png
     tfa:
       - email
-      - totp
+      - sms
     doc: https://id.yahoo.co.jp/security/otp.html
+    regions:
+      - jp
 
   - name: Yahoo Mail
     url: https://mail.yahoo.com/
