@@ -61,6 +61,13 @@ websites:
       - hardware
     exception: "Requires X.509-capable cryptotoken or smartcard."
 
+  - name: Check Point
+    url: https://www.checkpoint.com/
+    img: checkpoint.svg
+    tfa:
+      - totp
+    doc: https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk144515
+
   - name: Cloudflare
     url: https://cloudflare.com
     img: cloudflare.png
@@ -112,14 +119,6 @@ websites:
       - totp
     doc: https://docs.dnsfilter.com/docs/two-factor-authentication
 
-  - name: Dome9 Security
-    url: https://dome9.com/
-    img: dome9.png
-    tfa:
-      - totp
-      - hardware
-    doc: https://dome9.com/overview/strong-2-factor-authentication
-  
   - name: EasyDMARC
     url: https://easydmarc.com
     img: easydmarc.png
