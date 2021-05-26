@@ -44,19 +44,21 @@ jobs:
           ./scripts/APIv2.rb
           ./scripts/APIv3.rb
       - name: Build the site
-        run: bundle exec jekyll build --config _config.yml
+        run: |
+          bundle exec ruby ./scripts/join-entries.rb
+          bundle exec jekyll build
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Artifact
-        if: |
-          github.event == 'push' &&
+        if: >
+          github.event_name == 'push' &&
           github.ref == 'refs/heads/master' &&
           github.repository == '2factorauth/twofactorauth'
         run: tar -czf build.tar.gz .
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
-        if: |
-          github.event == 'push' &&
+        if: >
+          github.event_name == 'push' &&
           github.ref == 'refs/heads/master' &&
           github.repository == '2factorauth/twofactorauth'
         with:
@@ -65,8 +67,8 @@ jobs:
 
   complete_build:
     name: Complete build
-    if: |
-      github.event == 'push' &&
+    if: >
+      github.event_name == 'push' &&
       github.ref == 'refs/heads/master' &&
       github.repository == '2factorauth/twofactorauth'
     needs: [ tests, build ]
