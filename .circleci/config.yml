@@ -9,13 +9,15 @@ jobs:
 
       - run:
           name: Check Twitter handles
-          command: bash twitter.sh
-          working_directory: _deployment/tests
+          command: |
+            gem i twitter
+            ruby twitter.rb
+          working_directory: tests
 
       - run:
          name: Check Facebook handles
-         command: bash facebook.sh
-         working_directory: _deployment/tests
+         command: ruby facebook.rb
+         working_directory: tests
 
       - restore_cache:
           keys:
@@ -23,8 +25,8 @@ jobs:
 
       - run:
           name: Check Alexa ranking
-          command: bash alexa.sh
-          working_directory: _deployment/tests
+          command: ruby alexa.rb
+          working_directory: tests
 
       - save_cache:
           key: awis-cache
