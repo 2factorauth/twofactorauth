@@ -1,0 +1,20 @@
+{
+  "bitwarden": {
+    "domain": "bitwarden.com",
+    "img": "bitwarden.com.png",
+    "tfa": [
+      "sms",
+      "call",
+      "email",
+      "totp",
+      "u2f",
+      "custom-hardware",
+      "custom-software"
+    ],
+    "documentation": "https://help.bitwarden.com/article/setup-two-step-login/",
+    "notes": "Premium account required for Duo, YubiKey and FIDO U2F.",
+    "keywords": [
+      "identity"
+    ]
+  }
+}

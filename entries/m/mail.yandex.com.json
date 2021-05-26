@@ -1,0 +1,14 @@
+{
+  "Yandex.Mail": {
+    "domain": "mail.yandex.com",
+    "img": "mail.yandex.com.png",
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://yandex.com/support/passport/authorization/twofa.xml",
+    "notes": "SMS-capable phone required for initial setup.",
+    "keywords": [
+      "email"
+    ]
+  }
+}

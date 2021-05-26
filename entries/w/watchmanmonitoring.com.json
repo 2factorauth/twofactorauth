@@ -1,0 +1,17 @@
+{
+  "Watchman Monitoring": {
+    "domain": "watchmanmonitoring.com",
+    "url": "https://www.watchmanmonitoring.com",
+    "img": "watchmanmonitoring.com.png",
+    "tfa": [
+      "sms",
+      "totp",
+      "custom-hardware"
+    ],
+    "documentation": "https://support.watchmanmonitoring.com/hc/en-us/articles/205004059",
+    "notes": "Two factor authentication unavailable for 'End User' access, which is read-only.",
+    "keywords": [
+      "other"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Fastmail": {
+    "domain": "fastmail.com",
+    "url": "https://www.fastmail.com/",
+    "img": "fastmail.com.png",
+    "tfa": [
+      "sms",
+      "totp",
+      "custom-hardware",
+      "u2f"
+    ],
+    "documentation": "https://www.fastmail.com/help/account/2fa.html",
+    "keywords": [
+      "email"
+    ]
+  }
+}

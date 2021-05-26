@@ -1,0 +1,20 @@
+{
+  "T-Mobile": {
+    "domain": "t-mobile.com",
+    "url": "https://www.t-mobile.com/",
+    "img": "t-mobile.com.png",
+    "tfa": [
+      "sms",
+      "totp",
+      "custom-hardware"
+    ],
+    "documentation": "https://support.t-mobile.com/docs/DOC-2727",
+    "notes": "Backup methods of SMS or recovery questions can't be disabled.",
+    "keywords": [
+      "utilities"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}

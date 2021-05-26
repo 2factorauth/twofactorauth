@@ -1,0 +1,16 @@
+{
+  "MongoDB Atlas": {
+    "domain": "atlas.mongodb.com",
+    "img": "atlas.mongodb.com.png",
+    "tfa": [
+      "totp",
+      "email",
+      "custom-software",
+      "sms"
+    ],
+    "documentation": "https://docs.atlas.mongodb.com/security-multi-factor-authentication/",
+    "keywords": [
+      "developer"
+    ]
+  }
+}

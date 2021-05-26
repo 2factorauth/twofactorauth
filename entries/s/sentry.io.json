@@ -1,0 +1,15 @@
+{
+  "Sentry": {
+    "domain": "sentry.io",
+    "img": "sentry.io.png",
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://blog.sentry.io/2016/06/22/introducing-2fa",
+    "keywords": [
+      "developer"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "SendSafely": {
+    "domain": "sendsafely.com",
+    "url": "https://www.sendsafely.com/",
+    "img": "sendsafely.com.png",
+    "tfa": [
+      "totp",
+      "sms"
+    ],
+    "documentation": "https://blog.sendsafely.com/authenticator-app",
+    "notes": "TOTP 2FA requires SMS as a backup option",
+    "keywords": [
+      "communication"
+    ]
+  }
+}
