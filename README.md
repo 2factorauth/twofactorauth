@@ -9,7 +9,7 @@ A list of popular sites and whether or not they accept two factor auth.
 
 ## The Goal :goal_net:
 
-The goal of this project is to build a website ([2fa.directory][site_url]) with a list of popular sites that support 
+The goal of this project is to build a website ([2fa.directory][site_url]) with a list of popular sites that support
 Two Factor Authentication, as well as the methods that they provide.
 
 Our hope is to aid consumers who are deciding between alternative services based on the security they
@@ -110,21 +110,12 @@ This code is distributed under the MIT license. For more info, read the
 [LICENSE][license] file distributed with the source code.
 
 [build_status]: https://github.com/2factorauth/twofactorauth/actions
-
 [license]: /LICENSE
-
 [gitter]: https://gitter.im/2factorauth/twofactorauth
-
 [twitter]: https://twitter.com/2faorg
-
 [site_url]: https://2fa.directory
-
 [contrib]: /CONTRIBUTING.md
-
 [jekyll]: https://jekyllrb.com/
-
 [pages-gem]: https://github.com/github/pages-gem
-
 [docker]: https://www.docker.com/
-
 [jekyll_docker]: https://github.com/envygeeks/jekyll-docker/blob/master/README.md
