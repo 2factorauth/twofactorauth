@@ -1,0 +1,14 @@
+{
+  "Monday.com": {
+    "domain": "monday.com",
+    "tfa": [
+      "totp",
+      "sms"
+    ],
+    "documentation": "https://support.monday.com/hc/en-us/articles/360000787745",
+    "notes": "Team admins must enable 2FA before members can use it.",
+    "keywords": [
+      "task"
+    ]
+  }
+}

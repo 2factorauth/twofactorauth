@@ -1,0 +1,15 @@
+{
+  "Amazon Web Services": {
+    "domain": "aws.amazon.com",
+    "img": "aws.amazon.com.png",
+    "tfa": [
+      "totp",
+      "custom-hardware",
+      "u2f"
+    ],
+    "documentation": "https://aws.amazon.com/iam/features/mfa/",
+    "keywords": [
+      "cloud"
+    ]
+  }
+}

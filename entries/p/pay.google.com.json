@@ -1,0 +1,17 @@
+{
+  "Google Pay": {
+    "domain": "pay.google.com",
+    "img": "pay.google.com.png",
+    "tfa": [
+      "sms",
+      "call",
+      "custom-software",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://www.google.com/intl/en-US/landing/2step/features.html",
+    "keywords": [
+      "payments"
+    ]
+  }
+}

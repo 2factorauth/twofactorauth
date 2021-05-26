@@ -1,0 +1,15 @@
+{
+  "Tutanota": {
+    "domain": "tutanota.com",
+    "img": "tutanota.com.png",
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://tutanota.com/howto/#2fa",
+    "notes": "Hardware 2FA not yet supported for their desktop & mobile apps.",
+    "keywords": [
+      "email"
+    ]
+  }
+}

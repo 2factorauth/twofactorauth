@@ -1,0 +1,16 @@
+{
+  "Vultr": {
+    "domain": "vultr.com",
+    "url": "https://www.vultr.com",
+    "img": "vultr.com.png",
+    "tfa": [
+      "totp",
+      "custom-hardware"
+    ],
+    "documentation": "https://www.vultr.com/docs/using-two-factor-authentication-to-login-to-vultr-control-panel",
+    "notes": "Hardware 2FA only supports YubiKeys with Yubico OTP credentials.",
+    "keywords": [
+      "cloud"
+    ]
+  }
+}

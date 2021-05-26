@@ -1,0 +1,15 @@
+{
+  "VoIP.ms": {
+    "domain": "voip.ms",
+    "img": "voip.ms.png",
+    "tfa": [
+      "email",
+      "totp"
+    ],
+    "documentation": "https://wiki.voip.ms/article/TOTP_Authentication",
+    "notes": "Only one of the 2FA methods can be enabled at the same time.",
+    "keywords": [
+      "utilities"
+    ]
+  }
+}

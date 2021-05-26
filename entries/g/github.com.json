@@ -1,0 +1,16 @@
+{
+  "GitHub": {
+    "domain": "github.com",
+    "img": "github.com.png",
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://help.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication",
+    "notes": "Hardware tokens must have a backup method, either SMS or software token.",
+    "keywords": [
+      "developer"
+    ]
+  }
+}

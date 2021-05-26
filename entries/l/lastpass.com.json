@@ -1,0 +1,17 @@
+{
+  "LastPass": {
+    "domain": "lastpass.com",
+    "img": "lastpass.com.png",
+    "tfa": [
+      "totp",
+      "custom-hardware",
+      "custom-software",
+      "u2f"
+    ],
+    "documentation": "https://support.logmeininc.com/lastpass/help/enable-multifactor-authentication-lp010002",
+    "notes": "Availability of 2FA options depends on your account type.",
+    "keywords": [
+      "identity"
+    ]
+  }
+}

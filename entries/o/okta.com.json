@@ -1,0 +1,19 @@
+{
+  "Okta": {
+    "domain": "okta.com",
+    "url": "https://www.okta.com/",
+    "img": "okta.com.png",
+    "tfa": [
+      "sms",
+      "call",
+      "email",
+      "totp",
+      "custom-hardware",
+      "u2f"
+    ],
+    "documentation": "https://help.okta.com/en/prod/Content/Topics/Security/MFA.htm",
+    "keywords": [
+      "identity"
+    ]
+  }
+}

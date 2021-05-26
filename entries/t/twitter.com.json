@@ -1,0 +1,16 @@
+{
+  "Twitter": {
+    "domain": "twitter.com",
+    "img": "twitter.com.png",
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://support.twitter.com/articles/20170388",
+    "notes": "Hardware 2FA requires enabling back-up method. SMS only available on select providers.",
+    "keywords": [
+      "social"
+    ]
+  }
+}
