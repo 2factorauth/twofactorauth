@@ -9,38 +9,45 @@ A list of popular sites and whether or not they accept two factor auth.
 
 ## The Goal :goal_net:
 
-The goal of this project is to build a website ([2fa.directory][site_url]) with a list of popular sites that support
-Two Factor Authentication, as well as the methods that they provide.
+The goal of this project is to build a website ([2fa.directory][site_url]) with a list of popular sites that support Two
+Factor Authentication, as well as the methods that they provide.
 
-Our hope is to aid consumers who are deciding between alternative services based on the security they
-offer for their customers. This project also serves as an indicator of general security efforts used on a site.
+Our hope is to aid consumers who are deciding between alternative services based on the security they offer for their
+customers. This project also serves as an indicator of general security efforts used on a site.
 
 ## Contributing :pencil2:
 
 If you would like to contribute, please read the entire guidelines here in
 [CONTRIBUTING.md][contrib].
 
-## Local installation :hammer_and_wrench:
+## Installing dependencies :hammer_and_wrench:
 
-2fa.directory is built upon [Jekyll][jekyll], using the [github-pages][pages-gem] gem.
-In order to run the site locally, bundler, and all other dependencies will need to be installed, and afterwards Jekyll can serve
-the site.
+### 1. Docker
 
-Ubuntu:
-
-```bash
-sudo snap install ruby --classic
-sudo apt install webp npm
-npm i babel-minify
-bundle install --path vendor/bundle
+```BASH
+docker pull 2factorauth/twofactorauth:4.0
 ```
 
-Windows Subsystem for Linux (WSL):
+### 2. Snap
+
+```bash
+  sudo snap install ruby --classic
+  npm i babel-minify
+  bundle config set path './vendor/cache'
+  bundle install
+```
+
+### 3. Manual installation
+
+This is the most difficult option and recommended for environments where Docker or Snap can't be used.
+
+GNU/Linux and WSL:
 
 ```bash
 sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev npm webp
 npm i babel-minify
-bundle install --path vendor/bundle
+bundle config set path './vendor/cache'
+bundle install
 ```
 
 MacOS (_Requires Xcode_):
@@ -62,30 +69,38 @@ bundle install --path vendor/bundle
 npm i babel-minify
 ```
 
-## Running locally :running:
+## Building :running:
 
-Ubuntu/WSL/MacOS:
+Docker (Windows/Linux/MacOS):
+
+```BASH
+docker run -p 4000:4000 -v $(pwd):/twofactorauth
+```
+
+Snap/Manual:
 
 ```bash
-# Generating regional sites (Optional)
-ruby ./_deployment/regions.rb
-
-# Generate WebP images
-./_deployment/webp.sh
+# Generating API files
+mkdir -p api/v1 api/v2 api/v3
+bundle exec ruby ./scripts/APIv1.rb
+bundle exec ruby ./scripts/APIv2.rb
+bundle exec ruby ./scripts/APIv3.rb
 
 # Building the site
 bundle exec jekyll build
 
-# Running the site locally
-bundle exec jekyll serve --watch
-
 # Minify JS (Optional)
-./_deployment/minify-js.sh
+./scripts/minify-js.sh
+
+# Building regional sites (Optional)
+ruby ./scripts/regions.rb
 ```
 
-The TwoFactorAuth website should now be accessible from `http://localhost:4000`.
-
-Another option is to run Jekyll inside a [Docker][docker] container. Please read the [Jekyll Docker Documentation][jekyll_docker] on how to use Jekyll.
+To run the site on a minimal WEBrick webserver, do:
+```BASH
+bundle exec jekyll serve
+```
+The website should now be accessible from `http://localhost:4000`.
 
 ## License :balance_scale:
 
