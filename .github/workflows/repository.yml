@@ -90,7 +90,8 @@ jobs:
           gpg-private-key: ${{ secrets.pgp_key }}
           passphrase: ${{ secrets.pgp_passphrase }}
       - name: Sign API files
-        run: ./scripts/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
+        working-directory: _site
+        run: ../scripts/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
       - name: Minify JavaScript files
         run: ./scripts/minify-js.sh
       - name: Build region sites
