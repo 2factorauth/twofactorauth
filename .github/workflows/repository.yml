@@ -126,6 +126,7 @@ jobs:
           target_branch: gh-pages
           build_dir: _site
           jekyll: false
-          commit_message: "Deploy $GITHUB_SHA"
+          fqdn: ${{ secrets.DOMAIN }}
+          commit_message: "Deploy ${{GITHUB.SHA}}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
