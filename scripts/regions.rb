@@ -29,7 +29,7 @@ regions.each do |region|
     all[name] = website if website['regions'].nil? || website['regions'].include?(region['id'].to_s)
   end
 
-  File.open("#{dest_dir}/_data/all.yml", 'w') { |file| file.write JSON.generate(all) }
+  File.open("#{dest_dir}/_data/all.json", 'w') { |file| file.write JSON.generate(all) }
 
   out_dir = "#{Dir.pwd}/_site/#{region['id']}"
   puts "Building #{region['id']}..."
