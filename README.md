@@ -80,6 +80,9 @@ docker run -p 4000:4000 -v $(pwd):/twofactorauth
 Snap/Manual:
 
 ```bash
+# Create _data/all.json
+ruby ./scripts/join-entries.rb > _data/all.json
+
 # Generating API files
 mkdir -p api/v1 api/v2 api/v3
 bundle exec ruby ./scripts/APIv1.rb
