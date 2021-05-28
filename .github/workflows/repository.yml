@@ -114,7 +114,6 @@ jobs:
     name: Publish build
     needs: [complete_build]
     runs-on: ubuntu-latest
-    if: always() == false
     steps:
       - uses: actions/download-artifact@v2
         with:
