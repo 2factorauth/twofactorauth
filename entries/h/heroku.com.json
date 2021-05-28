@@ -3,9 +3,19 @@
     "domain": "heroku.com",
     "url": "https://www.heroku.com/",
     "tfa": [
-      "totp"
+      "totp",
+      "custom-software",
+      "custom-hardware"
     ],
-    "documentation": "https://devcenter.heroku.com/articles/two-factor-authentication",
+    "custom-software": [
+      "Salesforce Authenticator"
+    ],
+    "custom-hardware": [
+      "WebAuthn Security Key",
+      "Biometrics (Windows Hello / Apple Touch ID)"
+    ],
+    "documentation": "https://devcenter.heroku.com/articles/multi-factor-authentication",
+    "recovery": "https://devcenter.heroku.com/articles/recovery-codes",
     "keywords": [
       "cloud"
     ]
