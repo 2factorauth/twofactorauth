@@ -1,0 +1,18 @@
+{
+  "login.gov": {
+    "domain": "login.gov",
+    "tfa": [
+      "sms",
+      "call",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://www.login.gov/help/creating-an-account/two-factor-authentication/",
+    "keywords": [
+      "government"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}

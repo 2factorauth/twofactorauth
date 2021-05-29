@@ -1,0 +1,14 @@
+{
+  "JetBrains": {
+    "domain": "jetbrains.com",
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://www.jetbrains.com/help/hub/2fa-with-token.html",
+    "notes": "U2F only available for Hub account (e.g. YouTrack). Limited to one software token OR one hardware token.",
+    "keywords": [
+      "developer"
+    ]
+  }
+}

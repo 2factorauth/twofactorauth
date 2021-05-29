@@ -1,0 +1,16 @@
+{
+  "Twitch": {
+    "domain": "twitch.tv",
+    "url": "https://www.twitch.tv/",
+    "tfa": [
+      "sms",
+      "custom-software",
+      "totp"
+    ],
+    "documentation": "https://help.twitch.tv/s/article/two-factor-authentication",
+    "notes": "To activate two factor authentication, you must provide a mobile phone number.",
+    "keywords": [
+      "entertainment"
+    ]
+  }
+}

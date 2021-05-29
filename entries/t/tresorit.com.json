@@ -1,0 +1,16 @@
+{
+  "Tresorit": {
+    "domain": "tresorit.com",
+    "tfa": [
+      "sms",
+      "call",
+      "email",
+      "totp"
+    ],
+    "documentation": "https://support.tresorit.com/hc/en-us/articles/216114527",
+    "notes": "Requires enabling at least two 2FA methods.",
+    "keywords": [
+      "backup"
+    ]
+  }
+}

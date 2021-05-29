@@ -1,0 +1,15 @@
+{
+  "OpenDNS": {
+    "domain": "opendns.com",
+    "url": "https://www.opendns.com/",
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://umbrella.cisco.com/blog/2014/05/22/launching-two-step-verification/",
+    "notes": "Only available for enterprise accounts.",
+    "keywords": [
+      "domains"
+    ]
+  }
+}

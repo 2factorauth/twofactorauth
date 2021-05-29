@@ -1,0 +1,12 @@
+{% assign name = include.category-param[0] %}
+{% assign title = include.category-param[1].title %}
+{% assign icon = include.category-param[1].icon %}
+
+<div class="col align-self-start category-icon-outer {{ include.viewport }}-only">
+  <div class="cat btn cat-icon-inner" data-toggle="collapse" data-target="#{{ name }}-table" aria-expanded="false" aria-controls="{{ name }}-table" id="{{ name }}">
+        <div>
+          <i class="{{ icon }} category-icon fa-fw"></i>
+        </div>
+        <small class="category-title">{{ title }}</small>
+      </div>
+</div>

@@ -1,0 +1,19 @@
+{
+  "US Veteran Affairs": {
+    "domain": "va.gov",
+    "url": "https://www.va.gov",
+    "tfa": [
+      "sms",
+      "call",
+      "custom-software",
+      "custom-hardware"
+    ],
+    "notes": "2FA is only available when using the Identity Management service ID.me",
+    "keywords": [
+      "government"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}

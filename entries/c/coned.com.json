@@ -1,0 +1,20 @@
+{
+  "Con Edison": {
+    "domain": "coned.com",
+    "url": "https://www.coned.com/",
+    "tfa": [
+      "sms",
+      "call",
+      "totp",
+      "custom-software"
+    ],
+    "documentation": "https://www.coned.com/-/media/files/coned/documents/small-medium-large-businesses/building-project-center/contractor-resources/user-registration-guide.pdf?la=en",
+    "notes": "Requires phone number to set up. Can be bypassed by customer support.",
+    "keywords": [
+      "utilities"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}

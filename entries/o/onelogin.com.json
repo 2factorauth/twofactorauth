@@ -1,0 +1,16 @@
+{
+  "OneLogin": {
+    "domain": "onelogin.com",
+    "url": "https://www.onelogin.com/",
+    "tfa": [
+      "custom-software",
+      "sms",
+      "totp",
+      "custom-hardware"
+    ],
+    "documentation": "https://onelogin.service-now.com/support?id=kb_article&sys_id=43d99143db109700d5505eea4b96197a",
+    "keywords": [
+      "identity"
+    ]
+  }
+}

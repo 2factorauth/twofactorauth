@@ -1,0 +1,16 @@
+{
+  "Gmail": {
+    "domain": "mail.google.com",
+    "tfa": [
+      "sms",
+      "call",
+      "totp",
+      "custom-software",
+      "u2f"
+    ],
+    "documentation": "https://www.google.com/intl/en-US/landing/2step/features.html",
+    "keywords": [
+      "email"
+    ]
+  }
+}

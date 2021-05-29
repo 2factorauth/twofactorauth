@@ -1,0 +1,132 @@
+name: Repository builds and tests
+on: [ push, pull_request ]
+jobs:
+
+  tests:
+    name: Tests
+    container: 2factorauth/twofactorauth:4.0
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Bundle install
+        run: bundle install
+      - uses: actions/cache@v2
+        with:
+          path: |
+            /tmp/iso-*.txt
+            /tmp/alexa
+          key: tmp-files-${{ hashFiles('/tmp/alexa/*')}}
+      - name: Validate JSON structure
+        run:  bundle exec ruby ./tests/validate-json.rb
+      - name: Validate Region codes
+        run:  bundle exec ruby ./tests/region-codes.rb
+      - name: Validate Language codes
+        run: bundle exec ruby ./tests/language-codes.rb
+      - name: Validate Entry tags
+        run: bundle exec ruby ./tests/entry-tags.rb
+      - name: Validate file extensions
+        run:  tests/file-extensions.sh
+
+  build:
+    name: Minimal build
+    container: 2factorauth/twofactorauth:4.0
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Bundle install
+        run: bundle install
+      - name: Generate API files
+        run: |
+          mkdir -p api/v1
+          mkdir -p api/v2
+          mkdir -p api/v3
+          ./scripts/APIv1.rb
+          ./scripts/APIv2.rb
+          ./scripts/APIv3.rb
+      - name: Build the site
+        run: |
+          bundle exec ruby ./scripts/join-entries.rb > ./_data/all.json
+          bundle exec jekyll build
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Artifact
+        if: >
+          github.event_name == 'push' &&
+          github.ref == 'refs/heads/master' &&
+          github.repository == '2factorauth/twofactorauth'
+        run: tar -czf build.tar.gz .
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        if: >
+          github.event_name == 'push' &&
+          github.ref == 'refs/heads/master' &&
+          github.repository == '2factorauth/twofactorauth'
+        with:
+          name: build
+          path: build.tar.gz
+
+  complete_build:
+    name: Complete build
+    if: >
+      github.event_name == 'push' &&
+      github.ref == 'refs/heads/master' &&
+      github.repository == '2factorauth/twofactorauth'
+    needs: [ tests, build ]
+    container: 2factorauth/twofactorauth:4.0
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: build
+      - name: Extract artifact
+        run: tar -xzf build.tar.gz
+      - name: Bundle install
+        run: bundle install
+      - name: Install GnuPG
+        run: apk add --no-cache gnupg
+      - uses: crazy-max/ghaction-import-gpg@v3
+        id: pgp
+        with:
+          gpg-private-key: ${{ secrets.pgp_key }}
+          passphrase: ${{ secrets.pgp_passphrase }}
+      - name: Sign API files
+        working-directory: _site
+        run: ../scripts/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
+      - name: Minify JavaScript files
+        run: ./scripts/minify-js.sh
+      - name: Build region sites
+        run: ./scripts/regions.rb
+        env:
+          NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+          PAGES_REPO_NWO:  ${{ github.repository }}
+          PAGES_ENV: production
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JEKYLL_ENV: production
+      - name: Create Artifact
+        run: tar -czf site.tar.gz _site
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: site.tar.gz
+
+  publish:
+    name: Publish build
+    needs: [complete_build]
+    runs-on: ubuntu-latest
+    if: always() == false
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: site
+      - name: Extract artifact
+        run: tar -xzf site.tar.gz
+      - uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: _site
+          jekyll: false
+          fqdn: ${{ secrets.DOMAIN }}
+          commit_message: "Deploy ${{GITHUB.SHA}}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

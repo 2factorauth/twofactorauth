@@ -1,0 +1,19 @@
+{
+  "Perimeter 81": {
+    "domain": "perimeter81.com",
+    "url": "https://www.perimeter81.com/",
+    "img": "perimeter81.com.png",
+    "tfa": [
+      "sms",
+      "totp",
+      "custom-software",
+      "u2f",
+      "call"
+    ],
+    "documentation": "https://support.perimeter81.com/docs/two-factor-authentication",
+    "notes": "2FA is only available for users on Premium and Enterprise plans.",
+    "keywords": [
+      "security"
+    ]
+  }
+}

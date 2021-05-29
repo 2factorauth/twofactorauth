@@ -1,5 +1,8 @@
 ---
 ---
+:root {
+  --primary: hsl(180, 59%, 51%);
+}
 
 body {
   background-color: #fff;
@@ -7,54 +10,20 @@ body {
   min-width: 300px;
 }
 
-h1,h2,h3,h4 {
+h1, h2, h3, h4 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #212121;
-    /*background: linear-gradient(#222,#333) fixed;*/
     color: #eee;
-  }
-
-  .category-title {
-    color: #eee;
-  }
-
-  thead {
-    background-color: #262626 !important;
-    color: #eee;
-  }
-
-  thead > tr > th {
-    border-color: #424242 !important;
-  }
-
-  .table-success, .table-success > td {
-    background-color: #b1dfbb;
-  }
-
-  .table-danger, .table-danger > td {
-    background-color: #f1b0b7;
-    text-align: left;
-  }
-
-  .category-icon {
-    background-color: #eee !important;
   }
   a {
     color: #3596ff;
   }
 }
 
-td, th {
-  text-align: center;
-}
-
-thead {
-  background-color: #ffffff;
-}
 
 .back-arrow {
   top: 0;
@@ -78,6 +47,7 @@ thead {
   max-width: calc(1327px + 2rem);
   padding: 0;
 
+  /** Top content on index.html **/
   #main {
     margin: 1em auto 1em auto;
     text-align: center;
@@ -86,57 +56,12 @@ thead {
       font-weight: 300 !important;
       font-size: 2.3rem;
     }
-  }
 
-  .category-row {
-    margin: 2vh auto;
-
-    /* Category button */
-    .cat {
-      box-sizing: border-box;
-      display: block;
-      position: relative;
-      width: 90vw;
-      z-index: 1000;
-      -webkit-appearance: none;
-      border-radius: 0;
-
-      h5 {
-        box-sizing: border-box;
-        display: inline-block;
-        float: none;
-        position: static;
-      }
-
-      .category-title {
-        box-sizing: border-box;
-        display: inline;
-        float: none;
-        line-height: 23px;
-        position: static;
-        font-family: -apple-system, BlinkMacSystemFont, spartan, sans-serif;
-        font-weight: 400;
-        font-size: 22px;
-        letter-spacing: 0.528px;
-      }
-
-      .category-icon {
-        background-color: #fff;
-        font-size: 36px;
-        margin: 15px auto;
-        text-align: center;
-        width: 1.7em;
-        line-height: 1.64em;
-        border-radius: 50%;
-        border: solid rgba(0, 0, 0, 0.1) 3px;
-      }
+    #logo {
+      margin: auto;
+      height: 20em;
+      max-height: 33vw;
     }
-  }
-
-  #logo {
-    margin: auto;
-    height: 20em;
-    max-height: 33vw;
   }
 
   .col {
@@ -149,20 +74,8 @@ thead {
     display: none;
   }
 
-
   .fas, .fab {
     line-height: inherit;
-  }
-
-  /* Site name and logo */
-  .logo {
-    height: 32px;
-    width: 32px;
-    margin-right: .8em;
-
-    &.no-border {
-      border-radius: 0 !important;
-    }
   }
 
   h5:first-child {
@@ -178,35 +91,7 @@ thead {
   }
 }
 
-#outerSearchBox {
-  height: 2.4em;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-  border: 1px #e3e3e3 solid;
-  background-color: #fff;
-  color: rgba(0, 0, 0, .77);
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 1em auto 1em auto;
-
-  #searchIcon {
-    font-size: 1.2em;
-    height: 22px;
-    margin-left: 2px;
-  }
-
-  #innerSearchBox {
-    border: none;
-    width: calc(100% - 35px);
-    height: 100%;
-    float: right;
-    outline: none;
-  }
-}
-
-#outerSearchBox:focus-within, #outerSearchBox:hover {
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
-}
-
+/** Footer **/
 .footer {
   bottom: 0;
   position: static;
@@ -216,13 +101,18 @@ thead {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
 
   #innerFooter {
     grid-area: 1 / 2 / 2 / 3;
     font-size: 0.9em;
     text-align: center;
+    @media screen and (max-width: 992px) {
+      & {
+        grid-area: 1 / 1 / 1 / 4 !important;
+      }
+    }
   }
 
   #buildNumber {
@@ -234,22 +124,7 @@ thead {
   }
 }
 
-#no-results {
-  display: none;
-  text-align: center;
-}
-
-.active {
-  .category-icon {
-    color: #fff;
-    background: {{ site.theme_color }} !important;
-  }
-
-  .category-title {
-    color: {{ site.theme_color }} !important;
-  }
-}
-
+/** Device specific content **/
 @media screen and (min-width: 993px) {
   .mobile-only {
     display: none !important;
@@ -259,8 +134,5 @@ thead {
 @media screen and (max-width: 992px) {
   .desktop-only {
     display: none !important;
-  }
-  #innerFooter {
-    grid-area: 1 / 1 / 1 / 4 !important;
   }
 }

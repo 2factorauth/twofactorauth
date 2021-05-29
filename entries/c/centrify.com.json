@@ -1,0 +1,17 @@
+{
+  "Centrify": {
+    "domain": "centrify.com",
+    "url": "https://www.centrify.com",
+    "tfa": [
+      "call",
+      "totp",
+      "custom-software",
+      "custom-hardware",
+      "u2f"
+    ],
+    "documentation": "https://www.centrify.com/pam/authentication-service/mfa/",
+    "keywords": [
+      "identity"
+    ]
+  }
+}

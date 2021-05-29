@@ -1,0 +1,15 @@
+{
+  "Mimecast": {
+    "domain": "mimecast.com",
+    "url": "https://www.mimecast.com/",
+    "tfa": [
+      "sms",
+      "email",
+      "totp"
+    ],
+    "documentation": "https://community.mimecast.com/docs/DOC-1915",
+    "keywords": [
+      "email"
+    ]
+  }
+}

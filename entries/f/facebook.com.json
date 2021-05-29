@@ -1,0 +1,15 @@
+{
+  "Facebook": {
+    "domain": "facebook.com",
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://www.facebook.com/help/148233965247823",
+    "notes": "Hardware 2FA requires also enabling a back-up method",
+    "keywords": [
+      "social"
+    ]
+  }
+}

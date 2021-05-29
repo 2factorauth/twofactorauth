@@ -1,0 +1,15 @@
+{
+  "Amazon Pay": {
+    "domain": "pay.amazon.com",
+    "tfa": [
+      "sms",
+      "call",
+      "totp"
+    ],
+    "documentation": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G3PWZPU52FKN7PW4",
+    "notes": "SMS or phone call required to enable 2FA. Enabling on Amazon.com activates 2FA on other regional Amazon sites, such as UK and DE.",
+    "keywords": [
+      "payments"
+    ]
+  }
+}

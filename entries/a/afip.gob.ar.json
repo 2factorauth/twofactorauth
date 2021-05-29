@@ -1,0 +1,18 @@
+{
+  "AFIP": {
+    "domain": "afip.gob.ar",
+    "url": "https://www.afip.gob.ar",
+    "tfa": [
+      "custom-hardware",
+      "custom-software"
+    ],
+    "documentation": "https://serviciosweb.afip.gob.ar/genericos/GuiaDeTramites/VerGuia.aspx?tr=38",
+    "notes": "2FA is only available for users with security level (Clave Fiscal) 4",
+    "keywords": [
+      "government"
+    ],
+    "regions": [
+      "ar"
+    ]
+  }
+}

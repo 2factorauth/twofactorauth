@@ -1,0 +1,16 @@
+{
+  "Quickbooks Online": {
+    "domain": "quickbooks.intuit.com",
+    "tfa": [
+      "sms",
+      "call",
+      "totp",
+      "email"
+    ],
+    "documentation": "https://quickbooks.intuit.com/learn-support/en-us/manage-passwords/verify-your-account-with-multi-factor-authentication/00/186340",
+    "notes": "TOTP 2FA only available after enabling SMS or phone 2FA.",
+    "keywords": [
+      "finance"
+    ]
+  }
+}

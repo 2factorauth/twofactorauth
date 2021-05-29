@@ -1,0 +1,16 @@
+{
+  "join.me (w/ LogMeIn account)": {
+    "domain": "join.me",
+    "tfa": [
+      "sms",
+      "email",
+      "totp",
+      "custom-software"
+    ],
+    "documentation": "https://support.logmeininc.com/pro/help#logmein-t-login-policy-set-twofactor-ownaccount",
+    "notes": "SMS or email must be set up as a backup method",
+    "keywords": [
+      "remote"
+    ]
+  }
+}

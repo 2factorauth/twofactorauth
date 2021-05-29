@@ -1,0 +1,16 @@
+{
+  "Salesforce": {
+    "domain": "salesforce.com",
+    "url": "https://www.salesforce.com",
+    "tfa": [
+      "sms",
+      "email",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/add_time-based_token.htm",
+    "keywords": [
+      "communication"
+    ]
+  }
+}

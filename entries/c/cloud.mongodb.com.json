@@ -1,0 +1,14 @@
+{
+  "MongoDB Cloud Manager": {
+    "domain": "cloud.mongodb.com",
+    "tfa": [
+      "totp",
+      "email",
+      "custom-software"
+    ],
+    "documentation": "https://docs.cloudmanager.mongodb.com/core/multi-factor-authentication/",
+    "keywords": [
+      "developer"
+    ]
+  }
+}

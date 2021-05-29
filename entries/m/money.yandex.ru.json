@@ -1,0 +1,17 @@
+{
+  "Yandex.Money": {
+    "domain": "money.yandex.ru",
+    "tfa": [
+      "sms",
+      "totp",
+      "custom-hardware"
+    ],
+    "documentation": "https://money.yandex.ru/doc.xml?id=524852",
+    "keywords": [
+      "payments"
+    ],
+    "regions": [
+      "ru"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+/* Site name and logo */
+.logo {
+  height: 32px;
+  width: 32px;
+  margin-right: .8em;
+
+  &.no-border {
+    border-radius: 0 !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #212121;
+    /*background: linear-gradient(#222,#333) fixed;*/
+    color: #eee;
+  }
+
+
+  thead {
+    background-color: #262626 !important;
+    color: #eee;
+  }
+
+  thead > tr > th {
+    border-color: #424242 !important;
+  }
+
+  .table-success, .table-success > td {
+    background-color: #b1dfbb;
+  }
+
+  .table-danger, .table-danger > td {
+    background-color: #f1b0b7;
+    text-align: left;
+  }
+
+
+  a {
+    color: #3596ff;
+  }
+}
+
+td, th {
+  text-align: center;
+}
+
+thead {
+  background-color: #ffffff;
+}

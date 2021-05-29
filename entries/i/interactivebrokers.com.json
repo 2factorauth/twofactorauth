@@ -1,0 +1,16 @@
+{
+  "Interactive Brokers": {
+    "domain": "interactivebrokers.com",
+    "url": "https://www.interactivebrokers.com",
+    "tfa": [
+      "sms",
+      "custom-software",
+      "custom-hardware"
+    ],
+    "documentation": "https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log",
+    "notes": "SMS 2FA only works as long as no other method has been enabled.",
+    "keywords": [
+      "investing"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+@media screen and (min-width: 993px) {
+  .social-button-group {
+    display: inline-block;
+    margin-left: 0.5vw;
+  }
+}
+
+.social-button {
+  height: 100%;
+  width: 140px;
+  color: white;
+  margin: 0 6px;
+
+  .twitter-button {
+    background-color: #1DA1F2;
+  }
+
+  .facebook-button {
+    background-color: #3b5998;
+  }
+
+  .email-button {
+    background-color: #ea4235;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .social-button {
+    margin: .2em;
+    max-width: 50%;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Bill": {
+    "domain": "bill.com",
+    "url": "https://www.bill.com",
+    "tfa": [
+      "sms",
+      "call",
+      "totp"
+    ],
+    "documentation": "https://help.bill.com/hc/en-us/articles/360000023843",
+    "notes": "2FA via phone call is available for US and CA only.",
+    "keywords": [
+      "payments"
+    ]
+  }
+}
