@@ -24,10 +24,11 @@
             <div class="row no-gutters">
               <a class="site-name {% if website.notes %}exception-site{% endif %}" href="{% if website.url %}{{ website.url }}{% else %}https://{{ website.domain }}{% endif %}">
               <!-- Image -->
-              {% assign letter = website.domain | slice: 0 | downcase | append: "/" %}
               {% if website.img %}
+                {% assign letter = website.img | slice: 0 | downcase | append: "/" %}
                 {% assign image = website.img | prepend: letter %}
               {% else %}
+                {% assign letter = website.domain | slice: 0 | downcase | append: "/" %}
                 {% assign image = website.domain | append: ".svg" | prepend: letter %}
               {% endif %}
 
