@@ -11,4 +11,4 @@ Dir.glob('entries/*/*.json') do |file|
   name.each { |k, v| entries[k] = v }
 end
 
-puts JSON.generate(entries.sort)
+puts JSON.generate(entries.sort_by{ |k,v| k.downcase })
