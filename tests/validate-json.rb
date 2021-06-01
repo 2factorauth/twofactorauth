@@ -18,11 +18,13 @@ Dir.glob('entries/*/*.json') do |file|
   document = JSON.parse(File.read(file))
 
   unless schema.valid?(document)
-    puts ''
+
     schema.validate(document).each do |v|
-      puts "::error file=#{file}:: #{v['type']} error in in #{file}"
-      puts "- tag: #{v['data_pointer'].split('/').last}"
-      puts "  data: #{v['data']}"
+      puts ''
+      puts "::error file=#{file}::#{v['type'].capitalize} error in in #{file}"
+      puts "- tag: #{v['data_pointer'].split('/')[2]}" if v['data_pointer'].split('/').length >= 3
+      puts "  data: #{v['data']}" if v['details'].nil?
+      puts "  data: #{v['details']}" unless v['details'].nil?
       puts "  expected: #{v['schema']['pattern']}" if v['type'].eql?('pattern')
       puts "  expected: #{v['schema']['format']}" if v['type'].eql?('format')
     end
