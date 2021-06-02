@@ -18,7 +18,7 @@ begin
     raise("Image does not exist for #{website['domain']} \n#{path} cannot be found") unless File.exist?(path)
   end
 rescue StandardError => e
-  puts ":: error file=#{f}:: #{e.message}"
+  puts "::error file=#{f}:: #{e.message}"
   status = 1
 end
 
