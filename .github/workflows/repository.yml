@@ -26,6 +26,8 @@ jobs:
         run: bundle exec ruby ./tests/entry-tags.rb
       - name: Validate file extensions
         run:  tests/file-extensions.sh
+      - name: Validate Images
+        run: bundle exec ruby ./tests/validate-images.rb
 
   build:
     name: Minimal build
