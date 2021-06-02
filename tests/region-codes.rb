@@ -29,7 +29,7 @@ else
   File.open(@code_cache, 'w') { |file| file.write @codes.to_json }
 end
 
-@status = true
+status = 0
 
 begin
   Dir.glob('entries/*/*.json') do |file|
@@ -40,12 +40,12 @@ begin
       next if @codes.include?(region.to_s)
 
       puts "::error file=#{file}:: \"#{region}\" is not a real ISO 3166-2 code."
-      @status = false
+      status = 1
     end
   end
 rescue StandardError => e
   puts e.message
-  @status = false
+  status = 1
 end
 
-exit(@status)
+exit(status)

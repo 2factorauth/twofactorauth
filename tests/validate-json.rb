@@ -11,22 +11,24 @@ Dir.glob('entries/*/*.json') do |file|
     JSON.parse(File.read(file))
   rescue JSON::ParserError => e
     puts "::error file=#{file}:: Invalid JSON in #{file}\n#{e.full_message}"
-    status.next
+    status = 1
     next
   end
 
   document = JSON.parse(File.read(file))
 
   unless schema.valid?(document)
-    puts '================================='
-    puts 'Document not valid:'
+
     schema.validate(document).each do |v|
-      puts "- file: #{file}"
-      puts "  error : #{v['type']}"
-      puts "  data: #{v['data']}"
-      puts "  path: #{v['data_pointer']}"
+      puts ''
+      puts "::error file=#{file}::#{v['type'].capitalize} error in in #{file}"
+      puts "- tag: #{v['data_pointer'].split('/')[2]}" if v['data_pointer'].split('/').length >= 3
+      puts "  data: #{v['data']}" if v['details'].nil?
+      puts "  data: #{v['details']}" unless v['details'].nil?
+      puts "  expected: #{v['schema']['pattern']}" if v['type'].eql?('pattern')
+      puts "  expected: #{v['schema']['format']}" if v['type'].eql?('format')
     end
-    status.next
+    status = 1
   end
 end
 
