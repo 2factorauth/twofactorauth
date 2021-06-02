@@ -30,20 +30,14 @@ layout: default
       {% endif %}
     {% endfor %}
 
-    {% assign md = forloop.index | modulo: 6 %}
+    {% assign _offset = forloop.index | minus: 1 %}
+    {% assign md = _offset | modulo: 5 %}
 
     <!-- List previous 5 categories (desktop button) -->
-    {% if md == 0 or forloop.index == 1 %}
-      {% if md == 0 %}
-        {% assign _offset = forloop.index | minus: 1 %}
-      {% else %}
-        {% assign _offset = 0 %}
-      {% endif %}
-
+    {% if md == 0 %}
       {% for _keyword in keywords limit: 5 offset: _offset %}
         {% include html/category-button.html category-param=_keyword viewport="desktop" %}
       {% endfor %}
-
     {% endif %}
 
     <!-- Display mobile category button -->
