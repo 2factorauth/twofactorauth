@@ -15,7 +15,7 @@ begin
     else
       path += website['img'][0,1] + '/' + website['img']
     end
-    raise("Image does not exist for #{website['domain']}") unless File.exist?(path)
+    raise("Image does not exist for #{website['domain']} \n#{path} cannot be found") unless File.exist?(path)
   end
 rescue StandardError => e
   puts ":: error file=#{f}:: #{e.message}"
