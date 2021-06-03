@@ -4,8 +4,6 @@
 require 'json'
 status = 0
 
-accepted_extensions = %w[.png .svg]
-
 seen_sites = []
 
 Dir.glob('entries/*/*.json') do |file|
@@ -31,11 +29,6 @@ Dir.glob('img/*/*') do |file|
 
   unless seen_sites.include? "./#{file}"
     puts "::error file=#{file}:: Unused image at #{file}"
-    status = 1
-  end
-
-  unless accepted_extensions.include? File.extname(file)
-    puts "::error file=#{file}:: Invalid file extension for #{file}. Only #{accepted_extensions} are allowed"
     status = 1
   end
 end
