@@ -20,7 +20,7 @@
         <tr class="table-{% if website.tfa %}success{% else %}danger{% endif %}">
 
           <td>
-            <div class="searchWords" style="display: none;">{{ name }} {{ website.domain }}{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}</div>
+            <div class="searchWords" style="display: none;">{{ name }} {{ website.domain }}{% for item in website.tfa %} 2fa:{{ item }}{% endfor %} {% for domain in website.additional-domains %} {{ domain }} {% endfor %}</div>
             <div class="row no-gutters">
               <a class="site-name {% if website.notes %}exception-site{% endif %}" href="{% if website.url %}{{ website.url }}{% else %}https://{{ website.domain }}{% endif %}">
               <!-- Image -->
