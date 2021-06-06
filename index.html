@@ -15,7 +15,7 @@ layout: default
 </div>
 
 <!-- Categories list -->
-<div class="row justify-content-start category-row row-cols-1 row-cols-md-5">
+<div class="row justify-content-start category-row row-cols-1 row-cols-lg-5">
   {% assign keywordsMain = site.data.categories | sort: "title" | where_exp: "item", "item.name != 'other'" %}
   {% assign keywordsOther = site.data.categories | where_exp: "item", "item.name == 'other'" %}
   {% assign keywords = keywordsMain | concat: keywordsOther %}
