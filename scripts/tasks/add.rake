@@ -76,7 +76,7 @@ namespace :add do
     issue_nums = value_prompt('issue numbers (separated by commas)')
     commit_msg = ''
     issue_nums.split(',').each do |num|
-      commit_msg += ' closes #' + num if add_from_github(num)
+      commit_msg += " closes ##{num}" if add_from_github(num)
     end
     puts "Be sure to mention the following when you commit: #{commit_msg}"
   end
@@ -84,9 +84,7 @@ namespace :add do
   def add_and_sort(list, new_entry, identifier)
     list[list.count] = new_entry
     puts "Entry count now #{list.count}"
-    sorted = list.sort_by { |s| s[identifier].downcase }
-
-    sorted
+    list.sort_by { |s| s[identifier].downcase }
   end
 
   def prompt_category
@@ -101,7 +99,7 @@ namespace :add do
   end
 
   # rubocop:disable Style/Semicolon
-  def yesno(prompt = 'Continue?', default = true, details = nil)
+  def yesno(prompt: 'Continue?', default: true, details: nil)
     a = ''
     s = default ? '[Y/n]' : '[y/N]'
     d = default ? 'y' : 'n'
@@ -213,7 +211,7 @@ namespace :add do
     output = nil
     puts '--------------------------------'
     req = (rule['required'] || false)
-    if req || yesno("Include #{column} tag?", false, (rule['desc'] || nil))
+    if req || yesno(prompt: "Include #{column} tag?", default: false, details: (rule['desc'] || nil))
       rule_type = (rule['type'] || 'str')
       case rule_type
 
@@ -244,7 +242,7 @@ namespace :add do
         output = map unless map.empty?
 
       when 'bool'
-        output = yesno("#{column} value?", rule['default'])
+        output = yesno(prompt: "#{column} value?", default: rule['default'])
 
       else
         output = value_prompt(column)
@@ -267,9 +265,7 @@ namespace :add do
   def validate_revision(data)
     schema = SafeYAML.load_file(File.join(base_dir, 'websites_schema.yml'))
     validator = Kwalify::Validator.new(schema)
-    errors = validator.validate(data)
-
-    errors
+    validator.validate(data)
   end
 
   def valid_revision(data)
@@ -288,8 +284,8 @@ namespace :add do
   end
 
   def value_prompt(text)
-    STDOUT.puts "What is the #{text}?"
-    STDIN.gets.chomp
+    $stdout.puts "What is the #{text}?"
+    $stdin.gets.chomp
   end
 
   def extract_issue_yml(issue_data)
@@ -308,8 +304,7 @@ namespace :add do
       end
     end
 
-    data = data.gsub(/[\r\n]+/m, "\n")
-    data
+    data.gsub(/[\r\n]+/m, "\n")
   end
 end
 # rubocop:enable Metrics/MethodLength, Metrics/BlockLength
