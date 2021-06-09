@@ -250,6 +250,76 @@ government site - you can note this with the `regions` field.
 
 The country codes should be lowercase [ISO 3166-1][iso-country-wikipedia] codes.
 
+### Other Properties
+
+- `additional-domains`
+  If a site exists at another domain in addition to the main domain that is listed in the
+  `domain` field, you can mark this with the `additional-domains` property.
+
+```JSON
+{
+  "Site Name": {
+    "domain": "site.com",
+    "additional-domains": [
+      "site.net",
+      "site.io"
+    ],
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "<link to site TFA documentation>",
+    "keywords": [
+      "keyword"
+    ]
+  }
+}
+```
+
+- `recovery`
+  The recovery field can be used to link to acccount recovery documentation about what to do
+  if you lose access to your 2FA method.
+
+```JSON
+{
+  "Site Name": {
+    "domain": "site.com",
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "<link to site TFA documentation>",
+    "recovery": "<link to site TFA recovery documentation>",
+    "keywords": [
+      "keyword"
+    ]
+  }
+}
+```
+- `custom-software`/`custom-hardware`
+  If a site uses a proprietary software or hardware method, you can add specific details of what
+  is being used. Examples would be Authy or non-U2F security keys.
+
+```JSON
+{
+  "Site Name": {
+    "domain": "site.com",
+    "tfa": [
+      "custom-software",
+      "custom-hardware"
+    ],
+    "custom-software": [
+      "Authy"
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "documentation": "<link to site TFA documentation>",
+    "keywords": [
+      "keyword"
+    ]
+  }
+}
+```
+
 ### Pro Tips
 
 - See Guideline #2 about icons. The SVG file should go in the corresponding
