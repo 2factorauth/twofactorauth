@@ -44,15 +44,9 @@ everything for you.
 
 #### Testing with Bundler
 
-To verify that your additions are fine, you can run the entire set of tests
-locally which will check all links and images with:
-
-```bash
-$ bundle exec rake
-```
-
-However, this can take a while as there are over 1000 links that it checks.
-If you just wish to test your JSON changes, you can run:
+There are a number of tests that are run automatically for a GitHub pull request.
+They are listed in `.github/workflows/repository.yml` in the `tests:` block.
+You can run these manually as well, e.g to test your JSON changes:
 
 ```bash
 $ bundle exec ruby ./tests/validate-json.rb
