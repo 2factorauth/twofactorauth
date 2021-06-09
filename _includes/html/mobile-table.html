@@ -22,7 +22,7 @@
             {% assign image = website.domain | append: ".svg" | prepend: letter %}
           {% endif %}
 
-          <img class="logo" loading="lazy" data-src="/img/{{ image }}" alt="">
+          <img class="logo" loading="lazy" src="/img/{{ image }}" alt="">
 
           {{ name }}</a>
           {% if website.notes %}
