@@ -1,0 +1,13 @@
+{
+  "Plaid": {
+    "domain": "plaid.com",
+    "tfa": [
+      "totp",
+      "sms"
+    ],
+    "documentation": "https://plaid.com/docs/account/security/#two-factor-authentication",
+    "keywords": [
+      "payments"
+    ]
+  }
+}
