@@ -4,8 +4,19 @@
     "tfa": [
       "totp",
       "custom-hardware",
-      "custom-software",
-      "u2f"
+      "custom-software"
+    ],
+    "custom-hardware": [
+      "Yubico OTP",
+      "Windows Fingerprint",
+      "Smart Card"
+    ],
+    "custom-software": [
+      "LastPass Authenticator",
+      "Duo",
+      "RSA SecurID",
+      "Symantec VIP",
+      "SecureAuth Authenticate"
     ],
     "documentation": "https://support.logmeininc.com/lastpass/help/enable-multifactor-authentication-lp010002",
     "notes": "Availability of 2FA options depends on your account type.",
