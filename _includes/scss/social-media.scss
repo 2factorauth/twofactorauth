@@ -29,4 +29,7 @@
     margin: .2em;
     max-width: 50%;
   }
+  .social-button:first-child:nth-last-child(1){
+    margin-left: 0 !important;
+  }
 }
