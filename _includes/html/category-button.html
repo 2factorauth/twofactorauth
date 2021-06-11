@@ -1,6 +1,6 @@
-{% assign name = include.category-param[0] %}
-{% assign title = include.category-param[1].title %}
-{% assign icon = include.category-param[1].icon %}
+{% assign name = include.category-param.name %}
+{% assign title = include.category-param.title %}
+{% assign icon = include.category-param.icon %}
 
 <div class="col align-self-start {{ include.viewport }}-only">
   <div class="cat btn cat-icon-inner" data-toggle="collapse" data-target="#{{ name }}-table" aria-expanded="false" aria-controls="{{ name }}-table" id="{{ name }}">

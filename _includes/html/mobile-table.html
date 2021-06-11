@@ -1,7 +1,7 @@
 {% assign entries = include.entries %}
 
-<div class="collapse category-table mobile-only searchContainer" id="{{ include.category[0] }}-table">
-<h2 class="search-table-title">{{ include.category[1].title }}</h2>
+<div class="collapse category-table mobile-only searchContainer" id="{{ include.category.name }}-table">
+<h2 class="search-table-title">{{ include.category.title }}</h2>
   {% for _website in entries %}
     {% assign name = _website[0] %}
     {% assign website = _website[1] %}
