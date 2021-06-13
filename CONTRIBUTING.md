@@ -90,15 +90,16 @@ To add a new category, modify the [categories file][categories] and follow the
 template below:
 
 ```JSON
-  "category-id": {
-    "title": "Category Name",
+  {
+    "name" : "category-id",
+    "title": "Category Title",
     "icon": "icon-class"
   },
 ```
 
 The `icon-class` value needs to be chosen from [Font Awesome][font-awesome].
 
-The you can use the `category-id` as a keyword in the JSON file of your entry.
+Then you can use the `category-id` as a keyword in the JSON file of your entry.
 
 ## New Sites
 
