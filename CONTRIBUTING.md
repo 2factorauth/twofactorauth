@@ -356,7 +356,7 @@ For context, check out the discussion in issue [#242][242].
 [bundler]: https://bundler.io/
 [gemfile]: /Gemfile
 [exclude]: /EXCLUSION.md
-[categories]: _data/categories.yml
+[categories]: _data/categories.json
 [font-awesome]: https://fontawesome.com/icons?d=gallery&p=2&m=free
 [definitions]: #a-note-on-definitions
 [github-tutorial]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
