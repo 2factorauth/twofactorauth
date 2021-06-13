@@ -1,11 +1,12 @@
 # Contributing to 2fa.directory
 
-All the data is managed through a series of [Yaml][yaml] files so it may be
-useful to read up on the Yaml syntax.
+All the data is managed through a series of [JSON][json] files so it may be
+useful to read up on the JSON syntax.
 
-To add a new site, go to the [data files][data] and get familiar with how it
-is set up. There is a section and corresponding file for each category. Site icons
-are stored in folders corresponding to each of those categories in their own
+To add a new site, go to the [data files][entries] and get familiar with how it
+is set up. There is one file per entry named after the domain, located in the
+subdirectory starting with the first letter of the domain. Site icons
+are stored in folders corresponding to each of those entries in their own
 [folder][img].
 
 ## Guidelines
@@ -24,7 +25,8 @@ are stored in folders corresponding to each of those categories in their own
    HTTPS address.
 4. **Alexa top 200K**: A new site that is not already listed has to be within the
    Alexa top 200,000 ranking. You can check the ranking of a site [here][alexa].
-5. **No 2FA providers**: We do not list 2FA providers, such as [Authy][authy], [Duo][duo] or [Google Authenticator][googleauthenticator].
+5. **No 2FA providers**: We do not list 2FA providers, such as [Authy][authy], [Duo][duo] or
+   [Google Authenticator][googleauthenticator].
 6. **Be Awesome**: You need to be awesome. That is all.
 
 ## Running Locally
@@ -42,18 +44,12 @@ everything for you.
 
 #### Testing with Bundler
 
-To verify that your additions are fine, you can run the entire set of tests
-locally which will check all links and images with:
+There are a number of tests that are run automatically for a GitHub pull request.
+They are listed in `.github/workflows/repository.yml` in the `tests:` block.
+You can run these manually as well, e.g to test your JSON changes:
 
 ```bash
-$ bundle exec rake
-```
-
-However, this can take a while as there are over 1000 links that it checks.
-If you just wish to test your YAML changes, you can run:
-
-```bash
-$ bundle exec rake verify
+$ bundle exec ruby ./tests/validate-json.rb
 ```
 
 ### Using Vanilla Jekyll
@@ -90,19 +86,20 @@ View the complete list in the [EXCLUSION.md file][exclude].
 
 ## New Categories
 
-To add a new category, modify the `sections` value in [sections.yml][sections]
-and follow the template below:
+To add a new category, modify the [categories file][categories] and follow the
+template below:
 
-```YAML
-- id: category-id
-  title: Category Name
-  icon: icon-class
+```JSON
+  {
+    "name" : "category-id",
+    "title": "Category Title",
+    "icon": "icon-class"
+  },
 ```
 
 The `icon-class` value needs to be chosen from [Font Awesome][font-awesome].
 
-Then create a new file in the `_data` directory with the same name as your section's
-id, using the `.yml` extension.
+Then you can use the `category-id` as a keyword in the JSON file of your entry.
 
 ## New Sites
 
@@ -115,48 +112,63 @@ More information regarding how to create new git branches can be found on
 [GitHub's Help Page][github-tutorial]
 or [DigitalOcean's Tutorial][do-tutorial].
 
-Adding a new website should be pretty straight-forward. The `websites` array should
-already be defined; simply add a new website to it as shown in the following example:
+Adding a new website should be pretty straight-forward. Create a JSON file in
+the corresponding [subdirectory][entries] as shown in the following example:
 
-```YAML
-websites:
-  - name: Site Name
-    url: https://www.site.com/
-    img: site.svg
-    tfa:
-      - sms
-      - email
-      - phone
-      - hardware
-      - proprietary (Software based 2FA that requires a special app to use)
-      - totp (Normal software 2FA)
-      - u2f
-    doc: <link to site TFA documentation>
+```JSON
+{
+  "Site Name": {
+    "domain": "site.com",
+    "url": "https://www.site.com",
+    "img": "site.com.png",
+    "tfa": [
+      "sms",
+      "call",
+      "email",
+      "totp",
+      "u2f",
+      "custom-software",
+      "custom-hardware"
+    ],
+    "documentation": "<link to site TFA documentation>",
+    "keywords": [
+      "keyword1",
+      "keyword2"
+    ]
+  }
+}
 ```
 
-The fields `name`, `url`, `img`, `tfa` are required for all entries.
+The `url` field is optional if the value is `https://` followed by the `domain`.
+The default value for the icon is `<domain>.svg`, but can be overridden by an `img`
+field.
 
 #### Adding a site that _supports_ TFA
 
 If a site does provide TFA, it is strongly recommended that you add the `doc`
 field where public documentation is available. Other fields should be included
 if the website supports them. Any services that are not supported can be excluded.
-Sites supporting TFA must not have a `twitter`, `facebook` or `email_address` field.
+Sites supporting TFA must not have a `contact` property.
 
 The following is an example of a website that _supports_ TFA:
 
-```YAML
-  - name: YouTube
-    url: https://www.youtube.com/
-    img: youtube.svg
-    tfa:
-      - sms
-      - email
-      - phone
-      - hardware
-      - totp
-      - u2f
-    doc: https://www.google.com/intl/en-US/landing/2step/features.html
+```JSON
+{
+  "YouTube": {
+    "domain": "youtube.com",
+    "tfa": [
+      "sms",
+      "call",
+      "totp",
+      "custom-software",
+      "u2f"
+    ],
+    "documentation": "https://www.google.com/intl/en-US/landing/2step/features.html",
+    "keywords": [
+      "entertainment"
+    ]
+  }
+}
 ```
 
 #### Adding a site that _does not_ support TFA
@@ -168,61 +180,152 @@ field should also be included. The fields `tfa` and `doc` can be completely remo
 
 The following is an example of a website that _does not_ support TFA:
 
-```YAML
-    - name: Netflix
-      url: https://www.netflix.com/us/
-      twitter: Netflixhelps
-      facebook: netflix
-      email_address: example@netflix.com (Only if available and monitored)
-      img: netflix.svg
-      lang: <ISO 639-1 language code> (Only for non-English websites)
+```JSON
+{
+  "Netflix": {
+    "domain": "netflix.com",
+    "url": "https://www.netflix.com/us/",
+    "contact": {
+      "facebook": "netflix",
+      "twitter": "Netflixhelps"
+    },
+    "keywords": [
+      "entertainment"
+    ]
+  }
+}
 ```
 
-The `lang` field is only used for non-English websites. The language codes should be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
+The `language` field inside `contact` can be included for non-English websites. The language
+codes should be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
 
 ### Exceptions & Restrictions
 
-If a site requires the user to do something out of the ordinary to set up 2FA or if 2FA is only available in specific countries, you can note this on the
-website.
+If a site requires the user to do something out of the ordinary to set up 2FA or if 2FA is
+only available in specific countries, you can note this on the website.
 
-```YAML
- - name: Site Name
-   url: https://www.site.com/
-   img: site.svg
-   tfa:
-     - sms
-   exception: "Specific text goes here."
-   doc: <link to site TFA documentation>
+```JSON
+{
+  "Site Name": {
+    "domain": "site.com",
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "<link to site TFA documentation>",
+    "notes": "Specific text goes here.",
+    "keywords": [
+      "keyword"
+    ]
+  }
+}
 ```
 
 ### Adding a site that is only available in specific regions
 
-If a site (with or without 2FA) is only available in certain countries - for example a government site - you can note this with the `regions` field.
+If a site (with or without 2FA) is only available in certain countries - for example a
+government site - you can note this with the `regions` field.
 
-```YAML
- - name: Site Name
-   url: https://www.site.com/
-   img: site.svg
-   tfa:
-     - totp
-   doc: <link to site TFA documentation>
-   regions:
-     - <ISO 3166-1 country code>
+```JSON
+{
+  "Site Name": {
+    "domain": "site.com",
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "<link to site TFA documentation>",
+    "keywords": [
+      "keyword"
+    ],
+    "regions": [
+      "us",
+      "ca"
+    ]
+  }
+}
 ```
 
 The country codes should be lowercase [ISO 3166-1][iso-country-wikipedia] codes.
 
+### Other Properties
+
+- `additional-domains`
+  If a site exists at another domain in addition to the main domain that is listed in the
+  `domain` field, you can mark this with the `additional-domains` property.
+
+```JSON
+{
+  "Site Name": {
+    "domain": "site.com",
+    "additional-domains": [
+      "site.net",
+      "site.io"
+    ],
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "<link to site TFA documentation>",
+    "keywords": [
+      "keyword"
+    ]
+  }
+}
+```
+
+- `recovery`
+  The recovery field can be used to link to acccount recovery documentation about what to do
+  if you lose access to your 2FA method.
+
+```JSON
+{
+  "Site Name": {
+    "domain": "site.com",
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "<link to site TFA documentation>",
+    "recovery": "<link to site TFA recovery documentation>",
+    "keywords": [
+      "keyword"
+    ]
+  }
+}
+```
+- `custom-software`/`custom-hardware`
+  If a site uses a proprietary software or hardware method, you can add specific details of what
+  is being used. Examples would be Authy or non-U2F security keys.
+
+```JSON
+{
+  "Site Name": {
+    "domain": "site.com",
+    "tfa": [
+      "custom-software",
+      "custom-hardware"
+    ],
+    "custom-software": [
+      "Authy"
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "documentation": "<link to site TFA documentation>",
+    "keywords": [
+      "keyword"
+    ]
+  }
+}
+```
+
 ### Pro Tips
 
 - See Guideline #2 about icons. The SVG file should go in the corresponding
-  `img/section` folder.
+  `img/` folder.
 
-- For the sake of organization and readability, it is appreciated if you insert
-  new sites alphabetically and that your site chunk follows the same order as the
-  example above.
+- For the sake of organization and readability, it is appreciated if your site chunk
+  follows the same order as the example above.
 
-- If a site supports TFA, their Twitter and Facebook handles as well as their email address
-  are not needed and can be left out for cleanliness.
+- If a site supports TFA, their contact information is not needed and can be left out
+  for cleanliness.
 
 ## A Note on Definitions
 
@@ -240,8 +343,8 @@ sensitive action would not be considered Two Factor Authentication.
 
 For context, check out the discussion in issue [#242][242].
 
-[yaml]: https://yaml.org/
-[data]: _data/
+[json]: https://www.json.org/
+[entries]: entries/
 [img]: img/
 [svgo]: https://github.com/svg/svgo
 [tinypng]: https://tinypng.com/
@@ -253,7 +356,7 @@ For context, check out the discussion in issue [#242][242].
 [bundler]: https://bundler.io/
 [gemfile]: /Gemfile
 [exclude]: /EXCLUSION.md
-[sections]: _data/sections.yml
+[categories]: _data/categories.json
 [font-awesome]: https://fontawesome.com/icons?d=gallery&p=2&m=free
 [definitions]: #a-note-on-definitions
 [github-tutorial]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
