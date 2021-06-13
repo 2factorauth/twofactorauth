@@ -4,7 +4,8 @@
     "tfa": [
       "totp",
       "custom-hardware",
-      "custom-software"
+      "custom-software",
+      "u2f"
     ],
     "custom-hardware": [
       "Yubico OTP",
@@ -20,7 +21,7 @@
     ],
     "documentation": "https://support.logmeininc.com/lastpass/help/enable-multifactor-authentication-lp010002",
     "recovery": "https://support.logmeininc.com/lastpass/help/i-lost-my-phone-ndash-how-do-i-disable-multifactor-authentication-for-lastpass",
-    "notes": "Availability of 2FA options depends on your account type.",
+    "notes": "Availability of 2FA options depends on your account type. U2F hardware tokens are only available through Duo.",
     "keywords": [
       "identity"
     ]
