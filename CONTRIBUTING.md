@@ -153,6 +153,7 @@ Sites supporting TFA must not have a `contact` property.
 The following is an example of a website that _supports_ TFA:
 
 ```JSON
+{
   "YouTube": {
     "domain": "youtube.com",
     "tfa": [
