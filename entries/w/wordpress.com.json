@@ -3,7 +3,10 @@
     "domain": "wordpress.com",
     "tfa": [
       "sms",
-      "totp"
+      "totp",
+       "custom-hardware": [
+      "WebAuthn"
+    ],
     ],
     "documentation": "https://en.support.wordpress.com/security/two-step-authentication/",
     "notes": "SMS required for 2FA.",
