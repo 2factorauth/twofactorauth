@@ -4,9 +4,7 @@
     "tfa": [
       "sms",
       "totp",
-       "custom-hardware": [
-      "WebAuthn" ]
-   
+      "custom-software"
     ],
     "documentation": "https://en.support.wordpress.com/security/two-step-authentication/",
     "notes": "SMS required for 2FA.",
