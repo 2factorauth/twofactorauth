@@ -1,12 +1,9 @@
 {
   "Newgrounds": {
     "domain": "newgrounds.com",
-    "url": "https://www.newgrounds.com/",
-    "contact": {
-      "email": "support@newgrounds.com",
-      "facebook": "newgrounds",
-      "twitter": "Newgrounds"
-    },
+    "tfa": [
+      "totp"
+    ],
     "keywords": [
       "social"
     ]
