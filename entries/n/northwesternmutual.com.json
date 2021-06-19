@@ -1,10 +1,12 @@
 {
   "Northwestern Mutual": {
     "domain": "northwesternmutual.com",
-    "url": "https://www.northwesternmutual.com/",
-    "contact": {
-      "facebook": "northwesternmutual"
-    },
+    "tfa": [
+      "totp",
+      "call",
+      "sms"
+    ],
+    "documentation": "https://www.northwesternmutual.com/security-and-privacy/",
     "keywords": [
       "finance"
     ]
