@@ -11,7 +11,7 @@ def fetch_from_api(site)
   url = URI("https://awis.api.alexa.com/api?Action=UrlInfo&ResponseGroup=Rank&Output=json&Url=#{site}")
   http = Net::HTTP.new(url.host, url.port)
   http.use_ssl = true
-  headers = { 'x-api-key' => ENV['ALEXA_API_KEY'], 'Accept' => 'application/json' }
+  headers = { 'x-api-key' => ENV['alexa_access_key'], 'Accept' => 'application/json' }
   response = http.request(Net::HTTP::Get.new(url, headers))
   raise("(#{response.code}) Request failed.") unless response.code == '200'
 
