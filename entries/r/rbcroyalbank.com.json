@@ -1,11 +1,10 @@
 {
   "RBC Royal Bank": {
     "domain": "rbcroyalbank.com",
-    "url": "https://www.rbcroyalbank.com",
-    "img": "rbc.svg",
-    "contact": {
-      "facebook": "rbc"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://www.rbcroyalbank.com/caribbean/digital-hub/security-two-factor.html",
     "keywords": [
       "banking"
     ]
