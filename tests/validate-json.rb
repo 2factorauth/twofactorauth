@@ -30,12 +30,12 @@ Dir.glob('entries/*/*.json') do |file|
     end
     status = 1
   end
-  
+
   file_name = file.split('/')[2]
   expected_file_name = document.values[0]['domain'] + '.json'
 
   unless file_name.eql? expected_file_name
-    puts "::error file=#{file}:: File name should be the same as the domain name.
+    puts "::error file=#{file}::File name should be the same as the domain name.
     Received: #{file_name}. Expected: #{expected_file_name}"
     status = 1
   end
