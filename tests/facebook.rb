@@ -6,7 +6,7 @@ require 'uri'
 
 status = 0
 # rubocop:disable Layout/LineLength
-diff = `git diff upstream/master...HEAD entries/ | grep "^+[[:space:]]*\\"facebook\\":" | sed -e 's/ //g;s/"//g;s/+facebook://g'`
+diff = `git diff origin/master...HEAD entries/ | grep "^+[[:space:]]*\\"facebook\\":" | sed -n 's/.*"facebook"[^"]*"\\(.*\\)".*/\\1/p'`
 # rubocop:enable Layout/LineLength
 diff.gsub("\n", '').gsub(',', '').split('"').each do |page|
   url = URI("https://www.facebook.com/pg/#{page}")

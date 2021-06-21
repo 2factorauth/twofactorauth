@@ -12,7 +12,7 @@ end
 
 status = 0
 # rubocop:disable Layout/LineLength
-diff = `git diff origin/master...HEAD entries/ | grep "^+[[:space:]]*\\"twitter\\":" | sed -e 's/ //g;s/"//g;s/+twitter:// g'`
+diff = `git diff origin/master...HEAD entries/ | grep "^+[[:space:]]*\\"twitter\\":" | sed -n 's/.*"twitter"[^"]*"\\(.*\\)".*/\\1/p'`
 # rubocop:enable Layout/LineLength
 diff.gsub("\n", '').split('"').each do |handle|
   begin
