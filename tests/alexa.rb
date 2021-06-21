@@ -41,7 +41,9 @@ end
 
 status = 0
 # Fetch changes
-diff = `git diff origin/master...HEAD entries/ | grep "^+[[:space:]]*\\"domain\\":" | cut -c17-`
+# rubocop:disable Layout/LineLength
+diff = `git diff origin/master...HEAD entries/ | grep "^+[[:space:]]*\\"domain\\":" | sed -e 's/ //g;s/"//g;s/+domain://g'`
+# rubocop:enable Layout/LineLength
 # Strip and loop through diff
 diff.gsub("\n", '').split('",').each do |site|
   begin

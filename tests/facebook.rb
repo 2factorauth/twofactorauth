@@ -5,7 +5,9 @@ require 'net/http'
 require 'uri'
 
 status = 0
-diff = `git diff origin/master...HEAD entries/ | grep "^+[[:space:]]*\\"facebook\\":" | cut -c21-`
+# rubocop:disable Layout/LineLength
+diff = `git diff upstream/master...HEAD entries/ | grep "^+[[:space:]]*\\"facebook\\":" | sed -e 's/ //g;s/"//g;s/+facebook://g'`
+# rubocop:enable Layout/LineLength
 diff.gsub("\n", '').gsub(',', '').split('"').each do |page|
   url = URI("https://www.facebook.com/pg/#{page}")
   http = Net::HTTP.new(url.host, url.port)
@@ -16,6 +18,8 @@ diff.gsub("\n", '').gsub(',', '').split('"').each do |page|
 
     fb_page = response.header['location'].split('/').last
     raise("\"#{page}\" should be \"#{fb_page}\".") unless fb_page.eql? page
+
+    puts("#{page} is valid.")
   rescue StandardError => e
     puts "\e[31m#{e.message}\e[39m"
     status = 1
