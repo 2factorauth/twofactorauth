@@ -1,7 +1,7 @@
 ---
 name: 🔒 Add site with 2FA
 about: Request that a site that supports 2FA be added.
-title: Add [site name]
+title: Add [WebOké]
 labels: add site
 assignees: ''
 
