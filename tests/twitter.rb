@@ -11,12 +11,14 @@ client = Twitter::REST::Client.new do |config|
 end
 
 status = 0
-diff = `git diff origin/master...HEAD entries/ | ed -n 's/^+.*"twitter"[^"]*"\\(.*\\)".*/\\1/p'`
+diff = `git diff origin/master...HEAD entries/ | sed -n 's/^+.*"twitter"[^"]*"\\(.*\\)".*/\\1/p'`
 diff.split('\n').each do |handle|
   begin
     begin
       name = client.user(handle).screen_name
       raise("Twitter handle \"#{handle}\" should be \"#{name}\".") unless handle.eql? name
+
+      puts("#{name} is valid")
     rescue Twitter::Error => e
       raise('Twitter API keys not found or invalid.') if e.instance_of? Twitter::Error::BadRequest
       raise('Too many requests to Twitter.') if e.instance_of? Twitter::Error::TooManyRequests
