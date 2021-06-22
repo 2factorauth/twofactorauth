@@ -5,10 +5,8 @@ require 'net/http'
 require 'uri'
 
 status = 0
-# rubocop:disable Layout/LineLength
-diff = `git diff origin/master...HEAD entries/ | grep "^+[[:space:]]*\\"facebook\\":" | sed -n 's/.*"facebook"[^"]*"\\(.*\\)".*/\\1/p'`
-# rubocop:enable Layout/LineLength
-diff.gsub("\n", '').gsub(',', '').split('"').each do |page|
+diff = `git diff origin/master...HEAD entries/ | sed -n 's/^+.*"facebook"[^"]*"\\(.*\\)".*/\\1/p'`
+diff.split('\n').each do |page|
   url = URI("https://www.facebook.com/pg/#{page}")
   http = Net::HTTP.new(url.host, url.port)
   http.use_ssl = true
