@@ -62,7 +62,8 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
 ```JSON
 [
   [
-    "Site Name": {
+    "Site Name",
+    {
       "domain": "example.com",
       "additional-domains": [
         "example.net"
@@ -95,7 +96,8 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
 ```JSON
 [
   [
-    "Site Name": {
+    "Site Name", 
+    {
       "domain": "example.com",
       "contact": {
         "twitter": "example",
