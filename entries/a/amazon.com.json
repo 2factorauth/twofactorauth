@@ -1,7 +1,26 @@
 {
   "Amazon": {
     "domain": "amazon.com",
-    "url": "https://www.amazon.com",
+    "additional-domains": [
+      "amazon.ae",
+      "amazon.ca",
+      "amazon.cn",
+      "amazon.co.jp",
+      "amazon.co.uk",
+      "amazon.com.au",
+      "amazon.com.br",
+      "amazon.com.mx",
+      "amazon.com.tr",
+      "amazon.de",
+      "amazon.es",
+      "amazon.fr",
+      "amazon.in",
+      "amazon.it",
+      "amazon.nl",
+      "amazon.sa",
+      "amazon.se",
+      "amazon.sg"
+    ],
     "tfa": [
       "sms",
       "call",

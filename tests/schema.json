@@ -34,7 +34,8 @@
         },
         "documentation": {
           "type": "string",
-          "format": "uri"
+          "format": "uri-reference",
+          "pattern": "^(https:|http:|\/notes\/)"
         },
         "recovery": {
           "type": "string",

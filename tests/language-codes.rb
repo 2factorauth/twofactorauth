@@ -15,7 +15,7 @@ else
   url = URI(@list_url)
   headers = {
     'Accept' => 'application/json',
-    'User-Agent' => '2fa-ng (https://github.com/phallobst/2fa-ng.git)'
+    'User-Agent' => 'twofactorauth (https://github.com/2factorauth/twofactorauth.git)'
   }
   https = Net::HTTP.new(url.host, url.port)
   https.use_ssl = true

@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require 'json'
+status = 0
 begin
   f = nil
   Dir.glob('entries/*/*.json') do |file|
@@ -15,4 +16,7 @@ begin
   end
 rescue StandardError => e
   puts ":: error file=#{f}:: #{e.message}"
+  status = 1
 end
+
+exit(status)

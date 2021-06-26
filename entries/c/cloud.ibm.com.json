@@ -2,11 +2,15 @@
   "IBM Cloud": {
     "domain": "cloud.ibm.com",
     "tfa": [
-      "sms",
-      "call",
-      "totp"
+      "email",
+      "u2f",
+      "totp",
+      "custom-software"
     ],
-    "documentation": "https://cloud.ibm.com/docs/iam?topic=iam-types",
+    "custom-software": [
+      "Symantec VIP"
+    ],
+    "documentation": "https://cloud.ibm.com/docs/account?topic=account-enablemfa",
     "keywords": [
       "cloud"
     ]

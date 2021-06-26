@@ -41,14 +41,14 @@ end
 
 status = 0
 # Fetch changes
-diff = `git diff origin/master...HEAD entries/ | grep "^+[[:space:]]*\\"domain\\":" | cut -c17-`
+diff = `git diff origin/master...HEAD entries/ | sed -n 's/^+.*"domain"[^"]*"\\(.*\\)".*/\\1/p'`
 # Strip and loop through diff
-diff.gsub("\n", '').split('",').each do |site|
+diff.split("\n").each do |site|
   begin
     fetch_from_api(site) unless fetch_from_cache(site)
   rescue StandardError => e
     puts "\e[31m#{e.message}\e[39m"
-    status = status.next
+    status = 1
   end
 end
 exit(status)

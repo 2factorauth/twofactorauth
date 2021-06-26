@@ -38,7 +38,7 @@ $('.cat').click(function () {
 function showCategory(category) {
   $(`#${category}-table`).collapse("show");
   $(`#${category}-mobile-table`).collapse("show");
-  $(`#${category}`).addClass('active');
+  $(`[id=${category}]`).addClass('active');
 }
 
 let resizeObserver = new ResizeObserver(() => {

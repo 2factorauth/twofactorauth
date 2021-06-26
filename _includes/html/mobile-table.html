@@ -1,27 +1,28 @@
 {% assign entries = include.entries %}
 
-<div class="collapse category-table mobile-only searchContainer" id="{{ include.category[0] }}-table">
-<h2 class="search-table-title">{{ include.category[1].title }}</h2>
+<div class="collapse category-table mobile-only searchContainer" id="{{ include.category.name }}-table">
+<h2 class="search-table-title">{{ include.category.title }}</h2>
   {% for _website in entries %}
     {% assign name = _website[0] %}
     {% assign website = _website[1] %}
 
     <div class="col-11 {% if website.tfa %}table-success{%else%}table-danger{%endif%}">
 
-      <div class="searchWords" style="display: none;">{{ name }} {{ website.domain }}{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}</div>
+      <div class="searchWords" style="display: none;">{{ name }} {{ website.domain }}{% for item in website.tfa %} 2fa:{{ item }}{% endfor %} {% for domain in website.additional-domains %} {{ domain }} {% endfor %}</div>
       <!-- Title -->
       <div class="site-title">
         <a class="site-name" href="{% if website.url %}{{ website.url }}{% else %}https://{{ website.domain }}{% endif %}">
 
           <!-- Image -->
-          {% assign letter = website.domain | slice: 0 | downcase | append: "/" %}
           {% if website.img %}
-          {% assign image = website.img | prepend: letter %}
+            {% assign letter = website.img | slice: 0 | downcase | append: "/" %}
+            {% assign image = website.img | prepend: letter %}
           {% else %}
-          {% assign image = website.domain | append: ".svg" | prepend: letter %}
+            {% assign letter = website.domain | slice: 0 | downcase | append: "/" %}
+            {% assign image = website.domain | append: ".svg" | prepend: letter %}
           {% endif %}
 
-          <img class="logo" loading="lazy" data-src="/img/{{ image }}" alt="">
+          <img class="logo" loading="lazy" src="/img/{{ image }}" alt="">
 
           {{ name }}</a>
           {% if website.notes %}
@@ -60,7 +61,7 @@
 
           {% if website.contact.twitter %}
 
-            <div class="col ml-md-auto twitter-button social-button btn" title="Tweet them!" data-twitter="{{ website.contact.twitter }}" data-lang="{{ website.contact.lang }}">
+            <div class="col ml-md-auto twitter-button social-button btn" title="Tweet them!" data-twitter="{{ website.contact.twitter }}" data-lang="{{ website.contact.language }}">
               <i class="fab fa-twitter"></i>
             </div>
 
@@ -74,9 +75,9 @@
 
           {% endif %}
 
-          {% if website.contact.email_address %}
+          {% if website.contact.email %}
 
-            <div class="col email-button social-button btn" title="Email them!" data-email="{{ website.contact.email_address }}" data-lang="{{ website.contact.lang }}">
+            <div class="col email-button social-button btn" title="Email them!" data-email="{{ website.contact.email }}" data-lang="{{ website.contact.language }}">
               <i class="fas fa-envelope"></i>
             </div>
 

@@ -15,8 +15,10 @@ layout: default
 </div>
 
 <!-- Categories list -->
-<div class="row justify-content-start category-row row-cols-1 row-cols-md-5">
-  {% assign keywords = site.data.categories | sort %}
+<div class="row justify-content-start category-row row-cols-1 row-cols-lg-5">
+  {% assign keywordsMain = site.data.categories | sort: "title" | where_exp: "item", "item.name != 'other'" %}
+  {% assign keywordsOther = site.data.categories | where_exp: "item", "item.name == 'other'" %}
+  {% assign keywords = keywordsMain | concat: keywordsOther %}
   {% assign all_entries = site.data.all %}
   {% assign keywords_length  = keywords | size %}
 
@@ -25,25 +27,19 @@ layout: default
 
     {% assign entries = "" | split: ',' %}
     {% for entry in all_entries %}
-      {% if entry[1].keywords contains keyword[0] %}
+      {% if entry[1].keywords contains keyword.name %}
         {% assign entries = entries | push: entry %}
       {% endif %}
     {% endfor %}
 
-    {% assign md = forloop.index | modulo: 6 %}
+    {% assign _offset = forloop.index | minus: 1 %}
+    {% assign md = _offset | modulo: 5 %}
 
     <!-- List previous 5 categories (desktop button) -->
-    {% if md == 0 or forloop.index == 1 %}
-      {% if md == 0 %}
-        {% assign _offset = forloop.index | minus: 1 %}
-      {% else %}
-        {% assign _offset = 0 %}
-      {% endif %}
-
+    {% if md == 0 %}
       {% for _keyword in keywords limit: 5 offset: _offset %}
         {% include html/category-button.html category-param=_keyword viewport="desktop" %}
       {% endfor %}
-
     {% endif %}
 
     <!-- Display mobile category button -->

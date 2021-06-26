@@ -26,6 +26,8 @@ jobs:
         run: bundle exec ruby ./tests/entry-tags.rb
       - name: Validate file extensions
         run:  tests/file-extensions.sh
+      - name: Validate Images
+        run: bundle exec ruby ./tests/validate-images.rb
 
   build:
     name: Minimal build
@@ -114,7 +116,6 @@ jobs:
     name: Publish build
     needs: [complete_build]
     runs-on: ubuntu-latest
-    if: always() == false
     steps:
       - uses: actions/download-artifact@v2
         with:

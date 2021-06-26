@@ -1,15 +1,16 @@
 {
-  "Ukraine": {
+  "Hosting Ukraine": {
     "domain": "ukraine.com.ua",
-    "url": "https://www.ukraine.com.ua/",
-    "img": "ukraine.com.ua.png",
     "tfa": [
       "sms",
       "call",
       "totp",
-      "custom-hardware"
+      "custom-software"
     ],
-    "documentation": "https://www.ukraine.com.ua/faq/rekomendatsii-po-zashchite-ot-vzloma-uchetnoj-zapisi.html",
+    "custom-software": [
+      "Telegram Bot"
+    ],
+    "documentation": "https://www.ukraine.com.ua/en/wiki/account/security/otp/",
     "keywords": [
       "hosting"
     ],
