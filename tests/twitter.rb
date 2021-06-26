@@ -12,7 +12,7 @@ end
 
 status = 0
 diff = `git diff origin/master...HEAD entries/ | sed -n 's/^+.*"twitter"[^"]*"\\(.*\\)".*/\\1/p'`
-diff.split('\n').each do |handle|
+diff.split("\n").each do |handle|
   begin
     begin
       name = client.user(handle).screen_name
