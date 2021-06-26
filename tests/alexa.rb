@@ -43,7 +43,7 @@ status = 0
 # Fetch changes
 diff = `git diff origin/master...HEAD entries/ | sed -n 's/^+.*"domain"[^"]*"\\(.*\\)".*/\\1/p'`
 # Strip and loop through diff
-diff.split('\n').each do |site|
+diff.split("\n").each do |site|
   begin
     fetch_from_api(site) unless fetch_from_cache(site)
   rescue StandardError => e
