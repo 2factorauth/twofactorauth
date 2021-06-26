@@ -6,7 +6,7 @@ require 'uri'
 
 status = 0
 diff = `git diff origin/master...HEAD entries/ | sed -n 's/^+.*"facebook"[^"]*"\\(.*\\)".*/\\1/p'`
-diff.split(' ').each do |page|
+diff.split("\n").each do |page|
   url = URI("https://www.facebook.com/pg/#{page}")
   http = Net::HTTP.new(url.host, url.port)
   http.use_ssl = true
