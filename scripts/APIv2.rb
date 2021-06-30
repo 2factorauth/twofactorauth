@@ -6,6 +6,7 @@ require 'json'
 tfa = { 'email' => {}, 'hardware' => {}, 'phone' => {}, 'proprietary' => {}, 'sms' => {}, 'totp' => {}, 'u2f' => {} }
 rplc_ptrn = { 'call' => 'phone', 'custom-software' => 'proprietary', 'custom-hardware' => 'hardware' }
 all = {}
+regions = {}
 
 Dir.glob('entries/*/*.json') do |file|
   website = JSON.parse(File.read(file)).values[0]
@@ -21,6 +22,7 @@ Dir.glob('entries/*/*.json') do |file|
 
   entry['tfa'] = website['tfa'].map { |e| rplc_ptrn.keys.include?(e) ? rplc_ptrn[e] : e } unless website['tfa'].nil?
   website['contact']&.each { |a, b| a.eql?('email') ? entry['email_address'] = b : entry[a] = b }
+  website['regions']&.each { |region| regions[region] = 1 + regions[region].to_i }
 
   all[category].nil? ? all[category] = { name => entry } : all[category][name] = entry # Initialize the object
 end
@@ -47,3 +49,4 @@ end
   output.each { |k, v| output[k] = v.sort_by { |entry_name, _| entry_name }.to_h } # Sort output alphabetically
   File.open("api/v2/#{file_name}.json", 'w') { |file| file.write output.to_json }
 end
+File.open('api/v2/regions.json', 'w') { |file| file.write regions.sort_by(&:last).reverse.to_h.to_json }
