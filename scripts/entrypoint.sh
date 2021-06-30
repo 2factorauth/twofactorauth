@@ -15,7 +15,6 @@ if [ -z "${SKIP_API}" ]; then
   mkdir -p api/v3
   echo "Generating API files:"
   ruby ./scripts/APIv*.rb
-  ruby ./scripts/used_regions.rb > api/v2/regions.json
 fi
 
 if [ -z "${SKIP_BUILD}" ]; then
