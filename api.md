@@ -37,7 +37,7 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
 |Key|Value|Always defined|Description|
 |---|-----|---------------|-----------|
 |domain|hostname|:heavy_check_mark:|The domain name of the service|
-|img|String||Image name used. If this is not defined, the image name is `domain`.png|
+|img|String||Image name used. If this is not defined, the image name is `domain`.svg|
 |url|URL||URL of the site. If this is not defined, the url is https://`domain`|
 |tfa|Array\<String>||Array containing all supported 2FA methods|
 |documentation|URL||URL to documentation page|
