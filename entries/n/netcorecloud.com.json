@@ -1,6 +1,9 @@
 {
   "Netcore Cloud": {
     "domain": "netcorecloud.com",
+    "additional-domains": [
+      "pepipost.com"
+    ],
     "tfa": [
       "email",
       "totp"
