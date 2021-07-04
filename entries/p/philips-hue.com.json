@@ -1,6 +1,9 @@
 {
   "Philips Hue": {
-    "domain": "account.meethue.com",
+    "domain": "philips-hue.com",
+    "additional-domains": [
+      "account.meethue.com"
+    ],
     "tfa": [
       "totp",
       "email"
