@@ -6,6 +6,8 @@ require 'json_schemer'
 status = 0
 
 schema = JSONSchemer.schema(File.read('tests/schema.json'))
+categories = JSON.parse(File.read('_data/categories.json')).map { |cat| cat['name'] }
+
 Dir.glob('entries/*/*.json') do |file|
   begin
     JSON.parse(File.read(file))
@@ -29,6 +31,13 @@ Dir.glob('entries/*/*.json') do |file|
       puts "  expected: #{v['schema']['format']}" if v['type'].eql?('format')
     end
     status = 1
+  end
+
+  keywords = document.values[0]['keywords']
+  keywords.each do |kw|
+    unless categories.include? kw
+      puts "::error file=#{file}:: Invalid keyword: '#{kw}'. See _data/categories.json for a list of valid keywords"
+    end
   end
 end
 
