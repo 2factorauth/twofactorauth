@@ -37,6 +37,7 @@ Dir.glob('entries/*/*.json') do |file|
   keywords.each do |kw|
     unless categories.include? kw
       puts "::error file=#{file}:: Invalid keyword: '#{kw}'. See _data/categories.json for a list of valid keywords"
+      status = 1
     end
   end
 end
