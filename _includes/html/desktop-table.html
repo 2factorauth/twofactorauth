@@ -46,11 +46,18 @@
             {% assign tfa = website.tfa %}
 
             <td class="icon-cell">
+              <div class="row">
               {% if website.documentation %}
-                <a href="{{ website.documentation }}">
+                <a href="{{ website.documentation }}" class="col">
                   <i class="fas fa-book"></i>
                 </a>
               {% endif %}
+              {% if website.recovery %}
+                <a href="{{ website.recovery }}" class="col">
+                  <i class="fas fa-redo"></i>
+                </a>
+              {% endif %}
+              </div>
             </td>
 
             <td class="icon-cell">
