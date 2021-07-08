@@ -3,9 +3,14 @@
     "domain": "skrill.com",
     "tfa": [
       "email",
-      "sms"
+      "sms",
+      "totp",
+      "custom-software"
     ],
-    "documentation": "https://www.skrill.com/en/support#/path/SECURITY/1362150272/",
+    "custom-software": [
+      "Skrill App Push Notification"
+    ],
+    "documentation": "https://www.skrill.com/en-us/support#/path/ACCOUNT/Two-Factor-Authentication/905782552/Two-Factor-Authentication-2FA.htm",
     "notes": "Email method requires an additional PIN",
     "keywords": [
       "payments"

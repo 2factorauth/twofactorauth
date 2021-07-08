@@ -1,13 +1,12 @@
 {
-    "Putler": {
-        "domain": "putler.com",
-        "url": "https://www.putler.com/",
-        "tfa": [
-            "totp"
-        ],
-        "documentation": "https://www.putler.com/documentation/activate-2fa-on-your-putler-account/",
-        "keywords": [
-            "other"
-        ]
-    }
+  "Putler": {
+    "domain": "putler.com",
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://www.putler.com/documentation/activate-2fa-on-your-putler-account/",
+    "keywords": [
+      "other"
+    ]
+  }
 }

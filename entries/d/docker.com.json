@@ -1,11 +1,11 @@
 {
   "Docker": {
     "domain": "docker.com",
-    "url": "https://www.docker.com/",
     "tfa": [
       "totp"
     ],
     "documentation": "https://docs.docker.com/docker-hub/2fa/",
+    "recovery": "https://docs.docker.com/docker-hub/2fa/recover-hub-account/",
     "keywords": [
       "developer"
     ]

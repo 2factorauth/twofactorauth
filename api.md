@@ -15,6 +15,104 @@ If you intend to query our JSON files often and with a lot of traffic, you may b
 
 If you only intent on using a specific dataset, like all sites supporting RFC-6238, we recommend that you use the URI which lists just that. See [URIs](#uris-1) for a list of available paths. The smaller the better.
 
+## Version 3
+
+### URIs
+
+|Coverage|Unsigned file|Signed file|
+|--------|-------------|-----------|
+|All sites|https://2fa.directory/api/v3/all.json|https://2fa.directory/api/v3/all.json.sig|
+|All 2FA-supporting sites|https://2fa.directory/api/v3/tfa.json|https://2fa.directory/api/v3/tfa.json.sig|
+|SMS|https://2fa.directory/api/v3/sms.json|https://2fa.directory/api/v3/sms.json.sig|
+|Phone calls|https://2fa.directory/api/v3/call.json|https://2fa.directory/api/v3/call.json.sig|
+|Email 2FA|https://2fa.directory/api/v3/email.json|https://2fa.directory/api/v3/email.json.sig|
+|non-U2F hardware 2FA tokens|https://2fa.directory/api/v3/custom-hardware.json|https://2fa.directory/api/v3/custom-hardware.json.sig|
+|U2F hardware tokens|https://2fa.directory/api/v3/u2f.json|https://2fa.directory/api/v3/u2f.json.sig|
+|RFC-6238|https://2fa.directory/api/v3/totp.json|https://2fa.directory/api/v3/totp.json.sig|
+|non-RFC-6238 software 2FA|https://2fa.directory/api/v3/custom-software.json|https://2fa.directory/api/v3/custom-software.json.sig|
+
+
+### Elements
+
+|Key|Value|Always defined|Description|
+|---|-----|---------------|-----------|
+|domain|hostname|:heavy_check_mark:|The domain name of the service|
+|img|String||Image name used. If this is not defined, the image name is `domain`.svg|
+|url|URL||URL of the site. If this is not defined, the url is https://`domain`|
+|tfa|Array\<String>||Array containing all supported 2FA methods|
+|documentation|URL||URL to documentation page|
+|recovery|URL||URL to recovery documentation page|
+|notes|String||Text describing any discrepancies in the 2FA implementation|
+|contact|Object||Object containing contact details. See table below for elements|
+|regions|array\<String>||Array containing ISO 3166-1 country codes of the regions in which the site is available|
+|additional-domains|Array\<hostname>||Array of domains that the site exists at in addition to the main domain listed in the `domain` field.|
+|custom-(software\|hardware)|Array\<String>||Array of custom software/hardware methods that the site supports. Only present if the `tfa` element contains one of these 2FA types|
+|keywords|Array\<String>|:heavy_check_mark:|Array of categories to which the site belongs|
+
+#### Contact Object Elements
+|Key|Value|Always defined|Description|
+|---|-----|---------------|-----------|
+|twitter|String||Twitter handle|
+|facebook|String||Facebook page name|
+|email|String||Email address to support|
+|language|String||Lowercase ISO 639-1 language code for the site if it is not in English|
+
+### Example website with 2FA enabled
+
+```JSON
+[
+  [
+    "Site Name",
+    {
+      "domain": "example.com",
+      "additional-domains": [
+        "example.net"
+      ],
+      "tfa": [
+        "sms",
+        "call",
+        "email",
+        "totp",
+        "u2f",
+        "custom-software",
+        "custom-hardware"
+      ],
+      "custom-software": [
+        "Authy"
+      ],
+      "documentation": "<link to site TFA documentation>",
+      "recovery": "<link to site TFA recovery documentation>",
+      "keywords": [
+        "keyword1",
+        "keyword2"
+      ]
+    }
+  ]
+]
+```
+
+### Example website with 2FA disabled
+
+```JSON
+[
+  [
+    "Site Name", 
+    {
+      "domain": "example.com",
+      "contact": {
+        "twitter": "example",
+        "facebook": "example",
+        "email": "example@example.com"
+      },
+      "keywords": [
+        "keyword1",
+        "keyword2"
+      ]
+    }
+  ]
+]
+```
+
 ## Version 2
 
 ### URIs

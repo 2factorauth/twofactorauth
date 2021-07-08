@@ -1,4 +1,10 @@
 @media screen and (min-width: 993px) {
+
+  /* Category icons */
+  .col .cat-icon-inner {
+    padding: 1em;
+  }
+
   /* Desktop table */
   .category-table {
     width: 100%;
@@ -77,7 +83,8 @@
           }
 
           .fa-book,
-          .tfa-icon {
+          .tfa-icon,
+          .fa-redo {
             font-size: 27px;
             line-height: 35px;
           }

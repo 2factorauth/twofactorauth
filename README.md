@@ -93,7 +93,7 @@ This code is distributed under the MIT license. For more info, read the
 [LICENSE][license] file distributed with the source code.
 
 [build_status]: https://github.com/2factorauth/twofactorauth/actions
-[license]: /LICENSE
+[license]: /LICENSE.md
 [gitter]: https://gitter.im/2factorauth/twofactorauth
 [twitter]: https://twitter.com/2faorg
 [site_url]: https://2fa.directory
