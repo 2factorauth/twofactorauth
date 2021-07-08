@@ -21,15 +21,6 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: category
-    attributes:
-      label: Site category
-      description: |
-        Category of the site, as currently listed on 2fa.directory
-    validations:
-      required: true
-
   - type: dropdown
     id: 2fa
     attributes:
