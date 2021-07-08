@@ -28,8 +28,6 @@ body:
       description: |
         Link to documentation on how to enable 2FA on the site.
         Attach screenshots of the setup/login process if no public-facing documentation link is available, redacting any personal information.
-    validations:
-        required: true
 
   - type: checkboxes
     id: 2fa
