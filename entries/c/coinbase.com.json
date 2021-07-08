@@ -1,13 +1,13 @@
 {
   "Coinbase": {
     "domain": "coinbase.com",
-    "url": "https://www.coinbase.com/",
     "tfa": [
       "sms",
       "totp",
       "u2f"
     ],
     "documentation": "https://support.coinbase.com/customer/en/portal/articles/1658338",
+    "recovery": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
     "keywords": [
       "cryptocurrencies"
     ]
