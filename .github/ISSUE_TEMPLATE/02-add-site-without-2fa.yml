@@ -1,0 +1,66 @@
+name: 🔓 Add site without 2FA
+description: Request that a site that does not support 2FA be added.
+title: Add [site name]
+labels: add site
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Site name
+      description: Official name of the site
+      placeholder: YouTube
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Site URL
+      description: Link to the main page
+      placeholder: https://youtube.com
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Contact information
+        This information is used to allow those visiting 2fa.directory to contact the owner of the site and request that 2FA be supported.
+        Leave any fields that do not have contact information blank.
+
+  - type: input
+    attributes:
+      label: Facebook
+      placeholder: https://facebook.com/youtube
+
+  - type: input
+    attributes:
+      label: Twitter
+      placeholder: "@YouTube"
+
+  - type: input
+    attributes:
+     label: Email address
+     placeholder: "support@youtube.com"
+
+  - type: checkboxes
+    attributes:
+      label: Eligibility
+      description: |
+        Check each box below to verify that the site meets our requirements for being listed.
+
+        If a site does not meet all of these requirements, feel free to continue your issue submission.
+        Leave any unmet requirements unchecked, and add any additional information or questions in the "Additional information" section below.
+      options:
+        - label: I have checked that the site meets 2fa.directory's [contributing guidelines and site criteria](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md)
+        - label: The site is ranked within the top 200,000 sites on [Alexa](https://www.alexa.com/siteinfo/) or has a substantial social media following.
+        - label: The site does not contain or promote content that violates 2fa.directory's [excluded categories and websites guidelines](https://github.com/2factorauth/twofactorauth/blob/master/EXCLUSION.md), including pornographic, discriminatory, or unlawful content.
+        - label: The issue I'm creating is not a duplicate of an existing [issue](https://github.com/2factorauth/twofactorauth/issues).
+          required: true
+        - label: The issue I'm creating is not a duplicate of an existing [pull request](https://github.com/2factorauth/twofactorauth/pulls)
+          required: true
+
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: If you have any additional information to provide, please do so below.
