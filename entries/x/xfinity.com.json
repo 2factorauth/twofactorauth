@@ -1,7 +1,9 @@
 {
-  "Comcast": {
+  "Xfinity": {
     "domain": "xfinity.com",
-    "url": "https://www.xfinity.com/",
+    "additional-domains": [
+      "comcast.com"
+    ],
     "tfa": [
       "sms",
       "email",
