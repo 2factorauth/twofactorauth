@@ -1,14 +1,18 @@
 {
   "Charles Schwab": {
     "domain": "schwab.com",
-    "url": "https://www.schwab.com/",
     "tfa": [
       "sms",
       "custom-software",
       "custom-hardware"
     ],
+    "custom-software": [
+      "Symantec VIP"
+    ],
+    "documentation": "https://www.schwab.com/help/two-factor-authentication",
     "keywords": [
-      "investing"
+      "investing",
+      "banking"
     ]
   }
 }
