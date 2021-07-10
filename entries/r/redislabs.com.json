@@ -1,0 +1,15 @@
+{
+  "Redis Enterprise Cloud": {
+    "domain": "redislabs.com",
+    "tfa": [
+      "totp",
+      "sms"
+    ],
+    "documentation": "https://docs.redislabs.com/latest/rc/security/admin-console-security/multi-factor-authentication/",
+    "notes": "SMS 2FA must be enabled before TOTP 2FA can be enabled. SMS 2FA cannot be disabled even when TOTP is enabled.",
+    "keywords": [
+      "cloud",
+      "developer"
+    ]
+  }
+}
