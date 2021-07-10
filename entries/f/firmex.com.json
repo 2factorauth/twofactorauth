@@ -1,0 +1,16 @@
+{
+  "Firmex VDR": {
+    "domain": "firmex.com",
+    "url": "https://www.firmex.com/",
+    "tfa": [
+      "totp",
+      "sms",
+      "email"
+    ],
+    "documentation": "https://support.firmex.com/hc/en-us/articles/204467648",
+    "notes": "2FA must be enabled by a site administrator before use.",
+    "keywords": [
+      "communication"
+    ]
+  }
+}

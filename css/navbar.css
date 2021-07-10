@@ -1,0 +1,14 @@
+#regionDropdown { cursor: pointer; }
+
+.navbar { background: #eeeeee96; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); font-size: 17px; line-height: 18px; padding: 0.2rem 1rem; }
+.navbar li { padding: 4px; margin: 0 2px; }
+.navbar li:hover { background: #ddd; }
+.navbar .dropdown-menu { position: absolute !important; }
+.navbar .dropdown-menu .dropdown-item .flag-icon, .navbar .dropdown-menu .dropdown-item .fas { width: 1.3333333333em; text-align: center; }
+
+.nav-link { color: #3e3e3e; }
+.nav-link:hover { color: #3e3e3e; }
+
+@media (prefers-color-scheme: dark) { .navbar { background: #6f6f6f96; }
+  .nav-link { color: #fff; }
+  .nav-link:hover { color: #3e3e3e !important; } }

@@ -1,0 +1,21 @@
+{
+  "Perimeter 81": {
+    "domain": "perimeter81.com",
+    "tfa": [
+      "sms",
+      "totp",
+      "custom-software",
+      "u2f",
+      "call"
+    ],
+    "custom-software": [
+      "Perimeter 81 App Push Notification",
+      "Duo"
+    ],
+    "documentation": "https://support.perimeter81.com/docs/two-factor-authentication",
+    "notes": "Hardware 2FA is only available via Duo.",
+    "keywords": [
+      "security"
+    ]
+  }
+}

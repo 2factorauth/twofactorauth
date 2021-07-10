@@ -1,0 +1,17 @@
+{
+    "LogicMonitor": {
+        "domain": "logicmonitor.com",
+        "tfa": [
+            "call",
+            "sms",
+            "custom-software"
+        ],
+        "custom-software": [
+            "Authy"
+        ],
+        "documentation": "https://www.logicmonitor.com/support/settings/users-and-roles/two-factor-authentication",
+        "keywords": [
+            "developer"
+        ]
+    }
+}

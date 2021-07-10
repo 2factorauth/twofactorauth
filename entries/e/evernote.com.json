@@ -1,0 +1,15 @@
+{
+  "Evernote": {
+    "domain": "evernote.com",
+    "tfa": [
+      "sms",
+      "call",
+      "totp"
+    ],
+    "documentation": "https://help.evernote.com/hc/en-us/articles/208314238",
+    "notes": "SMS and phone call are always enabled as backup methods for TOTP.",
+    "keywords": [
+      "backup"
+    ]
+  }
+}

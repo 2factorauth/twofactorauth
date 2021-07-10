@@ -1,0 +1,11 @@
+.github-corner svg { border: 0; color: #FFFFFF; fill: var(--primary); height: 80px; position: absolute; right: 0; top: 0; width: 80px; pointer-events: none; }
+.github-corner .octo-triangle { pointer-events: auto; }
+.github-corner .octo-arm { fill: currentColor; transform-origin: 130px 106px; }
+.github-corner:hover .octo-arm { animation: octocat-wave 560ms ease-in-out; }
+.github-corner .octo-body { fill: currentColor; }
+
+@keyframes octocat-wave { 0%, 100% { transform: rotate(0); }
+  20%, 60% { transform: rotate(-25deg); }
+  40%, 80% { transform: rotate(10deg); } }
+@media (max-width: 500px) { .github-corner:hover .octo-arm { animation: none; }
+  .github-corner .octo-arm { animation: octocat-wave 560ms ease-in-out; } }

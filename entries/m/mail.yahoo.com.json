@@ -1,0 +1,17 @@
+{
+  "Yahoo Mail": {
+    "domain": "mail.yahoo.com",
+    "tfa": [
+      "sms",
+      "call",
+      "email",
+      "custom-software",
+      "u2f"
+    ],
+    "documentation": "https://help.yahoo.com/kb/SLN5013.html",
+    "notes": "Linked phone number required for 2FA.",
+    "keywords": [
+      "email"
+    ]
+  }
+}

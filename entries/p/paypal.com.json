@@ -1,0 +1,15 @@
+{
+  "PayPal": {
+    "domain": "paypal.com",
+    "url": "https://www.paypal.com/",
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://www.paypal.com/us/smarthelp/article/faq4057",
+    "notes": "2FA is only available in a few countries. Contact PayPal on Twitter for an up-to-date list of available countries.",
+    "keywords": [
+      "payments"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Zoho Mail": {
+    "domain": "zoho.com",
+    "url": "https://www.zoho.com/mail/",
+    "tfa": [
+      "sms",
+      "custom-software",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://help.zoho.com/portal/kb/articles/mfa-introduction",
+    "notes": "YubiKey registration works only on the new version of Zoho Accounts. Only one (1) YubiKey may be registered at a time. Supported Devices: YubiKey NEO, YubiKey 4 Nano, YubiKey 4, YubiKey 4C, YubiKey 4C Nano, YubiKey NEO-n, YubiKey Edge, YubiKey Edge-n.",
+    "keywords": [
+      "email"
+    ]
+  }
+}

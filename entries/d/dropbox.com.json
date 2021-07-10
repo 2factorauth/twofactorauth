@@ -1,0 +1,16 @@
+{
+  "Dropbox": {
+    "domain": "dropbox.com",
+    "url": "https://www.dropbox.com",
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://help.dropbox.com/security/enable-two-step-verification",
+    "notes": "Hardware 2FA requires also enabling Software or SMS 2FA as a back-up.",
+    "keywords": [
+      "backup"
+    ]
+  }
+}

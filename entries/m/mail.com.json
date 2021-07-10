@@ -1,0 +1,14 @@
+{
+  "Mail.com": {
+    "domain": "mail.com",
+    "url": "https://www.mail.com/",
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://support.mail.com/security/2fa/index.html",
+    "notes": "A verified phone number is required to set up 2FA.",
+    "keywords": [
+      "email"
+    ]
+  }
+}

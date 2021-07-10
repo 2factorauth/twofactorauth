@@ -1,0 +1,32 @@
+:root { --primary: hsl(180, 59%, 51%); }
+
+body { background-color: #fff; font-family: open sans, Helvetica, Arial, sans-serif; min-width: 300px; }
+
+h1, h2, h3, h4 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+
+@media (prefers-color-scheme: dark) { body { background-color: #212121; color: #eee; }
+  a { color: #3596ff; } }
+.back-arrow { top: 0; left: 0; margin-top: 35px; margin-left: 30px; }
+.back-arrow a .fa-arrow-left { font-size: 35px; color: #ccc; }
+.back-arrow a .fa-arrow-left:hover { color: #fff; }
+
+.container { max-width: calc(1327px + 2rem); padding: 0; /** Top content on index.html **/ }
+.container #main { margin: 1em auto 1em auto; text-align: center; }
+.container #main h2 { font-weight: 300 !important; font-size: 2.3rem; }
+.container #main #logo { margin: auto; height: 20em; max-height: 33vw; }
+.container .col { display: block; }
+.container .collapsing { -webkit-transition: none; transition: none; display: none; }
+.container .fas, .container .fab { line-height: inherit; }
+.container h5:first-child { margin-top: 0; }
+.container .fa-2x { vertical-align: middle; }
+.container .btn { border-radius: 2px; }
+
+/** Footer **/
+.footer { bottom: 0; position: static; padding-top: 4vh; padding-bottom: 2vh; width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr; grid-column-gap: 0; grid-row-gap: 0; }
+.footer #innerFooter { grid-area: 1 / 2 / 2 / 3; font-size: 0.9em; text-align: center; }
+@media screen and (max-width: 992px) { .footer #innerFooter { grid-area: 1 / 1 / 1 / 4 !important; } }
+.footer #buildNumber { grid-area: 1 / 3 / 2 / 4; font-family: Arial, Helvetica, sans-serif; font-size: 15px; text-align: right; padding-right: 1vw; }
+
+/** Device specific content **/
+@media screen and (min-width: 993px) { .mobile-only { display: none !important; } }
+@media screen and (max-width: 992px) { .desktop-only { display: none !important; } }

@@ -1,0 +1,12 @@
+.title { text-align: center; margin-top: 10vh; margin-bottom: 4vh; }
+.title.mobile-only { font-size: 8vw; }
+
+#team-title { text-align: center; margin-top: 10vh; }
+
+.row { width: 95%; margin: auto; }
+.row a { text-decoration: none !important; color: initial; }
+
+.maintainer { align-items: center; margin-top: 4vh; margin-bottom: 4vh; }
+.maintainer .card { border-radius: 2px; transition: all ease .4s; }
+.maintainer .card:hover { transform: translateY(-0.75em); }
+.maintainer .card .maintainer-name { text-align: center; color: #000000; }

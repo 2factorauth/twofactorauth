@@ -1,0 +1,45 @@
+{
+  "name": "twofactorauth",
+  "short_name": "twofactorauth",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "List of sites with two factor auth support which includes SMS, email, phone calls, hardware, and software.",
+  "theme_color": "#39CCCC",
+  "background_color": "#FFFFFF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/img/icons/icon_180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/img/icons/apple-icon_180x180.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/img/icons/icon_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icons/apple-icon_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/img/icons/icon_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/img/icons/apple-icon_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}

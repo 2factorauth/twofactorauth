@@ -1,0 +1,15 @@
+{
+  "Yandex.Disk": {
+    "domain": "disk.yandex.com",
+    "tfa": [
+      "custom-software"
+    ],
+    "custom-software": [ "Yandex.Key" ],
+    "documentation": "https://yandex.com/support/id/authorization/twofa.html",
+    "recovery": "https://yandex.com/support/id/authorization/twofa-restore.html",
+    "notes": "SMS-capable phone required for initial setup.",
+    "keywords": [
+      "backup"
+    ]
+  }
+}

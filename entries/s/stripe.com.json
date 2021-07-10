@@ -1,0 +1,15 @@
+{
+  "Stripe": {
+    "domain": "stripe.com",
+    "url": "https://www.stripe.com/",
+    "tfa": [
+      "sms",
+      "totp",
+      "custom-hardware"
+    ],
+    "documentation": "https://support.stripe.com/questions/how-do-i-enable-two-step-verification",
+    "keywords": [
+      "payments"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Kickstarter": {
+    "domain": "kickstarter.com",
+    "url": "https://www.kickstarter.com",
+    "tfa": [
+      "sms",
+      "call",
+      "totp"
+    ],
+    "documentation": "https://help.kickstarter.com/hc/en-us/articles/115005127094",
+    "notes": "Software 2FA requires setting up SMS 2FA as a fallback.",
+    "keywords": [
+      "crowdfunding"
+    ]
+  }
+}

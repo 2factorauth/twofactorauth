@@ -1,0 +1,17 @@
+{
+  "Office 365": {
+    "domain": "office.microsoft.com",
+    "tfa": [
+      "sms",
+      "call",
+      "email",
+      "custom-software",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://support.office.com/en-US/article/Set-up-multi-factor-authentication-for-Office-365-8f0454b2-f51a-4d9c-bcde-2c48e41621c6",
+    "keywords": [
+      "other"
+    ]
+  }
+}

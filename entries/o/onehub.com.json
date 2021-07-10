@@ -1,0 +1,15 @@
+{
+  "Onehub": {
+    "domain": "onehub.com",
+    "url": "https://www.onehub.com/",
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://support.onehub.com/hc/en-us/articles/360039792571",
+    "notes": "Software 2FA requires adding a phone number as a fallback.",
+    "keywords": [
+      "backup"
+    ]
+  }
+}

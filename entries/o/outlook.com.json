@@ -1,0 +1,17 @@
+{
+  "Outlook.com": {
+    "domain": "outlook.com",
+    "tfa": [
+      "sms",
+      "call",
+      "email",
+      "custom-software",
+      "totp"
+    ],
+    "documentation": "https://support.microsoft.com/en-us/help/12408/",
+    "notes": "2FA phone calls may not be available in all regions",
+    "keywords": [
+      "email"
+    ]
+  }
+}
