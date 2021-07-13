@@ -1,17 +1,26 @@
 {
-    "BigCommerce": {
-      "domain": "bigcommerce.com",
-      "url": "https://www.bigcommerce.com",
-      "tfa": [
-        "custom-software",
-        "email"
-      ],
-      "custom-software": [
-        "Authy"
-      ],
-      "documentation": "https://support.bigcommerce.com/s/article/Setting-Up-2FA",
-      "keywords": [
-        "retail"
-      ]
-    }
+  "BigCommerce": {
+    "domain": "bigcommerce.com",
+    "additional-domains": [
+      "bigcommerce.fr",
+      "bigcommerce.de",
+      "bigcommerce.it",
+      "bigcommerce.nl",
+      "bigcommerce.es",
+      "bigcommerce.co.uk",
+      "bigcommerce.ca",
+      "bigcommerce.com.au"
+    ],
+    "tfa": [
+      "custom-software",
+      "email"
+    ],
+    "custom-software": [
+      "Authy"
+    ],
+    "documentation": "https://support.bigcommerce.com/s/article/Setting-Up-2FA",
+    "keywords": [
+      "retail"
+    ]
   }
+}
