@@ -44,7 +44,7 @@ This is the most difficult option and recommended for environments where Docker 
 GNU/Linux and WSL:
 
 ```bash
-sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev npm webp
+sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev npm
 npm i babel-minify
 bundle config set path './vendor/cache'
 bundle install
