@@ -33,11 +33,13 @@ Dir.glob('entries/*/*.json') do |file|
     if website['custom-software']
       unless website['tfa'].include? 'custom-software'
         puts "::error file=#{file}:: 'tfa' must include 'custom-software' when 'custom-software' is set"
+        status = 1
       end
     end
     if website['custom-hardware']
       unless website['tfa'].include? 'custom-hardware'
         puts "::error file=#{file}:: 'tfa' must include 'custom-hardware' when 'custom-hardware' is set"
+        status = 1
       end
     end
   end
