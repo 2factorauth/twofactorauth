@@ -29,6 +29,8 @@ Dir.glob('entries/*/*.json') do |file|
       puts "  data: #{v['details']}" unless v['details'].nil?
       puts "  expected: #{v['schema']['pattern']}" if v['type'].eql?('pattern')
       puts "  expected: #{v['schema']['format']}" if v['type'].eql?('format')
+      puts "  expected: #{v['schema']['required']}" if v['type'].eql?('required')
+      puts "  expected: only one of 'tfa' or 'contact'" if v['type'].eql?('oneOf')
     end
     status = 1
   end

@@ -109,6 +109,24 @@
             }
           ]
         }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "tfa"
+          ]
+        },
+        {
+          "required": [
+            "contact"
+          ]
+        }
+      ],
+      "dependencies": {
+        "notes": ["tfa"],
+        "documentation": ["tfa"],
+        "recovery": ["tfa"],
+        "^custom-[a-z]+$": ["tfa"]
       }
     }
   }
