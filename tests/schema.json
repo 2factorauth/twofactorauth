@@ -126,7 +126,8 @@
         "notes": ["tfa"],
         "documentation": ["tfa"],
         "recovery": ["tfa"],
-        "^custom-[a-z]+$": ["tfa"]
+        "custom-software": ["tfa"],
+        "custom-hardware": ["tfa"]
       }
     }
   }
