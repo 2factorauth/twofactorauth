@@ -126,8 +126,20 @@
         "notes": ["tfa"],
         "documentation": ["tfa"],
         "recovery": ["tfa"],
-        "custom-software": ["tfa"],
-        "custom-hardware": ["tfa"]
+        "custom-software": {
+          "properties": {
+            "tfa": {
+              "contains": {"const": "custom-software"}
+            }
+          }
+        },
+        "custom-hardware": {
+          "properties": {
+            "tfa": {
+              "contains": {"const": "custom-hardware"}
+            }
+          }
+        }
       }
     }
   }
