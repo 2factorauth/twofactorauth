@@ -1,11 +1,16 @@
 {
   "GeForce (Nvidia)": {
     "domain": "geforce.com",
-    "url": "https://www.geforce.com/",
-    "contact": {
-      "facebook": "NVIDIAGeForce",
-      "twitter": "NVIDIAGeForce"
-    },
+    "additional-domains": [
+      "nvidia.com",
+      "login.nvgs.nvidia.com"
+    ],
+    "tfa": [
+      "email",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://login.nvgs.nvidia.com/v1/help/nfactor",
     "keywords": [
       "gaming"
     ]
