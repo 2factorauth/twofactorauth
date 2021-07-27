@@ -1,6 +1,9 @@
 {
   "Buildium": {
     "domain": "buildium.com",
+    "additional-domains": [
+      "managebuilding.com"
+    ],
     "tfa": [
       "sms",
       "totp"
