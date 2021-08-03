@@ -23,6 +23,11 @@ Dir.glob('entries/*/*.json') do |file|
     status = 1
   end
 
+  if !website['img'].nil? && website['img'].eql?("#{website['domain']}.svg")
+    puts "::error file=#{file}:: Defining the img property for #{website['domain']} is not necessary - '#{website['img']}' is the default value"
+    status = 1
+  end
+
   seen_sites.push(path)
 end
 
