@@ -7,9 +7,9 @@ $('.facebook-button').click(function () {
 $('.email-button').click(function () {
   let langs = new Map();
 {% for lang in site.data.languages %}
-  {% unless lang[1].email_subject == '' %}
+  {% if lang[1].email_subject %}
   langs.set("{{ lang[0] }}", "{{ lang[1].email_subject }}");
-  {% endunless %}
+  {% endif %}
 {% endfor %}
 let lang = $(this).data('lang')
 
@@ -20,9 +20,9 @@ let lang = $(this).data('lang')
 $('.twitter-button').click(function () {
   let langs = new Map();
 {% for lang in site.data.languages %}
-  {% unless lang[1].tweet == '' %}
+  {% if lang[1].tweet %}
   langs.set("{{ lang[0] }}", "{{ lang[1].tweet |cgi_escape }}");
-  {% endunless %}
+  {% endif %}
 {% endfor %}
 
 let lang = $(this).data('lang')
