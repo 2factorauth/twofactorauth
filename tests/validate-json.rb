@@ -33,6 +33,14 @@ Dir.glob('entries/*/*.json') do |file|
     status = 1
   end
 
+  domain = document.values[0]['domain']
+  url = document.values[0]['url']
+  default_url = "https://#{domain}"
+  if !url.nil? && ( url.eql?(default_url) || url.eql?(default_url+"/") )
+    puts "::error file=#{file}:: Defining the url property for #{domain} is not necessary - '#{default_url}' is the default value"
+    status = 1
+  end
+  
   keywords = document.values[0]['keywords']
   keywords.each do |kw|
     unless categories.include? kw
