@@ -5,6 +5,7 @@
     "tfa": [
       "totp"
     ],
+    "documentation": "https://shareworks.solium.com/solium/servlet/ui/profile/two-factor-authentication",
     "keywords": [
       "finance"
     ]
