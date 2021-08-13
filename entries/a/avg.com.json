@@ -1,11 +1,10 @@
 {
   "AVG": {
     "domain": "avg.com",
-    "url": "https://www.avg.com",
-    "contact": {
-      "facebook": "AVG",
-      "twitter": "AVGFree"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://support.avg.com/SupportArticleView?l=en&urlname=AVG-Account-2-step-verification",
     "keywords": [
       "security"
     ]
