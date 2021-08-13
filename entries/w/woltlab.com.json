@@ -1,13 +1,12 @@
 {
   "WoltLab": {
     "domain": "woltlab.com",
-    "url": "https://www.woltlab.com/",
+    "tfa": [
+      "totp",
+      "u2f",
+      "email"
+    ],
     "img": "woltlab.com.png",
-    "contact": {
-      "email": "woltlab@woltlab.com",
-      "facebook": "WoltLab",
-      "twitter": "woltlab"
-    },
     "keywords": [
       "communication"
     ]
