@@ -1,6 +1,6 @@
 #!/bin/sh
-cd /twofactorauth/site
-bundle config set path '/twofactorauth/vendor/cache'
+cd /twofactorauth
+bundle config set path '/app/vendor/cache'
 
 if [ -z "${SKIP_DOS2UNIX}" ]; then
   echo "Converting scripts to Unix format:"
@@ -19,6 +19,7 @@ fi
 
 if [ -z "${SKIP_BUILD}" ]; then
   echo "Building site:"
+  ruby ./scripts/join-entries.rb > _data/all.json
   bundle exec jekyll build
   if [ -z "${SKIP_REGIONS}" ]; then
     echo "Generating regions:"
@@ -30,3 +31,5 @@ if [ -z "${SKIP_MINIFY}" ]; then
   echo "Minifying JavaScript files:"
   ./scripts/minify-js.sh
 fi
+
+bundle exec jekyll serve --skip-initial-build --host=0.0.0.0
