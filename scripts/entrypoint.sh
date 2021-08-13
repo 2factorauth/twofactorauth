@@ -14,7 +14,9 @@ if [ -z "${SKIP_API}" ]; then
   mkdir -p api/v2
   mkdir -p api/v3
   echo "Generating API files:"
-  ruby ./scripts/APIv*.rb
+  ruby ./scripts/APIv1.rb
+  ruby ./scripts/APIv2.rb
+  ruby ./scripts/APIv3.rb
 fi
 
 if [ -z "${SKIP_BUILD}" ]; then
