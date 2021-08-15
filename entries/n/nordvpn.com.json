@@ -1,6 +1,9 @@
 {
   "NordVPN": {
     "domain": "nordvpn.com",
+    "additional-domains": [
+      "nordaccount.com"
+    ],
     "tfa": [
       "totp",
       "u2f"
