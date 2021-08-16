@@ -22,8 +22,6 @@ jobs:
         run:  bundle exec ruby ./tests/region-codes.rb
       - name: Validate Language codes
         run: bundle exec ruby ./tests/language-codes.rb
-      - name: Validate Entry tags
-        run: bundle exec ruby ./tests/entry-tags.rb
       - name: Validate file extensions
         run:  tests/file-extensions.sh
       - name: Validate Images

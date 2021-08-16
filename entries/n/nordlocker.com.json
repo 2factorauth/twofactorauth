@@ -1,0 +1,15 @@
+{
+  "NordLocker": {
+    "domain": "nordlocker.com",
+    "additional-domains": [
+      "nordaccount.com"
+    ],
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
+    "keywords": [
+      "backup"
+    ]
+  }
+}

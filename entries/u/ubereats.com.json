@@ -1,0 +1,40 @@
+{
+  "Uber Eats": {
+    "domain": "ubereats.com",
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://help.uber.com/h/b8bb9152-8c91-4f49-83c4-35cf2e1dcf72",
+    "notes": "2FA must be enabled via the Uber app, not the Uber Eats app.",
+    "keywords": [
+      "food"
+    ],
+    "regions": [
+      "us",
+      "es",
+      "br",
+      "mx",
+      "fr",
+      "jp",
+      "ca",
+      "au",
+      "pl",
+      "gb",
+      "it",
+      "pt",
+      "ch",
+      "cl",
+      "nz",
+      "tw",
+      "za",
+      "be",
+      "ec",
+      "ie",
+      "lk",
+      "se",
+      "do",
+      "gt"
+    ]
+  }
+}

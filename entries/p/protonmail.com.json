@@ -1,6 +1,9 @@
 {
   "ProtonMail": {
     "domain": "protonmail.com",
+    "additional-domains": [
+      "pm.me"
+    ],
     "tfa": [
       "totp"
     ],

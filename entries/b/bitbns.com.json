@@ -1,0 +1,15 @@
+{
+  "Bitbns": {
+    "domain": "bitbns.com",
+    "tfa": [
+      "totp",
+      "sms"
+    ],
+    "documentation": "https://bitbns.freshdesk.com/support/solutions/articles/35000047047",
+    "recovery": "https://bitbns.freshdesk.com/support/solutions/articles/35000046996",
+    "notes": "SMS 2FA must be enabled before TOTP 2FA.",
+    "keywords": [
+      "cryptocurrencies"
+    ]
+  }
+}
