@@ -1,6 +1,5 @@
 #!/bin/sh
 cd /twofactorauth
-bundle config set path '/app/vendor/cache'
 
 if [ -z "${SKIP_DOS2UNIX}" ]; then
   echo "Converting scripts to Unix format:"
