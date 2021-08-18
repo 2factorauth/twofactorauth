@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Bundle install
         run: |
-          bundle set without jekyll_plugins
+          bundle config set without jekyll_plugins
           bundle install
       - uses: actions/cache@v2
         with:
@@ -37,7 +37,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Bundle install
         run: | 
-          bundle set without test
+          bundle config set without test
           bundle install
       - name: Generate API files
         run: |
@@ -86,7 +86,7 @@ jobs:
         run: tar -xzf build.tar.gz
       - name: Bundle install
         run: |
-          bundle set without test
+          bundle config set without test
           bundle install
       - name: Install GnuPG
         run: apk add --no-cache gnupg
