@@ -4,6 +4,8 @@
 require 'json'
 status = 0
 
+PNG_SIZE = [32, 32].freeze
+
 seen_sites = []
 
 Dir.glob('entries/*/*.json') do |file|
@@ -21,6 +23,11 @@ Dir.glob('entries/*/*.json') do |file|
     status = 1
   end
 
+  if !website['img'].nil? && website['img'].eql?("#{website['domain']}.svg")
+    puts "::error file=#{file}:: Defining the img property for #{website['domain']} is not necessary - '#{website['img']}' is the default value"
+    status = 1
+  end
+
   seen_sites.push(path)
 end
 
@@ -30,6 +37,14 @@ Dir.glob('img/*/*') do |file|
   unless seen_sites.include? "./#{file}"
     puts "::error file=#{file}:: Unused image at #{file}"
     status = 1
+  end
+
+  if file.include? '.png'
+    dimensions = IO.read(file)[0x10..0x18].unpack('NN')
+    unless dimensions.eql? PNG_SIZE
+      puts "::error file=#{file}:: PNGs should be 32x32 in size."
+      status = 1
+    end
   end
 end
 

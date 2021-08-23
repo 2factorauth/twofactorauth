@@ -109,6 +109,37 @@
             }
           ]
         }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "tfa"
+          ]
+        },
+        {
+          "required": [
+            "contact"
+          ]
+        }
+      ],
+      "dependencies": {
+        "notes": ["tfa"],
+        "documentation": ["tfa"],
+        "recovery": ["tfa"],
+        "custom-software": {
+          "properties": {
+            "tfa": {
+              "contains": {"const": "custom-software"}
+            }
+          }
+        },
+        "custom-hardware": {
+          "properties": {
+            "tfa": {
+              "contains": {"const": "custom-hardware"}
+            }
+          }
+        }
       }
     }
   }
