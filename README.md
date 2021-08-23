@@ -65,7 +65,8 @@ echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
 
 # Install Bundler and dependencies
 gem install bundler
-bundle install --path vendor/bundle
+bundle config set path './vendor/cache'
+bundle install
 npm i babel-minify
 ```
 
