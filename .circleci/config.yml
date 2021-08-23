@@ -17,6 +17,10 @@ jobs:
           name: Check Facebook handles
           command: ruby ./tests/facebook.rb
 
+      - run:
+          name: Check URL/Domain reachability
+          command: ruby ./tests/url.rb
+
       - restore_cache:
           keys:
             - awis-cache
