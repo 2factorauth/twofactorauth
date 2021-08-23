@@ -5,10 +5,11 @@
 
 require 'json'
 
-entries = {}
+entries = []
+
 Dir.glob('entries/*/*.json') do |file|
-  name = JSON.parse(File.read(file))
-  name.each { |k, v| entries[k] = v }
+  entry = JSON.parse(File.read(file))
+  entries.push([entry.keys[0], entry.values[0]])
 end
 
-puts JSON.generate(entries.sort_by{ |k,v| k.downcase })
+puts JSON.generate(entries.sort_by { |a| a[0].downcase })
