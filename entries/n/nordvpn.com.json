@@ -1,10 +1,14 @@
 {
   "NordVPN": {
     "domain": "nordvpn.com",
+    "additional-domains": [
+      "nordaccount.com"
+    ],
     "tfa": [
       "totp",
       "u2f"
     ],
+    "documentation": "https://nordvpn.com/features/multi-factor-authentication/",
     "keywords": [
       "vpn"
     ]

@@ -1,6 +1,10 @@
 {
   "netcup": {
     "domain": "netcup.eu",
+    "additional-domains": [
+      "netcup.de",
+      "customercontrolpanel.de"
+    ],
     "tfa": [
       "totp"
     ],

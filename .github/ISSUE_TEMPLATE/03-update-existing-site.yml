@@ -1,0 +1,63 @@
+name: 🔄 Update existing site
+description: Request that an existing listed site be updated with new information.
+title: Update [site name]
+labels: update site
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Site name
+      description: Official name of the site
+      placeholder: YouTube
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Site URL
+      description: Link to the main page
+      placeholder: https://youtube.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: 2fa
+    attributes:
+      label: Update reason
+      description: "This site entry should be updated because:"
+      multiple: true
+      options:
+        - It now supports 2FA.
+        - Its name has changed.
+        - Its logo has changed.
+        - It no longer supports 2FA.
+        - Its documentation link has changed.
+        - It fits better in a different category.
+        - The methods of 2FA that it supports have changed.
+        - Its Twitter username, Facebook page, and/or email address have changed.
+        - It has been acquired or absorbed by another site, and the new site is eligible to be listed on 2fa.directory.
+        - Other (please describe below).
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: |
+        ### List the specific changes to the site entry that should be made below.
+
+        For example, if a site now supports 2FA, list the methods of 2FA the site now supports.
+        Please include any supporting documentation for the changes as well, such as official documentation links or announcement blog posts.
+        If no public-facing documentation is available, please include screenshots of the changes, redacting any personal information.
+
+  - type: checkboxes
+    attributes:
+      label: Issue Eligibility
+      description: |
+        Check each box below to verify that this issue meets our requirements.
+      options:
+        - label: The issue I'm creating is not a duplicate of an existing [issue](https://github.com/2factorauth/twofactorauth/issues).
+          required: true
+        - label: The issue I'm creating is not a duplicate of an existing [pull request](https://github.com/2factorauth/twofactorauth/pulls)
+          required: true

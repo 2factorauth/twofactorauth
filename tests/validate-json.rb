@@ -29,10 +29,21 @@ Dir.glob('entries/*/*.json') do |file|
       puts "  data: #{v['details']}" unless v['details'].nil?
       puts "  expected: #{v['schema']['pattern']}" if v['type'].eql?('pattern')
       puts "  expected: #{v['schema']['format']}" if v['type'].eql?('format')
+      puts "  expected: #{v['schema']['required']}" if v['type'].eql?('required')
+      puts "  expected: only one of 'tfa' or 'contact'" if v['type'].eql?('oneOf')
+      puts "  expected: 'tfa' to contain '#{v['schema']['contains']['const']}'" if v['type'].eql?('contains')
     end
     status = 1
   end
 
+  domain = document.values[0]['domain']
+  url = document.values[0]['url']
+  default_url = "https://#{domain}"
+  if !url.nil? && ( url.eql?(default_url) || url.eql?(default_url+"/") )
+    puts "::error file=#{file}:: Defining the url property for #{domain} is not necessary - '#{default_url}' is the default value"
+    status = 1
+  end
+  
   keywords = document.values[0]['keywords']
   keywords.each do |kw|
     unless categories.include? kw

@@ -9,7 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Bundle install
-        run: bundle install
+        run: |
+          bundle config set without jekyll_plugins
+          bundle install
       - uses: actions/cache@v2
         with:
           path: |
@@ -22,8 +24,6 @@ jobs:
         run:  bundle exec ruby ./tests/region-codes.rb
       - name: Validate Language codes
         run: bundle exec ruby ./tests/language-codes.rb
-      - name: Validate Entry tags
-        run: bundle exec ruby ./tests/entry-tags.rb
       - name: Validate file extensions
         run:  tests/file-extensions.sh
       - name: Validate Images
@@ -36,7 +36,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Bundle install
-        run: bundle install
+        run: | 
+          bundle config set without test
+          bundle install
       - name: Generate API files
         run: |
           mkdir -p api/v1
@@ -83,7 +85,9 @@ jobs:
       - name: Extract artifact
         run: tar -xzf build.tar.gz
       - name: Bundle install
-        run: bundle install
+        run: |
+          bundle config set without test
+          bundle install
       - name: Install GnuPG
         run: apk add --no-cache gnupg
       - uses: crazy-max/ghaction-import-gpg@v3
