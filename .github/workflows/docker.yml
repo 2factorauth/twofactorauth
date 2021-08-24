@@ -15,6 +15,6 @@ jobs:
       qemu-version: latest
   - name: Docker build
     run: |
-      echo "${{ secrets.DOCKER-PASSWORD }}" | docker login --username ${{ secrets.DOCKER-USERNAME }} --password-stdin
+      echo "${{ secrets.DOCKER_PASSWORD }}" | docker login --username ${{ secrets.DOCKER_USERNAME }} --password-stdin
       docker buildx create --use
       docker buildx build --platform linux/amd64,linux/arm/v7,linux/arm64 --rm --tag 2factorauth/twofactorauth:latest --push --compress .
