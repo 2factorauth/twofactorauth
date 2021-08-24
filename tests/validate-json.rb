@@ -8,6 +8,8 @@ status = 0
 schema = JSONSchemer.schema(File.read('tests/schema.json'))
 categories = JSON.parse(File.read('_data/categories.json')).map { |cat| cat['name'] }
 
+seen_sites = []
+
 Dir.glob('entries/*/*.json') do |file|
   begin
     JSON.parse(File.read(file))
@@ -18,6 +20,15 @@ Dir.glob('entries/*/*.json') do |file|
   end
 
   document = JSON.parse(File.read(file))
+
+  name = document.keys[0]
+  if seen_names.include? name
+    puts "::error file=#{file}:: An entry with the name '#{name}' already exists. Duplicate site names are not allowed.
+    If this entry is not the same site, please rename '#{name}'."
+    status = 1
+  else
+    seen_names.push(name)
+  end
 
   unless schema.valid?(document)
 
