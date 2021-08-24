@@ -25,7 +25,7 @@ If you would like to contribute, please read the entire guidelines here in
 ### 1. Docker
 
 ```BASH
-docker pull 2factorauth/twofactorauth:4.0
+docker pull 2factorauth/twofactorauth
 ```
 
 ### 2. Snap
@@ -59,7 +59,6 @@ curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
 
 # Install ruby, webp & nodejs(npm)
 brew install ruby
-brew install webp
 brew install nodejs
 echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
 
