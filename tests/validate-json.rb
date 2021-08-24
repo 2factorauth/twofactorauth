@@ -8,7 +8,7 @@ status = 0
 schema = JSONSchemer.schema(File.read('tests/schema.json'))
 categories = JSON.parse(File.read('_data/categories.json')).map { |cat| cat['name'] }
 
-seen_sites = []
+seen_names = []
 
 Dir.glob('entries/*/*.json') do |file|
   begin
