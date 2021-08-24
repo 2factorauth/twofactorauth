@@ -36,6 +36,7 @@ Dir.glob('entries/*/*.json') do |file|
       puts "  expected: 'tfa' to contain '#{v['schema']['contains']['const']}'" if v['type'].eql?('contains')
     end
     status = 1
+    exit(status)
   end
 
   domain = document.values[0]['domain']
