@@ -21,15 +21,6 @@ Dir.glob('entries/*/*.json') do |file|
 
   document = JSON.parse(File.read(file))
 
-  name = document.keys[0]
-  if seen_names.include? name
-    puts "::error file=#{file}:: An entry with the name '#{name}' already exists. Duplicate site names are not allowed.
-    If this entry is not the same site, please rename '#{name}'."
-    status = 1
-  else
-    seen_names.push(name)
-  end
-
   unless schema.valid?(document)
 
     schema.validate(document).each do |v|
@@ -70,6 +61,15 @@ Dir.glob('entries/*/*.json') do |file|
     puts "::error file=#{file}::File name should be the same as the domain name.
     Received: #{file_name}. Expected: #{expected_file_name}"
     status = 1
+  end
+  
+  name = document.keys[0]
+  if seen_names.include? name
+    puts "::error file=#{file}:: An entry with the name '#{name}' already exists. Duplicate site names are not allowed.
+    If this entry is not the same site, please rename '#{name}'."
+    status = 1
+  else
+    seen_names.push(name)
   end
 end
 
