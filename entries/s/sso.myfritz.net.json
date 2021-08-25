@@ -1,0 +1,17 @@
+{
+  "MyFRITZ!": {
+    "domain": "sso.myfritz.net",
+    "tfa": [
+      "totp",
+      "custom-hardware",
+      "u2f"
+    ],
+    "custom-hardware": [
+      "Smartphone biometrics (fingerprint, face recognition)"
+    ],
+    "documentation": "https://en.avm.de/service/knowledge-base/dok/FRITZ-Box-7590/3602_Security-tips-for-using-MyFRITZ/",
+    "keywords": [
+      "remote"
+    ]
+  }
+}
