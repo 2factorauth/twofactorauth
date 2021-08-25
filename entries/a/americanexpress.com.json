@@ -1,11 +1,11 @@
 {
   "American Express": {
     "domain": "americanexpress.com",
-    "url": "https://www.americanexpress.com/",
-    "contact": {
-      "facebook": "AmericanExpressUS",
-      "twitter": "AmericanExpress"
-    },
+    "tfa": [
+      "sms",
+      "email"
+    ],
+    "documentation": "https://www.americanexpress.com/uk/benefits/service-security/safety-fraud/authentication.html#tabs-759524196_3",
     "keywords": [
       "payments"
     ]
