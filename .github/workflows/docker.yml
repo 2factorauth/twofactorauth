@@ -8,13 +8,21 @@ on:
       - ./Dockerfile
       - ./scripts/entrypoint.sh
 jobs:
-  - uses: actions/checkout@v2
-  - uses: crazy-max/ghaction-docker-buildx@v3
+  - name: Checkout Repository
+    uses: actions/checkout@v2
+  - name: Docker Setup QEMU
+    uses: docker/setup-qemu-action@v1.2.0
+  - name: Docker Setup Buildx
+    uses: docker/setup-buildx-action@v1.5.1
+  - name: Docker Login
+    uses: docker/login-action@v1.10.0
     with:
-      buildx-version: latest
-      qemu-version: latest
-  - name: Docker build
-    run: |
-      echo "${{ secrets.DOCKER_PASSWORD }}" | docker login --username ${{ secrets.DOCKER_USERNAME }} --password-stdin
-      docker buildx create --use
-      docker buildx build --platform linux/amd64,linux/arm/v7,linux/arm64 --rm --tag 2factorauth/twofactorauth:latest --push --compress .
+      username: ${{ secrets.DOCKER_USERNAME }}
+      password: ${{ secrets.DOCKER_PASSWORD }}
+  - name: Build and push Docker images
+    uses: docker/build-push-action@v2.7.0
+    with:
+      context: .
+      platforms: linux/amd64,linux/arm/v7,linux/arm64
+      push: true
+      tags: ${{ GITHUB.REPOSITORY }}:latest
