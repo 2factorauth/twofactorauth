@@ -57,7 +57,7 @@ MacOS (_Requires Xcode_):
 xcode-select --install
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
 
-# Install ruby, webp & nodejs(npm)
+# Install ruby & nodejs(npm)
 brew install ruby
 brew install nodejs
 echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
