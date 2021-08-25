@@ -20,27 +20,34 @@ offer for their customers. This project also serves as an indicator of general s
 If you would like to contribute, please read the entire guidelines here in
 [CONTRIBUTING.md][contrib].
 
-## Local installation :hammer_and_wrench:
+## Installing dependencies :hammer_and_wrench:
 
-2fa.directory is built upon [Jekyll][jekyll], using the [github-pages][pages-gem] gem.
-In order to run the site locally, bundler, and all other dependencies will need to be installed, and afterwards Jekyll can serve
-the site.
+### 1. Docker
 
-Ubuntu:
-
-```bash
-sudo snap install ruby --classic
-sudo apt install webp npm
-npm i babel-minify
-bundle install --path vendor/bundle
+```BASH
+docker pull 2factorauth/twofactorauth
 ```
 
-Windows Subsystem for Linux (WSL):
+### 2. Snap
 
 ```bash
-sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev npm webp
+  sudo snap install ruby --classic
+  npm i babel-minify
+  bundle config set path './vendor/cache'
+  bundle install
+```
+
+### 3. Manual installation
+
+This is the most difficult option and recommended for environments where Docker or Snap can't be used.
+
+GNU/Linux and WSL:
+
+```bash
+sudo apt install build-essential ruby-bundler ruby-dev make gcc g++ zlib1g-dev npm
 npm i babel-minify
-bundle install --path vendor/bundle
+bundle config set path './vendor/cache'
+bundle install
 ```
 
 MacOS (_Requires Xcode_):
@@ -50,42 +57,55 @@ MacOS (_Requires Xcode_):
 xcode-select --install
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
 
-# Install ruby, webp & nodejs(npm)
+# Install ruby & nodejs(npm)
 brew install ruby
-brew install webp
 brew install nodejs
 echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
 
 # Install Bundler and dependencies
 gem install bundler
-bundle install --path vendor/bundle
+bundle config set path './vendor/cache'
+bundle install
 npm i babel-minify
 ```
 
-## Running locally :running:
+## Building :running:
 
-Ubuntu/WSL/MacOS:
+Docker (Windows/Linux/MacOS):
+
+```BASH
+docker run -p 4000:4000 -v $(pwd):/twofactorauth 2factorauth/twofactorauth
+```
+
+Snap/Manual:
 
 ```bash
-# Generating regional sites (Optional)
-ruby ./_deployment/regions.rb
+# Create _data/all.json
+ruby ./scripts/join-entries.rb > _data/all.json
 
-# Generate WebP images
-./_deployment/webp.sh
+# Generating API files
+mkdir -p api/v1 api/v2 api/v3
+bundle exec ruby ./scripts/APIv1.rb
+bundle exec ruby ./scripts/APIv2.rb
+bundle exec ruby ./scripts/APIv3.rb
 
 # Building the site
 bundle exec jekyll build
 
-# Running the site locally
-bundle exec jekyll serve --watch
-
 # Minify JS (Optional)
-./_deployment/minify-js.sh
+./scripts/minify-js.sh
+
+# Building regional sites (Optional)
+ruby ./scripts/regions.rb
 ```
 
-The TwoFactorAuth website should now be accessible from `http://localhost:4000`.
+To run the site on a minimal WEBrick webserver, do:
 
-Another option is to run Jekyll inside a [Docker][docker] container. Please read the [Jekyll Docker Documentation][jekyll_docker] on how to use Jekyll.
+```BASH
+bundle exec jekyll serve
+```
+
+The website should now be accessible from `http://localhost:4000`.
 
 ## License :balance_scale:
 
