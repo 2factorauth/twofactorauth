@@ -22,6 +22,8 @@
 
   .dropdown-menu {
     position: absolute !important; // Bootstrap normally sets position static for dropdowns in mobile views
+    background: #eeeeee;
+    z-index: 1100; // higher than ".cat"
 
     .dropdown-item {
       .flag-icon, .fas {
