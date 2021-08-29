@@ -19,14 +19,14 @@ def curl(url)
   # rubocop:enable Style/GuardClause
 end
 
-diff.each do |path|
+diff&.each do |path|
   # Make path global for curl()
   @path = path
   entry = JSON.parse(File.read(@path)).values[0]
 
   # Process the url,domain & additional-domains
   curl((entry.key?('url') ? entry['url'] : "https://#{entry['domain']}/"))
-  entry['additional-domains'].each { |domain| curl("https://#{domain}/") }
+  entry['additional-domains']&.each { |domain| curl("https://#{domain}/") }
 
   # Process documentation and recovery URLs
   curl(entry['documentation']) if entry.key? !entry['documentation'].start_with?('/notes/')
