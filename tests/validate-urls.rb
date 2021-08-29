@@ -3,7 +3,7 @@
 
 require 'English'
 require 'json'
-diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/ `.split("\n")
+diff = `git diff --name-only --diff-filter=AM origin/master HEAD entries/`.split("\n")
 
 def curl(url, path)
   puts `curl --fail -sSI #{url}`
