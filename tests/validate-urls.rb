@@ -3,14 +3,20 @@
 
 require 'English'
 require 'json'
+@status = 0
 
 # Fetch created/modified files in entries/**
 diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.split("\n")
 
 def curl(url)
   puts `curl --fail -sSI #{url}`
-  # Break build if above cURL exited with non-zero value
-  puts "::error file=#{@path}:: Unable to reach #{url}" unless $CHILD_STATUS.success?
+  # rubocop:disable Style/GuardClause
+  unless $CHILD_STATUS.success?
+    # Break build if above cURL exited with non-zero value
+    puts "::error file=#{@path}:: Unable to reach #{url}"
+    @status = 1
+  end
+  # rubocop:enable Style/GuardClause
 end
 
 diff.each do |path|
@@ -26,3 +32,4 @@ diff.each do |path|
   curl(entry['documentation']) if entry.key? !entry['documentation'].start_with?('/notes/')
   curl(entry['recovery']) if entry.key? 'recovery'
 end
+exit(@status)
