@@ -11,8 +11,6 @@ def curl(url, path)
 end
 
 diff.each do |path|
-  next if path.empty?
-
   entry = JSON.parse(File.read(path)).values[0]
 
   if entry.key? 'url'
