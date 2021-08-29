@@ -1,17 +1,19 @@
 {
   "Boursorama": {
     "domain": "boursorama.com",
-    "url": "https://www.boursorama.com/",
-    "contact": {
-      "facebook": "Boursorama-Banque-1741973942734447",
-      "twitter": "Boursorama",
-      "language": "fr"
-    },
-    "regions": [
-      "fr"
+    "additional-domains": [
+      "boursorama-banque.com"
     ],
+    "tfa": [
+      "sms",
+      "call"
+    ],
+    "documentation": "https://www.boursorama.com/aide-en-ligne/mon-espace-client/la-directive-europeenne-relative-aux-services-de-paiement-dsp2/question/64587956",
     "keywords": [
       "banking"
+    ],
+    "regions": [
+      "fr"
     ]
   }
 }
