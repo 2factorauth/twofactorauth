@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: git fetch origin
+        with:
+          fetch-depth: 0
       - name: Bundle install
         run: |
           bundle config set without jekyll_plugins
