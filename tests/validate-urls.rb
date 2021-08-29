@@ -22,5 +22,4 @@ diff.each do |path|
 
   curl(entry['documentation'], path) if entry.key? !entry['documentation'].start_with?('/notes/')
   curl(entry['recovery'], path) if entry.key? 'recovery'
-
 end
