@@ -7,7 +7,7 @@ on:
       - ./Gemfile
       - ./Dockerfile
       - ./scripts/entrypoint.sh
-      - ./github/workflows/docker.yml
+      - ./.github/workflows/docker.yml
 jobs:
   push_to_registry:
     name: Publish Docker Image
