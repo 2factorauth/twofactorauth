@@ -4,10 +4,10 @@ on:
     branches:
       - master
     paths:
-      - ./Gemfile
-      - ./Dockerfile
-      - ./scripts/entrypoint.sh
-      - ./.github/workflows/docker.yml
+      - 'Gemfile'
+      - 'Dockerfile'
+      - 'scripts/entrypoint.sh'
+      - '.github/workflows/docker.yml'
 jobs:
   push_to_registry:
     name: Publish Docker Image
