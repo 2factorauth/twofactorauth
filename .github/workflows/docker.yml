@@ -11,6 +11,10 @@ on:
 jobs:
   push_to_registry:
     name: Publish Docker Image
+    if: >
+      github.event_name == 'push' &&
+      github.ref == 'refs/heads/master' &&
+      github.repository == '2factorauth/twofactorauth'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
