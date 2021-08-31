@@ -4,7 +4,7 @@ jobs:
 
   tests:
     name: Tests
-    container: 2factorauth/twofactorauth:4.0
+    container: 2factorauth/twofactorauth:latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -35,7 +35,7 @@ jobs:
 
   build:
     name: Minimal build
-    container: 2factorauth/twofactorauth:4.0
+    container: 2factorauth/twofactorauth:latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -80,7 +80,7 @@ jobs:
       github.ref == 'refs/heads/master' &&
       github.repository == '2factorauth/twofactorauth'
     needs: [ tests, build ]
-    container: 2factorauth/twofactorauth:4.0
+    container: 2factorauth/twofactorauth:latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v2
