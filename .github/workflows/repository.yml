@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Bundle install
         run: |
           bundle config set without jekyll_plugins
@@ -28,6 +30,8 @@ jobs:
         run:  tests/file-extensions.sh
       - name: Validate Images
         run: bundle exec ruby ./tests/validate-images.rb
+      - name: Validate URL/Domain reachability
+        run: bundle exec ruby ./tests/validate-urls.rb
 
   build:
     name: Minimal build
@@ -36,7 +40,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Bundle install
-        run: | 
+        run: |
           bundle config set without test
           bundle install
       - name: Generate API files
