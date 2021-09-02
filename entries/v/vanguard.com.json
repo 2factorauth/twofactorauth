@@ -6,10 +6,10 @@
     "tfa": [
       "sms",
       "call",
-      "custom-hardware"
+      "u2f"
     ],
     "documentation": "https://investor.vanguard.com/security/security-keys",
-    "notes": "Hardware based 2FA requires SMS / Phone call 2FA as a backup. Hardware 2FA only works with the following hardware keys: Yubikey 4 Series, YubiKey 5 Series, Yubikey Security Key Series.",
+    "notes": "Hardware based 2FA requires SMS / Phone call 2FA as a backup.",
     "keywords": [
       "investing"
     ]
