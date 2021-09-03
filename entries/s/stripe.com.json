@@ -5,7 +5,11 @@
     "tfa": [
       "sms",
       "totp",
+      "u2f",
       "custom-hardware"
+    ],
+    "custom-hardware": [
+      "Biometrics - Windows Hello / Apple Touch ID"
     ],
     "documentation": "https://support.stripe.com/questions/how-do-i-enable-two-step-verification",
     "keywords": [
