@@ -9,7 +9,7 @@ data_dir = './_data'
 websites = JSON.parse(File.read("#{data_dir}/all.json"))
 regions = YAML.load_file("#{data_dir}/regions.yml")
 tmp_dir = '/tmp'
-
+regions.insert(0, { 'id' => 'int', 'name' => 'global' })
 git_dir = Dir.glob('.git')
 FileUtils.cp_r(git_dir, "#{tmp_dir}/") unless File.exist?("#{tmp_dir}/.git")
 
@@ -27,11 +27,11 @@ regions.each do |region|
 
   # Website loop
   websites.each do |name, website|
-    if website['regions'].nil? || website['regions'].include?(region['id'].to_s)
-      all[name] = website
-      website['keywords'].each do |kw|
-        used_categories[kw] = true
-      end
+    next unless website['regions'].nil? || website['regions'].include?(region['id']) || region['id'].eql?('int')
+
+    all[name] = website
+    website['keywords'].each do |kw|
+      used_categories[kw] = true
     end
   end
 
@@ -39,8 +39,9 @@ regions.each do |region|
 
   categories = JSON.parse(File.read("#{dest_dir}/_data/categories.json"))
 
-  File.open("#{dest_dir}/_data/categories.json", 'w') {
-    |file| file.write JSON.generate(categories.select{ |cat| used_categories[cat['name']] } ) }
+  File.open("#{dest_dir}/_data/categories.json", 'w') do |file|
+    file.write JSON.generate(categories.select { |cat| used_categories[cat['name']] })
+  end
 
   out_dir = "#{Dir.pwd}/_site/#{region['id']}"
   puts "Building #{region['id']}..."
