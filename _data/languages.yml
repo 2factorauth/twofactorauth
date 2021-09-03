@@ -1,28 +1,43 @@
 # Languages should be categorized according to ISO 639-1
 # Language codes (including within data files) should be in lowercase
 cs:
-  tweet: Bezpečnost je důležitá, @TWITTERHANDLE. Byli bychom rádi, kdybyste podporovali dvoufaktorové ověření.
+  tweets: 
+    - Bezpečnost je důležitá, @TWITTERHANDLE. Byli bychom rádi, kdybyste podporovali dvoufaktorové ověření.
 de:
   email_subject: Unterstützung von Zwei-Faktor-Authentifizierung
-  tweet: Sicherheit ist wichtig, @TWITTERHANDLE. Bitte aktiviert Zwei-Faktor-Authentifizierung auf eurer Webseite.
+  tweets: 
+    - Sicherheit ist wichtig, @TWITTERHANDLE. Bitte aktiviert Zwei-Faktor-Authentifizierung auf eurer Webseite.
+    - Zwei-Faktor-Authentifizierung ist ein wichtiges Sicherheitsmerkmal. Bitte unterstützt dies doch auch, @TWITTERHANDLE.
+    - Wir würden es sehr begrüßen, wenn ihr Zwei-Faktor-Authentifizierung unterstützen würdet, @TWITTERHANDLE. Die Sicherheit der Accounts wird dadurch wesentlich erhöht.
 en:
   email_subject: Support Two Factor Authentication
-  tweet: Security is important, @TWITTERHANDLE. We'd like it if you supported two factor authentication.
+  tweets: 
+    - Security is important, @TWITTERHANDLE. We'd like it if you supported two factor authentication.
+    - Two factor authentication is an important security feature. We'd like to see it supported @TWITTERHANDLE.
+    - We'd appreciate it if you could support two factor authentication @TWITTERHANDLE. It greatly improves account security.
 es:
   email_subject: Considere implementar autenticación de doble factor
-  tweet: La seguridad es importante, @TWITTERHANDLE. Nos gustaría que consideren implementar autenticación de doble factor (2FA).
+  tweets: 
+    - La seguridad es importante, @TWITTERHANDLE. Nos gustaría que consideren implementar autenticación de doble factor (2FA).
 fr:
-  tweet: La sécurité est importante @TWITTERHANDLE. C'est pour quand la double authentification (2FA)?
+  tweets: 
+    - La sécurité est importante @TWITTERHANDLE. C'est pour quand la double authentification (2FA)?
 he:
   email_subject: תמיכה באימות דו-שלבי
-  tweet: אבטחת מידע היא דבר חשוב, @TWITTERHANDLE. מתי תתמכו באימות דו-שלבי?
+  tweets:
+    - אבטחת מידע היא דבר חשוב, @TWITTERHANDLE. מתי תתמכו באימות דו-שלבי?
 it:
   email_subject: Suportare l'autenticazione a due fattori
-  tweet: La sicurezza è importante, @TWITTERHANDLE. Ci piacerebbe che supportaste l'autenticazione a due fattori (2FA).
+  tweets: 
+    - La sicurezza è importante, @TWITTERHANDLE. Ci piacerebbe che supportaste l'autenticazione a due fattori (2FA).
 ko:
   email_subject: "2단계 인증 지원을 요청합니다"
-  tweet: "@TWITTERHANDLE, 보안은 중요합니다. 웹 사이트에 2단계 인증(2FA)을 추가해 주세요."
+  tweets: 
+    - "@TWITTERHANDLE, 보안은 중요합니다. 웹 사이트에 2단계 인증(2FA)을 추가해 주세요."
 pt:
-  tweet: A segurança é importante, @TWITTERHANDLE. Agradecemos que suportasse a autenticação de dois fatores (2FA).
+  tweets: 
+    - A segurança é importante, @TWITTERHANDLE. Agradecemos que suportasse a autenticação de dois fatores (2FA).
 sv:
-  tweet: Säkerhet är viktigt, @TWITTERHANDLE. Vänligen lägg till two factor authentication på er hemsida.
+  tweets:
+    - Säkerhet är viktigt, @TWITTERHANDLE. Vänligen lägg till two factor authentication på er hemsida.
+    - "@TWITTERHANDLE snälla lägg till tvåfaktorsautentisering för användare."

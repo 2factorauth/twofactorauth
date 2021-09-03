@@ -19,9 +19,14 @@ let lang = $(this).data('lang')
 
 $('.twitter-button').click(function () {
   let langs = new Map();
+  let tweets = [];
 {% for lang in site.data.languages %}
-  {% if lang[1].tweet %}
-  langs.set("{{ lang[0] }}", "{{ lang[1].tweet |cgi_escape }}");
+  {% if lang[1].tweets %}
+    tweets = [];
+    {% for tweet in lang[1].tweets %}
+      tweets.push("{{ tweet |cgi_escape }}")
+    {% endfor %}
+    langs.set("{{ lang[0] }}", tweets);
   {% endif %}
 {% endfor %}
 
@@ -29,7 +34,8 @@ let lang = $(this).data('lang')
   const handle = $(this).data('twitter')
 
   if (!langs.has(lang) || lang == null) lang = "en"
-  const text = langs.get(lang).replace('TWITTERHANDLE', handle)
+  const index = Math.floor(Math.random() * langs.get(lang).length);
+  const text = langs.get(lang)[index].replace('TWITTERHANDLE', handle)
 
   window.open('https://twitter.com/share?hashtags=SupportTwoFactorAuth&text=' + text, '_blank');
 })
