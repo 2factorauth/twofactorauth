@@ -29,7 +29,7 @@ diff&.each do |path|
   entry['additional-domains']&.each { |domain| curl("https://#{domain}/") }
 
   # Process documentation and recovery URLs
-  curl(entry['documentation']) if entry.key?('documentation') && !entry['documentation'].start_with?('/notes/')
+  curl(entry['documentation']) if entry.key?('documentation')
   curl(entry['recovery']) if entry.key? 'recovery'
 end
 exit(@status)
