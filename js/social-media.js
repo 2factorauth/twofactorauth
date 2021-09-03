@@ -34,7 +34,7 @@ let lang = $(this).data('lang')
   const handle = $(this).data('twitter')
 
   if (!langs.has(lang) || lang == null) lang = "en"
-  const index = Math.floor(Math.random() * ((langs.get(lang).length-1) - 0 + 1) + 0);
+  const index = Math.floor(Math.random() * langs.get(lang).length);
   const text = langs.get(lang)[index].replace('TWITTERHANDLE', handle)
 
   window.open('https://twitter.com/share?hashtags=SupportTwoFactorAuth&text=' + text, '_blank');
