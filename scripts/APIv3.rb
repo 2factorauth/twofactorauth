@@ -20,4 +20,6 @@ avail_regions = YAML.load_file('_data/regions.yml').group_by { |hash| hash['id']
 regions.each { |k, v| v['selection'] = avail_regions.include? k }
 { 'all' => all }.merge(tfa).each { |k, v| File.open("api/v3/#{k}.json", 'w') { |file| file.write v.sort_by { |k, _v| k.downcase }.to_json } }
 
+regions['int'] = { "count" => all.length, "selection" => true }
+
 File.open('api/v3/regions.json', 'w') { |file| file.write regions.sort_by { |_, v| v['count'] }.reverse!.to_json }
