@@ -47,7 +47,7 @@
 
         {% if website.documentation %}
           <div class="btn doc-btn col-11 col-sm-8 d-flex justify-content-center website-doc">
-            <a href="{{ website.documentation }}">
+            <a href="{{ website.documentation | remove: 'https://2fa.directory' }}">
               <i class="fas fa-book"></i>
               Read more
             </a>
