@@ -2,7 +2,6 @@
 
 [![Build Status](https://img.shields.io/github/workflow/status/2factorauth/twofactorauth/Repository%20builds%20and%20tests?style=for-the-badge)][build_status]
 [![License](https://img.shields.io/badge/license-mit-9A0F2D.svg?style=for-the-badge)][license]
-[![Gitter](https://img.shields.io/gitter/room/2factorauth/twofactorauth.svg?style=for-the-badge&logo=gitter&color=ED1965)][gitter]
 [![Twitter](https://img.shields.io/badge/Twitter-@2faorg-1DA1F2.svg?style=for-the-badge&logo=twitter)][twitter]
 
 A list of popular sites and whether or not they support two factor authentication.
