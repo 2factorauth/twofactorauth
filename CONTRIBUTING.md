@@ -84,27 +84,10 @@ its removal.
 
 View the complete list in the [EXCLUSION.md file][exclude].
 
-## New Categories
-
-To add a new category, modify the [categories file][categories] and follow the
-template below:
-
-```JSON
-  {
-    "name" : "category-id",
-    "title": "Category Title",
-    "icon": "icon-class"
-  },
-```
-
-The `icon-class` value needs to be chosen from [Font Awesome][font-awesome].
-
-Then you can use the `category-id` as a keyword in the JSON file of your entry.
-
 ## New Sites
 
 First and foremost, make sure the new site meets our [definition
-requirements][definitions] of Two Factor Auth.
+requirements][definitions] of two factor authentication.
 
 If you are adding multiple sites to the TwoFactorAuth list, please create a new
 git branch for each website, and submit a separate pull request for each branch.
@@ -145,9 +128,9 @@ field.
 
 #### Adding a site that _supports_ TFA
 
-If a site does provide TFA, it is strongly recommended that you add the `doc`
-field where public documentation is available. Other fields should be included
-if the website supports them. Any services that are not supported can be excluded.
+Sites that provide TFA can be noted with the `tfa` field and should contain the TFA methods supported.
+If a site does provide TFA, it is strongly recommended that you add the `documentation`
+field where public documentation is available.
 Sites supporting TFA must not have a `contact` property.
 
 The following is an example of a website that _supports_ TFA:
@@ -173,10 +156,16 @@ The following is an example of a website that _supports_ TFA:
 
 #### Adding a site that _does not_ support TFA
 
-If a site does not provide TFA, the `twitter` field should be included if the site uses
-Twitter. Facebook can also be included using the `facebook` field, as well as Email using
-the `email_address` field. If the website does not use the English language, the `lang`
-field should also be included. The fields `tfa` and `doc` can be completely removed.
+If a site does not provide TFA, the `contact` field should be included.
+Inside of this object,
+* The `twitter` field should be included if the site uses Twitter. 
+* Facebook can also be included using the `facebook` field
+* Email can be included using the `email` field. 
+
+The `language` field inside `contact` can be included for websites that are not in English. The language
+codes should be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
+
+The fields `tfa` and `documentation` are not necessary.
 
 The following is an example of a website that _does not_ support TFA:
 
@@ -196,13 +185,10 @@ The following is an example of a website that _does not_ support TFA:
 }
 ```
 
-The `language` field inside `contact` can be included for non-English websites. The language
-codes should be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
-
 ### Exceptions & Restrictions
 
 If a site requires the user to do something out of the ordinary to set up 2FA or if 2FA is
-only available in specific countries, you can note this on the website.
+only available in specific countries or to specific account types, you can document this using the `notes` field.
 
 ```JSON
 {
@@ -316,30 +302,48 @@ The country codes should be lowercase [ISO 3166-1][iso-country-wikipedia] codes.
 }
 ```
 
+## New Categories
+
+To add a new category, modify the [categories file][categories] and follow the
+template below:
+
+```JSON
+  {
+    "name" : "category-id",
+    "title": "Category Title",
+    "icon": "icon-class"
+  },
+```
+
+The `icon-class` value needs to be chosen from [Font Awesome][font-awesome].
+
+Then you can use the `category-id` as a keyword in the JSON file of your entry.
+
+
 ### Pro Tips
 
 - See Guideline #2 about icons. The SVG file should go in the corresponding
   `img/` folder.
 
 - For the sake of organization and readability, it is appreciated if your site chunk
-  follows the same order as the example above.
+  follows the same order as the example earlier in the document.
 
-- If a site supports TFA, their contact information is not needed and can be left out
+- If a site supports TFA, their contact information is not needed and should be left out
   for cleanliness.
 
 ## A Note on Definitions
 
-A lot of people have different ideas of what constitutes Two Factor Auth and
+There are lots of different ideas of what constitutes two factor authentication and
 what doesn't, so it stands to reason that we should clarify a bit. For the
-purposes of this site, Two Factor Auth is defined as any service provided as a
+purposes of this site, two factor authentication is defined as any service provided as a
 redundant layer for account _authentication_. Services that provide
 _authorization_ redundancy are certainly appreciated, but should not be
-considered Two Factor Auth.
+considered two factor authentication.
 
 As an example, a site that prompts you for an authentication token following
-user login would be considered Two Factor Auth. A site that does not prompt you
+user login would be considered two factor authentication. A site that does not prompt you
 for a token upon login, but prompts you for a token when you try to perform a
-sensitive action would not be considered Two Factor Authentication.
+sensitive action would not be considered two factor authentication.
 
 For context, check out the discussion in issue [#242][242].
 
