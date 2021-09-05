@@ -13,3 +13,4 @@ all.sort.to_h.each do |k, v|
 end
 { 'all' => all }.merge(tfa).each { |k, v| File.open("api/v3/#{k}.json", 'w') { |file| file.write v.sort_by{ |k,v| k.downcase }.to_json } }
 File.open('api/v3/regions.json', 'w') { |file| file.write regions.sort_by(&:last).reverse.to_h.to_json }
+File.open('api/v3/tfa.json', 'w') { |file| file.write all.select{ |k,v| v.key? 'tfa' }.sort_by{ |k,v| k.downcase }.to_json }
