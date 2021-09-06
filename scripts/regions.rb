@@ -27,11 +27,11 @@ regions.each do |region|
 
   # Website loop
   websites.each do |name, website|
-    if website['regions'].nil? || website['regions'].include?(region['id'].to_s)
-      all[name] = website
-      website['keywords'].each do |kw|
-        used_categories[kw] = true
-      end
+    next unless website['regions'].nil? || website['regions'].include?(region['id'].to_s)
+
+    all[name] = website
+    website['keywords'].each do |kw|
+      used_categories[kw] = true
     end
   end
 
@@ -39,8 +39,9 @@ regions.each do |region|
 
   categories = JSON.parse(File.read("#{dest_dir}/_data/categories.json"))
 
-  File.open("#{dest_dir}/_data/categories.json", 'w') {
-    |file| file.write JSON.generate(categories.select{ |cat| used_categories[cat['name']] } ) }
+  File.open("#{dest_dir}/_data/categories.json", 'w') do |file|
+    file.write JSON.generate(categories.select { |cat| used_categories[cat['name']] })
+  end
 
   out_dir = "#{Dir.pwd}/_site/#{region['id']}"
   puts "Building #{region['id']}..."

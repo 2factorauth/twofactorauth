@@ -24,7 +24,8 @@ Dir.glob('entries/*/*.json') do |file|
   end
 
   if !website['img'].nil? && website['img'].eql?("#{website['domain']}.svg")
-    puts "::error file=#{file}:: Defining the img property for #{website['domain']} is not necessary - '#{website['img']}' is the default value"
+    puts "::error file=#{file}:: Defining the img property for #{website['domain']} is not necessary " \
+         "- '#{website['img']}' is the default value"
     status = 1
   end
 

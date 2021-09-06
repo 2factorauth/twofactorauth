@@ -32,6 +32,8 @@ jobs:
         run: bundle exec ruby ./tests/validate-images.rb
       - name: Validate URL/Domain reachability
         run: bundle exec ruby ./tests/validate-urls.rb
+      - name: Validate Ruby scripts
+        run: bundle exec rubocop
 
   build:
     name: Minimal build
