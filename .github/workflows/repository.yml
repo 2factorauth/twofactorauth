@@ -97,7 +97,7 @@ jobs:
       - uses: crazy-max/ghaction-import-gpg@v4
         id: pgp
         with:
-          gpg-private-key: ${{ secrets.pgp_key }}
+          gpg_private_key: ${{ secrets.pgp_key }}
           passphrase: ${{ secrets.pgp_passphrase }}
       - name: Sign API files
         working-directory: _site
