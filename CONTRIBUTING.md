@@ -161,8 +161,7 @@ Inside of this object,
 * The `twitter` field should be included if the site uses Twitter. 
 * Facebook can also be included using the `facebook` field.
 * Email can be included using the `email` field. 
-
-The `language` field inside `contact` can be included for websites that are not in English. The language
+* The `language` field inside `contact` can be included for websites whose social media pages/communication channels do not use English. The language
 codes should be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
 
 The fields `tfa` and `documentation` are not necessary.
