@@ -159,7 +159,7 @@ The following is an example of a website that _supports_ TFA:
 If a site does not provide TFA, the `contact` field should be included.
 Inside of this object,
 * The `twitter` field should be included if the site uses Twitter. 
-* Facebook can also be included using the `facebook` field
+* Facebook can also be included using the `facebook` field.
 * Email can be included using the `email` field. 
 
 The `language` field inside `contact` can be included for websites that are not in English. The language
@@ -328,8 +328,7 @@ Then you can use the `category-id` as a keyword in the JSON file of your entry.
 - For the sake of organization and readability, it is appreciated if your site chunk
   follows the same order as the example earlier in the document.
 
-- If a site supports TFA, their contact information is not needed and should be left out
-  for cleanliness.
+- If a site supports TFA, their contact information is not needed and must be left out.
 
 ## A Note on Definitions
 
