@@ -36,7 +36,7 @@ $('.twitter-button').click(function () {
   if (!langs.has(lang) || lang == null) lang = "en";
   const index = Math.floor(Math.random() * langs.get(lang).length);
   const text = langs.get(lang)[index].replace('TWITTERHANDLE', handle);
-  const url = "{{ site.github.url | cgi_escape }}";
+  const url = "{{ site.url | cgi_escape }}";
 
   window.open(`https://twitter.com/share?hashtags=SupportTwoFactorAuth&text=${text}&url=${url}`, '_blank');
 })
