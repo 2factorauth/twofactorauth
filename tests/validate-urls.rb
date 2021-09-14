@@ -3,20 +3,25 @@
 
 require 'English'
 require 'json'
-@status = 0
+require 'httpclient'
+status = 0
 
 # Fetch created/modified files in entries/**
-diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.split("\n")
+diff = `git diff --name-only --diff-filter=AM entries/`.split("\n")
 
 def curl(url)
-  `curl --fail -A "Mozilla/5.0 (compatible;  MSIE 7.01; Windows NT 5.0)" -H "FROM: https://2fa.directory" #{url}`
-  # rubocop:disable Style/GuardClause
-  unless $CHILD_STATUS.success?
-    # Break build if above cURL exited with non-zero value
-    puts "::error file=#{@path}:: Unable to reach #{url}"
-    @status = 1
-  end
-  # rubocop:enable Style/GuardClause
+  headers = { 'User-Agent' => 'Mozilla/5.0 (compatible;  MSIE 7.01; Windows NT 5.0)', 'FROM' => '2fa.directory' }
+  req = HTTPClient.new
+  req.receive_timeout = 8
+  return 0 if (res = req.get(url, nil, headers, follow_redirect: true).status == 200)
+
+  raise(nil) unless res.status.match?('/50\d/')
+
+  puts "::warning file=#{@path}:: Unexpected response from #{url} (#{res.status})"
+  0
+rescue StandardError => _e
+  puts "::error file=#{@path}:: Unable to reach #{url} #{res.respond_to?('status') ? res.status : nil}"
+  1
 end
 
 diff&.each do |path|
@@ -25,11 +30,11 @@ diff&.each do |path|
   entry = JSON.parse(File.read(@path)).values[0]
 
   # Process the url,domain & additional-domains
-  curl((entry.key?('url') ? entry['url'] : "https://#{entry['domain']}/"))
-  entry['additional-domains']&.each { |domain| curl("https://#{domain}/") }
+  status += curl((entry.key?('url') ? entry['url'] : "https://#{entry['domain']}/"))
+  entry['additional-domains']&.each { |domain| status += curl("https://#{domain}/") }
 
   # Process documentation and recovery URLs
-  curl(entry['documentation']) if entry.key?('documentation')
-  curl(entry['recovery']) if entry.key? 'recovery'
+  status += curl(entry['documentation']) if entry.key?('documentation')
+  status += curl(entry['recovery']) if entry.key? 'recovery'
 end
-exit(@status)
+exit(status)
