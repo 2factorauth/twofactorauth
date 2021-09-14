@@ -7,7 +7,7 @@ require 'httpclient'
 status = 0
 
 # Fetch created/modified files in entries/**
-diff = `git diff --name-only --diff-filter=AM entries/`.split("\n")
+diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.split("\n")
 
 def curl(url)
   headers = { 'User-Agent' => 'Mozilla/5.0 (compatible;  MSIE 7.01; Windows NT 5.0)', 'FROM' => '2fa.directory' }
