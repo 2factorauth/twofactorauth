@@ -1,23 +1,23 @@
 # 2fa.directory
 
-[![Build Status](https://img.shields.io/github/workflow/status/2factorauth/twofactorauth/Jekyll%20Tests?style=for-the-badge)][build_status]
+[![Build Status](https://img.shields.io/github/workflow/status/2factorauth/twofactorauth/Repository%20builds%20and%20tests?style=for-the-badge)][build_status]
 [![License](https://img.shields.io/badge/license-mit-9A0F2D.svg?style=for-the-badge)][license]
-[![Gitter](https://img.shields.io/gitter/room/2factorauth/twofactorauth.svg?style=for-the-badge&logo=gitter&color=ED1965)][gitter]
 [![Twitter](https://img.shields.io/badge/Twitter-@2faorg-1DA1F2.svg?style=for-the-badge&logo=twitter)][twitter]
 
-A list of popular sites and whether or not they accept two factor auth.
+A list of popular sites and whether or not they support two factor authentication.
 
 ## The Goal :goal_net:
 
 The goal of this project is to build a website ([2fa.directory][site_url]) with a list of popular sites that support
-Two Factor Authentication, as well as the methods that they provide.
+two factor authentication, as well as the methods that they provide.
 
 Our hope is to aid consumers who are deciding between alternative services based on the security they
 offer for their customers. This project also serves as an indicator of general security efforts used on a site.
 
 ## Contributing :pencil2:
 
-If you would like to contribute, please read the entire guidelines here in
+2fa.directory is only possible thanks to community contributions. We welcome all contributions to the project.
+If you would like to contribute, please read the entire guidelines in
 [CONTRIBUTING.md][contrib].
 
 ## Installing dependencies :hammer_and_wrench:
@@ -121,4 +121,3 @@ This code is distributed under the MIT license. For more info, read the
 [jekyll]: https://jekyllrb.com/
 [pages-gem]: https://github.com/github/pages-gem
 [docker]: https://www.docker.com/
-[jekyll_docker]: https://github.com/envygeeks/jekyll-docker/blob/master/README.md

@@ -9,7 +9,7 @@ require 'json'
 diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.split("\n")
 
 def curl(url)
-  puts `curl --fail -sSI -A "Mozilla/5.0 (compatible;  MSIE 7.01; Windows NT 5.0)" -H "FROM: https://2fa.directory" #{url}`
+  `curl --fail -A "Mozilla/5.0 (compatible;  MSIE 7.01; Windows NT 5.0)" -H "FROM: https://2fa.directory" #{url}`
   # rubocop:disable Style/GuardClause
   unless $CHILD_STATUS.success?
     # Break build if above cURL exited with non-zero value
@@ -29,7 +29,7 @@ diff&.each do |path|
   entry['additional-domains']&.each { |domain| curl("https://#{domain}/") }
 
   # Process documentation and recovery URLs
-  curl(entry['documentation']) if entry.key?('documentation') && !entry['documentation'].start_with?('/notes/')
+  curl(entry['documentation']) if entry.key?('documentation')
   curl(entry['recovery']) if entry.key? 'recovery'
 end
 exit(@status)

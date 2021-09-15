@@ -3,17 +3,13 @@
 
 The data collected for the 2fa.directory website is also available as JSON files in order to enable developers to use it in their own programs. It is recommended to use the API with the highest version number, since older versions might not include all available information.
 
-### URL & Domain matching
-
-If you're using our API to match client URLs with our dataset make sure you only use the domain of the `url`-element, as a website commonly uses subdomains and subdirectories. Please note that there are exceptions like `.co.uk`, `.com.au` or `.co.nz` where the actual domain is found at a lower level.
-
 ### Caching
 
 If you intend to query our JSON files often and with a lot of traffic, you may be blocked by Cloudflare, our reverse proxy provider. We therefore recommend that you cache the files locally for any large traffic cases.
 
 ### Avoid downloading unnecessary data
 
-If you only intent on using a specific dataset, like all sites supporting RFC-6238, we recommend that you use the URI which lists just that. See [URIs](#uris-1) for a list of available paths. The smaller the better.
+If you only intent on using a specific dataset, like all sites supporting RFC-6238, we recommend that you use the URI which lists just that. See [URIs](#uris) for a list of available paths. The smaller the better.
 
 ## Version 3
 
@@ -28,7 +24,7 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
 |Email 2FA|https://2fa.directory/api/v3/email.json|https://2fa.directory/api/v3/email.json.sig|
 |non-U2F hardware 2FA tokens|https://2fa.directory/api/v3/custom-hardware.json|https://2fa.directory/api/v3/custom-hardware.json.sig|
 |U2F hardware tokens|https://2fa.directory/api/v3/u2f.json|https://2fa.directory/api/v3/u2f.json.sig|
-|RFC-6238|https://2fa.directory/api/v3/totp.json|https://2fa.directory/api/v3/totp.json.sig|
+|RFC-6238 (TOTP)|https://2fa.directory/api/v3/totp.json|https://2fa.directory/api/v3/totp.json.sig|
 |non-RFC-6238 software 2FA|https://2fa.directory/api/v3/custom-software.json|https://2fa.directory/api/v3/custom-software.json.sig|
 
 
@@ -113,7 +109,7 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
 ]
 ```
 
-## Version 2
+## Version 2 (Deprecated) :warning:
 
 ### URIs
 
@@ -126,7 +122,7 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
 |Email 2FA|https://2fa.directory/api/v2/email.json|https://2fa.directory/api/v2/email.json.sig|
 |non-U2F hardware 2FA tokens|https://2fa.directory/api/v2/hardware.json|https://2fa.directory/api/v2/hardware.json.sig|
 |U2F hardware tokens|https://2fa.directory/api/v2/u2f.json|https://2fa.directory/api/v2/u2f.json.sig|
-|RFC-6238|https://2fa.directory/api/v2/totp.json|https://2fa.directory/api/v2/totp.json.sig|
+|RFC-6238 (TOTP)|https://2fa.directory/api/v2/totp.json|https://2fa.directory/api/v2/totp.json.sig|
 |non-RFC-6238 software 2FA|https://2fa.directory/api/v2/proprietary.json|https://2fa.directory/api/v2/proprietary.json.sig|
 
 

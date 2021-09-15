@@ -48,7 +48,7 @@
             <td class="icon-cell">
               <div class="row">
               {% if website.documentation %}
-                <a href="{{ website.documentation }}" class="col">
+                <a href="{{ website.documentation | remove: 'https://2fa.directory' }}" class="col">
                   <i class="fas fa-book"></i>
                 </a>
               {% endif %}
