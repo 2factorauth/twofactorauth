@@ -24,7 +24,7 @@ regions.each { |k, v| v['selection'] = avail_regions.include? k }
   File.open("api/v3/#{k}.json", 'w') { |file| file.write v.sort_by { |a, _| a.downcase }.to_json }
 end
 
-regions['int'] = { "count" => all.length, "selection" => true }
+regions['int'] = { 'count' => all.length, 'selection' => true }
 
 File.open('api/v3/regions.json', 'w') { |file| file.write regions.sort_by { |_, v| v['count'] }.reverse!.to_json }
 # rubocop:disable Layout/LineLength
