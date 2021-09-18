@@ -37,6 +37,7 @@ $('.twitter-button').click(function () {
   const index = Math.floor(Math.random() * langs.get(lang).length);
   const text = langs.get(lang)[index].replace('TWITTERHANDLE', handle);
   const url = "{{ site.url | cgi_escape }}";
+  const tfa_handle = "{{ site.twitter | cgi_escape }}";
 
-  window.open(`https://twitter.com/share?hashtags=SupportTwoFactorAuth&text=${text}&url=${url}`, '_blank');
+  window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}&hashtags=SupportTwoFactorAuth&related=${tfa_handle}`, '_blank');
 })
