@@ -81,11 +81,19 @@
             <td class="icon-cell">
               <div class="row">
                 {% if tfa contains "custom-hardware" %}
-                  <i class="tfa-icon fas fa-check col"></i>
+                  <i class="tfa-icon fas fa-info col"
+                     title="{%- if website.custom-hardware -%}
+                     Required hardware token: {{ website.custom-hardware }}
+                     {%- else -%}
+                     Requires custom hardware token
+                     {%- endif -%}
+                     "
+
+                  ></i>
                 {% endif %}
 
                 {% if tfa contains "u2f" %}
-                  <i class="tfa-icon u2f-icon col" title="U2F">
+                  <i class="tfa-icon u2f-icon col" title="U2F/WebAuthn support">
                     <img alt="U2F" height="20" src="/img/u2f.svg" loading="lazy" type="image/svg">
                   </i>
                 {% endif %}
@@ -98,7 +106,14 @@
                   <i class="tfa-icon fas fa-check col"></i>
                 {% endif %}
                 {% if tfa contains "custom-software" %}
-                  <i class="tfa-icon fas fa-info col" title="Proprietary software based 2FA"></i>
+                  <i class="tfa-icon fas fa-info col"
+                     title="{%- if website.custom-software -%}
+                     Required app: {{ website.custom-software }}
+                     {%- else -%}
+                     Requires proprietary app/software
+                     {%- endif -%}
+                     "
+                  ></i>
                 {% endif %}
               </div>
             </td>
