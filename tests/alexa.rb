@@ -20,7 +20,6 @@ def fetch_from_api(site)
   raise("#{site} doesn't have an Alexa ranking") if rank.nil?
   raise("#{site} is ranked above the maximum rank of 200K") if rank.to_i > 200_000
 end
-
 # rubocop:enable Metrics/AbcSize
 
 def fetch_from_cache(site)
@@ -44,11 +43,9 @@ status = 0
 diff = `git diff origin/master...HEAD entries/ | sed -n 's/^+.*"domain"[^"]*"\\(.*\\)".*/\\1/p'`
 # Strip and loop through diff
 diff.split("\n").each do |site|
-  begin
-    fetch_from_api(site) unless fetch_from_cache(site)
-  rescue StandardError => e
-    puts "\e[31m#{e.message}\e[39m"
-    status = 1
-  end
+  fetch_from_api(site) unless fetch_from_cache(site)
+rescue StandardError => e
+  puts "\e[31m#{e.message}\e[39m"
+  status = 1
 end
 exit(status)
