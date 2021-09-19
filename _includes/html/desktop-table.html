@@ -83,7 +83,7 @@
                 {% if tfa contains "custom-hardware" %}
                   <i class="tfa-icon fas fa-info col"
                      title="{%- if website.custom-hardware -%}
-                     Required hardware token: {{ website.custom-hardware }}
+                     Required hardware token:&#013;{%- for item in website.custom-hardware -%} {{ item }}&#013; {%- endfor -%}
                      {%- else -%}
                      Requires custom hardware token
                      {%- endif -%}
