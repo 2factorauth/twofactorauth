@@ -108,7 +108,7 @@
                 {% if tfa contains "custom-software" %}
                   <i class="tfa-icon fas fa-info col"
                      title="{%- if website.custom-software -%}
-                     Required app: {{ website.custom-software }}
+                     Required app:&#013;{%- for item in website.custom-software -%} {{ item }}&#013; {%- endfor -%}
                      {%- else -%}
                      Requires proprietary app/software
                      {%- endif -%}
