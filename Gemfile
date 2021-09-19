@@ -9,6 +9,7 @@ group :jekyll_plugins do
 end
 
 group :test do
+  gem 'httpclient'
   gem 'json_schemer'
   gem 'rubocop'
   gem 'twitter'

@@ -3,20 +3,24 @@
 
 require 'English'
 require 'json'
-@status = 0
+require 'httpclient'
+status = 0
 
 # Fetch created/modified files in entries/**
 diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.split("\n")
 
 def curl(url)
-  puts `curl --fail -sS -A "Mozilla/5.0 (compatible;  MSIE 7.01; Windows NT 5.0)" -H "FROM: https://2fa.directory" #{url}`
-  # rubocop:disable Style/GuardClause
-  unless $CHILD_STATUS.success?
-    # Break build if above cURL exited with non-zero value
-    puts "::error file=#{@path}:: Unable to reach #{url}"
-    @status = 1
-  end
-  # rubocop:enable Style/GuardClause
+  headers = { 'User-Agent' => 'Mozilla/5.0 (compatible;  MSIE 7.01; Windows NT 5.0)', 'FROM' => '2fa.directory' }
+  req = HTTPClient.new
+  req.receive_timeout = 8
+  res = req.get(url, nil, headers, follow_redirect: true)
+  return if res.status == 200
+  raise(nil) unless res.status.to_s.match(/50\d|403/)
+
+  puts "::warning file=#{@path}:: Unexpected response from #{url} (#{res.status})"
+rescue StandardError => _e
+  puts "::error file=#{@path}:: Unable to reach #{url} #{res.respond_to?('status') ? res.status : nil}"
+  1
 end
 
 diff&.each do |path|
@@ -25,11 +29,11 @@ diff&.each do |path|
   entry = JSON.parse(File.read(@path)).values[0]
 
   # Process the url,domain & additional-domains
-  curl((entry.key?('url') ? entry['url'] : "https://#{entry['domain']}/"))
-  entry['additional-domains']&.each { |domain| curl("https://#{domain}/") }
+  status += curl((entry.key?('url') ? entry['url'] : "https://#{entry['domain']}/")).to_i
+  entry['additional-domains']&.each { |domain| status += curl("https://#{domain}/").to_i }
 
   # Process documentation and recovery URLs
-  curl(entry['documentation']) if entry.key?('documentation')
-  curl(entry['recovery']) if entry.key? 'recovery'
+  status += curl(entry['documentation']).to_i if entry.key? 'documentation'
+  status += curl(entry['recovery']).to_i if entry.key? 'recovery'
 end
-exit(@status)
+exit(status)
