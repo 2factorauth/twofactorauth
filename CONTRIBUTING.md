@@ -331,6 +331,8 @@ Then you can use the `category-id` as a keyword in the JSON file of your entry.
 
 ## A Note on Definitions
 
+### Authorization
+
 There are lots of different ideas of what constitutes two factor authentication and
 what doesn't, so it stands to reason that we should clarify a bit. For the
 purposes of this site, two factor authentication is defined as any service provided as a
@@ -344,6 +346,10 @@ for a token upon login, but prompts you for a token when you try to perform a
 sensitive action would not be considered two factor authentication.
 
 For context, check out the discussion in issue [#242][242].
+
+### Passwordless Authentication
+
+Many sites are now offering passwordless authentication, which replace the password (something you know) with a different factor, such as something you have or are. Examples of this would be sites which allow users to use a U2F key, or a magic link to login, but do not have a second factor available. Since there is still only one factor being used (although it may not be a password), it does not constitute two factor authentication.
 
 [json]: https://www.json.org/
 [entries]: entries/
