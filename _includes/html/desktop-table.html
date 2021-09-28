@@ -20,7 +20,7 @@
         <tr class="table-{% if website.tfa %}success{% else %}danger{% endif %}">
 
           <td>
-            <div class="searchWords" style="display: none;">{{ name }} {{ website.domain }}{% for item in website.tfa %} 2fa:{{ item }}{% endfor %} {% for domain in website.additional-domains %} {{ domain }} {% endfor %}</div>
+            <div class="searchWords" style="display: none;">{{ name }} {{ website.domain }}{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}{% for item in website.custom-hardware %} 2fa:{{item}}{% endfor %}{% for item in website.custom-software %} 2fa:{{item}}{% endfor %} {% for domain in website.additional-domains %} {{ domain }} {% endfor %}</div>
             <div class="row no-gutters">
               <a class="site-name {% if website.notes %}exception-site{% endif %}" href="{% if website.url %}{{ website.url }}{% else %}https://{{ website.domain }}{% endif %}">
               <!-- Image -->
@@ -81,11 +81,24 @@
             <td class="icon-cell">
               <div class="row">
                 {% if tfa contains "custom-hardware" %}
-                  <i class="tfa-icon fas fa-check col"></i>
+                  <i class="tfa-icon fas fa-info col"
+                     title="{%- if website.custom-hardware -%}
+                     {%- if website.custom-hardware.size > 1 -%}
+                     Requires one of:
+                     {%- else -%}
+                     Required hardware token:
+                     {%- endif-%}
+                     {%- for item in website.custom-hardware -%}&#013; {{ item }} {%- endfor -%}
+                     {%- else -%}
+                     Requires custom hardware token
+                     {%- endif -%}
+                     "
+
+                  ></i>
                 {% endif %}
 
                 {% if tfa contains "u2f" %}
-                  <i class="tfa-icon u2f-icon col" title="U2F">
+                  <i class="tfa-icon u2f-icon col" title="U2F/WebAuthn support">
                     <img alt="U2F" height="20" src="/img/u2f.svg" loading="lazy" type="image/svg">
                   </i>
                 {% endif %}
@@ -98,7 +111,19 @@
                   <i class="tfa-icon fas fa-check col"></i>
                 {% endif %}
                 {% if tfa contains "custom-software" %}
-                  <i class="tfa-icon fas fa-info col" title="Proprietary software based 2FA"></i>
+                  <i class="tfa-icon fas fa-info col"
+                     title="{%- if website.custom-software -%}
+                     {%- if website.custom-hardware.size > 1 -%}
+                     Requires one of:
+                     {%- else -%}
+                     Required app:
+                     {%- endif-%}
+                     {%- for item in website.custom-software -%}&#013; {{ item }} {%- endfor -%}
+                     {%- else -%}
+                     Requires proprietary app/software
+                     {%- endif -%}
+                     "
+                  ></i>
                 {% endif %}
               </div>
             </td>
