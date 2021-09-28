@@ -83,7 +83,12 @@
                 {% if tfa contains "custom-hardware" %}
                   <i class="tfa-icon fas fa-info col"
                      title="{%- if website.custom-hardware -%}
-                     Required hardware token:{%- for item in website.custom-hardware -%}&#013; {{ item }} {%- endfor -%}
+                     {%- if website.custom-hardware.size > 1 -%}
+                     Requires one of:
+                     {%- else -%}
+                     Required hardware token:
+                     {%- endif-%}
+                     {%- for item in website.custom-hardware -%}&#013; {{ item }} {%- endfor -%}
                      {%- else -%}
                      Requires custom hardware token
                      {%- endif -%}
@@ -108,7 +113,12 @@
                 {% if tfa contains "custom-software" %}
                   <i class="tfa-icon fas fa-info col"
                      title="{%- if website.custom-software -%}
-                     Required app:{%- for item in website.custom-software -%}&#013; {{ item }} {%- endfor -%}
+                     {%- if website.custom-hardware.size > 1 -%}
+                     Requires one of:
+                     {%- else -%}
+                     Required app:
+                     {%- endif-%}
+                     {%- for item in website.custom-software -%}&#013; {{ item }} {%- endfor -%}
                      {%- else -%}
                      Requires proprietary app/software
                      {%- endif -%}
