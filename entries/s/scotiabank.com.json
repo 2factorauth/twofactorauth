@@ -1,13 +1,18 @@
 {
-  "Scotiabank": {
+  "Scotiabank Canada": {
     "domain": "scotiabank.com",
-    "url": "https://www.scotiabank.com",
-    "contact": {
-      "facebook": "scotiabank",
-      "twitter": "ScotiabankHelps"
-    },
+    "tfa": [
+      "custom-software"
+    ],
+    "custom-software": [
+      "Scotiabank App"
+    ],
+    "documentation": "https://www.scotiabank.com/ca/en/personal/bank-your-way/digital-banking-guide/banking-basics/two-step-verification.html",
     "keywords": [
       "banking"
+    ],
+    "regions": [
+      "ca"
     ]
   }
 }
