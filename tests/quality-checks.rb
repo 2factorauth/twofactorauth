@@ -8,13 +8,11 @@ diff = `git diff --name-only --diff-filter=Ar origin/master...HEAD entries/`.spl
 
 diff&.each do |path|
   entry = JSON.parse(File.read(path)).values[0]
-  # rubocop:disable Layout/LineLength
-  unless entry['documentation']
-    puts "::notice file=#{path} title=Missing Documentation::Since there is no documentation available, please could you provide us with screenshots of the setup/login process as evidence of 2FA? Please remember to block out any personal information."
-  end
+  next unless entry.key? 'tfa'
 
-  if (entry['tfa'].include?('custom-software') && !entry['custom-software']) || (entry['tfa'].include?('custom-hardware') && !entry['custom-hardware'])
-    puts "::warning file=#{path}:: A `custom-property` tag is needed since it has been included in the `tfa` array."
-  end
+  # rubocop:disable Layout/LineLength
+  puts "::notice file=#{path} title=Missing Documentation:: Since there is no documentation available, please could you provide us with screenshots of the setup/login process as evidence of 2FA? Please remember to block out any personal information." unless entry['documentation']
+  puts "::warning file=#{path}:: A `custom-software` tag is needed since it has been included in the `tfa` array." if entry['tfa'].include?('custom-software') && !entry['custom-software']
+  puts "::warning file=#{path}:: A `custom-hardware` tag is needed since it has been included in the `tfa` array." if entry['tfa'].include?('custom-hardware') && !entry['custom-hardware']
   # rubocop:enable Layout/LineLength
 end
