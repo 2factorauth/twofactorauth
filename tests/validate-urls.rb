@@ -19,7 +19,7 @@ def new_http_client
 end
 
 def curl(url)
-  res = new_http_client.get(url, nil, follow_redirect: true)
+  res = new_http_client.get(url, follow_redirect: true)
   return if res.status == 200
   raise(nil) unless res.status.to_s.match(/50\d|403/)
 
