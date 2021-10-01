@@ -12,7 +12,7 @@ are stored in folders corresponding to each of those entries in their own
 ## Guidelines
 
 1. **Don't break the build**: We have a simple continuous integration system
-   setup with Github Actions. If your pull request doesn't pass, it won't be
+   setup with GitHub Actions. If your pull request doesn't pass, it won't be
    merged. GH Actions will only check your changes after you submit a pull request.
    If you want to test locally, instructions are listed below. Keep reading!
 2. **Use a Nice Icon**: SVG is the preferred format. If possible, please also run the image 
@@ -31,31 +31,17 @@ are stored in folders corresponding to each of those entries in their own
 
 ## Running Locally
 
-It's easy to run everything locally to test it out. Either you can have plain
-[Jekyll][jekyll] installed or you can use [Bundler][bundler] to manage
-everything for you.
-
-### Using Bundler
-
-1. To install Bundler, just run `gem install bundler`.
-2. Install dependencies in the [Gemfile][gemfile], `bundle install`.
-3. Run Jekyll: `bundle exec jekyll serve --watch`. The `--watch` is optional and
-   makes Jekyll watch for file changes.
+There are detailed instructions on installing dependencies and running locally available in the [README][README].
 
 #### Testing with Bundler
 
 There are a number of tests that are run automatically for a GitHub pull request.
-They are listed in `.github/workflows/repository.yml` in the `tests:` block.
+They are listed in `.github/workflows/repository.yml` in the [`tests:` block][tests].
 You can run these manually as well, e.g to test your JSON changes:
 
 ```bash
 $ bundle exec ruby ./tests/validate-json.rb
 ```
-
-### Using Vanilla Jekyll
-
-1. Install Jekyll if you don't already have it: `gem install jekyll`.
-2. Run Jekyll: `jekyll serve --watch`. The `--watch` is again optional.
 
 ## Site Criteria
 
@@ -78,11 +64,8 @@ criteria, simply open an issue and we'll take a look.
 
 ### Excluded Sites
 
-A list for excluded sites has also been created to ensure sites that have been
-removed are not added in the future. The list also contains the reason for
-its removal.
-
-View the complete list in the [EXCLUSION.md file][exclude].
+A list for excluded sites and categories has also been created with various categories and sites that we have opted not to list on 2fa.directory.
+You should check the list in the [EXCLUSION.md file][exclude] to make sure that your site is eligible before submitting a pull request.
 
 ## New Sites
 
@@ -102,7 +85,6 @@ the corresponding [subdirectory][entries] as shown in the following example:
 {
   "Site Name": {
     "domain": "site.com",
-    "url": "https://www.site.com",
     "img": "site.com.png",
     "tfa": [
       "sms",
@@ -121,10 +103,10 @@ the corresponding [subdirectory][entries] as shown in the following example:
   }
 }
 ```
-
-The `url` field is optional if the value is `https://` followed by the `domain`.
-The default value for the icon is `<domain>.svg`, but can be overridden by an `img`
+- Keywords must be selected from the values listed in [`categories.json`][categories].
+- The default value for the icon is `<domain>.svg`, but can be overridden by an `img`
 field.
+- If you would like the site's link on 2fa.directory to be different to `https://<domain>`, you can use a `url` field to specify this.
 
 #### Adding a site that _supports_ TFA
 
@@ -354,9 +336,8 @@ For context, check out the discussion in issue [#242][242].
 [authy]: https://authy.com/
 [duo]: https://duo.com/
 [googleauthenticator]: https://github.com/google/google-authenticator
-[jekyll]: https://jekyllrb.com/
-[bundler]: https://bundler.io/
-[gemfile]: /Gemfile
+[README]: https://github.com/2factorauth/twofactorauth#installing-dependencies-hammer_and_wrench
+[tests]: https://github.com/2factorauth/twofactorauth/blob/master/.github/workflows/repository.yml
 [exclude]: /EXCLUSION.md
 [categories]: _data/categories.json
 [font-awesome]: https://fontawesome.com/icons?d=gallery&p=2&m=free
