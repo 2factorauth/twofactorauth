@@ -337,7 +337,7 @@ For context, check out the discussion in issue [#242][242].
 [duo]: https://duo.com/
 [googleauthenticator]: https://github.com/google/google-authenticator
 [README]: https://github.com/2factorauth/twofactorauth#installing-dependencies-hammer_and_wrench
-[tests]: https://github.com/2factorauth/twofactorauth/blob/master/.github/workflows/repository.yml#L23
+[tests]: https://github.com/2factorauth/twofactorauth/blob/master/.github/workflows/repository.yml
 [exclude]: /EXCLUSION.md
 [categories]: _data/categories.json
 [font-awesome]: https://fontawesome.com/icons?d=gallery&p=2&m=free
