@@ -9,11 +9,17 @@ status = 0
 # Fetch created/modified files in entries/**
 diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.split("\n")
 
+def new_http_client
+  agent_name = 'Mozilla/5.0 (compatible;  MSIE 7.01; Windows NT 5.0)'
+  from = '2fa.directory'
+  client = HTTPClient.new(nil, agent_name, from)
+  client.ssl_config.set_default_paths # ignore built-in CA and use system defaults
+  client.receive_timeout = 8
+  client
+end
+
 def curl(url)
-  headers = { 'User-Agent' => 'Mozilla/5.0 (compatible;  MSIE 7.01; Windows NT 5.0)', 'FROM' => '2fa.directory' }
-  req = HTTPClient.new
-  req.receive_timeout = 8
-  res = req.get(url, nil, headers, follow_redirect: true)
+  res = new_http_client.get(url, nil, follow_redirect: true)
   return if res.status == 200
   raise(nil) unless res.status.to_s.match(/50\d|403/)
 
