@@ -12,6 +12,8 @@ diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.spl
 def curl(url)
   headers = { 'User-Agent' => 'Mozilla/5.0 (compatible;  MSIE 7.01; Windows NT 5.0)', 'FROM' => '2fa.directory' }
   req = HTTPClient.new
+  # ignore built-in CA and use system defaults
+  req.ssl_config.set_default_paths
   req.receive_timeout = 8
   res = req.get(url, nil, headers, follow_redirect: true)
   return if res.status == 200
