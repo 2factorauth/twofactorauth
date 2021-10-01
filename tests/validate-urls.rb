@@ -12,7 +12,7 @@ diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.spl
 def new_http_client
   agent_name = 'Mozilla/5.0 (compatible;  MSIE 7.01; Windows NT 5.0)'
   from = '2fa.directory'
-  client = HTTPClient.new(agent_name, from)
+  client = HTTPClient.new(nil, agent_name, from)
   client.ssl_config.set_default_paths # ignore built-in CA and use system defaults
   client.receive_timeout = 8
   client
