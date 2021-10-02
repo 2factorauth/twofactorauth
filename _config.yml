@@ -1,18 +1,20 @@
+title: 2FA Directory
+url: https://2fa.directory
 permalink: pretty
 markdown: kramdown
 twitter: 2faorg
 social_image: https://repository-images.githubusercontent.com/17724730/63495880-b408-11e9-8cc4-03451aa4cc14
 exclude:
   - EXCLUSION.md
-  - Gemfile
-  - "*.lock"
-  - LICENSE
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - LICENSE.md
   - README.md
-  - Rakefile
+  - Gemfile
+  - Dockerfile
+  - "*.lock"
+  - ".*"
   - vendor/
   - scripts/
   - tests/
-  - api/v2/README.md
-  - ".*"
-  - .idea/
 theme: null
