@@ -15,7 +15,9 @@ else
   url = URI(@list_url)
   headers = {
     'Accept' => 'application/json',
-    'User-Agent' => 'twofactorauth (https://github.com/2factorauth/twofactorauth.git)'
+    'User-Agent' => '2FactorAuth/RegionValidator' \
+    "(HTTPClient/#{Gem.loaded_specs['httpclient'].version} on Ruby/#{RUBY_VERSION}; +https://2fa.directory/bot)",
+    'From' => 'https://2fa.directory/'
   }
   https = Net::HTTP.new(url.host, url.port)
   https.use_ssl = true

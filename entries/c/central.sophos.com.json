@@ -1,7 +1,10 @@
 {
   "Sophos Central": {
-    "domain": "sophos.com",
-    "url": "https://www.sophos.com",
+    "domain": "central.sophos.com",
+    "img": "sophos.com.svg",
+    "additional-domains": [
+      "login.sophos.com"
+    ],
     "tfa": [
       "email",
       "totp"
