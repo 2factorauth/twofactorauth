@@ -15,4 +15,4 @@ As a result you will most likely only receive a couple of requests each year. We
 
 ## robots.txt
 
-Since each script only makes one request per website, the same number as if we would have fetched any robots.txt-file, we have opted to not comply with robots.txt-files.
+Since each script only makes one request per website, the same number as if we would have fetched any robots.txt file, we have opted to not comply with robots.txt files.
