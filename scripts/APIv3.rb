@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require 'json'
+require 'yaml'
 
 all = {}
 tfa = {}
@@ -10,14 +11,22 @@ Dir.glob('entries/*/*.json') { |file| all[JSON.parse(File.read(file)).keys[0]] =
 
 all.sort.to_h.each do |k, v|
   v['tfa']&.each { |method| (tfa[method].nil? ? tfa[method] = { k => v } : tfa[method][k] = v) }
-  v['regions']&.each { |region| regions[region] = 1 + regions[region].to_i }
+  v['regions']&.each do |region|
+    regions[region] = {} unless regions.key? region
+    regions[region]['count'] = 1 + regions[region]['count'].to_i
+  end
 end
+
+avail_regions = YAML.load_file('_data/regions.yml').group_by { |hash| hash['id'] }.keys
+regions.each { |k, v| v['selection'] = avail_regions.include? k }
 
 { 'all' => all }.merge(tfa).each do |k, v|
   File.open("api/v3/#{k}.json", 'w') { |file| file.write v.sort_by { |a, _| a.downcase }.to_json }
 end
 
-File.open('api/v3/regions.json', 'w') { |file| file.write regions.sort_by(&:last).reverse.to_h.to_json }
+regions['int'] = { 'count' => all.length, 'selection' => true }
+
+File.open('api/v3/regions.json', 'w') { |file| file.write regions.sort_by { |_, v| v['count'] }.reverse!.to_json }
 # rubocop:disable Layout/LineLength
 File.open('api/v3/tfa.json', 'w') { |file| file.write all.select { |_, v| v.key? 'tfa' }.sort_by { |k, _| k.downcase }.to_json }
 # rubocop:enable Layout/LineLength
