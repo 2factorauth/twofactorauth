@@ -1,0 +1,18 @@
+{
+  "Datto": {
+    "domain": "datto.com",
+    "tfa": [
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "duo"
+    ],
+    "documentation": "https://help.datto.com/s/article/KB360032979352",
+    "keywords": [
+      "remote",
+      "marketing",
+      "iot"
+    ]
+  }
+}
