@@ -1,16 +1,19 @@
 {
   "Capital One": {
     "domain": "capitalone.com",
-    "url": "https://www.capitalone.com/",
     "tfa": [
       "sms",
       "email",
       "custom-software"
     ],
+    "custom-software": [
+      "SwiftID"
+    ],
     "documentation": "https://www.capitalone.com/identity-protection/swiftid/",
     "regions": [
       "us"
     ],
+    "notes": "SwiftID is not available on Capital One's Mobile app. SMS or Email 2FA required as backup.",
     "keywords": [
       "banking"
     ]
