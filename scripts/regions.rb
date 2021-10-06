@@ -9,7 +9,7 @@ data_dir = './_data'
 websites = JSON.parse(File.read("#{data_dir}/all.json"))
 regions = YAML.load_file("#{data_dir}/regions.yml")
 tmp_dir = '/tmp'
-
+regions.insert(0, { 'id' => 'int', 'name' => 'global' })
 git_dir = Dir.glob('.git')
 FileUtils.cp_r(git_dir, "#{tmp_dir}/") unless File.exist?("#{tmp_dir}/.git")
 
@@ -27,7 +27,7 @@ regions.each do |region|
 
   # Website loop
   websites.each do |name, website|
-    next unless website['regions'].nil? || website['regions'].include?(region['id'].to_s)
+    next unless website['regions'].nil? || website['regions'].include?(region['id']) || region['id'].eql?('int')
 
     all[name] = website
     website['keywords'].each do |kw|
