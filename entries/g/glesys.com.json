@@ -1,10 +1,12 @@
 {
-  "Glesys": {
+  "GleSYS": {
     "domain": "glesys.com",
-    "img": "glesys.com.png",
     "tfa": [
       "totp",
       "custom-hardware"
+    ],
+    "custom-hardware": [
+      "YubiKey OTP"
     ],
     "keywords": [
       "hosting"
