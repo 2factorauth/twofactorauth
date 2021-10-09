@@ -10,7 +10,7 @@ require 'uri'
 status = 0
 
 # Fetch created/modified files in entries/**
-diff = `git diff --name-only --diff-filter=AM entries/`.split("\n")
+diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.split("\n")
 
 def redirection
   lambda { |uri, res|
