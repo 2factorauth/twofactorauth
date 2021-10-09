@@ -11,6 +11,7 @@ status = 0
 # Fetch created/modified files in entries/**
 diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.split("\n")
 
+# rubocop:disable Metrics/AbcSize
 def http_client
   agent_name = '2FactorAuth/URLValidator ' \
   "(HTTPClient/#{Gem.loaded_specs['httpclient'].version} on Ruby/#{RUBY_VERSION}; +https://2fa.directory/bot)"
@@ -18,9 +19,12 @@ def http_client
   client = HTTPClient.new(nil, agent_name, from)
   client.ssl_config.set_default_paths # ignore built-in CA and use system defaults
   client.receive_timeout = 8
-  client.redirect_uri_callback = ->(_, res) { res.header['location'][0] }
+  client.redirect_uri_callback = lambda { |uri, res|
+    "#{res.header['location'][0].match?('/^(http|https)\://.*$/') ? uri : nil}#{res.header['location'][0]}"
+  }
   client
 end
+# rubocop:enable Metrics/AbcSize
 
 # Check if the url supplied works
 def check_url(path, url)
