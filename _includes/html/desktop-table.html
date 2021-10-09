@@ -88,7 +88,7 @@
                      {%- else -%}
                      Required hardware token:
                      {%- endif-%}
-                     {%- for item in website.custom-hardware -%}&#013; {{ item }} {%- endfor -%}
+                     {%- for item in website.custom-hardware -%}&#013;- {{ item }} {%- endfor -%}
                      {%- else -%}
                      Requires custom hardware token
                      {%- endif -%}
@@ -118,7 +118,7 @@
                      {%- else -%}
                      Required app:
                      {%- endif-%}
-                     {%- for item in website.custom-software -%}&#013; {{ item }} {%- endfor -%}
+                     {%- for item in website.custom-software -%}&#013;- {{ item }} {%- endfor -%}
                      {%- else -%}
                      Requires proprietary app/software
                      {%- endif -%}
