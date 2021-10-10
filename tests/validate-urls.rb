@@ -4,12 +4,21 @@
 require 'English'
 require 'json'
 require 'httpclient'
+require 'uri'
 
 # Exit code
 status = 0
 
 # Fetch created/modified files in entries/**
 diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.split("\n")
+
+def redirection
+  lambda { |uri, res|
+    uri = URI.parse(uri)
+    location = res.header['location'][0]
+    "#{location.match?(%r{https?://.*}) ? nil : "#{uri.scheme}://#{uri.host}"}#{location}"
+  }
+end
 
 def http_client
   agent_name = '2FactorAuth/URLValidator ' \
@@ -18,7 +27,7 @@ def http_client
   client = HTTPClient.new(nil, agent_name, from)
   client.ssl_config.set_default_paths # ignore built-in CA and use system defaults
   client.receive_timeout = 8
-  client.redirect_uri_callback = ->(_, res) { res.header['location'][0] }
+  client.redirect_uri_callback = redirection
   client
 end
 
