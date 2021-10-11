@@ -2,31 +2,27 @@
 # frozen_string_literal: true
 
 require 'json'
-status = 0
 
-PNG_SIZE = [32, 32].freeze
-
+@status = 0
+PNG_SIZE = [[32, 32], [64, 64], [128, 128]].freeze
 seen_sites = []
 
+def error(msg)
+  puts "::error file=#{@file}:: #{msg}"
+  @status = 1
+end
+
 Dir.glob('entries/*/*.json') do |file|
+  @file = file
   website = JSON.parse(File.read(file)).values[0]
-  path = './img/'
+  domain = website['domain']
+  img = website['img']
+  path = "img/#{img.nil? ? "#{domain[0, 1].downcase}/#{domain}.svg" : "#{img[0, 1]}/#{img}"}"
 
-  path += if website['img'].nil?
-            "#{website['domain'][0, 1].downcase}/#{website['domain']}.svg"
-          else
-            "#{website['img'][0, 1]}/#{website['img']}"
-          end
+  error("Image does not exist for #{domain} - #{path} cannot be found.") unless File.exist?(path)
 
-  unless File.exist?(path)
-    puts "::error file=#{file}:: Image does not exist for #{website['domain']} - #{path} cannot be found"
-    status = 1
-  end
-
-  if !website['img'].nil? && website['img'].eql?("#{website['domain']}.svg")
-    puts "::error file=#{file}:: Defining the img property for #{website['domain']} is not necessary " \
-         "- '#{website['img']}' is the default value"
-    status = 1
+  if img.eql?("#{domain}.svg")
+    error("Defining the img property for #{domain} is not necessary. #{img} is the default value.")
   end
 
   seen_sites.push(path)
@@ -35,18 +31,14 @@ end
 Dir.glob('img/*/*') do |file|
   next if file.include? '/icons/'
 
-  unless seen_sites.include? "./#{file}"
-    puts "::error file=#{file}:: Unused image at #{file}"
-    status = 1
-  end
+  error("Unused image at #{file}") unless seen_sites.include? file
 
   if file.include? '.png'
     dimensions = IO.read(file)[0x10..0x18].unpack('NN')
-    unless dimensions.eql? PNG_SIZE
-      puts "::error file=#{file}:: PNGs should be 32x32 in size."
-      status = 1
+    unless PNG_SIZE.include? dimensions
+      error("PNGs must be one of the following sizes: #{PNG_SIZE.map { |a| a.join('x') }.join(', ')}.")
     end
   end
 end
 
-exit(status)
+exit(@status)

@@ -17,7 +17,7 @@ are stored in folders corresponding to each of those entries in their own
    If you want to test locally, instructions are listed below. Keep reading!
 2. **Use a Nice Icon**: SVG is the preferred format. If possible, please also run the image 
    through an optimizing utility such as [svgo][svgo] to reduce the file size.
-   If an SVG icon is not available, the icon should be a PNG with a resolution of 32x32.
+   If an SVG icon is not available, the icon should be a PNG with a resolution of 32x32, 64x64 or 128x128.
    If possible, please also run the image through an optimizing
    utility such as [TinyPNG][tinypng] before committing it to the repo and keep
    the file to be under 2.5 kB.
