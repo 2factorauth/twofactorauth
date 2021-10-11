@@ -9,7 +9,7 @@ seen_sites = []
 
 def error(msg)
   puts "::error file=#{@file}:: #{msg}"
-  @status = 1 unless @status.eql? 1
+  @status = 1
 end
 
 Dir.glob('entries/*/*.json') do |file|
