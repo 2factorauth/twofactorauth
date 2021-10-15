@@ -4,7 +4,7 @@
 require 'json'
 
 # Fetch created (but not renamed) files in entries/**
-diff = `git diff --name-only --diff-filter=Ar origin/master...HEAD entries/`.split("\n")
+diff = `git diff --name-only --diff-filter=Ard origin/master...HEAD entries/`.split("\n")
 
 diff&.each do |path|
   entry = JSON.parse(File.read(path)).values[0]
