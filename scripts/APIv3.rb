@@ -26,7 +26,7 @@ end
 
 regions['int'] = { 'count' => all.length, 'selection' => true }
 
-File.open('api/v3/regions.json', 'w') { |file| file.write regions.sort_by { |_, v| v['count'] }.reverse!.to_json }
+File.open('api/v3/regions.json', 'w') { |file| file.write regions.sort_by { |_, v| v['count'] }.reverse!.to_h.to_json }
 # rubocop:disable Layout/LineLength
 File.open('api/v3/tfa.json', 'w') { |file| file.write all.select { |_, v| v.key? 'tfa' }.sort_by { |k, _| k.downcase }.to_json }
 # rubocop:enable Layout/LineLength
