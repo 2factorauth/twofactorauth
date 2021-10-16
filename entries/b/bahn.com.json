@@ -1,11 +1,14 @@
 {
   "Deutsche Bahn (DB)": {
     "domain": "bahn.com",
-    "url": "https://www.bahn.com",
-    "contact": {
-      "facebook": "DBPersonenverkehr",
-      "twitter": "DB_Bahn"
-    },
+    "additional-domains": [
+      "bahn.de"
+    ],
+    "tfa": [
+      "totp",
+      "sms"
+    ],
+    "documentation": "https://www.bahn.de/service/hilfe/kundenkonto#2-fa",
     "keywords": [
       "transport"
     ]
