@@ -1,10 +1,10 @@
 {
   "SimpliSafe": {
     "domain": "simplisafe.com",
-    "contact": {
-      "facebook": "SimpliSafe",
-      "twitter": "SimpliSafe"
-    },
+    "tfa": [
+      "email"
+    ],
+    "documentation": "https://support.simplisafe.com/hc/en-us/articles/360040500551",
     "keywords": [
       "iot"
     ]
