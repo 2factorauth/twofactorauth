@@ -1,0 +1,25 @@
+{
+  "Metro Bank Commercial": {
+    "domain": "commercial.metrobankonline.co.uk",
+    "url": "https://metrobankonline.co.uk",
+    "img": "metrobankonline.co.uk.svg",
+    "tfa": [
+      "custom-hardware",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Metro Bank Authenticator app"
+    ],
+    "custom-hardware": [
+      "Security Device"
+    ],
+    "documentation": "https://www.metrobankonline.co.uk/help-and-support/what-is-sca/",
+    "notes": "Only available for Business Online Plus and Commercial Banking customers. Setup for authenticator app requires SMS verification.",
+    "keywords": [
+      "banking"
+    ],
+    "regions": [
+      "gb"
+    ]
+  }
+}
