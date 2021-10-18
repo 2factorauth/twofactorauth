@@ -1,11 +1,13 @@
 {
   "L'Identité Numérique (IDN)": {
     "domain": "lidentitenumerique.laposte.fr",
-    "contact": {
-      "facebook": "laposte",
-      "twitter": "lisalaposte",
-      "language": "fr"
-    },
+    "tfa": [
+      "custom-software"
+    ],
+    "custom-software": [
+      "L'Identité Numérique La Poste app"
+    ],
+    "documentation": "https://aide.lidentitenumerique.laposte.fr/kb/guide/fr/YapekkW4gf",
     "keywords": [
       "identity"
     ],
