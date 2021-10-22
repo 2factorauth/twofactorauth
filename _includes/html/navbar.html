@@ -11,7 +11,7 @@
       </li>
       {% if page.name == "index.html" %}
         <li class="nav-item dropdown">
-          <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" id="regionDropdown" role="button">
+          <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" id="regionDropdown" role="button" tabindex="0">
             Region
             {% assign baseurl = site.baseurl %}
             {% assign regions = site.data.regions | sort: "name" %}
