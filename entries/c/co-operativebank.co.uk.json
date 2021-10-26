@@ -1,11 +1,11 @@
 {
   "The Co-operative Bank": {
     "domain": "co-operativebank.co.uk",
-    "url": "https://www.co-operativebank.co.uk",
-    "contact": {
-      "twitter": "CooperativeBank",
-      "facebook": "thecooperativebank"
-    },
+    "tfa": [
+      "sms",
+      "email"
+    ],
+    "documentation": "https://www.co-operativebank.co.uk/digital-help/2fa",
     "keywords": [
       "banking"
     ],
