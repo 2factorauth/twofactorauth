@@ -1,10 +1,10 @@
 {
   "Formspree": {
     "domain": "formspree.io",
-    "contact": {
-      "twitter": "formspree",
-      "facebook": "formspree"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://help.formspree.io/hc/articles/4407875207187",
     "keywords": [
       "developer"
     ]
