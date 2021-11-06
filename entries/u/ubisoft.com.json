@@ -1,12 +1,17 @@
 {
   "Ubisoft/Uplay": {
-    "domain": "uplay.ubi.com",
+    "domain": "ubisoft.com",
+    "additional-domains": [
+      "ubisoftconnect.com",
+      "ubi.com"
+    ],
     "tfa": [
       "email",
       "totp",
       "sms"
     ],
     "documentation": "https://support.ubi.com/en-GB/Faqs/000039953",
+    "notes": "Software 2FA requires adding a phone number as a fallback.",
     "keywords": [
       "gaming"
     ]
