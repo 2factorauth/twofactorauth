@@ -39,7 +39,7 @@ def check_url(path, url)
 
   puts "::warning file=#{path}:: Unexpected response from #{url} (#{res.status})"
 rescue StandardError => e
-  puts "::error file=#{path}:: Unable to reach #{url} #{res.respond_to?('status') ? res.status : nil}"
+  puts "::warning file=#{path}:: Unable to reach #{url} #{res.respond_to?('status') ? res.status : nil}"
   puts e.full_message unless e.instance_of?(TypeError)
   1
 end
