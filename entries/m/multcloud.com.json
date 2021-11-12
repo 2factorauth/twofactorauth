@@ -2,10 +2,11 @@
   "MultCloud": {
     "domain": "multcloud.com",
     "url": "https://www.multcloud.com/",
-    "contact": {
-      "facebook": "multcloud",
-      "twitter": "multcloud"
-    },
+    "tfa": [
+      "sms",
+      "email"
+    ],
+    "documentation": "https://www.multcloud.com/help/two-step-verification.html",
     "keywords": [
       "backup"
     ]
