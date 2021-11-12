@@ -1,11 +1,12 @@
 {
   "Andrews Federal Credit Union": {
     "domain": "andrewsfcu.org",
-    "url": "https://www.andrewsfcu.org/",
-    "contact": {
-      "facebook": "AndrewsFederal",
-      "twitter": "AndrewsFederal"
-    },
+    "tfa": [
+      "call",
+      "sms",
+      "email"
+    ],
+    "documentation": "https://www.andrewsfcu.org/Support/Security#Prevention_Tips",
     "regions": [
       "us"
     ],
