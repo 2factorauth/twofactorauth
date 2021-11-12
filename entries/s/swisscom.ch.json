@@ -1,12 +1,10 @@
 {
   "Swisscom": {
     "domain": "swisscom.ch",
-    "url": "https://www.swisscom.ch/",
-    "contact": {
-      "facebook": "Swisscom",
-      "twitter": "Swisscom_de",
-      "language": "de"
-    },
+    "tfa": [
+      "sms"
+    ],
+    "documentation": "https://www.swisscom.ch/de/privatkunden/hilfe/daten-und-rechnungen/das-swisscom-login.html#Login_Methoden",
     "keywords": [
       "utilities"
     ],
