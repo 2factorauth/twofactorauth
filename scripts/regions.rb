@@ -39,6 +39,13 @@ regions.each do |region|
 
   categories = JSON.parse(File.read("#{dest_dir}/_data/categories.json"))
 
+  if !region['category-icons'].nil?
+    icons = region['category-icons'].reduce({}, :merge)
+    categories.map do |category|
+      category['icon'] = icons[category['name']] unless icons[category['name']].nil?
+    end
+  end
+
   File.open("#{dest_dir}/_data/categories.json", 'w') do |file|
     file.write JSON.generate(categories.select { |cat| used_categories[cat['name']] })
   end

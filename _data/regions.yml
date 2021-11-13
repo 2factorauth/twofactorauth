@@ -3,12 +3,16 @@
 
 - id: at
   name: Austria
+  category-icons:
+    - banking: "fas fa-euro-sign"
 
 - id: au
   name: Australia
 
 - id: be
   name: Belgium
+  category-icons:
+    - banking: "fas fa-euro-sign"
 
 - id: br
   name: Brazil
@@ -25,36 +29,54 @@
 
 - id: de
   name: Germany
+  category-icons:
+    - banking: "fas fa-euro-sign"
 
 - id: dk
   name: Denmark
 
 - id: es
   name: Spain
+  category-icons:
+    - banking: "fas fa-euro-sign"
 
 - id: fi
   name: Finland
+  category-icons:
+    - banking: "fas fa-euro-sign"
 
 - id: fr
   name: France
+  category-icons:
+    - banking: "fas fa-euro-sign"
 
 - id: hr
   name: Croatia
 
 - id: ie
   name: Ireland
+  category-icons:
+    - banking: "fas fa-euro-sign"
 
 - id: in
   name: India
+  category-icons:
+    - banking: "fas fa-rupee-sign"
 
 - id: it
   name: Italy
+  category-icons:
+    - banking: "fas fa-euro-sign"
 
 - id: jp
   name: Japan
+  category-icons:
+    - banking: "fas fa-yen-sign"
 
 - id: nl
   name: Netherlands
+  category-icons:
+    - banking: "fas fa-euro-sign"
 
 - id: "no"
   name: Norway
@@ -70,6 +92,8 @@
 
 - id: pt
   name: Portugal
+  category-icons:
+    - banking: "fas fa-euro-sign"
 
 - id: se
   name: Sweden
@@ -79,6 +103,8 @@
 
 - id: gb
   name: United Kingdom
+  category-icons:
+    - banking: "fas fa-pound-sign"
 
 - id: us
   name: United States
