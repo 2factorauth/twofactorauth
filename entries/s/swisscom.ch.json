@@ -2,7 +2,11 @@
   "Swisscom": {
     "domain": "swisscom.ch",
     "tfa": [
-      "sms"
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Mobile ID"
     ],
     "documentation": "https://www.swisscom.ch/de/privatkunden/hilfe/daten-und-rechnungen/das-swisscom-login.html#Login_Methoden",
     "keywords": [
