@@ -37,6 +37,7 @@ Dir.glob('entries/*/*.json') do |file|
       puts "  expected: #{v['schema']['required']}" if v['type'].eql?('required')
       puts "  expected: only one of 'tfa' or 'contact'" if v['type'].eql?('oneOf')
       puts "  expected: 'tfa' to contain '#{v['schema']['contains']['const']}'" if v['type'].eql?('contains')
+      puts "  expected: regions array without excluded-regions array" if v['type'].eql?('not')
     end
     @status = 1
     next

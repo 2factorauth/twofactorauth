@@ -28,6 +28,7 @@ regions.each do |region|
   # Website loop
   websites.each do |name, website|
     next unless website['regions'].nil? || website['regions'].include?(region['id']) || region['id'].eql?('int')
+    next if !website['excluded-regions'].nil? && website['excluded-regions'].include?(region['id'])
 
     all[name] = website
     website['keywords'].each do |kw|

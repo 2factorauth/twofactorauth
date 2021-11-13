@@ -54,6 +54,15 @@
             "pattern": "^[a-z]{2}$"
           }
         },
+        "excluded-regions": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z]{2}$"
+          }
+        },
         "additional-domains": {
           "type": "array",
           "uniqueItems": true,
@@ -138,6 +147,11 @@
             "tfa": {
               "contains": {"const": "custom-hardware"}
             }
+          }
+        },
+        "regions": {
+          "not": {
+            "required": ["excluded-regions"]
           }
         }
       }
