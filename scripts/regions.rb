@@ -14,6 +14,7 @@ git_dir = Dir.glob('.git')
 FileUtils.cp_r(git_dir, "#{tmp_dir}/") unless File.exist?("#{tmp_dir}/.git")
 
 # Region loop
+# rubocop:disable Metrics/BlockLength
 regions.each do |region|
   dest_dir = "#{tmp_dir}/#{region['id']}"
   unless File.exist?(dest_dir)
@@ -39,7 +40,7 @@ regions.each do |region|
 
   categories = JSON.parse(File.read("#{dest_dir}/_data/categories.json"))
 
-  if !region['category-icons'].nil?
+  unless region['category-icons'].nil?
     icons = region['category-icons'].reduce({}, :merge)
     categories.map do |category|
       category['icon'] = icons[category['name']] unless icons[category['name']].nil?
@@ -55,3 +56,4 @@ regions.each do |region|
   puts `bundle exec jekyll build -s #{dest_dir} --config _config.yml -d #{out_dir} --baseurl #{region['id']}`
   puts "#{region['id']} built."
 end
+# rubocop:enable Metrics/BlockLength
