@@ -38,6 +38,7 @@ begin
     website = JSON.parse(File.read(file)).values[0]
     next if website['regions'].nil?
 
+    website['regions'].map! { |region_code| region_code.tr('-', '') }
     website['regions'].each do |region|
       next if @codes.include?(region.to_s)
 
