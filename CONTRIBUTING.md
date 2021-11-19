@@ -215,7 +215,7 @@ The country codes should be lowercase [ISO 3166-1][iso-country-wikipedia] codes.
 
 #### Excluded Regions
 
-If a site is available globally apart from a specific region, this can be noted using the `regions` array. Excluded regions should be prefixed with a `-` symbol to exclude them from that region. Region codes and excluded region codes should **not** be used together, as adding a region code automatically excludes it from other regions. The example below shows a site that is available in all regions apart from `us`.
+If a site is available globally apart from a specific region, this can be noted using the `regions` array. Excluded regions should be prefixed with a `-` symbol to exclude the site from that region. Region codes and excluded region codes should **not** be used together, as adding a region code automatically excludes the site from other regions. The example below shows a site that is available in all regions apart from `us`.
 
 ```JSON
 {
