@@ -40,7 +40,7 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
 |recovery|URL||URL to recovery documentation page|
 |notes|String||Text describing any discrepancies in the 2FA implementation|
 |contact|Object||Object containing contact details. See table below for elements|
-|regions|array\<String>||Array containing ISO 3166-1 country codes of the regions in which the site is available|
+|regions|array\<String>||Array containing ISO 3166-1 country codes of the regions in which the site is available. If the site is available everywhere apart from a specific region, that region will be prefixed by a `-` symbol|
 |additional-domains|Array\<hostname>||Array of domains that the site exists at in addition to the main domain listed in the `domain` field.|
 |custom-(software\|hardware)|Array\<String>||Array of custom software/hardware methods that the site supports. Only present if the `tfa` element contains one of these 2FA types|
 |keywords|Array\<String>|:heavy_check_mark:|Array of categories to which the site belongs|
