@@ -1,12 +1,17 @@
 {
-  "Blizzard": {
+  "Blizzard/Battle.net": {
     "domain": "blizzard.com",
+    "additional-domains": [
+      "battle.net"
+    ],
     "tfa": [
       "sms",
-      "custom-software",
-      "custom-hardware"
+      "custom-software"
     ],
-    "documentation": "https://us.battle.net/support/en/article/Blizzard-Authenticator",
+    "custom-software": [
+      "Battle.net Authenticator"
+    ],
+    "documentation": "https://battle.net/support/article/24520",
     "keywords": [
       "gaming"
     ]
