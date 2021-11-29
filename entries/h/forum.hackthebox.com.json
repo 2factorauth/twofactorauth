@@ -1,0 +1,17 @@
+{
+  "Hack The Box Forums": {
+    "domain": "forum.hackthebox.com",
+    "img":"app.hackthebox.com.svg",
+    "additional-domains": [
+      "forum.hackthebox.eu"
+    ],
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
+    "keywords": [
+      "education",
+      "social"
+    ]
+  }
+}
