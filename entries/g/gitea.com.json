@@ -1,6 +1,10 @@
 {
   "Gitea": {
     "domain": "gitea.com",
+    "additional-domains": [
+      "gitea.io",
+      "try.gitea.io"
+    ],
     "tfa": [
       "totp",
       "u2f"
