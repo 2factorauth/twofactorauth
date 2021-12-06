@@ -1,0 +1,14 @@
+{
+  "Gitea": {
+    "domain": "gitea.com",
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://docs.gitea.io/en-us/",
+    "notes": "Hardware tokens must have a backup method.",
+    "keywords": [
+      "developer"
+    ]
+  }
+}
