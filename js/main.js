@@ -1,5 +1,7 @@
 $(document).ready(function () {
-
+  // Focus and select search input
+  $('#innerSearchBox').focus().select();
+  
   // Show popup notice
   $('.exception').popup({ position: 'right center', hoverable: true, title: 'Exceptions & Restrictions' });
 
@@ -19,7 +21,7 @@ $(document).ready(function () {
 $('.cat').click(function () {
   let query = window.location.hash;
 
-  // Collapse all other tables.
+  // Collapse all other tables
   $('.collapse').collapse('hide');
   $('.cat').removeClass('active');
 
@@ -33,8 +35,7 @@ $('.cat').click(function () {
   }
 });
 
-
-// Show desktop & mobile tables
+// Show desktop and mobile tables
 function showCategory(category) {
   $(`#${category}-table`).collapse("show");
   $(`#${category}-mobile-table`).collapse("show");
