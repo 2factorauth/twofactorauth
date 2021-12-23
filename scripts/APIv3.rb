@@ -12,8 +12,8 @@ Dir.glob('entries/*/*.json') { |file| all[JSON.parse(File.read(file)).keys[0]] =
 all.sort.to_h.each do |k, v|
   # rubocop:disable Style/CombinableLoops
   v['tfa']&.each { |method| (tfa[method].nil? ? tfa[method] = { k => v } : tfa[method][k] = v) }
-   regions[region] = {} unless regions.key? region
-   regions[region]['count'] = 1 + regions[region]['count'].to_i
+    regions[region] = {} unless regions.key? region
+    regions[region]['count'] = 1 + regions[region]['count'].to_i
   end
   # rubocop:enable Style/CombinableLoops
 end
