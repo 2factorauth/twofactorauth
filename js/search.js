@@ -11,8 +11,8 @@ $(document).ready(function () {
       if (search_phrase == '') {
         // Empty search value
         // Display everything. Close tables
-        $('.category-btn').show();
-        $('.category-btn').removeClass('active');
+        $('.cat').show();
+        $('.cat').removeClass('active');
         $('.category-table').removeClass('show');
         $('.search-table-title').hide();
         $('#no-results').hide();
@@ -20,7 +20,7 @@ $(document).ready(function () {
         // Populated search field
 
         // Hide category icons
-        $('.category-btn').hide();
+        $('.cat').hide();
 
         // Display all category tables
         $('.category-table').addClass('show');
