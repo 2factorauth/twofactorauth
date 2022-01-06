@@ -1,10 +1,12 @@
 {
 	"Minecraft": {
 		"domain": "minecraft.net",
-		"additional-domains": "mojang.com",
+		"additional-domains": [
+			"mojang.com"
+		],
 		"tfa": [
 			"sms",
-			"phone",
+			"call",
 			"email",
 			"u2f",
 			"topt"
