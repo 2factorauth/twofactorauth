@@ -1,11 +1,24 @@
 {
-  "Mojang": {
-    "domain": "mojang.com",
-    "contact": {
-      "twitter": "MojangSupport"
-    },
-    "keywords": [
-      "gaming"
-    ]
-  }
+	"Mojang": {
+		"domain": "mojang.com",
+		"additional-domains": [
+			"minecraft.net"
+		],
+		"tfa": [
+			"sms",
+			"call",
+			"email",
+			"u2f",
+			"totp",
+			"custom-software"
+		],
+		"custom-software": [
+			"Microsoft Authenticator"
+		],
+		"documentation": "https://support.microsoft.com/en-us/help/12408/",
+		"notes": "2FA setup requires migration from Mojang/Minecraft account to Microsoft account. 2FA phone calls may not be available in all regions",
+		"keywords": [
+			"gaming"
+		]
+	}
 }
