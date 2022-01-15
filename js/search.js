@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   var jets = new Jets({
     searchTag: '#innerSearchBox',
@@ -98,5 +96,3 @@ function debounce(func, wait) {
 		if (!timeout) func.apply(context, args);
 	};
 };
-
-
