@@ -144,6 +144,12 @@
                     On Facebook
                   </div>
                 {% endif %}
+                {% if website.contact.form %}
+                  <div class="form-button social-button btn" data-form="{{ website.contact.form }}">
+                    <i class="fas fa-edit"></i>
+                    Via Form
+                  </div>
+                {% endif %}
                 {% if website.contact.email %}
                   <div class="email-button social-button btn" data-email="{{ website.contact.email }}" data-lang="{{ website.contact.language }}">
                     <i class="fas fa-envelope"></i>

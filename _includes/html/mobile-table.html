@@ -75,6 +75,14 @@
 
           {% endif %}
 
+          {% if website.contact.form %}
+
+            <div class="col form-button social-button btn" title="Contact them!" data-form="{{ website.contact.form }}" data-lang="{{ website.contact.language }}">
+              <i class="fas fa-edit"></i>
+            </div>
+
+          {% endif %}
+
           {% if website.contact.email %}
 
             <div class="col email-button social-button btn" title="Email them!" data-email="{{ website.contact.email }}" data-lang="{{ website.contact.language }}">

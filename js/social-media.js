@@ -4,6 +4,10 @@ $('.facebook-button').click(function () {
     window.open("https://facebook.com/" + $(this).data('facebook'), '_blank');
 })
 
+$('.form-button').click(function () {
+    window.open($(this).data('form'), '_blank');
+})
+
 $('.email-button').click(function () {
   let langs = new Map();
 {% for lang in site.data.languages %}

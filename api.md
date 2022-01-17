@@ -51,6 +51,7 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
 |twitter|String||Twitter handle|
 |facebook|String||Facebook page name|
 |email|String||Email address to support|
+|form|URL||URL to contact form page|
 |language|String||Lowercase ISO 639-1 language code for the site if it is not in English|
 
 ### Example website with 2FA enabled
@@ -98,6 +99,7 @@ If you only intent on using a specific dataset, like all sites supporting RFC-62
       "contact": {
         "twitter": "example",
         "facebook": "example",
+        "form": "https://example.com/contact-us/",
         "email": "example@example.com"
       },
       "keywords": [

@@ -91,6 +91,10 @@
               "type": "string",
               "pattern": "^(\\w){1,15}$"
             },
+	    "form": {
+	      "type": "string",
+	      "format": "uri"
+	    },
             "language": {
               "type": "string",
               "pattern": "^[a-z]{2}$"
