@@ -1,0 +1,24 @@
+{
+  "Square Enix": {
+    "domain": "square-enix-games.com",
+    "additional-domains": [
+      "square-enix.com"
+    ],
+    "tfa": [
+      "totp",
+      "custom-software",
+      "custom-hardware"
+    ],
+    "custom-software": [
+      "SQUARE ENIX Software Token"
+    ],
+    "custom-hardware": [
+      "SQUARE ENIX Security Token"
+    ],
+    "documentation": "https://square-enix-games.com/en_US/seaccount/otp",
+    "notes": "The proprietary software implementation requires you to have purchased either Final Fantasy XI or Final Fantasy XIV and registered the game. Only one method is allowed at a time.",
+    "keywords": [
+      "gaming"
+    ]
+  }
+}
