@@ -52,7 +52,7 @@ diff&.each do |path|
   entry['additional-domains']&.each { |domain| status += check_url(path, "https://#{domain}/").to_i }
 
   # Process the contact URLs
-  status += check_url(path, entry['contact']['form']).to_i if entry.key? 'contact' and entry['contact'].key? 'form'
+  status += check_url(path, entry['contact']['form']).to_i if entry.key?('contact') && entry['contact'].key?('form')
 
   # Process documentation and recovery URLs
   status += check_url(path, entry['documentation']).to_i if entry.key? 'documentation'
