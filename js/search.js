@@ -2,6 +2,7 @@ $(document).ready(function () {
   var jets = new Jets({
     searchTag: '#innerSearchBox',
     contentTag: '.searchContainer',
+    callSearchManually: true,
     didSearch: function (search_phrase) {
       document.location.hash = '';
 
@@ -54,6 +55,14 @@ $(document).ready(function () {
       return $(tag).find('.searchWords').text();
     }
   });
+  $('input[type=search]').on('input', function(){
+    clearTimeout(this.delay);
+    this.delay = setTimeout(function(){
+      $(this).trigger('search');
+    }.bind(this), 800);
+  }).on('search', function(){
+      jets.search(this.value);
+  });
 });
 
 // Wrap the jets.search function with a debounced function
@@ -64,24 +73,24 @@ var debouncedSearch = debounce(function(e) {
 // Attach a keyup event listener to the input
 $('#jets-search').keyup(debouncedSearch);
 
-/**
+/*
  * Returns a function, that, as long as it continues to be invoked, will not
  * be triggered. The function will be called after it stops being called for
  * N milliseconds.
- * 
+ *
  * @param func The function to be debounced
- * @param wait The time in ms to debounce 
+ * @param wait The time in ms to debounce
  */
 function debounce(func, wait) {
   var timeout;
-  
+
 	return function() {
 		var context = this, args = arguments;
 		var later = function() {
 			timeout = null;
 			func.apply(context, args);
     };
-    
+
 		clearTimeout(timeout);
 		timeout = setTimeout(later, wait);
 		if (!timeout) func.apply(context, args);
