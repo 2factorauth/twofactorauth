@@ -1,0 +1,21 @@
+{
+  "psono": {
+    "domain": "psono.com",
+    "additional-domains": [
+      "psono.pw"
+    ],
+    "tfa": [
+      "totp",
+      "custom-hardware",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Duo"
+    ],
+    "documentation": "https://doc.psono.com/user/two-factor-authentication/google-authenticator.html",
+    "notes": "Psono offers TOTP, Yubikey and DUO for two factor authentication",
+    "keywords": [
+      "identity"
+    ]
+  }
+}
