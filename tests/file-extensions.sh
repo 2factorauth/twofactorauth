@@ -22,7 +22,7 @@ checkExt entries json
 for dir in img/?; do
     checkExt $dir svg png
 done
-checkExt img/icons svg png ico
+checkExt img/icons svg png
 checkExt js js
 checkExt scripts rb sh
 checkExt tests rb sh json
