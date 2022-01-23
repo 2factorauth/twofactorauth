@@ -1,7 +1,9 @@
 {
   "LogMeIn": {
     "domain": "logmein.com",
-    "url": "https://www.logmein.com/",
+    "additional-domains": [
+      "logme.in"
+    ],
     "tfa": [
       "sms",
       "email",
