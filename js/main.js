@@ -1,14 +1,4 @@
 $(document).ready(function () {
-  // Execute when window resized
-  $(window).resize(function() {
-    const width = $(window).innerWidth(); // New width
-
-    if (width >= 992) {
-      // Focus and select search input
-      $('#innerSearchBox').focus().select();
-    }
-  });
-  
   // Show popup notice
   $('.exception').popup({ position: 'right center', hoverable: true, title: 'Exceptions & Restrictions' });
 
@@ -51,10 +41,15 @@ function showCategory(category) {
 
 let resizeObserver = new ResizeObserver(() => {
   // Fix the footer to bottom of viewport if body is less than viewport
-  if ($('body').height() < $(window).height()){
+  if ($('body').height() < $(window).height()) {
     $('.footer').css({position: 'absolute'});
-  } else{
+  } else {
     $('.footer').css({position: 'static'});
+  }
+
+  // Focus and select search input on desktop
+  if ($(window).innerWidth() >= 992) {
+    $('#innerSearchBox').focus().select();
   }
 });
 
