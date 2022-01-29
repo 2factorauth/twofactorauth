@@ -20,6 +20,7 @@ jobs:
       - restore_cache:
           keys:
             - awis-cache
+            - similarweb-cache
 
       - run:
           name: Check Alexa ranking
@@ -29,6 +30,15 @@ jobs:
           key: awis-cache
           paths:
             - "/tmp/alexa/*"
+
+      - run:
+          name: Check Similarweb ranking
+          command: ruby ./tests/similarweb.rb
+
+      - save_cache:
+          key: similarweb-cache
+          paths:
+            - "/tmp/similarweb/*"
 
 workflows:
   version: 2
