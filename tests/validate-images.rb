@@ -30,7 +30,7 @@ end
 Dir.glob('img/*/*') do |file|
   next if file.include? '/icons/'
 
-  error(file, "Unused image") unless seen_sites.include? file
+  error(file, 'Unused image') unless seen_sites.include? file
 
   if file.include? '.png'
     dimensions = IO.read(file)[0x10..0x18].unpack('NN')
