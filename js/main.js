@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   // Show popup notice
   $('.exception').popup({ position: 'right center', hoverable: true, title: 'Exceptions & Restrictions' });
 
@@ -19,7 +18,7 @@ $(document).ready(function () {
 $('.cat').click(function () {
   let query = window.location.hash;
 
-  // Collapse all other tables.
+  // Collapse all other tables
   $('.collapse').collapse('hide');
   $('.cat').removeClass('active');
 
@@ -33,8 +32,7 @@ $('.cat').click(function () {
   }
 });
 
-
-// Show desktop & mobile tables
+// Show desktop and mobile tables
 function showCategory(category) {
   $(`#${category}-table`).collapse("show");
   $(`#${category}-mobile-table`).collapse("show");
@@ -43,10 +41,15 @@ function showCategory(category) {
 
 let resizeObserver = new ResizeObserver(() => {
   // Fix the footer to bottom of viewport if body is less than viewport
-  if($('body').height() < $(window).height()){
+  if ($('body').height() < $(window).height()) {
     $('.footer').css({position: 'absolute'});
-  }else{
+  } else {
     $('.footer').css({position: 'static'});
+  }
+
+  // Focus and select search input on desktop
+  if ($(window).innerWidth() >= 992) {
+    $('#innerSearchBox').focus().select();
   }
 });
 
