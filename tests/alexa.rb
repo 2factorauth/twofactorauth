@@ -46,6 +46,6 @@ diff.split("\n").each do |site|
   fetch_from_api(site) unless fetch_from_cache(site)
 rescue StandardError => e
   puts "\e[31m#{e.message}\e[39m"
-  status = 1
+  # status = 1
 end
 exit(status)
