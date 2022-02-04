@@ -34,7 +34,7 @@ If you want to make a copy (fork) of our site to list any of these sites you're 
     
 *   #### Forums
 
-    Most Forums are self-hosted (and thus violate the aforementioned rule) or are hosted as subdomains which makes it impossible to find a meaningful ranking for the site. 
+    Most forums are self-hosted (and thus violate the aforementioned rule) or are hosted as subdomains which makes it impossible to find a meaningful ranking for the site. 
 
 *   #### Potentially controversial sites 
 
