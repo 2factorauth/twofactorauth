@@ -1,12 +1,14 @@
 {
-  "United Domains USA": {
+  "ud.com": {
     "domain": "uniteddomains.com",
-    "url": "https://www.uniteddomains.com/",
+    "additional-domains": [
+      "ud.com"
+    ],
     "img": "united-domains.svg",
     "tfa": [
       "totp"
     ],
-    "documentation": "https://help.uniteddomains.com/hc/en-us/articles/115001458813",
+    "documentation": "https://www.uniteddomains.com/twofactorauth/",
     "keywords": [
       "domains"
     ]
