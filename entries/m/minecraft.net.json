@@ -1,0 +1,24 @@
+{
+  "Minecraft": {
+    "domain": "minecraft.net",
+    "additional-domains": [
+      "mojang.com"
+    ],
+    "img": "minecraft.net.png",
+    "tfa": [
+      "sms",
+      "call",
+      "email",
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Microsoft Authenticator"
+    ],
+    "documentation": "https://support.microsoft.com/en-us/help/12408/",
+    "notes": "2FA is only available for Minecraft accounts linked to a Microsoft account. 2FA phone calls may not be available in all regions",
+    "keywords": [
+      "gaming"
+    ]
+  }
+}
