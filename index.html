@@ -15,7 +15,7 @@ layout: default
 </div>
 
 <!-- Categories list -->
-<div class="row justify-content-start category-row row-cols-1 row-cols-lg-6 g-2 m-2 m-md-0" style="margin-top: 5rem !important;">
+<div class="row justify-content-start category-row row-cols-1 row-cols-lg-{{ site.category-buttons }} g-2 m-2 m-md-0" style="margin-top: 5rem !important;">
   {% assign keywordsMain = site.data.categories | sort: "title" | where_exp: "item", "item.name != 'other'" %}
   {% assign keywordsOther = site.data.categories | where_exp: "item", "item.name == 'other'" %}
   {% assign keywords = keywordsMain | concat: keywordsOther %}
@@ -33,12 +33,11 @@ layout: default
   {% endfor %}
 
   {% assign _offset = forloop.index | minus: 1 %}
-  {% assign md_desktop = _offset | modulo: 6 %}
-  {% assign md_mobile = _offset | modulo: 2 %}
+  {% assign md_desktop = _offset | modulo: site.category-buttons %}
 
   <!-- List previous 5 categories (desktop view) -->
   {% if md_desktop == 0 %}
-  {% for _keyword in keywords limit: 6 offset: _offset %}
+  {% for _keyword in keywords limit: site.category-buttons offset: _offset %}
   {% include html/category-button.html category-param=_keyword viewport="desktop" %}
   {% endfor %}
   {% endif %}
