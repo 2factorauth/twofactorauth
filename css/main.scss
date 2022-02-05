@@ -2,12 +2,21 @@
 ---
 :root {
   --primary: hsl(180, 59%, 51%);
+  --background: #fff;
+  --secondary-background: #eeeeee96;
+  --text-color: #212529;
+  @media (prefers-color-scheme: dark) {
+    --background: #212121;
+    --secondary-background: #6f6f6f96;
+    --text-color: #eee;
+  }
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--background);
   font-family: open sans, Helvetica, Arial, sans-serif;
   min-width: 300px;
+  color: var(--text-color);
 }
 
 h1, h2, h3, h4 {
@@ -16,7 +25,6 @@ h1, h2, h3, h4 {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #212121;
     color: #eee;
   }
   a {

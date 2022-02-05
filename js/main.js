@@ -1,6 +1,11 @@
 $(document).ready(function () {
-  // Show popup notice
-  $('.exception').popup({ position: 'right center', hoverable: true, title: 'Exceptions & Restrictions' });
+  // Make category buttons square
+  $('.box').height($('.box').width());
+
+  // Show region notice
+  if (window.localStorage.getItem('region-notice') !== 'hidden') {
+    $('#region-notice').collapse('show');
+  }
 
   // Register service worker
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js');
@@ -14,22 +19,29 @@ $(document).ready(function () {
   }
 });
 
+$('.exception').popup({position: 'right center', hoverable: true, title: 'Exceptions & Restrictions'});
+
 // On category click
-$('.cat').click(function () {
-  let query = window.location.hash;
+$('.category-btn').click(function () {
+  let query = window.location.hash.substring(1);
 
   // Collapse all other tables
   $('.collapse').collapse('hide');
-  $('.cat').removeClass('active');
+  $('.category-btn').removeClass('active');
 
   // Check if category tables are displayed
-  if (!$(`#${query.substring(1)}-table`).hasClass('collapsing') && !$(`#${query.substring(1)}-mobile-table`).hasClass('collapsing') || query.substring(1) !== this.id) {
+  if (!$(`#${query}-table`).hasClass('collapsing') && !$(`#${query}-mobile-table`).hasClass('collapsing') || query !== this.id) {
     window.location.hash = this.id;
     showCategory(this.id);
   } else {
     // Remove #category in URL
     history.pushState("", document.title, window.location.pathname + window.location.search);
   }
+});
+
+$('#region-notice-close-btn').click(function (){
+  $('#region-notice').collapse('hide');
+  window.localStorage.setItem('region-notice', 'hidden');
 });
 
 // Show desktop and mobile tables
@@ -51,6 +63,9 @@ let resizeObserver = new ResizeObserver(() => {
   if ($(window).innerWidth() >= 992) {
     $('#innerSearchBox').focus().select();
   }
+
+  // Resize square divs
+  $('.box').height($('.box').width());
 });
 
 resizeObserver.observe($('body')[0]);

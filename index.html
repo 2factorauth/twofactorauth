@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="main">
-  <img alt="" loading="lazy" id="logo" src="/img/icons/icon.svg">
+  <img alt="" loading="lazy" id="logo" src="/img/icons/icon.svg" style="margin: 1rem 0;">
   <h2>2FA Directory</h2>
   <div class="sub header">List of websites and whether or not they support
     <a href="https://en.wikipedia.org/wiki/Two-factor_authentication">2FA</a>.
@@ -15,7 +15,7 @@ layout: default
 </div>
 
 <!-- Categories list -->
-<div class="row justify-content-start category-row row-cols-1 row-cols-lg-5">
+<div class="row justify-content-start category-row row-cols-1 row-cols-lg-6 g-2 m-2 m-md-0" style="margin-top: 5rem !important;">
   {% assign keywordsMain = site.data.categories | sort: "title" | where_exp: "item", "item.name != 'other'" %}
   {% assign keywordsOther = site.data.categories | where_exp: "item", "item.name == 'other'" %}
   {% assign keywords = keywordsMain | concat: keywordsOther %}
@@ -25,31 +25,32 @@ layout: default
   <!-- Category loop -->
   {% for keyword in keywords %}
 
-    {% assign entries = "" | split: ',' %}
-    {% for entry in all_entries %}
-      {% if entry[1].keywords contains keyword.name %}
-        {% assign entries = entries | push: entry %}
-      {% endif %}
-    {% endfor %}
+  {% assign entries = "" | split: ',' %}
+  {% for entry in all_entries %}
+  {% if entry[1].keywords contains keyword.name %}
+  {% assign entries = entries | push: entry %}
+  {% endif %}
+  {% endfor %}
 
-    {% assign _offset = forloop.index | minus: 1 %}
-    {% assign md = _offset | modulo: 5 %}
+  {% assign _offset = forloop.index | minus: 1 %}
+  {% assign md_desktop = _offset | modulo: 6 %}
+  {% assign md_mobile = _offset | modulo: 2 %}
 
-    <!-- List previous 5 categories (desktop button) -->
-    {% if md == 0 %}
-      {% for _keyword in keywords limit: 5 offset: _offset %}
-        {% include html/category-button.html category-param=_keyword viewport="desktop" %}
-      {% endfor %}
-    {% endif %}
+  <!-- List previous 5 categories (desktop view) -->
+  {% if md_desktop == 0 %}
+  {% for _keyword in keywords limit: 6 offset: _offset %}
+  {% include html/category-button.html category-param=_keyword viewport="desktop" %}
+  {% endfor %}
+  {% endif %}
+  <!-- List previous 2 categories (mobile view) -->
 
-    <!-- Display mobile category button -->
-    {% include html/category-button.html category-param=keyword viewport="mobile" %}
+  {% include html/category-button.html category-param=keyword viewport="mobile" %}
 
-    <!-- Display desktop table -->
-    {% include html/desktop-table.html category=keyword entries=entries %}
+  <!-- Display desktop table -->
+  {% include html/desktop-table.html category=keyword entries=entries %}
 
-    <!-- Display mobile table -->
-    {% include html/mobile-table.html category=keyword entries=entries %}
+  <!-- Display mobile table -->
+  {% include html/mobile-table.html category=keyword entries=entries %}
 
   {% endfor %}
 </div>
