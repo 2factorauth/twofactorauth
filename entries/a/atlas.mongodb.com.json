@@ -6,7 +6,11 @@
       "totp",
       "email",
       "custom-software",
-      "sms"
+      "sms",
+      "u2f"
+    ],
+    "custom-software": [
+      "Okta Verify"
     ],
     "documentation": "https://docs.atlas.mongodb.com/security-multi-factor-authentication/",
     "keywords": [
