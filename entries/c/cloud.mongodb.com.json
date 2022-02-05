@@ -1,16 +1,21 @@
 {
-  "MongoDB Cloud Manager": {
+  "MongoDB Atlas": {
     "domain": "cloud.mongodb.com",
+    "additional-domains": [
+      "account.mongodb.com"
+    ],
     "img": "mongodb.svg",
     "tfa": [
       "totp",
       "email",
-      "custom-software"
+      "custom-software",
+      "sms",
+      "u2f"
     ],
     "custom-software": [
       "Okta Verify"
     ],
-    "documentation": "https://docs.cloudmanager.mongodb.com/core/multi-factor-authentication/",
+    "documentation": "https://docs.atlas.mongodb.com/security-multi-factor-authentication/",
     "keywords": [
       "developer"
     ]
