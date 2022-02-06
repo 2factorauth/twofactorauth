@@ -15,14 +15,23 @@
     font-size: 2.5em;
 
   }
-
   .category-title {
     color: #212529;
-    font-size: 1.2em;
     cursor: pointer;
+    line-height: 20px;
+    left: 0;
+    right: 0;
+    bottom:0;
+    top:0;
+    text-align: center;
+  }
+
+  /* Let the category-title adjust freely when not paired with .box */
+  .category-title.box {
+    position: absolute;
+    font-size: clamp(9px, 1.6vw, 19px);
   }
 }
-
 
 @media (prefers-color-scheme: dark) {
   .category-btn {
@@ -42,6 +51,7 @@
   &.category-btn {
     color: #fff;
     border: 2px solid var(--primary) !important;
+
     .category-title, .category-icon {
       //color: var(--background);
     }
