@@ -1,0 +1,26 @@
+{
+  "York University": {
+    "domain": "yorku.ca",
+    "tfa": [
+      "u2f",
+      "custom-software",
+      "custom-hardware",
+      "sms",
+      "call"
+    ],
+    "custom-software": [
+      "Duo Mobile"
+    ],
+    "custom-hardware": [
+      "Duo token",
+      "Touch ID"
+    ],
+    "documentation": "https://infosec.yorku.ca/2FA",
+    "keywords": [
+      "universities"
+    ],
+    "regions": [
+      "ca"
+    ]
+  }
+}
