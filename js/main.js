@@ -59,11 +59,6 @@ let resizeObserver = new ResizeObserver(() => {
     $('.footer').css({position: 'static'});
   }
 
-  // Focus and select search input on desktop
-  if ($(window).innerWidth() >= 992) {
-    $('#innerSearchBox').focus().select();
-  }
-
   // Resize square divs
   $('.box').height($('.box').width());
 });
