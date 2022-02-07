@@ -18,7 +18,9 @@ body {
   min-width: 300px;
   color: var(--text-color);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 h1, h2, h3, h4 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
