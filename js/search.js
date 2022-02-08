@@ -9,7 +9,7 @@ $(document).ready(function () {
       if (search_phrase == '') {
         // Empty search value
         // Display everything. Close tables
-        $('.category-btn').show();
+        $('.category-btn-outer').show();
         $('.category-btn').removeClass('active');
         $('.category-table').removeClass('show');
         $('.search-table-title').hide();
@@ -18,7 +18,7 @@ $(document).ready(function () {
         // Populated search field
 
         // Hide category icons
-        $('.category-btn').hide();
+        $('.category-btn-outer').hide();
 
         // Display all category tables
         $('.category-table').addClass('show');
@@ -59,7 +59,7 @@ $(document).ready(function () {
     clearTimeout(this.delay);
     this.delay = setTimeout(function () {
       $(this).trigger('search');
-    }.bind(this), 800);
+    }.bind(this), 500);
   }).on('search', function () {
     jets.search(this.value);
   });
