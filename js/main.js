@@ -3,20 +3,19 @@ $(document).ready(function () {
   $('.box').height($('.box').width());
 
   // Show region notice
-  if (window.localStorage.getItem('region-notice') !== 'hidden') {
-    $('#region-notice').collapse('show');
-  }
+  if (window.localStorage.getItem('region-notice') !== 'hidden') $('#region-notice').collapse('show');
 
   // Register service worker
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js');
 
   // Show category of query
   const query = window.location.hash;
-  if (query && query.indexOf('#') > -1) {
-    // Remove all tables before showing the correct one
-    $('.collapse').collapse('hide');
-    showCategory(query.substring(1));
-  }
+  if (query && query.indexOf('#') > -1) showCategory(query.substring(1));
+});
+
+$(window).on('hashchange', function () {
+  const query = window.location.hash;
+  if (query && query.indexOf('#') > -1) showCategory(query.substring(1));
 });
 
 $('.exception').popup({position: 'right center', hoverable: true, title: 'Exceptions & Restrictions'});
@@ -39,15 +38,17 @@ $('.category-btn').click(function () {
   }
 });
 
-$('#region-notice-close-btn').click(function (){
+$('#region-notice-close-btn').click(function () {
   $('#region-notice').collapse('hide');
   window.localStorage.setItem('region-notice', 'hidden');
 });
 
 // Show desktop and mobile tables
 function showCategory(category) {
+  $('.collapse').collapse('hide');
   $(`#${category}-table`).collapse("show");
   $(`#${category}-mobile-table`).collapse("show");
+  $('.category-btn').removeClass('active');
   $(`[id=${category}]`).addClass('active');
 }
 
