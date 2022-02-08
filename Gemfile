@@ -11,6 +11,7 @@ end
 group :test do
   gem 'httpclient'
   gem 'json_schemer'
+  gem 'parallel'
   gem 'rubocop'
   gem 'twitter'
 end
