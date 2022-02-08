@@ -25,7 +25,7 @@ $('.category-btn').click(function () {
   let query = window.location.hash.substring(1);
 
   // Collapse all other tables
-  $('.collapse').collapse('hide');
+  $('.category-table.collapse').collapse('hide');
   $('.category-btn').removeClass('active');
 
   // Check if category tables are displayed
@@ -45,7 +45,7 @@ $('#region-notice-close-btn').click(function () {
 
 // Show desktop and mobile tables
 function showCategory(category) {
-  $('.collapse').collapse('hide');
+  $('.category-table.collapse').collapse('hide');
   $(`#${category}-table`).collapse("show");
   $(`#${category}-mobile-table`).collapse("show");
   $('.category-btn').removeClass('active');
