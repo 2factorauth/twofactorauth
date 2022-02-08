@@ -46,7 +46,7 @@
 {% assign region = regions | where: 'id', baseurl %}
 <div id="region-notice" class="collapse">
   <div>
-    We're showing you services available in <span class="flag-icon {% if region.first.square_flag %}flag-icon-squared{% endif %} flag-icon-{{ site.baseurl }}" aria-label="{{ region.first.name }}"></span> To see all available sites, please visit the <a href="/int">global page</a>
+    We're showing you services available in <span class="flag-icon {% if region.first.square_flag %}flag-icon-squared{% endif %} flag-icon-{{ site.baseurl }}" aria-label="{{ region.first.name }}"></span><br class="d-md-none"> To see all available sites, please visit the <a href="/int">global page</a>
     <button type="button" id="region-notice-close-btn" class="close" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>

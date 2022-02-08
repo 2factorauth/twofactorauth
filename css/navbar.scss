@@ -46,6 +46,7 @@
   background: var(--secondary-background);
   padding: .5em 0;
   text-align: center;
+  font-size: 14px;
   margin: 0 0 3rem 0;
 
   &:only-child {
@@ -55,13 +56,21 @@
 }
 
 #region-notice-close-btn {
-  margin-left: 2rem;
   color: var(--text-color);
   border: none;
   background: none;
   font-size: 1.5em;
   font-weight: 700;
-  line-height: 1
+  line-height: 1;
+}
+
+@media screen and (min-width: 444px) {
+  #region-notice-close-btn {
+    margin-left: 2rem;
+  }
+  #region-notice {
+    font-size: 1rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
