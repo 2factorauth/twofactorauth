@@ -14,7 +14,6 @@ regions.insert(0, { 'id' => 'int', 'name' => 'global' })
 git_dir = Dir.glob('.git')
 FileUtils.cp_r(git_dir, "#{tmp_dir}/") unless File.exist?("#{tmp_dir}/.git")
 
-# rubocop:disable Metrics/BlockLength
 # Region loop
 # rubocop:disable Metrics/BlockLength
 # rubocop:disable Layout/LineLength
