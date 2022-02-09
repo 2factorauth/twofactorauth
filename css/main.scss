@@ -2,21 +2,31 @@
 ---
 :root {
   --primary: hsl(180, 59%, 51%);
+  --background: #fff;
+  --secondary-background: #eeeeee96;
+  --text-color: #212529;
+  @media (prefers-color-scheme: dark) {
+    --background: #212121;
+    --secondary-background: #6f6f6f96;
+    --text-color: #eee;
+  }
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--background);
   font-family: open sans, Helvetica, Arial, sans-serif;
   min-width: 300px;
+  color: var(--text-color);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 h1, h2, h3, h4 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #212121;
     color: #eee;
   }
   a {
@@ -48,19 +58,24 @@ h1, h2, h3, h4 {
   padding: 0;
 
   /** Top content on index.html **/
-  #main {
-    margin: 1em auto 1em auto;
-    text-align: center;
+  .main {
+    margin: 0;
+    #logo-outer {
+      padding: 1em;
+      text-align: center;
 
-    h2 {
-      font-weight: 300 !important;
-      font-size: 2.3rem;
+      #logo {
+        margin: auto;
+        height: 15em;
+        max-height: 33vw;
+      }
     }
 
-    #logo {
-      margin: auto;
-      height: 20em;
-      max-height: 33vw;
+    .description {
+      h2 {
+        font-weight: 300 !important;
+        font-size: 2.3rem;
+      }
     }
   }
 
@@ -134,5 +149,15 @@ h1, h2, h3, h4 {
 @media screen and (max-width: 992px) {
   .desktop-only {
     display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
 }
