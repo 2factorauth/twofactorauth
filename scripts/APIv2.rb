@@ -22,7 +22,7 @@ Dir.glob('entries/*/*.json') do |file|
 
   entry['tfa'] = website['tfa'].map { |e| rplc_ptrn.keys.include?(e) ? rplc_ptrn[e] : e } unless website['tfa'].nil?
   website['contact']&.each { |a, b| a.eql?('email') ? entry['email_address'] = b : entry[a] = b }
-  website['regions']&.each { |region| regions[region] = 1 + regions[region].to_i }
+  website['regions']&.each { |region| regions[region] = 1 + regions[region].to_i unless region[0] == '-' }
 
   all[category].nil? ? all[category] = { name => entry } : all[category][name] = entry # Initialize the object
 end

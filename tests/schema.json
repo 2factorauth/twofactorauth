@@ -51,7 +51,7 @@
           "minItems": 1,
           "items": {
             "type": "string",
-            "pattern": "^[a-z]{2}$"
+            "pattern": "^-?[a-z]{2}$"
           }
         },
         "additional-domains": {

@@ -1,13 +1,15 @@
 {
   "Amtrak": {
     "domain": "amtrak.com",
-    "url": "https://www.amtrak.com/",
-    "contact": {
-      "facebook": "Amtrak",
-      "twitter": "Amtrak"
-    },
+    "tfa": [
+      "sms",
+      "email"
+    ],
     "keywords": [
       "transport"
+    ],
+    "regions": [
+      "us"
     ]
   }
 }

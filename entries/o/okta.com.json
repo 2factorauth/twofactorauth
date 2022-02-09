@@ -1,14 +1,20 @@
 {
   "Okta": {
     "domain": "okta.com",
-    "url": "https://www.okta.com/",
     "tfa": [
       "sms",
       "call",
       "email",
       "totp",
       "custom-hardware",
-      "u2f"
+      "u2f",
+      "custom-software"
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "custom-software": [
+      "Okta Verify"
     ],
     "documentation": "https://help.okta.com/en/prod/Content/Topics/Security/MFA.htm",
     "keywords": [

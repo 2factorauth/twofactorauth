@@ -1,11 +1,10 @@
 {
   "AT&amp;T": {
     "domain": "att.com",
-    "url": "https://www.att.com/",
-    "contact": {
-      "facebook": "ATT",
-      "twitter": "ATTCares"
-    },
+    "tfa": [
+      "sms"
+    ],
+    "documentation": "https://www.att.com/support/article/my-account/KM1249672/",
     "keywords": [
       "utilities"
     ],

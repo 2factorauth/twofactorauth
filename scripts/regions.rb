@@ -4,6 +4,7 @@
 require 'json'
 require 'fileutils'
 require 'yaml'
+require 'parallel'
 
 data_dir = './_data'
 websites = JSON.parse(File.read("#{data_dir}/all.json"))
@@ -15,13 +16,13 @@ FileUtils.cp_r(git_dir, "#{tmp_dir}/") unless File.exist?("#{tmp_dir}/.git")
 
 # rubocop:disable Metrics/BlockLength
 # Region loop
-regions.each do |region|
+# rubocop:disable Metrics/BlockLength
+# rubocop:disable Layout/LineLength
+Parallel.each(-> { regions.pop || Parallel::Stop }) do |region|
   dest_dir = "#{tmp_dir}/#{region['id']}"
-  unless File.exist?(dest_dir)
-    Dir.mkdir(dest_dir) unless File.exist?(dest_dir)
-    files = %w[index.html _includes _layouts _data]
-    FileUtils.cp_r(files, dest_dir)
-  end
+  Dir.mkdir(dest_dir) unless File.exist?(dest_dir)
+  files = %w[index.html _includes _layouts _data]
+  FileUtils.cp_r(files, dest_dir)
 
   File.open("#{dest_dir}/_config_region.yml", 'w') do |file|
     file.write("title: 2FA Directory (#{region['name']})") unless region['id'].eql?('int')
@@ -32,7 +33,16 @@ regions.each do |region|
 
   # Website loop
   websites.each do |name, website|
-    next unless website['regions'].nil? || website['regions'].include?(region['id']) || region['id'].eql?('int')
+    unless website['regions'].nil?
+      site_regions = website['regions'].reject { |r| r.start_with?('-') }
+      site_excluded_regions = website['regions'].select { |r| r.start_with?('-') }.map! { |region_code| region_code.tr('-', '') }
+    end
+
+    unless website['regions'].nil? || site_regions.empty? || site_regions.include?(region['id']) || region['id'].eql?('int')
+      next
+    end
+
+    next if !site_excluded_regions.nil? && site_excluded_regions.include?(region['id'])
 
     all[name] = website
     website['keywords'].each do |kw|
@@ -50,9 +60,8 @@ regions.each do |region|
 
   out_dir = "#{Dir.pwd}/_site/#{region['id']}"
   puts "Building #{region['id']}..."
-  # rubocop:disable Layout/LineLength
   puts `bundle exec jekyll build -s #{dest_dir} --config _config.yml,#{dest_dir}/_config_region.yml -d #{out_dir} --baseurl #{region['id']}`
-  # rubocop:enable Layout/LineLength
   puts "#{region['id']} built."
 end
 # rubocop:enable Metrics/BlockLength
+# rubocop:enable Layout/LineLength

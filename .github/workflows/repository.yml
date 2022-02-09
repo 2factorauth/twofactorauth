@@ -20,6 +20,8 @@ jobs:
             /tmp/iso-*.txt
             /tmp/alexa
           key: tmp-files-${{ hashFiles('/tmp/alexa/*')}}
+      - name: Change nameserver
+        run: echo "nameserver 1.1.1.1" > /etc/resolv.conf
       - name: Validate JSON structure
         run:  bundle exec ruby ./tests/validate-json.rb
       - name: Validate Region codes
@@ -32,6 +34,7 @@ jobs:
         run: bundle exec ruby ./tests/validate-images.rb
       - name: Validate URL/Domain reachability
         run: bundle exec ruby ./tests/validate-urls.rb
+        continue-on-error: true
       - name: Quality Checks
         run: bundle exec ruby ./tests/quality-checks.rb
       - name: Validate Ruby scripts

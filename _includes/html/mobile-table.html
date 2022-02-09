@@ -1,12 +1,12 @@
 {% assign entries = include.entries %}
 
-<div class="collapse category-table mobile-only searchContainer" id="{{ include.category.name }}-table">
+<div class="collapse category-table mobile-only searchContainer" id="{{ include.category.name }}-mobile-table">
 <h2 class="search-table-title">{{ include.category.title }}</h2>
   {% for _website in entries %}
     {% assign name = _website[0] %}
     {% assign website = _website[1] %}
 
-    <div class="col-11 {% if website.tfa %}table-success{%else%}table-danger{%endif%}">
+  <div class="col {% if website.tfa %}table-success{%else%}table-danger{%endif%}">
 
       <div class="searchWords" style="display: none;">{{ name }} {{ website.domain }}{% for item in website.tfa %} 2fa:{{ item }}{% endfor %} {% for domain in website.additional-domains %} {{ domain }} {% endfor %}</div>
       <!-- Title -->
