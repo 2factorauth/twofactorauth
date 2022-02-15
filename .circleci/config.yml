@@ -9,7 +9,7 @@ jobs:
 
       - restore_cache:
           keys:
-            - bundler
+            - bundler-cache
             - awis-cache
             - similarweb-cache
 
@@ -22,8 +22,7 @@ jobs:
 
       - run:
           name: Check Twitter handles
-          command: |
-            bundle exec ruby ./tests/twitter.rb
+          command: bundle exec ruby ./tests/twitter.rb
 
       - run:
           name: Check Facebook handles
@@ -33,14 +32,14 @@ jobs:
           name: Check Alexa ranking
           command: bundle exec ruby ./tests/alexa.rb
 
+      - run:
+          name: Check Similarweb ranking
+          command: bundle exec ruby ./tests/similarweb.rb
+
       - save_cache:
           key: awis-cache
           paths:
             - "/tmp/alexa/*"
-
-      - run:
-          name: Check Similarweb ranking
-          command: ruby ./tests/similarweb.rb
 
       - save_cache:
           key: similarweb-cache
@@ -48,7 +47,7 @@ jobs:
             - "/tmp/similarweb/*"
 
       - save_cache:
-          key: bundler
+          key: bundler-cache
           paths:
             - "/tmp/bundler/*"
 
