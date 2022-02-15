@@ -58,4 +58,3 @@ rescue StandardError => e
   status = 1
 end
 exit(status) if Time.now.to_i > 1_651_363_200
-
