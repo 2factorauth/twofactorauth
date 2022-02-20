@@ -1,10 +1,6 @@
 {
-  "MongoDB Atlas": {
-    "domain": "cloud.mongodb.com",
-    "additional-domains": [
-      "account.mongodb.com"
-    ],
-    "img": "mongodb.svg",
+  "MongoDB": {
+    "domain": "mongodb.com",
     "tfa": [
       "totp",
       "email",
