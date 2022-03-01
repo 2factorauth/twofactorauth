@@ -1,11 +1,9 @@
 {
   "No-IP": {
     "domain": "noip.com",
-    "contact": {
-      "email": "webmaster@no-ip.com",
-      "facebook": "noipdns",
-      "twitter": "NoIPcom"
-    },
+    "tfa": [
+      "totp"
+    ],
     "keywords": [
       "domains"
     ]
