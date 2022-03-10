@@ -1,0 +1,22 @@
+{
+  "Skrill": {
+    "domain": "skrill.com",
+    "tfa": [
+      "email",
+      "sms",
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Skrill App Push Notification"
+    ],
+    "documentation": "https://skrill.com/en-us/support#/path/1753623122",
+    "notes": "Email method requires an additional PIN",
+    "keywords": [
+      "payments"
+    ],
+    "regions": [
+      "-jp"
+    ]
+  }
+}

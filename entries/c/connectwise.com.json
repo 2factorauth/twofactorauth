@@ -1,0 +1,16 @@
+{
+  "ConnectWise Control (ScreenConnect)": {
+    "domain": "connectwise.com",
+    "url": "https://www.connectwise.com/software/control",
+    "tfa": [
+      "sms",
+      "email",
+      "totp",
+      "custom-hardware"
+    ],
+    "documentation": "https://docs.connectwise.com/ConnectWise_Control_Documentation/Get_started/Administration_page/Security_page/Enable_two-factor_authentication_for_host_accounts",
+    "keywords": [
+      "remote"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Mint": {
+    "domain": "mint.intuit.com",
+    "tfa": [
+      "sms",
+      "call",
+      "totp"
+    ],
+    "documentation": "https://help.mint.com/Security/908045661",
+    "notes": "Software 2FA requires enabling SMS or phone call as a back-up.",
+    "keywords": [
+      "finance"
+    ],
+    "regions": [
+      "us",
+      "ca"
+    ]
+  }
+}

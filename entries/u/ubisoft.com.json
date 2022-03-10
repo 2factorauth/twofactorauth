@@ -1,0 +1,20 @@
+{
+  "Ubisoft/Uplay": {
+    "domain": "ubisoft.com",
+    "additional-domains": [
+      "ubisoftconnect.com",
+      "ubi.com"
+    ],
+    "tfa": [
+      "email",
+      "totp",
+      "sms"
+    ],
+    "documentation": "https://www.ubisoft.com/help?article=000065723",
+    "recovery": "https://www.ubisoft.com/help?article=000063351",
+    "notes": "SMS and TOTP 2FA require adding a phone number as a fallback. SMS 2FA is not available in all regions.",
+    "keywords": [
+      "gaming"
+    ]
+  }
+}

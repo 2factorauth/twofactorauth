@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <ul class="navbar-nav navbar-table ml-auto pr-5 flex-row">
+      {% unless page.name == "index.html" %}
+      <li class="nav-item float-left">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      {% endunless %}
+      <li class="nav-item">
+        <a class="nav-link" href="/about/">About</a>
+      </li>
+      {% assign regions = site.data.regions | sort: "name" %}
+      {% assign regions2 = regions | map: 'id' %}
+      {% if page.name == "index.html" %}
+      <li class="nav-item dropdown">
+        <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" id="regionDropdown" role="button" tabindex="0">
+          Region
+          {% assign baseurl = site.baseurl %}
+          {% if regions2 contains baseurl %}
+          {% assign region = regions | where: 'id', baseurl %}
+          <span class="flag-icon {% if region.first.square_flag %}flag-icon-squared{% endif %} flag-icon-{{ baseurl }}"></span>
+          {% else %}
+          <i class="fas fa-globe-africa"></i>
+          {% endif %}
+        </a>
+        <div aria-labelledby="regionDropdown" class="dropdown-menu">
+          <a class="dropdown-item" href="/int/">
+            <i class="fas fa-globe-africa"></i>
+            Global</a>
+          {% for region in regions %}
+          <a class="dropdown-item" href="/{{ region.id }}/">
+            <span class="flag-icon {% if region.square_flag %}flag-icon-squared{% endif %} flag-icon-{{ region.id }}"></span>
+            {{ region.name }}
+          </a>
+          {% endfor %}
+        </div>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>
+
+{% comment %} Region notice {% endcomment %}
+{% if page.name == "index.html" %}
+{% if regions2 contains baseurl %}
+{% assign region = regions | where: 'id', baseurl %}
+<div id="region-notice" class="collapse">
+  <div>
+    We're showing you services available in <span class="flag-icon {% if region.first.square_flag %}flag-icon-squared{% endif %} flag-icon-{{ site.baseurl }}" aria-label="{{ region.first.name }}"></span><br class="d-md-none"> To see all available sites, please visit the <a href="/int">global page</a>
+    <button type="button" id="region-notice-close-btn" class="close" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
+{% endif %}
+{% endif %}

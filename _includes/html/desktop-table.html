@@ -1,0 +1,159 @@
+{% assign entries = include.entries %}
+<div id="{{ include.category.name }}-table" class="collapse category-table desktop-only">
+  <a id="{{ include.category.name }}" class="category-href"></a>
+  <table class="table table-hover table-bordered table-bordered">
+    <thead class="sticky-top">
+      <tr>
+        <th scope="col">{{ include.category.title }}</th>
+        <th scope="col" class="icon-cell">Docs</th>
+        <th scope="col" class="icon-cell">SMS</th>
+        <th scope="col" class="icon-cell">Phone Call</th>
+        <th scope="col" class="icon-cell">Email</th>
+        <th scope="col" class="icon-cell">Hardware token</th>
+        <th scope="col" class="icon-cell">Software token</th>
+      </tr>
+    </thead>
+    <tbody class="searchContainer">
+      {% for _website in entries %}
+        {% assign name = _website[0] %}
+        {% assign website = _website[1] %}
+        <tr class="table-{% if website.tfa %}success{% else %}danger{% endif %}">
+
+          <td>
+            <div class="searchWords d-none">{{ name }} {{ website.domain }}{% for item in website.tfa %} 2fa:{{ item }}{% endfor %}{% for item in website.custom-hardware %} 2fa:{{item}}{% endfor %}{% for item in website.custom-software %} 2fa:{{item}}{% endfor %} {% for domain in website.additional-domains %} {{ domain }} {% endfor %}</div>
+            <div class="row no-gutters">
+              <a class="site-name {% if website.notes %}exception-site{% endif %}" href="{% if website.url %}{{ website.url }}{% else %}https://{{ website.domain }}{% endif %}">
+              <!-- Image -->
+              {% if website.img %}
+                {% assign letter = website.img | slice: 0 | downcase | append: "/" %}
+                {% assign image = website.img | prepend: letter %}
+              {% else %}
+                {% assign letter = website.domain | slice: 0 | downcase | append: "/" %}
+                {% assign image = website.domain | append: ".svg" | prepend: letter %}
+              {% endif %}
+
+              <img class="logo desktop-only" loading="lazy" src="/img/{{ image }}" alt="">
+
+              {{ name }}</a>
+
+              {% if website.notes %}
+                <i class="fas fa-exclamation-triangle exception" data-content="{{ website.notes }}"></i>
+              {% endif %}
+            </div>
+          </td>
+
+          {% if website.tfa %}
+            {% assign tfa = website.tfa %}
+
+            <td class="icon-cell">
+              <div class="row">
+              {% if website.documentation %}
+                <a href="{{ website.documentation | remove: 'https://2fa.directory' }}" class="col">
+                  <i class="fas fa-book"></i>
+                </a>
+              {% endif %}
+              {% if website.recovery %}
+                <a href="{{ website.recovery }}" class="col">
+                  <i class="fas fa-redo"></i>
+                </a>
+              {% endif %}
+              </div>
+            </td>
+
+            <td class="icon-cell">
+              {% if tfa contains "sms" %}
+                <i class="tfa-icon fas fa-check"></i>
+              {% endif %}
+            </td>
+
+            <td class="icon-cell">
+              {% if tfa contains "call" %}
+                <i class="tfa-icon fas fa-check"></i>
+                {%endif%}
+            </td>
+
+            <td class="icon-cell">
+              {% if tfa contains "email" %}
+                <i class="tfa-icon fas fa-check"></i>
+              {% endif %}
+            </td>
+
+            <td class="icon-cell">
+              <div class="row">
+                {% if tfa contains "custom-hardware" %}
+                  <i class="tfa-icon fas fa-info col"
+                     title="{%- if website.custom-hardware -%}
+                     {%- if website.custom-hardware.size > 1 -%}
+                     Requires one of:
+                     {%- else -%}
+                     Required hardware token:
+                     {%- endif-%}
+                     {%- for item in website.custom-hardware -%}&#013;- {{ item }} {%- endfor -%}
+                     {%- else -%}
+                     Requires custom hardware token
+                     {%- endif -%}
+                     "
+
+                  ></i>
+                {% endif %}
+
+                {% if tfa contains "u2f" %}
+                  <i class="tfa-icon u2f-icon col" title="U2F/WebAuthn support">
+                    <img alt="U2F" height="20" src="/img/u2f.svg" loading="lazy" type="image/svg">
+                  </i>
+                {% endif %}
+              </div>
+            </td>
+
+            <td class="icon-cell">
+              <div class="row">
+                {% if tfa contains "totp" %}
+                  <i class="tfa-icon fas fa-check col" title="TOTP support"></i>
+                {% endif %}
+                {% if tfa contains "custom-software" %}
+                  <i class="tfa-icon fas fa-info col"
+                     title="{%- if website.custom-software -%}
+                     {%- if website.custom-hardware.size > 1 -%}
+                     Requires one of:
+                     {%- else -%}
+                     Required app:
+                     {%- endif-%}
+                     {%- for item in website.custom-software -%}&#013;- {{ item }} {%- endfor -%}
+                     {%- else -%}
+                     Requires proprietary app/software
+                     {%- endif -%}
+                     "
+                  ></i>
+                {% endif %}
+              </div>
+            </td>
+          {% else %}
+
+            <td colspan="6">
+              Tell them to support 2FA!
+              <div class="social-button-group">
+                {% if website.contact.twitter %}
+                  <div class="twitter-button social-button btn" data-twitter="{{ website.contact.twitter }}" data-lang="{{ website.contact.language }}">
+                    <i class="fab fa-twitter"></i>
+                    On Twitter
+                  </div>
+                {% endif %}
+                {% if website.contact.facebook %}
+                  <div class="facebook-button social-button btn" data-facebook="{{ website.contact.facebook }}">
+                    <i class="fab fa-facebook-f"></i>
+                    On Facebook
+                  </div>
+                {% endif %}
+                {% if website.contact.email %}
+                  <div class="email-button social-button btn" data-email="{{ website.contact.email }}" data-lang="{{ website.contact.language }}">
+                    <i class="fas fa-envelope"></i>
+                    Via Email</div>
+                {% endif %}
+              </div>
+            </td>
+          {% endif %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

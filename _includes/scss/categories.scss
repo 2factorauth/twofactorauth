@@ -1,0 +1,65 @@
+.category-btn-outer {
+  padding: 12px;
+}
+
+.category-btn {
+  width: 100%;
+  overflow: hidden;
+  background: #eeeeee96;
+  border: 1px solid #8c8c8c !important;
+  padding: .5em;
+  margin: 0;
+  border-radius: 2%;
+  //box-shadow: 0 3px 8px 0 #00000033, 0 0 0 1px #00000014;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+  &:focus {
+    outline: none;
+    border: 2px solid var(--primary) !important;
+  }
+
+  .category-icon {
+    color: #3e3e3e;
+    border: none;
+    font-size: 2.5em;
+
+  }
+
+  .category-title {
+    color: #212529;
+    cursor: pointer;
+    line-height: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    text-align: center;
+  }
+
+  /* Let the category-title adjust freely when not paired with .box */
+  .category-title.box {
+    position: absolute;
+    font-size: clamp(9px, 1.6vw, 19px);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .category-btn {
+    background: #4242428f;
+
+    .category-title {
+      color: #fff;
+    }
+
+    .category-icon {
+      color: #fff;
+    }
+  }
+}
+
+.active {
+  &.category-btn {
+    color: #fff;
+    border: 2px solid var(--primary) !important;
+  }
+}

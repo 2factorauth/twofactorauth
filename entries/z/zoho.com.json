@@ -1,0 +1,21 @@
+{
+  "Zoho": {
+    "domain": "zoho.com",
+    "tfa": [
+      "sms",
+      "custom-software",
+      "totp",
+      "u2f"
+    ],
+    "custom-software": [
+      "Zoho OneAuth"
+    ],
+    "documentation": "https://help.zoho.com/portal/kb/articles/mfa-introduction",
+    "keywords": [
+      "communication",
+      "email",
+      "marketing",
+      "remote"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "Dyn": {
+    "domain": "dyn.com",
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://help.dyn.com/2-factor-authentication/",
+    "notes": "Currently only supported for the Managed DNS & Email Delivery platforms (via DynID). Eventually DynID (and 2FA) will be rolled out to all platforms (no ETA).",
+    "keywords": [
+      "domains"
+    ]
+  }
+}

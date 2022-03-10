@@ -1,0 +1,17 @@
+{
+  "NiceHash": {
+    "domain": "nicehash.com",
+    "tfa": [
+      "totp",
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "documentation": "https://www.nicehash.com/support/general-help/security/how-to-setup-2fa-security",
+    "recovery": "https://www.nicehash.com/support/general-help/security/lost-password-or-2fa-code",
+    "keywords": [
+      "cryptocurrencies"
+    ]
+  }
+}

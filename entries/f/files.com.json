@@ -1,0 +1,18 @@
+{
+  "Files.com": {
+    "domain": "files.com",
+    "tfa": [
+      "sms",
+      "custom-hardware",
+      "u2f",
+      "totp"
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "documentation": "https://www.files.com/docs/features/twofactor-authentication-2fa",
+    "keywords": [
+      "backup"
+    ]
+  }
+}

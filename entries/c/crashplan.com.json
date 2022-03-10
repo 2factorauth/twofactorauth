@@ -1,0 +1,17 @@
+{
+  "CrashPlan": {
+    "domain": "crashplan.com",
+    "additional-domains": [
+      "crashplanpro.com",
+      "console.us2.crashplanpro.com"
+    ],
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://support.code42.com/Small_Business/Get_Started/Two-factor_authentication_for_CrashPlan_for_Small_Business",
+    "notes": "2FA is not available on the CrashPlan/Code42 desktop application.",
+    "keywords": [
+      "backup"
+    ]
+  }
+}

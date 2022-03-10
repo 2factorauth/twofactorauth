@@ -1,0 +1,17 @@
+{
+  "Sophos Central": {
+    "domain": "central.sophos.com",
+    "img": "sophos.com.svg",
+    "additional-domains": [
+      "login.sophos.com"
+    ],
+    "tfa": [
+      "email",
+      "totp"
+    ],
+    "documentation": "https://docs.sophos.com/central/Customer/help/en-us/central/Customer/concepts/ep_MultiFactorAuthentication.html",
+    "keywords": [
+      "security"
+    ]
+  }
+}

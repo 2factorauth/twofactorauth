@@ -1,0 +1,18 @@
+{
+  "IBM Cloud": {
+    "domain": "cloud.ibm.com",
+    "tfa": [
+      "email",
+      "u2f",
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Symantec VIP"
+    ],
+    "documentation": "https://cloud.ibm.com/docs/account?topic=account-enablemfa",
+    "keywords": [
+      "cloud"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Heroku": {
+    "domain": "heroku.com",
+    "tfa": [
+      "totp",
+      "custom-software",
+      "custom-hardware",
+      "u2f"
+    ],
+    "custom-software": [
+      "Salesforce Authenticator"
+    ],
+    "custom-hardware": [
+      "Built-in Authenticator (Biometrics)"
+    ],
+    "documentation": "https://devcenter.heroku.com/articles/multi-factor-authentication",
+    "recovery": "https://devcenter.heroku.com/articles/recovery-codes",
+    "keywords": [
+      "cloud"
+    ]
+  }
+}

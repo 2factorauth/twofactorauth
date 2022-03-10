@@ -1,0 +1,27 @@
+{
+  "BigCommerce": {
+    "domain": "bigcommerce.com",
+    "url": "https://www.bigcommerce.com",
+    "additional-domains": [
+      "bigcommerce.ca",
+      "bigcommerce.co.uk",
+      "bigcommerce.com.au",
+      "bigcommerce.de",
+      "bigcommerce.es",
+      "bigcommerce.fr",
+      "bigcommerce.it",
+      "bigcommerce.nl"
+    ],
+    "tfa": [
+      "custom-software",
+      "email"
+    ],
+    "custom-software": [
+      "Authy"
+    ],
+    "documentation": "https://support.bigcommerce.com/s/article/Setting-Up-2FA",
+    "keywords": [
+      "other"
+    ]
+  }
+}

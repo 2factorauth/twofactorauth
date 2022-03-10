@@ -1,0 +1,14 @@
+{
+  "Segment": {
+    "domain": "segment.com",
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://segment.com/docs/iam/mfa/",
+    "notes": "SMS 2FA is only available for US and Canada phone numbers.",
+    "keywords": [
+      "communication"
+    ]
+  }
+}

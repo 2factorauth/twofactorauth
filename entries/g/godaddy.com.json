@@ -1,0 +1,16 @@
+{
+  "GoDaddy": {
+    "domain": "godaddy.com",
+    "url": "https://www.godaddy.com/",
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://www.godaddy.com/help/enable-two-step-verification-7502",
+    "notes": "If hardware 2FA enabled, customer support by phone requires enabling back-up method.",
+    "keywords": [
+      "domains"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "Square": {
+    "domain": "squareup.com",
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://squareup.com/help/us/en/article/5593",
+    "recovery": "https://squareup.com/help/gb/en/article/5594",
+    "notes": "SMS only supported in US and Canada",
+    "keywords": [
+      "payments"
+    ],
+    "regions": [
+      "au",
+      "ca",
+      "fr",
+      "ie",
+      "jp",
+      "es",
+      "gb",
+      "us"
+    ]
+  }
+}

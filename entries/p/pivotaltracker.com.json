@@ -1,0 +1,14 @@
+{
+  "Pivotal Tracker": {
+    "domain": "pivotaltracker.com",
+    "url": "https://www.pivotaltracker.com",
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://www.pivotaltracker.com/help/articles/two_factor_auth/",
+    "notes": "2FA only works on the web version. If enabled, you will not be able to use the mobile apps.",
+    "keywords": [
+      "developer"
+    ]
+  }
+}

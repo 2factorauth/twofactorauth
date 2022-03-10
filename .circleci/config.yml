@@ -7,32 +7,52 @@ jobs:
     steps:
       - checkout
 
-      - run:
-          name: Check Twitter handles
-          command: bash twitter.sh
-          working_directory: _deployment/tests
-
-      - run:
-         name: Check Facebook handles
-         command: bash facebook.sh
-         working_directory: _deployment/tests
-
       - restore_cache:
           keys:
+            - bundler-cache
             - awis-cache
+            - similarweb-cache
+
+      - run:
+          name: Bundler
+          command: |
+            bundle config set --local path '/tmp/bundler'
+            bundle config set --local without 'jekyll_plugins'
+            bundle install
+
+      - run:
+          name: Check Twitter handles
+          command: bundle exec ruby ./tests/twitter.rb
+
+      - run:
+          name: Check Facebook handles
+          command: ruby ./tests/facebook.rb
 
       - run:
           name: Check Alexa ranking
-          command: bash alexa.sh
-          working_directory: _deployment/tests
+          command: bundle exec ruby ./tests/alexa.rb
+
+      - run:
+          name: Check Similarweb ranking
+          command: bundle exec ruby ./tests/similarweb.rb
 
       - save_cache:
           key: awis-cache
           paths:
             - "/tmp/alexa/*"
 
+      - save_cache:
+          key: similarweb-cache
+          paths:
+            - "/tmp/similarweb/*"
+
+      - save_cache:
+          key: bundler-cache
+          paths:
+            - "/tmp/bundler/*"
+
 workflows:
   version: 2
   workflow:
     jobs:
-    - tests
+      - tests

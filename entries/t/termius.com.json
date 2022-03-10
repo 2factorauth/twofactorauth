@@ -1,0 +1,16 @@
+{
+  "Termius": {
+    "domain": "termius.com",
+    "tfa": [
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Authy"
+    ],
+    "documentation": "https://docs.termius.com/account/subscription#enable-2fa",
+    "keywords": [
+      "remote"
+    ]
+  }
+}

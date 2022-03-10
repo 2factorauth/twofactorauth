@@ -1,0 +1,23 @@
+{
+  "Volksbanken Raiffeisenbanken": {
+    "domain": "vr.de",
+    "tfa": [
+      "custom-software",
+      "custom-hardware"
+    ],
+    "custom-software": [
+      "VR-SecureGo"
+    ],
+    "custom-hardware": [
+      "TAN generator"
+    ],
+    "documentation": "https://www.vr.de/privatkunden/unsere-produkte/was-ist-ein-girokonto/tan-verfahren.html",
+    "notes": "Support for 2FA types depends on regional V&amp;R banks.",
+    "keywords": [
+      "banking"
+    ],
+    "regions": [
+      "de"
+    ]
+  }
+}

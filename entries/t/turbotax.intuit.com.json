@@ -1,0 +1,19 @@
+{
+  "Intuit TurboTax": {
+    "domain": "turbotax.intuit.com",
+    "tfa": [
+      "sms",
+      "call",
+      "totp"
+    ],
+    "documentation": "https://ttlc.intuit.com/questions/2902682",
+    "notes": "Software 2FA requires enabling SMS or phone call as a back-up.",
+    "keywords": [
+      "finance"
+    ],
+    "regions": [
+      "us",
+      "ca"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{% assign name = include.category-param.name %}
+{% assign title = include.category-param.title %}
+{% assign icon = include.category-param.icon %}
+<div class="col {{ include.viewport }}-only category-btn-outer">
+  <button class="row {% unless include.viewport == 'mobile' %}box{% endunless %} category-btn" data-toggle="collapse" data-target="#{{name}}-table" aria-expanded="false" aria-controls="{{ name }}-table" id="{{ name }}">
+    <div class="col"></div>
+    <div class="col-12 align-self-center">
+      <i class="{{ icon }} category-icon fa-fw mx-auto d-block"></i>
+    </div>
+    <div class="col-12 align-self-end position-relative overflow-hidden">
+      <label class="category-title">{{ title }}</label>
+    </div>
+  </button>
+</div>

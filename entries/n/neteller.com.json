@@ -1,0 +1,23 @@
+{
+  "NETELLER": {
+    "domain": "neteller.com",
+    "url": "https://www.neteller.com/",
+    "tfa": [
+      "sms",
+      "email",
+      "custom-software",
+      "totp"
+    ],
+    "custom-software": [
+      "NETTELLER mobile"
+    ],
+    "documentation": "https://www.neteller.com/en/support#/path/1362152022",
+    "keywords": [
+      "payments"
+    ],
+    "regions": [
+      "-jp",
+      "-us"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "Bitbucket": {
+    "domain": "bitbucket.org",
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://support.atlassian.com/bitbucket-cloud/docs/enable-two-step-verification/",
+    "notes": "An SSH key must be associated with your account to enable 2FA.",
+    "keywords": [
+      "developer"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "BitMEX": {
+    "domain": "bitmex.com",
+    "url": "https://www.bitmex.com",
+    "tfa": [
+      "totp",
+      "custom-hardware"
+    ],
+    "documentation": "https://blog.bitmex.com/use-two-factor-authentication-and-dont-reuse-passwords/",
+    "notes": "At most one 2FA method can be enabled at any time.",
+    "keywords": [
+      "cryptocurrencies"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Sophos Home": {
+    "domain": "home.sophos.com",
+    "additional-domains": [
+      "my.sophos.com"
+    ],
+    "img": "sophos.com.svg",
+    "tfa": [
+      "totp",
+      "email",
+      "sms"
+    ],
+    "documentation": "https://support.home.sophos.com/hc/en-us/articles/360032204471",
+    "recovery": "https://support.home.sophos.com/hc/en-us/articles/360032204591",
+    "notes": "Email and SMS 2FA can only be enabled as backup methods.",
+    "keywords": [
+      "security"
+    ]
+  }
+}

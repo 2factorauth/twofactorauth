@@ -1,0 +1,21 @@
+{
+  "Xfinity": {
+    "domain": "xfinity.com",
+    "additional-domains": [
+      "comcast.com"
+    ],
+    "tfa": [
+      "sms",
+      "email",
+      "custom-software"
+    ],
+    "documentation": "https://www.xfinity.com/support/account/enroll-2-step-verification/",
+    "notes": "Email 2FA requires the use of a non-Comcast.net email address.",
+    "keywords": [
+      "utilities"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}

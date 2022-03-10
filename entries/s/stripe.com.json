@@ -1,0 +1,19 @@
+{
+  "Stripe": {
+    "domain": "stripe.com",
+    "url": "https://www.stripe.com/",
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f",
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "Built-in Authenticator (Biometrics)"
+    ],
+    "documentation": "https://support.stripe.com/questions/how-do-i-enable-two-step-verification",
+    "keywords": [
+      "payments"
+    ]
+  }
+}

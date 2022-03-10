@@ -1,0 +1,15 @@
+{
+  "Kaspersky": {
+    "domain": "kaspersky.com",
+    "url": "https://www.kaspersky.com/",
+    "tfa": [
+      "totp",
+      "sms"
+    ],
+    "documentation": "https://help.kaspersky.com/KPC/1.0/en-US/152628.htm",
+    "notes": "SMS 2FA must be enabled before TOTP 2FA can be set up. SMS 2FA cannot be disabled even when TOTP is enabled.",
+    "keywords": [
+      "security"
+    ]
+  }
+}

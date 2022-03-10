@@ -1,32 +1,35 @@
 $(document).ready(function () {
-  //  Lazy load images
-  const lazyLoadInstance = new LazyLoad({ elements_selector: ".lazyload" });
+  // Make category buttons square
+  $('.box').height($('.box').width());
 
-  // Show popup notice
-  $('.exception').popup({ position: 'right center', hoverable: true, title: 'Exceptions & Restrictions' });
+  // Show region notice
+  if (window.localStorage.getItem('region-notice') !== 'hidden') $('#region-notice').collapse('show');
 
   // Register service worker
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js');
 
   // Show category of query
   const query = window.location.hash;
-  if (query && query.indexOf('#') > -1) {
-    // Remove all tables before showing the correct one
-    $('.collapse').collapse('hide');
-    showCategory(query.substring(1));
-  }
+  if (query && query.indexOf('#') > -1) showCategory(query.substring(1));
 });
 
-// On category click
-$('.cat').click(function () {
-  let query = window.location.hash;
+$(window).on('hashchange', function () {
+  const query = window.location.hash;
+  if (query && query.indexOf('#') > -1) showCategory(query.substring(1));
+});
 
-  // Collapse all other tables.
-  $('.collapse').collapse('hide');
-  $('.cat').removeClass('active');
+$('.exception').popup({position: 'right center', hoverable: true, title: 'Exceptions & Restrictions'});
+
+// On category click
+$('.category-btn').click(function () {
+  let query = window.location.hash.substring(1);
+
+  // Collapse all other tables
+  $('.category-table.collapse').collapse('hide');
+  $('.category-btn').removeClass('active');
 
   // Check if category tables are displayed
-  if (!$(`#${query.substring(1)}-table`).hasClass('collapsing') && !$(`#${query.substring(1)}-mobile-table`).hasClass('collapsing') || query.substring(1) !== this.id) {
+  if (!$(`#${query}-table`).hasClass('collapsing') && !$(`#${query}-mobile-table`).hasClass('collapsing') || query !== this.id) {
     window.location.hash = this.id;
     showCategory(this.id);
   } else {
@@ -35,21 +38,30 @@ $('.cat').click(function () {
   }
 });
 
+$('#region-notice-close-btn').click(function () {
+  $('#region-notice').collapse('hide');
+  window.localStorage.setItem('region-notice', 'hidden');
+});
 
-// Show desktop & mobile tables
+// Show desktop and mobile tables
 function showCategory(category) {
+  $('.category-table.collapse').collapse('hide');
   $(`#${category}-table`).collapse("show");
   $(`#${category}-mobile-table`).collapse("show");
-  $(`#${category}`).addClass('active');
+  $('.category-btn').removeClass('active');
+  $(`[id=${category}]`).addClass('active');
 }
 
 let resizeObserver = new ResizeObserver(() => {
   // Fix the footer to bottom of viewport if body is less than viewport
-  if($('body').height() < $(window).height()){
+  if ($('body').height() < $(window).height()) {
     $('.footer').css({position: 'absolute'});
-  }else{
+  } else {
     $('.footer').css({position: 'static'});
   }
+
+  // Resize square divs
+  $('.box').height($('.box').width());
 });
 
 resizeObserver.observe($('body')[0]);

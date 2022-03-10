@@ -1,0 +1,16 @@
+{
+  "NordPass": {
+    "domain": "nordpass.com",
+    "additional-domains": [
+      "nordaccount.com"
+    ],
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://support.nordpass.com/hc/en-us/articles/360002770497",
+    "keywords": [
+      "identity"
+    ]
+  }
+}

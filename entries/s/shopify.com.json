@@ -1,0 +1,15 @@
+{
+  "Shopify": {
+    "domain": "shopify.com",
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://help.shopify.com/manual/your-account/account-security/two-step-authentication",
+    "notes": "U2F requires using a Shopify ID. U2F can't be used on the Shopify mobile app, the Shopify POS app, or the Shopify Inbox app.",
+    "keywords": [
+      "other"
+    ]
+  }
+}

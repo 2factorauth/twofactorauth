@@ -1,0 +1,25 @@
+{
+  "Vanguard": {
+    "domain": "vanguard.com",
+    "url": "https://www.vanguard.com/",
+    "img": "vanguard.svg",
+    "tfa": [
+      "sms",
+      "call",
+      "u2f",
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "Voice Verification"
+    ],
+    "documentation": "https://investor.vanguard.com/security/security-keys",
+    "notes": "Hardware based 2FA requires SMS / Phone call 2FA as a backup.",
+    "keywords": [
+      "investing"
+    ],
+    "regions": [
+      "-gb",
+      "-au"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Microsoft Azure": {
+    "domain": "azure.microsoft.com",
+    "tfa": [
+      "sms",
+      "custom-software",
+      "totp",
+      "call"
+    ],
+    "custom-software": [
+      "Microsoft Authenticator"
+    ],
+    "documentation": "https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication/",
+    "keywords": [
+      "cloud"
+    ]
+  }
+}

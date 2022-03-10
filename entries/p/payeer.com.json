@@ -1,0 +1,22 @@
+{
+  "PAYEER": {
+    "domain": "payeer.com",
+    "tfa": [
+      "sms",
+      "email",
+      "custom-software"
+    ],
+    "documentation": "https://payeer.com/en/faq/",
+    "notes": "Receiving codes via SMS cost 0.05$ each message. 2FA is personalizable in account settings.",
+    "keywords": [
+      "payments"
+    ],
+    "regions": [
+      "ru",
+      "es",
+      "fr",
+      "us",
+      "ch"
+    ]
+  }
+}

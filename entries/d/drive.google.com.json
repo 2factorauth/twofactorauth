@@ -1,0 +1,21 @@
+{
+  "Google Drive": {
+    "domain": "drive.google.com",
+    "tfa": [
+      "sms",
+      "call",
+      "custom-software",
+      "totp",
+      "u2f"
+    ],
+    "custom-software": [
+      "Google Prompts",
+      "Google Smart Lock"
+    ],
+    "documentation": "https://www.google.com/intl/en-US/landing/2step/features.html",
+    "recovery": "https://support.google.com/accounts/answer/185834",
+    "keywords": [
+      "backup"
+    ]
+  }
+}

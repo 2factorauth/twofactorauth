@@ -1,0 +1,15 @@
+{
+  "Braintree": {
+    "domain": "braintreepayments.com",
+    "url": "https://www.braintreepayments.com/",
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://articles.braintreepayments.com/reference/security/two-factor-authentication",
+    "keywords": [
+      "payments"
+    ]
+  }
+}

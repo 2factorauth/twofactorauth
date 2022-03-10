@@ -1,0 +1,57 @@
+name: 🗑 Remove existing site
+description: Request that an existing listed site be removed.
+title: Remove [site name]
+labels: remove site
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Site name
+      description: Official name of the site
+      placeholder: YouTube
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Site URL
+      description: Link to the main page
+      placeholder: https://youtube.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: 2fa
+    attributes:
+      label: Removal reason
+      description: "This site entry should be removed because:"
+      multiple: true
+      options:
+        - It is a duplicate of an existing site entry.
+        - It will be discontinued in the near future.
+        - It has been shut down by the owner and is no longer accessible.
+        - It no longer meets 2fa.directory's contributing guidelines and site criteria.
+        - It contains content that violates 2fa.directory's excluded categories and websites guidelines.
+        - It has been acquired or absorbed by another site, and the new site is already listed on 2fa.directory.
+        - It no longer has verifiable 2FA documentation and is no longer ranked within the top 200,000 sites on Alexa.
+        - Other (please describe below).
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: |
+        Please include any supporting documentation, such as official announcements, social media posts, blog entries, press releases, or other information that helps to verify that the listed site entry should be removed.
+
+  - type: checkboxes
+    attributes:
+      label: Issue Eligibility
+      description: |
+        Check each box below to verify that this issue meets our requirements.
+      options:
+        - label: The issue I'm creating is not a duplicate of an existing [issue](https://github.com/2factorauth/twofactorauth/issues).
+          required: true
+        - label: The issue I'm creating is not a duplicate of an existing [pull request](https://github.com/2factorauth/twofactorauth/pulls)
+          required: true
