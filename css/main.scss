@@ -14,15 +14,15 @@
 
 body {
   background-color: var(--background);
-  font-family: open sans, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "open sans", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   min-width: 300px;
   color: var(--text-color);
 }
 html {
   scroll-behavior: smooth;
 }
-h1, h2, h3, h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+h1, h2, h3, h4, .category-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

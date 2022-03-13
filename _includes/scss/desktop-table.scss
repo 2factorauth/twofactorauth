@@ -51,6 +51,7 @@
         }
 
         td {
+          vertical-align: middle !important;
           font-weight: 400;
           font-family: "Open Sans", sans-serif;
           font-size: 18px !important;
@@ -69,6 +70,10 @@
               padding-right: 24px;
             }
           }
+
+          .exception {
+            font-size: 25px;
+          }
         }
 
         /* 2FA cells */
@@ -80,14 +85,17 @@
             img {
               text-align: center;
               margin: auto;
-              height:30px;
+              height: 30px;
               transform: rotate(30deg);
             }
           }
 
-          .fa-book,
-          .tfa-icon,
-          .fa-redo {
+          .bi-arrow-counterclockwise,
+          .bi-file-earmark-text-fill {
+            font-size: 35px;
+          }
+
+          .tfa-icon {
             font-size: 27px;
             line-height: 35px;
           }
@@ -96,6 +104,26 @@
             color: #2c662d;
           }
         }
+      }
+
+      .checkmark::before {
+        display: inline-block;
+        content: "";
+        vertical-align: -.125em;
+        background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%232c662d' xmlns='http://www.w3.org/2000/svg'><path d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z'/></svg>");
+        background-repeat: no-repeat;
+        height: 37px;
+        width: 37px;
+      }
+
+      .documentation::before {
+        display: inline-block;
+        content: "";
+        vertical-align: -.125em;
+        background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%233596ff' xmlns='http://www.w3.org/2000/svg'><path d='M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z'/></svg>");
+        background-repeat: no-repeat;
+        height: 35px;
+        width: 27px;
       }
 
       /* Both body and head */

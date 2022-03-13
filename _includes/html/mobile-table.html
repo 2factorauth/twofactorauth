@@ -26,19 +26,20 @@
 
           {{ name }}</a>
           {% if website.notes %}
-                <i class="fas fa-exclamation-triangle exception" data-content="{{ website.notes }}"></i>
+                <i class="bi bi-exclamation-triangle-fill exception" data-content="{{ website.notes }}"></i>
           {% endif %}
       </div>
 
       <!-- tfa options -->
       {% if website.tfa %}
-        <div class="row row-cols-2">
+    <p class="text-success">Supported options:</p>
+    <div class="row row-cols-3 rows-cols-sm">
           {% for tfa in website.tfa %}
 
             <div class="col text-success tfa-option">
-              <i class="fas fa-check"></i>
               <b>
-                {{ tfa | replace: "custom-software", "custom Software" | replace: "custom-hardware", "custom Hardware" | capitalize | replace: "Sms", "SMS" | replace: "Totp", "TOTP" | replace: "U2f", "U2F" }}</b>
+                {{ tfa | replace: "custom-software", "custom Software" | replace: "custom-hardware", "custom Hardware" | capitalize | replace: "Sms", "SMS" | replace: "Totp", "TOTP" | replace: "U2f", "U2F" }}
+              </b>
             </div>
 
           {% endfor %}
@@ -48,7 +49,7 @@
         {% if website.documentation %}
           <div class="btn doc-btn col-11 col-sm-8 d-flex justify-content-center website-doc">
             <a href="{{ website.documentation | remove: 'https://2fa.directory' }}">
-              <i class="fas fa-book"></i>
+              <i class="bi bi-file-earmark-text-fill"></i>
               Documentation
             </a>
           </div>
@@ -62,7 +63,7 @@
           {% if website.contact.twitter %}
 
             <div class="col ml-md-auto twitter-button social-button btn" title="Tweet them!" data-twitter="{{ website.contact.twitter }}" data-lang="{{ website.contact.language }}">
-              <i class="fab fa-twitter"></i>
+              <i class="bi bi-twitter"></i>
             </div>
 
           {% endif %}
@@ -70,7 +71,7 @@
           {% if website.contact.facebook %}
 
             <div class="col facebook-button social-button btn" title="Contact them!" data-facebook="{{ website.contact.facebook }}">
-              <i class="fab fa-facebook-f"></i>
+              <i class="bi bi-facebook"></i>
             </div>
 
           {% endif %}
@@ -78,7 +79,7 @@
           {% if website.contact.email %}
 
             <div class="col email-button social-button btn" title="Email them!" data-email="{{ website.contact.email }}" data-lang="{{ website.contact.language }}">
-              <i class="fas fa-envelope"></i>
+              <i class="bi bi-envelope-fill"></i>
             </div>
 
           {% endif %}
