@@ -1,11 +1,10 @@
 {
   "JustGiving": {
     "domain": "justgiving.com",
-    "url": "https://www.justgiving.com/",
-    "contact": {
-      "facebook": "justgiving",
-      "twitter": "JGhelp"
-    },
+    "tfa": [
+      "email"
+    ],
+    "documentation": "https://community.blackbaud.com/blogs/65/7747",
     "keywords": [
       "crowdfunding"
     ]
