@@ -18,9 +18,8 @@ jobs:
         with:
           path: |
             /tmp/iso-*.txt
-            /tmp/alexa
             /tmp/similarweb
-          key: tmp-files-${{ hashFiles('/tmp/alexa/*','/tmp/similarweb/*')}}
+          key: tmp-files-${{ hashFiles('/tmp/similarweb/*')}}
       - name: Change nameserver
         run: echo "nameserver 1.1.1.1" > /etc/resolv.conf
       - name: Validate JSON structure
