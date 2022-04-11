@@ -23,8 +23,8 @@ are stored in folders corresponding to each of those entries in their own
    the file to be under 2.5 kB.
 3. **HTTPS links**: All sites that support HTTPS should also be linked with an
    HTTPS address.
-4. **Alexa top 200K**: A new site that is not already listed has to be within the
-   Alexa top 200,000 ranking. You can check the ranking of a site [here][alexa].
+4. **Similarweb top 200K**: A new site that is not already listed has to be within the
+   Similarweb top 200,000 ranking. You can check the ranking of a site [here][similarweb].
 5. **No 2FA providers**: We do not list 2FA providers, such as [Authy][authy], [Duo][duo] or
    [Google Authenticator][googleauthenticator].
 6. **Be Awesome**: You need to be awesome. That is all.
@@ -360,7 +360,7 @@ Many sites are now offering passwordless authentication, which replace the passw
 [img]: img/
 [svgo]: https://github.com/svg/svgo
 [tinypng]: https://tinypng.com/
-[alexa]: https://www.alexa.com/siteinfo
+[similarweb]: https://www.similarweb.com/
 [authy]: https://authy.com/
 [duo]: https://duo.com/
 [googleauthenticator]: https://github.com/google/google-authenticator
