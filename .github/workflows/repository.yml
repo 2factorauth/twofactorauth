@@ -90,7 +90,7 @@ jobs:
     container: 2factorauth/twofactorauth:latest
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: build
       - name: Extract artifact
@@ -132,7 +132,7 @@ jobs:
     needs: [complete_build]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: site
       - name: Extract artifact
