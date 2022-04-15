@@ -1,0 +1,25 @@
+{
+  "The Ohio State University": {
+    "domain": "osu.edu",
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f",
+      "custom-hardware",
+      "custom-software"
+    ],
+    "custom-hardware": [
+      "Duo token"
+    ],
+    "custom-software": [
+      "Duo"
+    ],
+    "documentation": "https://buckeyepass.osu.edu",
+    "keywords": [
+      "universities"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}
