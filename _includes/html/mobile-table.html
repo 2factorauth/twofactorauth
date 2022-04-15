@@ -8,7 +8,7 @@
 
   <div class="col {% if website.tfa %}table-success{%else%}table-danger{%endif%}">
 
-      <div class="searchWords" style="display: none;">{{ name }} {{ website.domain }}{% for item in website.tfa %} 2fa:{{ item }}{% endfor %} {% for domain in website.additional-domains %} {{ domain }} {% endfor %}</div>
+      <div class="searchWords d-none">{{ name }} {{ website.domain }}{% for item in website.tfa %} 2fa:{{ item }}{% endfor %} {% for domain in website.additional-domains %} {{ domain }} {% endfor %}</div>
       <!-- Title -->
       <div class="site-title">
         <a class="site-name" href="{% if website.url %}{{ website.url }}{% else %}https://{{ website.domain }}{% endif %}">
@@ -22,7 +22,7 @@
             {% assign image = website.domain | append: ".svg" | prepend: letter %}
           {% endif %}
 
-          <img class="logo" loading="lazy" src="/img/{{ image }}" alt="">
+          <img class="logo mobile-only" loading="lazy" src="/img/{{ image }}" alt="">
 
           {{ name }}</a>
           {% if website.notes %}
@@ -61,7 +61,7 @@
 
           {% if website.contact.twitter %}
 
-            <div class="col ml-md-auto twitter-button social-button btn" title="Tweet them!" data-twitter="{{ website.contact.twitter }}" data-lang="{{ website.contact.language }}">
+            <div tabindex="0" role="button" class="col ml-md-auto twitter-button social-button btn" title="Tweet them!" data-twitter="{{ website.contact.twitter }}" data-lang="{{ website.contact.language }}">
               <i class="fab fa-twitter"></i>
             </div>
 
@@ -69,7 +69,7 @@
 
           {% if website.contact.facebook %}
 
-            <div class="col facebook-button social-button btn" title="Contact them!" data-facebook="{{ website.contact.facebook }}">
+            <div tabindex="0" role="button" class="col facebook-button social-button btn" title="Contact them!" data-facebook="{{ website.contact.facebook }}">
               <i class="fab fa-facebook-f"></i>
             </div>
 
@@ -77,7 +77,7 @@
 
           {% if website.contact.email %}
 
-            <div class="col email-button social-button btn" title="Email them!" data-email="{{ website.contact.email }}" data-lang="{{ website.contact.language }}">
+            <div tabindex="0" role="button" class="col email-button social-button btn" title="Email them!" data-email="{{ website.contact.email }}" data-lang="{{ website.contact.language }}">
               <i class="fas fa-envelope"></i>
             </div>
 
