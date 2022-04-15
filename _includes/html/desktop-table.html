@@ -1,7 +1,7 @@
 {% assign entries = include.entries %}
 <div id="{{ include.category.name }}-table" class="collapse category-table desktop-only">
   <a id="{{ include.category.name }}" class="category-href"></a>
-  <table class="table table-hover table-bordered table-bordered">
+  <table class="table table-bordered table-bordered">
     <thead class="sticky-top">
       <tr>
         <th scope="col">{{ include.category.title }}</th>
@@ -37,7 +37,7 @@
               {{ name }}</a>
 
               {% if website.notes %}
-                <i class="fas fa-exclamation-triangle exception" data-content="{{ website.notes }}"></i>
+                <i class="fas fa-exclamation-triangle exception col" data-content="{{ website.notes }}"></i>
               {% endif %}
             </div>
           </td>
@@ -133,19 +133,19 @@
               Tell them to support 2FA!
               <div class="social-button-group">
                 {% if website.contact.twitter %}
-                  <div class="twitter-button social-button btn" data-twitter="{{ website.contact.twitter }}" data-lang="{{ website.contact.language }}">
+                  <div tabindex="0" role="button" class="twitter-button social-button btn" data-twitter="{{ website.contact.twitter }}" data-lang="{{ website.contact.language }}">
                     <i class="fab fa-twitter"></i>
                     On Twitter
                   </div>
                 {% endif %}
                 {% if website.contact.facebook %}
-                  <div class="facebook-button social-button btn" data-facebook="{{ website.contact.facebook }}">
+                  <div tabindex="0" role="button" class="facebook-button social-button btn" data-facebook="{{ website.contact.facebook }}">
                     <i class="fab fa-facebook-f"></i>
                     On Facebook
                   </div>
                 {% endif %}
                 {% if website.contact.email %}
-                  <div class="email-button social-button btn" data-email="{{ website.contact.email }}" data-lang="{{ website.contact.language }}">
+                  <div tabindex="0" role="button" class="email-button social-button btn" data-email="{{ website.contact.email }}" data-lang="{{ website.contact.language }}">
                     <i class="fas fa-envelope"></i>
                     Via Email</div>
                 {% endif %}

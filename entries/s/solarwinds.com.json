@@ -1,0 +1,21 @@
+{
+  "SolarWinds": {
+    "domain": "solarwinds.com",
+    "additional-domains": [
+      "pingdom.com",
+      "papertrail.com",
+      "appoptics.com",
+      "loggly.com",
+      "solarwinds.cloud"
+    ],
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://documentation.solarwinds.com/en/success_center/pingdom/content/shared/mfa-users.htm",
+    "keywords": [
+      "developer",
+      "remote",
+      "security"
+    ]
+  }
+}
