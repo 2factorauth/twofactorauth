@@ -3,11 +3,21 @@
     "domain": "neteller.com",
     "url": "https://www.neteller.com/",
     "tfa": [
+      "sms",
+      "email",
+      "custom-software",
       "totp"
     ],
-    "documentation": "https://www.neteller.com/en/support#/path/ACCOUNT/Two-Factor-Authentication/85238429",
+    "custom-software": [
+      "NETTELLER mobile"
+    ],
+    "documentation": "https://www.neteller.com/en/support#/path/1362152022",
     "keywords": [
       "payments"
+    ],
+    "regions": [
+      "-jp",
+      "-us"
     ]
   }
 }

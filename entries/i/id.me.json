@@ -1,18 +1,22 @@
 {
   "ID.me": {
     "domain": "id.me",
-    "url": "https://www.id.me/",
     "tfa": [
       "sms",
       "call",
       "totp",
-      "custom-hardware",
       "u2f",
       "custom-software"
+    ],
+    "custom-software": [
+      "ID.me Authenticator"
     ],
     "documentation": "https://help.id.me/hc/en-us/articles/360025737794",
     "keywords": [
       "identity"
+    ],
+    "regions": [
+      "us"
     ]
   }
 }
