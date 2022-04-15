@@ -7,8 +7,8 @@
 
   /* Desktop table */
   .category-table {
-    width: calc(100% - 30px);
-    margin: 15px 15px;
+    width: calc(100% - 20px);
+    margin: 10px 10px;
     flex: none;
     max-width: none;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
@@ -24,8 +24,10 @@
       margin-bottom: 0;
       border-left: 0; // See tbody>tr>td> border-left
       border-right: 0; // See tbody>tr>td> border-left
+      vertical-align: center;
 
       thead {
+        border-color: transparent;
         th {
           font-weight: 700;
           font-size: 18px;
@@ -37,13 +39,17 @@
       tbody {
         tr {
           td {
+            vertical-align: baseline;
             border-left: 1px solid rgb(222, 226, 230); // Weird bug that displays borders outside of the table at 1st td in row.
             &:first-child {
               border-left: 0 solid !important;
             }
           }
-
+          &.table-success {
+           border-color: #8fd19e;
+          }
           &.table-danger {
+            border-color: #ed969e;
             td {
               text-align: left;
             }
@@ -63,6 +69,7 @@
             max-height: 52px;
             overflow: hidden;
             white-space: nowrap;
+            text-decoration: none;
 
             &.exception-site {
               margin-right: -24px;
