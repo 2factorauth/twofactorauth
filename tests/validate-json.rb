@@ -64,6 +64,15 @@ Dir.glob('entries/*/*.json') do |file|
           "File name should be the same as the domain name. Received: #{file_name}. Expected: #{expected_file_name}")
   end
 
+  folder_name = file.split('/')[1]
+  expected_folder_name = document.values[0]['domain'][0]
+
+  unless folder_name.eql? expected_folder_name
+    error(file,
+          "Entry should be in the subdirectory with the same name as the first letter as the domain.
+           Received: entries/#{folder_name}. Expected: entries/#{expected_folder_name}")
+  end
+
   name = document.keys[0]
   if seen_names.include? name
     error(file, "An entry with the name '#{name}' already exists. Duplicate site names are not allowed.

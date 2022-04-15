@@ -1,8 +1,8 @@
 @media screen and (max-width: 992px) {
   .category-table {
-    width: 100%;
-    max-width: 100%;
+    max-width: calc(100% - 2rem);
     flex: 0 0 100%;
+    margin: 0 1rem;
 
     .search-table-title {
       text-align: center;
