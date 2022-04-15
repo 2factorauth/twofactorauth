@@ -41,7 +41,7 @@ eval find . -type f $OPTIONS -printf '"%TY-%Tm-%Td%p\n"' | \
 while read -r line; do
   DATE=${line:0:10}
   FILE=${line:12}
-  get_freqency $((($(date +%s) - $(date +%s -r "${FILE}")) / 86400))
+  get_frequency $((($(date +%s) - $(date +%s -r "${FILE}")) / 86400))
   echo "<url>"
   echo " <loc>${URL}${FILE}</loc>"
   echo " <lastmod>$DATE</lastmod>"
