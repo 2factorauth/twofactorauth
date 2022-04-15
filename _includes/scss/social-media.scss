@@ -24,6 +24,11 @@
   }
 }
 
+.social-media-modal {
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
 @media screen and (max-width: 992px) {
   .social-button {
     margin: .2em;
