@@ -1,12 +1,16 @@
 {
-  "Axos Bank": {
+  "Axos": {
     "domain": "axosbank.com",
+    "additional-domains": [
+      "axos.com"
+    ],
     "tfa": [
       "sms",
       "email"
     ],
     "keywords": [
-      "banking"
+      "banking",
+      "investing"
     ],
     "regions": [
       "us"

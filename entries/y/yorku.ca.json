@@ -1,0 +1,27 @@
+{
+  "York University": {
+    "domain": "yorku.ca",
+    "tfa": [
+      "u2f",
+      "custom-software",
+      "custom-hardware",
+      "sms",
+      "call"
+    ],
+    "custom-software": [
+      "Duo Mobile"
+    ],
+    "custom-hardware": [
+      "Duo token",
+      "Touch ID"
+    ],
+    "documentation": "https://infosec.yorku.ca/2FA",
+    "notes": "2FA via SMS or phone call can only be enabled by the support team.",
+    "keywords": [
+      "universities"
+    ],
+    "regions": [
+      "ca"
+    ]
+  }
+}
