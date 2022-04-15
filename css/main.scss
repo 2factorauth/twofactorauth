@@ -18,9 +18,11 @@ body {
   min-width: 300px;
   color: var(--text-color);
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 h1, h2, h3, h4 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
@@ -31,6 +33,9 @@ h1, h2, h3, h4 {
   }
   a {
     color: #3596ff;
+  }
+  .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
   }
 }
 
@@ -60,6 +65,7 @@ h1, h2, h3, h4 {
   /** Top content on index.html **/
   .main {
     margin: 0;
+
     #logo-outer {
       padding: 1em;
       text-align: center;
@@ -137,6 +143,20 @@ h1, h2, h3, h4 {
     text-align: right;
     padding-right: 1vw;
   }
+}
+
+.social-media-modal {
+  .modal-header {
+    border-bottom: none;
+  }
+
+  .modal-footer {
+    border-top: none;
+  }
+}
+
+.row {
+  margin: 0;
 }
 
 /** Device specific content **/
