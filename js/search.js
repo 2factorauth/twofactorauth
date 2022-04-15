@@ -9,8 +9,8 @@ $(document).ready(function () {
       if (search_phrase == '') {
         // Empty search value
         // Display everything. Close tables
-        $('.cat').show();
-        $('.cat').removeClass('active');
+        $('.category-btn-outer').show();
+        $('.category-btn').removeClass('active');
         $('.category-table').removeClass('show');
         $('.search-table-title').hide();
         $('#no-results').hide();
@@ -18,7 +18,7 @@ $(document).ready(function () {
         // Populated search field
 
         // Hide category icons
-        $('.cat').hide();
+        $('.category-btn-outer').hide();
 
         // Display all category tables
         $('.category-table').addClass('show');
@@ -34,39 +34,39 @@ $(document).ready(function () {
           }
         });
 
-        $('.searchContainer.mobile-only').each(function(i){
-          if($(this).find('div.table-success:visible').length > 0 || $(this).find('div.table-danger:visible').length > 0){
+        $('.searchContainer.mobile-only').each(function (i) {
+          if ($(this).find('div.table-success:visible').length > 0 || $(this).find('div.table-danger:visible').length > 0) {
             $(this).find('.search-table-title').show();
-          }else{
+          } else {
             $(this).find('.search-table-title').hide();
           }
         });
 
-        if ($('.searchContainer').find(':visible').length == 0){
+        if ($('.searchContainer').find(':visible').length == 0) {
           $('#no-results').show();
-        }else{
+        } else {
           $('#no-results').hide();
         }
 
       }
     },
     // Process searchable elements manually
-    manualContentHandling: function(tag){
+    manualContentHandling: function (tag) {
       return $(tag).find('.searchWords').text();
     }
   });
-  $('input[type=search]').on('input', function(){
+  $('input[type=search]').on('input', function () {
     clearTimeout(this.delay);
-    this.delay = setTimeout(function(){
+    this.delay = setTimeout(function () {
       $(this).trigger('search');
-    }.bind(this), 800);
-  }).on('search', function(){
-      jets.search(this.value);
+    }.bind(this), 500);
+  }).on('search', function () {
+    jets.search(this.value);
   });
 });
 
 // Wrap the jets.search function with a debounced function
-var debouncedSearch = debounce(function(e) {
+var debouncedSearch = debounce(function (e) {
   jets.search(e.target.value);
 }, 350);
 
@@ -84,15 +84,15 @@ $('#jets-search').keyup(debouncedSearch);
 function debounce(func, wait) {
   var timeout;
 
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			func.apply(context, args);
+  return function () {
+    var context = this, args = arguments;
+    var later = function () {
+      timeout = null;
+      func.apply(context, args);
     };
 
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (!timeout) func.apply(context, args);
-	};
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (!timeout) func.apply(context, args);
+  };
 };

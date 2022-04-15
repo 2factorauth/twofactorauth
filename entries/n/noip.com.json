@@ -1,13 +1,10 @@
 {
   "No-IP": {
     "domain": "noip.com",
-    "url": "https://www.noip.com/",
-    "img": "noip.com.png",
-    "contact": {
-      "email": "webmaster@no-ip.com",
-      "facebook": "noipdns",
-      "twitter": "NoIPcom"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://www.noip.com/support/knowledgebase/two-factor-authentication-last-pass/",
     "keywords": [
       "domains"
     ]

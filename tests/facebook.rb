@@ -20,6 +20,7 @@ diff.split("\n").each do |page|
   response = http.request(request)
   begin
     raise("\"#{page}\" is either private or doesn't exist.") if response.code.eql? '404'
+    next if response.header['location'].nil?
 
     fb_page = response.header['location'].split('/').last
     raise("\"#{page}\" should be \"#{fb_page}\".") unless fb_page.eql? page
