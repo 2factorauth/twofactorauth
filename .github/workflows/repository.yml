@@ -18,9 +18,8 @@ jobs:
         with:
           path: |
             /tmp/iso-*.txt
-            /tmp/alexa
             /tmp/similarweb
-          key: tmp-files-${{ hashFiles('/tmp/alexa/*','/tmp/similarweb/*')}}
+          key: tmp-files-${{ hashFiles('/tmp/similarweb/*')}}
       - name: Change nameserver
         run: echo "nameserver 1.1.1.1" > /etc/resolv.conf
       - name: Validate JSON structure
@@ -72,7 +71,7 @@ jobs:
           github.repository == '2factorauth/twofactorauth'
         run: tar -czf build.tar.gz .
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: >
           github.event_name == 'push' &&
           github.ref == 'refs/heads/master' &&
@@ -91,7 +90,7 @@ jobs:
     container: 2factorauth/twofactorauth:latest
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: build
       - name: Extract artifact
@@ -120,10 +119,12 @@ jobs:
           PAGES_ENV: production
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JEKYLL_ENV: production
+      - name: Generate Sitemap
+        run: ./scripts/sitemap.sh _site
       - name: Create Artifact
         run: tar -czf site.tar.gz _site
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: site
           path: site.tar.gz
@@ -133,7 +134,7 @@ jobs:
     needs: [complete_build]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: site
       - name: Extract artifact
