@@ -1,12 +1,14 @@
 {
   "Hotjar": {
     "domain": "hotjar.com",
-    "contact": {
-      "facebook": "HotjarApps",
-      "twitter": "hotjar"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://help.hotjar.com/hc/en-us/articles/4406998019223",
+    "notes": "2FA is not available for SAML SSO logins",
     "keywords": [
-      "developer"
+      "developer",
+      "marketing"
     ]
   }
 }

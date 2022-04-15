@@ -1,11 +1,14 @@
 {
-  "Easybank": {
+  "easybank": {
     "domain": "easybank.at",
-    "url": "https://www.easybank.at",
-    "contact": {
-      "facebook": "easybank",
-      "language": "de"
-    },
+    "tfa": [
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "easybank Security App"
+    ],
+    "documentation": "https://www.easybank.at/easybank/faq#Zeichnungsverfahren",
     "regions": [
       "at"
     ],

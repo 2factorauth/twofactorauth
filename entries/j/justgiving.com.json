@@ -1,11 +1,10 @@
 {
   "JustGiving": {
     "domain": "justgiving.com",
-    "url": "https://www.justgiving.com/",
-    "contact": {
-      "facebook": "justgiving",
-      "twitter": "JGhelp"
-    },
+    "tfa": [
+      "email"
+    ],
+    "documentation": "https://justgiving-charity-support.zendesk.com/hc/en-us/articles/360019687158",
     "keywords": [
       "crowdfunding"
     ]

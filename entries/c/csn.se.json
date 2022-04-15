@@ -1,17 +1,18 @@
 {
   "CSN": {
     "domain": "csn.se",
-    "url": "https://www.csn.se",
     "tfa": [
-      "custom-software",
-      "custom-hardware"
+      "custom-software"
+    ],
+    "custom-software": [
+      "BankID"
     ],
     "documentation": "https://tjanster.csn.se/bas/vanligaFragor.do",
     "keywords": [
       "education"
     ],
     "regions": [
-      "us"
+      "se"
     ]
   }
 }

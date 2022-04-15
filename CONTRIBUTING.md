@@ -23,8 +23,8 @@ are stored in folders corresponding to each of those entries in their own
    the file to be under 2.5 kB.
 3. **HTTPS links**: All sites that support HTTPS should also be linked with an
    HTTPS address.
-4. **Alexa top 200K**: A new site that is not already listed has to be within the
-   Alexa top 200,000 ranking. You can check the ranking of a site [here][alexa].
+4. **Similarweb top 200K**: A new site that is not already listed has to be within the
+   Similarweb top 200,000 ranking. You can check the ranking of a site [here][similarweb].
 5. **No 2FA providers**: We do not list 2FA providers, such as [Authy][authy], [Duo][duo] or
    [Google Authenticator][googleauthenticator].
 6. **Be Awesome**: You need to be awesome. That is all.
@@ -213,6 +213,28 @@ government site - you can note this with the `regions` field.
 
 The country codes should be lowercase [ISO 3166-1][iso-country-wikipedia] codes.
 
+#### Excluded Regions
+
+If a site is available globally apart from a specific region, this can be noted using the `regions` array. Excluded regions should be prefixed with a `-` symbol to exclude the site from that region. Region codes and excluded region codes should **not** be used together, as adding a region code automatically excludes the site from other regions. The example below shows a site that is available in all regions apart from `us`.
+
+```JSON
+{
+  "Site Name": {
+    "domain": "site.com",
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "<link to site TFA documentation>",
+    "keywords": [
+      "keyword"
+    ],
+    "regions": [
+      "-us"
+    ]
+  }
+}
+```
+
 ### Other Properties
 
 - `additional-domains`
@@ -338,7 +360,7 @@ Many sites are now offering passwordless authentication, which replace the passw
 [img]: img/
 [svgo]: https://github.com/svg/svgo
 [tinypng]: https://tinypng.com/
-[alexa]: https://www.alexa.com/siteinfo
+[similarweb]: https://www.similarweb.com/
 [authy]: https://authy.com/
 [duo]: https://duo.com/
 [googleauthenticator]: https://github.com/google/google-authenticator

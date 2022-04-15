@@ -1,0 +1,25 @@
+{
+  "AfterPay": {
+    "domain": "afterpay.com",
+    "tfa": [
+      "sms",
+      "email"
+    ],
+    "keywords": [
+      "payments"
+    ],
+    "additional-domains": [
+      "afterpay.com.au",
+      "secure-afterpay.com.au",
+      "afterpay.co.nz",
+      "clearpay.co.uk"
+    ],
+    "regions": [
+      "au",
+      "us",
+      "nz",
+      "gb",
+      "ca"
+    ]
+  }
+}

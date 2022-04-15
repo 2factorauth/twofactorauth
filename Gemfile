@@ -8,7 +8,10 @@ group :jekyll_plugins do
   gem 'octopress-minify-html'
 end
 
+gem 'parallel'
+
 group :test do
+  gem 'addressable'
   gem 'httpclient'
   gem 'json_schemer'
   gem 'rubocop'
