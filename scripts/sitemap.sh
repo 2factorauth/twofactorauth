@@ -8,7 +8,7 @@
 URL="https://2fa.directory/"
 
 # values: always hourly daily weekly monthly yearly never
-get_freqency () {
+get_frequency () {
   if [ "$1" -lt 7 ]; then FREQ="daily";
   elif [ "$1" -lt 32 ]; then FREQ="weekly";
   elif [ "$1" -lt 63 ]; then FREQ="monthly";
