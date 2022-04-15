@@ -119,6 +119,8 @@ jobs:
           PAGES_ENV: production
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JEKYLL_ENV: production
+      - name: Generate Sitemap
+        run: ./scripts/sitemap.sh _site
       - name: Create Artifact
         run: tar -czf site.tar.gz _site
       - name: Upload Artifact
