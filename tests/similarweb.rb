@@ -57,4 +57,4 @@ rescue StandardError => e
   puts "\e[31m#{e.message}\e[39m"
   status = 1
 end
-exit(status) if Time.now.to_i > 1_651_363_200
+exit(status)

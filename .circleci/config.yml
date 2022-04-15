@@ -29,17 +29,8 @@ jobs:
           command: ruby ./tests/facebook.rb
 
       - run:
-          name: Check Alexa ranking
-          command: bundle exec ruby ./tests/alexa.rb
-
-      - run:
           name: Check Similarweb ranking
           command: bundle exec ruby ./tests/similarweb.rb
-
-      - save_cache:
-          key: awis-cache
-          paths:
-            - "/tmp/alexa/*"
 
       - save_cache:
           key: similarweb-cache
