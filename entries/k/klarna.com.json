@@ -1,12 +1,13 @@
 {
   "Klarna": {
     "domain": "klarna.com",
-    "url": "https://www.klarna.com",
     "tfa": [
       "email",
-      "custom-software"
+      "sms",
+      "call"
     ],
-    "notes": "Software 2FA is only available for Swedish citizens with BankID.",
+    "documentation": "https://www.klarna.com/us/customer-service/how-do-i-log-in/",
+    "recovery": "https://www.klarna.com/us/customer-service/i-cant-log-in-what-can-i-do/",
     "keywords": [
       "payments"
     ],
@@ -25,11 +26,9 @@
       "ie",
       "it",
       "nl",
-      "no",
       "nz",
       "pl",
       "pt",
-      "se",
       "us"
     ]
   }
