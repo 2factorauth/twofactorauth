@@ -48,12 +48,12 @@
             <td class="icon-cell">
               <div class="row">
               {% if website.documentation %}
-                <a href="{{ website.documentation | remove: 'https://2fa.directory' }}" class="col">
+                <a href="{{ website.documentation | remove: 'https://2fa.directory' }}" class="col" aria-label="2FA Setup documentation">
                   <i class="fas fa-book"></i>
                 </a>
               {% endif %}
               {% if website.recovery %}
-                <a href="{{ website.recovery }}" class="col">
+                <a href="{{ website.recovery }}" class="col" aria-label="Account recovery documentation">
                   <i class="fas fa-redo"></i>
                 </a>
               {% endif %}
