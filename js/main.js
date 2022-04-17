@@ -28,10 +28,11 @@ $('.category-btn').click(function () {
   $('.category-table.collapse').collapse('hide');
   $('.category-btn').removeClass('active');
 
+  const id = $(this).data('target').replace('-table', '').substring(1);
   // Check if category tables are displayed
-  if (!$(`#${query}-table`).hasClass('collapsing') && !$(`#${query}-mobile-table`).hasClass('collapsing') || query !== this.id) {
-    window.location.hash = this.id;
-    showCategory(this.id);
+  if (!$(`#${query}-table`).hasClass('collapsing') && !$(`#${query}-mobile-table`).hasClass('collapsing') || query !== id) {
+    window.location.hash = id;
+    showCategory(id);
   } else {
     // Remove #category in URL
     history.pushState("", document.title, window.location.pathname + window.location.search);
@@ -49,7 +50,7 @@ function showCategory(category) {
   $(`#${category}-table`).collapse("show");
   $(`#${category}-mobile-table`).collapse("show");
   $('.category-btn').removeClass('active');
-  $(`[id=${category}]`).addClass('active');
+  $(`.category-btn[data-target="#${category}-table"]`).addClass('active');
 }
 
 let resizeObserver = new ResizeObserver(() => {
