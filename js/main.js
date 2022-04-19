@@ -1,7 +1,4 @@
 $(document).ready(function () {
-  // Make category buttons square
-  $('.box').height($('.box').width());
-
   // Show region notice
   if (window.localStorage.getItem('region-notice') !== 'hidden') $('#region-notice').collapse('show');
 
@@ -59,9 +56,6 @@ let resizeObserver = new ResizeObserver(() => {
   } else {
     $('.footer').css({position: 'static'});
   }
-
-  // Resize square divs
-  $('.box').height($('.box').width());
 });
 
 resizeObserver.observe($('body')[0]);
