@@ -1,9 +1,11 @@
 {
   "Foursquare": {
     "domain": "foursquare.com",
-    "contact": {
-      "twitter": "Foursquare"
-    },
+    "tfa": [
+        "sms",
+        "email"
+    ],
+    "documentation": "https://foursquare.atlassian.net/servicedesk/customer/portal/20/article/3355476115",
     "keywords": [
       "social"
     ]

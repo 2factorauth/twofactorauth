@@ -31,6 +31,10 @@ If you want to make a copy (fork) of our site to list any of these sites you're 
     -   If the core project doesn't support two factor authentication but instead through plugins it would mean that we would have to list all plugins that enable two factor authentication for the service, something that is currently impossible with our website layout.
 
     If you have any questions regarding whether a site qualifies for listing, simply open an issue and we'll take a look.
+    
+*   #### Forums
+
+    Most forums are self-hosted (and thus violate the aforementioned rule) or are hosted as subdomains which makes it impossible to find a meaningful ranking for the site. 
 
 *   #### Potentially controversial sites 
 

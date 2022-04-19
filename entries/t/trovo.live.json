@@ -1,11 +1,10 @@
 {
   "Trovo": {
     "domain": "trovo.live",
-    "contact": {
-      "email": "feedback@trovo.live",
-      "facebook": "trovolive",
-      "twitter": "trovolive"
-    },
+    "tfa": [
+      "totp",
+      "sms"
+    ],
     "keywords": [
       "entertainment"
     ]
