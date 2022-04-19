@@ -9,6 +9,10 @@
   }
 }
 
+.table-success, .table-danger {
+  background: var(--bs-table-bg);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #212121;

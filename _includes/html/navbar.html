@@ -13,7 +13,7 @@
       {% assign regions2 = regions | map: 'id' %}
       {% if page.name == "index.html" %}
       <li class="nav-item dropdown">
-        <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" id="regionDropdown" role="button" tabindex="0">
+        <a class="nav-link dropdown-toggle" id="regionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" tabindex="0">
           Region
           {% assign baseurl = site.baseurl %}
           {% if regions2 contains baseurl %}
