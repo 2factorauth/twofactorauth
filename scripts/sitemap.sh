@@ -37,10 +37,10 @@ OPTIONS='
 '
 
 cd "${1}" || exit 1
-eval find . -type f $OPTIONS -printf '"%TY-%Tm-%Td%p\n"' | \
+eval find . -type f $OPTIONS -print0 | xargs -0 stat -c '%z%n' | \
 while read -r line; do
   DATE=${line:0:10}
-  FILE=${line:12}
+  FILE=${line:37}
   get_frequency $((($(date +%s) - $(date +%s -r "${FILE}")) / 86400))
   echo "<url>"
   echo " <loc>${URL}${FILE}</loc>"
