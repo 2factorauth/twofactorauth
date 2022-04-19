@@ -52,7 +52,7 @@ diff = `git diff origin/master...HEAD entries/ | sed -n 's/^+.*"domain"[^"]*"\\(
 diff.split("\n").each do |site|
   domain = Addressable::URI.parse("https://#{site}").domain
   rank = Cache.fetch(domain) || Similarweb.fetch(domain)
-  raise("#{site} is ranked above the maximum rank of 200K") if rank.to_i > 200_000
+  raise("Global rank #{rank} of #{site} is above the maximum rank of 200K") if rank.to_i > 200_000
 rescue StandardError => e
   puts "\e[31m#{e.message}\e[39m"
   status = 1
