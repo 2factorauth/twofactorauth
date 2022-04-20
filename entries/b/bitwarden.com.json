@@ -1,5 +1,5 @@
 {
-  "bitwarden": {
+  "Bitwarden": {
     "domain": "bitwarden.com",
     "tfa": [
       "sms",
@@ -10,8 +10,14 @@
       "custom-hardware",
       "custom-software"
     ],
+    "custom-software": [
+      "Duo"
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
     "documentation": "https://help.bitwarden.com/article/setup-two-step-login/",
-    "notes": "2FA options offered differ depending on subscription plan.",
+    "notes": "2FA options other than email and TOTP are only available on paid plans",
     "keywords": [
       "identity"
     ]
