@@ -1,0 +1,12 @@
+{
+  "Ramp": {
+    "domain": "app.ramp.com",
+    "additional-domains": ["ramp.com", "demo.ramp.com"],
+    "tfa": ["sms", "totp"],
+    "documentation": "https://support.ramp.com/hc/en-us/articles/5775209997715-Multi-Factor-Authentication",
+    "keywords": [
+      "payments",
+      "finance"
+    ]
+  }
+}
