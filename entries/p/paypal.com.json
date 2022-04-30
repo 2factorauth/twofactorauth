@@ -1,6 +1,9 @@
 {
   "PayPal": {
     "domain": "paypal.com",
+    "additional-domains": [
+      "paypal-search.com"
+    ],
     "url": "https://www.paypal.com/",
     "tfa": [
       "sms",
