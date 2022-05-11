@@ -1,13 +1,18 @@
 {
   "LHV": {
     "domain": "lhv.ee",
-    "url": "https://www.lhv.ee/",
-    "contact": {
-      "email": "info@lhv.ee",
-      "facebook": "LHVPank",
-      "twitter": "ellhaavee",
-      "language": "et"
-    },
+    "tfa": [
+      "custom-software",
+      "custom-hardware"
+    ],
+    "custom-software": [
+      "SmartID"
+    ],
+    "custom-hardware": [
+      "ID-card",
+      "mobile-ID",
+      "Security token"
+    ],
     "regions": [
       "ee"
     ],
