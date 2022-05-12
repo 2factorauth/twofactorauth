@@ -3,9 +3,11 @@
     "domain": "cloudamqp.com",
     "img": "cloudamqp-logo.png",
     "tfa": [
-      "totp"
+      "totp",
+      "sms"
     ],
     "documentation": "https://www.cloudamqp.com/blog/two-factor-authentication.html",
+    "notes": "Sms is required as a backup method",
     "keywords": [
       "cloud",
       "developer"
