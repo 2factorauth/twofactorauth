@@ -1,6 +1,12 @@
 {
   "Citibank": {
     "domain": "citi.com",
+    "additional-domains": [
+      "accountonline.com",
+      "citibank.com",
+      "citicards.com",
+      "citibankonline.com"
+    ],
     "img": "citibank.svg",
     "tfa": [
       "sms",
