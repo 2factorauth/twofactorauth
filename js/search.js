@@ -63,6 +63,10 @@ $(document).ready(function () {
   }).on('search', function () {
     jets.search(this.value);
   });
+
+  // https://2fa.directory/?q=foobar
+  const query = new URLSearchParams(window.location.search).get('q');
+  if (query) $('#innerSearchBox').val(query).trigger('search');
 });
 
 // Wrap the jets.search function with a debounced function
