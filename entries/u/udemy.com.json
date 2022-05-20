@@ -2,11 +2,10 @@
   "Udemy": {
     "domain": "udemy.com",
     "url": "https://www.udemy.com/",
-    "contact": {
-      "email": "support@udemy.com",
-      "facebook": "udemy",
-      "twitter": "udemy"
-    },
+    "tfa": [
+      "email"
+    ],
+    "documentation": "https://support.udemy.com/hc/en-us/articles/4420349685015",
     "keywords": [
       "education"
     ]
