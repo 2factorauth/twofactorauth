@@ -3,9 +3,9 @@
     "domain": "kraken.com",
     "tfa": [
       "totp",
-      "custom-hardware"
+      "custom-hardware",
       "u2f",
-      "email",
+      "email"
     ],
     "custom-hardware": [
       "OATH OTP keys"
