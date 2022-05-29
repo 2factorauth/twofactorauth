@@ -1,6 +1,9 @@
 {
   "Dropbox": {
     "domain": "dropbox.com",
+    "additional-domains": [
+      "getdropbox.com"
+    ],
     "tfa": [
       "sms",
       "totp",

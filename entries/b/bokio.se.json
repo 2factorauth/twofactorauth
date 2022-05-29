@@ -1,0 +1,20 @@
+{
+  "Bokio Sverige": {
+    "domain": "bokio.se",
+    "tfa": [
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "BankID"
+    ],
+    "notes": "BankID only available for users using banking features",
+    "documentation": "https://www.bokio.se/hjalp/bokio-medlemskap/ditt-bokiokonto/tvafaktor-autentisering-med-bokio/",
+    "keywords": [
+      "finance"
+    ],
+    "regions": [
+      "se"
+    ]
+  }
+}

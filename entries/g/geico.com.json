@@ -1,11 +1,11 @@
 {
   "Geico": {
     "domain": "geico.com",
-    "url": "https://www.geico.com/",
-    "contact": {
-      "facebook": "geico",
-      "twitter": "GEICO_Service"
-    },
+    "tfa": [
+      "sms",
+      "email"
+    ],
+    "documentation": "https://www.geico.com/web-and-mobile/2SV/",
     "keywords": [
       "finance"
     ],

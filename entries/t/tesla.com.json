@@ -1,6 +1,9 @@
 {
   "Tesla": {
     "domain": "tesla.com",
+    "additional-domains": [
+      "teslamotors.com"
+    ],
     "url": "https://www.tesla.com",
     "tfa": [
       "totp"
