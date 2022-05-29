@@ -1,6 +1,9 @@
 {
   "Facebook": {
     "domain": "facebook.com",
+    "additional-domains": [
+      "messenger.com"
+    ],
     "tfa": [
       "sms",
       "totp",
