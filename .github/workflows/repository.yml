@@ -139,7 +139,7 @@ jobs:
           name: site
       - name: Extract artifact
         run: tar -xzf site.tar.gz
-      - uses: crazy-max/ghaction-github-pages@v2
+      - uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
           build_dir: _site
