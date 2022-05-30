@@ -6,9 +6,6 @@
         <a class="nav-link" href="/">Home</a>
       </li>
       {% endunless %}
-      <li class="nav-item">
-        <a class="nav-link" href="/about/">About</a>
-      </li>
       {% assign regions = site.data.regions | sort: "name" %}
       {% assign regions2 = regions | map: 'id' %}
       {% if page.name == "index.html" %}
@@ -36,6 +33,9 @@
         </div>
       </li>
       {% endif %}
+      <li class="nav-item">
+        <a class="nav-link" href="/about/">About</a>
+      </li>
     </ul>
   </div>
 </nav>

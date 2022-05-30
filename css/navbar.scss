@@ -24,6 +24,7 @@
     position: absolute !important; // Bootstrap normally sets position static for dropdowns in mobile views
     background: #eeeeee;
     z-index: 1100; // higher than category button
+    column-count: 2;
 
     .dropdown-item {
       .fi, .fas {
