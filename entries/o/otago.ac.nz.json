@@ -1,0 +1,24 @@
+{
+  "University of Otago": {
+    "domain": "otago.ac.nz",
+    "tfa" : [
+      "u2f",
+      "totp",
+      "call",
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Microsoft Authenticator push notification",
+      "Authy"
+    ],
+    "documentation": "https://otago.custhelp.com/app/answers/detail/a_id/3073",
+    "notes": "U2F is available to staff only",
+    "keywords": [
+      "universities"
+    ],
+    "regions": [
+      "nz"
+    ]
+  }
+}

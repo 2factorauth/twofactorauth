@@ -6,9 +6,6 @@
         <a class="nav-link" href="/">Home</a>
       </li>
       {% endunless %}
-      <li class="nav-item">
-        <a class="nav-link" href="/about/">About</a>
-      </li>
       {% assign regions = site.data.regions | sort: "name" %}
       {% assign regions2 = regions | map: 'id' %}
       {% if page.name == "index.html" %}
@@ -18,7 +15,7 @@
           {% assign baseurl = site.baseurl %}
           {% if regions2 contains baseurl %}
           {% assign region = regions | where: 'id', baseurl %}
-          <span class="flag-icon {% if region.first.square_flag %}flag-icon-squared{% endif %} flag-icon-{{ baseurl }}"></span>
+          <span class="fi {% if region.first.square_flag %}fis{% endif %} fi-{{ baseurl }}"></span>
           {% else %}
           <i class="fas fa-globe-africa"></i>
           {% endif %}
@@ -29,13 +26,16 @@
             Global</a>
           {% for region in regions %}
           <a class="dropdown-item" href="/{{ region.id }}/">
-            <span class="flag-icon {% if region.square_flag %}flag-icon-squared{% endif %} flag-icon-{{ region.id }}"></span>
+            <span class="fi {% if region.square_flag %}fis{% endif %} fi-{{ region.id }}"></span>
             {{ region.name }}
           </a>
           {% endfor %}
         </div>
       </li>
       {% endif %}
+      <li class="nav-item">
+        <a class="nav-link" href="/about/">About</a>
+      </li>
     </ul>
   </div>
 </nav>
@@ -46,7 +46,7 @@
 {% assign region = regions | where: 'id', baseurl %}
 <div id="region-notice" class="collapse">
   <div>
-    We're showing you services available in <span class="flag-icon {% if region.first.square_flag %}flag-icon-squared{% endif %} flag-icon-{{ site.baseurl }}" aria-label="{{ region.first.name }}"></span><br class="d-md-none"> To see all available sites, please visit the <a href="/int">global page</a>
+    We're showing you services available in <span class="fi {% if region.first.square_flag %}fis{% endif %} fi-{{ site.baseurl }}" role="img" aria-label="{{ region.first.name }}"></span><br class="d-md-none"> To see all available sites, please visit the <a href="/int">global page</a>
     <button type="button" id="region-notice-close-btn" class="close" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
