@@ -15,7 +15,6 @@ tmp_dir = `mktemp -d`.strip
 FileUtils.cp_r(Dir.glob('.git'), "#{tmp_dir}/") unless File.exist?("#{tmp_dir}/.git")
 
 # Region loop
-# rubocop:disable Metrics/BlockLength
 Parallel.map(regions.keys) do |key|
   region = regions[key]
   dest_dir = "#{tmp_dir}/#{key}"
@@ -31,9 +30,9 @@ Parallel.map(regions.keys) do |key|
   # Website loop
   JSON.parse(File.read("#{data_dir}/all.json")).each do |name, website|
     # Ignore if current region is excluded
-    next if website['regions']&.select { |r| r.start_with?('-') }.map! { |rc| rc.tr('-', '') }&.include?(region['id'])
+    next if website['regions']&.select { |r| r.start_with?('-') }&.map! { |rc| rc.tr('-', '') }&.include?(region['id'])
     # Ignore unless regions element includes current region or current region is int
-    next unless website['regions']&.reject { |r| r.start_with?('-') }.include?(key) || key.eql?('int')
+    next unless website['regions']&.reject { |r| r.start_with?('-') }&.include?(key) || key.eql?('int')
 
     all[name] = website
     website['keywords'].each { |kw| used_categories.push kw }
@@ -52,4 +51,3 @@ Parallel.map(regions.keys) do |key|
   # rubocop:enable Layout/LineLength
   puts "#{key} built."
 end
-# rubocop:enable Metrics/BlockLength
