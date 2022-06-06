@@ -19,7 +19,7 @@ Parallel.map(regions.keys) do |key|
   region = regions[key]
   dest_dir = "#{tmp_dir}/#{key}"
   Dir.mkdir(dest_dir) unless File.exist?(dest_dir)
-  FileUtils.cp_r(%w[index.html _includes _layouts], dest_dir)
+  FileUtils.cp_r(%w[index.html _includes _layouts _data], dest_dir)
   File.open("#{dest_dir}/_config_region.yml", 'w') do |file|
     file.write("title: 2FA Directory (#{region['name']})") unless key.eql?('int')
   end
@@ -38,7 +38,6 @@ Parallel.map(regions.keys) do |key|
     website['keywords'].each { |kw| used_categories.push kw }
   end
 
-  FileUtils.mkdir_p("#{dest_dir}/_data")
   File.open("#{dest_dir}/_data/all.json", 'w') { |file| file.write JSON.generate(all) }
   File.open("#{dest_dir}/_data/categories.json", 'w') do |file|
     file.write JSON.generate(categories.select { |cat| used_categories.include? cat['name'] })
