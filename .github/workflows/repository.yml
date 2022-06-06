@@ -121,6 +121,8 @@ jobs:
           JEKYLL_ENV: production
       - name: Generate Sitemap
         run: ./scripts/sitemap.sh _site
+      - name: Replace index.html
+        run: echo 'Something went wrong. Try the <a href="/int/">global site</a>.' > index.html
       - name: Create Artifact
         run: tar -czf site.tar.gz _site
       - name: Upload Artifact
