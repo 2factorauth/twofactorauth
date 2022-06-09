@@ -1,12 +1,13 @@
 {
   "Nordnet Sverige": {
     "domain": "nordnet.se",
-    "url": "https://www.nordnet.se/",
     "img": "nordnet.svg",
     "tfa": [
       "custom-software"
     ],
-    "notes": "TFA only available for Swedish residents with BankID.",
+    "custom-software": [
+      "BankID"
+    ],
     "keywords": [
       "banking"
     ],
