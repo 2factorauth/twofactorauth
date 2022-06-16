@@ -2,8 +2,10 @@
   "SEB": {
     "domain": "seb.se",
     "tfa": [
-      "custom-software",
-      "custom-hardware"
+      "custom-software"
+    ],
+    "custom-software": [
+      "BankID"
     ],
     "documentation": "https://seb.se/privat/digitala-tjanster",
     "regions": [

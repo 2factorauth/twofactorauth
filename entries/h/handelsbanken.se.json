@@ -1,10 +1,11 @@
 {
   "Handelsbanken": {
     "domain": "handelsbanken.se",
-    "url": "https://www.handelsbanken.se/",
     "tfa": [
-      "custom-software",
-      "custom-hardware"
+      "custom-software"
+    ],
+    "custom-software": [
+      "BankID"
     ],
     "documentation": "https://www.handelsbanken.se/shb/INeT/ICentSv.nsf/Default/qAE99695C4C1D033DC12579120036EB43?Opendocument",
     "regions": [

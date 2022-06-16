@@ -1,11 +1,12 @@
 {
   "Swedbank & Sparbankerna": {
     "domain": "swedbank.se",
-    "url": "https://www.swedbank.se/",
     "img": "swedbank.se.png",
     "tfa": [
-      "custom-software",
-      "custom-hardware"
+      "custom-software"
+    ],
+    "custom-software": [
+      "BankID"
     ],
     "documentation": "https://www.swedbank.se/foretag/digitala-tjanster/mobilt-bankid/fragor-och-svar-om-mobilt-bankid.html",
     "regions": [
