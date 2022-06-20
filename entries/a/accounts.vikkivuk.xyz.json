@@ -1,0 +1,19 @@
+{
+  "VikkiVuk Accounts": {
+    "domain": "accounts.vikkivuk.xyz",
+    "url": "https://accounts.vikkivuk.xyz",
+    "tfa": [
+      "email",
+      "totp",
+      "u2f",
+      "custom-software"
+    ],
+    "custom-software": [
+      "OneTap Auth"
+    ],
+    "keywords": [
+      "other",
+      "utilities"
+    ]
+  }
+}
