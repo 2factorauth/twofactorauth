@@ -5,6 +5,8 @@ jobs:
   tests:
     name: Tests
     runs-on: ubuntu-latest
+    env: 
+      BUNDLE_WITHOUT: jekyll_plugins
     steps:
       - uses: actions/checkout@v3
         with:
@@ -38,6 +40,8 @@ jobs:
   build:
     name: Minimal build
     runs-on: ubuntu-latest
+    env: 
+      BUNDLE_WITHOUT: test
     steps:
       - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
@@ -85,6 +89,8 @@ jobs:
           github.repository == '2factorauth/twofactorauth'
     needs: [ tests, build ]
     runs-on: ubuntu-latest
+    env: 
+      BUNDLE_WITHOUT: test
     steps:
       - uses: actions/download-artifact@v3
         with:
