@@ -4,24 +4,22 @@ jobs:
 
   tests:
     name: Tests
-    container: 2factorauth/twofactorauth:latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Bundle install
-        run: |
-          bundle config set without jekyll_plugins
-          bundle install
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+          cache-version: 1
       - uses: actions/cache@v3
         with:
           path: |
             /tmp/iso-*.txt
             /tmp/similarweb
           key: tmp-files-${{ hashFiles('/tmp/similarweb/*')}}
-      - name: Change nameserver
-        run: echo "nameserver 1.1.1.1" > /etc/resolv.conf
       - name: Validate JSON structure
         run:  bundle exec ruby ./tests/validate-json.rb
       - name: Validate Region codes
@@ -32,9 +30,6 @@ jobs:
         run:  tests/file-extensions.sh
       - name: Validate Images
         run: bundle exec ruby ./tests/validate-images.rb
-      - name: Validate URL/Domain reachability
-        run: bundle exec ruby ./tests/validate-urls.rb
-        continue-on-error: true
       - name: Quality Checks
         run: bundle exec ruby ./tests/quality-checks.rb
       - name: Validate Ruby scripts
@@ -42,14 +37,14 @@ jobs:
 
   build:
     name: Minimal build
-    container: 2factorauth/twofactorauth:latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Bundle install
-        run: |
-          bundle config set without test
-          bundle install
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+          cache-version: 1
       - name: Generate API files
         run: |
           mkdir -p api/v1
@@ -62,32 +57,33 @@ jobs:
         run: |
           bundle exec ruby ./scripts/join-entries.rb > ./_data/all.json
           bundle exec jekyll build
+        with:
+          JEKYLL_ENV: development
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Artifact
+        run: tar -czf build.tar.gz --ignore-failed-read --exclude=build.tar.gz *
         if: >
           github.event_name == 'push' &&
           github.ref == 'refs/heads/master' &&
           github.repository == '2factorauth/twofactorauth'
-        run: tar -czf build.tar.gz .
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
-        if: >
-          github.event_name == 'push' &&
-          github.ref == 'refs/heads/master' &&
-          github.repository == '2factorauth/twofactorauth'
         with:
           name: build
           path: build.tar.gz
+        if: >
+          github.event_name == 'push' &&
+          github.ref == 'refs/heads/master' &&
+          github.repository == '2factorauth/twofactorauth'
 
   complete_build:
     name: Complete build
     if: >
-      github.event_name == 'push' &&
-      github.ref == 'refs/heads/master' &&
-      github.repository == '2factorauth/twofactorauth'
+          github.event_name == 'push' &&
+          github.ref == 'refs/heads/master' &&
+          github.repository == '2factorauth/twofactorauth'
     needs: [ tests, build ]
-    container: 2factorauth/twofactorauth:latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v3
@@ -95,12 +91,13 @@ jobs:
           name: build
       - name: Extract artifact
         run: tar -xzf build.tar.gz
-      - name: Bundle install
-        run: |
-          bundle config set without test
-          bundle install
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+          cache-version: 1
       - name: Install GnuPG
-        run: apk add --no-cache gnupg
+        run: sudo apt install gnupg -y
       - uses: crazy-max/ghaction-import-gpg@v5
         id: pgp
         with:
@@ -110,9 +107,11 @@ jobs:
         working-directory: _site
         run: ../scripts/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
       - name: Minify JavaScript files
-        run: ./scripts/minify-js.sh
+        run: |
+          npm i -g babel-minify
+          ./scripts/minify-js.sh
       - name: Build region sites
-        run: ./scripts/regions.rb
+        run: bundle exec ruby ./scripts/regions.rb
         env:
           NOKOGIRI_USE_SYSTEM_LIBRARIES: true
           PAGES_REPO_NWO:  ${{ github.repository }}
