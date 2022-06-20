@@ -5,7 +5,7 @@ jobs:
   tests:
     name: Tests
     runs-on: ubuntu-latest
-    env: 
+    env:
       BUNDLE_WITHOUT: jekyll_plugins
     steps:
       - uses: actions/checkout@v3
@@ -40,7 +40,7 @@ jobs:
   build:
     name: Minimal build
     runs-on: ubuntu-latest
-    env: 
+    env:
       BUNDLE_WITHOUT: test
     steps:
       - uses: actions/checkout@v3
@@ -61,9 +61,8 @@ jobs:
         run: |
           bundle exec ruby ./scripts/join-entries.rb > ./_data/all.json
           bundle exec jekyll build
-        with:
-          JEKYLL_ENV: development
         env:
+          JEKYLL_ENV: development
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Artifact
         run: tar -czf build.tar.gz --exclude=build.tar.gz * .git
@@ -89,7 +88,7 @@ jobs:
           github.repository == '2factorauth/twofactorauth'
     needs: [ tests, build ]
     runs-on: ubuntu-latest
-    env: 
+    env:
       BUNDLE_WITHOUT: test
     steps:
       - uses: actions/download-artifact@v3
