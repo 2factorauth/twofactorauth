@@ -62,7 +62,7 @@ jobs:
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Artifact
-        run: tar -czf build.tar.gz --ignore-failed-read --exclude=build.tar.gz *
+        run: tar -czf build.tar.gz --exclude=build.tar.gz * .git
         if: >
           github.event_name == 'push' &&
           github.ref == 'refs/heads/master' &&
