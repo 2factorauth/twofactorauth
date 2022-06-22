@@ -146,5 +146,6 @@ jobs:
           jekyll: false
           fqdn: ${{ secrets.DOMAIN }}
           commit_message: "Deploy ${{GITHUB.SHA}}"
+          keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
