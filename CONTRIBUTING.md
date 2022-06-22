@@ -103,6 +103,7 @@ the corresponding [subdirectory][entries] as shown in the following example:
   }
 }
 ```
+- The domain should point to the main page of the service, not the login page (usually the root domain, not a subdomain).
 - Keywords must be selected from the values listed in [`categories.json`][categories].
 - The default value for the icon is `<domain>.svg`, but can be overridden by an `img`
 field.
@@ -187,9 +188,9 @@ only available in specific countries or to specific account types, you can docum
 }
 ```
 
-### Adding a site that is only available in specific regions
+### Adding a site that is only available or is prevalent in specific regions
 
-If a site (with or without 2FA) is only available in certain countries - for example a
+If a site (with or without 2FA) is only available in certain countries or most users are located in certain countries - for example a
 government site - you can note this with the `regions` field.
 
 ```JSON
