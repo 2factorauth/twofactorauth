@@ -30,6 +30,9 @@ jobs:
         run: bundle exec ruby ./tests/language-codes.rb
       - name: Validate file extensions
         run:  tests/file-extensions.sh
+      - name: Validate URL/Domain reachability
+        run: bundle exec ruby ./tests/validate-urls.rb
+        continue-on-error: true
       - name: Validate Images
         run: bundle exec ruby ./tests/validate-images.rb
       - name: Quality Checks
