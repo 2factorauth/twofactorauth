@@ -26,7 +26,7 @@
 
           {{ name }}</a>
           {% if website.notes %}
-                <i class="fas fa-exclamation-triangle exception" data-content="{{ website.notes }}"></i>
+                <i class="fas fa-exclamation-triangle exception" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-title="Exceptions & Restrictions" data-bs-content="{{ website.notes }}"></i>
           {% endif %}
       </div>
 

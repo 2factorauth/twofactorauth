@@ -51,4 +51,5 @@ let resizeObserver = new ResizeObserver(() => {
 
 resizeObserver.observe($('body')[0]);
 
-$('.exception').popup({position: 'right center', hoverable: true, title: 'Exceptions & Restrictions'});
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
