@@ -1,0 +1,35 @@
+{
+  "Masaryk University": {
+    "domain": "islogin.cz",
+    "additional-domains": [
+      "is.muni.cz",
+      "is.slu.cz",
+      "is.jamu.cz",
+      "is.vstecb.cz",
+      "is.ambis.cz",
+      "is.vshe.cz",
+      "is.vsfs.cz",
+      "is.vszdrav.cz",
+      "is.sting.cz",
+      "is.mvso.cz",
+      "is.vsci.cz",
+      "is.praguecityuniversity.cz",
+      "is.caritas-vos.cz",
+      "is.jabok.cz"
+    ],
+    "tfa": [
+      "custom-software"
+    ],
+    "custom-software": [
+      "national eID"
+    ],
+    "documentation": "https://is.muni.cz/blog/is_info/nov_20211116_overeni",
+    "notes": "2FA only available via national eID, requires additional setup.",
+    "regions": [
+      "cz"
+    ],
+    "keywords": [
+      "universities"
+    ]
+  }
+}
