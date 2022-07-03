@@ -37,7 +37,7 @@
               {{ name }}</a>
 
               {% if website.notes %}
-                <i class="fas fa-exclamation-triangle exception col" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-title="Exceptions & Restrictions" data-bs-content="{{ website.notes }}"></i>
+                <i class="fas fa-exclamation-triangle exception col" tabindex="0" data-bs-toggle="popover" data-bs-content="{{ website.notes }}"></i>
               {% endif %}
             </div>
           </td>
@@ -81,20 +81,12 @@
             <td class="icon-cell">
               <div class="row">
                 {% if tfa contains "custom-hardware" %}
-                  <i class="tfa-icon fas fa-info col"
-                     title="{%- if website.custom-hardware -%}
-                     {%- if website.custom-hardware.size > 1 -%}
-                     Requires one of:
-                     {%- else -%}
-                     Required hardware token:
-                     {%- endif-%}
-                     {%- for item in website.custom-hardware -%}&#013;- {{ item }} {%- endfor -%}
-                     {%- else -%}
-                     Requires custom hardware token
-                     {%- endif -%}
-                     "
-
-                  ></i>
+                {% if website.custom-hardware %}
+                  <i class="tfa-icon fas fa-info col custom-hardware-popover" data-bs-content="{%- for item in website.custom-hardware -%}&#60;li&#62;{{ item }}&#60;/li&#62;{%- endfor -%}" data-bs-toggle="popover">
+                  </i>
+                {% else %}
+                  <i class="tfa-icon fas fa-info col" title="Requires custom hardware token"></i>
+                {% endif %}
                 {% endif %}
 
                 {% if tfa contains "u2f" %}
@@ -111,19 +103,12 @@
                   <i class="tfa-icon fas fa-check col" title="TOTP support"></i>
                 {% endif %}
                 {% if tfa contains "custom-software" %}
-                  <i class="tfa-icon fas fa-info col"
-                     title="{%- if website.custom-software -%}
-                     {%- if website.custom-hardware.size > 1 -%}
-                     Requires one of:
-                     {%- else -%}
-                     Required app:
-                     {%- endif-%}
-                     {%- for item in website.custom-software -%}&#013;- {{ item }} {%- endfor -%}
-                     {%- else -%}
-                     Requires proprietary app/software
-                     {%- endif -%}
-                     "
-                  ></i>
+                {% if website.custom-software %}
+                  <i class="tfa-icon fas fa-info col custom-software-popover" data-bs-content="{%- for item in website.custom-software -%}&#60;li&#62;{{ item }}&#60;/li&#62;{%- endfor -%}" data-bs-toggle="popover">
+                  </i>
+                {% else %}
+                  <i class="tfa-icon fas fa-info col" title="Requires proprietary app/software"></i>
+                {% endif %}
                 {% endif %}
               </div>
             </td>

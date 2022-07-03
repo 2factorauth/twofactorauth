@@ -51,5 +51,23 @@ let resizeObserver = new ResizeObserver(() => {
 
 resizeObserver.observe($('body')[0]);
 
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+// Initialise popovers
+const exceptionPopoverList = [...document.querySelectorAll('.exception')].map(el => new bootstrap.Popover(el, {
+  trigger: 'hover focus',
+  title: 'Exceptions & Restrictions'
+}));
+
+const customTfaPopoverConfig = {
+  html: true,
+  sanitize: false,
+  trigger: 'hover focus'
+}
+const customHardwarePopoverList = [...document.querySelectorAll('.custom-hardware-popover')].map(el => new bootstrap.Popover(el, {
+  ...customTfaPopoverConfig,
+  title: 'Custom Hardware 2FA'
+}));
+const customSoftwarePopoverList = [...document.querySelectorAll('.custom-software-popover')].map(el => new bootstrap.Popover(el, {
+  ...customTfaPopoverConfig,
+  title: 'Custom Software 2FA'
+}));
+
