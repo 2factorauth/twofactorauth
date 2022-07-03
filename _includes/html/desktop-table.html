@@ -82,7 +82,7 @@
               <div class="row">
                 {% if tfa contains "custom-hardware" %}
                 {% if website.custom-hardware %}
-                  <i class="tfa-icon fas fa-info col custom-hardware-popover" data-bs-content="{%- for item in website.custom-hardware -%}&#60;li&#62;{{ item }}&#60;/li&#62;{%- endfor -%}" data-bs-toggle="popover">
+                  <i class="tfa-icon fas fa-info col custom-hardware-popover" tabindex="0" data-bs-content="{%- for item in website.custom-hardware -%}&#60;li&#62;{{ item }}&#60;/li&#62;{%- endfor -%}" data-bs-toggle="popover">
                   </i>
                 {% else %}
                   <i class="tfa-icon fas fa-info col" title="Requires custom hardware token"></i>
@@ -104,7 +104,7 @@
                 {% endif %}
                 {% if tfa contains "custom-software" %}
                 {% if website.custom-software %}
-                  <i class="tfa-icon fas fa-info col custom-software-popover" data-bs-content="{%- for item in website.custom-software -%}&#60;li&#62;{{ item }}&#60;/li&#62;{%- endfor -%}" data-bs-toggle="popover">
+                  <i class="tfa-icon fas fa-info col custom-software-popover" tabindex="0" data-bs-content="{%- for item in website.custom-software -%}&#60;li&#62;{{ item }}&#60;/li&#62;{%- endfor -%}" data-bs-toggle="popover">
                   </i>
                 {% else %}
                   <i class="tfa-icon fas fa-info col" title="Requires proprietary app/software"></i>
