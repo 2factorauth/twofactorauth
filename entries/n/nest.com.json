@@ -2,9 +2,11 @@
   "Nest": {
     "domain": "nest.com",
     "tfa": [
-      "sms"
+      "sms",
+      "email"
     ],
-    "documentation": "https://nest.com/support/article/How-to-use-2-step-verification-to-add-stronger-security-to-your-Nest-Account",
+    "notes": "These 2FA options are only available to users with non-migrated accounts.",
+    "documentation": "https://support.google.com/googlenest/answer/9295081",
     "keywords": [
       "iot"
     ]
