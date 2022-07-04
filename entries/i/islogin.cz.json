@@ -1,5 +1,5 @@
 {
-  "Masaryk University": {
+  "The Information System of Masaryk University": {
     "domain": "islogin.cz",
     "additional-domains": [
       "is.muni.cz",
@@ -18,10 +18,14 @@
       "is.jabok.cz"
     ],
     "tfa": [
-      "custom-software"
+      "custom-software",
+      "custom-hardware"
     ],
     "custom-software": [
-      "national eID"
+      "identitaobcana.cz"
+    ],
+    "custom-hardware": [
+      "identitaobcana.cz"
     ],
     "documentation": "https://is.muni.cz/blog/is_info/nov_20211116_overeni",
     "regions": [
