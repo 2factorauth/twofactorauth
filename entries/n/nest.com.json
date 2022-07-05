@@ -3,9 +3,12 @@
     "domain": "nest.com",
     "tfa": [
       "sms",
-      "email"
+      "call",
+      "totp",
+      "custom-software",
+      "u2f"
     ],
-    "notes": "These 2FA options are only available to users with non-migrated accounts.",
+    "notes": "Non-migrated accounts only have SMS & Email 2FA available.",
     "documentation": "https://support.google.com/googlenest/answer/9295081",
     "keywords": [
       "iot"
