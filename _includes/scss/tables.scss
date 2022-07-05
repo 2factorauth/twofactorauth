@@ -59,5 +59,14 @@ thead {
 }
 
 .popover-header {
-  color: #212529;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .popover {
+    --bs-popover-body-color: var(--text-color);
+    --bs-popover-bg: #262626;
+    --bs-popover-header-bg: #373737;
+  }
 }
