@@ -1,0 +1,20 @@
+{
+  "Simon Fraser University": {
+    "domain": "sfu.ca",
+    "url": "https://www.sfu.ca",
+    "tfa": [
+      "totp",
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "HyperOTP"
+    ],
+    "documentation": "https://www.sfu.ca/information-systems/services/mfa/",
+    "keywords": [
+      "universities"
+    ],
+    "regions": [
+      "ca"
+    ]
+  }
+}
