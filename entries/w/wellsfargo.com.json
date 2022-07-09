@@ -9,7 +9,14 @@
     "tfa": [
       "sms",
       "call",
-      "custom-hardware"
+      "custom-hardware",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Wells Fargo App"
+    ],
+    "custom-hardware": [
+      "RSA SecurID Device"
     ],
     "documentation": "https://www.wellsfargo.com/privacy-security/advanced-access",
     "regions": [
