@@ -1,0 +1,58 @@
+---
+layout: default
+noscript: true
+---
+<div class="row justify-content-center main">
+    <div class="alert bg-warning border p-1 mt-2">
+        <h2>Warning! No JavaScript Version</h2>
+        <p>This page is a basic version of the site with limited functionality intended to be used by users with JavaScript disabled. If you landed on this page by mistake, please visit the <a href="/">homepage</a> to use the site with its full functionality</p>
+    </div>
+    <div id="logo-outer" class="col-12 col-md-4 col-xl-12">
+        <img alt="" loading="lazy" id="logo" src="/img/icons/icon.svg">
+    </div>
+
+    <div class="col-12 col-md-8 col-xl-12 text-center position-relative">
+        <div class="description">
+            <h1>{{ site.title }}</h1>
+            <div class="sub header">List of websites and whether or not they support
+                <a href="https://en.wikipedia.org/wiki/Two-factor_authentication">2FA</a>.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Categories list -->
+<div class="row justify-content-start category-list row-cols-1 row-cols-lg-{{ site.category-buttons }} g-2 m-2 m-md-0">
+    {% assign keywordsMain = site.data.categories | sort: "title" | where_exp: "item", "item.name != 'other'" %}
+    {% assign keywordsOther = site.data.categories | where_exp: "item", "item.name == 'other'" %}
+    {% assign keywords = keywordsMain | concat: keywordsOther %}
+    {% assign all_entries = site.data.all %}
+    {% assign keywords_length = keywords | size %}
+
+    <!-- Category loop -->
+    {% for keyword in keywords %}
+
+    {% assign entries = "" | split: ',' %}
+    {% for entry in all_entries %}
+    {% if entry[1].keywords contains keyword.name %}
+    {% assign entries = entries | push: entry %}
+    {% endif %}
+    {% endfor %}
+
+    {% assign _offset = forloop.index | minus: 1 %}
+    {% assign md_desktop = _offset | modulo: site.category-buttons %}
+  
+    <!-- List previous 6 categories (desktop view) -->
+    {% if md_desktop == 0 %}
+      {% for _keyword in keywords limit: site.category-buttons offset: _offset %}
+        {% include html/category-button.html category-param=_keyword viewport="desktop" %}
+      {% endfor %}
+    {% endif %}
+    
+    <div class="table-outer" id="{{ keyword.name }}">
+    <!-- Display desktop table -->
+    {% include html/desktop-table.html category=keyword entries=entries %}
+    </div>
+
+    {% endfor %}
+</div>
