@@ -1,10 +1,12 @@
 {
   "Desjardins": {
     "domain": "desjardins.com",
-    "url": "https://www.desjardins.com/",
     "tfa": [
       "sms",
       "custom-software"
+    ],
+    "custom-software": [
+      "Desjardins mobile services app"
     ],
     "documentation": "https://www.desjardins.com/securite/validation-2-etapes/",
     "regions": [
