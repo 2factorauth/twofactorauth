@@ -1,6 +1,10 @@
 {
   "Bendigo Bank": {
     "domain": "bendigobank.com.au",
+    "tfa": [
+      "totp"
+    ],
+    "documentation":"https://www.bendigobank.com.au/help/ebanking/security-tokens/",
     "url": "https://www.bendigobank.com.au",
     "contact": {
       "facebook": "BendigoBank",
