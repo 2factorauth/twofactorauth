@@ -20,7 +20,7 @@ FileUtils.cp_r(git_dir, "#{tmp_dir}/") unless File.exist?("#{tmp_dir}/.git")
 Parallel.each(-> { regions.pop || Parallel::Stop }) do |region|
   dest_dir = "#{tmp_dir}/#{region['id']}"
   Dir.mkdir(dest_dir) unless File.exist?(dest_dir)
-  files = %w[index.html _includes _layouts _data]
+  files = %w[index.html noscript.html _includes _layouts _data]
   FileUtils.cp_r(files, dest_dir)
 
   File.open("#{dest_dir}/_config_region.yml", 'w') do |file|

@@ -1,0 +1,36 @@
+---
+---
+
+{% include scss/categories.scss %}
+
+{% include scss/tables.scss %}
+
+{% include scss/desktop-table.scss %}
+
+{% include scss/social-media.scss %}
+
+.table-outer {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.table-outer:target {
+    display: block;
+    max-height: 100%;
+    width: 100%;
+}
+
+.logo {
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    background-size: contain;
+    display: inline-block;
+}
+
+#default-noscript {
+    display: none;
+}
