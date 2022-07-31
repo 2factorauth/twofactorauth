@@ -1,11 +1,11 @@
 {
   "Planning Center": {
     "domain": "planningcenter.com",
-    "url": "https://www.planningcenter.com/",
-    "contact": {
-      "facebook": "PlanningCenter",
-      "twitter": "PlanningCenter"
+    "tfa": {
+      "sms",
+      "totp"
     },
+    "documentation": "https://www.planningcenter.com/blog/2022/07/protect-your-church-with-two-step-verification-a-new-level-of-login-security",
     "keywords": [
       "other"
     ]
