@@ -1,6 +1,9 @@
 {
   "Oracle Cloud Infrastructure": {
-    "domain": "oracle.com",
+    "domain": "cloud.oracle.com",
+    "additional-domains": [
+      "oraclecloud.com"
+    ],
     "tfa": [
       "totp",
       "custom-software",
