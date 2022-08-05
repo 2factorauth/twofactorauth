@@ -1,0 +1,22 @@
+{
+  "University of Pennsylvania": {
+    "domain": "upenn.edu",
+    "tfa": [
+      "totp",
+      "custom-software",
+      "sms",
+      "call",
+      "custom-hardware"
+    ],
+     "custom-software": [
+      "Duo"
+    ],
+    "documentation": "https://www.isc.upenn.edu/how-to/two-step-verification-getting-started",
+    "keywords": [
+      "universities"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}
