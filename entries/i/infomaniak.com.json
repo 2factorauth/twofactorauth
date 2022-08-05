@@ -5,9 +5,12 @@
     "tfa": [
       "sms",
       "totp",
-      "custom-hardware"
+      "custom-software"
     ],
-    "documentation": "https://www.infomaniak.ch/en/support/faq/1940",
+    "custom-software": [
+      "Infomaniak Auth"
+    ],
+    "documentation": "https://www.infomaniak.com/en/support/faq/1940",
     "keywords": [
       "hosting"
     ]

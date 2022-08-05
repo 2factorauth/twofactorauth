@@ -1,0 +1,17 @@
+{
+  "Blockchain.com": {
+    "domain": "blockchain.com",
+    "tfa": [
+      "sms",
+      "totp",
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "documentation": "https://support.blockchain.com/hc/en-us/articles/4417080375316",
+    "keywords": [
+      "cryptocurrencies"
+    ]
+  }
+}
