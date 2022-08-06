@@ -1,0 +1,23 @@
+{
+  "University of Oxford": {
+    "domain": "ox.ac.uk",
+    "tfa": [
+      "totp",
+      "sms",
+      "custom-software",
+      "u2f",
+      "call"
+    ],
+    "custom-software": [
+      "Microsoft Authenticator",
+      "Authy"
+    ],
+    "documentation": "https://help.it.ox.ac.uk/mfa",
+    "keywords": [
+      "universities"
+    ],
+    "regions": [
+      "gb"
+    ]
+  }
+}
