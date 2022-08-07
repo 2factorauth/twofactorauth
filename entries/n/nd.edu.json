@@ -6,9 +6,13 @@
       "sms",
       "call",
       "custom-software",
-      "custom-hardware"
+      "u2f",
+      "totp"
     ],
-    "documentation": "https://oit.nd.edu/services/accounts/okta-account-services-and-two-step-login/",
+    "custom-software": [
+      "Okta Verify"
+    ],
+    "documentation": "https://nd.service-now.com/nd_portal?id=kb_article_view&sysparm_article=KB0017218",
     "keywords": [
       "universities"
     ],

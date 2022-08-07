@@ -21,10 +21,17 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        color: #3596ff;
+        color: #212529;
+        font-weight: 500;
 
         .fa-exclamation-triangle {
           float: right;
+        }
+
+        .site-name {
+          color: #212529;
+          font-weight: 500;
+          text-decoration: none;
         }
       }
 
@@ -33,7 +40,6 @@
         margin: 0 auto;
 
         a {
-          font-family: Spartan;
           color: #fff;
           text-decoration: none;
 

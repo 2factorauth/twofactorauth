@@ -1,0 +1,21 @@
+{
+  "Vysoká škola ekonomická v Praze": {
+    "domain": "vse.cz",
+    "tfa": [
+      "totp",
+      "sms",
+      "u2f",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Microsoft Authenticator"
+    ],    
+    "documentation": "https://ci.vse.cz/english/support/procedures/multi-factor-authentication-in-microsoft-365/",
+    "keywords": [
+      "universities"
+    ],
+    "regions": [
+      "cz"
+    ]
+  }
+}

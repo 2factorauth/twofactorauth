@@ -1,11 +1,16 @@
 {
   "Kraken": {
     "domain": "kraken.com",
-    "url": "https://www.kraken.com/",
     "tfa": [
       "totp",
-      "custom-hardware"
+      "custom-hardware",
+      "u2f",
+      "email"
     ],
+    "custom-hardware": [
+      "OATH OTP keys"
+    ],
+    "notes": "Email 2FA is mandatory for all users but only requested for unknown devices",
     "documentation": "https://support.kraken.com/hc/en-us/articles/360000426923",
     "keywords": [
       "cryptocurrencies"

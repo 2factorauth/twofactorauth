@@ -10,10 +10,10 @@
     <title>{{ site.title }}</title>
     {% include html/icons.html %}
     <link href="/manifest.json" rel="manifest">
-    <link rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"/>
-    <link rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" integrity="sha512-9BwLAVqqt6oFdXohPLuNHxhx36BVj5uGSGmizkmGkgl3uMSgNalKc/smum+GJU/TTP0jy0+ruwC3xNAk3F759A==" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
-    <link rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" integrity="sha512-xbKj38YamwOa1yyC9gTFLExhbbV6r8WZwaEYYYaedfU0gosQuncv6p//9zcjK1NO2nkV/Nv5X5TkM/zjOnlc+w==" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css"/>
-    <link rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300|Spartan:500&display=swap">
+    <link rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" integrity="sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg==" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap.min.css" />
+    <link rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg==" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.3.0/css/flag-icons.min.css"/>
+    <link rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300&display=swap">
     <link href="/css/main.css" rel="stylesheet">
     <link href="/css/navbar.css" rel="stylesheet">
     <link href="/css/corner.css" rel="stylesheet">
@@ -30,23 +30,11 @@
       </svg>
     </a>
 
-    {% unless page.name == "index.html" %}
-      <div class="back-arrow">
-        <a onclick="history.back()">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-      </div>
-    {% endunless %}
-
     <div class="container">
-      <noscript>
+      <noscript id="default-noscript">
         <div class="alert bg-danger text-white border p-1 mt-2">
           <h2>It looks like you have JavaScript disabled!</h2>
-          <p>Without JavaScript, this page probably won't work very well.
-                  For more information, or if you would like to talk to us about this,
-                  please take a look at our
-            <b><a href="{{ site.github.repository_url }}" class="text-white">
-              GitHub repository</a></b>.</p>
+          <p>Please visit our <b><a href="noscript" class="text-white">no JavaScript version of this page</a></b>.</p>
         </div>
       </noscript>
       {{ content }}
@@ -62,10 +50,9 @@
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.14.1/jets.min.js" integrity="sha512-C5x7QiS49O4ubITbqnAX93oOLk9/cASa+m8GawJMki1i4z8AjFDeklRCqiBBjj7niQULNW6nDhqf7l06zrZ9mA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.14.1/jets.min.js" integrity="sha512-C5x7QiS49O4ubITbqnAX93oOLk9/cASa+m8GawJMki1i4z8AjFDeklRCqiBBjj7niQULNW6nDhqf7l06zrZ9mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/js/popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.bundle.min.js" integrity="sha512-ndrrR94PW3ckaAvvWrAzRi5JWjF71/Pw7TlSo6judANOFCmz0d+0YE+qIGamRRSnVzSvIyGs4BTtyFMm3MT/cg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/main.js"></script>
     <script src="/js/social-media.js"></script>
     <script src="/js/search.js"></script>

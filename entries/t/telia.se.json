@@ -1,12 +1,13 @@
 {
-  "Telia (Sweden)": {
+  "Telia": {
     "domain": "telia.se",
-    "url": "https://www.telia.se/",
     "tfa": [
       "custom-software"
     ],
+    "custom-software": [
+      "BankID"
+    ],
     "documentation": "https://www.telia.se/privat/support/info/logga-in-med-bankid-och-eleg-pa-mitt-telia",
-    "notes": "2FA is only available for Swedish citizens with BankID.",
     "keywords": [
       "utilities"
     ],

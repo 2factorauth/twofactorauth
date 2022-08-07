@@ -1,0 +1,26 @@
+{
+  "University of Waterloo": {
+    "domain": "uwaterloo.ca",
+    "img": "uwaterloo.ca.png",
+    "tfa": [
+      "u2f",
+      "custom-software",
+      "custom-hardware",
+      "sms",
+      "call"
+    ],
+    "custom-software": [
+      "Duo Mobile"
+    ],
+    "custom-hardware": [
+      "Duo token"
+    ],
+    "documentation": "https://uwaterloo.ca/two-factor-authentication/",
+    "keywords": [
+      "universities"
+    ],
+    "regions": [
+      "ca"
+    ]
+  }
+}

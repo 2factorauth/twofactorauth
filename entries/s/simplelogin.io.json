@@ -1,0 +1,12 @@
+{
+  "SimpleLogin": {
+    "domain": "simplelogin.io",
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
+    "keywords": [
+      "email"
+    ]
+  }
+}

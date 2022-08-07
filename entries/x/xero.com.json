@@ -3,7 +3,11 @@
     "domain": "xero.com",
     "url": "https://www.xero.com/",
     "tfa": [
-      "totp"
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Xero Verify"
     ],
     "documentation": "https://help.xero.com/nz/MyXero_Two-Step_About",
     "keywords": [

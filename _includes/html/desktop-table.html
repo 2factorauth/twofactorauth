@@ -1,5 +1,5 @@
 {% assign entries = include.entries %}
-<div id="{{ include.category.name }}-table" class="collapse category-table desktop-only">
+<div id="{{ include.category.name }}-table" class="{% unless page.noscript %} collapse {% endunless %} category-table desktop-only">
   <a id="{{ include.category.name }}" class="category-href"></a>
   <table class="table table-bordered table-bordered">
     <thead class="sticky-top">
@@ -32,12 +32,21 @@
                 {% assign image = website.domain | append: ".svg" | prepend: letter %}
               {% endif %}
 
+              {% if page.noscript %}
+              <div class="logo desktop-only" style="background-image: url('/img/{{ image }}');" aria-hidden="true"></div>
+              {% else %}
               <img class="logo desktop-only" loading="lazy" src="/img/{{ image }}" alt="">
+              {% endif %}
+              
 
               {{ name }}</a>
 
               {% if website.notes %}
-                <i class="fas fa-exclamation-triangle exception col" data-content="{{ website.notes }}"></i>
+              {% if page.noscript %}
+                <i class="fas fa-exclamation-triangle exception col" title="{{ website.notes }}"></i>
+              {% else %}
+                <i class="fas fa-exclamation-triangle exception col" tabindex="0" data-bs-toggle="popover" data-bs-content="{{ website.notes }}"></i>
+              {% endif %}
               {% endif %}
             </div>
           </td>
@@ -48,12 +57,12 @@
             <td class="icon-cell">
               <div class="row">
               {% if website.documentation %}
-                <a href="{{ website.documentation | remove: 'https://2fa.directory' }}" class="col">
+                <a href="{{ website.documentation | remove: 'https://2fa.directory' }}" class="col" aria-label="2FA Setup documentation">
                   <i class="fas fa-book"></i>
                 </a>
               {% endif %}
               {% if website.recovery %}
-                <a href="{{ website.recovery }}" class="col">
+                <a href="{{ website.recovery }}" class="col" aria-label="Account recovery documentation">
                   <i class="fas fa-redo"></i>
                 </a>
               {% endif %}
@@ -81,20 +90,17 @@
             <td class="icon-cell">
               <div class="row">
                 {% if tfa contains "custom-hardware" %}
+                {% if website.custom-hardware %}
+                  {% if page.noscript %}
                   <i class="tfa-icon fas fa-info col"
-                     title="{%- if website.custom-hardware -%}
-                     {%- if website.custom-hardware.size > 1 -%}
-                     Requires one of:
-                     {%- else -%}
-                     Required hardware token:
-                     {%- endif-%}
-                     {%- for item in website.custom-hardware -%}&#013;- {{ item }} {%- endfor -%}
-                     {%- else -%}
-                     Requires custom hardware token
-                     {%- endif -%}
-                     "
-
-                  ></i>
+                     title="Custom Hardware 2FA {%- for item in website.custom-hardware -%}&#013;- {{ item }} {%- endfor -%}"></i>
+                  {% else %}
+                  <i class="tfa-icon fas fa-info col custom-hardware-popover" tabindex="0" data-bs-content="{%- for item in website.custom-hardware -%}&#60;li&#62;{{ item }}&#60;/li&#62;{%- endfor -%}" data-bs-toggle="popover">
+                  </i>
+                  {% endif %}
+                {% else %}
+                  <i class="tfa-icon fas fa-info col" title="Requires custom hardware token"></i>
+                {% endif %}
                 {% endif %}
 
                 {% if tfa contains "u2f" %}
@@ -111,49 +117,68 @@
                   <i class="tfa-icon fas fa-check col" title="TOTP support"></i>
                 {% endif %}
                 {% if tfa contains "custom-software" %}
+                {% if website.custom-software %}
+                  {% if page.noscript %}
                   <i class="tfa-icon fas fa-info col"
-                     title="{%- if website.custom-software -%}
-                     {%- if website.custom-hardware.size > 1 -%}
-                     Requires one of:
-                     {%- else -%}
-                     Required app:
-                     {%- endif-%}
-                     {%- for item in website.custom-software -%}&#013;- {{ item }} {%- endfor -%}
-                     {%- else -%}
-                     Requires proprietary app/software
-                     {%- endif -%}
-                     "
-                  ></i>
+                     title="Custom Software 2FA {%- for item in website.custom-software -%}&#013;- {{ item }} {%- endfor -%}"></i>
+                  {% else %}
+                  <i class="tfa-icon fas fa-info col custom-software-popover" tabindex="0" data-bs-content="{%- for item in website.custom-software -%}&#60;li&#62;{{ item }}&#60;/li&#62;{%- endfor -%}" data-bs-toggle="popover">
+                  </i>
+                  {% endif %}
+                {% else %}
+                  <i class="tfa-icon fas fa-info col" title="Requires proprietary app/software"></i>
+                {% endif %}
                 {% endif %}
               </div>
             </td>
           {% else %}
 
             <td colspan="6">
-              Tell them to support 2FA!
+              Tell them to support 2FA
               <div class="social-button-group">
-                {% if website.contact.twitter %}
+                {% if page.noscript %}
+                  <!-- Social links with no js -->
+                  {% if website.contact.twitter %}
+                  <a class="twitter-button social-button btn" href="https://twitter.com/{{ website.contact.twitter }}" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    On Twitter
+                  </a>
+                  {% endif %}
+                  {% if website.contact.facebook %}
+                  <a class="facebook-button social-button btn" href="https://facebook.com/{{ website.contact.facebook }}" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    On Facebook
+                  </a>
+                  {% endif %}
+                  {% if website.contact.form %}
+                    <div class="form-button social-button btn" data-form="{{ website.contact.form }}">
+                      <i class="fas fa-edit"></i>
+                      Via Form
+                    </div>
+                  {% endif %}
+                  {% if website.contact.email %}
+                  <a class="email-button social-button btn" href="mailto:{{ website.contact.email }}" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                    Via Email</a>
+                  {% endif %}
+
+                {% else %}
+                  <!-- Social buttons with js -->
+                  {% if website.contact.twitter %}
                   <div tabindex="0" role="button" class="twitter-button social-button btn" data-twitter="{{ website.contact.twitter }}" data-lang="{{ website.contact.language }}">
                     <i class="fab fa-twitter"></i>
                     On Twitter
                   </div>
-                {% endif %}
-                {% if website.contact.facebook %}
+                  {% endif %}
+                  {% if website.contact.facebook %}
                   <div tabindex="0" role="button" class="facebook-button social-button btn" data-facebook="{{ website.contact.facebook }}">
                     <i class="fab fa-facebook-f"></i>
                     On Facebook
                   </div>
-                {% endif %}
-                {% if website.contact.form %}
-                  <div class="form-button social-button btn" data-form="{{ website.contact.form }}">
-                    <i class="fas fa-edit"></i>
-                    Via Form
-                  </div>
-                {% endif %}
-                {% if website.contact.email %}
                   <div tabindex="0" role="button" class="email-button social-button btn" data-email="{{ website.contact.email }}" data-lang="{{ website.contact.language }}">
                     <i class="fas fa-envelope"></i>
                     Via Email</div>
+                  {% endif %}
                 {% endif %}
               </div>
             </td>

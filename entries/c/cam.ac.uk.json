@@ -1,0 +1,26 @@
+{
+  "University of Cambridge": {
+    "domain": "cam.ac.uk",
+    "img": "cam.ac.uk.png",
+    "tfa": [
+      "totp",
+      "sms",
+      "custom-software",
+      "custom-hardware",
+      "call"
+    ],
+    "custom-software": [
+      "Microsoft Authenticator"
+    ],
+    "custom-hardware": [
+      "SafeID token"
+    ], 
+    "documentation": "https://help.uis.cam.ac.uk/service/accounts-passwords/set-multi-factor-authentication-your-university-microsoft-account",
+    "keywords": [
+      "universities"
+    ],
+    "regions": [
+      "gb"
+    ]
+  }
+}

@@ -1,11 +1,10 @@
 {
   "Lowes": {
     "domain": "lowes.com",
-    "url": "https://www.lowes.com",
-    "contact": {
-      "facebook": "lowes",
-      "twitter": "Lowes"
-    },
+    "tfa": [
+      "sms"
+    ],
+    "documentation": "https://www.lowes.com/l/help/contact-us#Multi-FactorAuthentication",
     "regions": [
       "ca",
       "us"

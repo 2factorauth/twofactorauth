@@ -1,6 +1,9 @@
 {
   "Discord": {
     "domain": "discord.com",
+    "additional-domains": [
+      "discordapp.com"
+    ],
     "tfa": [
       "sms",
       "totp"

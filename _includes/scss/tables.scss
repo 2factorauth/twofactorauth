@@ -9,6 +9,10 @@
   }
 }
 
+.table-success, .table-danger {
+  background: var(--bs-table-bg);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #212121;
@@ -47,4 +51,22 @@ td, th {
 
 thead {
   background-color: #ffffff;
+}
+
+.exception {
+  color: #db2828;
+  font-size: 21px;
+}
+
+.popover-header {
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .popover {
+    --bs-popover-body-color: var(--text-color);
+    --bs-popover-bg: #262626;
+    --bs-popover-header-bg: #373737;
+  }
 }

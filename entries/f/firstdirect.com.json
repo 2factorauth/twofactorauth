@@ -1,10 +1,16 @@
 {
-  "First Direct": {
+  "first direct": {
     "domain": "firstdirect.com",
     "url": "https://www2.firstdirect.com/",
     "tfa": [
       "custom-software",
       "custom-hardware"
+    ],
+    "custom-software": [
+      "Digital Secure Key (first direct app)"
+    ],
+    "custom-hardware": [
+      "Physical Secure Key"
     ],
     "documentation": "https://www1.firstdirect.com/help/secure-key/",
     "keywords": [

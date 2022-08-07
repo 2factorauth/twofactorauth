@@ -1,0 +1,24 @@
+{
+  "MYOB": {
+    "domain": "myob.com",
+    "additional-domains": [
+      "myob.com.au",
+      "myob.co.nz"
+    ],
+    "tfa": [
+      "sms",
+      "email",
+      "totp"
+    ],
+    "documentation": "https://help.myob.com/wiki/x/bwfq",
+    "recovery": "https://help.myob.com/wiki/x/1ogHAQ",
+    "notes": "SMS available to selected new customers only.",
+    "keywords": [
+      "finance"
+    ],
+    "regions": [
+      "au",
+      "nz"
+    ]
+  }
+}

@@ -2,8 +2,10 @@
   "npm": {
     "domain": "npmjs.com",
     "tfa": [
-      "totp"
+      "totp",
+      "u2f"
     ],
+    "notes": "The security-key flow using WebAuthn is currently in beta.",
     "documentation": "https://docs.npmjs.com/configuring-two-factor-authentication",
     "recovery": "https://docs.npmjs.com/recovering-your-2fa-enabled-account",
     "keywords": [

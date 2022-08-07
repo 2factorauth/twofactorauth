@@ -3,9 +3,12 @@
     "domain": "questrade.com",
     "url": "https://www.questrade.com",
     "tfa": [
-      "sms"
+      "sms",
+      "call",
+      "totp",
+      "email"
     ],
-    "documentation": "https://questrade-support.secure.force.com/mylearning/view/h/Account/Account-security-centre/",
+    "documentation": "https://www.questrade.com/learning/questrade-basics/lesson/account-profile-and-security",
     "keywords": [
       "investing"
     ],

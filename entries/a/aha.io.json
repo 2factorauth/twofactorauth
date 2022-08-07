@@ -8,7 +8,11 @@
       "custom-software",
       "u2f"
     ],
-    "documentation": "https://support.aha.io/hc/en-us/articles/360031319232#enable-2fa-for-your-account",
+    "custom-software": [
+      "Duo"
+    ],
+    "notes": "2FA is only available through Duo.",
+    "documentation": "https://www.aha.io/support/ideas/ideas/settings/account-settings#security-and-single-sign-on",
     "keywords": [
       "developer"
     ]

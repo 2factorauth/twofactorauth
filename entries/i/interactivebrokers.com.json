@@ -18,8 +18,14 @@
       "custom-software",
       "custom-hardware"
     ],
+    "custom-software": [
+      "IBKR Mobile"
+    ],
+    "custom-hardware": [
+      "Digital Security Card+"
+    ],
     "documentation": "https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log",
-    "notes": "SMS 2FA only works as long as no other method has been enabled.",
+    "notes": "SMS 2FA only works as long as no other method has been enabled. Hardware 2FA is only available for certain customers.",
     "keywords": [
       "investing"
     ]
