@@ -9,6 +9,7 @@ group :jekyll_plugins do
 end
 
 gem 'parallel'
+gem 'webrick'
 
 group :test do
   gem 'addressable'
