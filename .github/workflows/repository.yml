@@ -5,7 +5,7 @@ jobs:
   tests:
     name: Tests
     container: 2factorauth/twofactorauth:latest
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
         with:
@@ -43,7 +43,7 @@ jobs:
   build:
     name: Minimal build
     container: 2factorauth/twofactorauth:latest
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Bundle install
@@ -64,6 +64,7 @@ jobs:
           bundle exec jekyll build
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAGES_REPO_NWO: ${{ github.repository }}
       - name: Create Artifact
         if: >
           github.event_name == 'push' &&
@@ -88,7 +89,7 @@ jobs:
       github.repository == '2factorauth/twofactorauth'
     needs: [ tests, build ]
     container: 2factorauth/twofactorauth:latest
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/download-artifact@v3
         with:
@@ -132,7 +133,7 @@ jobs:
   publish:
     name: Publish build
     needs: [complete_build]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/download-artifact@v3
         with:
