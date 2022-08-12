@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 # Dependencies are bundled with the github-pages gem
 group :jekyll_plugins do
-  gem 'github-pages'
+  gem 'github-pages', '226'
   gem 'octopress-minify-html'
 end
 
