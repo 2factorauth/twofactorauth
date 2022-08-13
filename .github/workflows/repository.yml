@@ -70,7 +70,7 @@ jobs:
           github.event_name == 'push' &&
           github.ref == 'refs/heads/master' &&
           github.repository == '2factorauth/twofactorauth'
-        run: tar -czf build.tar.gz .
+        run: tar -czf /tmp/build.tar.gz .
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         if: >
@@ -78,8 +78,8 @@ jobs:
           github.ref == 'refs/heads/master' &&
           github.repository == '2factorauth/twofactorauth'
         with:
-          name: build
-          path: build.tar.gz
+          name: Minimal_Build
+          path: /tmp/build.tar.gz
 
   complete_build:
     name: Complete build
@@ -93,7 +93,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v3
         with:
-          name: build
+          name: Minimal_Build
       - name: Extract artifact
         run: tar -xzf build.tar.gz
       - name: Bundle install
@@ -123,12 +123,12 @@ jobs:
       - name: Generate Sitemap
         run: ./scripts/sitemap.sh _site
       - name: Create Artifact
-        run: tar -czf site.tar.gz _site
+        run: tar -czf /tmp/site.tar.gz _site
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: site
-          path: site.tar.gz
+          name: Complete_Build
+          path: /tmp/site.tar.gz
 
   publish:
     name: Publish build
@@ -137,7 +137,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v3
         with:
-          name: site
+          name: Complete_Build
       - name: Extract artifact
         run: tar -xzf site.tar.gz
       - uses: crazy-max/ghaction-github-pages@v3
