@@ -2,7 +2,8 @@
   "DNSimple": {
     "domain": "dnsimple.com",
     "tfa": [
-      "totp"
+      "totp",
+      "u2f"
     ],
     "documentation": "https://support.dnsimple.com/articles/two-factor-authentication/",
     "keywords": [
