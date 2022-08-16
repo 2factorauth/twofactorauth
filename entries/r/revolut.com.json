@@ -1,0 +1,19 @@
+{
+  "Revolut": {
+    "domain" : "revolut.com",
+    "tfa": [
+      "sms",
+      "email",
+      "totp",
+      "u2f",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Push Notifications"
+    ],
+    "documentation": "https://www.revolut.com/en-US/help/more/revolut-web-app/accessing-the-retail-web-app",
+    "keywords": [
+      "banking"
+    ]
+  }
+}
