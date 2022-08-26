@@ -5,12 +5,13 @@ labels: add site
 body:
 
   - type: markdown
-  attributes: |
-    ## Thank you for contributing to this project!
-    Our site depends on user contributions to stay up to date. If you know how to write JSON files we prefer you create a [pull request](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md) instead of an issue.
+    attributes:
+      value: |
+        ## Thank you for contributing to this project!
+        Our site depends on user contributions to stay up to date. If you know how to write JSON files we prefer you create a [pull request](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md) instead of an issue.
 
-    Please take time to fill out as much as possible in this form. We receive a lot of issues and your thoroughness helps speed things up.
-    If you're not able to fill a field out, leave it blank and let us know why in the "Additional information" section.
+        Please take time to fill out as much as possible in this form. We receive a lot of issues and your thoroughness helps speed things up.
+        If you're not able to fill a field out, leave it blank and let us know why in the "Additional information" section.
 
   - type: input
     id: name
