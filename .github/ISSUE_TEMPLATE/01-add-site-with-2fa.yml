@@ -3,6 +3,15 @@ description: Request that a site that supports 2FA be added.
 title: Add [site name]
 labels: add site
 body:
+
+  - type: markdown
+  attributes: |
+    ## Thank you for contributing to this project!
+    Our site depends on user contributions to stay up to date. If you know how to write JSON files we prefer you create a [pull request](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md) instead of an issue.
+
+    Please take time to fill out as much as possible in this form. We receive a lot of issues and your thoroughness helps speed things up.
+    If you're not able to fill a field out, leave it blank and let us know why in the "Additional information" section.
+
   - type: input
     id: name
     attributes:
@@ -29,6 +38,14 @@ body:
         Link to documentation on how to enable 2FA on the site.
         Attach screenshots of the setup/login process if no public-facing documentation link is available, redacting any personal information.
 
+  - type: input
+    id: recovery
+    attributes:
+      label: Recovery Documentation URL
+      description: |
+        People sometimes lose their phone or security key. If the site offers a way to bypass 2FA in such an event, please link to a page describing how to recover an account.
+        If the site doesn't provide such an option or there's no public-facing documentation on it, leave this field blank.
+
   - type: checkboxes
     id: 2fa
     attributes:
@@ -37,30 +54,39 @@ body:
       options:
         - label: TOTP (RFC-6238, Google Authenticator)
         - label: Proprietary Software (Authy, Duo, etc.)
-        - label: FIDO2/U2F/WebAuthn security keys
+        - label: U2F/WebAuthn security keys
         - label: Proprietary hardware (Yubico OTP, RSA keys, etc.)
         - label: Phone calls
         - label: SMS tokens
         - label: Email tokens
 
+  - type: textarea
+    id: regions
+    attributes:
+      label: Regions served
+      description: |
+        Some sites have a limited market. If the site is only intended for users in certain countries or regions, please list those countries/regions below.
+        For sites that technically are available globally but only of interest for a single region, please list the region.
+        If the main audience are residents in a larger region, like North America or Europe, you can list that region instead of each individual country.
+
   - type: checkboxes
+    id: eligibility
     attributes:
       label: Eligibility
       description: |
         Check each box below to verify that the site meets our requirements for being listed.
 
-        If a site does not meet all of these requirements, feel free to continue your issue submission.
-        Leave any unmet requirements unchecked, and add any additional information or questions in the "Additional information" section below.
+        Even if a site does not meet all of these requirements you can still create an issue.
+        Leave any unmet requirements unchecked, and provide any additional information or questions in the "Additional information" section below.
       options:
         - label: I have checked that the site meets 2fa.directory's [contributing guidelines and site criteria](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md)
-        - label: The site is ranked within the top 200,000 sites on [Similarweb](https://www.similarweb.com/) or has a substantial social media following.
-        - label: The site does not contain or promote content that violates 2fa.directory's [excluded categories and websites guidelines](https://github.com/2factorauth/twofactorauth/blob/master/EXCLUSION.md), including pornographic, discriminatory, or unlawful content.
-        - label: The issue I'm creating is not a duplicate of an existing [issue](https://github.com/2factorauth/twofactorauth/issues).
-          required: true
-        - label: The issue I'm creating is not a duplicate of an existing [pull request](https://github.com/2factorauth/twofactorauth/pulls)
+        - label: The site is ranked within the top 200,000 sites on [Similarweb](https://www.similarweb.com/).
+        - label: The site does not contain or promote content that violates 2fa.directory's [excluded categories and websites guidelines](https://github.com/2factorauth/twofactorauth/blob/master/EXCLUSION.md).
+        - label: The issue I'm creating is not a duplicate of an existing [issue](https://github.com/2factorauth/twofactorauth/issues) or [pull request](https://github.com/2factorauth/twofactorauth/pulls).
           required: true
 
   - type: textarea
+    id: extra
     attributes:
       label: Additional information
       description: If you have any additional information to provide, please do so below.
