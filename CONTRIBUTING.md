@@ -262,7 +262,7 @@ If a site is available globally apart from a specific region, this can be noted 
 ```
 
 - `recovery`
-  The recovery field can be used to link to acccount recovery documentation about what to do
+  The recovery field can be used to link to account recovery documentation about what to do
   if you lose access to your 2FA method.
 
 ```JSON
