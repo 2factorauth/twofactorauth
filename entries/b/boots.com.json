@@ -2,11 +2,11 @@
   "Boots": {
     "domain": "boots.com",
     "url": "https://www.boots.com/",
-    "contact": {
-      "email": "Boots.CustomerCare_Team@boots.co.uk",
-      "facebook": "BootsUK",
-      "twitter": "BootsHelp"
-    },
+    "tfa": [
+      "call",
+      "sms"
+    ],
+    "documentation": "https://www.boots.com/synthetix/knowledge/article/qed987501/what-is-two-factor-authentication-2fa",
     "keywords": [
       "retail"
     ],
