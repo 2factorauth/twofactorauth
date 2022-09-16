@@ -1,11 +1,11 @@
 {
   "CoinPayments": {
     "domain": "coinpayments.net",
-    "tfa": {
+    "tfa": [
       "totp",
       "sms",
       "email"
-    },
+    ],
     "keywords": [
       "cryptocurrencies"
     ],
