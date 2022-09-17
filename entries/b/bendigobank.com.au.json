@@ -2,10 +2,14 @@
   "Bendigo Bank": {
     "domain": "bendigobank.com.au",
     "url": "https://www.bendigobank.com.au",
-    "contact": {
-      "facebook": "BendigoBank",
-      "twitter": "bendigobank"
-    },
+    "tfa": [
+        "custom-software"
+      ],
+    "documentation": "https://www.bendigobank.com.au/support/e-banking/multi-factor-authentication/",
+    "custom-software": [
+        "Symantec VIP",
+        "Bendigo Bank App"
+    ],
     "keywords": [
       "banking"
     ],
