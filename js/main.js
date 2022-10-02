@@ -71,3 +71,12 @@ const customSoftwarePopoverList = [...document.querySelectorAll('.custom-softwar
   title: 'Custom Software 2FA'
 }));
 
+const backToTopElement = $('.back-to-top-link');
+backToTopElement.removeClass('invisible');
+$(window).scroll(() => {
+  if ($(document).scrollTop() <= 200){
+    backToTopElement.addClass('back-to-top-link-moved');
+  } else {
+    backToTopElement.removeClass('back-to-top-link-moved');
+  }
+});

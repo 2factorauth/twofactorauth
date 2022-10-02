@@ -84,3 +84,26 @@
     }
   }
 }
+
+.back-to-top-link {
+  $back-to-top-size: 3rem;
+
+  z-index: 1100;
+  position: fixed;
+  bottom: 3vh;
+  right: 0.5rem;
+  text-align: center;
+  color: var(--text-color);
+  font-size: $back-to-top-size;
+  line-height: $back-to-top-size;
+  width: $back-to-top-size;
+  height: $back-to-top-size;
+  border-radius: 50%;
+  transition: ease-in-out 0.2s;
+  &:hover {
+    color: var(--primary);
+}
+&-moved:not(:focus-within){
+  bottom: -$back-to-top-size;
+}
+}
