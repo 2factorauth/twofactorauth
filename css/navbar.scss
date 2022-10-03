@@ -100,10 +100,12 @@
   height: $back-to-top-size;
   border-radius: 50%;
   transition: ease-in-out 0.2s;
+  
   &:hover {
     color: var(--primary);
-}
-&-moved:not(:focus-within){
-  bottom: -$back-to-top-size;
-}
+  }
+  
+  &-moved:not(:focus-within){
+    bottom: -$back-to-top-size;
+  }
 }
