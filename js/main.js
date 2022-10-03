@@ -73,7 +73,7 @@ const customSoftwarePopoverList = [...document.querySelectorAll('.custom-softwar
 
 const backToTopElement = $('.back-to-top-link');
 backToTopElement.removeClass('invisible');
-$(window).scroll(() => {
+$(window).scroll(async () => {
   if ($(document).scrollTop() <= 200){
     backToTopElement.addClass('back-to-top-link-moved');
   } else {
