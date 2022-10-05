@@ -1,0 +1,22 @@
+{
+  "Service Canada": {
+    "domain": "servicecanada.gc.ca",
+    "additional-domains": [
+      "canada.ca"
+    ],
+    "url": "https://www.canada.ca/en/employment-social-development.html",
+    "img": "canada.ca.svg",
+    "tfa": [
+      "sms",
+      "call",
+      "totp"
+    ],
+    "documentation": "https://www.canada.ca/en/employment-social-development/services/my-account/multi-factor-authentication.html",
+    "keywords": [
+      "government"
+    ],
+    "regions": [
+      "ca"
+    ]
+  }
+}
