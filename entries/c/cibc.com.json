@@ -5,8 +5,12 @@
     "tfa": [
       "sms",
       "call",
-      "email"
+      "email",
+      "custom-software"
     ],
+    "custom-software": [
+       "CIBC App"
+     ],
     "documentation": "https://www.cibc.com/en/privacy-security/two-step-verification-b.html",
     "regions": [
       "ca"
