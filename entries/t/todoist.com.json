@@ -1,11 +1,10 @@
 {
   "Todoist": {
     "domain": "todoist.com",
-    "contact": {
-      "email": "support@todoist.com",
-      "facebook": "Todoist",
-      "twitter": "todoist"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://todoist.com/help/articles/how-to-enable-multi-factor-authentication",
     "keywords": [
       "task"
     ]
