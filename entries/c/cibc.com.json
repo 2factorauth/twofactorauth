@@ -5,14 +5,17 @@
     "tfa": [
       "sms",
       "call",
-      "email"
+      "custom-software"
+    ],
+    "custom-software": [
+      "CIBC App Push Notification"
     ],
     "documentation": "https://www.cibc.com/en/privacy-security/two-step-verification-b.html",
-    "regions": [
-      "ca"
-    ],
     "keywords": [
       "banking"
+    ],
+    "regions": [
+      "ca"
     ]
   }
 }
