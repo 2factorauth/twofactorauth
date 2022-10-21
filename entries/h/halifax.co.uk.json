@@ -1,9 +1,10 @@
 {
   "Halifax": {
     "domain": "halifax.co.uk",
-    "url": "https://www.halifax.co.uk",
+    "additional-domains": [
+      "halifax-online.co.uk"
+    ],
     "tfa": [
-      "custom-software",
       "call",
       "sms"
     ],
