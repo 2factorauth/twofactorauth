@@ -1,12 +1,11 @@
 {
   "Withings": {
     "domain": "withings.com",
-    "url": "https://www.withings.com/",
     "tfa": [
       "sms"
     ],
-    "documentation": "https://support.withings.com/hc/en-us/articles/4409345943697-Health-Mate-iOS-App-Two-Factor-Authentication-2FA-",
-    "recovery": "https://support.withings.com/hc/en-us/articles/5281083047057-Health-Mate-iOS-App-Recovery-Code-2FA-",
+    "documentation": "https://support.withings.com/hc/en-us/articles/4409345943697",
+    "recovery": "https://support.withings.com/hc/en-us/articles/5281083047057",
     "notes": "2FA only works on the website and in the 'Health Mate' app. 2FA needs to be disabled if the user wants to use other Withings apps (Thermo, WithBaby, Withings Home Security Camera, WiScale).",
     "keywords": [
       "health"
