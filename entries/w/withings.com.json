@@ -1,11 +1,12 @@
 {
   "Withings": {
     "domain": "withings.com",
-    "url": "https://www.withings.com/",
-    "contact": {
-      "facebook": "withings",
-      "twitter": "AskWithings"
-    },
+    "tfa": [
+      "sms"
+    ],
+    "documentation": "https://support.withings.com/hc/en-us/articles/4409345943697",
+    "recovery": "https://support.withings.com/hc/en-us/articles/5281083047057",
+    "notes": "The following apps do not support 2FA: Thermo, WithBaby, Withings Home Security Camera, WiScale.",
     "keywords": [
       "health"
     ]
