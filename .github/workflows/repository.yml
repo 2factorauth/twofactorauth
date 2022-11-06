@@ -4,23 +4,21 @@ jobs:
 
   tests:
     name: Tests
-    container: 2factorauth/twofactorauth:latest
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Bundle install
-        run: |
-          bundle install
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: '3.0'
       - uses: actions/cache@v3
         with:
           path: |
             /tmp/iso-*.txt
             /tmp/similarweb
           key: tmp-files-${{ hashFiles('/tmp/similarweb/*')}}
-      - name: Change nameserver
-        run: echo "nameserver 1.1.1.1" > /etc/resolv.conf
       - name: Validate JSON structure
         run:  bundle exec ruby ./tests/validate-json.rb
       - name: Validate Region codes
@@ -54,22 +52,17 @@ jobs:
       - uses: actions/checkout@v3
       - name: Generate API files
         run: |
-          mkdir -p api/v1
-          mkdir -p api/v2
-          mkdir -p api/v3
+          mkdir -p api/v{1,2,3}
           ./scripts/APIv1.rb
           ./scripts/APIv2.rb
           ./scripts/APIv3.rb
-      - name: Install GnuPG
-        run: apk add --no-cache gnupg
       - uses: crazy-max/ghaction-import-gpg@v5
         id: pgp
         with:
           gpg_private_key: ${{ secrets.pgp_key }}
           passphrase: ${{ secrets.pgp_passphrase }}
       - name: Sign API files
-        working-directory: api
-        run: ../scripts/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
+        run: ./scripts/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
       - uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
