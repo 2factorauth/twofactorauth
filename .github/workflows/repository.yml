@@ -12,7 +12,6 @@ jobs:
           fetch-depth: 0
       - name: Bundle install
         run: |
-          bundle config set without jekyll_plugins
           bundle install
       - uses: actions/cache@v3
         with:
@@ -40,16 +39,19 @@ jobs:
       - name: Validate Ruby scripts
         run: bundle exec rubocop
 
-  build:
-    name: Minimal build
-    container: 2factorauth/twofactorauth:latest
+  publish:
+    name: Build and Publish files
+    if: >
+      github.event_name == 'push' &&
+      github.ref == 'refs/heads/master' &&
+      github.repository == '2factorauth/twofactorauth'
+    concurrency:
+      group: 'publish'
+      cancel-in-progress: true
+    needs: [ tests ]
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-      - name: Bundle install
-        run: |
-          bundle config set without test
-          bundle install
       - name: Generate API files
         run: |
           mkdir -p api/v1
@@ -58,48 +60,6 @@ jobs:
           ./scripts/APIv1.rb
           ./scripts/APIv2.rb
           ./scripts/APIv3.rb
-      - name: Build the site
-        run: |
-          bundle exec ruby ./scripts/join-entries.rb > ./_data/all.json
-          bundle exec jekyll build
-        env:
-          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PAGES_REPO_NWO: ${{ github.repository }}
-      - name: Create Artifact
-        if: >
-          github.event_name == 'push' &&
-          github.ref == 'refs/heads/master' &&
-          github.repository == '2factorauth/twofactorauth'
-        run: tar -czf /tmp/build.tar.gz .
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
-        if: >
-          github.event_name == 'push' &&
-          github.ref == 'refs/heads/master' &&
-          github.repository == '2factorauth/twofactorauth'
-        with:
-          name: Minimal_Build
-          path: /tmp/build.tar.gz
-
-  complete_build:
-    name: Complete build
-    if: >
-      github.event_name == 'push' &&
-      github.ref == 'refs/heads/master' &&
-      github.repository == '2factorauth/twofactorauth'
-    needs: [ tests, build ]
-    container: 2factorauth/twofactorauth:latest
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/download-artifact@v3
-        with:
-          name: Minimal_Build
-      - name: Extract artifact
-        run: tar -xzf build.tar.gz
-      - name: Bundle install
-        run: |
-          bundle config set without test
-          bundle install
       - name: Install GnuPG
         run: apk add --no-cache gnupg
       - uses: crazy-max/ghaction-import-gpg@v5
@@ -108,42 +68,12 @@ jobs:
           gpg_private_key: ${{ secrets.pgp_key }}
           passphrase: ${{ secrets.pgp_passphrase }}
       - name: Sign API files
-        working-directory: _site
+        working-directory: api
         run: ../scripts/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
-      - name: Minify JavaScript files
-        run: ./scripts/minify-js.sh
-      - name: Build region sites
-        run: ./scripts/regions.rb
-        env:
-          NOKOGIRI_USE_SYSTEM_LIBRARIES: true
-          PAGES_REPO_NWO:  ${{ github.repository }}
-          PAGES_ENV: production
-          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          JEKYLL_ENV: production
-      - name: Generate Sitemap
-        run: ./scripts/sitemap.sh _site
-      - name: Create Artifact
-        run: tar -czf /tmp/site.tar.gz _site
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: Complete_Build
-          path: /tmp/site.tar.gz
-
-  publish:
-    name: Publish build
-    needs: [complete_build]
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/download-artifact@v3
-        with:
-          name: Complete_Build
-      - name: Extract artifact
-        run: tar -xzf site.tar.gz
       - uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
-          build_dir: _site
+          build_dir: api
           jekyll: false
           fqdn: ${{ secrets.DOMAIN }}
           commit_message: "Deploy ${{GITHUB.SHA}}"
