@@ -37,7 +37,9 @@ $('#region-notice-close-btn').click(async () => {
 async function showCategory(category) {
   $(`.category-table.collapse:not(#${category}-table, #${category}-mobile-table)`).collapse('hide');
   $(`.category-btn:not([id=${category}])`).removeClass('active');
-  $(`#${category}-table, #${category}-mobile-table`).collapse("show");
+  $(`#${category}-table, #${category}-mobile-table`).one("shown.bs.collapse", () => {
+    document.getElementById(category)?.scrollIntoView(true);
+  }).collapse("show");
   $(`[id=${category}]`).addClass('active');
 }
 
