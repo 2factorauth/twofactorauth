@@ -1,6 +1,9 @@
 {
-  "YoYo Games": {
-    "domain": "yoyogames.com",
+  "GameMaker": {
+    "domain": "gamemaker.io",
+    "additional-domains": [
+      "yoyogames.com"
+    ],
     "tfa": [
       "email",
       "totp"
