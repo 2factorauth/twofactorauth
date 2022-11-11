@@ -28,7 +28,7 @@ Dir.glob('entries/*/*.json') do |file|
   unless schema.valid? document
     schema.validate(document).each do |v|
       puts ''
-      puts "::error file=#{file}:: '#{v['type'].capitalize}' error in in #{file}"
+      puts "::error file=#{file}:: '#{v['type'].capitalize}' error in #{file}"
       puts "- tag: #{v['data_pointer'].split('/')[2]}" if v['data_pointer'].split('/').length >= 3
       puts "  data: #{v['data']}" if v['details'].nil?
       puts "  data: #{v['details']}" unless v['details'].nil?
