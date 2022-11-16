@@ -10,3 +10,6 @@ group :test do
   gem 'rubocop'
   gem 'twitter'
 end
+
+gem 'algolia', '~> 2.3'
+gem 'dotenv', '~> 2.8'

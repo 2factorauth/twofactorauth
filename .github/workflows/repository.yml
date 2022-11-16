@@ -50,12 +50,22 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: '3.0'
       - name: Generate API files
         run: |
           mkdir -p api/v{1,2,3}
           ./scripts/APIv1.rb
           ./scripts/APIv2.rb
           ./scripts/APIv3.rb
+      - name: Publish changes to Algolia
+        run: bundle exec ruby ./scripts/Algolia.rb
+        env:
+          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+          ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}
+          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
       - uses: crazy-max/ghaction-import-gpg@v5
         id: pgp
         with:
