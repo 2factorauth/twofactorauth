@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-group :test do
+group :tests, optional: true do
   gem 'addressable'
   gem 'httpclient'
   gem 'json_schemer'

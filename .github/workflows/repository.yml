@@ -13,6 +13,8 @@ jobs:
         with:
           bundler-cache: true
           ruby-version: '3.0'
+        env:
+          BUNDLE_WITH: "tests"
       - uses: actions/cache@v3
         with:
           path: |
