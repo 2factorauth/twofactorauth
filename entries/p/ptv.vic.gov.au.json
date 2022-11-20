@@ -1,9 +1,12 @@
 {
   "Public Transport Victoria": {
     "domain": "ptv.vic.gov.au",
-    "contact": {
-      "twitter": "ptv_official"
-    },
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://www.ptv.vic.gov.au/footer/about-ptv/digital-tools/mobile-apps/mfa/",
+    "notes": "2FA can only be setup on mobile app, and SMS is required. PTV decides when 2FA is required; user cannot enable 2FA for every login.",
     "keywords": [
       "transport"
     ],
