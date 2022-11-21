@@ -6,14 +6,14 @@ require 'net/http'
 require 'json'
 require 'parallel'
 
-@list_url = 'https://pkgstore.datahub.io/core/language-codes/language-codes_json/data/97607046542b532c395cf83df5185246/language-codes_json.json'
-@code_cache = '/tmp/iso-693-1.txt'
+list_url = 'https://pkgstore.datahub.io/core/language-codes/language-codes_json/data/97607046542b532c395cf83df5185246/language-codes_json.json'
+code_cache = '/tmp/iso-693-1.txt'
+codes = []
 
-@codes = []
-if File.exist?(@code_cache)
-  @codes = JSON.parse(File.read(@code_cache.to_s))
+if File.exist?(code_cache)
+  codes = JSON.parse(File.read(code_cache.to_s))
 else
-  url = URI(@list_url)
+  url = URI(list_url)
   headers = {
     'Accept' => 'application/json',
     'User-Agent' => '2FactorAuth/LanguageValidator '\
@@ -28,9 +28,10 @@ else
   raise("Request failed. Check URL & API key. (#{response.code})") unless response.code == '200'
 
   # Get region codes from body & store in cache file
-  JSON.parse(response.body).each { |v| @codes.push(v['alpha2'].downcase) }
-  File.open(@code_cache, 'w') { |file| file.write @codes.to_json }
+  JSON.parse(response.body).each { |v| codes.push(v['alpha2'].downcase) }
+  File.open(code_cache, 'w') { |file| file.write codes.to_json }
 end
+
 status = 0
 
 Parallel.each(Dir.glob('entries/*/*.json')) do |file|
@@ -38,7 +39,7 @@ Parallel.each(Dir.glob('entries/*/*.json')) do |file|
   next if website['contact'].nil? || website['contact']['language'].nil?
 
   lang = website['contact']['language']
-  next if @codes.include?(lang)
+  next if codes.include?(lang)
 
   begin
     raise("::error file=#{file}:: \"#{lang}\" is not a real ISO 693-1 alpha-2 code.")
@@ -47,4 +48,5 @@ Parallel.each(Dir.glob('entries/*/*.json')) do |file|
     status = 1
   end
 end
+
 exit(status)

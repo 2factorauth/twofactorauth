@@ -22,13 +22,13 @@ jobs:
             /tmp/similarweb
           key: tmp-files-${{ hashFiles('/tmp/similarweb/*')}}
       - name: Validate JSON structure
-        run:  bundle exec ruby ./tests/validate-json.rb
+        run: bundle exec ruby ./tests/validate-json.rb
       - name: Validate Region codes
-        run:  bundle exec ruby ./tests/region-codes.rb
+        run: bundle exec ruby ./tests/region-codes.rb
       - name: Validate Language codes
         run: bundle exec ruby ./tests/language-codes.rb
       - name: Validate file extensions
-        run:  tests/file-extensions.sh
+        run: tests/file-extensions.sh
       - name: Validate Images
         run: bundle exec ruby ./tests/validate-images.rb
       - name: Validate URL/Domain reachability
@@ -49,6 +49,9 @@ jobs:
       group: 'publish'
       cancel-in-progress: true
     needs: [ tests ]
+    permissions:
+      pages: write
+      id-token: write
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
@@ -85,10 +88,6 @@ jobs:
           cp -r img/. public/icons/
       - uses: actions/upload-pages-artifact@v1
         with:
-          target_branch: gh-pages
-          build_dir: api
-          jekyll: false
-          fqdn: ${{ secrets.DOMAIN }}
-          commit_message: "Deploy ${{GITHUB.SHA}}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: public/
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
