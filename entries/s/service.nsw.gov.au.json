@@ -1,14 +1,15 @@
 {
-    "Service NSW": {
-        "domain": "service.nsw.gov.au",
-        "contact": {
-            "twitter": "ServiceNSW"
-        },
-        "keywords": [
-            "government"
-        ],
-        "regions": [
-            "au"
-        ]
-    }
+  "Service NSW":{
+    "domain":"service.nsw.gov.au",
+    "tfa":[
+      "sms"
+    ],
+    "documentation":"https://www.service.nsw.gov.au/services/myservicensw-account/turn-on-2-step-authentication",
+    "keywords":[
+      "government"
+    ],
+    "regions":[
+      "au"
+    ]
+  }
 }
