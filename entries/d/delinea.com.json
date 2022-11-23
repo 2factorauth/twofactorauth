@@ -4,11 +4,16 @@
     "img": "delinea.com.png",
     "tfa": [
       "call",
+      "sms",
       "totp",
+      "email",
       "custom-software",
-      "custom-hardware",
       "u2f"
     ],
+    "custom-software": [
+      "Duo Push"
+    ],
+    "documentation": "https://docs.delinea.com/ss/10.8.0/authentication/two-factor-authentication",
     "keywords": [
       "identity"
     ]
