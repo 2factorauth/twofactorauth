@@ -1,8 +1,6 @@
 {
-  "Payfit": {
+  "PayFit": {
     "domain": "payfit.com",
-    "url": "https://www.payfit.com",
-    "img": "payfit.com.png",
     "documentation": "https://support.payfit.com/en/two-factor-authentication-for-administrators",
     "tfa": [
       "sms",
@@ -12,7 +10,10 @@
       "finance"
     ],
     "regions": [
-      "eu"
+      "de",
+      "es",
+      "fr",
+      "gb"
     ],
   }
 }
