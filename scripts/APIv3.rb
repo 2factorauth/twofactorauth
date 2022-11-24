@@ -19,9 +19,6 @@ all.sort.to_h.each do |k, v|
   end
 end
 
-avail_regions = YAML.load_file('_data/regions.yml').group_by { |hash| hash['id'] }.keys
-regions.each { |k, v| v['selection'] = avail_regions.include? k }
-
 { 'all' => all }.merge(tfa).each do |k, v|
   File.open("api/v3/#{k}.json", 'w') { |file| file.write v.sort_by { |a, _| a.downcase }.to_json }
 end
