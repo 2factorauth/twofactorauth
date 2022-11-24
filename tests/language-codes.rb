@@ -4,6 +4,7 @@
 require 'uri'
 require 'net/http'
 require 'json'
+require 'parallel'
 
 @list_url = 'https://pkgstore.datahub.io/core/language-codes/language-codes_json/data/97607046542b532c395cf83df5185246/language-codes_json.json'
 @code_cache = '/tmp/iso-693-1.txt'
@@ -32,7 +33,7 @@ else
 end
 status = 0
 
-Dir.glob('entries/*/*.json') do |file|
+Parallel.each(Dir.glob('entries/*/*.json')) do |file|
   website = JSON.parse(File.read(file)).values[0]
   next if website['contact'].nil? || website['contact']['language'].nil?
 

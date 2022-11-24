@@ -21,7 +21,6 @@ checkExt entries json
 for dir in img/?; do
     checkExt $dir svg png
 done
-checkExt img/icons svg png
 checkExt tests rb sh json
 
 exit $status

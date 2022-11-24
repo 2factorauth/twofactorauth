@@ -14,7 +14,7 @@ jobs:
           bundler-cache: true
           ruby-version: '3.0'
         env:
-          BUNDLE_WITH: "tests"
+          BUNDLE_WITH: 'tests'
       - uses: actions/cache@v3
         with:
           path: |
@@ -74,8 +74,16 @@ jobs:
           gpg_private_key: ${{ secrets.pgp_key }}
           passphrase: ${{ secrets.pgp_passphrase }}
       - name: Sign API files
-        run: ./scripts/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
-      - uses: crazy-max/ghaction-github-pages@v3
+        run: bundle exec ruby scripts/Sign.rb
+        env:
+          PGP_PASSWORD: ${{ secrets.pgp_passphrase }}
+          PGP_KEY_ID: ${{ steps.pgp.outputs.keyid }}
+      - name: Prepare publish directory
+        run: |
+          mkdir -p public/icons
+          cp -r api/. public/
+          cp -r img/. public/icons/
+      - uses: actions/upload-pages-artifact@v1
         with:
           target_branch: gh-pages
           build_dir: api

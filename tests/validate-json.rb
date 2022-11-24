@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 require 'json_schemer'
-
+require 'parallel'
 @status = 0
 seen_names = []
 
@@ -14,7 +14,7 @@ def error(file, msg)
 end
 
 # rubocop:disable Metrics/BlockLength
-Dir.glob('entries/*/*.json') do |file|
+Parallel.each(Dir.glob('entries/*/*.json')) do |file|
   begin
     JSON.parse(File.read(file))
   rescue JSON::ParserError => e
