@@ -2,9 +2,11 @@
   "UniSuper": {
     "domain": "unisuper.com.au",
     "url": "https://www.unisuper.com.au/",
-    "contact": {
-      "twitter": "UniSuperNews"
-    },
+    "tfa": [
+      "sms",
+      "email"
+    ],
+    "documentation": "https://www.unisuper.com.au/contact-us/accessing-online-accounts",
     "keywords": [
       "investing"
     ],
