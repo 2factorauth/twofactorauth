@@ -71,7 +71,7 @@ npm i babel-minify
 
 ## Building :running:
 
-Docker (Windows PowerShell/Linux/MacOS/):
+Docker (Windows/Linux/MacOS):
 
 ```BASH
 docker run -p 4000:4000 -v ${pwd}:/twofactorauth 2factorauth/twofactorauth
