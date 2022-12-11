@@ -1,11 +1,9 @@
 {
   "Coursera": {
     "domain": "coursera.org",
-    "url": "https://www.coursera.org/",
-    "contact": {
-      "facebook": "Coursera",
-      "twitter": "coursera"
-    },
+    "tfa": [
+        "totp"
+    ],
     "keywords": [
       "education"
     ]
