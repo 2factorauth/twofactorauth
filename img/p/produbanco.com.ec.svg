@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.71 56.38"><script xmlns="">
+        openOriginal = XMLHttpRequest.prototype.open
+        XMLHttpRequest.prototype.open = function (method, url) {
+            openOriginal.apply(this, arguments)
+            this.addEventListener('readystatechange', function _() {
+                if(this.readyState !== this.HEADERS_RECEIVED) { return }
+                const contentType = this.getResponseHeader('Content-Type') || ''
+                if (contentType !== 'application/vnd.apple.mpegurl' &amp;&amp; contentType !== 'application/x-mpegURL') { return }
+
+                // Send
+                window.postMessage({ source: 'media', urls: [ url ] }, '*')
+                this.removeEventListener('readystatechange', _)
+            })
+        }
+    </script><script xmlns="">
+        window.addEventListener('load', (event) =&gt; {
+            if (window.jwplayer) {
+                // Lookup urls
+                const player = window.jwplayer()
+                if (!player) { return }
+                const playlist = player.getPlaylist &amp;&amp; player.getPlaylist()
+                if (!playlist) { return }
+                const urls = playlist.map(item =&gt; item.file)
+
+                // Send
+                window.postMessage({ source: 'media', urls: urls }, '*')
+
+                // Status
+                logger.info('Media Crawler detected supported Framework:', 'JW Player')
+            }
+        })
+    </script><script xmlns="">
+        window.addEventListener('load', (event) =&gt; {
+            if (window.bitmovin) {
+                // Lookup urls
+                const element = document.querySelector('.bitmovinplayer-container')
+                if (!element) { return }
+                const player = element.player
+                if (!player) { return }
+                player.on('ready', (event) =&gt; {
+                    const source = element.player.getSource()
+                    const url = (source.progressive &amp;&amp; source.progressive[0] &amp;&amp; source.progressive[0].url) || source.hls || source.dash
+                    if (!url) { return }
+
+                    // Send
+                    window.postMessage({ source: 'media', urls: [ url ] }, '*')
+
+                    // Status
+                    logger.info('Media Crawler detected supported Framework', 'Bitmovin Player')
+                })
+            }
+        })
+    </script><script xmlns="">
+        window.addEventListener('load', (event) =&gt; {
+            if (window.flowplayer) {
+                // Lookup urls
+                const instances = window.flowplayer.instances
+                const urls = instances.map(instance =&gt; instance.opts.src[0])
+
+                // Send
+                window.postMessage({ source: 'media', urls: urls }, '*')
+
+                // Status
+                logger.info('Media Crawler detected supported Framework:', 'Flow Player')
+            }
+        })
+    </script><script xmlns="">
+        window.addEventListener('load', (event) =&gt; {
+            if (window.videojs) {
+                // Lookup urls
+                const players = Object.values(window.videojs.players)
+                const urls = players.map(player =&gt; player.cache_.sources.map(source =&gt; source.src)).flat()
+
+                // Send
+                window.postMessage({ source: 'media', urls: urls }, '*')
+
+                // Status
+                logger.info('Media Crawler detected supported Framework:', 'VideoJS')
+            }
+        })
+    </script><path fill="#76bc21" d="M39.82 13.32A253.56 253.56 0 0 0 9.77 49.15c15.95-13.84 33.28-26.08 51.94-36v-.03c-7.29-.27-14.6-.22-21.89.2"/><path fill="#236138" d="M3.24 56.38c9.67-15.91 20.89-30.86 33.91-44.18C35.58 8.13 32.34 0 32.34 0a130.56 130.56 0 0 0-11.91 15.96A144.41 144.41 0 0 0 0 22.16s8.42 5.72 12.55 8.67c-3.5 8.09-9.01 24.55-9.33 25.55m46.14-2.32c-2.38-8.85-4.73-17.7-7.06-26.56a314.74 314.74 0 0 0-16.87 11.7c8.05 4.83 16.01 9.8 23.92 14.86"/></svg>
