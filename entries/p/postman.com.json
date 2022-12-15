@@ -1,11 +1,11 @@
 {
   "Postman": {
     "domain": "postman.com",
-    "contact": {
-      "email": "help@getpostman.com",
-      "facebook": "getpostman",
-      "twitter": "getpostman"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://learning.postman.com/docs/getting-started/postman-account/#setting-up-two-factor-authentication",
+    "notes": "Can only be used with username/password accounts, not SSO or Google login accounts",
     "keywords": [
       "developer"
     ]
