@@ -74,7 +74,7 @@ npm i babel-minify
 Docker (Windows/Linux/MacOS):
 
 ```BASH
-docker run -p 4000:4000 -v $(pwd):/twofactorauth 2factorauth/twofactorauth
+docker run -p 4000:4000 -v ${pwd}:/twofactorauth 2factorauth/twofactorauth
 ```
 
 Snap/Manual:

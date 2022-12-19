@@ -6,6 +6,8 @@
   --secondary-background: #eeeeee96;
   --text-color: #212529;
   @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+    
     --background: #212121;
     --secondary-background: #6f6f6f96;
     --text-color: #eee;

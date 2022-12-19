@@ -20,6 +20,11 @@
     height: 100%;
     float: right;
     outline: none;
+    @media (prefers-color-scheme: dark) {
+      background-color: #fff;
+      color: #000;
+      caret-color: #000;
+    }
   }
 }
 

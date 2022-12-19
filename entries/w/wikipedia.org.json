@@ -1,9 +1,9 @@
 {
   "Wikipedia": {
     "domain": "wikipedia.org",
-    "url": "https://www.wikipedia.org/",
     "tfa": [
-      "totp"
+      "totp",
+      "u2f"
     ],
     "documentation": "https://meta.wikimedia.org/wiki/Help:Two-factor_authentication",
     "notes": "Currently limited to administrators (and users with admin-like permissions like interface editors), bureaucrats, checkusers, oversighters, stewards, edit filter managers and the OATH-testers global group.",
