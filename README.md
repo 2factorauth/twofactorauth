@@ -31,10 +31,10 @@ docker pull 2factorauth/twofactorauth
 ### 2. Snap
 
 ```bash
-  sudo snap install ruby --classic
-  npm i babel-minify
-  bundle config set path './vendor/cache'
-  bundle install
+sudo snap install ruby --classic
+npm i babel-minify
+bundle config set path './vendor/cache'
+bundle install
 ```
 
 ### 3. Manual installation
