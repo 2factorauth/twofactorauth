@@ -1,6 +1,9 @@
 {
   "Barmenia": {
-    "domain": "meine-barmenia.de",
+    "domain": "barmenia.de",
+    "additional-domains": [
+      "meine-barmenia.de"
+    ]
     "tfa": [
       "sms",
       "totp"
