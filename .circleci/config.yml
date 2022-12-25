@@ -17,7 +17,7 @@ jobs:
           name: Bundler
           command: |
             bundle config set --local path '/tmp/bundler'
-            bundle config set --local without 'jekyll_plugins'
+            bundle config set --local with 'tests'
             bundle install
 
       - run:

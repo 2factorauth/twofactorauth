@@ -2,14 +2,12 @@
 .idea/
 nbproject/
 
-# Jekyll/Ruby files
+# Ruby files
 .bundle/
 .config/
-.jekyll-metadata
-.sass-cache
 Gemfile.lock
-_site/
 vendor/
+.env
 
 # NPM files
 node_modules/
@@ -25,4 +23,3 @@ tmp/
 
 # API JSON files
 api/*
-_data/all.json

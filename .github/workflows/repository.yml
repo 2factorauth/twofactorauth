@@ -4,32 +4,31 @@ jobs:
 
   tests:
     name: Tests
-    container: 2factorauth/twofactorauth:latest
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Bundle install
-        run: |
-          bundle config set without jekyll_plugins
-          bundle install
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: '3.0'
+        env:
+          BUNDLE_WITH: 'tests'
       - uses: actions/cache@v3
         with:
           path: |
             /tmp/iso-*.txt
             /tmp/similarweb
           key: tmp-files-${{ hashFiles('/tmp/similarweb/*')}}
-      - name: Change nameserver
-        run: echo "nameserver 1.1.1.1" > /etc/resolv.conf
       - name: Validate JSON structure
-        run:  bundle exec ruby ./tests/validate-json.rb
+        run: bundle exec ruby ./tests/validate-json.rb
       - name: Validate Region codes
-        run:  bundle exec ruby ./tests/region-codes.rb
+        run: bundle exec ruby ./tests/region-codes.rb
       - name: Validate Language codes
         run: bundle exec ruby ./tests/language-codes.rb
       - name: Validate file extensions
-        run:  tests/file-extensions.sh
+        run: tests/file-extensions.sh
       - name: Validate Images
         run: bundle exec ruby ./tests/validate-images.rb
       - name: Validate URL/Domain reachability
@@ -40,112 +39,55 @@ jobs:
       - name: Validate Ruby scripts
         run: bundle exec rubocop
 
-  build:
-    name: Minimal build
-    container: 2factorauth/twofactorauth:latest
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v3
-      - name: Bundle install
-        run: |
-          bundle config set without test
-          bundle install
-      - name: Generate API files
-        run: |
-          mkdir -p api/v1
-          mkdir -p api/v2
-          mkdir -p api/v3
-          ./scripts/APIv1.rb
-          ./scripts/APIv2.rb
-          ./scripts/APIv3.rb
-      - name: Build the site
-        run: |
-          bundle exec ruby ./scripts/join-entries.rb > ./_data/all.json
-          bundle exec jekyll build
-        env:
-          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PAGES_REPO_NWO: ${{ github.repository }}
-      - name: Create Artifact
-        if: >
-          github.event_name == 'push' &&
-          github.ref == 'refs/heads/master' &&
-          github.repository == '2factorauth/twofactorauth'
-        run: tar -czf /tmp/build.tar.gz .
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
-        if: >
-          github.event_name == 'push' &&
-          github.ref == 'refs/heads/master' &&
-          github.repository == '2factorauth/twofactorauth'
-        with:
-          name: Minimal_Build
-          path: /tmp/build.tar.gz
-
-  complete_build:
-    name: Complete build
+  publish:
+    name: Build and Publish files
     if: >
       github.event_name == 'push' &&
       github.ref == 'refs/heads/master' &&
       github.repository == '2factorauth/twofactorauth'
-    needs: [ tests, build ]
-    container: 2factorauth/twofactorauth:latest
+    concurrency:
+      group: 'publish'
+      cancel-in-progress: true
+    needs: [ tests ]
+    permissions:
+      pages: write
+      id-token: write
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
         with:
-          name: Minimal_Build
-      - name: Extract artifact
-        run: tar -xzf build.tar.gz
-      - name: Bundle install
+          bundler-cache: true
+          ruby-version: '3.0'
+      - name: Generate API files
         run: |
-          bundle config set without test
-          bundle install
-      - name: Install GnuPG
-        run: apk add --no-cache gnupg
+          mkdir -p api/v{1,2,3}
+          ./scripts/APIv1.rb
+          ./scripts/APIv2.rb
+          ./scripts/APIv3.rb
+      - name: Publish changes to Algolia
+        run: bundle exec ruby ./scripts/Algolia.rb
+        env:
+          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+          ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}
+          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
       - uses: crazy-max/ghaction-import-gpg@v5
         id: pgp
         with:
           gpg_private_key: ${{ secrets.pgp_key }}
           passphrase: ${{ secrets.pgp_passphrase }}
       - name: Sign API files
-        working-directory: _site
-        run: ../scripts/sign.sh ${{ secrets.pgp_passphrase }} ${{ steps.pgp.outputs.keyid }}
-      - name: Minify JavaScript files
-        run: ./scripts/minify-js.sh
-      - name: Build region sites
-        run: ./scripts/regions.rb
+        run: bundle exec ruby scripts/Sign.rb
         env:
-          NOKOGIRI_USE_SYSTEM_LIBRARIES: true
-          PAGES_REPO_NWO:  ${{ github.repository }}
-          PAGES_ENV: production
-          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          JEKYLL_ENV: production
-      - name: Generate Sitemap
-        run: ./scripts/sitemap.sh _site
-      - name: Create Artifact
-        run: tar -czf /tmp/site.tar.gz _site
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+          PGP_PASSWORD: ${{ secrets.pgp_passphrase }}
+          PGP_KEY_ID: ${{ steps.pgp.outputs.keyid }}
+      - name: Prepare publish directory
+        run: |
+          mkdir -p public/icons
+          cp -r api/. public/
+          cp -r img/. public/icons/
+      - uses: actions/upload-pages-artifact@v1
         with:
-          name: Complete_Build
-          path: /tmp/site.tar.gz
-
-  publish:
-    name: Publish build
-    needs: [complete_build]
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/download-artifact@v3
-        with:
-          name: Complete_Build
-      - name: Extract artifact
-        run: tar -xzf site.tar.gz
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: gh-pages
-          build_dir: _site
-          jekyll: false
-          fqdn: ${{ secrets.DOMAIN }}
-          commit_message: "Deploy ${{GITHUB.SHA}}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: public/
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1

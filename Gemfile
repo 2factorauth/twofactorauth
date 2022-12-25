@@ -2,19 +2,14 @@
 
 source 'https://rubygems.org'
 
-# Dependencies are bundled with the github-pages gem
-group :jekyll_plugins do
-  gem 'github-pages'
-  gem 'octopress-minify-html'
-end
-
-gem 'parallel'
-gem 'webrick'
-
-group :test do
+group :tests, optional: true do
   gem 'addressable'
   gem 'httpclient'
   gem 'json_schemer'
   gem 'rubocop'
   gem 'twitter'
 end
+
+gem 'algolia', '~> 2.3'
+gem 'dotenv', '~> 2.8'
+gem 'parallel', '~> 1.22'

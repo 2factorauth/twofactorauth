@@ -5,7 +5,7 @@ require 'uri'
 require 'net/http'
 require 'json'
 
-@list_url = 'https://pkgstore.datahub.io/core/country-list/data_json/data/8c458f2d15d9f2119654b29ede6e45b8/data_json.json'
+@list_url = 'https://raw.githubusercontent.com/stefangabos/world_countries/master/data/countries/en/world.json'
 @code_cache = '/tmp/iso-3166.txt'
 
 @codes = []
@@ -27,7 +27,7 @@ else
   raise("Request failed. Check URL & API key. (#{response.code})") unless response.code == '200'
 
   # Get region codes from body & store in cache file
-  JSON.parse(response.body).each { |v| @codes.push(v['Code'].downcase) }
+  JSON.parse(response.body).each { |v| @codes.push(v['alpha2'].downcase) }
   File.open(@code_cache, 'w') { |file| file.write @codes.to_json }
 end
 

@@ -29,20 +29,6 @@ are stored in folders corresponding to each of those entries in their own
    [Google Authenticator][googleauthenticator].
 6. **Be Awesome**: You need to be awesome. That is all.
 
-## Running Locally
-
-There are detailed instructions on installing dependencies and running locally available in the [README][README].
-
-#### Testing with Bundler
-
-There are a number of tests that are run automatically for a GitHub pull request.
-They are listed in `.github/workflows/repository.yml` in the [`tests:` block][tests].
-You can run these manually as well, e.g to test your JSON changes:
-
-```bash
-$ bundle exec ruby ./tests/validate-json.rb
-```
-
 ## Site Criteria
 
 The following section contains rough criteria and explanations regarding
@@ -316,7 +302,7 @@ template below:
     "name" : "category-id",
     "title": "Category Title",
     "icon": "icon-class"
-  },
+  }
 ```
 
 The `icon-class` value needs to be chosen from [Font Awesome][font-awesome].

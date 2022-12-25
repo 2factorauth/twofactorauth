@@ -2,12 +2,11 @@
 # frozen_string_literal: true
 
 require 'json_schemer'
-
+require 'parallel'
 @status = 0
 seen_names = []
 
 schema = JSONSchemer.schema(File.read('tests/schema.json'))
-categories = JSON.parse(File.read('_data/categories.json')).map { |category| category['name'] }
 
 def error(file, msg)
   @status = 1
@@ -15,7 +14,7 @@ def error(file, msg)
 end
 
 # rubocop:disable Metrics/BlockLength
-Dir.glob('entries/*/*.json') do |file|
+Parallel.each(Dir.glob('entries/*/*.json')) do |file|
   begin
     JSON.parse(File.read(file))
   rescue JSON::ParserError => e
@@ -47,13 +46,6 @@ Dir.glob('entries/*/*.json') do |file|
   default_url = "https://#{domain}"
   if !url.nil? && (url.eql?(default_url) || url.eql?("#{default_url}/"))
     error(file, "Defining the url property for #{domain} is not necessary - '#{default_url}' is the default value")
-  end
-
-  keywords = document.values[0]['keywords']
-  keywords.each do |kw|
-    unless categories.include? kw
-      error(file, "Invalid keyword: '#{kw}'. See _data/categories.json for a list of valid keywords")
-    end
   end
 
   file_name = file.split('/')[2]
