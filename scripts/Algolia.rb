@@ -12,11 +12,11 @@ excludes = %w[notes documentation recovery]
 
 client = Algolia::Search::Client.create(ALGOLIA_APP_ID, ALGOLIA_API_KEY)
 index = client.init_index(ALGOLIA_INDEX_NAME)
-diff = `git diff --name-only #{ARGV[0] || ENV['GITHUB_SHA']} entries/`
+diff = `git diff --name-only #{ARGV[0] || 'HEAD^'} entries/`
 updates = []
 diff.split("\n").each do |entry|
   name, data = JSON.parse(File.read(entry)).first
-  puts "Updating #{data['name']}"
+  puts "Updating #{name}"
   data.merge!({ 'name' => name, 'objectID' => data['domain'] })
   # Rename keys
   data['2fa'] = data.delete 'tfa' if data.key? 'tfa'
