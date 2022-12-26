@@ -23,7 +23,7 @@ If you would like to contribute, please read the entire guidelines in
 ## Third party usage
 
 We welcome anyone to use our data however we discourage scraping the data directly from this Git repository as changes we make might break your program. 
-Instead we recommend you use our [API](/api.md).
+Instead we recommend you use our [API](https://2fa.directory/api/).
 
 We always appreciate people letting us know how they use our data so please drop us a few lines about your project if you decide to use our API! 😊
 
