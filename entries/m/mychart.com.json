@@ -1,7 +1,6 @@
 {
   "MyChart": {
     "domain": "mychart.com",
-    "url": "https://www.mychart.com",
     "tfa": [
       "sms",
       "email"
@@ -11,7 +10,10 @@
       "health"
     ],
     "regions": [
-      "us"
+      "us",
+      "ca",
+      "sa",
+      "gb"
     ]
   }
 }
