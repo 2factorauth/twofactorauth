@@ -1,12 +1,14 @@
 {
   "Citibank Australia": {
     "domain": "citibank.com.au",
-    "url": "https://www.citibank.com.au/",
-    "img": "citibank.svg",
-    "contact": {
-      "facebook": "citiaustralia",
-      "twitter": "CitiAustralia"
-    },
+    "tfa": [
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Citi Mobile app"
+    ],
+    "documentation": "https://www1.citibank.com.au/citi-online/one-time-pin",
     "regions": [
       "au"
     ],
