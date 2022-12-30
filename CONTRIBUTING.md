@@ -292,24 +292,6 @@ If a site is available globally apart from a specific region, this can be noted 
 }
 ```
 
-## New Categories
-
-To add a new category, modify the [categories file][categories] and follow the
-template below:
-
-```JSON
-  {
-    "name" : "category-id",
-    "title": "Category Title",
-    "icon": "icon-class"
-  }
-```
-
-The `icon-class` value needs to be chosen from [Font Awesome][font-awesome].
-
-Then you can use the `category-id` as a keyword in the JSON file of your entry.
-
-
 ### Pro Tips
 
 - See Guideline #2 about icons. The SVG file should go in the corresponding
@@ -351,11 +333,8 @@ Many sites are now offering passwordless authentication, which replace the passw
 [authy]: https://authy.com/
 [duo]: https://duo.com/
 [googleauthenticator]: https://github.com/google/google-authenticator
-[README]: https://github.com/2factorauth/twofactorauth#installing-dependencies-hammer_and_wrench
-[tests]: https://github.com/2factorauth/twofactorauth/blob/master/.github/workflows/repository.yml
 [exclude]: /EXCLUSION.md
-[categories]: _data/categories.json
-[font-awesome]: https://fontawesome.com/icons?d=gallery&p=2&m=free
+[categories]: https://github.com/2factorauth/frontend/blob/master/data/categories.json
 [definitions]: #a-note-on-definitions
 [github-tutorial]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
 [do-tutorial]: https://www.digitalocean.com/community/tutorials/how-to-use-git-branches
