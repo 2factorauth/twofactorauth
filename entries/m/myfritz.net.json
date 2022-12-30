@@ -1,12 +1,9 @@
 {
   "MyFRITZ!Net": {
     "domain": "myfritz.net",
-    "url": "https://www.myfritz.net",
-    "additional-domains": [
-      "sso.myfritz.net"
-    ],
     "tfa": [
       "totp",
+      "u2f",
       "custom-hardware"
     ],
     "custom-hardware": [
