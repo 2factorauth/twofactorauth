@@ -2,16 +2,19 @@
   "MyFRITZ!Net": {
     "domain": "myfritz.net",
     "url": "https://www.myfritz.net",
-    "contact": {
-      "facebook": "netflix",
-      "twitter": "Netflixhelps"
-    },
-    "tfa": [
-      "totp"
+    "additional-domains": [
+      "sso.myfritz.net"
     ],
-    "documentation": "https://avm.de/service/myfritz/faqs/sicherheitshinweise-fuer-myfritz/",
+    "tfa": [
+      "totp",
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "Smartphone biometrics (fingerprint, face recognition)"
+    ],
+    "documentation": "https://en.avm.de/myfritz/faqs/security-tips-for-using-myfritz/",
     "keywords": [
-      "other"
+      "remote"
     ]
   }
 }
