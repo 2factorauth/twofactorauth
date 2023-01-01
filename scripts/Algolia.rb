@@ -14,11 +14,11 @@ client = Algolia::Search::Client.create(ALGOLIA_APP_ID, ALGOLIA_API_KEY)
 index = client.init_index(ALGOLIA_INDEX_NAME)
 updates = []
 
-if ARGV[0].eql? '--all'
-  diff = Dir['entries/*/*.json']
-else
-  diff = `git diff --name-only #{ARGV[1] || 'HEAD^'} entries/`.split("\n")
-end
+diff = if ARGV[0].eql? '--all'
+         Dir['entries/*/*.json']
+       else
+         `git diff --name-only #{ARGV[1] || 'HEAD^'} entries/`.split("\n")
+       end
 
 diff.each do |entry|
   if File.exist? entry
