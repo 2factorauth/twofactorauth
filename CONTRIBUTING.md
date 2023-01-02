@@ -24,7 +24,7 @@ are stored in folders corresponding to each of those entries in their own
 3. **HTTPS links**: All sites that support HTTPS should also be linked with an
    HTTPS address.
 4. **Similarweb top 200K**: A new site that is not already listed has to be within the
-   Similarweb top 200,000 ranking. You can check the ranking of a site [here][similarweb].
+   Similarweb top 200,000 global ranking. You can check the ranking of a site [here][similarweb].
 5. **No 2FA providers**: We do not list 2FA providers, such as [Authy][authy], [Duo][duo] or
    [Google Authenticator][googleauthenticator].
 6. **Be Awesome**: You need to be awesome. That is all.
