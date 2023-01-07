@@ -1,14 +1,11 @@
 {
   "WebMoney": {
     "domain": "webmoney.ru",
-    "tfa": [
-      "sms",
-      "custom-software"
-    ],
-	  "custom-software": [
-	    "E-num service"
-	  ],
-    "documentation": "https://wiki.wmtransfer.com/projects/webmoney/wiki/Login_with_additional_confirmation",
+    "contact": {
+      "twitter": "WebMoneySystem",
+      "facebook": "webmoneyofficial",
+      "email": "support@webmoney.com"
+    },
     "keywords": [
       "payments"
     ],
