@@ -23,6 +23,8 @@ jobs:
           key: tmp-files-${{ hashFiles('/tmp/similarweb/*')}}
       - name: Validate JSON structure
         run: bundle exec ruby ./tests/validate-json.rb
+      - name: Validate Categories
+        run: bundle exec ruby ./tests/validate-categories.rb
       - name: Validate Region codes
         run: bundle exec ruby ./tests/region-codes.rb
       - name: Validate Language codes
