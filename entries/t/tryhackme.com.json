@@ -1,10 +1,9 @@
 {
   "TryHackMe": {
     "domain": "tryhackme.com",
-    "contact": {
-     "twitter": "RealTryHackMe",
-     "email": "hello@tryhackme.com"
-    },
+    "tfa": [
+     "totp"
+    ],
     "keywords": [
       "security",
       "education"
