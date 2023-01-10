@@ -1,7 +1,6 @@
 {
     "o2switch": {
-        "domain":"o2switch.fr",
-        "url": "https://clients.o2switch.fr",
+        "domain": "o2switch.fr",
         "tfa": [
             "email"
         ],
@@ -9,6 +8,9 @@
             "hosting",
             "domains"
         ],
-        "notes": "Email 2FA is always active, when logging in from a new device."
+        "notes": "Email 2FA is always active, when logging in from a new device.",
+        "regions": [
+            "fr"
+        ]
     }
 }
