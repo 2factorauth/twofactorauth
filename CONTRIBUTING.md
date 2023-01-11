@@ -90,7 +90,7 @@ the corresponding [subdirectory][entries] as shown in the following example:
 }
 ```
 - The domain should point to the main page of the service, not the login page (usually the root domain, not a subdomain).
-- categories must be selected from the values listed in [`categories.json`][categories].
+- Categories must be selected from the values listed in [`categories.json`][categories].
 - The default value for the icon is `<domain>.svg`, but can be overridden by an `img`
 field.
 - If you would like the site's link on 2fa.directory to be different to `https://<domain>`, you can use a `url` field to specify this.
