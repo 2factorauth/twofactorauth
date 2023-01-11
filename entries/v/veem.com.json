@@ -1,16 +1,23 @@
 {
   "Veem": {
     "domain": "veem.com",
-    "url": "https://www.veem.com/",
     "tfa": [
       "sms",
       "totp"
     ],
-    "documentation": "https://help.veem.com/hc/en-us/articles/360033419474-Two-Factor-Authentication-2FA-",
+    "documentation": "https://help.veem.com/hc/en-us/articles/360033419474",
     "notes": "2FA via sms is available for US only.",
     "keywords": [
       "finance",
       "payments"
-    ]
+    ],
+    "regions": [
+      "-af",
+      "-by",
+      "-ir",
+      "-iq",
+      "-ru",
+      "-kp"
+      ]
   }
 }
