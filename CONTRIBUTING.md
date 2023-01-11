@@ -82,15 +82,15 @@ the corresponding [subdirectory][entries] as shown in the following example:
       "custom-hardware"
     ],
     "documentation": "<link to site TFA documentation>",
-    "keywords": [
-      "keyword1",
-      "keyword2"
+    "categories": [
+      "category1",
+      "category2"
     ]
   }
 }
 ```
 - The domain should point to the main page of the service, not the login page (usually the root domain, not a subdomain).
-- Keywords must be selected from the values listed in [`categories.json`][categories].
+- categories must be selected from the values listed in [`categories.json`][categories].
 - The default value for the icon is `<domain>.svg`, but can be overridden by an `img`
 field.
 - If you would like the site's link on 2fa.directory to be different to `https://<domain>`, you can use a `url` field to specify this.
@@ -116,7 +116,7 @@ The following is an example of a website that _supports_ TFA:
       "u2f"
     ],
     "documentation": "https://www.google.com/intl/en-US/landing/2step/features.html",
-    "keywords": [
+    "categories": [
       "entertainment"
     ]
   }
@@ -146,7 +146,7 @@ The following is an example of a website that _does not_ support TFA:
       "facebook": "netflix",
       "twitter": "Netflixhelps"
     },
-    "keywords": [
+    "categories": [
       "entertainment"
     ]
   }
@@ -167,8 +167,8 @@ only available in specific countries or to specific account types, you can docum
     ],
     "documentation": "<link to site TFA documentation>",
     "notes": "Specific text goes here.",
-    "keywords": [
-      "keyword"
+    "categories": [
+      "category"
     ]
   }
 }
@@ -187,8 +187,8 @@ government site - you can note this with the `regions` field.
       "totp"
     ],
     "documentation": "<link to site TFA documentation>",
-    "keywords": [
-      "keyword"
+    "categories": [
+      "category"
     ],
     "regions": [
       "us",
@@ -212,8 +212,8 @@ If a site is available globally apart from a specific region, this can be noted 
       "totp"
     ],
     "documentation": "<link to site TFA documentation>",
-    "keywords": [
-      "keyword"
+    "categories": [
+      "category"
     ],
     "regions": [
       "-us"
@@ -240,8 +240,8 @@ If a site is available globally apart from a specific region, this can be noted 
       "totp"
     ],
     "documentation": "<link to site TFA documentation>",
-    "keywords": [
-      "keyword"
+    "categories": [
+      "category"
     ]
   }
 }
@@ -260,8 +260,8 @@ If a site is available globally apart from a specific region, this can be noted 
     ],
     "documentation": "<link to site TFA documentation>",
     "recovery": "<link to site TFA recovery documentation>",
-    "keywords": [
-      "keyword"
+    "categories": [
+      "category"
     ]
   }
 }
@@ -285,8 +285,8 @@ If a site is available globally apart from a specific region, this can be noted 
       "Yubico OTP"
     ],
     "documentation": "<link to site TFA documentation>",
-    "keywords": [
-      "keyword"
+    "categories": [
+      "category"
     ]
   }
 }

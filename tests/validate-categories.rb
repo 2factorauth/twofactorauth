@@ -13,7 +13,7 @@ categories = JSON.parse(response).keys
 
 Parallel.each(Dir.glob('entries/*/*.json')) do |file|
   entry = JSON.parse(File.read(file)).values[0]
-  keywords = entry['keywords']
+  keywords = entry['categories']
   keywords.each do |category|
     raise "::error file=#{file}:: Unknown category '#{category}'" unless categories.include? category
   end

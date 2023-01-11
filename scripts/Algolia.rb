@@ -27,7 +27,7 @@ diff.each do |entry|
     data.merge!({ 'name' => name, 'objectID' => data['domain'] })
     # Rename keys
     data['2fa'] = data.delete 'tfa' if data.key? 'tfa'
-    data['category'] = data.delete 'keywords'
+    data['category'] = data.delete 'categories'
     # Remove keys that shouldn't be searchable
     data.reject! { |k, _| excludes.include? k }
     updates.push data
