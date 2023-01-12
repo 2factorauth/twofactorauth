@@ -11,7 +11,7 @@ regions = {}
 Dir.glob('entries/*/*.json') do |file|
   website = JSON.parse(File.read(file)).values[0]
   name = JSON.parse(File.read(file)).keys[0]
-  category = website['keywords'][0]
+  category = website['categories'][0]
 
   entry = {
     'url' => (website['url'].nil? ? "https://#{website['domain']}/" : website['url']),

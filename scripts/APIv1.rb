@@ -8,7 +8,7 @@ Dir.glob('entries/*/*.json') do |file|
   website = JSON.parse(File.read(file)).values[0]
   name = JSON.parse(File.read(file)).keys[0]
 
-  categories[website['keywords'][0]] = {} if categories[website['keywords'][0]].nil?
+  categories[website['categories'][0]] = {} if categories[website['categories'][0]].nil?
   entry = {}
 
   entry['name'] = name
@@ -31,7 +31,7 @@ Dir.glob('entries/*/*.json') do |file|
     end
   end
 
-  categories[website['keywords'][0]][name] = entry
+  categories[website['categories'][0]][name] = entry
 end
 
 categories.each { |k, v| categories[k] = v.sort_by { |entry_name, _| entry_name }.to_h }
