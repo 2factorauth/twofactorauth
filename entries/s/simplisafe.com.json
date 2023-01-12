@@ -2,11 +2,18 @@
   "SimpliSafe": {
     "domain": "simplisafe.com",
     "tfa": [
+      "sms",
+      "call",
+      "u2f",
       "email"
     ],
     "documentation": "https://support.simplisafe.com/hc/en-us/articles/360040500551",
     "keywords": [
       "iot"
+    ],
+    "regions": [
+      "gb",
+      "us"
     ]
   }
 }
