@@ -8,7 +8,7 @@
       "additionalProperties": false,
       "required": [
         "domain",
-        "keywords"
+        "categories"
       ],
       "properties": {
         "domain": {
@@ -65,7 +65,7 @@
             }
           ]
         },
-        "keywords": {
+        "categories": {
           "type": "array",
           "uniqueItems": true,
           "minItems": 1,

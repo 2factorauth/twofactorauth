@@ -1,0 +1,21 @@
+{
+  "DATEV": {
+    "domain": "datev.de",
+    "tfa": [
+      "totp",
+      "sms",
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "National identity card"
+    ],
+    "documentation": "https://apps.datev.de/help-center/documents/1022726",
+    "notes": "2FA only available for DATEV Arbeitnehmer online",
+    "categories": [
+      "finance"
+    ],
+    "regions": [
+      "de"
+    ]
+  }
+}
