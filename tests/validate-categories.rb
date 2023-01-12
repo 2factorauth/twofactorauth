@@ -9,12 +9,12 @@ require 'uri'
 url = URI('https://raw.githubusercontent.com/2factorauth/frontend/master/data/categories.json')
 response = Net::HTTP.get url
 
-categories = JSON.parse(response).keys
+avail_categories = JSON.parse(response).keys
 
 Parallel.each(Dir.glob('entries/*/*.json')) do |file|
   entry = JSON.parse(File.read(file)).values[0]
-  keywords = entry['categories']
-  keywords.each do |category|
-    raise "::error file=#{file}:: Unknown category '#{category}'" unless categories.include? category
+  categories = entry['categories']
+  categories.each do |category|
+    raise "::error file=#{file}:: Unknown category '#{category}'" unless avail_categories.include? category
   end
 end
