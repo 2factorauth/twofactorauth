@@ -17,6 +17,7 @@ all.sort.to_h.each do |k, v|
     regions[region] = {} unless regions.key? region
     regions[region]['count'] = 1 + regions[region]['count'].to_i
   end
+  v['keywords'] = v.delete 'categories'
 end
 
 { 'all' => all }.merge(tfa).each do |k, v|
