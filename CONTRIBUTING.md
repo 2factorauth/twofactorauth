@@ -89,6 +89,7 @@ the corresponding [subdirectory][entries] as shown in the following example:
   }
 }
 ```
+
 - The domain should point to the main page of the service, not the login page (usually the root domain, not a subdomain).
 - Categories must be selected from the values listed in [`categories.json`][categories].
 - The default value for the icon is `<domain>.svg`, but can be overridden by an `img`
@@ -126,11 +127,13 @@ The following is an example of a website that _supports_ TFA:
 #### Adding a site that _does not_ support TFA
 
 If a site does not provide TFA, the `contact` field should be included.
-Inside of this object,
-* The `twitter` field should be included if the site uses Twitter. 
-* Facebook can also be included using the `facebook` field.
-* Email can be included using the `email` field. 
-* The `language` field inside `contact` can be included for websites whose social media pages/communication channels do not use English. The language
+Inside this object,
+
+- The `twitter` field should be included if the site uses Twitter. 
+- Facebook can also be included using the `facebook` field.
+- Email can be included using the `email` field.
+- Contact forms can be included using the `form` field.
+- The `language` field inside `contact` can be included for websites whose social media pages/communication channels do not use English. The language
 codes should be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
 
 The fields `tfa` and `documentation` are not necessary.
@@ -141,7 +144,6 @@ The following is an example of a website that _does not_ support TFA:
 {
   "Netflix": {
     "domain": "netflix.com",
-    "url": "https://www.netflix.com/us/",
     "contact": {
       "facebook": "netflix",
       "twitter": "Netflixhelps"
