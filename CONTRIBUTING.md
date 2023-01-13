@@ -16,7 +16,7 @@ are stored in folders corresponding to each of those entries in their own
    merged. GH Actions will only check your changes after you submit a pull request.
    If you want to test locally, instructions are listed below. Keep reading!
 2. **Use a Nice Icon**: SVG is the preferred format. If possible, please also run the image 
-   through an optimizing utility such as [svgo][svgo] to reduce the file size.
+   through an optimizing utility such as [nano][nano] to reduce the file size.
    If an SVG icon is not available, the icon should be a PNG with a resolution of 32x32, 64x64 or 128x128.
    If possible, please also run the image through an optimizing
    utility such as [TinyPNG][tinypng] before committing it to the repo and keep
@@ -327,7 +327,7 @@ Many sites are now offering passwordless authentication, which replace the passw
 [json]: https://www.json.org/
 [entries]: entries/
 [img]: img/
-[svgo]: https://github.com/svg/svgo
+[nano]: https://vecta.io/nano
 [tinypng]: https://tinypng.com/
 [similarweb]: https://www.similarweb.com/
 [authy]: https://authy.com/
