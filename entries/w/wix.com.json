@@ -3,9 +3,12 @@
     "domain": "wix.com",
     "url": "https://www.wix.com/",
     "tfa": [
+      "totp",
+      "email",
       "sms"
     ],
     "documentation": "https://support.wix.com/en/article/using-2-step-verification-for-your-wix-account",
+    "notes": "SMS is only available with Premium plans; email is restricted to selected providers.",
     "categories": [
       "hosting"
     ]
