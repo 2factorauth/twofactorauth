@@ -34,7 +34,7 @@ end
 
 status = 0
 
-Parallel.each(Dir.glob('entries/*/*.json')) do |file|
+Parallel.each(Dir.glob('entries/*/*.json'), in_threads: 16) do |file|
   website = JSON.parse(File.read(file)).values[0]
   next if website['contact'].nil? || website['contact']['language'].nil?
 

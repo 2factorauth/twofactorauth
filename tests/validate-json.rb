@@ -14,7 +14,7 @@ def error(file, msg)
 end
 
 # rubocop:disable Metrics/BlockLength
-Parallel.each(Dir.glob('entries/*/*.json')) do |file|
+Parallel.each(Dir.glob('entries/*/*.json'), in_threads: 16) do |file|
   begin
     JSON.parse(File.read(file))
   rescue JSON::ParserError => e
