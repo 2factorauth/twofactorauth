@@ -16,7 +16,7 @@ else
   headers = {
     'Accept' => 'application/json',
     'User-Agent' => '2FactorAuth/RegionValidator' \
-    "(HTTPClient/#{Gem.loaded_specs['httpclient'].version} on Ruby/#{RUBY_VERSION}; +https://2fa.directory/bot)",
+    "(Ruby/#{RUBY_VERSION}; +https://2fa.directory/bot)",
     'From' => 'https://2fa.directory/'
   }
   https = Net::HTTP.new(url.host, url.port)
