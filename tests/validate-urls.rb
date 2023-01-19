@@ -1,58 +1,42 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'English'
 require 'json'
-require 'httpclient'
+require 'net/http'
 require 'uri'
-
-# Exit code
-status = 0
+require 'parallel'
 
 # Fetch created/modified files in entries/**
 diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.split("\n")
 
-def redirection
-  lambda { |uri, res|
-    uri = URI.parse(uri)
-    location = res.header['location'][0]
-    "#{location.match?(%r{https?://.*}) ? nil : "#{uri.scheme}://#{uri.host}"}#{location}"
-  }
-end
+@headers = {
+  'User-Agent' => "2factorauth/URLValidator (Ruby/#{RUBY_VERSION}; +https://2fa.directory/bot)",
+  'From' => 'https://2fa.directory/'
+}
 
-def http_client
-  agent_name = '2FactorAuth/URLValidator ' \
-  "(HTTPClient/#{Gem.loaded_specs['httpclient'].version} on Ruby/#{RUBY_VERSION}; +https://2fa.directory/bot)"
-  from = '2fa.directory'
-  client = HTTPClient.new(nil, agent_name, from)
-  client.ssl_config.set_default_paths # ignore built-in CA and use system defaults
-  client.receive_timeout = 8
-  client.redirect_uri_callback = redirection
-  client
-end
+# Check if the supplied URL works
+def check_url(path, url, res = nil)
+  loop do
+    res = Net::HTTP.get_response(URI.parse(url))
+    break unless res.is_a? Net::HTTPRedirection
 
-# Check if the url supplied works
-def check_url(path, url)
-  res = http_client.get(url, follow_redirect: true)
-  return if res.status == 200
-  raise(nil) unless res.status.to_s.match(/50\d|403/)
+    url = res['location']
+  end
 
-  puts "::warning file=#{path}:: Unexpected response from #{url} (#{res.status})"
+  puts "::warning file=#{path}:: Unexpected response from #{url} (#{res.code})" unless res.is_a? Net::HTTPSuccess
 rescue StandardError => e
-  puts "::warning file=#{path}:: Unable to reach #{url} #{res.respond_to?('status') ? res.status : nil}"
-  puts e.full_message unless e.instance_of?(TypeError)
-  1
+  puts "::warning file=#{path}:: Unable to reach #{url}"
+  puts "::debug:: #{e.message}" unless e.instance_of?(TypeError)
 end
 
-diff&.each do |path|
+Parallel.each(diff, progress: 'Validating URLs') do |path|
   entry = JSON.parse(File.read(path)).values[0]
 
   # Process the url,domain & additional-domains
-  status += check_url(path, (entry.key?('url') ? entry['url'] : "https://#{entry['domain']}/")).to_i
-  entry['additional-domains']&.each { |domain| status += check_url(path, "https://#{domain}/").to_i }
+  check_url(path, (entry.key?('url') ? entry['url'] : "https://#{entry['domain']}/"))
+  entry['additional-domains']&.each { |domain| check_url(path, "https://#{domain}/") }
 
   # Process documentation and recovery URLs
-  status += check_url(path, entry['documentation']).to_i if entry.key? 'documentation'
-  status += check_url(path, entry['recovery']).to_i if entry.key? 'recovery'
+  check_url(path, entry['documentation']) if entry.key? 'documentation'
+  check_url(path, entry['recovery']) if entry.key? 'recovery'
 end
-exit(status)
