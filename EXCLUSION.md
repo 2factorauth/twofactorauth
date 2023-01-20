@@ -70,7 +70,7 @@ The group of active maintainers will decide on whether to include or exclude a s
 
 [website]: https://2fa.directory
 [maintainers]: https://2fa.directory/about
-[license]: /LICENSE
+[license]: /LICENSE.md
 [org_link]: https://github.com/2factorauth
 [site_criteria]: CONTRIBUTING.md#site-criteria
 [guidelines]: CONTRIBUTING.md#guidelines
