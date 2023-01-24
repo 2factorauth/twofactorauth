@@ -1,6 +1,9 @@
 {
   "Wealthsimple": {
     "domain": "wealthsimple.com",
+    "additional-domains": [
+      "simpletax.ca"
+    ],
     "tfa": [
       "sms",
       "totp"
