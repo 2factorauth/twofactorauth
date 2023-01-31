@@ -1,13 +1,18 @@
 {
   "Commerzbank": {
     "domain": "commerzbank.de",
-    "url": "https://www.commerzbank.de/",
     "tfa": [
       "sms",
       "custom-software",
       "custom-hardware"
     ],
-    "documentation": "https://www.commerzbank.de/portal/de/privatkunden/konten-karten/wissen/zahlungsverkehr-organisieren/psd2.html",
+    "custom-hardware": [
+      "photoTAN card reader"
+    ],
+    "custom-software": [
+      "Commerzbank photoTAN"
+    ],
+    "documentation": "https://www.commerzbank.de/konten-zahlungsverkehr/service/tan-verfahren/",
     "regions": [
       "de"
     ],

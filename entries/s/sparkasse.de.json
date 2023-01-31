@@ -1,11 +1,16 @@
 {
   "Sparkasse": {
     "domain": "sparkasse.de",
-    "url": "https://www.sparkasse.de/",
     "tfa": [
       "sms",
       "custom-software",
       "custom-hardware"
+    ],
+    "custom-hardware": [
+      "chipTAN card reader"
+    ],
+    "custom-software": [
+      "S-pushTAN"
     ],
     "documentation": "https://www.sparkasse.de/service/sicherheit-im-internet/tan-verfahren.html",
     "regions": [
