@@ -1,0 +1,20 @@
+{
+  "General Motors": {
+    "domain": "gm.com",
+    "additional-domains": [
+      "chevrolet.com",
+      "buick.com",
+      "gmc.com",
+      "cadillac.com"
+    ],
+    "tfa": [
+      "sms",
+      "email",
+      "totp"
+    ],
+    "notes": "Automatically turned on for email. You are only allowed to have one method turned on at a time.",
+    "categories": [
+      "transport"
+    ]
+  }
+}
