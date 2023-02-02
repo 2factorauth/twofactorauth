@@ -1,10 +1,17 @@
 {
   "Deutsche Kreditbank (DKB)": {
     "domain": "dkb.de",
-    "url": "https://www.dkb.de/",
     "tfa": [
       "custom-software",
       "custom-hardware"
+    ],
+    "custom-hardware": [
+      "chipTAN card reader"
+    ],
+    "custom-software": [
+      "DKB app",
+      "DKB-Banking",
+      "DKB-TAN2go"
     ],
     "documentation": "https://www.dkb.de/info/neue-anmeldung",
     "categories": [

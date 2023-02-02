@@ -1,11 +1,13 @@
 {
   "Santander DE": {
     "domain": "santander.de",
-    "url": "https://www.santander.de/",
     "img": "santander.svg",
     "tfa": [
       "sms",
       "custom-software"
+    ],
+    "custom-software": [
+      "SantanderSign"
     ],
     "documentation": "https://www.santander.de/privatkunden/service-kontakt/information/faq/psd2/",
     "categories": [
