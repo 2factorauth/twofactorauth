@@ -15,19 +15,22 @@ diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.spl
 }
 
 # Check if the supplied URL works
+# rubocop:disable Metrics/AbcSize
 def check_url(path, url, res = nil)
   loop do
-    res = Net::HTTP.get_response(URI.parse(url))
+    url = URI.parse(url)
+    res = Net::HTTP.get_response(url)
     break unless res.is_a? Net::HTTPRedirection
 
-    url = res['location']
+    url = URI(res['location']).is_a?(URI::HTTP) ? res['location'] : "#{url.scheme}://#{url.host}#{res['location']}"
   end
 
   puts "::warning file=#{path}:: Unexpected response from #{url} (#{res.code})" unless res.is_a? Net::HTTPSuccess
 rescue StandardError => e
-  puts "::warning file=#{path}:: Unable to reach #{url}"
+  puts "::error file=#{path}:: Unable to reach #{url}"
   puts "::debug:: #{e.message}" unless e.instance_of?(TypeError)
 end
+# rubocop:enable Metrics/AbcSize
 
 Parallel.each(diff, progress: 'Validating URLs') do |path|
   entry = JSON.parse(File.read(path)).values[0]
