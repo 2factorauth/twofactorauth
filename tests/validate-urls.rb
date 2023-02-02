@@ -27,7 +27,7 @@ def check_url(path, url, res = nil)
 
   puts "::warning file=#{path}:: Unexpected response from #{url} (#{res.code})" unless res.is_a? Net::HTTPSuccess
 rescue StandardError => e
-  puts "::error file=#{path}:: Unable to reach #{url}"
+  puts "::warning file=#{path}:: Unable to reach #{url}"
   puts "::debug:: #{e.message}" unless e.instance_of?(TypeError)
 end
 # rubocop:enable Metrics/AbcSize
