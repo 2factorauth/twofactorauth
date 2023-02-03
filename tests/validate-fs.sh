@@ -25,7 +25,7 @@ function checkPerm()
   for p; do
     pattern+="${pattern+ -a }! -perm $p"
   done
-  if find $dir -type f $pattern | grep -q .; then
+  if find "$dir" -type f $pattern -print -quit | grep -q .; then
     echo "Directory '$dir' may only have files with the following permissions: $*"
     status=1
   fi
