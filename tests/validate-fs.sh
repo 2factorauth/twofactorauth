@@ -36,10 +36,10 @@ checkExt img svg png
 checkExt entries json
 checkExt scripts rb
 checkExt tests rb sh json
-checkPerm img 664
-checkPerm tests 775 664
-checkPerm entries 664
-checkPerm scripts 775
-checkPerm .circleci 664
-checkPerm .github 664
+checkPerm img 664 644
+checkPerm tests 775 755 664 644
+checkPerm entries 664 644
+checkPerm scripts 775 755
+checkPerm .circleci 664 644
+checkPerm .github 664 644
 exit $status
