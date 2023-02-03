@@ -21,11 +21,14 @@ function checkPerm()
 {
   dir="$1"
   shift
-  violation=$(find $dir -type f -exec stat -c '%a' '{}' +| grep -vq "$(echo $* | sed 's/ /|/g')")
-  for file in $violation; do
+  unset pattern
+  for p; do
+    pattern+="${pattern+ -a }! -perm $p"
+  done
+  if find $dir -type f $pattern | grep -q .; then
     echo "Directory '$dir' may only have files with the following permissions: $*"
     status=1
-  done
+  fi
 }
 
 [ -e api ] && checkExt api json sig
