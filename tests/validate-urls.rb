@@ -16,8 +16,13 @@ diff = `git diff --name-only --diff-filter=AM origin/master...HEAD entries/`.spl
 
 # Check if the supplied URL works
 # rubocop:disable Metrics/AbcSize
+# rubocop:disable Metrics/MethodLength
 def check_url(path, url, res = nil)
+  depth = 0
   loop do
+    depth += 1
+    raise('Too many redirections') if depth > 5
+
     url = URI.parse(url)
     res = Net::HTTP.get_response(url)
     break unless res.is_a? Net::HTTPRedirection
@@ -31,6 +36,7 @@ rescue StandardError => e
   puts "::debug:: #{e.message}" unless e.instance_of?(TypeError)
 end
 # rubocop:enable Metrics/AbcSize
+# rubocop:enable Metrics/MethodLength
 
 Parallel.each(diff, progress: 'Validating URLs') do |path|
   entry = JSON.parse(File.read(path)).values[0]
