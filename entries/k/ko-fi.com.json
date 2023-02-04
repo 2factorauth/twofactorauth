@@ -1,11 +1,13 @@
 {
   "Ko-fi": {
     "domain": "ko-fi.com",
-    "contact": {
-      "facebook": "kofibutton",
-      "twitter": "kofi_button",
-      "email": "hello@ko-fi.com"
-    },
+    "tfa": [
+        "sms",
+        "email",
+        "totp"
+    ],
+    "documentation": "https://help.ko-fi.com/hc/en-us/articles/6355489342737",
+    "notes": "TOTP is only available with SMS as a backup",
     "categories": [
       "crowdfunding"
     ]
