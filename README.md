@@ -20,6 +20,8 @@ offer for their customers. This project also serves as an indicator of general s
 If you would like to contribute, please read the entire guidelines in
 [CONTRIBUTING.md][contrib].
 
+Please note that this repository only contains the data files for the list. Everything concerning the [2fa.directory][site_url] website is located in the [frontend] repository.
+
 ## Third party usage
 
 We welcome anyone to use our data however we discourage scraping the data directly from this Git repository as changes we make might break your program. 
@@ -41,3 +43,4 @@ This code is distributed under the MIT license. For more info, read the
 [jekyll]: https://jekyllrb.com/
 [pages-gem]: https://github.com/github/pages-gem
 [docker]: https://www.docker.com/
+[frontend]: https://github.com/2factorauth/frontend
