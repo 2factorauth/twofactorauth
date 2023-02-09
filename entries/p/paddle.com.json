@@ -1,0 +1,13 @@
+{
+    "Paddle": {
+        "domain": "paddle.com",
+        "url": "https://login.paddle.com/login",
+        "tfa": [
+            "totp"
+        ],
+		"documentation": "https://www.paddle.com/help/start/set-up-paddle/how-can-i-enable-two-factor-authentication-on-my-account",
+        "categories": [
+            "payments"
+        ]
+    }
+}
