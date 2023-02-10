@@ -1,6 +1,11 @@
 {
   "Bitrix24": {
     "domain": "bitrix24.com",
+    "additional-domains": [
+      "bitrix24.ru",
+      "bitrix24.eu",
+      "bitrix24.net"
+    ],
     "tfa": [
       "totp"
     ],
