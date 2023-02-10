@@ -15,7 +15,7 @@ are stored in folders corresponding to each of those entries in their own
    setup with GitHub Actions. If your pull request doesn't pass, it won't be
    merged. GH Actions will only check your changes after you submit a pull request.
    If you want to test locally, instructions are listed below. Keep reading!
-2. **Use a Nice Icon**: SVG is the preferred format. If possible, please also run the image 
+2. **Use a Nice Icon**: SVG is the preferred format. If possible, please also run the image
    through an optimizing utility such as [svgo][svgo] (command line) or [SVGOMG][SVGOMG] (web) to reduce the file size.
    If an SVG icon is not available, the icon should be a PNG with a resolution of 32x32, 64x64 or 128x128.
    If possible, please also run the image through an optimizing
@@ -50,8 +50,10 @@ criteria, simply open an issue and we'll take a look.
 
 ### Excluded Sites
 
-A list for excluded sites and categories has also been created with various categories and sites that we have opted not to list on 2fa.directory.
-You should check the list in the [EXCLUSION.md file][exclude] to make sure that your site is eligible before submitting a pull request.
+A list for excluded sites and categories has also been created with various categories and sites that we have opted not
+to list on 2fa.directory.
+You should check the list in the [EXCLUSION.md file][exclude] to make sure that your site is eligible before submitting
+a pull request.
 
 ## New Sites
 
@@ -90,11 +92,13 @@ the corresponding [subdirectory][entries] as shown in the following example:
 }
 ```
 
-- The domain should point to the main page of the service, not the login page (usually the root domain, not a subdomain).
+- The domain should point to the main page of the service, not the login page (usually the root domain, not a
+  subdomain).
 - Categories must be selected from the values listed in [`categories.json`][categories].
 - The default value for the icon is `<domain>.svg`, but can be overridden by an `img`
-field.
-- If you would like the site's link on 2fa.directory to be different to `https://<domain>`, you can use a `url` field to specify this.
+  field.
+- If you would like the site's link on 2fa.directory to be different to `https://<domain>`, you can use a `url` field to
+  specify this.
 
 #### Adding a site that _supports_ TFA
 
@@ -129,12 +133,13 @@ The following is an example of a website that _supports_ TFA:
 If a site does not provide TFA, the `contact` field should be included.
 Inside this object,
 
-- The `twitter` field should be included if the site uses Twitter. 
+- The `twitter` field should be included if the site uses Twitter.
 - Facebook can also be included using the `facebook` field.
 - Email can be included using the `email` field.
 - Contact forms can be included using the `form` field.
-- The `language` field inside `contact` can be included for websites whose social media pages/communication channels do not use English. The language
-codes should be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
+- The `language` field inside `contact` can be included for websites whose social media pages/communication channels do
+  not use English. The language
+  codes should be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
 
 The fields `tfa` and `documentation` are not necessary.
 
@@ -178,7 +183,8 @@ only available in specific countries or to specific account types, you can docum
 
 ### Adding a site that is only available or is prevalent in specific regions
 
-If a site (with or without 2FA) is only available in certain countries or most users are located in certain countries - for example a
+If a site (with or without 2FA) is only available in certain countries or most users are located in certain countries -
+for example a
 government site - you can note this with the `regions` field.
 
 ```JSON
@@ -204,7 +210,10 @@ The country codes should be lowercase [ISO 3166-1][iso-country-wikipedia] codes.
 
 #### Excluded Regions
 
-If a site is available globally apart from a specific region, this can be noted using the `regions` array. Excluded regions should be prefixed with a `-` symbol to exclude the site from that region. Region codes and excluded region codes should **not** be used together, as adding a region code automatically excludes the site from other regions. The example below shows a site that is available in all regions apart from `us`.
+If a site is available globally apart from a specific region, this can be noted using the `regions` array. Excluded
+regions should be prefixed with a `-` symbol to exclude the site from that region. Region codes and excluded region
+codes should **not** be used together, as adding a region code automatically excludes the site from other regions. The
+example below shows a site that is available in all regions apart from `us`.
 
 ```JSON
 {
@@ -268,6 +277,7 @@ If a site is available globally apart from a specific region, this can be noted 
   }
 }
 ```
+
 - `custom-software`/`custom-hardware`
   If a site uses a proprietary software or hardware method, you can add specific details of what
   is being used. Examples would be Authy or non-U2F security keys.
@@ -304,6 +314,55 @@ If a site is available globally apart from a specific region, this can be noted 
 
 - If a site supports TFA, their contact information is not needed and must be left out.
 
+## Categories
+
+Entries on 2fa.directory have to be put into categories. An entry can have one or many categories.
+Below is a table of each available category, the name of the category, which title it has on 2fa.directory along with a
+description.
+
+| Name             |           Title           | Description                                                                      |
+|------------------|:-------------------------:|----------------------------------------------------------------------------------|
+| backup           |      Backup and Sync      | Online backup and cross-device file synchronization                              |
+| banking          |          Banking          | Online banking platforms                                                         |
+| betting          |          Betting          | Betting and Gambling                                                             |
+| cloud            |      Cloud Computing      | "Serverless" cloud computing                                                     |
+| communication    |       Communication       | Online communication platforms excluding email and social media                  |
+| creativity       |        Creativity         | Art and design software                                                          |
+| crowdfunding     |       Crowdfunding        |                                                                                  |
+| cryptocurrencies |     Cryptocurrencies      | Any site which main purpose is handling cryptocurrencies                         |
+| developer        |         Developer         | Development software                                                             |
+| domains          |          Domains          | DNS Registrars                                                                   |
+| education        |         Education         | Non-university education platforms                                               |
+| email            |           Email           | Email providers                                                                  |
+| entertainment    |       Entertainment       | Audio/Video entertainment excluding games                                        |
+| finance          |          Finance          | Financial, insurance and pension services                                        |
+| food             |           Food            | Food and beverage services                                                       |
+| gaming           |          Gaming           | Games and game platforms. Sites for buying games should be listed in Retail      |
+| government       |        Government         | Government portals. Excluding education                                          |
+| health           |          Health           | Health and fittness platforms                                                    |
+| hosting          |        Hosting/VPS        | Online website hosting, VPS and dedicated server rentals                         |
+| hotels           | Hotels and Accommodations | Hotels and short term accommodation providers                                    |
+| identity         |    Identity Management    | Authentication providers, Single Sign On platforms                               |
+| investing        |         Investing         | Investment platforms                                                             |
+| iot              |            IoT            | Internet of Things and device management platforms                               |
+| legal            |           Legal           | Legal aid services                                                               |
+| marketing        |   Marketing & Analytics   | Marketing campaign providers and analytics services                              |
+| payments         |         Payments          | Payment providers                                                                |
+| post             |     Post and Shipping     | Postal and logistics providers                                                   |
+| remote           |       Remote Access       | Remote device access platforms                                                   |
+| retail           |          Retail           | Online retail platforms                                                          |
+| security         |         Security          | Online security and anti-malware services. Excluding VPN and identity management |
+| social           |          Social           | Social networks                                                                  |
+| task             |      Task Management      | Task Management and ToDo-planning services                                       |
+| transport        |         Transport         | Transportation services including public transport and airlines                  |
+| universities     |       Universities        | University online platforms                                                      |
+| utilities        |         Utilities         | Household utilities including electricity,gas,water,phone and internet providers |
+| vpn              |       VPN Providers       |                                                                                  |
+| other            |           Other           | Sites that don't fit in any other category                                       |
+
+When adding a category to an entry remember to use the category name and not the title.
+If you're unsure which category is correct for an entry, ask for assistance by creating a [new issue][issue].
+
 ## A Note on Definitions
 
 ### Authorization
@@ -324,7 +383,10 @@ For context, check out the discussion in issue [#242][242].
 
 ### Passwordless Authentication
 
-Many sites are now offering passwordless authentication, which replace the password (something you know) with a different factor, such as something you have or are. Examples of this would be sites which allow users to use a U2F key, or a magic link to login, but do not have a second factor available. Since there is still only one factor being used (although it may not be a password), it does not constitute two factor authentication.
+Many sites are now offering passwordless authentication, which replace the password (something you know) with a
+different factor, such as something you have or are. Examples of this would be sites which allow users to use a U2F key,
+or a magic link to login, but do not have a second factor available. Since there is still only one factor being used (
+although it may not be a password), it does not constitute two factor authentication.
 
 [json]: https://www.json.org/
 [entries]: entries/
@@ -337,7 +399,8 @@ Many sites are now offering passwordless authentication, which replace the passw
 [duo]: https://duo.com/
 [googleauthenticator]: https://github.com/google/google-authenticator
 [exclude]: /EXCLUSION.md
-[categories]: https://github.com/2factorauth/frontend/blob/master/data/categories.json
+[categories]: #categories
+[issue]: https://github.com/2factorauth/twofactorauth/issues/new/choose
 [definitions]: #a-note-on-definitions
 [github-tutorial]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
 [do-tutorial]: https://www.digitalocean.com/community/tutorials/how-to-use-git-branches
