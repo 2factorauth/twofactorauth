@@ -320,45 +320,45 @@ Entries on 2fa.directory have to be put into categories. An entry can have one o
 Below is a table of each available category, the name of the category, which title it has on 2fa.directory along with a
 description.
 
-| Name             |           Title           | Description                                                                      |
-|------------------|:-------------------------:|----------------------------------------------------------------------------------|
-| backup           |      Backup and Sync      | Online backup and cross-device file synchronization                              |
-| banking          |          Banking          | Online banking platforms                                                         |
-| betting          |          Betting          | Betting and Gambling                                                             |
-| cloud            |      Cloud Computing      | "Serverless" cloud computing                                                     |
-| communication    |       Communication       | Online communication platforms excluding email and social media                  |
-| creativity       |        Creativity         | Art and design software                                                          |
-| crowdfunding     |       Crowdfunding        |                                                                                  |
-| cryptocurrencies |     Cryptocurrencies      | Any site which main purpose is handling cryptocurrencies                         |
-| developer        |         Developer         | Development software                                                             |
-| domains          |          Domains          | DNS Registrars                                                                   |
-| education        |         Education         | Non-university education platforms                                               |
-| email            |           Email           | Email providers                                                                  |
-| entertainment    |       Entertainment       | Audio/Video entertainment excluding games                                        |
-| finance          |          Finance          | Financial, insurance and pension services                                        |
-| food             |           Food            | Food and beverage services                                                       |
-| gaming           |          Gaming           | Games and game platforms. Sites for buying games should be listed in Retail      |
-| government       |        Government         | Government portals. Excluding education                                          |
-| health           |          Health           | Health and fitness platforms                                                     |
-| hosting          |        Hosting/VPS        | Online website hosting, VPS and dedicated server rentals                         |
-| hotels           | Hotels and Accommodations | Hotels and short term accommodation providers                                    |
-| identity         |    Identity Management    | Authentication providers, Single Sign On platforms                               |
-| investing        |         Investing         | Investment platforms                                                             |
-| iot              |            IoT            | Internet of Things and device management platforms                               |
-| legal            |           Legal           | Legal aid services                                                               |
-| marketing        |   Marketing & Analytics   | Marketing campaign providers and analytics services                              |
-| payments         |         Payments          | Payment providers                                                                |
-| post             |     Post and Shipping     | Postal and logistics providers                                                   |
-| remote           |       Remote Access       | Remote device access platforms                                                   |
-| retail           |          Retail           | Online retail platforms                                                          |
-| security         |         Security          | Online security and anti-malware services. Excluding VPN and identity management |
-| social           |          Social           | Social networks                                                                  |
-| task             |      Task Management      | Task management and to-do services                                       |
-| transport        |         Transport         | Transportation services including public transport and airlines                  |
-| universities     |       Universities        | University online platforms                                                      |
+| Name             |           Title           | Description                                                                         |
+|------------------|:-------------------------:|-------------------------------------------------------------------------------------|
+| backup           |      Backup and Sync      | Online backup and cross-device file synchronization                                 |
+| banking          |          Banking          | Online banking platforms                                                            |
+| betting          |          Betting          | Betting and Gambling                                                                |
+| cloud            |      Cloud Computing      | "Serverless" cloud computing                                                        |
+| communication    |       Communication       | Online communication platforms excluding email and social media                     |
+| creativity       |        Creativity         | Art and design software                                                             |
+| crowdfunding     |       Crowdfunding        |                                                                                     |
+| cryptocurrencies |     Cryptocurrencies      | Any site which main purpose is handling cryptocurrencies                            |
+| developer        |         Developer         | Development software                                                                |
+| domains          |          Domains          | DNS Registrars                                                                      |
+| education        |         Education         | Non-university education platforms                                                  |
+| email            |           Email           | Email providers                                                                     |
+| entertainment    |       Entertainment       | Audio/Video entertainment excluding games                                           |
+| finance          |          Finance          | Financial, insurance and pension services                                           |
+| food             |           Food            | Food and beverage services                                                          |
+| gaming           |          Gaming           | Games and game platforms. Sites for buying games should be listed in Retail         |
+| government       |        Government         | Government portals. Excluding education                                             |
+| health           |          Health           | Health and fitness platforms                                                        |
+| hosting          |        Hosting/VPS        | Online website hosting, VPS and dedicated server rentals                            |
+| hotels           | Hotels and Accommodations | Hotels and short term accommodation providers                                       |
+| identity         |    Identity Management    | Authentication providers, Single Sign On platforms                                  |
+| investing        |         Investing         | Investment platforms                                                                |
+| iot              |            IoT            | Internet of Things and device management platforms                                  |
+| legal            |           Legal           | Legal aid services                                                                  |
+| marketing        |   Marketing & Analytics   | Marketing campaign providers and analytics services                                 |
+| payments         |         Payments          | Payment providers                                                                   |
+| post             |     Post and Shipping     | Postal and logistics providers                                                      |
+| remote           |       Remote Access       | Remote device access platforms                                                      |
+| retail           |          Retail           | Online retail platforms                                                             |
+| security         |         Security          | Online security and anti-malware services. Excluding VPN and identity management    |
+| social           |          Social           | Social networks                                                                     |
+| task             |      Task Management      | Task management and to-do services                                                  |
+| transport        |         Transport         | Transportation services including public transport and airlines                     |
+| universities     |       Universities        | University online platforms                                                         |
 | utilities        |         Utilities         | Household utilities including electricity, gas, water, phone and internet providers |
-| vpn              |       VPN Providers       |                                                                                  |
-| other            |           Other           | Sites that don't fit in any other category                                       |
+| vpn              |       VPN Providers       |                                                                                     |
+| other            |           Other           | Sites that don't fit in any other category                                          |
 
 When adding a category to an entry remember to use the category name and not the title.
 If you're unsure which category is correct for an entry, ask for assistance by creating a [new issue][issue].
