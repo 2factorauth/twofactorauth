@@ -1,11 +1,12 @@
 {
   "Acorns": {
     "domain": "acorns.com",
-    "url": "https://www.acorns.com/",
     "tfa": [
-      "sms"
+      "sms",
+      "email"
     ],
     "documentation": "https://www.acorns.com/support/how-do-i-turn-on-two-factor-authentication-on-my-account/",
+    "notes": "You will need to verify email or phone in order to activate 2FA.",
     "categories": [
       "investing"
     ],

@@ -4,8 +4,15 @@
     "tfa": [
       "sms",
       "call",
+      "u2f",
       "custom-software",
       "custom-hardware"
+    ],
+    "custom-software": [
+      "Duo"
+    ],
+    "custom-hardware": [
+      "Duo D100 Token"
     ],
     "documentation": "https://2fa.app.clemson.edu/",
     "categories": [

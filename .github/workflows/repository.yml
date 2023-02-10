@@ -29,8 +29,8 @@ jobs:
         run: bundle exec ruby ./tests/region-codes.rb
       - name: Validate Language codes
         run: bundle exec ruby ./tests/language-codes.rb
-      - name: Validate file extensions
-        run: tests/file-extensions.sh
+      - name: Validate file extensions and permissions
+        run: tests/validate-fs.sh
       - name: Validate Images
         run: bundle exec ruby ./tests/validate-images.rb
       - name: Validate URL/Domain reachability
