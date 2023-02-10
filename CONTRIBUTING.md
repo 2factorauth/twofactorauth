@@ -356,7 +356,7 @@ description.
 | task             |      Task Management      | Task management and to-do services                                       |
 | transport        |         Transport         | Transportation services including public transport and airlines                  |
 | universities     |       Universities        | University online platforms                                                      |
-| utilities        |         Utilities         | Household utilities including electricity,gas,water,phone and internet providers |
+| utilities        |         Utilities         | Household utilities including electricity, gas, water, phone and internet providers |
 | vpn              |       VPN Providers       |                                                                                  |
 | other            |           Other           | Sites that don't fit in any other category                                       |
 
