@@ -339,7 +339,7 @@ description.
 | food             |           Food            | Food and beverage services                                                       |
 | gaming           |          Gaming           | Games and game platforms. Sites for buying games should be listed in Retail      |
 | government       |        Government         | Government portals. Excluding education                                          |
-| health           |          Health           | Health and fittness platforms                                                    |
+| health           |          Health           | Health and fitness platforms                                                     |
 | hosting          |        Hosting/VPS        | Online website hosting, VPS and dedicated server rentals                         |
 | hotels           | Hotels and Accommodations | Hotels and short term accommodation providers                                    |
 | identity         |    Identity Management    | Authentication providers, Single Sign On platforms                               |
@@ -353,7 +353,7 @@ description.
 | retail           |          Retail           | Online retail platforms                                                          |
 | security         |         Security          | Online security and anti-malware services. Excluding VPN and identity management |
 | social           |          Social           | Social networks                                                                  |
-| task             |      Task Management      | Task Management and ToDo-planning services                                       |
+| task             |      Task Management      | Task management and to-do services                                       |
 | transport        |         Transport         | Transportation services including public transport and airlines                  |
 | universities     |       Universities        | University online platforms                                                      |
 | utilities        |         Utilities         | Household utilities including electricity,gas,water,phone and internet providers |
