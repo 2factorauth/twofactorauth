@@ -95,3 +95,5 @@ jobs:
           path: public/
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
+      - name: Send webhook to Cloudflare
+        run: curl -X POST -IL "${{ secrets.webhook }}" -o /dev/null -w '%{http_code}\n' -s
