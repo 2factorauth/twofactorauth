@@ -1,6 +1,11 @@
 {
-  "Office 365": {
-    "domain": "office.microsoft.com",
+  "Microsoft 365": {
+    "domain": "office.",
+    "additional-domains": [
+      "office.microsoft.com",
+      "microsoft365.com",
+      "office365.com"
+    ]
     "tfa": [
       "sms",
       "call",
