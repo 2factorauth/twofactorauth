@@ -3,8 +3,10 @@
 source 'https://rubygems.org'
 
 group :tests, optional: true do
+  gem 'activesupport'
   gem 'addressable'
   gem 'json_schemer'
+  gem 'nokogiri'
   gem 'rubocop'
   gem 'twitter'
 end

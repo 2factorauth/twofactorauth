@@ -33,6 +33,8 @@ jobs:
         run: tests/validate-fs.sh
       - name: Validate Images
         run: bundle exec ruby ./tests/validate-images.rb
+      - name: Validate SVG
+        run: bundle exec ruby ./tests/svg-lint.rb
       - name: Validate URL/Domain reachability
         run: bundle exec ruby ./tests/validate-urls.rb
         continue-on-error: true
