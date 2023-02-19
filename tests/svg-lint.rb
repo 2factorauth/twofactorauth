@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require 'json'
+require 'active_support'
 require 'active_support/core_ext/hash'
 require 'nokogiri'
 
@@ -19,7 +20,7 @@ def test(svg, css)
 end
 
 @status = 0
-diff = `git diff --name-only --diff-filter=Ard -name '*.svg' origin/master...HEAD img/`
+diff = `git diff --name-only --diff-filter=Ard origin/master...HEAD -- 'img/***.svg'`
 diff.split("\n").each do |file|
   read = File.read(file)
 
