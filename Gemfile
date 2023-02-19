@@ -3,12 +3,12 @@
 source 'https://rubygems.org'
 
 group :tests, optional: true do
+  gem 'activesupport'
   gem 'addressable'
   gem 'json_schemer'
+  gem 'nokogiri'
   gem 'rubocop'
   gem 'twitter'
-  gem 'activesupport'
-  gem 'nokogiri'
 end
 
 gem 'algolia', '~> 2.3'
