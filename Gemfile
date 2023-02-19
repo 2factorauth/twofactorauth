@@ -7,6 +7,8 @@ group :tests, optional: true do
   gem 'json_schemer'
   gem 'rubocop'
   gem 'twitter'
+  gem 'activesupport'
+  gem 'nokogiri'
 end
 
 gem 'algolia', '~> 2.3'
