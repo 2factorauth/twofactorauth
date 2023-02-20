@@ -6,7 +6,14 @@
       "sms",
       "call",
       "custom-software",
+      "custom-hardware",
       "u2f"
+    ],
+    "custom-software": [
+      "Duo"
+    ],
+    "custom-hardware": [
+      "Feitian OTP c100 Token"
     ],
     "documentation": "https://www.safecomputing.umich.edu/two-factor-authentication",
     "categories": [
