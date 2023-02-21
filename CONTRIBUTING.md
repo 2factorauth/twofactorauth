@@ -208,6 +208,9 @@ government site - you can note this with the `regions` field.
 
 The country codes should be lowercase [ISO 3166-1][iso-country-wikipedia] codes.
 
+If you want to distinguish the entry from others of the same company or service in order to provide a unique name,
+use `"Site Name [CC]"` where `CC` is the country code.
+
 #### Excluded Regions
 
 If a site is available globally apart from a specific region, this can be noted using the `regions` array. Excluded
