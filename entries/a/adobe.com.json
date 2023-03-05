@@ -4,11 +4,12 @@
     "tfa": [
       "sms",
       "email",
-      "custom-software"
+      "custom-software",
+      "totp"
     ],
-	  "custom-software": [
-	    "Adobe Account Access"
-	  ],
+    "custom-software": [
+      "Adobe Account Access"
+    ],
     "documentation": "https://helpx.adobe.com/manage-account/using/secure-your-adobe-account.html",
     "recovery": "https://helpx.adobe.com/x-productkb/global/2-step-verification-account-security.html",
     "categories": [
