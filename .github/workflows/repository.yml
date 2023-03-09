@@ -4,7 +4,7 @@ jobs:
 
   tests:
     name: Tests
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest-8-cores
     steps:
       - uses: actions/checkout@v3
         with:
@@ -56,7 +56,7 @@ jobs:
     permissions:
       pages: write
       id-token: write
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest-8-cores
     steps:
       - uses: actions/checkout@v3
         with:
