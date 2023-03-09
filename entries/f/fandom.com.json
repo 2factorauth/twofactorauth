@@ -1,11 +1,10 @@
 {
-  "FANDOM": {
+  "Fandom": {
     "domain": "fandom.com",
-    "url": "https://www.fandom.com/",
-    "contact": {
-      "facebook": "getFANDOM",
-      "twitter": "getFANDOM"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://community.fandom.com/wiki/Help:2FA",
     "categories": [
       "other"
     ]
