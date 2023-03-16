@@ -1,0 +1,16 @@
+{
+  "cron-job.org": {
+    "domain": "cron-job.org",
+    "img": "cron-job.org.png",
+    "tfa": [
+      "totp",
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "categories": [
+      "developer"
+    ]
+  }
+}
