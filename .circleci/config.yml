@@ -9,9 +9,11 @@ jobs:
 
       - restore_cache:
           keys:
-            - bundler-cache
-            - awis-cache
-            - similarweb-cache
+            - bundler-cache-
+
+      - restore_cache:
+          keys:
+            - similarweb-cache-
 
       - run:
           name: Bundler
@@ -33,12 +35,12 @@ jobs:
           command: bundle exec ruby ./tests/similarweb.rb
 
       - save_cache:
-          key: similarweb-cache
+          key: similarweb-cache-{{ epoch }}
           paths:
             - "/tmp/similarweb/*"
 
       - save_cache:
-          key: bundler-cache
+          key: bundler-cache-{{ epoch }}
           paths:
             - "/tmp/bundler/*"
 
