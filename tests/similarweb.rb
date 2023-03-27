@@ -49,7 +49,7 @@ diff = `git diff origin/master...HEAD entries/ | sed -n 's/^+.*"domain"[^"]*"\\(
 # Strip and loop through diff
 diff.split("\n").each.with_index do |site, i|
   sleep 2 if i.positive?
-  domain = Addressable::URI.parse("https://#{site}").domain
+  domain = Addressable::URI.parse("https://#{site}").host
   rank = Cache.fetch(domain) || Similarweb.fetch(domain)
   failure = rank.to_i > 200_000
   puts "\e[#{failure ? '31' : '32'}m#{domain} - #{rank}\e[39m"
