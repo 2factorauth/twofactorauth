@@ -23,7 +23,7 @@ jobs:
       - run:
           name: Bundler
           command: |
-            bundle install && bundle cache
+            bundle cache
 
       - run:
           name: Check Twitter handles
