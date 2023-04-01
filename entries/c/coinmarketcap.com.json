@@ -1,10 +1,10 @@
 {
   "CoinMarketCap": {
     "domain": "coinmarketcap.com",
-    "contact": {
-      "facebook": "CoinMarketCap",
-      "twitter": "CoinMarketCap"
-    },
+    "tfa": [
+      "totp",
+      "email"
+    ],
     "categories": [
       "cryptocurrencies"
     ]
