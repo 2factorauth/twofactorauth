@@ -137,12 +137,12 @@ Inside this object,
 - Facebook can also be included using the `facebook` field.
 - Email can be included using the `email` field.
 - Contact forms can be included using the `form` field.
-- Only email or a contact form can be added, not both
+- Only email or a contact form can be added, not both.
 - The `language` field inside `contact` can be included for websites whose social media pages/communication channels do
   not use English. The language
   codes should be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
 
-The fields `tfa` and `documentation` are not necessary.
+Do not add the `tfa` and `documentation` fields.
 
 The following is an example of a website that _does not_ support TFA:
 
