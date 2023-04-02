@@ -2,8 +2,11 @@
   "MessageBird": {
     "domain": "messagebird.com",
     "tfa": [
-      "sms"
+      "sms",
+      "email"
     ],
+    "documentation": "https://support.messagebird.com/hc/en-us/articles/12896784423057",
+    "notes": "Only one 2FA method can be active at any given time",
     "categories": [
       "communication"
     ]
