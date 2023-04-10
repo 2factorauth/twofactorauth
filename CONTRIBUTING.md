@@ -137,10 +137,11 @@ Inside this object,
 - Facebook can also be included using the `facebook` field.
 - Email can be included using the `email` field.
 - Contact forms can be included using the `form` field.
-- Only email or a contact form can be added, not both.
-- The `language` field inside `contact` can be included for websites whose social media pages/communication channels do
-  not use English. The language
-  codes should be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
+- Only email or a contact form can be added, not both. Emails are preferred over
+  contact forms.
+- The `language` field inside `contact` can be included for websites whose social
+  media pages/communication channels do not use English. The language codes should
+  be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
 
 Do not add the `tfa`, `documentation` or `recovery` fields.
 
