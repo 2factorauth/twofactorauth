@@ -5,9 +5,11 @@
       "mastodon.social"
     ],
     "tfa": [
-      "totp"
+      "totp",
+      "u2f"
     ],
     "documentation": "https://github.com/McKael/mastodon-documentation/blob/master/Using-Mastodon/2FA.md",
+    "notes": "TOTP must be enabled to use a hardware token.",
     "categories": [
       "social"
     ]
