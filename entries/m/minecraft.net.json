@@ -9,6 +9,7 @@
       "sms",
       "call",
       "email",
+      "u2f",
       "totp",
       "custom-software"
     ],
@@ -16,7 +17,7 @@
       "Microsoft Authenticator"
     ],
     "documentation": "https://support.microsoft.com/en-us/help/12408/",
-    "notes": "2FA phone calls may not be available in all regions",
+    "notes": "2FA phone calls may not be available in all regions, 2FA only works on Microsoft Account",
     "categories": [
       "gaming"
     ]
