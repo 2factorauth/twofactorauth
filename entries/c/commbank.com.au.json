@@ -3,9 +3,17 @@
     "domain": "commbank.com.au",
     "tfa": [
       "sms",
-      "custom-hardware"
+      "custom-hardware",
+      "custom-software"
+    ],
+    "custom-software": [
+      "CommBank app"
+    ],
+    "custom-hardware": [
+      "NetCode Token"
     ],
     "documentation": "https://www.commbank.com.au/support.digital-banking.explain-netcode-token.html",
+    "notes": "NetCode Tokens are only offered to customers who cannot use SMS 2FA or the CommBank app.",
     "regions": [
       "au"
     ],
