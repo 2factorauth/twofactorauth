@@ -1,13 +1,16 @@
 {
   "Georgia Institute of Technology": {
     "domain": "gatech.edu",
-    "url": "https://www.gatech.edu",
     "tfa": [
       "call",
+      "sms",
       "custom-software",
-      "custom-hardware"
+      "u2f"
     ],
-    "documentation": "https://twofactor.oit.gatech.edu",
+    "custom-software": [
+      "Duo"
+    ],
+    "documentation": "https://oit.gatech.edu/two-factor-authentication",
     "categories": [
       "universities"
     ],
