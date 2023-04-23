@@ -1,12 +1,15 @@
 {
   "Passpack": {
     "domain": "passpack.com",
-    "url": "https://www.passpack.com/",
     "tfa": [
-      "email",
+      "totp",
       "custom-hardware"
     ],
-    "documentation": "https://help.passpack.com/knowledgebase/idx.php/44/0/",
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "documentation": "https://passpack.com/support/getting-started/two-factor-authentication/",
+    "recovery": "https://passpack.com/support/faq/",
     "categories": [
       "identity"
     ]
