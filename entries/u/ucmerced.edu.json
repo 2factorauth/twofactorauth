@@ -1,0 +1,25 @@
+{
+  "University of California, Merced": {
+      "domain": "ucmerced.edu",
+      "url": "https://www.ucmerced.edu",
+      "tfa": [
+          "sms",
+          "u2f",
+          "custom-hardware",
+          "custom-software"
+      ],
+      "custom-hardware": [
+          "Feitian OTP c100 Token"
+      ],
+      "custom-software": [
+          "Duo"
+      ],
+      "documentation": "https://it.ucmerced.edu/2FA",
+      "categories": [
+          "universities"
+      ],
+      "regions": [
+          "us"
+      ]
+  }
+}

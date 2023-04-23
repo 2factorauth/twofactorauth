@@ -1,11 +1,9 @@
 {
   "OnlyDomains": {
     "domain": "onlydomains.com",
-    "contact": {
-      "facebook": "OnlyDomains",
-      "twitter": "onlydomains",
-      "email": "support@onlydomains.com"
-    },
+    "tfa": [
+      "email"
+    ],
     "categories": [
       "domains"
     ]

@@ -4,6 +4,11 @@ jobs:
 
     docker:
       - image: ruby:latest
+    environment:
+      BUNDLE_PATH: '/tmp/bundler/vendor'
+      BUNDLE_CACHE_PATH: '/tmp/bundler/cache'
+      BUNDLE_WITH: 'tests'
+
     steps:
       - checkout
 
@@ -18,9 +23,7 @@ jobs:
       - run:
           name: Bundler
           command: |
-            bundle config set --local path '/tmp/bundler'
-            bundle config set --local with 'tests'
-            bundle install
+            bundle cache
 
       - run:
           name: Check Twitter handles
@@ -37,12 +40,12 @@ jobs:
       - save_cache:
           key: similarweb-cache-{{ epoch }}
           paths:
-            - "/tmp/similarweb/*"
+            - "/tmp/similarweb"
 
       - save_cache:
-          key: bundler-cache-{{ epoch }}
+          key: bundler-cache-{{ checksum "Gemfile.lock" }}
           paths:
-            - "/tmp/bundler/*"
+            - "/tmp/bundler"
 
 workflows:
   version: 2

@@ -3,7 +3,10 @@
     "domain": "addiko.hr",
     "tfa": [
       "totp",
-      "custom-hardware"
+      "custom-software"
+    ],
+    "custom-software": [
+      "Addiko Mobile App"
     ],
     "documentation": "https://www.addiko.hr/static/uploads/mtoken-uputa-za-koristenje.pdf",
     "regions": [
