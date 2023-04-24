@@ -1,10 +1,12 @@
-# 2FA.Directory Data
+# 2FA Directory - API & Data
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/2factorauth/twofactorauth/repository.yml?branch=master&style=for-the-badge)][build_status]
 [![License](https://img.shields.io/badge/license-mit-9A0F2D.svg?style=for-the-badge)][license]
 [![Twitter](https://img.shields.io/badge/Twitter-@2faorg-1DA1F2.svg?style=for-the-badge&logo=twitter)][twitter]
 
-A list of popular sites and whether or not they support two factor authentication.
+[2FA Directory][site_url] is an open source project that aims to improve online security by providing a directory of websites and services that support two-factor authentication (2FA). Our community-driven platform allows anyone to contribute to the list, making it the most comprehensive directory of its kind. 
+
+This repository contains the directory data for [2FA Directory][site_url].  
+For the website frontend code, see [2factorauth/frontend][frontend].
 
 ## The Goal :goal_net:
 
