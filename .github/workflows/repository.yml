@@ -56,6 +56,7 @@ jobs:
     permissions:
       pages: write
       id-token: write
+    environment: production
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
@@ -75,17 +76,17 @@ jobs:
         run: bundle exec ruby ./scripts/Algolia.rb
         env:
           ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
-          ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}
+          ALGOLIA_INDEX_NAME : ${{ vars.ALGOLIA_INDEX_NAME }}
           ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
       - uses: crazy-max/ghaction-import-gpg@v5
         id: pgp
         with:
-          gpg_private_key: ${{ secrets.pgp_key }}
-          passphrase: ${{ secrets.pgp_passphrase }}
+          gpg_private_key: ${{ secrets.PGP_KEY }}
+          passphrase: ${{ secrets.PGP_PASSWORD }}
       - name: Sign API files
         run: bundle exec ruby scripts/Sign.rb
         env:
-          PGP_PASSWORD: ${{ secrets.pgp_passphrase }}
+          PGP_PASSWORD: ${{ secrets.PGP_PASSWORD }}
           PGP_KEY_ID: ${{ steps.pgp.outputs.keyid }}
       - name: Prepare publish directory
         run: |
@@ -98,4 +99,4 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
       - name: Send webhook to Cloudflare
-        run: curl -X POST -IL "${{ secrets.webhook }}" -o /dev/null -w '%{http_code}\n' -s
+        run: curl -X POST -IL "${{ secrets.WEBHOOK }}" -o /dev/null -w '%{http_code}\n' -s
