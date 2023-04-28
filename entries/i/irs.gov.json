@@ -5,9 +5,13 @@
     "tfa": [
       "sms",
       "call",
+      "u2f",
       "custom-software"
     ],
-    "documentation": "https://www.irs.gov/individuals/secure-access-how-to-register-for-certain-online-self-help-tools",
+    "custom-software": [
+      "ID.me Authenticator"
+    ],
+    "documentation": "https://www.irs.gov/privacy-disclosure/secure-access-how-to-register-for-certain-online-self-help-tools",
     "categories": [
       "government"
     ],
