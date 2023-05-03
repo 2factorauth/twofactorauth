@@ -1,6 +1,9 @@
 {
   "Square": {
     "domain": "squareup.com",
+    "additional-domains": [
+      "weebly.com"
+    ],
     "tfa": [
       "sms",
       "totp"
@@ -9,6 +12,7 @@
     "recovery": "https://squareup.com/help/gb/en/article/5594",
     "notes": "SMS only supported in US and Canada",
     "categories": [
+      "hosting",
       "payments"
     ],
     "regions": [
