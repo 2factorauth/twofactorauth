@@ -1,6 +1,9 @@
 {
   "Vivaldi": {
-    "domain": "vivaldi.net",
+    "domain": "vivaldi.com",
+    "additional-domains": [
+      "vivaldi.net"
+    ],
     "tfa": [
       "totp",
       "u2f"
