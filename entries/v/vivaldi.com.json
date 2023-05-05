@@ -1,10 +1,11 @@
 {
   "Vivaldi": {
-    "domain": "vivaldi.com",
-    "contact": {
-      "facebook": "vivaldi.browser",
-      "twitter": "vivaldibrowser"
-    },
+    "domain": "vivaldi.net",
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://help.vivaldi.com/services/account/two-factor-authentication/",
     "categories": [
       "other"
     ]
