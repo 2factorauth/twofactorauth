@@ -1,12 +1,13 @@
 {
     "OpenAI": {
         "domain": "openai.com",
-        "contact": {
-            "twitter": "OpenAI",
-            "email": "support@openai.com"
-        },
+        "tfa": [
+          "totp"
+        ],
+        "notes": "Enabling 2FA only available from the ChatGPT interface at the moment."
         "categories": [
-            "other"
+            "other",
+            "developer"
         ]
     }
 }
