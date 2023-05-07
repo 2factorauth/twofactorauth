@@ -1,6 +1,9 @@
 {
   "Fly.io": {
     "domain": "fly.io",
+    "additional-domains": [
+      "fly-metrics.net"
+    ],
     "tfa": [
       "totp"
     ],
