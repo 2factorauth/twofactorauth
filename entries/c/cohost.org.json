@@ -1,10 +1,9 @@
 {
   "cohost": {
     "domain": "cohost.org",
-    "contact": {
-      "email": "support@cohost.org",
-      "twitter": "cohost_org"
-    },
+    "tfa": [
+      "totp"
+    ],
     "categories": [
       "social"
     ]
