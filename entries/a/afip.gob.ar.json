@@ -2,8 +2,11 @@
   "AFIP": {
     "domain": "afip.gob.ar",
     "tfa": [
-      "custom-hardware",
       "custom-software"
+    ],
+    "custom-software": [
+      "Token AFIP",
+      "AFIP OTP"
     ],
     "documentation": "https://www.afip.gob.ar/claveFiscal/informacion-basica/solicitud.asp",
     "categories": [
