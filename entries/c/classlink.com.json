@@ -1,0 +1,24 @@
+{
+  "ClassLink": {
+    "domain": "classlink.com",
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f",
+      "custom-software",
+      "custom-hardware"
+    ],
+    "custom-software": [
+      "6-digit PIN",
+      "Image"
+    ],
+    "custom-hardware": [
+      "Face",
+      "QuickCard"
+    ],
+    "documentation": "https://www.classlink.com/solutions/multi-factor-authentication",
+    "categories": [
+      "education"
+    ]
+  }
+}
