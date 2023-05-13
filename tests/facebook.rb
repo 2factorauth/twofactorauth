@@ -13,7 +13,6 @@ diff = `git diff  entries/ | sed -n 's/^+.*"facebook"[^"]*"\\(.*\\)".*/\\1/p'`
   'AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1',
   'From' => 'https://2fa.directory/'
 }
-@redirects = %w[301 302 318]
 
 def fetch(handle)
   response = Net::HTTP.get_response(URI("https://m.me/#{handle}"), @headers)
