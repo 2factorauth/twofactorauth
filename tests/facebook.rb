@@ -6,7 +6,7 @@ require 'uri'
 require 'nokogiri'
 
 status = 0
-diff = `git diff  entries/ | sed -n 's/^+.*"facebook"[^"]*"\\(.*\\)".*/\\1/p'`
+diff = `git diff origin/master...HEAD entries/ | sed -n 's/^+.*"facebook"[^"]*"\\(.*\\)".*/\\1/p'`
 
 @headers = {
   'User-Agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) ' \
