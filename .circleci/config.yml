@@ -23,6 +23,7 @@ jobs:
       - run:
           name: Bundler
           command: |
+            bundle config with :tests
             bundle cache
 
       - run:
