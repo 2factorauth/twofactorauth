@@ -1,11 +1,15 @@
 {
-    "RestoreCord": {
-        "domain": "restorecord.com",
-        "tfa": [
-            "totp"
-        ],
-        "categories": [
-            "backup"
-        ]
-    }
+  "RestoreCord": {
+    "domain": "restorecord.com",
+    "url": "https://restorecord.com/dashboard/account",
+    "contact": {
+      "twitter": "restorecord",
+    },
+    "categories": [
+      "backup"
+    ],
+    "tfa": [
+      "totp"
+    ]
+  }
 }
