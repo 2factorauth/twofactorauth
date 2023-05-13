@@ -32,7 +32,7 @@ jobs:
 
       - run:
           name: Check Facebook handles
-          command: ruby ./tests/facebook.rb
+          command: bundle exec ruby ./tests/facebook.rb
 
       - run:
           name: Check Similarweb ranking
