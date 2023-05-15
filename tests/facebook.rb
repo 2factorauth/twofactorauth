@@ -3,32 +3,34 @@
 
 require 'net/http'
 require 'uri'
+require 'nokogiri'
 
 status = 0
 diff = `git diff origin/master...HEAD entries/ | sed -n 's/^+.*"facebook"[^"]*"\\(.*\\)".*/\\1/p'`
+
 @headers = {
-  'User-Agent' => '2FactorAuth/FacebookValidator '\
-  "(Ruby/#{RUBY_VERSION}; +https://2fa.directory/bot)",
+  'User-Agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) ' \
+  'AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1',
   'From' => 'https://2fa.directory/'
 }
 
-diff.split("\n").each do |page|
-  url = URI("https://www.facebook.com/pg/#{page}")
-  http = Net::HTTP.new(url.host, url.port)
-  http.use_ssl = true
-  request = Net::HTTP::Get.new(url, @headers)
-  response = http.request(request)
-  begin
-    raise("\"#{page}\" is either private or doesn't exist.") if response.code.eql? '404'
-    next if response.header['location'].nil?
-
-    fb_page = response.header['location'].split('/').last
-    raise("\"#{page}\" should be \"#{fb_page}\".") unless fb_page.eql? page
-
-    puts("#{page} is valid.")
-  rescue StandardError => e
-    puts "\e[31m#{e.message}\e[39m"
-    status = 1
+def fetch(handle)
+  response = Net::HTTP.get_response(URI("https://m.me/#{handle}"), @headers)
+  output = nil
+  if response.header['location'].start_with?("https://m.facebook.com/msg/#{handle}")
+    body = Net::HTTP.get_response(URI(response.header['location']), @headers).body
+    output = Nokogiri::HTML.parse(body).at_css('._4ag7.img')&.attr('src')
   end
+  output
 end
+
+diff.split("\n").each do |page|
+  raise("Facebook page \"#{page}\" is either private or doesn't exist.") unless fetch(page)
+
+  puts("#{page} is valid.")
+rescue StandardError => e
+  puts "\e[31m#{e.message}\e[39m"
+  status = 1
+end
+
 exit status
