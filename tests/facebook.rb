@@ -17,7 +17,7 @@ diff = `git diff origin/master...HEAD entries/ | sed -n 's/^+.*"facebook"[^"]*"\
 def fetch(handle)
   response = Net::HTTP.get_response(URI("https://m.me/#{handle}"), @headers)
   output = nil
-  if response.header['location'].start_with?("https://m.facebook.com/msg/#{handle}")
+  if response.header['location'] =~ %r{^https://m\.facebook\.com/msg/(\d+|#{handle})/}
     body = Net::HTTP.get_response(URI(response.header['location']), @headers).body
     output = Nokogiri::HTML.parse(body).at_css('._4ag7.img')&.attr('src')
   end
