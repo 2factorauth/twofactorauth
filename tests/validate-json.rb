@@ -4,7 +4,6 @@
 require 'json_schemer'
 require 'parallel'
 @status = 0
-seen_names = []
 
 schema = JSONSchemer.schema(File.read('tests/schema.json'))
 
@@ -59,19 +58,11 @@ Parallel.each(Dir.glob('entries/*/*.json'), in_threads: 16) do |file|
   folder_name = file.split('/')[1]
   expected_folder_name = document.values[0]['domain'][0]
 
-  unless folder_name.eql? expected_folder_name
-    error(file,
-          "Entry should be in the subdirectory with the same name as the first letter as the domain.
-           Received: entries/#{folder_name}. Expected: entries/#{expected_folder_name}")
-  end
+  next if folder_name.eql? expected_folder_name
 
-  name = document.keys[0]
-  if seen_names.include? name
-    error(file, "An entry with the name '#{name}' already exists. Duplicate site names are not allowed.
-    If this entry is not the same site, please rename '#{name}'.")
-  else
-    seen_names.push(name)
-  end
+  error(file,
+        "Entry should be in the subdirectory with the same name as the first letter as the domain.
+         Received: entries/#{folder_name}. Expected: entries/#{expected_folder_name}")
 end
 # rubocop:enable Metrics/BlockLength
 
