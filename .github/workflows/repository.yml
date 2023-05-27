@@ -93,6 +93,7 @@ jobs:
           mkdir -p public/icons
           cp -r api/. public/
           cp -r img/. public/icons/
+          cp robots.txt public/
       - uses: actions/upload-pages-artifact@v1
         with:
           path: public/
