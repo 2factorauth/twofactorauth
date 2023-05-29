@@ -1,10 +1,11 @@
 {
   "Lenovo": {
     "domain": "lenovo.com",
-    "contact": {
-      "facebook": "lenovo",
-      "twitter": "LenovoSupport"
-    },
+    "tfa": [
+      "email",
+      "sms",
+      "totp"
+    ],
     "categories": [
       "retail"
     ]
