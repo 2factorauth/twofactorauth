@@ -2,9 +2,17 @@
   "NatWest": {
     "domain": "natwest.com",
     "tfa": [
+      "custom-software",
       "custom-hardware"
     ],
-    "documentation": "http://www.natwest.com/personal/online-banking/g1/banking-safely-online/card-reader.ashx",
+    "custom-software": [
+      "NatWest mobile app"
+    ],
+    "custom-hardware": [
+      "Biometrics",
+      "Card reader"
+    ],
+    "documentation": "https://www.natwest.com/fraud-and-security/sca.html",
     "categories": [
       "banking"
     ],
