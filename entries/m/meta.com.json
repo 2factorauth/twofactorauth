@@ -1,12 +1,16 @@
 {
-    "Meta": {
-        "domain": "meta.com",
-        "tfa": [
-            "sms",
-            "totp"
-        ],
-        "categories": [
-            "social"
-        ]
-    }
+  "Meta": {
+    "domain": "meta.com",
+    "additional-domains": [
+      "oculus.com"
+    ],
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "categories": [
+      "social",
+      "gaming"
+    ]
+  }
 }
