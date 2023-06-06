@@ -1,0 +1,21 @@
+{
+    "Google Account": {
+      "domain": "accounts.google.com",
+      "tfa": [
+        "sms",
+        "call",
+        "totp",
+        "custom-software",
+        "u2f"
+      ],
+      "custom-software": [
+        "Google Prompts",
+        "Google Smart Lock"
+      ],
+      "documentation": "https://support.google.com/accounts/answer/185839",
+      "recovery": "https://support.google.com/a/answer/9176734",
+      "categories": [
+        "other" 
+      ]
+    }
+  }
