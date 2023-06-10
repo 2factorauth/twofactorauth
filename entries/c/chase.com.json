@@ -3,7 +3,11 @@
     "domain": "chase.com",
     "tfa": [
       "sms",
-      "call"
+      "call",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Chase App"
     ],
     "documentation": "https://2fa.directory/notes/chase/",
     "categories": [
