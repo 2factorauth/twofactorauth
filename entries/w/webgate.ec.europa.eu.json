@@ -1,0 +1,52 @@
+{
+  "European Commission": {
+    "domain": "webgate.ec.europa.eu",
+    "url": "https://webgate.ec.europa.eu/cas/",
+    "tfa": [
+      "sms",
+      "u2f",
+      "custom-software",
+      "custom-hardware"
+    ],
+    "custom-software": [
+      "EU Login mobile app"
+    ],
+    "custom-hardware": [
+      "VASCO Token",
+      "DigiPass Token"
+    ],
+    "documentation": "https://webgate.ec.europa.eu/cas/manuals/EU_Login_Tutorial.pdf",
+    "categories": [
+      "government"
+    ],
+    "regions": [
+      "at",
+      "be",
+      "bg",
+      "hr",
+      "cy",
+      "cz",
+      "dk",
+      "ee",
+      "fi",
+      "fr",
+      "de",
+      "gr",
+      "hu",
+      "ie",
+      "it",
+      "lv",
+      "lt",
+      "lu",
+      "mt",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "sk",
+      "si",
+      "es",
+      "se"
+    ]
+  }
+}
