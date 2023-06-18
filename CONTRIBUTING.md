@@ -14,20 +14,15 @@ are stored in folders corresponding to each of those entries in their own
 1. **Don't break the build**: We have a simple continuous integration system
    setup with GitHub Actions. If your pull request doesn't pass, it won't be
    merged. GH Actions will only check your changes after you submit a pull request.
-   If you want to test locally, instructions are listed below. Keep reading!
 2. **Use a Nice Icon**: SVG is the preferred format. If possible, please also run the image
    through an optimizing utility such as [svgo][svgo] (command line) or [SVGOMG][SVGOMG] (web) to reduce the file size.
    If an SVG icon is not available, the icon should be a PNG with a resolution of 32x32, 64x64 or 128x128.
-   If possible, please also run the image through an optimizing
-   utility such as [TinyPNG][tinypng] before committing it to the repo and keep
-   the file to be under 2.5 kB.
-3. **HTTPS links**: All sites that support HTTPS should also be linked with an
-   HTTPS address.
+   If possible, run the PNG image through an optimizing utility such as [TinyPNG][tinypng] so that it ideally is below 3 kB in size.
+3. **HTTPS links**: All sites that support HTTPS should also be linked with an HTTPS address.
 4. **Similarweb top 200K**: A new site that is not already listed has to be within the
    Similarweb top 200,000 global ranking. You can check the ranking of a site [here][similarweb].
 5. **No 2FA providers**: We do not list 2FA providers, such as [Authy][authy], [Duo][duo] or
    [Google Authenticator][googleauthenticator].
-6. **Be Awesome**: You need to be awesome. That is all.
 
 ## Site Criteria
 
@@ -35,9 +30,7 @@ The following section contains rough criteria and explanations regarding
 what websites should be listed on 2fa.directory. If one of the following
 criteria is met, it belongs on 2fa.directory:
 
-1. **Personal Info/Image**: Any site that deals with personal info or a person's
-   image. An example of a site with **Personal Info** would be their Amazon
-   account and a site regarding **Personal Image** would be one like Twitter.
+1. **Personal Info**: Any site that deals with personally identifiable information (PII) such as name, photo, age, address etc.
 2. **Data**: This criteria relates to data that is either important or sensitive.
    Websites detailed in criteria 1 also fit this criteria.
 3. **Money**: Any site that deals with money.
@@ -60,11 +53,10 @@ a pull request.
 First and foremost, make sure the new site meets our [definition
 requirements][definitions] of two factor authentication.
 
-If you are adding multiple sites to the TwoFactorAuth list, please create a new
+If you are adding multiple sites to 2FA Directory, please create a new
 git branch for each website, and submit a separate pull request for each branch.
 More information regarding how to create new git branches can be found on
-[GitHub's Help Page][github-tutorial]
-or [DigitalOcean's Tutorial][do-tutorial].
+[GitHub's Help Page][github-tutorial].
 
 Adding a new website should be pretty straight-forward. Create a JSON file in
 the corresponding [subdirectory][entries] as shown in the following example:
@@ -165,7 +157,7 @@ The following is an example of a website that _does not_ support TFA:
 ### Exceptions & Restrictions
 
 If a site requires the user to do something out of the ordinary to set up 2FA or if 2FA is
-only available in specific countries or to specific account types, you can document this using the `notes` field.
+only available to specific account types, you can document this using the `notes` field.
 
 ```JSON
 {
@@ -186,8 +178,7 @@ only available in specific countries or to specific account types, you can docum
 ### Adding a site that is only available or is prevalent in specific regions
 
 If a site (with or without 2FA) is only available in certain countries or most users are located in certain countries -
-for example a
-government site - you can note this with the `regions` field.
+for example a government site or a local retailer - you can note this with the `regions` field.
 
 ```JSON
 {
@@ -408,7 +399,6 @@ although it may not be a password), it does not constitute two factor authentica
 [issue]: https://github.com/2factorauth/twofactorauth/issues/new/choose
 [definitions]: #a-note-on-definitions
 [github-tutorial]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/
-[do-tutorial]: https://www.digitalocean.com/community/tutorials/how-to-use-git-branches
 [iso-lang-wikipedia]: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 [iso-country-wikipedia]: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
 [242]: https://github.com/2factorauth/twofactorauth/issues/242
