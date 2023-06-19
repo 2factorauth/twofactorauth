@@ -350,6 +350,7 @@ description.
 | security         |         Security          | Online security and anti-malware services. Excluding VPN and identity management    |
 | social           |          Social           | Social networks                                                                     |
 | task             |      Task Management      | Task management and to-do services                                                  |
+| tickets          |    Tickets and Events     | Ticketing and event platforms                                                       |
 | transport        |         Transport         | Transportation services including public transport and airlines                     |
 | universities     |       Universities        | University online platforms                                                         |
 | utilities        |         Utilities         | Household utilities including electricity, gas, water, phone and internet providers |
