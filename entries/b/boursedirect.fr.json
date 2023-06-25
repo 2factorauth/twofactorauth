@@ -2,7 +2,10 @@
     "Bourse Direct": {
         "domain": "boursedirect.fr",
         "url": "https://www.boursedirect.fr",
-        "tfa": ["sms", "totp"],
+        "tfa": [
+            "sms",
+            "totp"
+        ],
         "documentation": "https://www.boursedirect.fr/fr/support/faq/connexion",
         "categories": [
             "investing"
