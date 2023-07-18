@@ -1,12 +1,32 @@
 {
   "IONOS": {
     "domain": "ionos.com",
+    "img": "ionos.com.png",
     "tfa": [
-      "totp"
+      "totp",
+      "custom-software",
     ],
-    "documentation": "https://www.ionos.com/help/index.php?id=3269",
+    "custom-software": [
+      "IONOS Mobile App"
+    ],    
+    "documentation": "https://www.ionos.com/help/web-security/two-factor-authentication-two-factor-authentication/set-up-two-factor-authentication/",
     "categories": [
-      "domains"
+      "domains",
+      "cloud",
+      "hosting"    
     ]
+    "regions": [
+      "-cn",
+      "-ir",
+      "-eg",
+      "-ma",
+      "-mm",
+      "-ru",
+      "-gr",
+      "-ie",
+      "-pl",
+      "-pt",
+      "-se"
+    ]    
   }
 }
