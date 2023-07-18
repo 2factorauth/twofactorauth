@@ -3,7 +3,7 @@
     "domain": "ionos.com",
     "tfa": [
       "totp",
-      "custom-software",
+      "custom-software"
     ],
     "custom-software": [
       "IONOS Mobile App"
@@ -15,17 +15,22 @@
       "hosting"    
     ],
     "regions": [
-      "-cn",
-      "-ir",
-      "-eg",
-      "-ma",
-      "-mm",
-      "-ru",
-      "-gr",
-      "-ie",
-      "-pl",
-      "-pt",
-      "-se"
+      "at",
+      "ca",
+      "fr",
+      "de",
+      "it",
+      "mx",
+      "es",
+      "us",
+      "ro",
+      "au",
+      "cz",
+      "bg",
+      "hu",
+      "si",
+      "uk",
+      "za"
     ]    
   }
 }
