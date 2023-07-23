@@ -1,6 +1,9 @@
 {
     "La Trobe University": {
       "domain": "latrobe.edu.au",
+      "additional-domains": [
+        "ltu.edu.au"
+      ],
       "tfa": [
         "totp",
         "custom-software"

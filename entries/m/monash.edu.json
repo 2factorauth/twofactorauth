@@ -1,6 +1,9 @@
 {
     "Monash University": {
       "domain": "monash.edu",
+      "additional-domains": [
+        "monash.edu.my"
+      ],
       "tfa": [
         "u2f",
         "totp",
