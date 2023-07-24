@@ -1,0 +1,21 @@
+{
+  "Citadel Credit Union": {
+    "domain": "citadelbanking.com",
+    "tfa": [
+      "totp",
+      "custom-software",
+      "sms",
+      "call",
+      "email"
+    ],
+    "custom-software": [
+      "Citadel App"
+    ],
+    "categories": [
+      "banking"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}
