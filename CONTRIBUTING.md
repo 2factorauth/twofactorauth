@@ -7,7 +7,7 @@ To add a new site, go to the [data files][entries] and get familiar with how it
 is set up. There is one file per entry named after the domain, located in the
 subdirectory starting with the first letter of the domain. Site icons
 are stored in folders corresponding to each of those entries in their own
-[folder][img].
+[folder][img]. Please ensure any JSON files that are edited conform to our [`.editorconfig`][editorconfig].
 
 ## Guidelines
 
@@ -388,6 +388,7 @@ although it may not be a password), it does not constitute two factor authentica
 [json]: https://www.json.org/
 [entries]: entries/
 [img]: img/
+[editorconfig]: .editorconfig
 [svgo]: https://github.com/svg/svgo
 [SVGOMG]: https://jakearchibald.github.io/svgomg/
 [tinypng]: https://tinypng.com/
