@@ -1,0 +1,24 @@
+{
+    "The University of Queensland": {
+      "domain": "uq.edu.au",
+      "tfa": [
+        "u2f",
+        "totp",
+        "custom-software",
+        "custom-hardware"
+      ],
+      "custom-software": [
+        "Duo"
+      ],
+      "custom-hardware": [
+        "Duo D100 Token"
+      ],
+      "documentation": "https://my.uq.edu.au/information-and-services/information-technology/uq-accounts-and-passwords/multi-factor-authentication-mfa",
+      "categories": [
+        "universities"
+      ],
+      "regions": [
+        "au"
+      ]
+    }
+  }
