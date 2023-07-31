@@ -68,8 +68,7 @@ jobs:
           ruby-version: '3.0'
       - name: Generate API files
         run: |
-          mkdir -p api/v{2,3}
-          ./scripts/APIv2.rb
+          mkdir -p api/v3
           ./scripts/APIv3.rb
       - name: Publish changes to Algolia
         run: bundle exec ruby ./scripts/Algolia.rb
