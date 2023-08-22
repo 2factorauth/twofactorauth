@@ -1,10 +1,10 @@
 {
   "Pixiv": {
     "domain": "pixiv.net",
-    "contact": {
-      "twitter": "pixiv_en",
-      "email": "support@pixiv.net"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://www.pixiv.help/hc/en-us/articles/20876082054553",
     "categories": [
       "social",
       "creativity"
