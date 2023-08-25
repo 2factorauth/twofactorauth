@@ -1,0 +1,16 @@
+{
+  "Firefish": {
+    "domain": "firefish.social",
+    "tfa": [
+      "custom-hardware",
+      "u2f",
+      "totp",
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "categories": [
+      "social"
+    ]
+  }
+}
