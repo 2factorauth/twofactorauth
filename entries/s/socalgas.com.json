@@ -1,7 +1,7 @@
 {
   "Southern California Gas Company": {
     "domain": "socalgas.com",
-    "tfa": ["sms", "email"],
+    "tfa": ["sms", "totp"],
     "documentation": "https://www.socalgas.com/help-center/2-factor-authentication",
     "regions": ["us"],
     "categories": ["utilities"]
