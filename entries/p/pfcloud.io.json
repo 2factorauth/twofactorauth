@@ -1,0 +1,22 @@
+{
+    "Pfcloud": {
+      "domain": "pfcloud.io",
+      "url": "https://pfcloud.io/",
+      "contact": {
+        "twitter": "pfcloudio"
+      },
+      "tfa": [
+        "totp",
+        "custom-hardware"
+      ],
+      "custom-hardware": [
+        "Yubico OTP"
+      ],
+      "categories": [
+        "cloud",
+        "domains",
+        "hosting"
+      ]
+    }
+  }
+  
