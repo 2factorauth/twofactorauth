@@ -3,7 +3,10 @@
     "domain": "changelly.com",
     "tfa": [
       "totp",
-      "u2f"
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
     ],
     "documentation": "https://support.changelly.com/en/support/solutions/articles/14000111533",
     "recovery": "https://support.changelly.com/en/support/solutions/articles/14000111548",
