@@ -2,9 +2,11 @@
   "Changelly": {
     "domain": "changelly.com",
     "tfa": [
-      "totp"
+      "totp",
+      "u2f"
     ],
-    "documentation": "https://changelly.com/faq#what-is-the-2-factor-authentication?",
+    "documentation": "https://support.changelly.com/en/support/solutions/articles/14000111542",
+    "recovery": "https://support.changelly.com/en/support/solutions/articles/14000111548",
     "categories": [
       "cryptocurrencies"
     ],
