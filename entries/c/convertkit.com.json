@@ -3,10 +3,7 @@
     "domain": "convertkit.com",
     "tfa": [
       "sms",
-      "custom-software"
-    ],
-    "custom-software": [
-      "Authy"
+      "totp"
     ],
     "documentation": "https://help.convertkit.com/en/articles/3925724",
     "categories": [
