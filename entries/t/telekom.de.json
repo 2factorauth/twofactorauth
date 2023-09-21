@@ -1,13 +1,11 @@
 {
   "Deutsche Telekom": {
     "domain": "telekom.de",
-    "url": "https://www.telekom.de/",
-    "contact": {
-      "email": "impressum@telekom.de",
-      "facebook": "deutschetelekom",
-      "twitter": "deutschetelekom",
-      "language": "de"
-    },
+    "tfa": [
+      "totp",
+      "sms"
+    ],
+    "documentation": "https://www.telekom.de/hilfe/vertrag-rechnung/login-daten-passwoerter/mehr-faktor-authentifizierung",
     "categories": [
       "utilities"
     ],
