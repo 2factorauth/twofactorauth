@@ -1,11 +1,10 @@
 {
   "Bendigo Bank": {
     "domain": "bendigobank.com.au",
-    "contact": {
-      "facebook": "BendigoBank",
-      "twitter": "bendigobank",
-      "form": "https://www.bendigoadelaide.com.au/contact-us/customer-feedback/"
-    },
+    "tfa": [
+      "custom-software"
+    ],
+    "documentation": "https://www.bendigobank.com.au/security/e-banking-upgrade/#tab-241991",
     "categories": [
       "banking"
     ],
