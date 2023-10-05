@@ -2,6 +2,8 @@
   "Bendigo Bank": {
     "domain": "bendigobank.com.au",
     "tfa": [
+      "sms",
+      "email",
       "custom-software"
     ],
     "custom-software": [
