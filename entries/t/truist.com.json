@@ -2,7 +2,10 @@
   "Truist": {
     "domain": "truist.com",
     "tfa": [
-      "custom-software"
+      "custom-software",
+      "sms",
+      "call",
+      "email"
     ],
     "custom-software": [
       "Truist Authenticator"
