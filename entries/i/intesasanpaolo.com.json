@@ -2,9 +2,13 @@
   "Intesa Sanpaolo": {
     "domain": "intesasanpaolo.com",
     "tfa": [
-      "custom-hardware"
+      "custom-software",
+      "sms"
     ],
-    "documentation": "https://www.intesasanpaolo.com/it/common/footer/sicurezza.html",
+    "custom-software": [
+      "Intesa Sanpaolo Mobile app"
+    ],
+    "documentation": "https://www.intesasanpaolo.com/content/internetbanking/it/faq/common/faqHome/app-intesa-sanpaolo-mobile.privati.html",
     "regions": [
       "it"
     ],
