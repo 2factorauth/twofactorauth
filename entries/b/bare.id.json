@@ -1,0 +1,25 @@
+{
+  "Bare.ID": {
+    "domain": "bare.id",
+    "tfa": [
+      "sms",
+      "email",
+      "totp",
+      "u2f",
+      "custom-hardware",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Secunet Protect4use"
+    ],
+    "custom-hardware": [
+      "Yubico OTP",
+      "Swissbit"
+    ],
+    "documentation": "https://support.bare.id/de/guides/bare-id-handbuch",
+    "recovery": "https://support.bare.id/de/guides/bare-id-handbuch/passwort-vergessen",
+    "categories": [
+      "identity"
+    ]
+  }
+}
