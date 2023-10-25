@@ -313,7 +313,7 @@ example below shows a site that is available in all regions apart from `us`.
 ## Categories
 
 Entries on 2fa.directory have to be put into categories. An entry can have one or many categories.
-Below is a table of each available category, the name of the category, which title it has on 2fa.directory along a
+Below is a table of each available category, the name of the category, which title it has on 2fa.directory with a
 description.
 
 | Name             |           Title           | Description                                                                         |
