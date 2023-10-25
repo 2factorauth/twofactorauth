@@ -16,23 +16,23 @@ are stored in folders corresponding to each of those entries in their own
    merged. GH Actions will only check your changes after you submit a pull request.
 2. **Use a Nice Icon**: SVG is the preferred format. If possible, please also run the image
    through an optimizing utility such as [svgo][svgo] (command line) or [SVGOMG][SVGOMG] (web) to reduce the file size.
-   If an SVG icon is not available, the icon should be a PNG with a resolution of 32x32, 64x64 or 128x128.
+   If an SVG icon is not available, the icon should be a PNG with a resolution of 32x32, 64x64, or 128x128.
    If possible, run the PNG image through an optimizing utility such as [TinyPNG][tinypng] so that it ideally is below 3 kB in size.
 3. **HTTPS links**: All sites that support HTTPS should also be linked with an HTTPS address.
 4. **Similarweb top 200K**: A new site that is not already listed has to be within the
-   Similarweb top 200,000 global ranking. You can check the ranking of a site [here][similarweb].
+   Similarweb top 200,000 global rankings. You can check the ranking of a site [here][similarweb].
 5. **No 2FA providers**: We do not list 2FA providers, such as [Authy][authy], [Duo][duo] or
    [Google Authenticator][googleauthenticator].
 
 ## Site Criteria
 
 The following section contains rough criteria and explanations regarding
-what websites should be listed on 2fa.directory. If one of the following
-criteria is met, it belongs on 2fa.directory:
+what websites should be listed in 2fa.directory. If one of the following
+criteria is met, it belongs in 2fa.directory:
 
-1. **Personal Info**: Any site that deals with personally identifiable information (PII) such as name, photo, age, address etc.
-2. **Data**: This criteria relates to data that is either important or sensitive.
-   Websites detailed in criteria 1 also fit this criteria.
+1. **Personal Info**: Any site that deals with personally identifiable information (PII) such as name, photo, age, address, etc.
+2. **Data**: This criterion relates to data that is either important or sensitive.
+   Websites detailed in Criteria 1 also fit this criteria.
 3. **Money**: Any site that deals with money.
 4. **Control**: This criteria is more general, in that it includes sites that
    give access to things that may infringe upon criteria 1, 2, or 3. An example
@@ -43,7 +43,7 @@ criteria, simply open an issue and we'll take a look.
 
 ### Excluded Sites
 
-A list for excluded sites and categories has also been created with various categories and sites that we have opted not
+A list of excluded sites and categories has also been created with various categories and sites that we have opted not
 to list on 2fa.directory.
 You should check the list in the [EXCLUSION.md file][exclude] to make sure that your site is eligible before submitting
 a pull request.
@@ -51,14 +51,14 @@ a pull request.
 ## New Sites
 
 First and foremost, make sure the new site meets our [definition
-requirements][definitions] of two factor authentication.
+requirements][definitions] of two-factor authentication.
 
-If you are adding multiple sites to 2FA Directory, please create a new
+If you are adding multiple sites to the 2FA Directory, please create a new
 git branch for each website, and submit a separate pull request for each branch.
 More information regarding how to create new git branches can be found on
 [GitHub's Help Page][github-tutorial].
 
-Adding a new website should be pretty straight-forward. Create a JSON file in
+Adding a new website should be pretty straightforward. Create a JSON file in
 the corresponding [subdirectory][entries] as shown in the following example:
 
 ```JSON
@@ -89,7 +89,7 @@ the corresponding [subdirectory][entries] as shown in the following example:
 - Categories must be selected from the values listed in [`categories.json`][categories].
 - The default value for the icon is `<domain>.svg`, but can be overridden by an `img`
   field.
-- If you would like the site's link on 2fa.directory to be different to `https://<domain>`, you can use a `url` field to
+- If you would like the site's link on 2fa.directory to be different from `https://<domain>`, you can use a `url` field to
   specify this.
 
 #### Adding a site that _supports_ TFA
@@ -135,7 +135,7 @@ Inside this object,
   media pages/communication channels do not use English. The language codes should
   be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
 
-Do not add the `tfa`, `documentation` or `recovery` fields.
+Do not add the `tfa`, `documentation`, or `recovery` fields.
 
 The following is an example of a website that _does not_ support TFA:
 
@@ -313,7 +313,7 @@ example below shows a site that is available in all regions apart from `us`.
 ## Categories
 
 Entries on 2fa.directory have to be put into categories. An entry can have one or many categories.
-Below is a table of each available category, the name of the category, which title it has on 2fa.directory along with a
+Below is a table of each available category, the name of the category, which title it has on 2fa.directory with a
 description.
 
 | Name             |           Title           | Description                                                                         |
@@ -325,7 +325,7 @@ description.
 | communication    |       Communication       | Online communication platforms excluding email and social media                     |
 | creativity       |        Creativity         | Art and design software                                                             |
 | crowdfunding     |       Crowdfunding        |                                                                                     |
-| cryptocurrencies |     Cryptocurrencies      | Any site which main purpose is handling cryptocurrencies                            |
+| cryptocurrencies |     Cryptocurrencies      | Any site whose main purpose is handling cryptocurrencies                            |
 | developer        |         Developer         | Development software                                                                |
 | domains          |          Domains          | DNS Registrars                                                                      |
 | education        |         Education         | Non-university education platforms                                                  |
@@ -336,7 +336,7 @@ description.
 | gaming           |          Gaming           | Games and game platforms. Sites for buying games should be listed in Retail         |
 | government       |        Government         | Government portals. Excluding education                                             |
 | health           |          Health           | Health and fitness platforms                                                        |
-| hosting          |        Hosting/VPS        | Online website hosting, VPS and dedicated server rentals                            |
+| hosting          |        Hosting/VPS        | Online website hosting, VPS, and dedicated server rentals                           |
 | hotels           | Hotels and Accommodations | Hotels and short term accommodation providers                                       |
 | identity         |    Identity Management    | Authentication providers, Single Sign On platforms                                  |
 | investing        |         Investing         | Investment platforms                                                                |
@@ -364,26 +364,26 @@ If you're unsure which category is correct for an entry, ask for assistance by c
 
 ### Authorization
 
-There are lots of different ideas of what constitutes two factor authentication and
+There are lots of different ideas of what constitutes two-factor authentication and
 what doesn't, so it stands to reason that we should clarify a bit. For the
-purposes of this site, two factor authentication is defined as any service provided as a
+purposes of this site, two-factor authentication is defined as any service provided as a
 redundant layer for account _authentication_. Services that provide
 _authorization_ redundancy are certainly appreciated, but should not be
-considered two factor authentication.
+considered two-factor authentication.
 
 As an example, a site that prompts you for an authentication token following
-user login would be considered two factor authentication. A site that does not prompt you
+user login would be considered two-factor authentication. A site that does not prompt you
 for a token upon login, but prompts you for a token when you try to perform a
-sensitive action would not be considered two factor authentication.
+sensitive action would not be considered two-factor authentication.
 
 For context, check out the discussion in issue [#242][242].
 
 ### Passwordless Authentication
 
 Many sites are now offering passwordless authentication, which replaces the password (something you know) with a
-different factor, such as something you have or are. Examples of this would be sites which allow users to use a U2F key,
-or a magic link to login, but do not have a second factor available. Since there is still only one factor being used (
-although it may not be a password), it does not constitute two factor authentication.
+different factor, such as something you have or are. Examples of this would be sites that allow users to use a U2F key
+or a magic link to login but do not have a second factor available. Since there is still only one factor being used (
+although it may not be a password), it does not constitute two-factor authentication.
 
 [json]: https://www.json.org/
 [entries]: entries/
