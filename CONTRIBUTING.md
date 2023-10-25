@@ -255,7 +255,7 @@ example below shows a site that is available in all regions apart from `us`.
 ```
 
 - `recovery`
-  The recovery field can be used to link to acccount recovery documentation about what to do
+  The recovery field can be used to link to account recovery documentation about what to do
   if you lose access to your 2FA method.
 
 ```JSON
@@ -380,7 +380,7 @@ For context, check out the discussion in issue [#242][242].
 
 ### Passwordless Authentication
 
-Many sites are now offering passwordless authentication, which replace the password (something you know) with a
+Many sites are now offering passwordless authentication, which replaces the password (something you know) with a
 different factor, such as something you have or are. Examples of this would be sites which allow users to use a U2F key,
 or a magic link to login, but do not have a second factor available. Since there is still only one factor being used (
 although it may not be a password), it does not constitute two factor authentication.
