@@ -4,10 +4,14 @@
     "tfa": [
       "sms",
       "call",
-      "custom-software"
+      "custom-software",
+      "custom-hardware"
     ],
     "custom-software": [
       "Chase app"
+    ],
+    "custom-hardware": [
+      "Security Token"
     ],
     "documentation": "https://2fa.directory/notes/chase/",
     "categories": [
