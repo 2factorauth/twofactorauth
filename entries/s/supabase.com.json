@@ -1,9 +1,10 @@
 {
   "Supabase": {
     "domain": "supabase.com",
-    "contact": {
-      "twitter": "supabase"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://supabase.com/docs/guides/platform/multi-factor-authentication",
     "categories": [
       "developer",
       "identity"
