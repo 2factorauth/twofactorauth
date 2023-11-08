@@ -1,9 +1,9 @@
 {
   "ngrok": {
     "domain": "ngrok.com",
-    "contact": {
-      "twitter": "ngrok_"
-    },
+    "tfa": [
+      "totp"
+    ],
     "categories": [
       "developer",
       "remote"
