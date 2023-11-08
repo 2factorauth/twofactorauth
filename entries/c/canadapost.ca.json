@@ -1,10 +1,11 @@
 {
   "Canada Post": {
     "domain": "canadapost.ca",
-    "contact": {
-      "facebook": "canadapost",
-      "twitter": "canadaposthelps"
-    },
+   "tfa": [
+      "sms",
+      "email"
+    ],
+    "documentation": "https://www.canadapost-postescanada.ca/cpc/en/support/kb/other-products-services/managing-account/two-step-verification-and-account-security",
     "categories": [
       "postal"
     ],
