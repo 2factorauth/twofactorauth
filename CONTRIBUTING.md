@@ -380,15 +380,7 @@ For context, check out the discussion in issue [#242][242].
 
 ### Passwordless Authentication
 
-Many sites are now offering passwordless authentication, which replaces the password
-(something you know) with a different factor, such as something you have or are.
-Examples of this would be sites that allow users to use a U2F key or a magic link
-to login but do not have a second factor available. Since there is still only one
-factor being used (although it may not be a password), it does not constitute two-factor
-authentication.
-
-These sites can be added to the [Passkeys Directory][passkeys-directory]. The repository
-is [2factorauth/passkeys][passkeys-repository].
+Many sites now offer passwordless authentication, replacing the traditional password (something you know) with a different factor, such as something you have or are. Examples include sites allowing users to log in using a U2F key or a magic link without requiring a second factor. While these methods enhance security, it's important to note that our 2FA Directory focuses on platforms providing two distinct factors for authentication. For passkey-specific options, we invite you to explore the [Passkeys Directory][passkeys-directory]. The repository is [2factorauth/passkeys][passkeys-repository].
 
 [json]: https://www.json.org/
 [entries]: entries/
