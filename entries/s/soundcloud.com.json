@@ -1,10 +1,10 @@
 {
   "SoundCloud": {
     "domain": "soundcloud.com",
-    "contact": {
-      "facebook": "SoundCloud",
-      "twitter": "SCsupport"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://help.soundcloud.com/hc/en-us/articles/20707203094043-Two-Factor-Authentication",
     "categories": [
       "entertainment"
     ]
