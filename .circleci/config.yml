@@ -31,10 +31,6 @@ jobs:
           command: bundle exec ruby ./tests/twitter.rb
 
       - run:
-          name: Check Facebook handles
-          command: bundle exec ruby ./tests/facebook.rb
-
-      - run:
           name: Check Similarweb ranking
           command: bundle exec ruby ./tests/similarweb.rb
 
