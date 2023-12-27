@@ -135,7 +135,7 @@ Inside this object,
   media pages/communication channels do not use English. The language codes should
   be lowercase [ISO 639-1][iso-lang-wikipedia] codes.
 
-Do not add the `tfa`, `documentation`, or `recovery` fields.
+Do not add the `tfa`, `notes`, `documentation`, or `recovery` fields.
 
 The following is an example of a website that _does not_ support TFA:
 
