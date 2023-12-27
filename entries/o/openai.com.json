@@ -1,10 +1,11 @@
 {
     "OpenAI": {
         "domain": "openai.com",
-        "tfa": [
-          "totp"
-        ],
-        "notes": "Enabling 2FA is only available from the ChatGPT interface at the moment.",
+        "contact": {
+          "twitter": "OpenAI"
+        },
+        "notes": "2FA is only available for accounts that have activated it in the past. As of Monday, June 12 2023, new 2FA/MFA enrollments are temporarily paused.",
+        "documentation": "https://help.openai.com/en/articles/7967234-does-openai-offer-multi-factor-authentication-mfa-two-factor-authentication-2fa",
         "categories": [
             "developer"
         ]
