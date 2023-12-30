@@ -27,11 +27,11 @@ jobs:
           stale-pr-label: '${{ env.stale_label }}'
           stale-pr-message: |
             As the requested changes haven't been resolved yet, this PR will be marked as inactive.
-            > **Warning**
+            > [!Warning]
             > Unless there's activity within the next 7 days, this PR will be closed.
           close-pr-message: |
             Closing due to inactivity.
-            > **Note**
+            > [!Note]
             > The PR author can still commit the requested changes and re-open this PR.
             > If someone else wants to commit the requested changes, you can create a new PR and link to this PR.
 
