@@ -7,7 +7,9 @@ env:
   GH_TOKEN: ${{ github.token }}
 
 jobs:
-  process:
+  replace:
+    name: Replace Issue Title
+    if: contains(toJson(github.event.issue.labels.*.name), 'add site') || contains(toJson(github.event.issue.labels.*.name), 'update site')
     runs-on: ubuntu-latest
     steps:
       - name: Issue Forms Body Parser
