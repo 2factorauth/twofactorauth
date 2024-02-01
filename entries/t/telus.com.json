@@ -1,11 +1,13 @@
 {
   "Telus": {
     "domain": "telus.com",
-    "url": "https://www.telus.com",
-    "contact": {
-      "facebook": "telus",
-      "twitter": "TELUSsupport"
-    },
+    "tfa": [
+      "custom-software"
+    ],
+    "custom-software": [
+      "My TELUS App"
+    ],
+    "documentation": "https://www.telus.com/en/support/article/my-telus-2-step-verification",
     "categories": [
       "utilities"
     ],
