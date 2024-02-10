@@ -1,13 +1,11 @@
 {
   "Bank Australia": {
     "domain": "bankaust.com.au",
-    "tfa": [
-      "custom-software"
-    ],
-    "custom-software": [
-      "Symantec VIP"
-    ],
-    "documentation": "https://www.bankaust.com.au/support/symantec-vip",
+    "contact": {
+        "facebook": "bankaust",
+        "twitter": "bankaust",
+        "form": "https://www.bankaust.com.au/support/complaints-and-disputes"
+    },
     "regions": [
       "au"
     ],
