@@ -2,6 +2,7 @@
   "Uber": {
     "domain": "uber.com",
     "tfa": [
+      "totp",
       "sms"
     ],
     "documentation": "https://help.uber.com/riders/article/turn-on-2-step-verification?nodeId=b8bb9152-8c91-4f49-83c4-35cf2e1dcf72",
