@@ -1,10 +1,15 @@
 {
   "University of Colorado Boulder": {
     "domain": "colorado.edu",
-    "contact": {
-      "twitter": "CUBoulderOIT",
-      "email": "oithelp@colorado.edu"
-    },
+    "tfa": [
+      "sms",
+      "call",
+    ],
+    "custom-software": [
+      "Duo"
+    ],
+    "documentation": "https://oit.colorado.edu/services/identity-access-management/duo-multi-factor-authentication",
+    "notes": "SMS required to setup TOTP 2FA.",
     "categories": [
       "universities"
     ],
