@@ -1,11 +1,11 @@
 {
   "Datadog": {
     "domain": "datadoghq.com",
-    "url": "https://app.datadoghq.com",
     "tfa": [
       "totp"
     ],
     "documentation": "https://docs.datadoghq.com/account_management/multi-factor_authentication/",
+    "recovery": "https://docs.datadoghq.com/account_management/multi-factor_authentication/#mfa-recovery",
     "categories": [
       "developer"
     ]
