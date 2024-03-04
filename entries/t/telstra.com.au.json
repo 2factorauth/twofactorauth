@@ -3,7 +3,11 @@
     "domain": "telstra.com.au",
     "tfa": [
       "sms",
-      "email"
+      "email",
+      "custom-software"
+    ],
+    "custom-software": [
+      "My Telstra app"
     ],
     "documentation": "https://www.telstra.com.au/mytelstra/my-telstra-security",
     "categories": [
