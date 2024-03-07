@@ -1,9 +1,10 @@
 {
     "OpenAI": {
         "domain": "openai.com",
-        "contact": {
-          "twitter": "OpenAI"
-        },
+        "tfa": [
+          "totp"
+        ],
+        "documentation": "https://help.openai.com/en/articles/7967234",
         "categories": [
             "developer"
         ]
