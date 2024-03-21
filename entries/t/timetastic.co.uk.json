@@ -1,6 +1,9 @@
 {
   "Timetastic": {
     "domain": "timetastic.co.uk",
+    "additional-domains": [
+      "timetastic.us"
+    ],
     "tfa": [
         "totp"
     ],
