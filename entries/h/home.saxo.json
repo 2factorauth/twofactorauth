@@ -1,16 +1,36 @@
 {
     "Saxo Bank": {
       "domain": "home.saxo",
-      "url": "https://www.home.saxo/",
       "additional-domains": [
         "saxotrader.com"
       ],
       "tfa": [
-        "totp"
+        "sms",
+        "custom-software"
       ],
-      "documentation": "https://www.help.saxo/hc/en-us/articles/360038307372",
+      "custom-software": [
+        "Saxo app"
+      ],
       "categories": [
         "investing"
+      ],
+      "regions": [
+        "ae",
+        "be",
+        "ch",
+        "cn",
+        "cz",
+        "dk",
+        "fr",
+        "gb",
+        "it",
+        "jp",
+        "nl",
+        "no",
+        "po",
+        "ru",
+        "sg",
+        "sk"
       ]
     }
   }
