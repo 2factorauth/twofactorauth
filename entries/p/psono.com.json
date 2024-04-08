@@ -1,0 +1,25 @@
+{
+  "Psono": {
+    "domain": "psono.com",
+    "tfa": [
+      "totp",
+      "custom-hardware",
+      "custom-software",
+      "u2f"
+    ],
+    "custom-hardware": [
+      "Yubico OTP",
+      "Windows Fingerprint",
+      "Smart Card"
+    ],
+    "custom-software": [
+      "Quant Authenticator",
+      "Duo"
+    ],
+    "documentation": "https://doc.psono.com/user/two-factor-authentication/google-authenticator.html",
+    "recovery": "https://doc.psono.com/user/other/recovery-codes.html",
+    "keywords": [
+      "identity"
+    ]
+  }
+}
