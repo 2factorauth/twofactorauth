@@ -24,4 +24,4 @@ jobs:
           data: ${{ toJSON(steps.parse.outputs.data) }}
           token: ${{ secrets.GITHUB_TOKEN }}
           labels: "${{ toJSON(github.event.issue.labels) }}"
-
+          similarweb_key: ${{ secrets.SIMILARWEB_KEY }}
