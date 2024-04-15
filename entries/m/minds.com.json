@@ -1,9 +1,9 @@
 {
   "Minds": {
     "domain": "minds.com",
-    "url": "https://www.minds.com/",
     "tfa": [
-      "sms"
+      "email",
+      "totp"
     ],
     "categories": [
       "social"
