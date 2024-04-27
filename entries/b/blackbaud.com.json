@@ -1,0 +1,15 @@
+{
+  "Blackbaud": {
+    "domain": "blackbaud.com",
+    "tfa": [
+      "email",
+      "totp",
+      "sms"
+    ],
+    "documentation": "https://docs.blackbaud.com/bbid-docs/get-started/multi-factor-auth",
+    "recovery": "https://docs.blackbaud.com/bbid-docs/faq/multi-factor-auth",
+    "categories": [
+      "cloud"
+    ]
+  }
+}
