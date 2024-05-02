@@ -1,11 +1,18 @@
 {
-  "Yammer": {
+  "Viva Engage (Yammer)": {
     "domain": "yammer.com",
-    "url": "https://www.yammer.com",
-    "contact": {
-      "facebook": "Yammer",
-      "twitter": "Yammer"
-    },
+    "tfa": [
+      "sms",
+      "call",
+      "email",
+      "custom-software",
+      "totp"
+    ],
+    "custom-software": [
+      "Microsoft Authenticator"
+    ],
+    "documentation": "https://support.microsoft.com/en-us/help/12408",
+    "notes": "2FA phone calls may not be available in all regions",
     "categories": [
       "communication"
     ]
