@@ -1,6 +1,9 @@
 {
     "OpenAI (ChatGPT)": {
         "domain": "openai.com",
+        "additional-domains": [
+        	"chatgpt.com"
+        ],
         "tfa": [
           "totp"
         ],
