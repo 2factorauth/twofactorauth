@@ -1,6 +1,13 @@
 {
   "PosteItaliane": {
     "domain": "poste.it",
+    "tfa": [
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "PosteItaliane App"
+    ],
     "url": "https://www.poste.it/",
     "contact": {
       "email": "servizio.clienti@posteitaliane.it",
