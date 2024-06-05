@@ -1,19 +1,14 @@
 {
   "Commonwealth Bank of Australia": {
     "domain": "commbank.com.au",
-    "tfa": [
-      "sms",
-      "custom-hardware",
-      "custom-software"
+    "additional-domains": [
+      "netbank.com.au"
     ],
-    "custom-software": [
-      "CommBank app"
-    ],
-    "custom-hardware": [
-      "NetCode Token"
-    ],
-    "documentation": "https://www.commbank.com.au/support.digital-banking.explain-netcode-token.html",
-    "notes": "NetCode Tokens are only offered to customers who cannot use SMS 2FA or the CommBank app.",
+    "contact": {
+      "facebook": "commonwealthbank",
+      "twitter": "commbank",
+      "form": "https://www.commbank.com.au/retail/netbank/complaints-compliments-form"
+    },
     "regions": [
       "au"
     ],
