@@ -1,9 +1,13 @@
 {
   "Up": {
     "domain": "up.com.au",
+    "additional-domains": [
+      "up.me"
+    ],
     "tfa": [
       "sms"
     ],
+    "recovery": "https://up.com.au/how-to/recover-your-account/",
     "regions": [
       "au"
     ],
