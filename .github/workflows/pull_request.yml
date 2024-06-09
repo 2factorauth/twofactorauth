@@ -1,0 +1,16 @@
+name: Pull Request tests
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Call PR Validator
+        run: |
+          curl -X GET "https://pr-validator.2factorauth.workers.dev/${{ github.event.repository.name }}/${{ github.event.number }}/" \
+          -H "Content-Type: application/json"
