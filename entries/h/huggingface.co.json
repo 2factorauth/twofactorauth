@@ -1,10 +1,10 @@
 {
   "HuggingFace": {
     "domain": "huggingface.co",
-    "contact": {
-      "facebook": "huggingface",
-      "twitter": "huggingface"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://huggingface.co/docs/hub/en/security-2fa",
     "categories": [
       "developer"
     ]
