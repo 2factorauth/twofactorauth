@@ -2,11 +2,16 @@
   "Orange": {
     "domain": "orange.fr",
     "url": "https://www.orange.fr/portail",
-    "contact": {
-      "facebook": "Orange.France",
-      "twitter": "Orange_conseil",
-      "language": "fr"
-    },
+    "tfa": [
+      "totp",
+      "u2f",
+      "custom-hardware",
+    ],
+    "custom-hardware": [
+      "Mobile Connect",
+    ],
+    "documentation": "https://mc.orange.fr/",
+    "recovery": "https://assistance.orange.fr/assistance-commerciale/l-identification/mobile-connect/mobile-connect-reinitialiser-le-code-confidentiel_265411-806635",
     "categories": [
       "utilities"
     ],
