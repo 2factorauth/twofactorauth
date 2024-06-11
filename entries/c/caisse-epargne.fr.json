@@ -2,11 +2,14 @@
   "Caisse D'Epargne": {
     "domain": "caisse-epargne.fr",
     "url": "https://www.caisse-epargne.fr/",
-    "contact": {
-      "facebook": "Caisse.Epargne",
-      "twitter": "CaissEpargneSAV",
-      "language": "fr"
-    },
+    "tfa": [
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Sécur’Pass"
+    ],
+    "documentation": "https://www.caisse-epargne.fr/comptes-cartes/dsp2/#anchor-authentification-forte",
     "regions": [
       "fr"
     ],
