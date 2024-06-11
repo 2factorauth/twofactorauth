@@ -2,11 +2,15 @@
   "Sosh": {
     "domain": "sosh.fr",
     "url": "https://www.sosh.fr",
-    "contact": {
-      "facebook": "sosh",
-      "twitter": "Sosh_fr",
-      "language": "fr"
-    },
+    "tfa": [
+      "totp",
+      "u2f",
+      "custom-hardware",
+    ],
+    "custom-hardware": [
+      "Mobile Connect",
+    ],    "documentation": "https://mc.orange.fr/",
+    "recovery": "https://assistance.sosh.fr/donnees-personnelles-et-identification/acces-au-compte-et-aux-services/mobile-connect/mobile-connect-reinitialiser-le-code-confidentiel_328997-806635",
     "categories": [
       "utilities"
     ],
