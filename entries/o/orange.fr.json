@@ -3,9 +3,7 @@
     "domain": "orange.fr",
     "url": "https://www.orange.fr/portail",
     "tfa": [
-      "totp",
-      "u2f",
-      "custom-hardware",
+          "custom-hardware",
     ],
     "custom-hardware": [
       "Mobile Connect",
