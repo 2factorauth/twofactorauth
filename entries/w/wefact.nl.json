@@ -1,0 +1,18 @@
+{
+  "WeFact": {
+    "domain": "wefact.nl",
+	"additional-domains": [
+      "mijnwefact.nl"
+    ],
+	"img": "wefact.nl.svg",
+    "tfa": [
+	  "email",
+      "totp",
+    ],
+    "documentation": "https://www.wefact.nl/help/artikel/326/instellen-van-twee-staps-authenticatie/",
+	"recovery": "https://www.wefact.nl/help/artikel/639/inloggen-bij-verlies-authenticator-app/",
+    "categories": [
+      "finance"
+    ]
+  }
+}
