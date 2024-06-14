@@ -64,7 +64,7 @@ jobs:
       - name: Get modified files
         id: diff
         run: |
-          FILES=$(jq -r '.pull_request.changed_files[]' "$GITHUB_EVENT_PATH")
+          FILES=$(${ github.api_url }/repos/${ github.repository }/pulls/${ github.head_ref }/files" | jq -r '.[].filename')
           echo "::set-output name=files::$FILES"
           ENTRIES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^entries/.*\.json$')
           echo "::set-output name=entries::${ENTRIES}"´
