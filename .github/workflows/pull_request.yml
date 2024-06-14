@@ -29,8 +29,6 @@ jobs:
         run: bundle exec ruby ./tests/validate-json.rb
       - name: Validate Categories
         run: bundle exec ruby ./tests/validate-categories.rb
-      - name: Validate Region codes
-        run: bundle exec ruby ./tests/region-codes.rb
       - name: Validate file extensions and permissions
         run: tests/validate-fs.sh
       - name: Validate Images
@@ -75,6 +73,10 @@ jobs:
       - name: Validate Language codes
         if: steps.diff.outputs.entries
         run: node tests/languages.js ${{ steps.diff.outputs.entries }}
+
+      - name: Validate Region codes
+        if: steps.diff.outputs.entries
+        run: node tests/regions.js ${{ steps.diff.outputs.entries }}
 
   external-tests:
     name: External Tests
