@@ -65,10 +65,10 @@ jobs:
         id: diff
         run: |
           echo "::debug:: Fetching files from ${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files"
-          FILES=$(curl "${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files" | jq -r '.[].filename')
-          echo "::set-output name=files::$FILES"
+          FILES=$(curl -s "${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files" | jq -r '.[].filename')
+          echo "name=${FILES}" >> $GITHUB_OUTPUT
           ENTRIES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^entries/.*\.json$')
-          echo "::set-output name=entries::${ENTRIES}"´
+          echo "entries=${ENTRIES}" >> $GITHUB_OUTPUT
 
       - name: Validate Language codes
         if: steps.diff.outputs.entries
