@@ -1,15 +1,84 @@
 name: Pull Request tests
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
+on: pull_request
+run-name: Test \#${{ github.event.number }}
+concurrency:
+  group: ${{ github.event.number }}
+  cancel-in-progress: true
+
 jobs:
-  validate:
+  ruby-tests:
+    name: Ruby tests
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: '3.0'
+        env:
+          BUNDLE_WITH: 'tests'
+      - uses: actions/cache@v3
+        with:
+          path: |
+            /tmp/iso-*.txt
+            /tmp/similarweb
+          key: tmp-files-${{ hashFiles('/tmp/similarweb/*')}}
+      - name: Validate JSON structure
+        run: bundle exec ruby ./tests/validate-json.rb
+      - name: Validate Categories
+        run: bundle exec ruby ./tests/validate-categories.rb
+      - name: Validate Region codes
+        run: bundle exec ruby ./tests/region-codes.rb
+      - name: Validate file extensions and permissions
+        run: tests/validate-fs.sh
+      - name: Validate Images
+        run: bundle exec ruby ./tests/validate-images.rb
+      - name: Validate SVG
+        run: bundle exec ruby ./tests/svg-lint.rb
+      - name: Validate URL/Domain reachability
+        run: bundle exec ruby ./tests/validate-urls.rb
+        continue-on-error: true
+      - name: Quality Checks
+        run: bundle exec ruby ./tests/quality-checks.rb
+      - name: Validate Ruby scripts
+        run: bundle exec rubocop
+
+  node-tests:
+    name: JavaScript tests
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Get modified files
+        id: diff
+        run: |
+          FILES=$(jq -r '.pull_request.changed_files[]' "$GITHUB_EVENT_PATH")
+          echo "::set-output name=files::$FILES"
+          ENTRIES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^entries/.*\.json$')
+          echo "::set-output name=entries::${ENTRIES}"´
+
+      - name: Validate Language codes
+        if: steps.diff.outputs.entries
+        run: node tests/languages.js ${{ steps.diff.outputs.entries }}
+
+  external-tests:
+    name: External Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Call PR Validator
         run: |
           curl -s --fail-with-body "https://pr-validator.2factorauth.workers.dev/${{ github.event.repository.name }}/${{ github.event.number }}/" \
