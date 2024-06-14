@@ -1,6 +1,6 @@
 name: Pull Request tests
 on: pull_request
-run-name: Test PR ${{ github.event.number }}
+run-name: ${{github.event.pull_request.title}} (${{ github.event.number }})
 concurrency:
   group: ${{ github.event.number }}
   cancel-in-progress: true
@@ -8,7 +8,7 @@ concurrency:
 jobs:
   ruby-tests:
     name: Ruby tests
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
@@ -19,7 +19,7 @@ jobs:
           ruby-version: '3.0'
         env:
           BUNDLE_WITH: 'tests'
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: |
             /tmp/iso-*.txt
