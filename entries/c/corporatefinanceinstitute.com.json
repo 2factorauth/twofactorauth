@@ -1,9 +1,12 @@
 {
-  "name": "Corporate Finance Institute",
-  "url": "https://corporatefinanceinstitute.com",
-  "tfa": [
-    "totp" 
-  ],
-  "documentation": "https://help.corporatefinanceinstitute.com/article/728-two-factor-authentication",
-  "img": "cfi-icon.svg" 
+  "Corporate Finance Institute": {
+    "domain": "corporatefinanceinstitute.com",
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://help.corporatefinanceinstitute.com/article/728-two-factor-authentication",
+    "categories": [
+      "education"
+    ]
+  }
 }
