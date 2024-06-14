@@ -19,12 +19,6 @@ jobs:
           ruby-version: '3.0'
         env:
           BUNDLE_WITH: 'tests'
-      - uses: actions/cache@v4
-        with:
-          path: |
-            /tmp/iso-*.txt
-            /tmp/similarweb
-          key: tmp-files-${{ hashFiles('/tmp/similarweb/*')}}
       - name: Validate JSON structure
         run: bundle exec ruby ./tests/validate-json.rb
       - name: Validate Categories
