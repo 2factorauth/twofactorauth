@@ -1,6 +1,6 @@
 name: Pull Request tests
 on: pull_request
-run-name: Test \#${{ github.event.number }}
+run-name: Test PR ${{ github.event.number }}
 concurrency:
   group: ${{ github.event.number }}
   cancel-in-progress: true
