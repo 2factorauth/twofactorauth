@@ -80,9 +80,7 @@ jobs:
     name: External Tests
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
       - name: Call PR Validator
         run: |
-          curl -s --fail-with-body "https://pr-validator.2factorauth.workers.dev/${{ github.event.repository.name }}/${{ github.event.number }}/" \
+          curl -s --fail-with-body "https://pr-validator.2fa.directory/${{ github.event.repository.name }}/${{ github.event.number }}/" \
           -H "Content-Type: application/json"
