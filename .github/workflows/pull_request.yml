@@ -19,28 +19,17 @@ jobs:
           ruby-version: '3.0'
         env:
           BUNDLE_WITH: 'tests'
-      - name: Validate JSON structure
-        run: bundle exec ruby ./tests/validate-json.rb
-      - name: Validate Categories
-        run: bundle exec ruby ./tests/validate-categories.rb
-      - name: Validate file extensions and permissions
-        run: tests/validate-fs.sh
-      - name: Validate Images
-        run: bundle exec ruby ./tests/validate-images.rb
       - name: Validate SVG
         run: bundle exec ruby ./tests/svg-lint.rb
       - name: Validate URL/Domain reachability
         run: bundle exec ruby ./tests/validate-urls.rb
         continue-on-error: true
-      - name: Quality Checks
-        run: bundle exec ruby ./tests/quality-checks.rb
       - name: Validate Ruby scripts
         run: bundle exec rubocop
 
   node-tests:
     name: JavaScript tests
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -57,12 +46,18 @@ jobs:
         id: diff
         run: |
           echo "::debug:: Fetching files from ${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files"
-          FILES=$(curl -s "${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files" | jq -r '.[].filename' | tr '\n' ' ')
-          echo "name=${FILES}" >> $GITHUB_OUTPUT
+          FILES=$(curl -s "${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files" | jq -r '.[] | select(.status != "removed") | .filename' | tr '\n' ' ')
           ENTRIES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^entries/.*\.json$' | tr '\n' ' ')
           if [ -n "$ENTRIES" ]; then
             echo "entries=${ENTRIES}" >> $GITHUB_OUTPUT
           fi
+          IMAGES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^img/.*$' | tr '\n' ' ')
+          if [ -n "IMAGES" ]; then
+            echo "images=${IMAGES}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Validate file extensions and permissions
+        run: tests/validate-fs.sh
 
       - name: Validate Language codes
         if: steps.diff.outputs.entries
@@ -71,6 +66,18 @@ jobs:
       - name: Validate Region codes
         if: steps.diff.outputs.entries
         run: node tests/regions.js ${{ steps.diff.outputs.entries }}
+
+      - name: Validate Categories
+        if: steps.diff.outputs.entries
+        run: node tests/categories.js ${{ steps.diff.outputs.entries }}
+
+      - name: Validate Images
+        if: ${{ steps.diff.outputs.entries || steps.diff.outputs.images }}
+        run: node tests/images.js
+
+      - name: Validate JSON structure
+        if: steps.diff.outputs.entries
+        run: node tests/json.js ${{ steps.diff.outputs.entries }}
 
   external-tests:
     name: External Tests
