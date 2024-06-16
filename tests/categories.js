@@ -25,7 +25,7 @@ async function main() {
 
       for (const category of categories || []) {
         if (!allowed_categories.includes(category)) {
-          core.error(`${category} is not a valid category.`, {file});
+          core.error(`${category} is not a valid category.`,{file});
           errors = true;
         }
       }
