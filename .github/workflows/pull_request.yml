@@ -46,7 +46,7 @@ jobs:
         id: diff
         run: |
           echo "::debug:: Fetching files from ${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files"
-          FILES=$(curl -s "${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files" | jq -r '.[].filename' | tr '\n' ' ')
+          FILES=$(curl -s "${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files" | jq -r '.[] | select(.status != "removed") | .filename' | tr '\n' ' ')
           ENTRIES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^entries/.*\.json$' | tr '\n' ' ')
           if [ -n "$ENTRIES" ]; then
             echo "entries=${ENTRIES}" >> $GITHUB_OUTPUT
