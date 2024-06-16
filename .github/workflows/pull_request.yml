@@ -21,9 +21,6 @@ jobs:
           BUNDLE_WITH: 'tests'
       - name: Validate JSON structure
         run: bundle exec ruby ./tests/validate-json.rb
-
-      - name: Validate Images
-        run: bundle exec ruby ./tests/validate-images.rb
       - name: Validate SVG
         run: bundle exec ruby ./tests/svg-lint.rb
       - name: Validate URL/Domain reachability
@@ -75,6 +72,9 @@ jobs:
       - name: Validate Categories
         if: steps.diff.outputs.entries
         run: node tests/categories.js ${{ steps.diff.outputs.entries }}
+
+      - name: Validate Images
+        run: node ./tests/images.js
 
   external-tests:
     name: External Tests
