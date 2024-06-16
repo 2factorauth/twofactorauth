@@ -19,15 +19,11 @@ jobs:
           ruby-version: '3.0'
         env:
           BUNDLE_WITH: 'tests'
-      - name: Validate JSON structure
-        run: bundle exec ruby ./tests/validate-json.rb
       - name: Validate SVG
         run: bundle exec ruby ./tests/svg-lint.rb
       - name: Validate URL/Domain reachability
         run: bundle exec ruby ./tests/validate-urls.rb
         continue-on-error: true
-      - name: Quality Checks
-        run: bundle exec ruby ./tests/quality-checks.rb
       - name: Validate Ruby scripts
         run: bundle exec rubocop
 
@@ -78,6 +74,10 @@ jobs:
       - name: Validate Images
         if: ${{ steps.diff.outputs.entries || steps.diff.outputs.images }}
         run: node ./tests/images.js
+
+      - name: Validate JSON structure
+        if: steps.diff.outputs.entries
+        run: node tests/json.js ${{ steps.diff.outputs.entries }}
 
   external-tests:
     name: External Tests

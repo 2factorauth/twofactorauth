@@ -34,8 +34,7 @@
         },
         "documentation": {
           "type": "string",
-          "format": "uri-reference",
-          "pattern": "^(https:|http:)"
+          "format": "uri"
         },
         "recovery": {
           "type": "string",

@@ -32,13 +32,6 @@ async function parseEntries(entries) {
       core.error(`Image ${path} not found.`, {file});
       errors = true;
     }
-
-    if (img && img === `${domain}.svg`) {
-      core.error(
-        `Defining the img property for ${domain} is not necessary. ${img} is the default value.`,
-        {file});
-      errors = true;
-    }
     seen_images.push(path);
   }
 }
@@ -54,6 +47,7 @@ async function parseImages(images) {
       if (!dimensionsAreValid(await getPNGDimensions(image), PNG_RES)) {
         core.error(`PNGs must be one of the following dimensions: ${PNG_RES.map(
           a => a.join('x')).join(', ')}`, {file: image});
+        errors = true;
       }
     }
   }
