@@ -34,7 +34,6 @@ jobs:
   node-tests:
     name: JavaScript tests
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -52,10 +51,13 @@ jobs:
         run: |
           echo "::debug:: Fetching files from ${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files"
           FILES=$(curl -s "${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files" | jq -r '.[].filename' | tr '\n' ' ')
-          echo "name=${FILES}" >> $GITHUB_OUTPUT
           ENTRIES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^entries/.*\.json$' | tr '\n' ' ')
           if [ -n "$ENTRIES" ]; then
             echo "entries=${ENTRIES}" >> $GITHUB_OUTPUT
+          fi
+          IMAGES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^img/.*$' | tr '\n' ' ')
+          if [ -n "IMAGES" ]; then
+            echo "images=${IMAGES}" >> $GITHUB_OUTPUT
           fi
 
       - name: Validate file extensions and permissions
@@ -74,6 +76,7 @@ jobs:
         run: node tests/categories.js ${{ steps.diff.outputs.entries }}
 
       - name: Validate Images
+        if: ${{ steps.diff.outputs.entries || steps.diff.outputs.images }}
         run: node ./tests/images.js
 
   external-tests:
