@@ -73,7 +73,7 @@ jobs:
 
       - name: Validate Images
         if: ${{ steps.diff.outputs.entries || steps.diff.outputs.images }}
-        run: node ./tests/images.js
+        run: node tests/images.js
 
       - name: Validate JSON structure
         if: steps.diff.outputs.entries
