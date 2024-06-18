@@ -5,7 +5,7 @@ async function main() {
   let errors = false;
   const files = process.argv.slice(2);
   const res = await fetch(
-    "https://raw.githubusercontent.com/2factorauth/frontend/master/data/categories.json",
+    "https://raw.githubusercontent.com/2factorauth/2fa.directory/master/data/categories.json",
     {
       accept: "application/json",
       "user-agent": "2factorauth/twofactorauth +https://2fa.directory/bots",
