@@ -31,7 +31,7 @@ jobs:
             echo "ruby=${RUBY}" >> $GITHUB_OUTPUT
           fi
       - uses: ruby/setup-ruby@v1
-        if: ${{ steps.diff.outputs.entries || steps.diff.outputs.images || steps.diff.outputs.images }}
+        if: ${{ steps.diff.outputs.entries || steps.diff.outputs.images || steps.diff.outputs.ruby }}
         with:
           bundler-cache: true
           ruby-version: '3.0'
