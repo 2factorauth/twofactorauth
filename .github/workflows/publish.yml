@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'entries/**'
+      - 'img/**'
 
 concurrency:
   group: 'publish'
@@ -18,7 +21,7 @@ jobs:
     environment: production
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 2
       - uses: ruby/setup-ruby@v1

@@ -23,8 +23,13 @@ def check_url(path, url, res = nil)
     depth += 1
     raise('Too many redirections') if depth > 5
 
-    url = URI.parse(url)
-    res = Net::HTTP.get_response(url)
+    uri = URI.parse(url)
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = (uri.scheme == 'https')
+    http.open_timeout = 5
+    http.read_timeout = 5
+    res = http.request_get(uri.request_uri)
+
     break unless res.is_a? Net::HTTPRedirection
 
     url = URI(res['location']).is_a?(URI::HTTP) ? res['location'] : "#{url.scheme}://#{url.host}#{res['location']}"
