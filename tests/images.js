@@ -14,50 +14,58 @@ let seenImages = [];
 let errors = false;
 
 async function main() {
-  await parseEntries(await glob("entries/**/*.json"));
+  const [entries, images] = await Promise.all([
+    glob("entries/**/*.json"),
+    glob("img/*/*.*"),
+  ]);
 
-  await parseImages(await glob("img/*/*.*"));
+  await parseEntries(entries);
+  await parseImages(images);
 
   process.exit(+errors);
 }
 
 async function parseEntries(entries) {
-  for (const file of entries) {
-    const data = await fs.readFile(file, "utf8");
-    const json = await JSON.parse(data);
-    const entry = json[Object.keys(json)[0]];
-    const { img, domain } = entry;
-    const path = `img/${img ? `${img[0]}/${img}` : `${domain[0]}/${domain}.svg`}`;
+  await Promise.all(
+    entries.map(async (file) => {
+      const data = await fs.readFile(file, "utf8");
+      const json = await JSON.parse(data);
+      const entry = json[Object.keys(json)[0]];
+      const { img, domain } = entry;
+      const path = `img/${img ? `${img[0]}/${img}` : `${domain[0]}/${domain}.svg`}`;
 
-    try {
-      await fs.readFile(path);
-    } catch (e) {
-      core.error(`Image ${path} not found.`, { file });
-      errors = true;
-    }
-    seenImages.push(path);
-  }
+      try {
+        await fs.readFile(path);
+      } catch (e) {
+        core.error(`Image ${path} not found.`, { file });
+        errors = true;
+      }
+      seenImages.push(path);
+    }),
+  );
 }
 
 async function parseImages(images) {
-  for (const image of images) {
-    if (!seenImages.includes(image)) {
-      core.error(`Unused image`, { file: image });
-      errors = true;
-    }
-
-    if (image.endsWith(".png")) {
-      if (!dimensionsAreValid(await getPNGDimensions(image), PNG_RES)) {
-        core.error(
-          `PNGs must be one of the following dimensions: ${PNG_RES.map((a) =>
-            a.join("x"),
-          ).join(", ")}`,
-          { file: image },
-        );
+  await Promise.all(
+    images.map(async (image) => {
+      if (!seenImages.includes(image)) {
+        core.error(`Unused image`, { file: image });
         errors = true;
       }
-    }
-  }
+
+      if (image.endsWith(".png")) {
+        if (!dimensionsAreValid(await getPNGDimensions(image), PNG_RES)) {
+          core.error(
+            `PNGs must be one of the following dimensions: ${PNG_RES.map((a) =>
+              a.join("x"),
+            ).join(", ")}`,
+            { file: image },
+          );
+          errors = true;
+        }
+      }
+    }),
+  );
 }
 
 function dimensionsAreValid(dimensions, validSizes) {
