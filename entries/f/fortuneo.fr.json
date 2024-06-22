@@ -2,11 +2,10 @@
   "Fortuneo Banque": {
     "domain": "fortuneo.fr",
     "url": "https://www.fortuneo.fr/",
-    "contact": {
-      "facebook": "fortuneo.banque",
-      "twitter": "fortuneo",
-      "language": "fr"
-    },
+        "tfa": [
+      "sms"
+    ],
+    "documentation": "https://www.fortuneo.fr/securite/authentification-code-securite",
     "categories": [
       "banking"
     ],

@@ -2,11 +2,14 @@
   "Hello bank! [FR]": {
     "domain": "hellobank.fr",
     "url": "https://www.hellobank.fr/",
-    "contact": {
-      "facebook": "HelloBankFr",
-      "twitter": "Hellobank_fr",
-      "language": "fr"
-    },
+    "tfa": [
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Clé Digitale"
+    ],
+    "documentation": "https://www.hellobankpro.fr/fr/reglementation-dsp2",
     "categories": [
       "banking"
     ],

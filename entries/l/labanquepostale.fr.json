@@ -2,11 +2,14 @@
   "La Banque Postale": {
     "domain": "labanquepostale.fr",
     "url": "https://www.labanquepostale.fr/",
-    "contact": {
-      "facebook": "labanquepostale",
-      "twitter": "LaBanquePostale",
-      "language": "fr"
-    },
+    "tfa": [
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Certicode Plus"
+    ],
+    "documentation": "https://www.labanquepostale.fr/particulier/comptes-et-cartes/espaces-clients/securite/authentification-forte.html",
     "regions": [
       "fr"
     ],

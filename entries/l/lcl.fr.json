@@ -2,11 +2,14 @@
   "Le Crédit Lyonnais (LCL)": {
     "domain": "lcl.fr",
     "url": "https://www.lcl.fr/",
-    "contact": {
-      "facebook": "LCL",
-      "twitter": "LCL",
-      "language": "fr"
-    },
+    "tfa": [
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "LCL Mes comptes"
+    ],
+    "documentation": "https://www.lcl.fr/dsp2-af",
     "categories": [
       "banking"
     ],
