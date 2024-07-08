@@ -1,16 +1,110 @@
 name: Pull Request tests
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-jobs:
-  validate:
-    runs-on: ubuntu-latest
+on: pull_request
+run-name: "${{github.event.pull_request.title}} (#${{ github.event.number }})"
+concurrency:
+  group: ${{ github.event.number }}
+  cancel-in-progress: true
 
+jobs:
+  ruby-tests:
+    name: Ruby tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Get modified files
+        id: diff
+        run: |
+          echo "::debug:: Fetching files from ${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files"
+          FILES=$(curl -s "${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files" | jq -r '.[] | select(.status != "removed") | .filename' | tr '\n' ' ')
+          ENTRIES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^entries/.*\.json$' | tr '\n' ' ')
+          if [ -n "$ENTRIES" ]; then
+            echo "entries=${ENTRIES}" >> $GITHUB_OUTPUT
+          fi
+          IMAGES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^img/.*$' | tr '\n' ' ')
+          if [ -n "IMAGES" ]; then
+            echo "images=${IMAGES}" >> $GITHUB_OUTPUT
+          fi
+          RUBY=$(echo "$FILES" | tr ' ' '\n' | grep -E '^(script|tests)/.*rb$' | tr '\n' ' ')
+          if [ -n "RUBY" ]; then
+            echo "ruby=${RUBY}" >> $GITHUB_OUTPUT
+          fi
+      - uses: ruby/setup-ruby@v1
+        if: ${{ steps.diff.outputs.entries || steps.diff.outputs.images || steps.diff.outputs.ruby }}
+        with:
+          bundler-cache: true
+          ruby-version: '3.0'
+        env:
+          BUNDLE_WITH: 'tests'
+      - name: Validate SVG
+        if: steps.diff.outputs.images
+        run: bundle exec ruby ./tests/svg-lint.rb
+      - name: Validate URL/Domain reachability
+        if: steps.diff.outputs.entries
+        run: bundle exec ruby ./tests/validate-urls.rb
+        continue-on-error: true
+      - name: Validate Ruby scripts
+        if: steps.diff.outputs.ruby
+        run: bundle exec rubocop
+
+  node-tests:
+    name: JavaScript tests
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Get modified files
+        id: diff
+        run: |
+          echo "::debug:: Fetching files from ${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files"
+          FILES=$(curl -s "${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files" | jq -r '.[] | select(.status != "removed") | .filename' | tr '\n' ' ')
+          ENTRIES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^entries/.*\.json$' | tr '\n' ' ')
+          if [ -n "$ENTRIES" ]; then
+            echo "entries=${ENTRIES}" >> $GITHUB_OUTPUT
+          fi
+          IMAGES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^img/.*$' | tr '\n' ' ')
+          if [ -n "IMAGES" ]; then
+            echo "images=${IMAGES}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Validate file extensions and permissions
+        run: tests/validate-fs.sh
+
+      - name: Validate Language codes
+        if: steps.diff.outputs.entries
+        run: node tests/languages.js ${{ steps.diff.outputs.entries }}
+
+      - name: Validate Region codes
+        if: steps.diff.outputs.entries
+        run: node tests/regions.js ${{ steps.diff.outputs.entries }}
+
+      - name: Validate Categories
+        if: steps.diff.outputs.entries
+        run: node tests/categories.js ${{ steps.diff.outputs.entries }}
+
+      - name: Validate Images
+        if: ${{ steps.diff.outputs.entries || steps.diff.outputs.images }}
+        run: node tests/images.js
+
+      - name: Validate JSON structure
+        if: steps.diff.outputs.entries
+        run: node tests/json.js ${{ steps.diff.outputs.entries }}
+
+  external-tests:
+    name: External Tests
+    runs-on: ubuntu-latest
+    steps:
       - name: Call PR Validator
         run: |
-          curl -s --fail-with-body "https://pr-validator.2factorauth.workers.dev/${{ github.event.repository.name }}/${{ github.event.number }}/" \
+          curl -s --fail-with-body "https://pr-validator.2fa.directory/${{ github.event.repository.name }}/${{ github.event.number }}/" \
           -H "Content-Type: application/json"

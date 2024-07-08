@@ -317,21 +317,21 @@ Below is a table of each available category, the name of the category, which tit
 description.
 
 | Name             |           Title           | Description                                                                         |
-|------------------|:-------------------------:|-------------------------------------------------------------------------------------|
+| ---------------- | :-----------------------: | ----------------------------------------------------------------------------------- |
 | backup           |      Backup and Sync      | Online backup and cross-device file synchronization                                 |
 | banking          |          Banking          | Online banking platforms                                                            |
-| betting          |          Betting          | Betting and Gambling                                                                |
+| betting          |          Betting          | Betting and gambling                                                                |
 | cloud            |      Cloud Computing      | "Serverless" cloud computing                                                        |
 | communication    |       Communication       | Online communication platforms excluding email and social media                     |
 | creativity       |        Creativity         | Art and design software                                                             |
 | crowdfunding     |       Crowdfunding        |                                                                                     |
 | cryptocurrencies |     Cryptocurrencies      | Any site whose main purpose is handling cryptocurrencies                            |
 | developer        |         Developer         | Development software                                                                |
-| domains          |          Domains          | DNS Registrars                                                                      |
+| domains          |          Domains          | DNS registrars                                                                      |
 | education        |         Education         | Non-university education platforms                                                  |
 | email            |           Email           | Email providers                                                                     |
 | entertainment    |       Entertainment       | Audio/Video entertainment excluding games                                           |
-| finance          |          Finance          | Financial, insurance and pension services                                           |
+| finance          |          Finance          | Financial and pension services                                                      |
 | food             |           Food            | Food and beverage services                                                          |
 | gaming           |          Gaming           | Games and game platforms. Sites for buying games should be listed in Retail         |
 | government       |        Government         | Government portals. Excluding education                                             |
@@ -339,6 +339,7 @@ description.
 | hosting          |        Hosting/VPS        | Online website hosting, VPS, and dedicated server rentals                           |
 | hotels           | Hotels and Accommodations | Hotels and short term accommodation providers                                       |
 | identity         |    Identity Management    | Authentication providers, Single Sign On platforms                                  |
+| insurance        |         Insurance         | Insurance services                                                                  |
 | investing        |         Investing         | Investment platforms                                                                |
 | iot              |            IoT            | Internet of Things and device management platforms                                  |
 | legal            |           Legal           | Legal aid services                                                                  |
