@@ -1,9 +1,15 @@
 {
   "Labcorp Patient": {
     "domain": "patient.labcorp.com",
-    "contact": {
-      "form": "https://www.labcorp.com/contact-us/labcorp-patient-portal"
-    },
+    "tfa": [
+      "sms",
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Okta Verify"
+    ],
+    "documentation": "https://patient.labcorp.com/help-center/q-and-a/8000/1",
     "categories": [
       "health"
     ],
