@@ -39,6 +39,6 @@ checkExt tests rb sh json js
 checkPerm img 664 644
 checkPerm tests 775 755 664 644
 checkPerm entries 664 644
-checkPerm scripts 775 755
+checkPerm scripts 775 755 664 644
 checkPerm .github 664 644
 exit $status
