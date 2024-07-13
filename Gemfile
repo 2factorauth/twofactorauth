@@ -8,6 +8,4 @@ group :tests, optional: true do
   gem 'rubocop'
 end
 
-gem 'algolia', '~> 2.3'
-gem 'dotenv', '~> 2.8'
 gem 'parallel', '~> 1.22'
