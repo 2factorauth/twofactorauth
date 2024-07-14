@@ -40,7 +40,7 @@ async function main() {
       error('Unnecessary processing instruction found');
     if (test(svg, '//image'))
       error('Embedded image detected');
-    if (svg.split('\n').length > 1)
+    if (svg.split('\n').filter(line => line.trim()).length > 1)
       error('Minimize file to one line');
     if (test(svg, '//comment()'))
       warn('Remove comments');
