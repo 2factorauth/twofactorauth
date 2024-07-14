@@ -1,62 +1,51 @@
-#!/usr/bin/env node
-
-const fs = require('fs');
-const { chromium } = require('playwright');
+const fs = require('fs').promises;
 const core = require('@actions/core');
-require('dotenv').config(); // Load environment variables from .env file
+const AbortController = require('abort-controller');
 
-// Function to check if a URL is reachable using Playwright
-async function checkUrl(url) {
-  const browser = await chromium.launch();
-  const context = await browser.newContext();
-  const page = await context.newPage();
+// Helper function to create a timeout promise
+function timeout(ms) {
+  return new Promise((_, reject) => setTimeout(() =>
+    reject(new Error('timeout')), ms));
+}
+
+async function checkURL(url, file) {
+  const controller = new AbortController();
+  const signal = controller.signal;
+
   try {
-    const response = await page.goto(url, { waitUntil: 'networkidle' });
-    const status = response.status();
-    if (status >= 200 && status < 400) {
-      core.info(`Reachable: ${url}`);
-      await browser.close();
-      return { url, reachable: true };
-    }
-  } catch (err) {
-    core.error(`Not reachable: ${url}`);
+    const res = await Promise.race([
+      fetch(url, {
+        headers: {
+          'User-Agent': '2factorauth/URLValidator (+https://2fa.directory/bots)',
+        },
+        signal,
+      }),
+      timeout(2000).then(() => controller.abort()),
+    ]);
+
+    if (res.ok)
+      return true;
+    else if (res.status !== 403)
+      core.warning(`Unable to fetch ${url} (${res.status})`, {file});
+  } catch (e) {
+    core.warning(`Unable to fetch ${url}`, {file});
   }
-  await browser.close();
-  return { url, reachable: false };
+  return false;
 }
 
-// Main function to read URLs from a file and check their reachability
-async function main() {
-  const filePath = process.argv.slice(2); // Get the file path from command-line arguments
-  if (!filePath) {
-    core.error('Please provide a file path');
-    process.exit(1);
-  }
+async function main(files) {
+  await Promise.all(files.map(async file => {
+    const json = JSON.parse(await fs.readFile(file));
+    const entry = json[Object.keys(json)[0]];
+    let urls = [entry.url ? entry.url:`https://${entry.domain}/`];
 
-  if (!fs.existsSync(filePath)) {
-    core.error('File does not exist');
-    process.exit(1);
-  }
+    entry['additional-domains']?.forEach(
+      domain => urls.push(`https://${domain}/`));
 
-  const urls = fs.readFileSync(filePath, 'utf-8').split('\n').filter(Boolean);
-  const results = await Promise.all(urls.map(url => checkUrl(url)));
+    await Promise.all(urls.map((url) => checkURL(url, file)));
+  }));
 
-  // Log results
-  const reachableUrls = results.filter(result => result.reachable).map(result => result.url);
-  const unreachableUrls = results.filter(result => !result.reachable).map(result => result.url);
-
-  core.info(`Reachable URLs (${reachableUrls.length}):`);
-  reachableUrls.forEach(url => core.info(url));
-
-  core.error(`Unreachable URLs (${unreachableUrls.length}):`);
-  unreachableUrls.forEach(url => core.error(url));
-
-  // Exit with status code 1 if there are unreachable URLs
-  process.exit(unreachableUrls.length > 0 ? 1 : 0);
+  return true;
 }
 
-// Execute the main function and catch any errors
-main().catch(err => {
-  core.error('Error in main execution:', err);
-  process.exit(1);
-});
+main(process.argv.slice(2)).then(() => process.exit(0))
