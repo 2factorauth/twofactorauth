@@ -55,7 +55,7 @@ async function main() {
     if (test(svg, '//*[@fill="#000" or @fill="#000000"]'))
       warn('Unnecessary fill="#000" attribute');
     if (test(svg, '//*[@style]'))
-      warn('Use Attributes instead of style elements');
+      warn('Use attributes instead of style elements');
     if (test(svg, '//*[@fill-opacity]'))
       warn('Use hex color instead of fill-opacity');
     if (svg.includes('xml:space'))
