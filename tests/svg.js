@@ -66,7 +66,7 @@ async function main() {
           "//*[@version or @fill-rule or @script or @a or @clipPath or @class]",
         )
       )
-        warn("Unnecessary attribute(s) found");
+        warn("Unnecessary attribute(s) found: version, fill-rule, script, a, clipPath, or class");
     }),
   );
   process.exit(+errors);
