@@ -15,7 +15,7 @@ sign_and_verify() {
 }
 
 # Iterate API files in parallel
-for f in api/v*/.json; do
+for f in api/v*/*.json; do
   sign_and_verify "$f" &
 done
 

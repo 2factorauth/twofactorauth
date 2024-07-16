@@ -57,7 +57,7 @@ jobs:
           passphrase: ${{ secrets.PGP_PASSWORD }}
 
       - name: Sign API files
-        run: bash scripts/Sign.rb
+        run: bash scripts/Sign.sh
         env:
           PGP_PASSWORD: ${{ secrets.PGP_PASSWORD }}
           PGP_KEY_ID: ${{ steps.pgp.outputs.keyid }}
@@ -67,7 +67,7 @@ jobs:
           rsync -av {robots.txt,api/} public/
           rsync -av img/. public/icons/
 
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: public/
 

@@ -31,7 +31,7 @@ Object.keys(all)
       entry["tfa"].forEach((method) => {
         if (!tfa[method]) tfa[method] = {};
 
-        tfa[method][key] = entry;
+        tfa[method][entryName] = entry;
       });
     }
 
