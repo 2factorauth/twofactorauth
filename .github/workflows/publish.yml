@@ -29,7 +29,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --omit=dev
 
       - name: Get modified files
         id: diff
@@ -50,7 +50,7 @@ jobs:
           ALGOLIA_INDEX_NAME: ${{ vars.ALGOLIA_INDEX_NAME }}
           ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
 
-      - uses: crazy-max/ghaction-import-gpg@v5
+      - uses: crazy-max/ghaction-import-gpg@v6
         id: pgp
         with:
           gpg_private_key: ${{ secrets.PGP_KEY }}
@@ -64,17 +64,15 @@ jobs:
 
       - name: Prepare publish directory
         run: |
-          mkdir -p public/icons
-          cp -r api/. public/
-          cp -r img/. public/icons/
-          cp robots.txt public/
+          rsync -av {robots.txt,api/} public/
+          rsync -av img/. public/icons/
 
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: public/
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
 
       - name: Send webhook to Cloudflare
         run: curl -X POST -IL "${{ secrets.WEBHOOK }}" -o /dev/null -w '%{http_code}\n' -s

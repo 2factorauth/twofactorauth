@@ -6,48 +6,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  ruby-tests:
-    name: Ruby tests
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Get modified files
-        id: diff
-        run: |
-          echo "::debug:: Fetching files from ${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files"
-          FILES=$(curl -s "${{ github.api_url }}/repos/${{ github.repository }}/pulls/${{ github.event.number }}/files" | jq -r '.[] | select(.status != "removed") | .filename' | tr '\n' ' ')
-          ENTRIES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^entries/.*\.json$' | tr '\n' ' ')
-          if [ -n "$ENTRIES" ]; then
-            echo "entries=${ENTRIES}" >> $GITHUB_OUTPUT
-          fi
-          IMAGES=$(echo "$FILES" | tr ' ' '\n' | grep -E '^img/.*$' | tr '\n' ' ')
-          if [ -n "IMAGES" ]; then
-            echo "images=${IMAGES}" >> $GITHUB_OUTPUT
-          fi
-          RUBY=$(echo "$FILES" | tr ' ' '\n' | grep -E '^(script|tests)/.*rb$' | tr '\n' ' ')
-          if [ -n "RUBY" ]; then
-            echo "ruby=${RUBY}" >> $GITHUB_OUTPUT
-          fi
-      - uses: ruby/setup-ruby@v1
-        if: ${{ steps.diff.outputs.entries || steps.diff.outputs.images || steps.diff.outputs.ruby }}
-        with:
-          bundler-cache: true
-          ruby-version: '3.0'
-        env:
-          BUNDLE_WITH: 'tests'
-      - name: Validate SVG
-        if: steps.diff.outputs.images
-        run: bundle exec ruby ./tests/svg-lint.rb
-      - name: Validate URL/Domain reachability
-        if: steps.diff.outputs.entries
-        run: bundle exec ruby ./tests/validate-urls.rb
-        continue-on-error: true
-      - name: Validate Ruby scripts
-        if: steps.diff.outputs.ruby
-        run: bundle exec rubocop
-
   node-tests:
     name: JavaScript tests
     runs-on: ubuntu-latest
@@ -61,7 +19,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --omit=optional
 
       - name: Get modified files
         id: diff
@@ -76,6 +34,10 @@ jobs:
           if [ -n "IMAGES" ]; then
             echo "images=${IMAGES}" >> $GITHUB_OUTPUT
           fi
+
+      - name: Validate JSON structure
+        if: steps.diff.outputs.entries
+        run: node tests/json.js ${{ steps.diff.outputs.entries }}
 
       - name: Validate file extensions and permissions
         run: tests/validate-fs.sh
@@ -94,11 +56,14 @@ jobs:
 
       - name: Validate Images
         if: ${{ steps.diff.outputs.entries || steps.diff.outputs.images }}
-        run: node tests/images.js
+        run: |
+          node tests/images.js
+          node tests/svg.js ${{ steps.diff.outputs.images }}
 
-      - name: Validate JSON structure
+      - name: Validate URL reachability
         if: steps.diff.outputs.entries
-        run: node tests/json.js ${{ steps.diff.outputs.entries }}
+        run: node tests/urls.js ${{ steps.diff.outputs.entries }}
+        continue-on-error: true
 
   external-tests:
     name: External Tests
