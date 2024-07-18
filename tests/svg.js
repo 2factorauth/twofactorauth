@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { DOMParser } = require("xmldom");
+const { DOMParser } = require("@xmldom/xmldom");
 const xpath = require("xpath");
 const core = require("@actions/core");
 let errors = false;
