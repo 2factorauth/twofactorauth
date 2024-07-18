@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-let all = {};
+let all = [];
 let tfa = {};
 let regions = {};
 
@@ -12,24 +12,21 @@ fs.readdirSync('entries').forEach((dir) => {
   fs.readdirSync(path.join('entries', dir)).forEach((file) => {
     if (file.endsWith('.json')) {
       let data = JSON.parse(
-        fs.readFileSync(path.join('entries', dir, file), 'utf8'),
-      );
+        fs.readFileSync(path.join('entries', dir, file), 'utf8'));
       let key = Object.keys(data)[0];
-      all[key] = data[key];
+      all.push([key, data[key]]);
     }
   });
 });
 
 // Process all entries
-Object.keys(all).sort().forEach((entryName) => {
-  let entry = all[entryName];
+all.sort((a, b) => a[0].localeCompare(b[0])).forEach(([entryName, entry]) => {
 
   // Process tfa methods
   if ('tfa' in entry) {
     entry['tfa'].forEach((method) => {
-      if (!tfa[method]) tfa[method] = {};
-
-      tfa[method][entryName] = entry;
+      if (!tfa[method]) tfa[method] = [];
+      tfa[method].push([entryName, entry]);
     });
   }
 
@@ -38,7 +35,6 @@ Object.keys(all).sort().forEach((entryName) => {
     entry['regions'].forEach((region) => {
       if (region[0] !== '-') {
         if (!regions[region]) regions[region] = {count: 0};
-
         regions[region]['count'] += 1;
       }
     });
@@ -55,20 +51,16 @@ Object.keys(all).sort().forEach((entryName) => {
 const outputDir = 'api/v3';
 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, {recursive: true});
 
-const writeJsonFile = (filename, data) =>
-  fs.writeFileSync(
-    path.join(outputDir, filename),
-    JSON.stringify(data),
-  );
+const writeJsonFile = (filename, data) => fs.writeFileSync(
+  path.join(outputDir, filename), JSON.stringify(data));
 
 writeJsonFile('all.json', all);
 
-Object.keys(tfa).forEach((method) =>
-  writeJsonFile(`${method}.json`, tfa[method]),
-);
+Object.keys(tfa).
+  forEach((method) => writeJsonFile(`${method}.json`, tfa[method]));
 
 // Add the 'int' region
-regions['int'] = {count: Object.keys(all).length, selection: true};
+regions['int'] = {count: all.length, selection: true};
 
 // Write regions.json
 const sortedRegions = Object.entries(regions).
@@ -80,11 +72,6 @@ const sortedRegions = Object.entries(regions).
 writeJsonFile('regions.json', sortedRegions);
 
 // Write tfa.json
-const tfaEntries = Object.keys(all).
-  filter((key) => all[key].tfa).
-  sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())).
-  reduce((acc, key) => {
-    acc[key] = all[key];
-    return acc;
-  }, {});
+const tfaEntries = all.filter(([, entry]) => entry.tfa).
+  sort(([a], [b]) => a.toLowerCase().localeCompare(b.toLowerCase()));
 writeJsonFile('tfa.json', tfaEntries);
