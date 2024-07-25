@@ -1,9 +1,14 @@
 #!/usr/bin/env node
 
-const fs = require('fs').promises;
-const path = require('path');
-const {globSync} = require('glob');
-const core = require('@actions/core');
+const fs = require("fs").promises;
+const path = require("path");
+const { globSync } = require("glob");
+const core = require("@actions/core");
+const Ajv = require("ajv");
+const addFormats = require("ajv-formats");
+const ajv = new Ajv({ strict: false, allErrors: true });
+addFormats(ajv);
+require("ajv-errors")(ajv);
 
 /**
  * Read and parse a JSON file asynchronously.
@@ -11,8 +16,8 @@ const core = require('@actions/core');
  * @param {string} filePath - The path to the JSON file.
  * @returns {Promise<Object>} - The parsed JSON object.
  */
-const readJSONFile = (filePath) => fs.readFile(filePath, 'utf8').
-  then(JSON.parse);
+const readJSONFile = (filePath) =>
+  fs.readFile(filePath, "utf8").then(JSON.parse);
 
 /**
  * Write a JSON object to a file asynchronously.
@@ -21,8 +26,11 @@ const readJSONFile = (filePath) => fs.readFile(filePath, 'utf8').
  * @param {Object} data - The JSON object to write.
  * @returns {Promise<void>}
  */
-const writeJSONFile = (filePath, data) => fs.writeFile(filePath,
-  JSON.stringify(data, null, process.env.NODE_ENV !== 'production' ? 2:0));
+const writeJSONFile = (filePath, data) =>
+  fs.writeFile(
+    filePath,
+    JSON.stringify(data, null, process.env.NODE_ENV !== "production" ? 2 : 0),
+  );
 
 /**
  * Ensure a directory exists, creating it if necessary.
@@ -30,9 +38,9 @@ const writeJSONFile = (filePath, data) => fs.writeFile(filePath,
  * @param {string} dirPath - The path to the directory.
  * @returns {Promise<void>}
  */
-const ensureDir = (dirPath) => fs.mkdir(dirPath, {recursive: true}).
-  catch((error) => {
-    if (error.code !== 'EEXIST') throw error;
+const ensureDir = (dirPath) =>
+  fs.mkdir(dirPath, { recursive: true }).catch((error) => {
+    if (error.code !== "EEXIST") throw error;
   });
 
 /**
@@ -44,18 +52,20 @@ const ensureDir = (dirPath) => fs.mkdir(dirPath, {recursive: true}).
 const processEntries = async (files) => {
   const entries = {};
 
-  await Promise.all(files.map(async (file) => {
-    const data = await readJSONFile(file);
-    const entry = data[Object.keys(data)[0]];
+  await Promise.all(
+    files.map(async (file) => {
+      const data = await readJSONFile(file);
+      const entry = data[Object.keys(data)[0]];
 
-    // Add the main domain entry
-    entries[entry.domain] = entry;
+      // Add the main domain entry
+      entries[entry.domain] = entry;
 
-    // Duplicate entry for each additional domain
-    entry['additional-domains']?.forEach((additionalDomain) => {
-      entries[additionalDomain] = entry;
-    });
-  }));
+      // Duplicate entry for each additional domain
+      entry["additional-domains"]?.forEach((additionalDomain) => {
+        entries[additionalDomain] = entry;
+      });
+    }),
+  );
 
   return entries;
 };
@@ -74,10 +84,10 @@ const generateApi = async (entries) => {
     ensureDir(apiDirectory),
     Object.entries(entries).map(async ([domain, entry]) => {
       const apiEntry = {
-        methods: entry['tfa'],
+        methods: entry["tfa"],
         contact: entry.contact,
-        'custom-software': entry['custom-software'],
-        'custom-hardware': entry['custom-hardware'],
+        "custom-software": entry["custom-software"],
+        "custom-hardware": entry["custom-hardware"],
         documentation: entry.documentation,
         recovery: entry.recovery,
         notes: entry.notes,
@@ -87,19 +97,43 @@ const generateApi = async (entries) => {
       allEntries[domain] = apiEntry;
 
       // Group entries by TFA/2FA methods
-      entry['tfa']?.forEach((method) => {
+      entry["tfa"]?.forEach((method) => {
         tfaMethods[method] ||= {};
         tfaMethods[method][domain] = apiEntry;
       });
-    })]);
+    }),
+  ]);
 
   // Write all entries to all.json and each TFA/2FA method to its own JSON file in parallel
   await Promise.all([
-    writeJSONFile(path.join(apiDirectory, 'all.json'), allEntries),
+    writeJSONFile(path.join(apiDirectory, "all.json"), allEntries),
     ...Object.entries(tfaMethods).map(([method, methodEntries]) =>
       writeJSONFile(path.join(apiDirectory, `${method}.json`), methodEntries),
     ),
   ]);
+};
+
+const validateSchema = async () => {
+  const schema = await readJSONFile(jsonSchema);
+  const validate = ajv.compile(schema);
+
+  const files = globSync(`${apiDirectory}/*.json`);
+  await Promise.all(
+    files.map(async (file) => {
+      const data = await readJSONFile(file);
+      const valid = validate(data);
+      validate.errors?.forEach((err) => {
+        const { message, instancePath, keyword: title } = err;
+        const instance = instancePath?.split("/");
+        if (message)
+          core.error(`${instance[instance.length - 1]} ${message}`, {
+            file,
+            title,
+          });
+        else core.error(err, { file });
+      });
+    }),
+  );
 };
 
 /**
@@ -109,22 +143,24 @@ const generateApi = async (entries) => {
  */
 const main = async () => {
   try {
-    core.info('Generating API v4');
+    core.info("Generating API v4");
 
     // Get all JSON entry files
     const files = globSync(entriesGlob);
     // Process entries and generate the API
     const entries = await processEntries(files);
     await generateApi(entries);
+    await validateSchema();
 
-    core.info('API v4 generation completed successfully.');
+    core.info("API v4 generation completed successfully.");
   } catch (error) {
     core.setFailed(error);
   }
 };
 
 // Define the path to the entries and the API output directory
-const entriesGlob = 'entries/*/*.json';
-const apiDirectory = 'api/v4';
+const entriesGlob = "entries/*/*.json";
+const apiDirectory = "api/v4";
+const jsonSchema = "tests/schemas/api.json";
 
 module.exports = main();
