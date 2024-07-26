@@ -2,7 +2,7 @@ const fs = require("fs").promises;
 const core = require("@actions/core");
 const Ajv = require("ajv");
 const addFormats = require("ajv-formats");
-const schema = require("schemas/entries.json");
+const schema = require("tests/schemas/entries.json");
 const { basename } = require("node:path");
 
 const ajv = new Ajv({ strict: false, allErrors: true });
