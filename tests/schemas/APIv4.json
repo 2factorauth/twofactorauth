@@ -8,10 +8,19 @@
       "properties": {
         "methods": {
           "type": "array",
-          "description": "The 2FA methods supported by the service.",
+          "uniqueItems": true,
+          "minItems": 1,
           "items": {
             "type": "string",
-            "pattern": "^(sms|call|email|u2f|totp|custom-software|custom-hardware)$"
+            "enum": [
+              "sms",
+              "call",
+              "email",
+              "u2f",
+              "totp",
+              "custom-software",
+              "custom-hardware"
+            ]
           }
         },
         "contact": {
