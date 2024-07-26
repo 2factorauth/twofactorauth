@@ -6,6 +6,7 @@ const Ajv = require("ajv");
 const addFormats = require("ajv-formats");
 const { globSync } = require("glob");
 const { setFailed } = require("@actions/core");
+const core = require("@actions/core");
 
 const entriesDir = "entries";
 const apiDirectory = "api/v3";
@@ -64,13 +65,11 @@ const processEntries = async () => {
   });
   const allFiles = (await Promise.all(filePromises)).flat();
 
-  const dataPromises = allFiles.map(async (file) => {
+  const all = await Promise.all(allFiles.map(async (file) => {
     const data = await readJSONFile(file);
     const key = Object.keys(data)[0];
     return [key, data[key]];
-  });
-
-  const all = await Promise.all(dataPromises);
+  }));
 
   await Promise.all(
     all.sort((a, b) => a[0].localeCompare(b[0])).
@@ -171,10 +170,12 @@ const validateSchema = async () => {
  */
 const main = async () => {
   try {
+    core.info("Generating API v3");
     const { allEntries, tfa, regions } = await processEntries();
     await ensureDir(apiDirectory);
     await generateAPI(allEntries, tfa, regions);
     await validateSchema();
+    core.info("API v3 generation completed successfully");
   } catch (e) {
     setFailed(e);
   }

@@ -117,25 +117,21 @@ const validateSchema = async () => {
   const ajv = new Ajv({ strict: false, allErrors: true });
   addFormats(ajv);
   require("ajv-errors")(ajv);
-  try {
-    const schema = await readJSONFile(jsonSchema);
-    const validate = ajv.compile(schema);
-    const files = globSync(`${apiDirectory}/*.json`);
+  const schema = await readJSONFile(jsonSchema);
+  const validate = ajv.compile(schema);
+  const files = globSync(`${apiDirectory}/*.json`);
 
-    // Validate each file against the schema
-    await Promise.all(files.map(async (file) => {
-      validate(await readJSONFile(file));
+  // Validate each file against the schema
+  await Promise.all(files.map(async (file) => {
+    validate(await readJSONFile(file));
 
-      validate.errors?.forEach((err) => {
-        const { message, instancePath, keyword: title } = err;
-        const errorPath = instancePath?.split("/").slice(1).join("/");
+    validate.errors?.forEach((err) => {
+      const { message, instancePath, keyword: title } = err;
+      const errorPath = instancePath?.split("/").slice(1).join("/");
 
-        core.error(`${errorPath} ${message}`, { file, title });
-      });
-    }));
-  } catch (error) {
-    console.error("Error validating schema:", error);
-  }
+      core.error(`${errorPath} ${message}`, { file, title });
+    });
+  }));
 };
 
 /**
@@ -154,7 +150,7 @@ const main = async () => {
     await generateApi(entries);
     await validateSchema();
 
-    core.info("API v4 generation completed successfully.");
+    core.info("API v4 generation completed successfully");
   } catch (error) {
     core.setFailed(error);
   }
