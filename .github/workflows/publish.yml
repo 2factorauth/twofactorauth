@@ -43,7 +43,7 @@ jobs:
           fi
 
       - name: Generate API files
-        run: node scripts/APIv3.js
+        run: node scripts/APIv*.js
 
       - name: Publish changes to Algolia
         if: steps.diff.outputs.entries

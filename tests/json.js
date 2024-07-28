@@ -2,13 +2,14 @@ const fs = require("fs").promises;
 const core = require("@actions/core");
 const Ajv = require("ajv");
 const addFormats = require("ajv-formats");
-const schema = require("./schema.json");
 const { basename } = require("node:path");
 
 const ajv = new Ajv({ strict: false, allErrors: true });
 addFormats(ajv);
 require("ajv-errors")(ajv);
 
+const schemaFile = await fs.readFile("tests/schemas/entries.json", "utf8");
+const schema = JSON.parse(schemaFile);
 const validate = ajv.compile(schema);
 let errors = false;
 
@@ -34,7 +35,7 @@ async function main() {
         validateJSONSchema(file, json);
         validateFileContents(file, entry);
       } catch (e) {
-        error(`Failed to process ${file}: ${err.message}`, { file });
+        error(`Failed to process ${file}: ${e.message}`, { file });
       }
     }),
   );
@@ -77,7 +78,7 @@ function validateFileContents(file, entry) {
   if (entry.url === `https://${entry.domain}`)
     error(`Unnecessary url element defined.`, { file });
 
-  if (entry.img === `${entry.domain}.svg`)
+  if (entry['img'] === `${entry.domain}.svg`)
     error(`Unnecessary img element defined.`, { file });
 
   if (file !== `entries/${entry.domain[0]}/${valid_name}`)
