@@ -8,9 +8,6 @@ const ajv = new Ajv({ strict: false, allErrors: true });
 addFormats(ajv);
 require("ajv-errors")(ajv);
 
-const schemaFile = await fs.readFile("tests/schemas/entries.json", "utf8");
-const schema = JSON.parse(schemaFile);
-const validate = ajv.compile(schema);
 let errors = false;
 
 /**
@@ -26,18 +23,21 @@ function error(message, properties) {
 
 async function main() {
   const files = process.argv.slice(2);
+  const schemaFile = await fs.readFile("tests/schemas/entries.json", "utf8");
+  const schema = JSON.parse(schemaFile);
+  const validate = ajv.compile(schema);
 
   await Promise.all(
     files.map(async (file) => {
       try {
         const json = await JSON.parse(await fs.readFile(file, "utf8"));
         const entry = json[Object.keys(json)[0]];
-        validateJSONSchema(file, json);
+        validateJSONSchema(file, json, validate);
         validateFileContents(file, entry);
       } catch (e) {
         error(`Failed to process ${file}: ${e.message}`, { file });
       }
-    }),
+    })
   );
 
   process.exit(+errors);
@@ -48,8 +48,9 @@ async function main() {
  *
  * @param {string} file - File path to be validated.
  * @param {object} json - Parsed JSON content of the file.
+ * @param validate - AJV object
  */
-function validateJSONSchema(file, json) {
+function validateJSONSchema(file, json, validate) {
   const valid = validate(json);
   if (!valid) {
     errors = true;
@@ -78,7 +79,7 @@ function validateFileContents(file, entry) {
   if (entry.url === `https://${entry.domain}`)
     error(`Unnecessary url element defined.`, { file });
 
-  if (entry['img'] === `${entry.domain}.svg`)
+  if (entry["img"] === `${entry.domain}.svg`)
     error(`Unnecessary img element defined.`, { file });
 
   if (file !== `entries/${entry.domain[0]}/${valid_name}`)
@@ -93,7 +94,7 @@ function validateFileContents(file, entry) {
   if (entry.tfa && !entry.documentation)
     core.warning(
       "No documentation set. Please provide screenshots in the pull request",
-      { file, title: "Missing documentation" },
+      { file, title: "Missing documentation" }
     );
 }
 
