@@ -31,7 +31,7 @@ const readJSONFile = (filePath) =>
 const writeJSONFile = (filePath, data) =>
   fs.writeFile(
     filePath,
-    JSON.stringify(data, null, process.env.NODE_ENV !== "production" ? 2:0),
+    JSON.stringify(data, null, process.env.NODE_ENV !== "production" ? 2 : 0)
   );
 
 /**
@@ -60,32 +60,37 @@ const processEntries = async () => {
   const entryDirs = await fs.readdir(entriesDir);
   const filePromises = entryDirs.map(async (dir) => {
     const files = await fs.readdir(path.join(entriesDir, dir));
-    return files.filter((file) => file.endsWith(".json")).
-      map((file) => path.join(entriesDir, dir, file));
+    return files
+      .filter((file) => file.endsWith(".json"))
+      .map((file) => path.join(entriesDir, dir, file));
   });
   const allFiles = (await Promise.all(filePromises)).flat();
 
-  const all = await Promise.all(allFiles.map(async (file) => {
-    const data = await readJSONFile(file);
-    const key = Object.keys(data)[0];
-    return [key, data[key]];
-  }));
-
-  await Promise.all(
-    all.sort((a, b) => a[0].localeCompare(b[0])).
-      map(async ([entryName, entry]) => {
-        await processEntry(entry, entryName, tfaMethods, regions);
-        allEntries.push([entryName, entry]);
-      }),
+  const all = await Promise.all(
+    allFiles.map(async (file) => {
+      const data = await readJSONFile(file);
+      const key = Object.keys(data)[0];
+      return [key, data[key]];
+    })
   );
 
-  regions = Object.entries(regions).
-    sort(([, a], [, b]) => b.count - a.count).
-    reduce((acc, [k, v]) => (acc[k] = v, acc), {});
+  await Promise.all(
+    all
+      .sort((a, b) => a[0].localeCompare(b[0]))
+      .map(async ([entryName, entry]) => {
+        await processEntry(entry, entryName, tfaMethods, regions);
+        allEntries.push([entryName, entry]);
+      })
+  );
+
+  regions = Object.entries(regions)
+    .sort(([, a], [, b]) => b.count - a.count)
+    .reduce((acc, [k, v]) => ((acc[k] = v), acc), {});
 
   const tfa = Object.entries(tfaMethods).reduce((acc, [method, entries]) => {
-    acc[method] = entries.sort(
-      ([a], [b]) => a.toLowerCase().localeCompare(b.toLowerCase()));
+    acc[method] = entries.sort(([a], [b]) =>
+      a.toLowerCase().localeCompare(b.toLowerCase())
+    );
     return acc;
   }, {});
 
@@ -108,7 +113,9 @@ const processEntry = (entry, entryName, tfaMethods, regions) => {
 
   entry["regions"]?.forEach((region) => {
     if (region[0] !== "-")
-      regions[region] ? regions[region].count++:regions[region] = { count: 0 };
+      regions[region]
+        ? regions[region].count++
+        : (regions[region] = { count: 0 });
   });
 
   entry.keywords = entry.categories;
@@ -126,11 +133,14 @@ const processEntry = (entry, entryName, tfaMethods, regions) => {
 const generateAPI = async (allEntries, tfa, regions) => {
   regions.int = { count: allEntries.length, selection: true };
 
+  const tfaEntries = allEntries.filter(([, entry]) => entry["tfa"]);
+
   await Promise.all([
     writeJSONFile(path.join(apiDirectory, "all.json"), allEntries),
     writeJSONFile(path.join(apiDirectory, "regions.json"), regions),
+    writeJSONFile(path.join(apiDirectory, "tfa.json"), tfaEntries),
     ...Object.keys(tfa).map((method) =>
-      writeJSONFile(path.join(apiDirectory, `${method}.json`), tfa[method]),
+      writeJSONFile(path.join(apiDirectory, `${method}.json`), tfa[method])
     ),
   ]);
 };
@@ -159,7 +169,7 @@ const validateSchema = async () => {
         const { message } = err;
         throw new Error(`${file} - ${message}`);
       });
-    }),
+    })
   );
 };
 
