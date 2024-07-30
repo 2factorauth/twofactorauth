@@ -65,6 +65,9 @@ jobs:
           PGP_PASSWORD: ${{ secrets.PGP_PASSWORD }}
           PGP_KEY_ID: ${{ steps.pgp.outputs.keyid }}
 
+      - name: Validate API file structure
+        run: bash tests/api_files.sh
+
       - name: Prepare publish directory
         run: |
           rsync -av {robots.txt,api/} public/
