@@ -21,6 +21,8 @@ jobs:
       pages: write
       id-token: write
     environment: production
+    env:
+      NODE_ENV: ${{ vars.NODE_ENV || 'development' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
