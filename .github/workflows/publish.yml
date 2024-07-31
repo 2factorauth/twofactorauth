@@ -7,6 +7,7 @@ on:
       - 'entries/**'
       - 'img/**'
       - 'scripts/*'
+  workflow_dispatch:
 
 concurrency:
   group: 'publish'
@@ -43,7 +44,7 @@ jobs:
           fi
 
       - name: Generate API files
-        run: node scripts/APIv*.js
+        run: for script in scripts/APIv*.js; do node "$script"; done
 
       - name: Publish changes to Algolia
         if: steps.diff.outputs.entries

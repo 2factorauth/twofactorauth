@@ -24,7 +24,7 @@ function checkFiles(){
 
 # Validate expected files in directories
 for dir in "${!expected_files[@]}"; do
-  checkFiles "$dir" "${expected_files[$dir]}"
+  checkFiles "$dir" ${expected_files[$dir]}
 done
 
 exit $status
