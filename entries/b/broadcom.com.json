@@ -1,0 +1,23 @@
+{
+  "Broadcom": {
+    "domain": "broadcom.com",
+    "additional-domains": [
+      "vmware.com"
+    ],
+    "tfa": [
+      "sms",
+      "call",
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Okta Verify",
+      "Symantec VIP"
+    ],
+    "documentation": "https://knowledge.broadcom.com/external/article?articleId=216428",
+    "recovery": "https://knowledge.broadcom.com/external/article/213025",
+    "categories": [
+      "cloud"
+    ]
+  }
+}
