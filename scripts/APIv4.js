@@ -18,8 +18,8 @@ const jsonSchema = "tests/schemas/APIv4.json";
  * @param {string} filePath - The path to the JSON file.
  * @returns {Promise<Object>} - The parsed JSON object.
  */
-const readJSONFile = (filePath) => fs.readFile(filePath, "utf8").
-  then(JSON.parse);
+const readJSONFile = (filePath) =>
+  fs.readFile(filePath, "utf8").then(JSON.parse);
 
 /**
  * Write a JSON object to a file asynchronously.
@@ -28,8 +28,11 @@ const readJSONFile = (filePath) => fs.readFile(filePath, "utf8").
  * @param {Object} data - The JSON object to write.
  * @returns {Promise<void>}
  */
-const writeJSONFile = (filePath, data) => fs.writeFile(filePath,
-  JSON.stringify(data, null, process.env.NODE_ENV !== "production" ? 2:0));
+const writeJSONFile = (filePath, data) =>
+  fs.writeFile(
+    filePath,
+    JSON.stringify(data, null, process.env.NODE_ENV !== "production" ? 2 : 0)
+  );
 
 /**
  * Ensure a directory exists, creating it if necessary.
@@ -37,8 +40,8 @@ const writeJSONFile = (filePath, data) => fs.writeFile(filePath,
  * @param {string} dirPath - The path to the directory.
  * @returns {Promise<void>}
  */
-const ensureDir = (dirPath) => fs.mkdir(dirPath, { recursive: true }).
-  catch((error) => {
+const ensureDir = (dirPath) =>
+  fs.mkdir(dirPath, { recursive: true }).catch((error) => {
     if (error.code !== "EEXIST") throw error;
   });
 
@@ -51,18 +54,26 @@ const ensureDir = (dirPath) => fs.mkdir(dirPath, { recursive: true }).
 const processEntries = async (files) => {
   const entries = {};
 
-  await Promise.all(files.map(async (file) => {
-    const data = await readJSONFile(file);
-    const entry = data[Object.keys(data)[0]];
+  await Promise.all(
+    files.map(async (file) => {
+      const data = await readJSONFile(file);
+      const entry = data[Object.keys(data)[0]];
 
-    // Add the main domain entry
-    entries[entry.domain] = entry;
+      // Rename contact.twitter to contact.x if it exists
+      if (entry.contact && entry.contact.twitter) {
+        entry.contact.x = entry.contact.twitter;
+        delete entry.contact.twitter;
+      }
 
-    // Duplicate entry for each additional domain
-    entry["additional-domains"]?.forEach((additionalDomain) => {
-      entries[additionalDomain] = entry;
-    });
-  }));
+      // Add the main domain entry
+      entries[entry.domain] = entry;
+
+      // Duplicate entry for each additional domain
+      entry["additional-domains"]?.forEach((additionalDomain) => {
+        entries[additionalDomain] = entry;
+      });
+    })
+  );
 
   return entries;
 };
@@ -98,14 +109,16 @@ const generateApi = async (entries) => {
         tfaMethods[method] ||= {};
         tfaMethods[method][domain] = apiEntry;
       });
-    })]);
+    }),
+  ]);
 
   // Write all entries to all.json and each TFA/2FA method to its own JSON file in parallel
   await Promise.all([
     writeJSONFile(path.join(apiDirectory, "all.json"), allEntries),
-    ...Object.entries(tfaMethods).
-      map(([method, methodEntries]) => writeJSONFile(
-        path.join(apiDirectory, `${method}.json`), methodEntries))]);
+    ...Object.entries(tfaMethods).map(([method, methodEntries]) =>
+      writeJSONFile(path.join(apiDirectory, `${method}.json`), methodEntries)
+    ),
+  ]);
 };
 
 /**
@@ -122,16 +135,18 @@ const validateSchema = async () => {
   const files = globSync(`${apiDirectory}/*.json`);
 
   // Validate each file against the schema
-  await Promise.all(files.map(async (file) => {
-    validate(await readJSONFile(file));
+  await Promise.all(
+    files.map(async (file) => {
+      validate(await readJSONFile(file));
 
-    validate.errors?.forEach((err) => {
-      const { message, instancePath, keyword: title } = err;
-      const errorPath = instancePath?.split("/").slice(1).join("/");
+      validate.errors?.forEach((err) => {
+        const { message, instancePath, keyword: title } = err;
+        const errorPath = instancePath?.split("/").slice(1).join("/");
 
-      core.error(`${errorPath} ${message}`, { file, title });
-    });
-  }));
+        core.error(`${errorPath} ${message}`, { file, title });
+      });
+    })
+  );
 };
 
 /**
