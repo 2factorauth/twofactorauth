@@ -23,33 +23,6 @@
             ]
           }
         },
-        "contact": {
-          "type": "object",
-          "description": "Contact information for the service.",
-          "properties": {
-            "email": {
-              "type": "string",
-              "format": "email"
-            },
-            "facebook": {
-              "type": "string",
-              "minLength": 1
-            },
-            "x": {
-              "type": "string",
-              "pattern": "^(\\w){1,15}$"
-            },
-            "form": {
-              "type": "string",
-              "format": "uri"
-            },
-            "language": {
-              "type": "string",
-              "pattern": "^[a-z]{2}$"
-            }
-          },
-          "additionalProperties": false
-        },
         "custom-software": {
           "type": "array",
           "description": "Custom software 2FA solutions used by the service.",
