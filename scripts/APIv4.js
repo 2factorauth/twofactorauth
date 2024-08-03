@@ -59,12 +59,6 @@ const processEntries = async (files) => {
       const data = await readJSONFile(file);
       const entry = data[Object.keys(data)[0]];
 
-      // Rename contact.twitter to contact.x if it exists
-      if (entry.contact && entry.contact.twitter) {
-        entry.contact.x = entry.contact.twitter;
-        delete entry.contact.twitter;
-      }
-
       // Add the main domain entry
       entries[entry.domain] = entry;
 
@@ -93,7 +87,6 @@ const generateApi = async (entries) => {
     Object.entries(entries).map(async ([domain, entry]) => {
       const apiEntry = {
         methods: entry["tfa"],
-        contact: entry.contact,
         "custom-software": entry["custom-software"],
         "custom-hardware": entry["custom-hardware"],
         documentation: entry.documentation,
