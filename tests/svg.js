@@ -22,6 +22,9 @@ async function main() {
 
   await Promise.allSettled(
     files.map(async (file) => {
+      // Skip SVG checks if the extension isn't svg
+      if (!file.endsWith(".svg")) return null;
+
       const error = (msg) => {
         core.error(msg, { file });
         errors = true;
