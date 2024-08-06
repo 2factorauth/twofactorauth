@@ -23,7 +23,7 @@ async function main() {
   await Promise.allSettled(
     files.map(async (file) => {
       // Skip SVG checks if the extension isn't svg
-      if (!file.endsWith(".svg")) return null;
+      if (!file.endsWith(".svg")) return;
 
       const error = (msg) => {
         core.error(msg, { file });
@@ -48,7 +48,7 @@ async function main() {
       if (
         test(
           svg,
-          '//@*[(starts-with(name(), "data-") or starts-with(name(), "class-"))]',
+          '//@*[(starts-with(name(), "data-") or starts-with(name(), "class-"))]'
         )
       )
         warn("Unnecessary data or class attribute");
@@ -66,11 +66,13 @@ async function main() {
       if (
         test(
           svg,
-          "//*[@version or @fill-rule or @script or @a or @clipPath or @class]",
+          "//*[@version or @fill-rule or @script or @a or @clipPath or @class]"
         )
       )
-        warn("Unnecessary attribute(s) found: version, fill-rule, script, a, clipPath, or class");
-    }),
+        warn(
+          "Unnecessary attribute(s) found: version, fill-rule, script, a, clipPath, or class"
+        );
+    })
   );
   process.exit(+errors);
 }
