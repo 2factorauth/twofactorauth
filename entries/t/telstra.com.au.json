@@ -1,6 +1,11 @@
 {
   "Telstra": {
     "domain": "telstra.com.au",
+    "additional-domains": [
+      "telstra.com",
+      "bigpond.com",
+      "bigpond.com.au"
+    ],
     "tfa": [
       "sms",
       "email",
@@ -11,7 +16,8 @@
     ],
     "documentation": "https://www.telstra.com.au/mytelstra/my-telstra-security",
     "categories": [
-      "utilities"
+      "utilities",
+      "email"
     ],
     "regions": [
       "au"
