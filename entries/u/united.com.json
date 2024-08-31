@@ -2,11 +2,18 @@
   "United": {
     "domain": "united.com",
     "url": "https://www.united.com/",
-    "contact": {
-      "facebook": "United",
-      "twitter": "united"
-    },
-    "categories": [
+    "tfa": [
+      "email",
+      "sms",
+      "call",
+      "custom-software"
+    ],
+     "custom-software": [
+      "United App"
+    ],
+    "documentation":"https://www.united.com/en/us/fly/mileageplus/protect-your-account.html",
+    "notes": "Requires E-Mail address to establish 2FA",
+   "categories": [
       "transport"
     ]
   }
