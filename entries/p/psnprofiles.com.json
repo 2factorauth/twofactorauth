@@ -1,13 +1,14 @@
 {
   "PSNProfiles": {
     "domain": "psnprofiles.com",
-    "contact": {
-      "facebook": "PSNProfiles",
-      "twitter": "PSNProfiles",
-      "email": "contact@psnprofiles.com"
-    },
+    "url": "https://www.psnprofiles.com",
+    "tfa": [
+      "sms",
+      "totp"
+    ],
     "categories": [
       "gaming"
-    ]
+    ],
+    "notes": "2FA is configured via your linked PSNProfiles forum profile settings."
   }
 }
