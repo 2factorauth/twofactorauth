@@ -6,13 +6,14 @@
       "email",
       "sms",
       "call",
+      "totp",
       "custom-software"
     ],
      "custom-software": [
       "United App"
     ],
     "documentation":"https://www.united.com/en/us/fly/mileageplus/protect-your-account.html",
-    "notes": "Requires E-Mail address to establish 2FA",
+    "notes": "Requires E-Mail address to establish 2FA, TOTP only available through United app",
    "categories": [
       "transport"
     ]
