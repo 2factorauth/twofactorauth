@@ -1,10 +1,12 @@
 {
   "123 Reg": {
     "domain": "123-reg.co.uk",
-    "contact": {
-      "facebook": "123regfans",
-      "twitter": "123reg"
-    },
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://www.123-reg.co.uk/support/my-account/how-do-i-enable-2-step-verification-on-my-account/",
     "categories": [
       "domains"
     ]
