@@ -1,11 +1,10 @@
 {
   "PSNProfiles": {
     "domain": "psnprofiles.com",
-    "contact": {
-      "facebook": "PSNProfiles",
-      "twitter": "PSNProfiles",
-      "email": "contact@psnprofiles.com"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "notes": "2FA is configured via your linked PSNProfiles forum profile settings.",
     "categories": [
       "gaming"
     ]
