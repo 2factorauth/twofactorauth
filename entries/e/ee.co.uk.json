@@ -1,13 +1,13 @@
 {
   "EE": {
     "domain": "ee.co.uk",
-    "contact": {
-      "facebook": "ee",
-      "twitter": "EE"
-    },
+    "tfa": [
+      "sms"
+    ],
     "categories": [
       "utilities"
     ],
+    "notes": "Once enabled you cannot disable it again. You can only change the phone number you receive the code on.",
     "regions": [
       "gb"
     ]
