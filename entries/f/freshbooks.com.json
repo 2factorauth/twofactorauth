@@ -1,11 +1,10 @@
 {
   "FreshBooks": {
     "domain": "freshbooks.com",
-    "url": "https://www.freshbooks.com",
-    "contact": {
-      "facebook": "FreshBooks",
-      "twitter": "freshbooks"
-    },
+    "tfa": [
+      "email"
+    ],
+    "documentation": "https://www.freshbooks.com/blog/2fa-two-factor-authentication",
     "categories": [
       "finance"
     ],
@@ -13,6 +12,7 @@
       "au",
       "ca",
       "fr",
+      "mx",
       "ie",
       "za",
       "gb",
