@@ -2,7 +2,7 @@ const fs = require("fs").promises;
 const core = require("@actions/core");
 
 const url = new URL(
-  "https://raw.githubusercontent.com/stefangabos/world_countries/master/data/countries/en/world.json",
+  "https://raw.githubusercontent.com/stefangabos/world_countries/master/data/countries/en/world.json"
 );
 
 async function main() {
@@ -26,7 +26,7 @@ async function main() {
       const { regions } = entry;
 
       for (const region of regions || []) {
-        if (!codes.includes(region)) {
+        if (!codes.includes(region.replace("-", ""))) {
           core.error(`${region} is not a valid region code`, { file });
           errors = true;
         }
