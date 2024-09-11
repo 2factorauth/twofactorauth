@@ -1,11 +1,10 @@
 {
   "McAfee": {
     "domain": "mcafee.com",
-    "url": "https://www.mcafee.com/",
-    "contact": {
-      "facebook": "McAfee",
-      "twitter": "McAfee"
-    },
+    "tfa": [
+      "sms"
+    ],
+    "documentation": "https://www.mcafee.com/support/s/article/000002100",
     "categories": [
       "security"
     ]
