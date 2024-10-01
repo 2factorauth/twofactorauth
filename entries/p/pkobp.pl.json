@@ -4,9 +4,11 @@
     "url": "https://www.pkobp.pl/",
     "tfa": [
       "sms",
+	  "u2f",
       "custom-software"
     ],
     "documentation": "https://iko.pkobp.pl/funkcje/mobilna-autoryzacja/",
+	"notes": "You can only register one U2F security key to your bank account",
     "custom-software": [
       "IKO App"
     ],
