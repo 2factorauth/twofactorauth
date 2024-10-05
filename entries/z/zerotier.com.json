@@ -1,0 +1,14 @@
+{
+  "ZeroTier": {
+    "domain": "zerotier.com",
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://accounts.zerotier.com/realms/zerotier/account/#/account-security/signing-in",
+    "categories": [
+      "remote",
+      "vpn"
+    ]
+  }
+}
