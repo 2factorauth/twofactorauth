@@ -1,11 +1,10 @@
 {
   "Calendly": {
     "domain": "calendly.com",
-    "contact": {
-      "twitter": "Calendly",
-      "facebook": "Calendly",
-      "email": "support@calendly.com"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://help.calendly.com/hc/en-us/articles/26682031653399-Two-factor-authentication-2FA",
     "categories": [
       "communication"
     ]
