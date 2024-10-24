@@ -1,18 +1,19 @@
 #!/usr/bin/env node
 
-const fs = require('fs').promises;
-const path = require('path');
-const {globSync} = require('glob');
-const core = require('@actions/core');
+const fs = require("fs").promises;
+const path = require("path");
+const { globSync } = require("glob");
+const core = require("@actions/core");
 
-const version = 'v1-frontend';
+const version = "v1-frontend";
 
 // Define the path to the entries and the API output directory
-const entriesGlob = 'entries/*/*.json';
-const apiDirectory = 'api/frontend/v1';
+const entriesGlob = "entries/*/*.json";
+const apiDirectory = "api/frontend/v1";
 
 // URL to fetch categories data from
-const categoriesUrl = 'https://raw.githubusercontent.com/2factorauth/2fa.directory/refs/heads/master/data/categories.json';
+const categoriesUrl =
+  "https://raw.githubusercontent.com/2factorauth/2fa.directory/refs/heads/master/data/categories.json";
 
 /**
  * Read and parse a JSON file asynchronously.
@@ -20,8 +21,8 @@ const categoriesUrl = 'https://raw.githubusercontent.com/2factorauth/2fa.directo
  * @param {string} filePath - The path to the JSON file.
  * @returns {Promise<Object>} - The parsed JSON object.
  */
-const readJSONFile = (filePath) => fs.readFile(filePath, 'utf8').
-  then(JSON.parse);
+const readJSONFile = (filePath) =>
+  fs.readFile(filePath, "utf8").then(JSON.parse);
 
 /**
  * Write a JSON object to a file asynchronously, ensuring the directory exists.
@@ -32,10 +33,10 @@ const readJSONFile = (filePath) => fs.readFile(filePath, 'utf8').
  */
 const writeJSONFile = async (filePath, data) => {
   const dir = path.dirname(filePath);
-  await fs.mkdir(dir, {recursive: true});
+  await fs.mkdir(dir, { recursive: true });
   await fs.writeFile(
     filePath,
-    JSON.stringify(data, null, process.env.NODE_ENV !== 'production' ? 2:0),
+    JSON.stringify(data, null, process.env.NODE_ENV !== "production" ? 2 : 0)
   );
 };
 
@@ -69,7 +70,7 @@ const processEntries = async (files) => {
 
       // Add the main domain entry
       entries[mainDomain] = entry;
-    }),
+    })
   );
 
   return entries;
@@ -96,7 +97,7 @@ const generateApi = async (entries, categoriesData) => {
   for (const entry of Object.values(entries)) {
     if (entry.regions) {
       for (const region of entry.regions) {
-        const regionName = region.replace('-', '');
+        const regionName = region.replace("-", "");
         allRegions.add(regionName);
       }
     }
@@ -104,16 +105,17 @@ const generateApi = async (entries, categoriesData) => {
 
   // Process each entry
   await Promise.all(
-    Object.entries(entries).
-      map(([domain, entry]) => processEntry(domain, entry)),
+    Object.entries(entries).map(([domain, entry]) =>
+      processEntry(domain, entry)
+    )
   );
 
   // Write 'int' region files
-  await writeRegionFiles('int');
+  await writeRegionFiles("int");
 
   // Write other regions
   for (const region of Object.keys(categoriesByRegion)) {
-    if (region !== 'int') {
+    if (region !== "int") {
       await writeRegionFiles(region);
     }
   }
@@ -128,8 +130,8 @@ const generateApi = async (entries, categoriesData) => {
     const apiEntry = {
       methods: entry.tfa,
       domain: entry.domain,
-      'custom-software': entry['custom-software'],
-      'custom-hardware': entry['custom-hardware'],
+      "custom-software": entry["custom-software"],
+      "custom-hardware": entry["custom-hardware"],
       contact: entry.contact,
       notes: entry.notes,
       img: entry.img,
@@ -138,15 +140,15 @@ const generateApi = async (entries, categoriesData) => {
     };
 
     // Always include in 'int' region
-    addEntryToRegion('int', entry.categories, domain, apiEntry);
+    addEntryToRegion("int", entry.categories, domain, apiEntry);
 
     // Determine which regions the entry should be included in
-    const {includeRegions, explicitlyIncludedRegions} = getIncludeRegions(
-      entry);
+    const { includeRegions, explicitlyIncludedRegions } =
+      getIncludeRegions(entry);
 
     // For each region, add the entry to the region's categories
     for (const region of includeRegions) {
-      if (region === 'int') continue; // already processed
+      if (region === "int") continue; // already processed
       addEntryToRegion(region, entry.categories, domain, apiEntry);
 
       // If the entry explicitly includes the region, increment the entry count
@@ -168,12 +170,12 @@ const generateApi = async (entries, categoriesData) => {
     const explicitlyIncludedRegions = new Set();
     let hasExplicitInclude = false;
 
-    includeRegions.delete('int'); // Exclude 'int' from processing here
+    includeRegions.delete("int"); // Exclude 'int' from processing here
 
     if (entry.regions && entry.regions.length > 0) {
       for (const region of entry.regions) {
-        const regionName = region.replace('-', '');
-        if (region.startsWith('-')) {
+        const regionName = region.replace("-", "");
+        if (region.startsWith("-")) {
           excludeRegions.add(regionName);
         } else {
           explicitlyIncludedRegions.add(regionName);
@@ -217,8 +219,8 @@ const generateApi = async (entries, categoriesData) => {
     }
 
     categories.forEach((category) => {
-      categoriesByRegion[region][category] = categoriesByRegion[region][category] ||
-        {};
+      categoriesByRegion[region][category] =
+        categoriesByRegion[region][category] || {};
       categoriesByRegion[region][category][domain] = apiEntry;
       categoriesUsedByRegion[region].add(category);
     });
@@ -244,7 +246,7 @@ const generateApi = async (entries, categoriesData) => {
   async function writeRegionFiles(region) {
     const entryCount = entryCountsByRegion[region] || 0;
 
-    if (region !== 'int' && entryCount < 10) {
+    if (region !== "int" && entryCount < 10) {
       core.info(`Ignoring '${region}' as it only has ${entryCount} entrie(s).`);
       return;
     }
@@ -252,23 +254,25 @@ const generateApi = async (entries, categoriesData) => {
     const regionDir = path.join(apiDirectory, region);
 
     // Write category files
-    const categoryWrites = Object.entries(categoriesByRegion[region]).
-      sort().
-      map(([category, entries]) =>
-        writeJSONFile(path.join(regionDir, `${category}.json`), entries),
+    const categoryWrites = Object.entries(categoriesByRegion[region])
+      .sort()
+      .map(([category, entries]) =>
+        writeJSONFile(path.join(regionDir, `${category}.json`), entries)
       );
 
     // Write categories.json file
     const categoriesUsed = categoriesUsedByRegion[region];
-    const categoriesDataForRegion = Object.fromEntries(
-      [...categoriesUsed].filter((category) => categoriesData[category]).
-        sort().
-        map((category) => [category, categoriesData[category]]),
-    );
+    const categoriesDataForRegion = Object.fromEntries([
+      ...[...categoriesUsed]
+        .filter((category) => categoriesData[category] && category !== "other")
+        .sort()
+        .map((category) => [category, categoriesData[category]]),
+      ["other", categoriesData["other"]],
+    ]);
 
     const categoriesWrite = writeJSONFile(
-      path.join(regionDir, 'categories.json'),
-      categoriesDataForRegion,
+      path.join(regionDir, "categories.json"),
+      categoriesDataForRegion
     );
 
     await Promise.all([...categoryWrites, categoriesWrite]);
