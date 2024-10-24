@@ -270,12 +270,13 @@ const generateApi = async (entries, categoriesData, regionsData) => {
 
     // Write categories.json file
     const categoriesUsed = categoriesUsedByRegion[region];
-    const categoriesDataForRegion = Object.fromEntries(
-      [...categoriesUsed]
-        .filter((category) => categoriesData[category])
+    const categoriesDataForRegion = Object.fromEntries([
+      ...[...categoriesUsed]
+        .filter((category) => categoriesData[category] && category !== "other")
         .sort()
-        .map((category) => [category, categoriesData[category]])
-    );
+        .map((category) => [category, categoriesData[category]]),
+      ["other", categoriesData["other"]],
+    ]);
 
     const categoriesWrite = writeJSONFile(
       path.join(regionDir, "categories.json"),
