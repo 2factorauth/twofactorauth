@@ -14,6 +14,8 @@ const apiDirectory = "api/frontend/v1";
 // URL to fetch categories data from
 const categoriesUrl =
   "https://raw.githubusercontent.com/2factorauth/2fa.directory/refs/heads/master/data/categories.json";
+const regionsUrl =
+  "https://raw.githubusercontent.com/stefangabos/world_countries/master/data/countries/en/world.json";
 
 /**
  * Read and parse a JSON file asynchronously.
@@ -81,9 +83,10 @@ const processEntries = async (files) => {
  *
  * @param {Object} entries - The processed entries.
  * @param {Object} categoriesData - The categories data fetched from the URL.
+ * @param {Object} regionsData - The regions data fetched from the URL.
  * @returns {Promise<void>}
  */
-const generateApi = async (entries, categoriesData) => {
+const generateApi = async (entries, categoriesData, regionsData) => {
   const categoriesByRegion = {};
   const entryCountsByRegion = {};
   const categoriesUsedByRegion = {};
@@ -109,6 +112,9 @@ const generateApi = async (entries, categoriesData) => {
       processEntry(domain, entry)
     )
   );
+
+  // Write region file
+  await writeRegions();
 
   // Write 'int' region files
   await writeRegionFiles("int");
@@ -247,7 +253,9 @@ const generateApi = async (entries, categoriesData) => {
     const entryCount = entryCountsByRegion[region] || 0;
 
     if (region !== "int" && entryCount < 10) {
-      core.info(`Ignoring '${region}' as it only has ${entryCount} entrie(s).`);
+      core.info(
+        `Ignoring '${region}' as it only has ${entryCount} entr${entryCount === 1 ? "y" : "ies"}.`
+      );
       return;
     }
 
@@ -277,6 +285,38 @@ const generateApi = async (entries, categoriesData) => {
 
     await Promise.all([...categoryWrites, categoriesWrite]);
   }
+
+  async function writeRegions() {
+    const usedRegions = Object.keys(entryCountsByRegion).filter(
+      (region) => entryCountsByRegion[region] > 10
+    );
+    const regions = regionsData.filter(({ alpha2 }) =>
+      usedRegions.includes(alpha2)
+    );
+
+    const squareFlagRegions = ["ch", "np", "va"];
+    const shortNames = {
+      us: "United States",
+      gb: "United Kingdom",
+      tw: "Taiwan",
+      ru: "Russia",
+      kr: "South Korea",
+    };
+
+    const regionsWrite = {};
+
+    regions.forEach(
+      (region) =>
+        (regionsWrite[region.alpha2] = {
+          name:
+            region.alpha2 in shortNames
+              ? shortNames[region.alpha2]
+              : region.name,
+          squareFlag: squareFlagRegions.includes(region.alpha2),
+        })
+    );
+    writeJSONFile(path.join(apiDirectory, "regions.json"), regionsWrite);
+  }
 };
 
 /**
@@ -289,12 +329,15 @@ const generateApi = async (entries, categoriesData) => {
     // Fetch categories data from URL
     const categoriesData = await fetchJSONFromUrl(categoriesUrl);
 
+    // Fetch region data from URL
+    const regionsData = await fetchJSONFromUrl(regionsUrl);
+
     // Get all JSON entry files
     const files = globSync(entriesGlob);
 
     // Process entries and generate the API
     const entries = await processEntries(files);
-    await generateApi(entries, categoriesData);
+    await generateApi(entries, categoriesData, regionsData);
 
     core.info(`API ${version} generation completed successfully`);
   } catch (error) {
