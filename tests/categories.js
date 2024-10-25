@@ -4,17 +4,8 @@ const core = require("@actions/core");
 async function main() {
   let errors = false;
   const files = process.argv.slice(2);
-  const res = await fetch(
-    "https://raw.githubusercontent.com/2factorauth/2fa.directory/master/data/categories.json",
-    {
-      accept: "application/json",
-      "user-agent": "2factorauth/twofactorauth +https://2fa.directory/bots",
-    },
-  );
-
-  if (!res.ok) throw new Error("Unable to fetch categories");
-
-  const data = await res.json();
+  const categoriesFile = await fs.readFile("categories.json", "utf8");
+  const data = JSON.parse(categoriesFile);
   const allowed_categories = Object.keys(data);
 
   if (files) {

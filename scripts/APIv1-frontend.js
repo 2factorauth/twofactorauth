@@ -12,8 +12,7 @@ const entriesGlob = "entries/*/*.json";
 const apiDirectory = "api/frontend/v1";
 
 // URL to fetch categories data from
-const categoriesUrl =
-  "https://raw.githubusercontent.com/2factorauth/2fa.directory/refs/heads/master/data/categories.json";
+const categoriesFile = "../tests/categories.json";
 const regionsUrl =
   "https://raw.githubusercontent.com/stefangabos/world_countries/master/data/countries/en/world.json";
 
@@ -326,8 +325,8 @@ const generateApi = async (entries, categoriesData, regionsData) => {
   try {
     core.info(`Generating API ${version}`);
 
-    // Fetch categories data from URL
-    const categoriesData = await fetchJSONFromUrl(categoriesUrl);
+    // Fetch categories data from file
+    const categoriesData = await readJSONFile(categoriesFile);
 
     // Fetch region data from URL
     const regionsData = await fetchJSONFromUrl(regionsUrl);
