@@ -1,10 +1,12 @@
 {
   "British Airways": {
     "domain": "britishairways.com",
-    "contact": {
-      "facebook": "britishairways",
-      "twitter": "British_Airways"
-    },
+    "tfa": [
+      "sms",
+      "totp",
+      "u2f"
+    ],
+    "notes": "Set-up requires linking one of the following services with your BA account: Qatar, Iberia, Uber",
     "categories": [
       "transport"
     ]
