@@ -4,7 +4,7 @@ const core = require("@actions/core");
 async function main() {
   let errors = false;
   const files = process.argv.slice(2);
-  const categoriesFile = await fs.readFile("categories.json", "utf8");
+  const categoriesFile = await fs.readFile("tests/categories.json", "utf8");
   const data = JSON.parse(categoriesFile);
   const allowed_categories = Object.keys(data);
 
