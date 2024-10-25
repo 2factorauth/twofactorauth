@@ -12,7 +12,7 @@ const entriesGlob = "entries/*/*.json";
 const apiDirectory = "api/frontend/v1";
 
 // URL to fetch categories data from
-const categoriesFile = "../tests/categories.json";
+const categoriesFile = "tests/categories.json";
 const regionsUrl =
   "https://raw.githubusercontent.com/stefangabos/world_countries/master/data/countries/en/world.json";
 
