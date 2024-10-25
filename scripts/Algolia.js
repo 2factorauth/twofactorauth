@@ -6,13 +6,10 @@ const algoliasearch = require("algoliasearch");
 const core = require("@actions/core");
 require("dotenv").config(); // Load environment variables from .env file
 
-// List of keys to exclude from the search data
-const excludes = ["notes", "documentation", "recovery"];
-
 // Initialize Algolia client and index using environment variables
 const client = algoliasearch(
   process.env.ALGOLIA_APP_ID,
-  process.env.ALGOLIA_API_KEY,
+  process.env.ALGOLIA_API_KEY
 );
 const index = client.initIndex(process.env.ALGOLIA_INDEX_NAME);
 
@@ -36,8 +33,6 @@ async function processFile(entry) {
       ...(categories && { category: categories }),
     };
 
-    // Remove excluded keys from the data
-    excludes.forEach((exclude) => delete renamedData[exclude]);
     return renamedData;
   } else {
     // If the file does not exist, remove the corresponding object from Algolia
@@ -56,7 +51,7 @@ async function main() {
 
   // Process each file in parallel
   const results = await Promise.allSettled(
-    files.map(async (entry) => processFile(entry)),
+    files.map(async (entry) => processFile(entry))
   );
 
   results.forEach((result) => {
