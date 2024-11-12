@@ -1,11 +1,10 @@
 {
-  "UK Companies House": {
+  "GOV.UK One Login": {
     "domain": "gov.uk",
-    "url": "https://www.gov.uk/companieshouse",
-    "contact": {
-      "facebook": "CompaniesHouse",
-      "twitter": "CompaniesHouse"
-    },
+    "tfa": [
+      "sms",
+      "totp"
+    ],
     "categories": [
       "government"
     ],
