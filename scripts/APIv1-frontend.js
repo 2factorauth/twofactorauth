@@ -223,7 +223,7 @@ const generateApi = async (entries, categoriesData, regionsData) => {
       entryCountsByRegion[region] = 0;
     }
 
-    categories.forEach((category) => {
+    categories?.forEach((category) => {
       categoriesByRegion[region][category] =
         categoriesByRegion[region][category] || {};
       categoriesByRegion[region][category][domain] = apiEntry;
@@ -262,10 +262,13 @@ const generateApi = async (entries, categoriesData, regionsData) => {
 
     // Write category files
     const categoryWrites = Object.entries(categoriesByRegion[region])
-      .sort()
-      .map(([category, entries]) =>
-        writeJSONFile(path.join(regionDir, `${category}.json`), entries)
-      );
+      .sort().map(([category, entries]) => {
+        const sortedEntries = Object.fromEntries(
+          Object.keys(entries).sort().map(entry => [entry, entries[entry]]),
+        );
+        writeJSONFile(path.join(regionDir, `${category}.json`), sortedEntries);
+      },
+    );
 
     // Write categories.json file
     const categoriesUsed = categoriesUsedByRegion[region];
