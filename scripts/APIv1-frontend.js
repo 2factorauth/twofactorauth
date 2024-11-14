@@ -264,7 +264,7 @@ const generateApi = async (entries, categoriesData, regionsData) => {
     const categoryWrites = Object.entries(categoriesByRegion[region])
       .sort().map(([category, entries]) => {
         const sortedEntries = Object.fromEntries(
-          Object.keys(entries).sort().map(entry => [entry, entries[entry]]),
+          Object.keys(entries).sort((a, b) => a.localeCompare(b)).map(entry => [entry, entries[entry]]),
         );
         writeJSONFile(path.join(regionDir, `${category}.json`), sortedEntries);
       },
