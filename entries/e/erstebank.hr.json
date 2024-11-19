@@ -1,12 +1,17 @@
 {
   "Erste Bank [HR]": {
     "domain": "erstebank.hr",
-    "url": "https://www.erstebank.hr/",
     "tfa": [
       "custom-software",
       "custom-hardware"
     ],
-    "documentation": "https://www.erstebank.hr/content/dam/hr/ebc/www_erstebank_hr/gradani/downloads/e-bankarstvo/Upute%20za%20prijavu.pdf",
+    "custom-software": [
+      "George App"
+    ],
+    "custom-hardware": [
+      "Display card"
+    ],
+    "documentation": "https://www.erstebank.hr/hr/sigurnost#/modalComponent/isOpen/true/url/%2Fhr%2Fconfiguration%2Fleads%2Fsigurnost0%2Fsigurno-online-bankarenje.modal",
     "regions": [
       "hr"
     ],

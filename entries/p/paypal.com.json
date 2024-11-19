@@ -4,14 +4,11 @@
     "additional-domains": [
       "paypal-search.com"
     ],
-    "url": "https://www.paypal.com/",
     "tfa": [
-      "sms",
-      "totp",
-      "u2f"
+      "totp"
     ],
-    "notes": "Some methods of 2FA are only available in a few countries. Contact PayPal for more information.",
-    "documentation": "https://www.paypal.com/us/smarthelp/article/faq4057",
+    "notes": "2FA can only be setup in web browser and not through the PayPal App.",
+    "documentation": "https://www.paypal.com/us/cshelp/article/help167",
     "categories": [
       "payments"
     ]

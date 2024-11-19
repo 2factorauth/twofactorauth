@@ -1,18 +1,18 @@
 {
-  "Bunnings Warehouse":{
-    "domain":"bunnings.com.au",
-    "additional-domains":[
+  "Bunnings Warehouse": {
+    "domain": "bunnings.com.au",
+    "additional-domains": [
       "bunnings.co.nz"
     ],
-    "contact":{
-      "facebook":"BunningsWarehouseAustralia",
-      "email":"customersupport@bunnings.com.au"
-    },
-    "regions":[
+    "tfa": [
+      "sms",
+      "email"
+    ],
+    "regions": [
       "au",
       "nz"
     ],
-    "categories":[
+    "categories": [
       "retail"
     ]
   }

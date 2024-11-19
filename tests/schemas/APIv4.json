@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "API Entry",
+  "type": "object",
+  "patternProperties": {
+    "^[a-z0-9.-]+$": {
+      "type": "object",
+      "properties": {
+        "methods": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "sms",
+              "call",
+              "email",
+              "u2f",
+              "totp",
+              "custom-software",
+              "custom-hardware"
+            ]
+          }
+        },
+        "custom-software": {
+          "type": "array",
+          "description": "Custom software 2FA solutions used by the service.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "custom-hardware": {
+          "type": "array",
+          "description": "Custom hardware 2FA solutions used by the service.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "documentation": {
+          "type": "string",
+          "description": "URL to the documentation for the entry.",
+          "format": "uri"
+        },
+        "recovery": {
+          "type": "string",
+          "description": "URL to the recovery information for the entry.",
+          "format": "uri"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Additional notes for the entry."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

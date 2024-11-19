@@ -4,13 +4,14 @@
     "tfa": [
       "sms",
       "call",
-      "totp",
-      "custom-software"
+      "custom-software",
+      "u2f"
     ],
     "custom-software": [
-      "Microsoft Authenticator"
+      "Duo"
     ],
-    "documentation": "https://oit.colorado.edu/services/identity-access-management/multi-factor-authentication",
+    "documentation": "https://oit.colorado.edu/services/identity-access-management/duo-multi-factor-authentication",
+    "notes": "SMS required to setup TOTP 2FA.",
     "categories": [
       "universities"
     ],

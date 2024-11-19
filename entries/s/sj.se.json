@@ -1,11 +1,10 @@
 {
   "SJ": {
     "domain": "sj.se",
-    "url": "https://www.sj.se/",
-    "contact": {
-      "facebook": "sj",
-      "twitter": "SJ_AB"
-    },
+    "tfa": [
+      "sms",
+      "call"
+    ],
     "categories": [
       "transport"
     ],

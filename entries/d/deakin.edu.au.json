@@ -1,0 +1,26 @@
+{
+    "Deakin University": {
+      "domain": "deakin.edu.au",
+      "tfa": [
+        "sms",
+        "call",
+        "u2f",
+        "totp",
+        "custom-software",
+        "custom-hardware"
+      ],
+      "custom-software": [
+        "Duo"
+      ],
+      "custom-hardware": [
+        "Duo D100 Token"
+      ],
+      "documentation": "https://help.deakin.edu.au/ithelp?id=kb_article&sysparm_article=KB0013804",
+      "categories": [
+        "universities"
+      ],
+      "regions": [
+        "au"
+      ]
+    }
+  }

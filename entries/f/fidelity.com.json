@@ -1,17 +1,16 @@
 {
   "Fidelity Investments": {
     "domain": "fidelity.com",
-    "url": "https://www.fidelity.com",
     "tfa": [
       "sms",
       "call",
+      "totp",
       "custom-software"
     ],
     "custom-software": [
-      "Symantec VIP Access"
+      "Fidelity Investments app"
     ],
-    "documentation": "https://www.fidelity.com/security/how-two-factor-authentication-works",
-    "notes": "Specific support varies between account types",
+    "documentation": "https://www.fidelity.com/security/extra-security-login",
     "categories": [
       "investing"
     ],

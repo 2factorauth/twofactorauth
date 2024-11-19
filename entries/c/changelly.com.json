@@ -2,9 +2,14 @@
   "Changelly": {
     "domain": "changelly.com",
     "tfa": [
-      "totp"
+      "totp",
+      "custom-hardware"
     ],
-    "documentation": "https://changelly.com/faq#what-is-the-2-factor-authentication?",
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "documentation": "https://support.changelly.com/en/support/solutions/articles/14000111533",
+    "recovery": "https://support.changelly.com/en/support/solutions/articles/14000111548",
     "categories": [
       "cryptocurrencies"
     ],

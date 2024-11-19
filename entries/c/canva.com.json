@@ -2,10 +2,11 @@
   "Canva": {
     "domain": "canva.com",
     "tfa": [
-      "sms"
+      "sms",
+      "totp"
     ],
-    "documentation": "https://www.canva.com/help/article/login-verification",
-    "notes": "2FA only available to users from Australia, Philippines, UK, and USA.",
+    "documentation": "https://www.canva.com/help/login-verification/",
+    "notes": "SMS 2FA only available to users from Australia, Philippines, UK, and USA.",
     "categories": [
       "creativity"
     ]

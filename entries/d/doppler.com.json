@@ -1,12 +1,12 @@
 {
   "Doppler": {
     "domain": "doppler.com",
-    "url": "https://www.doppler.com/",
     "tfa": [
+      "email",
       "totp",
       "u2f"
     ],
-    "documentation": "https://docs.doppler.com/docs/security-fact-sheet#user-authentication",
+    "documentation": "https://docs.doppler.com/docs/multi-factor-authentication",
     "categories": [
       "developer"
     ]

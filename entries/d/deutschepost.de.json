@@ -1,13 +1,10 @@
 {
   "Deutsche Post": {
     "domain": "deutschepost.de",
-    "additional-domains": [
-      "epost.de"
+    "tfa": [
+      "totp",
+      "email"
     ],
-    "contact": {
-      "facebook": "deutschepost",
-      "language": "de"
-    },
     "categories": [
       "postal"
     ],

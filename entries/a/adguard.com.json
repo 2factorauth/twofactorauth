@@ -1,6 +1,10 @@
 {
   "AdGuard": {
     "domain": "adguard.com",
+    "additional-domains": [
+      "adguard-vpn.com",
+      "adguard-dns.io"
+    ],
     "tfa": [
       "totp"
     ],

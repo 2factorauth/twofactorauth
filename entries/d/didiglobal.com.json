@@ -1,0 +1,36 @@
+{
+  "DiDi": {
+    "domain": "didiglobal.com",
+    "url": "https://web.didiglobal.com",
+    "additional-domains": [
+      "99app.com",
+      "didimobility.co.jp"
+    ],
+    "tfa": [
+      "sms"
+    ],
+    "notes": "DiDi decides when 2FA is required; user cannot enable 2FA for every login.",
+    "categories": [
+      "transport"
+    ],
+    "regions": [
+      "ar",
+      "au",
+      "br",
+  	  "cl",
+  	  "cn",
+  	  "co",
+  	  "cr",
+  	  "do",
+  	  "ec",
+  	  "eg",
+  	  "hk",
+  	  "jp",
+  	  "mx",
+  	  "nz",
+  	  "pa",
+  	  "pe",
+  	  "tw"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+name: "Mark and close stale PRs"
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+  issue_comment:
+
+env:
+  stale_label: inactive
+
+jobs:
+  stale:
+    if: github.event_name != 'issue_comment'
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: actions/stale@v8
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          # Do not automatically mark PRs/issues as stale
+          days-before-stale: -1
+          # Override 'days-before-stale' for PRs only
+          days-before-pr-stale: 7
+          # Explicitly set default value
+          days-before-pr-close: 7
+          stale-pr-label: '${{ env.stale_label }}'
+          stale-pr-message: |
+            As the requested changes haven't been resolved yet, this PR will be marked as inactive.
+            > [!Warning]
+            > Unless there's activity within the next 7 days, this PR will be closed.
+          close-pr-message: |
+            Closing due to inactivity.
+            > [!Note]
+            > The PR author can still commit the requested changes and re-open this PR.
+            > If someone else wants to commit the requested changes, you can create a new PR and link to this PR.
+
+  # Modified from https://github.com/pi-hole/docker-pi-hole/blob/958f40184dcd6f1c58c1da7d9887170db9273fb0/.github/workflows/stale.yml#L32-L48
+  remove_stale:
+    # Trigger "stale" removal immediately when stale PRs are commented on
+    # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#issue_comment-on-issues-only-or-pull-requests-only
+    if: ${{ github.event.issue.pull_request && github.event_name != 'schedule' }}
+    permissions:
+      contents: read #  for actions/checkout
+      pull-requests: write #  to edit issues label
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Remove 'stale' label
+        run: gh pr edit ${{ github.event.issue.number }} --remove-label ${{ env.stale_label }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

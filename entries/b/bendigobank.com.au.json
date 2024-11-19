@@ -1,11 +1,16 @@
 {
   "Bendigo Bank": {
     "domain": "bendigobank.com.au",
-    "contact": {
-      "facebook": "BendigoBank",
-      "twitter": "bendigobank",
-      "form": "https://www.bendigoadelaide.com.au/contact-us/customer-feedback/"
-    },
+    "tfa": [
+      "sms",
+      "email",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Bendigo Bank app"
+    ],
+    "documentation": "https://www.bendigobank.com.au/support/e-banking/multi-factor-authentication",
+    "notes": "If the app hasn't been setup, only SMS and email tokens will work. If the app has been setup, only the app will work.",
     "categories": [
       "banking"
     ],

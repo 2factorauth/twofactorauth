@@ -2,7 +2,8 @@
   "Spotify for Artists": {
     "domain": "artists.spotify.com",
     "tfa": [
-      "totp"
+      "totp",
+      "sms"
     ],
     "documentation": "https://artists.spotify.com/en/help/article/2-step-verification",
     "categories": [

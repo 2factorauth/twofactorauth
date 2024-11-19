@@ -1,0 +1,22 @@
+{
+  "ING Bank Slaski [PL]": {
+    "domain": "ing.pl",
+    "img": "ing.svg",
+    "tfa": [
+      "sms",
+      "u2f",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Moje ING App"
+    ],
+    "documentation": "https://www.ing.pl/indywidualni/bankowosc-internetowa/bezpieczenstwo/klucze-zabezpieczen-u2f",
+    "notes": "The first U2F key requires confirmation at a bank branch.",
+    "categories": [
+      "banking"
+    ],
+    "regions": [
+      "pl"
+    ]
+  }
+}

@@ -3,7 +3,11 @@
     "domain": "linkedin.com",
     "tfa": [
       "sms",
-      "totp"
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "LinkedIn App"
     ],
     "documentation": "https://www.linkedin.com/help/linkedin/answer/544",
     "categories": [

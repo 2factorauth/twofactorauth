@@ -1,10 +1,11 @@
 {
   "Minds": {
     "domain": "minds.com",
-    "url": "https://www.minds.com/",
     "tfa": [
-      "sms"
+      "email",
+      "totp"
     ],
+    "documentation": "https://help.minds.com/hc/minds/articles/1705423904-two_factor-authentication",
     "categories": [
       "social"
     ]

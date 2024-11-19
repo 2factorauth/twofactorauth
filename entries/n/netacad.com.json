@@ -1,0 +1,17 @@
+{
+  "Cisco Network Academy": {
+    "domain": "netacad.com",
+    "img": "cisco.com.svg",
+    "tfa": [
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Duo"
+    ],
+    "documentation": "https://www.cisco.com/c/en/us/about/help/login-account-help.html#~change-password",
+    "categories": [
+      "education"
+    ]
+  }
+}

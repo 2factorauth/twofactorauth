@@ -1,0 +1,18 @@
+{
+  "VaultCord": {
+    "domain": "vaultcord.com",
+    "img": "vaultcord.com.png",
+    "additional-domains": [
+      "novanode.win"
+    ],
+    "tfa": [
+      "email",
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://docs.vaultcord.com/misc/multi-factor-authentication",
+    "categories": [
+      "backup"
+    ]
+  }
+}

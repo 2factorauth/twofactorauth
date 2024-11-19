@@ -1,6 +1,12 @@
 {
-  "Max": {
+  "MAX": {
     "domain": "max.se",
+    "additional-domains": [
+      "maxburgers.com",
+      "maxhamburger.no",
+      "max.dk",
+      "maxpremiumburgers.pl"
+    ],
     "contact": {
       "facebook": "maxburgers",
       "twitter": "maxburgers_se",
@@ -10,7 +16,10 @@
       "food"
     ],
     "regions": [
-      "se"
+      "se",
+      "no",
+      "dk",
+      "pl"
     ]
   }
 }

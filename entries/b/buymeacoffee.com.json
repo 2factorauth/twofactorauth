@@ -1,10 +1,11 @@
 {
   "Buy Me a Coffee": {
     "domain": "buymeacoffee.com",
-    "contact": {
-      "email": "support@buymeacoffee.com",
-      "twitter": "buymeacoffee"
-    },
+    "tfa": [
+      "email",
+      "totp"
+    ],
+    "documentation": "https://help.buymeacoffee.com/en/articles/8693915",
     "categories": [
       "crowdfunding"
     ]

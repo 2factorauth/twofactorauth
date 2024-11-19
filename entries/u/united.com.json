@@ -1,11 +1,15 @@
 {
   "United": {
     "domain": "united.com",
-    "url": "https://www.united.com/",
-    "contact": {
-      "facebook": "United",
-      "twitter": "united"
-    },
+    "tfa": [
+      "email",
+      "sms",
+      "call",
+      "custom-software"
+    ],
+     "custom-software": [
+      "United App"
+    ],
     "categories": [
       "transport"
     ]

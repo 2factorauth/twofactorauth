@@ -1,10 +1,13 @@
 {
-    "OpenAI": {
+    "OpenAI (ChatGPT)": {
         "domain": "openai.com",
+        "additional-domains": [
+        	"chatgpt.com"
+        ],
         "tfa": [
           "totp"
         ],
-        "notes": "Enabling 2FA is only available from the ChatGPT interface at the moment.",
+        "documentation": "https://help.openai.com/articles/7967234",
         "categories": [
             "developer"
         ]

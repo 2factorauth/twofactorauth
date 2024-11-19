@@ -1,0 +1,24 @@
+{
+    "Monash University": {
+      "domain": "monash.edu",
+      "img": "monash.edu.png",
+      "additional-domains": [
+        "monash.edu.my"
+      ],
+      "tfa": [
+        "u2f",
+        "totp",
+        "custom-software"
+      ],
+      "custom-software": [
+        "Okta Verify"
+      ],
+      "documentation": "https://www.monash.edu/esolutions/accounts-passwords/multi-factor-authentication",
+      "categories": [
+        "universities"
+      ],
+      "regions": [
+        "au"
+      ]
+    }
+  }
