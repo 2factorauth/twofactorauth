@@ -1,0 +1,17 @@
+{
+  "Umbrella": {
+    "domain": "umbrella.com",
+    "url": "https://umbrella.cisco.com",
+    "tfa": [
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Duo"
+    ],
+    "documentation": "https://docs.umbrella.com/deployment-umbrella/docs/enable-two-step-verification",
+    "categories": [
+      "cloud"
+    ]
+  }
+}
