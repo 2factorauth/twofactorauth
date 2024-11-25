@@ -1,0 +1,16 @@
+{
+  "MuleSoft": {
+    "domain": "mulesoft.com",
+    "tfa": [
+      "totp",
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "documentation": "https://docs.mulesoft.com/access-management/multi-factor-authentication",
+    "categories": [
+      "developer"
+    ]
+  }
+}
