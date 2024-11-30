@@ -1,0 +1,17 @@
+{
+  "MuleSoft": {
+    "domain": "mulesoft.com",
+    "tfa": [
+      "totp",
+      "custom-software",
+      "u2f"
+    ],
+    "custom-software": [
+      "Salesforce Authenticator"
+    ],
+    "documentation": "https://docs.mulesoft.com/access-management/multi-factor-authentication",
+    "categories": [
+      "developer"
+    ]
+  }
+}
