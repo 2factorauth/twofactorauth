@@ -1,0 +1,17 @@
+{
+  "Mastodon": {
+    "domain": "joinmastodon.org",
+    "additional-domains": [
+      "mastodon.social"
+    ],
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
+    "documentation": "https://github.com/McKael/mastodon-documentation/blob/master/Using-Mastodon/2FA.md",
+    "notes": "TOTP must be enabled to use a hardware token.",
+    "categories": [
+      "social"
+    ]
+  }
+}

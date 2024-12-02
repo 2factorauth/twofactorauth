@@ -2,11 +2,12 @@
   "npm": {
     "domain": "npmjs.com",
     "tfa": [
-      "totp"
+      "totp",
+      "u2f"
     ],
     "documentation": "https://docs.npmjs.com/configuring-two-factor-authentication",
     "recovery": "https://docs.npmjs.com/recovering-your-2fa-enabled-account",
-    "keywords": [
+    "categories": [
       "developer"
     ]
   }

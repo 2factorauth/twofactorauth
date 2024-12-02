@@ -1,0 +1,22 @@
+{
+  "Technische Universität Darmstadt": {
+    "domain": "tu-darmstadt.de",
+    "url": "https://www.tu-darmstadt.de",
+    "tfa": [
+      "totp",
+      "u2f",
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "HOTP"
+    ],
+    "documentation": "https://www.hrz.tu-darmstadt.de/tuid-2fa",
+    "notes": "Only protects services that use the Identity Provider",
+    "categories": [
+      "universities"
+    ],
+    "regions": [
+      "de"
+    ]
+  }
+}

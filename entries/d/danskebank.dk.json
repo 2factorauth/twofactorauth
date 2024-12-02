@@ -1,13 +1,19 @@
 {
-  "Danske Bank (Denmark)": {
+  "Danske Bank [DK]": {
     "domain": "danskebank.dk",
     "img": "danskebank.svg",
     "tfa": [
       "custom-hardware",
       "custom-software"
     ],
+    "custom-software": [
+      "NemID app"
+    ],
+    "custom-hardware": [
+      "NemID code token"
+    ],
     "documentation": "https://www.nemid.nu/dk-en/get_started/",
-    "keywords": [
+    "categories": [
       "banking"
     ],
     "regions": [

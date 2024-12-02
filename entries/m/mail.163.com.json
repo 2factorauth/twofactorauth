@@ -1,0 +1,22 @@
+{
+  "NetEase Mail": {
+    "domain": "mail.163.com",
+    "additional-domains": [
+      "126.com",
+      "yeah.net"
+    ],
+    "tfa": [
+      "totp",
+      "sms"
+    ],
+    "documentation": "https://help.mail.163.com/faq.do?m=list&categoryID=297",
+    "notes": "SMS is required as a backup method",
+    "categories": [
+      "email"
+    ],
+    "regions": [
+      "cn",
+      "hk"
+    ]
+  }
+}

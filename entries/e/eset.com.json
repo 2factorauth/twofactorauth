@@ -1,12 +1,11 @@
 {
-  "ESET": {
+  "ESET HOME": {
     "domain": "eset.com",
-    "url": "https://www.eset.com",
-    "contact": {
-      "facebook": "eset",
-      "twitter": "ESET"
-    },
-    "keywords": [
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://help.eset.com/home_eset/en-US/two_factor_authentication.html",
+    "categories": [
       "security"
     ]
   }

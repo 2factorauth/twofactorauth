@@ -1,12 +1,16 @@
 {
   "Discord": {
     "domain": "discord.com",
+    "additional-domains": [
+      "discordapp.com"
+    ],
     "tfa": [
       "sms",
-      "totp"
+      "totp",
+      "u2f"
     ],
     "documentation": "https://support.discord.com/hc/en-us/articles/219576828",
-    "keywords": [
+    "categories": [
       "communication"
     ]
   }

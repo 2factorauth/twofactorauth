@@ -1,15 +1,18 @@
 {
-  "DBS Bank Singapore": {
+  "DBS Bank [SG]": {
     "domain": "dbs.com.sg",
     "url": "https://www.dbs.com.sg/",
     "tfa": [
       "custom-hardware"
     ],
+    "custom-hardware": [
+      "DBS iB Secure Device"
+    ],
     "documentation": "https://www.dbs.com.sg/personal/deposits/security-and-you/we-protect-you.page#slideToN10051",
     "regions": [
       "sg"
     ],
-    "keywords": [
+    "categories": [
       "banking"
     ]
   }

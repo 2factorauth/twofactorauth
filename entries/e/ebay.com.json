@@ -1,15 +1,51 @@
 {
   "eBay": {
     "domain": "ebay.com",
-    "url": "https://www.ebay.com",
+    "additional-domains": [
+      "ebay.com.au",
+      "ebay.at",
+      "ebay.be",
+      "ebay.ca",
+      "ebay.cn",
+      "ebay.fr",
+      "ebay.de",
+      "ebay.com.hk",
+      "ebay.in",
+      "ebay.ie",
+      "ebay.it",
+      "ebay.co.jp",
+      "gmarket.co.kr",
+      "ebay.com.my",
+      "ebay.nl",
+      "ebay.ph",
+      "ebay.pl",
+      "ebay.com.sg",
+      "ebay.es",
+      "ebay.ch",
+      "ebay.com.tw",
+      "ebay.co.uk"
+    ],
     "img": "ebay.svg",
     "tfa": [
       "sms",
+      "totp",
       "custom-software"
     ],
-    "documentation": "https://community.ebay.com/t5/Announcements/eBay-launches-a-new-2-step-verification-method-to-increase/ba-p/29818464",
-    "keywords": [
+    "custom-software": [
+      "eBay app"
+    ],
+    "documentation": "https://www.ebay.com/help/account/protecting-account/tips-keeping-ebay-account-secure?id=4872#section2",
+    "categories": [
       "retail"
+    ],
+    "regions": [
+      "-cu",
+      "-kp",
+      "-ir",
+      "-sy",
+      "-ve",
+      "-ru",
+      "-tr"
     ]
   }
 }

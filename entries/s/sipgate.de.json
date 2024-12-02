@@ -1,14 +1,12 @@
 {
   "sipgate": {
     "domain": "sipgate.de",
-    "url": "https://www.sipgate.de/",
     "img": "sipgate.de.png",
-    "contact": {
-      "facebook": "sipgate",
-      "twitter": "sipgateDE",
-      "language": "de"
-    },
-    "keywords": [
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://help.sipgate.de/hc/de/articles/4421549797649",
+    "categories": [
       "utilities"
     ],
     "regions": [

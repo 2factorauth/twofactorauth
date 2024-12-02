@@ -2,12 +2,16 @@
   "Canada Revenue Agency": {
     "domain": "canada.ca",
     "url": "https://www.canada.ca/en/revenue-agency.html",
+    "additional-domains": [
+      "cra-arc.gc.ca"
+    ],
     "tfa": [
       "sms",
-      "call"
+      "call",
+      "totp"
     ],
     "documentation": "https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services/multi-factor-authentication-access-cra-login-services.html",
-    "keywords": [
+    "categories": [
       "government"
     ],
     "regions": [

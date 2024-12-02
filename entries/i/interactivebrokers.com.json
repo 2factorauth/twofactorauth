@@ -2,14 +2,31 @@
   "Interactive Brokers": {
     "domain": "interactivebrokers.com",
     "url": "https://www.interactivebrokers.com",
+    "additional-domains": [
+      "interactivebrokers.ca",
+      "interactivebrokers.co.in",
+      "interactivebrokers.co.jp",
+      "interactivebrokers.co.uk",
+      "interactivebrokers.com.au",
+      "interactivebrokers.com.hk",
+      "interactivebrokers.hu",
+      "interactivebrokers.ie",
+      "interactivebrokers.sg"
+    ],
     "tfa": [
       "sms",
       "custom-software",
       "custom-hardware"
     ],
+    "custom-software": [
+      "IBKR Mobile"
+    ],
+    "custom-hardware": [
+      "Digital Security Card+"
+    ],
     "documentation": "https://www.interactivebrokers.com/en/index.php?f=ibgStrength&p=log",
-    "notes": "SMS 2FA only works as long as no other method has been enabled.",
-    "keywords": [
+    "notes": "SMS 2FA only works as long as no other method has been enabled. Hardware 2FA is only available for certain customers.",
+    "categories": [
       "investing"
     ]
   }

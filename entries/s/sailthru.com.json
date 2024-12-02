@@ -2,9 +2,11 @@
   "Sailthru": {
     "domain": "sailthru.com",
     "tfa": [
-      "sms"
+      "totp"
     ],
-    "keywords": [
+    "notes": "You must contact Sailthru support to enable 2FA.",
+    "documentation": "https://getstarted.sailthru.com/mfa/mfa-hub/login-mfa/",
+    "categories": [
       "marketing"
     ]
   }

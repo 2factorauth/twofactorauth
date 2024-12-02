@@ -1,7 +1,6 @@
 {
   "OneLogin": {
     "domain": "onelogin.com",
-    "url": "https://www.onelogin.com/",
     "tfa": [
       "custom-software",
       "sms",
@@ -9,8 +8,17 @@
       "custom-hardware",
       "u2f"
     ],
-    "documentation": "https://onelogin.service-now.com/support?id=kb_article&sys_id=43d99143db109700d5505eea4b96197a",
-    "keywords": [
+    "custom-software": [
+      "OneLogin Protect",
+      "Duo",
+      "RSA SecurID",
+      "Symantec VIP"
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "documentation": "https://support.onelogin.com/kb/4266569",
+    "categories": [
       "identity"
     ]
   }

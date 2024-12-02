@@ -1,0 +1,25 @@
+{
+    "University of California, Berkeley": {
+        "domain": "berkeley.edu",
+        "img": "berkeley.edu.png",
+        "tfa": [
+            "sms",
+            "u2f",
+            "custom-hardware",
+            "custom-software"
+        ],
+        "custom-hardware": [
+            "Duo D100 Token"
+        ],
+        "custom-software": [
+            "Duo"
+        ],
+        "documentation": "https://calnetweb.berkeley.edu/calnet-2-step",
+        "categories": [
+            "universities"
+        ],
+        "regions": [
+            "us"
+        ]
+    }
+}

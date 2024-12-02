@@ -1,0 +1,20 @@
+{
+  "Госуслуги (Gosuslugi)": {
+    "domain": "gosuslugi.ru",
+    "tfa": [
+      "sms",
+      "totp",
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "Electronic Digital Signature (EDS) device"
+    ],
+    "documentation": "https://www.gosuslugi.ru/help/faq/login/101923",
+    "categories": [
+      "government"
+    ],
+    "regions": [
+      "ru"
+    ]
+  }
+}

@@ -1,13 +1,12 @@
 {
   "hCaptcha": {
     "domain": "hcaptcha.com",
-    "contact": {
-      "email": "support@hcaptcha.com",
-      "facebook": "hcaptcha",
-      "twitter": "hCaptcha"
-    },
-    "keywords": [
-      "security"
+    "tfa": [
+      "u2f"
+    ],
+    "categories": [
+      "security",
+      "developer"
     ]
   }
 }

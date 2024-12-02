@@ -4,13 +4,15 @@
     "tfa": [
       "sms",
       "call",
+      "u2f",
       "custom-software"
     ],
     "custom-software": [
       "Apple Device Push Notification"
     ],
     "documentation": "https://support.apple.com/en-us/HT204915",
-    "keywords": [
+    "notes": "U2F requires a minimum of two security keys to be registered.",
+    "categories": [
       "backup"
     ]
   }

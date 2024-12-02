@@ -3,13 +3,12 @@
     "domain": "namecheap.com",
     "url": "https://www.namecheap.com/",
     "tfa": [
-      "sms",
-      "custom-software",
       "totp",
       "u2f"
     ],
     "documentation": "https://www.namecheap.com/security/2fa-two-factor-authentication/",
-    "keywords": [
+    "notes": "Only one 2FA method can be active at any given time",
+    "categories": [
       "domains"
     ]
   }

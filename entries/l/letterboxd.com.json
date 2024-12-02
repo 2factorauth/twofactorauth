@@ -1,17 +1,15 @@
 {
-	"Letterboxd": {
-		"domain": "letterboxd.com",
-		"contact": {
-			"email": "help@letterboxd.com",
-			"facebook": "letterboxd",
-			"twitter": "letterboxd"
-		},
-		"keywords": [
-			"entertainment",
-			"social"
-		],
-		"additional-domains": [
-			"ltrbxd.com"
-		]
-	}
+  "Letterboxd": {
+    "domain": "letterboxd.com",
+    "additional-domains": [
+      "ltrbxd.com"
+    ],
+    "tfa": [
+      "totp"
+    ],
+    "categories": [
+      "entertainment",
+      "social"
+    ]
+  }
 }

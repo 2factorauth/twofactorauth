@@ -1,16 +1,19 @@
 {
-  "Santander PL": {
+  "Santander [PL]": {
     "domain": "santander.pl",
     "img": "santander.svg",
     "tfa": [
       "sms",
       "custom-software"
     ],
+    "custom-software": [
+      "Santander mobile app"
+    ],
     "documentation": "https://www.santander.pl/klient-indywidualny/kontakt/pytania-i-odpowiedzi-bankowosc-internetowa",
     "regions": [
       "pl"
     ],
-    "keywords": [
+    "categories": [
       "banking"
     ]
   }

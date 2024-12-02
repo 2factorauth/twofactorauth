@@ -1,7 +1,6 @@
 {
   "SailPoint": {
     "domain": "sailpoint.com",
-    "url": "https://www.sailpoint.com/",
     "tfa": [
       "sms",
       "call",
@@ -9,8 +8,15 @@
       "custom-software",
       "custom-hardware"
     ],
+    "custom-hardware": [
+      "RSA SecurID",
+      "Symantec VIP"
+    ],
+    "custom-software": [
+      "Duo"
+    ],
     "notes": "Applies to IdentityIQ and IdentityNow.",
-    "keywords": [
+    "categories": [
       "identity"
     ]
   }

@@ -1,16 +1,18 @@
 {
   "Addiko Bank": {
     "domain": "addiko.hr",
-    "url": "https://www.addiko.hr/",
     "tfa": [
       "totp",
-      "custom-hardware"
+      "custom-software"
+    ],
+    "custom-software": [
+      "Addiko Mobile App"
     ],
     "documentation": "https://www.addiko.hr/static/uploads/mtoken-uputa-za-koristenje.pdf",
     "regions": [
       "hr"
     ],
-    "keywords": [
+    "categories": [
       "banking"
     ]
   }

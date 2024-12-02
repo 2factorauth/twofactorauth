@@ -1,16 +1,18 @@
 {
   "Commonwealth Bank of Australia": {
     "domain": "commbank.com.au",
-    "url": "https://www.commbank.com.au/",
-    "tfa": [
-      "sms",
-      "custom-hardware"
+    "additional-domains": [
+      "netbank.com.au"
     ],
-    "documentation": "https://www.commbank.com.au/support.digital-banking.explain-netcode-token.html",
+    "contact": {
+      "facebook": "commonwealthbank",
+      "twitter": "commbank",
+      "form": "https://www.commbank.com.au/retail/netbank/complaints-compliments-form"
+    },
     "regions": [
       "au"
     ],
-    "keywords": [
+    "categories": [
       "banking"
     ]
   }

@@ -1,13 +1,20 @@
 {
   "Elster": {
     "domain": "elster.de",
-    "url": "https://www.elster.de/",
     "tfa": [
       "custom-software",
       "custom-hardware"
     ],
+    "custom-hardware": [
+      "National identity card",
+      "G&D StarSign Crypto Key",
+      "Signature card"
+    ],
+    "custom-software": [
+      "ElsterSecure"
+    ],
     "documentation": "https://www.elster.de/eportal/helpGlobal?themaGlobal=help_eop",
-    "keywords": [
+    "categories": [
       "government"
     ],
     "regions": [

@@ -1,0 +1,21 @@
+{
+    "Michigan State University": {
+        "domain": "msu.edu",
+        "tfa": [
+            "sms",
+            "call",
+            "u2f",
+            "custom-software"
+        ],
+        "custom-software": [
+            "Okta Verify"
+        ],
+        "documentation": "https://secureit.msu.edu/multi-factor/index.html",
+        "categories": [
+            "universities"
+        ],
+        "regions": [
+            "us"
+        ]
+    }
+}

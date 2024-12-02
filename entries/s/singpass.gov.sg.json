@@ -4,11 +4,17 @@
     "url": "https://www.singpass.gov.sg/",
     "tfa": [
       "sms",
-      "custom-software",
+	  "custom-software",
       "custom-hardware"
     ],
-    "documentation": "https://www.ifaq.gov.sg/SINGPASS/apps/fcd_faqmain.aspx#TOPIC_111223",
-    "keywords": [
+    "custom-software": [
+      "Singpass app"
+    ],
+    "custom-hardware": [
+      "Biometrics"
+    ],
+    "documentation": "https://www.singpass.gov.sg/main/html/faq.html",
+    "categories": [
       "government"
     ],
     "regions": [

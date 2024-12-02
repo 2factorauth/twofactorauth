@@ -1,13 +1,20 @@
 {
   "PKO Bank Polski": {
     "domain": "pkobp.pl",
-    "url": "https://www.pkobp.pl/",
+    "additional-domains": [
+      "ipko.pl"
+    ],
     "tfa": [
       "sms",
+      "u2f",
       "custom-software"
     ],
     "documentation": "https://iko.pkobp.pl/funkcje/mobilna-autoryzacja/",
-    "keywords": [
+    "notes": "You can only register one U2F security key to your bank account",
+    "custom-software": [
+      "IKO App"
+    ],
+    "categories": [
       "banking"
     ],
     "regions": [

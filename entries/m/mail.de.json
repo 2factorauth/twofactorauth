@@ -3,10 +3,10 @@
     "domain": "mail.de",
     "tfa": [
       "totp",
-      "custom-hardware"
+      "u2f"
     ],
     "documentation": "https://mail.de/hilfe/u2f-authenticator",
-    "keywords": [
+    "categories": [
       "email"
     ]
   }

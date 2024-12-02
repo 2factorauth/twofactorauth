@@ -1,14 +1,14 @@
 {
   "Wyze": {
     "domain": "wyze.com",
-    "url": "https://www.wyze.com",
     "tfa": [
       "sms",
+      "email",
       "totp"
     ],
-    "documentation": "https://support.wyzecam.com/hc/en-us/articles/360024402052",
+    "documentation": "https://support.wyze.com/hc/en-us/articles/360024402052",
     "notes": "2FA via SMS is only available for USA and Canada.",
-    "keywords": [
+    "categories": [
       "iot"
     ]
   }

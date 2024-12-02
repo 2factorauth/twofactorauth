@@ -1,12 +1,12 @@
 {
-  "StatusPage.io": {
+  "Statuspage": {
     "domain": "statuspage.io",
-    "url": "https://www.statuspage.io",
-    "contact": {
-      "facebook": "statuspageio",
-      "twitter": "Statuspage"
-    },
-    "keywords": [
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://support.atlassian.com/atlassian-account/docs/manage-two-step-verification-for-your-atlassian-account/",
+    "categories": [
       "developer"
     ]
   }

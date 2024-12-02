@@ -1,14 +1,15 @@
 {
   "Big W": {
     "domain": "bigw.com.au",
-    "url": "https://www.bigw.com.au/",
-    "contact": {
-      "facebook": "BIGWaustralia"
-    },
+    "tfa": [
+      "sms",
+      "call",
+      "email"
+    ],
     "regions": [
       "au"
     ],
-    "keywords": [
+    "categories": [
       "retail"
     ]
   }

@@ -2,14 +2,15 @@
   "Huntington National Bank": {
     "domain": "huntington.com",
     "url": "https://www.huntington.com",
-    "contact": {
-      "facebook": "HuntingtonBank",
-      "twitter": "Huntington_Bank"
-    },
+    "tfa": [
+      "call",
+      "sms",
+      "email"
+    ],
     "regions": [
       "us"
     ],
-    "keywords": [
+    "categories": [
       "banking"
     ]
   }

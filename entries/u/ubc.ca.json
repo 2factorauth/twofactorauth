@@ -1,0 +1,26 @@
+{
+  "University of British Columbia": {
+    "domain": "ubc.ca",
+    "tfa": [
+      "u2f",
+      "custom-software",
+      "custom-hardware",
+      "sms",
+      "call"
+    ],
+    "custom-software": [
+      "Duo Mobile"
+    ],
+    "custom-hardware": [
+      "Duo token"
+    ],
+    "documentation": "https://it.ubc.ca/mfa",
+    "recovery": "https://ubc.service-now.com/kb_view.do?sysparm_article=KB0018759",
+    "categories": [
+      "universities"
+    ],
+    "regions": [
+      "ca"
+    ]
+  }
+}

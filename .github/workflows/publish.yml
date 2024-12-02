@@ -1,0 +1,84 @@
+name: Publish
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'entries/**'
+      - 'img/**'
+      - 'scripts/*'
+  workflow_dispatch:
+
+concurrency:
+  group: 'publish'
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    name: Build and Publish files
+    if: github.repository == '2factorauth/twofactorauth'
+    permissions:
+      pages: write
+      id-token: write
+    environment: production
+    env:
+      NODE_ENV: ${{ vars.NODE_ENV || 'development' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: '2'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install --omit=dev
+
+      - name: Get modified files
+        id: diff
+        run: |
+          ENTRIES=$(git diff --name-only HEAD^ entries/| tr '\n' ' ')
+          if [ -n "$ENTRIES" ]; then
+            echo "entries=${ENTRIES}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Generate API files
+        run: for script in scripts/APIv*.js; do node "$script"; done
+
+      - name: Publish changes to Algolia
+        if: steps.diff.outputs.entries
+        run: node scripts/Algolia.js ${{ steps.diff.outputs.entries }}
+        env:
+          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+          ALGOLIA_INDEX_NAME: ${{ vars.ALGOLIA_INDEX_NAME }}
+          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+
+      - uses: crazy-max/ghaction-import-gpg@v6
+        id: pgp
+        with:
+          gpg_private_key: ${{ secrets.PGP_KEY }}
+          passphrase: ${{ secrets.PGP_PASSWORD }}
+
+      - name: Sign API files
+        run: bash scripts/Sign.sh
+        env:
+          PGP_PASSWORD: ${{ secrets.PGP_PASSWORD }}
+          PGP_KEY_ID: ${{ steps.pgp.outputs.keyid }}
+
+      - name: Validate API file structure
+        run: bash tests/api_files.sh
+
+      - name: Prepare publish directory
+        run: |
+          rsync -av {robots.txt,api/} public/
+          rsync -av img/. public/icons/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public/
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

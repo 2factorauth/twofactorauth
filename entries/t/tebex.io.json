@@ -1,13 +1,13 @@
 {
   "Tebex": {
     "domain": "tebex.io",
-    "url": "https://www.tebex.io/",
     "tfa": [
+      "sms",
       "email",
       "totp"
     ],
-    "documentation": "https://help.tebex.io/en/articles/2319372",
-    "keywords": [
+    "notes": "SMS is only a backup for TOTP 2FA.",
+    "categories": [
       "payments"
     ]
   }

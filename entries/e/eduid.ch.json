@@ -1,0 +1,17 @@
+{
+  "SWITCH edu-ID": {
+    "domain": "eduid.ch",
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://help.switch.ch/eduid/faqs/?lang=en#mfa",
+    "recovery": "https://help.switch.ch/eduid/faqs/?lang=en#mfa-lost-mobile",
+    "categories": [
+      "universities"
+    ],
+    "regions": [
+      "ch"
+    ]
+  }
+}

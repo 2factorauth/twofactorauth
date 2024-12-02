@@ -1,0 +1,25 @@
+{
+    "Cal Poly": {
+        "domain": "calpoly.edu",
+        "tfa": [
+            "sms",
+            "call",
+            "u2f",
+            "custom-hardware",
+            "custom-software"
+        ],
+        "custom-hardware": [
+            "Duo D100 Token"
+        ],
+        "custom-software": [
+            "Duo"
+        ],
+        "documentation": "https://calpoly.atlassian.net/wiki/spaces/CPKB/pages/3539066",
+        "categories": [
+            "universities"
+        ],
+        "regions": [
+            "us"
+        ]
+    }
+}

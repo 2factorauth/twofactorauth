@@ -1,11 +1,15 @@
 {
   "AdGuard": {
     "domain": "adguard.com",
+    "additional-domains": [
+      "adguard-vpn.com",
+      "adguard-dns.io"
+    ],
     "tfa": [
       "totp"
     ],
     "documentation": "https://kb.adguard.com/en/general/2fa",
-    "keywords": [
+    "categories": [
       "security"
     ]
   }

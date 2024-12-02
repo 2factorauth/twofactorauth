@@ -1,13 +1,20 @@
 {
   "Merrill Edge": {
     "domain": "merrilledge.com",
+    "additional-domains": [
+      "mymerrill.com",
+      "ml.com"
+    ],
     "url": "https://www.merrilledge.com/",
     "tfa": [
       "sms"
     ],
     "documentation": "https://github.com/2factorauth/twofactorauth/issues/2275",
-    "keywords": [
+    "categories": [
       "investing"
+    ],
+    "regions": [
+      "us"
     ]
   }
 }

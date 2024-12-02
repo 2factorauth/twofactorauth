@@ -1,12 +1,11 @@
 {
   "Concur": {
     "domain": "concur.com",
-    "url": "https://www.concur.com/",
-    "contact": {
-      "facebook": "SAPConcur",
-      "twitter": "SAPConcur"
-    },
-    "keywords": [
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://dam.sap.com/mac/app/p/pdf/asset/preview/kA9GcJq?ltr=a&rc=10",
+    "categories": [
       "finance"
     ],
     "regions": [
@@ -67,7 +66,8 @@
       "concur.co.jp",
       "concur.kr",
       "concur.com.sg",
-      "concur.tw"
+      "concur.tw",
+      "concursolutions.com"
     ]
   }
 }

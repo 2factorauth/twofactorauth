@@ -2,10 +2,11 @@
   "Koofr": {
     "domain": "koofr.eu",
     "tfa": [
-      "totp"
+      "totp",
+      "u2f"
     ],
-    "documentation": "https://koofr.eu/help/other/how-do-i-enable-2-step-verification/",
-    "keywords": [
+    "documentation": "https://koofr.eu/help/two-factor-authentication/does-koofr-offer-two-factor-authentication/",
+    "categories": [
       "backup"
     ]
   }

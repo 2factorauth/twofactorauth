@@ -1,13 +1,15 @@
 {
   "Ankama": {
     "domain": "ankama.com",
-    "url": "https://www.ankama.com",
     "tfa": [
       "email",
       "custom-software"
     ],
-    "documentation": "https://support.ankama.com/hc/en-us/categories/200093427",
-    "keywords": [
+    "custom-software": [
+      "Ankama Authenticator"
+    ],
+    "documentation": "https://support.ankama.com/hc/en-us/articles/360019984217",
+    "categories": [
       "gaming"
     ]
   }

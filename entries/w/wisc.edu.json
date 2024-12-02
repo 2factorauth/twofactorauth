@@ -1,0 +1,24 @@
+{
+    "University of Wisconsin Madison": {
+        "domain": "wisc.edu",
+        "tfa": [
+            "custom-software",
+            "custom-hardware",
+            "u2f"
+        ],
+        "custom-software": [
+          "Duo"
+        ],
+        "custom-hardware": [
+          "Duo D100 Token",
+          "Feitian OTP c100 Token"
+        ],
+        "documentation": "https://it.wisc.edu/services/duo-multi-factor-authentication-mfa/",
+        "categories": [
+            "universities"
+        ],
+        "regions": [
+            "us"
+        ]
+    }
+}

@@ -1,14 +1,20 @@
 {
   "Square": {
     "domain": "squareup.com",
+    "additional-domains": [
+      "weebly.com",
+      "square.site",
+      "square.com"
+    ],
     "tfa": [
       "sms",
       "totp"
     ],
     "documentation": "https://squareup.com/help/us/en/article/5593",
     "recovery": "https://squareup.com/help/gb/en/article/5594",
-    "notes": "SMS only supported in US and Canada",
-    "keywords": [
+    "notes": "SMS only supported in US and Canada. Only Square-linked Weebly have 2FA.",
+    "categories": [
+      "hosting",
       "payments"
     ],
     "regions": [

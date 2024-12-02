@@ -1,0 +1,21 @@
+{
+  "NY.gov ID": {
+    "domain": "my.ny.gov",
+    "tfa": [
+      "sms",
+      "call",
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Okta Verify"
+    ],
+    "documentation": "https://dol.ny.gov/MFA",
+    "categories": [
+      "government"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}

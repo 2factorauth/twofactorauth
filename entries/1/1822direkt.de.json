@@ -1,13 +1,15 @@
 {
   "1822direkt": {
     "domain": "1822direkt.de",
-    "url": "https://www.1822direkt.de/",
     "tfa": [
       "sms",
       "custom-software"
     ],
+    "custom-software": [
+      "1822TAN+"
+    ],
     "documentation": "https://www.1822direkt.de/service/sicherheitsportal/sicheres-online-banking/",
-    "keywords": [
+    "categories": [
       "banking"
     ],
     "regions": [

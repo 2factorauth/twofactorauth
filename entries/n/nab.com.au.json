@@ -1,16 +1,20 @@
 {
   "National Australia Bank": {
     "domain": "nab.com.au",
-    "url": "https://www.nab.com.au/",
+    "additional-domains": [
+      "nabtrade.com.au"
+    ],
     "contact": {
       "facebook": "NAB",
-      "twitter": "NAB"
+      "twitter": "NAB",
+      "form": "https://www.nab.com.au/common/forms/complaints-compliments-feedback"
     },
     "regions": [
       "au"
     ],
-    "keywords": [
-      "banking"
+    "categories": [
+      "banking",
+      "investing"
     ]
   }
 }

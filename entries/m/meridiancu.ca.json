@@ -2,14 +2,15 @@
   "Meridian Credit Union": {
     "domain": "meridiancu.ca",
     "url": "https://www.meridiancu.ca",
-    "contact": {
-      "facebook": "MeridianCreditUnion",
-      "twitter": "MeridianCU"
-    },
+    "tfa": [
+      "sms",
+      "call"
+    ],
+    "documentation": "https://www.meridiancu.ca/bank-anywhere/online-banking/signing-in-for-the-first-time-online",
     "regions": [
       "ca"
     ],
-    "keywords": [
+    "categories": [
       "banking"
     ]
   }

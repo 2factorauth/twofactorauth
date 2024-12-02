@@ -1,11 +1,12 @@
 {
   "Disqus": {
     "domain": "disqus.com",
-    "contact": {
-      "facebook": "disqus",
-      "twitter": "disqus"
-    },
-    "keywords": [
+    "tfa": [
+      "email",
+      "totp"
+    ],
+    "documentation": "https://help.disqus.com/articles/9768685",
+    "categories": [
       "communication"
     ]
   }

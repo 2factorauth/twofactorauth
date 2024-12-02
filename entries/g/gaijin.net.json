@@ -4,10 +4,15 @@
     "tfa": [
       "sms",
       "email",
-      "totp"
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Gaijin Pass"
     ],
     "documentation": "https://support.gaijin.net/hc/en-us/articles/203623622",
-    "keywords": [
+    "notes": "Software 2FA requires linking a phone number.",
+    "categories": [
       "gaming"
     ]
   }

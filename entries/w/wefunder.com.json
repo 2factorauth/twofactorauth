@@ -1,0 +1,15 @@
+{
+    "Wefunder": {
+        "domain": "wefunder.com",
+        "tfa": [
+            "sms",
+            "totp",
+            "u2f"
+        ],
+        "documentation": "https://help.wefunder.com/getting-started-for-investors/how-secure-is-my-account",
+        "notes": "Setting up 2FA with TOTP or Security Key requires adding a phone number.",
+        "categories": [
+            "crowdfunding"
+        ]
+    }
+}

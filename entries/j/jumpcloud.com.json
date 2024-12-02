@@ -2,10 +2,12 @@
   "JumpCloud": {
     "domain": "jumpcloud.com",
     "tfa": [
-      "totp"
+      "totp",
+      "u2f"
     ],
-    "documentation": "https://support.jumpcloud.com/support/s/article/using-multi-factor-authentication-with-your-jumpcloud-user-account-2019-08-21-10-36-47",
-    "keywords": [
+    "documentation": "https://jumpcloud.com/support/set-up-authenticator-app-for-user-account",
+    "recovery": "https://jumpcloud.com/support/reset-mfa-in-user-portal",
+    "categories": [
       "identity"
     ]
   }

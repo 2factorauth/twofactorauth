@@ -1,13 +1,15 @@
 {
-  "Danske Bank (Sweden)": {
+  "Danske Bank [SE]": {
     "domain": "danskebank.se",
     "img": "danskebank.svg",
     "tfa": [
-      "custom-hardware",
       "custom-software"
     ],
+    "custom-software": [
+      "BankID"
+    ],
     "documentation": "https://danskebank.se/privat/digitala-tjanster/ovriga-tjanster/bankid",
-    "keywords": [
+    "categories": [
       "banking"
     ],
     "regions": [

@@ -1,7 +1,6 @@
 {
   "Pennsylvania State University": {
     "domain": "psu.edu",
-    "url": "https://www.psu.edu/",
     "tfa": [
       "sms",
       "call",
@@ -9,8 +8,14 @@
       "custom-hardware",
       "u2f"
     ],
+    "custom-software": [
+      "Duo"
+    ],
+    "custom-hardware": [
+      "Duo D100 Token"
+    ],
     "documentation": "https://get2fa.psu.edu",
-    "keywords": [
+    "categories": [
       "universities"
     ],
     "regions": [

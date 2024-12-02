@@ -1,17 +1,21 @@
 {
   "Bank of America": {
     "domain": "bankofamerica.com",
-    "url": "https://www.bankofamerica.com/",
+    "additional-domains": [
+      "bofa.com",
+      "mbna.com"
+    ],
     "tfa": [
       "sms",
       "email",
       "u2f"
     ],
     "documentation": "https://www.bankofamerica.com/security-center/online-banking/",
+    "notes": "Mobile apps only use SMS 2FA",
     "regions": [
       "us"
     ],
-    "keywords": [
+    "categories": [
       "banking"
     ]
   }

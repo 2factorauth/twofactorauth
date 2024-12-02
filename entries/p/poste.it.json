@@ -1,17 +1,18 @@
 {
   "PosteItaliane": {
     "domain": "poste.it",
-    "url": "https://www.poste.it/",
-    "contact": {
-      "email": "servizio.clienti@posteitaliane.it",
-      "facebook": "PosteItaliane",
-      "twitter": "PosteNews",
-      "language": "it"
-    },
+    "tfa": [
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "PosteItaliane App"
+    ],
+    "documentation": "https://www.poste.it/cosa-fare-sicurezza.html",
     "regions": [
       "it"
     ],
-    "keywords": [
+    "categories": [
       "banking",
       "postal"
     ]

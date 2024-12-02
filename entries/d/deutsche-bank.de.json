@@ -1,14 +1,19 @@
 {
   "Deutsche Bank": {
     "domain": "deutsche-bank.de",
-    "url": "https://www.deutsche-bank.de/",
     "tfa": [
       "sms",
       "custom-software",
       "custom-hardware"
     ],
+    "custom-hardware": [
+      "photoTAN card reader"
+    ],
+    "custom-software": [
+      "Deutsche Bank Mobile"
+    ],
     "documentation": "https://www.deutsche-bank.de/pk/lp/psd2.html",
-    "keywords": [
+    "categories": [
       "banking"
     ],
     "regions": [

@@ -1,13 +1,12 @@
 {
   "Samsung SmartThings": {
     "domain": "smartthings.com",
-    "url": "https://www.smartthings.com/",
     "tfa": [
       "sms",
       "totp"
     ],
-    "documentation": "https://account.samsung.com/membership/guide/2step/",
-    "keywords": [
+    "documentation": "https://account.samsung.com/membership/guide/setup-2step-verification",
+    "categories": [
       "iot"
     ]
   }

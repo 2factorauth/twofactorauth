@@ -1,0 +1,18 @@
+{
+    "o2switch": {
+        "domain": "o2switch.fr",
+        "tfa": [
+            "email",
+            "totp"
+        ],
+        "categories": [
+            "hosting"
+        ],
+        "notes": "Email 2FA is always enabled on the billing panel. On the cPanel, only TOTP is available, and using SSH/FTP won't prompt for 2FA",
+        "regions": [
+            "be",
+            "ch",
+            "fr"
+        ]
+    }
+}

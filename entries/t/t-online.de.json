@@ -1,14 +1,17 @@
 {
   "T-Online": {
     "domain": "t-online.de",
-    "url": "https://www.t-online.de/",
-    "contact": {
-      "facebook": "tonline.de",
-      "twitter": "Telekom_hilft",
-      "language": "de"
-    },
-    "keywords": [
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "notes": "SMS 2FA is always required",
+    "documentation": "https://www.telekom.de/hilfe/vertrag-rechnung/login-daten-passwoerter/mehr-faktor-authentifizierung",
+    "categories": [
       "email"
+    ],
+    "regions": [
+      "de"
     ]
   }
 }

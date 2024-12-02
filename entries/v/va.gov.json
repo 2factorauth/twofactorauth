@@ -1,15 +1,18 @@
 {
   "US Veteran Affairs": {
     "domain": "va.gov",
-    "url": "https://www.va.gov",
     "tfa": [
       "sms",
       "call",
-      "custom-software",
-      "custom-hardware"
+      "totp",
+      "u2f",
+      "custom-software"
     ],
-    "notes": "2FA is only available when using the Identity Management service ID.me",
-    "keywords": [
+    "custom-software": [
+      "ID.me Authenticator"
+    ],
+    "documentation": "https://www.va.gov/resources/verifying-your-identity-on-vagov",
+    "categories": [
       "government"
     ],
     "regions": [

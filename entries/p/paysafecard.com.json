@@ -3,11 +3,64 @@
     "domain": "paysafecard.com",
     "url": "https://www.paysafecard.com/",
     "tfa": [
-      "totp"
+      "sms",
+      "custom-software"
     ],
-    "documentation": "https://www.paysafecard.com/en-au/lp-products/2-step-login/",
-    "keywords": [
+    "custom-software": [
+      "paysafecard app"
+    ],
+    "recovery": "https://www.paysafecard.com/en/help/2-faktor-authentifizierung/",
+    "categories": [
       "payments"
+    ],
+    "regions": [
+      "ae",
+      "ar",
+      "at",
+      "au",
+      "be",
+      "bg",
+      "ca",
+      "ch",
+      "cy",
+      "cz",
+      "de",
+      "dk",
+      "es",
+      "fi",
+      "fr",
+      "gb",
+      "ge",
+      "gr",
+      "hr",
+      "hu",
+      "ie",
+      "is",
+      "it",
+      "kw",
+      "li",
+      "lt",
+      "lu",
+      "lv",
+      "md",
+      "me",
+      "mt",
+      "mx",
+      "nl",
+      "no",
+      "nz",
+      "pe",
+      "pl",
+      "pt",
+      "py",
+      "ro",
+      "sa",
+      "se",
+      "si",
+      "sk",
+      "tr",
+      "us",
+      "uy"
     ]
   }
 }

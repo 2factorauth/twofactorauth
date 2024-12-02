@@ -1,12 +1,12 @@
 {
   "Notion": {
     "domain": "notion.so",
-    "contact": {
-      "email": "team@makenotion.com",
-      "facebook": "NotionHQ",
-      "twitter": "NotionHQ"
-    },
-    "keywords": [
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://www.notion.so/help/two-step-verification",
+    "categories": [
       "communication"
     ]
   }

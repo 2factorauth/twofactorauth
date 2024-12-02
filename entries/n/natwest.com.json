@@ -1,16 +1,18 @@
 {
-  "Natwest UK": {
+  "NatWest": {
     "domain": "natwest.com",
-    "url": "https://www.natwest.com/personal.ashx",
     "tfa": [
       "custom-hardware"
     ],
-    "documentation": "http://www.natwest.com/personal/online-banking/g1/banking-safely-online/card-reader.ashx",
+    "custom-hardware": [
+      "Card reader"
+    ],
+    "documentation": "https://www.natwest.com/banking-with-natwest/how-to/card-reader.html",
+    "categories": [
+      "banking"
+    ],
     "regions": [
       "gb"
-    ],
-    "keywords": [
-      "banking"
     ]
   }
 }

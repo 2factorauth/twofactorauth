@@ -2,11 +2,14 @@
   "Action Network": {
     "domain": "actionnetwork.org",
     "tfa": [
-      "totp",
+      "custom-software",
       "sms"
     ],
+    "custom-software": [
+      "Authy"
+    ],
     "documentation": "https://help.actionnetwork.org/hc/en-us/articles/217206826",
-    "keywords": [
+    "categories": [
       "marketing"
     ]
   }

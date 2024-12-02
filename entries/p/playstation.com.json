@@ -1,13 +1,16 @@
 {
   "Playstation Network": {
     "domain": "playstation.com",
+    "additional-domains": [
+      "sonyentertainmentnetwork.com"
+    ],
     "url": "https://www.playstation.com/",
     "tfa": [
       "sms",
       "totp"
     ],
     "documentation": "https://www.playstation.com/support/account/2sv-psn-login/",
-    "keywords": [
+    "categories": [
       "gaming"
     ]
   }

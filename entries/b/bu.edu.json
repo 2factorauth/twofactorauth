@@ -1,15 +1,17 @@
 {
   "Boston University": {
     "domain": "bu.edu",
-    "url": "https://www.bu.edu",
     "tfa": [
       "sms",
       "call",
-      "custom-software",
-      "custom-hardware"
+      "u2f",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Duo"
     ],
     "documentation": "https://www.bu.edu/tech/support/duo/",
-    "keywords": [
+    "categories": [
       "universities"
     ],
     "regions": [
