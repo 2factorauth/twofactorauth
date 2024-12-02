@@ -4,13 +4,9 @@
     "tfa": [
       "email",
       "u2f",
-      "totp",
-      "custom-software"
+      "totp"
     ],
-    "custom-software": [
-      "Symantec VIP"
-    ],
-    "documentation": "https://cloud.ibm.com/docs/account?topic=account-enablemfa",
+    "documentation": "https://cloud.ibm.com/docs/account?topic=account-types#mfa-options-all-users",
     "categories": [
       "cloud"
     ]
