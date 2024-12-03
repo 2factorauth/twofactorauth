@@ -1,0 +1,18 @@
+{
+  "GetResponse": {
+    "domain": "getresponse.com",
+    "tfa": [
+      "sms",
+      "email",
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "GetResponse App"
+    ],
+    "documentation": "https://help.elevenlabs.io/hc/articles/21636341747985",
+    "categories": [
+      "marketing"
+    ]
+  }
+}
