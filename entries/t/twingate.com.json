@@ -1,0 +1,17 @@
+{
+  "Twingate": {
+    "domain": "twingate.com",
+    "tfa": [
+      "totp",
+      "custom-hardware"
+    ],
+    "custom-hardware": [
+      "Biometrics",
+      "Yubico OTP"
+    ],
+    "documentation": "https://www.twingate.com/docs/two-factor-authentication-security-policies",
+    "categories": [
+      "remote"
+    ]
+  }
+}
