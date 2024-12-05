@@ -345,7 +345,7 @@ description.
 | legal            |           Legal           | Legal aid services                                                                  |
 | marketing        |   Marketing & Analytics   | Marketing campaign providers and analytics services                                 |
 | payments         |         Payments          | Payment providers                                                                   |
-| post             |     Post and Shipping     | Postal and logistics providers                                                      |
+| postal           |     Post and Shipping     | Postal and logistics providers                                                      |
 | remote           |       Remote Access       | Remote device access platforms                                                      |
 | retail           |          Retail           | Online retail platforms                                                             |
 | security         |         Security          | Online security and anti-malware services. Excluding VPN and identity management    |
