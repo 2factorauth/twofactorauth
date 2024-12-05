@@ -3,11 +3,7 @@
     "domain": "twingate.com",
     "tfa": [
       "totp",
-      "custom-hardware"
-    ],
-    "custom-hardware": [
-      "Biometrics",
-      "Yubico OTP"
+      "u2f"
     ],
     "documentation": "https://www.twingate.com/docs/two-factor-authentication-security-policies",
     "categories": [
