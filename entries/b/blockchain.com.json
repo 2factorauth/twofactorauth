@@ -1,6 +1,9 @@
 {
   "Blockchain.com": {
     "domain": "blockchain.com",
+    "additional-domains": [
+      "blockchain.info"
+    ],
     "tfa": [
       "sms",
       "totp",
