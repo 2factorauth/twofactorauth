@@ -1,0 +1,25 @@
+{
+  "GetResponse": {
+    "domain": "getresponse.com",
+    "tfa": [
+      "sms",
+      "email",
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "GetResponse app"
+    ],
+    "documentation": "https://www.getresponse.com/help/how-to-use-two-factor-authentication-in-getresponse.html",
+    "categories": [
+      "marketing"
+    ],
+    "regions": [
+      "-cu",
+      "-ir",
+      "-kp",
+      "-ru",
+      "-sy"
+    ]
+  }
+}
