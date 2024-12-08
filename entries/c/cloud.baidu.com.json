@@ -1,6 +1,9 @@
 {
     "Baidu AI cloud": {
       "domain": "cloud.baidu.com",
+      "additional-domains": [
+        "login.bce.baidu.com"
+      ],
       "tfa": [
         "totp",
         "custom-software"
