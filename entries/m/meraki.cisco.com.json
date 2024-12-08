@@ -1,6 +1,9 @@
 {
   "Cisco Meraki": {
     "domain": "meraki.cisco.com",
+    "additional-domains": [
+      "meraki.com"
+    ],
     "tfa": [
       "sms",
       "totp"
