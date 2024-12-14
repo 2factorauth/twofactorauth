@@ -1,6 +1,9 @@
 {
   "Hewlett Packard Enterprise": {
     "domain": "hpe.com",
+    "additional-domains": [
+      "hewlettpackardenterprise.com"
+    ],
     "tfa": [
       "totp",
       "custom-hardware",
