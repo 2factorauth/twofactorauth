@@ -1,6 +1,9 @@
 {
   "Segment": {
     "domain": "segment.com",
+    "additional-domains": [
+      "segment.io"
+    ],
     "tfa": [
       "sms",
       "totp"
