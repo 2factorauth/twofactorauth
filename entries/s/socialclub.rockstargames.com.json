@@ -1,6 +1,9 @@
 {
-  "Rockstar Games Social Club": {
-    "domain": "socialclub.rockstargames.com",
+  "Rockstar Games": {
+    "domain": "rockstargames.com",
+    "additional-domains": [
+      "socialclub.rockstargames.com"
+    ],
     "tfa": [
       "totp"
     ],
