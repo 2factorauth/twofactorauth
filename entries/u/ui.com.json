@@ -1,6 +1,9 @@
 {
   "Ubiquiti UniFi": {
     "domain": "ui.com",
+    "additional-domains": [
+      "ubnt.com"
+    ],
     "tfa": [
       "totp",
       "email",
