@@ -54,6 +54,10 @@ jobs:
         if: steps.diff.outputs.entries
         run: node tests/categories.js ${{ steps.diff.outputs.entries }}
 
+      - name: Validate Domains
+        if: steps.diff.outputs.entries
+        run: node tests/domains.js ${{ steps.diff.outputs.entries }}
+
       - name: Validate Images
         if: ${{ steps.diff.outputs.entries || steps.diff.outputs.images }}
         run: |
