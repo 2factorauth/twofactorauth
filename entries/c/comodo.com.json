@@ -1,0 +1,14 @@
+{
+  "Comodo": {
+    "domain": "comodo.com",
+    "tfa": [
+      "totp",
+      "sms"
+    ],
+    "notes": "SMS is only available for accounts with more than 50 devices.",
+    "documentation": "https://help.comodo.com/topic-289-1-716-11276-.html",
+    "categories": [
+      "security"
+    ]
+  }
+}
