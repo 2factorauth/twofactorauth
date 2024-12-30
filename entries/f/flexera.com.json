@@ -1,13 +1,15 @@
 {
   "Flexera": {
     "domain": "flexera.com",
-    "contact": {
-      "facebook": "flexera",
-      "twitter": "flexera",
-      "form": "https://www.flexera.com/about-us/contact-us"
-    },
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://docs.flexera.com/svm/Content/helplibrary/Configure_Two_Factor_Authentication__2FA_.htm",
+    "recovery": "https://docs.flexera.com/svm/Content/helplibrary/Two_Factor_Authentication_Recovery.htm",
     "categories": [
-      "cloud"
+      "cloud",
+      "security"
     ]
   }
 }
