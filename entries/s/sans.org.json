@@ -1,6 +1,10 @@
 {
   "SANS": {
     "domain": "sans.org",
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
     "contact": {
       "twitter": "SANSInstitute",
       "email": "support@sans.org"
