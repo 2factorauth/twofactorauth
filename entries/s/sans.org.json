@@ -1,10 +1,10 @@
 {
   "SANS": {
     "domain": "sans.org",
-    "contact": {
-      "twitter": "SANSInstitute",
-      "email": "support@sans.org"
-    },
+    "tfa": [
+      "totp",
+      "u2f"
+    ],
     "categories": [
       "education"
     ]
