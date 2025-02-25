@@ -1,10 +1,14 @@
 {
   "Delta": {
     "domain": "delta.com",
-    "contact": {
-      "facebook": "delta",
-      "twitter": "Delta"
-    },
+    "tfa": [
+      "sms",
+      "email",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Fly Delta app"
+    ],
     "categories": [
       "travel"
     ]
