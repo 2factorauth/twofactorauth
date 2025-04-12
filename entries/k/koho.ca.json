@@ -1,14 +1,14 @@
 {
   "Koho": {
     "domain": "koho.ca",
-    "contact": {
-      "twitter": "GetKoho",
-      "facebook": "KOHO",
-      "form": "https://www.koho.ca/contact/"
-    },
+    "tfa": [
+      "sms",
+      "totp"
+    ],
     "regions": [
       "ca"
     ],
+    "documentation": "https://help.koho.ca/en/articles/9401393-set-up-two-step-verification",
     "categories": [
       "finance"
     ]
