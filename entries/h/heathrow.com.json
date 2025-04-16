@@ -1,0 +1,16 @@
+{
+  "Heathrow Airport": {
+    "domain": "heathrow.com",
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "notes": "2FA is mandatory upon account creation",
+    "categories": [
+      "travel"
+    ],
+    "regions": [
+      "gb"
+    ]
+  }
+}
