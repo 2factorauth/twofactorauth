@@ -1,0 +1,18 @@
+{
+  "LogMeIn": {
+    "domain": "logmein.com",
+    "additional-domains": [
+      "logme.in",
+      "goto.com"
+    ],
+    "tfa": [
+      "sms",
+      "totp",
+      "email"
+    ],
+    "documentation": "https://support.logmein.com/central/help/two-step-verification-central-c-common-security-twostep",
+    "categories": [
+      "remote"
+    ]
+  }
+}
