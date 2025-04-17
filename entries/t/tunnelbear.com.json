@@ -1,11 +1,11 @@
 {
   "TunnelBear": {
     "domain": "tunnelbear.com",
-    "contact": {
-      "email": "support@tunnelbear.com",
-      "facebook": "tunnelbear",
-      "twitter": "theTunnelBear"
-    },
+    "tfa": [
+      "email",
+      "totp",
+    ],
+    "documentation": "https://help.tunnelbear.com/hc/articles/16123360922267",
     "categories": [
       "vpn"
     ]
