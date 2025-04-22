@@ -1,15 +1,17 @@
 {
   "Harvard University": {
     "domain": "harvard.edu",
-    "url": "https://www.harvard.edu",
     "tfa": [
       "sms",
       "call",
+      "u2f",
+      "totp",
       "custom-software",
       "custom-hardware"
     ],
     "custom-software": [
-      "Duo"
+      "Duo",
+      "Okta Verify"
     ],
     "custom-hardware": [
       "Yubico OTP"
