@@ -1,10 +1,11 @@
 {
   "DeepL": {
     "domain": "deepl.com",
-    "contact": {
-      "facebook": "DeepLcom",
-      "twitter": "DeepLcom"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://support.deepl.com/hc/articles/17764808297628",
+    "recovery": "https://support.deepl.com/hc/articles/17765746756636",
     "categories": [
       "developer"
     ]
