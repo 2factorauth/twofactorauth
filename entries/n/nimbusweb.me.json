@@ -1,7 +1,9 @@
 {
   "FuseBase": {
     "domain": "nimbusweb.me",
-    "url": "https://thefusebase.com",
+    "additional-domains": [
+      "thefusebase.com"
+    ],
     "tfa": [
       "totp"
     ],
