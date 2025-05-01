@@ -1,11 +1,16 @@
 {
-  "Nimbus Platform": {
+  "FuseBase": {
     "domain": "nimbusweb.me",
+    "additional-domains": [
+      "thefusebase.com"
+    ],
     "tfa": [
       "totp"
     ],
     "documentation": "https://nimbusweb.me/guides/settings/account-settings-2-step-verification-for-sign-in/",
+    "notes": "Available for Pro and Business users only.",
     "categories": [
+      "backup",
       "task"
     ]
   }
