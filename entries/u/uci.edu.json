@@ -1,0 +1,25 @@
+{
+  "University of California, Irvine": {
+    "domain": "uci.edu",
+    "tfa": [
+      "sms",
+      "call",
+      "u2f",
+      "custom-hardware",
+      "custom-software"
+    ],
+    "custom-hardware": [
+      "Duo D100 Token"
+    ],
+    "custom-software": [
+      "Duo"
+    ]
+    "documentation": "https://www.oit.uci.edu/services/accounts-passwords/duo/",
+    "categories": [
+      "universities"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}
