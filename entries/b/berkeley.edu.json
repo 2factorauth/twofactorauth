@@ -3,13 +3,13 @@
         "domain": "berkeley.edu",
         "img": "berkeley.edu.png",
         "tfa": [
-            "sms",
             "u2f",
             "custom-hardware",
             "custom-software"
         ],
         "custom-hardware": [
-            "Duo D100 Token"
+            "Duo D100 Token",
+            "Feitian OTP c100 Token"
         ],
         "custom-software": [
             "Duo"
