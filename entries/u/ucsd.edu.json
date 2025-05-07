@@ -1,0 +1,24 @@
+{
+  "University of California, San Diego": {
+    "domain": "ucsd.edu",
+    "tfa": [
+      "sms",
+      "u2f",
+      "custom-hardware",
+      "custom-software"
+    ],
+    "custom-hardware": [
+      "Duo D100 Token"
+    ],
+    "custom-software": [
+      "Duo"
+    ],
+    "documentation": "https://blink.ucsd.edu/technology/security/services/two-step-login/",
+    "categories": [
+      "universities"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}
