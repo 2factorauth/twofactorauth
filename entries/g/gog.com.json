@@ -3,9 +3,11 @@
     "domain": "gog.com",
     "url": "https://www.gog.com",
     "tfa": [
-      "email"
+      "email",
+      "totp"
     ],
     "documentation": "https://support.gog.com/hc/en-us/articles/115003660533",
+    "notes": "Only one method of authentication can be used at a time.",
     "categories": [
       "gaming"
     ]
