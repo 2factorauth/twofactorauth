@@ -1,11 +1,12 @@
 {
   "MyChart": {
-    "domain": "mychart.com",
+    "domain": "mychart.org",
     "tfa": [
       "sms",
-      "email"
+      "email",
+      "totp"
     ],
-    "documentation": "https://www.mychart.com/Features",
+    "documentation": "https://www.mychart.org/Help/two-factor-auth",
     "categories": [
       "health"
     ],
