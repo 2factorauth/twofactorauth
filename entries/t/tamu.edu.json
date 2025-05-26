@@ -1,0 +1,26 @@
+{
+  "Texas A&M University": {
+    "domain": "tamu.edu",
+    "tfa": [
+      "sms",
+      "call",
+      "u2f",
+      "custom-software",
+      "custom-hardware"
+    ],
+    "custom-software": [
+      "Duo"
+    ],
+    "custom-hardware": [
+      "Yubico OTP",
+      "Duo D100 Token"
+    ],
+    "documentation": "https://it.tamu.edu/duo/",
+    "categories": [
+      "universities"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}

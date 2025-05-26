@@ -317,7 +317,7 @@ Below is a table of each available category, the name of the category, which tit
 description.
 
 | Name             |           Title           | Description                                                                         |
-| ---------------- | :-----------------------: | ----------------------------------------------------------------------------------- |
+|------------------|:-------------------------:|-------------------------------------------------------------------------------------|
 | backup           |      Backup and Sync      | Online backup and cross-device file synchronization                                 |
 | banking          |          Banking          | Online banking platforms                                                            |
 | betting          |          Betting          | Betting and gambling                                                                |
@@ -337,7 +337,6 @@ description.
 | government       |        Government         | Government portals. Excluding education                                             |
 | health           |          Health           | Health and fitness platforms                                                        |
 | hosting          |        Hosting/VPS        | Online website hosting, VPS, and dedicated server rentals                           |
-| hotels           | Hotels and Accommodations | Hotels and short term accommodation providers                                       |
 | identity         |    Identity Management    | Authentication providers, Single Sign On platforms                                  |
 | insurance        |         Insurance         | Insurance services                                                                  |
 | investing        |         Investing         | Investment platforms                                                                |
@@ -345,14 +344,15 @@ description.
 | legal            |           Legal           | Legal aid services                                                                  |
 | marketing        |   Marketing & Analytics   | Marketing campaign providers and analytics services                                 |
 | payments         |         Payments          | Payment providers                                                                   |
-| post             |     Post and Shipping     | Postal and logistics providers                                                      |
+| postal           |     Post and Shipping     | Postal and logistics providers                                                      |
 | remote           |       Remote Access       | Remote device access platforms                                                      |
 | retail           |          Retail           | Online retail platforms                                                             |
 | security         |         Security          | Online security and anti-malware services. Excluding VPN and identity management    |
 | social           |          Social           | Social networks                                                                     |
 | task             |      Task Management      | Task management and to-do services                                                  |
 | tickets          |    Tickets and Events     | Ticketing and event platforms                                                       |
-| transport        |         Transport         | Transportation services including public transport and airlines                     |
+| transport        |         Transport         | Public transport and taxis.                                                         |
+| travel           | Travel and Accommodations | Services related to flights, hotels and car rentals                                 |
 | universities     |       Universities        | University online platforms                                                         |
 | utilities        |         Utilities         | Household utilities including electricity, gas, water, phone and internet providers |
 | vpn              |       VPN Providers       |                                                                                     |

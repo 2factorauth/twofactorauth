@@ -1,10 +1,10 @@
 {
   "Tello": {
     "domain": "tello.com",
-    "contact": {
-      "twitter": "tellomobile",
-      "facebook": "tellomobile"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://tello.com/help_center/how-do-i-set-up-and-use-two-factor-authentication",
     "categories": [
       "utilities"
     ],

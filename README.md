@@ -1,8 +1,9 @@
 <h1 align="center">2FA Directory - API & Data</h1>
 
 <p align="center">
-<a href="https://twitter.com/2faorg/"><img src="https://img.shields.io/badge/X/Twitter-@2faorg-1DA1F2.svg?style=for-the-badge&logo=x"/></a>
+<a href="https://x.com/2faorg/"><img src="https://img.shields.io/badge/X/Twitter-@2faorg-1DA1F2.svg?style=for-the-badge&logo=x"/></a>
 <a href="https://infosec.exchange/@2factorauth"><img src="https://img.shields.io/badge/Mastodon-@2factorauth-6364FF?style=for-the-badge&logo=mastodon"/></a>
+<a href="https://bsky.app/profile/2fa.directory"><img src="https://img.shields.io/badge/Bluesky-@2fa.directory-0285FF.svg?style=for-the-badge&logo=bluesky"/></a>
 <a href="https://github.com/sponsors/2factorauth/"><img src="https://img.shields.io/github/sponsors/2factorauth?color=db61a2&logo=GitHub&style=for-the-badge"/></a>
 </p>
 
@@ -49,5 +50,4 @@ We intend to showcase and utilize these images in a manner that respects the ori
 [license]: /LICENSE.md
 [site_url]: https://2fa.directory/
 [sponsor]: https://github.com/sponsors/2factorauth/
-[twitter]: https://twitter.com/2faorg/
 [show_and_tell]: https://github.com/2factorauth/twofactorauth/discussions/new?category=show-and-tell

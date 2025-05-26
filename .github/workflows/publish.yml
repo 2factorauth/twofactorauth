@@ -82,6 +82,3 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-
-      - name: Send webhook to Cloudflare
-        run: curl -X POST -IL "${{ secrets.WEBHOOK }}" -o /dev/null -w '%{http_code}\n' -s

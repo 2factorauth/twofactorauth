@@ -1,14 +1,18 @@
 {
-  "M&amp;T Bank": {
+  "M&T Bank": {
     "domain": "mtb.com",
     "additional-domains": [
       "mandtbank.com"
     ],
-    "url": "https://www.mtb.com/",
-    "contact": {
-      "facebook": "MandTBank",
-      "twitter": "MandT_Help"
-    },
+    "tfa": [
+      "sms",
+      "email",
+      "custom-software"
+    ],
+    "custom-software": [
+      "M&T Mobile app"
+    ],
+    "documentation": "https://www.mtb.com/help-center/banking-security/online-mobile-banking-security",
     "regions": [
       "us"
     ],

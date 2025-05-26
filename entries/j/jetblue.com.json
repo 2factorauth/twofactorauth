@@ -1,13 +1,13 @@
 {
   "JetBlue": {
     "domain": "jetblue.com",
-    "url": "https://www.jetblue.com",
-    "contact": {
-      "facebook": "JetBlue",
-      "twitter": "JetBlue"
-    },
+    "tfa": [
+      "sms",
+      "email"
+    ],
+    "documentation": "https://www.jetblue.com/help/trueblue-basics#what-is-2-step-authentication",
     "categories": [
-      "transport"
+      "travel"
     ]
   }
 }

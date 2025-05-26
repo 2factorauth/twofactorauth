@@ -1,0 +1,21 @@
+{
+  "Hewlett Packard Enterprise": {
+    "domain": "hpe.com",
+    "additional-domains": [
+      "hewlettpackardenterprise.com"
+    ],
+    "tfa": [
+      "totp",
+      "u2f",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Okta Verify"
+    ],
+    "documentation": "https://support.hpe.com/hpesc/public/docDisplay?docId=sd00002926en_us&page=GUID-78722BEA-6517-4C6E-96F3-92E9D81903E2.html",
+    "categories": [
+      "cloud",
+      "hosting"
+    ]
+  }
+}

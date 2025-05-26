@@ -1,6 +1,9 @@
 {
   "MailChimp": {
     "domain": "mailchimp.com",
+    "additional-domains": [
+      "mailchi.mp"
+    ],
     "tfa": [
       "sms",
       "totp"
