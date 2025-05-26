@@ -2,7 +2,11 @@
   "Profil zaufany": {
     "domain": "pz.gov.pl",
     "tfa": [
-      "sms"
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "mObywatel app"
     ],
     "documentation": "https://pz.gov.pl/Instrukcja_Uzytkownika_PZ.pdf",
     "categories": [
