@@ -1,0 +1,33 @@
+{
+  "Vend": {
+    "domain": "vend.com",
+    "additional-domains": [
+      "bilbasen.dk",
+      "blocket.se",
+      "bytbil.com",
+      "dba.dk",
+      "finn.no",
+      "oikotie.fi",
+      "tori.fi",
+      "vend.dk",
+      "vend.fi",
+      "vend.no",
+      "vend.se"
+    ],
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://account.vend.no/faq#how-to-activate-and-deactivate-2fa",
+    "recovery": "https://account.vend.no/faq#how-to-activate-and-deactivate-2fa:~:text=Mistet%20autentiseringsenhet%3F",
+    "categories": [
+      "retail"
+    ],
+    "regions": [
+      "se",
+      "no",
+      "fi",
+      "dk"
+    ]
+  }
+}
