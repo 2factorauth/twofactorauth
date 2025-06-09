@@ -1,0 +1,21 @@
+{
+  "Lone Star College": {
+    "domain": "lonestar.edu",
+    "tfa": [
+      "sms",
+      "call",
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Microsoft Authenticator"
+    ],
+    "documentation": "https://www.lonestar.edu/OTS-MFA.htm",
+    "categories": [
+      "universities"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}
