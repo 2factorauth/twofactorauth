@@ -2,15 +2,11 @@
   "Truist": {
     "domain": "truist.com",
     "tfa": [
-      "custom-software",
       "sms",
       "call",
       "email"
     ],
-    "custom-software": [
-      "Truist Authenticator"
-    ],
-    "documentation": "https://www.truist.com/truist-authenticator-app",
+    "notes": "They have a custom app, but users on both iOS and Android report that it doesn't work.",
     "categories": [
       "banking"
     ],
