@@ -4,11 +4,15 @@
     "additional-domains": [
       "netbank.com.au"
     ],
-    "contact": {
-      "facebook": "commonwealthbank",
-      "twitter": "commbank",
-      "form": "https://www.commbank.com.au/retail/netbank/complaints-compliments-form"
-    },
+    "tfa": [
+      "sms",
+      "custom-software"
+    ],
+    "custom-software": [
+      "CommBank app"
+    ],
+    "documentation": "https://www.commbank.com.au/digital-banking/netbank/multi-factor-authentication.html",
+    "notes": "SMS is only available when setting up CommBank app.",
     "regions": [
       "au"
     ],
