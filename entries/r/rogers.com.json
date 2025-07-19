@@ -1,11 +1,14 @@
 {
   "Rogers": {
     "domain": "rogers.com",
-    "url": "https://www.rogers.com/",
-    "contact": {
-      "facebook": "Rogers",
-      "twitter": "RogersHelps"
-    },
+    "additional-domains": [
+      "shaw.ca"
+    ],
+    "tfa": [
+      "sms",
+      "email"
+    ],
+    "documentation": "https://www.rogers.com/support/billing-accounts/understanding-multi-factor-authentication",
     "categories": [
       "utilities"
     ],
