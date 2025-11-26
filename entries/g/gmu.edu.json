@@ -1,0 +1,25 @@
+{
+  "George Mason University": {
+    "domain": "gmu.edu",
+    "tfa": [
+      "sms",
+      "call",
+      "custom-software",
+      "custom-hardware"
+    ],
+    "custom-software": [
+      "Duo"
+    ],
+    "custom-hardware": [
+      "Yubico OTP"
+    ],
+    "documentation": "https://its.gmu.edu/knowledge-base/list-of-2fa-authentication-options/",
+	  "recovery": "https://its.gmu.edu/knowledge-base/how-to-request-a-bypass-code-emergency/",
+    "categories": [
+      "universities"
+    ],
+    "regions": [
+      "us"
+    ]
+  }
+}
