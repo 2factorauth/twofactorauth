@@ -3,7 +3,11 @@
     "domain": "threatlocker.com",
     "url": "https://www.threatlocker.com/",
     "tfa": [
-      "totp"
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Duo"
     ],
     "documentation": "https://threatlocker.kb.help/login-settings/",
     "categories": [
