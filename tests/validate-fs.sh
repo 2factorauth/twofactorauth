@@ -35,7 +35,7 @@ function checkPerm()
 checkExt img svg png
 checkExt entries json
 checkExt scripts js sh
-checkExt tests sh json js
+checkExt tests sh json js md
 checkPerm img 664 644
 checkPerm tests 775 755 664 644
 checkPerm entries 664 644
