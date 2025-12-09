@@ -1,10 +1,10 @@
 {
   "Lufthansa": {
     "domain": "lufthansa.com",
-    "contact": {
-      "facebook": "lufthansa",
-      "twitter": "lufthansa"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://www.miles-and-more.com/row/en/general-information/help-and-contact/help/2-factor-authentication.html",
     "categories": [
       "travel"
     ]
