@@ -3,7 +3,11 @@
     "domain": "ameriprise.com",
     "tfa": [
       "sms",
-      "totp"
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "Ameriprise Financial app"
     ],
     "documentation": "https://www.ameriprise.com/customer-service/2-step-verification-faq",
     "categories": [
