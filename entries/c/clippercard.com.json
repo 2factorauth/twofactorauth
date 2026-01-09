@@ -1,11 +1,9 @@
 {
   "Clipper": {
     "domain": "clippercard.com",
-    "contact": {
-      "facebook": "BayAreaClipper",
-      "twitter": "BayAreaClipper",
-      "email": "custserv@clippercard.com"
-    },
+    "tfa": [
+      "email"
+    ],
     "categories": [
       "transport"
     ],
