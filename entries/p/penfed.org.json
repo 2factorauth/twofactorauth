@@ -1,16 +1,22 @@
 {
   "PenFed": {
     "domain": "penfed.org",
-    "url": "https://www.penfed.org/",
-    "contact": {
-      "facebook": "PenFed",
-      "twitter": "PenFed"
-    },
-    "regions": [
-      "us"
+    "tfa": [
+      "totp",
+      "custom-software",
+      "sms",
+      "email"
     ],
+    "documentation": "https://www.penfed.org/content/dam/penfed/en/general/pdf/general/security/stay-safe-online-mfa.pdf",
+    "custom-software": [
+      "PenFed App Push"
+    ],
+    "notes": "Option to restrict MFA to only Software solutions and turn off SMS/e-mail",
     "categories": [
       "banking"
+    ],
+    "regions": [
+      "us"
     ]
   }
 }
