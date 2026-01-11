@@ -3,14 +3,20 @@
     "domain": "epicgames.com",
     "additional-domains": [
       "fortnite.com",
-      "fallguys.com"
+      "fallguys.com",
+      "rocketleague.com"
     ],
     "tfa": [
       "sms",
       "email",
-      "totp"
+      "totp",
+      "custom-software"
     ],
-    "documentation": "https://www.epicgames.com/help/en-US/c74/c112/a3218",
+    "custom-software": [
+      "Epic Games app",
+      "Epic Games Store app"
+    ],
+    "documentation": "https://www.epicgames.com/help/c74/c112/a3218",
     "categories": [
       "gaming"
     ]
