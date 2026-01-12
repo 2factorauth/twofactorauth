@@ -2,10 +2,10 @@
   "PenFed": {
     "domain": "penfed.org",
     "tfa": [
-      "totp",
-      "custom-software",
       "sms",
-      "email"
+      "email",
+      "totp",
+      "custom-software"
     ],
     "documentation": "https://www.penfed.org/content/dam/penfed/en/general/pdf/general/security/stay-safe-online-mfa.pdf",
     "custom-software": [
