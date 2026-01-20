@@ -2,10 +2,11 @@
   "UPS": {
     "domain": "ups.com",
     "url": "https://www.ups.com",
-    "contact": {
-      "facebook": "ups",
-      "twitter": "UPS"
-    },
+    "tfa": [
+      "email",
+      "totp"
+    ],
+    "documentation": "https://www.ups.com/us/en/support/manage-your-profile#faq",
     "categories": [
       "postal"
     ]
