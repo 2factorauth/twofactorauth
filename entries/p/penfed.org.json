@@ -1,16 +1,21 @@
 {
   "PenFed": {
     "domain": "penfed.org",
-    "url": "https://www.penfed.org/",
-    "contact": {
-      "facebook": "PenFed",
-      "twitter": "PenFed"
-    },
-    "regions": [
-      "us"
+    "tfa": [
+      "sms",
+      "email",
+      "totp",
+      "custom-software"
+    ],
+    "documentation": "https://home.penfed.org/help/s/article/PenFed-Security-Center",
+    "custom-software": [
+      "PenFed App"
     ],
     "categories": [
       "banking"
+    ],
+    "regions": [
+      "us"
     ]
   }
 }
