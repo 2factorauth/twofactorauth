@@ -2,10 +2,11 @@
   "Virgin Plus": {
     "domain": "virginplus.ca",
     "img": "virginplus.ca.png",
-    "contact": {
-      "facebook": "virginplus",
-      "twitter": "VirginPlus"
-    },
+    "tfa": [
+      "sms",
+      "email"
+    ],
+    "documentation": "https://www.virginplus.ca/en/support/myaccount-mfa.html",
     "categories": [
       "utilities"
     ],
