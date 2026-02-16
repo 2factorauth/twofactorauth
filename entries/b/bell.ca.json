@@ -1,10 +1,12 @@
 {
   "Bell": {
     "domain": "bell.ca",
-    "contact": {
-      "facebook": "BellCanada",
-      "twitter": "Bell_Support"
-    },
+    "tfa": [
+      "sms",
+      "call",
+      "email"
+    ],
+    "documentation": "https://support.bell.ca/billing-and-accounts/security_and_privacy/mybell_mfa",
     "categories": [
       "utilities"
     ],
