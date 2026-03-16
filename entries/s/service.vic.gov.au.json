@@ -1,9 +1,11 @@
 {
   "Service Victoria": {
     "domain": "service.vic.gov.au",
-    "contact": {
-      "twitter": "ServiceVic"
-    },
+    "tfa":[
+      "sms",
+      "totp"
+    ],
+    "documentation":"https://service.vic.gov.au/find-services/digital-wallet/create-account/account-security",
     "categories": [
       "government"
     ],

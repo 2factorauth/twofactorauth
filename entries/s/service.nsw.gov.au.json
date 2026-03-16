@@ -2,9 +2,14 @@
   "Service NSW":{
     "domain":"service.nsw.gov.au",
     "tfa":[
-      "sms"
+      "sms",
+      "totp",
+      "custom-software"
     ],
-    "documentation":"https://www.service.nsw.gov.au/services/myservicensw-account/turn-on-2-step-authentication",
+    "custom-software": [
+      "Service NSW app"
+    ],
+    "documentation":"https://www.service.nsw.gov.au/services/myservicensw-account/multi-factor-authentication",
     "categories":[
       "government"
     ],
