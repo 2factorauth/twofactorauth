@@ -1,7 +1,7 @@
 {
-  "Service NSW":{
-    "domain":"service.nsw.gov.au",
-    "tfa":[
+  "Service NSW": {
+    "domain": "service.nsw.gov.au",
+    "tfa": [
       "sms",
       "totp",
       "custom-software"
@@ -9,8 +9,8 @@
     "custom-software": [
       "Service NSW app"
     ],
-    "documentation":"https://www.service.nsw.gov.au/services/myservicensw-account/multi-factor-authentication",
-    "categories":[
+    "documentation": "https://www.service.nsw.gov.au/services/myservicensw-account/multi-factor-authentication",
+    "categories": [
       "government"
     ],
     "regions":[
