@@ -3,12 +3,9 @@
     "domain": "my.gov.au",
     "tfa": [
       "sms",
-      "custom-software"
+      "totp"
     ],
-    "custom-software": [
-      "myGov Code Generator"
-    ],
-    "documentation": "https://my.gov.au/en/about/help/mygov-account/help-using-your-account/manage-sign-in-details",
+    "documentation": "https://my.gov.au/en/about/help/mygov-website/sign-in-to-mygov/use-an-authenticator",
     "categories": [
       "government"
     ],
