@@ -2,9 +2,12 @@
   "Settle": {
     "domain": "settle.co",
     "url": "https://app.settle.co",
-    "img": "settle.co.png",
-    "tfa": ["totp"],
+    "tfa": [
+      "totp"
+    ],
     "documentation": "https://help.settle.com/en/articles/6801735-setting-up-multi-factor-authentication-mfa",
-    "categories": ["payments"]
+    "categories": [
+      "payments"
+    ]
   }
 }
