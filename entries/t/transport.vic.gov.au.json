@@ -1,0 +1,21 @@
+{
+  "Transport Victoria": {
+    "domain": "transport.vic.gov.au",
+    "additional-domains": [
+      "ptv.vic.gov.au",
+      "myki.com.au",
+      "mymyki.com.au"
+    ],
+    "tfa": [
+      "sms",
+      "totp"
+    ],
+    "documentation": "https://transport.vic.gov.au/help-and-support/ptv-app-help/set-up-multi-factor-authentication-for-myki-in-the-ptv-app",
+    "categories": [
+      "transport"
+    ],
+    "regions": [
+      "au"
+    ]
+  }
+}
