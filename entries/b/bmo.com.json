@@ -4,10 +4,13 @@
     "img": "bmo.svg",
     "tfa": [
       "sms",
-      "email",
-      "call"
+      "call",
+      "custom-software"
     ],
-    "documentation": "https://www.bmoinvestorline.com/General_Info/MFA_preEnroll_SD_EN.html",
+    "custom-software": [
+      "BMO App Push Notification"
+    ],
+    "documentation": "https://www.bmo.com/en-ca/main/personal/ways-to-bank/alerts/",
     "regions": [
       "ca"
     ],
