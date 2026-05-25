@@ -1,6 +1,10 @@
 {
   "Gmail": {
     "domain": "mail.google.com",
+    "additional-domains": [
+      "gmail.com",
+      "googlemail.com"
+    ],
     "tfa": [
       "sms",
       "call",
