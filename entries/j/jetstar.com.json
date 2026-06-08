@@ -1,14 +1,13 @@
 {
-	"Jetstar": {
-		"domain": "jetstar.com",
-		"contact": {
-			"facebook": "JetstarAustralia",
-			"twitter": "JetstarAirways"
-		},
-		"categories": [
-			"travel"
-		],
-		"regions": [
+  "Jetstar":{
+    "domain":"jetstar.com",
+    "tfa": [
+      "email"
+    ],
+    "categories":[
+      "travel"
+    ],
+    "regions":[
       "au",
       "cn",
       "hk",
@@ -24,6 +23,6 @@
       "tw",
       "us",
       "vn"
-		]
-	}
+    ]
+  }
 }
