@@ -2,14 +2,14 @@
   "CrashPlan": {
     "domain": "crashplan.com",
     "additional-domains": [
-      "crashplanpro.com",
-      "console.us2.crashplanpro.com"
+      "crashplanpro.com"
     ],
     "tfa": [
-      "totp"
+      "totp",
+      "email"
     ],
-    "documentation": "https://support.crashplan.com/hc/en-us/articles/8724455295245",
-    "notes": "2FA is not available on the CrashPlan/Code42 desktop application.",
+    "documentation": "https://support.crashplan.com/hc/articles/43858880152461",
+    "recovery": "https://support.crashplan.com/hc/articles/43858283887373",
     "categories": [
       "backup"
     ]
