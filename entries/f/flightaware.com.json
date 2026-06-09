@@ -1,10 +1,10 @@
 {
   "FlightAware": {
     "domain": "flightaware.com",
-    "contact": {
-      "twitter": "flightaware",
-      "email": "support@flightaware.com"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://support.flightaware.com/hc/articles/30610324836759",
     "categories": [
         "other"
     ]
