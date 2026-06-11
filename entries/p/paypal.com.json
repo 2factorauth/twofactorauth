@@ -5,9 +5,10 @@
       "paypal-search.com"
     ],
     "tfa": [
-      "totp"
+      "totp",
+      "u2f"
     ],
-    "notes": "2FA can only be setup in web browser and not through the PayPal App.",
+    "notes": "2FA can only be setup on the website. A backup 2FA method is needed to setup security key.",
     "documentation": "https://www.paypal.com/us/cshelp/article/help167",
     "categories": [
       "payments"
