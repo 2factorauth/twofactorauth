@@ -1,66 +1,18 @@
 {
-  "Paysafecard": {
+  "PaysafeCard": {
     "domain": "paysafecard.com",
-    "url": "https://www.paysafecard.com/",
     "tfa": [
       "sms",
+      "email",
       "custom-software"
     ],
     "custom-software": [
-      "paysafecard app"
+      "PaysafeCard app"
     ],
-    "recovery": "https://www.paysafecard.com/en/help/2-faktor-authentifizierung/",
+    "documentation": "https://www.paysafecard.com/en/support/question/38/",
+    "recovery": "https://www.paysafecard.com/en/support/question/41/",
     "categories": [
       "payments"
-    ],
-    "regions": [
-      "ae",
-      "ar",
-      "at",
-      "au",
-      "be",
-      "bg",
-      "ca",
-      "ch",
-      "cy",
-      "cz",
-      "de",
-      "dk",
-      "es",
-      "fi",
-      "fr",
-      "gb",
-      "ge",
-      "gr",
-      "hr",
-      "hu",
-      "ie",
-      "is",
-      "it",
-      "kw",
-      "li",
-      "lt",
-      "lu",
-      "lv",
-      "md",
-      "me",
-      "mt",
-      "mx",
-      "nl",
-      "no",
-      "nz",
-      "pe",
-      "pl",
-      "pt",
-      "py",
-      "ro",
-      "sa",
-      "se",
-      "si",
-      "sk",
-      "tr",
-      "us",
-      "uy"
     ]
   }
 }
