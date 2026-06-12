@@ -1,13 +1,18 @@
 {
   "Bendigo Bank": {
     "domain": "bendigobank.com.au",
+    "additional-domains": [
+      "adelaidebank.com.au",
+      "adelaidebendigo.com.au"
+    ],
     "tfa": [
       "sms",
       "email",
       "custom-software"
     ],
     "custom-software": [
-      "Bendigo Bank app"
+      "Bendigo Bank app",
+      "Symantec VIP Access"
     ],
     "documentation": "https://www.bendigobank.com.au/support/e-banking/multi-factor-authentication",
     "notes": "If the app hasn't been setup, only SMS and email tokens will work. If the app has been setup, only the app will work.",
