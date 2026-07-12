@@ -15,7 +15,7 @@ jobs:
     permissions:
       pull-requests: write
     steps:
-      - uses: actions/stale@v8
+      - uses: actions/stale@v10
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           # Do not automatically mark PRs/issues as stale

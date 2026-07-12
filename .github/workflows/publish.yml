@@ -25,14 +25,14 @@ jobs:
       NODE_ENV: ${{ vars.NODE_ENV || 'development' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: '2'
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Install dependencies
         run: npm install --omit=dev
@@ -56,7 +56,7 @@ jobs:
           ALGOLIA_INDEX_NAME: ${{ vars.ALGOLIA_INDEX_NAME }}
           ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
 
-      - uses: crazy-max/ghaction-import-gpg@v6
+      - uses: crazy-max/ghaction-import-gpg@v7
         id: pgp
         with:
           gpg_private_key: ${{ secrets.PGP_KEY }}
@@ -76,9 +76,9 @@ jobs:
           rsync -av {robots.txt,api/} public/
           rsync -av img/. public/icons/
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: public/
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
