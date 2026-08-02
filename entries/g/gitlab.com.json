@@ -2,10 +2,11 @@
   "GitLab": {
     "domain": "gitlab.com",
     "tfa": [
+      "email",
       "totp",
       "u2f"
     ],
-    "documentation": "https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html",
+    "documentation": "https://docs.gitlab.com/user/profile/account/two_factor_authentication/",
     "categories": [
       "developer"
     ]
