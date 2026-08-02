@@ -6,8 +6,11 @@
     ],
     "img": "hytale.com.png",
     "tfa": [
-      "totp"
+      "email",
+      "totp",
+      "u2f"
     ],
+    "notes": "If totp is set-up, email cannot be enabled.",
     "documentation": "https://support.hytale.com/hc/articles/44212029550491",
     "categories": [
       "gaming"
