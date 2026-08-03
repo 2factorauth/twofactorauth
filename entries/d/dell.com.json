@@ -1,10 +1,11 @@
 {
   "Dell": {
     "domain": "dell.com",
-    "contact": {
-      "facebook": "Dell",
-      "twitter": "DellCares"
-    },
+    "tfa": [
+      "email",
+      "sms"
+    ],
+    "documentation": "https://www.dell.com/en-uk/lp/protect-your-account-faq",
     "categories": [
       "retail"
     ]
