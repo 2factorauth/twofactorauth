@@ -1,6 +1,9 @@
 {
   "Samsung": {
     "domain": "samsung.com",
+    "additional-domains": [
+      "smartthings.com"
+    ],
     "tfa": [
       "sms",
       "totp"
