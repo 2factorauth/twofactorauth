@@ -1,0 +1,26 @@
+{
+  "HMRC (Government Gateway)": {
+    "domain": "access.service.gov.uk",
+    "additional-domains": [
+      "tax.service.gov.uk"
+    ],
+    "url": "https://www.gov.uk/government/organisations/hm-revenue-customs",
+    "tfa": [
+      "sms",
+      "call",
+      "totp",
+      "custom-software"
+    ],
+    "custom-software": [
+      "HMRC App"
+    ],
+    "documentation": "https://www.gov.uk/guidance/keeping-your-hmrc-login-details-safe#multi-factor-authentication",
+    "recovery": "https://www.gov.uk/log-in-register-hmrc-online-services/problems-signing-in",
+    "categories": [
+      "government"
+    ],
+    "regions": [
+      "gb"
+    ]
+  }
+}
