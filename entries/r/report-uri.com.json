@@ -2,9 +2,10 @@
   "Report URI": {
     "domain": "report-uri.com",
     "tfa": [
-      "totp"
+      "totp",
+      "u2f"
     ],
-    "documentation": "https://scotthelme.co.uk/dealing-with-account-recovery-and-2fa/",
+    "documentation": "https://docs.report-uri.com/help/twofa/",
     "categories": [
       "developer",
       "security"
