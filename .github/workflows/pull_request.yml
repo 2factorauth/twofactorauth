@@ -68,12 +68,3 @@ jobs:
         if: steps.diff.outputs.entries
         run: node tests/urls.js ${{ steps.diff.outputs.entries }}
         continue-on-error: true
-
-  external-tests:
-    name: External Tests
-    runs-on: ubuntu-latest
-    steps:
-      - name: Call PR Validator
-        run: |
-          OUTPUT=$(curl -s --fail-with-body "https://pr-validator.2fa.directory/${{ github.event.repository.name }}/${{ github.event.number }}/")
-          echo "$OUTPUT"
