@@ -1,7 +1,11 @@
 {
   "Lufthansa": {
     "domain": "lufthansa.com",
+    "additional-domains": [
+      "miles-and-more.com"
+    ],
     "tfa": [
+      "sms",
       "totp"
     ],
     "documentation": "https://www.miles-and-more.com/row/en/general-information/help-and-contact/help/2-factor-authentication.html",
