@@ -1,6 +1,6 @@
 {
-  "Yahoo Mail": {
-    "domain": "mail.yahoo.com",
+  "Yahoo": {
+    "domain": "yahoo.com",
     "tfa": [
       "sms",
       "call",
@@ -11,6 +11,9 @@
     "notes": "A recovery email or phone number is required for 2FA setup.",
     "categories": [
       "email"
+    ],
+    "regions": [
+      "-jp"
     ]
   }
 }
