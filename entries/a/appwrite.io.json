@@ -2,9 +2,10 @@
   "Appwrite": {
     "domain": "appwrite.io",
     "tfa": [
+      "email",
       "totp"
     ],
-    "documentation": "https://appwrite.io/docs/advanced/security/2fa",
+    "documentation": "https://appwrite.io/docs/advanced/security/mfa",
     "categories": [
       "cloud",
       "developer",
