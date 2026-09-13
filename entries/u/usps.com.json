@@ -3,7 +3,8 @@
     "domain": "usps.com",
     "tfa": [
       "sms",
-      "email"
+      "email",
+      "totp"
     ],
     "documentation": "https://reg.usps.com/entreg/AccountRecoveryHelpAction_input",
     "categories": [
