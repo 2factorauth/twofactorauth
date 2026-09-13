@@ -1,19 +1,14 @@
 {
-  "Alaska Airlines": {
+  "Atmos Rewards": {
     "domain": "alaskaair.com",
-    "contact": {
-      "facebook": "alaskaairlines",
-      "twitter": "AlaskaAir"
-    },
+    "additional-domains": [
+      "hawaiianairlines.com"
+    ],
+    "tfa": [
+      "sms"
+    ],
     "categories": [
       "travel"
-    ],
-    "regions": [
-      "ca",
-      "cr",
-      "bz",
-      "mx",
-      "us"
     ]
   }
 }
