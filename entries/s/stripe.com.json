@@ -4,14 +4,10 @@
     "tfa": [
       "sms",
       "totp",
-      "u2f",
-      "custom-hardware"
+      "u2f"
     ],
-    "custom-hardware": [
-      "Built-in Authenticator (Biometrics)"
-    ],
-    "documentation": "https://support.stripe.com/questions/how-do-i-enable-two-step-verification",
-    "recovery": "https://support.stripe.com/questions/sign-in-to-your-stripe-account-without-a-2fa-device-and-or-backup-code",
+    "documentation": "https://support.stripe.com/questions/enable-two-step-authentication",
+    "recovery": "https://support.stripe.com/questions/can-t-complete-two-step-authentication",
     "categories": [
       "payments"
     ]
