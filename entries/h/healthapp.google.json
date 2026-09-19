@@ -1,0 +1,24 @@
+{
+  "Google Health": {
+    "domain": "healthapp.google",
+    "additional-domains": [
+      "fitbit.com"
+    ],
+    "tfa": [
+      "sms",
+      "call",
+      "totp",
+      "custom-software",
+      "u2f"
+    ],
+    "custom-software": [
+      "Google Prompts",
+      "Google Smart Lock"
+    ],
+    "documentation": "https://safety.google/authentication/",
+    "recovery": "https://support.google.com/accounts/answer/185834",
+    "categories": [
+      "health"
+    ]
+  }
+}
