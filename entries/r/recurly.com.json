@@ -3,6 +3,7 @@
     "domain": "recurly.com",
     "tfa": [
       "sms",
+      "email",
       "totp"
     ],
     "documentation": "https://docs.recurly.com/docs/two-factor-authentication",
