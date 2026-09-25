@@ -1,12 +1,15 @@
 {
   "Wikipedia": {
     "domain": "wikipedia.org",
+    "additional-domains": [
+      "wikimedia.org"
+    ],
     "tfa": [
       "totp",
       "u2f"
     ],
     "documentation": "https://meta.wikimedia.org/wiki/Help:Two-factor_authentication",
-    "notes": "Currently limited to administrators (and users with admin-like permissions like interface editors), bureaucrats, checkusers, oversighters, stewards, edit filter managers and the OATH-testers global group.",
+    "recovery": "https://meta.wikimedia.org/wiki/Help:Two-factor_authentication#Lost_access_to_device_or_authenticator_app",
     "categories": [
       "other"
     ]
