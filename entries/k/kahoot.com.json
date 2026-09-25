@@ -4,10 +4,11 @@
     "additional-domains": [
       "kahoot.it"
     ],
-    "contact": {
-      "facebook": "getkahoot",
-      "twitter": "KahootSupport"
-    },
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://support.kahoot.com/hc/en-us/articles/43448661146771-How-to-enable-Multi-Factor-Authentication-for-your-Kahoot-account#h_01K1G61J3YRB2ARK8S43538CXT",
+    "recovery": "https://support.kahoot.com/hc/en-us/articles/43448661146771-How-to-enable-Multi-Factor-Authentication-for-your-Kahoot-account#h_01K1T92TGK4XSAWRF8597BE0ZB",
     "categories": [
       "education"
     ]
