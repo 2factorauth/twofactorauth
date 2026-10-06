@@ -1,13 +1,10 @@
 {
   "Recurly": {
     "domain": "recurly.com",
-    "url": "https://www.recurly.com/",
     "tfa": [
       "sms",
-      "custom-software"
-    ],
-    "custom-software": [
-      "Authy"
+      "email",
+      "totp"
     ],
     "documentation": "https://docs.recurly.com/docs/two-factor-authentication",
     "categories": [
