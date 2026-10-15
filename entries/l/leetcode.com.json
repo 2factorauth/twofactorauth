@@ -7,7 +7,12 @@
         "tfa": [
           "email",
           "sms",
-          "totp"
+          "totp",
+          "u2f",
+          "custom-software"
+        ],
+        "custom-software": [
+          "LeetCode App"
         ],
         "categories": [
             "education"
