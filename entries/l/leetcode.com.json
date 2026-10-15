@@ -4,11 +4,16 @@
         "additional-domains": [
             "leetcode.cn"
         ],
-        "contact": {
-            "facebook": "LeetCode",
-            "twitter": "LeetCode",
-            "email": "admin@leetcode.com"
-        },
+        "tfa": [
+          "email",
+          "sms",
+          "totp",
+          "u2f",
+          "custom-software"
+        ],
+        "custom-software": [
+          "LeetCode App"
+        ],
         "categories": [
             "education"
         ],
