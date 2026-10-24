@@ -1,0 +1,15 @@
+{
+  "Qdrant Cloud": {
+    "domain": "cloud.qdrant.io",
+    "additional-domains": [
+      "login.cloud.qdrant.io"
+    ],
+    "tfa": [
+      "totp"
+    ],
+    "documentation": "https://qdrant.tech/documentation/cloud-user-profile/#security",
+    "categories": [
+      "cloud"
+    ]
+  }
+}
